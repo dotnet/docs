@@ -60,7 +60,7 @@ In the following example, an optional type extension extends the `System.Int32` 
 The new instance member will appear like any other method of the `Int32` type in IntelliSense, but only when the module that contains the extension is open or otherwise in scope.
 
 ## Generic Extension Methods
-Before F# 3.1, the F# compiler didn't support the use of C#-style extension methods with a generic type variable, array type, tuple type, or an F# function type as the “this” parameter. F# 3.1 supports the use of these extension members.
+Before F# 3.1, the F# compiler didn't support the use of C#-style extension methods with a generic type variable, array type, tuple type, or an F# function type as the "this" parameter. F# 3.1 supports the use of these extension members.
 
 For example, in F# 3.1 code, you can use extension methods with signatures that resemble the following syntax in C#:
 

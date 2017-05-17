@@ -32,7 +32,7 @@
  The <xref:System.ActivationContext> class contains an <xref:System.ApplicationIdentity> and provides internal-only access to the application manifest. The activation context is used during manifest-based activation to set up the domain policy and provide an application-based security model. For more information, see the <xref:System.Security.Policy.ApplicationSecurityManager> class.  
   
 > [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
    
   
@@ -65,7 +65,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the activation context is <xref:System.ActivationContext.ContextForm>, meaning that the application is not installed in the ClickOnce store, the deployment manifest is read from the temporary download folder. If the activation context is <xref:System.ActivationContext.ContextForm>, meaning that the application is installed in the ClickOnce store, the deployment manifest is read from the ClickOnce store. For more information about deployment manifests, see [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).  
+ If the activation context is <xref:System.ActivationContext.ContextForm.Loose>, meaning that the application is not installed in the ClickOnce store, the deployment manifest is read from the temporary download folder. If the activation context is <xref:System.ActivationContext.ContextForm.StoreBounded>, meaning that the application is installed in the ClickOnce store, the deployment manifest is read from the ClickOnce store. For more information about deployment manifests, see [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).  
   
  ]]></format>
         </remarks>
@@ -170,7 +170,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the activation context is <xref:System.ActivationContext.ContextForm>, meaning that the application is not installed in the ClickOnce store, the deployment manifest is read from the temporary download folder. If the activation context is <xref:System.ActivationContext.ContextForm>, meaning that the application is installed in the ClickOnce store, the deployment manifest is read from the ClickOnce store. For more information about deployment manifests, see [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).  
+ If the activation context is <xref:System.ActivationContext.ContextForm.Loose>, meaning that the application is not installed in the ClickOnce store, the deployment manifest is read from the temporary download folder. If the activation context is <xref:System.ActivationContext.ContextForm.StoreBounded>, meaning that the application is installed in the ClickOnce store, the deployment manifest is read from the ClickOnce store. For more information about deployment manifests, see [ClickOnce Deployment Manifest](http://msdn.microsoft.com/library/8457e615-e3b6-4990-8dcf-11bc590e4e9b).  
   
  ]]></format>
         </remarks>
@@ -244,7 +244,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A manifest-based application might not be installed in the ClickOnce store. An application that is not in the store, such as a manifest-activated application executing in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], is classified as <xref:System.ActivationContext.ContextForm>. An application that is contained in the store is classified as <xref:System.ActivationContext.ContextForm>.  
+ A manifest-based application might not be installed in the ClickOnce store. An application that is not in the store, such as a manifest-activated application executing in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], is classified as <xref:System.ActivationContext.ContextForm.Loose>. An application that is contained in the store is classified as <xref:System.ActivationContext.ContextForm.StoreBounded>.  
   
  ]]></format>
         </remarks>

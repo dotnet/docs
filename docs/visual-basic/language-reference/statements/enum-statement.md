@@ -47,8 +47,8 @@ Declares an enumeration and defines the values of its members.
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ]  [ Shadows ]   
-Enum enumerationname [ As datatype ]   
+[ <attributelist> ] [ accessmodifier ]  [ Shadows ]   
+Enum enumerationname [ As datatype ]   
    memberlist  
 End Enum  
 ```  

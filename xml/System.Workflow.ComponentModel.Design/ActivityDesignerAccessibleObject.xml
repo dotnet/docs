@@ -284,7 +284,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A graphical image used to diagram data can be obtained using the <xref:System.Windows.Forms.AccessibleRole> member of <xref:System.Windows.Forms.AccessibleRole>.  
+ A graphical image used to diagram data can be obtained using the <xref:System.Windows.Forms.AccessibleRole.Diagram> member of <xref:System.Windows.Forms.AccessibleRole>.  
   
  ]]></format>
         </remarks>
@@ -332,7 +332,7 @@
 ## Remarks  
  <xref:System.Workflow.ComponentModel.Design.ActivityDesignerAccessibleObject.State%2A> has the following possible values:  
   
- <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, <xref:System.Windows.Forms.AccessibleStates>, and <xref:System.Windows.Forms.AccessibleStates>.  
+ <xref:System.Windows.Forms.AccessibleStates.Selected>, <xref:System.Windows.Forms.AccessibleStates.Selectable>, <xref:System.Windows.Forms.AccessibleStates.MultiSelectable>, <xref:System.Windows.Forms.AccessibleStates.Focused>, <xref:System.Windows.Forms.AccessibleStates.Focusable>, <xref:System.Windows.Forms.AccessibleStates.ReadOnly>, <xref:System.Windows.Forms.AccessibleStates.Moveable>, and <xref:System.Windows.Forms.AccessibleStates.Invisible>.  
   
  ]]></format>
         </remarks>

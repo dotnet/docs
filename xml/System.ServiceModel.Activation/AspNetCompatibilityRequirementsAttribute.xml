@@ -50,7 +50,7 @@
    
   
 ## Examples  
- Service developers can ensure that their service is only run in ASP.NET Compatibility Mode by setting the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> property on the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> to <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode> as shown in the following example  
+ Service developers can ensure that their service is only run in ASP.NET Compatibility Mode by setting the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute.RequirementsMode%2A> property on the <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsAttribute> to <xref:System.ServiceModel.Activation.AspNetCompatibilityRequirementsMode.Required> as shown in the following example  
   
  [!code-csharp[S_AspNetCompatibility#1](~/samples/snippets/csharp/VS_Snippets_CFX/s_aspnetcompatibility/cs/service.cs#1)]
  [!code-vb[S_AspNetCompatibility#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/s_aspnetcompatibility/vb/service.vb#1)]  

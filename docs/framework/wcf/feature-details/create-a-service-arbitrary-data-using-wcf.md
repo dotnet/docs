@@ -20,7 +20,7 @@ Sometimes developers must have full control of how data is returned from a servi
   
 ### To implement the service contract  
   
-1.  Define the service contract. The operation that receives the arbitrary data must have a parameter of type <xref:System.IO.Stream>. In addition, this parameter must be the only parameter passed in the body of the request. The operation described in this example also takes a filename parameter. This parameter is passed within the URL of the request. You can specify that a parameter is passed within the URL by specifying a <xref:System.UriTemplate> in the <xref:System.ServiceModel.Web.WebInvokeAttribute>. In this case the URI used to call this method ends in “UploadFile/Some-Filename”. The “{filename}” portion of the URI template specifies that the filename parameter for the operation is passed within the URI used to call the operation.  
+1.  Define the service contract. The operation that receives the arbitrary data must have a parameter of type <xref:System.IO.Stream>. In addition, this parameter must be the only parameter passed in the body of the request. The operation described in this example also takes a filename parameter. This parameter is passed within the URL of the request. You can specify that a parameter is passed within the URL by specifying a <xref:System.UriTemplate> in the <xref:System.ServiceModel.Web.WebInvokeAttribute>. In this case the URI used to call this method ends in "UploadFile/Some-Filename". The "{filename}" portion of the URI template specifies that the filename parameter for the operation is passed within the URI used to call the operation.  
   
     ```csharp  
      [ServiceContract]  
@@ -91,14 +91,14 @@ Sometimes developers must have full control of how data is returned from a servi
   
 ### To call the service programmatically  
   
-1.  Create a <xref:System.Net.HttpWebRequest> with the URI used to call the service. In this code, the base address is combined with `“/UploadFile/Text”`. The `“UploadFile”` portion of the URI specifies the operation to call. The `“Test.txt”` portion of the URI specifies the filename parameter to pass to the `UploadFile` operation. Both of these items map to the <xref:System.UriTemplate> applied to the operation contract.  
+1.  Create a <xref:System.Net.HttpWebRequest> with the URI used to call the service. In this code, the base address is combined with `"/UploadFile/Text"`. The `"UploadFile"` portion of the URI specifies the operation to call. The `"Test.txt"` portion of the URI specifies the filename parameter to pass to the `UploadFile` operation. Both of these items map to the <xref:System.UriTemplate> applied to the operation contract.  
   
     ```csharp  
     HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create(baseAddress + "/UploadFile/Test.txt");  
   
     ```  
   
-2.  Set the <xref:System.Net.HttpWebRequest.Method%2A> property of the <xref:System.Net.HttpWebRequest> to `POST` and the <xref:System.Net.HttpWebRequest.ContentType%2A> property to `“text/plain”`. This tells the service that the code is sending data and that data is in plain text.  
+2.  Set the <xref:System.Net.HttpWebRequest.Method%2A> property of the <xref:System.Net.HttpWebRequest> to `POST` and the <xref:System.Net.HttpWebRequest.ContentType%2A> property to `"text/plain"`. This tells the service that the code is sending data and that data is in plain text.  
   
     ```csharp  
     req.Method = "POST";  

@@ -28,7 +28,7 @@ If a query requires a parameter whose value is an XML string, developers can sup
   
  To create the file needed for the example to run, create a new text file in the same folder as your project. Name the file MyTestStoreData.xml. Open the file in Notepad and copy and paste the following text:  
   
-```  
+```xml  
 <StoreSurvey xmlns="http://schemas.microsoft.com/sqlserver/2004/07/adventure-works/StoreSurvey">  
   <AnnualSales>300000</AnnualSales>  
   <AnnualRevenue>30000</AnnualRevenue>  
@@ -43,9 +43,7 @@ If a query requires a parameter whose value is an XML string, developers can sup
 </StoreSurvey>  
 ```  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Imports System  
 Imports System.Data.SqlClient  
 Imports System.Data.SqlTypes  
@@ -103,9 +101,7 @@ End Sub
 End Module  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 using System;  
 using System.Data;  
 using System.Data.SqlClient;  

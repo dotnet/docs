@@ -929,13 +929,13 @@
 ## Examples  
  The following code example shows how <xref:System.ComponentModel.Design.DesignSurface.View%2A> hides view technologies.  
   
- [C#]  
+ ```csharp 
+ IRootDesigner d;  
   
- `IRootDesigner d;`  
+ ViewTechnology[] supported = d.SupportedTechnologies;  
   
- `ViewTechnology[] supported = d.SupportedTechnologies;`  
-  
- `return d.GetView(supported[0]);`  
+ return d.GetView(supported[0]);
+ ``` 
   
  ]]></format>
         </remarks>

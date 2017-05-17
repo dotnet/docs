@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -83,6 +84,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="socketInformation" Type="System.Net.Sockets.SocketInformation" />
       </Parameters>
@@ -107,6 +112,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -150,6 +156,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -204,6 +211,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -248,7 +256,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">The accepting socket is not listening for connections. You must call <see cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" /> and <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" /> before calling <see cref="M:System.Net.Sockets.Socket.Accept" />.</exception>
       </Docs>
@@ -261,6 +269,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -305,7 +314,7 @@
   
  The completion callback method should examine the <xref:System.Net.Sockets.SocketAsyncEventArgs.SocketError%2A?displayProperty=fullName> property to determine if the <xref:System.Net.Sockets.Socket.AcceptAsync%2A> operation was successful.  
   
- The <xref:System.Net.Sockets.SocketAsyncEventArgs.Completed?displayProperty=fullName> event can occur in some cases when no connection has been accepted and cause the <xref:System.Net.Sockets.SocketAsyncEventArgs.SocketError%2A?displayProperty=fullName> property to be set to <xref:System.Net.Sockets.SocketError>. This can occur as a result of port scanning using a half-open SYN type scan (a SYN -> SYN-ACK -> RST sequence). Applications using the <xref:System.Net.Sockets.Socket.AcceptAsync%2A> method should be prepared to handle this condition.  
+ The <xref:System.Net.Sockets.SocketAsyncEventArgs.Completed?displayProperty=fullName> event can occur in some cases when no connection has been accepted and cause the <xref:System.Net.Sockets.SocketAsyncEventArgs.SocketError%2A?displayProperty=fullName> property to be set to <xref:System.Net.Sockets.SocketError.ConnectionReset>. This can occur as a result of port scanning using a half-open SYN type scan (a SYN -> SYN-ACK -> RST sequence). Applications using the <xref:System.Net.Sockets.Socket.AcceptAsync%2A> method should be prepared to handle this condition.  
   
  ]]></format>
         </remarks>
@@ -318,7 +327,7 @@
  You must call the <see cref="M:System.Net.Sockets.Socket.Bind(System.Net.EndPoint)" /> and <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" /> method before calling the <see cref="M:System.Net.Sockets.Socket.AcceptAsync(System.Net.Sockets.SocketAsyncEventArgs)" /> method.  
   
  This exception also occurs if the socket is already connected or a socket operation was already in progress using the specified <paramref name="e" /> parameter.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
@@ -331,6 +340,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -374,6 +384,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -411,7 +422,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -428,6 +439,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -489,7 +504,7 @@
  The accepted socket is bound.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="receiveSize" /> is less than 0.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginAccept">
@@ -505,6 +520,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -571,7 +590,7 @@
  The accepted socket is bound.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="receiveSize" /> is less than 0.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginAccept">
@@ -587,6 +606,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -655,7 +678,7 @@
  The accepted socket is bound.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="receiveSize" /> is less than 0.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginConnect">
@@ -671,6 +694,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -727,7 +754,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> is <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />ing.</exception>
@@ -746,6 +773,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -802,7 +833,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="address" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">The <see cref="T:System.Net.Sockets.Socket" /> is not in the socket family.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
@@ -823,6 +854,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -879,7 +914,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="addresses" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets that use <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
@@ -900,6 +935,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -976,6 +1015,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -1017,7 +1060,7 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The operating system is Windows 2000 or earlier, and this method requires Windows XP.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="BeginReceive">
@@ -1033,6 +1076,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1086,7 +1133,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
@@ -1104,6 +1151,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1159,7 +1210,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
@@ -1177,6 +1228,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -1246,7 +1301,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1278,6 +1333,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -1332,7 +1391,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">
           <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1364,6 +1423,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -1402,7 +1465,7 @@
   
  This method reads data into the `buffer` parameter, and captures the remote host endpoint from which the data is sent. For information on how to retrieve this endpoint, refer to <xref:System.Net.Sockets.Socket.EndReceiveFrom%2A>. This method is most useful if you intend to asynchronously receive connectionless datagrams from an unknown host or multiple hosts. In these cases, <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> will read the first enqueued datagram received into the local network buffer. If the datagram you receive is larger than the size of `buffer`, the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method will fill `buffer` with as much of the message as is possible, and throw a <xref:System.Net.Sockets.SocketException>. If you are using an unreliable protocol, the excess data will be lost. If you are using a reliable protocol, the excess data will be retained by the service provider and you can retrieve it by calling the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method with a large enough buffer.  
   
- To guarantee that the remote host endpoint is always returned, an application should explicitly bind the <xref:System.Net.Sockets.Socket> to a local endpoint using the <xref:System.Net.Sockets.Socket.Bind%2A> method and then call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method with the `optionLevel` parameter set to <xref:System.Net.Sockets.SocketOptionLevel> or <xref:System.Net.Sockets.SocketOptionLevel> as appropriate, the `optionName` parameter set to <xref:System.Net.Sockets.SocketOptionName>, and the `optionValue` parameter to enable this option before calling the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method. Otherwise, it is possible for the remote host endpoint to not be returned when the sender has sent a number of datagrams before the receiver has called the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method.  
+ To guarantee that the remote host endpoint is always returned, an application should explicitly bind the <xref:System.Net.Sockets.Socket> to a local endpoint using the <xref:System.Net.Sockets.Socket.Bind%2A> method and then call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method with the `optionLevel` parameter set to <xref:System.Net.Sockets.SocketOptionLevel.IP> or <xref:System.Net.Sockets.SocketOptionLevel.IPv6> as appropriate, the `optionName` parameter set to <xref:System.Net.Sockets.SocketOptionName.PacketInformation>, and the `optionValue` parameter to enable this option before calling the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method. Otherwise, it is possible for the remote host endpoint to not be returned when the sender has sent a number of datagrams before the receiver has called the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method.  
   
  Although <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> is intended for connectionless protocols, you can use a connection-oriented protocol as well. If you choose to do so, you must first either establish a remote host connection by calling the <xref:System.Net.Sockets.Socket.Connect%2A> / <xref:System.Net.Sockets.Socket.BeginConnect%2A> method or accept an incoming connection request by calling the <xref:System.Net.Sockets.Socket.Accept%2A> or <xref:System.Net.Sockets.Socket.BeginAccept%2A> method. If you call the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method before establishing or accepting a connection, you will get a <xref:System.Net.Sockets.SocketException>. You can also establish a default remote host for a connectionless protocol prior to calling the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method. In either of these cases, the <xref:System.Net.Sockets.Socket.BeginReceiveFrom%2A> method will ignore the `remoteEP` parameter and only receive data from the connected or default remote host.  
   
@@ -1436,7 +1499,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> is less than 0.  
   
@@ -1468,6 +1531,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1527,7 +1594,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> is less than 0.  
   
@@ -1560,6 +1627,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -1588,7 +1659,7 @@
   
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSend%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. If you are using a connectionless protocol and plan to send data to several different hosts, you should use <xref:System.Net.Sockets.Socket.BeginSendTo%2A>. It is okay to use <xref:System.Net.Sockets.Socket.BeginSendTo%2A> even after you have established a default remote host with <xref:System.Net.Sockets.Socket.Connect%2A>. You can also change the default remote host prior to calling <xref:System.Net.Sockets.Socket.BeginSend%2A> by making another call to <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A>. With connectionless protocols, you must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.BeginSend%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
- If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -1632,6 +1703,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
@@ -1667,7 +1742,7 @@
   
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSend%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. If you are using a connectionless protocol and plan to send data to several different hosts, you should use <xref:System.Net.Sockets.Socket.BeginSendTo%2A>. It is okay to use <xref:System.Net.Sockets.Socket.BeginSendTo%2A> even after you have established a default remote host with <xref:System.Net.Sockets.Socket.Connect%2A>. You can also change the default remote host prior to calling <xref:System.Net.Sockets.Socket.BeginSend%2A> by making another call to <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A>. With connectionless protocols, you must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.BeginSend%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
- If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -1711,6 +1786,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -1743,7 +1822,7 @@
   
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSend%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. If you are using a connectionless protocol and plan to send data to several different hosts, you should use <xref:System.Net.Sockets.Socket.BeginSendTo%2A>. It is okay to use <xref:System.Net.Sockets.Socket.BeginSendTo%2A> even after you have established a default remote host with <xref:System.Net.Sockets.Socket.Connect%2A>. You can also change the default remote host prior to calling <xref:System.Net.Sockets.Socket.BeginSend%2A> by making another call to <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A>. With connectionless protocols, you must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.BeginSend%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
- If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -1808,6 +1887,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -1842,7 +1925,7 @@
   
  Although intended for connection-oriented protocols, <xref:System.Net.Sockets.Socket.BeginSend%2A> also works for connectionless protocols, provided that you first call the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A> method to establish a default remote host. If you are using a connectionless protocol and plan to send data to several different hosts, you should use <xref:System.Net.Sockets.Socket.BeginSendTo%2A>. It is okay to use <xref:System.Net.Sockets.Socket.BeginSendTo%2A> even after you have established a default remote host with <xref:System.Net.Sockets.Socket.Connect%2A>. You can also change the default remote host prior to calling <xref:System.Net.Sockets.Socket.BeginSend%2A> by making another call to <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.BeginConnect%2A>. With connectionless protocols, you must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.BeginSend%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
- If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -1897,6 +1980,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -1966,6 +2053,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -2048,6 +2139,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -2086,7 +2181,7 @@
   
  If you want to send data to a broadcast address, you must first call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method and set the socket option to <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>. -You must also be sure that the size of your buffer does not exceed the maximum packet size of the underlying service provider. If it does, the datagram will not be sent and <xref:System.Net.Sockets.Socket.EndSendTo%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
   
- If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -2114,7 +2209,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> is less than 0.  
   
@@ -2141,6 +2236,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2170,7 +2266,7 @@
   
  If you use the above approach, you can discover what local network address and port number has been assigned by calling the <xref:System.Net.Sockets.Socket.LocalEndPoint%2A>. If you are using a connection-oriented protocol, <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> will not return the locally assigned network address until after you have made a call to the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.EndConnect%2A> method. If you are using a connectionless protocol, you will not have access to this information until you have completed a send or receive.  
   
- If a UDP socket wants to receive interface information on received packets,  the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method should be explicitly called with the socket option set to <xref:System.Net.Sockets.SocketOptionName> immediately after calling the <xref:System.Net.Sockets.Socket.Bind%2A> method.  
+ If a UDP socket wants to receive interface information on received packets,  the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method should be explicitly called with the socket option set to <xref:System.Net.Sockets.SocketOptionName.PacketInformation> immediately after calling the <xref:System.Net.Sockets.Socket.Bind%2A> method.  
   
 > [!NOTE]
 >  If you intend to receive multicast datagrams, you must call the <xref:System.Net.Sockets.Socket.Bind%2A> method with a multicast port number.  
@@ -2197,7 +2293,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="localEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the host defined by <paramref name="localEP" />. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" /></permission>
@@ -2211,6 +2307,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2244,7 +2341,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -2256,6 +2353,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2303,6 +2401,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2317,10 +2419,10 @@
   
  For connection-oriented protocols, it is recommended that you call <xref:System.Net.Sockets.Socket.Shutdown%2A> before calling the <xref:System.Net.Sockets.Socket.Close%2A> method. This ensures that all data is sent and received on the connected socket before it is closed.  
   
- If you need to call <xref:System.Net.Sockets.Socket.Close%2A> without first calling <xref:System.Net.Sockets.Socket.Shutdown%2A>, you can ensure that data queued for outgoing transmission will be sent by setting the <xref:System.Net.Sockets.SocketOptionName><xref:System.Net.Sockets.Socket> option to `false` and specifying a non-zero time-out interval. <xref:System.Net.Sockets.Socket.Close%2A> will then block until this data is sent or until the specified time-out expires. If you set <xref:System.Net.Sockets.SocketOptionName> to `false` and specify a zero time-out interval, <xref:System.Net.Sockets.Socket.Close%2A> releases the connection and automatically discards outgoing queued data.  
+ If you need to call <xref:System.Net.Sockets.Socket.Close%2A> without first calling <xref:System.Net.Sockets.Socket.Shutdown%2A>, you can ensure that data queued for outgoing transmission will be sent by setting the <xref:System.Net.Sockets.SocketOptionName.DontLinger><xref:System.Net.Sockets.Socket> option to `false` and specifying a non-zero time-out interval. <xref:System.Net.Sockets.Socket.Close%2A> will then block until this data is sent or until the specified time-out expires. If you set <xref:System.Net.Sockets.SocketOptionName.DontLinger> to `false` and specify a zero time-out interval, <xref:System.Net.Sockets.Socket.Close%2A> releases the connection and automatically discards outgoing queued data.  
   
 > [!NOTE]
->  To set the <xref:System.Net.Sockets.SocketOptionName> socket option to `false`, create a <xref:System.Net.Sockets.LingerOption>, set the enabled property to `true`, and set the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property to the desired time out period. Use this <xref:System.Net.Sockets.LingerOption> along with the <xref:System.Net.Sockets.SocketOptionName> socket option to call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method.  
+>  To set the <xref:System.Net.Sockets.SocketOptionName.DontLinger> socket option to `false`, create a <xref:System.Net.Sockets.LingerOption>, set the enabled property to `true`, and set the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property to the desired time out period. Use this <xref:System.Net.Sockets.LingerOption> along with the <xref:System.Net.Sockets.SocketOptionName.DontLinger> socket option to call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -2352,6 +2454,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2369,10 +2475,10 @@
   
  For connection-oriented protocols, it is recommended that you call <xref:System.Net.Sockets.Socket.Shutdown%2A> before calling <xref:System.Net.Sockets.Socket.Close%2A>. This ensures that all data is sent and received on the connected socket before it is closed.  
   
- If you need to call <xref:System.Net.Sockets.Socket.Close%2A> without first calling <xref:System.Net.Sockets.Socket.Shutdown%2A>, you can ensure that data queued for outgoing transmission will be sent by setting the <xref:System.Net.Sockets.SocketOptionName> option to `false` and specifying a non-zero time-out interval. <xref:System.Net.Sockets.Socket.Close%2A> will then block until this data is sent or until the specified time-out expires. If you set <xref:System.Net.Sockets.SocketOptionName> to `false` and specify a zero time-out interval, <xref:System.Net.Sockets.Socket.Close%2A> releases the connection and automatically discards outgoing queued data.  
+ If you need to call <xref:System.Net.Sockets.Socket.Close%2A> without first calling <xref:System.Net.Sockets.Socket.Shutdown%2A>, you can ensure that data queued for outgoing transmission will be sent by setting the <xref:System.Net.Sockets.SocketOptionName.DontLinger> option to `false` and specifying a non-zero time-out interval. <xref:System.Net.Sockets.Socket.Close%2A> will then block until this data is sent or until the specified time-out expires. If you set <xref:System.Net.Sockets.SocketOptionName.DontLinger> to `false` and specify a zero time-out interval, <xref:System.Net.Sockets.Socket.Close%2A> releases the connection and automatically discards outgoing queued data.  
   
 > [!NOTE]
->  To set the <xref:System.Net.Sockets.SocketOptionName> socket option to `false`, create a <xref:System.Net.Sockets.LingerOption>, set the enabled property to `true`, and set the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property to the desired time-out period. Use this <xref:System.Net.Sockets.LingerOption> along with the <xref:System.Net.Sockets.SocketOptionName> socket option to call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method.  
+>  To set the <xref:System.Net.Sockets.SocketOptionName.DontLinger> socket option to `false`, create a <xref:System.Net.Sockets.LingerOption>, set the enabled property to `true`, and set the <xref:System.Net.Sockets.LingerOption.LingerTime%2A> property to the desired time-out period. Use this <xref:System.Net.Sockets.LingerOption> along with the <xref:System.Net.Sockets.SocketOptionName.DontLinger> socket option to call the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method.  
   
 > [!NOTE]
 >  This member outputs trace information when you enable network tracing in your application. For more information, see [Network Tracing in the .NET Framework](~/docs/framework/network-programming/network-tracing.md).  
@@ -2398,6 +2504,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2449,7 +2556,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> is <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />ing.</exception>
@@ -2464,6 +2571,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2517,7 +2625,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="address" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
         <exception cref="T:System.ArgumentException">The length of <paramref name="address" /> is zero.</exception>
@@ -2532,6 +2640,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2585,7 +2694,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="addresses" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
         <exception cref="T:System.ArgumentException">The length of <paramref name="address" /> is zero.</exception>
@@ -2600,6 +2709,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2655,7 +2765,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="host" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The port number is not valid.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">This method is valid for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> is <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" />ing.</exception>
@@ -2669,6 +2779,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2729,7 +2840,7 @@
         <exception cref="T:System.ArgumentException">An argument is not valid. This exception occurs if multiple buffers are specified, the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.BufferList" /> property is not null.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter cannot be null and the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" /> cannot be null.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> is listening or a socket operation was already in progress using the <see cref="T:System.Net.Sockets.SocketAsyncEventArgs" /> object specified in the <paramref name="e" /> parameter.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method. This exception also occurs if the local endpoint and the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" /> are not the same address family.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
@@ -2743,6 +2854,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2807,7 +2919,7 @@
         <exception cref="T:System.ArgumentException">An argument is not valid. This exception occurs if multiple buffers are specified, the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.BufferList" /> property is not null.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="e" /> parameter cannot be null and the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" /> cannot be null.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> is listening or a socket operation was already in progress using the <see cref="T:System.Net.Sockets.SocketAsyncEventArgs" /> object specified in the <paramref name="e" /> parameter.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method. This exception also occurs if the local endpoint and the <see cref="P:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint" /> are not the same address family.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller higher in the call stack does not have permission for the requested operation.</exception>
@@ -2821,6 +2933,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -2875,6 +2988,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2893,7 +3010,7 @@
   
  To ensure that all data is sent and received before the socket is closed, you should call <xref:System.Net.Sockets.Socket.Shutdown%2A> before calling the <xref:System.Net.Sockets.Socket.Disconnect%2A> method.  
   
- If you need to call <xref:System.Net.Sockets.Socket.Disconnect%2A> without first calling <xref:System.Net.Sockets.Socket.Shutdown%2A>, you can set the <xref:System.Net.Sockets.SocketOptionName><xref:System.Net.Sockets.Socket> option to `false` and specify a nonzero time-out interval to ensure that data queued for outgoing transmission is sent. <xref:System.Net.Sockets.Socket.Disconnect%2A> then blocks until the data is sent or until the specified time-out expires. If you set <xref:System.Net.Sockets.SocketOptionName> to `false` and specify a zero time-out interval, <xref:System.Net.Sockets.Socket.Close%2A> releases the connection and automatically discards outgoing queued data.  
+ If you need to call <xref:System.Net.Sockets.Socket.Disconnect%2A> without first calling <xref:System.Net.Sockets.Socket.Shutdown%2A>, you can set the <xref:System.Net.Sockets.SocketOptionName.DontLinger><xref:System.Net.Sockets.Socket> option to `false` and specify a nonzero time-out interval to ensure that data queued for outgoing transmission is sent. <xref:System.Net.Sockets.Socket.Disconnect%2A> then blocks until the data is sent or until the specified time-out expires. If you set <xref:System.Net.Sockets.SocketOptionName.DontLinger> to `false` and specify a zero time-out interval, <xref:System.Net.Sockets.Socket.Close%2A> releases the connection and automatically discards outgoing queued data.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -2913,7 +3030,7 @@
         </remarks>
         <exception cref="T:System.PlatformNotSupportedException">This method requires Windows 2000 or earlier, or the exception will be thrown.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="DisconnectAsync">
@@ -2929,6 +3046,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2965,6 +3086,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3004,6 +3126,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3053,6 +3176,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3089,7 +3213,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">This property can be set only for sockets in the <see cref="F:System.Net.Sockets.AddressFamily.InterNetwork" /> or <see cref="F:System.Net.Sockets.AddressFamily.InterNetworkV6" /> families.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3101,6 +3225,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3134,6 +3259,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3178,6 +3307,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -3231,6 +3361,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.Socket</ReturnType>
       </ReturnValue>
@@ -3269,9 +3403,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+          <paramref name="result" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="asyncResult" /> was not created by a call to <see cref="M:System.Net.Sockets.Socket.BeginAccept(System.AsyncCallback,System.Object)" />.</exception>
+          <paramref name="result" /> was not created by a call to <see cref="M:System.Net.Sockets.Socket.BeginAccept(System.AsyncCallback,System.Object)" />.</exception>
         <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">
@@ -3292,6 +3426,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.Socket</ReturnType>
@@ -3339,7 +3477,7 @@
           <paramref name="asyncResult" /> was not created by a call to <see cref="M:System.Net.Sockets.Socket.BeginAccept(System.AsyncCallback,System.Object)" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" /> method was previously called.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" /> See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" /></exception>
       </Docs>
     </Member>
     <Member MemberName="EndAccept">
@@ -3355,6 +3493,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Sockets.Socket</ReturnType>
@@ -3404,7 +3546,7 @@
           <paramref name="asyncResult" /> was not created by a call to <see cref="M:System.Net.Sockets.Socket.BeginAccept(System.AsyncCallback,System.Object)" />.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndAccept(System.IAsyncResult)" /> method was previously called.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="EndConnect">
@@ -3420,6 +3562,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3458,12 +3604,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+          <paramref name="result" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object)" /> method.</exception>
+          <paramref name="result" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginConnect(System.Net.EndPoint,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndConnect(System.IAsyncResult)" /> was previously called for the asynchronous connection.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3480,6 +3626,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3520,7 +3670,7 @@
           <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginDisconnect(System.Boolean,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndDisconnect(System.IAsyncResult)" /> was previously called for the asynchronous connection.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.Net.WebException">The disconnect request has timed out.</exception>
       </Docs>
     </Member>
@@ -3537,6 +3687,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3585,12 +3739,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+          <paramref name="result" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</exception>
+          <paramref name="result" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" /> was previously called for the asynchronous read.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3607,6 +3761,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3651,7 +3809,7 @@
           <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginReceive(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndReceive(System.IAsyncResult)" /> was previously called for the asynchronous read.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3668,6 +3826,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3716,7 +3878,7 @@
           <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginReceiveFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndReceiveFrom(System.IAsyncResult,System.Net.EndPoint@)" /> was previously called for the asynchronous read.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3733,6 +3895,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3777,7 +3943,7 @@
           <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginReceiveMessageFrom(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint@,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndReceiveMessageFrom(System.IAsyncResult,System.Net.Sockets.SocketFlags@,System.Net.EndPoint@,System.Net.Sockets.IPPacketInformation@)" /> was previously called for the asynchronous read.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3794,6 +3960,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3843,12 +4013,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+          <paramref name="result" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</exception>
+          <paramref name="result" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" /> was previously called for the asynchronous send.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3865,6 +4035,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3912,7 +4086,7 @@
           <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginSend(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndSend(System.IAsyncResult)" /> was previously called for the asynchronous send.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -3929,6 +4103,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3992,6 +4170,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -4032,12 +4214,12 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+          <paramref name="result" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="asyncResult" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" /> method.</exception>
+          <paramref name="result" /> was not returned by a call to the <see cref="M:System.Net.Sockets.Socket.BeginSendTo(System.Byte[],System.Int32,System.Int32,System.Net.Sockets.SocketFlags,System.Net.EndPoint,System.AsyncCallback,System.Object)" /> method.</exception>
         <exception cref="T:System.InvalidOperationException">
           <see cref="M:System.Net.Sockets.Socket.EndSendTo(System.IAsyncResult)" /> was previously called for the asynchronous send.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -4049,6 +4231,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4100,6 +4283,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4134,6 +4318,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4160,7 +4345,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.Sockets.Socket> options determine the behavior of the current <xref:System.Net.Sockets.Socket>. Use this overload to get the <xref:System.Net.Sockets.SocketOptionName>, <xref:System.Net.Sockets.SocketOptionName>, and <xref:System.Net.Sockets.SocketOptionName><xref:System.Net.Sockets.Socket> options. For the <xref:System.Net.Sockets.SocketOptionName> option, use <xref:System.Net.Sockets.Socket> for the `optionLevel` parameter. For <xref:System.Net.Sockets.SocketOptionName> and <xref:System.Net.Sockets.SocketOptionName>, use <xref:System.Net.Sockets.SocketOptionLevel>. If you want to set the value of any of the options listed above, use the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method.  
+ <xref:System.Net.Sockets.Socket> options determine the behavior of the current <xref:System.Net.Sockets.Socket>. Use this overload to get the <xref:System.Net.Sockets.SocketOptionName.Linger>, <xref:System.Net.Sockets.SocketOptionName.AddMembership>, and <xref:System.Net.Sockets.SocketOptionName.DropMembership><xref:System.Net.Sockets.Socket> options. For the <xref:System.Net.Sockets.SocketOptionName.Linger> option, use <xref:System.Net.Sockets.Socket> for the `optionLevel` parameter. For <xref:System.Net.Sockets.SocketOptionName.AddMembership> and <xref:System.Net.Sockets.SocketOptionName.DropMembership>, use <xref:System.Net.Sockets.SocketOptionLevel.IP>. If you want to set the value of any of the options listed above, use the <xref:System.Net.Sockets.Socket.SetSocketOption%2A> method.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -4179,7 +4364,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.  
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.  
   
  -or-  
   
@@ -4195,6 +4380,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4240,7 +4426,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.  
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.  
   
  \- or -  
   
@@ -4256,6 +4442,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4303,7 +4490,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.  
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.  
   
  \- or -  
   
@@ -4325,6 +4512,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
@@ -4342,6 +4533,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4388,7 +4580,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to change the blocking mode without using the <see cref="P:System.Net.Sockets.Socket.Blocking" /> property.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
@@ -4403,6 +4595,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4442,14 +4635,14 @@
    
   
 ## Examples  
- The following code example compares the results of calling <xref:System.Net.Sockets.Socket.IOControl%2A> with <xref:System.Net.Sockets.IOControlCode> and the <xref:System.Net.Sockets.Socket.Available%2A> property.  
+ The following code example compares the results of calling <xref:System.Net.Sockets.Socket.IOControl%2A> with <xref:System.Net.Sockets.IOControlCode.DataToRead> and the <xref:System.Net.Sockets.Socket.Available%2A> property.  
   
  [!code-cpp[NCLSocketIoControl1#1](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSocketIoControl1/CPP/iocontrolcode.cpp#1)]
  [!code-csharp[NCLSocketIoControl1#1](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSocketIoControl1/CS/iocontrolcode.cs#1)]  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">An attempt was made to change the blocking mode without using the <see cref="P:System.Net.Sockets.Socket.Blocking" /> property.</exception>
         <permission cref="T:System.Security.Permissions.SecurityPermission">to execute unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" />.</permission>
@@ -4463,6 +4656,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4506,6 +4700,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4568,6 +4763,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4591,7 +4787,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.Sockets.Socket.Listen%2A> causes a connection-oriented <xref:System.Net.Sockets.Socket> to listen for incoming connection attempts. The `backlog` parameter specifies the number of incoming connections that can be queued for acceptance. To determine the maximum number of connections you can specify, retrieve the <xref:System.Net.Sockets.SocketOptionName> value. <xref:System.Net.Sockets.Socket.Listen%2A> does not block.  
+ <xref:System.Net.Sockets.Socket.Listen%2A> causes a connection-oriented <xref:System.Net.Sockets.Socket> to listen for incoming connection attempts. The `backlog` parameter specifies the number of incoming connections that can be queued for acceptance. To determine the maximum number of connections you can specify, retrieve the <xref:System.Net.Sockets.SocketOptionName.MaxConnections> value. <xref:System.Net.Sockets.Socket.Listen%2A> does not block.  
   
  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error. Use <xref:System.Net.Sockets.Socket.Accept%2A> or <xref:System.Net.Sockets.Socket.BeginAccept%2A> to accept a connection from the queue.  
   
@@ -4615,7 +4811,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -4627,6 +4823,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4668,7 +4865,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -4680,6 +4877,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4727,6 +4925,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4764,7 +4963,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -4776,6 +4975,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4811,6 +5011,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4846,6 +5047,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -4869,20 +5071,11 @@
         <summary>Determines the status of the <see cref="T:System.Net.Sockets.Socket" />.</summary>
         <returns>The status of the <see cref="T:System.Net.Sockets.Socket" /> based on the polling mode value passed in the <paramref name="mode" /> parameter.  
   
- <list type="table">  
-<listheader>  
-<term> Mode  
+ <list type="table"><listheader><term> Mode  
   
- </term>  
-<description> Return Value  
+ </term><description> Return Value  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="F:System.Net.Sockets.SelectMode.SelectRead" />  
-  
- </term>  
-<description> <see langword="true" /> if <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" /> has been called and a connection is pending;  
+ </description></listheader><item><term><see cref="F:System.Net.Sockets.SelectMode.SelectRead" /></term><description><see langword="true" /> if <see cref="M:System.Net.Sockets.Socket.Listen(System.Int32)" /> has been called and a connection is pending;  
   
  -or-  
   
@@ -4894,13 +5087,7 @@
   
  otherwise, returns <see langword="false" />.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="F:System.Net.Sockets.SelectMode.SelectWrite" />  
-  
- </term>  
-<description> <see langword="true" />, if processing a <see cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />, and the connection has succeeded;  
+ </description></item><item><term><see cref="F:System.Net.Sockets.SelectMode.SelectWrite" /></term><description><see langword="true" />, if processing a <see cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" />, and the connection has succeeded;  
   
  -or-  
   
@@ -4908,13 +5095,7 @@
   
  otherwise, returns <see langword="false" />.  
   
- </description>  
-</item>  
-<item>  
-<term> <see cref="F:System.Net.Sockets.SelectMode.SelectError" />  
-  
- </term>  
-<description> <see langword="true" /> if processing a <see cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" /> that does not block, and the connection has failed;  
+ </description></item><item><term><see cref="F:System.Net.Sockets.SelectMode.SelectError" /></term><description><see langword="true" /> if processing a <see cref="M:System.Net.Sockets.Socket.Connect(System.Net.EndPoint)" /> that does not block, and the connection has failed;  
   
  -or-  
   
@@ -4922,9 +5103,7 @@
   
  otherwise, returns <see langword="false" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4964,6 +5143,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5007,6 +5187,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5033,7 +5214,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.Socket.Receive%2A> method reads data into the buffer parameter and returns the number of bytes successfully read. You can call <xref:System.Net.Sockets.Socket.Receive%2A> from both connection-oriented and connectionless sockets.  
   
- This overload only requires you to provide a receive buffer. The buffer offset defaults to 0, the size defaults to the length of the buffer parameter, and the <xref:System.Net.Sockets.SocketFlags> value defaults to <xref:System.Net.Sockets.SocketFlags>.  
+ This overload only requires you to provide a receive buffer. The buffer offset defaults to 0, the size defaults to the length of the buffer parameter, and the <xref:System.Net.Sockets.SocketFlags> value defaults to <xref:System.Net.Sockets.SocketFlags.None>.  
   
  If you are using a connection-oriented protocol, you must either call <xref:System.Net.Sockets.Socket.Connect%2A> to establish a remote host connection, or <xref:System.Net.Sockets.Socket.Accept%2A> to accept an incoming connection prior to calling <xref:System.Net.Sockets.Socket.Receive%2A>. The <xref:System.Net.Sockets.Socket.Receive%2A> method will only read data that arrives from the remote host established in the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.Accept%2A> method. If you are using a connectionless protocol, you can also use the <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> method. <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will allow you to receive data arriving from any host.  
   
@@ -5062,7 +5243,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -5076,6 +5257,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5121,7 +5303,7 @@
         </remarks>
         <altCompliant cref="M:System.Net.Sockets.Socket.Receive(System.Byte[])" />
         <exception cref="T:System.ArgumentNullException">The <paramref name="buffer" /> parameter is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -5133,6 +5315,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5190,7 +5373,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -5204,6 +5387,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5237,7 +5421,7 @@
 ## Remarks  
  This method reads data into the `buffers` parameter and returns the number of bytes successfully read. You can call from both connection-oriented and connectionless sockets.  
   
- This overload requires you to provide one or more receive buffers. The <xref:System.Net.Sockets.SocketFlags> value defaults to <xref:System.Net.Sockets.SocketFlags>.  
+ This overload requires you to provide one or more receive buffers. The <xref:System.Net.Sockets.SocketFlags> value defaults to <xref:System.Net.Sockets.SocketFlags.None>.  
   
  If you are using a connection-oriented protocol, you must either call <xref:System.Net.Sockets.Socket.Connect%2A> to establish a remote host connection, or <xref:System.Net.Sockets.Socket.Accept%2A> to accept an incoming connection prior to calling <xref:System.Net.Sockets.Socket.Receive%2A>. The <xref:System.Net.Sockets.Socket.Receive%2A> method will only read data that arrives from the remote host connection established in the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.Accept%2A> method. If you are using a connectionless protocol, you can also use the <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> method. <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will allow you to receive data arriving from any host.  
   
@@ -5270,7 +5454,7 @@
  -or-  
   
  <paramref name="buffers" />.Count is zero.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
       </Docs>
@@ -5283,6 +5467,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5332,7 +5517,7 @@
    
   
 ## Examples  
- The following receives the data found into `buffer`, and specifies <xref:System.Net.Sockets.SocketFlags> for <xref:System.Net.Sockets.SocketFlags>.  
+ The following receives the data found into `buffer`, and specifies <xref:System.Net.Sockets.SocketFlags.None> for <xref:System.Net.Sockets.SocketFlags>.  
   
  [!code-cpp[Socket_Send_Recieve#4](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Send_Recieve/CPP/source.cpp#4)]
  [!code-csharp[Socket_Send_Recieve#4](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Send_Recieve/CS/source.cs#4)]
@@ -5344,7 +5529,7 @@
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="size" /> exceeds the size of <paramref name="buffer" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -5358,6 +5543,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5393,7 +5579,7 @@
 ## Remarks  
  This method reads data into the `buffers` parameter and returns the number of bytes successfully read. You can call from both connection-oriented and connectionless sockets.  
   
- This overload requires you to provide one or more receive buffers. The <xref:System.Net.Sockets.SocketFlags> value defaults to <xref:System.Net.Sockets.SocketFlags>.  
+ This overload requires you to provide one or more receive buffers. The <xref:System.Net.Sockets.SocketFlags> value defaults to <xref:System.Net.Sockets.SocketFlags.None>.  
   
  If you are using a connection-oriented protocol, you must either call <xref:System.Net.Sockets.Socket.Connect%2A> to establish a remote host connection, or <xref:System.Net.Sockets.Socket.Accept%2A> to accept an incoming connection prior to calling <xref:System.Net.Sockets.Socket.Receive%2A>. The <xref:System.Net.Sockets.Socket.Receive%2A> method will only read data that arrives from the remote host connection established in the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.Accept%2A> method. If you are using a connectionless protocol, you can also use the <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> method. <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will allow you to receive data arriving from any host.  
   
@@ -5418,7 +5604,7 @@
  -or-  
   
  <paramref name="buffers" />.Count is zero.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred while attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
       </Docs>
@@ -5431,6 +5617,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5527,6 +5714,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5616,6 +5804,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5672,7 +5861,7 @@
         <exception cref="T:System.InvalidOperationException">A socket operation was already in progress using the <see cref="T:System.Net.Sockets.SocketAsyncEventArgs" /> object specified in the <paramref name="e" /> parameter.</exception>
         <exception cref="T:System.NotSupportedException">Windows XP or later is required for this method.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="ReceiveBufferSize">
@@ -5683,6 +5872,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5728,6 +5918,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5756,7 +5947,7 @@
 ## Remarks  
  The <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> method reads data into the `buffer` parameter, returns the number of bytes successfully read, and captures the remote host endpoint from which the data was sent. This method is useful if you intend to receive connectionless datagrams from an unknown host or multiple hosts.  
   
- This overload only requires you to provide a receive `buffer`, and an <xref:System.Net.EndPoint> that represents the remote host. The buffer offset defaults to 0. The size defaults to the length of the `buffer` parameter and the `socketFlags` value defaults to <xref:System.Net.Sockets.SocketFlags>.  
+ This overload only requires you to provide a receive `buffer`, and an <xref:System.Net.EndPoint> that represents the remote host. The buffer offset defaults to 0. The size defaults to the length of the `buffer` parameter and the `socketFlags` value defaults to <xref:System.Net.Sockets.SocketFlags.None>.  
   
 > [!NOTE]
 >  Before calling <xref:System.Net.Sockets.Socket.ReceiveFrom%2A>, you must explicitly bind the <xref:System.Net.Sockets.Socket> to a local endpoint using the <xref:System.Net.Sockets.Socket.Bind%2A> method. If you do not, <xref:System.Net.Sockets.Socket.ReceiveFrom%2A> will throw a <xref:System.Net.Sockets.SocketException>.  
@@ -5795,7 +5986,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -5809,6 +6000,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5878,7 +6070,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -5892,6 +6084,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -5989,6 +6182,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6080,7 +6274,7 @@
   
  -or-  
   
- An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+ An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
       </Docs>
@@ -6093,6 +6287,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6160,6 +6355,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6201,13 +6397,13 @@
 ## Remarks  
  The <xref:System.Net.Sockets.Socket.ReceiveMessageFrom%2A> method reads data into the `buffer` parameter, returns the number of bytes successfully read, and captures the remote host endpoint from which the data was sent, as well as information about the received packet.  
   
- The <xref:System.Net.Sockets.Socket.ReceiveMessageFrom%2A> method is used primarily to receive message data on a connectionless socket. The socket's local address must be known. This method can only be used with datagram and raw sockets. The socket must be initialized with the socket type set to <xref:System.Net.Sockets.SocketType> or <xref:System.Net.Sockets.SocketType> before calling this method. This can be done when the socket is constructed using <xref:System.Net.Sockets.Socket.%23ctor%2A>.  
+ The <xref:System.Net.Sockets.Socket.ReceiveMessageFrom%2A> method is used primarily to receive message data on a connectionless socket. The socket's local address must be known. This method can only be used with datagram and raw sockets. The socket must be initialized with the socket type set to <xref:System.Net.Sockets.SocketType.Dgram> or <xref:System.Net.Sockets.SocketType.Raw> before calling this method. This can be done when the socket is constructed using <xref:System.Net.Sockets.Socket.%23ctor%2A>.  
   
  For message-oriented sockets, an incoming message is placed into the `buffer` parameter up to the total size specified in the `size` parameter. The `offset` parameter determines where in the `buffer` the data is placed. The actual amount of data placed into the `buffer` is returned by the <xref:System.Net.Sockets.Socket.ReceiveMessageFrom%2A> method.  
   
- The <xref:System.Net.Sockets.Socket.ReceiveMessageFrom%2A> method automatically method sets the <xref:System.Net.Sockets.SocketOptionName> socket option to `true` the first time it is called for a given <xref:System.Net.Sockets.Socket>. However, the returned <xref:System.Net.Sockets.IPPacketInformation> object will only be valid for packets which arrive at the local computer after the socket option has been set. If a socket is sent packets between when it is bound to a local endpoint (explicitly by the <xref:System.Net.Sockets.Socket.Bind%2A> method or implicitly by one of the <xref:System.Net.Sockets.Socket.Connect%2A>, <xref:System.Net.Sockets.Socket.ConnectAsync%2A>, <xref:System.Net.Sockets.Socket.SendTo%2A>, or <xref:System.Net.Sockets.Socket.SendToAsync%2A> methods) and its first call to the <xref:System.Net.Sockets.Socket.ReceiveMessageFrom%2A> method, calls to <xref:System.Net.Sockets.Socket.ReceiveMessageFrom%2A> method will return invalid <xref:System.Net.Sockets.IPPacketInformation> objects for these packets.  
+ The <xref:System.Net.Sockets.Socket.ReceiveMessageFrom%2A> method automatically method sets the <xref:System.Net.Sockets.SocketOptionName.PacketInformation> socket option to `true` the first time it is called for a given <xref:System.Net.Sockets.Socket>. However, the returned <xref:System.Net.Sockets.IPPacketInformation> object will only be valid for packets which arrive at the local computer after the socket option has been set. If a socket is sent packets between when it is bound to a local endpoint (explicitly by the <xref:System.Net.Sockets.Socket.Bind%2A> method or implicitly by one of the <xref:System.Net.Sockets.Socket.Connect%2A>, <xref:System.Net.Sockets.Socket.ConnectAsync%2A>, <xref:System.Net.Sockets.Socket.SendTo%2A>, or <xref:System.Net.Sockets.Socket.SendToAsync%2A> methods) and its first call to the <xref:System.Net.Sockets.Socket.ReceiveMessageFrom%2A> method, calls to <xref:System.Net.Sockets.Socket.ReceiveMessageFrom%2A> method will return invalid <xref:System.Net.Sockets.IPPacketInformation> objects for these packets.  
   
- To ensure that all <xref:System.Net.Sockets.IPPacketInformation> objects are valid, an application should set the <xref:System.Net.Sockets.SocketOptionName> socket option to `true` before it is bound to a local endpoint using the <xref:System.Net.Sockets.Socket.SetSocketOption%28System.Net.Sockets.SocketOptionLevel%2CSystem.Net.Sockets.SocketOptionName%2CSystem.Boolean%29> method.  
+ To ensure that all <xref:System.Net.Sockets.IPPacketInformation> objects are valid, an application should set the <xref:System.Net.Sockets.SocketOptionName.PacketInformation> socket option to `true` before it is bound to a local endpoint using the <xref:System.Net.Sockets.Socket.SetSocketOption%28System.Net.Sockets.SocketOptionLevel%2CSystem.Net.Sockets.SocketOptionName%2CSystem.Boolean%29> method.  
   
  An application can examine the `ipPacketInformation` parameter if it needs to know if the datagram was sent using a unicast, multicast, or broadcast address.  
   
@@ -6252,7 +6448,7 @@
   
  -or-  
   
- An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+ An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.NotSupportedException">The operating system is Windows 2000 or earlier, and this method requires Windows XP.</exception>
         <permission cref="T:System.Net.SocketPermission">for accepting connections from the network. Associated enumeration: <see cref="F:System.Net.NetworkAccess.Accept" />.</permission>
@@ -6266,6 +6462,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6297,7 +6494,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A> method is used primarily to receive message data on a connectionless socket. The socket's local address must be known. This method can only be used with datagram and raw sockets. The socket must be initialized with the socket type set to <xref:System.Net.Sockets.SocketType> or <xref:System.Net.Sockets.SocketType> before calling this method. This can be done when the socket is constructed using <xref:System.Net.Sockets.Socket.%23ctor%2A>.  
+ The <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A> method is used primarily to receive message data on a connectionless socket. The socket's local address must be known. This method can only be used with datagram and raw sockets. The socket must be initialized with the socket type set to <xref:System.Net.Sockets.SocketType.Dgram> or <xref:System.Net.Sockets.SocketType.Raw> before calling this method. This can be done when the socket is constructed using <xref:System.Net.Sockets.Socket.%23ctor%2A>.  
   
  The caller must set the <xref:System.Net.Sockets.SocketAsyncEventArgs.RemoteEndPoint%2A?displayProperty=fullName> property to the <xref:System.Net.IPEndPoint> of the remote host from which the data is to be received.  
   
@@ -6317,9 +6514,9 @@
   
  For message-oriented sockets, an incoming message is placed into the buffer up to the total size of the buffer. The <xref:System.Net.Sockets.SocketAsyncEventArgs.Count%2A?displayProperty=fullName> and <xref:System.Net.Sockets.SocketAsyncEventArgs.Offset%2A?displayProperty=fullName> properties determine where in the buffer the data is placed and the amount of data.  
   
- The <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A> method automatically sets the <xref:System.Net.Sockets.SocketOptionName> socket option to `true` the first time it is called for a given <xref:System.Net.Sockets.Socket>. However, the <xref:System.Net.Sockets.IPPacketInformation> object will only be valid for packets which arrive at the local computer after the socket option has been set. If a socket is sent packets between when the socket is bound to a local endpoint (explicitly by the <xref:System.Net.Sockets.Socket.Bind%2A> method or implicitly by one of the <xref:System.Net.Sockets.Socket.Connect%2A>, <xref:System.Net.Sockets.Socket.ConnectAsync%2A>, <xref:System.Net.Sockets.Socket.SendTo%2A>, or <xref:System.Net.Sockets.Socket.SendToAsync%2A> methods) and the first call to the <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A> method, calls to <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A> method will result in invalid <xref:System.Net.Sockets.IPPacketInformation> objects for these packets.  
+ The <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A> method automatically sets the <xref:System.Net.Sockets.SocketOptionName.PacketInformation> socket option to `true` the first time it is called for a given <xref:System.Net.Sockets.Socket>. However, the <xref:System.Net.Sockets.IPPacketInformation> object will only be valid for packets which arrive at the local computer after the socket option has been set. If a socket is sent packets between when the socket is bound to a local endpoint (explicitly by the <xref:System.Net.Sockets.Socket.Bind%2A> method or implicitly by one of the <xref:System.Net.Sockets.Socket.Connect%2A>, <xref:System.Net.Sockets.Socket.ConnectAsync%2A>, <xref:System.Net.Sockets.Socket.SendTo%2A>, or <xref:System.Net.Sockets.Socket.SendToAsync%2A> methods) and the first call to the <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A> method, calls to <xref:System.Net.Sockets.Socket.ReceiveMessageFromAsync%2A> method will result in invalid <xref:System.Net.Sockets.IPPacketInformation> objects for these packets.  
   
- To ensure that all <xref:System.Net.Sockets.IPPacketInformation> objects are valid, an application should set the <xref:System.Net.Sockets.SocketOptionName> socket option to`true` before it is bound to a local endpoint using the <xref:System.Net.Sockets.Socket.SetSocketOption%28System.Net.Sockets.SocketOptionLevel%2CSystem.Net.Sockets.SocketOptionName%2CSystem.Boolean%29> method.  
+ To ensure that all <xref:System.Net.Sockets.IPPacketInformation> objects are valid, an application should set the <xref:System.Net.Sockets.SocketOptionName.PacketInformation> socket option to`true` before it is bound to a local endpoint using the <xref:System.Net.Sockets.Socket.SetSocketOption%28System.Net.Sockets.SocketOptionLevel%2CSystem.Net.Sockets.SocketOptionName%2CSystem.Boolean%29> method.  
   
  An application can examine the resulting <xref:System.Net.Sockets.IPPacketInformation> objects if it needs to know if the datagram was sent using a unicast, multicast, or broadcast address.  
   
@@ -6339,6 +6536,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6384,6 +6582,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6422,7 +6621,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6434,6 +6633,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6502,7 +6702,7 @@
  -and-  
   
  The <paramref name="checkError" /> parameter is <see langword="null" /> or empty.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="Send">
@@ -6513,6 +6713,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6569,7 +6770,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6581,6 +6782,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6643,6 +6845,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6671,7 +6874,7 @@
 ## Remarks  
  <xref:System.Net.Sockets.Socket.Send%2A> synchronously sends data to the remote host established in the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.Accept%2A> method and returns the number of bytes successfully sent. The <xref:System.Net.Sockets.Socket.Send%2A> method can be used for both connection-oriented and connectionless protocols.  
   
- This overload requires a buffer that contains the data you want to send and a bitwise combination of <xref:System.Net.Sockets.SocketFlags>. The buffer offset defaults to 0, and the number of bytes to send defaults to the size of the buffer. If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter value, the data you are sending will not be routed.  
+ This overload requires a buffer that contains the data you want to send and a bitwise combination of <xref:System.Net.Sockets.SocketFlags>. The buffer offset defaults to 0, and the number of bytes to send defaults to the size of the buffer. If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter value, the data you are sending will not be routed.  
   
  If you are using a connectionless protocol, you must call <xref:System.Net.Sockets.Socket.Connect%2A> before calling this method, or <xref:System.Net.Sockets.Socket.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you are using a connection-oriented protocol, you must either use <xref:System.Net.Sockets.Socket.Connect%2A> to establish a remote host connection, or use <xref:System.Net.Sockets.Socket.Accept%2A> to accept an incoming connection.  
   
@@ -6701,7 +6904,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6713,6 +6916,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6739,7 +6943,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload requires at least one buffer that contains the data you want to send. The <xref:System.Net.Sockets.SocketFlags> value defaults to 0. If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketFlags` parameter, the data you are sending will not be routed.  
+ This overload requires at least one buffer that contains the data you want to send. The <xref:System.Net.Sockets.SocketFlags> value defaults to 0. If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketFlags` parameter, the data you are sending will not be routed.  
   
  If you are using a connectionless protocol, you must call <xref:System.Net.Sockets.Socket.Connect%2A> before calling this method, or <xref:System.Net.Sockets.Socket.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you are using a connection-oriented protocol, you must either use <xref:System.Net.Sockets.Socket.Connect%2A> to establish a remote host connection, or use <xref:System.Net.Sockets.Socket.Accept%2A> to accept an incoming connection.  
   
@@ -6763,7 +6967,7 @@
           <paramref name="buffers" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="buffers" /> is empty.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6775,6 +6979,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6805,7 +7010,7 @@
 ## Remarks  
  <xref:System.Net.Sockets.Socket.Send%2A> synchronously sends data to the remote host established in the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.Accept%2A> method and returns the number of bytes successfully sent. <xref:System.Net.Sockets.Socket.Send%2A> can be used for both connection-oriented and connectionless protocols.  
   
- This overload requires a buffer that contains the data you want to send, the number of bytes you want to send, and a bitwise combination of any <xref:System.Net.Sockets.SocketFlags>. If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ This overload requires a buffer that contains the data you want to send, the number of bytes you want to send, and a bitwise combination of any <xref:System.Net.Sockets.SocketFlags>. If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
  If you are using a connectionless protocol, you must call <xref:System.Net.Sockets.Socket.Connect%2A> before calling this method, or <xref:System.Net.Sockets.Socket.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you are using a connection-oriented protocol, you must either use <xref:System.Net.Sockets.Socket.Connect%2A> to establish a remote host connection, or use <xref:System.Net.Sockets.Socket.Accept%2A> to accept an incoming connection.  
   
@@ -6825,7 +7030,7 @@
    
   
 ## Examples  
- The following code example sends the data found in buffer, and specifies <xref:System.Net.Sockets.SocketFlags> for <xref:System.Net.Sockets.SocketFlags>.  
+ The following code example sends the data found in buffer, and specifies <xref:System.Net.Sockets.SocketFlags.None> for <xref:System.Net.Sockets.SocketFlags>.  
   
  [!code-cpp[Socket_Sync_Send_Receive#3](~/samples/snippets/cpp/VS_Snippets_Remoting/Socket_Sync_Send_Receive/CPP/source.cpp#3)]
  [!code-csharp[Socket_Sync_Send_Receive#3](~/samples/snippets/csharp/VS_Snippets_Remoting/Socket_Sync_Send_Receive/CS/source.cs#3)]
@@ -6842,7 +7047,7 @@
   
  -or-  
   
- An operating system error occurs while accessing the socket. See the Remarks section for more information.</exception>
+ An operating system error occurs while accessing the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6854,6 +7059,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6887,7 +7093,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload requires at least one buffer that contains the data you want to send. The <xref:System.Net.Sockets.SocketFlags> value defaults to 0. If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketFlags` parameter, the data you are sending will not be routed.  
+ This overload requires at least one buffer that contains the data you want to send. The <xref:System.Net.Sockets.SocketFlags> value defaults to 0. If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketFlags` parameter, the data you are sending will not be routed.  
   
  If you are using a connectionless protocol, you must call <xref:System.Net.Sockets.Socket.Connect%2A> before calling this method, or <xref:System.Net.Sockets.Socket.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you are using a connection-oriented protocol, you must either use <xref:System.Net.Sockets.Socket.Connect%2A> to establish a remote host connection, or use <xref:System.Net.Sockets.Socket.Accept%2A> to accept an incoming connection.  
   
@@ -6911,7 +7117,7 @@
           <paramref name="buffers" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="buffers" /> is empty.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -6923,6 +7129,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -6955,7 +7162,7 @@
 ## Remarks  
  <xref:System.Net.Sockets.Socket.Send%2A> synchronously sends data to the remote host specified in the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.Accept%2A> method and returns the number of bytes successfully sent. <xref:System.Net.Sockets.Socket.Send%2A> can be used for both connection-oriented and connectionless protocols.  
   
- In this overload, if you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ In this overload, if you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
  If you are using a connectionless protocol, you must call <xref:System.Net.Sockets.Socket.Connect%2A> before calling this method or <xref:System.Net.Sockets.Socket.Send%2A> will throw a <xref:System.Net.Sockets.SocketException>. If you are using a connection-oriented protocol, you must either use <xref:System.Net.Sockets.Socket.Connect%2A> to establish a remote host connection, or use <xref:System.Net.Sockets.Socket.Accept%2A> to accept an incoming connection.  
   
@@ -7006,7 +7213,7 @@
   
  -or-  
   
- An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+ An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -7018,6 +7225,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7052,7 +7260,7 @@
 ## Remarks  
  <xref:System.Net.Sockets.Socket.Send%2A> synchronously sends data to the remote host specified in the <xref:System.Net.Sockets.Socket.Connect%2A> or <xref:System.Net.Sockets.Socket.Accept%2A> method and returns the number of bytes successfully sent. <xref:System.Net.Sockets.Socket.Send%2A> can be used for both connection-oriented and connectionless protocols.  
   
- In this overload, if you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ In this overload, if you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
  If you are using a connectionless protocol, you must call <xref:System.Net.Sockets.Socket.Connect%2A> before calling this method or <xref:System.Net.Sockets.Socket.Send%2A> will throw a<xref:System.Net.Sockets.SocketException>. If you are using a connection-oriented protocol, you must either use <xref:System.Net.Sockets.Socket.Connect%2A> to establish a remote host connection, or use <xref:System.Net.Sockets.Socket.Accept%2A> to accept an incoming connection.  
   
@@ -7103,7 +7311,7 @@
   
  -or-  
   
- An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+ An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -7115,6 +7323,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7182,6 +7391,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7233,6 +7443,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -7246,7 +7460,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This overload sends the file `fileName` to the connected socket. The `flags` parameter defaults to <xref:System.Net.Sockets.TransmitFileOptions> (0), and the `preBuffer` and `postBuffer` parameters default to `null`. If `fileName` is in the local directory, it may be identified with just the name of the file; otherwise, the full path and name of the file must be specified. Wildcards ("..\\\myfile.txt") and UNC share names ("\\\\\\\shared directory\\\myfile.txt") are supported. If the file is not found, the exception <xref:System.IO.FileNotFoundException> is thrown.  
+ This overload sends the file `fileName` to the connected socket. The `flags` parameter defaults to <xref:System.Net.Sockets.TransmitFileOptions.UseDefaultWorkerThread> (0), and the `preBuffer` and `postBuffer` parameters default to `null`. If `fileName` is in the local directory, it may be identified with just the name of the file; otherwise, the full path and name of the file must be specified. Wildcards ("..\\\myfile.txt") and UNC share names ("\\\\\\\shared directory\\\myfile.txt") are supported. If the file is not found, the exception <xref:System.IO.FileNotFoundException> is thrown.  
   
  This method uses the `TransmitFile` function found in the Windows Sockets 2 API. For more information about the `TransmitFile` function and its flags, see the Windows Sockets documentation in the MSDN Library.  
   
@@ -7276,7 +7490,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> object is not in blocking mode and cannot accept this synchronous call.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file <paramref name="fileName" /> was not found.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="SendFile">
@@ -7292,6 +7506,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -7348,7 +7566,7 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>
         <exception cref="T:System.InvalidOperationException">The <see cref="T:System.Net.Sockets.Socket" /> object is not in blocking mode and cannot accept this synchronous call.</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file <paramref name="fileName" /> was not found.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="SendPacketsAsync">
@@ -7359,6 +7577,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7433,6 +7652,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7478,6 +7698,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7537,7 +7758,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -7549,6 +7770,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7577,7 +7799,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In this overload, the buffer offset defaults to 0, and the number of bytes to send defaults to the size of the `buffer`. If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ In this overload, the buffer offset defaults to 0, and the number of bytes to send defaults to the size of the `buffer`. If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
  If you are using a connectionless protocol, you do not need to establish a default remote host with the <xref:System.Net.Sockets.Socket.Connect%2A> method prior to calling <xref:System.Net.Sockets.Socket.SendTo%2A>. You only need to do this if you intend to call the <xref:System.Net.Sockets.Socket.Send%2A> method. If you do call the <xref:System.Net.Sockets.Socket.Connect%2A> method prior to calling <xref:System.Net.Sockets.Socket.SendTo%2A>, the `remoteEP` parameter will override the specified default remote host for that send operation only. You are also not required to call the <xref:System.Net.Sockets.Socket.Bind%2A> method, because the underlying service provider will assign the most appropriate local network address and port number. If you need to identify the assigned local network address and port number, you can use the <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> property after the <xref:System.Net.Sockets.Socket.SendTo%2A> method successfully completes.  
   
@@ -7610,7 +7832,7 @@
  -or-  
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -7622,6 +7844,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7652,7 +7875,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In this overload, the buffer offset defaults to 0. If you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ In this overload, the buffer offset defaults to 0. If you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
  If you are using a connectionless protocol, you do not need to establish a default remote host with the <xref:System.Net.Sockets.Socket.Connect%2A> method prior to calling <xref:System.Net.Sockets.Socket.SendTo%2A>. You only need to do this if you intend to call the <xref:System.Net.Sockets.Socket.Send%2A> method. If you do call the <xref:System.Net.Sockets.Socket.Connect%2A> method prior to calling <xref:System.Net.Sockets.Socket.SendTo%2A>, the `remoteEP` parameter will override the specified default remote host for that send operation only. You are also not required to call the <xref:System.Net.Sockets.Socket.Bind%2A> method, because the underlying service provider will assign the most appropriate local network address and port number. If you need to identify the assigned local network address and port number, you can use the <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> property after the <xref:System.Net.Sockets.Socket.SendTo%2A> method successfully completes.  
   
@@ -7686,7 +7909,7 @@
   
  <paramref name="remoteEP" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="size" /> exceeds the size of <paramref name="buffer" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -7698,6 +7921,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7730,7 +7954,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In this overload, if you specify the <xref:System.Net.Sockets.SocketFlags> flag as the `socketflags` parameter, the data you are sending will not be routed.  
+ In this overload, if you specify the <xref:System.Net.Sockets.SocketFlags.DontRoute> flag as the `socketflags` parameter, the data you are sending will not be routed.  
   
  If you are using a connectionless protocol, you do not need to establish a default remote host with the <xref:System.Net.Sockets.Socket.Connect%2A> method prior to calling <xref:System.Net.Sockets.Socket.SendTo%2A>. You only need to do this if you intend to call the <xref:System.Net.Sockets.Socket.Send%2A> method. If you do call the <xref:System.Net.Sockets.Socket.Connect%2A> method prior to calling <xref:System.Net.Sockets.Socket.SendTo%2A>, the `remoteEP` parameter will override the specified default remote host for that send operation only. You are also not required to call the <xref:System.Net.Sockets.Socket.Bind%2A> method, because the underlying service provider will assign the most appropriate local network address and port number. If you need to identify the assigned local network address and port number, you can use the <xref:System.Net.Sockets.Socket.LocalEndPoint%2A> property after the <xref:System.Net.Sockets.Socket.SendTo%2A> method successfully completes.  
   
@@ -7782,7 +8006,7 @@
   
  -or-  
   
- An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />. See the Remarks section for more information.</exception>
+ An operating system error occurs while accessing the <see cref="T:System.Net.Sockets.Socket" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
         <exception cref="T:System.Security.SecurityException">A caller in the call stack does not have the required permissions.</exception>
       </Docs>
@@ -7795,6 +8019,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7872,6 +8097,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -7885,15 +8114,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.Sockets.Socket.SetIPProtectionLevel%2A> method enables restricting an a IPv6 or IP socket to listen on a specified scope, such as addresses with the same link local or site local prefix. This socket option enables applications to place access restrictions on IPv6 or IP sockets. Such restrictions enable an application running on a private LAN to simply and robustly harden itself against external attacks. This socket option can also be used to remove access restrictions if the `level` parameter is set to <xref:System.Net.Sockets.IPProtectionLevel>. This socket option widens or narrows the scope of a listening socket, enabling unrestricted access from public and private users when appropriate, or restricting access only to the same site, as required.  
+ The <xref:System.Net.Sockets.Socket.SetIPProtectionLevel%2A> method enables restricting an a IPv6 or IP socket to listen on a specified scope, such as addresses with the same link local or site local prefix. This socket option enables applications to place access restrictions on IPv6 or IP sockets. Such restrictions enable an application running on a private LAN to simply and robustly harden itself against external attacks. This socket option can also be used to remove access restrictions if the `level` parameter is set to <xref:System.Net.Sockets.IPProtectionLevel.Unrestricted>. This socket option widens or narrows the scope of a listening socket, enabling unrestricted access from public and private users when appropriate, or restricting access only to the same site, as required.  
   
  This socket option has defined protection levels specified in the <xref:System.Net.Sockets.IPProtectionLevel> enumeration.  
   
  The <xref:System.Net.Sockets.Socket.SetIPProtectionLevel%2A> method is used to enable or disable Network Address Traversal (NAT) for a <xref:System.Net.Sockets.Socket> instance. NAT traversal may be provided using Teredo, 6to4, or an ISATAP tunnel.  
   
- When the `level` parameter is set to <xref:System.Net.Sockets.IPProtectionLevel>, or <xref:System.Net.Sockets.IPProtectionLevel>, this explicitly disables NAT traversal for a <xref:System.Net.Sockets.Socket> instance.  
+ When the `level` parameter is set to <xref:System.Net.Sockets.IPProtectionLevel.EdgeRestricted>, or <xref:System.Net.Sockets.IPProtectionLevel.Restricted>, this explicitly disables NAT traversal for a <xref:System.Net.Sockets.Socket> instance.  
   
- When the `level` parameter is set to <xref:System.Net.Sockets.IPProtectionLevel>, this may allow NAT traversal for a <xref:System.Net.Sockets.Socket> depending on firewall rules in place on the system.  
+ When the `level` parameter is set to <xref:System.Net.Sockets.IPProtectionLevel.EdgeRestricted>, this may allow NAT traversal for a <xref:System.Net.Sockets.Socket> depending on firewall rules in place on the system.  
   
  ]]></format>
         </remarks>
@@ -7909,6 +8138,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -7944,39 +8174,39 @@
   
  <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.AcceptConnection>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.Broadcast>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.DontLinger>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.Debug>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.KeepAlive>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.OutOfBandInline>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.ReuseAddress>  
   
  <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.HeaderIncluded>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.MulticastLoopback>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.UseLoopback>  
   
  <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.BsdUrgent>  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.Expedited>  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.NoDelay>  
+  
+ <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.NoChecksum>  
   
  For more information on these options, refer to the <xref:System.Net.Sockets.SocketOptionName> enumeration.  
   
@@ -7994,7 +8224,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> object has been closed.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetSocketOption">
@@ -8005,6 +8235,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -8051,7 +8282,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -8063,6 +8294,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -8096,65 +8328,65 @@
   
  <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.Broadcast>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.DontLinger>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.Debug>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.Error>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.KeepAlive>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.OutOfBandInline>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.ReceiveBuffer>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.ReceiveTimeout>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.ReuseAddress>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.SendBuffer>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.SendTimeout>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
- <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
-  
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.Type>  
   
  <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.HeaderIncluded>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.IPOptions>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.IpTimeToLive>  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.MulticastInterface>  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.MulticastLoopback>  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.MulticastTimeToLive>  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.TypeOfService>  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.UseLoopback>  
   
  <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.BsdUrgent>  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.Expedited>  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.NoDelay>  
   
  <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
   
--   <xref:System.Net.Sockets.SocketOptionName>  
+-   <xref:System.Net.Sockets.SocketOptionName.ChecksumCoverage>  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.NoChecksum>  
+  
+ <xref:System.Net.Sockets.SocketOptionLevel?displayProperty=fullName> options that can be set using this overload.  
+  
+-   <xref:System.Net.Sockets.SocketOptionName.HopLimit>  
   
  For more information about these options, refer to the <xref:System.Net.Sockets.SocketOptionName> enumeration.  
   
@@ -8175,7 +8407,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -8187,6 +8419,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -8214,7 +8447,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Net.Sockets.Socket> options determine the behavior of the current <xref:System.Net.Sockets.Socket>. Use this overload to set the <xref:System.Net.Sockets.SocketOptionName>, <xref:System.Net.Sockets.SocketOptionName>, and <xref:System.Net.Sockets.SocketOptionName><xref:System.Net.Sockets.Socket> options. For the <xref:System.Net.Sockets.SocketOptionName> option, use <xref:System.Net.Sockets.Socket> for the `optionLevel` parameter. For <xref:System.Net.Sockets.SocketOptionName> and <xref:System.Net.Sockets.SocketOptionName>, use <xref:System.Net.Sockets.SocketOptionLevel>. If you want to get the current value of any of the options listed above, use the <xref:System.Net.Sockets.Socket.GetSocketOption%2A> method.  
+ <xref:System.Net.Sockets.Socket> options determine the behavior of the current <xref:System.Net.Sockets.Socket>. Use this overload to set the <xref:System.Net.Sockets.SocketOptionName.Linger>, <xref:System.Net.Sockets.SocketOptionName.AddMembership>, and <xref:System.Net.Sockets.SocketOptionName.DropMembership><xref:System.Net.Sockets.Socket> options. For the <xref:System.Net.Sockets.SocketOptionName.Linger> option, use <xref:System.Net.Sockets.Socket> for the `optionLevel` parameter. For <xref:System.Net.Sockets.SocketOptionName.AddMembership> and <xref:System.Net.Sockets.SocketOptionName.DropMembership>, use <xref:System.Net.Sockets.SocketOptionLevel.IP>. If you want to get the current value of any of the options listed above, use the <xref:System.Net.Sockets.Socket.GetSocketOption%2A> method.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException>, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -8232,7 +8465,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="optionValue" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -8244,6 +8477,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -8279,9 +8513,9 @@
 |Receive|Disable receiving on this <xref:System.Net.Sockets.Socket>.|  
 |Both|Disable both sending and receiving on this <xref:System.Net.Sockets.Socket>.|  
   
- Setting `how` to <xref:System.Net.Sockets.SocketShutdown> specifies that subsequent calls to <xref:System.Net.Sockets.Socket.Send%2A> are not allowed. If you are using a connectionless <xref:System.Net.Sockets.Socket>, specifying <xref:System.Net.Sockets.SocketShutdown> will have no effect.  
+ Setting `how` to <xref:System.Net.Sockets.SocketShutdown.Send> specifies that subsequent calls to <xref:System.Net.Sockets.Socket.Send%2A> are not allowed. If you are using a connectionless <xref:System.Net.Sockets.Socket>, specifying <xref:System.Net.Sockets.SocketShutdown.Send> will have no effect.  
   
- Setting `how` to <xref:System.Net.Sockets.SocketShutdown> specifies that subsequent calls to <xref:System.Net.Sockets.Socket.Receive%2A> are not allowed. This has no effect on lower protocol layers. If you are using a connection-oriented protocol, the connection is terminated if either of the following conditions exist after a call to <xref:System.Net.Sockets.Socket.Shutdown%2A> :  
+ Setting `how` to <xref:System.Net.Sockets.SocketShutdown.Receive> specifies that subsequent calls to <xref:System.Net.Sockets.Socket.Receive%2A> are not allowed. This has no effect on lower protocol layers. If you are using a connection-oriented protocol, the connection is terminated if either of the following conditions exist after a call to <xref:System.Net.Sockets.Socket.Shutdown%2A> :  
   
 -   Data is in the incoming network buffer waiting to be received.  
   
@@ -8289,7 +8523,7 @@
   
  If you are using a connectionless protocol, datagrams are accepted and queued. However, if no buffer space is available for additional incoming datagrams, they will be discarded and no error will be returned to the sender. Using <xref:System.Net.Sockets.Socket.Shutdown%2A> on a connectionless <xref:System.Net.Sockets.Socket> is not recommended.  
   
- Setting `how` to <xref:System.Net.Sockets.SocketShutdown> disables both sends and receives as described above.  
+ Setting `how` to <xref:System.Net.Sockets.SocketShutdown.Both> disables both sends and receives as described above.  
   
 > [!NOTE]
 >  If you receive a <xref:System.Net.Sockets.SocketException> when calling the <xref:System.Net.Sockets.Socket.Shutdown%2A> method, use the <xref:System.Net.Sockets.SocketException.ErrorCode%2A?displayProperty=fullName> property to obtain the specific error code. After you have obtained this code, refer to the Windows Sockets version 2 API error code documentation in the MSDN library for a detailed description of the error.  
@@ -8308,7 +8542,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket. See the Remarks section for more information.</exception>
+        <exception cref="T:System.Net.Sockets.SocketException">An error occurred when attempting to access the socket.</exception>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.Sockets.Socket" /> has been closed.</exception>
       </Docs>
     </Member>
@@ -8320,6 +8554,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -8369,6 +8604,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("Use OSSupportsIPv4 instead")</AttributeName>
@@ -8405,6 +8644,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("Use OSSupportsIPv6 instead")</AttributeName>
@@ -8435,6 +8678,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -8492,6 +8736,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Sockets</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

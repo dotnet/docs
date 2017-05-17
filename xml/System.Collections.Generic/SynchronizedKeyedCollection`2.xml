@@ -135,7 +135,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Setting `dictionaryCreationThreshold` to -1 assigns the <xref:System.Int32> (2,147,483,647; hexadecimal 0x7FFFFFFF) to it.  
+ Setting `dictionaryCreationThreshold` to -1 assigns the <xref:System.Int32.MaxValue> (2,147,483,647; hexadecimal 0x7FFFFFFF) to it.  
   
  ]]></format>
         </remarks>

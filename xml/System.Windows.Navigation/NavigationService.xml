@@ -308,7 +308,7 @@
       <Docs>
         <param name="dependencyObject">The <see cref="T:System.Windows.DependencyObject" /> in content that is hosted by a navigator.</param>
         <summary>Gets a reference to the <see cref="T:System.Windows.Navigation.NavigationService" /> for the navigator whose content contains the specified <see cref="T:System.Windows.DependencyObject" />.</summary>
-        <returns>A reference to the <see cref="T:System.Windows.Navigation.NavigationService" /> for the navigator whose content contains the specified <see cref="T:System.Windows.DependencyObject" />; can be <see langword="null" /> in some cases (see Remarks).</returns>
+        <returns>A reference to the <see cref="T:System.Windows.Navigation.NavigationService" /> for the navigator whose content contains the specified <see cref="T:System.Windows.DependencyObject" />; can be <see langword="null" /> in some cases.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -323,7 +323,7 @@
   
     1.  Is hosted by another navigator.  
   
-    2.  Has its <xref:System.Windows.Controls.Frame.JournalOwnership%2A> property set to <xref:System.Windows.Navigation.JournalOwnership>.  
+    2.  Has its <xref:System.Windows.Controls.Frame.JournalOwnership%2A> property set to <xref:System.Windows.Navigation.JournalOwnership.UsesParentJournal>.  
   
 -   Is not part of content that is hosted by a navigator.  
   

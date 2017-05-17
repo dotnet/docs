@@ -18,7 +18,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.ListView.DrawColumnHeader?displayProperty=fullName> event lets you customize (or owner-draw) the appearance of a <xref:System.Windows.Forms.ListView> control in the details view.  
   
- The <xref:System.Windows.Forms.ListView.DrawColumnHeader?displayProperty=fullName> event is raised by a <xref:System.Windows.Forms.ListView> control when its <xref:System.Windows.Forms.ListView.OwnerDraw%2A?displayProperty=fullName> property is set to `true` and its <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>. The <xref:System.Windows.Forms.DrawListViewColumnHeaderEventArgs> passed to the event handler contains information about the <xref:System.Windows.Forms.ColumnHeader> to draw and also provides methods to help you draw the header.  
+ The <xref:System.Windows.Forms.ListView.DrawColumnHeader?displayProperty=fullName> event is raised by a <xref:System.Windows.Forms.ListView> control when its <xref:System.Windows.Forms.ListView.OwnerDraw%2A?displayProperty=fullName> property is set to `true` and its <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details>. The <xref:System.Windows.Forms.DrawListViewColumnHeaderEventArgs> passed to the event handler contains information about the <xref:System.Windows.Forms.ColumnHeader> to draw and also provides methods to help you draw the header.  
   
  Use the <xref:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Header%2A> property to retrieve information about the column header to draw. Use the <xref:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Graphics%2A> property to do the actual drawing within the area specified by the <xref:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Bounds%2A> property. To draw standard <xref:System.Windows.Forms.ListView> elements that do not need customization, use the <xref:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawBackground%2A> and <xref:System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText%2A> methods.  
   
@@ -443,7 +443,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use this property to determine whether the mouse pointer is over the header or whether the user has clicked the header. The <xref:System.Windows.Forms.ListViewItemStates> values for these states are <xref:System.Windows.Forms.ListViewItemStates> and <xref:System.Windows.Forms.ListViewItemStates>.  
+ Use this property to determine whether the mouse pointer is over the header or whether the user has clicked the header. The <xref:System.Windows.Forms.ListViewItemStates> values for these states are <xref:System.Windows.Forms.ListViewItemStates.Hot> and <xref:System.Windows.Forms.ListViewItemStates.Selected>.  
   
    
   

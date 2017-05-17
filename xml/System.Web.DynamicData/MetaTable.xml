@@ -562,6 +562,23 @@ End Class
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetActionPath">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets the action path for the specified row.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetActionPath">
       <MemberSignature Language="C#" Value="public string GetActionPath (string action);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetActionPath(string action) cil managed" />
@@ -1070,7 +1087,7 @@ End Function
   
 -   Long string columns, which are columns whose <xref:System.Web.DynamicData.MetaColumn.IsLongString%2A> property is set to `true` and whose `containerType` parameter is `true`.  
   
--   Child columns whose <xref:System.Web.UI.WebControls.DataBoundControlMode> value is set to <xref:System.Web.UI.WebControls.DataBoundControlMode>.  
+-   Child columns whose <xref:System.Web.UI.WebControls.DataBoundControlMode> value is set to <xref:System.Web.UI.WebControls.DataBoundControlMode.Insert>.  
   
  ]]></format>
         </remarks>
@@ -1482,22 +1499,5 @@ End Sub
           <paramref name="entityType" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetActionPath">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets the action path for the specified row.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The action path is a URL for an action for a specific entity. For more information, see the <xref:System.Web.DynamicData.PageAction?displayProperty=fullName> class overview.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -171,9 +171,7 @@
  The following example creates two <xref:System.Windows.DataTemplate> objects.  The <xref:System.Windows.DataTemplate> called `contentTemplate` is assigned to the <xref:System.Windows.Controls.TabControl.ContentTemplate%2A> of the <xref:System.Windows.Controls.TabControl> and the <xref:System.Windows.DataTemplate> called `tabItemTemplate` is assigned to the <xref:System.Windows.Controls.ContentControl.ContentTemplate%2A> of the second <xref:System.Windows.Controls.TabItem>.  All <xref:System.Windows.Controls.TabItem> objects contain the white rectangle defined in `contentTemplate`, except the second <xref:System.Windows.Controls.TabItem>, which has a gray rectangle, as defined in `tabItemTemplate`.  
   
  [!code-xml[TabControlContentTemplate_snip#1](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/page1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[TabControlContentTemplate_snip#1](~/samples/snippets/xaml/VS_Snippets_Wpf/TabControlContentTemplate_snip/xaml/page1.xaml#1)]  -->  
-[!code-xml[TabControlContentTemplate_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/page1.xaml#2)]
-<!-- TODO: review snippet reference [!code-xml[TabControlContentTemplate_snip#2](~/samples/snippets/xaml/VS_Snippets_Wpf/TabControlContentTemplate_snip/xaml/page1.xaml#2)]  -->  
+ [!code-xml[TabControlContentTemplate_snip#2](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/page1.xaml#2)]
   
  ]]></format>
         </remarks>
@@ -548,8 +546,7 @@
   
  The following example binds the <xref:System.Windows.Controls.TabControl.SelectedContent%2A> property to the <xref:System.Windows.Controls.ContentPresenter.Content%2A?displayProperty=fullName> property by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
- [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/myapp.xaml#tabcontrolcontentpresenter)]
- <!-- TODO: review snippet reference [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/xaml/VS_Snippets_Wpf/TabControlContentTemplate_snip/xaml/myapp.xaml#tabcontrolcontentpresenter)]  -->  
+ [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/myapp.xaml#tabcontrolcontentpresenter)]   
   
  ]]></format>
         </remarks>
@@ -659,8 +656,7 @@
   
  The following example binds the <xref:System.Windows.Controls.TabControl.SelectedContentTemplate%2A> property to the <xref:System.Windows.Controls.ContentPresenter.ContentTemplate%2A?displayProperty=fullName> property by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
- [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/myapp.xaml#tabcontrolcontentpresenter)]
- <!-- TODO: review snippet reference [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/xaml/VS_Snippets_Wpf/TabControlContentTemplate_snip/xaml/myapp.xaml#tabcontrolcontentpresenter)]  -->  
+ [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/myapp.xaml#tabcontrolcontentpresenter)]   
   
  ]]></format>
         </remarks>
@@ -735,8 +731,7 @@
   
  The following example binds the <xref:System.Windows.Controls.TabControl.SelectedContentTemplateSelector%2A> property to the <xref:System.Windows.Controls.ContentPresenter.ContentTemplateSelector%2A?displayProperty=fullName> property by using the [TemplateBinding Markup Extension](~/docs/framework/wpf/advanced/templatebinding-markup-extension.md).  
   
- [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/myapp.xaml#tabcontrolcontentpresenter)]
- <!-- TODO: review snippet reference [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/xaml/VS_Snippets_Wpf/TabControlContentTemplate_snip/xaml/myapp.xaml#tabcontrolcontentpresenter)]  -->  
+ [!code-xml[TabControlContentTemplate_snip#TabControlContentPresenter](~/samples/snippets/csharp/VS_Snippets_Wpf/TabControlContentTemplate_snip/CS/myapp.xaml#tabcontrolcontentpresenter)]   
   
  ]]></format>
         </remarks>

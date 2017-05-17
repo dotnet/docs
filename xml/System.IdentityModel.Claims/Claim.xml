@@ -129,7 +129,7 @@
       <Docs>
         <param name="identifier">To be added.</param>
         <summary>Creates a <see cref="T:System.IdentityModel.Claims.Claim" /> object that represents a deny-only specified security identifier (SID).</summary>
-        <returns>A <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the SID specified in the <paramref name="sid" /> parameter.</returns>
+        <returns>A <see cref="T:System.IdentityModel.Claims.Claim" /> that represents the SID specified in the <paramref name="identifier" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -147,7 +147,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sid" /> is <see langword="null" />.</exception>
+          <paramref name="identifier" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateDnsClaim">
@@ -713,40 +713,11 @@
         <summary>A pre-defined claim that represents the system entity.</summary>
         <value>A <see cref="T:System.IdentityModel.Claims.Claim" /> object that represents the system entity. This <see cref="T:System.IdentityModel.Claims.Claim" /> object has the property values shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Property  
+ <list type="table"><listheader><term> Property  
   
- </term>  
-<description> Value  
+ </term><description> Value  
   
- </description>  
-</listheader>  
-<item>  
-<term> <see cref="P:System.IdentityModel.Claims.Claim.ClaimType" />  
-  
- </term>  
-<description> <see cref="P:System.IdentityModel.Claims.ClaimTypes.System" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.IdentityModel.Claims.Claim.Resource" />  
-  
- </term>  
-<description> <see langword="System" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <see cref="P:System.IdentityModel.Claims.Claim.Right" />  
-  
- </term>  
-<description> <see cref="P:System.IdentityModel.Claims.Rights.Identity" />  
-  
- </description>  
-</item>  
-</list></value>
+ </description></listheader><item><term><see cref="P:System.IdentityModel.Claims.Claim.ClaimType" /></term><description><see cref="P:System.IdentityModel.Claims.ClaimTypes.System" /></description></item><item><term><see cref="P:System.IdentityModel.Claims.Claim.Resource" /></term><description><see langword="System" /></description></item><item><term><see cref="P:System.IdentityModel.Claims.Claim.Right" /></term><description><see cref="P:System.IdentityModel.Claims.Rights.Identity" /></description></item></list></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

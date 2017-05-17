@@ -151,7 +151,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Floater>|  
+|Identifier field|<xref:System.Windows.Documents.Floater.HorizontalAlignmentProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsArrange%2A>|  
   
    
@@ -226,7 +226,7 @@
  *double*  
  <xref:System.Double>  
   
- A string representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double>. An unqualified value is measured in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. Strings need not explicitly include decimal points.  
+ A string representation of a <xref:System.Double> value equal to or greater than 0.0 but smaller than <xref:System.Double.PositiveInfinity>. An unqualified value is measured in [!INCLUDE[TLA#tla_dipixel#plural](~/includes/tlasharptla-dipixelsharpplural-md.md)]. Strings need not explicitly include decimal points.  
   
  *qualifiedDouble*  
  A `double` value as described above, (except `Auto`) followed by one of the following unit specifiers: `px`, `in`, `cm`, `pt`.  
@@ -240,14 +240,14 @@
  `pt` is points; 1pt==(96/72) px  
   
  Auto  
- Causes the width to be determined automatically. Equivalent to a property value of <xref:System.Double>.  
+ Causes the width to be determined automatically. Equivalent to a property value of <xref:System.Double.NaN>.  
   
 <a name="dependencyPropertyInfo_Width"></a>   
 ## Dependency Property Information  
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Documents.Floater>|  
+|Identifier field|<xref:System.Windows.Documents.Floater.WidthProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>|  
   
    

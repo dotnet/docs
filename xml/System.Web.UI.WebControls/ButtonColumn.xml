@@ -94,8 +94,8 @@
   
 |Button type|Display|  
 |-----------------|-------------|  
-|<xref:System.Web.UI.WebControls.ButtonColumnType>|A link.|  
-|<xref:System.Web.UI.WebControls.ButtonColumnType>|A button control.|  
+|<xref:System.Web.UI.WebControls.ButtonColumnType.LinkButton>|A link.|  
+|<xref:System.Web.UI.WebControls.ButtonColumnType.PushButton>|A button control.|  
   
  Clicking the buttons in the <xref:System.Web.UI.WebControls.ButtonColumn> raises the <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event. You can programmatically control the action that is performed when the button is clicked by providing an event handler for the <xref:System.Web.UI.WebControls.DataGrid.ItemCommand> event.  
   

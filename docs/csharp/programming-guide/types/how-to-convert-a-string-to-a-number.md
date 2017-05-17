@@ -39,12 +39,12 @@ translation.priority.ht:
 # How to: Convert a String to a Number (C# Programming Guide)
 You can convert a [string](../../../csharp/language-reference/keywords/string.md) to a number by using methods in the <xref:System.Convert> class or by using the `TryParse` method found on the various numeric types (int, long, float, etc.).  
   
- If you have a string, it is slightly more efficient and straightforward to call a `TryParse` method (for example, `int.TryParse(“11”)`).  Using a `Convert` method is more useful for general objects that implement <xref:System.IConvertible>.  
+ If you have a string, it is slightly more efficient and straightforward to call a `TryParse` method (for example, `int.TryParse("11")`).  Using a `Convert` method is more useful for general objects that implement <xref:System.IConvertible>.  
   
  You can use `Parse` or `TryParse` methods on the numeric type you expect the string contains, such as the <xref:System.Int32?displayProperty=fullName> type.  The <xref:System.Convert.ToUInt32%2A?displayProperty=fullName> method uses <xref:System.Int32.Parse%2A> internally.  If the string is not in a valid format, `Parse` throws an exception whereas `TryParse` returns [false](../../../csharp/language-reference/keywords/false.md).  
   
 ## Example  
- The `Parse` and `TryParse` methods ignore whitespace at the beginning and at the end of the string, but all other characters must be characters that form the appropriate numeric type (int, long, ulong, float, decimal, etc.).  Any whitespace within the characters that form the number cause an error.  For example, you can use `decimal.TryParse` to parse “10”, “10.3”, “  10  “, but you cannot use this method to parse 10 from “10X”, “1 0” (note space), “10 .3” (note space), “10e1” (`float.TryParse` works here), and so on.  
+ The `Parse` and `TryParse` methods ignore whitespace at the beginning and at the end of the string, but all other characters must be characters that form the appropriate numeric type (int, long, ulong, float, decimal, etc.).  Any whitespace within the characters that form the number cause an error.  For example, you can use `decimal.TryParse` to parse "10", "10.3", "  10  ", but you cannot use this method to parse 10 from "10X", "1 0" (note space), "10 .3" (note space), "10e1" (`float.TryParse` works here), and so on.  
   
  The examples below demonstrate both successful and unsuccessful calls to `Parse` and `TryParse`.  
   

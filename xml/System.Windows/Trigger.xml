@@ -195,8 +195,7 @@
 ## Examples  
  As mentioned above, adding a <xref:System.Windows.Setter> child to a <xref:System.Windows.Trigger> object implicitly adds it to the <xref:System.Windows.SetterBaseCollection> for the <xref:System.Windows.Trigger> object. In the following example, `<Trigger.Setters>` is implicit.  
   
- [!code-xml[PhotoStoreDemoStyled#TriggerSettersRef](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#triggersettersref)]
- <!-- TODO: review snippet reference [!code-xml[PhotoStoreDemoStyled#TriggerSettersRef](~/samples/snippets/xaml/VS_Snippets_Wpf/PhotoStoreDemoStyled/xaml/window1.xaml#triggersettersref)]  -->  
+ [!code-xml[PhotoStoreDemoStyled#TriggerSettersRef](~/samples/snippets/csharp/VS_Snippets_Wpf/PhotoStoreDemoStyled/CS/window1.xaml#triggersettersref)]   
   
  ]]></format>
         </remarks>

@@ -5,7 +5,7 @@ using Pets;
 public class PetTests
 {
 	[Fact]
-	public void DogTalkToOwnerTest()
+	public void DogTalkToOwnerReturnsWoof()
 	{
 		string expected = "Woof!";
 		string actual = new Dog().TalkToOwner();
@@ -14,7 +14,7 @@ public class PetTests
 	}
 	
 	[Fact]
-	public void CatTalkToOwnerTest()
+	public void CatTalkToOwnerReturnsMeow()
 	{
 		string expected = "Meow!";
 		string actual = new Cat().TalkToOwner();

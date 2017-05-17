@@ -28,7 +28,7 @@
  Use the <xref:System.ServiceModel.OperationBehaviorAttribute> attribute to indicate what operation-specific execution behavior the operation has when executed. (To specify execution behavior at the service level, use the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute.)  
   
 > [!NOTE]
->  You can also use <xref:System.ServiceModel.OperationBehaviorAttribute> to configure a callback contract operation in a duplex client application. When used on a callback operation, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property must be <xref:System.ServiceModel.ReleaseInstanceMode> or an <xref:System.InvalidOperationException> exception is thrown at runtime.  
+>  You can also use <xref:System.ServiceModel.OperationBehaviorAttribute> to configure a callback contract operation in a duplex client application. When used on a callback operation, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property must be <xref:System.ServiceModel.ReleaseInstanceMode.None> or an <xref:System.InvalidOperationException> exception is thrown at runtime.  
   
  The <xref:System.ServiceModel.OperationBehaviorAttribute> attribute is a [!INCLUDE[indigo1](~/includes/indigo1-md.md)] programming model feature that enables common features that developers otherwise must implement themselves.  
   
@@ -76,9 +76,9 @@
   
 -   The <xref:System.ServiceModel.OperationBehaviorAttribute.TransactionScopeRequired%2A> property is `false`.  
   
--   The <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property is <xref:System.ServiceModel.ReleaseInstanceMode>.  
+-   The <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property is <xref:System.ServiceModel.ReleaseInstanceMode.None>.  
   
--   The <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> is <xref:System.ServiceModel.ImpersonationOption>.  
+-   The <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> is <xref:System.ServiceModel.ImpersonationOption.NotAllowed>.  
   
  ]]></format>
         </remarks>
@@ -131,7 +131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property (together with a binding configuration that supports impersonation) to enable specified methods (those marked with the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property set to <xref:System.ServiceModel.ImpersonationOption> or <xref:System.ServiceModel.ImpersonationOption>) to execute under the caller's identity. For details, including how impersonation is performed when using <xref:System.ServiceModel.ImpersonationOption> together with the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ImpersonateCallerForAllOperations%2A?displayProperty=fullName> property, see [Delegation and Impersonation](~/docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md) and [How to: Impersonate a Client on a Service](~/docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md).  
+ Use the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property (together with a binding configuration that supports impersonation) to enable specified methods (those marked with the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property set to <xref:System.ServiceModel.ImpersonationOption.Allowed> or <xref:System.ServiceModel.ImpersonationOption.Required>) to execute under the caller's identity. For details, including how impersonation is performed when using <xref:System.ServiceModel.ImpersonationOption.Allowed> together with the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.ImpersonateCallerForAllOperations%2A?displayProperty=fullName> property, see [Delegation and Impersonation](~/docs/framework/wcf/feature-details/delegation-and-impersonation-with-wcf.md) and [How to: Impersonate a Client on a Service](~/docs/framework/wcf/how-to-impersonate-a-client-on-a-service.md).  
   
 > [!NOTE]
 >  When programmatically adding a service endpoint that performs impersonation, you must either use one of the <xref:System.ServiceModel.ServiceHost.AddServiceEndpoint%2A> methods or the <xref:System.ServiceModel.Description.ContractDescription.GetContract%2A?displayProperty=fullName> method to properly load the contract into a new <xref:System.ServiceModel.Description.ServiceDescription?displayProperty=fullName> object. Using a configuration file requires no extra step.  
@@ -141,7 +141,7 @@
    
   
 ## Examples  
- The following service code example requires impersonation by setting the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property to <xref:System.ServiceModel.ImpersonationOption>.  
+ The following service code example requires impersonation by setting the <xref:System.ServiceModel.OperationBehaviorAttribute.Impersonation%2A> property to <xref:System.ServiceModel.ImpersonationOption.Required>.  
   
  [!code-csharp[OperationBehaviorAttribute_Impersonation#1](~/samples/snippets/csharp/VS_Snippets_CFX/operationbehaviorattribute_impersonation/cs/services.cs#1)]
  [!code-vb[OperationBehaviorAttribute_Impersonation#1](~/samples/snippets/visualbasic/VS_Snippets_CFX/operationbehaviorattribute_impersonation/vb/services.vb#1)]  
@@ -176,7 +176,7 @@
 ## Remarks  
  Use the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property to specify when [!INCLUDE[indigo1](~/includes/indigo1-md.md)] recycles a service object in the course of executing a method. The default behavior is to recycle a service object according to the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> value. Setting the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property changes that default behavior.  
   
- The <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> makes no threading guarantees. If you must have a new, unmodified object when your service runs, set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property to <xref:System.ServiceModel.InstanceContextMode>.  
+ The <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> makes no threading guarantees. If you must have a new, unmodified object when your service runs, set the <xref:System.ServiceModel.ServiceBehaviorAttribute.InstanceContextMode%2A> property to <xref:System.ServiceModel.InstanceContextMode.PerCall>.  
   
  In transaction scenarios, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property is often used to ensure that old data associated with the service object is cleaned up prior to processing a method call. You can also ensure that service objects associated with transactions are recycled after the transaction successfully completes by setting the <xref:System.ServiceModel.ServiceBehaviorAttribute.ReleaseServiceInstanceOnTransactionComplete%2A> property to `true`.  
   
@@ -190,9 +190,9 @@
   
 -   No recycling behavior.  
   
- You can also use <xref:System.ServiceModel.OperationBehaviorAttribute> to configure a callback contract operation in a duplex client application. When used on a callback operation, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property must be <xref:System.ServiceModel.ReleaseInstanceMode> or an <xref:System.InvalidOperationException> exception is thrown at runtime.  
+ You can also use <xref:System.ServiceModel.OperationBehaviorAttribute> to configure a callback contract operation in a duplex client application. When used on a callback operation, the <xref:System.ServiceModel.OperationBehaviorAttribute.ReleaseInstanceMode%2A> property must be <xref:System.ServiceModel.ReleaseInstanceMode.None> or an <xref:System.InvalidOperationException> exception is thrown at runtime.  
   
- In addition, it is important to realize that if the service is created by passing a service object to the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor, the value of this property is treated as if it were <xref:System.ServiceModel.ReleaseInstanceMode>.  
+ In addition, it is important to realize that if the service is created by passing a service object to the <xref:System.ServiceModel.ServiceHost.%23ctor%28System.Object%2CSystem.Uri%5B%5D%29?displayProperty=fullName> constructor, the value of this property is treated as if it were <xref:System.ServiceModel.ReleaseInstanceMode.None>.  
   
    
   

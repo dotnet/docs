@@ -178,9 +178,9 @@
  For the signatures that do not use the `isControllable`, parameter, or when that parameter is specified `false`, the timeline clocks associated with the animation are removed as soon as it reaches the "Fill" period. Therefore the animation cannot be restarted after being run once. Note that controlling an animation also requires that the storyboard be named or accessible as an instance in code.  
   
 ## Using the Compose HandoffBehavior  
- When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove the clocks automatically.  
+ When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove the clocks automatically.  
   
- To avoid performance issues when you apply a large number of clocks by using <xref:System.Windows.Media.Animation.HandoffBehavior>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
+ To avoid performance issues when you apply a large number of clocks by using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
   
 -   To remove all clocks from a property, use the <xref:System.Windows.Media.Animation.Animatable.ApplyAnimationClock%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationClock%29> or <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationTimeline%29> method of the animated object. Specify the property being animated as the first parameter, and `null` as the second. This removes all animation clocks from the property.  
   
@@ -223,9 +223,9 @@
  For the signatures that do not use the `isControllable`, parameter, or when that parameter is specified `false`, the timeline clocks associated with the animation are removed as soon as it reaches the "Fill" period. Therefore the animation cannot be restarted after being run once. Note that controlling an animation also requires that the storyboard be named or accessible as an instance in code.  
   
 ## Using the Compose HandoffBehavior  
- When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
+ When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property by using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
   
- To avoid performance issues when you apply a large number of clocks by using <xref:System.Windows.Media.Animation.HandoffBehavior>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
+ To avoid performance issues when you apply a large number of clocks by using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock:  
   
 -   To remove all clocks from a property, use the <xref:System.Windows.Media.Animation.Animatable.ApplyAnimationClock%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationClock%29> or <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationTimeline%29> method of the animated object. Specify the property being animated as the first parameter, and `null` as the second. This removes all animation clocks from the property.  
   
@@ -733,7 +733,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the key to use to find the style template for this control in themes.</summary>
-        <value>The style key. To work correctly as part of theme style lookup, this value is expected to be the <see cref="T:System.Type" /> of the element being styled. <see langword="null" /> is an accepted value for a certain case; see Remarks.</value>
+        <value>The style key. To work correctly as part of theme style lookup, this value is expected to be the <see cref="T:System.Type" /> of the element being styled. <see langword="null" /> is an accepted value for a certain case.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2354,7 +2354,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a reference to the template parent of this element. This property is not relevant if the element was not created through a template.</summary>
-        <value>The element whose <see cref="T:System.Windows.FrameworkTemplate" /><see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> caused this element to be created. This value is frequently <see langword="null" />; see Remarks.</value>
+        <value>The element whose <see cref="T:System.Windows.FrameworkTemplate" /><see cref="P:System.Windows.FrameworkTemplate.VisualTree" /> caused this element to be created. This value is frequently <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2389,7 +2389,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the tool-tip object that is displayed for this element in the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].</summary>
-        <value>The tooltip object. See Remarks below for details on why this parameter is not strongly typed.</value>
+        <value>The tooltip object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -81,7 +81,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton>|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton.CheckedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
   
@@ -145,7 +145,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton>|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton.IndeterminateEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
   
@@ -500,7 +500,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton>|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.ToggleButton.UncheckedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
   

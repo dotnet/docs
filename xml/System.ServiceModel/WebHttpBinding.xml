@@ -44,11 +44,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default security mode is <xref:System.ServiceModel.WebHttpSecurityMode>, which specifies that no security is used.  
+ The default security mode is <xref:System.ServiceModel.WebHttpSecurityMode.None>, which specifies that no security is used.  
   
- To use transport-level security for endpoints configured with this binding, the <xref:System.ServiceModel.WebHttpSecurityMode> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+ To use transport-level security for endpoints configured with this binding, the <xref:System.ServiceModel.WebHttpSecurityMode.Transport> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
   
- To use HTTP authentication without HTTPS, the <xref:System.ServiceModel.WebHttpSecurityMode> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+ To use HTTP authentication without HTTPS, the <xref:System.ServiceModel.WebHttpSecurityMode.TransportCredentialOnly> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
   
  The value of <xref:System.ServiceModel.WebHttpSecurityMode> cannot be set again after the binding instance is created.  
   
@@ -76,15 +76,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To use transport-level security for endpoints configured with this binding, the <xref:System.ServiceModel.WebHttpSecurityMode> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+ To use transport-level security for endpoints configured with this binding, the <xref:System.ServiceModel.WebHttpSecurityMode.Transport> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
   
- To use HTTP authentication without HTTPS, the <xref:System.ServiceModel.WebHttpSecurityMode> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+ To use HTTP authentication without HTTPS, the <xref:System.ServiceModel.WebHttpSecurityMode.TransportCredentialOnly> value must be specified as a parameter in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
   
  The value of <xref:System.ServiceModel.WebHttpSecurityMode> cannot be set again after the binding instance is created.  
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="securityMode" /> specified is not a valid <see cref="T:System.ServiceModel.WebHttpSecurityMode" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="mode" /> specified is not a valid <see cref="T:System.ServiceModel.WebHttpSecurityMode" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -512,7 +512,7 @@
  To use a non-default type of security, use the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
   
 > [!NOTE]
->  If you set this property to <xref:System.ServiceModel.WebHttpSecurityMode> and you are using HTTP, be aware that credentials are sent over the wire in plain text.  
+>  If you set this property to <xref:System.ServiceModel.WebHttpSecurityMode.TransportCredentialOnly> and you are using HTTP, be aware that credentials are sent over the wire in plain text.  
   
  ]]></format>
         </remarks>

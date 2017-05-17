@@ -156,7 +156,7 @@
  You can use this property to make your application's behavior dependent on the length of time it has been running, or you can use it to label events, both of which are independent of the computer's clock.  
   
 > [!CAUTION]
->  When the value of the `TickCount` property reaches the maximum integer value (<xref:System.Int32>), it then jumps to the minimum integer value (<xref:System.Int32>), a negative number, and continues to increment.  
+>  When the value of the `TickCount` property reaches the maximum integer value (<xref:System.Int32.MaxValue>), it then jumps to the minimum integer value (<xref:System.Int32.MinValue>), a negative number, and continues to increment.  
   
  If the computer runs continuously, `TickCount` increments from zero to the maximum integer value in approximately 24.9 days.  
   

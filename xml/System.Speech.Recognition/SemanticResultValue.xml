@@ -135,6 +135,29 @@ private Grammar FgBgColorGrammar()
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SemanticResultValue" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The `SemanticResultValue` constructors support specifying an <xref:System.Object> instance with an underlying data type of `bool`, `int`, `float`, or `string`.  
+  
+ A constructor can create a `SemanticResultValue` instance in either of two circumstances:  
+  
+-   The `SemanticResultValue` instance must be explicitly associated with a grammar element when using a <xref:System.Speech.Recognition.GrammarBuilder> to construct a <xref:System.Speech.Recognition.Grammar>.  
+  
+-   The `SemanticResultValue` is already associated with a string value phrase or a <xref:System.Speech.Recognition.GrammarBuilder> object.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SemanticResultValue (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(object value) cil managed" />
@@ -477,28 +500,5 @@ private Grammar CreateGrammarBuilderRGBSemantics()
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SemanticResultValue" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The `SemanticResultValue` constructors support specifying an <xref:System.Object> instance with an underlying data type of `bool`, `int`, `float`, or `string`.  
-  
- A constructor can create a `SemanticResultValue` instance in either of two circumstances:  
-  
--   The `SemanticResultValue` instance must be explicitly associated with a grammar element when using a <xref:System.Speech.Recognition.GrammarBuilder> to construct a <xref:System.Speech.Recognition.Grammar>.  
-  
--   The `SemanticResultValue` is already associated with a string value phrase or a <xref:System.Speech.Recognition.GrammarBuilder> object.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

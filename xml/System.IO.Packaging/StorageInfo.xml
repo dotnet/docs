@@ -38,7 +38,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This <xref:System.IO.Packaging.StorageInfo.CreateStream%2A> method creates a new stream with <xref:System.IO.Packaging.StreamInfo> default settings set to CompressionOption.<xref:System.IO.Packaging.CompressionOption> and EncryptionOption.<xref:System.IO.Packaging.EncryptionOption>.  
+ This <xref:System.IO.Packaging.StorageInfo.CreateStream%2A> method creates a new stream with <xref:System.IO.Packaging.StreamInfo> default settings set to CompressionOption.<xref:System.IO.Packaging.CompressionOption.NotCompressed> and EncryptionOption.<xref:System.IO.Packaging.EncryptionOption.None>.  
   
  ]]></format>
         </remarks>

@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Runtime.Numerics</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Numerics</AssemblyName>
@@ -167,6 +168,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -245,6 +247,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -289,6 +292,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -344,6 +348,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -395,6 +400,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -444,6 +450,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -499,6 +506,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -549,6 +557,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -599,6 +608,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -657,6 +667,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -702,6 +713,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -725,40 +737,23 @@
         <summary>Compares two <see cref="T:System.Numerics.BigInteger" /> values and returns an integer that indicates whether the first value is less than, equal to, or greater than the second value.</summary>
         <returns>A signed integer that indicates the relative values of <paramref name="left" /> and <paramref name="right" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="left" /> is less than <paramref name="right" />.  
+ </term><description><paramref name="left" /> is less than <paramref name="right" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="left" /> equals <paramref name="right" />.  
+ </term><description><paramref name="left" /> equals <paramref name="right" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="left" /> is greater than <paramref name="right" />.  
+ </term><description><paramref name="left" /> is greater than <paramref name="right" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -780,6 +775,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -801,40 +797,23 @@
         <summary>Compares this instance to a signed 64-bit integer and returns an integer that indicates whether the value of this instance is less than, equal to, or greater than the value of the signed 64-bit integer.</summary>
         <returns>A signed integer value that indicates the relationship of this instance to <paramref name="other" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The current instance is less than <paramref name="other" />.  
+ </term><description> The current instance is less than <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The current instance equals <paramref name="other" />.  
+ </term><description> The current instance equals <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The current instance is greater than <paramref name="other" />.  
+ </term><description> The current instance is greater than <paramref name="other" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -861,6 +840,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -882,40 +862,23 @@
         <summary>Compares this instance to a second <see cref="T:System.Numerics.BigInteger" /> and returns an integer that indicates whether the value of this instance is less than, equal to, or greater than the value of the specified object.</summary>
         <returns>A signed integer value that indicates the relationship of this instance to <paramref name="other" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The current instance is less than <paramref name="other" />.  
+ </term><description> The current instance is less than <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The current instance equals <paramref name="other" />.  
+ </term><description> The current instance equals <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The current instance is greater than <paramref name="other" />.  
+ </term><description> The current instance is greater than <paramref name="other" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -953,6 +916,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Numerics</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -964,40 +931,23 @@
         <summary>Compares this instance to a specified object and returns an integer that indicates whether the value of this instance is less than, equal to, or greater than the value of the specified object.</summary>
         <returns>A signed integer that indicates the relationship of the current instance to the <paramref name="obj" /> parameter, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The current instance is less than <paramref name="obj" />.  
+ </term><description> The current instance is less than <paramref name="obj" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The current instance equals <paramref name="obj" />.  
+ </term><description> The current instance equals <paramref name="obj" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The current instance is greater than <paramref name="obj" />, or the <paramref name="obj" /> parameter is <see langword="null" />.  
+ </term><description> The current instance is greater than <paramref name="obj" />, or the <paramref name="obj" /> parameter is <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1032,6 +982,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1058,40 +1009,23 @@
         <summary>Compares this instance to an unsigned 64-bit integer and returns an integer that indicates whether the value of this instance is less than, equal to, or greater than the value of the unsigned 64-bit integer.</summary>
         <returns>A signed integer that indicates the relative value of this instance and <paramref name="other" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Return value  
+ <list type="table"><listheader><term> Return value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> The current instance is less than <paramref name="other" />.  
+ </term><description> The current instance is less than <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> The current instance equals <paramref name="other" />.  
+ </term><description> The current instance equals <paramref name="other" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> The current instance is greater than <paramref name="other" />.  
+ </term><description> The current instance is greater than <paramref name="other" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1103,6 +1037,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1155,6 +1090,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1216,6 +1152,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1266,6 +1203,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1316,6 +1254,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1370,6 +1309,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1423,6 +1363,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1456,6 +1397,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1516,6 +1458,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1539,15 +1482,11 @@
 ## Remarks  
  This property is a convenience feature that indicates whether a <xref:System.Numerics.BigInteger> value is evenly divisible by two. It is equivalent to the following expression:  
   
- [C#]  
-  
-```  
+```csharp  
 value % 2 == 0;  
 ```  
   
- [Visual Basic]  
-  
-```  
+```vb  
 value Mod 2 = 0  
 ```  
   
@@ -1565,6 +1504,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1605,6 +1545,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1640,6 +1581,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1680,6 +1622,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1711,15 +1654,15 @@ value Mod 2 = 0
 |Sign of `value` parameter|Return value|  
 |-------------------------------|------------------|  
 |Positive|The natural logarithm of `value`; that is, ln `value`, or log e`value`.|  
-|Zero|<xref:System.Double>.|  
-|Negative|<xref:System.Double>.|  
+|Zero|<xref:System.Double.NegativeInfinity>.|  
+|Negative|<xref:System.Double.NaN>.|  
   
  To calculate the base 10 logarithm of a <xref:System.Numerics.BigInteger> value, call the <xref:System.Numerics.BigInteger.Log10%2A> method. To calculate the logarithm of a number in another base, call the <xref:System.Numerics.BigInteger.Log%28System.Numerics.BigInteger%2CSystem.Double%29> method.  
   
  You can find the square root of a number by calling the <xref:System.Numerics.BigInteger.Log%2A> method along with the <xref:System.Math.Exp%2A?displayProperty=fullName> method. Note that the result is <xref:System.Double.PositiveInfinity?displayProperty=fullName> if the result is greater than <xref:System.Double.MaxValue?displayProperty=fullName>. The following example calculates the square root of each element in an array of <xref:System.Numerics.BigInteger> values.  
   
- <!-- TODO: review snippet reference [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)]  -->
- <!-- TODO: review snippet reference [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]  -->  
+ [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)] 
+ [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]   
   
  This method corresponds to the <xref:System.Math.Log%28System.Double%29?displayProperty=fullName> method for the primitive numeric types.  
   
@@ -1736,6 +1679,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1797,6 +1741,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1848,6 +1793,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1896,6 +1842,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1944,6 +1891,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -1978,6 +1926,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2036,6 +1985,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2089,6 +2039,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2140,6 +2091,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2179,6 +2131,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2229,6 +2182,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2283,6 +2237,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2337,6 +2292,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2384,6 +2340,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2444,6 +2401,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2492,6 +2450,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2540,6 +2499,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2591,6 +2551,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2642,6 +2603,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2693,6 +2655,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2747,6 +2710,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2778,6 +2742,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2809,6 +2774,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2840,6 +2806,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2871,6 +2838,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2907,6 +2875,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2938,6 +2907,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -2974,6 +2944,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3010,6 +2981,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3046,6 +3018,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3077,6 +3050,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3113,6 +3087,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3149,6 +3124,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3185,6 +3161,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3216,6 +3193,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3266,6 +3244,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3316,6 +3295,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3369,6 +3349,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3422,6 +3403,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3475,6 +3457,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3525,6 +3508,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3575,6 +3559,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3628,6 +3613,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3681,6 +3667,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3734,6 +3721,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3765,6 +3753,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3796,6 +3785,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3827,6 +3817,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3858,6 +3849,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3894,6 +3886,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3930,6 +3923,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -3966,6 +3960,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4002,6 +3997,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4048,6 +4044,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4100,6 +4097,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4152,6 +4150,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4207,6 +4206,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4262,6 +4262,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4317,6 +4318,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4368,6 +4370,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4418,6 +4421,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4468,6 +4472,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4521,6 +4526,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4574,6 +4580,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4627,6 +4634,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4677,6 +4685,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4727,6 +4736,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4780,6 +4790,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4833,6 +4844,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4886,6 +4898,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4940,6 +4953,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -4988,6 +5002,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5033,6 +5048,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5083,6 +5099,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5133,6 +5150,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5184,6 +5202,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5227,6 +5246,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5300,6 +5320,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5353,25 +5374,25 @@ value Mod 2 = 0
   
 |`NumberStyles` value|Elements permitted in `value` in addition to digits|  
 |--------------------------|---------------------------------------------------------|  
-|<xref:System.Globalization.NumberStyles>|The *digits* element only.|  
-|<xref:System.Globalization.NumberStyles>|The decimal point (.) and *fractional-digits* elements.|  
-|<xref:System.Globalization.NumberStyles>|The "e" or "E" character, which indicates exponential notation, along with *exponential_digits*.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the start of `value`.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the end of `value`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element at the start of `value`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element at the end of `value`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element in the form of parentheses enclosing the numeric value.|  
-|<xref:System.Globalization.NumberStyles>|The group separator (,) element.|  
-|<xref:System.Globalization.NumberStyles>|The currency ($) element.|  
-|<xref:System.Globalization.NumberStyles>|All elements. However, `value` cannot represent a hexadecimal number or a number in exponential notation.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the start or end of `value`, *sign* at the start of `value`, and the decimal point (*.*) symbol. The `value` parameter can also use exponential notation.|  
-|<xref:System.Globalization.NumberStyles>|The `ws`, `sign`, group separator (*,*), and decimal point (*.*) elements.|  
-|<xref:System.Globalization.NumberStyles>|All elements. However, `value` cannot represent a hexadecimal number.|  
+|<xref:System.Globalization.NumberStyles.None>|The *digits* element only.|  
+|<xref:System.Globalization.NumberStyles.AllowDecimalPoint>|The decimal point (.) and *fractional-digits* elements.|  
+|<xref:System.Globalization.NumberStyles.AllowExponent>|The "e" or "E" character, which indicates exponential notation, along with *exponential_digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingWhite>|The *ws* element at the start of `value`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingWhite>|The *ws* element at the end of `value`.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingSign>|The *sign* element at the start of `value`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingSign>|The *sign* element at the end of `value`.|  
+|<xref:System.Globalization.NumberStyles.AllowParentheses>|The *sign* element in the form of parentheses enclosing the numeric value.|  
+|<xref:System.Globalization.NumberStyles.AllowThousands>|The group separator (,) element.|  
+|<xref:System.Globalization.NumberStyles.AllowCurrencySymbol>|The currency ($) element.|  
+|<xref:System.Globalization.NumberStyles.Currency>|All elements. However, `value` cannot represent a hexadecimal number or a number in exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Float>|The *ws* element at the start or end of `value`, *sign* at the start of `value`, and the decimal point (*.*) symbol. The `value` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Number>|The `ws`, `sign`, group separator (*,*), and decimal point (*.*) elements.|  
+|<xref:System.Globalization.NumberStyles.Any>|All elements. However, `value` cannot represent a hexadecimal number.|  
   
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=fullName> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles>, that includes both white-space flags.)  
+ Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -5413,6 +5434,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5503,6 +5525,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5558,25 +5581,25 @@ value Mod 2 = 0
   
 |NumberStyles value|Elements permitted in value in addition to digits|  
 |------------------------|-------------------------------------------------------|  
-|<xref:System.Globalization.NumberStyles>|The *digits* element only.|  
-|<xref:System.Globalization.NumberStyles>|The decimal point (.) and *fractional-digits* elements.|  
-|<xref:System.Globalization.NumberStyles>|The "e" or "E" character, which indicates exponential notation. along with *exponential_digits*.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the start of `value`.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the end of `value`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element at the start of `value`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element at the end of `value`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element in the form of parentheses enclosing the numeric value.|  
-|<xref:System.Globalization.NumberStyles>|The group separator (,) element.|  
-|<xref:System.Globalization.NumberStyles>|The currency ($) element.|  
-|<xref:System.Globalization.NumberStyles>|All elements. However, `value` cannot represent a hexadecimal number or a number in exponential notation.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the start or end of `value`, *sign* at the start of `value`, and the decimal point (.) symbol. The `value` parameter can also use exponential notation.|  
-|<xref:System.Globalization.NumberStyles>|The `ws`, `sign`, group separator (,), and decimal point (.) elements.|  
-|<xref:System.Globalization.NumberStyles>|All elements. However, `value` cannot represent a hexadecimal number.|  
+|<xref:System.Globalization.NumberStyles.None>|The *digits* element only.|  
+|<xref:System.Globalization.NumberStyles.AllowDecimalPoint>|The decimal point (.) and *fractional-digits* elements.|  
+|<xref:System.Globalization.NumberStyles.AllowExponent>|The "e" or "E" character, which indicates exponential notation. along with *exponential_digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingWhite>|The *ws* element at the start of `value`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingWhite>|The *ws* element at the end of `value`.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingSign>|The *sign* element at the start of `value`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingSign>|The *sign* element at the end of `value`.|  
+|<xref:System.Globalization.NumberStyles.AllowParentheses>|The *sign* element in the form of parentheses enclosing the numeric value.|  
+|<xref:System.Globalization.NumberStyles.AllowThousands>|The group separator (,) element.|  
+|<xref:System.Globalization.NumberStyles.AllowCurrencySymbol>|The currency ($) element.|  
+|<xref:System.Globalization.NumberStyles.Currency>|All elements. However, `value` cannot represent a hexadecimal number or a number in exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Float>|The *ws* element at the start or end of `value`, *sign* at the start of `value`, and the decimal point (.) symbol. The `value` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Number>|The `ws`, `sign`, group separator (,), and decimal point (.) elements.|  
+|<xref:System.Globalization.NumberStyles.Any>|All elements. However, `value` cannot represent a hexadecimal number.|  
   
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.Parse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=fullName> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.Parse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for but do not require the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles>, that includes both white-space flags.)  
+ Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for but do not require the presence of particular style elements in `value`, the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style value means that the individual numeric characters in `value` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -5631,6 +5654,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5687,6 +5711,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5741,6 +5766,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5763,40 +5789,23 @@ value Mod 2 = 0
         <summary>Gets a number that indicates the sign (negative, positive, or zero) of the current <see cref="T:System.Numerics.BigInteger" /> object.</summary>
         <value>A number that indicates the sign of the <see cref="T:System.Numerics.BigInteger" /> object, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Number  
+ <list type="table"><listheader><term> Number  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> -1  
+ </description></listheader><item><term> -1  
   
- </term>  
-<description> The value of this object is negative.  
+ </term><description> The value of this object is negative.  
   
- </description>  
-</item>  
-<item>  
-<term> 0  
+ </description></item><item><term> 0  
   
- </term>  
-<description> The value of this object is 0 (zero).  
+ </term><description> The value of this object is 0 (zero).  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> The value of this object is positive.  
+ </term><description> The value of this object is positive.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5815,6 +5824,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5882,6 +5892,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5939,6 +5950,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -5995,6 +6007,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -6057,6 +6070,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -6121,6 +6135,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -6195,6 +6210,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -6267,6 +6283,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>
@@ -6304,7 +6321,7 @@ value Mod 2 = 0
   
  [*ws*][*$*][*sign*][*digits*,]*digits*[.*fractional_digits*][E[*sign*]*exponential_digits*][*ws*]  
   
- If the `style` parameter includes <xref:System.Globalization.NumberStyles>, the `value` parameter may include the following elements:  
+ If the `style` parameter includes <xref:System.Globalization.NumberStyles.AllowHexSpecifier>, the `value` parameter may include the following elements:  
   
  [*ws*]*hexdigits*[*ws*]  
   
@@ -6327,25 +6344,25 @@ value Mod 2 = 0
   
 |Non-composite `NumberStyles` values|Elements permitted in value in addition to digits|  
 |------------------------------------------|-------------------------------------------------------|  
-|<xref:System.Globalization.NumberStyles>|Decimal digits only.|  
-|<xref:System.Globalization.NumberStyles>|The decimal point (*.*) and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits, or the method returns `false`.|  
-|<xref:System.Globalization.NumberStyles>|The "e" or "E" character, which indicates exponential notation, along with *exponential_digits*. If `value` represents a number in exponential notation, it cannot have a non-zero, fractional component.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the start of `value`.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the end of `value`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element before *digits*.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element after *digits*.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element in the form of parentheses enclosing the numeric value.|  
-|<xref:System.Globalization.NumberStyles>|The group separator (*,*) element.|  
-|<xref:System.Globalization.NumberStyles>|The currency (*$*) element.|  
-|<xref:System.Globalization.NumberStyles>|All elements. However, `value` cannot represent a hexadecimal number or a number in exponential notation.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the start or end of `value`, *sign* at the start of `value`, and the decimal point (*.*) symbol. The `value` parameter can also use exponential notation.|  
-|<xref:System.Globalization.NumberStyles>|The *ws*, *sign*, group separator (*,*), and decimal point (*.*) elements.|  
-|<xref:System.Globalization.NumberStyles>|All elements. However, `value` cannot represent a hexadecimal number.|  
+|<xref:System.Globalization.NumberStyles.None>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles.AllowDecimalPoint>|The decimal point (*.*) and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits, or the method returns `false`.|  
+|<xref:System.Globalization.NumberStyles.AllowExponent>|The "e" or "E" character, which indicates exponential notation, along with *exponential_digits*. If `value` represents a number in exponential notation, it cannot have a non-zero, fractional component.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingWhite>|The *ws* element at the start of `value`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingWhite>|The *ws* element at the end of `value`.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingSign>|The *sign* element before *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingSign>|The *sign* element after *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowParentheses>|The *sign* element in the form of parentheses enclosing the numeric value.|  
+|<xref:System.Globalization.NumberStyles.AllowThousands>|The group separator (*,*) element.|  
+|<xref:System.Globalization.NumberStyles.AllowCurrencySymbol>|The currency (*$*) element.|  
+|<xref:System.Globalization.NumberStyles.Currency>|All elements. However, `value` cannot represent a hexadecimal number or a number in exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Float>|The *ws* element at the start or end of `value`, *sign* at the start of `value`, and the decimal point (*.*) symbol. The `value` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Number>|The *ws*, *sign*, group separator (*,*), and decimal point (*.*) elements.|  
+|<xref:System.Globalization.NumberStyles.Any>|All elements. However, `value` cannot represent a hexadecimal number.|  
   
 > [!IMPORTANT]
 >  If you use the <xref:System.Numerics.BigInteger.TryParse%2A> method to round-trip the string representation of a <xref:System.Numerics.BigInteger> value that was output by the <xref:System.Numerics.BigInteger.ToString%2A> method, you should use the <xref:System.Numerics.BigInteger.ToString%28System.String%29?displayProperty=fullName> method with the "R" format specifier to generate the string representation of the <xref:System.Numerics.BigInteger> value. Otherwise, the string representation of the <xref:System.Numerics.BigInteger> preserves only the 50 most significant digits of the original value, and data may be lost when you use the <xref:System.Numerics.BigInteger.TryParse%2A> method to restore the <xref:System.Numerics.BigInteger> value.  
   
- If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `value` must be a hexadecimal value. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles>, that includes both white-space flags.)  
+ If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `value` must be a hexadecimal value. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `value` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  
@@ -6396,6 +6413,7 @@ value Mod 2 = 0
       <AssemblyInfo>
         <AssemblyName>System.Runtime.Numerics</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Numerics</AssemblyName>

@@ -1148,7 +1148,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Speech.Synthesis.PromptVolume> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume>. The other settings decrease the volume of speech output relative to full volume.  
+ The <xref:System.Speech.Synthesis.PromptVolume.Default> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume.ExtraLoud>. The other settings decrease the volume of speech output relative to full volume.  
   
    
   
@@ -1582,6 +1582,23 @@ public void ProperName()
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StartParagraph">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies the start of a paragraph in the <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object, and optionally specifies a language.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Long prompts can be rendered more like human speech if they are broken into sentences and paragraphs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StartParagraph">
       <MemberSignature Language="C#" Value="public void StartParagraph ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartParagraph() cil managed" />
@@ -1700,6 +1717,23 @@ namespace SampleSynthesis
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StartSentence">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Specifies the start of a sentence in the <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object, and optionally specifies a language.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Long prompts can be rendered more like human speech if they are broken into sentences and paragraphs.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StartSentence">
       <MemberSignature Language="C#" Value="public void StartSentence ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartSentence() cil managed" />
@@ -1846,7 +1880,7 @@ namespace SampleSynthesis
   
 > [!NOTE]
 >  -   The speech synthesis engines in Windows do not support the emphasis parameter at this time. Setting values for the emphasis parameter will produce no audible change in the synthesized speech output.  
-> -   The <xref:System.Speech.Synthesis.PromptVolume> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume>. The other settings decrease the volume of speech output relative to full volume.  
+> -   The <xref:System.Speech.Synthesis.PromptVolume.Default> setting for <xref:System.Speech.Synthesis.PromptVolume> is full volume, which is the same as <xref:System.Speech.Synthesis.PromptVolume.ExtraLoud>. The other settings decrease the volume of speech output relative to full volume.  
   
    
   
@@ -1895,6 +1929,25 @@ namespace SampleSynthesis
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="StartVoice">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Instructs the synthesizer to change the voice in a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A voice represents an installed TTS engine. Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> methods and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names and attributes of installed text-to-speech (TTS) voices that you can select.  
+  
+ When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot call any of the <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods on a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="StartVoice">
       <MemberSignature Language="C#" Value="public void StartVoice (System.Globalization.CultureInfo culture);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void StartVoice(class System.Globalization.CultureInfo culture) cil managed" />
@@ -2169,58 +2222,5 @@ namespace SampleSynthesis
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="StartSentence">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Specifies the start of a sentence in the <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object, and optionally specifies a language.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Long prompts can be rendered more like human speech if they are broken into sentences and paragraphs.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="StartVoice">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Instructs the synthesizer to change the voice in a <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A voice represents an installed TTS engine. Use the <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> methods and <xref:System.Speech.Synthesis.VoiceInfo> class to obtain the names and attributes of installed text-to-speech (TTS) voices that you can select.  
-  
- When an application calls <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A>, the method verifies that each of the voices it finds in the registry meets certain minimum criteria. For any voice that fails verification, <xref:System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices%2A> sets its <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property to `False`. An application cannot call any of the <xref:System.Speech.Synthesis.PromptBuilder.StartVoice%2A> methods on a voice whose <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property is `False`. Typically, applications will not set a voice’s <xref:System.Speech.Synthesis.InstalledVoice.Enabled%2A> property.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="StartParagraph">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Specifies the start of a paragraph in the <see cref="T:System.Speech.Synthesis.PromptBuilder" /> object, and optionally specifies a language.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Long prompts can be rendered more like human speech if they are broken into sentences and paragraphs.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

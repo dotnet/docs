@@ -85,13 +85,13 @@ public interface ISessionChannel<TSession> where TSession : ISession{
 |---------------|------------------------------------------|  
 |`System.Attribute`|**✓ DO** add the suffix "Attribute" to names of custom attribute classes. add the suffix "Attribute" to names of custom attribute classes.|  
 |`System.Delegate`|**✓ DO** add the suffix "EventHandler" to names of delegates that are used in events.<br /><br /> **✓ DO** add the suffix "Callback" to names of delegates other than those used as event handlers.<br /><br /> **X DO NOT** add the suffix "Delegate" to a delegate.|  
-|`System.EventArgs`|**✓ DO** add the suffix "EventArgs.”|  
-|`System.Enum`|**X DO NOT** derive from this class; use the keyword supported by your language instead; for example, in C#, use the enum keyword.<br /><br /> **X DO NOT** add the suffix "Enum" or "Flag.”|  
-|`System.Exception`|**✓ DO** add the suffix "Exception.”|  
+|`System.EventArgs`|**✓ DO** add the suffix "EventArgs."|  
+|`System.Enum`|**X DO NOT** derive from this class; use the keyword supported by your language instead; for example, in C#, use the enum keyword.<br /><br /> **X DO NOT** add the suffix "Enum" or "Flag."|  
+|`System.Exception`|**✓ DO** add the suffix "Exception."|  
 |`IDictionary` <br /> `IDictionary<TKey,TValue>`|**✓ DO** add the suffix "Dictionary." Note that `IDictionary` is a specific type of collection, but this guideline takes precedence over the more general collections guideline that follows.|  
-|`IEnumerable` <br /> `ICollection` <br /> `IList` <br /> `IEnumerable<T>` <br /> `ICollection<T>` <br /> `IList<T>`|**✓ DO** add the suffix "Collection.”|  
-|`System.IO.Stream`|**✓ DO** add the suffix "Stream.”|  
-|`CodeAccessPermission IPermission`|**✓ DO** add the suffix "Permission.”|  
+|`IEnumerable` <br /> `ICollection` <br /> `IList` <br /> `IEnumerable<T>` <br /> `ICollection<T>` <br /> `IList<T>`|**✓ DO** add the suffix "Collection."|  
+|`System.IO.Stream`|**✓ DO** add the suffix "Stream."|  
+|`CodeAccessPermission IPermission`|**✓ DO** add the suffix "Permission."|  
   
 ## Naming Enumerations  
  Names of enumeration types (also called enums) in general should follow the standard type-naming rules (PascalCasing, etc.). However, there are additional guidelines that apply specifically to enums.  
@@ -102,7 +102,7 @@ public interface ISessionChannel<TSession> where TSession : ISession{
   
  **X DO NOT** use an "Enum" suffix in enum type names.  
   
- **X DO NOT** use "Flag" or “Flags" suffixes in enum type names.  
+ **X DO NOT** use "Flag" or "Flags" suffixes in enum type names.  
   
  **X DO NOT** use a prefix on enumeration value names (e.g., "ad" for ADO enums, "rtf" for rich text enums, etc.).  
   

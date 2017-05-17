@@ -16,7 +16,6 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- [C#]  
   
  The following sample uses a <xref:System.Windows.Media.Media3D.Point3DConverter> structure to convert a string into a <xref:System.Windows.Media.Media3D.Point3D> structure.  
   
@@ -77,32 +76,19 @@ point3DResult = (Point3D)p3DConverter.ConvertFromString(string3);
         <summary>Determines whether a class can be converted from a given type to an instance of a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.</summary>
         <returns>Indicates whether the type can be converted to a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> false  
+ </description></listheader><item><term> false  
   
- </term>  
-<description> The converter cannot convert from the provided type.  
+ </term><description> The converter cannot convert from the provided type.  
   
- </description>  
-</item>  
-<item>  
-<term> true  
+ </description></item><item><term> true  
   
- </term>  
-<description> The converter can convert the provided type to a <see cref="T:System.Windows.Media.Media3D.Point3D" />.  
+ </term><description> The converter can convert the provided type to a <see cref="T:System.Windows.Media.Media3D.Point3D" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -128,32 +114,19 @@ point3DResult = (Point3D)p3DConverter.ConvertFromString(string3);
         <summary>Determines whether an instance of a <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure can be converted to a different type.</summary>
         <returns>Indicates whether this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure can be converted to <paramref name="destinationType" />.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> false  
+ </description></listheader><item><term> false  
   
- </term>  
-<description> The converter cannot convert this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to the specified type.  
+ </term><description> The converter cannot convert this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to the specified type.  
   
- </description>  
-</item>  
-<item>  
-<term> true  
+ </description></item><item><term> true  
   
- </term>  
-<description> The converter can convert this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to the specified type.  
+ </term><description> The converter can convert this <see cref="T:System.Windows.Media.Media3D.Point3D" /> structure to the specified type.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

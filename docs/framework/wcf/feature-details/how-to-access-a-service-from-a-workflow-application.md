@@ -50,7 +50,7 @@ This topic describes how to call a workflow service from a workflow console appl
   
 7.  Drag and drop a <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` activity onto the designer surface. It is under the **Control Flow** section of the toolbox.  
   
-8.  With the <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` activity in focus, click the **Variables** link and add a string variable named `inString`. Give the variable a default value of `“Hello, world”` as well as a string variable named `outString` as shown in the following diagram.  
+8.  With the <!--zz <xref:System.ServiceModel.Activities.Sequence>--> `System.ServiceModel.Activities.Sequence` activity in focus, click the **Variables** link and add a string variable named `inString`. Give the variable a default value of `"Hello, world"` as well as a string variable named `outString` as shown in the following diagram.  
   
      ![Adding a variable](../../../../docs/framework/wcf/feature-details/media/instringvar.JPG "inStringVar")  
   
@@ -66,7 +66,7 @@ This topic describes how to call a workflow service from a workflow console appl
   
      ![Startup projects options](../../../../docs/framework/wcf/feature-details/media/startupprojects.JPG "StartupProjects")  
   
-12. Press Ctrl + F5 to launch both the service and the client. The ASP.NET Development Server hosts the service, Internet Explorer displays the WCF help page, and the client workflow application is launched in a console window and displays the string returned from the service (“Hello, world”).  
+12. Press Ctrl + F5 to launch both the service and the client. The ASP.NET Development Server hosts the service, Internet Explorer displays the WCF help page, and the client workflow application is launched in a console window and displays the string returned from the service ("Hello, world").  
   
 ## See Also  
  [Workflow Services](../../../../docs/framework/wcf/feature-details/workflow-services.md)   

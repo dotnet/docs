@@ -217,7 +217,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.Services.Description.SoapProtocolImporter.IsOperationFlowSupported%2A> method determines whether to generate a method for the current operation, as represented by the <xref:System.Web.Services.Description.Operation> property. This evaluation takes place for each operation in a binding for which a class is being generated. If a `false` value is returned, the <xref:System.Web.Services.Description.SoapProtocolImporter.UnsupportedOperationWarning%2A> method executes. A `true` value is returned only if the input value is <xref:System.Web.Services.Description.OperationFlow> or <xref:System.Web.Services.Description.OperationFlow>.  
+ The <xref:System.Web.Services.Description.SoapProtocolImporter.IsOperationFlowSupported%2A> method determines whether to generate a method for the current operation, as represented by the <xref:System.Web.Services.Description.Operation> property. This evaluation takes place for each operation in a binding for which a class is being generated. If a `false` value is returned, the <xref:System.Web.Services.Description.SoapProtocolImporter.UnsupportedOperationWarning%2A> method executes. A `true` value is returned only if the input value is <xref:System.Web.Services.Description.OperationFlow.OneWay> or <xref:System.Web.Services.Description.OperationFlow.RequestResponse>.  
   
  For more information, see the <xref:System.Web.Services.Description.OperationMessageCollection.Flow%2A> property. The <xref:System.Web.Services.Description.Operation.Messages%2A> property is of type <xref:System.Web.Services.Description.OperationMessageCollection>.  
   

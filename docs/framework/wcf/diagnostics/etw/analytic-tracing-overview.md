@@ -33,7 +33,7 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
 ```  
   
 <system.serviceModel>  
-  <diagnostics>  
+  <diagnostics>  
   
 ```  
   

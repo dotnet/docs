@@ -32,7 +32,7 @@ This topic describes transfer in the [!INCLUDE[indigo1](../../../../../includes/
   
  A transfer trace is emitted from activity M to activity N when there is a flow of control between M and N. For example, N performs some work for M because of a method call crossing the activities’ boundaries. N may already exist or has been created. N is spawned by M when N is a new activity that performs some work for M.  
   
- A transfer from M to N may not be followed by a transfer back from N to M. This is because M can spawn some work in N and do not track when N completes that work. In fact, M can terminate before N completes its task. This happens in the “Open ServiceHost” activity (M) that spawns Listener activities (N) and then terminates. A transfer back from N to M means that N completed the work related to M.  
+ A transfer from M to N may not be followed by a transfer back from N to M. This is because M can spawn some work in N and do not track when N completes that work. In fact, M can terminate before N completes its task. This happens in the "Open ServiceHost" activity (M) that spawns Listener activities (N) and then terminates. A transfer back from N to M means that N completed the work related to M.  
   
  N can continue performing other processing unrelated to M, for example, an existing authenticator activity (N) that keeps receiving login requests (M) from different login activities.  
   
@@ -68,8 +68,8 @@ This topic describes transfer in the [!INCLUDE[indigo1](../../../../../includes/
   
 ```  
 // 0. Create a trace source  
-TraceSource ts = new TraceSource(“myTS”);  
-// 1. remember existing (“ambient”) activity for clean up  
+TraceSource ts = new TraceSource("myTS");  
+// 1. remember existing ("ambient") activity for clean up  
 Guid oldGuid = Trace.CorrelationManager.ActivityId;  
 // this will be our new activity  
 Guid newGuid = Guid.NewGuid();   

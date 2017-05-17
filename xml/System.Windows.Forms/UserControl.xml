@@ -179,7 +179,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Controls that do not recognize the <xref:System.Windows.Forms.UserControl.AutoSizeMode%2A> property will function as though <xref:System.Windows.Forms.UserControl.AutoSizeMode%2A> was set to <xref:System.Windows.Forms.AutoSizeMode>. All controls that recognize the <xref:System.Windows.Forms.UserControl.AutoSizeMode%2A> property will, by default, grow to fit available space, but will not shrink below the value specified by the <xref:System.Windows.Forms.Control.Size%2A> property.  
+ Controls that do not recognize the <xref:System.Windows.Forms.UserControl.AutoSizeMode%2A> property will function as though <xref:System.Windows.Forms.UserControl.AutoSizeMode%2A> was set to <xref:System.Windows.Forms.AutoSizeMode.GrowAndShrink>. All controls that recognize the <xref:System.Windows.Forms.UserControl.AutoSizeMode%2A> property will, by default, grow to fit available space, but will not shrink below the value specified by the <xref:System.Windows.Forms.Control.Size%2A> property.  
   
  ]]></format>
         </remarks>
@@ -283,7 +283,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Forms.UserControl.BorderStyle%2A> property is set to <xref:System.Windows.Forms.BorderStyle>, the control has a sunken, three-dimensional appearance. To display a flat, thin border, set the <xref:System.Windows.Forms.BorderStyle> property to <xref:System.Windows.Forms.BorderStyle>.  
+ When the <xref:System.Windows.Forms.UserControl.BorderStyle%2A> property is set to <xref:System.Windows.Forms.BorderStyle.Fixed3D>, the control has a sunken, three-dimensional appearance. To display a flat, thin border, set the <xref:System.Windows.Forms.BorderStyle> property to <xref:System.Windows.Forms.BorderStyle.FixedSingle>.  
   
  ]]></format>
         </remarks>

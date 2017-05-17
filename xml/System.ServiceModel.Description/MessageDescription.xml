@@ -137,7 +137,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Incoming means that the message is coming from the client to the server. This is the <xref:System.ServiceModel.Description.MessageDirection> direction. Outgoing means the message is coming from the server to the client. This is the <xref:System.ServiceModel.Description.MessageDirection> direction. These terms can be confusing from the client perspective where the messages marked as <xref:System.ServiceModel.Description.MessageDirection> are actually being sent and the messages marked as <xref:System.ServiceModel.Description.MessageDirection> are being received.  
+ Incoming means that the message is coming from the client to the server. This is the <xref:System.ServiceModel.Description.MessageDirection.Input> direction. Outgoing means the message is coming from the server to the client. This is the <xref:System.ServiceModel.Description.MessageDirection.Output> direction. These terms can be confusing from the client perspective where the messages marked as <xref:System.ServiceModel.Description.MessageDirection.Input> are actually being sent and the messages marked as <xref:System.ServiceModel.Description.MessageDirection.Output> are being received.  
   
  ]]></format>
         </remarks>

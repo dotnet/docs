@@ -122,7 +122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the smart tag panel is currently being displayed, the <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> method will hide it. This method raises the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, stipulating <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType> as the event type.  
+ If the smart tag panel is currently being displayed, the <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> method will hide it. This method raises the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, stipulating <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType.Hide> as the event type.  
   
 > [!NOTE]
 >  The <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> and <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A> methods are implemented only to raise their corresponding events. The actual functionality is found in the handlers for these events, which are part of the design-time environment.  
@@ -212,7 +212,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the smart tag panel is currently hidden, the <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A> method will display the panel. This method raises the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, stipulating <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType> as the event type.  
+ If the smart tag panel is currently hidden, the <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A> method will display the panel. This method raises the <xref:System.ComponentModel.Design.DesignerActionUIService.DesignerActionUIStateChange> event, stipulating <xref:System.ComponentModel.Design.DesignerActionUIStateChangeType.Show> as the event type.  
   
 > [!NOTE]
 >  The <xref:System.ComponentModel.Design.DesignerActionUIService.HideUI%2A> and <xref:System.ComponentModel.Design.DesignerActionUIService.ShowUI%2A> methods are implemented only to raise their corresponding events. The actual functionality is found in the handlers for these events, which are part of the design-time environment.  

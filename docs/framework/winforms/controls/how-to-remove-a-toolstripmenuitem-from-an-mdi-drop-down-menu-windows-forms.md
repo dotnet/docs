@@ -65,12 +65,9 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
         'Display the new form.  
             NewMDIChild.Show()  
     End Sub  
-  
     ```  
   
-     [C#]  
-  
-    ```  
+    ```csharp  
     private void openToolStripMenuItem_Click(object sender, EventArgs e)  
     {  
         Form2 newMDIChild = new Form2();  
@@ -79,7 +76,6 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
         // Display the new form.  
             newMDIChild.Show();  
     }  
-  
     ```  
   
 12. Place code similar to the following code example in the `&Open`<xref:System.Windows.Forms.ToolStripMenuItem> to register the event handler.  
@@ -87,13 +83,11 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
     ```vb  
     Private Sub openToolStripMenuItem_Click(sender As Object, e As _  
     EventArgs) Handles openToolStripMenuItem.Click  
-  
     ```  
   
     ```csharp  
     this.openToolStripMenuItem.Click += new _  
     System.EventHandler(this.openToolStripMenuItem_Click);  
-  
     ```  
   
 ## Compiling the Code  

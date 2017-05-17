@@ -238,5 +238,5 @@ End Function
 ## See Also  
  [/link (Visual Basic)](../../../../visual-basic/reference/command-line-compiler/link.md)   
  [Programming Concepts](../../../../visual-basic/programming-guide/concepts/index.md)   
- [Programming with Assemblies](http://msdn.microsoft.com/library/25918b15-701d-42c7-95fc-c290d08648d6)   
+ [Programming with Assemblies](../../../../framework/app-domains/programming-with-assemblies.md)   
  [Assemblies and the Global Assembly Cache (Visual Basic)](../../../../visual-basic/programming-guide/concepts/assemblies-gac/index.md)

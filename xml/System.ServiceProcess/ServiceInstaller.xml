@@ -147,7 +147,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceProcess.ServiceInstaller.DelayedAutoStart%2A> property can be applied to any service, but it is ignored unless the service's start mode is <xref:System.ServiceProcess.ServiceStartMode>. The setting takes effect the next time the system is restarted. The Service Control Manager does not guarantee a specific start time for the service.  
+ The <xref:System.ServiceProcess.ServiceInstaller.DelayedAutoStart%2A> property can be applied to any service, but it is ignored unless the service's start mode is <xref:System.ServiceProcess.ServiceStartMode.Automatic>. The setting takes effect the next time the system is restarted. The Service Control Manager does not guarantee a specific start time for the service.  
   
  A delayed automatic start service cannot be a member of a load ordering group, but it can depend on another automatic start service. If an application calls a delayed automatic start service before it is loaded, the call fails.  
   

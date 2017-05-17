@@ -6,6 +6,10 @@
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Configuration.ConfigurationConverterBase</BaseTypeName>
   </Base>
@@ -18,7 +22,7 @@
 ## Remarks  
  This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
   
- In particular the <xref:System.Configuration.InfiniteTimeSpanConverter> converts the <xref:System.String> value "infinite" assigned to a configuration property to the standard infinite <xref:System.TimeSpan> and vice versa. The infinite <xref:System.TimeSpan> value is represented by the <xref:System.TimeSpan> enumeration value.  
+ In particular the <xref:System.Configuration.InfiniteTimeSpanConverter> converts the <xref:System.String> value "infinite" assigned to a configuration property to the standard infinite <xref:System.TimeSpan> and vice versa. The infinite <xref:System.TimeSpan> value is represented by the <xref:System.TimeSpan.MaxValue> enumeration value.  
   
  This converter is used with <xref:System.TimeSpan> properties. An infinite value is persisted as the "infinite" string.  
   
@@ -69,6 +73,10 @@
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Configuration.InfiniteTimeSpanConverter" /> class.</summary>
@@ -89,6 +97,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -124,6 +136,10 @@
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -146,7 +162,7 @@
 ## Remarks  
  The system uses the <xref:System.Configuration.InfiniteTimeSpanConverter.ConvertTo%2A> method when writing an attribute to a configuration file to convert a <xref:System.TimeSpan> object to a <xref:System.String> object.  
   
- The system uses the <xref:System.Configuration.InfiniteTimeSpanConverter.ConvertTo%2A> method when writing to a configuration file to convert a <xref:System.TimeSpan> value or <xref:System.TimeSpan> to a <xref:System.String>.  
+ The system uses the <xref:System.Configuration.InfiniteTimeSpanConverter.ConvertTo%2A> method when writing to a configuration file to convert a <xref:System.TimeSpan> value or <xref:System.TimeSpan.MaxValue> to a <xref:System.String>.  
   
  ]]></format>
         </remarks>

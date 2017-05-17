@@ -102,7 +102,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of grid items within a grid container. Item properties are echoed to the console upon each focus-changed event.  
   
  [!code-csharp[UIAGridItemPattern_snip#101](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAGridItemPattern_snip/CSharp/UIAGridItemPattern_snippets.cs#101)]
  [!code-vb[UIAGridItemPattern_snip#101](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAGridItemPattern_snip/VisualBasic/UIAGridItemPattern_snippets.vb#101)]  

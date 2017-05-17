@@ -100,7 +100,7 @@
   
  The URI that is specified by <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> must use the Net.msmq scheme.  
   
- If <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> is set to <xref:System.ServiceModel.DeadLetterQueue> or <xref:System.ServiceModel.DeadLetterQueue>, then <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> must be set to `null`. If <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> is not `null`, then <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> must be set to <xref:System.ServiceModel.DeadLetterQueue>.  
+ If <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> is set to <xref:System.ServiceModel.DeadLetterQueue.None> or <xref:System.ServiceModel.DeadLetterQueue.System>, then <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> must be set to `null`. If <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> is not `null`, then <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> must be set to <xref:System.ServiceModel.DeadLetterQueue.Custom>.  
   
  ]]></format>
         </remarks>
@@ -356,7 +356,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this is `true`, a service can “peek” a message on the queue to begin processing it, and, if anything goes wrong and an exception is thrown, it remains on the queue. Services can also “lock” messages in order to retry processing at a later point in time. ReceiveContext provides a mechanism for “completing” the message once processed so it can be removed from the queue. Messages are no longer being read and re-written to queues over the network, and individual messages aren’t bouncing across different service instances during processing.  
+ When this is `true`, a service can "peek" a message on the queue to begin processing it, and, if anything goes wrong and an exception is thrown, it remains on the queue. Services can also "lock" messages in order to retry processing at a later point in time. ReceiveContext provides a mechanism for "completing" the message once processed so it can be removed from the queue. Messages are no longer being read and re-written to queues over the network, and individual messages aren’t bouncing across different service instances during processing.  
   
  ]]></format>
         </remarks>
@@ -386,13 +386,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the channel listener is faulted and a <xref:System.ServiceModel.ProtocolException> (wrapping a <xref:System.ServiceModel.MsmqPoisonMessageException>) is traced and thrown. The offending message is left in the queue and needs to be removed by some manual method. The <xref:System.ServiceModel.MsmqPoisonMessageException> contains a <xref:System.ServiceModel.MsmqPoisonMessageException.MessageLookupId%2A> that can be used to identify and manually remove the offending message from the poison-message queue.  
+ When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling.Fault>, the channel listener is faulted and a <xref:System.ServiceModel.ProtocolException> (wrapping a <xref:System.ServiceModel.MsmqPoisonMessageException>) is traced and thrown. The offending message is left in the queue and needs to be removed by some manual method. The <xref:System.ServiceModel.MsmqPoisonMessageException> contains a <xref:System.ServiceModel.MsmqPoisonMessageException.MessageLookupId%2A> that can be used to identify and manually remove the offending message from the poison-message queue.  
   
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the offending message is simply dropped.  
+ When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling.Drop>, the offending message is simply dropped.  
   
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, a negative acknowledgment is sent to the client and the offending message is removed from the poison-message queue. This option is available only on Message Queuing (also known as MSMQ) 4.0.  
+ When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling.Reject>, a negative acknowledgment is sent to the client and the offending message is removed from the poison-message queue. This option is available only on Message Queuing (also known as MSMQ) 4.0.  
   
- When set to <xref:System.ServiceModel.ReceiveErrorHandling>, the offending message is moved to the final poison subqueue. This option is available only on Message Queuing 4.0.  
+ When set to <xref:System.ServiceModel.ReceiveErrorHandling.Move>, the offending message is moved to the final poison subqueue. This option is available only on Message Queuing 4.0.  
   
  ]]></format>
         </remarks>

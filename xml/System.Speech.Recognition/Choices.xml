@@ -23,7 +23,7 @@
 ## Remarks  
  A <xref:System.Speech.Recognition.Choices> object represents a component of a phrase that can have one of several values. Use this class when creating a speech recognition grammar from a <xref:System.Speech.Recognition.GrammarBuilder> object.  
   
- For example, a <xref:System.Speech.Recognition.Choices> object could represent the component *colorChoice* in the phrase, "Change the color to *colorChoice*", where acceptable values for *colorChoice* are “red”, or “green”, or “blue”.  
+ For example, a <xref:System.Speech.Recognition.Choices> object could represent the component *colorChoice* in the phrase, "Change the color to *colorChoice*", where acceptable values for *colorChoice* are "red", or "green", or "blue".  
   
 > [!NOTE]
 >  To use a <xref:System.Speech.Recognition.Choices> object as an optional component in a phrase, create the <xref:System.Speech.Recognition.Choices> object and add it to a <xref:System.Speech.Recognition.GrammarBuilder.%23ctor%28System.Speech.Recognition.GrammarBuilder%2CSystem.Int32%2CSystem.Int32%29?displayProperty=fullName> object with `minRepeat` and `maxRepeat` set to 0 and 1, respectively. Phrases containing optional components can be recognized whether or not the optional component is spoken.  
@@ -62,6 +62,49 @@ private Grammar CreateColorGrammar()
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.Choices" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can construct a <xref:System.Speech.Recognition.Choices> object using a default constructor (which returns an empty object), from a group of <xref:System.String> objects, or a from set of <xref:System.Speech.Recognition.GrammarBuilder> objects.  
+  
+ Because the <xref:System.Speech.Recognition.GrammarBuilder> object supports implicit conversion from <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey>, a <xref:System.Speech.Recognition.Choices> can be constructed from an array of these objects using a cast.  
+  
+   
+  
+## Examples  
+ The following example uses <xref:System.Speech.Recognition.Choices> objects to create two lists of alternatives.  
+  
+ The first <xref:System.Speech.Recognition.Choices> object is constructed from an array of <xref:System.String> objects. The other <xref:System.Speech.Recognition.Choices> object is constructed from an array of <xref:System.Speech.Recognition.GrammarBuilder> objects which have been implicitly converted by a cast.  
+  
+ The example uses a <xref:System.Speech.Recognition.GrammarBuilder> object to assemble a phrase, using the <xref:System.Speech.Recognition.Choices> objects and two additional strings, that can be used to recognize speech input in the form of "Call [contactlList] on [phoneType] phone" , for example "Call Jane on cell phone".  
+  
+```  
+public GrammarBuilder ChoicesContructor2 ()  
+{  
+    GrammarBuilder gb = new GrammarBuilder ();  
+    Choices phoneType = new Choices (new string[] {"cell", "home", "work"});  
+    Choices contactList = new Choices (new GrammarBuilder[] {(GrammarBuilder) "Mark", (GrammarBuilder) "Jane", (GrammarBuilder) "Frank"});  
+    gb.Append ("Call");  
+    gb.Append (contactList);  
+    gb.Append ("on");  
+    gb.Append (phoneType);  
+    gb.Append ("phone");  
+    return gb;  
+}  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Choices ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -472,48 +515,5 @@ private Grammar CreateColorChoice()
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.Choices" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can construct a <xref:System.Speech.Recognition.Choices> object using a default constructor (which returns an empty object), from a group of <xref:System.String> objects, or a from set of <xref:System.Speech.Recognition.GrammarBuilder> objects.  
-  
- Because the <xref:System.Speech.Recognition.GrammarBuilder> object supports implicit conversion from <xref:System.Speech.Recognition.SemanticResultValue> and <xref:System.Speech.Recognition.SemanticResultKey>, a <xref:System.Speech.Recognition.Choices> can be constructed from an array of these objects using a cast.  
-  
-   
-  
-## Examples  
- The following example uses <xref:System.Speech.Recognition.Choices> objects to create two lists of alternatives.  
-  
- The first <xref:System.Speech.Recognition.Choices> object is constructed from an array of <xref:System.String> objects. The other <xref:System.Speech.Recognition.Choices> object is constructed from an array of <xref:System.Speech.Recognition.GrammarBuilder> objects which have been implicitly converted by a cast.  
-  
- The example uses a <xref:System.Speech.Recognition.GrammarBuilder> object to assemble a phrase, using the <xref:System.Speech.Recognition.Choices> objects and two additional strings, that can be used to recognize speech input in the form of "Call [contactlList] on [phoneType] phone" , for example "Call Jane on cell phone".  
-  
-```  
-public GrammarBuilder ChoicesContructor2 ()  
-{  
-    GrammarBuilder gb = new GrammarBuilder ();  
-    Choices phoneType = new Choices (new string[] {"cell", "home", "work"});  
-    Choices contactList = new Choices (new GrammarBuilder[] {(GrammarBuilder) "Mark", (GrammarBuilder) "Jane", (GrammarBuilder) "Frank"});  
-    gb.Append ("Call");  
-    gb.Append (contactList);  
-    gb.Append ("on");  
-    gb.Append (phoneType);  
-    gb.Append ("phone");  
-    return gb;  
-}  
-```  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

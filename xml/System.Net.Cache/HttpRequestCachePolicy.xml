@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Requests</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Net.Cache.RequestCachePolicy</BaseTypeName>
   </Base>
@@ -53,6 +57,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Cache.HttpRequestCachePolicy" /> class.</summary>
@@ -60,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel>.  
+ This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel.Default>.  
   
    
   
@@ -88,6 +96,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="cacheSyncDate" Type="System.DateTime" />
       </Parameters>
@@ -100,7 +112,7 @@
 ## Remarks  
  The cache synchronization date allows you to specify an absolute date when cached contents must be revalidated. If the cache entry was last revalidated prior to the cache synchronization date, revalidation with the server occurs. If the cache entry was revalidated after the cache synchronization date and there are no server revalidation requirements that make the cached entry invalid, the entry from the cache is used. If the cache synchronization date is set to a future date, the entry is revalidated every time it is requested, until the cache synchronization date passes.  
   
- This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel>. The <xref:System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate%2A> property is initialized to `cacheSyncDate`.  
+ This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel.Default>. The <xref:System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate%2A> property is initialized to `cacheSyncDate`.  
   
    
   
@@ -127,6 +139,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="level" Type="System.Net.Cache.HttpRequestCacheLevel" />
@@ -168,21 +184,25 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="cacheAgeControl" Type="System.Net.Cache.HttpCacheAgeControl" />
         <Parameter Name="ageOrFreshOrStale" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
         <param name="cacheAgeControl">One of the following <see cref="T:System.Net.Cache.HttpCacheAgeControl" /> enumeration values: <see cref="F:System.Net.Cache.HttpCacheAgeControl.MaxAge" />, <see cref="F:System.Net.Cache.HttpCacheAgeControl.MaxStale" />, or <see cref="F:System.Net.Cache.HttpCacheAgeControl.MinFresh" />.</param>
-        <param name="ageOrFreshOrStale">A <see cref="T:System.TimeSpan" /> value that specifies an amount of time. See the Remarks section for more information.</param>
+        <param name="ageOrFreshOrStale">A <see cref="T:System.TimeSpan" /> value that specifies an amount of time.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Cache.HttpRequestCachePolicy" /> class using the specified age control and time values.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `cacheAgeControl` value defines the meaning of the `ageOrFreshOrStale` parameter value and is used to set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `ageOrFreshOrStale` parameter.  
+ The `cacheAgeControl` value defines the meaning of the `ageOrFreshOrStale` parameter value and is used to set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxStale>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `ageOrFreshOrStale` parameter.  
   
- This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel>.  
+ This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel.Default>.  
   
    
   
@@ -211,6 +231,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="cacheAgeControl" Type="System.Net.Cache.HttpCacheAgeControl" />
         <Parameter Name="maxAge" Type="System.TimeSpan" />
@@ -219,17 +243,17 @@
       <Docs>
         <param name="cacheAgeControl">An <see cref="T:System.Net.Cache.HttpCacheAgeControl" /> value.</param>
         <param name="maxAge">A <see cref="T:System.TimeSpan" /> value that specifies the maximum age for resources.</param>
-        <param name="freshOrStale">A <see cref="T:System.TimeSpan" /> value that specifies an amount of time. See the Remarks section for more information.</param>
+        <param name="freshOrStale">A <see cref="T:System.TimeSpan" /> value that specifies an amount of time.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Cache.HttpRequestCachePolicy" /> class using the specified maximum age, age control value, and time value.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `cacheAgeControl` value is used to interpret the meaning of the `freshOrStale` parameter value and set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `freshOrStale` parameter. When you specify <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is set using the value of the `maxAge` parameter and the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set using the value of the `freshOrStale` parameter.  
+ The `cacheAgeControl` value is used to interpret the meaning of the `freshOrStale` parameter value and set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxStale>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `freshOrStale` parameter. When you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is set using the value of the `maxAge` parameter and the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set using the value of the `freshOrStale` parameter.  
   
- Note that unless you specify <xref:System.Net.Cache.HttpCacheAgeControl> or <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is not set.  
+ Note that unless you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale> or <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is not set.  
   
- This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel>.  
+ This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel.Default>.  
   
    
   
@@ -258,6 +282,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="cacheAgeControl" Type="System.Net.Cache.HttpCacheAgeControl" />
         <Parameter Name="maxAge" Type="System.TimeSpan" />
@@ -267,18 +295,18 @@
       <Docs>
         <param name="cacheAgeControl">An <see cref="T:System.Net.Cache.HttpCacheAgeControl" /> value.</param>
         <param name="maxAge">A <see cref="T:System.TimeSpan" /> value that specifies the maximum age for resources.</param>
-        <param name="freshOrStale">A <see cref="T:System.TimeSpan" /> value that specifies an amount of time. See the Remarks section for more information.</param>
+        <param name="freshOrStale">A <see cref="T:System.TimeSpan" /> value that specifies an amount of time.</param>
         <param name="cacheSyncDate">A <see cref="T:System.DateTime" /> object that specifies the time when resources stored in the cache must be revalidated.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Cache.HttpRequestCachePolicy" /> class using the specified maximum age, age control value, time value, and cache synchronization date.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `cacheAgeControl` value is used to interpret the meaning of the `freshOrStale` parameter value and set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `freshOrStale` parameter. When you specify <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is set using the value of the `maxAge` parameter and the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set using the value of the `freshOrStale` parameter.  
+ The `cacheAgeControl` value is used to interpret the meaning of the `freshOrStale` parameter value and set the associated property. For example, when you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxStale>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set to the value of the `freshOrStale` parameter. When you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is set using the value of the `maxAge` parameter and the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxStale%2A> property is set using the value of the `freshOrStale` parameter.  
   
- Note that unless you specify <xref:System.Net.Cache.HttpCacheAgeControl> or <xref:System.Net.Cache.HttpCacheAgeControl>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is not set.  
+ Note that unless you specify <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMaxStale> or <xref:System.Net.Cache.HttpCacheAgeControl.MaxAgeAndMinFresh>, the <xref:System.Net.Cache.HttpRequestCachePolicy.MaxAge%2A> property is not set.  
   
- This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate%2A> property to `cacheSyncDate`, and initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel>.  
+ This constructor initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate%2A> property to `cacheSyncDate`, and initializes the <xref:System.Net.Cache.HttpRequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.HttpRequestCacheLevel.Default>.  
   
    
   
@@ -305,6 +333,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -344,6 +376,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.HttpRequestCacheLevel</ReturnType>
       </ReturnValue>
@@ -354,7 +390,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Applications typically use <xref:System.Net.Cache.HttpRequestCacheLevel> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request. The default policy for the application domain can be set using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or by settings in the machine or application configuration files. For more information, see [\&lt;requestCaching\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
+ Applications typically use <xref:System.Net.Cache.HttpRequestCacheLevel.Default> as their cache policy level. The <xref:System.Net.WebRequest.CachePolicy%2A> property, if not `null`, determines the cache policy in effect for a request. The default policy for the application domain can be set using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> property or by settings in the machine or application configuration files. For more information, see [\&lt;requestCaching\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   
    
   
@@ -381,6 +417,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
@@ -420,6 +460,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -458,6 +502,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TimeSpan</ReturnType>
       </ReturnValue>
@@ -495,6 +543,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>

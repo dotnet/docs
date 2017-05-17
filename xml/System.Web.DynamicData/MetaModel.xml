@@ -349,6 +349,43 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetTable">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <exception cref="T:System.ArgumentNullException">The table was not found.</exception>
+        <summary>Returns the metadata that describes a data model table.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Web.DynamicData.MetaTable> object that is returned by the overloaded methods contains the metadata information that is associated with the specified table.  
+  
+ [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=GetTable.aspx) an online example of this feature.  
+  
+   
+  
+## Examples  
+ The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetTable%2A> overloaded methods to perform the following tasks:  
+  
+-   Get the <xref:System.Web.DynamicData.MetaTable> object for the specified table.  
+  
+-   Access the metadata information that is contained by the <xref:System.Web.DynamicData.MetaTable> object.  
+  
+ The example consists of a page and its code-behind file.  
+  
+ <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx#3)] -->
+ <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/GetTable.aspx#3)] --> 
+  
+ [!code-csharp[System.Web.DynamicData.MetaModel#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#4)]
+ [!code-vb[System.Web.DynamicData.MetaModel#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#4)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetTable">
       <MemberSignature Language="C#" Value="public System.Web.DynamicData.MetaTable GetTable (string uniqueTableName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Web.DynamicData.MetaTable GetTable(string uniqueTableName) cil managed" />
@@ -457,6 +494,23 @@
         <exception cref="T:System.ArgumentException">The context is not registered or the table does not exist in the data context.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RegisterContext">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.DynamicData</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Registers the data context.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ You can define data-context initialization information by using the properties of the <xref:System.Web.DynamicData.ContextConfiguration> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RegisterContext">
       <MemberSignature Language="C#" Value="public void RegisterContext (Func&lt;object&gt; contextFactory);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RegisterContext(class System.Func`1&lt;object&gt; contextFactory) cil managed" />
@@ -794,59 +848,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetTable">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <exception cref="T:System.ArgumentNullException">The table was not found.</exception>
-        <summary>Returns the metadata that describes a data model table.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Web.DynamicData.MetaTable> object that is returned by the overloaded methods contains the metadata information that is associated with the specified table.  
-  
- [Run](http://go.microsoft.com/fwlink/?LinkId=120736&sref=System.Web.DynamicData.MetaModel&spage=GetTable.aspx) an online example of this feature.  
-  
-   
-  
-## Examples  
- The following example shows how to use the <xref:System.Web.DynamicData.MetaModel.GetTable%2A> overloaded methods to perform the following tasks:  
-  
--   Get the <xref:System.Web.DynamicData.MetaTable> object for the specified table.  
-  
--   Access the metadata information that is contained by the <xref:System.Web.DynamicData.MetaTable> object.  
-  
- The example consists of a page and its code-behind file.  
-  
- <!-- TODO: review snippet reference [!code-csharp[System.Web.DynamicData.MetaModel#3](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx#3)] -->
- <!-- TODO: review snippet reference [!code-vb[System.Web.DynamicData.MetaModel#3](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/GetTable.aspx#3)] --> 
-  
- [!code-csharp[System.Web.DynamicData.MetaModel#4](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/CS/GetTable.aspx.cs#4)]
- [!code-vb[System.Web.DynamicData.MetaModel#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.DynamicData.MetaModel/VB/gettable.aspx.vb#4)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="RegisterContext">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.DynamicData</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Registers the data context.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- You can define data-context initialization information by using the properties of the <xref:System.Web.DynamicData.ContextConfiguration> class.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

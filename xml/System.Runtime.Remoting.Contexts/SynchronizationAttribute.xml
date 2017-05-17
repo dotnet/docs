@@ -116,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `flag` parameter must be either <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED>, or <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW>.  
+ The `flag` parameter must be either <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.NOT_SUPPORTED>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED>, or <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW>.  
   
  ]]></format>
         </remarks>
@@ -146,7 +146,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `flag` parameter must be either <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED>, or <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW>.  
+ The `flag` parameter must be either <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.NOT_SUPPORTED>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.SUPPORTED>, <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRED>, or <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute.REQUIRES_NEW>.  
   
  ]]></format>
         </remarks>

@@ -81,7 +81,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The position of the <xref:System.Windows.Controls.ToolBar> in a <xref:System.Windows.Controls.ToolBarTray> depends on the values of the <xref:System.Windows.Controls.ToolBarTray.Orientation%2A?displayProperty=fullName>, <xref:System.Windows.Controls.ToolBar.Band%2A>, and <xref:System.Windows.Controls.ToolBar.BandIndex%2A> properties. When <xref:System.Windows.Controls.ToolBarTray.Orientation%2A> is set to <xref:System.Windows.Controls.Orientation>, a band represents a row in the <xref:System.Windows.Controls.ToolBarTray>. When <xref:System.Windows.Controls.ToolBarTray.Orientation%2A> is <xref:System.Windows.Controls.Orientation>, a band represents a column of the <xref:System.Windows.Controls.ToolBarTray>. The following table describes the relationship between <xref:System.Windows.Controls.ToolBarTray.Orientation%2A>, <xref:System.Windows.Controls.ToolBar.Band%2A>, and <xref:System.Windows.Controls.ToolBar.BandIndex%2A>.  
+ The position of the <xref:System.Windows.Controls.ToolBar> in a <xref:System.Windows.Controls.ToolBarTray> depends on the values of the <xref:System.Windows.Controls.ToolBarTray.Orientation%2A?displayProperty=fullName>, <xref:System.Windows.Controls.ToolBar.Band%2A>, and <xref:System.Windows.Controls.ToolBar.BandIndex%2A> properties. When <xref:System.Windows.Controls.ToolBarTray.Orientation%2A> is set to <xref:System.Windows.Controls.Orientation.Horizontal>, a band represents a row in the <xref:System.Windows.Controls.ToolBarTray>. When <xref:System.Windows.Controls.ToolBarTray.Orientation%2A> is <xref:System.Windows.Controls.Orientation.Vertical>, a band represents a column of the <xref:System.Windows.Controls.ToolBarTray>. The following table describes the relationship between <xref:System.Windows.Controls.ToolBarTray.Orientation%2A>, <xref:System.Windows.Controls.ToolBar.Band%2A>, and <xref:System.Windows.Controls.ToolBar.BandIndex%2A>.  
   
 |Orientation|Band|BandIndex|  
 |-----------------|----------|---------------|  
@@ -128,7 +128,7 @@
 ## Remarks  
  If you do not explicitly set this property, its value is determined by the order in which the <xref:System.Windows.Controls.ToolBar> is set in the <xref:System.Windows.Controls.ToolBarTray>. For example, if you put two toolbars in a <xref:System.Windows.Controls.ToolBarTray> without setting the <xref:System.Windows.Controls.ToolBar.Band%2A> and <xref:System.Windows.Controls.ToolBar.BandIndex%2A> properties, the value of <xref:System.Windows.Controls.ToolBar.Band%2A> will be 0 for both toolbars. The value of <xref:System.Windows.Controls.ToolBar.BandIndex%2A> will be 0 for the first toolbar and 1 for the second toolbar.  
   
- The position of the <xref:System.Windows.Controls.ToolBar> in a <xref:System.Windows.Controls.ToolBarTray> depends on the values of the <xref:System.Windows.Controls.ToolBarTray.Orientation%2A?displayProperty=fullName>, <xref:System.Windows.Controls.ToolBar.Band%2A>, and <xref:System.Windows.Controls.ToolBar.BandIndex%2A> properties. When <xref:System.Windows.Controls.ToolBarTray.Orientation%2A> is set to <xref:System.Windows.Controls.Orientation>, a band represents a row in the <xref:System.Windows.Controls.ToolBarTray>. When <xref:System.Windows.Controls.ToolBarTray.Orientation%2A> is <xref:System.Windows.Controls.Orientation>, a band represents a column of the <xref:System.Windows.Controls.ToolBarTray>. The following table describes the relationship between <xref:System.Windows.Controls.ToolBarTray.Orientation%2A>, <xref:System.Windows.Controls.ToolBar.Band%2A>, and <xref:System.Windows.Controls.ToolBar.BandIndex%2A>.  
+ The position of the <xref:System.Windows.Controls.ToolBar> in a <xref:System.Windows.Controls.ToolBarTray> depends on the values of the <xref:System.Windows.Controls.ToolBarTray.Orientation%2A?displayProperty=fullName>, <xref:System.Windows.Controls.ToolBar.Band%2A>, and <xref:System.Windows.Controls.ToolBar.BandIndex%2A> properties. When <xref:System.Windows.Controls.ToolBarTray.Orientation%2A> is set to <xref:System.Windows.Controls.Orientation.Horizontal>, a band represents a row in the <xref:System.Windows.Controls.ToolBarTray>. When <xref:System.Windows.Controls.ToolBarTray.Orientation%2A> is <xref:System.Windows.Controls.Orientation.Vertical>, a band represents a column of the <xref:System.Windows.Controls.ToolBarTray>. The following table describes the relationship between <xref:System.Windows.Controls.ToolBarTray.Orientation%2A>, <xref:System.Windows.Controls.ToolBar.Band%2A>, and <xref:System.Windows.Controls.ToolBar.BandIndex%2A>.  
   
 |Orientation|Band|BandIndex|  
 |-----------------|----------|---------------|  
@@ -453,7 +453,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ToolBar>|  
+|Identifier field|<xref:System.Windows.Controls.ToolBar.IsOverflowOpenProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
  ]]></format>

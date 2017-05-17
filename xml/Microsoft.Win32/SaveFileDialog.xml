@@ -108,7 +108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The file stream that is returned is opened with read-write access (<xref:System.IO.FileMode> and <xref:System.IO.FileAccess>).  
+ The file stream that is returned is opened with read-write access (<xref:System.IO.FileMode.Create> and <xref:System.IO.FileAccess.ReadWrite>).  
   
  ]]></format>
         </remarks>

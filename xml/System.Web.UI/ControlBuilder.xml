@@ -25,15 +25,11 @@
 ## Examples  
  The following code example creates a <xref:System.Web.UI.WebControls.Table> control whose attributes and content are defined at the time the table is built. The following is the command line to use to build the executable.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 vbc /r:System.dll /r:System.Web.dll /r:System.Drawing.dll /t:library /out:myWebAppPath/Bin/vb_mycontrolbuilder.dll myControlBuilder.vb  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 csc /t:library /out:myWebAppPath/Bin/cs_mycontrolbuilder.dll myControlBuilder.cs  
 ```  
   

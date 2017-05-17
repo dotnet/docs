@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -29,7 +33,7 @@
   
  <xref:System.ComponentModel.Design.ViewTechnology> defines identifiers that can indicate the mode to use for controlling the display of a designer-hosted document.  
   
- You should only use the Default value in your designer hosting environment. In previous versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the <xref:System.ComponentModel.Design.ViewTechnology> enumeration specified the type of UI model supported by a root designer. Because this model is not extensible, you should instead use a *view adapter* model. A view adapter is a type that adapts an object of one type to another.  
+ You should only use the Default value in your designer hosting environment. In previous versions of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], the <xref:System.ComponentModel.Design.ViewTechnology.Default> enumeration specified the type of UI model supported by a root designer. Because this model is not extensible, you should instead use a *view adapter* model. A view adapter is a type that adapts an object of one type to another.  
   
  For example, an HTML designer might return a `DemoDOM` tree as its view. The HTML designer returns a view technology of Default. A Windows Forms hosting environment would have one or more view adapter classes available. If one such class could convert the `DemoDOM` into a Windows Forms control, the hosting application can support this type of designer. If no adapter can handle the data type returned from the designer’s <xref:System.ComponentModel.Design.IRootDesigner.GetView%2A> method, the load of the designer will fail, and the user will be presented with an error.  
   
@@ -40,7 +44,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to use the <xref:System.ComponentModel.Design.ViewTechnology> class in a designer. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.IRootDesigner> interface.  
+ The following code example demonstrates how to use the <xref:System.ComponentModel.Design.ViewTechnology.Default> class in a designer. This code example is part of a larger example provided for the <xref:System.ComponentModel.Design.IRootDesigner.GetView%2A> interface.  
   
  [!code-cpp[IRootDesigner Sample#1](~/samples/snippets/cpp/VS_Snippets_Winforms/IRootDesigner Sample/CPP/class1.cpp#1)]
  [!code-csharp[IRootDesigner Sample#1](~/samples/snippets/csharp/VS_Snippets_Winforms/IRootDesigner Sample/CS/class1.cs#1)]
@@ -63,6 +67,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.ViewTechnology</ReturnType>
@@ -102,6 +110,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("This value has been deprecated. Use ViewTechnology.Default instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
@@ -135,6 +147,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.TypeConverter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

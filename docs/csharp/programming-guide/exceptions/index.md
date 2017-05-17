@@ -93,7 +93,7 @@ The C# language's exception handling features help you deal with any unexpected 
  [try-catch](../../../csharp/language-reference/keywords/try-catch.md)   
  [try-finally](../../../csharp/language-reference/keywords/try-finally.md)   
  [try-catch-finally](../../../csharp/language-reference/keywords/try-catch-finally.md)   
- [Exceptions](http://msdn.microsoft.com/library/f99a1d29-a2a8-47af-9707-9909f9010735)   
+ [Exceptions](../../../standard/exceptions/index.md)   
  [Exception Hierarchy](http://msdn.microsoft.com/library/f7d68675-be06-40fb-a555-05f0c5a6f66b)   
  [Writing Reliable .NET Code](http://go.microsoft.com/fwlink/?LinkId=112400)   
  [Minidumps for Specific Exceptions](http://go.microsoft.com/fwlink/?LinkId=112408)

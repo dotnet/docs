@@ -174,7 +174,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader>|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.CanGoToNextPageProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -254,7 +254,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader>|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.CanGoToPreviousPageProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -383,7 +383,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader>|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.DocumentProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -572,7 +572,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader>|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.IsInactiveSelectionHighlightEnabledProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -790,7 +790,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader>|  
+|Identifier field|<xref:System.Windows.Controls.FlowDocumentReader.IsSelectionActiveProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -1376,7 +1376,7 @@
 ## Remarks  
  Flow content does not have any inherent notion of a fixed number of pages; the contents of a <xref:System.Windows.Documents.FlowDocument> are dynamically organized into a set of display pages, the number of which is based on current display and layout characteristics.  For example, resizing a <xref:System.Windows.Controls.FlowDocumentReader> or changing the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level affects the number of display pages that the content is organized into.  
   
- When the <xref:System.Windows.Controls.FlowDocumentReader> is in the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> viewing mode, the page count and the current page number are always 1 (assuming any content has been loaded).  
+ When the <xref:System.Windows.Controls.FlowDocumentReader> is in the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode.Scroll> viewing mode, the page count and the current page number are always 1 (assuming any content has been loaded).  
   
 <a name="dependencyPropertyInfo_PageCount"></a>   
 ## Dependency Property Information  
@@ -1428,7 +1428,7 @@
 ## Remarks  
  Flow content does not have any inherent notion of a fixed number of pages; the contents of a <xref:System.Windows.Documents.FlowDocument> are dynamically organized into a set of display pages, the number of which is based on current display and layout characteristics.  For example, resizing a <xref:System.Windows.Controls.FlowDocumentReader> or changing the <xref:System.Windows.Controls.FlowDocumentReader.Zoom%2A> level affects the number of display pages that the content is organized into.  
   
- When the <xref:System.Windows.Controls.FlowDocumentReader> is in the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode> viewing mode, the page count and the current page number are always 1 (assuming any content has been loaded).  
+ When the <xref:System.Windows.Controls.FlowDocumentReader> is in the <xref:System.Windows.Controls.FlowDocumentReaderViewingMode.Scroll> viewing mode, the page count and the current page number are always 1 (assuming any content has been loaded).  
   
 <a name="dependencyPropertyInfo_PageNumber"></a>   
 ## Dependency Property Information  
@@ -1550,7 +1550,6 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.FlowDocumentReader>, sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionBrush%2A> property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionOpacity%2A> property to 0.7.  
   
- <!-- TODO: review snippet reference [!code-xml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/xaml/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/xaml/window1.xaml#selectionbrush)]  -->
  [!code-xml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/CS/window1.xaml#selectionbrush)]  
   
  ]]></format>
@@ -1600,7 +1599,6 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.FlowDocumentReader>, sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionBrush%2A> property to pink, and sets the <xref:System.Windows.Controls.FlowDocumentReader.SelectionOpacity%2A> property to 0.7.  
   
- <!-- TODO: review snippet reference [!code-xml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/xaml/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/xaml/window1.xaml#selectionbrush)]  -->
  [!code-xml[FlowDocReaderSelBrushSnippet#SelectionBrush](~/samples/snippets/csharp/VS_Snippets_Wpf/flowdocreaderselbrushsnippet/CS/window1.xaml#selectionbrush)]  
   
  ]]></format>

@@ -304,7 +304,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Windows.Forms.StatusStrip.Dock%2A> property to define how a <xref:System.Windows.Forms.StatusStrip> is automatically resized as its parent control is resized. For example, setting <xref:System.Windows.Forms.StatusStrip.Dock%2A> to <xref:System.Windows.Forms.DockStyle> causes the <xref:System.Windows.Forms.StatusStrip> to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their Z-order, which is the visual layering of controls on a form along the form's Z-axis (depth).  
+ Use the <xref:System.Windows.Forms.StatusStrip.Dock%2A> property to define how a <xref:System.Windows.Forms.StatusStrip> is automatically resized as its parent control is resized. For example, setting <xref:System.Windows.Forms.StatusStrip.Dock%2A> to <xref:System.Windows.Forms.DockStyle.Left> causes the <xref:System.Windows.Forms.StatusStrip> to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their Z-order, which is the visual layering of controls on a form along the form's Z-axis (depth).  
   
  A control can be docked to one edge of its parent container or can be docked to all edges and fill the parent container.  
   
@@ -344,7 +344,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Even with the <xref:System.Windows.Forms.StatusStrip.SizingGrip%2A> property set to `true` and the <xref:System.Windows.Forms.StatusStrip.GripStyle%2A> property set to `Visible`, the sizing grip will not be displayed unless you also set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to one of the overflow values. If the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle> or <xref:System.Windows.Forms.ToolStripLayoutStyle>, the sizing grip will not be displayed.  
+ Even with the <xref:System.Windows.Forms.StatusStrip.SizingGrip%2A> property set to `true` and the <xref:System.Windows.Forms.StatusStrip.GripStyle%2A> property set to `Visible`, the sizing grip will not be displayed unless you also set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to one of the overflow values. If the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> or <xref:System.Windows.Forms.ToolStripLayoutStyle.Table>, the sizing grip will not be displayed.  
   
    
   
@@ -469,7 +469,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Override <xref:System.Windows.Forms.StatusStrip.OnSpringTableLayoutCore%2A> to do custom table layouts. The default value of <xref:System.Windows.Forms.ToolStripLayoutStyle> is <xref:System.Windows.Forms.ToolStripLayoutStyle>.  
+ Override <xref:System.Windows.Forms.StatusStrip.OnSpringTableLayoutCore%2A> to do custom table layouts. The default value of <xref:System.Windows.Forms.ToolStripLayoutStyle> is <xref:System.Windows.Forms.ToolStripLayoutStyle.Table>.  
   
  ]]></format>
         </remarks>
@@ -641,7 +641,7 @@
 ## Remarks  
  You can use the <xref:System.Windows.Forms.StatusStrip.SizingGrip%2A> property to display a grip to provide an indication to the user of when a <xref:System.Windows.Forms.StatusStrip> is resizable.  
   
- Even with the <xref:System.Windows.Forms.StatusStrip.SizingGrip%2A> property set to `true` and the <xref:System.Windows.Forms.StatusStrip.GripStyle%2A> property set to `Visible`, the sizing grip will not be displayed unless you also set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to one of the overflow values. If the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle> or <xref:System.Windows.Forms.ToolStripLayoutStyle>, the sizing grip will not be displayed.  
+ Even with the <xref:System.Windows.Forms.StatusStrip.SizingGrip%2A> property set to `true` and the <xref:System.Windows.Forms.StatusStrip.GripStyle%2A> property set to `Visible`, the sizing grip will not be displayed unless you also set the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property to one of the overflow values. If the <xref:System.Windows.Forms.ToolStrip.LayoutStyle%2A> property is set to <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> or <xref:System.Windows.Forms.ToolStripLayoutStyle.Table>, the sizing grip will not be displayed.  
   
    
   

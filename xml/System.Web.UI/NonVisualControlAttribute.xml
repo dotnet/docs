@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A default instance of the <xref:System.Web.UI.NonVisualControlAttribute> class is equivalent to the <xref:System.Web.UI.NonVisualControlAttribute> field, or passing `true` to the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor.  
+ A default instance of the <xref:System.Web.UI.NonVisualControlAttribute> class is equivalent to the <xref:System.Web.UI.NonVisualControlAttribute.NonVisual> field, or passing `true` to the <xref:System.Web.UI.NonVisualControlAttribute.%23ctor%28System.Boolean%29?displayProperty=fullName> constructor.  
   
    
   
@@ -87,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Passing `true` to this constructor is equivalent to using the <xref:System.Web.UI.NonVisualControlAttribute> field, and passing `false` is equivalent to using the <xref:System.Web.UI.NonVisualControlAttribute> field.  
+ Passing `true` to this constructor is equivalent to using the <xref:System.Web.UI.NonVisualControlAttribute.NonVisual> field, and passing `false` is equivalent to using the <xref:System.Web.UI.NonVisualControlAttribute.Visual> field.  
   
    
   
@@ -119,7 +119,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A default instance of the <xref:System.Web.UI.NonVisualControlAttribute> class is equivalent to the <xref:System.Web.UI.NonVisualControlAttribute> field.  
+ A default instance of the <xref:System.Web.UI.NonVisualControlAttribute> class is equivalent to the <xref:System.Web.UI.NonVisualControlAttribute.Visual> field.  
   
  ]]></format>
         </remarks>

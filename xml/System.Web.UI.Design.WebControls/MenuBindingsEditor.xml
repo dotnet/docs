@@ -115,7 +115,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor.GetEditStyle%2A> method always returns the <xref:System.Drawing.Design.UITypeEditorEditStyle> value, which indicates that the editor user interface (UI) is a modal dialog box.  
+ The <xref:System.Web.UI.Design.WebControls.MenuBindingsEditor.GetEditStyle%2A> method always returns the <xref:System.Drawing.Design.UITypeEditorEditStyle.Modal> value, which indicates that the editor user interface (UI) is a modal dialog box.  
   
  ]]></format>
         </remarks>

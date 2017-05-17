@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Interfaces>
     <Interface>
       <InterfaceName>System.Data.IDataAdapter</InterfaceName>
@@ -43,48 +47,27 @@
   
  When you inherit from the <see cref="T:System.Data.IDbDataAdapter" /> interface, you should implement the following constructors:  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> PrvDataAdapter()  
+ </description></listheader><item><term> PrvDataAdapter()  
   
- </term>  
-<description> Initializes a new instance of the PrvDataAdapter class.  
+ </term><description> Initializes a new instance of the PrvDataAdapter class.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvDataAdapter(PrvCommand selectCommand)  
+ </description></item><item><term> PrvDataAdapter(PrvCommand selectCommand)  
   
- </term>  
-<description> Initializes a new instance of the PrvDataAdapter class with the specified SQL SELECT statement.  
+ </term><description> Initializes a new instance of the PrvDataAdapter class with the specified SQL SELECT statement.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvDataAdapter(string selectCommandText, string selectConnectionString)  
+ </description></item><item><term> PrvDataAdapter(string selectCommandText, string selectConnectionString)  
   
- </term>  
-<description> Initializes a new instance of the PrvDataAdapter class with an SQL SELECT statement and a connection string.  
+ </term><description> Initializes a new instance of the PrvDataAdapter class with an SQL SELECT statement and a connection string.  
   
- </description>  
-</item>  
-<item>  
-<term> PrvDataAdapter(string selectCommandText, PrvConnection selectConnection)  
+ </description></item><item><term> PrvDataAdapter(string selectCommandText, PrvConnection selectConnection)  
   
- </term>  
-<description> Initializes a new instance of the PrvDataAdapter class with an SQL SELECT statement and a PrvConnection object.  
+ </term><description> Initializes a new instance of the PrvDataAdapter class with an SQL SELECT statement and a PrvConnection object.  
   
- </description>  
-</item>  
-</list></para>
+ </description></item></list></para>
     </block>
   </Docs>
   <Members>
@@ -101,6 +84,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
@@ -141,6 +128,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
@@ -185,6 +176,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
@@ -224,6 +219,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>

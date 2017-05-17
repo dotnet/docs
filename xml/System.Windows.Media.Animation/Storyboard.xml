@@ -54,6 +54,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Begin">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates the set of animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Begin">
       <MemberSignature Language="C#" Value="public void Begin ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Begin() cil managed" />
@@ -94,7 +111,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior> handoff behavior.  
+ If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> handoff behavior.  
   
  Storyboards started with this method cannot be paused, resumed, or otherwise interactively controlled after they are started. To make a storyboard controllable, use the <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> or <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method.  
   
@@ -134,7 +151,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior> handoff behavior.  
+ If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> handoff behavior.  
   
  Storyboards started with this method cannot be paused, resumed, or otherwise interactively controlled after they are started. To make a storyboard controllable, use the <xref:System.Windows.Media.Animation.Storyboard.Begin%28System.Windows.FrameworkElement%2CSystem.Boolean%29> or <xref:System.Windows.Media.Animation.Storyboard.Begin%28System.Windows.FrameworkElement%2CSystem.Windows.Media.Animation.HandoffBehavior%2CSystem.Boolean%29> method.  
   
@@ -169,7 +186,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior> handoff behavior.  
+ If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> handoff behavior.  
   
  To interactively control this storyboard, you must specify the same `containingObject` when calling the interactive methods that you used to begin the storyboard  
   
@@ -213,9 +230,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
+ When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
   
- To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
+ To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
   
 -   To remove all clocks from a property, use the <xref:System.Windows.Media.Animation.Animatable.ApplyAnimationClock%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationClock%29> or <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationTimeline%29> method of the animated object. Specify the property being animated as the first parameter, and `null` as the second. This removes all animation clocks from the property.  
   
@@ -228,7 +245,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior> to animate when the user left-clicks, and the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior> when the user right-clicks.  
+ The following example uses the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> <xref:System.Windows.Media.Animation.HandoffBehavior> to animate when the user left-clicks, and the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior> when the user right-clicks.  
   
  [!code-csharp[StoryboardBeginAnimation_procedural_snip#FrameworkContentElementStoryboardWithHandoffBehaviorExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/CSharp/FrameworkContentElementStoryboardWithHandoffBehaviorExample.cs#frameworkcontentelementstoryboardwithhandoffbehaviorexamplewholepage)]
  [!code-vb[StoryboardBeginAnimation_procedural_snip#FrameworkContentElementStoryboardWithHandoffBehaviorExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/visualbasic/frameworkcontentelementstoryboardwithhandoffbehaviorexample.vb#frameworkcontentelementstoryboardwithhandoffbehaviorexamplewholepage)]  
@@ -262,7 +279,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior> handoff behavior.  
+ If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> handoff behavior.  
   
  To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard  
   
@@ -298,7 +315,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior> handoff behavior.  
+ If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> handoff behavior.  
   
  When this method is called, <xref:System.Windows.Media.Animation.Clock> objects are created for the storyboard and any timelines it contains. These clocks are stored with `containingObject`.  
   
@@ -332,7 +349,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example uses the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior> to animate when the user left-clicks, and the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior> when the user right-clicks.  
+ The following example uses the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> <xref:System.Windows.Media.Animation.HandoffBehavior> to animate when the user left-clicks, and the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior> when the user right-clicks.  
   
  [!code-csharp[StoryboardBeginAnimation_procedural_snip#GraphicsMMFrameworkElementStoryboardHandoffBehaviorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/CSharp/FrameworkElementStoryboardHandoffBehaviorExample.cs#graphicsmmframeworkelementstoryboardhandoffbehaviorexample)]
  [!code-vb[StoryboardBeginAnimation_procedural_snip#GraphicsMMFrameworkElementStoryboardHandoffBehaviorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/visualbasic/frameworkelementstoryboardhandoffbehaviorexample.vb#graphicsmmframeworkelementstoryboardhandoffbehaviorexample)]  
@@ -376,9 +393,9 @@
  Beginning a storyboard triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> events.  
   
 ## Using the Compose HandoffBehavior  
- When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
+ When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
   
- To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
+ To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
   
 -   To remove all clocks from a property, use the <xref:System.Windows.Media.Animation.Animatable.ApplyAnimationClock%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationClock%29> or <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationTimeline%29> method of the animated object. Specify the property being animated as the first parameter, and `null` as the second. This removes all animation clocks from the property.  
   
@@ -396,7 +413,7 @@
  [!code-csharp[StoryboardBeginAnimation_procedural_snip#FrameworkContentElementControlStoryboardExampleUsingWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/CSharp/FrameworkContentElementControlStoryboardExample.cs#frameworkcontentelementcontrolstoryboardexampleusingwholepage)]
  [!code-vb[StoryboardBeginAnimation_procedural_snip#FrameworkContentElementControlStoryboardExampleUsingWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/visualbasic/frameworkcontentelementcontrolstoryboardexample.vb#frameworkcontentelementcontrolstoryboardexampleusingwholepage)]  
   
- The next example uses the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior> to animate when the user left-clicks, and the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior> when the user right-clicks.  
+ The next example uses the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> <xref:System.Windows.Media.Animation.HandoffBehavior> to animate when the user left-clicks, and the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior> when the user right-clicks.  
   
  [!code-csharp[StoryboardBeginAnimation_procedural_snip#FrameworkContentElementStoryboardWithHandoffBehaviorExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/CSharp/FrameworkContentElementStoryboardWithHandoffBehaviorExample.cs#frameworkcontentelementstoryboardwithhandoffbehaviorexamplewholepage)]
  [!code-vb[StoryboardBeginAnimation_procedural_snip#FrameworkContentElementStoryboardWithHandoffBehaviorExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/visualbasic/frameworkcontentelementstoryboardwithhandoffbehaviorexample.vb#frameworkcontentelementstoryboardwithhandoffbehaviorexamplewholepage)]  
@@ -432,7 +449,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior> handoff behavior.  
+ If the targeted properties are already animated, they are replaced using the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> handoff behavior.  
   
  To interactively control this storyboard, you must specify the same `containingObject` when calling the interactive methods that you used to begin the storyboard  
   
@@ -475,9 +492,9 @@
  Beginning a storyboard triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> events.  
   
 ## Using the Compose HandoffBehavior  
- When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
+ When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
   
- To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
+ To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
   
 -   To remove all clocks from a property, use the <xref:System.Windows.Media.Animation.Animatable.ApplyAnimationClock%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationClock%29> or <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationTimeline%29> method of the animated object. Specify the property being animated as the first parameter, and `null` as the second. This removes all animation clocks from the property.  
   
@@ -524,9 +541,9 @@
  Beginning a storyboard triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> events.  
   
 ## Using the Compose HandoffBehavior  
- When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
+ When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
   
- To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
+ To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
   
 -   To remove all clocks from a property, use the <xref:System.Windows.Media.Animation.Animatable.ApplyAnimationClock%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationClock%29> or <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationTimeline%29> method of the animated object. Specify the property being animated as the first parameter, and `null` as the second. This removes all animation clocks from the property.  
   
@@ -544,7 +561,7 @@
  [!code-csharp[animation_ovws_procedural_snip#ControllableStoryboardExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/animation_ovws_procedural_snip/CSharp/ControllableStoryboardExample.cs#controllablestoryboardexamplewholepage)]
  [!code-vb[animation_ovws_procedural_snip#ControllableStoryboardExampleWholePage](~/samples/snippets/visualbasic/VS_Snippets_Wpf/animation_ovws_procedural_snip/visualbasic/controllablestoryboardexample.vb#controllablestoryboardexamplewholepage)]  
   
- The next example uses the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior> to animate when the user left-clicks, and the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior> when the user right-clicks.  
+ The next example uses the <xref:System.Windows.Media.Animation.HandoffBehavior.SnapshotAndReplace> <xref:System.Windows.Media.Animation.HandoffBehavior> to animate when the user left-clicks, and the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior> when the user right-clicks.  
   
  [!code-csharp[StoryboardBeginAnimation_procedural_snip#GraphicsMMFrameworkElementStoryboardHandoffBehaviorExample](~/samples/snippets/csharp/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/CSharp/FrameworkElementStoryboardHandoffBehaviorExample.cs#graphicsmmframeworkelementstoryboardhandoffbehaviorexample)]
  [!code-vb[StoryboardBeginAnimation_procedural_snip#GraphicsMMFrameworkElementStoryboardHandoffBehaviorExample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/StoryboardBeginAnimation_procedural_snip/visualbasic/frameworkelementstoryboardhandoffbehaviorexample.vb#graphicsmmframeworkelementstoryboardhandoffbehaviorexample)]  
@@ -589,9 +606,9 @@
  Beginning a storyboard triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> events.  
   
 ## Using the Compose HandoffBehavior  
- When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
+ When you apply a <xref:System.Windows.Media.Animation.Storyboard>, <xref:System.Windows.Media.Animation.AnimationTimeline>, or <xref:System.Windows.Media.Animation.AnimationClock> to a property using the <xref:System.Windows.Media.Animation.HandoffBehavior.Compose> <xref:System.Windows.Media.Animation.HandoffBehavior>, any <xref:System.Windows.Media.Animation.Clock> objects previously associated with that property continue to consume system resources; the timing system does not remove these clocks automatically.  
   
- To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
+ To avoid performance issues when you apply a large number of clocks using <xref:System.Windows.Media.Animation.HandoffBehavior.Compose>, you should remove composing clocks from the animated property after they complete. There are several ways to remove a clock.  
   
 -   To remove all clocks from a property, use the <xref:System.Windows.Media.Animation.Animatable.ApplyAnimationClock%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationClock%29> or <xref:System.Windows.Media.Animation.Animatable.BeginAnimation%28System.Windows.DependencyProperty%2CSystem.Windows.Media.Animation.AnimationTimeline%29> method of the animated object. Specify the property being animated as the first parameter, and `null` as the second. This removes all animation clocks from the property.  
   
@@ -670,6 +687,25 @@
         </block>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCurrentGlobalSpeed">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the <see cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" /> of the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A clock's <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed%2A> speed is the rate at which its time is currently progressing, compared to real-world time.  
+  
+ To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCurrentGlobalSpeed">
       <MemberSignature Language="C#" Value="public double GetCurrentGlobalSpeed ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance float64 GetCurrentGlobalSpeed() cil managed" />
@@ -1684,7 +1720,7 @@
 ## Remarks  
  Note that seek operations do not take the storyboard's <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings into account. The storyboard is treated as though it has a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
   
- This method changes the storyboard clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState>. This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events are also not raised until then.  
+ This method changes the storyboard clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState.Active>. This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events are also not raised until then.  
   
  To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
@@ -1730,7 +1766,7 @@
 ## Remarks  
  Note that seek operations do not take the storyboard's <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> or <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A> settings into account. The storyboard is treated as though it has a <xref:System.Windows.Media.Animation.Timeline.SpeedRatio%2A> of 1 and no <xref:System.Windows.Media.Animation.ParallelTimeline.SlipBehavior%2A>.  
   
- This method changes the storyboard clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState>. This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events are also not raised until then.  
+ This method changes the storyboard clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to <xref:System.Windows.Media.Animation.ClockState.Active>. This method has no effect on the timing tree until the next time a tick is processed. As a side-effect, the appropriate events are also not raised until then.  
   
  To interactively control this storyboard, you must use the same `containingObject` parameter when calling the interactive methods that you used to begin the storyboard. A controllable storyboard can pause, resume, seek, stop, and be removed if it is made controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
   
@@ -1851,7 +1887,7 @@
   
  This method changes the storyboard clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to  
   
- <xref:System.Windows.Media.Animation.ClockState>.  
+ <xref:System.Windows.Media.Animation.ClockState.Active>.  
   
  Seeking a storyboard triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events.  
   
@@ -1901,7 +1937,7 @@
   
  This method changes the storyboard clock's <xref:System.Windows.Media.Animation.Clock.CurrentState%2A> to  
   
- <xref:System.Windows.Media.Animation.ClockState>.  
+ <xref:System.Windows.Media.Animation.ClockState.Active>.  
   
  Seeking a storyboard triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events.  
   
@@ -2159,7 +2195,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method advances the storyboard's current time to the end of its active period; the storyboard's behavior at this point is specified by its <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> setting. If <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> is set to <xref:System.Windows.Media.Animation.FillBehavior>, the storyboard fills; if the property is set to <xref:System.Windows.Media.Animation.FillBehavior>, the storyboard stops.  
+ This method advances the storyboard's current time to the end of its active period; the storyboard's behavior at this point is specified by its <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> setting. If <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> is set to <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>, the storyboard fills; if the property is set to <xref:System.Windows.Media.Animation.FillBehavior.Stop>, the storyboard stops.  
   
  Calling this method on a storyboard with an infinite duration, an infinite number of repetitions has no effect. Calling this method on an inactive storyboard has no effect.  
   
@@ -2201,7 +2237,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method advances the storyboard's current time to the end of its active period; the storyboard's behavior at this point is specified by its <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> setting. If <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> is set to <xref:System.Windows.Media.Animation.FillBehavior>, the storyboard fills; if the property is set to <xref:System.Windows.Media.Animation.FillBehavior>, the storyboard stops.  
+ This method advances the storyboard's current time to the end of its active period; the storyboard's behavior at this point is specified by its <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> setting. If <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> is set to <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>, the storyboard fills; if the property is set to <xref:System.Windows.Media.Animation.FillBehavior.Stop>, the storyboard stops.  
   
  Calling this method on a storyboard with an infinite duration, an infinite number of repetitions has no effect. Calling this method on an inactive storyboard has no effect.  
   
@@ -2260,7 +2296,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Media.Animation.ClockState> storyboard no longer affects its target properties: properties that were animated revert to their previous values.  
+ A <xref:System.Windows.Media.Animation.ClockState.Stopped> storyboard no longer affects its target properties: properties that were animated revert to their previous values.  
   
  Stopping a clock triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events, but not the <xref:System.Windows.Media.Animation.Timeline.Completed> event.  
   
@@ -2300,7 +2336,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Media.Animation.ClockState> storyboard no longer affects its target properties: properties that were animated revert to their previous values.  
+ A <xref:System.Windows.Media.Animation.ClockState.Stopped> storyboard no longer affects its target properties: properties that were animated revert to their previous values.  
   
  Stopping a clock triggers the <xref:System.Windows.Media.Animation.Timeline.CurrentGlobalSpeedInvalidated> and <xref:System.Windows.Media.Animation.Timeline.CurrentStateInvalidated> events, but not the <xref:System.Windows.Media.Animation.Timeline.Completed> event.  
   
@@ -2361,41 +2397,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Begin">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiates the set of animations associated with this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A controllable storyboard can pause, resume, seek, stop, and be removed. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCurrentGlobalSpeed">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the <see cref="P:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed" /> of the <see cref="T:System.Windows.Media.Animation.Clock" /> that was created for this <see cref="T:System.Windows.Media.Animation.Storyboard" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A clock's <xref:System.Windows.Media.Animation.Clock.CurrentGlobalSpeed%2A> speed is the rate at which its time is currently progressing, compared to real-world time.  
-  
- To use this method to retrieve information about a storyboard's clock, the storyboard must be controllable. To make a storyboard controllable in code, you must use the appropriate overload of the storyboard's <xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method and specify `true` to make it controllable. For an example, see [How to: Control a Storyboard After It Starts](~/docs/framework/wpf/graphics-multimedia/how-to-control-a-storyboard-after-it-starts.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

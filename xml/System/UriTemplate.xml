@@ -100,13 +100,13 @@
       </Parameters>
       <Docs>
         <param name="template">The template string.</param>
-        <param name="ignoreTrailingSlash">A value that specifies whether trailing slash “/” characters should be ignored.</param>
+        <param name="ignoreTrailingSlash">A value that specifies whether trailing slash "/" characters should be ignored.</param>
         <summary>Initializes a new instance of the <see cref="T:System.UriTemplate" /> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the `ignoreTrailingSlash` is set to `true`, trailing slashes on the end of template are ignored when matching a candidate URI. For example, a template such as “http://www.microsoft.com/customer/” would match the following candidate URIs:  
+ When the `ignoreTrailingSlash` is set to `true`, trailing slashes on the end of template are ignored when matching a candidate URI. For example, a template such as "http://www.microsoft.com/customer/" would match the following candidate URIs:  
   
 -   "http://www.microsoft.com/customer/"  
   
@@ -167,7 +167,7 @@
       <Docs>
         <param name="template">The template string.</param>
         <param name="ignoreTrailingSlash">
-          <see langword="true" /> if the trailing slash “/” characters are ignored; otherwise <see langword="false" />.</param>
+          <see langword="true" /> if the trailing slash "/" characters are ignored; otherwise <see langword="false" />.</param>
         <param name="additionalDefaults">A dictionary that contains a list of default values for the template parameters.</param>
         <summary>Initializes a new instance of the <see cref="T:System.UriTemplate" /> class.</summary>
         <remarks>To be added.</remarks>
@@ -440,9 +440,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether trailing slashes “/” in the template should be ignored when matching candidate URIs.</summary>
+        <summary>Specifies whether trailing slashes "/" in the template should be ignored when matching candidate URIs.</summary>
         <value>
-          <see langword="true" /> if trailing slashes “/” should be ignored, otherwise <see langword="false" />.</value>
+          <see langword="true" /> if trailing slashes "/" should be ignored, otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

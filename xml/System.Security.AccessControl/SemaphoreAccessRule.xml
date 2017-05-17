@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Threading.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -53,7 +54,7 @@
    
   
 ## Examples  
- The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType> rules and <xref:System.Security.AccessControl.AccessControlType> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
+ The following code example demonstrates the separation between <xref:System.Security.AccessControl.AccessControlType.Allow> rules and <xref:System.Security.AccessControl.AccessControlType.Deny> rules, and shows the combination of rights in compatible rules. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
@@ -73,6 +74,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +123,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -148,7 +151,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of this constructor to create <xref:System.Security.AccessControl.SemaphoreAccessRule> objects. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
+ The following code example demonstrates the use of this constructor to create <xref:System.Security.AccessControl.SemaphoreAccessRule> objects. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  
@@ -186,6 +189,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Threading.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -207,7 +211,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Security.AccessControl.SemaphoreAccessRule.SemaphoreRights%2A> property to display the rights in the set of rules contained in a <xref:System.Security.AccessControl.SemaphoreSecurity> object. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType> rule.  
+ The following code example demonstrates the use of the <xref:System.Security.AccessControl.SemaphoreAccessRule.SemaphoreRights%2A> property to display the rights in the set of rules contained in a <xref:System.Security.AccessControl.SemaphoreSecurity> object. The example creates a <xref:System.Security.AccessControl.SemaphoreSecurity> object, adds rules that allow and deny various rights for the current user, and displays the resulting pair of rules. The example then allows new rights for the current user and displays the result, showing that the new rights are merged with the existing <xref:System.Security.AccessControl.AccessControlType.Allow> rule.  
   
 > [!NOTE]
 >  This example does not attach the security object to a <xref:System.Threading.Semaphore> object. Examples that attach security objects can be found in <xref:System.Threading.Semaphore.GetAccessControl%2A?displayProperty=fullName> and <xref:System.Threading.Semaphore.SetAccessControl%2A?displayProperty=fullName>.  

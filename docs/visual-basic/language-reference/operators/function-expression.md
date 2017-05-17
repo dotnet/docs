@@ -41,10 +41,10 @@ Declares the parameters and code that define a function lambda expression.
 ## Syntax  
   
 ```  
-Function ( [ parameterlist ] ) expression  
+Function ( [ parameterlist ] ) expression  
 - or -  
-Function ( [ parameterlist ] )  
-  [ statements ]  
+Function ( [ parameterlist ] )  
+  [ statements ]  
 End Function  
   
 ```  

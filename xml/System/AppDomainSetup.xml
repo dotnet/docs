@@ -579,16 +579,12 @@
       <Docs>
         <summary>Gets or sets the base directory where the directory for dynamically generated files is located.</summary>
         <value>The directory where the <see cref="P:System.AppDomain.DynamicDirectory" /> is located.  
-  
- <block subset="none" type="note">  
-<para>  
- The return value of this property is different from the value assigned. See the Remarks section.  
-  
-</para>  
-</block></value>
+ <block subset="none" type="note"><para>  
+ The return value of this property is different from the value assigned.
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
+
 ## Remarks  
  Use this property to set the base directory where the dynamic directory for the new application domain will be located. When code in the new application domain loads an assembly, assembly resolution looks first in the normal probing paths. If it does not find the assembly, it looks in the dynamic directory, which is returned by the <xref:System.AppDomain.DynamicDirectory%2A?displayProperty=fullName> property. Dynamic assemblies that will be loaded and executed by the new application domain can be placed there.  
   
@@ -730,7 +726,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute can be made conditional by setting its <xref:System.Security.AllowPartiallyTrustedCallersAttribute.PartialTrustVisibilityLevel%2A> property to <xref:System.Security.PartialTrustVisibilityLevel>. An APTCA assembly that is marked with <xref:System.Security.PartialTrustVisibilityLevel> cannot be used by partially trusted code unless the host application allows it.  
+ Beginning with the [!INCLUDE[net_v40_long](~/includes/net-v40-long-md.md)], the <xref:System.Security.AllowPartiallyTrustedCallersAttribute> (APTCA) attribute can be made conditional by setting its <xref:System.Security.AllowPartiallyTrustedCallersAttribute.PartialTrustVisibilityLevel%2A> property to <xref:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault>. An APTCA assembly that is marked with <xref:System.Security.PartialTrustVisibilityLevel.NotVisibleByDefault> cannot be used by partially trusted code unless the host application allows it.  
   
  The host of a sandboxed application domain allows code in the application domain to use assemblies with conditional APTCA attributes by creating an array that contains the simple name and public key of each assembly, and assigning the array to this property. For example, an element of the array might look like the following: "MyAssembly, PublicKey=0024000004800000940000000602000000240000525341310004000001000100db2ad5e5fedc67ea526ff72ad426ef68e08e241d296c499eedfec6648dcc62b1a12f72be5833a45bbec481b68415b08a5fbc9f9ef247b523dd72bbea65bb532784ddc5c704544bd2f1c2d46fdbe41e4f949e76f9947357b2d5cf8ca9f970701bbd6e8ab64ad31b20ad0be9b56dae4f6b83332b92a2a3b8ea2804c40efbc0b6b9".  
   

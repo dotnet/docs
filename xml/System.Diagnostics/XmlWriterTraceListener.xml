@@ -54,7 +54,7 @@
   
 |Element|Attributes|Output|Notes|  
 |-------------|----------------|------------|-----------|  
-|`CallStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|Special characters such as > or < are replaced with escape sequences. See the escaped character translation table that follows.|  
+|`CallStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions.Callstack> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|Special characters such as > or < are replaced with escape sequences. See the escaped character translation table that follows.|  
 |`Computer`|None|Always present.|The value of the <xref:System.Environment.MachineName%2A> property.|  
 |`Correlation`|`ActivityID`|Always present|If not specified, the default is an empty GUID.|  
 ||`RelatedActivityID`|Depends on the presence of the `relatedActivityId` parameter in the Trace method call.|The `relatedActivityId` parameter of the <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method.|  
@@ -64,12 +64,12 @@
 ||`ProcessID`|Always present.|From the <xref:System.Diagnostics.TraceEventCache>. On Windows 98 and Windows Me operating systems, if `ProcessID` is greater than 2,147,483,647 it is a positive representation of a negative number and should be converted to obtain the correct process identifier.|  
 ||`ThreadID`|Always present.|From the <xref:System.Diagnostics.TraceEventCache>.|  
 |`Level`|None|Always present.|Parameter input (the numeric value of `eventType`). Parameter values greater than 255 are output as 255.|  
-|`LogicalOperationStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|There can be more than one logical operation, so the values are written as `LogicalOperation` nodes under the `LogicalOperationStack` element.|  
+|`LogicalOperationStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions.LogicalOperationStack> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|There can be more than one logical operation, so the values are written as `LogicalOperation` nodes under the `LogicalOperationStack` element.|  
 |`Message`|None|Depends on the presence of a message in the Trace method call.|This element is a formatted message if formatting arguments are provided.|  
 |`Source`|`Name`|Always present.|Parameter input.|  
 |`SubType`|`Name`|Always present.|Parameter input.|  
 |`TimeCreated`|`SystemTime`|Always present.|If not present in the <xref:System.Diagnostics.TraceEventCache>, the default is the current time.|  
-|`TimeStamp`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|From the <xref:System.Diagnostics.TraceEventCache>.|  
+|`TimeStamp`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions.Timestamp> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|From the <xref:System.Diagnostics.TraceEventCache>.|  
 |`Type`|None|Always present.|Always the value 3.|  
   
  The following table shows the characters that are escaped in the XML output. Escaping occurs in all the elements and attributes with the exception of the `DataItem` element, which is not escaped if the object passed to the `data` parameter of the <xref:System.Diagnostics.XmlWriterTraceListener.TraceData%2A> method is an <xref:System.Xml.XPath.XPathNavigator> object. If an <xref:System.Xml.XPath.XPathNavigator> is used for the data object, the <xref:System.Xml.XPath.XPathNavigator.MoveToRoot%2A> method is called and the entire root node is traced as unescaped data.  
@@ -549,7 +549,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is used for the correlation of related traces. The `eventCache`, `source`, `id`, and `relatedActivityId` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Message` element. The <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method is called to convert the `relatedActivityId` value to a "B" formatted string, which appears in the header. The `SubTypeName` element in the footer identifies the trace event type as a <xref:System.Diagnostics.TraceEventType>.  
+ The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is used for the correlation of related traces. The `eventCache`, `source`, `id`, and `relatedActivityId` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before writing, so a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Message` element. The <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method is called to convert the `relatedActivityId`value to a "B" formatted string, which appears in the header. The `SubTypeName` element in the footer identifies the trace event type as a <xref:System.Diagnostics.TraceEventType.Transfer>.  
   
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.XmlWriterTraceListener.TraceTransfer%2A> method is not intended to be called by application code.  It is intended to be called by a <xref:System.Diagnostics.TraceSource> object to emit the trace information for its <xref:System.Diagnostics.TraceSource.TraceTransfer%2A> method.  

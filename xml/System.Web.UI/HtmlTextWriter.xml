@@ -51,7 +51,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.HtmlTextWriter.%23ctor%2A> overload of the <xref:System.Web.UI.HtmlTextWriter.%23ctor%28System.IO.TextWriter%29> constructor uses the <xref:System.Web.UI.HtmlTextWriter> constant when indentation of a line is necessary. It calls the <xref:System.Web.UI.HtmlTextWriter.%23ctor%28System.IO.TextWriter%2CSystem.String%29> overload to initialize the new instance.  
+ The <xref:System.Web.UI.HtmlTextWriter.%23ctor%2A> overload of the <xref:System.Web.UI.HtmlTextWriter.%23ctor%28System.IO.TextWriter%29> constructor uses the <xref:System.Web.UI.HtmlTextWriter.DefaultTabString> constant when indentation of a line is necessary. It calls the <xref:System.Web.UI.HtmlTextWriter.%23ctor%28System.IO.TextWriter%2CSystem.String%29> overload to initialize the new instance.  
   
    
   
@@ -1141,7 +1141,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example demonstrates how to use a class, derived from the <xref:System.Web.UI.HtmlTextWriter> class, that overrides the <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> method. The override checks whether `tagKey` is equal to the <xref:System.Web.UI.HtmlTextWriterTag> field, which indicates that a `<font>` markup element will be rendered. If so, the override calls the <xref:System.Web.UI.HtmlTextWriter.IsAttributeDefined%2A> method to find out whether the `<font>` element contains a <xref:System.Web.UI.HtmlTextWriterAttribute> attribute. If the <xref:System.Web.UI.HtmlTextWriter.IsAttributeDefined%2A> returns `false`, the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method calls the <xref:System.Web.UI.HtmlTextWriter.GetAttributeKey%2A> method, which defines the <xref:System.Web.UI.HtmlTextWriterAttribute> and sets its value to `30pt`.  
+ The following code example demonstrates how to use a class, derived from the <xref:System.Web.UI.HtmlTextWriter> class, that overrides the <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> method. The override checks whether `tagKey` is equal to the <xref:System.Web.UI.HtmlTextWriterTag.Font> field, which indicates that a `<font>` markup element will be rendered. If so, the override calls the <xref:System.Web.UI.HtmlTextWriter.IsAttributeDefined%2A> method to find out whether the `<font>` element contains a <xref:System.Web.UI.HtmlTextWriterAttribute.Size> attribute. If the <xref:System.Web.UI.HtmlTextWriter.IsAttributeDefined%2A> returns `false`, the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method calls the <xref:System.Web.UI.HtmlTextWriter.GetAttributeKey%2A> method, which defines the <xref:System.Web.UI.HtmlTextWriterAttribute.Size> and sets its value to `30pt`.  
   
  [!code-cpp[HtmlTextWriter_Methods#3](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Methods/CPP/htw.cpp#3)]
  [!code-csharp[HtmlTextWriter_Methods#3](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Methods/CS/htw.cs#3)]
@@ -1179,7 +1179,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.GetAttributeName%2A> method to convert a <xref:System.Web.UI.HtmlTextWriterAttribute> enumeration value to its string name.  
+ The following code example shows how to use the <xref:System.Web.UI.HtmlTextWriter.GetAttributeName%2A> method to convert a <xref:System.Web.UI.HtmlTextWriterAttribute.Size> enumeration value to its string name.  
   
  [!code-cpp[HtmlTextWriter_Methods3#6](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Methods3/CPP/htmltextwriter_methods3.cpp#6)]
  [!code-csharp[HtmlTextWriter_Methods3#6](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Methods3/CS/htmltextwriter_methods3.cs#6)]
@@ -1217,7 +1217,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example demonstrates how to override the <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> method in a class derived from the <xref:System.Web.UI.HtmlTextWriter> class. The <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> override determines whether a `<label>` markup will be rendered, and, if so, checks the element for a <xref:System.Web.UI.HtmlTextWriterStyle> attribute. If a <xref:System.Web.UI.HtmlTextWriterStyle> attribute has not been defined, the <xref:System.Web.UI.HtmlTextWriter.GetStyleKey%2A> method is used as the first parameter in a call to the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method to add a <xref:System.Web.UI.HtmlTextWriterStyle> attribute to a `<label>` markup element and set the <xref:System.Web.UI.HtmlTextWriterStyle> attribute to `red`.  
+ The following code example demonstrates how to override the <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> method in a class derived from the <xref:System.Web.UI.HtmlTextWriter> class. The <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> override determines whether a `<label>` markup will be rendered, and, if so, checks the element for a <xref:System.Web.UI.HtmlTextWriterStyle.Color> attribute. If a <xref:System.Web.UI.HtmlTextWriterStyle.Color> attribute has not been defined, the <xref:System.Web.UI.HtmlTextWriter.GetStyleKey%2A> method is used as the first parameter in a call to the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method to add a <xref:System.Web.UI.HtmlTextWriterStyle.Color> attribute to a `<label>` markup element and set the <xref:System.Web.UI.HtmlTextWriterStyle.Color> attribute to `red`.  
   
  [!code-cpp[HtmlTextWriter_Methods#1](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Methods/CPP/htw.cpp#1)]
  [!code-csharp[HtmlTextWriter_Methods#1](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Methods/CS/htw.cs#1)]
@@ -1255,7 +1255,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to check whether a `<label>` element is being rendered. If so, it checks whether a <xref:System.Web.UI.HtmlTextWriterStyle> style attribute has been defined on the element. If the attribute has not been defined, the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method is called and the <xref:System.Web.UI.HtmlTextWriter.GetStyleName%2A> method converts the <xref:System.Web.UI.HtmlTextWriterStyle> enumeration member into its string representation to pass to the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method.  
+ The following code example shows how to check whether a `<label>` element is being rendered. If so, it checks whether a <xref:System.Web.UI.HtmlTextWriterStyle.Color> style attribute has been defined on the element. If the attribute has not been defined, the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method is called and the <xref:System.Web.UI.HtmlTextWriter.GetStyleName%2A> method converts the <xref:System.Web.UI.HtmlTextWriterStyle.Color> enumeration member into its string representation to pass to the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method.  
   
  [!code-cpp[HtmlTextWriter_Methods3#4](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Methods3/CPP/htmltextwriter_methods3.cpp#4)]
  [!code-csharp[HtmlTextWriter_Methods3#4](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Methods3/CS/htmltextwriter_methods3.cs#4)]
@@ -1288,7 +1288,7 @@ alert('Hello');
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `tagName` is `null`, an empty string (""), or cannot be found in the table of markup tag names, the <xref:System.Web.UI.HtmlTextWriter.GetTagKey%2A> method returns the <xref:System.Web.UI.HtmlTextWriterTag> field.  
+ If `tagName` is `null`, an empty string (""), or cannot be found in the table of markup tag names, the <xref:System.Web.UI.HtmlTextWriter.GetTagKey%2A> method returns the <xref:System.Web.UI.HtmlTextWriterTag.Unknown> field.  
   
    
   
@@ -1331,7 +1331,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example demonstrates how to close a `<font>` element by using the <xref:System.Web.UI.HtmlTextWriter.WriteEndTag%2A> method. The <xref:System.Web.UI.HtmlTextWriter.WriteEndTag%2A> method calls the <xref:System.Web.UI.HtmlTextWriter.GetTagName%2A> method to convert the <xref:System.Web.UI.HtmlTextWriterTag> value to a string.  
+ The following code example demonstrates how to close a `<font>` element by using the <xref:System.Web.UI.HtmlTextWriter.WriteEndTag%2A> method. The <xref:System.Web.UI.HtmlTextWriter.WriteEndTag%2A> method calls the <xref:System.Web.UI.HtmlTextWriter.GetTagName%2A> method to convert the <xref:System.Web.UI.HtmlTextWriterTag.Font> value to a string.  
   
  [!code-cpp[HtmlTextWriter_Methods3#7](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Methods3/CPP/htmltextwriter_methods3.cpp#7)]
  [!code-csharp[HtmlTextWriter_Methods3#7](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Methods3/CS/htmltextwriter_methods3.cs#7)]
@@ -1441,7 +1441,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to use an override of the <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> method in a class that inherits from the <xref:System.Web.UI.HtmlTextWriter> class. The <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> override checks whether a `<font>` markup element will be rendered. If so, the override calls the <xref:System.Web.UI.HtmlTextWriter.IsAttributeDefined%2A> method to check whether the `<font>` element contains a <xref:System.Web.UI.HtmlTextWriterAttribute> attribute. If not, the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method calls the <xref:System.Web.UI.HtmlTextWriter.GetAttributeKey%2A> method, which defines the <xref:System.Web.UI.HtmlTextWriterAttribute> attribute and sets its value to `30pt`.  
+ The following code example shows how to use an override of the <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> method in a class that inherits from the <xref:System.Web.UI.HtmlTextWriter> class. The <xref:System.Web.UI.HtmlTextWriter.RenderBeginTag%2A> override checks whether a `<font>` markup element will be rendered. If so, the override calls the <xref:System.Web.UI.HtmlTextWriter.IsAttributeDefined%2A> method to check whether the `<font>` element contains a <xref:System.Web.UI.HtmlTextWriterAttribute.Size> attribute. If not, the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method calls the <xref:System.Web.UI.HtmlTextWriter.GetAttributeKey%2A> method, which defines the <xref:System.Web.UI.HtmlTextWriterAttribute.Size> attribute and sets its value to `30pt`.  
   
  [!code-cpp[HtmlTextWriter_Methods#3](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Methods/CPP/htw.cpp#3)]
  [!code-csharp[HtmlTextWriter_Methods#3](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Methods/CS/htw.cs#3)]
@@ -1512,7 +1512,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to check whether a `<label>` element is being rendered. If so, the <xref:System.Web.UI.HtmlTextWriter.IsStyleAttributeDefined%2A> method checks whether a <xref:System.Web.UI.HtmlTextWriterStyle> style attribute has been defined on the element. If the <xref:System.Web.UI.HtmlTextWriterStyle> attribute has not been defined, the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method defines the <xref:System.Web.UI.HtmlTextWriterStyle> attribute and sets its value to `red`.  
+ The following code example shows how to check whether a `<label>` element is being rendered. If so, the <xref:System.Web.UI.HtmlTextWriter.IsStyleAttributeDefined%2A> method checks whether a <xref:System.Web.UI.HtmlTextWriterStyle.Color> style attribute has been defined on the element. If the <xref:System.Web.UI.HtmlTextWriterStyle.Color> attribute has not been defined, the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method defines the <xref:System.Web.UI.HtmlTextWriterStyle.Color> attribute and sets its value to `red`.  
   
  [!code-cpp[HtmlTextWriter_Methods3#4](~/samples/snippets/cpp/VS_Snippets_WebNet/HtmlTextWriter_Methods3/CPP/htmltextwriter_methods3.cpp#4)]
  [!code-csharp[HtmlTextWriter_Methods3#4](~/samples/snippets/csharp/VS_Snippets_WebNet/HtmlTextWriter_Methods3/CS/htmltextwriter_methods3.cs#4)]
@@ -1654,7 +1654,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to override the <xref:System.Web.UI.HtmlTextWriter.OnAttributeRender%2A> method. If a <xref:System.Web.UI.HtmlTextWriterAttribute> attribute is rendered, but the <xref:System.Web.UI.HtmlTextWriterAttribute> value is not `30pt`, the <xref:System.Web.UI.HtmlTextWriter.OnAttributeRender%2A> override calls the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method to add a <xref:System.Web.UI.HtmlTextWriterAttribute> attribute and set its value to `30pt`.  
+ The following code example shows how to override the <xref:System.Web.UI.HtmlTextWriter.OnAttributeRender%2A> method. If a <xref:System.Web.UI.HtmlTextWriterAttribute.Size> attribute is rendered, but the <xref:System.Web.UI.HtmlTextWriterAttribute.Size> value is not `30pt`, the <xref:System.Web.UI.HtmlTextWriter.OnAttributeRender%2A> override calls the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method to add a <xref:System.Web.UI.HtmlTextWriterAttribute.Size> attribute and set its value to `30pt`.  
   
  [!code-csharp[MarkupTextWriter_Methods3#5](~/samples/snippets/csharp/VS_Snippets_WebNet/MarkupTextWriter_Methods3/CS/overriddenmarkup.cs#5)]
  [!code-vb[MarkupTextWriter_Methods3#5](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MarkupTextWriter_Methods3/VB/overriddenmarkup.vb#5)]  
@@ -1698,7 +1698,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to override the <xref:System.Web.UI.HtmlTextWriter.OnStyleAttributeRender%2A> method. If a <xref:System.Web.UI.HtmlTextWriterStyle> style attribute is rendered, but the <xref:System.Web.UI.HtmlTextWriterStyle> value is not `purple`, the <xref:System.Web.UI.HtmlTextWriter.OnStyleAttributeRender%2A> override uses the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method to set the <xref:System.Web.UI.HtmlTextWriterStyle> attribute to `purple`.  
+ The following code example shows how to override the <xref:System.Web.UI.HtmlTextWriter.OnStyleAttributeRender%2A> method. If a <xref:System.Web.UI.HtmlTextWriterStyle.Color> style attribute is rendered, but the <xref:System.Web.UI.HtmlTextWriterStyle.Color> value is not `purple`, the <xref:System.Web.UI.HtmlTextWriter.OnStyleAttributeRender%2A> override uses the <xref:System.Web.UI.HtmlTextWriter.AddStyleAttribute%2A> method to set the <xref:System.Web.UI.HtmlTextWriterStyle.Color> attribute to `purple`.  
   
  [!code-csharp[MarkupTextWriter_Methods3#6](~/samples/snippets/csharp/VS_Snippets_WebNet/MarkupTextWriter_Methods3/CS/overriddenmarkup.cs#6)]
  [!code-vb[MarkupTextWriter_Methods3#6](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MarkupTextWriter_Methods3/VB/overriddenmarkup.vb#6)]  
@@ -1740,7 +1740,7 @@ alert('Hello');
    
   
 ## Examples  
- The following code example shows how to override the <xref:System.Web.UI.HtmlTextWriter.OnTagRender%2A> method. If a <xref:System.Web.UI.HtmlTextWriterTag> element is being rendered, the <xref:System.Web.UI.HtmlTextWriter.OnTagRender%2A> override uses the <xref:System.Web.UI.HtmlTextWriter.IsAttributeDefined%2A> method to determine whether a <xref:System.Web.UI.HtmlTextWriterAttribute> attribute is being rendered. If not, it uses the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method to create a <xref:System.Web.UI.HtmlTextWriterAttribute> attribute and set its value to `20pt`.  
+ The following code example shows how to override the <xref:System.Web.UI.HtmlTextWriter.OnTagRender%2A> method. If a <xref:System.Web.UI.HtmlTextWriterTag.Font> element is being rendered, the <xref:System.Web.UI.HtmlTextWriter.OnTagRender%2A> override uses the <xref:System.Web.UI.HtmlTextWriter.IsAttributeDefined%2A> method to determine whether a <xref:System.Web.UI.HtmlTextWriterAttribute.Size> attribute is being rendered. If not, it uses the <xref:System.Web.UI.HtmlTextWriter.AddAttribute%2A> method to create a <xref:System.Web.UI.HtmlTextWriterAttribute.Size> attribute and set its value to `20pt`.  
   
  [!code-csharp[MarkupTextWriter_Methods3#4](~/samples/snippets/csharp/VS_Snippets_WebNet/MarkupTextWriter_Methods3/CS/overriddenmarkup.cs#4)]
  [!code-vb[MarkupTextWriter_Methods3#4](~/samples/snippets/visualbasic/VS_Snippets_WebNet/MarkupTextWriter_Methods3/VB/overriddenmarkup.vb#4)]  
@@ -3537,6 +3537,23 @@ alert('Hello');
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteLine">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes data to an <see cref="T:System.Web.UI.HtmlTextWriter" /> output stream, as specified by the overloaded parameters, followed by a line terminator string. All versions of this method write any pending tab spacing to the output stream.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The default line terminator string is a carriage return followed by a line feed ("\r\n"). The <xref:System.IO.TextWriter.WriteLine%2A> base method is used to write the `value` parameter.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteLine">
       <MemberSignature Language="C#" Value="public override void WriteLine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void WriteLine() cil managed" />
@@ -4236,22 +4253,5 @@ alert('Hello');
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteLine">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes data to an <see cref="T:System.Web.UI.HtmlTextWriter" /> output stream, as specified by the overloaded parameters, followed by a line terminator string. All versions of this method write any pending tab spacing to the output stream.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The default line terminator string is a carriage return followed by a line feed ("\r\n"). The <xref:System.IO.TextWriter.WriteLine%2A> base method is used to write the `value` parameter.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

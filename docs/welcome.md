@@ -13,36 +13,29 @@ ms.assetid: cb788dcf-2120-467f-9c34-c02a90e1f68f
 
 # Welcome to .NET
 
-See ["Getting Started with .NET Core"](core/getting-started.md) to learn how to create a simple .NET Core app. 
-
-You can build many types of apps with .NET, such as cloud, IoT and games. Your app can run on Windows, Linux, Android, macOS, and iOS. There are free tools that you can use to build apps or games. You can deploy them on servers or desktops or publish them to app stores. It's accessible to students.
-
-## News
-
-- [Introducing .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
-- [.NET Core 1.0.1 announcement](https://blogs.msdn.microsoft.com/dotnet/2016/09/13/announcing-september-2016-updates-for-net-core-1-0/)
-- [Announcing .NET Framework 4.6.2](https://blogs.msdn.microsoft.com/dotnet/2016/08/02/announcing-net-framework-4-6-2/)
-- [Announcing .NET Core 1.0](https://blogs.msdn.microsoft.com/dotnet/announcing-net-core-1-0)
-- [Announcing ASP.NET Core 1.0](https://blogs.msdn.microsoft.com/webdev/2016/06/27/announcing-asp-net-core-1-0/)
-- [Open Source Xamarin, Ready for you!](https://blog.xamarin.com/live-from-evolve-open-source-xamarin-ready-for-you/)
-- [The week in .NET](https://blogs.msdn.microsoft.com/dotnet/tag/week-in-net/)
-- [Thank you for watching dotnetConf 2016!](https://blogs.msdn.microsoft.com/dotnet/2016/06/09/thank-you-for-watching-dotnetconf-2016/)
+You can build many types of apps with .NET, such as cloud, IoT, and games. Your app can run on Windows, Linux, Android, macOS, and iOS. There are free tools that you can use to build apps or games. You can deploy them on servers, desktops, or publish them to app stores.
 
 ## Documentation
 
-This documentation will show you how to build an app from scratch. Key sections:
+This documentation covers the breadth of .NET across platforms and languages.  You can get started with .NET and its languages in any of the following sections:
 
-- [C# Guide](csharp/index.md)
-- [F# Guide](fsharp/index.md)
-- [.NET Core API](../api/index.md)
 - [.NET Platform Guide](standard/index.md)
 - [.NET Core Guide](core/index.md)
 - [.NET Framework Guide](framework/index.md)
+- [C# Guide](csharp/index.md)
+- [F# Guide](fsharp/index.md)
+- [Visual Basic Guide](visual-basic/index.md)
+
+Additionally, you can browse the [.NET API reference](https://docs.microsoft.com/dotnet/api).
 
 ## Open Source
 
-Many parts of .NET are built by open source contributors. You can contribute to this [.NET Documentation](https://github.com/dotnet/docs). You can also read the source of and contribute to .NET products, including [.NET Core](https://github.com/dotnet/core) and [Xamarin](http://open.xamarin.com). Key projects from Microsoft have been contributed to the [.NET Foundation](http://dotnetfoundation.org).
+This documentation is completely [open source](https://github.com/dotnet/docs).  You can contribute in any way you like, from creating Issues to writing documentation.  Additionally, much of .NET itself is open source:
 
-## Community
+- [.NET Core Home](https://github.com/dotnet/core)
+- [.NET Libraries](https://github.com/dotnet/corefx)
+- [.NET Core Runtime](https://github.com/dotnet/coreclr)
+- [Roslyn (C# and Visual Basic) Compiler Platform and IDE Tools](https://github.com/dotnet/roslyn)
+- [F# Compiler and IDE Tools](https://github.com/microsoft/visualfsharp)
 
-You can join other people who are already active in the [.NET community](https://www.microsoft.com/net/community), to find out what's new or ask for help.
+There are also many other key projects in the .NET open source ecosystem which have been contributed to the [.NET Foundation](http://dotnetfoundation.org).

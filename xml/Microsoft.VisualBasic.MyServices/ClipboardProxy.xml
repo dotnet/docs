@@ -23,7 +23,7 @@
 ## Remarks  
  Items moved or copied to the Clipboard persist even after the application is shut down.  
   
- Data on the Clipboard can be in any data format, also called a Clipboard format. For a list of predefined formats to use with the Clipboard, see <xref:System.Windows.Forms.DataFormats>. When an item is moved or copied to the Clipboard, items in other formats are cleared. To make other formats persist, use <xref:Microsoft.VisualBasic.VariantType>, which copies everything existing on the current Clipboard, including items pasted from other applications. Place data on the Clipboard in multiple formats to maximize the possibility that a target application, whose format requirements you might not know, can successfully retrieve the data.  
+ Data on the Clipboard can be in any data format, also called a Clipboard format. For a list of predefined formats to use with the Clipboard, see <xref:System.Windows.Forms.DataFormats>. When an item is moved or copied to the Clipboard, items in other formats are cleared. To make other formats persist, use <xref:Microsoft.VisualBasic.VariantType.DataObject>, which copies everything existing on the current Clipboard, including items pasted from other applications. Place data on the Clipboard in multiple formats to maximize the possibility that a target application, whose format requirements you might not know, can successfully retrieve the data.  
   
  Because all Windows applications share the system Clipboard, the contents may change when you switch to another application.  
   
@@ -329,7 +329,7 @@ My.Computer.Clipboard.Clear()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat.CommaSeparatedValue>, <xref:System.Windows.Forms.TextDataFormat.Html>, <xref:System.Windows.Forms.TextDataFormat.Rtf> and <xref:System.Windows.Forms.TextDataFormat.UnicodeText>.  
   
 ## Availability by Project Type  
   
@@ -381,7 +381,7 @@ My.Computer.Clipboard.Clear()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat.CommaSeparatedValue>, <xref:System.Windows.Forms.TextDataFormat.Html>, <xref:System.Windows.Forms.TextDataFormat.Rtf> and <xref:System.Windows.Forms.TextDataFormat.UnicodeText>.  
   
 ## Availability by Project Type  
   
@@ -679,7 +679,7 @@ My.Computer.Clipboard.Clear()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat.CommaSeparatedValue>, <xref:System.Windows.Forms.TextDataFormat.Html>, <xref:System.Windows.Forms.TextDataFormat.Rtf> and <xref:System.Windows.Forms.TextDataFormat.UnicodeText>.  
   
 ## Availability by Project Type  
   
@@ -732,7 +732,7 @@ My.Computer.Clipboard.Clear()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat.CommaSeparatedValue>, <xref:System.Windows.Forms.TextDataFormat.Html>, <xref:System.Windows.Forms.TextDataFormat.Rtf> and <xref:System.Windows.Forms.TextDataFormat.UnicodeText>.  
   
 ## Availability by Project Type  
   
@@ -1112,7 +1112,7 @@ My.Computer.Clipboard.Clear()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat.CommaSeparatedValue>, <xref:System.Windows.Forms.TextDataFormat.Html>, <xref:System.Windows.Forms.TextDataFormat.Rtf> and <xref:System.Windows.Forms.TextDataFormat.UnicodeText>.  
   
  Previous Clipboard formats are not preserved.  
   
@@ -1174,7 +1174,7 @@ My.Computer.Clipboard.Clear()
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Possible formats are <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat>, <xref:System.Windows.Forms.TextDataFormat> and <xref:System.Windows.Forms.TextDataFormat>.  
+ Possible formats are <xref:System.Windows.Forms.TextDataFormat.CommaSeparatedValue>, <xref:System.Windows.Forms.TextDataFormat.Html>, <xref:System.Windows.Forms.TextDataFormat.Rtf> and <xref:System.Windows.Forms.TextDataFormat.UnicodeText>.  
   
  Previous Clipboard formats are not preserved.  
   

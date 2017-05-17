@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -45,6 +46,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -102,6 +104,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -159,6 +162,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -187,7 +191,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can reduce the level of intrusiveness of garbage collection in your application by setting the <xref:System.Runtime.GCLatencyMode> to <xref:System.Runtime.GCLatencyMode> during critical operations. After such operations are completed, return to a higher latency mode so that more objects can be reclaimed to increase memory.  
+ You can reduce the level of intrusiveness of garbage collection in your application by setting the <xref:System.Runtime.GCLatencyMode> to <xref:System.Runtime.GCLatencyMode.LowLatency> during critical operations. After such operations are completed, return to a higher latency mode so that more objects can be reclaimed to increase memory.  
   
  Ordinarily, you set the value of the <xref:System.Runtime.GCSettings.LatencyMode%2A> property to define the garbage collector's latency mode. However, you cannot set the no GC region latency mode by assigning the <xref:System.Runtime.GCLatencyMode?displayProperty=fullName> enumeration value to the <xref:System.Runtime.GCSettings.LatencyMode%2A> property. Instead, you call the <xref:System.GC.TryStartNoGCRegion%2A?displayProperty=fullName> method to begin the no GC region latency mode, and you call the <xref:System.GC.EndNoGCRegion%2A?displayProperty=fullName> to end it.  
   

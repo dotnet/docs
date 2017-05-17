@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -39,6 +40,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -61,9 +63,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Net.DnsEndPoint.%23ctor%28System.String%2CSystem.Int32%29> constructor can be used to initialize a <xref:System.Net.DnsEndPoint> class using either a host name or a string that represents an IP address and a port. This constructor sets the <xref:System.Net.DnsEndPoint.AddressFamily%2A> property to <xref:System.Net.Sockets.AddressFamily>.  
+ The <xref:System.Net.DnsEndPoint.%23ctor%28System.String%2CSystem.Int32%29> constructor can be used to initialize a <xref:System.Net.DnsEndPoint> class using either a host name or a string that represents an IP address and a port. This constructor sets the <xref:System.Net.DnsEndPoint.AddressFamily%2A> property to <xref:System.Net.Sockets.AddressFamily.Unknown>.  
   
- When using this constructor with a host name rather than a string representation of an IP address, the address family of the <xref:System.Net.DnsEndPoint> will remain <xref:System.Net.Sockets.AddressFamily> even after use. The <xref:System.Net.DnsEndPoint.AddressFamily%2A> property of any <xref:System.Net.Sockets.Socket> that is created by calls to the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method will be the address family of the first address to which a connection can be successfully established (not necessarily the first address to be resolved).  
+ When using this constructor with a host name rather than a string representation of an IP address, the address family of the <xref:System.Net.DnsEndPoint> will remain <xref:System.Net.Sockets.AddressFamily.Unknown> even after use. The <xref:System.Net.DnsEndPoint.AddressFamily%2A> property of any <xref:System.Net.Sockets.Socket> that is created by calls to the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method will be the address family of the first address to which a connection can be successfully established (not necessarily the first address to be resolved).  
   
  ]]></format>
         </remarks>
@@ -85,6 +87,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -111,7 +114,7 @@
 ## Remarks  
  The <xref:System.Net.DnsEndPoint.%23ctor%28System.String%2CSystem.Int32%2CSystem.Net.Sockets.AddressFamily%29> constructor can be used to initialize a <xref:System.Net.DnsEndPoint> class using either a host name or a string that represents an IP address, a port, and an address family.  
   
- When using the constructor with a host name rather than a string representation of an IP address, the address family restricts DNS resolution to prefer addresses of the specified address family value. When using the constructor with the address family specified as <xref:System.Net.Sockets.AddressFamily>, the address family of the <xref:System.Net.DnsEndPoint> will remain <xref:System.Net.Sockets.AddressFamily> even after use. The <xref:System.Net.DnsEndPoint.AddressFamily%2A> property of any <xref:System.Net.Sockets.Socket> that is created by calls to the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method will be the address family of the first address to which a connection can be successfully established (not necessarily the first address to be resolved).  
+ When using the constructor with a host name rather than a string representation of an IP address, the address family restricts DNS resolution to prefer addresses of the specified address family value. When using the constructor with the address family specified as <xref:System.Net.Sockets.AddressFamily.Unknown>, the address family of the <xref:System.Net.DnsEndPoint> will remain <xref:System.Net.Sockets.AddressFamily.Unknown> even after use. The <xref:System.Net.DnsEndPoint.AddressFamily%2A> property of any <xref:System.Net.Sockets.Socket> that is created by calls to the <xref:System.Net.Sockets.Socket.ConnectAsync%2A> method will be the address family of the first address to which a connection can be successfully established (not necessarily the first address to be resolved).  
   
  ]]></format>
         </remarks>
@@ -137,6 +140,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -171,6 +175,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -210,6 +215,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -245,6 +251,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -279,6 +286,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -306,6 +314,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

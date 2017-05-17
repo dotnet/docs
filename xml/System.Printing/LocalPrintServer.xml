@@ -192,7 +192,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The method requires that the <xref:System.Printing.LocalPrintServer> object be created with <xref:System.Printing.PrintSystemDesiredAccess> rights.  
+ The method requires that the <xref:System.Printing.LocalPrintServer> object be created with <xref:System.Printing.PrintSystemDesiredAccess.AdministrateServer> rights.  
   
    
   
@@ -209,7 +209,7 @@
   
  \- or -  
   
- The <see cref="T:System.Printing.LocalPrintServer" /> object was not created with sufficient rights. See Remarks.</exception>
+ The <see cref="T:System.Printing.LocalPrintServer" /> object was not created with sufficient rights.</exception>
       </Docs>
     </Member>
     <Member MemberName="ConnectToPrintQueue">
@@ -279,7 +279,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Your application will have only <xref:System.Printing.PrintSystemDesiredAccess> access to the default queue, even if you have <xref:System.Printing.PrintSystemDesiredAccess> rights to the print server. To open the queue with greater access, use one of the <xref:System.Printing.PrintQueue.%23ctor%2A> constructors that enables you to specify the desired access level.  
+ Your application will have only <xref:System.Printing.PrintSystemDesiredAccess.UsePrinter> access to the default queue, even if you have <xref:System.Printing.PrintSystemDesiredAccess.AdministrateServer> rights to the print server. To open the queue with greater access, use one of the <xref:System.Printing.PrintQueue.%23ctor%2A> constructors that enables you to specify the desired access level.  
   
    
   
@@ -361,7 +361,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Your application will have only <xref:System.Printing.PrintSystemDesiredAccess> access to the default queue, even if you have <xref:System.Printing.PrintSystemDesiredAccess> rights to the print server. To open the queue with greater access, use one of the <xref:System.Printing.PrintQueue.%23ctor%2A> constructors that enables you to specify the desired access level.  
+ Your application will have only <xref:System.Printing.PrintSystemDesiredAccess.UsePrinter> access to the default queue, even if you have <xref:System.Printing.PrintSystemDesiredAccess.AdministrateServer> rights to the print server. To open the queue with greater access, use one of the <xref:System.Printing.PrintQueue.%23ctor%2A> constructors that enables you to specify the desired access level.  
   
    
   

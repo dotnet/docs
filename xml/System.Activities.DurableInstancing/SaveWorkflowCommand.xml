@@ -61,9 +61,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Sets the status of the instance in the persistence database to “Completed” and deletes the state information from the database unless the <see cref="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceCompletionAction" /> property is set to “Delete Nothing”.</summary>
+        <summary>Sets the status of the instance in the persistence database to "Completed" and deletes the state information from the database unless the <see cref="P:System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceCompletionAction" /> property is set to "Delete Nothing".</summary>
         <value>
-          <see langword="true" /> if the status of the instance is “Completed” and the state information is deleted; otherwise <see langword="false" />.</value>
+          <see langword="true" /> if the status of the instance is "Completed" and the state information is deleted; otherwise <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -76,14 +76,14 @@
   
 |`connectionProtection` setting|Effect|  
 |------------------------------------|------------|  
-|<xref:System.Web.Security.ActiveDirectoryConnectionProtection>|The <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class will connect to an Active Directory, with these restrictions.<br /><br /> -   Any method that sets a password will fail. Active Directory requires a secure connection when changing passwords.<br />-   You must explicitly set the `connectionUsername` and `connectionPassword` attributes using the [add Element for providers for membership (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/8423ec7f-a06d-4606-977e-a46400b2fc18) in the application configuration file; otherwise, the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> instance will throw a <xref:System.Configuration.Provider.ProviderException> exception.|  
+|<xref:System.Web.Security.ActiveDirectoryConnectionProtection.None>|The <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class will connect to an Active Directory, with these restrictions.<br /><br /> -   Any method that sets a password will fail. Active Directory requires a secure connection when changing passwords.<br />-   You must explicitly set the `connectionUsername` and `connectionPassword` attributes using the [add Element for providers for membership (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/8423ec7f-a06d-4606-977e-a46400b2fc18) in the application configuration file; otherwise, the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> instance will throw a <xref:System.Configuration.Provider.ProviderException> exception.|  
 |`Secure`|The <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class will attempt to connect to Active Directory using SSL. If SSL fails, a second attempt to connect to Active Directory using sign-and-seal will be made. If both attempts fail, the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> instance will throw a <xref:System.Configuration.Provider.ProviderException> exception.<br /><br /> Both process credentials and explicit credentials are supported.|  
   
  The following table shows the effect of the `connectionProtection` attribute when connecting to an ADAM server.  
   
 |`connectionProtection` setting|Effect|  
 |------------------------------------|------------|  
-|<xref:System.Web.Security.ActiveDirectoryConnectionProtection>|The <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class will connect to an ADAM server, with this restriction.<br /><br /> -   Any method that sets passwords will fail unless you explicitly configure the ADAM server to allow passwords to be sent and changed over an insecure connection.<br /><br /> Both process credentials and explicit credentials are supported.|  
+|<xref:System.Web.Security.ActiveDirectoryConnectionProtection.None>|The <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class will connect to an ADAM server, with this restriction.<br /><br /> -   Any method that sets passwords will fail unless you explicitly configure the ADAM server to allow passwords to be sent and changed over an insecure connection.<br /><br /> Both process credentials and explicit credentials are supported.|  
 |`Secure`|The <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class will attempt to connect to the ADAM server using SSL. If a connection cannot be made, the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> instance will throw a <xref:System.Configuration.Provider.ProviderException> exception.<br /><br /> Both process credentials and explicit credentials are supported.|  
   
 ## ADAM Configuration  
@@ -93,7 +93,7 @@
   
 |connectionProtection setting|Expected ADAM port|  
 |----------------------------------|------------------------|  
-|<xref:System.Web.Security.ActiveDirectoryConnectionProtection>|389|  
+|<xref:System.Web.Security.ActiveDirectoryConnectionProtection.None>|389|  
 |`Secure`|636|  
   
  If your ADAM server is not using the default ports, see article Q817583, "Active Directory Services does not request secure authorization over an SSL connection," in the [Microsoft Knowledge Base](http://go.microsoft.com/fwlink/?linkid=37115).  
@@ -265,9 +265,9 @@
   
  The provider finds the user instance to update by performing a subtree search for the user name starting at the search point specified in the connection string. See the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class topic for more information about connection strings.  
   
- To change passwords on an Active Directory server the `connectionProtection` attribute must be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection>.  
+ To change passwords on an Active Directory server the `connectionProtection` attribute must be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal>.  
   
- When using an ADAM server, the `connectionProtection` attribute can be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection>, but only if you explicitly configure the ADAM server to allow password change over unsecured connections.  
+ When using an ADAM server, the `connectionProtection` attribute can be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection.None>, but only if you explicitly configure the ADAM server to allow password change over unsecured connections.  
   
  ]]></format>
         </remarks>
@@ -492,9 +492,9 @@
   
  The <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class creates the user directly in the user container specified in the connection string. See the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class topic for more information about connection strings.  
   
- For passwords to be set on an Active Directory server, the `connectionProtection` attribute must be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection>.  
+ For passwords to be set on an Active Directory server, the `connectionProtection` attribute must be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal>.  
   
- When an ADAM server is being used, the `connectionProtection` attribute can be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection>, but only if you explicitly configure the ADAM server to allow password changes over unsecured connections.  
+ When an ADAM server is being used, the `connectionProtection` attribute can be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection.None>, but only if you explicitly configure the ADAM server to allow password changes over unsecured connections.  
   
  Leading and trailing spaces are trimmed from all string parameter values except `password`.  
   
@@ -535,7 +535,7 @@
 ## Remarks  
  The <xref:System.Web.Security.ActiveDirectoryMembershipProvider.CurrentConnectionProtection%2A> property indicates the current level of security that the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> instance is configured to use. The <xref:System.Web.Security.ActiveDirectoryMembershipProvider.CurrentConnectionProtection%2A> property is based on the `connnectionProtection` attribute set with the [add Element for providers for membership (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/8423ec7f-a06d-4606-977e-a46400b2fc18) in the application configuration file.  
   
- The `connectionProtection` attribute can only be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection> or <xref:System.Web.Security.ActiveDirectoryConnectionProtection> in the configuration file.  
+ The `connectionProtection` attribute can only be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection.None> or <xref:System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal> in the configuration file.  
   
  See the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class topic for more information about connection strings.  
   
@@ -1943,9 +1943,9 @@
   
  The provider uses a subtree search starting at the search point specified in the connection string. See the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> class topic for more information about connection strings.  
   
- To set passwords on an Active Directory server, the `connectionProtection` attribute must be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection>.  
+ To set passwords on an Active Directory server, the `connectionProtection` attribute must be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal>.  
   
- When using an ADAM server, the `connectionProtection` attribute can be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection>, but only if you explicitly configure the ADAM server to allow password changes over unsecured connections.  
+ When using an ADAM server, the `connectionProtection` attribute can be set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection.None>, but only if you explicitly configure the ADAM server to allow password changes over unsecured connections.  
   
 > [!IMPORTANT]
 >  You cannot reset passwords unless the credentials used to connect to the Active Directory server have either Domain Administrator rights (not recommended) or the "reset password" access right.  
@@ -2185,9 +2185,9 @@
   
  The <xref:System.Web.Security.ActiveDirectoryMembershipProvider> instance will attempt a concurrent bind against Active Directory when one of the following conditions is met:  
   
--   The <xref:System.Web.Security.ActiveDirectoryMembershipProvider.CurrentConnectionProtection%2A> property is set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection>.  
+-   The <xref:System.Web.Security.ActiveDirectoryMembershipProvider.CurrentConnectionProtection%2A> property is set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection.None>.  
   
--   The <xref:System.Web.Security.ActiveDirectoryMembershipProvider.CurrentConnectionProtection%2A> property is set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection> and SSL is chosen by the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> instance to secure the connection.  
+-   The <xref:System.Web.Security.ActiveDirectoryMembershipProvider.CurrentConnectionProtection%2A> property is set to <xref:System.Web.Security.ActiveDirectoryConnectionProtection.SignAndSeal> and SSL is chosen by the <xref:System.Web.Security.ActiveDirectoryMembershipProvider> instance to secure the connection.  
   
  In addition, for a concurrent bind to be made, the following conditions must be true:  
   

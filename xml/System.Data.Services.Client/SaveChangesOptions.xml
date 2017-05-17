@@ -23,7 +23,7 @@
 ## Remarks  
  When the ContinueOnError option is set, subsequent operations are still tried even after an error occurs.  
   
- When batching is not used, the <xref:System.Data.Services.Client.DataServiceResponse.BatchHeaders%2A> property on the <xref:System.Data.Services.Client.DataServiceResponse> instance returns an empty collection and the <xref:System.Data.Services.Client.DataServiceResponse.BatchStatusCode%2A> property is zero.  
+ When batching is not used, the <xref:System.Data.Services.Client.DataServiceResponse.BatchHeaders%2A> property on the <xref:System.Data.Services.Client.DataServiceResponse.BatchHeaders%2A> instance returns an empty collection and the <xref:System.Data.Services.Client.DataServiceResponse.BatchStatusCode%2A> property is zero.  
   
  You cannot set both Batch and ContinueOnError at the same time.  
   

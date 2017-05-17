@@ -23,7 +23,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataGridViewTextBoxColumn> class is a specialized type of <xref:System.Windows.Forms.DataGridViewColumn> class used to logically host cells that enable displaying and editing of text strings. A <xref:System.Windows.Forms.DataGridViewTextBoxColumn> has an associated <xref:System.Windows.Forms.DataGridViewTextBoxCell> object in every <xref:System.Windows.Forms.DataGridViewRow> that intersects it. When a <xref:System.Windows.Forms.DataGridViewTextBoxCell> becomes activated, it supplies a <xref:System.Windows.Forms.DataGridViewTextBoxEditingControl> control to handle user input.  
   
- The sort mode for this column type defaults to <xref:System.Windows.Forms.DataGridViewColumnSortMode>.  
+ The sort mode for this column type defaults to <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic>.  
   
    
   
@@ -61,7 +61,7 @@
 |Property|Value|  
 |--------------|-----------|  
 |<xref:System.Windows.Forms.DataGridViewTextBoxColumn.CellTemplate%2A>|A newly created <xref:System.Windows.Forms.DataGridViewTextBoxCell>.|  
-|<xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A>|<xref:System.Windows.Forms.DataGridViewColumnSortMode>|  
+|<xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A>|<xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic>|  
   
  ]]></format>
         </remarks>
@@ -170,15 +170,15 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When a <xref:System.Windows.Forms.DataGridView> control is sorted using a column with a <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode>, a sorting glyph is automatically displayed in the column header.  
+ When a <xref:System.Windows.Forms.DataGridView> control is sorted using a column with a <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic>, a sorting glyph is automatically displayed in the column header.  
   
- When the control is sorted using a column with a <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A> property.  
+ When the control is sorted using a column with a <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.Programmatic>, you must display the sorting glyph yourself through the <xref:System.Windows.Forms.DataGridViewColumnHeaderCell.SortGlyphDirection%2A> property.  
   
- The default sort mode of a <xref:System.Windows.Forms.DataGridViewTextBoxColumn> is <xref:System.Windows.Forms.DataGridViewColumnSortMode>. The default sort mode for other column types is <xref:System.Windows.Forms.DataGridViewColumnSortMode>.  
+ The default sort mode of a <xref:System.Windows.Forms.DataGridViewTextBoxColumn> is <xref:System.Windows.Forms.DataGridViewColumnSortMode.Automatic>. The default sort mode for other column types is <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable>.  
   
  The <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> value does not prevent you from sorting a column programmatically, although other restrictions may apply. For more information, see the <xref:System.Windows.Forms.DataGridView.Sort%2A> method.  
   
- A <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode> will not prevent the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick?displayProperty=fullName> event from occurring, but it will prevent the header from changing its appearance when it is clicked.  
+ A <xref:System.Windows.Forms.DataGridViewTextBoxColumn.SortMode%2A> property value of <xref:System.Windows.Forms.DataGridViewColumnSortMode.NotSortable> will not prevent the <xref:System.Windows.Forms.DataGridView.ColumnHeaderMouseClick?displayProperty=fullName> event from occurring, but it will prevent the header from changing its appearance when it is clicked.  
   
    
   

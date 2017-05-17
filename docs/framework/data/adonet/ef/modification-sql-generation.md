@@ -35,7 +35,7 @@ This section discusses how to develop a modification SQL generation module for y
   
  ![Diagram](../../../../../docs/framework/data/adonet/ef/media/558ba7b3-dd19-48d0-b91e-30a76415bf5f.gif "558ba7b3-dd19-48d0-b91e-30a76415bf5f")  
   
- DbModificationCommandTree has a Target property that represents the target set for the modification operation. The Target’s Expression property, which defines the input set is always DbScanExpression.  A DbScanExpression can either represent a table or a view, or a set of data defined with a query if the metadata property “Defining Query” of its Target is non-null.  
+ DbModificationCommandTree has a Target property that represents the target set for the modification operation. The Target’s Expression property, which defines the input set is always DbScanExpression.  A DbScanExpression can either represent a table or a view, or a set of data defined with a query if the metadata property "Defining Query" of its Target is non-null.  
   
  A DbScanExpression that represents a query could only reach a provider as a target of modification if the set was defined by using a defining query in the model but no function was provided for the corresponding modification operation. Providers may not be able to support such a scenario (SqlClient, for example, does not).  
   
@@ -114,7 +114,7 @@ The elements of the list are specified as type DbModificationClause, which speci
   
 ```  
 -- first insert Template  
-INSERT <target>   [ (setClauseProperty0, .. setClausePropertyN)]    
+INSERT <target>   [ (setClauseProperty0, .. setClausePropertyN)]    
 VALUES (setClauseValue0, .. setClauseValueN) |  DEFAULT VALUES   
   
 [SELECT <returning>   
@@ -128,8 +128,8 @@ VALUES (setClauseValue0, .. setClauseValueN) |  DEFAULT VALUES
 -- second insert template  
 DECLARE @generated_keys TABLE [(keyMember0, … keyMemberN)  
   
-INSERT <target>   [ (setClauseProperty0, .. setClausePropertyN)]    
- OUTPUT inserted.KeyMember0, …, inserted.KeyMemberN INTO @generated_keys  
+INSERT <target>   [ (setClauseProperty0, .. setClausePropertyN)]    
+ OUTPUT inserted.KeyMember0, …, inserted.KeyMemberN INTO @generated_keys  
  VALUES (setClauseValue0, .. setClauseValueN) |  DEFAULT VALUES   
   
 [SELECT <returning_over_t>   
@@ -196,7 +196,7 @@ where @@ROWCOUNT > 0 and [CategoryID] = scope_identity()
   
 ```  
 -- UPDATE Template   
-UPDATE <target>   
+UPDATE <target>   
 SET setClauseProprerty0 = setClauseValue0,  .. setClauseProprertyN = setClauseValueN  | @i = 0  
 WHERE <predicate>  
   
@@ -255,7 +255,7 @@ where ([CategoryID] = @p1)
   
 ```  
 -- DELETE Template   
-DELETE <target>   
+DELETE <target>   
 WHERE <predicate>  
 ```  
   

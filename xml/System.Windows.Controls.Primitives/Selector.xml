@@ -265,9 +265,7 @@
  The following example binds two <xref:System.Windows.Controls.ListBox> controls to the same <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A>. Because <xref:System.Windows.Controls.Primitives.Selector.IsSynchronizedWithCurrentItem%2A> is set to `true` on each <xref:System.Windows.Controls.ListBox>, the selected item is always the same for both controls  
   
  [!code-xml[Selector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#2)]
- <!-- TODO: review snippet reference [!code-xml[Selector#2](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#2)]  -->  
-[!code-xml[Selector#4](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#4)]
-<!-- TODO: review snippet reference [!code-xml[Selector#4](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#4)]  -->  
+ [!code-xml[Selector#4](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#4)]   
   
  ]]></format>
         </remarks>
@@ -683,9 +681,7 @@
  The following example binds a <xref:System.Windows.Controls.ListBox> to a collection of `Employee` objects. The example sets <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> to `@EmployeeNumber` and <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> to `12345`.  This selects the `Employee` that has `12345` as the value of `EmployeeNumber`.  This example also binds a <xref:System.Windows.Controls.TextBlock> to the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> of the <xref:System.Windows.Controls.ListBox>.  When the user changes the selection in the <xref:System.Windows.Controls.ListBox>, the <xref:System.Windows.Controls.TextBlock> is updated to show the employee number of the currently selected employee.  
   
  [!code-xml[Selector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#2)]
- <!-- TODO: review snippet reference [!code-xml[Selector#2](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#2)]  -->  
-[!code-xml[Selector#3](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#3)]
-<!-- TODO: review snippet reference [!code-xml[Selector#3](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#3)]  -->  
+ [!code-xml[Selector#3](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#3)]   
   
  ]]></format>
         </remarks>
@@ -736,10 +732,8 @@
 ## Examples  
  The following example binds a <xref:System.Windows.Controls.ListBox> to a collection of `Employee` objects. The example sets <xref:System.Windows.Controls.Primitives.Selector.SelectedValuePath%2A> to `@EmployeeNumber` and <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> to `12345`.  This selects the `Employee` that has `12345` as the value of `EmployeeNumber`.  This example also binds a <xref:System.Windows.Controls.TextBlock> to the <xref:System.Windows.Controls.Primitives.Selector.SelectedValue%2A> of the <xref:System.Windows.Controls.ListBox>.  When the user changes the selection in the <xref:System.Windows.Controls.ListBox>, the <xref:System.Windows.Controls.TextBlock> is updated to show the employee number of the currently selected employee.  
   
- [!code-xml[Selector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#2)]
- <!-- TODO: review snippet reference [!code-xml[Selector#2](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#2)]  -->  
-[!code-xml[Selector#3](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#3)]
-<!-- TODO: review snippet reference [!code-xml[Selector#3](~/samples/snippets/xaml/VS_Snippets_Wpf/Selector/XAML/Window1.xaml#3)]  -->  
+ [!code-xml[Selector#2](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#2)] 
+ [!code-xml[Selector#3](~/samples/snippets/csharp/VS_Snippets_Wpf/Selector/CS/Window1.xaml#3)]   
   
  ]]></format>
         </remarks>
@@ -809,7 +803,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Primitives.Selector>|  
+|Identifier field|<xref:System.Windows.Controls.Primitives.Selector.SelectionChangedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.Controls.SelectionChangedEventHandler>|  
   

@@ -67,6 +67,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ReceiveActivity" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Workflow.Activities.ReceiveActivity> constructor is typically invoked in the code-beside file created by the workflow designer.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ReceiveActivity ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -402,6 +419,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetContext">
+      <AssemblyInfo>
+        <AssemblyName>System.WorkflowServices</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a dictionary that contains the context information used for communication between a client and the workflow service.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Context information is used for communication between the client and the service it is communicating with and includes such things as identification for correlation.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetContext">
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;string,string&gt; GetContext (System.Workflow.ComponentModel.Activity activity, System.Workflow.Activities.ContextToken contextToken);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Collections.Generic.IDictionary`2&lt;string, string&gt; GetContext(class System.Workflow.ComponentModel.Activity activity, class System.Workflow.Activities.ContextToken contextToken) cil managed" />
@@ -539,7 +573,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Workflow.Activities.ReceiveActivity> property is an attached dependency property defined by the <xref:System.Workflow.Activities.ReceiveActivity> activity. This dependency property is attached to the root workflow that contains the <xref:System.Workflow.Activities.ReceiveActivity> activity using the <xref:System.Workflow.Activities.ReceiveActivity.SetWorkflowServiceAttributes%2A> method call at design time.  
+ The <xref:System.Workflow.Activities.ReceiveActivity.WorkflowServiceAttributesProperty> property is an attached dependency property defined by the <xref:System.Workflow.Activities.ReceiveActivity> activity. This dependency property is attached to the root workflow that contains the <xref:System.Workflow.Activities.ReceiveActivity> activity using the <xref:System.Workflow.Activities.ReceiveActivity.SetWorkflowServiceAttributes%2A> method call at design time.  
   
  The <xref:System.Workflow.Activities.ReceiveActivity.WorkflowServiceAttributesProperty> property is used for defining service-level behavior attributes that are applied to the workflow service when it starts. These cannot be modified at runtime.  
   
@@ -819,9 +853,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Workflow.Activities.ReceiveActivity> property is an attached dependency property defined by the <xref:System.Workflow.Activities.ReceiveActivity> activity. This dependency property is attached to the root workflow that contains the <xref:System.Workflow.Activities.ReceiveActivity> activity using the <xref:System.Workflow.Activities.ReceiveActivity.SetWorkflowServiceAttributes%2A> method call at design time.  
+ The <xref:System.Workflow.Activities.ReceiveActivity.WorkflowServiceAttributesProperty> property is an attached dependency property defined by the <xref:System.Workflow.Activities.ReceiveActivity> activity. This dependency property is attached to the root workflow that contains the <xref:System.Workflow.Activities.ReceiveActivity> activity using the <xref:System.Workflow.Activities.ReceiveActivity.SetWorkflowServiceAttributes%2A> method call at design time.  
   
- The <xref:System.Workflow.Activities.ReceiveActivity> property is used for defining service-level behavior attributes that are applied to the workflow service when it starts. These cannot be modified at runtime.  
+ The <xref:System.Workflow.Activities.ReceiveActivity.WorkflowServiceAttributesProperty> property is used for defining service-level behavior attributes that are applied to the workflow service when it starts. These cannot be modified at runtime.  
   
 > [!NOTE]
 >  If the current workflow starts another workflow using a <xref:System.Workflow.Activities.InvokeWorkflowActivity> activity, the invoked workflow does not inherit the invoking workflow's service attributes.  
@@ -953,39 +987,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Workflow.Activities.ReceiveActivity" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Workflow.Activities.ReceiveActivity> constructor is typically invoked in the code-beside file created by the workflow designer.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetContext">
-      <AssemblyInfo>
-        <AssemblyName>System.WorkflowServices</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a dictionary that contains the context information used for communication between a client and the workflow service.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Context information is used for communication between the client and the service it is communicating with and includes such things as identification for correlation.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

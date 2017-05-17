@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.Pipes</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
@@ -35,7 +36,7 @@
    
   
 ## Examples  
- The following example demonstrates a way to send a string from a parent process to a child process on the same computer using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process with a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>. The server then waits for a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process to connect to it. In this example, both processes are on the same computer and the <xref:System.IO.Pipes.NamedPipeClientStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>. The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
+ The following example demonstrates a way to send a string from a parent process to a child process on the same computer using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process with a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.Out>. The server then waits for a <xref:System.IO.Pipes.NamedPipeClientStream> object in a child process to connect to it. In this example, both processes are on the same computer and the <xref:System.IO.Pipes.NamedPipeClientStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.In>. The parent process then sends a user-supplied string to the child process. The string is displayed to the console.  
   
  This example is for the server process, which uses the <xref:System.IO.Pipes.NamedPipeServerStream> class. For the entire code example, including the code for both the pipe client and server, see [How to: Use Named Pipes for Network Interprocess Communication](~/docs/standard/io/how-to-use-named-pipes-for-network-interprocess-communication.md).  
   
@@ -54,6 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -76,19 +78,19 @@
 ## Remarks  
  This constructor creates a <xref:System.IO.Pipes.NamedPipeServerStream> object that has the following characteristics:  
   
--   A default pipe direction of <xref:System.IO.Pipes.PipeDirection>.  
+-   A default pipe direction of <xref:System.IO.Pipes.PipeDirection.InOut>.  
   
 -   The maximum number of server instances that share the same name set to 1.  
   
--   A <xref:System.IO.Pipes.PipeTransmissionMode> value of <xref:System.IO.Pipes.PipeTransmissionMode>.  
+-   A <xref:System.IO.Pipes.PipeTransmissionMode> value of <xref:System.IO.Pipes.PipeTransmissionMode.Byte>.  
   
--   A <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
+-   A <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions.None>.  
   
 -   Default input and output buffer sizes.  
   
 -   No pipe security.  
   
--   A <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
 -   No specified additional <xref:System.IO.Pipes.PipeAccessRights>.  
   
@@ -115,6 +117,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -139,22 +142,22 @@
 ## Remarks  
  This constructor creates a <xref:System.IO.Pipes.NamedPipeServerStream> object that has the following characteristics:  
   
--   A <xref:System.IO.Pipes.PipeTransmissionMode> value of <xref:System.IO.Pipes.PipeTransmissionMode>.  
+-   A <xref:System.IO.Pipes.PipeTransmissionMode> value of <xref:System.IO.Pipes.PipeTransmissionMode.Byte>.  
   
--   A <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
+-   A <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions.None>.  
   
 -   Default input and output buffer sizes.  
   
 -   No pipe security.  
   
--   A <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
 -   No specified additional <xref:System.IO.Pipes.PipeAccessRights>.  
   
    
   
 ## Examples  
- The following example demonstrates a method to send a string from a parent process to a child process using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process. The <xref:System.IO.Pipes.NamedPipeServerStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>, which then blocks until a <xref:System.IO.Pipes.NamedPipeClientStream> object establishes a connection to the current <xref:System.IO.Pipes.NamedPipeServerStream> object.  
+ The following example demonstrates a method to send a string from a parent process to a child process using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process. The <xref:System.IO.Pipes.NamedPipeServerStream> object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.Out>, which then blocks until a <xref:System.IO.Pipes.NamedPipeClientStream> object establishes a connection to the current <xref:System.IO.Pipes.NamedPipeServerStream> object.  
   
  [!code-csharp[System.IO.Pipes.NamedPipeServerStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeServerStream_Sample1/cs/Program.cs#01)]
  [!code-vb[System.IO.Pipes.NamedPipeServerStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeServerStream_Sample1/vb/program.vb#01)]  
@@ -186,6 +189,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -214,15 +218,15 @@
   
 -   A default value of 1 for the maximum number of server instances that share the same name.  
   
--   A default <xref:System.IO.Pipes.PipeTransmissionMode> value of <xref:System.IO.Pipes.PipeTransmissionMode>.  
+-   A default <xref:System.IO.Pipes.PipeTransmissionMode> value of <xref:System.IO.Pipes.PipeTransmissionMode.Byte>.  
   
--   A <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
+-   A <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions.None>.  
   
 -   Default input and output buffer sizes.  
   
 -   No pipe security.  
   
--   A <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
 -   No specified additional <xref:System.IO.Pipes.PipeAccessRights>.  
   
@@ -269,6 +273,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -317,6 +322,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -345,13 +351,13 @@
 ## Remarks  
  This constructor creates a <xref:System.IO.Pipes.NamedPipeServerStream> object that has the following characteristics:  
   
--   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions>.  
+-   A default <xref:System.IO.Pipes.PipeOptions> value of <xref:System.IO.Pipes.PipeOptions.None>.  
   
 -   Default input and output buffer sizes.  
   
 -   No pipe security.  
   
--   A <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
 -   No specified additional <xref:System.IO.Pipes.PipeAccessRights>.  
   
@@ -386,6 +392,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -420,7 +427,7 @@
   
 -   No pipe security.  
   
--   A <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
 -   No specified additional <xref:System.IO.Pipes.PipeAccessRights>.  
   
@@ -459,6 +466,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -495,7 +503,7 @@
   
 -   No additional pipe security.  
   
--   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
 -   No specified additional <xref:System.IO.Pipes.PipeAccessRights>.  
   
@@ -566,7 +574,7 @@
 ## Remarks  
  This constructor creates a <xref:System.IO.Pipes.NamedPipeServerStream> object that has the following characteristics:  
   
--   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability>.  
+-   A default <xref:System.IO.HandleInheritability> value of <xref:System.IO.HandleInheritability.None>.  
   
 -   No specified additional <xref:System.IO.Pipes.PipeAccessRights>.  
   
@@ -760,6 +768,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
       </ReturnValue>
@@ -803,6 +815,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -823,7 +836,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling the <xref:System.IO.Pipes.NamedPipeServerStream.Disconnect%2A> method will block until all the sent characters have been read unless the transmission mode of the pipe is set to <xref:System.IO.Pipes.PipeTransmissionMode> and the buffer size is set in the constructor that created the <xref:System.IO.Pipes.NamedPipeServerStream> object. In this case, not all of the messages will be received. Calling <xref:System.IO.Pipes.PipeStream.WaitForPipeDrain%2A> causes the server to block until all the data has been read from the pipe.  
+ Calling the <xref:System.IO.Pipes.NamedPipeServerStream.Disconnect%2A> method will block until all the sent characters have been read unless the transmission mode of the pipe is set to <xref:System.IO.Pipes.PipeTransmissionMode.Message> and the buffer size is set in the constructor that created the <xref:System.IO.Pipes.NamedPipeServerStream> object. In this case, not all of the messages will be received. Calling <xref:System.IO.Pipes.PipeStream.WaitForPipeDrain%2A> causes the server to block until all the data has been read from the pipe.  
   
  ]]></format>
         </remarks>
@@ -852,6 +865,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -889,6 +906,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -912,6 +930,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -933,7 +952,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName%2A> method returns `null` if the client has not yet written to the pipe or if the connected client did not connect with a <xref:System.Security.Principal.TokenImpersonationLevel> of <xref:System.Security.Principal.TokenImpersonationLevel>.  
+ The <xref:System.IO.Pipes.NamedPipeServerStream.GetImpersonationUserName%2A> method returns `null` if the client has not yet written to the pipe or if the connected client did not connect with a <xref:System.Security.Principal.TokenImpersonationLevel> of <xref:System.Security.Principal.TokenImpersonationLevel.Impersonation>.  
   
    
   
@@ -978,6 +997,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1007,6 +1030,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.Pipes</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1060,6 +1087,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1085,7 +1113,7 @@
    
   
 ## Examples  
- The following example demonstrates a method to send a string from a parent process to a child process using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process. This object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection>, which then blocks until a <xref:System.IO.Pipes.NamedPipeClientStream> object establishes a connection to the <xref:System.IO.Pipes.NamedPipeServerStream> object. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
+ The following example demonstrates a method to send a string from a parent process to a child process using named pipes. This example creates a <xref:System.IO.Pipes.NamedPipeServerStream> object in a parent process. This object has a <xref:System.IO.Pipes.PipeDirection> value of <xref:System.IO.Pipes.PipeDirection.Out>, which then blocks until a <xref:System.IO.Pipes.NamedPipeClientStream> object establishes a connection to the <xref:System.IO.Pipes.NamedPipeServerStream> object. This example is part of a larger example provided for the <xref:System.IO.Pipes.NamedPipeServerStream> and <xref:System.IO.Pipes.NamedPipeClientStream> classes.  
   
  [!code-csharp[System.IO.Pipes.NamedPipeServerStream_Sample1#01](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeServerStream_Sample1/cs/Program.cs#01)]
  [!code-vb[System.IO.Pipes.NamedPipeServerStream_Sample1#01](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.IO.Pipes.NamedPipeServerStream_Sample1/vb/program.vb#01)]  
@@ -1109,6 +1137,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1144,6 +1173,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.Pipes</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

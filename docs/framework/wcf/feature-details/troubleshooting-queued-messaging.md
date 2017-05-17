@@ -82,7 +82,7 @@ This section contains common questions and troubleshooting help for using queues
   
  **Q:** I have specified a custom dead-letter queue, but when I start the sender application, I get an exception that either the dead-letter queue is not found, or the sending application has no permission to the dead-letter queue. Why is this happening?  
   
- **A:** The custom dead-letter queue URI must include a “localhost” or the computer name in the first segment, for example, net.msmq://localhost/private/myAppdead-letter queue.  
+ **A:** The custom dead-letter queue URI must include a "localhost" or the computer name in the first segment, for example, net.msmq://localhost/private/myAppdead-letter queue.  
   
  **Q:** Is it always necessary to define a custom dead-letter queue, or is there a default dead-letter queue?  
   
@@ -90,9 +90,9 @@ This section contains common questions and troubleshooting help for using queues
   
  If assurances are none (<xref:System.ServiceModel.MsmqBindingBase.ExactlyOnce%2A> = `false`), then the default is no dead-letter queue functionality.  
   
- **Q:** My service throws on SvcHost.Open with a message “EndpointListener requirements cannot be met by the ListenerFactory”. Why?  
+ **Q:** My service throws on SvcHost.Open with a message "EndpointListener requirements cannot be met by the ListenerFactory". Why?  
   
- A. Check your service contract. You may have forgotten to put “IsOneWay=`true`” on all the service operations. Queues support only one-way service operations.  
+ A. Check your service contract. You may have forgotten to put "IsOneWay=`true`" on all the service operations. Queues support only one-way service operations.  
   
  **Q:** There are messages in the queue but no service operation is invoked. What is the problem?  
   
@@ -147,7 +147,7 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
 ### Security-Related Troubleshooting  
  **Q:** When I run the sample that uses a default binding in workgroup mode, messages seem to get sent but are never received by the receiver.  
   
- **A:** By default, messages are signed using an MSMQ internal certificate that requires the Active Directory directory service. In workgroup mode, because Active Directory is not available, signing the message fails. So the message lands in the dead-letter queue and failure cause, such as “Bad signature”, is indicated.  
+ **A:** By default, messages are signed using an MSMQ internal certificate that requires the Active Directory directory service. In workgroup mode, because Active Directory is not available, signing the message fails. So the message lands in the dead-letter queue and failure cause, such as "Bad signature", is indicated.  
   
  The workaround is to turn off security. This is done by setting <xref:System.ServiceModel.NetMsmqSecurity.Mode%2A> = <xref:System.ServiceModel.NetMsmqSecurityMode> to make it work in workgroup mode.  
   
@@ -155,11 +155,11 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
  Yet another workaround is to install MSMQ with Active Directory integration.  
   
- **Q:** When I send a message with default binding (transport security turned on) in Active Directory to a queue, I get an “internal certificate not found” message. How do I fix this?  
+ **Q:** When I send a message with default binding (transport security turned on) in Active Directory to a queue, I get an "internal certificate not found" message. How do I fix this?  
   
  **A:** This means that the certificate in Active Directory for the sender must be renewed. To do so, open **Control Panel**, **Administrative Tools**, **Computer Management**, right-click **MSMQ**, and select **Properties**. Select the **User Certificate** tab and click the **Renew** button.  
   
- **Q:** When I send a message using <xref:System.ServiceModel.MsmqAuthenticationMode> and specify the certificate to use, I get an “Invalid certificate” message. How do I fix this?  
+ **Q:** When I send a message using <xref:System.ServiceModel.MsmqAuthenticationMode> and specify the certificate to use, I get an "Invalid certificate" message. How do I fix this?  
   
  **A:** You cannot use a local machine certificate store with certificate mode. You have to copy the certificate from the machine certificate store to the current user store using the Certificate snap-in. To get the Certificate snap-in:  
   
@@ -177,16 +177,16 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
 7.  Select **Local Computer** and click **Finish**. You can now drag and drop certificates from the machine certificate store to the current user store.  
   
- **Q:** When my service reads from a queue on another computer in workgroup mode, I get an “access denied” exception.  
+ **Q:** When my service reads from a queue on another computer in workgroup mode, I get an "access denied" exception.  
   
- **A:** In workgroup mode, for a remote application to gain access to the queue, the application must have permission to access the queue. Add “Anonymous login” to the queue's access control list (ACL) and give it read permission.  
+ **A:** In workgroup mode, for a remote application to gain access to the queue, the application must have permission to access the queue. Add "Anonymous login" to the queue's access control list (ACL) and give it read permission.  
   
  **Q:** When a network service client (or any client that does not have a domain account) sends a queued message, the send fails with an invalid certificate. How do I fix this?  
   
  **A:** Check the binding configuration. The default binding has MSMQ transport security turned on to sign the message. Turn it off.  
   
 ### Remote Transacted Receives  
- **Q:** When I have a queue on machine A, and a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that reads messages from a queue on machine B (the remote transacted receive scenario), messages are not read from the queue. Tracing information indicates the receive failed with the message “Transaction cannot be imported.” What can I do to fix this?  
+ **Q:** When I have a queue on machine A, and a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service that reads messages from a queue on machine B (the remote transacted receive scenario), messages are not read from the queue. Tracing information indicates the receive failed with the message "Transaction cannot be imported." What can I do to fix this?  
   
  **A:** There are three possible reasons for this:  
   
@@ -194,7 +194,7 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
      ![Enabling network DTC access](../../../../docs/framework/wcf/feature-details/media/applicationserveraddcomps.jpg "ApplicationServerAddComps")  
   
--   Check the authentication mode for communicating with the transaction manager. If you are in workgroup mode, “No Authentication Required” must be selected. If you are in domain mode, then “Mutual Authentication Required” must be selected.  
+-   Check the authentication mode for communicating with the transaction manager. If you are in workgroup mode, "No Authentication Required" must be selected. If you are in domain mode, then "Mutual Authentication Required" must be selected.  
   
      ![Enabling XA transactions](../../../../docs/framework/wcf/feature-details/media/4f3695e0-fb0b-4c5b-afac-75f8860d2bb0.jpg "4f3695e0-fb0b-4c5b-afac-75f8860d2bb0")  
   

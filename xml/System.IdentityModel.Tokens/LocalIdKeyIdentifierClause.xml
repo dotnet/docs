@@ -142,7 +142,7 @@
         <param name="clause">To be added.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified key identifier clause.</summary>
         <returns>
-          <see langword="true" /> if <paramref name="keyIdentifierClause" /> is of type <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> and the values of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> and <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> properties match the current instance; otherwise, <see langword="false" />. See the remarks for more details.</returns>
+          <see langword="true" /> if <paramref name="clause" /> is of type <see cref="T:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause" /> and the values of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> and <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> properties match the current instance; otherwise, <see langword="false" />. See the remarks for more details.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -180,7 +180,7 @@
         <param name="ownerType">A <see cref="T:System.Type" /> that is the type of security token that is referred to by the <c>localId</c> parameter.</param>
         <summary>Returns a value that indicates whether the key identifier for this instance is equivalent to the specified reference and type.</summary>
         <returns>
-          <see langword="true" /> if the <paramref name="localId" /> and <paramref name="ownerType" /> parameters match the values of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> and <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> properties; otherwise, <see langword="false" />. See the remarks for more details.</returns>
+          <see langword="true" /> if the <paramref name="localId" /> and <paramref name="ownerType" /> parameters match the values of the <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.LocalId" /> and <see cref="P:System.IdentityModel.Tokens.LocalIdKeyIdentifierClause.OwnerType" /> properties; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

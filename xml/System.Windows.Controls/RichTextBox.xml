@@ -48,7 +48,7 @@
   
  Horizontally and vertically aligning content within a <xref:System.Windows.Controls.RichTextBox> is done with the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> and <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> properties. Aligning the <xref:System.Windows.Controls.RichTextBox> within the layout of the page is done with the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> properties.  
   
- Scrollbars are not visible on a <xref:System.Windows.Controls.RichTextBox> by default. To make a scrollbar visible, set the <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> property to <xref:System.Windows.Controls.ScrollBarVisibility> or <xref:System.Windows.Controls.ScrollBarVisibility>.  
+ Scrollbars are not visible on a <xref:System.Windows.Controls.RichTextBox> by default. To make a scrollbar visible, set the <xref:System.Windows.Controls.Primitives.TextBoxBase.VerticalScrollBarVisibility%2A> property to <xref:System.Windows.Controls.ScrollBarVisibility.Visible> or <xref:System.Windows.Controls.ScrollBarVisibility.Auto>.  
   
  Usually, the <xref:System.Windows.Controls.Primitives.TextBoxBase.TextChanged> event should be used to detect when the text in a <xref:System.Windows.Controls.TextBox> or <xref:System.Windows.Controls.RichTextBox> changes, rather then <xref:System.Windows.UIElement.KeyDown> as you might expect. For an example, see [How to: Detect When Text in a TextBox Has Changed](~/docs/framework/wpf/controls/how-to-detect-when-text-in-a-textbox-has-changed.md).  
   
@@ -338,7 +338,6 @@
 ## Examples  
  The following example creates <xref:System.Windows.Controls.CheckBox> and a <xref:System.Windows.Controls.RichTextBox> that contains a <xref:System.Windows.Documents.Hyperlink> and a <xref:System.Windows.Controls.Button>.  The <xref:System.Windows.Controls.RichTextBox.IsDocumentEnabled%2A> property of the <xref:System.Windows.Controls.RichTextBox> is bound to the <xref:System.Windows.Controls.Primitives.ToggleButton.IsChecked%2A> property of the <xref:System.Windows.Controls.CheckBox>.  When the user selects the <xref:System.Windows.Controls.CheckBox>, the user can interact with the <xref:System.Windows.Controls.Button> and <xref:System.Windows.Documents.Hyperlink>. When the user clears the <xref:System.Windows.Controls.CheckBox>, the <xref:System.Windows.Controls.Button> and <xref:System.Windows.Documents.Hyperlink> are disabled.  
   
- <!-- TODO: review snippet reference [!code-xml[RTBIsDocumentEnabled#1](~/samples/snippets/xaml/VS_Snippets_Wpf/RTBIsDocumentEnabled/XAML/Window1.xaml#1)]  -->
  [!code-xml[RTBIsDocumentEnabled#1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/RTBIsDocumentEnabled/VB/Window1.xaml#1)]  
   
  ]]></format>

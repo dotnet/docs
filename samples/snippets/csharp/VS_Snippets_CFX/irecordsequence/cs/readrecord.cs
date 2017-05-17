@@ -69,7 +69,7 @@ class ReadRecordsSample
 			sequence = new FileRecordSequence(logName, FileAccess.ReadWrite);
 		}
 
-	 //<snippet3>
+	//<snippet3>
 	// Append records to the record sequence.
 		public void AppendRecords()
 		{
@@ -82,7 +82,7 @@ class ReadRecordsSample
 
 			Console.WriteLine("Done...");
 		}
-	//<snippet3>
+	//</snippet3>
 		 
 	//<snippet2>
 	// Read the records added to the log. 

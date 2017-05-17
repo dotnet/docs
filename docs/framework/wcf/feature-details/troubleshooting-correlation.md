@@ -60,16 +60,16 @@ class CustomFactory : WorkflowServiceHostFactory
  When this handler is invoked, the message can be retrieved by using the <xref:System.ServiceModel.UnknownMessageReceivedEventArgs.Message%2A> property of the <xref:System.ServiceModel.UnknownMessageReceivedEventArgs>, and will resemble the following message.  
   
 ```Output  
-<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">  
-  <s:Header>  
-    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:8080/OrderService</To>  
-    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService/AddItem</Action>  
-  </s:Header>  
-  <s:Body>  
-    <AddItem xmlns="http://tempuri.org/">  
-      <Item>Books</Item>  
-    </AddItem>  
-  </s:Body>  
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">  
+  <s:Header>  
+    <To s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://localhost:8080/OrderService</To>  
+    <Action s:mustUnderstand="1" xmlns="http://schemas.microsoft.com/ws/2005/05/addressing/none">http://tempuri.org/IService/AddItem</Action>  
+  </s:Header>  
+  <s:Body>  
+    <AddItem xmlns="http://tempuri.org/">  
+      <Item>Books</Item>  
+    </AddItem>  
+  </s:Body>  
 </s:Envelope>  
   
 ```  

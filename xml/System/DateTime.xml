@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -406,6 +407,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -426,7 +428,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind>.  
+ The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind.Unspecified>.  
   
  For applications in which portability of date and time data or a limited degree of time zone awareness is important, you can use the corresponding <xref:System.DateTimeOffset> constructor.  
   
@@ -456,6 +458,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -499,6 +502,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -563,6 +567,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="year" Type="System.Int32" />
         <Parameter Name="month" Type="System.Int32" />
@@ -579,7 +587,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The time of day for the resulting <xref:System.DateTime> is midnight (00:00:00). The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind>.  
+ The time of day for the resulting <xref:System.DateTime> is midnight (00:00:00). The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind.Unspecified>.  
   
  The allowable values for `year`, `month`, and `day` depend on `calendar`. An exception is thrown if the specified date and time cannot be expressed using `calendar`.  
   
@@ -620,6 +628,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -650,7 +659,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind>.  
+ The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind.Unspecified>.  
   
  This constructor interprets`year`, `month`, and `day` as a year, month, and day in the Gregorian calendar. To instantiate a <xref:System.DateTime> value by using the year, month, and day in another calendar, call the <xref:System.DateTime.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Globalization.Calendar%29> constructor.  
   
@@ -701,6 +710,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -787,6 +797,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="year" Type="System.Int32" />
         <Parameter Name="month" Type="System.Int32" />
@@ -809,7 +823,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind>.  
+ The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind.Unspecified>.  
   
  The allowable values for `year`, `month`, and `day` depend on `calendar`. An exception is thrown if the specified date and time cannot be expressed using `calendar`.  
   
@@ -862,6 +876,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -896,7 +911,7 @@
 ## Remarks  
  This constructor interprets`year`, `month`, and `day` as a year, month, and day in the Gregorian calendar. To instantiate a <xref:System.DateTime> value by using the year, month, and day in another calendar, call the <xref:System.DateTime.%23ctor%28System.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%2CSystem.Globalization.Calendar%29> constructor.  
   
- The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind>.  
+ The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind.Unspecified>.  
   
  For applications in which portability of date and time data or a limited degree of time zone awareness is important, you can use the corresponding <xref:System.DateTimeOffset> constructor.  
   
@@ -949,6 +964,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1041,6 +1057,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="year" Type="System.Int32" />
         <Parameter Name="month" Type="System.Int32" />
@@ -1065,7 +1085,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind>.  
+ The <xref:System.DateTime.Kind%2A> property is initialized to <xref:System.DateTimeKind.Unspecified>.  
   
  The allowable values for `year`, `month`, and `day` depend on `calendar`. An exception is thrown if the specified date and time cannot be expressed using `calendar`.  
   
@@ -1126,6 +1146,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="year" Type="System.Int32" />
@@ -1212,6 +1236,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1267,6 +1292,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1324,6 +1350,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1380,6 +1407,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1434,6 +1462,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1489,6 +1518,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1547,6 +1577,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1601,6 +1632,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1643,6 +1675,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1699,6 +1732,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1722,40 +1756,23 @@
         <summary>Compares two instances of <see cref="T:System.DateTime" /> and returns an integer that indicates whether the first instance is earlier than, the same as, or later than the second instance.</summary>
         <returns>A signed number indicating the relative values of <paramref name="t1" /> and <paramref name="t2" />.  
   
- <list type="table">  
-<listheader>  
-<term> Value Type  
+ <list type="table"><listheader><term> Value Type  
   
- </term>  
-<description> Condition  
+ </term><description> Condition  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="t1" /> is earlier than <paramref name="t2" />.  
+ </term><description><paramref name="t1" /> is earlier than <paramref name="t2" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="t1" /> is the same as <paramref name="t2" />.  
+ </term><description><paramref name="t1" /> is the same as <paramref name="t2" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="t1" /> is later than <paramref name="t2" />.  
+ </term><description><paramref name="t1" /> is later than <paramref name="t2" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1774,6 +1791,32 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CompareTo">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Compares the value of this instance to a specified <see cref="T:System.DateTime" /> value and indicates whether this instance is earlier than, the same as, or later than the specified <see cref="T:System.DateTime" /> value.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The two overloads of the <xref:System.DateTime.CompareTo%2A> method return a signed number that indicates the relative value of this instance and the `value` argument, as shown in the following table.  
+  
+|Value|Description|  
+|-----------|-----------------|  
+|Less than zero|This instance is earlier than `value`.|  
+|Zero|This instance is the same as `value`.|  
+|Greater than zero|This instance is later than `value`.|  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CompareTo">
       <MemberSignature Language="C#" Value="public int CompareTo (DateTime value);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 CompareTo(valuetype System.DateTime value) cil managed" />
@@ -1785,6 +1828,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1806,40 +1850,23 @@
         <summary>Compares the value of this instance to a specified <see cref="T:System.DateTime" /> value and returns an integer that indicates whether this instance is earlier than, the same as, or later than the specified <see cref="T:System.DateTime" /> value.</summary>
         <returns>A signed number indicating the relative values of this instance and the <paramref name="value" /> parameter.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance is earlier than <paramref name="value" />.  
+ </term><description> This instance is earlier than <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance is the same as <paramref name="value" />.  
+ </term><description> This instance is the same as <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance is later than <paramref name="value" />.  
+ </term><description> This instance is later than <paramref name="value" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1874,6 +1901,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1885,40 +1916,23 @@
         <summary>Compares the value of this instance to a specified object that contains a specified <see cref="T:System.DateTime" /> value, and returns an integer that indicates whether this instance is earlier than, the same as, or later than the specified <see cref="T:System.DateTime" /> value.</summary>
         <returns>A signed number indicating the relative values of this instance and <paramref name="value" />.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance is earlier than <paramref name="value" />.  
+ </term><description> This instance is earlier than <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance is the same as <paramref name="value" />.  
+ </term><description> This instance is the same as <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance is later than <paramref name="value" />, or <paramref name="value" /> is <see langword="null" />.  
+ </term><description> This instance is later than <paramref name="value" />, or <paramref name="value" /> is <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1953,6 +1967,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2001,6 +2016,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2055,6 +2071,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2103,6 +2120,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2148,6 +2166,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2213,6 +2232,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2265,6 +2285,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2315,6 +2336,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2368,6 +2390,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2398,7 +2421,7 @@
 >  In some cases, the <xref:System.DateTime> value returned by the <xref:System.DateTime.FromBinary%2A> method is not identical to the original <xref:System.DateTime> value supplied to the <xref:System.DateTime.ToBinary%2A> method. For more information, see the next section, "Local Time Adjustment".  
   
 ## Local Time Adjustment  
- A local time, which is a Coordinated Universal Time adjusted to the local time zone, is represented by a <xref:System.DateTime> structure whose <xref:System.DateTime.Kind%2A> property has the value <xref:System.DateTimeKind>. When restoring a local <xref:System.DateTime> value from the binary representation that is produced by the <xref:System.DateTime.ToBinary%2A> method, the <xref:System.DateTime.FromBinary%2A> method may adjust the recreated value so that it is not equal to the original value. This can occur under the following conditions:  
+ A local time, which is a Coordinated Universal Time adjusted to the local time zone, is represented by a <xref:System.DateTime> structure whose <xref:System.DateTime.Kind%2A> property has the value <xref:System.DateTimeKind.Local>. When restoring a local <xref:System.DateTime> value from the binary representation that is produced by the <xref:System.DateTime.ToBinary%2A> method, the <xref:System.DateTime.FromBinary%2A> method may adjust the recreated value so that it is not equal to the original value. This can occur under the following conditions:  
   
 -   If a local <xref:System.DateTime> object is serialized in one time zone by the <xref:System.DateTime.ToBinary%2A> method, and then deserialized in a different time zone by the <xref:System.DateTime.FromBinary%2A> method, the local time represented by the resulting <xref:System.DateTime> object is automatically adjusted to the second time zone.  
   
@@ -2433,6 +2456,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2501,6 +2525,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2529,7 +2554,7 @@
   
  The `fileTime` parameter specifies a file time expressed in 100-nanosecond ticks.  
   
- Starting with the .NET Framework version 2.0, the return value is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind>.  
+ Starting with the .NET Framework version 2.0, the return value is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc>.  
   
  ]]></format>
         </remarks>
@@ -2550,6 +2575,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -2576,6 +2605,28 @@
         <exception cref="T:System.ArgumentException">The date is not a valid OLE Automation Date value.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetDateTimeFormats">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the value of this instance to all the string representations supported by the standard date and time format specifiers.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  You should not assume that multiple calls to the <xref:System.DateTime.GetDateTimeFormats%2A> overloads will return identical data. Depending on the specific overload, the data returned by this method can change if the current culture changes, the user overrides individual cultural settings, or an update occurs to the system's cultural data.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetDateTimeFormats">
       <MemberSignature Language="C#" Value="public string[] GetDateTimeFormats ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string[] GetDateTimeFormats() cil managed" />
@@ -2587,6 +2638,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2777,6 +2829,7 @@ July, 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2794,7 +2847,7 @@ July, 2009
         <Parameter Name="format" Type="System.Char" />
       </Parameters>
       <Docs>
-        <param name="format">A standard date and time format string (see Remarks).</param>
+        <param name="format">A standard date and time format string.</param>
         <summary>Converts the value of this instance to all the string representations supported by the specified standard date and time format specifier.</summary>
         <returns>A string array where each element is the representation of the value of this instance formatted with the <paramref name="format" /> standard date and time format specifier.</returns>
         <remarks>
@@ -2833,6 +2886,7 @@ July, 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2995,6 +3049,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3013,7 +3068,7 @@ juillet 2009
         <Parameter Name="provider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">A date and time format string (see Remarks).</param>
+        <param name="format">A date and time format string.</param>
         <param name="provider">An object that supplies culture-specific formatting information about this instance.</param>
         <summary>Converts the value of this instance to all the string representations supported by the specified standard date and time format specifier and culture-specific formatting information.</summary>
         <returns>A string array where each element is the representation of the value of this instance formatted with one of the standard date and time format specifiers.</returns>
@@ -3053,6 +3108,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3087,6 +3143,10 @@ juillet 2009
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
       </ReturnValue>
@@ -3108,6 +3168,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3157,6 +3218,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3200,6 +3262,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3254,6 +3317,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3301,6 +3365,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3347,6 +3412,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3406,6 +3472,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3447,6 +3514,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3473,7 +3541,7 @@ juillet 2009
  [!code-csharp[System.DateTime.MinValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.MinValue/cs/MinValue.cs#1)]
  [!code-vb[System.DateTime.MinValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.MinValue/vb/MinValue.vb#1)]  
   
- The <xref:System.DateTime.MinValue> and <xref:System.DateTime> properties can be used to ensure that a value lies within the supported range before passing it to a <xref:System.DateTime> constructor. The code in the Example section illustrates this usage.  
+ The <xref:System.DateTime.MinValue> and <xref:System.DateTime.MaxValue> properties can be used to ensure that a value lies within the supported range before passing it to a <xref:System.DateTime> constructor. The code in the Example section illustrates this usage.  
   
    
   
@@ -3498,6 +3566,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3539,6 +3608,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3598,6 +3668,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3646,6 +3717,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3699,6 +3771,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3743,6 +3816,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3787,6 +3861,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3831,6 +3906,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3875,6 +3951,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3919,6 +3996,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3974,6 +4052,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4016,6 +4095,220 @@ juillet 2009
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting <see cref="T:System.DateTime" /> is less than <see cref="F:System.DateTime.MinValue" /> or greater than <see cref="F:System.DateTime.MaxValue" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Parse">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ In this section:  
+  
+ [Overloaded method syntax](#Syntax)   
+ [Parameters](#Params)   
+ [Return value](#Returns)   
+ [Exceptions](#Exceptions)   
+ [Which method do I call?](#Tasks)   
+ [The string to parse](#StringToParse)   
+ [Parsing and cultural conventions](#Culture)   
+ [Parsing and style elements](#Styles)   
+ Examples:   
+ [DateTime.Parse(String)](#Parse1_Example)  
+ [DateTime.Parse(String, IFormatProvider)](#Parse2_Example)  
+ [DateTime.Parse(String, IFormatProvider, DateTimeStyles)](#Parse3_Example)  
+[Version information](#Versions)  
+  
+<a name="Syntax"></a>   
+## Overloaded method syntax  
+ For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
+  
+ `DateTime.Parse(String s)`  
+ For the conversion, uses the formatting conventions of the current thread culture and interprets the string based on the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> style flag ([example](#Parse1_Example)).  
+  
+ `DateTime.Parse(String s, IFormatProvider provider)`  
+ For the conversion, uses the formatting conventions of a specified culture and interprets the string based on the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> style flag ([example](#Parse2_Example)).  
+  
+ `DateTime.Parse(String s, IFormatProvider provider, DateTypeStyles styles)`  
+ For the conversion, uses the formatting conventions of a specified culture and interprets the string based on specified style flags ([example](#Parse3_Example)).  
+
+<a name="Params"></a>   
+## Parameters  
+ This is a complete list of parameters for the <xref:System.DateTime.Parse%2A> method. For the parameters used by each overload, see the overload syntax above.  
+  
+|Parameter|Type|Description|  
+|---------------|----------|-----------------|  
+|`s`|<xref:System.String>|A string that contains the date and time to convert. See [The string to parse](#StringToParse).<br /><br /> Default value: None (parameter is used by all overloads)|  
+|`provider`|<xref:System.IFormatProvider>|An object that supplies culture-specific formatting information about `s`. See [Parsing and cultural conventions](#Culture).<br /><br /> Default value: <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>|  
+|`styles`|<xref:System.Globalization.DateTimeStyles>|A bitwise combination of the enumeration values that indicates the style elements that can be present in `s` for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>. See [Parsing and style elements](#Styles).<br /><br /> Default value: <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>|  
+  
+<a name="Returns"></a>   
+## Return value  
+ Type: <xref:System.DateTime>  
+An object that is equivalent to the date and time contained in `s`.  
+  
+ Generally, the <xref:System.DateTime.Parse%2A> method returns a <xref:System.DateTime> object whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>. However, the <xref:System.DateTime.Parse%2A> method may also perform time zone conversion and set the value of the <xref:System.DateTime.Kind%2A> property differently, depending on the values of the `s` and `styles` parameters:  
+  
+|If|Time zone conversion|Kind property|  
+|--------|--------------------------|-------------------|  
+|`s` contains time zone information.|The date and time is converted to the time in the local time zone.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+|`s` contains time zone information, and `styles` includes the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag.|The date and time is converted to Coordinated Universal Time (UTC).|<xref:System.DateTimeKind?displayProperty=fullName>|  
+|`s` contains the Z or GMT time zone designator, and `styles` includes the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag.|The date and time are interpreted as UTC.|<xref:System.DateTimeKind?displayProperty=fullName>|  
+  
+ The following example converts date strings that contain time zone information to the time in the local time zone:  
+  
+ [!code-csharp[System.DateTime.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse2.cs#2)]
+ [!code-vb[System.DateTime.Parse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse2.vb#2)]  
+  
+ You can also preserve the value of a date and time's <xref:System.DateTime.Kind%2A> property during a formatting and parsing operation by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag. The following example illustrates how the <xref:System.Globalization.DateTimeStyles.RoundtripKind> flag affects the parsing operation on <xref:System.DateTime> values that are converted to strings by using the "o", "r", or "u" format specifier.  
+  
+ [!code-csharp[System.DateTime.Parse#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse5.cs#5)]
+ [!code-vb[System.DateTime.Parse#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse5.vb#5)]  
+  
+<a name="Exceptions"></a>   
+## Exceptions  
+  
+|Exception|Condition|Thrown by|  
+|---------------|---------------|---------------|  
+|<xref:System.ArgumentNullException>|`s` is `null`.|All overloads|  
+|<xref:System.FormatException>|`s` does not contain a valid string representation of a date and time.|All overloads|  
+|<xref:System.ArgumentException>|`styles` contains an invalid combination of <xref:System.Globalization.DateTimeStyles> values (for example, it includes both <xref:System.Globalization.DateTimeStyles.AssumeLocal> and <xref:System.Globalization.DateTimeStyles.AssumeUniversal>).|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|  
+  
+<a name="Tasks"></a>   
+## Which method do I call?  
+  
+|To|Call|  
+|--------|----------|  
+|Parse a date and time string by using the conventions of the current culture.|<xref:System.DateTime.Parse%28System.String%29> overload|  
+|Parse a date and time string by using the conventions of a specific culture.|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29> overload (see [Parsing and Cultural Conventions](#Culture))|  
+|Parse a date and time string with special style elements (such as white space or no white space).|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload|  
+|Parse a date and time string and perform a conversion to UTC or local time.|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload|  
+|Parse a date and time string without handling exceptions.|<xref:System.DateTime.TryParse%2A?displayProperty=fullName> method|  
+|Restore (round-trip) a date and time value created by a formatting operation.|Pass the "o" or "r" standard format string to the <xref:System.DateTime.ToString%28System.String%29> method, and call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload with <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>|  
+|Parse a date and time string in a fixed format across machine (and possibly cultural) boundaries.|<xref:System.DateTime.ParseExact%2A?displayProperty=fullName> or <xref:System.DateTime.TryParseExact%2A?displayProperty=fullName> method|  
+  
+<a name="StringToParse"></a>   
+## The string to parse  
+ The <xref:System.DateTime.Parse%2A> method tries to convert the string representation of a date and time value to its <xref:System.DateTime> equivalent. It tries to parse `s` completely without throwing a <xref:System.FormatException> exception.  
+  
+> [!IMPORTANT]
+>  Because the string representation of a date and time must conform to a recognized pattern, you should always use exception handling when calling the <xref:System.DateTime.Parse%2A> method to parse user input. If you don't want to handle exceptions, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=fullName> method to parse the date and time string; this method returns a value that indicates whether the parse operation succeeded.  
+  
+ The string to be parsed can take any of the following forms:  
+  
+-   A string with a date and a time component.  
+  
+-   A string with a date but no time component. If the time component is absent, the method assumes 12:00 midnight. If the date component has a two-digit year, it is converted to a year based on the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> of the current culture's current calendar or the specified culture's current calendar (if you use an overload with a non-null `provider` argument).  
+  
+-   A string with a time but no date component. The method assumes the current date unless you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload and include <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> in the `styles` parameter, in which case the method assumes January 1, 0001.  
+  
+-   A string that includes time zone information and conforms to ISO 8601. In the following examples, the first string designates Coordinated Universal Time (UTC), and the second string designates the time in a time zone that's seven hours earlier than UTC:  
+  
+     2008-11-01T19:35:00.0000000Z   
+    2008-11-01T19:35:00.0000000-07:00  
+  
+-   A string that includes the GMT designator and conforms to the RFC 1123 time format; for example:  
+  
+     Sat, 01 Nov 2008 19:35:00 GMT  
+  
+-   A string that includes the date and time along with time zone offset information; for example:  
+  
+     03/01/2009 05:42:00 -5:00  
+  
+ If `s` is the string representation of a leap day in a leap year in the calendar used by the parsing method (see [Parsing and cultural conventions](#Culture)), the <xref:System.DateTime.Parse%2A> method parses `s` successfully. If `s` is the string representation of a leap day in a non-leap year, the method throws a <xref:System.FormatException> exception.  
+  
+ Because the <xref:System.DateTime.Parse%2A> method tries to parse the string representation of a date and time by using the formatting rules of the current or specified culture, trying to parse a string across different cultures can fail. To parse a specific date and time format across different locales, use one of the overloads of the <xref:System.DateTime.ParseExact%2A?displayProperty=fullName> method and provide a format specifier.  
+  
+<a name="Culture"></a>   
+## Parsing and cultural conventions  
+ All overloads of the <xref:System.DateTime.Parse%2A> method are culture-sensitive unless the string to be parsed conforms to the ISO 8601 pattern. The parsing operation usesthe formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object that is derived as follows:  
+  
+|If you call|And `provider` is|Formatting information is derived from|  
+|-----------------|-----------------------|--------------------------------------------|  
+|<xref:System.DateTime.Parse%28System.String%29>|-|The current thread culture (<xref:System.Globalization.DateTimeFormatInfo.CurrentInfo%2A?displayProperty=fullName> property)|  
+|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29> or <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|<xref:System.Globalization.DateTimeFormatInfo> object|The specified <xref:System.Globalization.DateTimeFormatInfo> object|  
+|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29> or <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|`null`|The current thread culture (<xref:System.Globalization.DateTimeFormatInfo.CurrentInfo%2A?displayProperty=fullName> property)|  
+|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29> or <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|<xref:System.Globalization.CultureInfo> object|The <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property|  
+|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29> or <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|Custom <xref:System.IFormatProvider> implementation|The <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method|  
+  
+ When formatting information is derived from a <xref:System.Globalization.DateTimeFormatInfo> object, the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=fullName> property defines the calendar used in the parsing operation.  
+  
+ If you parse a date and time string by using a <xref:System.Globalization.DateTimeFormatInfo> object with customized settings that are different from those of a standard culture, use the <xref:System.DateTime.ParseExact%2A> method instead of the <xref:System.DateTime.Parse%2A> method to improve the chances for a successful conversion. A non-standard date and time string can be complicated and difficult to parse. The <xref:System.DateTime.Parse%2A> method tries to parse a string with several implicit parse patterns, all of which might fail. In contrast, the <xref:System.DateTime.ParseExact%2A> method requires you to explicitly designate one or more exact parse patterns that are likely to succeed. For more information, see the "DateTimeFormatInfo and Dynamic Data" section in the <xref:System.Globalization.DateTimeFormatInfo> topic.  
+  
+> [!IMPORTANT]
+>  Note that the formatting conventions for a particular culture are dynamic and can be subject to change. This means that parsing operations that depend on the formatting conventions of the default (current) culture or that specify an <xref:System.IFormatProvider> object that represents a culture other than the invariant culture can unexpectedly fail if any of the following occurs:  
+>   
+> -   The culture-specific data has changed between major or minor versions of the .NET Framework or as the result of an update to the existing version of the .NET Framework.  
+> -   The culture-specific data reflects user preferences, which can vary from machine to machine or session to session.  
+> -   The culture-specific data represents a replacement culture that overrides the settings of a standard culture or a custom culture.  
+>   
+>  To prevent the difficulties in parsing data and time strings that are associated with changes in cultural data, you can parse date and time strings by using the invariant culture, or you can call the <xref:System.DateTime.ParseExact%2A>or <xref:System.DateTime.TryParseExact%2A> method and specify the exact format of the string to be parsed. If you are serializing and deserializing date and time data, you can either use the formatting conventions of the invariant culture, or you can serialize and deserialize the <xref:System.DateTime> value in a binary format.  
+>   
+>  For more information see the "Dynamic culture data" section in the <xref:System.Globalization.CultureInfo> topic and the "Persisting DateTime values" section in the <xref:System.DateTime> topic.  
+  
+<a name="Styles"></a>   
+## Parsing and style elements  
+ All <xref:System.DateTime.Parse%2A> overloads ignore leading, inner, or trailing white-space characters in `s`. The date and time can be bracketed with a pair of leading and trailing NUMBER SIGN characters ("#", U+0023), and can be trailed with one or more NULL characters (U+0000).  
+  
+ In addition, the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload has a `styles` parameter that consists of one or more members of the <xref:System.Globalization.DateTimeStyles> enumeration. This parameter defines how `s` should be interpreted and how the parse operation should convert `s` to a date and time. The following table describes the effect of each <xref:System.Globalization.DateTimeStyles> member on the parse operation.  
+  
+|DateTimeStyles member|Effect on conversion|  
+|---------------------------|--------------------------|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC, as follows:<br /><br /> -   If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeLocal> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.<br />-   If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles.AssumeUniversal> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.<br />-   In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|This value is ignored. Inner white space is always permitted in the date and time elements of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|This value is ignored. Leading white space is always permitted in the date and time elements of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|This value is ignored. Trailing white space is always permitted in the date and time elements of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces. This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value such as <xref:System.Globalization.DateTimeStyles.None>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, local time is assumed. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, UTC is assumed. Unless the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.None>|Although valid, this value is ignored.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion of a date and time string to a <xref:System.DateTime> value that represents a local time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. Typically, such a string is created by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> method and by using the "o", "r", or "u" standard format specifier.|  
+  
+<a name="Parse1_Example"></a>   
+## DateTime.Parse(String) example  
+ The following example parses the string representation of several date and time values by using default provider and style values: the formatting conventions of the en-US culture, which is the current thread culture of the computer used to produce the example output, and the <xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces> style flag. It handles the <xref:System.FormatException> exception that is thrown when the method tries to parse the string representation of a date and time by using some other culture's formatting conventions. It also shows how to successfully parse a date and time value that does not use the formatting conventions of the current thread culture.  
+  
+ [!code-csharp[System.DateTime.Parse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse1.cs#1)]
+ [!code-vb[System.DateTime.Parse#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse1.vb#1)]  
+  
+<a name="Parse2_Example"></a>   
+## DateTime.Parse(String, IFormatProvider) example  
+ The following example parses an array of date strings by using the conventions of the en-US, fr-FR, and de-DE cultures. It demonstrates that the string representations of a single date can be interpreted differently across different cultures.  
+  
+ [!code-csharp[System.DateTime.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse3.cs#3)]
+ [!code-vb[System.DateTime.Parse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse3.vb#3)]  
+  
+<a name="Parse3_Example"></a>   
+## DateTime.Parse(String, IFormatProvider, DateTimeStyles) example  
+ The following example demonstrates the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> method and displays the value of the <xref:System.DateTime.Kind%2A> property of the resulting <xref:System.DateTime> values.  
+  
+ [!code-csharp[System.DateTime.Parse#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse4.cs#4)]
+ [!code-vb[System.DateTime.Parse#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse4.vb#4)]  
+  
+<a name="Versions"></a>   
+## Version information  
+ .NET Framework  
+ All overloads are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
+  
+ .NET Framework Client Profile  
+ All overloads are supported in: 4, 3.5 SP1  
+  
+ Portable Class Library  
+ All overloads are supported  
+  
+ .NET for Windows Store apps  
+ All overloads are supported in: Windows 8  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Parse">
       <MemberSignature Language="C#" Value="public static DateTime Parse (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig valuetype System.DateTime Parse(string s) cil managed" />
@@ -4027,6 +4320,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4074,6 +4368,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4123,6 +4418,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4176,6 +4472,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4261,6 +4558,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4308,16 +4606,16 @@ juillet 2009
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. In all other cases, the flag has no effect.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
-|<xref:System.Globalization.DateTimeStyles>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value date and time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. This flag primarily prevents the conversion of UTC times to local times.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
+|<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
+|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value date and time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. This flag primarily prevents the conversion of UTC times to local times.|  
   
  The particular date and time symbols and strings (such as the names of the days of the week in a particular language) used in `s` are defined by the `provider` parameter, as is the precise format of `s` if `format` is a standard format specifier string. The `provider` parameter can be any of the following:  
   
@@ -4369,6 +4667,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4413,16 +4712,16 @@ juillet 2009
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. In all other cases, the flag has no effect.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
-|<xref:System.Globalization.DateTimeStyles>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|For strings that contain time zone information, tries to prevent the conversion to a date and time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. This flag primarily prevents the conversion of UTC times to local times.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
+|<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
+|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a date and time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. This flag primarily prevents the conversion of UTC times to local times.|  
   
  The particular date and time symbols and strings (such as the names of the days of the week in a particular language) used in `s` are defined by the `provider` parameter, as is the precise format of `s` if `format` is a standard format specifier string. The `provider` parameter can be any of the following:  
   
@@ -4478,6 +4777,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4519,6 +4819,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4575,6 +4876,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4633,6 +4935,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4706,6 +5009,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -4729,6 +5033,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
@@ -4749,6 +5054,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4782,6 +5088,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4815,6 +5122,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4848,6 +5156,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4880,6 +5189,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4913,6 +5223,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4946,6 +5257,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -4979,6 +5291,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5012,6 +5325,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5045,6 +5359,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5078,6 +5393,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5111,6 +5427,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5148,6 +5465,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5181,6 +5499,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5214,6 +5533,7 @@ juillet 2009
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5251,6 +5571,10 @@ juillet 2009
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -5292,6 +5616,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5339,6 +5664,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5386,6 +5712,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5413,7 +5740,7 @@ juillet 2009
 >  In some cases, the <xref:System.DateTime> value returned by the <xref:System.DateTime.FromBinary%2A> method is not identical to the original <xref:System.DateTime> value supplied to the <xref:System.DateTime.ToBinary%2A> method. For more information, see the next section, "Local Time Adjustment".  
   
 ## Local Time Adjustment  
- A local time, which is a Coordinated Universal Time adjusted to the local time zone, is represented by a <xref:System.DateTime> structure whose <xref:System.DateTime.Kind%2A> property has the value <xref:System.DateTimeKind>. When restoring a local <xref:System.DateTime> value from the binary representation that is produced by the <xref:System.DateTime.ToBinary%2A> method, the <xref:System.DateTime.FromBinary%2A> method may adjust the recreated value so that it is not equal to the original value. This can occur under the following conditions:  
+ A local time, which is a Coordinated Universal Time adjusted to the local time zone, is represented by a <xref:System.DateTime> structure whose <xref:System.DateTime.Kind%2A> property has the value <xref:System.DateTimeKind.Local>. When restoring a local <xref:System.DateTime> value from the binary representation that is produced by the <xref:System.DateTime.ToBinary%2A> method, the <xref:System.DateTime.FromBinary%2A> method may adjust the recreated value so that it is not equal to the original value. This can occur under the following conditions:  
   
 -   If a local <xref:System.DateTime> object is serialized in one time zone by the <xref:System.DateTime.ToBinary%2A> method, and then deserialized in a different time zone by the <xref:System.DateTime.FromBinary%2A> method, the local time represented by the resulting <xref:System.DateTime> object is automatically adjusted to the second time zone.  
   
@@ -5446,6 +5773,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5466,7 +5794,7 @@ juillet 2009
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the .NET Framework version 2.0, the return value is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property returns <xref:System.DateTimeKind>.  
+ Starting with the .NET Framework version 2.0, the return value is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property returns <xref:System.DateTimeKind.Local>.  
   
  Because it returns the current date without the current time, the <xref:System.DateTime.Today%2A> property is suitable for use in applications that work with dates only. For details, see [Choosing Between DateTime, DateTimeOffset, TimeSpan, and TimeZoneInfo](~/docs/standard/datetime/choosing-between-datetime.md). In contrast, the <xref:System.DateTime.TimeOfDay%2A> property returns the current time without the current date, and the <xref:System.DateTime.Now%2A> property returns both the current date and the current time.  
   
@@ -5493,6 +5821,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5555,6 +5884,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5599,6 +5929,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5629,14 +5960,14 @@ juillet 2009
   
 |Kind|Results|  
 |----------|-------------|  
-|<xref:System.DateTimeKind>|This instance of <xref:System.DateTime> is converted to local time.|  
-|<xref:System.DateTimeKind>|No conversion is performed.|  
-|<xref:System.DateTimeKind>|This instance of <xref:System.DateTime> is assumed to be a UTC time, and the conversion is performed as if <xref:System.DateTime.Kind%2A> were <xref:System.DateTimeKind>.|  
+|<xref:System.DateTimeKind.Utc>|This instance of <xref:System.DateTime> is converted to local time.|  
+|<xref:System.DateTimeKind.Local>|No conversion is performed.|  
+|<xref:System.DateTimeKind.Unspecified>|This instance of <xref:System.DateTime> is assumed to be a UTC time, and the conversion is performed as if <xref:System.DateTime.Kind%2A> were <xref:System.DateTimeKind.Utc>.|  
   
 > [!NOTE]
 >  The <xref:System.DateTime.ToLocalTime%2A> method converts a <xref:System.DateTime> value from UTC to local time. To convert the time in any designated time zone to local time, use the <xref:System.TimeZoneInfo.ConvertTime%2A?displayProperty=fullName> method.  
   
- The value returned by the conversion is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property always returns <xref:System.DateTimeKind>. Consequently, a valid result is returned even if <xref:System.DateTime.ToLocalTime%2A> is applied repeatedly to the same <xref:System.DateTime>.  
+ The value returned by the conversion is a <xref:System.DateTime> whose <xref:System.DateTime.Kind%2A> property always returns <xref:System.DateTimeKind.Local>. Consequently, a valid result is returned even if <xref:System.DateTime.ToLocalTime%2A> is applied repeatedly to the same <xref:System.DateTime>.  
   
    
   
@@ -5677,6 +6008,10 @@ juillet 2009
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -5722,6 +6057,10 @@ juillet 2009
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -5766,6 +6105,10 @@ juillet 2009
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
@@ -5803,6 +6146,10 @@ juillet 2009
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -5848,6 +6195,10 @@ juillet 2009
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -5889,6 +6240,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -5944,6 +6296,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6010,6 +6363,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6027,7 +6381,7 @@ juillet 2009
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="format">A standard or custom date and time format string (see Remarks).</param>
+        <param name="format">A standard or custom date and time format string.</param>
         <summary>Converts the value of the current <see cref="T:System.DateTime" /> object to its equivalent string representation using the specified format and the formatting conventions of the current culture.</summary>
         <returns>A string representation of value of the current <see cref="T:System.DateTime" /> object as specified by <paramref name="format" />.</returns>
         <remarks>
@@ -6040,11 +6394,11 @@ juillet 2009
   
  Some uses of this method include:  
   
--   Getting a string that displays the date and time in the current culture’s short date and time format. To do this, you use the “G” format specifier.  
+-   Getting a string that displays the date and time in the current culture’s short date and time format. To do this, you use the "G" format specifier.  
   
--   Getting a string that contains only the month and year. To do this, you use the “MM/yyyy” format string. The format string uses the current culture’s date separator.  
+-   Getting a string that contains only the month and year. To do this, you use the "MM/yyyy" format string. The format string uses the current culture’s date separator.  
   
--   Getting a string that contains the date and time in a specific format. For example, the “MM/dd/yyyyHH:mm” format string displays the date and time string in a fixed format such as “19//03//2013 18:06". The format string uses “/” as a fixed date separator regardless of culture-specific settings.  
+-   Getting a string that contains the date and time in a specific format. For example, the "MM/dd/yyyyHH:mm" format string displays the date and time string in a fixed format such as "19//03//2013 18:06". The format string uses "/" as a fixed date separator regardless of culture-specific settings.  
   
 -   Getting a date in a condensed format that could be used for serializing a date string. For example, the "yyyyMMdd" format string displays a four-digit year followed by a two-digit month and a two-digit day with no date separator.  
   
@@ -6088,6 +6442,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6167,6 +6522,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6197,9 +6553,9 @@ juillet 2009
   
 |Kind|Results|  
 |----------|-------------|  
-|<xref:System.DateTimeKind>|No conversion is performed.|  
-|<xref:System.DateTimeKind>|The current <xref:System.DateTime> object is converted to UTC.|  
-|<xref:System.DateTimeKind>|The current <xref:System.DateTime> object is assumed to be a local time, and the conversion is performed as if <xref:System.DateTime.Kind%2A> were <xref:System.DateTimeKind>.|  
+|<xref:System.DateTimeKind.Utc>|No conversion is performed.|  
+|<xref:System.DateTimeKind.Local>|The current <xref:System.DateTime> object is converted to UTC.|  
+|<xref:System.DateTimeKind.Unspecified>|The current <xref:System.DateTime> object is assumed to be a local time, and the conversion is performed as if <xref:System.DateTime.Kind%2A> were <xref:System.DateTimeKind.Local>.|  
   
 > [!NOTE]
 >  The <xref:System.DateTime.ToUniversalTime%2A> method converts a <xref:System.DateTime> value from local time to UTC. To convert the time in a non-local time zone to UTC, use the <xref:System.TimeZoneInfo.ConvertTimeToUtc%28System.DateTime%2CSystem.TimeZoneInfo%29?displayProperty=fullName> method. To convert a time whose offset from UTC is known, use the <xref:System.DateTimeOffset.ToUniversalTime%2A> method.  
@@ -6245,6 +6601,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6311,6 +6668,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6344,7 +6702,7 @@ juillet 2009
 ## Remarks  
  The <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName> method parses a string that can contain date, time, and time zone information. It is similar to the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, except that the <xref:System.DateTime.TryParse%28System.String%2CSystem.DateTime%40%29?displayProperty=fullName> method does not throw an exception if the conversion fails.  
   
- This method attempts to ignore unrecognized data and parse `s` completely. If `s` contains a time but no date, the method by default substitutes the current date or, if `styles` includes the <xref:System.Globalization.DateTimeStyles> flag, it substitutes `DateTime.Date.MinValue`. If `s` contains a date but no time, 12:00 midnight is used as the default time. If a date is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> property. Any leading, inner, or trailing white space characters in `s` are ignored. The date and time can be bracketed with a pair of leading and trailing NUMBER SIGN characters ('#', U+0023), and can be trailed with one or more NULL characters (U+0000).  
+ This method attempts to ignore unrecognized data and parse `s` completely. If `s` contains a time but no date, the method by default substitutes the current date or, if `styles` includes the <xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault> flag, it substitutes `DateTime.Date.MinValue`. If `s` contains a date but no time, 12:00 midnight is used as the default time. If a date is present but its year component consists of only two digits, it is converted to a year in the `provider` parameter's current calendar based on the value of the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> property. Any leading, inner, or trailing white space characters in `s` are ignored. The date and time can be bracketed with a pair of leading and trailing NUMBER SIGN characters ('#', U+0023), and can be trailed with one or more NULL characters (U+0000).  
   
  Specific valid formats for date and time elements, as well as the names and symbols used in dates and times, are defined by the `provider` parameter, which can be any of the following:  
   
@@ -6362,21 +6720,21 @@ juillet 2009
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. In all other cases, the flag has no effect.|  
-|<xref:System.Globalization.DateTimeStyles>|Although valid, this value is ignored. Inner white space is permitted in the date and time elements of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Although valid, this value is ignored. Leading white space is permitted in the date and time elements of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Although valid, this value is ignored. Trailing white space is permitted in the date and time elements of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that `s` may contain leading, inner, and trailing white spaces. This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value such as <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|Although valid, this value is ignored.|  
-|<xref:System.Globalization.DateTimeStyles>|For strings that contain time zone information, tries to prevent the conversion of a date and time string to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. Typically, such a string is created by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> method using either the "o", "r", or "u" standard format specifiers.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Although valid, this value is ignored. Inner white space is permitted in the date and time elements of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Although valid, this value is ignored. Leading white space is permitted in the date and time elements of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Although valid, this value is ignored. Trailing white space is permitted in the date and time elements of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces. This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value such as <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.None>|Although valid, this value is ignored.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion of a date and time string to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. Typically, such a string is created by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> method using either the "o", "r", or "u" standard format specifiers.|  
   
  If `s` contains no time zone information, the <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName> method returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName> unless a `styles` flag indicates otherwise. If `s` includes time zone or time zone offset information, the <xref:System.DateTime.TryParse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%2CSystem.DateTime%40%29?displayProperty=fullName> method performs any necessary time conversion and returns one of the following:  
   
 -   A <xref:System.DateTime> value whose date and time reflect the local time and whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>.  
   
--   Or, if `styles` includes the <xref:System.Globalization.DateTimeStyles> flag, a <xref:System.DateTime> value whose date and time reflect UTC and whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>.  
+-   Or, if `styles` includes the <xref:System.Globalization.DateTimeStyles.AdjustToUniversal> flag, a <xref:System.DateTime> value whose date and time reflect UTC and whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>.  
   
  This behavior can be overridden by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag.  
   
@@ -6419,6 +6777,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6441,7 +6800,7 @@ juillet 2009
       </Parameters>
       <Docs>
         <param name="s">A string containing a date and time to convert.</param>
-        <param name="format">The required format of <c>s</c>. See the Remarks section for more information.</param>
+        <param name="format">The required format of <c>s</c>.</param>
         <param name="provider">An object that supplies culture-specific formatting information about <c>s</c>.</param>
         <param name="style">A bitwise combination of one or more enumeration values that indicate the permitted format of <c>s</c>.</param>
         <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if either the <c>s</c> or <c>format</c> parameter is <see langword="null" />, is an empty string, or does not contain a date and time that correspond to the pattern specified in <c>format</c>. This parameter is passed uninitialized.</param>
@@ -6479,16 +6838,16 @@ juillet 2009
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. In all other cases, the flag has no effect.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime>value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
-|<xref:System.Globalization.DateTimeStyles>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. This flag primarily prevents the conversion of UTC times to local times.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
+|<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime>value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
+|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. If time zone information is present in `s`, the time is converted to local time and the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. This flag primarily prevents the conversion of UTC times to local times.|  
   
    
   
@@ -6522,6 +6881,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6544,7 +6904,7 @@ juillet 2009
       </Parameters>
       <Docs>
         <param name="s">A string that contains a date and time to convert.</param>
-        <param name="formats">An array of allowable formats of <c>s</c>. See the Remarks section for more information.</param>
+        <param name="formats">An array of allowable formats of <c>s</c>.</param>
         <param name="provider">An object that supplies culture-specific format information about <c>s</c>.</param>
         <param name="style">A bitwise combination of enumeration values that indicates the permitted format of <c>s</c>. A typical value to specify is <see cref="F:System.Globalization.DateTimeStyles.None" />.</param>
         <param name="result">When this method returns, contains the <see cref="T:System.DateTime" /> value equivalent to the date and time contained in <c>s</c>, if the conversion succeeded, or <see cref="F:System.DateTime.MinValue" /> if the conversion failed. The conversion fails if <c>s</c> or <c>formats</c> is <see langword="null" />, <c>s</c> or an element of <c>formats</c> is an empty string, or the format of <c>s</c> is not exactly as specified by at least one of the format patterns in <c>formats</c>. This parameter is passed uninitialized.</param>
@@ -6579,16 +6939,16 @@ juillet 2009
   
 |DateTimeStyles member|Description|  
 |---------------------------|-----------------|  
-|<xref:System.Globalization.DateTimeStyles>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. In all other cases, the flag has no effect.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
-|<xref:System.Globalization.DateTimeStyles>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. If time zone information is present in `s`, the time is converted to local time and the<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. This flag primarily prevents the conversion of UTC times to local times.|  
+|<xref:System.Globalization.DateTimeStyles.AdjustToUniversal>|Parses `s` and, if necessary, converts it to UTC. If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>. In all other cases, the flag has no effect.|  
+|<xref:System.Globalization.DateTimeStyles.AllowInnerWhite>|Specifies that white space not defined by `format` can appear between any individual date or time element.|  
+|<xref:System.Globalization.DateTimeStyles.AllowLeadingWhite>|Specifies that white space not defined by `format` can appear at the beginning of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowTrailingWhite>|Specifies that white space not defined by `format` can appear at the end of `s`.|  
+|<xref:System.Globalization.DateTimeStyles.AllowWhiteSpaces>|Specifies that `s` may contain leading, inner, and trailing white spaces not defined by `format`.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeLocal>|Specifies that if `s` lacks any time zone information, it is assumed to represent a local time. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.AssumeUniversal>|Specifies that if `s` lacks any time zone information, it is assumed to represent UTC. Unless the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.NoCurrentDateDefault>|If `s` contains time without date information, the date of the return value is set to `DateTime.MinValue.Date`.|  
+|<xref:System.Globalization.DateTimeStyles.None>|The `s` parameter is parsed using default values. No white space other than that present in `format` is allowed. If `s` lacks a date component, the date of the returned <xref:System.DateTime> value is set to 1/1/0001. If `s` contains no time zone information, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>. If time zone information is present in `s`, the time is converted to local time and the<xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> object is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
+|<xref:System.Globalization.DateTimeStyles.RoundtripKind>|For strings that contain time zone information, tries to prevent the conversion to a <xref:System.DateTime> value with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. This flag primarily prevents the conversion of UTC times to local times.|  
   
    
   
@@ -6622,6 +6982,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6681,6 +7042,7 @@ juillet 2009
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -6719,267 +7081,5 @@ juillet 2009
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Parse">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the string representation of a date and time to its <see cref="T:System.DateTime" /> equivalent.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- In this section:  
-  
- [Overloaded method syntax](#Syntax)   
- [Parameters](#Params)   
- [Return value](#Returns)   
- [Exceptions](#Exceptions)   
- [Which method do I call?](#Tasks)   
- [The string to parse](#StringToParse)   
- [Parsing and cultural conventions](#Culture)   
- [Parsing and style elements](#Styles)   
- Examples:   
- [DateTime.Parse(String)](#Parse1_Example)  
- [DateTime.Parse(String, IFormatProvider)](#Parse2_Example)  
- [DateTime.Parse(String, IFormatProvider, DateTimeStyles)](#Parse3_Example)  
-[Version information](#Versions)  
-  
-<a name="Syntax"></a>   
-## Overloaded method syntax  
- For additional guidance on choosing an overload, see [Which method do I call?](#Tasks)  
-  
- `DateTime.Parse(String s)`  
- For the conversion, uses the formatting conventions of the current thread culture and interprets the string based on the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> style flag ([example](#Parse1_Example)).  
-  
- `DateTime.Parse(String s, IFormatProvider provider)`  
- For the conversion, uses the formatting conventions of a specified culture and interprets the string based on the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> style flag ([example](#Parse2_Example)).  
-  
- `DateTime.Parse(String s, IFormatProvider provider, DateTypeStyles styles)`  
- For the conversion, uses the formatting conventions of a specified culture and interprets the string based on specified style flags ([example](#Parse3_Example)).  
-  
-<a name="Params"></a>   
-## Parameters  
- This is a complete list of parameters for the <xref:System.DateTime.Parse%2A> method. For the parameters used by each overload, see the overload syntax above.  
-  
-|Parameter|Type|Description|  
-|---------------|----------|-----------------|  
-|`s`|<xref:System.String>|A string that contains the date and time to convert. See [The string to parse](#StringToParse).<br /><br /> Default value: None (parameter is used by all overloads)|  
-|`provider`|<xref:System.IFormatProvider>|An object that supplies culture-specific formatting information about `s`. See [Parsing and cultural conventions](#Culture).<br /><br /> Default value: <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName>|  
-|`styles`|<xref:System.Globalization.DateTimeStyles>|A bitwise combination of the enumeration values that indicates the style elements that can be present in `s` for the parse operation to succeed, and that defines how to interpret the parsed date in relation to the current time zone or the current date. A typical value to specify is <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>. See [Parsing and style elements](#Styles).<br /><br /> Default value: <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>|  
-  
-<a name="Returns"></a>   
-## Return value  
- Type: <xref:System.DateTime>  
-An object that is equivalent to the date and time contained in `s`.  
-  
- Generally, the <xref:System.DateTime.Parse%2A> method returns a <xref:System.DateTime> object whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>. However, the <xref:System.DateTime.Parse%2A> method may also perform time zone conversion and set the value of the <xref:System.DateTime.Kind%2A> property differently, depending on the values of the `s` and `styles` parameters:  
-  
-|If|Time zone conversion|Kind property|  
-|--------|--------------------------|-------------------|  
-|`s` contains time zone information.|The date and time is converted to the time in the local time zone.|<xref:System.DateTimeKind?displayProperty=fullName>|  
-|`s` contains time zone information, and `styles` includes the <xref:System.Globalization.DateTimeStyles> flag.|The date and time is converted to Coordinated Universal Time (UTC).|<xref:System.DateTimeKind?displayProperty=fullName>|  
-|`s` contains the Z or GMT time zone designator, and `styles` includes the <xref:System.Globalization.DateTimeStyles> flag.|The date and time are interpreted as UTC.|<xref:System.DateTimeKind?displayProperty=fullName>|  
-  
- The following example converts date strings that contain time zone information to the time in the local time zone:  
-  
- [!code-csharp[System.DateTime.Parse#2](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse2.cs#2)]
- [!code-vb[System.DateTime.Parse#2](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse2.vb#2)]  
-  
- You can also preserve the value of a date and time's <xref:System.DateTime.Kind%2A> property during a formatting and parsing operation by using the <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> flag. The following example illustrates how the <xref:System.Globalization.DateTimeStyles> flag affects the parsing operation on <xref:System.DateTime> values that are converted to strings by using the "o", "r", or "u" format specifier.  
-  
- [!code-csharp[System.DateTime.Parse#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse5.cs#5)]
- [!code-vb[System.DateTime.Parse#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse5.vb#5)]  
-  
-<a name="Exceptions"></a>   
-## Exceptions  
-  
-|Exception|Condition|Thrown by|  
-|---------------|---------------|---------------|  
-|<xref:System.ArgumentNullException>|`s` is `null`.|All overloads|  
-|<xref:System.FormatException>|`s` does not contain a valid string representation of a date and time.|All overloads|  
-|<xref:System.ArgumentException>|`styles` contains an invalid combination of <xref:System.Globalization.DateTimeStyles> values (for example, it includes both <xref:System.Globalization.DateTimeStyles> and <xref:System.Globalization.DateTimeStyles>).|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|  
-  
-<a name="Tasks"></a>   
-## Which method do I call?  
-  
-|To|Call|  
-|--------|----------|  
-|Parse a date and time string by using the conventions of the current culture.|<xref:System.DateTime.Parse%28System.String%29> overload|  
-|Parse a date and time string by using the conventions of a specific culture.|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29> overload (see [Parsing and Cultural Conventions](#Culture))|  
-|Parse a date and time string with special style elements (such as white space or no white space).|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload|  
-|Parse a date and time string and perform a conversion to UTC or local time.|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload|  
-|Parse a date and time string without handling exceptions.|<xref:System.DateTime.TryParse%2A?displayProperty=fullName> method|  
-|Restore (round-trip) a date and time value created by a formatting operation.|Pass the "o" or "r" standard format string to the <xref:System.DateTime.ToString%28System.String%29> method, and call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload with <xref:System.Globalization.DateTimeStyles?displayProperty=fullName>|  
-|Parse a date and time string in a fixed format across machine (and possibly cultural) boundaries.|<xref:System.DateTime.ParseExact%2A?displayProperty=fullName> or <xref:System.DateTime.TryParseExact%2A?displayProperty=fullName> method|  
-  
-<a name="StringToParse"></a>   
-## The string to parse  
- The <xref:System.DateTime.Parse%2A> method tries to convert the string representation of a date and time value to its <xref:System.DateTime> equivalent. It tries to parse `s` completely without throwing a <xref:System.FormatException> exception.  
-  
-> [!IMPORTANT]
->  Because the string representation of a date and time must conform to a recognized pattern, you should always use exception handling when calling the <xref:System.DateTime.Parse%2A> method to parse user input. If you don't want to handle exceptions, you can call the <xref:System.DateTime.TryParse%2A?displayProperty=fullName> method to parse the date and time string; this method returns a value that indicates whether the parse operation succeeded.  
-  
- The string to be parsed can take any of the following forms:  
-  
--   A string with a date and a time component.  
-  
--   A string with a date but no time component. If the time component is absent, the method assumes 12:00 midnight. If the date component has a two-digit year, it is converted to a year based on the <xref:System.Globalization.Calendar.TwoDigitYearMax%2A?displayProperty=fullName> of the current culture's current calendar or the specified culture's current calendar (if you use an overload with a non-null `provider` argument).  
-  
--   A string with a time but no date component. The method assumes the current date unless you call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload and include <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> in the `styles` parameter, in which case the method assumes January 1, 0001.  
-  
--   A string that includes time zone information and conforms to ISO 8601. In the following examples, the first string designates Coordinated Universal Time (UTC), and the second string designates the time in a time zone that's seven hours earlier than UTC:  
-  
-     2008-11-01T19:35:00.0000000Z   
-    2008-11-01T19:35:00.0000000-07:00  
-  
--   A string that includes the GMT designator and conforms to the RFC 1123 time format; for example:  
-  
-     Sat, 01 Nov 2008 19:35:00 GMT  
-  
--   A string that includes the date and time along with time zone offset information; for example:  
-  
-     03/01/2009 05:42:00 -5:00  
-  
- If `s` is the string representation of a leap day in a leap year in the calendar used by the parsing method (see [Parsing and cultural conventions](#Culture)), the <xref:System.DateTime.Parse%2A> method parses `s` successfully. If `s` is the string representation of a leap day in a non-leap year, the method throws a <xref:System.FormatException> exception.  
-  
- Because the <xref:System.DateTime.Parse%2A> method tries to parse the string representation of a date and time by using the formatting rules of the current or specified culture, trying to parse a string across different cultures can fail. To parse a specific date and time format across different locales, use one of the overloads of the <xref:System.DateTime.ParseExact%2A?displayProperty=fullName> method and provide a format specifier.  
-  
-<a name="Culture"></a>   
-## Parsing and cultural conventions  
- All overloads of the <xref:System.DateTime.Parse%2A> method are culture-sensitive unless the string to be parsed conforms to the ISO 8601 pattern. The parsing operation usesthe formatting information in a <xref:System.Globalization.DateTimeFormatInfo> object that is derived as follows:  
-  
-|If you call|And `provider` is|Formatting information is derived from|  
-|-----------------|-----------------------|--------------------------------------------|  
-|<xref:System.DateTime.Parse%28System.String%29>|-|The current thread culture (<xref:System.Globalization.DateTimeFormatInfo.CurrentInfo%2A?displayProperty=fullName> property)|  
-|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29> or <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|<xref:System.Globalization.DateTimeFormatInfo> object|The specified <xref:System.Globalization.DateTimeFormatInfo> object|  
-|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29> or <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|`null`|The current thread culture (<xref:System.Globalization.DateTimeFormatInfo.CurrentInfo%2A?displayProperty=fullName> property)|  
-|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29> or <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|<xref:System.Globalization.CultureInfo> object|The <xref:System.Globalization.CultureInfo.DateTimeFormat%2A?displayProperty=fullName> property|  
-|<xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29> or <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29>|Custom <xref:System.IFormatProvider> implementation|The <xref:System.IFormatProvider.GetFormat%2A?displayProperty=fullName> method|  
-  
- When formatting information is derived from a <xref:System.Globalization.DateTimeFormatInfo> object, the <xref:System.Globalization.DateTimeFormatInfo.Calendar%2A?displayProperty=fullName> property defines the calendar used in the parsing operation.  
-  
- If you parse a date and time string by using a <xref:System.Globalization.DateTimeFormatInfo> object with customized settings that are different from those of a standard culture, use the <xref:System.DateTime.ParseExact%2A> method instead of the <xref:System.DateTime.Parse%2A> method to improve the chances for a successful conversion. A non-standard date and time string can be complicated and difficult to parse. The <xref:System.DateTime.Parse%2A> method tries to parse a string with several implicit parse patterns, all of which might fail. In contrast, the <xref:System.DateTime.ParseExact%2A> method requires you to explicitly designate one or more exact parse patterns that are likely to succeed. For more information, see the "DateTimeFormatInfo and Dynamic Data" section in the <xref:System.Globalization.DateTimeFormatInfo> topic.  
-  
-> [!IMPORTANT]
->  Note that the formatting conventions for a particular culture are dynamic and can be subject to change. This means that parsing operations that depend on the formatting conventions of the default (current) culture or that specify an <xref:System.IFormatProvider> object that represents a culture other than the invariant culture can unexpectedly fail if any of the following occurs:  
->   
-> -   The culture-specific data has changed between major or minor versions of the .NET Framework or as the result of an update to the existing version of the .NET Framework.  
-> -   The culture-specific data reflects user preferences, which can vary from machine to machine or session to session.  
-> -   The culture-specific data represents a replacement culture that overrides the settings of a standard culture or a custom culture.  
->   
->  To prevent the difficulties in parsing data and time strings that are associated with changes in cultural data, you can parse date and time strings by using the invariant culture, or you can call the <xref:System.DateTime.ParseExact%2A>or <xref:System.DateTime.TryParseExact%2A> method and specify the exact format of the string to be parsed. If you are serializing and deserializing date and time data, you can either use the formatting conventions of the invariant culture, or you can serialize and deserialize the <xref:System.DateTime> value in a binary format.  
->   
->  For more information see the "Dynamic culture data" section in the <xref:System.Globalization.CultureInfo> topic and the "Persisting DateTime values" section in the <xref:System.DateTime> topic.  
-  
-<a name="Styles"></a>   
-## Parsing and style elements  
- All <xref:System.DateTime.Parse%2A> overloads ignore leading, inner, or trailing white-space characters in `s`. The date and time can be bracketed with a pair of leading and trailing NUMBER SIGN characters ("#", U+0023), and can be trailed with one or more NULL characters (U+0000).  
-  
- In addition, the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> overload has a `styles` parameter that consists of one or more members of the <xref:System.Globalization.DateTimeStyles> enumeration. This parameter defines how `s` should be interpreted and how the parse operation should convert `s` to a date and time. The following table describes the effect of each <xref:System.Globalization.DateTimeStyles> member on the parse operation.  
-  
-|DateTimeStyles member|Effect on conversion|  
-|---------------------------|--------------------------|  
-|<xref:System.Globalization.DateTimeStyles>|Parses `s` and, if necessary, converts it to UTC, as follows:<br /><br /> -   If `s` includes a time zone offset, or if `s` contains no time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles> flag, the method parses the string, calls <xref:System.DateTime.ToUniversalTime%2A> to convert the returned <xref:System.DateTime> value to UTC, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.<br />-   If `s` indicates that it represents UTC, or if `s` does not contain time zone information but `styles` includes the <xref:System.Globalization.DateTimeStyles> flag, the method parses the string, performs no time zone conversion on the returned <xref:System.DateTime> value, and sets the <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.<br />-   In all other cases, the flag has no effect.|  
-|<xref:System.Globalization.DateTimeStyles>|This value is ignored. Inner white space is always permitted in the date and time elements of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|This value is ignored. Leading white space is always permitted in the date and time elements of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|This value is ignored. Trailing white space is always permitted in the date and time elements of `s`.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that `s` may contain leading, inner, and trailing white spaces. This is the default behavior. It cannot be overridden by supplying a more restrictive <xref:System.Globalization.DateTimeStyles> enumeration value such as <xref:System.Globalization.DateTimeStyles>.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, local time is assumed. Unless the <xref:System.Globalization.DateTimeStyles> flag is present, the <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is set to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|Specifies that if `s` lacks any time zone information, UTC is assumed. Unless the <xref:System.Globalization.DateTimeStyles> flag is present, the method converts the returned <xref:System.DateTime> value from UTC to local time and sets its <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.|  
-|<xref:System.Globalization.DateTimeStyles>|Although valid, this value is ignored.|  
-|<xref:System.Globalization.DateTimeStyles>|For strings that contain time zone information, tries to prevent the conversion of a date and time string to a <xref:System.DateTime> value that represents a local time with its <xref:System.DateTime.Kind%2A> property set to <xref:System.DateTimeKind?displayProperty=fullName>. Typically, such a string is created by calling the <xref:System.DateTime.ToString%28System.String%29?displayProperty=fullName> method and by using the "o", "r", or "u" standard format specifier.|  
-  
-<a name="Parse1_Example"></a>   
-## DateTime.Parse(String) example  
- The following example parses the string representation of several date and time values by using default provider and style values: the formatting conventions of the en-US culture, which is the current thread culture of the computer used to produce the example output, and the <xref:System.Globalization.DateTimeStyles> style flag. It handles the <xref:System.FormatException> exception that is thrown when the method tries to parse the string representation of a date and time by using some other culture's formatting conventions. It also shows how to successfully parse a date and time value that does not use the formatting conventions of the current thread culture.  
-  
- [!code-csharp[System.DateTime.Parse#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse1.cs#1)]
- [!code-vb[System.DateTime.Parse#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse1.vb#1)]  
-  
-<a name="Parse2_Example"></a>   
-## DateTime.Parse(String, IFormatProvider) example  
- The following example parses an array of date strings by using the conventions of the en-US, fr-FR, and de-DE cultures. It demonstrates that the string representations of a single date can be interpreted differently across different cultures.  
-  
- [!code-csharp[System.DateTime.Parse#3](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse3.cs#3)]
- [!code-vb[System.DateTime.Parse#3](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse3.vb#3)]  
-  
-<a name="Parse3_Example"></a>   
-## DateTime.Parse(String, IFormatProvider, DateTimeStyles) example  
- The following example demonstrates the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29> method and displays the value of the <xref:System.DateTime.Kind%2A> property of the resulting <xref:System.DateTime> values.  
-  
- [!code-csharp[System.DateTime.Parse#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTime.Parse/cs/Parse4.cs#4)]
- [!code-vb[System.DateTime.Parse#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTime.Parse/vb/Parse4.vb#4)]  
-  
-<a name="Versions"></a>   
-## Version information  
- .NET Framework  
- All overloads are supported in: 4.5, 4, 3.5, 3.0, 2.0, 1.1, 1.0  
-  
- .NET Framework Client Profile  
- All overloads are supported in: 4, 3.5 SP1  
-  
- Portable Class Library  
- All overloads are supported  
-  
- .NET for Windows Store apps  
- All overloads are supported in: Windows 8  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CompareTo">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Compares the value of this instance to a specified <see cref="T:System.DateTime" /> value and indicates whether this instance is earlier than, the same as, or later than the specified <see cref="T:System.DateTime" /> value.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The two overloads of the <xref:System.DateTime.CompareTo%2A> method return a signed number that indicates the relative value of this instance and the `value` argument, as shown in the following table.  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|Less than zero|This instance is earlier than `value`.|  
-|Zero|This instance is the same as `value`.|  
-|Greater than zero|This instance is later than `value`.|  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetDateTimeFormats">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Converts the value of this instance to all the string representations supported by the standard date and time format specifiers.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  You should not assume that multiple calls to the <xref:System.DateTime.GetDateTimeFormats%2A> overloads will return identical data. Depending on the specific overload, the data returned by this method can change if the current culture changes, the user overrides individual cultural settings, or an update occurs to the system's cultural data.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

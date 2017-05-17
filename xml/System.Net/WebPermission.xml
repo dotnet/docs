@@ -7,6 +7,10 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Permissions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.CodeAccessPermission</BaseTypeName>
   </Base>
@@ -25,15 +29,15 @@
   
  Create a <xref:System.Net.WebPermission> instance by calling its constructor using one of the following sets of parameters:  
   
--   No parameters. The default <xref:System.Security.Permissions.PermissionState> is <xref:System.Security.Permissions.PermissionState>.  
+-   No parameters. The default <xref:System.Security.Permissions.PermissionState> is <xref:System.Security.Permissions.PermissionState.None>.  
   
--   A <xref:System.Security.Permissions.PermissionState>. Specify either <xref:System.Security.Permissions.PermissionState> to allow any URI to be used in the target class, or <xref:System.Security.Permissions.PermissionState> to allow access only to URIs that you specify through the use of the <xref:System.Net.WebPermission.AddPermission%2A> method.  
+-   A <xref:System.Security.Permissions.PermissionState>. Specify either <xref:System.Security.Permissions.PermissionState.Unrestricted> to allow any URI to be used in the target class, or <xref:System.Security.Permissions.PermissionState.None> to allow access only to URIs that you specify through the use of the <xref:System.Net.WebPermission.AddPermission%2A> method.  
   
 -   A <xref:System.Net.NetworkAccess> value and a URI string. The specified URI has permissions granted by the <xref:System.Net.NetworkAccess> value.  
   
 -   A <xref:System.Net.NetworkAccess> specifier and URI regular expression.  
   
- The <xref:System.Net.WebPermission.ConnectList%2A> and <xref:System.Net.WebPermission.AcceptList%2A> hold the URIs to which you have granted access permission. To add a URI to either of these lists, use <xref:System.Net.WebPermission.AddPermission%2A>. If you pass <xref:System.Net.NetworkAccess> as the <xref:System.Net.NetworkAccess> parameter, the URI will be added to the <xref:System.Net.WebPermission.AcceptList%2A>. <xref:System.Net.WebPermission> will allow connections to your target class with URIs matching the <xref:System.Net.WebPermission.AcceptList%2A>.  
+ The <xref:System.Net.WebPermission.ConnectList%2A> and <xref:System.Net.WebPermission.AcceptList%2A> hold the URIs to which you have granted access permission. To add a URI to either of these lists, use <xref:System.Net.WebPermission.AddPermission%2A>. If you pass <xref:System.Net.NetworkAccess.Accept> as the <xref:System.Net.NetworkAccess> parameter, the URI will be added to the <xref:System.Net.WebPermission.AcceptList%2A>. <xref:System.Net.WebPermission> will allow connections to your target class with URIs matching the <xref:System.Net.WebPermission.AcceptList%2A>.  
   
 > [!CAUTION]
 >  To deny access to an Internet resource, you must deny access to all the possible paths to that resource. This requires calling <xref:System.Net.WebPermission.%23ctor%2A?displayProperty=fullName> with state parameter set to <xref:System.Security.CodeAccessPermission.Deny%2A>. A better approach is to allow access to the specific resource only. For more information about this subject, refer to the [NIB: Using the Deny Method](http://msdn.microsoft.com/en-us/6b4d2e01-c504-4ac3-b50e-d6f5e7f5df25) topic.  
@@ -67,6 +71,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Creates a new instance of the <see cref="T:System.Net.WebPermission" /> class.</summary>
@@ -88,6 +96,10 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -123,6 +135,10 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -162,6 +178,10 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -207,6 +227,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -248,6 +272,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -263,10 +291,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you have specified <xref:System.Security.Permissions.PermissionState> as the <xref:System.Security.Permissions.PermissionState>, use <xref:System.Net.WebPermission.AddPermission%2A> to permit the use of `uriString` in the target class. The way that `uriString` can be used by the target class is specified by `access`. Specify <xref:System.Net.NetworkAccess> as the access parameter to add the URI specified by the `uriString` parameter to the list of URI accept strings, or specify <xref:System.Net.NetworkAccess> as the access parameter to add the URI to the list of URI connect strings.  
+ If you have specified <xref:System.Security.Permissions.PermissionState.None> as the <xref:System.Security.Permissions.PermissionState>, use <xref:System.Net.WebPermission.AddPermission%2A> to permit the use of `uriString` in the target class. The way that `uriString` can be used by the target class is specified by `access`. Specify <xref:System.Net.NetworkAccess.Accept> as the access parameter to add the URI specified by the `uriString` parameter to the list of URI accept strings, or specify <xref:System.Net.NetworkAccess.Connect> as the access parameter to add the URI to the list of URI connect strings.  
   
 > [!NOTE]
->  Calling <xref:System.Net.WebPermission.AddPermission%2A> on <xref:System.Security.Permissions.PermissionState><xref:System.Net.WebPermission> will have no effect, because permission is granted to all URIs.  
+>  Calling <xref:System.Net.WebPermission.AddPermission%2A> on <xref:System.Security.Permissions.PermissionState.Unrestricted><xref:System.Net.WebPermission> will have no effect, because permission is granted to all URIs.  
   
 > [!NOTE]
 >  A candidate URI string is checked against the list of relevant regular expressions (<xref:System.Net.WebPermission.AcceptList%2A> or <xref:System.Net.WebPermission.ConnectList%2A>) in two ways. First, the candidate URI string is checked against the appropriate list; then, if there is no match, the candidate URI string is converted into a <xref:System.Uri> and checked against the appropriate list.  
@@ -296,6 +324,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -311,10 +343,10 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If you have specified <xref:System.Security.Permissions.PermissionState> as the <xref:System.Security.Permissions.PermissionState>, use <xref:System.Net.WebPermission.AddPermission%2A> to allow the use of `uriRegex` in the target class. Specify <xref:System.Net.NetworkAccess> as the `access` parameter to add the URI specified by the `uriRegex` parameter to the list of URI accept strings, or specify <xref:System.Net.NetworkAccess> as the access parameter to add the URI to the list of URI connect strings.  
+ If you have specified <xref:System.Security.Permissions.PermissionState.None> as the <xref:System.Security.Permissions.PermissionState>, use <xref:System.Net.WebPermission.AddPermission%2A> to allow the use of `uriRegex` in the target class. Specify <xref:System.Net.NetworkAccess.Accept> as the `access` parameter to add the URI specified by the `uriRegex` parameter to the list of URI accept strings, or specify <xref:System.Net.NetworkAccess.Connect> as the access parameter to add the URI to the list of URI connect strings.  
   
 > [!NOTE]
->  Calling <xref:System.Net.WebPermission.AddPermission%2A> on an <xref:System.Security.Permissions.PermissionState><xref:System.Net.WebPermission> instance will have no effect as permission is granted to all URIs.  
+>  Calling <xref:System.Net.WebPermission.AddPermission%2A> on an <xref:System.Security.Permissions.PermissionState.Unrestricted><xref:System.Net.WebPermission> instance will have no effect as permission is granted to all URIs.  
   
 > [!NOTE]
 >  It is recommended that you create `uriRegex` using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>, <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>, and <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> flags.  
@@ -344,6 +376,10 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -387,6 +423,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
       </ReturnValue>
@@ -421,6 +461,10 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -466,6 +510,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.IPermission</ReturnType>
       </ReturnValue>
@@ -507,6 +555,10 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -551,6 +603,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -563,7 +619,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Net.WebPermission> is <xref:System.Security.Permissions.PermissionState>, then the target class can use all URIs. Otherwise, specific permission must be given for any URI you want to use with the target class.  
+ If <xref:System.Net.WebPermission> is <xref:System.Security.Permissions.PermissionState.Unrestricted>, then the target class can use all URIs. Otherwise, specific permission must be given for any URI you want to use with the target class.  
   
 > [!NOTE]
 >  Use <xref:System.Net.WebPermission.AddPermission%2A> to add a URI and specify its permissions.  
@@ -580,6 +636,10 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -616,6 +676,10 @@
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

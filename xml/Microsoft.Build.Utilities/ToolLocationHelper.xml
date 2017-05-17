@@ -1132,7 +1132,7 @@
       </Parameters>
       <Docs>
         <param name="sdkRoot">The root folder for the SDK, must contain a design-time folder.</param>
-        <param name="targetConfiguration">The configuration the SDK is targeting. This is “Debug” or “Retail”.</param>
+        <param name="targetConfiguration">The configuration the SDK is targeting. This is "Debug" or "Retail".</param>
         <param name="targetArchitecture">The architecture the SDK is targeting.</param>
         <summary>Get the list of SDK folders which contain the design-time files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
         <returns>Returns the list of folders to be used in searching for design-time files in the SDK, in the order that must be used for the search.</returns>
@@ -1180,7 +1180,7 @@
       </Parameters>
       <Docs>
         <param name="sdkRoot">The root folder for the SDK, must contain a redist folder.</param>
-        <param name="targetConfiguration">The configuration the SDK is targeting. This is “Debug” or “Retail”.</param>
+        <param name="targetConfiguration">The configuration the SDK is targeting. This is "Debug" or "Retail".</param>
         <param name="targetArchitecture">The architecture the SDK is targeting.</param>
         <summary>Get the list of SDK folders which contain the redist files for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
         <returns>Returns the list of folders to be used in searching for redist files in the SDK, in the order that must be used for the search.</returns>
@@ -1228,7 +1228,7 @@
       </Parameters>
       <Docs>
         <param name="sdkRoot">The root folder for the SDK.</param>
-        <param name="targetConfiguration">The configuration the SDK is targeting. This is “Debug” or “Retail”.</param>
+        <param name="targetConfiguration">The configuration the SDK is targeting. This is "Debug" or "Retail".</param>
         <param name="targetArchitecture">The architecture the SDK is targeting.</param>
         <summary>Get the list of SDK folders which contain the references for the SDK at the specified SDK root. The list is in the order that must be used in searching for references.</summary>
         <returns>Returns the list of folders to be used in searching for references in the SDK, in the order that must be used for the search.</returns>

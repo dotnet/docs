@@ -96,7 +96,7 @@ interface ICustomer
     [WebGet( UriTemplate="customers/{id}" )]  
   Customer GetCustomer( string id ):  
   
-  //"Do It“ -> HTTP PUT  
+  //"Do It" -> HTTP PUT  
   [WebInvoke( UriTemplate="customers/{id}", Method="PUT" )]  
   Customer UpdateCustomer( string id, Customer newCustomer );  
 }  

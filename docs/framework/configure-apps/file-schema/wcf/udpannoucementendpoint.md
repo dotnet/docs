@@ -26,7 +26,7 @@ This configuration element defines a standard endpoint that is used by services 
 ```  
   
 <system.serviceModel>  
-    <standardEndpoints>       <announcementEndpoint>           <standardEndpoint                  discoveryVersion=”WSDiscovery11/WSDiscoveryApril2005”                  maxAnnouncementDelay=”Timespan”                   multicastAddress=”Uri”                  name="String" />        </announcementEndpoint>            </standardEndpoints>  
+    <standardEndpoints>       <announcementEndpoint>           <standardEndpoint                  discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"                  maxAnnouncementDelay="Timespan"                   multicastAddress="Uri"                  name="String" />        </announcementEndpoint>            </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

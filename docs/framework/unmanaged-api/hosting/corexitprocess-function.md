@@ -40,7 +40,7 @@ Shuts down the current unmanaged process.
 ## Syntax  
   
 ```  
-void STDMETHODCALLTYPE CorExitProcess (   
+void STDMETHODCALLTYPE CorExitProcess (   
   int  exitCode  
 );  
 ```  

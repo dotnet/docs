@@ -30,16 +30,14 @@
 ## Examples  
  The following example shows how to use the <xref:System.Management.Instrumentation.ManagementKeyAttribute> to mark a field as a key property of a WMI class.  
   
-```  
+```csharp  
 [ManagementKey]  
 public int id;  
 ```  
   
  The next example shows how to use the <xref:System.Management.Instrumentation.ManagementKeyAttribute> attribute to mark a key property of a WMI class.  
   
- [C#]  
-  
-```  
+```csharp  
 // Use the ManagementKey attribute to specify that this property   
 // is used as the key identifier of this class and for the WMI  
 // instances of this class.  This property must be unique for each  

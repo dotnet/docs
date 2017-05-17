@@ -134,7 +134,7 @@ public class BankingTransaction
   
  In this example, the `IsAudited` header is in the namespace specified in the code, and the body part that represents the `theData` member is represented by an XML element with the name `transactionData`. The following shows the XML generated for this message contract.  
   
-```  
+```xml  
 <s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">  
   <s:Header>  
     <h:IsAudited xmlns:h="http://schemas.contoso.com/auditing/2005" xmlns="http://schemas.contoso.com/auditing/2005">false</h:IsAudited>  
@@ -183,7 +183,7 @@ public class BankingDepositLog
   
  This results in SOAP headers is similar to the following.  
   
-```  
+```xml  
 <BankingDepositLog>  
 <numRecords>3</numRecords>  
 <records>  
@@ -197,8 +197,7 @@ public class BankingDepositLog
   
  An alternative to this is to use the <xref:System.ServiceModel.MessageHeaderArrayAttribute>. In this case, each array element is serialized independently and so that each array element has one header, similar to the following.  
   
-```  
-  
+```xml  
 <numRecords>3</numRecords>  
 <records>Record1</records>  
 <records>Record2</records>  
@@ -291,8 +290,7 @@ bt.IsAudited.MustUnderstand=true;
   
  If you use both the dynamic and the static control mechanisms, the static settings are used as a default but can later be overridden by using the dynamic mechanism, as shown in the following code.  
   
-```  
-[C#]  
+```csharp  
 [MessageHeader(MustUnderstand=true)] public MessageHeader<Person> documentApprover;  
 // later on in the code:  
 BankingTransaction bt = new BankingTransaction();  

@@ -2388,7 +2388,7 @@
 ## Remarks  
  This method is equivalent to the <xref:System.IO.FileStream.%23ctor%28System.String%2CSystem.IO.FileMode%2CSystem.IO.FileAccess%2CSystem.IO.FileShare%29> constructor overload with file mode set to <xref:System.IO.FileMode.OpenOrCreate>, the access set to <xref:System.IO.FileAccess.Write>, and the share mode set to <xref:System.IO.FileShare.None>.  
   
- The <xref:System.IO.File.OpenWrite%2A> method opens a file if one already exists for the file path, or creates a new file if one does not exist. For an existing file, it does not append the new text to the existing text. Instead, it overwrites the existing characters with the new characters. If you overwrite a longer string (such as “This is a test of the OpenWrite method”) with a shorter string (such as “Second run”), the file will contain a mix of the strings (“Second runtest of the OpenWrite method”).  
+ The <xref:System.IO.File.OpenWrite%2A> method opens a file if one already exists for the file path, or creates a new file if one does not exist. For an existing file, it does not append the new text to the existing text. Instead, it overwrites the existing characters with the new characters. If you overwrite a longer string (such as "This is a test of the OpenWrite method") with a shorter string (such as "Second run"), the file will contain a mix of the strings ("Second runtest of the OpenWrite method").  
   
  The `path` parameter may specify relative or absolute path information. Relative path information is interpreted as relative to the current working directory. To obtain the current working directory, use the <xref:System.IO.Directory.GetCurrentDirectory%2A> method.  
   

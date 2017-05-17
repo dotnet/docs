@@ -1142,9 +1142,7 @@ public void ReadOracleTypesExample(string connectionString)
 ## Examples  
  The following example demonstrates how to use the <xref:System.Data.OracleClient.OracleDataReader.GetOrdinal%2A> method.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Public Sub ReadOracleData(ByVal connectionString As String)  
   
     Dim queryString As String = "SELECT OrderID, CustomerID FROM Orders"  
@@ -1166,9 +1164,7 @@ Public Sub ReadOracleData(ByVal connectionString As String)
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 public void ReadOracleData(string connectionString)  
 {  
     string queryString = "SELECT OrderID, CustomerID FROM Orders";  

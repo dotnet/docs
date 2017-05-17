@@ -58,26 +58,20 @@
   
  Note that the <xref:System.Runtime.InteropServices.SEHException> class does not cause unmanaged C++ exception destructors to be called. To ensure that unmanaged C++ exception destructors are called, use the following syntax in the `catch` block.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Catch   
      ' Handle catch here.  
 End Try  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 catch  
 {  
      // Handle catch here.  
 }  
 ```  
   
- [C++]  
-  
-```  
+```cpp  
 catch(…)  
 {  
      // Handle catch here.  

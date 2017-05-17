@@ -47,11 +47,11 @@ Declares the name of a structure and introduces the definition of the variables,
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ] [ Shadows ] [ Partial ] _  
-Structure name [ ( Of typelist ) ]  
-    [ Implements interfacenames ]  
+[ <attributelist> ] [ accessmodifier ] [ Shadows ] [ Partial ] _  
+Structure name [ ( Of typelist ) ]  
+    [ Implements interfacenames ]  
     [ datamemberdeclarations ]  
-    [ methodmemberdeclarations ]  
+    [ methodmemberdeclarations ]  
 End Structure  
 ```  
   

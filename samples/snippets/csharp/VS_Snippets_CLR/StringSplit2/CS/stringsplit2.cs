@@ -1,3 +1,4 @@
+// <snippet1>
 using System;
 
 public class Example
@@ -41,3 +42,4 @@ public class Example
 //       -three-
 //       -four-
 //       --
+// </snippet1>

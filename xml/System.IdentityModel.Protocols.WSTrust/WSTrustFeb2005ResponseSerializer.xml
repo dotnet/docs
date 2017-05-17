@@ -47,9 +47,9 @@
       </Parameters>
       <Docs>
         <param name="reader">The <see cref="T:System.Xml.XmlReader" /> object from which to read.</param>
-        <summary>Checks if the specified XML reader is positioned at a RequestSecurityTokenResponse element with namespace “http://schemas.xmlsoap.org/ws/2005/02/trust”.</summary>
+        <summary>Checks if the specified XML reader is positioned at a RequestSecurityTokenResponse element with namespace "http://schemas.xmlsoap.org/ws/2005/02/trust".</summary>
         <returns>
-          <see langword="true" /> if the reader is positioned at a RequestSecurityTokenResponse element with namespace “http://schemas.xmlsoap.org/ws/2005/02/trust”; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the reader is positioned at a RequestSecurityTokenResponse element with namespace "http://schemas.xmlsoap.org/ws/2005/02/trust"; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="reader" /> is <see langword="null" />.</exception>

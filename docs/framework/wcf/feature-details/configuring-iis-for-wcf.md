@@ -67,7 +67,7 @@ Internet Information Services (IIS) 7.0 has a modular design that allows you to 
   
  `<requestFiltering>`  
   
- `<requestLimits maxUrl=”8192” maxQueryString=”8192” />`  
+ `<requestLimits maxUrl="8192" maxQueryString="8192" />`  
   
  `</requestFiltering>`  
   

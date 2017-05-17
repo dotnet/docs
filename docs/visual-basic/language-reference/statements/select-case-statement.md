@@ -56,11 +56,11 @@ Runs one of several groups of statements, depending on the value of an expressio
 ## Syntax  
   
 ```  
-Select [ Case ] testexpression  
-    [ Case expressionlist  
-        [ statements ] ]  
-    [ Case Else  
-        [ elsestatements ] ]  
+Select [ Case ] testexpression  
+    [ Case expressionlist  
+        [ statements ] ]  
+    [ Case Else  
+        [ elsestatements ] ]  
 End Select  
 ```  
   

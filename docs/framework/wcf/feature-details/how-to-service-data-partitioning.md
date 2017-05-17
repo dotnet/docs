@@ -16,7 +16,7 @@ ms.author: "wpickett"
 manager: "wpickett"
 ---
 # How To: Service Data Partitioning
-This topic outlines the basic steps required to partition messages across multiple instances of the same destination service. Service data partitioning is typically used when you need to scale a service in order to provide better quality of service, or when you need to handle requests from different customers in a specific way. For example, messages from high value or “Gold” customers may need to be processed at a higher priority than messages from a standard customer.  
+This topic outlines the basic steps required to partition messages across multiple instances of the same destination service. Service data partitioning is typically used when you need to scale a service in order to provide better quality of service, or when you need to handle requests from different customers in a specific way. For example, messages from high value or "Gold" customers may need to be processed at a higher priority than messages from a standard customer.  
   
  In this example, messages are routed to one of two instances of the regularCalc service. Both instances of the service are identical; however the service represented by the calculator1 endpoint processes messages received from high value customers, the calculator 2 endpoint processes messages from other customers  
   
@@ -93,7 +93,7 @@ This topic outlines the basic steps required to partition messages across multip
   
     ```  
   
-4.  To evaluate incoming messages against the filters contained in the table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating “filterTable1” with the service endpoints:  
+4.  To evaluate incoming messages against the filters contained in the table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating "filterTable1" with the service endpoints:  
   
     ```xml  
     <behaviors>  

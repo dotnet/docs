@@ -40,7 +40,7 @@ Specifies the attributes to be applied to a declared programming element. Multip
 ## Syntax  
   
 ```  
-[ attributemodifier ] attributename [ ( attributearguments | attributeinitializer ) ]  
+[ attributemodifier ] attributename [ ( attributearguments | attributeinitializer ) ]  
 ```  
   
 ## Parts  

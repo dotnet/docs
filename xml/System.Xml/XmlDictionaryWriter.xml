@@ -1619,7 +1619,7 @@ binarywriter.WriteEndAttribute();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteElementString">
@@ -2123,7 +2123,7 @@ binarywriter.WriteEndAttribute();
           <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Xml.XmlException">
           <paramref name="value" /> returns a <see langword="null" /> stream object.</exception>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “An asynchronous operation is already in progress.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> method was called before a previous asynchronous operation finished. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "An asynchronous operation is already in progress."</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteValue">
@@ -2226,7 +2226,7 @@ binarywriter.WriteEndAttribute();
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message “Set XmlWriterSettings.Async to true if you want to use Async Methods.”</exception>
+        <exception cref="T:System.InvalidOperationException">An <see cref="T:System.Xml.XmlDictionaryWriter" /> asynchronous method was called without setting the <see cref="P:System.Xml.XmlWriterSettings.Async" /> flag to <see langword="true" />. In this case, <see cref="T:System.InvalidOperationException" /> is thrown with the message "Set XmlWriterSettings.Async to true if you want to use Async Methods."</exception>
       </Docs>
     </Member>
     <MemberGroup MemberName="WriteXmlAttribute">

@@ -166,7 +166,7 @@ void New3(ref String ar);
   
  You can provide the marshaler with the array size by editing the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompiling it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](http://msdn.microsoft.com/en-us/4652beaf-77d0-4f37-9687-ca193288c0be). To indicate the number of elements in the array, apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> type to the array parameter of the managed method definition in one of the following ways:  
   
--   Identify another parameter that contains the number of elements in the array. The parameters are identified by position, starting with the first parameter as number 0. [Visual Basic]  
+-   Identify another parameter that contains the number of elements in the array. The parameters are identified by position, starting with the first parameter as number 0.     
   
     ```vb  
     Sub [New](ElemCnt As Integer, _  

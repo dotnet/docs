@@ -4066,15 +4066,11 @@
 ## Remarks  
  If a page is running in response to a request made through ASP.NET routing, this property provides access to the URL parameter values that were passed as route data. If the page runs in response to a physical URL instead of a route URL, this property is `null`. The following example shows how to extract the value of a URL parameter that is named `year`.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim year As Integer = Convert.ToInt32(Page.RouteData.Values("year"))  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 int year = Convert.ToInt32(Page.RouteData.Values["year"])  
 ```  
   
@@ -5311,7 +5307,6 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
   
 ```vb  
 <%@ Page Language="VB" ViewStateEncryptionMode="Always" %>  
-  
 ```  
   
 ```csharp  
@@ -5324,7 +5319,6 @@ int year = Convert.ToInt32(Page.RouteData.Values["year"])
 <system.web>  
   <pages viewStateEncryptionMode="Always" />  
 </system.web>  
-  
 ```  
   
 ```csharp  

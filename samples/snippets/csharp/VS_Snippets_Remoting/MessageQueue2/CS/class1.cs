@@ -976,7 +976,7 @@ public class QueueExample
         // the queue.
         AccessControlEntry entry = new AccessControlEntry(
             tr, GenericAccessRights.Read,
- StandardAccessRights.Read,
+            StandardAccessRights.Read,
             AccessControlEntryType.Allow);
 
         // Add the AccessControlEntry to the AccessControlList.

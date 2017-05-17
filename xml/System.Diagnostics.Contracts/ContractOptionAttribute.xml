@@ -156,7 +156,7 @@ public override MyMethod(int x) {
  There are only two category/setting options, and they can be set by either of the constructor overloads. You can use this overload with the same settings as the <xref:System.Diagnostics.Contracts.ContractOptionAttribute.%23ctor%28System.String%2CSystem.String%2CSystem.Boolean%29> overload by specifying "true" or "false" in string format; for example:  
   
 ```  
-[ContractOption("contract", "inheritance", “false”)]  
+[ContractOption("contract", "inheritance", "false")]  
 class MyConcurrentList<T> : IList<T> {  
    ...  
 }  

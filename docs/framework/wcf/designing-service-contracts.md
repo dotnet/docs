@@ -165,8 +165,6 @@ public interface IMyContract
   
  The following is the equivalent Visual Basic code.  
   
- [Visual Basic]  
-  
 ```vb  
 \<ServiceContractAttribute()> _  
 Public Interface IMyContract  
@@ -203,8 +201,6 @@ public interface ISampleService
   
  The following is the equivalent Visual Basic code.  
   
- [Visual Basic]  
-  
 ```vb  
 \<ServiceContractAttribute()> _  
 Public Interface ISampleService  
@@ -216,7 +212,6 @@ Public Interface ISampleService
   Public Function GetData() As Integer  
   
 End Interface  
-  
 ```  
   
  When interacting with an `ISampleService` implementation in an endpoint with a default <xref:System.ServiceModel.WSHttpBinding> (the default <xref:System.ServiceModel.SecurityMode?displayProperty=fullName>, which is <xref:System.ServiceModel.SecurityMode>), all messages are encrypted and signed because this is the default protection level. However, when an `ISampleService` service is used with a default <xref:System.ServiceModel.BasicHttpBinding> (the default <xref:System.ServiceModel.SecurityMode>, which is <xref:System.ServiceModel.SecurityMode>), all messages are sent as text because there is no security for this binding and so the protection level is ignored (that is, the messages are neither encrypted nor signed). If the <xref:System.ServiceModel.SecurityMode> was changed to <xref:System.ServiceModel.SecurityMode>, then these messages would be encrypted and signed (because that would now be the binding's default protection level).  
@@ -255,7 +250,6 @@ Public Interface IExplicitProtectionLevelSampleService
     End Function   
   
 End Interface  
-  
 ```  
   
  A service that implements this `IExplicitProtectionLevelSampleService` contract and has an endpoint that uses the default <xref:System.ServiceModel.WSHttpBinding> (the default <xref:System.ServiceModel.SecurityMode?displayProperty=fullName>, which is <xref:System.ServiceModel.SecurityMode>) has the following behavior:  

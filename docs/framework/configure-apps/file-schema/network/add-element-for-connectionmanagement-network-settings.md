@@ -40,9 +40,9 @@ Adds an IP address or DNS name to the connection management list.
   
 ```  
   
-      <add   
-   address = "address expression"   
-   maxconnection = integer   
+      <add   
+   address = "address expression"   
+   maxconnection = integer   
 />  
 ```  
   

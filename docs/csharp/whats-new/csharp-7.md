@@ -361,17 +361,15 @@ modified. The local variable has been declared with the `ref` modifier,
 and it will take a `ref` return. You must initialize a `ref` variable when
 it is declared, you cannot split the declaration and the initialization.
 
-The C# language has two other rules that protect you from misusing
+The C# language has three other rules that protect you from misusing
 the `ref` locals and returns:
 
-* You cannot assign a value to a `ref` variable.
+* You cannot assign a standard method return value to a `ref` local variable.
     - That disallows statements like `ref int i = sequence.Count();`
 * You cannot return a `ref` to a variable whose lifetime does not extend beyond the execution of the method.
-    - That means you cannot return a reference to a local variable, or similar scope.
-
-These rules ensure that you cannot accidentally mix value variables and
-reference variables. They also ensure that you cannot have a reference
-variable refer to storage that is a candidate for garbage collection.
+    - That means you cannot return a reference to a local variable or a variable with a similar scope.
+* `ref` locals and returns can't be used with async methods.
+    - The compiler can't know if the referenced variable has been set to its final value when the async method returns.
 
 The addition of ref locals and ref returns enable algorithms that are more
 efficient by avoiding copying values, or performing dereferencing operations

@@ -1564,7 +1564,7 @@ firstName = DirectCast(context.Session("FirstName"), String)
 ## Examples  
  The following example shows how to access properties of the current user through the <xref:System.Web.HttpContext.User%2A> property. Those properties are used to set the title of the Web page.  
   
- If the application uses Windows authentication, the user name includes the domain. For example, the page title would be “Home page for DOMAIN\username”.  
+ If the application uses Windows authentication, the user name includes the domain. For example, the page title would be "Home page for DOMAIN\username".  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpContext.User#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpContext.User/cs/Default.aspx.cs#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.HttpContext.User#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpContext.User/vb/Default.aspx.vb#1)]  -->  

@@ -26,10 +26,10 @@ Enables token replay detection and specifies the expiration time for tokens.
   
 ```  
 \<system.identityModel>  
-  <identityConfiguration>  
-    \<tokenReplayDetection enabled=xs:boolean expirationPeriod=TimeSpan>  
-    </tokenReplayDetection>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    \<tokenReplayDetection enabled=xs:boolean expirationPeriod=TimeSpan>  
+    </tokenReplayDetection>  
+  </identityConfiguration>  
 \</system.identityModel>  
 ```  
   
@@ -43,7 +43,7 @@ Enables token replay detection and specifies the expiration time for tokens.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|enabled|A value that specifies whether token replay detection is enabled; “true” to enable token replay detection.|  
+|enabled|A value that specifies whether token replay detection is enabled; "true" to enable token replay detection.|  
 |expirationPeriod|A <xref:System.TimeSpan> that specifies the maximum amount of time before an item is considered expired and removed from the cache.  For more information about how to specify <xref:System.TimeSpan> values, see [Timespan Values](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/index.md).|  
   
 ### Child Elements  

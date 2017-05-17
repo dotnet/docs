@@ -28,10 +28,10 @@ Specifies debugging and help information features for a [!INCLUDE[indigo1](../..
   
 ```  
   
-<serviceDebug     httpHelpPageBinding=”String”    httpHelpPageBindingConfiguration=”String”  
+<serviceDebug     httpHelpPageBinding="String"    httpHelpPageBindingConfiguration="String"  
     httpHelpPageEnabled="Boolean"  
     httpHelpPageUrl="Uri"  
-    httpsHelpPageBinding=”String”    httpsHelpPageBindingConfiguration=”String”  
+    httpsHelpPageBinding="String"    httpsHelpPageBindingConfiguration="String"  
     httpsHelpPageEnabled="Boolean"  
     httpsHelpPageUrl="Uri"  
     includeExceptionDetailInFaults="Boolean" />  

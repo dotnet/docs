@@ -40,9 +40,9 @@ In a distributed system containing interconnected services, it is necessary to d
   
     ```  
     <system.serviceModel>  
-      <diagnostics>  
-        <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
-      </diagnostics>  
+      <diagnostics>  
+        <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
+      </diagnostics>  
     </system.serviceModel>  
   
     ```  
@@ -53,7 +53,7 @@ In a distributed system containing interconnected services, it is necessary to d
   
     ```  
     <diagnostics>  
-      <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
+      <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
     </diagnostics>  
   
     ```  

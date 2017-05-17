@@ -27,14 +27,14 @@ Adds the specified security token handler to the token handler collection.
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <add type=xs:string>  
-        <optionalConfigurationElement>  
-        </optionalConfigurationElement>  
-      </add>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <add type=xs:string>  
+        <optionalConfigurationElement>  
+        </optionalConfigurationElement>  
+      </add>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

@@ -27,12 +27,12 @@ Registers a cache for session tokens with a service or a security token handler 
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <caches>  
-      <sessionSecurityTokenCache type=xs:string>  
-      </sessionSecurityTokenCache>  
-    </caches>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <caches>  
+      <sessionSecurityTokenCache type=xs:string>  
+      </sessionSecurityTokenCache>  
+    </caches>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

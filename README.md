@@ -11,7 +11,6 @@ For more information, see the [.NET Foundation Code of Conduct](https://dotnetfo
 Samples Build Status
 ===
 
-
 | Framework | Ubuntu 16.04 (x64) | Windows Server 2012 R2 (x64)  |
 | ------------- |------------| -----|
 | .NET Core     | [![Build Status](http://seoul.westus.cloudapp.azure.com/buildStatus/icon?job=dotnetcore-samples-ubuntu1604-x64)](http://seoul.westus.cloudapp.azure.com/job/dotnetcore-samples-ubuntu1604-x64/) | [![Build Status](http://seoul.westus.cloudapp.azure.com/buildStatus/icon?job=dotnetcore-samples-windows2012-x64)](http://seoul.westus.cloudapp.azure.com/job/dotnetcore-samples-windows2012-x64/) |

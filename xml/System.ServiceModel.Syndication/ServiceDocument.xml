@@ -269,7 +269,7 @@
         <typeparam name="TServiceDocument">The type of the service document.</typeparam>
         <param name="reader">The <see cref="T:System.Xml.XmlReader" /> to read the service document from.</param>
         <summary>Loads a service document from the specified <see cref="T:System.Xml.XmlReader" /> into a <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> derived instance.</summary>
-        <returns>A<see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance.</returns>
+        <returns>A <see cref="T:System.ServiceModel.Syndication.ServiceDocument" /> instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

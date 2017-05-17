@@ -1033,8 +1033,8 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">When<paramref name=" asyncResult" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentException">When<paramref name=" asyncResult" /> did not originate from this <see cref="T:System.Data.Services.Client.DataServiceContext" /> instance.  
+        <exception cref="T:System.ArgumentNullException">When <paramref name="asyncResult" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">When <paramref name="asyncResult" /> did not originate from this <see cref="T:System.Data.Services.Client.DataServiceContext" /> instance.  
   
  -or-  
   
@@ -1061,7 +1061,7 @@
       <Docs>
         <param name="asyncResult">An <see cref="T:System.IAsyncResult" /> that represents the status of the asynchronous operation.</param>
         <summary>Called to complete the <see cref="M:System.Data.Services.Client.DataServiceContext.BeginExecuteBatch(System.AsyncCallback,System.Object,System.Data.Services.Client.DataServiceRequest[])" />.</summary>
-        <returns>The<see langword=" DataServiceResult" /> object that indicates the result of the batch operation.</returns>
+        <returns>The <see langword="DataServiceResult" /> object that indicates the result of the batch operation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1429,7 +1429,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The<paramref name=" entity" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="entity" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="entity" /> is not tracked by this <see cref="T:System.Data.Services.Client.DataServiceContext" />.  
   
  -or-  

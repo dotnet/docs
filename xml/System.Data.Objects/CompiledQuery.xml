@@ -104,7 +104,7 @@
       </Parameters>
       <Docs>
         <typeparam name="TArg0">A type derived from <see cref="T:System.Data.Objects.ObjectContext" />.</typeparam>
-        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by this method. <c>TArg1</c>must be a primitive type.</typeparam>
+        <typeparam name="TArg1">Represents the type of the parameter that has to be passed in when executing the delegate returned by this method. <c>TArg1</c> must be a primitive type.</typeparam>
         <typeparam name="TResult">The type <c>T</c> of the query results returned by executing the delegate returned by the <see cref="M:System.Data.Objects.CompiledQuery.Compile``3(System.Linq.Expressions.Expression{System.Func{``0,``1,``2}})" /> method.</typeparam>
         <param name="query">The lambda expression to compile.</param>
         <summary>Creates a new delegate that represents the compiled LINQ to Entities query.</summary>

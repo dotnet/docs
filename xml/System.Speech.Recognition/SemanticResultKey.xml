@@ -235,7 +235,7 @@ private void pwdGrammar()
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="semanticResultKey">The tag to be used access the <see cref="T:System.Speech.Recognition.SemanticValue" /> instance associated with the <see cref="T:System.String" />objects specified by the <c>phrases</c> argument.</param>
+        <param name="semanticResultKey">The tag to be used access the <see cref="T:System.Speech.Recognition.SemanticValue" /> instance associated with the <see cref="T:System.String" /> objects specified by the <c>phrases</c> argument.</param>
         <param name="phrases">One or more <see cref="T:System.String" /> objects, whose concatenated text will be associated with a <see cref="T:System.Speech.Recognition.SemanticValue" /> object accessible with the tag defined in <c>semanticResultKey</c>.</param>
         <summary>Assigns a semantic key to one or more <see cref="T:System.String" /> instances used to create a speech recognition grammar.</summary>
         <remarks>

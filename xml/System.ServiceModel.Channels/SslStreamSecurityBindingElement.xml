@@ -451,7 +451,7 @@ namespace ServiceNamespace
         <typeparam name="T">The type of the object to get.</typeparam>
         <param name="context">A <see cref="T:System.ServiceModel.Channels.BindingContext" />.</param>
         <summary>Gets a specified object from the <see cref="T:System.ServiceModel.Channels.BindingContext" />.</summary>
-        <returns>The  object of type <paramref name="T" />from the <see cref="T:System.ServiceModel.Channels.BindingContext" />, or <see langword="null" /> if the object is not found.</returns>
+        <returns>The  object of type <paramref name="T" /> from the <see cref="T:System.ServiceModel.Channels.BindingContext" />, or <see langword="null" /> if the object is not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

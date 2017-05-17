@@ -76,7 +76,7 @@
           <paramref name="userData" /> must be 16 bytes in length or in multiples of 16 bytes.</exception>
         <exception cref="T:System.NotSupportedException">The operating system does not support this method. This method can be used only with the Windows 2000 or later operating systems.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="userData " />is <see langword="null" />.</exception>
+          <paramref name="userData" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Unprotect">
@@ -120,9 +120,9 @@
         </remarks>
         <exception cref="T:System.NotSupportedException">The operating system does not support this method. This method can be used only with the Windows 2000 or later operating systems.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="encryptedData " />is <see langword="null" />.</exception>
+          <paramref name="encryptedData" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
-          <paramref name="encryptedData " />is empty.  
+          <paramref name="encryptedData" /> is empty.  
   
  -or-  
   

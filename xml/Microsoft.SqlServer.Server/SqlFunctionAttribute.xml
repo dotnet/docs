@@ -70,7 +70,7 @@
 ## Remarks  
  The default is <xref:Microsoft.SqlServer.Server.DataAccessKind.None>.<xref:Microsoft.SqlServer.Server.SqlFunctionAttribute.DataAccess%2A> is also required when connecting to remote servers if transactions integration is required (the default).  
   
- If a Transact-SQL query is executed from inside a table-valued function (TVF), the <xref:Microsoft.SqlServer.Server.DataAccessKind>.`Read` property should be set.  
+ If a Transact-SQL query is executed from inside a table-valued function (TVF), the <xref:Microsoft.SqlServer.Server.DataAccessKind.Read> property should be set.  
   
  ]]></format>
         </remarks>

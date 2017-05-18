@@ -101,14 +101,14 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
   
  The following is an example of an association between a string and an integer (`city name` and `population`).  
   
- [!code-xml[C_SchemaImportExport#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#12)]  
+ [!code-xml[C_SchemaImportExport#12](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#12)]   
   
 > [!NOTE]
 >  Any association could also be considered a list. For example, you can view the preceding association as a list of complex `city` objects that happen to have two fields (a string field and an integer field). Both patterns have a representation in the XSD Schema. There is no way to differentiate between a list and an association, so such patterns are always treated as lists unless a special annotation specific to [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] is present in the schema. The annotation indicates that a given pattern represents an association. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).  
   
  Normally, a list is imported as a collection data contract that derives from a Generic List or as a [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] array, depending on whether or not the schema follows the standard naming pattern for collections. This is described in more detail in [Collection Types in Data Contracts](../../../../docs/framework/wcf/feature-details/collection-types-in-data-contracts.md). Associations are normally imported as either a <xref:System.Collections.Generic.Dictionary%602> or a collection data contract that derives from the dictionary object. For example, consider the following schema.  
   
- [!code-xml[c_SchemaImportExport#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#13)]  
+ [!code-xml[c_SchemaImportExport#13](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_schemaimportexport/common/source.config#13)]   
   
  This would be imported as follows (fields are shown instead of properties for readability).  
   
@@ -168,9 +168,9 @@ To generate classes from schemas that are usable with [!INCLUDE[indigo1](../../.
   
  This is accomplished through the `IXmlSerializable` implementation. In the generated `IXmlSerializable` type, the <xref:System.Xml.Serialization.IXmlSerializable.ReadXml%2A> implementation calls the <xref:System.Runtime.Serialization.XmlSerializableServices.ReadNodes%2A> method of the <xref:System.Runtime.Serialization.XmlSerializableServices> class. The method is a helper method that converts XML provided through an <xref:System.Xml.XmlReader> to an array of <xref:System.Xml.XmlNode> objects. The <xref:System.Xml.Serialization.IXmlSerializable.WriteXml%2A> implementation does the opposite and converts the array of `XmlNode` objects to a sequence of <xref:System.Xml.XmlWriter> calls. This is accomplished using the <xref:System.Runtime.Serialization.XmlSerializableServices.WriteNodes%2A> method.  
   
- It is possible to run the schema export process on the generated `IXmlSerializable` classes. As previously stated, you will not get the original schema back. Instead, you will get the “anyType” standard XSD type, which is a wildcard for any XSD type.  
+ It is possible to run the schema export process on the generated `IXmlSerializable` classes. As previously stated, you will not get the original schema back. Instead, you will get the "anyType" standard XSD type, which is a wildcard for any XSD type.  
   
- This is accomplished by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute to the generated `IXmlSerializable` classes and specifying a method that calls the <xref:System.Runtime.Serialization.XmlSerializableServices.AddDefaultSchema%2A> method to generate the “anyType” type.  
+ This is accomplished by applying the <xref:System.Xml.Serialization.XmlSchemaProviderAttribute> attribute to the generated `IXmlSerializable` classes and specifying a method that calls the <xref:System.Runtime.Serialization.XmlSerializableServices.AddDefaultSchema%2A> method to generate the "anyType" type.  
   
 > [!NOTE]
 >  The <xref:System.Runtime.Serialization.XmlSerializableServices> type exists solely to support this particular feature. It is not recommended for use for any other purpose.  

@@ -92,7 +92,7 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
       <Docs>
         <param name="other">The object to compare with the current instance.</param>
         <summary>Compares the current <see cref="T:System.ValueTuple" /> instance with a specified object.</summary>
-        <returns>Returns 0 if <paramref name=" other" /> is a <see cref="T:System.ValueTuple" /> instance and 1 if <paramref name="other" /> is <see langword="null" />.</returns>
+        <returns>Returns 0 if <paramref name="other" /> is a <see cref="T:System.ValueTuple" /> instance and 1 if <paramref name="other" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="other" /> is not a <see cref="T:System.ValueTuple" /> instance.</exception>
@@ -749,7 +749,7 @@ The <xref:System.ValueTuple> structure itself does not represent a value tuple. 
         <param name="other">The object to compare with the current instance.</param>
         <param name="comparer">An object that provides custom rules for comparison. This parameter is ignored.</param>
         <summary>Compares the current <see cref="T:System.ValueTuple" /> instance to a specified object.</summary>
-        <returns>Returns 0 if <paramref name=" other" /> is a <see cref="T:System.ValueTuple" /> instance and 1 if <paramref name="other" /> is <see langword="null" />.</returns>
+        <returns>Returns 0 if <paramref name="other" /> is a <see cref="T:System.ValueTuple" /> instance and 1 if <paramref name="other" /> is <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="other" /> is not a <see cref="T:System.ValueTuple" /> instance.</exception>

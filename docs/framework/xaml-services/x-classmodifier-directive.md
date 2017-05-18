@@ -29,7 +29,7 @@ Modifies XAML compilation behavior when `x:Class` is also provided. Specifically
 ## XAML Attribute Usage  
   
 ```  
-\<object x:Class="namespace.classname" x:ClassModifier="NotPublic">  
+<object x:Class="namespace.classname" x:ClassModifier="NotPublic">  
    ...  
 </object>  
 ```  

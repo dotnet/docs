@@ -1327,14 +1327,14 @@
   
  <xref:System.TimeZoneInfo.Equals%28System.TimeZoneInfo%29?displayProperty=fullName> returns the Boolean value that results from evaluating the following expression:  
   
- [C#]  
+ ```csharp 
+ other.Id == this.Id && HasSameRules(other);  
+ ```
   
- `other.Id == this.Id && HasSameRules(other);`  
-  
- [Visual Basic]  
-  
- `other.Id = me.Id AndAlso HasSameRules(other)`  
-  
+ ```vb
+ other.Id = me.Id AndAlso HasSameRules(other)  
+ ```
+
  If the `other` parameter is an uninitialized <xref:System.TimeZoneInfo> object, this method returns `false`.  
   
    

@@ -450,7 +450,7 @@
         <ReturnType>System.Diagnostics.PerformanceData.CounterType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This counter type collects the last observed value. It is the same as the <see cref="F:System.Diagnostics.PerformanceData.CounterType.RawBase32" />counter type except that it uses larger fields to accommodate larger values. This type supports the <see cref="F:System.Diagnostics.PerformanceData.CounterType.RawFraction64" /> counter type. (See the PERF_LARGE_RAW_BASE counter type in the deployment kit.)</summary>
+        <summary>This counter type collects the last observed value. It is the same as the <see cref="F:System.Diagnostics.PerformanceData.CounterType.RawBase32" /> counter type except that it uses larger fields to accommodate larger values. This type supports the <see cref="F:System.Diagnostics.PerformanceData.CounterType.RawFraction64" /> counter type. (See the PERF_LARGE_RAW_BASE counter type in the deployment kit.)</summary>
       </Docs>
     </Member>
     <Member MemberName="RawData32">

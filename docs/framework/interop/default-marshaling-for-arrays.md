@@ -81,11 +81,11 @@ HRESULT New3([in, out] SAFEARRAY( BSTR ) *ar);
  **Managed signature**  
   
 ```vb  
-Sub New1(\<MarshalAs(UnmanagedType.SafeArray, SafeArraySubType:=VT_I4)> _  
+Sub New1(<MarshalAs(UnmanagedType.SafeArray, SafeArraySubType:=VT_I4)> _  
    ar() As Integer)  
-Sub New2(\<MarshalAs(UnmanagedType.SafeArray, SafeArraySubType:=VT_DATE)> _   
+Sub New2(<MarshalAs(UnmanagedType.SafeArray, SafeArraySubType:=VT_DATE)> _   
    ar() As DateTime)  
-Sub New3(ByRef \<MarshalAs(UnmanagedType.SafeArray, SafeArraySubType:=VT_BSTR)> _   
+Sub New3(ByRef <MarshalAs(UnmanagedType.SafeArray, SafeArraySubType:=VT_BSTR)> _   
    ar() As String)  
   
 ```  
@@ -122,11 +122,11 @@ HRESULT New3(LPWStr ar[10]);
  **Managed signature**  
   
 ```vb  
-Sub New1(\<MarshalAs(UnmanagedType.LPArray, SizeConst=10)> _  
+Sub New1(<MarshalAs(UnmanagedType.LPArray, SizeConst=10)> _  
    ar() As Integer)  
-Sub New2(\<MarshalAs(UnmanagedType.LPArray, SizeConst=200)> _  
+Sub New2(<MarshalAs(UnmanagedType.LPArray, SizeConst=200)> _  
    ar() As Double)  
-Sub New2(\<MarshalAs(UnmanagedType.LPArray, _  
+Sub New2(<MarshalAs(UnmanagedType.LPArray, _  
    ArraySubType=UnmanagedType.LPWStr, SizeConst=10)> _  
    ar() As String)  
   
@@ -166,7 +166,7 @@ void New3(ref String ar);
   
  You can provide the marshaler with the array size by editing the Microsoft intermediate language (MSIL) code produced by Tlbimp.exe and then recompiling it. For details about how to modify MSIL code, see [Customizing Runtime Callable Wrappers](http://msdn.microsoft.com/en-us/4652beaf-77d0-4f37-9687-ca193288c0be). To indicate the number of elements in the array, apply the <xref:System.Runtime.InteropServices.MarshalAsAttribute> type to the array parameter of the managed method definition in one of the following ways:  
   
--   Identify another parameter that contains the number of elements in the array. The parameters are identified by position, starting with the first parameter as number 0. [Visual Basic]  
+-   Identify another parameter that contains the number of elements in the array. The parameters are identified by position, starting with the first parameter as number 0.     
   
     ```vb  
     Sub [New](ElemCnt As Integer, _  
@@ -243,11 +243,11 @@ HRESULT New([in] SAFEARRAY( BSTR ) ar);
 #### Managed signature  
   
 ```vb  
-Sub [New](\<MarshalAs(UnmanagedType.LPArray, SizeParamIndex:=1)> _  
+Sub [New](<MarshalAs(UnmanagedType.LPArray, SizeParamIndex:=1)> _  
    ar() As Long, size as Integer)  
-Sub [New](\<MarshalAs(UnmanagedType.LPArray, SizeParamIndex:=1)> _  
+Sub [New](<MarshalAs(UnmanagedType.LPArray, SizeParamIndex:=1)> _  
    ar() As String, size as Integer)  
-Sub [New](\<MarshalAs(UnmanagedType.LPArray, _  
+Sub [New](<MarshalAs(UnmanagedType.LPArray, _  
    ArraySubType= UnmanagedType.LPStr, SizeParamIndex:=1)> _  
    ar() As String, size as Integer)  
   
@@ -303,9 +303,9 @@ HRESULT New([in] SAFEARRAY( BSTR ) ar);
 #### Managed signature  
   
 ```vb  
-Sub [New](\<MarshalAs(UnmanagedType.LPARRAY, SizeParamIndex:=1)> _  
+Sub [New](<MarshalAs(UnmanagedType.LPARRAY, SizeParamIndex:=1)> _  
    ar(,) As Long, size As Integer)  
-Sub [New](\<MarshalAs(UnmanagedType.LPARRAY, _  
+Sub [New](<MarshalAs(UnmanagedType.LPARRAY, _  
    ArraySubType:=UnmanagedType.LPStr, SizeParamIndex:=1)> _  
    ar(,) As String, size As Integer)  
   
@@ -346,7 +346,7 @@ void New(long [][][] ar );
   
 ```vb  
 Sub New1( ar As System.Array )  
-Sub New2( \<MarshalAs(UnmanagedType.Safe array)> ar As System.Array )  
+Sub New2( <MarshalAs(UnmanagedType.Safe array)> ar As System.Array )  
   
 ```  
   
@@ -376,8 +376,8 @@ struct MyStruct {
  Arrays can be marshaled as <xref:System.Runtime.InteropServices.UnmanagedType>, which requires you to set the <xref:System.Runtime.InteropServices.MarshalAsAttribute> field. The size can be set only as a constant. The following code shows the corresponding managed definition of `MyStruct`.  
   
 ```vb  
-Public Structure \<StructLayout(LayoutKind.Sequential)> MyStruct  
-   Public \<MarshalAs(UnmanagedType.ByValArray, SizeConst := 128)> _  
+Public Structure <StructLayout(LayoutKind.Sequential)> MyStruct  
+   Public <MarshalAs(UnmanagedType.ByValArray, SizeConst := 128)> _  
      s1() As Short  
 End Structure  
   

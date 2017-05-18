@@ -29,7 +29,7 @@ Configures XAML markup compilation to join partial classes between markup and co
 ## XAML Attribute Usage  
   
 ```  
-\<object x:Class="namespace.classname"...>  
+<object x:Class="namespace.classname"...>  
   ...  
 </object>  
 ```  

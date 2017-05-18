@@ -1396,7 +1396,7 @@ Process C says: True
   
  -or-  
   
- <paramref name="access " />is not a valid <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFileAccess" /> enumeration value.</exception>
+ <paramref name="access" /> is not a valid <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFileAccess" /> enumeration value.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
           <paramref name="access" /> is invalid for the memory-mapped file.</exception>
         <exception cref="T:System.IO.IOException">

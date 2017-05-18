@@ -797,7 +797,7 @@
         <param name="toolboxItem">The linked <see cref="T:System.Drawing.Design.ToolboxItem" /> to add to the toolbox.</param>
         <param name="category">The toolbox item category to add the toolbox item to.</param>
         <param name="host">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> for the current design document.</param>
-        <summary>For a description of this member, see the <see cref="M:System.Drawing.Design.IToolboxService.AddLinkedToolboxItem(System.Drawing.Design.ToolboxItem,System.String,System.ComponentModel.Design.IDesignerHost)" />method.</summary>
+        <summary>For a description of this member, see the <see cref="M:System.Drawing.Design.IToolboxService.AddLinkedToolboxItem(System.Drawing.Design.ToolboxItem,System.String,System.ComponentModel.Design.IDesignerHost)" /> method.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1096,7 +1096,7 @@
         <returns>A <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> that contains the current toolbox items that are associated with the specified category and designer host.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="category " />or <paramref name="host" /> is <see langword="null" />.</exception>
+          <paramref name="category" /> or <paramref name="host" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Drawing.Design.IToolboxService.IsSupported">

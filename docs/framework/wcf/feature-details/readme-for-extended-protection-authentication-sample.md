@@ -16,7 +16,7 @@ ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # ReadMe for Extended Protection Authentication Sample
-Extended Protection is a security initiative to protect against man-in-the-middle (MITM) attacks, in which an attacker (the “man-in-the-middle”) intercepts a client’s credentials and uses them to access secure resources on the client’s intended server.  
+Extended Protection is a security initiative to protect against man-in-the-middle (MITM) attacks, in which an attacker (the "man-in-the-middle") intercepts a client’s credentials and uses them to access secure resources on the client’s intended server.  
   
  For more information, see [Extended Protection for Authentication Overview](../../../../docs/framework/wcf/feature-details/extended-protection-for-authentication-overview.md).  
   

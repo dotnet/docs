@@ -30,9 +30,9 @@ Enables placement of XML data islands within a XAML production. XML elements wit
   
 ```  
 <x:XData>  
-  <elementDataRoot>  
-    [elementData]  
-  </elementDataRoot>  
+  <elementDataRoot>  
+    [elementData]  
+  </elementDataRoot>  
 </x:XData>  
 ```  
   

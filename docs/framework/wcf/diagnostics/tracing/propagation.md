@@ -24,7 +24,7 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
  To do this, use the `ActivityTracing` setting as demonstrated in the previous example. In addition, set the `propagateActivity` attribute for the `System.ServiceModel` trace source at all endpoints.  
   
 ```  
-<source name="System.ServiceModel" switchValue="Verbose,ActivityTracing" propagateActivity=”true” >  
+<source name="System.ServiceModel" switchValue="Verbose,ActivityTracing" propagateActivity="true" >  
 ```  
   
  Activity propagation is a configurable capability that causes [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] to add a header to outbound messages, which includes the activity ID on the TLS. By including this on subsequent traces on the server side, we can correlate client and server activities.  
@@ -41,8 +41,8 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
  The gAId is propagated through the ActivityId message header, as illustrated in the following XML schema.  
   
 ```  
-<xsd:element name=”ActivityId” type=”integer” minOccurs=”0”>  
-  <xsd:attribute name=”CorrelationId” type=”integer” minOccurs=”0”/>  
+<xsd:element name="ActivityId" type="integer" minOccurs="0">  
+  <xsd:attribute name="CorrelationId" type="integer" minOccurs="0"/>  
 </xsd:element>  
 ```  
   
@@ -50,31 +50,31 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
   
 ```  
 <MessageLogTraceRecord>  
-  <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"     
-                      xmlns:a="http://www.w3.org/2005/08/addressing">  
-    <s:Header>  
-      <a:Action s:mustUnderstand="1">http://Microsoft.ServiceModel.Samples/ICalculator/Subtract  
-      </a:Action>  
-      <a:MessageID>urn:uuid:f0091eae-d339-4c7e-9408-ece34602f1ce  
-      </a:MessageID>  
-      <ActivityId CorrelationId="f94c6af1-7d5d-4295-b693-4670a8a0ce34"   
+  <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"     
+                      xmlns:a="http://www.w3.org/2005/08/addressing">  
+    <s:Header>  
+      <a:Action s:mustUnderstand="1">http://Microsoft.ServiceModel.Samples/ICalculator/Subtract  
+      </a:Action>  
+      <a:MessageID>urn:uuid:f0091eae-d339-4c7e-9408-ece34602f1ce  
+      </a:MessageID>  
+      <ActivityId CorrelationId="f94c6af1-7d5d-4295-b693-4670a8a0ce34"   
   
                xmlns="http://schemas.microsoft.com/2004/09/ServiceModel/Diagnostics">  
-        17f59a29-b435-4a15-bf7b-642ffc40eac8  
-      </ActivityId>  
-      <a:ReplyTo>  
-          <a:Address>http://www.w3.org/2005/08/addressing/anonymous  
-          </a:Address>  
-      </a:ReplyTo>  
-      <a:To s:mustUnderstand="1">net.tcp://localhost/servicemodelsamples/service</a:To>  
-   </s:Header>  
-   <s:Body>  
-     <Subtract xmlns="http://Microsoft.ServiceModel.Samples">  
-       <n1>145</n1>  
-       <n2>76.54</n2>  
-     </Subtract>  
-   </s:Body>  
-  </s:Envelope>  
+        17f59a29-b435-4a15-bf7b-642ffc40eac8  
+      </ActivityId>  
+      <a:ReplyTo>  
+          <a:Address>http://www.w3.org/2005/08/addressing/anonymous  
+          </a:Address>  
+      </a:ReplyTo>  
+      <a:To s:mustUnderstand="1">net.tcp://localhost/servicemodelsamples/service</a:To>  
+   </s:Header>  
+   <s:Body>  
+     <Subtract xmlns="http://Microsoft.ServiceModel.Samples">  
+       <n1>145</n1>  
+       <n2>76.54</n2>  
+     </Subtract>  
+   </s:Body>  
+  </s:Envelope>  
 </MessageLogTraceRecord>  
 ```  
   

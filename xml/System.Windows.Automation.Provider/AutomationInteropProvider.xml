@@ -284,7 +284,7 @@
       </Parameters>
       <Docs>
         <param name="hwnd">Handle of the element's window.</param>
-        <param name="wParam">The <see langword="wParam" /> member of the <see langword="WM_GETOBJECT " />message.</param>
+        <param name="wParam">The <see langword="wParam" /> member of the <see langword="WM_GETOBJECT" /> message.</param>
         <param name="lParam">The <see langword="lParam" /> member of the <see langword="WM_GETOBJECT" /> message.</param>
         <param name="el">The UI Automation provider for the element.</param>
         <summary>Returns the UI automation provider for an element in response to a <see langword="WM_GETOBJECT" /> message.</summary>

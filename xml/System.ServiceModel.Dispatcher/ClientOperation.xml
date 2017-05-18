@@ -199,7 +199,7 @@
       <Docs>
         <summary>Gets or sets a value that indicates whether the <see cref="P:System.ServiceModel.Dispatcher.ClientOperation.Formatter" /> property value is used to deserialize the reply message.</summary>
         <value>
-          <see langword="true " />if the return type is not a <see cref="T:System.ServiceModel.Channels.Message" />; otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if the return type is not a <see cref="T:System.ServiceModel.Channels.Message" />; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

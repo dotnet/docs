@@ -121,10 +121,10 @@ This topic defines the terms that are used to describe the elements of XAML synt
  For flagwise enumerations, the behavior is based on the <xref:System.Enum.Parse%2A?displayProperty=fullName> method. You can specify multiple values for a flagwise enumeration by separating each value with a comma. However, you cannot combine enumeration values that are not flagwise. For instance, you cannot use the comma syntax to attempt to create a <xref:System.Windows.Trigger> that acts on multiple conditions of a nonflag enumeration:  
   
 ```  
-\<!--This will not compile, because Visibility is not a flagwise enumeration.-->  
+<!--This will not compile, because Visibility is not a flagwise enumeration.-->  
 ...  
-<Trigger Property="Visibility" Value="Collapsed,Hidden">  
-  \<Setter ... />  
+<Trigger Property="Visibility" Value="Collapsed,Hidden">  
+  <Setter ... />  
 </Trigger>  
 ...  
 ```  
@@ -187,12 +187,12 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
 ```xaml  
 <LinearGradientBrush>  
-  \<LinearGradientBrush.GradientStops>  
+  <LinearGradientBrush.GradientStops>  
     <GradientStopCollection>  
       <GradientStop Offset="0.0" Color="Red" />  
       <GradientStop Offset="1.0" Color="Blue" />  
     </GradientStopCollection>  
-  \</LinearGradientBrush.GradientStops>  
+  </LinearGradientBrush.GradientStops>  
 </LinearGradientBrush>  
 ```  
   
@@ -207,7 +207,7 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
 ```  
 <Button>I am a   
-  \<Button.Background>Blue\</Button.Background>  
+  <Button.Background>Blue</Button.Background>  
   blue button</Button>  
 ```  
   
@@ -215,9 +215,9 @@ This topic defines the terms that are used to describe the elements of XAML synt
   
 ```  
 <Button>  
-  \<Button.Content>I am a \</Button.Content>  
-  \<Button.Background>Blue\</Button.Background>  
-  \<Button.Content> blue button\</Button.Content>  
+  <Button.Content>I am a </Button.Content>  
+  <Button.Background>Blue</Button.Background>  
+  <Button.Content> blue button</Button.Content>  
 </Button>  
 ```  
   
@@ -226,9 +226,9 @@ This topic defines the terms that are used to describe the elements of XAML synt
 ```  
 <StackPanel>  
   <Button>This example</Button>  
-  \<StackPanel.Resources>  
-    \<SolidColorBrush x:Key="BlueBrush" Color="Blue"/>  
-  \</StackPanel.Resources>  
+  <StackPanel.Resources>  
+    <SolidColorBrush x:Key="BlueBrush" Color="Blue"/>  
+  </StackPanel.Resources>  
   <Button>... is illegal XAML</Button>  
 </StackPanel>  
 ```  

@@ -30,11 +30,10 @@
    
   
 ## Examples  
- The following example shows how to apply the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> attribute to a service operation. In this case, the cache profile named “CacheFor60Seconds” will be used for the `GetCustomer` operation  
+ The following example shows how to apply the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> attribute to a service operation. In this case, the cache profile named "CacheFor60Seconds" will be used for the `GetCustomer` operation  
   
-<!-- TODO: review snippet reference  [!CODE [AspNetCacheIntegration#0](AspNetCacheIntegration#0)]  -->  
   
- The following configuration snippet shows how the “CacheFor60Seconds” cache profile is specified.  
+ The following configuration snippet shows how the "CacheFor60Seconds" cache profile is specified.  
   
 ```xml  
 <configuration>  

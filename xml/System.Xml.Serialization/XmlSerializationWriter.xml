@@ -3303,7 +3303,7 @@
         <param name="n">The local name of the referencing element being written.</param>
         <param name="ns">The namespace of the referencing element being written.</param>
         <param name="o">The object being serialized.</param>
-        <summary>Writes a SOAP message XML element that contains a reference to a <see langword="multiRef " />element for a given object.</summary>
+        <summary>Writes a SOAP message XML element that contains a reference to a <see langword="multiRef" /> element for a given object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

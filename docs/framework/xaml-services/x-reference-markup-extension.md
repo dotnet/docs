@@ -25,7 +25,7 @@ References an instance that is declared elsewhere in XAML markup. The reference 
 ## XAML Attribute Usage  
   
 ```  
-<object property="{x:Reference instancexName}" .../>  
+<object property="{x:Reference instancexName}" .../>  
 ```  
   
 ## XAML Object Element Usage  
@@ -33,7 +33,7 @@ References an instance that is declared elsewhere in XAML markup. The reference 
 ```  
 <object>  
   <object.property>  
-    <x:Reference Name="instancexName"/>  
+    <x:Reference Name="instancexName"/>  
   </object.property>  
 </object>  
 ```  

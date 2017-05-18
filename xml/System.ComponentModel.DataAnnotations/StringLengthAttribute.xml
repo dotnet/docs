@@ -33,25 +33,7 @@
   
 ## Examples  
  The following example shows how to limit the number of characters in a field. This example works with the ThumbnailPhotoFileName field in the Products table in the AdventureWorksLT database. The field is limited 4 characters by applying the <xref:System.ComponentModel.DataAnnotations.StringLengthAttribute> attribute to the partial class that represents the Product entity.  
-  
-<!-- TODO: review snippet reference  [!CODE [System.ComponentModel.DataAnnotations.StringLengthAttribute#1](System.ComponentModel.DataAnnotations.StringLengthAttribute#1)]  -->  
-  
-```vb  
-<MetadataType(GetType(ProductMetadata))> _   
-Public Partial Class Product   
-  
-End Class   
-  
-Public Class ProductMetadata   
-  
-    <ScaffoldColumn(True)> _   
-    <StringLength(4, ErrorMessage := "The ThumbnailPhotoFileName value cannot exceed 4 characters. ")> _   
-    Public ThumbnailPhotoFileName As Object   
-  
-End Class  
-  
-```  
-  
+
 ```csharp  
 [MetadataType(typeof(ProductMetadata))]  
 public partial class Product  
@@ -67,6 +49,21 @@ public class ProductMetadata
     public object ThumbnailPhotoFileName;  
   
 }  
+```  
+  
+```vb  
+<MetadataType(GetType(ProductMetadata))> _   
+Public Partial Class Product   
+  
+End Class   
+  
+Public Class ProductMetadata   
+  
+    <ScaffoldColumn(True)> _   
+    <StringLength(4, ErrorMessage := "The ThumbnailPhotoFileName value cannot exceed 4 characters. ")> _   
+    Public ThumbnailPhotoFileName As Object   
+  
+End Class  
 ```  
   
  ]]></format>

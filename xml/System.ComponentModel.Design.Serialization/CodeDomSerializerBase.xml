@@ -276,7 +276,7 @@
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object for which to get an expression.</param>
         <summary>Returns an expression for the given object.</summary>
-        <returns>A <see cref="T:System.CodeDom.CodeExpression" /> representing v<paramref name="alue" />, or <see langword="null" /> if there is no existing expression for v<paramref name="alue" />.</returns>
+        <returns>A <see cref="T:System.CodeDom.CodeExpression" /> representing <paramref name="value" />, or <see langword="null" /> if there is no existing expression for <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

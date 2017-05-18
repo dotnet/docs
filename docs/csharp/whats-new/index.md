@@ -26,6 +26,7 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
 -->
 * [Cross Platform Support](../../core/index.md):
     - C#, through .NET Core support, runs on multiple platforms. If you are interested in trying C# on macOS, or on one of the many support Linux distributions, learn more about .NET Core.
+
 <!--
 - [.NET Compiler Platform SDK](../roslyn/index.md):
     - The .NET Compiler Platform SDK enables you to write code that performs static analysis on C# code. You can use these APIs to find potential errors, or bad practices, suggest fixes, and even implement those fixes.
@@ -35,7 +36,7 @@ ms.assetid: 77deec51-a14d-46d4-9bb3-faf449477149
 The following lists key features that were introduced in previous versions of the C# language and Visual Studio .NET.  
   
  * Visual Studio .NET 2013: 
-     - This version of Visual Studio included bug fixes, performance improvements, and technology previews of .NET Compiler Platform (“Roslyn”) which became the .NET Compiler Platform SDK<!--Link to ../roslyn/index.md-->.
+     - This version of Visual Studio included bug fixes, performance improvements, and technology previews of .NET Compiler Platform ("Roslyn") which became the .NET Compiler Platform SDK<!--Link to ../roslyn/index.md-->.
 
  * C# 5, Visual Studio .NET 2012: 
      - `Async` / `await`, and [caller information](../programming-guide/concepts/caller-information.md) attributes.

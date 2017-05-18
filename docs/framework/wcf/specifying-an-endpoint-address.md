@@ -53,7 +53,7 @@ All communication with a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] se
   
  The optional headers are declared in a [\<headers>](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md). The following is an example of the elements used to specify endpoints for a service in a configuration file that distinguishes between two headers: "Gold" clients from http://tempuri1.org/ and "Standard" clients from http://tempuri2.org/. The client calling this service must have the appropriate [\<headers>](../../../docs/framework/configure-apps/file-schema/wcf/headers-element.md) in its configuration file.  
   
- [!code-xml[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]        
+ [!code-xml[S_UEHelloWorld#1](../../../samples/snippets/common/VS_Snippets_CFX/s_uehelloworld/common/serviceapp.config#1)]   
   
  Headers can also be set on individual messages instead of all messages on an endpoint (as shown previously). This is done by using <xref:System.ServiceModel.OperationContextScope> to create a new context in a client application to add a custom header to the outgoing message, as shown in the following example.  
   

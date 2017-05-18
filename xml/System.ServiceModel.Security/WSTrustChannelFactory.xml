@@ -69,7 +69,7 @@
         <Parameter Name="endpoint" Type="System.ServiceModel.Description.ServiceEndpoint" />
       </Parameters>
       <Docs>
-        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" />for the channels produced by the factory.</param>
+        <param name="endpoint">The <see cref="T:System.ServiceModel.Description.ServiceEndpoint" /> for the channels produced by the factory.</param>
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.Security.WSTrustChannelFactory" /> class with a specified endpoint.</summary>
         <remarks>To be added.</remarks>
       </Docs>

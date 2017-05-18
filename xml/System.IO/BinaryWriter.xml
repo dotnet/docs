@@ -45,7 +45,7 @@
  When you create a new instance of the <xref:System.IO.BinaryWriter> class, you provide the stream to write to, and optionally specify the type of encoding and whether to leave the stream open after disposing the <xref:System.IO.BinaryWriter> object. If you do not specify an encoding type, UTF-8 is used.  
   
 > [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
  A derived class can override the methods of this class to give unique character encodings.  
   
@@ -1313,7 +1313,7 @@
 ## Remarks  
  Length-prefixed means that this method first writes the length of the string, in bytes, when encoded with the <xref:System.IO.BinaryWriter> instance's current encoding to the stream. This value is written as an unsigned integer. This method then writes that many bytes to the stream.  
   
- For example, the string “A” has a length of 1, but when encoded with UTF-16; the length is 2 bytes, so the value written in the prefix is 2, and 3 bytes are written to the stream, including the prefix.  
+ For example, the string "A" has a length of 1, but when encoded with UTF-16; the length is 2 bytes, so the value written in the prefix is 2, and 3 bytes are written to the stream, including the prefix.  
   
  For a list of common I/O tasks, see [Common I/O Tasks](~/docs/standard/io/common-i-o-tasks.md).  
   

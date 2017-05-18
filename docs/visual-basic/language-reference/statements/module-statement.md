@@ -48,8 +48,8 @@ Declares the name of a module and introduces the definition of the variables, pr
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ]  Module name  
-    [ statements ]  
+[ <attributelist> ] [ accessmodifier ]  Module name  
+    [ statements ]  
 End Module  
 ```  
   

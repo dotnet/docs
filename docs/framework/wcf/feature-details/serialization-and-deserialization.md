@@ -48,7 +48,7 @@ manager: "erikre"
   
  The following example shows a class, `LibraryPatron`, that includes a collection of a specific type, the `LibraryItem`. The second class defines the `LibraryItem` type. The third and four classes (`Book` and `Newspaper`) inherit from the `LibraryItem` class.  
   
- [!code-csharp[c_StandaloneDataContractSerializer#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_standalonedatacontractserializer/cs/source.cs#3)] 
+ [!code-csharp[c_StandaloneDataContractSerializer#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_standalonedatacontractserializer/cs/source.cs#3)]   
  [!code-vb[c_StandaloneDataContractSerializer#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_standalonedatacontractserializer/vb/source.vb#3)]  
   
  The following code constructs an instance of the serializer using the `knownTypes` parameter.  
@@ -152,7 +152,7 @@ manager: "erikre"
 ### Simple Serialization  
  The most basic way to serialize an object is to pass it to the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method. There are three overloads, one each for writing to a <xref:System.IO.Stream>, an <xref:System.Xml.XmlWriter>, or an <xref:System.Xml.XmlDictionaryWriter>. With the <xref:System.IO.Stream> overload, the output is XML in the UTF-8 encoding. With the <xref:System.Xml.XmlDictionaryWriter> overload, the serializer optimizes its output for binary XML.  
   
- When using the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method, the serializer uses the default name and namespace for the wrapper element and writes it out along with the contents (see the previous “Specifying the Default Root Name and Namespace” section).  
+ When using the <xref:System.Runtime.Serialization.XmlObjectSerializer.WriteObject%2A> method, the serializer uses the default name and namespace for the wrapper element and writes it out along with the contents (see the previous "Specifying the Default Root Name and Namespace" section).  
   
  The following example demonstrates writing with an <xref:System.Xml.XmlDictionaryWriter>.  
   
@@ -224,7 +224,7 @@ manager: "erikre"
   
  Note that you can read attributes on this wrapper element before handing the reader to `ReadObject`.  
   
- When using one of the simple `ReadObject` overloads, the deserializer looks for the default name and namespace on the wrapper element (see the preceding section, “Specifying the Default Root Name and Namespace”) and throws an exception if it finds an unknown element. In the preceding example, the `<Person>` wrapper element is expected. The <xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> method is called to verify that the reader is positioned on an element that is named as expected.  
+ When using one of the simple `ReadObject` overloads, the deserializer looks for the default name and namespace on the wrapper element (see the preceding section, "Specifying the Default Root Name and Namespace") and throws an exception if it finds an unknown element. In the preceding example, the `<Person>` wrapper element is expected. The <xref:System.Runtime.Serialization.XmlObjectSerializer.IsStartObject%2A> method is called to verify that the reader is positioned on an element that is named as expected.  
   
  There is a way to disable this wrapper element name check; some overloads of the `ReadObject` method take the Boolean parameter `verifyObjectName`, which is set to `true` by default. When set to `false`, the name and namespace of the wrapper element is ignored. This is useful for reading XML that was written using the step-by-step serialization mechanism described previously.  
   

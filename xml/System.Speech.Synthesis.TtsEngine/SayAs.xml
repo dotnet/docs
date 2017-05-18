@@ -83,7 +83,7 @@
 ## Remarks  
  The <xref:System.Speech.Synthesis.TtsEngine.FragmentState.SayAs%2A?displayProperty=fullName> property gets or sets the value for the <xref:System.Speech.Synthesis.TtsEngine.SayAs.Format%2A> property in a <xref:System.Speech.Synthesis.TtsEngine.SayAs> instance.  
   
- For example, a prompt may contain the phrase “The time is `<say-as interpret-as=”time”> 05:00 </say-as>`”.  In this example, `05:00` could be spoken as ”five o’clock” or “five AM” or “oh five hundred”. The <xref:System.Speech.Synthesis.TtsEngine.SayAs.Format%2A> property allows the value of the `interpret-as` attribute to be extended to specify which time format to speak. If the value for the `interpret-as` attribute is “time:24hour”, the <xref:System.Speech.Synthesis.SpeechSynthesizer> speaks “oh five hundred”. If the value for the `interpret-as` attribute is “time:12hour”, the <xref:System.Speech.Synthesis.SpeechSynthesizer> speaks “five A M”.  
+ For example, a prompt may contain the phrase "The time is `<say-as interpret-as="time"> 05:00 </say-as>`".  In this example, `05:00` could be spoken as "five o’clock" or "five AM" or "oh five hundred". The <xref:System.Speech.Synthesis.TtsEngine.SayAs.Format%2A> property allows the value of the `interpret-as` attribute to be extended to specify which time format to speak. If the value for the `interpret-as` attribute is "time:24hour", the <xref:System.Speech.Synthesis.SpeechSynthesizer> speaks "oh five hundred". If the value for the `interpret-as` attribute is "time:12hour", the <xref:System.Speech.Synthesis.SpeechSynthesizer> speaks "five A M".  
   
  ]]></format>
         </remarks>
@@ -112,7 +112,7 @@
   
  The <xref:System.Speech.Synthesis.SpeechSynthesizer> uses the content type indicated by the <xref:System.Speech.Synthesis.TtsEngine.SayAs.InterpretAs%2A> property to determine how to render specified text.  
   
- For example, the name Edgar could be spoken as a name: “My name is Edgar”. Or it could be spelled out with letters, as specified with the `interpret-as` attribute in this sentence:  “My name is `<say-as interpret-as=”spell-out”> Edgar </say-as>`.” In this case, the <xref:System.Speech.Synthesis.SpeechSynthesizer> speaks Edgar as “E D G A R”.  
+ For example, the name Edgar could be spoken as a name: "My name is Edgar". Or it could be spelled out with letters, as specified with the `interpret-as` attribute in this sentence:  "My name is `<say-as interpret-as="spell-out"> Edgar </say-as>`." In this case, the <xref:System.Speech.Synthesis.SpeechSynthesizer> speaks Edgar as "E D G A R".  
   
  ]]></format>
         </remarks>

@@ -30,9 +30,7 @@ You can use the <xref:System.Data.DataTable.Load%2A> method to load a <xref:Syst
   
  The following sample uses the **Load** method to display a list of birthdays for the employees in the **Northwind** database.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Private Sub LoadBirthdays(ByVal connectionString As String)  
     ' Assumes that connectionString is a valid connection string  
     ' to the Northwind database on SQL Server.  

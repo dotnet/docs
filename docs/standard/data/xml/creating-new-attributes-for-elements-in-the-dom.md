@@ -38,7 +38,7 @@ public class Sample
   public shared sub Main()  
   
   Dim doc as XmlDocument = new XmlDocument()  
-  doc.LoadXml("\<book xmlns:bk='urn:samples' bk:ISBN='1-861001-57-5'>" & _  
+  doc.LoadXml("<book xmlns:bk='urn:samples' bk:ISBN='1-861001-57-5'>" & _  
               "<title>Pride And Prejudice</title>" & _  
               "</book>")  
   Dim root as XmlElement = doc.DocumentElement  
@@ -63,7 +63,7 @@ public class Sample
   public static void Main()  
   {  
     XmlDocument doc = new XmlDocument();  
-    doc.LoadXml("\<book xmlns:bk='urn:samples' bk:ISBN='1-861001-57-5'>" +  
+    doc.LoadXml("<book xmlns:bk='urn:samples' bk:ISBN='1-861001-57-5'>" +  
                 "<title>Pride And Prejudice</title>" +  
                 "</book>");  
     XmlElement root = doc.DocumentElement;  
@@ -81,7 +81,7 @@ public class Sample
  Given the following XML:  
   
 ```  
-\<book genre='novel' ISBN='1-861001-57-5'>  
+<book genre='novel' ISBN='1-861001-57-5'>  
 <title>Pride And Prejudice</title>  
 </book>  
 ```  

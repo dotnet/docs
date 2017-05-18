@@ -40,8 +40,8 @@ Removes an IP address or DNS name from the connection management list.
   
 ```  
   
-      <remove   
-   name = "server name or IP address"   
+      <remove   
+   name = "server name or IP address"   
 />  
 ```  
   

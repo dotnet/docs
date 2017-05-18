@@ -42,7 +42,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 ### Single Property on the Immediate Object as Data Context  
   
 ```  
-<Binding Path="propertyName" .../>  
+<Binding Path="propertyName" .../>  
 ```  
   
  *propertyName* must resolve to be the name of a property that is in the current <xref:System.Windows.FrameworkElement.DataContext%2A> for a <xref:System.Windows.Data.Binding.Path%2A> usage. If your binding updates the source, that property must be read/write and the source object must be mutable.  
@@ -51,7 +51,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 ### Single Indexer on the Immediate Object as Data Context  
   
 ```  
-<Binding Path="[key]" .../>  
+<Binding Path="[key]" .../>  
 ```  
   
  `key` must be either the typed index to a dictionary or hash table, or the integer index of an array. Also, the value of the key must be a type that is directly bindable to the property where it is applied. For instance, a hash table that contains string keys and string values can be used this way to bind to Text for a <xref:System.Windows.Controls.TextBox>. Or, if the key points to a collection or subindex, you could use this syntax to bind to a target collection property. Otherwise, you need to reference a specific property, through a syntax such as `<Binding Path="[``key``].``propertyName``" .../>`.  
@@ -62,7 +62,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 ### Multiple Property (Indirect Property Targeting)  
   
 ```  
-<Binding Path="propertyName.propertyName2" .../>  
+<Binding Path="propertyName.propertyName2" .../>  
 ```  
   
  `propertyName` must resolve to be the name of a property that is the current <xref:System.Windows.FrameworkElement.DataContext%2A>. The path properties `propertyName` and `propertyName2` can be any properties that exist in a relationship, where `propertyName2` is a property that exists on the type that is the value of `propertyName`.  
@@ -71,7 +71,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 ### Single Property, Attached or Otherwise Type-Qualified  
   
 ```  
-<object property="(ownerType.propertyName)" .../>  
+<object property="(ownerType.propertyName)" .../>  
 ```  
   
  The parentheses indicate that this property in a <xref:System.Windows.PropertyPath> should be constructed using a partial qualification. It can use an XML namespace to find the type with an appropriate mapping. The `ownerType` searches types that a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] processor has access to, through the <xref:System.Windows.Markup.XmlnsDefinitionAttribute> declarations in each assembly. Most applications have the default XML namespace mapped to the [!INCLUDE[TLA#tla_wpfxmlnsv1](../../../../includes/tlasharptla-wpfxmlnsv1-md.md)] namespace, so a prefix is usually only necessary for custom types or types otherwise outside that namespace.  `propertyName` must resolve to be the name of a property existing on the `ownerType`. This syntax is generally used for one of the following cases:  
@@ -88,7 +88,7 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 ### Source Traversal (Binding to Hierarchies of Collections)  
   
 ```  
-<object Path="propertyName/propertyNameX" .../>  
+<object Path="propertyName/propertyNameX" .../>  
 ```  
   
  The / in this syntax is used to navigate within a hierarchical data source object, and multiple steps into the hierarchy with successive / characters are supported. The source traversal accounts for the current record pointer position, which is determined by synchronizing the data with the UI of its view. For details on binding with hierarchical data source objects, and the concept of current record pointer in data binding, see [Use the Master-Detail Pattern with Hierarchical Data](../../../../docs/framework/wpf/data/how-to-use-the-master-detail-pattern-with-hierarchical-data.md) or [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md).  
@@ -105,9 +105,9 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 ### Multiple Indexers  
   
 ```  
-\<object Path="[index1,index2...]" .../>  
+<object Path="[index1,index2...]" .../>  
 or  
-\<object Path="propertyName[index,index2...]" .../>  
+<object Path="propertyName[index,index2...]" .../>  
 ```  
   
  If a given object supports multiple indexers, those indexers can be specified in order, similar to an array referencing syntax. The object in question can be either the current context or the value of a property that contains a multiple index object.  
@@ -119,7 +119,7 @@ or
  Each of the syntaxes shown above can be interspersed. For instance, the following is an example that creates a property path to the color at a particular x,y of a `ColorGrid` property that contains a pixel grid array of <xref:System.Windows.Media.SolidColorBrush> objects:  
   
 ```  
-<Rectangle Fill="{Binding ColorGrid[20,30].SolidColorBrushResult}" .../>  
+<Rectangle Fill="{Binding ColorGrid[20,30].SolidColorBrushResult}" .../>  
 ```  
   
 ### Escapes for Property Path Strings  
@@ -158,7 +158,7 @@ or
 ### Single Property on the Target Object  
   
 ```  
-<animation Storyboard.TargetProperty="propertyName" .../>  
+<animation Storyboard.TargetProperty="propertyName" .../>  
 ```  
   
  `propertyName` must resolve to be the name of a dependency property that exists on the specified <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> type.  
@@ -167,7 +167,7 @@ or
 ### Indirect Property Targeting  
   
 ```  
-<animation Storyboard.TargetProperty="propertyName.propertyName2" .../>  
+<animation Storyboard.TargetProperty="propertyName.propertyName2" .../>  
 ```  
   
  `propertyName` must be a property that is either a <xref:System.Windows.Freezable> value type or a primitive, which exists on the specified <xref:System.Windows.Media.Animation.Storyboard.TargetName%2A> type.  
@@ -191,7 +191,7 @@ or
 ### Indexers  
   
 ```  
-<animation Storyboard.TargetProperty="propertyName.propertyName2[index].propertyName3" .../>  
+<animation Storyboard.TargetProperty="propertyName.propertyName2[index].propertyName3" .../>  
 ```  
   
  Most dependency properties or <xref:System.Windows.Freezable> types do not support an indexer. Therefore, the only usage for an indexer in an animation path is at an intermediate position between the property that starts the chain on the named target and the eventual animated property. In the provided syntax, that is `propertyName2`. For instance, an indexer usage might be necessary if the intermediate property is a collection such as <xref:System.Windows.Media.TransformGroup>, in a property path such as `RenderTransform.Children[1].Angle`.  

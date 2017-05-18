@@ -114,7 +114,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
 ```  
   
 <Canvas Background="LightGray">   
-   \<Ellipse  
+   <Ellipse  
       Canvas.Top="50"  
       Canvas.Left="50"  
       Fill="#FFFFFF00"  
@@ -134,7 +134,7 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
   
 ```  
   
-\<!-- This polygon shape uses pre-defined color values for its Stroke and  
+<!-- This polygon shape uses pre-defined color values for its Stroke and  
      Fill properties.   
      The SolidColorBrush's Opacity property affects the fill color in   
      this case by making it slightly transparent (opacity of 0.4) so   
@@ -144,9 +144,9 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
     Points="300,200 400,125 400,275 300,200"  
     Stroke="Purple"   
     StrokeThickness="2">  
-    \<Polygon.Fill>  
+    <Polygon.Fill>  
        <SolidColorBrush Color="Blue" Opacity="0.4"/>  
-    \</Polygon.Fill>  
+    </Polygon.Fill>  
 </Polygon>  
 ```  
   

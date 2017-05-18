@@ -41,7 +41,7 @@ Defines the binding element that is used when the client must expose an endpoint
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|clientBaseAddress|A URI that sets the address of the back channel in duplex mode. The service uses this address to make contact and establish a connection with the client.<br /><br /> If this attribute is not set, a default address “`full qualified name+default port\TemporaryIndigoAddress\guid`” is generated. The default is `null`.|  
+|clientBaseAddress|A URI that sets the address of the back channel in duplex mode. The service uses this address to make contact and establish a connection with the client.<br /><br /> If this attribute is not set, a default address "`full qualified name+default port\TemporaryIndigoAddress\guid`" is generated. The default is `null`.|  
   
 ### Child Elements  
  None  

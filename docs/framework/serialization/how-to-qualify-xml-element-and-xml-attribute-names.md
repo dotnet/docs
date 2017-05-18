@@ -98,23 +98,23 @@ Public Class Run
 End Class  
   
 Public Class Books  
-    \<XmlElement([Namespace] := "http://www.cohowinery.com")> _  
+    <XmlElement([Namespace] := "http://www.cohowinery.com")> _  
     Public Book As Book  
 End Class 'Books  
   
-\<XmlType([Namespace] := "http://www.cpandl.com")> _  
+<XmlType([Namespace] := "http://www.cpandl.com")> _  
 Public Class Book  
   
-    \<XmlElement([Namespace] := "http://www.cpandl.com")> _  
+    <XmlElement([Namespace] := "http://www.cpandl.com")> _  
     Public TITLE As String  
-    \<XmlElement([Namespace] := "http://www.cohowinery.com")> _  
+    <XmlElement([Namespace] := "http://www.cohowinery.com")> _  
     Public PRICE As Price  
 End Class  
   
 Public Class Price  
-    \<XmlAttribute([Namespace] := "http://www.cpandl.com")> _  
+    <XmlAttribute([Namespace] := "http://www.cpandl.com")> _  
     Public currency As String  
-    Public \<XmlElement([Namespace] := "http://www.cohowinery.com")> _  
+    Public <XmlElement([Namespace] := "http://www.cohowinery.com")> _  
         price As Decimal  
 End Class  
   

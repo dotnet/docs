@@ -38,7 +38,7 @@ Contains trace switches and the level where the trace switches are set.
   
 ```  
   
-      <switches>   
+      <switches>   
 </switches>  
 ```  
   
@@ -69,12 +69,12 @@ Contains trace switches and the level where the trace switches are set.
   
 ```  
 <configuration>  
-   \<system.diagnostics>  
+   <system.diagnostics>  
       <switches>  
          <add name="General" value="4" />  
          <add name="Data" value="1" />  
       </switches>  
-   \</system.diagnostics>  
+   </system.diagnostics>  
 </configuration>  
 ```  
   

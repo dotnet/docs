@@ -47,7 +47,7 @@ Exits a procedure or block and transfers control immediately to the statement fo
 ## Syntax  
   
 ```  
-Exit { Do | For | Function | Property | Select | Sub | Try | While }  
+Exit { Do | For | Function | Property | Select | Sub | Try | While }  
 ```  
   
 ## Statements  

@@ -19,7 +19,7 @@ manager: "erikre"
 WCF now allows you to specify multiple authentication schemes on a single endpoint. Furthermore web hosted services can inherit their authentication settings directly from IIS. Self-hosted services can specify what authentication schemes can be used. For more information about setting authentication settings in IIS, see [IIS Authentication](http://go.microsoft.com/fwlink/?LinkId=232458)  
   
 ## IIS-Hosted Services  
- For IIS-hosted services, set the authentication schemes you wish to use in IIS. Then in your service’s web.config file, in your binding configuration specify clientCredential type as “InheritedFromHost” as shown in the following XML snippet:  
+ For IIS-hosted services, set the authentication schemes you wish to use in IIS. Then in your service’s web.config file, in your binding configuration specify clientCredential type as "InheritedFromHost" as shown in the following XML snippet:  
   
 ```xml  
 <bindings>  
@@ -122,9 +122,9 @@ else
   
 ```xml  
 <binding name="multipleBinding">  
-      <textMessageEncoding/>  
-      <httpTransport authenticationScheme="Negotiate, Ntlm, Digest, Basic" />  
-    </binding>  
+      <textMessageEncoding/>  
+      <httpTransport authenticationScheme="Negotiate, Ntlm, Digest, Basic" />  
+    </binding>  
   
 ```  
   

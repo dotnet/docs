@@ -122,7 +122,7 @@
         <summary>Adds an <see cref="T:System.Web.UI.WebControls.EmbeddedMailObject" /> to the end of the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" /> collection.</summary>
         <returns>Returns the index of the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObject" /> in the <see cref="T:System.Web.UI.WebControls.EmbeddedMailObjectsCollection" />.</returns>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified<paramref name=" value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Contains">
@@ -176,7 +176,7 @@
         <param name="index">The zero-based index in <c>array</c> at which copying begins.</param>
         <summary>Copies the collection objects to a one-dimensional <see cref="T:System.Array" /> instance beginning at the specified index in the array.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The specified<paramref name=" array" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The specified <paramref name="array" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified <paramref name="index" /> is out of range of the collection.</exception>
       </Docs>
     </Member>
@@ -274,11 +274,11 @@ myObject = myCollection.Item[index];
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="index " />is less than zero.  
+          <paramref name="index" /> is less than zero.  
   
  -or-  
   
- <paramref name="index " />is equal to or greater than the number of items in the collection.</exception>
+ <paramref name="index" /> is equal to or greater than the number of items in the collection.</exception>
       </Docs>
     </Member>
     <Member MemberName="OnValidate">

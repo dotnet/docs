@@ -22,7 +22,7 @@ manager: "wpickett"
 
 Starting with the .NET Framework 4.7, Windows Forms includes enhancements for common high DPI and dynamic DPI scenarios. These include: 
 
-- Improvements in the scaling and layout of a number of Windows Forms controls, such as the <xref:System.Windows.Forms.MonthCalendar> control and the <xref:System.Windows.Forms.CheckListBox> control.
+- Improvements in the scaling and layout of a number of Windows Forms controls, such as the <xref:System.Windows.Forms.MonthCalendar> control and the <xref:System.Windows.Forms.CheckedListBox> control. 
 
 - Single-pass scaling.  In the .NET Framework 4.6 and earlier versions, scaling was performed through multiple passes, which caused some controls to be scaled more than was necessary.
 
@@ -38,43 +38,42 @@ In addition, to configure high DPI support in your Windows Forms application, yo
 
 - Declare compatibility with Windows 10.
 
-   To do this, add the following to your manifest file:
+  To do this, add the following to your manifest file:
 
-   ```xml
-   <compatibility xmlns="urn:schemas-microsoft.comn:compatibility.v1">
-	   <application>
-		   <!-- Windows 10 compatibility -->
-		   <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
-	   </application>
-   </compatibility>
-   ```
+  ```xml
+  <compatibility xmlns="urn:schemas-microsoft.comn:compatibility.v1">
+    <application>
+      <!-- Windows 10 compatibility -->
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
+    </application>
+  </compatibility>
+  ```
 
 - Enable per-monitor DPI awareness in the *app.config* file.
 
-   Windows Forms introduces a new [\<System.Windows.Forms.ApplicationConfigurationSection>]
-(../../../docs/framework/configure-apps/file-schema/winforms/index.md) to support new features and customizations added starting with the .NET Framework 4.7. To take advantage of the new features that support high DPI, add the following to your application configuration file.
+  Windows Forms introduces a new [`<System.Windows.Forms.ApplicationConfigurationSection>`](../../../docs/framework/configure-apps/file-schema/winforms/index.md) element to support new features and customizations added starting with the .NET Framework 4.7. To take advantage of the new features that support high DPI, add the following to your application configuration file.   
 
-   ```xml
-   <System.Windows.Forms.ApplicationConfigurationSection>
-      <add key="DpiAwareness" value="PerMonitorV2" />
-   </System.Windows.Forms.ApplicationConfigurationSection>
-   ```
-
-   > [!IMPORTANT]
-   > In previous versions of the .NET Framework, you used the manifest to add high DPI support. This approach is no longer recommended, since it overrides settings defined on the *app.config* file.
-
+  ```xml
+  <System.Windows.Forms.ApplicationConfigurationSection>
+    <add key="DpiAwareness" value="PerMonitorV2" />
+  </System.Windows.Forms.ApplicationConfigurationSection>	   
+  ```
+   
+  > [!IMPORTANT]
+  > In previous versions of the .NET Framework, you used the manifest to add high DPI support. This approach is no longer recommended, since it overrides settings defined on the app.config file.
+   
 - Call the static <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method.
-
-   This should be the first method call in your application entry point. For example:
-
-   ```csharp
-   static void Main()
-   {
-	  Application.EnableVisualStyles();
-	  Application.SetCompatibleTextRenderingDefault(false);
-	  Application.Run(new Form2());
-   }
-   ```
+   
+  This should be the first method call in your application entry point. For example:
+   
+  ```csharp
+  static void Main()
+  {
+      Application.EnableVisualStyles();
+      Application.SetCompatibleTextRenderingDefault(false);
+      Application.Run(new Form2());   
+  }
+  ```
 
 ## Opting out of individual high DPI features
 
@@ -82,9 +81,9 @@ Setting the `DpiAwareness` value to `PerMonitorV2` enables all high DPI awarenes
 
 ```xml
 <System.Windows.Forms.ApplicationConfigurationSection>
-   <add key="DpiAwareness" value="PerMonitorV2" />
-   <add key="EnableWindowsFormsHighDpiAutoResizing" value="false" />
-</System.Windows.Forms.ApplicationConfigurationSection>
+  <add key="DpiAwareness" value="PerMonitorV2" />
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="false" /> 
+</System.Windows.Forms.ApplicationConfigurationSection>	   
 ```
 
 For a list of individual keys and their values, see [Windows Forms Add Configuration Element](../../../docs/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md).

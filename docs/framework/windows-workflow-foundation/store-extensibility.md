@@ -52,7 +52,7 @@ manager: "erikre"
         // ...  
         context.GetExtension<DocumentStatusExtension>().DocumentId = Guid.NewGuid();  
         context.GetExtension<DocumentStatusExtension>().UserName = "John Smith";  
-        context.GetExtension<DocumentStatusExtension>().ApprovalStatus = “Approved”;  
+        context.GetExtension<DocumentStatusExtension>().ApprovalStatus = "Approved";  
         context.GetExtension<DocumentStatusExtension>().LastUpdateTime = DateTime.Now();  
         // ...  
     }  
@@ -109,11 +109,11 @@ manager: "erikre"
   
     create view [dbo].[DocumentStatus] with schemabinding  
     as  
-        select  P.[InstanceId] as [InstanceId],  
-            P.Value1 as [UserName],  
-            P.Value2 as [ApprovalStatus],  
-            P.Value3 as [DocumentId],  
-            P.Value4 as [LastUpdatedTime]  
+        select  P.[InstanceId] as [InstanceId],  
+            P.Value1 as [UserName],  
+            P.Value2 as [ApprovalStatus],  
+            P.Value3 as [DocumentId],  
+            P.Value4 as [LastUpdatedTime]  
     from [System.Activities.DurableInstancing].[InstancePromotedProperties] as P  
     where P.PromotionName = N'DocumentStatus'  
     go  

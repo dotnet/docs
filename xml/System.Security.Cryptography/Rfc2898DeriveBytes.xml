@@ -328,7 +328,7 @@
         <exception cref="T:System.ArgumentException">The specified salt size is smaller than 8 bytes or the iteration count is less than 1.</exception>
         <exception cref="T:System.ArgumentNullException">The password or salt is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="iterations " />is out of range. This parameter requires a non-negative number.</exception>
+          <paramref name="iterations" /> is out of range. This parameter requires a non-negative number.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -565,7 +565,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="cb " />is out of range. This parameter requires a non-negative number.</exception>
+          <paramref name="cb" /> is out of range. This parameter requires a non-negative number.</exception>
       </Docs>
     </Member>
     <Member MemberName="HashAlgorithm">

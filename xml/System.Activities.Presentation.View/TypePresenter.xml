@@ -72,9 +72,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#4](WFD_TypePresenter#4)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -98,9 +95,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#12](WFD_TypePresenter#12)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -121,9 +115,6 @@
         <summary>Dependency property identifier field that designates whether the type <see langword="null" /> can be selected from the type presenter.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#11](WFD_TypePresenter#11)]  -->  
   
  ]]></format>
         </remarks>
@@ -148,9 +139,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#20](WFD_TypePresenter#20)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -171,9 +159,6 @@
         <summary>Dependency property identifier field that designates whether the type browser should be shown directly when the user clicks the <see cref="T:System.Activities.Presentation.View.TypePresenter" /> control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#16](WFD_TypePresenter#16)]  -->  
   
  ]]></format>
         </remarks>
@@ -198,9 +183,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#29](WFD_TypePresenter#29)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -221,9 +203,6 @@
         <summary>Dependency property identifier field that designates whether the activity type resolver dialog window should be centered.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#25](WFD_TypePresenter#25)]  -->  
   
  ]]></format>
         </remarks>
@@ -248,9 +227,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#30](WFD_TypePresenter#30)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -271,9 +247,6 @@
         <summary>Dependency property identifier field that designates whether the type browser dialog window should be centered.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#26](WFD_TypePresenter#26)]  -->  
   
  ]]></format>
         </remarks>
@@ -297,9 +270,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#7](WFD_TypePresenter#7)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -320,9 +290,6 @@
         <summary>Dependency property identifier field that contains a property of the editing context, for instance a list of currently selected objects or a list of services running in the designer.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#2](WFD_TypePresenter#2)]  -->  
   
  ]]></format>
         </remarks>
@@ -345,9 +312,6 @@
         <value>Returns <see cref="T:System.Collections.ObjectModel.ObservableCollection`1" /> that contains the default types used most recently.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#312](WFD_TypePresenter#312)]  -->  
   
  ]]></format>
         </remarks>
@@ -386,10 +350,6 @@
   
  By setting the filter property, you can limit the number of types shown in the type browser to only those types that are valid for your activity.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#21](WFD_TypePresenter#21)]  -->  
   
  ]]></format>
         </remarks>
@@ -412,9 +372,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#17](WFD_TypePresenter#17)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -436,9 +393,6 @@
         <summary>Puts the keyboard focus on the current presenter control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#28](WFD_TypePresenter#28)]  -->  
   
  ]]></format>
         </remarks>
@@ -470,9 +424,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#5](WFD_TypePresenter#5)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -500,9 +451,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#8](WFD_TypePresenter#8)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -525,9 +473,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#22](WFD_TypePresenter#22)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -548,9 +493,6 @@
         <summary>Dependency property identifier field that defines the label of a control.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#18](WFD_TypePresenter#18)]  -->  
   
  ]]></format>
         </remarks>
@@ -574,9 +516,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#31](WFD_TypePresenter#31)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -597,9 +536,6 @@
         <summary>Dependency property identifier field that designates the most recently used types.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#27](WFD_TypePresenter#27)]  -->  
   
  ]]></format>
         </remarks>
@@ -704,9 +640,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#1](WFD_TypePresenter#1)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -745,9 +678,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#6](WFD_TypePresenter#6)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -770,9 +700,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#24](WFD_TypePresenter#24)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -793,9 +720,6 @@
         <summary>Dependency property identifier field that assigns the text that is used for a component display name.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#19](WFD_TypePresenter#19)]  -->  
   
  ]]></format>
         </remarks>
@@ -818,9 +742,6 @@
         <value>A type object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#9](WFD_TypePresenter#9)]  -->  
   
  ]]></format>
         </remarks>
@@ -846,10 +767,6 @@
 ## Remarks  
  The <xref:System.Activities.Presentation.View.TypePresenter.TypeBrowserClosedEvent> is raised when the user closes the browser.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#13](WFD_TypePresenter#13)]  -->  
   
  ]]></format>
         </remarks>
@@ -892,10 +809,6 @@
 ## Remarks  
  The <xref:System.Activities.Presentation.View.TypePresenter.TypeBrowserOpenedEvent> is raised when the user opens the browser.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#14](WFD_TypePresenter#14)]  -->  
   
  ]]></format>
         </remarks>
@@ -938,10 +851,6 @@
 ## Remarks  
  The <xref:System.Activities.Presentation.View.TypePresenter.TypeChangedEvent> is raised when the user changes the type of the selected control.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#15](WFD_TypePresenter#15)]  -->  
   
  ]]></format>
         </remarks>
@@ -982,9 +891,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#10](WFD_TypePresenter#10)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -1005,9 +911,6 @@
         <summary>Dependency property identifier field that designates the current type represented by the <see cref="T:System.Activities.Presentation.View.TypePresenter" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_TypePresenter#3](WFD_TypePresenter#3)]  -->  
   
  ]]></format>
         </remarks>

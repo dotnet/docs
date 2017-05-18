@@ -57,7 +57,7 @@ See [A mapping between project.json and csproj properties](../tools/project-json
 
 ### Common issues
 
-- If you get an error: “No executable found matching command dotnet-migrate":
+- If you get an error: "No executable found matching command dotnet-migrate":
 
 Run `dotnet --version` to see which version you are using. [`dotnet migrate`](../tools/dotnet-migrate.md) requires .NET Core CLI RC3 or higher.
 You’ll get this error if you have a *global.json* file in the current or parent directory and the `sdk` version is set to an older version.

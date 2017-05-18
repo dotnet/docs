@@ -19,7 +19,7 @@ manager: "erikre"
 Represents a collection of configuration elements that specify pass through filters, which provide a mechanism to pick the appropriate Internet Information Services (IIS) bindings when hosting the [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] application in IIS.  
   
 > [!WARNING]
->  \<baseAddressPrefixFilters> does not recognize “localhost”, use the fully qualified machine name instead.  
+>  \<baseAddressPrefixFilters> does not recognize "localhost", use the fully qualified machine name instead.  
   
  \<system.ServiceModel>  
 \<ServiceHostingEnvironment>  
@@ -73,9 +73,9 @@ http://test2.fabrikam.com/Service.svc
 <system.serviceModel>  
   <serviceHostingEnvironment>  
      <baseAddressPrefixFilters>  
-        <add prefix=”net.tcp://test1.fabrikam.com:8000”/>  
-        <add prefix=”http://test2.fabrikam.com:9000”/>  
-    </baseAddressPrefixFilters>  
+        <add prefix="net.tcp://test1.fabrikam.com:8000"/>  
+        <add prefix="http://test2.fabrikam.com:9000"/>  
+    </baseAddressPrefixFilters>  
   </serviceHostingEnvironment>  
 </system.serviceModel>  
 ```  

@@ -17,7 +17,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This class specifies the expected identity of the server. This identity is valid for X509 Certificate authentication mode if the server’s certificate contains a DNS with the same value. It is also valid for Windows authentication mode if the SPN has the same value. In this case, a client specifying the  DnsEndpointIdentity “server1.microsoft.com”  for Windows authentication mode is equivalent to specifying the SpnEndpointIdentity “host/server1.microsoft.com” .  
+ This class specifies the expected identity of the server. This identity is valid for X509 Certificate authentication mode if the server’s certificate contains a DNS with the same value. It is also valid for Windows authentication mode if the SPN has the same value. In this case, a client specifying the  DnsEndpointIdentity "server1.microsoft.com"  for Windows authentication mode is equivalent to specifying the SpnEndpointIdentity "host/server1.microsoft.com" .  
   
  ]]></format>
     </remarks>

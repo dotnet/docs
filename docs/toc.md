@@ -84,7 +84,7 @@
 # [.NET Framework Guide](framework/index.md)
 ## [What's New](framework/whats-new/)
 ## [Get Started](framework/get-started/)
-## [Installation guide](install/index.md)
+## [Installation guide](framework/install/)
 ## [Migration Guide](framework/migration-guide/)
 ## [.NET Framework on Docker Guide](framework/docker/index.md)
 ### [Running Console Apps in Containers](framework//docker/console.md)

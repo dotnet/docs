@@ -26,14 +26,14 @@ Specifies a custom type for certificate validation. This type is used only if th
 ## Syntax  
   
 ```  
-\<system.identityModel>  
+<system.identityModel>  
   <identityConfiguration>  
     <certificateValidation>  
-      \<certificateValidator type=xs:string>  
+      <certificateValidator type=xs:string>  
       </certificateValidator>  
     </certificateValidation>  
   </identityConfiguration>  
-\</system.identityModel>  
+</system.identityModel>  
 ```  
   
 ## Attributes and Elements  

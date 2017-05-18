@@ -196,10 +196,10 @@ Root node is book.
   
 ```  
 <library>  
-  \<book genre='novel' ISBN='1-861001-57-5'>  
+  <book genre='novel' ISBN='1-861001-57-5'>  
      <title>Pride And Prejudice</title>  
   </book>  
-  \<book genre='novel' ISBN='1-81920-21-2'>  
+  <book genre='novel' ISBN='1-81920-21-2'>  
      <title>Hook</title>  
   </book>  
 </library>  
@@ -211,7 +211,7 @@ Root node is book.
 <stylesheet version="1.0" xmlns="http://www.w3.org/1999/XSL/Transform" >  
   <output method="text" />   
   <template match="/">  
-     Root node is  \<value-of select="local-name(//*[position() = 1])" />   
+     Root node is  <value-of select="local-name(//*[position() = 1])" />   
   </template>  
 </stylesheet>  
 ```  

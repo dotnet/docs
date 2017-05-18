@@ -62,7 +62,7 @@ manager: "wpickett"
  In                          [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)], a resource file is a file that is included in an                          [!INCLUDE[TLA#tla_msbuild](../../../../includes/tlasharptla-msbuild-md.md)] project as a                          `Resource` item.  
   
 ```  
-\<Project "  
+<Project "  
                         xmlns=http://schemas.microsoft.com/developer/msbuild/2003" ... >  
   ...  
   <ItemGroup>  
@@ -105,7 +105,7 @@ manager: "wpickett"
  You can do this when a                          [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] file is included in an                          [!INCLUDE[TLA#tla_msbuild](../../../../includes/tlasharptla-msbuild-md.md)] project as a                          `Page` item.  
   
 ```  
-\<Project  
+<Project  
                         xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ... >  
   ...  
   <ItemGroup>  
@@ -136,7 +136,7 @@ manager: "wpickett"
  The following shows a file that is configured as a content file which is copied to the build output folder only when a new version of the resource is added to the project.  
   
 ```  
-\<Project  
+<Project  
                         xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ... >  
   ...  
   <ItemGroup>  
@@ -210,7 +210,7 @@ manager: "wpickett"
  If you do know at compile time the files that you would like to be located at the site of origin, but still want to avoid an explicit dependency, you can add those files to an                          [!INCLUDE[TLA#tla_msbuild](../../../../includes/tlasharptla-msbuild-md.md)] project as                          `None` item. As with content files, you need to set the                          [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)]`CopyToOutputDirectory` attribute to specify that the site of origin file is copied to a location that is relative to the built assembly, by specifying either the                          `Always` value or the                          `PreserveNewest` value.  
   
 ```  
-\<Project  
+<Project  
                         xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ... >  
   ...  
   <None Include="PageSiteOfOriginFile.xaml">  

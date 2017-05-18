@@ -39,7 +39,7 @@ Public Class Sample
     Public Shared Sub Main()  
   
         Dim doc As XmlDocument = New XmlDocument()  
-        doc.LoadXml("\<book genre='novel' ISBN='1-861001-57-5' misc='sale item'>" & _  
+        doc.LoadXml("<book genre='novel' ISBN='1-861001-57-5' misc='sale item'>" & _  
                "<title>The Handmaid's Tale</title>" & _  
                "<price>14.95</price>" & _  
                "</book>")  
@@ -84,7 +84,7 @@ public class Sample
     public static void Main()  
     {  
         XmlDocument doc = new XmlDocument();  
-        doc.LoadXml("\<book genre='novel' ISBN='1-861001-57-5' misc='sale item'>" +  
+        doc.LoadXml("<book genre='novel' ISBN='1-861001-57-5' misc='sale item'>" +  
                       "<title>The Handmaid's Tale</title>" +  
                       "<price>14.95</price>" +  
                       "</book>");  
@@ -139,7 +139,7 @@ sale item
 ### Input  
   
 ```  
-\<!-- XML fragment -->  
+<!-- XML fragment -->  
 <book genre="novel">  
   <title>Pride And Prejudice</title>  
 </book>  
@@ -207,7 +207,7 @@ Public Class Sample
     Public Shared Sub Main()  
   
         Dim doc As XmlDocument = New XmlDocument()  
-        doc.LoadXml("\<book genre='novel' ISBN='1-861001-57-5' misc='sale item'>" & _  
+        doc.LoadXml("<book genre='novel' ISBN='1-861001-57-5' misc='sale item'>" & _  
                "<title>The Handmaid's Tale</title>" & _  
                "<price>14.95</price>" & _  
                "</book>")  
@@ -239,7 +239,7 @@ using System.Xml;
       public static void Main()  
       {  
     XmlDocument doc = new XmlDocument();  
-     doc.LoadXml("\<book genre='novel' ISBN='1-861003-78' misc='sale item'>" +  
+     doc.LoadXml("<book genre='novel' ISBN='1-861003-78' misc='sale item'>" +  
                    "<title>The Handmaid's Tale</title>" +  
                    "<price>14.95</price>" +  
                    "</book>");   

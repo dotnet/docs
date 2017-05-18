@@ -95,7 +95,7 @@ using System.Linq;
   
  When using an extension method to extend a type whose source code you cannot change, you run the risk that a change in the implementation of the type will cause your extension method to break.  
   
- If you do implement extension methods for a given type, remember the followingpoints:  
+ If you do implement extension methods for a given type, remember the following points:  
   
 -   An extension method will never be called if it has the same signature as a method defined in the type.  
   

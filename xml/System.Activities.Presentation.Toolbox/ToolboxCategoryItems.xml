@@ -25,9 +25,6 @@
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_ToolboxCategoryItems#0](WFD_ToolboxCategoryItems#0)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>
@@ -561,7 +558,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> is not valid for the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategoryItems" /> collection.</exception>
-        <exception cref="  &#xA;              &#xA;            T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="value" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">The collection is read-only or has a fixed size that has been exceeded.</exception>
       </Docs>
     </Member>
@@ -635,7 +632,7 @@
       <Docs>
         <param name="index">The zero-based index of the toolbox category item to get or set.</param>
         <summary>Gets or sets the toolbox category at a specified index of the collection.</summary>
-        <value>The toolbox category<see cref="T:System.Object" /> at the specified index.</value>
+        <value>The toolbox category <see cref="T:System.Object" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

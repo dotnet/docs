@@ -65,7 +65,7 @@
   
  </description></item></list>  
   
- To promote consistency among .NET Framework data providers, you should name the inheriting class in the form <paramref name="Prv" />DataAdapter, where <paramref name="Prv" /> is the uniform prefix given to all classes in a specific .NET Framework data provider namespace. For example, "Sql" is the prefix of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class in the **System.Data.SqlClient** namespace.</para>
+ To promote consistency among .NET Framework data providers, you should name the inheriting class in the form *Prv*DataAdapter, where *Prv* is the uniform prefix given to all classes in a specific .NET Framework data provider namespace. For example, "Sql" is the prefix of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class in the **System.Data.SqlClient** namespace.</para>
     </block>
   </Docs>
   <Members>

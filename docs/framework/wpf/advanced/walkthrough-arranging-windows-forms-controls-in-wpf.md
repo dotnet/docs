@@ -216,11 +216,11 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
 2.  Press F5 to build and run the application. The                                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element is centered in the grid row, but it is not stretched to fill the available space. If the window is large enough, you may see two or more months displayed by the hosted                                  <xref:System.Windows.Forms.MonthCalendar> control, but these are centered in the row. The                                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] layout engine centers elements that cannot be sized to fill the available space.  
   
 ## Scaling  
- Unlike                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements, most                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls are not continuously scalable. By default, the                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> element scales its hosted control when possible.  To enable full-fledged scaling, set the                  <xref:System.Windows.Interop.HwndHost.IsRedirected%2A> property of the                  <xref:System.Windows.Forms.Integration.WindowsFormsHost> to true and the                  <xref:System.Windows.Interop.HwndHost.CompositionMode%2A> property to                  <xref:System.Windows.Interop.CompositionMode.Full> or                  <xref:System.Windows.Interop.CompositionMode.OutputOnly>.  
+ Unlike [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements, most [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] controls are not continuously scalable. By default, the <xref:System.Windows.Forms.Integration.WindowsFormsHost> element scales its hosted control when possible.  To enable full-fledged scaling, set the <xref:System.Windows.Interop.HwndHost.IsRedirected%2A> property of the <xref:System.Windows.Forms.Integration.WindowsFormsHost> to true and the <xref:System.Windows.Interop.HwndHost.CompositionMode%2A> property to                  <xref:System.Windows.Interop.CompositionMode.Full> or <xref:System.Windows.Interop.CompositionMode.OutputOnly>.  
   
 #### To scale a hosted control by using the default behavior  
   
-1.  Copy the following XAML into the                                  <xref:System.Windows.Controls.Grid> element.  
+1.  Copy the following XAML into the <xref:System.Windows.Controls.Grid> element.  
   
      [!code-xml[WpfLayoutHostingWfWithXaml#12](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WpfLayoutHostingWfWithXaml/CSharp/Window1.xaml#12)]  
   

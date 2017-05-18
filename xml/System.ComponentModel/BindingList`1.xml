@@ -1838,7 +1838,7 @@
       <Docs>
         <summary>Gets a value indicating whether item property value changes raise <see cref="E:System.ComponentModel.BindingList`1.ListChanged" /> events of type <see cref="F:System.ComponentModel.ListChangedType.ItemChanged" />. This member cannot be overridden in a derived class.</summary>
         <value>
-          <see langword="true " />if the list type implements <see cref="T:System.ComponentModel.INotifyPropertyChanged" />, otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
+          <see langword="true" /> if the list type implements <see cref="T:System.ComponentModel.INotifyPropertyChanged" />, otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

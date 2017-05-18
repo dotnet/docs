@@ -880,7 +880,7 @@ False
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a Boolean value that indicates whether the SQL Server connection pooler automatically enlists the connection in the creation thread's current transaction context.</summary>
-        <value>The value of the <see cref="P:System.Data.SqlClient.SqlConnectionStringBuilder.Enlist" /> property, or <see langword="true " />if none has been supplied.</value>
+        <value>The value of the <see cref="P:System.Data.SqlClient.SqlConnectionStringBuilder.Enlist" /> property, or <see langword="true" /> if none has been supplied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

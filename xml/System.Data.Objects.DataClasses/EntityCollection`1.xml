@@ -133,7 +133,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="entity " />is <see langword="null" />.</exception>
+          <paramref name="entity" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Attach">
@@ -596,11 +596,11 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="entity" /> object is <see langword="null" />.</exception>
-        <exception cref="T:System.InvalidOperationException">The<paramref name=" entity " />object is not attached to the same object context.  
+        <exception cref="T:System.InvalidOperationException">The <paramref name="entity" /> object is not attached to the same object context.  
   
  -or-  
   
- The <paramref name="entity " />object does not have a valid relationship manager.</exception>
+ The <paramref name="entity" /> object does not have a valid relationship manager.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">

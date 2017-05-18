@@ -319,7 +319,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="subkey " />is <see langword="null" />.</exception>
+          <paramref name="subkey" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object is closed (closed keys cannot be accessed).</exception>
         <exception cref="T:System.UnauthorizedAccessException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object cannot be written to; for example, it was not opened as a writable key, or the user does not have the required access rights.</exception>
         <exception cref="T:System.IO.IOException">The nesting level exceeds 510.  
@@ -503,7 +503,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="subkey " />is <see langword="null" />.</exception>
+          <paramref name="subkey" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object is closed. Closed keys cannot be accessed.</exception>
         <exception cref="T:System.UnauthorizedAccessException">The current <see cref="T:Microsoft.Win32.RegistryKey" /> object cannot be written to; for example, it was not opened as a writable key, or the user does not have the required access rights.</exception>
         <exception cref="T:System.IO.IOException">The nesting level exceeds 510.  

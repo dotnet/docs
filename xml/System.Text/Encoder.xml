@@ -177,7 +177,7 @@
         </remarks>
         <altCompliant cref="M:System.Text.Encoder.Convert(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32,System.Int32,System.Boolean,System.Int32@,System.Int32@,System.Boolean@)" />
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="chars" /> or <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+          <paramref name="chars" /> or <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="charCount" /> or <paramref name="byteCount" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">The output buffer is too small to contain any of the converted input. The output buffer should be greater than or equal to the size indicated by the <see cref="Overload:System.Text.Encoder.GetByteCount" /> method.</exception>
@@ -268,7 +268,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="chars" /> or <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+          <paramref name="chars" /> or <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="charIndex" />, <paramref name="charCount" />, <paramref name="byteIndex" />, or <paramref name="byteCount" /> is less than zero.  
   
@@ -328,7 +328,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null " />(<see langword="Nothing" />).</exception>
+        <exception cref="T:System.ArgumentNullException">The value in a set operation is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentException">A new value cannot be assigned in a set operation because the current <see cref="T:System.Text.EncoderFallbackBuffer" /> object contains data that has not been encoded yet.</exception>
         <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for fuller explanation)  
   
@@ -587,11 +587,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="chars" /> is <see langword="null " />(<see langword="Nothing" />).  
+          <paramref name="chars" /> is <see langword="null" /> (<see langword="Nothing" />).  
   
  -or-  
   
- <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+ <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="charCount" /> or <paramref name="byteCount" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">
@@ -672,11 +672,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="chars" /> is <see langword="null " />(<see langword="Nothing" />).  
+          <paramref name="chars" /> is <see langword="null" /> (<see langword="Nothing" />).  
   
  -or-  
   
- <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+ <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="charIndex" /> or <paramref name="charCount" /> or <paramref name="byteIndex" /> is less than zero.  
   

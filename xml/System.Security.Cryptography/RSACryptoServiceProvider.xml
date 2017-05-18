@@ -386,7 +386,7 @@
   
  The key does not match the encrypted data. However, the exception wording may not be accurate. For example, it may say <c>Not enough storage is available to process this command</c>.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="rgb " />is <see langword="null" />.</exception>
+          <paramref name="rgb" /> is <see langword="null" />.</exception>
         <permission cref="T:System.Security.Permissions.KeyContainerPermissionAccessEntryCollection">for permission to decrypt. Security action: <see cref="F:System.Security.Permissions.SecurityAction.Demand" />. Associated enumeration: <see cref="F:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt" /></permission>
       </Docs>
     </Member>
@@ -568,7 +568,7 @@
   
  The <paramref name="fOAEP" /> parameter is <see langword="true" /> and OAEP padding is not supported.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="rgb " />is <see langword="null" />.</exception>
+          <paramref name="rgb" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encrypt">

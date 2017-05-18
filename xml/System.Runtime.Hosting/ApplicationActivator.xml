@@ -172,7 +172,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="P:System.AppDomainSetup.ActivationArguments" /> property of <paramref name="adSetup " />is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.AppDomainSetup.ActivationArguments" /> property of <paramref name="adSetup" /> is <see langword="null" />.</exception>
         <exception cref="T:System.Security.Policy.PolicyException">The application instance failed to execute because the policy settings on the current application domain do not provide permission for this application to run.</exception>
       </Docs>
     </Member>

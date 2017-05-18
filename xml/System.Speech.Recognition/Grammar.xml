@@ -1102,7 +1102,7 @@ private static Grammar CreateSrgsDocumentGrammar3()
         <param name="ruleName">The identifier of the rule to use as the entry point of the speech recognition grammar, or <see langword="null" /> to use the default root rule of the grammar description.</param>
         <param name="baseUri">The base URI to use to resolve any relative rule reference in the grammar description, or <see langword="null" />.</param>
         <param name="parameters">Parameters to be passed to the initialization handler specified by the <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsRule.OnInit" /> property for the entry point or the root rule of the <see cref="T:System.Speech.Recognition.Grammar" /> to be created. This parameter may be null.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.Grammar" /> class a <see cref="T:System.IO.Stream" />and specifies a root rule and a base URI to resolve relative references.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.Grammar" /> class a <see cref="T:System.IO.Stream" /> and specifies a root rule and a base URI to resolve relative references.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -106,7 +106,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAOAEPKeyExchangeFormatter" /> class with the specified key.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="key " />is <see langword="null" />.</exception>
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateKeyExchange">
@@ -365,7 +365,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="key " />is <see langword="null" />.</exception>
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

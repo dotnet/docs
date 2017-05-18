@@ -81,7 +81,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The<paramref name=" parameter" /> argument is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="parameter" /> argument is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The <paramref name="parameter" /> argument already exists in the collection. This behavior differs from that of most collections that allow duplicate entries.  
   
  -or-  

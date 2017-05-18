@@ -174,7 +174,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="displayName" /> or<paramref name=" connectionPointType" /> is <see langword="null" />.</exception>
+          <paramref name="displayName" /> or <paramref name="connectionPointType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="connectionPointType" /> is not valid.</exception>
       </Docs>
@@ -211,7 +211,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="displayName" />, <paramref name="id" />, or<paramref name=" connectionPointType" /> is <see langword="null" />.</exception>
+          <paramref name="displayName" />, <paramref name="id" />, or <paramref name="connectionPointType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="connectionPointType" /> is not valid.</exception>
       </Docs>

@@ -228,7 +228,7 @@
         <param name="dictionary">An <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> used to store the values of the specified cell.</param>
         <param name="cell">The <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> that contains the values to retrieve.</param>
         <param name="rowState">One of the <see cref="T:System.Web.UI.WebControls.DataControlRowState" /> values.</param>
-        <param name="includeReadOnly">The value<see langword=" true" /> includes only the values of read-only fields; otherwise, <see langword="false" />.</param>
+        <param name="includeReadOnly">The value <see langword="true" /> includes only the values of read-only fields; otherwise, <see langword="false" />.</param>
         <summary>Fills the specified <see cref="T:System.Collections.Specialized.IOrderedDictionary" /> object with the values from the specified <see cref="T:System.Web.UI.WebControls.DataControlFieldCell" /> object.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  

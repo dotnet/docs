@@ -601,8 +601,8 @@ manager: "wpickett"
   
 |Type|Message|  
 |----------|-------------|  
-|<xref:Microsoft.Build.BuildEngine.Engine?displayProperty=fullName>|This class has been deprecated. Please use <xref:Microsoft.Build.Evaluation.ProjectCollection?displayProperty=fullName> from the  <!--zz <xref:Microsoft.Build?displayProperty=fullName> -->``Microsoft.Build` assembly instead.|  
-|<xref:Microsoft.Build.BuildEngine.Project?displayProperty=fullName>|This class has been deprecated. Please use <xref:Microsoft.Build.Evaluation.ProjectCollection?displayProperty=fullName> from the <xref:Microsoft.Build?displayProperty=fullName> assembly instead.|  
+|<xref:Microsoft.Build.BuildEngine.Engine?displayProperty=fullName>|This class has been deprecated. Please use <xref:Microsoft.Build.Evaluation.ProjectCollection?displayProperty=fullName> from the *Microsoft.Build* assembly instead.|  
+|<xref:Microsoft.Build.BuildEngine.Project?displayProperty=fullName>|This class has been deprecated. Please use <xref:Microsoft.Build.Evaluation.ProjectCollection?displayProperty=fullName> from the *Microsoft.Build* assembly instead.|  
   
  [Back to top](#introduction)  
   

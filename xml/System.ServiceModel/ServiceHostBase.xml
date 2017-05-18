@@ -150,7 +150,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="Endpoint" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The host is not in a Created or an Opening state or there is no <see cref="T:System.ServiceModel.Description.ServiceDescription" /> for the hosted service.</exception>
-        <exception cref="T:System.ArgumentException">The <paramref name="Address" />, <paramref name="Binding, " /> or <paramref name="Contract" /> property is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="Address" />, <paramref name="Binding" />, or <paramref name="Contract" /> property is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AddServiceEndpoint">

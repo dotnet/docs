@@ -48,7 +48,7 @@ In rare cases, runtime changes may affect existing apps that target the previous
 
 |Feature|Change|Impact|Scope| 
 |-------------|------------|------------|-----------|  
-| <xref:System.Web.HttpRuntime.AppDomainAppPath%2A> | In the .NET Framework 4.6.2, the runtime throws a <xref:System.NullReferenceException> when retrieving an <xref:System.Web.HttpRuntime.AppDomainAppPath%2A> value that includes null characters. In the .NET Framework 4.6.1 and earlier versions, it throws an <xref:System.ArgumentNullException>.  | You can do the following to respond to this change: <br/> - Handle the <xref:System.NullReferenceException> if your application is running on the .NET Framework 4.6.2. <br /> - Upgrade to the .NET Framework 4.7, which restores the previous behavior and throws an <xref:System.ArgumentNullException>. | Edge |
+| <xref:System.Web.HttpRuntime.AppDomainAppPath%2A?displayProperty=fullname> | In the .NET Framework 4.6.2, the runtime throws a <xref:System.NullReferenceException> when retrieving an <xref:System.Web.HttpRuntime.AppDomainAppPath%2A?displayProperty=fullname> value that includes null characters. In the .NET Framework 4.6.1 and earlier versions, it throws an <xref:System.ArgumentNullException>.  | You can do the following to respond to this change: <br/> - Handle the <xref:System.NullReferenceException> if your application is running on the .NET Framework 4.6.2. <br /> - Upgrade to the .NET Framework 4.7, which restores the previous behavior and throws an <xref:System.ArgumentNullException>. | Edge |
 
 <a name="Data"></a>   
 ## Data  

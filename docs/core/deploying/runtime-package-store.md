@@ -43,16 +43,17 @@ Instead of specifying a target manifest in a [`dotnet publish`](../tools/dotnet-
 </PropertyGroup>
 ```
 
-This should only be done when the target environment for the application is well-known. This is the case for example for ASP.NET projects, and for that reason, ASP.NET project templates include a target manifest (with a special value that is mapped to the corresponding target manifest's path when publishing):
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk.Web">
-  <PropertyGroup>
-    <TargetManifestFiles>aspnet/2.0.0</TargetManifestFiles>
-  </PropertyGroup>
-```
+This should only be done when the target environment for the application is well-known. This is the case for example for ASP.NET projects.
 
 A different case would be an open-source project: the users of the project will likely deploy to a variety of different production environments, which may have different sets of packages pre-installed. Maintainers of the project can't make assumptions about the target manifest, and users should instead rely on the `--manifest` option of [`dotnet publish`](../tools/dotnet-publish.md) instead.
+
+## ASP.NET implicit store
+
+The default ASP.NET targets included with the `Microsoft.NET.Sdk.Web` SDK include target manifests. As a consequence, `dotnet publish` of an ASP.NET application will result in a published application that contains only the application and its assets, and not ASP.NET itself.
+
+When an ASP.NET published application gets deployed, one should make sure that the target environment has ASP.NET installed, as the presence of .NET Core alone will not be sufficient.
+
+If the application needs to be published to such an environment that doesn't include ASP.NET, it is possible to opt out of the implicit store by specifying a `PublishWithAspNetCoreTargetManifest` flag set to false in the project file.
 
 ## Preparing a runtime environment
 

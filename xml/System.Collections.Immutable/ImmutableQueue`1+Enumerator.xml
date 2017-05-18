@@ -21,8 +21,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Enumerates the contents of an immutable queue without allocating any memory.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -40,8 +43,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the element at the current position of the enumerator.</summary>
+        <value>The element at the current position of the enumerator.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -61,8 +64,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Advances the enumerator to the next element of the immutable queue.</summary>
+        <returns>
+          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the queue.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

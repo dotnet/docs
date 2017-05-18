@@ -192,6 +192,7 @@
 ## Tutorials
 ### [Get Started](fsharp/tutorials/getting-started/index.md)
 #### [Get Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
+#### [Get Started with Visual Studio for Mac](fsharp/tutorials/getting-started/getting-started-with-visual-studio-for-mac.md)
 #### [Get Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
 #### [Get Started with Command-line Tools](fsharp/tutorials/getting-started/getting-started-command-line.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)

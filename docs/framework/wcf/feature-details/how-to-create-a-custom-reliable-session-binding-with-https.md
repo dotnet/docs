@@ -34,7 +34,7 @@ This topic demonstrates the use of Secure Sockets Layer (SSL) transport security
   
 3.  Create a Web.config file to configure an endpoint for the `CalculatorService` with a custom binding named "reliableSessionOverHttps" that uses a reliable session and the HTTPS transport.  
   
-     [!code-xml[c_HowTo_CreateReliableSessionHTTPS#2111](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/web.config#2111)] 
+     [!code-xml[c_HowTo_CreateReliableSessionHTTPS#2111](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/web.config#2111)]   
   
 4.  Create a Service.svc file that contains the line:  
   
@@ -62,7 +62,7 @@ This topic demonstrates the use of Secure Sockets Layer (SSL) transport security
   
 4.  Configure a custom binding named "reliableSessionOverHttps" to use the HTTPS transport and reliable sessions.  
   
-     [!code-xml[C_HowTo_CreateReliableSessionHTTPS#2211](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/app.config#2211)] 
+     [!code-xml[C_HowTo_CreateReliableSessionHTTPS#2211](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_createreliablesessionhttps/common/app.config#2211)]   
   
 5.  Create an instance of the `ClientCalculator` in an application and then call the service operations.  
   

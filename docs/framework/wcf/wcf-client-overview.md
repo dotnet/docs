@@ -80,7 +80,7 @@ svcutil /language:vb /out:ClientCode.vb /config:app.config http://computerName/M
   
  For example, a generated configuration file for an `ISampleService` used in the preceding examples contains the following endpoint information.  
   
- [!code-xml[C_GeneratedCodeFiles#19](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/common/client.exe.config#19)]    
+ [!code-xml[C_GeneratedCodeFiles#19](../../../samples/snippets/csharp/VS_Snippets_CFX/c_generatedcodefiles/common/client.exe.config#19)]   
   
  This configuration file specifies a target endpoint in the `<client>` element. [!INCLUDE[crabout](../../../includes/crabout-md.md)] using multiple target endpoints, see the <xref:System.ServiceModel.ClientBase%601.%23ctor%2A?displayProperty=fullName> or the <xref:System.ServiceModel.ChannelFactory%601.%23ctor%2A?displayProperty=fullName> constructors.  
   

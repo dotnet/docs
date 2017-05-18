@@ -28,14 +28,14 @@ When you use the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] cli
 > [!NOTE]
 >  When a data service requires you to manually set the message header for every request, consider registering the handler for the <xref:System.Data.Services.Client.DataServiceContext.SendingRequest> event by overriding the `OnContextCreated` partial method in the entity container that represents the data service, which in this case is `NorthwindEntities`.  
   
-[!code-csharp[Astoria Northwind Client#RegisterHeadersQuery](../../../../samples/snippets/csharp/VS_Snippets_Misc/Astoria Northwind Client/cs/source.cs#registerheadersquery)]   
-[!code-vb[Astoria Northwind Client#RegisterHeadersQuery](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/Astoria Northwind Client/vb/source.vb#registerheadersquery)] 
+[!code-csharp[Astoria Northwind Client#RegisterHeadersQuery](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#registerheadersquery)]   
+[!code-vb[Astoria Northwind Client#RegisterHeadersQuery](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#registerheadersquery)]
   
 ## Example  
  The following method handles the <xref:System.Data.Services.Client.DataServiceContext.SendingRequest> event and adds an Authentication header to the request.  
   
-[!code-csharp[Astoria Northwind Client#OnSendingRequest](../../../../samples/snippets/csharp/VS_Snippets_Misc/Astoria Northwind Client/cs/source.cs#onsendingrequest)]   
-[!code-vb[Astoria Northwind Client#OnSendingRequest](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/Astoria Northwind Client/vb/source.vb#onsendingrequest)] 
+ [!code-csharp[Astoria Northwind Client#OnSendingRequest](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#onsendingrequest)]   
+ [!code-vb[Astoria Northwind Client#OnSendingRequest](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#onsendingrequest)]   
   
 ## See Also  
  [Securing WCF Data Services](../../../../docs/framework/data/wcf/securing-wcf-data-services.md)   

@@ -1,7 +1,7 @@
 ---
 title: "Install the .NET Framework for developers | Microsoft Docs"
 ms.custom: ""
-ms.date: "05/18/2017"
+ms.date: "04/28/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""

@@ -38,6 +38,7 @@
 ## [Unit Testing](core/testing/index.md)
 ### [Unit testing with dotnet test and xUnit](core/testing/unit-testing-with-dotnet-test.md)
 ### [Unit testing with dotnet test and MSTest](core/testing/unit-testing-with-mstest.md)
+### [Running selective unit tests](core/testing/selective-unit-tests.md)
 ## [Versioning](core/versions/index.md)
 ### [.NET Core Support](core/versions/lts-current.md)
 <!--### [🔧 Servicing](core/versions/servicing.md)-->

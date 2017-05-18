@@ -137,7 +137,7 @@
       <Docs>
         <param name="content">The serializable content.</param>
         <param name="serializable">
-          <see langword="True " />to get a serializable string; <see langword="false" /> to get a non serializaable string.</param>
+          <see langword="True" /> to get a serializable string; <see langword="false" /> to get a non serializaable string.</param>
         <summary>Returns a serializable or non serializable class and/or property names, depending on the specific flag value.</summary>
         <returns>A <see langword="string" /> value that represents the serializable or non serializable class and/or property names.</returns>
         <remarks>To be added.</remarks>

@@ -22,11 +22,6 @@
 ## Remarks  
  The <xref:System.Activities.Presentation.EditingContext> represents the communication boundary that is shared between the hosting application and the [!INCLUDE[wfd1](~/includes/wfd1-md.md)]. The <xref:System.Activities.Presentation.EditingContext> was implemented as a concrete class for ease of use. Override <xref:System.Activities.Presentation.EditingContext.CreateServiceManager%2A> and <xref:System.Activities.Presentation.EditingContext.CreateContextItemManager%2A> to use customized managers derived from <xref:System.Activities.Presentation.ServiceManager> and <xref:System.Activities.Presentation.ContextItemManager>.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [EditingContext#1](EditingContext#1)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>

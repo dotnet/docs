@@ -27,11 +27,6 @@
   
  If you are using an <xref:System.Activities.Presentation.View.ExpressionTextBox> control in a custom activity designer, it is not necessary to create and destroy expression editors using this interface. The <xref:System.Activities.Presentation.View.ExpressionTextBox> class manages this for you.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_IExpressionEditorService#0](WFD_IExpressionEditorService#0)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>
@@ -78,7 +73,7 @@
         <param name="variables">Local variables for the expression editor.</param>
         <param name="text">A string used to populate the expression editor.</param>
         <summary>Creates a new expression editor.</summary>
-        <returns>Returns a<see cref="T:System.Activities.Presentation.View.IExpressionEditorInstance" />.</returns>
+        <returns>Returns a <see cref="T:System.Activities.Presentation.View.IExpressionEditorInstance" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

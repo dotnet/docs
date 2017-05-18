@@ -51,7 +51,7 @@
         <param name="category">The trace category that receives the message.</param>
         <param name="msg">The trace message.</param>
         <param name="isWarning">
-          <see langword="true" /> if the method associated with the <see cref="T:System.Web.TraceContextRecord" /> is the <see cref="Overload:System.Web.TraceContext.Warn" /> method;<see langword=" false" /> if the tracing method is the <see cref="Overload:System.Web.TraceContext.Write" /> method.</param>
+          <see langword="true" /> if the method associated with the <see cref="T:System.Web.TraceContextRecord" /> is the <see cref="Overload:System.Web.TraceContext.Warn" /> method; <see langword="false" /> if the tracing method is the <see cref="Overload:System.Web.TraceContext.Write" /> method.</param>
         <param name="errorInfo">A <see cref="T:System.Exception" /> object that contains additional error information.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Web.TraceContextRecord" /> class.</summary>
         <remarks>

@@ -2795,7 +2795,7 @@ ftp://myUrl/%2E%2E/%2E%2E
         <param name="uriString">The string used to attempt to construct a <see cref="T:System.Uri" />.</param>
         <param name="uriKind">The type of the <see cref="T:System.Uri" /> in <c>uriString</c>.</param>
         <summary>Indicates whether the string is well-formed by attempting to construct a URI with the string and ensures that the string does not require further escaping.</summary>
-        <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true " />if the string was well-formed; else <see langword="false" />.</returns>
+        <returns>A <see cref="T:System.Boolean" /> value that is <see langword="true" /> if the string was well-formed; else <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

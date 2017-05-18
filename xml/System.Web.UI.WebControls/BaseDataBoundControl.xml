@@ -301,7 +301,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value indicating whether the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" /> property is set.</summary>
-        <value>The value<see langword=" true" /> is returned if the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" /> property is set to value other than <see cref="F:System.String.Empty" />; otherwise, the value is <see langword="false" />.</value>
+        <value>The value <see langword="true" /> is returned if the <see cref="P:System.Web.UI.WebControls.BaseDataBoundControl.DataSourceID" /> property is set to value other than <see cref="F:System.String.Empty" />; otherwise, the value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -570,7 +570,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a value indicating whether the <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" /> method should be called.</summary>
-        <value>The returned value is<see langword=" true" /> if the data-bound control's <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" /> method should be called before the control is rendered; otherwise, the value is <see langword="false" />.</value>
+        <value>The returned value is <see langword="true" /> if the data-bound control's <see cref="M:System.Web.UI.WebControls.BaseDataBoundControl.DataBind" /> method should be called before the control is rendered; otherwise, the value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

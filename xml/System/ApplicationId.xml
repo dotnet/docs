@@ -87,17 +87,17 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="name " />is <see langword="null" />.  
+          <paramref name="name" /> is <see langword="null" />.  
   
  -or-  
   
- <paramref name="version " />is <see langword="null" />.  
+ <paramref name="version" /> is <see langword="null" />.  
   
  -or-  
   
- <paramref name="publicKeyToken " />is <see langword="null" />.</exception>
+ <paramref name="publicKeyToken" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="name " />is an empty string.</exception>
+          <paramref name="name" /> is an empty string.</exception>
       </Docs>
     </Member>
     <Member MemberName="Copy">

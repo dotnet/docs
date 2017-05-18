@@ -54,7 +54,7 @@
   
  ]]></format>
     </remarks>
-    <permission cref="T:System.Security.Permissions.SecurityPermission">for deriving from the <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> class. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />;<see cref="T:System.Security.PermissionSet" />: <see langword="FullTrust" />.</permission>
+    <permission cref="T:System.Security.Permissions.SecurityPermission">for deriving from the <see cref="T:System.CodeDom.Compiler.TempFileCollection" /> class. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />; <see cref="T:System.Security.PermissionSet" />: <see langword="FullTrust" />.</permission>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

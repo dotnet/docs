@@ -106,7 +106,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter" /> class with the specified key.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="key " />is <see langword="null" />.</exception>
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateKeyExchange">
@@ -146,7 +146,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.Security.Cryptography.CryptographicException">
-          <paramref name="rgbData " />is too big.</exception>
+          <paramref name="rgbData" /> is too big.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicUnexpectedOperationException">The key is <see langword="null" />.</exception>
       </Docs>
     </Member>
@@ -302,7 +302,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="key " />is <see langword="null" />.</exception>
+          <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

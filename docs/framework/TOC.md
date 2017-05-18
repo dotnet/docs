@@ -1,4 +1,4 @@
-# [.NET Framework Development Guide](development-guide.md)
+# [Development Guide](development-guide.md)
 ## [Application essentials](../standard/application-essentials.md)
 ## [Installation guide](install/index.md)
 ## [Data and modeling](data/index.md)

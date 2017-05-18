@@ -82,11 +82,11 @@ This topic describes the features of the XAML language and demonstrates how you 
   
 ```xaml  
 <LinearGradientBrush>  
-  \<LinearGradientBrush.GradientStops>  
-    \<!-- no explicit new GradientStopCollection, parser knows how to find or create -->  
+  <LinearGradientBrush.GradientStops>  
+    <!-- no explicit new GradientStopCollection, parser knows how to find or create -->  
     <GradientStop Offset="0.0" Color="Red" />  
     <GradientStop Offset="1.0" Color="Blue" />  
-  \</LinearGradientBrush.GradientStops>  
+  </LinearGradientBrush.GradientStops>  
 </LinearGradientBrush>  
 ```  
   
@@ -99,11 +99,11 @@ This topic describes the features of the XAML language and demonstrates how you 
 <Border>  
   <TextBox Width="300"/>  
 </Border>  
-\<!--explicit equivalent-->  
+<!--explicit equivalent-->  
 <Border>  
-  \<Border.Child>  
+  <Border.Child>  
     <TextBox Width="300"/>  
-  \</Border.Child>  
+  </Border.Child>  
 </Border>  
 ```  
   
@@ -111,7 +111,7 @@ This topic describes the features of the XAML language and demonstrates how you 
   
 ```  
 <Button>I am a   
-  \<Button.Background>Blue\</Button.Background>  
+  <Button.Background>Blue</Button.Background>  
   blue button</Button>  
 ```  
   
@@ -144,12 +144,12 @@ This topic describes the features of the XAML language and demonstrates how you 
   
 ```xaml  
 <StackPanel>  
-  \<StackPanel.Children>  
+  <StackPanel.Children>  
     <!--<UIElementCollection>-->  
     <Button>First Button</Button>  
     <Button>Second Button</Button>  
     <!--</UIElementCollection>-->  
-  \</StackPanel.Children>  
+  </StackPanel.Children>  
 </StackPanel>  
 ```  
   
@@ -234,13 +234,13 @@ This topic describes the features of the XAML language and demonstrates how you 
  The following is a very basic example of how custom prefixes work in XAML markup. The prefix `custom` is defined in the root element tag, and mapped to a specific assembly that is packaged and available with the application. This assembly contains a type `NumericUpDown`, which is implemented to support general XAML usage as well as using a class inheritance that permits its insertion at this particular point in a WPF XAML content model. An instance of this `NumericUpDown` control is declared as an object element, using the prefix so that a XAML parser knows which XAML namespace contains the type, and therefore where the backing assembly is that contains the type definition.  
   
 ```  
-\<Page  
+<Page  
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"   
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"   
     xmlns:custom="clr-namespace:NumericUpDownCustomControl;assembly=CustomLibrary"  
     >  
   <StackPanel Name="LayoutRoot">  
-    \<custom:NumericUpDown Name="numericCtrl1" Width="100" Height="60"/>  
+    <custom:NumericUpDown Name="numericCtrl1" Width="100" Height="60"/>  
 ...  
   </StackPanel>  
 </Page>  

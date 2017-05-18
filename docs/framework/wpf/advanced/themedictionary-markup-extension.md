@@ -34,9 +34,9 @@ Provides a way for custom control authors or applications that integrate third-p
   
 ```  
 <object>  
-  \<object.property>  
+  <object.property>  
     <ThemeDictionary AssemblyName="assemblyUri"/>  
-  \<object.property>  
+  <object.property>  
 <object>  
 ```  
   

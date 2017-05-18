@@ -92,12 +92,12 @@ End Namespace
  To put it all together, the following is XAML that includes the custom mapping along with the typical default and x: mappings in the root tag, then uses a prefixed reference to instantiate `ExampleClass` in that UI:  
   
 ```xaml  
-\<Page x:Class="WPFApplication1.MainPage"  
+<Page x:Class="WPFApplication1.MainPage"  
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"   
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
     xmlns:custom="clr-namespace:SDKSample;assembly=SDKSampleLibrary">  
   ...  
-  \<custom:ExampleClass/>  
+  <custom:ExampleClass/>  
 ...  
 </Page>  
 ```  

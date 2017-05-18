@@ -15,11 +15,6 @@
 ## Remarks  
  <xref:System.Activities.Presentation.Metadata.IRegisterMetadata> types provide a way to encapsulate the association of design-time attributes to run-time types in a loosely coupled fashion. An application hosting the [!INCLUDE[wfd1](~/includes/wfd1-md.md)] can use the <xref:System.Activities.Presentation.Metadata.IRegisterMetadata> interface to register the attributes for the activity. For instance, [!INCLUDE[vs2010](~/includes/vs2010-md.md)] searches for types that implement <xref:System.Activities.Presentation.Metadata.IRegisterMetadata> when assemblies that contain these types are loaded in addition to also looking for types in the *.design assemblies.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_IRegisterMetadata#1](WFD_IRegisterMetadata#1)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>
@@ -44,11 +39,6 @@
   
 ## Remarks  
  Implementations should call <xref:System.Activities.Presentation.Metadata.MetadataStore.AddAttributeTable%2A> to add data to the metadata store.  
-  
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_IRegisterMetadata#2](WFD_IRegisterMetadata#2)]  -->  
   
  ]]></format>
         </remarks>

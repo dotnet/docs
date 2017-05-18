@@ -49,8 +49,24 @@
   
 ## Examples  
  The following code example exposes the ProductID column of the Products table in the AdventureWorksLT data base by applying the scaffold property to the ProductID object in the Products partial class and setting it to `true.` It hides the ThumbnailPhotoFileName column by applying the scaffold property to the ThumbnailPhotoFileName object and setting it to `false`.  
+
+```csharp  
+[MetadataType(typeof(ProductMetadata))]  
+public partial class Product  
+{  
   
-<!-- TODO: review snippet reference  [!CODE [System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute#1](System.ComponentModel.DataAnnotations.ScaffoldColumnAttribute#1)]  -->  
+}  
+  
+public class ProductMetadata  
+{  
+    [ScaffoldColumn(true)]  
+    public object ProductID;  
+  
+    [ScaffoldColumn(false)]  
+    public object ThumbnailPhotoFileName;  
+  
+}  
+```    
   
 ```vb  
 <MetadataType(GetType(ProductMetadata))>  
@@ -67,26 +83,6 @@ Public Class ProductMetadata
   
 End Class  
   
-```  
-  
- [C#]  
-  
-```  
-[MetadataType(typeof(ProductMetadata))]  
-public partial class Product  
-{  
-  
-}  
-  
-public class ProductMetadata  
-{  
-    [ScaffoldColumn(true)]  
-    public object ProductID;  
-  
-    [ScaffoldColumn(false)]  
-    public object ThumbnailPhotoFileName;  
-  
-}  
 ```  
   
  To compile the example code, you need the following:  

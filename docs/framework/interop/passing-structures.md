@@ -53,16 +53,16 @@ BOOL PtInRect(const RECT *lprc, POINT pt);
 ```vb  
 Imports System.Runtime.InteropServices  
   
-\<StructLayout(LayoutKind.Sequential)> Public Structure Point  
+<StructLayout(LayoutKind.Sequential)> Public Structure Point  
     Public x As Integer  
     Public y As Integer  
 End Structure  
   
-Public Structure \<StructLayout(LayoutKind.Explicit)> Rect  
-    \<FieldOffset(0)> Public left As Integer  
-    \<FieldOffset(4)> Public top As Integer  
-    \<FieldOffset(8)> Public right As Integer  
-    \<FieldOffset(12)> Public bottom As Integer  
+Public Structure <StructLayout(LayoutKind.Explicit)> Rect  
+    <FieldOffset(0)> Public left As Integer  
+    <FieldOffset(4)> Public top As Integer  
+    <FieldOffset(8)> Public right As Integer  
+    <FieldOffset(12)> Public bottom As Integer  
 End Structure  
   
 Class Win32API      
@@ -109,7 +109,7 @@ Imports System
 Imports System.Runtime.InteropServices  
 Imports Microsoft.VisualBasic  
   
-\<StructLayout(LayoutKind.Sequential)> Public Class MySystemTime  
+<StructLayout(LayoutKind.Sequential)> Public Class MySystemTime  
     Public wYear As Short  
     Public wMonth As Short  
     Public wDayOfWeek As Short   

@@ -67,7 +67,7 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
 ```xml  
   
 <runtime>  
-    \<AppContextSwitchOverrides value="Switch.System.MemberDescriptorEqualsReturnsFalseIfEquivalent=true />  
+    <AppContextSwitchOverrides value="Switch.System.MemberDescriptorEqualsReturnsFalseIfEquivalent=true />  
 </runtime>  
   
 ```  

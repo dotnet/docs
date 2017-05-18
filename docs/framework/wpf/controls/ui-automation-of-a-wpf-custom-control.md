@@ -119,7 +119,7 @@ End Class
  Your automation peer should provide appropriate default values for your control. Note that XAML that references your control can override your peer implementations of core methods by including <xref:System.Windows.Automation.AutomationProperties> attributes. For example, the following XAML creates a button that has two customized [!INCLUDE[TLA2#tla_uiautomation](../../../../includes/tla2sharptla-uiautomation-md.md)] properties.  
   
 ```xaml  
-\<Button AutomationProperties.Name="Special"   
+<Button AutomationProperties.Name="Special"   
     AutomationProperties.HelpText="This is a special button."/>  
 ```  
   

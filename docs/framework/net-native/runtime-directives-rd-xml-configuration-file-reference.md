@@ -137,10 +137,10 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
   
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
   <Application>  
-     \<!-- Child elements go here -->    
+     <!-- Child elements go here -->    
   </Application>  
   <Library Name="Extensions">  
-     \<!-- Child elements go here -->    
+     <!-- Child elements go here -->    
   </Library>  
 </Directives>  
   
@@ -206,7 +206,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
                 Dynamic="Public"  />  
    </Application>  
    <Library Name="UtilityLibrary">  
-     \<!-- Child elements go here -->    
+     <!-- Child elements go here -->    
    </Library>  
 </Directives>  
   
@@ -264,7 +264,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
       <Assembly Name="DataClasses" Serialize="Required Public"/>  
    </Application>  
    <Library Name="DataClasses">  
-      \<!-- any other elements -->  
+      <!-- any other elements -->  
    </Library>  
 </Directives>  
   
@@ -277,7 +277,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
       <Assembly Name="DataClasses" Serialize="All" />  
    </Application>  
    <Library Name="DataClasses">  
-      \<!-- any other elements -->  
+      <!-- any other elements -->  
    </Library>  
 </Directives>  
   
@@ -299,7 +299,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
       </Assembly>  
    </Appliction>  
    <Library Name="DataClasses">  
-      \<!-- any other elements -->  
+      <!-- any other elements -->  
    </Library>  
 </Directives>  
   
@@ -321,7 +321,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
                          Arguments="System.Int32,System.Int32" Browse="Auto" />  
    </Application>  
    <Library Name="DataClasses">  
-      \<!-- any other elements -->  
+      <!-- any other elements -->  
    </Library>  
 </Directives>  
   

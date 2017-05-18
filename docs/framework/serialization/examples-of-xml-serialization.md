@@ -193,7 +193,7 @@ public class Item
  The serialized class instance might resemble the following, if two items are ordered.  
   
 ```  
-\<PurchaseOrder xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
+<PurchaseOrder xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns:xsd="http://www.w3.org/2001/XMLSchema">  
     <Items>  
         <Item>  
             <ItemID>aaa111</ItemID>  
@@ -391,14 +391,14 @@ Imports Microsoft.VisualBasic
 ' the attribute sets the IsNullable property, which specifies whether  
 ' the xsi:null attribute appears if the class instance is set to  
 ' a null reference.   
-\<XmlRootAttribute("PurchaseOrder", _  
+<XmlRootAttribute("PurchaseOrder", _  
  Namespace := "http://www.cpandl.com", IsNullable := False)> _  
 Public Class PurchaseOrder  
     Public ShipTo As Address  
     Public OrderDate As String  
     ' The XmlArrayAttribute changes the XML element name  
     ' from the default of "OrderedItems" to "Items".   
-    \<XmlArrayAttribute("Items")> _  
+    <XmlArrayAttribute("Items")> _  
     Public OrderedItems() As OrderedItem  
     Public SubTotal As Decimal  
     Public ShipCost As Decimal  
@@ -409,14 +409,14 @@ Public Class Address
     ' The XmlAttribute instructs the XmlSerializer to serialize the   
     ' Name field as an XML attribute instead of an XML element (the   
     ' default behavior).   
-    \<XmlAttribute()> _  
+    <XmlAttribute()> _  
     Public Name As String  
     Public Line1 As String  
   
     ' Setting the IsNullable property to false instructs the  
     ' XmlSerializer that the XML attribute will not appear if  
     ' the City field is set to a null reference.   
-    \<XmlElementAttribute(IsNullable := False)> _  
+    <XmlElementAttribute(IsNullable := False)> _  
     Public City As String  
     Public State As String  
     Public Zip As String  
@@ -751,8 +751,8 @@ public class Test
  The XML output might resemble the following.  
   
 ```  
-\<?xml version="1.0" encoding="utf-8"?>  
-\<PurchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">  
+<?xml version="1.0" encoding="utf-8"?>  
+<PurchaseOrder xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.cpandl.com">  
     <ShipTo Name="Teresa Atkinson">  
         <Line1>1 Main St.</Line1>  
         <City>AnyTown</City>  

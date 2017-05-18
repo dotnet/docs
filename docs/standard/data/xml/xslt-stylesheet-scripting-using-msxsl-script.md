@@ -83,22 +83,22 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
  When using the `msxsl:script` element, it is highly recommended that the script, regardless of language, be placed inside a CDATA section. For example, the following XML shows the template of the CDATA section where your code is placed.  
   
 ```  
-\<msxsl:script implements-prefix='yourprefix' language='CSharp'>  
-    \<![CDATA[  
+<msxsl:script implements-prefix='yourprefix' language='CSharp'>  
+    <![CDATA[  
     ... your code here ...  
     ]]>  
-\</msxsl:script>  
+</msxsl:script>  
 ```  
   
  It is highly recommended that all script content be placed in a CDATA section, because operators, identifiers, or delimiters for a given language have the potential of being misinterpreted as XML. The following example shows the use of the logical AND operator in script.  
   
 ```  
-\<msxsl:script implements-prefix='yourprefix' language='CSharp>  
+<msxsl:script implements-prefix='yourprefix' language='CSharp>  
     public string book(string abc, string xyz)  
     {  if ((abc== abc)&&(abc== xyz)) return bar+xyz;  
         else return null;  
     }  
-\</msxsl:script>  
+</msxsl:script>  
 ```  
   
  This throws an exception because the ampersands are not escaped. The document is loaded as XML, and no special treatment is applied to the text between the `msxsl:script` element tags.  
@@ -175,7 +175,7 @@ public class Sample
  number.xml  
   
 ```  
-\<?xml version='1.0'?>  
+<?xml version='1.0'?>  
 <data>  
   <circle>  
     <radius>12</radius>  
@@ -189,40 +189,40 @@ public class Sample
  calc.xsl  
   
 ```  
-\<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
     xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
     xmlns:user="urn:my-scripts">  
   
-  \<msxsl:script language="C#" implements-prefix="user">  
-     \<![CDATA[  
+  <msxsl:script language="C#" implements-prefix="user">  
+     <![CDATA[  
      public double circumference(double radius){  
        double pi = 3.14;  
        double circ = pi*radius*2;  
        return circ;  
      }  
       ]]>  
-   \</msxsl:script>  
+   </msxsl:script>  
   
-  \<xsl:template match="data">    
+  <xsl:template match="data">    
   <circles>  
   
-  \<xsl:for-each select="circle">  
+  <xsl:for-each select="circle">  
     <circle>  
-    \<xsl:copy-of select="node()"/>  
+    <xsl:copy-of select="node()"/>  
        <circumference>  
-          \<xsl:value-of select="user:circumference(radius)"/>   
+          <xsl:value-of select="user:circumference(radius)"/>   
        </circumference>  
     </circle>  
-  \</xsl:for-each>  
+  </xsl:for-each>  
   </circles>  
-  \</xsl:template>  
-\</xsl:stylesheet>  
+  </xsl:template>  
+</xsl:stylesheet>  
 ```  
   
 ## Output  
   
 ```  
-\<circles xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="urn:my-scripts">  
+<circles xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="urn:my-scripts">  
   <circle>  
     <radius>12</radius>  
     <circumference>75.36</circumference>  

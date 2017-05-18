@@ -32,11 +32,6 @@
 > [!WARNING]
 >  For activities to load properly in the toolbox, the assembly that contains the activities must be loaded first. Use <xref:System.Reflection.Assembly.LoadFrom%2A> to load the activity type if it is contained in a different assembly; using <xref:System.Object.GetType%2A> instead will cause an exception to be thrown.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_ToolboxControl#0](WFD_ToolboxControl#0)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>

@@ -53,7 +53,6 @@ This topic is the second of four topics that discusses how to implement a discov
             [OperationContract]  
             double Divide(double n1, double n2);  
         }  
-  
     ```  
   
 6.  Also within CalculatorService.cs, implement the service contract.  
@@ -94,7 +93,6 @@ This topic is the second of four topics that discusses how to implement a discov
                 return result;  
             }  
         }  
-  
     ```  
   
 ### To host the service  
@@ -103,18 +101,16 @@ This topic is the second of four topics that discusses how to implement a discov
   
 2.  Add the following using statements.  
   
-    ```csharp  
+    ```csharp 
     using System;  
     using System.ServiceModel;  
     using System.ServiceModel.Description;  
     using System.ServiceModel.Discovery;  
-  
     ```  
   
 3.  Within the `Main()` method, add the following code:  
   
     ```csharp  
-  
     // Define the base address of the service  
     Uri baseAddress = new Uri("net.tcp://localhost:9002/CalculatorService/" + Guid.NewGuid().ToString());  
     // Define the endpoint address where announcement messages will be sent  
@@ -230,7 +226,6 @@ namespace Microsoft.Samples.Discovery
         }  
     }  
 }  
-  
 ```  
   
 ```csharp  
@@ -294,7 +289,7 @@ namespace Microsoft.Samples.Discovery
     }  
 }  
 ```  
- 
+
 ## See Also  
  [WCF Discovery](../../../../docs/framework/wcf/feature-details/wcf-discovery.md)   
  [How to: Implement a Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-implement-a-discovery-proxy.md)   

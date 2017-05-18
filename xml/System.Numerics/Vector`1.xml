@@ -35,9 +35,18 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <typeparam name="T">To be added.</typeparam>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+    <summary>Represents a single vector of a specified numeric type that is suitable for low-level optimization of parallel algorithms.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Numerics.Vector%601> is an immutable structure that represents a single vector of a specified numeric type. The count of a <xref:System.Numerics.Vector%601> instance is fixed, but its upper limit is CPU-register dependent. It is intended to be used as a building block for vectorizing large algorithms.  
+  
+ The <xref:System.Numerics.Vector%601> structure provides support for hardware acceleration.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -61,9 +70,16 @@
         <Parameter Name="value" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="value">The numeric type that defines the type of the components in the vector.</param>
+        <summary>Creates a vector whose components are of a specified type.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `value` can be any primitive numeric type (that is, a numeric type whose <xref:System.Type.IsPrimitive%2A?displayProperty=fullName> property returns `true`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -87,9 +103,18 @@
         <Parameter Name="values" Type="T[]" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="values">A numeric array.</param>
+        <summary>Creates a vector from a specified array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ `values` must contain at least <xref:System.Numerics.Vector%601.Count%2A> elements.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="values" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -114,10 +139,25 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="values">To be added.</param>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="values">A numeric array.</param>
+        <param name="index">The starting index position from which to create the vector.</param>
+        <summary>Creates a vector from a specified array starting at a specified index position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The array must contain at least [Vector(T) Constructor (T\<xref:System.Numerics.Vector%601.Count%2A?displayProperty=fullName> elements from the specified index.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="values" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ The length of <paramref name="values" /> minus <paramref name="index" /> is less than <see cref="P:System.Numerics.Vector`1.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -144,9 +184,19 @@
         <Parameter Name="destination" Type="T[]" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="destination">The array to receive a copy of the vector values.</param>
+        <summary>Copies the vector instance to a specified destination array.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The copy operation begins at index 0 of `destination`. The destination array must have at least <xref:System.Numerics.Vector%601.Count%2A?displayProperty=fullName> elements.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destination" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The number of elements in the current vector is greater than the number of elements available in the <paramref name="destination" /> array.</exception>
       </Docs>
     </Member>
     <Member MemberName="CopyTo">
@@ -174,10 +224,22 @@
         <Parameter Name="startIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="destination">To be added.</param>
-        <param name="startIndex">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="destination">The array to receive a copy of the vector values.</param>
+        <param name="startIndex">The starting index in <c>destination</c> at which to begin the copy operation.</param>
+        <summary>Copies the vector instance to a specified destination array starting at a specified index position.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The copy operation begins at index `startIndex` of `destination`. The destination array must have at least `startIndex` + [CopyTo Method (T\<xref:System.Numerics.Vector%601.Count%2A> – 1 elements.  
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="destination" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The number of elements in the current instance is greater than the number of elements available from <paramref name="startIndex" /> to the end of the <paramref name="destination" /> array.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">
+          <paramref name="index" /> is less than zero or greater than the last index in <paramref name="destination" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Count">
@@ -201,9 +263,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns the number of elements stored in the vector.</summary>
+        <value>The number of elements stored in the vector.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.NotSupportedException">Access to the property getter via reflection is not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -230,10 +293,18 @@
         <Parameter Name="other" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="other">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="other">The vector to compare with this instance.</param>
+        <summary>Returns a value that indicates whether this instance is equal to a specified vector.</summary>
+        <returns>
+          <see langword="true" /> if the current instance and <paramref name="other" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two vectors are equal if they are of the same type, have the same number of values, and each value in the current instance is equal to the corresponding value in `other`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Equals">
@@ -260,10 +331,18 @@
         <Parameter Name="obj" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="obj">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="obj">The object to compare with this instance.</param>
+        <summary>Returns a value that indicates whether this instance is equal to a specified object.</summary>
+        <returns>
+          <see langword="true" /> if the current instance and <paramref name="obj" /> are equal; otherwise, <see langword="false" />. The method returns <see langword="false" /> if <paramref name="obj" /> is null, or if <paramref name="obj" /> is a vector of a different type than the current instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two vectors are equal if they are of the same type, have the same number of values, and each value in the current instance is equal to the corresponding value in `other`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetHashCode">
@@ -288,8 +367,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Returns the hash code for this instance.</summary>
+        <returns>The hash code.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -317,10 +396,16 @@
         <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="index">To be added.</param>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <param name="index">The index of the element to return.</param>
+        <summary>Gets the element at a specified index.</summary>
+        <value>The element at index <paramref name="index" />.</value>
         <remarks>To be added.</remarks>
+        <exception cref="T:System.IndexOutOfRangeException">
+          <paramref name="index" /> is less than zero.  
+  
+ -or-  
+  
+ <paramref name="index" /> is greater than or equal to <see cref="P:System.Numerics.Vector`1.Count" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="One">
@@ -344,8 +429,8 @@
         <ReturnType>System.Numerics.Vector&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a vector containing all ones.</summary>
+        <value>A vector containing all ones.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -374,11 +459,18 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first vector to add.</param>
+        <param name="right">The second vector to add.</param>
+        <summary>Adds two vectors together.</summary>
+        <returns>The summed vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Addition%2A> method defines the addition operation for <xref:System.Numerics.Vector%601> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd">
@@ -406,11 +498,18 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector by performing a bitwise <see langword="And" /> operation on each of the elements in two vectors.</summary>
+        <returns>The vector that results from the bitwise <see langword="And" /> of <paramref name="left" /> and <paramref name="right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_BitwiseAnd%2A> method defines the bitwise `And` operation for <xref:System.Numerics.Vector%601> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr">
@@ -438,11 +537,18 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector by performing a bitwise <see langword="Or" /> operation on each of the elements in two vectors.</summary>
+        <returns>The vector that results from the bitwise <see langword="Or" /> of the elements in <paramref name="left" /> and <paramref name="right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_BitwiseOr%2A> method defines the bitwise `Or` operation for <xref:System.Numerics.Vector%601> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Division">
@@ -470,11 +576,18 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Divides the first vector by the second.</summary>
+        <returns>The vector that results from dividing <paramref name="left" /> by <paramref name="right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Division%2A> method defines the division operation for <xref:System.Numerics.Vector%601> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Equality">
@@ -502,11 +615,19 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether each pair of elements in two specified vectors are equal.</summary>
+        <returns>
+          <see langword="true" /> if <paramref name="left" /> and <paramref name="right" /> are equal; otherwise, <see langword="false" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Two vectors are equal if they are of the same type, have the same number of values, and each value in `left` is equal to the corresponding value in `right`.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr">
@@ -534,11 +655,18 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector by performing a bitwise <see langword="XOr" /> operation on each of the elements in two vectors.</summary>
+        <returns>The vector that results from the bitwise <see langword="XOr" /> of the elements in <paramref name="left" /> and <paramref name="right" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_ExclusiveOr%2A> method defines the bitwise `XOr` operation for <xref:System.Numerics.Vector%601> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -565,10 +693,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to reinterpret.</param>
+        <summary>Reinterprets the bits of the specified vector into a vector of type <see cref="T:System.Byte" />.</summary>
+        <returns>The reinterpreted vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Explicit%2A> operator defines a narrowing conversion; it requires a casting operator (in C#) or a conversion method (in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -595,10 +730,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to reinterpret.</param>
+        <summary>Reinterprets the bits of the specified vector into a vector of type <see cref="T:System.Double" />.</summary>
+        <returns>The reinterpreted vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Explicit%2A> operator defines a narrowing conversion; it requires a casting operator (in C#) or a conversion method (in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -625,10 +767,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to reinterpret.</param>
+        <summary>Reinterprets the bits of the specified vector into a vector of type <see cref="T:System.Int16" />.</summary>
+        <returns>The reinterpreted vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Explicit%2A> operator defines a narrowing conversion; it requires a casting operator (in C#) or a conversion method (in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -655,10 +804,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to reinterpret.</param>
+        <summary>Reinterprets the bits of the specified vector into a vector of type <see cref="T:System.Int32" />.</summary>
+        <returns>The reinterpreted vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Explicit%2A> operator defines a narrowing conversion; it requires a casting operator (in C#) or a conversion method (in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -685,10 +841,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to reinterpret.</param>
+        <summary>Reinterprets the bits of the specified vector into a vector of type <see cref="T:System.Int64" />.</summary>
+        <returns>The reinterpreted vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Explicit%2A> operator defines a narrowing conversion; it requires a casting operator (in C#) or a conversion method (in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -720,10 +883,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to reinterpret.</param>
+        <summary>Reinterprets the bits of the specified vector into a vector of type <see cref="T:System.SByte" />.</summary>
+        <returns>The reinterpreted vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Explicit%2A> operator defines a narrowing conversion; it requires a casting operator (in C#) or a conversion method (in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -750,10 +920,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to reinterpret.</param>
+        <summary>Reinterprets the bits of the specified vector into a vector of type <see cref="T:System.Single" />.</summary>
+        <returns>The reinterpreted vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Explicit%2A> operator defines a narrowing conversion; it requires a casting operator (in C#) or a conversion method (in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -785,10 +962,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to reinterpret.</param>
+        <summary>Reinterprets the bits of the specified vector into a vector of type <see cref="T:System.UInt16" />.</summary>
+        <returns>The reinterpreted vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Explicit%2A> operator defines a narrowing conversion; it requires a casting operator (in C#) or a conversion method (in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -820,10 +1004,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to reinterpret.</param>
+        <summary>Reinterprets the bits of the specified vector into a vector of type <see cref="T:System.UInt32" />.</summary>
+        <returns>The reinterpreted vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Explicit%2A> operator defines a narrowing conversion; it requires a casting operator (in C#) or a conversion method (in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Explicit">
@@ -855,10 +1046,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to reinterpret.</param>
+        <summary>Reinterprets the bits of the specified vector into a vector of type <see cref="T:System.UInt64" />.</summary>
+        <returns>The reinterpreted vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Explicit%2A> operator defines a narrowing conversion; it requires a casting operator (in C#) or a conversion method (in Visual Basic).  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Inequality">
@@ -886,10 +1084,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether any single pair of elements in the specified vectors is equal.</summary>
+        <returns>
+          <see langword="true" /> if any element pairs in left and right are equal. <see langword="false" /> if no element pairs are equal.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -918,11 +1117,18 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Multiplies two vectors together.</summary>
+        <returns>The product vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Multiply%2A> method defines the multiplication operation for <xref:System.Numerics.Vector%601> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -950,11 +1156,18 @@
         <Parameter Name="factor" Type="T" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <param name="factor">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The source vector.</param>
+        <param name="factor">A scalar value.</param>
+        <summary>Multiplies a vector by a specified scalar value.</summary>
+        <returns>The scaled vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Multiply%2A> method defines the multiplication operation for <xref:System.Numerics.Vector%601> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_Multiply">
@@ -982,11 +1195,18 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="factor">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="factor">The scalar value.</param>
+        <param name="value">The source vector.</param>
+        <summary>Multiplies a vector by the given scalar.</summary>
+        <returns>The scaled vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Multiply%2A> method defines the multiplication operation for <xref:System.Numerics.Vector%601> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_OnesComplement">
@@ -1013,9 +1233,9 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="value">The source vector.</param>
+        <summary>Returns a new vector whose elements are obtained by taking the one's complement of a specified vector's elements.</summary>
+        <returns>The one's complement vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1044,11 +1264,18 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Subtracts the second vector from the first.</summary>
+        <returns>The vector that results from subtracting <paramref name="right" /> from <paramref name="left" />.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_Subtraction%2A> method defines the subtraction operation for <xref:System.Numerics.Vector%601> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation">
@@ -1075,10 +1302,17 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="value">The vector to negate.</param>
+        <summary>Negates a given vector.</summary>
+        <returns>The negated vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Numerics.Vector%601.op_UnaryNegation%2A> method defines the unary negation operation for <xref:System.Numerics.Vector%601> objects.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1103,9 +1337,16 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Returns the string representation of this vector using default formatting.</summary>
+        <returns>The string representation of this vector.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a string in which each element of the vector is formatted using the "G" (general) format string and the formatting conventions of the current thread culture. The current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1132,10 +1373,17 @@
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="format">A  or  that defines the format of individual elements.</param>
+        <summary>Returns the string representation of this vector using the specified format string to format individual elements.</summary>
+        <returns>The string representation of the current instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a string in which each element of the vector is formatted using `format` and the current culture's formatting conventions. The current culture's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -1163,11 +1411,18 @@
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">To be added.</param>
-        <param name="formatProvider">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="format">A  or  that defines the format of individual elements.</param>
+        <param name="formatProvider">A format provider that supplies culture-specific formatting information.</param>
+        <summary>Returns the string representation of this vector using the specified format string to format individual elements and the specified format provider to define culture-specific formatting.</summary>
+        <returns>The string representation of the current instance.</returns>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method returns a string in which each element of the vector is formatted using `format` and `formatProvider`, and the format provider's <xref:System.Globalization.NumberFormatInfo.NumberGroupSeparator%2A?displayProperty=fullName> property followed by a space is used to separate each element.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Zero">
@@ -1191,8 +1446,8 @@
         <ReturnType>System.Numerics.Vector&lt;T&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Returns a vector containing all zeroes.</summary>
+        <value>A vector containing all zeroes.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

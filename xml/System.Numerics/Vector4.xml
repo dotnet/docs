@@ -1582,7 +1582,7 @@
         <Parameter Name="format" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="format">A [standard](~/docs/standard/base-types/standard-numeric-format-strings.md) or [custom numeric format string](~/docs/standard/base-types/custom-numeric-format-strings.md) that defines the format of individual elements.</param>
+        <param name="format">A  or  that defines the format of individual elements.</param>
         <summary>Returns the string representation of the current instance using the specified format string to format individual elements.</summary>
         <returns>The string representation of the current instance.</returns>
         <remarks>
@@ -1623,7 +1623,7 @@
         <Parameter Name="formatProvider" Type="System.IFormatProvider" />
       </Parameters>
       <Docs>
-        <param name="format">A [standard](~/docs/standard/base-types/standard-numeric-format-strings.md) or [custom numeric format string](~/docs/standard/base-types/custom-numeric-format-strings.md) that defines the format of individual elements.</param>
+        <param name="format">A  or  that defines the format of individual elements.</param>
         <param name="formatProvider">A format provider that supplies culture-specific formatting information.</param>
         <summary>Returns the string representation of the current instance using the specified format string to format individual elements and the specified format provider to define culture-specific formatting.</summary>
         <returns>The string representation of the current instance.</returns>
@@ -1958,7 +1958,7 @@
         <ReturnType>System.Numerics.Vector4</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the vector <c>(0,0,1,0)</c>.</summary>
+        <summary>Gets a vector whose 4 elements are equal to zero.</summary>
         <value>The vector <c>(0,0,1,0)</c>.</value>
         <remarks>To be added.</remarks>
       </Docs>

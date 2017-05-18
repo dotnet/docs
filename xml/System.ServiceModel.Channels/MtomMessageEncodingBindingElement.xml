@@ -277,7 +277,7 @@
         <typeparam name="T">The typed object for which the method is querying.</typeparam>
         <param name="context">The <see cref="T:System.ServiceModel.Channels.BindingContext" /> for the binding element.</param>
         <summary>Returns a typed object requested, if present, from the appropriate layer in the binding element stack.</summary>
-        <returns>The typed object <paramref name="T " />requested if it is present or <see langword="null" /> if it is not.</returns>
+        <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

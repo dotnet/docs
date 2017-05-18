@@ -103,9 +103,9 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The<paramref name=" addresses" /> parameter is null.</exception>
-        <exception cref="T:System.ArgumentException">The<paramref name=" addresses" /> parameter is an empty string.</exception>
-        <exception cref="T:System.FormatException">The<paramref name=" addresses" /> parameter contains an e-mail address that is invalid or not supported.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="addresses" /> parameter is null.</exception>
+        <exception cref="T:System.ArgumentException">The <paramref name="addresses" /> parameter is an empty string.</exception>
+        <exception cref="T:System.FormatException">The <paramref name="addresses" /> parameter contains an e-mail address that is invalid or not supported.</exception>
       </Docs>
     </Member>
     <Member MemberName="InsertItem">
@@ -138,7 +138,7 @@
         <param name="item">The e-mail address to be inserted into the collection.</param>
         <summary>Inserts an e-mail address into the <see cref="T:System.Net.Mail.MailAddressCollection" />, at the specified location.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The<paramref name=" item" /> parameter is null.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> parameter is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="SetItem">
@@ -171,7 +171,7 @@
         <param name="item">An e-mail address that will replace the element in the collection.</param>
         <summary>Replaces the element at the specified index.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentNullException">The<paramref name=" item" /> parameter is null.</exception>
+        <exception cref="T:System.ArgumentNullException">The <paramref name="item" /> parameter is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">

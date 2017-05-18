@@ -200,7 +200,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="maxBufferSize " /> is smaller than zero.</exception>
+          <paramref name="maxBufferSize" /> is smaller than zero.</exception>
         <exception cref="T:System.ObjectDisposedException">The message is closed.</exception>
         <exception cref="T:System.InvalidOperationException">The message has been copied, read or written.</exception>
       </Docs>
@@ -1558,7 +1558,7 @@
         <summary>Serializes the body content using the specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="writer " />is <see langword="null" />.</exception>
+          <paramref name="writer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ObjectDisposedException">The message is closed.</exception>
         <exception cref="T:System.InvalidOperationException">The message has been copied, read or written.</exception>
       </Docs>
@@ -1716,7 +1716,7 @@
         <summary>Serializes the start envelope using the specified <see cref="T:System.Xml.XmlDictionaryWriter" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="writer " />is <see langword="null" />.</exception>
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

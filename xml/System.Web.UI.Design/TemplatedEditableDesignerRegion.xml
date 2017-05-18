@@ -46,7 +46,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the template occurs only once per instance of the containing control, such as a h<see langword="eader" /> template, or can appear many times according to available data, such as an i<see langword="tem" /> template.</summary>
+        <summary>Gets or sets whether the template occurs only once per instance of the containing control, such as a <see langword="header" /> template, or can appear many times according to available data, such as an <see langword="item" /> template.</summary>
         <value>
           <see langword="true" /> if the template appears only once; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>

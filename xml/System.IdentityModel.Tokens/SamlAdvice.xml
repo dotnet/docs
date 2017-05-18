@@ -269,7 +269,7 @@
  -or-  
   
  <paramref name="samlSerializer" /> is <see langword="null" /></exception>
-        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The <see langword="&lt;saml:Advice&gt; " />element does not conform to the XML schema for the <see langword="&lt;saml:Advice&gt;" /> element.</exception>
+        <exception cref="T:System.IdentityModel.Tokens.SecurityTokenException">The <see langword="&lt;saml:Advice&gt;" /> element does not conform to the XML schema for the <see langword="&lt;saml:Advice&gt;" /> element.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteXml">

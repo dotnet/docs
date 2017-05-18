@@ -323,7 +323,7 @@
         <param name="rpc">
           <see langword="true" /> if the method is a remote procedure call; otherwise, <see langword="false" />.</param>
         <param name="openModel">
-          <see langword="true" /> to specify that the generated schema type will be marked with the<see langword=" &lt;xs:anyAttribute&gt;" /> element; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to specify that the generated schema type will be marked with the <see langword="&lt;xs:anyAttribute&gt;" /> element; otherwise, <see langword="false" />.</param>
         <summary>Returns internal type mappings using information from a Web service method, and allows you to specify an XML element name, XML namespace, and other options.</summary>
         <returns>An <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> that contains the mappings.</returns>
         <remarks>To be added.</remarks>
@@ -369,7 +369,7 @@
         <param name="rpc">
           <see langword="true" /> if the method is a remote procedure call; otherwise, <see langword="false" />.</param>
         <param name="openModel">
-          <see langword="true" /> to specify that the generated schema type will be marked with the<see langword=" &lt;xs:anyAttribute&gt;" /> element; otherwise, <see langword="false" />.</param>
+          <see langword="true" /> to specify that the generated schema type will be marked with the <see langword="&lt;xs:anyAttribute&gt;" /> element; otherwise, <see langword="false" />.</param>
         <param name="access">One of the <see cref="T:System.Xml.Serialization.XmlMappingAccess" /> values. The default is <see langword="None" />.</param>
         <summary>Generates internal type mappings for information from a Web service method.</summary>
         <returns>An <see cref="T:System.Xml.Serialization.XmlMembersMapping" /> that contains the mappings.</returns>

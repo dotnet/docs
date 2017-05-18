@@ -245,7 +245,7 @@
         <param name="item">The object to locate in the collection.</param>
         <summary>Determines whether the collection contains an element with a specific value.</summary>
         <returns>
-          <see langword="true" /> if the element value is found in the collection; otherwise<see langword=" false" />.</returns>
+          <see langword="true" /> if the element value is found in the collection; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The value set is <see langword="null" /> or is not of the correct generic type <paramref name="T" /> for the collection.</exception>
       </Docs>
@@ -750,7 +750,7 @@
         <param name="value">The object to locate in the collection.</param>
         <summary>Determines whether the collection contains an element with a specific value.</summary>
         <returns>
-          <see langword="true" /> if the element <paramref name="value" /> is found in the collection; otherwise<see langword=" false" />.</returns>
+          <see langword="true" /> if the element <paramref name="value" /> is found in the collection; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="value" /> is not an object of the type contained in the collection.</exception>

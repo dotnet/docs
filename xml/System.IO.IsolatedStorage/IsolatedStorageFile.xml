@@ -176,15 +176,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
+          <paramref name="sourceFileName" /> was not found.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
+          <paramref name="sourceFileName" /> was not found.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
   
  -or-  
@@ -246,15 +246,15 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.FileNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
+          <paramref name="sourceFileName" /> was not found.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
-          <paramref name="sourceFileName " />was not found.</exception>
+          <paramref name="sourceFileName" /> was not found.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
   
  -or-  
@@ -729,9 +729,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="path " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="path " />is <see langword="null" />.</exception>
+          <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
@@ -1029,9 +1029,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="path " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="path " />is <see langword="null" />.</exception>
+          <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
@@ -1083,9 +1083,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="path " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="path " />is <see langword="null" />.</exception>
+          <paramref name="path" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.IsolatedStorage.IsolatedStorageException">The isolated store has been removed.  
@@ -2040,9 +2040,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
@@ -2105,9 +2105,9 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="sourceFileName " />or<paramref name=" destinationFileName " />is <see langword="null" />.</exception>
+          <paramref name="sourceFileName" /> or <paramref name="destinationFileName" /> is <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The isolated store has been closed.</exception>
         <exception cref="T:System.ObjectDisposedException">The isolated store has been disposed.</exception>
         <exception cref="T:System.IO.FileNotFoundException">

@@ -81,7 +81,7 @@ title: .NET Documentation
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/welcome">.NET Platform Guide</a></h3>
+                                                <h3><a href="/dotnet/standard/">.NET Platform Guide</a></h3>
                                                 <p><a href="/dotnet/standard/get-started">Get Started</a></p>
                                                 <p><a href="/dotnet/standard/tour">Tour of .NET</a></p>
                                                 <p><a href="/dotnet/standard/components">.NET Architectural Concepts</a></p>
@@ -122,7 +122,7 @@ title: .NET Documentation
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/framework/">.NET Framework Guide</a></h3>
                                                 <p><a href="/dotnet/framework/get-started/">Get Started</a></p>
-                                                <p><a href="/dotnet/framework/development-guide">Tutorials</a></p>
+                                                <p><a href="/dotnet/framework/development-guide">Development Guide</a></p>
                                                 <p><a href="/dotnet/framework/develop-client-apps">Client Development</a></p>
                                                 <p><a href="/aspnet/#pivot=aspnet">ASP.NET</a></p>
                                             </div>
@@ -210,7 +210,7 @@ title: .NET Documentation
                             <li class="fullSpan">
                                 <div class="container footer">
                                     <p><a href="https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md">Contribute to .NET docs and samples</a></p>
-                                    <p><a href="https://docs.microsoft.com/dotnet/project-json">Find Visual Studio 2015/project.json version of the documentation</a></p>
+                                    <p><a href="/dotnet/project-json">Find Visual Studio 2015/project.json version of the documentation</a></p>
                                 </div>
                             </li>
                         </ul>

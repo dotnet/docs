@@ -1,6 +1,17 @@
 <Namespace Name="System.Threading.Tasks.Dataflow">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="N:System.Threading.Tasks.Dataflow" /> namespace provides an actor-based programming model that supports in-process message passing for coarse-grained dataflow and pipelining tasks.  
+  
+ For more information, see [Dataflow](~/docs/standard/parallel-programming/dataflow-task-parallel-library.md).</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  The TPL Dataflow Library (the <xref:System.Threading.Tasks.Dataflow> namespace) is not distributed with the .NET Framework. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in Visual Studio, choose **Manage NuGet Packages** from the **Project** menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
+  
+ ]]></format>
+    </remarks>
   </Docs>
 </Namespace>

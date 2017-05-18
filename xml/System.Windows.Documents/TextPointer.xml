@@ -560,7 +560,7 @@
       <Docs>
         <param name="offset">An offset, in symbols, for which to calculate and return the position.  If the offset is negative, the position is calculated in the logical direction opposite of that indicated by the <see cref="P:System.Windows.Documents.TextPointer.LogicalDirection" /> property.</param>
         <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> to the position indicated by the specified offset, in symbols, from the beginning of the current <see cref="T:System.Windows.Documents.TextPointer" />.</summary>
-        <returns>A <see cref="T:System.Windows.Documents.TextPointer" /> to the position indicated by the specified offset, or<see langword=" null " />if no corresponding position can be found.</returns>
+        <returns>A <see cref="T:System.Windows.Documents.TextPointer" /> to the position indicated by the specified offset, or <see langword="null" /> if no corresponding position can be found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -605,7 +605,7 @@
         <param name="offset">An offset, in symbols, for which to calculate and return the position.  If the offset is negative, the returned <see cref="T:System.Windows.Documents.TextPointer" /> precedes the current <see cref="T:System.Windows.Documents.TextPointer" />; otherwise, it follows.</param>
         <param name="direction">One of the <see cref="T:System.Windows.Documents.LogicalDirection" /> values that specifies the logical direction of the returned <see cref="T:System.Windows.Documents.TextPointer" />.</param>
         <summary>Returns a <see cref="T:System.Windows.Documents.TextPointer" /> to the position indicated by the specified offset, in symbols, from the beginning of the current <see cref="T:System.Windows.Documents.TextPointer" /> and in the specified direction.</summary>
-        <returns>A <see cref="T:System.Windows.Documents.TextPointer" /> to the position indicated by the specified offset, or<see langword=" null " />if the offset extends past the end of the content.</returns>
+        <returns>A <see cref="T:System.Windows.Documents.TextPointer" /> to the position indicated by the specified offset, or <see langword="null" /> if the offset extends past the end of the content.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -973,7 +973,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the paragraph that scopes the current position, if any.</summary>
-        <value>The <see cref="T:System.Windows.Documents.Paragraph" /> that scopes the current position, or<see langword=" null " />if no such paragraph exists.</value>
+        <value>The <see cref="T:System.Windows.Documents.Paragraph" /> that scopes the current position, or <see langword="null" /> if no such paragraph exists.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

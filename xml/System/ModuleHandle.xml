@@ -471,7 +471,7 @@
  <paramref name="metadataToken" /> identifies a field whose parent <see langword="TypeSpec" /> has a signature containing element type <see langword="var" /> or <see langword="mvar" />.</exception>
         <exception cref="T:System.InvalidOperationException">The method is called on an empty field handle.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="fieldToken " />is not a valid token.</exception>
+          <paramref name="fieldToken" /> is not a valid token.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveMethodHandle">
@@ -580,7 +580,7 @@
  <paramref name="metadataToken" /> is a <see langword="MethodSpec" /> whose signature contains element type <see langword="var" /> or <see langword="mvar" />.</exception>
         <exception cref="T:System.InvalidOperationException">The method is called on an empty method handle.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="methodToken " />is not a valid token.</exception>
+          <paramref name="methodToken" /> is not a valid token.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResolveTypeHandle">
@@ -689,7 +689,7 @@
  <paramref name="metadataToken" /> is a <see langword="TypeSpec" /> whose signature contains element type <see langword="var" /> or <see langword="mvar" />.</exception>
         <exception cref="T:System.InvalidOperationException">The method is called on an empty type handle.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
-          <paramref name="typeToken " />is not a valid token.</exception>
+          <paramref name="typeToken" /> is not a valid token.</exception>
       </Docs>
     </Member>
   </Members>

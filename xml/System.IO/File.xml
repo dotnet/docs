@@ -129,7 +129,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">Either<paramref name=" path " />or <paramref name="contents" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Either <paramref name="path" /> or <paramref name="contents" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
           <paramref name="path" /> is invalid (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified by <paramref name="path" /> was not found.</exception>
@@ -199,7 +199,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">Either<paramref name=" path" />, <paramref name="contents" />, or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Either <paramref name="path" />, <paramref name="contents" />, or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
           <paramref name="path" /> is invalid (for example, the directory doesn’t exist or it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.FileNotFoundException">The file specified by <paramref name="path" /> was not found.</exception>
@@ -3922,7 +3922,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">Either<paramref name=" path " />or <paramref name="contents" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Either <paramref name="path" /> or <paramref name="contents" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
           <paramref name="path" /> is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>
@@ -4070,7 +4070,7 @@
         </remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="path" /> is a zero-length string, contains only white space, or contains one or more invalid characters defined by the <see cref="M:System.IO.Path.GetInvalidPathChars" /> method.</exception>
-        <exception cref="T:System.ArgumentNullException">Either<paramref name=" path" />,<paramref name=" contents" />, or <paramref name="encoding" /> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentNullException">Either <paramref name="path" />, <paramref name="contents" />, or <paramref name="encoding" /> is <see langword="null" />.</exception>
         <exception cref="T:System.IO.DirectoryNotFoundException">
           <paramref name="path" /> is invalid (for example, it is on an unmapped drive).</exception>
         <exception cref="T:System.IO.IOException">An I/O error occurred while opening the file.</exception>

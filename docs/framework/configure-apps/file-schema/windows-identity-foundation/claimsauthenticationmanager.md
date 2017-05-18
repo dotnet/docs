@@ -25,13 +25,13 @@ Registers a claims authentication manager for the incoming claims.
 ## Syntax  
   
 ```  
-\<system.identityModel>  
+<system.identityModel>  
   <identityConfiguration>  
-    \<claimsAuthenticationManager type=xs:string>  
+    <claimsAuthenticationManager type=xs:string>  
       <optionalConfigurationElements />  
     </claimsAuthenticationManager>  
   </identityConfiguration>  
-\</system.identityModel>  
+</system.identityModel>  
 ```  
   
 ## Attributes and Elements  
@@ -60,9 +60,9 @@ Registers a claims authentication manager for the incoming claims.
 ## Example  
   
 ```  
-\<system.identityModel>  
-    \<identityConfiguration name="MyIdentity">  
+<system.identityModel>  
+    <identityConfiguration name="MyIdentity">  
       <claimsAuthenticationManager type="MyNamespace.CustomClaimsAuthenticationManager, MyAssembly"/>          
     </identityConfiguration>  
-\</microsoft.identityModel>  
+</microsoft.identityModel>  
 ```

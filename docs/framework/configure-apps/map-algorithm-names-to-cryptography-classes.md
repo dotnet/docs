@@ -49,7 +49,7 @@ There are four ways a developer can create a cryptography object using the [!INC
   
 ```  
 <configuration>  
-   \<!-- Other configuration settings. -->  
+   <!-- Other configuration settings. -->  
    <mscorlib>  
       <cryptographySettings>  
          <cryptoNameMapping>  

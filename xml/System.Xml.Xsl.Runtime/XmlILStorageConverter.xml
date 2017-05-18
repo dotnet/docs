@@ -202,7 +202,7 @@
         <Parameter Name="runtime" Type="System.Xml.Xsl.Runtime.XmlQueryRuntime" />
       </Parameters>
       <Docs>
-        <param name="value">A value of type <see langword="Int32 " />to convert.</param>
+        <param name="value">A value of type <see langword="Int32" /> to convert.</param>
         <param name="index">A value of type <see langword="Int32" /> that provides the index of the item to convert.</param>
         <param name="runtime">An instance of the <see cref="T:System.Xml.Xsl.Runtime.XmlQueryRuntime" /> class.</param>
         <summary>Converts an <see langword="Int32" /> value to an <see cref="T:System.Xml.Schema.XmlAtomicValue" />.</summary>

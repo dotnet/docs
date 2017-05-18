@@ -35,8 +35,8 @@ Specifies trace listeners that collect, store, and route messages and the level 
 ## Syntax  
   
 ```  
-\<system.diagnostics>   
-\</system.diagnostics>  
+<system.diagnostics>   
+</system.diagnostics>  
 ```  
   
 ## Attributes and Elements  
@@ -70,7 +70,7 @@ Specifies trace listeners that collect, store, and route messages and the level 
   
 ```  
 <configuration>  
-   \<system.diagnostics>  
+   <system.diagnostics>  
       <switches>  
          <add name="General" value="4" />  
       </switches>  
@@ -79,7 +79,7 @@ Specifies trace listeners that collect, store, and route messages and the level 
             <add name="myListener" type="System.Diagnostics.TextWriterTraceListener, System, Version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" initializeData="MyListener.log" traceOutputOptions="ProcessId, LogicalOperationStack, Timestamp, ThreadId, Callstack, DateTime" />  
          </listeners>  
       </trace>  
-   \</system.diagnostics>  
+   </system.diagnostics>  
 </configuration>  
 ```  
   

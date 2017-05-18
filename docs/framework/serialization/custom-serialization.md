@@ -89,7 +89,7 @@ public virtual void GetObjectData(SerializationInfo info, StreamingContext conte
 ```  
   
 ```vb  
-\<Serializable()>  _  
+<Serializable()>  _  
 Public Class MyObject  
     Implements ISerializable  
     Public n1 As Integer  
@@ -106,7 +106,7 @@ Public Class MyObject
         str = info.GetString("k")  
     End Sub 'New  
   
-    \<SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter := True)>  _  
+    <SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter := True)>  _  
     Public Overridable Sub GetObjectData(ByVal info As _  
     SerializationInfo, ByVal context As StreamingContext)   
         info.AddValue("i", n1)  
@@ -159,7 +159,7 @@ SerializationFormatter = true)]
 ```  
   
 ```vb  
-\<Serializable()>  _  
+<Serializable()>  _  
 Public Class ObjectTwo  
     Inherits MyObject  
     Public num As Integer  
@@ -174,7 +174,7 @@ Public Class ObjectTwo
         num = si.GetInt32("num")      
     End Sub   
   
-    \<SecurityPermissionAttribute(SecurityAction.Demand, _  
+    <SecurityPermissionAttribute(SecurityAction.Demand, _  
     SerializationFormatter := True)>  _  
     Public Overrides Sub GetObjectData(ByVal si As _  
     SerializationInfo, ByVal context As StreamingContext)   

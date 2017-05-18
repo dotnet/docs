@@ -55,7 +55,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Describes how to declare a class and its fields, properties, methods, and events.  
   
  [Writing Queries in Visual Basic](../visual-basic/programming-guide/concepts/linq/walkthrough-writing-queries.md)  
- Demonstrates how you can use Visual Basic language features to write [!INCLUDE[vbteclinqext](../csharp/getting-started/includes/vbteclinqext_md.md)] query expressions.  
+ Demonstrates how you can use Visual Basic language features to write [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] query expressions.  
   
  [Implementing IEnumerable(Of T) in Visual Basic](../visual-basic/programming-guide/language-features/control-flow/walkthrough-implementing-ienumerable-of-t.md)  
  Demonstrates how to create a class that implements the `IEnumerable(Of String)` interface and a class that implements the `IEnumerator(Of String)` interface to read a text file one line at a time.  
@@ -97,7 +97,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Demonstrates how to use [!INCLUDE[vbprvb](../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] functions to determine information about a file, search for a string in a file, and write to a file.  
   
  [Manipulating Files Using .NET Framework Methods](../visual-basic/developing-apps/programming/drives-directories-files/walkthrough-manipulating-files-by-using-net-framework-methods.md)  
- Demonstrates how to use [!INCLUDE[dnprdnshort](../csharp/getting-started/includes/dnprdnshort_md.md)] methods to determine information about a file, search for a string in a file, and write to a file.  
+ Demonstrates how to use [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods to determine information about a file, search for a string in a file, and write to a file.  
   
  [Persisting an Object in Visual Basic](http://msdn.microsoft.com/library/cb0a0917-08d5-4578-ad2b-3764ccf6167f)  
  Demonstrates how to create a simple object and persist its data to a file.  

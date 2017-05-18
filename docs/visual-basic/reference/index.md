@@ -45,7 +45,7 @@ This section provides links to reference information about various aspects of [!
  Provides links to information about the command-line compiler, which provides an alternative to compiling programs from the Visual Studio IDE.  
   
  [.NET Framework Reference Information](../../visual-basic/reference/net-framework-reference-information.md)  
- Provides links to information on working with the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)] class library.  
+ Provides links to information on working with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  
   
  [Visual Basic Language Specification](../../visual-basic/reference/language-specification.md)  
  Provides links to the complete [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language specification, which contains detailed information on all aspects of the language.  

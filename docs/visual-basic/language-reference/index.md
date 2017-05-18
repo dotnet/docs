@@ -86,7 +86,7 @@ This section provides reference information for various aspects of the [!INCLUDE
  Documents the properties available in [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
   
  [Queries](../../visual-basic/language-reference/queries/queries.md)  
- Provides reference information about using [!INCLUDE[vbteclinqext](../../csharp/getting-started/includes/vbteclinqext_md.md)] expressions in your code.  
+ Provides reference information about using [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.  
   
  [Statements](../../visual-basic/language-reference/statements/index.md)  
  Documents the declaration and executable statements available in [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  

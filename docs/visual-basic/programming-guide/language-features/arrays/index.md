@@ -279,7 +279,7 @@ Dim prices(3, 4, 5) As Long
  For more information about collections, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
   
 ### Example  
- The following example uses the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] generic class <xref:System.Collections.Generic.List%601?displayProperty=fullName> to create a list collection of `Customer` objects.  
+ The following example uses the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] generic class <xref:System.Collections.Generic.List%601?displayProperty=fullName> to create a list collection of `Customer` objects.  
   
  [!code-vb[VbVbalrArrays#1](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_22.vb)]  
   

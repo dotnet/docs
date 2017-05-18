@@ -68,7 +68,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
   
 -   A field, property, event, or method that has a return type or parameter type from Assembly B is invoked.  
   
- Like the [/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) compiler option, the `/link` compiler option uses the Csc.rsp response file, which references frequently used [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] assemblies. Use the [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) compiler option if you do not want the compiler to use the Csc.rsp file.  
+ Like the [/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) compiler option, the `/link` compiler option uses the Csc.rsp response file, which references frequently used [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies. Use the [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) compiler option if you do not want the compiler to use the Csc.rsp file.  
   
  The short form of `/link` is `/l`.  
   

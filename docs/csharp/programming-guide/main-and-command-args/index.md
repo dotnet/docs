@@ -69,7 +69,7 @@ The `Main` method is the entry point of a C# console application or windows appl
 -   [Main() Return Values](../../../csharp/programming-guide/main-and-command-args/main-return-values.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [Command-line Building With csc.exe](../../../csharp/language-reference/compiler-options/command-line-building-with-csc-exe.md)   

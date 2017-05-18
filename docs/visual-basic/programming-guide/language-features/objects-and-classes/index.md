@@ -69,7 +69,7 @@ You must create an object before you can access its members.
    ```
 
 > [!NOTE]
->  Whenever possible, you should declare the variable to be of the class type you intend to assign to it. This is called *early binding*. If you don't know the class type at compile time, you can invoke *late binding* by declaring the variable to be of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). However, late binding can make performance slower and limit access to the run-time object's members. For more information, see [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md).
+> Whenever possible, you should declare the variable to be of the class type you intend to assign to it. This is called *early binding*. If you don't know the class type at compile time, you can invoke *late binding* by declaring the variable to be of the [Object Data Type](../../../../visual-basic/language-reference/data-types/object-data-type.md). However, late binding can make performance slower and limit access to the run-time object's members. For more information, see [Object Variable Declaration](../../../../visual-basic/programming-guide/language-features/variables/object-variable-declaration.md).
 
 ### Multiple instances
 Objects newly created from a class are often identical to each other. Once they exist as individual objects, however, their variables and properties can be changed independently of the other instances. For example, if you add three check boxes to a form, each check box object is an instance of the <xref:System.Windows.Forms.CheckBox> class. The individual <xref:System.Windows.Forms.CheckBox> objects share a common set of characteristics and capabilities (properties, variables, procedures, and events) defined by the class. However, each has its own name, can be separately enabled and disabled, and can be placed in a different location on the form.
@@ -96,7 +96,7 @@ warningLabel.ForeColor = System.Drawing.Color.Red
 ```
 
 Note that a field is also called a *member variable*.
-  
+
 Use property procedures when:
 
 - You need to control when and how a value is set or retrieved.
@@ -109,7 +109,7 @@ Use property procedures when:
 
 - A set of steps must be performed before the property can be set or retrieved.
 
-Use fields when:  
+Use fields when:
 
 - The value is of a self-validating type. For example, an error or automatic data conversion occurs if a value other than `True` or `False` is assigned to a `Boolean` variable.
 
@@ -143,15 +143,15 @@ When you create an object from a class, the result is an instance of that class.
 
 Members declared with the `Shared` keyword are *shared members*, which belong to the class as a whole and not to any particular instance. A shared member exists only once, no matter how many instances of its class you create, or even if you create no instances. A shared member variable, for example, has only one value, which is available to all code that can access the class.
 
-#### Accessing nonshared members  
+#### Accessing nonshared members
 
 ###### To access a nonshared member of an object
 
 1. Make sure the object has been created from its class and assigned to an object variable.
 
    ```vb
-   Dim secondForm As New System.Windows.Forms.Form  
-   ```  
+   Dim secondForm As New System.Windows.Forms.Form
+   ```
 
 2. In the statement that accesses the member, follow the object variable name with the *member-access operator* (`.`) and then the member name.
 
@@ -181,10 +181,10 @@ Classes and modules also use different scopes for their members. Members defined
 
 On the other hand, members declared within a module are publicly accessible by default, and can be accessed by any code that can access the module. This means that variables in a standard module are effectively global variables because they are visible from anywhere in your project, and they exist for the life of the program.
 
-## Reusing classes and objects  
+## Reusing classes and objects
 Objects let you declare variables and procedures once and then reuse them whenever needed. For example, if you want to add a spelling checker to an application you could define all the variables and support functions to provide spell-checking functionality. If you create your spelling checker as a class, you can then reuse it in other applications by adding a reference to the compiled assembly. Better yet, you may be able to save yourself some work by using a spelling checker class that someone else has already developed.
 
-The [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] provides many examples of components that are available for use. The following example uses the <xref:System.TimeZone> class in the <xref:System> namespace. <xref:System.TimeZone> provides members that allow you to retrieve information about the time zone of the current computer system.
+The [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] provides many examples of components that are available for use. The following example uses the <xref:System.TimeZone> class in the <xref:System> namespace. <xref:System.TimeZone> provides members that allow you to retrieve information about the time zone of the current computer system.
 
 ```vb
 Public Sub examineTimeZone()
@@ -220,8 +220,8 @@ In the following example, suppose you want to define a special kind of <xref:Sys
 
    Be sure an `End Class` statement follows the last line of code in your class. By default, the integrated development environment (IDE) automatically generates an `End Class` when you enter a `Class` statement.
 
-2. Follow the `Class` statement immediately with an [Inherits Statement](../../../../visual-basic/language-reference/statements/inherits-statement.md). Specify the class from which your new class derives.  
-  
+2. Follow the `Class` statement immediately with an [Inherits Statement](../../../../visual-basic/language-reference/statements/inherits-statement.md). Specify the class from which your new class derives.
+
    ```vb
    Inherits System.Windows.Forms.Button
    ```

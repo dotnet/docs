@@ -42,7 +42,7 @@ The following procedure creates a C# version of the traditional "Hello World!" p
   
  For more examples of introductory concepts, see [Getting Started with Visual C# and Visual Basic](https://docs.microsoft.com/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic).  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### To create and run a console application  
   

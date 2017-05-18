@@ -1,13 +1,16 @@
 using System;
 
-class Program
+namespace Hello
 {
-    static void Main(string[] args)
+    class Program
     {
-        var generator = new FibonacciGenerator();
-        foreach (var digit in generator.Generate(15))
+        static void Main(string[] args)
         {
-            Console.WriteLine(digit);
+            var generator = new FibonacciGenerator();
+            foreach (var digit in generator.Generate(15))
+            {
+                Console.WriteLine(digit);
+            }
         }
     }
 }

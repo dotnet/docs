@@ -250,7 +250,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the base name for any cookies written by the handler.</summary>
-        <value>The base name for the cookies. The default is “FedAuth”.</value>
+        <value>The base name for the cookies. The default is "FedAuth".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -315,7 +315,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the lifetime of cookies issued by the handler.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> that represents the cookie lifetime. The default is 0 days (“0.0:0:0”). The value must be a value between 0 (“0.0:0:0”) and 365 (“365.0:0:0”) days.</value>
+        <value>A <see cref="T:System.TimeSpan" /> that represents the cookie lifetime. The default is 0 days ("0.0:0:0"). The value must be a value between 0 ("0.0:0:0") and 365 ("365.0:0:0") days.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -580,7 +580,7 @@
         <param name="e">The statement to generate code for.</param>
         <summary>Generates code for the specified comment statement.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.ArgumentException">The <see cref="P:System.CodeDom.CodeCommentStatement.Comment" /> property of <paramref name="e " />is not set.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="P:System.CodeDom.CodeCommentStatement.Comment" /> property of <paramref name="e" /> is not set.</exception>
       </Docs>
     </Member>
     <Member MemberName="GenerateCommentStatements">

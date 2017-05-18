@@ -28,14 +28,14 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SessionSecurity
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <add type="System.IdentityModel.Tokens.SessionSecurityTokenHandler, System.IdentityModel">  
-        <sessionTokenRequirement lifetime=TimeSpan >  
-        </sessionTokenRequirement>  
-      </add>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <add type="System.IdentityModel.Tokens.SessionSecurityTokenHandler, System.IdentityModel">  
+        <sessionTokenRequirement lifetime=TimeSpan >  
+        </sessionTokenRequirement>  
+      </add>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

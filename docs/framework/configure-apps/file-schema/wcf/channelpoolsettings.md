@@ -32,7 +32,7 @@ Specifies the channel pool settings for a custom binding.
 <channelPoolSettings  
     idleTimeout"TimeSpan"  
         leaseTimeout"TimeSpan"  
-    maxOutboundConnectionsPerEndpopint=”Integer” />  
+    maxOutboundConnectionsPerEndpopint="Integer" />  
 ```  
   
 ## Attributes and Elements  

@@ -110,7 +110,7 @@ query {
 } |> Seq.iter (fun customer ->
                   printfn "ID: %s\nCompany: %s" customer.CustomerID customer.CompanyName
                   printfn "Contact: %s\nAddress: %s" customer.ContactName customer.Address
-                  printfn "         %s, %s %s" customer.City customer.Region customer.PostalCode
+                  printfn "         %s, %s %s" customer.City customer.Region customer.PostalCode
                   printfn "%s\n" customer.Phone)
 ```
 

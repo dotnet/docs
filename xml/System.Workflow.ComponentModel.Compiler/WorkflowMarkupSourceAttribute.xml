@@ -47,7 +47,7 @@
       </Parameters>
       <Docs>
         <param name="fileName">A string that contains the file name of the mark up file.</param>
-        <param name="md5Digest">A string representing the <see cref="P:System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.MD5Digest" />for the file.</param>
+        <param name="md5Digest">A string representing the <see cref="P:System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.MD5Digest" /> for the file.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute" /> class, initializing the values of <see cref="P:System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.FileName" /> and <see cref="P:System.Workflow.ComponentModel.Compiler.WorkflowMarkupSourceAttribute.MD5Digest" />.</summary>
         <remarks>To be added.</remarks>
       </Docs>

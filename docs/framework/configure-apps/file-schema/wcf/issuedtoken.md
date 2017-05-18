@@ -51,7 +51,7 @@ endpointBehaviors section
 |`issuedTokenRenewalThresholdPercentage`|Optional integer attribute that specifies the percentage of a valid time frame (supplied by the token issuer) that can pass before a token is renewed. Values are from 0 to 100. The default is 60, which specifies 60% of the time passes before a renewal is attempted.|  
 |`issuerChannelBehaviors`|Optional attribute that specifies the channel behaviors to use when communicating with the issuer.|  
 |`localIssuerChannelBehaviors`|Optional attribute that specifies the channel behaviors to use when communicating with the local issuer.|  
-|`maxIssuedTokenCachingTime`|Optional Timespan attribute that specifies the duration that issued tokens are cached when the token issuer (an STS) does not specify a time. The default is “10675199.02:48:05.4775807.”|  
+|`maxIssuedTokenCachingTime`|Optional Timespan attribute that specifies the duration that issued tokens are cached when the token issuer (an STS) does not specify a time. The default is "10675199.02:48:05.4775807."|  
   
 ### Child Elements  
   

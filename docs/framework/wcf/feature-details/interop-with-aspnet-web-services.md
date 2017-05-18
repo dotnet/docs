@@ -57,7 +57,7 @@ public class Service : IEcho
   
 ```  
 <httpModules>  
-    <remove name=”ServiceModel” />  
+    <remove name="ServiceModel" />  
 <httpModules/>  
   
 ```  

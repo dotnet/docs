@@ -13,7 +13,7 @@ ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 
 # .NET Core
 
-> Check out the ["Getting Started" tutorials](getting-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
+> Check out the ["Getting Started" tutorials](get-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 
 .NET Core is a general purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios. 
 

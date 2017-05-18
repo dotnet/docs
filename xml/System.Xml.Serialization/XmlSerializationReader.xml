@@ -1266,7 +1266,7 @@
         <param name="name">The name of an XML attribute.</param>
         <summary>Determines whether an XML attribute name indicates an XML namespace.</summary>
         <returns>
-          <see langword="true " />if the XML attribute name indicates an XML namespace; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the XML attribute name indicates an XML namespace; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2337,7 +2337,7 @@
         <param name="isNullable">
           <see langword="true" /> if <see langword="null" /> for the array, if present for the input array, can be returned; otherwise, a new, smaller array.</param>
         <summary>Ensures that a given array, or a copy, is no larger than a specified length.</summary>
-        <returns>The existing <see cref="T:System.Array" />, if it is already small enough; otherwise, a new, smaller array that contains the original array's elements up to the size of<paramref name=" length" />.</returns>
+        <returns>The existing <see cref="T:System.Array" />, if it is already small enough; otherwise, a new, smaller array that contains the original array's elements up to the size of <paramref name="length" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2597,7 +2597,7 @@
       <Docs>
         <param name="value">A string to translate into a <see cref="T:System.DateTime" /> class object.</param>
         <summary>Produces a <see cref="T:System.DateTime" /> object from an input string.</summary>
-        <returns>A <see cref="T:System.DateTime" />object.</returns>
+        <returns>A <see cref="T:System.DateTime" /> object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -37,7 +37,7 @@ Returns the size of the strong name signature. `StrongNameSignatureSize` is typi
 ## Syntax  
   
 ```  
-BOOLEAN StrongNameSignatureSize (   
+BOOLEAN StrongNameSignatureSize (   
     [in]  BYTE   *pbPublicKeyBlob,  
     [in]  ULONG  cbPublicKeyBlob,   
     [in]  DWORD  *pcbSize  

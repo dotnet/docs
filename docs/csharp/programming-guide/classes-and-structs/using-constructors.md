@@ -116,4 +116,4 @@ Console.WriteLine("{0}, {1}", a, b);
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)   
  [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)   
- [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)
+ [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)

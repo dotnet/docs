@@ -123,7 +123,7 @@
   
 <a name="Interop"></a>   
 ## Char values and interop  
- When a managed <xref:System.Char> type, which is represented as a Unicode UTF-8 encoded code unit, is passed to unmanaged code, the interop marshaler converts the character set to ANSI. You can apply the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute to platform invoke declarations and the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute to a COM interop declaration to control which character set a marshaled <xref:System.Char> type uses.  
+When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16 encoded code unit, is passed to unmanaged code, the interop marshaler converts the character set to ANSI by default. You can apply the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute to platform invoke declarations and the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute to a COM interop declaration to control which character set a marshaled <xref:System.Char> type uses.  
   
    
   

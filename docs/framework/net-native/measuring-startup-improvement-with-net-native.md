@@ -39,7 +39,7 @@ manager: "wpickett"
   
  There are a few things to notice here. First, a singleton is created in `AppEventSource.Log`. That instance will be used for all logging. Second, each event method has an <xref:System.Diagnostics.Tracing.EventAttribute>. This helps tooling associate the index of the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method with the method that was called on `AppEventSource`.  
   
- Note that these events are purely illustrative. Most app code will run after these events. You should understand which events in code correspond to user interactions, measure those, and improve those benchmarks. Also, the events themselves log only a single instance in time. It’s often useful to have paired start and stop events for every operation. When examining app startup, the start event is generally the “Process/Start” event that the operating system emits.  
+ Note that these events are purely illustrative. Most app code will run after these events. You should understand which events in code correspond to user interactions, measure those, and improve those benchmarks. Also, the events themselves log only a single instance in time. It’s often useful to have paired start and stop events for every operation. When examining app startup, the start event is generally the "Process/Start" event that the operating system emits.  
   
  For example, suppose you are creating an RSS reader. A few interesting locations to log an event are:  
   

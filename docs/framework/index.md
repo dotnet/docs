@@ -24,13 +24,11 @@ manager: "wpickett"
 # .NET Framework Guide
 
 > [!NOTE]
->  This .NET Framework content set includes information for .NET Framework versions 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, and 4.7. To download the .NET Framework, see [Installing the .NET Framework](../../docs/framework/install/guide-for-developers.md). For a list of new features and changes in the NET Framework 4.5, the [!INCLUDE[net_v46](../../includes/net-v46-md.md)], their point releases, and the .NET Framework 4.7, see [What's New in the .NET Framework](../../docs/framework/whats-new/index.md). For a list of supported platforms, see [.NET Framework System Requirements](../../docs/framework/get-started/system-requirements.md).  
+>  This .NET Framework content set includes information for .NET Framework versions 4.5, 4.5.1, 4.5.2, 4.6, 4.6.1, 4.6.2, and 4.7. To download the .NET Framework, see [Installing the .NET Framework](../../docs/framework/install/guide-for-developers.md). For a list of new features and changes in the NET Framework 4.5, the [!INCLUDE[net_v46](../../includes/net-v46-md.md)], their point releases, and the .NET Framework 4.7, see [What's New in the .NET Framework](../../docs/framework/whats-new/index.md). For a list of supported platforms, see [.NET Framework System Requirements](../../docs/framework/get-started/system-requirements.md). 
 
-The .NET Framework provides many services, including memory management, type and memory safety, security functionality, networking and application deployment. It provides easy-to-use data structures and APIs that abstract the lower-level Windows operating system. You can use a variety of programming languages with the .NET Framework, including C#, F# and Visual Basic.
+ The .NET Framework is a development platform for building apps for web, Windows, Windows Phone, Windows Server, and Microsoft Azure. It consists of the common language runtime (CLR) and the .NET Framework class library, which includes a broad range of functionality and support for many industry standards.
 
- The .NET Framework is a development platform for building apps for Windows, Windows Phone, Windows Server, and Microsoft Azure. It consists of the common language runtime (CLR) and the .NET Framework class library, , which includes a broad range of functionality and support for many industry standards.  
-
-The .NET Framework provides many services, including memory management, type and memory safety, security functionality, networking and application deployment. It provides easy-to-use data structures and APIs that abstract the lower-level Windows operating system. You can use a variety of programming languages with the .NET Framework, including C#, F# and Visual Basic.
+The .NET Framework provides many services, including memory management, type and memory safety, security, networking, and application deployment. It provides easy-to-use data structures and APIs that abstract the lower-level Windows operating system. You can use a variety of programming languages with the .NET Framework, including C#, F#, and Visual Basic.  
 
 For a general introduction to the .NET Framework for both users and developers, see [Getting Started](../../docs/framework/get-started/index.md). For an introduction to the architecture and key features of the .NET Framework, see the [overview](../../docs/framework/get-started/overview.md).  
 

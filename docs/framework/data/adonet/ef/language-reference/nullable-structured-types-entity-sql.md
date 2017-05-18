@@ -89,7 +89,7 @@ A `null` instance of a structured type is an instance that does not exist. This 
     {  
         if (reader.IsDBNull(i))  
         {  
-            Console.WriteLine(“[NULL]”);  
+            Console.WriteLine("[NULL]");  
         }  
         else  
         {  

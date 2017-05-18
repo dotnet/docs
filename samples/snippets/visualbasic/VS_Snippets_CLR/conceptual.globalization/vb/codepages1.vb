@@ -40,6 +40,6 @@ Module Example
 End Module
 ' The example displays the following output:
 '       ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩ
-'       €‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’“”•–—
+'       €‚ƒ„…†‡ˆ‰Š‹ŒŽ‘’""•–—
 ' </Snippet1>
 

@@ -108,7 +108,7 @@
       <Docs>
         <param name="patternInterface">One of the enumeration values.</param>
         <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.GroupItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" />.</summary>
-        <returns>If <paramref name="pattern" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" /> and the <see cref="T:System.Windows.Controls.GroupItem" />that is associated with this <see cref="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" /> contains an <see cref="T:System.Windows.Controls.Expander" />, this method returns a reference to the current instance of the <see cref="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" />.  Otherwise, this method calls the base implementation on <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" /> which returns <see langword="null" />.</returns>
+        <returns>If <paramref name="pattern" /> is <see cref="F:System.Windows.Automation.Peers.PatternInterface.ExpandCollapse" /> and the <see cref="T:System.Windows.Controls.GroupItem" /> that is associated with this <see cref="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" /> contains an <see cref="T:System.Windows.Controls.Expander" />, this method returns a reference to the current instance of the <see cref="T:System.Windows.Automation.Peers.GroupItemAutomationPeer" />.  Otherwise, this method calls the base implementation on <see cref="T:System.Windows.Automation.Peers.UIElementAutomationPeer" /> which returns <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

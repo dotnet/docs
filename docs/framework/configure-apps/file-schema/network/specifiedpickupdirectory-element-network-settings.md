@@ -40,7 +40,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 ```  
   
       <specifiedPickupDirectory  
-  pickupDirectoryLocation="directory"   
+  pickupDirectoryLocation="directory"   
 />  
 ```  
   

@@ -166,7 +166,7 @@
         </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="value" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.FormatException">Length of<paramref name=" value" /> is zero.</exception>
+        <exception cref="T:System.FormatException">Length of <paramref name="value" /> is zero.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -199,7 +199,7 @@
       </Parameters>
       <Docs>
         <param name="guid">A <see langword="byte" /> array that represents a <see cref="T:System.Guid" />.</param>
-        <param name="offset">Offset position within the<see langword=" byte" /> array that represents a <see cref="T:System.Guid" />.</param>
+        <param name="offset">Offset position within the <see langword="byte" /> array that represents a <see cref="T:System.Guid" />.</param>
         <summary>Creates a new instance of this class starting from an offset within a <see langword="byte" /> array that represents a <see cref="T:System.Guid" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -214,7 +214,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> less than zero or greater than the length of the array.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="guid " />and<paramref name=" offset" /> provide less than 16 valid bytes.</exception>
+          <paramref name="guid" /> and <paramref name="offset" /> provide less than 16 valid bytes.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -507,7 +507,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> less than zero or greater than the length of the array.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="guid " />and<paramref name=" offset" /> provide less than 16 valid bytes.</exception>
+          <paramref name="guid" /> and <paramref name="offset" /> provide less than 16 valid bytes.</exception>
       </Docs>
     </Member>
     <Member MemberName="ToString">
@@ -578,7 +578,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="buffer " />and<paramref name=" offset" /> provide less than 16 valid bytes.</exception>
+          <paramref name="buffer" /> and <paramref name="offset" /> provide less than 16 valid bytes.</exception>
       </Docs>
     </Member>
     <Member MemberName="TryGetGuid">
@@ -632,7 +632,7 @@
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="offset" /> less than zero or greater than the length of the array.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="buffer " />and<paramref name=" offset" /> provide less than 16 valid bytes.</exception>
+          <paramref name="buffer" /> and <paramref name="offset" /> provide less than 16 valid bytes.</exception>
       </Docs>
     </Member>
   </Members>

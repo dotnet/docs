@@ -27,7 +27,7 @@ Provides a way for custom control authors or applications that integrate third-p
 ## XAML Attribute Usage  
   
 ```  
-<object property="{ThemeDictionary assemblyUri}" .../>  
+<object property="{ThemeDictionary assemblyUri}" .../>  
 ```  
   
 ## XAML Object Element Usage  
@@ -35,7 +35,7 @@ Provides a way for custom control authors or applications that integrate third-p
 ```  
 <object>  
   \<object.property>  
-    <ThemeDictionary AssemblyName="assemblyUri"/>  
+    <ThemeDictionary AssemblyName="assemblyUri"/>  
   \<object.property>  
 <object>  
 ```  
@@ -60,7 +60,7 @@ Provides a way for custom control authors or applications that integrate third-p
  `ThemeDictionary` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.Markup.StaticExtension.Member%2A> property as a property=value pair:  
   
 ```  
-<object property="{ThemeDictionary AssemblyName=assemblyUri}" .../>  
+<object property="{ThemeDictionary AssemblyName=assemblyUri}" .../>  
 ```  
   
  The verbose usage is often useful for extensions that have more than one settable property, or if some properties are optional. Because `ThemeDictionary` has only one settable property, which is required, this verbose usage is not typical.  

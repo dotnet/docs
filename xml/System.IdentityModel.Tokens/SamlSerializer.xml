@@ -60,8 +60,8 @@
         <param name="reader">An <see cref="T:System.Xml.XmlDictionaryReader" /> to read the additional information provided by the SAML authority.</param>
         <param name="tokenSerializer">To be added.</param>
         <param name="tokenResolver">To be added.</param>
-        <summary>Reads the additional information provided by the SAML authority within a<see langword=" &lt;saml:Advice&gt;" /> element of a SAML assertion using the specified XML reader.</summary>
-        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAdvice" /> that contains additional information provided by the SAML authority within a<see langword=" &lt;saml:Advice&gt;" /> element of a SAML assertion.</returns>
+        <summary>Reads the additional information provided by the SAML authority within a <see langword="&lt;saml:Advice&gt;" /> element of a SAML assertion using the specified XML reader.</summary>
+        <returns>A <see cref="T:System.IdentityModel.Tokens.SamlAdvice" /> that contains additional information provided by the SAML authority within a <see langword="&lt;saml:Advice&gt;" /> element of a SAML assertion.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -469,13 +469,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The name of the language passed to the “/preferreduilang” compiler option.</summary>
+        <summary>The name of the language passed to the "/preferreduilang" compiler option.</summary>
         <value>Returns the name of the language.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If set to null, “/preferreduilang” is omitted and the compiler uses its default setting.  
+ If set to null, "/preferreduilang" is omitted and the compiler uses its default setting.  
   
  ]]></format>
         </remarks>

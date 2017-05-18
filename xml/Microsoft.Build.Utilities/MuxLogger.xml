@@ -17,7 +17,7 @@
   <Docs>
     <summary>Represents a multiplexing logger. The purpose of this logger is to register and unregister multiple loggers during the build. Supports the Visual Studio IDE scenario in which loggers are registered and unregistered for each project system’s build request. One physical build can have multiple logical builds, each with its own set of loggers.  
   
- The <see langword="MuxLogger" />registers itself with the build manager as a regular central /l style logger. It receives messages from the build manager and routes them to the correct logger, based on the logical build that the message came from.</summary>
+ The <see langword="MuxLogger" /> registers itself with the build manager as a regular central /l style logger. It receives messages from the build manager and routes them to the correct logger, based on the logical build that the message came from.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

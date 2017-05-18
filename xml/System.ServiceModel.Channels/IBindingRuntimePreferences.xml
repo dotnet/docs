@@ -47,7 +47,7 @@
       <Docs>
         <summary>Gets a value that indicates whether incoming requests can be handled more efficiently synchronously or asynchronously.</summary>
         <value>
-          <see langword="true" /> if requests can be handled more efficiently synchronously; otherwise<see langword=" false" />. The default is <see langword="false" />, to handle requests asynchronously.</value>
+          <see langword="true" /> if requests can be handled more efficiently synchronously; otherwise <see langword="false" />. The default is <see langword="false" />, to handle requests asynchronously.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -411,23 +411,18 @@ yes
 ## Examples  
  The following example uses this property to print the version property of a declaration.  
   
- [C#]  
-  
-```  
+```csharp  
 XDeclaration xd = new XDeclaration("1.0", "utf-8", "yes");  
 Console.WriteLine(xd.Version);  
 Console.WriteLine(xd.Encoding);  
 Console.WriteLine(xd.Standalone);  
 ```  
   
- [vb]  
-  
-```  
+```vb  
 Dim xd As XDeclaration = New XDeclaration("1.0", "utf-8", "yes")  
 Console.WriteLine(xd.Version)  
 Console.WriteLine(xd.Encoding)  
 Console.WriteLine(xd.Standalone)  
-  
 ```  
   
  This example produces the following output:  

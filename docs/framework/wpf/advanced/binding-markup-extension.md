@@ -26,14 +26,14 @@ Defers a property value to be a data-bound value, creating an intermediate expre
 ## Binding Expression Usage  
   
 ```  
-<object property="{Binding}" .../>  
+<object property="{Binding}" .../>  
 -or-  
-<object property="{Binding  bindProp1=value1[, bindPropN=valueN]*}" ...  
+<object property="{Binding  bindProp1=value1[, bindPropN=valueN]*}" ...  
 />  
 -or-  
-<object property="{Binding path}" .../>  
+<object property="{Binding path}" .../>  
 -or  
-<object property="{Binding path[, bindPropN=valueN]*}" .../>  
+<object property="{Binding path[, bindPropN=valueN]*}" .../>  
 ```  
   
 ## Syntax Notes  

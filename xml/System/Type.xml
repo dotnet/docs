@@ -7015,7 +7015,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  [!code-csharp[System.Type.GetTypeFromCLSID#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.gettypefromclsid/cs/gettypefromclsid11.cs#11)]
  [!code-vb[System.Type.GetTypeFromCLSID#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.gettypefromclsid/vb/gettypefromclsid11.vb#11)]  
   
- Instead, the <see cref="M:System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)" /> should only be used to retrieve the GUID of an unmanaged COM object, and the resulting<see cref="T:System.Type" /> object that is passed to the <see cref="M:System.Activator.CreateInstance(System.Type)" />method must represent an unmanaged COM object.</para>
+ Instead, the <see cref="M:System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)" /> should only be used to retrieve the GUID of an unmanaged COM object, and the resulting <see cref="T:System.Type" /> object that is passed to the <see cref="M:System.Activator.CreateInstance(System.Type)" /> method must represent an unmanaged COM object.</para>
         </block>
       </Docs>
     </Member>
@@ -7095,7 +7095,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  [!code-csharp[System.Type.GetTypeFromCLSID#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.gettypefromclsid/cs/gettypefromclsid11.cs#11)]
  [!code-vb[System.Type.GetTypeFromCLSID#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.gettypefromclsid/vb/gettypefromclsid11.vb#11)]  
   
- Instead, the <see cref="M:System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)" /> should only be used to retrieve the GUID of an unmanaged COM object, and the resulting<see cref="T:System.Type" /> object that is passed to the <see cref="M:System.Activator.CreateInstance(System.Type)" />method must represent an unmanaged COM object.</para>
+ Instead, the <see cref="M:System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)" /> should only be used to retrieve the GUID of an unmanaged COM object, and the resulting <see cref="T:System.Type" /> object that is passed to the <see cref="M:System.Activator.CreateInstance(System.Type)" /> method must represent an unmanaged COM object.</para>
         </block>
       </Docs>
     </Member>
@@ -7166,7 +7166,7 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  [!code-csharp[System.Type.GetTypeFromCLSID#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.gettypefromclsid/cs/gettypefromclsid11.cs#11)]
  [!code-vb[System.Type.GetTypeFromCLSID#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.gettypefromclsid/vb/gettypefromclsid11.vb#11)]  
   
- Instead, the <see cref="M:System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)" /> should only be used to retrieve the GUID of an unmanaged COM object, and the resulting<see cref="T:System.Type" /> object that is passed to the <see cref="M:System.Activator.CreateInstance(System.Type)" />method must represent an unmanaged COM object.</para>
+ Instead, the <see cref="M:System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)" /> should only be used to retrieve the GUID of an unmanaged COM object, and the resulting <see cref="T:System.Type" /> object that is passed to the <see cref="M:System.Activator.CreateInstance(System.Type)" /> method must represent an unmanaged COM object.</para>
         </block>
       </Docs>
     </Member>
@@ -7241,12 +7241,12 @@ Type.GetType("System.Collections.Generic.Dictionary`2[System.String,[MyType,MyAs
  ]]></format>
         </remarks>
         <block subset="none" type="usage">
-          <para>This method is intended for use when working with COM objects, not with .NET Framework objects. All managed objects, including those that are visible to COM (that is, their <see cref="T:System.Runtime.InteropServices.ComVisibleAttribute" /> attribute is <see langword="true" />) have a GUID that is returned by the<see cref="P:System.Type.GUID" />property. Although the<see cref="M:System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)" />method returns a <see cref="T:System.Type" /> object that corresponds to the GUID for a particular managed object, you can't use that <see cref="T:System.Type" /> object to create a type instance by calling the  <see cref="M:System.Activator.CreateInstance(System.Type)" /> method, as the following example shows.  
+          <para>This method is intended for use when working with COM objects, not with .NET Framework objects. All managed objects, including those that are visible to COM (that is, their <see cref="T:System.Runtime.InteropServices.ComVisibleAttribute" /> attribute is <see langword="true" />) have a GUID that is returned by the <see cref="P:System.Type.GUID" /> property. Although the <see cref="M:System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)" /> method returns a <see cref="T:System.Type" /> object that corresponds to the GUID for a particular managed object, you can't use that <see cref="T:System.Type" /> object to create a type instance by calling the  <see cref="M:System.Activator.CreateInstance(System.Type)" /> method, as the following example shows.  
   
  [!code-csharp[System.Type.GetTypeFromCLSID#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.type.gettypefromclsid/cs/gettypefromclsid11.cs#11)]
  [!code-vb[System.Type.GetTypeFromCLSID#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.type.gettypefromclsid/vb/gettypefromclsid11.vb#11)]  
   
- Instead, the <see cref="M:System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)" /> should only be used to retrieve the GUID of an unmanaged COM object, and the resulting<see cref="T:System.Type" /> object that is passed to the <see cref="M:System.Activator.CreateInstance(System.Type)" />method must represent an unmanaged COM object.</para>
+ Instead, the <see cref="M:System.Type.GetTypeFromCLSID(System.Guid,System.String,System.Boolean)" /> should only be used to retrieve the GUID of an unmanaged COM object, and the resulting <see cref="T:System.Type" /> object that is passed to the <see cref="M:System.Activator.CreateInstance(System.Type)" /> method must represent an unmanaged COM object.</para>
         </block>
       </Docs>
     </Member>
@@ -9288,7 +9288,7 @@ GetType(Array).IsAssignableFrom(type)
       <Docs>
         <summary>Gets a value indicating whether the current type is a generic type.</summary>
         <value>
-          <see langword="true" /> if the current type is a generic type; otherwise,<see langword=" false" />.</value>
+          <see langword="true" /> if the current type is a generic type; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

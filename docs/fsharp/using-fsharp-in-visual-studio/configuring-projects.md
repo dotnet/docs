@@ -17,7 +17,7 @@ ms.assetid: 8b2ed206-34e4-4256-a6ce-0c2499561165
 > [!NOTE]
 This article is not up to date with the latest Visual Studio.  It will be updated.
 
-This topic includes information about how to use the **Project Designer** when you work with F# projects. Working with F# projects is not significantly different from working with Visual Basic or C# projects. You can often use the general Visual Studio project documentation as your primary reference when you use F#. This topic provides links to relevant information in the Visual Studio documentation for settings that are shared with the other Visual Studio languages, and also describes the settings specific to F#.
+This topic includes information about how to use the **Project Designer** when you work with F# projects. Working with F# projects is not significantly different from working with Visual Basic or C# projects. You can often use the general Visual Studio project documentation as your primary reference when you use F#. This topic provides links to relevant information in the Visual Studio documentation for settings that are shared with the other Visual Studio languages, and also describes the settings specific to F#.
 
 
 ## Project Designer

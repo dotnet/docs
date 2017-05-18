@@ -48,25 +48,25 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
 ## Application Pools Running in Different User Contexts Overwrite Assemblies from Other Accounts in the Temporary Folder  
  To ensure that application pools running in different user contexts cannot overwrite assemblies from other accounts in the temporary [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] files folder, use different identities and temporary folders for different applications. For example, if you have two virtual applications /Application1 and / Application2, you can create two Application pools, A and B, with two different identities. Application pool A can run under one user identity (user1) while application pool B can run under another user identity (user2), and configure /Application1 to use A and /Application2 to use B.  
   
- In Web.config, you can configure the temporary folder using \<system.web/compilation/@tempFolder>. For /Application1, it can be “c:\tempForUser1” and for application2 it can be "c:\tempForUser2". Grant corresponding write permission to these folders for the two identities.  
+ In Web.config, you can configure the temporary folder using \<system.web/compilation/@tempFolder>. For /Application1, it can be "c:\tempForUser1" and for application2 it can be "c:\tempForUser2". Grant corresponding write permission to these folders for the two identities.  
   
  Then user2 cannot change the code-generation folder for /application2 (under c:\tempForUser1).  
   
 ## Enabling asynchronous processing  
- By default messages sent to a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service hosted under IIS 6.0 and earlier are processed in a synchronous manner. ASP.NET calls into [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] on its own thread (the ASP.NET worker thread) and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses another thread to process the request. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] holds onto the ASP.NET worker thread until it completes its processing. This leads to synchronous processing of requests. Processing requests asynchronously enables greater scalability because it reduces the number of threads required to process a request –[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not hold on to the ASP.NET thread while processing the request. Use of asynchronous behavior is not recommended for machines running IIS 6.0 because there is no way to throttle incoming requests that open up the server to *Denial Of Service* (DOS) attacks. Starting with IIS 7.0, a concurrent request throttle has been introduced: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0]“MaxConcurrentRequestsPerCpu`. With this new throttle it is safe to use the asynchronous processing.  By default in IIS 7.0, the asynchronous handler and module are registered. If this has been turned off, you can manually enable asynchronous processing of requests in your application's Web.config file. The settings you use depend on your `aspNetCompatibilityEnabled` setting. If you have `aspNetCompatibilityEnabled` set to `false`, configure the `System.ServiceModel.Activation.ServiceHttpModule` as shown in the following configuration snippet.  
+ By default messages sent to a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service hosted under IIS 6.0 and earlier are processed in a synchronous manner. ASP.NET calls into [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] on its own thread (the ASP.NET worker thread) and [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses another thread to process the request. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] holds onto the ASP.NET worker thread until it completes its processing. This leads to synchronous processing of requests. Processing requests asynchronously enables greater scalability because it reduces the number of threads required to process a request –[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not hold on to the ASP.NET thread while processing the request. Use of asynchronous behavior is not recommended for machines running IIS 6.0 because there is no way to throttle incoming requests that open up the server to *Denial Of Service* (DOS) attacks. Starting with IIS 7.0, a concurrent request throttle has been introduced: `[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ASP.NET\2.0.50727.0]"MaxConcurrentRequestsPerCpu`. With this new throttle it is safe to use the asynchronous processing.  By default in IIS 7.0, the asynchronous handler and module are registered. If this has been turned off, you can manually enable asynchronous processing of requests in your application's Web.config file. The settings you use depend on your `aspNetCompatibilityEnabled` setting. If you have `aspNetCompatibilityEnabled` set to `false`, configure the `System.ServiceModel.Activation.ServiceHttpModule` as shown in the following configuration snippet.  
   
 ```  
 <system.serviceModel>  
-    <serviceHostingEnvironment aspNetCompatibilityEnabled="false" />      
-  </system.serviceModel>  
-  <system.webServer>  
-    <modules>  
-      <remove name="ServiceModel"/>  
-      <add name="ServiceModel"   
-           preCondition="integratedMode,runtimeVersionv2.0"   
-           type="System.ServiceModel.Activation.ServiceHttpModule, System.ServiceModel,Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
-    </modules>  
-    </system.webServer>  
+    <serviceHostingEnvironment aspNetCompatibilityEnabled="false" />      
+  </system.serviceModel>  
+  <system.webServer>  
+    <modules>  
+      <remove name="ServiceModel"/>  
+      <add name="ServiceModel"   
+           preCondition="integratedMode,runtimeVersionv2.0"   
+           type="System.ServiceModel.Activation.ServiceHttpModule, System.ServiceModel,Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
+    </modules>  
+    </system.webServer>  
   
 ```  
   
@@ -74,18 +74,18 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
   
 ```  
 <system.serviceModel>  
-    <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />      
-  </system.serviceModel>  
-  <system.webServer>  
-    <handlers>  
-          <clear/>  
-          <add name="TestAsyncHttpHandler"   
-               path="*.svc"   
-               verb="*"   
-               type="System.ServiceModel.Activation.ServiceHttpHandlerFactory, System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"           
-               />  
-    </handlers>      
-  </system.webServer>  
+    <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />      
+  </system.serviceModel>  
+  <system.webServer>  
+    <handlers>  
+          <clear/>  
+          <add name="TestAsyncHttpHandler"   
+               path="*.svc"   
+               verb="*"   
+               type="System.ServiceModel.Activation.ServiceHttpHandlerFactory, System.ServiceModel, Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"           
+               />  
+    </handlers>      
+  </system.webServer>  
   
 ```  
   

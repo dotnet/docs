@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Interoperability with POX Applications
-“Plain Old XML” (POX) applications communicate by exchanging raw HTTP messages that contain only XML application data that is not enclosed within a SOAP envelope. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can provide both services and clients that use POX messages. On the service, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can be used to implement services that expose endpoints to clients such as Web browsers and scripting languages that send and receive POX messages. On the client, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] programming model can be used to implement clients that communicate with POX-based services.  
+"Plain Old XML" (POX) applications communicate by exchanging raw HTTP messages that contain only XML application data that is not enclosed within a SOAP envelope. [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] can provide both services and clients that use POX messages. On the service, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can be used to implement services that expose endpoints to clients such as Web browsers and scripting languages that send and receive POX messages. On the client, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] programming model can be used to implement clients that communicate with POX-based services.  
   
 > [!NOTE]
 >  This document was originally written for the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 3.0.  [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] 3.5 has built-in support for working with POX applications. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] see [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md)  
@@ -67,10 +67,10 @@ private static Binding CreatePoxBinding()
   
 ```  
 Message request = Message.CreateMessage( MessageVersion.None, String.Empty );  
-request.Headers.To = “http://localhost:8100/customers”;  
+request.Headers.To = "http://localhost:8100/customers";  
   
 HttpRequestMessageProperty property = new HttpRequestMessageProperty();  
-property.Method = “GET”;  
+property.Method = "GET";  
 property.SuppressEntityBody = true;  
 request.Properties.Add( HttpRequestMessageProperty.Name, property );  
 ```  

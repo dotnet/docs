@@ -26,7 +26,7 @@ Represents a routing table that contains a list of filters to evaluate messages 
 ## Syntax  
   
 ```vb  
-   <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList=”String”                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
+   <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList="String"                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
 ```  
   
 ```csharp  

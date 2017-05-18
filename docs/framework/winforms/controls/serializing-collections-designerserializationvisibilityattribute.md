@@ -104,38 +104,28 @@ Your custom controls will sometimes expose a collection as a property. This walk
   
 2.  Open the **Form1** node. Beneath it is a file called **Form1.Designer.cs** or **Form1.Designer.vb**. This is the file into which the **Windows Forms Designer** emits code representing the design-time state of your form and its child controls. Open this file in the **Code Editor**.  
   
-3.  Open the region called **Windows Form Designer generated code** and find the section labeled **serializationDemoControl1**. Beneath this label is the code representing the serialized state of your control. The strings you typed in step 5 appear in an assignment to the `Strings` property. The following code example shows code similar to what you will see if you typed the strings "red", "orange", and "yellow".  
+3.  Open the region called **Windows Form Designer generated code** and find the section labeled **serializationDemoControl1**. Beneath this label is the code representing the serialized state of your control. The strings you typed in step 5 appear in an assignment to the `Strings` property. The following code examples in C# and Visual Basic, show code similar to what you will see if you typed the strings "red", "orange", and "yellow".  
   
-4.  [Visual Basic]  
-  
-    ```  
-    Me.serializationDemoControl1.Strings = New String() {"red", "orange", "yellow"}  
-    ```  
-  
-5.  [C#]  
-  
-    ```  
+    ```csharp  
     this.serializationDemoControl1.Strings = new string[] {  
             "red",  
             "orange",  
             "yellow"};  
     ```  
-  
-6.  In the **Code Editor**, change the value of the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> on the `Strings` property to <xref:System.ComponentModel.DesignerSerializationVisibility>.  
-  
-7.  [Visual Basic]  
-  
+    ```vb  
+    Me.serializationDemoControl1.Strings = New String() {"red", "orange", "yellow"}  
     ```  
+  
+4.  In the **Code Editor**, change the value of the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> on the `Strings` property to <xref:System.ComponentModel.DesignerSerializationVisibility>.  
+  
+    ```csharp  
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]  
+    ```  
+    ```vb  
     <DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)> _  
     ```  
   
-8.  [C#]  
-  
-    ```  
-    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]  
-    ```  
-  
-9. Rebuild the solution and repeat steps 4 through 8.  
+5. Rebuild the solution and repeat steps 3 and 4.  
   
 > [!NOTE]
 >  In this case, the **Windows Forms Designer** emits no assignment to the `Strings` property.  

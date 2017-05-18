@@ -30,9 +30,7 @@
 ## Examples  
  The following example shows how to use the Enumerator attribute to mark a method that is used to enumerate instances of a class. In this case, the Enumerate method uses the <xref:System.Diagnostics.Process> class to retrieve all of the processes running on the computer.  
   
- [C#]  
-  
-```  
+```csharp  
 [ManagementEnumerator]  
 public static IEnumerable Enumerate()  
 {  

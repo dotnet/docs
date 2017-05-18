@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IAssemblyEnum::Reset method [.NET Framework fusion]"
   - "Reset method, IAssemblyEnum interface [.NET Framework fusion]"
 ms.assetid: e08308d2-7397-4616-b7a6-f81b7686fed6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

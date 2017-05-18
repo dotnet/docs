@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetFileProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetFileProps method [.NET Framework metadata]"
 ms.assetid: c5e6216f-ae3d-4697-9688-66b69c1251ec
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

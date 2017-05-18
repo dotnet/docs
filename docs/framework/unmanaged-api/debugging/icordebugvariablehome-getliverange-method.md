@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetLiveRange method [.NET Framework debugging]"
   - "GetLiveRange method, ICorDebugVariableFrame interface [.NET Framework debugging]"
 ms.assetid: 87277e1a-1595-4729-9e25-d1c3ac18ce5f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"

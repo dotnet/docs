@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAppDomainEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugAppDomainEnum interface [.NET Framework debugging]"
 ms.assetid: b8d1def7-0ebc-4314-a3a2-fd36a75973e7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

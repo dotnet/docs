@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "StrongNameKeyGen method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameKeyGen method [.NET Framework hosting]"
 ms.assetid: ac5c1245-9acf-4271-9c08-3d9b7c670df3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

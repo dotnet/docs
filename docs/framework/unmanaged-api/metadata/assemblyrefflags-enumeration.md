@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "AssemblyRefFlags enumeration [.NET Framework metadata]"
 ms.assetid: decd4f46-f3b2-466f-9501-e74f2b86b846
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

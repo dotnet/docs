@@ -21,7 +21,6 @@ The following sections show how to use Microsoft Visual Studio to create the fol
 - Framework-dependent deployment with third-party dependencies
 - Self-contained deployment
 - Self-contained deployment with third-party dependencies
-- Small self-contained deployment
 
 For information on using Visual Studio to develop .NET Core applications, see [Prerequisites for .NET Core on Windows](../windows-prerequisites.md#prerequisites-with-visual-studio-2017).
 
@@ -180,95 +179,6 @@ The following is the complete *csproj* file for this project:
 When you deploy your application, any third-party dependencies used in your app are also contained with your application files. Third-party libraries aren't required on the system on which the app is running.
 
 Note that you can only deploy a self-contained deployment with a third-party library to platforms supported by that library. This is similar to having third-party dependencies with native dependencies in your framework-dependent deployment, where the native dependencies won't exist on the target platform unless they were previously installed there.
-
-## Small footprint self-contained deployment
-
-If adequate storage space on target systems is an issue, you can reduce the overall footprint of your app by excluding some system components. To do this, you explicitly define the necessary .NET Core components in your *csproj* file rather than include unnecessary components that are added to a normal SCD by default.
-
-To create a self-contained deployment with a smaller footprint, start by following the first two steps for creating a self-contained deployment. Once you've created the project and added the C# source code, right-click on the project in **Solution Explorer** and select **Edit <project-name>.csproj**. Then do the following:
-
-1. Replace the `<TargetFramework>` element with the following:
-
-  ```xml
-  <TargetFramework>netstandard1.6</TargetFramework>
-  ```
-
-Instead of using the entire `netcoreapp1.1` framework, which includes .NET Core CLR, the .NET Core Library, and a number of other system components, this indicates that our app uses only the .NET Standard Library.
-
-1. Define the packages used by the app.
-
-   Add the following `<ItemGroup>` section to add package references to the project:
-
-  ```xml
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="1.1.1" />
-    <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="1.1.0" />
-  </ItemGroup>
-  ```
-
-   This defines the system components used by the app. The system components packaged with the app include the .NET Standard Library, the .NET Core runtime, and the .NET Core host. This produces a self-contained deployment with a smaller footprint.
-
-1. Define the platforms that your app targets.
-
-   As you did in the [Deploying a simple self-contained deployment](#simpleSelf) example, create a `<RuntimeIdentifiers>` element within a `<PropertyGroup>` in your *csproj* file that defines the platforms your app targets and specifies the runtime identifier of each platform that you target. See [Runtime IDentifier catalog](../rid-catalog.md) for a list of runtime identifiers. For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
-
-    ```xml
-    <PropertyGroup>
-      <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-    </PropertyGroup>
-    ```
-
-   A complete sample *csproj* file appears later in this section.
-
-1. Create a Debug build of your app.
-
-   Select **Build** > **Build Solution**. You can also compile and run the Debug build of your application by selecting **Debug** > **Start Debugging**.
-
-1. Publish your app.
-
-   To publish your app from Visual Studio, do the following:
-
-      1. Change the solution configuration from **Debug** to **Release** on the toolbar to build a Release (rather than a Debug) version of your app.
-
-      1. Right-click on the project (not the solution) in **Solution Explorer**, and select **Publish**. 
-
-      1. In the **Publish** tab, select **Publish**. Visual Studio writes the files that comprise your application to the local file system. 
-
-      1. The **Publish** tab now shows a single profile, **FolderProfile**. The profile's configuration settings are shown in the **Summary** section of the tab. **Target Runtime** identifies which runtime has been published, and **Target Location** identifies where the files for the self-contained deployment were written.
-
-      1. Visual Studio by default writes all published files to a single directory. For convenience, it's best to create separate profiles for each target runtime and to place published files in a platform-specific directory. This involves creating a separate publishing profile for each target platform. So now rebuild the application for each platform by doing the following:
-
-         1. Select **Create New Profile** in the **Publish** dialog.
-
-         1. In the **Pick a publish target** dialog, change the **Choose a folder** location to *bin\Release\PublishOutput\win10-x64*. Select **OK**.
-
-         1. Select the new profile (**FolderProfile1**) in the list of profiles, and make sure that the **Target Runtime** is `win10-x64`. If it isn't, select **Settings**. In the **Profile Settings** dialog, change the **Target Runtime** to `win10-x64` and select **Save**. Otherwise, select **Cancel**.
-
-         1. Select **Publish** to publish your app for 64-bit Windows 10 platforms.
-
-         1. Follow the previous steps again to create a profile for the `osx.10.11-x64` platform. The **Target Location** is `bin\Release\PublishOutput\osx.10.11-x64`, and the **Target Runtime** is `osx.10.11-x64`. The name that Visual Studio assigns to this profile is **FolderProfile2**.
-
-      Note that each target location contains the complete set of files (both your app files and all .NET Core files) needed to launch your app.
-
-Along with your application's files, the publishing process emits a program database (.pdb) file that contains debugging information about your app. The file is useful primarily for debugging exceptions. You can choose not to package it with your application's files. You should, however, save it in the event that you want to debug the Release build of your app.
-
-Deploy the published files any way you like. For example, you can package them in a Zip file, use a simple `copy` command, or deploy them with any installation package of your choice.
-
-The following is the complete *csproj* file for this project.
-
-```xml
-<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>netstandard1.6</TargetFramework>
-    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore.Runtime.CoreCLR" Version="1.1.1" />
-    <PackageReference Include="Microsoft.NETCore.DotNetHostPolicy" Version="1.1.0" />
-  </ItemGroup>
-</Project>
-```
 
 # See also
 [.NET Core Application Deployment](index.md)   

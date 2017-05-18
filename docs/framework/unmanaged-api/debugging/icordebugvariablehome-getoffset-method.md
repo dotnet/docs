@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetOffset method [.NET Framework debugging]"
   - "GetOffset method, ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: f025c2e5-3f6c-4be8-9ffe-c8b214617dfe
+topic_type: 
+  - "apiref"
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"

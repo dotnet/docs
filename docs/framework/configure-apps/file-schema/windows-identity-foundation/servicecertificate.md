@@ -2,6 +2,7 @@
 title: "&lt;serviceCertificate&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +26,10 @@ Configures the X.509 certificate that is used to encrypt and decrypt tokens.
   
 ```  
 <system.identityModel.services>  
-  <federationConfiguration>  
-    <serviceCertificate>  
-    </serviceCertificate>  
-  </federationConfiguration>  
+  <federationConfiguration>  
+    <serviceCertificate>  
+    </serviceCertificate>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   

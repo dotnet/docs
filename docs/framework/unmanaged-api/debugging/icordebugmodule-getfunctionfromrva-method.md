@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetFunctionFromRVA method [.NET Framework debugging]"
   - "ICorDebugModule::GetFunctionFromRVA method [.NET Framework debugging]"
 ms.assetid: f5a34517-2422-484f-be89-2ce0b4bce195
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

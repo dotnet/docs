@@ -39,7 +39,7 @@ When reporting errors in code, hooking up model-view-controller (MVC) links, fir
   
 ```csharp  
 if (x == null) throw new ArgumentNullException(nameof(x));  
-WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode”  
+WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode"  
   
 ```  
   
@@ -116,10 +116,10 @@ nameof(c.Method2) -> "Method2"
 nameof(z) -> "z" // inside of Method2 ok, inside Method1 is a compiler error  
 nameof(Stuff) = "Stuff"  
 nameof(T) -> "T" // works inside of method but not in attributes on the method  
-nameof(f) -> “f”  
+nameof(f) -> "f"  
 nameof(f<T>) -> syntax error  
 nameof(f<>) -> syntax error  
-nameof(Method2()) -> error “This expression does not have a name”  
+nameof(Method2()) -> error "This expression does not have a name"  
   
 ```  
   
@@ -145,7 +145,7 @@ NameOf(o.Equals) -> ' result "Equals".  Warning: "Access of static member of ins
  If you need to get the fully-qualified name, you can use the `typeof` expression along with `nameof`.  For example:
 ```csharp  
 class C {
-    void f(int i) {  
+    void f(int i) {  
         Log($"{typeof(C)}.{nameof(f)}", "method entry");  
     }
 }

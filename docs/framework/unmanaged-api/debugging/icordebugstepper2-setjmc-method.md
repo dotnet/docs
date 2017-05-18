@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugStepper2::SetJMC method [.NET Framework debugging]"
   - "SetJMC method [.NET Framework debugging]"
 ms.assetid: f5cdc135-6db4-4b32-9dd1-260ec58b774f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

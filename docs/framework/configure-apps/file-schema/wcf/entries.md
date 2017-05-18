@@ -27,7 +27,7 @@ A routing entry that contain mappings between the routing filters and the target
 ## Syntax  
   
 ```vb  
-   <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList=”String”                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
+   <routing>      <filterTables>        <filterTable name="String">          <entries>            <add backupList="String"                 endpointName="String"                  filterName="String"                  priority="Integer" />          </entries>        </table>      </routingTables></routing>  
 ```  
   
 ```csharp  

@@ -81,8 +81,8 @@ title: .NET Documentation
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/articles/welcome">What is .NET?</a></h3>
-                                                <p><a href="/dotnet/articles/standard/getting-started">Get Started</a></p>
+                                                <h3><a href="/dotnet/articles/standard/">.NET Platform Guide</a></h3>
+                                                <p><a href="/dotnet/articles/standard/get-started">Get Started</a></p>
                                                 <p><a href="/dotnet/articles/standard/tour">Tour of .NET</a></p>
                                                 <p><a href="/dotnet/articles/standard/components">.NET Architectural Concepts</a></p>
                                             </div>
@@ -101,7 +101,7 @@ title: .NET Documentation
                                             </div>
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/core">.NET Core Guide</a></h3>
-                                                <p><a href="/dotnet/articles/core/getting-started">Get Started</a></p>
+                                                <p><a href="/dotnet/articles/core/get-started">Get Started</a></p>
                                                 <p><a href="/dotnet/articles/core/tutorials">Tutorials</a></p>
                                                 <p><a href="/dotnet/articles/core/porting">Porting from .NET Framework</a></p>
                                                 <p><a href="/aspnet/core/getting-started">ASP.NET Core</a></p>
@@ -122,7 +122,7 @@ title: .NET Documentation
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/framework/">.NET Framework Guide</a></h3>
                                                 <p><a href="/dotnet/articles/framework/get-started/">Get Started</a></p>
-                                                <p><a href="/dotnet/articles/framework/development-guide">Tutorials</a></p>
+                                                <p><a href="/dotnet/articles/framework/development-guide">Development Guide</a></p>
                                                 <p><a href="/dotnet/articles/framework/develop-client-apps">Client Development</a></p>
                                                 <p><a href="/aspnet/#pivot=aspnet">ASP.NET</a></p>
                                             </div>
@@ -210,6 +210,7 @@ title: .NET Documentation
                             <li class="fullSpan">
                                 <div class="container footer">
                                     <p><a href="https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md">Contribute to .NET docs and samples</a></p>
+                                    <p><a href="https://docs.microsoft.com/dotnet/articles/project-json">Find Visual Studio 2015/project.json version of the documentation</a></p>
                                 </div>
                             </li>
                         </ul>

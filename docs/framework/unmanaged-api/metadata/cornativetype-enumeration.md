@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorNativeType enumeration [.NET Framework metadata]"
 ms.assetid: e47a72f1-9609-48ed-bb34-97170d7f6890
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

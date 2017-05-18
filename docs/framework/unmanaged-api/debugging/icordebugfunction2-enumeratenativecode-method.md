@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugFunction2::EnumerateNativeCode method [.NET Framework debugging]"
   - "EnumerateNativeCode method [.NET Framework debugging]"
 ms.assetid: d383f5cc-1144-4b6d-b57a-db34d9134ab2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IGCHost interface [.NET Framework hosting]"
 ms.assetid: 9ad70ffd-6963-4ab2-8c84-3d86c3fb8deb
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

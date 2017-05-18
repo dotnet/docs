@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedDocument interface [.NET Framework debugging]"
 ms.assetid: 5c26b366-6e81-467c-9dd0-02dd26fee0a3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

@@ -68,31 +68,7 @@ This topic outlines the basic steps required to create a [!INCLUDE[indigo1](../.
   
 10. Create a file named "Web.config" in the application directory and add the following configuration code into the file. At runtime, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] infrastructure uses the information to construct an endpoint that client applications can communicate with.  
   
-    ```xml  
-    <?xml version="1.0" encoding="utf-8" ?>  
-    <configuration>  
-      <system.serviceModel>  
-        <services>  
-          <!-- This section is optional with the default configuration  
-            model introduced in .NET Framework 4 -->  
-          <service name="Microsoft.ServiceModel.Samples.CalculatorService">  
-  
-            <!-- This endpoint is exposed at the base address provided by host:                                        http://localhost/servicemodelsamples/service.svc  -->  
-            <endpoint address=""  
-                      binding="wsHttpBinding"  
-                      contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-  
-            <!-- The mex endpoint is exposed at http://localhost/servicemodelsamples/service.svc/mex -->  
-            <endpoint address="mex"  
-                      binding="mexHttpBinding"  
-                      contract="IMetadataExchange" />  
-          </service>  
-        </services>  
-      </system.serviceModel>  
-  
-    </configuration>  
-  
-    ```  
+     [!code-xml[c_HowTo_HostInIIS#100](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/common/web.config#100)]   
   
      This example explicitly specifies endpoints in the configuration file. If you do not add any endpoints to the service, the runtime adds default endpoints for you. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] default endpoints, bindings, and behaviors see [Simplified Configuration](../../../../docs/framework/wcf/simplified-configuration.md) and [Simplified Configuration for WCF Services](../../../../docs/framework/wcf/samples/simplified-configuration-for-wcf-services.md).  
   
@@ -101,10 +77,9 @@ This topic outlines the basic steps required to create a [!INCLUDE[indigo1](../.
 ## Example  
  The following is a complete listing of the code for the IIS hosted calculator service.  
   
- [!code-csharp[C_HowTo_HostInIIS#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/cs/source.cs#1)]
- [!code-vb[C_HowTo_HostInIIS#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostiniis/vb/source.vb#1)]  
-  
- <!-- TODO: review snippet reference [!code[c_HowTo_HostInIIS#100](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_hostiniis/common/web.config#100)]  -->  
+ [!code-csharp[C_HowTo_HostInIIS#1](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/cs/source.cs#1)] 
+ [!code-vb[C_HowTo_HostInIIS#1](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_howto_hostiniis/vb/source.vb#1)] 
+ [!code-xml[c_HowTo_HostInIIS#100](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_hostiniis/common/web.config#100)]   
   
 ## See Also  
  [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)   

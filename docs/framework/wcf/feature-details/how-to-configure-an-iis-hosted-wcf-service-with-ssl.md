@@ -70,7 +70,7 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
   
 1.  In the WCF service’s web.config configure the HTTP binding to use transport security as shown in the following XML.  
   
-    ```  
+    ```xml  
     <bindings>  
           <basicHttpBinding>  
             <binding name="secureHttpBinding">  
@@ -79,13 +79,12 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
               </security>  
             </binding>  
           </basicHttpBinding>  
-        </bindings>  
-  
+    </bindings>  
     ```  
   
 2.  Specify your service and service endpoint as shown in the following XML.  
   
-    ```  
+    ```xml  
     <services>  
           <service name="MySecureWCFService.Service1">  
             <endpoint address=""  
@@ -97,14 +96,13 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
                       binding="mexHttpsBinding"  
                       contract="IMetadataExchange" />  
           </service>  
-        </services>  
-  
+    </services>  
     ```  
   
 ## Example  
  The following is a complete example of a web.config file for a WCF service using HTTP transport security  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <configuration>  
   
@@ -150,10 +148,8 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
   </system.webServer>  
   
 </configuration>  
-  
 ```  
   
-<!-- TODO: review snippet reference  [!CODE [Microsoft.Win32.RegistryKey#4](Microsoft.Win32.RegistryKey#4)]  -->  
   
 ## See Also  
  [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)   

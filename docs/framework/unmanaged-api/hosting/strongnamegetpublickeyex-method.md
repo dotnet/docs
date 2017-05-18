@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "StrongNameGetPublicKeyEx method, ICLRStrongName2 interface [.NET Framework hosting]"
   - "ICLRStrongName2::StrongNameGetPublicKeyEx method [.NET Framework hosting]"
 ms.assetid: 63d8260c-fb32-4f8f-a357-768afd570f68
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,7 +36,7 @@ Gets the public key from a public/private key pair, and specifies a hash algorit
 ## Syntax  
   
 ```  
-HRESULT StrongNameGetPublicKey (   
+HRESULT StrongNameGetPublicKey (   
     [in]  LPCWSTR   pwzKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  
     [in]  ULONG     cbKeyBlob,  

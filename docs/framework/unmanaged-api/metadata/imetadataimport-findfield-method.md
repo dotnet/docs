@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::FindField method [.NET Framework metadata]"
   - "FindField method [.NET Framework metadata]"
 ms.assetid: 38cd4e16-fbb2-471c-aa73-ac51a1931ad2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

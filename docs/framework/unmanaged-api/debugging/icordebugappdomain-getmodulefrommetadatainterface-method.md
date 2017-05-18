@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAppDomain::GetModuleFromMetaDatainterface method [.NET Framework debugging]"
   - "GetModuleFromMetaDatainterface method [.NET Framework debugging]"
 ms.assetid: f35225b3-5dda-4d5a-913d-b3373e9ab81e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

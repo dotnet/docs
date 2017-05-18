@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "WAIT_OPTION enumeration [.NET Framework hosting]"
 ms.assetid: 962fc293-8ded-4b3b-90ce-2c21a4f1b244
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

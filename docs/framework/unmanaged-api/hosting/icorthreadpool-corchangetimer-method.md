@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CorChangeTimer method [.NET Framework hosting]"
   - "ICorThreadpool::CorChangeTimer method [.NET Framework hosting]"
 ms.assetid: 82b03a59-5a87-43ed-9b75-e04b256e1a46
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

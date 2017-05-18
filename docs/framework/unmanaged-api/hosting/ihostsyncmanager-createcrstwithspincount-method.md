@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateCrstWithSpinCount method [.NET Framework hosting]"
   - "IHostSyncManager::CreateCrstWithSpinCount method [.NET Framework hosting]"
 ms.assetid: 7280fa8c-3639-4abf-91cb-bc343da742d1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

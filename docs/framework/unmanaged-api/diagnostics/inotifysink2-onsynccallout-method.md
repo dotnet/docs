@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "INotifySink2::OnSyncCallOut method [.NET Framework debugging]"
   - "OnSyncCallOut method [.NET Framework debugging]"
 ms.assetid: 97f15656-8677-4079-8553-a1d8603355d6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

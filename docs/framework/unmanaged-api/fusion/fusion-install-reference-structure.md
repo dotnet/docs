@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "FUSION_INSTALL_REFERENCE structure [.NET Framework fusion]"
 ms.assetid: ae181ec8-36bf-4ed1-9a02-ca27d417c80b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

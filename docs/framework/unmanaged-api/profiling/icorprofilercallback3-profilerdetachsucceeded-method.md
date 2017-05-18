@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ProfilerDetachSucceeded method [.NET Framework profiling]"
   - "ICorProfilerCallback3::ProfilerDetachSucceeded method [.NET Framework profiling]"
 ms.assetid: 05164966-16ce-4cc9-a530-43a640c00711
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

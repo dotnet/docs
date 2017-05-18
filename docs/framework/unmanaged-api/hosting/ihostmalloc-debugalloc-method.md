@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DebugAlloc method [.NET Framework hosting]"
   - "IHostMAlloc::DebugAlloc method [.NET Framework hosting]"
 ms.assetid: 0bfbc527-bea2-43ce-b041-69186f4440dd
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

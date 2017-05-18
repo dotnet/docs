@@ -37,7 +37,7 @@ This single-instance application could not connect to the original instance. Som
   
 -   The original instance stopped responding.  
   
--   The application does not have permissions to create kernel objects. For more information about kernel objects, see [Mutexes](http://msdn.microsoft.com/library/9dd06e25-12c0-4a9e-855a-452dc83803e2).  
+-   The application does not have permissions to create kernel objects. For more information about kernel objects, see [Mutexes](../../standard/threading/mutexes.md).  
   
      The base name for the kernel objects comes from concatenating the assembly's GUID, major version number, and minor version number. For example, the base name could be `3639f15d-9547-43da-8145-60da347829915.1`.  
   

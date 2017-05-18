@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRRuntimeHost::UnloadAppDomain method [.NET Framework hosting]"
   - "UnloadAppDomain method [.NET Framework hosting]"
 ms.assetid: 571912bc-3429-4ff8-8eb2-ea993ffbd901
+topic_type: 
+  - "apiref"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

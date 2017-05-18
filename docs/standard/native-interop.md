@@ -14,7 +14,7 @@ ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
 
 # Native Interoperability
 
-In this document, we will dive a little bit deeper into all three ways of doing “native interoperability” that are available on the .NET platform.
+In this document, we will dive a little bit deeper into all three ways of doing "native interoperability" that are available on the .NET platform.
 
 There are a few of reasons why you would want to call into native code:
 
@@ -25,7 +25,7 @@ There are a few of reasons why you would want to call into native code:
 Of course, the list above does not cover all of the potential situations and scenarios in which the developer would want/like/need to interface with native components. .NET class library, for instance, uses the native interoperability support to implement a fair number of its APIs, like console support and manipulation, file system access and others. However, it is important to note that there is an option, should one need it.
 
 > [!NOTE]
-> Most of the examples in this document will be presented for all three supported platforms for .NET Core (Windows, Linux and macOS). However, for some short and illustrative examples, just one sample is shown that uses Windows filenames and extensions (that is, “dll” for libraries). This does not mean that those features are not available on Linux or macOS, it was done merely for convenience sake.
+> Most of the examples in this document will be presented for all three supported platforms for .NET Core (Windows, Linux and macOS). However, for some short and illustrative examples, just one sample is shown that uses Windows filenames and extensions (that is, "dll" for libraries). This does not mean that those features are not available on Linux or macOS, it was done merely for convenience sake.
 
 ## Platform Invoke (P/Invoke)
 
@@ -125,7 +125,7 @@ namespace ConsoleApplication1 {
         // Import user32.dll (containing the function we need) and define
         // the method corresponding to the native function.
         [DllImport("user32.dll")]
-        static extern int EnumWindows(EnumWC hWnd, IntPtr lParam);
+        static extern int EnumWindows(EnumWC lpEnumFunc, IntPtr lParam);
 
         // Define the implementation of the delegate; here, we simply output the window handle.
         static bool OutputWindow(IntPtr hwnd, IntPtr lParam) {
@@ -259,13 +259,13 @@ namespace PInvokeSamples {
 
 ```
 
-Both of the above examples depend on parameters, and in both cases, the parameters are given as managed types. Runtime does the “right thing” and processes these into its equivalents on the other side. Since this process is really important to writing quality native interop code, let’s take a look at what happens when the runtime _marshals_ the types.
+Both of the above examples depend on parameters, and in both cases, the parameters are given as managed types. Runtime does the "right thing" and processes these into its equivalents on the other side. Since this process is really important to writing quality native interop code, let’s take a look at what happens when the runtime _marshals_ the types.
 
 ## Type marshalling
 
 **Marshalling** is the process of transforming types when they need to cross the managed boundary into native and vice versa.
 
-The reason marshalling is needed is because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode (“wide”), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing based on the default behavior which you can see on [MSDN](https://msdn.microsoft.com/library/zah6xy75.aspx). However, for those situations where you need extra control, you can employ the `MarshalAs` attribute to specify what is the expected type on the unmanaged side. For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:
+The reason marshalling is needed is because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode ("wide"), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing based on the default behavior which you can see on [MSDN](https://msdn.microsoft.com/library/zah6xy75.aspx). However, for those situations where you need extra control, you can employ the `MarshalAs` attribute to specify what is the expected type on the unmanaged side. For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:
 
 ```csharp
 [DllImport("somenativelibrary.dll")]
@@ -301,7 +301,7 @@ public static void Main(string[] args) {
 
 ```
 
-The example above shows off a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 4\. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields is not important, only their order is important, as it needs to correspond to the unmanaged struct, shown below:
+The example above shows off a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 4. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields is not important, only their order is important, as it needs to correspond to the unmanaged struct, shown below:
 
 ```c
 typedef struct _SYSTEMTIME {

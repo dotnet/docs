@@ -2,6 +2,7 @@
 title: "High DPI Support In Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.tgt_pltfrm: ""
@@ -21,7 +22,7 @@ manager: "wpickett"
 
 Starting with the .NET Framework 4.7, Windows Forms includes enhancements for common high DPI and dynamic DPI scenarios. These include: 
 
-- Improvements in the scaling and layout of a number of Windows Forms controls, such as the <xref:System.Windows.Forms.MonthCalendar> control and the <xref:System.Windows.Forms.CheckListBox> control. 
+- Improvements in the scaling and layout of a number of Windows Forms controls, such as the <xref:System.Windows.Forms.MonthCalendar> control and the <xref:System.Windows.Forms.CheckedListBox> control. 
 
 - Single-pass scaling.  In the .NET Framework 4.6 and earlier versions, scaling was performed through multiple passes, which caused some controls to be scaled more than was necessary.
 
@@ -37,52 +38,52 @@ In addition, to configure high DPI support in your Windows Forms application, yo
 
 - Declare compatibility with Windows 10. 
 
-   To do this, add the following to your manifest file:
+  To do this, add the following to your manifest file:
 
-   ```xml
-   <compatibility xmlns="urn:schemas-microsoft.comn:compatibility.v1">
-	   <application>
-		   \<!-- Windows 10 compatibility -->
-		   <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
-	   </application>
-   </compatibility>
-   ```
+  ```xml
+  <compatibility xmlns="urn:schemas-microsoft.comn:compatibility.v1">
+    <application>
+      <!-- Windows 10 compatibility -->
+      <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />
+    </application>
+  </compatibility>
+  ```
+
 - Enable per-monitor DPI awareness in the app.config file.
 
-   Windows Forms introduces a new [\<System.Windows.Forms.ApplicationConfigurationSection>]
-(Windows%20Forms%20Configuration%20Section.md) to support new features and customizations added starting with the .NET Framework 4.7. To take advantage of the new features that support high DPI, add the following to your application configuration file.   
+  Windows Forms introduces a new [`<System.Windows.Forms.ApplicationConfigurationSection>`](../../../docs/framework/configure-apps/file-schema/winforms/index.md) element to support new features and customizations added starting with the .NET Framework 4.7. To take advantage of the new features that support high DPI, add the following to your application configuration file.   
 
-   ```xml
-   \<System.Windows.Forms.ApplicationConfigurationSection>
-      <add key="DpiAwareness" value="PerMonitorV2" />
-   \</System.Windows.Forms.ApplicationConfigurationSection>	   
-   ```
+  ```xml
+  <System.Windows.Forms.ApplicationConfigurationSection>
+    <add key="DpiAwareness" value="PerMonitorV2" />
+  </System.Windows.Forms.ApplicationConfigurationSection>	   
+  ```
    
-   > [!IMPORTANT]
-   > In previous versions of the .NET Framework, you used the manifest to add high DPI support. This approach is no longer recommended, since it overrides settings defined on the app.config file.
+  > [!IMPORTANT]
+  > In previous versions of the .NET Framework, you used the manifest to add high DPI support. This approach is no longer recommended, since it overrides settings defined on the app.config file.
    
 - Call the static <xref:System.Windows.Forms.Application.EnableVisualStyles%2A> method.
    
-   This should be the first method call in your application entry point. For example:
+  This should be the first method call in your application entry point. For example:
    
-   ```csharp
-   static void Main()
-   {
-	  Application.EnableVisualStyles();
-	  Application.SetCompatibleTextRenderingDefault(false);
-	  Application.Run(new Form2());   
-   }
-   ```
+  ```csharp
+  static void Main()
+  {
+      Application.EnableVisualStyles();
+      Application.SetCompatibleTextRenderingDefault(false);
+      Application.Run(new Form2());   
+  }
+  ```
 
 ## Opting out of individual high DPI features
 
 Setting the `DpiAwareness` value to `PerMonitorV2` enables all high DPI awareness features supported by .NET Framework versions starting with the .NET Framework 4.7. Typically, this is adequate for most Windows Forms applications. However, you may want to opt out of one or more individual features. The most important reason for doing this is that your existing application code already handles that feature.  For example, if your application handles auto scaling, you might want to disable the auto-resizing feature as follows:
 
 ```xml
-\<System.Windows.Forms.ApplicationConfigurationSection>
-   <add key="DpiAwareness" value="PerMonitorV2" />
-   <add key="EnableWindowsFormsHighDpiAutoResizing" value="false" /> 
-\</System.Windows.Forms.ApplicationConfigurationSection>	   
+<System.Windows.Forms.ApplicationConfigurationSection>
+  <add key="DpiAwareness" value="PerMonitorV2" />
+  <add key="EnableWindowsFormsHighDpiAutoResizing" value="false" /> 
+</System.Windows.Forms.ApplicationConfigurationSection>	   
 ```
 
 For a list of individual keys and their values, see [Windows Forms Add Configuration Element](../../../docs/framework/configure-apps/file-schema/winforms/windows-forms-add-configuration-element.md)
@@ -107,7 +108,7 @@ The .NET Framework 4.7 also adds a number of new helper methods and properties t
 
 ## Versioning considerations 
 
-In addition to running on .NET Framework 4.7 and Windows 10 Creators Update, your application may also run in an environment in which it is not compatible with high DPI improvements. In this case, you'll need to develop a fallback for your application. You can do this to perform [custom drawing](User-Drawn%20Controls.md) to handle scaling. 
+In addition to running on .NET Framework 4.7 and Windows 10 Creators Update, your application may also run in an environment in which it's not compatible with high DPI improvements. In this case, you'll need to develop a fallback for your application. You can do this to perform [custom drawing](../../../docs/framework/winforms/controls/user-drawn-controls.md) to handle scaling. 
 
 To do this, you also need to determine the operating system on which your app is running. You can do that with code like the following:
 

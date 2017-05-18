@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetContext method, ICorDebugStackWalk interface [.NET Framework debugging]"
   - "ICorDebugStackWalk::GetContext method [.NET Framework debugging]"
 ms.assetid: 081d1c95-152b-4797-8552-18453eb7b14b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

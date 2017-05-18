@@ -2,6 +2,7 @@
 title: "&lt;securityTokenHandlers&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +26,10 @@ Specifies a collection of security token handlers that are registered with the e
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   
@@ -39,7 +40,7 @@ Specifies a collection of security token handlers that are registered with the e
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|name|Specifies the name of a token handler collection. The only values recognized by the framework are “ActAs” and “OnBehalfOf”. If token handler collections are specified with either of these names, the collection will be used when processing ActAs or OnBehalfOf tokens respectively.|  
+|name|Specifies the name of a token handler collection. The only values recognized by the framework are "ActAs" and "OnBehalfOf". If token handler collections are specified with either of these names, the collection will be used when processing ActAs or OnBehalfOf tokens respectively.|  
   
 ### Child Elements  
   

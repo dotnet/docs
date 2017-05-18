@@ -73,9 +73,9 @@ Classes and structs are two of the basic constructs of the common type system in
   
 -   [Constructors](../../../csharp/programming-guide/classes-and-structs/constructors.md)  
   
--   [Destructors](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
-  
 -   [Events](../../../csharp/programming-guide/events/index.md)  
+  
+-   [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
   
 -   [Indexers](../../../csharp/programming-guide/indexers/index.md)  
   
@@ -87,7 +87,7 @@ Classes and structs are two of the basic constructs of the common type system in
  Some methods and properties are meant to be called or accessed from code outside your class or struct, known as *client code*. Other methods and properties might be only for use in the class or struct itself. It is important to limit the accessibility of your code so that only the intended client code can reach it. You specify how accessible your types and their members are to client code by using the access modifiers [public](../../../csharp/language-reference/keywords/public.md), [protected](../../../csharp/language-reference/keywords/protected.md), [internal](../../../csharp/language-reference/keywords/internal.md), `protected internal`, and [private](../../../csharp/language-reference/keywords/private.md). The default accessibility is `private`. For more information, see [Access Modifiers](../../../csharp/programming-guide/classes-and-structs/access-modifiers.md).  
   
 ### Inheritance  
- Classes (but not structs) support the concept of inheritance. A class that derives from another class (the *base class*) automatically contains all the public, protected, and internal members of the base class except its constructors and destructors. For more information, see [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md) and [Polymorphism](../../../csharp/programming-guide/classes-and-structs/polymorphism.md).  
+ Classes (but not structs) support the concept of inheritance. A class that derives from another class (the *base class*) automatically contains all the public, protected, and internal members of the base class except its constructors and finalizers. For more information, see [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md) and [Polymorphism](../../../csharp/programming-guide/classes-and-structs/polymorphism.md).  
   
  Classes may be declared as [abstract](../../../csharp/language-reference/keywords/abstract.md), which means that one or more of their methods have no implementation. Although abstract classes cannot be instantiated directly, they can serve as base classes for other classes that provide the missing implementation. Classes can also be declared as [sealed](../../../csharp/language-reference/keywords/sealed.md) to prevent other classes from inheriting from them. For more information, see [Abstract and Sealed Classes and Class Members](../../../csharp/programming-guide/classes-and-structs/abstract-and-sealed-classes-and-class-members.md).  
   

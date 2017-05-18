@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugModuleBreakpoint interface [.NET Framework debugging]"
 ms.assetid: 34667162-f314-475f-ae1b-ce9cb0fcbb83
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

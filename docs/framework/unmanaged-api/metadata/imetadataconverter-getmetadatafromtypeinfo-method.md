@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetMetaDataFromTypeInfo method [.NET Framework metadata]"
   - "IMetaDataConverter::GetMetaDataFromTypeInfo method [.NET Framework metadata]"
 ms.assetid: d44484bb-23a3-49c3-9e46-69d0d9ab4f0f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

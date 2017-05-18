@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataDispenser::OpenScope method [.NET Framework metadata]"
   - "OpenScope method, IMetaDataDispenser interface [.NET Framework metadata]"
 ms.assetid: 65063ad5-e0d9-4c01-8f8b-9a5950109fa6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

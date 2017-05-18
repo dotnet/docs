@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorSaveSize enumeration [.NET Framework metadata]"
 ms.assetid: eb95ce39-5688-43c1-a34d-578794b32faa
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

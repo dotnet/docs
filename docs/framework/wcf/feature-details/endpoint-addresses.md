@@ -74,9 +74,9 @@ Every endpoint has an address associated with it, which is used to locate and id
 <system.serviceModel>  
   <serviceHostingEnvironment>  
      <baseAddressPrefixFilters>  
-        <add prefix="net.tcp://payroll.myorg.com:8000"/>  
-        <add prefix="http://shipping.myorg.com:8000"/>  
-    </baseAddressPrefixFilters>  
+        <add prefix="net.tcp://payroll.myorg.com:8000"/>  
+        <add prefix="http://shipping.myorg.com:8000"/>  
+    </baseAddressPrefixFilters>  
   </serviceHostingEnvironment>  
 </system.serviceModel>  
 ```  
@@ -95,7 +95,7 @@ Every endpoint has an address associated with it, which is used to locate and id
 ```  
   
 <system.serviceModel>  
-  <serviceHostingEnvironment multipleSiteBindingsEnabled=”true” >  
+  <serviceHostingEnvironment multipleSiteBindingsEnabled="true" >  
   </serviceHostingEnvironment>  
 </system.serviceModel>  
 ```  

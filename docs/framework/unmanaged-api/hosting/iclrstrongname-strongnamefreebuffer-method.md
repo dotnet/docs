@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "StrongNameFreeBuffer method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameFreeBuffer method [.NET Framework hosting]"
 ms.assetid: 6148c508-bd1d-4a37-85c3-06ecb09cc857
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,7 +36,7 @@ Frees memory that was allocated with a previous call to a strong name method suc
 ## Syntax  
   
 ```  
-HRESULT StrongNameFreeBuffer (   
+HRESULT StrongNameFreeBuffer (   
    [in] BYTE   *pbMemory  
 );  
 ```  

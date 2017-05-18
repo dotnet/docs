@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetBaseAddress method [.NET Framework debugging]"
   - "ICorDebugModule::GetBaseAddress method [.NET Framework debugging]"
 ms.assetid: 26a82815-1982-4eb7-92d1-5c3d318d5be4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

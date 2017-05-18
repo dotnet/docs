@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameGetPublicKey function [.NET Framework strong naming]"
 ms.assetid: 5b58c87f-3f72-40df-9b9a-291076931cc3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -36,7 +38,7 @@ Gets the public key from a private/public key pair. The key pair can be supplied
 ## Syntax  
   
 ```  
-BOOLEAN StrongNameGetPublicKey (   
+BOOLEAN StrongNameGetPublicKey (   
     [in]  LPCWSTR   szKeyContainer,  
     [in]  BYTE      *pbKeyBlob,  
     [in]  ULONG     cbKeyBlob,  

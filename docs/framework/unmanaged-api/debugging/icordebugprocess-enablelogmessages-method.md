@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess::EnableLogMessages method [.NET Framework debugging]"
   - "EnableLogMessages method [.NET Framework debugging]"
 ms.assetid: 14a4e5a3-3eaf-4f53-9dd1-762726963a23
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

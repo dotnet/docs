@@ -25,7 +25,7 @@ Represents a configuration section for defining a set of backup services used in
 ## Syntax  
   
 ```vb  
-   <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
+   <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
 ```  
   
 ```csharp  

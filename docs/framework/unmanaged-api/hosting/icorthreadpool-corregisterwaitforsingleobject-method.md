@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorThreadpool::CorRegisterWaitForSingleObject method [.NET Framework hosting]"
   - "CorRegisterWaitForSingleObject method [.NET Framework hosting]"
 ms.assetid: cade1feb-71d2-43ed-85ca-7b2e9da12994
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

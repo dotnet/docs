@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ReleaseSemaphore method [.NET Framework hosting]"
   - "IHostSemaphore::ReleaseSemaphore method [.NET Framework hosting]"
 ms.assetid: a343d197-979a-4ac6-ab8c-cb8a05f3120e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

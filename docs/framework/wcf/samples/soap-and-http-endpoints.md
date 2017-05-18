@@ -16,7 +16,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # SOAP and HTTP Endpoints
-This sample demonstrates how to implement an RPC-based service and expose it in the SOAP format and the “Plain Old XML” (POX) format using the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Web Programming model. See the [Basic HTTP Service](../../../../docs/framework/wcf/samples/basic-http-service.md) sample for more details about the HTTP binding for the service. This sample focuses on the details that pertain to exposing the same service over SOAP and HTTP using different bindings.  
+This sample demonstrates how to implement an RPC-based service and expose it in the SOAP format and the "Plain Old XML" (POX) format using the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] Web Programming model. See the [Basic HTTP Service](../../../../docs/framework/wcf/samples/basic-http-service.md) sample for more details about the HTTP binding for the service. This sample focuses on the details that pertain to exposing the same service over SOAP and HTTP using different bindings.  
   
 ## Demonstrates  
  Exposing an RPC service over SOAP and HTTP using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)].  

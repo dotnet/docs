@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLROnEventManager::RegisterActionOnEvent method [.NET Framework hosting]"
   - "RegisterActionOnEvent method [.NET Framework hosting]"
 ms.assetid: b944cf49-918d-4c4e-993b-77d097a52550
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

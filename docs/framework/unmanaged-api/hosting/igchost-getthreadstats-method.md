@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IGCHost::GetThreadStats method [.NET Framework hosting]"
   - "GetThreadStats method [.NET Framework hosting]"
 ms.assetid: 826baa9b-9218-4736-a509-7ab193b125a0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

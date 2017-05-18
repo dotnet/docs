@@ -2,6 +2,7 @@
 title: "&lt;caches&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,10 +26,10 @@ Registers the caches used for session tokens and token replay detection.
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <caches>  
-    </caches>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <caches>  
+    </caches>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

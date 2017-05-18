@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess5::GetGCHeapInformation method [.NET Framework debugging]"
   - "GetGCHeapInformation method, ICorDebugProcess5 interface [.NET Framework debugging]"
 ms.assetid: b9538ceb-230a-4079-9cb2-903dbf5c1848
+topic_type: 
+  - "apiref"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

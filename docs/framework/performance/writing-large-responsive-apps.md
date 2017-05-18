@@ -41,7 +41,7 @@ This article provides tips for improving the performance of large .NET Framework
  You should set performance goals for key customer experiences or scenarios in your app and write tests to measure performance.  Investigate failing tests by applying the scientific method: use profiles to guide you, hypothesize what the issue might be, and test your hypothesis with an experiment or code change.  Establish baseline performance measurements over time with regular testing, so you can isolate changes that cause regressions in performance.  By approaching performance work in a rigorous way, you’ll avoid wasting time with code updates you don’t need.  
   
 ### Fact 3: Good tools make all the difference  
- Good tools let you drill quickly into the biggest performance issues (CPU, memory, or disk) and help you locate the code that causes those bottlenecks.  Microsoft ships a variety of performance tools such as [Visual Studio Profiler](http://msdn.microsoft.com/library/da2fbf8a-2d41-4654-a509-dd238532d25a), [Windows Phone Analysis Tool](http://msdn.microsoft.com/en-us/e67e3199-ea43-4d14-ab7e-f7f19266253f), and [PerfView](http://www.microsoft.com/download/details.aspx?id=28567).  
+ Good tools let you drill quickly into the biggest performance issues (CPU, memory, or disk) and help you locate the code that causes those bottlenecks.  Microsoft ships a variety of performance tools such as [Visual Studio Profiler](/visualstudio/profiling/beginners-guide-to-performance-profiling), [Windows Phone Analysis Tool](http://msdn.microsoft.com/en-us/e67e3199-ea43-4d14-ab7e-f7f19266253f), and [PerfView](http://www.microsoft.com/download/details.aspx?id=28567).  
   
  PerfView is a free and amazingly powerful tool that helps you focus on deep issues such as disk I/O, GC events, and memory.  You can capture performance-related [Event Tracing for Windows](../../../docs/framework/wcf/samples/etw-tracing.md) (ETW) events and view easily per app, per process, per stack, and per thread information.  PerfView shows you how much and what kind of memory your app allocates, and which functions or call stacks contribute how much to the memory allocations. For details, see the rich help topics, demos, and videos included with the tool (such as the [PerfView tutorials](http://channel9.msdn.com/Series/PerfView-Tutorial) on Channel 9).  
   
@@ -205,7 +205,7 @@ private bool TrimmedStringStartsWith(string text, int start, string prefix) {
   
 ```  
   
- The first version of `WriteFormattedDocComment()` allocated an array, several substrings, and a trimmed substring along with an empty `params` array.  It also checked for `“///”`.  The revised code uses only indexing and allocates nothing.  It finds the first character that is not white space, and then checks character by character to see if the string starts with `“///”`.  The new code uses `IndexOfFirstNonWhiteSpaceChar` instead of <xref:System.String.TrimStart%2A> to return the first index (after a specified start index) where a non-whitespace character occurs.  The fix is not complete, but you can see how to apply similar fixes for a complete solution.  By applying this approach throughout the code, you can remove all allocations in `WriteFormattedDocComment()`.  
+ The first version of `WriteFormattedDocComment()` allocated an array, several substrings, and a trimmed substring along with an empty `params` array.  It also checked for `"///"`.  The revised code uses only indexing and allocates nothing.  It finds the first character that is not white space, and then checks character by character to see if the string starts with `"///"`.  The new code uses `IndexOfFirstNonWhiteSpaceChar` instead of <xref:System.String.TrimStart%2A> to return the first index (after a specified start index) where a non-whitespace character occurs.  The fix is not complete, but you can see how to apply similar fixes for a complete solution.  By applying this approach throughout the code, you can remove all allocations in `WriteFormattedDocComment()`.  
   
  **Example 4: StringBuilder**  
   
@@ -483,7 +483,7 @@ class Compilation { /*...*/
   
 ## See Also  
  [Video of presentation of this topic](http://channel9.msdn.com/Events/TechEd/NorthAmerica/2013/DEV-B333)   
- [Beginners Guide to Performance Profiling](http://msdn.microsoft.com/library/da2fbf8a-2d41-4654-a509-dd238532d25a)   
+ [Beginners Guide to Performance Profiling](/visualstudio/profiling/beginners-guide-to-performance-profiling)   
  [Performance](../../../docs/framework/performance/index.md)   
  [.NET Performance Tips](http://msdn.microsoft.com/library/ms973839.aspx)   
  [Windows Phone Performance Analysis Tool](http://msdn.microsoft.com/magazine/hh781024.aspx)   

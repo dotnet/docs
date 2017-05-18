@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugType::GetClass method [.NET Framework debugging]"
   - "GetClass method, ICorDebugType interface [.NET Framework debugging]"
 ms.assetid: 2644f48b-db3c-429f-ae62-76f1c98a1af5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

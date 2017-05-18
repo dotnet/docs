@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetName method, ICorPublishAppDomain interface [.NET Framework debugging]"
   - "ICorPublishAppDomain::GetName method [.NET Framework debugging]"
 ms.assetid: 6ef8ac9b-9803-4b65-8b13-25f3e0b1bc6b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

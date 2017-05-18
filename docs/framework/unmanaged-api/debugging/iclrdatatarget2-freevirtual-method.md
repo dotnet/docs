@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRDataTarget::FreeVirtual method [.NET Framework debugging]"
   - "FreeVirtual method [.NET Framework debugging]"
 ms.assetid: 26fb69f8-1467-4711-bd24-cb117c63938f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EvalException method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::EvalException method [.NET Framework debugging]"
 ms.assetid: d6036345-18a3-45c1-a302-b1c6f2dced9b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

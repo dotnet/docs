@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::GetHostOverlappedSize method [.NET Framework hosting]"
   - "GetHostOverlappedSize method [.NET Framework hosting]"
 ms.assetid: 2902578b-d5e2-4f8d-a103-0c7b6dceda9e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

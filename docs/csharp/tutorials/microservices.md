@@ -459,7 +459,7 @@ docker rm hello-docker
 If you want to remove unused images from your machine, you use this command:
 
 ```console
-docker rmi hello-docker
+docker rmi weather-microservice
 ```
 
 ## Conclusion 

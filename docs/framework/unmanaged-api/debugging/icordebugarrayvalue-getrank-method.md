@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugArrayValue::GetRank method [.NET Framework debugging]"
   - "GetRank method, ICorDebugArrayValue interface [.NET Framework debugging]"
 ms.assetid: 5e83c82c-593d-4691-90b0-383d218b415e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

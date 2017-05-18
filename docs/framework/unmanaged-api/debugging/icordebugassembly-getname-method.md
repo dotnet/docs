@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAssembly::GetName method [.NET Framework debugging]"
   - "GetName method, ICorDebugAssembly interface [.NET Framework debugging]"
 ms.assetid: cdeda721-b214-4503-a291-c70b68b5f36b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

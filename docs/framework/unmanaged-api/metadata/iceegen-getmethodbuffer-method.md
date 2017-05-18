@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICeeGen::GetMethodBuffer method [.NET Framework metadata]"
   - "GetMethodBuffer method [.NET Framework metadata]"
 ms.assetid: c7c5b39a-d4ac-41f1-9d1e-44163f563a49
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

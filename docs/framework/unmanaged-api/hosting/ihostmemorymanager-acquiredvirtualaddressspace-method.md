@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostMemoryManager::AcquiredVirtualAddressSpace method [.NET Framework hosting]"
   - "AcquiredVirtualAddressSpace method [.NET Framework hosting]"
 ms.assetid: ef2f83c2-127e-4c38-8385-306c03cd2167
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

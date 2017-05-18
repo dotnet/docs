@@ -40,8 +40,8 @@ Adds an authentication module to the application.
   
 ```  
   
-      <add   
-   type = "client type", System, Version="version number", Culture="culture", PublicKeyToken="token"   
+      <add   
+   type = "client type", System, Version="version number", Culture="culture", PublicKeyToken="token"   
 />  
 ```  
   

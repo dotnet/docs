@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostAssemblyStore interface [.NET Framework hosting]"
 ms.assetid: cccb650f-abe0-41e2-9fd1-b383788eb1f6
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

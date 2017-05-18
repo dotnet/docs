@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostSecurityContext interface [.NET Framework hosting]"
 ms.assetid: 88e2eac0-8ccb-404f-abbc-287d55159842
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

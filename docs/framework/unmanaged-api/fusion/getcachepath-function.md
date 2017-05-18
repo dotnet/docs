@@ -24,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetCachePath function [.NET Framework fusion]"
 ms.assetid: d977ad29-6619-42e1-b0be-bc25ea950e80
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

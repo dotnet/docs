@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::GetUserString method [.NET Framework metadata]"
   - "GetUserString method, IMetaDataImport interface [.NET Framework metadata]"
 ms.assetid: 0fd3bb47-58b5-4083-b241-b9719df7a285
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

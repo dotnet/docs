@@ -2,6 +2,7 @@
 title: "&lt;chunkedCookieHandler&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -15,7 +16,7 @@ ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;chunkedCookieHandler&gt;
-Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is “Default” or “Chunked”.  
+Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This element may only be present if the `mode` attribute of the `<cookieHandler>` element is "Default" or "Chunked".  
   
  \<system.identityModel.services>  
 \<federationConfiguration>  
@@ -26,12 +27,12 @@ Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This e
   
 ```  
 <system.identityModel.services>  
-  <federationConfiguration>  
-    <cookieHandler mode="Chunked||Default" >  
-      <chunkedCookieHandler size=xs:int >  
-      </chunkedCookieHandler>  
-    </cookieHandler>  
-  </federationConfiguration>  
+  <federationConfiguration>  
+    <cookieHandler mode="Chunked||Default" >  
+      <chunkedCookieHandler size=xs:int >  
+      </chunkedCookieHandler>  
+    </cookieHandler>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   
@@ -54,7 +55,7 @@ Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This e
 |[\<cookieHandler>](../../../../../docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md)|Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref:System.IdentityModel.Services.SessionAuthenticationModule> (SAM) uses to read and write cookies.|  
   
 ## Remarks  
- When you specify a <xref:System.IdentityModel.Services.ChunkedCookieHandler> by setting the `mode` attribute of the `<cookieHandler>` element to “Default” or “Chunked”, you can specify the chunk size that the cookie handler uses to read and write cookies by including a `<chunkedCookieHandler>` child element and setting its `chunkSize` attribute. If the `<chunkedCookieHandler>` element is not present, the default chunk size of 2000 bytes is used. This element cannot be specified when the `mode` attribute is set to “Custom”.  
+ When you specify a <xref:System.IdentityModel.Services.ChunkedCookieHandler> by setting the `mode` attribute of the `<cookieHandler>` element to "Default" or "Chunked", you can specify the chunk size that the cookie handler uses to read and write cookies by including a `<chunkedCookieHandler>` child element and setting its `chunkSize` attribute. If the `<chunkedCookieHandler>` element is not present, the default chunk size of 2000 bytes is used. This element cannot be specified when the `mode` attribute is set to "Custom".  
   
  The `<chunkedCookieHandler>` element is represented by the <xref:System.IdentityModel.Services.ChunkedCookieHandlerElement> class.  
   

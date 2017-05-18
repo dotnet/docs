@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "SetAssemblyProps method"
 ms.assetid: a3d7cf29-1414-49e6-8aae-9b3283c4f5f0
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

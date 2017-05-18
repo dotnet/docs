@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "NewString method [.NET Framework debugging]"
   - "ICorDebugEval::NewString method [.NET Framework debugging]"
 ms.assetid: 29e7a14b-d50e-4852-bfda-011b76c0c9ee
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

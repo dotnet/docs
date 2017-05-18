@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "LoadAssembly method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::LoadAssembly method [.NET Framework debugging]"
 ms.assetid: 55cb673a-e240-43a6-a406-6912e7c0fe66
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -95,7 +95,7 @@ The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Service Configuration E
   
 -   Create using a Wizard: click the link **Create a New Service Endpoint…** on the Task Pane or Summary Page to launch the wizard. You can also do so in the **File** menu -> **Add New Item**.  
   
--   Create manually: Once you created a Service, you can right-click the **Endpoints** node and choose “**New Service Endpoint**”.  
+-   Create manually: Once you created a Service, you can right-click the **Endpoints** node and choose "**New Service Endpoint**".  
   
 #### Editing a Service Configuration  
   
@@ -172,7 +172,7 @@ The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Service Configuration E
   
 -   Click the **Standard Endpoint** node. In the **Task** pane, click **Delete Standard Endpoint Configuration**.  
   
- If the standard endpoint is in used, a warning message is displayed when you attempt to delete it: **The standard endpoint is in use. If you delete it now, please be sure to delete all of its references in other parts of the configuration (for example, in the service endpoint or client endpoint). Otherwise, the configuration will be invalid and cannot be opened next time. Are you sure you want to delete the standard endpoint?”**  
+ If the standard endpoint is in used, a warning message is displayed when you attempt to delete it: **The standard endpoint is in use. If you delete it now, please be sure to delete all of its references in other parts of the configuration (for example, in the service endpoint or client endpoint). Otherwise, the configuration will be invalid and cannot be opened next time. Are you sure you want to delete the standard endpoint?"**  
   
 ### Binding  
  Binding configurations are used to configure bindings on endpoints. Such configuration settings are stored in the **Binding** node. Endpoints reference binding configurations by name and multiple endpoints can reference a single binding configuration.  
@@ -267,7 +267,7 @@ The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Service Configuration E
   
 2.  Right-click the **Listeners** node and select **New Listener**.  
   
-3.  Type in the trace file name in the **InitData** field. You can click the “…” button to browse to a path.  
+3.  Type in the trace file name in the **InitData** field. You can click the "…" button to browse to a path.  
   
 4.  Clicking the **TypeName** line displays a "…" button. Click this button to open the **Trace Listener Type Browser**, which you can use to find pre-configured trace listeners that are already installed.  
   
@@ -287,7 +287,7 @@ The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] Service Configuration E
 ##### Creating a new Behavior Configuration  
  You can create a new behavior configuration in two ways.  
   
--   Right-click one of the behavior nodes and select “**New Behavior Configuration…**  
+-   Right-click one of the behavior nodes and select "**New Behavior Configuration…**  
   
 -   Select one of the behavior nodes and click the **New Behavior Configuration**… in the **Task Pane** on the lower-left of the window.  
   

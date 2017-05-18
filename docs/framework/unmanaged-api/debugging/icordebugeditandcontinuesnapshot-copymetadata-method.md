@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugEditAndContinueSnapshot::CopyMetaData method [.NET Framework debugging]"
   - "CopyMetaData method [.NET Framework debugging]"
 ms.assetid: bf116077-1f44-4f76-962c-76d0c202017d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

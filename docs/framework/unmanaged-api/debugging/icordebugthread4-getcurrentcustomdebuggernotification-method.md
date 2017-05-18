@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetCurrentCustomDebuggerNotification method [.NET Framework debugging]"
   - "ICorDebugThread4::GetCurrentCustomDebuggerNotification method [.NET Framework debugging]"
 ms.assetid: 57e0f2d2-5f0e-4e2d-99ec-3f26632eb693
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

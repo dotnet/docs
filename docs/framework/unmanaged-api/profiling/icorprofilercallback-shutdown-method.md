@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::Shutdown method [.NET Framework profiling]"
   - "Shutdown method [.NET Framework profiling]"
 ms.assetid: 1ea194f0-a331-4855-a2ce-37393b8e5f84
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

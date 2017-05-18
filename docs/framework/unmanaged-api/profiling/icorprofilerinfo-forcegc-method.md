@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::ForceGC method [.NET Framework profiling]"
   - "ForceGC method [.NET Framework profiling]"
 ms.assetid: 0da1ef80-d242-4636-87d0-43e0470b342a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

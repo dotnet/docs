@@ -16,7 +16,7 @@ manager: "erikre"
 # Exposing and Invoking ActivityActions
 This sample demonstrates how to develop a custom activity that has an <xref:System.Activities.ActivityAction>. It also demonstrates how to use this activity by providing an implementation of the <xref:System.Activities.ActivityAction>.  
   
- An <xref:System.Activities.ActivityAction> allows an activity author to expose “holes” with specific signatures where the activity user can plug in a custom behavior. For example, the <!--zz <xref:System.Activities.Statements.ForEach>--> `System.Activities.Statements.ForEach` activity, (which operates over a collection of items), has an <xref:System.Activities.ActivityAction> that allows the activity user to plug in behavior that operates on the current iteration item.  
+ An <xref:System.Activities.ActivityAction> allows an activity author to expose "holes" with specific signatures where the activity user can plug in a custom behavior. For example, the <!--zz <xref:System.Activities.Statements.ForEach>--> `System.Activities.Statements.ForEach` activity, (which operates over a collection of items), has an <xref:System.Activities.ActivityAction> that allows the activity user to plug in behavior that operates on the current iteration item.  
   
 #### To set up, build, and run the sample  
   

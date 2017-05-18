@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsActive method, ICorDebugEval interface [.NET Framework debugging]"
   - "ICorDebugEval::IsActive method [.NET Framework debugging]"
 ms.assetid: bf2bba24-d278-43bd-b1c5-35680e748d3e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

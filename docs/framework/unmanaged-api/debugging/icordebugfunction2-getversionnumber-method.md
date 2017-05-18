@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugFunction2::GetVersionNumber method [.NET Framework debugging]"
   - "GetVersionNumber method, ICorDebugFunction2 interface [.NET Framework debugging]"
 ms.assetid: e3a1ce48-9bb9-4ed6-a5fe-5e1819a6333f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

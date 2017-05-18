@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedConstant::GetName method [.NET Framework debugging]"
   - "GetName method, ISymUnmanagedConstant interface [.NET Framework debugging]"
 ms.assetid: cbaca4e1-4473-459b-ba34-f1f59ce7c0ba
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

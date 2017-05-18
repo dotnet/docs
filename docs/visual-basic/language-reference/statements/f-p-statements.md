@@ -32,7 +32,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # F-P Statements
-The following table contains a listing of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language statements.  
+The following table contains a listing of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language statements.  
   
 |||||  
 |---|---|---|---|  

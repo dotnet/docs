@@ -39,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Processing Drives, Directories, and Files (Visual Basic)
-You can use [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] to process drives, folders, and files with the `My.Computer.FileSystem` object, which provides better performance and is easier to use than traditional methods such as the `FileOpen` and `Write` functions (although they are still available). The following sections discuss these methods in detail.  
+You can use [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] to process drives, folders, and files with the `My.Computer.FileSystem` object, which provides better performance and is easier to use than traditional methods such as the `FileOpen` and `Write` functions (although they are still available). The following sections discuss these methods in detail.  
   
 ## In This Section  
  [File Access with Visual Basic](../../../../visual-basic/developing-apps/programming/drives-directories-files/file-access.md)  

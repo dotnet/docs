@@ -40,7 +40,7 @@ translation.priority.ht:
 # Control Flow in Visual Basic
 Left unregulated, a program proceeds through its statements from beginning to end. Some very simple programs can be written with only this unidirectional flow. However, much of the power and utility of any programming language comes from the ability to change execution order with control statements and loops.  
   
- Control structures allow you to regulate the flow of your program's execution. Using control structures, you can write [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] code that makes decisions or that repeats actions. Other control structures let you guarantee disposal of a resource or run a series of statements on the same object reference.  
+ Control structures allow you to regulate the flow of your program's execution. Using control structures, you can write [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] code that makes decisions or that repeats actions. Other control structures let you guarantee disposal of a resource or run a series of statements on the same object reference.  
   
 ## In This Section  
  [Decision Structures](../../../../visual-basic/programming-guide/language-features/control-flow/decision-structures.md)  

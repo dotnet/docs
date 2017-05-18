@@ -48,7 +48,7 @@ Interfaces describe the characteristics of properties, methods, and events, but 
   
 ### To define an interface  
   
-1.  Open a new [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Windows Application project.  
+1.  Open a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Windows Application project.  
   
 2.  Add a new module to the project by clicking **Add Module** on the **Project** menu.  
   

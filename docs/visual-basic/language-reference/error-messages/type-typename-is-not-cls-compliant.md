@@ -41,7 +41,7 @@ A variable, property, or function return is declared with a data type that is no
   
  For an application to be compliant with the [Language Independence and Language-Independent Components](https://msdn.microsoft.com/library/12a7a7h3) (CLS), it must use only CLS-compliant types.  
   
- The following [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] data types are not CLS-compliant:  
+ The following [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] data types are not CLS-compliant:  
   
 -   [SByte Data Type](../../../visual-basic/language-reference/data-types/sbyte-data-type.md)  
   

@@ -47,7 +47,7 @@ There was a problem writing output to memory.
   
 2.  If the error continues, save your work and restart [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
-3.  If the error recurs, reinstall [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+3.  If the error recurs, reinstall [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 4.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   

@@ -50,7 +50,7 @@ This walkthrough demonstrates how to declare and raise events for a class named 
   
 #### To build the code example for this topic  
   
-1.  Open a new [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Windows Application project and create a form named `Form1`.  
+1.  Open a new [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Windows Application project and create a form named `Form1`.  
   
 2.  Add two buttons and a label to `Form1`.  
   

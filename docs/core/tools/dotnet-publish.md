@@ -20,7 +20,7 @@ ms.assetid: f2ef275a-7c5e-430a-8c30-65f52af62771
 
 ## Synopsis
 
-`dotnet publish [<PROJECT>] [-f|--framework] [-r|--runtime] [-o|--output] [-c|--configuration] [--version-suffix] [-v|--verbosity] [-h|--help]`
+`dotnet publish [<PROJECT>] [-f|--framework] [-r|--runtime] [-o|--output] [-c|--configuration] [--version-suffix] [--manifest] [-v|--verbosity] [-h|--help]`
 
 ## Description
 
@@ -65,6 +65,10 @@ Configuration to use when building the project. The default value is `Debug`.
 
 Defines the version suffix to replace the asterisk (`*`) in the version field of the project file.
 
+`--manifest`
+
+Specifies one or several [target manifests](../deploying/runtime-package-store.md) to use to trim the set of packages that will be published with the application. The manifest file is part of the output of the [`dotnet store` command](dotnet-store.md). To specify multiple manifests, add a `--manifest` option for each manifest.
+
 `-v|--verbosity <LEVEL>`
 
 Sets the verbosity level of the command. Allowed values are `q[uiet]`, `m[inimal]`, `n[ormal]`, `d[etailed]`, and `diag[nostic]`.
@@ -86,6 +90,10 @@ Publish the project in the current directory using the `netcoreapp1.1` framework
 Publish the current application using the `netcoreapp1.1` framework and the runtime for `OS X 10.10` (you must list this RID in the project file).
 
 `dotnet publish --framework netcoreapp1.1 --runtime osx.10.11-x64`
+
+Publish the current application without the packages specified in the `manifest.xml` target manifest:
+
+`dotnet publish --manifest manifest.xml`
 
 ## See also
 

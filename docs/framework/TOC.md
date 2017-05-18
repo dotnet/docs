@@ -1,6 +1,5 @@
 # [Development Guide](development-guide.md)
 ## [Application essentials](../standard/application-essentials.md)
-## [Installation guide](install/index.md)
 ## [Data and modeling](data/index.md)
 ## [Client applications](develop-client-apps.md)
 ## [Web applications with ASP.NET](develop-web-apps-with-aspnet.md)

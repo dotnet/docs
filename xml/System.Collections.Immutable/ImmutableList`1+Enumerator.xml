@@ -25,8 +25,21 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Enumerates the contents of a binary tree.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This structure should be kept synchronized with the other two binary tree enumerators: <xref:System.Collections.Immutable.ImmutableSortedDictionary%602.Enumerator?displayProperty=fullName> and <xref:System.Collections.Immutable.ImmutableSortedSet%601.Enumerator?displayProperty=fullName>.  
+  
+> [!CAUTION]
+>  When this enumerator is used as a value type (that is, when it isn't boxed), do not copy it by assigning it to a second variable or by passing it to another method. When this enumerator is disposed of, it returns a mutable reference type stack to a resource pool, and if the value type enumerator is copied (which can easily happen unintentionally if you pass the value around), there is a risk that a stack that has already been returned to the resource pool may still be in use by one of the enumerator copies, leading to data corruption or exceptions.  
+  
+ ]]></format>
+    </remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="Current">
@@ -44,8 +57,8 @@
         <ReturnType>T</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
+        <summary>Gets the element at the current position of the enumerator.</summary>
+        <value>The element at the current position of the enumerator.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +78,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Releases the resources used by the current instance of the <see cref="T:System.Collections.Immutable.ImmutableList`1.Enumerator" /> class.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,8 +98,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>Advances enumeration to the next element of the immutable list.</summary>
+        <returns>
+          <see langword="true" /> if the enumerator was successfully advanced to the next element; <see langword="false" /> if the enumerator has passed the end of the list.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,7 +120,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>Sets the enumerator to its initial position, which is before the first element in the immutable list.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -125,7 +139,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>The current element.</summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

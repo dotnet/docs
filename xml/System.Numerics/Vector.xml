@@ -19,7 +19,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a collection of static convenience methods for creating, manipulating, combining, and converting generic vectors.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,10 +56,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Returns a new vector whose elements are the absolute values of the given vector's elements.</summary>
+        <returns>The absolute value vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -97,11 +97,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector whose values are the sum of each pair of elements from two given vectors.</summary>
+        <returns>The summed vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -139,11 +139,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector by performing a bitwise And Not operation on each pair of corresponding elements in two vectors.</summary>
+        <returns>The resulting vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -180,10 +180,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Reinterprets the bits of a specified vector into those of a vector of unsigned bytes.</summary>
+        <returns>The reinterpreted vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,10 +220,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Reinterprets the bits of a specified vector into those of a double-precision floating-point vector.</summary>
+        <returns>The reinterpreted vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -260,10 +260,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Reinterprets the bits of a specified vector into those of a vector of 16-bit integers.</summary>
+        <returns>The reinterpreted vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -300,10 +300,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Reinterprets the bits of a specified vector into those of a vector of integers.</summary>
+        <returns>The reinterpreted vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -340,10 +340,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Reinterprets the bits of a specified vector into those of a vector of long integers.</summary>
+        <returns>The reinterpreted vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,10 +385,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Reinterprets the bits of a specified vector into those of a vector of signed bytes.</summary>
+        <returns>The reinterpreted vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -425,10 +425,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Reinterprets the bits of a specified vector into those of a single-precision floating-point vector.</summary>
+        <returns>The reinterpreted vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -470,10 +470,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Reinterprets the bits of a specified vector into those of a vector of unsigned 16-bit integers.</summary>
+        <returns>The reinterpreted vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -515,10 +515,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Reinterprets the bits of a specified vector into those of a vector of unsigned integers.</summary>
+        <returns>The reinterpreted vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -560,10 +560,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Reinterprets the bits of a specified vector into those of a vector of unsigned long integers.</summary>
+        <returns>The reinterpreted vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -601,11 +601,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector by performing a bitwise <see langword="And" /> operation on each pair of elements in two vectors.</summary>
+        <returns>The resulting vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -643,11 +643,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector by performing a bitwise <see langword="Or" /> operation on each pair of elements in two vectors.</summary>
+        <returns>The resulting vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -677,11 +677,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="condition">To be added.</param>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="condition">The integral mask vector used to drive selection.</param>
+        <param name="left">The first source vector.</param>
+        <param name="right">The second source vector.</param>
+        <summary>Creates a new single-precision vector with elements selected between two specified single-precision source vectors based on an integral mask vector.</summary>
+        <returns>The new vector with elements selected based on the mask.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -711,11 +711,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="condition">To be added.</param>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="condition">The integral mask vector used to drive selection.</param>
+        <param name="left">The first source vector.</param>
+        <param name="right">The second source vector.</param>
+        <summary>Creates a new double-precision vector with elements selected between two specified double-precision source vectors based on an integral mask vector.</summary>
+        <returns>The new vector with elements selected based on the mask.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -754,12 +754,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="condition">To be added.</param>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="condition">The integral mask vector used to drive selection.</param>
+        <param name="left">The first source vector.</param>
+        <param name="right">The second source vector.</param>
+        <summary>Creates a new vector of a specified type with elements selected between two specified source vectors of the same type based on an integral mask vector.</summary>
+        <returns>The new vector with elements selected based on the mask.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -993,11 +993,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector whose values are the result of dividing the first vector's elements by the corresponding elements in the second vector.</summary>
+        <returns>The divided vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1035,11 +1035,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns the dot product of two vectors.</summary>
+        <returns>The dot product.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1068,10 +1068,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in two specified double-precision vectors are equal.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1100,10 +1100,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in two specified integral vectors are equal.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1132,10 +1132,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new vector whose elements signal whether the elements in two specified long integer vectors are equal.</summary>
+        <returns>The resulting long integer vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1164,10 +1164,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in two specified single-precision vectors are equal.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1205,11 +1205,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new vector of a specified type whose elements signal whether the elements in two specified vectors of the same type are equal.</summary>
+        <returns>The resulting vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1247,11 +1247,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether each pair of elements in the given vectors is equal.</summary>
+        <returns>
+          <see langword="true" /> if all elements in <paramref name="left" /> and <paramref name="right" /> are equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1289,11 +1290,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether any single pair of elements in the given vectors is equal.</summary>
+        <returns>
+          <see langword="true" /> if any element pair in <paramref name="left" /> and <paramref name="right" /> is equal; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1322,10 +1324,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one double-precision floating-point vector are greater than their corresponding elements in a second double-precision floating-point vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1354,10 +1356,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one integral vector are greater than their corresponding elements in a second integral vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1386,10 +1388,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new long integer vector whose elements signal whether the elements in one long integer vector are greater than their corresponding elements in a second long integer vector.</summary>
+        <returns>The resulting long integer vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1418,10 +1420,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one single-precision floating-point vector are greater than their corresponding elements in a second single-precision floating-point vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1459,11 +1461,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new vector whose elements signal whether the elements in one vector of a specified type are greater than their corresponding elements in the second vector of the same time.</summary>
+        <returns>The resulting vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1501,11 +1503,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether all elements in the first vector are greater than the corresponding elements in the second vector.</summary>
+        <returns>
+          <see langword="true" /> if all elements in <paramref name="left" /> are greater than the corresponding elements in <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1543,11 +1546,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether any element in the first vector is greater than the corresponding element in the second vector.</summary>
+        <returns>
+          <see langword="true" /> if any element in <paramref name="left" /> is greater than the corresponding element in <paramref name="right" />; otherwise,  <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1576,10 +1580,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one vector are greater than or equal to their corresponding elements in the second double-precision floating-point vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1608,10 +1612,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one integral vector are greater than or equal to their corresponding elements in the second integral vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1640,10 +1644,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new long integer vector whose elements signal whether the elements in one long integer vector are greater than or equal to their corresponding elements in the second long integer vector.</summary>
+        <returns>The resulting long integer vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1672,10 +1676,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one vector are greater than or equal to their corresponding elements in the single-precision floating-point second vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1713,11 +1717,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new vector whose elements signal whether the elements in one vector of a specified type are greater than or equal to their corresponding elements in the second vector of the same type.</summary>
+        <returns>The resulting vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1755,11 +1759,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether all elements in the first vector are greater than or equal to all the corresponding elements in the second vector.</summary>
+        <returns>
+          <see langword="true" /> if all elements in <paramref name="left" /> are greater than or equal to the corresponding elements in <paramref name="right" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1797,11 +1802,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether any element in the first vector is greater than or equal to the corresponding element in the second vector.</summary>
+        <returns>
+          <see langword="true" /> if any element in <paramref name="left" /> is greater than or equal to the corresponding element in <paramref name="right" />; otherwise,  <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1826,9 +1832,17 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a value that indicates whether vector operations are subject to hardware acceleration through JIT intrinsic support.</summary>
+        <value>
+          <see langword="true" /> if vector operations are subject to hardware acceleration; otherwise, <see langword="false" />.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Vector operations are subject to hardware acceleration on systems that support Single Instruction, Multiple Data (SIMD) instructions and the RyiJIT just-in-time compiler is used to compile managed code.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="LessThan">
@@ -1856,10 +1870,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one double-precision floating-point vector are less than their corresponding elements in a second double-precision floating-point vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1888,10 +1902,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one integral vector are less than their corresponding elements in a second integral vector.</summary>
+        <returns>The resulting integral vector</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1920,10 +1934,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new long integer vector whose elements signal whether the elements in one long integer vector are less than their corresponding elements in a second long integer vector.</summary>
+        <returns>The resulting long integer vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1952,10 +1966,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one single-precision vector are less than their corresponding elements in a second single-precision vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1993,11 +2007,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new vector of a specified type whose elements signal whether the elements in one vector are less than their corresponding elements in the second vector.</summary>
+        <returns>The resulting vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2035,11 +2049,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether all of the elements in the first vector are less than their corresponding elements in the second vector.</summary>
+        <returns>
+          <see langword="true" /> if all of the elements in <paramref name="left" /> are less than the corresponding elements in <paramref name="right" />; otherwise,  <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2077,11 +2092,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether any element in the first vector is less than the corresponding element in the second vector.</summary>
+        <returns>
+          <see langword="true" /> if any element in <paramref name="left" /> is less than the corresponding element in <paramref name="right" />; otherwise,  <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2110,10 +2126,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Double&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one double-precision floating-point vector are less than or equal to their corresponding elements in a second double-precision floating-point vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2142,10 +2158,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Int32&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one integral vector are less than or equal to their corresponding elements in a second integral vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2174,10 +2190,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Int64&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new long integer vector whose elements signal whether the elements in one long integer vector are less or equal to their corresponding elements in a second long integer vector.</summary>
+        <returns>The resulting long integer vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2206,10 +2222,10 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;System.Single&gt;" />
       </Parameters>
       <Docs>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new integral vector whose elements signal whether the elements in one single-precision floating-point vector are less than or equal to their corresponding elements in a second single-precision floating-point vector.</summary>
+        <returns>The resulting integral vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2247,11 +2263,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new vector whose elements signal whether the elements in one vector are less than or equal to their corresponding elements in the second vector.</summary>
+        <returns>The resulting vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2289,11 +2305,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether all elements in the first vector are less than or equal to their corresponding elements in the second vector.</summary>
+        <returns>
+          <see langword="true" /> if all of the elements in <paramref name="left" /> are less than or equal to the corresponding elements in <paramref name="right" />; otherwise,  <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2331,11 +2348,12 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a value that indicates whether any element in the first vector is less than or equal to the corresponding element in the second vector.</summary>
+        <returns>
+          <see langword="true" /> if any element in <paramref name="left" /> is less than or equal to the corresponding element in <paramref name="right" />; otherwise,  <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2373,11 +2391,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new vector whose elements are the maximum of each pair of elements in the two given vectors.</summary>
+        <returns>The maximum vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2415,11 +2433,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector to compare.</param>
+        <param name="right">The second vector to compare.</param>
+        <summary>Returns a new vector whose elements are the minimum of each pair of elements in the two given vectors.</summary>
+        <returns>The minimum vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2457,11 +2475,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector whose values are the product of each pair of elements in two specified vectors.</summary>
+        <returns>The product vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2499,11 +2517,11 @@
         <Parameter Name="right" Type="T" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The vector.</param>
+        <param name="right">The scalar value.</param>
+        <summary>Returns a new vector whose values are the values of a specified vector each multiplied by a scalar value.</summary>
+        <returns>The scaled vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2541,11 +2559,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The scalar value.</param>
+        <param name="right">The vector.</param>
+        <summary>Returns a new vector whose values are a scalar value multiplied by each of the values of a specified vector.</summary>
+        <returns>The scaled vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2770,10 +2788,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Returns a new vector whose elements are the negation of the corresponding element in the specified vector.</summary>
+        <returns>The negated vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2810,10 +2828,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Returns a new vector whose elements are obtained by taking the one's complement of a specified vector's elements.</summary>
+        <returns>The resulting vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2850,10 +2868,10 @@
         <Parameter Name="value" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="value">The source vector.</param>
+        <summary>Returns a new vector whose elements are the square roots of a specified vector's elements.</summary>
+        <returns>The square root vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2891,11 +2909,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector whose values are the difference between the elements in the second vector and their corresponding elements in the first vector.</summary>
+        <returns>The difference vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3128,11 +3146,11 @@
         <Parameter Name="right" Type="System.Numerics.Vector&lt;T&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="left">To be added.</param>
-        <param name="right">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="T">The vector type. <c>T</c> can be any primitive numeric type.</typeparam>
+        <param name="left">The first vector.</param>
+        <param name="right">The second vector.</param>
+        <summary>Returns a new vector by performing a bitwise exclusive Or (<see langword="XOr" />) operation on each pair of elements in two vectors.</summary>
+        <returns>The resulting vector.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

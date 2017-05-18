@@ -26,7 +26,7 @@ translation.priority.mt:
 This section provides conceptual and how-to information about programming with [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)].  
   
 ## Who Should Read This Documentation  
- This documentation targets developers who already understand C# and some basic aspects of the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)].  
+ This documentation targets developers who already understand C# and some basic aspects of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
   
  The goal of this documentation is to make [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] easy to use for all kinds of developers. [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] makes XML programming easier. You do not have to be an expert developer to use it.  
   

@@ -38,7 +38,7 @@ The contextual keyword `value` is used in the set accessor in ordinary property 
  For more information about the use of `value`, see [Properties](../../../csharp/programming-guide/classes-and-structs/properties.md).  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

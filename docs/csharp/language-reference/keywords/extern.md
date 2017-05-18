@@ -102,7 +102,7 @@ SampleMethod() returns 50.
 ```  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Runtime.InteropServices.DllImportAttribute?displayProperty=fullName>   

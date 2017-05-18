@@ -47,7 +47,7 @@ An important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concept
 -   [Windows Service Applications](https://msdn.microsoft.com/library/y817hyb6.aspx). Lists topics that explain how to create Windows services.  
   
 ## Building Rich, Interactive User Interfaces  
- Windows Forms is the smart-client component of the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], a set of managed libraries that enable common application tasks such as reading and writing to the file system. Using a development environment like [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], you can create Windows Forms applications that display information, request input from users, and communicate with remote computers over a network.  
+ Windows Forms is the smart-client component of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], a set of managed libraries that enable common application tasks such as reading and writing to the file system. Using a development environment like [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], you can create Windows Forms applications that display information, request input from users, and communicate with remote computers over a network.  
   
  In Windows Forms, a form is a visual surface on which you display information to the user. You commonly build Windows Forms applications by placing controls on forms and developing responses to user actions, such as mouse clicks or key presses. A *control* is a discrete user interface (UI) element that displays data or accepts data input.  
   
@@ -108,7 +108,7 @@ An important part of [!INCLUDE[vbprvb](../../../csharp/programming-guide/concept
 |Manage security with [!INCLUDE[ndptecclick](../../../visual-basic/developing-apps/printing/includes/ndptecclick_md.md)]|[How to: Enable ClickOnce Security Settings](https://docs.microsoft.com/visualstudio/deployment/how-to-enable-clickonce-security-settings)|  
   
 ## Other Controls and Features  
- There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. In addition, Windows Forms relies on the robust security system of the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], enabling you to release more secure applications to your customers.  
+ There are many other features in Windows Forms that make implementing common tasks fast and easy, such as support for creating dialog boxes, printing, adding Help and documentation, and localizing your application to multiple languages. In addition, Windows Forms relies on the robust security system of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], enabling you to release more secure applications to your customers.  
   
  For step-by-step information about using these features, see the following Help topics:  
   

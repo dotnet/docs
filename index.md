@@ -122,7 +122,7 @@ title: .NET Documentation
                                             <div class="cardText">
                                                 <h3><a href="/dotnet/articles/framework/">.NET Framework Guide</a></h3>
                                                 <p><a href="/dotnet/articles/framework/get-started/">Get Started</a></p>
-                                                <p><a href="/dotnet/articles/framework/development-guide">Tutorials</a></p>
+                                                <p><a href="/dotnet/articles/framework/development-guide">Development Guide</a></p>
                                                 <p><a href="/dotnet/articles/framework/develop-client-apps">Client Development</a></p>
                                                 <p><a href="/aspnet/#pivot=aspnet">ASP.NET</a></p>
                                             </div>

@@ -27,7 +27,7 @@ Represents a configuration element that defines a backup endpoint element.
 ## Syntax  
   
 ```vb  
-   <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
+   <routing>  <backupLists>    <backupList name="String">      <add endpointName="String" />    </backupList>    </backupLists></routing>  
 ```  
   
 ```csharp  

@@ -46,7 +46,7 @@
   
  **Note** In versions of Windows prior to Windows 7, the following conditions apply:  
   
--   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus>.  
+-   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus.Disabled>.  
   
 -   The location indicated by the <xref:System.Device.Location.GeoPosition%601.Location%2A> property of <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> will always be <xref:System.Device.Location.GeoCoordinate.Unknown>.  
   
@@ -69,6 +69,29 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of <see cref="T:System.Device.Location.GeoCoordinateWatcher" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ **Note** In versions of Windows prior to Windows 7, the following conditions apply:  
+  
+-   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus.Disabled>.  
+  
+-   The location indicated by the <xref:System.Device.Location.GeoPosition%601.Location%2A> property of <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> will always be <xref:System.Device.Location.GeoCoordinate.Unknown>.  
+  
+-   No location events will be raised.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public GeoCoordinateWatcher ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -85,11 +108,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default accuracy setting is <xref:System.Device.Location.GeoPositionAccuracy>.  
+ The default accuracy setting is <xref:System.Device.Location.GeoPositionAccuracy.Default>.  
   
  **Note** In versions of Windows prior to Windows 7, the following conditions apply:  
   
--   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus>.  
+-   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus.Disabled>.  
   
 -   The location indicated by the <xref:System.Device.Location.GeoPosition%601.Location%2A> property of <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> will always be <xref:System.Device.Location.GeoCoordinate.Unknown>.  
   
@@ -123,7 +146,7 @@
 ## Remarks  
  **Note** In versions of Windows prior to Windows 7, the following conditions apply:  
   
--   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus>.  
+-   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus.Disabled>.  
   
 -   The location indicated by the <xref:System.Device.Location.GeoPosition%601.Location%2A> property of <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> will always be <xref:System.Device.Location.GeoCoordinate.Unknown>.  
   
@@ -153,11 +176,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- An accuracy of <xref:System.Device.Location.GeoPositionAccuracy> can degrade performance and should be specified only when high accuracy is needed.  
+ An accuracy of <xref:System.Device.Location.GeoPositionAccuracy.High> can degrade performance and should be specified only when high accuracy is needed.  
   
  **Note** In versions of Windows prior to Windows 7, the following conditions apply:  
   
--   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus>.  
+-   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus.Disabled>.  
   
 -   The location indicated by the <xref:System.Device.Location.GeoPosition%601.Location%2A> property of <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> will always be <xref:System.Device.Location.GeoCoordinate.Unknown>.  
   
@@ -167,6 +190,27 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Dispose">
+      <AssemblyInfo>
+        <AssemblyName>System.Device</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Releases all resources that are used by the current instance of the <see cref="T:System.Device.Location.GeoCoordinateWatcher" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Call <xref:System.Device.Location.GeoCoordinateWatcher.Dispose%2A> when you are finished using the <xref:System.Device.Location.GeoCoordinateWatcher> class?qualifyHint=False&autoUpgrade=True.  
+  
+ This method should be called so that unmanaged resources can be freed.  
+  
+ For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Dispose">
       <MemberSignature Language="C#" Value="public void Dispose ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Dispose() cil managed" />
@@ -283,7 +327,7 @@
   
  **Note** In versions of Windows prior to Windows 7, the following conditions apply:  
   
--   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus>.  
+-   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus.Disabled>.  
   
 -   The location indicated by the <xref:System.Device.Location.GeoPosition%601.Location%2A> property of <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> will always be <xref:System.Device.Location.GeoCoordinate.Unknown>.  
   
@@ -680,49 +724,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Dispose">
-      <AssemblyInfo>
-        <AssemblyName>System.Device</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Releases all resources that are used by the current instance of the <see cref="T:System.Device.Location.GeoCoordinateWatcher" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Call <xref:System.Device.Location.GeoCoordinateWatcher.Dispose%2A> when you are finished using the <xref:System.Device.Location.GeoCoordinateWatcher> class?qualifyHint=False&autoUpgrade=True.  
-  
- This method should be called so that unmanaged resources can be freed.  
-  
- For more information, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Device</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of <see cref="T:System.Device.Location.GeoCoordinateWatcher" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- **Note** In versions of Windows prior to Windows 7, the following conditions apply:  
-  
--   All <xref:System.Device.Location> objects that have constructors can be created, but the <xref:System.Device.Location.GeoCoordinateWatcher.Status%2A> property will always have the value <xref:System.Device.Location.GeoPositionStatus>.  
-  
--   The location indicated by the <xref:System.Device.Location.GeoPosition%601.Location%2A> property of <xref:System.Device.Location.GeoCoordinateWatcher.Position%2A> will always be <xref:System.Device.Location.GeoCoordinate.Unknown>.  
-  
--   No location events will be raised.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -38,6 +38,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Speech</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsItem" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This overloaded constructer for <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> initializes the object with a default `repeatCount` property of 0.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public SrgsItem ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -241,7 +258,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="element" /> is<see langword=" null" />.</exception>
+          <paramref name="element" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Elements">
@@ -429,22 +446,5 @@
         <exception cref="T:System.ArgumentOutOfRangeException">An attempt is made to set <see cref="P:System.Speech.Recognition.SrgsGrammar.SrgsItem.Weight" /> to a negative value.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Speech</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Speech.Recognition.SrgsGrammar.SrgsItem" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This overloaded constructer for <xref:System.Speech.Recognition.SrgsGrammar.SrgsItem> initializes the object with a default `repeatCount` property of 0.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

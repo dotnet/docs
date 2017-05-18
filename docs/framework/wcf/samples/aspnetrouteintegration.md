@@ -46,7 +46,7 @@ This sample demonstrates how to host a [!INCLUDE[indigo1](../../../../includes/i
   
 2.  Press CTRL+SHIFT+B to build the solution.  
   
-3.  If it is not already open, press “CTRL+W, S” to open the **Solution Explorer** window.  
+3.  If it is not already open, press "CTRL+W, S" to open the **Solution Explorer** window.  
   
 4.  From the **Solution Explorer** windows, right-click the **Service** project and place the cursor over the **Debug** context menu option so that the **Start New Instance** context menu appears and select **Start New Instance**.  This launches the ASP.NET development server, which hosts the service.  
   

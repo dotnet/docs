@@ -6,6 +6,10 @@
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.CodeDom</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.CodeDom.CodeStatement</BaseTypeName>
   </Base>
@@ -29,7 +33,7 @@
  The <xref:System.CodeDom.CodeGotoStatement.Label%2A> property indicates the name of the label at which to continue program execution.  
   
 > [!NOTE]
->  Not all languages support `goto` statements. Call the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the <xref:System.CodeDom.Compiler.GeneratorSupport> flag to determine whether a code generator supports `goto` statements.  
+>  Not all languages support `goto` statements. Call the <xref:System.CodeDom.Compiler.ICodeGenerator.Supports%2A> method with the <xref:System.CodeDom.Compiler.GeneratorSupport.GotoStatements> flag to determine whether a code generator supports `goto` statements.  
   
    
   
@@ -51,6 +55,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -75,6 +83,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="label" Type="System.String" />
       </Parameters>
@@ -95,6 +107,10 @@
         <AssemblyName>System</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.CodeDom</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -111,7 +127,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentNullException">The label cannot be set because<paramref name=" value" /> is <see langword="null" /> or an empty string.</exception>
+        <exception cref="T:System.ArgumentNullException">The label cannot be set because <paramref name="value" /> is <see langword="null" /> or an empty string.</exception>
       </Docs>
     </Member>
   </Members>

@@ -243,7 +243,7 @@
         <param name="obj">The object to compare the <see cref="T:System.Device.Location.GeoCoordinate" /> to.</param>
         <summary>Determines if a specified <see cref="T:System.Device.Location.GeoCoordinate" /> is equal to the current <see cref="T:System.Device.Location.GeoCoordinate" />, based solely on latitude and longitude.</summary>
         <returns>
-          <see langword="true" />, if the <see cref="T:System.Device.Location.GeoCoordinate" /> objects are equal; otherwise,<see langword=" false" />.</returns>
+          <see langword="true" />, if the <see cref="T:System.Device.Location.GeoCoordinate" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -358,7 +358,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Device.Location.GeoCoordinate> that does not contain latitude or longitude data is equal to <xref:System.Device.Location.GeoCoordinate>.  
+ A <xref:System.Device.Location.GeoCoordinate> that does not contain latitude or longitude data is equal to <xref:System.Device.Location.GeoCoordinate.Unknown>.  
   
    
   

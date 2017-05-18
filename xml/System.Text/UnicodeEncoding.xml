@@ -6,6 +6,7 @@
     <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -100,6 +101,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -144,6 +146,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,7 +165,7 @@
         <param name="bigEndian">
           <see langword="true" /> to use the big endian byte order (most significant byte first), or <see langword="false" /> to use the little endian byte order (least significant byte first).</param>
         <param name="byteOrderMark">
-          <see langword="true" /> to specify that the <see cref="M:System.Text.UnicodeEncoding.GetPreamble" /> method returns a Unicode byte order mark; otherwise, <see langword="false" />. See the Remarks section for more information.</param>
+          <see langword="true" /> to specify that the <see cref="M:System.Text.UnicodeEncoding.GetPreamble" /> method returns a Unicode byte order mark; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Text.UnicodeEncoding" /> class. Parameters specify whether to use the big endian byte order and whether the <see cref="M:System.Text.UnicodeEncoding.GetPreamble" /> method returns a Unicode byte order mark.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -197,6 +200,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -216,7 +220,7 @@
         <param name="bigEndian">
           <see langword="true" /> to use the big endian byte order (most significant byte first); <see langword="false" /> to use the little endian byte order (least significant byte first).</param>
         <param name="byteOrderMark">
-          <see langword="true" /> to specify that the <see cref="M:System.Text.UnicodeEncoding.GetPreamble" /> method returns a Unicode byte order mark; otherwise, <see langword="false" />. See the Remarks section for more information.</param>
+          <see langword="true" /> to specify that the <see cref="M:System.Text.UnicodeEncoding.GetPreamble" /> method returns a Unicode byte order mark; otherwise, <see langword="false" />.</param>
         <param name="throwOnInvalidBytes">
           <see langword="true" /> to specify that an exception should be thrown when an invalid encoding is detected; otherwise, <see langword="false" />.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Text.UnicodeEncoding" /> class. Parameters specify whether to use the big endian byte order, whether to provide a Unicode byte order mark, and whether to throw an exception when an invalid encoding is detected.</summary>
@@ -258,6 +262,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -292,6 +300,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -349,6 +358,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -396,7 +406,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="s" /> is <see langword="null " />.</exception>
+          <paramref name="s" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The resulting number of bytes is greater than the maximum number that can be returned as an integer.</exception>
         <exception cref="T:System.ArgumentException">Error detection is enabled, and <paramref name="s" /> contains an invalid sequence of characters.</exception>
         <exception cref="T:System.Text.EncoderFallbackException">A fallback occurred (see [Character Encoding in the .NET Framework](~/docs/standard/base-types/character-encoding.md) for fuller explanation)  
@@ -419,6 +429,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -457,7 +471,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="chars" /> is <see langword="null " />.</exception>
+          <paramref name="chars" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is less than zero.  
   
@@ -482,6 +496,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -532,7 +547,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="chars" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+          <paramref name="chars" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> or <paramref name="count" /> is less than zero.  
   
@@ -564,6 +579,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -608,11 +627,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="chars" /> is <see langword="null " />(<see langword="Nothing" />).  
+          <paramref name="chars" /> is <see langword="null" /> (<see langword="Nothing" />).  
   
  -or-  
   
- <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+ <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="charCount" /> or <paramref name="byteCount" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">Error detection is enabled, and <paramref name="chars" /> contains an invalid sequence of characters.  
@@ -637,6 +656,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -695,11 +715,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="chars" /> is <see langword="null " />(<see langword="Nothing" />).  
+          <paramref name="chars" /> is <see langword="null" /> (<see langword="Nothing" />).  
   
  -or-  
   
- <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+ <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="charIndex" /> or <paramref name="charCount" /> or <paramref name="byteIndex" /> is less than zero.  
   
@@ -731,6 +751,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -789,11 +810,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="s" /> is <see langword="null " />.  
+          <paramref name="s" /> is <see langword="null" />.  
   
  -or-  
   
- <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+ <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="charIndex" /> or <paramref name="charCount" /> or <paramref name="byteIndex" /> is less than zero.  
   
@@ -830,6 +851,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
@@ -864,7 +889,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+          <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="count" /> is less than zero.  
   
@@ -889,6 +914,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -938,7 +964,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+          <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> or <paramref name="count" /> is less than zero.  
   
@@ -970,6 +996,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1013,11 +1043,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).  
+          <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).  
   
  -or-  
   
- <paramref name="chars" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+ <paramref name="chars" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="byteCount" /> or <paramref name="charCount" /> is less than zero.</exception>
         <exception cref="T:System.ArgumentException">Error detection is enabled, and <paramref name="bytes" /> contains an invalid sequence of bytes.  
@@ -1042,6 +1072,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1099,11 +1130,11 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).  
+          <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).  
   
  -or-  
   
- <paramref name="chars" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+ <paramref name="chars" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="byteIndex" /> or <paramref name="byteCount" /> or <paramref name="charIndex" /> is less than zero.  
   
@@ -1135,6 +1166,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1182,6 +1214,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1234,6 +1267,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1263,6 +1297,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1331,6 +1366,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1399,6 +1435,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1472,6 +1509,7 @@
         <AssemblyName>System.Text.Encoding.Extensions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1527,7 +1565,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="bytes" /> is <see langword="null " />(<see langword="Nothing" />).</exception>
+          <paramref name="bytes" /> is <see langword="null" /> (<see langword="Nothing" />).</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> or <paramref name="count" /> is less than zero.  
   

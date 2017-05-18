@@ -78,7 +78,7 @@
   
 |Property|Initial value|  
 |--------------|-------------------|  
-|<xref:System.Windows.Forms.Control.Dock%2A>|<xref:System.Windows.Forms.DockStyle>|  
+|<xref:System.Windows.Forms.Control.Dock%2A>|<xref:System.Windows.Forms.DockStyle.Bottom>|  
 |<xref:System.Windows.Forms.StatusBar.ShowPanels%2A>|`false`|  
 |<xref:System.Windows.Forms.StatusBar.SizingGrip%2A>|`true`|  
   
@@ -478,7 +478,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this event to perform drawing operations in an owner-drawn <xref:System.Windows.Forms.StatusBar> control. For example, if you display an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a progress bar, you can use this event to perform the drawing of the progress bar on the panel. The data provided to the event through the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> object passed as a parameter to the event handler enables you to determine the panel that needs to be drawn and the <xref:System.Drawing.Graphics> to use to draw to the panel. This event is only raised when the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=fullName> property of a <xref:System.Windows.Forms.StatusBarPanel> in a <xref:System.Windows.Forms.StatusBar> control is set to <xref:System.Windows.Forms.StatusBarPanelStyle>.  
+ You can use this event to perform drawing operations in an owner-drawn <xref:System.Windows.Forms.StatusBar> control. For example, if you display an owner-drawn <xref:System.Windows.Forms.StatusBarPanel> that displays a progress bar, you can use this event to perform the drawing of the progress bar on the panel. The data provided to the event through the <xref:System.Windows.Forms.StatusBarDrawItemEventArgs> object passed as a parameter to the event handler enables you to determine the panel that needs to be drawn and the <xref:System.Drawing.Graphics> to use to draw to the panel. This event is only raised when the <xref:System.Windows.Forms.StatusBarPanel.Style%2A?displayProperty=fullName> property of a <xref:System.Windows.Forms.StatusBarPanel> in a <xref:System.Windows.Forms.StatusBar> control is set to <xref:System.Windows.Forms.StatusBarPanelStyle.OwnerDraw>.  
   
  For more information about handling events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -1022,7 +1022,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this property to display a sizing grip to provide an indication to the user when a form is resizable. If the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property of your <xref:System.Windows.Forms.Form> is set to a border style that is not resizable, such as<xref:System.Windows.Forms.FormBorderStyle> or <xref:System.Windows.Forms.FormBorderStyle>, you should set the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A> property to `false` to prevent the user from thinking that the form can be resized.  
+ You can use this property to display a sizing grip to provide an indication to the user when a form is resizable. If the <xref:System.Windows.Forms.Form.FormBorderStyle%2A> property of your <xref:System.Windows.Forms.Form> is set to a border style that is not resizable, such as<xref:System.Windows.Forms.FormBorderStyle.Fixed3D> or <xref:System.Windows.Forms.FormBorderStyle.FixedDialog>, you should set the <xref:System.Windows.Forms.StatusBar.SizingGrip%2A> property to `false` to prevent the user from thinking that the form can be resized.  
   
    
   

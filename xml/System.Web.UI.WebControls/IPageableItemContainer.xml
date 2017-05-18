@@ -68,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataPager> control every time that the control must update the page-related properties. When implemented by a class, the <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method must internally update the <xref:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows%2A> and <xref:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex%2A> properties by using the values of the `maximumRows` and `startRowIndex`parameters.  
+ The <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method is called by the <xref:System.Web.UI.WebControls.DataPager> control every time that the control must update the page-related properties. When implemented by a class, the <xref:System.Web.UI.WebControls.IPageableItemContainer.SetPageProperties%2A> method must internally update the <xref:System.Web.UI.WebControls.IPageableItemContainer.MaximumRows%2A> and <xref:System.Web.UI.WebControls.IPageableItemContainer.StartRowIndex%2A> properties by using the values of the `maximumRows` and `startRowIndex` parameters.  
   
  ]]></format>
         </remarks>

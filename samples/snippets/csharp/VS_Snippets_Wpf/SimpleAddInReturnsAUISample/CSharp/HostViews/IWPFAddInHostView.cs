@@ -1,5 +1,5 @@
 ﻿//<SnippetHostViewCode>
-using System.Windows; // FrameworkElement
+using System.Windows;
 
 namespace HostViews
 {

@@ -148,6 +148,23 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromDecimal">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Decimal" /> and optional number format information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromDecimal">
       <MemberSignature Language="C#" Value="public static string FromDecimal (decimal Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static string FromDecimal(valuetype System.Decimal Value) cil managed" />
@@ -210,6 +227,23 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromDouble">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Double" /> and optional number format information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromDouble">
       <MemberSignature Language="C#" Value="public static string FromDouble (double Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static string FromDouble(float64 Value) cil managed" />
@@ -392,6 +426,23 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
+    <MemberGroup MemberName="FromSingle">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
+        <AssemblyVersion>10.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Single" /> and optional number format information.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FromSingle">
       <MemberSignature Language="C#" Value="public static string FromSingle (float Value);" />
       <MemberSignature Language="ILAsm" Value=".method public static string FromSingle(float32 Value) cil managed" />
@@ -662,56 +713,5 @@
         <forInternalUseOnly />
       </Docs>
     </Member>
-    <MemberGroup MemberName="FromSingle">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Single" /> and optional number format information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FromDecimal">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Decimal" /> and optional number format information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="FromDouble">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.VisualBasic</AssemblyName>
-        <AssemblyVersion>10.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a <see langword="String" /> value that corresponds to a specified <see langword="Double" /> and optional number format information.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This class supports the Visual Basic compiler and is not intended to be used directly from your code.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

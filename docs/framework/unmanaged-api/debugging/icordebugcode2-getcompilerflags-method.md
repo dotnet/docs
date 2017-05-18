@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetCompilerFlags method [.NET Framework debugging]"
   - "ICorDebugCode2::GetCompilerFlags method [.NET Framework debugging]"
 ms.assetid: 532e9dfd-d114-4c75-b952-1accce102643
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugVariableHomeEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugVariableHomeEnum interface [.NET Framework debugging]"
 ms.assetid: eb9ea96c-5b58-4655-8104-094fc8b393b8
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

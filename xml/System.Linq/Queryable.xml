@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Linq.Queryable</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
@@ -45,6 +46,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -107,6 +109,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -171,6 +174,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -239,6 +243,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -303,6 +308,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -363,6 +369,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -414,6 +421,34 @@
           <paramref name="source" /> or <paramref name="predicate" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="Append&lt;TSource&gt;">
+      <MemberSignature Language="C#" Value="public static System.Linq.IQueryable&lt;TSource&gt; Append&lt;TSource&gt; (this System.Linq.IQueryable&lt;TSource&gt; source, TSource element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable`1&lt;!!TSource&gt; Append&lt;TSource&gt;(class System.Linq.IQueryable`1&lt;!!TSource&gt; source, !!TSource element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Append``1(System.Linq.IQueryable{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Queryable</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable&lt;TSource&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable&lt;TSource&gt;" RefType="this" />
+        <Parameter Name="element" Type="TSource" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="AsQueryable">
       <MemberSignature Language="C#" Value="public static System.Linq.IQueryable AsQueryable (this System.Collections.IEnumerable source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable AsQueryable(class System.Collections.IEnumerable source) cil managed" />
@@ -422,6 +457,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -466,6 +502,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -518,6 +555,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -572,6 +610,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -626,6 +665,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -678,6 +718,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -732,6 +773,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -784,6 +826,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -836,6 +879,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -888,6 +932,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -938,6 +983,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -990,6 +1036,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1044,6 +1091,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1106,6 +1154,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1168,6 +1217,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1228,6 +1278,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1290,6 +1341,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1350,6 +1402,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1410,6 +1463,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1470,6 +1524,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1530,6 +1585,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1590,6 +1646,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1652,6 +1709,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1707,6 +1765,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1763,6 +1822,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1820,6 +1880,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1871,6 +1932,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1926,6 +1988,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1985,6 +2048,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2039,6 +2103,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2095,6 +2160,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2149,6 +2215,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2197,6 +2264,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2255,6 +2323,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2312,6 +2381,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2368,6 +2438,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2418,6 +2489,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2473,6 +2545,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2536,6 +2609,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2598,6 +2672,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2657,6 +2732,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2717,6 +2793,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2771,6 +2848,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2835,6 +2913,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2893,6 +2972,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -2957,6 +3037,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3015,6 +3096,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3083,6 +3165,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3145,6 +3228,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3215,6 +3299,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3279,6 +3364,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3335,6 +3421,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3385,6 +3472,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3455,6 +3543,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3519,6 +3608,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3574,6 +3664,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3637,6 +3728,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3699,6 +3791,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3758,6 +3851,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3813,6 +3907,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3872,6 +3967,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3926,6 +4022,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -3986,6 +4083,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4040,6 +4138,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4100,6 +4199,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4154,6 +4254,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4214,6 +4315,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4268,6 +4370,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4320,6 +4423,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4374,6 +4478,34 @@
           <paramref name="source" /> or <paramref name="keySelector" /> or <paramref name="comparer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="Prepend&lt;TSource&gt;">
+      <MemberSignature Language="C#" Value="public static System.Linq.IQueryable&lt;TSource&gt; Prepend&lt;TSource&gt; (this System.Linq.IQueryable&lt;TSource&gt; source, TSource element);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable`1&lt;!!TSource&gt; Prepend&lt;TSource&gt;(class System.Linq.IQueryable`1&lt;!!TSource&gt; source, !!TSource element) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.Prepend``1(System.Linq.IQueryable{``0},``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Queryable</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable&lt;TSource&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable&lt;TSource&gt;" RefType="this" />
+        <Parameter Name="element" Type="TSource" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="element">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Reverse&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Linq.IQueryable&lt;TSource&gt; Reverse&lt;TSource&gt; (this System.Linq.IQueryable&lt;TSource&gt; source);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable`1&lt;!!TSource&gt; Reverse&lt;TSource&gt;(class System.Linq.IQueryable`1&lt;!!TSource&gt; source) cil managed" />
@@ -4382,6 +4514,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4436,6 +4569,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4496,6 +4630,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4556,6 +4691,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4616,6 +4752,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4676,6 +4813,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4740,6 +4878,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4796,6 +4935,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4858,6 +4998,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4909,6 +5050,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -4965,6 +5107,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5032,6 +5175,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5095,6 +5239,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5154,6 +5299,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5202,6 +5348,34 @@
           <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="SkipLast&lt;TSource&gt;">
+      <MemberSignature Language="C#" Value="public static System.Linq.IQueryable&lt;TSource&gt; SkipLast&lt;TSource&gt; (this System.Linq.IQueryable&lt;TSource&gt; source, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable`1&lt;!!TSource&gt; SkipLast&lt;TSource&gt;(class System.Linq.IQueryable`1&lt;!!TSource&gt; source, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.SkipLast``1(System.Linq.IQueryable{``0},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Queryable</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable&lt;TSource&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable&lt;TSource&gt;" RefType="this" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="SkipWhile&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Linq.IQueryable&lt;TSource&gt; SkipWhile&lt;TSource&gt; (this System.Linq.IQueryable&lt;TSource&gt; source, System.Linq.Expressions.Expression&lt;Func&lt;TSource,bool&gt;&gt; predicate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable`1&lt;!!TSource&gt; SkipWhile&lt;TSource&gt;(class System.Linq.IQueryable`1&lt;!!TSource&gt; source, class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!!TSource, bool&gt;&gt; predicate) cil managed" />
@@ -5210,6 +5384,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5268,6 +5443,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5326,6 +5502,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5379,6 +5556,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5431,6 +5609,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5484,6 +5663,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5537,6 +5717,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5590,6 +5771,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5642,6 +5824,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5695,6 +5878,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5748,6 +5932,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5798,6 +5983,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5848,6 +6034,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5909,6 +6096,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -5969,6 +6157,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6030,6 +6219,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6091,6 +6281,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6152,6 +6343,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6212,6 +6404,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6273,6 +6466,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6334,6 +6528,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6394,6 +6589,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6454,6 +6650,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6502,6 +6699,34 @@
           <paramref name="source" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <Member MemberName="TakeLast&lt;TSource&gt;">
+      <MemberSignature Language="C#" Value="public static System.Linq.IQueryable&lt;TSource&gt; TakeLast&lt;TSource&gt; (this System.Linq.IQueryable&lt;TSource&gt; source, int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable`1&lt;!!TSource&gt; TakeLast&lt;TSource&gt;(class System.Linq.IQueryable`1&lt;!!TSource&gt; source, int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Linq.Queryable.TakeLast``1(System.Linq.IQueryable{``0},System.Int32)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Queryable</AssemblyName>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Linq.IQueryable&lt;TSource&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TSource" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="System.Linq.IQueryable&lt;TSource&gt;" RefType="this" />
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TSource">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="count">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="TakeWhile&lt;TSource&gt;">
       <MemberSignature Language="C#" Value="public static System.Linq.IQueryable&lt;TSource&gt; TakeWhile&lt;TSource&gt; (this System.Linq.IQueryable&lt;TSource&gt; source, System.Linq.Expressions.Expression&lt;Func&lt;TSource,bool&gt;&gt; predicate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Linq.IQueryable`1&lt;!!TSource&gt; TakeWhile&lt;TSource&gt;(class System.Linq.IQueryable`1&lt;!!TSource&gt; source, class System.Linq.Expressions.Expression`1&lt;class System.Func`2&lt;!!TSource, bool&gt;&gt; predicate) cil managed" />
@@ -6510,6 +6735,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6568,6 +6794,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6626,6 +6853,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6686,6 +6914,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6740,6 +6969,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6792,6 +7022,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6854,6 +7085,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6910,6 +7142,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -6960,6 +7193,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -7018,6 +7252,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -7076,6 +7311,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Queryable</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -7127,7 +7363,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="source1" />or <paramref name="source2 " />is <see langword="null" />.</exception>
+          <paramref name="source1" /> or <paramref name="source2" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
   </Members>

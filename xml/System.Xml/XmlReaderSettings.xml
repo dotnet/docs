@@ -7,6 +7,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml</AssemblyName>
@@ -34,15 +35,15 @@
 ## Security considerations  
  Consider the following when using the <xref:System.Xml.XmlReaderSettings> class.  
   
--   The <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags of an <xref:System.Xml.XmlReaderSettings> object are not set by default. When these flags are set, the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> of the <xref:System.Xml.XmlReaderSettings> object is used to resolve schema locations encountered in the instance document in the <xref:System.Xml.XmlReader>. If the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> object is `null`, schema locations are not resolved even if the <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags are set.  
+-   The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags of an <xref:System.Xml.XmlReaderSettings> object are not set by default. When these flags are set, the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> of the <xref:System.Xml.XmlReaderSettings> object is used to resolve schema locations encountered in the instance document in the <xref:System.Xml.XmlReader>. If the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> object is `null`, schema locations are not resolved even if the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags are set.  
   
 -   Schemas added during validation add new types and can change the validation outcome of the document being validated. As a result, external schemas should only be resolved from trusted sources.  
   
--   Validation error messages may expose sensitive content model information. Validation error and warning messages are handled using the <xref:System.Xml.Schema.ValidationEventHandler> delegate, or are exposed as an <xref:System.Xml.Schema.XmlSchemaValidationException> if no event handler is provided to the <xref:System.Xml.XmlReaderSettings> object (validation warnings do not cause an <xref:System.Xml.Schema.XmlSchemaValidationException> to be thrown). This content model information should not be exposed in untrusted scenarios. Validation warning messages are suppressed by default and can be reported by setting the <xref:System.Xml.Schema.XmlSchemaValidationFlags> flag.  
+-   Validation error messages may expose sensitive content model information. Validation error and warning messages are handled using the <xref:System.Xml.Schema.ValidationEventHandler> delegate, or are exposed as an <xref:System.Xml.Schema.XmlSchemaValidationException> if no event handler is provided to the <xref:System.Xml.XmlReaderSettings> object (validation warnings do not cause an <xref:System.Xml.Schema.XmlSchemaValidationException> to be thrown). This content model information should not be exposed in untrusted scenarios. Validation warning messages are suppressed by default and can be reported by setting the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ReportValidationWarnings> flag.  
   
 -   The <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidationException> returns the URI path to the schema file that caused the exception. The <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property should not be exposed in untrusted scenarios.  
   
--   Disabling the <xref:System.Xml.Schema.XmlSchemaValidationFlags> flag (enabled by default) is recommended when validating, untrusted, large XML documents in high availability scenarios against a schema with identity constraints over a large part of the document.  
+-   Disabling the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessIdentityConstraints> flag (enabled by default) is recommended when validating, untrusted, large XML documents in high availability scenarios against a schema with identity constraints over a large part of the document.  
   
 -   <xref:System.Xml.XmlReaderSettings> objects can contain sensitive information such as user credentials. You should be careful when caching <xref:System.Xml.XmlReaderSettings> objects, or when passing the <xref:System.Xml.XmlReaderSettings> object from one component to another.  
   
@@ -74,6 +75,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -97,7 +99,7 @@
 |--------------|-------------------|  
 |<xref:System.Xml.XmlReaderSettings.Async%2A>|`false`.|  
 |<xref:System.Xml.XmlReaderSettings.CheckCharacters%2A>|`true`.|  
-|<xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A>|<xref:System.Xml.ConformanceLevel>.|  
+|<xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A>|<xref:System.Xml.ConformanceLevel.Document>.|  
 |<xref:System.Xml.XmlReaderSettings.IgnoreComments%2A>|`false`.|  
 |<xref:System.Xml.XmlReaderSettings.IgnoreProcessingInstructions%2A>|`false`.|  
 |<xref:System.Xml.XmlReaderSettings.IgnoreWhitespace%2A>|`false`.|  
@@ -106,11 +108,11 @@
 |<xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities%2A>|0 (there is no limit on the number of characters that result from expanding entities).|  
 |<xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A>|0 (there is no limit on the size of the XML document).|  
 |<xref:System.Xml.XmlReaderSettings.NameTable%2A>|`null`.|  
-|<xref:System.Xml.XmlTextReader.DtdProcessing%2A>|<xref:System.Xml.DtdProcessing>|  
+|<xref:System.Xml.XmlTextReader.DtdProcessing%2A>|<xref:System.Xml.DtdProcessing.Prohibit>|  
 |<xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>|`true`. This property is obsolete. Use <xref:System.Xml.XmlTextReader.DtdProcessing%2A> instead. If you had set <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> to its default value `true` set <xref:System.Xml.XmlTextReader.DtdProcessing%2A> to `Prohibit`. If you had set <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> to `false` set <xref:System.Xml.XmlTextReader.DtdProcessing%2A> to `Parse`.|  
 |<xref:System.Xml.XmlReaderSettings.Schemas%2A>|An empty <xref:System.Xml.Schema.XmlSchemaSet> object.|  
-|<xref:System.Xml.XmlReaderSettings.ValidationFlags%2A>|<xref:System.Xml.Schema.XmlSchemaValidationFlags>.|  
-|<xref:System.Xml.XmlReaderSettings.ValidationType%2A>|<xref:System.Xml.ValidationType>.|  
+|<xref:System.Xml.XmlReaderSettings.ValidationFlags%2A>|<xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessIdentityConstraints>.|  
+|<xref:System.Xml.XmlReaderSettings.ValidationType%2A>|<xref:System.Xml.ValidationType.None>.|  
 |<xref:System.Xml.XmlReaderSettings.XmlResolver%2A>|A new <xref:System.Xml.XmlUrlResolver> object.|  
   
    
@@ -163,6 +165,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -202,6 +205,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -220,12 +224,10 @@
         <value>
           <see langword="true" /> to do character checking; otherwise <see langword="false" />. The default is <see langword="true" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  If the <see cref="T:System.Xml.XmlReader" /> is processing text data, it always checks that the XML names and text content are valid, regardless of the property setting. Setting <see cref="P:System.Xml.XmlReaderSettings.CheckCharacters" /> to <see langword="false" /> turns off character checking for character entity references.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -252,6 +254,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -289,6 +292,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -326,6 +330,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -364,16 +369,16 @@
   
 |Setting|Description|  
 |-------------|-----------------|  
-|<xref:System.Xml.ConformanceLevel>|Ensures that the XML data conforms to the rules for a well-formed XML 1.0 document. This level of checking ensures that any processor can consume the stream being read as an [well-formed XML 1.0 document](http://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).<br /><br /> The reader checks for the following:<br /><br /> -   The top-level item must not have any nodes other than XML Declaration, document type definition (DTD), element, comment, white space, or processing instruction.<br />-   The XML data must have exactly one top-level element node.|  
-|<xref:System.Xml.ConformanceLevel>|Ensures that the XML data conforms to the rules for a well-formed XML 1.0 document fragment.<br /><br /> This setting accepts XML data with multiple root elements, or text nodes at the top-level. This level of checking ensures that any processor can consume the stream being read as an [external parsed entity](http://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).|  
-|<xref:System.Xml.ConformanceLevel>|Specifies that the reader should determine the level of conformance checking based on the incoming data.<br /><br /> Document conformance checking is applied if the XML data contains DTD information.<br /><br /> Fragment conformance checking is applied if the XML data contains one of following:<br /><br /> -   Text, CDATA, or entity reference node at the root level.<br />-   More than one element at the root level.<br />-   No element at the root level.<br /><br /> An <xref:System.Xml.XmlException> is thrown if there is a conflict, such as when there is a text node and a DTD at the root level.<br /><br /> This setting can be used in wrapping scenarios when the <xref:System.Xml.XmlReader.Create%2A> method is used to add additional features to an existing <xref:System.Xml.XmlReader>. In this case, <xref:System.Xml.ConformanceLevel?displayProperty=fullName> does not add any new conformance checking. Conformance checking is left to the <xref:System.Xml.XmlReader> that is being wrapped.|  
+|<xref:System.Xml.ConformanceLevel.Document>|Ensures that the XML data conforms to the rules for a well-formed XML 1.0 document. This level of checking ensures that any processor can consume the stream being read as an [well-formed XML 1.0 document](http://www.w3.org/TR/2006/REC-xml-20060816/#sec-well-formed).<br /><br /> The reader checks for the following:<br /><br /> -   The top-level item must not have any nodes other than XML Declaration, document type definition (DTD), element, comment, white space, or processing instruction.<br />-   The XML data must have exactly one top-level element node.|  
+|<xref:System.Xml.ConformanceLevel.Fragment>|Ensures that the XML data conforms to the rules for a well-formed XML 1.0 document fragment.<br /><br /> This setting accepts XML data with multiple root elements, or text nodes at the top-level. This level of checking ensures that any processor can consume the stream being read as an [external parsed entity](http://www.w3.org/TR/2006/REC-xml-20060816/#wf-entities).|  
+|<xref:System.Xml.ConformanceLevel.Auto>|Specifies that the reader should determine the level of conformance checking based on the incoming data.<br /><br /> Document conformance checking is applied if the XML data contains DTD information.<br /><br /> Fragment conformance checking is applied if the XML data contains one of following:<br /><br /> -   Text, CDATA, or entity reference node at the root level.<br />-   More than one element at the root level.<br />-   No element at the root level.<br /><br /> An <xref:System.Xml.XmlException> is thrown if there is a conflict, such as when there is a text node and a DTD at the root level.<br /><br /> This setting can be used in wrapping scenarios when the <xref:System.Xml.XmlReader.Create%2A> method is used to add additional features to an existing <xref:System.Xml.XmlReader>. In this case, <xref:System.Xml.ConformanceLevel?displayProperty=fullName> does not add any new conformance checking. Conformance checking is left to the <xref:System.Xml.XmlReader> that is being wrapped.|  
   
 > [!NOTE]
 >  The XML 1.0 recommendation requires document-level conformance when a DTD is present. Therefore, if the reader is configured to support <xref:System.Xml.ConformanceLevel?displayProperty=fullName>, but the XML data contains a document type definition (DTD), an <xref:System.Xml.XmlException> is thrown.  
   
  Here's how the reader handles specific conformance violations depending on the setting of the <xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A> property:  
   
-|Condition|<xref:System.Xml.ConformanceLevel>|<xref:System.Xml.ConformanceLevel>|<xref:System.Xml.ConformanceLevel>|  
+|Condition|<xref:System.Xml.ConformanceLevel.Document>|<xref:System.Xml.ConformanceLevel.Fragment>|<xref:System.Xml.ConformanceLevel.Auto>|  
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|  
 |Text or a typed value appears at the top level.|<xref:System.Xml.XmlException> is thrown.|Not considered a violation for this setting.|Not considered a violation for this setting.|  
 |Multiple elements or no element appear at the top level.|<xref:System.Xml.XmlException> is thrown.|Not considered a violation for this setting.|Not considered a violation for this setting.|  
@@ -409,6 +414,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -478,6 +484,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -524,6 +531,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -570,6 +578,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -618,6 +627,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -654,6 +664,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -690,6 +701,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -787,6 +799,7 @@ There is an error in XML document (MaxCharactersFromEntities, ).
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -872,6 +885,7 @@ There is an error in XML document (MaxCharactersInDocument, ).
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -916,6 +930,10 @@ There is an error in XML document (MaxCharactersInDocument, ).
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -966,6 +984,7 @@ There is an error in XML document (MaxCharactersInDocument, ).
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml</AssemblyName>
@@ -992,7 +1011,7 @@ There is an error in XML document (MaxCharactersInDocument, ).
 |--------------|-------------------|  
 |<xref:System.Xml.XmlReaderSettings.Async%2A>|`false`.|  
 |<xref:System.Xml.XmlReaderSettings.CheckCharacters%2A>|`true`.|  
-|<xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A>|<xref:System.Xml.ConformanceLevel>.|  
+|<xref:System.Xml.XmlReaderSettings.ConformanceLevel%2A>|<xref:System.Xml.ConformanceLevel.Document>.|  
 |<xref:System.Xml.XmlReaderSettings.IgnoreComments%2A>|`false`.|  
 |<xref:System.Xml.XmlReaderSettings.IgnoreProcessingInstructions%2A>|`false`.|  
 |<xref:System.Xml.XmlReaderSettings.IgnoreWhitespace%2A>|`false`.|  
@@ -1001,11 +1020,11 @@ There is an error in XML document (MaxCharactersInDocument, ).
 |<xref:System.Xml.XmlReaderSettings.MaxCharactersFromEntities%2A>|0 (there is no limit on the number of characters that result from expanding entities).|  
 |<xref:System.Xml.XmlReaderSettings.MaxCharactersInDocument%2A>|0 (there is no limit on the size of the XML document).|  
 |<xref:System.Xml.XmlReaderSettings.NameTable%2A>|`null`.|  
-|<xref:System.Xml.XmlTextReader.DtdProcessing%2A>|<xref:System.Xml.DtdProcessing>|  
+|<xref:System.Xml.XmlTextReader.DtdProcessing%2A>|<xref:System.Xml.DtdProcessing.Prohibit>|  
 |<xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A>|`true`. This property is obsolete. Use <xref:System.Xml.XmlTextReader.DtdProcessing%2A> instead. If you had set <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> to its default value `true` set <xref:System.Xml.XmlTextReader.DtdProcessing%2A> to `Prohibit`. If you had set <xref:System.Xml.XmlReaderSettings.ProhibitDtd%2A> to `false` set <xref:System.Xml.XmlTextReader.DtdProcessing%2A> to `Parse`.|  
 |<xref:System.Xml.XmlReaderSettings.Schemas%2A>|An empty <xref:System.Xml.Schema.XmlSchemaSet> object.|  
-|<xref:System.Xml.XmlReaderSettings.ValidationFlags%2A>|<xref:System.Xml.Schema.XmlSchemaValidationFlags>.|  
-|<xref:System.Xml.XmlReaderSettings.ValidationType%2A>|<xref:System.Xml.ValidationType>.|  
+|<xref:System.Xml.XmlReaderSettings.ValidationFlags%2A>|<xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessIdentityConstraints>.|  
+|<xref:System.Xml.XmlReaderSettings.ValidationType%2A>|<xref:System.Xml.ValidationType.None>.|  
 |<xref:System.Xml.XmlReaderSettings.XmlResolver%2A>|A new <xref:System.Xml.XmlUrlResolver> object.|  
   
  ]]></format>
@@ -1025,6 +1044,10 @@ There is an error in XML document (MaxCharactersInDocument, ).
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaSet</ReturnType>
@@ -1086,6 +1109,10 @@ There is an error in XML document (MaxCharactersInDocument, ).
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.ValidationEventHandler</ReturnType>
       </ReturnValue>
@@ -1095,12 +1122,12 @@ There is an error in XML document (MaxCharactersInDocument, ).
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- These events occur while reading an XML instance document if the <xref:System.Xml.XmlReaderSettings.ValidationType%2A> is set to either <xref:System.Xml.ValidationType> or <xref:System.Xml.ValidationType>. If the <xref:System.Xml.Schema.XmlSchemaValidationFlags> setting has been enabled on the <xref:System.Xml.XmlReaderSettings.ValidationFlags%2A> property these events also occur when any validation warnings are encountered.  
+ These events occur while reading an XML instance document if the <xref:System.Xml.XmlReaderSettings.ValidationType%2A> is set to either <xref:System.Xml.ValidationType.DTD> or <xref:System.Xml.ValidationType.Schema>. If the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ReportValidationWarnings> setting has been enabled on the <xref:System.Xml.XmlReaderSettings.ValidationFlags%2A> property these events also occur when any validation warnings are encountered.  
   
  If the reader is configured for validation and no validation event handler has been set, an <xref:System.Xml.Schema.XmlSchemaValidationException> is thrown for all validation errors. (Validation warnings do not cause an <xref:System.Xml.Schema.XmlSchemaValidationException> to be thrown).  
   
 > [!IMPORTANT]
->  Validation error messages may expose sensitive content model information. Validation error and warning messages are handled using the <xref:System.Xml.Schema.ValidationEventHandler> delegate, or are exposed as an <xref:System.Xml.Schema.XmlSchemaValidationException> if no event handler is provided to the <xref:System.Xml.XmlReaderSettings> object (validation warnings do not cause an <xref:System.Xml.Schema.XmlSchemaValidationException> to be thrown). This content model information should not be exposed in untrusted scenarios. Validation warning messages are suppressed by default and can be reported by setting the <xref:System.Xml.Schema.XmlSchemaValidationFlags> flag.  
+>  Validation error messages may expose sensitive content model information. Validation error and warning messages are handled using the <xref:System.Xml.Schema.ValidationEventHandler> delegate, or are exposed as an <xref:System.Xml.Schema.XmlSchemaValidationException> if no event handler is provided to the <xref:System.Xml.XmlReaderSettings> object (validation warnings do not cause an <xref:System.Xml.Schema.XmlSchemaValidationException> to be thrown). This content model information should not be exposed in untrusted scenarios. Validation warning messages are suppressed by default and can be reported by setting the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ReportValidationWarnings> flag.  
 >   
 >  The <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property of an <xref:System.Xml.Schema.XmlSchemaValidationException> returns the URI path to the schema file that caused the exception. The <xref:System.Xml.Schema.XmlSchemaException.SourceUri%2A> property should not be exposed in untrusted scenarios.  
   
@@ -1130,6 +1157,10 @@ There is an error in XML document (MaxCharactersInDocument, ).
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.XmlSchemaValidationFlags</ReturnType>
       </ReturnValue>
@@ -1142,16 +1173,16 @@ There is an error in XML document (MaxCharactersInDocument, ).
 ## Remarks  
   
 > [!IMPORTANT]
->  The <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags of an <xref:System.Xml.XmlReaderSettings> object are not set by default. When these flags are set, the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> of the <xref:System.Xml.XmlReaderSettings> object is used to resolve schema locations encountered in the instance document in the <xref:System.Xml.XmlReader>. If the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> object is `null`, schema locations are not resolved even if the <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags are set.  
+>  The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags of an <xref:System.Xml.XmlReaderSettings> object are not set by default. When these flags are set, the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> of the <xref:System.Xml.XmlReaderSettings> object is used to resolve schema locations encountered in the instance document in the <xref:System.Xml.XmlReader>. If the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> object is `null`, schema locations are not resolved even if the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags are set.  
 >   
 >  Schemas added during validation add new types and can change the validation outcome of the document being validated. As a result, external schemas should only be resolved from trusted sources.  
 >   
->  Disabling the <xref:System.Xml.Schema.XmlSchemaValidationFlags> flag (enabled by default) is recommended when validating, untrusted, large XML documents in high availability scenarios against a schema with identity constraints over a large part of the document.  
+>  Disabling the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessIdentityConstraints> flag (enabled by default) is recommended when validating, untrusted, large XML documents in high availability scenarios against a schema with identity constraints over a large part of the document.  
   
    
   
 ## Examples  
- The following example validates an XML file against an inline XML Schema by enabling the <xref:System.Xml.Schema.XmlSchemaValidationFlags> setting. The XML reader is configured to display validation warnings, sp you also see the expected warning on the root element.  
+ The following example validates an XML file against an inline XML Schema by enabling the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> setting. The XML reader is configured to display validation warnings, sp you also see the expected warning on the root element.  
   
  [!code-csharp[XmlReaderSettings.IgnoreInlineSchema#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlReaderSettings.IgnoreInlineSchema/CS/factory_rdr_cctor.cs#1)]
  [!code-vb[XmlReaderSettings.IgnoreInlineSchema#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlReaderSettings.IgnoreInlineSchema/VB/factory_rdr_cctor.vb#1)]  
@@ -1184,6 +1215,10 @@ There is an error in XML document (MaxCharactersInDocument, ).
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.ValidationType</ReturnType>
       </ReturnValue>
@@ -1197,13 +1232,13 @@ There is an error in XML document (MaxCharactersInDocument, ).
  The following table describes the <xref:System.Xml.ValidationType> values.  
   
 > [!NOTE]
->  The <xref:System.Xml.ValidationType> and <xref:System.Xml.ValidationType> enumeration values are obsolete in .NET Framework version 2.0.  
+>  The <xref:System.Xml.ValidationType.Auto> and <xref:System.Xml.ValidationType.XDR> enumeration values are obsolete in .NET Framework version 2.0.  
   
 |ValidationType|Description|  
 |--------------------|-----------------|  
-|`DTD`|Validation is performed using a document type definition (DTD). **Note:**  The <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property must also be set to <xref:System.Xml.DtdProcessing>.|  
+|`DTD`|Validation is performed using a document type definition (DTD). **Note:**  The <xref:System.Xml.XmlReaderSettings.DtdProcessing%2A> property must also be set to <xref:System.Xml.DtdProcessing.Parse>.|  
 |`None`|The <xref:System.Xml.XmlReader> does not validate data, or perform any type assignment.|  
-|`Schema`|Validation and type assignment is performed using an XML Schema definition language (XSD) schema. The reader accesses the XML Schema using the following:<br /><br /> -   Uses the <xref:System.Xml.XmlReaderSettings.Schemas%2A> property to access the <xref:System.Xml.Schema.XmlSchemaSet> object associated with this reader.<br />-   Uses the in-line schema contained in the XML instance document. (The <xref:System.Xml.Schema.XmlSchemaValidationFlags> option must be enabled.)<br />-   Uses the XML Schema specified by schema location hints (`xsi:schemaLocation` or `xsi:noNamespaceSchemaLocation` attribute) found in the XML instance document. (The <xref:System.Xml.Schema.XmlSchemaValidationFlags> option must be enabled.)|  
+|`Schema`|Validation and type assignment is performed using an XML Schema definition language (XSD) schema. The reader accesses the XML Schema using the following:<br /><br /> -   Uses the <xref:System.Xml.XmlReaderSettings.Schemas%2A> property to access the <xref:System.Xml.Schema.XmlSchemaSet> object associated with this reader.<br />-   Uses the in-line schema contained in the XML instance document. (The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> option must be enabled.)<br />-   Uses the XML Schema specified by schema location hints (`xsi:schemaLocation` or `xsi:noNamespaceSchemaLocation` attribute) found in the XML instance document. (The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> option must be enabled.)|  
   
    
   
@@ -1242,6 +1277,10 @@ There is an error in XML document (MaxCharactersInDocument, ).
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlResolver</ReturnType>
       </ReturnValue>
@@ -1259,7 +1298,7 @@ There is an error in XML document (MaxCharactersInDocument, ).
 >   
 >  An <xref:System.Xml.XmlSecureResolver> can be used to access external documents. The <xref:System.Xml.XmlSecureResolver> class helps to secure another implementation of <xref:System.Xml.XmlResolver> by wrapping the <xref:System.Xml.XmlResolver> object and restricting the resources that the underlying <xref:System.Xml.XmlResolver> has access to.  
 >   
->  The <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags of an <xref:System.Xml.XmlReaderSettings> object are not set by default. When these flags are set, the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> of the <xref:System.Xml.XmlReaderSettings> object is used to resolve schema locations encountered in the instance document in the <xref:System.Xml.XmlReader>. If the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> object is `null`, schema locations are not resolved even if the <xref:System.Xml.Schema.XmlSchemaValidationFlags> and <xref:System.Xml.Schema.XmlSchemaValidationFlags> validation flags are set.  
+>  The <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags of an <xref:System.Xml.XmlReaderSettings> object are not set by default. When these flags are set, the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> of the <xref:System.Xml.XmlReaderSettings> object is used to resolve schema locations encountered in the instance document in the <xref:System.Xml.XmlReader>. If the <xref:System.Xml.XmlReaderSettings.XmlResolver%2A> object is `null`, schema locations are not resolved even if the <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessInlineSchema> and <xref:System.Xml.Schema.XmlSchemaValidationFlags.ProcessSchemaLocation> validation flags are set.  
 >   
 >  Schemas added during validation add new types and can change the validation outcome of the document being validated. As a result, external schemas should only be resolved from trusted sources.  
   

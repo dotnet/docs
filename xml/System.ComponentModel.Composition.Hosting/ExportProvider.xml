@@ -720,7 +720,7 @@
       <Docs>
         <typeparam name="T">The type parameter of the <see cref="T:System.Lazy`2" /> objects to return. The contract name is also derived from this type parameter.</typeparam>
         <typeparam name="TMetadataView">The type of the metadata view of the <see cref="T:System.Lazy`2" /> objects to return.</typeparam>
-        <param name="contractName">The contract name of the <see cref="T:System.Lazy`2" /> objects to return, or <see langword="null " />or an empty string ("") to use the default contract name.</param>
+        <param name="contractName">The contract name of the <see cref="T:System.Lazy`2" /> objects to return, or <see langword="null" /> or an empty string ("") to use the default contract name.</param>
         <summary>Gets all the exports with the specified contract name.</summary>
         <returns>The <see cref="T:System.Lazy`2" /> objects with the specified contract name if found; otherwise, an empty <see cref="T:System.Collections.Generic.IEnumerable`1" /> object.</returns>
         <remarks>
@@ -764,7 +764,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Overrides of this method should not treat cardinality-related mismatches as errors, and should not throw exceptions in those cases. For example, if <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality%2A> is <xref:System.ComponentModel.Composition.Primitives.ImportCardinality> and there are zero <xref:System.ComponentModel.Composition.Primitives.Export> objects that match the conditions of the specified <xref:System.ComponentModel.Composition.Primitives.ImportDefinition>, an empty <xref:System.Collections.Generic.IEnumerable%601> collection should be returned.  
+ Overrides of this method should not treat cardinality-related mismatches as errors, and should not throw exceptions in those cases. For example, if <xref:System.ComponentModel.Composition.Primitives.ImportDefinition.Cardinality%2A> is <xref:System.ComponentModel.Composition.Primitives.ImportCardinality.ExactlyOne> and there are zero <xref:System.ComponentModel.Composition.Primitives.Export> objects that match the conditions of the specified <xref:System.ComponentModel.Composition.Primitives.ImportDefinition>, an empty <xref:System.Collections.Generic.IEnumerable%601> collection should be returned.  
   
  ]]></format>
         </remarks>

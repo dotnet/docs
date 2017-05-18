@@ -186,6 +186,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAccessors">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetAccessors" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+  
+ The <xref:System.Reflection.PropertyInfo.GetAccessors%2A> methods return an array of the `get` and `set` accessors on this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAccessors">
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo[] GetAccessors ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo[] GetAccessors() cil managed" />
@@ -248,6 +268,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.MemberInfo.GetCustomAttributes" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+  
+ The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> methods return all attributes applied to this member.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCustomAttributes">
       <MemberSignature Language="C#" Value="public object[] GetCustomAttributes (bool inherit);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object[] GetCustomAttributes(bool inherit) cil managed" />
@@ -314,6 +354,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetGetMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetGetMethod" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+  
+ The <xref:System.Reflection.PropertyInfo.GetGetMethod%2A> methods return a <xref:System.Reflection.MethodInfo> object representing the `get` accessor for this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetGetMethod">
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetGetMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetGetMethod() cil managed" />
@@ -471,6 +531,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetSetMethod">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetSetMethod" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+  
+ The <xref:System.Reflection.PropertyInfo.GetSetMethod%2A> methods return a <xref:System.Reflection.MethodInfo> object representing the `set` accessor for this property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetSetMethod">
       <MemberSignature Language="C#" Value="public System.Reflection.MethodInfo GetSetMethod ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Reflection.MethodInfo GetSetMethod() cil managed" />
@@ -522,32 +602,19 @@
         <summary>Provides COM objects with version-independent access to the <see cref="M:System.Reflection.PropertyInfo.GetSetMethod(System.Boolean)" /> method.</summary>
         <returns>One of the values in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> A <see cref="T:System.Reflection.MethodInfo" /> object representing the <see langword="Set" /> method for this property.  
+ </description></listheader><item><term> A <see cref="T:System.Reflection.MethodInfo" /> object representing the <see langword="Set" /> method for this property.  
   
- </term>  
-<description> The <see langword="set" /> accessor is public.  
+ </term><description> The <see langword="set" /> accessor is public.  
   
  -or-  
   
  The <paramref name="nonPublic" /> parameter is <see langword="true" /> and the <see langword="set" /> accessor is non-public.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="null" />  
-  
- </term>  
-<description> The <paramref name="nonPublic" /> parameter is <see langword="true" />, but the property is read-only.  
+ </description></item><item><term><see langword="null" /></term><description> The <paramref name="nonPublic" /> parameter is <see langword="true" />, but the property is read-only.  
   
  -or-  
   
@@ -557,9 +624,7 @@
   
  There is no <see langword="set" /> accessor.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -663,6 +728,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetValue">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetValue" /> methods.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+  
+ The <xref:System.Reflection.PropertyInfo.GetValue%2A> methods return the value of the property.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetValue">
       <MemberSignature Language="C#" Value="public object GetValue (object obj, object[] index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance object GetValue(object obj, object[] index) cil managed" />
@@ -956,6 +1041,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetValue">
+      <AssemblyInfo>
+        <AssemblyName>mscorlib</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.SetValue" /> method.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is for access to managed classes from unmanaged code and should not be called from managed code.  
+  
+ The <xref:System.Reflection.PropertyInfo.SetValue%2A> method sets the property value for the given object to the given value.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetValue">
       <MemberSignature Language="C#" Value="public void SetValue (object obj, object value, object[] index);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetValue(object obj, object value, object[] index) cil managed" />
@@ -1059,125 +1164,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetValue">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetValue" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetValue%2A> methods return the value of the property.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetAccessors">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetAccessors" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetAccessors%2A> methods return an array of the `get` and `set` accessors on this property.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.MemberInfo.GetCustomAttributes" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.MemberInfo.GetCustomAttributes%2A> methods return all attributes applied to this member.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetValue">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.SetValue" /> method.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.SetValue%2A> method sets the property value for the given object to the given value.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetGetMethod">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetGetMethod" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetGetMethod%2A> methods return a <xref:System.Reflection.MethodInfo> object representing the `get` accessor for this property.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetSetMethod">
-      <AssemblyInfo>
-        <AssemblyName>mscorlib</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Provides COM objects with version-independent access to the <see cref="Overload:System.Reflection.PropertyInfo.GetSetMethod" /> methods.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is for access to managed classes from unmanaged code and should not be called from managed code.  
-  
- The <xref:System.Reflection.PropertyInfo.GetSetMethod%2A> methods return a <xref:System.Reflection.MethodInfo> object representing the `set` accessor for this property.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -360,9 +360,9 @@
 ## Remarks  
  In a stack overflow layout, use the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property along with the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=fullName> property to control the end to which items are aligned in a <xref:System.Windows.Forms.ToolStrip>, or to determine the end to which they are already aligned.  
   
- If the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=fullName> property is <xref:System.Windows.Forms.RightToLeft>, items marked as <xref:System.Windows.Forms.ToolStripItemAlignment> are aligned to the left side of the <xref:System.Windows.Forms.ToolStrip> and items marked <xref:System.Windows.Forms.ToolStripItemAlignment> are aligned to the right.  
+ If the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=fullName> property is <xref:System.Windows.Forms.RightToLeft.No>, items marked as <xref:System.Windows.Forms.ToolStripItemAlignment.Left> are aligned to the left side of the <xref:System.Windows.Forms.ToolStrip> and items marked <xref:System.Windows.Forms.ToolStripItemAlignment.Right> are aligned to the right.  
   
- If the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=fullName> property is <xref:System.Windows.Forms.RightToLeft>, items marked as <xref:System.Windows.Forms.ToolStripItemAlignment> are aligned to the right side of the <xref:System.Windows.Forms.ToolStrip> and items marked <xref:System.Windows.Forms.ToolStripItemAlignment> are aligned to the left.  
+ If the <xref:System.Windows.Forms.ToolStripItem.RightToLeft%2A?displayProperty=fullName> property is <xref:System.Windows.Forms.RightToLeft.Yes>, items marked as <xref:System.Windows.Forms.ToolStripItemAlignment.Left> are aligned to the right side of the <xref:System.Windows.Forms.ToolStrip> and items marked <xref:System.Windows.Forms.ToolStripItemAlignment.Right> are aligned to the left.  
   
 > [!NOTE]
 >  In flow and table layouts, the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property is ignored. In flow or table layout, use the <xref:System.Windows.Forms.ToolStripItem.Dock%2A> or <xref:System.Windows.Forms.ToolStripItem.Anchor%2A> property to align the items within the row or table cell.  
@@ -1215,7 +1215,7 @@
 ## Remarks  
  This property applies only to flow layouts.  
   
- Use the <xref:System.Windows.Forms.ToolStripItem.Dock%2A> property to define how a <xref:System.Windows.Forms.ToolStripItem> is automatically resized as its parent control is resized. For example, setting <xref:System.Windows.Forms.ToolStripItem.Dock%2A> to <xref:System.Windows.Forms.DockStyle> causes the <xref:System.Windows.Forms.ToolStripItem> to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their Z-order, which is the visual layering of controls on a form along the form's Z-axis (depth).  
+ Use the <xref:System.Windows.Forms.ToolStripItem.Dock%2A> property to define how a <xref:System.Windows.Forms.ToolStripItem> is automatically resized as its parent control is resized. For example, setting <xref:System.Windows.Forms.ToolStripItem.Dock%2A> to <xref:System.Windows.Forms.DockStyle.Left> causes the <xref:System.Windows.Forms.ToolStripItem> to align itself with the left edges of its parent control and to resize as the parent control is resized. Controls are docked in their Z-order, which is the visual layering of controls on a form along the form's Z-axis (depth).  
   
  A control can be docked to one edge of its parent container or can be docked to all edges and fill the parent container.  
   
@@ -1405,13 +1405,13 @@
   
  If there is a change in the keyboard or mouse button state, the <xref:System.Windows.Forms.ToolStripItem.QueryContinueDrag> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> property of the event's <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
   
- If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the <xref:System.Windows.Forms.ToolStripItem.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
+ If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Continue>, the <xref:System.Windows.Forms.ToolStripItem.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
   
  The <xref:System.Windows.Forms.ToolStripItem.DragOver> and <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> events are paired so that as the mouse moves across the drop target, the user is given the most up-to-date feedback on the mouse's position, as follows:  
   
--   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the drop effect value is returned to the source, so the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
+-   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Drop>, the drop effect value is returned to the source, so the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
   
--   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event is raised.  
+-   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Cancel>, the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event is raised.  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.DragEventArgs.X%2A> and <xref:System.Windows.Forms.DragEventArgs.Y%2A> properties of the <xref:System.Windows.Forms.DragEventArgs> are in screen coordinates, not client coordinates.  
@@ -1474,13 +1474,13 @@
   
  If there is a change in the keyboard or mouse button state, the <xref:System.Windows.Forms.ToolStripItem.QueryContinueDrag> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> property of the event's <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
   
- If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the <xref:System.Windows.Forms.ToolStripItem.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
+ If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Continue>, the <xref:System.Windows.Forms.ToolStripItem.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
   
  The <xref:System.Windows.Forms.ToolStripItem.DragOver> and <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> events are paired so that as the mouse moves across the drop target, the user is given the most up-to-date feedback on the mouse's position, as follows:  
   
--   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the drop effect value is returned to the source, so the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
+-   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Drop>, the drop effect value is returned to the source, so the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
   
--   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event is raised.  
+-   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Cancel>, the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event is raised.  
   
    
   
@@ -1540,13 +1540,13 @@
   
  If there is a change in the keyboard or mouse button state, the <xref:System.Windows.Forms.ToolStripItem.QueryContinueDrag> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> property of the event's <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
   
- If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the <xref:System.Windows.Forms.ToolStripItem.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
+ If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Continue>, the <xref:System.Windows.Forms.ToolStripItem.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
   
  The <xref:System.Windows.Forms.ToolStripItem.DragOver> and <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> events are paired so that as the mouse moves across the drop target, the user is given the most up-to-date feedback on the mouse's position, as follows:  
   
--   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the drop effect value is returned to the source, so the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
+-   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Drop>, the drop effect value is returned to the source, so the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
   
--   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event is raised.  
+-   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Cancel>, the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event is raised.  
   
    
   
@@ -1817,13 +1817,13 @@
   
  If there is a change in the keyboard or mouse button state, the <xref:System.Windows.Forms.ToolStripItem.QueryContinueDrag> event is raised and determines whether to continue the drag, to drop the data, or to cancel the operation based on the value of the <xref:System.Windows.Forms.QueryContinueDragEventArgs.Action%2A> property of the event's <xref:System.Windows.Forms.QueryContinueDragEventArgs>.  
   
- If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the <xref:System.Windows.Forms.ToolStripItem.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
+ If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Continue>, the <xref:System.Windows.Forms.ToolStripItem.DragOver> event is raised to continue the operation and the <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> event is raised with the new effect so appropriate visual feedback can be set. For a list of valid drop effects, see the <xref:System.Windows.Forms.DragDropEffects> enumeration.  
   
  The <xref:System.Windows.Forms.ToolStripItem.DragOver> and <xref:System.Windows.Forms.ToolStripItem.GiveFeedback> events are paired so that as the mouse moves across the drop target, the user is given the most up-to-date feedback on the mouse's position, as follows:  
   
--   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the drop effect value is returned to the source, so the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
+-   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Drop>, the drop effect value is returned to the source, so the source application can perform the appropriate operation on the source data; for example, cut the data if the operation was a move.  
   
--   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction>, the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event is raised.  
+-   If the value of <xref:System.Windows.Forms.DragAction> is <xref:System.Windows.Forms.DragAction.Cancel>, the <xref:System.Windows.Forms.ToolStripItem.DragLeave> event is raised.  
   
    
   
@@ -1898,9 +1898,9 @@
   
 -   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
   
    
   
@@ -1949,9 +1949,9 @@
   
 -   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
   
    
   
@@ -2013,9 +2013,9 @@
   
 -   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
   
  ]]></format>
         </remarks>
@@ -2069,9 +2069,9 @@
   
 -   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
   
    
   
@@ -2118,9 +2118,9 @@
   
 -   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
   
    
   
@@ -2301,7 +2301,7 @@
   
  ]]></format>
         </remarks>
-        <permission cref="T:System.Security.Permissions.UIPermission">For all windows for inheriting classes to call this method. Associated enumeration: the <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />value of <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
+        <permission cref="T:System.Security.Permissions.UIPermission">For all windows for inheriting classes to call this method. Associated enumeration: the <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /> value of <see cref="T:System.Security.Permissions.UIPermissionWindow" /></permission>
       </Docs>
     </Member>
     <Member MemberName="IsOnDropDown">
@@ -4310,7 +4310,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property in a <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip>, the overflow <xref:System.Windows.Forms.ToolStrip>, or if it is not currently showing at all. The typical reasons why an item is not displayed are that the item did not fit on the main <xref:System.Windows.Forms.ToolStrip> and its <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property was set to <xref:System.Windows.Forms.ToolStripItemOverflow>.  
+ Inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property in a <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip>, the overflow <xref:System.Windows.Forms.ToolStrip>, or if it is not currently showing at all. The typical reasons why an item is not displayed are that the item did not fit on the main <xref:System.Windows.Forms.ToolStrip> and its <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property was set to <xref:System.Windows.Forms.ToolStripItemOverflow.Never>.  
   
    
   

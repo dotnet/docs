@@ -105,7 +105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> property is set to <xref:System.Drawing.SystemColors.Window%2A?displayProperty=fullName>.  
+ If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState.Selected>, the <xref:System.Windows.Forms.DrawItemEventArgs.BackColor%2A> property is set to <xref:System.Drawing.SystemColors.Window%2A?displayProperty=fullName>.  
   
    
   
@@ -168,7 +168,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the item being drawn is <xref:System.Windows.Forms.DrawItemState>, the background is drawn with the text highlighted.  
+ If the item being drawn is <xref:System.Windows.Forms.DrawItemState.Selected>, the background is drawn with the text highlighted.  
   
    
   
@@ -204,7 +204,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the item being drawn has <xref:System.Windows.Forms.DrawItemState>, the focus rectangle is drawn.  
+ If the item being drawn has <xref:System.Windows.Forms.DrawItemState.Focus>, the focus rectangle is drawn.  
   
    
   
@@ -273,7 +273,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> property is set to <xref:System.Drawing.SystemColors.WindowText%2A?displayProperty=fullName>.  
+ If the item's state is <xref:System.Windows.Forms.DrawItemState?displayProperty=fullName>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> is set to <xref:System.Drawing.SystemColors.HighlightText%2A?displayProperty=fullName>. If the item's state is not <xref:System.Windows.Forms.DrawItemState.Selected>, the <xref:System.Windows.Forms.DrawItemEventArgs.ForeColor%2A> property is set to <xref:System.Drawing.SystemColors.WindowText%2A?displayProperty=fullName>.  
   
    
   

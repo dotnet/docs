@@ -41,7 +41,7 @@ Declares and defines one or more constants.
 ## Syntax  
   
 ```  
-[ <attributelist> ] [ accessmodifier ] [ Shadows ]   
+[ <attributelist> ] [ accessmodifier ] [ Shadows ]   
 Const constantlist  
 ```  
   

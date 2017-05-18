@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostControl interface [.NET Framework hosting]"
 ms.assetid: a4ae0d1f-ade9-4b0a-a122-93ed11a5e6b3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

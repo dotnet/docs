@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -62,6 +63,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -85,6 +87,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -121,6 +124,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -171,12 +175,10 @@
         <block subset="none" type="overrides">
           <para>Inheritors must make the <see cref="M:System.ComponentModel.AsyncOperation.Post(System.Threading.SendOrPostCallback,System.Object)" /> invocation asynchronous, so that class library providers do not need to concern themselves with potential stack overflows if they assume asynchrony but a particular application model happens to be synchronous.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  Console applications do not synchronize the execution of <see cref="M:System.ComponentModel.AsyncOperation.Post(System.Threading.SendOrPostCallback,System.Object)" /> calls. This can cause <see langword="ProgressChanged" /> events to be raised out of order. If you wish to have serialized execution of <see cref="M:System.ComponentModel.AsyncOperation.Post(System.Threading.SendOrPostCallback,System.Object)" /> calls, implement and install a <see cref="T:System.Threading.SynchronizationContext" /> class.  
   
-</para>  
-</block>  
+</para></block>  
   
  For more information about implementing asynchronous classes, see [Implementing the Event-based Asynchronous Pattern](~/docs/standard/asynchronous-programming-patterns/implementing-the-event-based-asynchronous-pattern.md).</para>
         </block>
@@ -190,6 +192,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -251,6 +254,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -278,6 +282,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.EventBasedAsync</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

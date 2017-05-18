@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition</BaseTypeName>
@@ -24,6 +25,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -33,7 +35,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false " />to release only unmanaged resources.</param>
+          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the managed resources that are used by the <see cref="T:System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema" /> object and, optionally, releases unmanaged resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -53,6 +55,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection</ReturnType>
@@ -73,6 +76,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection</ReturnType>
@@ -96,6 +100,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaClassCollection</ReturnType>
@@ -116,6 +121,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection</ReturnType>
@@ -136,6 +142,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection</ReturnType>
@@ -156,6 +163,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReadOnlyActiveDirectorySchemaPropertyCollection</ReturnType>
@@ -179,6 +187,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass</ReturnType>
@@ -207,6 +216,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaClass</ReturnType>
@@ -235,6 +245,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty</ReturnType>
@@ -263,6 +274,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty</ReturnType>
@@ -291,6 +303,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema</ReturnType>
@@ -311,6 +324,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectoryEntry</ReturnType>
@@ -332,6 +346,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema</ReturnType>
@@ -359,6 +374,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -377,6 +393,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DirectoryServer</ReturnType>

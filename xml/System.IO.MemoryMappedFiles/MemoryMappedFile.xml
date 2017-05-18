@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
@@ -59,6 +60,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -112,6 +114,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -138,7 +141,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode> enumeration value to create the memory-mapped file from the source file on disk.  
+ The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode.Open> enumeration value to create the memory-mapped file from the source file on disk.  
   
  ]]></format>
         </remarks>
@@ -177,6 +180,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -205,7 +209,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode> enumeration value to create the memory-mapped file from the source file on disk.  
+ The `mode` parameter pertains to the source file on disk. You can use only the <xref:System.IO.FileMode.Open> enumeration value to create the memory-mapped file from the source file on disk.  
   
  ]]></format>
         </remarks>
@@ -248,6 +252,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -328,6 +333,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -425,6 +431,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -578,6 +585,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -678,6 +686,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -734,6 +743,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -852,6 +862,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -902,6 +913,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -963,6 +975,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1091,6 +1104,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1127,6 +1141,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1185,6 +1200,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1239,6 +1255,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1283,6 +1300,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1334,6 +1352,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1377,7 +1396,7 @@ Process C says: True
   
  -or-  
   
- <paramref name="access " />is not a valid <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFileAccess" /> enumeration value.</exception>
+ <paramref name="access" /> is not a valid <see cref="T:System.IO.MemoryMappedFiles.MemoryMappedFileAccess" /> enumeration value.</exception>
         <exception cref="T:System.UnauthorizedAccessException">
           <paramref name="access" /> is invalid for the memory-mapped file.</exception>
         <exception cref="T:System.IO.IOException">
@@ -1397,6 +1416,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1424,6 +1444,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1484,6 +1505,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1541,6 +1563,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1581,6 +1604,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -1629,6 +1653,7 @@ Process C says: True
       <AssemblyInfo>
         <AssemblyName>System.IO.MemoryMappedFiles</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

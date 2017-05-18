@@ -126,7 +126,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only applicable when the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A> property is set to a value of <xref:System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle>.  
+ This property is only applicable when the <xref:System.Windows.Forms.DataVisualization.Charting.SmartLabelStyle.CalloutStyle%2A> property is set to a value of <xref:System.Windows.Forms.DataVisualization.Charting.LabelCalloutStyle.Box>.  
   
  ]]></format>
         </remarks>
@@ -238,7 +238,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the width of the label callout line.</summary>
-        <value>An <see langword="integer " />value.</value>
+        <value>An <see langword="integer" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

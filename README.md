@@ -1,4 +1,4 @@
-# .NET Documentation
+# .NET Docs
 
 This repo contains work-in-progress documentation for .NET. To contribute, see the [Contributing Guide](CONTRIBUTING.md) and the [issues list](https://github.com/dotnet/docs/issues). 
 
@@ -10,7 +10,6 @@ For more information, see the [.NET Foundation Code of Conduct](https://dotnetfo
 
 Samples Build Status
 ===
-
 
 | Framework | Ubuntu 16.04 (x64) | Windows Server 2012 R2 (x64)  |
 | ------------- |------------| -----|

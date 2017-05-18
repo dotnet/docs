@@ -1,8 +1,8 @@
 '<SnippetFlowDocumentReaderCODEBEHIND>
-Imports System.Windows 'Window
-Imports System.Windows.Documents 'FlowDocument
-Imports System.IO 'FileStream, FileMode
-Imports System.Windows.Markup 'XamlReader
+Imports System.Windows
+Imports System.Windows.Documents
+Imports System.IO
+Imports System.Windows.Markup
 
 Namespace SDKSample
 

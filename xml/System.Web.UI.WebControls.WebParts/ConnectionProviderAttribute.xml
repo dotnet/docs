@@ -61,6 +61,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" /> class, specifying a value to use for the connection point display name, and optionally specifying values to use for the connection point's ID, the connection point type, or both.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A provider control can have multiple methods marked with the `ConnectionProviderAttribute` metadata element. In this case, the provider would have multiple connection points, and each instance of the `ConnectionProviderAttribute` element should specify a unique ID value for the associated connection point, so that the provider's connection points can be distinguished.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ConnectionProviderAttribute (string displayName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string displayName) cil managed" />
@@ -157,7 +174,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="displayName" /> or<paramref name=" connectionPointType" /> is <see langword="null" />.</exception>
+          <paramref name="displayName" /> or <paramref name="connectionPointType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="connectionPointType" /> is not valid.</exception>
       </Docs>
@@ -194,7 +211,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="displayName" />, <paramref name="id, " />or<paramref name=" connectionPointType" /> is <see langword="null" />.</exception>
+          <paramref name="displayName" />, <paramref name="id" />, or <paramref name="connectionPointType" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="connectionPointType" /> is not valid.</exception>
       </Docs>
@@ -338,22 +355,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.UI.WebControls.WebParts.ConnectionProviderAttribute" /> class, specifying a value to use for the connection point display name, and optionally specifying values to use for the connection point's ID, the connection point type, or both.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A provider control can have multiple methods marked with the `ConnectionProviderAttribute` metadata element. In this case, the provider would have multiple connection points, and each instance of the `ConnectionProviderAttribute` element should specify a unique ID value for the associated connection point, so that the provider's connection points can be distinguished.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

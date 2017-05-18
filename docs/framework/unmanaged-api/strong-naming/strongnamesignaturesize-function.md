@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameSignatureSize function [.NET Framework strong naming]"
 ms.assetid: 4fde4cd0-f53e-4411-a2fe-fc5c54472f95
+topic_type: 
+  - "apiref"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -35,7 +37,7 @@ Returns the size of the strong name signature. `StrongNameSignatureSize` is typi
 ## Syntax  
   
 ```  
-BOOLEAN StrongNameSignatureSize (   
+BOOLEAN StrongNameSignatureSize (   
     [in]  BYTE   *pbPublicKeyBlob,  
     [in]  ULONG  cbPublicKeyBlob,   
     [in]  DWORD  *pcbSize  

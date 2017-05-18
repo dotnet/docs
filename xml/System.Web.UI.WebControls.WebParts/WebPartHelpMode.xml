@@ -20,7 +20,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property to display Help for a control in the same browser window. The first part of this example assumes the use of a custom control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart> class overview.  
+ The following code example demonstrates the use of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property to display Help for a control in the same browser window. The first part of this example assumes the use of a custom control, `TextDisplayWebPart`, which is found in the Example section of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> class overview.  
   
  The code example also includes an HTML page that contains fictitious Help content for the `TextDisplayWebPart` control. For this example to work, you must save the following code in a file named Textwebparthelp.htm and place it in the same directory of your site as the .aspx page.  
   
@@ -38,7 +38,7 @@
 </html>  
 ```  
   
- The final part of the example is a Web page that shows how to reference the `TextDisplayWebPart` control. Note that in the declarative markup, the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property value is set to Navigate, and the code also sets the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property to the name of the HTML file that contains the Help content. Load the page into a browser, and click the help verb on the verbs menu of the <xref:System.Web.UI.WebControls.WebParts.WebPart> control.  
+ The final part of the example is a Web page that shows how to reference the `TextDisplayWebPart` control. Note that in the declarative markup, the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpMode%2A> property value is set to Navigate, and the code also sets the value of the <xref:System.Web.UI.WebControls.WebParts.WebPart.HelpUrl%2A> property to the name of the HTML file that contains the Help content. Load the page into a browser, and click the help verb on the verbs menu of the <xref:System.Web.UI.WebControls.WebParts.WebPartHelpMode.Navigate> control.  
   
  <!-- TODO: review snippet reference [!code-csharp[WebParts_WebPart_HelpMode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/CS/helpmodecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[WebParts_WebPart_HelpMode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/WebParts_WebPart_HelpMode/VB/helpmodevb.aspx#1)]  -->  

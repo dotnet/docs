@@ -26,7 +26,7 @@ Pruning a visual tree
    
   
 ## Examples  
- The following example shows how to return a <xref:System.Windows.Media.HitTestFilterBehavior> value from a hit test filter callback method. In this case, the filter skips labels and their descendants and hit tests everything else.  
+ The following example shows how to return a <xref:System.Windows.Media.HitTestFilterBehavior.ContinueSkipSelfAndChildren> value from a hit test filter callback method. In this case, the filter skips labels and their descendants and hit tests everything else.  
   
  [!code-csharp[HitTestingOverview#106](~/samples/snippets/csharp/VS_Snippets_Wpf/HitTestingOverview/CSharp/Window1.xaml.cs#106)]
  [!code-vb[HitTestingOverview#106](~/samples/snippets/visualbasic/VS_Snippets_Wpf/HitTestingOverview/visualbasic/window1.xaml.vb#106)]  

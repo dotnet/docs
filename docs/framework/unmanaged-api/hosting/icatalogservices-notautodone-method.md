@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICatalogServices::NotAutodone method [.NET Framework hosting]"
   - "NotAutodone method [.NET Framework hosting]"
 ms.assetid: 86a09871-33e4-412c-aeb8-4d18f924595b
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

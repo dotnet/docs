@@ -29,7 +29,7 @@
    
   
 ## Examples  
- The following example demonstrates how to determine whether a <xref:System.Windows.Ink.Stroke> is a <xref:System.Windows.Ink.ApplicationGesture> gesture.  
+ The following example demonstrates how to determine whether a <xref:System.Windows.Ink.Stroke> is a <xref:System.Windows.Ink.ApplicationGesture.ScratchOut> gesture.  
   
  [!code-csharp[GestureControl#8](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureControl/CSharp/Gesture.cs#8)]
  [!code-vb[GestureControl#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureControl/VisualBasic/Gesture.vb#8)]  
@@ -84,7 +84,7 @@
    
   
 ## Examples  
- The following example demonstrates how to create a <xref:System.Windows.Ink.GestureRecognizer> that recognizes only the <xref:System.Windows.Ink.ApplicationGesture>, <xref:System.Windows.Ink.ApplicationGesture>, and <xref:System.Windows.Ink.ApplicationGesture> gestures.  
+ The following example demonstrates how to create a <xref:System.Windows.Ink.GestureRecognizer> that recognizes only the <xref:System.Windows.Ink.ApplicationGesture.Down>, <xref:System.Windows.Ink.ApplicationGesture.Right>, and <xref:System.Windows.Ink.ApplicationGesture.ScratchOut> gestures.  
   
  [!code-csharp[GestureControl#4](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureControl/CSharp/Gesture.cs#4)]
  [!code-vb[GestureControl#4](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureControl/VisualBasic/Gesture.vb#4)]  
@@ -211,20 +211,20 @@
   
 |Index|ApplicationGesture|RecognitionConfidence|  
 |-----------|------------------------|---------------------------|  
-|0|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
-|1|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
-|2|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
-|3|<xref:System.Windows.Ink.ApplicationGesture>|<xref:System.Windows.Ink.RecognitionConfidence>|  
+|0|<xref:System.Windows.Ink.ApplicationGesture.Check>|<xref:System.Windows.Ink.RecognitionConfidence.Strong>|  
+|1|<xref:System.Windows.Ink.ApplicationGesture.NoGesture>|<xref:System.Windows.Ink.RecognitionConfidence.Intermediate>|  
+|2|<xref:System.Windows.Ink.ApplicationGesture.Curlicue>|<xref:System.Windows.Ink.RecognitionConfidence.Poor>|  
+|3|<xref:System.Windows.Ink.ApplicationGesture.DoubleCurlicue>|<xref:System.Windows.Ink.RecognitionConfidence.Poor>|  
   
  This means that the <xref:System.Windows.Ink.GestureRecognizer> recognizes that it is very likely that the <xref:System.Windows.Ink.Stroke> is a check mark, relatively likely that the <xref:System.Windows.Ink.Stroke> in not a gesture, and not at all likely that the <xref:System.Windows.Ink.Stroke> is a curlicue or a double curlicue.  
   
 > [!NOTE]
->  The <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> method can return an array with <xref:System.Windows.Ink.ApplicationGesture> at a higher <xref:System.Windows.Ink.RecognitionConfidence> than other application gestures. This means that it is more likely that the <xref:System.Windows.Ink.Stroke> is not a gesture, as opposed to a gesture that has a lower <xref:System.Windows.Ink.RecognitionConfidence>.  
+>  The <xref:System.Windows.Ink.GestureRecognizer.Recognize%2A> method can return an array with <xref:System.Windows.Ink.ApplicationGesture.NoGesture> at a higher <xref:System.Windows.Ink.RecognitionConfidence> than other application gestures. This means that it is more likely that the <xref:System.Windows.Ink.Stroke> is not a gesture, as opposed to a gesture that has a lower <xref:System.Windows.Ink.RecognitionConfidence>.  
   
    
   
 ## Examples  
- The following example demonstrates how to determine whether a <xref:System.Windows.Ink.Stroke> is a <xref:System.Windows.Ink.ApplicationGesture> gesture.  
+ The following example demonstrates how to determine whether a <xref:System.Windows.Ink.Stroke> is a <xref:System.Windows.Ink.ApplicationGesture.ScratchOut> gesture.  
   
  [!code-csharp[GestureControl#8](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureControl/CSharp/Gesture.cs#8)]
  [!code-vb[GestureControl#8](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureControl/VisualBasic/Gesture.vb#8)]  
@@ -255,7 +255,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example demonstrates how to create a <xref:System.Windows.Ink.GestureRecognizer> that recognizes only the <xref:System.Windows.Ink.ApplicationGesture>, <xref:System.Windows.Ink.ApplicationGesture>, and <xref:System.Windows.Ink.ApplicationGesture> gestures.  
+ The following example demonstrates how to create a <xref:System.Windows.Ink.GestureRecognizer> that recognizes only the <xref:System.Windows.Ink.ApplicationGesture.Down>, <xref:System.Windows.Ink.ApplicationGesture.Right>, and <xref:System.Windows.Ink.ApplicationGesture.ScratchOut> gestures.  
   
  [!code-csharp[GestureControl#5](~/samples/snippets/csharp/VS_Snippets_Wpf/GestureControl/CSharp/Gesture.cs#5)]
  [!code-vb[GestureControl#5](~/samples/snippets/visualbasic/VS_Snippets_Wpf/GestureControl/VisualBasic/Gesture.vb#5)]  

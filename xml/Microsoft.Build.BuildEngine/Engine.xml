@@ -35,6 +35,26 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
+  
+ [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
+ [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public Engine ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -373,6 +393,26 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BuildProjectFile">
+      <AssemblyInfo>
+        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads the specified project file and builds the project.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
+  
+ [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
+ [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BuildProjectFile">
       <MemberSignature Language="C#" Value="public bool BuildProjectFile (string projectFile);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool BuildProjectFile(string projectFile) cil managed" />
@@ -978,45 +1018,5 @@ project.EvaluatedProperties[ReservedPropertyNames.toolsPath].FinalValue
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:Microsoft.Build.BuildEngine.Engine" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
- [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="BuildProjectFile">
-      <AssemblyInfo>
-        <AssemblyName>Microsoft.Build.Engine</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads the specified project file and builds the project.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example creates an <xref:Microsoft.Build.BuildEngine.Engine> object and uses the <xref:Microsoft.Build.BuildEngine.Engine.BuildProjectFile%2A> method to build a project file. The <xref:Microsoft.Build.BuildEngine.FileLogger> class is used to log information to a file.  
-  
- [!code-csharp[msbuild_BuildAProject#1](~/samples/snippets/csharp/VS_Snippets_Misc/msbuild_BuildAProject/CS/Program.cs#1)]
- [!code-vb[msbuild_BuildAProject#1](~/samples/snippets/visualbasic/VS_Snippets_Misc/msbuild_BuildAProject/VB/Module1.vb#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

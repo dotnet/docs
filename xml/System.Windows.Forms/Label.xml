@@ -164,12 +164,10 @@
         <value>
           <see langword="true" /> if the control adjusts its width to closely fit its contents; otherwise, <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  When added to a form using the designer, the default value is <see langword="true" />. When instantiated from code, the default value is <see langword="false" />.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -566,7 +564,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
@@ -1635,7 +1633,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can use this property to align the text within a label to match the layout of controls on your form. For example, if your controls are located to the right edge of the labels, you can set the <xref:System.Windows.Forms.Label.TextAlign%2A> property to one of the right-aligned horizontal alignments (<xref:System.Drawing.ContentAlignment>, <xref:System.Drawing.ContentAlignment>, <xref:System.Drawing.ContentAlignment>) and the text will be aligned with the right edge of the labels to align with your controls.  
+ You can use this property to align the text within a label to match the layout of controls on your form. For example, if your controls are located to the right edge of the labels, you can set the <xref:System.Windows.Forms.Label.TextAlign%2A> property to one of the right-aligned horizontal alignments (<xref:System.Drawing.ContentAlignment.TopRight>, <xref:System.Drawing.ContentAlignment.MiddleRight>, <xref:System.Drawing.ContentAlignment.BottomRight>) and the text will be aligned with the right edge of the labels to align with your controls.  
   
  ]]></format>
         </remarks>

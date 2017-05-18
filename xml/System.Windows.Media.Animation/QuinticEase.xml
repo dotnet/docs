@@ -45,8 +45,7 @@
 ## Examples  
  The following example applies a <xref:System.Windows.Media.Animation.QuinticEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create a decelerating animation.  
   
- [!code-xml[QuinticEase#QuinticEase](~/samples/snippets/csharp/VS_Snippets_Wpf/quinticease/CS/window1.xaml#quinticease)]
- <!-- TODO: review snippet reference [!code-xml[QuinticEase#QuinticEase](~/samples/snippets/xaml/VS_Snippets_Wpf/quinticease/xaml/window1.xaml#quinticease)]  -->  
+ [!code-xml[QuinticEase#QuinticEase](~/samples/snippets/csharp/VS_Snippets_Wpf/quinticease/CS/window1.xaml#quinticease)]   
   
  ]]></format>
     </remarks>
@@ -124,9 +123,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
+ This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode.EaseIn> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
   
- You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode> and <xref:System.Windows.Media.Animation.EasingMode> cases.  
+ You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode.EaseIn> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode.EaseOut> and <xref:System.Windows.Media.Animation.EasingMode.EaseInOut> cases.  
   
  ]]></format>
         </remarks>

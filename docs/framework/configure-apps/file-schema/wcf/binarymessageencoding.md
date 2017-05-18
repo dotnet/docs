@@ -34,7 +34,7 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
 <binaryMessageEncoding   
       maxReadPoolSize="Integer"  
    maxSessionSize="Integer"   
-   maxWritePoolSize="Integer"   messageVersion="Soap11Addressing10/Soap12Addressing10” />  
+   maxWritePoolSize="Integer"   messageVersion="Soap11Addressing10/Soap12Addressing10" />  
 ```  
   
 ## Attributes and Elements  

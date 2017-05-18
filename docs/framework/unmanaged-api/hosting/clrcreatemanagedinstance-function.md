@@ -25,6 +25,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ClrCreateManagedInstance function [.NET Framework hosting]"
 ms.assetid: 58ba42c0-4857-43bf-a039-73a4dc6544c2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

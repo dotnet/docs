@@ -14,7 +14,7 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # &lt;activityStateQuery&gt;
-Represents a query that is used to track life cycle changes of the activities that make up a workflow instance. For example, you may want to keep track of every time the “Send E-Mail” activity completes within a workflow instance. This query is necessary for a tracking participant to subscribe to activity state record objects. The available states to subscribe to are specified in ActivityStates.  
+Represents a query that is used to track life cycle changes of the activities that make up a workflow instance. For example, you may want to keep track of every time the "Send E-Mail" activity completes within a workflow instance. This query is necessary for a tracking participant to subscribe to activity state record objects. The available states to subscribe to are specified in ActivityStates.  
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  
   
@@ -60,12 +60,12 @@ Represents a query that is used to track life cycle changes of the activities th
 ```  
   
 <activityStateQuery activityName="SendEmailActivity">  
-  <states>  
-    <state name="Closed"/>  
-  </states>  
-  <variables>  
-    <variable name="FromAddress"/>  
-  </variables>  
+  <states>  
+    <state name="Closed"/>  
+  </states>  
+  <variables>  
+    <variable name="FromAddress"/>  
+  </variables>  
   <arguments>  
     <argument name="Result"/>  
   </arguments>  

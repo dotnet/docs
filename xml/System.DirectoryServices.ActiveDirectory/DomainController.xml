@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.DirectoryServices</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.DirectoryServices.ActiveDirectory.DirectoryServer</BaseTypeName>
@@ -24,6 +25,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -39,6 +41,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -62,6 +65,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
@@ -81,6 +85,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -89,7 +94,7 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">Determines if the managed resources should be released. <see langword="true " />if the managed resources are released; otherwise, <see langword="false" />.</param>
+        <param name="disposing">Determines if the managed resources should be released. <see langword="true" /> if the managed resources are released; otherwise, <see langword="false" />.</param>
         <summary>Causes the object to release all managed and/or unmanaged resources.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -109,6 +114,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.Domain</ReturnType>
@@ -128,6 +134,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.GlobalCatalog</ReturnType>
@@ -156,6 +163,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -174,6 +182,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DomainControllerCollection</ReturnType>
@@ -200,6 +209,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DomainControllerCollection</ReturnType>
@@ -226,6 +236,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DomainController</ReturnType>
@@ -251,6 +262,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DomainController</ReturnType>
@@ -280,6 +292,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DomainController</ReturnType>
@@ -309,6 +322,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DomainController</ReturnType>
@@ -340,6 +354,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.Forest</ReturnType>
@@ -359,6 +374,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection</ReturnType>
@@ -383,6 +399,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.DirectorySearcher</ReturnType>
@@ -404,6 +421,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.DomainController</ReturnType>
@@ -431,6 +449,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationFailureCollection</ReturnType>
@@ -455,6 +474,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationCursorCollection</ReturnType>
@@ -486,6 +506,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryReplicationMetadata</ReturnType>
@@ -517,6 +538,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationNeighborCollection</ReturnType>
@@ -548,6 +570,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationOperationInformation</ReturnType>
@@ -572,6 +595,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -591,6 +615,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection</ReturnType>
@@ -611,6 +636,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -631,6 +657,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -653,6 +680,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -672,6 +700,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ReplicationConnectionCollection</ReturnType>
@@ -692,6 +721,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.ActiveDirectoryRoleCollection</ReturnType>
@@ -711,6 +741,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -742,6 +773,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -763,6 +795,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.DirectoryServices.ActiveDirectory.SyncUpdateCallback</ReturnType>
@@ -783,6 +816,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -799,7 +833,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the replication will only occur with the other domain controllers in the same site. If the `options` parameter contains the <xref:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions> value, then the replication will occur with all domain controllers in the forest.  
+ By default, the replication will only occur with the other domain controllers in the same site. If the `options` parameter contains the <xref:System.DirectoryServices.ActiveDirectory.SyncFromAllServersOptions.CrossSite> value, then the replication will occur with all domain controllers in the forest.  
   
  ]]></format>
         </remarks>
@@ -820,6 +854,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -852,6 +887,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -876,6 +912,7 @@
       <AssemblyInfo>
         <AssemblyName>System.DirectoryServices</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>

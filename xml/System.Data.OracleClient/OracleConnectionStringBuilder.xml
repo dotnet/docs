@@ -37,9 +37,7 @@
   
  The <xref:System.Data.OracleClient.OracleConnectionStringBuilder> handles attempts to insert malicious entries. For example, the following code, using the default <xref:System.Data.OracleClient.OracleConnectionStringBuilder.Item%2A> property (the indexer, in C#) correctly escapes the nested key/value pair.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Dim builder As New System.Data. _  
     OracleClient.OracleConnectionStringBuilder  
 builder("Data Source") = "OracleDemo"  
@@ -48,9 +46,7 @@ builder("User ID") = "Mary;NewValue=Bad"
 System.Diagnostics.Debug.WriteLine(builder.ConnectionString)  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 System.Data.OracleClient.OracleConnectionStringBuilder builder =  
    new System.Data.OracleClient.OracleConnectionStringBuilder();  
 builder["Data Source"] = "OracleDemo";  
@@ -621,7 +617,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
    
   
 ## Examples  
- If the value passed in is null when you try to set the property, the <xref:System.Data.OracleClient.OracleConnectionStringBuilder.Password%2A> property is reset. If the value has not been set and the developer tries to retrieve the property, the return value is <xref:System.String>.  
+ If the value passed in is null when you try to set the property, the <xref:System.Data.OracleClient.OracleConnectionStringBuilder.Password%2A> property is reset. If the value has not been set and the developer tries to retrieve the property, the return value is <xref:System.String.Empty>.  
   
  ]]></format>
         </remarks>
@@ -682,7 +678,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a Boolean value that indicates whether the connection will be pooled, or whether each connection will be explicitly opened every time that the connection is requested.</summary>
-        <value>The value of the <see cref="P:System.Data.OracleClient.OracleConnectionStringBuilder.Pooling" /> property, or <see langword="true " />if none has been supplied.</value>
+        <value>The value of the <see cref="P:System.Data.OracleClient.OracleConnectionStringBuilder.Pooling" /> property, or <see langword="true" /> if none has been supplied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -847,7 +843,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
       </ReturnValue>
       <Docs>
         <summary>Gets or sets a Boolean value that indicates if the client supports the Unicode functionality available in later Oracle clients, or if it is non-Unicode aware.</summary>
-        <value>The value of the <see cref="P:System.Data.OracleClient.OracleConnectionStringBuilder.Unicode" /> property, or <see langword="false " />if none has been supplied.</value>
+        <value>The value of the <see cref="P:System.Data.OracleClient.OracleConnectionStringBuilder.Unicode" /> property, or <see langword="false" /> if none has been supplied.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -887,7 +883,7 @@ Data Source=OracleDemo;Integrated Security=True;User ID="Mary;NewValue=Bad"
 ## Remarks  
  This property corresponds to the "User ID", "user", and "uid" keys within the connection string.  
   
- If the value passed in is null when you try to set the property, the <xref:System.Data.OracleClient.OracleConnectionStringBuilder.UserID%2A> property is reset. If the value has not been set and the developer tries to retrieve the property, the return value is <xref:System.String>.  
+ If the value passed in is null when you try to set the property, the <xref:System.Data.OracleClient.OracleConnectionStringBuilder.UserID%2A> property is reset. If the value has not been set and the developer tries to retrieve the property, the return value is <xref:System.String.Empty>.  
   
  ]]></format>
         </remarks>

@@ -24,7 +24,7 @@
   
 -   uninstallpagepersonalization.sql – Uninstalls the personalization tables, views, and related stored procedures.  
   
- It is important to be aware that personalization will fail if your Web application does not run at the default trust level of <xref:System.Web.AspNetHostingPermissionLevel> or higher (you can set custom trust levels in a Web.config file using the `<trust level="" />` element). The <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration> and <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> classes both check for a trust level of <xref:System.Web.AspNetHostingPermissionLevel> when they are initialized. If you configure your application to run at a trust level of <xref:System.Web.AspNetHostingPermissionLevel>, and you use the default <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> provider to manage the personalization data for your application, the first time that the application tries to access personalization data, it will fail because an ASP.NET worker process running in <xref:System.Web.AspNetHostingPermissionLevel> trust does not have the permissions necessary to call into the various classes in the <xref:System.Data.SqlClient> namespace.  
+ It is important to be aware that personalization will fail if your Web application does not run at the default trust level of <xref:System.Web.AspNetHostingPermissionLevel.Medium> or higher (you can set custom trust levels in a Web.config file using the `<trust level="" />` element). The <xref:System.Web.UI.WebControls.WebParts.PersonalizationAdministration> and <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> classes both check for a trust level of <xref:System.Web.AspNetHostingPermissionLevel.Low> when they are initialized. If you configure your application to run at a trust level of <xref:System.Web.AspNetHostingPermissionLevel.Low>, and you use the default <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> provider to manage the personalization data for your application, the first time that the application tries to access personalization data, it will fail because an ASP.NET worker process running in <xref:System.Web.AspNetHostingPermissionLevel.Low> trust does not have the permissions necessary to call into the various classes in the <xref:System.Data.SqlClient> namespace.  
   
  ]]></format>
     </remarks>
@@ -114,7 +114,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The set of returned items is constrained by the `pageSize` and `pageIndex` parameters, where `pageSize` controls the number of records to return and `pageIndex` controls which records to return. For example, a `pageIndex` of 0 and a `pageSize` of 25 would return the first 25 occurrences, while a `pageIndex` of 1 and a `pageSize` of 25 would return occurrences 26-50. If you want to fetch all available records, set `pageIndex` to 0, and `pageSize` to <xref:System.Int32>.  
+ The set of returned items is constrained by the `pageSize` and `pageIndex` parameters, where `pageSize` controls the number of records to return and `pageIndex` controls which records to return. For example, a `pageIndex` of 0 and a `pageSize` of 25 would return the first 25 occurrences, while a `pageIndex` of 1 and a `pageSize` of 25 would return occurrences 26-50. If you want to fetch all available records, set `pageIndex` to 0, and `pageSize` to <xref:System.Int32.MaxValue>.  
   
  The <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo>-derived objects are returned in alphabetical order sorted by <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateInfo.Path%2A> and <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.Username%2A>, both in ascending order.  
   
@@ -138,9 +138,9 @@
   
  Parameter combinations that have the potential to return a non-empty collection include:  
   
--   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope in combination with <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>.  
+-   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope in combination with <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>.  
   
--   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope in combination with the values for any or all of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties.  
+-   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope in combination with the values for any or all of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties.  
   
  ]]></format>
         </remarks>
@@ -170,7 +170,7 @@
  \- or -  
   
  The length of <see cref="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch" /> is greater than 256 characters when the value is non-<see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The<paramref name=" scope" /> specified is not a valid value from the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="scope" /> specified is not a valid value from the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetCountOfState">
@@ -218,9 +218,9 @@
   
  Parameter combinations that have the potential to return a non-empty collection include:  
   
--   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope in combination with <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>.  
+-   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope in combination with <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>.  
   
--   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope in combination with the values for any or all of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties.  
+-   <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope in combination with the values for any or all of the <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.PathToMatch%2A>, <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch%2A>, and <xref:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UserInactiveSinceDate%2A> properties.  
   
  ]]></format>
         </remarks>
@@ -238,7 +238,7 @@
  \- or -  
   
  The length of <see cref="P:System.Web.UI.WebControls.WebParts.PersonalizationStateQuery.UsernameToMatch" /> is greater than 256 characters when the value is non-<see langword="null" />.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The<paramref name=" scope" /> specified is not a valid value from the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="scope" /> specified is not a valid value from the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
       </Docs>
     </Member>
     <Member MemberName="Initialize">
@@ -322,9 +322,9 @@
 ## Remarks  
  This method uses the `webPartManager`, `path`, and `username` parameters as retrieval keys. The returned data contains:  
   
--   The <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> data returned in the `sharedDataBlob` parameter.  
+-   The <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> data returned in the `sharedDataBlob` parameter.  
   
--   Depending on the key values, <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> data is returned in the `userDataBlob` parameter. A non-`null` value for the `userName` parameter indicates that <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> data is also retrieved.  
+-   Depending on the key values, <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> data is returned in the `userDataBlob` parameter. A non-`null` value for the `userName` parameter indicates that <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> data is also retrieved.  
   
  The <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> object automatically updates the <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> column in the `aspnet_Users` table each time user-specific personalization data is loaded from the database in the context of a page request. This behavior allows other ASP.NET features to use the <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property when managing stale data records as well as determining recent user activity on a site.  
   
@@ -358,7 +358,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> uses this method to delete personalization data from the database when a Web site user chooses to reset Web Parts data on a page. If `username` is non-`null`, data with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope data is deleted; otherwise, data with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope is deleted.  
+ <xref:System.Web.UI.WebControls.WebParts.WebPartPersonalization> uses this method to delete personalization data from the database when a Web site user chooses to reset Web Parts data on a page. If `username` is non-`null`, data with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope data is deleted; otherwise, data with the <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope is deleted.  
   
  The <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> object automatically updates the <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> column in the `aspnet_Users` table each time user-specific personalization data is deleted from the database in the context of a page request. This behavior allows other ASP.NET features to use the <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> value when managing stale data records as well as determining recent user activity on a site.  
   
@@ -401,13 +401,13 @@
   
 -   The `scope` parameter is set, and the `paths` parameter contains at least one value. This combination deletes all Web Parts personalization data for the specified path or paths that are in the personalization scope indicated by `scope`.  
   
--   The `scope` parameter is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>, the `paths` parameter is set and contains only one path, and the `usernames` parameter contains at least one value. This combination deletes all user personalization Web Parts data for the given path that is associated with the user or users contained in `usernames`.  
+-   The `scope` parameter is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User>, the `paths` parameter is set and contains only one path, and the `usernames` parameter contains at least one value. This combination deletes all user personalization Web Parts data for the given path that is associated with the user or users contained in `usernames`.  
   
--   The `scope` parameter is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>, the `paths` parameter is `null`, and the `usernames` parameter contains at least one value. This combination deletes all per-user personalization Web Parts data, across all paths, associated with the user or users contained in `usernames`.  
+-   The `scope` parameter is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User>, the `paths` parameter is `null`, and the `usernames` parameter contains at least one value. This combination deletes all per-user personalization Web Parts data, across all paths, associated with the user or users contained in `usernames`.  
   
  Any other combination of parameter values is invalid and will throw an <xref:System.ArgumentException> exception. For example, the following two combinations are not allowed:  
   
--   The `usernames` parameter cannot be provided when the `scope` parameter is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>.  
+-   The `usernames` parameter cannot be provided when the `scope` parameter is set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared>.  
   
 -   The `paths` parameter cannot contain more than one entry when the `usernames` parameter is not `null`.  
   
@@ -430,7 +430,7 @@
  \- or -  
   
  The <paramref name="paths" /> and <paramref name="usernames" /> parameters contained within the respective arrays do not meet the validation rules.</exception>
-        <exception cref="T:System.ArgumentOutOfRangeException">The<paramref name=" scope" /> specified is not a member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="scope" /> specified is not a member of the <see cref="T:System.Web.UI.WebControls.WebParts.PersonalizationScope" /> enumeration.</exception>
       </Docs>
     </Member>
     <Member MemberName="ResetUserState">
@@ -512,7 +512,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a non-`null` user name is provided, then the `dataBlob` parameter contains personalization data for <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope; otherwise, `dataBlob` is assumed to contain data for <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> scope.  
+ If a non-`null` user name is provided, then the `dataBlob` parameter contains personalization data for <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> scope; otherwise, `dataBlob` is assumed to contain data for <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> scope.  
   
  The <xref:System.Web.UI.WebControls.WebParts.SqlPersonalizationProvider> object automatically updates the <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> column in the `aspnet_Users` table each time user-specific personalization data is saved to the database in the context of a page request. This behavior allows other ASP.NET features to use the <xref:System.Web.UI.WebControls.WebParts.UserPersonalizationStateInfo.LastActivityDate%2A> property when managing stale data records as well as determining recent user activity on a site.  
   

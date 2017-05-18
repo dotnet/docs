@@ -62,7 +62,7 @@
   
 |Element|Attributes|Output|Notes|  
 |-------------|----------------|------------|-----------|  
-|`CallStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|Special characters such as > or < are replaced with escape sequences. See the escaped character translation table in the next table.|  
+|`CallStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions.Callstack> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|Special characters such as > or < are replaced with escape sequences. See the escaped character translation table in the next table.|  
 |`Computer`|None|Always present.|This element represents the value of the <xref:System.Environment.MachineName%2A> property.|  
 |`Correlation`|`ActivityID`|Always present.|If `ActivityID` is not specified, the default is an empty GUID.|  
 ||`RelatedActivityID`|Depends on the presence of the `relatedActivityId` parameter in the `Trace` method call.|The `RelatedActivityID` attribute corresponds to the `relatedActivityId` parameter of the <xref:System.Diagnostics.EventSchemaTraceListener.TraceTransfer%2A> method.|  
@@ -70,16 +70,16 @@
 |`Event`|None|Always present.|This element contains a trace event.|  
 |`EventData`|None|Present for event logs.|This element represents parameter input (`message`, `args`). It contains `Data` elements with escaped XML data that is created by calling the <xref:System.Diagnostics.EventSchemaTraceListener.TraceEvent%2A> method.|  
 |`EventID`|None|Always present.|This element represents parameter input (`id`).|  
-|`Execution`|`ProcessID`|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The `ProcessID` attribute is specified in the <xref:System.Diagnostics.TraceEventCache>. On the Microsoft Windows 98 and Windows Millenium Edition operating systems, if `ProcessID` is larger than 2,147,483,647, it is a positive representation of a negative number and should be converted to obtain the correct process identifier.|  
+|`Execution`|`ProcessID`|Depends on the presence of the <xref:System.Diagnostics.TraceOptions.ProcessId> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The `ProcessID` attribute is specified in the <xref:System.Diagnostics.TraceEventCache>. On the Microsoft Windows 98 and Windows Millenium Edition operating systems, if `ProcessID` is larger than 2,147,483,647, it is a positive representation of a negative number and should be converted to obtain the correct process identifier.|  
 ||`ThreadID`|Present when `ProcessID` is present.|The `ThreadID` attribute is specified in the <xref:System.Diagnostics.TraceEventCache>.|  
-|`Level`|None|Always present.|This element represents parameter input (the numeric value of `eventType`). Parameter values that are larger than 255 are output as a level 8, which represents <xref:System.Diagnostics.TraceEventType?displayProperty=fullName>. Trace event types <xref:System.Diagnostics.TraceEventType>, <xref:System.Diagnostics.TraceEventType>, <xref:System.Diagnostics.TraceEventType>, <xref:System.Diagnostics.TraceEventType>, and <xref:System.Diagnostics.TraceEventType> are output as levels 1, 2, 4, 8, and 10, respectively.|  
-|`LogicalOperationStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|Only one logical operation can exist. Therefore, the values are written as `LogicalOperation` nodes under the `LogicalOperationStack` element.|  
-|`OpCode`|None|Present when `Level` is greater than 255.|This element represents Trace event types that have numeric values greater than 255. <xref:System.Diagnostics.TraceEventType>, <xref:System.Diagnostics.TraceEventType>, <xref:System.Diagnostics.TraceEventType>, <xref:System.Diagnostics.TraceEventType>, or <xref:System.Diagnostics.TraceEventType> are output as levels 1, 2, 4, 8, and 10, respectively.|  
+|`Level`|None|Always present.|This element represents parameter input (the numeric value of `eventType`). Parameter values that are larger than 255 are output as a level 8, which represents <xref:System.Diagnostics.TraceEventType?displayProperty=fullName>. Trace event types <xref:System.Diagnostics.TraceEventType.Critical>, <xref:System.Diagnostics.TraceEventType.Error>, <xref:System.Diagnostics.TraceEventType.Warning>, <xref:System.Diagnostics.TraceEventType.Information>, and <xref:System.Diagnostics.TraceEventType.Verbose> are output as levels 1, 2, 4, 8, and 10, respectively.|  
+|`LogicalOperationStack`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions.LogicalOperationStack> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|Only one logical operation can exist. Therefore, the values are written as `LogicalOperation` nodes under the `LogicalOperationStack` element.|  
+|`OpCode`|None|Present when `Level` is greater than 255.|This element represents Trace event types that have numeric values greater than 255. <xref:System.Diagnostics.TraceEventType.Start>, <xref:System.Diagnostics.TraceEventType.Stop>, <xref:System.Diagnostics.TraceEventType.Suspend>, <xref:System.Diagnostics.TraceEventType.Resume>, or <xref:System.Diagnostics.TraceEventType.Transfer> are output as levels 1, 2, 4, 8, and 10, respectively.|  
 |`Provider`|`GUID`|Always present.|Always empty.|  
 |`RenderingInfo`|`Culture`|Always present.|This attribute represents a resource string for the event type. It is always "en-EN\\".|  
 |`System`|`Name`|Always present.||  
-|`TimeCreated`|`SystemTime`|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The time is the value of the <xref:System.Diagnostics.TraceEventCache.DateTime%2A?displayProperty=fullName> property. This property is expressed as Coordinated Universal Time|  
-|`TimeStamp`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|This element is specified in the <xref:System.Diagnostics.TraceEventCache>.|  
+|`TimeCreated`|`SystemTime`|Depends on the presence of the <xref:System.Diagnostics.TraceOptions.DateTime> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|The time is the value of the <xref:System.Diagnostics.TraceEventCache.DateTime%2A?displayProperty=fullName> property. This property is expressed as Coordinated Universal Time|  
+|`TimeStamp`|None|Depends on the presence of the <xref:System.Diagnostics.TraceOptions.Timestamp> flag in the <xref:System.Diagnostics.TraceListener.TraceOutputOptions%2A> property.|This element is specified in the <xref:System.Diagnostics.TraceEventCache>.|  
 |`UserData`|None|Present for data logs.|This element contains `Data` elements with unescaped, user-provided data from a <xref:System.Diagnostics.EventSchemaTraceListener.TraceData%2A> method.|  
   
  The following table shows the characters that are escaped in the XML output. Escaping occurs in all the elements and attributes except for the `UserData` element, which contains user-provided, unescaped data. The `UserData` element is a result of calls to the <xref:System.Diagnostics.EventSchemaTraceListener.TraceData%2A> method.  
@@ -510,11 +510,11 @@
   
 |TraceLogRetentionOption|Maximum file size|Default file size|  
 |-----------------------------|-----------------------|-----------------------|  
-|<xref:System.Diagnostics.TraceLogRetentionOption>|N/A|-1|  
-|<xref:System.Diagnostics.TraceLogRetentionOption>|>0|4 KB|  
-|<xref:System.Diagnostics.TraceLogRetentionOption>|>0|4 KB|  
-|<xref:System.Diagnostics.TraceLogRetentionOption>|>0|4 KB|  
-|<xref:System.Diagnostics.TraceLogRetentionOption>|>0|4 KB|  
+|<xref:System.Diagnostics.TraceLogRetentionOption.LimitedCircularFiles>|N/A|-1|  
+|<xref:System.Diagnostics.TraceLogRetentionOption.LimitedSequentialFiles>|>0|4 KB|  
+|<xref:System.Diagnostics.TraceLogRetentionOption.SingleFileBoundedSize>|>0|4 KB|  
+|<xref:System.Diagnostics.TraceLogRetentionOption.SingleFileUnboundedSize>|>0|4 KB|  
+|<xref:System.Diagnostics.TraceLogRetentionOption.UnlimitedSequentialFiles>|>0|4 KB|  
   
    
   
@@ -553,11 +553,11 @@
   
 |TraceLogRetentionOption|Maximum number of files|Default number of files|  
 |-----------------------------|-----------------------------|-----------------------------|  
-|<xref:System.Diagnostics.TraceLogRetentionOption>|N/A|1|  
-|<xref:System.Diagnostics.TraceLogRetentionOption>|N/A|1|  
-|<xref:System.Diagnostics.TraceLogRetentionOption>|N/A|-1|  
-|<xref:System.Diagnostics.TraceLogRetentionOption>|>0|1|  
-|<xref:System.Diagnostics.TraceLogRetentionOption>|>1|2|  
+|<xref:System.Diagnostics.TraceLogRetentionOption.LimitedCircularFiles>|N/A|1|  
+|<xref:System.Diagnostics.TraceLogRetentionOption.LimitedSequentialFiles>|N/A|1|  
+|<xref:System.Diagnostics.TraceLogRetentionOption.SingleFileBoundedSize>|N/A|-1|  
+|<xref:System.Diagnostics.TraceLogRetentionOption.SingleFileUnboundedSize>|>0|1|  
+|<xref:System.Diagnostics.TraceLogRetentionOption.UnlimitedSequentialFiles>|>1|2|  
   
    
   
@@ -824,7 +824,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.EventSchemaTraceListener.TraceTransfer%2A> method is used to correlate related traces. The `eventCache`, `source`, `id`, and `relatedActivityId` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before it is written. Therefore, a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Data` element. The <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method is called to convert the `relatedActivityId` value to a "B" formatted string, which appears in the header. The `Opcode` element in the footer identifies the trace event type as a <xref:System.Diagnostics.TraceEventType>.  
+ The <xref:System.Diagnostics.EventSchemaTraceListener.TraceTransfer%2A> method is used to correlate related traces. The `eventCache`, `source`, `id`, and `relatedActivityId` parameters are used in the header and footer of the trace. The `id` parameter is converted to an unsigned integer before it is written. Therefore, a negative `id` value is written as a large positive integer. The `message` parameter is written as the `Data` element. The <xref:System.Guid.ToString%28System.String%29?displayProperty=fullName> method is called to convert the `relatedActivityId` value to a "B" formatted string, which appears in the header. The `Opcode` element in the footer identifies the trace event type as a <xref:System.Diagnostics.TraceEventType.Transfer>.  
   
 > [!IMPORTANT]
 >  The <xref:System.Diagnostics.EventSchemaTraceListener.TraceTransfer%2A> method should not be called by application code. It is intended to be used by a <xref:System.Diagnostics.TraceSource> object to emit the trace information for its <xref:System.Diagnostics.TraceSource.TraceTransfer%2A> method.  
@@ -855,7 +855,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.EventSchemaTraceListener.TraceEvent%2A> method is called to log the message as an <xref:System.Diagnostics.TraceEventType> event.  
+ The <xref:System.Diagnostics.EventSchemaTraceListener.TraceEvent%2A> method is called to log the message as an <xref:System.Diagnostics.TraceEventType.Information> event.  
   
 > [!IMPORTANT]
 >  This method is not intended to be called directly by application code. It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  
@@ -886,7 +886,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.EventSchemaTraceListener.TraceEvent%2A> method is called to log the message as an <xref:System.Diagnostics.TraceEventType> event.  
+ The <xref:System.Diagnostics.EventSchemaTraceListener.TraceEvent%2A> method is called to log the message as an <xref:System.Diagnostics.TraceEventType.Information> event.  
   
 > [!IMPORTANT]
 >  This method is not intended to be called directly by application code. It is called by methods of the <xref:System.Diagnostics.Debug>, <xref:System.Diagnostics.Trace>, and <xref:System.Diagnostics.TraceSource> classes to write trace data.  

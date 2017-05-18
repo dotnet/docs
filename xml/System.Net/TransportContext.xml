@@ -6,6 +6,7 @@
     <AssemblyName>System.Net.Primitives</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -46,6 +47,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -70,6 +72,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Primitives</AssemblyName>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -94,9 +97,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The possible values for the `kind` parameter are <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind> or <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind>.  
+ The possible values for the `kind` parameter are <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint> or <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Unique>.  
   
- If an application attempts to retrieve the channel binding token (CBT) from the <xref:System.Net.HttpListenerRequest.TransportContext%2A> property using the <xref:System.Net.TransportContext.GetChannelBinding%2A> method and the <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind> is not <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind>, then the <xref:System.Net.HttpListenerRequest> will throw <xref:System.NotSupportedException>. The <xref:System.Net.HttpListenerRequest> overrides the <xref:System.Net.TransportContext.GetChannelBinding%2A> method with an internal implementation  
+ If an application attempts to retrieve the channel binding token (CBT) from the <xref:System.Net.HttpListenerRequest.TransportContext%2A> property using the <xref:System.Net.TransportContext.GetChannelBinding%2A> method and the <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind> is not <xref:System.Security.Authentication.ExtendedProtection.ChannelBindingKind.Endpoint>, then the <xref:System.Net.HttpListenerRequest> will throw <xref:System.NotSupportedException>. The <xref:System.Net.HttpListenerRequest> overrides the <xref:System.Net.TransportContext.GetChannelBinding%2A> method with an internal implementation  
   
  ]]></format>
         </remarks>

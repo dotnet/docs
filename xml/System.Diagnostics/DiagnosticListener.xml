@@ -6,6 +6,7 @@
     <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.1.0</AssemblyVersion>
+    <AssemblyVersion>4.0.2.0</AssemblyVersion>
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Diagnostics.DiagnosticSource</BaseTypeName>
@@ -32,6 +33,7 @@
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
@@ -51,6 +53,7 @@
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IObservable&lt;System.Diagnostics.DiagnosticListener&gt;</ReturnType>
@@ -70,6 +73,7 @@
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -77,6 +81,25 @@
       <Parameters />
       <Docs>
         <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public bool IsEnabled ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool IsEnabled() cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.IsEnabled" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -89,6 +112,7 @@
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -103,6 +127,32 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <Member MemberName="IsEnabled">
+      <MemberSignature Language="C#" Value="public override bool IsEnabled (string name, object arg1, object arg2 = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool IsEnabled(string name, object arg1, object arg2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.IsEnabled(System.String,System.Object,System.Object)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="arg1" Type="System.Object" />
+        <Parameter Name="arg2" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="name">To be added.</param>
+        <param name="arg1">To be added.</param>
+        <param name="arg2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="Name">
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
@@ -112,6 +162,7 @@
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -123,7 +174,7 @@
       </Docs>
     </Member>
     <Member MemberName="Subscribe">
-      <MemberSignature Language="C#" Value="public IDisposable Subscribe (IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; observer);" />
+      <MemberSignature Language="C#" Value="public virtual IDisposable Subscribe (IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; observer);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable Subscribe(class System.IObserver`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; observer) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Subscribe(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}})" />
       <MemberType>Method</MemberType>
@@ -131,6 +182,7 @@
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -146,6 +198,30 @@
       </Docs>
     </Member>
     <Member MemberName="Subscribe">
+      <MemberSignature Language="C#" Value="public virtual IDisposable Subscribe (IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; observer, Func&lt;string,object,object,bool&gt; isEnabled);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable Subscribe(class System.IObserver`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; observer, class System.Func`4&lt;string, object, object, bool&gt; isEnabled) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Subscribe(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Func{System.String,System.Object,System.Object,System.Boolean})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.IDisposable</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="observer" Type="System.IObserver&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;" />
+        <Parameter Name="isEnabled" Type="System.Func&lt;System.String,System.Object,System.Object,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="observer">To be added.</param>
+        <param name="isEnabled">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Subscribe">
       <MemberSignature Language="C#" Value="public virtual IDisposable Subscribe (IObserver&lt;System.Collections.Generic.KeyValuePair&lt;string,object&gt;&gt; observer, Predicate&lt;string&gt; isEnabled);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.IDisposable Subscribe(class System.IObserver`1&lt;valuetype System.Collections.Generic.KeyValuePair`2&lt;string, object&gt;&gt; observer, class System.Predicate`1&lt;string&gt; isEnabled) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Subscribe(System.IObserver{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Predicate{System.String})" />
@@ -154,6 +230,7 @@
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IDisposable</ReturnType>
@@ -191,14 +268,15 @@
       </Docs>
     </Member>
     <Member MemberName="Write">
-      <MemberSignature Language="C#" Value="public override void Write (string name, object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object value) cil managed" />
+      <MemberSignature Language="C#" Value="public override void Write (string name, object parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Write(string name, object parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.1.0</AssemblyVersion>
+        <AssemblyVersion>4.0.2.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -209,7 +287,7 @@
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
+        <param name="parameters">To be added.</param>
         <summary>To be added.</summary>
         <remarks>To be added.</remarks>
       </Docs>

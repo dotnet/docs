@@ -185,7 +185,7 @@
   
  This method iterates all the <xref:System.Data.Objects.ObjectStateEntry> objects within the <xref:System.Data.Objects.ObjectStateManager> that are Added or Modified, and then sets the state of the entry to Unchanged. The Deleted items become detached.  
   
- If the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method was called and the <xref:System.Data.Objects.SaveOptions> was not specified, the user must call the <xref:System.Data.Objects.ObjectContext.AcceptAllChanges%2A> method. The <xref:System.Data.Objects.ObjectContext.AcceptAllChanges%2A> method is useful in the scenario where a transaction has failed and a user wants to retry.  
+ If the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method was called and the <xref:System.Data.Objects.SaveOptions.AcceptAllChangesAfterSave> was not specified, the user must call the <xref:System.Data.Objects.ObjectContext.AcceptAllChanges%2A> method. The <xref:System.Data.Objects.ObjectContext.AcceptAllChanges%2A> method is useful in the scenario where a transaction has failed and a user wants to retry.  
   
  ]]></format>
         </remarks>
@@ -217,7 +217,7 @@
 ## Remarks  
  Call <xref:System.Data.Objects.ObjectContext.AddObject%2A> on the <xref:System.Data.Objects.ObjectContext> to add the object to the object context. Do this when the object is a new object that does not yet exist in the data source. For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/en-us/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
   
- Objects are added to the <xref:System.Data.Objects.ObjectStateManager> in the <xref:System.Data.EntityState>, <xref:System.Data.EntityState> or <xref:System.Data.EntityState> state.  
+ Objects are added to the <xref:System.Data.Objects.ObjectStateManager> in the <xref:System.Data.EntityState.Detached>, <xref:System.Data.EntityState.Deleted> or <xref:System.Data.EntityState.Added> state.  
   
  When you create a new object that is related to another object in the object context, add the object by using one of the following methods:  
   
@@ -405,9 +405,9 @@
 ## Remarks  
  The <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A> method is used to apply property changes from a modified, detached version of an object to the original version attached to the <xref:System.Data.Objects.ObjectContext>. This supports scenarios, such as Web services, where an entity object is detached and sent to a remote application where property updates are made. This method enables you to more easily apply these changes back to the original object.  
   
- After <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A>, the object is in the <xref:System.Data.EntityState> state. You must call the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method to update the data source.  
+ After <xref:System.Data.Objects.ObjectContext.ApplyCurrentValues%2A>, the object is in the <xref:System.Data.EntityState.Modified> state. You must call the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method to update the data source.  
   
- The original object must exist in the <xref:System.Data.Objects.ObjectStateManager> and must be in the <xref:System.Data.EntityState> or <xref:System.Data.EntityState> state. The original object is only modified if there are modified properties in the `changed` object.  
+ The original object must exist in the <xref:System.Data.Objects.ObjectStateManager> and must be in the <xref:System.Data.EntityState.Modified> or <xref:System.Data.EntityState.Unchanged> state. The original object is only modified if there are modified properties in the `changed` object.  
   
  The <xref:System.Data.Objects.DataClasses.EntityObject.EntityKey%2A> property of the supplied object must be set to a valid <xref:System.Data.EntityKey>.  
   
@@ -1289,7 +1289,7 @@
   
  All parameters for the function are required in the parameters array and all types are checked against the metadata for the import function, including the type of the function itself. `null` values are permitted for CLR value types. Parameter validation is performed by the provider.  
   
- The <xref:System.Data.Objects.ObjectContext.ExecuteFunction%2A> method uses the <xref:System.Data.Objects.MergeOption> value of <xref:System.Data.Objects.MergeOption>. Therefore, if an object already exists in the object context, it will not be loaded from the data source.  
+ The <xref:System.Data.Objects.ObjectContext.ExecuteFunction%2A> method uses the <xref:System.Data.Objects.MergeOption> value of <xref:System.Data.Objects.MergeOption.AppendOnly>. Therefore, if an object already exists in the object context, it will not be loaded from the data source.  
   
  ]]></format>
         </remarks>
@@ -1580,7 +1580,7 @@
   
  <xref:System.Data.Objects.ObjectContext.GetObjectByKey%2A> raises an <xref:System.Data.ObjectNotFoundException> when the object cannot be found. To avoid handling this exception, instead use the <xref:System.Data.Objects.ObjectContext.TryGetObjectByKey%2A> method.  
   
- This method will return objects in the <xref:System.Data.EntityState> state.  
+ This method will return objects in the <xref:System.Data.EntityState.Deleted> state.  
   
  A temporary key cannot be used to return an object from the data source.  
   
@@ -1627,6 +1627,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="LoadProperty">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Explicitly loads a related object when you are using POCO custom data classes.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd%601>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=fullName> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="LoadProperty">
       <MemberSignature Language="C#" Value="public void LoadProperty (object entity, string navigationProperty);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void LoadProperty(object entity, string navigationProperty) cil managed" />
@@ -1657,7 +1674,7 @@
   
  When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd%601>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=fullName> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
   
- When the <xref:System.Data.Objects.ObjectContext.LoadProperty%2A> method is called, objects are loaded into the <xref:System.Data.Objects.ObjectContext> by using the default <xref:System.Data.Objects.MergeOption> value of <xref:System.Data.Objects.MergeOption>.  
+ When the <xref:System.Data.Objects.ObjectContext.LoadProperty%2A> method is called, objects are loaded into the <xref:System.Data.Objects.ObjectContext> by using the default <xref:System.Data.Objects.MergeOption> value of <xref:System.Data.Objects.MergeOption.AppendOnly>.  
   
  ]]></format>
         </remarks>
@@ -1914,6 +1931,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Refresh">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Updates specific objects in the object context with data from the data source.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The order in which objects are refreshed is nondeterministic.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Refresh">
       <MemberSignature Language="C#" Value="public void Refresh (System.Data.Objects.RefreshMode refreshMode, System.Collections.IEnumerable collection);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Refresh(valuetype System.Data.Objects.RefreshMode refreshMode, class System.Collections.IEnumerable collection) cil managed" />
@@ -1942,9 +1976,9 @@
   
  The order in which objects are refreshed is nondeterministic.  
   
- After <xref:System.Data.Objects.ObjectContext.Refresh%2A> is called, the object’s original values will always be updated with the data source value, but the current values might or might not be updated with the data source value. This depends on the <xref:System.Data.Objects.RefreshMode> value. The <xref:System.Data.Objects.RefreshMode> mode means that the objects in the collection should be updated to match the data source values. <xref:System.Data.Objects.RefreshMode> means that only the changes in the object context will be persisted, even if there have been other changes in the data source.  
+ After <xref:System.Data.Objects.ObjectContext.Refresh%2A> is called, the object’s original values will always be updated with the data source value, but the current values might or might not be updated with the data source value. This depends on the <xref:System.Data.Objects.RefreshMode> value. The <xref:System.Data.Objects.RefreshMode.StoreWins> mode means that the objects in the collection should be updated to match the data source values. <xref:System.Data.Objects.RefreshMode.ClientWins> means that only the changes in the object context will be persisted, even if there have been other changes in the data source.  
   
- To ensure that objects have been updated by data source-side logic, you can call <xref:System.Data.Objects.ObjectContext.Refresh%2A> with <xref:System.Data.Objects.RefreshMode> after you call the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method.  
+ To ensure that objects have been updated by data source-side logic, you can call <xref:System.Data.Objects.ObjectContext.Refresh%2A> with <xref:System.Data.Objects.RefreshMode.StoreWins> after you call the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method.  
   
  ]]></format>
         </remarks>
@@ -1988,9 +2022,9 @@
   
  The order in which objects are refreshed is nondeterministic.  
   
- After the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method is called, the object’s original values will always be updated with the data source value, but the current values might or might not be updated with the data source value. This depends on the <xref:System.Data.Objects.RefreshMode>. The <xref:System.Data.Objects.RefreshMode> mode means that the object should be updated to match the data source values. The <xref:System.Data.Objects.RefreshMode> value means that only the changes in the object context will be persisted, even if there have been other changes in the data source.  
+ After the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method is called, the object’s original values will always be updated with the data source value, but the current values might or might not be updated with the data source value. This depends on the <xref:System.Data.Objects.RefreshMode>. The <xref:System.Data.Objects.RefreshMode.StoreWins> mode means that the object should be updated to match the data source values. The <xref:System.Data.Objects.RefreshMode.ClientWins> value means that only the changes in the object context will be persisted, even if there have been other changes in the data source.  
   
- To ensure that an object has been updated by data source-side logic, you can call the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode> value after you call the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method.  
+ To ensure that an object has been updated by data source-side logic, you can call the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> value after you call the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method.  
   
    
   
@@ -2034,11 +2068,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- To ensure that objects on the client have been updated by data source-side logic, you can call the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode> value after you call <xref:System.Data.Objects.ObjectContext.SaveChanges%2A>. For more information, see [Saving Changes and Managing Concurrency](http://msdn.microsoft.com/en-us/b8378601-4f26-4a05-a24a-f50aeb68610e).  
+ To ensure that objects on the client have been updated by data source-side logic, you can call the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> value after you call <xref:System.Data.Objects.ObjectContext.SaveChanges%2A>. For more information, see [Saving Changes and Managing Concurrency](http://msdn.microsoft.com/en-us/b8378601-4f26-4a05-a24a-f50aeb68610e).  
   
  <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> operates within a transaction. <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> will roll back that transaction and throw an exception if any of the dirty <xref:System.Data.Objects.ObjectStateEntry> objects cannot be persisted.  
   
- If an optimistic concurrency violation has occurred, an <xref:System.Data.OptimisticConcurrencyException> is thrown. You can resolve an optimistic concurrency violation by catching it, calling the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode> or <xref:System.Data.Objects.RefreshMode> value, and then calling <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> again. For more information, see [How to: Manage Data Concurrency in the Object Context](http://msdn.microsoft.com/en-us/25ffe70d-ce97-4f0a-8ae0-22b7c40f748a).  
+ If an optimistic concurrency violation has occurred, an <xref:System.Data.OptimisticConcurrencyException> is thrown. You can resolve an optimistic concurrency violation by catching it, calling the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> or <xref:System.Data.Objects.RefreshMode.ClientWins> value, and then calling <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> again. For more information, see [How to: Manage Data Concurrency in the Object Context](http://msdn.microsoft.com/en-us/25ffe70d-ce97-4f0a-8ae0-22b7c40f748a).  
   
    
   
@@ -2121,9 +2155,9 @@
   
  This enumeration has a <xref:System.FlagsAttribute> that allows for a bitwise combination of its member values.  
   
- To make sure that objects on the client have been updated by data source-side logic, you can call the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode> value after you call <xref:System.Data.Objects.ObjectContext.SaveChanges%2A>. The <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method operates in a transaction. <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> will roll back that transaction and throw an exception if any one of the dirty <xref:System.Data.Objects.ObjectStateEntry> objects cannot be persisted.  
+ To make sure that objects on the client have been updated by data source-side logic, you can call the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> value after you call <xref:System.Data.Objects.ObjectContext.SaveChanges%2A>. The <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method operates in a transaction. <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> will roll back that transaction and throw an exception if any one of the dirty <xref:System.Data.Objects.ObjectStateEntry> objects cannot be persisted.  
   
- If an optimistic concurrency violation has occurred, an <xref:System.Data.OptimisticConcurrencyException> is thrown. You can resolve an optimistic concurrency violation by catching it, calling the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode> or <xref:System.Data.Objects.RefreshMode> values, and then calling the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method again. For more information, see [How to: Manage Data Concurrency in the Object Context](http://msdn.microsoft.com/en-us/25ffe70d-ce97-4f0a-8ae0-22b7c40f748a).  
+ If an optimistic concurrency violation has occurred, an <xref:System.Data.OptimisticConcurrencyException> is thrown. You can resolve an optimistic concurrency violation by catching it, calling the <xref:System.Data.Objects.ObjectContext.Refresh%2A> method with the <xref:System.Data.Objects.RefreshMode.StoreWins> or <xref:System.Data.Objects.RefreshMode.ClientWins> values, and then calling the <xref:System.Data.Objects.ObjectContext.SaveChanges%2A> method again. For more information, see [How to: Manage Data Concurrency in the Object Context](http://msdn.microsoft.com/en-us/25ffe70d-ce97-4f0a-8ae0-22b7c40f748a).  
   
  ]]></format>
         </remarks>
@@ -2282,7 +2316,7 @@
   
  Use the <xref:System.Data.Objects.ObjectContext.TryGetObjectByKey%2A> method to avoid handling the <xref:System.Data.ObjectNotFoundException> raised by <xref:System.Data.Objects.ObjectContext.GetObjectByKey%2A> when the object cannot be found.  
   
- This method will return objects in the <xref:System.Data.EntityState> state.  
+ This method will return objects in the <xref:System.Data.EntityState.Deleted> state.  
   
  A temporary key cannot be used to return an object from the data source.  
   
@@ -2303,39 +2337,5 @@
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="LoadProperty">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Explicitly loads a related object when you are using POCO custom data classes.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- When using POCO custom data classes, related objects cannot be explicitly loaded like instances of entity types that are generated by the Entity Data Model tools. This is because the tools generate the navigation properties that return an <xref:System.Data.Objects.DataClasses.EntityCollection%601> or <xref:System.Data.Objects.DataClasses.EntityReference%601> of related objects when <xref:System.Data.Objects.DataClasses.RelatedEnd.Load%2A> is called on a <xref:System.Data.Objects.DataClasses.RelatedEnd%601>. POCO entities can still be loaded by using lazy loading by setting the <xref:System.Data.Objects.ObjectContextOptions.LazyLoadingEnabled%2A> property to `true` on the instance of <xref:System.Data.Objects.ObjectContextOptions> that is returned by the <xref:System.Data.Objects.ObjectContext.ContextOptions%2A?displayProperty=fullName> property, or by using eager loading with the <xref:System.Data.Objects.ObjectQuery%601.Include%2A> method on the <xref:System.Data.Objects.ObjectQuery%601>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Refresh">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Updates specific objects in the object context with data from the data source.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The order in which objects are refreshed is nondeterministic.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

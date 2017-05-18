@@ -470,55 +470,20 @@
         <summary>Gets or sets the target window or frame in which to display the Web page content linked to when the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control is clicked.</summary>
         <value>The target window or frame to load the Web page linked to when the <see cref="T:System.Web.UI.WebControls.HyperLink" /> control is clicked. Values must begin with a letter in the range of a through z (case-insensitive), except for the special values listed in the following table, which begin with an underscore.  
   
- <list type="table">  
-<item>  
-<term> <see langword="_blank " />  
+ <list type="table"><item><term><see langword="_blank" /></term><description> Renders the content in a new window without frames.  
   
- </term>  
-<description> Renders the content in a new window without frames.  
+ </description></item><item><term><see langword="_parent" /></term><description> Renders the content in the immediate frameset parent.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="_parent " />  
+ </description></item><item><term><see langword="_search" /></term><description> Renders the content in the search pane.  
   
- </term>  
-<description> Renders the content in the immediate frameset parent.  
+ </description></item><item><term><see langword="_self" /></term><description> Renders the content in the frame with focus.  
   
- </description>  
-</item>  
-<item>  
-<term> <see langword="_search" />  
+ </description></item><item><term><see langword="_top" /></term><description> Renders the content in the full window without frames.  
   
- </term>  
-<description> Renders the content in the search pane.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="_self " />  
-  
- </term>  
-<description> Renders the content in the frame with focus.  
-  
- </description>  
-</item>  
-<item>  
-<term> <see langword="_top " />  
-  
- </term>  
-<description> Renders the content in the full window without frames.  
-  
- </description>  
-</item>  
-</list>  
-  
- <block subset="none" type="note">  
-<para>  
+ </description></item></list><block subset="none" type="note"><para>  
  Check your browser documentation to determine if the <see langword="_search" /> value is supported.  For example, Microsoft Internet Explorer 5.0 and later support the <see langword="_search" /> target value.  
   
-</para>  
-</block>  
+</para></block>  
   
  The default value is an empty string ("").</value>
         <remarks>

@@ -504,13 +504,13 @@
 ## Remarks  
  This property determines the transfer mode for requests and responses. Possible values include:  
   
--   <xref:System.ServiceModel.TransferMode>  
+-   <xref:System.ServiceModel.TransferMode.Buffered>  
   
--   <xref:System.ServiceModel.TransferMode>  
+-   <xref:System.ServiceModel.TransferMode.Streamed>  
   
--   <xref:System.ServiceModel.TransferMode>  
+-   <xref:System.ServiceModel.TransferMode.StreamedRequest>  
   
--   <xref:System.ServiceModel.TransferMode>  
+-   <xref:System.ServiceModel.TransferMode.StreamedResponse>  
   
  ]]></format>
         </remarks>

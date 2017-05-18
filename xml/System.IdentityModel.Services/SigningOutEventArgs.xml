@@ -79,7 +79,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether sign-out was initiated by the identity provider (IP) via a WS-Federation sign-out clean-up message (“wsignoutcleanup1.0”).</summary>
+        <summary>Gets a value that indicates whether sign-out was initiated by the identity provider (IP) via a WS-Federation sign-out clean-up message ("wsignoutcleanup1.0").</summary>
         <value>
           <see langword="true" /> if sign-out was initiated by the IP; otherwise, <see langword="false" />.</value>
         <remarks>

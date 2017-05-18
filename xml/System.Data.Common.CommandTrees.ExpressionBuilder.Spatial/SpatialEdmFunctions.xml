@@ -206,9 +206,13 @@
         <returns>A new DbFunctionExpression that returns the distance between the closest points in <paramref name="spatialValue1" /> and <paramref name="spatialValue1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="Elevation">
@@ -318,9 +322,13 @@
         <returns>A new DbFunctionExpression that returns a new geography collection value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyCollectionWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geographyCollectionWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyCollectionWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geographyCollectionWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyCollectionFromText">
@@ -346,9 +354,13 @@
         <returns>A new DbFunctionExpression that returns a new geography collection value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyCollectionWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geographyCollectionWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyCollectionWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geographyCollectionWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyFromBinary">
@@ -402,9 +414,13 @@
         <returns>A new DbFunctionExpression that returns a new geography value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="wellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="wellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="wellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="wellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyFromGml">
@@ -458,9 +474,13 @@
         <returns>A new DbFunctionExpression that returns a new geography value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geographyMarkup" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geographyMarkup" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geographyMarkup" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geographyMarkup" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyFromText">
@@ -514,9 +534,13 @@
         <returns>A new DbFunctionExpression that returns a new geography value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="wellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="wellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="wellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="wellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyLineFromBinary">
@@ -542,9 +566,13 @@
         <returns>A new DbFunctionExpression that returns a new geography line value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="lineWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="lineWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="lineWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="lineWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyLineFromText">
@@ -570,9 +598,13 @@
         <returns>A new DbFunctionExpression that returns a new geography line value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="lineWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="lineWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="lineWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="lineWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiLineFromBinary">
@@ -598,9 +630,13 @@
         <returns>A new DbFunctionExpression that returns a new geography multi-line value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiLineWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiLineWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiLineWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiLineWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiLineFromText">
@@ -626,9 +662,13 @@
         <returns>A new DbFunctionExpression that returns a new geography multi-line value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiLineWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiLineWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiLineWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiLineWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiPointFromBinary">
@@ -654,9 +694,13 @@
         <returns>A new DbFunctionExpression that returns a new geography multi-point value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiPointWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPointWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiPointWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPointWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiPointFromText">
@@ -682,9 +726,13 @@
         <returns>A new DbFunctionExpression that returns a new geography multi-point value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiPointWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPointWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiPointWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPointWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiPolygonFromBinary">
@@ -710,9 +758,13 @@
         <returns>A new DbFunctionExpression that returns a new geography multi-polygon value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiPolygonWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPolygonWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiPolygonWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPolygonWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyMultiPolygonFromText">
@@ -738,9 +790,13 @@
         <returns>A new DbFunctionExpression that returns a new geography multi-polygon value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiPolygonWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPolygonWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiPolygonWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPolygonWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyPointFromBinary">
@@ -766,9 +822,13 @@
         <returns>A new DbFunctionExpression that returns a new geography point value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="pointWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="pointWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="pointWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="pointWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyPointFromText">
@@ -818,9 +878,13 @@
         <returns>A new DbFunctionExpression that returns a new geography polygon value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="polygonWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="polygonWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="polygonWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="polygonWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeographyPolygonFromText">
@@ -846,9 +910,13 @@
         <returns>A new DbFunctionExpression that returns a new geography polygon value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="polygonWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="polygonWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="polygonWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="polygonWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryCollectionFromBinary">
@@ -874,9 +942,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry collection value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryCollectionWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geometryCollectionWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryCollectionWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geometryCollectionWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryCollectionFromText">
@@ -902,9 +974,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry collection value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryCollectionWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geometryCollectionWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryCollectionWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geometryCollectionWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryFromBinary">
@@ -958,9 +1034,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="wellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="wellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="wellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="wellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryFromGml">
@@ -1014,9 +1094,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryMarkup" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geometryMarkup" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryMarkup" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="geometryMarkup" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryFromText">
@@ -1070,9 +1154,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="wellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="wellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="wellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="wellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryLineFromBinary">
@@ -1098,9 +1186,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry line value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="lineWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="lineWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="lineWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="lineWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryLineFromText">
@@ -1126,9 +1218,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry line value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="lineWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="lineWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="lineWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="lineWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiLineFromBinary">
@@ -1154,9 +1250,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry multi-line value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiLineWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiLineWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiLineWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiLineWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiLineFromText">
@@ -1182,9 +1282,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry multi-line value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiLineWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiLineWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiLineWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiLineWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiPointFromBinary">
@@ -1210,9 +1314,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry multi-point value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiPointWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPointWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiPointWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPointWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiPointFromText">
@@ -1238,9 +1346,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry multi-point value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiPointWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPointWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiPointWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPointWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiPolygonFromBinary">
@@ -1266,9 +1378,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry multi-polygon value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiPolygonWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPolygonWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiPolygonWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPolygonWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryMultiPolygonFromText">
@@ -1294,9 +1410,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry multi-polygon value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="multiPolygonWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPolygonWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="multiPolygonWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="multiPolygonWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryPointFromBinary">
@@ -1322,9 +1442,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry point value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="pointWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="pointWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="pointWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="pointWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryPointFromText">
@@ -1350,9 +1474,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry point value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="pointWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="pointWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="pointWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="pointWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryPolygonFromBinary">
@@ -1378,9 +1506,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry polygon value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="polygonWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="polygonWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="polygonWellKnownBinaryValue" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="polygonWellKnownBinaryValue" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="GeometryPolygonFromText">
@@ -1406,9 +1538,13 @@
         <returns>A new DbFunctionExpression that returns a new geometry polygon value based on the specified values.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="polygonWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="polygonWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="polygonWellKnownText" /> <paramref name="coordinateSystemId" /></exception>
+          <paramref name="polygonWellKnownText" />
+          <paramref name="coordinateSystemId" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="InteriorRingAt">
@@ -1437,7 +1573,9 @@
           <paramref name="indexValue" />
         </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue" /> <paramref name="indexValue" /></exception>
+          <paramref name="geometryValue" />
+          <paramref name="indexValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="InteriorRingCount">
@@ -1718,7 +1856,9 @@
           <paramref name="indexValue" />
         </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue" /> <paramref name="indexValue" /></exception>
+          <paramref name="spatialValue" />
+          <paramref name="indexValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="PointCount">
@@ -1828,9 +1968,13 @@
         <returns>A new DbFunctionExpression that returns a geometry value representing all points less than or equal to <paramref name="distance" /> from <paramref name="spatialValue" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialValue" /> <paramref name="distance" /></exception>
+          <paramref name="spatialValue" />
+          <paramref name="distance" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue" /> <paramref name="distance" /></exception>
+          <paramref name="spatialValue" />
+          <paramref name="distance" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialContains">
@@ -1856,9 +2000,13 @@
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> spatially contains <paramref name="geometryValue2" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialConvexHull">
@@ -1912,9 +2060,13 @@
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> crosses <paramref name="geometryValue2" /> intersect.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialDifference">
@@ -1940,9 +2092,13 @@
         <returns>A new DbFunctionExpression that returns the geometry value representing the difference of <paramref name="spatialValue2" /> with <paramref name="spatialValue1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialDimension">
@@ -1996,9 +2152,13 @@
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="spatialValue1" /> and <paramref name="spatialValue2" /> are spatially disjoint.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialElementAt">
@@ -2027,7 +2187,9 @@
           <paramref name="indexValue" />
         </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue" /> <paramref name="indexValue" /></exception>
+          <paramref name="spatialValue" />
+          <paramref name="indexValue" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialElementCount">
@@ -2109,9 +2271,13 @@
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="spatialValue1" /> and <paramref name="spatialValue2" /> are equal.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialIntersection">
@@ -2137,9 +2303,13 @@
         <returns>A new DbFunctionExpression that returns the spatial value representing the intersection of <paramref name="spatialValue1" /> and <paramref name="spatialValue2" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialIntersects">
@@ -2165,9 +2335,13 @@
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="spatialValue1" /> and <paramref name="spatialValue2" /> intersect.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialLength">
@@ -2221,9 +2395,13 @@
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> spatially overlaps <paramref name="geometryValue2" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialRelate">
@@ -2251,9 +2429,15 @@
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> is spatially related to <paramref name="geometryValue2" /> according to the spatial relationship designated by <paramref name="intersectionPatternMatrix" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /> <paramref name="intersectionPatternMatrix" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+          <paramref name="intersectionPatternMatrix" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /> <paramref name="intersectionPatternMatrix" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+          <paramref name="intersectionPatternMatrix" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialSymmetricDifference">
@@ -2279,9 +2463,13 @@
         <returns>A new DbFunctionExpression that returns the geometry value representing the symmetric difference of <paramref name="spatialValue2" /> with <paramref name="spatialValue1" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialTouches">
@@ -2307,9 +2495,13 @@
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> touches <paramref name="geometryValue2" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialTypeName">
@@ -2363,9 +2555,13 @@
         <returns>A new DbFunctionExpression that returns the spatial value representing the union of <paramref name="spatialValue1" /> and <paramref name="spatialValue2" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="spatialValue1" /> <paramref name="spatialValue2" /></exception>
+          <paramref name="spatialValue1" />
+          <paramref name="spatialValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="SpatialWithin">
@@ -2391,9 +2587,13 @@
         <returns>A new DbFunctionExpression that returns a Boolean value indicating whether <paramref name="geometryValue1" /> is spatially within <paramref name="geometryValue2" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+        </exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="geometryValue1" /> <paramref name="geometryValue2" /></exception>
+          <paramref name="geometryValue1" />
+          <paramref name="geometryValue2" />
+        </exception>
       </Docs>
     </Member>
     <Member MemberName="StartPoint">

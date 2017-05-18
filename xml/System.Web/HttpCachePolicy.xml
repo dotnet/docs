@@ -315,7 +315,7 @@
       <Parameters />
       <Docs>
         <summary>Gets the status of the HTTP No-Transform Directive.</summary>
-        <returns>true<see langword="" />if the HTTP No-Transform Directive is set; otherwise <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the HTTP No-Transform Directive is set; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -512,9 +512,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.Web.HttpCacheability> is set to <xref:System.Web.HttpCacheability> or <xref:System.Web.HttpCacheability> the `Expires` HTTP header is by default set to -1; this tells the client not to cache responses in the History folder, so that when you use the back/forward buttons the client requests a new version of the response each time. You can override this behavior by calling the <xref:System.Web.HttpCachePolicy.SetAllowResponseInBrowserHistory%2A> method with the `allow` parameter set to `true`.  
+ When <xref:System.Web.HttpCacheability> is set to <xref:System.Web.HttpCacheability.NoCache> or <xref:System.Web.HttpCacheability.ServerAndNoCache> the `Expires` HTTP header is by default set to -1; this tells the client not to cache responses in the History folder, so that when you use the back/forward buttons the client requests a new version of the response each time. You can override this behavior by calling the <xref:System.Web.HttpCachePolicy.SetAllowResponseInBrowserHistory%2A> method with the `allow` parameter set to `true`.  
   
- If <xref:System.Web.HttpCacheability> is set to values other than <xref:System.Web.HttpCacheability> or <xref:System.Web.HttpCacheability>, calling the <xref:System.Web.HttpCachePolicy.SetAllowResponseInBrowserHistory%2A> method with either value for `allow` has no effect.  
+ If <xref:System.Web.HttpCacheability> is set to values other than <xref:System.Web.HttpCacheability.NoCache> or <xref:System.Web.HttpCacheability.ServerAndNoCache>, calling the <xref:System.Web.HttpCachePolicy.SetAllowResponseInBrowserHistory%2A> method with either value for `allow` has no effect.  
   
  <xref:System.Web.HttpCachePolicy.SetAllowResponseInBrowserHistory%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
@@ -1051,14 +1051,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default, which is equivalent to <xref:System.Web.HttpCacheRevalidation>, is to send neither directive in a header unless explicitly specified by this method.  
+ The default, which is equivalent to <xref:System.Web.HttpCacheRevalidation.None>, is to send neither directive in a header unless explicitly specified by this method.  
   
  <xref:System.Web.HttpCachePolicy.SetRevalidation%2A> is introduced in the .NET Framework version 3.5.  For more information, see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md).  
   
    
   
 ## Examples  
- The following code example demonstrates how to set cache revalidation to <xref:System.Web.HttpCacheRevalidation>.  
+ The following code example demonstrates how to set cache revalidation to <xref:System.Web.HttpCacheRevalidation.AllCaches>.  
   
  [!code-csharp[Classic HttpCachePolicy.SetRevalidation Example#1](~/samples/snippets/csharp/VS_Snippets_WebNet/Classic HttpCachePolicy.SetRevalidation Example/CS/source.cs#1)]
  [!code-vb[Classic HttpCachePolicy.SetRevalidation Example#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/Classic HttpCachePolicy.SetRevalidation Example/VB/source.vb#1)]  

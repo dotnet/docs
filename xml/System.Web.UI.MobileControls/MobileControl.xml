@@ -516,7 +516,7 @@
       <Docs>
         <summary>Gets a value indicating whether themes apply to this control. This API is obsolete. For information about how to develop ASP.NET mobile applications, see the [www.asp.net/mobile](http://go.microsoft.com/fwlink/?LinkID=182900) Web site.</summary>
         <value>
-          <see langword="False " />in all cases.</value>
+          <see langword="False" /> in all cases.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -549,7 +549,7 @@
 ## Remarks  
  This method is overridden by the <xref:System.Web.UI.MobileControls.List> and <xref:System.Web.UI.MobileControls.ObjectList> classes.  
   
-```  
+```csharp  
 public override void EnsureTemplatedUI()  
 ```  
   
@@ -561,7 +561,6 @@ public override void EnsureTemplatedUI()
 > [!NOTE]
 >  The following code sample uses the single-file code model and may not work correctly if copied directly into a code-behind file. This code sample must be copied into an empty text file that has an .aspx extension. For more information on the ASP.NET Web page code model, see [ASP.NET Web Forms Page Code Model](http://msdn.microsoft.com/library/81b13e7a-b95b-4285-906f-d2dd77411417).  
   
-<!-- TODO: review snippet reference  [!CODE [MobileMobileFormSample#1](MobileMobileFormSample#1)]  -->  
   
  ]]></format>
         </remarks>

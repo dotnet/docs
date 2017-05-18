@@ -7,6 +7,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
@@ -42,7 +43,7 @@
   
  Many standard query operators defined in the <xref:System.Linq.Queryable> class have one or more parameters of type <xref:System.Linq.Expressions.Expression%601>.  
   
- The <xref:System.Linq.Expressions.Expression.NodeType%2A> of an <xref:System.Linq.Expressions.Expression%601> is <xref:System.Linq.Expressions.ExpressionType>.  
+ The <xref:System.Linq.Expressions.Expression.NodeType%2A> of an <xref:System.Linq.Expressions.Expression%601> is <xref:System.Linq.Expressions.ExpressionType.Lambda>.  
   
  Use the <xref:System.Linq.Expressions.Expression.Lambda%60%601%28System.Linq.Expressions.Expression%2CSystem.Collections.Generic.IEnumerable%7BSystem.Linq.Expressions.ParameterExpression%7D%29> or <xref:System.Linq.Expressions.Expression.Lambda%60%601%28System.Linq.Expressions.Expression%2CSystem.Linq.Expressions.ParameterExpression%5B%5D%29> method to create an <xref:System.Linq.Expressions.Expression%601> object.  
   
@@ -68,6 +69,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -101,6 +103,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -146,6 +149,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Linq.Expressions</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
@@ -182,6 +186,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Linq.Expressions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>TDelegate</ReturnType>
       </ReturnValue>
@@ -205,6 +213,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

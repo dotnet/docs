@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CLR_DEBUGGING_PROCESS_FLAGS enumeration [.NET Framework debugging]"
 ms.assetid: 85b85fde-1f87-490b-ba8d-d604670959c3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

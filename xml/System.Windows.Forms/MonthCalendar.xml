@@ -502,7 +502,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.MonthCalendar> control sets the <xref:System.Windows.Forms.ControlStyles> bit flag to `false`, so the <xref:System.Windows.Forms.MonthCalendar> will not raise the <xref:System.Windows.Forms.MonthCalendar.Click> event.  
+ The <xref:System.Windows.Forms.MonthCalendar> control sets the <xref:System.Windows.Forms.ControlStyles.StandardClick> bit flag to `false`, so the <xref:System.Windows.Forms.MonthCalendar> will not raise the <xref:System.Windows.Forms.MonthCalendar.Click> event.  
   
  ]]></format>
         </remarks>
@@ -746,7 +746,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md).</para>
         </block>
@@ -809,7 +809,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.MonthCalendar> control sets the <xref:System.Windows.Forms.ControlStyles> bit flag to `false`, so the <xref:System.Windows.Forms.MonthCalendar> will not raise the <xref:System.Windows.Forms.MonthCalendar.DoubleClick> event.  
+ The <xref:System.Windows.Forms.MonthCalendar> control sets the <xref:System.Windows.Forms.ControlStyles.StandardClick> bit flag to `false`, so the <xref:System.Windows.Forms.MonthCalendar> will not raise the <xref:System.Windows.Forms.MonthCalendar.DoubleClick> event.  
   
  ]]></format>
         </remarks>
@@ -1580,7 +1580,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.MonthCalendar> control sets the <xref:System.Windows.Forms.ControlStyles> bit flag to `false`, so the <xref:System.Windows.Forms.MonthCalendar> will not raise the <xref:System.Windows.Forms.MonthCalendar.Paint> event. To provide a custom look to the <xref:System.Windows.Forms.MonthCalendar> control, you should override the <xref:System.Windows.Forms.Control.OnPrint%2A> method, call the base implementation of <xref:System.Windows.Forms.Control.OnPrint%2A>, and then perform custom painting.  
+ The <xref:System.Windows.Forms.MonthCalendar> control sets the <xref:System.Windows.Forms.ControlStyles.UserPaint> bit flag to `false`, so the <xref:System.Windows.Forms.MonthCalendar> will not raise the <xref:System.Windows.Forms.MonthCalendar.Paint> event. To provide a custom look to the <xref:System.Windows.Forms.MonthCalendar> control, you should override the <xref:System.Windows.Forms.Control.OnPrint%2A> method, call the base implementation of <xref:System.Windows.Forms.Control.OnPrint%2A>, and then perform custom painting.  
   
  ]]></format>
         </remarks>

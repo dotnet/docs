@@ -123,16 +123,16 @@ Public class A
   
     public int SomeProperty  
     {  
-        get {/* transparent */ }  
-        set {/* transparent */ }  
+        get {/* transparent */ }  
+        set {/* transparent */ }  
     }  
 }  
 public class B  
 {      
     internal string SomeOtherProperty  
     {  
-        get { /* transparent */ }  
-        set { /* transparent */ }  
+        get { /* transparent */ }  
+        set { /* transparent */ }  
     }  
 }  
 ```  

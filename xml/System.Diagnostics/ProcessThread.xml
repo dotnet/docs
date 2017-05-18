@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Process</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -34,7 +35,7 @@
  Use <xref:System.Diagnostics.ProcessThread> to obtain information about a thread that is currently running on the system. Doing so allows you, for example, to monitor the thread's performance characteristics.  
   
 > [!IMPORTANT]
->  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
+>  This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
   
  A thread is a path of execution through a program. It is the smallest unit of execution that Win32 schedules. It consists of a stack, the state of the CPU registers, and an entry in the execution list of the system scheduler.  
   
@@ -65,6 +66,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -95,7 +97,7 @@
 ## Remarks  
  The <xref:System.Diagnostics.ProcessThread.BasePriority%2A> is the starting priority for the process thread. You can view information about the base priority through the System Monitor's Priority Base counter.  
   
- The operating system computes a thread's base priority by combining the thread's priority level range with the process's priority class. You can set the process's <xref:System.Diagnostics.Process.PriorityClass%2A?displayProperty=fullName> property to one of the values in the <xref:System.Diagnostics.ProcessPriorityClass> enumeration, which are <xref:System.Diagnostics.ProcessPriorityClass>, <xref:System.Diagnostics.ProcessPriorityClass>, <xref:System.Diagnostics.ProcessPriorityClass>, <xref:System.Diagnostics.ProcessPriorityClass>, <xref:System.Diagnostics.ProcessPriorityClass>, or <xref:System.Diagnostics.ProcessPriorityClass>. You can set the thread's <xref:System.Diagnostics.ProcessThread.PriorityLevel%2A> property to a range of values that bounds the thread's base priority. Win32 uses four priority classes with seven base priority levels per class.  
+ The operating system computes a thread's base priority by combining the thread's priority level range with the process's priority class. You can set the process's <xref:System.Diagnostics.Process.PriorityClass%2A?displayProperty=fullName> property to one of the values in the <xref:System.Diagnostics.ProcessPriorityClass> enumeration, which are <xref:System.Diagnostics.ProcessPriorityClass.Idle>, <xref:System.Diagnostics.ProcessPriorityClass.Normal>, <xref:System.Diagnostics.ProcessPriorityClass.High>, <xref:System.Diagnostics.ProcessPriorityClass.AboveNormal>, <xref:System.Diagnostics.ProcessPriorityClass.BelowNormal>, or <xref:System.Diagnostics.ProcessPriorityClass.RealTime>. You can set the thread's <xref:System.Diagnostics.ProcessThread.PriorityLevel%2A> property to a range of values that bounds the thread's base priority. Win32 uses four priority classes with seven base priority levels per class.  
   
  The thread's current priority might deviate from the base priority. For example, the operating system can change the <xref:System.Diagnostics.ProcessThread.CurrentPriority%2A> property based on the time elapsed or other boosts when a process must be put ahead of others for access to the processor. In addition, you can set the <xref:System.Diagnostics.Process.PriorityBoostEnabled%2A> property to cause the system to temporarily boost the priority of a thread whenever the process is taken out of the wait state. The priority is reset when the process returns to the wait state.  
   
@@ -111,6 +113,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -153,6 +156,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -195,6 +199,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -252,6 +257,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -283,7 +289,7 @@
 ## Remarks  
  When <xref:System.Diagnostics.ProcessThread.PriorityBoostEnabled%2A> is `true`, the system temporarily boosts the thread's priority whenever its associated process is taken out of the wait state. This action prevents other processes from interrupting the processing of the current thread. The <xref:System.Diagnostics.ProcessThread.PriorityBoostEnabled%2A> setting affects all existing threads as well as any threads subsequently created by the process. To restore normal behavior, set the <xref:System.Diagnostics.Process.PriorityBoostEnabled%2A> property to `false`.  
   
- <xref:System.Diagnostics.ProcessThread.PriorityBoostEnabled%2A> has an effect only when the thread is running in a process that has a <xref:System.Diagnostics.Process.PriorityClass%2A> set to one of the dynamic priority enumeration values (<xref:System.Diagnostics.ProcessPriorityClass>, <xref:System.Diagnostics.ProcessPriorityClass>, or <xref:System.Diagnostics.ProcessPriorityClass>).  
+ <xref:System.Diagnostics.ProcessThread.PriorityBoostEnabled%2A> has an effect only when the thread is running in a process that has a <xref:System.Diagnostics.Process.PriorityClass%2A> set to one of the dynamic priority enumeration values (<xref:System.Diagnostics.ProcessPriorityClass.Normal>, <xref:System.Diagnostics.ProcessPriorityClass.High>, or <xref:System.Diagnostics.ProcessPriorityClass.RealTime>).  
   
 > [!NOTE]
 >  Boosting the priority too high can drain resources from essential operating system and network functions. This could cause problems with other operating system tasks.  
@@ -307,6 +313,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -356,6 +363,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -403,6 +411,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -470,6 +479,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -505,6 +515,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -553,6 +564,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -591,6 +603,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -619,7 +632,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.ProcessThread.WaitReason%2A> property value is valid only when the <xref:System.Diagnostics.ProcessThread.ThreadState%2A> value is <xref:System.Diagnostics.ThreadState>. Therefore, check the <xref:System.Diagnostics.ProcessThread.ThreadState%2A> value before you get the <xref:System.Diagnostics.ProcessThread.WaitReason%2A> property.  
+ The <xref:System.Diagnostics.ProcessThread.WaitReason%2A> property value is valid only when the <xref:System.Diagnostics.ProcessThread.ThreadState%2A> value is <xref:System.Diagnostics.ThreadState.Wait>. Therefore, check the <xref:System.Diagnostics.ProcessThread.ThreadState%2A> value before you get the <xref:System.Diagnostics.ProcessThread.WaitReason%2A> property.  
   
  ]]></format>
         </remarks>
@@ -635,6 +648,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -682,6 +696,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -729,6 +744,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Process</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -757,7 +773,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Diagnostics.ProcessThread.WaitReason%2A> property is valid only when the <xref:System.Diagnostics.ProcessThread.ThreadState%2A> is <xref:System.Diagnostics.ThreadState>. Therefore, check the <xref:System.Diagnostics.ProcessThread.ThreadState%2A> value before you get the <xref:System.Diagnostics.ProcessThread.WaitReason%2A> property.  
+ The <xref:System.Diagnostics.ProcessThread.WaitReason%2A> property is valid only when the <xref:System.Diagnostics.ProcessThread.ThreadState%2A> is <xref:System.Diagnostics.ThreadState.Wait>. Therefore, check the <xref:System.Diagnostics.ProcessThread.ThreadState%2A> value before you get the <xref:System.Diagnostics.ProcessThread.WaitReason%2A> property.  
   
  ]]></format>
         </remarks>

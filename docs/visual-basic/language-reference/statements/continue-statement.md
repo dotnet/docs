@@ -42,7 +42,7 @@ Transfers control immediately to the next iteration of a loop.
 ## Syntax  
   
 ```  
-Continue { Do | For | While }  
+Continue { Do | For | While }  
 ```  
   
 ## Remarks  

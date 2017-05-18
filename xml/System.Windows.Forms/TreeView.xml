@@ -661,7 +661,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Forms.TreeView.BorderStyle%2A> property is set to <xref:System.Windows.Forms.BorderStyle>, the <xref:System.Windows.Forms.TreeView> has a sunken, three-dimensional appearance. To display a flat, thin border around the <xref:System.Windows.Forms.TreeView> control, set the <xref:System.Windows.Forms.BorderStyle> property to <xref:System.Windows.Forms.BorderStyle>.  
+ When the <xref:System.Windows.Forms.TreeView.BorderStyle%2A> property is set to <xref:System.Windows.Forms.BorderStyle.Fixed3D>, the <xref:System.Windows.Forms.TreeView> has a sunken, three-dimensional appearance. To display a flat, thin border around the <xref:System.Windows.Forms.TreeView> control, set the <xref:System.Windows.Forms.BorderStyle> property to <xref:System.Windows.Forms.BorderStyle.FixedSingle>.  
   
    
   
@@ -851,7 +851,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
@@ -952,16 +952,16 @@
 ## Remarks  
  Use this event to customize the appearance of nodes in a <xref:System.Windows.Forms.TreeView> control using owner drawing.  
   
- This event is raised only when the <xref:System.Windows.Forms.TreeView.DrawMode%2A> property is set to <xref:System.Windows.Forms.TreeViewDrawMode> values of <xref:System.Windows.Forms.TreeViewDrawMode> or <xref:System.Windows.Forms.TreeViewDrawMode>. The following table indicates how the <xref:System.Windows.Forms.TreeNode> can be customized when the <xref:System.Windows.Forms.TreeView.DrawMode%2A> property is set to these values.  
+ This event is raised only when the <xref:System.Windows.Forms.TreeView.DrawMode%2A> property is set to <xref:System.Windows.Forms.TreeViewDrawMode> values of <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll> or <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawText>. The following table indicates how the <xref:System.Windows.Forms.TreeNode> can be customized when the <xref:System.Windows.Forms.TreeView.DrawMode%2A> property is set to these values.  
   
 |DrawMode property value|TreeNode customization|  
 |-----------------------------|----------------------------|  
-|<xref:System.Windows.Forms.TreeViewDrawMode>|The <xref:System.Windows.Forms.TreeNode> label area can be customized. All other <xref:System.Windows.Forms.TreeNode> elements are drawn automatically.|  
-|<xref:System.Windows.Forms.TreeViewDrawMode>|The appearance of the entire <xref:System.Windows.Forms.TreeNode> can be customized. Icons, check boxes, plus and minus signs, and lines connecting the nodes must be drawn manually if they are desired.|  
+|<xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawText>|The <xref:System.Windows.Forms.TreeNode> label area can be customized. All other <xref:System.Windows.Forms.TreeNode> elements are drawn automatically.|  
+|<xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll>|The appearance of the entire <xref:System.Windows.Forms.TreeNode> can be customized. Icons, check boxes, plus and minus signs, and lines connecting the nodes must be drawn manually if they are desired.|  
   
  The region that the <xref:System.Windows.Forms.TreeNode.Text%2A?displayProperty=fullName> value would occupy if it were drawn using the font specified by the <xref:System.Windows.Forms.TreeView> control's <xref:System.Windows.Forms.Control.Font%2A> property is the region in which a node can be clicked to select it. This is called the hit test region. If you draw outside this region, you should provide your own code that selects a node when its visible area is clicked.  
   
- The hit test region corresponds to the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A?displayProperty=fullName> property when using <xref:System.Windows.Forms.TreeViewDrawMode>. When using <xref:System.Windows.Forms.TreeViewDrawMode>, however, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A?displayProperty=fullName> property encompasses the entire width of the <xref:System.Windows.Forms.TreeView>. In this case, you can access the hit test region by getting the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Node%2A?displayProperty=fullName> value and accessing its <xref:System.Windows.Forms.TreeNode.Bounds%2A?displayProperty=fullName> property. You can then draw the hit test region of the node within these bounds, or you can provide your own hit test code. Note that setting the <xref:System.Windows.Forms.TreeNode.NodeFont%2A?displayProperty=fullName> property does not change the size of the hit test region, which is calculated using the font specified for the entire <xref:System.Windows.Forms.TreeView>.  
+ The hit test region corresponds to the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A?displayProperty=fullName> property when using <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawText>. When using <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll>, however, the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Bounds%2A?displayProperty=fullName> property encompasses the entire width of the <xref:System.Windows.Forms.TreeView>. In this case, you can access the hit test region by getting the <xref:System.Windows.Forms.DrawTreeNodeEventArgs.Node%2A?displayProperty=fullName> value and accessing its <xref:System.Windows.Forms.TreeNode.Bounds%2A?displayProperty=fullName> property. You can then draw the hit test region of the node within these bounds, or you can provide your own hit test code. Note that setting the <xref:System.Windows.Forms.TreeNode.NodeFont%2A?displayProperty=fullName> property does not change the size of the hit test region, which is calculated using the font specified for the entire <xref:System.Windows.Forms.TreeView>.  
   
  For more information about how to handle events, see [Handling and Raising Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -1389,7 +1389,7 @@
  If the <xref:System.Windows.Forms.TreeView.CheckBoxes%2A> property is set to `true`, the <xref:System.Windows.Forms.TreeView.HotTracking%2A> property has no effect.  
   
 > [!NOTE]
->  When the <xref:System.Windows.Forms.TreeView.HotTracking%2A> property is set to `true`, each tree node label takes on the appearance of a hyperlink as the mouse pointer passes over it. The <xref:System.Drawing.FontStyle> font style is applied to the <xref:System.Drawing.Font> and the <xref:System.Windows.Forms.Control.ForeColor%2A> is set to blue to make the label appear as a link. The appearance is not controlled by the Internet settings of the user's operating system.  
+>  When the <xref:System.Windows.Forms.TreeView.HotTracking%2A> property is set to `true`, each tree node label takes on the appearance of a hyperlink as the mouse pointer passes over it. The <xref:System.Drawing.FontStyle.Underline> font style is applied to the <xref:System.Drawing.Font> and the <xref:System.Windows.Forms.Control.ForeColor%2A> is set to blue to make the label appear as a link. The appearance is not controlled by the Internet settings of the user's operating system.  
   
    
   
@@ -1599,7 +1599,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than 0 (see Remarks).  
+        <exception cref="T:System.ArgumentOutOfRangeException">The assigned value is less than 0.  
   
  -or-  
   

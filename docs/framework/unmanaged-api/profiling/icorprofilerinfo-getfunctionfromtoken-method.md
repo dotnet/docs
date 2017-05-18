@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::GetFunctionFromToken method [.NET Framework profiling]"
   - "GetFunctionFromToken method, ICorProfilerInfo interface [.NET Framework profiling]"
 ms.assetid: 0eed759f-cce8-405d-88dc-9ee293a38928
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

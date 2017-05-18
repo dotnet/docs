@@ -325,7 +325,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
@@ -354,7 +354,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> method is equivalent to a call to the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%28System.ComponentModel.IComponent%2CSystem.ComponentModel.Design.ComponentActionsType%29> method using a `type` parameter of <xref:System.ComponentModel.Design.ComponentActionsType>. Therefore, the collection returned will contain both the push and pull lists of smart tags.  
+ The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> method is equivalent to a call to the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%28System.ComponentModel.IComponent%2CSystem.ComponentModel.Design.ComponentActionsType%29> method using a `type` parameter of <xref:System.ComponentModel.Design.ComponentActionsType.All>. Therefore, the collection returned will contain both the push and pull lists of smart tags.  
   
  The returned <xref:System.ComponentModel.Design.DesignerActionListCollection> is the union of item lists added through the <xref:System.ComponentModel.Design.DesignerActionService.Add%2A> methods and also the lists obtained from the <xref:System.ComponentModel.Design.DesignerCommandSet> instance obtained from the component’s site.  
   
@@ -393,9 +393,9 @@
   
 |Value|Description|  
 |-----------|-----------------|  
-|<xref:System.ComponentModel.Design.ComponentActionsType>|All associated smart tags.|  
-|<xref:System.ComponentModel.Design.ComponentActionsType>|Pull-model smart tags only.|  
-|<xref:System.ComponentModel.Design.ComponentActionsType>|Push-model smart tags only.|  
+|<xref:System.ComponentModel.Design.ComponentActionsType.All>|All associated smart tags.|  
+|<xref:System.ComponentModel.Design.ComponentActionsType.Component>|Pull-model smart tags only.|  
+|<xref:System.ComponentModel.Design.ComponentActionsType.Service>|Push-model smart tags only.|  
   
  If the associated designer for a component does not supply a pull-model smart tag list, then the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> method will instead use the designer's design-time shortcut menu items from the <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> property.  
   
@@ -429,7 +429,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentDesignerActions%2A> method is a helper method for the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> methods. <xref:System.ComponentModel.Design.DesignerActionService.GetComponentDesignerActions%2A> searches for pull-model smart tags of type <xref:System.ComponentModel.Design.ComponentActionsType>, and then adds these to the supplied `actionLists` collection.  
+ The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentDesignerActions%2A> method is a helper method for the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> methods. <xref:System.ComponentModel.Design.DesignerActionService.GetComponentDesignerActions%2A> searches for pull-model smart tags of type <xref:System.ComponentModel.Design.ComponentActionsType.Component>, and then adds these to the supplied `actionLists` collection.  
   
  If the component's developer does not explicitly supply a collection of smart tags through the <xref:System.ComponentModel.Design.ComponentDesigner.ActionLists%2A> property of its designer, this method will reuse the design-time shortcut menu entries, which are obtained through the <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> property of the designer.  
   
@@ -462,7 +462,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentServiceActions%2A> method is a helper method for the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> methods. It searches for push-model smart tags of type <xref:System.ComponentModel.Design.ComponentActionsType>, and then adds these to the supplied `actionLists` collection.  
+ The <xref:System.ComponentModel.Design.DesignerActionService.GetComponentServiceActions%2A> method is a helper method for the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> methods. It searches for push-model smart tags of type <xref:System.ComponentModel.Design.ComponentActionsType.Service>, and then adds these to the supplied `actionLists` collection.  
   
  ]]></format>
         </remarks>

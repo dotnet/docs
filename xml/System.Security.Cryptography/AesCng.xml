@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
     <AssemblyVersion>4.2.0.0</AssemblyVersion>
+    <AssemblyVersion>4.3.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Core</AssemblyName>
@@ -32,6 +33,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -56,6 +58,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -76,7 +79,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor uses a default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions> and <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A> as the default key storage provider (KSP) to open the key.  
+ This constructor uses a default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions.None> and <xref:System.Security.Cryptography.CngProvider.MicrosoftSoftwareKeyStorageProvider%2A> as the default key storage provider (KSP) to open the key.  
   
  ]]></format>
         </remarks>
@@ -94,6 +97,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -116,7 +120,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions> is used to open the key.  
+ A default <xref:System.Security.Cryptography.CngKeyOpenOptions> value of <xref:System.Security.Cryptography.CngKeyOpenOptions.None> is used to open the key.  
   
  ]]></format>
         </remarks>
@@ -138,6 +142,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -177,6 +182,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -212,6 +218,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -269,6 +276,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -304,6 +312,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -361,6 +370,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -391,6 +401,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -418,6 +429,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -445,6 +457,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>
@@ -481,6 +494,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Cryptography.Cng</AssemblyName>
         <AssemblyVersion>4.2.0.0</AssemblyVersion>
+        <AssemblyVersion>4.3.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Core</AssemblyName>

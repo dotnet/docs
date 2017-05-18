@@ -160,7 +160,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When <xref:System.ServiceModel.Description.DurableServiceAttribute> is instantiated, it sets this property value to <xref:System.ServiceModel.Description.UnknownExceptionAction>. This means that whenever an unknown exception is encountered by the durable service, the service instance is terminated and any state information is deleted from the persistence store.  
+ When <xref:System.ServiceModel.Description.DurableServiceAttribute> is instantiated, it sets this property value to <xref:System.ServiceModel.Description.UnknownExceptionAction.TerminateInstance>. This means that whenever an unknown exception is encountered by the durable service, the service instance is terminated and any state information is deleted from the persistence store.  
   
  ]]></format>
         </remarks>

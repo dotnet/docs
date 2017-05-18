@@ -34,7 +34,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.CompressionOption%2A> property returns CompressionOption.<xref:System.IO.Packaging.CompressionOption>.  
+ If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.CompressionOption%2A> property returns CompressionOption.<xref:System.IO.Packaging.CompressionOption.NotCompressed>.  
   
  ]]></format>
         </remarks>
@@ -59,7 +59,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.EncryptionOption%2A> property returns EncryptionOption.<xref:System.IO.Packaging.EncryptionOption>.  
+ If <xref:System.Windows.FreezableCollection%601.Enumerator.System%23IDisposable%23Dispose%2A> has been called on the stream, the <xref:System.IO.Packaging.StreamInfo.EncryptionOption%2A> property returns EncryptionOption.<xref:System.IO.Packaging.EncryptionOption.None>.  
   
  ]]></format>
         </remarks>
@@ -85,7 +85,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This <xref:System.IO.Packaging.StreamInfo.GetStream%2A> method (without parameters), opens the stream in file mode <xref:System.IO.FileMode> with the default storage root <xref:System.IO.FileAccess>.  
+ This <xref:System.IO.Packaging.StreamInfo.GetStream%2A> method (without parameters), opens the stream in file mode <xref:System.IO.FileMode.OpenOrCreate> with the default storage root <xref:System.IO.FileAccess>.  
   
  ]]></format>
         </remarks>

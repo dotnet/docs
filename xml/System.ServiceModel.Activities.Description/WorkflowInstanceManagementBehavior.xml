@@ -124,7 +124,7 @@
   
 1.  Transaction flow is enabled.  
   
-2.  Security mode is set to <xref:System.ServiceModel.SecurityMode>.  
+2.  Security mode is set to <xref:System.ServiceModel.SecurityMode.Message>.  
   
 3.  Windows client credentials are used.  
   
@@ -155,9 +155,9 @@
   
 1.  Transaction flow is enabled.  
   
-2.  Security mode is set to <xref:System.ServiceModel.NetNamedPipeSecurityMode>.  
+2.  Security mode is set to <xref:System.ServiceModel.NetNamedPipeSecurityMode.Transport>.  
   
-3.  Transport security level is set to <xref:System.Net.Security.ProtectionLevel>.  
+3.  Transport security level is set to <xref:System.Net.Security.ProtectionLevel.Sign>.  
   
 4.  Windows client credentials are used.  
   
@@ -207,7 +207,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Defaults to “BUILTIN\Administrators”. Valid settings are: a local Windows group or a Windows domain.  
+ Defaults to "BUILTIN\Administrators". Valid settings are: a local Windows group or a Windows domain.  
   
  ]]></format>
         </remarks>

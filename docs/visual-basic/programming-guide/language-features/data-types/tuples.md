@@ -81,7 +81,7 @@ A Visual Basic tuple does inherit the members of its **ValueTuple** type. In add
 | GetHashCode | Calculates the hash code for the current instance. |
 | ToString | Returns the string representation of this tuple, which takes the form `(Item1, Item2...)`, where `Item1` and `Item2` represent the values of the tuple's fields. |
 
-In addition, the **ValueTuple** types implement <xref:System.Collections.IStructuralComparable> and <xref:System.Collections.IStructurealEquatable> interfaces, which allow you to define customer comparers.
+In addition, the **ValueTuple** types implement <xref:System.Collections.IStructuralComparable> and <xref:System.Collections.IStructuralEquatable> interfaces, which allow you to define customer comparers.
 
 ## Assignment and tuples
 

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "StepRange method [.NET Framework debugging]"
   - "ICorDebugStepper::StepRange method [.NET Framework debugging]"
 ms.assetid: b9776112-6e6d-4708-892a-8873db02e16f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

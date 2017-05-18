@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: 76f2bf3b-759f-4eed-bce7-119415b25915
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

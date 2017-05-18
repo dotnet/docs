@@ -34,7 +34,7 @@ A discovery find operation is initiated by a client to discover one or more serv
   
     -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByExact?displayProperty=fullName> does a basic case-sensitive string comparison.  
   
-    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=fullName> matches by segments separated by “/”. A search for http://contoso/building1 matches a service with scope http://contoso/building/floor1. Note that it does not match http://contoso/building100 because the last two segments do not match.  
+    -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix?displayProperty=fullName> matches by segments separated by "/". A search for http://contoso/building1 matches a service with scope http://contoso/building/floor1. Note that it does not match http://contoso/building100 because the last two segments do not match.  
   
     -   <xref:System.ServiceModel.Discovery.FindCriteria.ScopeMatchByLdap?displayProperty=fullName> matches scopes by segments using an LDAP URL.  
   

@@ -28,13 +28,13 @@
   
  More than one item in a <xref:System.Windows.Controls.ListBox> is visible, unlike the <xref:System.Windows.Controls.ComboBox>, which has only the selected item visible unless the <xref:System.Windows.Controls.ComboBox.IsDropDownOpen%2A> property is `true`.  The <xref:System.Windows.Controls.ListBox.SelectionMode%2A> property determines whether more than one item in the <xref:System.Windows.Controls.ListBox> is selectable at a time.  
   
- The <xref:System.Windows.Controls.ListBox.SelectionMode%2A> property determines how many items a user can select at one time. You can set the property to <xref:System.Windows.Controls.SelectionMode> (the default), <xref:System.Windows.Controls.SelectionMode>, or <xref:System.Windows.Controls.SelectionMode>. The following table described the behavior of these enumeration values.  
+ The <xref:System.Windows.Controls.ListBox.SelectionMode%2A> property determines how many items a user can select at one time. You can set the property to <xref:System.Windows.Controls.SelectionMode.Single> (the default), <xref:System.Windows.Controls.SelectionMode.Multiple>, or <xref:System.Windows.Controls.SelectionMode.Extended>. The following table described the behavior of these enumeration values.  
   
 |Value|Description|  
 |-----------|-----------------|  
-|<xref:System.Windows.Controls.SelectionMode>|The user can select only one item at a time.|  
-|<xref:System.Windows.Controls.SelectionMode>|The user can select multiple items without holding down a modifier key.|  
-|<xref:System.Windows.Controls.SelectionMode>|The user can select multiple consecutive items while holding down the SHIFT key or non-consecutive items by holding down the CTRL key and clicking the items.|  
+|<xref:System.Windows.Controls.SelectionMode.Single>|The user can select only one item at a time.|  
+|<xref:System.Windows.Controls.SelectionMode.Multiple>|The user can select multiple items without holding down a modifier key.|  
+|<xref:System.Windows.Controls.SelectionMode.Extended>|The user can select multiple consecutive items while holding down the SHIFT key or non-consecutive items by holding down the CTRL key and clicking the items.|  
   
  <xref:System.Windows.Controls.ListBox> controls are often used with data binding.  For more information, see [Data Binding Overview](~/docs/framework/wpf/data/data-binding-overview.md).  
   
@@ -383,7 +383,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is meant to be used when <xref:System.Windows.Controls.ListBox.SelectionMode%2A> does not equal <xref:System.Windows.Controls.SelectionMode>. If the selection mode is <xref:System.Windows.Controls.SelectionMode> the correct property to use is <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A>.  
+ This property is meant to be used when <xref:System.Windows.Controls.ListBox.SelectionMode%2A> does not equal <xref:System.Windows.Controls.SelectionMode.Single>. If the selection mode is <xref:System.Windows.Controls.SelectionMode.Single> the correct property to use is <xref:System.Windows.Controls.Primitives.Selector.SelectedItem%2A>.  
   
 <a name="dependencyPropertyInfo_SelectedItems"></a>   
 ## Dependency Property Information  
@@ -448,13 +448,13 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ListBox>|  
+|Identifier field|<xref:System.Windows.Controls.ListBox.SelectionModeProperty>|  
 |Metadata properties set to `true`|None|  
   
    
   
 ## Examples  
- The following example sets the <xref:System.Windows.Controls.ListBox.SelectionMode%2A> property to <xref:System.Windows.Controls.SelectionMode>.  
+ The following example sets the <xref:System.Windows.Controls.ListBox.SelectionMode%2A> property to <xref:System.Windows.Controls.SelectionMode.Multiple>.  
   
  [!code-xml[ListBoxEvent#4](~/samples/snippets/csharp/VS_Snippets_Wpf/ListBoxEvent/CSharp/Pane1.xaml#4)]  
   

@@ -20,11 +20,11 @@
   
  A cookie handler can be configured in one of the following ways:  
   
--   To configure a chunked cookie handler, set the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property to either <xref:System.IdentityModel.Services.CookieHandlerMode> or <xref:System.IdentityModel.Services.CookieHandlerMode> and set the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property with the configuration element for your chunked cookie handler. The <xref:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler%2A> property should not be set.  
+-   To configure a chunked cookie handler, set the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property to either <xref:System.IdentityModel.Services.CookieHandlerMode.Default> or <xref:System.IdentityModel.Services.CookieHandlerMode.Chunked> and set the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property with the configuration element for your chunked cookie handler. The <xref:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler%2A> property should not be set.  
   
 -   To configure a chunked cookie handler with the default chunk size, you can set the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property as mentioned earlier, but leave both the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> and the <xref:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler%2A> properties unset.  
   
--   To configure a custom cookie handler, set the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property to <xref:System.IdentityModel.Services.CookieHandlerMode> and set the <xref:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler%2A> property with the configuration element that identifies the type of your custom cookie handler. This type must derive from the <xref:System.IdentityModel.Services.CookieHandler> class. The <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property should not be set.  
+-   To configure a custom cookie handler, set the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property to <xref:System.IdentityModel.Services.CookieHandlerMode.Custom> and set the <xref:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler%2A> property with the configuration element that identifies the type of your custom cookie handler. This type must derive from the <xref:System.IdentityModel.Services.CookieHandler> class. The <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property should not be set.  
   
  ]]></format>
     </remarks>
@@ -69,7 +69,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is equivalent to the `<chunkedCookieHandler>` child element of the `<cookieHandler>` element. It specifies a chunked cookie handler, an instance of the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class, to use. If it is set, the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property should be set to either <xref:System.IdentityModel.Services.CookieHandlerMode> or <xref:System.IdentityModel.Services.CookieHandlerMode>. If the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property is set to either of these values but the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property is not set, a chunked cookie handler with the default chunk size (<xref:System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize?displayProperty=fullName>) is configured.  
+ This property is equivalent to the `<chunkedCookieHandler>` child element of the `<cookieHandler>` element. It specifies a chunked cookie handler, an instance of the <xref:System.IdentityModel.Services.ChunkedCookieHandler> class, to use. If it is set, the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property should be set to either <xref:System.IdentityModel.Services.CookieHandlerMode.Default> or <xref:System.IdentityModel.Services.CookieHandlerMode.Chunked>. If the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property is set to either of these values but the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property is not set, a chunked cookie handler with the default chunk size (<xref:System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize?displayProperty=fullName>) is configured.  
   
  Either the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property or the <xref:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler%2A> property may be set, but not both.  
   
@@ -101,7 +101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is equivalent to the `<customCookieHandler>` child element of the `<cookieHandler>` element. It specifies a custom cookie handler type to use. If this property is set, the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property must be set to <xref:System.IdentityModel.Services.CookieHandlerMode>. The custom type specified by this property must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  
+ This property is equivalent to the `<customCookieHandler>` child element of the `<cookieHandler>` element. It specifies a custom cookie handler type to use. If this property is set, the <xref:System.IdentityModel.Services.CookieHandlerElement.Mode%2A> property must be set to <xref:System.IdentityModel.Services.CookieHandlerMode.Custom>. The custom type specified by this property must be derived from the <xref:System.IdentityModel.Services.CookieHandler> class.  
   
  Either the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property or the <xref:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler%2A> property may be set, but not both.  
   
@@ -223,7 +223,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- For chunked cookie handlers (the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property is set), the mode should be set to either <xref:System.IdentityModel.Services.CookieHandlerMode> or <xref:System.IdentityModel.Services.CookieHandlerMode>. For a custom cookie handler (the <xref:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler%2A> property is set), the mode should be set to <xref:System.IdentityModel.Services.CookieHandlerMode>.  
+ For chunked cookie handlers (the <xref:System.IdentityModel.Services.CookieHandlerElement.ChunkedCookieHandler%2A> property is set), the mode should be set to either <xref:System.IdentityModel.Services.CookieHandlerMode.Chunked> or <xref:System.IdentityModel.Services.CookieHandlerMode.Default>. For a custom cookie handler (the <xref:System.IdentityModel.Services.CookieHandlerElement.CustomCookieHandler%2A> property is set), the mode should be set to <xref:System.IdentityModel.Services.CookieHandlerMode.Custom>.  
   
  Represents the `mode` attribute of the [\&lt;cookieHandler\&gt;](~/docs/framework/configure-apps/file-schema/windows-identity-foundation/cookiehandler.md) element.  
   
@@ -250,7 +250,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the base name for any cookies written by the handler.</summary>
-        <value>The base name for the cookies. The default is “FedAuth”.</value>
+        <value>The base name for the cookies. The default is "FedAuth".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -315,7 +315,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the lifetime of cookies issued by the handler.</summary>
-        <value>A <see cref="T:System.TimeSpan" /> that represents the cookie lifetime. The default is 0 days (“0.0:0:0”). The value must be a value between 0 (“0.0:0:0”) and 365 (“365.0:0:0”) days.</value>
+        <value>A <see cref="T:System.TimeSpan" /> that represents the cookie lifetime. The default is 0 days ("0.0:0:0"). The value must be a value between 0 ("0.0:0:0") and 365 ("365.0:0:0") days.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

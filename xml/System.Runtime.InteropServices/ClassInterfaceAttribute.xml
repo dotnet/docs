@@ -9,6 +9,7 @@
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
     <AssemblyVersion>4.1.1.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -50,7 +51,7 @@
    
   
 ## Examples  
- The following example shows how to apply the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> with the <xref:System.Runtime.InteropServices.ClassInterfaceType> value <xref:System.Runtime.InteropServices.ClassInterfaceType>, which generates an `IDispatch` interface for `MyClass`.  
+ The following example shows how to apply the <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> with the <xref:System.Runtime.InteropServices.ClassInterfaceType> value <xref:System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch>, which generates an `IDispatch` interface for `MyClass`.  
   
  [!code-cpp[Classic ClassInterfaceAttribute Example#1](~/samples/snippets/cpp/VS_Snippets_CLR_Classic/classic ClassInterfaceAttribute Example/CPP/source.cpp#1)]
  [!code-csharp[Classic ClassInterfaceAttribute Example#1](~/samples/snippets/csharp/VS_Snippets_CLR_Classic/classic ClassInterfaceAttribute Example/CS/source.cs#1)]
@@ -72,6 +73,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -110,6 +112,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -148,6 +151,7 @@
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
         <AssemblyVersion>4.1.1.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

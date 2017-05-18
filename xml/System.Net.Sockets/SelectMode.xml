@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Net.Sockets</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -29,7 +30,7 @@
    
   
 ## Examples  
- The following example checks the status of a <xref:System.Net.Sockets.Socket> using all three <xref:System.Net.Sockets.SelectMode> enumeration values. A call to <xref:System.Net.Sockets.Socket.Poll%2A> using the SelectWrite enumerated value should return `true`.  
+ The following example checks the status of a <xref:System.Net.Sockets.Socket> using all three <xref:System.Net.Sockets.SelectMode> enumeration values. A call to <xref:System.Net.Sockets.Socket.Poll%2A?displayProperty=fullName> using the SelectWrite enumerated value should return `true`.  
   
  [!code-cpp[SelectModeExample#1](~/samples/snippets/cpp/VS_Snippets_Remoting/SelectModeExample/CPP/source.cpp#1)]
  [!code-csharp[SelectModeExample#1](~/samples/snippets/csharp/VS_Snippets_Remoting/SelectModeExample/CS/source.cs#1)]
@@ -47,6 +48,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -72,6 +74,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -97,6 +100,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Net.Sockets</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

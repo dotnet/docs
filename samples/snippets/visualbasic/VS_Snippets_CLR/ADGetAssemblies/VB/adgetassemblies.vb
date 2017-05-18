@@ -1,7 +1,7 @@
 ' <SNIPPET1>
 Imports System
 Imports System.Reflection
-Imports System.Security.Policy 'for Evidence object
+Imports System.Security.Policy
 
 Class ADGetAssemblies
    

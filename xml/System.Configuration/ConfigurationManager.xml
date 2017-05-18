@@ -6,6 +6,10 @@
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -320,6 +324,10 @@ End Module
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.Specialized.NameValueCollection</ReturnType>
       </ReturnValue>
@@ -509,6 +517,10 @@ End Module
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConnectionStringSettingsCollection</ReturnType>
       </ReturnValue>
@@ -616,6 +628,10 @@ End Module
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -667,6 +683,10 @@ End Module
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.Configuration</ReturnType>
       </ReturnValue>
@@ -685,11 +705,11 @@ End Module
   
  Specify which configuration to get by passing one of the following values for `userLevel`:  
   
--   To get the <xref:System.Configuration.Configuration> object that applies to all users, set `userLevel` to <xref:System.Configuration.ConfigurationUserLevel>.  
+-   To get the <xref:System.Configuration.Configuration> object that applies to all users, set `userLevel` to <xref:System.Configuration.ConfigurationUserLevel.None>.  
   
--   To get the local <xref:System.Configuration.Configuration> object that applies to the current user, set `userLevel` to <xref:System.Configuration.ConfigurationUserLevel>.  
+-   To get the local <xref:System.Configuration.Configuration> object that applies to the current user, set `userLevel` to <xref:System.Configuration.ConfigurationUserLevel.PerUserRoamingAndLocal>.  
   
--   To get the roaming <xref:System.Configuration.Configuration> object that applies to the current user, set `userLevel` to <xref:System.Configuration.ConfigurationUserLevel>.  
+-   To get the roaming <xref:System.Configuration.Configuration> object that applies to the current user, set `userLevel` to <xref:System.Configuration.ConfigurationUserLevel.PerUserRoaming>.  
   
     > [!NOTE]
     >  To get the <xref:System.Configuration.Configuration> object for a resource, your code must have read permissions on all the configuration files from which it inherits settings. To update a configuration file, your code must additionally have write permissions for both the configuration file and the directory in which it exists.  
@@ -714,6 +734,10 @@ End Module
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -756,6 +780,10 @@ End Module
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.Configuration</ReturnType>
       </ReturnValue>
@@ -794,6 +822,10 @@ End Module
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -839,6 +871,10 @@ End Module
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.Configuration</ReturnType>
       </ReturnValue>
@@ -877,6 +913,10 @@ End Module
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -920,6 +960,10 @@ End Module
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

@@ -119,6 +119,25 @@
           <paramref name="identity" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateRsaIdentity">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an RSA identity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
+  
+ One of these static methods creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateRsaIdentity">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.EndpointIdentity CreateRsaIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointIdentity CreateRsaIdentity(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
@@ -278,6 +297,25 @@
           <paramref name="upnName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="CreateX509CertificateIdentity">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates an X509Certificate identity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Choose between these two constructors based on whether you have supporting certificates.  
+  
+ A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CreateX509CertificateIdentity">
       <MemberSignature Language="C#" Value="public static System.ServiceModel.EndpointIdentity CreateX509CertificateIdentity (System.Security.Cryptography.X509Certificates.X509Certificate2 certificate);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.ServiceModel.EndpointIdentity CreateX509CertificateIdentity(class System.Security.Cryptography.X509Certificates.X509Certificate2 certificate) cil managed" />
@@ -340,7 +378,7 @@
         <summary>Creates an X509Certificate identity with the specified primary and supporting certificates.</summary>
         <returns>A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
   
- An X509Certificate <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="primaryCertificate" /> and<paramref name=" supportingCertificates." /></returns>
+ An X509Certificate <see cref="T:System.ServiceModel.EndpointIdentity" /> associated with the specified <paramref name="primaryCertificate" /> and <paramref name="supportingCertificates." /></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -372,7 +410,7 @@
         <param name="other">To be added.</param>
         <summary>Returns a value that determines whether a specified object is equal to the current identity object or if they have equal security properties.</summary>
         <returns>
-          <see langword="true" /> if the specified object <paramref name="obj" /> is equivalent to the current identity or contains the same security properties; otherwise, <see langword="false" />.</returns>
+          <see langword="true" /> if the specified object <paramref name="other" /> is equivalent to the current identity or contains the same security properties; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,43 +528,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CreateX509CertificateIdentity">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an X509Certificate identity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Choose between these two constructors based on whether you have supporting certificates.  
-  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain the claim that contains the thumbprint of the certificate used to construct this identity.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="CreateRsaIdentity">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates an RSA identity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A secure [!INCLUDE[indigo2](~/includes/indigo2-md.md)] client that connects to an endpoint with this identity verifies that the claims presented by the server contain a claim that contains the RSA public key used to construct this identity.  
-  
- One of these static methods creates an instance of <xref:System.ServiceModel.RsaEndpointIdentity> by calling its constructor <xref:System.ServiceModel.RsaEndpointIdentity.%23ctor%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Clone method, IAssemblyEnum interface [.NET Framework fusion]"
   - "IAssemblyEnum::Clone method [.NET Framework fusion]"
 ms.assetid: 0014bb66-590c-486c-9ade-f2133905cd99
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

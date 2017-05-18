@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetDocumentsForMethod method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetDocumentsForMethod method [.NET Framework debugging]"
 ms.assetid: bd6ccde5-d578-48d8-abed-b474fbd48d13
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

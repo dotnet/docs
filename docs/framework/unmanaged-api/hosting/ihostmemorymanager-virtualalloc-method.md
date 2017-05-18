@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "VirtualAlloc method [.NET Framework hosting]"
   - "IHostMemoryManager::VirtualAlloc method [.NET Framework hosting]"
 ms.assetid: 4dff3646-a050-4bd9-ac31-fe307e8637ec
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -184,11 +184,11 @@
   
  Four modes can be used for the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Crossing%2A> property of an axis:  
   
--   "Auto", which means that the crossing value will be set to the minimum or maximum value for the relevant axis. If the axis is primary, the value will be its minimum value, if the axis is secondary it will its maximum value. To set to "Auto" at run time, use a <xref:System.Double> value.  
+-   "Auto", which means that the crossing value will be set to the minimum or maximum value for the relevant axis. If the axis is primary, the value will be its minimum value, if the axis is secondary it will its maximum value. To set to "Auto" at run time, use a <xref:System.Double.NaN> value.  
   
--   "Minimum", which means the crossing value of the axis will be its minimum value. To set to "Minimum" at run-time use a <xref:System.Double> value.  
+-   "Minimum", which means the crossing value of the axis will be its minimum value. To set to "Minimum" at run-time use a <xref:System.Double.MinValue> value.  
   
--   "Maximum", which means the crossing value of the axis will be its maximum value. To set to "Maximum" at run-time use a <xref:System.Double> value.  
+-   "Maximum", which means the crossing value of the axis will be its maximum value. To set to "Maximum" at run-time use a <xref:System.Double.MaxValue> value.  
   
 -   A specified `double` value that is between the minimum and maximum values for the relevant axis. If the crossing value is less then minimum value, or the crossing value is greater than maximum value, an exception will be thrown.  
   
@@ -294,10 +294,10 @@
   
  If an axis is enabled, the axis, along with all its attributes (tick marks, strip lines, labels, and so forth), will be displayed regardless of whether or not it is being used to plot a <xref:System.Windows.Forms.DataVisualization.Charting.Series>.  
   
- If a value of <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled> is used, an axis may or may not be displayed, depending on whether it is being used to plot a <xref:System.Windows.Forms.DataVisualization.Charting.Series>. The axes that are used to plot data are determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Series.XAxisType%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Series.YAxisType%2A> property settings.  
+ If a value of <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled.Auto> is used, an axis may or may not be displayed, depending on whether it is being used to plot a <xref:System.Windows.Forms.DataVisualization.Charting.Series>. The axes that are used to plot data are determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Series.XAxisType%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.Series.YAxisType%2A> property settings.  
   
 > [!NOTE]
->  If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>, but the axis is not being used to plot data; the grid line of an adjacent axis will be drawn instead.  
+>  If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled.Auto>, but the axis is not being used to plot data; the grid line of an adjacent axis will be drawn instead.  
   
  ]]></format>
         </remarks>
@@ -402,7 +402,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines how often the labels and major tick marks and grid lines associated with the axis are drawn if the `Interval` property value of a label, tick mark, or grid line is set to <xref:System.Double>, which signifies that it is not set.  
+ This property determines how often the labels and major tick marks and grid lines associated with the axis are drawn if the `Interval` property value of a label, tick mark, or grid line is set to <xref:System.Double.NaN>, which signifies that it is not set.  
   
  The `Interval` property of a major tick mark, grid line or label of the axis has priority over the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property setting of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
   
@@ -440,7 +440,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property is set to "Auto", the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalAutoMode%2A> property determines how many intervals should be calculated. If your chart is resized or redrawn often, you can set the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalAutoMode%2A> property to <xref:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode>, in which case the chart will dynamically calculate axis intervals. This is especially useful in situations where the chart intervals are displayed differently, depending on their data.  
+ When the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Interval%2A> property is set to "Auto", the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalAutoMode%2A> property determines how many intervals should be calculated. If your chart is resized or redrawn often, you can set the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalAutoMode%2A> property to <xref:System.Windows.Forms.DataVisualization.Charting.IntervalAutoMode.VariableCount>, in which case the chart will dynamically calculate axis intervals. This is especially useful in situations where the chart intervals are displayed differently, depending on their data.  
   
  ]]></format>
         </remarks>
@@ -479,7 +479,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property determines the interval offset of an axis. This value is used as the interval offset of an axis' labels and the major tick marks and grid lines associated with the axis if the `IntervalOffset` property value of the labels, tick marks, or grid lines is not set, which is represented by a value of <xref:System.Double>.  
+ The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property determines the interval offset of an axis. This value is used as the interval offset of an axis' labels and the major tick marks and grid lines associated with the axis if the `IntervalOffset` property value of the labels, tick marks, or grid lines is not set, which is represented by a value of <xref:System.Double.NaN>.  
   
  The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property of the tick marks, labels and grid lines of an axis has priority over the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.IntervalOffset%2A> property setting of the <xref:System.Windows.Forms.DataVisualization.Charting.Axis> object.  
   
@@ -523,9 +523,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines the interval offset type of an axis, and is used for the interval offset type of an axis' labels, and major tick marks or grid lines if the axis element's own `IntervalOffsetType` property value is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>.  
+ This property determines the interval offset type of an axis, and is used for the interval offset type of an axis' labels, and major tick marks or grid lines if the axis element's own `IntervalOffsetType` property value is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet>.  
   
- Setting this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> will result in a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> being used (only the axis elements such as major grid lines, etc. can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>).  
+ Setting this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet> will result in a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto> being used (only the axis elements such as major grid lines, etc. can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet>).  
   
 > [!NOTE]
 >  The minor grid lines and tick marks of an axis never use this property for their interval offset type.  
@@ -566,9 +566,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines the interval type of an axis, and is used for the interval type of an axis' labels, major tick marks, or major grid lines if the axis element's own `IntervalType` property value is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>.  
+ This property determines the interval type of an axis, and is used for the interval type of an axis' labels, major tick marks, or major grid lines if the axis element's own `IntervalType` property value is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet>.  
   
- Setting this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> will result in a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> being used. Only the axis elements, such as grid lines, can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>.  
+ Setting this property to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet> will result in a value of <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto> being used. Only the axis elements, such as grid lines, can be set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.NotSet>.  
   
  **Note** The minor grid lines and tick marks of an axis never use this property for their interval type.  
   
@@ -992,7 +992,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property to specify the line color of an axis.  
   
- **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
+ **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled.Auto>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
   
  ]]></format>
         </remarks>
@@ -1030,7 +1030,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineDashStyle%2A> property determines the line style used for an axis. The line can be solid, dotted, and so forth.  
   
- **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
+ **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled.Auto>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
   
  ]]></format>
         </remarks>
@@ -1068,7 +1068,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineWidth%2A> property gets or sets the width of an axis line, in pixels. If the width is set to zero (0), the line will not be displayed.  
   
- **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
+ **Note** If an axis is not enabled but an adjacent axis is using grid lines, one of those grid lines will be displayed in place of the axis that is not enabled. The same situation will occur if the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.Enabled%2A> property of an axis is set to <xref:System.Windows.Forms.DataVisualization.Charting.AxisEnabled.Auto>. In this case, the axis is not being used to plot data, and the grid line of an adjacent axis will be drawn instead.  
   
  ]]></format>
         </remarks>
@@ -1252,7 +1252,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum size of the axis, measured as a percentage of the chart area. This value is used by the automatic layout algorithm.</summary>
-        <value>A <see langword="float " />value that represents the maximum size of the axis.</value>
+        <value>A <see langword="float" /> value that represents the maximum size of the axis.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1713,7 +1713,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Possible alignment values are <xref:System.Drawing.StringAlignment>, <xref:System.Drawing.StringAlignment>, and <xref:System.Drawing.StringAlignment>. A value of <xref:System.Drawing.StringAlignment> equates to an alignment to the top or the right, depending on the orientation of the axis or strip line. In the same manner, a value of <xref:System.Drawing.StringAlignment> equates to an alignment to the bottom or the right.  
+ Possible alignment values are <xref:System.Drawing.StringAlignment.Center>, <xref:System.Drawing.StringAlignment.Far>, and <xref:System.Drawing.StringAlignment.Near>. A value of <xref:System.Drawing.StringAlignment.Far> equates to an alignment to the top or the right, depending on the orientation of the axis or strip line. In the same manner, a value of <xref:System.Drawing.StringAlignment.Near> equates to an alignment to the bottom or the right.  
   
  If you want more control over the positioning of an axis title, you must perform custom drawing using the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PostPaint> or <xref:System.Windows.Forms.DataVisualization.Charting.Chart.PrePaint> event.  
   

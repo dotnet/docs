@@ -2,6 +2,7 @@
 title: "&lt;system.identityModel.services&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -23,8 +24,8 @@ Configuration section for authentication using the WS-Federation protocol.
   
 ```  
 <system.identityModel.services>  
-  <federationConfiguration name=xs:string identityConfigurationName=xs:string>  
-  </federationConfiguration>  
+  <federationConfiguration name=xs:string identityConfigurationName=xs:string>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   

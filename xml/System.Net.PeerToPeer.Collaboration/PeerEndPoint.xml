@@ -34,6 +34,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Generates a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This constructor is provided in the event a developer already knows the IP address of the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> they wish to contact.  
+  
+ Utilizing this constructor to generate an explicit <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> instance facilitates the creation of a <xref:System.Net.PeerToPeer.Collaboration.Peer> class instance that can in turn be used to interact with the peer identified by an IP address, using the Peer Collaboration Infrastructure.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public PeerEndPoint ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -457,24 +476,5 @@
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> object has been disposed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Generates a new instance of the <see cref="T:System.Net.PeerToPeer.Collaboration.PeerEndPoint" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This constructor is provided in the event a developer already knows the IP address of the <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> they wish to contact.  
-  
- Utilizing this constructor to generate an explicit <xref:System.Net.PeerToPeer.Collaboration.PeerEndPoint> instance facilitates the creation of a <xref:System.Net.PeerToPeer.Collaboration.Peer> class instance that can in turn be used to interact with the peer identified by an IP address, using the Peer Collaboration Infrastructure.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

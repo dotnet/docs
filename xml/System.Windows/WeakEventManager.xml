@@ -503,7 +503,7 @@
         <ReturnType>System.IDisposable</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Establishes a write-lock on the underlying data table, and returns an<see cref="T:System.IDisposable" />.</summary>
+        <summary>Establishes a write-lock on the underlying data table, and returns an <see cref="T:System.IDisposable" />.</summary>
         <value>An object that can be used to establish a lock on the data table members and then be appropriately disposed with a <see langword="using" /> construct.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

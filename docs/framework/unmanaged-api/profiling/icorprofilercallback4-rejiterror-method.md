@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ReJITError method, ICorProfilerCallback4 interface [.NET Framework profiling]"
   - "ICorProfilerCallback4::ReJITError method [.NET Framework profiling]"
 ms.assetid: d7888aa9-dfaa-420f-9f99-e06ab35ca482
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

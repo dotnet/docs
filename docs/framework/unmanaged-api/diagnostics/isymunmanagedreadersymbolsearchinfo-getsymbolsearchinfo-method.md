@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSymbolSearchInfo method [.NET Framework debugging]"
   - "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfo method [.NET Framework debugging]"
 ms.assetid: 40fcdbc5-3bb2-41e9-b995-40984c209a7f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

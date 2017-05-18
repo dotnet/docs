@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Requests</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Net.WebRequest</BaseTypeName>
   </Base>
@@ -38,7 +42,7 @@
   
  Requests are sent to the server by calling the <xref:System.Net.FtpWebRequest.GetResponse%2A> method or its asynchronous counterparts, the <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> and <xref:System.Net.FtpWebRequest.EndGetResponse%2A> methods. When the requested operation completes, an <xref:System.Net.FtpWebResponse> object is returned. The <xref:System.Net.FtpWebResponse> object provides the status of the operation and any data downloaded from the server.  
   
- You can set a time-out value for reading or writing to the server by using the <xref:System.Net.FtpWebRequest.ReadWriteTimeout%2A> property. If the time-out period is exceeded, the calling method throws a <xref:System.Net.WebException> with <xref:System.Net.WebExceptionStatus> set to <xref:System.Net.WebExceptionStatus>.  
+ You can set a time-out value for reading or writing to the server by using the <xref:System.Net.FtpWebRequest.ReadWriteTimeout%2A> property. If the time-out period is exceeded, the calling method throws a <xref:System.Net.WebException> with <xref:System.Net.WebExceptionStatus> set to <xref:System.Net.WebExceptionStatus.Timeout>.  
   
  When downloading a file from an FTP server, if the command was successful, the contents of the requested file are available in the response object's stream. You can access this stream by calling the <xref:System.Net.FtpWebResponse.GetResponseStream%2A> method. For more information, see <xref:System.Net.FtpWebResponse>.  
   
@@ -87,6 +91,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -127,6 +135,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -184,6 +196,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IAsyncResult</ReturnType>
@@ -245,6 +261,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -283,6 +303,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -332,6 +356,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -361,6 +389,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
@@ -406,6 +438,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -436,6 +472,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.ICredentials</ReturnType>
@@ -482,6 +522,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -503,13 +547,13 @@
   
 |Policy|Effect|  
 |------------|------------|  
-|<xref:System.Net.Cache.RequestCacheLevel>|Returns the cached resource if the resource is fresh, the content length is accurate, and the expiration, modification, and content length attributes are present.|  
-|<xref:System.Net.Cache.RequestCacheLevel>|Returns the resource from the server.|  
-|<xref:System.Net.Cache.RequestCacheLevel>|Returns the cached resource if the content length is present and matches the entry size; otherwise, throws a <xref:System.Net.WebException>.|  
-|<xref:System.Net.Cache.RequestCacheLevel>|Returns the cached resource if the content length is provided and matches the entry size; otherwise, the resource is downloaded from the server and is returned to the caller.|  
-|<xref:System.Net.Cache.RequestCacheLevel>|Returns the cached resource if the timestamp of the cached resource is the same as the time stamp of the resource on the server; otherwise, the resource is downloaded from the server, stored in the cache, and returned to the caller.|  
-|<xref:System.Net.Cache.RequestCacheLevel>|Downloads the resource from the server, stores it in the cache, and returns the resource to the caller.|  
-|<xref:System.Net.Cache.RequestCacheLevel>|If a cached resource exists, it is deleted. The resource is downloaded from the server and is returned to the caller.|  
+|<xref:System.Net.Cache.RequestCacheLevel.Default>|Returns the cached resource if the resource is fresh, the content length is accurate, and the expiration, modification, and content length attributes are present.|  
+|<xref:System.Net.Cache.RequestCacheLevel.BypassCache>|Returns the resource from the server.|  
+|<xref:System.Net.Cache.RequestCacheLevel.CacheOnly>|Returns the cached resource if the content length is present and matches the entry size; otherwise, throws a <xref:System.Net.WebException>.|  
+|<xref:System.Net.Cache.RequestCacheLevel.CacheIfAvailable>|Returns the cached resource if the content length is provided and matches the entry size; otherwise, the resource is downloaded from the server and is returned to the caller.|  
+|<xref:System.Net.Cache.RequestCacheLevel.Revalidate>|Returns the cached resource if the timestamp of the cached resource is the same as the time stamp of the resource on the server; otherwise, the resource is downloaded from the server, stored in the cache, and returned to the caller.|  
+|<xref:System.Net.Cache.RequestCacheLevel.Reload>|Downloads the resource from the server, stores it in the cache, and returns the resource to the caller.|  
+|<xref:System.Net.Cache.RequestCacheLevel.NoCacheNoStore>|If a cached resource exists, it is deleted. The resource is downloaded from the server and is returned to the caller.|  
   
 > [!NOTE]
 >  Setting <xref:System.Net.FtpWebRequest.DefaultCachePolicy%2A> overrides any configuration setting.  
@@ -532,6 +576,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -576,6 +624,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
@@ -628,6 +680,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebResponse</ReturnType>
@@ -685,6 +741,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
@@ -741,6 +801,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.WebResponse</ReturnType>
@@ -807,6 +871,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -841,6 +909,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -888,6 +960,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -943,6 +1019,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -973,6 +1053,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.IWebProxy</ReturnType>
@@ -1020,6 +1104,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1032,7 +1120,7 @@
 ## Remarks  
  The <xref:System.Net.FtpWebRequest.ReadWriteTimeout%2A> is used when writing to the stream returned by the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method or reading from the stream returned by the <xref:System.Net.FtpWebResponse.GetResponseStream%2A> method.  
   
- Specifically, the <xref:System.Net.FtpWebRequest.ReadWriteTimeout%2A> property controls the time-out for the <xref:System.IO.Stream.Read%2A> method, which is used to read the stream returned by the <xref:System.Net.FtpWebResponse.GetResponseStream%2A> method, and for the <xref:System.IO.Stream.Write%2A> method, which is used to write to the stream returned by the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method. If the time-out period is exceeded, the calling method throws a <xref:System.Net.WebException> with <xref:System.Net.WebExceptionStatus> set to <xref:System.Net.WebExceptionStatus>.  
+ Specifically, the <xref:System.Net.FtpWebRequest.ReadWriteTimeout%2A> property controls the time-out for the <xref:System.IO.Stream.Read%2A> method, which is used to read the stream returned by the <xref:System.Net.FtpWebResponse.GetResponseStream%2A> method, and for the <xref:System.IO.Stream.Write%2A> method, which is used to write to the stream returned by the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method. If the time-out period is exceeded, the calling method throws a <xref:System.Net.WebException> with <xref:System.Net.WebExceptionStatus> set to <xref:System.Net.WebExceptionStatus.Timeout>.  
   
  To specify the amount of time to wait for the request to complete, use the <xref:System.Net.FtpWebRequest.Timeout%2A> property.  
   
@@ -1055,6 +1143,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1080,6 +1172,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
@@ -1119,6 +1215,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.ServicePoint</ReturnType>
       </ReturnValue>
@@ -1157,6 +1257,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1169,7 +1273,7 @@
 ## Remarks  
  To specify an infinite value, set the <xref:System.Net.FtpWebRequest.Timeout%2A> property to <xref:System.Threading.Timeout.Infinite> (-1). This is the default value.  
   
- <xref:System.Net.FtpWebRequest.Timeout%2A> is the number of milliseconds that a synchronous request made with the <xref:System.Net.FtpWebRequest.GetResponse%2A> method waits for a response and that the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method waits for a stream. If a resource does not respond within the time-out period, the request throws a <xref:System.Net.WebException> with the <xref:System.Net.WebException.Status%2A> property set to <xref:System.Net.WebExceptionStatus>.  
+ <xref:System.Net.FtpWebRequest.Timeout%2A> is the number of milliseconds that a synchronous request made with the <xref:System.Net.FtpWebRequest.GetResponse%2A> method waits for a response and that the <xref:System.Net.FtpWebRequest.GetRequestStream%2A> method waits for a stream. If a resource does not respond within the time-out period, the request throws a <xref:System.Net.WebException> with the <xref:System.Net.WebException.Status%2A> property set to <xref:System.Net.WebExceptionStatus.Timeout>.  
   
  Changing <xref:System.Net.FtpWebRequest.Timeout%2A> after calling the <xref:System.Net.FtpWebRequest.GetRequestStream%2A>, <xref:System.Net.FtpWebRequest.BeginGetRequestStream%2A>, <xref:System.Net.FtpWebRequest.GetResponse%2A>, or <xref:System.Net.FtpWebRequest.BeginGetResponse%2A> method causes an <xref:System.InvalidOperationException> exception.  
   
@@ -1202,6 +1306,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -1245,6 +1353,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.MonoTODO</AttributeName>
@@ -1280,6 +1392,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Requests</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

@@ -164,6 +164,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetFlattenedPathFigure">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.Windows.Media.PathFigure" /> object that is an polygonal approximation of this <see cref="T:System.Windows.Media.PathFigure" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The flattening process is lossy with respect to animation and curve segment parameters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetFlattenedPathFigure">
       <MemberSignature Language="C#" Value="public System.Windows.Media.PathFigure GetFlattenedPathFigure ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Windows.Media.PathFigure GetFlattenedPathFigure() cil managed" />
@@ -438,7 +455,7 @@ IsFilled Example
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.PathFigure>|  
+|Identifier field|<xref:System.Windows.Media.PathFigure.StartPointProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -494,6 +511,23 @@ IsFilled Example
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ToString">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a string representation of this object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method produces a series of move and draw commands; for more information about the format of these commands, see the [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) overview.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ToString">
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
@@ -549,39 +583,5 @@ IsFilled Example
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetFlattenedPathFigure">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Media.PathFigure" /> object that is an polygonal approximation of this <see cref="T:System.Windows.Media.PathFigure" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The flattening process is lossy with respect to animation and curve segment parameters.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ToString">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a string representation of this object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method produces a series of move and draw commands; for more information about the format of these commands, see the [Path Markup Syntax](~/docs/framework/wpf/graphics-multimedia/path-markup-syntax.md) overview.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

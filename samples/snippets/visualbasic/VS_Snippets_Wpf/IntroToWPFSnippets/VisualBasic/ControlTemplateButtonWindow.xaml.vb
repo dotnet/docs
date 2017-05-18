@@ -1,5 +1,5 @@
 '<SnippetButtonControlTemplateWindowCODEBEHIND>
-Imports System.Windows ' Window, RoutedEventArgs, MessageBox
+Imports System.Windows
 
 Namespace SDKSample
 

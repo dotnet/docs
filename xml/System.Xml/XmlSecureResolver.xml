@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Xml.XmlResolver</BaseTypeName>
   </Base>
@@ -118,6 +122,32 @@
     </block>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlSecureResolver" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The three constructors provide three types of access restrictions:  
+  
+-   The <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.String%29> constructor restricts access by using a URL.  
+  
+-   The <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.Security.PermissionSet%29> constructor restricts access by using a permission set.  
+  
+-   The <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> constructor restricts access by using evidence.  
+  
+ See the constructor reference topics for examples of these types of restrictions.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public XmlSecureResolver (System.Xml.XmlResolver resolver, System.Security.PermissionSet permissionSet);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Xml.XmlResolver resolver, class System.Security.PermissionSet permissionSet) cil managed" />
@@ -210,6 +240,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="resolver" Type="System.Xml.XmlResolver" />
         <Parameter Name="securityUrl" Type="System.String" />
@@ -284,6 +318,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.ICredentials</ReturnType>
       </ReturnValue>
@@ -317,6 +355,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -364,6 +406,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;System.Object&gt;</ReturnType>
       </ReturnValue>
@@ -395,6 +441,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Uri</ReturnType>
       </ReturnValue>
@@ -412,31 +462,5 @@
           <paramref name="relativeUri" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Xml.XmlSecureResolver" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The three constructors provide three types of access restrictions:  
-  
--   The <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.String%29> constructor restricts access by using a URL.  
-  
--   The <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.Security.PermissionSet%29> constructor restricts access by using a permission set.  
-  
--   The <xref:System.Xml.XmlSecureResolver.%23ctor%28System.Xml.XmlResolver%2CSystem.Security.Policy.Evidence%29> constructor restricts access by using evidence.  
-  
- See the constructor reference topics for examples of these types of restrictions.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

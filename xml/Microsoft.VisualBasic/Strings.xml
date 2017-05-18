@@ -904,52 +904,52 @@
         <param name="Compare">Optional. Specifies the type of string comparison. If <c>Compare</c> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
         <summary>Returns an integer specifying the start position of the first occurrence of one string within another.</summary>
         <returns>
-          <list type="table">  
-<item>  
-<term> If  
+          <list type="table">
+            <item>
+              <term> If  
   
- </term>  
-<description> InStr returns  
+ </term>
+              <description> InStr returns  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String1" /> is zero length or <see langword="Nothing" />  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="String1" /> is zero length or <see langword="Nothing" /></term>
+              <description> 0  
   
- </term>  
-<description> 0  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="String2" /> is zero length or <see langword="Nothing" /></term>
+              <description> The starting position for the search, which defaults to the first character position.  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String2" /> is zero length or <see langword="Nothing" />  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="String2" /> is not found  
   
- </term>  
-<description> The starting position for the search, which defaults to the first character position.  
+ </term>
+              <description> 0  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String2" /> is not found  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="String2" /> is found within <paramref name="String1" /></term>
+              <description> Position where match begins  
   
- </term>  
-<description> 0  
-  
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String2" /> is found within <paramref name="String1" />  
-  
- </term>  
-<description> Position where match begins  
-  
- </description>  
-</item>  
-<item>  
-<term> </term>  
-<description> </description>  
-</item>  
-</list>
+ </description>
+            </item>
+            <item>
+              <term>
+              </term>
+              <description>
+              </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1009,56 +1009,53 @@
         <param name="Compare">Optional. Specifies the type of string comparison. If <c>Compare</c> is omitted, the <see langword="Option Compare" /> setting determines the type of comparison.</param>
         <summary>Returns an integer specifying the start position of the first occurrence of one string within another.</summary>
         <returns>
-          <list type="table">  
-<item>  
-<term> If  
+          <list type="table">
+            <item>
+              <term> If  
   
- </term>  
-<description> InStr returns  
+ </term>
+              <description> InStr returns  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String1" /> is zero length or <see langword="Nothing" />  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="String1" /> is zero length or <see langword="Nothing" /></term>
+              <description> 0  
   
- </term>  
-<description> 0  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="String2" /> is zero length or <see langword="Nothing" /></term>
+              <description>
+                <paramref name="start" />
+              </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="String2" /> is not found  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String2" /> is zero length or <see langword="Nothing" />  
+ </term>
+              <description> 0  
   
- </term>  
-<description> <paramref name="start" />  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="String2" /> is found within <paramref name="String1" /></term>
+              <description> Position where match begins  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String2" /> is not found  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="Start" /> &gt; length of <paramref name="String1" /></term>
+              <description> 0  
   
- </term>  
-<description> 0  
-  
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String2" /> is found within <paramref name="String1" />  
-  
- </term>  
-<description> Position where match begins  
-  
- </description>  
-</item>  
-<item>  
-<term> <paramref name="Start" /> &gt; length of <paramref name="String1" />  
-  
- </term>  
-<description> 0  
-  
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1120,56 +1117,57 @@
         <param name="Compare">Optional. Numeric value indicating the kind of comparison to use when evaluating substrings. If omitted, a binary comparison is performed. See Settings for values.</param>
         <summary>Returns the position of the first occurrence of one string within another, starting from the right side of the string.</summary>
         <returns>
-          <list type="table">  
-<item>  
-<term> If  
+          <list type="table">
+            <item>
+              <term> If  
   
- </term>  
-<description> InStrRev returns  
+ </term>
+              <description> InStrRev returns  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="StringCheck" /> is zero-length  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="StringCheck" /> is zero-length  
   
- </term>  
-<description> 0  
+ </term>
+              <description> 0  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="StringMatch" /> is zero-length  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="StringMatch" /> is zero-length  
   
- </term>  
-<description> <paramref name="Start" />  
+ </term>
+              <description>
+                <paramref name="Start" />
+              </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="StringMatch" /> is not found  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="StringMatch" /> is not found  
+ </term>
+              <description> 0  
   
- </term>  
-<description> 0  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="StringMatch" /> is found within <paramref name="StringCheck" /></term>
+              <description> Position at which the first match is found, starting with the right side of the string.  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="StringMatch" /> is found within <paramref name="StringCheck" />  
+ </description>
+            </item>
+            <item>
+              <term>
+                <paramref name="Start" /> is greater than length of <paramref name="StringMatch" /></term>
+              <description> 0  
   
- </term>  
-<description> Position at which the first match is found, starting with the right side of the string.  
-  
- </description>  
-</item>  
-<item>  
-<term> <paramref name="Start" /> is greater than length of <paramref name="StringMatch" />  
-  
- </term>  
-<description> 0  
-  
- </description>  
-</item>  
-</list>
+ </description>
+            </item>
+          </list>
         </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1305,7 +1303,7 @@
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -1346,7 +1344,7 @@
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -2386,48 +2384,15 @@
         <returns>
           <see langword="Replace" /> returns the following values.  
   
- <list type="table">  
-<item>  
-<term> If  
+ <list type="table"><item><term> If  
   
- </term>  
-<description> Replace returns  
+ </term><description> Replace returns  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="Find" /> is zero-length or <see langword="Nothing" />  
+ </description></item><item><term><paramref name="Find" /> is zero-length or <see langword="Nothing" /></term><description> Copy of <paramref name="Expression" /></description></item><item><term><paramref name="Replace" /> is zero-length  
   
- </term>  
-<description> Copy of <paramref name="Expression" />  
+ </term><description> Copy of <paramref name="Expression" /> with no occurrences of <paramref name="Find" /></description></item><item><term><paramref name="Expression" /> is zero-length or <see langword="Nothing" />, or <paramref name="Start" /> is greater than length of <paramref name="Expression" /></term><description><see langword="Nothing" /></description></item><item><term><paramref name="Count" /> is 0  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="Replace" /> is zero-length  
-  
- </term>  
-<description> Copy of <paramref name="Expression" /> with no occurrences of <paramref name="Find" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <paramref name="Expression" /> is zero-length or <see langword="Nothing" />, or <paramref name="Start" /> is greater than length of <paramref name="Expression" />  
-  
- </term>  
-<description> <see langword="Nothing" />  
-  
- </description>  
-</item>  
-<item>  
-<term> <paramref name="Count" /> is 0  
-  
- </term>  
-<description> Copy of <paramref name="Expression" />  
-  
- </description>  
-</item>  
-</list></returns>
+ </term><description> Copy of <paramref name="Expression" /></description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2718,40 +2683,17 @@ Dim aString As String = Replace(TestString, "o", "i")
         <summary>Returns -1, 0, or 1, based on the result of a string comparison.</summary>
         <returns>The <see langword="StrComp" /> function has the following return values.  
   
- <list type="table">  
-<item>  
-<term> If  
+ <list type="table"><item><term> If  
   
- </term>  
-<description> StrComp returns  
+ </term><description> StrComp returns  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String1" /> sorts ahead of <paramref name="String2" />  
+ </description></item><item><term><paramref name="String1" /> sorts ahead of <paramref name="String2" /></term><description> -1  
   
- </term>  
-<description> -1  
+ </description></item><item><term><paramref name="String1" /> is equal to <paramref name="String2" /></term><description> 0  
   
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String1" /> is equal to <paramref name="String2" />  
+ </description></item><item><term><paramref name="String1" /> sorts after <paramref name="String2" /></term><description> 1  
   
- </term>  
-<description> 0  
-  
- </description>  
-</item>  
-<item>  
-<term> <paramref name="String1" /> sorts after <paramref name="String2" />  
-  
- </term>  
-<description> 1  
-  
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2810,7 +2752,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
  The `Conversion` argument settings are:  
   
@@ -2867,7 +2809,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
-        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String " />value.</param>
+        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String" /> value.</param>
         <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
         <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
@@ -2909,7 +2851,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
-        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String " />value.</param>
+        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String" /> value.</param>
         <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
         <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
@@ -2951,7 +2893,7 @@ Dim aString As String = Replace(TestString, "o", "i")
       </Parameters>
       <Docs>
         <param name="Number">Required. <see langword="Integer" /> expression. The length to the string to be returned.</param>
-        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String " />value.</param>
+        <param name="Character">Required. Any valid <see langword="Char" />, <see langword="String" />, or <see langword="Object" /> expression. Only the first character of the expression will be used. If Character is of type <see langword="Object" />, it must contain either a <see langword="Char" /> or a <see langword="String" /> value.</param>
         <summary>Returns a string or object consisting of the specified character repeated the specified number of times.</summary>
         <returns>Returns a string or object consisting of the specified character repeated the specified number of times.</returns>
         <remarks>
@@ -3073,7 +3015,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   
@@ -3114,7 +3056,7 @@ Dim aString As String = Replace(TestString, "o", "i")
  This function uses the application's culture information when manipulating the string so that the case changes are appropriate for the locale in which the application is being used.  
   
 > [!IMPORTANT]
->  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison> or <xref:System.StringComparison> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
+>  If your application makes security decisions based on the result of a comparison or case-change operation, then the operation should use the <xref:System.String.Compare%2A?displayProperty=fullName> method, and pass <xref:System.StringComparison.Ordinal> or <xref:System.StringComparison.OrdinalIgnoreCase> for the `comparisonType` argument. For more information, see [How Culture Affects Strings in Visual Basic](~/docs/visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md).  
   
    
   

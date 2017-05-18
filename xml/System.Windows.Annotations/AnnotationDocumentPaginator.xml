@@ -33,6 +33,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public AnnotationDocumentPaginator (System.Windows.Documents.DocumentPaginator originalPaginator, System.IO.Stream annotationStore);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(class System.Windows.Documents.DocumentPaginator originalPaginator, class System.IO.Stream annotationStore) cil managed" />
@@ -54,7 +71,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this constructor sets the text flow direction to <xref:System.Windows.FlowDirection>.  If needed you can use one of the alternate <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor overloads to set the text <xref:System.Windows.FlowDirection> to a different setting.  
+ By default this constructor sets the text flow direction to <xref:System.Windows.FlowDirection.LeftToRight>.  If needed you can use one of the alternate <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor overloads to set the text <xref:System.Windows.FlowDirection> to a different setting.  
   
  The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
   
@@ -83,7 +100,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default this constructor sets the text flow direction to <xref:System.Windows.FlowDirection>.  If needed you can use one of the alternate <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor overloads to set the text <xref:System.Windows.FlowDirection> to a different setting.  
+ By default this constructor sets the text flow direction to <xref:System.Windows.FlowDirection.LeftToRight>.  If needed you can use one of the alternate <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor overloads to set the text <xref:System.Windows.FlowDirection> to a different setting.  
   
  The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
   
@@ -382,22 +399,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Annotations.AnnotationDocumentPaginator" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Annotations.AnnotationDocumentPaginator> class wraps the <xref:System.Windows.Documents.DocumentPaginator> specified to the <xref:System.Windows.Annotations.AnnotationDocumentPaginator.%23ctor%2A> constructor to add the user annotations to the pages for printing.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

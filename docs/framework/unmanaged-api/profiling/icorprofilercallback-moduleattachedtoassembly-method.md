@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::ModuleAttachedToAssembly method [.NET Framework profiling]"
   - "ModuleAttachedToAssembly method [.NET Framework profiling]"
 ms.assetid: b595798a-5d40-4cac-ab4f-911c61d2c5d2
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

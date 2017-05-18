@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Net.Primitives</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -30,7 +34,7 @@
    
   
 ## Examples  
- The following code example creates a policy with <xref:System.Net.Cache.RequestCachePolicy.Level%2A> set to <xref:System.Net.Cache.RequestCacheLevel>, and uses it to set the cache policy of a <xref:System.Net.WebRequest>.  
+ The following code example creates a policy with <xref:System.Net.Cache.RequestCachePolicy.Level%2A> set to <xref:System.Net.Cache.RequestCacheLevel.CacheOnly>, and uses it to set the cache policy of a <xref:System.Net.WebRequest>.  
   
  [!code-cpp[NclSimpleCache#13](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#13)]
  [!code-csharp[NclSimpleCache#13](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#13)]  
@@ -53,6 +57,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Net.Cache.RequestCachePolicy" /> class.</summary>
@@ -60,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor initializes the <xref:System.Net.Cache.RequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.RequestCacheLevel>.  
+ This constructor initializes the <xref:System.Net.Cache.RequestCachePolicy.Level%2A> property to <xref:System.Net.Cache.RequestCacheLevel.Default>.  
   
    
   
@@ -88,6 +96,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="level" Type="System.Net.Cache.RequestCacheLevel" />
       </Parameters>
@@ -105,7 +117,7 @@
    
   
 ## Examples  
- The following code example creates a policy with <xref:System.Net.Cache.RequestCachePolicy.Level%2A> set to <xref:System.Net.Cache.RequestCacheLevel>.and uses it to set the cache policy of a <xref:System.Net.WebRequest>.  
+ The following code example creates a policy with <xref:System.Net.Cache.RequestCachePolicy.Level%2A> set to <xref:System.Net.Cache.RequestCacheLevel.CacheOnly>.and uses it to set the cache policy of a <xref:System.Net.WebRequest>.  
   
  [!code-cpp[NclSimpleCache#13](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#13)]
  [!code-csharp[NclSimpleCache#13](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#13)]  
@@ -129,6 +141,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Net.Cache.RequestCacheLevel</ReturnType>
       </ReturnValue>
@@ -139,14 +155,14 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Applications typically use <xref:System.Net.Cache.RequestCacheLevel> as their cache policy level. Using the <xref:System.Net.Cache.RequestCacheLevel> level, the effective cache policy is determined by the current cache policy and the age of the content in the cache. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=fullName> property, if not `null`, determines the cache policy in effect for a request.  
+ Applications typically use <xref:System.Net.Cache.RequestCacheLevel.Default> as their cache policy level. Using the <xref:System.Net.Cache.RequestCacheLevel.Default> level, the effective cache policy is determined by the current cache policy and the age of the content in the cache. The <xref:System.Net.WebRequest.CachePolicy%2A?displayProperty=fullName> property, if not `null`, determines the cache policy in effect for a request.  
   
  The default policy for the application domain can be set using the <xref:System.Net.HttpWebRequest.DefaultCachePolicy%2A> or the application or machine configuration file. For more information, see [\&lt;requestCaching\&gt; Element (Network Settings)](~/docs/framework/configure-apps/file-schema/network/requestcaching-element-network-settings.md).  
   
    
   
 ## Examples  
- The following code example creates a <xref:System.Net.Cache.RequestCacheLevel> policy and sends a request.  
+ The following code example creates a <xref:System.Net.Cache.RequestCacheLevel.CacheOnly> policy and sends a request.  
   
  [!code-cpp[NclSimpleCache#13](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#13)]
  [!code-csharp[NclSimpleCache#13](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#13)]  
@@ -169,6 +185,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Net.Primitives</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -180,7 +200,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following code example creates a <xref:System.Net.Cache.RequestCacheLevel> policy and sends a request.  
+ The following code example creates a <xref:System.Net.Cache.RequestCacheLevel.NoCacheNoStore> policy and sends a request.  
   
  [!code-cpp[NclSimpleCache#14](~/samples/snippets/cpp/VS_Snippets_Remoting/NCLSimpleCache/CPP/NCLSimpleCache.cpp#14)]
  [!code-csharp[NclSimpleCache#14](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLSimpleCache/CS/example.cs#14)]  

@@ -27,11 +27,6 @@
   
  The <xref:System.Activities.Presentation.Toolbox.ToolboxCategory> class implements the <xref:System.ComponentModel.INotifyPropertyChanged> interface. This allows the collection that is storing the toolbox items to provide notifications when properties like the <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.CategoryName%2A> property are changed and methods like <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Add%2A> and <xref:System.Activities.Presentation.Toolbox.ToolboxCategory.Remove%2A> are used to change the contents of the collection.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_ToolboxCategory#0](WFD_ToolboxCategory#0)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>
@@ -554,7 +549,7 @@
       <Docs>
         <param name="index">The zero-based index of the tool item to get or set.</param>
         <summary>Gets or sets the tool at the specified index.</summary>
-        <value>The tool<see cref="T:System.Object" /> at the specified index.</value>
+        <value>The tool <see cref="T:System.Object" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -640,7 +635,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the tools in the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</summary>
-        <value>An<see cref="T:System.Collections.Generic.ICollection`1" /> that contains the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</value>
+        <value>An <see cref="T:System.Collections.Generic.ICollection`1" /> that contains the <see cref="T:System.Activities.Presentation.Toolbox.ToolboxCategory" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

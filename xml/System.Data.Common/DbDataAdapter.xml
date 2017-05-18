@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Data.Common</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Data.Common.DataAdapter</BaseTypeName>
   </Base>
@@ -39,50 +43,29 @@
     <block subset="none" type="overrides">
       <para>When you inherit from the <see cref="T:System.Data.Common.DbDataAdapter" /> class, we recommend that you implement the following constructors:  
   
- <list type="table">  
-<listheader>  
-<term> Item  
+ <list type="table"><listheader><term> Item  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> *Prv*DataAdapter()  
+ </description></listheader><item><term> *Prv*DataAdapter()  
   
- </term>  
-<description> Initializes a new instance of the *Prv*DataAdapter class.  
+ </term><description> Initializes a new instance of the *Prv*DataAdapter class.  
   
- </description>  
-</item>  
-<item>  
-<term> *Prv*DataAdapter(*Prv*Command *selectCommand*)  
+ </description></item><item><term> *Prv*DataAdapter(*Prv*Command *selectCommand*)  
   
- </term>  
-<description> Initializes a new instance of the *Prv*DataAdapter class with the specified SQL SELECT statement.  
+ </term><description> Initializes a new instance of the *Prv*DataAdapter class with the specified SQL SELECT statement.  
   
- </description>  
-</item>  
-<item>  
-<term> *Prv*DataAdapter(string *selectCommandText*, string *selectConnectionString*)  
+ </description></item><item><term> *Prv*DataAdapter(string *selectCommandText*, string *selectConnectionString*)  
   
- </term>  
-<description> Initializes a new instance of the *Prv*DataAdapter class with an SQL SELECT statement and a connection string.  
+ </term><description> Initializes a new instance of the *Prv*DataAdapter class with an SQL SELECT statement and a connection string.  
   
- </description>  
-</item>  
-<item>  
-<term> *Prv*DataAdapter(string *selectCommandText*, *Prv*Connection *selectConnection*)  
+ </description></item><item><term> *Prv*DataAdapter(string *selectCommandText*, *Prv*Connection *selectConnection*)  
   
- </term>  
-<description> Initializes a new instance of the *Prv*DataAdapter class with an SQL SELECT statement and a *Prv*Connection object.  
+ </term><description> Initializes a new instance of the *Prv*DataAdapter class with an SQL SELECT statement and a *Prv*Connection object.  
   
- </description>  
-</item>  
-</list>  
+ </description></item></list>  
   
- To promote consistency among .NET Framework data providers, you should name the inheriting class in the form <paramref name="Prv" />DataAdapter, where <paramref name="Prv" /> is the uniform prefix given to all classes in a specific .NET Framework data provider namespace. For example, "Sql" is the prefix of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class in the **System.Data.SqlClient** namespace.</para>
+ To promote consistency among .NET Framework data providers, you should name the inheriting class in the form *Prv*DataAdapter, where *Prv* is the uniform prefix given to all classes in a specific .NET Framework data provider namespace. For example, "Sql" is the prefix of the <see cref="T:System.Data.SqlClient.SqlDataAdapter" /> class in the **System.Data.SqlClient** namespace.</para>
     </block>
   </Docs>
   <Members>
@@ -99,6 +82,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
       <Docs>
@@ -138,6 +125,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="adapter" Type="System.Data.Common.DbDataAdapter" />
       </Parameters>
@@ -167,6 +158,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -208,6 +203,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -243,6 +242,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.RowUpdatedEventArgs</ReturnType>
@@ -280,6 +283,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.Common.RowUpdatingEventArgs</ReturnType>
       </ReturnValue>
@@ -316,6 +323,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -346,6 +357,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -393,6 +408,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -419,6 +438,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -455,6 +478,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -512,6 +539,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -581,6 +612,10 @@ DataSet dataset = new DataSet();
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -671,6 +706,10 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -724,6 +763,10 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -781,6 +824,10 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -897,6 +944,10 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -991,6 +1042,10 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -1073,6 +1128,10 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.CommandBehavior</ReturnType>
       </ReturnValue>
@@ -1095,6 +1154,10 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable[]</ReturnType>
@@ -1175,6 +1238,10 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
@@ -1253,6 +1320,10 @@ adapter.Fill(dataset, "AAA"); // Fills table "aaa" because only one similarly na
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable[]</ReturnType>
@@ -1354,6 +1425,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable</ReturnType>
       </ReturnValue>
@@ -1429,6 +1504,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.DataTable[]</ReturnType>
@@ -1526,6 +1605,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDataParameter</ReturnType>
       </ReturnValue>
@@ -1568,6 +1651,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1606,6 +1693,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
@@ -1634,6 +1725,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1670,6 +1765,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1717,6 +1816,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1753,6 +1856,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1788,6 +1895,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1830,6 +1941,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
@@ -1861,6 +1976,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
@@ -1894,6 +2013,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
       </ReturnValue>
@@ -1925,6 +2048,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Data.IDbCommand</ReturnType>
@@ -1958,6 +2085,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1990,6 +2121,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2026,6 +2161,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2082,7 +2221,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
  The `SourceVersion` property of a .NET Framework data provider's `Parameter` class determines whether to use the Original, Current, or Proposed version of the column value. This capability is often used to include original values in the WHERE clause of an UPDATE statement to check for optimistic concurrency violations.  
   
 > [!NOTE]
->  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus>.  
+>  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus.Continue>.  
   
    
   
@@ -2121,6 +2260,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2177,7 +2320,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
  The `SourceVersion` property of a .NET Framework data provider's `Parameter` class determines whether to use the Original, Current, or Proposed version of the column value. This capability is often used to include original values in the WHERE clause of an UPDATE statement to check for optimistic concurrency violations.  
   
 > [!NOTE]
->  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus>.  
+>  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus.Continue>.  
   
    
   
@@ -2206,6 +2349,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2262,7 +2409,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
  The `SourceVersion` property of a .NET Framework data provider's `Parameter` class determines whether to use the Original, Current, or Proposed version of the column value. This capability is often used to include original values in the WHERE clause of an UPDATE statement to check for optimistic concurrency violations.  
   
 > [!NOTE]
->  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus>.  
+>  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus.Continue>.  
   
    
   
@@ -2301,6 +2448,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2359,7 +2510,7 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
  The `SourceVersion` property of a .NET Framework data provider's `Parameter` class determines whether to use the Original, Current, or Proposed version of the column value. This capability is often used to include original values in the WHERE clause of an UPDATE statement to check for optimistic concurrency violations.  
   
 > [!NOTE]
->  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus>.  
+>  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus.Continue>.  
   
  ]]></format>
         </remarks>
@@ -2390,6 +2541,10 @@ adapter.FillSchema(dataset, "AAA"); // Fills the schema of table "aaa" because o
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -2467,7 +2622,7 @@ DataSet dataset = new DataSet();
  The `SourceVersion` property of a .NET Framework data provider's `Parameter` class determines whether to use the Original, Current, or Proposed version of the column value. This capability is often used to include original values in the WHERE clause of an UPDATE statement to check for optimistic concurrency violations.  
   
 > [!NOTE]
->  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus>.  
+>  If an error occurs while updating a row, an exception is thrown and execution of the update is discontinued. To continue the update operation without generating exceptions when an error is encountered, set the <xref:System.Data.Common.DataAdapter.ContinueUpdateOnError%2A> property to `true` before calling <xref:System.Data.Common.DbDataAdapter.Update%2A>. You may also respond to errors on a per-row basis within the `RowUpdated` event of a DataAdapter. To continue the update operation without generating an exception within the `RowUpdated` event, set the <xref:System.Data.Common.RowUpdatedEventArgs.Status%2A> property of the <xref:System.Data.Common.RowUpdatedEventArgs> to <xref:System.Data.UpdateStatus.Continue>.  
   
    
   
@@ -2498,6 +2653,10 @@ DataSet dataset = new DataSet();
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
@@ -2510,40 +2669,23 @@ DataSet dataset = new DataSet();
         <summary>Gets or sets a value that enables or disables batch processing support, and specifies the number of commands that can be executed in a batch.</summary>
         <value>The number of rows to process per batch.  
   
- <list type="table">  
-<listheader>  
-<term> Value is  
+ <list type="table"><listheader><term> Value is  
   
- </term>  
-<description> Effect  
+ </term><description> Effect  
   
- </description>  
-</listheader>  
-<item>  
-<term> 0  
+ </description></listheader><item><term> 0  
   
- </term>  
-<description> There is no limit on the batch size.  
+ </term><description> There is no limit on the batch size.  
   
- </description>  
-</item>  
-<item>  
-<term> 1  
+ </description></item><item><term> 1  
   
- </term>  
-<description> Disables batch updating.  
+ </term><description> Disables batch updating.  
   
- </description>  
-</item>  
-<item>  
-<term> &gt; 1  
+ </description></item><item><term> &gt; 1  
   
- </term>  
-<description> Changes are sent using batches of <see cref="P:System.Data.Common.DbDataAdapter.UpdateBatchSize" /> operations at a time.  
+ </term><description> Changes are sent using batches of <see cref="P:System.Data.Common.DbDataAdapter.UpdateBatchSize" /> operations at a time.  
   
- </description>  
-</item>  
-</list>  
+ </description></item></list>  
   
  When setting this to a value other than 1 ,all the commands associated with the <see cref="T:System.Data.Common.DbDataAdapter" /> must have their <see cref="P:System.Data.IDbCommand.UpdatedRowSource" /> property set to **None** or **OutputParameters**. An exception will be thrown otherwise.</value>
         <remarks>
@@ -2573,6 +2715,10 @@ DataSet dataset = new DataSet();
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Common</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

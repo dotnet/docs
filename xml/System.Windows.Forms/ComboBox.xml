@@ -186,13 +186,13 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ComboBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ComboBox> controls in which URLs, addresses, file names, or commands will be frequently entered. If there are duplicate entries in the maintained source, automatic completion behaves unpredictably.  
   
- If you set <xref:System.Windows.Forms.ComboBoxStyle> to <xref:System.Windows.Forms.ComboBoxStyle>, the list displays only if <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> is <xref:System.Windows.Forms.AutoCompleteMode> or <xref:System.Windows.Forms.AutoCompleteMode>.  
+ If you set <xref:System.Windows.Forms.ComboBoxStyle> to <xref:System.Windows.Forms.ComboBoxStyle.DropDownList>, the list displays only if <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> is <xref:System.Windows.Forms.AutoCompleteMode.Suggest> or <xref:System.Windows.Forms.AutoCompleteMode.SuggestAppend>.  
   
- The use of the <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> property to <xref:System.Windows.Forms.AutoCompleteSource> in order to use <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A>.  
+ The use of the <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> property to <xref:System.Windows.Forms.AutoCompleteSource.CustomSource> in order to use <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A>.  
   
  You must use the <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> properties together.  
   
- With <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> set to <xref:System.Windows.Forms.AutoCompleteMode> and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> set to <xref:System.Windows.Forms.AutoCompleteSource>, the behavior is as follows:  
+ With <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> set to <xref:System.Windows.Forms.AutoCompleteMode.SuggestAppend> and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> set to <xref:System.Windows.Forms.AutoCompleteSource.ListItems>, the behavior is as follows:  
   
 -   If the list of strings is empty, pressing the BACKSPACE or DELETE key does nothing.  
   
@@ -242,11 +242,11 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A>, <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A>, and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> properties to create a <xref:System.Windows.Forms.ComboBox> that automatically completes input strings by comparing the prefix being entered to the prefixes of all strings in a maintained source. This is useful for <xref:System.Windows.Forms.ComboBox> controls in which URLs, addresses, file names, or commands will be frequently entered.  
   
- The use of the <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> property to <xref:System.Windows.Forms.AutoCompleteSource> in order to use <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A>.  
+ The use of the <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A> property is optional, but you must set the <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> property to <xref:System.Windows.Forms.AutoCompleteSource.CustomSource> in order to use <xref:System.Windows.Forms.ComboBox.AutoCompleteCustomSource%2A>.  
   
  You must use the <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> properties together.  
   
- With <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> set to <xref:System.Windows.Forms.AutoCompleteMode> and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> set to <xref:System.Windows.Forms.AutoCompleteSource>, the behavior is as follows:  
+ With <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> set to <xref:System.Windows.Forms.AutoCompleteMode.SuggestAppend> and <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> set to <xref:System.Windows.Forms.AutoCompleteSource.ListItems>, the behavior is as follows:  
   
 -   If the list of strings is empty, pressing the BACKSPACE or DELETE key does nothing.  
   
@@ -604,7 +604,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
@@ -1183,7 +1183,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Starting with the .NET Framework 4.5.2, if the <xref:System.Windows.Forms.ComboBox.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle> or <xref:System.Windows.Forms.FlatStyle>, the drop-down arrow may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
+ Starting with the .NET Framework 4.5.2, if the <xref:System.Windows.Forms.ComboBox.FlatStyle%2A> property is set to <xref:System.Windows.Forms.FlatStyle.Flat> or <xref:System.Windows.Forms.FlatStyle.Popup>, the drop-down arrow may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
   
 ```  
 <appSettings>  
@@ -1332,7 +1332,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Forms.ComboBox.IsInputKey%2A> method returns `true` when the `keyData` parameter includes the <xref:System.Windows.Forms.Keys> or <xref:System.Windows.Forms.Keys> value and the <xref:System.Windows.Forms.ComboBox.DroppedDown%2A> property is `true`.  
+ The <xref:System.Windows.Forms.ComboBox.IsInputKey%2A> method returns `true` when the `keyData` parameter includes the <xref:System.Windows.Forms.Keys.Return> or <xref:System.Windows.Forms.Keys.Escape> value and the <xref:System.Windows.Forms.ComboBox.DroppedDown%2A> property is `true`.  
   
  ]]></format>
         </remarks>
@@ -1965,7 +1965,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the value of the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property of `e` is <xref:System.Windows.Forms.Keys> or <xref:System.Windows.Forms.Keys> and the <xref:System.Windows.Forms.ComboBox.DroppedDown%2A> property is `true`, the <xref:System.Windows.Forms.ComboBox.OnKeyPress%2A> method sets <xref:System.Windows.Forms.ComboBox.DroppedDown%2A> to `false`.  
+ If the value of the <xref:System.Windows.Forms.KeyPressEventArgs.KeyChar%2A> property of `e` is <xref:System.Windows.Forms.Keys.Return> or <xref:System.Windows.Forms.Keys.Escape> and the <xref:System.Windows.Forms.ComboBox.DroppedDown%2A> property is `true`, the <xref:System.Windows.Forms.ComboBox.OnKeyPress%2A> method sets <xref:System.Windows.Forms.ComboBox.DroppedDown%2A> to `false`.  
   
  ]]></format>
         </remarks>

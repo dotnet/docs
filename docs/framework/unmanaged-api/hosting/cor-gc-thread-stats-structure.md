@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_GC_THREAD_STATS structure [.NET Framework hosting]"
 ms.assetid: 01f9a59b-7679-4d42-9ced-4a8981625c3d
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

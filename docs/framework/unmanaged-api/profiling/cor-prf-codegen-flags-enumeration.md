@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_CODEGEN_FLAGS enumeration [.NET Framework profiling]"
 ms.assetid: 3e184022-0247-4824-a23d-6b29593d8d01
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

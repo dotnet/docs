@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 0f8b42de-858a-44a3-87d9-998211f26377
+redirect_url: /dotnet/articles/csharp/tutorials/index
 ---
 
 # 🔧 Concurrent Programming

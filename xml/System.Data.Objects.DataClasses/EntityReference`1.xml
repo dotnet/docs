@@ -86,9 +86,9 @@
 ## Remarks  
  The <xref:System.Data.Objects.DataClasses.EntityReference%601.Attach%2A> method is used to define a relationship between an object and a related object when both objects are already attached to an object context. Set the related object to the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value%2A> property if the related object is not already attached to the object context. When both objects are detached, you can also define the relationship by setting the related object to the <xref:System.Data.Objects.DataClasses.EntityReference%601.Value%2A> property and then attaching the root object in the object graph. For more information, see [Attaching and Detaching Objects](http://msdn.microsoft.com/en-us/41d5c1ef-1b78-4502-aa10-7e1438d62d23).  
   
- The object associated with this <xref:System.Data.Objects.DataClasses.EntityReference%601> and all objects being attached to it must be in an <xref:System.Data.EntityState> or <xref:System.Data.EntityState> state.  
+ The object associated with this <xref:System.Data.Objects.DataClasses.EntityReference%601> and all objects being attached to it must be in an <xref:System.Data.EntityState.Unchanged> or <xref:System.Data.EntityState.Modified> state.  
   
- An object in the <xref:System.Data.EntityState> state can only be attached when the <xref:System.Data.Objects.ObjectStateManager> is already tracking the relationship instance.  
+ An object in the <xref:System.Data.EntityState.Deleted> state can only be attached when the <xref:System.Data.Objects.ObjectStateManager> is already tracking the relationship instance.  
   
  ]]></format>
         </remarks>
@@ -116,7 +116,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method is used to obtain a new instance of <xref:System.Data.Objects.ObjectQuery%601> that, when it is executed, returns the related object. This is useful as the starting point for a more complex join, union, or filtered query, or to return the referenced object in a detached state using the <xref:System.Data.Objects.MergeOption> option.  
+ This method is used to obtain a new instance of <xref:System.Data.Objects.ObjectQuery%601> that, when it is executed, returns the related object. This is useful as the starting point for a more complex join, union, or filtered query, or to return the referenced object in a detached state using the <xref:System.Data.Objects.MergeOption.NoTracking> option.  
   
  ]]></format>
         </remarks>

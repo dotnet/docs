@@ -2,6 +2,7 @@
 title: "&lt;federationConfiguration&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -24,8 +25,8 @@ Configures the <xref:System.IdentityModel.Services.WSFederationAuthenticationMod
   
 ```  
 <system.identityModel.services>  
-  <federationConfiguration name=xs:string identityConfigurationName=xs:string>  
-  </federationConfiguration>  
+  <federationConfiguration name=xs:string identityConfigurationName=xs:string>  
+  </federationConfiguration>  
 </system.identityModel.services>  
 ```  
   

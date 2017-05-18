@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugFunction2::GetJMCStatus method [.NET Framework debugging]"
   - "GetJMCStatus method [.NET Framework debugging]"
 ms.assetid: 840a71ed-bf5a-4f5e-8ed6-762222b34493
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

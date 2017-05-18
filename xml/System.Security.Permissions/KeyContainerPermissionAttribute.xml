@@ -7,6 +7,10 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Permissions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Permissions.CodeAccessSecurityAttribute</BaseTypeName>
   </Base>
@@ -43,6 +47,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="action" Type="System.Security.Permissions.SecurityAction" />
       </Parameters>
@@ -60,6 +68,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -91,6 +103,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Permissions.KeyContainerPermissionFlags</ReturnType>
       </ReturnValue>
@@ -105,7 +121,7 @@
 > [!CAUTION]
 >  Many of these flags are powerful and permit access to key containers that should be granted only to highly trusted code.  
   
- The most powerful of the flags are <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, <xref:System.Security.Permissions.KeyContainerPermissionFlags>, and <xref:System.Security.Permissions.KeyContainerPermissionFlags>. For specific threats posed by the use of these flags, see individual flag descriptions.  
+ The most powerful of the flags are <xref:System.Security.Permissions.KeyContainerPermissionFlags.Create>, <xref:System.Security.Permissions.KeyContainerPermissionFlags.Delete>, <xref:System.Security.Permissions.KeyContainerPermissionFlags.Import>, <xref:System.Security.Permissions.KeyContainerPermissionFlags.Export>, <xref:System.Security.Permissions.KeyContainerPermissionFlags.Sign>, <xref:System.Security.Permissions.KeyContainerPermissionFlags.Decrypt>, and <xref:System.Security.Permissions.KeyContainerPermissionFlags.AllFlags>. For specific threats posed by the use of these flags, see individual flag descriptions.  
   
  ]]></format>
         </remarks>
@@ -119,6 +135,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,6 +167,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -171,6 +195,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -199,6 +227,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -223,6 +255,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

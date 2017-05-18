@@ -59,6 +59,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Data.Entity</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.ObjectQuery`1" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ An <xref:System.Data.Objects.ObjectQuery%601> can be initialized in such a way that it represents a single scalar result and not a collection of scalar results. Some extension methods require collection results as input. In this case, an <xref:System.ArgumentException> is thrown when one of these methods is called. For more information, see [Object Queries](http://msdn.microsoft.com/en-us/0768033c-876f-471d-85d5-264884349276).  
+  
+ When your application generates Entity SQL queries at runtime, you should be aware of any command length limitations of the data source. Entity SQL does not enforce limitations on the length of the command text in queries.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ObjectQuery (string commandText, System.Data.Objects.ObjectContext context);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string commandText, class System.Data.Objects.ObjectContext context) cil managed" />
@@ -232,7 +251,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default merge option for object queries is <xref:System.Data.Objects.MergeOption>. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
+ The default merge option for object queries is <xref:System.Data.Objects.MergeOption.AppendOnly>. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
   
    
   
@@ -924,24 +943,5 @@ ObjectQuery <DiscontinuedProduct>.Union(ObjectQuery<Product>)
         <exception cref="T:System.ArgumentException">The <paramref name="predicate" /> is an empty string.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Data.Entity</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Data.Objects.ObjectQuery`1" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- An <xref:System.Data.Objects.ObjectQuery%601> can be initialized in such a way that it represents a single scalar result and not a collection of scalar results. Some extension methods require collection results as input. In this case, an <xref:System.ArgumentException> is thrown when one of these methods is called. For more information, see [Object Queries](http://msdn.microsoft.com/en-us/0768033c-876f-471d-85d5-264884349276).  
-  
- When your application generates Entity SQL queries at runtime, you should be aware of any command length limitations of the data source. Entity SQL does not enforce limitations on the length of the command text in queries.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

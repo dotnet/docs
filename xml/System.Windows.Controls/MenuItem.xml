@@ -184,7 +184,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.ClickEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
   
@@ -327,7 +327,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.CommandParameterProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -631,7 +631,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.IsCheckableProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -696,7 +696,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.IsCheckedProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Journal%2A>|  
   
    
@@ -704,8 +704,7 @@
 ## Examples  
  The following example shows how the <xref:System.Windows.Controls.MenuItem.IsChecked%2A> property can be used to place a check mark in front of a menu item.  
   
- <!-- TODO: review snippet reference [!code-xml[MenuStyles#6](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStyles/CS/pane1.xaml#6)]  -->
- <!-- TODO: review snippet reference [!code-xml[MenuStyles#6](~/samples/snippets/xaml/VS_Snippets_Wpf/MenuStyles/xaml/pane1.xaml#6)]  -->  
+ [!code-xml[MenuStylesSnippet#6](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStylesSnippet/CS/pane1.xaml#6)]   
   
  ]]></format>
         </remarks>
@@ -743,7 +742,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the <see cref="P:System.Windows.ContentElement.IsEnabled" /> property is <see langword="true" /> for the current menu item.</summary>
         <value>
-          <see langword="true" /> if the <see cref="T:System.Windows.Controls.MenuItem" /> can be selected; otherwise,<see langword=" false" />.</value>
+          <see langword="true" /> if the <see cref="T:System.Windows.Controls.MenuItem" /> can be selected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -782,7 +781,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.IsHighlightedProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -872,7 +871,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.IsPressedProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -944,7 +943,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.IsSubmenuOpenProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.BindsTwoWayByDefault%2A>|  
   
    
@@ -1736,8 +1735,7 @@
 ## Examples  
  The following example shows how to use this property to style a <xref:System.Windows.Controls.Separator> in a <xref:System.Windows.Controls.Menu>.  
   
- <!-- TODO: review snippet reference [!code-xml[MenuStyles#4](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStyles/CS/app.xaml#4)]  -->
- <!-- TODO: review snippet reference [!code-xml[MenuStyles#4](~/samples/snippets/xaml/VS_Snippets_Wpf/MenuStyles/xaml/app.xaml#4)]  -->  
+ [!code-xml[MenuStylesSnippet#4](~/samples/snippets/csharp/VS_Snippets_Wpf/MenuStylesSnippet/CS/app.xaml#4)]  
   
  ]]></format>
         </remarks>
@@ -1802,7 +1800,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.StaysOpenOnClickProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -2106,7 +2104,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.MenuItem>|  
+|Identifier field|<xref:System.Windows.Controls.MenuItem.UncheckedEvent>|  
 |Routing strategy|Bubbling|  
 |Delegate|<xref:System.Windows.RoutedEventHandler>|  
   

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRErrorReportingManager::EndCustomDump method [.NET Framework hosting]"
   - "EndCustomDump method [.NET Framework hosting]"
 ms.assetid: 88a5da04-8729-4108-82c4-af206a7d483e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

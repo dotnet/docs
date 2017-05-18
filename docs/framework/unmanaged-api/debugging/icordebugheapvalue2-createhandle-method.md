@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateHandle method [.NET Framework debugging]"
   - "ICorDebugHeapValue2::CreateHandle method [.NET Framework debugging]"
 ms.assetid: fbc418e8-fa22-420d-84ec-e0e1800db041
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

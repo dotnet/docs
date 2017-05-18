@@ -216,8 +216,7 @@
 ## Examples  
  The following example uses two similar <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> animations to animate the same rectangle. The first animation's <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAdditive%2A> property is set to `false`, so it always animates the rectangle from (0,0), the animation's starting value. The second animation has the same target values (their <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.PathGeometry%2A> settings are identical), but its <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAdditive%2A> property is set to `true`; as a result, it animates the rectangle from whatever position it is at when the animation is applied.  
   
- <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#MatrixAnimationUsingPathIsAdditiveExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snip/CS/matrixanimationusingpathisadditiveexample.xaml#matrixanimationusingpathisadditiveexamplewholepage)]  -->
- <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#MatrixAnimationUsingPathIsAdditiveExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/PathAnimationGallery_snip/xaml/matrixanimationusingpathisadditiveexample.xaml#matrixanimationusingpathisadditiveexamplewholepage)]  -->  
+ [!code-xml[PathAnimationGallery_snippet#MatrixAnimationUsingPathIsAdditiveExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snippet/CS/matrixanimationusingpathisadditiveexample.xaml#matrixanimationusingpathisadditiveexamplewholepage)]   
   
  ]]></format>
         </remarks>
@@ -262,8 +261,7 @@
 ## Examples  
  The following example uses two similar <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath> animations to animate the same rectangle. Both animations have the same <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.PathGeometry%2A> setting, which causes the rectangle to rotate as it moves along the screen to the right, and both animations are set to repeat four times. The first animation's <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAngleCumulative%2A> property is set to `false`, so the rectangle jumps back to its original angle when the animation repeats. The second animation's <xref:System.Windows.Media.Animation.MatrixAnimationUsingPath.IsAngleCumulative%2A> property is set to `true`; as a result, the rectangle angle appears to increase when the animation repeats, rather than jumping back to its original value.  
   
- <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#MatrixAnimationUsingPathIsAngleCumulativeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snip/CS/matrixanimationusingpathisanglecumulativeexample.xaml#matrixanimationusingpathisanglecumulativeexamplewholepage)]  -->
- <!-- TODO: review snippet reference [!code-xml[PathAnimationGallery_snip#MatrixAnimationUsingPathIsAngleCumulativeExampleWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/PathAnimationGallery_snip/xaml/matrixanimationusingpathisanglecumulativeexample.xaml#matrixanimationusingpathisanglecumulativeexamplewholepage)]  -->  
+ [!code-xml[PathAnimationGallery_snippet#MatrixAnimationUsingPathIsAngleCumulativeExampleWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/PathAnimationGallery_snippet/CS/matrixanimationusingpathisanglecumulativeexample.xaml#matrixanimationusingpathisanglecumulativeexamplewholepage)]   
   
  ]]></format>
         </remarks>

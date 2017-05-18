@@ -29,9 +29,9 @@
   
  In addition to <xref:System.Windows.ThemeInfoAttribute> application, your project and assembly must have additional characteristics in order for the resource dictionaries to be usable by the WPF theming system.  
   
--   If you declare <xref:System.Windows.ResourceDictionaryLocation>, then the referenced resource dictionary should be placed within a `themes` directory in the assembly structure.  
+-   If you declare <xref:System.Windows.ResourceDictionaryLocation.SourceAssembly>, then the referenced resource dictionary should be placed within a `themes` directory in the assembly structure.  
   
--   If you declare <xref:System.Windows.ResourceDictionaryLocation> for <xref:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation%2A>, then the names of the XAML files are expected to conform to the XAML file naming scheme `themes\<Theme Name>.<Theme Color>.xaml`. For example, the following is a list of theme files that support a variety of possible WPF theming scenarios on clients:  
+-   If you declare <xref:System.Windows.ResourceDictionaryLocation.SourceAssembly> for <xref:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation%2A>, then the names of the XAML files are expected to conform to the XAML file naming scheme `themes\<Theme Name>.<Theme Color>.xaml`. For example, the following is a list of theme files that support a variety of possible WPF theming scenarios on clients:  
   
     -   `themes\luna.normalcolor.xaml`  
   
@@ -45,7 +45,7 @@
   
     -   `themes\classic.xaml`  
   
--   If you declare <xref:System.Windows.ResourceDictionaryLocation>, then the external assembly names are expected to conform to a naming scheme, and each assembly for each theme should be built using the same key information.  
+-   If you declare <xref:System.Windows.ResourceDictionaryLocation.ExternalAssembly>, then the external assembly names are expected to conform to a naming scheme, and each assembly for each theme should be built using the same key information.  
   
  For more information about how to create and use theme resource dictionaries, see "Defining Resources at the Theme Level" section of the topic [Control Authoring Overview](~/docs/framework/wpf/controls/control-authoring-overview.md).  
   
@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the `themeDictionaryLocation` is <xref:System.Windows.ResourceDictionaryLocation>, you can include files such as Luna.NormalColor.xaml. These names are defined by the system theme files, which include the following.  
+ When the `themeDictionaryLocation` is <xref:System.Windows.ResourceDictionaryLocation.SourceAssembly>, you can include files such as Luna.NormalColor.xaml. These names are defined by the system theme files, which include the following.  
   
  Classic – "Classic" Windows 9x/2000 look on Windows XP.  
   

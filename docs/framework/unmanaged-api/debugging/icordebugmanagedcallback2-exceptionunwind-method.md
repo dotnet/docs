@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugManagedCallback2::ExceptionUnwind method [.NET Framework debugging]"
   - "ExceptionUnwind method [.NET Framework debugging]"
 ms.assetid: aaf5938d-179c-4eaa-8d35-8523a4fadded
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

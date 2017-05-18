@@ -333,14 +333,14 @@
 ## Remarks  
  The view of the returned collection is determined by the <xref:System.Windows.Automation.CacheRequest.TreeFilter%2A> condition of the <xref:System.Windows.Automation.CacheRequest> that was active when this <xref:System.Windows.Automation.AutomationElement> object was obtained.  
   
- Children are cached only if the scope of the <xref:System.Windows.Automation.CacheRequest> included <xref:System.Windows.Automation.TreeScope>, <xref:System.Windows.Automation.TreeScope>, or <xref:System.Windows.Automation.TreeScope>.  
+ Children are cached only if the scope of the <xref:System.Windows.Automation.CacheRequest> included <xref:System.Windows.Automation.TreeScope.Subtree>, <xref:System.Windows.Automation.TreeScope.Children>, or <xref:System.Windows.Automation.TreeScope.Descendants>.  
   
  If the <xref:System.Windows.Automation.CacheRequest> specified that children were to be cached at this level, but there are no children, then the value of this property is 0. However, if no request was made to cache children at this level, an attempt to retrieve the property raises an exception.  
   
    
   
 ## Examples  
- In the following example, a list box element is obtained from the parent window element while a <xref:System.Windows.Automation.CacheRequest> is active and <xref:System.Windows.Automation.CacheRequest.TreeScope%2A> is <xref:System.Windows.Automation.TreeScope>. The specified properties of the child elements (that is, the list items) are stored in the cache and can be retrieved from the <xref:System.Windows.Automation.AutomationElement.CachedChildren%2A> of the list box.  
+ In the following example, a list box element is obtained from the parent window element while a <xref:System.Windows.Automation.CacheRequest> is active and <xref:System.Windows.Automation.CacheRequest.TreeScope%2A> is <xref:System.Windows.Automation.TreeScope.Children>. The specified properties of the child elements (that is, the list items) are stored in the cache and can be retrieved from the <xref:System.Windows.Automation.AutomationElement.CachedChildren%2A> of the list box.  
   
  [!code-csharp[UIAClient_snip#119](~/samples/snippets/csharp/VS_Snippets_Wpf/UIAClient_snip/CSharp/ClientForm.cs#119)]
  [!code-vb[UIAClient_snip#119](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIAClient_snip/VisualBasic/ClientForm.vb#119)]  
@@ -659,7 +659,7 @@
 ## Remarks  
  The scope of the search is relative to the element on which the method is called. Elements are returned in the order in which they were encountered in the tree.  
   
- When searching for top-level windows on the desktop, be sure to specify <xref:System.Windows.Automation.TreeScope> in `scope`, not <xref:System.Windows.Automation.TreeScope>. A search through the entire subtree of the desktop could iterate through thousands of items and lead to a stack overflow.  
+ When searching for top-level windows on the desktop, be sure to specify <xref:System.Windows.Automation.TreeScope.Children> in `scope`, not <xref:System.Windows.Automation.TreeScope.Descendants>. A search through the entire subtree of the desktop could iterate through thousands of items and lead to a stack overflow.  
   
  If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
   
@@ -702,7 +702,7 @@
 ## Remarks  
  The scope of the search is relative to the element on which the method is called.  
   
- When searching for a top-level window on the desktop, be sure to specify <xref:System.Windows.Automation.TreeScope> in `scope`, not <xref:System.Windows.Automation.TreeScope>. A search through the entire subtree of the desktop could iterate through thousands of items and lead to a stack overflow.  
+ When searching for a top-level window on the desktop, be sure to specify <xref:System.Windows.Automation.TreeScope.Children> in `scope`, not <xref:System.Windows.Automation.TreeScope.Descendants>. A search through the entire subtree of the desktop could iterate through thousands of items and lead to a stack overflow.  
   
  If your client application might try to find elements in its own user interface, you must make all [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] calls on a separate thread.  
   
@@ -912,6 +912,23 @@
         <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCachedPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the cached value of the specified property from an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> retrieves the specified property from the cache of the <xref:System.Windows.Automation.AutomationElement>. To retrieve the current property, call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCachedPropertyValue">
       <MemberSignature Language="C#" Value="public object GetCachedPropertyValue (System.Windows.Automation.AutomationProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCachedPropertyValue(class System.Windows.Automation.AutomationProperty property) cil managed" />
@@ -935,7 +952,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement>.  
+ If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>.  
   
  <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> retrieves the specified property from the <xref:System.Windows.Automation.AutomationElement>'s cache. To retrieve the current object for the specified property call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>.  
   
@@ -1096,6 +1113,25 @@
         <exception cref="T:System.Windows.Automation.ElementNotAvailableException">The UI for the <see cref="T:System.Windows.Automation.AutomationElement" /> no longer exists.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCurrentPropertyValue">
+      <AssemblyInfo>
+        <AssemblyName>UIAutomationClient</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Retrieves the current value of the specified property from an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The value returned by the <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> method is current at the time it is called. The value can subsequently change by other applications interacting with the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
+  
+ For some forms of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], this method will incur cross-process performance overhead. Applications can concentrate overhead by caching properties and then retrieving them by using <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCurrentPropertyValue">
       <MemberSignature Language="C#" Value="public object GetCurrentPropertyValue (System.Windows.Automation.AutomationProperty property);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance object GetCurrentPropertyValue(class System.Windows.Automation.AutomationProperty property) cil managed" />
@@ -1121,7 +1157,7 @@
 ## Remarks  
  The value returned by the <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> method is current at the time it is called. The value can subsequently change by other applications interacting with the [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)].  
   
- If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement>.  
+ If the UI Automation provider for the element itself supports the property, the value of the property is returned. Otherwise, a default property specified by [!INCLUDE[TLA2#tla_uiautomation](~/includes/tla2sharptla-uiautomation-md.md)] is returned. For information on default properties, see the property identifier fields of <xref:System.Windows.Automation.AutomationElement>, such as <xref:System.Windows.Automation.AutomationElement.AcceleratorKeyProperty>.  
   
  For some forms of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], this method will incur cross-process performance overhead. Concentrate overhead by caching properties and then retrieving them by using <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
   
@@ -1331,7 +1367,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The original <xref:System.Windows.Automation.AutomationElement> is unchanged. <xref:System.Windows.Automation.AutomationElement.GetUpdatedCache%2A> returns a new <xref:System.Windows.Automation.AutomationElement>, that refers to the same [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] and has the same <xref:System.Windows.Automation.AutomationElement>.  
+ The original <xref:System.Windows.Automation.AutomationElement> is unchanged. <xref:System.Windows.Automation.AutomationElement.GetUpdatedCache%2A> returns a new <xref:System.Windows.Automation.AutomationElement>, that refers to the same [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)] and has the same <xref:System.Windows.Automation.AutomationElement.RuntimeIdProperty>.  
   
    
   
@@ -2797,7 +2833,7 @@
   
  This property can also be retrieved from the <xref:System.Windows.Automation.AutomationElement.Current%2A> or <xref:System.Windows.Automation.AutomationElement.Cached%2A> properties.  
   
- The value of the property is of type <xref:System.Windows.Automation.OrientationType>. The default value is <xref:System.Windows.Automation.OrientationType>.  
+ The value of the property is of type <xref:System.Windows.Automation.OrientationType>. The default value is <xref:System.Windows.Automation.OrientationType.None>.  
   
    
   
@@ -2878,7 +2914,7 @@
 ## Remarks  
  You can use the root element as a starting point for finding other elements, using the <xref:System.Windows.Automation.AutomationElement.FindAll%2A> and <xref:System.Windows.Automation.AutomationElement.FindFirst%2A> methods.  
   
- When searching from the root element, be sure to specify <xref:System.Windows.Automation.TreeScope> in the scope of the search, not <xref:System.Windows.Automation.TreeScope>. A search through the entire subtree of the desktop could iterate through thousands of items and lead to a stack overflow.  
+ When searching from the root element, be sure to specify <xref:System.Windows.Automation.TreeScope.Children> in the scope of the search, not <xref:System.Windows.Automation.TreeScope.Descendants>. A search through the entire subtree of the desktop could iterate through thousands of items and lead to a stack overflow.  
   
    
   
@@ -3141,41 +3177,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetCachedPropertyValue">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the cached value of the specified property from an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A> retrieves the specified property from the cache of the <xref:System.Windows.Automation.AutomationElement>. To retrieve the current property, call <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetCurrentPropertyValue">
-      <AssemblyInfo>
-        <AssemblyName>UIAutomationClient</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Retrieves the current value of the specified property from an <see cref="T:System.Windows.Automation.AutomationElement" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The value returned by the <xref:System.Windows.Automation.AutomationElement.GetCurrentPropertyValue%2A> method is current at the time it is called. The value can subsequently change by other applications interacting with the [!INCLUDE[TLA#tla_ui](~/includes/tlasharptla-ui-md.md)].  
-  
- For some forms of [!INCLUDE[TLA2#tla_ui](~/includes/tla2sharptla-ui-md.md)], this method will incur cross-process performance overhead. Applications can concentrate overhead by caching properties and then retrieving them by using <xref:System.Windows.Automation.AutomationElement.GetCachedPropertyValue%2A>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

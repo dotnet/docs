@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 6312a76a-a298-49a0-9116-b9d9e6b3c7c3
+redirect_url: /dotnet/articles/csharp/index
 ---
 
 # 🔧 Using C# Interactive with MacOS or Linux terminal

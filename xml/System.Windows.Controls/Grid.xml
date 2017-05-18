@@ -22,7 +22,7 @@
 ## Remarks  
  A <xref:System.Windows.Controls.Grid> contains a collection of <xref:System.Windows.UIElement> objects, which are in the <xref:System.Windows.Controls.Panel.Children%2A> property.  
   
- Columns and rows that are defined within a <xref:System.Windows.Controls.Grid> can take advantage of <xref:System.Windows.GridUnitType> sizing to distribute remaining space proportionally. When <xref:System.Windows.GridUnitType> is selected as the height or width of a row or column, that column or row receives a weighted proportion of the remaining available space. This is in contrast to <xref:System.Windows.GridUnitType>, which distributes space evenly based on the size of the content that is within a column or row. This value is expressed as `*` or `2*` when you use [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. In the first case, the row or column would receive one times the available space, while in the second case, the row or column would receive two times the available space, and so on. By combining this technique to proportionally distribute space with a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value of `Stretch`, it is possible to partition layout space by percentage of screen space. <xref:System.Windows.Controls.Grid> is the only layout panel that can distribute space in this manner.  
+ Columns and rows that are defined within a <xref:System.Windows.Controls.Grid> can take advantage of <xref:System.Windows.GridUnitType.Star> sizing to distribute remaining space proportionally. When <xref:System.Windows.GridUnitType.Star> is selected as the height or width of a row or column, that column or row receives a weighted proportion of the remaining available space. This is in contrast to <xref:System.Windows.GridUnitType.Auto>, which distributes space evenly based on the size of the content that is within a column or row. This value is expressed as `*` or `2*` when you use [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. In the first case, the row or column would receive one times the available space, while in the second case, the row or column would receive two times the available space, and so on. By combining this technique to proportionally distribute space with a <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> and <xref:System.Windows.FrameworkElement.VerticalAlignment%2A> value of `Stretch`, it is possible to partition layout space by percentage of screen space. <xref:System.Windows.Controls.Grid> is the only layout panel that can distribute space in this manner.  
   
  By default, rows and columns take up the least amount of space necessary to accommodate the largest content within any cell contained in a given row or column. For example, if a column has one cell with a long word like "hippopotamus" contained within it but all the other cells in the column have smaller words like "dog", the width of the column will be the width of the largest word (hippopotamus).  
   
@@ -678,7 +678,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Grid>|  
+|Identifier field|<xref:System.Windows.Controls.Grid.ShowGridLinesProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>

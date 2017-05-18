@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameBuilder::AddPointer method [.NET Framework hosting]"
   - "AddPointer method [.NET Framework hosting]"
 ms.assetid: b6f1dbd4-1a9f-44dd-b54b-c530ab44eb48
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

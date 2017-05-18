@@ -846,7 +846,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.Pen> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.GridColor%2A> property value, its width set to 1, and its <xref:System.Drawing.Pen.DashStyle%2A> property set to <xref:System.Drawing.Drawing2D.DashStyle>.  
+ If this property contains a null reference (`Nothing` in Visual Basic), by default it will return a <xref:System.Drawing.Pen> with its color set to the current <xref:System.Workflow.ComponentModel.Design.AmbientTheme.GridColor%2A> property value, its width set to 1, and its <xref:System.Drawing.Pen.DashStyle%2A> property set to <xref:System.Drawing.Drawing2D.DashStyle.Dash>.  
   
  ]]></format>
         </remarks>

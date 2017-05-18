@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetScope method"
 ms.assetid: e1555328-2c71-4ece-b357-9eb6d3a8efc4
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

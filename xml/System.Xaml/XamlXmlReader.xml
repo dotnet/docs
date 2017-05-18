@@ -526,7 +526,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is part of the <xref:System.Xaml.IXamlLineInfo> implementation. Node types of <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, or <xref:System.Xaml.XamlNodeType> can return a line number. Other node types return a value of 0. All node types return 0 if <xref:System.Xaml.XamlXmlReader.HasLineInfo%2A> is `false`.  
+ This property is part of the <xref:System.Xaml.IXamlLineInfo> implementation. Node types of <xref:System.Xaml.XamlNodeType.StartObject>, <xref:System.Xaml.XamlNodeType.StartMember>, <xref:System.Xaml.XamlNodeType.NamespaceDeclaration>, or <xref:System.Xaml.XamlNodeType.Value> can return a line number. Other node types return a value of 0. All node types return 0 if <xref:System.Xaml.XamlXmlReader.HasLineInfo%2A> is `false`.  
   
  ]]></format>
         </remarks>
@@ -551,7 +551,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is part of the <xref:System.Xaml.IXamlLineInfo> implementation. Node types of <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, <xref:System.Xaml.XamlNodeType>, or <xref:System.Xaml.XamlNodeType> can return a line position. Other node types return a value of 0. All node types return 0 if <xref:System.Xaml.XamlXmlReader.HasLineInfo%2A> is `false`.  
+ This property is part of the <xref:System.Xaml.IXamlLineInfo> implementation. Node types of <xref:System.Xaml.XamlNodeType.StartObject>, <xref:System.Xaml.XamlNodeType.StartMember>, <xref:System.Xaml.XamlNodeType.NamespaceDeclaration>, or <xref:System.Xaml.XamlNodeType.Value> can return a line position. Other node types return a value of 0. All node types return 0 if <xref:System.Xaml.XamlXmlReader.HasLineInfo%2A> is `false`.  
   
  ]]></format>
         </remarks>
@@ -594,7 +594,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property only has a non-null result if the <xref:System.Xaml.XamlXmlReader.NodeType%2A> of the current position is <xref:System.Xaml.XamlNodeType>. This property does not report the XAML namespace that applies to objects or members in a general scoping sense. Your implementation should cache XAML namespace information if you need it for specific operations. For default operations that involve the loaded XAML schema context, the acting XAML namespace is internally cached by XAML writer implementations.  
+ This property only has a non-null result if the <xref:System.Xaml.XamlXmlReader.NodeType%2A> of the current position is <xref:System.Xaml.XamlNodeType.NamespaceDeclaration>. This property does not report the XAML namespace that applies to objects or members in a general scoping sense. Your implementation should cache XAML namespace information if you need it for specific operations. For default operations that involve the loaded XAML schema context, the acting XAML namespace is internally cached by XAML writer implementations.  
   
  ]]></format>
         </remarks>
@@ -693,7 +693,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property only has a non-null result if the <xref:System.Xaml.XamlXmlReader.NodeType%2A> of the current position is <xref:System.Xaml.XamlNodeType>.  
+ This property only has a non-null result if the <xref:System.Xaml.XamlXmlReader.NodeType%2A> of the current position is <xref:System.Xaml.XamlNodeType.StartObject>.  
   
  ]]></format>
         </remarks>

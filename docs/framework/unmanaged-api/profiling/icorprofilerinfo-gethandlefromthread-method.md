@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetHandleFromThread method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetHandleFromThread method [.NET Framework profiling]"
 ms.assetid: 36cdc9f5-7579-4cd2-aa36-fc05c741584c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

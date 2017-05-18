@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -74,6 +75,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -115,6 +117,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -162,6 +165,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -191,6 +198,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -239,6 +247,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -295,6 +304,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -351,6 +361,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Security.SecurityCritical</AttributeName>
@@ -393,6 +407,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -410,32 +425,19 @@
         <summary>Gets the error message and the parameter name, or only the error message if no parameter name is set.</summary>
         <value>A text string describing the details of the exception. The value of this property takes one of two forms:  
   
- <list type="table">  
-<listheader>  
-<term> Condition  
+ <list type="table"><listheader><term> Condition  
   
- </term>  
-<description> Value  
+ </term><description> Value  
   
- </description>  
-</listheader>  
-<item>  
-<term> The <paramref name="paramName" /> is a null reference (<see langword="Nothing" /> in Visual Basic) or of zero length.  
+ </description></listheader><item><term> The <paramref name="paramName" /> is a null reference (<see langword="Nothing" /> in Visual Basic) or of zero length.  
   
- </term>  
-<description> The <paramref name="message" /> string passed to the constructor.  
+ </term><description> The <paramref name="message" /> string passed to the constructor.  
   
- </description>  
-</item>  
-<item>  
-<term> The <paramref name="paramName" /> is not null reference (<see langword="Nothing" /> in Visual Basic) and it has a length greater than zero.  
+ </description></item><item><term> The <paramref name="paramName" /> is not null reference (<see langword="Nothing" /> in Visual Basic) and it has a length greater than zero.  
   
- </term>  
-<description> The <paramref name="message" /> string appended with the name of the invalid parameter.  
+ </term><description> The <paramref name="message" /> string appended with the name of the invalid parameter.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -457,6 +459,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

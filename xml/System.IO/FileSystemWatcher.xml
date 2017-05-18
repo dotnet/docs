@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -48,7 +49,7 @@
   
  There are several types of changes you can watch for in a directory or file. For example, you can watch for changes in `Attributes`, the `LastWrite` date and time, or the `Size` of files or directories. This is done by setting the <xref:System.IO.FileSystemWatcher.NotifyFilter%2A> property to one of the <xref:System.IO.NotifyFilters> values. For more information on the type of changes you can watch, see <xref:System.IO.NotifyFilters>.  
   
- You can watch for renaming, deletion, or creation of files or directories. For example, to watch for renaming of text files, set the <xref:System.IO.FileSystemWatcher.Filter%2A> property to "*.txt" and call the <xref:System.IO.FileSystemWatcher.WaitForChanged%2A> method with a <xref:System.IO.WatcherChangeTypes> specified for its parameter.  
+ You can watch for renaming, deletion, or creation of files or directories. For example, to watch for renaming of text files, set the <xref:System.IO.FileSystemWatcher.Filter%2A> property to "*.txt" and call the <xref:System.IO.FileSystemWatcher.WaitForChanged%2A> method with a <xref:System.IO.WatcherChangeTypes.Renamed> specified for its parameter.  
   
  The Windows operating system notifies your component of file changes in a buffer created by the <xref:System.IO.FileSystemWatcher>. If there are many changes in a short time, the buffer can overflow. This causes the component to lose track of changes in the directory, and it will only provide blanket notification. Increasing the size of the buffer with the <xref:System.IO.FileSystemWatcher.InternalBufferSize%2A> property is expensive, as it comes from non-paged memory that cannot be swapped out to disk, so keep the buffer as small yet large enough to not miss any file change events. To avoid a buffer overflow, use the <xref:System.IO.FileSystemWatcher.NotifyFilter%2A> and <xref:System.IO.FileSystemWatcher.IncludeSubdirectories%2A> properties so you can filter out unwanted change notifications.  
   
@@ -118,6 +119,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -175,6 +177,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -224,6 +227,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -285,6 +289,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -309,6 +317,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -367,6 +376,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -422,6 +432,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -497,6 +508,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -543,6 +555,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -613,6 +626,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -637,6 +654,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -680,6 +698,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -772,6 +791,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -819,6 +839,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -863,6 +884,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -920,6 +942,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -966,6 +989,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1012,6 +1036,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1056,6 +1081,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1098,6 +1124,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1140,6 +1167,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1218,6 +1246,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1271,6 +1300,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
@@ -1305,6 +1338,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1345,6 +1382,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -1388,6 +1426,7 @@
       <AssemblyInfo>
         <AssemblyName>System.IO.FileSystem.Watcher</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

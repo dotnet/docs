@@ -109,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle> and its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit>.  
+ The resulting font has its <xref:System.Drawing.Font.Style%2A> property set to <xref:System.Drawing.FontStyle.Regular> and its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit.Point>.  
   
  ]]></format>
         </remarks>
@@ -177,7 +177,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit>.  
+ The resulting font has its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit.Point>.  
   
    
   
@@ -252,7 +252,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The resulting font has its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit>. Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If the `familyName` parameter specifies a font that is not installed on the machine running the application or is not supported, Microsoft Sans Serif will be substituted.  
+ The resulting font has its <xref:System.Drawing.Font.Unit%2A> property set to <xref:System.Drawing.GraphicsUnit.Point>. Windows Forms applications support TrueType fonts and have limited support for OpenType fonts. If the `familyName` parameter specifies a font that is not installed on the machine running the application or is not supported, Microsoft Sans Serif will be substituted.  
   
  ]]></format>
         </remarks>
@@ -473,7 +473,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="emSize" /> is less than or equal to 0, evaluates to infinity, or is not a valid number.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="family" /> is <see langword="null " /></exception>
+          <paramref name="family" /> is <see langword="null" /></exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">

@@ -35,6 +35,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="DrawText">
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Draws the specified text at the specified location, using the specified device context, color, and font.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The text rendering offered by the <xref:System.Windows.Forms.TextRenderer> class is based on GDI text rendering and is not supported for printing from Windows Forms. Instead, use the <xref:System.Drawing.Graphics.DrawString%2A> methods of the <xref:System.Drawing.Graphics> class.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="DrawText">
       <MemberSignature Language="C#" Value="public static void DrawText (System.Drawing.IDeviceContext dc, string text, System.Drawing.Font font, System.Drawing.Point pt, System.Drawing.Color foreColor);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig void DrawText(class System.Drawing.IDeviceContext dc, string text, class System.Drawing.Font font, valuetype System.Drawing.Point pt, valuetype System.Drawing.Color foreColor) cil managed" />
@@ -231,7 +248,7 @@
   
  The text rendering offered by the <xref:System.Windows.Forms.TextRenderer> class is based on GDI text rendering and is not supported for printing from Windows Forms. Instead, use the <xref:System.Drawing.Graphics.DrawString%2A> methods of the <xref:System.Drawing.Graphics> class.  
   
- The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the <xref:System.Windows.Forms.TextFormatFlags> flag.  
+ The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the <xref:System.Windows.Forms.TextFormatFlags.ExpandTabs> flag.  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods that specify a <xref:System.Drawing.Point> as the upper-left corner of the drawn text do not render correctly on Windows 2000. If your application is intended for use on machines running Windows 2000, you should use one of the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods that specify a <xref:System.Drawing.Rectangle> for the bounds of the drawn text.  
@@ -282,7 +299,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `backColor` parameter is applied to the area within the `bounds` parameter. If `font`, `backcolor` or `forecolor` is `null` or <xref:System.Drawing.Color>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
+ The `backColor` parameter is applied to the area within the `bounds` parameter. If `font`, `backcolor` or `forecolor` is `null` or <xref:System.Drawing.Color.Empty>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
   
  This method will result in text that is horizontally and vertically centered in the rectangle specified by the `bounds` parameter. To change how the text is drawn, use a version of <xref:System.Windows.Forms.TextRenderer.DrawText%2A> that takes a <xref:System.Windows.Forms.TextFormatFlags> parameter type.  
   
@@ -334,13 +351,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If `font` or `color` is `null` or <xref:System.Drawing.Color>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
+ If `font` or `color` is `null` or <xref:System.Drawing.Color.Empty>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
   
  You can manipulate how the text is drawn by using one of the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> overloads that takes a <xref:System.Windows.Forms.TextFormatFlags> parameter. For example, the default behavior of the <xref:System.Windows.Forms.TextRenderer> is to add padding to the bounding rectangle of the drawn text to accommodate overhanging glyphs. If you need to draw a line of text without these extra spaces you should use the versions of <xref:System.Windows.Forms.TextRenderer.DrawText%2A> and <xref:System.Windows.Forms.TextRenderer.MeasureText%2A> that take a <xref:System.Drawing.Size> and <xref:System.Windows.Forms.TextFormatFlags> parameter. For an example, see <xref:System.Windows.Forms.TextRenderer.MeasureText%28System.Drawing.IDeviceContext%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Drawing.Size%2CSystem.Windows.Forms.TextFormatFlags%29>.  
   
  The text rendering offered by the <xref:System.Windows.Forms.TextRenderer> class is based on GDI text rendering and is not supported for printing from Windows Forms. Instead, use the <xref:System.Drawing.Graphics.DrawString%2A> methods of the <xref:System.Drawing.Graphics> class.  
   
- The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the <xref:System.Windows.Forms.TextFormatFlags> flag.  
+ The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the <xref:System.Windows.Forms.TextFormatFlags.ExpandTabs> flag.  
   
    
   
@@ -390,13 +407,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `backcolor` parameter is applied the rectangular area containing the drawn text. If `font` or `forecolor` is `null` or <xref:System.Drawing.Color>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
+ The `backcolor` parameter is applied the rectangular area containing the drawn text. If `font` or `forecolor` is `null` or <xref:System.Drawing.Color.Empty>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
   
  You can manipulate how the text is drawn by using one of the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> overloads that takes a <xref:System.Windows.Forms.TextFormatFlags> parameter. For example, the default behavior of the <xref:System.Windows.Forms.TextRenderer> is to add padding to the bounding rectangle of the drawn text to accommodate overhanging glyphs. If you need to draw a line of text without these extra spaces you should use the versions of <xref:System.Windows.Forms.TextRenderer.DrawText%2A> and <xref:System.Windows.Forms.TextRenderer.MeasureText%2A> that take a <xref:System.Drawing.Size> and <xref:System.Windows.Forms.TextFormatFlags> parameter. For an example, see <xref:System.Windows.Forms.TextRenderer.MeasureText%28System.Drawing.IDeviceContext%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Drawing.Size%2CSystem.Windows.Forms.TextFormatFlags%29>.  
   
  The text rendering offered by the <xref:System.Windows.Forms.TextRenderer> class is based on GDI text rendering and is not supported for printing from Windows Forms. Instead, use the <xref:System.Drawing.Graphics.DrawString%2A> methods of the <xref:System.Drawing.Graphics> class.  
   
- The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the <xref:System.Windows.Forms.TextFormatFlags> flag.  
+ The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the <xref:System.Windows.Forms.TextFormatFlags.ExpandTabs> flag.  
   
 > [!NOTE]
 >  The <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods that specify a <xref:System.Drawing.Point> as the upper-left corner of the drawn text do not render correctly on Windows 2000. If your application is intended for use on machines running Windows 2000, you should use one of the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> methods that specify a <xref:System.Drawing.Rectangle> for the bounds of the drawn text.  
@@ -449,13 +466,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `backcolor` parameter is applied to the area within the `bounds` parameter`.` If `font`, `forecolor` or `backcolor` is `null` or <xref:System.Drawing.Color>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
+ The `backcolor` parameter is applied to the area within the `bounds` parameter`.` If `font`, `forecolor` or `backcolor` is `null` or <xref:System.Drawing.Color.Empty>, respectively; the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> method will draw the text in the font or color currently selected in the device context specified by `dc`. If `forecolor` is <xref:System.Drawing.Color.Transparent%2A>, the text will not be drawn.  
   
  You can manipulate how the text is drawn by using one of the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> overloads that takes a <xref:System.Windows.Forms.TextFormatFlags> parameter. For example, the default behavior of the <xref:System.Windows.Forms.TextRenderer> is to add padding to the bounding rectangle of the drawn text to accommodate overhanging glyphs. If you need to draw a line of text without these extra spaces you should use the versions of <xref:System.Windows.Forms.TextRenderer.DrawText%2A> and <xref:System.Windows.Forms.TextRenderer.MeasureText%2A> that take a <xref:System.Drawing.Size> and <xref:System.Windows.Forms.TextFormatFlags> parameter. For an example, see <xref:System.Windows.Forms.TextRenderer.MeasureText%28System.Drawing.IDeviceContext%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Drawing.Size%2CSystem.Windows.Forms.TextFormatFlags%29>.  
   
  The text rendering offered by the <xref:System.Windows.Forms.TextRenderer> class is based on GDI text rendering and is not supported for printing from Windows Forms. Instead, use the <xref:System.Drawing.Graphics.DrawString%2A> methods of the <xref:System.Drawing.Graphics> class.  
   
- The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the <xref:System.Windows.Forms.TextFormatFlags> flag.  
+ The <xref:System.Windows.Forms.TextRenderer> does not support adding tab stops to drawn text, although you can expand existing tab stops using the <xref:System.Windows.Forms.TextFormatFlags.ExpandTabs> flag.  
   
    
   
@@ -671,7 +688,7 @@
  You can manipulate how the text is drawn by using one of the <xref:System.Windows.Forms.TextRenderer.DrawText%2A> overloads that takes a <xref:System.Windows.Forms.TextFormatFlags> parameter. For example, the default behavior of the <xref:System.Windows.Forms.TextRenderer> is to add padding to the bounding rectangle of the drawn text to accommodate overhanging glyphs. If you need to draw a line of text without these extra spaces you should use the versions of <xref:System.Windows.Forms.TextRenderer.DrawText%2A> and <xref:System.Windows.Forms.TextRenderer.MeasureText%2A> that take a <xref:System.Drawing.Size> and <xref:System.Windows.Forms.TextFormatFlags> parameter. For an example, see <xref:System.Windows.Forms.TextRenderer.MeasureText%28System.Drawing.IDeviceContext%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Drawing.Size%2CSystem.Windows.Forms.TextFormatFlags%29>.  
   
 > [!NOTE]
->  This overload of <xref:System.Windows.Forms.TextRenderer.MeasureText%28System.String%2CSystem.Drawing.Font%2CSystem.Drawing.Size%2CSystem.Windows.Forms.TextFormatFlags%29> will ignore a <xref:System.Windows.Forms.TextFormatFlags> value of <xref:System.Windows.Forms.TextFormatFlags> or <xref:System.Windows.Forms.TextFormatFlags>. If you are specifying a padding value other than the default, you should use the overload of <xref:System.Windows.Forms.TextRenderer.MeasureText%28System.Drawing.IDeviceContext%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Drawing.Size%2CSystem.Windows.Forms.TextFormatFlags%29> that takes a <xref:System.Drawing.IDeviceContext> object.  
+>  This overload of <xref:System.Windows.Forms.TextRenderer.MeasureText%28System.String%2CSystem.Drawing.Font%2CSystem.Drawing.Size%2CSystem.Windows.Forms.TextFormatFlags%29> will ignore a <xref:System.Windows.Forms.TextFormatFlags> value of <xref:System.Windows.Forms.TextFormatFlags.NoPadding> or <xref:System.Windows.Forms.TextFormatFlags.LeftAndRightPadding>. If you are specifying a padding value other than the default, you should use the overload of <xref:System.Windows.Forms.TextRenderer.MeasureText%28System.Drawing.IDeviceContext%2CSystem.String%2CSystem.Drawing.Font%2CSystem.Drawing.Size%2CSystem.Windows.Forms.TextFormatFlags%29> that takes a <xref:System.Drawing.IDeviceContext> object.  
   
    
   
@@ -734,22 +751,5 @@
           <paramref name="dc" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="DrawText">
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Draws the specified text at the specified location, using the specified device context, color, and font.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The text rendering offered by the <xref:System.Windows.Forms.TextRenderer> class is based on GDI text rendering and is not supported for printing from Windows Forms. Instead, use the <xref:System.Drawing.Graphics.DrawString%2A> methods of the <xref:System.Drawing.Graphics> class.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

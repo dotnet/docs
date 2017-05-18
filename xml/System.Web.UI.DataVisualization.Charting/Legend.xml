@@ -137,11 +137,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The legend can be aligned so that it is <xref:System.Drawing.StringAlignment>, <xref:System.Drawing.StringAlignment> or <xref:System.Drawing.StringAlignment>; its alignment is also affected by the <xref:System.Web.UI.DataVisualization.Charting.Legend.Docking%2A> property setting.  
+ The legend can be aligned so that it is <xref:System.Drawing.StringAlignment.Near>, <xref:System.Drawing.StringAlignment.Center> or <xref:System.Drawing.StringAlignment.Far>; its alignment is also affected by the <xref:System.Web.UI.DataVisualization.Charting.Legend.Docking%2A> property setting.  
   
- If the legend is docked to the top or bottom, <xref:System.Drawing.StringAlignment> is to the left; if it is docked to the left or right, <xref:System.Drawing.StringAlignment> is at the top. The <xref:System.Drawing.StringAlignment> property setting is just the opposite, and aligns the legend to the right or the bottom, depending on where it is docked.  
+ If the legend is docked to the top or bottom, <xref:System.Drawing.StringAlignment.Near> is to the left; if it is docked to the left or right, <xref:System.Drawing.StringAlignment.Near> is at the top. The <xref:System.Drawing.StringAlignment.Far> property setting is just the opposite, and aligns the legend to the right or the bottom, depending on where it is docked.  
   
- <xref:System.Drawing.StringAlignment> always centers the legend, either vertically or horizontally.  
+ <xref:System.Drawing.StringAlignment.Center> always centers the legend, either vertically or horizontally.  
   
  Setting the <xref:System.Web.UI.DataVisualization.Charting.Legend.Alignment%2A> property will have no effect if the <xref:System.Web.UI.DataVisualization.Charting.Legend.Position%2A> property is not set to <xref:System.Web.UI.DataVisualization.Charting.ElementPosition.Auto%2A>.  
   
@@ -402,7 +402,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property determines the alignment of the background image for the legend; it is only applied when the <xref:System.Web.UI.DataVisualization.Charting.Legend.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>.  
+ This property determines the alignment of the background image for the legend; it is only applied when the <xref:System.Web.UI.DataVisualization.Charting.Legend.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode.Unscaled>.  
   
  ]]></format>
         </remarks>
@@ -485,7 +485,7 @@
   
  For more information about the available wrapping modes, see the <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode> enumeration topic.  
   
- If the <xref:System.Web.UI.DataVisualization.Charting.Legend.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode>, the location where the image is drawn is determined by the <xref:System.Web.UI.DataVisualization.Charting.Legend.BackImageAlignment%2A> property setting.  
+ If the <xref:System.Web.UI.DataVisualization.Charting.Legend.BackImageWrapMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ChartImageWrapMode.Unscaled>, the location where the image is drawn is determined by the <xref:System.Web.UI.DataVisualization.Charting.Legend.BackImageAlignment%2A> property setting.  
   
  ]]></format>
         </remarks>
@@ -1344,7 +1344,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Web.UI.DataVisualization.Charting.LegendItemOrder> property is set to <xref:System.Web.UI.DataVisualization.Charting.LegendItemOrder>, the legend will automatically be reversed if StackedColumn, StackedColumn100, StackedArea or StackedArea100 chart types are used.  
+ If the <xref:System.Web.UI.DataVisualization.Charting.LegendItemOrder> property is set to <xref:System.Web.UI.DataVisualization.Charting.LegendItemOrder.Auto>, the legend will automatically be reversed if StackedColumn, StackedColumn100, StackedArea or StackedArea100 chart types are used.  
   
  ]]></format>
         </remarks>
@@ -1386,7 +1386,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the legend is displayed as a series of items in a table. You can specify whether to expand items in the table width-wise or height-wise by setting the <xref:System.Web.UI.DataVisualization.Charting.Legend.TableStyle%2A> property. When the <xref:System.Web.UI.DataVisualization.Charting.Legend.TableStyle%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.LegendTableStyle>, the <xref:System.Web.UI.DataVisualization.Charting.Chart> control will determine whether to draw a wide table or a tall table, depending on the alignment and positioning of the chart. This may cause the legend to be drawn using multiple legend item columns.  
+ By default, the legend is displayed as a series of items in a table. You can specify whether to expand items in the table width-wise or height-wise by setting the <xref:System.Web.UI.DataVisualization.Charting.Legend.TableStyle%2A> property. When the <xref:System.Web.UI.DataVisualization.Charting.Legend.TableStyle%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.LegendTableStyle.Auto>, the <xref:System.Web.UI.DataVisualization.Charting.Chart> control will determine whether to draw a wide table or a tall table, depending on the alignment and positioning of the chart. This may cause the legend to be drawn using multiple legend item columns.  
   
  There are three possible styles for a legend: Column, Row and Table. Refer to the table below for a summary of these styles:  
   
@@ -1419,7 +1419,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the maximum size of the legend, measured as a percentage of the chart area. This value is used by the automatic layout algorithm.</summary>
-        <value>A <see langword="float " />value that represents the maximum size of the legend.</value>
+        <value>A <see langword="float" /> value that represents the maximum size of the legend.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1624,7 +1624,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property is only applicable if the <xref:System.Web.UI.DataVisualization.Charting.Legend.LegendStyle%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.LegendStyle>.  
+ This property is only applicable if the <xref:System.Web.UI.DataVisualization.Charting.Legend.LegendStyle%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.LegendStyle.Table>.  
   
  ]]></format>
         </remarks>

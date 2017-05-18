@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetIP method, ICorDebugNativeFrame interface [.NET Framework debugging]"
   - "ICorDebugNativeFrame::GetIP method [.NET Framework debugging]"
 ms.assetid: 99f693f3-d3b9-4fd8-9d09-b8efd03f7b67
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

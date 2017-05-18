@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::CloseMethod method [.NET Framework debugging]"
   - "CloseMethod method [.NET Framework debugging]"
 ms.assetid: b8025e04-f0e5-40c8-849c-8cd51323420e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

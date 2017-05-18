@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread::GetActiveFrame method [.NET Framework debugging]"
   - "GetActiveFrame method, ICorDebugThread interface [.NET Framework debugging]"
 ms.assetid: 8d6d3a1a-fef6-4f2f-a22c-3bdd30d70e07
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

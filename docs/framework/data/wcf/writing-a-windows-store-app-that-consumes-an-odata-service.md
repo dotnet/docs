@@ -109,27 +109,27 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
     ```csharp  
     public static async void LoadMovies()  
     {  
-        IEnumerable<Title> titles = await ((DataServiceQuery<Title>)Context.Titles  
-            .Expand("Genres,AudioFormats,AudioFormats/Language,Awards,Cast")  
-            .Where(t => t.Rating == "PG")  
-            .OrderByDescending(t => t.ReleaseYear)  
-            .Take(300)).ExecuteAsync();  
+        IEnumerable<Title> titles = await ((DataServiceQuery<Title>)Context.Titles  
+            .Expand("Genres,AudioFormats,AudioFormats/Language,Awards,Cast")  
+            .Where(t => t.Rating == "PG")  
+            .OrderByDescending(t => t.ReleaseYear)  
+            .Take(300)).ExecuteAsync();  
   
-        foreach (Title title in titles)  
-        {  
-            foreach (Genre netflixGenre in title.Genres)  
-            {  
-                SampleDataGroup genre = GetGroup(netflixGenre.Name);  
-                if (genre == null)  
-                {  
-                    genre = new SampleDataGroup(netflixGenre.Name, netflixGenre.Name, String.Empty, title.BoxArt.LargeUrl, String.Empty);  
-                    Instance.AllGroups.Add(genre);  
-                }  
-                var content = new StringBuilder();  
-                // Write additional things to content here if you want them to display in the item detail.  
-                genre.Items.Add(new SampleDataItem(title.Id, title.Name, String.Format("{0}rnrn{1} ({2})", title.Synopsis, title.Rating, title.ReleaseYear), title.BoxArt.HighDefinitionUrl ?? title.BoxArt.LargeUrl, "Description", content.ToString()));  
-            }  
-        }  
+        foreach (Title title in titles)  
+        {  
+            foreach (Genre netflixGenre in title.Genres)  
+            {  
+                SampleDataGroup genre = GetGroup(netflixGenre.Name);  
+                if (genre == null)  
+                {  
+                    genre = new SampleDataGroup(netflixGenre.Name, netflixGenre.Name, String.Empty, title.BoxArt.LargeUrl, String.Empty);  
+                    Instance.AllGroups.Add(genre);  
+                }  
+                var content = new StringBuilder();  
+                // Write additional things to content here if you want them to display in the item detail.  
+                genre.Items.Add(new SampleDataItem(title.Id, title.Name, String.Format("{0}rnrn{1} ({2})", title.Synopsis, title.Rating, title.ReleaseYear), title.BoxArt.HighDefinitionUrl ?? title.BoxArt.LargeUrl, "Description", content.ToString()));  
+            }  
+        }  
     }  
   
     ```  
@@ -141,11 +141,11 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
     ```csharp  
     public static IEnumerable<SampleDataItem> Search(string searchString)  
     {  
-            var regex = new Regex(searchString, RegexOptions.CultureInvariant | RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);  
-            return Instance.AllGroups  
-                .SelectMany(g => g.Items)  
-                .Where(m => regex.IsMatch(m.Title) || regex.IsMatch(m.Subtitle))  
-                    .Distinct(new SampleDataItemComparer());  
+            var regex = new Regex(searchString, RegexOptions.CultureInvariant | RegexOptions.IgnoreCase | RegexOptions.IgnorePatternWhitespace);  
+            return Instance.AllGroups  
+                .SelectMany(g => g.Items)  
+                .Where(m => regex.IsMatch(m.Title) || regex.IsMatch(m.Subtitle))  
+                    .Distinct(new SampleDataItemComparer());  
     }  
   
     ```  
@@ -155,7 +155,7 @@ Windows 8 introduces a new type of application: the Windows Store app. Windows S
     ```csharp  
     public static async Task<IEnumerable<T>> ExecuteAsync<T>(this DataServiceQuery<T> query)  
     {  
-        return await Task.Factory.FromAsync<IEnumerable<T>>(query.BeginExecute(null, null), query.EndExecute);  
+        return await Task.Factory.FromAsync<IEnumerable<T>>(query.BeginExecute(null, null), query.EndExecute);  
     }  
   
     ```  

@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -122,7 +123,7 @@
   
 <a name="Interop"></a>   
 ## Char values and interop  
- When a managed <xref:System.Char> type, which is represented as a Unicode UTF-8 encoded code unit, is passed to unmanaged code, the interop marshaler converts the character set to ANSI. You can apply the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute to platform invoke declarations and the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute to a COM interop declaration to control which character set a marshaled <xref:System.Char> type uses.  
+When a managed <xref:System.Char> type, which is represented as a Unicode UTF-16 encoded code unit, is passed to unmanaged code, the interop marshaler converts the character set to ANSI by default. You can apply the <xref:System.Runtime.InteropServices.DllImportAttribute> attribute to platform invoke declarations and the <xref:System.Runtime.InteropServices.StructLayoutAttribute> attribute to a COM interop declaration to control which character set a marshaled <xref:System.Char> type uses.  
   
    
   
@@ -149,6 +150,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -170,40 +172,23 @@
         <summary>Compares this instance to a specified <see cref="T:System.Char" /> object and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified <see cref="T:System.Char" /> object.</summary>
         <returns>A signed number indicating the position of this instance in the sort order in relation to the <paramref name="value" /> parameter.  
   
- <list type="table">  
-<listheader>  
-<term> Return Value  
+ <list type="table"><listheader><term> Return Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance precedes <paramref name="value" />.  
+ </term><description> This instance precedes <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance has the same position in the sort order as <paramref name="value" />.  
+ </term><description> This instance has the same position in the sort order as <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance follows <paramref name="value" />.  
+ </term><description> This instance follows <paramref name="value" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -245,6 +230,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -256,44 +245,27 @@
         <summary>Compares this instance to a specified object and indicates whether this instance precedes, follows, or appears in the same position in the sort order as the specified <see cref="T:System.Object" />.</summary>
         <returns>A signed number indicating the position of this instance in the sort order in relation to the <paramref name="value" /> parameter.  
   
- <list type="table">  
-<listheader>  
-<term> Return Value  
+ <list type="table"><listheader><term> Return Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance precedes <paramref name="value" />.  
+ </term><description> This instance precedes <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance has the same position in the sort order as <paramref name="value" />.  
+ </term><description> This instance has the same position in the sort order as <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance follows <paramref name="value" />.  
+ </term><description> This instance follows <paramref name="value" />.  
   
  -or-  
   
  <paramref name="value" /> is <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -330,6 +302,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -384,6 +357,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -440,6 +414,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -497,6 +472,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -539,6 +515,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -590,6 +567,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -621,6 +599,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -678,6 +657,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -746,6 +726,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
       </ReturnValue>
@@ -769,6 +753,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
@@ -815,6 +803,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Globalization.UnicodeCategory</ReturnType>
       </ReturnValue>
@@ -854,6 +846,26 @@
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsControl">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a specified Unicode character is categorized as a control character.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsControl">
       <MemberSignature Language="C#" Value="public static bool IsControl (char c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsControl(char c) cil managed" />
@@ -865,6 +877,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -916,6 +929,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -964,6 +978,26 @@
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsDigit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as a decimal digit.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Valid digits are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsDigit">
       <MemberSignature Language="C#" Value="public static bool IsDigit (char c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsDigit(char c) cil managed" />
@@ -975,6 +1009,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1028,6 +1063,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1089,6 +1125,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1140,6 +1177,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1188,6 +1226,36 @@
           <paramref name="index" /> is not a position within <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsLetter">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as a Unicode letter.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method determines whether a <xref:System.Char> is a member of any category of Unicode letter. Unicode letters include the following:  
+  
+-   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
+  
+-   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
+  
+-   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
+  
+-   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
+  
+-   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsLetter">
       <MemberSignature Language="C#" Value="public static bool IsLetter (char c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLetter(char c) cil managed" />
@@ -1199,6 +1267,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1260,6 +1329,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1318,6 +1388,26 @@
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsLetterOrDigit">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as a letter or a decimal digit.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Valid letters and decimal digits are members of the following categories in <xref:System.Globalization.UnicodeCategory>: `UppercaseLetter`, `LowercaseLetter`, `TitlecaseLetter`, `ModifierLetter`, `OtherLetter`, or `DecimalDigitNumber`.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsLetterOrDigit">
       <MemberSignature Language="C#" Value="public static bool IsLetterOrDigit (char c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsLetterOrDigit(char c) cil managed" />
@@ -1329,6 +1419,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1380,6 +1471,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1439,6 +1531,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1490,6 +1583,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1549,6 +1643,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1600,6 +1695,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1659,6 +1755,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1720,6 +1817,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1778,6 +1876,53 @@
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsPunctuation">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as a punctuation mark.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Valid punctuation marks are members of the following categories in <xref:System.Globalization.UnicodeCategory>: `ConnectorPunctuation`, `DashPunctuation`, `OpenPunctuation`, `ClosePunctuation`, `InititalQuotePunctuation`, `FinalQuotePunctuation`, or `OtherPunctuation`. They include characters with the Unicode code points listed in the following table.  
+  
+|||||  
+|-|-|-|-|  
+|U+0021 to U+0023|U+060C and U+060D|U+1800 to U+180A|U+3014 to U+301F|  
+|U+0025 to U+002A|U+061B|U+1944 and U+1945|U+3030|  
+|U+002C to U+002F|U+061E and U+061F|U+19DE and U+19DF|U+303D|  
+|U+003A and U+003B|U+066A to U+066D|U+1A1E and U+1A1F|U+30A0|  
+|U+003F and U+0040|U+06D4|U+1B5A to U+1B60|U+30FB|  
+|U+005B to U+005D|U+0700 to U+070D|U+2010 to U+2027|U+A874 to U+A877|  
+|U+005F|U+07F7 to U+07F9|U+2030 to U+2043|U+FD3E and U+FD3F|  
+|U+007B|U+0964 and U+0965|U+2045 to U+2051|U+FE10 to U+FE19|  
+|U+007D|U+0970|U+2053 to U+205E|U+FE30 to U+FE52|  
+|U+00A1|U+0DF4|U+207D and  U+207E|U+FE54 to U+FE61|  
+|U+00AB|U+0E4F to U+0E5B|U+208D and U+208E|U+FE63|  
+|U+00AD|U+0F04 to U+0F12|U+2329 and U+232A|U+FE68|  
+|U+00B7|U+0F3A to U+0F3D|U+2768 to U+2775|U+FE6A and U+FE6B|  
+|U+00BB|U+0F85|U+27C5 to U+27C6|U+FF01 to U+FF03|  
+|U+00BF|U+0FD0 and U+0FD1|U+27E6 to U+27EB|U+FF05 to U+FF0A|  
+|U+037E|U+104A to U+104F|U+2983 to U+2998|U+FF0C to U+FF0F|  
+|U+0387|U+10FB|U+29D8 to U+29DB|U+FF1A and U+FF1B|  
+|U+055A to U+055F|U+1361 to U+1368|U+29FC and U+29FD|U+FF1F and U+FF20|  
+|U+0589 and U+058A|U+166D and U+166E|U+2CF9 to U+2CFC|U+FF3B to U+FF3D|  
+|U+05BE|U+169B and U+169C|U+2CFE and U+2CFF|U+FF3F|  
+|U+05C0|U+16EB to U+16ED|U+2E00 to U+2E17|U+FF5B|  
+|U+05C3|U+1735 and U+1736|U+2E1C and U+2E1D|U+FF5D|  
+|U+05C6|U+17D4 to U+17D6|U+3001 to U+3003|U+FF5F to U+FF65|  
+|U+05F3 and U+05F4|U+17D8 to U+17DA|U+3008 to U+3011||  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsPunctuation">
       <MemberSignature Language="C#" Value="public static bool IsPunctuation (char c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsPunctuation(char c) cil managed" />
@@ -1789,6 +1934,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1867,6 +2013,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1942,6 +2089,35 @@
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsSeparator">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as a separator character.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The Unicode standard recognizes three subcategories of separators:  
+  
+-   Space separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category), which includes characters such as \u0020.  
+  
+-   Line separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category), which includes \u2028.  
+  
+-   Paragraph separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category), which includes \u2029.  
+  
+> [!NOTE]
+>  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category), not as separator characters.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsSeparator">
       <MemberSignature Language="C#" Value="public static bool IsSeparator (char c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSeparator(char c) cil managed" />
@@ -1953,6 +2129,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2013,6 +2190,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2081,6 +2259,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2132,6 +2311,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2191,6 +2371,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2244,6 +2425,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2290,6 +2472,44 @@
           <paramref name="index" /> is not a position within <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsSymbol">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as a symbol character.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Valid symbols are members of the following categories in <xref:System.Globalization.UnicodeCategory>: `MathSymbol`, `CurrencySymbol`, `ModifierSymbol`, and `OtherSymbol`.  
+  
+ Symbols in the Unicode standard are a loosely defined set of characters that include the following:  
+  
+-   Currency symbols.  
+  
+-   Letterlike symbols, which include a set of mathematical alphanumeric symbols as well as symbols such as ℅, №, and ™.  
+  
+-   Number forms, such as subscripts and superscripts.  
+  
+-   Mathematical operators and arrows.  
+  
+-   Geometric symbols.  
+  
+-   Technical symbols.  
+  
+-   Braille patterns.  
+  
+-   Dingbats.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsSymbol">
       <MemberSignature Language="C#" Value="public static bool IsSymbol (char c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsSymbol(char c) cil managed" />
@@ -2301,6 +2521,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2370,6 +2591,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2447,6 +2669,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2489,6 +2712,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2528,6 +2752,34 @@
           <paramref name="index" /> is less than zero or greater than the last position in <paramref name="s" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsWhiteSpace">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.0.20.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Indicates whether a Unicode character is categorized as white space.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ White space characters are the following Unicode characters:  
+  
+-   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator> category, which includes the characters SPACE (U+0020), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
+  
+-   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator> category, which consists solely of the LINE SEPARATOR character (U+2028).  
+  
+-   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
+  
+-   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), NEXT LINE (U+0085), and NO-BREAK SPACE (U+00A0).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsWhiteSpace">
       <MemberSignature Language="C#" Value="public static bool IsWhiteSpace (char c);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool IsWhiteSpace(char c) cil managed" />
@@ -2539,6 +2791,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2566,11 +2819,11 @@
 ## Remarks  
  White space characters are the following Unicode characters:  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the LINE SEPARATOR character (U+2028).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator> category, which consists solely of the LINE SEPARATOR character (U+2028).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
   
 -   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), and NEXT LINE (U+0085).  
   
@@ -2598,6 +2851,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2629,11 +2883,11 @@
   
  White space characters are the following Unicode characters:  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.SpaceSeparator> category, which includes the characters SPACE (U+0020), NO-BREAK SPACE (U+00A0), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the LINE SEPARATOR character (U+2028).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.LineSeparator> category, which consists solely of the LINE SEPARATOR character (U+2028).  
   
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
+-   Members of the <xref:System.Globalization.UnicodeCategory.ParagraphSeparator> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
   
 -   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), and NEXT LINE (U+0085).  
   
@@ -2665,6 +2919,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2701,6 +2956,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2735,6 +2991,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2826,6 +3083,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2859,6 +3117,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2898,6 +3157,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2937,6 +3197,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2970,6 +3231,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3003,6 +3265,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3036,6 +3299,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3075,6 +3339,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3114,6 +3379,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3153,6 +3419,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3192,6 +3459,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3248,6 +3516,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3292,6 +3561,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3331,6 +3601,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3370,6 +3641,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3411,6 +3683,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3469,6 +3742,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
@@ -3513,6 +3790,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3556,6 +3834,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3598,6 +3877,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3646,6 +3926,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -3686,6 +3970,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3743,6 +4028,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
@@ -3786,6 +4075,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3829,6 +4119,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -3871,237 +4162,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="IsDigit">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a Unicode character is categorized as a decimal digit.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Valid digits are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsLetterOrDigit">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a Unicode character is categorized as a letter or a decimal digit.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Valid letters and decimal digits are members of the following categories in <xref:System.Globalization.UnicodeCategory>: `UppercaseLetter`, `LowercaseLetter`, `TitlecaseLetter`, `ModifierLetter`, `OtherLetter`, or `DecimalDigitNumber`.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsPunctuation">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a Unicode character is categorized as a punctuation mark.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Valid punctuation marks are members of the following categories in <xref:System.Globalization.UnicodeCategory>: `ConnectorPunctuation`, `DashPunctuation`, `OpenPunctuation`, `ClosePunctuation`, `InititalQuotePunctuation`, `FinalQuotePunctuation`, or `OtherPunctuation`. They include characters with the Unicode code points listed in the following table.  
-  
-|||||  
-|-|-|-|-|  
-|U+0021 to U+0023|U+060C and U+060D|U+1800 to U+180A|U+3014 to U+301F|  
-|U+0025 to U+002A|U+061B|U+1944 and U+1945|U+3030|  
-|U+002C to U+002F|U+061E and U+061F|U+19DE and U+19DF|U+303D|  
-|U+003A and U+003B|U+066A to U+066D|U+1A1E and U+1A1F|U+30A0|  
-|U+003F and U+0040|U+06D4|U+1B5A to U+1B60|U+30FB|  
-|U+005B to U+005D|U+0700 to U+070D|U+2010 to U+2027|U+A874 to U+A877|  
-|U+005F|U+07F7 to U+07F9|U+2030 to U+2043|U+FD3E and U+FD3F|  
-|U+007B|U+0964 and U+0965|U+2045 to U+2051|U+FE10 to U+FE19|  
-|U+007D|U+0970|U+2053 to U+205E|U+FE30 to U+FE52|  
-|U+00A1|U+0DF4|U+207D and  U+207E|U+FE54 to U+FE61|  
-|U+00AB|U+0E4F to U+0E5B|U+208D and U+208E|U+FE63|  
-|U+00AD|U+0F04 to U+0F12|U+2329 and U+232A|U+FE68|  
-|U+00B7|U+0F3A to U+0F3D|U+2768 to U+2775|U+FE6A and U+FE6B|  
-|U+00BB|U+0F85|U+27C5 to U+27C6|U+FF01 to U+FF03|  
-|U+00BF|U+0FD0 and U+0FD1|U+27E6 to U+27EB|U+FF05 to U+FF0A|  
-|U+037E|U+104A to U+104F|U+2983 to U+2998|U+FF0C to U+FF0F|  
-|U+0387|U+10FB|U+29D8 to U+29DB|U+FF1A and U+FF1B|  
-|U+055A to U+055F|U+1361 to U+1368|U+29FC and U+29FD|U+FF1F and U+FF20|  
-|U+0589 and U+058A|U+166D and U+166E|U+2CF9 to U+2CFC|U+FF3B to U+FF3D|  
-|U+05BE|U+169B and U+169C|U+2CFE and U+2CFF|U+FF3F|  
-|U+05C0|U+16EB to U+16ED|U+2E00 to U+2E17|U+FF5B|  
-|U+05C3|U+1735 and U+1736|U+2E1C and U+2E1D|U+FF5D|  
-|U+05C6|U+17D4 to U+17D6|U+3001 to U+3003|U+FF5F to U+FF65|  
-|U+05F3 and U+05F4|U+17D8 to U+17DA|U+3008 to U+3011||  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsSymbol">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a Unicode character is categorized as a symbol character.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Valid symbols are members of the following categories in <xref:System.Globalization.UnicodeCategory>: `MathSymbol`, `CurrencySymbol`, `ModifierSymbol`, and `OtherSymbol`.  
-  
- Symbols in the Unicode standard are a loosely defined set of characters that include the following:  
-  
--   Currency symbols.  
-  
--   Letterlike symbols, which include a set of mathematical alphanumeric symbols as well as symbols such as ℅, №, and ™.  
-  
--   Number forms, such as subscripts and superscripts.  
-  
--   Mathematical operators and arrows.  
-  
--   Geometric symbols.  
-  
--   Technical symbols.  
-  
--   Braille patterns.  
-  
--   Dingbats.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsWhiteSpace">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a Unicode character is categorized as white space.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- White space characters are the following Unicode characters:  
-  
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which includes the characters SPACE (U+0020), OGHAM SPACE MARK (U+1680), EN QUAD (U+2000), EM QUAD (U+2001), EN SPACE (U+2002), EM SPACE (U+2003), THREE-PER-EM SPACE (U+2004), FOUR-PER-EM SPACE (U+2005), SIX-PER-EM SPACE (U+2006), FIGURE SPACE (U+2007), PUNCTUATION SPACE (U+2008), THIN SPACE (U+2009), HAIR SPACE (U+200A), NARROW NO-BREAK SPACE (U+202F), MEDIUM MATHEMATICAL SPACE (U+205F), and IDEOGRAPHIC SPACE (U+3000).  
-  
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the LINE SEPARATOR character (U+2028).  
-  
--   Members of the <xref:System.Globalization.UnicodeCategory> category, which consists solely of the PARAGRAPH SEPARATOR character (U+2029).  
-  
--   The characters CHARACTER TABULATION (U+0009), LINE FEED (U+000A), LINE TABULATION (U+000B), FORM FEED (U+000C), CARRIAGE RETURN (U+000D), NEXT LINE (U+0085), and NO-BREAK SPACE (U+00A0).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsSeparator">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a Unicode character is categorized as a separator character.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The Unicode standard recognizes three subcategories of separators:  
-  
--   Space separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category), which includes characters such as \u0020.  
-  
--   Line separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category), which includes \u2028.  
-  
--   Paragraph separators (the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category), which includes \u2029.  
-  
-> [!NOTE]
->  The Unicode standard classifies the characters \u000A (LF), \u000C (FF), and \u000D (CR) as control characters (members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category), not as separator characters.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsControl">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a specified Unicode character is categorized as a control character.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Control characters are formatting and other non-printing characters, such as ACK, BEL, CR, FF, LF, and VT. The Unicode standard assigns code points from \U0000 to \U001F, \U007F, and from \U0080 to \U009F to control characters. According to the Unicode standard, these values are to be interpreted as control characters unless their use is otherwise defined by an application. Valid control characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="IsLetter">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-        <AssemblyVersion>4.0.20.0</AssemblyVersion>
-        <AssemblyVersion>4.1.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Indicates whether a Unicode character is categorized as a Unicode letter.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method determines whether a <xref:System.Char> is a member of any category of Unicode letter. Unicode letters include the following:  
-  
--   Uppercase letters, such as U+0041 (LATIN CAPITAL LETTER A) through U+005A (LATIN CAPITAL LETTER Z), or U+0400 (CYRILLIC CAPITAL LETTER IE WITH GRAVE) through U+042F (CYRILLIC CAPITAL LETTER YA). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
-  
--   Lowercase letters, such as U+0061 (LATIN SMALL LETTER A) through U+007A (LATIN SMALL LETTER Z), or U+03AC (GREEK SMALL LETTER ALPHA WITH TONOS) through U+03CE (GREEK SMALL LETTER OMEGA WITH TONOS). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
-  
--   Title case letters, such as U+01C5 (LATIN CAPITAL LETTER D WITH SMALL LETTER Z WITH CARON) or U+1FFC (GREEK CAPITAL LETTER OMEGA WITH PROSGEGRAMMENI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
-  
--   Modifiers, such as U+02B0 (MODIFIER LETTER SMALL H) through U+02C1 (MODIFIER LETTER REVERSED GLOTTAL STOP), or U+1D2C (MODIFIER LETTER CAPITAL A) through U+1D61 (MODIFIER LETTER SMALL CHI). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
-  
--   Other letters, such as U+05D0 (HEBREW LETTER ALEF) through U+05EA (HEBREW LETTER TAV), U+0621 (ARABIC LETTER HAMZA) through U+063A (ARABIC LETTER GHAIN), or U+4E00 (\<CJK Ideograph, First>) through U+9FC3 (\<CJK Ideograph, Last>). These characters are members of the <xref:System.Globalization.UnicodeCategory?displayProperty=fullName> category.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

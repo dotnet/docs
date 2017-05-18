@@ -6,6 +6,7 @@
     <AssemblyName>System.Xml.XDocument</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -34,6 +35,87 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Add">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified content as children to this <see cref="T:System.Xml.Linq.XContainer" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds the new content after the existing content of the <xref:System.Xml.Linq.XContainer>.  
+  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+   
+  
+## Examples  
+ The following example creates two XML trees, and then uses this method to add the results of a query to one of them.  
+  
+```csharp  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
+);  
+XElement xmlTree = new XElement("Root",  
+    new XElement("NewElement", "Content")  
+);  
+xmlTree.Add(  
+    from el in srcTree.Elements()  
+    where (int)el >= 3  
+    select el  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim srcTree As XElement = _  
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+Dim xmlTree As XElement = _   
+        <Root>  
+            <NewElement>Content</NewElement>  
+        </Root>  
+xmlTree.Add( _  
+    From el In srcTree.Elements _  
+    Where CInt(el) >= 3 _  
+    Select el)  
+Console.WriteLine(xmlTree)  
+  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <NewElement>Content</NewElement>  
+  <Element3>3</Element3>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Add">
       <MemberSignature Language="C#" Value="public void Add (object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void Add(object content) cil managed" />
@@ -43,6 +125,7 @@
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -167,6 +250,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -287,6 +371,86 @@ Console.WriteLine(xmlTree)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddFirst">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds the specified content as the first children of this document or element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method adds the new content before the existing content of the <xref:System.Xml.Linq.XContainer>.  
+  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+   
+  
+## Examples  
+ The following example creates two XML trees, and then uses this method to add the results of a query to one of them.  
+  
+```csharp  
+  
+                XElement srcTree = new XElement("Root",  
+    new XElement("Element1", 1),  
+    new XElement("Element2", 2),  
+    new XElement("Element3", 3),  
+    new XElement("Element4", 4),  
+    new XElement("Element5", 5)  
+);  
+XElement xmlTree = new XElement("Root",  
+    new XElement("NewElement", "Content")  
+);  
+xmlTree.AddFirst(  
+    from el in srcTree.Elements()  
+    where (int)el >= 3  
+    select el  
+);  
+Console.WriteLine(xmlTree);  
+```  
+  
+```vb  
+  
+                Dim srcTree As XElement = _   
+        <Root>  
+            <Element1>1</Element1>  
+            <Element2>2</Element2>  
+            <Element3>3</Element3>  
+            <Element4>4</Element4>  
+            <Element5>5</Element5>  
+        </Root>  
+Dim xmlTree As XElement = <Root>  
+                              <NewElement>Content</NewElement>  
+                          </Root>  
+xmlTree.AddFirst( _  
+    From el In srcTree.Elements _  
+    Where CInt(el) >= 3 _  
+    Select el)  
+Console.WriteLine(xmlTree)  
+  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Element3>3</Element3>  
+  <Element4>4</Element4>  
+  <Element5>5</Element5>  
+  <NewElement>Content</NewElement>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddFirst">
       <MemberSignature Language="C#" Value="public void AddFirst (object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddFirst(object content) cil managed" />
@@ -296,6 +460,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -419,6 +584,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -549,6 +715,7 @@ Console.WriteLine(xmlTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -668,6 +835,7 @@ Console.WriteLine(newTree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -753,6 +921,24 @@ element content
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Descendants">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of the descendant elements for this document or element, in document order.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses deferred execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Descendants">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Descendants ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Descendants() cil managed" />
@@ -762,6 +948,7 @@ element content
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -844,6 +1031,7 @@ GrandChild
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -978,6 +1166,7 @@ End Module
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1162,6 +1351,24 @@ End Module
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Elements">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of the child elements of this element or document, in document order.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method uses deferred execution.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Elements">
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;System.Xml.Linq.XElement&gt; Elements ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class System.Xml.Linq.XElement&gt; Elements() cil managed" />
@@ -1171,6 +1378,7 @@ End Module
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1312,6 +1520,7 @@ End Module
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1452,6 +1661,7 @@ End Module
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1522,6 +1732,7 @@ Console.WriteLine(firstNode)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1592,6 +1803,7 @@ Console.WriteLine(lastNode)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1763,6 +1975,7 @@ Text
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1835,6 +2048,79 @@ Console.WriteLine(xmltree)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ReplaceNodes">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.XDocument</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.10.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Replaces the children nodes of this document or element with the specified content.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
+  
+ This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
+  
+ This method has snapshot semantics. It first creates a copy of the new content. It then removes all children nodes of this node. Finally, it adds the new content as children nodes. This means that you can replace children nodes using a query on the children nodes themselves.  
+  
+   
+  
+## Examples  
+ The following example creates two XML trees, and then uses this method to replace the contents of one of them with the results of a query.  
+  
+```csharp  
+  
+                XElement root = new XElement("Root",  
+    new XElement("Child", 1),  
+    new XElement("Child", 2),  
+    new XElement("Child", 3),  
+    new XElement("Child", 4),  
+    new XElement("Child", 5)  
+);  
+root.ReplaceNodes(  
+    from el in root.Elements()  
+    where (int)el >= 3  
+    select el  
+);  
+Console.WriteLine(root);  
+```  
+  
+```vb  
+  
+                Dim root As XElement = _   
+    <Root>  
+        <Child>1</Child>  
+        <Child>2</Child>  
+        <Child>3</Child>  
+        <Child>4</Child>  
+        <Child>5</Child>  
+    </Root>  
+root.ReplaceNodes( _  
+    From el In root.Elements _  
+    Where el.Value >= 3 _  
+    Select el)  
+Console.WriteLine(root)  
+  
+```  
+  
+ This example produces the following output:  
+  
+```xml  
+  
+                <Root>  
+  <Child>3</Child>  
+  <Child>4</Child>  
+  <Child>5</Child>  
+</Root>  
+```  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ReplaceNodes">
       <MemberSignature Language="C#" Value="public void ReplaceNodes (object content);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void ReplaceNodes(object content) cil managed" />
@@ -1844,6 +2130,7 @@ Console.WriteLine(xmltree)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -1939,6 +2226,7 @@ Console.WriteLine(root)
         <AssemblyName>System.Xml.XDocument</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Xml.Linq</AssemblyName>
@@ -2029,275 +2317,5 @@ Console.WriteLine(root)
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Add">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified content as children to this <see cref="T:System.Xml.Linq.XContainer" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method adds the new content after the existing content of the <xref:System.Xml.Linq.XContainer>.  
-  
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
-## Examples  
- The following example creates two XML trees, and then uses this method to add the results of a query to one of them.  
-  
-```csharp  
-  
-                XElement srcTree = new XElement("Root",  
-    new XElement("Element1", 1),  
-    new XElement("Element2", 2),  
-    new XElement("Element3", 3),  
-    new XElement("Element4", 4),  
-    new XElement("Element5", 5)  
-);  
-XElement xmlTree = new XElement("Root",  
-    new XElement("NewElement", "Content")  
-);  
-xmlTree.Add(  
-    from el in srcTree.Elements()  
-    where (int)el >= 3  
-    select el  
-);  
-Console.WriteLine(xmlTree);  
-```  
-  
-```vb  
-  
-                Dim srcTree As XElement = _  
-        <Root>  
-            <Element1>1</Element1>  
-            <Element2>2</Element2>  
-            <Element3>3</Element3>  
-            <Element4>4</Element4>  
-            <Element5>5</Element5>  
-        </Root>  
-Dim xmlTree As XElement = _   
-        <Root>  
-            <NewElement>Content</NewElement>  
-        </Root>  
-xmlTree.Add( _  
-    From el In srcTree.Elements _  
-    Where CInt(el) >= 3 _  
-    Select el)  
-Console.WriteLine(xmlTree)  
-  
-```  
-  
- This example produces the following output:  
-  
-```xml  
-  
-                <Root>  
-  <NewElement>Content</NewElement>  
-  <Element3>3</Element3>  
-  <Element4>4</Element4>  
-  <Element5>5</Element5>  
-</Root>  
-```  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="ReplaceNodes">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Replaces the children nodes of this document or element with the specified content.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
- This method has snapshot semantics. It first creates a copy of the new content. It then removes all children nodes of this node. Finally, it adds the new content as children nodes. This means that you can replace children nodes using a query on the children nodes themselves.  
-  
-   
-  
-## Examples  
- The following example creates two XML trees, and then uses this method to replace the contents of one of them with the results of a query.  
-  
-```csharp  
-  
-                XElement root = new XElement("Root",  
-    new XElement("Child", 1),  
-    new XElement("Child", 2),  
-    new XElement("Child", 3),  
-    new XElement("Child", 4),  
-    new XElement("Child", 5)  
-);  
-root.ReplaceNodes(  
-    from el in root.Elements()  
-    where (int)el >= 3  
-    select el  
-);  
-Console.WriteLine(root);  
-```  
-  
-```vb  
-  
-                Dim root As XElement = _   
-    <Root>  
-        <Child>1</Child>  
-        <Child>2</Child>  
-        <Child>3</Child>  
-        <Child>4</Child>  
-        <Child>5</Child>  
-    </Root>  
-root.ReplaceNodes( _  
-    From el In root.Elements _  
-    Where el.Value >= 3 _  
-    Select el)  
-Console.WriteLine(root)  
-  
-```  
-  
- This example produces the following output:  
-  
-```xml  
-  
-                <Root>  
-  <Child>3</Child>  
-  <Child>4</Child>  
-  <Child>5</Child>  
-</Root>  
-```  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Descendants">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a collection of the descendant elements for this document or element, in document order.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses deferred execution.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Elements">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a collection of the child elements of this element or document, in document order.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method uses deferred execution.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddFirst">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml.XDocument</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.10.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds the specified content as the first children of this document or element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method adds the new content before the existing content of the <xref:System.Xml.Linq.XContainer>.  
-  
- For details about the valid content that can be passed to this function, see [Valid Content of XElement and XDocument Objects](http://msdn.microsoft.com/library/aee2d319-5c5f-4b99-9bb4-2f58232577ae).  
-  
- This method will raise the <xref:System.Xml.Linq.XObject.Changed> and the <xref:System.Xml.Linq.XObject.Changing> events.  
-  
-   
-  
-## Examples  
- The following example creates two XML trees, and then uses this method to add the results of a query to one of them.  
-  
-```csharp  
-  
-                XElement srcTree = new XElement("Root",  
-    new XElement("Element1", 1),  
-    new XElement("Element2", 2),  
-    new XElement("Element3", 3),  
-    new XElement("Element4", 4),  
-    new XElement("Element5", 5)  
-);  
-XElement xmlTree = new XElement("Root",  
-    new XElement("NewElement", "Content")  
-);  
-xmlTree.AddFirst(  
-    from el in srcTree.Elements()  
-    where (int)el >= 3  
-    select el  
-);  
-Console.WriteLine(xmlTree);  
-```  
-  
-```vb  
-  
-                Dim srcTree As XElement = _   
-        <Root>  
-            <Element1>1</Element1>  
-            <Element2>2</Element2>  
-            <Element3>3</Element3>  
-            <Element4>4</Element4>  
-            <Element5>5</Element5>  
-        </Root>  
-Dim xmlTree As XElement = <Root>  
-                              <NewElement>Content</NewElement>  
-                          </Root>  
-xmlTree.AddFirst( _  
-    From el In srcTree.Elements _  
-    Where CInt(el) >= 3 _  
-    Select el)  
-Console.WriteLine(xmlTree)  
-  
-```  
-  
- This example produces the following output:  
-  
-```xml  
-  
-                <Root>  
-  <Element3>3</Element3>  
-  <Element4>4</Element4>  
-  <Element5>5</Element5>  
-  <NewElement>Content</NewElement>  
-</Root>  
-```  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -108,7 +108,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The content type is a Multipurpose Internet Mail Exchange (MIME) header that appears at the beginning of a MIME message as well as within the separate body parts. Content-type headers are used to specify the media type and subtype of data in the body of a message and to fully specify the media type and subtype of data in the body of a message and to specify the character encoding (optional) of the data. An example of a MIME content type that can be supported: “application/soap+xml; charset=’utf8’”.  
+ The content type is a Multipurpose Internet Mail Exchange (MIME) header that appears at the beginning of a MIME message as well as within the separate body parts. Content-type headers are used to specify the media type and subtype of data in the body of a message and to fully specify the media type and subtype of data in the body of a message and to specify the character encoding (optional) of the data. An example of a MIME content type that can be supported: "application/soap+xml; charset=’utf8’".  
   
  A grammar that details the syntax of the content-type header is described in [RFC 2045](http://go.microsoft.com/fwlink/?LinkId=95945), Section 5.1. [RFC 2046](http://go.microsoft.com/fwlink/?LinkId=95944) provides detailed information on MIME media types and their parameters.  
   
@@ -166,7 +166,7 @@
       <Docs>
         <typeparam name="T">The typed object for which the method is querying.</typeparam>
         <summary>Returns a typed object requested, if present, from the appropriate layer in the channel stack.</summary>
-        <returns>The typed object <paramref name="T " />requested if it is present or <see langword="null" /> if it is not.</returns>
+        <returns>The typed object <paramref name="T" /> requested if it is present or <see langword="null" /> if it is not.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

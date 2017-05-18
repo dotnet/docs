@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugStackWalk::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugStackWalk interface [.NET Framework debugging]"
 ms.assetid: 189c36be-028c-4fba-a002-5edfb8fcd07f
+topic_type: 
+  - "apiref"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

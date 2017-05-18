@@ -56,12 +56,12 @@ Represents a collection of variables associated with this activity query.
 ```  
   
 <activityStateQuery activityName="SendEmailActivity">  
-  <states>  
-    <state name="Closed"/>  
-  </states>  
-  <variables>  
-    <variable name="FromAddress"/>  
-  </variables>  
+  <states>  
+    <state name="Closed"/>  
+  </states>  
+  <variables>  
+    <variable name="FromAddress"/>  
+  </variables>  
   <arguments>  
     <argument name="Result"/>  
   </arguments>  

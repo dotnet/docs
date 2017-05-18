@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ComCallUnmarshal coclass [.NET Framework hosting]"
 ms.assetid: 2adb5827-2268-4914-a1c6-f62b61880a45
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

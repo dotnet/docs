@@ -2,6 +2,7 @@
 title: "Claims Based Authorization Using WIF | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -29,11 +30,11 @@ In a relying party application, authorization determines what resources an authe
 ### IPrincipal.IsInRole Method  
  To implement the RBAC approach in claims-aware applications, use the **IsInRole()** method in the **IPrinicpal** interface, just as you would in non-claims-aware applications. There are several ways of using the **IsInRole()** method:  
   
--   Explicitly calling on **IPrincipal.IsInRole(“Administrator”)**. In this approach, the outcome is a Boolean. Use it in your conditional statements. It can be used arbitrarily any place in your code.  
+-   Explicitly calling on **IPrincipal.IsInRole("Administrator")**. In this approach, the outcome is a Boolean. Use it in your conditional statements. It can be used arbitrarily any place in your code.  
   
 -   Using the security demand **PrincipalPermission.Demand()**. In this approach, the outcome is an exception in case the demand is not satisfied. This should fit your exception handling strategy. Throwing exceptions is much more expensive from a performance perspective compared to retiring Boolean. This can be used any place in your code.  
   
--   Using the declarative attributes **[PrincipalPermission(SecurityAction.Demand, Role = “Administrator”)]**. This approach is called declarative, because it is used to decorate methods. It cannot be used in code blocks inside the method’s implementations. The outcome is an exception in case the demand is not satisfied. You should make sure that it fits your exception-handling strategy.  
+-   Using the declarative attributes **[PrincipalPermission(SecurityAction.Demand, Role = "Administrator")]**. This approach is called declarative, because it is used to decorate methods. It cannot be used in code blocks inside the method’s implementations. The outcome is an exception in case the demand is not satisfied. You should make sure that it fits your exception-handling strategy.  
   
 -   Using URL authorization, using the **\<authorization>** section in **web.config**. This approach is suitable when you are managing authorization on a URL level. This is the most coarse level among those previously mentioned. The advantage of this approach is that changes are made in the configuration file, which means that the code should not be compiled to take advantage of the change.  
   

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugStringValue::GetString method [.NET Framework debugging]"
   - "GetString method, ICorDebugStringValue interface [.NET Framework debugging]"
 ms.assetid: 2b94bda7-09ee-435d-91b9-c4e31af1896c
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

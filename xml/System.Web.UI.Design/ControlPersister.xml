@@ -19,7 +19,7 @@
  The <xref:System.Web.UI.Design.ControlPersister> class provides methods that can persist a <xref:System.Web.UI.Control> control or an <xref:System.Web.UI.ITemplate> interface implementation as a string of aspx code. The implementation of these methods is driven by metadata attributes, such as the <xref:System.ComponentModel.DefaultValueAttribute>, <xref:System.Web.UI.PersistenceModeAttribute>, and <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>.  
   
 > [!NOTE]
->  The Web Forms page designer does not support the `Reset``PropertyName` method that is optionally exposed by Microsoft Windows Forms-based controls for property persistence.  
+>  The Web Forms page designer does not support the <code>Reset<em>PropertyName</em></code> method that is optionally exposed by Microsoft Windows Forms-based controls for property persistence.  
   
  To create a <xref:System.Web.UI.Control> object or an <xref:System.Web.UI.ITemplate> interface by parsing a string of control- or template-persistence data, use the <xref:System.Web.UI.Design.ControlParser> class methods.  
   

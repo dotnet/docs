@@ -251,7 +251,7 @@
       <Docs>
         <summary>Gets a value that indicates whether the browser supports page content that follows WML <see langword="select" /> or <see langword="input" /> elements.</summary>
         <value>
-          <see langword="true" /> if the browser supports page content that follows HTML <see langword="select " />or <see langword="input " />elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
+          <see langword="true" /> if the browser supports page content that follows HTML <see langword="select" /> or <see langword="input" /> elements; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -484,12 +484,10 @@
         <value>
           <see langword="true" /> if the browser can support cookies; otherwise, <see langword="false" />. The default is <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This property does not indicate whether cookies are currently enabled in the browser, only whether the browser can support cookies.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -896,12 +894,10 @@
         <value>
           <see langword="true" /> if the browser supports Java; otherwise, <see langword="false" />. The default is <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This property does not indicate whether Java is currently enabled in the browser, only whether the browser can support Java.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1852,7 +1848,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the browser supports the <see langword="nowrap" /> attribute of HTML <see langword="div " />elements.</summary>
+        <summary>Gets a value that indicates whether the browser supports the <see langword="nowrap" /> attribute of HTML <see langword="div" /> elements.</summary>
         <value>
           <see langword="true" /> if the browser supports the <see langword="nowrap" /> HTML <see langword="div" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1928,7 +1924,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the browser supports the <see langword="size" /> attribute of HTML <see langword="font " />elements.</summary>
+        <summary>Gets a value that indicates whether the browser supports the <see langword="size" /> attribute of HTML <see langword="font" /> elements.</summary>
         <value>
           <see langword="true" /> if the browser supports the <see langword="size" /> attribute of HTML <see langword="font" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -2004,7 +2000,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that indicates whether the browser supports the <see langword="mode" /> attribute of HTML <see langword="input " />elements.</summary>
+        <summary>Gets a value that indicates whether the browser supports the <see langword="mode" /> attribute of HTML <see langword="input" /> elements.</summary>
         <value>
           <see langword="true" /> if the browser supports the <see langword="mode" /> attribute of HTML <see langword="input" /> elements; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -2253,12 +2249,10 @@
         <value>
           <see langword="true" /> if the browser supports VBScript; otherwise, <see langword="false" />. The default is <see langword="false" />.  
   
- <block subset="none" type="note">  
-<para>  
+ <block subset="none" type="note"><para>  
  This property does not indicate whether VBScript is currently enabled in the browser, only whether the browser can support VBScript.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

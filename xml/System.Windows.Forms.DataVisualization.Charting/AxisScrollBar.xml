@@ -118,7 +118,7 @@
 ## Remarks  
  This property can be set to any valid ARGB (alpha, red, green, blue) color.  
   
- If the value of this property is <xref:System.Drawing.Color>, the background color of the scrollbar will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackColor%2A> property value of the chart area the scrollbar is being used for.  
+ If the value of this property is <xref:System.Drawing.Color.Empty>, the background color of the scrollbar will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.ChartArea.BackColor%2A> property value of the chart area the scrollbar is being used for.  
   
  ]]></format>
         </remarks>
@@ -159,7 +159,7 @@
 ## Remarks  
  Use this property to get or set the color of the left/right, up/down, reset and thumb buttons of a scrollbar.  
   
- If the value of this property is <xref:System.Drawing.Color>, the color used for the buttons will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property value.  
+ If the value of this property is <xref:System.Drawing.Color.Empty>, the color used for the buttons will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property value.  
   
  ]]></format>
         </remarks>
@@ -258,7 +258,7 @@
       </Parameters>
       <Docs>
         <param name="disposing">
-          <see langword="True" /> to release both unmanaged and managed resources;<see langword=" false" /> to release only unmanaged resources.</param>
+          <see langword="True" /> to release both unmanaged and managed resources; <see langword="false" /> to release only unmanaged resources.</param>
         <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.DataVisualization.Charting.AxisScrollBar" /> class and optionally releases the managed resources.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -376,7 +376,7 @@
 ## Remarks  
  This property represents the color used for the arrows in up/down and left/right buttons, the symbol inside the reset button, as well as the border of the entire scrollbar.  
   
- If the value of this property is <xref:System.Drawing.Color>, the line color used will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property value.  
+ If the value of this property is <xref:System.Drawing.Color.Empty>, the line color used will be determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Axis.LineColor%2A> property value.  
   
  ]]></format>
         </remarks>

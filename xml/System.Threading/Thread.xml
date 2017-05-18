@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Threading.Thread</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -212,6 +213,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -265,6 +267,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -328,6 +331,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -393,6 +400,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
@@ -457,6 +468,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -479,13 +494,13 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  If `Abort` is called on a thread that has not been started, the thread will abort when <xref:System.Threading.Thread.Start%2A> is called. If `Abort` is called on a thread that is blocked or is sleeping, the thread is interrupted and then aborted.  
   
- If `Abort` is called on a thread that has been suspended, a <xref:System.Threading.ThreadStateException> is thrown in the thread that called <xref:System.Threading.Thread.Abort%2A>, and <xref:System.Threading.ThreadState> is added to the <xref:System.Threading.Thread.ThreadState%2A> property of the thread being aborted. A <xref:System.Threading.ThreadAbortException> is not thrown in the suspended thread until <xref:System.Threading.Thread.Resume%2A> is called.  
+ If `Abort` is called on a thread that has been suspended, a <xref:System.Threading.ThreadStateException> is thrown in the thread that called <xref:System.Threading.Thread.Abort%2A>, and <xref:System.Threading.ThreadState.AbortRequested> is added to the <xref:System.Threading.Thread.ThreadState%2A> property of the thread being aborted. A <xref:System.Threading.ThreadAbortException> is not thrown in the suspended thread until <xref:System.Threading.Thread.Resume%2A> is called.  
   
  If `Abort` is called on a managed thread while it is executing unmanaged code, a `ThreadAbortException` is not thrown until the thread returns to managed code.  
   
  If two calls to `Abort` come at the same time, it is possible for one call to set the state information and the other call to execute the `Abort`. However, an application cannot detect this situation.  
   
- After `Abort` is invoked on a thread, the state of the thread includes <xref:System.Threading.ThreadState>. After the thread has terminated as a result of a successful call to `Abort`, the state of the thread is changed to <xref:System.Threading.ThreadState>. With sufficient permissions, a thread that is the target of an `Abort` can cancel the abort using the `ResetAbort` method. For an example that demonstrates calling the `ResetAbort` method, see the `ThreadAbortException` class.  
+ After `Abort` is invoked on a thread, the state of the thread includes <xref:System.Threading.ThreadState.AbortRequested>. After the thread has terminated as a result of a successful call to `Abort`, the state of the thread is changed to <xref:System.Threading.ThreadState.Stopped>. With sufficient permissions, a thread that is the target of an `Abort` can cancel the abort using the `ResetAbort` method. For an example that demonstrates calling the `ResetAbort` method, see the `ThreadAbortException` class.  
   
  ]]></format>
         </remarks>
@@ -507,6 +522,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -533,13 +552,13 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  If `Abort` is called on a thread that has not been started, the thread will abort when <xref:System.Threading.Thread.Start%2A> is called. If `Abort` is called on a thread that is blocked or is sleeping, the thread is interrupted and then aborted.  
   
- If `Abort` is called on a thread that has been suspended, a <xref:System.Threading.ThreadStateException> is thrown in the thread that called <xref:System.Threading.Thread.Abort%2A>, and <xref:System.Threading.ThreadState> is added to the <xref:System.Threading.Thread.ThreadState%2A> property of the thread being aborted. A <xref:System.Threading.ThreadAbortException> is not thrown in the suspended thread until <xref:System.Threading.Thread.Resume%2A> is called.  
+ If `Abort` is called on a thread that has been suspended, a <xref:System.Threading.ThreadStateException> is thrown in the thread that called <xref:System.Threading.Thread.Abort%2A>, and <xref:System.Threading.ThreadState.AbortRequested> is added to the <xref:System.Threading.Thread.ThreadState%2A> property of the thread being aborted. A <xref:System.Threading.ThreadAbortException> is not thrown in the suspended thread until <xref:System.Threading.Thread.Resume%2A> is called.  
   
  If `Abort` is called on a managed thread while it is executing unmanaged code, a `ThreadAbortException` is not thrown until the thread returns to managed code.  
   
  If two calls to `Abort` come at the same time, it is possible for one call to set the state information and the other call to execute the `Abort`. However, an application cannot detect this situation.  
   
- After `Abort` is invoked on a thread, the state of the thread includes <xref:System.Threading.ThreadState>. After the thread has terminated as a result of a successful call to `Abort`, the state of the thread is changed to <xref:System.Threading.ThreadState>. With sufficient permissions, a thread that is the target of an `Abort` can cancel the abort using the `ResetAbort` method. For an example that demonstrates calling the `ResetAbort` method, see the `ThreadAbortException` class.  
+ After `Abort` is invoked on a thread, the state of the thread includes <xref:System.Threading.ThreadState.AbortRequested>. After the thread has terminated as a result of a successful call to `Abort`, the state of the thread is changed to <xref:System.Threading.ThreadState.Stopped>. With sufficient permissions, a thread that is the target of an `Abort` can cancel the abort using the `ResetAbort` method. For an example that demonstrates calling the `ResetAbort` method, see the `ThreadAbortException` class.  
   
    
   
@@ -570,6 +589,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.LocalDataStoreSlot</ReturnType>
@@ -628,6 +651,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.LocalDataStoreSlot</ReturnType>
@@ -699,6 +726,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("Deprecated in favor of GetApartmentState, SetApartmentState and TrySetApartmentState.")</AttributeName>
@@ -753,6 +784,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.MayFail)</AttributeName>
@@ -802,6 +837,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -874,6 +913,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>set: System.Security.SecuritySafeCritical</AttributeName>
@@ -922,6 +965,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.Principal.IPrincipal</ReturnType>
       </ReturnValue>
@@ -952,6 +999,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1003,6 +1051,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1060,6 +1112,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1098,6 +1154,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1149,6 +1209,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.MayFail)</AttributeName>
@@ -1199,6 +1263,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>get: System.Runtime.ConstrainedExecution.ReliabilityContract(System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState, System.Runtime.ConstrainedExecution.Cer.MayFail)</AttributeName>
@@ -1232,6 +1300,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -1267,6 +1339,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1330,6 +1406,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.ApartmentState</ReturnType>
       </ReturnValue>
@@ -1372,6 +1452,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("Thread.GetCompressedStack is no longer supported. Please use the System.Threading.CompressedStack class")</AttributeName>
@@ -1412,6 +1496,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -1475,6 +1563,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.AppDomain</ReturnType>
       </ReturnValue>
@@ -1509,6 +1601,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -1545,6 +1641,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
@@ -1580,6 +1680,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.LocalDataStoreSlot</ReturnType>
@@ -1642,6 +1746,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
@@ -1684,6 +1792,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1712,6 +1821,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1778,6 +1888,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1812,6 +1926,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1863,6 +1978,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1924,6 +2040,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -1948,7 +2068,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
   
  If the thread has already terminated when <xref:System.Threading.Thread.Join%2A> is called, the method returns immediately.  
   
- This method changes the state of the current thread to include <xref:System.Threading.ThreadState>. You cannot invoke `Join` on a thread that is in the <xref:System.Threading.ThreadState?displayProperty=fullName> state.  
+ This method changes the state of the current thread to include <xref:System.Threading.ThreadState.WaitSleepJoin>. You cannot invoke `Join` on a thread that is in the <xref:System.Threading.ThreadState?displayProperty=fullName> state.  
   
    
   
@@ -1973,6 +2093,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2020,6 +2141,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
@@ -2051,6 +2176,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2102,6 +2228,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2163,6 +2293,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
@@ -2206,6 +2340,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("Thread.Resume has been deprecated.  Please use other classes in System.Threading, such as Monitor, Mutex, Event, and Semaphore, to synchronize Threads or protect resources.  http://go.microsoft.com/fwlink/?linkid=14202", false)</AttributeName>
@@ -2248,6 +2386,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2302,6 +2444,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Obsolete("Thread.SetCompressedStack is no longer supported. Please use the System.Threading.CompressedStack class")</AttributeName>
@@ -2344,6 +2490,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2402,6 +2552,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2430,7 +2581,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The thread will not be scheduled for execution by the operating system for the amount of time specified. This method changes the state of the thread to include <xref:System.Threading.ThreadState>.  
+ The thread will not be scheduled for execution by the operating system for the amount of time specified. This method changes the state of the thread to include <xref:System.Threading.ThreadState.WaitSleepJoin>.  
   
  You can specify <xref:System.Threading.Timeout.Infinite?displayProperty=fullName> for the `millisecondsTimeout` parameter to suspend the thread indefinitely. However, we recommend that you use other <xref:System.Threading?displayProperty=fullName> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
   
@@ -2463,6 +2614,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2486,7 +2638,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The thread will not be scheduled for execution by the operating system for the amount of time specified. This method changes the state of the thread to include <xref:System.Threading.ThreadState>.  
+ The thread will not be scheduled for execution by the operating system for the amount of time specified. This method changes the state of the thread to include <xref:System.Threading.ThreadState.WaitSleepJoin>.  
   
  You can specify <xref:System.Threading.Timeout.InfiniteTimeSpan?displayProperty=fullName> for the `timeout` parameter to suspend the thread indefinitely. However, we recommend that you use other <xref:System.Threading?displayProperty=fullName> classes such as <xref:System.Threading.Mutex>, <xref:System.Threading.Monitor>, <xref:System.Threading.EventWaitHandle>, or <xref:System.Threading.Semaphore> instead to sychronize threads or manage resources.  
   
@@ -2524,6 +2676,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2564,6 +2720,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2614,6 +2771,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2672,6 +2830,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -2853,6 +3015,7 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>System.Threading.Thread</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -2904,6 +3067,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2959,6 +3126,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
@@ -3001,6 +3172,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
@@ -3045,6 +3220,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int16</ReturnType>
       </ReturnValue>
@@ -3087,6 +3266,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -3131,6 +3314,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
@@ -3173,6 +3360,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
@@ -3217,6 +3408,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -3259,6 +3454,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3308,6 +3507,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Single</ReturnType>
       </ReturnValue>
@@ -3350,6 +3553,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3399,6 +3606,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
@@ -3446,6 +3657,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3495,6 +3710,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
@@ -3543,6 +3762,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3586,6 +3809,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3631,6 +3858,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3674,6 +3905,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3719,6 +3954,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3762,6 +4001,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -3807,6 +4050,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3850,6 +4097,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3900,6 +4151,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -3943,6 +4198,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -3993,6 +4252,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
@@ -4041,6 +4304,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>
@@ -4091,6 +4358,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
@@ -4139,6 +4410,10 @@ Main thread: ThreadProc.Join has returned.  Press Enter to end program.
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
         <Attribute>

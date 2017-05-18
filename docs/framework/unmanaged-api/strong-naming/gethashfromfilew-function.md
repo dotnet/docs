@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetHashFromFileW function [.NET Framework strong naming]"
 ms.assetid: 97c2d7a6-5376-45a1-ba65-146a249147cc
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -35,7 +37,7 @@ Generates a hash over the contents of the file specified by a Unicode string.
 ## Syntax  
   
 ```  
-HRESULT GetHashFromFileW (   
+HRESULT GetHashFromFileW (   
     [in]  LPCWSTR   wszFilePath,  
     [in, out] unsigned int   *piHashAlg,  
     [out] BYTE      *pbHash,  

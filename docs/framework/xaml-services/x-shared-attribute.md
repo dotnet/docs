@@ -26,7 +26,7 @@ When set to `false`, modifies WPF resource-retrieval behavior so that requests f
   
 ```  
 <ResourceDictionary>  
-  <object x:Shared="false".../>  
+  <object x:Shared="false".../>  
 </ResourceDictionary>  
 ```  
   

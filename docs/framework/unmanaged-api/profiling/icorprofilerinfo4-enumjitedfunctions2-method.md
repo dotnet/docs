@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumJITedFunctions2 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::EnumJITedFunctions2 method [.NET Framework profiling]"
 ms.assetid: 40e9a1be-9bd2-4fad-9921-34a84b61c1e3
+topic_type: 
+  - "apiref"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

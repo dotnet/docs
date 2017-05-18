@@ -672,7 +672,7 @@
         <param name="serviceProvider">An object that implements <see cref="T:System.IServiceProvider" /> to provide access to design time services if they are required.</param>
         <param name="propertyName">The name of the property.</param>
         <summary>Returns the <see cref="T:System.Type" /> of the specified property.</summary>
-        <returns>The <see cref="T:System.Type" /> for the property whose name is passed as the <paramref name="propertyName " />parameter.</returns>
+        <returns>The <see cref="T:System.Type" /> for the property whose name is passed as the <paramref name="propertyName" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

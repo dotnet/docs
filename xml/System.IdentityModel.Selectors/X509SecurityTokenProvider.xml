@@ -71,7 +71,7 @@
       <Docs>
         <param name="storeLocation">One of the <see cref="T:System.Security.Cryptography.X509Certificates.StoreLocation" /> values that specifies the certificate store location.</param>
         <param name="storeName">One of the <see cref="T:System.Security.Cryptography.X509Certificates.StoreName" /> values that specifies the certificate store name.</param>
-        <param name="findType">One of the<see cref="T:System.Security.Cryptography.X509Certificates.X509FindType" /> values that specifies how to search the certificate store.</param>
+        <param name="findType">One of the <see cref="T:System.Security.Cryptography.X509Certificates.X509FindType" /> values that specifies how to search the certificate store.</param>
         <param name="findValue">The value used to find the X.509 certificate in the certificate store.</param>
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Selectors.X509SecurityTokenProvider" /> class by getting an X.509 certificate from the specified certificate store criteria.</summary>
         <remarks>

@@ -202,7 +202,7 @@
       </Parameters>
       <Docs>
         <param name="propertyDataId">The <see cref="T:System.Guid" /> to associate with the custom property.</param>
-        <param name="propertyData">The value of the custom property. <c>propertyData</c> must be of type <see cref="T:System.Char" />, <see cref="T:System.Byte" />,<see cref="T:System.Int16" />,,<see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, <see cref="T:System.UInt32" />, <see cref="T:System.Int64" />, <see cref="T:System.UInt64" />, <see cref="T:System.Single" />, <see cref="T:System.Double" />, <see cref="T:System.DateTime" />, <see cref="T:System.Boolean" />, <see cref="T:System.String" />, <see cref="T:System.Decimal" /> or an array of these data types, except <see cref="T:System.String" />, which is not allowed.</param>
+        <param name="propertyData">The value of the custom property. <c>propertyData</c> must be of type <see cref="T:System.Char" />, <see cref="T:System.Byte" />, <see cref="T:System.Int16" />, <see cref="T:System.UInt16" />, <see cref="T:System.Int32" />, <see cref="T:System.UInt32" />, <see cref="T:System.Int64" />, <see cref="T:System.UInt64" />, <see cref="T:System.Single" />, <see cref="T:System.Double" />, <see cref="T:System.DateTime" />, <see cref="T:System.Boolean" />, <see cref="T:System.String" />, <see cref="T:System.Decimal" /> or an array of these data types, except <see cref="T:System.String" />, which is not allowed.</param>
         <summary>Adds a custom property to the <see cref="T:System.Windows.Ink.StrokeCollection" />.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -634,7 +634,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method returns an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that considers a <xref:System.Windows.Ink.Stroke> to be "hit" when the eraser path intersects it. This is useful for implementing features, such as the ability to erase part of a <xref:System.Windows.Ink.Stroke>. The <xref:System.Windows.Controls.InkCanvas> uses an <xref:System.Windows.Ink.IncrementalStrokeHitTester> when the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode>.  
+ The <xref:System.Windows.Ink.StrokeCollection.GetIncrementalStrokeHitTester%2A> method returns an <xref:System.Windows.Ink.IncrementalStrokeHitTester> that considers a <xref:System.Windows.Ink.Stroke> to be "hit" when the eraser path intersects it. This is useful for implementing features, such as the ability to erase part of a <xref:System.Windows.Ink.Stroke>. The <xref:System.Windows.Controls.InkCanvas> uses an <xref:System.Windows.Ink.IncrementalStrokeHitTester> when the <xref:System.Windows.Controls.InkCanvas.EditingMode%2A> property is set to <xref:System.Windows.Controls.InkCanvasEditingMode.EraseByPoint>.  
   
    
   

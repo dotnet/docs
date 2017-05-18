@@ -43,8 +43,7 @@
 ## Examples  
  The following example demonstrates how to use a <xref:System.Windows.Media.Animation.BooleanAnimationUsingKeyFrames> animation.  
   
- <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#BooleanAnimationUsingKeyFramesWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snip/CS/BooleanAnimationUsingKeyFramesExample.xaml#booleananimationusingkeyframeswholepage)]  -->
- <!-- TODO: review snippet reference [!code-xml[keyframes_ovw_snip#BooleanAnimationUsingKeyFramesWholePage](~/samples/snippets/xaml/VS_Snippets_Wpf/keyframes_ovw_snip/XAML/BooleanAnimationUsingKeyFramesExample.xaml#booleananimationusingkeyframeswholepage)]  -->  
+ [!code-xml[keyframes_ovw_snippet#BooleanAnimationUsingKeyFramesWholePage](~/samples/snippets/csharp/VS_Snippets_Wpf/keyframes_ovw_snippet/CS/BooleanAnimationUsingKeyFramesExample.xaml#booleananimationusingkeyframeswholepage)]   
   
  ]]></format>
     </remarks>
@@ -533,7 +532,7 @@
       <Docs>
         <summary>Gets a value that indicates whether access to the collection is synchronized (thread-safe).</summary>
         <value>
-          <see langword="true " />if access to the collection is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
+          <see langword="true" /> if access to the collection is synchronized (thread-safe); otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

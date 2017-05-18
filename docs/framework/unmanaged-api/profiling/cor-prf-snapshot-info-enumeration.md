@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_SNAPSHOT_INFO enumeration [.NET Framework profiling]"
 ms.assetid: a5906b2a-ad4a-4cc6-a421-2d7d8adf7468
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

@@ -8,6 +8,7 @@ ms.prod: .net
 ms.technology: devlang-csharp
 ms.devlang: csharp
 ms.assetid: 7402b29b-1093-456d-be4c-f60ecb8926bb
+redirect_url: /dotnet/articles/csharp/tutorials/index
 ---
 
 # 🔧 Asynchronous UI Programming

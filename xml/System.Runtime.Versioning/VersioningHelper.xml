@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime.Extensions</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -41,6 +45,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -81,6 +89,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Attributes>
         <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
@@ -110,9 +122,9 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ArgumentException">The values for <paramref name="from " />and <paramref name="to " />are invalid. The resource type in the <see cref="T:System.Runtime.Versioning.ResourceScope" /> enumeration is going from a more restrictive resource type to a more general resource type.</exception>
+        <exception cref="T:System.ArgumentException">The values for <paramref name="from" /> and <paramref name="to" /> are invalid. The resource type in the <see cref="T:System.Runtime.Versioning.ResourceScope" /> enumeration is going from a more restrictive resource type to a more general resource type.</exception>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="type " />is<see langword=" null" />.</exception>
+          <paramref name="type" /> is <see langword="null" />.</exception>
         <forInternalUseOnly />
       </Docs>
     </Member>

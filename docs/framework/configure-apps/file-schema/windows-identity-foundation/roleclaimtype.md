@@ -2,6 +2,7 @@
 title: "&lt;roleClaimType&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -28,16 +29,16 @@ Specifies the claim type that defines the role type claims in the collection of 
   
 ```  
 <system.identityModel>  
-  <identityConfiguration>  
-    <securityTokenHandlers>  
-      <add>  
-        <samlSecurityTokenRequirement>  
-          <roleClaimType value=xs:string>  
-          </roleClaimType>  
-        </samlSecurityTokenRequirement>  
-      </add>  
-    </securityTokenHandlers>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    <securityTokenHandlers>  
+      <add>  
+        <samlSecurityTokenRequirement>  
+          <roleClaimType value=xs:string>  
+          </roleClaimType>  
+        </samlSecurityTokenRequirement>  
+      </add>  
+    </securityTokenHandlers>  
+  </identityConfiguration>  
 </system.identityModel>  
 ```  
   

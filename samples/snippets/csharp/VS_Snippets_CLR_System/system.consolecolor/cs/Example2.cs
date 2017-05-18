@@ -12,4 +12,4 @@ public class Example
       }
    }
 }
-// <Snippet2>
+// </Snippet2>

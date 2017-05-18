@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLROnEventManager interface [.NET Framework hosting]"
 ms.assetid: 9e15a0c1-8ab6-43d0-ae28-6ec7a4edd913
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

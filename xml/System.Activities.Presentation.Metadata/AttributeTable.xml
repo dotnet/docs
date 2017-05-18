@@ -20,11 +20,6 @@
   
  The <xref:System.Activities.Presentation.Metadata.AttributeTable> is created using the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> and is used by the <xref:System.Activities.Presentation.Metadata.MetadataStore>.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_AttributeTable#1](WFD_AttributeTable#1)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>
@@ -79,6 +74,23 @@
           <paramref name="type" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetCustomAttributes">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities.Presentation</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns an enumeration of all attributes provided for the given arguments.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method never returns a null enumeration.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetCustomAttributes">
       <MemberSignature Language="C#" Value="public System.Collections.IEnumerable GetCustomAttributes (Type type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.IEnumerable GetCustomAttributes(class System.Type type) cil managed" />
@@ -207,22 +219,5 @@
           <paramref name="ownerType" /> or <paramref name="dp" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetCustomAttributes">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities.Presentation</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns an enumeration of all attributes provided for the given arguments.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method never returns a null enumeration.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -37,7 +37,7 @@ This sample demonstrates how to extend the WCF REST programming model to support
   
 #### To run the sample  
   
-1.  Open the solution for the Form Post Sample. When launching [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], you must run as an administrator to execute the sample successfully. Do this by right-clicking the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] icon and choosing “Run as Administrator” from the context menu.  
+1.  Open the solution for the Form Post Sample. When launching [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)], you must run as an administrator to execute the sample successfully. Do this by right-clicking the [!INCLUDE[vs_current_long](../../../../includes/vs-current-long-md.md)] icon and choosing "Run as Administrator" from the context menu.  
   
 2.  Press CTRL+SHIFT+B to build the solution and then press CTRL+F5 to run the console application FormPost project.  
   

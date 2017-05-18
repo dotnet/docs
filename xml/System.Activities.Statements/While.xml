@@ -29,6 +29,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Activities</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.While" /> activity.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following code sample demonstrates creating a <xref:System.Activities.Statements.While> activity. This example is from the [Content-Based Correlation](~/docs/framework/windows-workflow-foundation/samples/content-based-correlation.md) sample.  
+  
+ [!code-csharp[wfs_ContentBasedCorrelation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_contentbasedcorrelation/cs/program.cs#1)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public While ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor() cil managed" />
@@ -242,24 +261,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Activities</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a new instance of the <see cref="T:System.Activities.Statements.While" /> activity.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following code sample demonstrates creating a <xref:System.Activities.Statements.While> activity. This example is from the [Content-Based Correlation](~/docs/framework/windows-workflow-foundation/samples/content-based-correlation.md) sample.  
-  
- [!code-csharp[wfs_ContentBasedCorrelation#1](~/samples/snippets/csharp/VS_Snippets_CFX/wfs_contentbasedcorrelation/cs/program.cs#1)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

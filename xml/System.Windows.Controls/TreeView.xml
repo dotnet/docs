@@ -263,21 +263,21 @@
 ## Remarks  
  This implementation sets <xref:System.Windows.RoutedEventArgs.Handled%2A> to `true` if one of the following keys is pressed together with the CTRL key:  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.End>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Home>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Left>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Right>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Down>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.Up>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.PageDown>  
   
--   <xref:System.Windows.Input.Key>  
+-   <xref:System.Windows.Input.Key.PageUp>  
   
  ]]></format>
         </remarks>

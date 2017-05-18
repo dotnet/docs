@@ -50,24 +50,24 @@
   
 |Bullet style|Description|  
 |------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|Not set.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A number.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A lowercase letter.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|An uppercase letter.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A lowercase Roman numeral.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|An uppercase Roman numeral.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A filled circle.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|An empty circle.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A filled square.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A custom image.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.NotSet>|Not set.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.Numbered>|A number.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.LowerAlpha>|A lowercase letter.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.UpperAlpha>|An uppercase letter.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.LowerRoman>|A lowercase Roman numeral.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.UpperRoman>|An uppercase Roman numeral.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.Disc>|A filled circle.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.Circle>|An empty circle.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.Square>|A filled square.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.CustomImage>|A custom image.|  
   
- Use the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property to specify the value that starts the numbering of list items in an ordered <xref:System.Web.UI.WebControls.BulletedList> control. The value that is assigned to the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property is ignored, if the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property is set to the <xref:System.Web.UI.WebControls.BulletStyle>, <xref:System.Web.UI.WebControls.BulletStyle>, <xref:System.Web.UI.WebControls.BulletStyle>, or <xref:System.Web.UI.WebControls.BulletStyle> field. If you set the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property to the value of <xref:System.Web.UI.WebControls.BulletStyle> to specify a custom image for the bullet, you must set the <xref:System.Web.UI.WebControls.BulletedList.BulletImageUrl%2A> property also to specify the location of the image file.  
+ Use the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property to specify the value that starts the numbering of list items in an ordered <xref:System.Web.UI.WebControls.BulletedList> control. The value that is assigned to the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property is ignored, if the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property is set to the <xref:System.Web.UI.WebControls.BulletStyle.Disc>, <xref:System.Web.UI.WebControls.BulletStyle.Square>, <xref:System.Web.UI.WebControls.BulletStyle.Circle>, or <xref:System.Web.UI.WebControls.BulletStyle.CustomImage> field. If you set the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property to the value of <xref:System.Web.UI.WebControls.BulletStyle.CustomImage> to specify a custom image for the bullet, you must set the <xref:System.Web.UI.WebControls.BulletedList.BulletImageUrl%2A> property also to specify the location of the image file.  
   
- To specify the display behavior of the list items in a <xref:System.Web.UI.WebControls.BulletedList>, set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property to one of the values that are defined by the <xref:System.Web.UI.WebControls.BulletedListDisplayMode> enumeration. The defined display behaviors are <xref:System.Web.UI.WebControls.BulletedListDisplayMode>, <xref:System.Web.UI.WebControls.BulletedListDisplayMode>, and <xref:System.Web.UI.WebControls.BulletedListDisplayMode>.  
+ To specify the display behavior of the list items in a <xref:System.Web.UI.WebControls.BulletedList>, set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property to one of the values that are defined by the <xref:System.Web.UI.WebControls.BulletedListDisplayMode> enumeration. The defined display behaviors are <xref:System.Web.UI.WebControls.BulletedListDisplayMode.Text>, <xref:System.Web.UI.WebControls.BulletedListDisplayMode.HyperLink>, and <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>.  
   
  When a hyperlink is clicked, it navigates to a URL. Use the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property to specify the URL that a hyperlink navigates to. Use the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property to specify the frame or window that displays the Web page that is navigated to when a hyperlink is clicked.  
   
- When the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property is set to <xref:System.Web.UI.WebControls.BulletedListDisplayMode>, the <xref:System.Web.UI.WebControls.BulletedList> control displays list items as links that post back to the server when clicked. To programmatically control the actions that are performed when a link button is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.BulletedList.Click> event. Note that the <xref:System.Web.UI.WebControls.BulletedList.SelectedIndex%2A> and <xref:System.Web.UI.WebControls.BulletedList.SelectedItem%2A> properties are inherited from the <xref:System.Web.UI.WebControls.ListControl> class and are not applicable to the <xref:System.Web.UI.WebControls.BulletedList> control. Use the event data of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class to determine the index of the link button in a <xref:System.Web.UI.WebControls.BulletedList> that was clicked.  
+ When the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property is set to <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>, the <xref:System.Web.UI.WebControls.BulletedList> control displays list items as links that post back to the server when clicked. To programmatically control the actions that are performed when a link button is clicked, provide an event handler for the <xref:System.Web.UI.WebControls.BulletedList.Click> event. Note that the <xref:System.Web.UI.WebControls.BulletedList.SelectedIndex%2A> and <xref:System.Web.UI.WebControls.BulletedList.SelectedItem%2A> properties are inherited from the <xref:System.Web.UI.WebControls.ListControl> class and are not applicable to the <xref:System.Web.UI.WebControls.BulletedList> control. Use the event data of the <xref:System.Web.UI.WebControls.BulletedListEventArgs> class to determine the index of the link button in a <xref:System.Web.UI.WebControls.BulletedList> that was clicked.  
   
  The <xref:System.Web.UI.WebControls.BulletedList> control also supports data binding. To bind the <xref:System.Web.UI.WebControls.BulletedList> to a data source, you can use any of the provided data-binding mechanisms. For more information, see [Binding to Databases](http://msdn.microsoft.com/en-us/ab7b2846-975b-4057-a948-45527497c742).  
   
@@ -297,7 +297,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.BulletedList.BulletImageUrl%2A> property to specify the path to an image to display as each bullet in a <xref:System.Web.UI.WebControls.BulletedList> control. To specify a custom image for the bullets, you must also set the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property to the value <xref:System.Web.UI.WebControls.BulletStyle>.  
+ Use the <xref:System.Web.UI.WebControls.BulletedList.BulletImageUrl%2A> property to specify the path to an image to display as each bullet in a <xref:System.Web.UI.WebControls.BulletedList> control. To specify a custom image for the bullets, you must also set the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property to the value <xref:System.Web.UI.WebControls.BulletStyle.CustomImage>.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.BulletedList> control does not support the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property because the bullets are inherently decorative and do not provide additional information that needs to be conveyed via assistive technology. However, if you want to use a custom image to convey a concept to the user, you should add additional text to each of the bulleted list items or use a control that allows you to specify alternate text for each image.  
@@ -306,29 +306,21 @@
   
  The following code example shows a relative path to an image file:  
   
- [C#]  
-  
-```  
+```csharp  
 \\Images\\image1.jpg  
 ```  
   
- [Visual Basic]  
-  
-```  
+```vb  
 "Images\image1.jpg"  
 ```  
   
  The following code example shows an absolute path to an image file:  
   
- [C#]  
-  
-```  
+```csharp  
 "c:\\MyImagesDir\\image1.jpg"   
 ```  
   
- [Visual Basic]  
-  
-```  
+```vb  
 "c"\MyImagesDir\image1.jpg"  
 ```  
   
@@ -374,18 +366,18 @@
   
 |Bullet style|Description|  
 |------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|Not set.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A number.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A lowercase letter.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|An uppercase letter.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A lowercase Roman numeral.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|An uppercase Roman numeral.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A filled circle.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|An empty circle.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A filled square.|  
-|<xref:System.Web.UI.WebControls.BulletStyle>|A custom image.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.NotSet>|Not set.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.Numbered>|A number.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.LowerAlpha>|A lowercase letter.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.UpperAlpha>|An uppercase letter.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.LowerRoman>|A lowercase Roman numeral.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.UpperRoman>|An uppercase Roman numeral.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.Disc>|A filled circle.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.Circle>|An empty circle.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.Square>|A filled square.|  
+|<xref:System.Web.UI.WebControls.BulletStyle.CustomImage>|A custom image.|  
   
- Specifying the <xref:System.Web.UI.WebControls.BulletStyle> value allows you to supply your own image for the bullet. If you specify the <xref:System.Web.UI.WebControls.BulletStyle> value, you must also set the <xref:System.Web.UI.WebControls.BulletedList.BulletImageUrl%2A> property to the URL of the custom image to use.  
+ Specifying the <xref:System.Web.UI.WebControls.BulletStyle.CustomImage> value allows you to supply your own image for the bullet. If you specify the <xref:System.Web.UI.WebControls.BulletStyle.CustomImage> value, you must also set the <xref:System.Web.UI.WebControls.BulletedList.BulletImageUrl%2A> property to the URL of the custom image to use.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.BulletedList> control does not support the <xref:System.Web.UI.WebControls.Image.AlternateText%2A> property because the bullets are inherently decorative and do not provide additional information that needs to be conveyed via assistive technology. However, if you want to use a custom image to convey a concept to the user, you should add additional text to each of the bulleted list items or use a control that allows you to specify alternate text for each image.  
@@ -423,7 +415,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a list item in a <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To enable list items in a <xref:System.Web.UI.WebControls.BulletedList> control to raise the <xref:System.Web.UI.WebControls.BulletedList.Click> event, the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property first must be set to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode>.  
+ The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a list item in a <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To enable list items in a <xref:System.Web.UI.WebControls.BulletedList> control to raise the <xref:System.Web.UI.WebControls.BulletedList.Click> event, the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property first must be set to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>.  
   
  Raising an event invokes the event handler through a delegate. For more information about handling events, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -492,13 +484,13 @@
   
 |Value|Displayed as|  
 |-----------|------------------|  
-|<xref:System.Web.UI.WebControls.BulletedListDisplayMode>|Text.|  
-|<xref:System.Web.UI.WebControls.BulletedListDisplayMode>|Hyperlinks.|  
-|<xref:System.Web.UI.WebControls.BulletedListDisplayMode>|Link buttons.|  
+|<xref:System.Web.UI.WebControls.BulletedListDisplayMode.Text>|Text.|  
+|<xref:System.Web.UI.WebControls.BulletedListDisplayMode.HyperLink>|Hyperlinks.|  
+|<xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>|Link buttons.|  
   
- The <xref:System.Web.UI.WebControls.BulletedListDisplayMode> value allows you to display list content as hyperlinks. When clicked, a hyperlink navigates to a URL. Use the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property to specify the URL that a hyperlink navigates to.  
+ The <xref:System.Web.UI.WebControls.BulletedListDisplayMode.HyperLink> value allows you to display list content as hyperlinks. When clicked, a hyperlink navigates to a URL. Use the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property to specify the URL that a hyperlink navigates to.  
   
- The <xref:System.Web.UI.WebControls.BulletedListDisplayMode> field allows you to display list content as links. Use the <xref:System.Web.UI.WebControls.BulletedList.Click?displayProperty=fullName> event to post back to the server when a link button is clicked.  
+ The <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton> field allows you to display list content as links. Use the <xref:System.Web.UI.WebControls.BulletedList.Click?displayProperty=fullName> event to post back to the server when a link button is clicked.  
   
  The value of this property is stored in view state.  
   
@@ -539,7 +531,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property to specify the value that starts the numbering of list items in an ordered <xref:System.Web.UI.WebControls.BulletedList> control. The value that is assigned to the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property is ignored, if the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property is set to the <xref:System.Web.UI.WebControls.BulletStyle>, <xref:System.Web.UI.WebControls.BulletStyle>, <xref:System.Web.UI.WebControls.BulletStyle>, or <xref:System.Web.UI.WebControls.BulletStyle> values. Although the value of the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property is an integer, it does not always cause a bullet to render as a number. For example, if you set the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property to `4` and set the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property to the value <xref:System.Web.UI.WebControls.BulletStyle>, the first bullet number will render as a lowercase d.  
+ Use the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property to specify the value that starts the numbering of list items in an ordered <xref:System.Web.UI.WebControls.BulletedList> control. The value that is assigned to the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property is ignored, if the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property is set to the <xref:System.Web.UI.WebControls.BulletStyle.Disc>, <xref:System.Web.UI.WebControls.BulletStyle.Square>, <xref:System.Web.UI.WebControls.BulletStyle.Circle>, or <xref:System.Web.UI.WebControls.BulletStyle.CustomImage> values. Although the value of the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property is an integer, it does not always cause a bullet to render as a number. For example, if you set the <xref:System.Web.UI.WebControls.BulletedList.FirstBulletNumber%2A> property to `4` and set the <xref:System.Web.UI.WebControls.BulletedList.BulletStyle%2A> property to the value <xref:System.Web.UI.WebControls.BulletStyle.LowerAlpha>, the first bullet number will render as a lowercase d.  
   
  The value of this property is stored in view state.  
   
@@ -580,7 +572,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a list item in the <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To enable list items in a <xref:System.Web.UI.WebControls.BulletedList> control to raise the <xref:System.Web.UI.WebControls.BulletedList.Click> event, you must first set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode>.  
+ The <xref:System.Web.UI.WebControls.BulletedList.Click> event is raised when a list item in the <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To enable list items in a <xref:System.Web.UI.WebControls.BulletedList> control to raise the <xref:System.Web.UI.WebControls.BulletedList.Click> event, you must first set the <xref:System.Web.UI.WebControls.BulletedList.DisplayMode%2A> property to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode.LinkButton>.  
   
  Raising an event invokes the event handler through a delegate. For more information, see [NIB: Consuming Events](http://msdn.microsoft.com/en-us/01e4f1bc-e55e-413f-98c7-6588493e5f67).  
   
@@ -958,7 +950,7 @@
 > [!NOTE]
 >  Check your browser documentation to determine if the `_search` value is supported.  For example, Microsoft Internet Explorer 5.0 and later support the `_search` target value.  
   
- Use the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property to specify the frame or window that displays the Web page that is linked to when a hyperlink in a <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To display the content of the list items as hyperlinks in a <xref:System.Web.UI.WebControls.BulletedList> control, set the <xref:System.Web.UI.WebControls.BulletedListDisplayMode> property to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode>. Then, set the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property of each list item to the URL of the Web page to navigate to.  
+ Use the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property to specify the frame or window that displays the Web page that is linked to when a hyperlink in a <xref:System.Web.UI.WebControls.BulletedList> control is clicked. To display the content of the list items as hyperlinks in a <xref:System.Web.UI.WebControls.BulletedList> control, set the <xref:System.Web.UI.WebControls.BulletedListDisplayMode> property to the value <xref:System.Web.UI.WebControls.BulletedListDisplayMode.HyperLink>. Then, set the <xref:System.Web.UI.WebControls.ListItem.Value%2A> property of each list item to the URL of the Web page to navigate to.  
   
  If the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property is not set, the browser or window with focus refreshes when the hyperlink is clicked.  
   
@@ -972,7 +964,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.BulletedList> control and set the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property. When the user selects the <xref:System.Web.UI.WebControls.BulletedListDisplayMode> display mode from the list box, the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property is set to `_blank` to display the linked page in a new browser window.  
+ The following code example demonstrates how to create a <xref:System.Web.UI.WebControls.BulletedList> control and set the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property. When the user selects the <xref:System.Web.UI.WebControls.BulletedListDisplayMode.HyperLink> display mode from the list box, the <xref:System.Web.UI.WebControls.BulletedList.Target%2A> property is set to `_blank` to display the linked page in a new browser window.  
   
  <!-- TODO: review snippet reference [!code-csharp[BulletedListDisplaymode#1](~/samples/snippets/csharp/VS_Snippets_WebNet/BulletedListDisplayMode/CS/bulletedlistdisplaymodecs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[BulletedListDisplaymode#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/BulletedListDisplayMode/VB/bulletedlistdisplaymodevb.aspx#1)]  -->  

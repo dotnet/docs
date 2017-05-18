@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetReaderFromCallback method [.NET Framework debugging]"
   - "ISymUnmanagedBinder3::GetReaderFromCallback method [.NET Framework debugging]"
 ms.assetid: 4ef83bd2-3d8e-499e-8a12-d9d6fd6ced30
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

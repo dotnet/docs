@@ -16,6 +16,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <TypeParameters>
     <TypeParameter Name="TResult" />
   </TypeParameters>
@@ -86,6 +90,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a <see cref="T:System.Threading.Tasks.TaskFactory`1" /> instance with the default configuration.</summary>
@@ -93,7 +101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions.None>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions.None>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
   
  ]]></format>
         </remarks>
@@ -118,6 +126,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
       </Parameters>
@@ -128,7 +140,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ This constructor creates a <xref:System.Threading.Tasks.TaskFactory%601> instance with a default configuration. The <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions.None>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions.None>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
   
  ]]></format>
         </remarks>
@@ -153,6 +165,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="scheduler" Type="System.Threading.Tasks.TaskScheduler" />
       </Parameters>
@@ -163,7 +179,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to `scheduler`, unless it's `null`, in which case the property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
+ With this constructor, the <xref:System.Threading.Tasks.TaskCreationOptions> property is initialized to <xref:System.Threading.Tasks.TaskCreationOptions.None>, the <xref:System.Threading.Tasks.TaskContinuationOptions> property is initialized to <xref:System.Threading.Tasks.TaskContinuationOptions.None>, and the <xref:System.Threading.Tasks.TaskScheduler> property is initialized to `scheduler`, unless it's `null`, in which case the property is initialized to the current scheduler (see <xref:System.Threading.Tasks.TaskScheduler.Current%2A>).  
   
  ]]></format>
         </remarks>
@@ -187,6 +203,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="creationOptions" Type="System.Threading.Tasks.TaskCreationOptions" />
@@ -226,6 +246,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" />
@@ -270,6 +294,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.CancellationToken</ReturnType>
       </ReturnValue>
@@ -304,6 +332,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskContinuationOptions</ReturnType>
@@ -340,6 +372,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -356,7 +392,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -389,6 +425,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -407,7 +447,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -415,7 +455,7 @@
   
  -or-  
   
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
   
  -or-  
@@ -443,6 +483,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -461,7 +505,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -494,6 +538,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -516,7 +564,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -536,7 +584,7 @@
   
  -or-  
   
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAll&lt;TAntecedentResult&gt;">
@@ -558,6 +606,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -578,7 +630,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -610,6 +662,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -632,7 +688,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -640,7 +696,7 @@
   
  -or-  
   
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
   
  -or-  
@@ -668,6 +724,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -690,7 +750,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -723,6 +783,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -749,7 +813,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -768,7 +832,7 @@
   
  -or-  
   
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny">
@@ -790,6 +854,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -806,7 +874,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -838,6 +906,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -856,7 +928,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -864,7 +936,7 @@
   
  -or-  
   
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is null.  
   
  -or-  
@@ -896,6 +968,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -914,7 +990,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -951,6 +1027,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -973,7 +1053,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -996,7 +1076,7 @@
   
  -or-  
   
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="ContinueWhenAny&lt;TAntecedentResult&gt;">
@@ -1018,6 +1098,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -1038,7 +1122,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -1074,6 +1158,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -1096,7 +1184,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -1104,7 +1192,7 @@
   
  -or-  
   
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="tasks" /> array is <see langword="null" />.  
   
  -or-  
@@ -1136,6 +1224,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -1158,7 +1250,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -1195,6 +1287,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -1221,7 +1317,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus>, <xref:System.Threading.Tasks.TaskStatus>, or <xref:System.Threading.Tasks.TaskStatus> states.  
+ After completion, a task is in one of these states: <xref:System.Threading.Tasks.TaskStatus.RanToCompletion>, <xref:System.Threading.Tasks.TaskStatus.Faulted>, or <xref:System.Threading.Tasks.TaskStatus.Canceled> states.  
   
  ]]></format>
         </remarks>
@@ -1244,7 +1340,7 @@
   
  -or-  
   
- The <see cref="T:System.Threading.CancellationTokenSource" /> that created<paramref name=" cancellationToken" /> has already been disposed.</exception>
+ The <see cref="T:System.Threading.CancellationTokenSource" /> that created <paramref name="cancellationToken" /> has already been disposed.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreationOptions">
@@ -1265,6 +1361,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskCreationOptions</ReturnType>
@@ -1300,6 +1400,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1339,6 +1443,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1388,6 +1496,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -1429,6 +1541,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1481,6 +1597,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -1528,6 +1648,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1582,6 +1706,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1640,6 +1768,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -1697,6 +1829,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1759,6 +1895,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -1820,6 +1960,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1886,6 +2030,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.TaskScheduler</ReturnType>
       </ReturnValue>
@@ -1922,6 +2070,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -1964,6 +2116,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2009,6 +2165,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -2031,7 +2191,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">The cancellation token source that created<paramref name="cancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ObjectDisposedException">The cancellation token source that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
@@ -2053,6 +2213,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2099,6 +2263,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -2123,7 +2291,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">The cancellation token source that created<paramref name="cancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ObjectDisposedException">The cancellation token source that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.</exception>
       </Docs>
     </Member>
@@ -2145,6 +2313,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2193,6 +2365,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
       </ReturnValue>
@@ -2219,7 +2395,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">The cancellation token source that created<paramref name="cancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ObjectDisposedException">The cancellation token source that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.  
   
  -or-  
@@ -2246,6 +2422,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Threading.Tasks.Task&lt;TResult&gt;</ReturnType>
@@ -2275,7 +2455,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.ObjectDisposedException">The cancellation token source that created<paramref name="cancellationToken" /> has already been disposed.</exception>
+        <exception cref="T:System.ObjectDisposedException">The cancellation token source that created <paramref name="cancellationToken" /> has already been disposed.</exception>
         <exception cref="T:System.ArgumentNullException">The <paramref name="function" /> argument is <see langword="null" />.  
   
  -or-  

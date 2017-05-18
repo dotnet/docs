@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.AccessControl</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -28,6 +29,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -57,6 +59,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -93,6 +96,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -124,6 +128,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -154,6 +159,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -195,6 +201,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -234,6 +241,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="RemoveAccess">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Removes the specified access control rule from the current <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Access removal is accomplished by using a complex algorithm that might add ACEs in addition to removing them.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="RemoveAccess">
       <MemberSignature Language="C#" Value="public bool RemoveAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool RemoveAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
@@ -242,6 +266,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -273,6 +298,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -316,6 +342,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -365,6 +392,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -395,6 +423,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -429,6 +458,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -461,6 +491,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SetAccess">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.AccessControl</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Sets the specified access control for the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These methods remove all existing Access Control Entries (ACEs) that match both specified <xref:System.Security.Principal.SecurityIdentifier> object and the specified access qualifier (allow or deny).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SetAccess">
       <MemberSignature Language="C#" Value="public void SetAccess (System.Security.AccessControl.AccessControlType accessType, System.Security.Principal.SecurityIdentifier sid, System.Security.AccessControl.ObjectAccessRule rule);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void SetAccess(valuetype System.Security.AccessControl.AccessControlType accessType, class System.Security.Principal.SecurityIdentifier sid, class System.Security.AccessControl.ObjectAccessRule rule) cil managed" />
@@ -469,6 +516,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -499,6 +547,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -540,6 +589,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.AccessControl</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -579,39 +629,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="RemoveAccess">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Removes the specified access control rule from the current <see cref="T:System.Security.AccessControl.DiscretionaryAcl" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Access removal is accomplished by using a complex algorithm that might add ACEs in addition to removing them.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SetAccess">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.AccessControl</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Sets the specified access control for the specified <see cref="T:System.Security.Principal.SecurityIdentifier" /> object.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These methods remove all existing Access Control Entries (ACEs) that match both specified <xref:System.Security.Principal.SecurityIdentifier> object and the specified access qualifier (allow or deny).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

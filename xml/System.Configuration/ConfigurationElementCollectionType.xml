@@ -6,6 +6,10 @@
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -17,7 +21,7 @@
 ## Remarks  
  This enumeration contains all the possible return values for the <xref:System.Configuration.ConfigurationElementCollection.CollectionType%2A> property. It is used by the configuration system during run time to correctly merge configuration settings. It is also used when creating a custom class that extends <xref:System.Configuration.ConfigurationElementCollection>.  
   
- By default, the type of a <xref:System.Configuration.ConfigurationElementCollection> object is AddRemoveClearMap. If a BasicMap is required, override the <xref:System.Configuration.ConfigurationElementCollectionType> property when extending <xref:System.Configuration.ConfigurationElementCollection>.  
+ By default, the type of a <xref:System.Configuration.ConfigurationElementCollection> object is AddRemoveClearMap. If a BasicMap is required, override the <xref:System.Configuration.ConfigurationElementCollectionType.AddRemoveClearMap> property when extending <xref:System.Configuration.ConfigurationElementCollectionType.BasicMap>.  
   
  ]]></format>
     </remarks>
@@ -30,6 +34,10 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -48,6 +56,10 @@
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
@@ -64,6 +76,10 @@
         <AssemblyName>System.Configuration</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Configuration.ConfigurationElementCollectionType</ReturnType>
       </ReturnValue>
@@ -78,6 +94,10 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

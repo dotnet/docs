@@ -27,7 +27,7 @@
    
   
 ## Examples  
- The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. The example uses the RightAlign member of the <xref:System.Windows.Forms.MessageBoxOptions> enumeration to align the text to the right edge of the dialog box. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
+ The following code example demonstrates how to display a <xref:System.Windows.Forms.MessageBox> with the options supported by this overload of <xref:System.Windows.Forms.MessageBox.Show%2A>. After verifying that a string variable, `ServerName`, is empty, the example displays a <xref:System.Windows.Forms.MessageBox> with a question box icon, offering the user the option to cancel the operation. The example uses the RightAlign member of the <xref:System.Windows.Forms.MessageBoxOptions.RightAlign> enumeration to align the text to the right edge of the dialog box. If the <xref:System.Windows.Forms.MessageBox.Show%2A> method's return value evaluates to <xref:System.Windows.Forms.DialogResult>, the form that displayed the <xref:System.Windows.Forms.MessageBox> is closed.  
   
  [!code-cpp[MessageBox.Show Variations#2](~/samples/snippets/cpp/VS_Snippets_Winforms/MessageBox.Show Variations/CPP/form1.cpp#2)]
  [!code-csharp[MessageBox.Show Variations#2](~/samples/snippets/csharp/VS_Snippets_Winforms/MessageBox.Show Variations/CS/form1.cs#2)]
@@ -57,7 +57,7 @@
 ## Remarks  
  This constant is the same as `ServiceNotification` except that the system displays the message box only on the default desktop of the interactive window station  
   
- DefaultDesktopOnly will cause the application that raised the <xref:System.Windows.Forms.MessageBox> to lose focus. The <xref:System.Windows.Forms.MessageBox> that is displayed will not use visual styles. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
+ DefaultDesktopOnly will cause the application that raised the <xref:System.Windows.Forms.MessageBoxOptions.DefaultDesktopOnly> to lose focus. The <xref:System.Windows.Forms.MessageBox> that is displayed will not use visual styles. For more information, see [Rendering Controls with Visual Styles](~/docs/framework/winforms/controls/rendering-controls-with-visual-styles.md).  
   
  ]]></format>
         </remarks>

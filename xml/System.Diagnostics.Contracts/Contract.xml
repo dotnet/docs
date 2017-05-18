@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.0.3.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -44,6 +45,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -92,6 +94,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -142,6 +145,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -190,6 +194,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -242,6 +247,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -286,6 +292,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -330,6 +337,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -387,6 +395,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -442,6 +451,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -501,6 +511,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -564,6 +575,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -605,7 +617,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="predicate" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="toExclusive " />is less than <paramref name="fromInclusive" />.</exception>
+          <paramref name="toExclusive" /> is less than <paramref name="fromInclusive" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Exists&lt;T&gt;">
@@ -616,6 +628,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -661,6 +674,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -710,7 +724,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="predicate" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="toExclusive " />is less than <paramref name="fromInclusive" />.</exception>
+          <paramref name="toExclusive" /> is less than <paramref name="fromInclusive" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ForAll&lt;T&gt;">
@@ -721,6 +735,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -776,6 +791,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -829,6 +845,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -884,6 +901,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -939,6 +957,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -989,6 +1008,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1041,6 +1061,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1099,6 +1120,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1159,6 +1181,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1211,6 +1234,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.Contracts</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.3.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>

@@ -22,7 +22,7 @@
 ## Remarks  
  This enumeration is used by members such as the constructor for ventArgs.  
   
- This enumeration is used to specify which user interface cues will be displayed or changed. For example, when the user presses the ALT key, the keyboard shortcuts on the menu are displayed by underlining the appropriate character. The bitwise combination of <xref:System.Windows.Forms.UICues> for this example would be ShowKeyboard and ChangeKeyboard.  
+ This enumeration is used to specify which user interface cues will be displayed or changed. For example, when the user presses the ALT key, the keyboard shortcuts on the menu are displayed by underlining the appropriate character. The bitwise combination of <xref:System.Windows.Forms.UICuesEventArgs> for this example would be ShowKeyboard and ChangeKeyboard.  
   
  ]]></format>
     </remarks>

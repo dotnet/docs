@@ -7,6 +7,7 @@
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -77,6 +78,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -107,6 +109,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -120,52 +126,35 @@
         <summary>When overridden in a derived class, compares two objects and returns an indication of their relative sort order.</summary>
         <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="x" /> precedes  <paramref name="y" /> in the sort order.  
+ </term><description><paramref name="x" /> precedes  <paramref name="y" /> in the sort order.  
   
  -or-  
   
  <paramref name="x" /> is <see langword="null" /> and <paramref name="y" /> is not <see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="x" /> is equal to <paramref name="y" />.  
+ </term><description><paramref name="x" /> is equal to <paramref name="y" />.  
   
  -or-  
   
  <paramref name="x" /> and <paramref name="y" /> are both <see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="x" /> follows <paramref name="y" /> in the sort order.  
+ </term><description><paramref name="x" /> follows <paramref name="y" /> in the sort order.  
   
  -or-  
   
  <paramref name="y" /> is <see langword="null" /> and <paramref name="x" /> is not <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -187,6 +176,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -210,52 +200,35 @@
         <summary>When overridden in a derived class, compares two strings and returns an indication of their relative sort order.</summary>
         <returns>A signed integer that indicates the relative values of <paramref name="x" /> and <paramref name="y" />, as shown in the following table.  
   
- <list type="table">  
-<listheader>  
-<term> Value  
+ <list type="table"><listheader><term> Value  
   
- </term>  
-<description> Meaning  
+ </term><description> Meaning  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> <paramref name="x" /> precedes <paramref name="y" /> in the sort order.  
+ </term><description><paramref name="x" /> precedes <paramref name="y" /> in the sort order.  
   
  -or-  
   
  <paramref name="x" /> is <see langword="null" /> and <paramref name="y" /> is not <see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> <paramref name="x" /> is equal to <paramref name="y" />.  
+ </term><description><paramref name="x" /> is equal to <paramref name="y" />.  
   
  -or-  
   
  <paramref name="x" /> and <paramref name="y" /> are both <see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> <paramref name="x" /> follows <paramref name="y" /> in the sort order.  
+ </term><description><paramref name="x" /> follows <paramref name="y" /> in the sort order.  
   
  -or-  
   
  <paramref name="y" /> is <see langword="null" /> and <paramref name="x" /> is not <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -279,6 +252,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.StringComparer</ReturnType>
@@ -319,6 +296,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -375,6 +353,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -426,6 +405,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -459,6 +442,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -492,6 +476,28 @@
         </remarks>
       </Docs>
     </Member>
+    <Member MemberName="FromComparison">
+      <MemberSignature Language="C#" Value="public static StringComparer FromComparison (StringComparison comparisonType);" />
+      <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.StringComparer FromComparison(valuetype System.StringComparison comparisonType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:System.StringComparer.FromComparison(System.StringComparison)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.StringComparer</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="comparisonType" Type="System.StringComparison" />
+      </Parameters>
+      <Docs>
+        <param name="comparisonType">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
     <Member MemberName="GetHashCode">
       <MemberSignature Language="C#" Value="public int GetHashCode (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance int32 GetHashCode(object obj) cil managed" />
@@ -505,6 +511,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
@@ -526,7 +536,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="  &#xA;            T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
+        <exception cref="T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
       </Docs>
@@ -541,6 +551,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -571,7 +582,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="  &#xA;            T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
+        <exception cref="T:System.ArgumentException">Not enough memory is available to allocate the buffer that is required to compute the hash code.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="obj" /> is <see langword="null" />.</exception>
       </Docs>
@@ -589,6 +600,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.StringComparer</ReturnType>
@@ -633,6 +648,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Extensions</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.StringComparer</ReturnType>
       </ReturnValue>
@@ -663,6 +682,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -710,6 +730,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -783,6 +804,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -809,6 +831,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>

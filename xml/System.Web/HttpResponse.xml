@@ -732,7 +732,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The values for `Private`, `Public`, and `No-Cache` are strings and must be enclosed in quotation marks (" "). If the <xref:System.Web.HttpResponse.CacheControl%2A> property is set to a value that does not match one of the <xref:System.Web.HttpCacheability> enumeration values, then an <xref:System.ArgumentException> is thrown. If the <xref:System.Web.HttpResponse.CacheControl%2A> property is not set, the cacheability of the response is set to <xref:System.Web.HttpCacheability>.  
+ The values for `Private`, `Public`, and `No-Cache` are strings and must be enclosed in quotation marks (" "). If the <xref:System.Web.HttpResponse.CacheControl%2A> property is set to a value that does not match one of the <xref:System.Web.HttpCacheability> enumeration values, then an <xref:System.ArgumentException> is thrown. If the <xref:System.Web.HttpResponse.CacheControl%2A> property is not set, the cacheability of the response is set to <xref:System.Web.HttpCacheability.NoCache>.  
   
  The `CacheControl`, <xref:System.Web.HttpResponse.Expires%2A>, and <xref:System.Web.HttpResponse.ExpiresAbsolute%2A> properties have been deprecated. Instead, the methods of the <xref:System.Web.HttpCachePolicy> class are available through the <xref:System.Web.HttpResponse.Cache%2A> intrinsic object to control the Internet Information Services (IIS) output cache and client caches.  
   
@@ -1447,7 +1447,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example is an ASP.NET page that contains a <xref:System.Web.UI.WebControls.TextBox> control that has its <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property set to <xref:System.Web.UI.WebControls.TextBoxMode>. The page's code takes the text that a user enters in the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A>, uses the <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method to HTML encode it, and the <xref:System.Web.HttpResponse.Output%2A> property to display the encoded string to the page.  
+ The following example is an ASP.NET page that contains a <xref:System.Web.UI.WebControls.TextBox> control that has its <xref:System.Web.UI.WebControls.TextBox.TextMode%2A> property set to <xref:System.Web.UI.WebControls.TextBoxMode.MultiLine>. The page's code takes the text that a user enters in the <xref:System.Web.UI.WebControls.TextBox.TextMode%2A>, uses the <xref:System.Web.HttpServerUtility.HtmlEncode%2A> method to HTML encode it, and the <xref:System.Web.HttpResponse.Output%2A> property to display the encoded string to the page.  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.HttpResponse.Output_Sample#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.HttpResponse.Output_Sample/CS/responseoutputcs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.HttpResponse.Output_Sample#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.HttpResponse.Output_Sample/VB/responseoutputvb.aspx#1)]  -->  
@@ -2369,7 +2369,7 @@ Response.RedirectToRoutePermanent("Product",
       </Parameters>
       <Docs>
         <param name="cookie">The cookie in the collection to be updated.</param>
-        <summary>Because the <b>HttpResponse.SetCookie</b> method is intended for internal use only, you should not call it in your code. Instead, you can call the <b>HttpResponse.Cookies.Set</b> method, as the following example shows.<br/>Updates an existing cookie in the cookie collection.</summary>
+        <summary>Because the <b>HttpResponse.SetCookie</b> method is intended for internal use only, you should not call it in your code. Instead, you can call the <b>HttpResponse.Cookies.Set</b> method, as the following example shows.<br /> Updates an existing cookie in the cookie collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

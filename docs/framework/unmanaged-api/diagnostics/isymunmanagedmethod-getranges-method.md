@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedMethod::GetRanges method [.NET Framework debugging]"
   - "GetRanges method [.NET Framework debugging]"
 ms.assetid: a85283d8-379c-417a-9736-ddeeef9bcf50
+topic_type: 
+  - "apiref"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

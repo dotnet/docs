@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::EnumUserStrings method [.NET Framework metadata]"
   - "EnumUserStrings method [.NET Framework metadata]"
 ms.assetid: 2b1f1418-4be8-4cdb-b418-b3abccc527a7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICeeGen::GetSectionCreate method [.NET Framework metadata]"
   - "GetSectionCreate method [.NET Framework metadata]"
 ms.assetid: 154b2460-59ce-4874-a9f2-1b3353486ac5
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

@@ -2,6 +2,7 @@
 title: "Windows Identity Foundation 4.5 Overview | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -32,7 +33,7 @@ Windows Identity Foundation 4.5 is a set of .NET Framework classes for implement
   
      In addition, the framework also provides support for building an STS that supports WS-Federation to enable Web browser clients. Such an STS is also referred to as a Passive STS.  
   
--   New identity and access tool for Visual Studio 11 that enables you to secure your application with claims based identity and accept users from multiple identity providers. You can download this WIF tool from the following URL: [http://go.microsoft.com/fwlink/?LinkID=245849](http://go.microsoft.com/fwlink/?LinkID=245849) or directly from within Visual Studio 11 by searching for “identity” directly in the Extensions Manager. For more information, see [Identity and Access Tool for Visual Studio 2012](../../../docs/framework/security/identity-and-access-tool-for-vs.md).  
+-   New identity and access tool for Visual Studio 11 that enables you to secure your application with claims based identity and accept users from multiple identity providers. You can download this WIF tool from the following URL: [http://go.microsoft.com/fwlink/?LinkID=245849](http://go.microsoft.com/fwlink/?LinkID=245849) or directly from within Visual Studio 11 by searching for "identity" directly in the Extensions Manager. For more information, see [Identity and Access Tool for Visual Studio 2012](../../../docs/framework/security/identity-and-access-tool-for-vs.md).  
   
  WIF supports the following major scenarios:  
   

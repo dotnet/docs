@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugObjectValue2 interface [.NET Framework debugging]"
 ms.assetid: f93cc2ec-0a12-4499-9bf6-405dc58c9a81
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

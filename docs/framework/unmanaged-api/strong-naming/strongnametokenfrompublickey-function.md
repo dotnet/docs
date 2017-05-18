@@ -26,6 +26,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameTokenFromPublicKey function [.NET Framework strong naming]"
 ms.assetid: 997e9e57-abb2-4217-bf20-1df621a75add
+topic_type: 
+  - "apiref"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -39,7 +41,7 @@ Gets a token representing a public key. A strong name token is the shortened for
 ## Syntax  
   
 ```  
-BOOLEANStrongNameTokenFromPublicKey (   
+BOOLEANStrongNameTokenFromPublicKey (   
     [in]  BYTE    *pbPublicKeyBlob,  
     [in]  ULONG   cbPublicKeyBlob,  
     [out] BYTE    **ppbStrongNameToken,  

@@ -22,6 +22,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="CheckConformance">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Services</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Verifies whether a given Web service or services conforms to a given WS-I specification, and provides a list of any violations that it finds.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The WS-I publishes non-proprietary Web services specifications to promote the interoperability of Web services across platforms.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="CheckConformance">
       <MemberSignature Language="C#" Value="public static bool CheckConformance (System.Web.Services.WsiProfiles claims, System.Web.Services.Description.ServiceDescription description, System.Web.Services.Description.BasicProfileViolationCollection violations);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig bool CheckConformance(valuetype System.Web.Services.WsiProfiles claims, class System.Web.Services.Description.ServiceDescription description, class System.Web.Services.Description.BasicProfileViolationCollection violations) cil managed" />
@@ -45,7 +62,7 @@
         <param name="violations">A <see cref="T:System.Web.Services.Description.BasicProfileViolationCollection" /> that contains any violations that were found.</param>
         <summary>Verifies whether a given Web service or services conforms to a given WS-I specification, and provides a list of any violations that it finds.</summary>
         <returns>
-          <see langword="true" /> if the Web service described by <paramref name="description" /> conforms to the Web services interoperability specification indicated by <paramref name="claims" />; otherwise<see langword=" false" />.</returns>
+          <see langword="true" /> if the Web service described by <paramref name="description" /> conforms to the Web services interoperability specification indicated by <paramref name="claims" />; otherwise <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -124,22 +141,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="CheckConformance">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Services</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Verifies whether a given Web service or services conforms to a given WS-I specification, and provides a list of any violations that it finds.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The WS-I publishes non-proprietary Web services specifications to promote the interoperability of Web services across platforms.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

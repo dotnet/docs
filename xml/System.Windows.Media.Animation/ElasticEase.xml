@@ -23,7 +23,7 @@
  You can specify how many times the animation oscillates back and forth using the <xref:System.Windows.Media.Animation.ElasticEase.Oscillations%2A> property and how tight the springiness of the oscillations are using the <xref:System.Windows.Media.Animation.ElasticEase.Springiness%2A> property.  
   
 > [!NOTE]
->  Because this animation causes values to oscillate back and forth, the animation might interpolate into negative numbers unexpectedly. This can cause errors when animating properties that do not allow negative numbers. For example, if you apply this animation to the <xref:System.Windows.FrameworkElement.Height%2A> of an object (e.g. from 0 to 200 with an <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A> of <xref:System.Windows.Media.Animation.EasingMode>), the animation will attempt to interpolate through negative numbers for <xref:System.Windows.FrameworkElement.Height%2A> which will throw an error.  
+>  Because this animation causes values to oscillate back and forth, the animation might interpolate into negative numbers unexpectedly. This can cause errors when animating properties that do not allow negative numbers. For example, if you apply this animation to the <xref:System.Windows.FrameworkElement.Height%2A> of an object (e.g. from 0 to 200 with an <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A> of <xref:System.Windows.Media.Animation.EasingMode.EaseIn>), the animation will attempt to interpolate through negative numbers for <xref:System.Windows.FrameworkElement.Height%2A> which will throw an error.  
   
  There are several other easing functions besides <xref:System.Windows.Media.Animation.ElasticEase> which you can explore using the following Silverlight sample.  
   
@@ -44,7 +44,6 @@
  The following example applies an <xref:System.Windows.Media.Animation.ElasticEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create an animation that resembles a spring oscillating back and forth until it comes to rest.  
   
  [!code-xml[ElasticEase#ElasticEase](~/samples/snippets/csharp/VS_Snippets_Wpf/elasticease/CS/window1.xaml#elasticease)]
- <!-- TODO: review snippet reference [!code-xml[ElasticEase#ElasticEase](~/samples/snippets/xaml/VS_Snippets_Wpf/elasticease/xaml/window1.xaml#elasticease)]  -->  
   
  ]]></format>
     </remarks>
@@ -122,9 +121,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
+ This method transforms normalized time to control the pace of an animation for the <xref:System.Windows.Media.Animation.EasingMode.EaseIn> case of <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>.  
   
- You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode> and <xref:System.Windows.Media.Animation.EasingMode> cases.  
+ You only have to specify your easing function for the <xref:System.Windows.Media.Animation.EasingMode.EaseIn> case because the implementation of the <xref:System.Windows.Media.Animation.EasingFunctionBase.Ease%2A> method transforms `normalizedTime` for the <xref:System.Windows.Media.Animation.EasingMode.EaseOut> and <xref:System.Windows.Media.Animation.EasingMode.EaseInOut> cases.  
   
  ]]></format>
         </remarks>
@@ -163,8 +162,7 @@
 ## Examples  
  The following example applies an <xref:System.Windows.Media.Animation.ElasticEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create an animation that resembles a spring oscillating back and forth until it comes to rest.  
   
- [!code-xml[ElasticEase#ElasticEase](~/samples/snippets/csharp/VS_Snippets_Wpf/elasticease/CS/window1.xaml#elasticease)]
- <!-- TODO: review snippet reference [!code-xml[ElasticEase#ElasticEase](~/samples/snippets/xaml/VS_Snippets_Wpf/elasticease/xaml/window1.xaml#elasticease)]  -->  
+ [!code-xml[ElasticEase#ElasticEase](~/samples/snippets/csharp/VS_Snippets_Wpf/elasticease/CS/window1.xaml#elasticease)]   
   
  ]]></format>
         </remarks>
@@ -227,7 +225,6 @@
  The following example applies an <xref:System.Windows.Media.Animation.ElasticEase> easing function to a <xref:System.Windows.Media.Animation.DoubleAnimation> to create an animation that resembles a spring oscillating back and forth until it comes to rest.  
   
  [!code-xml[ElasticEase#ElasticEase](~/samples/snippets/csharp/VS_Snippets_Wpf/elasticease/CS/window1.xaml#elasticease)]
- <!-- TODO: review snippet reference [!code-xml[ElasticEase#ElasticEase](~/samples/snippets/xaml/VS_Snippets_Wpf/elasticease/xaml/window1.xaml#elasticease)]  -->  
   
  ]]></format>
         </remarks>

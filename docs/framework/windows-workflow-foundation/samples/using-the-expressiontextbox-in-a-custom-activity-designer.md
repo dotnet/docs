@@ -19,7 +19,7 @@ This sample shows how to use the <xref:System.Activities.Presentation.View.Expre
 ## Sample details  
  The `ArgumentToExpressionConverter` is the type converter used when binding expressions to arguments. The `ConverterParameter` must be set to `In` or `Out` as appropriate. `InOut` is not supported.  
   
- The `UseLocationExpression` attribute is used on `OutArgument`s to specify that the expression should be an L-value (“left value” or “location value”) expression. In most cases, an L-value expression is a valid Visual Basic identifier used to indicate that the `OutArgument` being returned is a variable or argument name.  
+ The `UseLocationExpression` attribute is used on `OutArgument`s to specify that the expression should be an L-value ("left value" or "location value") expression. In most cases, an L-value expression is a valid Visual Basic identifier used to indicate that the `OutArgument` being returned is a variable or argument name.  
   
  The `MaxLines` attribute is set to one in this example and `MinLines` is not set. This indicates that the <xref:System.Activities.Presentation.View.ExpressionTextBox> is a fixed size of one line regardless of the amount of text typed by the user. To allow the <xref:System.Activities.Presentation.View.ExpressionTextBox> to grow to fit user input, set `MaxLines` greater than `MinLines`.  
   
@@ -52,4 +52,4 @@ This sample shows how to use the <xref:System.Activities.Presentation.View.Expre
   
 ## See Also  
  <xref:System.Activities.Presentation.View.ExpressionTextBox>   
- [Developing Applications with the Workflow Designer](http://msdn.microsoft.com/library/4cd062b1-b496-4668-bbc1-ee85545e066d)
+ [Developing Applications with the Workflow Designer](/visualstudio/workflow-designer/developing-applications-with-the-workflow-designer)

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostTaskManager::LeaveRuntime method [.NET Framework hosting]"
   - "LeaveRuntime method [.NET Framework hosting]"
 ms.assetid: 43689cc4-e48e-46e5-a22d-bafd768b8759
+topic_type: 
+  - "apiref"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

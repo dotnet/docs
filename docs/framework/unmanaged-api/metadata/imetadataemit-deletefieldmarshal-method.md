@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::DeleteFieldMarshal method [.NET Framework metadata]"
   - "DeleteFieldMarshal method [.NET Framework metadata]"
 ms.assetid: 7c75aef9-c742-4b33-a14b-56ff94b0f725
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

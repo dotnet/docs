@@ -73,7 +73,7 @@
       <Docs>
         <param name="patternInterface">A value enumeration that specifies the control pattern.</param>
         <summary>Gets the control pattern for the <see cref="T:System.Windows.Controls.Ribbon.RibbonContextualTabGroupItemsControl" /> that is associated with the <see cref="T:System.Windows.Automation.Peers.RibbonContextualTabGroupItemsControlAutomationPeer" />.</summary>
-        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is the<see cref="F:System.Windows.Automation.Peers.PatternInterface.ItemContainer" /> or <see cref="F:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput" /> value; otherwise, <see langword="null" />.</returns>
+        <returns>An object that supports the control pattern if <paramref name="patternInterface" /> is the <see cref="F:System.Windows.Automation.Peers.PatternInterface.ItemContainer" /> or <see cref="F:System.Windows.Automation.Peers.PatternInterface.SynchronizedInput" /> value; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

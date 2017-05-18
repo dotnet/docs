@@ -34,7 +34,7 @@ This topic outlines the steps required to enable a reliable session using one of
   
 3.  Create a Web.config file to configure an endpoint for the `CalculatorService` that uses the <xref:System.ServiceModel.WSHttpBinding> with reliable session enabled and ordered delivery of messages required.  
   
-     <!-- TODO: review snippet reference [!code[c_HowTo_UseReliableSession#2111](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_usereliablesession/common/web.config#2111)]  -->  
+     [!code-xml[c_HowTo_UseReliableSession#2111](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/common/web.config#2111)]    
   
 4.  Create a Service.svc file that contains the line:  
   
@@ -62,7 +62,7 @@ This topic outlines the steps required to enable a reliable session using one of
   
 4.  Svcutil.exe also generates the configuration for the client that uses the <xref:System.ServiceModel.WSHttpBinding> class. This file should be named the App.config file when using [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)].  
   
-     <!-- TODO: review snippet reference [!code[C_HowTo_UseReliableSession#2211](../../../../samples/snippets/common/VS_Snippets_CFX/c_howto_usereliablesession/common/app.config#2211)]  -->  
+     [!code-xml[C_HowTo_UseReliableSession#2211](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_howto_usereliablesession/common/app.config#2211)]  
   
 5.  Create an instance of the `ClientCalculator` in an application and then call the service operations.  
   
@@ -71,7 +71,6 @@ This topic outlines the steps required to enable a reliable session using one of
 6.  Compile and run the client.  
   
 ## Example  
-<!-- TODO: review snippet reference  [!CODE [Microsoft.Win32.RegistryKey#4](Microsoft.Win32.RegistryKey#4)]  -->  
   
  Several of the system-provided bindings support reliable sessions by default. These include:  
   

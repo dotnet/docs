@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICeeGen::GetString method [.NET Framework metadata]"
   - "GetString method, ICeeGen interface [.NET Framework metadata]"
 ms.assetid: 7cc22562-128c-440a-9147-55ff20f173d7
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

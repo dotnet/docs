@@ -103,7 +103,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.ServiceModel.Configuration.WebHttpSecurityElement> object returned by this property to set the transport security parameters. The <xref:System.ServiceModel.WebHttpSecurityMode> must be set to the <xref:System.ServiceModel.WebHttpSecurityMode> or <xref:System.ServiceModel.WebHttpSecurityMode> value for the settings provided by the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property to become effective for the service endpoint. This value can be set in configuration or in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
+ Use the <xref:System.ServiceModel.Configuration.WebHttpSecurityElement> object returned by this property to set the transport security parameters. The <xref:System.ServiceModel.WebHttpSecurityMode> must be set to the <xref:System.ServiceModel.WebHttpSecurityMode.Transport> or <xref:System.ServiceModel.WebHttpSecurityMode.TransportCredentialOnly> value for the settings provided by the <xref:System.ServiceModel.WebHttpSecurity.Transport%2A> property to become effective for the service endpoint. This value can be set in configuration or in the <xref:System.ServiceModel.WebHttpBinding.%23ctor%28System.ServiceModel.WebHttpSecurityMode%29> constructor.  
   
  ]]></format>
         </remarks>

@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Security.Principal.Windows</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -49,6 +50,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -108,6 +110,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -134,6 +137,26 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="IsInRole">
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Determines whether the current principal belongs to a specified Windows user group.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are four overloads for this method. For performance reasons, the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29> overload is strongly recommended.  
+  
+> [!IMPORTANT]
+>  The <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> method is not supported on Windows 98 or Windows Millennium Edition.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="IsInRole">
       <MemberSignature Language="C#" Value="public virtual bool IsInRole (int rid);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool IsInRole(int32 rid) cil managed" />
@@ -142,6 +165,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -219,6 +243,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -255,7 +280,7 @@
    
   
 ## Examples  
- The following code example demonstrates the use of the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29?displayProperty=fullName> method. The <xref:System.Security.Principal.WellKnownSidType> enumeration value is used to determine whether the current principal is an administrator. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
+ The following code example demonstrates the use of the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29?displayProperty=fullName> method. The <xref:System.Security.Principal.WellKnownSidType.BuiltinAdministratorsSid> enumeration value is used to determine whether the current principal is an administrator. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
   
  [!code-csharp[System.Security.Principal.WindowsBuiltInRole Example#5](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS/source.cs#5)]
  [!code-vb[System.Security.Principal.WindowsBuiltInRole Example#5](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/VB/source.vb#5)]  
@@ -275,6 +300,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -306,7 +332,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.Security.Principal.WindowsBuiltInRole> enumeration is used to determine whether the current principal is an <xref:System.Security.Principal.WindowsBuiltInRole>. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
+ The following example uses the <xref:System.Security.Principal.WindowsBuiltInRole> enumeration is used to determine whether the current principal is an <xref:System.Security.Principal.WindowsBuiltInRole.Administrator>. For the full code example, see the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Int32%29?displayProperty=fullName> method.  
   
  [!code-csharp[System.Security.Principal.WindowsBuiltInRole Example#4](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/CS/source.cs#4)]
  [!code-vb[System.Security.Principal.WindowsBuiltInRole Example#4](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Security.Principal.WindowsBuiltInRole Example/VB/source.vb#4)]  
@@ -325,6 +351,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Security.Principal.Windows</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -414,25 +441,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="IsInRole">
-      <AssemblyInfo>
-        <AssemblyName>System.Security.Principal.Windows</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Determines whether the current principal belongs to a specified Windows user group.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are four overloads for this method. For performance reasons, the <xref:System.Security.Principal.WindowsPrincipal.IsInRole%28System.Security.Principal.SecurityIdentifier%29> overload is strongly recommended.  
-  
-> [!IMPORTANT]
->  The <xref:System.Security.Principal.WindowsPrincipal.IsInRole%2A> method is not supported on Windows 98 or Windows Millennium Edition.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

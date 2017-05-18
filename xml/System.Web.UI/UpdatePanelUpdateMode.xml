@@ -19,12 +19,12 @@
   
  The default value of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is Always.  
   
- If the <xref:System.Web.UI.UpdatePanel> control is inside another <xref:System.Web.UI.UpdatePanel> control and the parent panel is updated, the nested panel will also be updated regardless of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property value.  
+ If the <xref:System.Web.UI.UpdatePanelUpdateMode.Always> control is inside another <xref:System.Web.UI.UpdatePanel> control and the parent panel is updated, the nested panel will also be updated regardless of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property value.  
   
    
   
 ## Examples  
- The following example declares two <xref:System.Web.UI.UpdatePanel> controls. The first panel sets the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property of an <xref:System.Web.UI.UpdatePanel> control to Conditional. The second panel has <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> set to Always by default. A button outside both panels is registered as an asynchronous postback control by using the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method of the <xref:System.Web.UI.ScriptManager> control. In the button's click event handler, the <xref:System.Web.UI.UpdatePanel.Update%2A> method of the first panel is called if more than five seconds have elapsed since its last update. In this scenario, the panel's content is updated only if the last panel update was more than five seconds ago. The second panel's content is always updated.  
+ The following example declares two <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> controls. The first panel sets the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property of an <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> control to Conditional. The second panel has <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> set to Always by default. A button outside both panels is registered as an asynchronous postback control by using the <xref:System.Web.UI.ScriptManager.RegisterAsyncPostBackControl%2A> method of the <xref:System.Web.UI.ScriptManager> control. In the button's click event handler, the <xref:System.Web.UI.UpdatePanel.Update%2A> method of the first panel is called if more than five seconds have elapsed since its last update. In this scenario, the panel's content is updated only if the last panel update was more than five seconds ago. The second panel's content is always updated.  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/CS/UpdatePanelUpdateModeCS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel.UpdateMode#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel.UpdateMode/VB/UpdatePanelUpdateModeVB.aspx#1)]  -->  

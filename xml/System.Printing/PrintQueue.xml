@@ -53,7 +53,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Printing.PrintQueue> constructors that do not include a <xref:System.Printing.PrintSystemDesiredAccess> parameter default to <xref:System.Printing.PrintSystemDesiredAccess> access.  
+ <xref:System.Printing.PrintQueue> constructors that do not include a <xref:System.Printing.PrintSystemDesiredAccess> parameter default to <xref:System.Printing.PrintSystemDesiredAccess.UsePrinter> access.  
   
  ]]></format>
         </remarks>
@@ -87,7 +87,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Printing.PrintQueue> constructors that do not include a <xref:System.Printing.PrintSystemDesiredAccess> parameter  default to <xref:System.Printing.PrintSystemDesiredAccess> access.  
+ <xref:System.Printing.PrintQueue> constructors that do not include a <xref:System.Printing.PrintSystemDesiredAccess> parameter  default to <xref:System.Printing.PrintSystemDesiredAccess.UsePrinter> access.  
   
  The [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) version released with Windows Vista is "1".  
   
@@ -123,7 +123,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Printing.PrintQueue> constructors that do not include a <xref:System.Printing.PrintSystemDesiredAccess> parameter default to <xref:System.Printing.PrintSystemDesiredAccess> access.  
+ <xref:System.Printing.PrintQueue> constructors that do not include a <xref:System.Printing.PrintSystemDesiredAccess> parameter default to <xref:System.Printing.PrintSystemDesiredAccess.UsePrinter> access.  
   
  The use of a constructor with the `propertyFilter` parameter improves performance.  
   
@@ -188,7 +188,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Printing.PrintQueue> constructors that do not include a <xref:System.Printing.PrintSystemDesiredAccess> parameter default to <xref:System.Printing.PrintSystemDesiredAccess> access.  
+ <xref:System.Printing.PrintQueue> constructors that do not include a <xref:System.Printing.PrintSystemDesiredAccess> parameter default to <xref:System.Printing.PrintSystemDesiredAccess.UsePrinter> access.  
   
  The use of a constructor with the `propertyFilter` parameter improves performance.  
   
@@ -310,6 +310,25 @@
           <paramref name="desiredAccess" /> is a value that can be applied only to a <see cref="T:System.Printing.PrintServer" /> object, not a <see cref="T:System.Printing.PrintQueue" /> object. For example, <see cref="F:System.Printing.PrintSystemDesiredAccess.AdministrateServer" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddJob">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a new print job into the queue.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Unless the queue is paused or in an error state, the job prints when it reaches the top of the queue, so this is a printing function.  
+  
+ Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=fullName> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddJob">
       <MemberSignature Language="C#" Value="public System.Printing.PrintSystemJobInfo AddJob ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Printing.PrintSystemJobInfo AddJob() cil managed" />
@@ -478,11 +497,11 @@
 ## Remarks  
  If `fastCopy` is `true`, then the printer must be an [Printing Overview](~/docs/framework/wpf/advanced/printing-overview.md). If it is not, the <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> method throws an exception.  
   
- If `fastCopy` is `false`, then it is not necessary to use an XPSDrv printer. The [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] file being added to the queue is converted to the printer's page description language, such as PCL or Postscript. However, this kind of printing makes a call to [!INCLUDE[TLA#tla_com](~/includes/tlasharptla-com-md.md)]. The call to [!INCLUDE[TLA2#tla_com](~/includes/tla2sharptla-com-md.md)] requires that the calling thread have a single-threaded apartment (<xref:System.Threading.ApartmentState>) instead of multiple-threaded apartment (<xref:System.Threading.ApartmentState>) which is the default in [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] 2.0 and later. (For more on threading and apartment states, see [Managed and Unmanaged Threading](http://msdn.microsoft.com/en-us/db425c20-4b2f-4433-bf96-76071c7881e5), and <xref:System.Threading.ApartmentState>.) There are two ways of doing this:  
+ If `fastCopy` is `false`, then it is not necessary to use an XPSDrv printer. The [!INCLUDE[TLA2#tla_xps](~/includes/tla2sharptla-xps-md.md)] file being added to the queue is converted to the printer's page description language, such as PCL or Postscript. However, this kind of printing makes a call to [!INCLUDE[TLA#tla_com](~/includes/tlasharptla-com-md.md)]. The call to [!INCLUDE[TLA2#tla_com](~/includes/tla2sharptla-com-md.md)] requires that the calling thread have a single-threaded apartment (<xref:System.Threading.ApartmentState.STA>) instead of multiple-threaded apartment (<xref:System.Threading.ApartmentState.MTA>) which is the default in [!INCLUDE[TLA#tla_net](~/includes/tlasharptla-net-md.md)] 2.0 and later. (For more on threading and apartment states, see [Managed and Unmanaged Threading](http://msdn.microsoft.com/en-us/db425c20-4b2f-4433-bf96-76071c7881e5), and <xref:System.Threading.ApartmentState>.) There are two ways of doing this:  
   
 -   The simplest way is to add the <xref:System.STAThreadAttribute> (that is, "`[System.STAThreadAttribute()]`") just above the first line of the application's `Main` method (usually "`static void Main(string[] args)`").  
   
--   If you need your `Main` thread's apartment state to be <xref:System.Threading.ApartmentState>, you can house the call to <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> in a separate thread whose apartment state is set to <xref:System.Threading.ApartmentState> with <xref:System.Threading.Thread.SetApartmentState%2A>. The example below illustrates this second technique.  
+-   If you need your `Main` thread's apartment state to be <xref:System.Threading.ApartmentState.MTA>, you can house the call to <xref:System.Printing.PrintQueue.AddJob%28System.String%2CSystem.String%2CSystem.Boolean%29> in a separate thread whose apartment state is set to <xref:System.Threading.ApartmentState.STA> with <xref:System.Threading.Thread.SetApartmentState%2A>. The example below illustrates this second technique.  
   
 > [!NOTE]
 >  You cannot apply the <xref:System.STAThreadAttribute> to any method except `Main` and you cannot use <xref:System.Threading.Thread.SetApartmentState%2A> for the `Main` thread.  
@@ -636,7 +655,7 @@
 ## Remarks  
  Changes that your program makes to the properties of a <xref:System.Printing.PrintQueue> object do not actually take effect until the program executes the <xref:System.Printing.PrintQueue.Commit%2A> method.  
   
- The method requires that the <xref:System.Printing.PrintQueue> object be created with <xref:System.Printing.PrintSystemDesiredAccess> rights.  
+ The method requires that the <xref:System.Printing.PrintQueue> object be created with <xref:System.Printing.PrintSystemDesiredAccess.AdministratePrinter> rights.  
   
    
   
@@ -1158,6 +1177,23 @@
         <permission cref="T:System.Drawing.Printing.PrintingPermission">for permission to get print capabilities. Associated enumeration: <see cref="F:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting" /></permission>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetPrintCapabilitiesAsXml">
+      <AssemblyInfo>
+        <AssemblyName>System.Printing</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities as an XML stream that complies with the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The XML schema used is called "PrintCapabilities," a part of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) system.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetPrintCapabilitiesAsXml">
       <MemberSignature Language="C#" Value="public System.IO.MemoryStream GetPrintCapabilitiesAsXml ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.IO.MemoryStream GetPrintCapabilitiesAsXml() cil managed" />
@@ -3010,41 +3046,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddJob">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts a new print job into the queue.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Unless the queue is paused or in an error state, the job prints when it reaches the top of the queue, so this is a printing function.  
-  
- Other ways to print in [!INCLUDE[TLA#tla_winclient](~/includes/tlasharptla-winclient-md.md)] include the <xref:System.Windows.Controls.PrintDialog.PrintDocument%2A?displayProperty=fullName> method, which can be used with or without opening the dialog, and the many <xref:System.Windows.Xps.XpsDocumentWriter.Write%2A> and <xref:System.Windows.Xps.XpsDocumentWriter.WriteAsync%2A> methods of the <xref:System.Windows.Xps.XpsDocumentWriter>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetPrintCapabilitiesAsXml">
-      <AssemblyInfo>
-        <AssemblyName>System.Printing</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a <see cref="T:System.IO.MemoryStream" /> object that specifies the printer's capabilities as an XML stream that complies with the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397).</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The XML schema used is called "PrintCapabilities," a part of the [Print Schema](http://go.microsoft.com/fwlink/?LinkId=186397) system.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -414,7 +414,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.ToolStripMenuItem.CheckState%2A> property to control or determine whether a <xref:System.Windows.Forms.ToolStripMenuItem> is initially checked, unchecked, or in an indeterminate state.  
   
- Starting with the .NET Framework 4.5.2, if the <xref:System.Windows.Forms.ToolStripMenuItem.CheckState%2A> property is set to <xref:System.Windows.Forms.CheckState> or <xref:System.Windows.Forms.CheckState>, the corresponding icon may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
+ Starting with the .NET Framework 4.5.2, if the <xref:System.Windows.Forms.ToolStripMenuItem.CheckState%2A> property is set to <xref:System.Windows.Forms.CheckState.Checked> or <xref:System.Windows.Forms.CheckState.Indeterminate>, the corresponding icon may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
   
 ```  
 <appSettings>  
@@ -616,7 +616,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement<see langword=" Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see langword="Dispose" /> can be called multiple times by other objects. When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see langword="Dispose" />. For more information about how to implement <see langword="Dispose(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see langword="Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>

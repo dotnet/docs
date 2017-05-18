@@ -2,6 +2,7 @@
 title: "WIF Claims Programming Model | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,7 +26,7 @@ ASP.NET and Windows Communication Foundation (WCF) developers ordinarily use the
   
 -   <xref:System.Security.Claims.Claim.Type%2A> represents the type of claim and is typically a URI. For example, the e-mail address claim is represented as `http://schemas.microsoft.com/ws/2008/06/identity/claims/email`.  
   
--   <xref:System.Security.Claims.Claim.Value%2A> contains the value of the claim and is represented as a string. For example, the e-mail address can be represented as “someone@contoso.com”.  
+-   <xref:System.Security.Claims.Claim.Value%2A> contains the value of the claim and is represented as a string. For example, the e-mail address can be represented as "someone@contoso.com".  
   
 -   <xref:System.Security.Claims.Claim.ValueType%2A> represents the type of the claim value and is typically a URI. For example, the string type is represented as `http://www.w3.org/2001/XMLSchema#string`. The value type must be a QName according to the XML schema. The value should be of the format `namespace#format` to enable WIF to output a valid QName value. If the namespace is not a well-defined namespace, the generated XML probably cannot be schema validated, because there will not be a published XSD file for that namespace. The default value type is `http://www.w3.org/2001/XMLSchema#string`. Please see [http://www.w3.org/2001/XMLSchema](http://go.microsoft.com/fwlink/?LinkId=209155) for well-known value types that you can use safely.  
   
@@ -59,14 +60,14 @@ ClaimsPrincipal claimsPrincipal = Thread.CurrentPrincipal as ClaimsPrincipal;
   
 |Token Type|Claim Generated|Map To Windows Access Token|  
 |-|-|-|  
-|SAML 1.1|1.  All claims from System.IdentityModel.SecurityTokenService.GetOutputClaimsIdentity(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Scope).<br />2.  The `http://schemas.microsoft.com/ws/2008/06/identity/claims/confirmationkey` claim that contains the XML serialization of the confirmation key, if the token contains a proof token.<br />3.  The `http://schemas.microsoft.com/ws/2008/06/identity/claims/samlissuername` claim from the Issuer element.<br />4.  AuthenticationMethod and AuthenticationInstant claims, if the token contains an authentication statement.|In addition to the claims listed in “SAML 1.1”, except claims of type  `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name`, Windows authentication related claims will be added and the identity will be represented by WindowsClaimsIdentity.|  
-|SAML 2.0|Same as “SAML 1.1”.|Same as “SAML 1.1 Mapped to Windows Account”.|  
+|SAML 1.1|1.  All claims from System.IdentityModel.SecurityTokenService.GetOutputClaimsIdentity(System.Security.Claims.ClaimsPrincipal,System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.IdentityModel.Scope).<br />2.  The `http://schemas.microsoft.com/ws/2008/06/identity/claims/confirmationkey` claim that contains the XML serialization of the confirmation key, if the token contains a proof token.<br />3.  The `http://schemas.microsoft.com/ws/2008/06/identity/claims/samlissuername` claim from the Issuer element.<br />4.  AuthenticationMethod and AuthenticationInstant claims, if the token contains an authentication statement.|In addition to the claims listed in "SAML 1.1", except claims of type  `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name`, Windows authentication related claims will be added and the identity will be represented by WindowsClaimsIdentity.|  
+|SAML 2.0|Same as "SAML 1.1".|Same as "SAML 1.1 Mapped to Windows Account".|  
 |X509|1.  Claims with the X500 distinguished name, emailName, dnsName, SimpleName, UpnName, UrlName, thumbprint, RsaKey (this can be extracted using the RSACryptoServiceProvider.ExportParameters method from the X509Certificate2.PublicKey.Key property), DsaKey (this can be extracted using the DSACryptoServiceProvider.ExportParameters method from the X509Certificate2.PublicKey.Key property), SerialNumber properties from the X509 Certificate.<br />2.  AuthenticationMethod claim with value `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/x509`. AuthenticationInstant claim with the value of the time when the certificate was validated in XmlSchema DateTime format.|1.  It uses the Windows account fully qualified domain name as the `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name` claim value. .<br />2.  Claims from the X509 Certificate not mapped to Windows, and claims from the windows account obtained by mapping the certificate to Windows.|  
 |UPN|1.  Claims are similar to the claims in the Windows authentication section.<br />2.  AuthenticationMethod claim with value `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/password`. The AuthenticationInstant claim with the value of the time when the password was validated in XmlSchema DateTime format.||  
 |Windows (Kerberos or NTLM)|1.  Claims generated from the access token such as: PrimarySID, DenyOnlyPrimarySID, PrimaryGroupSID, DenyOnlyPrimaryGroupSID, GroupSID, DenyOnlySID, and Name<br />2.  AuthenticationMethod with the value `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/windows`. AuthenticationInstant with the value of the time when the Windows access token was created in the XMLSchema DateTime format.||  
 |RSA Key Pair|1.  The `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/rsa` claim with the value of RSAKeyValue.<br />2.  AuthenticationMethod claim with the value `http://schemas.microsoft.com/ws/2008/06/identity/authenticationmethod/signature`. AuthenticationInstant claim with the value of the time when the RSA key was authenticated (that is, the signature was verified) in the XMLSchema DateTime format.||  
   
-|Authentication Type|URI emitted in “AuthenticationMethod” claim|  
+|Authentication Type|URI emitted in "AuthenticationMethod" claim|  
 |-|-|  
 |Password|`urn:oasis:names:tc:SAML:1.0:am:password`|  
 |Kerberos|`urn:ietf:rfc:1510`|  

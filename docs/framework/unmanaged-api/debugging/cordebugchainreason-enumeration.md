@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugChainReason enumeration [.NET Framework debugging]"
 ms.assetid: c915da51-50b2-41df-841a-2b971f4d0975
+topic_type: 
+  - "apiref"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -45,8 +45,7 @@ The number of indices used to access an array element must be exactly the same a
   
 -   Remove subscripts from the array reference until the total number of subscripts equals the rank of the array. For example:  
   
-    ```  
-    [Visual Basic]  
+    ```vb  
     Dim gameBoard(3, 3) As String  
   
     ' Incorrect code. The array has two dimensions.  

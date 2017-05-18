@@ -58,16 +58,13 @@
 ## Examples  
  The following example code shows how this method can be used to keep track of the <xref:System.ServiceModel.IExtensibleObject%601> object to which the current instance of the extension belongs.  
   
- [C#]  
-  
-```  
+```csharp  
 InstanceContext owner;  
   
 public void Attach(InstanceContext owner)  
 {  
   this.owner = owner;   
 }  
-  
 ```  
   
  ]]></format>

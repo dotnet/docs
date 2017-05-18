@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRTask2::BeginPreventAsyncAbort method [.NET Framework hosting]"
   - "BeginPreventAsyncAbort method [.NET Framework hosting]"
 ms.assetid: 75754c2f-38c7-4707-85fe-559db4542729
+topic_type: 
+  - "apiref"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

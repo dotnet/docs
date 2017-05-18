@@ -96,9 +96,9 @@ C#’s type system is unified such that a value of any type can be treated as an
 
 [!code-csharp[Boxing](../../../samples/snippets/csharp/tour/types-and-variables/Program.cs#L1-L10)]
 
-When a value of a value type is converted to type `object`, an `object` instance, also called a “box”, is allocated to hold the value, and the value is copied into that box. Conversely, when an `object` reference is cast to a value type, a check is made that the referenced `object` is a box of the correct value type, and, if the check succeeds, the value in the box is copied out.
+When a value of a value type is converted to type `object`, an `object` instance, also called a "box", is allocated to hold the value, and the value is copied into that box. Conversely, when an `object` reference is cast to a value type, a check is made that the referenced `object` is a box of the correct value type, and, if the check succeeds, the value in the box is copied out.
 
-C#’s unified type system effectively means that value types can become objects “on demand.” Because of the unification, general-purpose libraries that use type `object` can be used with both reference types and value types.
+C#’s unified type system effectively means that value types can become objects "on demand." Because of the unification, general-purpose libraries that use type `object` can be used with both reference types and value types.
 
 There are several kinds of *variables* in C#, including fields, array elements, local variables, and parameters. Variables represent storage locations, and every variable has a type that determines what values can be stored in the variable, as shown below.
 

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostFilter interface [.NET Framework metadata]"
 ms.assetid: e79456b1-045b-4a84-9714-2ea560ff75ea
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

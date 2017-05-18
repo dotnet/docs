@@ -707,6 +707,23 @@ public class SendEmail : Activity
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetActivityByName">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities running under the root activity of this instance that is within the workflow.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Calling `GetActivityByName` from within the constructor of a custom activity is not supported and can have unexpected results.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetActivityByName">
       <MemberSignature Language="C#" Value="public System.Workflow.ComponentModel.Activity GetActivityByName (string activityQualifiedName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Workflow.ComponentModel.Activity GetActivityByName(string activityQualifiedName) cil managed" />
@@ -826,7 +843,7 @@ public class SendEmail : Activity
         <summary>Called by the workflow runtime to initialize an activity during the construction of a new workflow instance. This method is called during the construction of a dynamic <see cref="T:System.Workflow.ComponentModel.ActivityExecutionContext" />.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="provider" /> is a null reference (<see langword="Nothing " />in Visual Basic).</exception>
+          <paramref name="provider" /> is a null reference (<see langword="Nothing" /> in Visual Basic).</exception>
       </Docs>
     </Member>
     <Member MemberName="Invoke&lt;T&gt;">
@@ -917,6 +934,25 @@ public class SendEmail : Activity
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Load">
+      <AssemblyInfo>
+        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Loads an instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Load">
       <MemberSignature Language="C#" Value="public static System.Workflow.ComponentModel.Activity Load (System.IO.Stream stream, System.Workflow.ComponentModel.Activity outerActivity);" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Workflow.ComponentModel.Activity Load(class System.IO.Stream stream, class System.Workflow.ComponentModel.Activity outerActivity) cil managed" />
@@ -1576,41 +1612,5 @@ public class SendEmail : Activity
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="Load">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Loads an instance of an <see cref="T:System.Workflow.ComponentModel.Activity" /> from a <see cref="T:System.IO.Stream" />.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  Calling this method with untrusted data is a security risk. Call this method only with trusted data. For more information, see [Untrusted Data Security Risks](http://go.microsoft.com/fwlink/?LinkId=330378).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="GetActivityByName">
-      <AssemblyInfo>
-        <AssemblyName>System.Workflow.ComponentModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the instance of the <see cref="T:System.Workflow.ComponentModel.Activity" /> whose name is requested from the set of all activities running under the root activity of this instance that is within the workflow.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Calling `GetActivityByName` from within the constructor of a custom activity is not supported and can have unexpected results.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

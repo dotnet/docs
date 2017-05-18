@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Alloc method, IHostMAlloc interface [.NET Framework hosting]"
   - "IHostMAlloc::Alloc method [.NET Framework hosting]"
 ms.assetid: a3007f5e-d75d-4b37-842b-704e9edced5e
+topic_type: 
+  - "apiref"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

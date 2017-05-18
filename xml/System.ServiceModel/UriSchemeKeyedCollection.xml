@@ -51,7 +51,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.ServiceModel.UriSchemeKeyedCollection" /> class.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="addresses" /> is <see langword="null" />.</exception>
+          <paramref name="uris" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetKeyForItem">
@@ -99,7 +99,7 @@
         <param name="item">The <see cref="T:System.Uri" /> to be inserted into the collection.</param>
         <summary>Inserts a URI into the collection at a specified location.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The<paramref name=" item" /> URI is not an absolute URI.</exception>
+        <exception cref="T:System.InvalidOperationException">The <paramref name="item" /> URI is not an absolute URI.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="item" /> URI already contains a scheme name already in the collection.</exception>
       </Docs>
@@ -126,7 +126,7 @@
         <param name="item">The <see cref="T:System.Uri" /> to be placed into the collection.</param>
         <summary>Replaces a URI at a specified location of the collection with a new URI.</summary>
         <remarks>To be added.</remarks>
-        <exception cref="T:System.InvalidOperationException">The<paramref name=" item" /> URI is not an absolute URI.</exception>
+        <exception cref="T:System.InvalidOperationException">The <paramref name="item" /> URI is not an absolute URI.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="item" /> URI already contains a scheme name already in the collection.</exception>
       </Docs>

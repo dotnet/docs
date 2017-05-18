@@ -170,7 +170,7 @@ NotInheritable Public Class SoundPermission
     Public Overrides Function ToXml() As SecurityElement
         ' These first three lines create an element with the required format.
         Dim e As New SecurityElement("IPermission")
-        ' Replace the double quotation marks (“”) with single quotation marks (‘’)
+        ' Replace the double quotation marks ("") with single quotation marks (‘’)
         ' to remain XML compliant when the culture is not neutral.
         e.AddAttribute("class", [GetType]().AssemblyQualifiedName.Replace(ControlChars.Quote, "'"c))
         e.AddAttribute("version", "1")

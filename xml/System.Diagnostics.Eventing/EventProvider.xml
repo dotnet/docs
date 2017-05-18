@@ -337,6 +337,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use these methods if you use a manifest to define your events.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteEvent">
       <MemberSignature Language="C#" Value="public bool WriteEvent (ref System.Diagnostics.Eventing.EventDescriptor eventDescriptor, object[] eventPayload);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteEvent(valuetype System.Diagnostics.Eventing.EventDescriptor eventDescriptor, object[] eventPayload) cil managed" />
@@ -523,6 +540,23 @@ provider.Close();
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="WriteMessageEvent">
+      <AssemblyInfo>
+        <AssemblyName>System.Core</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Writes an event that contains a string as its data.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These methods do not require a manifest to consume the event.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="WriteMessageEvent">
       <MemberSignature Language="C#" Value="public bool WriteMessageEvent (string eventMessage);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool WriteMessageEvent(string eventMessage) cil managed" />
@@ -704,39 +738,5 @@ if (!provider.WriteMessageEvent("Event string.", 3, 2))
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="WriteMessageEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes an event that contains a string as its data.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These methods do not require a manifest to consume the event.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="WriteEvent">
-      <AssemblyInfo>
-        <AssemblyName>System.Core</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Writes an event.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use these methods if you use a manifest to define your events.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

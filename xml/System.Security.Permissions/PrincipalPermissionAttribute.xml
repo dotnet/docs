@@ -7,6 +7,10 @@
     <AssemblyVersion>2.0.5.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Security.Permissions</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Security.Permissions.CodeAccessSecurityAttribute</BaseTypeName>
   </Base>
@@ -25,14 +29,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Security.Permissions.PrincipalPermissionAttribute> can be used to declaratively demand that users running your code belong to a specified role or have been authenticated. Use of <xref:System.Security.Permissions.PermissionState> creates a <xref:System.Security.Permissions.PrincipalPermission> with <xref:System.Security.Permissions.PrincipalPermissionAttribute.Authenticated%2A> set to `true` and <xref:System.Security.Permissions.PrincipalPermissionAttribute.Name%2A> and <xref:System.Security.Permissions.PrincipalPermissionAttribute.Role%2A> set to `null`.  
+ <xref:System.Security.Permissions.PrincipalPermissionAttribute> can be used to declaratively demand that users running your code belong to a specified role or have been authenticated. Use of <xref:System.Security.Permissions.PermissionState.Unrestricted> creates a <xref:System.Security.Permissions.PrincipalPermission> with <xref:System.Security.Permissions.PrincipalPermissionAttribute.Authenticated%2A> set to `true` and <xref:System.Security.Permissions.PrincipalPermissionAttribute.Name%2A> and <xref:System.Security.Permissions.PrincipalPermissionAttribute.Role%2A> set to `null`.  
   
  The scope of the declaration that is allowed depends on the <xref:System.Security.Permissions.SecurityAction> that is used. <xref:System.Security.Permissions.PrincipalPermissionAttribute> cannot be applied at the assembly level.  
   
  The security information declared by a security attribute is stored in the metadata of the attribute target and is accessed by the system at run time. Security attributes are used only for declarative security. For imperative security, use the corresponding permission class.  
   
 > [!IMPORTANT]
->  Before you use this class to demand principal permission, you must set the current application domain's principal policy to the enumeration value <xref:System.Security.Principal.PrincipalPolicy>. By default, the principal policy is set to <xref:System.Security.Principal.PrincipalPolicy>. If you do not set the principal policy to <xref:System.Security.Principal.PrincipalPolicy>, a demand for principal permission will fail. The following code should be executed before the principal permission is demanded: `AppDomain.CurrentDomain.SetPrincipalPolicy(PrincipalPolicy.WindowsPrincipal).`  
+>  Before you use this class to demand principal permission, you must set the current application domain's principal policy to the enumeration value <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal>. By default, the principal policy is set to <xref:System.Security.Principal.PrincipalPolicy.UnauthenticatedPrincipal>. If you do not set the principal policy to <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal>, a demand for principal permission will fail. The following code should be executed before the principal permission is demanded: `AppDomain.CurrentDomain.SetPrincipalPolicy(PrincipalPolicy.WindowsPrincipal).`  
   
    
   
@@ -58,6 +62,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
@@ -98,6 +106,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -116,6 +128,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -147,6 +163,10 @@
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -171,6 +191,10 @@
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
         <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Security.Permissions</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

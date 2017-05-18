@@ -47,9 +47,7 @@ Protected Sub LinqDataSource_Updating(ByVal sender As Object, _
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 protected void LinqDataSource_Updating(object sender,   
         LinqDataSourceUpdateEventArgs e)  
 {  
@@ -278,9 +276,7 @@ Protected Sub LinqDataSource_Updating(ByVal sender As Object, _
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 protected void LinqDataSource_Updating(object sender,   
         LinqDataSourceUpdateEventArgs e)   
 {  

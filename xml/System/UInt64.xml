@@ -8,6 +8,7 @@
     <AssemblyVersion>4.0.10.0</AssemblyVersion>
     <AssemblyVersion>4.0.20.0</AssemblyVersion>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>mscorlib</AssemblyName>
@@ -78,6 +79,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -89,44 +94,27 @@
         <summary>Compares this instance to a specified object and returns an indication of their relative values.</summary>
         <returns>A signed number indicating the relative values of this instance and <paramref name="value" />.  
   
- <list type="table">  
-<listheader>  
-<term> Return Value  
+ <list type="table"><listheader><term> Return Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance is less than <paramref name="value" />.  
+ </term><description> This instance is less than <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance is equal to <paramref name="value" />.  
+ </term><description> This instance is equal to <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance is greater than <paramref name="value" />.  
+ </term><description> This instance is greater than <paramref name="value" />.  
   
  -or-  
   
  <paramref name="value" /> is <see langword="null" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -161,6 +149,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -182,40 +171,23 @@
         <summary>Compares this instance to a specified 64-bit unsigned integer and returns an indication of their relative values.</summary>
         <returns>A signed number indicating the relative values of this instance and <paramref name="value" />.  
   
- <list type="table">  
-<listheader>  
-<term> Return Value  
+ <list type="table"><listheader><term> Return Value  
   
- </term>  
-<description> Description  
+ </term><description> Description  
   
- </description>  
-</listheader>  
-<item>  
-<term> Less than zero  
+ </description></listheader><item><term> Less than zero  
   
- </term>  
-<description> This instance is less than <paramref name="value" />.  
+ </term><description> This instance is less than <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Zero  
+ </description></item><item><term> Zero  
   
- </term>  
-<description> This instance is equal to <paramref name="value" />.  
+ </term><description> This instance is equal to <paramref name="value" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Greater than zero  
+ </description></item><item><term> Greater than zero  
   
- </term>  
-<description> This instance is greater than <paramref name="value" />.  
+ </term><description> This instance is greater than <paramref name="value" />.  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -252,6 +224,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -303,6 +276,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -360,6 +334,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -394,6 +369,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.TypeCode</ReturnType>
       </ReturnValue>
@@ -415,6 +394,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -440,7 +420,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.UInt64> and <xref:System.UInt64.MaxValue> fields to verify that a <xref:System.Double> value is within the range of the <xref:System.UInt64> type before it performs a type conversion. This prevents an <xref:System.OverflowException> at run time.  
+ The following example uses the <xref:System.UInt64.MinValue> and <xref:System.UInt64.MaxValue> fields to verify that a <xref:System.Double> value is within the range of the <xref:System.UInt64> type before it performs a type conversion. This prevents an <xref:System.OverflowException> at run time.  
   
  [!code-csharp[System.UInt64.MaxValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.UInt64.MaxValue/cs/MaxValue1.cs#1)]
  [!code-vb[System.UInt64.MaxValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.UInt64.MaxValue/vb/MaxValue1.vb#1)]  
@@ -460,6 +440,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -485,7 +466,7 @@
    
   
 ## Examples  
- The following example uses the <xref:System.UInt64.MinValue> and <xref:System.UInt64> fields to verify that a <xref:System.Double> value is within the range of the <xref:System.UInt64> type before it performs a type conversion. This prevents an <xref:System.OverflowException> at run time.  
+ The following example uses the <xref:System.UInt64.MinValue> and <xref:System.UInt64.MaxValue> fields to verify that a <xref:System.Double> value is within the range of the <xref:System.UInt64> type before it performs a type conversion. This prevents an <xref:System.OverflowException> at run time.  
   
  [!code-csharp[System.UInt64.MaxValue#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.UInt64.MaxValue/cs/MaxValue1.cs#1)]
  [!code-vb[System.UInt64.MaxValue#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.UInt64.MaxValue/vb/MaxValue1.vb#1)]  
@@ -505,6 +486,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -578,6 +560,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -636,20 +619,20 @@
   
 |`NumberStyles` value|Elements permitted in `s` in addition to digits|  
 |--------------------------|-----------------------------------------------------|  
-|<xref:System.Globalization.NumberStyles>|The *digits* element only.|  
-|<xref:System.Globalization.NumberStyles>|The decimal point (.) and *fractional-digits* elements.|  
-|<xref:System.Globalization.NumberStyles>|The "e" or "E" character, which indicates exponential notation, along with *exponential_digits*.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the start of `s`.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the end of `s`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element at the start of `s`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element at the end of `s`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element in the form of parentheses enclosing the numeric value.|  
-|<xref:System.Globalization.NumberStyles>|The group separator (,) element.|  
-|<xref:System.Globalization.NumberStyles>|The currency ($) element.|  
-|<xref:System.Globalization.NumberStyles>|All elements. However, `s` cannot represent a hexadecimal number or a number in exponential notation.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the start or end of `s`, *sign* at the start of `s`, and the decimal point (*.*) symbol. The `s` parameter can also use exponential notation.|  
-|<xref:System.Globalization.NumberStyles>|The `ws`, `sign`, group separator (*,*), and decimal point (*.*) elements.|  
-|<xref:System.Globalization.NumberStyles>|All elements. However, `s` cannot represent a hexadecimal number.|  
+|<xref:System.Globalization.NumberStyles.None>|The *digits* element only.|  
+|<xref:System.Globalization.NumberStyles.AllowDecimalPoint>|The decimal point (.) and *fractional-digits* elements.|  
+|<xref:System.Globalization.NumberStyles.AllowExponent>|The "e" or "E" character, which indicates exponential notation, along with *exponential_digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingWhite>|The *ws* element at the start of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingWhite>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingSign>|The *sign* element at the start of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingSign>|The *sign* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowParentheses>|The *sign* element in the form of parentheses enclosing the numeric value.|  
+|<xref:System.Globalization.NumberStyles.AllowThousands>|The group separator (,) element.|  
+|<xref:System.Globalization.NumberStyles.AllowCurrencySymbol>|The currency ($) element.|  
+|<xref:System.Globalization.NumberStyles.Currency>|All elements. However, `s` cannot represent a hexadecimal number or a number in exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Float>|The *ws* element at the start or end of `s`, *sign* at the start of `s`, and the decimal point (*.*) symbol. The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Number>|The `ws`, `sign`, group separator (*,*), and decimal point (*.*) elements.|  
+|<xref:System.Globalization.NumberStyles.Any>|All elements. However, `s` cannot represent a hexadecimal number.|  
   
  Unlike the other <xref:System.Globalization.NumberStyles> values, which allow for, but do not require, the presence of particular style elements in `s`, the <xref:System.Globalization.NumberStyles?displayProperty=fullName> style value means that the individual numeric characters in `s` are always interpreted as hexadecimal characters. Valid hexadecimal characters are 0-9, A-F, and a-f. A prefix such as "0x" is not supported and causes the parse operation to fail. The only other flags that can be combined with the `style` parameter are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration includes a composite number style, <xref:System.Globalization.NumberStyles?displayProperty=fullName>, that includes both white-space flags.)  
   
@@ -695,6 +678,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -779,6 +763,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -946,6 +931,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -986,6 +972,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1025,6 +1012,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1064,6 +1052,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1097,6 +1086,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1136,6 +1126,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1175,6 +1166,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1214,6 +1206,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1253,6 +1246,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1292,6 +1286,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1331,6 +1326,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1370,6 +1366,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1411,6 +1408,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1450,6 +1448,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1489,6 +1488,7 @@
         <AssemblyName>System.Runtime</AssemblyName>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1530,6 +1530,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1587,6 +1588,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1649,6 +1651,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1720,6 +1723,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1801,6 +1805,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1880,6 +1885,7 @@
         <AssemblyVersion>4.0.10.0</AssemblyVersion>
         <AssemblyVersion>4.0.20.0</AssemblyVersion>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>mscorlib</AssemblyName>
@@ -1945,22 +1951,22 @@
   
 |Non-composite `NumberStyles` values|Elements permitted in value in addition to digits|  
 |------------------------------------------|-------------------------------------------------------|  
-|<xref:System.Globalization.NumberStyles>|Decimal digits only.|  
-|<xref:System.Globalization.NumberStyles>|The decimal point (*.*) and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits, or the method returns `false`.|  
-|<xref:System.Globalization.NumberStyles>|The "e" or "E" character, which indicates exponential notation, along with *exponential_digits*. If `s` represents a number in exponential notation, it cannot have a non-zero, fractional component.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the start of `s`.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the end of `s`.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element before *digits*.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element after *digits*.|  
-|<xref:System.Globalization.NumberStyles>|The *sign* element in the form of parentheses enclosing a zero numeric value.|  
-|<xref:System.Globalization.NumberStyles>|The group separator (*,*) element.|  
-|<xref:System.Globalization.NumberStyles>|The currency (*$*) element.|  
-|<xref:System.Globalization.NumberStyles>|All elements. However, `s` cannot represent a hexadecimal number or a number in exponential notation.|  
-|<xref:System.Globalization.NumberStyles>|The *ws* element at the start or end of `s`, *sign* at the start of `s`, and the decimal point (*.*) symbol. The `s` parameter can also use exponential notation.|  
-|<xref:System.Globalization.NumberStyles>|The *ws*, *sign*, group separator (*,*), and decimal point (*.*) elements.|  
-|<xref:System.Globalization.NumberStyles>|All elements. However, `s` cannot represent a hexadecimal number.|  
+|<xref:System.Globalization.NumberStyles.None>|Decimal digits only.|  
+|<xref:System.Globalization.NumberStyles.AllowDecimalPoint>|The decimal point (*.*) and *fractional_digits* elements. However, *fractional_digits* must consist of only one or more 0 digits, or the method returns `false`.|  
+|<xref:System.Globalization.NumberStyles.AllowExponent>|The "e" or "E" character, which indicates exponential notation, along with *exponential_digits*. If `s` represents a number in exponential notation, it cannot have a non-zero, fractional component.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingWhite>|The *ws* element at the start of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingWhite>|The *ws* element at the end of `s`.|  
+|<xref:System.Globalization.NumberStyles.AllowLeadingSign>|The *sign* element before *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowTrailingSign>|The *sign* element after *digits*.|  
+|<xref:System.Globalization.NumberStyles.AllowParentheses>|The *sign* element in the form of parentheses enclosing a zero numeric value.|  
+|<xref:System.Globalization.NumberStyles.AllowThousands>|The group separator (*,*) element.|  
+|<xref:System.Globalization.NumberStyles.AllowCurrencySymbol>|The currency (*$*) element.|  
+|<xref:System.Globalization.NumberStyles.Currency>|All elements. However, `s` cannot represent a hexadecimal number or a number in exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Float>|The *ws* element at the start or end of `s`, *sign* at the start of `s`, and the decimal point (*.*) symbol. The `s` parameter can also use exponential notation.|  
+|<xref:System.Globalization.NumberStyles.Number>|The *ws*, *sign*, group separator (*,*), and decimal point (*.*) elements.|  
+|<xref:System.Globalization.NumberStyles.Any>|All elements. However, `s` cannot represent a hexadecimal number.|  
   
- If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `s` must be a hexadecimal value. Valid hexadecimal characters are 0-9, A-F, and a-f. A prefix such as "0x" is not supported and causes the parse operation to fail. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles>, that includes both white-space flags.)  
+ If the <xref:System.Globalization.NumberStyles?displayProperty=fullName> flag is used, `s` must be a hexadecimal value. Valid hexadecimal characters are 0-9, A-F, and a-f. A prefix such as "0x" is not supported and causes the parse operation to fail. The only other flags that can be present in `style` are <xref:System.Globalization.NumberStyles?displayProperty=fullName> and <xref:System.Globalization.NumberStyles?displayProperty=fullName>. (The <xref:System.Globalization.NumberStyles> enumeration has a composite style, <xref:System.Globalization.NumberStyles.HexNumber>, that includes both white-space flags.)  
   
 > [!NOTE]
 >  If `s` is the string representation of a hexadecimal number, it cannot be preceded by any decoration (such as `0x` or `&h`) that differentiates it as a hexadecimal number. This causes the conversion to fail.  

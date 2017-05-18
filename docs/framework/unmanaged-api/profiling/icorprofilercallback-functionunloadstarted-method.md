@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "FunctionUnloadStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::FunctionUnloadStarted method [.NET Framework profiling]"
 ms.assetid: d6a5fa8b-09c6-47a5-b60e-6cf2e355df30
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

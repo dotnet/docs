@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::RuntimeSuspendStarted method [.NET Framework profiling]"
   - "RuntimeSuspendStarted method [.NET Framework profiling]"
 ms.assetid: c8461cac-e31b-4efa-ad2c-26598173eb96
+topic_type: 
+  - "apiref"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

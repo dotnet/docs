@@ -55,21 +55,21 @@ Repeats a block of statements while a `Boolean` condition is `True` or until the
 ## Syntax  
   
 ```  
-Do { While | Until } condition  
-    [ statements ]  
+Do { While | Until } condition  
+    [ statements ]  
     [ Continue Do ]  
     [ statements ]  
-    [ Exit Do ]  
-    [ statements ]  
+    [ Exit Do ]  
+    [ statements ]  
 Loop  
 -or-  
 Do  
-    [ statements ]  
+    [ statements ]  
     [ Continue Do ]  
     [ statements ]  
-    [ Exit Do ]  
-    [ statements ]  
-Loop { While | Until } condition  
+    [ Exit Do ]  
+    [ statements ]  
+Loop { While | Until } condition  
 ```  
   
 ## Parts  

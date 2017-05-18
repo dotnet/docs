@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule::GetToken method [.NET Framework debugging]"
   - "GetToken method, ICorDebugModule interface [.NET Framework debugging]"
 ms.assetid: f759f87a-18ae-4c1a-8300-29b803432d0a
+topic_type: 
+  - "apiref"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

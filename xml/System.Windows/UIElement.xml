@@ -149,7 +149,7 @@
   
  The default is <see langword="false" />.  
   
- Do not routinely ask to rehandle a routed event. For more information, see Remarks.</param>
+ Do not routinely ask to rehandle a routed event.</param>
         <summary>Adds a routed event handler for a specified routed event, adding the handler to the handler collection on the current element. Specify <paramref name="handledEventsToo" /> as <see langword="true" /> to have the provided handler be invoked for routed event that had already been marked as handled by another element along the event route.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -265,6 +265,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="ApplyAnimationClock">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Applies an animation to a specified dependency property on this element.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This method is sealed and cannot be overridden.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="ApplyAnimationClock">
       <MemberSignature Language="C#" Value="public void ApplyAnimationClock (System.Windows.DependencyProperty dp, System.Windows.Media.Animation.AnimationClock clock);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ApplyAnimationClock(class System.Windows.DependencyProperty dp, class System.Windows.Media.Animation.AnimationClock clock) cil managed" />
@@ -1433,7 +1450,7 @@ Image with an Elliptical Clip Region
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.UIElement>|  
+|Identifier field|<xref:System.Windows.UIElement.EffectProperty>|  
 |Metadata properties set to `true`|None|  
   
    
@@ -1524,7 +1541,7 @@ Image with an Elliptical Clip Region
       <Docs>
         <summary>Gets or sets a value that indicates whether the element can receive focus.  This is a dependency property.</summary>
         <value>
-          <see langword="true" /> if the element is focusable; otherwise <see langword="false" />. The default is <see langword="false" />, but see Remarks.</value>
+          <see langword="true" /> if the element is focusable; otherwise <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1557,7 +1574,6 @@ Image with an Elliptical Clip Region
  The following example code illustrates a control template for a particular custom control, which sets <xref:System.Windows.UIElement.Focusable%2A> `false` on one of the elements within the template.  
   
  [!code-xml[RichTextBox_NoScrollViewer#_ControlTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/RichTextBox_NoScrollViewer/CS/window1.xaml#_controltemplate)]
- <!-- TODO: review snippet reference [!code-xml[RichTextBox_NoScrollViewer#_ControlTemplate](~/samples/snippets/xaml/VS_Snippets_Wpf/RichTextBox_NoScrollViewer/xaml/window1.xaml#_controltemplate)]  -->  
   
  ]]></format>
         </remarks>
@@ -3190,8 +3206,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following example references this property as the property type of a <xref:System.Windows.Trigger>, part of a \<Style.Triggers> block. If the mouse is over the control, the control text turns blue and the cursor becomes a hand.  
   
- <!-- TODO: review snippet reference [!code-xml[ListViewCheckBox#Trigger](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewCheckBox/CS/window1.xaml#trigger)]  -->
- <!-- TODO: review snippet reference [!code-xml[ListViewCheckBox#Trigger](~/samples/snippets/xaml/VS_Snippets_Wpf/ListViewCheckBox/xaml/window1.xaml#trigger)]  -->  
+ [!code-xml[ListViewChkBox#Trigger](~/samples/snippets/csharp/VS_Snippets_Wpf/ListViewChkBox/CS/window1.xaml#trigger)]   
   
  ]]></format>
         </remarks>
@@ -5717,7 +5732,7 @@ Image with an Elliptical Clip Region
         <summary>Invoked when an unhandled <see cref="E:System.Windows.UIElement.IsMouseCaptureWithinChanged" /> event is raised on this element. Implement this method to add class handling for this event.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
-          <para>This virtual method is raised when the value of the <see cref="P:System.Windows.UIElement.IsMouseCaptureWithin" />dependency property changes its value. The virtual method is raised first and can manipulate the event data as necessary. Then the <see cref="E:System.Windows.UIElement.IsMouseCaptureWithinChanged" /> event is raised with that same event data instance. Notice that the event is not a routed event; Therefore,  you cannot mark it as handled in the class handler.  
+          <para>This virtual method is raised when the value of the <see cref="P:System.Windows.UIElement.IsMouseCaptureWithin" /> dependency property changes its value. The virtual method is raised first and can manipulate the event data as necessary. Then the <see cref="E:System.Windows.UIElement.IsMouseCaptureWithinChanged" /> event is raised with that same event data instance. Notice that the event is not a routed event; Therefore,  you cannot mark it as handled in the class handler.  
   
  This method has no default implementation. Because an intermediate class in the inheritance might implement this method, we recommend that you call the base implementation in your implementation. You may call base either before or after your special handling, depending on your requirements.</para>
         </block>
@@ -8315,8 +8330,7 @@ Image with an Elliptical Clip Region
 ## Examples  
  The following markup example shows an <xref:System.Windows.Media.ImageBrush> opacity mask applied to another <xref:System.Windows.Controls.Image>.  
   
- <!-- TODO: review snippet reference [!code-xml[OpacityMasksExample#UIElementOpacityMask](~/samples/snippets/csharp/VS_Snippets_Wpf/OpacityMasksExample/CS/ImageBrushExample.xaml#uielementopacitymask)]  -->
- <!-- TODO: review snippet reference [!code-xml[OpacityMasksExample#UIElementOpacityMask](~/samples/snippets/xaml/VS_Snippets_Wpf/OpacityMasksExample/XAML/ImageBrushExample.xaml#uielementopacitymask)]  -->  
+ [!code-xml[OpacityMasksSnippet#UIElementOpacityMask](~/samples/snippets/csharp/VS_Snippets_Wpf/OpacityMasksSnippet/CS/ImageBrushExample.xaml#uielementopacitymask)]   
   
  ]]></format>
         </remarks>
@@ -10741,7 +10755,7 @@ Image with an Elliptical Clip Region
         <ReturnType>System.Windows.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets (or sets, but see Remarks) the final render size of this element.</summary>
+        <summary>Gets (or sets) the final render size of this element.</summary>
         <value>The rendered size for this element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -12335,9 +12349,9 @@ Image with an Elliptical Clip Region
 ## Remarks  
  Setting this property affects the value of <xref:System.Windows.UIElement.IsVisible%2A>, which in turn may raise the <xref:System.Windows.UIElement.IsVisibleChanged> event. However, <xref:System.Windows.UIElement.IsVisible%2A> has other factors that influence it, for instance the visibility settings of parents that contain it.  
   
- Elements where <xref:System.Windows.UIElement.Visibility%2A> is not <xref:System.Windows.Visibility> do not participate in input events (or commands), do not influence either the Measure or Arrange passes of layout, are not in a tab sequence, and will not be reported in hit testing.  
+ Elements where <xref:System.Windows.UIElement.Visibility%2A> is not <xref:System.Windows.Visibility.Visible> do not participate in input events (or commands), do not influence either the Measure or Arrange passes of layout, are not in a tab sequence, and will not be reported in hit testing.  
   
- When inherited by <xref:System.Windows.Window> or its derived classes, <xref:System.Windows.Window> redefines the default value of this property to be <xref:System.Windows.Visibility>. This has the effect of not running the Measure pass of layout on an initially created <xref:System.Windows.Window>, and <xref:System.Windows.UIElement.RenderSize%2A> returns (0,0). For details, see <xref:System.Windows.Window>. <xref:System.Windows.Controls.Primitives.Popup> also redefines the default value to be <xref:System.Windows.Visibility>, with similar resulting behavior for <xref:System.Windows.Controls.Primitives.Popup> and its derived classes.  
+ When inherited by <xref:System.Windows.Window> or its derived classes, <xref:System.Windows.Window> redefines the default value of this property to be <xref:System.Windows.Visibility.Collapsed>. This has the effect of not running the Measure pass of layout on an initially created <xref:System.Windows.Window>, and <xref:System.Windows.UIElement.RenderSize%2A> returns (0,0). For details, see <xref:System.Windows.Window>. <xref:System.Windows.Controls.Primitives.Popup> also redefines the default value to be <xref:System.Windows.Visibility.Collapsed>, with similar resulting behavior for <xref:System.Windows.Controls.Primitives.Popup> and its derived classes.  
   
 <a name="dependencyPropertyInfo_Visibility"></a>   
 ## Dependency Property Information  
@@ -12376,22 +12390,5 @@ Image with an Elliptical Clip Region
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="ApplyAnimationClock">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Applies an animation to a specified dependency property on this element.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method is sealed and cannot be overridden.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

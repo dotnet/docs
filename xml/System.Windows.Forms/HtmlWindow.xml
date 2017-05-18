@@ -277,7 +277,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the unmanaged interface wrapped by this class.</summary>
-        <value>An object that can be cast to an <see langword="IHTMLWindow2" />, <see langword="IHTMLWindow3" />, or <see langword="IHTMLWindow4 " />pointer.</value>
+        <value>An object that can be cast to an <see langword="IHTMLWindow2" />, <see langword="IHTMLWindow3" />, or <see langword="IHTMLWindow4" /> pointer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -634,7 +634,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window. See the Remarks section for details.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window.</exception>
       </Docs>
     </Member>
     <Member MemberName="MoveTo">
@@ -667,7 +667,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window. See the Remarks section for details.</exception>
+        <exception cref="T:System.UnauthorizedAccessException">The code trying to execute this operation does not have permission to manipulate this window.</exception>
       </Docs>
     </Member>
     <Member MemberName="Name">

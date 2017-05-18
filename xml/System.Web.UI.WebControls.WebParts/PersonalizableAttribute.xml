@@ -84,7 +84,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor internally sets the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsPersonalizable%2A> property to `true`, the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Scope%2A> property to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>, and the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property to `false`.  
+ This constructor internally sets the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsPersonalizable%2A> property to `true`, the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Scope%2A> property to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User>, and the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property to `false`.  
   
  ]]></format>
         </remarks>
@@ -109,7 +109,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This constructor internally sets the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsPersonalizable%2A> property to the value of the Boolean parameter, the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Scope%2A> property to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope>, and the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property to `false`.  
+ This constructor internally sets the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsPersonalizable%2A> property to the value of the Boolean parameter, the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Scope%2A> property to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User>, and the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property to `false`.  
   
  This constructor is useful if you want a derived type to mark a virtual property that is personalizable on the base type as not-personalizable on the derived type.  
   
@@ -358,7 +358,7 @@
 ## Remarks  
  This value is set when an instance of the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> class is created.  
   
- This property controls how the property value is exported. If the property is set to `true`, it will not be exported when the control's <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property is set to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode>.  
+ This property controls how the property value is exported. If the property is set to `true`, it will not be exported when the control's <xref:System.Web.UI.WebControls.WebParts.WebPart.ExportMode%2A> property is set to <xref:System.Web.UI.WebControls.WebParts.WebPartExportMode.NonSensitiveData>.  
   
  ]]></format>
         </remarks>
@@ -412,7 +412,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This field and the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute> field have the same value.  
+ This field and the <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Default> field have the same value.  
   
  ]]></format>
         </remarks>
@@ -436,7 +436,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute instance has its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Scope%2A> property set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property set to `false`.  
+ This attribute instance has its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Scope%2A> property set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> and its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property set to `false`.  
   
  ]]></format>
         </remarks>
@@ -487,7 +487,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute instance has its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Scope%2A> property set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property set to `false`.  
+ This attribute instance has its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Scope%2A> property set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.Shared> and its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property set to `false`.  
   
  ]]></format>
         </remarks>
@@ -511,7 +511,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This attribute instance has its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Scope%2A> property set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope> and its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property set to `false`.  
+ This attribute instance has its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.Scope%2A> property set to <xref:System.Web.UI.WebControls.WebParts.PersonalizationScope.User> and its <xref:System.Web.UI.WebControls.WebParts.PersonalizableAttribute.IsSensitive%2A> property set to `false`.  
   
  ]]></format>
         </remarks>

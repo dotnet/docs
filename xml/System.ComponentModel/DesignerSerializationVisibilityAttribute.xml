@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System</AssemblyName>
@@ -34,14 +35,14 @@
   
  With the <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute>, you can indicate whether the value for a property is <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Visible>, and should be persisted in initialization code, <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Hidden>, and should not be persisted in initialization code, or consists of <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute.Content>, which should have initialization code generated for each public, not hidden property of the object assigned to the property.  
   
- Members that do not have a <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> will be treated as though they have a <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> with a value of <xref:System.ComponentModel.DesignerSerializationVisibility>. The values of a property marked as <xref:System.ComponentModel.DesignerSerializationVisibility> will be serialized, if possible, by a serializer for the type. To specify custom serialization for a particular type or property, use the <xref:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute>.  
+ Members that do not have a <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> will be treated as though they have a <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> with a value of <xref:System.ComponentModel.DesignerSerializationVisibility.Visible>. The values of a property marked as <xref:System.ComponentModel.DesignerSerializationVisibility.Visible> will be serialized, if possible, by a serializer for the type. To specify custom serialization for a particular type or property, use the <xref:System.ComponentModel.Design.Serialization.DesignerSerializerAttribute>.  
   
  For more information, see [Attributes](http://msdn.microsoft.com/library/30386922-1e00-4602-9ebf-526b271a8b87).  
   
    
   
 ## Examples  
- The following code example demonstrates the use of a <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> set to <xref:System.ComponentModel.DesignerSerializationVisibility>. It persists the values of a public property of a user control, which can be configured at design time. To use the example, first compile the following code into a user control library. Next, add a reference to the compiled .dll file in a new Windows Application project. If you are using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the `ContentSerializationExampleControl` is automatically added to the **Toolbox**.  
+ The following code example demonstrates the use of a <xref:System.ComponentModel.DesignerSerializationVisibilityAttribute> set to <xref:System.ComponentModel.DesignerSerializationVisibility.Content>. It persists the values of a public property of a user control, which can be configured at design time. To use the example, first compile the following code into a user control library. Next, add a reference to the compiled .dll file in a new Windows Application project. If you are using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], the `ContentSerializationExampleControl` is automatically added to the **Toolbox**.  
   
  Drag the control from the **Toolbox** to a form, and set the properties of the `DimensionData` object listed in the Properties window. When you view the code for the form, code will have been added to the `InitializeComponent` method of the parent form. This code sets the values of the control's properties to those which you have set in design mode.  
   
@@ -61,6 +62,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -99,6 +101,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -132,6 +135,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -165,6 +169,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -197,6 +202,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -225,6 +231,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -264,6 +271,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -283,6 +294,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
@@ -323,6 +335,7 @@
       <AssemblyInfo>
         <AssemblyName>System.ComponentModel.Primitives</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>

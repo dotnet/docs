@@ -69,7 +69,7 @@
   
  The URI that is specified by <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> must use the net.msmq scheme.  
   
- If <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> is set to <xref:System.ServiceModel.DeadLetterQueue> or <xref:System.ServiceModel.DeadLetterQueue>, then <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> must be set to `null`. If <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> is not `null`, then <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> must be set to <xref:System.ServiceModel.DeadLetterQueue>.  
+ If <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> is set to <xref:System.ServiceModel.DeadLetterQueue.None> or <xref:System.ServiceModel.DeadLetterQueue.System>, then <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> must be set to `null`. If <xref:System.ServiceModel.MsmqBindingBase.CustomDeadLetterQueue%2A> is not `null`, then <xref:System.ServiceModel.MsmqBindingBase.DeadLetterQueue%2A> must be set to <xref:System.ServiceModel.DeadLetterQueue.Custom>.  
   
  ]]></format>
         </remarks>
@@ -313,13 +313,13 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A message in the queue becomes poisoned if repeated attempts to deliver the message failed. This poison message is eventually handled based on the setting of this property. When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the listener is faulted and a <xref:System.ServiceModel.MsmqPoisonMessageException> is traced and thrown. The poison message is left in the queue and must be removed before more messages can be accessed from the queue. The <xref:System.ServiceModel.MsmqPoisonMessageException> contains a <xref:System.ServiceModel.MsmqPoisonMessageException.MessageLookupId%2A> that can be used to identify and manually remove the poison message from the queue.  
+ A message in the queue becomes poisoned if repeated attempts to deliver the message failed. This poison message is eventually handled based on the setting of this property. When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling.Fault>, the listener is faulted and a <xref:System.ServiceModel.MsmqPoisonMessageException> is traced and thrown. The poison message is left in the queue and must be removed before more messages can be accessed from the queue. The <xref:System.ServiceModel.MsmqPoisonMessageException> contains a <xref:System.ServiceModel.MsmqPoisonMessageException.MessageLookupId%2A> that can be used to identify and manually remove the poison message from the queue.  
   
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, the poison message is dropped.  
+ When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling.Drop>, the poison message is dropped.  
   
- When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling>, a negative acknowledgement is sent to the client and the poison message is removed from the queue. This option is available only on Message Queuing 4.0 and requires [!INCLUDE[wv](~/includes/wv-md.md)].  
+ When this property is set to <xref:System.ServiceModel.ReceiveErrorHandling.Reject>, a negative acknowledgement is sent to the client and the poison message is removed from the queue. This option is available only on Message Queuing 4.0 and requires [!INCLUDE[wv](~/includes/wv-md.md)].  
   
- When set to <xref:System.ServiceModel.ReceiveErrorHandling>, the poison message is moved to the final poison subqueue. This option is only available on Message Queuing 4.0 and requires [!INCLUDE[wv](~/includes/wv-md.md)].  
+ When set to <xref:System.ServiceModel.ReceiveErrorHandling.Move>, the poison message is moved to the final poison subqueue. This option is only available on Message Queuing 4.0 and requires [!INCLUDE[wv](~/includes/wv-md.md)].  
   
  ]]></format>
         </remarks>
@@ -429,7 +429,7 @@
       <Docs>
         <summary>Gets a value that indicates whether incoming requests can be handled more efficiently synchronously or asynchronously.</summary>
         <value>
-          <see langword="true" /> if requests can be handled more efficiently synchronously; otherwise<see langword=" false" />. The default is <see langword="false" />, to handle requests asynchronously.</value>
+          <see langword="true" /> if requests can be handled more efficiently synchronously; otherwise <see langword="false" />. The default is <see langword="false" />, to handle requests asynchronously.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

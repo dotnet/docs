@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateEval method [.NET Framework debugging]"
   - "ICorDebugThread::CreateEval method [.NET Framework debugging]"
 ms.assetid: 36605067-33d3-4579-9c72-fb0e551ab0f1
+topic_type: 
+  - "apiref"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

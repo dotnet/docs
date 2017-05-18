@@ -261,7 +261,7 @@
         </remarks>
         <block subset="none" type="overrides">
           <para>
-            <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" /> can be called multiple times by other objects.  When overriding <see langword="Dispose(Boolean) " />be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" />. For more information about how to implement<see langword="" /><see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" /><see langword="(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
+            <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" /> can be called multiple times by other objects.  When overriding <see langword="Dispose(Boolean)" /> be careful not to reference objects that have been previously disposed of in an earlier call to <see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" />. For more information about how to implement <see langword="" /><see cref="M:System.Windows.Annotations.Storage.AnnotationStore.Dispose(System.Boolean)" /><see langword="(Boolean)" />, see [Implementing a Dispose Method](~/docs/standard/garbage-collection/implementing-dispose.md).  
   
  For more information about <see cref="M:System.IDisposable.Dispose" /> and <see cref="M:System.Object.Finalize" />, see [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md) and [Overriding the Finalize Method](http://msdn.microsoft.com/en-us/8026cb68-fe93-43fc-96c1-c09ad7d64cd3).</para>
         </block>
@@ -359,6 +359,25 @@
           <see cref="Overload:System.Windows.Annotations.Storage.AnnotationStore.Dispose" /> has been called on the store.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetAnnotations">
+      <AssemblyInfo>
+        <AssemblyName>PresentationFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a list of annotations contained in the store.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Examples  
+ The following example shows how to use the <xref:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations%2A> method to determine if there are any annotations contained in the store.  
+  
+ [!code-csharp[DocumentSerialize#DocSerCloseFile](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserclosefile)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetAnnotations">
       <MemberSignature Language="C#" Value="public abstract System.Collections.Generic.IList&lt;System.Windows.Annotations.Annotation&gt; GetAnnotations ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.Generic.IList`1&lt;class System.Windows.Annotations.Annotation&gt; GetAnnotations() cil managed" />
@@ -569,24 +588,5 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetAnnotations">
-      <AssemblyInfo>
-        <AssemblyName>PresentationFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a list of annotations contained in the store.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Examples  
- The following example shows how to use the <xref:System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations%2A> method to determine if there are any annotations contained in the store.  
-  
- [!code-csharp[DocumentSerialize#DocSerCloseFile](~/samples/snippets/csharp/VS_Snippets_Wpf/DocumentSerialize/CSharp/ThumbViewer.cs#docserclosefile)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

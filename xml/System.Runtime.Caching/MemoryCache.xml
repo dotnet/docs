@@ -198,6 +198,23 @@ private void btnGet_Click(object sender, EventArgs e)
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddOrGetExisting">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a cache entry into the cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The <xref:System.Runtime.Caching.MemoryCache.AddOrGetExisting%2A> method overloads are used to insert a cache entry into the cache. If a cache entry with a matching key does not exist, these methods insert a new entry. If a cache entry with a matching key already exists, they return the existing entry.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddOrGetExisting">
       <MemberSignature Language="C#" Value="public override System.Runtime.Caching.CacheItem AddOrGetExisting (System.Runtime.Caching.CacheItem item, System.Runtime.Caching.CacheItemPolicy policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Runtime.Caching.CacheItem AddOrGetExisting(class System.Runtime.Caching.CacheItem item, class System.Runtime.Caching.CacheItemPolicy policy) cil managed" />
@@ -280,9 +297,9 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="value " />is not <see langword="null" />.</exception>
+          <paramref name="value" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">Both the absolute and sliding expiration values for the <see cref="T:System.Runtime.Caching.CacheItemPolicy" /> object are set to values other than the defaults of <see cref="F:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration" /> and <see cref="F:System.Runtime.Caching.ObjectCache.NoSlidingExpiration" /> fields. The <see cref="T:System.Runtime.Caching.MemoryCache" /> class cannot set expiration policy based on a combination of an absolute expiration and a sliding expiration. Only one expiration setting can be explicitly set when you use the <see cref="T:System.Runtime.Caching.MemoryCache" /> instance. The other expiration setting must be set to <see cref="F:System.Runtime.Caching.ObjectCache.InfiniteAbsoluteExpiration" /> or <see cref="F:System.Runtime.Caching.ObjectCache.NoSlidingExpiration" /></exception>
         <exception cref="T:System.ArgumentOutOfRangeException">The <see cref="P:System.Runtime.Caching.CacheItemPolicy.SlidingExpiration" /> property is set to a value less than <see cref="F:System.TimeSpan.Zero" />.  
   
@@ -403,7 +420,7 @@ private void btnGet_Click(object sender, EventArgs e)
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CreateCacheEntryChangeMonitor">
@@ -442,7 +459,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keys" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An item in the <paramref name="keys" /> collection is <see langword="null" />.</exception>
@@ -496,17 +513,17 @@ private void btnGet_Click(object sender, EventArgs e)
 ## Remarks  
  The capabilities of a cache implementation are a combination of the following values:  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.InMemoryProvider>  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.CacheEntryChangeMonitors>  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.AbsoluteExpirations>  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.SlidingExpirations>  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.CacheEntryUpdateCallback>  
   
--   <xref:System.Runtime.Caching.DefaultCacheCapabilities>  
+-   <xref:System.Runtime.Caching.DefaultCacheCapabilities.CacheEntryRemovedCallback>  
   
  ]]></format>
         </remarks>
@@ -545,7 +562,7 @@ private void btnGet_Click(object sender, EventArgs e)
   
 5.  Callback objects that provide notification of changes for those monitors are called.  
   
-6.  Any <xref:System.Web.Caching.CacheItemRemovedCallback> instances that are registered with entries in the cache are called. The removal reason that is passed to the callbacks is <xref:System.Runtime.Caching.CacheEntryRemovedReason>.  
+6.  Any <xref:System.Web.Caching.CacheItemRemovedCallback> instances that are registered with entries in the cache are called. The removal reason that is passed to the callbacks is <xref:System.Runtime.Caching.CacheEntryRemovedReason.CacheSpecificEviction>.  
   
  ]]></format>
         </remarks>
@@ -574,7 +591,7 @@ private void btnGet_Click(object sender, EventArgs e)
         <returns>A reference to the cache entry that is identified by <paramref name="key" />, if the entry exists; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
@@ -609,7 +626,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
@@ -635,7 +652,7 @@ private void btnGet_Click(object sender, EventArgs e)
         <returns>The number of entries in the cache.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetEnumerator">
@@ -719,7 +736,7 @@ private void btnGet_Click(object sender, EventArgs e)
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="keys" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">An individual key in the collection is <see langword="null" />.</exception>
@@ -862,12 +879,12 @@ private void btnGet_Click(object sender, EventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the entry specified by `key` exists in the cache, removing the item triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or a <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason passed to the callback is <xref:System.Runtime.Caching.CacheEntryRemovedReason>.  
+ If the entry specified by `key` exists in the cache, removing the item triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or a <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason passed to the callback is <xref:System.Runtime.Caching.CacheEntryRemovedReason.Removed>.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.</exception>
       </Docs>
@@ -898,6 +915,23 @@ private void btnGet_Click(object sender, EventArgs e)
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="Set">
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime.Caching</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Inserts a cache entry into the cache.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If the specified entry does not exist, it is created. If the specified entry exists, it is updated.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Set">
       <MemberSignature Language="C#" Value="public override void Set (System.Runtime.Caching.CacheItem item, System.Runtime.Caching.CacheItemPolicy policy);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void Set(class System.Runtime.Caching.CacheItem item, class System.Runtime.Caching.CacheItemPolicy policy) cil managed" />
@@ -984,12 +1018,12 @@ private void btnGet_Click(object sender, EventArgs e)
   
  The `absoluteExpiration` parameter indicates when the entry should be removed from the cache.  
   
- Removing an entry triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason for removal that is passed to the callbacks is contained in the <xref:System.Runtime.Caching.CacheEntryRemovedReason> property.  
+ Removing an entry triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason for removal that is passed to the callbacks is contained in the <xref:System.Runtime.Caching.CacheEntryRemovedReason.Removed> property.  
   
  ]]></format>
         </remarks>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="key" /> is <see langword="null" />.  
   
@@ -1042,7 +1076,7 @@ private void btnGet_Click(object sender, EventArgs e)
 ## Remarks  
  Like other <xref:System.Runtime.Caching.MemoryCache.Set%2A> method overloads, the <xref:System.Runtime.Caching.MemoryCache.Set%2A> method always puts a cache value in the cache, regardless whether a matching entry already exists. If the specified entry does not exist in the cache, a new cache entry is inserted. If the specified entry exists, it is updated.  
   
- Removing an entry triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason for removal that is passed to the callbacks is contained in the <xref:System.Runtime.Caching.CacheEntryRemovedReason> property.  
+ Removing an entry triggers any associated change monitors. If the removed item was associated with a <xref:System.Web.Caching.CacheItemUpdateCallback> object or <xref:System.Web.Caching.CacheItemRemovedCallback> object, the reason for removal that is passed to the callbacks is contained in the <xref:System.Runtime.Caching.CacheEntryRemovedReason.Removed> property.  
   
  ]]></format>
         </remarks>
@@ -1071,7 +1105,7 @@ private void btnGet_Click(object sender, EventArgs e)
   
  The <see cref="P:System.Runtime.Caching.CacheItemPolicy.Priority" /> property is not a value of the <see cref="T:System.Runtime.Caching.CacheItemPriority" /> enumeration.</exception>
         <exception cref="T:System.NotSupportedException">
-          <paramref name="regionName " />is not <see langword="null" />.</exception>
+          <paramref name="regionName" /> is not <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.IEnumerable.GetEnumerator">
@@ -1125,47 +1159,13 @@ private void btnGet_Click(object sender, EventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Runtime.Caching.MemoryCache.Trim%2A> property first removes entries that have exceeded either an absolute or sliding expiration. Any callbacks that are registered for items that are removed will be passed a removed reason of <xref:System.Web.Caching.CacheItemRemovedReason>.  
+ The <xref:System.Runtime.Caching.MemoryCache.Trim%2A> property first removes entries that have exceeded either an absolute or sliding expiration. Any callbacks that are registered for items that are removed will be passed a removed reason of <xref:System.Web.Caching.CacheItemRemovedReason.Expired>.  
   
- If removing expired entries is insufficient to reach the specified trim percentage, additional entries will be removed from the cache based on a least-recently used (LRU) algorithm until the requested trim percentage is reached. Any callbacks that are registered for items that are removed this way will be passed a remove reason of <xref:System.Runtime.Caching.CacheEntryRemovedReason>.  
+ If removing expired entries is insufficient to reach the specified trim percentage, additional entries will be removed from the cache based on a least-recently used (LRU) algorithm until the requested trim percentage is reached. Any callbacks that are registered for items that are removed this way will be passed a remove reason of <xref:System.Runtime.Caching.CacheEntryRemovedReason.Evicted>.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddOrGetExisting">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Caching</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts a cache entry into the cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Runtime.Caching.MemoryCache.AddOrGetExisting%2A> method overloads are used to insert a cache entry into the cache. If a cache entry with a matching key does not exist, these methods insert a new entry. If a cache entry with a matching key already exists, they return the existing entry.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Set">
-      <AssemblyInfo>
-        <AssemblyName>System.Runtime.Caching</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Inserts a cache entry into the cache.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If the specified entry does not exist, it is created. If the specified entry exists, it is updated.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

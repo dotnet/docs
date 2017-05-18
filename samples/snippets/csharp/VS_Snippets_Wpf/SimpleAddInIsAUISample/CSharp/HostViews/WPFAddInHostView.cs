@@ -1,5 +1,5 @@
 ﻿//<SnippetHostViewCode>
-using System.Windows.Controls; // UserControl
+using System.Windows.Controls;
 
 namespace HostViews
 {

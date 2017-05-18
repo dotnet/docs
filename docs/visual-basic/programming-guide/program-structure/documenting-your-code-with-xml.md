@@ -36,10 +36,10 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Documenting Your Code with XML (Visual Basic)
-In [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)], you can document your code using XML  
+In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], you can document your code using XML  
   
 ## XML Documentation Comments  
- [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] provides an easy way to automatically create XML documentation for projects. You can automatically generate an XML skeleton for your types and members, and then provide summaries, descriptive documentation for each parameter, and other remarks. With the appropriate setup, the XML documentation is automatically emitted into an XML file with the same name as your project and the .xml extension. For more information, see [/doc](../../../visual-basic/reference/command-line-compiler/doc.md).  
+ [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides an easy way to automatically create XML documentation for projects. You can automatically generate an XML skeleton for your types and members, and then provide summaries, descriptive documentation for each parameter, and other remarks. With the appropriate setup, the XML documentation is automatically emitted into an XML file with the same name as your project and the .xml extension. For more information, see [/doc](../../../visual-basic/reference/command-line-compiler/doc.md).  
   
  The XML file can be consumed or otherwise manipulated as XML. This file is located in the same directory as the output .exe or .dll file of your project.  
   

@@ -41,7 +41,7 @@ public delegate void EventHandler(object sender, EventArgs e);
 ```  
   
 > [!NOTE]
->  The [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] introduces a generic version of this delegate, <xref:System.EventHandler%601>. The following examples show how to use both versions.  
+>  The [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] introduces a generic version of this delegate, <xref:System.EventHandler%601>. The following examples show how to use both versions.  
   
  Although events in classes that you define can be based on any valid delegate type, even delegates that return a value, it is generally recommended that you base your events on the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] pattern by using <xref:System.EventHandler>, as shown in the following example.  
   

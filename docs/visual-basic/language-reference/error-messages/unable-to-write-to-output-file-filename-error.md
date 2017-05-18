@@ -59,7 +59,7 @@ There was a problem creating the file.
   
 3.  If the error continues, restart the computer.  
   
-4.  If the error recurs, reinstall [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+4.  If the error recurs, reinstall [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 5.  If the error persists after reinstallation, notify Microsoft Product Support Services.  
   

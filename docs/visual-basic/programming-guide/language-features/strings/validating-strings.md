@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Validating Strings in Visual Basic
-This section discusses how to validate strings in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+This section discusses how to validate strings in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 ## In This Section  
  [How to: Validate File Names and Paths in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/how-to-validate-file-names-and-paths.md)  

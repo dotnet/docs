@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How Culture Affects Strings in Visual Basic
-This Help page discusses how [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] uses culture information to perform string conversions and comparisons.  
+This Help page discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses culture information to perform string conversions and comparisons.  
   
 ## When to Use Culture-Specific Strings  
  Typically, you should use culture-specific strings for all data presented to and read from users, and use culture-invariant strings for your application's internal data.  
@@ -45,7 +45,7 @@ This Help page discusses how [!INCLUDE[vbprvb](../../../../csharp/programming-gu
  However, if the application uploads the date to a central server, it should format the string according to one specific culture, to prevent confusion between potentially different date formats.  
   
 ## Culture-Sensitive Functions  
- All of the [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] string-conversion functions (except for the `Str` and `Val` functions) use the application's culture information to make sure that the conversions and comparisons are appropriate for the culture of the application's user.  
+ All of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] string-conversion functions (except for the `Str` and `Val` functions) use the application's culture information to make sure that the conversions and comparisons are appropriate for the culture of the application's user.  
   
  The key to successfully using string-conversion functions in applications that run on computers with different culture settings is to understand which functions use a specific culture setting, and which use the current culture setting. Notice that the application's culture settings are, by default, inherited from the culture settings of the operating system. For more information, see <xref:Microsoft.VisualBasic.Strings.Asc%2A>, <xref:Microsoft.VisualBasic.Strings.AscW%2A>, <xref:Microsoft.VisualBasic.Strings.Chr%2A>, <xref:Microsoft.VisualBasic.Strings.ChrW%2A>, <xref:Microsoft.VisualBasic.Strings.Format%2A>, <xref:Microsoft.VisualBasic.Conversion.Hex%2A>, <xref:Microsoft.VisualBasic.Conversion.Oct%2A>, and [Type Conversion Functions](../../../../visual-basic/language-reference/functions/type-conversion-functions.md).  
   
@@ -78,7 +78,7 @@ This Help page discusses how [!INCLUDE[vbprvb](../../../../csharp/programming-gu
   
 -   **Determining if two application-internal strings exactly match (typically for security purposes).** Use operations that disregard the current culture.  
   
- You can perform both types of comparisons with the [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] <xref:Microsoft.VisualBasic.Strings.StrComp%2A> function. Specify the optional `Compare` argument to control the type of comparison: `Text` for most input and output `Binary` for determining exact matches.  
+ You can perform both types of comparisons with the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] <xref:Microsoft.VisualBasic.Strings.StrComp%2A> function. Specify the optional `Compare` argument to control the type of comparison: `Text` for most input and output `Binary` for determining exact matches.  
   
  The `StrComp` function returns an integer that indicates the relationship between the two compared strings based on the sorting order. A positive value for the result indicates that the first string is greater than the second string. A negative result indicates the first string is smaller, and zero indicates equality between the strings.  
   

@@ -60,10 +60,10 @@ Lists new features in each of the versions of Visual Basic .NET.
  Provides links to pages that introduce object-oriented programming and describe how to create your own objects and how to use objects to simplify your coding.  
   
  [Samples](../../visual-basic/sample-applications.md)  
- Provides links to sample code in [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+ Provides links to sample code in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
  [Walkthroughs](../../visual-basic/walkthroughs.md)  
- Provides a list of Help pages that demonstrate aspects of the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language.  
+ Provides a list of Help pages that demonstrate aspects of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language.  
   
  [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)  
  Covers how to receive support and give feedback.  

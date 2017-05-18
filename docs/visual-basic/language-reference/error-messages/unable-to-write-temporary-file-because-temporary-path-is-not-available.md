@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Unable to write temporary file because temporary path is not available
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] could not determine the path where temporary files are stored.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] could not determine the path where temporary files are stored.  
   
  **Error ID:** BC30698  
   

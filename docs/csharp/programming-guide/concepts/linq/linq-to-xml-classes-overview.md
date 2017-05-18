@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # LINQ to XML Classes Overview (C#)
-This topic provides a list of the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] classes in the <xref:System.Xml.Linq> namespace, and a short description of each.  
+This topic provides a list of the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] classes in the <xref:System.Xml.Linq> namespace, and a short description of each.  
   
 ## LINQ to XML Classes  
   
@@ -58,7 +58,7 @@ This topic provides a list of the [!INCLUDE[sqltecxlinq](../../../../csharp/prog
 ### XName Class  
  <xref:System.Xml.Linq.XName> represents names of elements (<xref:System.Xml.Linq.XElement>) and attributes (<xref:System.Xml.Linq.XAttribute>). For detailed information and examples, see [XDocument Class Overview (C#)](../../../../csharp/programming-guide/concepts/linq/xdocument-class-overview.md).  
   
- [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] is designed to make XML names as straightforward as possible. Due to their complexity, XML names are often considered to be an advanced topic in XML. Arguably, this complexity comes not from namespaces, which developers use regularly in programming, but from namespace prefixes. Namespace prefixes can be useful to reduce the keystrokes required when you input XML, or to make XML easier to read. However, prefixes are often just a shortcut for using the full XML namespace, and are not required in most cases. [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] simplifies XML names by resolving all prefixes to their corresponding XML namespace. Prefixes are available, if they are required, through the <xref:System.Xml.Linq.XElement.GetPrefixOfNamespace%2A> method.  
+ [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] is designed to make XML names as straightforward as possible. Due to their complexity, XML names are often considered to be an advanced topic in XML. Arguably, this complexity comes not from namespaces, which developers use regularly in programming, but from namespace prefixes. Namespace prefixes can be useful to reduce the keystrokes required when you input XML, or to make XML easier to read. However, prefixes are often just a shortcut for using the full XML namespace, and are not required in most cases. [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] simplifies XML names by resolving all prefixes to their corresponding XML namespace. Prefixes are available, if they are required, through the <xref:System.Xml.Linq.XElement.GetPrefixOfNamespace%2A> method.  
   
  It is possible, if necessary, to control namespace prefixes. In some circumstances, if you are working with other XML systems, such as XSLT or XAML, you need to control namespace prefixes. For example, if you have an XPath expression that uses namespace prefixes and is embedded in an XSLT stylesheet, you must make sure that your XML document is serialized with namespace prefixes that match those used in the XPath expression.  
   

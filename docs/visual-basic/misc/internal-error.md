@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Internal error (Visual Basic)
-An internal malfunction has occurred in [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+An internal malfunction has occurred in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 ## To correct this error  
   

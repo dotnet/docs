@@ -35,11 +35,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Strings in Visual Basic
-This section describes the basic concepts behind using strings in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+This section describes the basic concepts behind using strings in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 ## In This Section  
  [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)  
- Lists topics that describe the basic concepts behind using strings in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+ Lists topics that describe the basic concepts behind using strings in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
  [How to: Create Strings Using a StringBuilder in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/how-to-create-strings-using-a-stringbuilder.md)  
  Demonstrates how to efficiently create a long string from many smaller strings.  

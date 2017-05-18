@@ -92,7 +92,7 @@ End Module
 ## Example  
  The following example creates a document that contains multiple namespaces, both with namespace prefixes.  
   
- When serializing an XML tree, [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] emits namespace declarations as required so that each element is in its designated namespace.  
+ When serializing an XML tree, [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] emits namespace declarations as required so that each element is in its designated namespace.  
   
 ```vb  
 Imports <xmlns:aw="http://www.adventure-works.com">  

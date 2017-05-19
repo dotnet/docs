@@ -1,7 +1,7 @@
 # [Welcome](welcome.md)
 
 <!-- Start of .NET Platform Guide -->
-# [.NET Platform Guide](standard/)
+# [.NET Platform Guide](standard/index.md)
 ## [Get Started with .NET](standard/get-started.md)
 ## [Tour of .NET](standard/tour.md)
 ## [.NET Architectural Components](standard/components.md)

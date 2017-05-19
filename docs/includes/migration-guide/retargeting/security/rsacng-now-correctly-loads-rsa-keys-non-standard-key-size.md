@@ -1,4 +1,4 @@
-### 148: RSACng now correctly loads RSA keys of non-standard key size
+### RSACng now correctly loads RSA keys of non-standard key size
 
 |   |   |
 |---|---|

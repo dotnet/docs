@@ -1,4 +1,4 @@
-### 151: DataGridCellsPanel.BringIndexIntoView throws ArgumentOutOfRangeException
+### DataGridCellsPanel.BringIndexIntoView throws ArgumentOutOfRangeException
 
 |   |   |
 |---|---|

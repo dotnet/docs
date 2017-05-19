@@ -1,4 +1,4 @@
-### 23: New (ambiguous) Dispatcher.Invoke overloads could result in different behavior
+### New (ambiguous) Dispatcher.Invoke overloads could result in different behavior
 
 |   |   |
 |---|---|

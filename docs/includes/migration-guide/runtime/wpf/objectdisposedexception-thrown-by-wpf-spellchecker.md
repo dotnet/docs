@@ -1,4 +1,4 @@
-### 174: ObjectDisposedException thrown by WPF spellchecker
+### ObjectDisposedException thrown by WPF spellchecker
 
 |   |   |
 |---|---|

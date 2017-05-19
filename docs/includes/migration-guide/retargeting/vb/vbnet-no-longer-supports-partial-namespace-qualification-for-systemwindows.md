@@ -1,4 +1,4 @@
-### 127: VB.NET no longer supports partial namespace qualification for System.Windows APIs
+### VB.NET no longer supports partial namespace qualification for System.Windows APIs
 
 |   |   |
 |---|---|

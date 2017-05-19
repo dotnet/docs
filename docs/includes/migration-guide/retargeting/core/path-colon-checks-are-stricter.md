@@ -1,4 +1,4 @@
-### 158: Path colon checks are stricter
+### Path colon checks are stricter
 
 |   |   |
 |---|---|

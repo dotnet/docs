@@ -1,4 +1,4 @@
-### 106: Exception message has changed for failed DataContract serialization in case of an unknown type
+### Exception message has changed for failed DataContract serialization in case of an unknown type
 
 |   |   |
 |---|---|

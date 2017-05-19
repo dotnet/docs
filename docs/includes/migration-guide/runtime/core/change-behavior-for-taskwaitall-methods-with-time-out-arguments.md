@@ -1,4 +1,4 @@
-### 26: Change in behavior for Task.WaitAll methods with time-out arguments
+### Change in behavior for Task.WaitAll methods with time-out arguments
 
 |   |   |
 |---|---|

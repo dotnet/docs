@@ -1,4 +1,4 @@
-### 104: Calling Items.Refresh on a WPF ListBox, ListView, or DataGrid with items selected can cause duplicate items to appear in the element
+### Calling Items.Refresh on a WPF ListBox, ListView, or DataGrid with items selected can cause duplicate items to appear in the element
 
 |   |   |
 |---|---|

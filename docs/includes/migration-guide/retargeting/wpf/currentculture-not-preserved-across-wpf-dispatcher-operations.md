@@ -1,4 +1,4 @@
-### 145: CurrentCulture is not preserved across WPF Dispatcher operations
+### CurrentCulture is not preserved across WPF Dispatcher operations
 
 |   |   |
 |---|---|

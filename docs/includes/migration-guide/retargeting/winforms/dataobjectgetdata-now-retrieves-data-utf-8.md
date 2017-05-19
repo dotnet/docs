@@ -1,4 +1,4 @@
-### 73: DataObject.GetData now retrieves data as UTF-8
+### DataObject.GetData now retrieves data as UTF-8
 
 |   |   |
 |---|---|

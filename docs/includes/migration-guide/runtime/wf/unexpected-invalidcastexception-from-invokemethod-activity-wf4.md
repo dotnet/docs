@@ -1,4 +1,4 @@
-### 88: Unexpected InvalidCastException from InvokeMethod activity in WF4
+### Unexpected InvalidCastException from InvokeMethod activity in WF4
 
 |   |   |
 |---|---|

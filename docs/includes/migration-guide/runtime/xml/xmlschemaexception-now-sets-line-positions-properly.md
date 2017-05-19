@@ -1,4 +1,4 @@
-### 19: XmlSchemaException now sets line positions properly
+### XmlSchemaException now sets line positions properly
 
 |   |   |
 |---|---|

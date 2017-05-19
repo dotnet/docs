@@ -1,4 +1,4 @@
-### 180: Workflow SQL persistence adds primary key clusters and disallows null values in some columns
+### Workflow SQL persistence adds primary key clusters and disallows null values in some columns
 
 |   |   |
 |---|---|

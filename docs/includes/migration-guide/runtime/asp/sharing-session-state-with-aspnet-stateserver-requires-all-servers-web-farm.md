@@ -1,4 +1,4 @@
-### 128: Sharing session state with Asp.Net StateServer requires all servers in the web farm to use the same .NET Framework version
+### Sharing session state with Asp.Net StateServer requires all servers in the web farm to use the same .NET Framework version
 
 |   |   |
 |---|---|

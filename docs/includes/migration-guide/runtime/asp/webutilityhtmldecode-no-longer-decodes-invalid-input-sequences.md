@@ -1,4 +1,4 @@
-### 61: WebUtility.HtmlDecode no longer decodes invalid input sequences
+### WebUtility.HtmlDecode no longer decodes invalid input sequences
 
 |   |   |
 |---|---|

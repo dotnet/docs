@@ -1,4 +1,4 @@
-### 156: SignedXml and EncryptedXml Breaking Changes
+### SignedXml and EncryptedXml Breaking Changes
 
 |   |   |
 |---|---|

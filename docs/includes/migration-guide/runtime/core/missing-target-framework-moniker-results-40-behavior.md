@@ -1,4 +1,4 @@
-### 13: Missing Target Framework Moniker results in 4.0 behavior
+### Missing Target Framework Moniker results in 4.0 behavior
 
 |   |   |
 |---|---|

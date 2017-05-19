@@ -1,4 +1,4 @@
-### 56: Compiler support for type forwarding when multi-targeting mscorlib
+### Compiler support for type forwarding when multi-targeting mscorlib
 
 |   |   |
 |---|---|

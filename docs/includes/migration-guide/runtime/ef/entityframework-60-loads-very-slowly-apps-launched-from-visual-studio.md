@@ -1,4 +1,4 @@
-### 91: EntityFramework 6.0 loads very slowly in apps launched from Visual Studio
+### EntityFramework 6.0 loads very slowly in apps launched from Visual Studio
 
 |   |   |
 |---|---|

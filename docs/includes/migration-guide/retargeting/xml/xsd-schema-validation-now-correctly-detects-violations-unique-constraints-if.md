@@ -1,4 +1,4 @@
-### 111: XSD Schema validation now correctly detects violations of unique constraints if compound keys are used and one key is empty
+### XSD Schema validation now correctly detects violations of unique constraints if compound keys are used and one key is empty
 
 |   |   |
 |---|---|

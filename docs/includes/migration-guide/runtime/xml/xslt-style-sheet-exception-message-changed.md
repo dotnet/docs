@@ -1,4 +1,4 @@
-### 35: XSLT style sheet exception message changed
+### XSLT style sheet exception message changed
 
 |   |   |
 |---|---|

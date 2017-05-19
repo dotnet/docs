@@ -1,4 +1,4 @@
-### 31: EventSource.WriteEvent impls must pass WriteEvent the same parameters that it received (plus ID)
+### EventSource.WriteEvent impls must pass WriteEvent the same parameters that it received (plus ID)
 
 |   |   |
 |---|---|

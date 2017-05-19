@@ -1,4 +1,4 @@
-### 51: WPF TextBox defaults to undo limit of 100
+### WPF TextBox defaults to undo limit of 100
 
 |   |   |
 |---|---|

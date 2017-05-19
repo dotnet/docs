@@ -1,4 +1,4 @@
-### 3: WPF DataTemplate elements are now visible to UIA
+### WPF DataTemplate elements are now visible to UIA
 
 |   |   |
 |---|---|

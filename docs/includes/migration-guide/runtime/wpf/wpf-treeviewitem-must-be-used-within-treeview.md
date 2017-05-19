@@ -1,4 +1,4 @@
-### 141: WPF TreeViewItem must be used within a TreeView
+### WPF TreeViewItem must be used within a TreeView
 
 |   |   |
 |---|---|

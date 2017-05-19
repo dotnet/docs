@@ -1,4 +1,4 @@
-### 172: WPF Pointer-Based Touch Stack
+### WPF Pointer-Based Touch Stack
 
 |   |   |
 |---|---|

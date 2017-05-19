@@ -1,4 +1,4 @@
-### 167: WCF message security now is able to use TLS1.1 and TLS1.2
+### WCF message security now is able to use TLS1.1 and TLS1.2
 
 |   |   |
 |---|---|

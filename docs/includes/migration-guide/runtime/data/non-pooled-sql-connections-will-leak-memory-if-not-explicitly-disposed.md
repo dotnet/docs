@@ -1,4 +1,4 @@
-### 97: Non-pooled SQL connections will leak memory if not explicitly disposed
+### Non-pooled SQL connections will leak memory if not explicitly disposed
 
 |   |   |
 |---|---|

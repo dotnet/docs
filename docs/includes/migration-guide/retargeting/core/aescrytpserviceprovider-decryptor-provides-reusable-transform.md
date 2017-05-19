@@ -1,4 +1,4 @@
-### 165: AesCrytpServiceProvider decryptor provides a reusable transform
+### AesCrytpServiceProvider decryptor provides a reusable transform
 
 |   |   |
 |---|---|

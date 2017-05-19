@@ -1,4 +1,4 @@
-### 164: Calls to ClaimsIdentity constructors
+### Calls to ClaimsIdentity constructors
 
 |   |   |
 |---|---|

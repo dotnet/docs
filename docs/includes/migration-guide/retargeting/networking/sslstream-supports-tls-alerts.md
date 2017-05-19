@@ -1,4 +1,4 @@
-### 181: SslStream supports TLS Alerts
+### SslStream supports TLS Alerts
 
 |   |   |
 |---|---|

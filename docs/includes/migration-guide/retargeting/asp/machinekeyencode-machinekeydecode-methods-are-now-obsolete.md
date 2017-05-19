@@ -1,4 +1,4 @@
-### 28: MachineKey.Encode and MachineKey.Decode methods are now obsolete
+### MachineKey.Encode and MachineKey.Decode methods are now obsolete
 
 |   |   |
 |---|---|

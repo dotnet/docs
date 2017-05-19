@@ -1,4 +1,4 @@
-### 99: Binding a WPF selector property (such as 'SelectedItem') to a static property does not work
+### Binding a WPF selector property (such as 'SelectedItem') to a static property does not work
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 87: WPF spawns a wisptis.exe process which can freeze the mouse
+### WPF spawns a wisptis.exe process which can freeze the mouse
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 79: ClickOnce supports SHA-256 on 4.0-targeted apps
+### ClickOnce supports SHA-256 on 4.0-targeted apps
 
 |   |   |
 |---|---|

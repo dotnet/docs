@@ -1,4 +1,4 @@
-### 157: Unicode standard version 8.0 categories now supported
+### Unicode standard version 8.0 categories now supported
 
 |   |   |
 |---|---|

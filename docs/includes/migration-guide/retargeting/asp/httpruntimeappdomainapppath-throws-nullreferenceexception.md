@@ -1,4 +1,4 @@
-### 183: HttpRuntime.AppDomainAppPath Throws a NullReferenceException
+### HttpRuntime.AppDomainAppPath Throws a NullReferenceException
 
 |   |   |
 |---|---|

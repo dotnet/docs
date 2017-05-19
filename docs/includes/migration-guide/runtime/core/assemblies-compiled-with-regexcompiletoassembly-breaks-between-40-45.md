@@ -1,4 +1,4 @@
-### 74: Assemblies compiled with Regex.CompileToAssembly breaks between 4.0 and 4.5
+### Assemblies compiled with Regex.CompileToAssembly breaks between 4.0 and 4.5
 
 |   |   |
 |---|---|

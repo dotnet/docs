@@ -1,4 +1,4 @@
-### 160: Connection pool blocking period for Azure SQL databases is removed
+### Connection pool blocking period for Azure SQL databases is removed
 
 |   |   |
 |---|---|

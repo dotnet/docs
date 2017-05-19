@@ -1,4 +1,4 @@
-### 59: Log file name created by the ObjectContext.CreateDatabase method has changed to match SQL Server specifications
+### Log file name created by the ObjectContext.CreateDatabase method has changed to match SQL Server specifications
 
 |   |   |
 |---|---|

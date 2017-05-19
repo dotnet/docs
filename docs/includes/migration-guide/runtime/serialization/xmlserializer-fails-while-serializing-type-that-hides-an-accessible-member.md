@@ -1,4 +1,4 @@
-### 140: XmlSerializer fails while serializing a type that hides an accessible member with an inaccessible one
+### XmlSerializer fails while serializing a type that hides an accessible member with an inaccessible one
 
 |   |   |
 |---|---|

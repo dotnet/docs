@@ -1,4 +1,4 @@
-### 139: WPF layout rounding of margins has changed
+### WPF layout rounding of margins has changed
 
 |   |   |
 |---|---|

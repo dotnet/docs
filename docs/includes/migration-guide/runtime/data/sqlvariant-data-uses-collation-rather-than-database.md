@@ -1,4 +1,4 @@
-### 72: Sql_variant data uses sql_variant collation rather than database collation
+### Sql_variant data uses sql_variant collation rather than database collation
 
 |   |   |
 |---|---|

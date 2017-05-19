@@ -1,4 +1,4 @@
-### 171: WPF Grid allocation of space to star-columns
+### WPF Grid allocation of space to star-columns
 
 |   |   |
 |---|---|

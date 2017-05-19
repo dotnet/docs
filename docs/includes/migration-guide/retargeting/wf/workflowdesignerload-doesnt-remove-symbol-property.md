@@ -1,4 +1,4 @@
-### 82: WorkflowDesigner.Load doesn't remove symbol property
+### WorkflowDesigner.Load doesn't remove symbol property
 
 |   |   |
 |---|---|

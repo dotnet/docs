@@ -1,4 +1,4 @@
-### 76: X509Certificate2.ToString(bool) does not throw now when .NET cannot handle the certificate
+### X509Certificate2.ToString(bool) does not throw now when .NET cannot handle the certificate
 
 |   |   |
 |---|---|

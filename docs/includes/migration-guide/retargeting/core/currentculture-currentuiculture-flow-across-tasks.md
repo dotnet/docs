@@ -1,4 +1,4 @@
-### 146: CurrentCulture and CurrentUICulture flow across tasks
+### CurrentCulture and CurrentUICulture flow across tasks
 
 |   |   |
 |---|---|

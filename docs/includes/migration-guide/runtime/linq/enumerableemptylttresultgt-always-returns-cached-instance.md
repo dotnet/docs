@@ -1,4 +1,4 @@
-### 42: Enumerable.Empty&lt;TResult&gt; always returns cached instance
+### Enumerable.Empty&lt;TResult&gt; always returns cached instance
 
 |   |   |
 |---|---|

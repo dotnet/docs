@@ -1,4 +1,4 @@
-### 169: Throttle concurrent requests per session
+### Throttle concurrent requests per session
 
 |   |   |
 |---|---|

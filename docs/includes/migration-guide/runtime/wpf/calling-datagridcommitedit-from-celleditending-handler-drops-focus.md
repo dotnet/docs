@@ -1,4 +1,4 @@
-### 124: Calling DataGrid.CommitEdit from a CellEditEnding handler drops focus
+### Calling DataGrid.CommitEdit from a CellEditEnding handler drops focus
 
 |   |   |
 |---|---|

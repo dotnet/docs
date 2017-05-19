@@ -1,4 +1,4 @@
-### 55: Exceptions during unobserved processing in System.Threading.Tasks.Task no longer propagate on finalizer thread
+### Exceptions during unobserved processing in System.Threading.Tasks.Task no longer propagate on finalizer thread
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 44: HttpUtility.JavaScriptStringEncode escapes ampersand
+### HttpUtility.JavaScriptStringEncode escapes ampersand
 
 |   |   |
 |---|---|

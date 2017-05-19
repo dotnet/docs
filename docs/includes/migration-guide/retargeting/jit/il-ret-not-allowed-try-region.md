@@ -1,4 +1,4 @@
-### 80: IL ret not allowed in a try region
+### IL ret not allowed in a try region
 
 |   |   |
 |---|---|

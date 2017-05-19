@@ -1,4 +1,4 @@
-### 182: Calls to System.Windows.Input.PenContext.Disable on touch-enabled systems may throw an ArgumentException
+### Calls to System.Windows.Input.PenContext.Disable on touch-enabled systems may throw an ArgumentException
 
 |   |   |
 |---|---|

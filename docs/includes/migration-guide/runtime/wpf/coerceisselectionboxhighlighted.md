@@ -1,4 +1,4 @@
-### 179: CoerceIsSelectionBoxHighlighted
+### CoerceIsSelectionBoxHighlighted
 
 |   |   |
 |---|---|

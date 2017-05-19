@@ -1,4 +1,4 @@
-### 155: WPF Spell Checking fails in unexpected ways
+### WPF Spell Checking fails in unexpected ways
 
 |   |   |
 |---|---|

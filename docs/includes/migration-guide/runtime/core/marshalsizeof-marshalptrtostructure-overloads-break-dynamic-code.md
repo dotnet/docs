@@ -1,4 +1,4 @@
-### 130: Marshal.SizeOf and Marshal.PtrToStructure overloads break dynamic code
+### Marshal.SizeOf and Marshal.PtrToStructure overloads break dynamic code
 
 |   |   |
 |---|---|

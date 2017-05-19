@@ -1,4 +1,4 @@
-### 118: IPad should not be used in custom capabilities file because it is now a browser capability
+### IPad should not be used in custom capabilities file because it is now a browser capability
 
 |   |   |
 |---|---|

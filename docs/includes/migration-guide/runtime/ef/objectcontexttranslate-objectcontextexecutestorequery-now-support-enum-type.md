@@ -1,4 +1,4 @@
-### 41: ObjectContext.Translate and ObjectContext.ExecuteStoreQuery now support enum type
+### ObjectContext.Translate and ObjectContext.ExecuteStoreQuery now support enum type
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 5: List&lt;T&gt;.ForEach can throw exception when modifying list item
+### List&lt;T&gt;.ForEach can throw exception when modifying list item
 
 |   |   |
 |---|---|

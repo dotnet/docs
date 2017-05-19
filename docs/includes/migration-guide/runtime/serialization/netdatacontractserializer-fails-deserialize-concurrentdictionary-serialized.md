@@ -1,4 +1,4 @@
-### 110: NetDataContractSerializer fails to deserialize a ConcurrentDictionary serialized with a different .NET version
+### NetDataContractSerializer fails to deserialize a ConcurrentDictionary serialized with a different .NET version
 
 |   |   |
 |---|---|

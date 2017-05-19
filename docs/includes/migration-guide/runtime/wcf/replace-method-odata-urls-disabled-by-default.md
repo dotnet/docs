@@ -1,4 +1,4 @@
-### 29: The Replace method in OData URLs is disabled by default
+### The Replace method in OData URLs is disabled by default
 
 |   |   |
 |---|---|

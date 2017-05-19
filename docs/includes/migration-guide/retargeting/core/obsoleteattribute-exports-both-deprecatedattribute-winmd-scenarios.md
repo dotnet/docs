@@ -1,4 +1,4 @@
-### 48: ObsoleteAttribute exports as both ObsoleteAttribute and DeprecatedAttribute in WinMD scenarios
+### ObsoleteAttribute exports as both ObsoleteAttribute and DeprecatedAttribute in WinMD scenarios
 
 |   |   |
 |---|---|

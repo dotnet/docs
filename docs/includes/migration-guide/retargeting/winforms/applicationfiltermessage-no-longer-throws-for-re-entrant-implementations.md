@@ -1,4 +1,4 @@
-### 144: Application.FilterMessage no longer throws for re-entrant implementations of IMessageFilter.PreFilterMessage
+### Application.FilterMessage no longer throws for re-entrant implementations of IMessageFilter.PreFilterMessage
 
 |   |   |
 |---|---|

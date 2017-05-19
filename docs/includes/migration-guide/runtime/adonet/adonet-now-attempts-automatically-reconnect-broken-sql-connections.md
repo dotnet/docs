@@ -1,4 +1,4 @@
-### 119: ADO.NET now attempts to automatically reconnect broken SQL connections
+### ADO.NET now attempts to automatically reconnect broken SQL connections
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 115: AppDomainSetup.DynamicBase is no longer randomized by UseRandomizedStringHashAlgorithm
+### AppDomainSetup.DynamicBase is no longer randomized by UseRandomizedStringHashAlgorithm
 
 |   |   |
 |---|---|

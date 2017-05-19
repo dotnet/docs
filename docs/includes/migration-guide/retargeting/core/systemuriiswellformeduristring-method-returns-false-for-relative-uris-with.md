@@ -1,4 +1,4 @@
-### 121: System.Uri.IsWellFormedUriString method returns false for relative URIs with a colon char in first segment
+### System.Uri.IsWellFormedUriString method returns false for relative URIs with a colon char in first segment
 
 |   |   |
 |---|---|

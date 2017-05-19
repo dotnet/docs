@@ -1,4 +1,4 @@
-### 14: No longer able to set EnableViewStateMac to false
+### No longer able to set EnableViewStateMac to false
 
 |   |   |
 |---|---|

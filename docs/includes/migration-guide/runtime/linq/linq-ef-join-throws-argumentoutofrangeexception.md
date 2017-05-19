@@ -1,4 +1,4 @@
-### 93: Linq to EF Join throws ArgumentOutOfRangeException
+### Linq to EF Join throws ArgumentOutOfRangeException
 
 |   |   |
 |---|---|

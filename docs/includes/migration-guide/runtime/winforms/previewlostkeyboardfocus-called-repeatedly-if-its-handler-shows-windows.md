@@ -1,4 +1,4 @@
-### 131: PreviewLostKeyboardFocus is called repeatedly if its handler shows a Windows Forms message box
+### PreviewLostKeyboardFocus is called repeatedly if its handler shows a Windows Forms message box
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 100: Foreach iterator variable is now scoped within the iteration, so closure capturing semantics are different (in C\#5)
+### Foreach iterator variable is now scoped within the iteration, so closure capturing semantics are different (in C\#5)
 
 |   |   |
 |---|---|

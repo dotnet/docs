@@ -1,4 +1,4 @@
-### 64: Managed browser hosting controls from the .NET Framework 1.1 and 2.0 are blocked
+### Managed browser hosting controls from the .NET Framework 1.1 and 2.0 are blocked
 
 |   |   |
 |---|---|

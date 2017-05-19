@@ -1,4 +1,4 @@
-### 71: SqlBulkCopy uses destination column encoding for strings
+### SqlBulkCopy uses destination column encoding for strings
 
 |   |   |
 |---|---|

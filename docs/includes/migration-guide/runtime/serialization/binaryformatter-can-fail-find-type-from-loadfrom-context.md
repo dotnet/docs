@@ -1,4 +1,4 @@
-### 147: BinaryFormatter can fail to find type from LoadFrom context
+### BinaryFormatter can fail to find type from LoadFrom context
 
 |   |   |
 |---|---|

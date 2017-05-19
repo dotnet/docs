@@ -1,4 +1,4 @@
-### 96: Profiling ASP.Net MVC4 apps can lead to Fatal Execution Engine Error
+### Profiling ASP.Net MVC4 apps can lead to Fatal Execution Engine Error
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 39: System.Threading.Tasks.Task no longer throw ObjectDisposedException after object is disposed
+### System.Threading.Tasks.Task no longer throw ObjectDisposedException after object is disposed
 
 |   |   |
 |---|---|

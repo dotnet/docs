@@ -1,4 +1,4 @@
-### 89: Type.IsAssignableFrom returns wrong result for generic variables with constraints
+### Type.IsAssignableFrom returns wrong result for generic variables with constraints
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 161: Changing the IsEnabled property of the parent of a TextBlock control affects any child controls
+### Changing the IsEnabled property of the parent of a TextBlock control affects any child controls
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 153: Horizontal scrolling and virtualization
+### Horizontal scrolling and virtualization
 
 |   |   |
 |---|---|

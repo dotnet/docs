@@ -1,4 +1,4 @@
-### 69: EF no longer throws for QueryViews with specific characteristics
+### EF no longer throws for QueryViews with specific characteristics
 
 |   |   |
 |---|---|

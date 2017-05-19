@@ -1,4 +1,4 @@
-### 67: Deserialization of objects across appdomains can fail
+### Deserialization of objects across appdomains can fail
 
 |   |   |
 |---|---|

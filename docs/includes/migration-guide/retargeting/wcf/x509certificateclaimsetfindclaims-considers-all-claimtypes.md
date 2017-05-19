@@ -1,4 +1,4 @@
-### 143: X509CertificateClaimSet.FindClaims Considers All claimTypes
+### X509CertificateClaimSet.FindClaims Considers All claimTypes
 
 |   |   |
 |---|---|

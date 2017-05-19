@@ -1,4 +1,4 @@
-### 159: RSACng.VerifyHash now returns False for any verification failure
+### RSACng.VerifyHash now returns False for any verification failure
 
 |   |   |
 |---|---|

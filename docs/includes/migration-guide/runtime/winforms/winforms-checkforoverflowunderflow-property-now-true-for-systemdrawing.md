@@ -1,4 +1,4 @@
-### 53: WinForm's CheckForOverflowUnderflow property is now true for System.Drawing
+### WinForm's CheckForOverflowUnderflow property is now true for System.Drawing
 
 |   |   |
 |---|---|

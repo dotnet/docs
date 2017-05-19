@@ -1,4 +1,4 @@
-### 173: WPF Printing Stack Update
+### WPF Printing Stack Update
 
 |   |   |
 |---|---|

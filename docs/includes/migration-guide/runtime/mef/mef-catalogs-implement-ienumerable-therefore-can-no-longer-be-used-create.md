@@ -1,4 +1,4 @@
-### 12: MEF catalogs implement IEnumerable and therefore can no longer be used to create a serializer
+### MEF catalogs implement IEnumerable and therefore can no longer be used to create a serializer
 
 |   |   |
 |---|---|

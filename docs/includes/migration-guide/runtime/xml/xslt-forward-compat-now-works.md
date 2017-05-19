@@ -1,4 +1,4 @@
-### 34: XSLT forward compat now works
+### XSLT forward compat now works
 
 |   |   |
 |---|---|

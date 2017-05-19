@@ -1,4 +1,4 @@
-### 103: Right clicking on a WPF DataGrid row header changes the DataGrid selection
+### Right clicking on a WPF DataGrid row header changes the DataGrid selection
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 77: Reflection objects can no longer be passed from managed code to out-of-process DCOM clients
+### Reflection objects can no longer be passed from managed code to out-of-process DCOM clients
 
 |   |   |
 |---|---|

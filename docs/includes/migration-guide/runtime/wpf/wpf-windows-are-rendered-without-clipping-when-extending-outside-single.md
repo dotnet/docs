@@ -1,4 +1,4 @@
-### 135: WPF windows are rendered without clipping when extending outside a single monitor
+### WPF windows are rendered without clipping when extending outside a single monitor
 
 |   |   |
 |---|---|

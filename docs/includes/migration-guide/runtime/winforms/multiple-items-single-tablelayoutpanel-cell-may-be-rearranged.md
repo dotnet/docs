@@ -1,4 +1,4 @@
-### 98: Multiple items in a single TableLayoutPanel cell may be rearranged
+### Multiple items in a single TableLayoutPanel cell may be rearranged
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 68: DbParameter.Precision and DbParameter.Scale are now public virtual members
+### DbParameter.Precision and DbParameter.Scale are now public virtual members
 
 |   |   |
 |---|---|

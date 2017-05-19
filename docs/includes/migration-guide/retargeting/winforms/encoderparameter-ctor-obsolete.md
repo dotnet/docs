@@ -1,4 +1,4 @@
-### 24: EncoderParameter ctor is obsolete
+### EncoderParameter ctor is obsolete
 
 |   |   |
 |---|---|

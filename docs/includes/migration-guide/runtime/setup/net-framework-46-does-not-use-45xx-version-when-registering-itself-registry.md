@@ -1,4 +1,4 @@
-### 122: The .NET Framework 4.6 does not use a 4.5.x.x version when registering itself in the registry
+### The .NET Framework 4.6 does not use a 4.5.x.x version when registering itself in the registry
 
 |   |   |
 |---|---|

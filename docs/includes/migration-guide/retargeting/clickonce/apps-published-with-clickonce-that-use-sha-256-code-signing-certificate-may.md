@@ -1,4 +1,4 @@
-### 63: Apps published with ClickOnce that use a SHA-256 code-signing certificate may fail on Windows 2003
+### Apps published with ClickOnce that use a SHA-256 code-signing certificate may fail on Windows 2003
 
 |   |   |
 |---|---|

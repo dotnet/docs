@@ -1,4 +1,4 @@
-### 2: XML schema validation is stricter
+### XML schema validation is stricter
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 38: WPF DispatcherSynchronizationContext.CreateCopy now returns a new copy instead of the current instance
+### WPF DispatcherSynchronizationContext.CreateCopy now returns a new copy instead of the current instance
 
 |   |   |
 |---|---|

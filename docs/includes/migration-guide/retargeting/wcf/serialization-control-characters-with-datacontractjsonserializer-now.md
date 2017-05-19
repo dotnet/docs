@@ -1,4 +1,4 @@
-### 168: Serialization of control characters with DataContractJsonSerializer is now compatible with ECMAScript V6 and V8
+### Serialization of control characters with DataContractJsonSerializer is now compatible with ECMAScript V6 and V8
 
 |   |   |
 |---|---|

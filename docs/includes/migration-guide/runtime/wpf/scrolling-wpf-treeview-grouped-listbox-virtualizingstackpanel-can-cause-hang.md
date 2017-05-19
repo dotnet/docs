@@ -1,4 +1,4 @@
-### 86: Scrolling a WPF TreeView or grouped ListBox in a VirtualizingStackPanel can cause a hang
+### Scrolling a WPF TreeView or grouped ListBox in a VirtualizingStackPanel can cause a hang
 
 |   |   |
 |---|---|

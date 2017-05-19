@@ -1,4 +1,4 @@
-### 27: Change in behavior in Data Definition Language (DDL) APIs
+### Change in behavior in Data Definition Language (DDL) APIs
 
 |   |   |
 |---|---|

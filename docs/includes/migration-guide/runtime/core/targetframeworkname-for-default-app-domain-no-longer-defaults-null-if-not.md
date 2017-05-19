@@ -1,4 +1,4 @@
-### 75: TargetFrameworkName for default app domain no longer defaults to null if not set
+### TargetFrameworkName for default app domain no longer defaults to null if not set
 
 |   |   |
 |---|---|

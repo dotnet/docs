@@ -1,4 +1,4 @@
-### 101: HtmlTextWriter does not render `<br/>` element correctly
+### HtmlTextWriter does not render `<br/>` element correctly
 
 |   |   |
 |---|---|

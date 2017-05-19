@@ -1,4 +1,4 @@
-### 138: Calling CreateDefaultAuthorizationContext with a null argument has changed
+### Calling CreateDefaultAuthorizationContext with a null argument has changed
 
 |   |   |
 |---|---|

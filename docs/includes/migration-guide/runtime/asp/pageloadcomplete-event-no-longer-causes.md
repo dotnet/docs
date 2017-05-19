@@ -1,4 +1,4 @@
-### 60: Page.LoadComplete event no longer causes System.Web.UI.WebControls.EntityDataSource control to invoke data binding
+### Page.LoadComplete event no longer causes System.Web.UI.WebControls.EntityDataSource control to invoke data binding
 
 |   |   |
 |---|---|

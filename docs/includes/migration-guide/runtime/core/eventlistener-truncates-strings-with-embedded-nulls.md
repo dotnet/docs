@@ -1,4 +1,4 @@
-### 46: EventListener truncates strings with embedded nulls
+### EventListener truncates strings with embedded nulls
 
 |   |   |
 |---|---|

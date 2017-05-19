@@ -1,4 +1,4 @@
-### 134: Persian calendar now uses the Hijri solar algorithm
+### Persian calendar now uses the Hijri solar algorithm
 
 |   |   |
 |---|---|

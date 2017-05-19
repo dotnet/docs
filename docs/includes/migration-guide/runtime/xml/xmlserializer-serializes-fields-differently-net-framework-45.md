@@ -1,4 +1,4 @@
-### 94: XmlSerializer serializes fields differently in .NET Framework 4.5
+### XmlSerializer serializes fields differently in .NET Framework 4.5
 
 |   |   |
 |---|---|

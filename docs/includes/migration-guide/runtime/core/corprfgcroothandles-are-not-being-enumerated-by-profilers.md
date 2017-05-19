@@ -1,4 +1,4 @@
-### 117: COR_PRF_GC_ROOT_HANDLEs are not being enumerated by profilers
+### COR_PRF_GC_ROOT_HANDLEs are not being enumerated by profilers
 
 |   |   |
 |---|---|

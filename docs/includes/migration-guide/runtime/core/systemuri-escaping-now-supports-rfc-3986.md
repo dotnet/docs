@@ -1,4 +1,4 @@
-### 10: System.Uri escaping now supports RFC 3986
+### System.Uri escaping now supports RFC 3986
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 162: Long path support
+### Long path support
 
 |   |   |
 |---|---|

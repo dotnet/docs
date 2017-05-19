@@ -1,4 +1,4 @@
-### 20: System.Activities is now APTCA
+### System.Activities is now APTCA
 
 |   |   |
 |---|---|

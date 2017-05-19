@@ -1,4 +1,4 @@
-### 11: System.Net.PeerToPeer.Collaboration unavailable on Windows 8
+### System.Net.PeerToPeer.Collaboration unavailable on Windows 8
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 129: Two-way data-binding to a property with a non-public setter is not supported
+### Two-way data-binding to a property with a non-public setter is not supported
 
 |   |   |
 |---|---|

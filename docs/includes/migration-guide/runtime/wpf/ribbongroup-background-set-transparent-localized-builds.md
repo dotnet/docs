@@ -1,4 +1,4 @@
-### 175: RibbonGroup background is set to transparent in localized builds
+### RibbonGroup background is set to transparent in localized builds
 
 |   |   |
 |---|---|

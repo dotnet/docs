@@ -1,4 +1,4 @@
-### 113: Intermittently unable to scroll to bottom item in ItemsControls (like ListBox and DataGrid) when using custom DataTemplates
+### Intermittently unable to scroll to bottom item in ItemsControls (like ListBox and DataGrid) when using custom DataTemplates
 
 |   |   |
 |---|---|

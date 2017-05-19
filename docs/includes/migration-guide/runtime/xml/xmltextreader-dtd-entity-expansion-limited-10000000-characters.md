@@ -1,4 +1,4 @@
-### 33: XmlTextReader DTD entity expansion is limited to 10,000,000 characters
+### XmlTextReader DTD entity expansion is limited to 10,000,000 characters
 
 |   |   |
 |---|---|

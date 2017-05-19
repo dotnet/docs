@@ -1,4 +1,4 @@
-### 83: SqlConnection.Open fails on Windows 7 with non-IFS Winsock BSP or LSP present
+### SqlConnection.Open fails on Windows 7 with non-IFS Winsock BSP or LSP present
 
 |   |   |
 |---|---|

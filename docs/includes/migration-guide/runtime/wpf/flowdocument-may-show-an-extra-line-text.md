@@ -1,4 +1,4 @@
-### 120: FlowDocument may show an extra line of text
+### FlowDocument may show an extra line of text
 
 |   |   |
 |---|---|

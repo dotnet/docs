@@ -1,4 +1,4 @@
-### 170: Workflow now throws original exception instead of NullReferenceException in some cases
+### Workflow now throws original exception instead of NullReferenceException in some cases
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 32: MinFreeMemoryPercentageToActiveService is now respected
+### MinFreeMemoryPercentageToActiveService is now respected
 
 |   |   |
 |---|---|

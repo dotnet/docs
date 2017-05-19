@@ -1,4 +1,4 @@
-### 163: Changes in path normalization
+### Changes in path normalization
 
 |   |   |
 |---|---|

@@ -1,4 +1,4 @@
-### 1: SoapFormatter cannot deserialize Hashtable and similar ordered collection objects
+### SoapFormatter cannot deserialize Hashtable and similar ordered collection objects
 
 |   |   |
 |---|---|

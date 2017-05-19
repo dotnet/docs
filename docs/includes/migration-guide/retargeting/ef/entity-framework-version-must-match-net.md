@@ -1,4 +1,4 @@
-### 25: Entity Framework version must match the .NET Framework version
+### Entity Framework version must match the .NET Framework version
 
 |   |   |
 |---|---|

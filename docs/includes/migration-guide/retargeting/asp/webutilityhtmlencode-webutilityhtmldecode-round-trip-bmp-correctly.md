@@ -1,4 +1,4 @@
-### 62: WebUtility.HtmlEncode and WebUtility.HtmlDecode round-trip BMP correctly
+### WebUtility.HtmlEncode and WebUtility.HtmlDecode round-trip BMP correctly
 
 |   |   |
 |---|---|

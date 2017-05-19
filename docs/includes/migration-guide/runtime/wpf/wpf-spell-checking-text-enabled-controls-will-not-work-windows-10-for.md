@@ -1,4 +1,4 @@
-### 136: WPF spell checking in text-enabled controls will not work in Windows 10 for languages not in the OS's input language list
+### WPF spell checking in text-enabled controls will not work in Windows 10 for languages not in the OS's input language list
 
 |   |   |
 |---|---|

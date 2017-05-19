@@ -1,4 +1,4 @@
-### 50: Opt-in break to revert from different 4.5 SQL generation to simpler 4.0 SQL generation
+### Opt-in break to revert from different 4.5 SQL generation to simpler 4.0 SQL generation
 
 |   |   |
 |---|---|

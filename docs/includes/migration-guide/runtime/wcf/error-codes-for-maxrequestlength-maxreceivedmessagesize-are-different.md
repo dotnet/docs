@@ -1,4 +1,4 @@
-### 45: Error codes for maxRequestLength or maxReceivedMessageSize are different
+### Error codes for maxRequestLength or maxReceivedMessageSize are different
 
 |   |   |
 |---|---|

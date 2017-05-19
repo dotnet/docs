@@ -1,4 +1,4 @@
-### 81: XmlWriter throws on invalid surrogate pairs
+### XmlWriter throws on invalid surrogate pairs
 
 |   |   |
 |---|---|

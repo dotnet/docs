@@ -1,4 +1,4 @@
-### 154: Items.Clear does not remove duplicates from SelectedItems
+### Items.Clear does not remove duplicates from SelectedItems
 
 |   |   |
 |---|---|

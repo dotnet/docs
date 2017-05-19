@@ -1,4 +1,4 @@
-### 142: WCF binding with the TransportWithMessageCredential security mode
+### WCF binding with the TransportWithMessageCredential security mode
 
 |   |   |
 |---|---|

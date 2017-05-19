@@ -1,4 +1,4 @@
-### 178: CspParameters.ParentWindowHandle now expects HWND value
+### CspParameters.ParentWindowHandle now expects HWND value
 
 |   |   |
 |---|---|

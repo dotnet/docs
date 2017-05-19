@@ -1,4 +1,4 @@
-### 150: Incorrect implementation of MemberDescriptor.Equals
+### Incorrect implementation of MemberDescriptor.Equals
 
 |   |   |
 |---|---|

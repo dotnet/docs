@@ -1,4 +1,4 @@
-### 166: WCF transport security supports certificates stored using CNG
+### WCF transport security supports certificates stored using CNG
 
 |   |   |
 |---|---|

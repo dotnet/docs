@@ -1,4 +1,4 @@
-### 22: Some WorkFlow drag-and-drop APIs are obsolete
+### Some WorkFlow drag-and-drop APIs are obsolete
 
 |   |   |
 |---|---|

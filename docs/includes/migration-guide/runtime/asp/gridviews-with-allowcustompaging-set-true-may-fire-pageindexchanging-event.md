@@ -1,4 +1,4 @@
-### 116: GridViews with AllowCustomPaging set to true may fire the PageIndexChanging event when leaving the final page of the view
+### GridViews with AllowCustomPaging set to true may fire the PageIndexChanging event when leaving the final page of the view
 
 |   |   |
 |---|---|

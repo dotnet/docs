@@ -1,4 +1,4 @@
-### 85: Some .NET APIs cause first chance (handled) EntryPointNotFoundExceptions
+### Some .NET APIs cause first chance (handled) EntryPointNotFoundExceptions
 
 |   |   |
 |---|---|

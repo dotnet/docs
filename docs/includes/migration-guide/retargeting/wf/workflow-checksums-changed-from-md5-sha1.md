@@ -1,4 +1,4 @@
-### 176: Workflow checksums changed from MD5 to SHA1
+### Workflow checksums changed from MD5 to SHA1
 
 |   |   |
 |---|---|

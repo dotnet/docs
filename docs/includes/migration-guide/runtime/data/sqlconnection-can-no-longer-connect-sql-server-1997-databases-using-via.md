@@ -1,4 +1,4 @@
-### 70: SqlConnection can no longer connect to SQL Server 1997 or databases using the VIA adapter
+### SqlConnection can no longer connect to SQL Server 1997 or databases using the VIA adapter
 
 |   |   |
 |---|---|

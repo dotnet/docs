@@ -1,4 +1,4 @@
-### 54: List.Sort algorithm changed
+### List.Sort algorithm changed
 
 |   |   |
 |---|---|

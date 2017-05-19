@@ -1,4 +1,4 @@
-### 40: Different exception handling for ObjectContext.CreateDatabase and DbProviderServices.CreateDatabase methods
+### Different exception handling for ObjectContext.CreateDatabase and DbProviderServices.CreateDatabase methods
 
 |   |   |
 |---|---|

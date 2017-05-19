@@ -1,4 +1,4 @@
-### 47: WinRT stream adapters no long call FlushAsync automatically on close
+### WinRT stream adapters no long call FlushAsync automatically on close
 
 |   |   |
 |---|---|

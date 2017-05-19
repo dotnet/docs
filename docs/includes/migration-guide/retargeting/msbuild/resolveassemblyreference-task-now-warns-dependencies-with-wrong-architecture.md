@@ -1,4 +1,4 @@
-### 49: ResolveAssemblyReference task now warns of dependencies with the wrong architecture
+### ResolveAssemblyReference task now warns of dependencies with the wrong architecture
 
 |   |   |
 |---|---|

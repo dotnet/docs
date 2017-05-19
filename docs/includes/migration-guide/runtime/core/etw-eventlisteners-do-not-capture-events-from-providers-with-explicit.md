@@ -1,4 +1,4 @@
-### 105: ETW EventListeners do not capture events from providers with explicit keywords (like the TPL provider)
+### ETW EventListeners do not capture events from providers with explicit keywords (like the TPL provider)
 
 |   |   |
 |---|---|

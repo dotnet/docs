@@ -1,4 +1,4 @@
-### 4: WPF TextBox selected text appears a different color when the text box is inactive
+### WPF TextBox selected text appears a different color when the text box is inactive
 
 |   |   |
 |---|---|

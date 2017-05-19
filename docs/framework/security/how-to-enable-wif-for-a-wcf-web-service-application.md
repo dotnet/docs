@@ -228,7 +228,6 @@ manager: "mbaldwin"
          </behavior>  
        </endpointBehaviors>  
      </behaviors>  
-  
     ```  
   
      This disables certificate validation.  

@@ -27,7 +27,6 @@ Defines the client endpoint behavior used to marshal messages between different 
 ## Syntax  
   
 ```  
-  
 ```  
   
 ## Attributes and Elements  

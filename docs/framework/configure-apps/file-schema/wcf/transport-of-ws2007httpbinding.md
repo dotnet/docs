@@ -28,7 +28,6 @@ Defines authentication settings for the HTTP transport.
 ## Syntax  
   
 ```  
-  
 transport clientCredentialType =   
        "Basic/Certificate/Digest/None/Ntlm/Windows"  
        proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  

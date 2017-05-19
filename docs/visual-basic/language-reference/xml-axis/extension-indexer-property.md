@@ -44,7 +44,6 @@ Provides access to individual elements in a collection.
 ## Syntax  
   
 ```  
-  
 object(index)  
 ```  
   

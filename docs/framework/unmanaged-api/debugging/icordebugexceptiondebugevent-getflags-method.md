@@ -23,11 +23,9 @@ Gets a flag that indicates whether the exception can be intercepted.
 ## Syntax  
   
 ```  
-  
 HRESULT GetFlags(  
    [out] CorDebugExceptionFlags *pdwFlags  
 );  
-  
 ```  
   
 #### Parameters  

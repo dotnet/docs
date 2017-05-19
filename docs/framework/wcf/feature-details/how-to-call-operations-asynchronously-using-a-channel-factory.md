@@ -28,7 +28,6 @@ This topic covers how a client can access a service operation asynchronously whe
   
     ```  
     svcutil /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost:8000/servicemodelsamples/service/mex /a  
-  
     ```  
   
      This generates an asynchronous client version of the service contract for the operation.  

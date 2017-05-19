@@ -37,7 +37,6 @@ Contains mappings of classes to friendly names.
 ## Syntax  
   
 ```  
-  
       <cryptoNameMapping>   
 </cryptoNameMapping>  
 ```  

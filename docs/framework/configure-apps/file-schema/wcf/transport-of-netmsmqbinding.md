@@ -28,7 +28,6 @@ Defines the transport security settings.
 ## Syntax  
   
 ```  
-  
 <netMsmqBinding>  
     <binding>  
     <security>  

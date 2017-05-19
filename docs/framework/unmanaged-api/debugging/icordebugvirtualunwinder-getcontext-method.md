@@ -23,14 +23,12 @@ Gets the current context of this unwinder.
 ## Syntax  
   
 ```  
-  
 HRESULT GetContext(  
    [in] ULONG32 contextFlags,  
    [in] ULONG32 cbContextBuf,  
    [out] ULONG32* contextSize,  
    [out, size_is(cbContextBuf)] BYTE contextBuf[]  
 );  
-  
 ```  
   
 #### Parameters  

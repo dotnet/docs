@@ -39,7 +39,6 @@ public interface IStockTicker
     [OperationContract(IsOneWay = true)]  
     void StockTick(string symbol, float price);  
 }  
-  
 ```  
   
  The service operation displays the stock ticker symbol and price, as shown in the following sample code:  
@@ -53,7 +52,6 @@ public class StockTickerService : IStockTicker
      }  
      …  
 }  
-  
 ```  
   
  The service is self hosted. When using the MSMQ transport, the queue used must be created in advance. This can be done manually or through code. In this sample, the service contains code to check for the existence of the queue and create it if required. The queue name is read from the configuration file. The base address is used by the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) to generate the proxy for the service.  
@@ -85,7 +83,6 @@ public static void Main()
         serviceHost.Close();  
     }  
 }  
-  
 ```  
   
  The MSMQ queue name is specified in the appSettings section of the configuration file. The endpoint for the service is defined in the system.serviceModel section of the configuration file and specifies the `netMsmqBinding` binding.  
@@ -124,7 +121,6 @@ public static void Main()
   </bindings>  
   ...  
 </system.serviceModel>  
-  
 ```  
   
  Because the sample sends queued messages by using a non-transactional queue, transacted messages cannot be sent to the queue.  
@@ -144,7 +140,6 @@ for (int i = 0; i < 10; i++)
   
 //Closing the client gracefully cleans up resources.  
 client.Close();  
-  
 ```  
   
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client. Note that because queuing is in use, the client and service do not have to be up and running at the same time. You can run the client, shut it down, and then start up the service and it still receives its messages.  
@@ -222,7 +217,6 @@ Stock Tick zzz9:43.3
         </behaviors>  
   
       </system.serviceModel>  
-  
     ```  
   
 2.  Ensure that you change the configuration on both the server and the client before you run the sample.  

@@ -23,11 +23,9 @@ Sets the context (register values) for a thread.
 ## Syntax  
   
 ```  
-  
 HRESULT SetThreadContext(  
    [in] DWORD dwThreadID,  
    [in] ULONG32 contextSize,   [in, size_is(contextSize)] const BYTE * pContext);  
-  
 ```  
   
 #### Parameters  

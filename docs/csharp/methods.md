@@ -274,14 +274,12 @@ An async method can't declare any [ref](https://msdn.microsoft.com/library/14akc
 It is common to have method definitions that simply return immediately with the result of an expression, or that have a single statement as the body of the method.  There is a syntax shortcut for defining such methods using `=>`:
 
 ```csharp
-
 public Point Move(int dx, int dy) => new Point(x + dx, y + dy);
 public void Print() => Console.WriteLine(First + " " + Last);
 // Works with operators, properties, and indexers too.
 public static Complex operator +(Complex a, Complex b) => a.Add(b);
 public string Name => First + " " + Last;
 public Customer this[long id] => store.LookupCustomer(id);
-
 ```
 
 If the method returns `void` or is an async method, the body of the method must be a statement expression (same as with lambdas).  For properties and indexers, they must be read-only, and you do not use the `get` accessor keyword.
@@ -297,11 +295,11 @@ For more information, see [Iterators](https://msdn.microsoft.com/library/mt63933
 
 ## See also ##
 
-[Access Modifiers](https://msdn.microsoft.com/library/wxh6fsc7.aspx)
-[Static Classes and Static Class Members](https://msdn.microsoft.com/library/79b3xss3.aspx)
-[Inheritance](https://msdn.microsoft.com/library/ms173149.aspx)
-[Abstract and Sealed Classes and Class Members](https://msdn.microsoft.com/library/ms173150.aspx)
-[params](https://msdn.microsoft.com/library/w5zay9db.aspx)
-[out](https://msdn.microsoft.com/library/t3c3bfhx.aspx)
-[ref](https://msdn.microsoft.com/library/14akc2c7.aspx)
+[Access Modifiers](https://msdn.microsoft.com/library/wxh6fsc7.aspx)   
+[Static Classes and Static Class Members](https://msdn.microsoft.com/library/79b3xss3.aspx)   
+[Inheritance](https://msdn.microsoft.com/library/ms173149.aspx)   
+[Abstract and Sealed Classes and Class Members](https://msdn.microsoft.com/library/ms173150.aspx)   
+[params](https://msdn.microsoft.com/library/w5zay9db.aspx)   
+[out](https://msdn.microsoft.com/library/t3c3bfhx.aspx)   
+[ref](https://msdn.microsoft.com/library/14akc2c7.aspx)   
 [Passing Parameters](https://msdn.microsoft.com/library/0f66670z.aspx)

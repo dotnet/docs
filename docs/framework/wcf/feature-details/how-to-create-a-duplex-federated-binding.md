@@ -71,7 +71,6 @@ manager: "erikre"
 ## Example  
   
 ```  
-  
 <bindings>  
    <customBinding>  
       <binding name="FederationDuplexHttpMessageSecurityBinding">  
@@ -102,5 +101,4 @@ manager: "erikre"
        </binding>              
     </customBinding>  
 </bindings>  
-  
 ```

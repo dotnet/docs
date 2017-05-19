@@ -28,7 +28,6 @@ Contains types that are used by the <xref:System.Xml.Serialization.XmlSchemaImpo
 ## Syntax  
   
 ```  
-  
 <schemaImporterExtensions>  
     <!-- Add types -->  
 </SchemaImporterExtension>  

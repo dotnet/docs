@@ -23,13 +23,11 @@ Gets the culture name string of the assembly.
 ## Syntax  
   
 ```  
-  
 HRESULT GetCulture(  
    [in] ULONG32 cchCulture,   
    [out] ULONG32 *pcchCulture,   
    [out, size_is(cchCulture), length_is(*pcchCulture)] WCHAR szCulture[]  
 );  
-  
 ```  
   
 #### Parameters  

@@ -30,7 +30,6 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
 ## Syntax  
   
 ```  
-  
 <binaryMessageEncoding   
       maxReadPoolSize="Integer"  
    maxSessionSize="Integer"   

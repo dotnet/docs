@@ -31,11 +31,9 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT ApplyMetaData(  
         [in] ModuleID moduleID  
 );  
-  
 ```  
   
 #### Parameters  

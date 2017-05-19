@@ -35,7 +35,6 @@ The [!INCLUDE[wrt](../../../includes/wrt-md.md)] Metadata Export Tool (Winmdexp.
 ## Syntax  
   
 ```  
-  
 winmdexp [options] winmdmodule  
 ```  
   

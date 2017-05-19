@@ -85,7 +85,6 @@ This sample demonstrates how to implement a custom token authenticator. A token 
     </behaviors>  
   
   </system.serviceModel>  
-  
 ```  
   
  The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `Mode` and `clientCredentialType`.  
@@ -222,7 +221,6 @@ static void Main()
      The <xref:System.IdentityModel.Selectors.SecurityTokenManager> is used to create a <xref:System.IdentityModel.Selectors.SecurityTokenAuthenticator> for specific <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> objects that are passed to it in the `CreateSecurityTokenAuthenticator` method. The security token manager is also used to create token providers and token serializers, but those are not covered by this sample. In this sample, the custom security token manager inherits from <xref:System.ServiceModel.Security.ServiceCredentialsSecurityTokenManager> class and overrides the `CreateSecurityTokenAuthenticator` method to return custom username token authenticator when the passed token requirements indicate that username authenticator is requested.  
   
     ```  
-  
     public class MySecurityTokenManager : ServiceCredentialsSecurityTokenManager  
     {  
         MyUserNameCredential myUserNameCredential;  
@@ -296,7 +294,6 @@ static void DisplayIdentityInformation()
             ServiceSecurityContext.Current.PrimaryIdentity.Name);  
      return;  
 }  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
@@ -318,7 +315,6 @@ static void DisplayIdentityInformation()
     echo making server cert  
     echo ************  
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the server certificate into client's trusted certificate store.  

@@ -42,7 +42,6 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
     ' at the first character and extend for eight characters.  
     ' You may need to modify this based on the text entered in Step 1.  
     LinkLabel1.LinkArea = New LinkArea(0, 8)  
-  
     ```  
   
     ```csharp  
@@ -50,7 +49,6 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
     // at the first character and extend for eight characters.  
     // You may need to modify this based on the text entered in Step 1.  
     linkLabel1.LinkArea = new LinkArea(0,8);  
-  
     ```  
   
     ```cpp  
@@ -74,7 +72,6 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
        f2.Show  
        LinkLabel1.LinkVisited = True  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -85,7 +82,6 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
        f2.Show();  
        linkLabel1.LinkVisited = true;  
     }  
-  
     ```  
   
     ```cpp  
@@ -134,7 +130,6 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
        ' with a URL:  
        System.Diagnostics.Process.Start("http://www.microsoft.com")  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -159,7 +154,6 @@ The Windows Forms <xref:System.Windows.Forms.LinkLabel> control allows you to cr
        //with a URL:  
        System.Diagnostics.Process.Start("http://www.microsoft.com");  
     }  
-  
     ```  
   
     ```cpp  

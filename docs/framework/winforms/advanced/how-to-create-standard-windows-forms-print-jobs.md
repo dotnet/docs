@@ -38,7 +38,6 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
     Private Sub PrintDocument1_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage  
        e.Graphics.FillRectangle(Brushes.Red, New Rectangle(500, 500, 500, 500))  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -48,7 +47,6 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
        e.Graphics.FillRectangle(Brushes.Red,   
          new Rectangle(500, 500, 500, 500));  
     }  
-  
     ```  
   
     ```cpp  
@@ -67,7 +65,6 @@ The foundation of printing in Windows Forms is the <xref:System.Drawing.Printing
     this.printDocument1.PrintPage += new  
        System.Drawing.Printing.PrintPageEventHandler  
        (this.printDocument1_PrintPage);  
-  
     ```  
   
     ```cpp  

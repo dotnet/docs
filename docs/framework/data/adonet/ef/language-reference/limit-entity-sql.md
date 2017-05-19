@@ -25,7 +25,6 @@ Physical paging can be performed by using LIMIT sub-clause in ORDER BY clause. L
 ## Syntax  
   
 ```  
-  
 [ LIMIT n ]  
 ```  
   

@@ -25,7 +25,6 @@ Fabricates references to an entity in an entityset.
 ## Syntax  
   
 ```  
-  
 CreateRef(entityset_identifier, row_typed_expression)  
 ```  
   

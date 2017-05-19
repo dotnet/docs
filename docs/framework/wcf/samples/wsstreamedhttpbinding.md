@@ -54,7 +54,6 @@ The sample demonstrates how to create a binding that is designed to support stre
         bindingElements.Add(transport);  
         return bindingElements.Clone();  
     }  
-  
     ```  
   
 2.  Add configuration support  
@@ -73,7 +72,6 @@ The sample demonstrates how to create a binding that is designed to support stre
         </extensions>  
       </system.serviceModel>  
     </configuration>  
-  
     ```  
   
      The handler can then be referenced from the serviceModel configuration section.  
@@ -98,7 +96,6 @@ The sample demonstrates how to create a binding that is designed to support stre
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the steps listed in [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  
@@ -140,7 +137,6 @@ public class StreamedEchoService : IStreamedEchoService
         return dataStorage;  
     }  
 }  
-  
 ```  
   
 ## The WSStreamedHttpBinding Sample Client  
@@ -150,7 +146,6 @@ public class StreamedEchoService : IStreamedEchoService
 // WARNING: This code is only required for test certificates such as those created by makecert. It is   
 // not recommended for production code.  
 PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  
-  
 ```  
   
 ## See Also

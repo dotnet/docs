@@ -23,11 +23,9 @@ Gets an enumerator for the assemblies contained in this assembly.
 ## Syntax  
   
 ```  
-  
 HRESULT EnumerateContainedAssemblies(  
     ICorDebugAssemblyEnum **ppAssemblies  
 );  
-  
 ```  
   
 #### Parameters  

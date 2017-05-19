@@ -39,7 +39,6 @@ Adds an IP address or DNS name to the connection management list.
 ## Syntax  
   
 ```  
-  
       <add   
    address = "address expression"   
    maxconnection = integer   

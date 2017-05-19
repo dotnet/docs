@@ -28,7 +28,6 @@ Defines the transport security settings for a named pipe.
 ## Syntax  
   
 ```  
-  
 <netNamedPipeBinding>  
    <binding>  
       <security mode="None/Transport">  

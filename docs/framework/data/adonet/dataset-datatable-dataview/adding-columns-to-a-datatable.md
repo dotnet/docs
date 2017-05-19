@@ -33,7 +33,6 @@ workCol.Unique = true
 workTable.Columns.Add("CustLName", Type.GetType("System.String"))  
 workTable.Columns.Add("CustFName", Type.GetType("System.String"))  
 workTable.Columns.Add("Purchases", Type.GetType("System.Double"))  
-  
 ```  
   
 ```csharp  

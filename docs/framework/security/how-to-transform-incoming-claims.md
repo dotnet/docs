@@ -90,7 +90,6 @@ manager: "mbaldwin"
             </asp:GridView>  
         </p>  
     </asp:Content>  
-  
     ```  
   
 8.  Open the code-behind file named *Default.aspx.cs*. Replace the existing code with the following, then save the file:  

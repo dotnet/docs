@@ -59,7 +59,6 @@ The [System.Activities.Presentation.WorkflowItemsPresenter](https://msdn.microso
       </ItemsPanelTemplate>  
     </sad:WorkflowItemsPresenter.ItemsPanel>  
   </sad:WorkflowItemsPresenter>  
-  
 ```  
   
 -   Perform an association of the `DesignerAttribute` to the `Parallel` type and then output the attributes reported.  
@@ -72,7 +71,6 @@ The [System.Activities.Presentation.WorkflowItemsPresenter](https://msdn.microso
 // register metadata  
 (new DesignerMetadata()).Register();  
 RegisterCustomMetadata();  
-  
 ```  
   
 ```vb  
@@ -81,7 +79,6 @@ Dim metadata = New DesignerMetadata()
 metadata.Register()  
 ' register custom metadata  
 RegisterCustomMetadata()  
-  
 ```  
   
 -   -   Then, override the parallel in `RegisterCustomMetadata` method.  
@@ -97,7 +94,6 @@ void RegisterCustomMetadata()
       builder.AddCustomAttributes(typeof(Parallel), new DesignerAttribute(typeof(CustomParallelDesigner)));  
       MetadataStore.AddAttributeTable(builder.CreateTable());  
 }  
-  
 ```  
   
 ```vb  
@@ -106,7 +102,6 @@ Sub RegisterCustomMetadata()
    builder.AddCustomAttributes(GetType(Parallel), New DesignerAttribute(GetType(CustomParallelDesigner)))  
    MetadataStore.AddAttributeTable(builder.CreateTable())  
 End Sub  
-  
 ```  
   
 -   Finally, note the use of differing data templates and triggers to select the appropriate template based on the `IsRootDesigner` property.  
@@ -154,7 +149,6 @@ End Sub
     <ContentPresenter Style="{DynamicResource ExpandOrCollapsedStyle}" Content="{Binding}"/>  
   </Grid>  
 </sad: ActivityDesigner>  
-  
 ```  
   
 > [!IMPORTANT]

@@ -43,7 +43,6 @@ public int this[int index]    // Indexer declaration
 {  
     // get and set accessors  
 }  
-  
 ```  
   
 ## Remarks  

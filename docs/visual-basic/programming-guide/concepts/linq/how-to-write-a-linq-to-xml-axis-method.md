@@ -208,7 +208,6 @@ Public Module MyExtensions
     End Function  
   
 End Module  
-  
 ```  
   
  This code produces the following output:  

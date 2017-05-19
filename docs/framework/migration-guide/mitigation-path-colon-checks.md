@@ -32,11 +32,9 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
 -   Opt out of the new path normalization by setting the `Switch.System.IO.UseLegacyPathHandling`<xref:System.AppContext> switch to `true`.  
   
     ```xml  
-  
     <runtime>  
         <AppContextSwitchOverrides value="Switch.System.IO.UseLegacyPathHandling=true" />    
     </runtime>  
-  
     ```  
   
 ## See Also  

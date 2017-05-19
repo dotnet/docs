@@ -47,12 +47,10 @@ Compares an object reference variable to a data type.
 ## Syntax  
   
 ```  
-  
 result = TypeOf objectexpression Is typename  
 ```  
   
 ```  
-  
 result = TypeOf objectexpression IsNot typename  
 ```  
   

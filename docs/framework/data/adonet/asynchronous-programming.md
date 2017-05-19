@@ -103,7 +103,6 @@ using SqlConnection conn = new SqlConnection("…");
       cmd.ExecuteNonQuery();  
    }  
 }  
-  
 ```  
   
  When converted to use the new asynchronous functionality, the program would look like:  
@@ -285,7 +284,6 @@ class Program {
       }  
    }  
 }  
-  
 ```  
   
 ### Using SQL Transactions and the New Asynchronous Feature  
@@ -347,7 +345,6 @@ class Program {
       }  
    }  
 }  
-  
 ```  
   
 ### Cancelling an Asynchronous Operation  

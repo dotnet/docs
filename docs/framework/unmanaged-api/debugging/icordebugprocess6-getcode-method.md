@@ -23,11 +23,9 @@ Gets information about the managed code at a particular code address.
 ## Syntax  
   
 ```  
-  
 HRESULT GetCode(  
     [in] CORDB_ADDRESS codeAddress,   
     [out] ICorDebugCode **ppCode);  
-  
 ```  
   
 #### Parameters  

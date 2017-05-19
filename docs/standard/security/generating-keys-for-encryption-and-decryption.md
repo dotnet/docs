@@ -39,7 +39,6 @@ Creating and managing keys is an important part of the cryptographic process. Sy
   
 ```vb  
 Dim TDES As TripleDESCryptoServiceProvider = new TripleDESCryptoServiceProvider()  
-  
 ```  
   
 ```csharp  
@@ -54,7 +53,6 @@ TripleDESCryptoServiceProvider TDES = new TripleDESCryptoServiceProvider();
 Dim TDES As TripleDESCryptoServiceProvider = new TripleDESCryptoServiceProvider()  
 TDES.GenerateIV()  
 TDES.GenerateKey()  
-  
 ```  
   
 ```csharp  
@@ -85,7 +83,6 @@ TDES.GenerateKey();
 Dim RSA as RSACryptoServiceProvider = new RSACryptoServiceProvider()  
 'Save the public key information to an RSAParameters structure.  
 Dim RSAKeyInfo As RSAParameters = RSA.ExportParameters(false)  
-  
 ```  
   
 ```csharp  

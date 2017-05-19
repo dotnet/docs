@@ -190,7 +190,6 @@ public sealed class CreateProduct : CodeActivity
         // Not needed for the sample.  
     }  
 }  
-  
 ```  
   
  In this example, a workflow is configured using the `CreateProduct` activity. In this workflow, the `Cost` is greater than the `Price`, and the required `Description` argument is not set. When validation is invoked, the following errors are returned.  
@@ -230,7 +229,6 @@ else
         Console.WriteLine("Warning: {0}", warning.Message);  
     }  
 }  
-  
 ```  
   
  **Error: The Cost must be less than or equal to the Price.**   

@@ -25,7 +25,6 @@ Navigates over the relationship established between entities.
 ## Syntax  
   
 ```  
-  
 navigate(instance-expresssion, [relationship-type], [to-end [, from-end] ])  
 ```  
   

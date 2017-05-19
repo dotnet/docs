@@ -26,7 +26,6 @@ Treats an object of a particular base type as an object of the specified derived
 ## Syntax  
   
 ```  
-  
 TREAT ( expression as type)  
 ```  
   

@@ -34,7 +34,6 @@ This sample demonstrates how to use [!INCLUDE[indigo1](../../../../includes/indi
         double Add(double n1, double n2);  
         //Other operations omitted…  
     }  
-  
 ```  
   
  Create an AJAX endpoint on the service by using the <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory>, just as in the Basic AJAX Service sample.  

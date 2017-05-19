@@ -23,12 +23,10 @@ Returns the symbol-provider for a module from the base address of that module.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSymbolProviderForImage(  
     [in] CORDB_ADDRESS imageBaseAddress,   
     [out] ICorDebugSymbolProvider **ppSymProvider  
 );  
-  
 ```  
   
 #### Parameters  

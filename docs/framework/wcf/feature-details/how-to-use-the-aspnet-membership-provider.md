@@ -120,7 +120,6 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
           </behavior>  
        </serviceBehaviors>  
     </behaviors>  
-  
     ```  
   
 ## Example  
@@ -159,7 +158,6 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
     </bindings>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## See Also  

@@ -21,7 +21,6 @@ This element contains the **serviceBehaviors** collection.  Each element in the 
 ## Syntax  
   
 ```  
-  
 <behaviors>  
    <serviceBehaviors>  
    </serviceBehaviors>  

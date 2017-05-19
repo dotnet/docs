@@ -80,7 +80,6 @@ Configures the issuer name registry that is used by handlers in the token handle
     <add thumbprint="9B74CB … 1EF40D0" name="LocalSTS" />  
   </trustedIssuers>  
 </issuerNameRegistry>  
-  
 ```  
   
 ## See Also  

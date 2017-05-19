@@ -36,7 +36,6 @@ Controls the caching mechanism for network requests.
 ## Syntax  
   
 ```  
-  
       <requestCaching  
   isPrivateCache ="true|false"  
   disableAllCaching="true|false"  

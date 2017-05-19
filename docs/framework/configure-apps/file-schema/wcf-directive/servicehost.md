@@ -21,7 +21,6 @@ Associates the factory used to produce the service host with the service to be h
 ## Syntax  
   
 ```  
-  
 <% @ServiceHost   
 Service = "Service, ServiceNamespace"   
 Factory = "Factory, FactoryNamespace"  

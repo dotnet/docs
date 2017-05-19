@@ -33,7 +33,6 @@ Xslt.Load(someStylesheet)
 Dim doc as XPathDocument = New XPathDocument("books.xml")  
 Dim fs as StringWriter = new StringWriter()  
 Xslt.Transform(doc, Nothing, fs, Nothing);  
-  
 ```  
   
 ```csharp  

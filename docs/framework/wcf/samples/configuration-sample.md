@@ -57,19 +57,16 @@ This sample demonstrates the use of a configuration file to make a service disco
                     kind="udpDiscoveryEndpoint"   
                 endpointConfiguration="adhocDiscoveryEndpointConfiguration"/>        </service>  
       </services>  
-  
 ```  
   
  To take advantage of announcements, you will need to add an announcement endpoint. To do this, modify the configuration file as shown in the following code.  
   
 ```  
-  
 <serviceDiscovery>  
             <announcementEndpoints>  
               <endpoint kind="udpAnnouncementEndpoint"/>  
             </announcementEndpoints>  
           </serviceDiscovery>  
-  
 ```  
   
  Adding an announcement endpoint to the discovery service behavior creates a default announcement client for the service. This guarantees that the service will send an online and offline announcement when the service is opened and closed respectively.  
@@ -94,7 +91,6 @@ behaviorConfiguration="endpointBehaviorConfiguration"
   
           </behavior>            
         </endpointBehaviors>  
-  
 ```  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] scopes, see [Discovery Find and FindCriteria](../../../../docs/framework/wcf/feature-details/discovery-find-and-findcriteria.md).  
@@ -107,7 +103,6 @@ behaviorConfiguration="endpointBehaviorConfiguration"
       <standardEndpoint name="adhocDiscoveryEndpointConfiguration" discoveryVersion="WSDiscovery11" maxResponseDelay="00:00:00.600" />    
    </udpDiscoveryEndpoint>  
 </standardEndpoints>  
-  
 ```  
   
  The following is the complete configuration file used in this example:  
@@ -165,7 +160,6 @@ behaviorConfiguration="endpointBehaviorConfiguration"
   
     </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## Client Configuration  
@@ -269,7 +263,6 @@ behaviorConfiguration="endpointBehaviorConfiguration"
     </standardEndpoints>  
   
   </system.serviceModel>  
-  
 ```  
   
 #### To use this sample  

@@ -60,14 +60,12 @@ public interface ICalculator
   
 ```  
 svcutil.exe /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost/servicemodelsamples/service.svc /out:generatedClient.cs  
-  
 ```  
   
  This class must be included in a project and the project should be configured to generate a COM-visible, signed assembly when compiled. The following attribute should be included in the AssemblyInfo.cs file.  
   
 ```  
 [assembly: ComVisible(true)]  
-  
 ```  
   
  After building the project, register the COM-visible types by using `regasm` as shown in the following example.  
@@ -106,7 +104,6 @@ contractType={9213C6D2-5A6F-3D26-839B-3BA9B82228D3}")
 ```  
 ' Call the service operations using the moniker object  
 WScript.Echo "Typed service moniker: 100 + 15.99 = " & typedServiceMoniker.Add(100, 15.99)  
-  
 ```  
   
  When you run the sample, the operation response is displayed in a Windows Script Host message box window. This demonstrates a COM client making COM calls using the typed moniker to communicate with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service. Despite the use of COM in the client application, the communication with the service consists only of Web service calls.  
@@ -152,7 +149,6 @@ Set wsdlServiceMoniker = GetObject(wsdlMonikerString)
 ```  
 ' Call the service operations using the moniker object  
 WScript.Echo "WSDL service moniker: 145 - 76.54 = " & wsdlServiceMoniker.Subtract(145, 76.54)  
-  
 ```  
   
  When you run the sample, the operation response is displayed in a Windows Script Host message box window. This demonstrates a COM client making COM calls using the moniker with a WSDL contract to communicate with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  
@@ -188,7 +184,6 @@ Set mexServiceMoniker = GetObject(mexMonikerString)
 ```  
 ' Call the service operations using the moniker object  
 WScript.Echo "MEX service moniker: 9 * 81.25 = " & mexServiceMoniker.Multiply(9, 81.25)  
-  
 ```  
   
  When you run the sample, the operation response is displayed in a Windows Script Host message box window. This demonstrates a COM client making COM calls using the moniker with a MEX contract to communicate with a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service.  

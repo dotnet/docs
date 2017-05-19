@@ -45,7 +45,6 @@ Subtracts the value of an expression from the value of a variable or property an
 ## Syntax  
   
 ```  
-  
 variableorproperty -= expression  
 ```  
   

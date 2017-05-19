@@ -23,13 +23,11 @@ Returns the path of a module from the module's base address.
 ## Syntax  
   
 ```  
-  
 HRESULT GetImageLocation(    [in] CORDB_ADDRESS baseAddress,  
     [in] ULONG32 cchName,  
     [out] ULONG32 *pcchName,  
     [out, size_is(cchName), length_is(*pcchName)] WCHAR szName[]  
 );  
-  
 ```  
   
 #### Parameters  

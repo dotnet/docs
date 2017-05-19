@@ -33,12 +33,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 typedef enum ILCodeKind {  
    ILCODE_ORIGINAL_IL = 0x1,  
    ILCODE_REJIT_IL = 0x2,  
 } ILCodeKind;  
-  
 ```  
   
 ## Members  

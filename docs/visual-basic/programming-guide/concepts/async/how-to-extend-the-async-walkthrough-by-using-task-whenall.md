@@ -146,7 +146,6 @@ You can improve the performance of the async solution in [Walkthrough: Accessing
     '    ' Update the total.   
     '    total += urlContents.Length   
     'Next  
-  
     ```  
   
 3.  Define a [query](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d) that, when executed by the <xref:System.Linq.Enumerable.ToArray%2A> method, creates a collection of tasks that download the contents of each website. The tasks are started when the query is evaluated.  

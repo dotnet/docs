@@ -45,7 +45,6 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
 ## Syntax  
   
 ```  
-  
       certmgr [/add | /del | /put] [options]  
 [/s[/r registryLocation]] [sourceStorename]  
 [/s[/r registryLocation]] [destinationStorename]  

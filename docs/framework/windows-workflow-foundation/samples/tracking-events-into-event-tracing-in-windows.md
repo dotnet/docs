@@ -123,7 +123,6 @@ This sample demonstrates how to enable [!INCLUDE[wf](../../../../includes/wf-md.
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
 ```  
   
 #### To clean up (Optional)  

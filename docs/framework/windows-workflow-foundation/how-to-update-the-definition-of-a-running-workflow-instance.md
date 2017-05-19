@@ -795,7 +795,6 @@ Dynamic update provides a mechanism for workflow application developers to updat
   
     map.Add(FlowchartNumberGuessIdentity_v15,  
         v15Assembly.CreateInstance("NumberGuessWorkflowActivities.FlowchartNumberGuessWorkflow") as Activity);  
-  
     ```  
   
      The following example is the completed `WorkflowVersionMap` class.  
@@ -1365,7 +1364,6 @@ Dynamic update provides a mechanism for workflow application developers to updat
             instance.Abandon()  
         End If  
     Next  
-  
     ```  
   
     ```csharp  

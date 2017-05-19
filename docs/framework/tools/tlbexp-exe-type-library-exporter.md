@@ -36,7 +36,6 @@ The Type Library Exporter generates a type library that describes the types defi
 ## Syntax  
   
 ```  
-  
 tlbexp assemblyName [options]  
 ```  
   

@@ -31,7 +31,6 @@ Specifies authentication options for peer-to-peer clients.
 ## Syntax  
   
 ```  
-  
 <peerAuthentication  
 customCertificateValidatorType = "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
 certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  

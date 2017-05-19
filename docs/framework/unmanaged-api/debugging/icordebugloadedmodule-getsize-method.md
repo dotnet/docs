@@ -23,11 +23,9 @@ Gets the size in bytes of the loaded module.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSize(  
    [out] ULONG32 *pcBytes  
 );  
-  
 ```  
   
 #### Parameters  

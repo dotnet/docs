@@ -40,7 +40,6 @@ manager: "wpickett"
     Protected Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click  
        ds.tables(0).rows(0)(1) = "NewEntry"  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -48,7 +47,6 @@ manager: "wpickett"
     {  
        ds.Tables[0].Rows[0][1]="NewEntry";  
     }  
-  
     ```  
   
     ```cpp  
@@ -63,7 +61,6 @@ manager: "wpickett"
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
-  
     ```  
   
     ```cpp  
@@ -83,7 +80,6 @@ manager: "wpickett"
     Private Sub ResetSource()  
        DataGrid1.SetDataBinding(adoPubsAuthors, "Authors")  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -91,7 +87,6 @@ manager: "wpickett"
     {  
        DataGrid1.SetDataBinding(adoPubsAuthors, "Authors");  
     }  
-  
     ```  
   
     ```cpp  

@@ -117,7 +117,6 @@ Public Class Price
     Public <XmlElement([Namespace] := "http://www.cohowinery.com")> _  
         price As Decimal  
 End Class  
-  
 ```  
   
 ```csharp  

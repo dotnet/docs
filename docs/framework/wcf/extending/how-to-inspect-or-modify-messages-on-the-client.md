@@ -56,7 +56,6 @@ public class SimpleMessageInspector : IClientMessageInspector
         return null;  
     }  
 }  
-  
 ```  
   
 ```csharp  
@@ -101,7 +100,6 @@ public class SimpleBehaviorExtensionElement : BehaviorExtensionElement
         return new SimpleEndpointBehavior();  
     }  
 }  
-  
 ```  
   
 ```vb  
@@ -131,7 +129,6 @@ public class SimpleBehaviorExtensionElement : BehaviorExtensionElement
       </extensions>  
     </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## See Also  

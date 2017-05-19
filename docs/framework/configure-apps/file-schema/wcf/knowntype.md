@@ -27,7 +27,6 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
 ## Syntax  
   
 ```  
-  
 <knownType type="String">  
      <parameter index="Integer"  
                 type="String" />  

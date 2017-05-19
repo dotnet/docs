@@ -87,7 +87,6 @@ manager: "erikre"
     {  
         FreeHandleAndDeleteOwner(store, ownerHandle);  
     }  
-  
     ```  
   
 -   <xref:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand>: The persistence engine sends this command to the instance store when a workflow instance is to be loaded using the workflow’s instance key. The ID of the instance key can be determined by using the <xref:System.Activities.DurableInstancing.LoadWorkflowByInstanceKeyCommand.LookupInstanceKey%2A> parameter of the command.  
@@ -132,7 +131,6 @@ manager: "erikre"
             }  
         }  
     }  
-  
     ```  
   
      In the above code snippet, the instance store queries the events available and examines each one to determine if it is a <xref:System.Activities.DurableInstancing.HasRunnableWorkflowEvent> event. If one is found, <xref:System.Runtime.DurableInstancing.InstanceStore.SignalEvent%2A> is called to signal the host to send a command to the instance store.  The following code snippet demonstrates an implementation of a handler for this command.  
@@ -224,7 +222,6 @@ manager: "erikre"
             break;  
         }  
     }  
-  
     ```  
   
      In the above code snippet, the instance store searches for runnable instances. If an instance is found, it is bound to the execution context and loaded.  
@@ -236,7 +233,6 @@ manager: "erikre"
  The following code sample is a complete instance store implementation, taken from the [Corporate Purchase Process](../../../docs/framework/windows-workflow-foundation/samples/corporate-purchase-process.md) sample. This instance store persists workflow data to a file using XML.  
   
 ```  
-  
 using System;  
 using System.Activities.DurableInstancing;  
 using System.Collections.Generic;  
@@ -397,5 +393,4 @@ namespace Microsoft.Samples.WF.PurchaseProcess
         }  
     }  
 }  
-  
 ```

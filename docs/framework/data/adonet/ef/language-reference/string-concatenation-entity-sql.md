@@ -25,7 +25,6 @@ Concatenates two strings.
 ## Syntax  
   
 ```  
-  
 expression + expression  
 ```  
   

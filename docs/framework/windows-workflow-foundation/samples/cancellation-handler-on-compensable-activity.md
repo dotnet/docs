@@ -41,7 +41,6 @@ Try
 Catches {  
 // Can do more stuff...  
 }  
-  
 ```  
   
  The second scenario demonstrates executing a <xref:System.Activities.Statements.TryCatch> in parallel with a <xref:System.Activities.Statements.Delay>, which finishes before the <xref:System.Activities.Statements.TryCatch> branch. The completion condition is set to `true` once the first branch finishes, causing the other branch to be canceled.  
@@ -73,7 +72,6 @@ Parallel
         }  
     }  
 }  
-  
 ```  
   
 ### To set up, build, and run the sample  

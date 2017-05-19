@@ -38,7 +38,6 @@ The PEVerify tool helps developers who generate Microsoft intermediate language 
 ## Syntax  
   
 ```  
-  
 peverify filename [options]  
 ```  
   

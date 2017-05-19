@@ -25,7 +25,6 @@ Evaluates a set of `Boolean` expressions to determine the result.
 ## Syntax  
   
 ```  
-  
 CASE  
      WHEN Boolean_expression THEN result_expression   
     [ ...n ]   

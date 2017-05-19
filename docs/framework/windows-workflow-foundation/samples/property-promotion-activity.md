@@ -96,7 +96,6 @@ create view [dbo].[CounterService] as
       from [System.Activities.DurableInstancing].[InstancePromotedProperties]  
       where [PromotionName] = 'CounterService'  
 go  
-  
 ```  
   
  When a workflow instance persists, a row is inserted into the `InstancePromotedProperties` view for each `PromotionSet` defined in the configuration. This row contains all the promoted properties of the `PromotionSet` (one promoted property per column). This `PromotionSet` is keyed by the tuple: `InstanceId, PromotionName`. In this sample, we have one `PromotionSet` defined in configuration whose name attribute is `CounterService`. Note how the `PromotionName` column value is equal to the name attribute of the `PromotionSet` element.  
@@ -141,7 +140,6 @@ public class PromoteValue<T> : CodeActivity
     public string Name { get; set; }  
     public InArgument<T> Value { get; set; }  
 }  
-  
 ```  
   
  ClearExistingPromotedData (Bool)  
@@ -180,7 +178,6 @@ public class SqlWorkflowInstanceStorePromotionBehavior :
                             IEnumerable<string> promoteAsBinary)  
   
 }  
-  
 ```  
   
  This class library also contains the `ConfigurationElement` implementation for the `SqlWorkflowInstanceStorePromotionElement` and a custom persistence participant used by the previous promotion activities.  

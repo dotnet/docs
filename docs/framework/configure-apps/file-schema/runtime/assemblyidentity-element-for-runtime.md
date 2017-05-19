@@ -39,7 +39,6 @@ Contains identifying information about the assembly.
 ## Syntax  
   
 ```  
-  
    <assemblyIdentity    
 name="assembly name"  
 publicKeyToken="public key token"  

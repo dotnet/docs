@@ -21,7 +21,6 @@ Defines policy for code elements the containing attribute is applied to.
 ## Syntax  
   
 ```xml  
-  
 <AttributeImplies Activate="policy_type"  
                   Browse="policy_type"  
                   Dynamic="policy_type"  
@@ -32,7 +31,6 @@ Defines policy for code elements the containing attribute is applied to.
                   MarshalObject="policy_setting"  
                   MarshalDelegate="policy_setting"  
                   MarshalStructure="policy_setting" />  
-  
 ```  
   
 ## Attributes and Elements  

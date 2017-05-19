@@ -33,10 +33,8 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT SetEventMask2(        [in] DWORD dwEventsLow,        [in] DWORD dwEventsHigh  
 );  
-  
 ```  
   
 #### Parameters  

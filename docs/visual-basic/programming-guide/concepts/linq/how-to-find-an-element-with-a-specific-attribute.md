@@ -39,7 +39,6 @@ Next
  This code produces the following output:  
   
 ```xml  
-  
           <Address Type="Billing">  
   <Name>Tai Yee</Name>  
   <Street>8 Oak Avenue</Street>  

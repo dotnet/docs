@@ -31,14 +31,12 @@ Describes how an exported function invokes managed code.
 ## Syntax  
   
 ```  
-  
 typedef enum CorDebugCodeInvokeKind  
 {  
     CODE_INVOKE_KIND_NONE,       
     CODE_INVOKE_KIND_RETURN,     
     CODE_INVOKE_KIND_TAILCALL,   
 } CorDebugCodeInvokeKind;  
-  
 ```  
   
 ## Members  

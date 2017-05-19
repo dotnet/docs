@@ -39,7 +39,6 @@ Removes an authentication module from the application.
 ## Syntax  
   
 ```  
-  
       <remove   
    name = "authentication module name"   
 />  

@@ -21,7 +21,6 @@ Applies runtime reflection policy to a constructed generic type.
 ## Syntax  
   
 ```xml  
-  
 <TypeInstantiation Name="type_name"  
                    Arguments="type_arguments"  
                    Activate="policy_type"  
@@ -34,7 +33,6 @@ Applies runtime reflection policy to a constructed generic type.
                    MarshalObject="policy_setting"  
                    MarshalDelegate="policy_setting"  
                    MarshalStructure="policy_setting" />  
-  
 ```  
   
 ## Attributes and Elements  
@@ -112,7 +110,6 @@ Applies runtime reflection policy to a constructed generic type.
  After compilation with the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain, the example throws a [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exception on the line that calls the <xref:System.Type.GetGenericTypeDefinition%2A?displayProperty=fullName> method. You can eliminate the exception and provide the necessary metadata by adding the following `<TypeInstantiation>` element to the runtime directives file:  
   
 ```xml  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
   <Application>  
     <Assembly Name="*Application*" Dynamic="Required All" />  
@@ -121,7 +118,6 @@ Applies runtime reflection policy to a constructed generic type.
                         Dynamic="Required Public" />  
   </Application>  
 </Directives>  
-  
 ```  
   
 ## See Also  

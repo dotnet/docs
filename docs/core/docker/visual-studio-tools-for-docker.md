@@ -63,7 +63,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "80"
-
 ``` 
 
 In this example, `image: user/hellodockertools${TAG}` generates the image `user/hellodockertools:dev` when the application is run in **Debug** mode and `user/hellodockertools:latest` in **Release** mode respectively. 

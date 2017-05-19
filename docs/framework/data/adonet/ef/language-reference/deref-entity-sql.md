@@ -25,7 +25,6 @@ Dereferences a reference value and produces the result of that dereference.
 ## Syntax  
   
 ```  
-  
 SELECT DEREF ( o.expression ) from Table as o;  
 ```  
   

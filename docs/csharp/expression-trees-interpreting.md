@@ -514,7 +514,6 @@ public class MethodCallVisitor : Visitor
         }
     }
 }
-
 ```
 
 And the output for the expression tree would be:

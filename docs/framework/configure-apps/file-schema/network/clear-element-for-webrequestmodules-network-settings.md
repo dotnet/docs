@@ -39,9 +39,7 @@ Removes all registered Web request modules from the application.
 ## Syntax  
   
 ```  
-  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  

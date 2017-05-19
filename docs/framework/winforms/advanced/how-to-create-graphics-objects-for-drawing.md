@@ -69,7 +69,6 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
        Dim g As Graphics = pe.Graphics  
        ' Insert code to paint the form here.  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -81,7 +80,6 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
        Graphics g = pe.Graphics;  
        // Insert code to paint the form here.  
     }  
-  
     ```  
   
     ```cpp  
@@ -108,7 +106,6 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
     ' Sets g to a Graphics object representing the drawing surface of the  
     ' control or form g is a member of.  
     g = Me.CreateGraphics  
-  
     ```  
   
     ```csharp  
@@ -116,7 +113,6 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
     // Sets g to a graphics object representing the drawing surface of the  
     // control or form g is a member of.  
     g = this.CreateGraphics();  
-  
     ```  
   
     ```cpp  
@@ -138,14 +134,12 @@ Before you can draw lines and shapes, render text, or display and manipulate ima
     ```vb  
     Dim myBitmap as New Bitmap("C:\Documents and Settings\Joe\Pics\myPic.bmp")  
     Dim g as Graphics = Graphics.FromImage(myBitmap)  
-  
     ```  
   
     ```csharp  
     Bitmap myBitmap = new Bitmap(@"C:\Documents and   
        Settings\Joe\Pics\myPic.bmp");  
     Graphics g = Graphics.FromImage(myBitmap);  
-  
     ```  
   
     ```cpp  

@@ -28,7 +28,6 @@ This sample demonstrates how to support JSON with Padding (JSONP) in WCF REST se
 var proxy = new JsonpAjaxService.CustomerService();  
 proxy.set_enableJsonp(true);  
 proxy.GetCustomer(onSuccess, onFail, null);  
-  
 ```  
   
  The Web page can call the WCF REST service because the service is using the <xref:System.ServiceModel.Description.WebScriptEndpoint> with `crossDomainScriptAccessEnabled` set to `true`. Both of these configurations are done in the Web.config file under the \<system.serviceModel> element.  
@@ -48,14 +47,12 @@ proxy.GetCustomer(onSuccess, onFail, null);
   
 ```  
 http://localhost:33695/CustomerService/GetCustomer?callback=Sys._json0  
-  
 ```  
   
  Because the callback query string parameter has a value of `JsonPCallback`, the WCF service returns a JSONP response shown in the following example.  
   
 ```  
 Sys._json0({"__type":"Customer:#Microsoft.Samples.Jsonp","Address":"1 Example Way","Name":"Bob"});  
-  
 ```  
   
  This JSONP response includes the customer data formatted as JSON, wrapped with the callback function name that the Web page requested. ScriptManager will execute this callback using a script tag to accomplish the cross-domain request, and then pass the result to the onSuccess handler that was passed to the GetCustomer operation of the ASP.NET AJAX proxy.  

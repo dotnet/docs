@@ -113,7 +113,6 @@ public class CustomEndpointElement : StandardEndpointElement
         {  
         }  
     }  
-  
 ```  
   
  The <xref:System.ServiceModel.Configuration.StandardEndpointCollectionElement%602> provides the backing type for the collection that appears under the <`standardEndpoints`> section in the configuration for the standard endpoint.  The following example shows how to implement this class.  
@@ -135,7 +134,6 @@ public class CustomEndpointCollectionElement : StandardEndpointCollectionElement
           name="customStandardEndpoint"  
           type="CustomEndpointCollectionElement, Example.dll,  
                 Version=1.0.0.0, Culture=neutral, PublicKeyToken=ffffffffffffffff"/>  
-  
 ```  
   
 ## Configuring a Standard Endpoint  

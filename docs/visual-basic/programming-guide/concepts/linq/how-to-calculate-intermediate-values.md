@@ -36,7 +36,6 @@ Dim extensions As IEnumerable(Of Decimal) = _
 For Each ex As Decimal In extensions  
     Console.WriteLine(ex)  
 Next  
-  
 ```  
   
  This code produces the following output:  

@@ -94,7 +94,6 @@ public class Service1 : IService1
           config.LoadFromConfiguration(ConfigurationManager.OpenMappedExeConfiguration(new ExeConfigurationFileMap { ExeConfigFilename = @"c:\sharedConfig\MyConfig.config" }, ConfigurationUserLevel.None));   
     }   
 }  
-  
 ```  
   
 > [!IMPORTANT]

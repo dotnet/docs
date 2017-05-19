@@ -189,7 +189,9 @@
   
 -   <xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A>  
   
- To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.  
+ The value is cached when it or length or time properties are retrieved. To get the latest value, call the <xref:System.IO.FileSystemInfo.Refresh%2A> method.
+
+ If the path does not exist as of the last cached state, the returned value will be `(FileAttributes)(-1)`. <xref:System.IO.FileNotFoundException%2A> or <xref:System.IO.DirectoryNotFoundException%2A> is thrown only when setting the value.
   
  The value of this property is a combination of the archive, compressed, directory, hidden, offline, read-only, system, and temporary file attribute flags.  
   

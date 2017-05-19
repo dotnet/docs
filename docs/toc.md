@@ -32,7 +32,6 @@
 ### [Deploy apps with CLI tools](core/deploying/deploy-with-cli.md)
 ### [Deploy apps with Visual Studio](core/deploying/deploy-with-vs.md)
 ### [Creating a NuGet Package with Cross Platform Tools](core/deploying/creating-nuget-packages.md)
-### [Runtime Package Store](core/deploying/runtime-package-store.md)
 ## [Docker](core/docker/index.md)
 ### [Building Docker Images for .NET Core Applications](core/docker/building-net-docker-images.md)
 ### [Visual Studio Tools for Docker](core/docker/visual-studio-tools-for-docker.md)
@@ -80,7 +79,9 @@
 ### [Porting libraries](core/porting/libraries.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
 ## .NET Core SDK 2.0 Preview 1
-### .NET Core CLI Tools
+### Application deployment
+#### [Runtime Package Store](core/preview/deploying/runtime-package-store.md)
+## [.NET Core CLI Tools](core/tools/index.md)
 #### [dotnet-store](core/preview/tools/dotnet-store.md)
 #### [dotnet-publish](core/preview/dotnet-publish.md)
 ## [VS 2015/project.json docs](project-json.md)

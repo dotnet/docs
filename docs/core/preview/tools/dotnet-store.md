@@ -1,5 +1,5 @@
 ---
-title: dotnet-store command | .NET Core SDK
+title: dotnet-store command (.NET Core SDK 2.0 Preview 1) | .NET Core SDK
 description: The dotnet-store Stores the specified assemblies in the runtime package store.
 keywords: dotnet-store, dotnet-publish, CLI, CLI command, .NET Core
 author: bleroy
@@ -10,8 +10,9 @@ ms.prod: .net-core
 ms.devlang: dotnet
 ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 ---
+# dotnet-store (.NET Core SDK 2.0 Preview 1)
 
-#dotnet-store
+[!INCLUDE [core-preview-warning](~/includes/core-preview-warning.md)]
 
 ## Name
 
@@ -25,7 +26,7 @@ ms.assetid: 1e8e4122-8110-4b48-afce-afffb6737776
 
 `dotnet store` stores the specified assemblies in the [runtime package store](../deploying/runtime-package-store.md).
 
-By default, these will be optimized for the target runtime and framework.
+By default, these assemblies are optimized for the target runtime and framework.
 
 For more information, see the [runtime package store](../deploying/runtime-package-store.md) topic.
 
@@ -33,7 +34,7 @@ For more information, see the [runtime package store](../deploying/runtime-packa
 
 `-h|--help`
 
-Prints out a short help for the command.  
+Prints out a short help for the command.
 
 `-m|--manifest <MANIFEST>`
 
@@ -49,15 +50,16 @@ The framework to target, for example `netcoreapp2.0`. This parameter is mandator
 
 `--framework-version <FRAMEWORK_VERSION>`
 
-The .NET Core version to use. This enables finer tuning to a specific version beyond the one that is part of `-f|--framework`, for example: `2.0.0-preview1-1234`.
+The .NET Core SDK version to use. This option enables to fine tune to a specific version beyond the one that is part of `-f|--framework`. 
+For example: `2.0.0-preview1-1234`.
 
 `-o|--output <OUTPUT_PATH>`
 
-Specify the path to the runtime package store. If not specified, it will default to the *store* subdirectory of the user profile .NET Core installation directory.
+Specify the path to the runtime package store. If not specified, it defaults to the *store* subdirectory of the user profile .NET Core installation directory.
 
 `--working-dir <WORKING_DIRECTORY>`
 
-The working directory used by the command to execute. If not specified, it will work under the obj subdirectory of the current directory.
+The working directory used by the command to execute. If not specified, it works under the *obj* subdirectory of the current directory.
 
 `--skip-optimization`
 
@@ -83,4 +85,4 @@ Store the packages specified in the `packages.csproj` without optimization:
 
 ## See also
 
-* [Runtime package store](../deploying/runtime-package-store.md)
+ [Runtime package store](../deploying/runtime-package-store.md)   

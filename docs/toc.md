@@ -60,7 +60,6 @@
 ### [dotnet-nuget-push](core/tools/dotnet-nuget-push.md)
 ### [dotnet-pack](core/tools/dotnet-pack.md)
 ### [dotnet-publish](core/tools/dotnet-publish.md)
-### [dotnet-store](core/tools/dotnet-store.md)
 ### [dotnet-restore](core/tools/dotnet-restore.md)
 ### [dotnet-run](core/tools/dotnet-run.md)
 ### [dotnet-sln](core/tools/dotnet-sln.md)
@@ -80,6 +79,10 @@
 ### [Analyzing third-party dependencies](core/porting/third-party-deps.md)
 ### [Porting libraries](core/porting/libraries.md)
 <!--### [🔧 NuGet packages](core/porting/nuget-packages.md)-->
+## .NET Core SDK 2.0 Preview 1
+### .NET Core CLI Tools
+#### [dotnet-store](core/preview/tools/dotnet-store.md)
+#### [dotnet-publish](core/preview/dotnet-publish.md)
 ## [VS 2015/project.json docs](project-json.md)
 <!-- End .NET Core Content -->
 

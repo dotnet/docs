@@ -1,22 +1,23 @@
 ---
 title: "Application Compatibility in the .NET Framework | Microsoft Docs"
 ms.custom: ""
-ms.date: "05/01/2017"
+ms.date: "05/19/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology:
   - "dotnet-clr"
+  - "app-compat"
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 helpviewer_keywords:
   - "application compatibility"
   - ".NET Framework application compatibility"
   - ".NET Framework changes"
-ms.assetid: c4ba3ff2-fe59-4c5d-9e0b-86bba3cd865c
 caps.latest.revision: 19
-author: "conniey"
-ms.author: "conniey"
+ms.assetid: c4ba3ff2-fe59-4c5d-9e0b-86bba3cd865c
+author: "rpetrusha"
+ms.author: "ronpet"
 manager: "wpickett"
 ---
 
@@ -49,8 +50,7 @@ Framework are mitigated through this quirking model.
 
 Runtime issues are those that arise when a new runtime is placed on a machine
 and the same binaries are run, but different behavior is seen. If a binary was
-compiled for .NET Framework 4.0 it will run in .NET Framework 4.0 compatibility 
-mode on 4.5 or later versions. Many
+compiled for .NET Framework 4.0 it will run in .NET Framework 4.0 compatibility mode on 4.5 or later versions. Many
 of the changes that affect 4.5 will not affect a binary compiled for 4.0. This
 is specific to the AppDomain and depends on the settings of the entry assembly.
 
@@ -103,6 +103,7 @@ To begin, select the type of compatibility change below:
 
 * [Retargeting Changes](./retargeting/index.md)
 * [Runtime Changes](./runtime/index.md)
+
 
 ## See Also
 

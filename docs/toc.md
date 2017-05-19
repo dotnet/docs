@@ -38,6 +38,7 @@
 ## [Unit Testing](core/testing/index.md)
 ### [Unit testing with dotnet test and xUnit](core/testing/unit-testing-with-dotnet-test.md)
 ### [Unit testing with dotnet test and MSTest](core/testing/unit-testing-with-mstest.md)
+### [Running selective unit tests](core/testing/selective-unit-tests.md)
 ## [Versioning](core/versions/index.md)
 ### [.NET Core Support](core/versions/lts-current.md)
 <!--### [🔧 Servicing](core/versions/servicing.md)-->
@@ -192,6 +193,7 @@
 ## Tutorials
 ### [Get Started](fsharp/tutorials/getting-started/index.md)
 #### [Get Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
+#### [Get Started with Visual Studio for Mac](fsharp/tutorials/getting-started/getting-started-with-visual-studio-for-mac.md)
 #### [Get Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
 #### [Get Started with Command-line Tools](fsharp/tutorials/getting-started/getting-started-command-line.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)

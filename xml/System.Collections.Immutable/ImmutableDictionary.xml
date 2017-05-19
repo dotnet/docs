@@ -13,8 +13,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
+    <summary>Provides a set of initialization methods for instances of the <see cref="T:System.Collections.Immutable.ImmutableDictionary`2" /> class.  
+  
+ [!INCLUDE[immutable_nuget_short](~/includes/immutable-nuget-short-md.md)]</summary>
     <remarks>To be added.</remarks>
+    <threadsafe>This type is thread safe.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName="Contains&lt;TKey,TValue&gt;">
@@ -41,13 +44,14 @@
         <Parameter Name="value" Type="TValue" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="map">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the keys in the immutable dictionary.</typeparam>
+        <typeparam name="TValue">The type of the values in the immutable dictionary.</typeparam>
+        <param name="map">The immutable dictionary to search.</param>
+        <param name="key">The key to locate in the immutable dictionary.</param>
+        <param name="value">The value to locate on the specified key, if the key is found.</param>
+        <summary>Determines whether the specified immutable dictionary contains the specified key/value pair.</summary>
+        <returns>
+          <see langword="true" /> if this map contains the specified key/value pair; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,10 +75,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of keys stored by the dictionary.</typeparam>
+        <typeparam name="TValue">The type of values stored by the dictionary.</typeparam>
+        <summary>Creates an empty immutable dictionary.</summary>
+        <returns>An empty immutable dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -100,11 +104,11 @@
         <Parameter Name="keyComparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="keyComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of keys stored by the dictionary.</typeparam>
+        <typeparam name="TValue">The type of values stored by the dictionary.</typeparam>
+        <param name="keyComparer">The implementation to use to determine the equality of keys in the dictionary.</param>
+        <summary>Creates an empty immutable dictionary that uses the specified key comparer.</summary>
+        <returns>An empty immutable dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,12 +135,12 @@
         <Parameter Name="valueComparer" Type="System.Collections.Generic.IEqualityComparer&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="keyComparer">To be added.</param>
-        <param name="valueComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of keys stored by the dictionary.</typeparam>
+        <typeparam name="TValue">The type of values stored by the dictionary.</typeparam>
+        <param name="keyComparer">The implementation to use to determine the equality of keys in the dictionary.</param>
+        <param name="valueComparer">The implementation to use to determine the equality of values in the dictionary.</param>
+        <summary>Creates an empty immutable dictionary that uses the specified key and value comparers.</summary>
+        <returns>An empty immutable dictionary.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,10 +164,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of keys stored by the dictionary.</typeparam>
+        <typeparam name="TValue">The type of values stored by the dictionary.</typeparam>
+        <summary>Creates a new immutable dictionary builder.</summary>
+        <returns>The new builder.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -189,11 +193,11 @@
         <Parameter Name="keyComparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="keyComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of keys stored by the dictionary.</typeparam>
+        <typeparam name="TValue">The type of values stored by the dictionary.</typeparam>
+        <param name="keyComparer">The key comparer.</param>
+        <summary>Creates a new immutable dictionary builder.</summary>
+        <returns>The new builder.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -220,12 +224,12 @@
         <Parameter Name="valueComparer" Type="System.Collections.Generic.IEqualityComparer&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="keyComparer">To be added.</param>
-        <param name="valueComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of keys stored by the dictionary.</typeparam>
+        <typeparam name="TValue">The type of values stored by the dictionary.</typeparam>
+        <param name="keyComparer">The key comparer.</param>
+        <param name="valueComparer">The value comparer.</param>
+        <summary>Creates a new immutable dictionary builder.</summary>
+        <returns>The new builder.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,11 +255,11 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of keys in the dictionary.</typeparam>
+        <typeparam name="TValue">The type of values in the dictionary.</typeparam>
+        <param name="items">The items used to populate the dictionary before it’s immutable.</param>
+        <summary>Creates a new immutable dictionary that contains the specified items.</summary>
+        <returns>A new immutable dictionary that contains the specified items.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -282,12 +286,12 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="keyComparer">To be added.</param>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of keys in the dictionary.</typeparam>
+        <typeparam name="TValue">The type of values in the dictionary.</typeparam>
+        <param name="keyComparer">The comparer implementation to use to compare keys for equality.</param>
+        <param name="items">The items to add to the dictionary before it’s immutable.</param>
+        <summary>Creates a new immutable dictionary that contains the specified items and uses the specified key comparer.</summary>
+        <returns>A new immutable dictionary that contains the specified items and uses the specified comparer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -315,13 +319,13 @@
         <Parameter Name="items" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="keyComparer">To be added.</param>
-        <param name="valueComparer">To be added.</param>
-        <param name="items">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of keys in the dictionary.</typeparam>
+        <typeparam name="TValue">The type of values in the dictionary.</typeparam>
+        <param name="keyComparer">The comparer implementation to use to compare keys for equality.</param>
+        <param name="valueComparer">The comparer implementation to use to compare values for equality.</param>
+        <param name="items">The items to add to the dictionary before it’s immutable.</param>
+        <summary>Creates a new immutable dictionary that contains the specified items and uses the specified key comparer.</summary>
+        <returns>A new immutable dictionary that contains the specified items and uses the specified comparer.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -348,12 +352,12 @@
         <Parameter Name="key" Type="TKey" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="dictionary">To be added.</param>
-        <param name="key">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the key.</typeparam>
+        <typeparam name="TValue">The type of the value.</typeparam>
+        <param name="dictionary">The dictionary to retrieve the value from.</param>
+        <param name="key">The key to search for.</param>
+        <summary>Gets the value for a given key if a matching key exists in the dictionary.</summary>
+        <returns>The value for the key, or <c>default(TValue)</c> if no matching key was found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -381,13 +385,13 @@
         <Parameter Name="defaultValue" Type="TValue" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="dictionary">To be added.</param>
-        <param name="key">To be added.</param>
-        <param name="defaultValue">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the key.</typeparam>
+        <typeparam name="TValue">The type of the value.</typeparam>
+        <param name="dictionary">The dictionary to retrieve the value from.</param>
+        <param name="key">The key to search for.</param>
+        <param name="defaultValue">The default value to return if no matching key is found in the dictionary.</param>
+        <summary>Gets the value for a given key if a matching key exists in the dictionary.</summary>
+        <returns>The value for the key, or <paramref name="defaultValue" /> if no matching key was found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -413,11 +417,11 @@
         <Parameter Name="source" Type="System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt;&gt;" RefType="this" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the keys in the dictionary.</typeparam>
+        <typeparam name="TValue">The type of the values in the dictionary.</typeparam>
+        <param name="source">The sequence of key/value pairs to enumerate.</param>
+        <summary>Enumerates a sequence of key/value pairs and produces an immutable dictionary of its contents.</summary>
+        <returns>An immutable dictionary that contains the key/value pairs in the specified sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -444,12 +448,12 @@
         <Parameter Name="keyComparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="keyComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the keys in the dictionary.</typeparam>
+        <typeparam name="TValue">The type of the values in the dictionary.</typeparam>
+        <param name="source">The sequence of key/value pairs to enumerate.</param>
+        <param name="keyComparer">The key comparer to use when building the immutable dictionary.</param>
+        <summary>Enumerates a sequence of key/value pairs and produces an immutable dictionary of its contents by using the specified key comparer.</summary>
+        <returns>An immutable dictionary that contains the key/value pairs in the specified sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -477,13 +481,13 @@
         <Parameter Name="valueComparer" Type="System.Collections.Generic.IEqualityComparer&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="keyComparer">To be added.</param>
-        <param name="valueComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TKey">The type of the keys in the dictionary.</typeparam>
+        <typeparam name="TValue">The type of the values in the dictionary.</typeparam>
+        <param name="source">The sequence of key/value pairs to enumerate.</param>
+        <param name="keyComparer">The key comparer to use when building the immutable dictionary.</param>
+        <param name="valueComparer">The value comparer to use for the immutable dictionary.</param>
+        <summary>Enumerates a sequence of key/value pairs and produces an immutable dictionary of its contents by using the specified key and value comparers.</summary>
+        <returns>An immutable dictionary that contains the key/value pairs in the specified sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -510,12 +514,12 @@
         <Parameter Name="keySelector" Type="System.Func&lt;TSource,TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <typeparam name="TKey">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="keySelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of element in the source collection.</typeparam>
+        <typeparam name="TKey">The type of key in the resulting immutable dictionary.</typeparam>
+        <param name="source">The source collection used to generate the immutable dictionary.</param>
+        <param name="keySelector">The function used to transform keys for the immutable dictionary.</param>
+        <summary>Constructs an immutable dictionary from an existing collection of elements, applying a transformation function to the source keys.</summary>
+        <returns>The immutable dictionary that contains elements from <paramref name="source" />, with keys transformed by applying <paramref name="keySelector" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -543,13 +547,13 @@
         <Parameter Name="keyComparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <typeparam name="TKey">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="keySelector">To be added.</param>
-        <param name="keyComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of element in the source collection.</typeparam>
+        <typeparam name="TKey">The type of key in the resulting immutable dictionary.</typeparam>
+        <param name="source">The source collection used to generate the immutable dictionary.</param>
+        <param name="keySelector">The function used to transform keys for the immutable dictionary.</param>
+        <param name="keyComparer">The key comparer to use for the dictionary.</param>
+        <summary>Constructs an immutable dictionary based on some transformation of a sequence.</summary>
+        <returns>The immutable dictionary that contains elements from <paramref name="source" />, with keys transformed by applying <paramref name="keySelector" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -578,14 +582,14 @@
         <Parameter Name="elementSelector" Type="System.Func&lt;TSource,TValue&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="keySelector">To be added.</param>
-        <param name="elementSelector">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements in the sequence.</typeparam>
+        <typeparam name="TKey">The type of the keys in the resulting dictionary.</typeparam>
+        <typeparam name="TValue">The type of the values in the resulting dictionary.</typeparam>
+        <param name="source">The sequence to enumerate to generate the dictionary.</param>
+        <param name="keySelector">The function that will produce the key for the dictionary from each sequence element.</param>
+        <param name="elementSelector">The function that will produce the value for the dictionary from each sequence element.</param>
+        <summary>Enumerates and transforms a sequence, and produces an immutable dictionary of its contents.</summary>
+        <returns>An immutable dictionary that contains the items in the specified sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -615,15 +619,15 @@
         <Parameter Name="keyComparer" Type="System.Collections.Generic.IEqualityComparer&lt;TKey&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="keySelector">To be added.</param>
-        <param name="elementSelector">To be added.</param>
-        <param name="keyComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements in the sequence.</typeparam>
+        <typeparam name="TKey">The type of the keys in the resulting dictionary.</typeparam>
+        <typeparam name="TValue">The type of the values in the resulting dictionary.</typeparam>
+        <param name="source">The sequence to enumerate to generate the dictionary.</param>
+        <param name="keySelector">The function that will produce the key for the dictionary from each sequence element.</param>
+        <param name="elementSelector">The function that will produce the value for the dictionary from each sequence element.</param>
+        <param name="keyComparer">The key comparer to use for the dictionary.</param>
+        <summary>Enumerates and transforms a sequence, and produces an immutable dictionary of its contents by using the specified key comparer.</summary>
+        <returns>An immutable dictionary that contains the items in the specified sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -654,16 +658,16 @@
         <Parameter Name="valueComparer" Type="System.Collections.Generic.IEqualityComparer&lt;TValue&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="TSource">To be added.</typeparam>
-        <typeparam name="TKey">To be added.</typeparam>
-        <typeparam name="TValue">To be added.</typeparam>
-        <param name="source">To be added.</param>
-        <param name="keySelector">To be added.</param>
-        <param name="elementSelector">To be added.</param>
-        <param name="keyComparer">To be added.</param>
-        <param name="valueComparer">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <typeparam name="TSource">The type of the elements in the sequence.</typeparam>
+        <typeparam name="TKey">The type of the keys in the resulting dictionary.</typeparam>
+        <typeparam name="TValue">The type of the values in the resulting dictionary.</typeparam>
+        <param name="source">The sequence to enumerate to generate the dictionary.</param>
+        <param name="keySelector">The function that will produce the key for the dictionary from each sequence element.</param>
+        <param name="elementSelector">The function that will produce the value for the dictionary from each sequence element.</param>
+        <param name="keyComparer">The key comparer to use for the dictionary.</param>
+        <param name="valueComparer">The value comparer to use for the dictionary.</param>
+        <summary>Enumerates and transforms a sequence, and produces an immutable dictionary of its contents by using the specified key and value comparers.</summary>
+        <returns>An immutable dictionary that contains the items in the specified sequence.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -98,7 +98,7 @@ Adds a listener to the **Listeners** collection.
   
 ```  
 <configuration>  
-   \<system.diagnostics>  
+   <system.diagnostics>  
       <trace autoflush="true" indentsize="0">  
          <listeners>  
             <add name="myListener" type="System.Diagnostics.TextWriterTraceListener, system, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" initializeData="c:\myListener.log" />  
@@ -108,7 +108,7 @@ Adds a listener to the **Listeners** collection.
                  type="System.Diagnostics.ConsoleTraceListener, system, version=1.0.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
          </listeners>  
       </trace>  
-   \</system.diagnostics>  
+   </system.diagnostics>  
 </configuration>  
 ```  
   

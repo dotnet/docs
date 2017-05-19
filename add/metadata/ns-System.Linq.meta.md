@@ -1,6 +1,6 @@
 ---
 uid: System.Linq
-author: "BillWagner"
-ms.author: "wiwagn"
+author: "mairaw"
+ms.author: "mairaw"
 manager: "wpickett"
 ---

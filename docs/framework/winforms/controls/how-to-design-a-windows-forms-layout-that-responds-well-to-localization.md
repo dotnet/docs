@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Windows Forms, localization"
   - "localization, Windows Forms layout"
 ms.assetid: d13eff2d-701c-4b6e-8838-3885cbfb7223
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

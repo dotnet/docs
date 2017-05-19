@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "history, navigation, navigating forward"
   - "navigation, through navigation history (forward)"
 ms.assetid: 5939d574-5f53-469e-85f5-1f2b13607caa
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

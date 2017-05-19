@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "groups"
   - "groups, in Windows Forms controls"
 ms.assetid: 610416a1-8da4-436c-af19-5f19e654769b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

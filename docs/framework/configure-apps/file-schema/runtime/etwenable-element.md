@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "etwEnable element"
   - "<etwEnable> element"
 ms.assetid: 29dde982-6d8b-4099-8867-ad0d7733f6dc
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

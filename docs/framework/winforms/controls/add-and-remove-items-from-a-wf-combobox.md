@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "combo boxes, removing items"
   - "CheckedListBox control [Windows Forms], adding and removing items"
 ms.assetid: 7224c8d2-4118-443e-ae1e-d7c17d1e69ee
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

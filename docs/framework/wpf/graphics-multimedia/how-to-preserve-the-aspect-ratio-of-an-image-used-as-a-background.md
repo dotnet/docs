@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "brushes, preserving aspect ratios of background images"
   - "background images, preserving aspect ratios"
 ms.assetid: 28c39478-13d7-4011-80a3-8b9cc3e54478
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

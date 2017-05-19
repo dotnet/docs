@@ -12,6 +12,8 @@ dev_langs:
 helpviewer_keywords: 
   - "#pragma checksum [C#]"
 ms.assetid: 3673e4ca-6098-4ec1-890f-8fceb2a794a2
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

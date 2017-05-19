@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugILFrame2::RemapFunction method [.NET Framework debugging]"
   - "RemapFunction method [.NET Framework debugging]"
 ms.assetid: dd639ba0-f77b-426d-9ff6-f92706840348
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

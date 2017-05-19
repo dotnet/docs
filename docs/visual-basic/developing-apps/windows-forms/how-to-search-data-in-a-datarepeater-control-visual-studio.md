@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "DataRepeater, implementing search"
   - "DataRepeater, searching data"
 ms.assetid: a8ab5d17-b94f-43c4-8dd7-d0450226d73f
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

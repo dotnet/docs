@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "-bugreport compiler option [C#]"
   - "bugreport compiler option [C#]"
 ms.assetid: f39665e3-4f6f-4357-88a2-3274c7bec0c1
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

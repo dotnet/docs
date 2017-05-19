@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "classes, VideoDrawing"
   - "classes, MediaPlayer"
 ms.assetid: 165d47ed-22ce-4ded-aa6a-aa9b7467de87
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

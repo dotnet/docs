@@ -17,6 +17,8 @@ dev_langs:
 helpviewer_keywords: 
   - "DirectCast keyword"
 ms.assetid: 63e5a1d0-4d9e-4732-bf8f-e90c0c8784b8
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: ff3e3048-0d5d-4502-ae5c-9187fcbd0514
+ms.technology: 
+  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"

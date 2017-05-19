@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "delegate keyword"
   - "Delegate statement"
 ms.assetid: f799c518-0817-40cc-ad0b-4da846fdba57
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

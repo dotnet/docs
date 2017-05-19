@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "glyphs [WPF]"
   - "typography, GlyphRun object"
 ms.assetid: 746ca769-a331-4435-9b95-f72a883b67c1
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

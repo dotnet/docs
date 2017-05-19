@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "mouse, capture"
 ms.assetid: 8911d4b0-a4f8-4f93-8246-371aebd27d0c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

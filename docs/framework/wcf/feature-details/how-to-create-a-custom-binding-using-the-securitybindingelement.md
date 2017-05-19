@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "security [WCF], creating custom bindings"
 ms.assetid: 203a9f9e-3a73-427c-87aa-721c56265b29
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 19
 author: "BrucePerlerMS"
 ms.author: "bruceper"

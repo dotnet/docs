@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls, Viewbox"
   - "Viewbox control"
 ms.assetid: b9c22ef4-bce4-4300-9e0c-8260b7db83cc
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Service Transaction Behavior Sample [Windows Communication Foundation]"
 ms.assetid: 1a9842a3-e84d-427c-b6ac-6999cbbc2612
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 28
 author: "Erikre"
 ms.author: "erikre"

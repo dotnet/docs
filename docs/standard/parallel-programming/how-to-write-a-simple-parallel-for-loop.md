@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "for loop, parallel construction in .NET"
   - "parallel for loops, how to use"
 ms.assetid: 9029ba7f-a9d1-4526-8c84-c88716dba5d4
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

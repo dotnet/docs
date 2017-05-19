@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "graphics, composite drawings"
   - "DrawingGroup class"
 ms.assetid: 066eb0ab-5f0e-439d-85c6-dca60af269fc
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "buttons, cancel buttons"
   - "Button control [Windows Forms], designating as cancel button"
 ms.assetid: 252f0834-e54b-44d9-96f7-ee5f50e94f2c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

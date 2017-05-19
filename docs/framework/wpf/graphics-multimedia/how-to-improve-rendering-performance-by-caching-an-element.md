@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "performance [WPF], caching an element"
   - "UIElement [WPF], caching"
 ms.assetid: 4739c1fc-60ba-4c46-aba6-f6c1a2688f19
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

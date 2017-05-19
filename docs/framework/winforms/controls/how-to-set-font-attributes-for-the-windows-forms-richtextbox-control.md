@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "text boxes, formatting text"
   - "formatting [Windows Forms]"
 ms.assetid: 2bc23ddb-0529-4489-a1a2-ad253cb43f9a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

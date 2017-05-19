@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, Menu control type"
   - "Menu control type"
 ms.assetid: 016323cb-f800-4938-b77b-2eb25d646090
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 24
 author: "Xansky"
 ms.author: "mhopkins"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::DefineLocalVariable method [.NET Framework debugging]"
   - "DefineLocalVariable method [.NET Framework debugging]"
 ms.assetid: 6fab8a58-3883-490f-8b27-64042c90f104
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

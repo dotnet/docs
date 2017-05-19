@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WCF Samples [WCF], setup"
   - "Windows Communication Foundation Samples [WCF], setup"
 ms.assetid: 0be7d232-485b-4f6d-9ed0-b4243c907376
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 19
 author: "Erikre"
 ms.author: "erikre"

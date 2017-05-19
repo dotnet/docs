@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Windows Presentation Foundation, properties"
   - "properties [WPF]"
 ms.assetid: d6e0197f-f2c4-48ed-b45b-b9cdb64aab1c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 72
 author: dotnet-bot
 ms.author: dotnetcontent

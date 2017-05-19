@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "print jobs, troubleshooting"
   - "print jobs, diagnosing problems"
 ms.assetid: b081a170-84c6-48f9-a487-5766a8d58a82
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

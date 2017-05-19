@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "DataRepeater, disabling delete"
   - "DataRepeater, disabling add"
 ms.assetid: 298d8f60-ddfe-4361-ab66-cf76d0df5220
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

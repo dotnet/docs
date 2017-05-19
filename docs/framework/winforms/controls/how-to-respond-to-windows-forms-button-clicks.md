@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], controls"
   - "Click event, responding to"
 ms.assetid: 7a4951bd-369c-4662-b246-28ad83eda484
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

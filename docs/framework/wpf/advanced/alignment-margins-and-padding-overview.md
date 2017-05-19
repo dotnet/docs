@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "padding"
   - "aligning"
 ms.assetid: 9c6a2009-9b86-4e40-8605-0a2664dc3973
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

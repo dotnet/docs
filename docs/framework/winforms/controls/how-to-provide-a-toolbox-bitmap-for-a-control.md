@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], Toolbox bitmaps"
   - "bitmaps [Windows Forms], custom controls"
 ms.assetid: 0ed0840a-616d-41ba-a27d-3573241932ad
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, Selection control pattern"
   - "control patterns, Selection"
 ms.assetid: 449c3068-a5d6-4f66-84c6-1bcc7dd4d209
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 33
 author: "Xansky"
 ms.author: "mhopkins"

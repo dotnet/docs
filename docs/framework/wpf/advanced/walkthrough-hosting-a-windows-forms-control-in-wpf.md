@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "hosting Windows Forms control in WPF"
 ms.assetid: 9cb88415-39b0-4c46-80c4-ff325b674286
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "type design guidelines, interfaces"
   - "class library design guidelines [.NET Framework], interfaces"
 ms.assetid: a016bd18-6710-4358-9438-9f190a295392
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

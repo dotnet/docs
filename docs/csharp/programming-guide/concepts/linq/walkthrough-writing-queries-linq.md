@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "queries [LINQ in C#], writing"
   - "writing LINQ queries"
 ms.assetid: 2962a610-419a-4276-9ec8-4b7f2af0c081
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"

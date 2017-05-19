@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "transparency of UIElements"
   - "UIElements, opacity"
 ms.assetid: a49fc8d6-7b32-4f28-9122-39b632a19b4b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

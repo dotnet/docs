@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "pens, setting width"
   - "pens, setting alignment"
 ms.assetid: a202af36-4d31-4401-a126-b232f51db581
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

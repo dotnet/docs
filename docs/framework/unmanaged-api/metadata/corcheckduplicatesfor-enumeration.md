@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorCheckDuplicatesFor enumeration [.NET Framework metadata]"
 ms.assetid: d8ec8d3c-70f7-4cc6-9957-68068fd8f49c
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

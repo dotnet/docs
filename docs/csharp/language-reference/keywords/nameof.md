@@ -11,6 +11,8 @@ f1_keywords:
 dev_langs: 
   - "CSharp"
 ms.assetid: 33601bf3-cc2c-4496-846d-f9679bccf2a7
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"

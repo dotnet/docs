@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "properties [C#], on interfaces"
   - "interfaces [C#], properties"
 ms.assetid: 6503e9ed-33d7-44ec-b4c1-cc16c084b795
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

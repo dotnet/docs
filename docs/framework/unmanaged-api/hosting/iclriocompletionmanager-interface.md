@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRIoCompletionManager interface [.NET Framework hosting]"
 ms.assetid: c6c3ace6-e5e7-4450-8cc5-a9a48208c493
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

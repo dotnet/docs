@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "BC30420"
   - "Sub Main error message"
 ms.assetid: a006d57d-4dd3-46a7-9026-ca9a31470da7
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

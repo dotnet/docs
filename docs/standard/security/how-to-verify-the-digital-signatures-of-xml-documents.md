@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "XML digital signatures"
   - "digital signatures, verifying"
 ms.assetid: a4d5ceb1-b9f5-47e8-9e4a-a2b39110002f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

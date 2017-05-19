@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateBreakpoint method, ICorDebugModule interface [.NET Framework debugging]"
   - "ICorDebugModule::CreateBreakpoint method [.NET Framework debugging]"
 ms.assetid: c2541c30-fa6e-43b6-9682-77d8898f33e1
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

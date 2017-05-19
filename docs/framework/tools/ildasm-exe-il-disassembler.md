@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "text files produced by MSIL Disassembler"
   - "disassembling file for MSIL Assembler input"
 ms.assetid: db27f6b2-f1ec-499e-be3a-7eecf95ca42b
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"

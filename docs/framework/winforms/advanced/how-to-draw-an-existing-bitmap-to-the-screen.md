@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "bitmaps [Windows Forms], loading in Windows Forms applications"
   - "images [Windows Forms], displaying on Windows Forms"
 ms.assetid: 5bc558d7-b326-4050-a834-b8600da0de95
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

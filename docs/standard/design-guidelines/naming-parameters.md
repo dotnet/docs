@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "parameters, names"
   - "names [.NET Framework], parameters"
 ms.assetid: ca3c956e-725a-441b-b4e3-eab5d472f41c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

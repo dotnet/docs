@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugRemoteTarget interface [.NET Framework debugging]"
 ms.assetid: bd9936a6-cc24-4869-8761-0988664464e6
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

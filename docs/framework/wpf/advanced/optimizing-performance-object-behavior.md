@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "object performance considerations"
   - "Freezable objects, performance"
 ms.assetid: 73aa2f47-1d73-439a-be1f-78dc4ba2b5bd
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

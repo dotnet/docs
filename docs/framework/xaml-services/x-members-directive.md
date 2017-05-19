@@ -10,6 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 155b393d-3b49-4c5a-8c9e-b3d9893af4e4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: "wadepickett"
 ms.author: "wpickett"

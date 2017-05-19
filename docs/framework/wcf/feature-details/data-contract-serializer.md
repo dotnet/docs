@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "WCF, data"
   - "DataContractSerializer"
 ms.assetid: 3d64837e-0a0c-4cc8-90ff-a5c6f313c63a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"

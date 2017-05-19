@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "composite controls, Windows Forms"
   - "controls [Windows Forms], composite"
 ms.assetid: d086f2a3-baa3-4e09-b40c-a5bb3cfc51a6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

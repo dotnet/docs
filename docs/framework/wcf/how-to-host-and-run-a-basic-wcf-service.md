@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "WCF services [WCF]"
   - "WCF services [WCF], running"
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 58
 author: "Erikre"
 ms.author: "erikre"

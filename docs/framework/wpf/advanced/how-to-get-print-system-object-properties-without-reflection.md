@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PrintSystemObject, getting properties"
 ms.assetid: 43560f28-183d-41c1-b9d1-de7c2552273e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "XML comments, parsing [Visual Basic]"
 ms.assetid: 78a15cd0-7708-4e79-85d1-c154b7a14a8c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -45,6 +45,8 @@ helpviewer_keywords:
   - "thread, affinity"
   - "System.Windows.Controls.Control class"
 ms.assetid: 8579c10b-76ab-4c52-9691-195ce02333c8
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

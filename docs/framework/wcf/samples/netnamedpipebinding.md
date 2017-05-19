@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Net Profile Named Pipe"
 ms.assetid: e78e845f-c325-46e2-927d-81616f97f7d5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 34
 author: "Erikre"
 ms.author: "erikre"

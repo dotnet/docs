@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "typography, about typography"
 ms.assetid: 06cbf17b-6eff-4fe5-949d-2dd533e4e1f4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

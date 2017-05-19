@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "wav files"
   - ".wav files"
 ms.assetid: f7f62f53-e026-4c40-b221-3a26adb0c2c5
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"

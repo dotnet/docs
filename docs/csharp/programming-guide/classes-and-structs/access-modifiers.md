@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "C# Language, access modifiers"
   - "access modifiers [C#], about"
 ms.assetid: 6e81ee82-224f-4a12-9baf-a0dca2656c5b
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"

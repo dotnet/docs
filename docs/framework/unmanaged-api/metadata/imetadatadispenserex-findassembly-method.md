@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "FindAssembly method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::FindAssembly method [.NET Framework metadata]"
 ms.assetid: 3afe7252-5f28-48d9-a74d-1927566c404c
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

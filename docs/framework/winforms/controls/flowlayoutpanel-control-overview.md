@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "Windows Forms, dynamic layout"
   - "FlowLayoutPanel control [Windows Forms], about FlowLayoutPanel control"
 ms.assetid: 3883e024-f5a0-456d-9c27-b4dfa1cc9045
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

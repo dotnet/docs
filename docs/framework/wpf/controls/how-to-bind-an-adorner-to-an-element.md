@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "UIElements, binding adorners to"
   - "adorners, binding to specified UIElements"
 ms.assetid: b2101611-a0ee-4137-bdb8-9b3673d2e6b9
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

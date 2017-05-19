@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<system.diagnostics> element"
   - "system.diagnostics element"
 ms.assetid: 3f348f42-fa72-4ff2-aa1c-bb9eecad4bb2
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"

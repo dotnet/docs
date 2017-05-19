@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "icons [Windows Forms], toolbar buttons"
   - "ToolBar control [Windows Forms], adding icons to buttons"
 ms.assetid: d848f38e-67f2-49d4-8e88-01c845c06c02
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

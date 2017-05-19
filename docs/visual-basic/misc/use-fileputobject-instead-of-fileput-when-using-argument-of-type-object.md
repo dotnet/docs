@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrUseFilePutObject"
 ms.assetid: d207b9b7-5898-4c13-8b03-9feefac5f726
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

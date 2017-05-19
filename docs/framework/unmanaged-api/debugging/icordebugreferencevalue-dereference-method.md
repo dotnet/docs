@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugReferenceValue::Dereference method [.NET Framework debugging]"
   - "Dereference method [.NET Framework debugging]"
 ms.assetid: 5ec8cf76-3deb-4ce6-9a49-77a4c35d80b9
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "parsing strings, other strings"
   - "Boolean data type, parsing strings"
 ms.assetid: d139bc00-3c4e-4d78-ac9a-5c951b258d28
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

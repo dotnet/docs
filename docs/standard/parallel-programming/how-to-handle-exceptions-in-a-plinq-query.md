@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, how to handle exceptions"
 ms.assetid: 8d56ff9b-a571-4d31-b41f-80c0b51b70a5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

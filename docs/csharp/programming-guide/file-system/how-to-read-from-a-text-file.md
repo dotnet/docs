@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "reading data, text files"
   - "text files, reading"
 ms.assetid: 92246c5b-e819-4eea-9370-1a9460e12de3
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

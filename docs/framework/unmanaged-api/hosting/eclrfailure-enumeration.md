@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EClrFailure enumeration [.NET Framework hosting]"
 ms.assetid: 37b95cce-9bfb-4ecf-a00b-33dcba782c67
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 16

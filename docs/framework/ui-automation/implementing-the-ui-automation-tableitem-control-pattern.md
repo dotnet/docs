@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, Table Item control pattern"
   - "TableItem control pattern"
 ms.assetid: ac178408-1485-436f-8d3e-eee3bf80cb24
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 14
 author: "Xansky"
 ms.author: "mhopkins"

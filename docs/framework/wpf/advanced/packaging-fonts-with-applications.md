@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "typography, packaging fonts with applications"
   - "packaging fonts with applications"
 ms.assetid: db15ee48-4d24-49f5-8b9d-a64460865286
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

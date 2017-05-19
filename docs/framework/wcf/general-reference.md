@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Windows Communication Foundation, general reference"
   - "WCF, general reference"
 ms.assetid: b1a21e93-4700-46e6-88ca-bd7a50e19a16
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"

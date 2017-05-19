@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Storyboards, seeking"
   - "seeking Storyboards"
 ms.assetid: 887bb39a-0c2a-4ae8-956d-1d9f6f8ebbfc
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

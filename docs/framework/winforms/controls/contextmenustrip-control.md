@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "ContextMenuStrip control [Windows Forms]"
   - "shortcut menus"
 ms.assetid: 76e070b2-65d7-457f-8300-d104e4e01e5e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "errors [Windows Forms]"
   - "ErrorProvider component [Windows Forms]"
 ms.assetid: c0f2e231-c5c9-413d-a507-75af2db499b6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

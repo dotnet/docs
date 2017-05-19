@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "RelativeBindForResources element"
   - "<relativeBindForResources> element"
 ms.assetid: 846ffa47-7257-4ce3-8cac-7ff627e0e34f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

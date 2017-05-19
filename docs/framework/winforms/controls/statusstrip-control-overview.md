@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "StatusStrip control [Windows Forms], about StatusStrip control"
   - "status bars, about status bars"
 ms.assetid: c0d9bcbb-f8b8-46ef-bae2-4146b8c8ce99
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

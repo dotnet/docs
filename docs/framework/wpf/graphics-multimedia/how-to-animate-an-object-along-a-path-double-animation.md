@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "animation, objects along paths (double animation)"
   - "double animation"
 ms.assetid: 5a3c4a99-f303-42ad-a52a-e4794bb1798e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

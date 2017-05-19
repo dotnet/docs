@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "root namespaces"
   - "declarations, namespaces"
 ms.assetid: a31fbd95-9ace-4c3d-bbb1-51222a2272b2
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 39
 author: dotnet-bot
 ms.author: dotnetcontent

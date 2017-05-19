@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "security [XAML Services], .NET XAML services"
   - "XAML security [XAML Services]"
 ms.assetid: 544296d4-f38e-4498-af49-c9f4dad28964
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: "wadepickett"
 ms.author: "wpickett"

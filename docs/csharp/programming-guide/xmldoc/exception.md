@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "<exception> C# XML tag"
   - "exception C# XML tag"
 ms.assetid: dd73aac5-3c74-4fcf-9498-f11bff3a2f3c
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

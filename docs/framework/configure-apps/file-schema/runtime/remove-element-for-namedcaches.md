@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "remove element for namedCaches"
   - "<remove> element for namedCaches"
 ms.assetid: 24211ea5-163e-4fe5-aed8-004d8499760c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"

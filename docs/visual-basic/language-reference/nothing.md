@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Nothing keyword"
   - "Nothing keyword, syntax"
 ms.assetid: 06176e2d-bbf7-4a37-afaa-a86ad21ee99f
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "case sensitivity, capitalization conventions"
   - "names [.NET Framework], capitalization"
 ms.assetid: 4c4ea526-9203-486f-b72d-29d61c5b3c6d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

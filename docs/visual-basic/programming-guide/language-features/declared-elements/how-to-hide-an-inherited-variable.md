@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "declared elements, about declared elements"
   - "variables [Visual Basic], hiding inherited"
 ms.assetid: 765728d9-7351-4a30-999d-b5f34f024412
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

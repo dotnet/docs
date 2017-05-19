@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "federation [WCF], and trust"
 ms.assetid: 4bdec4f2-f8a2-4512-bdcf-14ef54b5877a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"

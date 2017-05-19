@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "performance counters [WCF]"
 ms.assetid: f559b2bd-ed83-4988-97a1-e88f06646609
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 37
 author: "Erikre"
 ms.author: "erikre"

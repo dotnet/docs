@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "abstract types [.NET Framework]"
   - "types [.NET Framework], abstract"
 ms.assetid: 0a632bc7-9b03-44ee-8842-c82f88672a45
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

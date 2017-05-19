@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "names [.NET Framework], type members"
   - "members [.NET Framework], type"
 ms.assetid: af5a0903-36af-4c2a-b848-cf959affeaa5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

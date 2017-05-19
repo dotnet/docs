@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Windows Forms, changing the borders"
 ms.assetid: b3d5fa56-80c6-4b10-b505-f9672307ed55
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

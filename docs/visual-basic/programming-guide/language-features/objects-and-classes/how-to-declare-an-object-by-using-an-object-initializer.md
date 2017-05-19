@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "initializers [Visual Basic]"
   - "Video How tos, Visual Basic"
 ms.assetid: 0f53a553-efd6-466d-80bf-6b679e5cd174
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

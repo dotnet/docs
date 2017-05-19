@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "threading [Windows Forms], background operations"
   - "background operations"
 ms.assetid: 9b7bc5ae-051c-4904-9720-18f6667388bd
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

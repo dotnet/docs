@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "displaying data, data grids"
   - "DataGridView control [Windows Forms], displaying data"
 ms.assetid: b170b52a-2ebd-4948-ac2f-e52d494cebb2
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

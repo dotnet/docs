@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "callback methods"
   - "callbacks"
 ms.assetid: 48b55c60-495f-4089-9396-97f9122bba7c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

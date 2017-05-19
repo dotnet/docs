@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "cross-references [C#], tags"
   - "<seealso> C# XML tag"
 ms.assetid: 8e157f3f-f220-4fcf-9010-88905b080b18
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

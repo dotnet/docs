@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "grid control pattern"
   - "UI Automation, grid control pattern"
 ms.assetid: 234d11a0-7ce7-4309-8989-2f4720e02f78
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 27
 author: "Xansky"
 ms.author: "mhopkins"

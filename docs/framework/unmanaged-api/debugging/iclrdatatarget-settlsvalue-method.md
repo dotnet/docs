@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRDataTarget::SetTLSValue method [.NET Framework debugging]"
   - "SetTLSValue method [.NET Framework debugging]"
 ms.assetid: 4a2d6a24-749a-47ad-9f01-4517203d3f35
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

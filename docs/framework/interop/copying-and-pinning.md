@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "interop marshaling, copying"
   - "interop marshaling, pinning"
 ms.assetid: 0059f576-e460-4e70-b257-668870e420b8
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

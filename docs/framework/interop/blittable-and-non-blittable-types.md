@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "interop marshaling, blittable types"
   - "blittable types, interop marshaling"
 ms.assetid: d03b050e-2916-49a0-99ba-f19316e5c1b3
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"

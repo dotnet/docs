@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AssemblyUnloadFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::AssemblyUnloadFinished method [.NET Framework profiling]"
 ms.assetid: 53fca564-84b1-44d4-9e21-17a492d2aae7
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

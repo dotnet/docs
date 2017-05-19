@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "timers, Windows-based"
   - "Timer component [Windows Forms], limitations of Interval property"
 ms.assetid: 7e5fb513-77e7-4046-a8e8-aab94e61ca0f
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ helpviewer_keywords:
   - "tasks, cancellation"
   - "asynchronous task cancellation"
 ms.assetid: 3ecf1ea9-e399-4a6a-a0d6-8475f48dcb28
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "ControlTemplate [WPF], Thumb"
   - "parts [WPF], Thumb"
 ms.assetid: 86a49235-62d9-414e-923e-53126e3f930a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

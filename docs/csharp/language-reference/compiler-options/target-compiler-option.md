@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "assemblies [C#], compiling"
   - "-target compiler options [C#]"
 ms.assetid: a18bbd8e-bbf7-49e7-992c-717d0eb1f76f
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

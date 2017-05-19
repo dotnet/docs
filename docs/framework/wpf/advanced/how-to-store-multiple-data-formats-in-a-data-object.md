@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "DataFormats class [WPF], storing multiple formats"
   - "drag-and-drop [WPF], storing multiple formats"
 ms.assetid: 941ace29-29c4-4c26-b75b-ea7d06aa0d69
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

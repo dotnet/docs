@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "unchecked statement [C#]"
   - "statements [C#], checked and unchecked"
 ms.assetid: a84bc877-2c7f-4396-8735-1ce97c42f35e
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

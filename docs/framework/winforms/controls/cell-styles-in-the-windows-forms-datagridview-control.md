@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "cells, styles"
   - "data grids, cell styles"
 ms.assetid: dbb75ed6-8804-4232-8382-f9920c2e380c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent

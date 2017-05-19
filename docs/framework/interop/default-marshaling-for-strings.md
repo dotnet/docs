@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "strings, interop marshaling"
   - "interop marshaling, strings"
 ms.assetid: 9baea3ce-27b3-4b4f-af98-9ad0f9467e6f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

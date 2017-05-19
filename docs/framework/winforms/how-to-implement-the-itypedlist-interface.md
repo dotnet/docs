@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "data binding, implementing"
   - "IBindingList interface"
 ms.assetid: 834cc15c-50bc-4a8b-a610-313d6a217357
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

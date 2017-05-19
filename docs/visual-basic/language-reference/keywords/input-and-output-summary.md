@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "output, Visual Basic functions"
   - "I/O [Visual Basic], functions"
 ms.assetid: 6b0cbb88-6593-43b8-8a40-a61563bc0ce9
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

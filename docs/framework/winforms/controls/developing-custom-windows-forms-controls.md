@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Component class"
   - "Control class, Windows Forms"
 ms.assetid: 236cebc0-bd71-4f18-9fd6-5d0e592375df
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

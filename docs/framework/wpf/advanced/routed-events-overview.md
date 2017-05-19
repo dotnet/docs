@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "button set, grouped"
   - "bubbling"
 ms.assetid: 1a2189ae-13b4-45b0-b12c-8de2e49c29d2
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

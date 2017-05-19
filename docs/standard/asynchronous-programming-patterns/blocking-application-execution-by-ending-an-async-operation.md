@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "asynchronous programming, blocking applications"
   - "blocking application execution"
 ms.assetid: cc5e2834-a65b-4df8-b750-7bdb79997fee
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "procedures, structure"
   - "Visual Basic code, program structure"
 ms.assetid: ad0c6531-d762-4c77-a700-de16b07b6119
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "WCF, security"
 ms.assetid: d171b5ca-96ef-47ff-800c-c138023cf76e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 26
 author: "BrucePerlerMS"
 ms.author: "bruceper"

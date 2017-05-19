@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "identifying DLL functions"
   - "DLL functions"
 ms.assetid: 3e3f6780-6d90-4413-bad7-ba641220364d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COM [WCF], integration overview"
 ms.assetid: 02c5697f-6e2e-47d6-b715-f3a28aebfbd5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"

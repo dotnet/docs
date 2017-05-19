@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "versions, .NET Framework"
 ms.assetid: f75a72de-e2f2-4a7a-9574-3f278684ea90
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 122
 author: "rpetrusha"
 ms.author: "ronpet"

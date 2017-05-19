@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "applications, localizable"
   - "localizable applications"
 ms.assetid: 08539ad6-7fca-4f34-b82b-ff439e11dfa7
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

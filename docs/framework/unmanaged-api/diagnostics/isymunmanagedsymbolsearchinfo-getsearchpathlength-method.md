@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSearchPathLength method [.NET Framework debugging]"
   - "ISymUnmanagedSymbolSearchInfo::GetSearchPathLength method [.NET Framework debugging]"
 ms.assetid: 274e73cf-8333-47ba-ac12-70214e2b0112
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

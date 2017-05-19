@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CTLs"
   - "certificate revocation lists"
 ms.assetid: 7e953b43-1374-4bbc-814f-53ca1b6b52bb
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"

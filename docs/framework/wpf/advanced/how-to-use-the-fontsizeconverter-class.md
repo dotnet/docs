@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "FontSizeConverter objects"
   - "typography, FontSizeConverter objects"
 ms.assetid: 3b0592bd-7223-4860-a108-a5d72f3a9178
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

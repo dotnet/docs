@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "attribute names [XML in Visual Basic]"
   - "XML literals [Visual Basic], element names"
 ms.assetid: cc110118-b6cf-4ff9-a4e4-6233c90c9fbf
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

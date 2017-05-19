@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "routing [WCF], message filters"
 ms.assetid: cb33ba49-8b1f-4099-8acb-240404a46d9a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"

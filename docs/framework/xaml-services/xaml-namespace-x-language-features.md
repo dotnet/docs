@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "XAML namespace [XAML Services]"
   - "XAML [XAML Services], namespaces"
 ms.assetid: e1f47225-9996-4fbf-ab86-62d2e955f3fc
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 61
 author: "wadepickett"
 ms.author: "wpickett"

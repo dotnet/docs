@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "command line [C#], arguments"
   - "command-line arguments [C#], Main method"
 ms.assetid: 73a17231-cf96-44ea-aa8a-54807c6fb1f4
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"

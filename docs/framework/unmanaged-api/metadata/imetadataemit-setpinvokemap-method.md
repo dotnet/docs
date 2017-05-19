@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::SetPinvokeMap method [.NET Framework metadata]"
   - "SetPinvokeMap method [.NET Framework metadata]"
 ms.assetid: c6bfd574-1da3-4ba7-82f2-46ca5efcbaba
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

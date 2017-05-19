@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Office programming [C#], indexed properties"
   - "properties [C#], indexed"
 ms.assetid: 756bfc1e-7c28-4d4d-b114-ac9288c73882
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

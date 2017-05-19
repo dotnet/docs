@@ -10,6 +10,8 @@ dev_langs:
 helpviewer_keywords: 
   - "new constraint keyword [C#]"
 ms.assetid: 58850b64-cb97-4136-be50-1f3bc7fc1da9
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -12,6 +12,8 @@ dev_langs:
 helpviewer_keywords: 
   - "#pragma directive [C#]"
 ms.assetid: 5b7944cd-d402-46a1-ad8f-feffb2d83673
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

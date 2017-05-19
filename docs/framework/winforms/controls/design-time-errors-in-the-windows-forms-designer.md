@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "errors [Windows Forms Designer]"
   - "design-time errors [Windows Forms Designer]"
 ms.assetid: ad408380-825a-46d8-9a4a-531b130b88ce
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

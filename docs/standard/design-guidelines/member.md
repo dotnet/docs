@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "class library design guidelines [.NET Framework], members"
   - "member design guidelines [.NET Framework]"
 ms.assetid: 0ce93180-1d7b-4f8c-9306-f828b2d66b8f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

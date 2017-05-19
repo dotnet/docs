@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "multicast event delegates"
   - "Windows Forms controls, events"
 ms.assetid: 814a6a43-a312-4791-88d8-f75f9a4f8c4c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

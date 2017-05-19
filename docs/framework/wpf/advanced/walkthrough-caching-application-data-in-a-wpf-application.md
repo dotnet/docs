@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "caching [.NET Framework]"
   - "caching [WPF]"
 ms.assetid: dac2c9ce-042b-4d23-91eb-28f584415cef
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

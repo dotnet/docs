@@ -17,6 +17,8 @@ dev_langs:
 helpviewer_keywords: 
   - "WithEvents keyword"
 ms.assetid: 19d461f5-d72f-4de9-8c1d-0a6650316990
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

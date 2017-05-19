@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "struct keyword [C#]"
   - "structs [C#], struct keyword"
 ms.assetid: ff3dd9b7-dc93-4720-8855-ef5558f65c7c
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"

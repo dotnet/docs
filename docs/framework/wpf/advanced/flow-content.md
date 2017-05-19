@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "documents, flow content reference"
   - "flow content reference"
 ms.assetid: d32501af-0bac-4b80-8a20-61a6996753fe
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 70
 author: dotnet-bot
 ms.author: dotnetcontent

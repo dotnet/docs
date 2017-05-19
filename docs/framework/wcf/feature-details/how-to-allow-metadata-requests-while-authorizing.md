@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "allowing metadata requests while authorizing [WCF]"
 ms.assetid: 90cec34f-b619-452b-a056-8b1c0de49d05
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"

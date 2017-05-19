@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "custom context menus"
   - "TextBox control, custom content menus"
 ms.assetid: 842d3cd5-6fa0-4be4-8d90-6c7466213b1c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "assemblyBinding element"
   - "container tags, <assemblyBinding> element"
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

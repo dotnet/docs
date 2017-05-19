@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "formatted text [WPF]"
   - "drawing, formatted text"
 ms.assetid: b1d851c1-331c-4814-9964-6fe769db6f1f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

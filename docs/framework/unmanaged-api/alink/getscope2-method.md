@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetScope2 method"
 ms.assetid: 49435665-6f5a-4acd-9034-8c9244a04a63
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

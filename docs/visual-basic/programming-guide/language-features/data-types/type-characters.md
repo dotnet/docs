@@ -46,6 +46,8 @@ helpviewer_keywords:
   - "UL literal type characters"
   - "literal types, default"
 ms.assetid: 6353cb9b-6ee4-4af6-a5a8-88ce39f90cc5
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

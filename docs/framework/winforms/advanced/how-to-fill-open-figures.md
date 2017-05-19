@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "open figures, filling"
   - "figures, filling"
 ms.assetid: 5a36b0e4-f1f4-46c0-a85a-22ae98491950
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: cc4c510d-550d-4941-af34-81987caf3425
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

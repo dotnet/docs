@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "decimals, hexadecimals"
   - "string conversion, hexadecimal to numbers"
 ms.assetid: 76675807-eadb-4c08-bd50-e6c6ff4b8ced
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

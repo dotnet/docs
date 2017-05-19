@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "foreach statement [C#]"
   - "in keyword [C#]"
 ms.assetid: 5a9c5ddc-5fd3-457a-9bb6-9abffcd874ec
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 29
 author: "BillWagner"
 ms.author: "wiwagn"

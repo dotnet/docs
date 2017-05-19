@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], regions"
   - "regions, using"
 ms.assetid: 7809295b-870f-4107-a8b5-8386c298acd5
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

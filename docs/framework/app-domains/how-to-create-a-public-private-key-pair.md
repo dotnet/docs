@@ -19,6 +19,8 @@ helpviewer_keywords:
   - ".snk files"
   - "strong-named assemblies, key pairs"
 ms.assetid: 05026813-f3bd-4d7c-9e0b-fc588eb3d114
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

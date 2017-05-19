@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "templates, data"
   - "data templates"
 ms.assetid: 0f4d9f8c-0230-4013-bd7b-e8e7fed01b4a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

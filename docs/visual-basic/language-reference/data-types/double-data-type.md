@@ -29,6 +29,8 @@ helpviewer_keywords:
   - "zeros, trailing"
   - "Double data type"
 ms.assetid: 0c5670f7-fcb1-453a-bef1-374730cd38fd
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

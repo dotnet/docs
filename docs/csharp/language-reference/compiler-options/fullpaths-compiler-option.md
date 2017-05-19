@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "full paths [C#]"
   - "-fullpaths compiler option [C#]"
 ms.assetid: d2a5f857-cbb2-430b-879c-d648aaf0b8c4
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

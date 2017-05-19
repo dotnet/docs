@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Windows Forms, MDI applications"
   - "MDI"
 ms.assetid: 599faf75-13cf-49cc-ad3c-255545e5cb97
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

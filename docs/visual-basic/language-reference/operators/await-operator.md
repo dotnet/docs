@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Await operator [Visual Basic]"
   - "Await [Visual Basic]"
 ms.assetid: 6b1ce283-e92b-4ba7-b081-7be7b3d37af9
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

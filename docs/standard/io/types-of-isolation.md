@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "isolated storage, types"
   - "user authentication, isolated storage"
 ms.assetid: 14812988-473f-44ae-b75f-fd5c2f21fb7b
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "application resources"
   - "resources, application resources"
 ms.assetid: 507ea937-5191-406b-8797-0a3d9f94156d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

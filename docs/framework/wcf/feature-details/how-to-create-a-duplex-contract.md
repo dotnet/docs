@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "duplex contracts [WCF]"
 ms.assetid: 500a75b6-998a-47d5-8e3b-24e3aba2a434
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 28
 author: "Erikre"
 ms.author: "erikre"

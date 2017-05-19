@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "data binding, making data available for binding"
   - "binding data, making data available for"
 ms.assetid: 7103c2e8-0e31-4a13-bf12-ca382221a8d5
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

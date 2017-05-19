@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "global applications, localizability"
   - "localizing resources"
 ms.assetid: 3aee2fbb-de47-4e37-8fe4-ddebb9719247
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

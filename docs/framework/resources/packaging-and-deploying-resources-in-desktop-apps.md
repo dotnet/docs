@@ -31,6 +31,8 @@ helpviewer_keywords:
   - "localizing resources"
   - "neutral cultures"
 ms.assetid: b224d7c0-35f8-4e82-a705-dd76795e8d16
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"

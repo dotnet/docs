@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "pattern matching"
   - "folders, finding"
 ms.assetid: c9265fd1-7483-4150-8b7f-ff642caa939d
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

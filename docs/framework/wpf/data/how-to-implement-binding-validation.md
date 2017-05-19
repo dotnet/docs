@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "data binding, validation of binding"
   - "binding, validation of"
 ms.assetid: eb98b33d-9866-49ae-b981-bc5ff20d607a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "resizing Windows Forms"
   - "Windows Forms, resizing"
 ms.assetid: 5d9dd47e-e68c-48c9-a0a3-a9ff34ba009d
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

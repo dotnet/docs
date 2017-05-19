@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "text content, setting"
   - "TextBox control, setting text content"
 ms.assetid: bcd25fc7-a52f-4453-b802-2c8d2b335ab8
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

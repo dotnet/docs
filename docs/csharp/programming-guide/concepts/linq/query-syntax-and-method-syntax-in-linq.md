@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "LINQ [C#], query syntax vs. method syntax"
   - "queries [LINQ in C#], syntax comparisons"
 ms.assetid: eedd6dd9-fec2-428c-9581-5b8783810ded
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"

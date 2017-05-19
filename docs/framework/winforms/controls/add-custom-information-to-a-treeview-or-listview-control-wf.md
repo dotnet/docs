@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], adding custom information"
   - "TreeView control [Windows Forms], adding custom information"
 ms.assetid: 68be11de-1d5b-430e-901f-cfbe48d14b19
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

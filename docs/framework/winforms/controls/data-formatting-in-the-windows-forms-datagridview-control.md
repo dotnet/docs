@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "data [Windows Forms], formatting in grids"
   - "data grids, formatting data"
 ms.assetid: 07bf558d-3748-42ba-8ba0-37fdef924081
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

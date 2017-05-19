@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "<legacyCorruptedStateExceptionsPolicy> element"
   - "legacyCorruptedStateExceptionsPolicy element"
 ms.assetid: e0a55ddc-bfa8-4f3e-ac14-d1fc3330e4bb
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

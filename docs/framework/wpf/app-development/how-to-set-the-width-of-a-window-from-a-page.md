@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "windows, setting width from a page"
   - "pages, setting window width from"
 ms.assetid: 31601c92-7889-472a-b07e-bf675ad21c92
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "secure coding, race conditions"
   - "code security, race conditions"
 ms.assetid: ea3edb80-b2e8-4e85-bfed-311b20cb59b6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

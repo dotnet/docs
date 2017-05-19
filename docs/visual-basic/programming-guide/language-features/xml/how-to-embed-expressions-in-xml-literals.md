@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "embedded expressions [Visual Basic]"
   - "XML literals [Visual Basic], embedded expressions"
 ms.assetid: 75016fad-0141-42de-8564-5051be29487e
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

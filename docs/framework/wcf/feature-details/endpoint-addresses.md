@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], addresses"
   - "WCF [WCF], addresses"
 ms.assetid: 13f269e3-ebb1-433c-86cf-54fbd866a627
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Windows Service applications, walkthroughs"
   - "Windows Service applications, creating"
 ms.assetid: e24d8a3d-edc6-485c-b6e0-5672d91fb607
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 57
 author: "ghogen"
 ms.author: "ghogen"

@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "caching [.NET Framework], configuration"
   - "system.runtime.caching element"
 ms.assetid: 9b44daee-874a-4bd1-954e-83bf53565590
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

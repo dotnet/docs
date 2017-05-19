@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "write-only properties"
   - "properties [Visual Basic], write-only"
 ms.assetid: 9ecc27b4-df84-420d-9075-db25455fb3cd
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

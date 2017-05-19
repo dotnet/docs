@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "TPL dataflow library, joining blocks in"
   - "dataflow blocks, joining in TPL"
 ms.assetid: e9c1ada4-ac57-4704-87cb-2f5117f8151d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "documents, features for"
   - "documents"
 ms.assetid: 7bf37ccb-5d09-4eae-9661-929582aeb259
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 86
 author: dotnet-bot
 ms.author: dotnetcontent

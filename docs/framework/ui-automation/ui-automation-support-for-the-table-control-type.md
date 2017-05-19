@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "control types, Table"
   - "UI Automation, Table control type"
 ms.assetid: 9050dde5-6469-4c83-abb7-f861c24ff985
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 21
 author: "Xansky"
 ms.author: "mhopkins"

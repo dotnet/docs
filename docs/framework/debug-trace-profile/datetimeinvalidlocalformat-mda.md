@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "time formatting"
   - "UTC formatting"
 ms.assetid: c4a942bb-2651-4b65-8718-809f892a0659
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

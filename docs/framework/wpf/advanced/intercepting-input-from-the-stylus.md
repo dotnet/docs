@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "System.Windows.Input.StylusPlugIns architecture"
   - "plug-ins, stylus"
 ms.assetid: 791bb2f0-4e5c-4569-ac3c-211996808d44
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

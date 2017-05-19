@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "ElementHost control"
   - "WPF user control, hosting in Windows Forms"
 ms.assetid: 2e92d8e8-f0e4-4df7-9f07-2acf35cd798c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "application settings [Windows Forms], architecture"
 ms.assetid: c8eb2ad0-fac6-4ea2-9140-675a4a44d562
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

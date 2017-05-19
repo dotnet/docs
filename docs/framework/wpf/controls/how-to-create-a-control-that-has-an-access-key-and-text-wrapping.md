@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "controls, access keys"
   - "text wrapping"
 ms.assetid: 205099d9-2551-4302-a25e-a15af9f67e04
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "extending glass frames into applications"
   - "glass frames, extending into applications"
 ms.assetid: 74388a3a-4b69-4a9d-ba1f-e107636bd660
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

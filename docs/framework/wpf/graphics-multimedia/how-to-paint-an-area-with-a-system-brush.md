@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "painting, with system brushes"
   - "brushes, painting with system brushes"
 ms.assetid: 5141a763-9235-42cb-a6bb-afc75513eac7
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

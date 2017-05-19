@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls, TreeView"
   - "TreeView control, how-to topics"
 ms.assetid: b9e9790e-7bfd-45d1-8b7a-1e0d125182a8
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 70
 author: dotnet-bot
 ms.author: dotnetcontent

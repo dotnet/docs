@@ -13,6 +13,8 @@ dev_langs:
 helpviewer_keywords: 
   - "lock keyword [C#]"
 ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"

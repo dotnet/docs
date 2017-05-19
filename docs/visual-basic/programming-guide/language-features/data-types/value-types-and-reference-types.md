@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "data types [Visual Basic], value types"
   - "data types [Visual Basic], reference types"
 ms.assetid: fc82ce15-5a40-4c5c-a1e1-a556830e7391
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

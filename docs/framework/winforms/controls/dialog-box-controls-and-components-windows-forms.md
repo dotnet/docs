@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "dialog boxes, Windows Forms"
   - "Windows Forms, dialog boxes"
 ms.assetid: 6e5f5e9e-58d6-45f3-9df0-48b7bb6bfd5c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

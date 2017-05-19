@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "WS Profile binding"
 ms.assetid: 22d85b19-0135-4141-9179-a0e9c343ad73
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 39
 author: "Erikre"
 ms.author: "erikre"

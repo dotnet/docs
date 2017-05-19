@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Windows Service applications, creating"
   - "templates, Windows Service"
 ms.assetid: 0f5e2cbb-d95d-477c-b2b5-4b990e6b86ff
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "ghogen"
 ms.author: "ghogen"

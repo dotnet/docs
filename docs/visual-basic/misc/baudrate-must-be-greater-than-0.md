@@ -10,6 +10,8 @@ ms.technology:
 
 ms.topic: "article"
 ms.assetid: 5d26c4b1-45ca-459b-9b96-907dbc6ea25c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

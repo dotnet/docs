@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "toolbars"
   - "customizing controls on toolbar"
 ms.assetid: ba6ae056-d6a9-4c24-90f8-467ab0bc0b1a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

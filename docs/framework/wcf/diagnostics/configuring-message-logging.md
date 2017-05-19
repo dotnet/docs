@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "message logging [WCF]"
 ms.assetid: 0ff4c857-8f09-4b85-9dc0-89084706e4c9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 40
 author: "Erikre"
 ms.author: "erikre"

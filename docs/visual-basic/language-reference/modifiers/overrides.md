@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "overriding, Overrides keyword"
   - "properties [Visual Basic], overriding"
 ms.assetid: 9f5e6144-ce10-465e-842b-1a8f8760af90
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

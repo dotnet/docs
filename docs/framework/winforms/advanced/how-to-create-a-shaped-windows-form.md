@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "Windows Forms, circular"
   - "forms, custom shapes"
 ms.assetid: 6e6041e0-8e67-4487-b1e9-e410dbd1ef6c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

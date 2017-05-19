@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "ControlTemplate [WPF], ScrollViewer"
   - "ScrollViewer [WPF], styles and templates"
 ms.assetid: dffdd822-ae69-4946-abaf-710860cd65b2
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "compiler optimization [C#]"
   - "o compiler option [C#]"
 ms.assetid: 6dd5b6f2-cd1d-4593-a9f4-1c2ed9404ca0
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

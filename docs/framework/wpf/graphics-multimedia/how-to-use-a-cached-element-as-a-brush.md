@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "BitmapCacheBrush [WPF], using"
   - "CacheMode [WPF], using"
 ms.assetid: d36e944a-866e-4baf-98c4-fd6a75f6fdd0
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

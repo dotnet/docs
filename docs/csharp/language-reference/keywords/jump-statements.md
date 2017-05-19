@@ -11,6 +11,8 @@ helpviewer_keywords:
   - "jump statements [C#]"
   - "branch statements [C#]"
 ms.assetid: 58da6ae7-7388-491e-828f-e74485d87d53
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

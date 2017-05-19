@@ -30,6 +30,8 @@ helpviewer_keywords:
   - "data types [Visual Basic], assigning"
   - "Long data type"
 ms.assetid: b4770c34-1804-4f8c-b512-c10b0893e516
+ms.technology: 
+  - "devlang-visual-basic"
 author: "rpetrusha"
 ms.author: "ronpet"
 

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "drawing, polygons"
   - "GDI+, polygons"
 ms.assetid: a72213d2-d69a-4c2b-a75c-be7b20390c13
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

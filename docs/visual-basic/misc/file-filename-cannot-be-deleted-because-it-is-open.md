@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrFileSystem_FileAlreadyOpen1"
 ms.assetid: e1cbc46a-1db0-412d-8109-31342ec9d327
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

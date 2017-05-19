@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "data grids, about data grids"
   - "DataGridView control [Windows Forms], scenarios"
 ms.assetid: 09a5fd05-3447-47ec-a4ec-6082a2b7f0dd
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

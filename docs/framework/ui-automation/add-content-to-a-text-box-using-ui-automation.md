@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "text boxes, adding content"
   - "UI Automation, adding content to text boxes"
 ms.assetid: 8bdd1a73-1ecb-4a05-a891-a7827ebb767f
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 13
 author: "Xansky"
 ms.author: "mhopkins"

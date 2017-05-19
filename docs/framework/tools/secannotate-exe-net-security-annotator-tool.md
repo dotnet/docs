@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "SecAnnotate.exe"
   - "Security Annotator tool"
 ms.assetid: 8104d208-7813-4a1d-8a75-58f9a7bcb8c9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

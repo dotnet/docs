@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], displaying data without binding to a data source"
   - "data [Windows Forms], unbound"
 ms.assetid: b5d4b47d-9a28-4d88-9dba-0a3c90fba71d
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "interoperability, about interoperability"
   - "platform invoke"
 ms.assetid: c025b2e0-2357-4c27-8461-118f0090aeff
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"

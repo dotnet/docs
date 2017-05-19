@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<cryptoNameMapping> element"
   - "cryptoNameMapping element"
 ms.assetid: c59c9494-149b-4ce6-b38d-371f896ae85c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"

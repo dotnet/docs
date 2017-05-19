@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "child controls, anchoring and docking"
   - "TableLayoutPanel control [Windows Forms], child controls"
 ms.assetid: 0d267c35-25f1-49b8-8976-c64e8f0ddc0b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataTables::GetNextBlob method [.NET Framework metadata]"
   - "GetNextBlob method [.NET Framework metadata]"
 ms.assetid: 017c8ab4-4c09-4754-9935-5b0b49cabecb
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

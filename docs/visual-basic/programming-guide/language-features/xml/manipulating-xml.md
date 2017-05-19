@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Visual Basic code, XML"
   - "XML [Visual Basic], manipulating"
 ms.assetid: da32cffb-198d-41b1-9af3-260fe32e3b7d
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<smtp> element"
   - "smtp element"
 ms.assetid: 220b0329-e384-4e0c-86b4-0945ad17efd9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"

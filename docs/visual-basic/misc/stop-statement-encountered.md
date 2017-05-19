@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrID999"
 ms.assetid: 4ef7216c-761a-41dc-a20c-ba133f4f1d18
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

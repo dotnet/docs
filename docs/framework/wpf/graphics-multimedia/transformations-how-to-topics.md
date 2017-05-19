@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Transforms, how-to topics"
   - "transformations, how-to topics"
 ms.assetid: ff71384e-8811-420f-8cc8-0a3332e0397f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 77
 author: dotnet-bot
 ms.author: dotnetcontent

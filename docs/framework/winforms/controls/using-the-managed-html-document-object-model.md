@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "managed HTML DOM"
 ms.assetid: a017dd5c-cd7b-47e4-952c-f4f54cb48409
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

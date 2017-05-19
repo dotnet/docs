@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "speed of Clock, changing"
   - "clocks, changing speed of"
 ms.assetid: 72f36dd0-f085-445d-8589-19a83fe74f5e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WCF [WCF], troubleshooting"
   - "Windows Communication Foundation [WCF], troubleshooting"
 ms.assetid: a9ea7a53-f31a-46eb-806e-898e465a4992
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 22
 author: "Erikre"
 ms.author: "erikre"

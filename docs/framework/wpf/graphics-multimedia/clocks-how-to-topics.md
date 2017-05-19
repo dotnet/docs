@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "clocks, animation"
   - "animation, clocks"
 ms.assetid: c687b2a5-b151-41e2-9ade-df2fc1a16b04
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent

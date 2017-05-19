@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "viewing type information"
   - "reflection, viewing type information"
 ms.assetid: 7e7303a9-4064-4738-b4e7-b75974ed70d2
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

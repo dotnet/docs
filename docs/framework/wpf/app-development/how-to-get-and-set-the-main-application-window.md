@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "windows objects, getting"
   - "getting windows objects"
 ms.assetid: ec902bc4-4a59-46f5-8ec1-963b46789356
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

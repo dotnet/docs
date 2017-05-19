@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "tab pages, hiding in forms"
   - "TabControl control [Windows Forms], disabling pages"
 ms.assetid: adcc6618-8a34-4ee1-bbe3-47e732de6a59
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

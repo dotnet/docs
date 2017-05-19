@@ -15,6 +15,8 @@ dev_langs:
   - "C++"
   - "ESQL"
 ms.assetid: df98a4db-b00d-4c8b-bd74-0d285f27e1df
+ms.technology: 
+  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"

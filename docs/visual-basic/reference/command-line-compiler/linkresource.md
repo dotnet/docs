@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "linkres compiler option [Visual Basic]"
   - "-linkres compiler option [Visual Basic]"
 ms.assetid: cf4dcad8-17b7-404c-9184-29358aa05b15
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

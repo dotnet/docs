@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "EnumRuntimes method, ICoreClrDebugTarget interface [Silverlight debugging]"
   - "Silverlight, remote debugging"
 ms.assetid: 316df866-442d-40cc-b049-45e8adcb65d1
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

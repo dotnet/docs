@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Visual Basic Application Model, extending"
 ms.assetid: e91d3bed-4c27-40e3-871d-2be17467c72c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "reference compiler option [Visual Basic]"
   - "-r compiler option [Visual Basic]"
 ms.assetid: 66bdfced-bbf6-43d1-a554-bc0990315737
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

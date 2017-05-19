@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "quotation mark (") [XAML Services]"
   - "escape sequence [XAML Services]"
 ms.assetid: 3ce3e2ad-a868-43f9-9c98-b29561cb146e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 21
 author: "wadepickett"
 ms.author: "wpickett"

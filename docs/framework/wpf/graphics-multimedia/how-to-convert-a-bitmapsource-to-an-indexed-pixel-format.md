@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "converting, BitmapSource objects to palettized pixel format"
   - "BitmapSource objects, converting to palettized pixel format"
 ms.assetid: ccb03a83-8c72-4353-89da-48312d16548b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

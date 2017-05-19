@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "resources, for multiple platforms"
   - "targeting multiple platforms, resources for"
 ms.assetid: 72c76f0b-7255-4576-9261-3587f949669c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

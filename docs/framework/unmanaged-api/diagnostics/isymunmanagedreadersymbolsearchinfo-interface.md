@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedReaderSymbolSearchInfo interface [.NET Framework debugging]"
 ms.assetid: fde7e21d-1169-4bed-a34d-792e69652bf9
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

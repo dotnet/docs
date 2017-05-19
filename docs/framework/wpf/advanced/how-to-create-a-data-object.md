@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "data objects [WPF], creating"
   - "drag-and-drop [WPF], creating data objects"
 ms.assetid: 022fa142-717d-4fea-a53c-3b52e9d91aff
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

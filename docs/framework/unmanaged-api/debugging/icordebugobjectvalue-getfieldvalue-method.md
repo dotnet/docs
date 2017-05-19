@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugObjectValue::GetFieldValue method [.NET Framework debugging]"
   - "GetFieldValue method [.NET Framework debugging]"
 ms.assetid: c96770b0-3e09-47bb-bd29-20353b043459
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

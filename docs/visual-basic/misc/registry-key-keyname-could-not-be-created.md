@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrInteraction_ResKeyNotCreated1"
 ms.assetid: 465ccd53-dfdc-47ec-8b3f-9a65ba739314
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

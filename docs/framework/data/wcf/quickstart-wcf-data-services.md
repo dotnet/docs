@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "WCF Data Services, quick-start example"
   - "WCF Data Services, Entity Data Model (EDM) service"
 ms.assetid: 7b18ca1e-d4d6-4c7a-afb9-ce3cebb98a8d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"

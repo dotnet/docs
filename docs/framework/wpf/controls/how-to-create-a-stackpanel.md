@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "StackPanel control, creating"
 ms.assetid: e7ce65cb-720a-4bb6-95b6-286b74488a58
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

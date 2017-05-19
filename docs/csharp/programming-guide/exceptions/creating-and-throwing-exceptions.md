@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "exceptions [C#], creating"
   - "exceptions [C#], throwing"
 ms.assetid: 6bbba495-a115-4c6d-90cc-1f4d7b5f39e2
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "With block"
   - "End keyword, With...End With statements"
 ms.assetid: 340d5fbb-4f43-48ec-a024-80843c137817
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent

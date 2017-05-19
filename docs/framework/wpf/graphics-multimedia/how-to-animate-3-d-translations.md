@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "animation, 3-D translations"
   - "3-D translations, animating"
 ms.assetid: d4eece1f-0cd2-4a2c-8370-293354c380e4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

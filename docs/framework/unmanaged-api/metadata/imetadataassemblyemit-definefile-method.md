@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataAssemblyEmit::DefineFile method [.NET Framework metadata]"
   - "DefineFile method [.NET Framework metadata]"
 ms.assetid: c065aadf-c1ca-4981-bde6-597042cb29c4
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

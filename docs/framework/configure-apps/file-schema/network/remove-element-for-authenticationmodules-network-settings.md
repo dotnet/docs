@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "<remove> element, authenticationModules"
   - "authenticationModules, remove element"
 ms.assetid: abf79949-b05c-465a-b51c-bbeda9a74173
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<defaultFtpCachePolicy> element"
   - "defaultFtpCachePolicy element"
 ms.assetid: 0eb0c5cb-dd97-484d-8614-785e88877abb
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"

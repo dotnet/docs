@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "folders [Windows Forms], choosing"
   - "directories [Windows Forms], selecting"
 ms.assetid: 4593670e-7c7d-4661-b46b-4ffb63258adb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

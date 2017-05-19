@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "culture, custom case mappings"
   - "culture-insensitive string operations, method overloads"
 ms.assetid: 579ef891-1f83-4c63-9ebd-2f40406b5b91
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

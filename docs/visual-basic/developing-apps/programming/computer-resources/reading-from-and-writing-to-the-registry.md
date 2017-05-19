@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "registry, writing to"
   - "registry, reading"
 ms.assetid: a13da106-185b-41d7-b23c-416da65e21e4
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

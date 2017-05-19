@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "-win32res compiler option [C#]"
   - "win32res compiler option [C#]"
 ms.assetid: 3c33f750-6948-4c7e-a27e-bef98f77255b
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "<PreferComInsteadOfManagedRemoting> element"
   - "PreferComInsteadOfManagedRemoting element"
 ms.assetid: a279a42a-c415-4e79-88cf-64244ebda613
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

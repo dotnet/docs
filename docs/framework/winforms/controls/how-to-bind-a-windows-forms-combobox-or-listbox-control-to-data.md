@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "Windows Forms controls, data binding"
   - "data-bound controls, Windows Forms"
 ms.assetid: dfd7f081-8bea-4a41-86a3-86a1934828ef
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

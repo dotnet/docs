@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "data navigation"
   - "examples [Windows Forms], BindingNavigator control"
 ms.assetid: 0e5d4f34-bc9b-47cf-9b8d-93acbb1f1dbb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

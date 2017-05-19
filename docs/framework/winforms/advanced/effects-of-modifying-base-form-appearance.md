@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "base forms"
   - "inheritance, forms"
 ms.assetid: 1c3f2b29-a05c-4c6f-aa1a-4e66b94f343a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

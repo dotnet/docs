@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "recurse compiler option [C#]"
   - "-recurse compiler option [C#]"
 ms.assetid: 4e8212e5-04e3-45b1-8a42-41bc50e683b0
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

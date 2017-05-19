@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "size, controls"
   - "Windows Forms controls, size"
 ms.assetid: d2dba441-a8c0-4705-b8e8-2e5d86d6e7ec
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

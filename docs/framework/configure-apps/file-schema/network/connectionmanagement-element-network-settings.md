@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<connectionManagement> element"
   - "connectionManagement element"
 ms.assetid: bedccaab-12a2-4511-8f67-e961f249aec6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"

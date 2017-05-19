@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "data contracts [WCF], collection types"
   - "collection types [WCF]"
 ms.assetid: 9b45b28e-0a82-4ea3-8c33-ec0094aff9d5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 19
 author: "Erikre"
 ms.author: "erikre"

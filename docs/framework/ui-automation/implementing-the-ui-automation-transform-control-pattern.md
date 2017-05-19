@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Transform control pattern"
   - "UI Automation, Transform control pattern"
 ms.assetid: 5f49d843-5845-4800-9d9c-56ce0d146844
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 14
 author: "Xansky"
 ms.author: "mhopkins"

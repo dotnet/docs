@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "page setup"
   - "PageSetupDialog component"
 ms.assetid: 6dae05bc-c0fd-4357-bb93-841a1631d98f
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

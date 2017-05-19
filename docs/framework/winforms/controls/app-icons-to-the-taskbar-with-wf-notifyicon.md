@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "NotifyIcon component"
   - "taskbar, adding icons"
 ms.assetid: d28c0fe6-aaf2-4df7-ad74-928d861a8510
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

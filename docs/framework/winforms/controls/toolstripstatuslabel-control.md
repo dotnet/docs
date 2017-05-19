@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "status bars"
   - "ToolStrip control [Windows Forms], ToolStripStatusLabel"
 ms.assetid: 099bc74a-a29f-4f15-af0d-7c517ef50c7e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

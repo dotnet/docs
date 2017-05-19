@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "data binding, ObservableCollection class"
   - "notifications"
 ms.assetid: 6cf7e275-df76-41c6-a611-53b889b8fd5a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "optionstrict compiler option [Visual Basic]"
   - "/optionstrict compiler option [Visual Basic]"
 ms.assetid: c7b10086-0fa4-49db-b3c8-4ae0db5957da
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

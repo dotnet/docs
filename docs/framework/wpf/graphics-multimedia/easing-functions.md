@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "easing functions [WPF], customizing"
   - "animations [WPF], applying"
 ms.assetid: 075b9c2b-82c4-43fa-b3cd-de0b6236eb38
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

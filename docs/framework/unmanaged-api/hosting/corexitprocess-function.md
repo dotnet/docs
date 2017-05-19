@@ -25,6 +25,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorExitProcess function [.NET Framework hosting]"
 ms.assetid: a5cab4c6-990e-47f3-8798-cf422b791015
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 21

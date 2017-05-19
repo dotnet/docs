@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "ink, enabling"
   - "events, tablet pen"
 ms.assetid: 577835be-b145-4226-8570-1d309e9b3901
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

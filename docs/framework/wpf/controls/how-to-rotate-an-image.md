@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "images, rotating"
   - "rotating images"
 ms.assetid: 863fe998-9a6b-490d-bd86-6ef5c9ec6d75
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

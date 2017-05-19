@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "My feature"
   - "Visual Basic, programming in"
 ms.assetid: f1d04509-5e46-4551-9f9f-94334a121fca
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

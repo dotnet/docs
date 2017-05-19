@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "bitmaps, creating"
   - "bitmaps, examples [Visual Basic]"
 ms.assetid: 737bae30-e599-4e1d-bf30-bab8280b32be
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "Windows Forms controls, nonvisual"
   - "nonvisual controls"
 ms.assetid: 52134d9c-cff6-4eed-8e2b-3d5eb3bd494e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

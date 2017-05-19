@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Visual Basic code"
   - "programming, Visual Basic coding conventions"
 ms.assetid: dd9be76f-6944-4e78-ad72-0b6084a3fc13
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

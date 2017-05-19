@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "event handling, Windows Forms"
   - "event handlers, about event handlers"
 ms.assetid: 228112e1-1711-42ee-8ffa-ff3555bffe66
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "structs [C#], using"
 ms.assetid: cea4a459-9eb9-442b-8d08-490e0797ba38
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

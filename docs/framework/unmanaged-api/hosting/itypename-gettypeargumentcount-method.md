@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetTypeArgumentCount method [.NET Framework hosting]"
   - "ITypeName::GetTypeArgumentCount method [.NET Framework hosting]"
 ms.assetid: ecb5480c-761a-4b02-83e0-b79abc67fd08
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

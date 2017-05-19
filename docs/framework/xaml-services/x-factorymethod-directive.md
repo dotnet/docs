@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "FactoryMethod directive in XAML [XAML Services]"
   - "x:FactoryMethod directive [XAML Services]"
 ms.assetid: 829bcbdf-5318-4afb-9a03-c310e0d2f23d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"

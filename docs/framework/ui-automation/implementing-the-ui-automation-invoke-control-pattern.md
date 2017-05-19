@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "control patterns, Invoke"
   - "Invoke control pattern"
 ms.assetid: e5b1e239-49f8-468e-bfec-1fba02ec9ac4
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 31
 author: "Xansky"
 ms.author: "mhopkins"

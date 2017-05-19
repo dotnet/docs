@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "C# language, static classes"
   - "static class members [C#]"
 ms.assetid: 235614b5-1371-4dbd-9abd-b406a8b0298b
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 49
 author: "BillWagner"
 ms.author: "wiwagn"

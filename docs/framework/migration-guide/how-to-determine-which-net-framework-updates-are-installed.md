@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "updates, determining for .NET Framework"
   - ".NET Framework, determining updates"
 ms.assetid: 53c7b5f7-d47a-402a-b194-7244a696a88b
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

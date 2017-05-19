@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Windows Forms controls, user input"
   - "user input, Windows Forms controls"
 ms.assetid: 3de74dcf-fae3-42d0-92b5-bc04a61a6888
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

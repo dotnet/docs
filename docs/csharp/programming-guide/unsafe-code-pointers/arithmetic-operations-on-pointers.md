@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "pointers [C#], arithmetic operations"
 ms.assetid: d4f0b623-827e-45ce-8649-cfcebc8692aa
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

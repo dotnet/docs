@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "composite controls, creating"
   - "custom controls [Windows Forms], creating"
 ms.assetid: f50e270e-4db2-409a-8319-6db6ca5c7daf
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

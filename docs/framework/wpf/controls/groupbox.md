@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls [WPF], GroupBox"
   - "GroupBox control [WPF]"
 ms.assetid: 1f4ed3d9-a171-4623-bc4f-3314e3576271
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 70
 author: dotnet-bot
 ms.author: dotnetcontent

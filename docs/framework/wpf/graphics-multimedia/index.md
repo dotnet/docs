@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "graphics features"
   - "transition effects"
 ms.assetid: 1817d9dc-3d6c-46cb-afc8-63b0bae35e37
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

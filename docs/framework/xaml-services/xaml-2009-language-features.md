@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "XAML 2009 [XAML Services]"
   - "XAML [XAML Services], XAML 2009"
 ms.assetid: f6bb18d8-c86a-4549-8862-323e6b32a8dd
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: "wadepickett"
 ms.author: "wpickett"

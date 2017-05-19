@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetElement method [.NET Framework debugging]"
   - "ICorDebugArrayValue::GetElement method [.NET Framework debugging]"
 ms.assetid: 7ac3cba5-c282-402e-b7ef-b46634f5176b
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

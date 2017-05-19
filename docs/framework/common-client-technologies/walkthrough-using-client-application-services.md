@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "application services host [client application services]"
   - "client application services, walkthroughs"
 ms.assetid: bb7c8950-4517-4dae-b705-b74a14059b26
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 47
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "-nostdlib compiler option [C#]"
   - "/nostdlib compiler option [C#]"
 ms.assetid: ec197989-fa49-4725-a455-e06b551eb65f
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

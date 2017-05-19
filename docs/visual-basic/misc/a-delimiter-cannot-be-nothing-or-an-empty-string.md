@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_DelimiterNothing"
 ms.assetid: 8885fcd1-c201-409d-9a32-6ff2b13c0c13
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

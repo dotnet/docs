@@ -17,6 +17,8 @@ dev_langs:
 helpviewer_keywords: 
   - "TryCast keyword"
 ms.assetid: d1ef5d47-fef4-491e-b014-1d910628f65c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

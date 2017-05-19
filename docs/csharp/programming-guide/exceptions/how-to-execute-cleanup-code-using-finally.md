@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "exceptions [C#], try/finally block"
   - "exception handling [C#], try/finally block"
 ms.assetid: 1b1e5aef-3f32-4a88-9d39-b5fffb33bdaf
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

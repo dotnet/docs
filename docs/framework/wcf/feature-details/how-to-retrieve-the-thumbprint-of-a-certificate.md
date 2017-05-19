@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "certificates [WCF], retrieving thumbprint"
 ms.assetid: da3101aa-78cd-4c34-9652-d1f24777eeab
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "queries [Visual Basic]"
   - "LINQ, queries"
 ms.assetid: 8edc717c-4a24-4cbc-9c16-11f479c935db
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

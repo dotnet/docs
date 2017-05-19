@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "indexers [C#]"
   - "C# language, indexers"
 ms.assetid: 022cd27d-d5e0-4cfe-8b97-dc018cc3355d
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 29
 author: "BillWagner"
 ms.author: "wiwagn"

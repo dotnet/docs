@@ -12,6 +12,8 @@ dev_langs:
 helpviewer_keywords: 
   - "#region directive [C#]"
 ms.assetid: 672c87d1-9771-4f64-ab3f-0ad3d4ffb2b4
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

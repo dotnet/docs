@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "runtime, garbage collection"
   - "garbage collection, about"
 ms.assetid: 22b6cb97-0c80-4eeb-a2cf-5ed7655e37f9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 36
 author: "rpetrusha"
 ms.author: "ronpet"

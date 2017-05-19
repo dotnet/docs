@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "application event logs, Visual Basic"
   - "application event logs"
 ms.assetid: 2581afd1-5791-4bc4-86b2-46244e9fe468
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Windows Forms, columns"
   - "data [Windows Forms], displaying"
 ms.assetid: 7fe52a98-75d6-448c-97a5-65ca2c568c1a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "code modules"
   - "single-file assemblies"
 ms.assetid: a6063221-43a5-4d3e-814c-288a4ec69aec
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "streaming data provider [WCF Data Services]"
   - "WCF Data Services, streams"
 ms.assetid: f0978fe4-5f9f-42aa-a5c2-df395d7c9495
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

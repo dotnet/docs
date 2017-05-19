@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WPF samples"
   - "samples [WPF]"
 ms.assetid: 1fc53e12-dfe5-476e-be13-fc3714aaf640
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "tools [.NET Framework]"
   - "running .NET Framework tools"
 ms.assetid: a2ca532d-91f7-426a-9303-417c2ee1247c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 65
 author: "mairaw"
 ms.author: "mairaw"

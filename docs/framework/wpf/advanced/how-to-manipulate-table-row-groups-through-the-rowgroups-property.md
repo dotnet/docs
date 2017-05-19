@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "documents, manipulating row groups through RowGroups property"
   - "properties, RowGroups, manipulating row groups"
 ms.assetid: ea61440f-08ae-44ed-b314-5716aaaae3ed
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

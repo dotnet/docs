@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "type conversion, string"
   - "regional options"
 ms.assetid: c3a99596-f09a-44a5-81dd-1b89a094f1df
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

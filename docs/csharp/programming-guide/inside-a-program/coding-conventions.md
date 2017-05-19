@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Visual C#, coding conventions"
   - "C# language, coding conventions"
 ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"

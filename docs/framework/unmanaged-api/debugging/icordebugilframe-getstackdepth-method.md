@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetStackDepth method [.NET Framework debugging]"
   - "ICorDebugILFrame::GetStackDepth method [.NET Framework debugging]"
 ms.assetid: da6a1123-871d-4492-9d35-3bdb49f94c93
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

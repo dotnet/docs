@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], large data sets"
   - "virtual mode, just-in-time data loading"
 ms.assetid: 33825f92-7a22-40ee-86d9-9a2ed1ead7b7
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

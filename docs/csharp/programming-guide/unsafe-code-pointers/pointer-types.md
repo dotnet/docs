@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "unsafe code [C#], pointers"
   - "pointers [C#]"
 ms.assetid: 3319faf9-336d-4148-9af2-1da2579cdd1e
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

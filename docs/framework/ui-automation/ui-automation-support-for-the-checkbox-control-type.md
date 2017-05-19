@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "control types, CheckBox"
   - "UI Automation, CheckBox control type"
 ms.assetid: 9c2a0e70-3a39-4ba9-96ea-a7fe531fae9f
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 31
 author: "Xansky"
 ms.author: "mhopkins"

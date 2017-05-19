@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "get accessor [C#]"
   - "properties [C#], about properties"
 ms.assetid: f7f67b05-0983-4cdb-96af-1855d24c967c
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

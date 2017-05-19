@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "data contracts [WCF], schema reference"
 ms.assetid: 9ebb0ebe-8166-4c93-980a-7c8f1f38f7c0
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 24
 author: "Erikre"
 ms.author: "erikre"

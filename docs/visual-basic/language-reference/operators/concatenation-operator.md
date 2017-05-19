@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "concatenation operators, syntax"
   - "strings [Visual Basic], concatenating"
 ms.assetid: fefc3d00-cbf1-475c-8c5e-6fb213b3f85a
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

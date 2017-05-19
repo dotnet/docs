@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "contracts [WCF]"
   - "Windows Communication Foundation [WCF], contracts"
 ms.assetid: c8364183-4ac1-480b-804a-c5e6c59a5d7d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"

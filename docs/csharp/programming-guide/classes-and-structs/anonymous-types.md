@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "anonymous types [C#]"
   - "C# Language, anonymous types"
 ms.assetid: 59c9d7a4-3b0e-475e-b620-0ab86c088e9b
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

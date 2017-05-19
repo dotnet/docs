@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "strings [Visual Basic], Nothing"
 ms.assetid: 261380af-2024-4ecf-823b-43b1034d92cd
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

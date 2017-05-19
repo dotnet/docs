@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "tabs, displaying side-aligned tabs"
   - "TabControl control [Windows Forms], displaying side-aligned tabs"
 ms.assetid: 110d5abd-3ae3-4ded-95bf-778aaac798a0
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "choosing transports [WCF]"
 ms.assetid: b169462b-f7b6-4cf4-9fca-d306909ee8bf
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 25
 author: "Erikre"
 ms.author: "erikre"

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "what's new [Visual Basic]"
   - "Visual Basic, what's new"
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 145
 author: rpetrusha
 ms.author: ronpet

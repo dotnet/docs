@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "properties [Windows Forms], defining in code"
   - "custom controls [Windows Forms], defining properties in code"
 ms.assetid: c2eb8277-a842-4d99-89a9-647b901a0434
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

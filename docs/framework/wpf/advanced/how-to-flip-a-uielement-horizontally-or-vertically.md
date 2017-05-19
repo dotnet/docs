@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "flipping UIElements"
   - "UIElements, flipping"
 ms.assetid: 02c6730f-65c0-40d5-a553-4cb663721882
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

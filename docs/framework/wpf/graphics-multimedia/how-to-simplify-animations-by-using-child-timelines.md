@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "animation, simplifying by child timelines"
   - "child timelines"
 ms.assetid: 8335d770-d13d-42bd-8dfa-63f92c0327e2
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

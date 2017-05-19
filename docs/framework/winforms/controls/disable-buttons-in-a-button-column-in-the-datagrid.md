@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "buttons, disabling in button columns"
   - "DataGridView control [Windows Forms], disabling button cells"
 ms.assetid: 5c344d01-013a-4a6b-8f8d-62ec9321d81e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

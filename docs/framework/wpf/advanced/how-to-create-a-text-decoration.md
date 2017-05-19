@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "typography, text decorations"
   - "baseline type"
 ms.assetid: cf3cb4e7-782a-4be7-b2d4-e0935e21e4e0
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

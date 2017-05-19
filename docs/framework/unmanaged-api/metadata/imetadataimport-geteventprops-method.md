@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::GetEventProps method [.NET Framework metadata]"
   - "GetEventProps method [.NET Framework metadata]"
 ms.assetid: 5eaf3b4a-92b7-4d5b-97e0-1e83721e0052
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

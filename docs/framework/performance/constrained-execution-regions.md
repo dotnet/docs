@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "constrained execution regions"
   - "CERs"
 ms.assetid: 99354547-39c1-4b0b-8553-938e8f8d1808
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

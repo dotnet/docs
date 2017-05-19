@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "side-by-side execution, assembly binding redirection"
   - "assemblies [.NET Framework], binding redirection"
 ms.assetid: 5fca42f3-bdce-4b81-a704-61e42c89d3ba
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"

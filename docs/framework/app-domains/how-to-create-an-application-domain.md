@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "application domains, creating"
 ms.assetid: ba1fa43e-49f5-47d9-bd7f-3024af16f4ba
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

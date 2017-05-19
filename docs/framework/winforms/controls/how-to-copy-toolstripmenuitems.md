@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms], arranging items"
   - "ToolStripMenuItems, copying and pasting"
 ms.assetid: 17ef4207-e92e-4db2-b648-27246e6517ad
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

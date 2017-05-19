@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "OnPaint method [Windows Forms]"
   - "user-drawn controls [Windows Forms]"
 ms.assetid: 034af4b5-457f-4160-a937-22891817faa8
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

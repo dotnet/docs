@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Freezable objects, making read-only"
 ms.assetid: 6c544b7d-d3c9-4736-aa90-4b8728234ccb
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

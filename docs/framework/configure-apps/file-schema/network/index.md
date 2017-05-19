@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "connections [.NET Framework], network configuration elements"
   - "network resources, network configuration elements"
 ms.assetid: f1de5a0f-76c5-4833-819f-5222b8146340
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"

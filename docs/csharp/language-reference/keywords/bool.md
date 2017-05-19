@@ -13,6 +13,8 @@ dev_langs:
 helpviewer_keywords: 
   - "bool keyword [C#]"
 ms.assetid: 551cfe35-2632-4343-af49-33ad12da08e2
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"

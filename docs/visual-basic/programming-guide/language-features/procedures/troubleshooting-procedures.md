@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "troubleshooting procedures"
   - "procedures, about procedures"
 ms.assetid: 525721e8-2e02-4f75-b5d8-6b893462cf2b
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

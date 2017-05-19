@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, how to create a dynamic partitioner"
 ms.assetid: c875ad12-a161-43e6-ad1c-3d6927c536a7
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "resources, referencing"
   - "referencing resources"
 ms.assetid: b86b876b-0a10-489b-9a5d-581ea9b32406
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

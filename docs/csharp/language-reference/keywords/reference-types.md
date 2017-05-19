@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "C# language, reference types"
   - "types [C#], reference types"
 ms.assetid: 801cf030-6e2d-4a0d-9daf-1431b0c31f47
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

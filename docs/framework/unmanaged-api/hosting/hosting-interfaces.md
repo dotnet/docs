@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "hosting interfaces [.NET Framework]"
   - "unmanaged interfaces [.NET Framework], hosting"
 ms.assetid: cc64cb05-38da-418e-815a-daac8e8e26e5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"

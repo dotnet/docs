@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Storyboards, animating in procedural code"
   - "animation, Storyboards, in procedural code"
 ms.assetid: 4f361925-6a08-40dc-8231-a61111c6b28b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

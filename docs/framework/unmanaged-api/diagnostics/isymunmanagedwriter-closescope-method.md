@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CloseScope method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::CloseScope method [.NET Framework debugging]"
 ms.assetid: 6dade525-7770-4cb4-bafd-4bb995ad0d87
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::GetMaxThreads method [.NET Framework hosting]"
   - "GetMaxThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"
 ms.assetid: e7a6cadc-2433-4472-a701-58891abcde45
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

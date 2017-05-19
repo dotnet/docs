@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "applications, focus"
   - "focus in applications"
 ms.assetid: 0230c4eb-0c8a-462b-ac4b-ae3e511659f4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

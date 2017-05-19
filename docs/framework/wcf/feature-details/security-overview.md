@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Windows Communication Foundation, security"
   - "WCF, security"
 ms.assetid: f478c80d-792d-4e7a-96bd-a2ff0b6f65f9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 37
 author: "BrucePerlerMS"
 ms.author: "bruceper"

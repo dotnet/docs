@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "collection initializers [Visual Basic]"
 ms.assetid: f64b52c7-8b11-4410-93a6-cb3aeebcc772
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

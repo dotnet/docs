@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "OpenFile method, OpenFileDialog component"
   - "files, opening with OpenFileDialog component"
 ms.assetid: 9d88367a-cc21-4ffd-be74-89fd63767d35
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

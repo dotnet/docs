@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "return values, Operator procedures"
   - "operator overloading"
 ms.assetid: 7ccce94a-6ca0-47d1-9f3f-13385d34f5d5
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ helpviewer_keywords:
   - "task parallelism in .NET"
   - "parallel programming, task parallelism"
 ms.assetid: 6b3ecd79-dec9-4ce1-abf4-62e5392a59c6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

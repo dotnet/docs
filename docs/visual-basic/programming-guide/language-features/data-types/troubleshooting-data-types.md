@@ -29,6 +29,8 @@ helpviewer_keywords:
   - "floating-point numbers, comparison"
   - "floating-point numbers"
 ms.assetid: 90040d67-b630-4125-a6ae-37195b079042
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

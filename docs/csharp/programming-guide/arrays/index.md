@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "arrays [C#]"
   - "C# language, arrays"
 ms.assetid: bb79bdde-e570-4c30-adb0-1dd5759ae041
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 33
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "encryption [.NET Framework], asymmetric keys"
   - "decryption keys"
 ms.assetid: 0dbcbd8d-0dcf-40e9-9f0c-e3f162d35ccc
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

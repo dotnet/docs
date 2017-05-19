@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "Advanced Encryption Standard algorithm"
   - "Rijndael"
 ms.assetid: d8461a44-aa2c-4ef4-b3e4-ab7cbaaee1b5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

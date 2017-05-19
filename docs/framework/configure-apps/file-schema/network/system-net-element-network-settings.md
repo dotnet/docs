@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "system.Net element"
   - "<system.Net> element"
 ms.assetid: 52de4d6c-b24d-44aa-ba7d-6b5061f1357e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"

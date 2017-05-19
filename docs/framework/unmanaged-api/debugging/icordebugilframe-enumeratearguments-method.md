@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugILFrame::EnumerateArguments method [.NET Framework debugging]"
   - "EnumerateArguments method [.NET Framework debugging]"
 ms.assetid: 00ac81e2-a774-422a-bd88-54a4b3c99f73
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

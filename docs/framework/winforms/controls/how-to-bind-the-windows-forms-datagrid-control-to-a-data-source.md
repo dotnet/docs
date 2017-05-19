@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "bound controls"
   - "data-bound controls, DataGrid"
 ms.assetid: 128cdb07-dfd3-4d60-9d6a-902847667c36
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "layout, automatic"
   - "automatic layout"
 ms.assetid: 6fed9264-18bb-4d05-8867-1fe356c6f687
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

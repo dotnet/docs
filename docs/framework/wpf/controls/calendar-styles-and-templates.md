@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Calendar [WPF], styles and templates"
   - "ControlTemplate [WPF], Calendar"
 ms.assetid: f4fcf046-7a8f-41b8-b5a8-534b64e0345c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

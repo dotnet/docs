@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "HTTP activation [WCF]"
 ms.assetid: 33a7054a-73ec-464d-83e5-b203aeded658
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"

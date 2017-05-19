@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "configuration [WCF]"
 ms.assetid: beac771e-f28e-4f84-9ff1-ad9251c726d3
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 19
 author: "Erikre"
 ms.author: "erikre"

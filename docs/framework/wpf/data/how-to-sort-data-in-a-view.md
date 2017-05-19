@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "views, grouping data"
   - "sorting data in views"
 ms.assetid: f4c43578-01b7-4774-a953-acb95a13b94a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

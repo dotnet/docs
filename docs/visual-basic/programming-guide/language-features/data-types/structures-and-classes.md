@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "structures, structure variables"
   - "structure variables"
 ms.assetid: a221e74a-ffcf-4bdc-a0f6-a088a9bf26cc
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

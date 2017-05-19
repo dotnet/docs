@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "arguments [Visual Basic], passing by value or by reference"
   - "argument passing, by value or by reference"
 ms.assetid: fd8a9de6-7178-44d5-a9bf-458d4ad907c2
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

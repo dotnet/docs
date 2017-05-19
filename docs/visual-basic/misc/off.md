@@ -17,6 +17,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Off keyword"
 ms.assetid: e0b5aa68-bde1-4cdd-b9e4-152798ae1b8b
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

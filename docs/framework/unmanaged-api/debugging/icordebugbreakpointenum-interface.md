@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugBreakpointEnum interface [.NET Framework debugging]"
 ms.assetid: 4c6f4f6e-52cc-402e-881b-7b8526544c90
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

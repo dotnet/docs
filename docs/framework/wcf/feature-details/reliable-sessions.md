@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "instances [WCF]"
   - "sessions [WCF]"
 ms.assetid: 143951b3-3aa0-4540-b4b7-d33e77e874a1
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "translating resources into languages"
   - "localizing resources"
 ms.assetid: eca16922-1c46-4f68-aefe-e7a12283641f
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

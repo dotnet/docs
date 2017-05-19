@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "TreeView control, creating"
   - "Control class, TreeView, creating"
 ms.assetid: 1defbb78-b8e7-4c0e-b650-576453ac828d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

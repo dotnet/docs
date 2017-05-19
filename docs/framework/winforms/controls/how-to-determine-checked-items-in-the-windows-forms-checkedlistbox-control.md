@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "check boxes, determining checked state"
   - "CheckedListBox control [Windows Forms], determining checked state"
 ms.assetid: 178b477d-27c9-489c-8914-44a9623a4d41
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

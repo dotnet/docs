@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "dependency properties, callbacks"
   - "validation of dependency properties"
 ms.assetid: 48db5fb2-da7f-49a6-8e81-3540e7b25825
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

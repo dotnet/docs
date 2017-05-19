@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "GridSplitter control, ensuring visibility of"
 ms.assetid: 0a62a964-89c8-48f0-9023-5df721a8cf47
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

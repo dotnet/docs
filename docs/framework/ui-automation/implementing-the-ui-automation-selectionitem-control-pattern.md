@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, Selection Item control pattern"
   - "control patterns, Selection Item"
 ms.assetid: 76b0949a-5b23-4cfc-84cc-154f713e2e12
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"

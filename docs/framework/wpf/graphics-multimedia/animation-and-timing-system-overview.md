@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "timing system [WPF]"
   - "animation [WPF]"
 ms.assetid: 172cd5a8-a333-4c81-9456-fafccc19f382
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

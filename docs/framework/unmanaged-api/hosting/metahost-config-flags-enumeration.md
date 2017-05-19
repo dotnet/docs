@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "METAHOST_CONFIG_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: 6f1e389f-ed99-4d6a-a0ba-72d7d869a01d
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

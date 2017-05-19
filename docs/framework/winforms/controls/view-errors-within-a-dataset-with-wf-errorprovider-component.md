@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "error messages, viewing in datasets"
   - "ErrorProvider component [Windows Forms], dataset errors"
 ms.assetid: cbae023f-d651-4210-bdea-bcc5f037e321
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

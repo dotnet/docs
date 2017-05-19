@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Collections classes"
   - "generic collections"
 ms.assetid: f5d4c6a4-0d7b-4944-a9fb-3b12d9ebfd55
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 29
 author: "mairaw"
 ms.author: "mairaw"

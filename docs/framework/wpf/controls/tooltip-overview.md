@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "ToolTip control, about ToolTip control"
   - "controls, ToolTip"
 ms.assetid: f06c1603-e9cb-4809-8a62-234607fc52f7
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

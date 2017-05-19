@@ -13,6 +13,8 @@ dev_langs:
 helpviewer_keywords: 
   - "double data type [C#]"
 ms.assetid: 0980e11b-6004-4102-abcf-cfc280fc6991
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

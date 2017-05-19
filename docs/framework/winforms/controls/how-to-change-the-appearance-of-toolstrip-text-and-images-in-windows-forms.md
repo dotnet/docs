@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], text"
   - "toolbars [Windows Forms], text"
 ms.assetid: d62dc9d1-2edd-4dfa-aed7-1335d6e13d86
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "masks, opacity"
   - "opacity, masks"
 ms.assetid: 22367fab-5f59-4583-abfd-db2bf86eaef7
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

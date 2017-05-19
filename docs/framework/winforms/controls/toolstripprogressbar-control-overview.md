@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "progress controls"
   - "ToolStripProgressBar control [Windows Forms], about ToolStripProgressBar control"
 ms.assetid: ec3ab522-5fe4-4b4d-a551-bc19e84f4774
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

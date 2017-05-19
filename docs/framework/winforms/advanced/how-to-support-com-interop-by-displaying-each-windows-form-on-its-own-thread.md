@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "ActiveX controls [Windows Forms], COM interop"
   - "Windows Forms, interop"
 ms.assetid: a9e04765-d2de-4389-a494-a9a6d07aa6ee
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

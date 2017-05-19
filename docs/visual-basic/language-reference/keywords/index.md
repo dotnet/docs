@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "reserved words, Visual Basic keywords"
   - "Visual Basic, keywords"
 ms.assetid: b5a65ef0-c408-4836-afb6-e6828c0771ca
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 43
 author: dotnet-bot
 ms.author: dotnetcontent

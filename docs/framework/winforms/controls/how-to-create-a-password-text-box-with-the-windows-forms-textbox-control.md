@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "passwords, input mask"
   - "passwords, password text box"
 ms.assetid: d105d6b9-3d50-44cd-80d8-2c0e2f486727
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

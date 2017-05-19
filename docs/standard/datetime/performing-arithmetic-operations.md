@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "DateTime structure, arithmetic operations"
   - "DateTimeOffset structure, arithmetic operations"
 ms.assetid: 87c7ddf2-f15e-48af-8602-b3642237e6d0
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

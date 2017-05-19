@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "printing [Windows Forms], PrintDialog component (using designer)"
   - "printing [Windows Forms], print options"
 ms.assetid: 09b54db1-d7c7-42fa-b98a-840e6b80a9ad
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

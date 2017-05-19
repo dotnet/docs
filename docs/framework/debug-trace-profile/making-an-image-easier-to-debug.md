@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "executable image for debugging"
   - "debugging [.NET Framework], executable images for"
 ms.assetid: 7d90ea7a-150f-4f97-98a7-f9c26541b9a3
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<nameEntry> element"
   - "nameEntry element"
 ms.assetid: 7d7535e9-4b4a-4b8c-82e2-e40dff5a7821
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"

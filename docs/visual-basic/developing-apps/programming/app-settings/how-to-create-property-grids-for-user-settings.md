@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "property grids, creating for user settings"
   - "property grids"
 ms.assetid: b0bc737e-50d1-43d1-a6df-268db6e6f91c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

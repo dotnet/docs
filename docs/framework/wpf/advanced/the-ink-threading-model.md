@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "ink collection plug-in"
   - "plug-ins, for ink"
 ms.assetid: c85fcad1-cb50-4431-847c-ac4145a35c89
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

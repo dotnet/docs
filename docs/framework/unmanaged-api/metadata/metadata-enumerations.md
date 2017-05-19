@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "metadata enumerations [.NET Framework]"
   - "unmanaged enumerations [.NET Framework], metadata"
 ms.assetid: 711ab251-cfdb-4280-aaa6-9bc1b341cdc3
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"

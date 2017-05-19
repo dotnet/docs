@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "documents, storage"
   - "documents, serialization"
 ms.assetid: 4839cd87-e206-4571-803f-0200098ad37b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

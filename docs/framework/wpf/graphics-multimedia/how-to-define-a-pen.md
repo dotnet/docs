@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "pens, defining"
   - "creating, pens"
 ms.assetid: 7a4f2900-cdf9-49de-84e0-ba5d0ded4d33
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

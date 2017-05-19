@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "decoding image formats"
   - "TIFF decoding"
 ms.assetid: 1dfe3209-fc73-40e6-ad1c-71c1c58b3364
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

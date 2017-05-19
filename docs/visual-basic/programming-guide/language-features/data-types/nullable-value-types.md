@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "nullable types"
   - "data types [Visual Basic], nullable"
 ms.assetid: 9ac3b602-6f96-4e6d-96f7-cd4e81c468a6
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

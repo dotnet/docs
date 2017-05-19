@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Storyboards [WPF], animations"
   - "animations [WPF], overview"
 ms.assetid: bd9ce563-725d-4385-87c9-d7ee38cf79ea
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 73
 author: dotnet-bot
 ms.author: dotnetcontent

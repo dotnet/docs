@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "HasBaseIndicies method [.NET Framework debugging]"
   - "ICorDebugArrayValue::HasBaseIndicies method [.NET Framework debugging]"
 ms.assetid: aa26df07-e0a6-4608-bdef-d4afafec89aa
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

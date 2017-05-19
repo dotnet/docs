@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], WebBrowser control"
   - "Windows Forms, adding Web browser functionality"
 ms.assetid: 3871f072-b57a-435b-9976-e5da28df04a7
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

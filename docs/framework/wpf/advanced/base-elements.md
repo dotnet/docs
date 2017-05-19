@@ -14,6 +14,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "base elements"
 ms.assetid: 55034aa5-3c1d-442a-8293-f4692d8ea6ae
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 70
 author: dotnet-bot
 ms.author: dotnetcontent

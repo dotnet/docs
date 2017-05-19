@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "lines, joining"
   - "graphics, joining lines"
 ms.assetid: 9fc480c2-3c75-4fd1-8ab5-296a99e820e2
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

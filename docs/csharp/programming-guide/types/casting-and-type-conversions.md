@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "casting [C#]"
   - "converting types [C#]"
 ms.assetid: 568df58a-d292-4b55-93ba-601578722878
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 52
 author: "BillWagner"
 ms.author: "wiwagn"

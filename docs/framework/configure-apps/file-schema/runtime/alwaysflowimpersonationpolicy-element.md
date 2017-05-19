@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "alwaysFlowImpersonationPolicy element"
   - "<alwaysFlowImpersonationPolicy> element"
 ms.assetid: ee622801-9e46-470b-85ab-88c4b1dd2ee1
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

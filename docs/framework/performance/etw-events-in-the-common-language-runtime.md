@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "ETW, common language runtime"
   - "ETW, CLR events"
 ms.assetid: 5bb9b6a2-7b57-4aea-8809-32b28bc73e88
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

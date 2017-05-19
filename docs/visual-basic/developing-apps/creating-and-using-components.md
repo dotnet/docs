@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "components [Visual Basic]"
 ms.assetid: ee6a4156-73f7-4e9b-8e01-c74c4798b65c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "End keyword"
 ms.assetid: 42d6e088-ab0f-4cda-88e8-fdce3e5fcf4f
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

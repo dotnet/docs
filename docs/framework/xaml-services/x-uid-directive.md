@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "x:Uid attribute [XAML Services]"
   - "Uid attribute [XAML Services]"
 ms.assetid: 81defade-483b-4a89-b76d-9b25bba34010
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: "wadepickett"
 ms.author: "wpickett"

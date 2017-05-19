@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "dates [.NET Framework], milliseconds"
   - "milliseconds [.NET Framework]"
 ms.assetid: ae1a0610-90b9-4877-8eb6-4e30bc5e00cf
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

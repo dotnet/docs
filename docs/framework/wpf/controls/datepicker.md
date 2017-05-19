@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "controls [WPF], DatePicker"
   - "DatePicker control [WPF]"
 ms.assetid: 619765c8-8d25-4315-aec2-79aea08fed9f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

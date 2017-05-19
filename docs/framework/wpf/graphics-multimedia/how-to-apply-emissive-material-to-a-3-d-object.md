@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "EmissiveMaterial, applying to 3-D objects"
   - "3-D objects, applying EmissiveMaterial"
 ms.assetid: fd442cc2-5adc-487a-ba70-e45ed54bb3b4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

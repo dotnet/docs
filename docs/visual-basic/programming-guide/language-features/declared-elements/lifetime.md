@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "lifetime, Visual Basic"
   - "lifetime"
 ms.assetid: bd91e390-690a-469a-9946-8dca70bc14e7
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "query samples [Visual Basic]"
   - "filtering data [Visual Basic]"
 ms.assetid: ef103092-9bed-4134-97f4-2db696e83c12
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

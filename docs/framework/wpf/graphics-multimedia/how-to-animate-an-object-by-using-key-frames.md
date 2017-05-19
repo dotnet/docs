@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "animation, objects with key frames"
   - "key frames, animating objects with"
 ms.assetid: b1f15ba9-cac7-4cea-8699-5c6b55c05c5e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

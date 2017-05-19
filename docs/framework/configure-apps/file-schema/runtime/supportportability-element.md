@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "supportPortability element"
   - "<supportPortability> element"
 ms.assetid: 6453ef66-19b4-41f3-b712-52d0c2abc9ca
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

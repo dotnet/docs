@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "certificates [WCF], creating temporary certificates"
   - "temporary certificates [WCF]"
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"

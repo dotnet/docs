@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], setting tab order"
   - "Windows Forms, setting tab order"
 ms.assetid: 71fa8e76-0472-414b-ad3c-0f90166e0ad7
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

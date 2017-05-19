@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "reflection emit, dynamic methods"
   - "dynamic methods"
 ms.assetid: c45be261-2a9d-4c4e-9bd6-27f0931b7d25
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

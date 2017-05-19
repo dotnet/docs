@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "spin button control, adding items"
   - "DomainUpDown control [Windows Forms], adding items to"
 ms.assetid: fd31d314-33eb-4181-90f8-d32ed0c4e072
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

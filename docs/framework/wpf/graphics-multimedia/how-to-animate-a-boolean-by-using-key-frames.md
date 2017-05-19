@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "animation, Booleans with key frames"
   - "key frames, animating Booleans with"
 ms.assetid: 4b0fac96-6231-4fcf-9775-4dd673ddc785
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

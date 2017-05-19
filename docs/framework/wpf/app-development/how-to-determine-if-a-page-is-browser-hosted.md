@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "hosted pages in browser"
   - "pages, hosted in browser"
 ms.assetid: 737e0f26-8371-49b4-9579-70879e51e1aa
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

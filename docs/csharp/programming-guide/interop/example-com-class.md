@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "examples [C#], COM classes"
   - "COM, exposing Visual C# objects to"
 ms.assetid: 6504dea9-ad1c-4993-a794-830fec5270af
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "animation, ControlTemplates"
   - "ControlTemplates, animating within"
 ms.assetid: 97abb5d9-4dc7-4085-a011-54bd8bcb497b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

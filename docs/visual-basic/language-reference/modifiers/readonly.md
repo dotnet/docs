@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "properties [Visual Basic], read-only"
   - "read-only variables"
 ms.assetid: e868185d-6142-4359-a2fd-a7965cadfce8
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

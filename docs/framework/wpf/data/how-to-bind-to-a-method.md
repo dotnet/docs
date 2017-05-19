@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "classes, ObjectDataProvider"
   - "methods, binding to"
 ms.assetid: 5f55e71e-2182-42a0-88d1-700cc1427a7a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

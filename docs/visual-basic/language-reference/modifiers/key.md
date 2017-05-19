@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Key [Visual Basic]"
   - "Key keyword [Visual Basic]"
 ms.assetid: 7697a928-7d14-4430-a72a-c9e96e8d6c11
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

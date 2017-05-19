@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "reflection emit, overview"
   - "assemblies [.NET Framework], emitting dynamic assemblies"
 ms.assetid: 8e8e2631-62fd-40e7-a8ee-0039b06749bc
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "attributes [.NET Framework], accessing"
   - "reflection, custom attributes"
 ms.assetid: 1d8e3398-00d8-47d5-a084-214f9859d3d7
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

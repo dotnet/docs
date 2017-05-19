@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "<filter> element for <add> for <listeners> for <source>"
   - "filter element for <add> for <listeners> for <source>"
 ms.assetid: 15808b80-4579-4c25-b385-178cfdf154ba
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "vectors, drawing"
   - "Shape objects"
 ms.assetid: 66d7a6d6-e3b6-47bc-8dfe-8a1b26f7d901
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

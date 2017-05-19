@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "DLR"
   - "IronRuby"
 ms.assetid: f769a271-8aff-4bea-bfab-6160217ce23d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"

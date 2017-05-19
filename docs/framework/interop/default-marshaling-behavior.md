@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, marshaling"
   - "marshaling behavior"
 ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

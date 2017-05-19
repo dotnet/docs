@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "smart clients"
   - "Windows Forms, about Windows Forms"
 ms.assetid: 3a2b6284-c8d6-4e1c-8c69-0bed38f38cd4
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent

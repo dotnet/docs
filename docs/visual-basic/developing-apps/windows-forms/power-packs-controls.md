@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "components, Power Packs"
   - "Power Packs"
 ms.assetid: 5e53a2d2-f200-4357-8b20-430f8f4860a4
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

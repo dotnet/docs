@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorPublish::GetProcess method [.NET Framework debugging]"
   - "GetProcess method, ICorPublish interface [.NET Framework debugging]"
 ms.assetid: c5143805-2eb7-45b8-85ed-c8fb34df1084
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

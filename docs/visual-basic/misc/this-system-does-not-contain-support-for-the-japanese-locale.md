@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_JPNNotSupported"
 ms.assetid: 986d0379-c9d1-4004-b9ac-8d3bd95dfe85
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

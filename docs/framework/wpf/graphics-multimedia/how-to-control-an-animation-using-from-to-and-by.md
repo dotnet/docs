@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "animation, basic animation"
   - "From/to/by animation"
 ms.assetid: 59afba57-6fc1-44c8-987e-8a5f4142adad
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

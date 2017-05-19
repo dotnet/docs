@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "properties [Visual Basic], write-only"
   - "sensitive data"
 ms.assetid: 488d2899-b09f-4cee-92f0-6f9f9fc4f944
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

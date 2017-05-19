@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "grouping data [LINQ in Visual Basic]"
   - "Select clause [LINQ in Visual Basic]"
 ms.assetid: 1146f6d0-fcb8-4f4d-8223-c9db52620d21
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent

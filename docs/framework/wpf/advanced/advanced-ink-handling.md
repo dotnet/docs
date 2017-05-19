@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "StylusPlugIns classes"
   - "ink, advanced handling"
 ms.assetid: abc8481a-f983-416f-b051-9168ac8b2ba3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 52
 author: dotnet-bot
 ms.author: dotnetcontent

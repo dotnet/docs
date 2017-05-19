@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], removing columns"
   - "columns [Windows Forms], removing"
 ms.assetid: 92e28d98-95a3-446c-9150-41b7c7e5be15
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,6 +10,8 @@ dev_langs:
 helpviewer_keywords: 
   - "contextual keywords [C#]"
 ms.assetid: 7c76bc29-a754-4389-b0ab-f6b441018298
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "services, debugging"
   - "Windows Service applications, troubleshooting"
 ms.assetid: cf859d4c-f04c-4cb7-81e3-bc7de8bea190
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"

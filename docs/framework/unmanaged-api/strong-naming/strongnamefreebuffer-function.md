@@ -26,6 +26,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameFreeBuffer function [.NET Framework strong naming]"
 ms.assetid: eda21ecf-4734-4f92-aaba-9f34884385db
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 19

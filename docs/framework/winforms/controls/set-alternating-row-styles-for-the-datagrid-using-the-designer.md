@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "rows, alternating"
   - "data [Windows Forms], displaying"
 ms.assetid: 02373442-bf94-4470-9f8a-e44c4a9d5b88
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

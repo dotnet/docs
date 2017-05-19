@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Toolbox, adding controls"
   - "ActiveX controls, adding to Toolbox"
 ms.assetid: ec675027-866f-4c05-aaf2-92fca5200f9a
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

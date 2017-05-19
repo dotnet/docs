@@ -29,6 +29,8 @@ helpviewer_keywords:
   - "abstract classes, inheritance"
   - "overriding, Overrides keyword"
 ms.assetid: dfc8deba-f5b3-4d1d-a937-7cb826446fc5
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "isolated storage, out of space conditions"
   - "data storage using isolated storage, out of space conditions"
 ms.assetid: e35d4535-3732-421e-b1a3-37412e036145
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

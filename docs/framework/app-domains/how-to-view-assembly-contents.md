@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "MSIL"
   - "viewing MSIL information"
 ms.assetid: fb7baaab-4c0d-47ad-8fd3-4591cf834709
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

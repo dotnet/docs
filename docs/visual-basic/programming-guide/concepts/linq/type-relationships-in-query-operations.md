@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "inferring type information [LINQ in Visual Basic]"
   - "relationships [LINQ in Visual Basic]"
 ms.assetid: b5ff4da5-f3fd-4a8e-aaac-1cbf52fa16f6
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent

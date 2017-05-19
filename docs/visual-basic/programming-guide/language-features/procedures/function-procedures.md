@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "procedures, Function procedures"
   - "syntax, function procedures"
 ms.assetid: 1b9f632c-553b-4cb6-920a-ded117ead8c0
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "secure applications [WCF]"
 ms.assetid: 79e4e6f7-0c00-4045-b0f0-e6a7c37c7788
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "BrucePerlerMS"
 ms.author: "bruceper"

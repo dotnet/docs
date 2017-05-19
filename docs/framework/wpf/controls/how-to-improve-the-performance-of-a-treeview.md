@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "TreeView control [WPF], improving the performance"
 ms.assetid: b792c740-cf2b-4da8-8ba8-3d2e5a821874
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

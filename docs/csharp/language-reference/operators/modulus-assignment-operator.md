@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "modulus assignment operator (=%) [C#]"
   - "%= assignment operator (modulus assignment) [C#]"
 ms.assetid: 47e5f068-1d97-4010-bd3b-e21b5d3a77f5
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

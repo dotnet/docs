@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "pages, setting window height from"
   - "height of window, setting from a page"
 ms.assetid: 4e4488ff-ab5c-4ee9-81a4-e1addb55c5cc
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

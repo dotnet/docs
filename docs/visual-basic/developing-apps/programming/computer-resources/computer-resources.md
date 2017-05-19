@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "My.Computer object, tasks"
   - "computer resources, accessing"
 ms.assetid: 75b81c88-f7c0-46e0-95c8-0c006d2120f9
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

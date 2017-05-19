@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "cast operator [C#]"
   - "() operator [C#]"
 ms.assetid: 846e1f94-8a8c-42fc-a42c-fbd38e70d8cc
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

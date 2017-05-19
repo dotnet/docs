@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "remove element for <listeners> for <source>"
   - "<remove> element for <listeners> for <source>"
 ms.assetid: 3ff6b578-273d-407f-b07f-8251f1f9f5d0
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"

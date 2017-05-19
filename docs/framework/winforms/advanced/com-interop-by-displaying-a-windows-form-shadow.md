@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "ShowDialog method"
   - "Windows Forms, interop"
 ms.assetid: 87aac8ad-3c04-43b3-9b0c-d0b00df9ee74
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "& operator [C#]"
   - "AND operator (&) [C#]"
 ms.assetid: afa346d5-90ec-4b1f-a2c8-3881f018741d
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

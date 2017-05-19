@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "labels"
   - "Label control [Windows Forms], about Label control"
 ms.assetid: dcad7f44-11b7-4c55-b0c0-d984ade43d7d
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

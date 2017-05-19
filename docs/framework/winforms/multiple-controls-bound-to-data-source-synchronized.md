@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], binding multiple"
   - "controls [Windows Forms], synchronizing with data source"
 ms.assetid: c2f0ecc6-11e6-4c2c-a1ca-0759630c451e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

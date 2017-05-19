@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "typography, ClearType technology"
   - "ClearType, technology"
 ms.assetid: 7e2392e0-75dc-463d-a716-908772782431
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -28,6 +28,8 @@ helpviewer_keywords:
   - "quotation mark (") [XAML Services]"
   - "less-than (<) character [XAML Services]"
 ms.assetid: 6896d0ce-74f7-420a-9ab4-de9bbf390e8d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 23
 author: "wadepickett"
 ms.author: "wpickett"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "METAHOST_POLICY_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: 3bb4b526-0118-42e2-ba59-c95648528ce9
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 21

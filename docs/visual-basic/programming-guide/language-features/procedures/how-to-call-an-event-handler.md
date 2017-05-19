@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "procedures, event handlers"
   - "procedures, calling"
 ms.assetid: 72e18ef8-144e-40df-a1f4-066a57271e28
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

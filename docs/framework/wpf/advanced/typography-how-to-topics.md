@@ -14,6 +14,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "typography, how-to topics"
 ms.assetid: 82d50325-7cb2-4975-aea3-027c00e6bbfc
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 90
 author: dotnet-bot
 ms.author: dotnetcontent

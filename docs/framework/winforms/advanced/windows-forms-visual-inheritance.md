@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "form inheritance"
   - "Windows Forms, inheritance"
 ms.assetid: 857eb737-3602-4d49-bd8b-f70d33ace345
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

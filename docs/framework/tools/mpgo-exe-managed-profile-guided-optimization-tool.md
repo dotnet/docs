@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "Ngen.exe"
   - "Ngen.exe, profilers and native images"
 ms.assetid: f6976502-a000-4fbe-aaf5-a7aab9ce4ec2
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 31
 author: "mairaw"
 ms.author: "mairaw"

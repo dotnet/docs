@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "exceptions, COM interop"
   - "COM interop, exceptions"
 ms.assetid: e6104aa8-8e5f-4069-b864-def85579c96c
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

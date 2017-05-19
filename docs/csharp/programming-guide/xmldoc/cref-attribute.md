@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "cref [C#]"
 ms.assetid: 66a6b0e5-b961-4504-a461-3a4cf481fc8b
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

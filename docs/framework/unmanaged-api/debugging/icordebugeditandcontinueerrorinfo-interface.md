@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugEditAndContinueErrorInfo interface [.NET Framework debugging]"
 ms.assetid: 6ae0204c-6bb2-4bda-b13e-94507203bc68
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

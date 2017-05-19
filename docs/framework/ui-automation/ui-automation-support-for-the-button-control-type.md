@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, Button control type"
   - "Button control type"
 ms.assetid: 057c983a-da83-4c50-86c7-26fe381076a6
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 34
 author: "Xansky"
 ms.author: "mhopkins"

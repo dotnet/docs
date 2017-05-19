@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "lines, connected (see polylines)"
   - "drawing, polylines"
 ms.assetid: 65db8935-d047-4295-87c4-b427ff3ad293
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

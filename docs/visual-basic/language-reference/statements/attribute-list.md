@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "attribute list"
   - "attributes [Visual Basic], applying"
 ms.assetid: 5880073a-68a4-4b6b-8a07-ace32959a4e2
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

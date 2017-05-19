@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "file extensions, registering"
   - "registering MIME types"
 ms.assetid: c6e8c2cb-9ba2-4e75-a0d5-180ec9639433
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

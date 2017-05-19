@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "professional appearance, applying to elements of Windows Forms applications"
   - "visual styles, rendering Windows Forms controls"
 ms.assetid: a207781b-1baa-4ce9-b788-1e951bd4b5df
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

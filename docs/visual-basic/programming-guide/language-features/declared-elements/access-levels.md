@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Private access modifier"
   - "declared elements, access level"
 ms.assetid: 6e06c1ab-fd78-47f0-83a8-1152780b5e1a
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

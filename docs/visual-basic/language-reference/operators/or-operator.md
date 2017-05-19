@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "logical disjunction"
   - "disjunction operator"
 ms.assetid: 41ed6905-bf3d-468a-9e3b-03c10d461891
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

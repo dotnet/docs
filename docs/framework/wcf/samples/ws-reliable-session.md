@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Reliable session"
 ms.assetid: 86e914f2-060b-432b-bd17-333695317745
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 30
 author: "Erikre"
 ms.author: "erikre"

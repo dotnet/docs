@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "WPF, interoperability"
   - "migration [WPF]"
 ms.assetid: d655de05-bf63-4814-bc64-6b3be01c70a2
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 41
 author: dotnet-bot
 ms.author: dotnetcontent

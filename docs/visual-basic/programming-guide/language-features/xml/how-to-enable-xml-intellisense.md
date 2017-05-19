@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "XML [Visual Basic], IntelliSense"
   - "IntelliSense [Visual Basic], XML"
 ms.assetid: af67d0ee-a4a6-4abf-9c07-5a8cfe80d111
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

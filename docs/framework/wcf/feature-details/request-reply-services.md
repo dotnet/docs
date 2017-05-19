@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "WCF [WCF], request-reply services"
   - "request-reply contracts [WCF]"
 ms.assetid: 2fa710f1-47f4-4598-b063-3ab3bd22ebba
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "scaling, 3-D objects"
   - "3-D objects, scaling"
 ms.assetid: f3fdfe33-f7dc-44b0-84a5-e43b89947f35
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent

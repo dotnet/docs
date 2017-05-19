@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "paths, flattening"
   - "drawing, flattening curves"
 ms.assetid: e654b8de-25f4-4735-9208-42e4514a589c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

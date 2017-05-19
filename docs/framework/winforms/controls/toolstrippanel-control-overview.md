@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "ToolStripPanel control [Windows Forms], about ToolStripPanel control"
 ms.assetid: ce54a60c-5eba-4b4c-bd77-cf0748a666cc
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "mapping properties"
   - "ElementHost control, mapping properties"
 ms.assetid: bccd6e0d-2272-4924-9107-ff8ed58b88aa
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

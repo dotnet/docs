@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "asymmetric accessor accesibility [C#]"
   - "indexers [C#], read-only"
 ms.assetid: 6e655798-e112-4301-a680-6310a6e012e1
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

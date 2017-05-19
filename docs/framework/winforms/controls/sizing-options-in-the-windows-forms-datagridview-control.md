@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "data grids, row sizing"
   - "data grids, sizing options"
 ms.assetid: a5620a9c-0d06-41e3-8934-c25ddb16c9e6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "EllipseGeometry objects, animating"
   - "graphics [WPF], animation"
 ms.assetid: 767b9b6e-9cb7-482e-b6c2-fee7750c3995
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

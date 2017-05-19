@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "states [WPF], Frame"
   - "styles [WPF], Frame"
 ms.assetid: a01c32e2-c951-46a0-a82f-2614ca241f0b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

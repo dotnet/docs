@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "My.Application.Log object"
 ms.assetid: 296147f9-1109-4a55-9b5e-047f1ab9466c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 32
 author: dotnet-bot
 ms.author: dotnetcontent

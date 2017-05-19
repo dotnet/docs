@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "impersonation [WCF]"
   - "delegation [WCF]"
 ms.assetid: 110e60f7-5b03-4b69-b667-31721b8e3152
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 40
 author: "Erikre"
 ms.author: "erikre"

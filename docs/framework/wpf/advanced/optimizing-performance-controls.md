@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "container recycling"
   - "user interface virtualization"
 ms.assetid: 45a31c43-ea8a-4546-96c8-0631b9934179
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls [WPF], RepeatButton"
   - "RepeatButton control [WPF]"
 ms.assetid: 5702b603-95e6-438a-88c0-76509367e876
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent

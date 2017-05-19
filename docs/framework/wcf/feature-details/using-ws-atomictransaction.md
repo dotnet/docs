@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "WS-AT protocol [WCF]"
 ms.assetid: 04a4c200-0af0-4c5d-a3d9-87cb7339e054
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"

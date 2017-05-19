@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "implicit conversion operators [C#]"
   - "explicit conversion operators [C#]"
 ms.assetid: caf36e89-c6c0-4b87-9f9e-85780a45c9a4
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

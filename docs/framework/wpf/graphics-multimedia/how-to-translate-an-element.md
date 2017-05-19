@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "graphics, translations"
   - "TranslateTransform class"
 ms.assetid: 461c8273-15df-42f6-8672-89ba22887cc0
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

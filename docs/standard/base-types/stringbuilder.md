@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Insert method"
   - "strings [.NET Framework], StringBuilder object"
 ms.assetid: 5c14867c-9a99-45bc-ae7f-2686700d377a
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

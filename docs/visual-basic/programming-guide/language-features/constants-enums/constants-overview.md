@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "constants"
 ms.assetid: 29016fe8-78b3-4dc8-90b8-1cfec2fa8ac9
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

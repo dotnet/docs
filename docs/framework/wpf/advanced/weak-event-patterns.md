@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "event handlers, weak event pattern"
   - "IWeakEventListener interface"
 ms.assetid: e7c62920-4812-4811-94d8-050a65c856f6
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

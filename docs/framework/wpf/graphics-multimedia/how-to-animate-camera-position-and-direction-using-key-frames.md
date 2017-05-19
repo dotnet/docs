@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "key frames, animating camera position"
   - "camera direction, animating with key frames"
 ms.assetid: 5753024e-0057-454d-947f-43ea686879c7
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "touch-sensitive applications [WPF], creating"
   - "creating a touchscreen application [WPF]"
 ms.assetid: d69e602e-9a25-4e24-950b-e89eaa2a906b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

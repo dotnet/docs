@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "what's new [Visual Basic]"
 ms.assetid: ddba5545-ff6e-46c3-8967-5c4280db5aca
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

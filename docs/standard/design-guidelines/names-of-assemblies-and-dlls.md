@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], names"
   - "DLLs, names"
 ms.assetid: e800b610-31b4-4949-9c14-cb60e9f254be
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

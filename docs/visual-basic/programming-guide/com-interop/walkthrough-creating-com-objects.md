@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "object creation, COM objects"
   - "COM objects, walkthroughs"
 ms.assetid: 7b07a463-bc72-4392-9ba0-9dfcb697a44f
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

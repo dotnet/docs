@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "searching strings [C#]"
   - "strings [C#], searching with RegEx"
 ms.assetid: dcab2150-a4a2-4fe4-87e3-83b83b58d84a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

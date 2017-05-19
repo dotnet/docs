@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "drop and drag, insertion marks"
   - "insertion marks"
 ms.assetid: 88d0a15b-25fd-4dc3-a685-297351311940
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

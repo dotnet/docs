@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "TextPointer objects"
   - "text, inserting elements"
 ms.assetid: 97bd950a-25ac-4e42-a311-94b6420d4136
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

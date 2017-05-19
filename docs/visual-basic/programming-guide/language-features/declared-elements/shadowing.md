@@ -28,6 +28,8 @@ helpviewer_keywords:
   - "objects [Visual Basic], names"
   - "names, shadowing"
 ms.assetid: 54bb4c25-12c4-4181-b4a0-93546053964e
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

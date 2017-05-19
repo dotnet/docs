@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Sub Expression [Visual Basic]"
   - "subroutines [Visual Basic], sub expressions"
 ms.assetid: 36b6bfd1-6539-4d8f-a5eb-6541a745ffde
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

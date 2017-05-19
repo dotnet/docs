@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "custom drawing"
   - "owner drawing"
 ms.assetid: 3823d01e-9610-43e6-864d-99f9b7c2b351
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

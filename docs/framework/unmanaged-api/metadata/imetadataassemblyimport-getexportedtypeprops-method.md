@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetExportedTypeProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetExportedTypeProps method [.NET Framework metadata]"
 ms.assetid: 25ca7623-5a55-4f09-b44a-36b03d142278
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

@@ -22,6 +22,8 @@ helpviewer_keywords:
   - ".NET Framework application configuration, cryptography"
   - "default cryptography"
 ms.assetid: eee3ccb8-2c0d-4f35-b38d-6892a46c14e5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"

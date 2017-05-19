@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "scaled text"
   - "typography, skewed text"
 ms.assetid: 0d61678a-4185-4f2a-85c6-c1d020f96fa0
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -35,6 +35,8 @@ helpviewer_keywords:
   - "restrictions, overloading procedures"
   - "procedures, parameter lists"
 ms.assetid: a2001248-10d0-42c5-b0ce-eeedc987319f
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ dev_langs:
 helpviewer_keywords: 
   - "/appconfig compiler option [C#]"
 ms.assetid: 1cdbcbcc-7813-4010-b5b8-e67c107c5a98
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

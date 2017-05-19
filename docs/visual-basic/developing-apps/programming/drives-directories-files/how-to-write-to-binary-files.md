@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "WriteAllBytes method"
   - "binary files, writing in Visual Basic"
 ms.assetid: 59fae125-de5b-4c96-883c-209f4a55112c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "FExecuteInAppDomainCallback function pointer [.NET Framework hosting]"
 ms.assetid: 2709f18f-3eee-497f-bc33-3ab7a485599b
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

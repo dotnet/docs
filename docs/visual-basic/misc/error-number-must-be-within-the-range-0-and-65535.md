@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrMaxErrNumber"
 ms.assetid: c5cb5753-516e-4568-9d63-0e9a2a4c5812
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

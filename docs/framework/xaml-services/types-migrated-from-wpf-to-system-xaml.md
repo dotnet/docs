@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "XAML [XAML Services], System.Xaml and WPF"
   - "System.Xaml [XAML Services], types migrated from WPF"
 ms.assetid: d79dabf5-a2ec-4e8d-a37a-67c4ba8a2b91
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: "wadepickett"
 ms.author: "wpickett"

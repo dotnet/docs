@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "hosting interfaces [.NET Framework], version 1"
   - ".NET Framework 1.0, hosting interfaces"
 ms.assetid: 7b3d2755-cbab-4160-bc69-eb85791e38c7
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

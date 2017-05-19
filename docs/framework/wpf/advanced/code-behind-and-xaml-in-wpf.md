@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "XAML, code-behind"
   - "code-behind files, XAML"
 ms.assetid: 9df6d3c9-aed3-471c-af36-6859b19d999f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

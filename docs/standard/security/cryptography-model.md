@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "cryptography [.NET Framework], model"
   - "encryption [.NET Framework], model"
 ms.assetid: 12fecad4-fbab-432a-bade-2f05976a2971
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

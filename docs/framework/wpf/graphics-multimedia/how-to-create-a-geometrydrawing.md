@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "graphics, GeometryDrawing class"
   - "classes, GeometryDrawing"
 ms.assetid: 11d3c096-91ba-4d41-9bba-aeac0db70f97
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

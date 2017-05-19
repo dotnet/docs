@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedBinder interface [.NET Framework debugging]"
 ms.assetid: b22fbe19-b30f-4696-8175-e6b91da9edab
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

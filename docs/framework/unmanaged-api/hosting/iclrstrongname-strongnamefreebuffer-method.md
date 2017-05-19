@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "StrongNameFreeBuffer method, ICLRStrongName interface [.NET Framework hosting]"
   - "ICLRStrongName::StrongNameFreeBuffer method [.NET Framework hosting]"
 ms.assetid: 6148c508-bd1d-4a37-85c3-06ecb09cc857
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

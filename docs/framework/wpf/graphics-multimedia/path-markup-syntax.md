@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "graphics, PathGeometry class"
   - "XAML, object element usage"
 ms.assetid: b8586241-a02d-486e-9223-e1e98e047f41
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "print jobs, completing in Windows Forms"
   - "printing [Windows Forms], print jobs"
 ms.assetid: 23ec74f7-34c5-4710-82a0-ee2914518548
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

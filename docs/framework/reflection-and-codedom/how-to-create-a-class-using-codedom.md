@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "CodeDOM, creating classes"
   - "CodeDOM, graphs"
 ms.assetid: 0ceb70fe-36e1-49bb-922b-e9f615c20a14
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

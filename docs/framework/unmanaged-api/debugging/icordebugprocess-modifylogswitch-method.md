@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess::ModifyLogSwitch method [.NET Framework debugging]"
   - "ModifyLogSwitch method [.NET Framework debugging]"
 ms.assetid: 5fd30875-555e-4e96-877b-5dd266cde7c4
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

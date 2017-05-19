@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorSerializationType enumeration [.NET Framework metadata]"
 ms.assetid: 6b1fcd11-c7fb-4be2-8910-abc862d4caf4
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

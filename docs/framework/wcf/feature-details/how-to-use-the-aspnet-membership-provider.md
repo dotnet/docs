@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "WCF, authorization"
   - "WCF, security"
 ms.assetid: 322c56e0-938f-4f19-a981-7b6530045b90
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"

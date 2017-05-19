@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "dialog boxes, context-sensitive Help"
   - "Windows Forms, context-sensitive Help"
 ms.assetid: 6b10c2cc-c577-4cb5-9669-e37b33416af9
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

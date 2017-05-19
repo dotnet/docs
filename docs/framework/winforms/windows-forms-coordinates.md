@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "client coordinates"
   - "coordinates, Windows Forms"
 ms.assetid: cc06e61f-43b6-4408-a676-2542dcfcd96e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

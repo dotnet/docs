@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "TreeView control [WPF], finding a TreeViewItem"
   - "TreeViewItem [WPF], finding"
 ms.assetid: 72ecd40c-3939-4e01-b617-5e9daa6074d9
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "procedures, multiple versions"
   - "procedure overloading, multiple versions"
 ms.assetid: 71ccdd66-1b00-4b66-bee4-6926c0d696f4
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

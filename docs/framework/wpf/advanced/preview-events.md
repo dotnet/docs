@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "events, Preview"
   - "events, suppressing"
 ms.assetid: b5032308-aa9c-4d02-af11-630ecec8df7e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

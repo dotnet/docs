@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "ClearType, registry settings"
   - "typography, ClearType registry settings"
 ms.assetid: 56f314bb-b30b-4f67-8492-8b8a9fa432ae
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

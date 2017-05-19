@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "user settings [Windows Forms]"
   - "application settings [Windows Forms], how-to topics"
 ms.assetid: 54682d3b-1cbf-4683-9351-012b8b4286b5
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

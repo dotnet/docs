@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "variables [Visual Basic], defining"
   - "statements [Visual Basic], about statements"
 ms.assetid: fcfdee1a-82b7-4846-98f7-9ca3f5160089
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

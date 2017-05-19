@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "DataGrid [WPF], validation"
   - "validation [WPF], DataGrid"
 ms.assetid: ec6078a8-1e42-4648-b414-f4348e81bda1
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

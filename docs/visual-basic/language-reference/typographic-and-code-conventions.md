@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "conventions, documentation"
   - "Visual Basic code, conventions"
 ms.assetid: 1916cd81-ea9d-4faa-81f7-4a0d864b60f4
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

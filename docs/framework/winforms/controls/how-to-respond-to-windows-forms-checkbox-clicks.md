@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "double-clicks"
   - "check boxes, responding to events"
 ms.assetid: c39f901e-8899-43b6-aa31-939cbf7089fb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

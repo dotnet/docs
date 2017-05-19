@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "strings [C#], converting from RTF"
 ms.assetid: 3b386a87-899d-4d98-bc82-a980526ddaac
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

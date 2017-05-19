@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "res compiler option [C#]"
   - "resource compiler option [C#]"
 ms.assetid: 5212666e-98ab-47e4-a497-b5545ab15c7f
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "trace switches, conditional writes based on switches"
   - "WriteIf method"
 ms.assetid: f3a93fa7-1717-467d-aaff-393e5c9828b4
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

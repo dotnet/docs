@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "Aximp.exe"
   - "Windows Forms ActiveX Control Importer"
 ms.assetid: 482c0d83-7144-4497-b626-87d2351b78d0
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

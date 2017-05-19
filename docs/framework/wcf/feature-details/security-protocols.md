@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "security [WCF], protocols"
 ms.assetid: 57ffcbea-807c-4e43-a41c-44b3db8ed2af
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "BrucePerlerMS"
 ms.author: "bruceper"

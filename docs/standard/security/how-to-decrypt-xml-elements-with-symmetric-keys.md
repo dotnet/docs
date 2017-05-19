@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "Rijndael"
   - "decryption"
 ms.assetid: 6038aff0-f92c-4e29-a618-d793410410d8
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], built-in rafting"
   - "ToolStripContainer control [Windows Forms], about ToolStripContainer control"
 ms.assetid: c7d63bff-64e2-4a63-bd89-d31bc96dacb8
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

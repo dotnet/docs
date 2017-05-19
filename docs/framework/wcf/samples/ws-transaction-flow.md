@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Transactions"
 ms.assetid: f8eecbcf-990a-4dbb-b29b-c3f9e3b396bd
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 43
 author: "Erikre"
 ms.author: "erikre"

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "references, declared elements"
   - "qualified names"
 ms.assetid: d6301709-f4cc-4b7a-b8ba-80898f14ab46
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

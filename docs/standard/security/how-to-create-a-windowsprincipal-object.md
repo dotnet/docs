@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "security [.NET Framework], principals"
   - "principal objects, creating"
 ms.assetid: 56eb10ca-e61d-4ed2-af7a-555fc4c25a25
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "tooltips [Windows Forms], for controls"
   - "Help, adding to dialog boxes"
 ms.assetid: 03263f94-e539-440b-a67c-8b9110c96dcd
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

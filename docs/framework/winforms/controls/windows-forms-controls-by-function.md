@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Windows Forms, controls by function"
   - "Windows Forms controls, list of"
 ms.assetid: 5e65a6c3-5d6f-480d-beb8-b28f865f07e3
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorFileFlags enumeration [.NET Framework metadata]"
 ms.assetid: d16703fd-518f-412e-92cb-74433d11032e
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

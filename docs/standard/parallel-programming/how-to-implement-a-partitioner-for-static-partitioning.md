@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, how to create a static partitioner"
 ms.assetid: f4410508-cac6-4ba7-bef1-c5e68b2794f3
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

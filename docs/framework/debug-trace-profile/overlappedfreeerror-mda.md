@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), overlapped structures"
   - "freeing overlapped structures"
 ms.assetid: b6ab2d48-6eee-4bab-97a3-046b3b0a5470
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Windows Forms, mouse input"
   - "mouse, input"
 ms.assetid: 48fc5240-75a6-44bf-9fce-6aa21b49705a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

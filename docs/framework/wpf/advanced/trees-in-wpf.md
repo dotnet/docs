@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "element tree"
   - "visual tree"
 ms.assetid: e83f25e5-d66b-4fc7-92d2-50130c9a6649
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

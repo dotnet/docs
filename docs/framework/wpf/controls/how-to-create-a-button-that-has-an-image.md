@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Button controls [WPF], creating"
 ms.assetid: 607a193c-4098-4dd8-8dc0-51256cec2020
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

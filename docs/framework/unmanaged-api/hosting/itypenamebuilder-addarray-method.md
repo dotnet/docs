@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ITypeNameBuilder::AddArray method [.NET Framework hosting]"
   - "AddArray method [.NET Framework hosting]"
 ms.assetid: 0a21ae28-54bc-4f6e-aaa6-960a22c5f530
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

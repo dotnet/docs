@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "data grids, copying multiple cells"
   - "Clipboard, copying multiple cells"
 ms.assetid: fd0403b2-d0e3-4ae0-839c-0f737e1eb4a9
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

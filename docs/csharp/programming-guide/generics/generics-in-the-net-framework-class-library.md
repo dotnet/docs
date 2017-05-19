@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "generics [C#], in .NET Framework class library"
 ms.assetid: afdd5477-6770-4686-8297-f58a4d749daf
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

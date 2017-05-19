@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "producer-consumer patterns, implementing [TPL]"
 ms.assetid: 47a1d38c-fe9c-44aa-bd15-937bd5659b0b
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

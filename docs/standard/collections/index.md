@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Collections classes"
   - "collections [.NET Framework]"
 ms.assetid: 60cc581f-1db5-445b-ba04-a173396bf872
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 36
 author: "mairaw"
 ms.author: "mairaw"

@@ -32,6 +32,8 @@ helpviewer_keywords:
   - "argument passing, by position"
   - "arguments [Visual Basic], listing by name"
 ms.assetid: 1ad7358f-1da9-48da-a95b-f3c7ed41eff3
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

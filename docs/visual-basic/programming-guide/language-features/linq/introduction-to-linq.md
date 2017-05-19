@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "deferred execution"
   - "iteration variables"
 ms.assetid: 3047d86e-0d49-40e2-928b-dc02e46c7984
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent

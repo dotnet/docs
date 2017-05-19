@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "animation, changing property values after"
 ms.assetid: 79466556-4dbf-40bd-9c1e-a77613b07077
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

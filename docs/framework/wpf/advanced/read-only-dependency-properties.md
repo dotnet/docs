@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "dependency properties, read-only"
   - "read-only dependency properties"
 ms.assetid: f23d6ec9-3780-4c09-a2ff-b2f0a2deddf1
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

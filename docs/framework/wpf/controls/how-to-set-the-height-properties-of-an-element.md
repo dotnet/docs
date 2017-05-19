@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "height properties"
   - "Panel control, height properties of elements"
 ms.assetid: 5ab9e781-dbb8-469a-a3c8-cf38ce312647
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

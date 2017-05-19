@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "hit tests, for 3-D visuals"
   - "Viewport3D"
 ms.assetid: 42bfbd99-c7c6-43f1-940b-90448faa412e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

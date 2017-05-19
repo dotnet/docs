@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "recoloring images"
   - "examples [Windows Forms], recoloring images"
 ms.assetid: f28c54fd-9c80-4f6f-b242-55f7ffcda84b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

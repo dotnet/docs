@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "C# language, pointers"
   - "pointers [C#], about pointers"
 ms.assetid: b0fcca10-a92d-4f2a-835b-b0ccae6739ee
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "procedure parameters"
   - "parameters, definition"
 ms.assetid: c237c056-74f4-4749-9f2c-15864f139a31
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

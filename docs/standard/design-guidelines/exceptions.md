@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "errors [.NET Framework], exceptions"
   - "reporting errors"
 ms.assetid: bc177b2f-7528-4ae4-83db-aacfb04b86d0
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

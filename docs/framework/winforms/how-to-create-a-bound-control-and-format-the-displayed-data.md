@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "bound controls [Windows Forms], creating"
   - "bound controls [Windows Forms], formatting data"
 ms.assetid: d5a56228-899d-41d9-8af8-87b3f4ec2f94
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

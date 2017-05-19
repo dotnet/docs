@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetNamespaces method, ISymUnmanagedScope interface [.NET Framework debugging]"
   - "ISymUnmanagedScope::GetNamespaces method [.NET Framework debugging]"
 ms.assetid: c44b0440-04bd-460a-84fb-41afecf44503
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

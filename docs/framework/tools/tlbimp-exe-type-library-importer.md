@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "type libraries"
   - "converting type definitions"
 ms.assetid: ec0a8d63-11b3-4acd-b398-da1e37e97382
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 29
 author: "rpetrusha"
 ms.author: "ronpet"

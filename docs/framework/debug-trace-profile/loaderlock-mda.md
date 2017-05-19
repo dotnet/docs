@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "loader locks"
   - "locks, threads"
 ms.assetid: 8c10fa02-1b9c-4be5-ab03-451d943ac1ee
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

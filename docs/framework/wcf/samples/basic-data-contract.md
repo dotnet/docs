@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Data Contract"
 ms.assetid: b124e9e0-cb73-4ae0-b9c3-e6cdf5eced98
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 37
 author: "Erikre"
 ms.author: "erikre"

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "*= operator [C#]"
   - "binary multiplication assignment operator (*=) [C#]"
 ms.assetid: 2e472155-59db-4dbf-bb94-bcccfa1a794d
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

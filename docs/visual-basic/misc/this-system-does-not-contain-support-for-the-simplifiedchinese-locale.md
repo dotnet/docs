@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_SCNotSupported"
 ms.assetid: 197d17cb-2904-4e12-8e45-aba23bddec8c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

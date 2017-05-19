@@ -14,6 +14,8 @@ helpviewer_keywords:
   - ".NET Framework, ASP.NET"
   - "dynamic Web applications [ASP.NET]"
 ms.assetid: b7861df0-690a-4a58-bd12-f9d0123e40df
+ms.technology: 
+  - "dotnet-webforms"
 caps.latest.revision: 14
 author: "tdykstra"
 ms.author: "tdykstra"

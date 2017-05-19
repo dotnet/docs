@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "NT Service"
   - "NT Service Host Sample [Windows Communication Foundation]"
 ms.assetid: 1b2f45c5-2bed-4979-b0ee-8f9efcfec028
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 40
 author: "Erikre"
 ms.author: "erikre"

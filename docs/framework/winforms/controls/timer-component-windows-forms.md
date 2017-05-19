@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "timers"
   - "timers, creating"
 ms.assetid: 6700e534-6382-43d5-98ed-14205435fff7
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

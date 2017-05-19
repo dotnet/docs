@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "rectangles, destination"
   - "images [Windows Forms], compression"
 ms.assetid: ad5daf26-005f-45bc-a2af-e0e97777a21a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

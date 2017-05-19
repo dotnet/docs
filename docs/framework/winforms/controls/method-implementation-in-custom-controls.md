@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "methods [Windows Forms]"
   - "methods [Windows Forms], custom controls"
 ms.assetid: 35d14fca-4bb4-4a27-8211-1f7a98ea27de
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

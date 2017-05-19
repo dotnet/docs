@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "data grids, font styles"
   - "data grids, color styles"
 ms.assetid: 588f2c57-d963-41b1-9c1d-d02d71818113
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

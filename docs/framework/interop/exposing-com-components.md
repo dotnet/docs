@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, exposing COM components"
   - "COM interop, exposing COM components"
 ms.assetid: e78b14f1-e487-43cd-9c6d-1a07483f1730
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

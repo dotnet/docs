@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "I/O [.NET Framework], enumerating directories and files"
 ms.assetid: 86b69a08-3bfa-4e5f-b4e1-3b7cb8478215
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"

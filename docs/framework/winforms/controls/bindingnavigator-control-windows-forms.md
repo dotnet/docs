@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "data [Windows Forms], navigating"
   - "data navigation"
 ms.assetid: 18c1e2a5-9834-40d3-9b2e-2b545e4e769e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

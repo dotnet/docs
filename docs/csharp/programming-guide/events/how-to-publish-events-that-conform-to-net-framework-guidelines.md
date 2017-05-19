@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "events [C#], implementation guidelines"
 ms.assetid: 9310ae16-8627-44a2-b08c-05e5976202b1
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"

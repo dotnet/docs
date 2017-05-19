@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "X.509 certificates"
   - "certificates, X.509 certificates"
 ms.assetid: bd015722-d88d-408d-8ca8-e4e475c441ed
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

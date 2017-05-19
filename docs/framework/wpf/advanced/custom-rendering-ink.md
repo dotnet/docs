@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "DynamicRenderer class"
   - "classes, InkCanvas"
 ms.assetid: 65c978a7-0ee0-454f-ac7f-b1bd2efecac5
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

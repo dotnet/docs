@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CoUninitializeCor function [.NET Framework hosting]"
 ms.assetid: 50a95b8b-9766-470e-bb29-2c7ecddfd4a1
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

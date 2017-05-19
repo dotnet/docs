@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "DataGrid [WPF], displaying data from SQL Server"
   - "controls [WPF], DataGrid"
 ms.assetid: 6810b048-0a23-4f86-bfa5-97f92b3cfab4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

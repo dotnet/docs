@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "data sources, updating"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: bd8bd9b2-af8a-4f11-a3d5-54eecbe2400b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

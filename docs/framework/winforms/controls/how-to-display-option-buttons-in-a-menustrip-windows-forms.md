@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "displaying option buttons, MenuStrip [Windows Forms]"
   - "option buttons [Windows Forms], displaying in MenuStrip"
 ms.assetid: 8b596af2-9ff8-4f7b-93d7-cba830e167f4
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

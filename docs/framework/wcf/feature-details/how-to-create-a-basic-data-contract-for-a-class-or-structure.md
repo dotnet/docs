@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "DataContractAttribute class"
   - "data contracts [WCF], creating for a class or structure"
 ms.assetid: bc464889-3070-4a2f-91d2-e788a0f686a7
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 25
 author: "Erikre"
 ms.author: "erikre"

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "spelling checker"
   - "checking spelling"
 ms.assetid: 6f953d2b-67e8-4012-84ce-53c0e958da47
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

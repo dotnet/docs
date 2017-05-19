@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "data types [Visual Basic], declared elements"
   - "declared elements, visibility"
 ms.assetid: 1bc40fb8-b67c-4428-90a4-76b630ae2583
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

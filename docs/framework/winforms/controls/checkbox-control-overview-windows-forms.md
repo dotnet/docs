@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "data-bound controls, check boxes"
   - "check boxes, about check boxes"
 ms.assetid: 085a4e0b-9046-473f-b141-d0edddfb2ebb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

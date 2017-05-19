@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "queues [WCF]. grouping messages"
 ms.assetid: 63b23b36-261f-4c37-99a2-cc323cd72a1a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 30
 author: "Erikre"
 ms.author: "erikre"

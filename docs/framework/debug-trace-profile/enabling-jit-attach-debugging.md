@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "JIT-attach debugging"
   - "debugging [.NET Framework], JIT-attach debugging"
 ms.assetid: f91fc5f7-de5a-4f23-b6ac-f450e63c662e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

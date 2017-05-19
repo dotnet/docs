@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "keyboard behavior [WPF], DataGrid"
   - "mouse behavior [WPF], DataGrid"
 ms.assetid: 563b8854-ca39-4d97-8235-17eaa0f93c8d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], metafiles"
   - "metafiles, displaying"
 ms.assetid: 60af1714-f148-4d85-a739-0557965ffa73
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "streams, I/O"
   - "data streams, I/O"
 ms.assetid: 4f4a33a9-66b7-4cd7-a285-4ad3e4276cd2
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 33
 author: "mairaw"
 ms.author: "mairaw"

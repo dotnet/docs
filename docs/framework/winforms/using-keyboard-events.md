@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "keyboard events"
   - "events [Windows Forms], keyboard"
 ms.assetid: d3f3e14b-a459-4ee6-9875-8957e34f8ee9
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

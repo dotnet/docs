@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "application event logs, output location"
   - "applications [Visual Basic], output location"
 ms.assetid: 5b70143a-7741-45f2-ae1d-03324a3a4189
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

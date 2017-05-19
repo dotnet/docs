@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "SetAssemblyFile2 method"
 ms.assetid: eedb9125-1ef1-4000-abfc-7de86e5a1f17
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

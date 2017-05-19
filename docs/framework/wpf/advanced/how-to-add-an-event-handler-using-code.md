@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "event handlers, adding"
   - "XAML, adding event handlers"
 ms.assetid: 269c61e0-6bd9-4291-9bed-1c5ee66da486
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

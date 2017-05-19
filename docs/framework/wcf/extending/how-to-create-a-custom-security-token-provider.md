@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "security [WCF], providing credentials"
 ms.assetid: db8cb478-aa43-478b-bf97-c6489ad7c7fd
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "BrucePerlerMS"
 ms.author: "bruceper"

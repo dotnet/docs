@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "object identity [C#]"
   - "reference equality [C#]"
 ms.assetid: 91307fda-267b-4fd2-a338-2aada39ee791
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

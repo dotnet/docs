@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WS-Metadata Exchange [WCF]"
   - "WS-Metadata Exchange [WCF], configuring a custom binding"
 ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"

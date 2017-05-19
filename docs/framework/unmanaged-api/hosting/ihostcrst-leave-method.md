@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostCrst::Leave method [.NET Framework hosting]"
   - "Leave method [.NET Framework hosting]"
 ms.assetid: dfc51d9e-b36d-4dba-9ea1-4f63fa0601ae
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

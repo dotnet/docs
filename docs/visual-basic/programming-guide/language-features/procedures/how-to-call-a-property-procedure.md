@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "properties [Visual Basic], property procedures"
   - "procedure calls, property procedures"
 ms.assetid: 96bc4d74-d9c3-4b7a-954d-58ac8553cd94
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

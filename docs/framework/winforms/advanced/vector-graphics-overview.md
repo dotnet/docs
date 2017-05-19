@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "coordinate systems"
   - "graphics, vector graphics"
 ms.assetid: 0195df81-66be-452d-bb53-5a582ebfdc09
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

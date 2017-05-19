@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "printing [Windows Forms], choosing printers"
   - "printers, choosing"
 ms.assetid: 63c1172b-2931-4ac0-953f-37f629494bbf
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

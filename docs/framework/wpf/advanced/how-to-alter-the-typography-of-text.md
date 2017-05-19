@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "setting Typography attributes"
   - "Typography attribute, setting"
 ms.assetid: 19a3b49b-60a2-4c11-a786-e26b4c965588
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "printing, with print preview"
   - "print preview"
 ms.assetid: 4a16f7e2-ae10-4485-b0ae-3d558334d0fe
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

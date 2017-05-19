@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "aligning, TileBrushes"
   - "horizontal alignment of TileBrushes"
 ms.assetid: 65ae89bd-9246-4c9e-bde4-2fb991d4060d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

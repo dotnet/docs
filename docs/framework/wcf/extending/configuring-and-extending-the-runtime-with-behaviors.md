@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "attaching extensions using behaviors [WCF]"
 ms.assetid: 149b99b6-6eb6-4f45-be22-c967279677d9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 20
 author: "Erikre"
 ms.author: "erikre"

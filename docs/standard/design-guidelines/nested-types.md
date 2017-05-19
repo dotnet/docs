@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "members [.NET Framework], type"
   - "class library design guidelines [.NET Framework], nested types"
 ms.assetid: 12feb7f0-b793-4d96-b090-42d6473bab8c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Popup control, specifying custom position"
 ms.assetid: 28c24f39-d3aa-4ee2-b950-384b4a5dab92
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

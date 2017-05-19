@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "nested types [C#]"
 ms.assetid: f2e1b315-e3d1-48ce-977f-7bae0960ba99
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

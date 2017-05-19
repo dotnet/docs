@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WCF [WCF], what's new"
   - "Windows Communication Foundation [WCF], what's new"
 ms.assetid: 7e93fe73-af93-46b5-9f63-32f761ee40cf
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 35
 author: "Erikre"
 ms.author: "erikre"

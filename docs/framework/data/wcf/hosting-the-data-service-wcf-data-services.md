@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "WCF Data Services, configuring"
   - "WCF Data Services, Windows Communication Foundation"
 ms.assetid: b48f42ce-22ce-4f8d-8f0d-f7ddac9125ee
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"

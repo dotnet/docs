@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "transport quotas [WCF]"
 ms.assetid: 3e71dd3d-f981-4d9c-9c06-ff8abb61b717
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"

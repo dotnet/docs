@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "WcfOptions"
 ms.assetid: 6abe5d34-519b-4cef-8f02-3c0a7f125585
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

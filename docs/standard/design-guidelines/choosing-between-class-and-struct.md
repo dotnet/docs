@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "classes [.NET Framework], vs. structures"
   - "type design guidelines, classes"
 ms.assetid: f8b8ec9b-0ba7-4dea-aadf-a93395cd804f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

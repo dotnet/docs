@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "formatting strings [.NET Framework], how-to topics"
   - "strings [.NET Framework], formatting"
 ms.assetid: 36e7e096-4e6c-4cf2-9ab6-68073026ea0e
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

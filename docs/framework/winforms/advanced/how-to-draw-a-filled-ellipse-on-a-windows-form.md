@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "shapes, drawing"
   - "forms, drawing ellipses"
 ms.assetid: 781db806-950d-4c5b-b022-493f7fd0c4a8
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

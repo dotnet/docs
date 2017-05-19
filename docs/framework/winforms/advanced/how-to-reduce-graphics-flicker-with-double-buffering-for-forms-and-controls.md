@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "flicker, reducing in Windows Forms"
   - "graphics, reducing double-buffered flicker"
 ms.assetid: 91083d3a-653f-4f15-a467-0f37b2aa39d6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

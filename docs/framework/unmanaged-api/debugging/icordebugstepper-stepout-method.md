@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugStepper::StepOut method [.NET Framework debugging]"
   - "StepOut method [.NET Framework debugging]"
 ms.assetid: aae0f48c-4ede-4256-9251-a7fc85a229dc
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

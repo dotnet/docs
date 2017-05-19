@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "images [Windows Forms], working with"
   - "examples [Windows Forms], metafiles"
 ms.assetid: a626d701-bd99-4fd8-b92f-7b8f794e042b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

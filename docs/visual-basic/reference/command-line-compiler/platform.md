@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "/platform compiler option [Visual Basic]"
   - "-platform compiler option [Visual Basic]"
 ms.assetid: f9bc61e6-e854-4ae1-87b9-d6244de23fd1
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent

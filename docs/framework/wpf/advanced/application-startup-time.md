@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "application startup [WPF]"
   - "performance [WPF], startup time"
 ms.assetid: f0ec58d8-626f-4d8a-9873-c20f95e08b96
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

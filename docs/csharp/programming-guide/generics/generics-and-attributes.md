@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "generics [C#], attributes"
   - "attributes [C#], with generics"
 ms.assetid: da9fc326-4648-454a-8e13-3911a2edefd7
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

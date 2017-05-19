@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "context disconnections"
   - "managed debugging assistants (MDAs), disconnected context"
 ms.assetid: 1887d31d-7006-4491-93b3-68fd5b05f71d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

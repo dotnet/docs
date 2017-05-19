@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "application domains, configuring"
   - "ApplicationBase property"
 ms.assetid: 07ea8438-7a34-49f0-a7e8-3d6ff7e4a482
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

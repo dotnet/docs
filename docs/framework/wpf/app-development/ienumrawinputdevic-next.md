@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Next method"
 ms.assetid: 3698b44d-510e-4d18-b32b-85f17188ee26
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

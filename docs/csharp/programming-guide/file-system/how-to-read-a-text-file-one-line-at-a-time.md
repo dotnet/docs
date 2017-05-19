@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "reading text files, line by line"
   - "text files [C#]"
 ms.assetid: d62e22c5-a13c-48db-af9b-f10c801b0cb1
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

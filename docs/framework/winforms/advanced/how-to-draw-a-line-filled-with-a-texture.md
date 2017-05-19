@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "lines, texture"
   - "drawing lines, texture"
 ms.assetid: dc9118cc-f3c2-42e5-8173-f46d41d18fd5
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

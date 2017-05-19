@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "&= operator [Visual Basic]"
   - "compound assignment statements"
 ms.assetid: 0cf262fc-1a05-419a-a503-60013f111c8a
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

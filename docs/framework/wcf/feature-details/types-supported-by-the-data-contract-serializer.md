@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "serialization [WCF], supported types"
 ms.assetid: 7381b200-437a-4506-9556-d77bf1bc3f34
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 24
 author: "Erikre"
 ms.author: "erikre"

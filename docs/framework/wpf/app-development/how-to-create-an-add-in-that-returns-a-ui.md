@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "implementing add-in pipeline segments [WPF]"
   - "add-in [WPF], returns a UI"
 ms.assetid: 57f274b7-4c66-4b72-92eb-81939a393776
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

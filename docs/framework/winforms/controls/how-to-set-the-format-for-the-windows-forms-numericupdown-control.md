@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "NumericUpDown control [Windows Forms], formatting values"
   - "up-down controls, formatting numeric values"
 ms.assetid: fa7c5557-6bfb-45b2-975d-8887b23b0ba0
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

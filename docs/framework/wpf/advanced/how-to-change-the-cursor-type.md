@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "mouse pointer (cursor), cursor type"
   - "cursor (mouse pointer)"
 ms.assetid: 08c945a7-8ab0-4320-acf3-0b4955a344c2
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

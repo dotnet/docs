@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "Windows Forms, resizing"
   - "controls [Windows Forms], positioning"
 ms.assetid: 59ea914f-fbd3-427a-80fe-decd02f7ae6d
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

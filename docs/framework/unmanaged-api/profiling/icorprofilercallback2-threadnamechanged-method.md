@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ThreadNameChanged method [.NET Framework profiling]"
   - "ICorProfilerCallback2::ThreadNameChanged method [.NET Framework profiling]"
 ms.assetid: c8bbd76d-a9ff-44f2-87a6-be052819da36
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

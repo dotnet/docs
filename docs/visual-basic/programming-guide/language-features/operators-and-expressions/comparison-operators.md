@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "comparison operators, comparing numeric values"
   - "operators [Visual Basic], comparison"
 ms.assetid: 0b570339-5407-474f-8421-e183a8b303ee
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

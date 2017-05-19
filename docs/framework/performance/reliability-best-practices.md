@@ -46,6 +46,8 @@ helpviewer_keywords:
   - "STA-dependent features"
   - "fibers"
 ms.assetid: cf624c1f-c160-46a1-bb2b-213587688da7
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

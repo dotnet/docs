@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "interop assemblies"
   - "COM interop, about COM interop"
 ms.assetid: 8bd62e68-383d-407f-998b-29aa0ce0fd67
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

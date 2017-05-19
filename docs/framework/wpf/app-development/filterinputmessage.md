@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "raw input [WPF]"
   - "FilterInputMessage method"
 ms.assetid: 4d74c6cf-7d1d-49ff-96c1-231340ce54f5
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "Group Join statement"
   - "queries [Visual Basic], Group Join"
 ms.assetid: 37dbf79c-7b5c-421b-bbb7-dadfd2b92a1c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

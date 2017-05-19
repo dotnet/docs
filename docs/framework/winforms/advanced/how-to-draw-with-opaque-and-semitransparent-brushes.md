@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "alpha blending, brush"
   - "brushes, using semi-transparent"
 ms.assetid: a4f6f6b8-3bc8-440a-84af-d62ef0f8ff40
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

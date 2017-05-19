@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], visual inheritance"
   - "Windows Forms, inheritance"
 ms.assetid: 01966086-3142-450e-8210-3fd4cb33f591
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

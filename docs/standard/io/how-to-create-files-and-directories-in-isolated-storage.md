@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "stores, creating files and directories"
   - "storing data using isolated storage, creating files and directories"
 ms.assetid: 2ca4d2a4-809b-4f00-bc08-bf4a64d3a5c3
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

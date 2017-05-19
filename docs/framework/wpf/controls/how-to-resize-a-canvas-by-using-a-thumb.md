@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Thumb control"
   - "Canvas control"
 ms.assetid: 7dc9f435-726c-4d4d-be41-eb24cfe17bef
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

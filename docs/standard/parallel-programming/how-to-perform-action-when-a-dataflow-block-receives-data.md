@@ -12,6 +12,8 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library, receiving data"
 ms.assetid: fc2585dc-965e-4632-ace7-73dd02684ed3
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

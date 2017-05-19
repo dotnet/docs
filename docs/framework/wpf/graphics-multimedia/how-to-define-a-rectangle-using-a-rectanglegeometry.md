@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "rectangles, creating with RectangleGeometry class"
   - "RectangleGeometry class"
 ms.assetid: e40b8a8e-54b8-416b-a9f2-be6dca9fdf0b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

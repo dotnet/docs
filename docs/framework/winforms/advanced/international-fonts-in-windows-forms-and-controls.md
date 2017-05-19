@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "font fallback in Windows Forms"
   - "globalization [Windows Forms], character sets"
 ms.assetid: 2c3066df-9bac-479a-82b2-79e484b346a3
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

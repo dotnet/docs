@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "-alignment compiler option [C#]"
   - "section alignment [C#]"
 ms.assetid: 15cf1c98-3798-4ced-9f08-60619308a073
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

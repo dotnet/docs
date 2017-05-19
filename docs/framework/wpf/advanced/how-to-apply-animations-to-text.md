@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "typography, animations"
   - "animation, text"
 ms.assetid: eec3d26c-0a21-420f-8012-671621c47089
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

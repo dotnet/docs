@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "types [C#], value types"
   - "types [C#], suffixes"
 ms.assetid: 67d8f631-b6e3-4d83-9910-5ec497f8c5f3
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "methods [C#], passing parameters"
   - "C# language, method parameters"
 ms.assetid: a5c3003f-7441-4710-b8b1-c79de77e0b77
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

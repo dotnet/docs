@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "tabs, adding to pages"
   - "tab pages"
 ms.assetid: 66d4dfca-41e8-44e3-9c80-fb7ac4cb1619
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

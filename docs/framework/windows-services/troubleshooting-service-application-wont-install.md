@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "troubleshooting NT services"
   - "Windows Service applications, troubleshooting"
 ms.assetid: 45c48e2e-b97d-44bc-8896-14f328e0ce33
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "ghogen"
 ms.author: "ghogen"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataTables::GetRow method [.NET Framework metadata]"
   - "GetRow method [.NET Framework metadata]"
 ms.assetid: a7408d51-0bce-45a2-b58f-da4660bbc039
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 16

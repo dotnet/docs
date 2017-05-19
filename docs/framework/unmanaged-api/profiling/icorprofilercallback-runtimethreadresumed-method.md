@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::RuntimeThreadResumed method [.NET Framework profiling]"
   - "RuntimeThreadResumed method [.NET Framework profiling]"
 ms.assetid: da984f89-4f53-4ab0-ae6f-3e2ee6085994
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

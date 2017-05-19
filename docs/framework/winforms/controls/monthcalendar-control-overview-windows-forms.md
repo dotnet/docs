@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "calendar controls, Windows Forms"
   - "MonthCalendar control [Windows Forms], setting the first day of the week"
 ms.assetid: 788c5325-b721-44ec-95bf-9b680ba0f6a2
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

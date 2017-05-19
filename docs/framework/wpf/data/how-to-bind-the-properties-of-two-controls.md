@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "binding properties of two controls"
   - "controls, binding properties of"
 ms.assetid: 06318fac-6afd-4c7d-a277-6d7ef50f47bc
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

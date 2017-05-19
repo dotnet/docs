@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "Timer component [Windows Forms], initializing"
   - "procedures, specific time intervals"
 ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

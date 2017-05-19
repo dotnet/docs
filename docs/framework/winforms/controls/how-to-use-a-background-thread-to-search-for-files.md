@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "threading [Windows Forms], custom controls"
   - "custom controls [Windows Forms], samples"
 ms.assetid: 7fe3956f-5b8f-4f78-8aae-c9eb0b28f13a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

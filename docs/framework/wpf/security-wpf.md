@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "XBAP security [WPF]"
   - "Internet Explorer security settings [WPF]"
 ms.assetid: ee1baea0-3611-4e36-9ad6-fcd5205376fb
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 38
 author: dotnet-bot
 ms.author: dotnetcontent

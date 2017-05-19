@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "My.Computer object"
 ms.assetid: cc814d79-6f7f-4e54-8b9d-5ecfdd77a0b8
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

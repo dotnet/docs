@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<cryptoClasses> element"
   - "cryptoClasses element"
 ms.assetid: 290d5f96-946d-4f02-babb-1d31ec0b8295
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "COM interop, data marshaling"
   - "marshaling data, COM interop"
 ms.assetid: 0bcdd7bf-5026-43eb-b08b-f03f90db9df9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

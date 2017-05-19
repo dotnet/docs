@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "operators [Visual Basic], conjunction"
   - "short-circuit evaluation"
 ms.assetid: bbc15191-b374-495b-9b8f-7b8c2f4388eb
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

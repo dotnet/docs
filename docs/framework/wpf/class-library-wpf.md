@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "class library"
   - "Windows Presentation Foundation class library"
 ms.assetid: dcb35927-00ad-4141-a1ab-a7a524dd3f10
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

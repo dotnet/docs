@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread2::GetConnectionID method [.NET Framework debugging]"
   - "GetConnectionID method [.NET Framework debugging]"
 ms.assetid: 9c76b587-f941-4fa1-8b86-f3494fb10c8e
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

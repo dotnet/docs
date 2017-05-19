@@ -13,6 +13,8 @@ dev_langs:
 helpviewer_keywords: 
   - "enum keyword [C#]"
 ms.assetid: bbeb9a0f-e9b3-41ab-b0a6-c41b1a08974c
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 36
 author: "BillWagner"
 ms.author: "wiwagn"

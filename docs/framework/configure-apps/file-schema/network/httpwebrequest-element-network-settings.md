@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<httpWebRequest> element"
   - "httpWebRequest element"
 ms.assetid: 52acd9d2-5bdc-4dc4-9c2a-f0a476ccbb31
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "mcleblanc"
 ms.author: "markl"

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "converting numeric user input to number"
   - "numbers [.NET Framework], converting numeric user input to number"
 ms.assetid: f27ddfb8-7479-4b79-8879-02a3bd8402d4
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

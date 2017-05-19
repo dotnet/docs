@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "AddressOf operator"
   - "addresses, passing to API procedures"
 ms.assetid: 8105a59d-60d8-4ab5-b221-5899cdfacbf4
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

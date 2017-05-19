@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], programming"
   - "programming assemblies"
 ms.assetid: 25918b15-701d-42c7-95fc-c290d08648d6
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

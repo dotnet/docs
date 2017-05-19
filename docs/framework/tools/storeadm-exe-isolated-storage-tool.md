@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "stores, current user"
   - "removing stores"
 ms.assetid: b81202b8-d91d-4b23-9c53-4a112f74a44a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

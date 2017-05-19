@@ -12,6 +12,8 @@ dev_langs:
 helpviewer_keywords: 
   - "#define directive [C#]"
 ms.assetid: 23638b8f-779c-450e-b600-d55682de7d01
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

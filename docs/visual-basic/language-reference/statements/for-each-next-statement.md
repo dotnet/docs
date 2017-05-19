@@ -32,6 +32,8 @@ helpviewer_keywords:
   - "Exit statement, For Each...Next statements"
   - "iteration"
 ms.assetid: ebce3120-95c3-42b1-b70b-fa7da40c75e2
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 56
 author: dotnet-bot
 ms.author: dotnetcontent

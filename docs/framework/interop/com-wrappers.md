@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, COM wrappers"
   - "COM callable wrappers"
 ms.assetid: e56c485b-6b67-4345-8e66-fd21835a6092
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

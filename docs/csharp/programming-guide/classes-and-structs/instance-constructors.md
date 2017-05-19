@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "constructors [C#], instance constructors"
   - "instance constructors [C#]"
 ms.assetid: 24663779-c1e5-4af4-a942-ca554e4c542d
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

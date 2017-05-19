@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, how to use execution mode"
 ms.assetid: e52ff26c-c5d3-4fab-9fec-c937fb387963
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

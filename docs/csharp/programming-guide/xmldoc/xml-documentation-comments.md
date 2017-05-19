@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "C# language, XML code comments"
   - "XML documentation comments [C#]"
 ms.assetid: 803b7f7b-7428-4725-b5db-9a6cff273199
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

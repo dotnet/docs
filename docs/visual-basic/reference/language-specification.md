@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Visual Basic code, specifications"
   - "specifications, Visual Basic"
 ms.assetid: 42c30017-19d0-442e-87a2-850b66ddc3df
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

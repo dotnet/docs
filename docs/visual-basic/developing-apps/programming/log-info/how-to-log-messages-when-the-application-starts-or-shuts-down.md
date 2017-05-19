@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "Shutdown event"
   - "My.Log object, logging"
 ms.assetid: 67624d05-cddf-48b7-8c36-5c99baa4c621
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostIoCompletionManager::CloseIoCompletionPort method [.NET Framework hosting]"
   - "CloseIoCompletionPort method [.NET Framework hosting]"
 ms.assetid: e86ad7be-3758-498a-a972-5522d69dfbb3
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

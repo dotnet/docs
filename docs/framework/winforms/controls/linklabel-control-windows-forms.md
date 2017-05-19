@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Web page link control"
   - "LinkLabel control [Windows Forms]"
 ms.assetid: af1fd04e-e126-4fd7-9a4e-13b49010c5ca
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

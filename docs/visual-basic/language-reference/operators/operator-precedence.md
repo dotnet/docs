@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "math operators"
   - "order of precedence"
 ms.assetid: cbbdb282-f572-458e-a520-008a675f8063
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

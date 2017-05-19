@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "GAC (global assembly cache), publisher policy assembly"
   - "global assembly cache, publisher policy assembly"
 ms.assetid: 8046bc5d-2fa9-4277-8a5e-6dcc96c281d9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"

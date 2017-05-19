@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit2::GetDeltaSaveSize method [.NET Framework metadata]"
   - "GetDeltaSaveSize method [.NET Framework metadata]"
 ms.assetid: 036db5e7-8211-4645-9a34-03d1a89be955
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

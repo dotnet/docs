@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetTypeForTypeID method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::GetTypeForTypeID method [.NET Framework debugging]"
 ms.assetid: e0eed5a8-fa6d-4818-bd00-7babcea30325
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

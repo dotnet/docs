@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, pitfalls"
 ms.assetid: 75a38b55-4bc4-488a-87d5-89dbdbdc76a2
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

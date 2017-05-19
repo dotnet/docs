@@ -13,6 +13,8 @@ dev_langs:
 helpviewer_keywords: 
   - "readonly keyword [C#]"
 ms.assetid: 2f8081f6-0de2-4903-898d-99696c48d2f4
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

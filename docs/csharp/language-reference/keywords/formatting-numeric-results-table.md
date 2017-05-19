@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "String.Format method"
   - "Console.Write method"
 ms.assetid: 120ba537-4448-4c62-8676-7a8fdd98f496
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

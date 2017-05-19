@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrNetwork_UploadAddressNeedsFilename"
 ms.assetid: 0ee11749-0432-4ccb-8c08-1663a4a55ad0
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

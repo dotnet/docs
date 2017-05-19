@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "transformations, global"
   - "transformations, local"
 ms.assetid: b601d66d-d572-4f11-9d2e-92f0dc8893f3
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

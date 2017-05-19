@@ -10,6 +10,8 @@ dev_langs:
 helpviewer_keywords: 
   - "statements [C#], selection"
 ms.assetid: cf21cfa2-34fb-48b0-9cbc-8bb4537a9a05
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

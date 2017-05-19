@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "cryptography [NET Framework], cryptographic application example"
   - "cryptography [NET Framework], application example"
 ms.assetid: abf48c11-1e72-431d-9562-39cf23e1a8ff
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

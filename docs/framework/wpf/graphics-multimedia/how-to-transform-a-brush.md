@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "brushes, Transform property"
   - "rotating contents of Brushes"
 ms.assetid: ebada2f9-f01f-4863-9ea2-c2e4e51610f1
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

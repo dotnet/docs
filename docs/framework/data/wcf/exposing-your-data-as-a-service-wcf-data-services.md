@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "getting started, WCF Data Services"
   - "WCF Data Services, getting started"
 ms.assetid: df0bbcee-f66f-4a88-abb4-4e73c8b9c908
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

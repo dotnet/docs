@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "await keyword [C#]"
   - "await [C#]"
 ms.assetid: 50725c24-ac76-4ca7-bca1-dd57642ffedb
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 36
 author: "BillWagner"
 ms.author: "wiwagn"

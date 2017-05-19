@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "regular expressions [.NET Framework], examples"
   - "pattern-matching with regular expressions, examples"
 ms.assetid: fae2c15b-7adf-4b15-b118-58eb3906994f
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"

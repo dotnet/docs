@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "Narrowing keyword"
   - "data type conversion"
 ms.assetid: a207ee91-aca4-4771-b4e2-713f029bf2bb
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

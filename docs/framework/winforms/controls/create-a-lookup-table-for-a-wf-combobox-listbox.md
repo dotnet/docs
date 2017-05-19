@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "combo boxes, lookup tables"
   - "ListBox control [Windows Forms], creating lookup tables"
 ms.assetid: 4ce35f12-1f4e-4317-92d1-af8686a8cfaa
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

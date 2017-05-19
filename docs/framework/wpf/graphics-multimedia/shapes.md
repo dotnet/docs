@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "stretchable Shapes"
   - "Shape objects"
 ms.assetid: 893253b8-c2df-4f22-961d-cbc533d64c79
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 52
 author: dotnet-bot
 ms.author: dotnetcontent

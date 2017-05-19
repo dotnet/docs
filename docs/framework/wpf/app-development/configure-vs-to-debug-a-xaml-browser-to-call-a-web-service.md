@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "configuring Visual Studio to debug XAML browser applications [WPF]"
   - "configuring Visual Studio to debug XBAPs [WPF]"
 ms.assetid: fd1db082-a7bb-4c4b-9331-6ad74a0682d0
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

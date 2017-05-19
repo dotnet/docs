@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "decision structures"
   - "conditional statements, decision structures"
 ms.assetid: 2e2e0895-4483-442a-b17c-26aead751ec2
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

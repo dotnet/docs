@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "64-bit applications [C++]"
   - "64-bit programming [C++]"
 ms.assetid: fd4026bc-2c3d-4b27-86dc-ec5e96018181
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 53
 author: "rpetrusha"
 ms.author: "ronpet"

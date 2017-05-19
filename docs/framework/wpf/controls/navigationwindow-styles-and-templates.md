@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "styles [WPF], NavigationWindow"
   - "templates [WPF], NavigationWindow"
 ms.assetid: 3656055e-3222-43c8-b868-fd0c90cc31a3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

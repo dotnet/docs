@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "service behaviors, throttling sample"
   - "Throttling Sample [Windows Communication Foundation]"
 ms.assetid: 40bb3582-8ae9-4410-96f0-6c515bfaf47c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"

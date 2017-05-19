@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Form, printing"
 ms.assetid: df963bf6-3ee1-49f4-8b2e-1d95d1beb0be
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

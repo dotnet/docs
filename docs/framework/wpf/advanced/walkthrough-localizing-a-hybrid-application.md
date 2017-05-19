@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "localization [WPF interoperability]"
   - "hybrid applications [WPF interoperability]"
 ms.assetid: fbc0c54e-930a-4c13-8e9c-27b83665010a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

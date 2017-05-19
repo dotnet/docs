@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "Seek function"
   - "FileOpen function"
 ms.assetid: 4c145456-5453-4bda-aab5-578dc8bee59a
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

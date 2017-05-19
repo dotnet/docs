@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "ToString method, overriding in C#"
   - "inheritance [C#], overriding OnPaint and ToString"
 ms.assetid: 8016db69-1f19-420c-8e17-98e8bebb7749
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

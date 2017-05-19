@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "thread-safe collections, blocking collections in pipeline"
 ms.assetid: a39c7ec3-3ad7-4f4d-8fe4-b3e9dbabe2ed
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

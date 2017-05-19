@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "split windows, horizontal"
   - "windows, splitting horizontally"
 ms.assetid: 3872a176-891f-4c70-9779-b2ce85b0b102
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

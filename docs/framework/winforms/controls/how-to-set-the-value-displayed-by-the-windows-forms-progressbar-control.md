@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "ProgressBar control [Windows Forms], setting value displayed"
   - "progress controls, setting value displayed"
 ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

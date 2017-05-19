@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "comments"
   - "code comments"
 ms.assetid: 90136fba-22eb-49f9-ba81-63db629b4a47
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

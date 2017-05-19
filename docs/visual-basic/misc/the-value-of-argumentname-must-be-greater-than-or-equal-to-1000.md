@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLogNumberTooSmall"
 ms.assetid: 81aed143-1abb-41c2-9922-8e83711100e3
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

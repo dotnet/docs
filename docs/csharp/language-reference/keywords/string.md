@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "string literals [C#]"
   - "string keyword [C#]"
 ms.assetid: 3037e558-fb22-494d-bca1-a15ade11b11a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"

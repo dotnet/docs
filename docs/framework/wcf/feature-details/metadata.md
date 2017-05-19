@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "metadata [WCF]"
 ms.assetid: 66a61bd0-18d3-4e7e-bf8b-177a10ac2f60
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"

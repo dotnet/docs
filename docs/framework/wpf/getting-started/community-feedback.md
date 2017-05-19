@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "Product Feedback Center"
   - "bug descriptions"
 ms.assetid: 468b060a-d54b-4900-a74a-9faccb554045
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

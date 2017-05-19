@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Windows Forms controls, NumericUpDown"
   - "NumericUpDown control [Windows Forms], setting and returning values"
 ms.assetid: 5bd8f8cd-4c12-49ea-9cc3-2a647d064689
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

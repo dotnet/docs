@@ -10,6 +10,8 @@ dev_langs:
 helpviewer_keywords: 
   - "keywords [C#], exception handling"
 ms.assetid: 6d0323a3-3164-411c-9b84-a3606bd0e13c
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

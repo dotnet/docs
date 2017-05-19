@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "security [.NET Framework], assemblies"
   - "integrity with assemblies"
 ms.assetid: 1b5439c1-f3d5-4529-bd69-01814703d067
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

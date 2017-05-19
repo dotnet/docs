@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "BlockingCollection, overview"
 ms.assetid: 987ea3d7-0ad5-4238-8b64-331ce4eb3f0b
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

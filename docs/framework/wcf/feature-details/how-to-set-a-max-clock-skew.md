@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "MaxClockSkew property"
   - "WCF, custom bindings"
 ms.assetid: 491d1705-eb29-43c2-a44c-c0cf996f74eb
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"

@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "Unicode keyword"
   - "Unicode, marshaling strings"
 ms.assetid: 0021d5ff-3209-444e-8497-420f3e6ee075
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

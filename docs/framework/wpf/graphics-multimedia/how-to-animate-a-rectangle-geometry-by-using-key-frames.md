@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "RectangleGeometry objects, animating with key frames"
   - "animation, RectangleGeometry objects with key frames"
 ms.assetid: a8b45ceb-0e32-4ba1-928f-df6d30db17c6
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

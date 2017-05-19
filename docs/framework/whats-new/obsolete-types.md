@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "types, obsolete in .NET Framework 4.5"
   - "obsolete types [.NET Framework]"
 ms.assetid: e636d024-0fac-45eb-b721-25a8c0ceca8f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 41
 author: "rpetrusha"
 ms.author: "ronpet"

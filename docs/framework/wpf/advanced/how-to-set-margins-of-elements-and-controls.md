@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "properties, Margin property"
   - "Margin property, setting"
 ms.assetid: 70ebee01-6f87-4352-8dd4-402c65eaaed6
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

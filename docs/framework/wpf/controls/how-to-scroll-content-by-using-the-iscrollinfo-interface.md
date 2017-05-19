@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "scrolling content"
   - "IScrollInfo interface"
 ms.assetid: d8700bef-a3f8-4c12-9de2-fc3b79f32cd3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

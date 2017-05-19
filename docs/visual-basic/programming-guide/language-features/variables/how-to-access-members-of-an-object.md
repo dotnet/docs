@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "members, accessing"
   - "object variables, accessing members"
 ms.assetid: a0072514-6a79-4dd6-8d03-ca8c13e61ddc
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

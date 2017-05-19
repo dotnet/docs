@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "arguments [Visual Basic], optional"
   - "optional arguments, and named arguments"
 ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], customizing cells"
   - "cells, customizing in DataGridView control"
 ms.assetid: 478b20c9-625c-4116-9c5c-5a16e6f4ec67
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "-lib compiler option [C#]"
   - "/lib compiler option [C#]"
 ms.assetid: b0efcc88-e8aa-4df4-a00b-8bdef70b7673
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

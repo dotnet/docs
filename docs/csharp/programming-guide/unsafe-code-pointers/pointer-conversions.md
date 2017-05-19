@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "pointers [C#], conversions"
 ms.assetid: f0e87502-477a-4ede-a31f-7a3e262e46fb
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

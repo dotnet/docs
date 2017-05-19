@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "custom log listeners"
   - "My.Application.Log object, custom log listeners"
 ms.assetid: 0e019115-4b25-4820-afb1-af8c6e391698
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

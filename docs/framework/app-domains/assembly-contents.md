@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "single-file assemblies"
   - "multifile assemblies"
 ms.assetid: 28116714-da77-45f7-826d-fa035d121948
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

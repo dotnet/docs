@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "TypeOf...Is expression"
   - "Is operator [Visual Basic]"
 ms.assetid: 8045a6c8-2a83-45b6-ad47-d09a704c656d
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

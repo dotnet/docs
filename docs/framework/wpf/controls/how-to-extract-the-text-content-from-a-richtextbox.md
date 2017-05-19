@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "content, extracting"
   - "extracting text content"
 ms.assetid: f13c093f-1a05-45b3-ac8f-c9ea5e4a11c5
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

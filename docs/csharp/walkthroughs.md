@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "walkthroughs [Visual Studio], Visual C#"
   - "Visual C#, walkthroughs"
 ms.assetid: 2d07b972-ef69-4676-9aef-e1784728e1ff
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "Windows Forms, control licenses"
   - "licensed controls [Windows Forms]"
 ms.assetid: 2de803b8-495e-4982-b209-19a72aba0460
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

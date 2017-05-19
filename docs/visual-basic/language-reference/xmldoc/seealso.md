@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "<seealso> XML tag"
   - "seealso XML tag"
 ms.assetid: 36050c95-1af2-4284-b9b6-1a70691ed978
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

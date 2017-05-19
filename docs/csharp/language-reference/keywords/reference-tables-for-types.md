@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "types [C#], reference tables"
   - "C# language, data types"
 ms.assetid: 1d2b6a9b-31fd-4fa6-a7b2-bfd9c806ac8a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"

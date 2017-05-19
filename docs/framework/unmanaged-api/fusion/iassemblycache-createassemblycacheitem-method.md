@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IAssemblyCache::CreateAssemblyCacheItem method [.NET Framework fusion]"
   - "CreateAssemblyCacheItem method [.NET Framework fusion]"
 ms.assetid: 017a7ba5-aaaf-44e2-9cbe-ceebef259df0
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

@@ -18,6 +18,8 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: d60f19fe-7bec-47ba-b60e-ba9ce66abf8c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

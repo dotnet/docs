@@ -31,6 +31,8 @@ helpviewer_keywords:
   - "Visual Basic code, line continuation in"
   - "statements [Visual Basic], line breaks in"
 ms.assetid: dea01dad-a8ac-484a-bb3a-8c45a1b1eccc
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

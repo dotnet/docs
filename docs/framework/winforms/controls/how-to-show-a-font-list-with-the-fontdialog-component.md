@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "Font dialog box, displaying"
   - "fonts, selecting"
 ms.assetid: 35692c1b-0937-4b7a-9207-1ae6bdc244a0
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

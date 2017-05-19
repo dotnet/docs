@@ -13,6 +13,8 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: a7fc4146-ee2c-444c-82d4-ef6faffccc2d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 30
 author: "Erikre"
 ms.author: "erikre"

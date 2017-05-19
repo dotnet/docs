@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "error messages, displaying"
   - "ErrorProvider component [Windows Forms], about ErrorProvider component"
 ms.assetid: ced189f2-b5c8-46a7-a6f1-37f5af95dc99
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

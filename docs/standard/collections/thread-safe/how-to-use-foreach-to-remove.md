@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "thread-safe collections, how to enumerate blocking collectoin"
 ms.assetid: 2096103c-22f7-420d-b631-f102bc33a6dd
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Reset method, IHostManualEvent interface [.NET Framework hosting]"
   - "IHostManualEvent::Reset method [.NET Framework hosting]"
 ms.assetid: 0d101168-b5e3-49ce-90c7-85cf2db83c4c
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

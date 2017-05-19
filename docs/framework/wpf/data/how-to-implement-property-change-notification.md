@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "change notifications"
   - "properties, change notifications"
 ms.assetid: 30b59d9e-8c3a-4349-aa82-4be837e841cf
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], pens"
   - "drawing"
 ms.assetid: 8a7542ab-3e9e-443f-8405-2d6053528e20
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

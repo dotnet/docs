@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "message contracts [WCF]"
 ms.assetid: 1e19c64a-ae84-4c2f-9155-91c54a77c249
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 46
 author: "Erikre"
 ms.author: "erikre"

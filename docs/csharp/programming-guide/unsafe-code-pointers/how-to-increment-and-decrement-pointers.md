@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "pointers [C#], increment and decrement"
   - "pointer expressions [C#], increment and decrement"
 ms.assetid: 1b8b9281-44ee-485a-9045-3db38a4b4b89
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

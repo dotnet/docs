@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "TitleBackColor property"
   - "MonthCalendar control [Windows Forms], formatting display"
 ms.assetid: d09b95c9-e108-4608-9b31-b9100c0677bf
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

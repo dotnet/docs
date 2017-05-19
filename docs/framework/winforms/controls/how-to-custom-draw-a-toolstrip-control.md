@@ -28,6 +28,8 @@ helpviewer_keywords:
   - "owner drawing"
   - "ToolStripSystemRenderer class"
 ms.assetid: 94e7d7bd-a752-441c-b5b3-7acf98881163
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

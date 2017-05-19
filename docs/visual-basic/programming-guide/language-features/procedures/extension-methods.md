@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "extending data types"
   - "extension methods [Visual Basic]"
 ms.assetid: b8020aae-374d-46a9-bcb7-8cc2390b93b6
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 41
 author: dotnet-bot
 ms.author: dotnetcontent

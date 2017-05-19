@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "WrapPanel control [WPF]"
   - "content [WPF], sequentially positioning"
 ms.assetid: f0acb1b4-df71-4c5a-b4a4-98f189002537
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 63
 author: dotnet-bot
 ms.author: dotnetcontent

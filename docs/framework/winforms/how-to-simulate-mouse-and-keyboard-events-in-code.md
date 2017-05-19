@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "mouse clicks, simulating"
   - "mouse, event simulation"
 ms.assetid: 6abcb67e-3766-4af2-9590-bf5dabd17e41
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

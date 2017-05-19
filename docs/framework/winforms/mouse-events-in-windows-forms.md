@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "mouse, events"
   - "MouseUp event"
 ms.assetid: 8cf0070d-793b-4876-b09e-d20d28280fab
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

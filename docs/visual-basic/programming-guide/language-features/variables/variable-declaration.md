@@ -27,6 +27,8 @@ helpviewer_keywords:
   - "local variables, declarations"
   - "scope, variables"
 ms.assetid: d8f10226-92b1-480f-9f53-df377b2d7e15
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent

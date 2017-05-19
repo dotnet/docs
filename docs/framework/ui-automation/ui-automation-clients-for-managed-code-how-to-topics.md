@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "UI Automation, clients for managed code"
   - "managed code, UI Automation clients"
 ms.assetid: 665b01b5-25f5-47a1-ab11-cffe8ebbf2a7
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 58
 author: "Xansky"
 ms.author: "mhopkins"

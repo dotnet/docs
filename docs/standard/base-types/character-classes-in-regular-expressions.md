@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "characters, matching syntax"
   - ".NET Framework regular expressions, character classes"
 ms.assetid: 0f8bffab-ee0d-4e0e-9a96-2b4a252bb7e4
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 58
 author: "rpetrusha"
 ms.author: "ronpet"

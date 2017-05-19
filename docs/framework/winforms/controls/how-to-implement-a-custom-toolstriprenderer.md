@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "ToolStripRenderer class"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: c66fd3f7-2377-4553-8f1b-006527f08f32
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

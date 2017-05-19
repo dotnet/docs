@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls, Image"
   - "Image control"
 ms.assetid: e6e51cf9-8fa1-457e-856b-a5e513bc5caf
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 61
 author: dotnet-bot
 ms.author: dotnetcontent

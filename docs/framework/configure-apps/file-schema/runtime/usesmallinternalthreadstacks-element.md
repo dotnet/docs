@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "UseSmallInternalThreadStacks element"
   - "<UseSmallInternalThreadStacks> element"
 ms.assetid: 1e3f6ec0-1cac-4e1c-9c81-17d948ae5874
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

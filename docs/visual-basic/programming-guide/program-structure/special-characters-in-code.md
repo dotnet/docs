@@ -40,6 +40,8 @@ helpviewer_keywords:
   - "exclamation point operator (!)"
   - "Visual Basic code, special characters"
 ms.assetid: 310dce0c-45b5-4e0d-83e9-32df258d2a3e
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

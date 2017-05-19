@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "best practices, DataGridView control"
   - "DataGridView control [Windows Forms], scaling"
 ms.assetid: 8321a8a6-6340-4fd1-b475-fa090b905aaf
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent

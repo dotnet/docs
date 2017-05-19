@@ -18,6 +18,8 @@ dev_langs:
 helpviewer_keywords: 
   - "AddHandler statement"
 ms.assetid: cfe69799-2a0f-42c0-a99e-09fed954da01
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "ink, rotating"
   - "rotating ink"
 ms.assetid: fac36cc9-dd01-41ca-9bde-9d33e3790bbe
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

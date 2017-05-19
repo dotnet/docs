@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "certificates [WCF], viewing with the MMC snap-in"
 ms.assetid: 2b8782aa-ebb4-4ee7-974b-90299e356dc5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"

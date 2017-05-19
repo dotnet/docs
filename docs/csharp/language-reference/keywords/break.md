@@ -13,6 +13,8 @@ dev_langs:
 helpviewer_keywords: 
   - "break keyword [C#]"
 ms.assetid: be2571ed-efb0-4965-b122-81e5b09db0b9
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedDispose interface [.NET Framework debugging]"
 ms.assetid: b1d74e83-a200-4d00-8fbd-27918808616d
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "C# language, generic interfaces"
   - "generics [C#], interfaces"
 ms.assetid: a8fa49a1-6e78-4a09-87e5-84a0b9f5ffbe
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

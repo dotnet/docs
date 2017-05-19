@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "include XML tag"
   - "<include> XML tag"
 ms.assetid: ba8e9173-82cd-460b-8938-a075a2dfb36d
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedDocument::GetCheckSum method [.NET Framework debugging]"
   - "GetCheckSum method [.NET Framework debugging]"
 ms.assetid: 9bc881b3-e2ce-48a7-ad69-17eaaa304120
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

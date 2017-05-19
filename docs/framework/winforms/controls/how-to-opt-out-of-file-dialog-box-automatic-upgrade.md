@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "SaveFileDialog [Windows Forms], opt out of automatic upgrade"
   - "AutoUpgradeEnabled property"
 ms.assetid: 522e482e-cc01-48b1-8d59-9617dc2c4ac1
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

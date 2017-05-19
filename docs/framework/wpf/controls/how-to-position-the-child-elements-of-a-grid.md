@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Grid control, positioning child elements"
 ms.assetid: 27b3ba9b-ad32-44e2-bcab-a79d573a463c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

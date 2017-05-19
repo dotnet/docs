@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "list items, Windows Forms controls that display"
   - "TreeView control [Windows Forms]"
 ms.assetid: 879438b4-4eac-45c6-b345-0229c9b21ab0
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

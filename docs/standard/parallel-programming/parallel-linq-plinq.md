@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ, overview"
 ms.assetid: 3d4d0cd3-bde4-490b-99e7-f4e41be96455
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

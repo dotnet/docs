@@ -28,6 +28,8 @@ helpviewer_keywords:
   - "binary resources files"
   - "embedding files in runtime binary executable"
 ms.assetid: 8ef159de-b660-4bec-9213-c3fbc4d1c6f4
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 46
 author: "rpetrusha"
 ms.author: "ronpet"

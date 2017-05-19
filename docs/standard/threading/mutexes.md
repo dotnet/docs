@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Mutex class, about Mutex class"
   - "threading [.NET Framework], cross-process synchronization"
 ms.assetid: 9dd06e25-12c0-4a9e-855a-452dc83803e2
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

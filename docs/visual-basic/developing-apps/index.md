@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Visual Basic, developing applications"
   - "applications [Visual Basic]"
 ms.assetid: 1e1c0c81-6d95-4167-a98b-44b1efb6d25f
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

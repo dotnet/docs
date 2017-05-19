@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "conversions [C#], legacy to unicode encoding"
   - "strings [C#], converting between encodings"
 ms.assetid: 4eed7d8e-47ab-4a7c-8b95-9645a0ef000b
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

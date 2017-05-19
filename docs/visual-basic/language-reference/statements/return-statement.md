@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "Return statement"
   - "expressions [Visual Basic], returning control to"
 ms.assetid: ac86e7f0-5a67-42c3-9834-0e0381efa3ec
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

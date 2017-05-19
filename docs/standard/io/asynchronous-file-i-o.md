@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "multiple I/O requests"
   - "data streams, synchronous streams"
 ms.assetid: dbdd55e7-d6b9-4f9e-8abb-ab0edd4457f7
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "parent forms"
   - "MDI, creating forms"
 ms.assetid: 12c71221-2377-4bb6-b10b-7b4b300fd462
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

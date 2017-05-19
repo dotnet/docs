@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "colors, adding to shapes"
   - "shapes, filling"
 ms.assetid: 06088b31-bac9-4ef3-9ebe-06c2c764d6df
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

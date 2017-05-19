@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "CoreDebugRuntimeInfo structure"
   - "Silverlight, remote debugging"
 ms.assetid: bd01c30f-b7a8-4179-9497-622b6599b1a6
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

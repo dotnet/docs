@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "data [Windows Forms], sorting"
   - "ADO.NET [Windows Forms]"
 ms.assetid: 6c206daf-d706-4602-9dbe-435343052063
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

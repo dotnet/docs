@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "lines, drawing"
   - "drawing lines"
 ms.assetid: 55c1dbeb-75d0-430c-9814-a24b8971ad8c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

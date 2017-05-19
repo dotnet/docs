@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "service behaviors, metadata publishing sample"
   - "Metadata Publishing Behaviors Sample [Windows Communication Foundation]"
 ms.assetid: 78c13633-d026-4814-910e-1c801cffdac7
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 23
 author: "Erikre"
 ms.author: "erikre"

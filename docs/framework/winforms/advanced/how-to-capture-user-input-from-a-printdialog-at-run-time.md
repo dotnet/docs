@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "print options"
   - "run time, changing print options"
 ms.assetid: 438501d8-9a70-4fb3-aae6-e46579aba0c6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Visual Basic, samples"
   - "sample applications [Visual Basic]"
 ms.assetid: 09c6bc12-25fd-4359-a5fc-8dab8dddbfd2
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 40
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "shapes, filling"
   - "brushes"
 ms.assetid: bf8f7fff-5a90-41e8-9051-494449fb2844
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

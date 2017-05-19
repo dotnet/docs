@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "forms. Help (using designer)"
   - "Windows applications, Help (using designer)"
 ms.assetid: a8563d25-8a75-4bc7-a024-f1870591b50f
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

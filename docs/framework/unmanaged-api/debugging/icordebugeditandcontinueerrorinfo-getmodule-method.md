@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetModule method, ICorDebugEditAndContinueErrorInfo interface [.NET Framework debugging]"
   - "ICorDebugEditAndContinueErrorInfo::GetModule method [.NET Framework debugging]"
 ms.assetid: 292f1255-5dfd-427f-844e-781d4b938f9a
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

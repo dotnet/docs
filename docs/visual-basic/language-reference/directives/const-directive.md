@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "Const statement [Visual Basic], directive (#Const)"
   - "declaring constants, #const directive"
 ms.assetid: 707669e5-23f9-4f17-8622-a0d534429386
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

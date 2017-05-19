@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Tracing and logging"
 ms.assetid: a4f39bfc-3c5e-4d51-a312-71c5c3ce0afd
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 53
 author: "Erikre"
 ms.author: "erikre"

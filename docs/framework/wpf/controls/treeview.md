@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "controls [WPF], TreeView"
   - "hierarchical structure [WPF], TreeView control"
 ms.assetid: 805c235c-0a0e-4e34-8d96-9dc3865cf2df
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent

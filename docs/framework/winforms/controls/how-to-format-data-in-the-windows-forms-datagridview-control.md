@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "data grids, date values"
   - "cells, text alignment"
 ms.assetid: 8c33543c-9c08-4636-a65a-fdf714a529b7
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

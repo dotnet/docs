@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "primary interop assemblies,not necessary in CLR version 4"
   - "NoPIA"
 ms.assetid: 78892eba-2a58-4165-b4b1-0250ee2f41dc
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

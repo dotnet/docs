@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "access keys, Windows Forms"
   - "ALT key"
 ms.assetid: 4c374c4c-4ca9-4a68-ac96-9dc3ab0f518a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "data grids, customization"
   - "DataGridView control [Windows Forms], customization"
 ms.assetid: 01ea5d4c-a736-4596-b0e9-a67a1b86e15f
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

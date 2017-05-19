@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "documents, changing TextWrapping property programmatically"
   - "TextWrapping property, changing programmatically"
 ms.assetid: 30d25554-4c82-4df9-a8d6-35683a4a13bb
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

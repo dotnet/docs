@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, getting control patterns"
   - "getting, control patterns"
 ms.assetid: 006c54c9-50bf-48d9-a855-9d62eb95603a
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 10
 author: "Xansky"
 ms.author: "mhopkins"

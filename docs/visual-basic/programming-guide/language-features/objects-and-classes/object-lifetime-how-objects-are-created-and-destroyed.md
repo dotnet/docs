@@ -32,6 +32,8 @@ helpviewer_keywords:
   - "Sub Dispose destructor"
   - "garbage collection, Visual Basic"
 ms.assetid: f1ee8458-b156-44e0-9a8a-5dd171648cd8
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

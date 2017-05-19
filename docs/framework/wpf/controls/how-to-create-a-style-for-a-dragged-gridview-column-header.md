@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "ListView controls, styling"
 ms.assetid: 0b999645-0313-4b33-80b9-19ece08b5459
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

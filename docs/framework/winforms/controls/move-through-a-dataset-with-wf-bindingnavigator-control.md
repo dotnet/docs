@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "BindingNavigator control [Windows Forms], moving through datasets"
   - "examples [Windows Forms], BindingNavigator control"
 ms.assetid: 146d97be-3d97-400e-accb-860bbf47729d
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

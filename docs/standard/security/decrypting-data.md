@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "asymmetric decryption"
   - "decryption"
 ms.assetid: 9b266b6c-a9b2-4d20-afd8-b3a0d8fd48a0
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

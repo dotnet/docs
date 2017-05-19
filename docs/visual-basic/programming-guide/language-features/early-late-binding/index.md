@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "late binding"
   - "late binding, Visual Basic compiler"
 ms.assetid: d6ff7f1e-b94f-4205-ab8d-5cfa91758724
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

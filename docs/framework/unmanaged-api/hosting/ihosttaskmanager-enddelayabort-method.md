@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EndDelayAbort method [.NET Framework hosting]"
   - "IHostTaskManager::EndDelayAbort method [.NET Framework hosting]"
 ms.assetid: 6e02facb-2504-4356-9af5-0cee1f8436a7
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

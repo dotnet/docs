@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "GetCustomUI method"
   - "custom error messages [WPF]"
 ms.assetid: e55180fc-35bb-4f80-a136-772b5eb3e4e5
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

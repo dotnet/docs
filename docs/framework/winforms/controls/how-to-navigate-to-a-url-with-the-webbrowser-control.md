@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "WebBrowser control [Windows Forms], navigating to URLs"
   - "examples [Windows Forms], WebBrowser control"
 ms.assetid: b3ec38cb-f509-4d0b-bd79-9f3611259c62
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

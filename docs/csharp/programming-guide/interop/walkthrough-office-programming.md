@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Office programming [C#]"
   - "Office programming [Visual Basic]"
 ms.assetid: 519cff31-f80b-4f0e-a56b-26358d0f8c51
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 46
 author: "BillWagner"
 ms.author: "wiwagn"

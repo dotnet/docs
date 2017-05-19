@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "XAML [XAML Services], type converter services how-to"
 ms.assetid: b4dad00f-03da-4579-a4e9-d8d72d2ccbce
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: "wadepickett"
 ms.author: "wpickett"

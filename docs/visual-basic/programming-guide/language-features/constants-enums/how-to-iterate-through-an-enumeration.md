@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "enumerations [Visual Basic], iterating"
   - "ListBox control [Windows Forms], populating from an enumeration"
 ms.assetid: e5aa10eb-cfcd-4a3b-8e76-f06b8f2002be
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

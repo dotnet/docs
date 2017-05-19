@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "data formats"
   - "data [Windows Forms], setting formats"
 ms.assetid: fc6da49f-8942-41da-b49f-b2afc38cc656
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "StatusBar control [Windows Forms], refreshing panels"
   - "panels, refreshing status bar"
 ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

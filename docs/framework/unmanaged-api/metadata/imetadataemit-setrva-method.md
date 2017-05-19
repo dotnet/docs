@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::SetRVA method [.NET Framework metadata]"
   - "SetRVA method [.NET Framework metadata]"
 ms.assetid: 4d69fb6d-ee35-4318-8224-5eea2bd16818
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

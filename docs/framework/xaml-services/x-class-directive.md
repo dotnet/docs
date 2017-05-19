@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "XAML [XAML Services], x:Class attribute"
   - "x:Class attribute [XAML Services]"
 ms.assetid: bc4a3d8e-76e2-423e-a5d1-159a023e82ec
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 27
 author: "wadepickett"
 ms.author: "wpickett"

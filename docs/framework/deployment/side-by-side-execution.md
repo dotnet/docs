@@ -17,6 +17,8 @@ dev_langs:
 helpviewer_keywords: 
   - "side-by-side execution"
 ms.assetid: 649f1342-766b-49e6-a90d-5b019a751e11
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

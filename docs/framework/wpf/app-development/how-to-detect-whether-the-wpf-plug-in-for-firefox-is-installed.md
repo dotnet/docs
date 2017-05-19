@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Firefox [WPF], detecting installation"
   - "detecting whether the WPF plug-in for Firefox is installed [WPF]"
 ms.assetid: 5f839373-e3fb-44f1-88ad-4a0761f02189
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

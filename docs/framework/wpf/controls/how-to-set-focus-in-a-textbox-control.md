@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "focus, setting"
   - "TextBox control, setting focus"
 ms.assetid: 24b61b45-dc2d-425e-9839-b017af7ab86f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

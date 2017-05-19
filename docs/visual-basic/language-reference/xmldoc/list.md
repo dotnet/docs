@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "item XML tag"
   - "<term> XML tag"
 ms.assetid: ec35fced-d58e-4520-a764-0691256e014b
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

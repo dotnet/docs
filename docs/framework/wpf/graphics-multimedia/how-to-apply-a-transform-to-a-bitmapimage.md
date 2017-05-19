@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "bitmap images"
   - "Transforms"
 ms.assetid: 5c042f8d-d569-45e4-ab32-868b89759bf2
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

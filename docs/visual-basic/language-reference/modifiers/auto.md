@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "Auto keyword"
   - "Auto keyword, marshaling strings"
 ms.assetid: bf79ba95-a62c-48a5-916f-0ac7a52c13ec
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

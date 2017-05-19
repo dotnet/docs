@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "arrays [.NET Framework], culture-insensitive string operations"
   - "comparer parameter"
 ms.assetid: f12922e1-6234-4165-8896-63f0653ab478
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

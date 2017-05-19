@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "== operator [C#]"
   - "equality operator [C#]"
 ms.assetid: 34c6b597-caa2-4855-a7cd-38ecdd11bd07
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

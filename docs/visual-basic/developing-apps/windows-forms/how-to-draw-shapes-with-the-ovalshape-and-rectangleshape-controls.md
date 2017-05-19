@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "shapes, drawing"
   - "RectangleShape control"
 ms.assetid: 0275b4c6-7a13-46c8-90f3-61db308c6b5d
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

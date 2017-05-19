@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "strings [C#], converting hexadecimal strings"
   - "hexadecimal strings [C#]"
 ms.assetid: 7115c49f-7d1d-40c3-8bd9-aae0cc1d46b6
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

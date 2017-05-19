@@ -39,6 +39,8 @@ helpviewer_keywords:
   - "Dim statement, syntax"
   - "variables [Visual Basic], member and local"
 ms.assetid: fae3eca1-f0b2-4400-994b-7aa58a848448
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 72
 author: dotnet-bot
 ms.author: dotnetcontent

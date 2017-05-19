@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "dates [Visual Basic]"
   - "String data type, converting"
 ms.assetid: 3aa744e7-1419-45d5-85e3-e5abc2953673
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

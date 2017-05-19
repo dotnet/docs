@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Point objects, transforming"
   - "graphics, transforming Point objects"
 ms.assetid: 9fff2742-9162-46be-bc88-310fc3900af4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

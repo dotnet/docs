@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "clauses [Visual Basic]"
 ms.assetid: 5e89f5f3-d129-4ed1-8857-30cd71cff95e
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "run-time errors, codes"
   - "errors [Visual Basic], simulating"
 ms.assetid: 85cd5c59-5224-4f02-aaf5-fcfefab17a29
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms]"
   - "MDI forms, creating"
 ms.assetid: d198ef8e-f7c4-4b3f-a7f5-ce858cb90cec
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

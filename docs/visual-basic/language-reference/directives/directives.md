@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Visual Basic code, directives"
   - "directives"
 ms.assetid: 20d5fe65-490a-4c23-88c2-ee4f490ed762
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

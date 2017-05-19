@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Visual Basic code, properties"
   - "properties [Visual Basic], values"
 ms.assetid: c39401e5-b5fc-4439-8f31-ed640f7ce6ed
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

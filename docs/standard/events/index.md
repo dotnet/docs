@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "application development [.NET Framework], events"
   - "events [.NET Framework]"
 ms.assetid: b6f65241-e0ad-4590-a99f-200ce741bb1f
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"

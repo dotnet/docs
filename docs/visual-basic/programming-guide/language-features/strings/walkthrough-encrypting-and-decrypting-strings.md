@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "decryption, strings"
   - "strings [Visual Basic], decrypting"
 ms.assetid: 1f51e40a-2f88-43e2-a83e-28a0b5c0d6fd
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

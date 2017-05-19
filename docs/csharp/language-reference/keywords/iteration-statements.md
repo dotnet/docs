@@ -11,6 +11,8 @@ helpviewer_keywords:
   - "iteration statements [C#]"
   - "loop structures [C#]"
 ms.assetid: 7d494566-bf75-4ee8-979f-0f964209437e
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "unmanaged enumerations [.NET Framework], debugging"
   - "enumerations [.NET Framework debugging]"
 ms.assetid: 3af9f584-f1b4-4154-aeaa-8fce7c9f8b50
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"

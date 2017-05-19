@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "ColorDialog component, formatting appearance"
   - "color dialog box, configuring appearance"
 ms.assetid: bba4e262-1cd7-4f63-89cf-330a36f7b539
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

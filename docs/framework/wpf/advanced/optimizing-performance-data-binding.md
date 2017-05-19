@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "binding data, performance"
   - "data binding, performance"
 ms.assetid: 1506a35d-c009-43db-9f1e-4e230ad5be73
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

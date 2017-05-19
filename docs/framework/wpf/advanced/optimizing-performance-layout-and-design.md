@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "design considerations"
   - "layout pass"
 ms.assetid: 005f4cda-a849-448b-916b-38d14d9a96fe
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

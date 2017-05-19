@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "secure coding, dangerous permissions"
   - "permissions [.NET Framework], dangerous"
 ms.assetid: 1929e854-23a0-4bb1-94be-e8aa3b609e32
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

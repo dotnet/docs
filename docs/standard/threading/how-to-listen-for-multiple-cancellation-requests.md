@@ -12,6 +12,8 @@ helpviewer_keywords:
   - "cancellation tokens, joining"
   - "LinkedTokenSource, how to"
 ms.assetid: 6f4f3804-2ed7-41b4-a97a-6e32b93f6e05
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

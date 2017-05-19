@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "media, controlling playback with Storyboards"
   - "playback of media, controlling with Storyboards"
 ms.assetid: 6128ca77-b826-4e36-b968-6f237157c543
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

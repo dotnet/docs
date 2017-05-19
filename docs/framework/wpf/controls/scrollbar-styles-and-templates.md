@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "templates [WPF], ScrollBar"
   - "parts [WPF], ScrollBar"
 ms.assetid: 066ea45a-e27d-43b0-adfe-cce6934c22f5
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

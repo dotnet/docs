@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "attributes [Windows Forms], application settings"
   - "wrapper classes, application settings"
 ms.assetid: 53caa66c-a9fb-43a5-953c-ad092590098d
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

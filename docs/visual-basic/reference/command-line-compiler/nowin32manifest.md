@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "nowin32manifest compiler option [Visual Basic]"
   - "-nowin32manifest compiler option [Visual Basic]"
 ms.assetid: c0528aae-83b3-4425-99f0-19448e9843e3
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

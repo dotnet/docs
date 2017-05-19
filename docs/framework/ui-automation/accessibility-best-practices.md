@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "best practices for accessibility"
   - "accessibility, best practices for"
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"

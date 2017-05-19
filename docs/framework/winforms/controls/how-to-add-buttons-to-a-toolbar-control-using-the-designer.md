@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "ToolBar control [Windows Forms], adding drop-down menus"
 ms.assetid: d9ce3040-3e21-4e2d-80ae-b430982b2db8
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

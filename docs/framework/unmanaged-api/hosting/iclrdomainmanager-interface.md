@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRDomainManager interface [.NET Framework hosting]"
 ms.assetid: f08b2390-d872-4521-a815-e9c237c4c45d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "DllImport attribute"
   - "extern keyword [C#]"
 ms.assetid: 9c3f02c4-51b8-4d80-9cb2-f2b6e1ae15c7
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

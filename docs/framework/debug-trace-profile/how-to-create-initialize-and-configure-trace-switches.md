@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "tracing [.NET Framework], enabling or disabling"
   - "Web.config configuration file, trace switches"
 ms.assetid: 5a0e41bf-f99c-4692-8799-f89617f5bcf9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

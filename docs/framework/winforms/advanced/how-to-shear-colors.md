@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "colors, transforming with color matrices"
   - "colors, shearing"
 ms.assetid: 0a424171-5b8b-45c4-afef-e9720a6c3e22
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

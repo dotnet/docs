@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "subtraction assignment operator (-=) [C#]"
   - "-= operator (subtraction assignment ) [C#]"
 ms.assetid: 05c7d68a-423f-4de8-891b-cf24e8fb6ed7
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

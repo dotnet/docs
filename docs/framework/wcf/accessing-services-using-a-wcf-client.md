@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "clients [WCF], consuming services"
 ms.assetid: d780af9f-73c5-42db-9e52-077a5e4de7fe
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 36
 author: "Erikre"
 ms.author: "erikre"

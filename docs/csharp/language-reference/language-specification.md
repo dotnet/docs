@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Visual C#, C# language specification"
   - "language specification [C#]"
 ms.assetid: e5d5a5cc-636b-4bff-b9c8-a8edc6207c22
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 46
 author: "BillWagner"
 ms.author: "wiwagn"

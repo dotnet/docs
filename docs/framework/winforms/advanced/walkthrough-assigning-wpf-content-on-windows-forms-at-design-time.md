@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Windows Forms, content assignments"
   - "WPF user control, hosting in Windows Forms"
 ms.assetid: b3e9ef93-7e0f-4a2f-8f1e-3437609a1eb7
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

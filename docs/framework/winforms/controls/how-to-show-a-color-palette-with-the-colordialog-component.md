@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "color palettes, showing in ColorDialog component"
   - "colors, showing palettes"
 ms.assetid: ee050f61-dbc8-4436-ba22-51360981ab48
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

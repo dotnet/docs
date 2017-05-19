@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugStringValue::GetLength method [.NET Framework debugging]"
   - "GetLength method [.NET Framework debugging]"
 ms.assetid: a1ebfc69-46a6-4225-8788-b7cfb2f15e1d
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

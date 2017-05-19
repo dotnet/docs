@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WCF Data Services, deferred content"
   - "WCF Data Services, loading data"
 ms.assetid: 6f143d30-d997-4e6b-bcf0-d5c394ecb108
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

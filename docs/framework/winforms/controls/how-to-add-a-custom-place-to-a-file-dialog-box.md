@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "adding Custom Place to dialog box"
   - "CustomPlaces collection"
 ms.assetid: 63f6469b-59cd-40f6-9e61-8b5831856780
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, further reading"
 ms.assetid: 98aee307-dde6-4cad-bb58-078497b8064f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

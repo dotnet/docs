@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "interoperability [WDF]"
   - "styles, WPF content"
 ms.assetid: e574aac7-7ea4-4cdb-8034-bab541f000df
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

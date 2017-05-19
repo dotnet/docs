@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "waiting for asynchronous calls"
   - "status information [.NET Framework], asynchronous operations"
 ms.assetid: 41972034-92ed-450a-9664-ab93fcc6f1fb
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"

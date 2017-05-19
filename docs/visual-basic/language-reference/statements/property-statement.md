@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "property procedures, Property statements"
   - "Property keyword"
 ms.assetid: 3155edaf-8ebd-45c6-9cef-11d5d2dc8d38
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 41
 author: dotnet-bot
 ms.author: dotnetcontent

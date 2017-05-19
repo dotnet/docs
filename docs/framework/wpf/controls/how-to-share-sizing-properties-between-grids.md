@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "sizing data in Grid controls"
   - "Grid control, sharing sizing data of rows"
 ms.assetid: a0535a6f-ff04-4b25-9912-7dd856e11044
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

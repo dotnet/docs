@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "service creation [WCF]"
 ms.assetid: 7cf21bfe-23bd-46aa-8033-609f851dbf76
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 36
 author: "Erikre"
 ms.author: "erikre"

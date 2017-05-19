@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "global assembly cache, installing assemblies"
   - "Global Assembly Cache tool"
 ms.assetid: a7e6f091-d02c-49ba-b736-7295cb0eb743
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"

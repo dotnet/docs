@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "application settings [Windows Forms], multiple sets"
   - "application settings [Windows Forms], C#"
 ms.assetid: 45007ac6-cf07-4be7-bc38-3f0ef962faf9
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], substituting cell values for display"
   - "data grids, formatting data"
 ms.assetid: a6e72c70-ce18-425f-828d-d57be6f96ab6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

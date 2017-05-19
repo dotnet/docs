@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, Thumb control type"
   - "Thumb control type"
 ms.assetid: 13636338-e320-4355-b071-ede20a3fb1de
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 20
 author: "Xansky"
 ms.author: "mhopkins"

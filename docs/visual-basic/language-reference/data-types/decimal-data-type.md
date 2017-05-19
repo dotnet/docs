@@ -30,6 +30,8 @@ helpviewer_keywords:
   - "@ identifier type character"
   - "identifier type characters, @"
 ms.assetid: 1d855b45-afe2-45b0-a623-96b6f63a43d5
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

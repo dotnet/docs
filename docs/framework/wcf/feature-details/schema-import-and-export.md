@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "XsdDataContractExporter class"
   - "XsdDataContractImporter class"
 ms.assetid: 0da32b50-ccd9-463a-844c-7fe803d3bf44
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"

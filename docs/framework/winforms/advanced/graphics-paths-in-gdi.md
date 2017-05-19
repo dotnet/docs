@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "paths, drawing"
   - "drawing, paths"
 ms.assetid: a5500dec-666c-41fd-9da3-2169dd89c5eb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "INotifyPropertyChanged interface, implementing"
 ms.assetid: eac428af-b43b-46ac-80d9-1a5f88658725
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

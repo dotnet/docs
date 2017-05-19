@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "pointers [C#], member access"
 ms.assetid: 1e998498-8c85-4a78-8ce2-4d8c20f08342
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "bindings [WCF], system-provided"
 ms.assetid: 2c243746-45ce-4588-995e-c17126a579a6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 60
 author: "Erikre"
 ms.author: "erikre"

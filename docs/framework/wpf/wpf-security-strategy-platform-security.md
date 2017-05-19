@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "Windows Presentation Foundation, about security model"
   - "security model, operating system"
 ms.assetid: 2a39a054-3e2a-4659-bcb7-8bcea490ba31
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

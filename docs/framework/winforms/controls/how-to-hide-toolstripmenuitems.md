@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "menu items, hiding"
   - "hiding menu items"
 ms.assetid: 418a768f-808a-44cd-8cef-f4e161883621
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "colors, creating linear gradients"
   - "gradients"
 ms.assetid: 6c88e1cc-1217-4399-ac12-cb37592b9f01
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

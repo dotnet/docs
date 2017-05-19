@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "browser hosting support [WPF]"
   - "WPF browser hosting support APIs"
 ms.assetid: 82c133a8-d760-45fb-a2b9-3a997537f1d4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent

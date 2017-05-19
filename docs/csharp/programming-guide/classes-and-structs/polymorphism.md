@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "C# language, polymorphism"
   - "polymorphism [C#]"
 ms.assetid: 086af969-29a5-4ce8-a993-0b7d53839dab
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"

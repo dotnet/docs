@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "Mid statement"
   - "strings [Visual Basic], replacing"
 ms.assetid: 2b82d7a8-9646-4cb0-bec5-80abc98297bf
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

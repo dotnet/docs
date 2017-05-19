@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "application settings [Windows Forms], design time"
   - "application settings [Windows Forms], creating"
 ms.assetid: c5d60a66-6507-462f-a81f-e3bc0a804e16
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

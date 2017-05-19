@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "arrays [C#], passing as arguments"
 ms.assetid: f3a0971e-c87c-4a1f-8262-bc0a3b712772
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

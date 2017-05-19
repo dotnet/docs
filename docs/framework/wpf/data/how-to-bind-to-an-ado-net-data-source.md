@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "ADO.NET data sources, binding to"
   - "binding, to ADO.NET data sources"
 ms.assetid: a70c6d7b-7b38-4fdf-b655-4804db7c8315
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "WCF, data"
   - "data contracts [WCF]"
 ms.assetid: a3ae7b21-c15c-4c05-abd8-f483bcbf31af
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 38
 author: "Erikre"
 ms.author: "erikre"

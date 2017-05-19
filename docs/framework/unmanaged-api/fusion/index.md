@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "native API reference [.NET Framework], fusion"
   - "fusion [.NET Framework], using the unmanaged API"
 ms.assetid: f8f20967-ea17-4900-bf05-87a078095fe6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

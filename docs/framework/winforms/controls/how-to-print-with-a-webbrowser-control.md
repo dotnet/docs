@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "Web pages, printing"
   - "examples [Windows Forms], WebBrowser control"
 ms.assetid: 3fb2a305-64ce-4b6c-9258-5330d3f21b6c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

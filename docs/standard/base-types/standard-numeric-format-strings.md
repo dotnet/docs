@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "formatting numbers [.NET Framework]"
   - "format specifiers, standard numeric format strings"
 ms.assetid: 580e57eb-ac47-4ffd-bccd-3a1637c2f467
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 99
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "styling rows in ListViews implementing GridViews"
   - "ListView controls, styling rows with GridViews"
 ms.assetid: 2e406ba2-70a0-4e62-841f-0934859de76e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

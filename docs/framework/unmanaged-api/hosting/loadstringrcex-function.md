@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "LoadStringRCEx function [.NET Framework hosting]"
 ms.assetid: bc789636-ca14-4f07-8f77-9305874d7495
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 18

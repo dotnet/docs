@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "queues [WCF]"
 ms.assetid: 43008409-1bb4-4bd4-85d7-862c8f10ae20
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"

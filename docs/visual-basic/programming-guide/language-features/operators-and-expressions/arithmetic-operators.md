@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Visual Basic code, operators"
   - "arithmetic operators, about arithmetic operators"
 ms.assetid: 325dac7a-ea4f-41d5-8b48-f6e904211569
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

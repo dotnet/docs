@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "My.Computer.Ports object"
   - "ports, serial port availability"
 ms.assetid: eaf2ee5a-8103-4e10-a205-ed1d4db120ba
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

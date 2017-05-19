@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "InkCanvas, binding data to"
   - "binding data, to InkCanvas"
 ms.assetid: 8d6b4d9e-ea7f-4412-ba83-3feccec5a515
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

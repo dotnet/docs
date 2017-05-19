@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "float keyword [C#]"
   - "floating-point numbers [C#], float keyword"
 ms.assetid: 1e77db7b-dedb-48b7-8dd1-b055e96a9258
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

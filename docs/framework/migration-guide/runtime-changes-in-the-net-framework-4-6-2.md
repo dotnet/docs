@@ -15,6 +15,9 @@ helpviewer_keywords:
   - "runtime changes, .NET Framework 4.6.2"
   - "application compatibility"
 ms.assetid: 23bf3a87-6fa1-4b5e-b92c-a39867a06e7f
+ms.technology: 
+  - "dotnet-standard"
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

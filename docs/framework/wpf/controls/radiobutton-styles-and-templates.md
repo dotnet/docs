@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "templates [WPF], RadioButton"
   - "parts [WPF], RadioButton"
 ms.assetid: 9acf93f7-dd2f-4010-8ce0-1edd81c52ae2
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

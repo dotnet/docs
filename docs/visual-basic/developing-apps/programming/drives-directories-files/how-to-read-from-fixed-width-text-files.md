@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "text files, tasks"
   - "text files, reading"
 ms.assetid: 99be5692-967a-4e85-993e-cd18139a5a69
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

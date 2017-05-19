@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "event triggers, controlling Storyboards"
   - "Storyboards, controlling after start"
 ms.assetid: 3b115594-6a93-4972-b24d-61aa16f1c15f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "handwriting recognition"
   - "recognition of handwriting"
 ms.assetid: f4e8576d-e731-4bac-9818-22e2ae636636
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

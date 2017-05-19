@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "monthly calendar, creating"
   - "Grid control, creating, complex grid"
 ms.assetid: 4ce3040a-a156-4364-9596-98ca1eca5550
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

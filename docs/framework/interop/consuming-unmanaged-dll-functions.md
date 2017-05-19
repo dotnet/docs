@@ -26,6 +26,8 @@ helpviewer_keywords:
   - "platform invoke"
   - "DLL functions"
 ms.assetid: eca7606e-ebfb-4f47-b8d9-289903fdc045
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

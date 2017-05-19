@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "C# language, operator overloading"
   - "operator overloading [C#]"
 ms.assetid: 390d9d01-79fc-40ab-9ed3-0bf448da1b6a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

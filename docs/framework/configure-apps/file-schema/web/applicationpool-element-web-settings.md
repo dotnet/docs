@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "applicationPool element"
   - "<applicationPool> element"
 ms.assetid: 46d1baaa-e343-4639-b70d-2a43a9f62b2a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"

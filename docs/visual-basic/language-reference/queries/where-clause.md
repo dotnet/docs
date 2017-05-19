@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "queries [Visual Basic], Where"
   - "Where clause"
 ms.assetid: 48b5c2c5-3181-429c-8545-894296798c89
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

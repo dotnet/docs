@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "Windows Forms, and TPL"
 ms.assetid: 9c65cdf7-660c-409f-89ea-59d7ec8e127c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

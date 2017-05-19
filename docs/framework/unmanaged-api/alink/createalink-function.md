@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CreateALink function"
   - "Alink API, CreateALink function"
 ms.assetid: fc73bcb9-6af6-44d8-bc39-2f4400325dae
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

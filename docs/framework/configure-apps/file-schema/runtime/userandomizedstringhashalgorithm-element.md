@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "UseRandomizedStringHashAlgorithm element"
   - "<UseRandomizedStringHashAlgorithm> element"
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -16,6 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CORPROF_E_UNSUPPORTED_CALL_SEQUENCE HRESULT [.NET Framework profiling]"
 ms.assetid: f2fc441f-d62e-4f72-a011-354ea13c8c59
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

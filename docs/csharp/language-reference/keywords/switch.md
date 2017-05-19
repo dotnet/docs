@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "case statement [C#]"
   - "default keyword [C#]"
 ms.assetid: 44bae8b8-8841-4d85-826b-8a94277daecb
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 47
 author: "BillWagner"
 ms.author: "wiwagn"

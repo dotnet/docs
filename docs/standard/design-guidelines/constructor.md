@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "default constructors"
   - "static constructors"
 ms.assetid: b4496afe-5fa7-4bb0-85ca-70b0ef21e6fc
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

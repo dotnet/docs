@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "caching [.NET Framework], configuration"
   - "memoryCache element"
 ms.assetid: 182a622f-f7cf-472d-9d0b-451d2fd94525
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"

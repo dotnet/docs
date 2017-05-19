@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "assembly folder registration, Choose Toolbox Items dialog box"
   - "Choose Toolbox Items dialog box, display control"
 ms.assetid: 01ef6eba-d044-40f0-951d-78eff7ebd9a9
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

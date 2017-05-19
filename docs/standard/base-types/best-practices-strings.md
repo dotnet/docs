@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "comparing strings"
   - "strings [.NET Framework],comparing"
 ms.assetid: b9f0bf53-e2de-4116-8ce9-d4f91a1df4f7
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"

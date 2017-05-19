@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Windows Forms, getting started"
   - "Windows Forms, creating a new form"
 ms.assetid: c725559c-803e-4725-80fa-96aba93de29a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "strings [Visual Basic], accessing characters"
   - "characters [Visual Basic], accessing in strings"
 ms.assetid: 02c5206c-ffab-494d-b648-3b2ea358dc34
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,6 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4287b6b3-b207-41cf-aebe-3b1d4363b098
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "wadepickett"
 ms.author: "wpickett"

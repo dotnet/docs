@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Multiple EndPoints"
 ms.assetid: 8f0c2e1f-9aee-41c2-8301-c72b7f664412
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 31
 author: "Erikre"
 ms.author: "erikre"

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms]"
   - "controls [Windows Forms], composite"
 ms.assetid: 3cea09e5-4344-4ccb-9858-b66ccac210ff
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

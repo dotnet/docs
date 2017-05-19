@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "procedures, calling"
   - "argument passing, procedures"
 ms.assetid: 08723588-3890-4ddc-8249-79e049e0f241
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

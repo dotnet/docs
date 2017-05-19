@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "dependency properties"
   - "resources, references to"
 ms.assetid: d119d00c-3afb-48d6-87a0-c4da4f83dee5
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Margin property [Windows Forms]"
   - "Padding property [Windws Forms]"
 ms.assetid: 99400e3a-720e-4f56-b68f-89df911a251c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

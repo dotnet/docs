@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "retrieving the DrawingGroup value of a Visual [WPF]"
   - "enumerating the contents of a Visual [WPF]"
 ms.assetid: 2974ddb3-2997-4713-8fd2-e93d549c58a8
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent

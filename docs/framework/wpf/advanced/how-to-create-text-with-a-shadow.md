@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "shadow effects in text"
   - "text, shadowed"
 ms.assetid: 6ab9c754-6001-4708-b479-5367f2fd1a35
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

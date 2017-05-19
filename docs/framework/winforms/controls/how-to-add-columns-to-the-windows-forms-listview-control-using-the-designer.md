@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], adding column headers"
   - "columns [Windows Forms], adding to ListView controls"
 ms.assetid: 5b1a8b4d-587e-479a-95c1-f9b90884f13a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

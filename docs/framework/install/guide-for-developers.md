@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "installing .NET Framework"
   - "installation [.NET Framework]"
 ms.assetid: daf9d9d5-84ac-4bd9-a864-27665ffd0f5c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 165
 author: "rpetrusha"
 ms.author: "ronpet"

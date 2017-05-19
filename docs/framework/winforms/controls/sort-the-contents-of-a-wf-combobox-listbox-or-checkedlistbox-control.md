@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "list boxes, sorting contents"
   - "ListBox control [Windows Forms], sorting contents"
 ms.assetid: c268e387-3d1d-4d86-a940-19f6673c8d06
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Windows Forms, adjusting size"
   - "Windows Forms, changing scale"
 ms.assetid: a014d2b3-3273-4521-95e1-00171033bf58
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

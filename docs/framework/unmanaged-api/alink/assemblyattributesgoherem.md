@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AssemblyAttributesGoHereM type"
   - "Alink API, AssemblyAttributesGoHereM type"
 ms.assetid: caaa8ba9-b4bb-4dd6-934d-57e436b2f3e5
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

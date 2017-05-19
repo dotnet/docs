@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Imaging API"
   - "images, how-to topics"
 ms.assetid: 96834ee4-a5fc-4dd0-9948-b9bbc9437a5c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 79
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "obtaining assembly information"
   - "assemblies [.NET Framework], obtaining information from"
 ms.assetid: 348ae651-ccda-4f13-8eda-19e8337e9438
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

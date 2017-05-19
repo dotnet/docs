@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "images [Windows Forms], about images"
   - "Windows Forms, images"
 ms.assetid: 7152b45b-a55c-49bc-8c78-ae002a844f71
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

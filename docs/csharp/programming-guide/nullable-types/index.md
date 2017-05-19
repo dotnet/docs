@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "C# language, nullable types"
   - "types [C#], nullable"
 ms.assetid: e473cb01-28ca-42be-9cea-f717055d72c6
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 44
 author: "BillWagner"
 ms.author: "wiwagn"

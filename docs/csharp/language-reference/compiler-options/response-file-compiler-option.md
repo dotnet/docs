@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "response files, specifying for compilation [C#]"
   - "@ compiler option"
 ms.assetid: dda4fa9f-a02c-400f-8b6a-d58834e13d7f
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"

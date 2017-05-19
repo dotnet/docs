@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, performance tuning"
 ms.assetid: 53706c7e-397d-467a-98cd-c0d1fd63ba5e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "clipping, using GDI+"
   - "GDI+, restricting drawing surface"
 ms.assetid: 8b5f71d9-d2f0-4540-9c41-740f90fd4c26
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

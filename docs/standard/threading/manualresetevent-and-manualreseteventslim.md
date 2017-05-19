@@ -12,6 +12,8 @@ helpviewer_keywords:
   - "threading [.NET Framework], ManualResetEvent class"
   - "ManualResetEvent class, about ManualResetEvent class"
 ms.assetid: 465fdcf9-ba24-4d8d-a43f-d983b7cb0cc6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

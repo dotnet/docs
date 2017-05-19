@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "~ [C#], bitwise complement operator"
   - "bitwise complement operator [C#]"
 ms.assetid: 11bc078a-50e2-4d7e-9896-67ef669dc602
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

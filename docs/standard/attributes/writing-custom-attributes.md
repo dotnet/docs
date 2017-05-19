@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Inherited property"
   - "attribute classes, declaring"
 ms.assetid: 97216f69-bde8-49fd-ac40-f18c500ef5dc
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

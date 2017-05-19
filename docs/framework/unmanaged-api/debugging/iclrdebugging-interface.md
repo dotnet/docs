@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRDebugging interface [.NET Framework debugging]"
 ms.assetid: 429d8fce-b1b1-49d7-895c-28c1c1aa2dbd
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

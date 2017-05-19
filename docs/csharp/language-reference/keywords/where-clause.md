@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "where keyword [C#]"
   - "where clause [C#]"
 ms.assetid: 7f9bf952-7744-4f91-b676-cddb55d107c3
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

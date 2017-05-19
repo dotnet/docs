@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls, Canvas"
   - "Canvas control, how-to topics"
 ms.assetid: 5c8f5bca-7ba9-4526-a9bf-0852351dbe8a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 70
 author: dotnet-bot
 ms.author: dotnetcontent

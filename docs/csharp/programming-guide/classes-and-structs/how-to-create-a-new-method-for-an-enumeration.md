@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "extension methods [C#], for enums"
   - "enum extensibility [C#]"
 ms.assetid: 100106f9-1e54-462c-8ebe-3892fe23b6eb
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 7
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "sessions [WCF]"
 ms.assetid: 864ba12f-3331-4359-a359-6d6d387f1035
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 32
 author: "Erikre"
 ms.author: "erikre"

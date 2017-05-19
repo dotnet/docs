@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "spin button control"
   - "up-down controls, spin button controls"
 ms.assetid: fb7cf017-e931-4a95-9d21-8caee4ee122a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

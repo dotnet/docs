@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "animation, colors with key frames"
   - "key frames, animating colors with"
 ms.assetid: ab04ffa6-4de9-4d5b-a3b4-4e35d5b2ef35
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

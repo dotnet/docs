@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "interfaces [C#], explicitly implementing"
 ms.assetid: 514cde76-f981-474e-8b40-9493619f899c
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

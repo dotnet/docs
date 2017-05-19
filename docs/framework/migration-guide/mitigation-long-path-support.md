@@ -11,6 +11,9 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3cbe2d77-6e2c-4665-a6c5-7000b9ad6890
+ms.technology: 
+  - "dotnet-standard"
+  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

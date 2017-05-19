@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], adding ListSubItems"
   - "subitems"
 ms.assetid: e465f044-cde7-4fd9-a687-788a73a0f554
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

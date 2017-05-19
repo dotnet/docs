@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ModuleLoadFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::ModuleLoadFinished method [.NET Framework profiling]"
 ms.assetid: 050649e5-ffc0-4458-a0a4-d9ee128a219e
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

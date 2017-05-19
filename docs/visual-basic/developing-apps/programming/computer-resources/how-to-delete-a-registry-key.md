@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "registry, deleting keys"
   - "examples [Visual Basic], registry"
 ms.assetid: ab9aca0e-42b0-4ff7-8ff9-845a4bfdf9f2
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent

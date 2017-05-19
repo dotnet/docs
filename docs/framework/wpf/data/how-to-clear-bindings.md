@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "clearing bindings"
   - "data binding, clearing bindings"
 ms.assetid: 73962a93-32a9-4bcd-9240-bcfbb239093a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

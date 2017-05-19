@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "StepComplete method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::StepComplete method [.NET Framework debugging]"
 ms.assetid: 5e1f2c47-81df-4530-826d-96489cd68719
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

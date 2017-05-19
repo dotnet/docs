@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "objects [C#], about objects"
   - "variables [C#]"
 ms.assetid: af4a5230-fbf3-4eea-95e1-8b883c2f845c
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

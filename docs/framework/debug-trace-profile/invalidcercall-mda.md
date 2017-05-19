@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "CER calls"
   - "managed debugging assistants (MDAs), CER calls"
 ms.assetid: c4577410-602e-44e5-9dab-fea7c55bcdfe
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

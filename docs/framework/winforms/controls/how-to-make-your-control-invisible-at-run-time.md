@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], invisible"
   - "run time, making controls invisible"
 ms.assetid: 69eb2e72-32f5-4f79-a157-c2c5f60c1628
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

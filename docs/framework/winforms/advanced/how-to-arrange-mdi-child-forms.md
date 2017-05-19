@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "child forms, arranging"
   - "MDI, arranging child forms"
 ms.assetid: a0786378-3206-4ccc-898e-7d3b38cc5089
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

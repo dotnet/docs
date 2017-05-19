@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "data entry, disabling in grids"
   - "data grids, disabling data entry"
 ms.assetid: ef9539ce-539b-404e-84b6-ac282b64b88c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

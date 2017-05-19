@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "WCF, security mode"
   - "WCF, security"
 ms.assetid: b8abcc8e-a5f5-4317-aca5-01e3c40ab24d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "dispatcher extensions [WCF]"
 ms.assetid: d0ad15ac-fa12-4f27-80e8-7ac2271e5985
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"

@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), marshaling"
   - "notMarshalable MDA"
 ms.assetid: 96e7b2c1-843f-4d64-b519-740c3a18b50a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

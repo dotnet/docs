@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "collection classes [C#], foreach statement"
 ms.assetid: a6b9cf5c-6c8d-4223-b12c-288949434493
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

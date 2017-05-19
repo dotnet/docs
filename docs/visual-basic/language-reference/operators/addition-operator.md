@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "strings [Visual Basic], concatenating"
   - "sum operator"
 ms.assetid: 5694778f-0a2c-4539-8009-f66f318fb46d
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

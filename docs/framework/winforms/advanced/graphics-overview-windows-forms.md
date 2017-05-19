@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "GDI+, Windows Forms"
   - "graphics"
 ms.assetid: 94084509-2c6f-477d-923b-d25d37a36b1c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

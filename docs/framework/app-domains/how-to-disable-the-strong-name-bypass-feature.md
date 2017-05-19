@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "strong-name bypass feature"
   - "strong-named assemblies, loading into trusted application domains"
 ms.assetid: 234e088c-3b11-495a-8817-e0962be79d82
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 30
 author: "rpetrusha"
 ms.author: "ronpet"

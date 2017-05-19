@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "dynamic [C#], about dynamic type"
   - "dynamic type [C#]"
 ms.assetid: 3828989d-c967-4a51-b948-857ebc8fdf26
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"

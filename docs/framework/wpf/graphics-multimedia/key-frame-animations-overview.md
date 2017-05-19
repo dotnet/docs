@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "key frames [WPF], about key-frame animations"
   - "multiple animation target values"
 ms.assetid: 10028f97-bb63-41fc-b8ad-663dac7ea203
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

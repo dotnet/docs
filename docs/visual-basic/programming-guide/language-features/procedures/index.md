@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "structured code, procedures"
   - "procedures"
 ms.assetid: 9effbcf0-80a0-4d1a-98f4-2c6920592766
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

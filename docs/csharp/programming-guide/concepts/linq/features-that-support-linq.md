@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "LINQ [C#], features supporting LINQ"
 ms.assetid: 524b0078-ebfd-45a7-b390-f2ceb9d84797
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"

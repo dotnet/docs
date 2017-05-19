@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "finally keyword [C#]"
   - "try-finally statement [C#]"
 ms.assetid: c27623fb-7261-4464-862c-7a369d3c8f0a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"

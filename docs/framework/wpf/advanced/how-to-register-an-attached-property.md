@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "attached properties, registering"
   - "registering attached properties"
 ms.assetid: eb47bd94-0451-4f8d-8fb6-95f7812ac05b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

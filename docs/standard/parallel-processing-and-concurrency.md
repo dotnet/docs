@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "concurrency [.NET Framework]"
   - ".NET Framework, concurrency"
 ms.assetid: e573faa8-0212-44b1-a850-ce85dc54f47f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

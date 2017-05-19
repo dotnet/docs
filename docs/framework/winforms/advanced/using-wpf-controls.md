@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Windows Forms Designer, interoperability with WPF"
   - "interoperability [WPF]"
 ms.assetid: 03c85dce-26ad-44cd-bc1d-8e0cb56de096
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

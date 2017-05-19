@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "fonts, enumerating installed"
   - "examples [Windows Forms], fonts"
 ms.assetid: 26d74ef5-0f39-4eeb-8d20-00e66e014abe
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

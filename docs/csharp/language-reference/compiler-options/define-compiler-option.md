@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "/d compiler option [C#]"
   - "d compiler option [C#]"
 ms.assetid: f17d7b4d-82d0-4133-8563-68cced1cac6e
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

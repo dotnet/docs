@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "generics [C#], at run time"
 ms.assetid: 119df7e6-9ceb-49df-af36-24f8f8c0747f
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

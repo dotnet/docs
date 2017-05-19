@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "brushes, examples"
   - "brushes, creating solid"
 ms.assetid: 85c3fe7d-fb1d-4591-8a9f-d75b556b90af
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "ListView controls, creating custom View mode"
 ms.assetid: 71077349-eeb9-4344-ab29-b5df96df3314
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

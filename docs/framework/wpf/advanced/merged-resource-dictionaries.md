@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "merged resource dictionaries"
   - "dictionaries, merged resources"
 ms.assetid: d159531f-05d4-49fd-b951-c332de51e5bc
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "COM+ [WCF], using service model configuration tool"
 ms.assetid: 7e68cd8d-5fda-4641-b92f-290db874376e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"

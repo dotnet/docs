@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "data binding, how-to topics"
   - "binding data, how-to topics"
 ms.assetid: a3b2563e-d879-41a7-9dfd-ac56b27fdcad
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 81
 author: dotnet-bot
 ms.author: dotnetcontent

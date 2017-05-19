@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrNetwork_NetworkNotAvailable"
 ms.assetid: 8d2bac12-bc6a-42ae-b28b-80b026dfabce
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

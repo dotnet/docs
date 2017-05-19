@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "encoding, choosing"
   - "encoding, fallback strategy"
 ms.assetid: bf6d9823-4c2d-48af-b280-919c5af66ae9
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"

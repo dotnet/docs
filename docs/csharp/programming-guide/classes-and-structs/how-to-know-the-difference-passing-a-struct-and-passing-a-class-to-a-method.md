@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "passing parameters [C#], structs vs. classes"
   - "methods [C#], passing classes vs. structs"
 ms.assetid: 9c1313a6-32a8-4ea7-a59f-450f66af628b
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"

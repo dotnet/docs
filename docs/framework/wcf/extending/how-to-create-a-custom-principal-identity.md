@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "PrincipalPermissionMode"
   - "PrincipalPermissionAttribute"
 ms.assetid: c4845fca-0ed9-4adf-bbdc-10812be69b61
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

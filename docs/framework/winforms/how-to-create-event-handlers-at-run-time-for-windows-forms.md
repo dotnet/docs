@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], event handling"
   - "Button control [Windows Forms], event handlers"
 ms.assetid: 2e7c9e1a-61fe-444d-8113-3c5bacf1c8cb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "drag-and-drop ink"
   - "dropping ink"
 ms.assetid: 932dc410-2bf3-4486-ab31-13487ba59f60
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

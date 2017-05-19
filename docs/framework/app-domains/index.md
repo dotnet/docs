@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "application domains, programming"
   - "programming application domains"
 ms.assetid: 96d3b8e3-bef8-4da0-9a81-9841e23a94e9
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

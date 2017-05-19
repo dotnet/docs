@@ -42,6 +42,8 @@ helpviewer_keywords:
   - "output, managed debugging assistants"
   - "errors [.NET Framework], managed debugging assistants"
 ms.assetid: 76994ee6-9fa9-4059-b813-26578d24427c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 63
 author: "mairaw"
 ms.author: "mairaw"

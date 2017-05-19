@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "arrays [.NET Framework], usage guidelines"
   - "empty arrays"
 ms.assetid: 66a1b3d8-6f3f-4715-b235-e1ff95e32d8e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

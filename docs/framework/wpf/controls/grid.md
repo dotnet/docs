@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "content [WPF], Grid control"
   - "Grid control [WPF]"
 ms.assetid: cf2cc94c-bbc2-4e54-a601-605038ab63fe
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent

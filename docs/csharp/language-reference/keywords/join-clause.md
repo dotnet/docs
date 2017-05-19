@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "join clause [C#]"
   - "join keyword [C#]"
 ms.assetid: 76e9df84-092c-41a6-9537-c3f1cbd7f0fb
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 29
 author: "BillWagner"
 ms.author: "wiwagn"

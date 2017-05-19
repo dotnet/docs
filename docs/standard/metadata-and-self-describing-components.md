@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "PE files, metadata"
   - "components [.NET Framework], metadata"
 ms.assetid: 3dd13c5d-a508-455b-8dce-0a852882a5a7
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

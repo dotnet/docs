@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "hardware encryption"
   - "CspParameters"
 ms.assetid: b0e734df-6eb4-4b16-b48c-6f0fe82d5f17
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

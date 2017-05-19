@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetTypeLibFromMetaData method [.NET Framework metadata]"
   - "IMetaDataConverter::GetTypeLibFromMetaData method [.NET Framework metadata]"
 ms.assetid: 90eab7b3-1fae-4af4-8bce-f7bc0e188a99
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

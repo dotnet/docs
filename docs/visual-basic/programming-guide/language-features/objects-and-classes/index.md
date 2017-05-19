@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "classes [Visual Basic]"
   - "objects [Visual Basic]"
 ms.assetid: c68c5752-1006-46e1-975a-6717b62a42fc
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

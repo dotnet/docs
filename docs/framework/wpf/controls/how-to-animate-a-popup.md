@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Popup control, animating"
   - "animation, Popup controls"
 ms.assetid: acaa2a0a-6137-4efd-9cd1-75ece222e390
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "KnownTypeAttribute [WCF]"
   - "KnownTypes [WCF]"
 ms.assetid: 1a0baea1-27b7-470d-9136-5bbad86c4337
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 42
 author: "Erikre"
 ms.author: "erikre"

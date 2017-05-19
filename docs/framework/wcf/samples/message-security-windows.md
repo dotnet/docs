@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "WS Security"
 ms.assetid: d2221d1c-c9cb-48d1-b044-a3b4445c7f05
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 34
 author: "BrucePerlerMS"
 ms.author: "bruceper"

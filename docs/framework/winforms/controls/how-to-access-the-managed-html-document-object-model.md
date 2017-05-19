@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "HTML DOM, accessing"
   - "managed HTML DOM, accessing"
 ms.assetid: 40fa5cd5-1ed8-42f6-a93f-9ac01608bbeb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

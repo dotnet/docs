@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "runtime, language interoperability"
   - "common language runtime, language interoperability"
 ms.assetid: 4f0b77d0-4844-464f-af73-6e06bedeafc6
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "tile patterns, creating"
   - "creating, tile patterns with TileBrush"
 ms.assetid: 5aa46632-3527-4668-9d8d-0375c8af28aa
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

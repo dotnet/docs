@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "key frames, animating border thickness with"
   - "border thickness, animating with key frames"
 ms.assetid: 3a9cb463-0a63-407d-aae7-3fbb1a559947
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

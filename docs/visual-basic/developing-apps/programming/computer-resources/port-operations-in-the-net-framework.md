@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ports, Visual Basic"
 ms.assetid: 1eba223b-7bd3-401a-b097-982bce96df1b
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

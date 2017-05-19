@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrMouse_NoWheelIsPresent"
 ms.assetid: e924ffba-4af1-4247-9a6f-d19a03738f62
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

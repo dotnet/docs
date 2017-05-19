@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "types, generic"
   - "type parameters"
 ms.assetid: f7180fc5-dd41-42d4-8a8e-1b34288e06de
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

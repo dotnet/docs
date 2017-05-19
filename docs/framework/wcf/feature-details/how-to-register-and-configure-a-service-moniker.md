@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "COM [WCF], configure service monikers"
   - "COM [WCF], register service monikers"
 ms.assetid: e5e16c80-8a8e-4eef-af53-564933b651ef
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 20
 author: "Erikre"
 ms.author: "erikre"

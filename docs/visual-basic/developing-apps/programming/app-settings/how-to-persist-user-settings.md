@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "persistence, persisting user settings [Visual Basic]"
   - "user settings, persisting"
 ms.assetid: 0e5e6415-b6e2-4602-9be0-a65fa167d007
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

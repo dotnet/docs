@@ -27,6 +27,8 @@ helpviewer_keywords:
   - "type parameters"
   - "data type arguments"
 ms.assetid: 0db8f65c-65af-4089-ab7f-6fcfecb60444
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

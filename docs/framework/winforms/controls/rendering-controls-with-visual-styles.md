@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "user controls [Windows Forms], painting"
   - "visual styles, rendering Windows Forms controls"
 ms.assetid: a5b178ba-610e-46c4-a6c0-509c0886a744
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "trace switches"
   - "trace switches, creating custom"
 ms.assetid: 8ab913aa-f400-4406-9436-f45bc6e54fbe
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

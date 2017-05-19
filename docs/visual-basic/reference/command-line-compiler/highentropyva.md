@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "highentropyva compiler option (Visual Basic)"
   - "/highentropyva compiler option (Visual Basic)"
 ms.assetid: ff25f20a-6ca2-467b-9e52-5cf439f5028e
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

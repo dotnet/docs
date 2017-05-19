@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "user interface"
   - "user interface, forms"
 ms.assetid: 627df1e9-b254-41af-bbac-9a4f02810c54
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

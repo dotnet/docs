@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "C# language, reference"
   - "reference, C# language"
 ms.assetid: 06de3167-c16c-4e1a-b3c5-c27841d4569a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"

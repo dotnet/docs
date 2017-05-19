@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::GetParamProps method [.NET Framework metadata]"
   - "GetParamProps method [.NET Framework metadata]"
 ms.assetid: 4d5e5f00-bcab-4f41-b191-176511a186a7
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

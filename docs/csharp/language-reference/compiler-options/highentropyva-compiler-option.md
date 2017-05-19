@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "-highentropyva compiler option [C#]"
   - "highentropyva compiler option [C#]"
 ms.assetid: eaf409b3-384e-49dd-9417-62453658f421
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 8
 author: "BillWagner"
 ms.author: "wiwagn"

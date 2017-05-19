@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetTypeDefProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetTypeDefProps method [.NET Framework metadata]"
 ms.assetid: 00061a25-ba05-47a7-b984-fd916b06b149
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

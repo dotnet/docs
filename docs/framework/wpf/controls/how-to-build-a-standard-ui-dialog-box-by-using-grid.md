@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "dialog boxes, creating"
   - "Grid control, creating, dialog box"
 ms.assetid: d6ac3d51-844b-4d29-96d8-81a696a7b960
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

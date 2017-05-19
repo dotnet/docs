@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSecurityContext method [.NET Framework hosting]"
   - "IHostSecurityManager::GetSecurityContext method [.NET Framework hosting]"
 ms.assetid: 958970d6-f6a2-4b84-b32a-f555cbaf8f61
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

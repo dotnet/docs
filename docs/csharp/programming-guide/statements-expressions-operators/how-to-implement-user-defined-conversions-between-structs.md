@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "user-defined conversions [C#]"
 ms.assetid: 97839aef-8fbc-40d5-9769-6b569bc2710b
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

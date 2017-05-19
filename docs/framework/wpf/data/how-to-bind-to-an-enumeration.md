@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "data binding, enumeration"
   - "enumeration"
 ms.assetid: b9091eba-1119-424e-868b-d1a4168b3732
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "imports compiler option [Visual Basic]"
   - "-imports compiler option [Visual Basic]"
 ms.assetid: 9a93fb53-c080-497b-bf9b-441022dbbc39
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

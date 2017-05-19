@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), early bound calls AutoDispatch"
   - "EarlyBoundCallOnAutorDispatchClassInteface MDA"
 ms.assetid: aa388ed3-7e3d-48ea-a0b5-c47ae19cec38
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

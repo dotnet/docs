@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "application hosting [WPF]"
   - "hosting applications [WPF]"
 ms.assetid: 1f73067d-c60a-4e9a-b513-c817ee7da3a1
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "XmlSerializer [WCF], using"
 ms.assetid: c680602d-39d3-44f1-bf22-8e6654ad5069
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 26
 author: "Erikre"
 ms.author: "erikre"

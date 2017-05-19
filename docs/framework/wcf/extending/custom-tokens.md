@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "security [WCF], custom tokens"
 ms.assetid: 8b2dbe29-dec2-4652-8e34-fb21bc1437b5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"

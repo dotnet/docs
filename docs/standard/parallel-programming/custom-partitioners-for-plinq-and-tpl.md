@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, partitioners"
 ms.assetid: 96153688-9a01-47c4-8430-909cee9a2887
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

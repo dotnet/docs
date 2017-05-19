@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "application management [WPF]"
 ms.assetid: 32b1c054-5aca-423b-b4b5-ed8dc4dc637d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 56
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "synchronization primitives, CountdownEvent"
 ms.assetid: eec3812a-e20f-4ecd-bfef-6921d508b708
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

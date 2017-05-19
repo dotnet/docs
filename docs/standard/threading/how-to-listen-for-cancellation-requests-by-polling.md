@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "cancellation, how to poll for requests"
 ms.assetid: c7f2f022-d08e-4e00-b4eb-ae84844cb1bc
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

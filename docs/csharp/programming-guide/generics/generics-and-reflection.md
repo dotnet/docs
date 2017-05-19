@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "generics [C#], reflection"
   - "reflection [C#], generic types"
 ms.assetid: 162fd9b4-dd5b-4abb-8c9b-e44e21e2f451
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

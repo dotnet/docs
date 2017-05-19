@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "image sources, drawings"
   - "drawings, as image sources"
 ms.assetid: dcf71c7b-9e86-4b8e-8e39-0d0ce0389ef4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "SnapLine class, walkthroughs"
   - "Windows Forms controls, arranging"
 ms.assetid: d5c9edc7-cf30-4a97-8ebe-201d569340f8
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

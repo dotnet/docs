@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "debugging API [Silverlight]"
   - "Silverlight, debugging"
 ms.assetid: 35c7a18f-133a-4584-bd25-bb338568b0c6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"

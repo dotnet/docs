@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "overriding the logical tree"
   - "logical tree, overriding"
 ms.assetid: 0ae4d074-8113-4b06-b4fa-e0f39d4967a6
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

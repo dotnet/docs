@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "iterators [Visual Basic]"
   - "Yield statement [Visual Basic]"
 ms.assetid: f33126c5-d7c4-43e2-8e36-4ae3f0703d97
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

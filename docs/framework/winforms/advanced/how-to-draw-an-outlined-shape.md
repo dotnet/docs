@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "drawing, circular shapes"
   - "shapes, drawing"
 ms.assetid: f4f9214c-607e-407d-8cdd-6549f0278451
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

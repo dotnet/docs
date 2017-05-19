@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "netPeerBinding element"
 ms.assetid: 2dd77ada-a176-47c7-a740-900b279f1aad
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 20
 author: "Erikre"
 ms.author: "erikre"

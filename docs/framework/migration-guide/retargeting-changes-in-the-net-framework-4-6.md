@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "retargeting changes, .NET Framework 4.6"
   - "application compatibility"
 ms.assetid: fa849255-f90f-4bf1-b0ff-b173c12110d7
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

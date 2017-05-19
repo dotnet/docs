@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "names in XAML [XAML Services]"
   - "XamlName grammar [XAML Services]"
 ms.assetid: 11e4cada-41d2-494d-9531-0d3df4dfcbe3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: "wadepickett"
 ms.author: "wpickett"

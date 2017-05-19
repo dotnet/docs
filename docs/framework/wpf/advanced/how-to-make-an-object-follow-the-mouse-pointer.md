@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "mouse pointer (cursor), making objects follow"
   - "cursor (mouse pointer), making objects follow"
 ms.assetid: 50b20415-14bc-405c-baf3-2fb254fffde3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

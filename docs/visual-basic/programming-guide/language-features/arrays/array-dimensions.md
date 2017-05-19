@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "rectangular arrays"
   - "ranking, arrays"
 ms.assetid: 385e911b-18c1-4e98-9924-c6d279101dd9
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

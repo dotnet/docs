@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, exposing content of tables"
   - "exposing content of tables using UI Automation"
 ms.assetid: ac3c5eaa-49c7-4653-b83e-532e2a2604a2
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 12
 author: "Xansky"
 ms.author: "mhopkins"

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "controls, GroupBox"
   - "GroupBox control, creating templates"
 ms.assetid: 85a4d1a7-4753-4f4a-b26d-14fa10c1ddb5
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

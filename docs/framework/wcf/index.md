@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "WCF"
   - "Windows Communication Foundation"
 ms.assetid: 96aad289-58bc-4389-89d0-b09dfc4d5c58
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 2
 author: "rpetrusha"
 ms.author: "ronpet"

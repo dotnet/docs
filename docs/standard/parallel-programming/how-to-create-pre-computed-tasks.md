@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, creating pre-computed"
 ms.assetid: a73eafa2-1f49-4106-a19e-997186029b58
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

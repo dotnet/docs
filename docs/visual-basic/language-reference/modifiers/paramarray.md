@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "ParamArray keyword"
   - "ParamArray keyword, syntax"
 ms.assetid: a5f18789-92bd-488f-9c7e-cf3719963635
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

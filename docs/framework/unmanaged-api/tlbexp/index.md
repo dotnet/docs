@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Tlbexp.exe"
   - "Type Library Exporter"
 ms.assetid: 5c0a3d14-5f26-4267-94a9-82c30f8db09a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

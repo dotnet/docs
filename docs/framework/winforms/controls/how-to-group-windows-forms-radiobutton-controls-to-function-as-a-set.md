@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Windows Forms controls, grouping"
   - "RadioButton control [Windows Forms], grouping"
 ms.assetid: 58f8fe34-50b7-49d8-a2be-c271be3c6b32
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

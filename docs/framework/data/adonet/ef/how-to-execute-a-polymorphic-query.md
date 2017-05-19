@@ -16,6 +16,8 @@ dev_langs:
   - "ESQL"
   - "jsharp"
 ms.assetid: 2f05da1e-845b-4f14-83e4-c6353a850553
+ms.technology: 
+  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"

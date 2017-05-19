@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "multiplication operator (*) [C#]"
   - "* operator [C#]"
 ms.assetid: abd9a5f0-9b24-431e-971a-09ee1c45c50e
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

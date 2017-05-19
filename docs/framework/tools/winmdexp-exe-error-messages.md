@@ -170,6 +170,8 @@ helpviewer_keywords:
   - "Windows Runtime Metadata Export Tool, error messages"
   - "error messages, Winmdexp.exe"
 ms.assetid: 8271973c-deba-47a6-8e5e-04ce63f146ad
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

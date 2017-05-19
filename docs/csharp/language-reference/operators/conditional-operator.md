@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "?: operator [C#]"
   - "conditional operator (?:) [C#]"
 ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"

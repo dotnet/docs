@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "parts [WPF], DocumentViewer"
   - "styles [WPF], DocumentViewer"
 ms.assetid: 6bd4ff8f-ea6a-4084-ac58-e7a67446ce1c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

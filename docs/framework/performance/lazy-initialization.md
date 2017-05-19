@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "lazy initialization in .NET, introduction"
 ms.assetid: 56b4ae5c-4745-44ff-ad78-ffe4fcde6b9b
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

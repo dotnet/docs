@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "read/write properties [C#]"
   - "accessors [C#], declaring properties with"
 ms.assetid: a4962fef-af7e-4c4b-a929-4ae4d646ab8a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

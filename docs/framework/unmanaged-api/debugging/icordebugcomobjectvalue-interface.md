@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugComObjectValue interface [.NET Framework debugging]"
 ms.assetid: 505a7f6c-d92b-42b4-b539-433f5102ea9b
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

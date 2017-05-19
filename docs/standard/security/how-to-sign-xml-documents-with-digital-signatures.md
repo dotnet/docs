@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "XML signing"
   - "signing XML"
 ms.assetid: 99692ac1-d8c9-42d7-b1bf-2737b01037e4
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

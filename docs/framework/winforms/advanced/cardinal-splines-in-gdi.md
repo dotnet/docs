@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "GDI+, cardinal splines"
   - "cardinal splines"
 ms.assetid: 09b3797a-6294-422d-9adf-a5a0a7695c0c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

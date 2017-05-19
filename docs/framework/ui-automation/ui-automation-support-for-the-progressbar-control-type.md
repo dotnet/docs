@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "ProgressBar control type"
   - "UI Automation, Progress Bar control type"
 ms.assetid: 302e778c-24b0-4789-814a-c8d37cf53a5f
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 21
 author: "Xansky"
 ms.author: "mhopkins"

@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Windows Forms, user input"
 ms.assetid: 9d61fa96-70f7-4754-885a-49a4a6316bdb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

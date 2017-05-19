@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "supportedRuntime element"
   - "<supportedRuntime> element"
 ms.assetid: 1ae16e23-afbe-4de4-b413-bc457f37b69f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 33
 author: "mcleblanc"
 ms.author: "markl"

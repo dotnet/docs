@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "security [.NET Framework], remoting"
   - "secure coding, remoting"
 ms.assetid: 125d2ab8-55a4-4e5f-af36-a7d401a37ab0
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

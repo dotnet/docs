@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "RichTextBox control [Windows Forms], opening files"
   - "RTF files, displaying in RichTextBox control"
 ms.assetid: c03451be-f285-4428-a71a-c41e002cc919
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

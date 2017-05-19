@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "special characters"
   - "IDENTIFIER"
 ms.assetid: d90b1e39-9115-4f2a-81c0-05e7e74e5580
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

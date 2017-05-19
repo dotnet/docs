@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "GDI+, metafiles"
   - "metafiles"
 ms.assetid: 51da872c-c783-440f-8bf6-1e580a966c31
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

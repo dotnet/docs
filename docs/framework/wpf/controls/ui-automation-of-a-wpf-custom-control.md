@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "custom controls [WPF], improving accessibility"
   - "UI Automation [WPF], using with custom controls"
 ms.assetid: 47b310fc-fbd5-4ce2-a606-22d04c6d4911
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent

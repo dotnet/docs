@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "RevertToSelf method [.NET Framework hosting]"
   - "IHostSecurityManager::RevertToSelf method [.NET Framework hosting]"
 ms.assetid: 189f28f8-f9a1-4192-aedc-91084e4f8b99
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

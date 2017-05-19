@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "/nowarn compiler option [C#]"
   - "-nowarn compiler option [C#]"
 ms.assetid: 6dcbc5e8-ae67-4566-9df3-f63cfdd9c4e4
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

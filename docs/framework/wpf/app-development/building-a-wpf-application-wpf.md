@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "WPF application, building"
 ms.assetid: a58696fd-bdad-4b55-9759-136dfdf8b91c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 45
 author: dotnet-bot
 ms.author: dotnetcontent

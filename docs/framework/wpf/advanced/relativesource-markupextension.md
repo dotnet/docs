@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "RelativeSource markup extensions"
   - "XAML, RelativeSource markup extension"
 ms.assetid: 26be4721-49b5-4717-a92e-7d54ad0d3a81
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

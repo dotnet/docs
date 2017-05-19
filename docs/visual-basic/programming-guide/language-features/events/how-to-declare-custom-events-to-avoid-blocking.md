@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "events [Visual Basic], custom"
   - "custom events"
 ms.assetid: 998b6a90-67c5-4d2c-8b11-366d3e355505
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

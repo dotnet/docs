@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "jagged arrays [C#]"
   - "arrays [C#], jagged"
 ms.assetid: 537c65a6-0e0a-4a00-a2b8-086f38519c70
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

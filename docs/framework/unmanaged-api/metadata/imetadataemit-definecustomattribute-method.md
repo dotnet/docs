@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DefineCustomAttribute method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineCustomAttribute method [.NET Framework metadata]"
 ms.assetid: 7dd14854-b756-4401-b167-88ca576dc8f0
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

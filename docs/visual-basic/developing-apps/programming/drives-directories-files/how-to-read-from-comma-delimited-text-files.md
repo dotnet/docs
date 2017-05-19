@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "reading text files, comma-delimited"
   - "text files, reading"
 ms.assetid: a8413fe4-0dba-49c8-8692-44fb67a9ec4f
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

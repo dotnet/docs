@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "interop marshaling, arrays"
   - "arrays, interop marshaling"
 ms.assetid: 8a3cca8b-dd94-4e3d-ad9a-9ee7590654bc
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

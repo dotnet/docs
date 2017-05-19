@@ -36,6 +36,8 @@ helpviewer_keywords:
   - "type arguments, defining"
   - "arguments [Visual Basic], type"
 ms.assetid: a914adf8-e68f-4819-a6b1-200d1cf1c21c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

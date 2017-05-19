@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "columns [Windows Forms], manipulating"
   - "data grids, manipulating columns"
 ms.assetid: d8cfe6b3-bbab-4182-bec2-0517d9f1eaf6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

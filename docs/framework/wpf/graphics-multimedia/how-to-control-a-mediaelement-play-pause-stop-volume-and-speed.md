@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "multimedia, controlling playback of media"
   - "media, controlling playback of"
 ms.assetid: 6885a730-e054-4c16-8c1e-ffe17b1f7c32
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

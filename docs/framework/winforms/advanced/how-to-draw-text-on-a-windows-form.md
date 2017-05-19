@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "forms, drawing text"
   - "text, drawing"
 ms.assetid: 5d2447a9-21a1-4adc-b954-5516f2bb9b2c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

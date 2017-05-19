@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "TextFieldParser class, aboutTextFieldParser class"
   - "TextFieldParser class"
 ms.assetid: d44bd2b0-7dfc-410b-a48b-534c1e97460b
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

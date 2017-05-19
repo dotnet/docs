@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "printing [Windows Forms], print preview"
   - "examples [Windows Forms], print preview"
 ms.assetid: e394134c-0886-4517-bd8d-edc4a3749eb5
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Svcutil.exe"
   - "clients [WCF], consuming services"
 ms.assetid: 1abf3d9f-b420-46f1-b628-df238751f308
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 40
 author: "Erikre"
 ms.author: "erikre"

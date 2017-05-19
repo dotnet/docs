@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "strings [Visual Basic], converting to arrays"
   - "string conversion [Visual Basic], arrays"
 ms.assetid: 1b54b686-ab29-413b-adce-6bd5422376eb
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "I/O [.NET Framework], writing data"
   - "BinaryWriter class, examples"
 ms.assetid: e209d949-31e8-44ea-8e38-87f9093f3093
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

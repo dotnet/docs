@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "combo boxes, accessing items"
   - "CheckedListBox control [Windows Forms], accessing items"
 ms.assetid: 1216742f-bcf9-4ff8-8a62-d7c9053c2b96
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "ReadAllBytes method, reading from binary files"
   - "My.Computer.FileSystem object, reading from binary files"
 ms.assetid: d2b1269e-24b6-42e0-9414-ae708db282d8
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

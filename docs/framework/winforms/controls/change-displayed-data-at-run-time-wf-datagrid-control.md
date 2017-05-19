@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "DataGrid control [Windows Forms], data binding"
   - "cells, changing DataGrid cell values"
 ms.assetid: 0c7a6d00-30de-416e-8223-0a81ddb4c1f8
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

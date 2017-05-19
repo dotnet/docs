@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "extension methods [C#]"
   - "methods [C#], extension"
 ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 35
 author: "BillWagner"
 ms.author: "wiwagn"

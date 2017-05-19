@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "multimedia, repeating media playback"
   - "playback of media, repeating"
 ms.assetid: 02ab486d-c6b6-4918-9edd-45a12aca4683
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

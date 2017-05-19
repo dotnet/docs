@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "profiling applications"
   - "Performance Console"
 ms.assetid: ccd68284-f3a8-47b8-bc3f-92e5fe3a1640
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

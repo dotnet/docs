@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameSignatureGenerationEx function [.NET Framework strong naming]"
 ms.assetid: 9a75469e-aa49-4e32-ad48-3bafd5202f09
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 17

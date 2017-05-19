@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "FindPrivateKey"
 ms.assetid: 16b54116-0ceb-4413-af0c-753bb2a785a6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"

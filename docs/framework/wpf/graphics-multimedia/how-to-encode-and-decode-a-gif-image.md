@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "GIF decoding"
   - "GIF encoding"
 ms.assetid: 9cdd9ec7-71eb-444b-b9e3-991958461163
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

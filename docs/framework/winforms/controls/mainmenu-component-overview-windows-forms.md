@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "MainMenu control [Windows Forms], about MainMenu control"
   - "menus"
 ms.assetid: b41cc5a3-cc59-4996-aa3c-8dd9c17d3c90
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "claims [WCF], and tokens"
 ms.assetid: eff167f3-33f8-483d-a950-aa3e9f97a189
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"

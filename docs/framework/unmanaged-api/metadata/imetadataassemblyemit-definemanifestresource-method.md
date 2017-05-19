@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "DefineManifestResource method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::DefineManifestResource method [.NET Framework metadata]"
 ms.assetid: 27f6d295-0fe9-4cda-b77e-6e7d5c53df09
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

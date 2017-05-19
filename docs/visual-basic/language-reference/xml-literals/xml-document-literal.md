@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "XML documents [Visual Basic], creating"
   - "document literal [Visual Basic]"
 ms.assetid: f7bbee56-0911-41de-b907-96f20450137b
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

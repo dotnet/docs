@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "read-only text boxes"
   - "text boxes, read-only"
 ms.assetid: 60baa9ab-fa57-44ad-bb7c-61b05aa64296
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

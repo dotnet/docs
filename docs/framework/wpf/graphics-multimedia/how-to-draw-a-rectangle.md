@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "graphics [WPF], rectangles"
   - "rectangles, drawing"
 ms.assetid: beeb57ef-fab5-4446-a38a-1588f97b4c2f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

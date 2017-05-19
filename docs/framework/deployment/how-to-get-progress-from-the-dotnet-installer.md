@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "progress information, .NET Framework installer"
   - ".NET Framework, installing"
 ms.assetid: 0a1a3ba3-7e46-4df2-afd3-f3a8237e1c4f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 30
 author: "mairaw"
 ms.author: "mairaw"

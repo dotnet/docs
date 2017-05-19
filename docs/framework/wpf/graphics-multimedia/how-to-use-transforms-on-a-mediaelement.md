@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "multimedia, using Transforms on MediaElements"
   - "MediaElements, using Transforms on"
 ms.assetid: d89c95e3-27c5-4748-8a27-72e432674032
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

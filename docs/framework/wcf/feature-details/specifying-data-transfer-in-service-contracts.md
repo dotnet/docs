@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "service contracts [WCF], data transfer"
 ms.assetid: 7c5a26c8-89c9-4bcb-a4bc-7131e6d01f0c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 38
 author: "Erikre"
 ms.author: "erikre"

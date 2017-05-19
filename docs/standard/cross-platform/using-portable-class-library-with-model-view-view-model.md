@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Portable Class Library [.NET Framework], and MVVM"
   - "MVVM, and Portable Class Library"
 ms.assetid: 41a0b9f8-15a2-431a-bc35-e310b2953b03
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

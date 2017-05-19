@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "My.Application object, Visual Basic application model"
   - "Visual Basic application model"
 ms.assetid: 17538984-84fe-43c9-82c8-724c9529fe8b
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

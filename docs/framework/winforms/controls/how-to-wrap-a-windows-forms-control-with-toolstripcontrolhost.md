@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], wrapping controls"
   - "ToolStrip control [Windows Forms], hosting controls"
 ms.assetid: e2ce4990-661d-4882-a116-8a9eb575dc84
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - ".NET Framework regular expressions"
   - "strings [.NET Framework], regular expressions"
 ms.assetid: 521b3f6d-f869-42e1-93e5-158c54a6895d
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"

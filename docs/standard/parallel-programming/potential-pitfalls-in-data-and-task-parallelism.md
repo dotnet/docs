@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "parallel programming, pitfalls"
 ms.assetid: 1e357177-e699-4b8f-9e49-56d3513ed128
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

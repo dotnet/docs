@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "loading non-resource files"
   - "application management [WPF]"
 ms.assetid: 43adb517-21a7-4df3-98e8-09e9cdf764c4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 35
 author: dotnet-bot
 ms.author: dotnetcontent

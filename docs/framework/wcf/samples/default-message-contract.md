@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Message Contract"
 ms.assetid: 5a200b78-1a46-4104-b7fb-da6dbab33893
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 35
 author: "Erikre"
 ms.author: "erikre"

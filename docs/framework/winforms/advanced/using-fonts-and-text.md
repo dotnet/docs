@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "fonts, using in Windows Forms"
   - "strings [Windows Forms], drawing in Windows Forms"
 ms.assetid: d43640f3-da94-4df2-a29d-a9d021a1c069
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

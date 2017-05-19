@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "compression"
   - "compress files"
 ms.assetid: e9876165-3c60-4c84-a272-513e47acf579
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WCF Data Services, LINQ to SQL"
   - "WCF Data Services, providers"
 ms.assetid: 3b01c2fd-8c6e-4bf5-b38f-9e61bdc3c328
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

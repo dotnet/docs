@@ -28,6 +28,8 @@ helpviewer_keywords:
   - "compiling satellite assemblies"
   - "re-signing assemblies"
 ms.assetid: 8d5c6044-2919-41d2-8321-274706b295ac
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

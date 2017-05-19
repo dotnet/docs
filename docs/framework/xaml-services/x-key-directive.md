@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Key attribute in XAML [XAML Services]"
   - "XAML [XAML Services], x:Key attribute"
 ms.assetid: 1985cd45-f197-42d5-b75e-886add64b248
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 25
 author: "wadepickett"
 ms.author: "wpickett"

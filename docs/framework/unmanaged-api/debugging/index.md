@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "debugging [.NET Framework], using the unmanaged API"
   - "native API reference [.NET Framework], debugging"
 ms.assetid: f0bf70be-42ef-4c46-8709-1694b5f99018
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

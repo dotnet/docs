@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "files [C#]"
   - "creating folders [C#]"
 ms.assetid: 4582ee2d-d72d-4687-bcb9-08d336c62c25
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

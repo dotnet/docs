@@ -26,6 +26,8 @@ helpviewer_keywords:
   - "UI literal type characters"
   - "data types [Visual Basic], integral"
 ms.assetid: db7ddd34-4f23-46f5-84dd-8b0f83bb8729
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

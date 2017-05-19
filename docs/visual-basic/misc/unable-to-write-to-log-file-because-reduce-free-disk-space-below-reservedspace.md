@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLog_ReservedSpaceEncroached"
 ms.assetid: 95832e70-4ecc-47aa-90c1-f35c4d468151
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

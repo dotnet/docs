@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "pages, refreshing"
   - "refreshing pages"
 ms.assetid: 06dd1bbd-81c4-40ad-ac0d-7a5b326b1465
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

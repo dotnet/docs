@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "time zones [.NET Framework], creating"
   - "adjustment rule [.NET Framework]"
 ms.assetid: a6af8647-7893-4f29-95a9-d94c65a6e8dd
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

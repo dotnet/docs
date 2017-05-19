@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "assembly binding, attributes"
   - "assembly manifest, attributes"
 ms.assetid: 36a98a81-b5b5-4c19-912a-11f91eff7f4e
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -12,6 +12,8 @@ dev_langs:
 helpviewer_keywords: 
   - "#endif directive [C#]"
 ms.assetid: 6a5fca55-5aee-441f-86f6-1c99fbe9ec05
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"

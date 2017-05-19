@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "image encoders, using"
   - "image decoders, using"
 ms.assetid: 0e838ea1-4e7e-4334-b882-ab25df607b8b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

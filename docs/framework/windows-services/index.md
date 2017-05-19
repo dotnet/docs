@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "services"
   - ".NET applications, Windows applications"
 ms.assetid: ba72d648-9553-4849-b829-069ad5ea014b
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "ghogen"
 ms.author: "ghogen"

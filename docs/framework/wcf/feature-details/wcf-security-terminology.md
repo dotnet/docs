@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "security glossary [WCF]"
   - "security terms [WCF]"
 ms.assetid: 68dde024-8e51-40ba-804f-ec52d85e9ca9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"

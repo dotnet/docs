@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "QueryInterface call failures"
   - "MDAs (managed debugging assistants), COM visible classes"
 ms.assetid: 9ec1af27-604b-477e-9ee2-e833eb10d3ce
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

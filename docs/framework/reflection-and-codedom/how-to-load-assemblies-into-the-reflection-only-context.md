@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], reflection-only loader context"
   - "reflection-only loader context"
 ms.assetid: 9818b660-52f5-423d-a9af-e75163aa7068
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

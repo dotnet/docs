@@ -30,6 +30,8 @@ helpviewer_keywords:
   - "Keys.Alt enumeration member"
   - "modifier keys"
 ms.assetid: 1e184048-0ae3-4067-a200-d4ba31dbc2cb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

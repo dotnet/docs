@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "threading [.NET Framework], thread pool"
   - "threading [.NET Framework], pooling"
 ms.assetid: 2be05b06-a42e-4c9d-a739-96c21d673927
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"

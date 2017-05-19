@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Pane control type"
   - "control types, Pane"
 ms.assetid: 79761191-4449-4630-899c-9cbdb8867d3f
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 25
 author: "Xansky"
 ms.author: "mhopkins"

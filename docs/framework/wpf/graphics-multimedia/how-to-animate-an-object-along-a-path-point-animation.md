@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "animation, objects along paths (point animation)"
   - "point animation"
 ms.assetid: 1fa3f817-35bc-41a1-b366-f5a20b70da0c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

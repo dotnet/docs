@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "sounds, loading on separate threads"
   - "threading [Windows Forms], sounds"
 ms.assetid: 3b6a9296-1d5e-4d52-a4ba-94366d6fe302
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls, TextBox"
   - "TextBox control, how-to topics"
 ms.assetid: 006aa461-fe37-4cd8-860a-d38d76e8b9f7
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent

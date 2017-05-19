@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "ByRef keyword"
   - "ByRef keyword, contexts"
 ms.assetid: 4692e032-46f3-4e41-b0fa-3004364d9138
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

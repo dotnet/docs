@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Visual Basic code, procedures"
   - "procedures, calling"
 ms.assetid: 259b49a3-a3c1-4254-ba8c-73cdc4127703
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

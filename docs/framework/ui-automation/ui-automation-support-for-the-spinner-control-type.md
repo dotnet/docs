@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Spinner control type"
   - "control types, Spinner"
 ms.assetid: 3a29d185-65d8-42e3-bcc3-7f43e96f40c5
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 21
 author: "Xansky"
 ms.author: "mhopkins"

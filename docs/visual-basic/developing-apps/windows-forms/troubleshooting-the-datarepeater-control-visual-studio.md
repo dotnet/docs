@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "DataRepeater, troubleshooting"
 ms.assetid: c0ab9469-eced-4f52-aa18-4bd8dd4f1a9a
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

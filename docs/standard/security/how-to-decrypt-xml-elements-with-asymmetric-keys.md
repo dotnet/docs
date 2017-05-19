@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "XML encryption"
   - "decryption"
 ms.assetid: dd5de491-dafe-4b94-966d-99714b2e754a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "async method [C#]"
   - "async [C#]"
 ms.assetid: 16f14f09-b2ce-42c7-a875-e4eca5d50674
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 52
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "DataRepeater, data-binding"
   - "DataRepeater, displaying bound controls"
 ms.assetid: 56a15326-1334-4275-af4e-075cad79e6f7
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

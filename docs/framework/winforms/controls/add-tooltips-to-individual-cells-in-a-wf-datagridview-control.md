@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], adding tooltips"
   - "data grids, adding tooltips"
 ms.assetid: 2a81f9de-d58b-4ea8-bc0b-8d93c2f4cf78
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

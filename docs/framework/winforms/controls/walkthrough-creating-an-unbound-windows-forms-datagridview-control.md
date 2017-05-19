@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "data [Windows Forms], unbound"
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: 5a8d6afa-1b4b-4b24-8db8-501086ffdebe
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

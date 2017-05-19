@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "AndAlso operator"
   - "IsFalse operator"
 ms.assetid: 37fc9dbf-e5cc-4570-b93f-7213447974df
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

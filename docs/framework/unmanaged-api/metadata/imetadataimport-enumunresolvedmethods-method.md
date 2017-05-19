@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "EnumUnresolvedMethods method [.NET Framework metadata]"
   - "IMetaDataImport::EnumUnresolvedMethods method [.NET Framework metadata]"
 ms.assetid: eb3187d7-74cf-44b1-aeeb-7a8d2b60e3b7
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

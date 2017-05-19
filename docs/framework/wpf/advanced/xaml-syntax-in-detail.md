@@ -37,6 +37,8 @@ helpviewer_keywords:
   - "attribute syntax [XAML]"
   - "XAML, property element syntax"
 ms.assetid: 67cce290-ca26-4c41-a797-b68aabc45479
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

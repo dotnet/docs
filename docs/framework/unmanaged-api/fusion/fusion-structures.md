@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "structures [.NET Framework fusion]"
   - "unmanaged structures [.NET Framework], fusion"
 ms.assetid: 3feb4fc5-a1e9-445d-929c-0a7490244114
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

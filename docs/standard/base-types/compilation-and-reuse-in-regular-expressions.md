@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "pattern-matching with regular expressions, compilation"
   - "regular expressions, engines"
 ms.assetid: 182ec76d-5a01-4d73-996c-0b0d14fcea18
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Glyphs objects, drawing text"
   - "typography, Glyphs objects"
 ms.assetid: 587ab17e-a419-4ad5-b6da-8933a8e83d97
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

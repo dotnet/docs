@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "flicker, reducing in Windows Forms"
   - "buffering, double buffering"
 ms.assetid: dc484e33-7101-4e4b-ada5-d3c96155fbcd
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

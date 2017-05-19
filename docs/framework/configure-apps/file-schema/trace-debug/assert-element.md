@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<assert> element"
   - "assert element"
 ms.assetid: ef4c3229-b151-4d85-8091-e6456af9b935
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "combo boxes, in DataGridView control"
   - "combo boxes, accessing objects in DataGridViewComboBoxCell drop-down lists"
 ms.assetid: bcbe794a-d1fa-47f8-b5a3-5f085b32097d
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

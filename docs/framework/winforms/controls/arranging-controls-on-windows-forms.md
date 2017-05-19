@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "controls [Windows Forms], positioning"
   - "Windows Forms controls, positioning on form"
 ms.assetid: b2d62ed8-c391-4a7e-b72e-6bbabfca73dc
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

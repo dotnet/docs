@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "classes, FormatConvertedBitmap"
   - "grayscale, converting images to"
 ms.assetid: 77935ff0-4500-4307-9710-96999dcf579f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

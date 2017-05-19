@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "WCF [WCF], architecture"
   - "architecture [WCF]"
 ms.assetid: a3bcb0a1-56ea-4ba6-9736-d260d90dade5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"

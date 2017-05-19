@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "cryptography [.NET Framework], asymmetric"
   - "asymmetric encryption"
 ms.assetid: 7ecce51f-db5f-4bd4-9321-cceb6fcb2a77
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

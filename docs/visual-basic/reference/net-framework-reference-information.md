@@ -16,6 +16,8 @@ helpviewer_keywords:
   - ".NET Framework, reference"
   - ".NET Framework class library, reference information"
 ms.assetid: 8b202505-608b-4223-bbd9-2ace3d73e6cd
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Splitter control [Windows Forms]"
   - "views, multiple per frame"
 ms.assetid: 6f287407-e895-4b07-a46a-a5bff8388d46
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

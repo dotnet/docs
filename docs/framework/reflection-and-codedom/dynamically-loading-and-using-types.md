@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "implicit late binding"
   - "reflection, dynamically using types"
 ms.assetid: db985bec-5942-40ec-b13a-771ae98623dc
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

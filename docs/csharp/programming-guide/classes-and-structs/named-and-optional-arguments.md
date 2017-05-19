@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "parameters [C#], optional"
   - "named and optional arguments [C#]"
 ms.assetid: 839c960c-c2dc-4d05-af4d-ca5428e54008
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"

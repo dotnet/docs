@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], graphics"
   - "drawing"
 ms.assetid: eb0f6d6f-9e52-4167-9592-ff4b82fb5869
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

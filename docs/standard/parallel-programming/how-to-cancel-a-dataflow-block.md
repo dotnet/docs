@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "dataflow blocks, canceling in TPL"
   - "TPL dataflow library,canceling dataflow blocks"
 ms.assetid: fbddda0d-da3b-4ec8-a1d6-67ab8573fcd7
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

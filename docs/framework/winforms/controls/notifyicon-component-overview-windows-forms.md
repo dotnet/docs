@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "system tray icons, about system tray icons"
   - "system tray icons, using in Windows Forms"
 ms.assetid: 5b9189fa-d4ae-41a6-9b97-eb1f44bb1a69
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

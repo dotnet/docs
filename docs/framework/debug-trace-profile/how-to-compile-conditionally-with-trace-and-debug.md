@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "TRACE directive"
   - "conditional compilation, tracing code"
 ms.assetid: 56d051c3-012c-42c1-9a58-7270edc624aa
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

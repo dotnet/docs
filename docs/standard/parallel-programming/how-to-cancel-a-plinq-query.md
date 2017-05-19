@@ -12,6 +12,8 @@ helpviewer_keywords:
   - "PLINQ queries, how to cancel"
   - "cancellation, PLINQ"
 ms.assetid: 80b14640-edfa-4153-be1b-3e003d3e9c1a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

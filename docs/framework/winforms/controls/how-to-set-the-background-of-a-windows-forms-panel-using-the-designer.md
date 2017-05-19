@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Panel control [Windows Forms], background"
   - "colors, Windows Forms Panel controls"
 ms.assetid: db83cf54-3c69-4b08-ac6c-25b9b5abb1b0
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

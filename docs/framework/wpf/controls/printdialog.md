@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "controls [WPF], PrintDialog"
   - "PrintDialog control [WPF]"
 ms.assetid: 0ce9e3e7-206f-45ec-b845-4c05cfb5ff1d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 74
 author: dotnet-bot
 ms.author: dotnetcontent

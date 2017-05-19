@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "classes [C#], constructors"
   - "C# language, constructors"
 ms.assetid: df2e2e9d-7998-418b-8e7d-890c17ff6c95
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"

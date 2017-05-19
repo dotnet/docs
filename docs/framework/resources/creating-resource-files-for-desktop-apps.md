@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "application resources, creating files"
   - "resource files, creating"
 ms.assetid: 6c5ad891-66a0-4e7a-adcf-f41863ba6d8d
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 25
 author: "rpetrusha"
 ms.author: "ronpet"

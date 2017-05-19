@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "security [.NET Framework], unmanaged code"
   - "secure coding, unmanaged code"
 ms.assetid: a8d15139-d368-4c9c-a747-ba757781117c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

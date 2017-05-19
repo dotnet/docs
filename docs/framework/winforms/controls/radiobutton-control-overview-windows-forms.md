@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "radio buttons, determining state"
   - "radio buttons, about radio buttons"
 ms.assetid: cd11f0c2-d098-4022-adf9-1455bc166a13
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

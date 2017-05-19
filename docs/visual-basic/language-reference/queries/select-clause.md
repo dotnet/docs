@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Select clause"
   - "queries [Visual Basic], Select"
 ms.assetid: 27a3f61c-5960-4692-9b91-4d0c4b6178fe
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

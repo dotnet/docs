@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetAssemblyInfo method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetAssemblyInfo method [.NET Framework profiling]"
 ms.assetid: 7a3c97c3-1e31-47b1-bf23-386785c509c4
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 20

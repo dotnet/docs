@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "performance"
   - "WPF, performance"
 ms.assetid: c649a20f-8b7e-4a38-9b80-74839298d406
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

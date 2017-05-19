@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "WCF, security"
   - "Claimset class"
 ms.assetid: 389b5a57-4175-4bc0-ada0-fc750d51149f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "BrucePerlerMS"
 ms.author: "bruceper"

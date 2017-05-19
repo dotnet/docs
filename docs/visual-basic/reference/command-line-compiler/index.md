@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "compiler options, Visual Basic"
   - "Visual Basic compiler, options"
 ms.assetid: 6b57c444-50c7-4b88-8f59-ed65cff5e05c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

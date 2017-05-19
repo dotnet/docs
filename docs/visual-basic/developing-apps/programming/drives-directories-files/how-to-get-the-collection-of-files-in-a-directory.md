@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "folders, working with"
   - "files, accessing"
 ms.assetid: 6c8ba7e8-dd37-4853-92bf-762b67c98160
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

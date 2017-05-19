@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], binding to a factory object"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 7d59af89-ff82-41d8-a48a-f1fbae788b0d
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

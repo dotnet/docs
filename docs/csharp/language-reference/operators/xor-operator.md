@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "^ operator [C#]"
   - "bitwise exclusive OR operator [C#]"
 ms.assetid: b09bc815-570f-4db6-a637-5b4ed99d014a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

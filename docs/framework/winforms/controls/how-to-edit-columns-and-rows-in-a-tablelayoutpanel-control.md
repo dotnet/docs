@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "TableLayoutPanel control [Windows Forms], editing"
   - "rows [Windows Forms], editing"
 ms.assetid: c367ed43-40dc-49eb-9e0f-ba70e83dfec0
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "utf8output compiler option [Visual Basic]"
   - "/utf8output compiler option [Visual Basic]"
 ms.assetid: 8ab36b1e-027a-49ac-85b4-f48997d9e4d6
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

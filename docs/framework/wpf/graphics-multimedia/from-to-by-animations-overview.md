@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "animation, From/to/by"
   - "From/to/by animation"
 ms.assetid: 516fce0a-e7f8-49b8-b018-53b3d409a8a3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

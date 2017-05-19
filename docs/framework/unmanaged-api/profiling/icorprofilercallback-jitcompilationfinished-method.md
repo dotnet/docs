@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "JITCompilationFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITCompilationFinished method [.NET Framework profiling]"
 ms.assetid: 8dcd7537-d0c6-498c-8a56-2c060310ef65
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

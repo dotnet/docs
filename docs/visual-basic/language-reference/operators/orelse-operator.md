@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "short-circuit evaluation"
   - "OrElse operator [Visual Basic]"
 ms.assetid: 253803d8-05b0-47d7-b213-abd222847779
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

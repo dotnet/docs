@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "cryptographic algorithms"
   - "names [.NET Framework], algorithm mapping"
 ms.assetid: 01327c69-c5e1-4ef6-b73f-0a58351f0492
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"

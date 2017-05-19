@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "image codecs, listing"
   - "image decoders, listing"
 ms.assetid: 11417191-8c95-40ca-8024-779e61706fb6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

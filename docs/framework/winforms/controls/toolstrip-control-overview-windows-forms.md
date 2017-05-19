@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "what's new [Windows Forms], toolbars"
 ms.assetid: 81d067ed-297c-4dad-90de-1bcac15336ec
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

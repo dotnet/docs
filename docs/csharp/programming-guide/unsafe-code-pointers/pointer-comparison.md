@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "pointers [C#], comparison"
 ms.assetid: fcafd514-7405-4deb-8490-cc58efda5495
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

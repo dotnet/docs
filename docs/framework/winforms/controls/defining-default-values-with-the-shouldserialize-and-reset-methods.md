@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Reset method"
   - "ShouldPersist method"
 ms.assetid: 7b6c5e00-3771-46b4-9142-5a80d5864a5e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

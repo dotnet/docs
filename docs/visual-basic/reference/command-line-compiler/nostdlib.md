@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "-nostdlib compiler option [Visual Basic]"
   - "/nostdlib compiler option [Visual Basic]"
 ms.assetid: 140381b8-dc96-4ad5-ae11-792c9ed0be4d
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

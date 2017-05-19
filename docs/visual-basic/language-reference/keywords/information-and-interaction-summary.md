@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "information functions [Visual Basic]"
   - "interaction functions [Visual Basic]"
 ms.assetid: 6e698461-e944-4c0f-ae48-87429f1fe740
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

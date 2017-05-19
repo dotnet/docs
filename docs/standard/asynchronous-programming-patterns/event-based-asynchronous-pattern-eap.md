@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "asynchronous programming, design patterns"
   - "asynchronous programming"
 ms.assetid: c6baed9f-2a25-4728-9a9a-53b7b14840cf
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

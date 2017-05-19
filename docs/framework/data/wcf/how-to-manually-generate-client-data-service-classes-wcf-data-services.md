@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WCF Data Services, configuring"
   - "WCF Data Services, client library"
 ms.assetid: b98cb1d6-956a-4e50-add6-67e4f2587346
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"

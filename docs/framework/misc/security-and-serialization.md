@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "secure coding, serialization"
   - "security [.NET Framework], serialization"
 ms.assetid: b921bc94-bd3a-4c91-9ede-2c8d4f78ea9a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

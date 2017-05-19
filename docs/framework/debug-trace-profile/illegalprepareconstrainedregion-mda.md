@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "IllegalPrepareConstrainedRegions MDA"
   - "MDAs (managed debugging assistants), illegal PrepareConstrainedRegions"
 ms.assetid: 2f9b5031-f910-4e01-a196-f89eab313eaf
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

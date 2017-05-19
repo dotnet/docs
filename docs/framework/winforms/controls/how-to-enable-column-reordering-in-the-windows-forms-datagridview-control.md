@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "data grids, reordering columns"
   - "columns [Windows Forms], reordering"
 ms.assetid: cc20eae3-e4db-493f-95ce-a4215e29472a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

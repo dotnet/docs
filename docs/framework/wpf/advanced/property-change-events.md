@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "identifying changed property events [WPF]"
   - "property triggers [WPF], definition of"
 ms.assetid: 0a7989df-9674-4cc1-bc50-5d8ef5d9c055
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

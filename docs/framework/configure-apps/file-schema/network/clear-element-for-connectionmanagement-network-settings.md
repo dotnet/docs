@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "clear element, connectionManagement"
   - "<connectionManagement>, clear element"
 ms.assetid: fb259282-84c4-4dc4-a226-78d904a6edc3
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"

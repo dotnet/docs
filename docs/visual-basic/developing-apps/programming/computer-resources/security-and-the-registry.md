@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "security [Visual Basic], registry"
   - "registry, security issues"
 ms.assetid: 9980aff7-2f69-492b-8f66-29a9a76d3df5
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

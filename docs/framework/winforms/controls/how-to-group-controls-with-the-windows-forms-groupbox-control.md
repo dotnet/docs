@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "GroupBox control [Windows Forms], grouping controls"
   - "Windows Forms controls, grouping"
 ms.assetid: 0bda316d-bd2a-43aa-ac73-342453303169
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

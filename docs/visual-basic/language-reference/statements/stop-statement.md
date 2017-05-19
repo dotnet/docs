@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "processes, interrupting"
   - "execution, stopping"
 ms.assetid: c9a9fde0-d649-4662-9bef-bd0146ebc2a7
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

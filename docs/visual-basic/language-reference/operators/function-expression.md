@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "functions [Visual Basic], function expressions"
   - "lambda expressions [Visual Basic], function expression"
 ms.assetid: e8a47a45-4b8a-4f45-a623-7653625dffbc
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

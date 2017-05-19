@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "property pages, creating"
   - "tab dialog boxes"
 ms.assetid: 915091af-93ac-4d3d-8283-738dd2d21ea7
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

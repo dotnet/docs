@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "WCF, custom bindings"
   - "WCF, security"
 ms.assetid: 8b847e91-69a3-49e1-9e5f-0c455e50d804
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"

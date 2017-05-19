@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Visual C#, keywords"
   - "@ keyword"
 ms.assetid: e929b0f2-4b92-4d37-8060-23d323b098ad
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

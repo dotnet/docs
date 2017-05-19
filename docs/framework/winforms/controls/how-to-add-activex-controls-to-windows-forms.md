@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "forms, adding ActiveX controls"
   - "ActiveX controls [Windows Forms], adding"
 ms.assetid: 54a61e5b-555e-4887-b41e-6244fed271eb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

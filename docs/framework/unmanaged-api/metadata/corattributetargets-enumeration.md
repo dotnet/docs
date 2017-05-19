@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorAttributeTargets enumeration [.NET Framework metadata]"
 ms.assetid: 694c0fa0-7011-41a9-9dfd-f0e16ea574b5
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

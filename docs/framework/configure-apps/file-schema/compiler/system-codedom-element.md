@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "system.codedom element"
   - "<system.codedom> element"
 ms.assetid: 672a68f7-e69f-4479-ac30-e980085ec4fe
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"

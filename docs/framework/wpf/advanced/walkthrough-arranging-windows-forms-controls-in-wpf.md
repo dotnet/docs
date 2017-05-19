@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "arranging controls"
 ms.assetid: a1db8049-15c7-45d6-ae3d-36a6735cb848
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent

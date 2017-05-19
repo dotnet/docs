@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "writing to files, walkthroughs"
   - "I/O [Visual Basic], reading text from files"
 ms.assetid: cae77565-9f78-4e46-8e42-eb2f9f8e1ffd
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 49
 author: dotnet-bot
 ms.author: dotnetcontent

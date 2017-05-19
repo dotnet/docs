@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "C# language, delegates"
   - "delegates [C#]"
 ms.assetid: 97de039b-c76b-4b9c-a27d-8c1e1c8d93da
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"

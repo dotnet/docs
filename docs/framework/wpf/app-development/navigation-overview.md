@@ -29,6 +29,8 @@ helpviewer_keywords:
   - "programmatic navigation [WPF]"
   - "hyperlinks [WPF]"
 ms.assetid: 86ad2143-606a-4e34-bf7e-51a2594248b8
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 69
 author: dotnet-bot
 ms.author: dotnetcontent

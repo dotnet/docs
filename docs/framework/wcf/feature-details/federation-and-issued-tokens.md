@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "issued tokens [WCF]"
   - "federation [WCF], issued tokens"
 ms.assetid: 4c31ee7d-a820-4067-8b84-a83049021bb6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"

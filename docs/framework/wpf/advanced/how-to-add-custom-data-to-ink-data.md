@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "ink data, adding custom data"
   - "InkCanvas, displaying"
 ms.assetid: f02aac6f-3436-4f7c-b6ea-0452cba5332c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

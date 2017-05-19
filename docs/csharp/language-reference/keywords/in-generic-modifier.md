@@ -11,6 +11,8 @@ helpviewer_keywords:
   - "contravariance, in keyword [C#]"
   - "in keyword [C#]"
 ms.assetid: 3a778c36-8aed-4ebe-aa8b-39f4057215b1
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

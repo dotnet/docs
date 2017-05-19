@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "unexposed members"
   - "managed HTML DOM, accessing unexposed members"
 ms.assetid: 762295bd-2355-4aa7-b43c-5bff997a33e6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

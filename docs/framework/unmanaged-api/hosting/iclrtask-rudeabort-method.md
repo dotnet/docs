@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "RudeAbort method, ICLRTask interface [.NET Framework hosting]"
   - "ICLRTask::RudeAbort method [.NET Framework hosting]"
 ms.assetid: b5785468-fcd7-4cc3-8a5d-8796337b53fc
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

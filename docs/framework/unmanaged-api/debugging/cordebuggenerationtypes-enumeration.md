@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugGenerationTypes enumeration [.NET Framework debugging]"
 ms.assetid: 9f25b64f-eedd-4ae5-8b0e-cfdfb9b6c5d8
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 3

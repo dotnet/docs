@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], walkthroughs"
   - "ToolStrip control [Windows Forms], creating professionally styled controls"
 ms.assetid: b52339ae-f1d3-494e-996e-eb455614098a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "<exception> XML tag"
   - "exception XML tag"
 ms.assetid: c0517549-171e-4dae-ab88-a9c1700b6eee
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

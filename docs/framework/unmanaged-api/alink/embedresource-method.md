@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EmbedResource method"
 ms.assetid: 667bd954-6dc6-4020-a3cb-0e8224179993
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

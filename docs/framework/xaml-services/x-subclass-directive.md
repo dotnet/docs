@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "XAML [XAML Services], x:Subclass attribute"
   - "Subclass attribute in XAML [XAML Services]"
 ms.assetid: 99f66072-8107-4362-ab99-8171dc83b469
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 20
 author: "wadepickett"
 ms.author: "wpickett"

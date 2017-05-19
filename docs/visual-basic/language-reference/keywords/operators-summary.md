@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "symbols, operators"
   - "Visual Basic code, operators"
 ms.assetid: cb44c210-686f-4417-a13f-51c0d60161f8
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "drag and drop [WPF]"
   - "drag-and-drop [WPF]"
 ms.assetid: 77c48920-8c8b-41eb-8fe8-b411962c8623
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 85
 author: dotnet-bot
 ms.author: dotnetcontent

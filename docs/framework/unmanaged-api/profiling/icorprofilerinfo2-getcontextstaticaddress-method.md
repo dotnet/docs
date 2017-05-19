@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetContextStaticAddress method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetContextStaticAddress method [.NET Framework profiling]"
 ms.assetid: 2b374116-0972-416a-8cf5-79213129be9a
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 23

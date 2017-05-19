@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "&& operator [C#]"
   - "logical AND operator [C#]"
 ms.assetid: 2e4f0a1c-92a3-40f8-8e3b-17b607f20c31
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

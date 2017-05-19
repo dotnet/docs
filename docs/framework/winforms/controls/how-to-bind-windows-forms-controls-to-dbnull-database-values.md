@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], BindingSource component"
   - "controls [Windows Forms], binding to DBNull values"
 ms.assetid: 96494e6f-5f40-4f83-af97-bbd7192c2af8
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

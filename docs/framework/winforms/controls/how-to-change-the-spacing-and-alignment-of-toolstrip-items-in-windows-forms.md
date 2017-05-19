@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "toolbars [Windows Forms], aligning items"
 ms.assetid: cd483466-0f49-43df-addf-e2b5fcd64027
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSymAttributePreRemap method [.NET Framework debugging]"
   - "ISymUnmanagedReader2::GetSymAttributePreRemap method [.NET Framework debugging]"
 ms.assetid: 7580d546-a709-40c5-ad02-aa70d774fd0b
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

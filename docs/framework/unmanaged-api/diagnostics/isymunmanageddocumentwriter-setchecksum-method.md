@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedDocumentWriter::SetCheckSum method [.NET Framework debugging]"
   - "SetCheckSum method [.NET Framework debugging]"
 ms.assetid: c7e99879-421f-43ce-b193-34733cf30085
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

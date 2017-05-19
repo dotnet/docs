@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "Default keyword [Visual Basic]"
   - "default properties"
 ms.assetid: 45fce9b9-d212-4b2d-ab86-6e359b8b57af
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

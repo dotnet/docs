@@ -13,6 +13,8 @@ dev_langs:
 helpviewer_keywords: 
   - "yield keyword [C#]"
 ms.assetid: 1089194f-9e53-46a2-8642-53ccbe9d414d
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 46
 author: "BillWagner"
 ms.author: "wiwagn"

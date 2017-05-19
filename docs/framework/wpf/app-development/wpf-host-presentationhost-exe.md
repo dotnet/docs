@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WPF Host application"
   - "PresentationHost.exe"
 ms.assetid: 3215bfa1-722c-4ac8-a7c5-bdd02d30afbd
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

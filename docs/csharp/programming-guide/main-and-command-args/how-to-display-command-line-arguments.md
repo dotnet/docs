@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "command-line arguments [C#], displaying"
 ms.assetid: b8479f2d-9e05-4d38-82da-2e61246e5437
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

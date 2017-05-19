@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], creating simple controls using code"
   - "Control class, Windows Forms"
 ms.assetid: 86cbe435-45b7-4cb4-9b5a-47418369758d
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

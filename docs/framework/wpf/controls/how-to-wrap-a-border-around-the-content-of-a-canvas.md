@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Canvas control, wrapping with Border"
   - "Border control, wrapping Canvas"
 ms.assetid: caf0404f-f4e7-484f-9928-5dae1238d8ef
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

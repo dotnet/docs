@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsOSSuspended method [.NET Framework debugging]"
   - "ICorDebugProcess::IsOSSuspended method [.NET Framework debugging]"
 ms.assetid: 83406cb2-5797-4402-872d-89c9516aefec
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

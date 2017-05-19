@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Timelines, description"
   - "duration of animations"
 ms.assetid: 155034ef-7d00-4416-a73c-b1713992d2eb
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

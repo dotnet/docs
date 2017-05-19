@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "opacity, animating"
   - "animation, Opacity property"
 ms.assetid: 572af23b-39dd-48d1-9db5-4bca56a4b3d3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "writing extension methods"
   - "extension methods [Visual Basic]"
 ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

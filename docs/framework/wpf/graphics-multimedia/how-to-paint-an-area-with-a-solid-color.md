@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "brushes, painting with solid colors"
   - "painting, with solid colors"
 ms.assetid: 5d27d8a7-4bd7-4063-bdf3-2c5c0f19f9d3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

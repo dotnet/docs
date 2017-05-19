@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "graphics, printing"
   - "printing [Windows Forms], graphics"
 ms.assetid: 32b891e6-52ff-4fea-a9ff-2ce5db20a4c6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

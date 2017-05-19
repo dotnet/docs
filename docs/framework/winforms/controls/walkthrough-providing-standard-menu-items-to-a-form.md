@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "StatusStrip control [Windows Forms]"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: dac37d98-589e-4d6d-9673-6437e8943122
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

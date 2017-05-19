@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo4::EnumThreads method [.NET Framework profiling]"
   - "EnumThreads method, ICorProfilerInfo4 interface [.NET Framework profiling]"
 ms.assetid: bca7a5b4-c207-4894-918c-0733926296dd
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

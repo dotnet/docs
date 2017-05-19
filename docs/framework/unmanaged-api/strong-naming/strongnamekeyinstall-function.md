@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameKeyInstall function [.NET Framework strong naming]"
 ms.assetid: e32fd546-7757-4681-be3d-658e93281e50
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

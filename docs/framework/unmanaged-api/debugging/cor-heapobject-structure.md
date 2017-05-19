@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_HEAPOBJECT structure [.NET Framework debugging]"
 ms.assetid: a92fdf95-492b-49ae-a741-2186e5c1d7c5
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

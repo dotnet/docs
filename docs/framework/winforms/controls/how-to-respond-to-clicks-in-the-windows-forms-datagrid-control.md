@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], DataGrid control"
   - "DataGrid control [Windows Forms], click events"
 ms.assetid: a0aa204b-8351-4d82-9933-ee21a5c9e409
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

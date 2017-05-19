@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "bitmap effects"
 ms.assetid: 23cb338e-4b59-4b52-b294-96431f9c9568
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent

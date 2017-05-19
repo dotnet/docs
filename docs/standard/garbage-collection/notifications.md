@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "garbage collection, notifications"
 ms.assetid: e12d8e74-31e3-4035-a87d-f3e66f0a9b89
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"

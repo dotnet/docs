@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "column-separating attributes"
   - "documents, FlowDocument column-separating attributes"
 ms.assetid: c7a822f8-aeca-45bd-a258-2852ff28005c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

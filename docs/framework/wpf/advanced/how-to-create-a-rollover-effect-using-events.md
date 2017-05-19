@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "rollover effect"
   - "element colors, changing"
 ms.assetid: 3b20d028-6f1c-4b25-95d2-fa68cefbdb4c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

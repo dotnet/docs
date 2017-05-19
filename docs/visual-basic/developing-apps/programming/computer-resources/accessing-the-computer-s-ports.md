@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "serial ports"
   - "My.Computer.Ports object, tasks"
 ms.assetid: b04a2f76-992a-4585-ab41-8bbbdbd554a1
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

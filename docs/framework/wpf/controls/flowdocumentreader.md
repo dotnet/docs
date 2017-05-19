@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls [WPF], FlowDocumentReader"
   - "FlowDocumentReader control [WPF]"
 ms.assetid: ba7aaa70-f77b-4555-a79d-68a12c8e134b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 66
 author: dotnet-bot
 ms.author: dotnetcontent

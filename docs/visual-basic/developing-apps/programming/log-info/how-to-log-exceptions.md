@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "exceptions, logging"
   - "exceptions, tracking"
 ms.assetid: a26c60e2-ae39-444a-aebb-33eccadc0eeb
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

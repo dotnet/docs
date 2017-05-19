@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "images [Windows Forms], adding to ImageList component"
   - "images [Windows Forms], displaying with controls"
 ms.assetid: c5eacc56-f769-4e2e-bfb7-f756620913db
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

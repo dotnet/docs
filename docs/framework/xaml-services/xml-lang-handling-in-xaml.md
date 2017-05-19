@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "RFC 3066 standard [XAML Services]"
   - "standards [XAML Services], RFC 3066"
 ms.assetid: 7aac0078-a1c5-41f8-b8b0-975510d9dca0
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: "wadepickett"
 ms.author: "wpickett"

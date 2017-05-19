@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], text boxes"
   - "RichTextBox control [Windows Forms], linking to Web pages"
 ms.assetid: 95089a37-a202-4f7a-94ee-6ee312908851
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

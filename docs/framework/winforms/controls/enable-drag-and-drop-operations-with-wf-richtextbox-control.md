@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "text boxes, drag-and-drop operations"
   - "RichTextBox control [Windows Forms], drag-and-drop operations"
 ms.assetid: ca167d1c-2014-4cf0-96a0-20598470be3b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

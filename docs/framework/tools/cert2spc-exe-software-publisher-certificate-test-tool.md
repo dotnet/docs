@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "Cert2spc.exe"
   - "certificates, Software Publisher's Certificate"
 ms.assetid: be434d7d-9c0d-46e7-8392-58a9b542d11d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

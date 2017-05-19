@@ -16,6 +16,8 @@ helpviewer_keywords:
   - ".NET Framework 4, hosting interfaces"
   - "interfaces [.NET Framework hosting], version 4"
 ms.assetid: f6af6116-f5b0-4bda-a276-fffdba70893d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"

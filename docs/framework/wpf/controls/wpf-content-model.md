@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "arbitrary content classes [WPF], content model"
   - "ContentControl class [WPF], displaying content"
 ms.assetid: 214da5ef-547a-4cf8-9b07-4aa8a0e52cdd
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

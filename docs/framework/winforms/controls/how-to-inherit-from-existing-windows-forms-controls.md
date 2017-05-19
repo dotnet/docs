@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "inheritance, Windows Forms custom controls"
   - "custom controls [Windows Forms], inheritance"
 ms.assetid: 1e1fc8ea-c615-4cf0-a356-16d6df7444ab
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "remarks C# XML tag"
   - "<remarks> C# XML tag"
 ms.assetid: f8641391-31f3-4735-af7a-c502a5b6a251
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

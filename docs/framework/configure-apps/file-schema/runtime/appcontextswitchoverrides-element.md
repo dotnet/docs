@@ -16,6 +16,9 @@ helpviewer_keywords:
   - "configuration switches"
   - "configuration"
 ms.assetid: 4ce07f47-7ddb-4d91-b067-501bd8b88752
+ms.technology: 
+  - "dotnet-standard"
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

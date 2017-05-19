@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "TextBox control [Windows Forms], displaying quotation marks"
   - "quotation marks, adding to strings in text boxes"
 ms.assetid: 68bdc3f3-4177-4eab-99cd-cac17a82b515
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

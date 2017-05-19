@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "JITFunctionPitched method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITFunctionPitched method [.NET Framework profiling]"
 ms.assetid: 116085df-7a77-404a-afac-d0557a12b986
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

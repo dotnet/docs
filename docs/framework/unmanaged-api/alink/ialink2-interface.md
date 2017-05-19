@@ -16,6 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IALink2 interface"
 ms.assetid: fba62a55-36bd-401e-bcd2-5be8e2d34891
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

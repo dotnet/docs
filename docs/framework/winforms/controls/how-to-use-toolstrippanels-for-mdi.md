@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "ToolStripPanel control [Windows Forms], using for MDI"
   - "toolbars [Windows Forms], using for MDI"
 ms.assetid: d6b884fc-0846-465f-83c3-5dc0fe93b00f
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

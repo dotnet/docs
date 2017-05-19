@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Clrver.exe"
   - "CLR Version tool"
 ms.assetid: cbc2ee86-bdc8-4a65-a8f1-ba23bce3a699
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

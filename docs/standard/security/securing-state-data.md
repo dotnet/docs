@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "secure coding, state data"
   - "state data security"
 ms.assetid: 12671309-2877-43fe-a3df-6863507e712d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "encryption [.NET Framework], creating cryptographic schemes"
   - "cryptography [.NET Framework], creating cryptographic schemes"
 ms.assetid: d40c509f-5a5e-46cc-94cb-a951e9ab6843
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

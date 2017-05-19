@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "conditional statements, GoTo statement"
   - "GoTo statement, syntax"
 ms.assetid: 313274c2-8ab3-4b9c-9ba3-0fd6798e4f6d
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

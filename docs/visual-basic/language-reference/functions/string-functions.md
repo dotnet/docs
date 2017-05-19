@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "string functions"
 ms.assetid: f1bf9ac2-cbcf-4298-ae51-53182076bdc8
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

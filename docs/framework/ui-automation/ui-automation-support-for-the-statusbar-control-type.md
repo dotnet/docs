@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, Status Bar control type"
   - "control types, Status Bar"
 ms.assetid: 48dee94a-5119-4939-a4c7-ffeaf794c732
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "ExceptionThrown_V1 event [.NET Framework]"
   - "ETW, ExceptionThrown_V1 event (CLR)"
 ms.assetid: 0d3da389-6b7b-40f6-a877-fac546d6019c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

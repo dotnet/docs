@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "DataRepeater"
   - "DataRepeater, virtual mode"
 ms.assetid: 5fb805dc-2d8b-4139-b1e3-86e4c2667221
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

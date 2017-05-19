@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "isolated storage, enumerating stores"
   - "data stores, enumerating"
 ms.assetid: 0fcf279a-f241-48f0-8034-2e3d331f1fcb
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

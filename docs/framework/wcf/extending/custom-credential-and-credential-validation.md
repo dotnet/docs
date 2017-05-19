@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "credential validation [WCF]"
   - "credentials [WCF], validation"
 ms.assetid: da831bec-e281-4d44-b343-437b5eef688e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

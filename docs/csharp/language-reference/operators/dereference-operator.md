@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "member access operator (->) [C#]"
   - "-> operator [C#]"
 ms.assetid: e39ccdc1-f1ff-4a92-bf1d-ac2c8c11316a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

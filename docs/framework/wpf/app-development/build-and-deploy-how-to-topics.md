@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "WPF application, building"
   - "WPF application, deploying"
 ms.assetid: 88952ad2-5b74-48ca-a4c5-3f4fbb53ce12
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 82
 author: dotnet-bot
 ms.author: dotnetcontent

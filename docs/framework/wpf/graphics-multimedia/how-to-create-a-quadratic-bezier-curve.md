@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "quadratic Bezier curves, creating"
   - "graphics [WPF], quadratic Bezier curves"
 ms.assetid: cd8fca4a-504e-4fd8-92ea-2969065a6e02
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

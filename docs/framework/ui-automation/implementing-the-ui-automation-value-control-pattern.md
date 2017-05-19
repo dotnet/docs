@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, Value control pattern"
   - "Value control pattern"
 ms.assetid: b0fcdd87-3add-4345-bca9-e891205e02ba
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 25
 author: "Xansky"
 ms.author: "mhopkins"

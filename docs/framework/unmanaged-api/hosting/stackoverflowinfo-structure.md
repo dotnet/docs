@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "StackOverflowInfo structure [.NET Framework hosting]"
 ms.assetid: 519389f2-0217-436c-99d4-93a76ebce5b5
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], endpoints"
   - "WCF [WCF], endpoints"
 ms.assetid: 9ddc46ee-1883-4291-9926-28848c57e858
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"

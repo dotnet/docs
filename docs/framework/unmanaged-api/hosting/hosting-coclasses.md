@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "unmanaged coclasses [.NET Framework], hosting"
   - "coclasses [.NET Framework hosting]"
 ms.assetid: e32d8667-58ee-4760-814f-d22963881622
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

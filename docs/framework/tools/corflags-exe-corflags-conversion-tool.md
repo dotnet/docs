@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "CorFlags.exe"
   - "portable executable files, CorFlags section"
 ms.assetid: ef900f8f-71ca-4dde-9b8c-95ddb0d7d89c
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

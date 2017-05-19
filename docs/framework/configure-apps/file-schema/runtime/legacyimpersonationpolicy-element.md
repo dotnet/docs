@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<legacyImpersonationPolicy> element"
   - "legacyImpersonationPolicy element"
 ms.assetid: 6e00af10-42f3-4235-8415-1bb2db78394e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

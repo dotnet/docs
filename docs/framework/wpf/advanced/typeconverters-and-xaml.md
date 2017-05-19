@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "TypeConverter class"
   - "XAML, TypeConverter class"
 ms.assetid: f6313e4d-e89d-497d-ac87-b43511a1ae4b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Sign tool"
   - "SignTool.exe"
 ms.assetid: 0c25ff6c-bff3-422e-b017-146a3ee86cb9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"

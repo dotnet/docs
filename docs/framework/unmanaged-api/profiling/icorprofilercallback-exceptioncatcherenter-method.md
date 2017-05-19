@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerCallback::ExceptionCatcherEnter method [.NET Framework profiling]"
   - "ExceptionCatcherEnter method [.NET Framework profiling]"
 ms.assetid: 41462329-a648-46f0-ae6d-728b94c31aa9
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

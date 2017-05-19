@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "gradients, creating path"
   - "graphics paths, creating gradient"
 ms.assetid: 1948e834-e104-481c-b71d-d8aa9e4d106e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

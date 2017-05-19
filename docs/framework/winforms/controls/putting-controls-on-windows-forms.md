@@ -16,6 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Windows Forms controls, adding to form"
 ms.assetid: 997508f2-87e5-4bec-a78e-9eec8f1fb15b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

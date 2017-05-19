@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "generics [C#], benefits"
 ms.assetid: 80f037cd-9ea7-48be-bfc1-219bfb2d4277
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"

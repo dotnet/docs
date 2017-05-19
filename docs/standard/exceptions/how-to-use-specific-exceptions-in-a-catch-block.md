@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "try/catch blocks"
   - "catch blocks"
 ms.assetid: 12af9ff3-8587-4f31-90cf-6c2244e0fdae
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

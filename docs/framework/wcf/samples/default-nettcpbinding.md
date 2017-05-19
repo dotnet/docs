@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Net profile TCP"
 ms.assetid: e8475fe6-0ecd-407a-8e7e-45860561bb74
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 39
 author: "Erikre"
 ms.author: "erikre"

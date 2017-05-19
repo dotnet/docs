@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "ANSI, Visual Basic"
   - "ANSI"
 ms.assetid: 4f1fa6ff-5557-41ab-b6da-90baf4c15917
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

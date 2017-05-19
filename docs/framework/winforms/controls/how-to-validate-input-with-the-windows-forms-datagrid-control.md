@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "DataGrid control [Windows Forms], validating input"
   - "validation, user input"
 ms.assetid: f1e9c3a0-d0a1-4893-a615-b4b0db046c63
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

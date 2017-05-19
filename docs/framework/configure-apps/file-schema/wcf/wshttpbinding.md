@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "wsHttpBinding Element"
 ms.assetid: 0eee8ced-ad68-427d-b95a-97260e98deed
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 30
 author: "Erikre"
 ms.author: "erikre"

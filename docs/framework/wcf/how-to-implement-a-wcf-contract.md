@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "service contracts [WCF], implementing"
 ms.assetid: d5ab51ba-61ae-403e-b3c8-e2669e326806
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 38
 author: "Erikre"
 ms.author: "erikre"

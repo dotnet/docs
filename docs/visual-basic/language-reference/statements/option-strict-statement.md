@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "late binding"
   - "implicit conversions"
 ms.assetid: 5883e0c1-a920-4274-8e46-b0ff047eaee5
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 49
 author: dotnet-bot
 ms.author: dotnetcontent

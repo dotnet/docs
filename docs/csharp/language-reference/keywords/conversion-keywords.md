@@ -12,6 +12,8 @@ helpviewer_keywords:
   - "type conversion [C#], keywords"
   - "types [C#], conversion keywords"
 ms.assetid: 8683ff14-5289-4efe-b4f5-1e6a075918ab
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

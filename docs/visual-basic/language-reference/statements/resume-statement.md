@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "execution"
   - "Resume statement"
 ms.assetid: e24d058b-1a5c-4274-acb9-7d295d3ea537
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

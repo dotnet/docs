@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "+= operator [Visual Basic], appending strings"
   - "compound assignment statements"
 ms.assetid: d3e959f4-85d4-4e47-87c4-77b62335a5b3
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

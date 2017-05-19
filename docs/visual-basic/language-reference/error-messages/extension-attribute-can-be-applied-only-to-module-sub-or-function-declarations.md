@@ -17,6 +17,8 @@ dev_langs:
 helpviewer_keywords: 
   - "BC36550"
 ms.assetid: 4387a51f-733c-45d7-abdb-eb64d4f51078
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

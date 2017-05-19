@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "animation, FrameworkElement size"
   - "FrameworkElement, animating size of"
 ms.assetid: d4cd5a13-c20d-4a6f-a2ba-14f2c9ce4cef
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

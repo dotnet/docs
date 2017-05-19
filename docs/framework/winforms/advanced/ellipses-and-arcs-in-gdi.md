@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "ellipses"
   - "drawing, arcs"
 ms.assetid: 34f35133-a835-4ca4-81f6-0dfedee8b683
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

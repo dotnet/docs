@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "line segments, creating"
   - "graphics [WPF], line segments"
 ms.assetid: 0155ed47-a20d-49a7-a306-186d8e07fbc4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

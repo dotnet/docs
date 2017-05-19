@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "IAsyncResult interface, calling asynchronous methods"
   - "stopping asynchronous operations"
 ms.assetid: 07fba116-045b-473c-a0b7-acdbeb49861f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

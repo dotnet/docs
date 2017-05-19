@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "FontDialog component [Windows Forms]"
   - "Font dialog box, Windows Forms"
 ms.assetid: 54015df3-aab2-4338-84e5-ba78cedbfdfc
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], changing column type"
   - "data [Windows Forms], displaying"
 ms.assetid: 7f994d45-600d-4190-a187-35803214b40c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

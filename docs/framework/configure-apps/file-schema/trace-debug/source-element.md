@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<source> element"
   - "source element"
 ms.assetid: ecf86505-735d-4844-aaba-266fdd134218
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"

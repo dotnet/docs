@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetCurrentAllocated method [.NET Framework hosting]"
   - "ICLRAppDomainResourceMonitor::GetCurrentAllocated method [.NET Framework hosting]"
 ms.assetid: 7bab209c-efd4-44c2-af30-61abab0ae2fc
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

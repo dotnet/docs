@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "operators [C#], conversion"
   - "user-defined conversions [C#]"
 ms.assetid: c5ad73a3-d57b-4d2b-b4c9-24e3c2856efc
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

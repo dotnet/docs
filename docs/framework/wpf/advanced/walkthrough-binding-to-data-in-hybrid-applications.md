@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "data binding [WPF interoperability]"
 ms.assetid: 18997e71-745a-4425-9c69-2cbce1d8669e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 39
 author: dotnet-bot
 ms.author: dotnetcontent

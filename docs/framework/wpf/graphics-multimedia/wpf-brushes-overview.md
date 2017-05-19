@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "brushes, about brushes"
 ms.assetid: ecea1955-420b-45c6-bf43-c1404c072c41
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

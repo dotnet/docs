@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostTaskManager::SwitchToTask method [.NET Framework hosting]"
   - "SwitchToTask method [.NET Framework hosting]"
 ms.assetid: 35d0c27e-4b14-49ce-810d-7ab2120177e8
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

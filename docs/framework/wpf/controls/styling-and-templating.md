@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "styles, triggers"
   - "styles, event triggers"
 ms.assetid: 481765e5-5467-4a75-9f7b-e10e2ac410d9
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent

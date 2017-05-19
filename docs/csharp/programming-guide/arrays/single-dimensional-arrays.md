@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "single-dimensional arrays [C#]"
   - "arrays [C#], single-dimensional"
 ms.assetid: 2cec1196-1de0-49d2-baf2-c607c33310e8
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

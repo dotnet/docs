@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "dependentAssembly element"
   - "<dependentAssembly> element"
 ms.assetid: 14e95627-dd79-4b82-ac85-e682aa3a31d8
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

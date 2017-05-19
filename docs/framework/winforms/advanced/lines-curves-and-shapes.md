@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "lines, drawing"
   - "curves, drawing"
 ms.assetid: ace6e8d4-4e94-486b-9681-758a6667dc7f
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

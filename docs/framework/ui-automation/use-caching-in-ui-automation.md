@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "caching, UI Automation"
   - "UI Automation, caching"
 ms.assetid: ec722dff-6009-4279-b86a-e18d3fa94ebf
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 14
 author: "Xansky"
 ms.author: "mhopkins"

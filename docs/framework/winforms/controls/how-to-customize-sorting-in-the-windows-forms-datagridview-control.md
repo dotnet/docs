@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], sorting"
   - "data grids, customizing sorting"
 ms.assetid: 92fb5c14-afab-4cf5-a97e-924fd9cb99f5
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "threading [.NET Framework], pausing"
   - "pausing threads"
 ms.assetid: 9fce4859-a19d-4506-b082-7dd0792688ca
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

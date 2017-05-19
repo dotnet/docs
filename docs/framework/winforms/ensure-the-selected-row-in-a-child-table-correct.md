@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "child tables row selection"
   - "current child position"
 ms.assetid: c5fa2562-43a4-46fa-a604-52d8526a87bd
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

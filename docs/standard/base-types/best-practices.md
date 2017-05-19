@@ -12,6 +12,8 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, best practices"
   - "regular expressions, best practices"
 ms.assetid: 618e5afb-3a97-440d-831a-70e4c526a51c
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

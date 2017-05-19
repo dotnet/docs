@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "IObservable(Of T) interface"
   - "observer design pattern [.NET Framework]"
 ms.assetid: 3680171f-f522-453c-aa4a-54f755a78f88
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

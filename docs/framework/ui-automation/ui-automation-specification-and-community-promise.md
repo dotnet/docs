@@ -10,6 +10,8 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b238fd69-2f62-499c-bea0-b91dfb9204f0
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 5
 author: "Xansky"
 ms.author: "mhopkins"

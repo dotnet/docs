@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "roles [.NET Framework], client application services"
   - "client application services, about client application services"
 ms.assetid: 1487d8df-089e-4f21-abfb-a791a652b58e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

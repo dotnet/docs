@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "analytic tracing [WCF], overview"
 ms.assetid: ae55e9cc-0809-442f-921f-d644290ebf15
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 22
 author: "Erikre"
 ms.author: "erikre"

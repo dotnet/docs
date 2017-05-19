@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, samples"
   - "COM interop, samples"
 ms.assetid: a219cb2c-9fa2-4c90-9b26-939e0788f178
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

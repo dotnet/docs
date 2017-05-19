@@ -27,6 +27,8 @@ helpviewer_keywords:
   - "Implicit operator"
   - "data types [.NET Framework], converting"
 ms.assetid: ba36154f-064c-47d3-9f05-72f93a7ca96d
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "/warnaserror compiler option [Visual Basic]"
   - "-warnaserror compiler option [Visual Basic]"
 ms.assetid: 49819f1d-a1bd-4201-affe-5afe6d9712e1
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

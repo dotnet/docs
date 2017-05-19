@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "ErrorProvider component [Windows Forms], displaying error icons"
   - "error messages, displaying icons"
 ms.assetid: 3b681a32-9db4-497b-a34b-34980eabee46
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

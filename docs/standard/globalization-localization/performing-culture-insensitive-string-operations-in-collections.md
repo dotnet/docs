@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "SortedList class, culture-insensitive string operations"
   - "culture parameter"
 ms.assetid: 5cdc9396-a64b-4615-a1cd-b605db4c5983
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WCF Data Services, customizing"
   - "WCF Data Services, data binding"
 ms.assetid: 40476b89-8941-4771-8d21-2fe430c85a9d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

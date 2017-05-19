@@ -15,6 +15,9 @@ helpviewer_keywords:
   - "JIT compilation, 64-bit"
   - "RyuJIT compiler"
 ms.assetid: 0332dabc-72c5-4bdc-8975-20d717802b17
+ms.technology: 
+  - "dotnet-standard"
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

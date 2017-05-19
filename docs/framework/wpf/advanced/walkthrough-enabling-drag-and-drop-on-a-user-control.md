@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "walkthrough [WPF], drag-and-drop"
   - "drag-and-drop [WPF], walkthrough"
 ms.assetid: cc844419-1a77-4906-95d9-060d79107fc7
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

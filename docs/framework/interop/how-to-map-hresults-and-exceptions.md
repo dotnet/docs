@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "COM interop, HRESULTs"
   - "COM interop, exceptions"
 ms.assetid: 610b364b-2761-429d-9c4a-afbc3e66f1b9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

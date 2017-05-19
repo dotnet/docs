@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ITypeLibResolver interface [.NET Framework]"
 ms.assetid: edaaed1d-0d26-40f0-83f1-48efc0ded1c6
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

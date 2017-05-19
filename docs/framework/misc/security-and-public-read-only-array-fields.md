@@ -17,6 +17,8 @@ dev_langs:
 helpviewer_keywords: 
   - "security [.NET Framework], public read-only array fields"
 ms.assetid: 3df28dee-2a9f-40ff-9852-bfdbe59c27f3
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

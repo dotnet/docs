@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "PropertyPath object"
   - "XAML, PropertyPath object"
 ms.assetid: 0e3cdf07-abe6-460a-a9af-3764b4fd707f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

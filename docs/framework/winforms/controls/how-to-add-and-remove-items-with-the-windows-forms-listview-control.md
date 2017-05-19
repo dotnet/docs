@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "list views, adding list items"
   - "ListView control [Windows Forms], adding list items"
 ms.assetid: 1b35a80a-edd8-495f-a807-a28c4aae52c6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

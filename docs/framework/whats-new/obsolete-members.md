@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "members, obsolete in .NET Framework 4.5"
   - "obsolete members [.NET Framework]"
 ms.assetid: 0ee25062-4071-4d3c-a552-87a75d3ecd34
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 56
 author: "rpetrusha"
 ms.author: "ronpet"

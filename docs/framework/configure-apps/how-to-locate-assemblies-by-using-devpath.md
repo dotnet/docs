@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "locating assemblies"
   - "assemblies [.NET Framework], location"
 ms.assetid: 44d2eadf-7eec-443c-a2ac-d601fd919e17
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"

@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "parallel programming"
 ms.assetid: 4d83c690-ad2d-489e-a2e0-b85b898a672d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

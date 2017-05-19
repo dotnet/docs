@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "transactions [WCF], enabling flow"
 ms.assetid: a03f5041-5049-43f4-897c-e0292d4718f7
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"

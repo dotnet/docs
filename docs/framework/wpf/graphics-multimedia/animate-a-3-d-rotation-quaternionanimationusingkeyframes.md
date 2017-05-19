@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "key frames, QuaternionAnimationUsingKeyFrames"
   - "animation, 3-D translations, with key frames (QuaternionAnimationUsingKeyFrames)"
 ms.assetid: 09e5707b-7523-4a08-9aa7-bb13cbedccdf
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

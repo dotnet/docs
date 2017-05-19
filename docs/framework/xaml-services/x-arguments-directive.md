@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Arguments directive in XAML [XAML Services]"
   - "XAML [XAML Services], x:Arguments directive"
 ms.assetid: 87cc10b0-b610-4025-b6b0-ab27ca27c92e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: "wadepickett"
 ms.author: "wpickett"

@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "encryption [.NET Framework], hash"
   - "hash"
 ms.assetid: 33660f33-b70f-4dca-8c87-ab35cfc2961a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

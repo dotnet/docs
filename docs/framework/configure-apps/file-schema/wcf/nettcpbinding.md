@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "netTcpBinding Element"
 ms.assetid: 5c5104a7-8754-4335-8233-46a45322503e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 33
 author: "Erikre"
 ms.author: "erikre"

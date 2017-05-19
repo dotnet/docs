@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "abstract classes, MustInherit class"
   - "MustInherit keyword"
 ms.assetid: b8f05185-90e3-4dd7-adc2-90d852fab5b4
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

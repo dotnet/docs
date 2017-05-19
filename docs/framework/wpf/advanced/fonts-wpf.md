@@ -14,6 +14,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "fonts [WPF]"
 ms.assetid: 6c766a95-ad03-475e-a36f-2243e9495941
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 82
 author: dotnet-bot
 ms.author: dotnetcontent

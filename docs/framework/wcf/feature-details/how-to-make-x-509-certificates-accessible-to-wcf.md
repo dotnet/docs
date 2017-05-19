@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "certificates [WCF], making X.509 certificates accessible to WCF"
   - "X.509 certificates [WCF], making accessible to WCF"
 ms.assetid: a54e407c-c2b5-4319-a648-60e43413664b
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"

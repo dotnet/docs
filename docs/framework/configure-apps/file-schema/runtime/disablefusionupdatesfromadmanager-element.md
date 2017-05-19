@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "disableFusionUpdatesFromADManager element"
   - "<disableFusionUpdatesFromADManager> element"
 ms.assetid: 58d2866c-37bd-4ffa-abaf-ff35926a2939
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

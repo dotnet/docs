@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "<para> XML tag"
   - "para XML tag"
 ms.assetid: a3a18b6c-6416-4358-94ec-37b22675fd37
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

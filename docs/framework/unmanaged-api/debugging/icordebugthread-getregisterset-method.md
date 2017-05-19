@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugThread::GetRegisterSet method [.NET Framework debugging]"
   - "GetRegisterSet method, ICorDebugThread interface [.NET Framework debugging]"
 ms.assetid: 3b9b6260-98ac-4cfd-88e5-5d7614f94a0c
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

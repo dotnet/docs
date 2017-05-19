@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "TextBox control, positioning cursor"
   - "cursor, positioning"
 ms.assetid: c771a0b8-c6b4-4240-aecd-a21d0ba51a2e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "UI (user interface), automation"
   - "UI Automation"
 ms.assetid: 4380cad7-e509-448f-b9a5-6de042605fd4
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"

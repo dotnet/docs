@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "types [C#], value types"
   - "C# language, value types"
 ms.assetid: 471eb994-2958-49d5-a6be-19b4313f80a3
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

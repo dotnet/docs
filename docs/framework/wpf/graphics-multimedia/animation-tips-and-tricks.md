@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "performance troubleshooting [WPF], animation"
   - "animations [WPF], use of system resources"
 ms.assetid: e467796b-d5d4-45a6-a108-8c5d7ff69a0f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "namespace keyword [C#]"
   - "scope [C#]"
 ms.assetid: 0a788423-9110-42e0-97d9-bda41ca4870f
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

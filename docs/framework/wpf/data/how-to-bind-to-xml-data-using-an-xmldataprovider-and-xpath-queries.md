@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "data binding, binding to XML data using XmlDataProvider queries"
   - "binding, to XML data using XmlDataProvider queries"
 ms.assetid: 7dcd018f-16aa-4870-8e47-c1b4ea31e574
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], column hiding"
   - "data [Windows Forms], displaying"
 ms.assetid: a81c38e6-2527-426a-bcb1-be691403be04
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

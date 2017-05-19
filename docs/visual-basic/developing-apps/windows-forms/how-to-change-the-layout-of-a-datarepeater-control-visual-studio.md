@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "DataRepeater, changing layout style"
   - "DataRepeater, changing orientation"
 ms.assetid: 33aa8fd5-ac63-4bd0-ba13-8c2ab17e7824
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

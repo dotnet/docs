@@ -33,6 +33,8 @@ helpviewer_keywords:
   - "Single data type, numeric types"
   - "Decimal data type, numeric data types"
 ms.assetid: a27bd4d0-7e14-43eb-9cc4-b42eaab323c9
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Astoria"
   - "WCF Data Services, getting started"
 ms.assetid: 73d2bec3-7c92-4110-b905-11bb0462357a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"

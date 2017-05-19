@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "arrays [Visual Basic], structure elements"
   - "nested structures"
 ms.assetid: 0f849313-ccd2-4c9a-acb9-69de6751c088
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

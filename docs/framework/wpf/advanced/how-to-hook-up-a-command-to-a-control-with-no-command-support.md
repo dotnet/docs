@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "RoutedCommand class, attaching to a Control"
   - "classes, RoutedCommand, attaching to a Control"
 ms.assetid: dad08f64-700b-46fb-ad3f-fbfee95f0dfe
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

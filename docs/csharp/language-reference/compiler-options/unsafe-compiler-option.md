@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "unsafe compiler option [C#]"
   - "/unsafe compiler option [C#]"
 ms.assetid: fdb77ed9-da03-45bd-bb7f-250704da1bcc
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

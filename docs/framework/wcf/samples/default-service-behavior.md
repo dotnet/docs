@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "service behaviors, defaults"
   - "Default Service Behavior Sample [Windows Communication Foundation]"
 ms.assetid: 442d4f71-c64e-4c62-816a-a66c38e7d3ec
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 28
 author: "Erikre"
 ms.author: "erikre"

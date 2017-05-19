@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "ListBox control [WPF], reusing item containers"
   - "ListBox control [WPF], improving scrolling performance"
 ms.assetid: 1e2bf8f3-c8ce-47f7-a400-a7fe11d1a848
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

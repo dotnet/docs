@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "initialization errors [.NET Framework]"
   - ".NET Framework, initialization errors"
 ms.assetid: 680a7382-957f-4f6e-b178-4e866004a07e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

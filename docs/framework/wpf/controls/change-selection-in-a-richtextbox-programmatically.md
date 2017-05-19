@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "changing selections in a text box [WPF]"
   - "changing selections in a RichTextBox [WPF]"
 ms.assetid: f1213205-1ad7-4cd2-b115-460173cc5aa3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

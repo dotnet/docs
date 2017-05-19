@@ -17,6 +17,8 @@ dev_langs:
 helpviewer_keywords: 
   - "security [.NET Framework], code access security"
 ms.assetid: 4eaa6535-d9fe-41a1-91d8-b437cfc16921
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"

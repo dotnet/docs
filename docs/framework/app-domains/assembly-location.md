@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "locating assemblies"
   - "assemblies [.NET Framework], location"
 ms.assetid: 9f1f41a7-2954-49d3-a2c0-62b6ef4d40ab
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

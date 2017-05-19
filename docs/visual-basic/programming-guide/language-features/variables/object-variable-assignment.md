@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "assignment statements, object variable assignment"
   - "Me keyword, as object variable"
 ms.assetid: 3706811d-fd40-44fe-8727-d692e8e55d6d
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

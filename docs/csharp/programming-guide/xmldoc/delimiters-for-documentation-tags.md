@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "/** */ delimiters for C# documentation tags"
   - "/// delimiter for C# documentation"
 ms.assetid: 9b2bdd18-4f5c-4c0b-988e-fb992e0d233e
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

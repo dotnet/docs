@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], architecture"
 ms.assetid: 1c6cabf0-02ee-4bbc-9574-b54bb7f5b19e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

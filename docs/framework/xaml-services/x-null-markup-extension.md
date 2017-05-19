@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "x:Null markup extension [XAML Services]"
   - "XAML [XAML Services], x:Null markup extension"
 ms.assetid: 2e3ccc21-4996-481d-91b5-3910d8b3bfa3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 20
 author: "wadepickett"
 ms.author: "wpickett"

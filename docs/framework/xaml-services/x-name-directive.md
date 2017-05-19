@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "XAML [XAML Services], x:Name attribute"
   - "Name attribute in XAML [XAML Services]"
 ms.assetid: b7e61222-e8cf-48d2-acd0-6df3b7685d48
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 27
 author: "wadepickett"
 ms.author: "wpickett"

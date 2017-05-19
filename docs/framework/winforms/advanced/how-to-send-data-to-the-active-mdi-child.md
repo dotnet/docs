@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Clipboard, pasting"
   - "Clipboard, getting data from"
 ms.assetid: 1047d2fe-1235-46db-aad9-563aea1d743b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

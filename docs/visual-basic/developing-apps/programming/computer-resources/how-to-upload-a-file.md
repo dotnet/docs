@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "UploadFile method"
   - "My.Computer.Network.UploadFile method"
 ms.assetid: a8b37924-c523-4fd3-b5ca-cb0074df29cd
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetRank method, ICorDebugType interface [.NET Framework debugging]"
   - "ICorDebugType::GetRank method [.NET Framework debugging]"
 ms.assetid: 72d3d927-f590-4f2d-8f60-448f3dfb96af
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

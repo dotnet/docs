@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "iterating through folders [C#]"
   - "file iteration [C#]"
 ms.assetid: c4be4a75-6b1b-46a7-9d38-bab353091ed7
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

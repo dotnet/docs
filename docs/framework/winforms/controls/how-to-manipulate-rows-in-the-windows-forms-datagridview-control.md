@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "data grids, manipulating rows"
   - "rows, manipulating on Windows Forms"
 ms.assetid: 522d8944-e073-4488-9673-923f0a8d7214
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

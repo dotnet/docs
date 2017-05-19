@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedENCUpdate::InitializeForEnc method [.NET Framework debugging]"
   - "InitializeForEnc method [.NET Framework debugging]"
 ms.assetid: 796b2154-b53c-4d07-9e67-80fd6064725a
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

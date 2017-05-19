@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "events [C#], in derived classes"
 ms.assetid: 2d20556a-0aad-46fc-845e-f85d86ea617a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

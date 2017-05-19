@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "documents, defining tables with XAML"
   - "tables, defining with XAML"
 ms.assetid: 83f2dc58-437e-4cdc-b5dd-0019810c7a85
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

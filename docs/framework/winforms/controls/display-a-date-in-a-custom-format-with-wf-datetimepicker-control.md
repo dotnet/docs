@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], DateTimePicker control"
   - "dates, displaying in DateTimePicker control"
 ms.assetid: 39767691-2d2b-46b6-a663-b7901e581a6e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

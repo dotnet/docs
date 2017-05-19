@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "rectangles, drawing"
   - "pens, drawing rectangles"
 ms.assetid: 54a7fa14-3ad8-4d64-b424-2a12005b250c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "context menus, associating with controls"
   - "ContextMenuStrips, relating"
 ms.assetid: 6fc40a42-5d69-427f-aa30-0a146193226b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

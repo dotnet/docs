@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "variables [Visual Basic], enumeration"
   - "constants, enumerated"
 ms.assetid: a45e51f1-65ff-48e1-bf32-79130f137377
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 44
 author: dotnet-bot
 ms.author: dotnetcontent

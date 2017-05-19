@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "data binding, notification of binding updates"
   - "binding, updates, notifications of"
 ms.assetid: 5673073e-dbe1-49da-980a-484a88f9595a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "arrays [Visual Basic], initializing"
   - "arrays [Visual Basic], declaring"
 ms.assetid: aadd7a60-7ca4-4608-b986-091f19e7fc10
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 42
 author: dotnet-bot
 ms.author: dotnetcontent

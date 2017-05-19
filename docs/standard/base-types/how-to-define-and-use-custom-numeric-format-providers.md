@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "format providers [.NET Framework]"
   - "custom format strings"
 ms.assetid: a281bfbf-6596-45ed-a2d6-3782d535ada2
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

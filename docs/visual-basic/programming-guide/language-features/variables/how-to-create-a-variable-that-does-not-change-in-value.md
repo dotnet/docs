@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "variables [Visual Basic], read-only"
   - "variables [Visual Basic], constant value"
 ms.assetid: 86b59266-25df-4635-ae15-9b59c411d036
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

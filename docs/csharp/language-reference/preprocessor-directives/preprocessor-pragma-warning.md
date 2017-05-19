@@ -12,6 +12,8 @@ dev_langs:
 helpviewer_keywords: 
   - "#pragma warning [C#]"
 ms.assetid: 723493d5-9753-4cec-babb-54e2b8eb36b6
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

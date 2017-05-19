@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "images [Windows Forms], creating"
   - "GDI+, rendering existing images"
 ms.assetid: c128b79a-3e31-47d8-9e66-3470f570a056
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

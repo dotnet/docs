@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], column order"
   - "data grids, changing column order"
 ms.assetid: 5e9ac3bc-b0f0-48cb-a3d5-b005af905395
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

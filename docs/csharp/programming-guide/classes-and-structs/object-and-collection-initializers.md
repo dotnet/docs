@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "object initializers [C#]"
   - "collection initializers [C#]"
 ms.assetid: c58f3db5-d7d4-4651-bd2d-5a3a97357f61
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "COM objects, referencing"
   - "interop assemblies"
 ms.assetid: 9c518fb4-27d9-4112-9e6a-5a7d0210af6f
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

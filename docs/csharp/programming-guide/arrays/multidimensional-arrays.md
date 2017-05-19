@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "arrays [C#], multidimensional"
   - "multidimensional arrays [C#]"
 ms.assetid: 020ce02e-7dff-4273-8e53-bf0b33747232
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "WCF Data Services, configuring"
 ms.assetid: 05006ff3-02dc-410e-831e-54ec3e7e24ef
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 5
 author: "Erikre"
 ms.author: "erikre"

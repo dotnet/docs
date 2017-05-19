@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], getting selection"
   - "getting selection, DataGridView control [Windows Forms]"
 ms.assetid: d93c4b5b-498e-49bc-982a-2229d61778e4
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

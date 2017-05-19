@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrAmbiguousCall2"
 ms.assetid: 13b20ffa-9f02-4971-a3cb-e08b402fd971
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

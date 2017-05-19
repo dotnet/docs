@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "TextBox control, retrieving text"
   - "retrieving text"
 ms.assetid: d5793172-1e11-4a39-9be0-73f336ed858d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

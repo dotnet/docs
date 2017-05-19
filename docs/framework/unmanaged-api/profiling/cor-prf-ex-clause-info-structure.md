@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_EX_CLAUSE_INFO structure [.NET Framework profiling]"
 ms.assetid: 7d0d6fb7-bc9d-40f0-8163-c0d162eaba7d
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

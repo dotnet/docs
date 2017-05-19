@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "list [LINQ in Visual Basic]"
   - "objects [Visual Basic], list of items"
 ms.assetid: fe941aba-6340-455c-8b1f-ffd9c3eb1ac5
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

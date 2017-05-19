@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "print queues, cloning"
   - "cloning print queues"
 ms.assetid: dd6997c9-fe04-40f8-88a6-92e3ac0889eb
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

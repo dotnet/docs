@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "graphics [WPF], composite shapes"
   - "fill, controlling"
 ms.assetid: c1c94575-9eca-48a5-a49a-2ec65259f229
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

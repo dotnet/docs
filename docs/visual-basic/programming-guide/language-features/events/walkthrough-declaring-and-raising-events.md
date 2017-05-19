@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "events [Visual Basic], raising"
   - "raising events, walkthroughs"
 ms.assetid: 8ffb3be8-097d-4d3c-b71e-04555ebda2a2
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

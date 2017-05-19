@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "parallel loops, how to handle exceptions"
 ms.assetid: 512f0d5a-4636-4875-b766-88f20044f143
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

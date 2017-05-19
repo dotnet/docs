@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "netcf compiler option [Visual Basic]"
   - "/netcf compiler option [Visual Basic]"
 ms.assetid: db7cfa59-c315-401c-a59b-0daf355343d6
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

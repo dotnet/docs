@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WCF Data Services, providers"
   - "WCF Data Services, Entity Framework"
 ms.assetid: 6d11fec8-0108-42f5-8719-2a7866d04428
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"

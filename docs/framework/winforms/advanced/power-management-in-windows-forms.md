@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "battery states"
   - "power states"
 ms.assetid: ad04a801-5682-4d88-92c5-26eb9cdb209a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

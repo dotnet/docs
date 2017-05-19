@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "WCF [WCF], concepts"
   - "Windows Communication Foundation [WCF], concepts"
 ms.assetid: 503fae4b-014c-44df-a9c7-c76ec4ed4229
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 24
 author: "Erikre"
 ms.author: "erikre"

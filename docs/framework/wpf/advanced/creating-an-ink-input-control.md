@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "DynamicRenderer objects"
   - "StylusPlugIn objects"
 ms.assetid: c31f3a67-cb3f-4ded-af9e-ed21f6575b26
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

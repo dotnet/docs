@@ -26,6 +26,8 @@ helpviewer_keywords:
   - "UShort data type"
   - "US literal type characters"
 ms.assetid: 138db892-665d-4ba8-9cae-d8d91c4a8f39
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

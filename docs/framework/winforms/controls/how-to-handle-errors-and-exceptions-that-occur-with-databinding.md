@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "data binding, error handling"
   - "BindingSource component [Windows Forms], handling errors and exceptions"
 ms.assetid: eddc5bad-9513-47df-ab28-f02d8dff7892
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

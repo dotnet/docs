@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugProcess3::SetEnableCustomNotification method [.NET Framework debugging]"
   - "SetEnableCustomNotification method [.NET Framework debugging]"
 ms.assetid: afd88ee9-2589-4461-a75a-9b6fe55a2525
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

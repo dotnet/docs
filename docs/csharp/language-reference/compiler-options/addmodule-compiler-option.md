@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "-addmodule compiler option [C#]"
   - "addmodule compiler option [C#]"
 ms.assetid: ed604546-0dc2-4bd4-9a3e-610a8d973e58
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

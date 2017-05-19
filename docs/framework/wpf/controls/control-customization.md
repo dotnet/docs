@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "customizing controls"
   - "controls, customization"
 ms.assetid: a3d9930e-5597-470e-a636-dcf65eac500b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 75
 author: dotnet-bot
 ms.author: dotnetcontent

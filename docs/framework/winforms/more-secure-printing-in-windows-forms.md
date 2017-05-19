@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "printing [Windows Forms], security"
   - "security [Windows Forms], printing"
 ms.assetid: 48fd36ac-872f-4de0-902a-e52969cd4367
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "validation events, order of"
   - "application startup event order"
 ms.assetid: e81db09b-4453-437f-b78a-62d7cd5c9829
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

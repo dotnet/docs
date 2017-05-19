@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "converting times"
   - "local time conversions"
 ms.assetid: a51e1a3b-c983-4320-b31a-1f9fa3cf824a
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

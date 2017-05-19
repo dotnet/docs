@@ -12,6 +12,8 @@ helpviewer_keywords:
   - "time zones [.NET Framework], enumerating"
   - "enumerating time zones [.NET Framework]"
 ms.assetid: bb7a42ab-6bd9-4c5c-b734-5546d51f8669
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

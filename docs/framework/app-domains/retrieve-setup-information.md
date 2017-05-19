@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "retrieving setup information"
   - "application domains, retrieving setup information"
 ms.assetid: 5cdb12ae-1e37-4a62-8ec7-93d6dcc6e8d9
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "arrays [Visual Basic], compilation errors"
   - "types [Visual Basic], composite"
 ms.assetid: 5fe0e558-aac2-4a40-b7f2-7cfea7336917
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "security [.NET Framework], replacing principal objects"
   - "security [.NET Framework], principals"
 ms.assetid: c323687e-b196-487b-beba-f38f9b3f961b
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

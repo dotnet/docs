@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "WCF Data Services, client library"
   - "Add Service Reference dialog box"
 ms.assetid: 314077c1-ac10-47e1-bed4-940b5462359d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

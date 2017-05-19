@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "base streams"
   - "streams, backing stores"
 ms.assetid: da761658-a535-4f26-a452-b30df47f73d5
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

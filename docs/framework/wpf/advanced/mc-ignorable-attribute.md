@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "mc:ProcessContent attribute"
   - "XAML, mc:ProcessContent attribute"
 ms.assetid: acd9a6ef-b7ca-4146-abb6-60f3b366e9ec
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

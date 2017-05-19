@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugChain::GetContext method [.NET Framework debugging]"
   - "GetContext method, ICorDebugChain interface [.NET Framework debugging]"
 ms.assetid: 26abe7ee-e578-4228-affa-01bed0dfce1b
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

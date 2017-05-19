@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "EInitializeNewDomainFlags enumeration [.NET Framework hosting]"
 ms.assetid: 3a120ab2-f5ef-4c9b-8595-d3ed7247c342
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], hosting controls in cells"
   - "cells, hosting controls"
 ms.assetid: e79a9d4e-64ec-41f5-93ec-f5492633cbb2
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

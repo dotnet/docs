@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "troubleshooting Visual Basic, event logs"
   - "troubleshooting event logs"
 ms.assetid: ac6eb760-3d5d-461e-aedd-40599ee22e49
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

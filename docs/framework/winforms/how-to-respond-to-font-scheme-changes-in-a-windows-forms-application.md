@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Windows Forms, font scheme changes"
 ms.assetid: 4db27702-22e7-43bf-a07d-9a004549853c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "C# language"
   - "Visual C#"
 ms.assetid: 7f4f8103-7068-4f1d-92c7-3c4519b6edbc
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 47
 author: "BillWagner"
 ms.author: "wiwagn"

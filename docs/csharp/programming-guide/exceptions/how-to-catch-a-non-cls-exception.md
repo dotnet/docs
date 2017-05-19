@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "exceptions [C#], non-CLS"
 ms.assetid: db4630b3-5240-471a-b3a7-c7ff6ab31e8d
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 8
 author: "BillWagner"
 ms.author: "wiwagn"

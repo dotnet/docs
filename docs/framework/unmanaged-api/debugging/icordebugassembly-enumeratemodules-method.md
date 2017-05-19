@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugAssembly::EnumerateModules method [.NET Framework debugging]"
   - "EnumerateModules method [.NET Framework debugging]"
 ms.assetid: c7ba51a1-0dd5-4452-b471-232febe0f897
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

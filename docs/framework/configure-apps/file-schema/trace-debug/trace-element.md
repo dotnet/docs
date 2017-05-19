@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "trace element"
   - "trace listener, <trace> element"
 ms.assetid: 7931c942-63c1-47c3-a045-9d9de3cacdbf
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"

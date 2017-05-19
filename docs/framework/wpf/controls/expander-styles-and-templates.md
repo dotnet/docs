@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "states [WPF], Expander"
   - "parts [WPF], Expander"
 ms.assetid: da2e5a1c-5230-4c21-98a5-59c7895facd7
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

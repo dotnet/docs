@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "progress, reporting [Windows Forms]"
   - "FlashTrackBar custom control"
 ms.assetid: 24c5a2e3-058c-4b8d-a217-c06e6a130c2f
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

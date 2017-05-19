@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Visual Basic compiler, starting"
   - "command line, arguments"
 ms.assetid: 0fd9a8f6-f34e-4c35-a49d-9b9bbd8da4a9
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,6 +13,8 @@ dev_langs:
 helpviewer_keywords: 
   - "sizeof keyword [C#]"
 ms.assetid: c548592c-677c-4f40-a4ce-e613f7529141
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

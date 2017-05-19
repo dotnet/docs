@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataAssemblyEmit::DefineAssembly method [.NET Framework metadata]"
   - "DefineAssembly method [.NET Framework metadata]"
 ms.assetid: a0637d66-74bf-4f2d-8137-9ff838bccece
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 18

@@ -17,6 +17,8 @@ dev_langs:
 helpviewer_keywords: 
   - "callback function, implementing"
 ms.assetid: e55b3712-b9ea-4453-bd9a-ad5cfa2f6bfa
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

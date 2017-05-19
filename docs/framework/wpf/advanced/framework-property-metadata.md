@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "metadata, framework properties"
   - "framework property metadata"
 ms.assetid: 9962f380-b885-4b61-a62e-457397083fea
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

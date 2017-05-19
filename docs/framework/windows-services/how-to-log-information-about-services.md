@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "application event logs, service applications"
   - "logs, service applications"
 ms.assetid: c0d8140f-c055-4d8e-a2e0-37358a550116
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "ghogen"
 ms.author: "ghogen"

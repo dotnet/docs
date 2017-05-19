@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "finally blocks [C#]"
   - "try-catch statement [C#]"
 ms.assetid: a1b443b0-ff7a-43ab-b835-0cc9bfbd15ca
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

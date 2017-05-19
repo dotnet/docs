@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "constructs, grouping"
   - "grouping constructs"
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"

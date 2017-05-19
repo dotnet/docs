@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "white space [XML in Visual Basic]"
   - "XML literals [Visual Basic], white space"
 ms.assetid: dfe3a9ff-d69a-418e-a6b5-476f4ed84219
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

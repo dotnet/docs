@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "versions, determining for .NET Framework"
   - ".NET Framework, determining version"
 ms.assetid: 40a67826-e4df-4f59-a651-d9eb0fdc755d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 62
 author: "rpetrusha"
 ms.author: "ronpet"

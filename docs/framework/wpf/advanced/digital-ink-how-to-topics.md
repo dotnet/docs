@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "ink, digital"
   - "digital ink"
 ms.assetid: c29f8728-bfcb-4af7-9fbc-8169e180109f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 40
 author: dotnet-bot
 ms.author: dotnetcontent

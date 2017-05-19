@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time"
   - "date and time strings"
 ms.assetid: bb79761a-ca08-44ee-b142-b06b3e2fc22b
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 92
 author: "rpetrusha"
 ms.author: "ronpet"

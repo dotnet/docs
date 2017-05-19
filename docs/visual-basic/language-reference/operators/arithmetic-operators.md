@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "arithmetic operators"
   - "math operators"
 ms.assetid: 330178e0-a375-4742-b662-b3080c89fa54
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "tables, manipulating columns"
   - "Columns property"
 ms.assetid: 3f8884f4-7e1f-456b-be06-fbd3cf469bf3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

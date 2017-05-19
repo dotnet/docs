@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "flicker, reducing with double buffering"
   - "examples [Windows Forms], double-buffered graphics"
 ms.assetid: 4f6fef99-0972-436e-9d73-0167e4033f71
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

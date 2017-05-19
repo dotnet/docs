@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WPF, creating Direct3D9 content"
   - "Direct3D9 [WPF interoperability], creating Direct3D9 content"
 ms.assetid: 1b14b823-69c4-4e8d-99e4-f6dade58f89a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

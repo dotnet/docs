@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "strings [Windows Forms], drawing vertical"
   - "vertical text, drawing"
 ms.assetid: 50c69046-4188-47d9-b949-cc2610ffd337
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

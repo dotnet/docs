@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Tree Item control type"
   - "UI Automation, Tree Item control type"
 ms.assetid: 229f341a-477f-434e-b877-4db9973068eb
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"

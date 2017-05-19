@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "printing [Windows Forms], creating print jobs"
   - "printing [Visual Basic], in Windows applications"
 ms.assetid: 03342b90-9cfe-40b2-838b-b479a13c5dea
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

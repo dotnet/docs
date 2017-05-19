@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataEmit::DefineNestedType method [.NET Framework metadata]"
   - "DefineNestedType method [.NET Framework metadata]"
 ms.assetid: 1e994de6-4628-459c-b967-b34be1e9fe4f
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

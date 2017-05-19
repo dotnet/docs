@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "<clear> element, authenticationModules"
   - "authenticationModules, clear element"
 ms.assetid: dc522c45-4a80-4831-8955-f7b68a47edfd
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"

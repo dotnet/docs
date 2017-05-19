@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], about ListView control"
   - "list views"
 ms.assetid: c9ef56c1-3bb1-4101-9f4e-e95e720f2756
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

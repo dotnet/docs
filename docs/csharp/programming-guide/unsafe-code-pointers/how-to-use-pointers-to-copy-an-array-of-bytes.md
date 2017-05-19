@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "arrays [C#], byte"
   - "pointers [C#], to copy bytes"
 ms.assetid: ec16fbb4-a24e-45f5-a763-9499d3fabe0a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

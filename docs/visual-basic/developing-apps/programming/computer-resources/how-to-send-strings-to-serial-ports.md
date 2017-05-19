@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "My.Computer.Ports object"
   - "serial ports, sending strings to"
 ms.assetid: 6ebf46cd-b2d0-4b2c-9a1f-be177b22ad52
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

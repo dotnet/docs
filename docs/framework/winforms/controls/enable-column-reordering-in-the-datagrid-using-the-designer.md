@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "columns [Windows Forms], reordering"
   - "data [Windows Forms], displaying"
 ms.assetid: d82bd69c-6799-4439-a32c-91139c5901d1
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "sharing message loops"
   - "interoperability [WPF], Win32"
 ms.assetid: 39ee888c-e5ec-41c8-b11f-7b851a554442
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

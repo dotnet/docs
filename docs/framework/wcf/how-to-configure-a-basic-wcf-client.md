@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "WCF clients [WCF], configuring"
 ms.assetid: d067b86d-afb0-47bf-94f6-45180a3d8d78
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 47
 author: "Erikre"
 ms.author: "erikre"

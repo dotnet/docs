@@ -27,6 +27,8 @@ helpviewer_keywords:
   - "Operator statement"
   - "CType function, Operator statement"
 ms.assetid: b12ec4af-1ad7-4a17-865b-c5ee96320ae5
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent

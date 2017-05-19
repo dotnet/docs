@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Windows Communication Foundation, extending"
   - "OperationRequirement class"
 ms.assetid: 6214afde-44c1-4bf5-ba07-5ad6493620ea
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"

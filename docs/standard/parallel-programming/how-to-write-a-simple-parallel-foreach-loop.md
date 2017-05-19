@@ -12,6 +12,8 @@ helpviewer_keywords:
   - "foreach, parallel version"
   - "parallel programming, foreach"
 ms.assetid: cb5fab92-1c19-499e-ae91-8b7525dd875f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

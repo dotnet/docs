@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "classes [C#]"
   - "C# language, classes"
 ms.assetid: e8848524-7273-429f-8aba-c658d5eff5ad
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 40
 author: "BillWagner"
 ms.author: "wiwagn"

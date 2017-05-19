@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorProfilerInfo::EndInprocDebugging method [.NET Framework profiling]"
   - "EndInprocDebugging method [.NET Framework profiling]"
 ms.assetid: 35bc1188-9767-4141-8038-60ea015b99ac
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

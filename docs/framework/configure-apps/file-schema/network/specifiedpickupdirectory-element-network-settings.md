@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "specifiedPickupDirectory element"
   - "<specifiedPickupDirectory> element"
 ms.assetid: 0121f49d-bff2-4bc6-af06-f1628dcd61f1
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"

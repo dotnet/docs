@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - ",NET remoting [WCF]"
 ms.assetid: 24793465-65ae-4308-8c12-dce4fd12a583
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"

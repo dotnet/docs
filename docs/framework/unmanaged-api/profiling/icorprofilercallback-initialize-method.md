@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "Initialize method, ICorProfilerCallback interface [.NET Framework profiling]"
   - "ICorProfilerCallback::Initialize method [.NET Framework profiling]"
 ms.assetid: dc5fab2a-4b45-4b12-8727-b89c9915f23e
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

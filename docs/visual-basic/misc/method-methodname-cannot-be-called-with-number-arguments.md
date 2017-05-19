@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrNoMethodTakingXArguments2"
 ms.assetid: 23260199-b6a4-469f-b75f-4a3d8d25e2cc
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

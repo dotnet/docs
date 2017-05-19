@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "PublicKeyBlob structure [.NET Framework strong naming]"
 ms.assetid: b9240712-829c-4c8d-9a09-a6e7aa63f63a
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

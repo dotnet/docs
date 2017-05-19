@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "filtering data in views"
   - "data binding, filtering data in views"
 ms.assetid: c76e8606-4cc4-45a8-9110-e2ec66dc6afd
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

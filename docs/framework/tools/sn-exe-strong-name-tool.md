@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "strong-named assemblies, signing files"
   - "key pairs for signing files"
 ms.assetid: c1d2b532-1b8e-4c7a-8ac5-53b801135ec6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 44
 author: "rpetrusha"
 ms.author: "ronpet"

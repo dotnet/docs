@@ -17,6 +17,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CLR activation, debugging issues"
 ms.assetid: 4fe17546-d56e-4344-a930-6d8e4a545914
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

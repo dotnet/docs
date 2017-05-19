@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Drawing objects"
   - "DrawingGroup objects"
 ms.assetid: 9b5ce5c0-e204-4320-a7a8-0b2210d62f88
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "<authenticationModules>, add element"
   - "<add> element, authenticationModules"
 ms.assetid: 333c5fb0-a2ab-4db8-8531-a7fe37bb9b5b
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"

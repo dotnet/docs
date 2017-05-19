@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrSetLocalDateFailure"
 ms.assetid: ea2fe85a-a198-4c12-8754-ab38c36bef4c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

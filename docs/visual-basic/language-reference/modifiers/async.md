@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Async [Visual Basic]"
   - "Async keyword [Visual Basic]"
 ms.assetid: 1be8b4b5-9689-41b5-bd33-b906bfd53bc5
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent

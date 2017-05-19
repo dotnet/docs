@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "QueryLegacyV2RuntimeBinding method [.NET Framework hosting]"
   - "ICLRMetaHost::QueryLegacyV2RuntimeBinding method [.NET Framework hosting]"
 ms.assetid: 9929817e-acc9-40b7-960c-598664e04b60
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

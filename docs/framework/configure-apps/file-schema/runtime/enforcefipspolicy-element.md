@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "<enforceFIPSPolicy> element"
   - "Federal Information Processing Standards (FIPS)"
 ms.assetid: c35509c4-35cf-43c0-bb47-75e4208aa24e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

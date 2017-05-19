@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Grid control, creating, GridLengthConverter objects"
 ms.assetid: 5ab75911-e36a-4825-80e4-081c57e8e182
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

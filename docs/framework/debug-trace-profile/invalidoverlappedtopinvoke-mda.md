@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), overlapped pointers"
   - "pointers, overlapped"
 ms.assetid: 28876047-58bd-4fed-9452-c7da346d67c0
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

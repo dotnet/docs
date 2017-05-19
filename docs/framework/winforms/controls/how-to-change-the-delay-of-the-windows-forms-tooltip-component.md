@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "tooltips [Windows Forms], delay values"
   - "examples [Windows Forms], tooltips"
 ms.assetid: 08979ba7-dd84-477b-ab17-8d06e759be99
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

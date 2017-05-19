@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "dynamic objects"
   - "dynamic objects [C#]"
 ms.assetid: 568f1645-1305-4906-8625-5d77af81e04f
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

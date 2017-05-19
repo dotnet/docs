@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "descendent axis property [Visual Basic]"
   - "XML [Visual Basic], accessing"
 ms.assetid: aabfa258-4112-4e7e-bab9-403f96072ef7
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

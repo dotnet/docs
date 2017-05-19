@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "SyncLock statement"
   - "locks, threads"
 ms.assetid: 14501703-298f-4d43-b139-c4b6366af176
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

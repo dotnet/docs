@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "XML Formatter"
 ms.assetid: e0a2fe89-3534-48c8-aa3c-819862224571
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 37
 author: "Erikre"
 ms.author: "erikre"

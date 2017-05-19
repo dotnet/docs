@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "names [.NET Framework], assemblies"
   - "assemblies [.NET Framework], names"
 ms.assetid: 009dae23-e1f6-4a64-9a9a-32e4c34802b0
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

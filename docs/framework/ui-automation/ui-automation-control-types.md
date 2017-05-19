@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "UI Automation, control types"
   - "control types, UI Automation"
 ms.assetid: 261dcc59-3a62-4e40-91dd-63ff9d2241c0
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 61
 author: "Xansky"
 ms.author: "mhopkins"

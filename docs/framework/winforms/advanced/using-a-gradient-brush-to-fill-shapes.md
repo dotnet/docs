@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "gradient brushes"
   - "examples [Windows Forms], gradient brushes"
 ms.assetid: 2c6037b9-05bd-44c0-a22a-19584b722524
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

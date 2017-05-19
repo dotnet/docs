@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "DateTimePicker control [Windows Forms], setting and returning dates"
   - "examples [Windows Forms], DateTimePicker control"
 ms.assetid: a8a48d68-e4b5-426e-9764-51230fc9acd2
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

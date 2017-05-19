@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Static markup extension in XAML [XAML Services]"
   - "XAML [XAML Services], x:Static markup extension"
 ms.assetid: 056aee79-7cdd-434f-8174-dfc856cad343
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 25
 author: "wadepickett"
 ms.author: "wpickett"

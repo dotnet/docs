@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "file access [Windows Forms]"
   - "security [Windows Forms], data access"
 ms.assetid: 3cd3e55b-2f5e-40dd-835d-f50f7ce08967
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

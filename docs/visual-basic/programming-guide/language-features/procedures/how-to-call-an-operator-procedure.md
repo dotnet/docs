@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "overloaded operators, calling"
   - "operator overloading"
 ms.assetid: 0dce42cc-f0b0-4c14-9f62-018b21f33497
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

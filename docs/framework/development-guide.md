@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework, development guide"
 ms.assetid: 26e3d285-24c3-435c-a797-9fe5affb8525
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

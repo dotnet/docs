@@ -15,6 +15,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "BC42358"
 ms.assetid: 43342515-c3c8-4155-9263-c302afabcbc2
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

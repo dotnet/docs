@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "visual themes, applying to Windows Forms controls"
   - "visual styles, rendering Windows Forms controls"
 ms.assetid: c0125e34-cd74-4c35-818c-3e40f462b0a3
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

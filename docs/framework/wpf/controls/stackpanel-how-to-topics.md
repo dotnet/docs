@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "StackPanel control, how-to topics"
   - "controls, StackPanel"
 ms.assetid: c9849df3-d000-4cdf-8345-5edcd053919d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent

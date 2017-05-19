@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "generics [C#], delegates"
   - "delegates [C#], generic"
 ms.assetid: bdea509c-44c1-4309-aaa9-15c7aee009df
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

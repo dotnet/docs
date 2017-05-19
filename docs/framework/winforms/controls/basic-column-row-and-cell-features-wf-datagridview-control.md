@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "data grids, examples"
   - "DataGridView control [Windows Forms], examples"
 ms.assetid: 78085f26-d5d2-4b75-813e-e932b72fd06f
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

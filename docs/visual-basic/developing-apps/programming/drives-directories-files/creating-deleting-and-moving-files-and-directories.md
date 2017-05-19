@@ -32,6 +32,8 @@ helpviewer_keywords:
   - "I/O [Visual Basic], renaming folders"
   - "I/O [Visual Basic], moving files"
 ms.assetid: 8f814fcc-4c42-4dbb-a131-005ec445ac9e
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

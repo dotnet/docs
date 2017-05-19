@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls [WPF], CheckBox"
   - "CheckBox control [WPF]"
 ms.assetid: ee701cc2-968b-4683-8f81-3fafd8542700
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 74
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "constants, user-defined"
   - "circular references between constants"
 ms.assetid: a1206d5c-c45e-4ac2-970a-4a0be6a05fdd
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

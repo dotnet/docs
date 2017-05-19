@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "layout [Windows Forms], TableLayoutPanel control"
   - "automatic sizing"
 ms.assetid: f55175c6-424e-4782-a86e-3f79c1550235
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "strong-named assemblies, loading into trusted application domains"
   - "<bypassTrustedAppStrongNames> element"
 ms.assetid: 71b2ebf6-3843-41e2-ad52-ffa5cd083a40
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "IUnknown pointers"
   - "managed debugging assistants (MDAs), invalid IUnknown pointer"
 ms.assetid: c7924771-a16b-40fe-b337-ce51dcdf6a12
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

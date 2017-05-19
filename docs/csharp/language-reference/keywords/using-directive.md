@@ -10,6 +10,8 @@ dev_langs:
 helpviewer_keywords: 
   - "using directive [C#]"
 ms.assetid: b42b8e61-5e7e-439c-bb71-370094b44ae8
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"

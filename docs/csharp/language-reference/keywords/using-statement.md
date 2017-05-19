@@ -10,6 +10,8 @@ dev_langs:
 helpviewer_keywords: 
   - "using statement [C#]"
 ms.assetid: afc355e6-f0b9-4240-94dd-0d93f17d9fc3
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"

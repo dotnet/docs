@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "finding DataTemplate elements"
   - "DataTemplate"
 ms.assetid: bfcd564e-5e9e-451e-8641-a9b5c3cfac90
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

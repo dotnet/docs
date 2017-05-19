@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "images [Windows Forms], cropping"
   - "images [Windows Forms], scaling"
 ms.assetid: 053e3360-bca0-4b25-9afa-0e77a6f17b03
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

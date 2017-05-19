@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "classes, RoutedCommand, creating"
   - "RoutedCommand class, creating"
 ms.assetid: aaf6979f-69ab-406f-979f-5766daa85fa0
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

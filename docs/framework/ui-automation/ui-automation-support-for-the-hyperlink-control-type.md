@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "UI Automation, Hyperlink control type"
   - "control types, Hyperlink"
 ms.assetid: 110cceea-5932-4955-a1a6-13afc51422b2
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"

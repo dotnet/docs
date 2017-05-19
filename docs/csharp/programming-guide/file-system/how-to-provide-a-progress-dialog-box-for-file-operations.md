@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "progress dialog [C#]"
 ms.assetid: 01b71fe7-8178-4dc8-aeb1-12053be7b51c
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

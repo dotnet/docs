@@ -29,6 +29,8 @@ helpviewer_keywords:
   - "focus [WPF]"
   - "mouse position [WPF]"
 ms.assetid: ee5258b7-6567-415a-9b1c-c0cbe46e79ef
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 50
 author: dotnet-bot
 ms.author: dotnetcontent

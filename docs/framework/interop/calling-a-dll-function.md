@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, platform invoke"
   - "DLL functions"
 ms.assetid: 113646de-7ea0-4f0e-8df0-c46dab3e8733
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

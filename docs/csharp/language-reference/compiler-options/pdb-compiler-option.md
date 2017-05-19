@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "pdb compiler option [C#]"
   - "/pdb compiler option [C#]"
 ms.assetid: e9d0f96a-5b75-45d6-9765-92538dd5f823
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 8
 author: "BillWagner"
 ms.author: "wiwagn"

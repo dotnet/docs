@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "text boxes, selecting text programmatically"
   - "text, selecting in text boxes programmatically"
 ms.assetid: 8c591546-6a01-45c7-8e03-f78431f903b1
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

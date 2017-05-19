@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "security [WCF], scenarios"
 ms.assetid: 201923b5-5162-4a8a-8d4c-e7bd242748d5
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "BrucePerlerMS"
 ms.author: "bruceper"

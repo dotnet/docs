@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "unmanaged structures [.NET Framework], profiling"
   - "structures [.NET Framework profiling]"
 ms.assetid: 750385f2-f365-41b1-939f-ca2f2ff9b466
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"

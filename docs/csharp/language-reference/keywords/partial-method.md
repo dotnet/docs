@@ -12,6 +12,8 @@ dev_langs:
 helpviewer_keywords: 
   - "partial methods [C#]"
 ms.assetid: 43f40242-17e0-4452-8573-090503ad3137
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

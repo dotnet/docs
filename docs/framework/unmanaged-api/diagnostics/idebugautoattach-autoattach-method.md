@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "AutoAttach method [.NET Framework debugging]"
   - "IDebugAutoAttach::AutoAttach method [.NET Framework debugging]"
 ms.assetid: 3cf3bd9c-7d88-4afa-a476-94cdc7609aa6
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

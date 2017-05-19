@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "object equality [C#]"
 ms.assetid: 10b865ea-4e7b-4127-9242-c9b8f57d9f04
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

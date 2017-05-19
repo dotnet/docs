@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "examples [C#], Hello World"
   - "Hello World example [C#]"
 ms.assetid: 6493182a-b0b6-4539-a719-518a168cb730
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 39
 author: "BillWagner"
 ms.author: "wiwagn"

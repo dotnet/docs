@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "TPL dataflow library, creating custom dataflow blocks"
   - "dataflow blocks, creating custom in TPL"
 ms.assetid: a6147146-0a6a-4d9b-ab0f-237b3c1ac691
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

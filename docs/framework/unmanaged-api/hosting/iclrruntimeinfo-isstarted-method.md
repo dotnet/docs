@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsStarted method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::IsStarted method [.NET Framework hosting]"
 ms.assetid: ef6f2662-323b-4534-aa82-6d1afb7b9309
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

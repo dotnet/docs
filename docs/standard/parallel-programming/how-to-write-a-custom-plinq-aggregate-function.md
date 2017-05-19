@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, how to create aggregate function"
 ms.assetid: 5a70dd49-ab2a-4798-b551-196ee7042b1a
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

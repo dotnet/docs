@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "flicker"
   - "bit-block transfer"
 ms.assetid: 33b76910-13a3-4521-be98-5c097341ae3b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

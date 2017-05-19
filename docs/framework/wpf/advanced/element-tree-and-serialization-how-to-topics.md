@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "element tree"
   - "serialization"
 ms.assetid: 2d8ef436-d559-4c3e-86de-5a160d5f87d2
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 74
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

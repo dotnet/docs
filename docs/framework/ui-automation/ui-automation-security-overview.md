@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "UI Automation, security model"
   - "security model, UI Automation"
 ms.assetid: 1d853695-973c-48ae-b382-4132ae702805
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 23
 author: "Xansky"
 ms.author: "mhopkins"

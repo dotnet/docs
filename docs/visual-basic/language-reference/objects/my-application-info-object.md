@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "My.Application.Info object"
   - "My.Application.AssemblyInfo object"
 ms.assetid: 2f4782ed-3da2-4d88-b341-0c6f480fb7bb
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

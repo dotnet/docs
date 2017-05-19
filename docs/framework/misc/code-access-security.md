@@ -28,6 +28,8 @@ helpviewer_keywords:
   - "user authentication, code access security"
   - "code access security"
 ms.assetid: 859af632-c80d-4736-8d6f-1e01b09ce127
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"

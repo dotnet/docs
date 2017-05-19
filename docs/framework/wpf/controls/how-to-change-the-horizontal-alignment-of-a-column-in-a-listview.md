@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "ListView controls, horizontal alignment"
 ms.assetid: b9573e44-9dad-4d14-939c-7859ca372758
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

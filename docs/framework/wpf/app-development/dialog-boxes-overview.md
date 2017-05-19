@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "message boxes"
   - "modal dialog boxes"
 ms.assetid: 0d23d544-a393-4a02-a3aa-d8cd5d3d6511
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

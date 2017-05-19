@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "add-ins [WPF], architecture"
   - "add-ins [WPF], limitations"
 ms.assetid: 00b4c776-29a8-4dba-b603-280a0cdc2ade
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "DateTime XAML text [WPF]"
   - "DateTime XAML syntax [WPF], format strings for"
 ms.assetid: 5901710a-609b-40c8-9d65-f0016cd9090b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Win32 code, WPF interoperation"
   - "interoperability [WPF], Win32"
 ms.assetid: 3cc8644a-34f3-4082-9ddc-77623e4df2d8
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

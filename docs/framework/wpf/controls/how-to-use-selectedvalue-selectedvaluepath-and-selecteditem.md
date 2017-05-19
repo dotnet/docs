@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "Control class, SelectedValuePath properties"
   - "SelectedValue, SelectedItem properties"
 ms.assetid: 2fc92ad4-f02c-4f89-bbe9-d4978a7af0db
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

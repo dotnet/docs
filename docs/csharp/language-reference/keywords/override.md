@@ -13,6 +13,8 @@ dev_langs:
 helpviewer_keywords: 
   - "override keyword [C#]"
 ms.assetid: dd1907a8-acf8-46d3-80b9-c2ca4febada8
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

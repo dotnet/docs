@@ -10,6 +10,8 @@ dev_langs:
 helpviewer_keywords: 
   - "new operator keyword [C#]"
 ms.assetid: a212b697-a79b-4105-9923-1f7b108036e8
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

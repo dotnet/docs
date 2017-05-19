@@ -27,6 +27,8 @@ helpviewer_keywords:
   - "procedure overloading"
   - "procedures, parameter lists"
 ms.assetid: fbc7fb18-e3b2-48b6-b554-64c00ed09d2a
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

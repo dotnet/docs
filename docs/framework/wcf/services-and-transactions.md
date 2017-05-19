@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "service contracts [WCF], designing services and transactions"
 ms.assetid: 864813ff-2709-4376-912d-f5c8d318c460
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"

@@ -14,6 +14,9 @@ helpviewer_keywords:
   - "application compatibility,.NET Framework"
   - "application compatibility,.NET Framework 4,6,2"
 ms.assetid: bdb8335a-a63f-43bb-b978-c1ee92870033
+ms.technology: 
+  - "dotnet-standard"
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "graphics, cubic Bezier curves"
   - "cubic Bezier curves"
 ms.assetid: 450a3a77-7c57-48b0-a008-0f6051add980
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

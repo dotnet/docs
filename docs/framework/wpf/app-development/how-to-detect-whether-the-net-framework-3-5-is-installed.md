@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "detecting whether.NET Framework 3.5 is installed [WPF]"
   - "determining whether.NET Framework 3.5 is installed [WPF]"
 ms.assetid: 8556a9d2-1eb8-48ef-919c-5baf22a2a9a2
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

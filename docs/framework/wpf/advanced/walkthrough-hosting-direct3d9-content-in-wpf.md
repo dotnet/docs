@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Direct3D9 [WPF interoperability], hosting Direct3D9 content"
   - "WPF, hosting Direct3D9 content"
 ms.assetid: 60983736-0ab5-42cc-8b16-e9fbde261a43
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

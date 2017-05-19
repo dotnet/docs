@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "ToolTip control, how-to topics"
   - "controls, ToolTip"
 ms.assetid: 2aa88347-c4cb-48d3-951d-a7072643283b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 63
 author: dotnet-bot
 ms.author: dotnetcontent

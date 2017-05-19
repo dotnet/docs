@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "-rootnamespace compiler option [Visual Basic]"
   - "rootnamespace compiler option [Visual Basic]"
 ms.assetid: e9245edf-6bef-420d-a7c7-324117752783
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

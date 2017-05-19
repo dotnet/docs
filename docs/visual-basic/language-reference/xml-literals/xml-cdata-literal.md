@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "XML CDATA literal [Visual Basic]"
   - "XML literals [Visual Basic], CDATA"
 ms.assetid: 9eafb6a4-dd9d-4866-85e8-0654c65abc44
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

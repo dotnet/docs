@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "anonymous functions [C#]"
   - "anonymous methods [C#]"
 ms.assetid: 6ce3f04d-0c71-4728-9127-634c7e9a8365
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

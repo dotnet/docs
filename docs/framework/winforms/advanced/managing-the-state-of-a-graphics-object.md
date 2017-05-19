@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "graphics, managing state"
   - "graphics, clipping"
 ms.assetid: 6207cad1-7a34-4bd6-bfc1-db823ca7a73e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

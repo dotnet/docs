@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "timing behaviors"
   - "behaviors, timing"
 ms.assetid: 5b714d46-bd46-48b8-b467-b4be89ba3091
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

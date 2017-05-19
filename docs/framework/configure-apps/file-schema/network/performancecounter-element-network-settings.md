@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "performanceCounter element"
   - "<performanceCounter> element"
 ms.assetid: 3afa1586-e1b8-473d-8985-c3fc90cf561b
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"

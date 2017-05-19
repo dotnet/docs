@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "as operator [C#]"
   - "is operator [C#]"
 ms.assetid: c1176cea-1426-4a44-8570-3eadafa58863
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

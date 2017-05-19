@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "CurrencyManager class, navigating Windows Forms data"
   - "data [Windows Forms], navigating"
 ms.assetid: 97360f7b-b181-4084-966a-4c62518f735b
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

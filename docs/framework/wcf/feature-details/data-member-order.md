@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "data contracts [WCF], ordering members"
 ms.assetid: 0658a47d-b6e5-4ae0-ba72-ababc3c6ff33
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"

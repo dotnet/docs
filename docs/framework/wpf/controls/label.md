@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "controls [WPF], Label"
   - "Label control [WPF]"
 ms.assetid: 241c1ce2-60f8-4613-a0ec-9b9bb25fb6af
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 66
 author: dotnet-bot
 ms.author: dotnetcontent

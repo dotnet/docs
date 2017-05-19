@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Windows Forms controls, listing options"
   - "option lists in Windows Forms"
 ms.assetid: 5bc064c7-bc1f-4b62-8f4b-252f864b118e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

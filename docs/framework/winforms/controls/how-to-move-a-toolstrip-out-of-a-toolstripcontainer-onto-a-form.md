@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], parenting to forms"
   - "Windows Forms, parenting ToolStrip controls"
 ms.assetid: a1c94a7f-6fc5-4e4c-84cf-ff11dc573d33
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

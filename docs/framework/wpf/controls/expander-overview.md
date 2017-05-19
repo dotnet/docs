@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "controls, Expander"
   - "Expander control, about Expander control"
 ms.assetid: 877bf425-0e54-49ec-8fd2-13a211377abb
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

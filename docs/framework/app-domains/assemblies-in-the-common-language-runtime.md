@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "version boundaries"
   - "type boundaries"
 ms.assetid: 2cfebe19-7436-49f1-bd99-3c4019f0b676
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

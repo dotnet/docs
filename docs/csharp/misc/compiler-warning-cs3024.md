@@ -12,6 +12,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CS3024"
 ms.assetid: fef9db31-9a7f-42d5-ad37-3e7faf661f95
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 7
 author: "BillWagner"
 ms.author: "wiwagn"

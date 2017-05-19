@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "images [Windows Forms], rotating"
   - "images [Windows Forms], skewing"
 ms.assetid: a3bf97eb-63ed-425a-ba07-dcc65efb567c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

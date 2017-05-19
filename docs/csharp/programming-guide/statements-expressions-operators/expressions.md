@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "expressions [C#]"
   - "C# language, expressions"
 ms.assetid: c7d8feb0-0e58-4f94-8bf6-4d070550a832
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

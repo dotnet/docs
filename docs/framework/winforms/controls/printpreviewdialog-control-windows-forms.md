@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "printing [Windows Forms], print preview (using designer)"
   - "print preview, default interface (using designer)"
 ms.assetid: bfb5a3d7-021e-44f4-90f3-d435467f51d6
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

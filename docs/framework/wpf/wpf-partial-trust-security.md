@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "feature security requirements"
   - "managing permissions"
 ms.assetid: ef2c0810-1dbf-4511-babd-1fab95b523b5
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 40
 author: dotnet-bot
 ms.author: dotnetcontent

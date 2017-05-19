@@ -24,6 +24,8 @@ dev_langs:
 helpviewer_keywords: 
   - "ClearDownloadCache function [.NET Framework fusion]"
 ms.assetid: df7595d1-430f-44b4-8160-4c2ba9df70b1
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

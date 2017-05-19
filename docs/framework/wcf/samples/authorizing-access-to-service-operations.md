@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Authorizing Access To Service Operations Sample [Windows Communication Foundation]"
   - "authorization, Windows Communication Foundation sample"
 ms.assetid: ddcfdaa5-8b2e-4e13-bd85-887209dc6328
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 23
 author: "Erikre"
 ms.author: "erikre"

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "elementary data types"
   - "data types [Visual Basic], elementary"
 ms.assetid: dfad6fe9-2da6-49a4-b0b1-2d7ae0283de5
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

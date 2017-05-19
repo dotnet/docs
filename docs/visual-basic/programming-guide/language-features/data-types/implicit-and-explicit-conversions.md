@@ -30,6 +30,8 @@ helpviewer_keywords:
   - "data type conversion, implicit"
   - "implicit data type conversions"
 ms.assetid: 77de1659-af8a-492c-967e-e7ef60ccce66
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

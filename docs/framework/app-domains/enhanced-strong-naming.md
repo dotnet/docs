@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "strong-named assemblies"
   - "strong naming [.NET Framework], enhanced"
 ms.assetid: 6cf17a82-62a1-4f6d-8d5a-d7d06dec2bb5
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

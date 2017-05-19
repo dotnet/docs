@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "Mgmtclassgen.exe"
   - "early-bound managed classes"
 ms.assetid: 02ce6699-49b5-4a0b-b0d5-1003c491232e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

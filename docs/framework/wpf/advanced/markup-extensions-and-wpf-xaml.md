@@ -26,6 +26,8 @@ helpviewer_keywords:
   - "DynamicResource markup extensions"
   - "*Extension class"
 ms.assetid: 618dc745-8b14-4886-833f-486d2254bb78
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "My.Computer.Ports object"
   - "Ports object"
 ms.assetid: 244ede4e-25b7-445b-9fd6-163550cce193
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

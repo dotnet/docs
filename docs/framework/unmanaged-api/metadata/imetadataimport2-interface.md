@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataImport2 interface [.NET Framework metadata]"
 ms.assetid: d39b2b87-ba53-4771-ae53-952a68452511
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

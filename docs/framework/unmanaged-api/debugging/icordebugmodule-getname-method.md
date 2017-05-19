@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugModule::GetName method [.NET Framework debugging]"
   - "GetName method, ICorDebugModule interface [.NET Framework debugging]"
 ms.assetid: db499637-7ba9-421e-b8b1-35856995e80b
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

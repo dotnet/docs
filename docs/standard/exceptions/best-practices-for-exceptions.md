@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "exceptions, best practices"
 ms.assetid: f06da765-235b-427a-bfb6-47cd219af539
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 28
 author: "mairaw"
 ms.author: "mairaw"

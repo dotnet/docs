@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "-noconfig compiler option [C#]"
   - "noconfig compiler option [C#]"
 ms.assetid: cd26967e-e494-4c8c-b5c9-af13b2f78b2e
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

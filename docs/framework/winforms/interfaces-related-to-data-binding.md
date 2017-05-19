@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "data binding, interfaces"
   - "IDataErrorInfo interface, Windows Forms data binding"
 ms.assetid: 14e49a2e-3e46-47ca-b491-70d546333277
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

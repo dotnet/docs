@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "MDI, activating forms"
   - "MDI, locating focus"
 ms.assetid: 33880ec3-0207-4c2b-a616-ff140443cc0f
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

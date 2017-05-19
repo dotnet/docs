@@ -31,6 +31,8 @@ helpviewer_keywords:
   - "current instance, Me keyword"
   - "MyBase keyword, relationship to similar programming elements"
 ms.assetid: f8e241ae-b1ed-4886-9aa0-08c632154029
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

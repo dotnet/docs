@@ -14,6 +14,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "navigation [WPF]"
 ms.assetid: f804648e-558c-4f60-8e48-d11f4a23c436
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent

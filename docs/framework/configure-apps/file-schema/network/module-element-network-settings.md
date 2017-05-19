@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "module element"
   - "<module> element"
 ms.assetid: 10318725-9666-4d65-ab61-b94c64e59f13
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "thumbnail images, creating"
   - "images [Windows Forms], creating thumbnails"
 ms.assetid: e956242a-1e5b-4217-a3cf-5f3fb45d00ba
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

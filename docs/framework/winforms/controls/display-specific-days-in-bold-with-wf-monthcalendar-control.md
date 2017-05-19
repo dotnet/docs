@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "GetDayBold event"
   - "MonthCalendar control [Windows Forms], dates displayed in bold"
 ms.assetid: 8b20db5b-8118-4825-90e8-2c45c186ac7d
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

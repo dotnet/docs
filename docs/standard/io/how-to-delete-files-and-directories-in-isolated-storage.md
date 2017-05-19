@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "storing data using isolated storage, deleting files and directories"
   - "deleting directories within isolated stage file"
 ms.assetid: 8fcc0dea-435b-4d40-ba4d-ba056265c202
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

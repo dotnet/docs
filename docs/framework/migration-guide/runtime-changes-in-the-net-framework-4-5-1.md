@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "runtime changes"
   - ".NET Framework 4.5.1"
 ms.assetid: da880ad7-ba0a-4368-b340-705e3533c351
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

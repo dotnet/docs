@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "<add> element for <switches>"
   - "add element for <switches>"
 ms.assetid: 712ac3a7-7abf-4a9e-8db4-acd241c2f369
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"

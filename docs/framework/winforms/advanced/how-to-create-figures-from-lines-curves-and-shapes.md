@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "figures, creating from shapes"
   - "figures, creating from lines"
 ms.assetid: 82fd56c7-b443-4765-9b7c-62ce030656ec
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

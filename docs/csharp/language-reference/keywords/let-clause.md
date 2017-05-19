@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "let keyword [C#]"
   - "let clause [C#]"
 ms.assetid: 13c9c1a4-ce57-48ef-8e1b-4c2a59b99fb4
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "2-D graphics"
   - "images, optimizing performance"
 ms.assetid: e335601e-28c8-4d64-ba27-778fffd55f72
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

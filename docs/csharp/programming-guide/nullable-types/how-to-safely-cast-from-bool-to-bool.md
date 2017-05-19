@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "casting [C#], nullable types"
   - "nullable types [C#], casting bool? to bool"
 ms.assetid: e06e4274-a443-422d-8ef1-9dbf9df55237
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"

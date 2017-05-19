@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "Protected Friend keyword combination"
   - "Friend keyword, and Protected"
 ms.assetid: b664605e-1c79-4728-b996-aa59c50846bc
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

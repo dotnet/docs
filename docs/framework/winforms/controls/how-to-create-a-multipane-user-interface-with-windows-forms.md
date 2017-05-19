@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "TreeView control [Windows Forms], examples"
   - "Splitter control [Windows Forms], examples"
 ms.assetid: e79f6bcc-3740-4d1e-b46a-c5594d9b7327
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

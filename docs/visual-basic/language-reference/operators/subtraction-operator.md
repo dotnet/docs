@@ -27,6 +27,8 @@ helpviewer_keywords:
   - "operators [Visual Basic], negation"
   - "minus operator [Visual Basic]"
 ms.assetid: bff2c368-662d-4c92-ac87-1d9bdfd3426a
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

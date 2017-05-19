@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "hosting WPF content in Win32 window"
 ms.assetid: 38ce284a-4303-46dd-b699-c9365b22a7dc
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

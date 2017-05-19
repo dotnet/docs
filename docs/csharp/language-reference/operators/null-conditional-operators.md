@@ -8,6 +8,8 @@ ms.topic: "article"
 dev_langs: 
   - "CSharp"
 ms.assetid: 9c7b2c8f-a785-44ca-836c-407bfb6d27f5
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"

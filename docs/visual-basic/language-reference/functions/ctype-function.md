@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "CType function"
   - "conversions, expression"
 ms.assetid: dd4b29e7-6fa1-428c-877e-69955420bb72
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

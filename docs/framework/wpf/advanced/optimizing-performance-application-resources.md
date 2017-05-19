@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "brushes, performance"
   - "sharing brushes without copying"
 ms.assetid: 62b88488-c08e-4804-b7de-a1c34fbe929c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

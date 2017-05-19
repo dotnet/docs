@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "webRequestModules element"
   - "<webRequestModules> element"
 ms.assetid: 1263de11-3e0a-4f94-97c9-710b2ae53817
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"

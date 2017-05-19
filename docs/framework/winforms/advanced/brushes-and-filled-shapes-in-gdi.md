@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "gradient brushes"
   - "brushes, gradient"
 ms.assetid: e863e2a7-0294-4130-99b6-f1ea3201e7cd
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

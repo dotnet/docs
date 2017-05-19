@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "XAML browser applications (XBAP)"
   - "browser-hosted applications [WPF]"
 ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 47
 author: dotnet-bot
 ms.author: dotnetcontent

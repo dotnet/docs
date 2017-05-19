@@ -13,6 +13,8 @@ dev_langs:
 helpviewer_keywords: 
   - "const keyword [C#]"
 ms.assetid: 79eb447c-117b-4418-933f-97c50aa472db
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "XAML [XAML Services], x:Reference Markup Extension"
   - "Reference markup extension [XAML Services]"
 ms.assetid: 2982e68b-d26b-4aa3-826a-34c57a9c5199
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"

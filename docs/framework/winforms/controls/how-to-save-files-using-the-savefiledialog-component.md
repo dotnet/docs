@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "files, saving"
   - "OpenFile method, saving files with SaveFileDialog component"
 ms.assetid: 02e8f409-b83f-4707-babb-e71f6b223d90
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

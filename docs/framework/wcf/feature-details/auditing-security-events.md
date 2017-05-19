@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "auditing security events [WCF]"
 ms.assetid: 5633f61c-a3c9-40dd-8070-1c373b66a716
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 27
 author: "BrucePerlerMS"
 ms.author: "bruceper"

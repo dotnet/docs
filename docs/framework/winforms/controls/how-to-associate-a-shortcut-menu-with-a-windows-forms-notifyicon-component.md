@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "NotifyIcon component, associating shortcut menus"
   - "shortcut menus, for background processes"
 ms.assetid: d68f3926-08d3-4f7d-949f-1981b29cf188
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

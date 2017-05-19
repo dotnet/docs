@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostSyncManager::SetCLRSyncManager method [.NET Framework hosting]"
   - "SetCLRSyncManager method [.NET Framework hosting]"
 ms.assetid: 2b8bbe76-a45d-4989-bacb-11df42f8798c
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

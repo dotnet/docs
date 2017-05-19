@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "XML comments"
   - "XML documentation, creating"
 ms.assetid: 27b5b06c-09b9-496a-8245-f9542d846230
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

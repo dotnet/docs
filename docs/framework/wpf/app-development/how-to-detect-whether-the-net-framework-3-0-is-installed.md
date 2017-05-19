@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "presence of WPT, detecting"
   - "detecting WPF presence"
 ms.assetid: 7f71d652-1749-4379-945a-aa2e3994cb43
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

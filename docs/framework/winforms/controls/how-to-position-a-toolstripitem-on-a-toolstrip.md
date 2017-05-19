@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms], aligning items"
   - "toolbars [Windows Forms], positioning items"
 ms.assetid: 11fd7c5b-ee5c-4993-9a11-89127ff0aa7a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

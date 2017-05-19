@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "times [.NET Framework], time zones"
   - "time [.NET Framework], time zones"
 ms.assetid: 295c16e0-641b-4771-94b3-39c1ffa98c13
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

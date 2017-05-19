@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IsNull method, ICorDebugReferenceValue interface [.NET Framework debugging]"
   - "ICorDebugReferenceValue::IsNull method [.NET Framework debugging]"
 ms.assetid: 99e8c8d7-a1c0-47c8-9dbd-03e0b2bcb4d5
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

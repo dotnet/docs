@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "<value> C# XML tag"
   - "value C# XML tag"
 ms.assetid: 08dbadaf-9ab6-43d9-9493-98e43bed199a
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

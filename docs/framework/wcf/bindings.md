@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "bindings [WCF]"
 ms.assetid: 845df323-be53-4848-92ef-ba67a406484d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"

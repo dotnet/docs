@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "ToolStripComboBox class, examples"
   - "ToolStrip control [Windows Forms], AutoComplete"
 ms.assetid: fd66d085-1af1-45d4-930a-cde944da2e16
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

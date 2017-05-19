@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "examples [Visual Basic], reading text files"
   - "text files, reading"
 ms.assetid: 735fe9d7-0f7a-4185-ba02-f35e580ec4b8
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

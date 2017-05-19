@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "graphics, world transformation"
   - "world transformation, examples"
 ms.assetid: 1e717711-1361-448e-aa49-0f3ec43110c9
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

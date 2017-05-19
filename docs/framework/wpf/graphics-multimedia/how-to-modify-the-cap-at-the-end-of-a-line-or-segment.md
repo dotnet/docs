@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Shape elements, caps"
   - "graphics, Shape caps"
 ms.assetid: f4bf3416-b3d8-4568-b98e-3eda8f6dbf7a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

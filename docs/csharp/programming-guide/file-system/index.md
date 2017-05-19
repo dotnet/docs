@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "registry [C#]"
   - "files [C#]"
 ms.assetid: 0f2511cf-2b02-4b41-b001-b1754677c38f
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

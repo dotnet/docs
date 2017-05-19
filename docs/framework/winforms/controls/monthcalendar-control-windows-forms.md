@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "dates, controls"
   - "calendars"
 ms.assetid: 051c6518-e0ca-426b-855c-f9bf70972970
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

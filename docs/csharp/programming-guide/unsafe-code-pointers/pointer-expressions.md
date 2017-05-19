@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "expressions [C#], pointer types"
   - "pointer expressions [C#]"
 ms.assetid: 3e7d9db3-20e9-4493-9c99-53c3214d19e5
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

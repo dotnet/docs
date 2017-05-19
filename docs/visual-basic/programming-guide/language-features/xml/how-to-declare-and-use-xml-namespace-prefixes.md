@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "LINQ to XML [Visual Basic], XML namespace prefixes"
   - "XML namespace prefixes [Visual Basic]"
 ms.assetid: 4292e1d9-eb8f-49d6-a3aa-f05a5fbe24d1
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

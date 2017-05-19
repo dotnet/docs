@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "text files, creating"
   - "files, creating"
 ms.assetid: 0253bb6d-5519-4a50-b882-b93ef5cca0d9
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

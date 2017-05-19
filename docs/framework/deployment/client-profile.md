@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "profile [.NET Framework Client Profile]"
   - ".NET Framework Client Profile"
 ms.assetid: f0219919-1f02-4588-8704-327a62fd91f1
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 44
 author: "mairaw"
 ms.author: "mairaw"

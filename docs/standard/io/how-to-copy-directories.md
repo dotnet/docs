@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "copying directories"
   - "directories [.NET Framework], copying"
 ms.assetid: 5a969765-e5f8-4b4e-977e-90e2b0a1fe3c
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

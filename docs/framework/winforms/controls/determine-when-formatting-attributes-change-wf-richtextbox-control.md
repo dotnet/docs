@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "text boxes, determining font changes"
   - "SelChange event"
 ms.assetid: bdfed015-f77a-41e5-b38f-f8629b2fa166
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

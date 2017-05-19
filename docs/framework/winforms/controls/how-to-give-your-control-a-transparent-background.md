@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], transparent background"
   - "transparency, Windows Forms custom controls"
 ms.assetid: 32433e63-f4e9-4305-9857-6de3edeb944a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

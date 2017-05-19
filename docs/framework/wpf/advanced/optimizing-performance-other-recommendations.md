@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "ScrollBarVisibility enumeration"
   - "brushes, performance"
 ms.assetid: d028cc65-7e97-4a4f-9859-929734eaf40d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

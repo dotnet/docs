@@ -14,6 +14,8 @@ f1_keywords:
 helpviewer_keywords: 
   - "UI Automation"
 ms.assetid: e7ec856e-41ee-47b1-9d57-b75a3dad088c
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 80
 author: "Xansky"
 ms.author: "mhopkins"

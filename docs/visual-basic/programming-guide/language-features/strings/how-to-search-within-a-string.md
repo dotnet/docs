@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "strings [Visual Basic], searching"
   - "examples [Visual Basic], strings"
 ms.assetid: ae4c79e0-08ea-489f-bdb2-5eb6d355f284
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

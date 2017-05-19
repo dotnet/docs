@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "add element for <namedCaches>"
   - "<add> element for <namedCaches>"
 ms.assetid: ce2a63a8-c829-4742-a6ea-72ee5d89f169
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"

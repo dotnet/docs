@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IMetaDataImport::GetClassLayout method [.NET Framework metadata]"
   - "GetClassLayout method, IMetaDataImport interface [.NET Framework metadata]"
 ms.assetid: 8f35414d-f40b-4b99-8768-9adb675c622a
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

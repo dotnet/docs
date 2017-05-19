@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "WPF, about application development"
   - "application development [WPF], about"
 ms.assetid: 2996ce5e-81e9-49ae-881b-952db3dd1b7e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "interoperability [WPF], Windows Forms"
   - "hybrid control [WPF interoperability]"
 ms.assetid: 9e8aa6b6-112c-4579-98d1-c974917df499
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

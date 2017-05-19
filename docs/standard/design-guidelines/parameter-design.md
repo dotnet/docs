@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "parameters, design guidelines"
   - "reserved parameters"
 ms.assetid: 3f33bf46-4a7b-43b3-bb78-1ffebe0dcfa6
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

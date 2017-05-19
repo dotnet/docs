@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "trappable errors"
   - "errors [Visual Basic], trappable"
 ms.assetid: f2dda05b-baef-41f5-8bb1-598bd7cf239f
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

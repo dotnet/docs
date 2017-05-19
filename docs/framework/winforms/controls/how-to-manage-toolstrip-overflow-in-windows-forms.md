@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "CanOverflow property"
 ms.assetid: fa10e0ad-4cbf-4c0d-9082-359c2f855d4e
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "margins, Windows Forms"
   - "Margin property [Windows Forms]"
 ms.assetid: bac7ed4d-a163-4259-98bd-155a36345890
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

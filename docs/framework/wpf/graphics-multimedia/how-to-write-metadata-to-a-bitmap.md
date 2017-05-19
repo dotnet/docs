@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "metadata, in images"
   - "bitmaps, writing metadata to"
 ms.assetid: 68f0dc4b-c0fe-43be-94f2-9d7399378fb3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

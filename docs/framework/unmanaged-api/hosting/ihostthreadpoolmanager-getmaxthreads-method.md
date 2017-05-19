@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "IHostThreadPoolManager::GetMaxThreads method [.NET Framework hosting]"
   - "GetMaxThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
 ms.assetid: db268876-6178-4a81-aca3-318ee7f96001
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

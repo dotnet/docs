@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICorDebugController::EnumerateThreads method [.NET Framework debugging]"
   - "EnumerateThreads method [.NET Framework debugging]"
 ms.assetid: 73f536f6-4668-4a4a-b3e4-ac7df862d5be
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

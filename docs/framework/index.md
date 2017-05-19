@@ -15,6 +15,8 @@ helpviewer_keywords:
   - ".NET Framework, documentation"
   - "documentation, .NET Framework"
 ms.assetid: f61f02f2-2f20-483d-8f56-a9c8f3a54986
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 75
 author: "rpetrusha"
 ms.author: "ronpet"

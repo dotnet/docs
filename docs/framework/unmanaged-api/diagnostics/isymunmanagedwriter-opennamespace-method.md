@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::OpenNamespace method [.NET Framework debugging]"
   - "OpenNamespace method [.NET Framework debugging]"
 ms.assetid: 426f4e4f-e60d-4ad1-b546-a10e3c55c283
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

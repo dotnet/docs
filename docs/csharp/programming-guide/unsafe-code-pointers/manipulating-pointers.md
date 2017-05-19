@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "pointers [C#], manipulation"
   - "pointer expressions [C#], operators"
 ms.assetid: a5fb36ee-dd5b-4a60-b4a4-6d94b9901988
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

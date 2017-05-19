@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "storing data using isolated storage, deleting stores"
   - "data storage using isolated storage, deleting stores"
 ms.assetid: 3947e333-5af6-4601-b2f1-24d4d6129cf3
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

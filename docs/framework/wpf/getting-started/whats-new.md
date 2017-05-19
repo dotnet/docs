@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "Windows Presentation Foundation, what's new"
   - "WPF, what's new"
 ms.assetid: db086ae4-70bb-4862-95db-2eaca5216bc3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 55
 author: dotnet-bot
 ms.author: dotnetcontent

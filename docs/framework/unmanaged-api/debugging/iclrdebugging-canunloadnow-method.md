@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "CanUnloadNow method [.NET Framework debugging]"
   - "ICLRDebugging::CanUnloadNow method [.NET Framework debugging]"
 ms.assetid: 62e0630c-8cb7-45d2-b622-5a472abfd8cf
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

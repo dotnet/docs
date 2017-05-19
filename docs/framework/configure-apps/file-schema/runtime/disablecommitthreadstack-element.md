@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "<disableCommitThreadStack> element"
   - "disableCommitThreadStack element"
 ms.assetid: 3559d46a-7640-4c72-9a11-7e980768929e
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

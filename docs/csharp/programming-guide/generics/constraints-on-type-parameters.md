@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "type parameters [C#], constraints"
   - "unbound type parameter [C#]"
 ms.assetid: 141b003e-1ddb-4e1c-bcb2-e1c3870e6a51
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 41
 author: "BillWagner"
 ms.author: "wiwagn"

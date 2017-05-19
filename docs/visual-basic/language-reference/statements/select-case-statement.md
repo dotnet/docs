@@ -31,6 +31,8 @@ helpviewer_keywords:
   - "End keyword, Select Case statements"
   - "Case statement, Select...Case"
 ms.assetid: 68877b65-5419-4bf0-a465-20cd0e4c7d44
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

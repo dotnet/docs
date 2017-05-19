@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "conditional-OR operator (||) [C#]"
   - "|| operator [C#]"
 ms.assetid: 7d442d8e-400d-421f-b4d2-034bf82bcbdc
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "radio buttons"
   - "RadioButton control [Windows Forms]"
 ms.assetid: e895b2a5-9bcb-4486-b165-eaf4c3ea9644
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

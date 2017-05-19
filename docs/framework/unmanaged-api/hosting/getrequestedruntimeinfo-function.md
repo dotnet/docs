@@ -23,6 +23,8 @@ dev_langs:
 helpviewer_keywords: 
   - "GetRequestedRuntimeInfo function [.NET Framework hosting]"
 ms.assetid: 0dfd7cdc-c116-4e25-b56a-ac7b0378c942
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 22

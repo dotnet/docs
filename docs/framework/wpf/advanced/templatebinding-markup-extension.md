@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "XAML, TemplateBinding markup extension"
   - "TemplateBinding markup extensions"
 ms.assetid: 1d25bbfc-dbc2-499d-9f12-419d23d4ac6a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

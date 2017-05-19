@@ -28,6 +28,8 @@ helpviewer_keywords:
   - "Short data type"
   - "literal type characters, S"
 ms.assetid: 65fcbcf3-a841-400e-885e-301497729a8b
+ms.technology: 
+  - "devlang-visual-basic"
 author: "rpetrusha"
 ms.author: "ronpet"
 

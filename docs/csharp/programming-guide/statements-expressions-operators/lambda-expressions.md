@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "expression lambda [C#]"
   - "expressions [C#], lambda"
 ms.assetid: 57e3ba27-9a82-4067-aca7-5ca446b7bf93
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 64
 author: "BillWagner"
 ms.author: "wiwagn"

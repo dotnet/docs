@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Manifest Generation and Editing tool"
   - "MageUI.exe"
 ms.assetid: f9e130a6-8117-49c4-839c-c988f641dc14
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 38
 author: dotnet-bot
 ms.author: dotnetcontent

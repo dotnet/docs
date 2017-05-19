@@ -36,6 +36,8 @@ helpviewer_keywords:
   - "declaration statements"
   - "scalar variables"
 ms.assetid: ad1c5e07-dcd7-4ae1-a79e-ad3f2dcc2083
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

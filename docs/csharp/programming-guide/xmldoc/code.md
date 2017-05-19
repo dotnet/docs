@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "code XML tag"
   - "<code> C# XML tag"
 ms.assetid: f235e3bc-a709-43cf-8a9f-bd57cabdf6da
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

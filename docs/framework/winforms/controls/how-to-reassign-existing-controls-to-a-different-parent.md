@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "layout [Windows Forms], resizing"
   - "layout [Windows Forms], child controls"
 ms.assetid: 5a5723ff-34e0-4b6f-a57b-be4ebe35cb34
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

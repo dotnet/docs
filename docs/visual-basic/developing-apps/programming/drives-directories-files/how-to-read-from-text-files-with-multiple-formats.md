@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "I/O [Visual Basic], reading text files"
   - "text files, reading"
 ms.assetid: 8d185eb2-79ca-42cd-95a7-d3ff44a5a0f8
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "SplashScreen class [WPF]"
   - "splash screen [WPF]"
 ms.assetid: d70a25c4-5fb9-4c27-b01d-b1b8ef39b3fd
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

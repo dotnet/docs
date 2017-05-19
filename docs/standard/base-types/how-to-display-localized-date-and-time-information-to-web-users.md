@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "displaying date and time data"
   - "localized date displays [.NET Framework]"
 ms.assetid: 377fe93c-32be-421a-a30a-be639a46ede8
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

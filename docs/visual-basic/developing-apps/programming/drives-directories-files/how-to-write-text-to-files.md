@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "writing to files"
   - "examples [Visual Basic], text files"
 ms.assetid: 304956eb-530d-4df7-b48f-9b4d1f2581a0
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

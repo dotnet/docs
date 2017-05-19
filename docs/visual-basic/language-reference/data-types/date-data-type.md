@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "literals, Date"
   - "# specifier for Date literals"
 ms.assetid: d9edf5b0-e85e-438b-a1cf-1f321e7c831b
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

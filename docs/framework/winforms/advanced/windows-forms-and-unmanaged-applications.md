@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Windows Forms, unmanaged"
   - "Windows Forms, interop"
 ms.assetid: 81bc100c-fa49-4614-85a6-0f7ab59eac8a
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

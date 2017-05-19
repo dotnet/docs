@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "diagnostics symbol store enumerations [.NET Framework]"
   - "enumerations [.NET Framework debugging]"
 ms.assetid: 57d68c70-aba1-4bad-a13f-6d0c55f43746
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

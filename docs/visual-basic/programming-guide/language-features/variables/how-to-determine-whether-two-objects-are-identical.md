@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "objects [Visual Basic], comparing"
   - "object variables, determining identity"
 ms.assetid: 7829f817-0d1f-4749-a707-de0b95e0cf5c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

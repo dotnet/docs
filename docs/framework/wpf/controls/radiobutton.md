@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "RadioButton control [WPF]"
   - "controls [WPF], RadioButton"
 ms.assetid: 6c9ba847-eab7-4bba-9c74-6b56ef72067b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 66
 author: dotnet-bot
 ms.author: dotnetcontent

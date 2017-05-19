@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "types [C#], integral types"
   - "ranges of integral types [C#]"
 ms.assetid: 62e86126-46ff-40b0-9028-e61d7558268c
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"

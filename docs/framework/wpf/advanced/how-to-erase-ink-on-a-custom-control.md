@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "custom controls, erasing ink on"
   - "ink, erasing on custom control"
 ms.assetid: d88c50f9-b4d8-4962-a28b-67d6a15a5fe0
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

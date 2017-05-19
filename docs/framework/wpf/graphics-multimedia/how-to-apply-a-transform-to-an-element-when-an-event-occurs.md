@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "properties, RenderTransform"
   - "LayoutTransform property"
 ms.assetid: 71e4327e-ca57-444c-a3cf-09fb381491a0
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

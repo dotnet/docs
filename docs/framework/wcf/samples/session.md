@@ -15,6 +15,8 @@ dev_langs:
 helpviewer_keywords: 
   - "Sessions"
 ms.assetid: 36e1db50-008c-4b32-8d09-b56e790b8417
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 31
 author: "Erikre"
 ms.author: "erikre"

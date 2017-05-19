@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Audio object"
   - "My.Computer.Audio object"
 ms.assetid: ab5bdd04-b0ce-48b2-91c5-6404ceca31d0
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

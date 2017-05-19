@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "functions [Visual Basic], conversion"
   - "dates, converting"
 ms.assetid: 8a8fb553-a8ac-424e-8103-26eea25eaa71
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

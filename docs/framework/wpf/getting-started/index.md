@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "introduction [WPF]"
   - "WPF, getting started"
 ms.assetid: 04f91da8-708c-46c7-8172-f1695ec847cd
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 60
 author: dotnet-bot
 ms.author: dotnetcontent

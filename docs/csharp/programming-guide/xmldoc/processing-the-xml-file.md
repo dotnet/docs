@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "XML processing [C#]"
   - "XML [C#], processing"
 ms.assetid: 60c71193-9dac-4cd3-98c5-100bd0edcc42
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

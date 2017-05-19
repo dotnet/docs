@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "DateTimeOffset structure, converting to DateTime"
   - "DateTimeOffset structure, instantiating"
 ms.assetid: 9648375f-d368-4373-a976-3332ece00c0a
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

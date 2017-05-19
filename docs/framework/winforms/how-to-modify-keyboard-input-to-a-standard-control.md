@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Windows Forms, modifying keyboard input"
   - "keyboards, keyboard input"
 ms.assetid: 626d3712-d866-4988-bcda-a2d5b36ec0ba
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

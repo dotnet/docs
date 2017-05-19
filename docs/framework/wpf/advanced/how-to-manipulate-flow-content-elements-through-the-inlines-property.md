@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Inlines property, manipulating flow Content elements"
   - "properties, Inlines, manipulating flow Content elements"
 ms.assetid: 510780d2-3da1-4360-8763-7054bda22ea3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

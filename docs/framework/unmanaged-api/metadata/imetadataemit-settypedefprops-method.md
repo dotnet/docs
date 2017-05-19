@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "SetTypeDefProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetTypeDefProps method [.NET Framework metadata]"
 ms.assetid: 480d596a-759f-4d29-ac1a-3dbff8f3544d
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

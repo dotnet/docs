@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "best practices [WCF], security"
 ms.assetid: 3639de41-1fa7-4875-a1d7-f393e4c8bd69
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 19
 author: "BrucePerlerMS"
 ms.author: "bruceper"

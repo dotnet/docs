@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "UI automation, finding text"
   - "highlighting text"
 ms.assetid: b77693f5-87bb-4b29-a297-05ff882e2044
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 15
 author: "Xansky"
 ms.author: "mhopkins"

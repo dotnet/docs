@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "delegates [Visual Basic]"
   - "Visual Basic code, delegates"
 ms.assetid: 410b60dc-5e60-4ec0-bfae-426755a2ee28
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

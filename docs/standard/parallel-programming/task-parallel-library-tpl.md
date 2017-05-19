@@ -13,6 +13,8 @@ helpviewer_keywords:
   - ".NET, parallel programming in"
   - "Parallel Programming"
 ms.assetid: b8f99f43-9104-45fd-9bff-385a20488a23
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 37
 author: "rpetrusha"
 ms.author: "ronpet"

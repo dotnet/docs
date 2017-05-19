@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "Polygon elements"
   - "drawing, closed shapes with Polygon elements"
 ms.assetid: 4b0ca008-29ce-48dd-8bc3-f3a20ffca6a6
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

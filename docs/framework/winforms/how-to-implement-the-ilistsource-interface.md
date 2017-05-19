@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "data binding, implementing"
   - "IListSource interface"
 ms.assetid: 63ce27aa-2e23-4fbd-8228-0c1726f6c421
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

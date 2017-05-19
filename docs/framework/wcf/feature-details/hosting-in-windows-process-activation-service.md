@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "hosting services [WCF], WAS"
 ms.assetid: d2b9d226-15b7-41fc-8c9a-cb651ac20ecd
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"

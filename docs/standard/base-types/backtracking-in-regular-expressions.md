@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "strings [.NET Framework], regular expressions"
   - "parsing text with regular expressions, backtracking"
 ms.assetid: 34df1152-0b22-4a1c-a76c-3c28c47b70d8
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "examples [Visual Basic], strings"
   - "arrays [Visual Basic], converting to strings"
 ms.assetid: d0dc8317-9ab3-4324-99f7-3f5788c0e72a
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

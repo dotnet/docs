@@ -12,6 +12,8 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrKILL_NoFilesFound1"
 ms.assetid: 218808a2-8e36-4f13-a60a-770624e1ace3
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

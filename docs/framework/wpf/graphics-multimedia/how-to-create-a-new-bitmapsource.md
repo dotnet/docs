@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "creating new BitmapSource objects"
   - "BitmapSource objects, creating"
 ms.assetid: 0adf447e-014f-4ceb-97b2-f21affe6d55b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

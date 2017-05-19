@@ -12,6 +12,8 @@ dev_langs:
 helpviewer_keywords: 
   - "#warning directive [C#]"
 ms.assetid: e6fb496d-bb8b-4018-baf6-5b60a0c8902b
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"

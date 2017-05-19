@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "WSSecurityTokenSerializer class"
   - "SecurityToken class"
 ms.assetid: 6d892973-1558-4115-a9e1-696777776125
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"

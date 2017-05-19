@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "data grids, setting sizing modes"
   - "DataGridView control [Windows Forms], sizing modes"
 ms.assetid: e9ad15e6-b4bb-44aa-a767-3738e9db1651
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

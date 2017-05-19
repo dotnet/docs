@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "Windows Forms, hosting ActiveX controls"
   - "ActiveX controls [Windows Forms], adding"
 ms.assetid: 2509302d-a74e-484f-9890-2acdbfa67a68
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

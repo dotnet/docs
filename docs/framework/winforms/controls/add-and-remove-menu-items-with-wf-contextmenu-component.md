@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "context menus, examples"
   - "examples [Windows Forms], context menus"
 ms.assetid: 426d1eaf-7fb8-4b0b-8a33-5e8721786ea4
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

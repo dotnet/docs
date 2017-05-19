@@ -11,6 +11,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "data structures, multi-threading"
 ms.assetid: bdc82f2f-4754-45a1-a81e-fe2e9c30cef9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

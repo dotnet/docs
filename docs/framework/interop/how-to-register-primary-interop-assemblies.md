@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "registering primary interop assemblies"
   - "primary interop assemblies, registering"
 ms.assetid: 4b2fcf8a-429d-43ce-8334-e026040be8bb
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

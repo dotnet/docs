@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "animation, objects along paths (matrix animation)"
   - "matrix animation"
 ms.assetid: 7000e697-1414-468c-b915-cf66062fc49e
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

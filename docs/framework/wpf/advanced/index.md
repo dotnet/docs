@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "WPF programming model"
   - "XAML [WPF], content models"
 ms.assetid: 58843391-b28c-4d32-adf5-87acaf6578a1
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 82
 author: dotnet-bot
 ms.author: dotnetcontent

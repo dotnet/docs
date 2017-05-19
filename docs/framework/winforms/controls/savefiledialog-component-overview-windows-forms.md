@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "Save File dialog box, displaying"
   - "SaveFileDialog component, about SaveFileDialog"
 ms.assetid: be7a625f-46fd-4d06-9985-b613dcbf9bd2
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

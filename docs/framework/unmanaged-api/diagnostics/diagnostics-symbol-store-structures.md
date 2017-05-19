@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "diagnostics symbol store structures [.NET Framework]"
   - "structures [.NET Framework debugging]"
 ms.assetid: 0d423791-d40d-45c6-a82b-1a165768d737
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

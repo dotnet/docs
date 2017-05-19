@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "data sources [LINQ in C#], data transformations"
   - "data transformations [LINQ in C#]"
 ms.assetid: 674eae9e-bc72-4a88-aed3-802b45b25811
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

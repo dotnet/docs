@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "checked list items"
   - "check boxes"
 ms.assetid: 0719d798-c307-40d3-9040-72a62679c227
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

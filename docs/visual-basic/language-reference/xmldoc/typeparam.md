@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "typeparam XML tag"
   - "<typeparam> XML tag"
 ms.assetid: 1bb5ba78-f060-478c-905c-77a2e43639af
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

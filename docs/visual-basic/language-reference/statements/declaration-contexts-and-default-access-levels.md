@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "access levels, Visual Basic"
   - "access levels, default levels"
 ms.assetid: bf63b96e-e825-4745-88c8-5dae222728db
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

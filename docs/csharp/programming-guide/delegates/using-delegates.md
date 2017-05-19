@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "delegates [C#], how to use"
 ms.assetid: 99a2fc27-a32e-4a34-921c-e65497520eec
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "LINQ, deferred execution"
   - "queries [LINQ], about LINQ queries"
 ms.assetid: 37895c02-268c-41d5-be39-f7d936fa88a8
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 47
 author: "BillWagner"
 ms.author: "wiwagn"

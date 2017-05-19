@@ -36,6 +36,8 @@ helpviewer_keywords:
   - "startup events"
   - "lifetime events of objects"
 ms.assetid: face6fc7-465b-4502-bfe5-e88d2e729a78
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

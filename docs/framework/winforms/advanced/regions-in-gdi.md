@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "drawing, regions"
   - "regions"
 ms.assetid: 52184f9b-16dd-4bbd-85be-029112644ceb
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

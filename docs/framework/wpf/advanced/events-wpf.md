@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "events, windows"
   - "WPF, events"
 ms.assetid: d3b93c6f-aa6b-486d-a010-d097ea8a516b
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 73
 author: dotnet-bot
 ms.author: dotnetcontent

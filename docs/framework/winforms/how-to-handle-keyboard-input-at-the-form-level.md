@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Windows Forms, handling keyboard input"
   - "keyboards, form-level input"
 ms.assetid: d7f8b390-dc91-42d2-ae0f-2ffa388127ad
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

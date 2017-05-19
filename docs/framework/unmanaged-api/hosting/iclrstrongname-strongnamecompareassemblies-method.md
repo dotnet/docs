@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameCompareAssemblies method [.NET Framework hosting]"
   - "StrongNameCompareAssemblies method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: b1fb356c-72cf-4aa4-8376-f291a6d97c01
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

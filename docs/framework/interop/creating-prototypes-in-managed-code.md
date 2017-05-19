@@ -26,6 +26,8 @@ helpviewer_keywords:
   - "DLL functions"
   - "object fields in platform invoke"
 ms.assetid: ecdcf25d-cae3-4f07-a2b6-8397ac6dc42d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

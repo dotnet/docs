@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "invalid VARIANT types"
   - "managed debugging assistants (MDAs), invalid variant"
 ms.assetid: d273e070-d1b1-4a53-a9c7-7af837b04a3d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

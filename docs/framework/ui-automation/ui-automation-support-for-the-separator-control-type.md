@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Separator control type"
   - "control types, Separator"
 ms.assetid: 89f42247-c699-4afa-91e1-2baaf0d86c9d
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 20
 author: "Xansky"
 ms.author: "mhopkins"

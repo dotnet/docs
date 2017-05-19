@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "attached properties [WPF Designer]"
 ms.assetid: 75928354-dc01-47e8-a018-8409aec1f32d
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent

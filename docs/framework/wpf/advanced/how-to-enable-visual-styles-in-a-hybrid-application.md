@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "visual styles [Windows Forms]"
 ms.assetid: 95de9b9c-d804-405c-b2d1-49a88c1e0fe1
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

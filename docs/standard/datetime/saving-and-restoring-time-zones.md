@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "time zone objects [.NET Framework], serializing"
   - "time zone objects [.NET Framework], saving"
 ms.assetid: 4028b310-e7ce-49d4-a646-1e83bfaf6f9d
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

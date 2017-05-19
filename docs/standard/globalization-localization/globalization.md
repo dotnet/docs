@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "application development [.NET Framework], globalization"
   - "culture, globalization"
 ms.assetid: 4e919934-6b19-42f2-b770-275a4fae87c9
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

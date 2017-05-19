@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms]"
   - "toolbars [Windows Forms], customizing"
 ms.assetid: 46acef3e-9844-4ae8-9a2e-3006fe99cadf
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

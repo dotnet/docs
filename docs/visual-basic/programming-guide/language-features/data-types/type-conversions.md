@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "changing data types"
   - "data type conversion"
 ms.assetid: 1cdacd21-ba31-4b62-b5be-395e41eeaa17
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

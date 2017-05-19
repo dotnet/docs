@@ -16,6 +16,8 @@ dev_langs:
 helpviewer_keywords: 
   - "In keyword [Visual Basic]"
 ms.assetid: 2f003a85-8fb6-4280-822b-6ac12839b915
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

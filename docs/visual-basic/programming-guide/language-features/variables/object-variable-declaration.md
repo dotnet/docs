@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "declaring classes"
   - "late binding"
 ms.assetid: 2a5a41a3-1aa8-4236-b1f0-2382af7bf715
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent

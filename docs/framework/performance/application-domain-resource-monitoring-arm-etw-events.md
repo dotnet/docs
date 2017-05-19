@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "ETW, application domain monitoring events"
   - "application domain monitoring events [.NET Framework]"
 ms.assetid: d38ff268-a2ee-434e-b504-d570880e0289
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

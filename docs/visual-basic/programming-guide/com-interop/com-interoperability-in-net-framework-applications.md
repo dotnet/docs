@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "COM interop"
   - "shared components"
 ms.assetid: f5a72143-c268-4dff-a019-974ad940e17d
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "properties, auto-implemented [Visual Basic]"
   - "auto-implemented properties [Visual Basic]"
 ms.assetid: 5c669f0b-cf95-4b4e-ae84-9cc55212ca87
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

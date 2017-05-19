@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "PanelClick event, determining panel clicked"
   - "Panel control [Windows Forms], determining click"
 ms.assetid: d14c6092-04b2-4a07-8ddf-0dd11277ff5f
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,6 +20,8 @@ helpviewer_keywords:
   - "context menus, for Windows Forms"
   - "shortcut menus, ContextMenu component"
 ms.assetid: 9b93ccbc-c0fe-44a2-968e-faac25971831
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

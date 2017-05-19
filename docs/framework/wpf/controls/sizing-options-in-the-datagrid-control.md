@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "size [WPF], DataGrid"
   - "automatically size DataGrid"
 ms.assetid: 96a0e47e-b010-4302-98ef-2daac446d8db
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

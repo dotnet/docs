@@ -23,6 +23,8 @@ helpviewer_keywords:
   - "GetSymbolSearchInfoCount method [.NET Framework debugging]"
   - "ISymUnmanagedReaderSymbolSearchInfo::GetSymbolSearchInfoCount method [.NET Framework debugging]"
 ms.assetid: 4068b6ec-525f-4446-8818-0296178cbd19
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "security [Windows Forms], calling APIs"
   - "Clipboard, securing access"
 ms.assetid: 15abda8b-0527-47c7-aedb-77ab595f2bf1
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

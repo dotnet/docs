@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "Windows Presentation Foundation, data"
   - "data [WPF]"
 ms.assetid: dea454e2-abd8-4c53-ba37-d3ed53187d64
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 78
 author: dotnet-bot
 ms.author: dotnetcontent

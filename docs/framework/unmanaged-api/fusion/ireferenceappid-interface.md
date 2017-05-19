@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IReferenceAppId interface [.NET Framework fusion]"
 ms.assetid: 8eb9e565-f358-43ce-900e-a8f8a5aa6cfb
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

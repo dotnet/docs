@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "CLR_DEBUGGING_VERSION structure [.NET Framework debugging]"
 ms.assetid: 4d821186-3ddf-405a-ac44-d79438a9f7f3
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

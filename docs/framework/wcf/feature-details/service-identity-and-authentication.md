@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "authentication [WCF], specifying the identity of a service"
 ms.assetid: a4c8f52c-5b30-45c4-a545-63244aba82be
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 32
 author: "Erikre"
 ms.author: "erikre"

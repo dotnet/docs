@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "wrappers, implementing"
   - "dependency properties, custom"
 ms.assetid: e6bfcfac-b10d-4f58-9f77-a864c2a2938f
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "graphics paths, drawing"
   - "examples [Windows Forms], drawing paths"
 ms.assetid: f16ec921-56cf-46d1-9741-d7316ad06b23
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

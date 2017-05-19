@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "reflection emit, generic methods"
   - "generics [.NET Framework], dynamic types"
 ms.assetid: 93892fa4-90b3-4ec4-b147-4bec9880de2b
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

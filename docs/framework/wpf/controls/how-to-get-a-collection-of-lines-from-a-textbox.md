@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "lines, getting collection of"
   - "TextBox control, getting collection of lines"
 ms.assetid: a12f529d-b926-47f6-92bf-cad5f17b532a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

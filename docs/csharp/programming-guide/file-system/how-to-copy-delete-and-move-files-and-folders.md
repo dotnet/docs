@@ -14,6 +14,8 @@ dev_langs:
 helpviewer_keywords: 
   - "I/O [C#]"
 ms.assetid: 62e52cd7-9597-4e4a-acf9-1315f5cdbf05
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

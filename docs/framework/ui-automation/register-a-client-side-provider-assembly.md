@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "UI Automation, registering provider assemblies"
   - "provider assemblies, registering"
 ms.assetid: a03af4d9-2771-43cc-b07b-d468dca23190
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 8
 author: "Xansky"
 ms.author: "mhopkins"

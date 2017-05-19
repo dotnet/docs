@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "tab controls, tab order"
   - "tab pages, adding controls"
 ms.assetid: 7ee734e1-e31e-4ed0-bbc0-a7e8a1f20fef
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

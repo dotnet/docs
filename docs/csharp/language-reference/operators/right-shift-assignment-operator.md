@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "right shift assignment operator (>>=) [C#]"
   - ">>= operator (right-shift assignment) [C#]"
 ms.assetid: b593778c-b9b4-440d-8b29-c1ac22cb81c0
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

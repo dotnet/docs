@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "[] operator [C#]"
   - "indexing operator [C#]"
 ms.assetid: 5c16bb45-88f7-45ff-b42c-1af1972b042c
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

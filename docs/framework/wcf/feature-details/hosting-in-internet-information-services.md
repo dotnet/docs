@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "hosting services [WCF], IIS"
 ms.assetid: ddae14e8-143c-442d-b660-2046809b2d43
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"

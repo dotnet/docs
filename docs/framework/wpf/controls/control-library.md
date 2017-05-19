@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "control library"
   - "libraries, controls"
 ms.assetid: c1b33289-c389-4ac2-b153-3cbb0d8324ad
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 69
 author: dotnet-bot
 ms.author: dotnetcontent

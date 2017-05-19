@@ -26,6 +26,8 @@ helpviewer_keywords:
   - "progress information for installation"
   - "reporting installation progress"
 ms.assetid: 3f9d0533-f895-4897-b4ea-528284e0241d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 40
 author: "rpetrusha"
 ms.author: "ronpet"

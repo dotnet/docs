@@ -19,6 +19,8 @@ helpviewer_keywords:
   - "RectangleGeometry class"
   - "LineGeometry class"
 ms.assetid: 9fba8934-98b7-4af6-82f6-f4ef887f963a
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

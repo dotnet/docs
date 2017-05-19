@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], painting"
   - "user controls [Windows Forms], painting"
 ms.assetid: a09dbf76-0966-4cbf-a66a-2083ba98e068
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

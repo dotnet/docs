@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "optional arguments [C#], Office programming"
   - "named arguments [C#], Office programming"
 ms.assetid: 65b8a222-bcd8-454c-845f-84adff5a356f
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 34
 author: "BillWagner"
 ms.author: "wiwagn"

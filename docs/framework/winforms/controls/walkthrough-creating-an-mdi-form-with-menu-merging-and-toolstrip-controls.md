@@ -21,6 +21,8 @@ helpviewer_keywords:
   - "MDI forms, creating"
   - "MDI forms, walkthroughs"
 ms.assetid: fbab4221-74af-42d0-bbf4-3c97f7b2e544
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

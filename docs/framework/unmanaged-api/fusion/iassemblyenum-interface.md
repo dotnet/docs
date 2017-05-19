@@ -22,6 +22,8 @@ dev_langs:
 helpviewer_keywords: 
   - "IAssemblyEnum interface [.NET Framework fusion]"
 ms.assetid: 634ef9f9-e94b-4776-a9e1-866df9a76c8f
+ms.technology: 
+  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "Rotation3DAnimation"
   - "animation, 3-D translations, with Rotation3DAnimation"
 ms.assetid: a92223ec-b634-4f5e-8e79-d33bc43ecfb3
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

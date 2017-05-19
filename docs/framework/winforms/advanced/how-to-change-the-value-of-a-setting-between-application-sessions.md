@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "application settings [Windows Forms], changing"
   - "application settings [Windows Forms], between application sessions"
 ms.assetid: 1a85911f-97b2-476c-930b-83379edd890c
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

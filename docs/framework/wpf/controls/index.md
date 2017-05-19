@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "controls [WPF], about WPF controls"
 ms.assetid: 3f255a8a-35a8-4712-9065-472ff7d75599
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

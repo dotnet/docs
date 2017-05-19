@@ -24,6 +24,8 @@ helpviewer_keywords:
   - "marshaling, platform invoke"
   - "sample applications [.NET Framework], marshaling strings"
 ms.assetid: e21b078b-70fb-4905-be26-c097ab2433ff
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "delegates [.NET Framework], asynchronous"
   - "synchronous calling in asynchronous manner"
 ms.assetid: 38a345ca-6963-4436-9608-5c9defef9c64
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

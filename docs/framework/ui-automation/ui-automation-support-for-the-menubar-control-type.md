@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "control types, Menu Bar"
   - "Menu Bar control type"
 ms.assetid: c1202b21-c1f0-4560-853c-7b99bd73ad97
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"

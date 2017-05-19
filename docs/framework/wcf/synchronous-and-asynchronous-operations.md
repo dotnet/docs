@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "service contracts [WCF], synchronous operations"
   - "service contracts [WCF], asynchronous operations"
 ms.assetid: db8a51cb-67e6-411b-9035-e5821ed350c9
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 24
 author: "Erikre"
 ms.author: "erikre"

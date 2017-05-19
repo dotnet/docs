@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "images [Windows Forms], changing colors"
   - "image colors [Windows Forms]"
 ms.assetid: 2106fb9a-4d60-4dcf-9220-9f189a6c4d19
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

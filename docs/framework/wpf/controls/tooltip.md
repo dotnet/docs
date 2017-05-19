@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "controls [WPF], ToolTip"
   - "popups [WPF]"
 ms.assetid: a3cb42d6-6ce3-4aa0-a557-2cc5b142f1e4
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 68
 author: dotnet-bot
 ms.author: dotnetcontent

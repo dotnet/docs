@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "POX"
   - "REST"
 ms.assetid: 2312a8d3-b66e-4623-ba42-978434300c7f
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"

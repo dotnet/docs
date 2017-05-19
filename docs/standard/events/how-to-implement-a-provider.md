@@ -13,6 +13,8 @@ helpviewer_keywords:
   - "providers [.NET Framework], in observer design pattern"
   - "observables [.NET Framework], in observer design pattern"
 ms.assetid: 790b5d8b-d546-40a6-beeb-151b574e5ee5
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

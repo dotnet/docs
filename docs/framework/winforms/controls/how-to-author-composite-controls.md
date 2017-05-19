@@ -17,6 +17,8 @@ helpviewer_keywords:
   - "user controls [Windows Forms], inheriting from"
   - "composite controls, creating"
 ms.assetid: 79c9cf05-5ab6-4a18-886d-88a64748b098
+ms.technology: 
+  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

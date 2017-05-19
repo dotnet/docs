@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "structured navigation [WPF]"
 ms.assetid: 025d30ef-fec5-436d-ad7a-5d5483331c26
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 43
 author: dotnet-bot
 ms.author: dotnetcontent

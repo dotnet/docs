@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "in-process side-by-side execution"
   - "side-by-side execution, in-process"
 ms.assetid: 18019342-a810-4986-8ec2-b933a17c2267
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"

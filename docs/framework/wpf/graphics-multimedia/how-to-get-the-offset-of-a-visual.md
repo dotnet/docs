@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "visual objects, retrieving offset values from"
   - "retrieving offset values from visual objects"
 ms.assetid: 889a1dd6-1b11-445a-b351-fbb04c53ee34
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

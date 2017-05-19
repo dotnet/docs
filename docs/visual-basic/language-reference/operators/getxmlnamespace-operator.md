@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "GetXmlNamespace operator"
   - "GetXmlNamespace keyword"
 ms.assetid: d0d28cfd-0755-4896-ae0b-4981aa35517c
+ms.technology: 
+  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,6 +18,8 @@ helpviewer_keywords:
   - "managing control states [WPF], VisualStateManager"
   - "VisualStateManager [WPF], best practice"
 ms.assetid: 9e356d3d-a3d0-4b01-a25f-2d43e4d53fe5
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,6 +16,8 @@ helpviewer_keywords:
   - "x:Array [XAML Services]"
   - "XAML [XAML Services], x:Array markup extension"
 ms.assetid: c5358e14-d24c-44c7-b5eb-6062a4fd981c
+ms.technology: 
+  - "dotnet-wpf"
 caps.latest.revision: 20
 author: "wadepickett"
 ms.author: "wpickett"

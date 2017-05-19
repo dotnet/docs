@@ -14,6 +14,8 @@ helpviewer_keywords:
   - "?? operator [C#]"
   - "conditional-AND operator (&&) [C#]"
 ms.assetid: 088b1f0d-c1af-4fe1-b4b8-196fd5ea9132
+ms.technology: 
+  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

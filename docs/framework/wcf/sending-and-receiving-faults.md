@@ -12,6 +12,8 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "handling faults [WCF], sending"
 ms.assetid: 7be6fb96-ce2a-450b-aebe-f932c6a4bc5d
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"

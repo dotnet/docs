@@ -25,6 +25,8 @@ helpviewer_keywords:
   - "names [.NET Framework], type names"
   - "names [.NET Framework], acronyms"
 ms.assetid: d3a77ea1-75d2-4969-a8c3-3e1e3e1aaedc
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

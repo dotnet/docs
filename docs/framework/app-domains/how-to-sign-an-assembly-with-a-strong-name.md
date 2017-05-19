@@ -15,6 +15,8 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], signing"
   - "assemblies [.NET Framework], strong-named"
 ms.assetid: 2c30799a-a826-46b4-a25d-c584027a6c67
+ms.technology: 
+  - "dotnet-standard"
 caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"

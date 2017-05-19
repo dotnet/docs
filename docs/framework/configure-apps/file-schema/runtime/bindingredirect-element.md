@@ -22,6 +22,8 @@ helpviewer_keywords:
   - "container tags, <bindingRedirect> element"
   - "bindingRedirect element"
 ms.assetid: 67784ecd-9663-434e-bd6a-26975e447ac0
+ms.technology: 
+  - "dotnet-clr"
 caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"

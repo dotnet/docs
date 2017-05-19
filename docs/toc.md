@@ -81,7 +81,7 @@
 ## .NET Core SDK 2.0 Preview 1
 ### Application deployment
 #### [Runtime Package Store](core/preview/deploying/runtime-package-store.md)
-## [.NET Core CLI Tools](core/tools/index.md)
+### [.NET Core CLI Tools](core/preview/tools/index.md)
 #### [dotnet-store](core/preview/tools/dotnet-store.md)
 #### [dotnet-publish](core/preview/dotnet-publish.md)
 ## [VS 2015/project.json docs](project-json.md)

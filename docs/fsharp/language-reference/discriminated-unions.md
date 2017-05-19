@@ -96,9 +96,6 @@ type Multicase =
     | Case3 of double
 ```
 
->[!WARN]
-With the initial release of F# 4.1, multicase struct unions have isues if the cases are of the same type.  This has since been fixed and is pending an update.
-
 Because these are value types and not reference types, there are extra considerations compared with reference discriminated unions:
 
 1. They are copied as value types and have value type semantics.
@@ -139,7 +136,7 @@ When this code is executed, the value of `result` is 5.
 
 ## Common Attributes
 
-The following attributes are commonly seen in Discriminated Unions:
+The following attributes are commonly seen in discriminated unions:
 
 * `[RequireQualifiedAccess]`
 * `[NoEquality]`

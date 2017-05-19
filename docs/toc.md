@@ -312,6 +312,7 @@
 ### [Compiler Directives](fsharp/language-reference/compiler-directives.md)
 ### [Compiler Options](fsharp/language-reference/compiler-options.md)
 ### [Source Line, File, and Path Identifiers](fsharp/language-reference/source-line-file-path-identifiers.md)
+### [Caller Information](fsharp/language-reference/caller-information.md)
 ### [Verbose Syntax](fsharp/language-reference/verbose-syntax.md)
 ### [Code Formatting Guidelines](fsharp/language-reference/code-formatting-guidelines.md)
 <!-- End F# Content -->

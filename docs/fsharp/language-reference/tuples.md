@@ -85,7 +85,7 @@ int * float * string
 
 ## Interoperation with C# Tuples
 
-C# 7 and VB.NET 15 introduced tuples to their respective languages.  Tuples in C# and are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C# uses tuples, you must use struct tuples.
+C# 7 introduced tuples to the language.  Tuples in C# and are structs, and are equivalent to struct tuples in F#.  If you need to interoperate with C# uses tuples, you must use struct tuples.
 
 This is easy to do.  For example, imagine you have to pass a tuple to a C# class and then consume its result, which is also a tuple:
 
@@ -111,7 +111,7 @@ let struct (newX, newY) = Example.AddOneToXAndY(struct (1, 2))
 
 ### Converting between Reference Tuples and Struct Tuples
 
-Because Reference Tuples and Struct Tuples have a completely different underlying representation, they are not implicitly convertable.  That is, code such as the following will not compile:
+Because Reference Tuples and Struct Tuples have a completely different underlying representation, they are not implicitly convertible.  That is, code such as the following won't compile:
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/tuples/interop.fsx#L5-L12)]
 
@@ -126,7 +126,7 @@ Tuples are compiled into objects of one of several generic types, all named `Sys
 
 ### Compiled Form of Struct Tuples
 
-Struct tuples (e.g., `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the `System.ValueTuple` type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7 Tuples](../../csharp/tuples.md) and VB.NET 15 Tuples, and interoperate bidirectionally.
+Struct tuples (for example, `struct (x, y)`), are fundamentally different from reference tuples.  They are compiled into the `System.ValueTuple` type, overloaded by arity, or the number of type parameters.  They are equivalent to [C# 7 Tuples](../../csharp/tuples.md) and VB.NET 15 Tuples, and interoperate bidirectionally.
 
 ## See Also
 [F# Language Reference](index.md)

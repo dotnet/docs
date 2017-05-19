@@ -1,6 +1,6 @@
 ---
 title: Caller Information (F#)
-description: Caller Information (F#)
+description: Describes how to use Caller Info Argument Attributes to obtain caller information from a method.
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
@@ -12,7 +12,7 @@ ms.devlang: fsharp
 ms.assetid: a3dcc335-433b-4672-ac2d-ae6b11b816f3 
 ---
 
-# Caller Information
+# Caller information
 
 By using Caller Info attributes, you can obtain information about the caller to a method. You can obtain file path of the source code, the line number in the source code, and the member name of the caller. This information is helpful for tracing, debugging, and creating diagnostic tools.
 
@@ -56,12 +56,12 @@ Caller Info values are emitted as literals into the Intermediate Language (IL) a
 
 You can explicitly supply the optional arguments to control the caller information or to hide caller information.
 
-## Member Names
+## Member names
 
-You can use the `CallerMemberName` attribute to avoid specifying the member name as a `String` argument to the called method. By using this technique, you avoid the problem that Rename Refactoring doesn't change the `String` values. This benefit is especially useful for the following tasks:
+You can use the [`CallerMemberName`](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.callermembernameattribute) attribute to avoid specifying the member name as a `String` argument to the called method. By using this technique, you avoid the problem that Rename Refactoring doesn't change the `String` values. This benefit is especially useful for the following tasks:
 
 * Using tracing and diagnostic routines.
-* Implementing the [INotifyPropertyChanged](https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged) interface when binding data. This interface allows the property of an object to notify a bound control that the property has changed, so that the control can display the updated information. Without the `CallerMemberName` attribute, you must specify the property name as a literal.
+* Implementing the [INotifyPropertyChanged](https://docs.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged) interface when binding data. This interface allows the property of an object to notify a bound control that the property has changed, so that the control can display the updated information. Without the [`CallerMemberName`](https://docs.microsoft.com/dotnet/api/system.runtime.compilerservices.callermembernameattribute) attribute, you must specify the property name as a literal.
 
 The following chart shows the member names that are returned when you use the CallerMemberName attribute.
 
@@ -75,7 +75,7 @@ The following chart shows the member names that are returned when you use the Ca
 |Attribute constructor|The name of the member to which the attribute is applied. If the attribute is any element within a member (such as a parameter, a return value, or a generic type parameter), this result is the name of the member that's associated with that element.|
 |No containing member (for example, assembly-level or attributes that are applied to types)|The default value of the optional parameter.|
 
-## See Also
+## See also
 
 [Attributes](attributes.md)
 

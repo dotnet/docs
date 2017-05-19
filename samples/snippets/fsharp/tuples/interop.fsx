@@ -8,7 +8,7 @@ let (a, b) = struct (1, 2)
 // Will not compile!
 let struct (c, d) = (1, 2)
 
-// Will not compile!
+// Won't compile!
 let f(t: struct(int*int)): int*int = t
 
 //

@@ -76,11 +76,11 @@ The .NET Framework is a runtime execution environment that manages applications 
 |Title|Description|
 |-----------|-----------------|
 |[Overview](../../../docs/framework/get-started/overview.md)|Provides detailed information for developers who build applications that target the .NET Framework.|
+|[Installation guide](../../../docs/framework/install/index.md)|Provides information about installing the .NET Framework.|  
 |[The .NET Framework and Out-of-Band Releases](../../../docs/framework/get-started/the-net-framework-and-out-of-band-releases.md)|Describes the .NET Framework out-of-band releases and how to use them in your app.|
 |[System Requirements](../../../docs/framework/get-started/system-requirements.md)|Lists the hardware and software requirements for running the .NET Framework.|
 |[.NET Core and Open-Source](../../../docs/framework/get-started/net-core-and-open-source.md)|Describes what .NET Core is in relation to the .NET Framework and how to access the open-source .NET Core projects.|
 |[.NET Core documentation](https://docs.microsoft.com/dotnet/)|The conceptual and API reference documentation for .NET Core.|
-|[Installation Guide](../../../docs/framework/install/guide-for-developers.md)|Provides information about installing the .NET Framework.|
 
 ## See Also
  [.NET Framework Guide](../../../docs/framework/index.md)   

@@ -15,4 +15,3 @@
 ## [Developing for multiple platforms](../standard/cross-platform/index.md)
 ## [Deployment](deployment/index.md)
 ## [Performance](performance/index.md)
-

@@ -12,10 +12,10 @@ ms.devlang: dotnet
 ms.assetid: 87cda1d5-c8g5-5eb5-93e8-5f478de07ff7
 ---
 
-# Installing the .NET Framework on Windows XP
+# Install the .NET Framework on Windows XP
 
-> [!NOTE] 
-> Windows XP is no longer supported by Microsoft. We recommend you upgrade to Windows 10, which is supported and supports the latest version of the .NET Framework. This document is provided solely as a helpful troubleshooting guide. 
+> [!NOTE]
+> Windows XP is no longer supported by Microsoft. We recommend you upgrade to Windows 10, which is supported and supports the latest version of the .NET Framework. This document is provided solely as a helpful troubleshooting guide.
 
 You may need the .NET Framework to run an application on Windows XP. You can use the following instructions to help you. The instructions depend on which version of the .NET Framework you need.
 

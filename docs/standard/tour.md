@@ -14,13 +14,13 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 
 # Tour of .NET
 
-.NET is a general purpose development platform. It has several key features, such as multiple programming languages, asynchronous and concurrent programming models, and native interoperability which enable a wide range of scenarios across multiple platforms.
+.NET is a general purpose development platform. It has several key features, such as support for multiple programming languages, asynchronous and concurrent programming models, and native interoperability which enable a wide range of scenarios across multiple platforms.
 
 This article offers a guided tour through some of the key features of the .NET platform. See the [.NET Architectural Components](components.md) topic to learn about the architectural pieces of .NET and what they're used for.
 
 ## How to run the code samples
 
-To learn how to set up a development environment to run the code samples, check out the [Getting Started](get-started.md) topic. Copy and paste code samples from this page into your environment to execute them. 
+To learn how to set up a development environment to run the code samples, see the [Getting Started](get-started.md) topic. Copy and paste code samples from this page into your environment to execute them. 
 
 ## Programming languages
 

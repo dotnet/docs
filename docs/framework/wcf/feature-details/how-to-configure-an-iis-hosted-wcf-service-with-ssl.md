@@ -143,13 +143,12 @@ This topic describes how to set up an IIS-hosted WCF service to use HTTP transpo
     </behaviors>  
     <serviceHostingEnvironment multipleSiteBindingsEnabled="true" />  
   </system.serviceModel>  
- <system.webServer>  
+  <system.webServer>  
     <modules runAllManagedModulesForAllRequests="true"/>  
   </system.webServer>  
   
 </configuration>  
 ```  
-  
   
 ## See Also  
  [Hosting in Internet Information Services](../../../../docs/framework/wcf/feature-details/hosting-in-internet-information-services.md)   

@@ -105,9 +105,9 @@ The <xref:System.Windows.PropertyPath> object supports a complex inline [!INCLUD
 ### Multiple Indexers  
   
 ```  
-\<object Path="[index1,index2...]" .../>  
+<object Path="[index1,index2...]" .../>  
 or  
-\<object Path="propertyName[index,index2...]" .../>  
+<object Path="propertyName[index,index2...]" .../>  
 ```  
   
  If a given object supports multiple indexers, those indexers can be specified in order, similar to an array referencing syntax. The object in question can be either the current context or the value of a property that contains a multiple index object.  

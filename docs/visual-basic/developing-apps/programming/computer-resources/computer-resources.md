@@ -1,5 +1,5 @@
 ---
-title: "Accessing Computer Resources (Visual Basic) | Microsoft Docs"
+title: "Accessing computer resources (Visual Basic) | Microsoft Docs"
 ms.custom: ""
 ms.date: "2015-07-20"
 ms.prod: .net
@@ -35,50 +35,44 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# Accessing Computer Resources (Visual Basic)
+
+# Accessing computer resources (Visual Basic)
+
 The `My.Computer` object is one of the three central objects in `My`, providing access to information and commonly used functionality. `My.Computer` provides methods, properties, and events for accessing the computer on which the application is running. Its objects include:  
   
--   <xref:Microsoft.VisualBasic.Devices.Audio>  
+-   <xref:Microsoft.VisualBasic.Devices.Audio>
+-   Clipboard (<xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>)
+-   <xref:Microsoft.VisualBasic.Devices.Clock>
+-   <xref:Microsoft.VisualBasic.FileIO.FileSystem>
+-   <xref:Microsoft.VisualBasic.Devices.ServerComputer.Info%2A>
+-   <xref:Microsoft.VisualBasic.Devices.Keyboard>
+-   <xref:Microsoft.VisualBasic.Devices.Mouse>
+-   <xref:Microsoft.VisualBasic.Devices.Network>
+-   <xref:Microsoft.VisualBasic.Devices.Ports>
+-   Registry (<xref:Microsoft.VisualBasic.MyServices.RegistryProxy>)
   
--   Clipboard (<xref:Microsoft.VisualBasic.MyServices.ClipboardProxy>)  
-  
--   <xref:Microsoft.VisualBasic.Devices.Clock>  
-  
--   <xref:Microsoft.VisualBasic.FileIO.FileSystem>  
-  
--   <xref:Microsoft.VisualBasic.Devices.ServerComputer.Info%2A>  
-  
--   <xref:Microsoft.VisualBasic.Devices.Keyboard>  
-  
--   <xref:Microsoft.VisualBasic.Devices.Mouse>  
-  
--   <xref:Microsoft.VisualBasic.Devices.Network>  
-  
--   <xref:Microsoft.VisualBasic.Devices.Ports>  
-  
--   Registry (<xref:Microsoft.VisualBasic.MyServices.RegistryProxy>)  
-  
-## In This Section  
- [Playing Sounds](../../../../visual-basic/developing-apps/programming/computer-resources/playing-sounds.md)  
- Lists tasks associated with `My.Computer.Audio`, such as playing a sound in the background.  
-  
- [Storing Data to and Reading from the Clipboard](../../../../visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)  
- Lists tasks associated with `My.Computer.Clipboard`, such as reading data from or writing data to the Clipboard.  
-  
- [Getting Information about the Computer](../../../../visual-basic/developing-apps/programming/computer-resources/getting-information-about-the-computer.md)  
- Lists tasks associated with `My.Computer.Info`, such as determining a computer's full name or IP addresses.  
-  
- [Accessing the Keyboard](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md)  
- Lists tasks associated with `My.Computer.Keyboard`, such as determining whether CAPS LOCK is on.  
-  
- [Accessing the Mouse](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-mouse.md)  
- Lists tasks associated with `My.Computer.Mouse`, such as determining whether a mouse is present.  
-  
- [Performing Network Operations](../../../../visual-basic/developing-apps/programming/computer-resources/performing-network-operations.md)  
- Lists tasks associated with `My.Computer.Network`, such as uploading or downloading files.  
-  
- [Accessing the Computer's Ports](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-computer-s-ports.md)  
- Lists tasks associated with `My.Computer.Ports`, such as showing available serial ports or sending strings to serial ports.  
-  
- [Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)  
- Lists tasks associated with `My.Computer.Registry`, such as reading data from or writing data to registry keys.
+## In this section
+
+[Playing Sounds](../../../../visual-basic/developing-apps/programming/computer-resources/playing-sounds.md)   
+Lists tasks associated with `My.Computer.Audio`, such as playing a sound in the background.
+
+[Storing Data to and Reading from the Clipboard](../../../../visual-basic/developing-apps/programming/computer-resources/storing-data-to-and-reading-from-the-clipboard.md)   
+Lists tasks associated with `My.Computer.Clipboard`, such as reading data from or writing data to the Clipboard.
+
+[Getting Information about the Computer](../../../../visual-basic/developing-apps/programming/computer-resources/getting-information-about-the-computer.md)   
+Lists tasks associated with `My.Computer.Info`, such as determining a computer's full name or IP addresses.
+
+[Accessing the Keyboard](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-keyboard.md)   
+Lists tasks associated with `My.Computer.Keyboard`, such as determining whether CAPS LOCK is on.
+
+[Accessing the Mouse](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-mouse.md)   
+Lists tasks associated with `My.Computer.Mouse`, such as determining whether a mouse is present.
+
+[Performing Network Operations](../../../../visual-basic/developing-apps/programming/computer-resources/performing-network-operations.md)   
+Lists tasks associated with `My.Computer.Network`, such as uploading or downloading files.
+
+[Accessing the Computer's Ports](../../../../visual-basic/developing-apps/programming/computer-resources/accessing-the-computer-s-ports.md)   
+Lists tasks associated with `My.Computer.Ports`, such as showing available serial ports or sending strings to serial ports.
+
+[Reading from and Writing to the Registry](../../../../visual-basic/developing-apps/programming/computer-resources/reading-from-and-writing-to-the-registry.md)   
+Lists tasks associated with `My.Computer.Registry`, such as reading data from or writing data to registry keys.

@@ -1,0 +1,24 @@
+﻿<Configuration>
+  <Manifests>
+    <Manifest>Microsoft.LightSwitch.Base.Client.Manifest.xml</Manifest>
+    <Manifest>Microsoft.LightSwitch.Client.Internal.Manifest.xml</Manifest>
+  </Manifests>
+  <SubsystemPackages>
+    <SubsystemPackage>ModelLoader</SubsystemPackage>
+    <SubsystemPackage>RuntimeExtensionLoader</SubsystemPackage>
+    <SubsystemPackage>PresentationRuntimeLoader</SubsystemPackage>
+    <SubsystemPackage>ReportingLoader</SubsystemPackage>
+    <SubsystemPackage>RulesLoader</SubsystemPackage>
+    <SubsystemPackage>RuntimeServicesLoader</SubsystemPackage>
+    <SubsystemPackage>RuntimeShellLoader</SubsystemPackage>
+    <SubsystemPackage>ThemingRuntimeLoader</SubsystemPackage>
+    <SubsystemPackage>UtilitiesLoader</SubsystemPackage>
+    <SubsystemPackage>BaseServicesLoader</SubsystemPackage>
+    <SubsystemPackage>DiagnosticsLoader</SubsystemPackage>
+    <SubsystemPackage>RuntimeUserCodeLoader</SubsystemPackage>
+  </SubsystemPackages>
+  <UserCodeAssemblies>
+  </UserCodeAssemblies>
+  <ExtensionAssemblies>
+  </ExtensionAssemblies>
+</Configuration>

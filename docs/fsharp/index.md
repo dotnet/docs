@@ -16,23 +16,17 @@ ms.assetid: ea27fb37-dad1-4bd4-a3cc-4f5c70767ae9
 
 F# is a cross-platform, open source programming language for .NET which provides first-class support for functional programming, along with support of object-oriented and imperative programming.  The Visual F# compiler and tooling are Microsoft's implementation and tooling for the F# programming language, making F# a first-class member of .NET.
 
-## If You're New to Programming
-
-If you're new to programming, start with the [Tutorials](tutorials/index.md) section.  The tutorials have a beginner's section which show you how to write and run your own F# programs.
-
-Alternatively, if you prefer to get a thematic overview of F# and some of its distinguishing features, check out the [Tour of F#](tour.md).
-
 ## If You're New to F# #
 
-If you know how to program, but you're new to F#, begin with the [Tour of F#](tour.md) to get an overview of the language.
+If you're new to F#, begin with the [Tour of F#](tour.md) to get an overview of the language.
 
 It's also recommended that you go through the [Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md)<!--[Introduction to Functional Progamming](introduction-to-functional-programming/index.md)--> to learn Functional Programming concepts which are essential to working with F#.
 
-The [Tutorials](tutorials/index.md) also have step-by-step guides for various skill levels and features of the language.
+The [Tutorials](tutorials/getting-started/index.md) also have step-by-step guides for various skill levels and features of the language.
 
 ## If You're Experienced with F# #
 
-If you know your way around F#, you'll find a lot of use in the [Language Reference](language-reference/index.md), which documents each aspect of the language thoroughly, supplemented by numerous code samples.  You'll also find a lot of use in the [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference).
+If you know your way around F#, you'll find a lot of use in the [Language Reference](language-reference/index.md), which documents each aspect of the language thoroughly, supplemented by numerous code samples.  You'll also find a lot of use in the [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference).  The F# Core Library Reference will eventually move away from MSDN and into these current docs.
 
 ## The F# Software Foundation
 
@@ -44,7 +38,7 @@ To learn more and get involved, check out [fsharp.org](http://fsharp.org).
 
 ## Documentation
 
-* [Tutorials](tutorials/index.md)
+* [Tutorials](tutorials/getting-started/index.md)
 * [Functions as First-Class Values](introduction-to-functional-programming/functions-as-first-class-values.md)<!--[Introduction to Functional Programming](introduction-to-functional-programming/index.md)-->
 * [Language Reference](language-reference/index.md)
 * [F# Core Library Reference](https://msdn.microsoft.com/visualfsharpdocs/conceptual/fsharp-core-library-reference)

@@ -24,7 +24,7 @@ manager: "wpickett"
 # .NET Framework system requirements
 The tables in this topic provide the hardware, operating system, and software requirements for the .NET Framework 4.5 and its point releases (4.5.1 and 4.5.2), the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] and its point releases (4.6.1 and 4.6.2), and the .NET Framework 4.7. Development environments that enable you to develop applications for the .NET Framework have a separate set of requirements.
 
- For download information and links, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md).
+ For download information and links, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).
 
  For information on the support lifecycle of .NET Framework versions, see [Microsoft Support Lifecycle](https://support.microsoft.com/en-us/lifecycle/search?sort=PN&alpha=Microsoft%20.NET%20Framework&Filter=FilterNO).
 
@@ -91,6 +91,6 @@ The tables in this topic provide the hardware, operating system, and software re
 - On 64-bit operating systems, the .NET Framework supports both WOW64 (32-bit processing on a 64-bit machine) and native 64-bit processing.
 
 ## See Also
- [Installation Guide](../../../docs/framework/install/guide-for-developers.md)   
+ [Installation Guide](../../../docs/framework/install/index.md)   
  [Getting Started](../../../docs/framework/get-started/index.md)   
- [Troubleshooting](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)
+ [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)

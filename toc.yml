@@ -172,19 +172,15 @@
       - name: Deploying the .NET Framework
         tocHref: /dotnet/framework/deployment/
         topicHref: /dotnet/framework/deployment/index
-        items:
-        - name: Installing the .NET Framework on Windows
-          tocHref: /dotnet/framework/deployment/windows/
-          topicHref: /dotnet/framework/deployment/windows/index
       - name: Deploying .NET Framework applications with Docker
         tocHref: /dotnet/framework/docker/
         topicHref: /dotnet/framework/docker/index
       - name: Get Started
         tocHref: /dotnet/framework/get-started/
         topicHref: /dotnet/framework/get-started/index
-      - name: Installing the .NET Framework on Windows
-        tocHref: /dotnet/framework/install/
-        topicHref: /dotnet/framework/install/index
+      - name: Installation guide
+        tocHref: /dotnet/articles/framework/install/
+        topicHref: /dotnet/articles/framework/install/index
       - name: Interoperating with Unmanaged Code
         tocHref: /dotnet/framework/interop/
         topicHref: /dotnet/framework/interop/index

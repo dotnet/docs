@@ -99,7 +99,7 @@ The first two examples of this guide showed how you can use `async` and `await` 
 
 Here are two questions you should ask before you write any code:
 
-1. Will you code be "waiting" for something, such as data from a database?
+1. Will your code be "waiting" for something, such as data from a database?
 
     If your answer is "yes", then your work is **I/O-bound**.
 

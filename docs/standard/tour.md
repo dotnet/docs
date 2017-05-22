@@ -32,7 +32,7 @@ Microsoft actively develops and supports three .NET languages: C#, F#, and Visua
 
 * F# is a cross-platform, functional-first programming language that also supports traditional object-oriented and imperative programming. Check out the [F# Guide](../fsharp/index.md) to learn more about F#.
 
-* Visual Basic is an easy language to learn that you use to build a variety of apps that run on .NET. Among the .NET languages, the syntax of VB is the closest to ordinary human language often making it easier for people new to software development to pick up.
+* Visual Basic is an easy language to learn that you use to build a variety of apps that run on .NET. Among the .NET languages, the syntax of VB is the closest to ordinary human language, often making it easier for people new to software development.
 
 ## Automatic memory management
 
@@ -44,7 +44,7 @@ The following two lines both allocate memory:
 
 There is no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled run.
 
-The garbage collector is just one of the services that help ensure *memory safety*. The invariant of memory safety is very simple: a program is memory safe if it accesses only allocated (and not freed) memory. For instance, the runtime ensures that programs don't index off the end of an array or access a phantom field off the end of an object.
+The garbage collector is one of the services that help ensure *memory safety*. A program is memory safe if it accesses only allocated memory. For instance, the runtime ensures that apps don't access unallocated memory beyond the bounds of an array.
 
 In the following example, the runtime throws an `InvalidIndexException` exception to enforce memory safety:
 
@@ -60,7 +60,7 @@ In .NET, objects that reference unmanaged resources implement the <xref:System.I
 
 Once the `using` block completes, the .NET runtime automatically calls the `stream` object's <xref:System.IDisposable.Dispose> method, which releases the file handle. The runtime also does this if an exception causes control to leave the block.
 
-For more details, check out the following topics:
+For more details, see the following topics:
 
 * For C#, [using Statement](../csharp/language-reference/keywords/using-statement.md)
 * For F#, [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md)
@@ -68,9 +68,9 @@ For more details, check out the following topics:
 
 ## Type safety
 
-Objects are allocated in terms of types. The only operations allowed for a given object, and the memory it consumes, are those of its type. A `Dog` type may have `Jump` and `WagTail` methods but not likely a `SumTotal` method. A program only calls the declared methods of a given type. All other calls result in either a compile-time error or a run-time exception (in case of using dynamic features or `object`).
+An object is an instance of a specific type. The only operations allowed for a given object are those of its type. A `Dog` type may have `Jump` and `WagTail` methods but not a `SumTotal` method. A program only calls the methods belonging to a given type. All other calls result in either a compile-time error or a run-time exception (in case of using dynamic features or `object`).
 
-.NET languages are object-oriented with hierarchies of base and derived classes. The .NET runtime only allows object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the base `object` type.
+.NET languages are object-oriented with hierarchies of base and derived classes. The .NET runtime only allows object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the base <xref:System.Object> type.
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L18-L23)]
 
@@ -82,13 +82,15 @@ C#, VB, and F# support local **type inference**. Type inference means that the c
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L28-L34)]
 
-F# has even further type inference capabilities than the method-local type inference found in C# and VB. To learn more, check out [Type Inference](../fsharp/language-reference/type-inference.md).
+F# has even further type inference capabilities than the method-local type inference found in C# and VB. To learn more, see [Type Inference](../fsharp/language-reference/type-inference.md).
 
 ## Delegates and lambdas
 
-Delegates are like C++ function pointers with a big difference that they are type safe. They're a kind of disconnected method within the CLR type system. Regular methods are attached to a class and only directly callable through static or instance calling conventions.
+A delegate is represented by a method signature. Any method with that signature can be assigned to the delegate and is executed when the delegate is invoked.
 
-Delegates are used in various APIs and places in the .NET world, especially through lambda expressions, which are a cornerstone of LINQ. Learn more in the [Delegates and lambdas](delegates-lambdas.md) topic.
+Delegates are like C++ function pointers except that they're type safe. They're a kind of disconnected method within the CLR type system. Regular methods are attached to a class and are only directly callable through static or instance calling conventions.
+
+In .NET, delegates are commonly used in event handlers, in defining asynchronous operations, and in lambda expressions, which are a cornerstone of LINQ. Learn more in the [Delegates and lambdas](delegates-lambdas.md) topic.
 
 ## Generics
 
@@ -110,15 +112,15 @@ To learn more about async programming in .NET, start with the [Async overview](a
 
 ## Language Integrated Query (LINQ)
 
-LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, in a SQL database, or an XML document), but the LINQ code you write typically won't look different for each data source.
+LINQ is a powerful set of features for C# and VB that allow you to write simple, declarative code for operating on data. The data can be in many forms (such as in-memory objects, a SQL database, or an XML document), but the LINQ code you write typically doesn't differ by data source.
 
 To learn more and see some samples, see the [LINQ (Language Integrated Query)](using-linq.md) topic.
 
 ## Native interoperability
 
-Every operating system in current use provides a lot of platform support for various programming tasks. .NET provides several ways to tap into those APIs. Collectively, this support is called *native interoperability*; and in this section, accessing native APIs from managed .NET code is examined.
+Every operating system includes an application programming interface (API) that provides system services. .NET provides several ways to call those APIs.
 
-The main way to do native interoperability is via "platform invoke" or P/Invoke for short. This support in .NET Core is available across Linux and Windows platforms. Another Windows-only way of doing native interoperability is known as "COM interop," which is used to work with [COM components](https://msdn.microsoft.com/library/bwa2bx93.aspx) in managed code. It's built on top of P/Invoke infrastructure, but it works in subtly different ways.
+The main way to do native interoperability is via "platform invoke" or P/Invoke for short, which is supported across Linux and Windows platforms. A Windows-only way of doing native interoperability is known as "COM interop," which is used to work with [COM components](https://msdn.microsoft.com/library/bwa2bx93.aspx) in managed code. It's built on top of the P/Invoke infrastructure, but it works in subtly different ways.
 
 Most of Mono's (and thus Xamarin's) interoperability support for Java and Objective-C are built similarly, that is, they use the same principles.
 
@@ -126,7 +128,7 @@ Read more about it native interoperability in the [Native interoperability](nati
 
 ## Unsafe code
 
-The CLR enables the ability to access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it's necessary to interop with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible and test that code thoroughly.
+Depending on language support, the CLR lets you access native memory and do pointer arithmetic via `unsafe` code. These operations are needed for certain algorithms and system interoperability. Although powerful, use of unsafe code is discouraged unless it's necessary to interop with system APIs or implement the most efficient algorithm. Unsafe code may not execute the same way in different environments and also loses the benefits of a garbage collector and type safety. It's recommended to confine and centralize unsafe code as much as possible and test that code thoroughly.
 
 The following example is a modified version of the `ToString()` method from the `StringBuilder` class. It illustrates how using `unsafe` code can efficiently implement an algorithm by moving around chunks of memory directly:
 

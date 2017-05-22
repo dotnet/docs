@@ -4,7 +4,7 @@ description: A guided tour through some of the prominent features of the .NET pl
 keywords: .NET, .NET Core, Tour, Programming Languages, Unsafe, Memory Management, Type Safety, Async
 author: cartermp
 ms.author: wiwagn
-ms.date: 02/09/2016
+ms.date: 05/22/2017
 ms.topic: article
 ms.prod: .net
 ms.technology: dotnet-standard
@@ -14,7 +14,7 @@ ms.assetid: bbfe6465-329d-4982-869d-472e7ef85d93
 
 # Tour of .NET
 
-.NET is a general purpose development platform. It has several key features, such as support for multiple programming languages, asynchronous and concurrent programming models, and native interoperability which enable a wide range of scenarios across multiple platforms.
+.NET is a general purpose development platform. It has several key features, such as support for multiple programming languages, asynchronous and concurrent programming models, and native interoperability, which enable a wide range of scenarios across multiple platforms.
 
 This article offers a guided tour through some of the key features of the .NET platform. See the [.NET Architectural Components](components.md) topic to learn about the architectural pieces of .NET and what they're used for.
 
@@ -42,9 +42,9 @@ The following two lines both allocate memory:
 
 [!code-csharp[MemoryManagement](../../samples/csharp/snippets/tour/MemoryManagement.csx#L1-L2)]
 
-There is no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled run.
+There's no analogous keyword to de-allocate memory, as de-allocation happens automatically when the garbage collector reclaims the memory through its scheduled run.
 
-The garbage collector is one of the services that help ensure *memory safety*. A program is memory safe if it accesses only allocated memory. For instance, the runtime ensures that apps don't access unallocated memory beyond the bounds of an array.
+The garbage collector is one of the services that help ensure *memory safety*. A program is memory safe if it accesses only allocated memory. For instance, the runtime ensures that an app doesn't access unallocated memory beyond the bounds of an array.
 
 In the following example, the runtime throws an `InvalidIndexException` exception to enforce memory safety:
 
@@ -62,9 +62,9 @@ Once the `using` block completes, the .NET runtime automatically calls the `stre
 
 For more details, see the following topics:
 
-* For C#, [using Statement](../csharp/language-reference/keywords/using-statement.md)
-* For F#, [Resource Management: The `use` Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md)
-* For VB, [Using Statement](../visual-basic/language-reference/statements/using-statement.md)
+* For C#, see the [using Statement (C# Reference)](../csharp/language-reference/keywords/using-statement.md) topic.
+* For F#, see [Resource Management: The use Keyword](../fsharp/language-reference/resource-management-the-use-keyword.md).
+* For VB, see the [Using Statement (Visual Basic)](../visual-basic/language-reference/statements/using-statement.md) topic.
 
 ## Type safety
 
@@ -72,13 +72,13 @@ An object is an instance of a specific type. The only operations allowed for a g
 
 .NET languages are object-oriented with hierarchies of base and derived classes. The .NET runtime only allows object casts and calls that align with the object hierarchy. Remember that every type defined in any .NET language derives from the base <xref:System.Object> type.
 
-[!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L18-L23)]
+[!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L19-L23)]
 
 Type safety is also used to help enforce encapsulation by guaranteeing the fidelity of the accessor keywords. Accessor keywords are artifacts which control access to members of a given type by other code. These are usually used for various kinds of data within a type that are used to manage its behavior.
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L3-L3)]
 
-C#, VB, and F# support local **type inference**. Type inference means that the compiler deduces the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type **has** a strong type with everything that implies. From the previous example, `dog` and `cat` are rewritten to introduce type inference, and the remainder of the example is unchanged:
+C#, VB, and F# support local *type inference*. Type inference means that the compiler deduces the type of the expression on the left-hand side from the expression on the right-hand side. This doesn't mean that the type safety is broken or avoided. The resulting type does have a strong type with everything that implies. From the previous example, `dog` and `cat` are rewritten to introduce type inference, and the remainder of the example is unchanged:
 
 [!code-csharp[TypeSafety](../../samples/csharp/snippets/tour/TypeSafety.csx#L28-L34)]
 
@@ -96,7 +96,7 @@ In .NET, delegates are commonly used in event handlers, in defining asynchronous
 
 Generics allow the programmer to introduce a *type parameter* when designing their classes that allows the client code (the users of the type) to specify the exact type to use in place of the type parameter.
 
-Generics were added to help programmers implement generic data structures. Before their arrival in order for a type such as the `List` type to be generic, it would have to work with elements that were of type `object`. This had various performance and semantic problems, not to mention possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an `InvalidCastException` is thrown on working with the list's members.
+Generics were added to help programmers implement generic data structures. Before their arrival in order for a type such as the `List` type to be generic, it would have to work with elements that were of type `object`. This had various performance and semantic problems, along with possible subtle runtime errors. The most notorious of the latter is when a data structure contains, for instance, both integers and strings, and an `InvalidCastException` is thrown on working with the list's members.
 
 The following sample shows a basic program running using an instance of <xref:System.Collections.Generic.List%601> types:
 
@@ -106,7 +106,7 @@ For more information, see the [Generic types (Generics) overview](generics.md) t
 
 ## Async programming
 
-Async programming is a first-class concept within .NET with async support in the runtime, framework libraries, and .NET language constructs. Internally, they're based off of objects (such as `Task`), which take advantage of the operating system to perform I/O-bound jobs as efficiently as possible.
+Async programming is a first-class concept within .NET with async support in the runtime, framework libraries, and .NET language constructs. Internally, they're based on objects (such as `Task`), which take advantage of the operating system to perform I/O-bound jobs as efficiently as possible.
 
 To learn more about async programming in .NET, start with the [Async overview](async.md) topic.
 

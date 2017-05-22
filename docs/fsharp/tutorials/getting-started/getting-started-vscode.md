@@ -125,7 +125,7 @@ This lets you create the project in a different directory, if you like.  Leave i
 
 ![](media/getting-started-vscode/vscode-proj-name.png)
 
-This lets you name your project.  F# uses [Pascal case](http://c2.com/cgi/wiki?PascalCase) for project names.  This article uses `ClassLibrarySample` as the name.  Once you've entered the name you want for your project, hit **Enter**.
+This lets you name your project.  F# uses [Pascal case](http://c2.com/cgi/wiki?PascalCase) for project names.  This article uses `ClassLibraryDemo` as the name.  Once you've entered the name you want for your project, hit **Enter**.
 
 If you followed the previous step steps, you should get the Visual Studio Code Workspace on the left-hand side to look something like this:
 
@@ -248,7 +248,7 @@ open ClassLibraryDemo
 
 The first line is needed for FSI scripting to load `ClassLibraryDemo.fs`.  The second line is a convenience: omitting it is optional, but you will need to type `open ClassLibraryDemo` in an FSI window if you wish to bring the `ToPigLatin` module into scope.
 
-Next, call the function with the `PigLatin` module that you defined earlier:
+Next, in the FSI window, call the function with the `PigLatin` module that you defined earlier:
 
 ```
 > PigLatin.toPigLatin "banana";;

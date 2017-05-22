@@ -109,24 +109,24 @@ open Microsoft.FSharp.Quotations
 [<TypeProvider>]
 type SampleTypeProvider(config: TypeProviderConfig) as this = 
 
-// Inheriting from this type provides implementations of ITypeProvider 
-// in terms of the provided types below.
-inherit TypeProviderForNamespaces()
+  // Inheriting from this type provides implementations of ITypeProvider 
+  // in terms of the provided types below.
+  inherit TypeProviderForNamespaces()
 
-let namespaceName = "Samples.HelloWorldTypeProvider"
-let thisAssembly = Assembly.GetExecutingAssembly()
+  let namespaceName = "Samples.HelloWorldTypeProvider"
+  let thisAssembly = Assembly.GetExecutingAssembly()
 
-// Make one provided type, called TypeN.
-let makeOneProvidedType (n:int) = 
-…
-// Now generate 100 types
-let types = [ for i in 1 .. 100 -> makeOneProvidedType i ] 
+  // Make one provided type, called TypeN.
+  let makeOneProvidedType (n:int) = 
+  …
+  // Now generate 100 types
+  let types = [ for i in 1 .. 100 -> makeOneProvidedType i ] 
 
-// And add them to the namespace
-do this.AddNamespace(namespaceName, types)
+  // And add them to the namespace
+  do this.AddNamespace(namespaceName, types)
 
-[<assembly:TypeProviderAssembly>] 
-do()
+  [<assembly:TypeProviderAssembly>] 
+  do()
 ```
 
 To use this provider, open a separate instance of Visual Studio 2012, create an F# script, and then add a reference to the provider from your script by using #r as the following code shows:

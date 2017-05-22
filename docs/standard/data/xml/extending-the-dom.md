@@ -227,8 +227,8 @@ public class Test {
  book.xml  
   
 ```  
-\<!--sample XML fragment-->  
-\<book genre='novel' ISBN='1-861001-57-5' misc='sale-item'>  
+<!--sample XML fragment-->  
+<book genre='novel' ISBN='1-861001-57-5' misc='sale-item'>  
   <title>The Handmaid's Tale</title>  
   <price>14.95</price>  
 </book>  

@@ -38,16 +38,16 @@ manager: "wpickett"
  In the themes, the default focus visual style is generally very simple. The following is a rough approximation:  
   
 ```  
-\<Style x:Key="{x:Static SystemParameters.FocusVisualStyleKey}">  
+<Style x:Key="{x:Static SystemParameters.FocusVisualStyleKey}">  
   <Setter Property="Control.Template">  
-    \<Setter.Value>  
+    <Setter.Value>  
       <ControlTemplate>  
         <Rectangle StrokeThickness="1"  
           Stroke="Black"  
           StrokeDashArray="1 2"  
           SnapsToDevicePixels="true"/>  
       </ControlTemplate>  
-    \</Setter.Value>  
+    </Setter.Value>  
   </Setter>  
 </Style>  
 ```  

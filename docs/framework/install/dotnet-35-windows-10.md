@@ -1,10 +1,10 @@
 ---
-title: Install the .NET Framework 3.5 on Windows 10, Windows 8.1 and Windows 8
+title: Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8
 description: Learn how to install .NET Framework 3.5 on Windows 10, Windows 8.1 and Windows 8
 author: rlander
 keywords: .NET Framework, Install
 
-ms.date: 03/28/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: .net-framework-4.6
 ms.technology: vs-ide-deployment
@@ -12,9 +12,9 @@ ms.devlang: dotnet
 ms.assetid: 67cda1d5-c6g4-4eb5-93e6-4f478de07ff7
 ---
 
-# Install the .NET Framework 3.5 on Windows 10, Windows 8.1 and Windows 8
+# Install the .NET Framework 3.5 on Windows 10, Windows 8.1, and Windows 8
 
-You may need the .NET Framework 3.5 to run an application on Windows 10, Windows 8.1 and Windows 8. You can use the following instructions to help you. You can also use these instructions for earlier Windows versions.
+You may need the .NET Framework 3.5 to run an application on Windows 10, Windows 8.1, and Windows 8. You can also use these instructions for earlier Windows versions.
 
 ## Install the .NET Framework 3.5 on Demand
 
@@ -26,9 +26,10 @@ You may see the following configuration dialog if you try to run an application 
 
 You can enable the .NET Framework 3.5 through the Windows Control Panel. This option requires an Internet connection.
 
-1. Press the Windows key Windows ![Windows logo](https://i-msdn.sec.s-msft.com/dynimg/IC721376.jpeg) on your keyboard, type Windows Features, and press Enter. This brings up the **Turn Windows features on or off** dialog box.
-2. Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box, press OK, and reboot your computer if prompted.
+1. Press the Windows key Windows ![Windows logo](https://i-msdn.sec.s-msft.com/dynimg/IC721376.jpeg) on your keyboard, type "Windows Features", and press Enter. The **Turn Windows features on or off** dialog box appears.
 
-![Installing .NET with the control panel](./media/dotnet-control-panel.png)
+2. Select the **.NET Framework 3.5 (includes .NET 2.0 and 3.0)** check box, select OK, and reboot your computer if prompted.
 
-You do not need to select the child items for Windows Communication Foundation (WCF) HTTP activation unless you are a developer or server administrator who requires this functionality.
+   ![Installing .NET with the control panel](./media/dotnet-control-panel.png)
+
+   You don't need to select the child items for **Windows Communication Foundation (WCF) HTTP Activation** and **Windows Communication Foundation (WCF) Non-HTTP Activation** unless you're a developer or server administrator who requires this functionality.

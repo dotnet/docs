@@ -40,7 +40,7 @@ Class test
   
     Public Shared Sub Main()  
         Dim doc As New XmlDocument()  
-        doc.LoadXml("<root> \<child1 attr1='val1' attr2='val2'> text1 </child1> \<child2 attr3='val3'> text2 </child2> </root> ")  
+        doc.LoadXml("<root> <child1 attr1='val1' attr2='val2'> text1 </child1> <child2 attr3='val3'> text2 </child2> </root> ")  
   
         ' Get the attributes of node "child2 "  
         Dim ac As XmlAttributeCollection = doc.DocumentElement.ChildNodes(1).Attributes  
@@ -85,7 +85,7 @@ using System.Xml;
 class test {  
     public static void Main() {  
         XmlDocument doc = new XmlDocument();  
-        doc.LoadXml( "<root> \<child1 attr1='val1' attr2='val2'> text1 </child1> \<child2 attr3='val3'> text2 </child2> </root> " );  
+        doc.LoadXml( "<root> <child1 attr1='val1' attr2='val2'> text1 </child1> <child2 attr3='val3'> text2 </child2> </root> " );  
   
         // Get the attributes of node "child2"  
         XmlAttributeCollection ac = doc.DocumentElement.ChildNodes[1].Attributes;  

@@ -57,7 +57,7 @@ End Class
 ```vb  
 Imports System.Runtime.InteropServices  
 Public Class Win32  
-   \<DllImport ("user32.dll", CharSet := CharSet.Auto)> _  
+   <DllImport ("user32.dll", CharSet := CharSet.Auto)> _  
    Public Shared Function MessageBox (ByVal hWnd As Integer, _  
         ByVal txt As String, ByVal caption As String, _  
         ByVal Typ As Integer) As IntPtr  

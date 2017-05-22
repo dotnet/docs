@@ -43,7 +43,7 @@ This topic provides an overview of how to package fonts with your              [
 ```  
 <Project DefaultTargets="Build"  
                 xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  \<!-- Other project build settings ... -->  
+  <!-- Other project build settings ... -->  
   
   <ItemGroup>  
     <Content Include="Peric.ttf" />  
@@ -77,7 +77,7 @@ This topic provides an overview of how to package fonts with your              [
 ```  
 <Project DefaultTargets="Build"  
                 xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  \<!-- Other project build settings ... -->  
+  <!-- Other project build settings ... -->  
   
   <ItemGroup>  
     <Resource Include="resources\Peric.ttf" />  
@@ -150,7 +150,7 @@ This topic provides an overview of how to package fonts with your              [
 <ItemGroup>  
   <Resource Include="Kooten.ttf" />  
   <Resource Include="Pesca.ttf" />  
-\</ItemGroup  
+</ItemGroup  
 ```  
   
 ### Referencing a Font in a Resource Library  

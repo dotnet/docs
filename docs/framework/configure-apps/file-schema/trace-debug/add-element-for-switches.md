@@ -69,12 +69,12 @@ Specifies the level where a trace switch is set.
   
 ```  
 <configuration>  
-   \<system.diagnostics>  
+   <system.diagnostics>  
       <switches>  
          <add name="General" value="4" />  
          <add name="Data" value="1" />  
       </switches>  
-   \</system.diagnostics>  
+   </system.diagnostics>  
 </configuration>  
 ```  
   

@@ -100,7 +100,7 @@ The design-time experience for a custom control can be enhanced by authoring an 
 6.  You will need to use types from the System.Design assembly, so add this reference to the `MarqueeControlLibrary` project.  
   
     > [!NOTE]
-    >  To use the System.Design assembly, your project must target the full version of the .NET Framework, not the .NET Framework Client Profile. To change the target framework, see [How to: Target a Version of the .NET Framework](http://msdn.microsoft.com/library/dea62d25-3d1b-492e-a6cc-b5154489800a).  
+    >  To use the System.Design assembly, your project must target the full version of the .NET Framework, not the .NET Framework Client Profile. To change the target framework, see [How to: Target a Version of the .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).  
   
 ## Referencing the Custom Control Project  
  You will use the `MarqueeControlTest` project to test the custom control. The test project will become aware of the custom control when you add a project reference to the `MarqueeControlLibrary` assembly.  

@@ -54,7 +54,7 @@ manager: "wpickett"
 1.  Create a new WPF Application project in Visual Basic or Visual C# named                          `ExpenseIt`. For more information, see                          [How to: Create a New WPF Application Project](http://msdn.microsoft.com/en-us/1f6aea7a-33e1-4d3f-8555-1daa42e95d82).  
   
     > [!NOTE]
-    >  This                              walkthrough uses the                              <xref:System.Windows.Controls.DataGrid> control that is available in the .NET Framework 4. Be sure that your project targets the .NET Framework 4. For more information, see                              [How to: Target a Version of the .NET Framework](http://msdn.microsoft.com/library/dea62d25-3d1b-492e-a6cc-b5154489800a).  
+    >  This                              walkthrough uses the                              <xref:System.Windows.Controls.DataGrid> control that is available in the .NET Framework 4. Be sure that your project targets the .NET Framework 4. For more information, see                              [How to: Target a Version of the .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).  
   
 2.  Open Application.xaml (Visual Basic) or App.xaml (C#).  
   
@@ -307,7 +307,7 @@ manager: "wpickett"
 3.  Build and run the application.  
   
     > [!NOTE]
-    >  If you get an error that the                              <xref:System.Windows.Controls.DataGrid> was not found or does not exist, make sure that your project targets the .NET Framework 4. For more information, see                              [How to: Target a Version of the .NET Framework](http://msdn.microsoft.com/library/dea62d25-3d1b-492e-a6cc-b5154489800a).  
+    >  If you get an error that the                              <xref:System.Windows.Controls.DataGrid> was not found or does not exist, make sure that your project targets the .NET Framework 4. For more information, see                              [How to: Target a Version of the .NET Framework](/visualstudio/ide/how-to-target-a-version-of-the-dotnet-framework).  
   
 4.  Click the                          **View** button.  
   

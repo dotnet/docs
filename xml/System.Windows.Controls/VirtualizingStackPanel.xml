@@ -24,14 +24,14 @@
   
  Virtualization in a <xref:System.Windows.Controls.StackPanel> only occurs when the items control contained in the panel creates its own item containers. You can ensure this happens by using data binding. In scenarios where item containers are created and added to the items control, a <xref:System.Windows.Controls.VirtualizingStackPanel> offers no performance advantage over a <xref:System.Windows.Controls.StackPanel>.  
   
- <xref:System.Windows.Controls.VirtualizingStackPanel> is the default items host for the <xref:System.Windows.Controls.ListBox> element. By default, the <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing%2A> property is set to `true`.  
+ <xref:System.Windows.Controls.VirtualizingStackPanel> is the default items host for the <xref:System.Windows.Controls.ListBox> element. By default, the <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty%2A> property is set to `true`.  
   
- When <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing%2A> is set to `false`, a <xref:System.Windows.Controls.VirtualizingStackPanel> behaves the same as an ordinary <xref:System.Windows.Controls.StackPanel>.  
+ When <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty%2A> is set to `false`, a <xref:System.Windows.Controls.VirtualizingStackPanel> behaves the same as an ordinary <xref:System.Windows.Controls.StackPanel>.  
   
    
   
 ## Examples  
- The following example shows how to bind to an XML data source and virtualize the items displayed in a <xref:System.Windows.Controls.ListBox> element using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. Notice that the <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizing%2A> attached property is explicitly set to `true`.  
+ The following example shows how to bind to an XML data source and virtualize the items displayed in a <xref:System.Windows.Controls.ListBox> element using [!INCLUDE[TLA#tla_xaml](~/includes/tlasharptla-xaml-md.md)]. Notice that the <xref:System.Windows.Controls.VirtualizingStackPanel.IsVirtualizingProperty%2A> attached property is explicitly set to `true`.  
   
  [!code-xml[VirtualizingStackPanel_Intro#2](~/samples/snippets/csharp/VS_Snippets_Wpf/VirtualizingStackPanel_Intro/CS/default.xaml#2)]  
   

@@ -173,7 +173,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.HasDropShadowProperty%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
   
  [!code-csharp[ToolTipService#GetHasDropShadow](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#gethasdropshadow)]
  [!code-vb[ToolTipService#GetHasDropShadow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#gethasdropshadow)]  
@@ -287,7 +287,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.IsEnabled%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.IsEnabledProperty%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
   
  [!code-csharp[ToolTipService#GetIsEnabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getisenabled)]
  [!code-vb[ToolTipService#GetIsEnabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getisenabled)]  
@@ -324,7 +324,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.IsOpen%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.IsOpenProperty%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
   
  [!code-csharp[ToolTipService#GetIsOpen](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getisopen)]
  [!code-vb[ToolTipService#GetIsOpen](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getisopen)]  
@@ -509,7 +509,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.ShowOnDisabled%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.ShowOnDisabledProperty%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
   
  [!code-csharp[ToolTipService#GetShowOnDisabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#getshowondisabled)]
  [!code-vb[ToolTipService#GetShowOnDisabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#getshowondisabled)]  
@@ -546,7 +546,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.ToolTip%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
+ The following example shows how to get the value for the <xref:System.Windows.Controls.ToolTipService.ToolTipProperty%2A> attached property. The <xref:System.Windows.FrameworkElement.FindName%2A> method finds the object called `ellipse2`, which is an <xref:System.Windows.Shapes.Ellipse>.  
   
  [!code-csharp[ToolTipService#GetToolTip](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#gettooltip)]
  [!code-vb[ToolTipService#GetToolTip](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#gettooltip)]  
@@ -834,7 +834,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.HasDropShadow%2A> attached property.  
+ The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.HasDropShadowProperty%2A> attached property.  
   
  [!code-csharp[ToolTipService#SetHasDropShadow](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#sethasdropshadow)]
  [!code-vb[ToolTipService#SetHasDropShadow](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#sethasdropshadow)]  
@@ -933,7 +933,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.IsEnabled%2A> attached property.  
+ The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.IsEnabledProperty%2A> attached property.  
   
  [!code-csharp[ToolTipService#SetIsEnabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setisenabled)]
  [!code-vb[ToolTipService#SetIsEnabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setisenabled)]  
@@ -1098,7 +1098,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.ShowOnDisabled%2A> attached property.  
+ The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.ShowOnDisabledProperty%2A> attached property.  
   
  [!code-csharp[ToolTipService#SetShowOnDisabled](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#setshowondisabled)]
  [!code-vb[ToolTipService#SetShowOnDisabled](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#setshowondisabled)]  
@@ -1136,7 +1136,7 @@
    
   
 ## Examples  
- The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.ToolTip%2A> attached property.  
+ The following example shows how to set the value for the <xref:System.Windows.Controls.ToolTipService.ToolTipProperty%2A> attached property.  
   
  [!code-csharp[ToolTipService#SetToolTip2](~/samples/snippets/csharp/VS_Snippets_Wpf/ToolTipService/CSharp/Pane1.xaml.cs#settooltip2)]
  [!code-vb[ToolTipService#SetToolTip2](~/samples/snippets/visualbasic/VS_Snippets_Wpf/ToolTipService/visualbasic/pane1.xaml.vb#settooltip2)]  

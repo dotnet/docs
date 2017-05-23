@@ -201,9 +201,9 @@
   
 -   Script references with the same <xref:System.Web.UI.ScriptReference.Name%2A> and <xref:System.Web.UI.ScriptReference.Assembly%2A> properties are removed as duplicates.  
   
--   Script references with the same <xref:System.Web.UI.ScriptReference.Path%2A> are not removed as duplicates at design time. However, they are removed as duplicates at run time.  
+-   Script references with the same <xref:System.Web.UI.ScriptReferenceBase.Path*%2A> are not removed as duplicates at design time. However, they are removed as duplicates at run time.  
   
--   The <xref:System.Web.UI.Control.ResolveClientUrl%2A> method is used to return a fully qualified URL for the <xref:System.Web.UI.ScriptReference.Path%2A> property of script references.  
+-   The <xref:System.Web.UI.Control.ResolveClientUrl%2A> method is used to return a fully qualified URL for the <xref:System.Web.UI.ScriptReferenceBase.Path*%2A> property of script references.  
   
 -   The script references in the returned collection are cloned versions of the original script references and therefore cannot be modified in designer code by using this collection.  
   

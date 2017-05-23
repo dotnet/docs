@@ -1,5 +1,5 @@
 ---
-title: Discriminated Unions (F#)
+title: Discriminated Unions (F#) | Microsoft Docs
 description: Discriminated Unions (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

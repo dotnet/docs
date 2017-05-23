@@ -1,5 +1,5 @@
 ---
-title: "Handle exceptions in query expressions"
+title: Handle exceptions in query expressions | Microsoft Docs
 description: How to handle exceptions in query expressions.
 keywords: .NET, .NET Core, C#
 author: BillWagner

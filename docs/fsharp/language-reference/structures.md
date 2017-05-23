@@ -1,5 +1,5 @@
 ---
-title: Structures (F#)
+title: Structures (F#) | Microsoft Docs
 description: Structures (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

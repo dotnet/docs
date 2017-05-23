@@ -1,5 +1,5 @@
 ---
-title: What is "managed code"?
+title: What is managed code? | Microsoft Docs
 description: What is "managed code"?
 keywords: .NET, .NET Core
 author: blackdwarf

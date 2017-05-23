@@ -1,5 +1,5 @@
 ---
-title: Inheritance (F#)
+title: Inheritance (F#) | Microsoft Docs
 description: Inheritance (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: Async Programming in F#
+title: Async Programming in F# | Microsoft Docs
 description: Async Programming in F#
 keywords: .NET, .NET Core
 author: cartermp

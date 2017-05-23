@@ -1,5 +1,5 @@
 ---
-title: Code Formatting Guidelines (F#)
+title: Code Formatting Guidelines (F#) | Microsoft Docs
 description: Code Formatting Guidelines (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

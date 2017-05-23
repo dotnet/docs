@@ -1,5 +1,5 @@
 ---
-title: What's New in C# | C# Guide
+title: What's New in C# - C# Guide | Microsoft Docs
 description: How is the C# language evolving
 keywords: C#, Latest Features, What's New, Roslyn
 author: BillWagner

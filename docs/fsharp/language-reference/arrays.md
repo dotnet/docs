@@ -1,5 +1,5 @@
 ---
-title: Arrays (F#)
+title: Arrays (F#) | Microsoft Docs
 description: Arrays (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

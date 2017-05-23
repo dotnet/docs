@@ -1,5 +1,5 @@
 ---
-title: .NET Core
+title: .NET Core | Microsoft Docs
 description: .NET Core
 keywords: .NET, .NET Core
 author: richlander

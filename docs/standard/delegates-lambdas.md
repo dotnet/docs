@@ -1,5 +1,5 @@
 ---
-title: Delegates and lambdas
+title: Delegates and lambdas | Microsoft Docs
 description: Delegates and lambdas
 keywords: .NET, .NET Core
 author: richlander

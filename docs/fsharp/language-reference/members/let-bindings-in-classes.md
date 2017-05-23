@@ -1,5 +1,5 @@
 ---
-title: let Bindings in Classes (F#)
+title: let Bindings in Classes (F#) | Microsoft Docs
 description: let Bindings in Classes (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: Modules (F#)
+title: Modules (F#) | Microsoft Docs
 description: Modules (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

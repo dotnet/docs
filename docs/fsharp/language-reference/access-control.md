@@ -1,5 +1,5 @@
 ---
-title: Access Control (F#)
+title: Access Control (F#) | Microsoft Docs
 description: Access Control (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

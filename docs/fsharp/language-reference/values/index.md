@@ -1,5 +1,5 @@
 ---
-title: Values (F#)
+title: Values (F#) | Microsoft Docs
 description: Values (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,0 +1,8 @@
+# [Designing and Developing Multi Container and Microservice Based .NET Applications](index.md)
+## [Vision](vision.md)
+## [Designing a microservice-oriented application](designing-a-microservice-oriented-application.md)
+## [Creating a simple data-driven CRUD microservice](creating-a-simple-data-driven-crud-microservice.md)
+## [Defining your multi-container application with docker-compose.yml ](defining-your-multi-container-application-with-docker-compose.yml-.md)
+## [Using a database server running as a container](using-a-database-server-running-as-a-container.md)
+## [Implementing event-based communication between microservices (integration events)](implementing-event-based-communication-between-microservices-(integration-events).md)
+## [Testing ASP.NET Core services and web apps](testing-asp.net-core-services-and-web-apps.md)

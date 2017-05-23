@@ -29,7 +29,6 @@ Represents a configuration section for defining a set of backup services used in
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

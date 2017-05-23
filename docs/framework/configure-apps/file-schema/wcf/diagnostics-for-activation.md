@@ -24,7 +24,6 @@ Configures [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] listener's
 ## Syntax  
   
 ```  
-  
 <configuration>  
    <system.serviceModel.activation>  
        <diagnostics performanceCountersEnabled="Boolean" />  

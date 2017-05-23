@@ -29,7 +29,6 @@ Specifies authentication settings for a peer certificate used by a peer node.
 ## Syntax  
   
 ```  
-  
 <peerAuthentication  
       customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
       certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  

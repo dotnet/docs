@@ -25,7 +25,6 @@ The dot operator (.) is the [!INCLUDE[esql](../../../../../../includes/esql-md.m
 ## Syntax  
   
 ```  
-  
 expression.identifier  
 ```  
   

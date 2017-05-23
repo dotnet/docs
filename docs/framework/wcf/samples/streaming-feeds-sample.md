@@ -35,7 +35,6 @@ interface IStreamingFeedService
     [OperationContract]  
     Atom10FeedFormatter StreamedFeed();  
 }  
-  
 ```  
   
  The service implements this contract by using an `ItemGenerator` class to create a potentially infinite stream of <xref:System.ServiceModel.Syndication.SyndicationItem> instances using an iterator, as shown in the following code.  
@@ -54,7 +53,6 @@ class ItemGenerator
     }  
     ...  
 }  
-  
 ```  
   
  When the service implementation creates the feed, the output of `ItemGenerator.GenerateItems()` is used instead of a buffered collection of items.  
@@ -71,7 +69,6 @@ public Atom10FeedFormatter StreamedFeed()
     feed.Items = itemGenerator.GenerateItems();  
     return feed.GetAtom10Formatter();  
 }  
-  
 ```  
   
  As a result, the item stream is never fully buffered into memory. You can observe this behavior by setting a breakpoint on the `yield``return` statement inside of the `ItemGenerator.GenerateItems()` method and noting that this breakpoint is encountered for the first time after the service has returned the result of the `StreamedFeed()` method.  
@@ -84,7 +81,6 @@ XmlReader reader = XmlReader.Create("http://localhost:8000/Service/Feeds/Streame
 StreamedAtom10FeedFormatter formatter = new StreamedAtom10FeedFormatter(counter);  
   
 SyndicationFeed feed = formatter.ReadFrom(reader);  
-  
 ```  
   
  Normally, a call to <xref:System.ServiceModel.Syndication.SyndicationFeedFormatter.ReadFrom%28System.Xml.XmlReader%29> does not return until the entire contents of the feed have been read from the network and buffered into memory. However, the `StreamedAtom10FeedFormatter` object overrides <xref:System.ServiceModel.Syndication.Atom10FeedFormatter.ReadItems%28System.Xml.XmlReader%2CSystem.ServiceModel.Syndication.SyndicationFeed%2CSystem.Boolean%40%29> to return an iterator instead of a buffered collection, as shown in the following code.  
@@ -105,7 +101,6 @@ private IEnumerable<SyndicationItem> DelayReadItems(XmlReader reader, Syndicatio
   
     reader.ReadEndElement();  
 }  
-  
 ```  
   
  As a result, each item is not read from the network until the client application traversing the results of `ReadItems()` is ready to use it. You can observe this behavior by setting a breakpoint on the `yield``return` statement inside of `StreamedAtom10FeedFormatter.DelayReadItems()` and noticing that this breakpoint is encountered for the first time after the call to `ReadFrom()` completes.  

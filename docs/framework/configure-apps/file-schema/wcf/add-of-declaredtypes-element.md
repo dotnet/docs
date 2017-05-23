@@ -31,7 +31,6 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
 ## Syntax  
   
 ```  
-  
 <add type="String">  
    <knownType type="String">  
        <parameter index="Integer"  

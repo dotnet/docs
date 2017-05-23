@@ -72,7 +72,6 @@ Host: localhost:15238
 {   
    "rating": 4   
 }  
-  
 ```  
   
 > [!WARNING]

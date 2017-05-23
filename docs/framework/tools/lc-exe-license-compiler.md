@@ -44,7 +44,6 @@ The License Compiler reads text files that contain licensing information and pro
 ## Syntax  
   
 ```  
-  
       lc /target:  
       targetPE /complist:filename [/outdir:path]  
 /i:modules [/nologo] [/v]  
@@ -96,7 +95,6 @@ lc /target:myApp /complist:hostapplic.txt /complist:hostapplic2.txt /complist: h
 /complist:hostapplic.txt   
 /i:WFCPrj.dll   
 /outdir:"C:\My Folder"  
-  
 ```  
   
  The following command line uses the `response.rsp` file.  

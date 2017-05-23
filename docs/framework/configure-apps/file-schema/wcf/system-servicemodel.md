@@ -30,7 +30,6 @@ This configuration section contains all the [!INCLUDE[indigo1](../../../../../in
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <behaviors>  
     </behaviors>  

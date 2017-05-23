@@ -38,7 +38,6 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 ## Syntax  
   
 ```  
-  
       <specifiedPickupDirectory  
   pickupDirectoryLocation="directory"   
 />  

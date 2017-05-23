@@ -29,7 +29,6 @@ Specifies the types of required and optional claims expected to appear in the fe
 ## Syntax  
   
 ```  
-  
 <claimTypeRequirements>  
       <add claimType="URI"  
         isOptional="Boolean" />  

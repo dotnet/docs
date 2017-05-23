@@ -38,7 +38,6 @@ In addition to creating events using the Windows Forms Designer, you can also cr
     Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs)  
        ' Add event handler code here.  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -46,7 +45,6 @@ In addition to creating events using the Windows Forms Designer, you can also cr
     {  
     // Add event handler code here.  
     }  
-  
     ```  
   
     ```cpp  
@@ -66,12 +64,10 @@ In addition to creating events using the Windows Forms Designer, you can also cr
   
     ```vb  
     AddHandler Button1.Click, AddressOf Button1_Click  
-  
     ```  
   
     ```csharp  
     button1.Click += new EventHandler(button1_Click);  
-  
     ```  
   
     ```cpp  

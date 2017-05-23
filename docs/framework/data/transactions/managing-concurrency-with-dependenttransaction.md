@@ -68,7 +68,6 @@ using(TransactionScope scope = new TransactionScope())
     /* Do some transactional work here, then: */  
     scope.Complete();  
 }  
-  
 ```  
   
  The client code creates a transactional scope that also sets the ambient transaction. You should not pass the ambient transaction to the worker thread. Instead, you should clone the current (ambient) transaction by calling the <xref:System.Transactions.Transaction.DependentClone%2A> method on the current transaction, and pass the dependent to the worker thread.  

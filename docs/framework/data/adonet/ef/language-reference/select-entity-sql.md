@@ -26,7 +26,6 @@ Specifies the elements returned by a query.
 ## Syntax  
   
 ```  
-  
 SELECT [ ALL | DISTINCT ] [ topSubclause ] aliasedExpr   
       [{ , aliasedExpr }] FROM fromClause [ WHERE whereClause ] [ GROUP BY groupByClause [ HAVING havingClause ] ] [ ORDER BY orderByClause ]  
 or  

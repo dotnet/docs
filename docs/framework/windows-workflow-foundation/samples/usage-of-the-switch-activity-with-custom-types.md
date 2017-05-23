@@ -27,7 +27,6 @@ This sample describes how to enable a <!--zz <xref:System.Activities.>--> `xref:
        public string Name { get; set; }  
        public int Age { get; set; }  
     ...  
-  
     ```  
   
 -   In the custom class `Person`, the <xref:System.Object.Equals%2A> and <xref:System.Object.GetHashCode%2A> classes are overridden.  
@@ -54,7 +53,6 @@ This sample describes how to enable a <!--zz <xref:System.Activities.>--> `xref:
   
         return 0;  
     }  
-  
     ```  
   
 -   A custom <xref:System.ComponentModel.TypeConverter> class is implemented that performs the conversion of an instance of the custom class to a string and a string to an instance of a custom class.  

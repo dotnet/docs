@@ -31,7 +31,6 @@ The top-level element for controlling XML serialization. For more information ab
 ## Syntax  
   
 ```  
-  
 <system.xml.serialization>  
 </system.xml.serialization>  
 ```  

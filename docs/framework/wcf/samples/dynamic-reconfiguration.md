@@ -65,7 +65,6 @@ This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.
         Subtract(145,76.54) = 68.5  
         Multiply(9,81.25) = 731.2  
         Divide(22,7) = 3.1  
-  
         ```  
   
     2.  The following is the output returned if the routing service is configured to route messages to the regular Calculator service.  
@@ -75,7 +74,6 @@ This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.
         Subtract(145,76.54) = 68.46  
         Multiply(9,81.25) = 731.25  
         Divide(22,7) = 3.14285714285714  
-  
         ```  
   
 6.  The Calculator Service and the Rounding Calculator Service also print out a log of the operations invoked to their respective console windows.  

@@ -33,7 +33,6 @@ Contains the known types that the <xref:System.Runtime.Serialization.DataContrac
 ## Syntax  
   
 ```  
-  
 <configuration>  
   <system.runtime.serialization>  
     <dataContractSerializer>  

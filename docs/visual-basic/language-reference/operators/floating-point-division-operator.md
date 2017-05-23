@@ -51,7 +51,6 @@ Divides two numbers and returns a floating-point result.
 ## Syntax  
   
 ```  
-  
 expression1 / expression2  
 ```  
   

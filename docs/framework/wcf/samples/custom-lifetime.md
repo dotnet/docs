@@ -39,7 +39,6 @@ ChannelFactory<IEchoService> channelFactory2 =
   
 // Create the second channel to the same instance.  
 IEchoService proxy2 = channelFactory2.CreateChannel();  
-  
 ```  
   
  Unlike other instancing modes, the shared instancing mode has a unique way of releasing the service instances. When all the channels are closed for an instance, the service [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] runtime starts a timer. If nobody makes a connection before the timeout expires, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] releases the instance and claims the resources. As a part of the teardown procedure [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] invokes the <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider.IsIdle%2A> method of all <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider> implementations before releasing the instance. If all of them return `true` the instance is released. Otherwise the <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider> implementation is responsible for notifying the `Dispatcher` of the idle state by using a callback method.  
@@ -61,7 +60,6 @@ IEchoService proxy2 = channelFactory2.CreateChannel();
 class CustomLeaseExtension : IExtension<InstanceContext>  
 {  
 }  
-  
 ```  
   
  The `IExtension` interface has two methods `Attach` and `Detach`. As their names imply, these two methods are called when the runtime attaches and detaches the extension to an instance of the <xref:System.ServiceModel.InstanceContext> class. In this sample, the `Attach` method is used to keep track of the <xref:System.ServiceModel.InstanceContext> object that belongs to the current instance of the extension.  
@@ -87,7 +85,6 @@ interface ICustomLease
 class CustomLeaseExtension : IExtension<InstanceContext>, ICustomLease  
 {  
 }  
-  
 ```  
   
  When [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] invokes the <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider.IsIdle%2A> method in the <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider> implementation this call is routed to the <xref:System.ServiceModel.Dispatcher.IInstanceContextProvider.IsIdle%2A> method of the `CustomLeaseExtension`. Then the `CustomLeaseExtension` checks its private state to see whether the <xref:System.ServiceModel.InstanceContext> is idle. If it is idle it returns `true`. Otherwise, it starts a timer for a specified amount of extended lifetime.  
@@ -111,7 +108,6 @@ public bool IsIdle
     }  
   }  
 }  
-  
 ```  
   
  In the timer’s `Elapsed` event the callback function in the Dispatcher is called in order to start another clean up cycle.  
@@ -123,7 +119,6 @@ void idleTimer_Elapsed(object sender, ElapsedEventArgs args)
     isIdle = true;    
     callback(owner);  
 }  
-  
 ```  
   
  There is no way to renew the running timer when a new message arrives for the instance being moved to the idle state.  
@@ -148,7 +143,6 @@ public bool IsIdle
        }  
     }  
 }  
-  
 ```  
   
  If the `ISharedSessionLifetime.IsIdle` property returns `false` the Dispatcher registers a callback function by using the `NotifyIdle` method. This method receives a reference to the <xref:System.ServiceModel.InstanceContext> being released. Therefore the sample code can query the `ICustomLease` type extension and check the `ICustomLease.IsIdle` property in the extended state.  
@@ -169,7 +163,6 @@ public void NotifyIdle(InstanceContextIdleCallback callback,
        }  
     }   
 }  
-  
 ```  
   
  Before the `ICustomLease.IsIdle` property is checked the Callback property needs to be set as this is essential for `CustomLeaseExtension` to notify the Dispatcher when it becomes idle. If `ICustomLease.IsIdle` returns `true`, the `isIdle` private member is simply set in `CustomLifetimeLease` to `true` and calls the callback method. Because the code holds a lock, other threads cannot change the value of this private member. And the next time Dispatcher checks the `ISharedSessionLifetime.IsIdle`, it returns `true` and lets Dispatcher release the instance.  
@@ -203,7 +196,6 @@ public void ApplyBehavior(ServiceDescription description,
         dispatchBehavior.InstanceContextInitializers.Add(initializer);  
     }  
 }  
-  
 ```  
   
  This behavior can be added to a sample service class by annotating it with the `CustomLeaseTime` attribute.  

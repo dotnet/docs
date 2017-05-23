@@ -24,7 +24,6 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <webScriptEndpoint>           <standardEndpoint             webEndpointType="String"/>             </webScriptEndpoint>     </standardEndpoints>  
 </system.serviceModel>  

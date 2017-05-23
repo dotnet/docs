@@ -42,13 +42,11 @@ Anonymous types provide a convenient way to encapsulate a set of read-only prope
  The following example shows an anonymous type that is initialized with two properties named `Amount` and `Message`.  
   
 ```csharp  
-  
 var v = new { Amount = 108, Message = "Hello" };  
   
 // Rest the mouse pointer over v.Amount and v.Message in the following  
 // statement to verify that their inferred types are int and string.  
 Console.WriteLine(v.Amount + v.Message);  
-  
 ```  
   
  Anonymous types typically are used in the [select](../../../csharp/language-reference/keywords/select-clause.md) clause of a query expression to return a subset of the properties from each object in the source sequence. For more information about queries, see [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md).  

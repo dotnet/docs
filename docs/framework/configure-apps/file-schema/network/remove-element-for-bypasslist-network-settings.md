@@ -40,7 +40,6 @@ Removes an IP address or DNS name from the proxy bypass list.
 ## Syntax  
   
 ```  
-  
       <remove   
    name = "regular expression"   
 />  

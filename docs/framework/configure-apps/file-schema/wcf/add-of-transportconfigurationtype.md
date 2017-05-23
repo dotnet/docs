@@ -29,7 +29,6 @@ This element is a key/value pair, which identifies the type of a particular tran
 ## Syntax  
   
 ```  
-  
 <serviceHostingEnvironment>   
    <transportConfigurationTypes>  
       <add name="String"  

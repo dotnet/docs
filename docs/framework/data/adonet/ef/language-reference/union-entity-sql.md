@@ -26,7 +26,6 @@ Combines the results of two or more queries into a single collection.
 ## Syntax  
   
 ```  
-  
 expression  
 UNION [ ALL ]  
 expression  

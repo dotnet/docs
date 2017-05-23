@@ -41,7 +41,6 @@ You can write and maintain asynchronous programs more easily by using the `async
  The following code shows an outline of the program.  
   
 ```csharp  
-  
 public partial class MainWindow : Window  
 {  
     // . . .  
@@ -72,13 +71,11 @@ public partial class MainWindow : Window
         return urlContents.Length;  
     }  
 }  
-  
 ```  
   
  Each of the labeled locations, "ONE" through "SIX," displays information about the current state of the program. The following output is produced.  
   
 ```  
-  
 ONE:   Entering startButton_Click.  
            Calling AccessTheWebAsync.  
   
@@ -156,7 +153,6 @@ Length of the downloaded string: 33946.
             <TextBox x:Name="resultsTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="576" Height="265" FontFamily="Lucida Console" FontSize="10" VerticalScrollBarVisibility="Visible" Grid.ColumnSpan="3"/>  
         </Grid>  
     </Window>  
-  
     ```  
   
      A simple window that contains a text box and a button appears in the **Design** view of MainWindow.xaml.  
@@ -307,11 +303,9 @@ Task<string> getStringTask = client.GetStringAsync("http://msdn.microsoft.com");
  You can think of the task as a promise by `client.GetStringAsync` to produce an actual string eventually. In the meantime, if `AccessTheWebAsync` has work to do that doesn't depend on the promised string from `client.GetStringAsync`, that work can continue while  `client.GetStringAsync` waits. In the example, the following lines of output, which are labeled "THREE," represent the opportunity to do independent work  
   
 ```  
-  
 THREE: Back in AccessTheWebAsync.  
            Task getStringTask is started.  
            About to await getStringTask & return a Task<int> to startButton_Click.  
-  
 ```  
   
  The following statement suspends progress in `AccessTheWebAsync` when `getStringTask` is awaited.  
@@ -343,11 +337,9 @@ Task<int> getLengthTask = AccessTheWebAsync();
  As in `AccessTheWebAsync`, `startButton_Click` can continue with work that doesn’t depend on the results of the asynchronous task (`getLengthTask`) until the task is awaited. The following output lines represent that work.  
   
 ```  
-  
 FOUR:  Back in startButton_Click.  
            Task getLengthTask is started.  
            About to await getLengthTask -- no caller to return to.  
-  
 ```  
   
  Progress in `startButton_Click` is suspended when `getLengthTask` is awaited. The following assignment statement suspends `startButton_Click` until `AccessTheWebAsync` is complete.  
@@ -364,12 +356,10 @@ int contentLength = await getLengthTask;
  When `client.GetStringAsync` signals that it’s complete, processing in `AccessTheWebAsync` is released from suspension and can continue past the await statement. The following lines of output represent the resumption of processing.  
   
 ```  
-  
 FIVE:  Back in AccessTheWebAsync.  
            Task getStringTask is complete.  
            Processing the return statement.  
            Exiting from AccessTheWebAsync.  
-  
 ```  
   
  The operand of the return statement, `urlContents.Length`, is stored in the task that  `AccessTheWebAsync` returns. The await expression retrieves that value from `getLengthTask` in `startButton_Click`.  
@@ -386,12 +376,10 @@ FIVE:  Back in AccessTheWebAsync.
  The following lines of output represent the resumption of processing in `startButton_Async`:  
   
 ```  
-  
 SIX:   Back in startButton_Click.  
            Task getLengthTask is finished.  
            Result from AccessTheWebAsync is stored in contentLength.  
            About to display contentLength and exit.  
-  
 ```  
   
  The await expression retrieves from `getLengthTask` the integer value that’s the operand of the return statement in `AccessTheWebAsync`. The following statement assigns that value to the `contentLength` variable.  

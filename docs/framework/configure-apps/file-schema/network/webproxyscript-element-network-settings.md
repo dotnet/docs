@@ -37,7 +37,6 @@ Configures the characteristics of the script used to discover Web proxies.
 ## Syntax  
   
 ```  
-  
       <webProxyScript  
   downloadTimeout="hh:mm:ss"  
 />  

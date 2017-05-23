@@ -29,7 +29,6 @@ The <xref:System.Drawing.Graphics> class is at the heart of [!INCLUDE[ndptecgdip
 Dim graphics As Graphics = e.Graphics  
 Dim pen As New Pen(Color.Blue) ' Opaque blue  
 graphics.DrawRectangle(pen, 10, 10, 200, 100)  
-  
 ```  
   
 ```csharp  
@@ -60,7 +59,6 @@ graphics.SmoothingMode = SmoothingMode.AntiAlias
 graphics.DrawEllipse(pen, 0, 0, 200, 100)  
 graphics.SmoothingMode = SmoothingMode.HighSpeed  
 graphics.DrawEllipse(pen, 0, 150, 200, 100)  
-  
 ```  
   
 ```csharp  
@@ -87,7 +85,6 @@ graphics.RotateTransform(30) ' world transformation
 graphics.DrawEllipse(pen, 0, 0, 100, 50)  
 graphics.PageUnit = GraphicsUnit.Millimeter ' page transformation  
 graphics.DrawEllipse(pen, 0, 0, 100, 50)  
-  
 ```  
   
 ```csharp  
@@ -130,7 +127,6 @@ graphics.SetClip([region], CombineMode.Replace)
 ' Draw two clipped lines.  
 graphics.DrawLine(pen, 0, 30, 150, 160)  
 graphics.DrawLine(pen, 40, 20, 190, 150)  
-  
 ```  
   
 ```csharp  

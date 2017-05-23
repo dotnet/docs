@@ -29,7 +29,6 @@ Specifies a name-value pair of parameters that are used globally across multiple
 ## Syntax  
   
 ```  
-  
 <workflowRuntime>  
    <commonParameters>  
       <add name="String" value="String" />  

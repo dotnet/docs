@@ -61,7 +61,6 @@ public void Prepare(PreparingEnlistment preparingEnlistment)
           break;  
      }  
 }  
-  
 ```  
   
  When the durable resource manager receives this call, it should log the transaction's recovery information (available by retrieving the <xref:System.Transactions.PreparingEnlistment.RecoveryInformation%2A> property) and whatever information is necessary to complete the transaction on commit. This does not need to be performed within the <xref:System.Transactions.IEnlistmentNotification.Prepare%2A> method because the RM can do this on a worker thread.  

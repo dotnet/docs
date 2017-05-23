@@ -891,7 +891,6 @@ For more information on the <xref:System.TimeZoneInfo> structure and time zone a
               // new code
            }
         }
-
         ```
 
          It's beneficial to use a consistent format for switches, since they are a formal contract exposed by a library. The following are two obvious formats.

@@ -63,7 +63,6 @@ Customers (CustomerID, CompanyName, Phone)
  The mapping process also creates a unique constraint on the **CustomerID** column, as shown in the following **DataSet**. (For simplicity, only relevant properties are shown.)  
   
 ```  
-  
       DataSetName: MyDataSet  
 TableName: Customers  
   ColumnName: CustomerID  
@@ -82,7 +81,6 @@ TableName: Customers
  You can specify a unique constraint on a combination of elements or attributes in the XML Schema. The following example demonstrates how to specify that a combination of **CustomerID** and **CompanyName** values must be unique for all **Customers** in any instance, by adding another **xs:field** element in the schema.  
   
 ```  
-  
       <xs:unique     
          msdata:ConstraintName="SomeName"    
          name="UniqueCustIDConstr" >   

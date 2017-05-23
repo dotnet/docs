@@ -108,7 +108,6 @@ manager: "wpickett"
        ' the GridTableStylesCollection.   
        myDataGrid.TableStyles.Add(TSAuthors)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -132,7 +131,6 @@ manager: "wpickett"
        // the GridTableStylesCollection.   
        dataGrid1.TableStyles.Add(TSAuthors);  
     }  
-  
     ```  
   
     ```cpp  

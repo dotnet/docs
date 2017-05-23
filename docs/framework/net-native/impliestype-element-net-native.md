@@ -21,7 +21,6 @@ Applies policy to a type, if that policy has been applied to the containing type
 ## Syntax  
   
 ```vb  
-  
 <ImpliesType Name="type_name"  
              Activate="policy_type"  
              Browse="policy_type"  
@@ -33,7 +32,6 @@ Applies policy to a type, if that policy has been applied to the containing type
              MarshalObject="policy_setting"  
              MarshalDelegate="policy_setting"  
              MarshalStructure="policy_setting" />  
-  
 ```  
   
 ## Attributes and Elements  
@@ -90,11 +88,9 @@ Applies policy to a type, if that policy has been applied to the containing type
  The `<ImpliesType>` element was defined with the assumption that a need for reflection on the type specified by its parent element implies a need for reflection on the type specified by the `<ImpliesType>` element. For example, the following reflection directives apply to two types, `Explicit<T>` and `Implicit<T>`.  
   
 ```xml  
-  
 <Type Name="Explicit{ET}">  
     <ImpliesType Name="Implicit{ET}" Dynamic="Required Public" />  
 </Type>  
-  
 ```  
   
  This directive has no effect unless an instantiation of `Explicit` has a defined `Dynamic` policy setting. For example, if that's the case for `Explicit<Int32>`, `Implicit<Int32>` is instantiated with its public members rooted, and their metadata is made accessible for dynamic programming.  
@@ -102,24 +98,20 @@ Applies policy to a type, if that policy has been applied to the containing type
  The following is a real-world example that applies to at least one serializer. The directives capture the requirement that reflecting on something typed as `IList<`*something*`>` also involves reflecting on the corresponding `List<`*something*`>` type without requiring any per-application annotation.  
   
 ```xml  
-  
 <Type Name="System.Collections.Generic.IList{T}">  
    <ImpliesType Name="System.Collections.Generic.List{T}" Serialize="Public" />  
 </Type>  
-  
 ```  
   
  The `<ImpliesType>` element can also appear within a `<Method>` element, because in some cases instantiating a generic method implies reflecting on a type instantiation. For example, imagine a generic method `IEnumerable<T> MakeEnumerable<T>(string` `spelling``, T` `defaultValue``)` that a given library will access dynamically along with the associated <xref:System.Collections.Generic.List%601> and <xref:System.Array> types. This can be expressed as:  
   
 ```xml  
-  
 <Type Name="MyType">  
     <Method Name="MakeEnumerable{T}" Signature="(System.String, T)" Dynamic="Included">  
         <ImpliesType Name="T[]" Dynamic="Public" />  
         <ImpliesType Name="System.Collections.Generic.List{T}" Dynamic="Public">  
     </Method>  
 </Type>  
-  
 ```  
   
 ## See Also  

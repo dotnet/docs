@@ -24,7 +24,6 @@ This configuration element defines a standard endpoint that is pre-configured fo
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <discoveryEndpoint>           <standardEndpoint                  discoveryMode="Adhoc/Managed"                  discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"                  maxResponseDelay="Timespan"                  multicastAddress="Uri"                   name="String" />       </discoveryEndpoint>            </standardEndpoints>  
 </system.serviceModel>  
@@ -59,7 +58,6 @@ This configuration element defines a standard endpoint that is pre-configured fo
  The following example demonstrates a service listening for discovery messages over a UDP multicast transport.  
   
 ```  
-  
 <services>  
     <service name="CalculatorService"  
          behaviorConfiguration="CalculatorServiceBehavior">  
@@ -74,7 +72,6 @@ This configuration element defines a standard endpoint that is pre-configured fo
                        version="WSDiscoveryApril2005" />  
    </udpDiscoveryEndpoint>  
 </standardEndpoints>  
-  
 ```  
   
 ## See Also  

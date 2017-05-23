@@ -28,7 +28,6 @@ msmqIntegrationBinding
 ## Syntax  
   
 ```  
-  
 <security>  
     <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
         msmqEncryptionAlgorithm="RC4Stream/AES"  

@@ -50,7 +50,6 @@ Dim prodView As DataView = New DataView(prodDS.Tables("Products"), _
    "UnitsInStock <= ReorderLevel", _  
    "SupplierID, ProductName", _  
    DataViewRowState.CurrentRows)  
-  
 ```  
   
 ```csharp  

@@ -31,7 +31,6 @@ Removes a scheme setting for a scheme name.
 ## Syntax  
   
 ```  
-  
       <remove   
    <name = "http|https"/>  
 />  

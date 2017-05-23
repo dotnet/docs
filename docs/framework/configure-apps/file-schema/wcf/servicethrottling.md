@@ -30,7 +30,6 @@ Specifies the throttling mechanism of a Windows Communication Foundation (WCF) s
 ## Syntax  
   
 ```  
-  
 <serviceThrottling maxConcurrentCalls="Integer"  
     maxConcurrentInstances="Integer"  
     maxConcurrentSessions="Integer" />  

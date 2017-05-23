@@ -61,7 +61,6 @@ event EventHandler IDrawingObject.OnDraw
                 }  
             }  
         }  
-  
 ```  
   
 ## See Also  

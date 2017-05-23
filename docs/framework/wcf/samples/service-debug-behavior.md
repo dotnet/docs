@@ -26,7 +26,6 @@ This sample demonstrates how service debug behavior settings can be configured. 
  The Web.config file for the server defines the service debug behavior to enable the help page and exception handling as shown in the following sample.  
   
 ```  
-  
 <behaviors>  
      <serviceBehaviors>  
          <behavior name="CalculatorServiceBehavior">  
@@ -36,7 +35,6 @@ This sample demonstrates how service debug behavior settings can be configured. 
          </behavior>  
      </serviceBehaviors>  
 </behaviors>  
-  
 ```  
   
  [\<serviceDebug>](../../../../docs/framework/configure-apps/file-schema/wcf/servicedebug.md) is the configuration element that allows changing the service debug behavior properties. The user can modify this behavior to achieve the following:  

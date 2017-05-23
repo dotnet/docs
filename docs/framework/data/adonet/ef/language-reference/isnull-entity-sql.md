@@ -25,7 +25,6 @@ Determines if a query expression is null.
 ## Syntax  
   
 ```  
-  
 expression IS [ NOT ] NULL  
 ```  
   

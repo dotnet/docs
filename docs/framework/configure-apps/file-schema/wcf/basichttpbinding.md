@@ -30,7 +30,6 @@ Represents a binding that a [!INCLUDE[indigo1](../../../../../includes/indigo1-m
 ## Syntax  
   
 ```  
-  
 <basicHttpBinding>  
    <binding   
        allowCookies="Boolean"  

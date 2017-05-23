@@ -29,7 +29,6 @@ Specifies the Security Token Service (STS) that issues security tokens.
 ## Syntax  
   
 ```  
-  
 <issuer address="Uri" />  
 ```  
   

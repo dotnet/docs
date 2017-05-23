@@ -48,7 +48,6 @@ Often, users want to choose a printer other than the default printer to print to
     Private Sub PrintDocument1_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage  
        e.Graphics.FillRectangle(Brushes.Red, New Rectangle(500, 500, 500, 500))          
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -69,7 +68,6 @@ Often, users want to choose a printer other than the default printer to print to
        e.Graphics.FillRectangle(Brushes.Red,   
          new Rectangle(500, 500, 500, 500));  
     }  
-  
     ```  
   
     ```cpp  
@@ -102,7 +100,6 @@ Often, users want to choose a printer other than the default printer to print to
        System.Drawing.Printing.PrintPageEventHandler  
        (this.printDocument1_PrintPage);  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
-  
     ```  
   
     ```cpp  

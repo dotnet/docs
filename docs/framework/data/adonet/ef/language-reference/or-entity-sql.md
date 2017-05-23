@@ -25,7 +25,6 @@ Combines two `Boolean` expressions.
 ## Syntax  
   
 ```  
-  
 boolean_expression OR boolean_expression  
 or   
 boolean_expression || boolean_expression  

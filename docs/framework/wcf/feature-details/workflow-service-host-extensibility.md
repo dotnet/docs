@@ -36,7 +36,6 @@ manager: "erikre"
   
 ```csharp  
 host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action = WorkflowUnhandledExceptionAction.Abandon });  
-  
 ```  
   
  It can also be configured in a configuration file as shown in the following example.  
@@ -50,7 +49,6 @@ host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action =
           <workflowUnhandledExceptionBehavior action="Abandon" />        
         </behavior>  
       </serviceBehaviors>  
-  
 ```  
   
 ## Hosting Non-Service Workflows  

@@ -59,7 +59,6 @@ public interface ICalculatorSession
     [OperationContract]  
     double Result();  
 }  
-  
 ```  
   
  The service maintains state, using the feature, for each client as multiple service operations are called to perform a calculation. The client can retrieve the current result by calling `Result` and can clear the result to zero by calling `Clear`.  
@@ -118,10 +117,8 @@ public class CalculatorService : ICalculatorSession
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
-  
 0, + 100, - 50, * 17.65, / 2 = 441.25  
 Press <ENTER> to terminate client.  
-  
 ```  
   
 ### To set up, build, and run the sample  

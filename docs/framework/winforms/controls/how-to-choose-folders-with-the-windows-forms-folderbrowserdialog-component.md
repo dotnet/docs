@@ -42,7 +42,6 @@ Often, within Windows applications you create, you will have to prompt users to 
             TextBox1.Text = FolderBrowserDialog1.SelectedPath  
         End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -53,7 +52,6 @@ Often, within Windows applications you create, you will have to prompt users to 
             textBox1.Text = folderBrowserDialog1.SelectedPath;  
         }  
     }  
-  
     ```  
   
     ```cpp  

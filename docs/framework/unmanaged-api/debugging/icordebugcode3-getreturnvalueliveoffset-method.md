@@ -36,14 +36,12 @@ For a specified IL offset, gets the native offsets where a breakpoint should be 
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetReturnValueLiveOffset(  
     [in] ULONG32 ILoffset,  
     [in] ULONG32 bufferSize,   
     [out] ULONG32 *pFetched,   
     [out, size_is(buffersize), length_is(*pFetched)] ULong32 pOffsets[]  
 );  
-  
 ```  
   
 #### Parameters  

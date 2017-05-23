@@ -27,7 +27,6 @@ Specifies whether transaction batching is supported for receive operations.
 ## Syntax  
   
 ```  
-  
 <transactedBatching maxBatchSize="Integer" />  
 ```  
   

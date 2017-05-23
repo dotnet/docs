@@ -45,7 +45,6 @@ Multicasting applications send small messages to a large number of recipients at
             this.Price = price;  
         }  
     }  
-  
 ```  
   
  Each application that wants to receive multicast messages must host a service that exposes this interface.  For example, here is a code sample that illustrates how to receive multicast messages:  
@@ -65,7 +64,6 @@ Multicasting applications send small messages to a large number of recipients at
   
             Console.WriteLine("Start receiving stock information");  
             Console.ReadLine();  
-  
 ```  
   
  The application specifies the UDP address that all services will be listening on. A new <xref:System.ServiceModel.ServiceHost> is created and a service endpoint is exposed using the <xref:System.ServiceModel.UdpBinding>. The <xref:System.ServiceModel.ServiceHost> is then opened and will start listening for incoming messages.  
@@ -95,7 +93,6 @@ Multicasting applications send small messages to a large number of recipients at
                 // Wait for one second before sending another update  
                 System.Threading.Thread.Sleep(new TimeSpan(0, 0, 1));  
             }  
-  
 ```  
   
  This code generates stock information and then uses the service contract IStockTicker to send multicast messages to call services listening on the correct UDP address.  
@@ -118,7 +115,6 @@ if (address.AddressFamily == AddressFamily.InterNetwork)
               // IPv6   
               return address.IsIPv6Multicast;  
           }  
-  
 ```  
   
  This code checks the first byte of the From address to see if it contains 0xE0 which signifies that the address is a multi-cast address.  

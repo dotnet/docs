@@ -24,7 +24,6 @@ A configuration element that allows you to define virtual service activation set
 ## Syntax  
   
 ```  
-  
 <serviceHostingEnvironment>   
    <serviceActivations>  
       <add factory="String"  

@@ -25,7 +25,6 @@ Multiplies two expressions.
 ## Syntax  
   
 ```  
-  
 expression * expression  
 ```  
   

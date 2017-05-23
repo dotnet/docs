@@ -45,7 +45,6 @@ Performs an arithmetic right shift on the value of a variable or property and as
 ## Syntax  
   
 ```  
-  
 variableorproperty >>= amount  
 ```  
   

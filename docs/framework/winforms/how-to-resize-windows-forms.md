@@ -31,12 +31,10 @@ You can specify the size of your Windows Form in several ways. You can change bo
   
     ```vb  
     Form1.Size = New System.Drawing.Size(100, 100)  
-  
     ```  
   
     ```csharp  
     Form1.Size = new System.Drawing.Size(100, 100);  
-  
     ```  
   
     ```cpp  
@@ -51,12 +49,10 @@ You can specify the size of your Windows Form in several ways. You can change bo
   
     ```vb  
     Form1.Width = 300  
-  
     ```  
   
     ```csharp  
     Form1.Width = 300;  
-  
     ```  
   
     ```cpp  
@@ -71,12 +67,10 @@ You can specify the size of your Windows Form in several ways. You can change bo
   
     ```vb  
     Form1.Size = New Size(300, Form1.Size.Height)  
-  
     ```  
   
     ```csharp  
     Form1.Size = new Size(300, Form1.Size.Height);  
-  
     ```  
   
     ```cpp  
@@ -91,12 +85,10 @@ You can specify the size of your Windows Form in several ways. You can change bo
   
     ```vb  
     Form1.Width += 200  
-  
     ```  
   
     ```csharp  
     Form1.Width += 200;  
-  
     ```  
   
     ```cpp  
@@ -110,14 +102,12 @@ You can specify the size of your Windows Form in several ways. You can change bo
     ' NOTE: CODE WILL NOT COMPILE  
     Dim f As New Form()  
     f.Size.Width += 100  
-  
     ```  
   
     ```csharp  
     // NOTE: CODE WILL NOT COMPILE  
     Form f = new Form();  
     f.Size.Width += 100;  
-  
     ```  
   
     ```cpp  

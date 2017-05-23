@@ -235,7 +235,6 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
     {  
        return new CreationEndpoint();  
     }  
-  
     ```  
   
 5.  Overload the <xref:System.ServiceModel.Configuration.StandardEndpointElement.OnApplyConfiguration%2A>, <xref:System.ServiceModel.Configuration.StandardEndpointElement.OnApplyConfiguration%2A>, <xref:System.ServiceModel.Configuration.StandardEndpointElement.OnInitializeAndValidate%2A>, and <xref:System.ServiceModel.Configuration.StandardEndpointElement.OnInitializeAndValidate%2A> methods. These methods just need to be defined, you do not need to add any code to them.  
@@ -299,7 +298,6 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
           </endpointExtensions>  
         </extensions>  
     </system.serviceModel>  
-  
     ```  
   
      This registers the `CreationEndpointCollection` class so you can configure a `CreationEndpoint` in a web.config file.  
@@ -313,7 +311,6 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
             <endpoint kind="creationEndpoint" binding="basicHttpBinding" address=""/>  
           </service>  
         </services>  
-  
     ```  
   
 7.  Add a \<behaviors> element (after the \</services> tag) to enable service metadata.  
@@ -326,7 +323,6 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
             </behavior>  
           </serviceBehaviors>  
         </behaviors>  
-  
     ```  
   
 8.  Copy the web.config to your IIS application directory.  
@@ -427,7 +423,6 @@ Workflows that are not workflow services can be hosted under IIS/WAS. This is us
     <p:WriteLine sap:VirtualizedContainerService.HintSize="211,61" Text="Hello, world" />  
   </p:Sequence>  
 </WorkflowService>  
-  
 ```  
   
 ```csharp  
@@ -485,7 +480,6 @@ namespace CreationEndpointTest
     {  
     }  
 }  
-  
 ```  
   
 ```xml  
@@ -518,7 +512,6 @@ namespace CreationEndpointTest
     </behaviors>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ```csharp  
@@ -542,7 +535,6 @@ namespace Shared
         void CreateWithInstanceId(IDictionary<string, object> inputs, Guid instanceId);  
     }  
 }  
-  
 ```  
   
 ```csharp  
@@ -646,7 +638,6 @@ namespace Shared
         }  
     }  
 }  
-  
 ```  
   
 ```csharp  
@@ -683,7 +674,6 @@ namespace CreationClient
     }  
   
 }  
-  
 ```  
   
  This example may seem confusing because you never implement a service that implements `IWorkflowCreation`. This is because the `CreationEndpoint` does this for you.  

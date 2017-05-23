@@ -41,7 +41,6 @@ Public Shared Sub WriteView(thisDataView As DataView)
     Console.WriteLine()  
   Next  
 End Sub  
-  
 ```  
   
 ```csharp  

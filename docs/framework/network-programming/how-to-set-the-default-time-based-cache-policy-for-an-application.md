@@ -66,7 +66,6 @@ Public Shared Sub SetDefaultTimeBasedPolicy2()
     Dim policy As New RequestCachePolicy()  
     HttpWebRequest.DefaultCachePolicy = policy  
 End Sub  
-  
 ```  
   
 ## See Also  

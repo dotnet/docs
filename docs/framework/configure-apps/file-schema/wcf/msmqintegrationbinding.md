@@ -30,7 +30,6 @@ msmqIntegrationBinding
 ## Syntax  
   
 ```  
-  
 <msmqIntegrationBinding>  
    <binding   
        closeTimeout="TimeSpan"   

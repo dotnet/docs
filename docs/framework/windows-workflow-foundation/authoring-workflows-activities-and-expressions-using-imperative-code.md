@@ -89,7 +89,6 @@ new WriteLine
 {  
     Text = new Literal<string>("Hello World.")  
 }  
-  
 ```  
   
  It is invalid to initialize a literal expression with any reference type except <xref:System.String>. In the following example, an <xref:System.Activities.Statements.Assign> activity's <xref:System.Activities.Statements.Assign.Value%2A> property is initialized with a literal expression using a `List<string>`.  
@@ -100,7 +99,6 @@ new Assign
     To = new OutArgument<List<string>>(items),  
     Value = new InArgument<List<string>>(new List<string>())  
 },  
-  
 ```  
   
  When the workflow containing this activity is validated, the following validation error is returned: "Literal only supports value types and the immutable type System.String. The type System.Collections.Generic.List`1[System.String] cannot be used as a literal." If the workflow is invoked, an <xref:System.Activities.InvalidWorkflowException> is thrown that contains the text of the validation error. This is a validation error because creating a literal expression with a reference type does not create a new instance of the reference type for each instance of the workflow. To resolve this, replace the literal expression with one that creates and returns a new instance of the reference type.  
@@ -111,7 +109,6 @@ new Assign
     To = new OutArgument<List<string>>(items),  
     Value = new InArgument<List<string>>(new VisualBasicValue<List<string>>("New List(Of String)"))  
 },  
-  
 ```  
   
  [!INCLUDE[crabout](../../../includes/crabout-md.md)] expressions, see [Expressions](../../../docs/framework/windows-workflow-foundation/expressions.md).  
@@ -178,7 +175,6 @@ class Square : Activity<int>
         };  
     }  
 }  
-  
 ```  
   
  In the following example, a workflow definition consisting of a single `Square` activity is invoked using <xref:System.Activities.WorkflowInvoker>.  
@@ -187,7 +183,6 @@ class Square : Activity<int>
 Dictionary<string, object> inputs = new Dictionary<string, object> {{ "Value", 5}};  
 int result = WorkflowInvoker.Invoke(new Square(), inputs);  
 Console.WriteLine("Result: {0}", result);  
-  
 ```  
   
  When the workflow is invoked, the following output is displayed to the console:  

@@ -31,12 +31,10 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
   
     ```vb  
     MonthCalendar1.CalendarDimensions = New System.Drawing.Size (3,2)  
-  
     ```  
   
     ```csharp  
     monthCalendar1.CalendarDimensions = new System.Drawing.Size (3,2);  
-  
     ```  
   
     ```cpp  

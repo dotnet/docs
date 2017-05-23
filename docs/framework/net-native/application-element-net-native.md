@@ -24,7 +24,6 @@ Serves as a container for application-wide types and type members whose metadata
 ## Syntax  
   
 ```xml  
-  
 <Application Activate="policy_setting"  
              Browse="policy_setting"  
              Dynamic="policy_setting"  
@@ -35,7 +34,6 @@ Serves as a container for application-wide types and type members whose metadata
              MarshalObject="policy_setting"  
              MarshalDelegate="policy_setting"  
              MarshalStructure="policy_setting" />  
-  
 ```  
   
 ## Attributes and Elements  

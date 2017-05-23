@@ -28,7 +28,6 @@ Defines message-level security for the [\<wsDualHttpBinding>](../../../../../doc
 ## Syntax  
   
 ```  
-  
 <message   
       clientCredentialType="None/Windows/UserName/Certificate/CardSpace"  
      negotiateServiceCredential="Boolean"  

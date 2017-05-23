@@ -49,7 +49,6 @@ Private Sub Form1_Paint(ByVal sender As Object, ByVal e As _
         e.Graphics.CopyFromScreen(New Point(10, 10), New Point _  
              (100, 100), New Size(70, 70))  
 End Sub  
-  
 ```  
   
 ```csharp  

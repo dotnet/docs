@@ -27,7 +27,6 @@ Enables the retrieval of metadata address information from the request message h
 ## Syntax  
   
 ```  
-  
 <useRequestHeadersForMetadataAddress>   <defaultPorts>      <add scheme="http" port="integer" />   </defaultPorts></useRequestHeadersForMetadataAddress>  
 ```  
   

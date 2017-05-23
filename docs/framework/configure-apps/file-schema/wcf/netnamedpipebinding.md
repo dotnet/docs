@@ -28,7 +28,6 @@ Defines a binding that is secure, reliable, optimized for on-machine cross proce
 ## Syntax  
   
 ```  
-  
 <netNamedPipeBinding>  
    <binding   
       closeTimeout="TimeSpan"  

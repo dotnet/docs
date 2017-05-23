@@ -62,7 +62,6 @@ The `String` data type represents a series of characters (each representing in t
 ```vb  
 Dim x = "hello  
 world"  
-  
 ```  
   
  The resulting string contains newline sequences that you used in your string literal (vbcr, vbcrlf, etc.).  You no longer need to use the old workaround:  
@@ -70,7 +69,6 @@ world"
 ```vb  
 Dim x = <xml><![CDATA[Hello  
 World]]></xml>.Value  
-  
 ```  
   
 ## Characters in Strings  

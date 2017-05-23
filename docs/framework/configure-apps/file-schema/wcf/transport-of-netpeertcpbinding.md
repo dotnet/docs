@@ -28,7 +28,6 @@ Specifies settings for transport level security when using the [\<netPeerTcpBind
 ## Syntax  
   
 ```  
-  
 <netPeerTcpBinding>  
     <binding>  
         <security>  

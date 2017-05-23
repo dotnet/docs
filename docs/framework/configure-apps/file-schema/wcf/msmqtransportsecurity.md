@@ -28,7 +28,6 @@ Specifies MSMQ transport security settings for a custom binding.
 ## Syntax  
   
 ```  
-  
 <msmqTransportSecurity>  
    msmqAuthenticationMode="None/Windows/Certificate"  
    msmqEncryptionAlgorithm="RC4Stream/AES"  

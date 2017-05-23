@@ -41,13 +41,11 @@ An *access key* is an underlined character in the text of a menu, menu item, or 
     ```vb  
     ' Set the letter "P" as an access key.  
     Button1.Text = "&Print"  
-  
     ```  
   
     ```csharp  
     // Set the letter "P" as an access key.  
     button1.Text = "&Print";  
-  
     ```  
   
     ```cpp  

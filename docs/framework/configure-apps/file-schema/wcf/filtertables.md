@@ -29,7 +29,6 @@ Represents a configuration section for defining routing tables that contain mapp
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

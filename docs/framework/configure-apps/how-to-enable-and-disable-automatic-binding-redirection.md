@@ -74,7 +74,6 @@ Starting with [!INCLUDE[vs_dev12](../../../includes/vs-dev12-md.md)], when you c
       </PropertyGroup>  
     ...  
     </Project>  
-  
     ```  
   
 4.  Compile your app.  

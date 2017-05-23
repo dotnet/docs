@@ -47,7 +47,6 @@ An array is a set of values that are logically related to each other, such as th
  Some quick examples before explanation:  
   
 ```vb  
-  
 'Declare a single-dimension array of 5 values  
 Dim numbers(4) As Integer   
   

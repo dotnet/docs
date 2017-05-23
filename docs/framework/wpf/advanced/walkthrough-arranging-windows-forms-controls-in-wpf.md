@@ -79,9 +79,7 @@ This walkthrough shows you how to use              [!INCLUDE[TLA2#tla_winclient]
 4.  In the                                  <xref:System.Windows.Window> element, add the following                                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] namespace mapping.  
   
     ```xaml  
-  
     xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"  
-  
     ```  
   
 5.  In the                                  <xref:System.Windows.Controls.Grid> element set the                                  <xref:System.Windows.Controls.Grid.ShowGridLines%2A> property to                                  `true` and define five rows and three columns.  

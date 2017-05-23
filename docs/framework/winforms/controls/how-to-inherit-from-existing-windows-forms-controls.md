@@ -74,7 +74,6 @@ If you want to extend the functionality of an existing control, you can create a
        ' If you want to completely change the appearance of your control,  
        ' do not call MyBase.OnPaint(e).  
     End Sub  
-  
     ```  
   
     ```csharp  

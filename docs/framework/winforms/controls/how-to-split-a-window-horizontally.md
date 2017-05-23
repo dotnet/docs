@@ -43,7 +43,6 @@ The following code example makes the splitter that divides the <xref:System.Wind
         splitContainer1.Orientation = Orientation.Horizontal  
         Controls.Add(splitContainer1)  
     End Sub  
-  
     ```  
   
     ```csharp  

@@ -70,7 +70,6 @@ MDI child forms are an essential element of [Multiple-Document Interface (MDI) A
        'Display the new form.  
        NewMDIChild.Show()  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -81,7 +80,6 @@ MDI child forms are an essential element of [Multiple-Document Interface (MDI) A
        // Display the new form.  
        newMDIChild.Show();  
     }  
-  
     ```  
   
     ```cpp  

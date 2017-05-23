@@ -76,7 +76,6 @@ This is the second of six tasks required to create a basic [!INCLUDE[indigo1](..
             }  
         }  
     }  
-  
     ```  
   
     ```  
@@ -153,7 +152,6 @@ namespace GettingStartedLib
             double Divide(double n1, double n2);  
         }  
 }  
-  
 ```  
   
 ```  
@@ -203,7 +201,6 @@ namespace GettingStartedLib
         }  
     }  
 }  
-  
 ```  
   
 ```  

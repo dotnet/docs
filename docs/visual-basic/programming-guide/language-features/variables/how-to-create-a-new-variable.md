@@ -42,7 +42,6 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
 1.  Declare the variable in a `Dim` statement.  
   
     ```  
-  
     Dim newCustomer  
     ```  
   

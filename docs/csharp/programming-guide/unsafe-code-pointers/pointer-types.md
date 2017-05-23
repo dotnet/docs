@@ -124,7 +124,6 @@ Console.ReadLine();
 //12  
 //--------  
 //12  
-  
 ```  
   
  You cannot apply the indirection operator to a pointer of type `void*`. However, you can use a cast to convert a void pointer to any other pointer type, and vice versa.  

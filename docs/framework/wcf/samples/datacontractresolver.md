@@ -51,14 +51,12 @@ namespace Types
     {  
     }  
 }  
-  
 ```  
   
  The sample loads the assembly, extracts each of these types, and then serializes and deserializes them. The <xref:System.Runtime.Serialization.DataContractResolver> is plugged into the serialization process by passing an instance of the <xref:System.Runtime.Serialization.DataContractResolver>-derived class to the <xref:System.Runtime.Serialization.DataContractSerializer> constructor, as shown in the following example.  
   
 ```csharp  
 this.serializer = new DataContractSerializer(typeof(Object), null, int.MaxValue, false, true, null, new MyDataContractResolver(assembly));  
-  
 ```  
   
  The sample then serializes the CLR types as shown in the following code example.  
@@ -88,7 +86,6 @@ public void serialize(Type type)
     }  
     Console.WriteLine(this.buffer.ToString());  
 }  
-  
 ```  
   
  The sample then deserializes the xsi:types as shown in the following code example.  
@@ -104,7 +101,6 @@ public void deserialize(Type type)
         Object obj = this.serializer.ReadObject(xmlReader);  
     }  
 }  
-  
 ```  
   
  Since the custom <xref:System.Runtime.Serialization.DataContractResolver> is passed in to the <xref:System.Runtime.Serialization.DataContractSerializer> constructor, the <xref:System.Runtime.Serialization.DataContractResolver.TryResolveType%2A> is called during serialization to map a CLR type to an equivalent `xsi:type`. Similarly the <xref:System.Runtime.Serialization.DataContractResolver.ResolveName%2A> is called during deserialization to map the `xsi:type` to an equivalent CLR type. In this sample, the <xref:System.Runtime.Serialization.DataContractResolver> is defined as shown in the following example.  
@@ -156,7 +152,6 @@ class MyDataContractResolver : DataContractResolver
         }  
     }  
 }  
-  
 ```  
   
  As part of the sample, the Types project generates the assembly with all the types that are used in this sample. Use this project to add, remove or modify the types that will be serialized.  

@@ -42,7 +42,6 @@ wsAnonbinding.Security.Message.ClientCredentialType = MessageCredentialType.None
 WServiceEndpoint ep = serviceHost.AddServiceEndpoint(typeof(ICalculator),wsAnonbinding, String.Empty);  
 EndpointAddress epa = new EndpointAddress(dnsrelativeAddress,EndpointIdentity.CreateDnsIdentity("identity.com"));  
 ep.Address = epa;  
-  
 ```  
   
  The identity can also be specified in configuration in the App.config file. The following example shows how to set the UPN (User Principal Name) identity for a service endpoint.  
@@ -59,13 +58,11 @@ ep.Address = epa;
       <userPrincipalName value="host\myservice.com" />  
   </identity >  
 </endpoint>  
-  
 ```  
   
  A custom identity can be set on the client by deriving from the <xref:System.ServiceModel.EndpointIdentity> and the <xref:System.ServiceModel.Security.IdentityVerifier> classes. Conceptually the <xref:System.ServiceModel.Security.IdentityVerifier> class can be considered to be the client equivalent of the service's `AuthorizationManager` class. The following code example shows an implementation of `OrgEndpointIdentity`, which stores an organization name to match in the subject name of the server's certificate. The authorization check for the organization name occurs in the `CheckAccess` method on the `CustomIdentityVerifier` class.  
   
 ```  
-  
 // This custom EndpointIdentity stores an organization name   
 public class OrgEndpointIdentity : EndpointIdentity  
 {  

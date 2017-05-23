@@ -28,7 +28,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <issuedToken   
    cacheIssuedTokens="Boolean"  
    defaultKeyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"  

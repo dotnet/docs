@@ -30,7 +30,6 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
          </behavior>              
        </serviceBehaviors>  
     <behaviors>  
-  
     ```  
   
     > [!NOTE]
@@ -55,7 +54,6 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
          </trackingProfile>   
        </tracking>  
     </system.serviceModel>  
-  
     ```  
   
      [!INCLUDE[crabout](../../../../includes/crabout-md.md)] tracking profiles, see [Tracking Profiles](../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  

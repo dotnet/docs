@@ -24,7 +24,6 @@ This configuration element defines a standard endpoint with a fixed announcement
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <announcementEndpoint>           <standardEndpoint                  discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"                  maxAnnouncementDelay="Timespan"                   name="String" />        </announcementEndpoint>            </standardEndpoints>  
 </system.serviceModel>  
@@ -54,7 +53,6 @@ This configuration element defines a standard endpoint with a fixed announcement
  The following example demonstrates a client listening for announcements messages over http and peernet.  
   
 ```  
-  
 <services>  
   <service name="ServiceAnnouncementListener">  
               <endpoint name="httpAnnouncementEndpoint"  
@@ -78,7 +76,6 @@ This configuration element defines a standard endpoint with a fixed announcement
                        version="WSDiscoveryApril2005" />  
    </announcementEndpoint>  
 </standardEndpoints>  
-  
 ```  
   
 ## See Also  

@@ -50,7 +50,6 @@ Dim custList = _
 For Each cust In custList  
     Console.WriteLine("{0}:{1}:{2}", cust.CustomerID, cust.CompanyName, cust.ContactName)  
 Next  
-  
 ```  
   
  This code produces the following output:  

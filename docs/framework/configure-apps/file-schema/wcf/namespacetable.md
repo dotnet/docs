@@ -30,7 +30,6 @@ Represents a configuration section for defining a set of elements that contain n
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

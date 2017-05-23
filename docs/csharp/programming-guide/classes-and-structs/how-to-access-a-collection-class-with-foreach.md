@@ -53,7 +53,6 @@ The following code example illustrates how to write a non-generic collection cla
  For example, change the following lines in the previous example.  
   
 ```csharp  
-  
 // Change the Tokens class so that it no longer implements IEnumerable.  
 public class Tokens  
 {  
@@ -73,13 +72,11 @@ public class Tokens
         {   }  
     }  
  }  
-  
 ```  
   
  Because `Current` returns a string, the compiler can detect when an incompatible type is used in a `foreach` statement, as shown in the following code.  
   
 ```csharp  
-  
 // Error: Cannot convert type string to int.  
 foreach (int item in f)    
 ```  

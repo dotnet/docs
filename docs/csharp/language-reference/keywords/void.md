@@ -41,7 +41,6 @@ public void SampleMethod()
 {  
     // Body of the method.  
 }  
-  
 ```  
   
  `void` is also used in an unsafe context to declare a pointer to an unknown type. For more information, see [Pointer types](../../../csharp/programming-guide/unsafe-code-pointers/pointer-types.md).  

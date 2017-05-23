@@ -25,7 +25,6 @@ Compares two expressions to determine whether the left expression is not equal t
 ## Syntax  
   
 ```  
-  
 expression != expression  
 or  
 expression <> expression  

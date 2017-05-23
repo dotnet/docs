@@ -24,7 +24,6 @@ You create an instance of a <xref:System.Data.DataSet> by calling the <xref:Syst
   
 ```vb  
 Dim customerOrders As DataSet = New DataSet("CustomerOrders")  
-  
 ```  
   
 ```csharp  

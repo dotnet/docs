@@ -18,9 +18,11 @@ The option type in F# is used when an actual value might not exist for a named v
 
 
 ## Remarks
-The following code illustrates the use of the option type.
+The following code illustrates a function which generates an option type.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1404.fs)]
+
+As you can see, if the input `a` is greater than 0, `Some(a)` is generated.  Otherwise, `None` is generated.
 
 The value `None` is used when an option does not have an actual value. Otherwise, the expression `Some( ... )` gives the option a value. The values `Some` and `None` are useful in pattern matching, as in the following function `exists`, which returns `true` if the option has a value and `false` if it does not.
 

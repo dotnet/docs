@@ -85,7 +85,7 @@ As mentioned earlier, async code is a specification of work to be done in anothe
  let workflow = uploadDataAsync "http://url-to-upload-to.com" "hello, world!"
 
  // Execution will continue after calling this!
- Async.Run(workflow)
+ Async.Start(workflow)
 
  printfn "%s" "uploadDataAsync is running in the background..."
  ```

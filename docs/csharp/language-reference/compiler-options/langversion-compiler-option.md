@@ -73,5 +73,5 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
   
 ## See Also  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [NIB How to: Modify Project Properties and Configuration Settings](http://msdn.microsoft.com/en-us/e7184bc5-2f2b-4b4f-aa9a-3ecfcbc48b67)   
  [C# Language Specification](../../../csharp/language-reference/language-specification.md)
+

@@ -26,7 +26,7 @@ The .NET Framework offers role-based security as well as code access security (C
  The CLR allows code to perform only those operations that the code has permission to perform. Code can request permissions, and those requests are honored based on the security policy set by an administrator.  
   
 > [!NOTE]
->  Code executing in the CLR cannot grant permissions to itself. For example, code can request and be granted fewer permissions than a security policy allows, but it will never be granted more permissions. When granting permissions, start with no permissions at all and then add the narrowest permissions for the particular task being performed. Starting with all permissions and then denying individual ones leads to insecure applications that may contain unintentional security holes from granting more permissions than required. For more information, see [NIB: Configuring Security Policy](http://msdn.microsoft.com/en-us/0f130bcd-1bba-4346-b231-0bcca7dab1a4) and [NIB: Security Policy Management](http://msdn.microsoft.com/en-us/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9).  
+>  Code executing in the CLR cannot grant permissions to itself. For example, code can request and be granted fewer permissions than a security policy allows, but it will never be granted more permissions. When granting permissions, start with no permissions at all and then add the narrowest permissions for the particular task being performed. Starting with all permissions and then denying individual ones leads to insecure applications that may contain unintentional security holes from granting more permissions than required.   
   
  There are three types of code access permissions:  
   
@@ -41,7 +41,7 @@ The .NET Framework offers role-based security as well as code access security (C
 ### Requesting Permissions  
  The purpose of requesting permissions is to inform the runtime which permissions your application requires in order to run, and to ensure that it receives only the permissions that it actually needs. For example, if your application needs to write data to the local disk, it requires <xref:System.Security.Permissions.FileIOPermission>. If that permission hasn't been granted, the application will fail when it attempts to write to the disk. However, if the application requests `FileIOPermission` and that permission has not been granted, the application will generate the exception at the outset and will not load.  
   
- In a scenario where the application only needs to read data from the disk, you can request that it never be granted any write permissions. In the event of a bug or a malicious attack, your code cannot damage the data on which it operates. For more information, see [NIB: Requesting Permissions](http://msdn.microsoft.com/en-us/0447c49d-8cba-45e4-862c-ff0b59bebdc2).  
+ In a scenario where the application only needs to read data from the disk, you can request that it never be granted any write permissions. In the event of a bug or a malicious attack, your code cannot damage the data on which it operates.  
   
 ## Role-Based Security and CAS  
  Implementing both role-based security and code-accessed security (CAS) enhances overall security for your application. Role-based security can be based on a Windows account or a custom identity, making information about the security principal available to the current thread. In addition, applications are often required to provide access to data or resources based on credentials supplied by the user. Typically, such applications check the role of a user and provide access to resources based on those roles.  
@@ -142,7 +142,7 @@ The .NET Framework offers role-based security as well as code access security (C
  To enable the use of <xref:System.Data.SqlClient> permissions for a particular zone, a system administrator must create a custom permission set and set it as the permission set for a particular zone. Default permission sets, such as `LocalIntranet`, cannot be modified. For example, to include <xref:System.Data.SqlClient> permissions for code that has a <xref:System.Security.Policy.Zone> of `LocalIntranet`, a system administrator could copy the permission set for `LocalIntranet`, rename it to "CustomLocalIntranet", add the <xref:System.Data.SqlClient> permissions, import the CustomLocalIntranet permission set using the [Caspol.exe (Code Access Security Policy Tool)](../../../../docs/framework/tools/caspol-exe-code-access-security-policy-tool.md), and set the permission set of `LocalIntranet_Zone` to CustomLocalIntranet.  
   
 ### Sample Permission Set  
- The following is a sample permission set for the .NET Framework Data Provider for SQL Server in a partially trusted scenario. For information on creating custom permission sets, see [NIB:Configuring Permission Sets Using Caspol.exe](http://msdn.microsoft.com/en-us/94e2625e-21ad-4038-af36-6d1f9df40a57).  
+ The following is a sample permission set for the .NET Framework Data Provider for SQL Server in a partially trusted scenario.   
   
 ```  
 <PermissionSet class="System.Security.NamedPermissionSet"  
@@ -163,7 +163,7 @@ AllowBlankPassword="False">
 ```  
   
 ## Verifying ADO.NET Code Access Using Security Permissions  
- For partial-trust scenarios, you can require CAS privileges for particular methods in your code by specifying a <xref:System.Data.SqlClient.SqlClientPermissionAttribute>. If that privilege is not allowed by the restricted security policy in effect, an exception is thrown before your code is run. For more information on security policy, see [NIB: Security Policy Management](http://msdn.microsoft.com/en-us/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9) and [NIB: Security Policy Best Practices](http://msdn.microsoft.com/en-us/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05).  
+ For partial-trust scenarios, you can require CAS privileges for particular methods in your code by specifying a <xref:System.Data.SqlClient.SqlClientPermissionAttribute>. If that privilege is not allowed by the restricted security policy in effect, an exception is thrown before your code is run.  
   
 ### Example  
  The following example demonstrates how to write code that requires a particular connection string. It simulates denying unrestricted permissions to <xref:System.Data.SqlClient>, which a system administrator would implement using a CAS policy in the real world.  

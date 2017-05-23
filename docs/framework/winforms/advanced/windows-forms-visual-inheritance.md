@@ -46,10 +46,10 @@ Occasionally, you may decide that a project calls for a form similar to one that
  [How to: Use the Modifiers and GenerateMember Properties](../../../../docs/framework/winforms/advanced/how-to-use-the-modifiers-and-generatemember-properties.md)  
  Gives directions for using the `GenerateMember` and `Modifiers` properties, which are relevant when the Windows Forms Designer generates a member variable for a component.  
   
-## Related Sections  
- [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c)  
- Describes how to define Visual Basic classes that serve as the basis for other classes.  
-  
+## Related Sections
+ [Inheritance basics (Visual Basic)](../../../visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md)  
+  Describes how to define Visual Basic classes that serve as the basis for other classes.  
+ 
  [class](~/docs/csharp/language-reference/keywords/class.md)  
  Describes the C# approach of classes, in which single inheritance is allowed.  
   

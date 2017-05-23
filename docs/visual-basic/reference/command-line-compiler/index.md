@@ -51,8 +51,5 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
  Presents compiler options in functional groups.  
   
 ## Related Sections  
- [NIB: Managing Project Properties with the Project Designer](http://msdn.microsoft.com/en-us/983f3c18-832f-4666-afec-74b716ff3e0e)  
- Discusses how to use the Project Designer to specify global settings for your project.  
-  
  [Visual Basic](../../../visual-basic/index.md)  
  The starting point for the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Help.

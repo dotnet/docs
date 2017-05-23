@@ -57,10 +57,10 @@ Applications typically consist of many parts that must all be protected from vul
   
 |Resource|Description|  
 |--------------|-----------------|  
-|[NIB: ASP.NET Security](http://msdn.microsoft.com/en-us/04b37532-18d9-40b4-8e5f-ee09a70b311d)|Discusses how to secure ASP.NET applications.|  
+
 |[Securing XML Web Services Created Using ASP.NET](http://msdn.microsoft.com/en-us/354b2ab1-2782-4542-b32a-dc560178b90c)|Discusses how to implement security for an ASP.NET Web Service.|  
 |[Script Exploits Overview](http://msdn.microsoft.com/library/772c7312-211a-4eb3-8d6e-eec0aa1dcc07)|Discusses how to guard against a script exploit attack, which attempts to insert malicious characters into a Web page.|  
-|[NIB:Basic Security Practices for ASP.NET Web Applications](http://msdn.microsoft.com/en-us/94a52ab8-731d-417e-b997-721baf43df38)|General security information and links to further discussion,|  
+
   
 ## Remoting  
  .NET remoting enables you to build widely distributed applications easily, whether the application components are all on one computer or spread out across the entire world. You can build client applications that use objects in other processes on the same computer or on any other computer that is reachable over its network. You can also use .NET remoting to communicate with other application domains in the same process.  

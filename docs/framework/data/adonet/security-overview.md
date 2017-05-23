@@ -100,15 +100,9 @@ Securing an application is an ongoing process. There will never be a point where
 ## Security Policy and Administration  
  Improperly administering code access security (CAS) policy can potentially create security weaknesses. Once an application is deployed, techniques for monitoring security should be used and risks evaluated as new threats emerge.  
   
- For more information, see the following resources.  
-  
-|Resource|Description|  
-|--------------|-----------------|  
-|[NIB: Security Policy Management](http://msdn.microsoft.com/en-us/d754e05d-29dc-4d3a-a2c2-95eaaf1b82b9)|Provides information on creating and administering security policy.|  
-|[NIB: Security Policy Best Practices](http://msdn.microsoft.com/en-us/d49bc4d5-efb7-4caa-a2fe-e4d3cec63c05)|Provides links describing how to administer security policy.|  
+
   
 ## See Also  
  [Securing ADO.NET Applications](../../../../docs/framework/data/adonet/securing-ado-net-applications.md)   
- [PAVE Security in Native and .NET Framework Code](http://msdn.microsoft.com/en-us/bd61be84-c143-409a-a75a-44253724f784)   
  [SQL Server Security](../../../../docs/framework/data/adonet/sql/sql-server-security.md)   
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

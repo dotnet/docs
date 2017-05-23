@@ -108,7 +108,7 @@ This topic introduces the concept of markup extensions for XAML, including their
   
 <a name="EscapeSequences"></a>   
 ## Escape Sequences and Markup Extensions  
- Attribute handling in a XAML processor uses the curly braces as indicators of a markup extension sequence. It is also possible to produce a literal curly brace character attribute value if necessary, by entering an escape sequence using an empty curly brace pair followed by the literal curly brace. See {} Escape Sequence - Markup Extension.  
+ Attribute handling in a XAML processor uses the curly braces as indicators of a markup extension sequence. It is also possible to produce a literal curly brace character attribute value if necessary, by entering an escape sequence using an empty curly brace pair followed by the literal curly brace. See [{} Escape Sequence - Markup Extension](../../xaml-services/escape-sequence-markup-extension.md).  
   
 <a name="Nesting"></a>   
 ## Nesting Markup Extensions in XAML Usage  

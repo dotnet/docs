@@ -42,7 +42,7 @@ XAML uses character entities defined in XML for special characters. This topic d
   
  The main exception is that braces ({ and }) have significance in XAML because these characters inform a XAML processor that a character sequence enclosed by braces must be interpreted as a markup extension. For more information about markup extensions, see [Markup Extensions for XAML Overview](../../../docs/framework/xaml-services/markup-extensions-for-xaml-overview.md).  
   
- However, you can still display the braces as literal characters by using an escape sequence that is particular to XAML instead of XML. For more information, see {} Escape Sequence - Markup Extension.  
+ However, you can still display the braces as literal characters by using an escape sequence that is particular to XAML instead of XML. For more information, see [{} Escape Sequence - Markup Extension](escape-sequence-markup-extension.md).  
   
  Note that a backslash (\\) does not require an escape sequence when it is handled as a string.  
   

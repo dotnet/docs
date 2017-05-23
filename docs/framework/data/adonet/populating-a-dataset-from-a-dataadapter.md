@@ -93,7 +93,6 @@ For Each pRow In customerOrders.Tables("Customers").Rows
     Console.WriteLine(vbTab & cRow("OrderID").ToString())  
   Next  
 Next  
-  
 ```  
   
 ```csharp  

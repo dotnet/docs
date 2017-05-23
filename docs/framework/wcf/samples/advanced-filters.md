@@ -47,21 +47,18 @@ XPathMessageContext namespaceManager = new XPathMessageContext();
 namespaceManager.AddNamespace("custom", "http://my.custom.namespace/");  
   
 XPathMessageFilter xpathFilter = new XPathMessageFilter("/s12:Envelope/s12:Header/custom:RoundingCalculator = 1", namespaceManager);  
-  
 ```  
   
  The second filter is an <xref:System.ServiceModel.Dispatcher.EndpointNameMessageFilter>, which matches any message that was received on the `calculatorEndpoint`. The endpoint name is defined when a service endpoint object is created.  
   
 ```  
 EndpointNameMessageFilter endpointNameFilter = new EndpointNameMessageFilter("calculatorEndpoint");  
-  
 ```  
   
  The third filter is a <xref:System.ServiceModel.Dispatcher.PrefixEndpointAddressMessageFilter>. This matches any message that showed up on an endpoint with an address that matches the address prefix (or the front portion) provided. In this example the address prefix is defined as "http://localhost/routingservice/router/rounding/". This means that any incoming messages that are addressed to "http://localhost/routingservice/router/rounding/*" are matched by this filter. In this case, it is messages that show up on the Rounding Calculator endpoint, which has the address of "http://localhost/routingservice/router/rounding/calculator".  
   
 ```  
 PrefixEndpointAddressMessageFilter prefixAddressFilter = new PrefixEndpointAddressMessageFilter(new EndpointAddress("http://localhost/routingservice/router/rounding/"));  
-  
 ```  
   
  The last two message filters are custom <xref:System.ServiceModel.Dispatcher.MessageFilter>s. In this example, a "RoundRobin" message filter is used. This message filter is created in the provided RoutingService\RoundRobinMessageFilter.cs file. These filters, when set to the same group, alternate between reporting that they match the message and that they do not, such that only one of them responds `true` at a time.  
@@ -70,7 +67,6 @@ PrefixEndpointAddressMessageFilter prefixAddressFilter = new PrefixEndpointAddre
 RoundRobinMessageFilter roundRobinFilter1 = new RoundRobinMessageFilter("group1");  
   
 RoundRobinMessageFilter roundRobinFilter2 = new RoundRobinMessageFilter("group1");  
-  
 ```  
   
  Next, all of those messages are added to a <xref:System.ServiceModel.Dispatcher.MessageFilterTable%601>. In doing so, priorities are specified to influence the order in which the message filter table executes the filters. The higher the priority, the sooner the filter is executed; the lower the priority, the later a filter is executed. Thus a filter at priority 2 runs before a filter at priority 1. The default priority level if none is specified is 0. A message filter table executes all of the filters at a given priority level before moving to the next lowest priority level. If a match is found at a particular priority, then the message filter table does not continue trying to find matches at the next lower priority.  
@@ -119,7 +115,6 @@ RoundRobinMessageFilter roundRobinFilter2 = new RoundRobinMessageFilter("group1"
         Subtract(145,76.54) = 68.5  
         Multiply(9,81.25) = 731.3  
         Divide(22,7) = 3.1  
-  
         ```  
   
     2.  The following is the output returned if you chose the Rounding Calculator endpoint without a custom header.  
@@ -129,7 +124,6 @@ RoundRobinMessageFilter roundRobinFilter2 = new RoundRobinMessageFilter("group1"
         Subtract(145,76.54) = 68.5  
         Multiply(9,81.25) = 731.3  
         Divide(22,7) = 3.1  
-  
         ```  
   
     3.  The following is the output returned if you chose the Regular Calculator endpoint without a custom header.  
@@ -139,7 +133,6 @@ RoundRobinMessageFilter roundRobinFilter2 = new RoundRobinMessageFilter("group1"
         Subtract(145,76.54) = 68. 46  
         Multiply(9,81.25) = 731.25  
         Divide(22,7) = 3.14285714285714  
-  
         ```  
   
     4.  The following is the output returned if you chose the Default Router endpoint without a custom header.  
@@ -149,7 +142,6 @@ RoundRobinMessageFilter roundRobinFilter2 = new RoundRobinMessageFilter("group1"
         Subtract(145,76.54) = 68.46  
         Multiply(9,81.25) = 731.3  
         Divide(22,7) = 3.14285714285714  
-  
         ```  
   
 8.  The Calculator Service and the Rounding Calculator Service also prints out a log of the operations invoked to their respective console windows.  

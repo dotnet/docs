@@ -62,7 +62,7 @@ manager: "wpickett"
  These intrinsic [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] shapes are not just shapes: they are programmable elements that implement many of the features that you expect from most common controls, which include keyboard and mouse input. The following example shows how to handle the <xref:System.Windows.UIElement.MouseUp> event raised by clicking an <xref:System.Windows.Shapes.Ellipse> element.  
   
 ```xaml  
-\<Window  
+<Window  
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
   x:Class="Window1" >  
@@ -87,7 +87,6 @@ Partial Public Class Window1
         MessageBox.Show("You clicked the ellipse!")  
     End Sub  
 End Class  
-  
 ```  
   
  The following illustration shows the output for the preceding [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup and code-behind.  

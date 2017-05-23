@@ -65,7 +65,6 @@ Class Customer
       Me.File = file  
    End Sub  
 End Class  
-  
 ```  
   
  You can assign to the property with initialization expressions as shown in the example, or you can assign to the properties in the containing type’s constructor.  You can assign to the backing fields of readonly properties at any time.  

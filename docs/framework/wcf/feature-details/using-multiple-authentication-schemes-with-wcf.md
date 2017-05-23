@@ -51,7 +51,6 @@ else
      sab.AuthenticationSchemes = AuthenticationSchemes.Basic | AuthenticationSchemes.Negotiate | AuthenticationSchemes.Digest;  
 }  
 // ...  
-  
 ```  
   
  When configuring this in a config file, use the \<serviceAuthenticationManager> element as shown in the following XML snippet.  
@@ -88,7 +87,6 @@ else
      sab.AuthenticationSchemes = AuthenticationSchemes.Basic | AuthenticationSchemes.Negotiate | AuthenticationSchemes.Digest;  
 }  
 // ...  
-  
 ```  
   
  In config, it looks like this:  
@@ -125,7 +123,6 @@ else
       <textMessageEncoding/>  
       <httpTransport authenticationScheme="Negotiate, Ntlm, Digest, Basic" />  
     </binding>  
-  
 ```  
   
 ## See Also  

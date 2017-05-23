@@ -27,16 +27,16 @@ Registers the service token resolver that is used by handlers in the token handl
 ## Syntax  
   
 ```  
-\<system.identityModel>  
+<system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
       <securityTokenHandlerConfiguration>  
-        \<serviceTokenResolver type=xs:string>  
+        <serviceTokenResolver type=xs:string>  
         </serviceTokenResolver>  
       </securityTokenHandlerConfiguration>  
     </securityTokenHandlers>  
   </identityConfiguration>  
-\</system.identityModel>  
+</system.identityModel>  
 ```  
   
 ## Attributes and Elements  

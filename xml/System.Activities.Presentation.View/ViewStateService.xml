@@ -18,11 +18,6 @@
 ## Remarks  
  This is useful so that the state can keep being retrieved when control of the application goes and comes with postbacks. <xref:System.Activities.Presentation.View.ViewStateService> is an abstract class. Derived classes must store view states when <xref:System.Activities.Presentation.View.ViewStateService.StoreViewState%2A> is called, and retrieve them when <xref:System.Activities.Presentation.View.ViewStateService.RetrieveViewState%2A> is called.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_ViewStateService#0](WFD_ViewStateService#0)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>

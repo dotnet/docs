@@ -33,13 +33,11 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetInstrumentedILMap(  
    [in] ULONG32 cMap,  
    [out] ULONG32 *pcMap,  
    [out, size_is(cMap), length_is(*pcMap)] COR_IL_MAP map[]  
 );  
-  
 ```  
   
 #### Parameters  

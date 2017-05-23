@@ -43,7 +43,6 @@ public class Task : …
     public static YieldAwaitable Yield();  
     …  
 }  
-  
 ```  
   
  This is equivalent to asynchronously posting or scheduling back to the current context.  
@@ -57,14 +56,12 @@ Task.Run(async  delegate
         ...  
     }  
 });  
-  
 ```  
   
  You can also use the <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?displayProperty=fullName> method for better control over suspension and resumption in an asynchronous method.  As mentioned previously, by default, the current context is captured at the time an asynchronous  method is suspended, and that captured context is used to invoke the asynchronous  method’s continuation upon resumption.  In many cases, this is the exact behavior you want.  In other cases, you may not care about the continuation context, and you can achieve better performance by avoiding such posts back to the original context.  To enable this, use the <xref:System.Threading.Tasks.Task.ConfigureAwait%2A?displayProperty=fullName> method to inform the await operation not to capture and resume on the context, but to continue execution wherever the asynchronous operation that was being awaited completed:  
   
 ```csharp  
 await someTask.ConfigureAwait(continueOnCapturedContext:false);  
-  
 ```  
   
 ## Canceling an Asynchronous Operation  
@@ -77,7 +74,6 @@ var cts = new CancellationTokenSource();
 string result = await DownloadStringAsync(url, cts.Token);  
 … // at some point later, potentially on another thread  
 cts.Cancel();  
-  
 ```  
   
  To cancel multiple asynchronous invocations, you can pass the same token to all invocations:  
@@ -88,7 +84,6 @@ var cts = new CancellationTokenSource();
     // at some point later, potentially on another thread  
     …  
     cts.Cancel();  
-  
 ```  
   
  Or, you can pass the same token to a selective subset of operations:  
@@ -99,7 +94,6 @@ var cts = new CancellationTokenSource();
     await SaveToDiskAsync(outputPath, data, CancellationToken.None);  
     … // at some point later, potentially on another thread  
     cts.Cancel();  
-  
 ```  
   
  Cancellation requests may be initiated from any thread.  
@@ -130,7 +124,6 @@ private async  void btnDownload_Click(object sender, RoutedEventArgs e)
     }  
     finally { btnDownload.IsEnabled = true; }  
 }  
-  
 ```  
   
 <a name="combinators"></a>   
@@ -149,7 +142,6 @@ public async  void button1_Click(object sender, EventArgs e)
         return answer;  
     });  
 }  
-  
 ```  
   
  Some of these <xref:System.Threading.Tasks.Task.Run%2A> methods, such as the <xref:System.Threading.Tasks.Task.Run%28System.Func%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=fullName> overload, exist as shorthand for the <xref:System.Threading.Tasks.TaskFactory.StartNew%2A?displayProperty=fullName> method.  Other overloads, such as <xref:System.Threading.Tasks.Task.Run%28System.Func%7BSystem.Threading.Tasks.Task%7D%29?displayProperty=fullName>, enable you to use await within the offloaded work, for example:  
@@ -184,7 +176,6 @@ private async  Task<int> GetValueAsyncInternal(string key)
 {  
     …  
 }  
-  
 ```  
   
 ### Task.WhenAll  
@@ -195,7 +186,6 @@ private async  Task<int> GetValueAsyncInternal(string key)
 ```csharp  
 IEnumerable<Task> asyncOps = from addr in addrs select SendMailAsync(addr);  
 await Task.WhenAll(asyncOps);  
-  
 ```  
   
  This code doesn't explicitly handle exceptions that may occur, but lets exceptions propagate out of the `await` on the resulting task from <xref:System.Threading.Tasks.Task.WhenAll%2A>.  To handle the exceptions, you can use code such as the following:  
@@ -210,7 +200,6 @@ catch(Exception exc)
 {  
     ...  
 }  
-  
 ```  
   
  In this case, if any asynchronous operation fails, all the exceptions will be consolidated in an <xref:System.AggregateException> exception, which is stored in the <xref:System.Threading.Tasks.Task> that is returned from the <xref:System.Threading.Tasks.Task.WhenAll%2A> method.  However, only one of those exceptions is propagated by the `await` keyword.  If you want to examine all the exceptions, you can rewrite the previous code as follows:  
@@ -228,7 +217,6 @@ catch(Exception exc)
         … // work with faulted and faulted.Exception  
     }  
 }  
-  
 ```  
   
  Let's consider an example of downloading multiple files from the web asynchronously.  In this case, all the asynchronous operations have homogeneous result types, and it's easy to access the results:  
@@ -255,7 +243,6 @@ catch(Exception exc)
         … // work with faulted and faulted.Exception  
     }  
 }  
-  
 ```  
   
 ### Task.WhenAny  
@@ -281,7 +268,6 @@ var recommendations = new List<Task<bool>>()
 };  
 Task<bool> recommendation = await Task.WhenAny(recommendations);  
 if (await recommendation) BuyStock(symbol);  
-  
 ```  
   
  Unlike <xref:System.Threading.Tasks.Task.WhenAll%2A>, which returns the unwrapped results of all tasks that completed successfully, <xref:System.Threading.Tasks.Task.WhenAny%2A> returns the task that completed. If a task fails, it’s important to know that it failed, and if a task succeeds, it’s important to know which task the return value is associated with.  Therefore, you need to access the result of the returned task, or further await it, as  this example shows.  
@@ -303,7 +289,6 @@ while(recommendations.Count > 0)
         recommendations.Remove(recommendation);  
     }  
 }  
-  
 ```  
   
  Additionally, even if a first task completes successfully, subsequent tasks may fail.  At this point, you have several options for dealing with exceptions:  You can wait until all the launched tasks have completed, in which case you can use the <xref:System.Threading.Tasks.Task.WhenAll%2A> method, or you can decide that all exceptions are important and must be logged.  For this, you can use continuations to receive a notification when tasks have completed asynchronously:  
@@ -314,7 +299,6 @@ foreach(Task recommendation in recommendations)
     var ignored = recommendation.ContinueWith(  
         t => { if (t.IsFaulted) Log(t.Exception); });  
 }  
-  
 ```  
   
  or:  
@@ -325,7 +309,6 @@ foreach(Task recommendation in recommendations)
     var ignored = recommendation.ContinueWith(  
         t => Log(t.Exception), TaskContinuationOptions.OnlyOnFaulted);  
 }  
-  
 ```  
   
  or even:  
@@ -341,7 +324,6 @@ private static async  void LogCompletionIfFailed(IEnumerable<Task> tasks)
 }  
 …  
 LogCompletionIfFailed(recommendations);  
-  
 ```  
   
  Finally, you may want to cancel all the remaining operations:  
@@ -358,7 +340,6 @@ var recommendations = new List<Task<bool>>()
 Task<bool> recommendation = await Task.WhenAny(recommendations);  
 cts.Cancel();  
 if (await recommendation) BuyStock(symbol);  
-  
 ```  
   
 #### Interleaving  
@@ -379,7 +360,6 @@ while(imageTasks.Count > 0)
     }  
     catch{}  
 }  
-  
 ```  
   
  You can also apply interleaving to a scenario that involves computationally intensive processing on the <xref:System.Threading.ThreadPool> of the downloaded images; for example:  
@@ -400,7 +380,6 @@ while(imageTasks.Count > 0)
     }  
     catch{}  
 }  
-  
 ```  
   
 #### Throttling  
@@ -435,7 +414,6 @@ while(imageTasks.Count > 0)
         nextIndex++;  
     }  
 }  
-  
 ```  
   
 #### Early Bailout  
@@ -475,7 +453,6 @@ private static async  Task UntilCompletionOrCancellation(
         await Task.WhenAny(asyncOp, tcs.Task);  
     return asyncOp;  
 }  
-  
 ```  
   
  This implementation re-enables the user interface as soon as you decide to bail out, but doesn't cancel the underlying asynchronous operations.  Another alternative would be to cancel the pending operations when you decide to bail out, but not reestablish the user interface until the operations actually complete, potentially due to ending early due to the cancellation request:  
@@ -498,7 +475,6 @@ public async  void btnRun_Click(object sender, EventArgs e)
     catch(OperationCanceledException) {}  
     finally { btnRun.Enabled = true; }  
 }  
-  
 ```  
   
  Another example of early bailout involves using the <xref:System.Threading.Tasks.Task.WhenAny%2A> method in conjunction with the <xref:System.Threading.Tasks.Task.Delay%2A> method, as discussed in the next section.  
@@ -533,7 +509,6 @@ public async  void btnDownload_Click(object sender, EventArgs e)
     }  
     finally { btnDownload.Enabled = true; }  
 }  
-  
 ```  
   
  The same applies to multiple downloads, because <xref:System.Threading.Tasks.Task.WhenAll%2A> returns a task:  
@@ -559,7 +534,6 @@ public async  void btnDownload_Click(object sender, RoutedEventArgs e)
     }  
     finally { btnDownload.Enabled = true; }  
 }  
-  
 ```  
   
 ## Building Task-based Combinators  
@@ -579,7 +553,6 @@ public static T RetryOnFault<T>(
     }  
     return default(T);  
 }  
-  
 ```  
   
  You can build an almost identical helper method for asynchronous operations that are implemented with TAP and thus return tasks:  
@@ -603,7 +576,6 @@ public static async  Task<T> RetryOnFault<T>(
 // Download the URL, trying up to three times in case of failure  
 string pageContents = await RetryOnFault(  
     () => DownloadStringAsync(url), 3);  
-  
 ```  
   
  You could extend the `RetryOnFault` function further. For example, the function could accept another `Func<Task>` that will be invoked between retries to determine when to try the operation again; for example:  
@@ -629,7 +601,6 @@ public static async  Task<T> RetryOnFault<T>(
 // and delaying for a second between retries  
 string pageContents = await RetryOnFault(  
     () => DownloadStringAsync(url), 3, () => Task.Delay(1000));  
-  
 ```  
   
 ### NeedOnlyOne  
@@ -690,7 +661,6 @@ static IEnumerable<Task<T>> Interleaved<T>(IEnumerable<Task<T>> tasks)
     return from source in sources   
            select source.Task;  
 }  
-  
 ```  
   
  You can then use the combinator to process the results of tasks as they complete; for example:  
@@ -725,7 +695,6 @@ public static Task<T[]> WhenAllOrFirstException<T>(IEnumerable<Task<T>> tasks)
     foreach (var t in inputs) t.ContinueWith(onCompleted);  
     return tcs.Task;  
 }  
-  
 ```  
   
 ## Building Task-based Data Structures  
@@ -757,7 +726,6 @@ public class AsyncCache<TKey, TValue>
         }  
     }  
 }  
-  
 ```  
   
  The [AsyncCache\<TKey,TValue>](http://go.microsoft.com/fwlink/p/?LinkId=251941) class accepts as a delegate to its constructor a function that takes a `TKey` and returns a <xref:System.Threading.Tasks.Task%601>.  Any previously accessed values from the cache are stored in the internal dictionary, and the `AsyncCache` ensures that only one task is generated per key, even if the cache is accessed concurrently.  
@@ -767,7 +735,6 @@ public class AsyncCache<TKey, TValue>
 ```csharp  
 private AsyncCache<string,string> m_webPages =   
     new AsyncCache<string,string>(DownloadStringAsync);  
-  
 ```  
   
  You can then use this cache in asynchronous methods whenever you need the contents of a web page. The `AsyncCache` class ensures that you’re downloading as few pages as possible, and caches the results.  
@@ -782,7 +749,6 @@ private async  void btnDownload_Click(object sender, RoutedEventArgs e)
     }  
     finally { btnDownload.IsEnabled = true; }  
 }  
-  
 ```  
   
 ### AsyncProducerConsumerCollection  
@@ -825,7 +791,6 @@ public class AsyncProducerConsumerCollection<T>
         }  
     }  
 }  
-  
 ```  
   
  With that data structure in place, you can write code such as the following:  
@@ -866,7 +831,6 @@ private static void Produce(int data)
 {  
     m_data.Post(data);  
 }  
-  
 ```  
   
 > [!NOTE]

@@ -43,7 +43,6 @@ Performs an arithmetic left shift on a bit pattern.
 ## Syntax  
   
 ```  
-  
 result = pattern << amount  
 ```  
   

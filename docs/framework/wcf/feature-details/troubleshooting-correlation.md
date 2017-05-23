@@ -71,7 +71,6 @@ class CustomFactory : WorkflowServiceHostFactory
     </AddItem>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
  Inspecting messages dispatched to the <xref:System.ServiceModel.ServiceHostBase.UnknownMessageReceived> handler may provide clues about why the message did not correlate to an instance of the workflow service.  
@@ -209,7 +208,6 @@ public class AddItemMessage
     [MessageBodyMember]  
     public string Item;  
 }  
-  
 ```  
   
  This message contract is used by a <xref:System.ServiceModel.Activities.Receive> activity in a workflow. The `CartId` in the header of the message is used to correlate the message to the correct instance. If the XPath query that retrieves the `CartId` is created using the correlation dialogs in the workflow designer, the following incorrect XPath query is generated.  
@@ -256,7 +254,6 @@ sm:header()/tempuri:CartId
     <p1:OutArgument x:TypeArguments="m:AddItemMessage">[AddItemMessage]</p1:OutArgument>  
   </ReceiveMessageContent>  
 </Receive>  
-  
 ```  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] content-based correlation, see [Content Based](../../../../docs/framework/wcf/feature-details/content-based-correlation.md) and the [Correlated Calculator](../../../../docs/framework/windows-workflow-foundation/samples/correlated-calculator.md) sample.

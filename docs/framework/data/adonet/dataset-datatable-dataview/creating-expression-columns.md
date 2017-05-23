@@ -32,7 +32,6 @@ You can define an expression for a column, enabling it to contain a value calcul
 workTable.Columns.Add("Total",Type.GetType("System.Double"))  
 workTable.Columns.Add("SalesTax", Type.GetType("System.Double"), _  
   "Total * 0.086")  
-  
 ```  
   
 ```csharp  

@@ -40,7 +40,6 @@ public async Task<int> ExampleMethodAsync()
 {  
     // . . . .  
 }  
-  
 ```  
   
  If you're new to asynchronous programming or do not understand how an async method uses the `await` keyword to do potentially long-running work without blocking the caller’s thread, you should read the introduction in [Asynchronous Programming with async and await](../../../csharp/programming-guide/concepts/async/index.md).  
@@ -109,7 +108,6 @@ public async Task<int> ExampleMethodAsync()
 // Output:  
 // Preparing to finish ExampleMethodAsync.  
 // Length: 53292  
-  
 ```  
   
 > [!IMPORTANT]

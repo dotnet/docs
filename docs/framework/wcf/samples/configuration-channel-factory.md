@@ -35,7 +35,6 @@ Configuration newConfiguration = ConfigurationManager.OpenMappedExeConfiguration
   
 ConfigurationChannelFactory<ICalculatorChannel> factory1 = new ConfigurationChannelFactory<ICalculatorChannel>("endpoint1", newConfiguration, new EndpointAddress("http://localhost:8000/servicemodelsamples/service"));  
 ICalculatorChannel client1 = factory1.CreateChannel();  
-  
 ```  
   
 #### To set up, build, and run the sample  

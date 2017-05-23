@@ -67,9 +67,7 @@ The Native Image Generator (Ngen.exe) is a tool that improves the performance of
 ## Syntax  
   
 ```  
-  
 ngen action [options]  
-  
 ```  
   
 ```  

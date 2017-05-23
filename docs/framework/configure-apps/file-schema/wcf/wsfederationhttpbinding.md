@@ -27,7 +27,6 @@ wsFederationBinding element
 ## Syntax  
   
 ```  
-  
 <wsFederationHttpBinding>  
     <binding   
         bypassProxyOnLocal="Boolean"  

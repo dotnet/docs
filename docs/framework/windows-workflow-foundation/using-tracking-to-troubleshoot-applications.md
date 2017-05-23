@@ -35,7 +35,6 @@ manager: "erikre"
 <faultPropagationQueries>  
               <faultPropagationQuery faultSourceActivityName ="*" faultHandlerActivityName="*"/>  
  </faultPropagationQueries>  
-  
 ```  
   
  If a fault is not handled within the workflow it results in an unhandled exception at the workflow instance and the workflow instance is aborted. To understand the details of the unhandled exception, the tracking profile must query the workflow instance record with `state name="UnhandledException"` as specified in the following example.  

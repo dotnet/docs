@@ -60,7 +60,6 @@ End Property
 [ <attributelist> ] [ Default ] [ accessmodifier ]   
 [ propertymodifiers ] [ Shared ] [ Shadows ] [ ReadOnly | WriteOnly ]   
 Property name ( [ parameterlist ] ) [ As returntype ] [ Implements implementslist ]  
-  
 ```  
   
 ## Parts  

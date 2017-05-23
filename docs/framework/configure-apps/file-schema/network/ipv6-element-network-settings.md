@@ -37,7 +37,6 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 ## Syntax  
   
 ```  
-  
       <ipv6  
   enabled="true|false"  
 /ipv6>  

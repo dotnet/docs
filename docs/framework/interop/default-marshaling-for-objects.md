@@ -63,16 +63,15 @@ Interface MarshalObject
    Sub SetVariantRef(ByRef o As Object)  
    Function GetVariant() As Object  
   
-   Sub SetIDispatch( \<MarshalAs(UnmanagedType.IDispatch)> o As Object)  
-   Sub SetIDispatchRef(ByRef \<MarshalAs(UnmanagedType.IDispatch)> o _  
+   Sub SetIDispatch( <MarshalAs(UnmanagedType.IDispatch)> o As Object)  
+   Sub SetIDispatchRef(ByRef <MarshalAs(UnmanagedType.IDispatch)> o _  
       As Object)  
-   Function GetIDispatch() As \<MarshalAs(UnmanagedType.IDispatch)> Object  
-   Sub SetIUnknown( \<MarshalAs(UnmanagedType.IUnknown)> o As Object)  
-   Sub SetIUnknownRef(ByRef \<MarshalAs(UnmanagedType.IUnknown)> o _  
+   Function GetIDispatch() As <MarshalAs(UnmanagedType.IDispatch)> Object  
+   Sub SetIUnknown( <MarshalAs(UnmanagedType.IUnknown)> o As Object)  
+   Sub SetIUnknownRef(ByRef <MarshalAs(UnmanagedType.IUnknown)> o _  
       As Object)  
-   Function GetIUnknown() As \<MarshalAs(UnmanagedType.IUnknown)> Object  
+   Function GetIUnknown() As <MarshalAs(UnmanagedType.IUnknown)> Object  
 End Interface  
-  
 ```  
   
 ```csharp  
@@ -114,9 +113,8 @@ interface MarshalObject {
 ```vb  
 Public Structure ObjectHolder  
    Dim o1 As Object  
-   \<MarshalAs(UnmanagedType.IDispatch)> Public o2 As Object  
+   <MarshalAs(UnmanagedType.IDispatch)> Public o2 As Object  
 End Structure  
-  
 ```  
   
 ```csharp  
@@ -189,7 +187,6 @@ mo.SetVariant(CInt(27))        ' Marshal as variant of type VT_I2.
 mo.SetVariant(CLng(27))        ' Marshal as variant of type VT_I4.  
 mo.SetVariant(CSng(27.0))      ' Marshal as variant of type VT_R4.  
 mo.SetVariant(CDbl(27.0))      ' Marshal as variant of type VT_R8.  
-  
 ```  
   
 ```csharp  
@@ -214,7 +211,6 @@ mo.SetVariant(New DispatchWrapper(inew))
 mo.SetVariant(New ErrorWrapper(&H80054002))  
 ' Pass a value as a variant of type VT_CURRENCY interface.  
 mo.SetVariant(New CurrencyWrapper(New Decimal(5.25)))  
-  
 ```  
   
 ```csharp  

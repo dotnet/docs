@@ -35,7 +35,6 @@ Returns information about the specified type library by examining its [TLIBATTR]
 ## Syntax  
   
 ```  
-  
 HRESULT GetTypeLibInfo(  
     [in]   LPWSTR     szFile,  
     [out]  GUID      *pTypeLibID,  
@@ -44,7 +43,6 @@ HRESULT GetTypeLibInfo(
     [out]  USHORT    *pTypeLibMajorVer,  
     [out]  USHORT    *pTypeLibMinorVer  
 );  
-  
 ```  
   
 #### Parameters  

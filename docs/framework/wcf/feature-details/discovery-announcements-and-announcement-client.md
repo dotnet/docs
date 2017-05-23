@@ -84,7 +84,6 @@ using (ServiceHost announcementServiceHost = new ServiceHost(announcementService
     Console.WriteLine("Press <ENTER> to terminate.");  
     Console.ReadLine();  
 }  
-  
 ```  
   
  When a Hello or Bye message is received, you can access the endpoint discovery metadata through <xref:System.ServiceModel.Discovery.AnnouncementEventArgs> as shown in the following example.  

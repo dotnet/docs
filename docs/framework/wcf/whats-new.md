@@ -126,7 +126,6 @@ This topic discusses features new to [!INCLUDE[indigo1](../../../includes/indigo
 <appSettings>  
     <add key="wcf:webservicehost:enableautomaticendpointscompatability" value="true"/>  
   </appSettings>  
-  
 ```  
   
 ## IHttpCookieContainerManager  
@@ -135,7 +134,6 @@ This topic discusses features new to [!INCLUDE[indigo1](../../../includes/indigo
 ```csharp  
 IHttpCookieContainerManager cookieManager = factory.GetProperty<IHttpCookieContainerManager>();   
 System.Net.CookieContainer container = cookieManager.CookieContainer;  
-  
 ```  
   
  You can then retrieve or set the cookies from the <xref:System.Net.CookieContainer>. When AllowCookies is set to false, you can manually retrieve the cookies using <xref:System.ServiceModel.OperationContext> and send it in other requests using another <xref:System.ServiceModel.OperationContext> or message inspector. The IHttpCookieContainerManager interface allows you to authenticate a user with a service and use the authentication cookie returned by that service to authenticate with other services.

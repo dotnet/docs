@@ -45,7 +45,6 @@ if (fr.Endpoints.Count > 0)
 }  
 else  
    Console.WriteLine("No matching endpoints found");  
-  
 ```  
   
  The following example shows how to perform a find operation asynchronously.  
@@ -84,7 +83,6 @@ static void discoveryClient_FindCompleted(object sender, FindCompletedEventArgs 
                 Console.WriteLine("No matching endpoints found");  
   
         }  
-  
 ```  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] making asynchronous find calls, see [Asynchronous Find](../../../../docs/framework/wcf/samples/asynchronous-find-sample.md).  
@@ -96,14 +94,12 @@ DiscoveryClient dc = new DiscoveryClient(new UdpDiscoveryEndpoint());
 ResolveCriteria criteria = new ResolveCriteria(endpointAddress);  
 ResolveResponse response = dc.Resolve(criteria);  
 EndpointAddress newEp = response.EndpointDiscoveryMetadata.Address;  
-  
 ```  
   
 ## DynamicEndpoint  
  <xref:System.ServiceModel.Discovery.DynamicEndpoint> is a standard endpoint ([!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Standard Endpoints](../../../../docs/framework/wcf/feature-details/standard-endpoints.md)) which performs discovery and automatically selects a matching service. Just create a <xref:System.ServiceModel.Discovery.DynamicEndpoint> passing in the contract to search for and the binding to use and pass the <xref:System.ServiceModel.Discovery.DynamicEndpoint> instance to the WCF client. The following example shows how to create and use a <xref:System.ServiceModel.Discovery.DynamicEndpoint> to call the calculator service. The discovery is performed every time the client is opened. Any endpoint defined in configuration can also be turned into a <xref:System.ServiceModel.Discovery.DynamicEndpoint> by adding the `kind ="dynamicEndpoint"` attribute to the endpoint configuration element.  
   
 ```  
-  
 DynamicEndpoint dynamicEndpoint = new DynamicEndpoint(ContractDescription.GetContract(typeof(ICalculatorService)), new WSHttpBinding());  
 CalculatorServiceClient client = new CalculatorServiceClient(dynamicEndpoint);  
   
@@ -115,7 +111,6 @@ double value2 = 15.99D;
   
 double result = client.Add(value1, value2);  
 Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);  
-  
 ```  
   
 ## See Also  

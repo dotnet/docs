@@ -120,14 +120,13 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
  This is shown in the following                  [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] project file.  
   
 ```  
-\<Project ...  
+<Project ...  
                 xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     ...  
     <Page Include="MarkupAndCodeBehindWindow.xaml" />  
     <Compile Include=" MarkupAndCodeBehindWindow.xaml.cs" />  
     ...  
 </Project>  
-  
 ```  
   
  For information about building                  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, see                  [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md).  

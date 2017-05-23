@@ -25,7 +25,6 @@ The identity element allows a client developer to specify at design time the exp
 ## Syntax  
   
 ```  
-  
 <identity>  
     <certificate encodedValue="String"/>  
     <certificateReference findValue="String"   

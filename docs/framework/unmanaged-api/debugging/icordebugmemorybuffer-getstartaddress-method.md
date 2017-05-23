@@ -23,11 +23,9 @@ Gets the starting address of the memory buffer.
 ## Syntax  
   
 ```  
-  
 HRESULT GetStartAddress(  
    [out] LPCVOID *address  
 );  
-  
 ```  
   
 #### Parameters  

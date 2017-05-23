@@ -77,7 +77,6 @@ The ADO.NET <xref:System.Data.DataSet> provides you with a relational representa
     ' Add code here to create the schema of the DataSet to view the data.  
   
     xmlDoc.Load("XMLDocument.xml")  
-  
     ```  
   
     ```csharp  

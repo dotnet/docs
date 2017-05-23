@@ -44,7 +44,6 @@ Dim doc as XmlDocument = new XmlDocument()
         ' Display all book titles in the Node List.  
         Console.WriteLine(elemList.ItemOf(i).InnerXml)  
     next  
-  
 ```  
   
 ```csharp  

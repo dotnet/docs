@@ -84,7 +84,6 @@ The Task-based Asynchronous Pattern (TAP) is based on the <xref:System.Threading
  The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] provides a single <xref:System.IProgress%601> implementation: <xref:System.Progress%601>. The <xref:System.Progress%601> class is declared as follows:  
   
 ```csharp  
-  
 public class Progress<T> : IProgress<T>  
 {  
     public Progress();  
@@ -92,18 +91,15 @@ public class Progress<T> : IProgress<T>
     protected virtual void OnReport(T value);  
     public event EventHandler<T> ProgressChanged;  
 }  
-  
 ```  
   
 ```vb  
-  
 Public Class Progress(Of T) : Inherits IProgress(Of T)  
     Public Sub New()  
     Public Sub New(handler As Action(Of T))  
     Protected Overridable Sub OnReport(value As T)  
     Public Event ProgressChanged As EventHandler(Of T>  
 End Class  
-  
 ```  
   
  An instance of <xref:System.Progress%601> exposes a <xref:System.Progress%601.ProgressChanged> event, which is raised every time the asynchronous operation reports a progress update. The <xref:System.Progress%601.ProgressChanged> event is raised on the <xref:System.Threading.SynchronizationContext> object that was captured when the <xref:System.Progress%601> instance was instantiated. If no synchronization context was available, a default context that targets the thread pool is used. Handlers may be registered with this event. A single handler may also be provided to the <xref:System.Progress%601> constructor for convenience, and behaves just like an event handler for the <xref:System.Progress%601.ProgressChanged> event. Progress updates are raised asynchronously to avoid delaying the asynchronous operation while event handlers are executing. Another <xref:System.IProgress%601> implementation could choose to apply different semantics.  
@@ -112,23 +108,19 @@ End Class
  If a TAP implementation uses both the optional <xref:System.Threading.Tasks.TaskFactory.CancellationToken%2A> and optional <xref:System.IProgress%601> parameters, it could potentially require up to four overloads:  
   
 ```csharp  
-  
 public Task MethodNameAsync(…);  
 public Task MethodNameAsync(…, CancellationToken cancellationToken);  
 public Task MethodNameAsync(…, IProgress<T> progress);   
 public Task MethodNameAsync(…,   
     CancellationToken cancellationToken, IProgress<T> progress);  
-  
 ```  
   
 ```vb  
-  
 Public MethodNameAsync(…) As Task  
 Public MethodNameAsync(…, cancellationToken As CancellationToken cancellationToken) As Task  
 Public MethodNameAsync(…, progress As IProgress(Of T)) As Task   
 Public MethodNameAsync(…, cancellationToken As CancellationToken,   
                        progress As IProgress(Of T)) As Task  
-  
 ```  
   
  However, many TAP implementations provide neither cancellation or progress capabilities, so they require a single method:  
@@ -144,7 +136,6 @@ Public MethodNameAsync(…) As Task
  If a TAP implementation supports either cancellation or progress but not both, it may provide two overloads:  
   
 ```csharp  
-  
 public Task MethodNameAsync(…);  
 public Task MethodNameAsync(…, CancellationToken cancellationToken);  
   
@@ -152,11 +143,9 @@ public Task MethodNameAsync(…, CancellationToken cancellationToken);
   
 public Task MethodNameAsync(…);  
 public Task MethodNameAsync(…, IProgress<T> progress);  
-  
 ```  
   
 ```vb  
-  
 Public MethodNameAsync(…) As Task  
 Public MethodNameAsync(…, cancellationToken As CancellationToken) As Task  
   
@@ -164,25 +153,20 @@ Public MethodNameAsync(…, cancellationToken As CancellationToken) As Task
   
 Public MethodNameAsync(…) As Task  
 Public MethodNameAsync(…, progress As IProgress(Of T)) As Task  
-  
 ```  
   
  If a TAP implementation supports both cancellation and progress, it may expose all four overloads. However, it may provide only the following two:  
   
 ```csharp  
-  
 public Task MethodNameAsync(…);  
 public Task MethodNameAsync(…,   
     CancellationToken cancellationToken, IProgress<T> progress);  
-  
 ```  
   
 ```vb  
-  
 Public MethodNameAsync(…) As Task  
 Public MethodNameAsync(…, cancellationToken As CancellationToken,   
                        progress As IProgress(Of T)) As Task  
-  
 ```  
   
  To compensate for the two missing intermediate combinations, developers may pass <xref:System.Threading.CancellationToken.None%2A> or a default <xref:System.Threading.CancellationToken> for the `cancellationToken` parameter and `null` for the `progress` parameter.  

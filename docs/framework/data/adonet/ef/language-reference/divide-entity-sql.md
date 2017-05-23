@@ -25,7 +25,6 @@ Divides one number by another.
 ## Syntax  
   
 ```  
-  
 dividend / divisor  
 ```  
   

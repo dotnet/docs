@@ -55,12 +55,10 @@ You can change the appearance of tabs in Windows Forms by using properties of th
   
     ```vb  
     TabPage1.Enabled = False  
-  
     ```  
   
     ```csharp  
     tabPage1.Enabled = false;  
-  
     ```  
   
     ```cpp  

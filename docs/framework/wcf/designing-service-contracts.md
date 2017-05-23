@@ -92,7 +92,7 @@ string Hello(string greeting);
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-\<OperationContractAttribute()>  
+<OperationContractAttribute()>  
 Function Hello (ByVal greeting As String) As String  
 ```  
   
@@ -108,7 +108,7 @@ void Hello(string greeting);
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-\<OperationContractAttribute()>  
+<OperationContractAttribute()>  
 Sub Hello (ByVal greeting As String)  
 ```  
   
@@ -131,7 +131,7 @@ void Hello(string greeting);
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-\<OperationContractAttribute(IsOneWay := True)>  
+<OperationContractAttribute(IsOneWay := True)>  
 Sub Hello (ByVal greeting As String)  
 ```  
   
@@ -166,9 +166,9 @@ public interface IMyContract
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-\<ServiceContractAttribute()> _  
+<ServiceContractAttribute()> _  
 Public Interface IMyContract  
-  \<OperationContractAttribute()> _  
+  <OperationContractAttribute()> _  
   Public Sub PopulateData(ByRef data As CustomDataType)  
 End Interface  
 ```  
@@ -202,13 +202,13 @@ public interface ISampleService
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-\<ServiceContractAttribute()> _  
+<ServiceContractAttribute()> _  
 Public Interface ISampleService  
   
-  \<OperationContractAttribute()> _  
+  <OperationContractAttribute()> _  
   Public Function GetString()As String  
   
-  \<OperationContractAttribute()> _  
+  <OperationContractAttribute()> _  
   Public Function GetData() As Integer  
   
 End Interface  
@@ -235,17 +235,17 @@ public interface IExplicitProtectionLevelSampleService
  The following is the equivalent Visual Basic code.  
   
 ```vb  
-\<ServiceContract()> _   
+<ServiceContract()> _   
 Public Interface IExplicitProtectionLevelSampleService   
-    \<OperationContract()> _   
+    <OperationContract()> _   
     Public Function GetString() As String   
     End Function   
   
-    \<OperationContract(ProtectionLevel := ProtectionLevel.None)> _   
+    <OperationContract(ProtectionLevel := ProtectionLevel.None)> _   
     Public Function GetInt() As Integer   
     End Function   
   
-    \<OperationContractAttribute(ProtectionLevel := ProtectionLevel.EncryptAndSign)> _   
+    <OperationContractAttribute(ProtectionLevel := ProtectionLevel.EncryptAndSign)> _   
     Public Function GetGuid() As Integer   
     End Function   
   

@@ -80,7 +80,6 @@ Public Class XLinqTest
         End Using  
     End Sub  
 End Class  
-  
 ```  
   
  This example produces the following output:  

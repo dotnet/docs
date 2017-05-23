@@ -61,7 +61,6 @@ One feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the ab
             Console.Writeline("Equation({0})", equation)  
         End Sub  
     End Class  
-  
     ```  
   
 5.  Create an instance of the <xref:System.ServiceModel.InstanceContext> class. The constructor requires an instance of the client class.  

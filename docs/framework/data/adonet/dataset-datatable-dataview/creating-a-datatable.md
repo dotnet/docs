@@ -33,7 +33,6 @@ A <xref:System.Data.DataTable>, which represents one table of in-memory relation
   
 ```vb  
 Dim workTable as DataTable = New DataTable("Customers")  
-  
 ```  
   
 ```csharp  
@@ -46,7 +45,6 @@ DataTable workTable = new DataTable("Customers");
 Dim customers As DataSet = New DataSet  
 Dim customersTable As DataTable = _  
    customers.Tables.Add("CustomersTable")  
-  
 ```  
   
 ```csharp  

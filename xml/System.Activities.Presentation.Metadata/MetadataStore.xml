@@ -23,7 +23,7 @@
 ## Examples  
  The following code example shows how to associate the `AcitivityDesigner1` custom activity designer with a custom activity. [!INCLUDE[crabout](~/includes/crabout-md.md)] how to create custom activity designers, see [How to: Create a Custom Activity Designer](~/docs/framework/windows-workflow-foundation/how-to-create-a-custom-activity-designer.md).  
   
-```  
+```csharp  
 internal class Metadata : IRegisterMetadata  
 {  
     private AttributeTable attributes;  
@@ -43,8 +43,6 @@ internal class Metadata : IRegisterMetadata
     }  
 }  
 ```  
-  
-<!-- TODO: review snippet reference  [!CODE [WFD_MetadataStore#0](WFD_MetadataStore#0)]  -->  
   
  ]]></format>
     </remarks>
@@ -73,11 +71,6 @@ internal class Metadata : IRegisterMetadata
   
 ## Remarks  
  After the table is added, calls to <xref:System.ComponentModel.TypeDescriptor> will use attributes defined in the newly added table. Multiple tables can be added to the attribute store. In the case of conflicts, attributes in the most recently added table are used.  
-  
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_MetadataStore#1](WFD_MetadataStore#1)]  -->  
   
  ]]></format>
         </remarks>

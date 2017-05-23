@@ -25,7 +25,6 @@ Determines whether two collections have common elements.
 ## Syntax  
   
 ```  
-  
 expression OVERLAPS expression  
 ```  
   

@@ -40,7 +40,6 @@ Specifies whether the runtime applies publisher policy.
 ## Syntax  
   
 ```  
-  
 <publisherPolicy apply="yes|no"/>  
 ```  
   

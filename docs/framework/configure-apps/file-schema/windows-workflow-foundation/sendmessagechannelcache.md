@@ -61,7 +61,6 @@ A service behavior that enables the customization of the cache sharing levels, t
  In a hosted workflow service, you can specify the factory cache and channel cache settings in the application configuration file. To do so, add a service behavior that contains the cache settings for the factory and channel cache and add this service behavior to your service. The following example shows the contents of a configuration file that contains the **MyChannelCacheBehavior**  service behavior with the custom factory cache and channel cache settings. This service behavior is added to the service through the **behaviorConfiguarion** attribute.  
   
 ```  
-  
 <configuration>    
   <system.serviceModel>  
     <!-- List of other config sections here -->   
@@ -81,7 +80,6 @@ A service behavior that enables the customization of the cache sharing levels, t
     </services>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## See Also  

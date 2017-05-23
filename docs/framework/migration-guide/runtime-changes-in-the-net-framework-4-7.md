@@ -35,8 +35,6 @@ The Scope column in the following tables specifies the significance of each chan
 
 ## <a name="WPF" /> Windows Presentation Foundation (WPF)
 
-<xref:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView(System.Int32)>
-
 | Feature | Change | Impact | Scope |
 |---|---|---|---|
 | <xref:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView%2A> method | In the .NET Framework 4.6.2, the <xref:System.Windows.Controls.DataGridCellsPanel.BringIndexIntoView%2A> method executes asynchronously when column virtualization is enabled but the column widths have not been determined. If columns are removed before the asynchronous operation completes, an <xref:System.ArgumentOutOfRangeException> can occur.<br/></br>Starting with the .NET Framework 4.7, the exception is no longer thrown in this scenario. | This change increases the reliability of the method. | Edge | 

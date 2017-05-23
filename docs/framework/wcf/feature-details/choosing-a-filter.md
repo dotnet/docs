@@ -30,7 +30,6 @@ When configuring the Routing Service, it is important to select correct message 
   
 ```csharp  
 ActionMessageFilter action1 = new ActionMessageFilter(new string[] { "http://namespace/contract/operation" });  
-  
 ```  
   
  This filter should be used when routing messages that contain a unique Action header.  
@@ -40,12 +39,10 @@ ActionMessageFilter action1 = new ActionMessageFilter(new string[] { "http://nam
   
 ```xml  
 <filter name="address1" filterType="EndpointAddress" filterData="http://host/vdir/s.svc/b" />  
-  
 ```  
   
 ```csharp  
 EndpointAddressMessageFilter address1 = new EndpointAddressMessageFilter(new EndpointAddress("http://host/vdir/s.svc/b"), false);  
-  
 ```  
   
 > [!NOTE]
@@ -60,12 +57,10 @@ EndpointAddressMessageFilter address1 = new EndpointAddressMessageFilter(new End
   
 ```xml  
 <filter name="prefix1" filterType="EndpointAddressPrefix" filterData="http://host/vdir" />  
-  
 ```  
   
 ```csharp  
 PrefixEndpointAddressMessageFilter prefix1 = new PrefixEndpointAddressMessageFilter(new EndpointAddress("http://host/vdir/s.svc/b"), false);  
-  
 ```  
   
 > [!NOTE]
@@ -80,14 +75,12 @@ PrefixEndpointAddressMessageFilter prefix1 = new PrefixEndpointAddressMessageFil
 <filter name="address1" filterType="AddressPrefix" filterData="http://host/vdir"/>  
 <filter name="action1" filterType="Action" filterData="http://namespace/contract/operation/"/>  
 <filter name="and1" filterType="And" filter1="address1" filter2="action1" />  
-  
 ```  
   
 ```csharp  
 EndpointAddressMessageFilter address1 = new EndpointAddressMessageFilter(new EndpointAddress("http://host/vdir/s.svc/b"), false);  
 ActionMessageFilter action1 = new ActionMessageFilter(new string[] { "http://namespace/contract/operation" });  
 StrictAndMessageFilter and1=new StrictAndMessageFilter(address1, action1);  
-  
 ```  
   
  This filter should be used when you must combine the logic from multiple filters to determine when a match should be made. For example, if you have multiple destinations that must receive only certain combinations of actions and messages to particular addresses, you can use an AND filter to combine the necessary Action and Address filters.  
@@ -97,7 +90,6 @@ StrictAndMessageFilter and1=new StrictAndMessageFilter(address1, action1);
   
 ```xml  
 <filter name="custom1" filterType="Custom" customType="CustomAssembly.MyCustomMsgFilter, CustomAssembly" filterData="Custom Data" />  
-  
 ```  
   
 ```csharp  
@@ -111,12 +103,10 @@ MyCustomMsgFilter custom1=new MyCustomMsgFilter("Custom Data");
   
 ```xml  
 <filter name="name1" filterType="Endpoint" filterData="SvcEndpoint" />  
-  
 ```  
   
 ```csharp  
 EndpointNameMessageFilter name1 = new EndpointNameMessageFilter("SvcEndpoint");  
-  
 ```  
   
  This filter is useful when the Routing Service exposes more than one named service endpoint. For example, you might expose two endpoints that the Routing Service uses to receive messages; one is used by priority customers who require real-time processing of their messages, while the other endpoint receives messages that are not time sensitive.  
@@ -128,12 +118,10 @@ EndpointNameMessageFilter name1 = new EndpointNameMessageFilter("SvcEndpoint");
   
 ```xml  
 <filter name="matchAll1" filterType="MatchAll" />  
-  
 ```  
   
 ```csharp  
 MatchAllMessageFilter matchAll1 = new MatchAllMessageFilter();  
-  
 ```  
   
 ### XPath  
@@ -141,12 +129,10 @@ MatchAllMessageFilter matchAll1 = new MatchAllMessageFilter();
   
 ```xml  
 <filter name="xpath1" filterType="XPath" filterData="//ns:element" />  
-  
 ```  
   
 ```csharp  
 XPathMessageFilter xpath1=new XPathMessageFilter("//ns:element");  
-  
 ```  
   
  This filter is useful if you know that the messages you are receiving contain a specific value. For example, if you are hosting two versions of the same service and you know that messages addressed to the newer version of the service contain a unique value in a custom header, you can create a filter that uses XPath to navigate to this header and compares the value present in the header to another given in the filter configuration to determine if the filter matches.  

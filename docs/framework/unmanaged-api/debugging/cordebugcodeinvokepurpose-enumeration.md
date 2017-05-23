@@ -31,7 +31,6 @@ Describes why an exported function calls managed code.
 ## Syntax  
   
 ```  
-  
 typedef enum CorDebugCodeInvokePurpose  
 {  
     CODE_INVOKE_PURPOSE_NONE,  
@@ -39,7 +38,6 @@ typedef enum CorDebugCodeInvokePurpose
     CODE_INVOKE_PURPOSE_CLASS_INIT,  
     CODE_INVOKE_PURPOSE_INTERFACE_DISPATCH,  
 } CorDebugCodeInvokePurpose;  
-  
 ```  
   
 ## Members  

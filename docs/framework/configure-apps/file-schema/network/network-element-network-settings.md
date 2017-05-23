@@ -38,7 +38,6 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 ## Syntax  
   
 ```  
-  
       <network  
   clientDomain="string"   
   defaultCredentials="true|false"  

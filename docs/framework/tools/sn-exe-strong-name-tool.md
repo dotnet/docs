@@ -43,7 +43,6 @@ The Strong Name tool (Sn.exe) helps sign assemblies with [strong names](../../..
 ## Syntax  
   
 ```  
-  
 sn [-quiet][option [parameter(s)]]  
 ```  
   

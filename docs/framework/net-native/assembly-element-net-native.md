@@ -21,7 +21,6 @@ Applies runtime reflection policy to all the types in a specified assembly.
 ## Syntax  
   
 ```xml  
-  
 <Assembly Name="assembly_name"   
           Activate="policy_setting"  
           Browse="policy_setting"  
@@ -33,7 +32,6 @@ Applies runtime reflection policy to all the types in a specified assembly.
           MarshalObject="policy_setting"  
           MarshalDelegate="policy_setting"  
           MarshalStructure="policy_setting" />  
-  
 ```  
   
 ## Attributes and Elements  
@@ -88,13 +86,11 @@ Applies runtime reflection policy to all the types in a specified assembly.
  The following example shows how you can apply runtime policy to all the types in assemblies within your app package by assigning the `Name` attribute a value of "*Application\*". The `<Assembly>` element must be a child of the [\<Application>](../../../docs/framework/net-native/application-element-net-native.md) element.  
   
 ```xml  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">   
   <Application>   
      <Assembly Name="*Application*" Dynamic="Required All" />   
   </Application>   
 </Directives>  
-  
 ```  
   
  The `Activate`, `Browse`, `Dynamic`, and `Serialize` attributes are all optional. However, the `<Assembly>` element must contain at least one of these attributes.  

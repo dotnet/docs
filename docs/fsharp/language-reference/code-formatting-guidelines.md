@@ -92,7 +92,7 @@ For code in an `else` block, an additional special rule applies. The warning in 
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/code-formatting/snippet8.fs)]
 
-Another exception to the rule that contexts end when a line is not indented as far as a previous line is for infix operators, such as `+` and `|&gt;`. Lines that start with infix operators are permitted to begin `(1 + oplength)` columns before the normal position without triggering an end to the context, where `oplength` is the number of characters that make up the operator. This causes the first token after the operator to align with the previous line.
+Another exception to the rule that contexts end when a line is not indented as far as a previous line is for infix operators, such as `+` and `|>`. Lines that start with infix operators are permitted to begin `(1 + oplength)` columns before the normal position without triggering an end to the context, where `oplength` is the number of characters that make up the operator. This causes the first token after the operator to align with the previous line.
 
 For example, in the following code, the `+` symbol is permitted to be indented two columns less than the previous line.
 

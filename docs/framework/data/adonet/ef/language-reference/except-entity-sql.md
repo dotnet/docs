@@ -25,7 +25,6 @@ Returns a collection of any distinct values from the query expression to the lef
 ## Syntax  
   
 ```  
-  
 expression EXCEPT expression  
 ```  
   

@@ -145,7 +145,6 @@ using(TransactionScope scope1 = new TransactionScope())
      {}  
    //Rest of scope1  
 }  
-  
 ```  
   
 ### Voting inside a nested scope  

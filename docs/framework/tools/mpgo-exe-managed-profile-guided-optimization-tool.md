@@ -120,21 +120,18 @@ mpgo –Scenario <packageName> -AppID <appId> -Timeout <seconds>
   
 ```  
 mpgo –scenario "C:\MyApp\MyTax.exe /params par" –AssemblyList Mytax.dll MyTaxUtil2011.dll –OutDir C:\Optimized –TimeOut 15  
-  
 ```  
   
  The following Mpgo.exe command optimizes a sound application:  
   
 ```  
 mpgo –scenario "C:\MyApp\wav2wma.exe –input song1.wav –output song1.wma" –AssemblyList transcode.dll –OutDir C:\Optimized –TimeOut 15  
-  
 ```  
   
  The following Mpgo.exe command uses data from previously optimized assemblies to optimize newer versions of the assemblies:  
   
 ```  
 mpgo.exe -import "C:\Optimized" -assemblylist "C:\MyApp\MyTax.dll" "C:\MyApp\MyTaxUtil2011.dll" -outdir C:\ReOptimized  
-  
 ```  
   
 ## See Also  

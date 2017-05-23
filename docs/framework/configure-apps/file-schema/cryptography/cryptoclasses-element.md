@@ -75,12 +75,12 @@ Contains a list of cryptography classes that have a mapping to a friendly name i
                <cryptoClass   MyCryptoRSA="MyCryptoRSAClass, MyAssembly  
                   Culture=neutral, PublicKeyToken=a5d015c7d5a0b012,  
                   Version=1.0.0.0"/>  
-               \<!-- Other cryptography classes go here. -->  
+               <!-- Other cryptography classes go here. -->  
             </cryptoClasses>  
             <nameEntry name="RSA" class="MyCryptoRSA"/>  
             <nameEntry name="System.Security.Cryptography.AsymmetricAlgorithm"  
                        class="MyCryptoRSA"/>  
-             \<!-- Mappings to other cryptography classes go here. -->  
+             <!-- Mappings to other cryptography classes go here. -->  
          </cryptoNameMapping>  
       </cryptographySettings>  
    </mscorlib>  

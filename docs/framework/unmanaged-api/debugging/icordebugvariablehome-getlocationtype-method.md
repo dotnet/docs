@@ -36,11 +36,9 @@ Gets the type of the variable's native location.
 ## Syntax  
   
 ```  
-  
 HRESULT GetLocationType(  
     [out] VariableLocationType *pLocationType  
 );  
-  
 ```  
   
 #### Parameters  

@@ -32,7 +32,6 @@ public interface IRequestReplyCalculator
     [OperationContract]  
     double Add(double n1, double n2);  
 }  
-  
 ```  
   
  You do not have to set the  <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `false` because this is the default behavior.  

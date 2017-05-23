@@ -22,11 +22,6 @@
 ## Remarks  
  The <xref:System.ServiceModel.Channels.AddressHeaderCollection> can be initialized with an <xref:System.Collections.Generic.IEnumerable%601> set of <xref:System.ServiceModel.Channels.AddressHeader> objects and then searched for a header with a specific qualified name using the <xref:System.ServiceModel.Channels.AddressHeaderCollection.FindHeader%28System.String%2CSystem.String%29> method. To find all of the headers with a specific qualified name, use the <xref:System.ServiceModel.Channels.AddressHeaderCollection.FindAll%28System.String%2CSystem.String%29> method. The <xref:System.ServiceModel.Channels.AddressHeaderCollection.AddHeadersTo%28System.ServiceModel.Channels.Message%29> method is used to add headers to the headers of a specified message.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#0](SL_AddressHeaderCollection#0)]  -->  
-  
  ]]></format>
     </remarks>
   </Docs>
@@ -50,7 +45,6 @@
 ## Examples  
  The following code snippet illustrates how to create an instance of <xref:System.ServiceModel.Channels.AddressHeaderCollection> class with the default constructor.  
   
-<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#1](SL_AddressHeaderCollection#1)]  -->  
   
  ]]></format>
         </remarks>
@@ -78,7 +72,6 @@
 ## Examples  
  The following code snippet illustrates how to create an instance of <xref:System.ServiceModel.Channels.AddressHeaderCollection> class.  
   
-<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#2](SL_AddressHeaderCollection#2)]  -->  
   
  ]]></format>
         </remarks>
@@ -115,7 +108,6 @@
 ## Examples  
  The following code snippet illustrates how to call this method.  
   
-<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#3](SL_AddressHeaderCollection#3)]  -->  
   
  ]]></format>
         </remarks>
@@ -151,7 +143,6 @@
 ## Examples  
  The following code snippet illustrates how to call this method.  
   
-<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#5](SL_AddressHeaderCollection#5)]  -->  
   
  ]]></format>
         </remarks>
@@ -194,7 +185,6 @@
 ## Examples  
  The following code snippet illustrates how to call this method.  
   
-<!-- TODO: review snippet reference  [!CODE [SL_AddressHeaderCollection#4](SL_AddressHeaderCollection#4)]  -->  
   
  ]]></format>
         </remarks>

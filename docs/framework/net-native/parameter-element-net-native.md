@@ -21,7 +21,6 @@ Applies reflection policy to the type of the argument passed to a method.
 ## Syntax  
   
 ```xml  
-  
 <Parameter Name="parameter_name"  
            Activate="policy_type"  
            Browse="policy_type"  
@@ -33,7 +32,6 @@ Applies reflection policy to the type of the argument passed to a method.
            MarshalObject="policy_type"  
            MarshalDelegate="policy_type"  
            MarshalStructure="policy_type" />  
-  
 ```  
   
 ## Attributes and Elements  

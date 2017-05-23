@@ -53,7 +53,6 @@ Rich Text Format (RTF) is a document format developed by Microsoft in the late 1
 ```  
 The Greek word for "psyche" is spelled ψυχή. The Greek letters are encoded in Unicode.  
 These characters are from the extended ASCII character set (Windows code page 1252):  âäӑå  
-  
 ```  
   
  [!code-cs[csProgGuideStrings#33](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-convert-rtf-to-plain-text_1.cs)]  

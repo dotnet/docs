@@ -35,7 +35,6 @@ public class X
 public class SomeClass   
 {  
 }  
-  
 ```  
   
  With <xref:System.Runtime.Serialization.DataContractSerializer.PreserveObjectReferences%2A> set to `false` (the default), the following XML is generated:  

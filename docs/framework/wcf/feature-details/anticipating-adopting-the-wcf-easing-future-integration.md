@@ -30,7 +30,6 @@ If you use ASP.NET today, and anticipate using [!INCLUDE[indigo2](../../../../in
      ConformsTo = WsiProfiles.BasicProfile1_1,  
      EmitConformanceClaims=true)]  
 public interface IEcho  
-  
 ```  
   
  ASP.NET Web services that conform to WS-I Basic Profile 1.1 will be interoperable with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients by using [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] predefined binding, <xref:System.ServiceModel.BasicHttpBinding>.  

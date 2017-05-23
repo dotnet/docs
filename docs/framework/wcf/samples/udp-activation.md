@@ -85,7 +85,6 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Build the project on Windows Vista. After compilation, it also performs the following operations in the post-build phase:  

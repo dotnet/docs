@@ -29,7 +29,6 @@ ModelProperty mp = mi.Properties["Activities"];
 mp.Collection.Add(new Persist());  
 ModelItem justAdded = mp.Collection.Last();  
 justAdded.Properties["DisplayName"].SetValue("new name");  
-  
 ```  
   
 #### To use this sample  

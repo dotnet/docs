@@ -67,7 +67,6 @@ Public Class MyService
         return myOrder  
     End Function  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -140,7 +139,6 @@ Order
     Dim myOrder As Order = New Order()  
     return myOrder  
 End Function  
-  
 ```  
   
 ```csharp  
@@ -182,7 +180,6 @@ Order
     myOrder.OrderID = ID  
     return myOrder  
 End Function  
-  
 ```  
   
 ```csharp  
@@ -224,7 +221,6 @@ Public Class Order
     XmlElement(ElementName:= "LiteralOrderID")> _  
     public OrderID As String  
 End Class  
-  
 ```  
   
 ```csharp  

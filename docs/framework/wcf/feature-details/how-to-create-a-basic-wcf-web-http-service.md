@@ -70,7 +70,6 @@ manager: "erikre"
      This sample demonstrates how to host a Web-Style service with a console application. You can also host such a service within IIS. To do this, specify the <xref:System.ServiceModel.Activation.WebServiceHostFactory> class in a .svc file as the following code demonstrates.  
   
     ```  
-  
           <%ServiceHost   
     language=c#  
     Debug="true"  

@@ -23,11 +23,9 @@ Gets the thread on which the event occurred.
 ## Syntax  
   
 ```  
-  
 HRESULT GetThread(  
         [out]ICorDebugThread **ppThread  
 );  
-  
 ```  
   
 #### Parameters  

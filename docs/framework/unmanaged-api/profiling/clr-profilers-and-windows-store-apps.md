@@ -150,12 +150,10 @@ NET Runtime version 4.0.30319.17929 - Loading profiler failed during CoCreateIns
  The following ode example from a hypothetical Profiler UI written as a desktop app in C# yses the `PackageManager` to generate a list of Windows apps:  
   
 ```csharp  
-  
 string currentUserSID = WindowsIdentity.GetCurrent().User.ToString();  
 IAppxFactory appxFactory = (IAppxFactory) new AppxFactory();  
 PackageManager packageManager = new PackageManager();  
 IEnumerable<Package> packages = packageManager.FindPackagesForUser(currentUserSID);  
-  
 ```  
   
  **Specifying the custom environment block**  
@@ -164,11 +162,9 @@ IEnumerable<Package> packages = packageManager.FindPackagesForUser(currentUserSI
  Consider the following code snippet:  
   
 ```csharp  
-  
 IPackageDebugSettings pkgDebugSettings = new PackageDebugSettings();  
 pkgDebugSettings.EnableDebugging(packgeFullName, debuggerCommandLine,   
                                                                  (IntPtr)fixedEnvironmentPzz);  
-  
 ```  
   
  There are a couple of items you'll need to get right:  
@@ -186,7 +182,6 @@ pkgDebugSettings.EnableDebugging(packgeFullName, debuggerCommandLine,
      Here’s some example C++ code to do this (be sure to add error checking!):  
   
     ```cpp  
-  
     int wmain(int argc, wchar_t* argv[])  
     {      
         // …  
@@ -199,7 +194,6 @@ pkgDebugSettings.EnableDebugging(packgeFullName, debuggerCommandLine,
         CloseHandle(hThread);  
         return 0;  
     }  
-  
     ```  
   
      You’ll need to deploy this dummy debugger as part of your diagnostics tool installation, and then specify the path to this debugger in the `debuggerCommandLine` parameter.  
@@ -210,7 +204,6 @@ pkgDebugSettings.EnableDebugging(packgeFullName, debuggerCommandLine,
  While iterating over your packages (see "Choosing a Windows Store App to Profile" in the [Startup load](#Startup) section earlier), you’ll want to grab the set of applications contained in the current package’s manifest:  
   
 ```csharp  
-  
 string manifestPath = package.InstalledLocation.Path + "\\AppxManifest.xml";  
   
 AppxPackaging.IStream manifestStream;  
@@ -225,28 +218,23 @@ SHCreateStreamOnFileEx(
 IAppxManifestReader manifestReader = appxFactory.CreateManifestReader(manifestStream);  
   
 IAppxManifestApplicationsEnumerator appsEnum = manifestReader.GetApplications();  
-  
 ```  
   
  Yes, one package can have multiple applications, and each application has its own Application User Model ID.  So you’ll want to ask your user which application to profile, and grab the Application User Model ID from that particular application:  
   
 ```csharp  
-  
 while (appsEnum.GetHasCurrent() != 0)  
 {  
     IAppxManifestApplication app = appsEnum.GetCurrent();  
     string appUserModelId = app.GetAppUserModelId();  
 …  
-  
 ```  
   
  Finally, you now have what you need to launch the Windows Store app:  
   
 ```csharp  
-  
 IApplicationActivationManager appActivationMgr = new ApplicationActivationManager();  
 appActivationMgr.ActivateApplication(appUserModelId, appArgs, ACTIVATEOPTIONS.AO_NONE, out pid);  
-  
 ```  
   
  **Remember to call DisableDebugging**  
@@ -262,11 +250,9 @@ appActivationMgr.ActivateApplication(appUserModelId, appArgs, ACTIVATEOPTIONS.AO
  So you’ll want to do something like this:  
   
 ```csharp  
-  
 IPackageDebugSettings pkgDebugSettings = new PackageDebugSettings();  
 pkgDebugSettings.EnableDebugging(packgeFullName, null /* debuggerCommandLine */,   
                                                                  IntPtr.Zero /* environment */);  
-  
 ```  
   
  This is the same call you’d make for the startup load case, except you don’t specify a debugger command line or an environment block.  
@@ -318,14 +304,12 @@ pkgDebugSettings.EnableDebugging(packgeFullName, null /* debuggerCommandLine */,
  Both your Profiler UI and Profiler DLL can determine this path independently.  Your Profiler UI, when it iterates through all packages installed for the current user (see the sample code earlier), gets access to the `PackageId` class, from which the Temporary Folder path can be derived with code similar to this snippet.  (As always, error checking is omitted for brevity.)  
   
 ```csharp  
-  
 // C# code for the Profiler UI.  
 ApplicationData appData =  
     ApplicationDataManager.CreateForPackageFamily(  
         packageId.FamilyName);  
   
 tempDir = appData.TemporaryFolder.Path;  
-  
 ```  
   
  Meanwhile, your Profiler DLL can do basically the same thing, though it can more easily get to the [ApplicationData](https://msdn.microsoft.com/library/windows/apps/windows.storage.applicationdata.aspx) class by using the [ApplicationData.Current](https://msdn.microsoft.com/library/windows/apps/windows.storage.applicationdata.current.aspx) property.  
@@ -336,14 +320,12 @@ tempDir = appData.TemporaryFolder.Path;
  From your Profiler DLL, you can simply call the [CreateEventEx](https://msdn.microsoft.com/library/windows/desktop/ms682400\(v=vs.85\).aspx) function to create a named event with any name you like.  For example:  
   
 ```cpp  
-  
 // Profiler DLL in Windows Store app (C++).  
 CreateEventEx(   
     NULL,  // Not inherited  
     "MyNamedEvent"  
     CREATE_EVENT_MANUAL_RESET, /* explicit ResetEvent() required; leave initial state unsignaled */  
     EVENT_ALL_ACCESS);  
-  
 ```  
   
  Your Profiler UI then needs to find that named event under the Windows Store app’s namespace.  For example, your Profiler UI could call [CreateEventEx](https://msdn.microsoft.com/library/windows/desktop/ms682400\(v=vs.85\).aspx), specifying the event name as  
@@ -353,7 +335,6 @@ CreateEventEx(
  `<acSid>` is the Windows Store app’s AppContainer SID.  An earlier section of this topic showed how to iterate over the packages installed for the current user.  From that sample code, you can obtain the packageId.  And from the packageId, you can obtain the `<acSid>` with code similar to the following:  
   
 ```csharp  
-  
 IntPtr acPSID;  
 DeriveAppContainerSidFromAppContainerName(packageId.FamilyName, out acPSID);  
   
@@ -362,7 +343,6 @@ ConvertSidToStringSid(acPSID, out acSid);
   
 string acDir;  
 GetAppContainerFolderPath(acSid, out acDir);  
-  
 ```  
   
 <a name="Shutdown"></a>   

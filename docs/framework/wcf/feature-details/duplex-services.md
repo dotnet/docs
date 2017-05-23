@@ -82,7 +82,6 @@ binding.ClientBaseAddress = new Uri("http://localhost:8000/DuplexTestUsingCode/C
          </binding>  
     </wsDualHttpBinding>  
 </bindings>  
-  
 ```  
   
 > [!WARNING]

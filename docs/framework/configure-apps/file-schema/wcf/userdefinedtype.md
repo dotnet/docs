@@ -26,7 +26,6 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
 ## Syntax  
   
 ```  
-  
 <comContracts>  
   <comContract>  
       <userDefinedTypes>  

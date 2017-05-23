@@ -37,7 +37,6 @@ Adds a new proxy module to the application.
 ## Syntax  
   
 ```  
-  
       <module   
    type = "name", System, Version="version number", Culture="culture", PublicKeyToken="token" "   
 />  

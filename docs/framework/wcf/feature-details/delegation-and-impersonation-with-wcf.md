@@ -146,7 +146,6 @@ manager: "erikre"
  It is possible for a client to authenticate itself to a service using a certificate, and to have the service map the client to an existing account through Active Directory. The following XML shows how to configure the service to map the certificate.  
   
 ```xml  
-  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name="MapToWindowsAccount">  
@@ -158,13 +157,11 @@ manager: "erikre"
     </behavior>  
   </serviceBehaviors>  
 </behaviors>  
-  
 ```  
   
  The following code shows how to configure the service.  
   
 ```  
-  
 // Create a binding that sets a certificate as the client credential type.  
 WSHttpBinding b = new WSHttpBinding();  
 b.Security.Message.ClientCredentialType = MessageCredentialType.Certificate;  
@@ -173,7 +170,6 @@ b.Security.Message.ClientCredentialType = MessageCredentialType.Certificate;
 Uri httpUri = new Uri("http://localhost/Calculator");  
 ServiceHost sh = new ServiceHost(typeof(HelloService), httpUri);  
 sh.Credentials.ClientCertificate.Authentication.MapClientCertificateToWindowsAccount = true;  
-  
 ```  
   
 ## Delegation  

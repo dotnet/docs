@@ -35,7 +35,6 @@ Symmetric encryption and asymmetric encryption are performed using different pro
 ```vb  
 Dim RMCrypto As New RijndaelManaged()  
 Dim CryptStream As New CryptoStream(MyStream, RMCrypto.CreateEncryptor(RMCrypto.Key, RMCrypto.IV), CryptoStreamMode.Write)  
-  
 ```  
   
 ```csharp  
@@ -101,7 +100,6 @@ Sub Main()
    End Try  
 End Sub  
 End Module  
-  
 ```  
   
 ```csharp  
@@ -219,7 +217,6 @@ Module Module1
     End Sub  
   
 End Module  
-  
 ```  
   
 ```csharp  

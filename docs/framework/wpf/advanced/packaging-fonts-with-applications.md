@@ -43,14 +43,13 @@ This topic provides an overview of how to package fonts with your              [
 ```  
 <Project DefaultTargets="Build"  
                 xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  \<!-- Other project build settings ... -->  
+  <!-- Other project build settings ... -->  
   
   <ItemGroup>  
     <Content Include="Peric.ttf" />  
     <Content Include="Pericl.ttf" />  
   </ItemGroup>  
 </Project>  
-  
 ```  
   
  In order to ensure that the application can use the fonts at run time, the fonts must be accessible in the application's deployment directory. The                  `<CopyToOutputDirectory>` element in the application's project file allows you to automatically copy the fonts to the application deployment directory during the build process. The following project file example shows how to copy fonts to the deployment directory.  
@@ -77,14 +76,13 @@ This topic provides an overview of how to package fonts with your              [
 ```  
 <Project DefaultTargets="Build"  
                 xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
-  \<!-- Other project build settings ... -->  
+  <!-- Other project build settings ... -->  
   
   <ItemGroup>  
     <Resource Include="resources\Peric.ttf" />  
     <Resource Include="resources\Pericl.ttf" />  
   </ItemGroup>  
 </Project>  
-  
 ```  
   
 > [!NOTE]
@@ -150,7 +148,7 @@ This topic provides an overview of how to package fonts with your              [
 <ItemGroup>  
   <Resource Include="Kooten.ttf" />  
   <Resource Include="Pesca.ttf" />  
-\</ItemGroup  
+</ItemGroup  
 ```  
   
 ### Referencing a Font in a Resource Library  

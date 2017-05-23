@@ -23,7 +23,6 @@ Contains a collection of configuration elements that specify user accounts for p
 ## Syntax  
   
 ```  
-  
 <allowAccounts>  
    <add securityIdentifier="String"/>  
 </allowAccounts>  

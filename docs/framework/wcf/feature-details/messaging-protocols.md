@@ -157,7 +157,6 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
     </wsa10:Metadata>  
   </sp:Issuer>  
 </sp:IssuedToken>  
-  
 ```  
   
 ### Message Addressing Headers  
@@ -482,14 +481,12 @@ Content-Length: 0
   
     ```  
     Content-Type: multipart/related; type="application/xop+xml";start=" <part0@tempuri.org>";boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=1";start-info="text/xml"  
-  
     ```  
   
      CORRECT  
   
     ```  
     Content-Type: Multipart/Related; type="application/xop+xml";start-info="text/xml";boundary="uuid:0ca0e16e-feb1-426c-97d8-c4508ada5e82+id=1"  
-  
     ```  
   
      INCORRECT  

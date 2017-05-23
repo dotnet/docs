@@ -25,7 +25,6 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
 ## Syntax  
   
 ```  
-  
 <ws2007FederationHttpBinding>  
     <binding   
         bypassProxyOnLocal="Boolean"  

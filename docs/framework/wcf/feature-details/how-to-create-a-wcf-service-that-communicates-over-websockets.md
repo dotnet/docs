@@ -195,7 +195,6 @@ namespace Server
         Task SendQuote(string code, double value);  
     }  
 }  
-  
 ```  
   
 ```  

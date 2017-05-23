@@ -64,7 +64,6 @@ This topic demonstrates how to enable a [!INCLUDE[indigo1](../../../../includes/
                 password = Console.ReadLine();             
                 return;  
             }  
-  
     ```  
   
 2.  Create an instance of the client proxy specifying the client’s credentials as shown in the following code:  

@@ -25,7 +25,6 @@ Specifies groups into which objects returned by a query ([SELECT](../../../../..
 ## Syntax  
   
 ```  
-  
 [ GROUP BY aliasedExpression [ ,...n ] ]  
 ```  
   

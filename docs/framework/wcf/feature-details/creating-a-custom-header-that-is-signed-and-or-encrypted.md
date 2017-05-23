@@ -60,7 +60,6 @@ public  class MyMessageContract
    public msgHeaderElement;  
    // other message contents...  
 }  
-  
 ```  
   
 ## See Also  

@@ -43,21 +43,7 @@
 ## Examples  
  The following code example hides the ErrorLog Table in AdventureWorksLT database by applying the scaffold attribute to the ErrorLog partial class that represents the ErrorLog table. The scaffold property is set to `false.`  
   
-<!-- TODO: review snippet reference  [!CODE [System.ComponentModel.DataAnnotations.ScaffoldTableAttribute#1](System.ComponentModel.DataAnnotations.ScaffoldTableAttribute#1)]  -->  
-  
-```vb  
-<MetadataType(GetType(ErrorLogMetada))> _   
-<ScaffoldTable(False)>   
-Public Partial Class ErrorLog   
-  
-End Class   
-  
-Public Class ErrorLogMetada  
-  
-End Class   
-```  
-  
-```  
+```csharp  
 [MetadataType (typeof(ErrorLogMetada))]  
 [ScaffoldTable(false)]  
 public partial class ErrorLog  
@@ -69,7 +55,18 @@ public class ErrorLogMetada
 {  
   
 }  
+```  
+
+```vb  
+<MetadataType(GetType(ErrorLogMetada))> _   
+<ScaffoldTable(False)>   
+Public Partial Class ErrorLog   
   
+End Class   
+  
+Public Class ErrorLogMetada  
+  
+End Class   
 ```  
   
  To compile the example code, you need the following:  

@@ -25,7 +25,6 @@ Converts an expression of one data type to another.
 ## Syntax  
   
 ```  
-  
 CAST ( expression AS data_type )  
 ```  
   

@@ -57,7 +57,6 @@ Dim msg As Byte() = Encoding.ASCII.GetBytes(data)
 handler.Send(msg)  
 handler.Shutdown(SocketShutdown.Both)  
 handler.Close()  
-  
 ```  
   
 ```csharp  

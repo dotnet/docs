@@ -41,7 +41,6 @@ A [!INCLUDE[wf](../../../includes/wf-md.md)] expression is any activity that ret
     </Assign.Value>  
   </Assign>  
 </Sequence>  
-  
 ```  
   
  When defining a workflow in code, any expression activities can be used. The following example shows the usage of a composition of operator activities to add three numbers.  
@@ -71,7 +70,6 @@ Sequence w = new Sequence
         }  
     }  
 };  
-  
 ```  
   
  The same workflow can be expressed more compactly by using C# lambda expressions, as shown in the following example.  
@@ -93,7 +91,6 @@ Sequence w = new Sequence
         }  
     }  
 };  
-  
 ```  
   
  The workflow can also be expressed by using Visual Basic expression activities, as shown in the following example.  
@@ -115,7 +112,6 @@ Sequence w = new Sequence
         }  
     }  
 };  
-  
 ```  
   
 ## Extending Available Expressions with Custom Expression Activities  
@@ -171,7 +167,6 @@ Sequence w = new Sequence
         }  
     }  
 };  
-  
 ```  
   
  [!INCLUDE[crabout](../../../includes/crabout-md.md)]using expressions in code, see [Authoring Workflows, Activities, and Expressions Using Imperative Code](../../../docs/framework/windows-workflow-foundation/authoring-workflows-activities-and-expressions-using-imperative-code.md).

@@ -79,7 +79,6 @@ Configures the list of trusted issuer certificates used by the configuration-bas
     <add thumbprint="9B74CB2F32 … B1DC01EF40D0" name="LocalSTS" />  
   </trustedIssuers>  
 </issuerNameRegistry>  
-  
 ```  
   
 ## See Also  

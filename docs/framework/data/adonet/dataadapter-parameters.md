@@ -113,7 +113,6 @@ selectCMD.Parameters.Add( _
   
 Dim customers As DataSet = New DataSet  
 adapter.Fill(customers, "Customers")  
-  
 ```  
   
 ```csharp  
@@ -148,7 +147,6 @@ selectCMD.Parameters.Add("@City", OdbcType.VarChar, 15).Value = "London"
   
 Dim customers As DataSet = New DataSet  
 adapter.Fill(customers, "Customers")  
-  
 ```  
   
 ```csharp  

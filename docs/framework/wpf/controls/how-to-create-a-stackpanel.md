@@ -28,7 +28,6 @@ This example shows how to create a <xref:System.Windows.Controls.StackPanel>.
  The default stack direction in a <xref:System.Windows.Controls.StackPanel> is vertical. To control content flow in a <xref:System.Windows.Controls.StackPanel>, use the <xref:System.Windows.Controls.StackPanel.Orientation%2A> property. You can control horizontal alignment by using the <xref:System.Windows.FrameworkElement.HorizontalAlignment%2A> property.  
   
 ```xaml  
-  
 <Page xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowTitle="StackPanel Sample">  
   <StackPanel>  
     <Border Background="SkyBlue" BorderBrush="Black" BorderThickness="1">  
@@ -48,7 +47,6 @@ This example shows how to create a <xref:System.Windows.Controls.StackPanel>.
     </Border>  
   </StackPanel>  
 </Page>  
-  
 ```  
   
 ## See Also  

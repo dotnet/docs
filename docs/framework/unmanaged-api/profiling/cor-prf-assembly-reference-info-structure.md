@@ -25,7 +25,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```cpp  
-  
 typedef struct _COR_PRF_ASSEMBLY_REFERENCE_INFO {  
     void* pbPublicKeyOrToken;  
     ULONG cbPublicKeyOrToken;  
@@ -35,7 +34,6 @@ typedef struct _COR_PRF_ASSEMBLY_REFERENCE_INFO {
     ULONG cbHashValue;  
     DWORD dwAssemblyRefFlags;  
 } COR_PRF_EX_CLAUSE_INFO;  
-  
 ```  
   
 ## Members  

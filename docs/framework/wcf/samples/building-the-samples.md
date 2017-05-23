@@ -75,7 +75,6 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples can be built
   
     ```  
     svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples" http://localhost/servicemodelsamples/service.svc/mex /l:vb /out:generatedClient.vb  
-  
     ```  
   
      If the service is a self-hosted type, use the following command.  

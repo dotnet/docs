@@ -38,6 +38,7 @@
 ## [Unit Testing](core/testing/index.md)
 ### [Unit testing with dotnet test and xUnit](core/testing/unit-testing-with-dotnet-test.md)
 ### [Unit testing with dotnet test and MSTest](core/testing/unit-testing-with-mstest.md)
+### [Running selective unit tests](core/testing/selective-unit-tests.md)
 ## [Versioning](core/versions/index.md)
 ### [.NET Core Support](core/versions/lts-current.md)
 <!--### [🔧 Servicing](core/versions/servicing.md)-->
@@ -84,6 +85,7 @@
 # [.NET Framework Guide](framework/index.md)
 ## [What's New](framework/whats-new/)
 ## [Get Started](framework/get-started/)
+## [Installation guide](framework/install/)
 ## [Migration Guide](framework/migration-guide/)
 ## [.NET Framework on Docker Guide](framework/docker/index.md)
 ### [Running Console Apps in Containers](framework//docker/console.md)
@@ -132,6 +134,7 @@
 <!-- End What's New -->
 <!--## [🔧 C# Interactive](csharp/interactive/)-->
 <!-- Do this section later, once master redirects are in place -->
+## C# Concepts
 ### [C# Type system](csharp/programming-guide/types/index.md)
 ### [Namespaces](csharp/programming-guide/namespaces/index.md)
 ### [Basic Types](csharp/basic-types.md)
@@ -183,12 +186,11 @@
 
 ## [Tour of F#](fsharp/tour.md)
 
-<!--## [Introduction to Functional Programming](fsharp/introduction-to-functional-programming/index.md)-->
-### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
-
 <!--## [Tutorials](fsharp/tutorials/index.md)-->
+## Tutorials
 ### [Get Started](fsharp/tutorials/getting-started/index.md)
 #### [Get Started with Visual Studio](fsharp/tutorials/getting-started/getting-started-visual-studio.md)
+#### [Get Started with Visual Studio for Mac](fsharp/tutorials/getting-started/getting-started-with-visual-studio-for-mac.md)
 #### [Get Started with Visual Studio Code and Ionide](fsharp/tutorials/getting-started/getting-started-vscode.md)
 #### [Get Started with Command-line Tools](fsharp/tutorials/getting-started/getting-started-command-line.md)
 ### [F# Interactive](fsharp/tutorials/fsharp-interactive/index.md)
@@ -203,7 +205,13 @@
 #### [Creating a Type Provider](fsharp/tutorials/type-providers/creating-a-type-provider.md)
 #### [Type provider Security](fsharp/tutorials/type-providers/type-provider-security.md)
 #### [Troubleshooting Type Providers](fsharp/tutorials/type-providers/troubleshooting-type-providers.md)
+
+<!--## [Introduction to Functional Programming](fsharp/introduction-to-functional-programming/index.md)-->
+## Introduction to Functional Programming
+### [Functions as First-Class Values](fsharp/introduction-to-functional-programming/functions-as-first-class-values.md)
+
 <!--### [Asynchronous and Concurrent Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/index.md)-->
+### Asynchronous and Concurrent Programming
 #### [Asynchronous Programming](fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)
 
 <!--## [Using F# in Visual Studio](fsharp/using-fsharp-in-visual-studio/index.md)-->

@@ -28,7 +28,6 @@ Specifies the generic parameter when a declared type is a generic type.
 ## Syntax  
   
 ```  
-  
 <parameter index="integer"  
                       type=String" />  
 ```  

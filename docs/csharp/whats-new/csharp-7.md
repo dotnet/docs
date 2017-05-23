@@ -82,6 +82,11 @@ return result;
 
 ## Tuples
 
+> [!NOTE]
+> The new tuples features require the @System.ValueTuple types.
+> You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it
+> on platforms that do not include the types.
+
 C# provides a rich syntax for classes and structs that is used to explain
 your design intent. But sometimes that rich syntax requires extra
 work with minimal benefit. You may often write methods that need a simple
@@ -91,33 +96,34 @@ that contain multiple fields to represent the data members.
 The fields are not validated, and you cannot define your own methods
 
 > [!NOTE]
-> Tuples were available before C# 7 as an API, but had many limitations.
-> Most importantly, the members of these tuples were named 
-> `Item1`, `Item2` and so on. The language support enables semantic names
-> for the fields of a Tuple.
+> Tuples were available before C# 7,
+> but they were inefficient and had no language support.
+> This meant that tuple elements could only be referenced as
+> `Item1`, `Item2` and so on. C# 7 introduces language support for tuples,
+> which enables semantic names for the fields of a tuple using new,
+> more efficient tuple types.
 
 You can create a tuple by assigning each member to a value:
 
 [!code-csharp[UnnamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#04_UnnamedTuple "Unnamed tuple")]
 
 That assignment creates a tuple whose members are `Item1` and `Item2`,
-following the existing @System.Tuple syntax.
-You can modify that assignment to create a tuple that provides semantic
+which you can use in the same way as @System.Tuple
+You can change the syntax to create a tuple that provides semantic
 names to each of the members of the tuple:
 
 [!code-csharp[NamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#05_NamedTuple "Named tuple")]
 
-> [!NOTE]
-> The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017,
-> you must add the NuGet package [System.ValueTuple](https://www.nuget.org/packages/System.ValueTuple/), available on the NuGet Gallery.
-
 The `namedLetters` tuple contains fields referred to as `Alpha` and
-`Beta`. In a tuple assignment, you can also specify the names of the fields
+`Beta`. Those names exist only at compile time and are not preserved
+for example when inspecting the tuple using reflection at runtime.
+
+In a tuple assignment, you can also specify the names of the fields
 on the right-hand side of the assignment:
 
 [!code-csharp[ImplicitNamedTuple](../../../samples/snippets/csharp/new-in-7/program.cs#06_ImplicitNamedTuple "Implicitly named tuple")]
 
-The language allows you to specify names for the fields on both the
+You can specify names for the fields on both the
 left and right-hand side of the assignment:
 
 [!code-csharp[NamedTupleConflict](../../../samples/snippets/csharp/new-in-7/program.cs#07_NamedTupleConflict "Named tuple conflict")]
@@ -517,8 +523,8 @@ feature:
 [!code-csharp[UsingValueTask](../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#30_UsingValueTask "Using ValueTask")]
 
 > [!NOTE]
-> You need to add the pre-release NuGet package `System.Threading.Tasks.Extensions`
-> in order to use `ValueTask` in Visual Studio 15 Preview 5.
+> You need to add the NuGet package [`System.Threading.Tasks.Extensions`](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/)
+> in order to use `ValueTask`.
 
 A simple optimization would be to use `ValueTask` in places where
 `Task` would be used before. However, if you want to perform extra

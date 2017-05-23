@@ -132,7 +132,6 @@ Using connection As New SqlConnection( _
     End While  
     reader.Close()  
 End Using  
-  
 ```  
   
 ## See Also  

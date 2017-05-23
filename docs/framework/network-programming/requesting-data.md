@@ -51,7 +51,6 @@ Developing applications that run in the distributed operating environment of tod
 ```csharp  
 StreamReader sr =  
    new StreamReader(resp.GetResponseStream(), Encoding.ASCII);  
-  
 ```  
   
 ```vb  

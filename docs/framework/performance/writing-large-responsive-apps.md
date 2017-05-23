@@ -76,7 +76,6 @@ public class BoxingExample
         Logger.WriteLine(s);  
     }  
 }  
-  
 ```  
   
  This code provides logging functionality, so an app may call the `Log` function frequently, maybe millions of times.  The problem is that the call to `string.Format` resolves to the <xref:System.String.Format%28System.String%2CSystem.Object%2CSystem.Object%29> overload.  
@@ -97,7 +96,6 @@ var s = id.ToString() + ':' + size.ToString();
   
 ```csharp  
 var s = id.ToString() + ":" + size.ToString();  
-  
 ```  
   
  **Example 2: enum boxing**  
@@ -119,7 +117,6 @@ public class BoxingExample
         return name.GetHashCode() ^ color.GetHashCode();  
     }  
 }  
-  
 ```  
   
  This problem is very subtle.  PerfView would report this as <xref:System.Enum.GetHashCode> boxing because the method boxes the underlying representation of the enumeration type, for implementation reasons.  If you look closely in PerfView, you may see two boxing allocations for each call to <xref:System.Enum.GetHashCode>.   The compiler inserts one, and the .NET Framework inserts the other.  
@@ -130,7 +127,6 @@ public class BoxingExample
   
 ```csharp  
 ((int)color).GetHashCode()  
-  
 ```  
   
  Another common source of boxing on enumeration types is the <xref:System.Enum.HasFlag%28System.Enum%29?displayProperty=fullName> method.  The argument passed to <xref:System.Enum.HasFlag%28System.Enum%29> has to be boxed.  In most cases, replacing calls to <xref:System.Enum.HasFlag%28System.Enum%29?displayProperty=fullName> with a bitwise test is simpler and allocation-free.  
@@ -167,7 +163,6 @@ public void WriteFormattedDocComment(string text)
             WriteLine(lines[i].TrimStart().Substring(substringStart));  
     }  
     else { /* ... */ }  
-  
 ```  
   
  You can see that this code does a lot of string manipulation.  The code uses library methods to split lines into separate strings, to trim white space, to check whether the argument `text` is an XML documentation comment, and to extract substrings from lines.  
@@ -202,7 +197,6 @@ private bool TrimmedStringStartsWith(string text, int start, string prefix) {
 }  
   
 // etc...  
-  
 ```  
   
  The first version of `WriteFormattedDocComment()` allocated an array, several substrings, and a trimmed substring along with an empty `params` array.  It also checked for `"///"`.  The revised code uses only indexing and allocates nothing.  It finds the first character that is not white space, and then checks character by character to see if the string starts with `"///"`.  The new code uses `IndexOfFirstNonWhiteSpaceChar` instead of <xref:System.String.TrimStart%2A> to return the first index (after a specified start index) where a non-whitespace character occurs.  The fix is not complete, but you can see how to apply similar fixes for a complete solution.  By applying this approach throughout the code, you can remove all allocations in `WriteFormattedDocComment()`.  
@@ -233,7 +227,6 @@ public class Example
         return sb.ToString();  
     }  
 }  
-  
 ```  
   
  The focus is on the line that creates a new <xref:System.Text.StringBuilder> instance.  The code causes an allocation for `sb.ToString()` and internal allocations within the <xref:System.Text.StringBuilder> implementation, but you cannot control those allocations if you want the string result.  
@@ -250,7 +243,6 @@ public string GenerateFullTypeName(string name, int arity)
     /* Use sb as before */  
     return GetStringAndReleaseBuilder(sb);  
 }  
-  
 ```  
   
  The key parts are the new `AcquireBuilder()` and `GetStringAndReleaseBuilder()` functions:  
@@ -277,7 +269,6 @@ private static string GetStringAndReleaseBuilder(StringBuilder sb)
     cachedStringBuilder = sb;  
     return result;  
 }  
-  
 ```  
   
  Because the new compilers use threading, these implementations use a thread-static field (<xref:System.ThreadStaticAttribute> attribute) to cache the <xref:System.Text.StringBuilder>, and you likely can forgo the `ThreadStatic` declaration.  The thread-static field holds a unique value for each thread that executes this code.  
@@ -308,7 +299,6 @@ class Compiler {
         return symbols.FirstOrDefault(s => s.Name == name);  
     }  
 }  
-  
 ```  
   
  The new compiler and the IDE experiences built on it call `FindMatchingSymbol()` very frequently, and there are several hidden allocations in this function’s single line of code.  To examine those allocations, first split the function’s single line of code into two lines:  
@@ -316,7 +306,6 @@ class Compiler {
 ```csharp  
 Func<Symbol, bool> predicate = s => s.Name == name;  
      return symbols.FirstOrDefault(predicate);  
-  
 ```  
   
  In the first line, the [lambda expression](~/docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)`s => s.Name == name`[closes over](http://blogs.msdn.com/b/ericlippert/archive/2003/09/17/53028.aspx) the local variable `name`.  This means that in addition to allocating an object for the [delegate](~/docs/csharp/language-reference/keywords/delegate.md) that `predicate` holds, the code allocates a static class to hold the environment that captures the value of `name`.  The compiler generates code like the following:  
@@ -335,7 +324,6 @@ private class Lambda1Environment
 // Expanded Func<Symbol, bool> predicate = s => s.Name == name;  
 Lambda1Environment l = new Lambda1Environment() { capturedName = name };  
 var predicate = new Func<Symbol, bool>(l.Evaluate);  
-  
 ```  
   
  The two `new` allocations (one for the environment class and one for the delegate) are explicit now.  
@@ -352,7 +340,6 @@ var predicate = new Func<Symbol, bool>(l.Evaluate);
              return enumerator.Current;  
      }  
      return default(Symbol);  
-  
 ```  
   
  The `symbols` variable has type <xref:System.Collections.Generic.List%601>.  The <xref:System.Collections.Generic.List%601> collection type implements <xref:System.Collections.Generic.IEnumerable%601> and cleverly defines an enumerator (<xref:System.Collections.Generic.IEnumerator%601> interface) that <xref:System.Collections.Generic.List%601> implements with a `struct`.  Using a structure instead of a class means that you usually avoid any heap allocations, which, in turn, can affect garbage collection performance.  Enumerators are typically used with the language’s `foreach` loop, which uses the enumerator structure as it is returned on the call stack.  Incrementing the call stack pointer to make room for an object does not affect GC the way a heap allocation does.  
@@ -373,7 +360,6 @@ public Symbol FindMatchingSymbol(string name)
         }  
         return null;  
     }  
-  
 ```  
   
  This code doesn’t use LINQ extension methods, lambdas, or enumerators, and it incurs no allocations.  There are no allocations because the compiler can see that the `symbols` collection is a <xref:System.Collections.Generic.List%601> and can bind the resulting enumerator (a structure) to a local variable with the right type to avoid boxing.  The original version of this function was a great example of the expressive power of C# and the productivity of the .NET Framework.  This new and more efficient version preserves those qualities without adding any complex code to maintain.  
@@ -401,7 +387,6 @@ class Compilation { /*...*/
         return parser.Syntax;  
     }  
 }  
-  
 ```  
   
  You can see that calling `GetSyntaxTreeAsync()` instantiates a `Parser`, parses the code, and then returns a <xref:System.Threading.Tasks.Task> object, `Task<SyntaxTree>`.  The expensive part is allocating the `Parser` instance and parsing the code.  The function returns a <xref:System.Threading.Tasks.Task> so that callers can await the parsing work and free the UI thread to be responsive to user input.  
@@ -424,7 +409,6 @@ class Compilation { /*...*/
         return this.cachedResult;  
     }  
 }  
-  
 ```  
   
  You see that the new code with caching has a `SyntaxTree` field named `cachedResult`.  When this field is null, `GetSyntaxTreeAsync()` does the work and saves the result in the cache.  `GetSyntaxTreeAsync()` returns the `SyntaxTree` object.  The problem is that when you have an `async` function of type `Task<SyntaxTree>`, and you return a value of type `SyntaxTree`, the compiler emits code to allocate a Task to hold the result (by using `Task<SyntaxTree>.FromResult()`).  The Task is marked as completed, and the result is immediately available.  In the code for the new compilers, <xref:System.Threading.Tasks.Task> objects that were already completed occurred so often that fixing these allocations improved responsiveness noticeably.  
@@ -451,7 +435,6 @@ class Compilation { /*...*/
         return parser.Syntax;  
     }  
 }  
-  
 ```  
   
  This code changes the type of `cachedResult` to `Task<SyntaxTree>` and employs an `async` helper function that holds the original code from `GetSyntaxTreeAsync()`.  `GetSyntaxTreeAsync()` now uses the [null coalescing operator](~/docs/csharp/language-reference/operators/null-conditional-operator.md) to return `cachedResult` if it isn't null.  If `cachedResult` is null, then `GetSyntaxTreeAsync()` calls `GetSyntaxTreeUncachedAsync()` and caches the result.  Notice that `GetSyntaxTreeAsync()` doesn’t await the call to `GetSyntaxTreeUncachedAsync()` as the code would normally.  Not using await means that when `GetSyntaxTreeUncachedAsync()` returns its <xref:System.Threading.Tasks.Task> object, `GetSyntaxTreeAsync()` immediately returns the <xref:System.Threading.Tasks.Task>.  Now, the cached result is a <xref:System.Threading.Tasks.Task>, so there are no allocations to return the cached result.  

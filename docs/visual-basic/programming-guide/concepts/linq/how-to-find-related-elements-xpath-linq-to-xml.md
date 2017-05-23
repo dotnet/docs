@@ -59,7 +59,6 @@ Else
     Console.WriteLine("Results differ")  
 End If  
 Console.WriteLine(customer1)  
-  
 ```  
   
  This example produces the following output:  

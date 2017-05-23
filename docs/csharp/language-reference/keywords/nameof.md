@@ -40,7 +40,6 @@ When reporting errors in code, hooking up model-view-controller (MVC) links, fir
 ```csharp  
 if (x == null) throw new ArgumentNullException(nameof(x));  
 WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode"  
-  
 ```  
   
 ## Key Use Cases  
@@ -51,7 +50,6 @@ WriteLine(nameof(person.Address.ZipCode)); // prints "ZipCode"
 void f(string s) {  
     if (s == null) throw new ArgumentNullException(nameof(s));  
 }  
-  
 ```  
   
  MVC Action links:  
@@ -60,7 +58,6 @@ void f(string s) {
              @typeof(UserController),  
              @nameof(UserController.SignUp))  
 %>  
-  
 ```  
   
  INotifyPropertyChanged:  
@@ -69,13 +66,11 @@ int p {
     get { return this.p; }  
     set { this.p = value; PropertyChanged(this, new PropertyChangedEventArgs(nameof(this.p)); } // nameof(p) works too  
 }  
-  
 ```  
   
  XAML dependency property:  
  ```csharp  
 public static DependencyProperty AgeProperty = DependencyProperty.Register(nameof(Age), typeof(int), typeof(C));  
-  
 ```  
   
  Logging:  
@@ -83,7 +78,6 @@ public static DependencyProperty AgeProperty = DependencyProperty.Register(nameo
 void f(int i) {  
     Log(nameof(f), "method entry");  
 }  
-  
 ```  
   
  Attributes:  
@@ -120,7 +114,6 @@ nameof(f) -> "f"
 nameof(f<T>) -> syntax error  
 nameof(f<>) -> syntax error  
 nameof(Method2()) -> error "This expression does not have a name"  
-  
 ```  
   
  Many of the above samples apply to Visual Basic.  Here are some specific Visual Basic examples:  
@@ -134,7 +127,6 @@ Dim x = Nothing
 NameOf(x.ToString(2)) -> ' error  "This expression does not have a name"  
 Dim o = Nothing  
 NameOf(o.Equals) -> ' result "Equals".  Warning: "Access of static member of instance; instance will not be evaluated"  
-  
 ```  
   
 ## Remarks  
@@ -149,7 +141,6 @@ class C {
         Log($"{typeof(C)}.{nameof(f)}", "method entry");  
     }
 }
-  
 ``` 
 
  Unfortunately `typeof` is not a constant expression like `nameof`, so `typeof` cannot be used in conjunction with `nameof` in all the same places as `nameof`.  For example, the following would cause a CS0182 compile error:

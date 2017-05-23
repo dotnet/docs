@@ -29,7 +29,6 @@ Support has been added to allow for WCF services with Internationalized Domain N
     <idn enabled="All/AllExceptIntranet/None" />  
   </uri>  
 </configuration>  
-  
 ```  
   
  The \<idn> element contains the enabled attribute which can be set to one of the following values:  

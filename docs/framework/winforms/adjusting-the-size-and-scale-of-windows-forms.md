@@ -31,7 +31,7 @@ This topic provides links to information about resizing Windows Forms.
  [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md)  
  Discusses how automatic scaling enables a form and its controls to be displayed appropriately between machines.  
   
-[High DPI Support in Windows Forms](../../../docs/framework/winforms/high-dpi-support.md)    
+[High DPI Support in Windows Forms](../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)    
 Discusses Windows Forms' support for High DPI and dynamic scaling. 
   
 ## Reference  

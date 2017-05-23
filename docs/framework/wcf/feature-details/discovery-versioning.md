@@ -52,5 +52,4 @@ oldVersionUdpEndpoint.Address = new EndpointAddress(oldVersionUdpEndpoint.Addres
   
 serviceHost.AddServiceEndpoint(newVersionUdpEndpoint);  
 serviceHost.AddServiceEndpoint(oldVersionUdpEndpoint);  
-  
 ```

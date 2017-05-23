@@ -26,7 +26,6 @@ Specifies the expected identity of the server. This identity is valid for X509 C
 ## Syntax  
   
 ```  
-  
 <dns value = "String" />  
 ```  
   

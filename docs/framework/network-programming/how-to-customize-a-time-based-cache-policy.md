@@ -86,7 +86,6 @@ CreateMinFreshPolicy(new TimeSpan(1,0,0));
   
 ```  
 Level:Default MinFresh:3600  
-  
 ```  
   
 ### To create a time-based cache policy that is based on minimum freshness and maximum age  

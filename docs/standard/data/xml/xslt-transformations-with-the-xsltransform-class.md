@@ -69,7 +69,6 @@ Public Class Sample
         xslt.Transform(xpathdocument, Nothing, writer, Nothing)  
     End Sub 'Main  
 End Class 'Sample  
-  
 ```  
   
 ```csharp  

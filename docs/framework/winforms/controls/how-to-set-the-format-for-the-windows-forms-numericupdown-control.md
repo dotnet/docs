@@ -30,13 +30,11 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
     ```vb  
     NumericUpDown1.DecimalPlaces = 2  
     NumericUpDown1.ThousandsSeparator = True  
-  
     ```  
   
     ```csharp  
     numericUpDown1.DecimalPlaces = 2;  
     numericUpDown1.ThousandsSeparator = true;  
-  
     ```  
   
     ```cpp  
@@ -50,12 +48,10 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
   
     ```vb  
     NumericUpDown1.Hexadecimal = True  
-  
     ```  
   
     ```csharp  
     numericUpDown1.Hexadecimal = true;  
-  
     ```  
   
     ```cpp  

@@ -224,7 +224,6 @@ Version Information example
               style="visibility:hidden;height:0px;width:0px;border:0px">  
    </iframe>  
 </div>  
-  
 ```  
   
 ## See Also  

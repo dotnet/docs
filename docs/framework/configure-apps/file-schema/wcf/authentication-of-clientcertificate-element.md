@@ -29,7 +29,6 @@ Specifies authentication behaviors for client certificates used by a service.
 ## Syntax  
   
 ```  
-  
 <authentication  
 customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
 certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  

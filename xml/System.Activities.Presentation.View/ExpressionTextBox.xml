@@ -64,7 +64,6 @@
 ## Examples  
  The <xref:System.Activities.Presentation.View.ExpressionTextBox> is usually used declaratively when creating custom activity designers. For sample code, see the [ExpressionTextBox101](http://go.microsoft.com/fwlink/?LinkId=193145) blog.  
   
-<!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#0](WFD_ExpressionTextBox#0)]  -->  
   
  ]]></format>
     </remarks>
@@ -341,11 +340,6 @@
 ## Remarks  
  <xref:System.Activities.Presentation.View.ExpressionTextBox.Expression%2A> is always required. When using the <xref:System.Activities.Presentation.View.ExpressionTextBox> declaratively to bind to arguments, you must always use the <xref:System.Activities.Presentation.Converters.ArgumentToExpressionConverter> to bind the expression to the argument, setting the `ConverterParameter` to `In` or `Out` depending on the direction of the argument.  
   
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#10](WFD_ExpressionTextBox#10)]  -->  
-  
  ]]></format>
         </remarks>
       </Docs>
@@ -462,11 +456,6 @@
   
 ## Remarks  
  Setting the type is strongly recommended. If you do not set <xref:System.Activities.Presentation.View.ExpressionTextBox.ExpressionType%2A>, you can’t use the <xref:System.Activities.Presentation.View.ExpressionTextBox> to bind to delegate types and you do not get validation from the hosted compiler. This compiler validation checks to see if the type of the entered expression matches the expected type, and displays a red box around the **ExpressionTextBox** when invalid data is entered into it on an activity designer.  
-  
-   
-  
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#11](WFD_ExpressionTextBox#11)]  -->  
   
  ]]></format>
         </remarks>
@@ -846,8 +835,6 @@
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
-## Examples  
-<!-- TODO: review snippet reference  [!CODE [WFD_ExpressionTextBox#15](WFD_ExpressionTextBox#15)]  -->  
   
  ]]></format>
         </remarks>

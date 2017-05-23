@@ -19,7 +19,6 @@ The XML Schema Definition (Xsd.exe) tool generates XML schema or common language
 ## Syntax  
   
 ```  
-  
 xsd file.xdr [/outputdir:directory][/parameters:file.xml]  
 xsd file.xml [/outputdir:directory] [/parameters:file.xml]  
 xsd file.xsd {/classes | /dataset} [/element:element]   
@@ -97,8 +96,8 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
  By using the `/parameters` switch, you can specify a single XML file that sets various options. The options you can set depend on how you are using the XSD.exe tool. Choices include generating schemas, generating code files, or generating code files that include `DataSet` features. For example, you can set the `<assembly\>` element to the name of an executable (.exe) or type library (.dll) file when generating a schema, but not when generating a code file. The following XML shows how to use the `<generateSchemas\>` element with a specified executable:  
   
 ```  
-\<!-- This is in a file named GenerateSchemas.xml. -->  
-\<xsd xmlns='http://microsoft.com/dotnet/tools/xsd/'>  
+<!-- This is in a file named GenerateSchemas.xml. -->  
+<xsd xmlns='http://microsoft.com/dotnet/tools/xsd/'>  
 <generateSchemas>  
    <assembly>ConsoleApplication1.exe</assembly>  
 </generateSchemas>  
@@ -112,8 +111,8 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
  On the other hand, if you are generating a schema for a single type found in the assembly, you can use the following XML:  
   
 ```  
-\<!-- This is in a file named GenerateSchemaFromType.xml. -->  
-\<xsd xmlns='http://microsoft.com/dotnet/tools/xsd/'>  
+<!-- This is in a file named GenerateSchemaFromType.xml. -->  
+<xsd xmlns='http://microsoft.com/dotnet/tools/xsd/'>  
 <generateSchemas>  
    <type>IDItems</type>  
 </generateSchemas>  
@@ -136,11 +135,11 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
  To generate a code file, use the `<generateClasses\>` element. The following example generates a code file. Note that two attributes are also shown that allow you to set the programming language and namespace of the generated file.  
   
 ```  
-\<xsd xmlns='http://microsoft.com/dotnet/tools/xsd/'>  
-\<generateClasses language='VB' namespace='Microsoft.Serialization.Examples'/>  
+<xsd xmlns='http://microsoft.com/dotnet/tools/xsd/'>  
+<generateClasses language='VB' namespace='Microsoft.Serialization.Examples'/>  
 </xsd>  
-\<!-- You must supply an .xsd file when typing in the command line.-->  
-\<!-- For example: xsd /p:genClasses mySchema.xsd -->  
+<!-- You must supply an .xsd file when typing in the command line.-->  
+<!-- For example: xsd /p:genClasses mySchema.xsd -->  
 ```  
   
  Options you can set for the `\<generateClasses>` element include the following.  
@@ -186,7 +185,7 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
  There are attributes that you can set on the top level `<xsd\>` element. These options can be used with any of the child elements (`<generateSchemas\>`, `<generateClasses\>` or `<generateDataSet\>`). The following XML code generates code for an element named "IDItems" in the output directory named "MyOutputDirectory".  
   
 ```  
-\<xsd xmlns='http://microsoft.com/dotnet/tools/xsd/' output='MyOutputDirectory'>  
+<xsd xmlns='http://microsoft.com/dotnet/tools/xsd/' output='MyOutputDirectory'>  
 <generateClasses>  
 <element>IDItems</element>  
 </generateClasses>  

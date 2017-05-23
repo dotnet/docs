@@ -39,7 +39,6 @@ The majority of the methods found in an **XmlConvert** class are used to convert
 reader.ReadStartElement()  
 Dim vDateTime As DateTime = XmlConvert.ToDateTime(reader.ReadString())  
 Console.WriteLine(vDateTime)  
-  
 ```  
   
 ```csharp  
@@ -64,7 +63,6 @@ Console.WriteLine(vDateTime);
 ```vb  
 Dim vInt32 As Int32 = -2147483648  
 writer.WriteElementString("TestInt32", XmlConvert.ToString(vInt32))  
-  
 ```  
   
 ```csharp  

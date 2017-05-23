@@ -44,7 +44,6 @@ The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class
                      Even more data</aDifferentElement>  
     </in-reply-to>  
 </entry>  
-  
 ```  
   
  The `<in-reply-to>` element specifies three required attributes (`ref`, `type` and `href`) while also allowing for the presence of additional extension attributes and extension elements.  
@@ -91,7 +90,6 @@ public class InReplyToElement : IXmlSerializable
     public Uri Source  
     { get; set; }  
 }  
-  
 ```  
   
  The `InReplyToElement` class implements properties for the required attribute (`HRef`, `MediaType`, and `Source`) as well as collections to hold <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> and <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A>.  
@@ -150,7 +148,6 @@ public void ReadXml(System.Xml.XmlReader reader)
         reader.ReadEndElement();  
     }  
 }  
-  
 ```  
   
  In `WriteXml`, the `InReplyToElement` method first writes out the values of the `Ref`, `HRef`, `Source`, and `MediaType` properties as XML attributes (`WriteXml` is not responsible for writing the actual outer element itself, as that done by the caller of `WriteXml`). It also writes the contents of the <xref:System.ServiceModel.Syndication.SyndicationFeed.AttributeExtensions%2A> and <xref:System.ServiceModel.Syndication.SyndicationFeed.ElementExtensions%2A> to the writer, as shown in the following code.  
@@ -191,7 +188,6 @@ public void WriteXml(System.Xml.XmlWriter writer)
         element.WriteTo(writer);  
     }  
 }  
-  
 ```  
   
 ## ThreadedFeed and ThreadedItem  
@@ -219,7 +215,6 @@ public class ThreadedFeed : SyndicationFeed
         return new ThreadedItem();  
     }  
 }  
-  
 ```  
   
  The class `ThreadedItem` inherits from `SyndicationItem` and makes `InReplyToElement` as a strongly-typed property. This provides for convenient programmatic access to the `InReplyTo` extension data. It also implements `TryParseElement` and `WriteElementExtensions` for reading and writing its extension data, as shown in the following code.  
@@ -279,7 +274,6 @@ public class ThreadedItem : SyndicationItem
         base.WriteElementExtensions(writer, version);  
     }  
 }  
-  
 ```  
   
 #### To set up, build, and run the sample  

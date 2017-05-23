@@ -23,11 +23,9 @@ Gets the offset in bytes of this instance field in its parent class.
 ## Syntax  
   
 ```  
-  
 HRESULT GetOffset(  
    [out] ULONG32 *pcbOffset  
 );  
-  
 ```  
   
 #### Parameters  

@@ -192,7 +192,6 @@ foreach (string key in m1.BoundVariables.AllKeys)
 // BoundVariables:  
 //      STATE=OR  
 //       CITY=Redmond  
-  
 ```  
   
 > [!NOTE]
@@ -224,7 +223,6 @@ Console.WriteLine("Bound URI: {0}", boundUri);
 // Values:  
 //     Key = a, Value = 10  
 // Bound URI: http://localhost:8000/test/10/5  
-  
 ```  
   
  When a variable is given a default value of `null` there are some additional constraints. A variable can have a default value of `null` if the variable is contained within the right most segment of the template string or if all segments to the right of the segment have default values of `null`. The following are valid template strings with default values of `null`:  
@@ -232,7 +230,6 @@ Console.WriteLine("Bound URI: {0}", boundUri);
 -   ```  
     UriTemplate t = new UriTemplate("shoe/{boat=null}");  
     ```  
-  
 -   ```  
     UriTemplate t = new UriTemplate("{shoe=null}/{boat=null}");  
     ```  
@@ -240,7 +237,6 @@ Console.WriteLine("Bound URI: {0}", boundUri);
 -   ```  
     UriTemplate t = new UriTemplate("{shoe=1}/{boat=null}");  
     ```  
-  
  The following are invalid template strings with  default values of `null`:  
   
 -   ```  
@@ -250,7 +246,6 @@ Console.WriteLine("Bound URI: {0}", boundUri);
 -   ```  
     UriTemplate t = new UriTemplate("{shoe=null}/{boat=x}/{bed=null}"); // shoe cannot have a null default because boat does not have a default null value  
     ```  
-  
 ### Default Values and Matching  
  When matching a candidate URI with a template that has default values, the default values are placed in the <xref:System.UriTemplateMatch.BoundVariables%2A> collection if values are not specified in the candidate URI.  
   

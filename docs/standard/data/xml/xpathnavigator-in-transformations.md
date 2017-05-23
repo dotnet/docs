@@ -59,7 +59,6 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides read-only random acces
 </xsl:template>  
   
 </xsl:stylesheet>  
-  
 ```  
   
 ## test.xml  
@@ -89,7 +88,6 @@ Public Class sample
         xslt.Transform(xd, Nothing, strmTemp, Nothing)  
     End Sub 'Main  
 End Class 'sample  
-  
 ```  
   
 ```csharp  
@@ -120,7 +118,6 @@ public class sample
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>Joe  
-  
 ```  
   
 ## See Also  

@@ -71,7 +71,6 @@ serializer.WriteObject(writer, new Customer(), new MyCustomerResolver());
 writer.Flush();  
 ms.Position = 0;  
 Console.WriteLine(((Customer)serializer.ReadObject(XmlDictionaryReader.CreateDictionaryReader(XmlReader.Create(ms)), false, new MyCustomerResolver()));  
-  
 ```  
   
  Or you can set it on the <xref:System.ServiceModel.Description.DataContractSerializerOperationBehavior> as shown in the following example.  
@@ -90,7 +89,6 @@ if (serializerBehavior == null)
 }  
   
 SerializerBehavior.DataContractResolver = new MyCustomerResolver();  
-  
 ```  
   
  You can declaratively specify a data contract resolver by implementing an attribute that can be applied to a service.  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [KnownAssemblyAttribute](../../../../docs/framework/wcf/samples/knownassemblyattribute.md) sample. This sample implements an attribute called "KnownAssembly" that adds a custom data contract resolver to the service’s behavior.  

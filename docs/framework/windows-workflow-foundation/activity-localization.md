@@ -34,7 +34,6 @@ When workflow applications and components have the potential to be localized int
     ```  
     using System.Reflection;  
     using System.Resources;  
-  
     ```  
   
 5.  Create a resource manager in your project.  
@@ -43,14 +42,12 @@ When workflow applications and components have the potential to be localized int
     ResourceManager ErrorManager;  
     ...  
     ErrorManager = new ResourceManager("MyNamespace.ErrorResources", Assembly.GetExecutingAssembly());  
-  
     ```  
   
 6.  Get the string from the resource manager where it is required.  
   
     ```  
     String errorMessage = ErrorManager.GetString("ErrorString");  
-  
     ```  
   
  The following code sample demonstrates how to utilize localized strings in the <xref:System.Activities.Activity.CacheMetadata%2A> method.  

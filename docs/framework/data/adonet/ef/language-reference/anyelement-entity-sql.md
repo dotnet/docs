@@ -25,7 +25,6 @@ Extracts an element from a multivalued collection.
 ## Syntax  
   
 ```  
-  
 ANYELEMENT ( expression )  
 ```  
   

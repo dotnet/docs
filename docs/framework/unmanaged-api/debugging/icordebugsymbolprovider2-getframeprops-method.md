@@ -23,13 +23,11 @@ Returns the method starting relative virtual address of a method and the parent 
 ## Syntax  
   
 ```  
-  
 HRESULT GetFrameProps(  
    [in] ULONG32 codeRva,  
    [out] ULONG32 *pCodeStartRva,  
    [out] ULONG32 *pParentFrameStartRva  
 );  
-  
 ```  
   
 #### Parameters  

@@ -120,7 +120,6 @@ This sample demonstrates how to implement a custom claim authorization policy an
   </behaviors>  
   
 </system.serviceModel>  
-  
 ```  
   
  Each client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate security mode as specified in this case in the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md) and `clientCredentialType` as specified in the [\<message>](../../../../docs/framework/configure-apps/file-schema/wcf/message-of-wshttpbinding.md).  
@@ -189,7 +188,6 @@ This sample demonstrates how to implement a custom claim authorization policy an
     </behaviors>  
   
   </system.serviceModel>  
-  
 ```  
   
  For the user name-based endpoint, the client implementation sets the user name and password to use.  
@@ -216,7 +214,6 @@ catch (Exception e)
 }  
   
 client1.Close();  
-  
 ```  
   
  For the certificate-based endpoint, the client implementation sets the client certificate to use.  
@@ -242,7 +239,6 @@ catch (Exception e)
 }  
   
 client2.Close();  
-  
 ```  
   
  This sample uses a custom <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> to validate user names and passwords. The sample implements `MyCustomUserNamePasswordValidator`, derived from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. See the documentation about <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> for more information. For the purposes of demonstrating the integration with the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>, this custom validator sample implements the <xref:System.IdentityModel.Selectors.UserNamePasswordValidator.Validate%2A> method to accept user name/password pairs where the user name matches the password as shown in the following code.  
@@ -268,7 +264,6 @@ public class MyCustomUserNamePasswordValidator : UserNamePasswordValidator
     }  
   }  
 }  
-  
 ```  
   
  Once the validator is implemented in service code, the service host must be informed about the validator instance to use. This is done using the following code.  
@@ -318,7 +313,6 @@ public class MyServiceAuthorizationManager : ServiceAuthorizationManager
     return false;                   
   }  
 }  
-  
 ```  
   
  Once the custom <xref:System.ServiceModel.ServiceAuthorizationManager> is implemented, the service host must be informed about the <xref:System.ServiceModel.ServiceAuthorizationManager> to use. This is done as shown in the following code.  
@@ -330,7 +324,6 @@ public class MyServiceAuthorizationManager : ServiceAuthorizationManager
         ...  
     </serviceAuthorization>  
 </behavior>  
-  
 ```  
   
  The primary <xref:System.IdentityModel.Policy.IAuthorizationPolicy> method to implement is the <xref:System.IdentityModel.Policy.IAuthorizationPolicy.Evaluate%28System.IdentityModel.Policy.EvaluationContext%2CSystem.Object%40%29> method.  
@@ -399,7 +392,6 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
             <add policyType='Microsoft.ServiceModel.Samples.CustomAuthorizationPolicy.MyAuthorizationPolicy, PolicyLibrary' />  
        </authorizationPolicies>   
 </serviceAuthorization>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The client successfully calls the Add, Subtract and Multiple methods and gets an "Access is denied" message when trying to call the Divide method. Press ENTER in the client window to shut down the client.  
@@ -421,7 +413,6 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
     echo making server cert  
     echo ************  
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the server certificate into client's trusted certificate store.  
@@ -443,7 +434,6 @@ public class MyAuthorizationPolicy : IAuthorizationPolicy
     echo making client cert  
     echo ************  
     makecert.exe -sr CurrentUser -ss MY -a sha1 -n CN=%CLIENT_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the client certificate into server's trusted certificate store.  

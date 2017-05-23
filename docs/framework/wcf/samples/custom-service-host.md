@@ -114,7 +114,6 @@ foreach (Uri baseAddress in this.BaseAddresses)
                                 "mex");  
     }  
 }  
-  
 ```  
   
 ## Using a custom ServiceHost in self-host  

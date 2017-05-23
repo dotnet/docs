@@ -29,7 +29,7 @@
 ## Examples  
  The following sample code shows how you can build a designer for the Parallel activity. Note the binding to ModelItem.Branches for the Items.  
   
-```  
+```xaml  
 <sap:ActivityDesigner x:Class="customActivityDesigners.CustomParallelDesigner"  
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -56,8 +56,6 @@
     </Grid>  
 </sap:ActivityDesigner>  
 ```  
-  
-<!-- TODO: review snippet reference  [!CODE [WorkflowItemsPresenter#1](WorkflowItemsPresenter#1)]  -->  
   
  ]]></format>
     </remarks>
@@ -390,7 +388,7 @@
 ## Examples  
  The following example in XAML shows the `ItemsPanel` for the designer of <xref:System.Activities.Statements.Parallel> activities that is based on a horizontally oriented `StackPanel`.  
   
-```  
+```xaml  
   
 <sad:WorkflowItemsPresenter.ItemsPanel>  
   <ItemsPanelTemplate>  

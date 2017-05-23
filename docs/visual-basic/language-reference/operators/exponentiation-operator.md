@@ -49,7 +49,6 @@ Raises a number to the power of another number.
 ## Syntax  
   
 ```  
-  
 number ^ exponent  
 ```  
   

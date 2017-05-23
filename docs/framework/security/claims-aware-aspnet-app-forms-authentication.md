@@ -91,7 +91,6 @@ manager: "mbaldwin"
             </asp:GridView>  
         </p>  
     </asp:Content>  
-  
     ```  
   
      This step adds a GridView control to your *Default.aspx* page that will be populated with the claims retrieved from Forms authentication.  

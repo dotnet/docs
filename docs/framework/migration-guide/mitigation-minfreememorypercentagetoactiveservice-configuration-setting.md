@@ -31,14 +31,12 @@ Memory gates checking failed because the free memory (nnnn bytes) is less than n
  To revert to the previous behavior where the [minFreeMemoryPercentageToActivateService](../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) setting was ignored, modify the web.config file as follows:  
   
 ```  
-  
 <serviceHostingEnvironment multipleSiteBindingsEnabled="true"   
                            minFreeMemoryPercentageToActivateService="0">  
    <serviceActivations>  
    ...  
    </serviceActivations>  
 </serviceHostingEnvironment>  
-  
 ```  
   
 ## See Also  

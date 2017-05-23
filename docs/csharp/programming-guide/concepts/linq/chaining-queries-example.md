@@ -84,7 +84,6 @@ Main: str >DEF!!!<
 ToUpper: source >ghi<  
 AppendString: source >GHI<  
 Main: str >GHI!!!<  
-  
 ```  
   
  In this example, you can see that each extension method operates one at a time for each item in the source collection.  

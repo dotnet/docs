@@ -359,13 +359,11 @@ manager: "wpickett"
  However, if you replace the <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> property with <xref:System.Globalization.CultureInfo.InvariantCulture%2A?displayProperty=fullName> in the calls to <xref:System.DateTime.ToString%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName> and <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%29?displayProperty=fullName>,   the persisted date and time data is successfully restored, as the following output shows.  
   
 ```  
-  
 06.05.1758 21:26  
 05.05.1818 07:19  
 22.04.1870 23:54  
 08.09.1890 06:47  
 18.02.1905 15:12  
-  
 ```  
   
 ## See Also  

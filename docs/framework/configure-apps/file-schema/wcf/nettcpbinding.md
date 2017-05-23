@@ -30,7 +30,6 @@ Specifies a secure, reliable, optimized binding suitable for cross-machine commu
 ## Syntax  
   
 ```  
-  
 <netTcpBinding>  
    <binding   
       closeTimeout="TimeSpan"  

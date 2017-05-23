@@ -30,7 +30,6 @@ void client_GetAlbumListCompleted(object sender, GetAlbumListCompletedEventArgs 
     // This is on the UI thread, myPanel can be accessed directly  
     myPanel.DataContext = e.Result;   
 }  
-  
 ```  
   
  In the previous sample, the `DataContext` for the `grid` layout element named `myPanel` is set to the data returned by the `GetAlbumList` method. The `DataContext` allows elements to inherit information from their parent elements about the data source that is used for binding, as well as other characteristics of the binding such as the path. The line of code must be executed every time the data on the server is updated. For example, it is executed when the window is initialized and when a new album is added.  
@@ -42,7 +41,6 @@ void client_GetAlbumListCompleted(object sender, GetAlbumListCompletedEventArgs 
           ItemTemplate="{StaticResource AlbumStyle}"  
           ItemsSource="{Binding }"   
           IsSynchronizedWithCurrentItem="true" />  
-  
 ```  
   
  This specifies that the data bound to the top-level UI element is also bound to this control (that is, the array of Albums). In addition, `ItemTemplate="{StaticResource AlbumStyle}"` specifies the data template to be used for each item in the `ListBox`. You can also define data templates to specify how the data should be formatted. These data templates can be reused for other UI elements in the application, the advantage is that the data template is defined and maintained in one place.  
@@ -60,7 +58,6 @@ void client_GetAlbumListCompleted(object sender, GetAlbumListCompletedEventArgs 
         <TextBlock Grid.Column="1" TextContent="{Binding Path=Tracks#.Count}" HorizontalAlignment="Right" />  
     </Grid>  
 </DataTemplate>  
-  
 ```  
   
  The following XAML code creates a second `ListBox`.  
@@ -70,7 +67,6 @@ void client_GetAlbumListCompleted(object sender, GetAlbumListCompletedEventArgs 
             Grid.ColumnSpan="2"   
             ItemTemplate="{StaticResource TrackStyle}"  
             ItemsSource="{Binding Path=Tracks}" />  
-  
 ```  
   
  The code specifies a path for the `ItemsSource`. This indicates that the data bound to this control is not the top-level data but a property of the top-level data named `Tracks`. This property represents the array of tracks contained within the album. In addition, a different `DataTemplate` named `TrackStyle` is specified. The layout of the `TrackStyle` template is similar to that of the `AlbumStyle` template, but the `TextBlock`s are bound to different properties. This is because the two templates are used with different data objects.  

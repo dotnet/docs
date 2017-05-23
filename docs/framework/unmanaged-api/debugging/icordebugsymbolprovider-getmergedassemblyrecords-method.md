@@ -23,13 +23,11 @@ Gets the symbol records for all the merged assemblies.
 ## Syntax  
   
 ```  
-  
 HRESULT GetMergedAssemblyRecords(  
    [in] ULONG32 cRequestedRecords,  
    [out] ULONG32 *pcFetchedRecords,  
    [out, size_is(cRequestedRecords), length_is(*pcFetchedRecords)] ICorDebugMergedAssemblyRecord *pRecords[]  
 );  
-  
 ```  
   
 #### Parameters  

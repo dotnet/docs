@@ -135,4 +135,4 @@ manager: "wpickett"
 |[Hosting](../../../../docs/framework/wpf/app-development/hosting-wpf-applications.md)|Provides an overview of [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)].|  
 |[Build and Deploy](../../../../docs/framework/wpf/app-development/building-and-deploying-wpf-applications.md)|Describes how to build and deploy your WPF application.|  
 |[Introduction to WPF in Visual Studio 2015](../../../../docs/framework/wpf/getting-started/introduction-to-wpf-in-vs.md)|Describes the main features of WPF.|  
-|[Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|A walkthrough that shows how to create a WPF application using page navigation, layout, controls, images, styles, and binding.|
+|[Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|A walkthrough that shows how to create a WPF application using page navigation, layout, controls, images, styles, and binding.|

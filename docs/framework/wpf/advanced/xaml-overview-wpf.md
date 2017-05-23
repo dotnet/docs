@@ -322,7 +322,7 @@ This topic describes the features of the XAML language and demonstrates how you 
 ## What's Next  
  This topic provides a basic introduction to XAML syntax concepts and terminology as it applies to WPF. For more information about the terms used here, see [XAML Syntax In Detail](../../../../docs/framework/wpf/advanced/xaml-syntax-in-detail.md).  
   
- If you have not already done this, try the exercises in the tutorial topic [Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md). When you create the markup-centric application described by the tutorial, the exercise will help reinforce many of the concepts described in this topic.  
+ If you have not already done this, try the exercises in the tutorial topic [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md). When you create the markup-centric application described by the tutorial, the exercise will help reinforce many of the concepts described in this topic.  
   
  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] uses a particular application model that is based on the <xref:System.Windows.Application> class. For details, see [Application Management Overview](../../../../docs/framework/wpf/app-development/application-management-overview.md).  
   

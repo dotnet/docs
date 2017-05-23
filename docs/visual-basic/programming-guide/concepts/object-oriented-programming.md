@@ -250,7 +250,7 @@ The following access modifiers are available:
 |[Friend](../../../visual-basic/language-reference/modifiers/friend.md)|The type or member can be accessed by any code in the same assembly, but not from another assembly.|
 |`Protected Friend`|The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly.|
 
-For more information, see [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
+For more information, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).
 
 ### Instantiating classes  
 To create an object, you need to instantiate a class, or create a class instance.

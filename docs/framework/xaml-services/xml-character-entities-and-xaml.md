@@ -20,12 +20,12 @@ helpviewer_keywords:
   - "special characters [XAML Services]"
   - "apostrophe (') [XAML Services]"
   - "greater-than (>) character [XAML Services]"
-  - "XAML [XAML Services], quotation mark (")"
+  - "XAML [XAML Services], quotation mark (\")"
   - "XAML [XAML Services], apostrophe (')"
   - "& (ampersand) [XAML Services]"
   - "XAML [XAML Services], & (ampersand)"
   - "XAML [XAML Services], escape sequence"
-  - "quotation mark (") [XAML Services]"
+  - "quotation mark (\") [XAML Services]"
   - "less-than (<) character [XAML Services]"
 ms.assetid: 6896d0ce-74f7-420a-9ab4-de9bbf390e8d
 caps.latest.revision: 23

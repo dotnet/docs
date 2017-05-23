@@ -27,7 +27,6 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
 ## Syntax  
   
 ```  
-  
 <security mode="Message/None/Transport/TransportWithCredential">  
    <transport  
       clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  

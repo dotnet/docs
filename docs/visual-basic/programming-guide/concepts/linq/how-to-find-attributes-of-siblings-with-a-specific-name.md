@@ -52,7 +52,6 @@ End If
 For Each el As XAttribute In list1  
     Console.WriteLine(el)  
 Next  
-  
 ```  
   
  This example produces the following output:  

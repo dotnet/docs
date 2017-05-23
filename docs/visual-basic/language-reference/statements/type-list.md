@@ -59,7 +59,6 @@ Specifies the *type parameters* for a *generic* programming element. Multiple pa
 ## Syntax  
   
 ```  
-  
 [genericmodifier] typename [ As constraintlist ]  
 ```  
   

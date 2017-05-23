@@ -73,7 +73,6 @@ Endpoints provide clients with access to the functionality a [!INCLUDE[indigo1](
   </system.serviceModel>  
   
 </configuration>  
-  
 ```  
   
 ## Example  

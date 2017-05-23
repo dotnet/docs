@@ -136,7 +136,6 @@ This topic describes how to create a Windows application that uses client applic
           serializeAs="String" allowAnonymous="false" />  
       </properties>  
     </profile>  
-  
     ```  
   
  In the following procedure, you use the ASP.NET Web Site Administration tool to complete the service configuration and populate the local database file. You will add two users named `employee` and `manager` belonging to two roles with the same names. The user passwords are `employee!` and `manager!` respectively.  

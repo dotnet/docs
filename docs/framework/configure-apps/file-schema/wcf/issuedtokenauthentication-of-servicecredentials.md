@@ -28,7 +28,6 @@ Specifies a custom token issued as a service credential.
 ## Syntax  
   
 ```  
-  
 <issuedTokenAuthentication   
    allowUntrustedRsaIssuers="Boolean"  
    audienceUriMode="Always/BearerKeyOnly/Never"  

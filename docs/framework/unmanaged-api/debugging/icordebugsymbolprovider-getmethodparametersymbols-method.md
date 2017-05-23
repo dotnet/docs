@@ -23,14 +23,12 @@ Gets a method's parameter symbols given the relative virtual address (RVA) of th
 ## Syntax  
   
 ```  
-  
 HRESULT GetMethodParameterSymbols(  
    [in] ULONG32 nativeRVA,  
    [in] ULONG32 cRequestedSymbols,  
    [out] ULONG32 *pcFetchedSymbols,  
    [out, size_is(cRequestedSymbols), length_is(*pcFetchedSymbols)] ICorDebugVariableSymbol *pSymbols[]  
 );  
-  
 ```  
   
 #### Parameters  

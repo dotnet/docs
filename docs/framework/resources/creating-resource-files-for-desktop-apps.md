@@ -55,7 +55,6 @@ name2=value2
 name1=value1  
 name2=value2  
 #endif  
-  
 ```  
   
  The resource file format of .txt and .restext files is identical. The .restext file extension merely serves to make text files immediately identifiable as text-based resource files.  
@@ -63,12 +62,10 @@ name2=value2
  String resources appear as *name/value* pairs, where *name* is a string that identifies the resource, and *value* is the resource string that is returned when you pass *name* to a resource retrieval method such as <xref:System.Resources.ResourceManager.GetString%2A?displayProperty=fullName>. *name* and *value* must be separated by an equal sign (=). For example:  
   
 ```  
-  
 FileMenuName=File  
 EditMenuName=Edit  
 ViewMenuName=View  
 HelpMenuName=Help  
-  
 ```  
   
 > [!CAUTION]
@@ -154,7 +151,6 @@ greeting=Hello, {0}!
  The following example shows a portion of a .resx file that includes an <xref:System.Int32> resource and a bitmap image.  
   
 ```  
-  
 <data name="i1" type="System.Int32, mscorlib">  
   <value>20</value>  
 </data>  

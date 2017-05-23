@@ -55,7 +55,6 @@ new InvokePowerShell()
 {  
     CommandText = "notepad"  
 },  
-  
 ```  
   
  The second invocation gets a list of the processes running on the local machine.  
@@ -66,7 +65,6 @@ new InvokePowerShell<Process>()
     CommandText = "Get-Process",  
     Output = processes1,  
 },  
-  
 ```  
   
  `Output` is the variable used to store the output of the command.  
@@ -87,7 +85,6 @@ new InvokePowerShell<Process>()
 runspace = RunspaceFactory.CreateRunspace();  
 runspace.Open();  
 pipeline = runspace.CreatePipeline();  
-  
 ```  
   
  It then creates a PowerShell command and populates it with parameters and variables.  
@@ -97,14 +94,12 @@ Command cmd = new Command(this.CommandText, this.IsScript);
 // loop over parameters and run: cmd.Parameters.Add(...)  
 // loop over variables and run: runspace.SessionStateProxy.SetVariable(...)  
 pipeline.Commands.Add(cmd);  
-  
 ```  
   
  The inputs piped in are also sent to the pipeline at this point. Finally, the pipeline is wrapped in a `PipelineInvokerAsyncResult` object and returned. The `PipelineInvokerAsyncResult` object registers a listener and invokes the pipeline.  
   
 ```  
 pipeline.InvokeAsync();  
-  
 ```  
   
  When execution finishes, output and errors are stored within the same `PipelineInvokerAsyncResult` object, and control is handed back to the workflow runtime by calling the callback method originally passed to <xref:System.Activities.AsyncCodeActivity.BeginExecute%2A>.  
@@ -150,7 +145,6 @@ new ForEach<PSObject>
         }  
     }  
 },  
-  
 ```  
   
  For each of the two `InvokePowerShell` activities (generic, and non-generic), a designer was created. InvokePowerShellDesigner.xaml and its associated .cs file define the appearance in [!INCLUDE[wfd2](../../../../includes/wfd2-md.md)] for the non-generic version of the `InvokePowerShell` activity. Inside InvokePowerShellDesigner.xaml, a <xref:System.Windows.Controls.DockPanel> is used to represent the graphical interface.  
@@ -162,7 +156,6 @@ new ForEach<PSObject>
                  TextWrapping="WrapWithOverflow"  AcceptsReturn="True" MinLines="4" MaxLines="4"  
                  Background="{x:Null}" Margin="3" />  
     </DockPanel>  
-  
 ```  
   
  Note that the `Text` property of the text box is a two-way binding that ensures that the value of the activity’s `CommandText` property is equivalent to the value input into the designer.  
@@ -175,7 +168,6 @@ new ForEach<PSObject>
     AllowedItemType="{x:Type sa:Activity}"  
     Item="{Binding Path=ModelItem.InitializationAction.Handler, Mode=TwoWay}"  
     Grid.Row="1" Grid.Column="1" />  
-  
 ```  
   
  The designer customization does not stop with the .xaml files that define the appearance of the activity on the design canvas. The dialog boxes used to display the parameters of the activity can also be customized. These parameters and PowerShell variables affect the behavior of PowerShell commands. The activity exposes them as <!--zz <xref:System.Collections.Generic.Dictionary%601>--> `System.Collections.Generic.Dictionary` types. ArgumentDictionaryEditor.cs, PropertyEditorResources.xaml and PropertyEditorResources.cs define the dialog box that allows you to edit these types.  

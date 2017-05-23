@@ -41,12 +41,10 @@ manager: "wpickett"
   
     ```vb  
     sqlDataAdapter1.Fill(DsCategories1)  
-  
     ```  
   
     ```csharp  
     sqlDataAdapter1.Fill(DsCategories1);  
-  
     ```  
   
     ```cpp  
@@ -59,14 +57,12 @@ manager: "wpickett"
     Dim ws As New MyProject.localhost.CategoriesService()  
     ws.Credentials = System.Net.CredentialCache.DefaultCredentials  
     DsCategories1.Merge(ws.GetCategories())  
-  
     ```  
   
     ```csharp  
     MyProject.localhost.CategoriesService ws = new MyProject.localhost.CategoriesService();  
     ws.Credentials = System.Net.CredentialCache.DefaultCredentials;  
     DsCategories1.Merge(ws.GetCategories());  
-  
     ```  
   
     ```cpp  
@@ -85,12 +81,10 @@ manager: "wpickett"
   
     ```vb  
     DataGrid1.SetDataBinding(DsCustomers1, "Customers")  
-  
     ```  
   
     ```csharp  
     DataGrid1.SetDataBinding(DsCustomers1, "Customers");  
-  
     ```  
   
     ```cpp  
@@ -101,12 +95,10 @@ manager: "wpickett"
   
     ```vb  
     DataGrid1.SetDataBinding(DsCustomers1, "")  
-  
     ```  
   
     ```csharp  
     DataGrid1.SetDataBinding(DsCustomers1, "");  
-  
     ```  
   
     ```cpp  

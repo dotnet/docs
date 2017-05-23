@@ -62,7 +62,6 @@ Sub sub name(ByVal parameter1 As datatype1, Optional ByVal parameter2 As datatyp
  When you omit one or more optional arguments in the argument list, you use successive commas to mark their positions. The following example call supplies the first and fourth arguments but not the second or third:  
   
 ```  
-  
 sub name(argument 1, , , argument 4)  
 ```  
   

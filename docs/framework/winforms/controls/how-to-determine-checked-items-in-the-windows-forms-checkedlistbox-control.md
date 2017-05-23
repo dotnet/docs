@@ -38,7 +38,6 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
        Next x  
        MessageBox.Show(s)  
     End If  
-  
     ```  
   
     ```csharp  
@@ -53,7 +52,6 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
        }  
     MessageBox.Show (s);  
     }  
-  
     ```  
   
     ```cpp  
@@ -86,7 +84,6 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
        End If  
     Next  
     MessageBox.Show(s)  
-  
     ```  
   
     ```csharp  
@@ -101,7 +98,6 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
        }  
     }  
     MessageBox.Show (s);  
-  
     ```  
   
     ```cpp  

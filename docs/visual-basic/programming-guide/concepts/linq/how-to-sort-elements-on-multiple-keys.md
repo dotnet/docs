@@ -40,7 +40,6 @@ For Each r In result
     Console.WriteLine("CustomerID:{0} EmployeeID:{1} ShipPostalCode:{2} OrderDate:{3:d}", _  
                 r.CustomerID, r.EmployeeID, r.ShipPostalCode, r.OrderDate)  
 Next  
-  
 ```  
   
  This code produces the following output:  

@@ -38,7 +38,6 @@ public interface ICalculator
                   ReplyAction="http://test/MyMessage_action")]  
     MyMessage Calculate(MyMessage request);  
 }  
-  
 ```  
   
  The custom message `MyMessage` is defined in a class annotated with <xref:System.ServiceModel.MessageContractAttribute>, <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes. Only the third constructor is used in this sample. Using message contracts allows you to exercise full control over the SOAP message. In this sample, the <xref:System.ServiceModel.MessageHeaderAttribute> attribute is used to put `Operation` in a SOAP header. The operands `N1`, `N2` and the `Result` appear within the SOAP body because they have the <xref:System.ServiceModel.MessageBodyMemberAttribute> attribute applied.  
@@ -166,14 +165,12 @@ Console.WriteLine("Add({0},{1}) = {2}", request.N1, request.N2, response.Result)
  When you run the sample, the calculations are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
-  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
 Divide(22,7) = 3.14285714285714  
   
 Press <ENTER> to terminate client.  
-  
 ```  
   
  At this point, custom user-defined messages have passed between the client and the service operation. The message contract defined that the operands and results were in the message body and that the operator was in a message header. Message logging can be configured to observe this message structure.  

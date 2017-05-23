@@ -61,7 +61,6 @@ manager: "wpickett"
        ' Delete the first column (index 0)  
        DataGrid1.TableStyles(0).GridColumnStyles.RemoveAt(0)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -109,7 +108,6 @@ manager: "wpickett"
        ' Hide the first column (index 0)  
        DataGrid1.TableStyles(0).GridColumnStyles(0).Width = 0  
     End Sub  
-  
     ```  
   
     ```csharp  

@@ -46,7 +46,6 @@ Performs short-circuiting logical conjunction on two expressions.
 ## Syntax  
   
 ```  
-  
 result = expression1 AndAlso expression2  
 ```  
   

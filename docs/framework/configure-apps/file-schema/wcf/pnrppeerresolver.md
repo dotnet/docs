@@ -27,7 +27,6 @@ Specifies that the PNRP (Peer Name Resolution Protocol) resolver is to be used a
 ## Syntax  
   
 ```  
-  
 <pnrpResolver resolverType="String" />  
 ```  
   

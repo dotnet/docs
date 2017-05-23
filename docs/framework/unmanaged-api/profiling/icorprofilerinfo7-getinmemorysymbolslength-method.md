@@ -32,12 +32,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```  
-  
 HRESULT GetInMemorySymbolsLength(  
         [in] ModuleID moduleId,  
         [out] DWORD* pCountSymbolBytes  
 );  
-  
 ```  
   
 #### Parameters  

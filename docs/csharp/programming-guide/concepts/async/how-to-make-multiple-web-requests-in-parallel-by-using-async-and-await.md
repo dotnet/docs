@@ -41,7 +41,6 @@ var myTask = someWebAccessMethodAsync(url);
   
 // The application of await suspends the rest of this method until the task is complete.  
 var result = await myTask;  
-  
 ```  
   
  Between starting a task and awaiting it, you can start other tasks. The additional tasks implicitly run in parallel, but no additional threads are created.  

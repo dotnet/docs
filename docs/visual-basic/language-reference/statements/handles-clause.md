@@ -42,7 +42,6 @@ Declares that a procedure handles a specified event.
 ## Syntax  
   
 ```  
-  
 proceduredeclaration Handles eventlist  
 ```  
   

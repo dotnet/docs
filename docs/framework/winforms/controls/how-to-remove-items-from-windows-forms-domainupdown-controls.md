@@ -29,12 +29,10 @@ You can remove items from the Windows Forms <xref:System.Windows.Forms.DomainUpD
   
     ```vb  
     DomainUpDown1.Items.Remove("noodles")  
-  
     ```  
   
     ```csharp  
     domainUpDown1.Items.Remove("noodles");  
-  
     ```  
   
     ```cpp  
@@ -48,13 +46,11 @@ You can remove items from the Windows Forms <xref:System.Windows.Forms.DomainUpD
     ```vb  
     ' Removes the first item in the list.  
     DomainUpDown1.Items.RemoveAt(0)  
-  
     ```  
   
     ```csharp  
     // Removes the first item in the list.  
     domainUpDown1.Items.RemoveAt(0);  
-  
     ```  
   
     ```cpp  

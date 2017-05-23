@@ -26,7 +26,6 @@ Constructs anonymous, structurally typed records from one or more values.
 ## Syntax  
   
 ```  
-  
 ROW ( expression [ AS alias ] [,...] )  
 ```  
   

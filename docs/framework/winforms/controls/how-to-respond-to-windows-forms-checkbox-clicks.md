@@ -40,7 +40,6 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
           CheckBox1.Text = "Unchecked"  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -57,7 +56,6 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
           checkBox1.Text = "Unchecked";  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -99,7 +97,6 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
              ' Code for indeterminate state.  
        End Select   
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -118,7 +115,6 @@ Whenever a user clicks a Windows Forms <xref:System.Windows.Forms.CheckBox> cont
              break;  
        }  
     }  
-  
     ```  
   
     ```cpp  

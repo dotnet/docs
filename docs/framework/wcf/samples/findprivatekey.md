@@ -93,7 +93,6 @@ FindPrivateKey <storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbpri
   
 ```  
 User.FindPrivateKey My CurrentUser -n "CN=localhost" -a  
-  
 ```  
   
  This example finds the filename of the certificate with a thumbprint of "03 33 98 63 d0 47 e7 48 71 33 62 64 76 5c 4c 9d 42 1d 6b 52", in the Personal store of the Local Computer.  

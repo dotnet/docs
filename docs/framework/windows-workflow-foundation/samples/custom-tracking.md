@@ -49,7 +49,6 @@ public abstract class TrackingParticipant
     public virtual TrackingProfile TrackingProfile { get; set; }  
     public abstract void Track(TrackingRecord record, TimeSpan timeout);  
 }  
-  
 ```  
   
  The complete tracking participant is implemented in the ConsoleTrackingParticipant.cs file.The following code example is the <xref:System.Activities.Tracking.TrackingParticipant.Track%2A> method for the custom tracking participant.  
@@ -96,7 +95,6 @@ protected override void Track(TrackingRecord record, TimeSpan timeout)
     Console.WriteLine();  
   
 }  
-  
 ```  
   
  The following code example adds the console participant to the workflow invoker.  
@@ -111,7 +109,6 @@ ConsoleTrackingParticipant customTrackingParticipant = new ConsoleTrackingPartic
   
 WorkflowInvoker invoker = new WorkflowInvoker(BuildSampleWorkflow());  
 invoker.Extensions.Add(customTrackingParticipant);  
-  
 ```  
   
 ### Emitting Custom Tracking Records  
@@ -136,7 +133,6 @@ CustomTrackingRecord customRecord = new CustomTrackingRecord("OrderIn")
   
 // Emit custom tracking record  
 context.Track(customRecord);  
-  
 ```  
   
 #### To use this sample  

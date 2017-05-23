@@ -27,7 +27,6 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ## Syntax  
   
 ```  
-  
 <workflowRuntime cachedInstanceExpiration="TimeSpan"  
                                   enablePerformanceCounters="Boolean"  
                                   name="String"  

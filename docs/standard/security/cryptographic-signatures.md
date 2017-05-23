@@ -76,7 +76,6 @@ End Module
   
 using System;  
 using System.Security.Cryptography;  
-  
 ```  
   
 ```csharp  
@@ -134,7 +133,6 @@ class Class1
 Dim RSAKeyInfo As RSAParameters  
 RSAKeyInfo.Modulus = ModulusData  
 RSAKeyInfo.Exponent = ExponentData  
-  
 ```  
   
 ```csharp  
@@ -159,7 +157,6 @@ If RSADeformatter.VerifySignature(HashValue, SignedHashValue) Then
 Else  
    Console.WriteLine("The signture is not valid.")  
 End If  
-  
 ```  
   
 ```csharp  

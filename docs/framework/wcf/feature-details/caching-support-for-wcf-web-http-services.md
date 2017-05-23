@@ -42,7 +42,6 @@ manager: "erikre"
 <system.serviceModel>  
         <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />      
 </system.serviceModel>  
-  
 ```  
   
 > [!WARNING]

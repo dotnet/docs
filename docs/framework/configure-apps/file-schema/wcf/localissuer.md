@@ -29,7 +29,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <localIssuer address="string"  
       binding="string"  
       bindingConfiguration="string" />  

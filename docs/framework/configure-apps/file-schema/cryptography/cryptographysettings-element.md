@@ -36,7 +36,6 @@ Contains cryptography settings.
 ## Syntax  
   
 ```  
-  
       <cryptographySettings>   
 </crytopgraphySettings>  
 ```  

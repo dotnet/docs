@@ -39,7 +39,6 @@ When a Windows Forms <xref:System.Windows.Forms.TextBox> control first receives 
        TextBox1.SelectionStart = 0  
        TextBox1.SelectionLength = 0  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -47,7 +46,6 @@ When a Windows Forms <xref:System.Windows.Forms.TextBox> control first receives 
        textBox1.SelectionStart = 0;  
        textBox1.SelectionLength = 0;  
     }  
-  
     ```  
   
     ```cpp  

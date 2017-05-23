@@ -31,7 +31,6 @@ Customizes parameters used by the <xref:System.Net.HttpListener> class.
 ## Syntax  
   
 ```  
-  
       <httpListener  
   unescapeRequestUrl ="true|false"  
 />  

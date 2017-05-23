@@ -61,7 +61,6 @@ This is the first of six tasks required to create a basic [!INCLUDE[indigo1](../
                 double Divide(double n1, double n2);  
             }  
     }  
-  
     ```  
   
     ```  
@@ -84,7 +83,6 @@ This is the first of six tasks required to create a basic [!INCLUDE[indigo1](../
             Function Divide(ByVal n1 As Double, ByVal n2 As Double) As Double  
         End Interface  
     End Namespace  
-  
     ```  
   
      This contract defines an online calculator. Notice the `ICalculator` interface is marked with the <xref:System.ServiceModel.ServiceContractAttribute> attribute. This attribute defines a namespace that is used to disambiguate the contract name. Each calculator operation is marked with the <xref:System.ServiceModel.OperationContractAttribute> attribute.  

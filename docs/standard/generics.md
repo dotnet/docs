@@ -52,7 +52,6 @@ Here is a small program that illustrates the efficiency of knowing the data stru
       }
     }
   }
-
 ```
 
 This program yields the following output:
@@ -60,7 +59,6 @@ This program yields the following output:
 ```console
 Generic Sort: System.Collections.Generic.List\`1[System.Int32] Time taken: 0.0789ms
 Non-Generic Sort: System.Collections.ArrayList Time taken: 2.4324ms
-
 ```
 
 The first thing you notice here is that sorting the generic list is significantly faster than for the non-generic list. You might also notice that the type for the generic list is distinct ([System.Int32]) whereas the type for the non-generic list is generalized. Because the runtime knows the generic `List<int>` is of type int, it can store the list elements in an underlying integer array in memory while the non-generic `ArrayList` has to cast each list element as an object as stored in an object array in memory. As shown through this example, the extra castings take up time and slow down the list sort.

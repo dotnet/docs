@@ -36,7 +36,6 @@ Contains information about assembly version redirection and the locations of ass
 ## Syntax  
   
 ```  
-  
       <assemblyBinding    
    xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v1.0.3705">  
 </assemblyBinding>  

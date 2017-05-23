@@ -36,7 +36,6 @@ SendReply ReplyToStartOrder = new SendReply
 };  
   
 // Construct a workflow using StartOrder and ReplyToStartOrder.  
-  
 ```  
   
 ### Explicitly Initializing Request-Reply Correlation  

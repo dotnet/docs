@@ -35,7 +35,6 @@ The Assembly Registration tool reads the metadata within an assembly and adds th
 ## Syntax  
   
 ```  
-  
 regasm assemblyFile [options]  
 ```  
   

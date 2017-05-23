@@ -31,7 +31,6 @@ A routing entry that contain mappings between the routing filters and the target
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

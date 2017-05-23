@@ -43,37 +43,30 @@ manager: "wpickett"
   
 ```vb  
 Overloads Public Sub Load(String)  
-  
 ```  
   
 ```csharp  
 public void Load(string);  
-  
 ```  
   
 ```vb  
 Overloads Public Sub Load(String, XmlResolver)  
-  
 ```  
   
 ```csharp  
 public void Load(string, XmlResolver);  
-  
 ```  
   
 ```vb  
 Overloads Public Sub Load(XmlReader, XmlResolver, Evidence)  
-  
 ```  
   
 ```csharp  
 public void Load(XmlReader, XmlResolver, Evidence);  
-  
 ```  
   
 ```vb  
 Overloads Public Sub Load(XPathNavigator, XmlResolver, Evidence)  
-  
 ```  
   
 ```csharp  
@@ -142,7 +135,6 @@ public void Load(XPathNavigator, XmlResolver, Evidence);
 Dim xsltransform As XslTransform = New XslTransform()  
 xsltransform.Load("favorite.xsl")  
 xsltransform.Transform("MyDocument.Xml", "TransformResult.xml", Nothing)  
-  
 ```  
   
 ```csharp  
@@ -167,7 +159,6 @@ tmpDoc.LoadXml(testNode.OuterXml)
 ' to the Transform method.  
 Console.WriteLine(("Passing " + tmpDoc.OuterXml + " to print_root.xsl"))  
 xslt.Transform(tmpDoc, Nothing, Console.Out, Nothing)  
-  
 ```  
   
 ```csharp  

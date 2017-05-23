@@ -27,7 +27,6 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 void __stdcall SetFakeActiveWindow(  
    HWND hwnd  
 )  

@@ -44,7 +44,6 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
            ToolBarButton1.Pushed = False  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -64,7 +63,6 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
           toolBarButton1.Pushed = false;  
        }  
     }  
-  
     ```  
   
     ```cpp  

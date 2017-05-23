@@ -280,7 +280,6 @@ class Sandboxer : MarshalByRefObject
         }  
     }  
 }  
-  
 ```  
   
 ## See Also  

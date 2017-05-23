@@ -30,7 +30,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <scopedCertificates>  
       <add findValue="String"  
                 storeLocation="CurrentUser/LocalMachine"  

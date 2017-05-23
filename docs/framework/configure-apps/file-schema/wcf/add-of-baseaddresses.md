@@ -28,7 +28,6 @@ Represents a configuration element that specifies the base addresses used by the
 ## Syntax  
   
 ```  
-  
 <add baseAddress="string" />  
 ```  
   

@@ -26,7 +26,6 @@ This sample demonstrates how to implement and configure client and service messa
  Client message inspectors implement the <xref:System.ServiceModel.Dispatcher.IClientMessageInspector> interface and service message inspectors implement the <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector> interface. The implementations can be combined into a single class to form a message inspector that works for both sides. This sample implements such a combined message inspector. The inspector is constructed passing in a set of schemas against which incoming and outgoing messages are validated and allows the developer to specify whether incoming or outgoing messages are validated and whether the inspector is in dispatch or client mode, which affects the error handling as discussed later in this topic.  
   
 ```  
-  
 public class SchemaValidationMessageInspector : IClientMessageInspector, IDispatchMessageInspector  
 {  
     XmlSchemaSet schemaSet;  
@@ -68,7 +67,6 @@ object IDispatchMessageInspector.AfterReceiveRequest(ref System.ServiceModel.Cha
  If a validation error occurs on the service, the `ValidateMessageBody` method throws <xref:System.ServiceModel.FaultException>-derived exceptions. In <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector.AfterReceiveRequest%2A>, these exceptions can be put into the service model infrastructure where they are automatically transformed into SOAP faults and relayed to the client. In <xref:System.ServiceModel.Dispatcher.IDispatchMessageInspector.BeforeSendReply%2A>, <xref:System.ServiceModel.FaultException> exceptions must not be put into the infrastructure, because the transformation of fault exceptions thrown by the service occurs before the message inspector is called. Therefore the following implementation catches the known `ReplyValidationFault` exception and replaces the reply message with an explicit fault message. This method ensures that no invalid messages are returned by the service implementation.  
   
 ```  
-  
 void IDispatchMessageInspector.BeforeSendReply(ref System.ServiceModel.Channels.Message reply, object correlationState)  
 {  
     if (validateReply)  
@@ -124,7 +122,6 @@ void IClientMessageInspector.AfterReceiveReply(ref System.ServiceModel.Channels.
  If no error occurs, a new message is constructed that copies the properties and headers from the original message and uses the now-validated infoset in the memory stream, which is wrapped by an <xref:System.Xml.XmlDictionaryReader> and added to the replacement message.  
   
 ```  
-  
 void ValidateMessageBody(ref System.ServiceModel.Channels.Message message, bool isRequest)  
 {  
     if (!message.IsFault)  
@@ -403,7 +400,6 @@ catch (Exception e)
 {  
     DumpException(e);  
 }  
-  
 ```  
   
 #### To set up, build, and run the sample  

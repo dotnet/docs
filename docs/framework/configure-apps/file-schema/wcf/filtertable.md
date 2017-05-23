@@ -30,7 +30,6 @@ Represents a routing table that contains a list of filters to evaluate messages 
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

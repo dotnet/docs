@@ -23,11 +23,9 @@ Returns the container assembly of this `ICorDebugAssembly3` object.
 ## Syntax  
   
 ```  
-  
 HRESULT GetContainerAssembly(  
     ICorDebugAssembly **ppAssembly  
 );  
-  
 ```  
   
 #### Parameters  

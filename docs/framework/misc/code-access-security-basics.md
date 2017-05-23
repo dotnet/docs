@@ -76,7 +76,6 @@ manager: "wpickett"
       'This method is protected by the security call.  
    End Sub  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -129,7 +128,6 @@ Public Class MyClass1
       'YourMethod 'This method is not protected by the security call.  
    End Sub  
 End Class  
-  
 ```  
   
 ```csharp  

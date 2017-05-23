@@ -27,7 +27,6 @@ Specifies settings that enable auditing of security events during service operat
 ## Syntax  
   
 ```  
-  
 <serviceSecurityAudit   
    auditLogLocation="Default/Application/Security"  
    messageAuthenticationAuditLevel= None/Success/Failure/SuccessAndFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessAndFailure"  

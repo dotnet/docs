@@ -23,7 +23,6 @@ Gets the native instruction pointer for this exception debug event.
 ## Syntax  
   
 ```  
-  
 HRESULT GetNativeIP(  
    [out]CORDB_ADDRESS *pIP  
 );  

@@ -238,7 +238,6 @@ for (int i = 0; i < Array.Length; i++)
 {  
     Console.Out.WriteLine("{0}. Name={1} Help={2}", i, Array[i].CategoryName, Array[i].CategoryHelp);  
 }  
-  
 ```  
   
  The networking performance counters are listed in two categories:  

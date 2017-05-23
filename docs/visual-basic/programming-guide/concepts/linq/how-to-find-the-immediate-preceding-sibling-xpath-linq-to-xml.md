@@ -47,7 +47,6 @@ Else
     Console.WriteLine("Results differ")  
 End If  
 Console.WriteLine(el1)  
-  
 ```  
   
  This example produces the following output:  

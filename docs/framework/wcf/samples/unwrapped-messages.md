@@ -32,7 +32,6 @@ This sample demonstrates unwrapped messages. By default, the message body is for
       </Add>  
     </s:Body>  
 </s:Envelope>  
-  
 ```  
   
  The `<Add>` element in the message body wraps the `n1` and `n2` parameters. In contrast, the following sample shows the equivalent message in the unwrapped mode.  
@@ -50,7 +49,6 @@ This sample demonstrates unwrapped messages. By default, the message body is for
     </s:Body>  
   </s:Envelope>  
 </MessageLogTraceRecord>  
-  
 ```  
   
  The unwrapped message does not wrap the `n1` and `n2` parameters in a containing element, they are direct children of the soap body element.  

@@ -23,11 +23,9 @@ Gets the size of a variable in bytes.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSize(  
    [out] ULONG32 *pcbValue  
 );  
-  
 ```  
   
 #### Parameters  

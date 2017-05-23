@@ -184,7 +184,6 @@ This topic introduces issues that you should be aware of when writing           
 ```  
 [assembly: NeutralResourcesLanguageAttribute(  
     "de" , UltimateResourceFallbackLocation.Satellite)]  
-  
 ```  
   
 ## See Also  

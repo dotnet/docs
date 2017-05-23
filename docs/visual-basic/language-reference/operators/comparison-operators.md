@@ -85,7 +85,6 @@ The following are the comparison operators defined in Visual Basic.
 ## Syntax  
   
 ```  
-  
       result = expression1 comparisonoperator expression2  
 result = object1 [Is | IsNot] object2  
 result = string Like pattern  

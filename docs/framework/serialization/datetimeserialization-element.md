@@ -31,7 +31,6 @@ Determines the serialization mode of <xref:System.DateTime> objects.
 ## Syntax  
   
 ```  
-  
 <dateTimeSerialization  
     mode = "Roundtrip" | "Local"  
 />  

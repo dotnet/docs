@@ -36,11 +36,9 @@ Gets the index of a function argument.
 ## Syntax  
   
 ```  
-  
 HRESULT GetArgumentIndex(  
     [out] ULONG32* pArgumentIndex  
 );  
-  
 ```  
   
 #### Parameters  

@@ -65,9 +65,7 @@ Binding a data source to a control is essential for providing users with access 
 4.  In the                                  <xref:System.Windows.Window> element, add the following                                  [!INCLUDE[TLA#tla_winforms](../../../../includes/tlasharptla-winforms-md.md)] namespaces mapping.  
   
     ```xaml  
-  
     xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"  
-  
     ```  
   
 5.  Name the default                                  <xref:System.Windows.Controls.Grid> element                                  `mainGrid` by assigning the                                  <xref:System.Windows.FrameworkElement.Name%2A> property.  

@@ -39,7 +39,6 @@ Several Windows Forms controls can display images. These images can be icons tha
        (System.Environment.GetFolderPath _  
        (System.Environment.SpecialFolder.MyPictures) _  
        & "\Image.gif")  
-  
     ```  
   
     ```csharp  
@@ -50,7 +49,6 @@ Several Windows Forms controls can display images. These images can be icons tha
        (System.Environment.GetFolderPath  
        (System.Environment.SpecialFolder.MyPictures)  
        + @"\Image.gif");  
-  
     ```  
   
     ```cpp  

@@ -74,7 +74,6 @@ Result(50)
 Result(882.5)  
 Result(441.25)  
 Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)  
-  
 ```  
   
  When you run the sample, you see the messages returned to the client on the callback interface sent from the service. Each intermediate result is displayed, followed by the entire equation upon completion of all operations. Press ENTER to shut down the client.  
@@ -85,7 +84,6 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

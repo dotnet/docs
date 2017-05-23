@@ -36,27 +36,21 @@ When a new instance of a service is created and the service has the SQL Workflow
  The following SQL query returns the ID and creation time for all instances that are not persisted in to the persistence database yet.  
   
 ```  
-  
 select InstanceId, CreationTime from [System.Activities.DurableInstancing].[Instances] where IsInitialized = 0;  
-  
 ```  
   
 ## To find all instances not persisted yet and also not loaded  
  The following SQL query returns ID and creation time for all instances that are not persisted and also are not loaded.  
   
 ```  
-  
 select InstanceId, CreationTime from [System.Activities.DurableInstancing].[Instances] where IsInitialized = 0 and CurrentMachine is NULL;  
-  
 ```  
   
 ## To find all suspended instances not persisted yet  
  The following SQL query returns ID, creation time, suspension reason, and suspension exception name for all instances that are not persisted and also in a suspended state.  
   
 ```  
-  
 select InstanceId, CreationTime, SuspensionReason, SuspensionExceptionName from [System.Activities.DurableInstancing].[Instances] where IsInitialized = 0 and IsSuspended = 1;  
-  
 ```  
   
 ## To delete non-persisted instances from the persistence database  

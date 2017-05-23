@@ -60,7 +60,6 @@ manager: "wpickett"
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick  
        StatusBar1.Panels(0).Text = Now.ToShortTimeString  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -68,7 +67,6 @@ manager: "wpickett"
     {  
        statusBar1.Panels[0].Text = DateTime.Now.ToShortTimeString();  
     }  
-  
     ```  
   
     ```cpp  

@@ -86,13 +86,11 @@ Windows 8.1 applications and Windows Desktop applications that target the.NET Fr
  If the necessary metadata or implementation code is absent at runtime, the .NET Native runtime throws an exception. You can prevent these exceptions, and ensure that the .NET Native tool chain includes the required metadata and implementation code, by using a [runtime directives file](../../../docs/framework/net-native/runtime-directives-rd-xml-configuration-file-reference.md), an XML file that designates the program elements whose metadata or implementation code must be available at runtime and assigns a runtime policy to them. The following is the default runtime directives file that is added to a Windows Store project that is compiled by the .NET Native tool chain:  
   
 ```  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
   <Application>  
     <Assembly Name="*Application*" Dynamic="Required All" />  
   </Application>  
 </Directives>  
-  
 ```  
   
  This enables all the types, as well as all their members, in all the assemblies in your app package for reflection and dynamic invocation. However, it does not enable reflection or dynamic activation of types in .NET Framework Class Library assemblies. In many cases, this is adequate.  

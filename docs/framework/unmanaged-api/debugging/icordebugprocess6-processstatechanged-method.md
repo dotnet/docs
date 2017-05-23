@@ -23,9 +23,7 @@ Notifies [ICorDebug](../../../../docs/framework/unmanaged-api/debugging/icordebu
 ## Syntax  
   
 ```  
-  
 HRESULT ProcessStateChanged(   [in] CorDebugStateChange change);  
-  
 ```  
   
 #### Parameters  

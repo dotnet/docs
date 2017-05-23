@@ -32,7 +32,6 @@ Dim query2 = From e In query1 Where CInt(e) Mod 2 = 0e
 For Each i As var In query2  
 	Console.WriteLine("{0}", CInt(i))  
 Next  
-  
 ```  
   
  This example produces the following output:  

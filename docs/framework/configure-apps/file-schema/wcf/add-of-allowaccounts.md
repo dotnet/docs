@@ -23,7 +23,6 @@ Specifies a user account for processes that host [!INCLUDE[indigo2](../../../../
 ## Syntax  
   
 ```  
-  
 <allowAccounts>  
    <add securityIdentifier="String"/>  
 </allowAccounts>  

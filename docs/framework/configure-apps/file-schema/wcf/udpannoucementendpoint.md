@@ -24,7 +24,6 @@ This configuration element defines a standard endpoint that is used by services 
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <announcementEndpoint>           <standardEndpoint                  discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"                  maxAnnouncementDelay="Timespan"                   multicastAddress="Uri"                  name="String" />        </announcementEndpoint>            </standardEndpoints>  
 </system.serviceModel>  
@@ -58,7 +57,6 @@ This configuration element defines a standard endpoint that is used by services 
  The following example demonstrates a client listening for announcement over a UDP multicast transport with default multicast address, and UDP multicast transport with specified multicast address.  
   
 ```  
-  
 <services>  
   <service name="ServiceAnnouncementListener">  
       <endpoint name="udpAnnouncementEndpointStandard"  
@@ -78,7 +76,6 @@ This configuration element defines a standard endpoint that is used by services 
           multicastAddress="soap.udp://239.255.255.250:3703"/>          
   </udpAnnouncementEndpoint>  
 </standardEndpoints>  
-  
 ```  
   
 ## See Also  

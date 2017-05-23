@@ -131,7 +131,6 @@ This example shows how to create an immutable lightweight class that serves only
     Cesar Garcia, 12 108th St.  
     Debra Garcia, 89 E. 42nd St.  
 */  
-  
 ```  
   
  The compiler creates backing fields for each auto-implemented property. The fields are not accessible directly from source code.  

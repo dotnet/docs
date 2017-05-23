@@ -192,7 +192,6 @@ private async void button1_Click(object sender, RoutedEventArgs e)
   
         </Grid>  
     </Window>  
-  
     ```  
   
      A simple window that contains a text box and a button appears in the **Design** window of MainWindow.xaml.  

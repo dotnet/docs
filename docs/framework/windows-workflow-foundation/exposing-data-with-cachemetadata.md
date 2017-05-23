@@ -54,7 +54,6 @@ protected override void CacheMetadata(NativeActivityMetadata metadata)
     metadata.Bind(argument, this.SomeName);  
     metadata.AddArgument(argument);  
 }  
-  
 ```  
   
 ## Using CacheMetadata to expose implementation children  
@@ -89,5 +88,4 @@ public sealed class ChildActivity : NativeActivity
         context.ScheduleActivity(this._writeLine);  
     }  
 }  
-  
 ```

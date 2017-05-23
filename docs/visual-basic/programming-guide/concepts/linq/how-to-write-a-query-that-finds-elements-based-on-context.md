@@ -55,7 +55,6 @@ Dim items As IEnumerable(Of XElement) = _
 For Each e As XElement In items  
     Console.WriteLine("id = {0}", e.@<id>)  
 Next  
-  
 ```  
   
  This code produces the following output:  

@@ -25,7 +25,6 @@ Defines a binding element that is used to configure endpoints for [!INCLUDE[indi
 ## Syntax  
   
 ```  
-  
 <webHttpBinding>  
     <binding   
         allowCookies="Boolean"  

@@ -53,7 +53,6 @@ Public Class ClassWithFriendMethod
         Console.WriteLine("Sample Method")  
     End Sub  
 End Class  
-  
 ```  
   
  Only assemblies that you explicitly specify as friends can access `Friend` types and members. For example, if assembly B is a friend of assembly A and assembly C references assembly B, C does not have access to `Friend` types in A.  

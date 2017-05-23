@@ -36,7 +36,6 @@ Specifies the maximum number of connections to a network host.
 ## Syntax  
   
 ```  
-  
       <connectionManagement>   
 </connectionManagement>  
 ```  

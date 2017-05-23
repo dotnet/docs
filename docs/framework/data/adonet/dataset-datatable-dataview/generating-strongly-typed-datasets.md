@@ -40,7 +40,6 @@ csc.exe /t:library XSDSchemaFileName.cs /r:System.dll /r:System.Data.dll
   
 ```vb  
 Imports XSDSchema.Namespace  
-  
 ```  
   
 ```csharp  
@@ -62,7 +61,6 @@ Dim customerRow As CustomerDataSet.CustomersRow
 For Each customerRow In customers.Customers  
   Console.WriteLine(customerRow.CustomerID)  
 Next  
-  
 ```  
   
 ```csharp  

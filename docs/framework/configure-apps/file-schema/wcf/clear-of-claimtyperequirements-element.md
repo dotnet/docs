@@ -29,7 +29,6 @@ Specifies that all the claim types to be removed in the federated credential. Th
 ## Syntax  
   
 ```  
-  
 <claimTypeRequirements>  
       <clear />  
 </claimTypeRequirements>  

@@ -27,7 +27,6 @@ Specifies the URI for which the transport channel should be created. For more in
 ## Syntax  
   
 ```  
-  
 <clientVia viaUri="String"/>  
 ```  
   

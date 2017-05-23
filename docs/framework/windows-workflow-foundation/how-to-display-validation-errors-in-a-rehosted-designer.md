@@ -23,7 +23,6 @@ This topic describes how to retrieve and publish validation errors in a rehosted
 1.  Here is a code sample for a simple implementation that will write out the validation errors to the debug log.  
   
     ```  
-  
     using System.Activities.Presentation.Validation;  
     using System.Collections.Generic;  
     using System.Diagnostics;  
@@ -46,6 +45,5 @@ This topic describes how to retrieve and publish validation errors in a rehosted
 1.  Here is the code that will publish this to the editing context.  
   
     ```  
-  
     wd.Context.Services.Publish<IValidationErrorService>(new DebugValidationErrorService());  
     ```

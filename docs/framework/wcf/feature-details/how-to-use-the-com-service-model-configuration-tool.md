@@ -113,7 +113,6 @@ Once you have selected an appropriate hosting mode, use the COM+ Service Model C
   
     ```  
     ComSvcConfig.exe /?  
-  
     ```  
   
 ## See Also  

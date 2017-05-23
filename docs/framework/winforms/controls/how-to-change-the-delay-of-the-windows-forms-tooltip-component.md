@@ -32,14 +32,12 @@ There are multiple delay values that you can set for a Windows Forms <xref:Syste
     ToolTip1.InitialDelay = 500  
     ToolTip1.ReshowDelay = 100  
     ToolTip1.AutoPopDelay = 5000  
-  
     ```  
   
     ```csharp  
     ToolTip1.InitialDelay = 500;  
     ToolTip1.ReshowDelay = 100;  
     ToolTip1.AutoPopDelay = 5000;  
-  
     ```  
   
     ```cpp  

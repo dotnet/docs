@@ -31,7 +31,6 @@ Represents a configuration element that contains a namespace to prefix mapping t
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

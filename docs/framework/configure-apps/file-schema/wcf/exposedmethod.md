@@ -26,7 +26,6 @@ Represents a COM+ method that is exposed when the interface on a COM+ component 
 ## Syntax  
   
 ```  
-  
 <comContracts>  
   <comContract>  
       <exposedMethods>  

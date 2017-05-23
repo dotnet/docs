@@ -30,7 +30,6 @@ Defines a secure, reliable, interoperable binding suitable for non-duplex servic
 ## Syntax  
   
 ```  
-  
 <wsHttpBinding>  
     <binding   
         allowCookies="Boolean"  

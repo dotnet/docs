@@ -33,12 +33,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetEHClauses(  
    [in] ULONG32 cClauses,  
    [out] ULONG32 * pcClauses,  
    [out, size_is(cClauses), length_is(*pcClauses)] CorDebugEHClause clauses[]);  
-  
 ```  
   
 #### Parameters  

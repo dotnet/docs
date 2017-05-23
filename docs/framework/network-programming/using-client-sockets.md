@@ -39,7 +39,6 @@ Before you can initiate a conversation through a <xref:System.Net.Sockets.Socket
 ```vb  
 Dim ipHostInfo As IPHostEntry = Dns.Resolve("host.contoso.com")  
 Dim ipAddress As IPAddress = ipHostInfo.AddressList(0)  
-  
 ```  
   
 ```csharp  
@@ -51,7 +50,6 @@ IPAddress ipAddress = ipHostInfo.AddressList[0];
   
 ```vb  
 Dim ipe As New IPEndPoint(ipAddress, 11000)  
-  
 ```  
   
 ```csharp  
@@ -71,7 +69,6 @@ Catch se As SocketException
 Catch e As Exception  
     Console.WriteLine("Unexpected exception : {0}", e.ToString())  
 End Try  
-  
 ```  
   
 ```csharp  

@@ -52,12 +52,10 @@ manager: "wpickett"
   
     ```vb  
     sqlDataAdapter1.Fill(DsCategories1)  
-  
     ```  
   
     ```csharp  
     sqlDataAdapter1.Fill(DsCategories1);  
-  
     ```  
   
     ```cpp  

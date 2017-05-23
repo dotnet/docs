@@ -25,7 +25,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```  
-  
 HRESULT EnumNgenModuleMethodsInliningThisMethod(  
         [in] ModuleID inlinersModuleId,  
         [in] ModuleID inlineeModuleId,  
@@ -33,7 +32,6 @@ HRESULT EnumNgenModuleMethodsInliningThisMethod(
         [out] BOOL *incompleteData,  
         [out] ICorProfilerMethodEnum** ppEnum  
 );  
-  
 ```  
   
 #### Parameters  
@@ -56,19 +54,15 @@ HRESULT EnumNgenModuleMethodsInliningThisMethod(
  `inlineeModuleId` and `inlineeMethodId` together form the full identifier for the method that might be inlined. For example, assume module `A` defines a method `Simple.Add`:  
   
 ```csharp  
-  
 Simple.Add(int a, int b)   
 { return a + b; }  
-  
 ```  
   
  and module Bdefines `Fancy.AddTwice`:  
   
 ```csharp  
-  
 Fancy.AddTwice(int a, int b)   
 { return Simple.Add(a,b) + Simple.Add(a,b); }  
-  
 ```  
   
  Lets also assume that `Fancy.AddTwice` inlines the call to `SimpleAdd`. A profiler could use this enumerator to find all methods defined in module B which inline `Simple.Add`, and the result would enumerate `AddTwice`.  `inlineeModuleId` is the identifier of module `A`,   and `inlineeeMethodId` is the identifier of `Simple.Add(int a, int b)`.  
@@ -78,10 +72,8 @@ Fancy.AddTwice(int a, int b)
  The `EnumNgenModuleMethodsInliningThisMethod` method can be used to work around limitations on inlining for ReJIT. ReJIT lets a profiler change the implementation of a method and then create new code for it on the fly. For example, we could change `Simple.Add` as follows:  
   
 ```csharp  
-  
 Simple.Add(int a, int b)   
 { return 42; }  
-  
 ```  
   
  However because `Fancy.AddTwice` has already inlined `Simple.Add`, it continues to have the same behavior as before. To work around that limitation, the caller has to search for all methods in all modules that inline `Simple.Add` and use `ICorProfilerInfo5::RequestRejit` on each of those methods. When the methods are re-compiled, they will have the new behavior of `Simple.Add` instead of the old behavior.  

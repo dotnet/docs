@@ -51,7 +51,6 @@ This topic shows how to use the EDM Generator (EdmGen.exe) tool to generate the 
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:fullgeneration   
     /c:"Data Source=%datasourceserver%; Initial Catalog=School; Integrated Security=SSPI"   
     /project:School /entitycontainer:SchoolEntities /namespace:SchoolModel /language:VB  
-  
     ```  
   
 ### To generate the School model for a C# project using EdmGen.exe  

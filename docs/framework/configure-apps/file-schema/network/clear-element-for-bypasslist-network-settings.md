@@ -40,9 +40,7 @@ Clears the proxy bypass list.
 ## Syntax  
   
 ```  
-  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  

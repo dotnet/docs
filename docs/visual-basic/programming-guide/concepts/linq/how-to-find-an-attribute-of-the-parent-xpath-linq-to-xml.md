@@ -46,7 +46,6 @@ Else
     Console.WriteLine("Results differ")  
 End If  
 Console.WriteLine(att1)  
-  
 ```  
   
  This example produces the following output:  

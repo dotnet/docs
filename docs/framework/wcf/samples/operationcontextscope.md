@@ -117,7 +117,6 @@ Using client2 to send message
 Did server retrieve the header? : Actual: False, Expected: False  
   
 Press <ENTER> to terminate client.  
-  
 ```  
   
 #### To set up, build, and run the sample  

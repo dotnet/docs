@@ -169,7 +169,6 @@ manager: "erikre"
     </wscoor:CreateCoordinationContext>  
   </s:Body>  
 </s11:Envelope>  
-  
 ```  
   
 #### CreateCoordinationContextResponse  
@@ -252,7 +251,6 @@ manager: "erikre"
     </wscoor:CreateCoordinationContextResponse>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 ### Registration Messages  
@@ -317,7 +315,6 @@ manager: "erikre"
     </wscoor:Register>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 #### Register Response  
@@ -354,7 +351,6 @@ manager: "erikre"
     </wscoor:RegisterResponse>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 ### Two Phase Commit Protocol Messages  
@@ -381,7 +377,6 @@ manager: "erikre"
     <wsat:Commit />  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 ### Application Messages  

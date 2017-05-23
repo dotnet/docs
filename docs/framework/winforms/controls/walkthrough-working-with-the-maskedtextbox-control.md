@@ -81,7 +81,6 @@ Tasks illustrated in this walkthrough include:
         ToolTip1.ToolTipTitle = "Invalid Input"  
         ToolTip1.Show("We're sorry, but only digits (0-9) are allowed in dates.", MaskedTextBox1, 5000)  
     End Sub  
-  
     ```  
   
 ## Alert the User to a Type that Is Not Valid  
@@ -128,7 +127,6 @@ Tasks illustrated in this walkthrough include:
            e.Cancel = True  
         End If  
     End Sub  
-  
     ```  
   
 ## See Also  

@@ -30,7 +30,6 @@ Public Sub MyPaint(ByVal sender as Object, e as PaintEventArgs) Handles _
    MyButton.Paint  
    'Additional rendering code goes here  
 End Sub  
-  
 ```  
   
 ```csharp  

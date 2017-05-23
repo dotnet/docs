@@ -52,7 +52,6 @@ On some occasions, you will want to restrict access to data that is available wi
           TabControl1.SelectedTab = TabPage3  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -70,7 +69,6 @@ On some occasions, you will want to restrict access to data that is available wi
             tabControl1.SelectedTab = tabPage3;  
         }  
     }  
-  
     ```  
   
     ```cpp  
@@ -100,7 +98,6 @@ On some occasions, you will want to restrict access to data that is available wi
     ```csharp  
     this.tabControl1.SelectedIndexChanged +=   
        new System.EventHandler(this.tabControl1_SelectedIndexChanged);  
-  
     ```  
   
     ```cpp  

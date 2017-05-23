@@ -32,21 +32,17 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
  For apps that target the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], you can opt out of long path support if it is not desirable by adding the following to    to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
   
 ```xml  
-  
 <runtime>   
    <AppContextSwitchOverrides value="Switch.System.IO.BlockLongPaths=true" />   
 </runtime>  
-  
 ```  
   
  For apps that target earlier versions of the .NET Framework but run on the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)] or later., you can opt in to long path support by adding the following to    to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
   
 ```xml  
-  
 <runtime>   
    <AppContextSwitchOverrides value="Switch.System.IO.BlockLongPaths=false" />   
 </runtime>  
-  
 ```  
   
 ## See Also  

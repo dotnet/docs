@@ -160,7 +160,6 @@ kfSr2QcBlkHTvQ==
     </chunk>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 ### End Message  
@@ -236,7 +235,6 @@ interface ITestService
     void UploadStream(Stream stream);  
   
 }  
-  
 ```  
   
  From this programming model, the `ChunkingBindingElement` compiles a list of action URIs that identify messages to be chunked. The action of each outgoing message is compared against this list to determine if the message should be chunked or sent directly.  
@@ -321,7 +319,6 @@ interface ITestService
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

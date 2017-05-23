@@ -33,12 +33,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetCodeEx(  
    [in] ILCodeKind flags,   
    [out] ICorDebugCode **ppCode  
 );  
-  
 ```  
   
 #### Parameters  

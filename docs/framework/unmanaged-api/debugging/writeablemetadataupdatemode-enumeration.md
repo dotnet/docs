@@ -33,12 +33,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 typedef enum WriteableMetadataUpdateMode {  
    LegacyCompatPolicy,  
    AlwaysShowUpdates  
 } WriteableMetadataUpdateMode;  
-  
 ```  
   
 ## Members  

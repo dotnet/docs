@@ -24,7 +24,6 @@ Activities can interact with workflow application extensions that allow the host
   
     ```  
     using System.Collections.Generic;  
-  
     ```  
   
 3.  In the Program.cs file, create a new class named **ExecutionCountExtension**. The following code creates a workflow extension that tracks instance IDs when its **Register** method is called.  
@@ -59,7 +58,6 @@ Activities can interact with workflow application extensions that allow the host
             }  
         }  
     }  
-  
     ```  
   
 4.  Create an activity that consumes the **ExecutionCountExtension**. The following code defines an activity that retrieves the **ExecutionCountExtension** object from the runtime and calls its **Register** method when the activity executes.  
@@ -79,7 +77,6 @@ Activities can interact with workflow application extensions that allow the host
   
         }  
     }  
-  
     ```  
   
 5.  Implement the activity in the **Main** method of the program.cs file. The following code contains methods to generate two different workflows, execute each workflow several times, and display the resulting data that is contained in the extension.  

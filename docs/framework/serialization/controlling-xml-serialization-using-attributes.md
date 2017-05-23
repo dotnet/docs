@@ -43,7 +43,6 @@ End Class
 ' When an instance of the Book class is serialized, it might   
 ' produce this XML:  
 ' <ISBN>1234567890</ISBN>.  
-  
 ```  
   
 ```csharp  
@@ -63,7 +62,6 @@ Public Class TaxRates
    < XmlElement(ElementName = "TaxRate")> _  
     Public ReturnTaxRate As Decimal  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -87,7 +85,6 @@ End Class
 Public Class Employee  
     Public Name As String  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -118,7 +115,6 @@ Public Class Group
     <XmlArray("TeamMembers")> _  
     Public Employees() As Employee  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -146,7 +142,6 @@ Public Class Group
     <XmlArrayItem("MemberName")> _  
     Public Employee() As Employees  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -182,7 +177,6 @@ Public Class Manager
 Inherits Employee  
     Public Level As Integer  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -223,7 +217,6 @@ Public Class Group
     <XmlElement> _  
     Public Employees() As Employee  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -270,7 +263,6 @@ Public Class Group
     XmlElement(Type:=GetType(Manager))> _  
     Public Info As ArrayList  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -294,7 +286,6 @@ XmlType("NewTypeName")> _
 Public Class Group  
     Public Employees() As Employee  
 End Class  
-  
 ```  
   
 ```csharp  

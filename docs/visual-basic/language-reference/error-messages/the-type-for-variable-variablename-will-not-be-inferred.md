@@ -59,7 +59,6 @@ Class Customer
   
     End Sub  
 End Class  
-  
 ```  
   
  By default, this message is a warning. For information about how to hide warnings or how to treat warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  

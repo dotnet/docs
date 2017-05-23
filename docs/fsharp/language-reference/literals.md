@@ -1,5 +1,5 @@
 ---
-title: Literals (F#)
+title: Literals (F#) | Microsoft Docs
 description: Literals (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

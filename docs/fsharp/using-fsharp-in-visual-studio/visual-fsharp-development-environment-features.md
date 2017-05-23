@@ -1,5 +1,5 @@
 ---
-title: F# Development Environment Features
+title: F# Development Environment Features | Microsoft Docs
 description: F# Development Environment Features
 keywords: visual f#, f#, functional programming
 author: cartermp

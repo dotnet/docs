@@ -1,5 +1,5 @@
 ---
-title: Tuples (F#)
+title: Tuples (F#) | Microsoft Docs
 description: Tuples (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

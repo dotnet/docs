@@ -1,5 +1,5 @@
 ---
-title: Porting to .NET Core - Libraries
+title: Porting to .NET Core - Libraries | Microsoft Docs
 description: Porting to .NET Core - Libraries
 keywords: .NET, .NET Core
 author: cartermp

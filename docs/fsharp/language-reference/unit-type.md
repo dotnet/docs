@@ -1,5 +1,5 @@
 ---
-title: Unit Type (F#)
+title: Unit Type (F#) | Microsoft Docs
 description: Unit Type (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

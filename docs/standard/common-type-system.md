@@ -1,5 +1,5 @@
 ---
-title: Common Type System & Common Language Specification
+title: Common Type System & Common Language Specification | Microsoft Docs
 description: Common Type System & Common Language Specification
 keywords: .NET, .NET Core
 author: blackdwarf

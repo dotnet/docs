@@ -1,5 +1,5 @@
 ---
-title: F# Collection Types
+title: F# Collection Types | Microsoft Docs
 description: F# Collection Types
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: Installation guide
+title: Installation guide | Microsoft Docs
 description: Learn how to install the .NET Framework on Windows.
 author: rlander
 keywords: .NET Framework, Install

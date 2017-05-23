@@ -1,5 +1,5 @@
 ---
-title: Primitive Types (F#)
+title: Primitive Types (F#) | Microsoft Docs
 description: Primitive Types (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

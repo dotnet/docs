@@ -1,5 +1,5 @@
 ---
-title: Migrating from DNX to .NET Core CLI
+title: Migrating from DNX to .NET Core CLI | Microsoft Docs
 description: Migrating from DNX to .NET Core CLI
 keywords: .NET, .NET Core
 author: blackdwarf

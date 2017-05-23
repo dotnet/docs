@@ -1,5 +1,5 @@
 ---
-title: Query Expressions (F#)
+title: Query Expressions (F#) | Microsoft Docs
 description: Query Expressions (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

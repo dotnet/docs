@@ -1,5 +1,5 @@
 ---
-title: .NET Core Versioning
+title: .NET Core Versioning | Microsoft Docs
 description: .NET Core Versioning
 keywords: .NET, .NET Core
 author: richlander

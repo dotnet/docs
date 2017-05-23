@@ -1,5 +1,5 @@
 ---
-title: Entry Point (F#)
+title: Entry Point (F#) | Microsoft Docs
 description: Entry Point (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

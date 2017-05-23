@@ -1,5 +1,5 @@
 ---
-title: F# Language Reference
+title: F# Language Reference | Microsoft Docs
 description: F# Language Reference
 keywords: visual f#, f#, functional programming
 author: cartermp

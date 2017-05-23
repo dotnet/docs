@@ -1,5 +1,5 @@
 ---
-title: System.Delegate and the `delegate` keyword
+title: System.Delegate and the `delegate` keyword | Microsoft Docs
 description: System.Delegate and the `delegate` keyword
 keywords: .NET, .NET Core
 author: BillWagner

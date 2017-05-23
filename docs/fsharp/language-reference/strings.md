@@ -1,5 +1,5 @@
 ---
-title: Strings (F#)
+title: Strings (F#) | Microsoft Docs
 description: Strings (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

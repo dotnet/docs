@@ -1,5 +1,5 @@
 ---
-title: The Standard .NET Event Pattern
+title: The Standard .NET Event Pattern | Microsoft Docs
 description: The Standard .NET Event Pattern
 keywords: .NET, .NET Core
 author: BillWagner

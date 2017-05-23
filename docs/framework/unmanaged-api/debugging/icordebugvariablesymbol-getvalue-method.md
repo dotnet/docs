@@ -23,7 +23,6 @@ Gets the value of a variable as a byte array.
 ## Syntax  
   
 ```  
-  
 HRESULT GetValue(  
    [in] ULONG32 offset,  
    [in] ULONG32 cbContext,  
@@ -32,7 +31,6 @@ HRESULT GetValue(
    [out] ULONG32 *pcbValue,  
    [out, size_is(cbValue), length_is(*pcbValue)] BYTE pValue[]  
 );  
-  
 ```  
   
 #### Parameters  

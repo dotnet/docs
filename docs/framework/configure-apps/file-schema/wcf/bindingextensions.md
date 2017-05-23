@@ -43,7 +43,6 @@ This section enables the use of a user defined binding from a machine or applica
         <endpoint address="myAddress" binding="MyBinding" />  
     </service>  
 </services>  
-  
 ```  
   
 ## See Also  

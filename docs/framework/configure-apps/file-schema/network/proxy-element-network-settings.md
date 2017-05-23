@@ -37,7 +37,6 @@ Defines a proxy server.
 ## Syntax  
   
 ```  
-  
       <proxy   
   autoDetect="true|false|unspecified"    
   bypassonlocal="true|false|unspecified"   

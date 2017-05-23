@@ -35,7 +35,6 @@ Frequently, you will want to print graphics in your Windows-based application. T
     Private Sub PrintDocument1_PrintPage(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintPageEventArgs) Handles PrintDocument1.PrintPage  
        e.Graphics.FillEllipse(Brushes.Blue, New Rectangle(100, 150, 250, 250))  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -45,7 +44,6 @@ Frequently, you will want to print graphics in your Windows-based application. T
        e.Graphics.FillRectangle(Brushes.Blue,   
          new Rectangle(100, 150, 250, 250));  
     }  
-  
     ```  
   
     ```cpp  
@@ -64,7 +62,6 @@ Frequently, you will want to print graphics in your Windows-based application. T
     this.printDocument1.PrintPage += new  
        System.Drawing.Printing.PrintPageEventHandler  
        (this.printDocument1_PrintPage);  
-  
     ```  
   
     ```cpp  

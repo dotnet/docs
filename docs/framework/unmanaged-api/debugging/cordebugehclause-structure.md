@@ -33,7 +33,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 typedef struct _CorDebugEHClause {  
    ULONG32 Flags;  
    ULONG32 TryOffset;  
@@ -43,7 +42,6 @@ typedef struct _CorDebugEHClause {
    ULONG32 ClassToken;  
    ULONG32 FilterOffset;  
 } CorDebugEHClause;  
-  
 ```  
   
 ## Members  

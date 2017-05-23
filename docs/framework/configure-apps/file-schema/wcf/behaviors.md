@@ -23,7 +23,6 @@ This element defines two child collections named `endpointBehaviors` and `servic
 ## Syntax  
   
 ```  
-  
 <behaviors>  
    <serviceBehaviors>  
    </serviceBehaviors>  

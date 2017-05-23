@@ -25,7 +25,6 @@ A configuration element that allows you to add settings that define virtual serv
 ## Syntax  
   
 ```  
-  
 <serviceHostingEnvironment>   
    <serviceActivations>  
       <add factory="String"  

@@ -24,7 +24,6 @@ A secure WCF client that connects to an endpoint with this identity verifies tha
 ## Syntax  
   
 ```  
-  
 <rsa value = "String" />  
 ```  
   

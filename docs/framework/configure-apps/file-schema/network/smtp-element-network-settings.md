@@ -37,7 +37,6 @@ Configures the delivery format, delivery method, and from address for sending e-
 ## Syntax  
   
 ```  
-  
       <smtp  
   deliveryFormat="format"   
   deliveryMethod="method"   

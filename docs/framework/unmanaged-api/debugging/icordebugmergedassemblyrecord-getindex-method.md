@@ -23,7 +23,6 @@ Gets the assembly's prefix index.
 ## Syntax  
   
 ```  
-  
 HRESULT GetIndex(  
    [out] ULONG32 *pIndex  
 );  

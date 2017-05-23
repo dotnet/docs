@@ -25,7 +25,6 @@ Returns a reference to an entity instance.
 ## Syntax  
   
 ```  
-  
 REF( expression )   
 ```  
   

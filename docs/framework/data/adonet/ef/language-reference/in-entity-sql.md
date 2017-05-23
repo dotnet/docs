@@ -25,7 +25,6 @@ Determines whether a value matches any value in a collection.
 ## Syntax  
   
 ```  
-  
 value [ NOT ] IN expression  
 ```  
   

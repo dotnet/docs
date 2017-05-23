@@ -62,7 +62,6 @@ public class MathFault
         set { problemType = value; }  
     }  
 }  
-  
 ```  
   
  The `Divide` method throws a <xref:System.ServiceModel.FaultException%601> exception when a divide by zero exception occurs as shown in the following sample code. This exception results in a fault being sent to the client.  

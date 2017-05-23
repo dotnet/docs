@@ -37,7 +37,6 @@ Contains trace switches and the level where the trace switches are set.
 ## Syntax  
   
 ```  
-  
       <switches>   
 </switches>  
 ```  

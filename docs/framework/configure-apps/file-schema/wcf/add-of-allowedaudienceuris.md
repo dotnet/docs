@@ -30,7 +30,6 @@ Adds a target Uri for which the <xref:System.IdentityModel.Tokens.SamlSecurityTo
 ## Syntax  
   
 ```  
-  
 <allowedAudienceUris>   
    <add allowedAudienceUri="String"/>  
 </allowedAudienceUris>  

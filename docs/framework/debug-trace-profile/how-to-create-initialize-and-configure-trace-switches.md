@@ -46,7 +46,6 @@ Trace switches enable you to enable, disable, and filter tracing output.
     ```vb  
     Dim dataSwitch As New BooleanSwitch("Data", "DataAccess module")  
     Dim generalSwitch As New TraceSwitch("General", "Entire application")  
-  
     ```  
   
     ```csharp  
@@ -55,7 +54,6 @@ Trace switches enable you to enable, disable, and filter tracing output.
     System.Diagnostics.TraceSwitch generalSwitch =   
        new System.Diagnostics.TraceSwitch("General",   
        "Entire application");  
-  
     ```  
   
 <a name="configure"></a>   

@@ -26,7 +26,6 @@ The WHERE clause is applied directly after the [FROM](../../../../../../docs/fra
 ## Syntax  
   
 ```  
-  
 [ WHERE expression ]  
 ```  
   

@@ -37,7 +37,6 @@ This sample demonstrates how to extend tracking in [!INCLUDE[wf](../../../../inc
     </extensions>  
 …  
   </system.serviceModel>  
-  
 ```  
   
 > [!NOTE]

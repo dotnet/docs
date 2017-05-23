@@ -37,12 +37,10 @@ Creating new Windows Forms by inheriting from base forms is a handy way to dupli
     ```vb  
     Public Class Form2  
         Inherits Namespace1.Form1  
-  
     ```  
   
     ```csharp  
     public class Form2 : Namespace1.Form1  
-  
     ```  
   
  When inheriting forms, keep in mind that issues may arise with regard to event handlers being called twice, because each event is being handled by both the base class and the inherited class. For more information on how to avoid this problem, see [Troubleshooting Inherited Event Handlers in Visual Basic](~/docs/visual-basic/programming-guide/language-features/events/troubleshooting-inherited-event-handlers.md).  

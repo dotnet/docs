@@ -30,7 +30,6 @@ Adds an X.509 certificate to the collection of known certificates.
 ## Syntax  
   
 ```  
-  
 <knownCertificates>   
    <add findValue="String"  
       storeLocation="CurrentUser/LocalMachine"  

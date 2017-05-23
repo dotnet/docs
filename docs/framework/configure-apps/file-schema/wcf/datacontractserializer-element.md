@@ -32,7 +32,6 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 ## Syntax  
   
 ```  
-  
 <dataContractSerializer ignoreExtensionDataObject="Boolean"  
    maxItemsInObjectGraph="Integer" />  
 ```  

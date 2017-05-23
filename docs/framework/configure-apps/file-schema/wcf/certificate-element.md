@@ -29,7 +29,6 @@ Specifies an X.509 certificate to use for signing and encrypting messages for pe
 ## Syntax  
   
 ```  
-  
 <certificate findValue="String"   
   
 storeLocation="LocalMachine/CurrentUser"  

@@ -29,7 +29,6 @@ Specifies an X.509 certificate used to sign and encrypt messages.
 ## Syntax  
   
 ```  
-  
 <certificate findValue = "String"   
 storeLocation = "CurrentUser/LocalMachine"  
 storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  

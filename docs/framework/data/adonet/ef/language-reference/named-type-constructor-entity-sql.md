@@ -25,7 +25,6 @@ Used to create instances of conceptual model nominal types such as Entity or Com
 ## Syntax  
   
 ```  
-  
 [{identifier. }] identifier( [expression [{, expression }]] )  
 ```  
   

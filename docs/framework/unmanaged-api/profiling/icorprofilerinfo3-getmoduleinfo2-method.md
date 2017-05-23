@@ -45,7 +45,6 @@ HRESULT GetModuleInfo2(
           WCHAR      szName[] ,  
     [out] AssemblyID *pAssemblyId);  
     [out] DWORD                 *pdwModuleFlags);  
-  
 ```  
   
 #### Parameters  

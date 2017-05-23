@@ -39,7 +39,6 @@ The IL Assembler generates a portable executable (PE) file from intermediate lan
 ## Syntax  
   
 ```  
-  
 ilasm [options] filename [[options]filename...]  
 ```  
   
@@ -133,7 +132,6 @@ ilasm [options] filename [[options]filename...]
     .custom instance void  
       [mscorlib]System.Diagnostics.DebuggerNonUserCodeAttribute::.ctor() = ( 01 00 00 00 )  
       …  
-  
 ```  
   
  Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], you can specify an arbitrary marshal BLOB (binary large object) by using its raw binary representation, as shown in the following code:  
@@ -143,7 +141,6 @@ ilasm [options] filename [[options]filename...]
         instance void   
         marshal({ 38 01 02 FF })   
         Test(object A_1) cil managed  
-  
 ```  
   
  For more information about the grammar of IL, see the asmparse.grammar file in the [!INCLUDE[winsdklong](../../../includes/winsdklong-md.md)].  

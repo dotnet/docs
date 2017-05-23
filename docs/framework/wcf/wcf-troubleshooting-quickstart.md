@@ -208,7 +208,6 @@ public class MyServiceHost : ServiceHost
         <endpoint address="mex" binding="mexTcpBinding" contract="IMetadataExchange" />  
       </service>  
     </services>  
-  
 ```  
   
  And if you modify one of the NetTcpBinding settings as shown in the following configuration snippet:  
@@ -225,7 +224,6 @@ public class MyServiceHost : ServiceHost
         </binding>  
       </netTcpBinding>  
     </bindings>  
-  
 ```  
   
  You will see an error like the following: Unhandled Exception: System.ServiceModel.AddressAlreadyInUseException: There is already a listener on IP endpoint 0.0.0.0:9000 You can work around this error by specifying a fully qualified URL with a different port for the MEX endpoint as shown in the following configuration snippet:  
@@ -237,7 +235,6 @@ public class MyServiceHost : ServiceHost
         <endpoint address="net.tcp://localhost:9001/servicemodelsamples/mex" binding="mexTcpBinding" contract="IMetadataExchange" />  
       </service>  
     </services>  
-  
 ```  
   
 <a name="BK_MK99"></a>   
@@ -252,7 +249,6 @@ public string Echo(string input)
                 return base.Channel.Echo(input);  
             }  
         }  
-  
 ```  
   
 ## See Also  

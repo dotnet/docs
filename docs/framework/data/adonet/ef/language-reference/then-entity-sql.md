@@ -26,7 +26,6 @@ The result of a WHEN clause when it evaluates to `true`.
 ## Syntax  
   
 ```  
-  
 WHEN when_expression THEN then_expression  
 ```  
   

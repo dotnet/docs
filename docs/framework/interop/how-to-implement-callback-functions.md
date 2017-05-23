@@ -70,7 +70,6 @@ Public Class EnumReportApp
         Return True  
     End Function 'Report  
 End Class 'EnumReportApp  
-  
 ```  
   
 ```csharp  
@@ -97,7 +96,6 @@ public class EnumReportApp
         return true;  
     }  
 }  
-  
 ```  
   
 ```cpp  

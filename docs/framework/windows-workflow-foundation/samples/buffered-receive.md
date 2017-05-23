@@ -37,7 +37,6 @@ This sample demonstrates how to set up and configure the buffered receive featur
 <endpoint address ="net.msmq://localhost/private/LoanService/Service1.xamlx"  
                   binding="netMsmqBinding"  
                   contract="ILoanService"/>  
-  
 ```  
   
  The service also exposes metadata for the service using <xref:System.ServiceModel.Description.ServiceMetadataBehavior>.  
@@ -48,7 +47,6 @@ This sample demonstrates how to set up and configure the buffered receive featur
 <endpoint address="net.msmq://localhost/private/LoanService/Service1.xamlx"  
                 binding="netMsmqBinding" bindingConfiguration="NetMsmqBinding_ILoanService"  
                 contract="ServiceReference1.ILoanService" name="NetMsmqBinding_ILoanService" />  
-  
 ```  
   
  This sample requires that the following Windows components are enabled:  

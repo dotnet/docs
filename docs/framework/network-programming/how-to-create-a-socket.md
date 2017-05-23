@@ -44,7 +44,6 @@ Socket s = new Socket(AddressFamily.InterNetwork,
 ```vb  
 Dim s as New Socket(AddressFamily.InterNetwork, _  
    SocketType.Stream, ProtocolType.Tcp)  
-  
 ```  
   
  To use UDP instead of TCP, change the protocol type, as in the following example:  
@@ -57,7 +56,6 @@ Socket s = new Socket(AddressFamily.InterNetwork,
 ```vb  
 Dim s as New Socket(AddressFamily.InterNetwork, _  
    SocketType.Dgram, ProtocolType.Udp)  
-  
 ```  
   
  The <xref:System.Net.Sockets.AddressFamily> enumeration specifies the standard address families used by the **Socket** class to resolve network addresses (for example, the **AddressFamily.InterNetwork** member specifies the IP version 4 address family).  

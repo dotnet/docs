@@ -34,11 +34,9 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,  
         [in] ICorProfilerAssemblyReferenceProvider* pAsmRefProvider  
 );  
-  
 ```  
   
 #### Parameters  

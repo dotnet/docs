@@ -37,7 +37,6 @@ select new SyndicationItem()
 //Write the feed out to a MemoryStream in JSON format  
 DataContractJsonSerializer writeSerializer = new DataContractJsonSerializer(typeof(JsonFeedFormatter));  
 writeSerializer.WriteObject(stream, new JsonFeedFormatter(feed));  
-  
 ```  
   
 ## Reading a JSON feed  

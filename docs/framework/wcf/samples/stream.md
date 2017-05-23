@@ -65,7 +65,6 @@ public interface IStreamingSample
                    maxReceivedMessageSize="67108864"/>  
   </binding>  
 </customBinding>  
-  
 ```  
   
  In addition to setting the `transferMode` to `Streamed`, the previous configuration code sets the `maxReceivedMessageSize` to 64MB. As a defense mechanism, `maxReceivedMessageSize` places a cap on the maximum allowable size of messages on receive. The default `maxReceivedMessageSize` is 64 KB, which is usually too low for streaming scenarios.  

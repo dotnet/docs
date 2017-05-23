@@ -36,7 +36,6 @@ The Software Publisher Certificate Test tool creates a Software Publisher's Cert
 ## Syntax  
   
 ```  
-  
 cert2spc cert1.cer | crl1.crl [... certN.cer | crlN.crl] outputSPCfile.spc  
 ```  
   

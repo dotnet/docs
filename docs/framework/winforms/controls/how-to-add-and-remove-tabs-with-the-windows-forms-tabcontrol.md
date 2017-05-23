@@ -34,14 +34,12 @@ By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:
     Dim myTabPage As New TabPage()  
     myTabPage.Text = "TabPage" & (TabControl1.TabPages.Count + 1)  
     TabControl1.TabPages.Add(myTabPage)  
-  
     ```  
   
     ```csharp  
     string title = "TabPage " + (tabControl1.TabCount + 1).ToString();  
     TabPage myTabPage = new TabPage(title);  
     tabControl1.TabPages.Add(myTabPage);  
-  
     ```  
   
     ```cpp  
@@ -64,7 +62,6 @@ By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:
     TabControl1.TabPages.Remove(TabControl1.SelectedTab)  
     ' Removes all the tabs:  
     TabControl1.TabPages.Clear()  
-  
     ```  
   
     ```csharp  
@@ -72,7 +69,6 @@ By default, a <xref:System.Windows.Forms.TabControl> control contains two <xref:
     tabControl1.TabPages.Remove(tabControl1.SelectedTab);  
     // Removes all the tabs:  
     tabControl1.TabPages.Clear();  
-  
     ```  
   
     ```cpp  

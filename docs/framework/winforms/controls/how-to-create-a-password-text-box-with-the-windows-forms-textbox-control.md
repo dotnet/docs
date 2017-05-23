@@ -48,7 +48,6 @@ A password box is a Windows Forms text box that displays placeholder characters 
        ' The control will allow no more than 14 characters.  
        TextBox1.MaxLength = 14  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -61,7 +60,6 @@ A password box is a Windows Forms text box that displays placeholder characters 
        // The control will allow no more than 14 characters.  
        textBox1.MaxLength = 14;  
     }  
-  
     ```  
   
     ```cpp  

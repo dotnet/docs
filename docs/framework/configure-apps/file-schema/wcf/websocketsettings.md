@@ -25,7 +25,6 @@ A configuration element used to specify Web Socket settings.
 ## Syntax  
   
 ```  
-  
 <netHttpBinding>  
    <binding>   
        <webSocketSettings createNotificationOnConnection="boolean"                              disablePayloadMasking="boolean"                              keepAliveInterval="TimeSpan"                              maxPendingConnections="Integer"                              receiveBufferSize="Integer"                              sendBufferSize="Integer"                              subProtocol="String"                              transportUsage="WhenDuplex/Always/Never"/>   </binding>  

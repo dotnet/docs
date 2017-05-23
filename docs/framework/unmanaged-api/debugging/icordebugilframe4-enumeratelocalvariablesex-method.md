@@ -33,12 +33,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT EnumerateLocalVariablesEx(  
    [in] ILCodeKind flags,   
    [out] ICorDebugValueEnum **ppValueEnum  
 );  
-  
 ```  
   
 #### Parameters  

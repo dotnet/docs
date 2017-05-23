@@ -49,7 +49,6 @@ The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and admini
 ## Syntax  
   
 ```  
-  
 caspol [options]  
 ```  
   

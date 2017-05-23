@@ -44,7 +44,6 @@ Raises the value of a variable or property to the power of an expression and ass
 ## Syntax  
   
 ```  
-  
 variableorproperty ^= expression  
 ```  
   

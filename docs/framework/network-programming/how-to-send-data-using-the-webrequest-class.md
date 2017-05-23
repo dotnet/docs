@@ -34,7 +34,6 @@ The following procedure describes the steps used to send data to a server. This 
   
     ```vb  
     Dim request as WebRequest = WebRequest.Create("http://www.contoso.com/")  
-  
     ```  
   
     > [!NOTE]
@@ -48,7 +47,6 @@ The following procedure describes the steps used to send data to a server. This 
   
     ```vb  
     request.Credentials = CredentialCache.DefaultCredentials  
-  
     ```  
   
      In most cases, the **WebRequest** instance itself is sufficient to send data. However, if you need to set protocol-specific properties, you must cast the **WebRequest** to the protocol-specific type. For example, to access the HTTP-specific properties of <xref:System.Net.HttpWebRequest>, cast the **WebRequest** to an **HttpWebRequest** reference. The following code example shows how to set the HTTP-specific <xref:System.Net.HttpWebRequest.UserAgent%2A> property.  
@@ -129,7 +127,6 @@ The following procedure describes the steps used to send data to a server. This 
   
     ```vb  
     Dim response As WebResponse = request.GetResponse()  
-  
     ```  
   
     > [!NOTE]
@@ -163,7 +160,6 @@ The following procedure describes the steps used to send data to a server. This 
   
     ```vb  
     response.Close()  
-  
     ```  
   
 ## Example  
@@ -263,7 +259,6 @@ Namespace Examples.System.Net
         End Sub  
     End Class  
 End Namespace  
-  
 ```  
   
 ## See Also  

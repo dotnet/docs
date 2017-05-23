@@ -111,7 +111,6 @@ public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculat
         return base.InnerChannel.Add(n1, n2);  
     }  
 }  
-  
 ```  
   
 ```vb  
@@ -142,7 +141,6 @@ Partial Public Class CalculatorClient
         Return MyBase.InnerChannel.Add(n1, n2)  
     End Function   
 End Class  
-  
 ```  
   
 ## Using the WCF Client  
@@ -156,7 +154,6 @@ double value1 = 100.00D;
 double value2 = 15.99D;  
 double result = calcClient.Add(value1, value2);  
 Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);  
-  
 ```  
   
 ```vb  
@@ -169,7 +166,6 @@ Dim value1 As Double = 100.00D
 Dim value2 As Double = 15.99D  
 Dim result As Double = calcClient.Add(value1, value2)  
 Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result)  
-  
 ```  
   
 ## Debugging Exceptions Thrown by a Client  

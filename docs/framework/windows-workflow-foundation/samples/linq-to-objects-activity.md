@@ -38,7 +38,6 @@ Activity wf = new FindInCollection<Employee>
     Collections = new LambdaValue<IEnumerable<Employee>>(c => employees),                
     Predicate = new LambdaValue<Func<Employee, bool>>(c => new Func<Employee, bool>(e => e.Role.Equals("Manager") && e.Location.Equals("Redmond")))  
 };  
-  
 ```  
   
  The following code shows how to create a workflow program that uses the custom FindInCollection activity, <xref:System.Activities.Statements.AddToCollection%601>, and <xref:System.Activities.Statements.ForEach%601> activities to populate a collection with employees, find all the employees that have developer roles and are located in Redmond, and then iterate through the resulting list.  

@@ -63,7 +63,6 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
  The following configuration example specifies filtering scopes and extension metadata to be published for an endpoint.  
   
 ```  
-  
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
@@ -98,7 +97,6 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
     </behavior>  
   </endpointBehaviors>  
 </behaviors>  
-  
 ```  
   
 ## See Also  

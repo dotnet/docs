@@ -30,7 +30,6 @@ Specifies the encoding and message versioning used for SOAP Message Transmission
 ## Syntax  
   
 ```  
-  
 <mtomMessageEncoding   
    maxBufferSize="Integer"  
       maxReadPoolSize="Integer"  

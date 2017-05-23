@@ -34,7 +34,6 @@ public interface ICalculator
     double Add(double n1, double n2);  
     //Other operations omitted…  
 }  
-  
 ```  
   
  The sample .svc file uses <xref:System.ServiceModel.Activation.WebScriptServiceHostFactory>, which adds a <xref:System.ServiceModel.Description.WebScriptEndpoint> standard endpoint to the service. The endpoint is configured at an empty address relative to the .svc file. This means that the address of the service is http://localhost/ServiceModelSamples/service.svc, with no additional suffixes other than the operation name.  
@@ -54,7 +53,6 @@ public interface ICalculator
     </webScriptEndpoint>  
   </standardEndpoints>  
 </system.serviceModel>  
-  
 ```  
   
  The <xref:System.ServiceModel.Description.WebScriptEndpoint> sets the default data format for the service to JSON instead of XML. To invoke the service, navigate to http://localhost/ServiceModelSamples/service.svc/Add?n1=100&n2=200 after completing the set up and build steps shown later in this topic. This testing functionality is enabled by the use of a HTTP GET request.  
@@ -67,7 +65,6 @@ public interface ICalculator
           <asp:ServiceReference Path="service.svc" />  
      </Services>  
 </asp:ScriptManager>  
-  
 ```  
   
  The local proxy is instantiated and operations are invoked using the following JavaScript code.  
@@ -78,7 +75,6 @@ public interface ICalculator
 var proxy = new SimpleAjaxService.ICalculator();  
 // Code for selecting operation omitted…  
 proxy.Add(parseFloat(n1), parseFloat(n2), onSuccess, onFail, null);  
-  
 ```  
   
  If the service call succeeds, the code invokes the `onSuccess` handler and the result of the operation is displayed in a text box.  
@@ -87,7 +83,6 @@ proxy.Add(parseFloat(n1), parseFloat(n2), onSuccess, onFail, null);
 function onSuccess(mathResult){  
      document.getElementById("result").value = mathResult;  
 }  
-  
 ```  
   
 > [!IMPORTANT]

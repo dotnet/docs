@@ -76,7 +76,6 @@ HRESULT Callback5Impl::ConditionalWeakTableElementReferences(
     }  
     return S_OK;  
 }  
-  
 ```  
   
 ## Remarks  

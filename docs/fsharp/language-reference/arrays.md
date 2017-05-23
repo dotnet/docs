@@ -296,7 +296,6 @@ module test =
     let secondRow = test1.[1,*]
     let firstCol = test1.[*,0]
     printfn "%A" firstCol
-
 ```
 
 ### Boolean Functions on Arrays

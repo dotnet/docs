@@ -56,7 +56,6 @@ This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.
         The primary logging queue has 1 messages.   
         The backup logging queue has 0 messages.   
         Press <Enter> to continue  
-  
         ```  
   
     2.  The following is the output returned for case 3 (primary service and logging queue failures).  
@@ -68,7 +67,6 @@ This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.
         The primary logging queue does not exist.   
         The backup logging queue has 1 messages.   
         Press <ENTER> to continue.  
-  
         ```  
   
     3.  The following is the output returned for case 4 (primary service queue and primary and backup logging queue failures).  
@@ -81,7 +79,6 @@ This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.
         The backup logging queue does not exist.   
         The System Dead Letter queue has 1 messages.   
         Press <ENTER> to Quit.  
-  
         ```  
   
     4.  The following is the output returned for case 2 (primary service queue failure).  
@@ -93,7 +90,6 @@ This sample demonstrates the [!INCLUDE[indigo1](../../../../includes/indigo1-md.
         The primary logging queue has 1 messages.   
         The backup logging queue has 0 messages.   
         Press <ENTER> to continue.  
-  
         ```  
   
 ## Configurable Via Code or App.config  

@@ -37,7 +37,6 @@ Specifies whether socket operations use completion ports.
 ## Syntax  
   
 ```  
-  
       <socket  
   alwaysUseCompletionPortsForConnect="true|false"  
   alwaysUseCompletionPortsForAccept="true|false"  

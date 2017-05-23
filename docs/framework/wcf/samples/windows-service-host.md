@@ -58,7 +58,6 @@ This sample demonstrates a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md
     ...  
   </service>  
 </services>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in both the service and client console windows. Press ENTER in each console window to shut down the service and client.  

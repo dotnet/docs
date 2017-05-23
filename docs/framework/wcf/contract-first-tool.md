@@ -60,7 +60,6 @@ Service contracts often need to be created from existing services. In [!INCLUDE[
     </xs:restriction>  
   </xs:simpleType>  
 </xs:schema>  
-  
 ```  
   
  To add the above service contract to the project, right-click the project and select **Add New…**. Select Schema Definition from the WCF pane of the Templates dialog, and name the new file SampleContract.xsd. Copy and paste the above code into the code view of the new file.  
@@ -346,7 +345,6 @@ namespace TestXSD3.ContractTypes
         DisableQueryAlterations,  
     }  
 }  
-  
 ```  
   
 ## Errors and warnings  

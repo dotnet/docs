@@ -298,7 +298,6 @@ namespace StreamingFromServer {
       }  
    }  
 }  
-  
 ```  
   
 ## Sample -- Streaming to [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]  
@@ -455,7 +454,6 @@ namespace StreamingToServer {
       }  
    }  
 }  
-  
 ```  
   
 ## Sample -- Streaming From One [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] to Another [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]  
@@ -522,7 +520,6 @@ namespace StreamingFromServerToAnother {
       }  
    }  
 }  
-  
 ```  
   
 ## See Also  

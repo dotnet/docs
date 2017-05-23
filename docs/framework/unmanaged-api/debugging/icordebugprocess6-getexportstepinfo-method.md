@@ -23,12 +23,10 @@ Provides information on runtime exported functions to help step through managed 
 ## Syntax  
   
 ```  
-  
 HRESULT GetExportStepInfo(  
     [in] LPCWSTR pszExportName,   
     [out] CorDebugCodeInvokeKind* pInvokeKind,   
     [out] CorDebugCodeInvokePurpose* pInvokePurpose);  
-  
 ```  
   
 #### Parameters  

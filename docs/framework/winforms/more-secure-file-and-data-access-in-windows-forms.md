@@ -94,7 +94,6 @@ Private Sub ButtonOpen_Click(ByVal sender As System.Object, _
         End Try  
     End If  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -241,7 +240,6 @@ Public Sub Write()
         writer.Close()  
     End Try  
 End Sub  
-  
 ```  
   
 ```csharp  

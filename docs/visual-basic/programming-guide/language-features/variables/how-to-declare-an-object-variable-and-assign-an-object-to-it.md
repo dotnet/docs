@@ -41,7 +41,6 @@ You declare a variable of the [Object Data Type](../../../../visual-basic/langua
  The following example declares an `Object` variable and assigns the current instance to it.  
   
 ```  
-  
       Dim thisObject As Object  
 thisObject = "This is an Object"  
 ```  

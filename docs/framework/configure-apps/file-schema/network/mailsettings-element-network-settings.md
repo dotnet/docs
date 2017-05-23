@@ -36,7 +36,6 @@ Configures mail sending options.
 ## Syntax  
   
 ```  
-  
       <mailSettings  
   <smtp> … </smtp>  
 /mailsettings>  

@@ -105,7 +105,6 @@ Calling client.Divide(0.0, 0.0);
 Got System.ServiceModel.CommunicationException from Divide.  
   
 Press <ENTER> to terminate client.  
-  
 ```  
   
 ### To set up, build, and run the sample  

@@ -23,7 +23,6 @@ Gets the instance field symbols that correspond to a typespec signature.
 ## Syntax  
   
 ```  
-  
 HRESULT GetInstanceFieldSymbols(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  
@@ -31,7 +30,6 @@ HRESULT GetInstanceFieldSymbols(
    [out] ULONG32 *pcFetchedSymbols,  
    [out, size_is(cRequestedSymbols), length_is(*pcFetchedSymbols)] ICorDebugInstanceFieldSymbol *pSymbols[]  
 );  
-  
 ```  
   
 #### Parameters  

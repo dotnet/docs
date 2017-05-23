@@ -28,7 +28,6 @@ A collection of default ports listing the default communications endpoints that 
 ## Syntax  
   
 ```  
-  
 <useRequestHeadersForMetadataAddress>   <defaultPorts>      <add scheme="http" port="integer" />   </defaultPorts></useRequestHeadersForMetadataAddress>  
 ```  
   

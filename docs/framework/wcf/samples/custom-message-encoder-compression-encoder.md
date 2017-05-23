@@ -185,13 +185,11 @@ GZipMessageEncoderFactory(innerBindingElement.CreateMessageEncoderFactory());
      </wsp:All>  
    </wsp:ExactlyOne>  
 </wsp:Policy>  
-  
 ```  
   
  The `GZipMessageEncodingBindingElementImporter` class implements the `IPolicyImportExtension` interface, this class imports policy for `GZipMessageEncodingBindingElement`. Svcutil.exe tool can be used to import policies to the configuration file, to handle `GZipMessageEncodingBindingElement`, the following should be added to Svcutil.exe.config.  
   
 ```  
-  
 <configuration>  
   <system.serviceModel>  
     <extensions>  
@@ -213,7 +211,6 @@ GZipMessageEncoderFactory(innerBindingElement.CreateMessageEncoderFactory());
     </client>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  Now that there is a matching binding element for the compression encoder, it can be programmatically hooked into the service or client by constructing a new custom binding object and adding the custom binding element to it, as shown in the following sample code.  
@@ -227,7 +224,6 @@ bindingElements.Add(httpBindingElement);
 CustomBinding binding = new CustomBinding(bindingElements);  
 binding.Name = "SampleBinding";  
 binding.Namespace = "http://tempuri.org/bindings";  
-  
 ```  
   
  While this may be sufficient for the majority of user scenarios, supporting a file configuration is critical if a service is to be Web-hosted. To support the Web-hosted scenario, you must develop a custom configuration handler to allow a custom binding element to be configurable in a file.  
@@ -301,7 +297,6 @@ public class GZipMessageEncodingElement : BindingElementExtensionElement
   
 ```  
 <gzipMessageEncoding innerMessageEncoding="textMessageEncoding" />  
-  
 ```  
   
  To use this configuration handler, it must be registered within the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element, as shown in the following sample configuration.  
@@ -317,13 +312,11 @@ public class GZipMessageEncodingElement : BindingElementExtensionElement
            PublicKeyToken=null" />  
       </bindingElementExtensions>  
 </extensions>  
-  
 ```  
   
  When you run the server, the operation requests and responses are displayed in the console window. Press ENTER in the window to shut down the server.  
   
 ```  
-  
 Press Enter key to Exit.  
   
         Server Echo(string input) called:  
@@ -331,13 +324,11 @@ Press Enter key to Exit.
   
         Server BigEcho(string[] input) called:  
         64 client messages  
-  
 ```  
   
  When you run the client, the operation requests and responses are displayed in the console window. Press ENTER in the client window to shut down the client.  
   
 ```  
-  
 Calling Echo(string):  
 Server responds: Simple hello Simple hello  
   
@@ -345,7 +336,6 @@ Calling BigEcho(string[]):
 Server responds: Hello 0  
   
 Press <ENTER> to terminate client.  
-  
 ```  
   
 #### To set up, build, and run the sample  
@@ -354,7 +344,6 @@ Press <ENTER> to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

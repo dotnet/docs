@@ -23,11 +23,9 @@ Retrieves a generic dictionary map.
 ## Syntax  
   
 ```  
-  
 HRESULT GetGenericDictionaryInfo(  
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  
-  
 ```  
   
 #### Parameters  

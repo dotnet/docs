@@ -24,7 +24,6 @@ The sample demonstrates how to write imperative code to define and use custom bi
  On both the client and the service, a custom binding is created that contains two binding elements (Reliable Session and HTTP):  
   
 ```  
-  
 ReliableSessionBindingElement reliableSession = new ReliableSessionBindingElement();  
 reliableSession.Ordered = true;  
   
@@ -33,7 +32,6 @@ httpTransport.AuthenticationScheme = System.Net.AuthenticationSchemes.Anonymous;
 httpTransport.HostNameComparisonMode = HostNameComparisonMode.StrongWildcard;  
   
 CustomBinding binding = new CustomBinding(reliableSession, httpTransport);  
-  
 ```  
   
  On the service, the binding is used by adding an endpoint to the ServiceHost:  
@@ -53,19 +51,16 @@ ICalculator channel = channelFactory.CreateChannel();
  This channel is then used to interact with the service:  
   
 ```  
-  
 // Call the Add service operation.  
 double value1 = 100.00D;  
 double value2 = 15.99D;  
 double result = channel.Add(value1, value2);  
 Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
-  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  

@@ -33,7 +33,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```  
-  
 HRESULT ReadInMemorySymbols(  
         [in] ModuleID moduleId,  
         [in] DWORD symbolsReadOffset,  
@@ -41,7 +40,6 @@ HRESULT ReadInMemorySymbols(
         [in] DWORD countSymbolBytes,  
         [out] DWORD* pCountSymbolBytesRead  
 );  
-  
 ```  
   
 #### Parameters  

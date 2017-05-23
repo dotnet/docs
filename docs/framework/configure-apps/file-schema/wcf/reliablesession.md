@@ -30,7 +30,6 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 ## Syntax  
   
 ```  
-  
 <reliableSession acknowledgementInterval="TimeSpan"  
         flowControlEnabled="Boolean"   
     inactivityTimeout="TimeSpan"  

@@ -39,7 +39,6 @@ Listener or server sockets open a port on the network and then wait for a client
 Dim ipHostInfo As IPHostEntry = Dns.Resolve(Dns.GetHostName())  
 Dim ipAddress As IPAddress = ipHostInfo.AddressList(0)  
 Dim localEndPoint As New IPEndPoint(ipAddress, 11000)  
-  
 ```  
   
 ```csharp  

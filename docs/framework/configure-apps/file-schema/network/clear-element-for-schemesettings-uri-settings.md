@@ -31,9 +31,7 @@ Clears all existing scheme settings.
 ## Syntax  
   
 ```  
-  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  

@@ -164,7 +164,6 @@ private static int Aggregate(Expression exp)
     }
     else throw new NotSupportedException("Haven't written this yet");
 }
-
 ```
 
 Running it on the same expression yields the following output:

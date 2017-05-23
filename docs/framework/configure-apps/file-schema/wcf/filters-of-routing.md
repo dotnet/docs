@@ -29,7 +29,6 @@ Represents a configuration section for defining a set of routing filters, which 
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

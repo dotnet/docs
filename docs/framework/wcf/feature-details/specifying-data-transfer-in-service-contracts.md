@@ -88,7 +88,6 @@ Public Interface IAirfareQuoteService
         Public toCity As String  
     End Class  
 End Interface  
-  
 ```  
   
  Occasionally, the `DataContractSerializer` is not adequate to serialize your types. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] supports an alternative serialization engine, the <xref:System.Xml.Serialization.XmlSerializer>, which you can also use to serialize parameters. The <xref:System.Xml.Serialization.XmlSerializer> allows you to use more control over the resultant XML using attributes such as the `XmlAttributeAttribute`. To switch to using the <xref:System.Xml.Serialization.XmlSerializer> for a particular operation or for the entire service, apply the <xref:System.ServiceModel.XmlSerializerFormatAttribute> attribute to an operation or a service. For example:  
@@ -108,7 +107,6 @@ public class Itinerary
     [XmlAttribute]  
     public bool isFirstClass;  
 }  
-  
 ```  
   
 ```vb  
@@ -127,7 +125,6 @@ Class Itinerary
     <XmlSerializerFormat()>  
     Public isFirstClass As Boolean  
 End Class  
-  
 ```  
   
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Using the XmlSerializer Class](../../../../docs/framework/wcf/feature-details/using-the-xmlserializer-class.md). Remember that manually switching to the <xref:System.Xml.Serialization.XmlSerializer> as shown here is not recommended unless you have specific reasons to do so as detailed in that topic.  
@@ -139,13 +136,11 @@ End Class
 public float GetAirfare(  
     [MessageParameter(Name="fromCity")] string originCity,  
     [MessageParameter(Name="toCity")] string destinationCity);  
-  
 ```  
   
 ```vb  
 <OperationContract()>  
   Function GetAirfare(<MessageParameter(Name := "fromCity")> fromCity As String, <MessageParameter(Name := "toCity")> toCity As String) As Double  
-  
 ```  
   
 ## Describing Empty Messages  
@@ -166,13 +161,11 @@ public float GetAirfare(
 ```csharp  
 [OperationContract]  
 public void SetTemperature(int temperature);  
-  
 ```  
   
 ```vb  
 <OperationContract()>  
 Sub SetTemperature(temperature As Integer)  
-  
 ```  
   
  This is different from a one-way operation, such as:  
@@ -180,13 +173,11 @@ Sub SetTemperature(temperature As Integer)
 ```csharp  
 [OperationContract(IsOneWay=true)]  
 public void SetLightbulbStatus(bool isOn);  
-  
 ```  
   
 ```vb  
 <OperationContract(IsOneWay:=True)>  
 Sub SetLightbulbStatus(isOne As Boolean)  
-  
 ```  
   
  The `SetTemperatureStatus` operation returns an empty message. It may return a fault instead if there is a problem processing the input message. The `SetLightbulbStatus` operation returns nothing. There is no way to communicate a fault condition from this operation.  
@@ -222,7 +213,6 @@ public class Itinerary
     [DataMember] public string fromCity;  
     [DataMember] public string toCity;  
 }  
-  
 ```  
   
 ```vb  
@@ -252,7 +242,6 @@ Public Class Itinerary
     <DataMember()> Public Property fromCity As String  
     <DataMember()> Public Property toCity As String  
 End Class  
-  
 ```  
   
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Using Message Contracts](../../../../docs/framework/wcf/feature-details/using-message-contracts.md).  
@@ -267,13 +256,11 @@ End Class
 ```csharp  
 [OperationContract]  
 public Stream DownloadFile(string fileName);  
-  
 ```  
   
 ```vb  
 <OperationContract()>  
 Function DownloadFile(fileName As String) As String  
-  
 ```  
   
  You cannot combine `Stream` and non-stream data in a single message body. Use a message contract to put the extra data in message headers. The following example shows the incorrect usage of streams when defining the operation contract.  
@@ -282,14 +269,12 @@ Function DownloadFile(fileName As String) As String
 //Incorrect:  
 // [OperationContract]  
 // public void UploadFile (string fileName, Stream fileData);  
-  
 ```  
   
 ```vb  
 'Incorrect:  
     '<OperationContract()>  
     Public Sub UploadFile(fileName As String, fileData As StreamingContext)  
-  
 ```  
   
  The following sample shows the correct usage of streams when defining an operation contract.  
@@ -304,7 +289,6 @@ public class UploadFileMessage
     [MessageHeader] public string fileName;  
     [MessageBodyMember] public Stream fileData;  
 }  
-  
 ```  
   
 ```vb  
@@ -318,7 +302,6 @@ Public Class UploadFileMessage
     <MessageBodyMember()>  
     Public Property fileData As Stream  
 End Class  
-  
 ```  
   
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] [Large Data and Streaming](../../../../docs/framework/wcf/feature-details/large-data-and-streaming.md).  
@@ -329,13 +312,11 @@ End Class
 ```csharp  
 [OperationContract]  
 public void LogMessage(Message m);  
-  
 ```  
   
 ```vb  
 <OperationContract()>  
 Sub LogMessage(m As Message)  
-  
 ```  
   
  This is an advanced scenario, which is described in detail in [Using the Message Class](../../../../docs/framework/wcf/feature-details/using-the-message-class.md).  
@@ -346,13 +327,11 @@ Sub LogMessage(m As Message)
 ```csharp  
 [OperationContract]  
 float GetAirfare(string fromCity, string toCity, DateTime date);  
-  
 ```  
   
 ```vb  
 <OperationContract()>  
 Function GetAirfare(fromCity As String, toCity As String, date as DateTime)  
-  
 ```  
   
  This operation may either return a normal message that contains a `float` number, or a fault message that contains a fault code and a description. You can accomplish this by throwing a <xref:System.ServiceModel.FaultException> in your service implementation.  
@@ -375,7 +354,6 @@ public class ItineraryNotAvailableFault
     [DataMember]  
     public DateTime alternativeSuggestedDate;  
 }  
-  
 ```  
   
 ```vb  
@@ -391,7 +369,6 @@ Public Class
   <DataMember()>  
   Public Property alternativeSuggestedDate As DateTime  
 End Class  
-  
 ```  
   
  These additional faults can be generated by throwing a <xref:System.ServiceModel.FaultException%601> of the appropriate data contract type. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Handling Exceptions and Faults](../../../../docs/framework/wcf/extending/handling-exceptions-and-faults.md).  
@@ -404,13 +381,11 @@ End Class
 ```csharp  
 [OperationContract]  
 public bool IsLibraryItemAvailable(LibraryItem item);  
-  
 ```  
   
 ```vbs  
 <OperationContract()>  
     Function IsLibraryItemAvailable(item As LibraryItem) As Boolean  
-  
 ```  
   
  Assume that two types, `Book` and `Magazine`, derive from `LibraryItem`. To use these types in the `IsLibraryItemAvailable` operation, you can change the operation as follows:  
@@ -426,7 +401,6 @@ public bool IsLibraryItemAvailable(LibraryItem item);
  Alternatively, you can use the <xref:System.Runtime.Serialization.KnownTypeAttribute> attribute when the default <xref:System.Runtime.Serialization.DataContractSerializer> is in use, as shown in the following example code.  
   
 ```csharp  
-  
 [OperationContract]  
 public bool IsLibraryItemAvailable(LibraryItem item);  
   
@@ -439,7 +413,6 @@ public class LibraryItem
 {  
     //code omitted  
 }  
-  
 ```  
   
 ```vb  
@@ -453,7 +426,6 @@ Function IsLibraryItemAvailable(item As LibraryItem) As Boolean
 Public Class LibraryItem  
   'Code Omitted  
 End Class  
-  
 ```  
   
  You can use the <xref:System.Xml.Serialization.XmlIncludeAttribute> attribute when using the <xref:System.Xml.Serialization.XmlSerializer>.  
@@ -474,7 +446,6 @@ End Class
  When the default <xref:System.Runtime.Serialization.DataContractSerializer> is in use, you can control some aspects of the serialization process on the service by applying the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute to the service. Specifically, you may use the `MaxItemsInObjectGraph` property to set the quota that limits the maximum number of objects the <xref:System.Runtime.Serialization.DataContractSerializer> deserializes. You can use the `IgnoreExtensionDataObject` property to turn off the round-tripping versioning feature. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] quotas, see [Security Considerations for Data](../../../../docs/framework/wcf/feature-details/security-considerations-for-data.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] round-tripping, see [Forward-Compatible Data Contracts](../../../../docs/framework/wcf/feature-details/forward-compatible-data-contracts.md).  
   
 ```csharp  
-  
 [ServiceBehavior(MaxItemsInObjectGraph=100000)]  
 public class MyDataService:IDataService  
 {  
@@ -486,7 +457,6 @@ public class MyDataService:IDataService
 ```  
   
 ```vb  
-  
 <ServiceBehavior(MaxItemsInObjectGraph:=100000)>  
 Public Class MyDataService Implements IDataService  
   
@@ -494,7 +464,6 @@ Public Class MyDataService Implements IDataService
          ‘ Implementation omitted  
     End Function  
 End Interface  
-  
 ```  
   
 ### Serialization Behaviors  
@@ -517,7 +486,6 @@ foreach (OperationDescription op in factory.Endpoint.Contract.Operations)
     }  
 }  
 IDataService client = factory.CreateChannel();  
-  
 ```  
   
 ```vb  
@@ -529,7 +497,6 @@ For Each op As OperationDescription In factory.Endpoint.Contract.Operations
         End If  
      Next  
     Dim client As IDataService = factory.CreateChannel  
-  
 ```  
   
  Following is the equivalent code on the service, in the self-hosted case.  
@@ -550,7 +517,6 @@ foreach (OperationDescription op in ep.Contract.Operations)
 }  
 }  
 serviceHost.Open();  
-  
 ```  
   
 ```vb  
@@ -565,7 +531,6 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
             Next  
         Next  
         serviceHost.Open()  
-  
 ```  
   
  In the Web-hosted case, you must create a new `ServiceHost` derived class and use a service host factory to plug it in.  
@@ -593,7 +558,6 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
         </client>  
     </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ### Shared Type Serialization, Object Graph Preservation, and Custom Serializers  

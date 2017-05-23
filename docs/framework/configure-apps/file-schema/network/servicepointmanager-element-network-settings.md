@@ -37,7 +37,6 @@ Configures connections to network resources.
 ## Syntax  
   
 ```  
-  
       <servicePointManager  
   checkCertificateName="true|false"  
   checkCertificateRevocationList="true|false"  

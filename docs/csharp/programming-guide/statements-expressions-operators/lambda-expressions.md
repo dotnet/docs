@@ -274,7 +274,6 @@ class Test
         Console.ReadKey();  
     }  
 }  
-  
 ```  
   
  The following rules apply to variable scope in lambda expressions:  

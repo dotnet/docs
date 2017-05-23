@@ -45,7 +45,6 @@ An `if` statement identifies which statement to run based on the value of a `Boo
  An `if` statement in C# can take two forms, as the following example shows.  
   
 ```csharp  
-  
 // if-else statement  
 if (condition)  
 {  

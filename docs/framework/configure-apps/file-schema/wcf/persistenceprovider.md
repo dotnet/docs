@@ -27,7 +27,6 @@ Specifies the type of the persistence provider implementation to use, as well as
 ## Syntax  
   
 ```  
-  
 <persistenceProvider persistenceOperationTimeout="TimeSpan"  
    type="String" />  
 ```  

@@ -32,7 +32,6 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

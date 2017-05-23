@@ -37,7 +37,6 @@ Customizes Web request parameters.
 ## Syntax  
   
 ```  
-  
       <httpWebRequest  
   maximumResponseHeadersLength="size"  
   maximumErrorResponseLength="size"  

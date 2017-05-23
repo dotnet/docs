@@ -38,7 +38,6 @@ The Discovery specification does not require that endpoints that participate in 
           ... />]?  
   ...   
 </d:Security>  
-  
 ```  
   
 > [!NOTE]

@@ -74,7 +74,6 @@ manager: "wpickett"
        NotifyIcon1.Visible = True  
        NotifyIcon1.ContextMenu = ContextMenu1  
     End Sub  
-  
     ```  
   
 ```csharp  
@@ -98,7 +97,6 @@ public void createIconMenuStructure()
    notifyIcon1.Visible = true;  
    notifyIcon1.ContextMenu = contextMenu1;  
 }  
-  
 ```  
   
 ```cpp  

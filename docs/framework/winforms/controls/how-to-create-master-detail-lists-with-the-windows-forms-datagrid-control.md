@@ -52,7 +52,6 @@ manager: "wpickett"
     ds.Relations.Add(myDataRelation)  
     GridOrders.SetDataBinding(ds, "Customers")  
     GridDetails.SetDataBinding(ds, "Customers.CustOrd")  
-  
     ```  
   
     ```csharp  
@@ -62,7 +61,6 @@ manager: "wpickett"
     ds.Relations.Add(myDataRelation);  
     GridOrders.SetDataBinding(ds,"Customers");  
     GridDetails.SetDataBinding(ds,"Customers.CustOrd");  
-  
     ```  
   
     ```cpp  

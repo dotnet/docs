@@ -70,7 +70,6 @@ xmlTree.Add( _
 ' will not throw an exception, and nothing will be added to xmlTree.  
 xmlTree.Add(srcTree.Element("Child9"))  
 Console.WriteLine(xmlTree)  
-  
 ```  
   
 ### Comments  

@@ -39,7 +39,6 @@ Adds a custom Web request module to the application.
 ## Syntax  
   
 ```  
-  
       <add   
   prefix = "URI prefix"   
   type = "module name, Version, Culture, PublicKeyToken"   

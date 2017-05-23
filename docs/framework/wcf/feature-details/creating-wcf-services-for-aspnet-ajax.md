@@ -51,7 +51,6 @@ Microsoft ASP.NET AJAX enables you to quickly create Web pages that include a ri
     WebOperationContext.Current.OutgoingResponse.ContentType = "text/xml";      
     return x;  
     }  
-  
     ```  
   
 -   No other properties on the <xref:System.ServiceModel.Web.WebGetAttribute> and <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes can be changed if compatibility with ASP.NET AJAX is required. Other aspects of the Web Programming Model can be used as long as the ASP.NET AJAX calling conventions are not violated.  

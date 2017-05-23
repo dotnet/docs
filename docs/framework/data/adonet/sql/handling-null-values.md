@@ -43,14 +43,12 @@ A null value in a relational database is used when the value in a column is unkn
  The ANSI SQL-92 standard does not support *columnName* = NULL in a WHERE clause. In SQL Server, the ANSI_NULLS option controls both default nullability in the database and evaluation of comparisons against null values. If ANSI_NULLS is turned on (the default), the IS NULL operator must be used in expressions when testing for null values. For example, the following comparison always yields unknown when ANSI_NULLS is on:  
   
 ```  
-  
 colname > NULL  
 ```  
   
  Comparison to a variable containing a null value also yields unknown:  
   
 ```  
-  
 colname > @MyVariable  
 ```  
   

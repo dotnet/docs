@@ -43,7 +43,6 @@ Assigns a value to a variable or property.
 ## Syntax  
   
 ```  
-  
 variableorproperty = value  
 ```  
   

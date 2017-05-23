@@ -68,7 +68,6 @@ Public Class SerializeOverride()
     Dim writer As StreamWriter = New StreamWriter("Book.xml")  
     mySerializer.Serialize(writer, b);  
 End Class  
-  
 ```  
   
 ```csharp  

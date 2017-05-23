@@ -94,7 +94,6 @@ namespace Metadata.Samples
     </behaviors>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ### To publish metadata for a WCF service using an application configuration file  

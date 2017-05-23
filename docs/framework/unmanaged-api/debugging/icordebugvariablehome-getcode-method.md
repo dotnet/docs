@@ -36,11 +36,9 @@ Gets the "ICorDebugCode" instance that contains this [ICorDebugVariableHome](../
 ## Syntax  
   
 ```  
-  
 HRESULT GetCode(  
     [out] ICorDebugCode **ppCode  
 );  
-  
 ```  
   
 #### Parameters  

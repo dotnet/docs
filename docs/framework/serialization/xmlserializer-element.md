@@ -31,7 +31,6 @@ Specifies whether an additional check of progress of the <xref:System.Xml.Serial
 ## Syntax  
   
 ```  
-  
 <xmlSerializer checkDeserializerAdvance = "true"|"false" />  
 ```  
   

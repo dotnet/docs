@@ -78,7 +78,6 @@ Using connection As New OleDbConnection(connectionString)
     connection.Open()  
     ' Do work here.  
 End Using  
-  
 ```  
   
 ```csharp  
@@ -107,7 +106,6 @@ Using connection As New OdbcConnection(connectionString)
     connection.Open()  
     ' Do work here.  
 End Using  
-  
 ```  
   
 ```csharp  
@@ -133,7 +131,6 @@ Using connection As New OracleConnection(connectionString)
     connection.Open()  
     ' Do work here.  
 End Using  
-  
 ```  
   
 ```csharp  

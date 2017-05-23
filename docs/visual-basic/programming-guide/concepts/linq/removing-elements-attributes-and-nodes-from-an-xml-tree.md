@@ -69,7 +69,6 @@ root.<Child1>.<GrandChild1>.Remove()
 root.<Child2>.Elements().ToList().Remove()  
 root.<Child3>.Elements().Remove()  
 Console.WriteLine(root)  
-  
 ```  
   
 ### Comments  

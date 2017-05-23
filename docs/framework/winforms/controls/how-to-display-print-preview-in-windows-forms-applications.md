@@ -48,7 +48,6 @@ You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable
        PrintPreviewDialog1.Document = myDocument  
        PrintPreviewDialog1.ShowDialog()  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -60,7 +59,6 @@ You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable
        printPreviewDialog1.Document = myDocument;  
        printPreviewDialog1.ShowDialog();  
     }  
-  
     ```  
   
     ```cpp  
@@ -80,7 +78,6 @@ You can use the <xref:System.Windows.Forms.PrintPreviewDialog> control to enable
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
-  
     ```  
   
     ```cpp  

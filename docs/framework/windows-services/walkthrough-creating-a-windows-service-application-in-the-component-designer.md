@@ -222,7 +222,6 @@ This article demonstrates how to create a simple Windows Service application in 
     ```csharp  
     [DllImport("advapi32.dll", SetLastError=true)]  
             private static extern bool SetServiceStatus(IntPtr handle, ref ServiceStatus serviceStatus);  
-  
     ```  
   
     ```vb  

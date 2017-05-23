@@ -45,7 +45,6 @@ Generates a string concatenation of two expressions.
 ## Syntax  
   
 ```  
-  
 result = expression1 & expression2  
 ```  
   

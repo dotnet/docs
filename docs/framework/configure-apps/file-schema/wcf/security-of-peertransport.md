@@ -28,7 +28,6 @@ Contains the security settings associated with a peer channel, including the typ
 ## Syntax  
   
 ```  
-  
 <security mode="None/Transport/Message/TransportWithMessageCredential">  
     <transport clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />  
 </security  

@@ -48,7 +48,6 @@ Performs a logical conjunction on two `Boolean` expressions, or a bitwise conjun
 ## Syntax  
   
 ```  
-  
 result = expression1 And expression2  
 ```  
   

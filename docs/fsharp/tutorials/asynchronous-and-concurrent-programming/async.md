@@ -38,7 +38,6 @@ let fetchHtmlAsync url = async {
 
 let html = "http://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
 printfn "%s" html
-
 ```
 
 And that’s it! Aside from the use of `async`, `let!`, and `return`, this is just normal F# code.
@@ -72,7 +71,6 @@ As mentioned earlier, async code is a specification of work to be done in anothe
 
  // you actually have the result from fetchHtmlAsync now!
  printfn "%s" html
-
  ```
 
 2.  `Async.Start` will start an async workflow on another thread, and will **not** await its result.
@@ -90,7 +88,6 @@ As mentioned earlier, async code is a specification of work to be done in anothe
  Async.Run(workflow)
 
  printfn "%s" "uploadDataAsync is running in the background..."
-
  ```
 
 There are other ways to start an async workflow available for more specific scenarios. They are detailed [in the Async reference](https://msdn.microsoft.com/library/ee370232.aspx).
@@ -129,7 +126,6 @@ let htmlList = urlList |> getHtmlList
 // We now have the downloaded HTML for each site!
 for html in htmlList do
     printfn "%s" html
-
 ```
 
 ## Important Info and Advice

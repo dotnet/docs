@@ -45,7 +45,6 @@ A custom binding is defined by an ordered list of discrete binding elements. Thi
         </binding>  
     </customBinding>  
 </bindings>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in both the service and client console window. The client communicates with each of the three endpoints, accessing first HTTP, then TCP, and finally NamedPipe. Press ENTER in each console window to shut down the service and client.  

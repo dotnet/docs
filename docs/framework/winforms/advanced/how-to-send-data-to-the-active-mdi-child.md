@@ -61,7 +61,6 @@ Often, within the context of [Multiple-Document Interface (MDI) Applications](..
           End Try  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -95,7 +94,6 @@ Often, within the context of [Multiple-Document Interface (MDI) Applications](..
           }  
        }  
     }  
-  
     ```  
   
 ## See Also  

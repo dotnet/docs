@@ -31,7 +31,6 @@ Adds a scheme setting for a scheme name.
 ## Syntax  
   
 ```  
-  
       <add   
    name = "http|https" genericUriParserOptions="DontUnescapePathDotsAndSlashes"  
 />  

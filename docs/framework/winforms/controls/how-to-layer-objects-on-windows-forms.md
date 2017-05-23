@@ -43,12 +43,10 @@ When you create a complex user interface, or work with a multiple document inter
   
     ```vb  
     txtFirstName.BringToFront()  
-  
     ```  
   
     ```csharp  
     txtFirstName.BringToFront();  
-  
     ```  
   
     ```cpp  

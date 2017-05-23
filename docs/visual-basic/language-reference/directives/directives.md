@@ -55,7 +55,6 @@ The topics in this section document the Visual Basic source code compiler direct
         Console.WriteLine("testing")  
     End Function  
 #Enable Warning BC42356  
-  
 ```  
   
  You can disable and enable a comma-separated list of warning codes too.  

@@ -27,7 +27,6 @@ A binding element used to communicate with a CardSpace Security Token Service th
 ## Syntax  
   
 ```  
-  
 <useManagedPresentation/>  
 ```  
   

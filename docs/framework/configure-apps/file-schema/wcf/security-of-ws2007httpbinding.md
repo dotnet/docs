@@ -27,7 +27,6 @@ Represents the security settings used with the [\<ws2007HttpBinding>](../../../.
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <bindings>  
         <ws2007HttpBinding>  

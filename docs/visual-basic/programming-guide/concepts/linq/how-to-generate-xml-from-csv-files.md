@@ -24,7 +24,6 @@ This example shows how to use [!INCLUDE[vbteclinqext](../../../../csharp/getting
  The following code performs a [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] query on an array of strings.  
   
 ```vb  
-  
       ' Create the text file.  
 Dim csvString As String = "GREAL,Great Lakes Food Market,Howard Snyder,Marketing Manager,(503) 555-7555,2732 Baker Blvd.,Eugene,OR,97403,USA" & vbCrLf & _  
     "HUNGC,Hungry Coyote Import Store,Yoshi Latimer,Sales Representative,(503) 555-6874,City Center Plaza 516 Main St.,Elgin,OR,97827,USA" & vbCrLf & _  
@@ -55,7 +54,6 @@ Dim cust As XElement = _
         %>  
     </Root>  
 Console.WriteLine(cust)  
-  
 ```  
   
  This code produces the following output:  

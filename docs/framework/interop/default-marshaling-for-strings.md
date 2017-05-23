@@ -116,7 +116,6 @@ Public Declare Auto Sub PassAnsiBStr Lib "StringLib.Dll" _
 Public Declare Auto Sub PassTBStr Lib "StringLib.Dll" _  
 (<MarshalAs(UnmanagedType.TBStr)> s As String)  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -198,7 +197,6 @@ Structure StringInfoT
 <MarshalAs(UnmanagedType.ByValTStr, SizeConst := 256)> _  
 Public f2 As String  
 End Structure  
-  
 ```  
   
 ```csharp  
@@ -251,7 +249,6 @@ Public Class Window
    Return sb.ToString()  
    End Function  
 End Class  
-  
 ```  
   
 ```csharp  

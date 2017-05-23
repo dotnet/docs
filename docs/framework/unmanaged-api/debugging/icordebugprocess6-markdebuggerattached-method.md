@@ -23,11 +23,9 @@ Changes the internal state of the debugee so that the <xref:System.Diagnostics.D
 ## Syntax  
   
 ```  
-  
 HRESULT MarkDebuggerAttached(  
     BOOL fIsAttached  
 );  
-  
 ```  
   
 #### Parameters  

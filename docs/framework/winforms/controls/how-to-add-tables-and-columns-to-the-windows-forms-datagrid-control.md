@@ -39,13 +39,11 @@ manager: "wpickett"
     ```vb  
     Dim ts1 As New DataGridTableStyle()  
     ts1.MappingName = "Customers"  
-  
     ```  
   
     ```csharp  
     DataGridTableStyle ts1 = new DataGridTableStyle();  
     ts1.MappingName = "Customers";  
-  
     ```  
   
     ```cpp  
@@ -59,14 +57,12 @@ manager: "wpickett"
     Dim myDataCol As New DataGridBoolColumn()  
     myDataCol.HeaderText = "My New Column"  
     myDataCol.MappingName = "Current"  
-  
     ```  
   
     ```csharp  
     DataGridBoolColumn myDataCol = new DataGridBoolColumn();  
     myDataCol.HeaderText = "My New Column";  
     myDataCol.MappingName = "Current";  
-  
     ```  
   
     ```cpp  
@@ -79,12 +75,10 @@ manager: "wpickett"
   
     ```vb  
     ts1.GridColumnStyles.Add(myDataCol)  
-  
     ```  
   
     ```csharp  
     ts1.GridColumnStyles.Add(myDataCol);  
-  
     ```  
   
     ```cpp  
@@ -95,12 +89,10 @@ manager: "wpickett"
   
     ```vb  
     DataGrid1.TableStyles.Add(ts1)  
-  
     ```  
   
     ```csharp  
     dataGrid1.TableStyles.Add(ts1);  
-  
     ```  
   
     ```cpp  

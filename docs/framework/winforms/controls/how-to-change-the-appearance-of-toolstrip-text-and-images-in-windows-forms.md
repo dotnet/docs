@@ -35,12 +35,10 @@ You can control whether text and images are displayed on a <xref:System.Windows.
     ```vb  
     ToolStripButton2.DisplayStyle = _  
         System.Windows.Forms.ToolStripItemDisplayStyle.Image  
-  
     ```  
   
     ```csharp  
     toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;  
-  
     ```  
   
 ### To align text on a ToolStripItem  
@@ -50,12 +48,10 @@ You can control whether text and images are displayed on a <xref:System.Windows.
     ```vb  
     ToolStripSplitButton1.TextAlign = _  
         System.Drawing.ContentAlignment.MiddleRight  
-  
     ```  
   
     ```csharp  
     toolStripSplitButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;  
-  
     ```  
   
 ### To align an image on a ToolStripItem  
@@ -65,12 +61,10 @@ You can control whether text and images are displayed on a <xref:System.Windows.
     ```vb  
     ToolStripSplitButton1.ImageAlign = _  
         System.Drawing.ContentAlignment.MiddleRight  
-  
     ```  
   
     ```csharp  
     toolStripSplitButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;  
-  
     ```  
   
 ### To define how ToolStripItem text and images are displayed relative to each other  
@@ -80,12 +74,10 @@ You can control whether text and images are displayed on a <xref:System.Windows.
     ```vb  
     ToolStripButton1.TextImageRelation = _  
         System.Windows.Forms.TextImageRelation.ImageAboveText  
-  
     ```  
   
     ```csharp  
     toolStripButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;  
-  
     ```  
   
 ## See Also  

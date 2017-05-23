@@ -99,7 +99,6 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
             DWORD m_messageDataLength;             // Length of the m_messageData field, in bytes.  
             BYTE m_messageData[1];                 // Variable-length buffer; content depends on m_messageCode.  
         };  
-  
     ```  
   
 -   The `MmioDataStructure` data structure should not be used directly; use the `MmioChainer` class instead to implement your chainer. Derive from the `MmioChainer` class to chain the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] redistributable.  
@@ -116,7 +115,6 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
             virtual void Finished(HRESULT) = 0;         // Called when operation is complete    
             virtual DWORD Send(DWORD dwMessage, LPVOID pData, DWORD dwDataLength) = 0; // Called when a message is sent  
         };  
-  
     ```  
   
 #### ChainingdotNet4.5.cpp  
@@ -130,7 +128,6 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
         …………….  
         Server():ChainerSample::MmioChainer(L"TheSectionName", L"TheEventName") //customize for your event names  
         {}  
-  
     ```  
   
      The installation is started in the Main method.  
@@ -157,7 +154,6 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
   
         return result;  
     }  
-  
     ```  
   
 -   Before launching the installation, the chainer checks to see if the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is already installed by calling `IsNetFx4Present`:  
@@ -211,13 +207,11 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
   
         return ((ERROR_SUCCESS == dwError) && (dwData >= dwMinimumRelease));  
     }  
-  
     ```  
   
 -   You can change the path of the executable (Setup.exe in the example) in the `Launch` method to point to its correct location, or customize the code to determine the location. The `MmioChainer` base class provides a blocking `Run()` method that the derived class calls.  
   
     ```cpp  
-  
     bool Launch(const CString& args)  
     {  
     CString cmdline = L"dotNetFx45_Full_x86_x64.exe -pipe TheSectionName " + args; // Customize with name and location of setup .exe that you want to run  
@@ -241,7 +235,6 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
     ……………………..   
     return (bLaunchedSetup != 0);  
     }  
-  
     ```  
   
 -   The `Send` method intercepts and processes the messages.  In this version of the .NET Framework, the only supported message is the close application message.  
@@ -296,7 +289,6 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
             return dwResult;  
         }  
     };  
-  
     ```  
   
 -   Progress data is an unsigned `char` between 0 (0%) and 255 (100%).  
@@ -306,7 +298,6 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
         virtual void OnProgress(unsigned char ubProgressSoFar)  
         {…………  
        }  
-  
     ```  
   
 -   The HRESULT is passed to the `Finished` method.  
@@ -318,7 +309,6 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
     // Exit code of the Chainee Setup.exe itself  
     printf("\r\nFinished HRESULT: 0x%08X\r\n", hr);  
     }  
-  
     ```  
   
     > [!IMPORTANT]

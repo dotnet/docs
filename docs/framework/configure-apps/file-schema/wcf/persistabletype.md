@@ -25,7 +25,6 @@ Specifies all the persistable types.
 ## Syntax  
   
 ```  
-  
 <comContracts>  
   <comContract>  
       <persistableTypes>  

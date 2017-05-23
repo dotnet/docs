@@ -68,7 +68,6 @@ This topic outlines the basic steps required to create and dynamically update th
           <add filterName="MatchAllFilter" endpointName="regularCalcEndpoint"/>  
       </filterTable>  
     </filterTables>  
-  
     ```  
   
 3.  To evaluate incoming messages against the filters contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating "filterTable1" with the service endpoint.  
@@ -97,7 +96,6 @@ This topic outlines the basic steps required to create and dynamically update th
     using System.ServiceModel.Description;  
     using System.ServiceModel.Dispatcher;  
     using System.ServiceModel.Routing;  
-  
     ```  
   
 2.  The following code is used to self-host the Routing Service as a console application. This initializes the Routing Service using the configuration described in the previous step, which is contained within the application configuration file. The while loop contains the code used to change the routing configuration.  
@@ -123,7 +121,6 @@ This topic outlines the basic steps required to create and dynamically update th
             }  
         }  
     }  
-  
     ```  
   
 3.  To dynamically update the routing configuration, a new routing configuration must be created. This must contain all endpoints, filters and filter tables that are required for the new routing configuration, as it will completely replace the existing routing configuration. In order to use the new routing configuration, you must invoke <xref:System.ServiceModel.Routing.RoutingExtension.ApplyConfiguration%2A> and pass the new configuration.  
@@ -247,7 +244,6 @@ namespace Microsoft.Samples.AdvancedFilters
         }  
     }  
 }  
-  
 ```  
   
 ## Example  
@@ -304,7 +300,6 @@ namespace Microsoft.Samples.AdvancedFilters
     </routing>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## See Also  

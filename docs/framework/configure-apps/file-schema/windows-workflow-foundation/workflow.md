@@ -66,7 +66,6 @@ A configuration element that contains all queries for a specific workflow identi
  The following example shows a tracking profile in a configuration file that allows a tracking participant to subscribe to the `Started`and `Completed` workflow events.  
   
 ```  
-  
 <system.serviceModel>  
   <tracking>    
     <trackingProfile name="Sample Tracking Profile">  
@@ -84,7 +83,6 @@ A configuration element that contains all queries for a specific workflow identi
    </profiles>  
   </tracking>  
 </system.serviceModel>  
-  
 ```  
   
 ## See Also  

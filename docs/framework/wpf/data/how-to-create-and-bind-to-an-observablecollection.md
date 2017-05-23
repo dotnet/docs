@@ -60,7 +60,6 @@ public class NameList : ObservableCollection<PersonName>
           set { lastName = value; }  
       }  
   }  
-  
 ```  
   
 ```vb  
@@ -107,7 +106,6 @@ Public Class PersonName
     Private _firstName As String  
     Private _lastName As String  
 End Class  
-  
 ```  
   
  You can make the collection available for binding the same way you would with other [!INCLUDE[TLA#tla_clr](../../../../includes/tlasharptla-clr-md.md)] objects, as described in [Make Data Available for Binding in XAML](../../../../docs/framework/wpf/data/how-to-make-data-available-for-binding-in-xaml.md). For example, you can instantiate the collection in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and specify the collection as a resource, as shown here:  
@@ -128,7 +126,6 @@ End Class
 ...  
   
 </Window.Resources>  
-  
 ```  
   
  You can then bind to the collection:  
@@ -138,7 +135,6 @@ End Class
          ItemsSource="{Binding Source={StaticResource NameListData}}"  
          ItemTemplate="{StaticResource NameItemTemplate}"  
          IsSynchronizedWithCurrentItem="True"/>  
-  
 ```  
   
  The definition of `NameItemTemplate` is not shown here.  

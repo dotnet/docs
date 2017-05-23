@@ -25,7 +25,6 @@ Specifies the sort order used on objects returned in a SELECT statement.
 ## Syntax  
   
 ```  
-  
 [ ORDER BY   
    {  
       order_by_expression [SKIP n] [LIMIT n]  

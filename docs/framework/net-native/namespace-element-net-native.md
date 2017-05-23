@@ -21,7 +21,6 @@ Applies runtime reflection policy to all the types in a specified namespace.
 ## Syntax  
   
 ```xml  
-  
 <Namespace Name="namespace_name"   
            Activate="policy_type"   
            Browse="policy_type" />  
@@ -33,7 +32,6 @@ Applies runtime reflection policy to all the types in a specified namespace.
            MarshalObject="policy_setting"  
            MarshalDelegate="policy_setting"  
            MarshalStructure="policy_setting" />  
-  
 ```  
   
 ## Attributes and Elements  

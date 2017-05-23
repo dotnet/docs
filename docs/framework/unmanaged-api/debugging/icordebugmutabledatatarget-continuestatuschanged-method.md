@@ -23,11 +23,9 @@ Changes the continuation status for the outstanding debug event on the specified
 ## Syntax  
   
 ```  
-  
 HRESULT ContinueStatusChanged(  
    [in] DWORD dwThreadId,  
    [in] CORDB_CONTINUE_STATUS continueStatus);  
-  
 ```  
   
 #### Parameters  

@@ -46,7 +46,6 @@ public class Policy4Activity<TResult>: NativeActivity<TResult>
   
     public OutArgument<ValidationErrorCollection> ValidationErrors  
 }  
-  
 ```  
   
 |Property|Description|  

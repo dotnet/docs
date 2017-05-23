@@ -48,7 +48,6 @@ public class Program {
         MessageBox(IntPtr.Zero, "Command-line message box", "Attention!", 0);
     }
 }
-
 ```
 
 The example above is pretty simple, but it does show off what is needed to invoke unmanaged functions from managed code. Let’s step through the example:
@@ -79,7 +78,6 @@ namespace PInvokeSamples {
         }
     }
 }
-
 ```
 
 It is similar on Linux, of course. The function name is same, since `getpid(2)` is [POSIX](https://en.wikipedia.org/wiki/POSIX) system call.
@@ -102,7 +100,6 @@ namespace PInvokeSamples {
         }
     }
 }
-
 ```
 
 ### Invoking managed code from unmanaged code
@@ -139,7 +136,6 @@ namespace ConsoleApplication1 {
         }
     }
 }
-
 ```
 
 Before we walk through our example, it is good to go over the signatures of the unmanaged functions we need to work with. The function we want to call to enumerate all of the windows has the following signature: `BOOL EnumWindows (WNDENUMPROC lpEnumFunc, LPARAM lParam);`
@@ -203,7 +199,6 @@ namespace PInvokeSamples {
             public long TimeLastStatusChange;
     }
 }
-
 ```
 
 macOS example uses the same function, and the only difference is the argument to the `DllImport` attribute, as macOS keeps `libc` in a different place.
@@ -256,7 +251,6 @@ namespace PInvokeSamples {
                 public long TimeLastStatusChange;
         }
 }
-
 ```
 
 Both of the above examples depend on parameters, and in both cases, the parameters are given as managed types. Runtime does the "right thing" and processes these into its equivalents on the other side. Since this process is really important to writing quality native interop code, let’s take a look at what happens when the runtime _marshals_ the types.
@@ -270,7 +264,6 @@ The reason marshalling is needed is because the types in the managed and unmanag
 ```csharp
 [DllImport("somenativelibrary.dll")]
 static extern int MethodA([MarshalAs(UnmanagedType.LPStr)] string parameter);
-
 ```
 
 ### Marshalling classes and structs
@@ -298,7 +291,6 @@ public static void Main(string[] args) {
     GetSystemTime(st);
     Console.WriteLine(st.Year);
 }
-
 ```
 
 The example above shows off a simple example of calling into `GetSystemTime()` function. The interesting bit is on line 4. The attribute specifies that the fields of the class should be mapped sequentially to the struct on the other (unmanaged) side. This means that the naming of the fields is not important, only their order is important, as it needs to correspond to the unmanaged struct, shown below:
@@ -314,7 +306,6 @@ typedef struct _SYSTEMTIME {
   WORD wSecond;
   WORD wMilliseconds;
 } SYSTEMTIME, *PSYSTEMTIME*;
-
 ```
 
 We already saw the Linux and macOS example for this in the previous example. It is shown again below.
@@ -336,7 +327,6 @@ public class StatClass {
         public long TimeLastModification;
         public long TimeLastStatusChange;
 }
-
 ```
 
 The `StatClass` class represents a structure that is returned by the `stat` system call on UNIX systems. It represents information about a given file. The class above is the stat struct representation in managed code. Again, the fields in the class have to be in the same order as the native struct (you can find these by perusing man pages on your favorite UNIX implementation) and they have to be of the same underlying type.

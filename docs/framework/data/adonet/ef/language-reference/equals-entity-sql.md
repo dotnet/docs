@@ -25,7 +25,6 @@ Compares the equality of two expressions.
 ## Syntax  
   
 ```  
-  
 expression = expression  
 or   
 expression == expression  

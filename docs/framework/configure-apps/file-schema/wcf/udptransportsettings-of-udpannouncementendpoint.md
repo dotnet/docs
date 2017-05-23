@@ -25,7 +25,6 @@ This configuration element exposes UDP transport settings for [\<udpAnnoucementE
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <udpAnnouncementEndpoint>           <standardEndpoint>               <updTransportSettings>                  duplicateMessageHistoryLength="Integer"                  maxBufferPoolSize="Integer"                   maxMulticastRetransmitCount="Integer"                  maxPendingMessageCount="Integer"                  maxReceivedMessageSize="Integer"                  maxUnicastRetransmitCount="Integer"                  multicastInterfaceId="String"                  socketReceiveBufferSize="Integer"                  timeToLive="Integer" />           </standardEndpoint>       </udpAnnouncementEndpoint>            </standardEndpoints>  
 </system.serviceModel>  

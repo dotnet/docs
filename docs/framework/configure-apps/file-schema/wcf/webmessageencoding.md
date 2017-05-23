@@ -27,7 +27,6 @@ Enables plain-text XML, JavaScript Object Notation (JSON) message encodings and 
 ## Syntax  
   
 ```  
-  
 <webMessageEncoding   
       maxReadPoolSize="Integer"  
    maxWritePoolSize="Integer"  

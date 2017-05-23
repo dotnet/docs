@@ -23,13 +23,11 @@ Returns the object size for an object based on its typespec signature.
 ## Syntax  
   
 ```  
-  
 HRESULT GetObjectSize(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  
    [out] ULONG32 *pObjectSize  
 );  
-  
 ```  
   
 #### Parameters  

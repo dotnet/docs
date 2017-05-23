@@ -117,7 +117,6 @@ Before administrators can deploy [!INCLUDE[TLA#tla_avalonwinfx](../../../../incl
     <div id="result" />  
   </BODY>  
 </HTML>  
-  
 ```  
   
  If the search for the ".NET CLR " version is successful, the following type of status message appears:  

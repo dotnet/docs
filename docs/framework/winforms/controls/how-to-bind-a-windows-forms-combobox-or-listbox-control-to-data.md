@@ -45,7 +45,6 @@ You can bind the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.F
       ComboBox1.DataSource = DataSet1.Tables("Suppliers")  
       ComboBox1.DisplayMember = "ProductName"  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -54,7 +53,6 @@ You can bind the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.F
       comboBox1.DataSource = dataSet1.Tables["Suppliers"];  
       comboBox1.DisplayMember = "ProductName";  
     }  
-  
     ```  
   
     > [!NOTE]

@@ -100,7 +100,6 @@ This sample demonstrates how to batch transacted reads by using Message Queuing 
       </bindings>  
   
     </system.serviceModel>  
-  
     ```  
   
 3.  Ensure that you change the configuration on both the server and the client before you run the sample.  
@@ -156,7 +155,6 @@ public class OrderProcessorService : IOrderProcessor
     }  
     …  
 }  
-  
 ```  
   
  The `Orders` class encapsulates the processing of the order. In the sample, it updates the database with purchase order information.  

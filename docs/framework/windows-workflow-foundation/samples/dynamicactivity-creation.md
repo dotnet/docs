@@ -44,7 +44,6 @@ DynamicActivity act = new DynamicActivity()
         }  
     },  
 };  
-  
 ```  
   
  The following code example shows the complete definition of the `DynamicActivity` that computes the average of the values in a list.  
@@ -121,7 +120,6 @@ DynamicActivity act = new DynamicActivity()
   
 ```  
 Activity act2 = ActivityXamlServices.Load(@"FindAverage.xaml");  
-  
 ```  
   
  The <xref:System.Activities.DynamicActivity> instance created programmatically or through loading a XAML workflow can be used as shown in the following code example. Please note that "act" passed to the `WorkflowInvoker.Invoke` is the "act" <xref:System.Activities.Activity> defined in the first code example.  
@@ -130,7 +128,6 @@ Activity act2 = ActivityXamlServices.Load(@"FindAverage.xaml");
 IDictionary<string, object> results = WorkflowInvoker.Invoke(act, new Dictionary<string, object> { { "Numbers", numbers } });  
   
 Console.WriteLine("The average calculated using the code activity is = " + results["Average"]);  
-  
 ```  
   
 #### To use this sample  

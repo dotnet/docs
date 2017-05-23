@@ -25,7 +25,6 @@ Returns a collection of objects from a query expression that is of a specific ty
 ## Syntax  
   
 ```  
-  
 OFTYPE ( expression, [ONLY] test_type )  
 ```  
   

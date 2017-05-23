@@ -23,7 +23,6 @@ Assigns the value of a byte array to a variable.
 ## Syntax  
   
 ```  
-  
 HRESULT SetValue(  
    [in] ULONG32 offset,  
    [in] DWORD threadID,  
@@ -32,7 +31,6 @@ HRESULT SetValue(
    [in] ULONG32 cbValue,  
    [in, size_is(cbValue)] BYTE pValue[]  
 );  
-  
 ```  
   
 #### Parameters  

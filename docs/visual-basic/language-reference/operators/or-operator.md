@@ -50,7 +50,6 @@ Performs a logical disjunction on two `Boolean` expressions, or a bitwise disjun
 ## Syntax  
   
 ```  
-  
 result = expression1 Or expression2  
 ```  
   

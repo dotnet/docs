@@ -35,7 +35,6 @@ Often, applications will have menu commands for actions such as Tile, Cascade, a
     Protected Sub CascadeWindows_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)  
        Me.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade)  
     End Sub  
-  
     ```  
   
     ```csharp  

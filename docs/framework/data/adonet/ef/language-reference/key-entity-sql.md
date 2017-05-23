@@ -25,7 +25,6 @@ Extracts the key of a reference or of an entity expression.
 ## Syntax  
   
 ```  
-  
 KEY(createref_expression)  
 ```  
   

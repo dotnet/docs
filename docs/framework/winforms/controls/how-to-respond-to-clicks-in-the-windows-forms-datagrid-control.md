@@ -40,7 +40,6 @@ manager: "wpickett"
           & ", Row is " & myDataGrid.CurrentCell.RowNumber _  
           & ", Value is " & myDataGrid.Item(myDataGrid.CurrentCell))  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -95,7 +94,6 @@ manager: "wpickett"
   
        Console.WriteLine(message)  
     End Sub  
-  
     ```  
   
     ```csharp  

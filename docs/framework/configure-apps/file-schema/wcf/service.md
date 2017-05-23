@@ -28,7 +28,6 @@ The `service` element contains the settings for a Windows Communication Foundati
 ## Syntax  
   
 ```  
-  
 <service behaviorConfiguration=String"  
         name="String"  
 </service>  

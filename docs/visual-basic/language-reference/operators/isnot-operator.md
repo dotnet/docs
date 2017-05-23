@@ -41,7 +41,6 @@ Compares two object reference variables.
 ## Syntax  
   
 ```  
-  
 result = object1 IsNot object2  
 ```  
   

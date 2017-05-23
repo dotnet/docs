@@ -36,7 +36,6 @@ Specifies whether to display a message box when you call the <xref:System.Diagno
 ## Syntax  
   
 ```  
-  
 <assert assertuienabled="true|false" logfilename="file name"/>  
 ```  
   

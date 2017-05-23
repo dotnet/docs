@@ -48,19 +48,16 @@ string xmlDS = custDS.GetXml();
   
 ```vb  
 custDS.WriteXml("Customers.xml", XmlWriteMode.WriteSchema)  
-  
 ```  
   
 ```csharp  
 custDS.WriteXml("Customers.xml", XmlWriteMode.WriteSchema);  
-  
 ```  
   
 ```vb  
 Dim xmlSW As System.IO.StreamWriter = New System.IO.StreamWriter("Customers.xml")  
 custDS.WriteXml(xmlSW, XmlWriteMode.WriteSchema)  
 xmlSW.Close()  
-  
 ```  
   
 ```csharp  

@@ -53,7 +53,6 @@ function onSuccess(mathResult){
      document.getElementById("product").value = mathResult.product;  
      document.getElementById("quotient").value = mathResult.quotient;  
 }  
-  
 ```  
   
 ### To set up, build, and run the sample  

@@ -384,7 +384,6 @@ rc.FilterTable.Add(new MatchAllMessageFilter(), backupList);
 ```csharp  
 using (ServiceHost serviceHost =  
                 new ServiceHost(typeof(RoutingService)))  
-  
 ```  
   
  To host the Routing Service within IIS or WAS, you must either create a service file (.svc) or use configuration-based activation of the service. When using a service file, you must specify the <xref:System.ServiceModel.Routing.RoutingService> using the Service parameter. The following example contains a sample service file that can be used to host the Routing Service with IIS or WAS.  
@@ -393,7 +392,6 @@ using (ServiceHost serviceHost =
 <%@ ServiceHost Language="C#" Debug="true" Service="System.ServiceModel.Routing.RoutingService,   
      System.ServiceModel.Routing, version=4.0.0.0, Culture=neutral,   
      PublicKeyToken=31bf3856ad364e35" %>  
-  
 ```  
   
 ## Routing Service and Impersonation  

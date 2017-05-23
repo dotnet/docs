@@ -69,7 +69,6 @@ When a new instance of a workflow is created that persists its state in the <xre
 ```sql  
 delete [System.Activities.DurableInstancing].[Instances]   
     where InstanceId=’078a9bc4-ada5-4f9e-8cce-b0eb0009995f’  
-  
 ```  
   
 > [!WARNING]

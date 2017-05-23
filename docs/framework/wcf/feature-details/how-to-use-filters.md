@@ -37,7 +37,6 @@ This topic outlines the basic steps required to create a routing configuration t
     ```csharp  
     messageHeadersElement.Add(MessageHeader.CreateHeader("RoundingCalculator",   
                                    "http://my.custom.namespace/", "rounding"));  
-  
     ```  
   
      You can now use the XPath filter to inspect messages for this header, and route messages containing the header to the roundCalc service.  
@@ -76,7 +75,6 @@ This topic outlines the basic steps required to create a routing configuration t
   
           </service>  
     </services>  
-  
     ```  
   
      With this configuration, the Routing Service exposes three separate endpoints. Depending on run-time choices, the client application sends messages to one of these addresses. Messages arriving at one of the "virtual" service endpoints ("rounding/calculator" or "regular/calculator") are forwarded to the corresponding calculator implementation. If the client application doesn’t send the request to a particular endpoint, the message is addressed to the general endpoint. Regardless of the endpoint chosen, the client application may also choose to include the custom header to indicate that the message should be forwarded to the rounding calculator implementation.  
@@ -95,7 +93,6 @@ This topic outlines the basic steps required to create a routing configuration t
                     binding="netTcpBinding"  
                     contract="*" />  
     </client>  
-  
     ```  
   
      These endpoints are used in the filter table to indicate the destination endpoint the message is sent to when it matches a specific filter.  
@@ -117,7 +114,6 @@ This topic outlines the basic steps required to create a routing configuration t
                     filterData="/s12:Envelope/s12:Header/custom:RoundingCalculator = 'rounding'"/>  
           </filters>  
     </routing>  
-  
     ```  
   
      This **MessageFilter** looks for a RoundingCalculator header in the message that contains a value of "rounding". This header is set by the client to indicate that the message should be routed to the roundingCalc service.  
@@ -130,7 +126,6 @@ This topic outlines the basic steps required to create a routing configuration t
     ```xml  
     <!--define an endpoint name filter looking for messages that show up on the virtual regular calculator endpoint-->  
     <filter name="EndpointNameFilter" filterType="EndpointName" filterData="calculatorEndpoint"/>  
-  
     ```  
   
      If a message is received by the service endpoint named "calculatorEndpoint", this filter evaluates to `true`.  
@@ -141,7 +136,6 @@ This topic outlines the basic steps required to create a routing configuration t
     <!--define a filter looking for messages that show up with the address prefix.  The corresponds to the rounding calc virtual endpoint-->  
     <filter name="PrefixAddressFilter" filterType="PrefixEndpointAddress"  
             filterData="http://localhost/routingservice/router/rounding/"/>  
-  
     ```  
   
      If a message is received at an address that begins with "http://localhost/routingservice/router/rounding/" then this filter evaluates to **true**. Because the base address used by this configuration is "http://localhost/routingservice/router" and the address specified for the roundingEndpoint is "rounding/calculator", the full address used to communicate with this endpoint is "http://localhost/routingservice/router/rounding/calculator", which matches this filter.  
@@ -166,7 +160,6 @@ This topic outlines the basic steps required to create a routing configuration t
     <filter name="RoundRobinFilter2" filterType="Custom"  
                     customType="CustomFilterAssembly.RoundRobinMessageFilter, CustomFilterAssembly"  
                     filterData="group1"/>  
-  
     ```  
   
      During run time, this filter type alternates between all defined filter instances of this type that are configured as the same group into one collection. This causes messages processed by this custom filter to alternate between returning `true` for RoundRobinFilter1 and RoundRobinFilter2.  
@@ -195,7 +188,6 @@ This topic outlines the basic steps required to create a routing configuration t
             </table>  
           <filterTables>  
     </routing>  
-  
     ```  
   
      When specifying a filter priority, the highest priority filters are evaluated first. If one or more filters at a specific priority level match, no filters at lower priority levels will be evaluated. For this scenario, 2 is the highest priority specified and this is the only filter entry at this level.  
@@ -207,7 +199,6 @@ This topic outlines the basic steps required to create a routing configuration t
     <!--we determine this through the endpoint name, or through the address prefix-->  
     <add filterName="EndpointNameFilter" endpointName="regularCalcEndpoint" priority="1"/>  
     <add filterName="PrefixAddressFilter" endpointName="roundingCalcEndpoint" priority="1"/>  
-  
     ```  
   
      Because these filters have a filter priority of 1, they will only be evaluated if the filter at priority level 2 does not match the message. Also, because both filters have the same priority level they will be evaluated simultaneously. Because both filters are mutually exclusive, it is possible for only one or the other to match a message.  
@@ -221,7 +212,6 @@ This topic outlines the basic steps required to create a routing configuration t
     <!--round robin these requests between the two services-->  
     <add filterName="RoundRobinFilter1" endpointName="regularCalcEndpoint" priority="0"/>  
     <add filterName="RoundRobinFilter2" endpointName="roundingCalcEndpoint" priority="0"/>  
-  
     ```  
   
      Because these entries specify a priority of 0, they will only be evaluated if no filter of a higher priority matches the message. Also, since both are of the same priority, they are evaluated simultaneously.  
@@ -339,7 +329,6 @@ This topic outlines the basic steps required to create a routing configuration t
     </routing>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## See Also  

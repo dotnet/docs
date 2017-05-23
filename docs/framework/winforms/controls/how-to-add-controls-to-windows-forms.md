@@ -65,7 +65,6 @@ Most forms are designed by adding controls to the surface of the form to define 
        MyText.Location = New Point(25, 25)  
        Me.Controls.Add(MyText)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -75,7 +74,6 @@ Most forms are designed by adding controls to the surface of the form to define 
        myText.Location = new Point(25,25);  
        this.Controls.Add (myText);  
     }  
-  
     ```  
   
     ```cpp  

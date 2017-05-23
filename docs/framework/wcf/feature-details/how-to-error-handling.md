@@ -70,7 +70,6 @@ This topic outlines the basic steps required to create a routing configuration t
       <!-- Create a MatchAll filter which will catch all messages -->  
       <filter name="MatchAllFilter1" filterType="MatchAll" />  
     </filters>  
-  
     ```  
   
 3.  Define the backup endpoint list, which contains the endpoints that a message is sent to in the event of a network or communications failure when sending to the primary destination endpoint. The following example defines a backup list that contains one endpoint; however, multiple endpoints can be specified in a backup list.  
@@ -97,7 +96,6 @@ This topic outlines the basic steps required to create a routing configuration t
                 <add filterName="MatchAllFilter1" endpointName="deadDestination" backupList="backupEndpointList"/>  
             </filterTable>  
           </filterTables>  
-  
     ```  
   
 5.  To evaluate incoming messages against the filter contained in the filter table, you must associate the filter table with the service endpoints by using the routing behavior.  The following example demonstrates associating "filterTable1" with the service endpoints.  
@@ -181,5 +179,4 @@ This topic outlines the basic steps required to create a routing configuration t
       </routing>  
   </system.serviceModel>  
 </configuration>  
-  
 ```

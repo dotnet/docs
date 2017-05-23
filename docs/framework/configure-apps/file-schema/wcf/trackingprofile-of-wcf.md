@@ -59,7 +59,6 @@ Represents a configuration section for creating a subscription to workflow track
  The following example shows a tracking profile in a configuration file that allows a tracking participant to subscribe to the `Started`and `Completed` workflow events.  
   
 ```  
-  
 <system.serviceModel>  
   <tracking>    
     <trackingProfile name="Sample Tracking Profile">  
@@ -77,7 +76,6 @@ Represents a configuration section for creating a subscription to workflow track
    </profiles>  
   </tracking>  
 </system.serviceModel>  
-  
 ```  
   
 ## See Also  

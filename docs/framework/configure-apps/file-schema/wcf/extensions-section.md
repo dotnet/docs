@@ -23,7 +23,6 @@ This configuration section contains a collection of extensions, which enable the
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <extensions>  
       <bindingExtensions>  

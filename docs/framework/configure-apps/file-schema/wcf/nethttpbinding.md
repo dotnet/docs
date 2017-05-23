@@ -26,12 +26,10 @@ Represents a binding that a [!INCLUDE[indigo1](../../../../../includes/indigo1-m
 
 <!-- todo: missing sample  
 ```vb  
-  
 ```  
 -->
   
 ```csharp  
-  
 <netHttpBinding>  
    <binding   
        allowCookies="Boolean"  

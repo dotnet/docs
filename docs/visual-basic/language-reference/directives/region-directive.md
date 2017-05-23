@@ -45,7 +45,6 @@ Collapses and hides sections of code in Visual Basic files.
 ## Syntax  
   
 ```  
-  
       #Region "identifier_string"  
 #End Region  
 ```  

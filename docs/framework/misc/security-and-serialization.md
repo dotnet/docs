@@ -40,7 +40,6 @@ Because serialization can allow other code to see or modify object instance data
     Public Overrides<SecurityPermissionAttribute(SecurityAction.Demand, SerializationFormatter := True)>  _  
     Sub GetObjectData(info As SerializationInfo, context As StreamingContext)  
     End Sub  
-  
     ```  
   
     ```csharp  

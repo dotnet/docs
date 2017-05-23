@@ -102,7 +102,6 @@ This is the third of six tasks required to create a [!INCLUDE[indigo1](../../../
             }  
         }  
     }  
-  
     ```  
   
     ```  
@@ -202,7 +201,6 @@ namespace GettingStartedLib
             double Divide(double n1, double n2);  
         }  
 }  
-  
 ```  
   
 ```  
@@ -252,7 +250,6 @@ namespace GettingStartedLib
         }  
     }  
 }  
-  
 ```  
   
 ```  
@@ -305,7 +302,6 @@ namespace GettingStartedHost
         }  
     }  
 }  
-  
 ```  
   
 ```  

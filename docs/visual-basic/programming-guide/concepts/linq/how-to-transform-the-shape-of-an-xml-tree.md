@@ -64,7 +64,6 @@ Console.WriteLine(newCustOrd)
  This code produces the following output:  
   
 ```xml  
-  
         <Root>  
 <Customer CustomerID="GREAL">  
   <CompanyName>Great Lakes Food Market</CompanyName>  
@@ -134,7 +133,6 @@ Sub Main()
         </PO>  
     Console.WriteLine(newPo)  
 End Sub  
-  
 ```  
   
  This code produces the following output:  

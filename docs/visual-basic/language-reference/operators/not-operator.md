@@ -49,7 +49,6 @@ Performs logical negation on a `Boolean` expression, or bitwise negation on a nu
 ## Syntax  
   
 ```  
-  
 result = Not expression  
 ```  
   

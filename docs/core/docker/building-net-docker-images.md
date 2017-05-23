@@ -142,7 +142,6 @@ $ yo docker
 ❯ .NET Core
   Golang
   Node.js
-
 ```
 
 - Select `.NET Core` as the project type

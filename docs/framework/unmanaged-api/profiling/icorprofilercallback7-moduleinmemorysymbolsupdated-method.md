@@ -32,11 +32,9 @@ manager: "wpickett"
 ## Syntax  
   
 ```  
-  
 HRESULT ModuleInMemorySymbolsUpdated(  
      ModuleID moduleId  
 );  
-  
 ```  
   
 #### Parameters  

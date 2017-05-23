@@ -146,5 +146,4 @@ You can see major updates demonstrated in the following project file. (Note that
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 </Project>
-
 ```

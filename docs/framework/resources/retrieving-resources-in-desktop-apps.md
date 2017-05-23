@@ -68,7 +68,6 @@ TimeHeader=Текущее время —
  The following batch (.bat) file compiles the example and generates satellite assemblies in the appropriate directories. The commands are provided for the C# language and compiler. For Visual Basic, change `csc` to `vbc`, and change `GetString.cs` to `GetString.vb`.  
   
 ```  
-  
 resgen strings.txt  
 csc GetString.cs /resource:strings.resources  
   
@@ -79,7 +78,6 @@ al /embed:strings.fr-FR.resources /culture:fr-FR /out:fr-FR\GetString.resources.
 resgen strings.ru-RU.txt  
 md ru-RU  
 al /embed:strings.ru-RU.resources /culture:ru-RU /out:ru-RU\GetString.resources.dll  
-  
 ```  
   
  When the current UI culture is Spanish (Spain), note that the example displays English language resources, because Spanish language resources are unavailable, and English is the example's default culture.  
@@ -100,14 +98,12 @@ al /embed:strings.ru-RU.resources /culture:ru-RU /out:ru-RU\GetString.resources.
  You can use the following batch file to build the C# example. For Visual Basic, change `csc` to `vbc`, and change the extension of the source code file from `.cs` to `.vb`.  
   
 ```  
-  
 csc CreateResources.cs  
 CreateResources  
   
 resgen AppResources.resx  
   
 csc GetStream.cs /resource:AppResources.resources  
-  
 ```  
   
  The following example uses the <xref:System.Resources.ResourceManager.GetObject%28System.String%29?displayProperty=fullName> method to deserialize a custom object. The example includes a source code file named UIElements.cs (UIElements.vb for Visual Basic) that defines the following structure named `PersonTable`. This structure is intended to be used by a general table display routine that displays the localized names of table columns. Note that the `PersonTable` structure is marked with the <xref:System.SerializableAttribute> attribute.  
@@ -128,7 +124,6 @@ csc GetStream.cs /resource:AppResources.resources
  You can build the necessary resource file and assemblies and run the app by executing the following batch file. You must use the `/r` option to supply Resgen.exe with a reference to UIElements.dll so that it can access information about the `PersonTable` structure. If you're using C#, replace the `vbc` compiler name with `csc`, and replace the `.vb` extension with `.cs`.  
   
 ```  
-  
 vbc /t:library UIElements.vb  
 vbc CreateResources.vb /r:UIElements.dll  
 CreateResources  
@@ -137,7 +132,6 @@ resgen UIResources.resx  /r:UIElements.dll
 vbc GetObject.vb /r:UIElements.dll /resource:UIResources.resources  
   
 GetObject.exe  
-  
 ```  
   
 ## Versioning Support for Satellite Assemblies  
@@ -199,14 +193,12 @@ Prompt=Как вас зовут?
  You can compile the C# version of the example by running the following batch file. If you're using Visual Basic, replace `csc` with `vbc`, and replace the `.cs` extension with `.vb`.  
   
 ```  
-  
 Md Resources  
 Resgen Strings.txt Resources\Strings.resources  
 Resgen Strings.fr-FR.txt Resources\Strings.fr-FR.resources  
 Resgen Strings.ru-RU.txt Resources\Strings.ru-RU.resources  
   
 csc Example.cs  
-  
 ```  
   
 ## See Also  

@@ -59,7 +59,6 @@ class MyDataContractResolver : DataContractResolver
         }  
     }  
 }  
-  
 ```  
   
 #### To use this sample  

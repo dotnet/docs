@@ -42,7 +42,6 @@ This topic describes how you can successfully use <xref:System.Transactions> ins
      />  
 ...  
 </PermissionSet>  
-  
 ```  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] security policy, see [securityPolicy Element (ASP.NET Settings Schema)](http://msdn.microsoft.com/en-us/469d8d22-d263-46bb-8400-40d8d027faba).  

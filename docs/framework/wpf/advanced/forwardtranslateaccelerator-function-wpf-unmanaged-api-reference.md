@@ -27,12 +27,10 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 HRESULT ForwardTranslateAccelerator(  
    MSG* pMsg,   
    VARIANT_BOOL appUnhandled  
 )  
-  
 ```  
   
 #### Parameters  

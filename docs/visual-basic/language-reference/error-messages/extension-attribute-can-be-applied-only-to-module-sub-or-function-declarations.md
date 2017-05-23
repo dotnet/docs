@@ -62,7 +62,6 @@ Namespace StringUtility
         End Sub  
     End Module  
 End Namespace  
-  
 ```  
   
 ## See Also  

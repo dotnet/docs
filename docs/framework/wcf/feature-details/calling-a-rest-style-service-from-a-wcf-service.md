@@ -48,7 +48,6 @@ public class RestService : IRestInterface
                 return input;  
             }  
         }  
-  
 ```  
   
 ## Define the WCF service contract  

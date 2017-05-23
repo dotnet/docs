@@ -39,7 +39,6 @@ The <xref:System.String.ToUpper%2A?displayProperty=fullName>, <xref:System.Strin
 Shared Function LookupKey(key As String) As Object  
    Return internalHashtable(key.ToLower())  
 End Function  
-  
 ```  
   
 ```csharp  
@@ -55,7 +54,6 @@ static object LookupKey(string key)
 Shared Function LookupKey(key As String) As Object  
     Return internalHashtable(key.ToLower(CultureInfo.InvariantCulture))  
 End Function  
-  
 ```  
   
 ```csharp  

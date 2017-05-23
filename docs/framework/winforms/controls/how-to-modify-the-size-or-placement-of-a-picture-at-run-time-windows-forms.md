@@ -53,7 +53,6 @@ If you use the Windows Forms <xref:System.Windows.Forms.PictureBox> control on a
        (System.Environment.SpecialFolder.Personal) _  
        & "\Image.gif")  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -69,7 +68,6 @@ If you use the Windows Forms <xref:System.Windows.Forms.PictureBox> control on a
        (System.Environment.SpecialFolder.Personal) _  
        + @"\Image.gif")  
     }  
-  
     ```  
   
     ```cpp  

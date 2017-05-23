@@ -48,7 +48,6 @@ The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themse
         splitSnapper.Dock = DockStyle.Fill  
         splitSnapper.Parent = me  
     End Sub  
-  
     ```  
   
     ```csharp  

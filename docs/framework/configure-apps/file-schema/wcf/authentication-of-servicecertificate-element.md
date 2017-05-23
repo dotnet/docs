@@ -29,7 +29,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <authentication customCertificateValidatorType="String" certificateValidationMode="None/PeerTrust/ChainTrust/PeerOrChainTrust/Custom"  
 revocationMode="NoCheck/Online/Offline"   
 trustedStoreLocation="LocalMachine/CurrentUser" />  

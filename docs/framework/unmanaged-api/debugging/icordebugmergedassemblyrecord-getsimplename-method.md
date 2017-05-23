@@ -23,13 +23,11 @@ Gets the simple name of the assembly.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSimpleName(  
    [in] ULONG32 cchName,   
    [out] ULONG32 *pcchName,   
    [out, size_is(cchName), length_is(*pcchName)] WCHAR szName[]  
 );  
-  
 ```  
   
 #### Parameters  

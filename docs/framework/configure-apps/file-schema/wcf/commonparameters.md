@@ -28,7 +28,6 @@ Represents a collection of parameters that are used globally across multiple ser
 ## Syntax  
   
 ```  
-  
 <workflowRuntime>  
    <commonParameters>  
       <add name="String" value="String" />  

@@ -31,7 +31,6 @@ Represents a configuration element that defines a backup endpoint element.
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

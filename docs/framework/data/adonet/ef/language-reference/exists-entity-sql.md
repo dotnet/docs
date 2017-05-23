@@ -25,7 +25,6 @@ Determines if a collection is empty.
 ## Syntax  
   
 ```  
-  
 [NOT] EXISTS ( expression )  
 ```  
   

@@ -71,7 +71,6 @@ public interface ICalculator
       [WsdlParamOrReturnDocumentation("The denominator.")]double n2  
     );  
 }  
-  
 ```  
   
  The `WsdlDocumentationAttribute` implements <xref:System.ServiceModel.Description.IContractBehavior> and <xref:System.ServiceModel.Description.IOperationBehavior>, so the attribute instances are added to the corresponding <xref:System.ServiceModel.Description.ContractDescription> or <xref:System.ServiceModel.Description.OperationDescription> when the service is opened. The attribute also implements <xref:System.ServiceModel.Description.IWsdlExportExtension>. When <xref:System.ServiceModel.Description.IWsdlExportExtension.ExportContract%28System.ServiceModel.Description.WsdlExporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> is called, the <xref:System.ServiceModel.Description.WsdlExporter> that is used to export the metadata and the <xref:System.ServiceModel.Description.WsdlContractConversionContext> that contains the service description objects are passed in as parameters enabling the modification of the exported metadata.  
@@ -142,7 +141,6 @@ for (int i = 0; i < args.Length; i++)
         operation.DocumentationElement.AppendChild(newParamElement);  
     }  
 }  
-  
 ```  
   
  The sample then publishes metadata in the standard way, using the following configuration file.  
@@ -172,7 +170,6 @@ for (int i = 0; i < args.Length; i++)
     </behavior>  
   </serviceBehaviors>  
 </behaviors>  
-  
 ```  
   
 ## Svcutil client  
@@ -206,7 +203,6 @@ public void ImportContract(WsdlImporter importer, WsdlContractConversionContext 
         }  
     }  
 }  
-  
 ```  
   
  Then, when the code is generated, the system invokes the <xref:System.ServiceModel.Description.IServiceContractGenerationExtension.GenerateContract%28System.ServiceModel.Description.ServiceContractGenerationContext%29> and <xref:System.ServiceModel.Description.IOperationContractGenerationExtension.GenerateOperation%28System.ServiceModel.Description.OperationContractGenerationContext%29> methods, passing the appropriate context information. The sample formats the custom WSDL annotations and inserts them as comments into the CodeDom.  
@@ -223,7 +219,6 @@ public void GenerateOperation(OperationContractGenerationContext context)
     context.SyncMethod.Comments.AddRange(FormatComments(text));  
     Debug.WriteLine("In generate operation.");  
 }  
-  
 ```  
   
 ## The Client Application  
@@ -240,7 +235,6 @@ public void GenerateOperation(OperationContractGenerationContext context)
     </wsdlImporters>  
   </metadata>  
 </client>  
-  
 ```  
   
  Once the custom importer has been specified, the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] metadata system loads the custom importer into any <xref:System.ServiceModel.Description.WsdlImporter> created for that purpose. This sample uses the <xref:System.ServiceModel.Description.MetadataExchangeClient> to download the metadata, the <xref:System.ServiceModel.Description.WsdlImporter> properly configured to import the metadata using the custom importer the sample creates, and the <xref:System.ServiceModel.Description.ServiceContractGenerator> to compile the modified contract information into both Visual Basic and C# client code that can be used in Visual Studio to support Intellisense or compiled into XML documentation.  

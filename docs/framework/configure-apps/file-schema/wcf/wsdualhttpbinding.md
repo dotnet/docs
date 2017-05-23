@@ -30,7 +30,6 @@ Defines a secure, reliable and interoperable binding that is suitable for duplex
 ## Syntax  
   
 ```  
-  
 <wsDualHttpBinding>  
         <binding name="string"  
         closeTimeout="TimeSpan"  

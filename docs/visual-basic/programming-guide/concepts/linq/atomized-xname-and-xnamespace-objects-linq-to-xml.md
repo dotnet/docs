@@ -47,7 +47,6 @@ If DirectCast(n, Object) = DirectCast(r1.Name, Object) Then
 Else  
 	Console.WriteLine("Different")  
 End If  
-  
 ```  
   
  This example produces the following output:  

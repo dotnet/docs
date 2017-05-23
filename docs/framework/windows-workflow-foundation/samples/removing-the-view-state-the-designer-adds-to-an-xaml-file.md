@@ -40,7 +40,6 @@ this.MemberStack = new Stack<XamlMember>();
   
 XamlWriter InnerWriter {get; set; }  
 Stack<XamlMember> MemberStack {get; set; }  
-  
 ```  
   
  This also creates a stack of XAML members that are used while traversing the node stream. The remaining work of this sample is largely contained in the <!--zz  <xref:System.Windows.Markup.XamlWriter.WriteStartMember%2A>--> `System.Windows.Markup.XamlWriter.WriteStartMember` method.  
@@ -61,7 +60,6 @@ return;
   
 InnerWriter.WriteStartMember(xamlMember);  
 }  
-  
 ```  
   
  Subsequent methods then check to see whether they are still contained in a view state container, and if so, return, and do not pass the node down the writer stack.  
@@ -85,7 +83,6 @@ XmlWriterSettings writerSettings = new XmlWriterSettings {  Indent = true };
 XmlWriter xmlWriter = XmlWriter.Create(File.OpenWrite(args[1]), writerSettings);  
 XamlXmlWriter xamlWriter = new XamlXmlWriter(xmlWriter, new XamlSchemaContext());  
 XamlServices.Save(new ViewStateCleaningWriter(ActivityXamlServices.CreateBuilderWriter(xamlWriter)), ab);  
-  
 ```  
   
 #### To use this sample  

@@ -28,7 +28,6 @@ Dim workColumn As DataColumn = workTable.Columns.Add( _
 workColumn.AutoIncrement = true  
 workColumn.AutoIncrementSeed = 200  
 workColumn.AutoIncrementStep = 3  
-  
 ```  
   
 ```csharp  

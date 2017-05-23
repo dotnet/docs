@@ -26,7 +26,6 @@ A discovery proxy may expose multiple discovery endpoints using different discov
     DiscoveryOperationContextExtension doce = OperationContext.Current.Extensions.Find<DiscoveryOperationContextExtension>();  
     // Access the discovery version from the DiscoveryOperationContextExtension  
     doce.DiscoveryVersion;  
-  
     ```  
   
 ## See Also  

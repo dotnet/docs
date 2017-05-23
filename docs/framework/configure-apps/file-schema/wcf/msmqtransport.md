@@ -27,7 +27,6 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
 ## Syntax  
   
 ```  
-  
 <msmqTransport>  
     customDeadLetterQueue="Uri"  
     deadLetterQueue="Custom/None/System"  

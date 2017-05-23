@@ -56,7 +56,6 @@ It is sometimes necessary for a workflow service to obtain information from anot
                 return new String(charArray);  
             }  
         }  
-  
     ```  
   
 11. To call the ReverseString method on the input, drag an **InvokeMethod** activity from the toolbox to the space between the **Receive** and **SendReply** activities. Set the properties of the activity as follows:  
@@ -97,7 +96,6 @@ It is sometimes necessary for a workflow service to obtain information from anot
          return StringToUpperCase.ToUpper();  
   
     }  
-  
     ```  
   
 7.  To call the UpperCaseString method on the input, drag an **InvokeMethod** activity from the toolbox to the space between the **Receive** and **SendReply** activities. Set the properties of the activity as follows:  
@@ -135,5 +133,4 @@ It is sometimes necessary for a workflow service to obtain information from anot
         Console.WriteLine("Output from service: {0}", service.ReverseString(input));  
         Console.ReadKey();  
     }  
-  
     ```

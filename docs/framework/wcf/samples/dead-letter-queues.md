@@ -53,7 +53,6 @@ public interface IOrderProcessor
     [OperationContract(IsOneWay = true)]  
     void SubmitPurchaseOrder(PurchaseOrder po);  
 }  
-  
 ```  
   
  The service code in the sample is that of the [Transacted MSMQ Binding](../../../../docs/framework/wcf/samples/transacted-msmq-binding.md).  
@@ -151,7 +150,6 @@ class Client
   </system.serviceModel>  
   
 </configuration>  
-  
 ```  
   
  The dead-letter message service reads messages from the dead-letter queue. The dead-letter message service implements the `IOrderProcessor` contract. Its implementation however is not to process orders. The dead-letter message service is a client service and does not have the facility to process orders.  
@@ -175,7 +173,6 @@ public void SubmitPurchaseOrder(PurchaseOrder po)
     Console.WriteLine();  
     ….  
 }  
-  
 ```  
   
  Messages in the dead-letter queue are messages that are addressed to the service that is processing the message. Therefore, when the dead-letter message service reads messages from the queue, the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] channel layer finds the mismatch in endpoints and does not dispatch the message. In this case, the message is addressed to the order processing service but is received by the dead-letter message service. To receive a message that is addressed to a different endpoint, an address filter to match any address is specified in the `ServiceBehavior`. This is required to successfully process messages that are read from the dead-letter queue.  
@@ -272,7 +269,6 @@ public class PurchaseOrderDLQService : IOrderProcessor
     </bindings>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  In running the sample, there are 3 executables to run to see how the dead-letter queue works for each application; the client, service and a dead-letter service that reads from the dead-letter queue for each application and resends the message to the service. All are console applications with output in console windows.  
@@ -301,13 +297,11 @@ Message Delivery Failure: ReachQueueTimeout
 Purchase order Time To Live expired  
 Trying to resend the message  
 Purchase order resent  
-  
 ```  
   
  The service starts and then reads the resent message and processes it.  
   
 ```  
-  
 The service is ready.  
 Press <ENTER> to terminate service.  
   
@@ -318,7 +312,6 @@ Processing Purchase Order: 97897eff-f926-4057-a32b-af8fb11b9bf9
                 Order LineItem: 890 of Red Widget @unit price: $45.89  
         Total cost of this order: $42461.56  
         Order status: Pending  
-  
 ```  
   
 ### To set up, build, and run the sample  

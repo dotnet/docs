@@ -24,7 +24,6 @@ Specifies how service metadata can be processed.
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <client>  
         <metadata>  

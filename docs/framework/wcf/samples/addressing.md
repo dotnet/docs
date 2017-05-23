@@ -111,7 +111,6 @@ Endpoint - address:  http://localhost:8000/ServiceModelSamples/service/mex
   
 The service is ready.  
 Press <ENTER> to terminate service.  
-  
 ```  
   
  When you run the client, the operation requests and responses are displayed in both the service and client console windows. Press ENTER in each console window to shut down the service and client.  

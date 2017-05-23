@@ -365,7 +365,6 @@ manager: "erikre"
   
     map.Add(FlowchartNumberGuessIdentity_v1,  
         v1Assembly.CreateInstance("NumberGuessWorkflowActivities.FlowchartNumberGuessWorkflow") as Activity);  
-  
     ```  
   
      The following example is the complete listing for the updated `WorkflowVersionMap` class.  

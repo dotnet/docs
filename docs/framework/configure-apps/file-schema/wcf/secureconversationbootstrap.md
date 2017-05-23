@@ -28,7 +28,6 @@ Specifies the default values used for initiating a secure conversation service.
 ## Syntax  
   
 ```  
-  
 <secureConversationBootstrap  
    allowSerializedSigningTokenOnReply="Boolean"  
    authenticationMode="AuthenticationMode"  

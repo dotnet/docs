@@ -424,7 +424,6 @@ Public Class Stack(Of T)
         Next  
     End Function  
 End Class  
-  
 ```  
   
 ##  <a name="BKMK_SyntaxInformation"></a> Syntax Information  

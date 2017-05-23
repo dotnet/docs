@@ -38,7 +38,6 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
        ' Determine by checking the Node property of the TreeViewEventArgs.  
        MessageBox.Show(e.Node.Text)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -48,7 +47,6 @@ When working with the Windows Forms <xref:System.Windows.Forms.TreeView> control
        // Determine by checking the Text property.  
        MessageBox.Show(e.Node.Text);  
     }  
-  
     ```  
   
     ```cpp  

@@ -35,7 +35,6 @@ Contains values that are used to specify behavior, capabilities, or events to wh
 ## Syntax  
   
 ```  
-  
 typedef enum {  
     COR_PRF_MONITOR_NONE                = 0x00000000,  
     COR_PRF_MONITOR_FUNCTION_UNLOADS    = 0x00000001,  
@@ -104,7 +103,6 @@ typedef enum {
                      COR_PRF_DISABLE_TRANSPARENCY_CHECKS_UNDER_FULL_TRUST |  
                                           COR_PRF_DISABLE_ALL_NGEN_IMAGES  
 } COR_PRF_MONITOR;  
-  
 ```  
   
 ## Members  

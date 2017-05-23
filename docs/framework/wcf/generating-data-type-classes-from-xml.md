@@ -47,5 +47,4 @@ manager: "erikre"
         link = "http://www.contoso.com/images/channelImage.jpg",   
         url = "http://www.contoso.com/entries/myEntry.html"   
     };  
-  
     ```

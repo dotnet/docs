@@ -31,7 +31,6 @@ To ensure an easier future migration of new ASP.NET applications to [!INCLUDE[in
       </webServices>  
      </system.web>   
 </configuration>  
-  
 ```  
   
  Doing so is advisable because [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] requires messages conforming to different protocols, like SOAP 1.1 and SOAP 1.2, to go by using different endpoints. If an ASP.NET 2.0 Web service is configured to support both SOAP 1.1 and SOAP 1.2, which is the default configuration, then it cannot be migrated forward to a single [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint at the original address that would be certainly be compatible with all of the ASP.NET Web service’s existing clients. Also choosing SOAP 1.2 instead of 1.1 will more severely restrict the clientele of the service.  
@@ -118,7 +117,6 @@ throw new SoapException(
      SoapException.ClientFaultCode,  
      Context.Request.Url.AbsoluteUri,  
      exception.ToXML());  
-  
 ```  
   
  These exception classes will be readily reusable with the[!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]<xref:System.ServiceModel.FaultException%601> class to throw a new `FaultException<AnticipatedException>(anticipatedException);`  

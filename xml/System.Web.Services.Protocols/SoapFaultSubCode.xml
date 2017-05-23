@@ -19,7 +19,7 @@
 ## Remarks  
  A SOAP 1.2 fault contains a `Code` element and among other things an optional `Subcode` element. The `Code` element specifies the type of error that occurred using a limited number of pre-defined error codes specified by the SOAP protocol, whereas the `Subcode` element allows the sender of the SOAP fault to provide an application specific error code. This class represents the contents of the `Subcode` element.  
   
- XML Web services return a SOAP fault by throwing a <xref:System.Web.Services.Protocols.SoapException> and.NET clients receive a SOAP fault by catching a <xref:System.Web.Services.Protocols.SoapException>. A <xref:System.Web.Services.Protocols.SoapException> has the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property representing the `Code` element and the <xref:System.Web.Services.Protocols.SoapException.Subcode%2A> property representing the `Subcode` element.  
+ XML Web services return a SOAP fault by throwing a <xref:System.Web.Services.Protocols.SoapException> and.NET clients receive a SOAP fault by catching a <xref:System.Web.Services.Protocols.SoapException>. A <xref:System.Web.Services.Protocols.SoapException> has the <xref:System.Web.Services.Protocols.SoapException.Code%2A> property representing the `Code` element and the <xref:System.Web.Services.Protocols.SoapException.SubCode*%2A> property representing the `Subcode` element.  
   
  ]]></format>
     </remarks>
@@ -113,7 +113,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use a constructor to set the <xref:System.Web.Services.Protocols.SoapFaultSubcode.Subcode%2A> property. The <xref:System.Web.Services.Protocols.SoapFaultSubcode.Subcode%2A> property allows an XML Web service to provide nested error information. This is useful for providing an error code specific to the XML Web service while passing along error information returned from components the XML Web service called.  
+ Use a constructor to set the <xref:System.Web.Services.Protocols.SoapFaultSubCode.SubCode*%2A> property. The <xref:System.Web.Services.Protocols.SoapFaultSubCode.SubCode*%2A> property allows an XML Web service to provide nested error information. This is useful for providing an error code specific to the XML Web service while passing along error information returned from components the XML Web service called.  
   
  ]]></format>
         </remarks>

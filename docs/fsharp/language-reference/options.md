@@ -1,5 +1,5 @@
 ---
-title: Options (F#)
+title: Options (F#) | Microsoft Docs
 description: Options (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

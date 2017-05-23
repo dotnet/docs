@@ -1,5 +1,5 @@
 ---
-title: Indexed Properties (F#)
+title: Indexed Properties (F#) | Microsoft Docs
 description: Indexed Properties (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

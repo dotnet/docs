@@ -1,5 +1,5 @@
 ---
-title: Delegates (F#)
+title: Delegates (F#) | Microsoft Docs
 description: Delegates (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

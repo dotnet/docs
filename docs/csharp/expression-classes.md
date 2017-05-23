@@ -1,5 +1,5 @@
 ---
-title: Framework Types Supporting Expression Trees
+title: Framework Types Supporting Expression Trees | Microsoft Docs
 description: Framework Types Supporting Expression Trees
 keywords: .NET, .NET Core
 author: BillWagner

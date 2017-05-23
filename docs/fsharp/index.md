@@ -1,5 +1,5 @@
 ---
-title: F# Guide
+title: F# Guide | Microsoft Docs
 description: F# Guide 
 keywords: .NET, .NET Core
 author: jackfoxy

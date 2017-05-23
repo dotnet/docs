@@ -1,5 +1,5 @@
 ---
-title: Getting Started with F# in Visual Studio
+title: Getting Started with F# in Visual Studio | Microsoft Docs
 description: Learn how to use F# with Visual Studio.
 keywords: visual f#, f#, functional programming
 author: cartermp

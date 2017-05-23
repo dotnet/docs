@@ -1,5 +1,5 @@
 ---
-title: Get started with .NET Core
+title: Get started with .NET Core | Microsoft Docs
 description: Find resources to learn how to build .NET Core applications on Windows, Linux and macOS.
 keywords: .NET, .NET Core
 author: mairaw

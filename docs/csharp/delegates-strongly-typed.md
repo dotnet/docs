@@ -1,5 +1,5 @@
 ---
-title: Strongly Typed Delegates
+title: Strongly Typed Delegates | Microsoft Docs
 description: Strongly Typed Delegates
 keywords: .NET, .NET Core
 author: BillWagner

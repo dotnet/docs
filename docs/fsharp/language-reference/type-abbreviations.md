@@ -1,5 +1,5 @@
 ---
-title: Type Abbreviations (F#)
+title: Type Abbreviations (F#) | Microsoft Docs
 description: Type Abbreviations (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

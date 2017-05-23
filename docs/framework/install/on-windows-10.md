@@ -1,5 +1,5 @@
 ---
-title: Install the .NET Framework on Windows 10
+title: Install the .NET Framework on Windows 10 | Microsoft Docs
 description: Learn how to install .NET Framework on Windows 10
 author: rlander
 keywords: .NET Framework, Install

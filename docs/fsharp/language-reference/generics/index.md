@@ -1,5 +1,5 @@
 ---
-title: Generics (F#)
+title: Generics (F#) | Microsoft Docs
 description: Generics (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

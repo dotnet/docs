@@ -1,5 +1,5 @@
 ---
-title: Choosing between .NET Core and .NET Framework for server apps
+title: Choosing between .NET Core and .NET Framework for server apps | Microsoft Docs
 description: A guide on which flavor of .NET you should consider when building a server app in .NET.
 keywords: .NET, .NET Core, .NET Framework
 author: cartermp

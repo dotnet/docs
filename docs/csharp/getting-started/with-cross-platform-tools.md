@@ -1,5 +1,5 @@
 ---
-title: Getting started with C# and the cross platform tools | C# Guide
+title: Getting started with C# and the cross platform tools - C# Guide | Microsoft Docs
 description: Getting Started with C# and the cross platform tools
 keywords: C#, Getting Started, Acquisition,  Cross Platform
 ms.date: 08/23/2016

@@ -1,5 +1,5 @@
 ---
-title: Working with LINQ
+title: Working with LINQ | Microsoft Docs
 description: This tutorial teaches you how to generate sequences with LINQ, write methods for use in LINQ queries, and distinguish between eager and lazy evaluation.
 keywords: .NET, .NET Core
 author: BillWagner

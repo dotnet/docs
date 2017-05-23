@@ -1,5 +1,5 @@
 ---
-title: Abstract Classes (F#)
+title: Abstract Classes (F#) | Microsoft Docs
 description: Abstract Classes (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

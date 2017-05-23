@@ -1,5 +1,5 @@
 ---
-title: Porting to .NET Core from .NET Framework
+title: Porting to .NET Core from .NET Framework | Microsoft Docs
 description: Porting to .NET Core from .NET Framework
 keywords: .NET, .NET Core
 author: cartermp

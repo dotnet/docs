@@ -1,5 +1,5 @@
 ---
-title: Keyword Reference (F#)
+title: Keyword Reference (F#) | Microsoft Docs
 description: Keyword Reference (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

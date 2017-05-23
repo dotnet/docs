@@ -39,7 +39,6 @@ When tracking the execution of a workflow, it is often useful to extract data. T
     <argument name="Result"/>  
   </arguments>  
 </activityStateQuery>  
-  
 ```  
   
 ## Protecting Information Stored Within Variables and Arguments  

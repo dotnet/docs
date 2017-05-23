@@ -1,5 +1,5 @@
 ---
-title: Packages, Metapackages and Frameworks
+title: Packages, Metapackages and Frameworks | Microsoft Docs
 description: Packages, Metapackages and Frameworks
 keywords: .NET, .NET Core
 author: richlander

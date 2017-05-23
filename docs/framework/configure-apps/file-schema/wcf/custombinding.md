@@ -28,7 +28,6 @@ Provides full control over the messaging stack for the user.
 ## Syntax  
   
 ```  
-  
 <customBinding>  
     <binding name="string"  
         closeTimeout="TimeSpan"  

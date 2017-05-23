@@ -1,5 +1,5 @@
 ---
-title: Methods (F#)
+title: Methods (F#) | Microsoft Docs
 description: Methods (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -64,7 +64,6 @@ public string SelectOperation(ref System.ServiceModel.Channels.Message message)
  Accessing the message body with <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> or any of the other methods that provide access to the message's body content causes the message to be marked as "read", which means that the message is invalid for any further processing. Therefore, the operation selector creates a copy of the incoming message with the method shown in the following code. Because the reader's position has not been changed during the inspection, it can be referenced by the newly created message to which the message properties and the message headers are also copied, which results in an exact clone of the original message:  
   
 ```  
-  
 private Message CreateMessageCopy(Message message,   
                                      XmlDictionaryReader body)  
 {  
@@ -73,7 +72,6 @@ private Message CreateMessageCopy(Message message,
     copy.Properties.CopyProperties(message.Properties);  
     return copy;  
 }  
-  
 ```  
   
 ## Adding an Operation Selector to a Service  
@@ -167,7 +165,6 @@ public interface IDispatchedByBody
 <replyDefault xmlns="http://tempuri.org">  
    <q:bodyX xmlns:q="http://tempuri.org">test</q:bodyX>  
 </replyDefault>  
-  
 ```  
   
 #### To set up, build, and run the sample  

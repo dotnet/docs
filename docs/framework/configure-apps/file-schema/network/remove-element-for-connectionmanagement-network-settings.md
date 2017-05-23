@@ -39,7 +39,6 @@ Removes an IP address or DNS name from the connection management list.
 ## Syntax  
   
 ```  
-  
       <remove   
    name = "server name or IP address"   
 />  

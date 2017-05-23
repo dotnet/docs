@@ -1,5 +1,5 @@
 ---
-title: Bitwise Operators (F#)
+title: Bitwise Operators (F#) | Microsoft Docs
 description: Bitwise Operators (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

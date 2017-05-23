@@ -49,7 +49,6 @@ A developer can customize the property grid that is displayed when a given activ
     slider.SetValue(Slider.MaximumProperty, 100.0);  
     slider.SetValue(Slider.ValueProperty, sliderBinding);  
     stack.AppendChild(slider);  
-  
     ```  
   
 -   Because the activity and the designer are in the same assembly, registration of the activity designer attributes are accomplished in the static constructor of the activity itself, as shown in the following example from SimpleCodeActivity.cs.  
@@ -62,7 +61,6 @@ A developer can customize the property grid that is displayed when a given activ
         builder.AddCustomAttributes(typeof(SimpleCodeActivity), "FileName", new EditorAttribute(typeof(FilePickerEditor), typeof(DialogPropertyValueEditor)));  
         MetadataStore.AddAttributeTable(builder.CreateTable());  
     }  
-  
     ```  
   
 ## Dialog Editor  
@@ -106,7 +104,6 @@ A developer can customize the property grid that is displayed when a given activ
             propertyValue.Value = ofd.FileName;  
         }  
     }  
-  
     ```  
   
 5.  Because the activity and the designer are in the same assembly, registration of the activity designer attributes are accomplished in the static constructor of the activity itself, as shown in the following example from SimpleCodeActivity.cs.  
@@ -119,7 +116,6 @@ A developer can customize the property grid that is displayed when a given activ
         builder.AddCustomAttributes(typeof(SimpleCodeActivity), "FileName", new EditorAttribute(typeof(FilePickerEditor), typeof(DialogPropertyValueEditor)));  
         MetadataStore.AddAttributeTable(builder.CreateTable());  
     }  
-  
     ```  
   
 ## To set up, build, and run the sample  

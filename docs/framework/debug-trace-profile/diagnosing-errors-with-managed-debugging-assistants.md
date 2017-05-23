@@ -111,13 +111,11 @@ Windows Registry Editor Version 5.00
   
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework]  
 "MDA"="1"  
-  
 ```  
   
  If the computer is running a 32-bit application on a 64-bit operating system, then the MDA key should be set like the following:  
   
 ```  
-  
       Windows Registry Editor Version 5.00   
   
 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework]  

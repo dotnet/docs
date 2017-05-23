@@ -1,5 +1,5 @@
 ---
-title: Records (F#)
+title: Records (F#) | Microsoft Docs
 description: Records (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

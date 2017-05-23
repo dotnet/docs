@@ -87,7 +87,6 @@ Public Class Mammal
     Sub Breathe()  
     Sub Sleep()  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -143,7 +142,6 @@ coclass Mammal
     Sub M() Implements IExplicit.M  
 …  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -168,7 +166,6 @@ public class LoanApp : IExplicit {
     Sub M() Implements IAnother.M  
 …  
 End Class  
-  
 ```  
   
 ```csharp  

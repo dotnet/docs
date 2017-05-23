@@ -26,7 +26,6 @@ Specifies namespaces used in a query expression.
 ## Syntax  
   
 ```  
-  
 USING [ alias = ] namespace  
 ```  
   

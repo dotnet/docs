@@ -36,7 +36,6 @@ Accessing specific items in a Windows Forms combo box, list box, or checked list
        ' Return the text of the item using the index:  
        Return ComboBox1.Items(i).ToString  
     End Function  
-  
     ```  
   
     ```csharp  
@@ -45,7 +44,6 @@ Accessing specific items in a Windows Forms combo box, list box, or checked list
        // Return the text of the item using the index:  
        return (comboBox1.Items[i].ToString());  
     }  
-  
     ```  
   
     ```cpp  

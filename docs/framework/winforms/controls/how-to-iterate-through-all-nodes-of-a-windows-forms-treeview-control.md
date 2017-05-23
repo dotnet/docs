@@ -51,7 +51,6 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
           PrintRecursive(n)  
        Next  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -77,7 +76,6 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
           PrintRecursive(n);  
        }  
     }  
-  
     ```  
   
     ```cpp  

@@ -98,7 +98,6 @@ SendReply sr = new SendReply()
 Request = rcv  
    Content = new SendParametersContent();  
 };  
-  
 ```  
   
 ## Add Service Reference  

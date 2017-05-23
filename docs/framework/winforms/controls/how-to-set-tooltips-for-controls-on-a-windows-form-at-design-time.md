@@ -35,13 +35,11 @@ You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windo
     ```vb  
     ' In this example, Button1 is the control to display the ToolTip.  
     ToolTip1.SetToolTip(Button1, "Save changes")  
-  
     ```  
   
     ```csharp  
     // In this example, button1 is the control to display the ToolTip.  
     toolTip1.SetToolTip(button1, "Save changes");  
-  
     ```  
   
     ```cpp  

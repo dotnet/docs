@@ -1,5 +1,5 @@
 ---
-title: Namespaces (F#)
+title: Namespaces (F#) | Microsoft Docs
 description: Namespaces (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

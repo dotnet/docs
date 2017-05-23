@@ -1,5 +1,5 @@
 ---
-title: Distinguising Delegates and Events
+title: Distinguising Delegates and Events | Microsoft Docs
 description: Distinguising Delegates and Events
 keywords: .NET, .NET Core
 author: BillWagner

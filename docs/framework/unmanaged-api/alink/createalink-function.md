@@ -36,12 +36,10 @@ Creates an instance of the Assembly Linker and sets a pointer to the specified i
 ## Syntax  
   
 ```  
-  
 HRESULT CreateALink (  
    REFIID riid,  
    IUnknown **ppInterface  
 );  
-  
 ```  
   
 #### Parameters  

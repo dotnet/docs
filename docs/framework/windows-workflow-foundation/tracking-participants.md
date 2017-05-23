@@ -142,7 +142,6 @@ instance.Extensions.Add(new ConsoleTrackingParticipant());
             };  
             instance.Run();  
             Console.ReadLine();  
-  
 ```  
   
 ## See Also  

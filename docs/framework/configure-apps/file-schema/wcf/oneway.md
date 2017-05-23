@@ -27,7 +27,6 @@ Enables packet routing and the use of one-way methods for a custom binding.
 ## Syntax  
   
 ```  
-  
 <oneWay packetRoutable="Boolean">  
         <channelPoolSettings  
            idleTimeout"TimeSpan"  
@@ -36,7 +35,6 @@ Enables packet routing and the use of one-way methods for a custom binding.
 ```  
   
 ```  
-  
 </oneWay>  
 ```  
   

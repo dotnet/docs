@@ -36,7 +36,6 @@ translation.priority.mt:
 Classes are declared using the keyword `class`, as shown in the following example:  
   
 ```  
-  
       class TestClass  
 {  
     // Methods, properties, fields, events, delegates   

@@ -45,7 +45,6 @@ Adds two numbers or returns the positive value of a numeric expression. Can also
 ## Syntax  
   
 ```  
-  
       expression1 + expression2  
 - or -  
 + expression1  

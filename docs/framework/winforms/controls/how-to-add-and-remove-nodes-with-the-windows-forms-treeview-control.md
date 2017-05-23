@@ -33,14 +33,12 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
     ' Adds new node as a child node of the currently selected node.  
     Dim newNode As TreeNode = New TreeNode("Text for new node")  
     TreeView1.SelectedNode.Nodes.Add(newNode)  
-  
     ```  
   
     ```csharp  
     // Adds new node as a child node of the currently selected node.  
     TreeNode newNode = new TreeNode("Text for new node");  
     treeView1.SelectedNode.Nodes.Add(newNode);  
-  
     ```  
   
     ```cpp  
@@ -58,7 +56,6 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
     TreeView1.Nodes.Remove(TreeView1.SelectedNode)  
     ' Clears all nodes.  
     TreeView1.Nodes.Clear()  
-  
     ```  
   
     ```csharp  
@@ -67,7 +64,6 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control stores the top-le
     treeView1.Nodes.Remove(treeView1.SelectedNode);  
     // Clears all nodes.  
     TreeView1.Nodes.Clear();  
-  
     ```  
   
     ```cpp  

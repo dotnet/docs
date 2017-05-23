@@ -25,7 +25,6 @@ This element defines the settings for the message-logging capabilities of Window
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
    <diagnostics>  
        <messageLogging logEntireMessage="Boolean"  

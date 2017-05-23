@@ -49,7 +49,6 @@ public class CalculatorService : ICalculator
     }  
     ...  
 }  
-  
 ```  
   
  Service behaviors are specified with the <xref:System.ServiceModel.ServiceBehaviorAttribute> attribute. The following table describes some of these behaviors.  

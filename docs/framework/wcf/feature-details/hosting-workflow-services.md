@@ -39,7 +39,6 @@ A workflow service must be hosted for it to respond to incoming messages. Workfl
       </WorkflowService.Endpoints>  
     <!-- ... -->  
     </WorkflowService>  
-  
     ```  
   
     > [!NOTE]

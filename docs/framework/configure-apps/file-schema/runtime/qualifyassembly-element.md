@@ -38,7 +38,6 @@ Specifies the full name of the assembly that should be dynamically loaded when a
 ## Syntax  
   
 ```  
-  
       <qualifyAssembly partialName=  
       "PartialAssemblyName"  
                  fullName="FullAssemblyName"/>  

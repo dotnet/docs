@@ -28,7 +28,6 @@ Specifies binding, contract, and address properties for a service endpoint, whic
 ## Syntax  
   
 ```  
-  
 <endpoint address="String"  
    behaviorConfiguration="String"  
    binding="String"  

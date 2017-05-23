@@ -24,7 +24,6 @@ Specifies configuration settings for the Named Pipe Activation Service, which ma
 ## Syntax  
   
 ```  
-  
 <configuration>  
    <system.serviceModel.activation>  
        <net.pipe maxPendingAccepts="Integer"  

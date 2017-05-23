@@ -30,7 +30,6 @@ Specifies a MSMQ transport for custom binding.
 ## Syntax  
   
 ```  
-  
 <msmqIntegration>  
         customDeadLetterQueue="Uri"  
         deadLetterQueue="Custom/None/System"  

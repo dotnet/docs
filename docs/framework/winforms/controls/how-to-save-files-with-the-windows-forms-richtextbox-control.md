@@ -60,7 +60,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
        & "\Testdoc.rtf", _  
           RichTextBoxStreamType.RichNoOleObjs)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -74,7 +73,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
        + @"\Testdoc.rtf",  
           RichTextBoxStreamType.RichNoOleObjs);  
     }  
-  
     ```  
   
     ```cpp  

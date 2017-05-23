@@ -211,7 +211,6 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
     </behaviors>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  And you have a child Web.config located at ~\Child\Web.config with the following contents:  
@@ -228,7 +227,6 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
     </behaviors>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The service located at ~\Child\Service.svc will behave as though it has both the serviceDebug and serviceMetadata behaviors. The service located at ~\Service.svc will only have the serviceDebug behavior. What happens is that the two behavior collections with the same name (in this case the empty string) are merged.  
@@ -248,7 +246,6 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
     </behaviors>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ```xml  
@@ -264,7 +261,6 @@ Configuring a [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] service with 
     </behaviors>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  Behavior merge is done for nameless behavior collections as shown above and named behavior collections as well.  

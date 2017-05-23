@@ -37,7 +37,6 @@ Removes a listener from the **Listeners** collection.
 ## Syntax  
   
 ```  
-  
 <remove name="listener name" />  
 ```  
   

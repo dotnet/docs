@@ -31,11 +31,9 @@ Called by the common language runtime (CLR) data access services to get the ID o
 ## Syntax  
   
 ```cpp  
-  
 HRESULT GetExceptionThreadID(  
     [out] ULONG32* threadID  
 );  
-  
 ```  
   
 #### Parameters  

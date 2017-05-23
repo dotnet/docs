@@ -21,7 +21,6 @@ Applies policy to the type represented by a Type argument passed to a method.
 ## Syntax  
   
 ```xml  
-  
 <Parameter Name="parameter_name"  
            Activate="policy_type"  
            Browse="policy_type"  
@@ -33,7 +32,6 @@ Applies policy to the type represented by a Type argument passed to a method.
            MarshalObject="policy_type"  
            MarshalDelegate="policy_type"  
            MarshalStructure="policy_type" />  
-  
 ```  
   
 ## Attributes and Elements  
@@ -82,7 +80,6 @@ Applies policy to the type represented by a Type argument passed to a method.
  For example, the NewtonSoft JSON serializer includes a static `JsonConvert.DeserializeObject(String value, Type type)` method. The following reflection directives:  
   
 ```xml  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <Type Name="Newtonsoft.Json.JsonConvert" >  
       <Method Name="DeserializeObject">  
@@ -90,16 +87,13 @@ Applies policy to the type represented by a Type argument passed to a method.
       </Method>  
    </Type>  
 </Directives>  
-  
 ```  
   
  specify that metadata for the runtime type represented by the `type` argument should be made available for serialization. If these runtime directives apply to a project that includes the following source code:  
   
 ```csharp  
-  
 Type t = typeof(StockQuote);  
 Object obj = JsonConvert.DeserializeObject(data, t);  
-  
 ```  
   
  the reflection directives make metadata for the `StockQuote` type available for the NewtonSoft JSON serializer at run time.  

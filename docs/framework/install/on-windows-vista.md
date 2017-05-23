@@ -1,5 +1,5 @@
 ---
-title: Install the .NET Framework on Windows Vista
+title: Install the .NET Framework on Windows Vista | Microsoft Docs
 description: Learn how to install .NET Framework on Windows Vista
 author: rlander
 keywords: .NET Framework, Install

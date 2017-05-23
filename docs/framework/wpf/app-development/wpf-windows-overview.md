@@ -127,7 +127,6 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
     <Compile Include=" MarkupAndCodeBehindWindow.xaml.cs" />  
     ...  
 </Project>  
-  
 ```  
   
  For information about building                  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, see                  [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md).  

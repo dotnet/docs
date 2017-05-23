@@ -95,7 +95,6 @@ Module Module1
     End Sub  
   
 End Module  
-  
 ```  
   
  Notice that the method is defined with two parameters and called with only one. The first parameter, `aString`, in the method definition is bound to `example`, the instance of `String` that calls the method. The output of the example is as follows:  

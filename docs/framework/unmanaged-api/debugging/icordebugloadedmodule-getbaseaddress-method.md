@@ -23,11 +23,9 @@ Gets the base address of the loaded module.
 ## Syntax  
   
 ```  
-  
 HRESULT GetBaseAddress(  
    [out] CORDB_ADDRESS *pAddress  
 );  
-  
 ```  
   
 #### Parameters  

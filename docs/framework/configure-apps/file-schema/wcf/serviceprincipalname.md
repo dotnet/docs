@@ -26,7 +26,6 @@ Specifies the identity of a service by its Service Principal Name (SPN).
 ## Syntax  
   
 ```  
-  
 <servicePrincipalName value = "String" />  
 ```  
   

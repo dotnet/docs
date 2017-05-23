@@ -23,7 +23,6 @@ Services are defined in the `services` section of the configuration file. Each s
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
         <services>  
         <service>  

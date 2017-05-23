@@ -106,12 +106,10 @@ al /target:lib /embed:strings.de.resources /culture:de /out:Example.resources.dl
 4.  Use [Resgen.exe](../../../docs/framework/tools/resgen-exe-resource-file-generator.md) to compile each text or XML resource file to a binary .resources file. The output is a set of files that have the same root file name as the .resx or .txt files, but a .resources extension. If you create the example with Visual Studio, the compilation process is handled automatically. If you aren't using Visual Studio, run the following commands to compile the .resx files into .resources files:  
   
     ```  
-  
     resgen Greeting.resx  
     resgen Greeting.en-us.resx  
     resgen Greeting.fr-FR.resx  
     resgen Greeting.ru-RU.resx  
-  
     ```  
   
      If your resources are in text files instead of XML files, replace the .resx extension with .txt.  

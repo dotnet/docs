@@ -1,5 +1,5 @@
 ---
-title: External Functions (F#)
+title: External Functions (F#) | Microsoft Docs
 description: External Functions (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -91,10 +91,8 @@ This topic gives an overview of how to draw with              <xref:System.Windo
  In                          [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)], you may also use a special abbreviated syntax to describe a                          <xref:System.Windows.Shapes.Path>. In the following example, abbreviated syntax is used to draw a complex shape.  
   
 ```xaml  
-  
       <Path Stroke="DarkGoldenRod" StrokeThickness="3"   
 Data="M 100,200 C 100,25 400,350 400,175 H 280" />  
-  
 ```  
   
  The following image shows a rendered                          <xref:System.Windows.Shapes.Path>.  
@@ -112,7 +110,6 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
  <xref:System.Windows.Media.Brush> objects are used to paint a shape's                  <xref:System.Windows.Shapes.Shape.Stroke%2A> and                  <xref:System.Windows.Shapes.Shape.Fill%2A>. In the following example, the stroke and fill of an                  <xref:System.Windows.Shapes.Ellipse> are specified. Note that valid input for brush properties can be either a keyword or hexadecimal color value. For more information about available color                  keywords                 , see properties of the                  <xref:System.Windows.Media.Colors> class in the                  <xref:System.Windows.Media> namespace                 .  
   
 ```  
-  
 <Canvas Background="LightGray">   
    <Ellipse  
       Canvas.Top="50"  
@@ -123,7 +120,6 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
       StrokeThickness="5"  
       Stroke="#FF0000FF"/>  
 </Canvas>  
-  
 ```  
   
  The following image shows the rendered                  <xref:System.Windows.Shapes.Ellipse>.  
@@ -133,7 +129,6 @@ Data="M 100,200 C 100,25 400,350 400,175 H 280" />
  Alternatively, you can use                  property element syntax                  to explicitly create a                  <xref:System.Windows.Media.SolidColorBrush> object to paint the shape with a solid color.  
   
 ```  
-  
 <!-- This polygon shape uses pre-defined color values for its Stroke and  
      Fill properties.   
      The SolidColorBrush's Opacity property affects the fill color in   

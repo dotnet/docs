@@ -1,5 +1,5 @@
 ---
-title: Properties (F#)
+title: Properties (F#) | Microsoft Docs
 description: Properties (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

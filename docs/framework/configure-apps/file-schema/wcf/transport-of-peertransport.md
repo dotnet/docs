@@ -29,7 +29,6 @@ Specifies the transport type for secured messages sent by peers configured with 
 ## Syntax  
   
 ```  
-  
 <security>  
    <transport credentialType="Certificate/Password" />  
 </security>         

@@ -23,7 +23,6 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
 ## Syntax  
   
 ```  
-  
 <configuration>  
   <system.runtime.serialization>  
     <dataContractSerializer ignoreExtensionDataObject="Boolean"  

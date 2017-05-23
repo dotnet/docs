@@ -1,5 +1,5 @@
 ---
-title: C# Guide
+title: C# Guide | Microsoft Docs
 description: C# Guide
 keywords: .NET, .NET Core
 author: BillWagner

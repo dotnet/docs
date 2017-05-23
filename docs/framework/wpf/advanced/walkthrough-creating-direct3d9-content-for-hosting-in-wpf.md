@@ -123,7 +123,6 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
 11. Replace the automatically generated code with the following code.  
   
     ```  
-  
     LIBRARY "D3DContent"  
   
     EXPORTS  
@@ -136,7 +135,6 @@ This walkthrough shows how to create Direct3D9 content that is suitable for host
     GetBackBufferNoRef  
     Render  
     Destroy  
-  
     ```  
   
 12. Build the project.  

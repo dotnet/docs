@@ -31,7 +31,6 @@ Receive approveExpense = new Receive
                 SerializerOption = SerializerOption.DataContractSerializer,  
                 Content = ReceiveContent.Create(new OutArgument<Expense>(expense))  
             };  
-  
 ```  
   
  Known types can be specified on Workflow services as well. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] Known Types see [Data Contract Known Types](../../../../docs/framework/wcf/feature-details/data-contract-known-types.md). Known types can be specified in the designer or in code. To specify known types in the designer, click the ellipsis button next to the KnownTypes property in the properties window for a <xref:System.ServiceModel.Activities.Receive> activity as shown in the following illustration.  
@@ -55,7 +54,6 @@ Receive approveExpense = new Receive
             };  
             approveExpense.KnownTypes.Add(typeof(Travel));  
             approveExpense.KnownTypes.Add(typeof(Meal));  
-  
 ```  
   
  To see a complete code example showing how to configure serialization for a workflow service see [Formatting messages in Workflow Services](../../../../docs/framework/windows-workflow-foundation/samples/formatting-messages-in-workflow-services.md).

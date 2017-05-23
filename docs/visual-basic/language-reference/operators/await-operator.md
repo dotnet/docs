@@ -47,7 +47,6 @@ You apply the `Await` operator to an operand in an asynchronous method or lambda
  In the following code, the <xref:System.Net.Http.HttpClient> method <xref:System.Net.Http.HttpClient.GetByteArrayAsync%2A> returns `getContentsTask`, a `Task(Of Byte())`. The task is a promise to produce the actual byte array when the operation is complete. The `Await` operator is applied to `getContentsTask` to suspend execution in `SumPageSizesAsync` until `getContentsTask` is complete. In the meantime, control is returned to the caller of `SumPageSizesAsync`. When `getContentsTask` is finished, the `Await` expression evaluates to a byte array.  
   
 ```vb  
-  
 Private Async Function SumPageSizesAsync() As Task  
   
     ' To use the HttpClient type in desktop apps, you must include a using directive and add a   
@@ -61,7 +60,6 @@ Private Async Function SumPageSizesAsync() As Task
     'Dim urlContents As Byte() = Await client.GetByteArrayAsync(url)  
     ' . . .  
 End Function  
-  
 ```  
   
 > [!IMPORTANT]
@@ -75,7 +73,6 @@ Dim result As TResult = Await AsyncMethodThatReturnsTaskTResult()
   
 ' Await used with a method that returns a Task.  
 Await AsyncMethodThatReturnsTask()  
-  
 ```  
   
  An `Await` expression or statement does not block the thread on which it is executing. Instead, it causes the compiler to sign up the rest of the async method, after the `Await` expression, as a continuation on the awaited task. Control then returns to the caller of the async method. When the task completes, it invokes its continuation, and execution of the async method resumes where it left off.  

@@ -35,7 +35,6 @@ Traces are the publishing of specific messages that are generated during applica
      </sources>  
 </system.diagnostics>  
 </configuration>  
-  
 ```  
   
  <xref:System.Transactions> traces are written to the source named "System.Transactions". You can use `add` to specify the name and type of the trace listener you want to use. In our example configuration, we named the Listener "tx" and added the standard .NET Framework trace listener (<xref:System.Diagnostics.XmlWriterTraceListener>) as the type we want to use. Use `initializeData` to set the name of the log file for that listener. In addition, you can substitute a fully qualified path for a simple file name.  

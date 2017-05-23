@@ -33,7 +33,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetLocalVarSigToken(  
    [out] mdSignature *pmdSig  
 );  

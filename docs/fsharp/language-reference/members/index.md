@@ -1,5 +1,5 @@
 ---
-title: Members (F#)
+title: Members (F#) | Microsoft Docs
 description: Members (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

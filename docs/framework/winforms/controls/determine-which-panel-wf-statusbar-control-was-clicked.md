@@ -48,7 +48,6 @@ manager: "wpickett"
            MessageBox.Show("You have clicked Panel Two.")  
        End Select  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -65,7 +64,6 @@ manager: "wpickett"
              break;  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -91,7 +89,6 @@ manager: "wpickett"
     this.statusBar1.PanelClick += new   
        System.Windows.Forms.StatusBarPanelClickEventHandler   
        (this.statusBar1_PanelClick);  
-  
     ```  
   
     ```cpp  

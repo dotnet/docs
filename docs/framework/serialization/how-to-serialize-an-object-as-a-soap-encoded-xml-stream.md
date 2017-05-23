@@ -41,7 +41,6 @@ manager: "erikre"
     ' Serializes a class named Group as a SOAP message.  
     Dim myTypeMapping As XmlTypeMapping = (New SoapReflectionImporter(). _  
     ImportTypeMapping(GetType(Group))  
-  
     ```  
   
     ```csharp  
@@ -54,7 +53,6 @@ manager: "erikre"
   
     ```vb  
     Dim mySerializer As XmlSerializer = New XmlSerializer(myTypeMapping)  
-  
     ```  
   
     ```csharp  
@@ -70,7 +68,6 @@ manager: "erikre"
 Dim myTypeMapping As XmlTypeMapping = (New SoapReflectionImporter(). _  
 ImportTypeMapping(GetType(Group))  
 Dim mySerializer As XmlSerializer = New XmlSerializer(myTypeMapping)  
-  
 ```  
   
 ```csharp  

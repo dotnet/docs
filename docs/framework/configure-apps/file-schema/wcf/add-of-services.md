@@ -28,7 +28,6 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ## Syntax  
   
 ```  
-  
 <workflowRuntime>  
    <services>  
       <add type="String"/>  

@@ -73,7 +73,6 @@ manager: "mbaldwin"
                     contract="WCS.Samples.Service.IEcho" />  
         </service>  
     </services>  
-  
     ```  
   
 ## Example  

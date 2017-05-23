@@ -1,5 +1,5 @@
 ---
-title: Asynchronous programming
+title: Asynchronous programming | Microsoft Docs
 description: Asynchronous programming
 keywords: .NET, .NET Core
 author: cartermp
@@ -174,7 +174,6 @@ You may find yourself in a situation where you need to retrieve multiple pieces 
 This example shows how you might grab `User` data for a set of `userId`s.
 
 ```csharp
-
 public async Task<User> GetUser(int userId)
 {
     // Code omitted:
@@ -199,7 +198,6 @@ public static Task<IEnumerable<User>> GetUsers(IEnumerable<int> userIds)
 Here's another way to write this a bit more succinctly, using LINQ:
 
 ```csharp
-
 public async Task<User> GetUser(int userId)
 {
     // Code omitted:

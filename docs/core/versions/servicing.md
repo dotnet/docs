@@ -1,5 +1,5 @@
 ---
-title: .NET Core Servicing
+title: .NET Core Servicing | Microsoft Docs
 description: .NET Core Servicing
 keywords: .NET, .NET Core
 ms.date: 06/20/2016

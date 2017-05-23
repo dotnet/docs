@@ -39,7 +39,6 @@ Adds an authentication module to the application.
 ## Syntax  
   
 ```  
-  
       <add   
    type = "client type", System, Version="version number", Culture="culture", PublicKeyToken="token"   
 />  

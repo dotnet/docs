@@ -24,7 +24,6 @@ The following procedure has steps to create a persistence participant. See the [
   
     ```  
     protected virtual void CollectValues (out IDictionary<XName,Object> readWriteValues, out IDictionary<XName,Object> writeOnlyValues)  
-  
     ```  
   
 3.  Implement the <xref:System.Activities.Persistence.PersistenceParticipant.MapValues%2A> method. The **MapValues** method takes two parameters that are similar to the parameters that the **CollectValues** method receives. All the values collected in the **CollectValues** stage are passed through these dictionary parameters. The new values added by the **MapValues** stage are added to the write-only values.  The write-only dictionary is used to provide data to an external source not directly associated with the instance values. Each value provided by implementations of the **MapValues** method across all persistence participants must have a unique name.  
@@ -39,20 +38,16 @@ The following procedure has steps to create a persistence participant. See the [
   
     ```  
     protected virtual void PublishValues (IDictionary<XName,Object> readWriteValues)  
-  
     ```  
   
 5.  Implement the **BeginOnSave** method if the participant is a persistence IO participant. This method is called during a Save operation. In this method, you should perform IO adjunct to the persisting (saving) workflow instances.  If the host is using a transaction for the corresponding persistence command, the same transaction is provided in Transaction.Current.  Additionally, PersistenceIOParticipants may advertise a transactional consistency requirement, in which case the host creates a transaction for the persistence episode if one would not otherwise be used.  
   
     ```  
-  
     protected virtual IAsyncResult BeginOnSave (IDictionary<XName,Object> readWriteValues, IDictionary<XName,Object> writeOnlyValues, TimeSpan timeout, AsyncCallback callback, Object state)  
     ```  
   
 6.  Implement the **BeginOnLoad** method if the participant is a persistence IO participant. This method is called during a Load operation. In this method, you should perform IO adjunct to the loading of workflow instances. If the host is using a transaction for the corresponding persistence command, the same transaction is provided in Transaction.Current. Additionally, Persistence IO participants may advertise a transactional consistency requirement, in which case the host creates a transaction for the persistence episode if one would not otherwise be used.  
   
     ```  
-  
     protected virtual IAsyncResult BeginOnLoad (IDictionary<XName,Object> readWriteValues, TimeSpan timeout, AsyncCallback callback, Object state)  
-  
     ```

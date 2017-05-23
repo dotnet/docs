@@ -50,7 +50,6 @@ The notion of a variable that does not change its value might appear to be contr
 1.  At module level, declare a member variable with the [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md), and include the [ReadOnly](../../../../visual-basic/language-reference/modifiers/readonly.md) keyword.  
   
     ```  
-  
     Dim ReadOnly timeStarted  
     ```  
   

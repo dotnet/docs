@@ -48,7 +48,6 @@ The [PageSetupDialog](../../../../docs/framework/winforms/controls/pagesetupdial
        PageSetupDialog1.Document.DefaultPageSettings.Color = False  
        PageSetupDialog1.ShowDialog()  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -63,7 +62,6 @@ The [PageSetupDialog](../../../../docs/framework/winforms/controls/pagesetupdial
        pageSetupDialog1.Document.DefaultPageSettings.Color = false;  
        pageSetupDialog1.ShowDialog();  
     }  
-  
     ```  
   
     ```cpp  
@@ -86,7 +84,6 @@ The [PageSetupDialog](../../../../docs/framework/winforms/controls/pagesetupdial
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
-  
     ```  
   
     ```cpp  

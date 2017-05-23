@@ -47,7 +47,6 @@ Protected Overrides Sub OnPaint(ByVal pe As PaintEventArgs)
    ' Draw an aqua rectangle in the rectangle represented by the control.  
    pe.Graphics.DrawRectangle(myPen, New Rectangle(Me.Location, Me.Size))  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -63,7 +62,6 @@ protected override void OnPaint(PaintEventArgs pe)
    pe.Graphics.DrawRectangle(myPen, new Rectangle(this.Location,   
       this.Size));  
 }  
-  
 ```  
   
  The preceding example demonstrates how to render a control with a very simple graphical representation. It calls the <xref:System.Windows.Forms.Control.OnPaint%2A> method of the base class, it creates a <xref:System.Drawing.Pen> object with which to draw, and finally draws an ellipse in the rectangle determined by the <xref:System.Windows.Forms.Control.Location%2A> and <xref:System.Windows.Forms.Control.Size%2A> of the control. Although most rendering code will be significantly more complicated than this, this example demonstrates the use of the <xref:System.Drawing.Graphics> object contained within the <xref:System.Windows.Forms.PaintEventArgs> object. Note that if you are inheriting from a class that already has a graphical representation, such as <xref:System.Windows.Forms.UserControl> or <xref:System.Windows.Forms.Button>, and you do not wish to incorporate that representation into your rendering, you should not call your base class's <xref:System.Windows.Forms.Control.OnPaint%2A> method.  
@@ -72,12 +70,10 @@ protected override void OnPaint(PaintEventArgs pe)
   
 ```vb  
 SetStyle(ControlStyles.ResizeRedraw, True)  
-  
 ```  
   
 ```csharp  
 SetStyle(ControlStyles.ResizeRedraw, true);  
-  
 ```  
   
 > [!NOTE]

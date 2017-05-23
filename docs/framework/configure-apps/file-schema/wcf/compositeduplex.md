@@ -30,7 +30,6 @@ Defines the binding element that is used when the client must expose an endpoint
 ## Syntax  
   
 ```  
-  
 <compositeDuplex clientBaseAddress="URI" />  
 ```  
   

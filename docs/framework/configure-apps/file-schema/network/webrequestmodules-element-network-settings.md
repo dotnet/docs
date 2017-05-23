@@ -36,7 +36,6 @@ Specifies modules to use to request information from network hosts.
 ## Syntax  
   
 ```  
-  
       <webRequestModules>   
 </webRequestModules>  
 ```  

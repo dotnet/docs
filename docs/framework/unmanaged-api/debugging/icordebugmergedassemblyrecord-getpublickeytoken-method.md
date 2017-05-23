@@ -23,13 +23,11 @@ Gets the assembly's public key token.
 ## Syntax  
   
 ```  
-  
 HRESULT GetPublicKeyToken(  
    [in] ULONG32 cbPublicKeyToken,   
    [out] ULONG32 *pcbPublicKeyToken,   
    [out, size_is(cbPublicKeyToken), length_is(*pcbPublicKeyToken)] BYTE pbPublicKeyToken[]  
 );  
-  
 ```  
   
 #### Parameters  

@@ -1,5 +1,5 @@
 ---
-title: Creating a NuGet Package with Cross Platform Tools
+title: Creating a NuGet Package with Cross Platform Tools | Microsoft Docs
 description: Creating a NuGet Package with Cross Platform Tools
 keywords: .NET, .NET Core, NuGet
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: Statically Resolved Type Parameters (F#)
+title: Statically Resolved Type Parameters (F#) | Microsoft Docs
 description: Statically Resolved Type Parameters (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

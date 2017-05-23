@@ -242,7 +242,6 @@ You can write asynchronous programs more easily and intuitively by using async/a
      Output that resembles the following list should appear.  
   
     ```  
-  
     msdn.microsoft.com/library/windows/apps/br211380.aspx        383832  
     msdn.microsoft.com                                            33964  
     msdn.microsoft.com/library/hh290136.aspx               225793  
@@ -257,7 +256,6 @@ You can write asynchronous programs more easily and intuitively by using async/a
     Total bytes returned:  1834802  
   
     Control returned to startButton_Click.  
-  
     ```  
   
      Notice that it takes a few seconds to display the counts. During that time, the UI thread is blocked while it waits for requested resources to download. As a result, you can't move, maximize, minimize, or even close the display window after you choose the  **Start** button. These efforts fail until the byte counts start to appear. If a website isn’t responding, you have no indication of which site failed. It is difficult even to stop waiting and close the program.  
@@ -366,7 +364,6 @@ You can write asynchronous programs more easily and intuitively by using async/a
     ' produces a byte array.   
     'Dim getContentsTask As Task(Of Byte()) = GetURLContentsAsync(url)   
     'Dim urlContents As Byte() = Await getContentsTask  
-  
     ```  
   
 2.  Make the following changes in the method's signature:  

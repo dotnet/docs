@@ -23,11 +23,9 @@ Enables or disables virtual module splitting.
 ## Syntax  
   
 ```  
-  
 HRESULT EnableVirtualModuleSplitting(  
    BOOL enableSplitting  
 );  
-  
 ```  
   
 #### Parameters  

@@ -42,7 +42,6 @@ double value1 = 100.00D;
 double value2 = 15.99D;  
 double result = channel.Add(value1, value2);  
 Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);  
-  
 ```  
   
  To close the channel, it must first be cast to an <xref:System.ServiceModel.IClientChannel> interface. This is because the channel as generated is declared in the client application using the `ICalculator` interface, which has methods like `Add` and `Subtract` but not `Close`. The `Close` method originates on the <xref:System.ServiceModel.ICommunicationObject> interface.  
@@ -50,7 +49,6 @@ Console.WriteLine("Add({0},{1}) = {2}", value1, value2, result);
 ```  
 // Close the channel.  
  ((IClientChannel)client).Close();  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client application.  

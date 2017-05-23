@@ -23,11 +23,9 @@ Returns the metadata from a merged assembly.
 ## Syntax  
   
 ```  
-  
 HRESULT GetAssemblyImageMetadata(  
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  
-  
 ```  
   
 #### Parameters  

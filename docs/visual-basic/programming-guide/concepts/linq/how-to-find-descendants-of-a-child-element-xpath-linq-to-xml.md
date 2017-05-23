@@ -68,7 +68,6 @@ Else
     Console.WriteLine("Results differ")  
 End If  
 Console.WriteLine(str2)  
-  
 ```  
   
  This example produces the following output:  

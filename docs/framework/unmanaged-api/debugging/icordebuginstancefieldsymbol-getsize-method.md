@@ -23,11 +23,9 @@ Gets the size in bytes of the instance field.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSize(  
    [out] ULONG32 *pcbSize  
 );  
-  
 ```  
   
 #### Parameters  

@@ -39,9 +39,7 @@ Clears the connection management list.
 ## Syntax  
   
 ```  
-  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  

@@ -1,5 +1,5 @@
 ---
-title: Flexible Types (F#)
+title: Flexible Types (F#) | Microsoft Docs
 description: Flexible Types (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -41,7 +41,6 @@ Tracking profiles contain tracking queries that permit a tracking participant to
   </tracking>  
     ...  
 </system.serviceModel>  
-  
 ```  
   
  The following example shows the equivalent tracking profile created using code.  
@@ -60,7 +59,6 @@ TrackingProfile profile = new TrackingProfile()
         }  
     }  
 };  
-  
 ```  
   
  Tracking records are filtered through the visibility mode within a tracking profile by using the <xref:System.Activities.Tracking.ImplementationVisibility> attribute. A composite activity is a top-level activity that contains other activities that form its implementation. The visibility mode specifies the tracking records emitted from composite activities within a workflow activity, to specify if activities that form the implementation are being tracked.  The visibility mode applies at the tracking profile level. The filtering of tracking records for individual activities within a workflow is controlled by the queries within the tracking profile. For more information, see the **Tracking Profile Query Types** section in this document.  
@@ -92,7 +90,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
     Name = "Sample Tracking Profile",  
     ImplementationVisibility = ImplementationVisibility.RootScope  
 };  
-  
 ```  
   
  The `implementationVisibility` functionality is specified as <xref:System.Activities.Tracking.ImplementationVisibility> on the tracking profile in a configuration file as follows:  
@@ -107,7 +104,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
         </trackingProfile>  
       </profiles>  
 </tracking>  
-  
 ```  
   
  The `ImplementationVisibility` setting on the tracking profile is optional. By default, its value is set to `RootScope`. The values for this attribute are also case-sensitive.  
@@ -139,7 +135,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
           </states>  
         </workflowInstanceQuery>  
     </workflowInstanceQueries>  
-  
     ```  
   
     ```  
@@ -154,7 +149,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
             }  
         }  
     };  
-  
     ```  
   
 -   <xref:System.Activities.Tracking.ActivityStateQuery> - Use this to track life cycle changes of the activities that make up a workflow instance. For example, you may want to keep track of every time the "Send E-Mail" activity completes within a workflow instance. This query is necessary for a <xref:System.Activities.Tracking.TrackingParticipant> to subscribe to <xref:System.Activities.Tracking.ActivityStateRecord> objects. The available states to subscribe to are specified in <xref:System.Activities.Tracking.ActivityStates>.  
@@ -169,7 +163,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
         </states>  
       </activityStateQuery>  
     </activityStateQueries>  
-  
     ```  
   
     ```  
@@ -185,7 +178,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
             }  
         }  
     };  
-  
     ```  
   
     > [!NOTE]
@@ -199,7 +191,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
     <activityScheduledQueries>  
       <activityScheduledQuery activityName="ProcessNotificationsActivity" childActivityName="SendEmailActivity" />  
      </activityScheduledQueries>  
-  
     ```  
   
     ```  
@@ -215,7 +206,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
             }  
         }  
     };  
-  
     ```  
   
 -   <xref:System.Activities.Tracking.FaultPropagationQuery> - Use this to track the handling of faults that occur within an activity. The query is necessary for a <xref:System.Activities.Tracking.TrackingParticipant> to subscribe to <xref:System.Activities.Tracking.FaultPropagationRecord> objects.  
@@ -226,7 +216,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
     <faultPropagationQueries>  
       <faultPropagationQuery faultSourceActivityName="SendEmailActivity" faultHandlerActivityName="NotificationsFaultHandler" />  
     </faultPropagationQueries>  
-  
     ```  
   
     ```  
@@ -242,7 +231,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
             }  
         }  
     };  
-  
     ```  
   
 -   <xref:System.Activities.Tracking.CancelRequestedQuery> - Use this to track requests to cancel a child activity by the parent activity. The query is necessary for a <xref:System.Activities.Tracking.TrackingParticipant> to subscribe to <xref:System.Activities.Tracking.CancelRequestedRecord> objects.  
@@ -253,7 +241,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
     <cancelRequestedQueries>  
       <cancelRequestedQuery activityName="ProcessNotificationsActivity" childActivityName="SendEmailActivity" />  
     </cancelRequestedQueries>  
-  
     ```  
   
     ```  
@@ -269,7 +256,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
             }  
         }  
     };  
-  
     ```  
   
 -   <xref:System.Activities.Tracking.CustomTrackingQuery> - Use this to track events that you define in your code activities. The query is necessary for a <xref:System.Activities.Tracking.TrackingParticipant> to subscribe to <xref:System.Activities.Tracking.CustomTrackingRecord> objects.  
@@ -295,7 +281,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
             }  
         }  
     };  
-  
     ```  
   
 -   <xref:System.Activities.Tracking.BookmarkResumptionQuery> - Use this to track resumption of a bookmark within a workflow instance. This query is necessary for a <xref:System.Activities.Tracking.TrackingParticipant> to subscribe to <xref:System.Activities.Tracking.BookmarkResumptionRecord> objects.  
@@ -306,7 +291,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
     <bookmarkResumptionQueries>  
       <bookmarkResumptionQuery name="SentEmailBookmark" />  
     </bookmarkResumptionQueries>  
-  
     ```  
   
     ```  
@@ -321,7 +305,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
             }  
         }  
     };  
-  
     ```  
   
 ### Annotations  
@@ -338,7 +321,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
     <annotation name="MailServer" value="Mail Server1"/>  
   </annotations>  
 </activityStateQuery>  
-  
 ```  
   
 ### How to Create a Tracking Profile  
@@ -356,7 +338,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
     </profiles>  
   </tracking>  
 </system.serviceModel>  
-  
 ```  
   
 > [!WARNING]
@@ -389,7 +370,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
     </activityStateQueries>  
   </workflow>  
 </trackingProfile>  
-  
 ```  
   
 1.  A tracking profile to obtain all custom tracking records.  
@@ -402,7 +382,6 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
     </customTrackingQueries>  
   </workflow>  
 </trackingProfile>  
-  
 ```  
   
 ## See Also  

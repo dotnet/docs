@@ -32,7 +32,6 @@ Private Shared Sub DataSetMergeFailed(  _
   Console.WriteLine("Merge failed for table " & args.Table.TableName)  
   Console.WriteLine("Conflict = " & args.Conflict)  
 End Sub  
-  
 ```  
   
 ```csharp  

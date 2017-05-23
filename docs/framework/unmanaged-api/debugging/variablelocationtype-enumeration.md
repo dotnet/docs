@@ -35,14 +35,12 @@ Indicates the native location type of a variable.
 ## Syntax  
   
 ```  
-  
 typedef enum VariableLocationType  
 {  
     VLT_REGISTER,               
     VLT_REGISTER_RELATIVE,      
     VLT_INVALID  
 } VariableLocationType;  
-  
 ```  
   
 ## Members  

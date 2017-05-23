@@ -96,7 +96,6 @@ All applications tend to share a common set of functionality that applies to app
   <Compile Include="App.xaml.cs" />  
   ...  
 </Project>  
-  
 ```  
   
  Because the code-behind file contains code, it is marked as an                          [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)]`Compile` item, as is normal.  

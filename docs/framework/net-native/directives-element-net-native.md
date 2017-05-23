@@ -23,7 +23,6 @@ The root element in every runtime directives file for [!INCLUDE[net_native](../.
 ## Syntax  
   
 ```xml  
-  
       <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <!-- child elements -->   
 </Directives>  

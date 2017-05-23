@@ -25,7 +25,6 @@ Compares two expressions to determine whether the left expression has a value le
 ## Syntax  
   
 ```  
-  
 expression < expression  
 ```  
   

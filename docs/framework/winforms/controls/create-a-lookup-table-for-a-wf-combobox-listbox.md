@@ -69,12 +69,10 @@ Sometimes it is useful to display data in a user-friendly format on a Windows Fo
   
     ```vb  
     ListBox1.DataBindings.Add("SelectedValue", OrderDetailsTable, "ItemID")  
-  
     ```  
   
     ```csharp  
     listBox1.DataBindings.Add("SelectedValue", OrderDetailsTable, "ItemID");  
-  
     ```  
   
 ## See Also  

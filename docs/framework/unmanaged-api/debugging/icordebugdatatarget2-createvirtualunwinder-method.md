@@ -23,7 +23,6 @@ Creates a new stack unwinder that starts unwinding from an initial context (whic
 ## Syntax  
   
 ```  
-  
 HRESULT CreateVirtualUnwinder(  
     [in] DWORD nativeThreadID,  
     [in] ULONG32 contextFlags,  
@@ -31,7 +30,6 @@ HRESULT CreateVirtualUnwinder(
     [in, size_is(cbContext)] BYTE initialContext[],  
     [out] ICorDebugVirtualUnwinder ** ppUnwinder);  
 };  
-  
 ```  
   
 #### Parameters  

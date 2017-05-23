@@ -91,7 +91,6 @@ public class CalculatorService : ICalculator
       </serviceBehaviors>  
     </behaviors>  
   </system.serviceModel>  
-  
 ```  
   
  The behavior specifies the service's credentials that are used when the client authenticates the service. The server certificate subject name is specified in the `findValue` attribute in the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) element.  
@@ -125,7 +124,6 @@ public class CalculatorService : ICalculator
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
 ```  
   
  The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate security mode and authentication mode. When running in a cross-computer scenario, ensure that the service endpoint address is changed accordingly.  
@@ -152,7 +150,6 @@ public class CalculatorService : ICalculator
     </bindings>  
 ...  
 </system.serviceModel>  
-  
 ```  
   
  The client implementation can set the certificate to use, either through the configuration file or through code. The following sample shows how to set the certificate to use in the configuration file.  
@@ -188,7 +185,6 @@ public class CalculatorService : ICalculator
     </behaviors>  
   
 </system.serviceModel>  
-  
 ```  
   
  The following sample shows how to call the service in your program.  

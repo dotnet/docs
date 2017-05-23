@@ -35,7 +35,6 @@ EdmGen.exe is a command-line tool used for working with [!INCLUDE[adonet_ef](../
 ## Syntax  
   
 ```  
-  
 EdmGen /mode:choice [options]  
 ```  
   

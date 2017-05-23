@@ -21,7 +21,6 @@ Applies runtime policy to all classes inherited from the containing type.
 ## Syntax  
   
 ```xml  
-  
 <Subtypes Activate="policy_type"  
           Browse="policy_type"  
           Dynamic="policy_type"  
@@ -32,7 +31,6 @@ Applies runtime policy to all classes inherited from the containing type.
           MarshalObject="policy_setting"  
           MarshalDelegate="policy_setting"  
           MarshalStructure="policy_setting" />  
-  
 ```  
   
 ## Attributes and Elements  
@@ -81,7 +79,6 @@ Applies runtime policy to all classes inherited from the containing type.
  As shown in the following code, the runtime directives file explicitly sets the `Dynamic` and `Activate` policies for `BaseClass` to `Excluded`. Because of this, objects of type `BaseClass` cannot be instantiated dynamically or by calls to the `BaseClass` class constructor. However, the `<Subtypes>` element allows classes derived from `BaseClass` to be instantiated dynamically and through calls to their class constructors.  
   
 ```xml  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
   <Application>  
    <Assembly Name="*Application*" Dynamic="Required All" />  
@@ -90,7 +87,6 @@ Applies runtime policy to all classes inherited from the containing type.
      </Type>  
   </Application>  
 </Directives>  
-  
 ```  
   
  Because of the `<Subtypes>` directive, the following code that instantiates a `Derived1` instance dynamically by calling the <xref:System.Activator.CreateInstance%28System.Type%29?displayProperty=fullName> method executes successfully.  The block variable here is a <xref:System.Windows.Controls.TextBlock> object in a blank Windows Store app.  

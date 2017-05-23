@@ -1,5 +1,5 @@
 ---
-title: Creating Portable Libraries| C# Guide
+title: Creating Portable Libraries - C# Guide | Microsoft Docs
 description: Learn how to create portable libraries, and specify the platforms and versions your library supports.
 keywords: C#, UWP, Portable Assembly, Cross Platform
 ms.date: 08/24/2016
@@ -11,11 +11,11 @@ ms.assetid: 254836c0-3be7-4549-bd9a-40fc0f445c31
 redirect_url: /dotnet/articles/csharp/tutorials/index
 ---
 
-# 🔧 Creating Portable Libraries
+# Creating Portable Libraries
 
 > **Note**
 > 
-> This topic hasn’t been written yet! 
+> This topic hasn't been written yet! 
 >
 > We welcome your input to help shape the scope and approach. You can track the status and provide input on this
 > [issue](https://github.com/dotnet/docs/issues/950) at GitHub.

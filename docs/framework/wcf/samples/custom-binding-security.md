@@ -61,7 +61,6 @@ This sample demonstrates how to configure security by using a custom binding. It
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
 ```  
   
  Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the `security` binding element. Both client and service are authenticated using message-level security if the Kerberos authentication mechanism is available. This happens if the sample is run in the Active Directory environment. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate the service to the client. The `security` binding element is configured to use `SecureConversation``authenticationType`, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work.  
@@ -75,7 +74,6 @@ Result(50)
 Result(882.5)  
 Result(441.25)  
 Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)  
-  
 ```  
   
  When you run the sample, you see the messages returned to the client on the callback interface sent from the service. Each intermediate result is displayed, followed by the entire equation upon completion of all operations. Press ENTER to shut down the client.  
@@ -98,7 +96,6 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
     echo making server cert  
     echo ************  
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the server certificate into the client's trusted certificate store.  
@@ -185,7 +182,6 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
                 contract="Microsoft.ServiceModel.Samples.ICalculatorDuplex"  
         behaviorConfiguration="CalculatorClientBehavior" />  
         </client>  
-  
         ```  
   
     7.  If the service is running under an account other than the NetworkService or LocalSystem account in a domain environment, you might need to modify the endpoint identity for the service endpoint inside the client's App.config file to set the appropriate UPN or SPN based on the account that is used to run the service. For more information about endpoint identity, see the [Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md) topic.  

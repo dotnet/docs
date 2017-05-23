@@ -31,9 +31,7 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
 ## Syntax  
   
 ```  
-  
 <AppContextSwitchOverrides value="name1=value1[[;name2=value2];...]" />  
-  
 ```  
   
 ## Attributes and Elements  
@@ -101,26 +99,22 @@ Defines one or more switches used by the <xref:System.AppContext> class to provi
  The following example uses the `AppContextSwitchOverrides` element to define a single application  compatibility switch, `Switch.System.Globalization.NoAsyncCurrentCulture`, that prevents culture from flowing across threads in asynchronous method calls.  
   
 ```  
-  
 <configuration>  
    <runtime>  
       <AppContextSwitchOverrides value="Switch.System.Globalization.NoAsyncCurrentCulture=true" />  
    </runtime>  
 </configuration>  
-  
 ```  
   
  The following example uses the `AppContextSwitchOverrides` element to define two application  compatibility switches, `Switch.System.Globalization.NoAsyncCurrentCulture` and `Switch.System.IO.BlockLongPaths`. Note that a semicolon separates the two name/value pairs.  
   
 ```  
-  
 <configuration>  
     <runtime>  
        <AppContextSwitchOverrides   
           value="Switch.System.Globalization.NoAsyncCurrentCulture=true;Switch.System.IO.BlockLongPaths=true" />  
     </runtime>  
 </configuration>  
-  
 ```  
   
 ## See Also  

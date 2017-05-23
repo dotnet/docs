@@ -161,7 +161,6 @@ Securing a service with both transport and message credentials uses the best of 
       </binding>  
     </netTcpBinding>  
     </bindings>  
-  
     ```  
   
 ## See Also  

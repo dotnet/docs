@@ -42,7 +42,6 @@ public class String {
     public string[] Split(...);  
     public string Trim();  
 }  
-  
 ```  
   
 ## Names of Properties  

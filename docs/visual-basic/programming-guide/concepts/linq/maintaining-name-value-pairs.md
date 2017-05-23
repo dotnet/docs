@@ -97,7 +97,6 @@ Console.WriteLine("----")
 ' Remove DefaultColor.  
 root.SetElementValue("DefaultColor", Nothing)  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  

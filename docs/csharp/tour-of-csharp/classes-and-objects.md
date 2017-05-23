@@ -1,5 +1,5 @@
 ---
-title: Classes and Objects in C# | A tour of the C# Language
+title: Classes and Objects in C# - A tour of the C# Language | Microsoft Docs
 description: New to C#? Read this overview of classes, objects and inheritance
 keywords: .NET, csharp, class, instance, object, inheritance, polymorphism
 author: BillWagner

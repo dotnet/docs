@@ -46,7 +46,6 @@ For Each catDRV In catView
     Console.WriteLine(vbTab & prodDRV("ProductName"))  
   Next  
 Next  
-  
 ```  
   
 ```csharp  

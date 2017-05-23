@@ -45,7 +45,6 @@ Provides access to the value of an attribute for an <xref:System.Xml.Linq.XEleme
 ## Syntax  
   
 ```  
-  
       object.@attribute  
 -or-  
 object.@<attribute>  

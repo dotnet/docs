@@ -25,7 +25,6 @@ Specifies a search condition for a group or an aggregate.
 ## Syntax  
   
 ```  
-  
 [ HAVING search_condition ]  
 ```  
   

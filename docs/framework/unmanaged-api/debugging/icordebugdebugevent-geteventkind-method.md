@@ -23,11 +23,9 @@ Indicates what kind of event this `ICorDebugDebugEvent` object represents.
 ## Syntax  
   
 ```  
-  
 HRESULT GetEventKind(  
     [out]CorDebugDebugEventKind *pDebugEventKind  
 );  
-  
 ```  
   
 #### Parameters  

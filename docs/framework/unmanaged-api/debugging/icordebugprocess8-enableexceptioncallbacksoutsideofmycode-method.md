@@ -25,11 +25,9 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT EnableExceptionCallbacksOutsideOfMyCode(  
    [in] BOOL enableExceptionsOutsideOfJMC  
 );  
-  
 ```  
   
 #### Parameters  

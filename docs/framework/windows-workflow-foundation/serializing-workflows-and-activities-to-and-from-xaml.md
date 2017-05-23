@@ -41,7 +41,6 @@ StreamWriter sw = File.CreateText(@"C:\Workflows\add.xaml");
 XamlWriter xw2 = ActivityXamlServices.CreateBuilderWriter(new XamlXmlWriter(sw, new XamlSchemaContext()));  
 XamlServices.Save(xw2, ab);  
 sw.Close();  
-  
 ```  
   
  The following example represents the serialized workflow.  

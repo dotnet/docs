@@ -32,7 +32,6 @@ The Management Strongly Typed Class Generator tool enables you to quickly genera
 ## Syntax  
   
 ```  
-  
 mgmtclassgen   
 WMIClass [options]   
 ```  
@@ -130,7 +129,6 @@ Public Class App
       Console.WriteLine(dskD.Caption)  
    End Sub  
 End Class  
-  
 ```  
   
 ```csharp  

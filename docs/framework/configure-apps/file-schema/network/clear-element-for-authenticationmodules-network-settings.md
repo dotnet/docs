@@ -39,9 +39,7 @@ Clears all authentication modules from the application.
 ## Syntax  
   
 ```  
-  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  

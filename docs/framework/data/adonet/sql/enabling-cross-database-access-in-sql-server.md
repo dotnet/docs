@@ -44,7 +44,6 @@ RECONFIGURE;
 ```  
 ALTER DATABASE Database1 SET DB_CHAINING ON;  
 ALTER DATABASE Database2 SET DB_CHAINING ON;  
-  
 ```  
   
 ### Dynamic SQL  

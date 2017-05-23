@@ -25,7 +25,6 @@ Returns the negative of the value of a numeric expression.
 ## Syntax  
   
 ```  
-  
 - expression  
 ```  
   

@@ -30,7 +30,6 @@ Specifies the security options for a custom binding.
 ## Syntax  
   
 ```  
-  
 <security   
    allowSerializedSigningTokenOnReply="Boolean"  
    authenticationMode="AuthenticationMode"  

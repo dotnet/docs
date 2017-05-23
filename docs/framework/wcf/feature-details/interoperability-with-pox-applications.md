@@ -31,7 +31,6 @@ manager: "erikre"
        <httpTransport />  
    </binding>  
 </customBinding>  
-  
 ```  
   
  This custom binding contains two elements:  

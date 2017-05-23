@@ -29,7 +29,6 @@ Specifies a certificate used by a peer.
 ## Syntax  
   
 ```  
-  
 <certificate findValue = "String"   
 storeLocation = "CurrentUser/LocalMachine"  
 storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  

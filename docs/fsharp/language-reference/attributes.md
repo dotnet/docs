@@ -1,5 +1,5 @@
 ---
-title: Attributes (F#)
+title: Attributes (F#) | Microsoft Docs
 description: Attributes (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

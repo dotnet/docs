@@ -24,7 +24,6 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <webHttpEndpoint>           <standardEndpoint             automaticFormatSelectionEnabled="String"              defaultOutgoingResponseFormat="Xml/Json"             helpEnabled="Boolean"             webEndpointType="String"/>             </webHttpEndpoint>     </standardEndpoints>  
 </system.serviceModel>  

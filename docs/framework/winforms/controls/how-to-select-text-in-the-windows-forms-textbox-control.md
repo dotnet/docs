@@ -47,7 +47,6 @@ You can select text programmatically in the Windows Forms <xref:System.Windows.F
           TextBox1.SelectionLength = TextBox1.Text.Length  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -58,7 +57,6 @@ You can select text programmatically in the Windows Forms <xref:System.Windows.F
           textBox1.SelectionLength = textBox1.Text.Length;  
        }  
     }  
-  
     ```  
   
     ```cpp  

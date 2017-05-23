@@ -41,7 +41,6 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
           Me.AllowDrop = False  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -54,7 +53,6 @@ A Windows Forms <xref:System.Windows.Forms.CheckBox> control is used to give use
           this.AllowDrop = false;  
        }  
     }  
-  
     ```  
   
     ```cpp  

@@ -314,7 +314,6 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
         8  
       </netrm:BufferRemaining>  
     </wsrm:SequenceAcknowledgement>  
-  
     ```  
   
 -   B4003: [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses `netrm:BufferRemaining` to indicate how many new messages the Reliable Messaging Destination can buffer.  

@@ -27,7 +27,6 @@ Defines a binding for peer channel specific TCP messaging.
 ## Syntax  
   
 ```  
-  
 <netPeerBinding>  
     <binding name="string"  
          closeTimeout="TimeSpan"  

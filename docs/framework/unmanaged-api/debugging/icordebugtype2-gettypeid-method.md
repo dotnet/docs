@@ -34,11 +34,9 @@ Gets a [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typei
 ## Syntax  
   
 ```  
-  
 HRESULT GetTypeID(  
     ([out] COR_TYPEID *id  
 );  
-  
 ```  
   
 #### Parameters  

@@ -88,7 +88,6 @@ Specifies whether unhandled task exceptions should terminate a running process.
         <ThrowUnobservedTaskExceptions enabled="true"/>   
     </runtime>   
 </configuration>  
-  
 ```  
   
 ## Example  

@@ -30,7 +30,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="HtmlEncoder"/> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.Encodings.Web.HtmlEncoder"/> class.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -52,9 +52,9 @@
         <Parameter Name="settings" Type="System.Text.Encodings.Web.TextEncoderSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">Settings used to control how the created <see cref="HtmlEncoder"/> encodes, primarily which characters to encode.</param>
-        <summary>Creates a new instance of HtmlEncoder with provided settings.</summary>
-        <returns>A new instance of the <see cref="HtmlEncoder"/>.</returns>
+        <param name="settings">Settings that control how the <see cref="T:System.Text.Encodings.Web.HtmlEncoder"/> instance encodes, primarily which characters to encode.</param>
+        <summary>Creates a new instance of the HtmlEncoder class with the specified settings.</summary>
+        <returns>A new instance of the <see cref="T:System.Text.Encodings.Web.HtmlEncoder"/> class.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -82,13 +82,13 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="allowedRanges">Set of characters that the encoder is allowed to not encode.</param>
-        <summary>Creates a new instance of HtmlEncoder specifying characters to be encoded.</summary>
-        <returns>A new instance of the <see cref="HtmlEncoder"/></returns>
+        <param name="allowedRanges">The set of characters that the encoder is allowed to not encode.</param>
+        <summary>Creates a new instance of the HtmlEncoder class specifying characters to encode.</summary>
+        <returns>A new instance of the <see cref="T:System.Text.Encodings.Web.HtmlEncoder"/> class.</returns>
         <remarks><format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
- Some characters in <paramref name="allowedRanges"/> might still get encoded, i.e. this parameter is just telling the encoder what ranges it is allowed to not encode, not what characters it must not encode.  
+ Some characters in `allowedRanges` might still be encoded, that is, this parameter indicates what ranges the encoder is allowed to not encode, not what characters it must not encode.  
  ]]></format> 
         
         </remarks>
@@ -109,8 +109,8 @@
         <ReturnType>System.Text.Encodings.Web.HtmlEncoder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a default built-in instance of <see cref="HtmlEncoder"/>.</summary> 
-        <value>A <see cref="HtmlEncoder"/> object.</value>
+        <summary>Gets a default built-in instance of the <see cref="T:System.Text.Encodings.Web.HtmlEncoder"/> class.</summary> 
+        <value>A default built-in instance of the <see cref="T:System.Text.Encodings.Web.HtmlEncoder"/> class.</value>
         <remarks></remarks>
       </Docs>
     </Member>

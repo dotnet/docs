@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a filter which allows only certain Unicode code points through.</summary>
+    <summary>Represents a filter that allows only certain Unicode code points.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -49,8 +49,8 @@
         <Parameter Name="other" Type="System.Text.Encodings.Web.TextEncoderSettings" />
       </Parameters>
       <Docs>
-        <param name="other">The other <see cref="TextEncoderSettings"/> to be cloned.</param>
-        <summary>Instantiates the filter by cloning the allow list of another <see cref="TextEncoderSettings"/>.</summary>
+        <param name="other">The other <see cref="T:System.Text.Encodings.Web.TextEncoderSettings"/> object to be cloned.</param>
+        <summary>Instantiates the filter by cloning the allowed list of another <see cref="T:System.Text.Encodings.Web.TextEncoderSettings"/> object.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -223,7 +223,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets this settings object by disallowing all characters.</summary>
+        <summary>Resets this object by disallowing all characters.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -352,8 +352,8 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an enumeration of all allowed code points.</summary>
-        <returns>The enumeration of allowed code points.</returns>
+        <summary>Gets an enumerator of all allowed code points.</summary>
+        <returns>The enumerator of allowed code points.</returns>
         <remarks></remarks>
       </Docs>
     </Member>

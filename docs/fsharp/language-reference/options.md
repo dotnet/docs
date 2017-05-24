@@ -16,7 +16,6 @@ ms.assetid: a15b5cf1-9055-4481-918c-4c8a051b5829
 
 The option type in F# is used when an actual value might not exist for a named value or variable. An option has an underlying type and can hold a value of that type, or it might not have a value.
 
-
 ## Remarks
 The following code illustrates a function which generates an option type.
 

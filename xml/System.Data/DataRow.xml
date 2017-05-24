@@ -27,7 +27,7 @@
 ## Remarks  
  The <xref:System.Data.DataRow> and <xref:System.Data.DataColumn> objects are primary components of a <xref:System.Data.DataTable>. Use the <xref:System.Data.DataRow> object and its properties and methods to retrieve and evaluate; and insert, delete, and update the values in the <xref:System.Data.DataTable>. The <xref:System.Data.DataRowCollection> represents the actual <xref:System.Data.DataRow> objects in the <xref:System.Data.DataTable>, and the <xref:System.Data.DataColumnCollection> contains the <xref:System.Data.DataColumn> objects that describe the schema of the <xref:System.Data.DataTable>. Use the overloaded <xref:System.Data.DataRow.Item%2A> property to return or set the value of a <xref:System.Data.DataColumn>.  
   
- Use the <xref:System.Data.DataRow.HasVersion%2A> and <xref:System.Data.DataRow.IsNull%2A> properties to determine the status of a particular row value, and the <xref:System.Data.DataRow.RowState%2A> property to determine the state of the row relative to its parent <xref:System.Data.DataTable>.  
+ Use the <xref:System.Data.DataRow.HasVersion%2A> and <xref:System.Data.DataRow.IsNull%2A> properties to determine the status of a particular row value, and the <xref:System.Data.DataRow.RowState*> property to determine the state of the row relative to its parent <xref:System.Data.DataTable>.  
   
  To create a new <xref:System.Data.DataRow>, use the <xref:System.Data.DataTable.NewRow%2A> method of the <xref:System.Data.DataTable> object. After creating a new <xref:System.Data.DataRow>, use the <xref:System.Data.DataRowCollection.Add%2A> method to add the new <xref:System.Data.DataRow> to the <xref:System.Data.DataRowCollection>. Finally, call the <xref:System.Data.DataRow.AcceptChanges%2A> method of the <xref:System.Data.DataTable> object to confirm the addition. For more information about adding data to a <xref:System.Data.DataTable>, see [Adding Data to a DataTable](~/docs/framework/data/adonet/dataset-datatable-dataview/adding-data-to-a-datatable.md).  
   
@@ -101,7 +101,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When invoking <xref:System.Data.DataRow.AcceptChanges%2A>, the <xref:System.Data.DataRow.EndEdit%2A> method is implicitly called to end any edits. If the <xref:System.Data.DataRow.RowState%2A> of the row was Added or Modified, the <xref:System.Data.DataRow.RowState%2A> becomes Unchanged. If the <xref:System.Data.DataRow.RowState%2A> was Deleted, the row is removed.  
+ When invoking <xref:System.Data.DataRow.AcceptChanges%2A>, the <xref:System.Data.DataRow.EndEdit%2A> method is implicitly called to end any edits. If the <xref:System.Data.DataRow.RowState*> of the row was Added or Modified, the <xref:System.Data.DataRow.RowState*> becomes Unchanged. If the <xref:System.Data.DataRow.RowState*> was Deleted, the row is removed.  
   
  See the <xref:System.Data.DataRow.BeginEdit%2A> method for more information.  
   
@@ -110,7 +110,7 @@
    
   
 ## Examples  
- The following example first creates a new <xref:System.Data.DataTable> with one column, and then creates a single <xref:System.Data.DataRow>. As the <xref:System.Data.DataRow> is created, added, modified, and deleted, its <xref:System.Data.DataRow.RowState%2A> is printed.  
+ The following example first creates a new <xref:System.Data.DataTable> with one column, and then creates a single <xref:System.Data.DataRow>. As the <xref:System.Data.DataRow> is created, added, modified, and deleted, its <xref:System.Data.DataRow.RowState*> is printed.  
   
  [!code-csharp[Classic WebData DataRow.AcceptChanges Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.AcceptChanges Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataRow.AcceptChanges Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.AcceptChanges Example/VB/source.vb#1)]  
@@ -298,9 +298,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the <xref:System.Data.DataRow.RowState%2A> of the row is Added, the <xref:System.Data.DataRow.RowState%2A> becomes `Detached` and the row is removed from the table when you call <xref:System.Data.DataRow.AcceptChanges%2A>.  
+ If the <xref:System.Data.DataRow.RowState*> of the row is Added, the <xref:System.Data.DataRow.RowState*> becomes `Detached` and the row is removed from the table when you call <xref:System.Data.DataRow.AcceptChanges%2A>.  
   
- The <xref:System.Data.DataRow.RowState%2A> becomes `Deleted` after you use the <xref:System.Data.DataRow.Delete%2A> method on an existing <xref:System.Data.DataRow>. It remains `Deleted` until you call <xref:System.Data.DataRow.AcceptChanges%2A>. At this time, the <xref:System.Data.DataRow> is removed from the table.  
+ The <xref:System.Data.DataRow.RowState*> becomes `Deleted` after you use the <xref:System.Data.DataRow.Delete%2A> method on an existing <xref:System.Data.DataRow>. It remains `Deleted` until you call <xref:System.Data.DataRow.AcceptChanges%2A>. At this time, the <xref:System.Data.DataRow> is removed from the table.  
   
  <xref:System.Data.DataRow.Delete%2A> should not be called in a foreach loop while iterating through a <xref:System.Data.DataRowCollection> object. <xref:System.Data.DataRow.Delete%2A> modifies the state of the collection.  
   
@@ -501,7 +501,7 @@
   
  Use the <xref:System.Data.DataRow.HasVersion%2A> property to determine whether the <xref:System.Data.DataRowVersion> that you want exists.  
   
- If <xref:System.Data.DataRowVersion.Default> is specified, the version that is used depends on the <xref:System.Data.DataRow.RowState%2A> of the row on which `GetChildRows` is invoked. If the row on which `GetChildRows` is invoked has a `RowState` of `Modified`, `New`, or `Unchanged`, the <xref:System.Data.DataRowVersion.Current> version of the row is used for fetching related child rows with matching values in their Current versions. If the row on which `GetChildRows` is invoked has a `RowState` of `Deleted`, the <xref:System.Data.DataRowVersion.Original> version of the row is used for fetching related child rows with matching values in their original versions.  
+ If <xref:System.Data.DataRowVersion.Default> is specified, the version that is used depends on the <xref:System.Data.DataRow.RowState*> of the row on which `GetChildRows` is invoked. If the row on which `GetChildRows` is invoked has a `RowState` of `Modified`, `New`, or `Unchanged`, the <xref:System.Data.DataRowVersion.Current> version of the row is used for fetching related child rows with matching values in their Current versions. If the row on which `GetChildRows` is invoked has a `RowState` of `Deleted`, the <xref:System.Data.DataRowVersion.Original> version of the row is used for fetching related child rows with matching values in their original versions.  
   
    
   
@@ -557,7 +557,7 @@
   
  Use the <xref:System.Data.DataRow.HasVersion%2A> property to determine whether the <xref:System.Data.DataRowVersion> that you want exists.  
   
- If <xref:System.Data.DataRowVersion.Default> is specified, the version that is used depends on the <xref:System.Data.DataRow.RowState%2A> of the row on which `GetChildRows` is invoked. If the row on which `GetChildRows` is invoked has a `RowState` of `Modified`, `New`, or `Unchanged`, the <xref:System.Data.DataRowVersion.Current> version of the row is used for fetching related child rows with matching values in their Current versions. If the row on which `GetChildRows` is invoked has a `RowState` of `Deleted`, the <xref:System.Data.DataRowVersion.Original> version of the row is used for fetching related child rows with matching values in their original versions.  
+ If <xref:System.Data.DataRowVersion.Default> is specified, the version that is used depends on the <xref:System.Data.DataRow.RowState*> of the row on which `GetChildRows` is invoked. If the row on which `GetChildRows` is invoked has a `RowState` of `Modified`, `New`, or `Unchanged`, the <xref:System.Data.DataRowVersion.Current> version of the row is used for fetching related child rows with matching values in their Current versions. If the row on which `GetChildRows` is invoked has a `RowState` of `Deleted`, the <xref:System.Data.DataRowVersion.Original> version of the row is used for fetching related child rows with matching values in their original versions.  
   
  ]]></format>
         </remarks>
@@ -1623,7 +1623,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `version` should not be confused with the <xref:System.Data.DataRow.RowState%2A> property. The `version` argument describes the state of the data that is contained by the column relative to the column's original value.  
+ The `version` should not be confused with the <xref:System.Data.DataRow.RowState*> property. The `version` argument describes the state of the data that is contained by the column relative to the column's original value.  
   
  When you set the property, an exception is generated if an exception occurs in the <xref:System.Data.DataTable.ColumnChanging> event.  
   
@@ -1685,7 +1685,7 @@
   
  By contrast, the <xref:System.Data.DataRowVersion> enumeration `Current` returns the version of the data after the <xref:System.Data.DataRow.EndEdit%2A> method has been called.  
   
- The `version` argument should not be confused with the <xref:System.Data.DataRow.RowState%2A> property. The `version` argument describes the state of the data that is contained by the column relative to the column's original value. The <xref:System.Data.DataRow.RowState%2A> property describes the state of the whole row relative to its parent <xref:System.Data.DataTable>.  
+ The `version` argument should not be confused with the <xref:System.Data.DataRow.RowState*> property. The `version` argument describes the state of the data that is contained by the column relative to the column's original value. The <xref:System.Data.DataRow.RowState*> property describes the state of the whole row relative to its parent <xref:System.Data.DataTable>.  
   
  When you set the property, an exception is generated if an exception occurs in the <xref:System.Data.DataTable.ColumnChanging> event.  
   
@@ -1740,7 +1740,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The version should not be confused with the <xref:System.Data.DataRow.RowState%2A> property. The `version` argument describes the state of the data that is contained by the column relative to the column's original value. The <xref:System.Data.DataRow.RowState%2A> property describes the state of the whole row relative to its parent <xref:System.Data.DataTable>.  
+ The version should not be confused with the <xref:System.Data.DataRow.RowState*> property. The `version` argument describes the state of the data that is contained by the column relative to the column's original value. The <xref:System.Data.DataRow.RowState*> property describes the state of the whole row relative to its parent <xref:System.Data.DataTable>.  
   
  When you set the property, an exception is generated if an exception occurs in the <xref:System.Data.DataTable.ColumnChanging> event.  
   
@@ -1840,7 +1840,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you call the <xref:System.Data.DataRow.RejectChanges%2A> method, the <xref:System.Data.DataRow.CancelEdit%2A> method is implicitly called to cancel any edits. If <xref:System.Data.DataRow.RowState%2A> is deleted or modified, the row reverts to its previous values, and <xref:System.Data.DataRow.RowState%2A> becomes unchanged. If the <xref:System.Data.DataRow.RowState%2A> is added, the row is removed.  
+ When you call the <xref:System.Data.DataRow.RejectChanges%2A> method, the <xref:System.Data.DataRow.CancelEdit%2A> method is implicitly called to cancel any edits. If <xref:System.Data.DataRow.RowState*> is deleted or modified, the row reverts to its previous values, and <xref:System.Data.DataRow.RowState*> becomes unchanged. If the <xref:System.Data.DataRow.RowState*> is added, the row is removed.  
   
    
   
@@ -1925,12 +1925,12 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The value of the <xref:System.Data.DataRow.RowState%2A> depends on two factors: the kind of operation has been performed on the row, and whether <xref:System.Data.DataRow.AcceptChanges%2A> has been called on the <xref:System.Data.DataRow>.  
+ The value of the <xref:System.Data.DataRow.RowState*> depends on two factors: the kind of operation has been performed on the row, and whether <xref:System.Data.DataRow.AcceptChanges%2A> has been called on the <xref:System.Data.DataRow>.  
   
    
   
 ## Examples  
- The following example first creates a new <xref:System.Data.DataTable> with one column, and then creates a single <xref:System.Data.DataRow>. As the <xref:System.Data.DataRow> is created, added, modified, and deleted, its <xref:System.Data.DataRow.RowState%2A> is printed.  
+ The following example first creates a new <xref:System.Data.DataTable> with one column, and then creates a single <xref:System.Data.DataRow>. As the <xref:System.Data.DataRow> is created, added, modified, and deleted, its <xref:System.Data.DataRow.RowState*> is printed.  
   
  [!code-csharp[Classic WebData DataRow.RowState Example#1](~/samples/snippets/csharp/VS_Snippets_ADO.NET/Classic WebData DataRow.RowState Example/CS/source.cs#1)]
  [!code-vb[Classic WebData DataRow.RowState Example#1](~/samples/snippets/visualbasic/VS_Snippets_ADO.NET/Classic WebData DataRow.RowState Example/VB/source.vb#1)]  
@@ -1967,7 +1967,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Changes the <xref:System.Data.DataRow.RowState%2A> of a <xref:System.Data.DataRow> to `Added`. If the current row is not in either an `Unchanged` or an `Added` state, it throws an <xref:System.InvalidOperationException> with the message that `SetAdded` can only be invoked on a `DataRow` instance where the `RowState` is `Unchanged`.  
+ Changes the <xref:System.Data.DataRow.RowState*> of a <xref:System.Data.DataRow> to `Added`. If the current row is not in either an `Unchanged` or an `Added` state, it throws an <xref:System.InvalidOperationException> with the message that `SetAdded` can only be invoked on a `DataRow` instance where the `RowState` is `Unchanged`.  
   
  ]]></format>
         </remarks>
@@ -2177,7 +2177,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Changes the <xref:System.Data.DataRow.Rowstate%2A> of a <xref:System.Data.DataRow> to `Modified`. If the current row is not in either an `Unchanged` or an `Added` state, it throws an <xref:System.InvalidOperationException> with the message that `SetModified` can only be invoked on a `DataRow` instance where the `RowState` is `Unchanged`.  
+ Changes the <xref:System.Data.DataRow.RowState*> of a <xref:System.Data.DataRow> to `Modified`. If the current row is not in either an `Unchanged` or an `Added` state, it throws an <xref:System.InvalidOperationException> with the message that `SetModified` can only be invoked on a `DataRow` instance where the `RowState` is `Unchanged`.  
   
  ]]></format>
         </remarks>
@@ -2323,7 +2323,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Data.DataRow> does not necessarily belong to any table's collection of rows. This behavior occurs when the <xref:System.Data.DataRow> has been created but not added to the <xref:System.Data.DataRowCollection>. If the <xref:System.Data.DataRow.RowState%2A> property returns `DataRowState.Detached`, the row is not in any collection.  
+ A <xref:System.Data.DataRow> does not necessarily belong to any table's collection of rows. This behavior occurs when the <xref:System.Data.DataRow> has been created but not added to the <xref:System.Data.DataRowCollection>. If the <xref:System.Data.DataRow.RowState*> property returns `DataRowState.Detached`, the row is not in any collection.  
   
    
   

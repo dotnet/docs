@@ -160,7 +160,7 @@
 > [!NOTE]
 >  When you call the <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A> method during a `foreach` (C#) or `For Each` (Visual Basic) enumeration, Object Services tries to open a new data reader. This operation will fail unless you have enabled multiple active results sets by specifying `multipleactiveresultsets=true` in the connection string. You can also load the result of the query into a <xref:System.Collections.Generic.List%601> collection. This closes the data reader and enables you to enumerate over the collection to load referenced objects.  
   
- This method calls the <xref:System.Data.Objects.DataClasses.RelatedEnd.ValidateLoad%2A> method before loading the related object. See this method for a list of additional exceptions.  
+ This method calls the <xref:System.Data.Objects.DataClasses.RelatedEnd.Load*> method before loading the related object. See this method for a list of additional exceptions.  
   
  When the related object is already loaded in the <xref:System.Data.Objects.ObjectContext>, the <xref:System.Data.Objects.DataClasses.EntityReference%601.Load%2A> method enforces the <xref:System.Data.Objects.MergeOption> specified by the `mergeOption` parameter. For more information, see [Identity Resolution, State Management, and Change Tracking](http://msdn.microsoft.com/en-us/3bd49311-0e72-4ea4-8355-38fe57036ba0).  
   

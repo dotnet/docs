@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The `<securityTokenHandlerConfiguration>` element provides default configuration settings for the collection of security token handlers configured under a `<securityTokenHandlers>` element. The `<securityTokenHandlers>` element is represented by the <xref:System.IdentityModel.Configuration.SecurityTokenHandlerElement> class.  
+ The `<securityTokenHandlerConfiguration>` element provides default configuration settings for the collection of security token handlers configured under a `<securityTokenHandlers>` element. The `<securityTokenHandlers>` element is represented by the <xref:System.IdentityModel.Configuration.SecurityTokenHandlerElementCollection> class.  
   
  ]]></format>
     </remarks>

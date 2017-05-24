@@ -1093,7 +1093,7 @@
         <summary>Compares two instances of <see cref="T:System.Data.SqlTypes.SqlGuid" /> to determine whether the first is less than or equal to the second.</summary>
         <returns>A <see cref="T:System.Data.SqlTypes.SqlBoolean" /> that is <see cref="F:System.Data.SqlTypes.SqlBoolean.True" /> if the first instance is less than or equal to the second instance. Otherwise, <see cref="F:System.Data.SqlTypes.SqlBoolean.False" />. If either instance of <see cref="T:System.Data.SqlTypes.SqlGuid" /> is null, the <see cref="P:System.Data.SqlTypes.SqlBoolean.Value" /> of the <see cref="T:System.Data.SqlTypes.SqlBoolean" /> will be <see cref="F:System.Data.SqlTypes.SqlBoolean.Null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlGuid.LessThanOrEq%2A> ual(System.Data.SqlTypes.SqlGuid,System.Data.SqlTypes.SqlGuid)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlGuid.LessThanOrEqual*></format>
         </remarks>
       </Docs>
     </Member>
@@ -1186,7 +1186,7 @@
       </Parameters>
       <Docs>
         <param name="reader">
-          <see langword="XmlReader" />
+          <see langword="XmlReader " />
         </param>
         <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
@@ -1218,7 +1218,7 @@
       </Parameters>
       <Docs>
         <param name="writer">
-          <see langword="XmlWriter" />
+          <see langword="XmlWriter " />
         </param>
         <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>

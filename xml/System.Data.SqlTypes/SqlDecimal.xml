@@ -1223,7 +1223,7 @@
         <summary>The multiplication operator computes the product of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> parameters.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the product of the multiplication.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecim%2A> al.Multiply(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Multiply*></format>
         </remarks>
       </Docs>
     </Member>
@@ -1290,7 +1290,7 @@
         <ReturnType>System.Data.SqlTypes.SqlDecimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents a <see cref="T:System.DBNull" /> that can be assigned to this instance of the <see cref="T:System.Data.SqlTypes.SqlDecimal" /> class.</summary>
+        <summary>Represents a <see cref="T:System.DBNull" /> that can be assigned to this instance of the <see cref="T:System.Data.SqlTypes.SqlDecimal" />class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1336,7 +1336,7 @@
         <summary>Calculates the sum of the two <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operators.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the sum.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Syste%2A> m.Data.SqlTypes.SqlDecimal.Add(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Add*></format>
         </remarks>
       </Docs>
     </Member>
@@ -1375,7 +1375,7 @@
         <summary>The division operator calculates the results of dividing the first <see cref="T:System.Data.SqlTypes.SqlDecimal" /> operand by the second.</summary>
         <returns>A new <see cref="T:System.Data.SqlTypes.SqlDecimal" /> structure whose <see cref="P:System.Data.SqlTypes.SqlDecimal.Value" /> property contains the results of the division.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:Sy%2A> stem.Data.SqlTypes.SqlDecimal.Divide(System.Data.SqlTypes.SqlDecimal,System.Data.SqlTypes.SqlDecimal)?qualifyHint=True&autoUpgrade=False]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlDecimal.Divide*></format>
         </remarks>
       </Docs>
     </Member>
@@ -2478,7 +2478,7 @@
       </Parameters>
       <Docs>
         <param name="reader">
-          <see langword="XmlReader" />
+          <see langword="XmlReader " />
         </param>
         <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
@@ -2510,7 +2510,7 @@
       </Parameters>
       <Docs>
         <param name="writer">
-          <see langword="XmlWriter" />
+          <see langword="XmlWriter " />
         </param>
         <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>

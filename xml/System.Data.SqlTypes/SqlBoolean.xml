@@ -1529,7 +1529,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.op_Equality*></format>
         </remarks>
       </Docs>
     </Member>
@@ -1573,7 +1573,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.op_Equality*></format>
         </remarks>
       </Docs>
     </Member>
@@ -1691,7 +1691,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.op_Equality*></format>
         </remarks>
       </Docs>
     </Member>
@@ -1735,7 +1735,7 @@
 ## Remarks  
  If either instance of `x` or `y` is null, the value of the <xref:System.Data.SqlTypes.SqlBoolean> will be null.  
   
- The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.Compare%28System.Data.SqlTypes.SqlBoolean%2CSystem.Data.SqlTypes.SqlBoolean%29?displayProperty=fullName>]]></format>
+ The equivalent method for this operator is <xref:System.Data.SqlTypes.SqlBoolean.op_Equality*></format>
         </remarks>
       </Docs>
     </Member>
@@ -1974,7 +1974,7 @@
       </Parameters>
       <Docs>
         <param name="reader">
-          <see langword="XmlReader" />
+          <see langword="XmlReader " />
         </param>
         <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>
@@ -2006,7 +2006,7 @@
       </Parameters>
       <Docs>
         <param name="writer">
-          <see langword="XmlWriter" />
+          <see langword="XmlWriter " />
         </param>
         <summary>This member supports the .NET Framework infrastructure and is not intended to be used directly from your code.</summary>
         <remarks>To be added.</remarks>

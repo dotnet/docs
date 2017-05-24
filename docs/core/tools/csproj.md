@@ -71,7 +71,7 @@ With csproj, we recommend that you remove the default globs from your project an
 
 ## How to see the whole project as MSBuild sees it
 
-While those csproj changes greatly simplify project files, it is sometimes useful to be able to look at the fully expanded project as MSBuild sees it once the SDK and its targets are included. This can be done by simply typing the following in the command-line:
+While those csproj changes greatly simplify project files, it's sometimes useful to be able to look at the fully expanded project as MSBuild sees it once the SDK and its targets are included. Preprocess the project with the following command and switch, which shows which files are imported, their sources, and their contributions to the build without actually building the project:
 
 ```
 dotnet msbuild /pp

@@ -34,13 +34,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Automation.NoClickablePointException.#ctor
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Automation.NoClickablePointException.#ctor(System.String)
 author: "Xansky"
 ms.author: "mhopkins"

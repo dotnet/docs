@@ -38,10 +38,3 @@ uid: System.Windows.Media.Animation.DiscreteRectKeyFrame.InterpolateValueCore(Sy
 ms.author: "kempb"
 manager: "ghogen"
 ---
-
----
-uid: System.Windows.Media.Animation.DiscreteRectKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

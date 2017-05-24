@@ -82,13 +82,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.ArcSegment.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.ArcSegment.Size
 author: "stevehoag"
 ms.author: "shoag"

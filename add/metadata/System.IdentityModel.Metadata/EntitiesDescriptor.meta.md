@@ -29,12 +29,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.EntitiesDescriptor.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Metadata.EntitiesDescriptor.ChildEntityGroups
 ms.author: "v-jibran"
 manager: "markgal"

@@ -153,13 +153,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.RadioButtonArray.SystemColorsChanged
 author: "stevehoag"
 ms.author: "shoag"

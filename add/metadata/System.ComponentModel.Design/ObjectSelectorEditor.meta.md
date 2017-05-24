@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.ObjectSelectorEditor.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.ObjectSelectorEditor.EqualsToValue(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

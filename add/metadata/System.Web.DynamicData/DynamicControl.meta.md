@@ -107,12 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.DynamicControl.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.DynamicData.DynamicControl.NullDisplayText
 ms.author: "riande"
 manager: "wpickett"

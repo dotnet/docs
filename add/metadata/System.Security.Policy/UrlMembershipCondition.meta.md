@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.UrlMembershipCondition.ToXml
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.UrlMembershipCondition.ToString
 author: "mairaw"
 ms.author: "mairaw"

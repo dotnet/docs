@@ -551,13 +551,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.AxHost.ShowPropertyPages
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.AxHost.GetPictureFromIPictureDisp(System.Object)
 ms.author: "kempb"
 manager: "ghogen"
@@ -678,13 +671,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.AxHost.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.AxHost.RaiseOnMouseMove
 ms.author: "kempb"
 manager: "ghogen"
@@ -771,13 +757,6 @@ manager: "ghogen"
 
 ---
 uid: System.Windows.Forms.AxHost.ShowAboutBox
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.AxHost.System#ComponentModel#ICustomTypeDescriptor#GetEvents
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

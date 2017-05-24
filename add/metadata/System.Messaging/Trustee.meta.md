@@ -37,8 +37,3 @@ manager: "tyoung"
 uid: System.Messaging.Trustee.#ctor(System.String,System.String,System.Messaging.TrusteeType)
 manager: "tyoung"
 ---
-
----
-uid: System.Messaging.Trustee.#ctor
-manager: "tyoung"
----

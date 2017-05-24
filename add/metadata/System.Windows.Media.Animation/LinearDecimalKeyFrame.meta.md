@@ -26,13 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.LinearDecimalKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.LinearDecimalKeyFrame.CreateInstanceCore
 author: "stevehoag"
 ms.author: "shoag"

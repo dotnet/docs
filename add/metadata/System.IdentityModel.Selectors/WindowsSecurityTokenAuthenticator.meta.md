@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IdentityModel.Selectors.WindowsSecurityTokenAuthenticator.#ctor(System.Boolean)
 author: "Erikre"
 ms.author: "erikre"

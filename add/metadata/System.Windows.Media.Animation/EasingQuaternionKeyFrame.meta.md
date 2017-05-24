@@ -53,13 +53,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingQuaternionKeyFrame.EasingFunction
 ms.author: "kempb"
 manager: "ghogen"

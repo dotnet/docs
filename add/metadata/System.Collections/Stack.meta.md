@@ -97,13 +97,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Stack.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Stack.Peek
 author: "mairaw"
 ms.author: "mairaw"

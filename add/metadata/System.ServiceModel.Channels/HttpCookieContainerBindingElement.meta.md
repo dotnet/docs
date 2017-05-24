@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement.Clone
 author: "Erikre"
 ms.author: "erikre"

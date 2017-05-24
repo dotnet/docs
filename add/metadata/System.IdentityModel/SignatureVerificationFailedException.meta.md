@@ -27,9 +27,3 @@ uid: System.IdentityModel.SignatureVerificationFailedException.#ctor
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.SignatureVerificationFailedException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

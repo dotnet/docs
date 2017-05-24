@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetOutput
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor(System.Boolean,System.String)
 author: "mairaw"
 ms.author: "mairaw"
@@ -98,13 +91,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetOutput(System.Type)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

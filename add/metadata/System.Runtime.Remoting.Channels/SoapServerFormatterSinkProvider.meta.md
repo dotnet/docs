@@ -32,8 +32,3 @@ manager: "ghogen"
 uid: System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.TypeFilterLevel
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.#ctor
-manager: "ghogen"
----

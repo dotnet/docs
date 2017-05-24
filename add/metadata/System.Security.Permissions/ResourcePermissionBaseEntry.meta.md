@@ -32,10 +32,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Permissions.ResourcePermissionBaseEntry.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

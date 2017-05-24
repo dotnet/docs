@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Rss20ItemFormatter.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.Rss20ItemFormatter.WriteTo(System.Xml.XmlWriter)
 author: "Erikre"
 ms.author: "erikre"

@@ -117,9 +117,3 @@ uid: System.UriBuilder.Password
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.UriBuilder.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

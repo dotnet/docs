@@ -237,13 +237,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.Membership.GetUser
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.Membership.MinRequiredNonAlphanumericCharacters
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -266,13 +259,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Security.Membership.CreateUser
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.Membership.GetAllUsers
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

@@ -1812,13 +1812,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Linq.Expressions.Expression.#ctor
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-
----
 uid: System.Linq.Expressions.Expression.Block(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -2779,13 +2772,6 @@ manager: "wpickett"
 
 ---
 uid: System.Linq.Expressions.Expression.ModuloAssign(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-
----
-uid: System.Linq.Expressions.Expression.Label
 author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"

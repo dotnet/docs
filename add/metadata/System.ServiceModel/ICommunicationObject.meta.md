@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ICommunicationObject.Close
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.ICommunicationObject.Abort
 author: "Erikre"
 ms.author: "erikre"
@@ -140,13 +133,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.ICommunicationObject.Open
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

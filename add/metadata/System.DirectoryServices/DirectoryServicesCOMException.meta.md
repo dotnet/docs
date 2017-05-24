@@ -48,13 +48,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.DirectoryServicesCOMException.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.DirectoryServicesCOMException.#ctor(System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

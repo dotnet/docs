@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.ValueProviderResult.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.ValueProviderResult.ConvertTo(System.Type,System.Globalization.CultureInfo)
 author: "tdykstra"
 ms.author: "tdykstra"

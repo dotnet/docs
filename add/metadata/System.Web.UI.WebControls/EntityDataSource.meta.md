@@ -202,13 +202,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.EntityDataSource.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.EntityDataSource.Inserted
 author: "tdykstra"
 ms.author: "tdykstra"

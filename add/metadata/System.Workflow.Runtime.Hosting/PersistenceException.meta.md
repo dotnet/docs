@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Hosting.PersistenceException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.Hosting.PersistenceException.#ctor(System.String,System.Exception)
 author: "Erikre"
 ms.author: "erikre"

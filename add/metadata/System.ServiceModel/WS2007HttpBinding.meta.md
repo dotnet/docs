@@ -39,10 +39,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.WS2007HttpBinding.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

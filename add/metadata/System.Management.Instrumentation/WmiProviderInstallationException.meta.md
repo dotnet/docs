@@ -22,8 +22,3 @@ manager: "jillfra"
 uid: System.Management.Instrumentation.WmiProviderInstallationException.#ctor(System.String,System.Exception)
 manager: "jillfra"
 ---
-
----
-uid: System.Management.Instrumentation.WmiProviderInstallationException.#ctor
-manager: "jillfra"
----

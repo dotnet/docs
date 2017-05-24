@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.BadImageFormatException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.BadImageFormatException.#ctor(System.String,System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

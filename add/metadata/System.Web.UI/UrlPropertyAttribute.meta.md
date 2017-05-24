@@ -33,9 +33,3 @@ uid: System.Web.UI.UrlPropertyAttribute.#ctor(System.String)
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.UrlPropertyAttribute.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.ProfileAttribute.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.ProfileAttribute.#ctor(System.String)
 author: "tdykstra"
 ms.author: "tdykstra"

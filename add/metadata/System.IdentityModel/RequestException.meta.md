@@ -27,9 +27,3 @@ uid: System.IdentityModel.RequestException.#ctor(System.String,System.Exception)
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.RequestException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

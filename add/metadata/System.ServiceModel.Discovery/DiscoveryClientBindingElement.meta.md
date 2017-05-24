@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.DiscoveryClientBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.DiscoveryClientBindingElement.DiscoveryEndpointAddress
 author: "Erikre"
 ms.author: "erikre"

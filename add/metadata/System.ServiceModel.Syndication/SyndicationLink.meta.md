@@ -160,13 +160,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.SyndicationLink.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.SyndicationLink.CreateSelfLink(System.Uri)
 author: "Erikre"
 ms.author: "erikre"

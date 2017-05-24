@@ -113,13 +113,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ByteAnimation.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.ByteAnimation.IsCumulative
 ms.author: "kempb"
 manager: "ghogen"

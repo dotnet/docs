@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Brush.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Brush.SetNativeBrush(System.IntPtr)
 author: "stevehoag"
 ms.author: "shoag"

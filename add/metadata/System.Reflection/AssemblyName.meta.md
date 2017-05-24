@@ -167,13 +167,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.AssemblyName.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.AssemblyName.SetPublicKey(System.Byte[])
 author: "rpetrusha"
 ms.author: "ronpet"

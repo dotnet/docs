@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewSubItemEventArgs.DrawText
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DrawListViewSubItemEventArgs.DrawFocusRectangle(System.Drawing.Rectangle)
 ms.author: "kempb"
 manager: "ghogen"

@@ -112,12 +112,5 @@ uid: System.Collections.ObjectModel.KeyedCollection`2.Remove
 ---
 
 ---
-uid: System.Collections.ObjectModel.KeyedCollection`2.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.ObjectModel.KeyedCollection`2.Contains
 ---

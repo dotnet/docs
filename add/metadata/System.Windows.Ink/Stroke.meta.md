@@ -239,13 +239,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Ink.Stroke.GetGeometry
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Ink.Stroke.RemovePropertyData(System.Guid)
 ms.author: "kempb"
 manager: "ghogen"

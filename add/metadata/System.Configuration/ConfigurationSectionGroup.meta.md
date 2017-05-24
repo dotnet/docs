@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationSectionGroup.ForceDeclaration
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConfigurationSectionGroup.Name
 author: "tdykstra"
 ms.author: "tdykstra"

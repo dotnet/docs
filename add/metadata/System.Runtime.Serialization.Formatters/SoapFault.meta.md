@@ -14,11 +14,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Serialization.Formatters.SoapFault.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Serialization.Formatters.SoapFault.Detail
 manager: "ghogen"
 ---

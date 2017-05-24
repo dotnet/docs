@@ -377,13 +377,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewRowCollection.Add
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridViewRowCollection.List
 author: "stevehoag"
 ms.author: "shoag"

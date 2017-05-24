@@ -67,10 +67,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.CodeDom.Compiler.CompilerInfo.CreateProvider
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

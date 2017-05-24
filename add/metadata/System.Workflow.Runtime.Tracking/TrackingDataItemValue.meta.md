@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue.FieldName
 author: "Erikre"
 ms.author: "erikre"

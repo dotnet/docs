@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.NameValueCollection.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.NameValueCollection.Item(System.String)
 author: "mairaw"
 ms.author: "mairaw"

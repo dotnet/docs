@@ -155,12 +155,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.#ctor
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.Generic.ReverseRandomAccessIterator`1.valid
 ms.author: "mblome"
 manager: "ghogen"

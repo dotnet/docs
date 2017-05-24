@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Principal.WindowsIdentity.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Principal.WindowsIdentity.Name
 author: "mairaw"
 ms.author: "mairaw"
@@ -140,13 +133,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Principal.WindowsIdentity.DefaultIssuer
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Principal.WindowsIdentity.Impersonate
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -243,13 +229,6 @@ manager: "ghogen"
 
 ---
 uid: System.Security.Principal.WindowsIdentity.RunImpersonated(Microsoft.Win32.SafeHandles.SafeAccessTokenHandle,System.Action)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Principal.WindowsIdentity.GetCurrent
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

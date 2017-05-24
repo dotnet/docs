@@ -55,13 +55,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DBConcurrencyException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DBConcurrencyException.CopyToRows
 author: "JennieHubbard"
 ms.author: "jhubbard"

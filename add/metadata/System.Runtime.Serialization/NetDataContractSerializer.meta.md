@@ -214,13 +214,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.Serialization.NetDataContractSerializer.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.Serialization.NetDataContractSerializer.SurrogateSelector
 author: "Erikre"
 ms.author: "erikre"

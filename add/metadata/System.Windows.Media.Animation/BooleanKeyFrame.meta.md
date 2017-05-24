@@ -54,13 +54,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.BooleanKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.BooleanKeyFrame.ValueProperty
 author: "stevehoag"
 ms.author: "shoag"

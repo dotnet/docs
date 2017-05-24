@@ -29,12 +29,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpParseException.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpParseException.ParserErrors
 ms.author: "riande"
 manager: "wpickett"

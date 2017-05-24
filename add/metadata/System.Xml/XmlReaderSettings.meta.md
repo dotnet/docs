@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReaderSettings.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReaderSettings.NameTable
 author: "mairaw"
 ms.author: "mairaw"

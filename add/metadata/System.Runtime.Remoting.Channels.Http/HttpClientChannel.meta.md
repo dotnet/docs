@@ -29,11 +29,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Http.HttpClientChannel.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Http.HttpClientChannel.Item(System.Object)
 manager: "ghogen"
 ---

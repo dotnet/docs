@@ -238,13 +238,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.AssemblyBuilder.GlobalAssemblyCache
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.EndpointIdentityExtension.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.EndpointIdentityExtension.ProvideValue(System.IServiceProvider)
 author: "Erikre"
 ms.author: "erikre"

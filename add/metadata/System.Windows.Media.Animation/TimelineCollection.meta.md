@@ -143,13 +143,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.TimelineCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.TimelineCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.Animation.Timeline})
 author: "stevehoag"
 ms.author: "shoag"

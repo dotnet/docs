@@ -150,12 +150,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GlyphRun.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.GlyphRun.BuildGeometry
 ms.author: "kempb"
 manager: "ghogen"

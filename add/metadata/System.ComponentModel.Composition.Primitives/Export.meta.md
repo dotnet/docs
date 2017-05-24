@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Primitives.Export.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Primitives.Export.#ctor(System.String,System.Func{System.Object})
 author: "rpetrusha"
 ms.author: "ronpet"

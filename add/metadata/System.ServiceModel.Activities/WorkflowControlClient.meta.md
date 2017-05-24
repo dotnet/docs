@@ -447,13 +447,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activities.WorkflowControlClient.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Activities.WorkflowControlClient.BeginCancel(System.Guid,System.AsyncCallback,System.Object)
 author: "Erikre"
 ms.author: "erikre"

@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeCommentStatementCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeCommentStatementCollection.#ctor(System.CodeDom.CodeCommentStatement[])
 author: "rpetrusha"
 ms.author: "ronpet"

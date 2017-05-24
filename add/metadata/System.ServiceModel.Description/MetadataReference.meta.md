@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.MetadataReference.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.MetadataReference.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
 author: "Erikre"
 ms.author: "erikre"

@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "Erikre"
 ms.author: "erikre"

@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.IsolatedStorage.IsolatedStorageException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.IsolatedStorage.IsolatedStorageException.#ctor(System.String,System.Exception)
 author: "mairaw"
 ms.author: "mairaw"

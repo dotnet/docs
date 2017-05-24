@@ -41,12 +41,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Synthesis.PromptStyle.#ctor
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Synthesis.PromptStyle.#ctor(System.Speech.Synthesis.PromptRate)
 ms.author: "kbridge"
 manager: "ghogen"

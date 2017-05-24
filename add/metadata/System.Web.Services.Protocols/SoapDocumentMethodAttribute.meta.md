@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestNamespace
 author: "Erikre"
 ms.author: "erikre"

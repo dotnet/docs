@@ -133,13 +133,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.Design.Behavior.BehaviorService.Invalidate
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Design.Behavior.BehaviorService.Adorners
 author: "stevehoag"
 ms.author: "shoag"

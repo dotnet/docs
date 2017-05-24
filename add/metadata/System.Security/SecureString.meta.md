@@ -88,10 +88,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.SecureString.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

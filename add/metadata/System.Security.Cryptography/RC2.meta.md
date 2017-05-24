@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RC2.Create
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RC2.EffectiveKeySizeValue
 author: "mairaw"
 ms.author: "mairaw"

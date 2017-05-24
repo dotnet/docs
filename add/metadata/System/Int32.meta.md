@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Int32.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Int32.System#IConvertible#ToType(System.Type,System.IFormatProvider)
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -216,13 +216,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.ConstructorBuilder.GetILGenerator
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.ConstructorBuilder.InitLocals
 author: "rpetrusha"
 ms.author: "ronpet"

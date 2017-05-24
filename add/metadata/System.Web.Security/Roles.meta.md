@@ -160,13 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.Roles.GetRolesForUser
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.Roles.CookieProtectionValue
 author: "tdykstra"
 ms.author: "tdykstra"

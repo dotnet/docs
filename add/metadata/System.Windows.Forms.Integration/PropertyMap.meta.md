@@ -88,13 +88,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.Integration.PropertyMap.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Integration.PropertyMap.Clear
 author: "stevehoag"
 ms.author: "shoag"

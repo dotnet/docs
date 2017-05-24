@@ -24,11 +24,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementPath.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementPath.IsInstance
 manager: "jillfra"
 ---

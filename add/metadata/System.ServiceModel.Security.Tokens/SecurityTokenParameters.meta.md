@@ -90,13 +90,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientAuthentication
 author: "Erikre"
 ms.author: "erikre"

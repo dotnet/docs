@@ -39,10 +39,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

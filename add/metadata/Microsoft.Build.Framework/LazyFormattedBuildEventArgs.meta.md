@@ -23,12 +23,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.LazyFormattedBuildEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.LazyFormattedBuildEventArgs.#ctor(System.String,System.String,System.String)
 ms.author: "susanno"
 manager: "douge"

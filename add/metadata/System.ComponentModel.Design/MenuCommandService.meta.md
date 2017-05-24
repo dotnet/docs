@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.MenuCommandService.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.MenuCommandService.GetService(System.Type)
 author: "stevehoag"
 ms.author: "shoag"

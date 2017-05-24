@@ -39,10 +39,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Deployment.Application.DeploymentException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

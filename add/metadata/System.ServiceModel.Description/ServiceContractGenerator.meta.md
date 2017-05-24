@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.ServiceContractGenerator.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.ServiceContractGenerator.Options
 author: "Erikre"
 ms.author: "erikre"

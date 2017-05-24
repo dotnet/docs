@@ -179,13 +179,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.StreamWriter.WriteLineAsync
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.StreamWriter.WriteAsync(System.Char)
 author: "mairaw"
 ms.author: "mairaw"

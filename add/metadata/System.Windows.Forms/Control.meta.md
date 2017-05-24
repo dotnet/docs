@@ -1561,12 +1561,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Control.UpdateBounds
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.Control.AccessibilityNotifyClients
 author: "stevehoag"
 ms.author: "shoag"
@@ -1906,13 +1900,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Control.Invalidate
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Control.OnMove(System.EventArgs)
 author: "stevehoag"
 ms.author: "shoag"
@@ -2117,13 +2104,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.Control.PreviewKeyDown
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Control.#ctor
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -2368,13 +2348,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.Control.CreateHandle
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Control.PerformLayout
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

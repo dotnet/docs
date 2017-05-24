@@ -102,10 +102,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Channels.RequestContext.Close
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

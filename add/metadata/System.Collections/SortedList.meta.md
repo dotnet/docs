@@ -237,13 +237,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.SortedList.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.SortedList.CopyTo(System.Array,System.Int32)
 author: "mairaw"
 ms.author: "mairaw"

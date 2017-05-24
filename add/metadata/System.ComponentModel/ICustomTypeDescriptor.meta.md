@@ -88,17 +88,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.ICustomTypeDescriptor.GetEvents
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.ICustomTypeDescriptor.GetProperties
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

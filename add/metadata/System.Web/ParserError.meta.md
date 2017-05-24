@@ -23,12 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ParserError.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.ParserError.Line
 ms.author: "riande"
 manager: "wpickett"

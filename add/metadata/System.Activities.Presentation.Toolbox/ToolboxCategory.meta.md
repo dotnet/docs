@@ -139,13 +139,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.Toolbox.ToolboxCategory.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.Toolbox.ToolboxCategory.System#Collections#IList#RemoveAt(System.Int32)
 author: "Erikre"
 ms.author: "erikre"

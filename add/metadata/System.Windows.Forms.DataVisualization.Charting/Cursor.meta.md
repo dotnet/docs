@@ -135,9 +135,3 @@ uid: System.Windows.Forms.DataVisualization.Charting.Cursor.AutoScroll
 ms.author: "mblythe"
 manager: "mblythe"
 ---
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Cursor.Dispose
-ms.author: "mblythe"
-manager: "mblythe"
----

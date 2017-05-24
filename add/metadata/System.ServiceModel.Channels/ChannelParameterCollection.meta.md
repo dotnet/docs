@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.ChannelParameterCollection.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.ChannelParameterCollection.SetItem(System.Int32,System.Object)
 author: "Erikre"
 ms.author: "erikre"

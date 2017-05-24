@@ -53,19 +53,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.EventProvider.Dispose
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.EventProvider.WriteTransferEvent
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.EventProvider.IsEnabled
 ms.author: "jgalasyn"
 manager: "ghogen"
 ---

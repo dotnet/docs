@@ -35,12 +35,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.WSFederationSerializer.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.WSFederationSerializer.GetReferencedResult(System.String)
 ms.author: "v-jibran"
 manager: "markgal"

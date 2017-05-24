@@ -27,9 +27,3 @@ uid: System.Diagnostics.Eventing.Reader.EventLogReadingException.#ctor(System.Ru
 ms.author: "jgalasyn"
 manager: "ghogen"
 ---
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogReadingException.#ctor
-ms.author: "jgalasyn"
-manager: "ghogen"
----

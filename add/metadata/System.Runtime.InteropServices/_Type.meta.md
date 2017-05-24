@@ -230,13 +230,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Type.GetFields
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -524,13 +517,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Type.GetEvents
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Type.IsNestedFamANDAssem
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -573,13 +559,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Type.GetConstructors
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Type.IsValueType
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -595,13 +574,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._Type.AssemblyQualifiedName
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Type.GetMembers
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -693,20 +665,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._Type.GetMethods(System.Reflection.BindingFlags)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Type.GetNestedTypes
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Type.GetMethods
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -882,13 +840,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._Type.GetProperty(System.String,System.Type,System.Type[],System.Reflection.ParameterModifier[])
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Type.GetProperties
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

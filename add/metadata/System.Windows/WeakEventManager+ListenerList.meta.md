@@ -103,13 +103,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.WeakEventManager.ListenerList.PrepareForWriting(System.Windows.WeakEventManager.ListenerList@)
 ms.author: "kempb"
 manager: "ghogen"

@@ -353,12 +353,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.WSFederationAuthenticationModule.SignIn(System.String)
 ms.author: "v-jibran"
 manager: "markgal"

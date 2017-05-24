@@ -81,13 +81,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.TextEffect.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.TextEffect.#ctor(System.Windows.Media.Transform,System.Windows.Media.Brush,System.Windows.Media.Geometry,System.Int32,System.Int32)
 author: "stevehoag"
 ms.author: "shoag"

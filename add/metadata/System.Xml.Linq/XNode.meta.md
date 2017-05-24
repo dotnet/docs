@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XNode.ElementsAfterSelf
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XNode.ReplaceWith
 author: "mairaw"
 ms.author: "mairaw"
@@ -167,13 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XNode.ToString
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XNode.ElementsBeforeSelf
 author: "mairaw"
 ms.author: "mairaw"
@@ -237,28 +223,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XNode.ElementsBeforeSelf
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XNode.CompareDocumentOrder(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XNode.Ancestors
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XNode.CreateReader
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

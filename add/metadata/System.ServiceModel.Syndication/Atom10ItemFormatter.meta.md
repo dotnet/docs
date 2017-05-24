@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.Atom10ItemFormatter.CanRead(System.Xml.XmlReader)
 author: "Erikre"
 ms.author: "erikre"

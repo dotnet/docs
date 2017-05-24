@@ -66,13 +66,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Rotation3DKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.KeyTimeProperty
 author: "stevehoag"
 ms.author: "shoag"

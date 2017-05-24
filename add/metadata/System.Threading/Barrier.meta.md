@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Barrier.SignalAndWait
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Barrier.#ctor(System.Int32,System.Action{System.Threading.Barrier})
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -133,13 +126,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.Barrier.SignalAndWait(System.Threading.CancellationToken)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Barrier.Dispose
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

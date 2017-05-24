@@ -125,13 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.SqlDataSource.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.SqlDataSource.LoadViewState(System.Object)
 author: "tdykstra"
 ms.author: "tdykstra"

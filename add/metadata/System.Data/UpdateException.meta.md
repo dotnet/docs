@@ -20,13 +20,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.UpdateException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.UpdateException.#ctor(System.String)
 author: "JennieHubbard"
 ms.author: "jhubbard"

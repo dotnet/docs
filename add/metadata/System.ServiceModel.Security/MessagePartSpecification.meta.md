@@ -57,8 +57,3 @@ manager: "ghogen"
 uid: System.ServiceModel.Security.MessagePartSpecification.#ctor
 manager: "ghogen"
 ---
-
----
-uid: System.ServiceModel.Security.MessagePartSpecification.#ctor
-manager: "ghogen"
----

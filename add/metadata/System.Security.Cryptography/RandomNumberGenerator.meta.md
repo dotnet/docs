@@ -41,21 +41,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RandomNumberGenerator.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RandomNumberGenerator.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.RandomNumberGenerator.Create
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

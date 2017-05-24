@@ -22,8 +22,3 @@ manager: "martinek"
 uid: System.Device.Location.GeoPosition`1.Location
 manager: "martinek"
 ---
-
----
-uid: System.Device.Location.GeoPosition`1.#ctor
-manager: "martinek"
----

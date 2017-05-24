@@ -88,10 +88,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Policy.SiteMembershipCondition.ToXml
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

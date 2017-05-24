@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.PrinterSettings.CreateMeasurementGraphics
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Printing.PrinterSettings.PrintToFile
 author: "stevehoag"
 ms.author: "shoag"
@@ -147,13 +140,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Printing.PrinterSettings.IsDefaultPrinter
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Printing.PrinterSettings.GetHdevmode
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

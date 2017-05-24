@@ -55,13 +55,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Odbc.OdbcCommand.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Odbc.OdbcCommand.Transaction
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -84,13 +77,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Odbc.OdbcCommand.CommandType
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Odbc.OdbcCommand.ExecuteReader
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

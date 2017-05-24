@@ -55,13 +55,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Services.DataServiceException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Services.DataServiceException.MessageLanguage
 author: "JennieHubbard"
 ms.author: "jhubbard"

@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.LicenseProviderAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.LicenseProviderAttribute.GetHashCode
 author: "stevehoag"
 ms.author: "shoag"

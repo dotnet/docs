@@ -475,13 +475,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.TimeSpan.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.TimeSpan.Equals(System.TimeSpan)
 author: "rpetrusha"
 ms.author: "ronpet"

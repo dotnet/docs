@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.Compiler.ValidationErrorCollection.ToArray
 author: "Erikre"
 ms.author: "erikre"

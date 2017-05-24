@@ -24,11 +24,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor(System.Type)
 manager: "martinek"
 ---

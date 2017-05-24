@@ -24,11 +24,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.Next
 manager: "ghogen"
 ---

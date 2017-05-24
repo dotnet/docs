@@ -67,10 +67,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.Composition.Primitives.ContractBasedImportDefinition.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

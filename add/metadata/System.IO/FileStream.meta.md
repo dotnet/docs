@@ -39,13 +39,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileStream.Flush
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileStream.GetAccessControl
 author: "mairaw"
 ms.author: "mairaw"

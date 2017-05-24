@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Schema.XmlSchemaValidationException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Schema.XmlSchemaValidationException.SetSourceObject(System.Object)
 author: "mairaw"
 ms.author: "mairaw"

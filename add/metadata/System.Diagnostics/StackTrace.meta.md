@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.StackTrace.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.StackTrace.ToString
 author: "mairaw"
 ms.author: "mairaw"

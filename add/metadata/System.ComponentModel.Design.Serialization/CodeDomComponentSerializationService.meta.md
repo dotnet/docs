@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.Deserialize(System.ComponentModel.Design.Serialization.SerializationStore)
 author: "stevehoag"
 ms.author: "shoag"

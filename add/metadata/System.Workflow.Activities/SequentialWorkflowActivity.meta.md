@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.SequentialWorkflowActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.SequentialWorkflowActivity.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

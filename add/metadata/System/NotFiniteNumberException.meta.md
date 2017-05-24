@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.NotFiniteNumberException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.NotFiniteNumberException.OffendingNumber
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Reflection.CallingConventions,System.Type)
 author: "rpetrusha"
 ms.author: "ronpet"

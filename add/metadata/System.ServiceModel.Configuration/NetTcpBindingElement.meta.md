@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.NetTcpBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.NetTcpBindingElement.Properties
 author: "Erikre"
 ms.author: "erikre"

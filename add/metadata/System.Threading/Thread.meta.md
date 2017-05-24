@@ -391,13 +391,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Thread.Abort
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Thread.#ctor(System.Threading.ThreadStart)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -489,21 +482,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Thread.Join
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Thread.VolatileWrite(System.Int16@,System.Int16)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Thread.Start
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

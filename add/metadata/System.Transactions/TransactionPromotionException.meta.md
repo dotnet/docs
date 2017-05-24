@@ -22,8 +22,3 @@ manager: "ghogen"
 uid: System.Transactions.TransactionPromotionException.#ctor(System.String)
 manager: "ghogen"
 ---
-
----
-uid: System.Transactions.TransactionPromotionException.#ctor
-manager: "ghogen"
----

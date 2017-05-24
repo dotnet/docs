@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.ExternalDataExchangeService.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.ExternalDataExchangeService.#ctor(System.Workflow.Activities.ExternalDataExchangeServiceSection)
 author: "Erikre"
 ms.author: "erikre"

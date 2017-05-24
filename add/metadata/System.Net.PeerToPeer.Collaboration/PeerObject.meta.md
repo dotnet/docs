@@ -47,12 +47,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.PeerToPeer.Collaboration.PeerObject.SynchronizingObject
 ms.author: "bobdel"
 manager: "markl"
@@ -84,12 +78,6 @@ manager: "markl"
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerObject.Dispose(System.Boolean)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerObject.#ctor
 ms.author: "bobdel"
 manager: "markl"
 ---

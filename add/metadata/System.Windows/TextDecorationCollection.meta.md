@@ -161,13 +161,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.TextDecorationCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.TextDecorationCollection.Insert(System.Int32,System.Windows.TextDecoration)
 author: "stevehoag"
 ms.author: "shoag"

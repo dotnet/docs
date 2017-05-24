@@ -61,13 +61,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.BitmapCacheBrush.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.BitmapCacheBrush.Clone
 author: "stevehoag"
 ms.author: "shoag"

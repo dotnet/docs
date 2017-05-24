@@ -25,10 +25,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Activities.ReceiveParametersContent.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

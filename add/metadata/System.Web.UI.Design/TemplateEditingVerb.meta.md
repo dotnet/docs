@@ -41,12 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.TemplateEditingVerb.Dispose
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.TemplateEditingVerb.#ctor(System.String,System.Int32)
 ms.author: "riande"
 manager: "wpickett"

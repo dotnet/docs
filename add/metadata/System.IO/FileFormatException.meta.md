@@ -74,10 +74,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.IO.FileFormatException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

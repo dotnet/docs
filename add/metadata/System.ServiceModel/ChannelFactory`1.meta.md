@@ -174,13 +174,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ChannelFactory`1.CreateChannel
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress,System.Uri)
 author: "Erikre"
 ms.author: "erikre"
@@ -196,13 +189,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.ChannelFactory`1.CreateChannel(System.ServiceModel.EndpointAddress)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.ChannelFactory`1.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

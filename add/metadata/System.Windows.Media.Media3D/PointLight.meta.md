@@ -26,13 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.PointLight.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.PointLight.CloneCurrentValue
 author: "stevehoag"
 ms.author: "shoag"

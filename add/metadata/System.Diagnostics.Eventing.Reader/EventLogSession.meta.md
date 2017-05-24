@@ -35,12 +35,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogSession.Dispose
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.ClearLog(System.String,System.String)
 ms.author: "jgalasyn"
 manager: "ghogen"
@@ -108,12 +102,6 @@ manager: "ghogen"
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogSession.ExportLogAndMessages
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogSession.#ctor
 ms.author: "jgalasyn"
 manager: "ghogen"
 ---

@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlElementAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlElementAttribute.ElementName
 author: "Erikre"
 ms.author: "erikre"

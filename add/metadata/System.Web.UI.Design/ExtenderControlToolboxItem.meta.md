@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ExtenderControlToolboxItem.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.ExtenderControlToolboxItem.#ctor(System.Type)
 author: "tdykstra"
 ms.author: "tdykstra"

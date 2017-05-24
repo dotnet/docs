@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlReflectionImporter.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(System.Type,System.Xml.Serialization.XmlRootAttribute,System.String)
 author: "Erikre"
 ms.author: "erikre"

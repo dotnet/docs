@@ -615,13 +615,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.DateTime.GetDateTimeFormats
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.DateTime.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -756,13 +749,6 @@ manager: "wpickett"
 
 ---
 uid: System.DateTime.Parse(System.String)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.DateTime.ToString
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

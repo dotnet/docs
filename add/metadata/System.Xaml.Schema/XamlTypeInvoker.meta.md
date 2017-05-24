@@ -54,11 +54,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlTypeInvoker.#ctor
-manager: "martinek"
----
-
----
 uid: System.Xaml.Schema.XamlTypeInvoker.SetTypeConverterHandler
 manager: "martinek"
 ---

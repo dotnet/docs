@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1.GetSchema
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.VersionCD1.EndpointDiscoveryMetadataCD1.GetSchema(System.Xml.Schema.XmlSchemaSet)
 author: "Erikre"
 ms.author: "erikre"

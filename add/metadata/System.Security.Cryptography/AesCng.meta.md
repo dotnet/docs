@@ -83,27 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AesCng.CreateDecryptor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AesCng.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AesCng.CreateEncryptor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.AesCng.#ctor(System.String,System.Security.Cryptography.CngProvider)
 author: "mairaw"
 ms.author: "mairaw"

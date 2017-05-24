@@ -41,13 +41,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleCommandBuilder.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -56,13 +49,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
@@ -97,13 +83,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleCommandBuilder.SchemaSeparator
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -126,13 +105,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand(System.Boolean)
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

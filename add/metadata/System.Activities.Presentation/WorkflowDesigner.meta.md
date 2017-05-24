@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.WorkflowDesigner.Load
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.WorkflowDesigner.PropertyInspectorFontAndColorData
 author: "Erikre"
 ms.author: "erikre"

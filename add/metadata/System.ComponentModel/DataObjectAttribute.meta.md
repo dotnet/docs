@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DataObjectAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DataObjectAttribute.IsDefaultAttribute
 author: "stevehoag"
 ms.author: "shoag"

@@ -209,13 +209,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.GraphicsPath.GetBounds
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Drawing2D.GraphicsPath.AddBezier(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
 author: "stevehoag"
 ms.author: "shoag"
@@ -538,13 +531,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.GraphicsPath.Flatten
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Drawing2D.GraphicsPath.IsVisible(System.Drawing.Point,System.Drawing.Graphics)
 author: "stevehoag"
 ms.author: "shoag"
@@ -595,13 +581,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Drawing2D.GraphicsPath.Warp(System.Drawing.PointF[],System.Drawing.RectangleF,System.Drawing.Drawing2D.Matrix,System.Drawing.Drawing2D.WarpMode,System.Single)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Drawing2D.GraphicsPath.#ctor
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

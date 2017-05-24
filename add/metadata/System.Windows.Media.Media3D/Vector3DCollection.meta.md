@@ -114,20 +114,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Vector3DCollection.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.Vector3DCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.Vector3DCollection.System#Collections#ICollection#IsSynchronized
 ms.author: "jimwalk"
 manager: "martinek"

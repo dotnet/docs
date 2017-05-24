@@ -111,13 +111,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleConnection.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleConnection.ClearPool(System.Data.OracleClient.OracleConnection)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -153,21 +146,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleConnection.BeginTransaction
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleConnection.InfoMessage
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OracleClient.OracleConnection.GetSchema
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

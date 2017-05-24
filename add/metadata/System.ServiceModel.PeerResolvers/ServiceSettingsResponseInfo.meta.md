@@ -23,12 +23,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo.#ctor
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo.ControlMeshShape
 ms.author: "bobdel"
 manager: "ghogen"

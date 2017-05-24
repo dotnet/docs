@@ -195,13 +195,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Enum.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Enum.GetHashCode
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -423,13 +423,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.TabControl.GetItems
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.TabControl.ForeColor
 author: "stevehoag"
 ms.author: "shoag"

@@ -263,12 +263,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Utilities.ToolLocationHelper.GetTargetPlatformSdks
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Utilities.ToolLocationHelper.GetSDKDesignTimeFolders(System.String,System.String,System.String)
 ms.author: "susanno"
 manager: "douge"

@@ -97,13 +97,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.SafeHandle.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices.SafeHandle.Finalize
 author: "rpetrusha"
 ms.author: "ronpet"

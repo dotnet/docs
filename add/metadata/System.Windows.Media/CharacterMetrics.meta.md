@@ -68,13 +68,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.CharacterMetrics.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.CharacterMetrics.GetHashCode
 author: "stevehoag"
 ms.author: "shoag"

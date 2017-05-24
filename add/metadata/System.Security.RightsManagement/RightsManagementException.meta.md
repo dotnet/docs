@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.RightsManagement.RightsManagementException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Security.RightsManagement.RightsManagementException.#ctor(System.String)
 author: "stevehoag"
 ms.author: "shoag"

@@ -101,12 +101,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityToken.DelegateTo
 ms.author: "v-jibran"
 manager: "markgal"

@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.DivideByZeroException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.DivideByZeroException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "rpetrusha"
 ms.author: "ronpet"

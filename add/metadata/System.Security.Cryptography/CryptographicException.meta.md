@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.CryptographicException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.CryptographicException.#ctor(System.String)
 author: "mairaw"
 ms.author: "mairaw"

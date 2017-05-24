@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ContainerControl.ValidateChildren
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ContainerControl.Dispose
 manager: "ghogen"
 ---
@@ -161,13 +154,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.ContainerControl.ParentForm
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ContainerControl.Validate
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

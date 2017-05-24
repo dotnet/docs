@@ -39,11 +39,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Device.Location.IGeoPositionWatcher`1.Start
-manager: "martinek"
----
-
----
 uid: System.Device.Location.IGeoPositionWatcher`1.Status
 manager: "martinek"
 ---

@@ -69,26 +69,11 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageEnumerator.RemoveCurrent
-manager: "tyoung"
----
-
----
-uid: System.Messaging.MessageEnumerator.Dispose
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageEnumerator.MoveNext(System.TimeSpan)
 manager: "tyoung"
 ---
 
 ---
 uid: System.Messaging.MessageEnumerator.Dispose(System.Boolean)
-manager: "tyoung"
----
-
----
-uid: System.Messaging.MessageEnumerator.MoveNext
 manager: "tyoung"
 ---

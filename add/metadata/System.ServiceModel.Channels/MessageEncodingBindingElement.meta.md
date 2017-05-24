@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.MessageEncodingBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory
 author: "Erikre"
 ms.author: "erikre"

@@ -67,10 +67,3 @@ author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
 ---
-
----
-uid: System.Data.Objects.ObjectSet`1.CreateObject
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----

@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.MenuCommand.Invoke
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.MenuCommand.Invoke(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

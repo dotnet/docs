@@ -223,13 +223,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Linq.DataContext.SubmitChanges
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Linq.DataContext.Refresh(System.Data.Linq.RefreshMode,System.Object)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -294,13 +287,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Linq.DataContext.ExecuteQuery
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Linq.DataContext.Dispose
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

@@ -153,13 +153,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataRowView.CancelEdit
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -245,13 +238,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetEvents
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

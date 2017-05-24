@@ -94,11 +94,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Device.Location.GeoCoordinate.#ctor
-manager: "martinek"
----
-
----
 uid: System.Device.Location.GeoCoordinate.op_Equality(System.Device.Location.GeoCoordinate,System.Device.Location.GeoCoordinate)
 manager: "martinek"
 ---

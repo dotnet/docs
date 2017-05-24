@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.TypeDescriptionProvider.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)
 author: "stevehoag"
 ms.author: "shoag"

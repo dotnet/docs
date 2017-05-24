@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Principal.IdentityNotMappedException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Principal.IdentityNotMappedException.UnmappedIdentities
 author: "mairaw"
 ms.author: "mairaw"

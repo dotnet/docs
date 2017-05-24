@@ -132,13 +132,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.CompareInfo.GetHashCode
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Globalization.CompareInfo.IsSortable(System.Char)
 author: "rpetrusha"
 ms.author: "ronpet"

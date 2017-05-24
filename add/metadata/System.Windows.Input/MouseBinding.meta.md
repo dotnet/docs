@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.MouseBinding.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.MouseBinding.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
 author: "stevehoag"
 ms.author: "shoag"

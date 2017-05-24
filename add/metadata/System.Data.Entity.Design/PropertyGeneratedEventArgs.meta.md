@@ -55,13 +55,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalSetStatements
 author: "JennieHubbard"
 ms.author: "jhubbard"

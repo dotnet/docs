@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.IChannelListener`1.AcceptChannel
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.IChannelListener`1.EndAcceptChannel(System.IAsyncResult)
 author: "Erikre"
 ms.author: "erikre"

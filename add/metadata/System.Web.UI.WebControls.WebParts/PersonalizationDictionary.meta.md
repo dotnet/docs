@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.PersonalizationDictionary.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.PersonalizationDictionary.System#Collections#IDictionary#Remove(System.Object)
 author: "tdykstra"
 ms.author: "tdykstra"

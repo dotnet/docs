@@ -167,12 +167,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.BorderWidth
 ms.author: "mblythe"
 manager: "mblythe"

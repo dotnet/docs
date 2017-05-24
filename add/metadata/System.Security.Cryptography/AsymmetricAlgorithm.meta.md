@@ -62,21 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AsymmetricAlgorithm.Create
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

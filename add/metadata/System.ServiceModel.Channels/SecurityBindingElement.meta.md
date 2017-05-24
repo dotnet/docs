@@ -202,13 +202,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateCertificateOverTransportBindingElement
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.SecurityBindingElement.CreateUserNameForSslBindingElement
 author: "Erikre"
 ms.author: "erikre"
@@ -238,13 +231,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Channels.SecurityBindingElement.OptionalOperationSupportingTokenParameters
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationOverTransportBindingElement
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -349,20 +335,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateDuplexBindingElement
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateBindingElement
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement(System.ServiceModel.Channels.SecurityBindingElement,System.Boolean,System.ServiceModel.Security.ChannelProtectionRequirements)
 author: "Erikre"
 ms.author: "erikre"
@@ -406,20 +378,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenForCertificateBindingElement(System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateUserNameForSslBindingElement
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

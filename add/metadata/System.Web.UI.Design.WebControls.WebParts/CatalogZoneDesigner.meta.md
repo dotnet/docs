@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetDesignTimeHtml
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.WebParts.CatalogZoneDesigner.GetEmptyDesignTimeHtml
 author: "tdykstra"
 ms.author: "tdykstra"

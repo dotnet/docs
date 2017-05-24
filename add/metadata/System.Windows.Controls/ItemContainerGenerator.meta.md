@@ -129,13 +129,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#GenerateNext
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.ItemContainerGenerator.ContainerFromItem(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

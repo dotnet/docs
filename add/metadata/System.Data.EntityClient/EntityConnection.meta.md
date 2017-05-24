@@ -83,13 +83,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityConnection.BeginTransaction
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityClient.EntityConnection.ChangeDatabase(System.String)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -126,13 +119,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.EntityClient.EntityConnection.Close
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityClient.EntityConnection.#ctor
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

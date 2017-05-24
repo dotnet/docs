@@ -27,21 +27,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.HostExecutionContext.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.HostExecutionContext.CreateCopy
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.HostExecutionContext.Dispose
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

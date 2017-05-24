@@ -93,9 +93,3 @@ uid: System.IdentityModel.Tokens.WindowsSecurityToken.Dispose
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Tokens.WindowsSecurityToken.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

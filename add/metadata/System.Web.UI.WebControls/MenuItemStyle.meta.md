@@ -51,9 +51,3 @@ uid: System.Web.UI.WebControls.MenuItemStyle.CopyFrom(System.Web.UI.WebControls.
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.WebControls.MenuItemStyle.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

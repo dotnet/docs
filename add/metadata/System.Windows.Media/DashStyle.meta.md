@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.DashStyle.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.DashStyle.#ctor(System.Collections.Generic.IEnumerable{System.Double},System.Double)
 author: "stevehoag"
 ms.author: "shoag"

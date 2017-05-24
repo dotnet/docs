@@ -97,13 +97,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.UndoEngine.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.UndoEngine.Undoing
 author: "stevehoag"
 ms.author: "shoag"

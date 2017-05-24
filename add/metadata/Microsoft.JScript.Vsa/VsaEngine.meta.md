@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.JScript.Vsa.VsaEngine.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: Microsoft.JScript.Vsa.VsaEngine.RegisterEventSource(System.String)
 author: "mairaw"
 ms.author: "mairaw"

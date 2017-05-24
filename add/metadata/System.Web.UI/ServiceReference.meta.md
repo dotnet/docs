@@ -29,12 +29,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.ServiceReference.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.ServiceReference.#ctor(System.String)
 ms.author: "riande"
 manager: "wpickett"

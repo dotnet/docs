@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueueCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintQueueCollection.GetEnumerator
 author: "stevehoag"
 ms.author: "shoag"

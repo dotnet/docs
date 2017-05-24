@@ -118,13 +118,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleLob.Erase
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleLob.Null
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -189,13 +182,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OracleClient.OracleLob.IsNull
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OracleClient.OracleLob.BeginBatch
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

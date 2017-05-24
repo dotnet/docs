@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeParameterCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTypeParameterCollection.AddRange
 author: "rpetrusha"
 ms.author: "ronpet"

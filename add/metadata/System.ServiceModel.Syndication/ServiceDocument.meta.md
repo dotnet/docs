@@ -116,13 +116,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.ServiceDocument.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.ServiceDocument.GetFormatter
 author: "Erikre"
 ms.author: "erikre"

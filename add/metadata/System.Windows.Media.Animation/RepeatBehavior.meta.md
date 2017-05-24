@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.RepeatBehavior.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.RepeatBehavior.HasCount
 author: "stevehoag"
 ms.author: "shoag"

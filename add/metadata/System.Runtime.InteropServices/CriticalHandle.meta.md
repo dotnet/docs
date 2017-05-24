@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.CriticalHandle.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices.CriticalHandle.Close
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -200,13 +200,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.Serialization.DesignerSerializationManager.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#ReportError(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

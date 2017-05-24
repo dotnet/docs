@@ -174,13 +174,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Hashtable.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Hashtable.KeyEquals(System.Object,System.Object)
 author: "mairaw"
 ms.author: "mairaw"

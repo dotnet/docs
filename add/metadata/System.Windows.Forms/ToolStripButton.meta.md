@@ -100,13 +100,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripButton.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripButton.CheckState
 author: "stevehoag"
 ms.author: "shoag"

@@ -76,20 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetEvents
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Statements.Interop.System#ComponentModel#ICustomTypeDescriptor#GetClassName
 author: "Erikre"
 ms.author: "erikre"

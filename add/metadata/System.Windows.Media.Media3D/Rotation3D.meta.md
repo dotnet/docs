@@ -26,13 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Rotation3D.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.Rotation3D.System#IFormattable#ToString(System.String,System.IFormatProvider)
 author: "stevehoag"
 ms.author: "shoag"

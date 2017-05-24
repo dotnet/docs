@@ -19,11 +19,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.NamespaceMapEntry.#ctor
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.NamespaceMapEntry.ClrNamespace
 manager: "martinek"
 ---

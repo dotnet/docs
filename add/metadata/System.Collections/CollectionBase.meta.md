@@ -188,13 +188,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.CollectionBase.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.CollectionBase.#ctor(System.Int32)
 author: "mairaw"
 ms.author: "mairaw"

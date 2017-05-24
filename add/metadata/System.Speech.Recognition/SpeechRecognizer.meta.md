@@ -95,12 +95,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate(System.Object,System.TimeSpan)
 ms.author: "kbridge"
 manager: "ghogen"
@@ -222,12 +216,6 @@ manager: "ghogen"
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.Dispose
 ms.author: "kbridge"
 manager: "ghogen"
 ---

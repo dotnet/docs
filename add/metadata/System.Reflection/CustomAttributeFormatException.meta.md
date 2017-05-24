@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.CustomAttributeFormatException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.CustomAttributeFormatException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

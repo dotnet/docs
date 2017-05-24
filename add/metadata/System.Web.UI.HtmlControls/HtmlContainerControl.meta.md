@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.HtmlControls.HtmlContainerControl.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.HtmlControls.HtmlContainerControl.InnerHtml
 author: "tdykstra"
 ms.author: "tdykstra"

@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.DecoderFallbackException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.DecoderFallbackException.Index
 author: "rpetrusha"
 ms.author: "ronpet"

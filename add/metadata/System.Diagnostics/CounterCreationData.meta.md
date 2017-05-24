@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.CounterCreationData.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.CounterCreationData.CounterType
 author: "mairaw"
 ms.author: "mairaw"

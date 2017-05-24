@@ -72,8 +72,3 @@ manager: "jillfra"
 uid: System.Management.RelationshipQuery.RelationshipClass
 manager: "jillfra"
 ---
-
----
-uid: System.Management.RelationshipQuery.#ctor
-manager: "jillfra"
----

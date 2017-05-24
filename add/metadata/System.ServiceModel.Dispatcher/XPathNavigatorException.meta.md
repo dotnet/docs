@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Dispatcher.XPathNavigatorException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Dispatcher.XPathNavigatorException.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

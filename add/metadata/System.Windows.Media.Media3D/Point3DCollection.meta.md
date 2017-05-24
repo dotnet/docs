@@ -198,13 +198,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Point3DCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.Point3DCollection.System#Collections#Generic#ICollection{System#Windows#Media#Media3D#Point3D}#IsReadOnly
 ms.author: "jimwalk"
 manager: "martinek"

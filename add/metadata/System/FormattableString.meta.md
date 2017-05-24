@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.FormattableString.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.FormattableString.GetArgument(System.Int32)
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -46,10 +46,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Discovery.VersionApril2005.EndpointDiscoveryMetadataApril2005.GetSchema
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

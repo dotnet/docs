@@ -46,10 +46,3 @@ author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.ModelBinding.QueryStringAttribute.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----

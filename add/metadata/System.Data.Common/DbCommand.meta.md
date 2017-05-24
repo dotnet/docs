@@ -83,21 +83,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbCommand.System#Data#IDbCommand#ExecuteReader
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbCommand.ExecuteReaderAsync
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbCommand.ExecuteNonQueryAsync
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
@@ -160,13 +146,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbCommand.ExecuteReaderAsync
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbCommand.ExecuteScalarAsync
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -182,20 +161,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbCommand.CommandTimeout
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbCommand.ExecuteScalarAsync
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbCommand.ExecuteReader
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

@@ -111,13 +111,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.UdpBinding.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.UdpBinding.MaxPendingMessagesTotalSize
 author: "Erikre"
 ms.author: "erikre"

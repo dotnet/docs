@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstanceKeyCollisionException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.DurableInstancing.InstanceKeyCollisionException.InstanceKey
 author: "Erikre"
 ms.author: "erikre"

@@ -17,8 +17,3 @@ manager: "martinek"
 uid: System.Windows.Markup.ContentPropertyAttribute.Name
 manager: "martinek"
 ---
-
----
-uid: System.Windows.Markup.ContentPropertyAttribute.#ctor
-manager: "martinek"
----

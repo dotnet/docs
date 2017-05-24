@@ -203,12 +203,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.MetadataSerializer.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Metadata.MetadataSerializer.WriteContactPerson(System.Xml.XmlWriter,System.IdentityModel.Metadata.ContactPerson)
 ms.author: "v-jibran"
 manager: "markgal"

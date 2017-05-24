@@ -179,13 +179,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileSystemWatcher.Filter
 author: "mairaw"
 ms.author: "mairaw"

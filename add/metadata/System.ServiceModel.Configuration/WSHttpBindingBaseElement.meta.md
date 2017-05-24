@@ -97,13 +97,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WSHttpBindingBaseElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.WSHttpBindingBaseElement.TransactionFlow
 author: "Erikre"
 ms.author: "erikre"

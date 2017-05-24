@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeMethodReferenceExpression.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeMethodReferenceExpression.TargetObject
 author: "rpetrusha"
 ms.author: "ronpet"

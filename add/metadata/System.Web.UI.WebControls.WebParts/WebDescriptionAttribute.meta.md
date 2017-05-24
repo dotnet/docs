@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.GetHashCode
 author: "tdykstra"
 ms.author: "tdykstra"

@@ -125,13 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.DSACryptoServiceProvider.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.DSACryptoServiceProvider.VerifySignature(System.Byte[],System.Byte[])
 author: "mairaw"
 ms.author: "mairaw"

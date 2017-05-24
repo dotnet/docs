@@ -237,13 +237,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.HttpTransportBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.HttpTransportBindingElement.MaxBufferSize
 author: "Erikre"
 ms.author: "erikre"

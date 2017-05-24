@@ -29,12 +29,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.#ctor
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SrgsGrammar.SrgsNameValueTag.#ctor(System.Object)
 ms.author: "kbridge"
 manager: "ghogen"

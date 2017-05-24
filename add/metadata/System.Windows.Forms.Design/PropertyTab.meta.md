@@ -94,13 +94,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Design.PropertyTab.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Design.PropertyTab.GetProperties(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

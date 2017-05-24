@@ -233,9 +233,3 @@ uid: System.IdentityModel.DelegatingXmlDictionaryWriter.WriteCData(System.String
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.DelegatingXmlDictionaryWriter.WriteStartDocument
-ms.author: "v-jibran"
-manager: "markgal"
----

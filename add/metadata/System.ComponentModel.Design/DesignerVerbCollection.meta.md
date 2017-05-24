@@ -111,13 +111,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.DesignerVerbCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.DesignerVerbCollection.Contains(System.ComponentModel.Design.DesignerVerb)
 author: "stevehoag"
 ms.author: "shoag"

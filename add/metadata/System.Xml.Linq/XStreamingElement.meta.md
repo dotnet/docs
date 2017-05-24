@@ -104,13 +104,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.ToString
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XStreamingElement.#ctor
 author: "mairaw"
 ms.author: "mairaw"

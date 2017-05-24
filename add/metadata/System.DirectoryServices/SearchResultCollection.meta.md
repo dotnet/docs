@@ -102,10 +102,3 @@ author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
 ---
-
----
-uid: System.DirectoryServices.SearchResultCollection.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----

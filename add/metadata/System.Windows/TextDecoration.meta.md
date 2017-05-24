@@ -45,13 +45,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.TextDecoration.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.TextDecoration.Clone
 author: "stevehoag"
 ms.author: "shoag"

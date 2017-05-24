@@ -35,12 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.String,System.Exception)
 ms.author: "riande"
 manager: "wpickett"

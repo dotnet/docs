@@ -65,13 +65,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SingleKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SingleKeyFrame.KeyTimeProperty
 author: "stevehoag"
 ms.author: "shoag"

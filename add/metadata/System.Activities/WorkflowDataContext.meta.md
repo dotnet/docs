@@ -25,10 +25,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Activities.WorkflowDataContext.GetProperties
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

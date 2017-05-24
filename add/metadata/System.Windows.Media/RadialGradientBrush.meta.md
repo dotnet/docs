@@ -40,13 +40,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.RadialGradientBrush.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.RadialGradientBrush.GradientOrigin
 author: "stevehoag"
 ms.author: "shoag"

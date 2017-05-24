@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.PageSettings.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Printing.PageSettings.SetHdevmode(System.IntPtr)
 author: "stevehoag"
 ms.author: "shoag"

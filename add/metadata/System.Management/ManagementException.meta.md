@@ -37,8 +37,3 @@ manager: "jillfra"
 uid: System.Management.ManagementException.#ctor(System.String)
 manager: "jillfra"
 ---
-
----
-uid: System.Management.ManagementException.#ctor
-manager: "jillfra"
----

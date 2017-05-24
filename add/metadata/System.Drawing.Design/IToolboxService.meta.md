@@ -209,13 +209,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Design.IToolboxService.GetSelectedToolboxItem
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Design.IToolboxService.DeserializeToolboxItem(System.Object)
 author: "stevehoag"
 ms.author: "shoag"
@@ -252,13 +245,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Design.IToolboxService.SerializeToolboxItem(System.Drawing.Design.ToolboxItem)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Design.IToolboxService.GetToolboxItems
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

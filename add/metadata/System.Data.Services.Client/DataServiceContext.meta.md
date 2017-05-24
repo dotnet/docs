@@ -342,13 +342,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Services.Client.DataServiceContext.SaveChanges
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Services.Client.DataServiceContext.AddObject(System.String,System.Object)
 author: "JennieHubbard"
 ms.author: "jhubbard"

@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.op_Inequality(System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl,System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl)
 author: "Erikre"
 ms.author: "erikre"
@@ -98,13 +91,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.IsPersistable
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetBookmarks
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -217,13 +203,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.ScheduleBookmarkResumption(System.Activities.Bookmark,System.Object,System.Activities.BookmarkScope)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

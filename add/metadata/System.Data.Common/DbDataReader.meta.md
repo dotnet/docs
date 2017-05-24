@@ -265,13 +265,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbDataReader.Dispose
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbDataReader.RecordsAffected
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -384,13 +377,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbDataReader.NextResultAsync
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbDataReader.GetTextReader(System.Int32)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -399,13 +385,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbDataReader.Read
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbDataReader.ReadAsync
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

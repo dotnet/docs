@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.ServiceContainer.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.ServiceContainer.AddService
 author: "stevehoag"
 ms.author: "shoag"
@@ -98,13 +91,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Design.ServiceContainer.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.ServiceContainer.#ctor
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.ChannelListenerBase`1.AcceptChannel
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.ChannelListenerBase`1.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)
 author: "Erikre"
 ms.author: "erikre"
@@ -84,13 +77,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase`1.EndAcceptChannel(System.IAsyncResult)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.ChannelListenerBase`1.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

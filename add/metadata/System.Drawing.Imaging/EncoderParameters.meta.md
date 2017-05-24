@@ -32,10 +32,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Drawing.Imaging.EncoderParameters.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

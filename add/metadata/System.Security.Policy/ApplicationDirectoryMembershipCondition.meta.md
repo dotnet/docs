@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.ToXml
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.#ctor
 author: "mairaw"
 ms.author: "mairaw"

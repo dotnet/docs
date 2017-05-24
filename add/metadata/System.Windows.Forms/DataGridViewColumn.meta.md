@@ -166,13 +166,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewColumn.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridViewColumn.CellTemplate
 author: "stevehoag"
 ms.author: "shoag"

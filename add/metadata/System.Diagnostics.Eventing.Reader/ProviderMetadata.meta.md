@@ -65,12 +65,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Dispose
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.MessageFilePath
 ms.author: "jgalasyn"
 manager: "ghogen"

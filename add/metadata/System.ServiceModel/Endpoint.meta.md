@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Endpoint.GetAddress
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Endpoint.Name
 author: "Erikre"
 ms.author: "erikre"

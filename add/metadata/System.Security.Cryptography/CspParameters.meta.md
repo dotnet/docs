@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.CspParameters.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.CspParameters.#ctor(System.Int32,System.String,System.String)
 author: "mairaw"
 ms.author: "mairaw"

@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeAttributeArgumentCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeAttributeArgumentCollection.Contains(System.CodeDom.CodeAttributeArgument)
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeBinaryOperatorExpression.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeBinaryOperatorExpression.Operator
 author: "rpetrusha"
 ms.author: "ronpet"

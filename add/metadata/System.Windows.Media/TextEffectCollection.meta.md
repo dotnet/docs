@@ -201,13 +201,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.TextEffectCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.TextEffectCollection.System#Collections#IList#Insert(System.Int32,System.Object)
 ms.author: "kempb"
 manager: "ghogen"

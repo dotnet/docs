@@ -104,13 +104,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.HashMembershipCondition.ToXml
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.HashMembershipCondition.Copy
 author: "mairaw"
 ms.author: "mairaw"

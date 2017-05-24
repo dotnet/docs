@@ -139,20 +139,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.WaitHandle.WaitOne
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.WaitHandle.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.WaitHandle.Handle
 author: "rpetrusha"
 ms.author: "ronpet"

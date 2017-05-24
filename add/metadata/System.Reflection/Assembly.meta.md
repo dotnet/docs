@@ -412,13 +412,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Assembly.GetModules
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Assembly.SecurityRuleSet
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -504,13 +497,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.Assembly.LoadFile
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Assembly.GetFiles
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -615,13 +601,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Assembly.GetLoadedModules
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Assembly.GetCustomAttributesData
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -679,13 +658,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.Assembly.GetFiles(System.Boolean)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Assembly.GetName
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

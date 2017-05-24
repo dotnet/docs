@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RSAPKCS1KeyExchangeDeformatter.RNG
 author: "mairaw"
 ms.author: "mairaw"

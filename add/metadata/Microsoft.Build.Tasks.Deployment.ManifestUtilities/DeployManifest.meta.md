@@ -223,13 +223,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.DeployManifest.UpdateEnabled
 author: "stevehoag"
 ms.author: "shoag"

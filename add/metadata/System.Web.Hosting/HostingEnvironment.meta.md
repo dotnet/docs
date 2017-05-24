@@ -59,12 +59,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Hosting.HostingEnvironment.SetCultures
-ms.author: "robmcm"
-manager: "wpickett"
----
-
----
 uid: System.Web.Hosting.HostingEnvironment.SiteName
 ms.author: "robmcm"
 manager: "wpickett"
@@ -199,12 +193,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Hosting.HostingEnvironment.IsHosted
-ms.author: "robmcm"
-manager: "wpickett"
----
-
----
-uid: System.Web.Hosting.HostingEnvironment.Impersonate
 ms.author: "robmcm"
 manager: "wpickett"
 ---

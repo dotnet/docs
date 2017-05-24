@@ -23,12 +23,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor(System.String,System.Exception)
 ms.author: "v-jibran"
 manager: "markgal"

@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.StreamUpgradeProvider.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.StreamUpgradeProvider.CreateUpgradeAcceptor
 author: "Erikre"
 ms.author: "erikre"

@@ -11,12 +11,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.DictationGrammar.#ctor
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.DictationGrammar.#ctor(System.String)
 ms.author: "kbridge"
 manager: "ghogen"

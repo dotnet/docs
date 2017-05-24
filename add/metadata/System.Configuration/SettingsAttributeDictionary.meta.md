@@ -15,9 +15,3 @@ uid: System.Configuration.SettingsAttributeDictionary.#ctor(System.Configuration
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Configuration.SettingsAttributeDictionary.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

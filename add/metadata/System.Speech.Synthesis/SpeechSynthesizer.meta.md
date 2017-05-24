@@ -209,12 +209,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Synthesis.SpeechSynthesizer.State
 ms.author: "kbridge"
 manager: "ghogen"

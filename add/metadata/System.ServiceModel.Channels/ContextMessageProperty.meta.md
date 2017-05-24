@@ -81,10 +81,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Channels.ContextMessageProperty.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

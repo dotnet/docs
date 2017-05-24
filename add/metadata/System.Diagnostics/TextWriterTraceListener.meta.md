@@ -74,13 +74,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.TextWriterTraceListener.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.TextWriterTraceListener.Dispose
 manager: "ghogen"
 ---

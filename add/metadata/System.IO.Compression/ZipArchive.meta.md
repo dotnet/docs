@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Compression.ZipArchive.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.Compression.ZipArchive.Mode
 author: "mairaw"
 ms.author: "mairaw"

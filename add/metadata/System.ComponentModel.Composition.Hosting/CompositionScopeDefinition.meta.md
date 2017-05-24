@@ -87,13 +87,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionScopeDefinition.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.CompositionScopeDefinition.Children
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.SafeArrayTypeMismatchException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices.SafeArrayTypeMismatchException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "rpetrusha"
 ms.author: "ronpet"

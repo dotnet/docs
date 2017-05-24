@@ -291,13 +291,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Region.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Region.Intersect(System.Drawing.Region)
 author: "stevehoag"
 ms.author: "shoag"

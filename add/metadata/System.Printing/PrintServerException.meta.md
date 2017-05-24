@@ -26,13 +26,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Printing.PrintServerException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintServerException.ServerName
 author: "stevehoag"
 ms.author: "shoag"

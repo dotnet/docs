@@ -19,11 +19,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.Reference.#ctor
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.Reference.#ctor(System.String)
 manager: "martinek"
 ---

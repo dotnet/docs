@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.UpdateFileInfo
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.#ctor
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -119,13 +112,6 @@ manager: "wpickett"
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.Validate
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.ResolveFiles
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

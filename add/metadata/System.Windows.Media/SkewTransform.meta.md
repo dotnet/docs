@@ -73,13 +73,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.SkewTransform.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.SkewTransform.AngleX
 ms.author: "kempb"
 manager: "ghogen"

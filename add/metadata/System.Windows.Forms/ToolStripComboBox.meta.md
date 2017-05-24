@@ -241,13 +241,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripComboBox.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripComboBox.Sorted
 author: "stevehoag"
 ms.author: "shoag"

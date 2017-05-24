@@ -426,13 +426,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.RegularExpressions.Regex.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.RegularExpressions.Regex.IsMatch(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -39,10 +39,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Activities.Expressions.ArgumentValue`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

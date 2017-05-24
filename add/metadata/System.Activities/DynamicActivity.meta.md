@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DynamicActivity.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DynamicActivity.Constraints
 author: "Erikre"
 ms.author: "erikre"
@@ -126,13 +119,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.DynamicActivity.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.DynamicActivity.System#ComponentModel#ICustomTypeDescriptor#GetEvents
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

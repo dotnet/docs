@@ -69,21 +69,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OleDb.OleDbCommandBuilder.DataAdapter
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OleDb.OleDbCommandBuilder.#ctor
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
@@ -126,20 +112,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OleDb.OleDbCommandBuilder.GetInsertCommand(System.Boolean)
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OleDb.OleDbCommandBuilder.GetDeleteCommand
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OleDb.OleDbCommandBuilder.GetUpdateCommand
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

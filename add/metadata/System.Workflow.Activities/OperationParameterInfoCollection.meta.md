@@ -264,10 +264,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.OperationParameterInfoCollection.System#Collections#Generic#ICollection{System#Workflow#Activities#OperationParameterInfo}#IsReadOnly
----
-
----
 uid: System.Workflow.Activities.OperationParameterInfoCollection.System#Collections#IList#Insert(System.Int32,System.Object)
 author: "Erikre"
 ms.author: "erikre"
@@ -276,13 +272,6 @@ manager: "erikre"
 
 ---
 uid: System.Workflow.Activities.OperationParameterInfoCollection.Item(System.String)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.OperationParameterInfoCollection.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

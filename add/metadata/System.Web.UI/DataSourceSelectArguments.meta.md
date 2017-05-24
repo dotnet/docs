@@ -53,12 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataSourceSelectArguments.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.DataSourceSelectArguments.#ctor(System.Int32,System.Int32)
 ms.author: "riande"
 manager: "wpickett"

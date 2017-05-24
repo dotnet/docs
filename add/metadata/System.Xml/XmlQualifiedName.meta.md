@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlQualifiedName.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlQualifiedName.ToString(System.String,System.String)
 author: "mairaw"
 ms.author: "mairaw"
@@ -77,13 +70,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlQualifiedName.#ctor(System.String,System.String)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlQualifiedName.ToString
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

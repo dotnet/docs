@@ -89,19 +89,7 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.DataPointCollection.FindMaxByValue
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.DataPointCollection.FindByValue(System.Double,System.String,System.Int32)
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.DataPointCollection.FindMinByValue
 ms.author: "mblythe"
 manager: "mblythe"
 ---

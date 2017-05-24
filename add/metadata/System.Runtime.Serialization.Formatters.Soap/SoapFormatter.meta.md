@@ -83,12 +83,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.#ctor
-ms.author: "sethm"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.AssemblyFormat
 ms.author: "sethm"
 manager: "ghogen"

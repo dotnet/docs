@@ -45,13 +45,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GlyphRunDrawing.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.GlyphRunDrawing.GlyphRun
 author: "stevehoag"
 ms.author: "shoag"

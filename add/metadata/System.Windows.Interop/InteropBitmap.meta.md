@@ -17,10 +17,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Windows.Interop.InteropBitmap.Invalidate
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

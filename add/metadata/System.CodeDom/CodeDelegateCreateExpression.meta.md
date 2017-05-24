@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeDelegateCreateExpression.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeDelegateCreateExpression.MethodName
 author: "rpetrusha"
 ms.author: "ronpet"

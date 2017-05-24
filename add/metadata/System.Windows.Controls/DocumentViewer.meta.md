@@ -356,13 +356,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Controls.DocumentViewer.OnFitToMaxPagesAcrossCommand
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.DocumentViewer.ScrollPageUp
 author: "stevehoag"
 ms.author: "shoag"
@@ -462,13 +455,6 @@ manager: "ghogen"
 uid: System.Windows.Controls.DocumentViewer.ViewThumbnailsCommand
 ms.author: "kempb"
 manager: "ghogen"
----
-
----
-uid: System.Windows.Controls.DocumentViewer.FitToMaxPagesAcross
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
 ---
 
 ---

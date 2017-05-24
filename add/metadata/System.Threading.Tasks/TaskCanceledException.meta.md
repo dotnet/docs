@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskCanceledException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.TaskCanceledException.Task
 author: "rpetrusha"
 ms.author: "ronpet"

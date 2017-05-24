@@ -47,12 +47,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.ProfileParameter.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.ProfileParameter.#ctor(System.String,System.String)
 ms.author: "riande"
 manager: "wpickett"

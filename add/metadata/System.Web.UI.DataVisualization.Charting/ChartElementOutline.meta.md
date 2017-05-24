@@ -11,12 +11,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartElementOutline.Dispose
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.ChartElementOutline.OutlinePath
 ms.author: "mblythe"
 manager: "mblythe"

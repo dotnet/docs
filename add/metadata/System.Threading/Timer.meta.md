@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Timer.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.Int64,System.Int64)
 author: "rpetrusha"
 ms.author: "ronpet"

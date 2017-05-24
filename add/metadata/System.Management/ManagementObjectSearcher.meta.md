@@ -59,16 +59,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementObjectSearcher.Get
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementObjectSearcher.Get(System.Management.ManagementOperationObserver)
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementObjectSearcher.#ctor
 manager: "jillfra"
 ---

@@ -19,11 +19,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.EventWatcherOptions.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.EventWatcherOptions.Clone
 manager: "jillfra"
 ---

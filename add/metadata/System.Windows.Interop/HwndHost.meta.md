@@ -169,13 +169,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Interop.HwndHost.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Interop.HwndHost.Finalize
 ms.author: "kempb"
 manager: "ghogen"

@@ -29,12 +29,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.Choices.#ctor
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.Choices.Add(System.String[])
 ms.author: "kbridge"
 manager: "ghogen"

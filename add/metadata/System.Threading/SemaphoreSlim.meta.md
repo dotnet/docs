@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.SemaphoreSlim.Wait
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.SemaphoreSlim.CurrentCount
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -139,20 +132,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.SemaphoreSlim.Release
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.SemaphoreSlim.WaitAsync
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.SemaphoreSlim.WaitAsync(System.TimeSpan,System.Threading.CancellationToken)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -168,13 +147,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.SemaphoreSlim.Release(System.Int32)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.SemaphoreSlim.Dispose
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

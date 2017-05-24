@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Packaging.PackagePart.GetStream
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode,System.IO.FileAccess)
 author: "stevehoag"
 ms.author: "shoag"

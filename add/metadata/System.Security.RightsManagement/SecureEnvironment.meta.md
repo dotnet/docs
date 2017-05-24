@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.RightsManagement.SecureEnvironment.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Security.RightsManagement.SecureEnvironment.IsUserActivated(System.Security.RightsManagement.ContentUser)
 author: "stevehoag"
 ms.author: "shoag"

@@ -221,10 +221,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.AppDomainSetup.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

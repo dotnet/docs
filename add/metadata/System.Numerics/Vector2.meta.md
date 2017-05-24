@@ -244,13 +244,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Numerics.Vector2.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Numerics.Vector2.Transform
 author: "rpetrusha"
 ms.author: "ronpet"

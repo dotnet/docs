@@ -153,13 +153,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlConnectionStringBuilder.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlConnectionStringBuilder.ApplicationIntent
 author: "JennieHubbard"
 ms.author: "jhubbard"

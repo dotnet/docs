@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.VerificationException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.VerificationException.#ctor(System.String)
 author: "mairaw"
 ms.author: "mairaw"

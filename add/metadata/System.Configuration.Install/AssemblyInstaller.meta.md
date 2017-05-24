@@ -95,10 +95,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Configuration.Install.AssemblyInstaller.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

@@ -67,10 +67,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.HostProtectionException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

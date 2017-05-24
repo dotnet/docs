@@ -95,13 +95,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.ScaleTransform.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.ScaleTransform.CenterXProperty
 author: "stevehoag"
 ms.author: "shoag"

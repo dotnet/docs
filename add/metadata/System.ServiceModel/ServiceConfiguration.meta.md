@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ServiceConfiguration.LoadFromConfiguration
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.ServiceConfiguration.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.Uri)
 author: "Erikre"
 ms.author: "erikre"

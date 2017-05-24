@@ -990,13 +990,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Page.Validate
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control)
 author: "tdykstra"
 ms.author: "tdykstra"

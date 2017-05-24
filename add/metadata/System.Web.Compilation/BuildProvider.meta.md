@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Compilation.BuildProvider.OpenStream
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Compilation.BuildProvider.OpenStream(System.String)
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -119,13 +112,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Compilation.BuildProvider.CodeCompilerType
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Compilation.BuildProvider.OpenReader
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

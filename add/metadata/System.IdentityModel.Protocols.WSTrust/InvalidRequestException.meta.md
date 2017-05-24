@@ -27,9 +27,3 @@ uid: System.IdentityModel.Protocols.WSTrust.InvalidRequestException.#ctor
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Protocols.WSTrust.InvalidRequestException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

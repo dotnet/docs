@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.ItemPager.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.MobileControls.ItemPager.ItemIndex
 author: "tdykstra"
 ms.author: "tdykstra"

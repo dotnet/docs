@@ -25,13 +25,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.UIPropertyMetadata.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.UIPropertyMetadata.#ctor(System.Object,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback)
 author: "stevehoag"
 ms.author: "shoag"

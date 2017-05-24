@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.SortedList`2.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.SortedList`2.System#Collections#IDictionary#IsFixedSize
 author: "mairaw"
 ms.author: "mairaw"

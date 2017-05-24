@@ -168,13 +168,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Imaging.BitmapImage.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Imaging.BitmapImage.StreamSource
 author: "stevehoag"
 ms.author: "shoag"

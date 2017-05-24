@@ -39,11 +39,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.XmlMessageFormatter.#ctor
-manager: "tyoung"
----
-
----
 uid: System.Messaging.XmlMessageFormatter.#ctor(System.Type[])
 manager: "tyoung"
 ---

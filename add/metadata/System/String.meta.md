@@ -111,13 +111,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.String.Normalize
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.String.System#IConvertible#ToUInt32(System.IFormatProvider)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -216,13 +209,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.String.ToCharArray
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.String.PadRight(System.Int32)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -280,13 +266,6 @@ manager: "wpickett"
 
 ---
 uid: System.String.CompareOrdinal(System.String,System.String)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.String.ToString
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -476,13 +455,6 @@ manager: "wpickett"
 
 ---
 uid: System.String.Clone
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.String.ToLower
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -916,13 +888,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.String.Trim
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.String.System#IConvertible#ToUInt16(System.IFormatProvider)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -1102,13 +1067,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.String.ToUpper
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.String.EndsWith(System.String,System.StringComparison)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -1124,13 +1082,6 @@ manager: "wpickett"
 
 ---
 uid: System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean,System.Globalization.CultureInfo)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.String.IsNormalized
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

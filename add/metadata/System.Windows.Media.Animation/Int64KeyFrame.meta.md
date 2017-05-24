@@ -47,13 +47,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Int64KeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Int64KeyFrame.Value
 author: "stevehoag"
 ms.author: "shoag"

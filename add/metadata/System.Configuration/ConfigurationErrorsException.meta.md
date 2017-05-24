@@ -89,12 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationErrorsException.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConfigurationErrorsException.#ctor(System.String,System.Xml.XmlNode)
 ms.author: "riande"
 manager: "wpickett"

@@ -170,9 +170,3 @@ uid: System.Configuration.SectionInformation.AllowExeDefinition
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Configuration.SectionInformation.ForceDeclaration
-ms.author: "riande"
-manager: "wpickett"
----

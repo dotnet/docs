@@ -19,11 +19,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlInternalException.#ctor
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlInternalException.#ctor(System.String,System.Exception)
 manager: "martinek"
 ---

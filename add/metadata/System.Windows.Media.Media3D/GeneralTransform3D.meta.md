@@ -64,10 +64,3 @@ uid: System.Windows.Media.Media3D.GeneralTransform3D.Clone
 ms.author: "kempb"
 manager: "ghogen"
 ---
-
----
-uid: System.Windows.Media.Media3D.GeneralTransform3D.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

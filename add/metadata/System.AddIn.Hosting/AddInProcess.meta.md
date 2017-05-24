@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Hosting.AddInProcess.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AddIn.Hosting.AddInProcess.Shutdown
 author: "rpetrusha"
 ms.author: "ronpet"

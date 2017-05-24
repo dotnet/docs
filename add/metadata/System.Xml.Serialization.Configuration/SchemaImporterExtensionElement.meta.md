@@ -39,10 +39,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Xml.Serialization.Configuration.SchemaImporterExtensionElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

@@ -158,10 +158,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.WSHttpBindingBase.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

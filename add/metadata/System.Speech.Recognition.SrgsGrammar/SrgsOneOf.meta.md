@@ -23,12 +23,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SrgsGrammar.SrgsOneOf.#ctor
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SrgsGrammar.SrgsOneOf.Items
 ms.author: "kbridge"
 manager: "ghogen"

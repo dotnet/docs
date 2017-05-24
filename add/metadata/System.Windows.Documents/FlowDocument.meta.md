@@ -204,12 +204,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.FlowDocument.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Documents.FlowDocument.ColumnWidth
 author: "stevehoag"
 ms.author: "shoag"

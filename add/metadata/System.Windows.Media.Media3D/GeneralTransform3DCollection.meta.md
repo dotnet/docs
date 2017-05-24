@@ -181,13 +181,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.GeneralTransform3DCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.GeneralTransform3DCollection.Item(System.Int32)
 author: "stevehoag"
 ms.author: "shoag"

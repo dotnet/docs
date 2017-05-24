@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Statements.If.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Statements.If.Else
 author: "Erikre"
 ms.author: "erikre"

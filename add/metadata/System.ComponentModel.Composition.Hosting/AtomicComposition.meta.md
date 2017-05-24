@@ -81,17 +81,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.Composition.Hosting.AtomicComposition.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.AtomicComposition.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

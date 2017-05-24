@@ -118,13 +118,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.RuntimeTransactionHandle.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.RuntimeTransactionHandle.AbortInstanceOnTransactionFailure
 author: "Erikre"
 ms.author: "erikre"

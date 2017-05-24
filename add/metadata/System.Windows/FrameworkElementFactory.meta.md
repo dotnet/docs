@@ -101,13 +101,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.FrameworkElementFactory.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.FrameworkElementFactory.Name
 author: "stevehoag"
 ms.author: "shoag"

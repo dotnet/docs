@@ -74,10 +74,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.Composition.ImportAttribute.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

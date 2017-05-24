@@ -160,13 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Assembly.GetType
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Assembly.GetExportedTypes
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -223,13 +216,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Assembly.GetName
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Assembly.FullName
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -259,13 +245,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._Assembly.GetType(System.String,System.Boolean,System.Boolean)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Assembly.GetLoadedModules
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -335,13 +314,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Assembly.GetModules
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Assembly.LoadModule(System.String,System.Byte[])
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -350,13 +322,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._Assembly.GetManifestResourceInfo(System.String)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Assembly.GetFiles
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

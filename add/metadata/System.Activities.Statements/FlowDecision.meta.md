@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Statements.FlowDecision.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Statements.FlowDecision.False
 author: "Erikre"
 ms.author: "erikre"

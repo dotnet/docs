@@ -55,20 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeArrayIndexerExpression.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeArrayIndexerExpression.TargetObject
 author: "rpetrusha"
 ms.author: "ronpet"

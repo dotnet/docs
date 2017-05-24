@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.SynchronizationLockException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.SynchronizationLockException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

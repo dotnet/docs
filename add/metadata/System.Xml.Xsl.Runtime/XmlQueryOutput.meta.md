@@ -518,10 +518,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Xml.Xsl.Runtime.XmlQueryOutput.WriteStartDocument
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

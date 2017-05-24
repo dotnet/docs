@@ -46,10 +46,3 @@ author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
 ---
-
----
-uid: System.Data.OleDb.OleDbTransaction.Begin
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----

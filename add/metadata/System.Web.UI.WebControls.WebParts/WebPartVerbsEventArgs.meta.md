@@ -25,10 +25,3 @@ author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartVerbsEventArgs.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----

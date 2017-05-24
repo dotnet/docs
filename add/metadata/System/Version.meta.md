@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Version.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Version.Major
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -189,13 +182,6 @@ manager: "wpickett"
 
 ---
 uid: System.Version.ToString(System.Int32)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Version.#ctor
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

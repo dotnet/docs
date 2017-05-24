@@ -23,12 +23,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SecurityTokenExpiredException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SecurityTokenExpiredException.#ctor(System.String)
 ms.author: "v-jibran"
 manager: "markgal"

@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeConditionStatement.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeConditionStatement.Condition
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -39,10 +39,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Diagnostics.PerformanceCounterPermission.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

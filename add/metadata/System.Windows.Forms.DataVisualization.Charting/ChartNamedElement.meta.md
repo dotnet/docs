@@ -21,9 +21,3 @@ uid: System.Windows.Forms.DataVisualization.Charting.ChartNamedElement.#ctor(Sys
 ms.author: "mblythe"
 manager: "mblythe"
 ---
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.ChartNamedElement.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----

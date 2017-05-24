@@ -359,13 +359,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.GenericTypeParameterBuilder.MakeArrayType
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.IsAssignableFrom(System.Reflection.TypeInfo)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -440,13 +433,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.DeclaringType
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetEvents
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

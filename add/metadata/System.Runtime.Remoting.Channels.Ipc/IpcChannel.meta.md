@@ -59,11 +59,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Ipc.IpcChannel.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelData
 manager: "ghogen"
 ---

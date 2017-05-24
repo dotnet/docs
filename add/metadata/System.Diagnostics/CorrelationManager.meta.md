@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.CorrelationManager.StartLogicalOperation
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.CorrelationManager.LogicalOperationStack
 author: "mairaw"
 ms.author: "mairaw"

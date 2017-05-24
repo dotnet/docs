@@ -19,11 +19,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlReaderSettings.#ctor
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlReaderSettings.BaseUri
 manager: "martinek"
 ---

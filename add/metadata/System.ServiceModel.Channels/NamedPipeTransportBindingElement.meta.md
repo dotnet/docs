@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.NamedPipeTransportBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.NamedPipeTransportBindingElement.#ctor(System.ServiceModel.Channels.NamedPipeTransportBindingElement)
 author: "Erikre"
 ms.author: "erikre"

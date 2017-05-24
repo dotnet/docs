@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CannotUnloadAppDomainException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CannotUnloadAppDomainException.#ctor(System.String,System.Exception)
 author: "rpetrusha"
 ms.author: "ronpet"

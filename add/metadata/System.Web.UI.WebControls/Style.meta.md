@@ -195,9 +195,3 @@ uid: System.Web.UI.WebControls.Style.CssClass
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.WebControls.Style.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activities.SendMessageContent.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Activities.SendMessageContent.Message
 author: "Erikre"
 ms.author: "erikre"

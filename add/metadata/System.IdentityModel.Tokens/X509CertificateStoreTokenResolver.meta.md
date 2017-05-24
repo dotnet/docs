@@ -17,12 +17,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.TryResolveTokenCore
 ms.author: "v-jibran"
 manager: "markgal"

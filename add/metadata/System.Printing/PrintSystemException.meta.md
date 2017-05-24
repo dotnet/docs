@@ -53,13 +53,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Printing.PrintSystemException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintSystemException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "stevehoag"
 ms.author: "shoag"

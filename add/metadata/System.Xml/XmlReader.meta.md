@@ -377,13 +377,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.ReadElementContentAsDouble
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.MoveToFirstAttribute
 author: "mairaw"
 ms.author: "mairaw"
@@ -441,13 +434,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlReader.ReadAttributeValue
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadElementString
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -664,13 +650,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.ReadElementContentAsObject
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.ReadContentAsDouble
 author: "mairaw"
 ms.author: "mairaw"
@@ -692,28 +671,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.ReadElementContentAsFloat
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadElementContentAsDecimal
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.Depth
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadElementContentAsString
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -755,13 +713,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.ReadElementContentAsBoolean
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.Item(System.String)
 author: "mairaw"
 ms.author: "mairaw"
@@ -777,13 +728,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlReader.Item
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.Dispose
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -895,20 +839,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.ReadElementContentAsInt
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadElementContentAsLong
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.ReadToFollowing(System.String,System.String)
 author: "mairaw"
 ms.author: "mairaw"
@@ -959,13 +889,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlReader.ReadStartElement(System.String,System.String)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadStartElement
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -1042,13 +965,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.IsStartElement
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.Create
 author: "mairaw"
 ms.author: "mairaw"
@@ -1071,13 +987,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlReader.Dispose(System.Boolean)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadElementContentAsDateTime
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

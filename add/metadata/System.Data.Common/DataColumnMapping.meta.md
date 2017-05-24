@@ -41,13 +41,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DataColumnMapping.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DataColumnMapping.DataSetColumn
 author: "JennieHubbard"
 ms.author: "jhubbard"

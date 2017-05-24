@@ -449,13 +449,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.ReadContentAsString
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlDictionaryReader.ReadElementContentAsLong
 author: "mairaw"
 ms.author: "mairaw"
@@ -476,13 +469,6 @@ manager: "ghogen"
 
 ---
 uid: System.Xml.XmlDictionaryReader.ReadSingleArray
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlDictionaryReader.ReadFullStartElement
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -594,13 +580,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.MoveToStartElement
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.TimeSpan[],System.Int32,System.Int32)
 author: "mairaw"
 ms.author: "mairaw"
@@ -644,13 +623,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlDictionaryReader.ReadDoubleArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlDictionaryReader.ReadContentAsBinHex
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -1066,13 +1038,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Single[],System.Int32,System.Int32)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlDictionaryReader.ReadString
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

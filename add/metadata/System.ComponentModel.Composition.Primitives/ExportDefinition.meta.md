@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Primitives.ExportDefinition.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Primitives.ExportDefinition.ContractName
 author: "rpetrusha"
 ms.author: "ronpet"

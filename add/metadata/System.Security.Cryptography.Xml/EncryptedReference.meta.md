@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.EncryptedReference.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.EncryptedReference.TransformChain
 author: "mairaw"
 ms.author: "mairaw"

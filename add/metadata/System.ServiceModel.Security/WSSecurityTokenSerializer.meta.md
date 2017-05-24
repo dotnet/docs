@@ -195,13 +195,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.WSSecurityTokenSerializer.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.WSSecurityTokenSerializer.MaximumKeyDerivationLabelLength
 author: "Erikre"
 ms.author: "erikre"

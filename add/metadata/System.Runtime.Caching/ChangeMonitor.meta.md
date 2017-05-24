@@ -57,9 +57,3 @@ uid: System.Runtime.Caching.ChangeMonitor.UniqueId
 ms.author: "riande"
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Caching.ChangeMonitor.Dispose
-ms.author: "riande"
-manager: "ghogen"
----

@@ -27,13 +27,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Design.TypedDataSetGeneratorException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Design.TypedDataSetGeneratorException.ErrorList
 author: "JennieHubbard"
 ms.author: "jhubbard"

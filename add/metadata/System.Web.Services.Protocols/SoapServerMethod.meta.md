@@ -97,13 +97,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapServerMethod.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Protocols.SoapServerMethod.BindingUse
 author: "Erikre"
 ms.author: "erikre"

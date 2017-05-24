@@ -88,10 +88,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.OpenFileDialogArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

@@ -118,13 +118,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.IsolatedStorage.IsolatedStorageFileStream.Flush
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose
 manager: "ghogen"
 ---

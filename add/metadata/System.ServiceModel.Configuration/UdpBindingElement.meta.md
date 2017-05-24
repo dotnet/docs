@@ -54,11 +54,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.UdpBindingElement.#ctor
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Configuration.UdpBindingElement.MaxBufferPoolSize
 manager: "ghogen"
 ---

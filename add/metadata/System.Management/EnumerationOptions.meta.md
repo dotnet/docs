@@ -54,11 +54,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.EnumerationOptions.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.EnumerationOptions.ReturnImmediately
 manager: "jillfra"
 ---

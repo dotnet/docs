@@ -25,10 +25,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.IO.InvalidDataException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

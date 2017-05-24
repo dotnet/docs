@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.PoisonMessageException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.PoisonMessageException.#ctor(System.String,System.Exception)
 author: "Erikre"
 ms.author: "erikre"

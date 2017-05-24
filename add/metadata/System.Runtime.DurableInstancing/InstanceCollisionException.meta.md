@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstanceCollisionException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.DurableInstancing.InstanceCollisionException.#ctor(System.String,System.Exception)
 author: "Erikre"
 ms.author: "erikre"

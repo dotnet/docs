@@ -55,13 +55,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.Model.ModelEditingScope.Dispose
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.Model.ModelEditingScope.#ctor
 author: "Erikre"
 ms.author: "erikre"

@@ -293,13 +293,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XElement.DescendantsAndSelf
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XElement.System#Xml#Serialization#IXmlSerializable#GetSchema
 author: "mairaw"
 ms.author: "mairaw"
@@ -425,20 +418,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.Linq.XElement.FirstAttribute
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XElement.AncestorsAndSelf
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XElement.Attributes
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

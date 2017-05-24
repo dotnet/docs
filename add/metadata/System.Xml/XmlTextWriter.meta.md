@@ -74,13 +74,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlTextWriter.WriteStartDocument
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlTextWriter.WriteEndAttribute
 author: "mairaw"
 ms.author: "mairaw"

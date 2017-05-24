@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.PolicyActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.PolicyActivity.RuleSetReference
 author: "Erikre"
 ms.author: "erikre"

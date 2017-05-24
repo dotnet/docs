@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteObjectKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.DiscreteObjectKeyFrame.#ctor(System.Object,System.Windows.Media.Animation.KeyTime)
 author: "stevehoag"
 ms.author: "shoag"

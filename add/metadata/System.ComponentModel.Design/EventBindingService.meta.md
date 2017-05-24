@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#ShowCode
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.EventBindingService.ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor,System.String)
 author: "stevehoag"
 ms.author: "shoag"
@@ -119,13 +112,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.EventBindingService.ShowCode
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

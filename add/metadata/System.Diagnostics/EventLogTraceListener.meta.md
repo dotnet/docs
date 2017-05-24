@@ -107,13 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.EventLogTraceListener.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.EventLogTraceListener.#ctor(System.String)
 author: "mairaw"
 ms.author: "mairaw"

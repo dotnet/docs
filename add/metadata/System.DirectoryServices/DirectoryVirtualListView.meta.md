@@ -76,13 +76,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.DirectoryVirtualListView.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.DirectoryVirtualListView.#ctor(System.Int32,System.Int32,System.String,System.DirectoryServices.DirectoryVirtualListViewContext)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

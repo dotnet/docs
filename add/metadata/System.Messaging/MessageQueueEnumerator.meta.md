@@ -34,11 +34,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueueEnumerator.Dispose
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueueEnumerator.Close
 manager: "tyoung"
 ---

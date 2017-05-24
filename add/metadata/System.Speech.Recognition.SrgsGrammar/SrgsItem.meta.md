@@ -83,12 +83,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Int32)
 ms.author: "kbridge"
 manager: "ghogen"

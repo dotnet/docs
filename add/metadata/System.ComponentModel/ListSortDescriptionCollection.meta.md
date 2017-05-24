@@ -93,13 +93,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.ListSortDescriptionCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.ListSortDescriptionCollection.System#Collections#IList#Remove(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

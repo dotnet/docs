@@ -617,12 +617,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpWorkerRequest.GetPreloadedEntityBody
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpWorkerRequest.SetEndOfSendNotification(System.Web.HttpWorkerRequest.EndOfSendNotification,System.Object)
 ms.author: "riande"
 manager: "wpickett"

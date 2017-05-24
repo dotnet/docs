@@ -83,21 +83,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnection.System#Data#IDbConnection#BeginTransaction
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbConnection.ChangeDatabase(System.String)
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnection.OpenAsync
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
@@ -139,13 +125,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnection.BeginTransaction
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbConnection.CreateCommand
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -161,13 +140,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbConnection.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnection.GetSchema
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

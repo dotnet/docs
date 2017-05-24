@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.InvalidFilterCriteriaException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.InvalidFilterCriteriaException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

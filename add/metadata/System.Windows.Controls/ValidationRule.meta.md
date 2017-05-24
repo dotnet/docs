@@ -58,10 +58,3 @@ uid: System.Windows.Controls.ValidationRule.Validate(System.Object,System.Global
 ms.author: "kempb"
 manager: "ghogen"
 ---
-
----
-uid: System.Windows.Controls.ValidationRule.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

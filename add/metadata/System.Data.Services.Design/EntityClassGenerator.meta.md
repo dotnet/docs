@@ -55,13 +55,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Services.Design.EntityClassGenerator.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Services.Design.EntityClassGenerator.Version
 author: "JennieHubbard"
 ms.author: "jhubbard"

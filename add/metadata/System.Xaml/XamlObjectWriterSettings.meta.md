@@ -66,11 +66,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlObjectWriterSettings.#ctor
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlObjectWriterSettings.AfterBeginInitHandler
 manager: "martinek"
 ---

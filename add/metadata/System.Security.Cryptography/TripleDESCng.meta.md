@@ -48,21 +48,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.TripleDESCng.CreateEncryptor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.TripleDESCng.GenerateKey
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.TripleDESCng.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -98,13 +84,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.TripleDESCng.CreateDecryptor(System.Byte[],System.Byte[])
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.TripleDESCng.CreateDecryptor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

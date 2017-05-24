@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlAttributeAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlAttributeAttribute.#ctor(System.String,System.Type)
 author: "Erikre"
 ms.author: "erikre"

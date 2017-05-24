@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.GC.WaitForFullGCComplete
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.GC.EndNoGCRegion
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -126,13 +119,6 @@ manager: "wpickett"
 
 ---
 uid: System.GC.TryStartNoGCRegion(System.Int64,System.Boolean)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.GC.Collect
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -217,13 +203,6 @@ manager: "wpickett"
 
 ---
 uid: System.GC.KeepAlive(System.Object)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.GC.WaitForFullGCApproach
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

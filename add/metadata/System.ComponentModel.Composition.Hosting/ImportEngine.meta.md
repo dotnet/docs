@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.ImportEngine.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.ImportEngine.#ctor(System.ComponentModel.Composition.Hosting.ExportProvider,System.Boolean)
 author: "rpetrusha"
 ms.author: "ronpet"

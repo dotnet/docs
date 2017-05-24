@@ -146,13 +146,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Dispatcher.MessageFilterTable`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Dispatcher.MessageFilterTable`1.GetEnumerator
 author: "Erikre"
 ms.author: "erikre"

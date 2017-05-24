@@ -384,21 +384,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Certificate.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.X509Certificates.X509Certificate.Equals
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.X509Certificates.X509Certificate.Dispose
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -413,13 +399,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.X509Certificates.X509Certificate.Export(System.Security.Cryptography.X509Certificates.X509ContentType,System.String)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.X509Certificates.X509Certificate.ToString
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

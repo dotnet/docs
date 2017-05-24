@@ -9,11 +9,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.PreparingEnlistment.ForceRollback
-manager: "ghogen"
----
-
----
 uid: System.Transactions.PreparingEnlistment.Prepared
 manager: "ghogen"
 ---

@@ -71,10 +71,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Collections.Generic.KeyedByTypeCollection`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

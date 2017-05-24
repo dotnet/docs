@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.PropertyInfo.GetSetMethod
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.PropertyInfo.GetConstantValue
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -112,13 +105,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.PropertyInfo.GetAccessors
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.PropertyInfo.GetGetMethod
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -231,13 +217,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.PropertyInfo.GetHashCode
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.PropertyInfo.GetAccessors
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

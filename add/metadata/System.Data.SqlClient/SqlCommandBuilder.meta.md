@@ -62,13 +62,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlCommandBuilder.UnquoteIdentifier(System.String)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -111,20 +104,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlCommandBuilder.GetInsertCommand
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlCommandBuilder.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlCommandBuilder.GetDeleteCommand(System.Boolean)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -133,13 +112,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.SqlClient.SqlCommandBuilder.CatalogSeparator
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlCommandBuilder.GetUpdateCommand
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

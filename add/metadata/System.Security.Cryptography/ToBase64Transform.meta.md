@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.ToBase64Transform.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.ToBase64Transform.#ctor
 author: "mairaw"
 ms.author: "mairaw"

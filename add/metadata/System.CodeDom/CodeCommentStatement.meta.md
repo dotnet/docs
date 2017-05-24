@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeCommentStatement.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeCommentStatement.#ctor(System.String,System.Boolean)
 author: "rpetrusha"
 ms.author: "ronpet"

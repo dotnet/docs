@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeReferenceCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTypeReferenceCollection.AddRange
 author: "rpetrusha"
 ms.author: "ronpet"

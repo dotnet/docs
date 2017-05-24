@@ -321,13 +321,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpRequestWrapper.GetBufferlessInputStream
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpRequestWrapper.Abort
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -413,13 +406,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.HttpRequestWrapper.ContentEncoding
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.HttpRequestWrapper.InsertEntityBody
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

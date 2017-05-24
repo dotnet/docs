@@ -89,12 +89,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Configuration.SecurityTokenServiceConfiguration.#ctor(System.String)
 ms.author: "v-jibran"
 manager: "markgal"

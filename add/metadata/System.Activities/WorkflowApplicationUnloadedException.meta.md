@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplicationUnloadedException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.WorkflowApplicationUnloadedException.#ctor(System.String,System.Guid,System.Exception)
 author: "Erikre"
 ms.author: "erikre"

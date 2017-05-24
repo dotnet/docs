@@ -47,13 +47,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DockingAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DockingAttribute.IsDefaultAttribute
 author: "stevehoag"
 ms.author: "shoag"

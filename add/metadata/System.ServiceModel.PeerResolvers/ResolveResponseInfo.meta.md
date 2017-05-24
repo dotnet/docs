@@ -17,12 +17,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.#ctor
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.PeerResolvers.ResolveResponseInfo.HasBody
 ms.author: "bobdel"
 manager: "ghogen"

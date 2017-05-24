@@ -53,13 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineByteKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SplineByteKeyFrame.InterpolateValueCore(System.Byte,System.Double)
 ms.author: "kempb"
 manager: "ghogen"

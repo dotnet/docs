@@ -476,13 +476,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.MaskedTextBox.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.MaskedTextBox.CreateHandle
 author: "stevehoag"
 ms.author: "shoag"

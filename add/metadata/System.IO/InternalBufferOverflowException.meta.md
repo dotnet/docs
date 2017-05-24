@@ -32,10 +32,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.IO.InternalBufferOverflowException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.CheckoutException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.CheckoutException.#ctor(System.String,System.Int32)
 author: "stevehoag"
 ms.author: "shoag"

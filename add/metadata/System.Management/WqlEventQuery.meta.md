@@ -84,11 +84,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.WqlEventQuery.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.WqlEventQuery.EventClassName
 manager: "jillfra"
 ---

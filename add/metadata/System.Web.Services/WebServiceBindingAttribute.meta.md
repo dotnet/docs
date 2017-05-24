@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.WebServiceBindingAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.WebServiceBindingAttribute.Namespace
 author: "Erikre"
 ms.author: "erikre"

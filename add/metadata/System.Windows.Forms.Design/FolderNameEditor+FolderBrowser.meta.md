@@ -52,10 +52,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Windows.Forms.Design.FolderNameEditor.FolderBrowser.ShowDialog
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

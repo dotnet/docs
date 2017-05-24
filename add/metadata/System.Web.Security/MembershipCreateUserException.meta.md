@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipCreateUserException.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.MembershipCreateUserException.StatusCode
 author: "tdykstra"
 ms.author: "tdykstra"

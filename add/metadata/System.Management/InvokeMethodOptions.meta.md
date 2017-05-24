@@ -17,8 +17,3 @@ manager: "jillfra"
 uid: System.Management.InvokeMethodOptions.Clone
 manager: "jillfra"
 ---
-
----
-uid: System.Management.InvokeMethodOptions.#ctor
-manager: "jillfra"
----

@@ -412,13 +412,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Char.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Char.IsPunctuation(System.Char)
 author: "rpetrusha"
 ms.author: "ronpet"

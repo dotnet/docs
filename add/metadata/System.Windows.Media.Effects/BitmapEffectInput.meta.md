@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Effects.BitmapEffectInput.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Effects.BitmapEffectInput.AreaToApplyEffectUnitsProperty
 ms.author: "kempb"
 manager: "ghogen"

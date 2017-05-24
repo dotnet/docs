@@ -118,13 +118,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.HashAlgorithm.Create
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.HashAlgorithm.Create(System.String)
 author: "mairaw"
 ms.author: "mairaw"
@@ -161,13 +154,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[])
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.HashAlgorithm.Dispose
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

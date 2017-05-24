@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.ModelBindingContext.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.ModelBindingContext.ModelMetadata
 author: "tdykstra"
 ms.author: "tdykstra"

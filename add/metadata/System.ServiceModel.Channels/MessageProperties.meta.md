@@ -139,13 +139,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.MessageProperties.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.MessageProperties.Security
 author: "Erikre"
 ms.author: "erikre"

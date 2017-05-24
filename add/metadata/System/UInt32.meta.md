@@ -263,10 +263,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.UInt32.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

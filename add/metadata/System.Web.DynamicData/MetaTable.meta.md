@@ -227,12 +227,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.MetaTable.GetQuery
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.DynamicData.MetaTable.Columns
 ms.author: "riande"
 manager: "wpickett"

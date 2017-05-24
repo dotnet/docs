@@ -125,12 +125,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.X509SecurityTokenHandler.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.X509SecurityTokenHandler.WriteXmlDSigDefinedClauseTypes
 ms.author: "v-jibran"
 manager: "markgal"

@@ -53,12 +53,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedSecurityToken
 ms.author: "v-jibran"
 manager: "markgal"

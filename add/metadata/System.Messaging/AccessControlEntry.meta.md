@@ -39,11 +39,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.AccessControlEntry.#ctor
-manager: "tyoung"
----
-
----
 uid: System.Messaging.AccessControlEntry.Trustee
 manager: "tyoung"
 ---

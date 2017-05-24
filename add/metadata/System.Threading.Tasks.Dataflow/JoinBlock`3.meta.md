@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.Dataflow.JoinBlock`3.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.Dataflow.JoinBlock`3.TryReceive(System.Predicate{System.Tuple{`0,`1,`2}},System.Tuple{`0,`1,`2}@)
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -223,13 +223,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._PropertyInfo.GetGetMethod
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._PropertyInfo.MemberType
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -245,20 +238,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._PropertyInfo.GetSetMethod
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetSetMethod
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetAccessors
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

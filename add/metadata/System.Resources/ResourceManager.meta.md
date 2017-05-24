@@ -207,10 +207,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Resources.ResourceManager.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

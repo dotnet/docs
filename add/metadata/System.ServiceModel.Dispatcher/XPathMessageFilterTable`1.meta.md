@@ -312,10 +312,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Dispatcher.XPathMessageFilterTable`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

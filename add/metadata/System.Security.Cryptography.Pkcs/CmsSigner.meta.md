@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.CmsSigner.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.CmsSigner.DigestAlgorithm
 author: "mairaw"
 ms.author: "mairaw"

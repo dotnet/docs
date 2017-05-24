@@ -23,12 +23,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.UnregisterInfo.#ctor
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.PeerResolvers.UnregisterInfo.HasBody
 ms.author: "bobdel"
 manager: "ghogen"

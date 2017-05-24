@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Dispatcher.XPathMessageContext.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Dispatcher.XPathMessageContext.Whitespace
 author: "Erikre"
 ms.author: "erikre"

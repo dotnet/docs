@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.MessageHeaderException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.MessageHeaderException.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

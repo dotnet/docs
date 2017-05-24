@@ -111,13 +111,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.ServiceCredentials.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.ServiceCredentials.System#ServiceModel#Description#IServiceBehavior#AddBindingParameters(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase,System.Collections.ObjectModel.Collection{System.ServiceModel.Description.ServiceEndpoint},System.ServiceModel.Channels.BindingParameterCollection)
 author: "Erikre"
 ms.author: "erikre"

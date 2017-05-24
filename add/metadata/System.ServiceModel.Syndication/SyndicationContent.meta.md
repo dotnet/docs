@@ -90,13 +90,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.SyndicationContent.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.SyndicationContent.WriteContentsTo(System.Xml.XmlWriter)
 author: "Erikre"
 ms.author: "erikre"

@@ -139,13 +139,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.FileIO.TextFieldParser.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.FileIO.TextFieldParser.CommentTokens
 author: "stevehoag"
 ms.author: "shoag"

@@ -74,11 +74,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.TransactionScope.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Transactions.TransactionScope.Complete
 manager: "ghogen"
 ---

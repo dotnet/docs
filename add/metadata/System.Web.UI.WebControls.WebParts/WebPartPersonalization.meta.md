@@ -146,13 +146,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebPartPersonalization.ExtractPersonalizationState
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebPartPersonalization.SetDirty(System.Web.UI.WebControls.WebParts.WebPart)
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -210,20 +203,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartPersonalization.EnsureEnabled(System.Boolean)
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartPersonalization.ApplyPersonalizationState
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartPersonalization.SetDirty
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

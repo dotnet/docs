@@ -132,13 +132,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.DBNull.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.DBNull.System#IConvertible#ToType(System.Type,System.IFormatProvider)
 author: "rpetrusha"
 ms.author: "ronpet"

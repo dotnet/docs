@@ -118,13 +118,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Rss20FeedFormatter.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.Rss20FeedFormatter.#ctor(System.ServiceModel.Syndication.SyndicationFeed,System.Boolean)
 author: "Erikre"
 ms.author: "erikre"

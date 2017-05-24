@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.Serialization.XsdDataContractExporter.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.Serialization.XsdDataContractExporter.CanExport(System.Collections.Generic.ICollection{System.Reflection.Assembly})
 author: "Erikre"
 ms.author: "erikre"

@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymBinder.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymBinder.Dispose(System.Boolean)
 author: "mairaw"
 ms.author: "mairaw"

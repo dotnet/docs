@@ -102,12 +102,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SizeAnimation.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.SizeAnimation.GetCurrentValueCore(System.Windows.Size,System.Windows.Size,System.Windows.Media.Animation.AnimationClock)
 author: "stevehoag"
 ms.author: "shoag"

@@ -93,12 +93,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.LineGeometry.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.LineGeometry.StartPoint
 author: "stevehoag"
 ms.author: "shoag"

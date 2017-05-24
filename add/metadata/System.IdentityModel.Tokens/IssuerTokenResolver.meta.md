@@ -53,12 +53,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.IssuerTokenResolver.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.IssuerTokenResolver.TryResolveTokenCore(System.IdentityModel.Tokens.SecurityKeyIdentifier,System.IdentityModel.Tokens.SecurityToken@)
 ms.author: "v-jibran"
 manager: "markgal"

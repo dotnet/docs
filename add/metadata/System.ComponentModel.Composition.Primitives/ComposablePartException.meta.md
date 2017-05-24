@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Primitives.ComposablePartException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Primitives.ComposablePartException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "rpetrusha"
 ms.author: "ronpet"

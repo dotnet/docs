@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.DSASignatureDeformatter.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.DSASignatureDeformatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
 author: "mairaw"
 ms.author: "mairaw"

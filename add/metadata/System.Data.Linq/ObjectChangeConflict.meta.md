@@ -34,13 +34,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Linq.ObjectChangeConflict.Resolve
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Linq.ObjectChangeConflict.Object
 author: "JennieHubbard"
 ms.author: "jhubbard"

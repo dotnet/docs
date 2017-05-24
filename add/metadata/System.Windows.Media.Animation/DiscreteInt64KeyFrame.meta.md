@@ -33,13 +33,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteInt64KeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.DiscreteInt64KeyFrame.#ctor(System.Int64,System.Windows.Media.Animation.KeyTime)
 author: "stevehoag"
 ms.author: "shoag"

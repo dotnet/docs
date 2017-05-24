@@ -22,8 +22,3 @@ manager: "martinek"
 uid: System.Xaml.XamlObjectReaderException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 manager: "martinek"
 ---
-
----
-uid: System.Xaml.XamlObjectReaderException.#ctor
-manager: "martinek"
----

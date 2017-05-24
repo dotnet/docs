@@ -39,13 +39,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.QuaternionRotation3D.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.QuaternionRotation3D.#ctor(System.Windows.Media.Media3D.Quaternion)
 author: "stevehoag"
 ms.author: "shoag"

@@ -9,11 +9,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.DeleteOptions.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.DeleteOptions.Clone
 manager: "jillfra"
 ---

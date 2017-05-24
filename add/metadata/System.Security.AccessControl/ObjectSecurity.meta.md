@@ -265,13 +265,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.ObjectSecurity.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.AccessControl.ObjectSecurity.SetAccessRuleProtection(System.Boolean,System.Boolean)
 author: "mairaw"
 ms.author: "mairaw"

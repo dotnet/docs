@@ -293,13 +293,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Application.Exit
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Application.Restart
 ms.author: "kempb"
 manager: "ghogen"

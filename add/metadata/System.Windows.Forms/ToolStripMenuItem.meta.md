@@ -256,13 +256,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripMenuItem.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripMenuItem.Dispose(System.Boolean)
 author: "stevehoag"
 ms.author: "shoag"

@@ -104,13 +104,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounter.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.PerformanceCounter.Decrement
 author: "mairaw"
 ms.author: "mairaw"

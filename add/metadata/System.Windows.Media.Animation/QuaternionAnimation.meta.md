@@ -123,13 +123,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.QuaternionAnimation.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.QuaternionAnimation.#ctor(System.Windows.Media.Media3D.Quaternion,System.Windows.Media.Media3D.Quaternion,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)
 ms.author: "kempb"
 manager: "ghogen"

@@ -81,10 +81,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.Design.LocalizationExtenderProvider.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

@@ -139,13 +139,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.TextWriter.WriteLine
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.TextWriter.CoreNewLine
 author: "mairaw"
 ms.author: "mairaw"
@@ -203,13 +196,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.TextWriter.Write(System.Boolean)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.TextWriter.WriteLineAsync
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -294,13 +280,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.TextWriter.WriteLine(System.Int32)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.TextWriter.Dispose
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -413,13 +392,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.TextWriter.Write(System.Object)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.TextWriter.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

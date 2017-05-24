@@ -14,11 +14,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.ClientChannelSinkStack.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.ClientChannelSinkStack.DispatchException(System.Exception)
 manager: "ghogen"
 ---

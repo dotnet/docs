@@ -122,23 +122,9 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Storyboard.GetCurrentIteration
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Storyboard.SetSpeedRatio(System.Double)
 ms.author: "kempb"
 manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.GetCurrentTime
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
 ---
 
 ---
@@ -210,13 +196,6 @@ manager: "ghogen"
 
 ---
 uid: System.Windows.Media.Animation.Storyboard.GetTargetName(System.Windows.DependencyObject)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.Resume
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -304,20 +283,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Storyboard.SkipToFill
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.Begin
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick
 ms.author: "kempb"
 manager: "ghogen"
@@ -358,13 +323,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Storyboard.Pause
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Storyboard.SkipToFill(System.Windows.FrameworkElement)
 author: "stevehoag"
 ms.author: "shoag"
@@ -380,13 +338,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.Animation.Storyboard.Stop
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.GetCurrentProgress
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -560,13 +511,6 @@ manager: "ghogen"
 uid: System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkContentElement,System.Boolean)
 ms.author: "kempb"
 manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.Remove
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
 ---
 
 ---

@@ -209,13 +209,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ImageAttributes.ClearGamma
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ImageAttributes.SetColorMatrix(System.Drawing.Imaging.ColorMatrix,System.Drawing.Imaging.ColorMatrixFlag,System.Drawing.Imaging.ColorAdjustType)
 author: "stevehoag"
 ms.author: "shoag"
@@ -223,21 +216,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ImageAttributes.SetNoOp
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ImageAttributes.ClearRemapTable(System.Drawing.Imaging.ColorAdjustType)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Imaging.ImageAttributes.ClearOutputChannel
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -328,20 +307,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ImageAttributes.ClearColorKey
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Imaging.ImageAttributes.ClearColorMatrix
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ImageAttributes.ClearRemapTable
 author: "stevehoag"
 ms.author: "shoag"
@@ -377,13 +342,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ImageAttributes.ClearRemapTable
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ImageAttributes.SetGamma(System.Single)
 author: "stevehoag"
 ms.author: "shoag"
@@ -412,13 +370,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ImageAttributes.ClearNoOp
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ImageAttributes.SetColorKey(System.Drawing.Color,System.Drawing.Color)
 author: "stevehoag"
 ms.author: "shoag"
@@ -427,20 +378,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Imaging.ImageAttributes.SetThreshold
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Imaging.ImageAttributes.ClearThreshold
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Imaging.ImageAttributes.ClearOutputChannelColorProfile
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

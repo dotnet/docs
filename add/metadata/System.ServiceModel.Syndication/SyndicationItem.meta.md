@@ -88,13 +88,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.SyndicationItem.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.SyndicationItem.Clone
 author: "Erikre"
 ms.author: "erikre"
@@ -117,13 +110,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Syndication.SyndicationItem.SourceFeed
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Syndication.SyndicationItem.GetRss20Formatter
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

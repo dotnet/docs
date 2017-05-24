@@ -148,13 +148,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.MaterialCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.MaterialCollection.System#Collections#IEnumerable#GetEnumerator
 ms.author: "kempb"
 manager: "ghogen"

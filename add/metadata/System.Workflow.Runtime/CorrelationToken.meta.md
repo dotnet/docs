@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.CorrelationToken.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.CorrelationToken.Initialize(System.Workflow.ComponentModel.Activity,System.Collections.Generic.ICollection{System.Workflow.Runtime.CorrelationProperty})
 author: "Erikre"
 ms.author: "erikre"

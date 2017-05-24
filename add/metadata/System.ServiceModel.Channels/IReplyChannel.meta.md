@@ -95,10 +95,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Channels.IReplyChannel.ReceiveRequest
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

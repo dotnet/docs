@@ -49,11 +49,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Tcp.TcpChannel.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Tcp.TcpChannel.#ctor(System.Int32)
 manager: "ghogen"
 ---

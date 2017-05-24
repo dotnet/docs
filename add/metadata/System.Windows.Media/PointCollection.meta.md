@@ -183,13 +183,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.PointCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.PointCollection.Clone
 author: "stevehoag"
 ms.author: "shoag"
@@ -212,13 +205,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.PointCollection.Contains(System.Windows.Point)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.PointCollection.ToString
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

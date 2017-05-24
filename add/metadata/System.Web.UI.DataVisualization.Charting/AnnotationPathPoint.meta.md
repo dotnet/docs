@@ -23,12 +23,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.AnnotationPathPoint.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.AnnotationPathPoint.#ctor(System.Single,System.Single)
 ms.author: "mblythe"
 manager: "mblythe"

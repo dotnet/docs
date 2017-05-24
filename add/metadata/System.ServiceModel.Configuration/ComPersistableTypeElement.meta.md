@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.ComPersistableTypeElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.ComPersistableTypeElement.Name
 author: "Erikre"
 ms.author: "erikre"

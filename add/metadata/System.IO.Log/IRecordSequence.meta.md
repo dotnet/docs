@@ -132,13 +132,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IO.Log.IRecordSequence.Flush
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IO.Log.IRecordSequence.BeginAppend(System.Collections.Generic.IList{System.ArraySegment{System.Byte}},System.IO.Log.SequenceNumber,System.IO.Log.SequenceNumber,System.IO.Log.RecordAppendOptions,System.IO.Log.ReservationCollection,System.AsyncCallback,System.Object)
 author: "Erikre"
 ms.author: "erikre"

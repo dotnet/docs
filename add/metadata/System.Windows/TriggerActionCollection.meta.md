@@ -128,13 +128,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.TriggerActionCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.TriggerActionCollection.System#Collections#ICollection#IsSynchronized
 author: "stevehoag"
 ms.author: "shoag"

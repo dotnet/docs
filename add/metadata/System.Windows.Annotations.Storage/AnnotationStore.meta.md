@@ -57,13 +57,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Annotations.Storage.AnnotationStore.DeleteAnnotation(System.Guid)
 author: "stevehoag"
 ms.author: "shoag"

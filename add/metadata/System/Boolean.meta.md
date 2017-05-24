@@ -207,10 +207,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Boolean.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

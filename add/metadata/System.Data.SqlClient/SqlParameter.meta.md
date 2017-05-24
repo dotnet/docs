@@ -167,13 +167,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlParameter.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Data.SqlDbType)
 author: "JennieHubbard"
 ms.author: "jhubbard"

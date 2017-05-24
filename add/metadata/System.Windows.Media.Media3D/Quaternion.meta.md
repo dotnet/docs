@@ -239,13 +239,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Quaternion.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.Quaternion.Conjugate
 author: "stevehoag"
 ms.author: "shoag"

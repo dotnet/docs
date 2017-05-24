@@ -288,13 +288,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Vector3D.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.Vector3D.op_Addition
 ms.author: "kempb"
 manager: "ghogen"

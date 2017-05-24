@@ -23,12 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpCompileException.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpCompileException.#ctor(System.String,System.Exception)
 ms.author: "riande"
 manager: "wpickett"

@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Design.ToolboxItem.CreateComponents
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Design.ToolboxItem.TypeName
 author: "stevehoag"
 ms.author: "shoag"
@@ -154,13 +147,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Design.ToolboxItem.Company
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Design.ToolboxItem.#ctor
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

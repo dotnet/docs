@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ArithmeticException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ArithmeticException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

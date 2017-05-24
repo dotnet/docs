@@ -125,13 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.EventLog.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.EventLog.MinimumRetentionDays
 author: "mairaw"
 ms.author: "mairaw"
@@ -246,13 +239,6 @@ manager: "wpickett"
 ---
 uid: System.Diagnostics.EventLog.Dispose
 manager: "ghogen"
----
-
----
-uid: System.Diagnostics.EventLog.GetEventLogs
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
 ---
 
 ---

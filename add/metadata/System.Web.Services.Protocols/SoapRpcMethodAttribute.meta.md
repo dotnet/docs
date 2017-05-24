@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.RequestNamespace
 author: "Erikre"
 ms.author: "erikre"

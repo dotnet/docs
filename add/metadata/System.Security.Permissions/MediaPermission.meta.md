@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Permissions.MediaPermission.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Permissions.MediaPermission.Audio
 author: "mairaw"
 ms.author: "mairaw"

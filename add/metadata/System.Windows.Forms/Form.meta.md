@@ -472,13 +472,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.Form.ValidateChildren
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Form.MinimizeBox
 author: "stevehoag"
 ms.author: "shoag"
@@ -1073,13 +1066,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.Form.MenuStart
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Form.ShowDialog
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

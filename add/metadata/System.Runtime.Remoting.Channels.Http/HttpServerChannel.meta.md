@@ -79,11 +79,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Http.HttpServerChannel.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Http.HttpServerChannel.AddHookChannelUri(System.String)
 manager: "ghogen"
 ---

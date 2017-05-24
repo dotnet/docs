@@ -207,13 +207,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ServiceProcess.ServiceController.GetDevices
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ServiceProcess.ServiceController.GetServices(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -221,28 +214,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ServiceProcess.ServiceController.GetServices
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ServiceProcess.ServiceController.Start
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ServiceProcess.ServiceController.Dispose(System.Boolean)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ServiceProcess.ServiceController.#ctor
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

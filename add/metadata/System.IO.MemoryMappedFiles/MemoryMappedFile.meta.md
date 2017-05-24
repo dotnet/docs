@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.MemoryMappedFiles.MemoryMappedFile.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile(System.IO.FileStream,System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess,System.IO.MemoryMappedFiles.MemoryMappedFileSecurity,System.IO.HandleInheritability,System.Boolean)
 author: "mairaw"
 ms.author: "mairaw"
@@ -112,13 +105,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedFile.OpenExisting(System.String,System.IO.MemoryMappedFiles.MemoryMappedFileRights)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewStream
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -217,13 +203,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew(System.String,System.Int64)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.XsltContext.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.XsltContext.#ctor(System.Xml.NameTable)
 author: "mairaw"
 ms.author: "mairaw"

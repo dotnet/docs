@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.CustomTypeDescriptor.GetProperties
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
 author: "stevehoag"
 ms.author: "shoag"
@@ -105,20 +98,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.CustomTypeDescriptor.GetConverter
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetEvents
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

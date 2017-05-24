@@ -338,13 +338,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.EnumBuilder.MakeArrayType
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.EnumBuilder.CreateTypeInfo
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -363,13 +356,6 @@ manager: "ghogen"
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetProperties(System.Reflection.BindingFlags)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Emit.EnumBuilder.GetEvents
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

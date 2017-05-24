@@ -48,13 +48,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityConnectionStringBuilder.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityClient.EntityConnectionStringBuilder.Item(System.String)
 author: "JennieHubbard"
 ms.author: "jhubbard"

@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileNotFoundException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileNotFoundException.Message
 author: "mairaw"
 ms.author: "mairaw"

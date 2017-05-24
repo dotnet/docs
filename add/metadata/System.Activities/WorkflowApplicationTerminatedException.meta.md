@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplicationTerminatedException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.WorkflowApplicationTerminatedException.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

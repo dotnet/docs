@@ -39,10 +39,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

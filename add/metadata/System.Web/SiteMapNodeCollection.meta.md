@@ -83,12 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.SiteMapNodeCollection.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.SiteMapNodeCollection.AddRange(System.Web.SiteMapNode[])
 ms.author: "riande"
 manager: "wpickett"

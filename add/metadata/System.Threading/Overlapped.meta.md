@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Overlapped.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Overlapped.Pack
 author: "rpetrusha"
 ms.author: "ronpet"

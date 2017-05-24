@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.CryptographicAttributeObjectCollection.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.CryptographicAttributeObjectCollection.IsSynchronized
 author: "mairaw"
 ms.author: "mairaw"

@@ -38,10 +38,3 @@ uid: System.Windows.Media.Animation.LinearInt32KeyFrame.#ctor(System.Int32,Syste
 ms.author: "kempb"
 manager: "ghogen"
 ---
-
----
-uid: System.Windows.Media.Animation.LinearInt32KeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

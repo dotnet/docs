@@ -160,13 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.TraceListener.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.TraceListener.Fail(System.String,System.String)
 author: "mairaw"
 ms.author: "mairaw"
@@ -224,13 +217,6 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.TraceListener.Fail
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.TraceListener.Dispose
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

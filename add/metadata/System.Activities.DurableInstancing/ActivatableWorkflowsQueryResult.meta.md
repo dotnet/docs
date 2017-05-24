@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivationParameters
 author: "Erikre"
 ms.author: "erikre"

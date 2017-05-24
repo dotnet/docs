@@ -59,12 +59,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.Dispose
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScrollBar.ButtonColor
 ms.author: "mblythe"
 manager: "mblythe"

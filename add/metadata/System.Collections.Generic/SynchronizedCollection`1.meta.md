@@ -146,13 +146,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Collections.Generic.SynchronizedCollection`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Collections.Generic.SynchronizedCollection`1.Items
 author: "Erikre"
 ms.author: "erikre"

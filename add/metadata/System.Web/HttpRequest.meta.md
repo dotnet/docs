@@ -314,13 +314,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpRequest.InsertEntityBody
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpRequest.TotalBytes
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -392,13 +385,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.HttpRequest.GetBufferlessInputStream
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

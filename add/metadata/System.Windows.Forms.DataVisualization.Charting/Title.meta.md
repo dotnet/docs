@@ -135,12 +135,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Title.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.Title.#ctor(System.String,System.Windows.Forms.DataVisualization.Charting.Docking,System.Drawing.Font,System.Drawing.Color)
 ms.author: "mblythe"
 manager: "mblythe"

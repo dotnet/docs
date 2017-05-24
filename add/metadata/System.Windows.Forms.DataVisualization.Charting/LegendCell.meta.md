@@ -117,12 +117,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.LegendCell.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.LegendCell.ImageTransparentColor
 ms.author: "mblythe"
 manager: "mblythe"

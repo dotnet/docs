@@ -66,13 +66,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.ApplicationCatalog.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.ApplicationCatalog.GetExports(System.ComponentModel.Composition.Primitives.ImportDefinition)
 author: "rpetrusha"
 ms.author: "ronpet"

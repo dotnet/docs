@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.EntryPointNotFoundException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.EntryPointNotFoundException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

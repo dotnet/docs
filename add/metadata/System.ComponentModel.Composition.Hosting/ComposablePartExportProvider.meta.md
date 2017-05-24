@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.GetExportsCore(System.ComponentModel.Composition.Primitives.ImportDefinition,System.ComponentModel.Composition.Hosting.AtomicComposition)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -49,13 +42,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.#ctor(System.ComponentModel.Composition.Hosting.CompositionOptions)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.ComposablePartExportProvider.#ctor
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

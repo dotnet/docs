@@ -35,12 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Triplet.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Triplet.Third
 ms.author: "riande"
 manager: "wpickett"

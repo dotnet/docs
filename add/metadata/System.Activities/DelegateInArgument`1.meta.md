@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DelegateInArgument`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DelegateInArgument`1.Set(System.Activities.ActivityContext,`0)
 author: "Erikre"
 ms.author: "erikre"

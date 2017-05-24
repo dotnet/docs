@@ -125,13 +125,6 @@ manager: "erikre"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: Microsoft.Build.Tasks.Xaml.CommandLineToolSwitch.Parents
 author: "Erikre"
 ms.author: "erikre"

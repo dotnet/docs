@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.ContractReference.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Discovery.ContractReference.Contract
 author: "Erikre"
 ms.author: "erikre"

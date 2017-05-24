@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.CompositionContractMismatchException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.CompositionContractMismatchException.#ctor(System.String,System.Exception)
 author: "rpetrusha"
 ms.author: "ronpet"

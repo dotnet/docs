@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeCatchClause.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeCatchClause.CatchExceptionType
 author: "rpetrusha"
 ms.author: "ronpet"

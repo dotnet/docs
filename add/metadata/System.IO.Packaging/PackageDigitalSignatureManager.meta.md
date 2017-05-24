@@ -160,13 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Packaging.PackageDigitalSignatureManager.Countersign
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.IO.Packaging.PackageDigitalSignatureManager.CertificateOption
 author: "stevehoag"
 ms.author: "shoag"

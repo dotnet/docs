@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ClientServices.ClientFormsIdentity.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Web.ClientServices.ClientFormsIdentity.Dispose(System.Boolean)
 author: "stevehoag"
 ms.author: "shoag"

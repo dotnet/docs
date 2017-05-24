@@ -64,11 +64,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Channels.PeerCustomResolverBindingElement.#ctor
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Channels.PeerCustomResolverBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
 manager: "ghogen"
 ---

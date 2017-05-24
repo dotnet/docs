@@ -125,13 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.CategoryAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.CategoryAttribute.#ctor(System.String)
 author: "stevehoag"
 ms.author: "shoag"

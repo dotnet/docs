@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.RouteData.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Routing.RouteData.GetRequiredString(System.String)
 author: "tdykstra"
 ms.author: "tdykstra"

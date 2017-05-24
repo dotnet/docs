@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.DesignerTransaction.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.DesignerTransaction.#ctor(System.String)
 author: "stevehoag"
 ms.author: "shoag"

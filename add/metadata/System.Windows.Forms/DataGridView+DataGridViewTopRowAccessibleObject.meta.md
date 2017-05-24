@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridView.DataGridViewTopRowAccessibleObject.Role
 ms.author: "kempb"
 manager: "ghogen"

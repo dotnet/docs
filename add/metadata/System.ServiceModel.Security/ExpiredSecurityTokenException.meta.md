@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.ExpiredSecurityTokenException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.ExpiredSecurityTokenException.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

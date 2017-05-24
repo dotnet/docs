@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeCatchClauseCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeCatchClauseCollection.Insert(System.Int32,System.CodeDom.CodeCatchClause)
 author: "rpetrusha"
 ms.author: "ronpet"

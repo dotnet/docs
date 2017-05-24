@@ -159,13 +159,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Application.Shutdown
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Application.Windows
 ms.author: "kempb"
 manager: "ghogen"

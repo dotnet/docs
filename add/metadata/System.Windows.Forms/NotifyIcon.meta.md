@@ -96,13 +96,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.NotifyIcon.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.NotifyIcon.Icon
 author: "stevehoag"
 ms.author: "shoag"

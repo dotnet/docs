@@ -756,13 +756,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.TypeBuilder.GetEvents
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.TypeBuilder.GetConstructor
 manager: "ghogen"
 ---
@@ -821,13 +814,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.Emit.TypeBuilder.DefineDefaultConstructor(System.Reflection.MethodAttributes)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Emit.TypeBuilder.MakeArrayType
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

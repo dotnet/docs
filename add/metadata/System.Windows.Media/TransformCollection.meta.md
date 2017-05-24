@@ -152,13 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.TransformCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.TransformCollection.System#Collections#IList#Remove(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

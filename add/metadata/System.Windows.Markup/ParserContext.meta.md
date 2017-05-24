@@ -42,8 +42,3 @@ manager: "martinek"
 uid: System.Windows.Markup.ParserContext.XmlSpace
 manager: "martinek"
 ---
-
----
-uid: System.Windows.Markup.ParserContext.#ctor
-manager: "martinek"
----

@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymWriter.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymWriter.Dispose(System.Boolean)
 author: "mairaw"
 ms.author: "mairaw"
@@ -161,13 +154,6 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.SymbolStore.SymWriter.InitWriter(System.Boolean)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymWriter.Dispose
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

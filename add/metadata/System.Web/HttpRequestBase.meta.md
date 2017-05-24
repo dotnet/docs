@@ -370,13 +370,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpRequestBase.GetBufferlessInputStream
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpRequestBase.ContentLength
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -399,13 +392,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.HttpRequestBase.Files
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.HttpRequestBase.InsertEntityBody
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

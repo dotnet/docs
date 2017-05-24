@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.AsyncLocal`1.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.AsyncLocal`1.#ctor(System.Action{System.Threading.AsyncLocalValueChangedArgs{`0}})
 author: "rpetrusha"
 ms.author: "ronpet"

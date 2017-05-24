@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.RightsManagement.CryptoProvider.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Security.RightsManagement.CryptoProvider.Dispose(System.Boolean)
 author: "stevehoag"
 ms.author: "shoag"

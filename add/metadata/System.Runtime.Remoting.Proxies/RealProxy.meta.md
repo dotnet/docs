@@ -87,8 +87,3 @@ manager: "ghogen"
 uid: System.Runtime.Remoting.Proxies.RealProxy.Invoke(System.Runtime.Remoting.Messaging.IMessage)
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Proxies.RealProxy.#ctor
-manager: "ghogen"
----

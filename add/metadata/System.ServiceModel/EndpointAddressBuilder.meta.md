@@ -55,13 +55,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.EndpointAddressBuilder.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.EndpointAddressBuilder.Uri
 author: "Erikre"
 ms.author: "erikre"

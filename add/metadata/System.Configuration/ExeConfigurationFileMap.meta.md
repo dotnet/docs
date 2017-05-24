@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ExeConfigurationFileMap.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ExeConfigurationFileMap.#ctor(System.String)
 author: "tdykstra"
 ms.author: "tdykstra"

@@ -67,13 +67,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Imaging.ColorConvertedBitmap.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Imaging.ColorConvertedBitmap.EndInit
 author: "stevehoag"
 ms.author: "shoag"

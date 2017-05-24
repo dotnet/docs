@@ -23,12 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.NonVisualControlAttribute.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.NonVisualControlAttribute.IsDefaultAttribute
 ms.author: "riande"
 manager: "wpickett"

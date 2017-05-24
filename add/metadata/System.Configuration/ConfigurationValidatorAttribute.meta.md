@@ -11,12 +11,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationValidatorAttribute.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConfigurationValidatorAttribute.ValidatorInstance
 ms.author: "riande"
 manager: "wpickett"

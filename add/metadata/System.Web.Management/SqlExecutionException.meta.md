@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Management.SqlExecutionException.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Management.SqlExecutionException.Commands
 author: "tdykstra"
 ms.author: "tdykstra"

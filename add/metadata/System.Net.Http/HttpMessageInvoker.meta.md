@@ -39,9 +39,3 @@ uid: System.Net.Http.HttpMessageInvoker.#ctor
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.Http.HttpMessageInvoker.Dispose
-ms.author: "bobdel"
-manager: "markl"
----

@@ -32,10 +32,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Syndication.Rss20ItemFormatter`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

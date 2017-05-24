@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeIndexerExpression.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeIndexerExpression.Indices
 author: "rpetrusha"
 ms.author: "ronpet"

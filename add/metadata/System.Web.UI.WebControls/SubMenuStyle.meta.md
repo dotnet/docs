@@ -53,12 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.SubMenuStyle.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.SubMenuStyle.CopyFrom(System.Web.UI.WebControls.Style)
 ms.author: "riande"
 manager: "wpickett"
@@ -66,12 +60,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.WebControls.SubMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.SubMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetProperties
 ms.author: "riande"
 manager: "wpickett"
 ---
@@ -114,12 +102,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.WebControls.SubMenuStyle.#ctor(System.Web.UI.StateBag)
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.SubMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents
 ms.author: "riande"
 manager: "wpickett"
 ---

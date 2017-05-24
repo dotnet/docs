@@ -132,13 +132,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataSet.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataSet.GetSerializationData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -566,13 +559,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataSet.HasChanges
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataSet.WriteXml(System.IO.TextWriter,System.Data.XmlWriteMode)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -636,13 +622,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataSet.CreateDataReader
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataSet.IsInitialized
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -651,13 +630,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.DataSet.Tables
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.DataSet.GetChanges
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

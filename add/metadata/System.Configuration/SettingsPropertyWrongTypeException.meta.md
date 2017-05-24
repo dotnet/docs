@@ -27,9 +27,3 @@ uid: System.Configuration.SettingsPropertyWrongTypeException.#ctor
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Configuration.SettingsPropertyWrongTypeException.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

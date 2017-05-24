@@ -279,13 +279,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataView.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataView.UpdateIndex
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -489,13 +482,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataView.ToTable
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataView.Dispose(System.Boolean)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -574,13 +560,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.DataView.FindRows(System.Object[])
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.DataView.UpdateIndex
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

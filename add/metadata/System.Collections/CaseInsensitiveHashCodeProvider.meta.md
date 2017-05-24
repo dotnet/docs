@@ -38,13 +38,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.CaseInsensitiveHashCodeProvider.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.CaseInsensitiveHashCodeProvider.Default
 author: "mairaw"
 ms.author: "mairaw"

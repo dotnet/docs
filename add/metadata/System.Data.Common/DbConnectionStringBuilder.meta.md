@@ -223,13 +223,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetEvents
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbConnectionStringBuilder.ToString
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -245,13 +238,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbConnectionStringBuilder.Clear
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetProperties
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
@@ -308,13 +294,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbConnectionStringBuilder.ConnectionString
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.#ctor
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

@@ -59,12 +59,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAdvice.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlAdvice.AssertionIdReferences
 ms.author: "v-jibran"
 manager: "markgal"

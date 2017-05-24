@@ -18,10 +18,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.AccessControl.FileSecurity.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

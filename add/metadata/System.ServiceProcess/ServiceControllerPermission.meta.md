@@ -39,10 +39,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.ServiceProcess.ServiceControllerPermission.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

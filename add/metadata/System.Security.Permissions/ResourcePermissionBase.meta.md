@@ -118,13 +118,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Permissions.ResourcePermissionBase.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Permissions.ResourcePermissionBase.Any
 author: "mairaw"
 ms.author: "mairaw"

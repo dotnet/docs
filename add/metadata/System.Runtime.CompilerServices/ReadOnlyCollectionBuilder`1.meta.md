@@ -181,13 +181,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.System#Collections#IList#Item(System.Int32)
 author: "mairaw"
 ms.author: "mairaw"
@@ -217,13 +210,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.ToArray
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.Reverse
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

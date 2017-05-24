@@ -45,9 +45,3 @@ uid: System.Web.UI.DataVisualization.Charting.ChartElement.Dispose
 ms.author: "mblythe"
 manager: "mblythe"
 ---
-
----
-uid: System.Web.UI.DataVisualization.Charting.ChartElement.Dispose
-ms.author: "mblythe"
-manager: "mblythe"
----

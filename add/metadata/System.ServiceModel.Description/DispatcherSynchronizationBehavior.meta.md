@@ -55,13 +55,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.DispatcherSynchronizationBehavior.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.DispatcherSynchronizationBehavior.System#ServiceModel#Description#IEndpointBehavior#Validate(System.ServiceModel.Description.ServiceEndpoint)
 author: "Erikre"
 ms.author: "erikre"

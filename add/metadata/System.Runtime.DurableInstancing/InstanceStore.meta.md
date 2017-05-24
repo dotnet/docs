@@ -90,13 +90,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstanceStore.CreateInstanceHandle
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.DurableInstancing.InstanceStore.#ctor
 author: "Erikre"
 ms.author: "erikre"

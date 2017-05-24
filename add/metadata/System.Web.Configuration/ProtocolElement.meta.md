@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.ProtocolElement.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Configuration.ProtocolElement.ProcessHandlerType
 author: "tdykstra"
 ms.author: "tdykstra"

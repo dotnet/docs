@@ -182,8 +182,3 @@ manager: "martinek"
 uid: System.Windows.Markup.XmlnsDictionary.PopScope
 manager: "martinek"
 ---
-
----
-uid: System.Windows.Markup.XmlnsDictionary.#ctor
-manager: "martinek"
----

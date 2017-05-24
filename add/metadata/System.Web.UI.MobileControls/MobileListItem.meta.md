@@ -65,12 +65,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.MobileListItem.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.MobileControls.MobileListItem.DataItem
 ms.author: "riande"
 manager: "wpickett"

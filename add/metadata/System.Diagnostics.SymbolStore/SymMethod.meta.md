@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymMethod.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymMethod.Dispose(System.Boolean)
 author: "mairaw"
 ms.author: "mairaw"

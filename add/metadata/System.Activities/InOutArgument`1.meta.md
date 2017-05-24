@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.InOutArgument`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.InOutArgument`1.FromVariable(System.Activities.Variable{`0})
 author: "Erikre"
 ms.author: "erikre"

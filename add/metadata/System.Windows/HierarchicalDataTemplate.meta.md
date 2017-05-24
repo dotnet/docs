@@ -68,13 +68,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.HierarchicalDataTemplate.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.HierarchicalDataTemplate.ItemStringFormat
 author: "stevehoag"
 ms.author: "shoag"

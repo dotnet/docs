@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.Queue`1.Peek
 author: "mairaw"
 ms.author: "mairaw"

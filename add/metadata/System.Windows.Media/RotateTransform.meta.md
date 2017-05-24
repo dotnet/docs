@@ -51,12 +51,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.RotateTransform.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.RotateTransform.Value
 author: "stevehoag"
 ms.author: "shoag"

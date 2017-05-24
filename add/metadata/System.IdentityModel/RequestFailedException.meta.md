@@ -23,12 +23,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.RequestFailedException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.RequestFailedException.#ctor(System.String)
 ms.author: "v-jibran"
 manager: "markgal"

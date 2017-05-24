@@ -153,13 +153,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.Evidence.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.Evidence.GetHostEnumerator
 author: "mairaw"
 ms.author: "mairaw"

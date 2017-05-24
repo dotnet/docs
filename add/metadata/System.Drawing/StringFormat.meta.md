@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.StringFormat.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.StringFormat.#ctor(System.Drawing.StringFormatFlags)
 author: "stevehoag"
 ms.author: "shoag"

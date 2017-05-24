@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintCommitAttributesException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintCommitAttributesException.#ctor(System.String,System.Exception)
 author: "stevehoag"
 ms.author: "shoag"

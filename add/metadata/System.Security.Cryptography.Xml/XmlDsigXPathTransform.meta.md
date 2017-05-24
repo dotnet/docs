@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlDsigXPathTransform.GetOutput
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.XmlDsigXPathTransform.GetInnerXml
 author: "mairaw"
 ms.author: "mairaw"

@@ -349,13 +349,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Single.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Single.op_Inequality(System.Single,System.Single)
 author: "rpetrusha"
 ms.author: "ronpet"

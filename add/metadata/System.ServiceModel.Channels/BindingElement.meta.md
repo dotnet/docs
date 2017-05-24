@@ -60,10 +60,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Channels.BindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

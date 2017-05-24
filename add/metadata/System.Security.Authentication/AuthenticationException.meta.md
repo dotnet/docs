@@ -27,9 +27,3 @@ uid: System.Security.Authentication.AuthenticationException.#ctor(System.String)
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Security.Authentication.AuthenticationException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

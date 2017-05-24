@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.WebMethodAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.WebMethodAttribute.BufferResponse
 author: "Erikre"
 ms.author: "erikre"

@@ -118,13 +118,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataColumnCollection.Add
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataColumnCollection.IndexOf(System.Data.DataColumn)
 author: "JennieHubbard"
 ms.author: "jhubbard"

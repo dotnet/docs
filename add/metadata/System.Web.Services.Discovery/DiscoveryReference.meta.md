@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.DiscoveryReference.Resolve
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Discovery.DiscoveryReference.FilenameFromUrl(System.String)
 author: "Erikre"
 ms.author: "erikre"

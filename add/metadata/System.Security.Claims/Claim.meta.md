@@ -125,12 +125,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.Security.Claims.Claim.Clone
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.Security.Claims.Claim.CustomSerializationData
 ms.author: "v-jibran"
 manager: "markgal"

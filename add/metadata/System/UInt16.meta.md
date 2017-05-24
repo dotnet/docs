@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.UInt16.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.UInt16.System#IConvertible#ToDouble(System.IFormatProvider)
 author: "rpetrusha"
 ms.author: "ronpet"

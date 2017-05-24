@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.EditingContext.Dispose
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.EditingContext.Services
 author: "Erikre"
 ms.author: "erikre"

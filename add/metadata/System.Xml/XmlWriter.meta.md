@@ -475,13 +475,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlWriter.WriteStartDocumentAsync
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlWriter.LookupPrefix(System.String)
 author: "mairaw"
 ms.author: "mairaw"
@@ -636,13 +629,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlWriter.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlWriter.WriteProcessingInstruction(System.String,System.String)
 author: "mairaw"
 ms.author: "mairaw"
@@ -700,13 +686,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlWriter.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlWriter.WriteStartDocument
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

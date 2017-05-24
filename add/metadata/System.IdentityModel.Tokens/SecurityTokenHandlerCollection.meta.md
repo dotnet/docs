@@ -185,12 +185,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollection.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CanReadToken
 ms.author: "v-jibran"
 manager: "markgal"
@@ -216,12 +210,6 @@ manager: "markgal"
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CanReadToken(System.Xml.XmlReader)
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CreateDefaultSecurityTokenHandlerCollection
 ms.author: "v-jibran"
 manager: "markgal"
 ---

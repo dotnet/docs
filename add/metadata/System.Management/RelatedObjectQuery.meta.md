@@ -87,8 +87,3 @@ manager: "jillfra"
 uid: System.Management.RelatedObjectQuery.#ctor(System.String)
 manager: "jillfra"
 ---
-
----
-uid: System.Management.RelatedObjectQuery.#ctor
-manager: "jillfra"
----

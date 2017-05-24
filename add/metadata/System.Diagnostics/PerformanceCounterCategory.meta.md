@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.GetCategories
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.PerformanceCounterCategory.MachineName
 author: "mairaw"
 ms.author: "mairaw"
@@ -146,21 +139,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.PerformanceCounterCategory.#ctor(System.String,System.String)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.GetCounters
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

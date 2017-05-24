@@ -17,12 +17,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.LimitExceededException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.LimitExceededException.#ctor(System.String)
 ms.author: "v-jibran"
 manager: "markgal"

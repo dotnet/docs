@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeExpressionCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeExpressionCollection.Contains(System.CodeDom.CodeExpression)
 author: "rpetrusha"
 ms.author: "ronpet"

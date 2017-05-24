@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeDeclaration.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTypeDeclaration.PopulateMembers
 author: "rpetrusha"
 ms.author: "ronpet"

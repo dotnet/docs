@@ -130,10 +130,3 @@ author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
 ---
-
----
-uid: System.Data.Objects.DataClasses.IRelatedEnd.Load
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----

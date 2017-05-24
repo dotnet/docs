@@ -188,13 +188,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ColorMatrix.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ColorMatrix.Item(System.Int32,System.Int32)
 author: "stevehoag"
 ms.author: "shoag"

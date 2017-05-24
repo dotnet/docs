@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GuidelineSet.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.GuidelineSet.GuidelinesXProperty
 ms.author: "kempb"
 manager: "ghogen"

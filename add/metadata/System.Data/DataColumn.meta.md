@@ -153,13 +153,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataColumn.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataColumn.CheckUnique
 author: "JennieHubbard"
 ms.author: "jhubbard"

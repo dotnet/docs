@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform.GetOutput
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform.#ctor(System.Boolean)
 author: "mairaw"
 ms.author: "mairaw"
@@ -63,13 +56,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform.LoadInnerXml(System.Xml.XmlNodeList)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigEnvelopedSignatureTransform.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

@@ -245,12 +245,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ControlDesigner.CreatePlaceHolderDesignTimeHtml
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.ControlDesigner.InvokeTransactedChange(System.IServiceProvider,System.ComponentModel.IComponent,System.Web.UI.Design.TransactedChangeCallback,System.Object,System.String,System.ComponentModel.MemberDescriptor)
 ms.author: "riande"
 manager: "wpickett"
@@ -258,12 +252,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.CreateViewControl
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetDesignTimeHtml
 ms.author: "riande"
 manager: "wpickett"
 ---
@@ -300,12 +288,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.DesignTimeElementView
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.GetViewRendering
 ms.author: "riande"
 manager: "wpickett"
 ---
@@ -366,12 +348,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.Design.ControlDesigner.ID
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.ControlDesigner.Invalidate
 ms.author: "riande"
 manager: "wpickett"
 ---

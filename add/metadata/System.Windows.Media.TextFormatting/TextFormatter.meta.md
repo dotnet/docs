@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.TextFormatting.TextFormatter.Create
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.TextFormatting.TextFormatter.Dispose
 author: "stevehoag"
 ms.author: "shoag"

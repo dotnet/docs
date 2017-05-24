@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewItemEventArgs.DrawText
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DrawListViewItemEventArgs.Item
 author: "stevehoag"
 ms.author: "shoag"

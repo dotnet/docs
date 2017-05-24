@@ -54,11 +54,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont(System.Boolean)
 manager: "leannef"
 ---

@@ -188,13 +188,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.HashSet`1.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.HashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
 author: "mairaw"
 ms.author: "mairaw"

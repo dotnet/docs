@@ -81,13 +81,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.StringReader.Read
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)
 author: "mairaw"
 ms.author: "mairaw"

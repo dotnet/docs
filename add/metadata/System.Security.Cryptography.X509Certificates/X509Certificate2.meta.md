@@ -181,13 +181,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Certificate2.ToString
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
 author: "mairaw"
 ms.author: "mairaw"
@@ -308,13 +301,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.X509Certificates.X509Certificate2.NotAfter
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

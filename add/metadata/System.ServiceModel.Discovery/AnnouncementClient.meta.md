@@ -69,20 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Open
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Close
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnline(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)
 author: "Erikre"
 ms.author: "erikre"
@@ -140,13 +126,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementClient.System#IDisposable#Dispose
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.AnnouncementClient.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

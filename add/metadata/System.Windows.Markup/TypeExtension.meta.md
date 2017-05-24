@@ -14,11 +14,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.TypeExtension.#ctor
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.TypeExtension.#ctor(System.Type)
 manager: "martinek"
 ---

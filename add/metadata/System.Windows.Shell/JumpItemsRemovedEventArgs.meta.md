@@ -25,10 +25,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Windows.Shell.JumpItemsRemovedEventArgs.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

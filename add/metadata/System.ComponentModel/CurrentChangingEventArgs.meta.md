@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.CurrentChangingEventArgs.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.CurrentChangingEventArgs.Cancel
 author: "stevehoag"
 ms.author: "shoag"

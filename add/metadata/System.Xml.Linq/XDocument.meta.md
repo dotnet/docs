@@ -202,13 +202,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XDocument.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XDocument.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)
 author: "mairaw"
 ms.author: "mairaw"

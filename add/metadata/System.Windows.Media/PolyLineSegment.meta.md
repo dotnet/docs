@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.PolyLineSegment.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.PolyLineSegment.Points
 author: "stevehoag"
 ms.author: "shoag"

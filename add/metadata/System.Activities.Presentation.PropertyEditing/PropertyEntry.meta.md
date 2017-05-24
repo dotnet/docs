@@ -153,13 +153,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.PropertyEditing.PropertyEntry.OnPropertyChanged(System.String)
 author: "Erikre"
 ms.author: "erikre"

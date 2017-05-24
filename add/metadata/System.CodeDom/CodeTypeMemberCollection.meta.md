@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeMemberCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTypeMemberCollection.Remove(System.CodeDom.CodeTypeMember)
 author: "rpetrusha"
 ms.author: "ronpet"

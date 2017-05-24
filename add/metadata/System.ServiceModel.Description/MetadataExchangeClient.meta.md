@@ -97,13 +97,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.MetadataExchangeClient.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.MetadataExchangeClient.GetMetadataAsync(System.Uri,System.ServiceModel.Description.MetadataExchangeClientMode)
 author: "Erikre"
 ms.author: "erikre"
@@ -112,13 +105,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Description.MetadataExchangeClient.GetChannelFactory(System.ServiceModel.EndpointAddress,System.String,System.String)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Description.MetadataExchangeClient.GetMetadata
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -182,13 +168,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Description.MetadataExchangeClient.MaximumResolvedReferences
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Description.MetadataExchangeClient.GetMetadataAsync
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

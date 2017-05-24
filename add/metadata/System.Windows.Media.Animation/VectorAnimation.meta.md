@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.VectorAnimation.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.VectorAnimation.From
 author: "stevehoag"
 ms.author: "shoag"

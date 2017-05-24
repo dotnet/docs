@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Conversion.ErrorToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Conversion.Int(System.Decimal)
 author: "stevehoag"
 ms.author: "shoag"

@@ -67,20 +67,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.PathFigure.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.PathFigure.GetFlattenedPathFigure
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.PathFigure.IsFilled
 author: "stevehoag"
 ms.author: "shoag"

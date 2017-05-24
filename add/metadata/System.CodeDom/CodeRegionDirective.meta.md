@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeRegionDirective.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeRegionDirective.#ctor(System.CodeDom.CodeRegionMode,System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

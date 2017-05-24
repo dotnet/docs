@@ -279,13 +279,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Win32.RegistryKey.GetAccessControl
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Win32.RegistryKey.CreateSubKey(System.String,Microsoft.Win32.RegistryKeyPermissionCheck,Microsoft.Win32.RegistryOptions,System.Security.AccessControl.RegistrySecurity)
 author: "mairaw"
 ms.author: "mairaw"

@@ -286,13 +286,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebPart.SetPersonalizationDirty
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebPart.DisplayTitle
 author: "tdykstra"
 ms.author: "tdykstra"

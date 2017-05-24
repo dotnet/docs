@@ -680,12 +680,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStrip.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.ToolStrip.DefaultDropDownDirection
 author: "stevehoag"
 ms.author: "shoag"

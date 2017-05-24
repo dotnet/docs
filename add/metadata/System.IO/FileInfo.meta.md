@@ -125,13 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileInfo.GetAccessControl
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileInfo.DirectoryName
 author: "mairaw"
 ms.author: "mairaw"

@@ -160,13 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.SecurityException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.SecurityException.Demanded
 author: "mairaw"
 ms.author: "mairaw"

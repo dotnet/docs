@@ -123,13 +123,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.AttributeCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.AttributeCollection.System#Collections#IEnumerable#GetEnumerator
 author: "stevehoag"
 ms.author: "shoag"

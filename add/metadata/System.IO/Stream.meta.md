@@ -181,13 +181,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Stream.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
 author: "mairaw"
 ms.author: "mairaw"
@@ -273,13 +266,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.Stream.Close
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.Stream.FlushAsync
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

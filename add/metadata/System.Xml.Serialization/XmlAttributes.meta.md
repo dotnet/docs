@@ -55,13 +55,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlAttributes.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlAttributes.XmlArray
 author: "Erikre"
 ms.author: "erikre"

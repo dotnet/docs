@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.ThreadLocal`1.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.ThreadLocal`1.IsValueCreated
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -63,13 +56,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.ThreadLocal`1.#ctor(System.Boolean)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.ThreadLocal`1.Dispose
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

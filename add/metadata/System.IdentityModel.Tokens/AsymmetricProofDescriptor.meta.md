@@ -11,12 +11,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor(System.Security.Cryptography.RSA)
 ms.author: "v-jibran"
 manager: "markgal"

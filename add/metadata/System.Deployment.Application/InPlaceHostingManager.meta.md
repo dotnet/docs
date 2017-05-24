@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements(System.Boolean)
 author: "stevehoag"
 ms.author: "shoag"

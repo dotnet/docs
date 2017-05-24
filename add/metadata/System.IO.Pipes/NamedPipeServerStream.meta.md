@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Pipes.NamedPipeServerStream.WaitForConnectionAsync
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.Pipes.NamedPipeServerStream.#ctor(System.String,System.IO.Pipes.PipeDirection)
 author: "mairaw"
 ms.author: "mairaw"

@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.BinaryReader.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.BinaryReader.#ctor
 author: "mairaw"
 ms.author: "mairaw"
@@ -161,13 +154,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.BinaryReader.PeekChar
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.BinaryReader.Read
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

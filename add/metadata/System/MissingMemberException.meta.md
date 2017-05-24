@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.MissingMemberException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.MissingMemberException.ClassName
 author: "rpetrusha"
 ms.author: "ronpet"

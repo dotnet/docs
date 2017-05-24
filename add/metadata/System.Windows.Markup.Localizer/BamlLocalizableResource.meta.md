@@ -44,11 +44,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.Localizer.BamlLocalizableResource.#ctor
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.Localizer.BamlLocalizableResource.#ctor(System.String,System.String,System.Windows.LocalizationCategory,System.Boolean,System.Boolean)
 manager: "martinek"
 ---

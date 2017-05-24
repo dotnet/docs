@@ -304,13 +304,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.WriteLine
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.MobileControls.Adapters.XhtmlAdapters.XhtmlMobileTextWriter.SupportsNoWrapStyle
 author: "tdykstra"
 ms.author: "tdykstra"

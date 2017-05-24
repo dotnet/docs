@@ -303,12 +303,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.Axis.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.Axis.InterlacedColor
 ms.author: "mblythe"
 manager: "mblythe"

@@ -123,13 +123,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Clipboard.GetText
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Clipboard.ContainsImage
 author: "stevehoag"
 ms.author: "shoag"
@@ -138,13 +131,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Clipboard.Flush
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Clipboard.ContainsText
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

@@ -81,13 +81,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.PathFigureCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.PathFigureCollection.#ctor(System.Int32)
 author: "stevehoag"
 ms.author: "shoag"
@@ -211,13 +204,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.PathFigureCollection.System#Collections#IList#Remove(System.Object)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.PathFigureCollection.ToString
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

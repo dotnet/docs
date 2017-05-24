@@ -81,9 +81,3 @@ uid: System.Web.UI.DataVisualization.Charting.DataPoint.#ctor(System.Double,Syst
 ms.author: "mblythe"
 manager: "mblythe"
 ---
-
----
-uid: System.Web.UI.DataVisualization.Charting.DataPoint.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----

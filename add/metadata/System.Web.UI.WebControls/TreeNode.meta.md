@@ -263,12 +263,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.TreeNode.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.TreeNode.Depth
 ms.author: "riande"
 manager: "wpickett"

@@ -9,11 +9,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor(System.Type,System.Object)
 manager: "ghogen"
 ---

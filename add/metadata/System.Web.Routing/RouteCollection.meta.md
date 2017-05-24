@@ -189,13 +189,6 @@ uid: System.Web.Routing.RouteCollection.Item
 ---
 
 ---
-uid: System.Web.Routing.RouteCollection.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Routing.RouteCollection.GetVirtualPath(System.Web.Routing.RequestContext,System.String,System.Web.Routing.RouteValueDictionary)
 author: "tdykstra"
 ms.author: "tdykstra"

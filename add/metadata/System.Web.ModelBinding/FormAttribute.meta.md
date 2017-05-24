@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.FormAttribute.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.FormAttribute.GetModelName
 author: "tdykstra"
 ms.author: "tdykstra"

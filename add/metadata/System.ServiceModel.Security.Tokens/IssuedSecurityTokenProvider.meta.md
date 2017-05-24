@@ -188,13 +188,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.#ctor
 author: "Erikre"
 ms.author: "erikre"
@@ -217,13 +210,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Closed
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Open
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

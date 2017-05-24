@@ -61,11 +61,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.NetPeerTcpBinding.#ctor
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.NetPeerTcpBinding.Security
 manager: "ghogen"
 ---

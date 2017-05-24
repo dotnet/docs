@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.AmbiguousMatchException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.AmbiguousMatchException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

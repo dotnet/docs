@@ -137,13 +137,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Text.UnicodeEncoding.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.UnicodeEncoding.GetChars
 author: "rpetrusha"
 ms.author: "ronpet"

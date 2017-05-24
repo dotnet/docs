@@ -237,13 +237,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Globalization.DateTimeFormatInfo.YearMonthPattern
 author: "rpetrusha"
 ms.author: "ronpet"

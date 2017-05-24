@@ -65,12 +65,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.ParseChildrenAttribute.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.ParseChildrenAttribute.Default
 ms.author: "riande"
 manager: "wpickett"

@@ -19,13 +19,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.RoutedCommand.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.RoutedCommand.OwnerType
 author: "stevehoag"
 ms.author: "shoag"

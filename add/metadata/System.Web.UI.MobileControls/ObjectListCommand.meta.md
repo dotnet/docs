@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.ObjectListCommand.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.MobileControls.ObjectListCommand.#ctor(System.String,System.String)
 author: "tdykstra"
 ms.author: "tdykstra"

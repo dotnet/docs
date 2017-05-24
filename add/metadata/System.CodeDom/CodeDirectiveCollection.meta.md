@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeDirectiveCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeDirectiveCollection.AddRange(System.CodeDom.CodeDirectiveCollection)
 author: "rpetrusha"
 ms.author: "ronpet"

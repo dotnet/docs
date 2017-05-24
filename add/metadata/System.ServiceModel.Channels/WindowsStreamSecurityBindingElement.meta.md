@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.WindowsStreamSecurityBindingElement.GetTransportTokenAssertion
 author: "Erikre"
 ms.author: "erikre"

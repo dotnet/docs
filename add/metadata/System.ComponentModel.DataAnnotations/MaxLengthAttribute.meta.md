@@ -33,12 +33,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DataAnnotations.MaxLengthAttribute.Length
 ms.author: "riande"
 manager: "wpickett"

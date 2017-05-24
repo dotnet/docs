@@ -13,13 +13,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbException.#ctor(System.String)
 author: "JennieHubbard"
 ms.author: "jhubbard"

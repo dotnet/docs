@@ -76,20 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Design.UITypeEditor.GetEditStyle
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Design.UITypeEditor.GetPaintValueSupported
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Design.UITypeEditor.PaintValue
 author: "stevehoag"
 ms.author: "shoag"

@@ -118,13 +118,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Management.WebBaseEvent.ToString
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Management.WebBaseEvent.EventID
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -133,13 +126,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Management.WebBaseEvent.ToString(System.Boolean,System.Boolean)
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Management.WebBaseEvent.Raise
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

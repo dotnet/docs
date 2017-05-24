@@ -75,9 +75,3 @@ uid: System.Net.Cache.HttpRequestCachePolicy.CacheSyncDate
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.Cache.HttpRequestCachePolicy.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

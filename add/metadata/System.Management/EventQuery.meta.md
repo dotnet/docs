@@ -22,8 +22,3 @@ manager: "jillfra"
 uid: System.Management.EventQuery.#ctor
 manager: "jillfra"
 ---
-
----
-uid: System.Management.EventQuery.#ctor
-manager: "jillfra"
----

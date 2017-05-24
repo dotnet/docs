@@ -136,13 +136,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintTicket.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintTicket.DeviceFontSubstitution
 author: "stevehoag"
 ms.author: "shoag"

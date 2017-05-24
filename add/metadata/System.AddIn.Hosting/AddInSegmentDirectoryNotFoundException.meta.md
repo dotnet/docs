@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException.#ctor(System.String,System.Exception)
 author: "rpetrusha"
 ms.author: "ronpet"

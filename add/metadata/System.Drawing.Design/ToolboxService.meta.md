@@ -258,21 +258,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#GetToolboxItems
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#DeserializeToolboxItem
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#GetSelectedToolboxItem
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -413,13 +399,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Design.ToolboxService.CreateItemContainer
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Design.ToolboxService.GetItemContainers
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

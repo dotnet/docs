@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.RequestContext.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Routing.RequestContext.HttpContext
 author: "tdykstra"
 ms.author: "tdykstra"

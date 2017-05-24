@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Resources.ResourceSet.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Resources.ResourceSet.GetEnumerator
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -133,13 +126,6 @@ manager: "wpickett"
 
 ---
 uid: System.Resources.ResourceSet.GetDefaultReader
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Resources.ResourceSet.Dispose
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

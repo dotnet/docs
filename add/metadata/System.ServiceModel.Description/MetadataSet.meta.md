@@ -55,13 +55,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.MetadataSet.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.MetadataSet.ReadFrom(System.Xml.XmlReader)
 author: "Erikre"
 ms.author: "erikre"

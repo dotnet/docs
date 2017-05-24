@@ -314,13 +314,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.Metafile.GetMetafileHeader
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.Metafile.#ctor(System.String,System.IntPtr,System.Drawing.Rectangle,System.Drawing.Imaging.MetafileFrameUnit)
 author: "stevehoag"
 ms.author: "shoag"

@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Resolvers.XmlPreloadedResolver.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Resolvers.XmlPreloadedResolver.Add(System.Uri,System.Byte[],System.Int32,System.Int32)
 author: "mairaw"
 ms.author: "mairaw"

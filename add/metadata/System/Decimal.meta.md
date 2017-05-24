@@ -188,13 +188,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Decimal.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Decimal.GetTypeCode
 author: "rpetrusha"
 ms.author: "ronpet"

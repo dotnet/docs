@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.TypedOperationInfo.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.TypedOperationInfo.Clone
 author: "Erikre"
 ms.author: "erikre"

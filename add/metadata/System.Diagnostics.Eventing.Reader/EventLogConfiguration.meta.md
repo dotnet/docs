@@ -113,12 +113,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.Dispose
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.SecurityDescriptor
 ms.author: "jgalasyn"
 manager: "ghogen"

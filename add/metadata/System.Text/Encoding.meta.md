@@ -286,13 +286,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.Encoding.IsAlwaysNormalized
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -406,13 +399,6 @@ manager: "wpickett"
 
 ---
 uid: System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Text.Encoding.#ctor
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

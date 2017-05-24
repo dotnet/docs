@@ -11,12 +11,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Protocols.WSTrust.Renewing.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Protocols.WSTrust.Renewing.OkForRenewalAfterExpiration
 ms.author: "v-jibran"
 manager: "markgal"

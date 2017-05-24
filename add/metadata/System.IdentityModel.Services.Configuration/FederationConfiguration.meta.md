@@ -47,12 +47,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.Configuration.FederationConfiguration.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.Configuration.FederationConfiguration.WsFederationConfiguration
 ms.author: "v-jibran"
 manager: "markgal"

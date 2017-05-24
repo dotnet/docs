@@ -107,13 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.LocalPrintServer.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.LocalPrintServer.#ctor(System.Printing.LocalPrintServerIndexedProperty[])
 author: "stevehoag"
 ms.author: "shoag"

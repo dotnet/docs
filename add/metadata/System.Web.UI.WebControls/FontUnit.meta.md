@@ -137,12 +137,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.FontUnit.ToString
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.FontUnit.Larger
 ms.author: "riande"
 manager: "wpickett"

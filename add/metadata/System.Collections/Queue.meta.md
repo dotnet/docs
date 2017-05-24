@@ -111,13 +111,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Queue.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Queue.Clear
 author: "mairaw"
 ms.author: "mairaw"

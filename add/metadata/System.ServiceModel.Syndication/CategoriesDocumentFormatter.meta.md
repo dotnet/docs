@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.CategoriesDocumentFormatter.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.CategoriesDocumentFormatter.SetDocument(System.ServiceModel.Syndication.CategoriesDocument)
 author: "Erikre"
 ms.author: "erikre"

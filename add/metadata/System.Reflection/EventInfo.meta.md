@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.EventInfo.GetOtherMethods
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.EventInfo.IsSpecialName
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -112,13 +105,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.EventInfo.AddEventHandler(System.Object,System.Delegate)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.EventInfo.GetAddMethod
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -202,21 +188,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.EventInfo.GetRemoveMethod
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.EventInfo.AddMethod
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.EventInfo.GetRaiseMethod
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

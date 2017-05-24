@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.CompilerServices.StrongBox`1.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.CompilerServices.StrongBox`1.#ctor(`0)
 author: "mairaw"
 ms.author: "mairaw"

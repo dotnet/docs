@@ -67,10 +67,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.CodeDom.Compiler.CompilerError.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.SoapAttributes.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.SoapAttributes.#ctor(System.Reflection.ICustomAttributeProvider)
 author: "Erikre"
 ms.author: "erikre"

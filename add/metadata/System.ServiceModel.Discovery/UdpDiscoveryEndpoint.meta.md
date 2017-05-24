@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.UdpDiscoveryEndpoint.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.UdpDiscoveryEndpoint.TransportSettings
 author: "Erikre"
 ms.author: "erikre"

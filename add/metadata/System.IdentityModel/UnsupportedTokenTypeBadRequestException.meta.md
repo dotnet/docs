@@ -17,12 +17,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.UnsupportedTokenTypeBadRequestException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.UnsupportedTokenTypeBadRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "v-jibran"
 manager: "markgal"

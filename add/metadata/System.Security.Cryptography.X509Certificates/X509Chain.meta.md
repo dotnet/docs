@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Chain.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.X509Certificates.X509Chain.ChainPolicy
 author: "mairaw"
 ms.author: "mairaw"
@@ -63,13 +56,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.X509Certificates.X509Chain.ChainElements
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.X509Certificates.X509Chain.Dispose
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

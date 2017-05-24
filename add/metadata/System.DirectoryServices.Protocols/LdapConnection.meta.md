@@ -111,13 +111,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.LdapConnection.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.LdapConnection.EndSendRequest(System.IAsyncResult)
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -168,13 +161,6 @@ manager: "mbaldwin"
 
 ---
 uid: System.DirectoryServices.Protocols.LdapConnection.AuthType
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.Protocols.LdapConnection.Bind
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"

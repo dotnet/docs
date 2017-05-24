@@ -32,10 +32,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Printing.PrintSystemObjectPropertyChangedEventArgs.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

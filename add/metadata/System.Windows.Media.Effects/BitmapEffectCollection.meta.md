@@ -175,12 +175,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Effects.BitmapEffectCollection.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Effects.BitmapEffectCollection.Add(System.Windows.Media.Effects.BitmapEffect)
 author: "stevehoag"
 ms.author: "shoag"

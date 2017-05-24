@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Prefix
 author: "Erikre"
 ms.author: "erikre"

@@ -270,13 +270,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Ink.StrokeCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Ink.StrokeCollection.SetItem(System.Int32,System.Windows.Ink.Stroke)
 ms.author: "kempb"
 manager: "ghogen"

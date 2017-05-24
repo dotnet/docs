@@ -40,13 +40,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.List.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Documents.List.MarkerStyleProperty
 author: "stevehoag"
 ms.author: "shoag"

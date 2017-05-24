@@ -88,9 +88,9 @@ Starting with F# 4.1, you can separate digits with the underscore character (`_`
 ```fsharp
 let deadBeef = 0xDEAD_BEEF
 
-let deadBeefAsBits = 0b1101_1110_1010_1101_1011_1110_1010_1111
+let deadBeefAsBits = 0b1101_1110_1010_1101_1011_1110_1110_1111
 
-let ssn = 012_345_6789
+let ssn = 123_456_7890
 ```
 
 ## See Also

@@ -48,9 +48,7 @@ type Tracer() =
 
 ## Remarks
 
-You must specify an explicit default value for each optional parameter. You can't apply Caller Info attributes to parameters that aren't specified as optional.
-
-The Caller Info attributes don't make a parameter optional. Instead, they affect the default value that's passed in when the argument is omitted.
+Caller Info attributes can only be applied to optional parameters. You must supply an explicit value for each optional parameter. The Caller Info attributes cause the compiler to write the proper value for each optional parameter decorated with a Caller Info attribute.
 
 Caller Info values are emitted as literals into the Intermediate Language (IL) at compile time. Unlike the results of the [StackTrace](https://docs.microsoft.com/dotnet/api/system.diagnostics.stacktrace) property for exceptions, the results aren't affected by obfuscation.
 

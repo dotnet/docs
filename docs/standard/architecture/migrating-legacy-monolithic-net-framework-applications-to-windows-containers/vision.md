@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Vision
 
@@ -16,7 +18,7 @@ But not every application will benefit enough to justify the cost. That does not
 
 In this section, we will explore an application for eShopOnContainers, shown in Figure 7-1. This application would be used by members of the eShopOnContainers enterprise team to view and edit the product catalog.
 
-![](./media/image1.png){width="2.813998250218723in" height="1.9952602799650043in"}
+![](./media/image1.png)
 
 **Figure 7-1**. ASP.NET Web Forms application (legacy technology) on a Windows Container
 

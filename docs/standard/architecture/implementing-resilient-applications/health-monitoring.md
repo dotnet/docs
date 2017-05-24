@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Health monitoring
 
@@ -40,7 +42,7 @@ You could also use additional checks like the ones for Azure (Microsoft.Extensio
 
 Figure 10-6 shows the HealthChecks library in Visual Studio, ready to be used as a building block by any microservices.
 
-![](./media/image6.png){width="3.5005238407699037in" height="3.256497156605424in"}
+![](./media/image6.png)
 
 **Figure 10-6**. ASP.NET Core HealthChecks library source code in a Visual Studio solution
 
@@ -188,7 +190,7 @@ By default, the cache duration is internally set to 5 minutes, but you can chang
 
 When you have configured health checks as described here, once the microservice is running in Docker, you can directly check from a browser if it is healthy. (This does require that you are publishing the container port out of the Docker host, so you can access the container through localhost or through the external Docker host IP.) Figure 10-7 shows a request in a browser and the corresponding response.
 
-![](./media/image7.png){width="2.821058617672791in" height="0.7291666666666666in"}
+![](./media/image7.png)
 
 **Figure 10-7**. Checking health status of a single service from a browser
 
@@ -200,7 +202,7 @@ A watchdog is a separate service that can watch health and load across services,
 
 The eShopOnContainers sample contains a web page that displays sample health check reports, as shown in Figure 10-8. This is the simplest watchdog you could have, since all it does is shows the state of the microservices and web applications in eShopOnContainers. Usually a watchdog also takes actions when it detects unhealthy states.
 
-![](./media/image8.png){width="5.774469597550306in" height="3.5829385389326336in"}
+![](./media/image8.png)
 
 **Figure 10-8**. Sample health check report in eShopOnContainers
 
@@ -226,7 +228,7 @@ The final part of monitoring is visualizing the event stream, reporting on servi
 
 You can use simple custom applications showing the state of your services, like the custom page we showed when we explained [ASP.NET Core HealthChecks](https://github.com/aspnet/HealthChecks). Or you could use more advanced tools like Azure Application Insights and Operations Management Suite to raise alerts based on the stream of events.
 
-Finally, if you were storing all the event streams, you can use Microsoft Power BI or a third-party solution like Kibana or Splunk to visualize the data.[[]{#_Toc474844927 .anchor}]{#_Toc474337894 .anchor}
+Finally, if you were storing all the event streams, you can use Microsoft Power BI or a third-party solution like Kibana or Splunk to visualize the data.
 
 ### Additional resources
 

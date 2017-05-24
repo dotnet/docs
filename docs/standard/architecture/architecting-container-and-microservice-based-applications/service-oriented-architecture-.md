@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Service-oriented architecture 
 
@@ -17,6 +19,7 @@ Docker containers are useful (but not required) for both traditional service-ori
 Microservices derive from SOA, but SOA is different from microservices architecture. Features like big central brokers, central orchestrators at the organization level, and the [Enterprise Service Bus (ESB)](https://en.wikipedia.org/wiki/Enterprise_service_bus) are typical in SOA. But in most cases these are anti-patterns in the microservice community. In fact, some people argue that “The microservice architecture is SOA done right.”
 
 This guide focuses on microservices, because an SOA approach is less prescriptive than the requirements and techniques used in a microservice architecture. If you know how to build a microservice-based application, you also know how to build a simpler service-oriented application.
+
 
 
 

@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # State and data in Docker applications
 
@@ -32,7 +34,7 @@ The following provides more detail about these options.
 
 As shown in Figure 4-5, regular Docker volumes can be stored outside of the containers themselves but within the physical boundaries of the host server or VM. However, Docker containers cannot access a volume from one host server or VM to another. In other words, with these volumes, it is not possible to manage data shared between containers that run on different Docker hosts
 
-![](./media/image5.png){width="6.482958223972004in" height="3.088542213473316in"}
+![](./media/image5.png)
 
 **Figure 4-5**. Data volumes and external data sources for container-based applications
 

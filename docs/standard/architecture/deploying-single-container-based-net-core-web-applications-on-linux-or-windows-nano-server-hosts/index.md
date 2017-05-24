@@ -5,14 +5,10 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
--   [Vision](#vision)
--   [Application tour](#application-tour)
--   [Docker support](#docker-support)
--   [Troubleshooting](#troubleshooting)
-    -   [Stopping Docker containers ](#stopping-docker-containers)
-    -   [Adding Docker to your projects](#adding-docker-to-your-projects)
-
+# Deploying Single-Container-Based .NET Core Web Applications on Linux or Windows Nano Server Hosts
 
 
 >[!div class="step-by-step"]

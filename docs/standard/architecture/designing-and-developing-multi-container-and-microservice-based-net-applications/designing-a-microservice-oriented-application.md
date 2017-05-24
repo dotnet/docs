@@ -5,9 +5,12 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Designing a microservice-oriented application
 
+This section focuses on developing a hypothetical server-side enterprise application.
 
 ## Application specifications
 
@@ -61,7 +64,7 @@ So that you can focus on the architecture and technologies instead of thinking a
 
 The application consists of multiple subsystems, including several store UI front ends (a Web application and a native mobile app), along with the back-end microservices and containers for all the required server-side operations. Figure 8-1 shows the architecture of the reference application.
 
-![](./media/image1.png){width="6.620138888888889in" height="3.8993055555555554in"}
+![](./media/image1.png)
 
 **Figure 8-1**. The eShopOnContainers reference application, showing the direct client-to-microservice communication and the event bus
 
@@ -140,7 +143,7 @@ As mentioned in the architecture section, when designing and building a complex 
 
 The external architecture is the microservice architecture composed by multiple service, following the principles described in the architecture section of this guide. However, depending on the nature of each microservice, and independently of high-level microservice architecture you choose, it is common and sometimes advisable to have different internal architectures, each based on different patterns, for different microservices. The microservices can even use different technologies and programming languages. Figure 8-2 illustrates this diversity.
 
-![](./media/image2.png){width="6.145833333333333in" height="3.4049398512685913in"}
+![](./media/image2.png)
 
 **Figure 8-2**. External versus internal architecture and design
 
@@ -151,8 +154,10 @@ Another reason for a different technology per microservice might be the nature o
 The bottom line is that each microservice can have a different internal architecture based on different design patterns. Not all microservices should be implemented using advanced DDD patterns, because that would be over-engineering them. Similarly, complex microservices with ever-changing business logic should not be implemented as CRUD components, or you can end up with low-quality code.
 
 
+
 ## The new world: multiple architectural patterns and polyglot microservices
 
+There are many architectural patterns used by software architects and developers. The following are a few (mixing architecture styles and architecture patterns):
 
 -   Simple CRUD, single-tier, single-layer.
 
@@ -170,7 +175,7 @@ You can also build microservices with many technologies and languages, such as A
 
 The important point is that no particular architecture pattern or style, nor any particular technology, is right for all situations. Figure 8-3 shows some approaches and technologies (although not in any particular order) that could be used in different microservices.
 
-![](./media/image3.png){width="5.932291119860017in" height="3.8282600612423447in"}
+![](./media/image3.png)
 
 **Figure 8-3**. Multi-architectural patterns and the polyglot microservices world
 

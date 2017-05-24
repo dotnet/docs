@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Implementing reads/queries in a CQRS microservice
 
@@ -12,7 +14,7 @@ For reads/queries, the ordering microservice from the eShopOnContainers referenc
 
 The approach is simple, as shown in Figure 9-3. The API interface is implemented by the Web API controllers using any infrastructure (such as a micro ORM like Dapper) and returning dynamic ViewModels depending on the needs of the UI applications.
 
-![](./media/image3.png){width="6.259722222222222in" height="2.660416666666667in"}
+![](./media/image3.png)
 
 **Figure 9-3**. The simplest approach for queries in a CQRS microservice
 
@@ -20,8 +22,9 @@ This is the simplest possible approach for queries. The query definitions query 
 
 Since this is a simple approach, the code required for the queries side (such as code using a micro ORM like [Dapper](https://github.com/StackExchange/Dapper)) can be implemented [within the same Web API project](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Queries/OrderQueries.cs). Figure 9-4 shows this. The queries are defined in the **Ordering.API** microservice project within the eShopOnContainers solution.
 
-![](./media/image4.png){width="2.0154035433070865in" height="1.7914687226596675in"}
+![](./media/image4.png)
 
+**Figure 9-4**. Queries in the Ordering microservice in eShopOnContainers
 
 ## Using ViewModels specifically made for client apps, independent from domain model constraints
 
@@ -37,7 +40,7 @@ You can use any micro ORM, Entity Framework Core, or even plain ADO.NET for quer
 
 Dapper is an open source project (original created by Sam Saffron), and is part of the building blocks used in [Stack Overflow](https://stackoverflow.com/). To use Dapper, you just need to install it through the [Dapper NuGet package](https://www.nuget.org/packages/Dapper), as shown in the following figure.
 
-![](./media/image5.png){width="3.9620844269466318in" height="0.3406496062992126in"}
+![](./media/image5.png)
 
 You will also need to add a using statement so your code has access to the Dapper extension methods.
 
@@ -102,7 +105,7 @@ For most queries, you do not need to predefine a DTO or ViewModel class, which m
 #### Additional resources
 
 -   **Dapper\
-    **[*https://github.com/StackExchange/dapper-dot-net*](https://github.com/StackExchange/dapper-dot-net)[[[[[[[[[[]{#_Toc481090277 .anchor}]{#_Toc480984636 .anchor}]{#_Toc480993133 .anchor}]{#_Toc480368253 .anchor}]{#_Toc480361419 .anchor}]{#_Toc474844908 .anchor}]{#_Toc474337869 .anchor}]{#_Toc473731977 .anchor}]{#_Toc473731777 .anchor}]{#_Toc473041088 .anchor}
+    **[*https://github.com/StackExchange/dapper-dot-net*](https://github.com/StackExchange/dapper-dot-net)
 
 -   **Julie Lerman. Data Points - Dapper, Entity Framework and Hybrid Apps (MSDN Mag. article)**
 

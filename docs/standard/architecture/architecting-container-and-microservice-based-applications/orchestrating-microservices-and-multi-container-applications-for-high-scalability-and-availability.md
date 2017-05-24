@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Orchestrating microservices and multi-container applications for high scalability and availability
 
@@ -12,7 +14,7 @@ Using orchestrators for production-ready applications is essential if your appli
 
 Figure 4-22 illustrates deployment into a cluster of an application composed of multiple microservices (containers).
 
-![](./media/image22.PNG){width="6.582638888888889in" height="3.775in"}
+![](./media/image22.PNG)
 
 **Figure 4-22**. A cluster of containers
 
@@ -35,21 +37,21 @@ The concepts of a cluster and a scheduler are closely related, so the products p
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   Docker Swarm                                                                                                                                                                    Docker Swarm lets you cluster and schedule Docker containers. By using Swarm, you can turn a pool of Docker hosts into a single, virtual Docker host. Clients can make API requests to Swarm the same way they do to hosts, meaning that Swarm makes it easy for applications to scale to multiple hosts.
                                                                                                                                                                                   
-  ![http://rancher.com/wp-content/themes/rancher-2016/assets/images/swarm.png?v=2016-07-10-am](./media/image23.png){width="0.4377974628171479in" height="0.4377974628171479in"}   Docker Swarm is a product from Docker, the company.
+  ![http://rancher.com/wp-content/themes/rancher-2016/assets/images/swarm.png?v=2016-07-10-am](./media/image23.png)   Docker Swarm is a product from Docker, the company.
                                                                                                                                                                                   
                                                                                                                                                                                   Docker v1.12 or later can run native and built-in Swarm Mode.
 
   Mesosphere DC/OS                                                                                                                                                                Mesosphere Enterprise DC/OS (based on Apache Mesos) is a production-ready platform for running containers and distributed applications.
                                                                                                                                                                                   
-  ![https://mesosphere.com/wp-content/uploads/2016/04/logo-horizontal-styled.png](./media/image24.png){width="0.39682524059492563in" height="0.4869499125109361in"}               DC/OS works by abstracting a collection of the resources available in the cluster and making those resources available to components built on top of it. Marathon is usually used as a scheduler integrated with DC/OS.
+  ![https://mesosphere.com/wp-content/uploads/2016/04/logo-horizontal-styled.png](./media/image24.png)               DC/OS works by abstracting a collection of the resources available in the cluster and making those resources available to components built on top of it. Marathon is usually used as a scheduler integrated with DC/OS.
 
   Google Kubernetes                                                                                                                                                               Kubernetes is an open-source product that provides functionality that ranges from cluster infrastructure and container scheduling to orchestrating capabilities. It lets you automate deployment, scaling, and operations of application containers across clusters of hosts.
                                                                                                                                                                                   
-  ![https://pbs.twimg.com/media/Bt\_pEfqCAAAiVyz.png](./media/image25.png){width="0.4604385389326334in" height="0.4468252405949256in"}                                            Kubernetes provides a container-centric infrastructure that groups application containers into logical units for easy management and discovery.
+  ![https://pbs.twimg.com/media/Bt\_pEfqCAAAiVyz.png](./media/image25.png)                                            Kubernetes provides a container-centric infrastructure that groups application containers into logical units for easy management and discovery.
 
   Azure Service Fabric                                                                                                                                                            [Service Fabric](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-overview/) is a Microsoft microservices platform for building applications. It is an [orchestrator](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-cluster-resource-manager-introduction/) of services and creates clusters of machines. By default, Service Fabric deploys and activates services as processes, but Service Fabric can deploy services in Docker container images. More importantly, you can mix services in processes with services in containers in the same application.
                                                                                                                                                                                   
-  ![https://azure.microsoft.com/svghandler/service-fabric?width=600&height=315](./media/image26.png){width="0.45714238845144356in" height="0.41994094488188977in"}                As of May 2017, the feature of Service Fabric that supports deploying services as Docker containers is in preview state.
+  ![https://azure.microsoft.com/svghandler/service-fabric?width=600&height=315](./media/image26.png)                As of May 2017, the feature of Service Fabric that supports deploying services as Docker containers is in preview state.
                                                                                                                                                                                   
                                                                                                                                                                                   Service Fabric services can be developed in many ways, from using the [Service Fabric programming models ](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-choose-framework/)to deploying [guest executables](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-deploy-existing-app/) as well as containers. Service Fabric supports prescriptive application models like [stateful services](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-reliable-services-introduction/) and [Reliable Actors](https://azure.microsoft.com/en-us/documentation/articles/service-fabric-reliable-actors-introduction/).
   --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -68,7 +70,7 @@ ACS provides a way to simplify the creation, configuration, and management of a 
 
 Azure Container Service optimizes the configuration of popular Docker clustering open source tools and technologies specifically for Azure. You get an open solution that offers portability for both your containers and your application configuration. You select the size, the number of hosts, and the orchestrator tools, and Container Service handles everything else.
 
-![](./media/image27.png){width="6.541075021872266in" height="2.3333333333333335in"}
+![](./media/image27.png)
 
 **Figure 4-23**. Clustering choices in Azure Container Service
 
@@ -76,7 +78,7 @@ ACS leverages Docker images to ensure that your application containers are fully
 
 The Azure Container service enables you to take advantage of the enterprise-grade features of Azure while still maintaining application portability, including at the orchestration layers.
 
-![](./media/image28.png){width="3.077777777777778in" height="2.810416666666667in"}
+![](./media/image28.png)
 
 **Figure 4-24**. Orchestrators in ACS
 
@@ -106,7 +108,7 @@ ACS is currently available for Standard A, D, DS, G, and GS series Linux virtual
 -   **Mesosphere DC/OS Overview**\
     [*https://docs.mesosphere.com/1.7/overview/*](https://docs.mesosphere.com/1.7/overview/)
 
--   []{#_Toc474844876 .anchor}**Kubernetes.** The official site.\
+-   **Kubernetes.** The official site.\
     [*http://kubernetes.io/*](http://kubernetes.io/)
 
 ## Using Azure Service Fabric
@@ -125,7 +127,7 @@ Service Fabric is agnostic with respect to how you build your service, and you c
 
 As shown in Figure 4-25, you can create and run microservices in Service Fabric either as simple processes or as Docker containers. It is also possible to mix container-based microservices with process-based microservices within the same Service Fabric cluster.
 
-![](./media/image29.png){width="6.465277777777778in" height="2.629861111111111in"}
+![](./media/image29.png)
 
 **Figure 4-25**. Deploying microservices as processes or as containers in Azure Service Fabric
 
@@ -137,7 +139,7 @@ Service Fabric is a good example of a platform where you can define a different 
 
 As shown in Figure 4-26, and thinking from a logical/business microservice perspective, when implementing a Service Fabric Stateful Reliable Service, you usually will need to implement two tiers of services. The first is the back-end stateful reliable service, which handles multiple partitions. The second is the front-end service, or Gateway service, in charge of routing and data aggregation across multiple partitions or stateful service instances. That Gateway service also handles client-side communication with retry loops accessing the backend service used in conjunction with the Service Fabric [reverse proxy](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-reverseproxy).
 
-![](./media/image30.png){width="2.182292213473316in" height="2.7332163167104113in"}
+![](./media/image30.png)
 
 **Figure 4-26**. Business microservice with several stateful and stateless services in Service Fabric
 
@@ -149,7 +151,7 @@ In Service Fabric, you can group and deploy groups of services as a [Service Fab
 
 With regard to containers in Service Fabric, you can also deploy services in container images within a Service Fabric cluster. As Figure 4-27 shows, most of the time there will only be one container per service.
 
-![](./media/image31.png){width="4.218946850393701in" height="2.3593755468066493in"}
+![](./media/image31.png)
 
 **Figure 4-27**. Business microservice with several services (containers) in Service Fabric
 
@@ -157,7 +159,7 @@ However, so-called “sidecar” containers (two containers that must be deploye
 
 As of this writing (April 2017), in Service Fabric you cannot deploy SF Reliable Stateful Services on containers—you can only deploy guest containers, stateless services, or actor services in containers. But note that you can mix services in processes and services in containers in the same Service Fabric application, as shown in Figure 4-28.
 
-![](./media/image32.png){width="4.045207786526684in" height="2.473957786526684in"}
+![](./media/image32.png)
 
 **Figure 4-28**. Business microservice mapped to a Service Fabric application with containers and stateful services
 
@@ -169,7 +171,7 @@ As mentioned earlier, each microservice (logical Bounded Context) must own its d
 
 But the services themselves can also be stateful, which means that the data resides within the microservice. This data might exist not just on the same server, but within the microservice process, in memory and persisted on hard drives and replicated to other nodes. Figure 4-29 shows the different approaches.
 
-![](./media/image33.png){width="6.255207786526684in" height="1.7015638670166229in"}
+![](./media/image33.png)
 
 **Figure 4-29**. Stateless versus stateful microservices
 

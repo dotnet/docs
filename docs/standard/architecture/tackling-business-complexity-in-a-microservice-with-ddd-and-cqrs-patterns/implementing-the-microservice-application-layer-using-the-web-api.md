@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Implementing the microservice application layer using the Web API
 
@@ -14,7 +16,7 @@ As mentioned previously, the application layer can be implemented as part of the
 
 For instance, the application layer code of the ordering microservice is directly implemented as part of the **Ordering.API** project (an ASP.NET Core Web API project), as shown in Figure 9-19.
 
-![](./media/image20.png){width="1.8812018810148732in" height="1.7785083114610674in"}
+![](./media/image20.png)
 
 **Figure 9-19**. The application layer in the Ordering.API ASP.NET Core Web API project
 
@@ -251,7 +253,7 @@ The Command pattern is intrinsically related to the CQRS pattern that was introd
 
 As shown in Figure 9-20, the pattern is based on accepting commands from the client side, processing them based on the domain model rules, and finally persisting the states with transactions.
 
-![](./media/image21.png){width="5.852343613298338in" height="2.4459536307961507in"}
+![](./media/image21.png)
 
 **Figure 9-20**. High-level view of the commands or “transactional side” in a CQRS pattern
 
@@ -602,7 +604,7 @@ The other two main options, which are the recommended options, are:
 
 As shown in Figure 9-21, in a CQRS approach you use an intelligent mediator, similar to an in-memory bus, which is smart enough to redirect to the right command handler based on the type of the command or DTO being received. The single black arrows between components represent the dependencies between objects (in many cases, injected through DI) with their related interactions.
 
-![](./media/image22.png){width="6.289099956255468in" height="2.8997812773403324in"}
+![](./media/image22.png)
 
 **Figure 9-21**. Using the Mediator pattern in process in a single CQRS microservice
 
@@ -618,7 +620,7 @@ For example, in the eShopOnContainers ordering microservice, we implemented two 
 
 Another choice is to use asynchronous messages based on brokers or message queues, as shown in Figure 9-22. That option could also be combined with the mediator component right before the command handler.
 
-![](./media/image23.png){width="6.024889545056868in" height="3.2447911198600177in"}
+![](./media/image23.png)
 
 **Figure 9-22**. Using message queues (out of process and inter-process communication) with CQRS commands
 

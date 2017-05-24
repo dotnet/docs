@@ -5,12 +5,10 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
--   [What is Docker?](#what-is-docker)
-    -   [Comparing Docker containers with virtual machines](#comparing-docker-containers-with-virtual-machines)
--   [Docker terminology](#docker-terminology)
--   [Docker containers, images, and registries](#docker-containers-images-and-registries)
-
+# Introduction to Containers and Docker
 
 Containerization is an approach to software development in which an application or service, its dependencies, and its configuration (abstracted as deployment manifest files) are packaged together as a container image. The containerized application can be tested as a unit and deployed as a container image instance to the host operating system (OS).
 
@@ -20,7 +18,7 @@ Containers also isolate applications from each other on a shared OS. Containeriz
 
 Each container can run a whole web application or a service, as shown in Figure 2-1. In this example, Docker host is a container host, and App1, App2, Svc 1, and Svc 2 are containerized applications or services.
 
-![](./media/image1.png){width="2.3020833333333335in" height="1.7349048556430446in"}
+![](./media/image1.png)
 
 **Figure 2-1**. Multiple containers running on a container host
 
@@ -30,5 +28,5 @@ In short, containers offer the benefits of isolation, portability, agility, scal
 
 
 >[!div class="step-by-step"]
-[Previous] (../introduction/send-us-your-feedback!.md)
+[Previous] (../introduction/send-us-your-feedback.md)
 [Next] (what-is-docker.md)

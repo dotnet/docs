@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Applying simplified CQRS and DDD patterns in a microservice
 
@@ -24,7 +26,7 @@ CQRS means having two objects for a read/write operation where in other contexts
 
 An example of this kind of service is the ordering microservice from the eShopOnContainers reference application. This service implements a microservice based on a simplified CQRS approach. It uses a single data source or database, but two logical models plus DDD patterns for the transactional domain, as shown in Figure 9-2.
 
-![](./media/image2.png){width="6.279861111111111in" height="3.598611111111111in"}
+![](./media/image2.png)
 
 **Figure 9-2**. Simplified CQRS- and DDD-based microservice
 

@@ -5,10 +5,12 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Designing the infrastructure persistence layer
 
-[[]{#_Toc473731981 .anchor}]{#_Toc473731781 .anchor}Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice’s database). They contain the actual implementation of components such as repositories and [Unit of Work](http://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom EF DBContexts.
+Data persistence components provide access to the data hosted within the boundaries of a microservice (that is, a microservice’s database). They contain the actual implementation of components such as repositories and [Unit of Work](http://martinfowler.com/eaaCatalog/unitOfWork.html) classes, like custom EF DBContexts.
 
 ## The Repository pattern
 
@@ -30,7 +32,7 @@ If the user makes changes, the data to be updated will come from the client app 
 
 We must emphasize again that only one repository should be defined for each aggregate root, as shown in Figure 9-17. To achieve the goal of the aggregate root to maintain transactional consistency between all the objects within the aggregate, you should never create a repository for each table in the database.
 
-![](./media/image18.png){width="5.765530402449694in" height="4.426539807524059in"}
+![](./media/image18.png)
 
 **Figure 9-17**. The relationship between repositories, aggregates, and database tables
 

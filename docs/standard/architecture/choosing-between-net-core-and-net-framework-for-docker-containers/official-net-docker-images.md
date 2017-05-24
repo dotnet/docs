@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Official .NET Docker images
 
@@ -52,5 +54,5 @@ When you explore the .NET image repositories at Docker Hub, you will find multip
   microsoft/dotnet**:1.1.0-sdk-msbuild**   .NET Core 1.1 with SDKs included, on Linux
 
 >[!div class="step-by-step"]
-[Previous] (what-os-to-target-with-.net-containers.md)
+[Previous] (what-os-to-target-with-net-containers.md)
 [Next] (../architecting-container-and-microservice-based-applications/index.md)

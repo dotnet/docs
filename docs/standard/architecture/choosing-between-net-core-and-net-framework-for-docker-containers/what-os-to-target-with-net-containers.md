@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # What OS to target with .NET containers
 
@@ -12,7 +14,7 @@ Given the diversity of operating systems supported by Docker and the differences
 
 In Figure 3-1 you can see the possible OS version depending on the .NET framework used.
 
-![](./media/image1.png){width="6.217391732283464in" height="3.163745625546807in"}
+![](./media/image1.png)
 
 **Figure 3-1.** Operating systems to target depending on versions of the .NET framework
 
@@ -26,6 +28,7 @@ When you add the image name to your Dockerfile file, you can select the operatin
 
 
 
+
 >[!div class="step-by-step"]
-[Previous] (decision-table-.net-frameworks-to-use-for-docker.md)
-[Next] (official-.net-docker-images.md)
+[Previous] (decision-table-net-frameworks-to-use-for-docker.md)
+[Next] (official-net-docker-images.md)

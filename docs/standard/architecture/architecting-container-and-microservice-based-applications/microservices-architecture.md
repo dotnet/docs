@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Microservices architecture
 
@@ -16,7 +18,7 @@ Why a microservices architecture? In short, it provides long-term agility. Micro
 
 As an additional benefit, microservices can scale out independently. Instead of having a single monolithic application that you must scale out as a unit, you can instead scale out specific microservices. That way, you can scale just the functional area that needs more processing power or network bandwidth to support demand, rather than scaling out other areas of the application that do not need to be scaled. That means cost savings because you need less hardware.
 
-![](./media/image6.png){width="6.6349748468941385in" height="3.516587926509186in"}
+![](./media/image6.png)
 
 **Figure 4-6**. Monolithic deployment versus the microservices approach
 
@@ -56,6 +58,7 @@ Of these, only the first three are covered or introduced in this guide. The last
     [*https://aka.ms/dockerlifecycleebook*](https://aka.ms/dockerlifecycleebook)
 
 
+
 ## Data sovereignty per microservice
 
 An important rule for microservices architecture is that each microservice must own its domain data and logic. Just as a full application owns its logic and data, so must each microservice own its logic and data under an autonomous lifecycle, with independent deployment per microservice.
@@ -66,7 +69,7 @@ This principle is similar in [domain-driven design (DDD)](https://en.wikipedia.o
 
 On the other hand, the traditional (monolithic data) approach used in many applications is to have a single centralized database or just a few databases. This is often a normalized SQL database that is used for the whole application and all its internal subsystems, as shown in Figure 4-7.
 
-![](./media/image7.png){width="6.239583333333333in" height="3.7558442694663166in"}
+![](./media/image7.png)
 
 **Figure 4-7**. Data sovereignty comparison: monolithic database versus microservices
 
@@ -104,7 +107,7 @@ DDD benefits from microservices by getting real boundaries in the form of distri
     **[*http://martinfowler.com/bliki/PolyglotPersistence.html*](http://martinfowler.com/bliki/PolyglotPersistence.html)
 
 -   **Alberto Brandolini. Strategic Domain Driven Design with Context Mapping\
-    **[*https://www.infoq.com/articles/ddd-contextmapping*](https://www.infoq.com/articles/ddd-contextmapping)[[]{#_Toc480368187 .anchor}]{#_Toc480361355 .anchor}
+    **[*https://www.infoq.com/articles/ddd-contextmapping*](https://www.infoq.com/articles/ddd-contextmapping)
 
 ## Logical architecture versus physical architecture
 
@@ -122,7 +125,7 @@ Therefore, a business microservice or Bounded Context is a logical architecture 
 
 As Figure 4-8 shows, the catalog business microservice could be composed of several services or processes. These could be multiple ASP.NET Web API services or any other kind of services using HTTP or any other protocol. More importantly, the services could share the same data, as long as these services are cohesive with respect to the same business domain.
 
-![](./media/image8.png){width="2.9270833333333335in" height="1.8192629046369204in"}
+![](./media/image8.png)
 
 **Figure 4-8**. Business microservice with several physical services
 
@@ -144,9 +147,9 @@ The way you identify boundaries between multiple application contexts with a dif
 
 A second challenge is how to implement queries that retrieve data from several microservices, while avoiding chatty communication to the microservices from remote client apps. An example could be a single screen from a mobile app that needs to show user information that is owned by the basket, catalog, and user identity microservices. Another example would be a complex report involving many tables located in multiple microservices. The right solution depends on the complexity of the queries. But in any case, you will need a way to aggregate information if you want to improve the efficiency in the communications of your system. The most popular solutions are the following.
 
-**API Gateway**. For simple data aggregation from multiple microservices that own different databases, the recommended approach is an aggregation microservice referred to as an API Gateway. However, you need to be careful about implementing this pattern, because it can be a choke point in your system, and it can violate the principle of microservice autonomy. To mitigate this possibility, you can have multiple fined-grained API Gateways each one focusing on a vertical “slice” or business area of the system. The API Gateway pattern is explained in more detail in the section in the []{#ba .anchor}Using an API Gateway later.
+**API Gateway**. For simple data aggregation from multiple microservices that own different databases, the recommended approach is an aggregation microservice referred to as an API Gateway. However, you need to be careful about implementing this pattern, because it can be a choke point in your system, and it can violate the principle of microservice autonomy. To mitigate this possibility, you can have multiple fined-grained API Gateways each one focusing on a vertical “slice” or business area of the system. The API Gateway pattern is explained in more detail in the section in the Using an API Gateway later.
 
-[]{#queryreadtables .anchor}**CQRS with query/reads tables**. Another solution for aggregating data from multiple microservices is the [Materialized View pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/materialized-view). In this approach, you generate, in advance (prepare denormalized data before the actual queries happen), a read-only table with the data that is owned by multiple microservices. The table has a format suited to the client app’s needs.
+**CQRS with query/reads tables**. Another solution for aggregating data from multiple microservices is the [Materialized View pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/materialized-view). In this approach, you generate, in advance (prepare denormalized data before the actual queries happen), a read-only table with the data that is owned by multiple microservices. The table has a format suited to the client app’s needs.
 
 Consider something like the screen for a mobile app. If you have a single database, you might pull together the data for that screen using a SQL query that performs a complex join involving multiple tables. However, when you have multiple databases, and each database is owned by a different microservice, you cannot query those databases and create a SQL join. Your complex query becomes a challenge. You can address the requirement using a CQRS approach—you create a denormalized table in a different database that is used just for queries. The table can be designed specifically for the data you need for the complex query, with a one-to-one relationship between fields needed by your application’s screen and the columns in the query table. It could also serve for reporting purposes.
 
@@ -166,7 +169,7 @@ To analyze this problem, let’s look at an example from the [eShopOnContainers 
 
 However, in a microservices- based application, the Order and Product tables are owned by their respective microservices. No microservice should ever include databases owned by another microservice in its own transactions or queries, as shown in Figure 4-9.
 
-![](./media/image9.PNG){width="4.848957786526684in" height="2.8904647856517935in"}
+![](./media/image9.PNG)
 
 **Figure 4-9**. A microservice cannot directly access a table in another microservice
 
@@ -223,7 +226,7 @@ The use of asynchronous communication is explained with additional details later
 -   **Compensating Transaction**\
     [*https://msdn.microsoft.com/en-us/library/dn589804.aspx*](https://msdn.microsoft.com/en-us/library/dn589804.aspx)
 
--   [[[[[]{#_Toc480368189 .anchor}]{#_Toc480361357 .anchor}]{#_Toc474844869 .anchor}]{#_Toc480984574 .anchor}]{#_Toc480993071 .anchor}**Udi Dahan. Service Oriented Composition**
+-   **Udi Dahan. Service Oriented Composition**
 
     [*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
 
@@ -245,7 +248,7 @@ You will know that you got the right boundaries and sizes of each BC and domain 
 
 Perhaps the best answer to the question of how big a domain model for each microservice should be is the following: it should have an autonomous BC, as isolated as possible, that enables you to work without having to constantly switch to other contexts (other microservice’s models). In Figure 4-10 you can see how multiple microservices (multiple BCs) each have their own model and how their entities can be defined, depending on the specific requirements for each of the identified domains in your application.
 
-![](./media/image10.png){width="6.127811679790026in" height="3.4454975940507437in"}
+![](./media/image10.png)
 
 **Figure 4-10**. Identifying entities and microservice model boundaries
 
@@ -255,7 +258,7 @@ However, you might also have entities that have a different shape but share the 
 
 A similar approach is illustrated in Figure 4-11.
 
-![](./media/image11.png){width="6.65747375328084in" height="3.7060247156605426in"}
+![](./media/image11.png)
 
 **Figure 4-11**. Decomposing traditional data models into multiple domain models
 
@@ -268,6 +271,7 @@ Basically, there is a shared concept of a user that exists in multiple services 
 There are several benefits to not sharing the same user entity with the same number of attributes across domains. One benefit is to reduce duplication, so that microservice models do not have any data that they do not need. Another benefit is having a master microservice that owns a certain type of data per entity so that updates and queries for that type of data are driven only by that microservice.
 
 
+
 ## Direct client-to-microservice communication versus the API Gateway pattern
 
 In a microservices architecture, each microservice exposes a set of (typically) fine‑grained endpoints. This fact can impact the client‑to‑microservice communication, as explained in this section.
@@ -276,7 +280,7 @@ In a microservices architecture, each microservice exposes a set of (typically) 
 
 A possible approach is to use a direct client-to-microservice communication architecture. In this approach, a client app can make requests directly to some of the microservices, as shown in Figure 4-12.
 
-![](./media/image12.png){width="5.28125in" height="3.0834470691163602in"}
+![](./media/image12.png)
 
 **Figure 4-12**. Using a direct client-to-microservice communication architecture
 
@@ -310,7 +314,7 @@ When you design and build large or complex microservice-based applications with 
 
 Figure 4-13 shows how an API Gateway can fit into a microservice-based architecture.
 
-![](./media/image13.png){width="5.58121719160105in" height="3.0781255468066493in"}
+![](./media/image13.png)
 
 **Figure 4-13**. Using the API Gateway pattern in a microservice-based architecture
 
@@ -328,7 +332,7 @@ Therefore, for many medium- and large-size applications, using a custom-built AP
 
 Another approach is to use a product like [Azure API Management](https://azure.microsoft.com/en-us/services/api-management/) as shown in Figure 4-14. This approach not only solves your API Gateway needs, but provides features like gathering insights from your APIs. If you are using an API management solution, an API Gateway is only a component within that full API management solution.
 
-![](./media/image14.png){width="5.341012685914261in" height="3.432292213473316in"}
+![](./media/image14.png)
 
 **Figure 4-14**. Using Azure API Management for your API Gateway
 
@@ -360,7 +364,7 @@ In this guide and the reference sample application (eShopOnContainers) we are li
 -   **Azure API Management**\
     [*https://azure.microsoft.com/en-us/services/api-management/*](https://azure.microsoft.com/en-us/services/api-management/)
 
--   [[[[[]{#_Toc480984576 .anchor}]{#_Toc480993073 .anchor}]{#_Toc480368190 .anchor}]{#_Toc480361358 .anchor}]{#_Toc474844870 .anchor}**Udi Dahan. Service Oriented Composition\
+-   **Udi Dahan. Service Oriented Composition\
     **[*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
 
 -   **Clemens Vasters. Messaging and Microservices at GOTO 2016** (video)**\
@@ -426,7 +430,7 @@ There are also multiple message formats like JSON or XML, or even binary formats
 
 When a client uses request/response communication, it sends a request to a service, then the service processes the request and sends back a response. Request/response communication is especially well suited for querying data for a real-time UI (a live user interface) from client apps. Therefore, in a microservice architecture you will probably use this communication mechanism for most queries, as shown in Figure 4-15.
 
-![](./media/image15.png){width="5.907638888888889in" height="2.1506944444444445in"}
+![](./media/image15.png)
 
 **Figure 4-15**. Using HTTP request/response communication (synchronous or asynchronous)
 
@@ -450,7 +454,7 @@ Another possibility (usually for different purposes than REST) is a real-time an
 
 As Figure 4-16 shows, real-time HTTP communication means that you can have server code pushing content to connected clients as the data becomes available, rather than having the server wait for a client to request new data.
 
-![](./media/image16.png){width="5.765508530183727in" height="2.963542213473316in"}
+![](./media/image16.png)
 
 **Figure 4-16**. One-to-one real-time asynchronous message communication
 
@@ -481,7 +485,7 @@ Single-receiver message-based communication is especially well suited for sendin
 
 Once you start sending message-based communication (either with commands or events), you should avoid mixing message-based communication with synchronous HTTP communication.
 
-![](./media/image17.PNG){width="6.122411417322835in" height="3.53125in"}
+![](./media/image17.PNG)
 
 **Figure 4-17**. A single microservice receiving an asynchronous message
 
@@ -489,7 +493,7 @@ Note that when the commands come from client applications, they can be implement
 
 #### Multiple-receivers message-based communication 
 
-[]{#async_event_driven_communication .anchor}As a more flexible approach, you might also want to use a publish/subscribe mechanism so that your communication from the sender will be available to additional subscriber microservices or to external applications. Thus, it helps you to follow the [open/closed principle](https://en.wikipedia.org/wiki/Open/closed_principle) in the sending service. That way, additional subscribers can be added in the future without the need to modify the sender service.
+As a more flexible approach, you might also want to use a publish/subscribe mechanism so that your communication from the sender will be available to additional subscriber microservices or to external applications. Thus, it helps you to follow the [open/closed principle](https://en.wikipedia.org/wiki/Open/closed_principle) in the sending service. That way, additional subscribers can be added in the future without the need to modify the sender service.
 
 When you use a publish/subscribe communication, you might be using an event bus interface to publish events to any subscriber.
 
@@ -503,7 +507,7 @@ As noted earlier in the [Challenges and solutions for distributed data managemen
 
 An important point is that you might want to communicate to multiple microservices that are subscribed to the same event. To do so, you can use publish/subscribe messaging based on event-driven communication, as shown in Figure 4-18. This publish/subscribe mechanism is not exclusive to the microservice architecture. It is similar to the way [Bounded Contexts](http://martinfowler.com/bliki/BoundedContext.html) in DDD should communicate, or to the way you propagate updates from the write database to the read database in the [Command and Query Responsibility Segregation (CQRS)](http://martinfowler.com/bliki/CQRS.html) architecture pattern. The goal is to have eventual consistency between multiple data sources across your distributed system.
 
-![](./media/image18.png){width="6.065371828521434in" height="3.088542213473316in"}
+![](./media/image18.png)
 
 **Figure 4-18**. Asynchronous event-driven message communication
 
@@ -587,7 +591,7 @@ The [service registry pattern](http://microservices.io/patterns/service-registry
 
 In some microservice deployment environments (called clusters, to be covered in a later section), service discovery is built-in. For example, within an Azure Container Service environment, Kubernetes and DC/OS with Marathon can handle service instance registration and deregistration. They also run a proxy on each cluster host that plays the role of server-side discovery router. Another example is Azure Service Fabric, which also provides a service registry through its out-of-the-box Naming Service.
 
-[[]{#_Toc474844871 .anchor}]{#_Toc474844867 .anchor}Note that there is certain overlap between the service registry and the API gateway pattern, which helps solve this problem as well. For example, the [Service Fabric Reverse Proxy](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-reverseproxy) is a type of implementation of an API Gateway that is based on the Service Fabrice Naming Service and that helps resolve address resolution to the internal services.
+Note that there is certain overlap between the service registry and the API gateway pattern, which helps solve this problem as well. For example, the [Service Fabric Reverse Proxy](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-reverseproxy) is a type of implementation of an API Gateway that is based on the Service Fabrice Naming Service and that helps resolve address resolution to the internal services.
 
 ### Additional resources
 
@@ -606,7 +610,7 @@ Microservices architecture often starts with the server side handling data and l
 
 Figure 4-19 shows the simpler approach of just consuming microservices from a monolithic client application. Of course, you could have an ASP.NET MVC service in between producing the HTML and JavaScript. The figure is a simplification that highlights that you have a single (monolithic) client UI consuming the microservices, which just focus on logic and data and not on the UI shape (HTML and JavaScript).
 
-![](./media/image19.png){width="6.020833333333333in" height="3.1505544619422574in"}
+![](./media/image19.png)
 
 **Figure 4-19**. A monolithic UI application consuming back-end microservices
 
@@ -616,7 +620,7 @@ At client application start-up time, each of the client UI components (TypeScrip
 
 Figure 4-20 shows a version of this composite UI approach. This is simplified, because you might have other microservices that are aggregating granular parts based on different techniques—it depends on whether you are building a traditional web approach (ASP.NET MVC) or an SPA (Single Page Application).
 
-![](./media/image20.png){width="6.259722222222222in" height="3.1414588801399823in"}
+![](./media/image20.png)
 
 **Figure 4-20**. Example of a composite UI application shaped by back-end microservices
 
@@ -642,7 +646,7 @@ However, we encourage you to use the following references to learn more about co
 -   **Viktor Farcic. Including Front-End Web Components Into Microservices**\
     [*https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/*](https://technologyconversations.com/2015/08/09/including-front-end-web-components-into-microservices/)
 
--   []{#_Toc474844868 .anchor}**Managing Frontend in the Microservices Architecture**\
+-   **Managing Frontend in the Microservices Architecture**\
     [*http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html*](http://allegro.tech/2016/03/Managing-Frontend-in-the-microservices-architecture.html)
 
 ## Resiliency and high availability in microservices
@@ -663,7 +667,7 @@ It may seem obvious, and it is often overlooked, but a microservice must report 
 
 Health is different from diagnostics. Health is about the microservice reporting its current state to take appropriate actions. A good example is working with upgrade and deployment mechanisms to maintain availability. Although a service might currently be unhealthy due to a process crash or machine reboot, the service might still be operational. The last thing you need is to make this worse by performing an upgrade. The best approach is to do an investigation first or allow time for the microservice to recover. Health events from a microservice help us make informed decisions and, in effect, help create self-healing services.
 
-In the []{#_Toc478741165 .anchor}Implementing health checks in ASP.NET Core services section of this guide, we explain how to use a new ASP.NET HealthChecks library in your microservices so they can report their state to a monitoring service to take appropriate actions.
+In the Implementing health checks in ASP.NET Core services section of this guide, we explain how to use a new ASP.NET HealthChecks library in your microservices so they can report their state to a monitoring service to take appropriate actions.
 
 ### Using diagnostics and logs event streams
 
@@ -677,7 +681,7 @@ A microservice-based application should not try to store the output stream of ev
 
 When you create a microservice-based application, you need to deal with complexity. Of course, a single microservice is simple to deal with, but dozens or hundreds of types and thousands of instances of microservices is a complex problem. It is not just about building your microservice architecture—you also need high availability, addressability, resiliency, health, and diagnostics if you intend to have a stable and cohesive system.
 
-![](./media/image21.png){width="4.774600831146107in" height="2.08576334208224in"}
+![](./media/image21.png)
 
 **Figure 4-21**. A Microservice Platform is fundamental for an application’s health management
 
@@ -708,6 +712,7 @@ Different orchestrators might sound similar, but the diagnostics and health chec
 
 -   **EventSource Class**. API for events tracing for Windows (ETW)\
     [*https://msdn.microsoft.com/en-us/library/system.diagnostics.tracing.eventsource(v=vs.110).aspx*](https://msdn.microsoft.com/en-us/library/system.diagnostics.tracing.eventsource(v=vs.110).aspx)
+
 
 
 

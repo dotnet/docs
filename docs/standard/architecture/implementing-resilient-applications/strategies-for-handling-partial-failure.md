@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Strategies for handling partial failure
 
@@ -30,7 +32,7 @@ Strategies for dealing with partial failures include the following.
 -   **Adding Resilience and Optimizing Performance**\
     [*https://msdn.microsoft.com/en-us/library/jj591574.aspx*](https://msdn.microsoft.com/en-us/library/jj591574.aspx)
 
--   []{#_Toc481090326 .anchor}**Bulkhead.** GitHub repo. Implementation with Polly policy.**\
+-   **Bulkhead.** GitHub repo. Implementation with Polly policy.**\
     **[*https://github.com/App-vNext/Polly/wiki/Bulkhead*](https://github.com/App-vNext/Polly/wiki/Bulkhead)
 
 -   **Designing resilient applications for Azure\
@@ -43,7 +45,7 @@ Strategies for dealing with partial failures include the following.
 
 [*Retries with exponential backoff*](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry) is a technique that attempts to retry an operation, with an exponentially increasing wait time, until a maximum retry count has been reached (the [exponential backoff](https://en.wikipedia.org/wiki/Exponential_backoff)). This technique embraces the fact that cloud resources might intermittently be unavailable for more than a few seconds for any reason. For example, an orchestrator might be moving a container to another node in a cluster for load balancing. During that time, some requests might fail. Another example could be a database like SQL Azure, where a database can be moved to another server for load balancing, causing the database to be unavailable for a few seconds.
 
-[]{#resilient_entity_framework_core_sql_conn .anchor}There are many approaches to implement retries logic with exponential backoff.
+There are many approaches to implement retries logic with exponential backoff.
 
 ### Implementing resilient Entity Framework Core SQL connections
 
@@ -518,6 +520,7 @@ With Polly, you define a Retry policy with the number of retries, the exponentia
 
 The important method is HttpInvoker, which is what makes HTTP requests throughout this utility class. That method internally executes the HTTP request with \_policyWrapper.ExecuteAsync, which takes into account the retry policy.
 
+In eShopOnContainers you specify Polly policies when registering the types at the IoC container, as in the following code from the [MVC web app at the startup.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Web/WebMVC/Startup.cs) class.
 
   ----------------------------------------------------------------------------------
   // Startup.cs class
@@ -837,7 +840,7 @@ http://localhost:5102/failing?enable
 
 You can then check the status using the URI [http://localhost:5102/failing](http://localhost:5100/failing), as shown in Figure 10-4.
 
-![](./media/image4.png){width="6.179665354330709in" height="1.375in"}
+![](./media/image4.png)
 
 **Figure 10-4**. Simulating a failure with ASP.NET middleware
 
@@ -891,7 +894,7 @@ In the following example, you can see that the MVC web application has a catch b
 
 Here’s a summary. The Retry policy tries several times to make the HTTP request and gets HTTP errors. When the number of tries reaches the maximum number set for the Circuit Breaker policy (in this case, 5), the application throws a BrokenCircuitException. The result is a friendly message, as shown in Figure 10-5.
 
-![](./media/image5.png){width="6.2555555555555555in" height="2.192707786526684in"}
+![](./media/image5.png)
 
 **Figure 10-5**. Circuit breaker returning an error to the UI
 
@@ -930,11 +933,11 @@ A regular Retry policy can impact your system in cases of high concurrency and s
 -   **Polly** (.NET resilience and transient-fault-handling library)\
     *<https://github.com/App-vNext/Polly> *
 
--   [[[[]{#_Toc480984687 .anchor}]{#_Toc480993184 .anchor}]{#_Toc480368305 .anchor}]{#_Toc480361435 .anchor}**Circuit Breaker pattern**\
+-   **Circuit Breaker pattern**\
     [*https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker*](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
 
--   []{#_Toc481090329 .anchor}**Marc Brooker. Jitter: Making Things Better With Randomness\
-    **[[[[[]{#_Toc481597868 .anchor}]{#_Toc481506741 .anchor}]{#_Toc481506309 .anchor}]{#_Toc481492116 .anchor}]{#_Toc481490292 .anchor}https://brooker.co.za/blog/2015/03/21/backoff.html
+-   **Marc Brooker. Jitter: Making Things Better With Randomness\
+    **https://brooker.co.za/blog/2015/03/21/backoff.html
 
 
 >[!div class="step-by-step"]

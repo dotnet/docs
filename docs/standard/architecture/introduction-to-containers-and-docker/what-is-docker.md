@@ -5,12 +5,14 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # What is Docker?
 
 [Docker](https://www.docker.com/) is an [open-source project](https://github.com/docker/docker) for automating the deployment of applications as portable, self-sufficient containers that can run on the cloud or on-premises. Docker is also a [company](https://www.docker.com/) that promotes and evolves this technology, working in collaboration with cloud, Linux, and Windows vendors, including Microsoft.
 
-![](./media/image2.png){width="5.559722222222222in" height="2.6881944444444446in"}
+![](./media/image2.png)
 
 **Figure 2-2**. Docker deploys containers at all layers of the hybrid cloud
 
@@ -35,13 +37,14 @@ Figure 2-3 shows a comparison between VMs and Docker containers.
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Virtual Machines**                                                                                                                                                                  **Docker Containers**
                                                                                                                                                                                         
-  ![](./media/image3.png){width="2.85in" height="3.1in"}                                                                                                                                ![](./media/image4.png){width="3.136111111111111in" height="3.0993055555555555in"}
+  ![](./media/image3.png)                                                                                                                                ![](./media/image4.png){width="3.136111111111111in" height="3.0993055555555555in"}
                                                                                                                                                                                         
   Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization.   Containers include the application and all its dependencies. However, they share the OS kernel with other containers, running as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.)
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Figure 2-3**. Comparison of traditional virtual machines to Docker containers
 
+Because containers require far fewer resources (for example, they do not need a full OS), they are easy to deploy and they start fast. This allows you to have higher density, meaning that it allows you to run more services on the same hardware unit, thereby reducing costs.
 
 As a side effect of running on the same kernel, you get less isolation than VMs.
 

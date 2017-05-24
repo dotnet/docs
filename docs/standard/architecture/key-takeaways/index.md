@@ -5,7 +5,10 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
+# Key Takeaways
 
 As a summary and key takeaways, the following are the most important conclusions from this guide.
 

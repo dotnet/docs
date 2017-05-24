@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Implementing a microservice domain model with .NET Core 
 
@@ -14,7 +16,7 @@ In the previous section, the fundamental design principles and patterns for desi
 
 The folder organization used for the eShopOnContainers reference application demonstrates the DDD model for the application. You might find that a different folder organization more clearly communicates the design choices made for your application. As you can see in Figure 9-10, in the ordering domain model there are two aggregates, the order aggregate and the buyer aggregate. Each aggregate is a group of domain entities and value objects, although you could have an aggregate composed of a single domain entity (the aggregate root or root entity) as well.
 
-![](./media/image11.png){width="5.306221566054243in" height="3.8854166666666665in"}
+![](./media/image11.png)
 
 **Figure 9-10**. Domain model structure for the ordering microservice in eShopOnContainers
 
@@ -28,7 +30,7 @@ An aggregate refers to a cluster of domain objects grouped together to match tra
 
 Transactional consistency means that an aggregate is guaranteed to be consistent and up to date at the end of a business action. For example, the order aggregate from the eShopOnContainers ordering microservice domain model is composed as shown in Figure 9-11.
 
-![](./media/image12.png){width="3.8128127734033246in" height="1.4869564741907262in"}
+![](./media/image12.png)
 
 **Figure 9-11**. The order aggregate in Visual Studio solution
 
@@ -325,7 +327,7 @@ As mentioned, in the solution folder you can also see a SeedWork folder. This fo
 
 Figure 9-12 shows the classes that form the seedwork of the domain model in the ordering microservice. It has a few custom base classes like Entity, ValueObject, and Enumeration, plus a few interfaces. These interfaces (IRepository and IUnitOfWork) inform the infrastructure layer about what needs to be implemented. Those interfaces are also used through Dependency Injection from the application layer.
 
-![](./media/image13.PNG){width="2.2319444444444443in" height="1.5881944444444445in"}
+![](./media/image13.PNG)
 
 **Figure 9-12**. A sample set of domain model “seedwork" base classes and interfaces
 
@@ -500,7 +502,7 @@ A value object can reference other entities. For example, in an application that
 
 Figure 9-13 shows the Address value object within the Order aggregate.
 
-![](./media/image14.png){width="3.989005905511811in" height="3.6587674978127733in"}
+![](./media/image14.png)
 
 **Figure 9-13**. Address value object within the Order aggregate
 

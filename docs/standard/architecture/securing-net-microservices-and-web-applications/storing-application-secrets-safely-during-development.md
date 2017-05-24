@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Storing application secrets safely during development
 
@@ -56,5 +58,5 @@ Using secrets stored with Secret Manager in an application is accomplished by ca
 
 
 >[!div class="step-by-step"]
-[Previous] (about-authorization-in-.net-microservices-and-web-applications.md)
+[Previous] (about-authorization-in-net-microservices-and-web-applications.md)
 [Next] (using-azure-key-vault-to-protect-secrets-at-production-time.md)

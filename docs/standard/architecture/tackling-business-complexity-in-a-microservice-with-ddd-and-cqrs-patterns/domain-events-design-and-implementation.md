@@ -1,10 +1,12 @@
 ---
-title: Domain events: design and implementation | Microsoft Docs 
-description: .NET Microservices Architecture for Containerized .NET Applications | Domain events: design and implementation
+title: Domain events. design and implementation | Microsoft Docs 
+description: .NET Microservices Architecture for Containerized .NET Applications | Domain events, design and implementation
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Domain events: design and implementation
 
@@ -34,7 +36,7 @@ In addition, and as mentioned, integration events must be based on asynchronous 
 
 If executing a command related to one aggregate instance requires additional domain rules to be run on one or more additional aggregates, you should design and implement those side effects to be triggered by domain events. As shown in Figure 9-14, and as one of the most important use cases, a domain event should be used to propagate state changes across multiple aggregates within the same domain model.
 
-![](./media/image15.png){width="5.645833333333333in" height="2.9801279527559057in"}
+![](./media/image15.png)
 
 **Figure 9-14**. Domain events to enforce consistency between multiple aggregates within the same domain
 
@@ -68,7 +70,7 @@ On the other hand, if you use domain events, you can create a fine-grained and d
 
 As shown in Figure 9-15, starting from the same domain event, you can handle multiple actions related to other aggregates in the domain or additional application actions you need to perform across microservices connecting with integration events and the event bus.
 
-![](./media/image16.png){width="6.263500656167979in" height="3.495751312335958in"}
+![](./media/image16.png)
 
 **Figure 9-15**. Handling multiple actions per domain
 
@@ -80,5 +82,5 @@ When the total amount purchased by a customer in the store, across any number of
 
 
 >[!div class="step-by-step"]
-[Previous] (implementing-a-microservice-domain-model-with-.net-core-.md)
+[Previous] (implementing-a-microservice-domain-model-with-net-core-.md)
 [Next] (implementing-domain-events.md)

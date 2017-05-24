@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Lifting and shifting
 
@@ -12,13 +14,13 @@ Visual Studio provides great support for containerizing an application. You righ
 
 In the simplest lift-and-shift scenarios, the application will be the single service that you use for the Web Forms application. The template also changes your startup project to point to the **docker-compose** project. Pressing Ctrl+F5 or F5 now creates the Docker image and launches the Docker container.
 
-![](./media/image3.png){width="2.0360837707786525in" height="2.0208333333333335in"}
+![](./media/image3.png)
 
 **Figure 7-3**. The **docker-compose** project in the Web Forms solution
 
 Before you run the solution, you must make sure that you configure Docker to use Windows Containers. To do that, you right-click the Docker taskbar icon in Windows and select **Switch to Windows Containers**, as shown in Figure 7-4.
 
-![](./media/image4.png){width="2.1523632983377077in" height="1.4010422134733158in"}
+![](./media/image4.png)
 
 **Figure 7-4**. Switching to Windows Containers from the Docker taskbar icon in Windows
 
@@ -49,4 +51,4 @@ While Visual Studio integration is part of adding Docker support to your solutio
 
 >[!div class="step-by-step"]
 [Previous] (application-tour.md)
-[Next] (getting-data-from-the-existing-catalog-.net-core-microservice.md)
+[Next] (getting-data-from-the-existing-catalog-net-core-microservice.md)

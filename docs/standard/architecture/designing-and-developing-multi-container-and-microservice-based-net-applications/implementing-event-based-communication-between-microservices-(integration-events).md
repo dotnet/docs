@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Implementing event-based communication between microservices (integration events)
 
@@ -12,7 +14,7 @@ As described earlier, when you use event-based communication, a microservice pub
 
 You can use events to implement business transactions that span multiple services, which gives you eventual consistency between those services. An eventually consistent transaction consists of a series of distributed actions. At each action, the microservice updates a business entity and publishes an event that triggers the next action.
 
-![](./media/image19.PNG){width="6.218792650918635in" height="3.1666666666666665in"}
+![](./media/image19.PNG)
 
 **Figure 8-18**. Event-driven communication based on an event bus
 
@@ -70,7 +72,7 @@ There are only a few kinds of libraries you should share across microservices. O
 
 An event bus allows publish/subscribe-style communication between microservices without requiring the components to explicitly be aware of each other, as shown in Figure 8-19.
 
-![](./media/image20.png){width="6.259722222222222in" height="2.520138888888889in"}
+![](./media/image20.png)
 
 **Figure 8-19**. Publish/subscribe basics with an event bus
 
@@ -98,7 +100,7 @@ In Figure 8-19 you can see how, from an application point of view, the event bus
 
 In Figure 8-20 you can see an abstraction of an event bus with multiple implementations based on infrastructure messaging technologies like RabbitMQ, Azure Service Bus, or other service buses like NServiceBus, MassTransit, etc.
 
-![](./media/image21.png){width="3.1278062117235343in" height="2.4739588801399823in"}
+![](./media/image21.png)
 
 **Figure 8- 20.** Multiple implementations of an event bus
 
@@ -136,7 +138,7 @@ We should start by saying that if you create your custom event bus based on Rabb
 
 The eShopOnContainers custom implementation of an event bus is basically a library using the RabbitMQ API. The implementation lets microservices subscribe to events, publish events, and receive events, as shown in Figure 8-21.
 
-![](./media/image22.png){width="6.07582895888014in" height="2.7130249343832022in"}
+![](./media/image22.png)
 
 **Figure 8-21.** RabbitMQ implementation of an event bus
 
@@ -410,7 +412,7 @@ When implementing the steps of publishing the events, you have these choices:
 
 Figure 8-22 shows the architecture for the first of these approaches.
 
-![](./media/image23.png){width="6.259722222222222in" height="2.9868055555555557in"}
+![](./media/image23.png)
 
 **Figure 8-22**. Atomicity when publishing events to the event bus
 
@@ -418,7 +420,7 @@ The approach illustrated in Figure 8-22 is missing an additional worker microser
 
 About the second approach: you use the EventLog table as a queue and always use a worker microservice to publish the messages. In that case, the process is like that shown in Figure 8-23. This shows an additional microservice, and the table is the single source when publishing events.
 
-![](./media/image24.png){width="6.259722222222222in" height="3.1205457130358707in"}
+![](./media/image24.png)
 
 **Figure 8-23**. Atomicity when publishing events to the event bus with a worker microservice
 
@@ -624,7 +626,7 @@ An event handler first receives an event instance from the event bus. Then it lo
 
 The event handler needs to verify whether the product exists in any of the basket instances. It also updates the item price for each related basket line item. Finally, it creates an alert to be displayed to the user about the price change, as shown in Figure 8-24.
 
-![](./media/image25.png){width="4.65511154855643in" height="3.9166666666666665in"}
+![](./media/image25.png)
 
 **Figure 8-24**. Displaying an item price change in a basket, as communicated by integration events
 
@@ -726,6 +728,7 @@ If the “redelivered” flag is set, the receiver must take that into account, 
 
 
 
+
 >[!div class="step-by-step"]
 [Previous] (using-a-database-server-running-as-a-container.md)
-[Next] (testing-asp.net-core-services-and-web-apps.md)
+[Next] (testing-aspnet-core-services-and-web-apps.md)

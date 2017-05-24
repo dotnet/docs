@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Containerizing monolithic applications
 
@@ -12,7 +14,7 @@ You might want to build a single, monolithically deployed web application or ser
 
 To manage this model, you deploy a single container to represent the application. To scale up, you just add more copies with a load balancer in front. The simplicity comes from managing a single deployment in a single container or VM.
 
-![](./media/image1.png){width="5.19117125984252in" height="3.440757874015748in"}
+![](./media/image1.png)
 
 **Figure 4-1**. Example of the architecture of a containerized monolithic application
 
@@ -28,7 +30,7 @@ However, the monolithic approach is common, because the development of the appli
 
 From an infrastructure perspective, each server can run many applications within the same host and have an acceptable ratio of efficiency in resources usage, as shown in Figure 4-2.
 
-![](./media/image2.png){width="2.8411154855643046in" height="0.7345964566929134in"}
+![](./media/image2.png)
 
 **Figure 4-2**. Monolithic approach: Host running multiple apps, each app running as a container
 
@@ -36,7 +38,7 @@ Monolithic applications in Microsoft Azure can be deployed using dedicated VMs f
 
 As a QA environment or a limited production environment, you can deploy multiple Docker host VMs and balance them using the Azure balancer, as shown in Figure 4-3. This lets you manage scaling with a coarse-grain approach, because the whole application lives within a single container.
 
-![](./media/image3.png){width="3.696218285214348in" height="2.104265091863517in"}
+![](./media/image3.png)
 
 **Figure 4-3**. Example of multiple hosts scaling up a single container application
 
@@ -56,7 +58,7 @@ While monolithic applications can benefit from Docker, we are touching only on t
 
 Whether you want to get validation of a container deployed to Azure or when an application is simply a single-container application, Azure App Service provides a great way to provide scalable single-container-based services. Using Azure App Service is simple. It provides great integration with Git to make it easy to take your code, build it in Visual Studio, and deploy it directly to Azure.
 
-![](./media/image4.png){width="3.8697911198600177in" height="3.1048687664041994in"}
+![](./media/image4.png)
 
 **Figure 4-4**. Publishing a single-container application to Azure App Service from Visual Studio
 

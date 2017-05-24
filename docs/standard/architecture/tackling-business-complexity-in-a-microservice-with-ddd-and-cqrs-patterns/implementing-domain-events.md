@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Implementing domain events
 
@@ -214,7 +216,7 @@ One approach is a real messaging system or even an event bus, possibly based on 
 
 Another way to map events to multiple event handlers is by using types registration in an IoC container so that you can dynamically infer where to dispatch the events. In other words, you need to know what event handlers need to get a specific event. Figure 9-16 shows a simplified approach for that.
 
-![](./media/image17.png){width="6.22094706911636in" height="3.222749343832021in"}
+![](./media/image17.png)
 
 **Figure 9-16**. Domain event dispatcher using IoC
 

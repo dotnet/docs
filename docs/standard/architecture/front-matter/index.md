@@ -5,8 +5,10 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
-EDITION v1.0
+# EDITION v1.0
 
 DOWNLOAD available at: <https://aka.ms/microservicesebook>
 
@@ -72,7 +74,7 @@ Participants and reviewers:
   **Scott Hunter**, Partner Director PM, .NET team, Microsoft                 **Charles Lowell**, Software Engineer, VS CAT team, Microsoft
   --------------------------------------------------------------------------- ----------------------------------------------------------------
 
-[[]{#ch1 .anchor}]{#intro .anchor}
+
 
 >[!div class="step-by-step"]
 [Next] (../introduction/index.md)

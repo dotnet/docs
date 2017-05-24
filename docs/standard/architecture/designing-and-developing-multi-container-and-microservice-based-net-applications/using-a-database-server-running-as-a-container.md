@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Using a database server running as a container
 
@@ -278,5 +280,5 @@ Finally, in the docker-compose.override.yml file, the basket.api microservice fo
 
 
 >[!div class="step-by-step"]
-[Previous] (defining-your-multi-container-application-with-docker-compose.yml-.md)
+[Previous] (defining-your-multi-container-application-with-docker-composeyml-.md)
 [Next] (implementing-event-based-communication-between-microservices-(integration-events).md)

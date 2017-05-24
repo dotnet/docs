@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # When to choose .NET Framework for Docker containers
 
@@ -64,6 +66,7 @@ In the meantime, you can always use the equivalent REST API from the Azure servi
 
 
 
+
 >[!div class="step-by-step"]
-[Previous] (when-to-choose-.net-core-for-docker-containers.md)
-[Next] (decision-table-.net-frameworks-to-use-for-docker.md)
+[Previous] (when-to-choose-net-core-for-docker-containers.md)
+[Next] (decision-table-net-frameworks-to-use-for-docker.md)

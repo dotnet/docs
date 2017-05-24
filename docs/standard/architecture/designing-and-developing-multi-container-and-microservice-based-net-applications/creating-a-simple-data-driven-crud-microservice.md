@@ -5,21 +5,24 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Creating a simple data-driven CRUD microservice
 
+This section outlines how to create a simple microservice that performs create, read, update, and delete (CRUD) operations on a data source.
 
 ## Designing a simple CRUD microservice
 
 From a design point of view, this type of containerized microservice is very simple. Perhaps the problem to solve is simple, or perhaps the implementation is only a proof of concept.
 
-![](./media/image4.png){width="6.1809437882764655in" height="2.244792213473316in"}
+![](./media/image4.png)
 
 **Figure 8-4**. Internal design for simple CRUD microservices
 
 An example of this kind of simple data-drive service is the catalog microservice from the eShopOnContainers sample application. This type of service implements all its functionality in a single ASP.NET Core Web API project that includes classes for its data model, its business logic, and its data access code. It also stores its related data in a database running in SQL Server (as another container for dev/test purposes), but could also be any regular SQL Server host, as shown in Figure 8-5.
 
-![](./media/image5.png){width="5.359374453193351in" height="3.132922134733158in"}
+![](./media/image5.png)
 
 **Figure 8-5**. Simple data-driven/CRUD microservice design
 
@@ -27,21 +30,21 @@ When you are developing this kind of service, you only need [ASP.NET Core](https
 
 Note that running a database server like SQL Server within a Docker container is great for development environments, because you can have all your dependencies up and running without needing to provision a database in the cloud or on-premises. This is very convenient when running integration tests. However, for production environments, running a database server in a container is not recommended, because you usually do not get high availability with that approach. For a production environment in Azure, it is recommended that you use Azure SQL DB or any other database technology that can provide high availability and high scalability. For example, for a NoSQL approach, you might choose DocumentDB.
 
-Finally, by editing the Dockerfile and docker-compose.yml metadata files, you can configure how the image of this container will be created—what base image it will use, plus design settings such as internal and external names and TCP ports. [[[[[[[[[[]{#_Toc481090260 .anchor}]{#_Toc480984619 .anchor}]{#_Toc480993116 .anchor}]{#_Toc480368236 .anchor}]{#_Toc480361406 .anchor}]{#_Toc474844902 .anchor}]{#_Toc474337863 .anchor}]{#_Toc473731971 .anchor}]{#_Toc473731771 .anchor}]{#_Toc473041082 .anchor}
+Finally, by editing the Dockerfile and docker-compose.yml metadata files, you can configure how the image of this container will be created—what base image it will use, plus design settings such as internal and external names and TCP ports. 
 
 ## Implementing a simple CRUD microservice with ASP.NET Core
 
 To implement a simple CRUD microservice using .NET Core and Visual Studio, you start by creating a simple ASP.NET Core Web API project (running on .NET Core so it can run on a Linux Docker host), as shown in Figure 8-6.
 
   ------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
-  ![](./media/image6.png){width="3.5833333333333335in" height="1.6883923884514436in"}   ![](./media/image7.png){width="2.6181167979002624in" height="1.7083333333333333in"}
+  ![](./media/image6.png)   ![](./media/image7.png){width="2.6181167979002624in" height="1.7083333333333333in"}
   ------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
 
 **Figure 8-6**. Creating an ASP.NET Core Web API project in Visual Studio
 
 After creating the project, you can implement your MVC controllers as you would in any other Web API project, using the Entity Framework API or other API. In the eShopOnContainers.Catalog.API project, you can see that the main dependencies for that microservice are just ASP.NET Core itself, Entity Framework, and Swashbuckle, as shown in Figure 8-7.
 
-![](./media/image8.PNG){width="2.5307075678040243in" height="2.6024311023622047in"}
+![](./media/image8.PNG)
 
 **Figure 8-7**. Dependencies in a simple CRUD Web API microservice
 
@@ -433,9 +436,9 @@ Swashbuckle automatically generates Swagger metadata for your ASP.NET Web API pr
 
 Swashbuckle combines API Explorer and Swagger or [swagger-ui](https://github.com/swagger-api/swagger-ui) to provide a rich discovery and documentation experience for your API consumers. In addition to its Swagger metadata generator engine, Swashbuckle also contains an embedded version of swagger-ui, which it will automatically serve up once Swashbuckle is installed.
 
-This means you can complement your API with a nice discovery UI to help developers to use your API. It requires a very small amount of code and maintenance because it is automatically generated, allowing you to focus on building your API. The result for the API Explorer looks like Figure 8-[]{#sa .anchor}8.
+This means you can complement your API with a nice discovery UI to help developers to use your API. It requires a very small amount of code and maintenance because it is automatically generated, allowing you to focus on building your API. The result for the API Explorer looks like Figure 8-8.
 
-![](./media/image9.png){width="6.2417060367454065in" height="2.895115923009624in"}
+![](./media/image9.png)
 
 **Figure 8-8**. Swashbuckle API Explorer based on Swagger metadata—eShopOnContainers catalog microservice
 
@@ -521,13 +524,13 @@ Once this is done, you can start your application and browse the following Swagg
 
 You previously saw the generated UI created by Swashbuckle for a URL like http://&lt;your-root-url&gt;/swagger/ui. In Figure 8-9 you can also see how you can test any API method.
 
-![](./media/image10.png){width="4.197916666666667in" height="2.972483595800525in"}
+![](./media/image10.png)
 
 **Figure 8-9**. Swashbuckle UI testing the Catalog/Items API method
 
 Figure 8-10 shows the Swagger JSON metadata generated from the eShopOnContainers microservice (which is what the tools use underneath) when you request &lt;your-root-url&gt;/swagger/v1/swagger.json using [Postman](https://www.getpostman.com/).
 
-![](./media/image11.png){width="6.026041119860017in" height="2.821771653543307in"}
+![](./media/image11.png)
 
 **Figure 8-10**. Swagger JSON metadata
 
@@ -541,4 +544,4 @@ It is that simple. And because it is automatically generated, the Swagger metada
 
 >[!div class="step-by-step"]
 [Previous] (designing-a-microservice-oriented-application.md)
-[Next] (defining-your-multi-container-application-with-docker-compose.yml-.md)
+[Next] (defining-your-multi-container-application-with-docker-composeyml-.md)

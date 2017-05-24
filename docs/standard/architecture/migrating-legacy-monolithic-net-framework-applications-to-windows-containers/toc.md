@@ -4,5 +4,5 @@
 ## [Possible migration paths](possible-migration-paths.md)
 ## [Application tour](application-tour.md)
 ## [Lifting and shifting](lifting-and-shifting.md)
-## [Getting data from the existing catalog .NET Core microservice](getting-data-from-the-existing-catalog-.net-core-microservice.md)
+## [Getting data from the existing catalog .NET Core microservice](getting-data-from-the-existing-catalog-net-core-microservice.md)
 ## [Development and production environments](development-and-production-environments.md)

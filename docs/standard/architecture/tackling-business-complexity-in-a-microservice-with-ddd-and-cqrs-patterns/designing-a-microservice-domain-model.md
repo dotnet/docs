@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Designing a microservice domain model
 
@@ -28,7 +30,7 @@ A domain entity in DDD must implement the domain logic or behavior related to th
 
 Figure 9-8 shows a domain entity that implements not only data attributes but operations or methods with related domain logic.
 
-![](./media/image9.png){width="2.2533595800524933in" height="2.0in"}
+![](./media/image9.png)
 
 **Figure 9-8**. Example of a domain entity design implementing data plus behavior
 
@@ -104,7 +106,7 @@ The purpose of an aggregate root is to ensure the consistency of the aggregate; 
 
 In Figure 9-9, you can see sample aggregates like the buyer aggregate, which contains a single entity (the aggregate root Buyer). The order aggregate contains multiple entities and a value object.
 
-![](./media/image10.png){width="5.113187882764654in" height="2.8430555555555554in"}
+![](./media/image10.png)
 
 **Figure 9-9**. Example of aggregates with multiple or single entities
 
@@ -151,4 +153,4 @@ Identifying and working with aggregates requires research and experience. For mo
 
 >[!div class="step-by-step"]
 [Previous] (designing-a-ddd-oriented-microservice.md)
-[Next] (implementing-a-microservice-domain-model-with-.net-core-.md)
+[Next] (implementing-a-microservice-domain-model-with-net-core-.md)

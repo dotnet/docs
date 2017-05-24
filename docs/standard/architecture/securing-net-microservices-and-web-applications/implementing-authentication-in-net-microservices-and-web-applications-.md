@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Implementing authentication in .NET microservices and web applications 
 
@@ -12,14 +14,15 @@ It is often necessary for resources and APIs exposed by a service to be limited 
 
 In microservice scenarios, authentication is typically handled centrally. If you are using an API Gateway, the gateway is a good place to authenticate, as shown in Figure 11-1. If you use this approach, make sure that the individual microservices cannot be reached directly (without the API Gateway) unless additional security is in place to authenticate messages whether they come from the gateway or not.
 
-![](./media/image1.png){width="6.500791776027996in" height="1.7291666666666667in"}
+![](./media/image1.png)
 
 **Figure 11-1**. Centralized authentication with an API Gateway
 
 If services can be accessed directly, an authentication service like Azure Active Directory or a dedicated authentication microservice acting as a security token service (STS) can be used to authenticate users. Trust decisions are shared between services with security tokens or cookies. (These can be shared between applications, if needed, in ASP.NET Core with [data protection services](https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/compatibility/cookie-sharing#sharing-authentication-cookies-between-applications).) This pattern is illustrated in Figure 11-2.
 
-![](./media/image2.png){width="5.980239501312336in" height="2.78125in"}
+![](./media/image2.png)
 
+**Figure 11-2**. Authentication by identity microservice; trust is shared using an authorization token
 
 ## Authenticating using ASP.NET Core Identity
 
@@ -144,8 +147,9 @@ The redirectUrl parameter includes the URL that the external provider should red
 
 If you choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, all the code necessary to sign in with an external provider is already in the project, as shown in Figure 11-3.
 
-![https://msdnshared.blob.core.windows.net/media/2016/10/new-web-app.png](./media/image3.png){width="4.915095144356956in" height="3.8503094925634294in"}
+![https://msdnshared.blob.core.windows.net/media/2016/10/new-web-app.png](./media/image3.png)
 
+**Figure 11-3**. Selecting an option for using external authentication when creating a web application project
 
 In addition to the external authentication providers listed previously, third-party packages are available that provide middleware for using many more external authentication providers. For a list, see the [AspNet.Security.OAuth.Providers](https://github.com/aspnet-contrib/AspNet.Security.OAuth.Providers/tree/dev/src) repo on GitHub.
 
@@ -294,4 +298,4 @@ The JWT bearer authentication middleware can also support more advanced scenario
 
 >[!div class="step-by-step"]
 [Previous] (index.md)
-[Next] (about-authorization-in-.net-microservices-and-web-applications.md)
+[Next] (about-authorization-in-net-microservices-and-web-applications.md)

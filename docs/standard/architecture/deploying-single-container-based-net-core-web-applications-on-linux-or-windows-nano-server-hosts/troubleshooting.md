@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Troubleshooting
 
@@ -14,7 +16,7 @@ This section describes a few issues that might arise when your run containers lo
 
 After you launch the containerized application, the containers continue to run, even after you have stopped debugging. You can run the docker ps command from the command line to see which containers are running. The docker stop command stops a running container, as shown in Figure 6-2.
 
-![](./media/image2.png){width="6.236111111111111in" height="1.4427088801399826in"}
+![](./media/image2.png)
 
 **Figure 6-2**. Listing and stopping containers with the docker ps and docker stop CLI commands
 

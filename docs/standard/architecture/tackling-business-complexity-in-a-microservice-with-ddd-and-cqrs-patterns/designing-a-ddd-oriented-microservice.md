@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Designing a DDD-oriented microservice
 
@@ -34,13 +36,13 @@ When tackling complexity, it is important to have a domain model controlled by a
 
 Figure 9-5 shows how a layered design is implemented in the eShopOnContainers application.
 
-![](./media/image6.png){width="6.310171697287839in" height="3.4170614610673664in"}
+![](./media/image6.png)
 
 **Figure 9-5**. DDD layers in the ordering microservice in eShopOnContainers
 
 You want to design the system so that each layer communicates only with certain other layers. That may be easier to enforce if layers are implemented as different class libraries, because you can clearly identify what dependencies are set between libraries. For instance, the domain model layer should not take a dependency on any other layer (the domain model classes should be Plain Old CLR Objects, or [POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object), classes). As shown in Figure 9-6, the **Ordering.Domain** layer library has dependencies only on the .NET Core libraries but not on any other custom library (data library, persistence library, etc.).
 
-![](./media/image7.PNG){width="3.035472440944882in" height="1.672985564304462in"}
+![](./media/image7.PNG)
 
 **Figure 9-6**. Layers implemented as libraries allow better control of dependencies between layers
 
@@ -82,7 +84,7 @@ In accordance with the previously mentioned [Persistence Ignorance](http://deviq
 
 Thus, your layers or class libraries and projects should ultimately depend on your domain model layer (library), not vice versa, as shown in Figure 9-7.
 
-![](./media/image8.png){width="6.201172353455818in" height="3.4454975940507437in"}
+![](./media/image8.png)
 
 **Figure 9-7**. Dependencies between layers in DDD
 

@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Docker containers, images, and registries
 
@@ -16,7 +18,7 @@ Developers should store images in a registry, which acts as a library of images 
 
 Figure 2-4 shows how images and registries in Docker relate to other components. It also shows the multiple registry offerings from vendors.
 
-![](./media/image5.PNG){width="6.470138888888889in" height="3.701388888888889in"}
+![](./media/image5.PNG)
 
 **Figure 2-4**. Taxonomy of Docker terms and concepts
 

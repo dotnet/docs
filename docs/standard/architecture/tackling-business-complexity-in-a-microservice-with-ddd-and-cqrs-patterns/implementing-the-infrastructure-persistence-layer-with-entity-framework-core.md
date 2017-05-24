@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Implementing the infrastructure persistence layer with Entity Framework Core
 
@@ -230,7 +232,7 @@ However, implementing custom repositories provides several benefits when impleme
 
 In Figure 9-18 you can see the differences between not using repositories (directly using the EF DbContext) versus using repositories which make it easier to mock those repositories.
 
-![](./media/image19.png){width="5.609702537182852in" height="3.1731944444444444in"}
+![](./media/image19.png)
 
 **Figure 9-18**. Using custom repositories versus a plain DbContext
 

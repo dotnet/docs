@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # About authorization in .NET microservices and web applications
 
@@ -150,6 +152,7 @@ An example of a custom authorization requirement and handler for checking a user
 
 
 
+
 >[!div class="step-by-step"]
-[Previous] (implementing-authentication-in-.net-microservices-and-web-applications-.md)
+[Previous] (implementing-authentication-in-net-microservices-and-web-applications-.md)
 [Next] (storing-application-secrets-safely-during-development.md)

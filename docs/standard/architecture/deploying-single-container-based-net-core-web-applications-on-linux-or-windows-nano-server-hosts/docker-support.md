@@ -5,6 +5,8 @@ keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Docker support
 
@@ -12,7 +14,7 @@ The eShopOnWeb project runs on .NET Core. Therefore, it can run in either Linux-
 
 Visual Studio provides a project template that adds support for Docker to a solution. You right-click the project, click **Add** followed by **Docker Support**. The template adds a Dockerfile to your project, and a new **docker-compose** project that provides a starter docker-compose.yml file. This step has already been done in the eShopOnWeb project downloaded from GitHub. You will see that the solution contains the **eShopOnWeb** project and the **docker-compose** project as shown in Figure 6-1.
 
-![](./media/image1.png){width="2.3751224846894137in" height="1.2570089676290463in"}
+![](./media/image1.png)
 
 **Figure 6-1**. The **docker-compose** project in a single-container web application
 

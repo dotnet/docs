@@ -5,7 +5,7 @@
 ## [Implementing reads/queries in a CQRS microservice](implementing-reads--queries-in-a-cqrs-microservice.md)
 ## [Designing a DDD-oriented microservice](designing-a-ddd-oriented-microservice.md)
 ## [Designing a microservice domain model](designing-a-microservice-domain-model.md)
-## [Implementing a microservice domain model with .NET Core ](implementing-a-microservice-domain-model-with-.net-core-.md)
+## [Implementing a microservice domain model with .NET Core ](implementing-a-microservice-domain-model-with-net-core-.md)
 ## [Domain events: design and implementation](domain-events-design-and-implementation.md)
 ## [Implementing domain events](implementing-domain-events.md)
 ## [Designing the infrastructure persistence layer](designing-the-infrastructure-persistence-layer.md)

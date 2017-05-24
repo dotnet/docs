@@ -1,10 +1,12 @@
 ---
-title: Related microservice and container-based reference application: eShopOnContainers | Microsoft Docs 
-description: .NET Microservices Architecture for Containerized .NET Applications | Related microservice and container-based reference application: eShopOnContainers
+title: Related microservice and container-based reference application. eShopOnContainers | Microsoft Docs 
+description: .NET Microservices Architecture for Containerized .NET Applications | Related microservice and container-based reference application, eShopOnContainers
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/19/2017
+ms.prod: .net-core
+ms.technology: dotnet-docker
 ---
 # Related microservice and container-based reference application: eShopOnContainers
 
@@ -15,4 +17,4 @@ This microservice and container-based application source code is open source and
 
 >[!div class="step-by-step"]
 [Previous] (how-to-use-this-guide.md)
-[Next] (send-us-your-feedback!.md)
+[Next] (send-us-your-feedback.md)

@@ -4,7 +4,7 @@ description: Learn about the differences between existing and .NET Core csproj f
 keywords: reference, csproj, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/03/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod: .net-core
 ms.devlang: dotnet
@@ -67,7 +67,7 @@ Setting this property to `false` will override implicit inclusion and the behavi
 This change does not modify the main mechanics of other includes. However, if you wish to specify, for example, some files to get published with your app, you can still use the known mechanisms in *csproj* for that (for example, the `<Content>` element).
 
 ### Recommendation
-With csproj, we recommend that you remove the default globs from your project and only add file paths with globs for those artifacts that your app/library needs for various scenarios (runtime, NuGet packaging, etc.)
+With csproj, we recommend that you remove the default globs from your project and only add file paths with globs for those artifacts that your app/library needs for various scenarios (for example, runtime and NuGet packaging).
 
 ## How to see the whole project as MSBuild sees it
 

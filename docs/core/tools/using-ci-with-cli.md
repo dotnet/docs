@@ -16,38 +16,38 @@ ms.assetid: 0d6e1e34-277c-4aaf-9880-3ebf81023857
 
 ## Overview
 
-This document outlines using the .NET Core SDK and its tools on a build server. The .NET Core toolset works both interactively, where a developer types commands at a command prompt, and automatically, where a Continuous Integration (CI) server runs a build script. The commands, options, inputs, and outputs are the same, and the only thing you supply is a way to acquire the tooling and build your app. This document focuses on scenarios of tool acquisition for CI with recommendations on how to design and structure your build scripts.
+This document outlines using the .NET Core SDK and its tools on a build server. The .NET Core toolset works both interactively, where a developer types commands at a command prompt, and automatically, where a Continuous Integration (CI) server runs a build script. The commands, options, inputs, and outputs are the same, and the only things you supply are a way to acquire the tooling and a system to build your app. This document focuses on scenarios of tool acquisition for CI with recommendations on how to design and structure your build scripts.
 
 ## Installation options for CI build servers
 
 ### Using the native installers
 
-Native installers are available for macOS, Linux, and Windows. The installers require admin (sudo) access to the build server. The advantage of using a native installer is that it can install all of the native dependencies needed for the tooling to run. Native installers also provide a system-wide installation of the SDK.
+Native installers are available for macOS, Linux, and Windows. The installers require admin (sudo) access to the build server. The advantage of using a native installer is that it installs all of the native dependencies required for the tooling to run. Native installers also provide a system-wide installation of the SDK.
 
 macOS users should use the PKG installers. On Linux, there's a choice of using a feed-based package manager, such as apt-get for Ubuntu or yum for CentOS, or using the packages themselves, DEB or RPM. On Windows, use the MSI installer.
 
-The latest stable binaries are found on the [Get Started with .NET Core](https://aka.ms/dotnetcoregs) webpage. If you wish to use the latest (and potentially unstable) pre-release tooling, use the links provided at the [dotnet/cli GitHub repository](https://github.com/dotnet/cli#installers-and-binaries). For other Linux distributions, `tar.gz` archives (also known as `tarballs`) are available, and you can use the installation scripts within the archives to install .NET Core.
+The latest stable binaries are found at [Get Started with .NET Core](https://aka.ms/dotnetcoregs). If you wish to use the latest (and potentially unstable) pre-release tooling, use the links provided at the [dotnet/cli GitHub repository](https://github.com/dotnet/cli#installers-and-binaries). For Linux distributions, `tar.gz` archives (also known as `tarballs`) are available; use the installation scripts within the archives to install .NET Core.
 
 ### Using the installer script
 
-Using the installer script allows for non-administrative installation on your build server and easy automation for obtaining the tooling. The script takes care of downloading the tooling and extraction into a default or specified location for use. You can also specify a version of the tooling that you wish to install and whether you want to install the entire SDK or only the shared runtime.
+Using the installer script allows for non-administrative installation on your build server and easy automation for obtaining the tooling. The script takes care of downloading the tooling and extracting it into a default or specified location for use. You can also specify a version of the tooling that you wish to install and whether you want to install the entire SDK or only the shared runtime.
 
 The installer script is automated to run at the start of the build to fetch and install the desired version of the SDK. The *desired version* is whatever version of the SDK your projects require to build. The script allows you to install the SDK in a local directory on the server, run the tools from the installed location, and then clean up (or let the CI service clean up) after the build. This provides encapsulation and isolation to your entire build process. The installation script reference is found in the [dotnet-install](dotnet-install-script.md) topic.
 
 > [!NOTE]
-> When using the installer script, native dependencies are not installed automatically. You must install the native dependencies if the operating system doesn't have them. See the list of prerequisites in the [.NET Core native prerequisites](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) topic.
+> When using the installer script, native dependencies aren't installed automatically. You must install the native dependencies if the operating system doesn't have them. See the list of prerequisites in the [.NET Core native prerequisites](https://github.com/dotnet/core/blob/master/Documentation/prereqs.md) topic.
 
 ## CI setup examples
 
-This section describes a manual setup using a PowerShell or bash script and several SaaS CI solutions. The SaaS CI solutions covered are [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [Visual Studio Team Services Build](https://www.visualstudio.com/docs/build/overview).
+This section describes a manual setup using a PowerShell or bash script, along with a description of several software as a service (SaaS) CI solutions. The SaaS CI solutions covered are [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [Visual Studio Team Services Build](https://www.visualstudio.com/docs/build/overview).
 
 ### Manual setup
 
-Each service has its own methods for creating and configuring a build process. If you use different CI build software than those listed or require customization beyond the pre-packaged support, you must perform at least some manual configuration.
+Each SaaS service has its own methods for creating and configuring a build process. If you use different SaaS solution than those listed or require customization beyond the pre-packaged support, you must perform at least some manual configuration.
 
 In general, a manual setup requires you to acquire a version of the tools (or the latest nightly builds of the tools) and run your build script. You can use a PowerShell or bash script to orchestrate the .NET Core commands or use a project file that outlines the build process. The [orchestration section](#orchestrating-the-build) provides more detail on these options.
 
-After you create a script that performs a manual setup, you can use it on your dev machine to build your code locally for testing purposes. Once you confirm that the script is running well locally, you then deploy it to your CI build server. A relatively simple PowerShell script demonstrates how to obtain the .NET Core SDK and install it on a Windows build server:
+After you create a script that performs a manual CI build server setup, use it on your dev machine to build your code locally for testing purposes. Once you confirm that the script is running well locally, deploy it to your CI build server. A relatively simple PowerShell script demonstrates how to obtain the .NET Core SDK and install it on a Windows build server:
 
 ```powershell
 $ErrorActionPreference="Stop"
@@ -94,7 +94,7 @@ $LocalDotnet = "$InstallDir/dotnet"
 # Run the build process now. Implement your build script here.
 ```
 
-You provide the implementation for your build process at the end of the script. When run and after the tooling is acquired, the script executes your build process. For UNIX machines, the following bash script performs the actions described above in a similar manner:
+You provide the implementation for your build process at the end of the script. When run and after the tooling is acquired, the script executes your build process. For UNIX machines, the following bash script performs the actions described in the PowerShell script in a similar manner:
 
 ```bash
 #!/bin/bash
@@ -125,15 +125,15 @@ LOCALDOTNET="$INSTALLDIR/dotnet"
 
 ### Travis CI
 
-You can configure [Travis CI](https://travis-ci.org/) to install the .NET Core SDK using the `csharp` language and the `dotnet` key. See the official Travis CI docs on [Building a C#, F#, or Visual Basic Project](https://docs.travis-ci.com/user/languages/csharp/) for more information. Note as you access the Travis CI information that the community-maintained `language: csharp` works for all .NET languages, including F#, and Mono.
+You can configure [Travis CI](https://travis-ci.org/) to install the .NET Core SDK using the `csharp` language and the `dotnet` key. See the official Travis CI docs on [Building a C#, F#, or Visual Basic Project](https://docs.travis-ci.com/user/languages/csharp/) for more information. Note as you access the Travis CI information that the community-maintained `language: csharp` language identifier works for all .NET languages, including F#, and Mono.
 
-Travis CI runs both macOS (OS X 10.11, OS X 10.12) and Linux (Ubuntu 14.04) jobs in a build matrix. See the [.travis.yml example](https://github.com/dotnet/docs/blob/master/.travis.yml) file. The MSBuild-based tools include the LTS (1.0.x) and Current (1.1.x) runtimes in the package; so by installing the SDK, you receive everything you need to build.
+Travis CI runs both macOS (OS X 10.11, OS X 10.12) and Linux (Ubuntu 14.04) jobs in a *build matrix*, where you specify a combination of runtime, environment, and exclusions/inclusions to cover your build combinations for your app. See the [.travis.yml example](https://github.com/dotnet/docs/blob/master/.travis.yml) file and [Customizing the Build](https://docs.travis-ci.com/user/customizing-the-build) in the Travis CI docs for more information. The MSBuild-based tools include the LTS (1.0.x) and Current (1.1.x) runtimes in the package; so by installing the SDK, you receive everything you need to build.
 
 ### AppVeyor
 
-[AppVeyor](https://www.appveyor.com/) installs the .NET Core 1.0.1 SDK with the `Visual Studio 2017` build worker image. You can use other build images with different versions of the .NET Core SDK; see the [appveyor.yml example](https://github.com/dotnet/docs/blob/master/appveyor.yml) and the [Build worker images topic in the AppVeyor docs](https://www.appveyor.com/docs/build-environment/#build-worker-images) for more information.
+[AppVeyor](https://www.appveyor.com/) installs the .NET Core 1.0.1 SDK with the `Visual Studio 2017` build worker image. Other build images with different versions of the .NET Core SDK are available; see the [appveyor.yml example](https://github.com/dotnet/docs/blob/master/appveyor.yml) and the [Build worker images](https://www.appveyor.com/docs/build-environment/#build-worker-images) topic in the AppVeyor docs for more information.
 
-The .NET Core SDK binaries are downloaded and unzipped in a subdirectory using the install script, and then they're added to the `PATH` environment variable. You can add a build matrix to run integration tests with multiple versions of the .NET Core SDK:
+The .NET Core SDK binaries are downloaded and unzipped in a subdirectory using the install script, and then they're added to the `PATH` environment variable. Add a build matrix to run integration tests with multiple versions of the .NET Core SDK:
 
 ```yaml
 environment:
@@ -147,7 +147,7 @@ install:
 
 ### Visual Studio Team Services (VSTS)
 
-There are two ways to configure Visual Studio Team Services (VSTS) to build .NET Core projects:
+Configure Visual Studio Team Services (VSTS) to build .NET Core projects using one of these approaches:
 
 1. Run the script from the [manual setup step](#manual-setup) using your commands.
 1. Create a build composed of several VSTS built-in build tasks that are configured to use .NET Core tools.
@@ -156,7 +156,7 @@ Both solutions are valid. Using a manual setup script, you control the version o
 
 To use a manual setup script in VSTS, create a new build definition and specify the script to run for the build step. This is accomplished using the VSTS user interface:
 
-1. Start by creating a new build definition. Once you reach the screen that gives you an option to define what kind of a build you wish to create, select the **Empty** option.
+1. Start by creating a new build definition. Once you reach the screen that provides you an option to define what kind of a build you wish to create, select the **Empty** option.
 
    ![Selecting an empty build definition](./media/using-ci-with-cli/screen1.png)
 
@@ -164,7 +164,7 @@ To use a manual setup script in VSTS, create a new build definition and specify 
 
    ![Adding a build step](./media/using-ci-with-cli/screen2.png)
 
-1. You're presented with the **Task catalog**. The catalog contains tasks that you can use in the build. Since you have a script, select the **Add** button for **PowerShell: Run a PowerShell script**.
+1. You're presented with the **Task catalog**. The catalog contains tasks that you use in the build. Since you have a script, select the **Add** button for **PowerShell: Run a PowerShell script**.
 
    ![Adding a PowerShell script step](./media/using-ci-with-cli/screen3.png)
 
@@ -174,14 +174,9 @@ To use a manual setup script in VSTS, create a new build definition and specify 
 
 ## Orchestrating the build
 
-Most of this document describes how to acquire the .NET Core tools and configure various CI services without providing information on how to orchestrate, or *actually build*, your code with .NET Core. This is by design. The choice of how to structure the build process depends on many factors that cannot be covered in a general way here. Explore the resources and samples provided in the documentation sets of [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [VSTS](https://www.visualstudio.com/docs/build/overview) for more information on orchestrating your builds with each technology.
+Most of this document describes how to acquire the .NET Core tools and configure various CI services without providing information on how to orchestrate, or *actually build*, your code with .NET Core. The choices on how to structure the build process depend on many factors that cannot be covered in a general way here. Explore the resources and samples provided in the documentation sets of [Travis CI](https://travis-ci.org/), [AppVeyor](https://www.appveyor.com/), and [VSTS](https://www.visualstudio.com/docs/build/overview) for more information on orchestrating your builds with each technology.
 
-There are two general approaches that you can take in structuring the build process for .NET Core code using the .NET Core tools:
-
-1. Use MSBuild directly.
-1. Use the .NET Core command-line commands.
-
-Which approach you should take is determined by how comfortable you are with these approaches. MSBuild provides you the ability to express your build process as tasks and targets, but it comes with the added complexity of learning MSBuild project file syntax. Using the .NET Core command-line tools is perhaps simpler, but it requires you to write orchestration logic in a scripting language like `bash` or PowerShell.
+Two general approaches that you take in structuring the build process for .NET Core code using the .NET Core tools are using MSBuild directly or using the .NET Core command-line commands. Which approach you should take is determined by your comfort level with the approaches and trade-offs in complexity. MSBuild provides you the ability to express your build process as tasks and targets, but it comes with the added complexity of learning MSBuild project file syntax. Using the .NET Core command-line tools is perhaps simpler, but it requires you to write orchestration logic in a scripting language like `bash` or PowerShell.
 
 ## See also
 

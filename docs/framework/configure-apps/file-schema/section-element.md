@@ -68,7 +68,7 @@ Declaring a configuration section handler in the *Machine.config* file enables y
 
 ## Example
 
-The following example shows how to define a configuration section and define settings for that section.
+The following example shows how to define a configuration section and define settings for that section:
 
 ```xml
 <configuration>

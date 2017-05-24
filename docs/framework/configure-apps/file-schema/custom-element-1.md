@@ -43,7 +43,7 @@ The **\<sectionName>** element is a custom element defined by a [**\<section>**]
 
 ## Example
 
-The following example declares a custom element called **\<sampleSection>**, which contains settings read by the <xref:System.Configuration.SingleTagSectionHandler> class.
+The following example declares a custom element called **\<sampleSection>**, which contains settings read by the <xref:System.Configuration.SingleTagSectionHandler> class:
 
 ```xml
 <configuration>

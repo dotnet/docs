@@ -64,7 +64,7 @@ This element contains the value of a setting.
 
 ## Example
 
-The following code example shows an application settings file that defines two application-scoped settings and two user-scoped settings.
+The following code example shows an application settings file that defines two application-scoped settings and two user-scoped settings:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

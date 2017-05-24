@@ -79,7 +79,7 @@ The following rules govern the use of linked configuration files:
 
 ## Example
 
-The following code example shows how to include configuration file from the local hard disk.
+The following code example shows how to include configuration file from the local hard disk:
 
 ```xml
 <configuration>

@@ -49,7 +49,7 @@ You can use the **\<remove>** element to remove settings from your application t
 
 The following example shows how to use the **\<remove>** element in an application configuration file to remove settings previously defined in the machine configuration file.
 
-The following machine configuration file code declares the section **\<mySection>** and adds two settings, `key1` and `key2`, to it.
+The following machine configuration file code declares the section **\<mySection>** and adds two settings, `key1` and `key2`, to it:
 
 ```xml
 <!-- Machine.config file -->
@@ -64,7 +64,7 @@ The following machine configuration file code declares the section **\<mySection
 </configuration>
 ```
 
-The following application configuration file code removes the `key2` setting from **\<mySection>**.
+The following application configuration file code removes the `key2` setting from **\<mySection>**:
 
 ```xml
 <!--Application configuration file -->

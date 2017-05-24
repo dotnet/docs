@@ -51,7 +51,7 @@ Removes custom application settings.
 
 ## Example
 
-The following code example shows how to remove a custom configuration setting for `ApplicationName`.
+The following code example shows how to remove a custom configuration setting for `ApplicationName`:
 
 ```xml
 <appSettings>

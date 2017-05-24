@@ -55,7 +55,7 @@ Declaring a section group creates a container tag for configuration sections and
 
 ## Example
 
-The following example shows how to declare a section group and declare sections within a section group.
+The following example shows how to declare a section group and declare sections within a section group:
 
 ```xml
 <configuration>

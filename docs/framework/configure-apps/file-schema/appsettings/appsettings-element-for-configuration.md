@@ -66,7 +66,7 @@ Configuration files specified by the **file** attribute must have a root node of
 
 ## Example
 
-The following example shows an external application settings file (*custom.config*) that defines a custom application setting.
+The following example shows an external application settings file (*custom.config*) that defines a custom application setting:
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
@@ -75,7 +75,7 @@ The following example shows an external application settings file (*custom.confi
 </appSettings>
 ```
 
-The following example shows an application configuration file that consumes the setting in the external settings file and sets an application setting of its own.
+The following example shows an application configuration file that consumes the setting in the external settings file and sets an application setting of its own:
 
 ```xml
 <configuration>

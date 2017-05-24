@@ -43,7 +43,7 @@ The **\<clear>** element removes all sections and section groups from your appli
 
 The following example shows how to use the **\<clear>** element in an application configuration file to clear sections previously defined in the machine configuration file.
 
-The following machine configuration file code declares two sections, **\<sampleSection>** and **\<anotherSampleSection>**, which are read before the application configuration file.
+The following machine configuration file code declares two sections, **\<sampleSection>** and **\<anotherSampleSection>**, which are read before the application configuration file:
 
 ```xml
 <!-- Machine.config file -->

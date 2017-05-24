@@ -1,5 +1,7 @@
 ---
 uid: System.Runtime.InteropServices.Expando
+ms.technology: 
+  - "dotnet-standard"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

@@ -45,7 +45,7 @@ Clears custom application settings.
 
 ## Example
 
-The following code example shows how to clear custom configuration settings.
+The following code example shows how to clear custom configuration settings:
 
 ```xml
 <appSettings>

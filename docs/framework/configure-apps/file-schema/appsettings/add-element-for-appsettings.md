@@ -52,7 +52,7 @@ Adds custom application settings.
 
 ## Example
 
-The following code example shows how to add a custom configuration setting for the application's name.
+The following code example shows how to add a custom configuration setting for the application's name:
 
 ```xml
 <appSettings>

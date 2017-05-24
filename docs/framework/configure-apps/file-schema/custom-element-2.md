@@ -39,12 +39,12 @@ Defines settings for custom configuration sections that use the <xref:System.Con
 
 The **\<sectionName>** element is a custom element defined by a **\<section>** tag in the **\<configSections>** element.
 
-The following table shows the type of object the ConfigurationSettings.GetConfig method returns for each configuration section handler.
+The following table shows the type of object the ConfigurationSettings.GetConfig method returns for each configuration section handler:
 
 | Configuration section handler                        | Return type                                                |
 | ---------------------------------------------------- | ---------------------------------------------------------- |
-| <xref:System.Configuration.NameValueSectionHandler>  | <xref:System.Collections.Specialized.NameValueCollection> |
-| <xref:System.Configuration.DictionarySectionHandler> | <xref:System.Collections.IDictionary>                     |
+| <xref:System.Configuration.NameValueSectionHandler>  | <xref:System.Collections.Specialized.NameValueCollection>  |
+| <xref:System.Configuration.DictionarySectionHandler> | <xref:System.Collections.IDictionary>                      |
 
 ## Example
 

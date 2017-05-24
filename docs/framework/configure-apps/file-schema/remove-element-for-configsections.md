@@ -49,7 +49,7 @@ You can use the **\<remove>** element to remove sections and section groups from
 
 The following example shows how to use the **\<remove>** element in an application configuration file to remove a section previously defined in the machine configuration file.
 
-The following machine configuration file code declares the section **\<sampleSection>**.
+The following machine configuration file code declares the section **\<sampleSection>**:
 
 ```xml
 <!-- Machine.config file -->

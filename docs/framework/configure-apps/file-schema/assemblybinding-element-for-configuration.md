@@ -68,7 +68,7 @@ The [**\<linkedConfiguration>**](~/docs/framework/configure-apps/file-schema/lin
 
 ## Example
 
-The following code example shows how to include a configuration file on the local hard disk.
+The following code example shows how to include a configuration file on the local hard disk:
 
 ```xml
 <configuration>

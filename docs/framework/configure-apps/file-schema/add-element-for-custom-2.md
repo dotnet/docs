@@ -44,7 +44,7 @@ Adds custom application settings. Each **\<add>** tag contains a key/value pair.
 
 ## Example
 
-The following example shows how to define a custom configuration section and use the **\<add>** element to put settings into the section.
+The following example shows how to define a custom configuration section and use the **\<add>** element to put settings into the section:
 
 ```xml
 <configuration>

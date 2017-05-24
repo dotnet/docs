@@ -14,8 +14,6 @@ api_name:
 api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: fff47a86-9d9f-4176-9530-10e1876e393f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -29,12 +27,10 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 HRESULT ForwardTranslateAccelerator(  
    MSG* pMsg,   
    VARIANT_BOOL appUnhandled  
 )  
-  
 ```  
   
 #### Parameters  

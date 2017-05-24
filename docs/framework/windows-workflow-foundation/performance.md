@@ -101,7 +101,6 @@ Dustin Metzgar
         {  
         }  
     }  
-  
 ```  
   
 ### Empty Workflow  
@@ -169,7 +168,6 @@ public sealed class CompensableActivityEmptyCompensation : CodeActivity
   
         protected override void Execute(CodeActivityContext context) { }  
     }  
-  
 ```  
   
  ![WF3 and WF basic compensation workflows](../../../docs/framework/windows-workflow-foundation/media/basiccompensationworkflows.gif "BasicCompensationWorkflows")  
@@ -355,7 +353,6 @@ public class Workflow1 : Activity
         }  
     }  
 }  
-  
 ```  
   
  There are many other factors that can affect memory consumption. The same advice for all managed programs still applies.  In IIS-hosted environments, the <xref:System.ServiceModel.WorkflowServiceHost> object created for a workflow definition stays in memory until the application pool is recycled.  This should be kept in mind when writing extensions.  Also, it is best to avoid "global" variables (variables scoped to the whole workflow) and limit the scope of variables wherever possible.  

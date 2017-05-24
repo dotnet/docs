@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], preventing row addition or deletion"
 ms.assetid: a17722bd-9400-41e6-8dcc-c9c151f0a749
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

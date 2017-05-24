@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "data grids, accessing bound objects"
   - "DataGridView control [Windows Forms], accessing objects bound to rows"
 ms.assetid: 0e05748f-4403-4eb8-8b2f-b098108181b5
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

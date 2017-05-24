@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "interop marshaling"
   - "interop marshaling, about interop marshaling"
 ms.assetid: 115f7a2f-d422-4605-ab36-13a8dd28142a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

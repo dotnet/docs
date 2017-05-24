@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "shared elements"
   - "elements, shared"
 ms.assetid: 2bf7cf2c-b0dd-485e-8749-b5d674dab4cd
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

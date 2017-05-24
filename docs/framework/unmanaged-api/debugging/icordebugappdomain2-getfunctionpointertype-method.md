@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugAppDomain2::GetFunctionPointerType method [.NET Framework debugging]"
   - "GetFunctionPointerType method [.NET Framework debugging]"
 ms.assetid: 0aba6096-5b38-435c-a72a-86d35db4daef
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

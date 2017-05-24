@@ -1,5 +1,5 @@
 ---
-title: "Exceptions: the raise Function (F#)"
+title: "Exceptions: the raise Function (F#) | Microsoft Docs"
 description: "Exceptions: the raise Function (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

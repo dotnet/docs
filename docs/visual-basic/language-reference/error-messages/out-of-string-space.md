@@ -14,8 +14,6 @@ f1_keywords:
 dev_langs: 
   - "VB"
 ms.assetid: 16681c75-a400-422d-9351-c691d3c7614e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

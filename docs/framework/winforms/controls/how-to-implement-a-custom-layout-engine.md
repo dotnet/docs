@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "FlowLayoutPanel control [Windows Forms], layout engine"
   - "LayoutEngine class"
 ms.assetid: f91aa91c-29f4-4089-95ca-5d48b774b00e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

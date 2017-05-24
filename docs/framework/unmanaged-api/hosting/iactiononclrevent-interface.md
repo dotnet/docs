@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IActionOnCLREvent interface [.NET Framework hosting]"
 ms.assetid: b5f9b41e-7301-429c-911f-21d5422292b3
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

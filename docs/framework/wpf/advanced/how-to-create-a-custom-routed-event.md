@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "routed events, creating"
   - "events, routing"
 ms.assetid: b79f459a-1c3f-4045-b2d4-1659cc8eaa3c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

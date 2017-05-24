@@ -1,5 +1,5 @@
 ---
-title: Implicitly typed lambda expressions
+title: Implicitly typed lambda expressions | Microsoft Docs
 description: Implicitly typed lambda expressions
 keywords: .NET, .NET Core
 author: BillWagner

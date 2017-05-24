@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_ArrayDimensionsDontMatch"
 ms.assetid: 71809e3b-8147-4314-9c4c-e4a5bc9a5530
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

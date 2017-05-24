@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "initializing trace sources"
   - "configuration files [.NET Framework], trace sources"
 ms.assetid: f88dda6f-5fda-45be-9b3c-745a9b708c4d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

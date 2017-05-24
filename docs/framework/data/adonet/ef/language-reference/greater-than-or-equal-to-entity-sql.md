@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 70780ac4-0123-4da8-b731-8af856daffe3
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Compares two expressions to determine whether the left expression has a value gr
 ## Syntax  
   
 ```  
-  
 expression >= expression  
 ```  
   

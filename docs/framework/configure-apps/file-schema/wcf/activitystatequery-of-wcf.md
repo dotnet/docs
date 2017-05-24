@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d6cdc04b-6f3a-4097-a623-ee4a1be3b5c4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"
@@ -62,7 +60,6 @@ Represents a query that is used to track life cycle changes of the activities th
  One unique feature of an ActivityStateQuery is the ability to extract data when tracking the execution of a workflow. This provides additional context when accessing the tracking records post execution. You can use the [\<arguments>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/arguments.md), [\<states>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/states.md) and [\<states>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/states.md) elements to extract any variable or argument from any activity in a workflow.The following example shows an activity state query that extracts variables and arguments when the activity’s `Closed` tracking record is emitted. Variables and arguments can be extracted only with an ActivityStateRecord and thus are subscribed to within a tracking profile using [\<activityStateQuery>](../../../../../docs/framework/configure-apps/file-schema/windows-workflow-foundation/activitystatequery.md).  
   
 ```  
-  
 <activityStateQuery activityName="SendEmailActivity">  
   <states>  
     <state name="Closed"/>  
@@ -74,7 +71,6 @@ Represents a query that is used to track life cycle changes of the activities th
     <argument name="Result"/>  
   </arguments>  
 </activityStateQuery>  
-  
 ```  
   
 ## See Also  

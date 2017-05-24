@@ -30,8 +30,6 @@ helpviewer_keywords:
   - "bitmaps [Windows Forms], file format"
   - "Exchangeable Image File"
 ms.assetid: 6be085a2-2c13-47c8-b80a-c18b32777d8d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

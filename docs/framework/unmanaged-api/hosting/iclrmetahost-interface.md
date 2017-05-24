@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRMetaHost interface [.NET Framework hosting]"
 ms.assetid: c627fcdd-fc4f-4b1c-8e91-df8536f627d8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 28

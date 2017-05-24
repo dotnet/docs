@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 57ac2072-d9f5-432b-84f0-a889c62fd813
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -99,7 +97,6 @@ Console.WriteLine("----")
 ' Remove DefaultColor.  
 root.SetElementValue("DefaultColor", Nothing)  
 Console.WriteLine(root)  
-  
 ```  
   
  This example produces the following output:  

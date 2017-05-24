@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 82db7193-a860-418b-84fc-fff2fdf2e025
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -23,7 +21,6 @@ Defines policy for code elements the containing attribute is applied to.
 ## Syntax  
   
 ```xml  
-  
 <AttributeImplies Activate="policy_type"  
                   Browse="policy_type"  
                   Dynamic="policy_type"  
@@ -34,7 +31,6 @@ Defines policy for code elements the containing attribute is applied to.
                   MarshalObject="policy_setting"  
                   MarshalDelegate="policy_setting"  
                   MarshalStructure="policy_setting" />  
-  
 ```  
   
 ## Attributes and Elements  

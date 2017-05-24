@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "C# language, operators"
   - "operators [C#], about operators"
 ms.assetid: 214e7b83-1a41-4f7c-9867-64e9c0bab39f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 42
 author: "BillWagner"
 ms.author: "wiwagn"

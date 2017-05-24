@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6c89e76c-643b-4b6a-9b25-628f753d7027
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -26,7 +24,6 @@ This configuration element defines a standard endpoint for controlling the execu
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <workflowControlEndpoint>           <standardEndpoint                  name="String" />        </workflowControlEndpoint>            </standardEndpoints>  
 </system.serviceModel>  

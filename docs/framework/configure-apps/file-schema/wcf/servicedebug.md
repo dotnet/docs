@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6d7ea986-f232-49fe-842c-f934d9966889
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Specifies debugging and help information features for a [!INCLUDE[indigo1](../..
 ## Syntax  
   
 ```  
-  
 <serviceDebug     httpHelpPageBinding="String"    httpHelpPageBindingConfiguration="String"  
     httpHelpPageEnabled="Boolean"  
     httpHelpPageUrl="Uri"  

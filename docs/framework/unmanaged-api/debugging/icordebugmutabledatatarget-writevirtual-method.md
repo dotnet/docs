@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 80833648-58a7-491a-8dc8-9a48e9bb3adc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,12 +23,10 @@ Writes memory into the target process address space.
 ## Syntax  
   
 ```  
-  
 HRESULT WriteVirtual(  
    [in] CORDB_ADDRESS address,  
    [in, size_is(bytesRequested)] const BYTE * pBuffer,  
    [in] ULONG32 bytesRequested);  
-  
 ```  
   
 #### Parameters  

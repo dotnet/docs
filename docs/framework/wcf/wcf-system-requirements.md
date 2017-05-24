@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Windows Communication Foundation, requirements"
 ms.assetid: c43918db-9a36-426c-9e8a-e1bd6688a5b7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "Erikre"
 ms.author: "erikre"

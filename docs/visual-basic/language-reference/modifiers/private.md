@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Private keyword"
   - "Private keyword, syntax"
 ms.assetid: aba74a2e-5824-4613-bf63-b9ec7787f4e6
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

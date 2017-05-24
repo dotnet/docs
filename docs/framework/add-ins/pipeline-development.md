@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "add-in pipeline [.NET Framework], about"
   - "add-ins [.NET Framework], pipeline development"
 ms.assetid: 932788f2-b87d-44cf-82f9-04492a8b2722
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 31
 author: "rpetrusha"
 ms.author: "ronpet"

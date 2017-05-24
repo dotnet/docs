@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "ControlTemplate [WPF], RepeatButton"
   - "states [WPF], RepeatButton"
 ms.assetid: fd340743-f44f-4990-9077-085301469670
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

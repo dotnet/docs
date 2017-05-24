@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "clear element for <listeners> for <trace>"
   - "<clear> element for <listeners> for <trace>"
 ms.assetid: b44732a8-271f-4a06-ba9e-fe3298d6f192
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"

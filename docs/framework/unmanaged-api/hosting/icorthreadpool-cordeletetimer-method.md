@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorThreadpool::CorDeleteTimer method [.NET Framework hosting]"
   - "CorDeleteTimer method [.NET Framework hosting]"
 ms.assetid: 74847c35-7ca1-466a-b750-b25e7b03d100
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

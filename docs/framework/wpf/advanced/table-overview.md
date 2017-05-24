@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "documents, tables"
   - "tables"
 ms.assetid: 5e1105f4-8fc4-473a-ba55-88c8e71386e6
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

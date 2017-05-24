@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: b91765e4-82db-46f9-a6dc-6b80610276af
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5
@@ -35,12 +33,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 typedef enum ILCodeKind {  
    ILCODE_ORIGINAL_IL = 0x1,  
    ILCODE_REJIT_IL = 0x2,  
 } ILCodeKind;  
-  
 ```  
   
 ## Members  

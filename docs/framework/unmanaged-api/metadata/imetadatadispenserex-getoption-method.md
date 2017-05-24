@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetOption method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::GetOption method [.NET Framework metadata]"
 ms.assetid: d7f794e5-8e25-4d65-850a-7c34fbfce87d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 16

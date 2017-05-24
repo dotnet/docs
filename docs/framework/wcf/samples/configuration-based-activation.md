@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 21bb762e-c43e-4b0c-887b-5e434d665838
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 26
 author: "Erikre"
 ms.author: "erikre"
@@ -45,7 +43,6 @@ This sample demonstrates how to activate [!INCLUDE[indigo1](../../../../includes
    <add relativeAddress="Calculator.svc" service="Microsoft.ServiceModel.Samples.CalculatorService" />  
   
 <serviceActivations>  
-  
 ```  
   
  The observation to make is the configuration looks very similar to the configuration of .svc files. An additional attribute that is introduced is the `relativeAddress` that provides the address of the service. The relative address is also the virtual path for the service. The host retrieves the Web.config file of the file from the `virtualPath` location, if present; otherwise the host searches its parent folder recursively.  

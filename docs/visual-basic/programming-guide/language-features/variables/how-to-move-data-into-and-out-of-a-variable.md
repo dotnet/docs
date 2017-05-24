@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "variables [Visual Basic], retrieving values"
   - "variables [Visual Basic], storing data"
 ms.assetid: 93744f46-bf78-4fa0-9640-1de01bc38d9a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "SpinLock, how to enable thread-tracking"
 ms.assetid: 62ee2e68-0bdd-4869-afc9-f0a57a11ae01
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

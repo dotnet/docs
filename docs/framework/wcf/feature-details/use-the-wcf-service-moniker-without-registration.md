@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "COM [WCF], service monikers without registration"
 ms.assetid: ee3cf5c0-24f0-4ae7-81da-73a60de4a1a8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"

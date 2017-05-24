@@ -16,8 +16,6 @@ helpviewer_keywords:
   - ".NET Native"
   - "C# and native compilation"
 ms.assetid: 47cd5648-9469-4b1d-804c-43cc04384045
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"

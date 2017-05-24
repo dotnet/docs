@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "While statement"
   - "While...End While statements"
 ms.assetid: b931d1ce-e8ed-44d8-a13d-92a4f5458a1e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

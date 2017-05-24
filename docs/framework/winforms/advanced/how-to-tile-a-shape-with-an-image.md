@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "shapes, tiling with images"
   - "bitmaps [Windows Forms], filling shapes with"
 ms.assetid: 6d407891-6e5c-4495-a546-3da5604e9fb8
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

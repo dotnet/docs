@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "UI Automation, server-side provider implementation"
   - "provider implementation, UI Automation"
 ms.assetid: 6acc6d08-bd67-4e2e-915c-9c1d34eb86fe
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 39
 author: "Xansky"
 ms.author: "mhopkins"

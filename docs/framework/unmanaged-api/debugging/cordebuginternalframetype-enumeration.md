@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugInternalFrameType enumeration [.NET Framework debugging]"
 ms.assetid: e4412dc2-c338-4cfb-94d8-f682095dd2b1
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

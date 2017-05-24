@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "extension methods [C#], implementing and calling"
 ms.assetid: 7dab2a56-cf8e-4a47-a444-fe610a02772a
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

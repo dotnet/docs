@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Optional keyword, contexts"
   - "Optional keyword"
 ms.assetid: 4571ce88-a539-4115-b230-54eb277c6aa7
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "overloaded members"
   - "signatures, members"
 ms.assetid: 964ba19e-8b94-4b5b-b1e3-5a0b531a0bb1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -37,7 +35,6 @@ public static class Console {
     public void WriteLine(bool value);  
     ...  
 }  
-  
 ```  
   
  Because only methods, constructors, and indexed properties can have parameters, only those members can be overloaded.  

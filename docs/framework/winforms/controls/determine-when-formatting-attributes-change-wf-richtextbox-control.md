@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "text boxes, determining font changes"
   - "SelChange event"
 ms.assetid: bdfed015-f77a-41e5-b38f-f8629b2fa166
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -46,7 +44,6 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
            ToolBarButton1.Pushed = False  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -66,7 +63,6 @@ A common use of the Windows Forms <xref:System.Windows.Forms.RichTextBox> contro
           toolBarButton1.Pushed = false;  
        }  
     }  
-  
     ```  
   
     ```cpp  

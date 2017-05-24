@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "BeginInvoke method"
   - "threading [Windows Forms], controls"
 ms.assetid: c311d652-0f26-45fa-bdcc-b1615d73ce4e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

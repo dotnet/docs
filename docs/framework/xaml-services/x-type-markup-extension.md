@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "TargetType attribute [XAML Services]"
   - "Type markup extension in XAML [XAML Services]"
 ms.assetid: e0e0ce6f-e873-49c7-8ad7-8b840eb353ec
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 27
 author: "wadepickett"
 ms.author: "wpickett"

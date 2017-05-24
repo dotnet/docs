@@ -38,8 +38,6 @@ helpviewer_keywords:
   - "pattern-matching with regular expressions, classes"
   - "GroupCollection class"
 ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"

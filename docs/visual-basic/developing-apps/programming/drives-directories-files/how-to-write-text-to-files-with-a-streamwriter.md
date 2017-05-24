@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "text, writing to files"
   - "writing to files, StreamWriter"
 ms.assetid: 99762e57-ef46-4dcc-8959-a8f79c22f067
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

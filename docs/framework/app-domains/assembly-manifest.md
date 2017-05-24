@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "culture, assembly manifest"
   - "assemblies [.NET Framework], metadata"
 ms.assetid: 8e40fab9-549d-4731-aec2-ffa47a382de0
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

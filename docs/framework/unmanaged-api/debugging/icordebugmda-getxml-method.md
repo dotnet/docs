@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugMDA::GetXML method [.NET Framework debugging]"
   - "GetXML method [.NET Framework debugging]"
 ms.assetid: 29746b24-3766-4255-8813-0426c45e73e5
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

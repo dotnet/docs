@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "return values of page functions"
   - "getting, return values of page functions"
 ms.assetid: 75470af6-256c-4c46-87e7-705080723a1c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

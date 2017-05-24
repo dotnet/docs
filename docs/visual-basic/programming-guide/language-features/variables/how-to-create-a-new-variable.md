@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Dim statement"
   - "variables [Visual Basic], creating"
 ms.assetid: 35300be3-77b0-4bef-a156-034d3cdedde0
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -44,7 +42,6 @@ You create a variable with a [Dim Statement](../../../../visual-basic/language-r
 1.  Declare the variable in a `Dim` statement.  
   
     ```  
-  
     Dim newCustomer  
     ```  
   

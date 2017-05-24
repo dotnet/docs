@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 6758f4d3-6bc7-4c99-8582-e9be00566784
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6
@@ -35,12 +33,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 typedef enum WriteableMetadataUpdateMode {  
    LegacyCompatPolicy,  
    AlwaysShowUpdates  
 } WriteableMetadataUpdateMode;  
-  
 ```  
   
 ## Members  

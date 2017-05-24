@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "brushes, painting with gradients"
   - "painting with solid colors"
 ms.assetid: f5b182f3-c5c7-4cbe-9f2f-65e690d08255
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

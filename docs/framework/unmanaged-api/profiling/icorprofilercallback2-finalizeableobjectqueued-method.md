@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "FinalizeableObjectQueued method [.NET Framework profiling]"
   - "ICorProfilerCallback2::FinalizeableObjectQueued method [.NET Framework profiling]"
 ms.assetid: 92d76893-683c-475d-9996-5bff03cdb10f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

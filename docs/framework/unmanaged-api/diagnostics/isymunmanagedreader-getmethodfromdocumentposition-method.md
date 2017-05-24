@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetMethodFromDocumentPosition method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetMethodFromDocumentPosition method [.NET Framework debugging]"
 ms.assetid: 55773dbc-9053-46e3-8a3c-86caa9d91fb4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

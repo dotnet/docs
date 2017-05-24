@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetRuntime method [.NET Framework hosting]"
   - "ICLRMetaHost::GetRuntime method [.NET Framework hosting]"
 ms.assetid: a10749f1-ab91-47cf-982f-d8ccd2e81bd2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 31

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "permissions [.NET Framework]"
   - "security [.NET Framework], about security"
 ms.assetid: 3cfced4f-ea02-4e66-ae98-d69286363e98
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "mairaw"
 ms.author: "mairaw"

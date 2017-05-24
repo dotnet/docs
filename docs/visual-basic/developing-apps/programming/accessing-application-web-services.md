@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "My.WebServices object"
   - "applications [Visual Basic], Web services"
 ms.assetid: 8ad5405b-e771-42b1-82d3-ce97af2cea9e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "classes, CompositeCollection"
   - "data binding, CompositeCollection class"
 ms.assetid: 0d8fc84c-7920-427f-8ad7-d55ca656c170
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

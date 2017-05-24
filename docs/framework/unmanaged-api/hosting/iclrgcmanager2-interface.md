@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRGCManager2 interface [.NET Framework hosting]"
 ms.assetid: 4b5ffd7b-9ad7-41cd-9bba-34030ae3da7e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

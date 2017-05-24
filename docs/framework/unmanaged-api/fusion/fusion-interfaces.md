@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "fusion interfaces [.NET Framework]"
   - "unmanaged interfaces [.NET Framework], fusion"
 ms.assetid: e2cf98b7-40c1-4f74-86c7-8a76dd9da677
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

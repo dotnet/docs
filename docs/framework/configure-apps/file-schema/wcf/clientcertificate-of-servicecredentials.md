@@ -13,8 +13,6 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: 90ad03aa-2317-43dd-8a72-6d24cdcad15c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "Erikre"
 ms.author: "erikre"
@@ -34,7 +32,6 @@ Defines an X.509 certificate used to sign and encrypt messages to a client form 
 ## Syntax  
   
 ```  
-  
 <clientCertificate>  
  <certificate/>  
  <authentication/>  

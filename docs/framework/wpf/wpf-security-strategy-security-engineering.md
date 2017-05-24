@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "source analysis tools"
   - "Security Development Lifecycle (SDL), source editing tools"
 ms.assetid: 0fc04394-4e47-49ca-b0cf-8cd1161d95b9
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

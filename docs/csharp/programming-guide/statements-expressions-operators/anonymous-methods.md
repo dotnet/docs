@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "methods [C#], anonymous"
   - "delegates [C#], anonymous methods"
 ms.assetid: a62441fa-f0a3-4acb-9aa6-93762a635275
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"

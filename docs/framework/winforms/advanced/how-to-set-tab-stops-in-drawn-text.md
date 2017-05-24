@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "text, drawing with tab stops"
   - "tabs, drawn text"
 ms.assetid: 64878f98-39ba-4303-b63f-0859ab682eeb
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

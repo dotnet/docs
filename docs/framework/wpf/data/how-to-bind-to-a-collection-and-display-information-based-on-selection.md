@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "data binding, selecting data for views"
   - "data binding, binding to collections"
 ms.assetid: 952a7d76-dd29-49e5-86f5-32c4530e70eb
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

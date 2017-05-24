@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "delegates [C#], combining"
   - "multicast delegates [C#]"
 ms.assetid: 4e689450-6d0c-46de-acfd-f961018ae5dd
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

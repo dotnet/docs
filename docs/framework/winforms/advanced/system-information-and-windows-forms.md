@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "user names, retrieving"
   - "system information [Windows Forms]"
 ms.assetid: 30cf43a3-8cb2-4ff3-862b-6c34576616a8
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -35,7 +33,6 @@ Dim Domain As String = Windows.Forms.SystemInformation.UserDomainName
   
 MessageBox.Show("Good morning " & User & ". You are connected to " _  
 & Domain)  
-  
 ```  
   
 ```csharp  

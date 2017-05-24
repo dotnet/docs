@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "WCF, security"
   - "ProtectionLevel property"
 ms.assetid: 0c034608-a1ac-4007-8287-b1382eaa8bf2
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "Erikre"
 ms.author: "erikre"

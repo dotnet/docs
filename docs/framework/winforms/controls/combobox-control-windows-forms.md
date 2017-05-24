@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "drop-down lists, ComboBox control"
   - "ComboBox control [Windows Forms]"
 ms.assetid: 86a1bbc3-0469-4290-91c5-99ff61b739ff
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "combo boxes, accessing items"
   - "CheckedListBox control [Windows Forms], accessing items"
 ms.assetid: 1216742f-bcf9-4ff8-8a62-d7c9053c2b96
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -38,7 +36,6 @@ Accessing specific items in a Windows Forms combo box, list box, or checked list
        ' Return the text of the item using the index:  
        Return ComboBox1.Items(i).ToString  
     End Function  
-  
     ```  
   
     ```csharp  
@@ -47,7 +44,6 @@ Accessing specific items in a Windows Forms combo box, list box, or checked list
        // Return the text of the item using the index:  
        return (comboBox1.Items[i].ToString());  
     }  
-  
     ```  
   
     ```cpp  

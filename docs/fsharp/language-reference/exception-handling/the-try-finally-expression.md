@@ -1,5 +1,5 @@
 ---
-title: "Exceptions: The try...finally Expression (F#)"
+title: "Exceptions: The try...finally Expression (F#) | Microsoft Docs"
 description: "Exceptions: The try...finally Expression (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

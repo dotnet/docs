@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "animation, paths"
   - "path animations"
 ms.assetid: 979c732c-df74-47a6-be96-8e07b3707d53
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

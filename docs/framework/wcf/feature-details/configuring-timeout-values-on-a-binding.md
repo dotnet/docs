@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b5c825a2-b48f-444a-8659-61751ff11d34
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -61,7 +59,6 @@ public static void Main()
                 // Handle exception ...  
             }  
         }  
-  
 ```  
   
  The following example shows how to configure timeouts on a binding in a configuration file.  
@@ -79,7 +76,6 @@ public static void Main()
       </wsHttpBinding>  
     </bindings>  
   </system.serviceModel>  
-  
 ```  
   
  More information about these settings can be found in the documentation for the <xref:System.ServiceModel.Channels.Binding> class.  

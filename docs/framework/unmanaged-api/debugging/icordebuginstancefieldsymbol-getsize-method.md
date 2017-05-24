@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: a4af1e3b-6a9f-4855-95ba-5317565c8e2b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,11 +23,9 @@ Gets the size in bytes of the instance field.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSize(  
    [out] ULONG32 *pcbSize  
 );  
-  
 ```  
   
 #### Parameters  

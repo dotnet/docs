@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "restricted security environment"
   - "code security, sandboxing"
 ms.assetid: d1ad722b-5b49-4040-bff3-431b94bb8095
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"
@@ -282,7 +280,6 @@ class Sandboxer : MarshalByRefObject
         }  
     }  
 }  
-  
 ```  
   
 ## See Also  

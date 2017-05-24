@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugILFrame::GetLocalVariable method [.NET Framework debugging]"
   - "GetLocalVariable method [.NET Framework debugging]"
 ms.assetid: c8706356-d50b-4f87-a40c-39c3b7f4fd38
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

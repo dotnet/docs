@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "MarshalCleanupError MDA"
   - "memory, cleanup errors"
 ms.assetid: 2f5d9e7c-ae51-4155-a435-54347aa1f091
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

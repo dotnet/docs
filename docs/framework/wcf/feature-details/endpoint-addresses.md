@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], addresses"
   - "WCF [WCF], addresses"
 ms.assetid: 13f269e3-ebb1-433c-86cf-54fbd866a627
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"
@@ -95,7 +93,6 @@ Every endpoint has an address associated with it, which is used to locate and id
  The following is an example of configuration code that uses multipleSiteBindingsEnabled on [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
   
 ```  
-  
 <system.serviceModel>  
   <serviceHostingEnvironment multipleSiteBindingsEnabled="true" >  
   </serviceHostingEnvironment>  

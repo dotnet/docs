@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "StatusBar control [Windows Forms], about StatusBar control"
   - "status bars"
 ms.assetid: b7b9852c-633d-4416-bb2e-94852b989c6c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

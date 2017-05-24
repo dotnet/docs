@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "generics [.NET Framework], interfaces"
   - "ordering comparisons [.NET Framework]"
 ms.assetid: 88bf5b04-d371-4edb-ba38-01ec7cabaacf
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

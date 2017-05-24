@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 030b2f8c-8c21-40b7-855d-3afa78975a17
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Gets the culture name string of the assembly.
 ## Syntax  
   
 ```  
-  
 HRESULT GetCulture(  
    [in] ULONG32 cchCulture,   
    [out] ULONG32 *pcchCulture,   
    [out, size_is(cchCulture), length_is(*pcchCulture)] WCHAR szCulture[]  
 );  
-  
 ```  
   
 #### Parameters  

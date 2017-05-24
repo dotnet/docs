@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "binding direction"
   - "data binding, direction of binding"
 ms.assetid: 37334478-028b-4514-86c9-1420709f4818
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

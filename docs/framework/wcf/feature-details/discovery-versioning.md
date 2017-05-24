@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f91c6d0a-3af2-45c5-9a5c-e75390619836
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -54,5 +52,4 @@ oldVersionUdpEndpoint.Address = new EndpointAddress(oldVersionUdpEndpoint.Addres
   
 serviceHost.AddServiceEndpoint(newVersionUdpEndpoint);  
 serviceHost.AddServiceEndpoint(oldVersionUdpEndpoint);  
-  
 ```

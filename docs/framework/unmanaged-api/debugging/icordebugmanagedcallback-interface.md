@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugManagedCallback interface [.NET Framework debugging]"
 ms.assetid: b47f1d61-c7dc-4196-b926-0b08c94f7041
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

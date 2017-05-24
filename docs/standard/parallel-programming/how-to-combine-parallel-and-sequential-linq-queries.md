@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "parallel queries, combine parallel and sequential"
 ms.assetid: 1167cfe6-c8aa-4096-94ba-c66c3a4edf4c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

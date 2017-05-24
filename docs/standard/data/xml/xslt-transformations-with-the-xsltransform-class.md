@@ -14,8 +14,6 @@ dev_langs:
   - "C++"
   - "jsharp"
 ms.assetid: 500335af-f9b5-413b-968a-e6d9a824478c
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
@@ -71,7 +69,6 @@ Public Class Sample
         xslt.Transform(xpathdocument, Nothing, writer, Nothing)  
     End Sub 'Main  
 End Class 'Sample  
-  
 ```  
   
 ```csharp  

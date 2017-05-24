@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Transforms, origins of"
   - "graphics, origins of Transforms"
 ms.assetid: f4dbc29d-93c7-41cd-96d8-5cfd8624b470
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

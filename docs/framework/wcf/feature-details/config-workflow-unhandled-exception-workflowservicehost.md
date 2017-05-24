@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 51b25c86-292c-43e4-8d13-273d2badc8ad
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
     ```  
   
     > [!NOTE]
@@ -42,7 +39,6 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
   
     ```csharp  
     host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action = WorkflowUnhandledExceptionAction.AbandonAndSuspend });  
-  
     ```  
   
      The `action` attribute of the <`workflowUnhandledException`> element can be set to one of the following values:  

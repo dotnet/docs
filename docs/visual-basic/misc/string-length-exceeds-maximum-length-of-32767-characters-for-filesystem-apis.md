@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrFileIO_StringLengthExceeded"
 ms.assetid: 4044ae87-9984-400c-b247-20f9c1b1a0c0
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

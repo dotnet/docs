@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "servicePointManager element"
   - "<servicePointManager> element"
 ms.assetid: 6e5def51-3646-4ef6-a7bd-c69151321bec
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
@@ -39,7 +37,6 @@ Configures connections to network resources.
 ## Syntax  
   
 ```  
-  
       <servicePointManager  
   checkCertificateName="true|false"  
   checkCertificateRevocationList="true|false"  

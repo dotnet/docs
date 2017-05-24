@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "best practices [WCF], data contract versioning"
   - "Windows Communication Foundation, data contracts"
 ms.assetid: bf0ab338-4d36-4e12-8002-8ebfdeb346cb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 24
 author: "Erikre"
 ms.author: "erikre"

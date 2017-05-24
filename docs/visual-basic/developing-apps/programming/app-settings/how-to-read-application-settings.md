@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "My.Settings object, reading application settings"
   - "application settings, reading"
 ms.assetid: eb3428ef-115e-49a8-a878-e0613183fee0
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

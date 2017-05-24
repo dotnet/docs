@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 475a9ad6-8c8d-4f49-9970-af273e5360f1
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Extracts an element from a multivalued collection.
 ## Syntax  
   
 ```  
-  
 ANYELEMENT ( expression )  
 ```  
   

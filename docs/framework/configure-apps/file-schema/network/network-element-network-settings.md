@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "<network> element"
   - "network element"
 ms.assetid: 2c2c6ad4-ed11-48ab-b28e-2bc0ba9b42c7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
@@ -40,7 +38,6 @@ Configures the network options for an external Simple Mail Transport Protocol (S
 ## Syntax  
   
 ```  
-  
       <network  
   clientDomain="string"   
   defaultCredentials="true|false"  

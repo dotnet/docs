@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "templates [WPF], Menu"
   - "parts [WPF], Menu"
 ms.assetid: b89da183-9b87-42c6-ac53-731a42c7b09e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

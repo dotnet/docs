@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "objects [Visual Basic], inheritance"
   - "object variables, determining relation"
 ms.assetid: da002e3f-6616-4bad-a229-f842d06652bb
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

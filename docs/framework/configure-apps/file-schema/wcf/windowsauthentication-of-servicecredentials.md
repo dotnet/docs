@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e0709473-0997-4de3-8f49-783527309a48
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies the settings of a Windows service credential.
 ## Syntax  
   
 ```  
-  
 <windowsAuthentication  
       allowAnonymousLogons="Boolean"  
       includeWindowsGroups="Boolean" />  

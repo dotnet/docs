@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "LINQ to SQL, DBML files"
   - "LINQ to SQL, SQLMetal"
 ms.assetid: 819e5a96-7646-4fdb-b14b-fe31221b0614
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 43
 author: "Erikre"
 ms.author: "erikre"

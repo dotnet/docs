@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "enumerations [.NET Framework], parsing strings"
   - "base types, parsing strings"
 ms.assetid: e39324ee-72e5-42d4-a80d-bf3ee7fc6c59
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

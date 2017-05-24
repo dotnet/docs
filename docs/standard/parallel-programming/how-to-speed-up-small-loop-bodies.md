@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "parallel loops, how to speed up"
 ms.assetid: c7a66677-cb59-4cbf-969a-d2e8fc61a6ce
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

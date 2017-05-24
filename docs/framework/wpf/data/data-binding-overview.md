@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "data binding, about data binding"
   - "conversion for data binding"
 ms.assetid: c707c95f-7811-401d-956e-2fffd019a211
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 78
 author: dotnet-bot
 ms.author: dotnetcontent

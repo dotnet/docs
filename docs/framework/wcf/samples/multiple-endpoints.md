@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Multiple EndPoints"
 ms.assetid: 8f0c2e1f-9aee-41c2-8301-c72b7f664412
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 31
 author: "Erikre"
 ms.author: "erikre"
@@ -46,7 +44,6 @@ The Multiple Endpoints sample demonstrates how to configure multiple endpoints o
             contract="Microsoft.ServiceModel.Samples.ICalculator" />  
   ...  
 </service>  
-  
 ```  
   
  Both endpoints are also configured on the client. These endpoints are given names so that the caller can pass the desired endpoint name into the constructor of the client.  
@@ -95,7 +92,6 @@ static void Main()
     Console.WriteLine("Press <ENTER> to terminate client.");  
     Console.ReadLine();  
 }  
-  
 ```  
   
  When you run the client, interactions with both endpoints are displayed.  

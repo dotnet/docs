@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 06522727-5f64-4391-9331-11386883c352
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8
@@ -33,12 +31,10 @@ Gets an "ICorDebugValue" object that encapsulates the return value of a function
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetReturnValueForILOffset(  
     ULONG32 ILoffset,   
     [out] ICorDebugValue **ppReturnValue  
 );  
-  
 ```  
   
 #### Parameters  

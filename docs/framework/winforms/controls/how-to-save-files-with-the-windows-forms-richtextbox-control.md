@@ -21,8 +21,6 @@ helpviewer_keywords:
   - ".rtf files, saving in RichTextBox control"
   - "text files, saving from RichTextBox control"
 ms.assetid: 4a58ec19-84d1-4383-9110-298c06adcfca
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -62,7 +60,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
        & "\Testdoc.rtf", _  
           RichTextBoxStreamType.RichNoOleObjs)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -76,7 +73,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can write the 
        + @"\Testdoc.rtf",  
           RichTextBoxStreamType.RichNoOleObjs);  
     }  
-  
     ```  
   
     ```cpp  

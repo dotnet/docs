@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ad4ba56d-3bcb-4c10-ba90-1cc66e2175a1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -23,12 +21,10 @@ Applies runtime reflection policy to a property.
 ## Syntax  
   
 ```xml  
-  
 <Property Name="property_name"  
           Browse="policy_type"  
           Dynamic="policy_type"  
           Serialize="policy_type" />  
-  
 ```  
   
 ## Attributes and Elements  
@@ -72,7 +68,6 @@ Applies runtime reflection policy to a property.
  The following example uses reflection to instantiate a `Book` object and display its property values. The original default.rd.xml file for the project appears as follows:  
   
 ```xml  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <Application>  
       <Namespace Name="LibraryApplications"  Browse="Required Public" >  
@@ -80,7 +75,6 @@ Applies runtime reflection policy to a property.
       </Namespace>  
    </Application>  
 </Directives>  
-  
 ```  
   
  The file applies the `All` value to the `Activate` policy for the `Book` class, which allows access to class constructors through reflection. The `Browse` policy for the `Book` class is inherited from its parent namespace. This is set to `Required Public`, which makes metadata available at runtime.  
@@ -96,7 +90,6 @@ Applies runtime reflection policy to a property.
 -   By adding a nested [\<Property>](../../../docs/framework/net-native/property-element-net-native.md) element for each property whose getter we'd like to invoke, as the following default.rd.xml file does.  
   
     ```  
-  
     <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
        <Application>  
           <Namespace Name="LibraryApplications"  Browse="Required Public" >  
@@ -108,7 +101,6 @@ Applies runtime reflection policy to a property.
           </Namespace>  
        </Application>  
     </Directives>  
-  
     ```  
   
 ## See Also  

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 339f0e2a-452b-43eb-9f6d-f48ceb1414f3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "BrucePerlerMS"
 ms.author: "bruceper"

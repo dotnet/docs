@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a78f74c3-1152-4149-ab29-3f12d316caeb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ A configuration element for creating a custom binding that enables a client appl
 ## Syntax  
   
 ```  
-  
 <discoveryClient discoveryEndpoint="String" >   <findCriteria duration="TimeSpan"       maxResults="Integer"        scopeMatchBy="Uri" >       <contractTypeNames>          <add name="String" namespace="String" />       <contractTypeNames>       <extensions />       <scopes>          <add scope="URI"/>       </scopes>   </findCriteria></discoveryClient>  
 ```  
   

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "forms, sounds"
   - "examples [Windows Forms], sounds"
 ms.assetid: 7ea5cded-4888-4f35-8f28-5cab1a55c973
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

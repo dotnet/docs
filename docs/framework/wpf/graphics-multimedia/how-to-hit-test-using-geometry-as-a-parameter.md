@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "visual objects, hit tests on"
   - "Geometry objects, hit tests on visual objects"
 ms.assetid: 6c8bdbf2-19e0-4fbb-bf89-c1252b2ebc61
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

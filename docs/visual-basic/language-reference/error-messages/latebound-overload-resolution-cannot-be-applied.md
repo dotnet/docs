@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "overload resolution, with late-bound argument"
   - "BC30933"
 ms.assetid: 8182eea0-dd34-4d6e-9ca0-41d8713e9dc4
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

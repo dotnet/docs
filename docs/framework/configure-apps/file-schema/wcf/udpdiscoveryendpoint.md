@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1f485329-2771-43bc-88de-df8f2faa3bb7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -26,7 +24,6 @@ This configuration element defines a standard endpoint that is pre-configured fo
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <discoveryEndpoint>           <standardEndpoint                  discoveryMode="Adhoc/Managed"                  discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"                  maxResponseDelay="Timespan"                  multicastAddress="Uri"                   name="String" />       </discoveryEndpoint>            </standardEndpoints>  
 </system.serviceModel>  
@@ -61,7 +58,6 @@ This configuration element defines a standard endpoint that is pre-configured fo
  The following example demonstrates a service listening for discovery messages over a UDP multicast transport.  
   
 ```  
-  
 <services>  
     <service name="CalculatorService"  
          behaviorConfiguration="CalculatorServiceBehavior">  
@@ -76,7 +72,6 @@ This configuration element defines a standard endpoint that is pre-configured fo
                        version="WSDiscoveryApril2005" />  
    </udpDiscoveryEndpoint>  
 </standardEndpoints>  
-  
 ```  
   
 ## See Also  

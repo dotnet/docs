@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IInstallReferenceEnum interface [.NET Framework fusion]"
 ms.assetid: 2863b33b-a541-462c-bbe8-702a2832898e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

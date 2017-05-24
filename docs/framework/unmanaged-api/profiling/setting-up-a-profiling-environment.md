@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "COR_ENABLE_PROFILING environment variable"
   - "profiling API [.NET Framework], enabling"
 ms.assetid: fefca07f-7555-4e77-be86-3c542e928312
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 29
 author: "mairaw"
 ms.author: "mairaw"

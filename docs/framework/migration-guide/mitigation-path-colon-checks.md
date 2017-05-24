@@ -11,9 +11,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a0bb52de-d279-419d-8f23-4b12d1a3f36e
-ms.technology: 
-  - "dotnet-standard"
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -35,11 +32,9 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
 -   Opt out of the new path normalization by setting the `Switch.System.IO.UseLegacyPathHandling`<xref:System.AppContext> switch to `true`.  
   
     ```xml  
-  
     <runtime>  
         <AppContextSwitchOverrides value="Switch.System.IO.UseLegacyPathHandling=true" />    
     </runtime>  
-  
     ```  
   
 ## See Also  

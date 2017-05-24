@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], bindings"
   - "bindings [WCF]"
 ms.assetid: 83639133-89f7-43f0-b4ef-8d9e57c08d25
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"

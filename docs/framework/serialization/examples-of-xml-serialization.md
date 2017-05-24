@@ -52,7 +52,6 @@ Private Sub SerializeDataSet(filename As String)
     ser.Serialize(writer, ds)  
     writer.Close()  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -101,7 +100,6 @@ Private Sub SerializeNode(filename As String)
     ser.Serialize(writer, myNode)  
     writer.Close()  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -137,7 +135,6 @@ End Class
 Public Class Address  
     Public FirstName As String  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -173,7 +170,6 @@ Public Class Item
     Public ItemID As String  
     Public ItemPrice As decimal  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -187,7 +183,6 @@ public class Item
     public string ItemID  
     public decimal ItemPrice  
 }  
-  
 ```  
   
  The serialized class instance might resemble the following, if two items are ordered.  
@@ -299,7 +294,6 @@ Public Class Employee
         EmpID = newID  
     End Sub  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -554,7 +548,6 @@ Public Class Test
         attr.Value & "'"))  
     End Sub 'serializer_UnknownAttribute  
 End Class 'Test  
-  
 ```  
   
 ```csharp  

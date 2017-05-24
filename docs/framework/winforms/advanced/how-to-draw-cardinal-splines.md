@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "drawing, cardinal splines"
   - "graphics, cardinal splines"
 ms.assetid: a4a41e80-4461-4b47-b6bd-2c5e68881994
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

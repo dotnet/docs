@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "what's new [Visual Basic]"
   - "Visual Basic, what's new"
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 145
 author: rpetrusha
 ms.author: ronpet
@@ -186,7 +184,6 @@ End Interface
   
 Interface IMock2 : Inherits ICustomer, ITime  
 End Interface  
-  
 ```  
   
  Now the compiler will use normal overload resolution rules to choose the most appropriate `GetDetails` to call, and you can declare interface relationships in Visual Basic like those shown in the sample.  

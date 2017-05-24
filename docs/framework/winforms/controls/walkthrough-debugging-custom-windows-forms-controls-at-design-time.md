@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "walkthroughs [Windows Forms], debugging"
   - "design-time debugging"
 ms.assetid: 1fd83ccd-3798-42fc-85a3-6cba99467387
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 948eb588-7080-4046-bb48-633b007393bf
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Compares the equality of two expressions.
 ## Syntax  
   
 ```  
-  
 expression = expression  
 or   
 expression == expression  

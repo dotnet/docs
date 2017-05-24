@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, how to wrap EAP patterns"
 ms.assetid: f11ed467-af2f-4504-8a2e-299a6c36d44e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

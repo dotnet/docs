@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "elements, finding by property conditions"
   - "UI Automation, finding elements by property conditions"
 ms.assetid: 3acaee5a-6ce8-4c3e-81c8-67e59eb74477
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"

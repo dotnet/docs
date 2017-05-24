@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "GetHashFromAssemblyFile function [.NET Framework strong naming]"
 ms.assetid: 751ed69f-b7ab-4e07-80de-e17ca9319b0c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

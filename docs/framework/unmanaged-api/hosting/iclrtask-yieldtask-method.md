@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRTask::YieldTask method [.NET Framework hosting]"
   - "YieldTask method [.NET Framework hosting]"
 ms.assetid: b8eb4095-3a8f-4be3-9446-63e9893dce7d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

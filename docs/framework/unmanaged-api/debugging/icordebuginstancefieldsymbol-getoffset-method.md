@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 7e470150-2b92-4425-989c-315f48964fd2
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,11 +23,9 @@ Gets the offset in bytes of this instance field in its parent class.
 ## Syntax  
   
 ```  
-  
 HRESULT GetOffset(  
    [out] ULONG32 *pcbOffset  
 );  
-  
 ```  
   
 #### Parameters  

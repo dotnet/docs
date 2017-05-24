@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8658b162-2ddf-4162-a869-aa517a42288a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -29,7 +27,6 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
 ## Syntax  
   
 ```  
-  
 <security mode="Message/None/Transport/TransportWithMessageCredential">  
    <transport  
          clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  

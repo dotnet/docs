@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IValidator interface [.NET Framework hosting]"
 ms.assetid: b297e3b0-20f9-478f-b707-5e2eecb2b5b2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

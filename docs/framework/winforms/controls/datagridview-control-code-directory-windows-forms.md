@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], examples"
   - "DataGridView control [Windows Forms], code directory"
 ms.assetid: ea8bd66a-5ed6-491b-b9da-63873e275a0a
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -54,9 +52,9 @@ This topic provides links to <xref:System.Windows.Forms.DataGridView>-related co
   
 -   [How to: Access Objects Bound to Windows Forms DataGridView Rows](../../../../docs/framework/winforms/controls/how-to-access-objects-bound-to-windows-forms-datagridview-rows.md)  
   
--   [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/99f6e876-3f7f-4139-9063-e36587c95b02.md)  
+-   [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/create-a-master-detail-form-using-two-datagridviews.md)  
   
--   [Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/c5fa29e8-47f7-4691-829b-0e697a691f36.md)  
+-   [Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/creating-a-master-detail-form-using-two-datagridviews.md)  
   
 ## Data Formatting Examples  
   

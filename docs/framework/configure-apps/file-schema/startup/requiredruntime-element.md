@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "<requiredRuntime> element"
   - "container tags, <requiredRuntime> element"
 ms.assetid: 9fa1639e-beb8-43be-b7a4-12f7b229c34b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
@@ -39,7 +37,6 @@ Specifies that the application supports only version 1.0 of the common language 
 ## Syntax  
   
 ```  
-  
    <requiredRuntime    
 version="runtime version"  
 safemode="true|false"/>  

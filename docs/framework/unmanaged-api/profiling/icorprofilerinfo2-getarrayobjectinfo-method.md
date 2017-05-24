@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::GetArrayObjectInfo method [.NET Framework profiling]"
   - "GetArrayObjectInfo method [.NET Framework profiling]"
 ms.assetid: bda75017-739f-4ce5-9000-f3b526e8473c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

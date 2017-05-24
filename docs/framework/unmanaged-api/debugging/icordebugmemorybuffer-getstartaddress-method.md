@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: f804d9ab-8c88-44f0-b278-5fcca7f87726
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,11 +23,9 @@ Gets the starting address of the memory buffer.
 ## Syntax  
   
 ```  
-  
 HRESULT GetStartAddress(  
    [out] LPCVOID *address  
 );  
-  
 ```  
   
 #### Parameters  

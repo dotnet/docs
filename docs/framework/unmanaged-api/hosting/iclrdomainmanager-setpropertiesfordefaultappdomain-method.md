@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRDomainManager::SetPropertiesForDefaultAppDomain method [.NET Framework hosting]"
   - "SetPropertiesForDefaultAppDomain method [.NET Framework hosting]"
 ms.assetid: 43e61c4b-c435-45ec-9ef6-c68403aa4200
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

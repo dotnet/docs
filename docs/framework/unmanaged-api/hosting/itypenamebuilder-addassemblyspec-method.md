@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ITypeNameBuilder::AddAssemblySpec method [.NET Framework hosting]"
   - "AddAssemblySpec method [.NET Framework hosting]"
 ms.assetid: 4723e553-10c6-4828-aff8-bc62385163b8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

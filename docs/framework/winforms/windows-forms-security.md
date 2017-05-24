@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "access control, Windows Forms"
   - "security policy, Windows Forms"
 ms.assetid: 932d438a-5285-46d8-a958-8c93d0ad6cae
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

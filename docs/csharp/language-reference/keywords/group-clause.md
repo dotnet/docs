@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "group keyword [C#]"
   - "group clause [C#]"
 ms.assetid: c817242e-b12c-4baa-a57e-73ee138f34d1
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

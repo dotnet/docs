@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "msmqIntegrationBinding Element"
 ms.assetid: edf277f3-e3bf-4ed8-9f55-83b5788430a7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 34
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ msmqIntegrationBinding
 ## Syntax  
   
 ```  
-  
 <msmqIntegrationBinding>  
    <binding   
        closeTimeout="TimeSpan"   

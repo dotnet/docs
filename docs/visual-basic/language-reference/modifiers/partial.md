@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "Partial keyword [Visual Basic]"
   - "type promotion"
 ms.assetid: 7adaef80-f435-46e1-970a-269fff63b448
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent

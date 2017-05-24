@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1ef40d8c-f903-4426-9b08-da81462766d8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -29,7 +27,6 @@ Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/
 ## Syntax  
   
 ```  
-  
 <netPeerBinding>  
     <binding>  
         <security mode="Message/None/Transport//TransportWithMessageCredential">  

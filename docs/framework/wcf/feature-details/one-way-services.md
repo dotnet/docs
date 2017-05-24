@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "WCF [WCF], one-way service contracts"
   - "service contracts [WCF], defining one-way"
 ms.assetid: 19053a36-4492-45a3-bfe6-0365ee0205a3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"

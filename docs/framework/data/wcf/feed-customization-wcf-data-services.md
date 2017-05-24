@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Atom Publishing Protocol [WCF Data Services]"
   - "WCF Data Services, customizing feeds"
 ms.assetid: 0d1a39bc-6462-4683-bd7d-e74e0fd28a85
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9d710389-d9d8-4454-9bf2-da4ccda31cec
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 28
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Defines the settings for the message-level security for the [\<wsFederationHttpB
 ## Syntax  
   
 ```  
-  
 <wsFederationBinding>  
      <binding >  
          <security>  

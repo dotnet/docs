@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], adding custom information"
   - "TreeView control [Windows Forms], adding custom information"
 ms.assetid: 68be11de-1d5b-430e-901f-cfbe48d14b19
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -46,7 +44,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
           Me.Text = fp.Substring(fp.LastIndexOf("\"))  
        End Sub  
     End Class  
-  
     ```  
   
     ```csharp  
@@ -60,7 +57,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
           this.Text = fp.Substring(fp.LastIndexOf("\\"));  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -89,7 +85,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
     TreeView1.Nodes.Add(New myTreeNode (System.Environment.GetFolderPath _  
        (System.Environment.SpecialFolder.Personal) _  
        & "\ TextFile.txt ") )  
-  
     ```  
   
     ```csharp  
@@ -99,7 +94,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
     treeView1.Nodes.Add(new myTreeNode (System.Environment.GetFolderPath _  
        (System.Environment.SpecialFolder.Personal) _  
        + @"\TextFile.txt") );  
-  
     ```  
   
     ```cpp  
@@ -119,7 +113,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
        mynode = CType(e.node, myTreeNode)  
        MessageBox.Show("Node selected is " & mynode.filepath)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -129,7 +122,6 @@ You can create a derived node in a Windows Forms <xref:System.Windows.Forms.Tree
        myTreeNode myNode = (myTreeNode)e.Node;  
        MessageBox.Show("Node selected is " + myNode.FilePath);  
     }  
-  
     ```  
   
     ```cpp  

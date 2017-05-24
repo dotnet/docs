@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "interprocess communication [.NET Framework], pipes"
   - "I/O [.NET Framework], pipes"
 ms.assetid: 7b964ebd-7a4f-4d28-8194-7841f9e4c702
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

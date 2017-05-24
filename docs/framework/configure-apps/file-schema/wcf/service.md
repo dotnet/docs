@@ -13,8 +13,6 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: 13123dd6-c4a9-4a04-a984-df184b851788
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 27
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ The `service` element contains the settings for a Windows Communication Foundati
 ## Syntax  
   
 ```  
-  
 <service behaviorConfiguration=String"  
         name="String"  
 </service>  

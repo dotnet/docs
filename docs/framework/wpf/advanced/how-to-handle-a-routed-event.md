@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "routed events, handling"
   - "bubbling events"
 ms.assetid: 157787b4-f469-4047-8777-5b034145f32e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

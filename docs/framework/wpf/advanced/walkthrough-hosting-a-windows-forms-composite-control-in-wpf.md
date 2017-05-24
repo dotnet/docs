@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "hosting Windows Forms control in WPF"
   - "composite controls, hosting in WPF"
 ms.assetid: 96fcd78d-1c77-4206-8928-3a0579476ef4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent

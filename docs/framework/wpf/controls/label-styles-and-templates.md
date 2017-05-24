@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Label [WPF], styles and templates"
   - "states [WPF], Label"
 ms.assetid: c1d5359a-8e4a-4925-ab3e-e92bf6694859
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

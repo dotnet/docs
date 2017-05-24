@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "EnumMemoryRegion method [.NET Framework debugging]"
   - "ICLRDataEnumMemoryRegionsCallback::EnumMemoryRegion method [.NET Framework debugging]"
 ms.assetid: 9bb93fab-57e8-4f9a-9ef3-1794504fa896
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

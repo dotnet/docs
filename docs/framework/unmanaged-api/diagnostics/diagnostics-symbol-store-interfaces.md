@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "debugging interfaces [.NET Framework]"
   - "interfaces [.NET Framework debugging]"
 ms.assetid: f96987d5-e6a5-478b-ac5e-302e16545cce
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetDocumentVersion method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetDocumentVersion method [.NET Framework debugging]"
 ms.assetid: a51f1f64-e084-44c5-830c-2222da5a6bbf
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

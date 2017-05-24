@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "value equality [C#]"
   - "equivalence [C#]"
 ms.assetid: 4084581e-b931-498b-9534-cf7ef5b68690
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

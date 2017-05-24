@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8bc2f2be-11c1-4bab-9018-1d21ae568d94
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"
@@ -26,7 +24,6 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
 ## Syntax  
   
 ```  
-  
 <configuration>  
    <system.serviceModel.activation>  
        <net.tcp listenBacklog="Integer"  

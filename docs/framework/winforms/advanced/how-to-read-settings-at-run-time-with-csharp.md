@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "application settings [Windows Forms], run time"
   - "application settings [Windows Forms], C#"
 ms.assetid: dbe8bf09-5e1c-49da-9192-154033d7240b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

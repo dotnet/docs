@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6a14125f-1a8d-41a1-8a32-659ca0ad12de
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -23,12 +21,10 @@ Applies runtime reflection policy to a field.
 ## Syntax  
   
 ```xml  
-  
 <Field Name="field_name"  
        Browse="policy_type"  
        Dynamic="policy_type"  
        Serialize="policy_type" />  
-  
 ```  
   
 ## Attributes and Elements  

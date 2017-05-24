@@ -17,8 +17,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CLR activation, debugging issues"
 ms.assetid: 4fe17546-d56e-4344-a930-6d8e4a545914
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"
@@ -101,7 +99,6 @@ If you encounter problems in getting your application to run with the correct ve
 532,205950.398,Launching feature-on-demand installation. CmdLine: C:\Windows\system32\fondue.exe /enable-feature:NetFx3   
 532,205950.398,FunctionCall: RealDllMain. Reason: 0   
 532,205950.398,FunctionCall: OnShimDllMainCalled. Reason: 0  
-  
 ```  
   
 -   **CLR Loading log** provides the path to the executable that started the process that loaded managed code. Note that this could be a native host.  

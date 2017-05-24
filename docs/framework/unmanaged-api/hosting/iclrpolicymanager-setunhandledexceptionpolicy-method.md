@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRPolicyManager::SetUnhandledExceptionPolicy method [.NET Framework hosting]"
   - "SetUnhandledExceptionPolicy method [.NET Framework hosting]"
 ms.assetid: 5268480e-280a-4931-b7a3-dc3ffdf7f78f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

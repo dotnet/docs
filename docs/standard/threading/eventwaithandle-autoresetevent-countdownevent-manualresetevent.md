@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], EventWaitHandle class"
   - "event wait handles [.NET Framework]"
 ms.assetid: cd94fc34-ac15-427f-b723-a1240a4fab7d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

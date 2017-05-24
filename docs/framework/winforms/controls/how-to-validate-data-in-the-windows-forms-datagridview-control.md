@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "data grids, validating data"
   - "data validation, Windows Forms"
 ms.assetid: d10aef35-701e-4a3c-a684-2a2ed1aeaca6
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

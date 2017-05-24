@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrAmbiguousCall_WideningConversion2"
 ms.assetid: 5e74f5cf-80bd-4b48-b58a-465f981ec694
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

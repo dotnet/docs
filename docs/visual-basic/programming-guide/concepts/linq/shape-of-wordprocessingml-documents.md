@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 2dfb446b-5a07-4c00-9ab3-a74ba734ff3a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -95,7 +93,6 @@ Module Module1
         End Using  
     End Sub  
 End Module  
-  
 ```  
   
 ## External Resources  

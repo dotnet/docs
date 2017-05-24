@@ -14,8 +14,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "adorners [WPF]"
 ms.assetid: 5d5f656b-8e05-4839-9d53-b0324d902aa9
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 61
 author: dotnet-bot
 ms.author: dotnetcontent

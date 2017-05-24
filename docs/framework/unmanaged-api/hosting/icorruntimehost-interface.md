@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorRuntimeHost interface [.NET Framework hosting]"
 ms.assetid: 4369533d-7834-4497-bc37-bfea0ad737b1
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 17

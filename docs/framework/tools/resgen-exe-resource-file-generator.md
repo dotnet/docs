@@ -28,8 +28,6 @@ helpviewer_keywords:
   - "binary resources files"
   - "embedding files in runtime binary executable"
 ms.assetid: 8ef159de-b660-4bec-9213-c3fbc4d1c6f4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 46
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -73,12 +71,10 @@ resgen /?
 ## Syntax  
   
 ```  
-  
 resgen  [/define:symbol1[,symbol2,...]] [/useSourcePath] filename.extension  | /compile filename.extension... [outputFilename.extension] [/r:assembly] [/str:lang[,namespace[,class[,file]]] [/publicclass]]   
 ```  
   
 ```  
-  
 resgen filename.extension [outputDirectory]  
 ```  
   
@@ -264,7 +260,6 @@ resgen MyApp.exe Win8Resources
  For example, the following file named UIResources.rext includes a string resource named `AppTitle` that can take one of three values, depending on whether symbols named `PRODUCTION`, `CONSULT`, or `RETAIL` are defined.  
   
 ```  
-  
 #ifdef PRODUCTION  
 AppTitle=My Software Company Project Manager   
 #endif  
@@ -275,7 +270,6 @@ AppTitle=My Consulting Company Project Manager
 AppTitle=My Retail Store Project Manager  
 #endif  
 FileMenuName=File  
-  
 ```  
   
  The file can then be compiled into a binary .resources file with the following command:  

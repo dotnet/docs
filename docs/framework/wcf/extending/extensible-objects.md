@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "extensible objects [WCF]"
 ms.assetid: bc88cefc-31fb-428e-9447-6d20a7d452af
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Button control [Windows Forms], designating as default"
   - "Windows Forms controls, default button on form"
 ms.assetid: 22cc9da6-b913-4e04-9554-dee443ac5c3a
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

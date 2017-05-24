@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "data grids, hiding columns"
   - "columns [Windows Forms], hiding"
 ms.assetid: 3f94143a-2ef0-49a5-a22a-b2e6f9289642
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

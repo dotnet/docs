@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f9c0b295-55e7-48ea-b308-ba51c7d31143
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"
@@ -39,7 +37,6 @@ select new SyndicationItem()
 //Write the feed out to a MemoryStream in JSON format  
 DataContractJsonSerializer writeSerializer = new DataContractJsonSerializer(typeof(JsonFeedFormatter));  
 writeSerializer.WriteObject(stream, new JsonFeedFormatter(feed));  
-  
 ```  
   
 ## Reading a JSON feed  

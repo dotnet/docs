@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "content alignment"
   - "aligning, content"
 ms.assetid: c1e8f962-72c8-4e7a-8670-7a2d7e021791
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], rearranging controls"
   - "ToolStrip control [Windows Forms], reordering items"
 ms.assetid: 8480b69a-379f-4dc2-8dcf-365ed93692b2
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -36,12 +34,10 @@ You can enable the user to rearrange <xref:System.Windows.Forms.ToolStripItem> c
   
     ```vb  
     toolStrip1.AllowItemReorder = True  
-  
     ```  
   
     ```csharp  
     toolStrip1.AllowItemReorder = true;  
-  
     ```  
   
 ## See Also  

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "splines, drawing Bezier"
   - "Bezier splines, drawing sequence of"
 ms.assetid: 37a0bedb-20c2-4cf0-91fa-a5509e826b30
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

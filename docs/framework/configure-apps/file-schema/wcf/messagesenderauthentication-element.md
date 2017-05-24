@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8d979dfc-a6f9-42ec-96d5-7fbc13a48118
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"
@@ -33,7 +31,6 @@ Specifies authentication options for peer-to-peer message senders.
 ## Syntax  
   
 ```  
-  
 <messageSenderAuthentication  
 customCertificateValidatorType= "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
 certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  

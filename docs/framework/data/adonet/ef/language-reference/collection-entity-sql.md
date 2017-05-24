@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 03228bfa-be3a-4ccc-82f8-eee429f85cf1
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -23,7 +21,6 @@ The COLLECTION keyword is only used in the definition of an inline function. Col
 ## Syntax  
   
 ```  
-  
 COLLECTION(type_definition)   
 ```  
   

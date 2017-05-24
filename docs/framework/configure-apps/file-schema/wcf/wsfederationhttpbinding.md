@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "wsFederationBinding element"
 ms.assetid: 9c3312b4-2137-4e71-bf3f-de1cf8e9be79
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 28
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ wsFederationBinding element
 ## Syntax  
   
 ```  
-  
 <wsFederationHttpBinding>  
     <binding   
         bypassProxyOnLocal="Boolean"  

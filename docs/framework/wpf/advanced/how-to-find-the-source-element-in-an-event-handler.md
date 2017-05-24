@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "source element in event handlers"
   - "event handlers, finding source element in"
 ms.assetid: 85f71c5a-b714-4c65-9711-7d905c2bbe98
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

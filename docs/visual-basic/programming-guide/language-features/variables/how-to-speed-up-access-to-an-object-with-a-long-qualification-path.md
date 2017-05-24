@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "With block"
   - "object variables, accessing"
 ms.assetid: 3eb7657f-c9fe-4e05-8bc3-4bb14d5ae585
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IAppDomainBinding interface [.NET Framework hosting]"
 ms.assetid: 368881ab-c4ea-4731-bf22-c596aac7c66c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

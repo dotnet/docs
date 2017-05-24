@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "virtual mode"
   - "DataGridView control [Windows Forms], large data sets"
 ms.assetid: 98236267-f08e-4918-bcf9-77acf050a3ca
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

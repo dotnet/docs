@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "decision structures"
 ms.assetid: 6885d426-fa87-4e1c-881f-f0e9ec8d98af
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

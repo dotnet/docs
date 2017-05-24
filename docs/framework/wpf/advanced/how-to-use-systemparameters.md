@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "SystemParameters class"
   - "classes, SystemParameters"
 ms.assetid: 02e7a5de-94eb-4953-b91c-52e6c872ad5b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

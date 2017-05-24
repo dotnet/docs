@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "graphics, managing buffered"
   - "BufferedGraphicsContext class"
 ms.assetid: 4c2a90ee-bbbe-4ff6-9170-1b06c195c918
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

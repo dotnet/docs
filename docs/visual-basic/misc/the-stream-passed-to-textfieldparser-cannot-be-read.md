@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_StreamNotReadable"
 ms.assetid: b6ac8043-b939-441c-822f-de6f16f45525
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

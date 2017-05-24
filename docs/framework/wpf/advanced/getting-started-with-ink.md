@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "animation, gradient brush colors"
   - "brushes, animating colors of"
 ms.assetid: 760332dd-594a-475d-865b-01659db8cab7
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

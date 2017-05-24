@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "virtual methods [C#]"
   - "C# language, inheritance"
 ms.assetid: 81d64ee4-50f9-4d6c-a8dc-257c348d2eea
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 38
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugRemote::DebugActiveProcessEx method [.NET Framework debugging]"
   - "DebugActiveProcessEx method, ICorDebugRemote interface [.NET Framework debugging]"
 ms.assetid: b0df5c5d-9a2e-47bf-894c-6f8a9fe24a1f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

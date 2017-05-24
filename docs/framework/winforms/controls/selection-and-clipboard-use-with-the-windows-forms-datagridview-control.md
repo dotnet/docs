@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "data grids, selecting cells"
   - "DataGridView control [Windows Forms], selecting cells"
 ms.assetid: 82cffcad-8b30-4897-bddb-c3a79d751b83
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

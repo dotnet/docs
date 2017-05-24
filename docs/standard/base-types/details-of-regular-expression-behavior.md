@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "regular expressions, behavior"
   - ".NET Framework regular expressions, behavior"
 ms.assetid: 0ee1a6b8-caac-41d2-917f-d35570021b10
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"

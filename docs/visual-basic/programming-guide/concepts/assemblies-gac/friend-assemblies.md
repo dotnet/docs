@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 9b3d5716-e6e4-47a7-a3e9-084d7fba5c28
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -55,7 +53,6 @@ Public Class ClassWithFriendMethod
         Console.WriteLine("Sample Method")  
     End Sub  
 End Class  
-  
 ```  
   
  Only assemblies that you explicitly specify as friends can access `Friend` types and members. For example, if assembly B is a friend of assembly A and assembly C references assembly B, C does not have access to `Friend` types in A.  

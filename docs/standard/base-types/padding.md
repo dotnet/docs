@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "PadLeft method"
   - "padding strings"
 ms.assetid: 84a9f142-3244-4c90-ba02-21af9bbaff71
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

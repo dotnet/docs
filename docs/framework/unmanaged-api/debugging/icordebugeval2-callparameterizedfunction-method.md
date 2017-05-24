@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugEval2::CallParameterizedFunction method [.NET Framework debugging]"
   - "CallParameterizedFunction method [.NET Framework debugging]"
 ms.assetid: 72f54a45-dbe6-4bb4-8c99-e879a27368e5
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

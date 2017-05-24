@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 62b41a75-cf40-4c52-a842-a5f1c70e247f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"
@@ -68,7 +66,6 @@ This topic is the third of three topics that discusses how to implement a discov
                 // Closing the client gracefully closes the connection and cleans up resources  
                 client.Close();  
             }  
-  
     ```  
   
 5.  Add the following code to the `Main` method.  
@@ -108,7 +105,6 @@ This topic is the third of three topics that discusses how to implement a discov
                 Console.WriteLine("Press <ENTER> to exit.");  
                 Console.ReadLine();  
             }  
-  
     ```  
   
  You have completed implementing the client application. Continue on to [How to: Test the Discovery Proxy](../../../../docs/framework/wcf/feature-details/how-to-test-the-discovery-proxy.md).  

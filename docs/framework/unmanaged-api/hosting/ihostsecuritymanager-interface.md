@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostSecurityManager interface [.NET Framework hosting]"
 ms.assetid: c3be2cbd-2d93-438b-9888-9a0251b63c03
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

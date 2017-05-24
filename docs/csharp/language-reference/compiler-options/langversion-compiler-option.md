@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "-langversion compiler option [C#]"
   - "langversion compiler option [C#]"
 ms.assetid: 3fb00b05-a0ff-4782-b313-13a4c0f62d94
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 33
 author: "BillWagner"
 ms.author: "wiwagn"

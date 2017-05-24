@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "3-D graphics [WPF]"
 ms.assetid: 4bcf949d-d92f-4d8d-8a9b-1e4c61b25bf6
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "builds [C#]"
   - "command line [C#]"
 ms.assetid: 66e70056-dd20-453c-a9b3-507e0478b015
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

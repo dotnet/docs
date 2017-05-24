@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "issued tokens"
   - "SAML token"
 ms.assetid: 930b6e34-9eab-4e95-826c-4e06659bb977
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"

@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, preventing attachments"
 ms.assetid: c0fb85d4-9e80-4905-9f65-29acc54201c4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

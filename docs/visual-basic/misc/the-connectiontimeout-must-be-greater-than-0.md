@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrNetwork_BadConnectionTimeout"
 ms.assetid: 15ac09a7-47f0-44f3-9e84-5bd10bd07450
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

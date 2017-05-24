@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "ToolBar control [Windows Forms], adding drop-down menus"
 ms.assetid: 78a58a8d-1041-4e38-9219-4096fa6a5c5c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -74,7 +72,6 @@ manager: "wpickett"
     ' Set the ToolTipText property of one of the buttons.  
        ToolBar1.Buttons(1).ToolTipText = "Button 2"  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -113,7 +110,6 @@ manager: "wpickett"
        // Set the ToolTipText property of 1 of the buttons.  
        toolBar1.Buttons[1].ToolTipText = "Button 2";  
     }  
-  
     ```  
   
     ```cpp  

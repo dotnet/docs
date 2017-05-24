@@ -23,8 +23,6 @@ dev_langs:
 helpviewer_keywords: 
   - "GetCORSystemDirectory function [.NET Framework hosting]"
 ms.assetid: 3dcd16a7-dafc-4ca8-b5cd-20ffb37db91d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 21

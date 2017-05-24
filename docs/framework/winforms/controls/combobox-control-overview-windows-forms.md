@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "drop-down lists, ComboBox control"
   - "combo boxes, about combo boxes"
 ms.assetid: a58b393f-a614-45d1-8961-857a024b5acd
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

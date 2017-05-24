@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 727cf3d2-6f56-48ad-a59f-ba423edb9c83
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -29,7 +27,6 @@ Specifies the security requirements for an endpoint configured with a [\<wsHttpB
 ## Syntax  
   
 ```  
-  
 <system.ServiceModel>  
     <bindings>  
         <webHttpBinding>  

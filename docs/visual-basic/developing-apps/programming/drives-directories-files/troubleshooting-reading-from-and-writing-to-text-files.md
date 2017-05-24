@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "writing to files, troubleshooting"
   - "reading text files, troubleshooting"
 ms.assetid: a8e9b44d-facb-4718-8c0f-466537171182
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrLinguisticRequirements"
 ms.assetid: 99cdb11d-9488-460b-84fb-a27f43da8be4
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

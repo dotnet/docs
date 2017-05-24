@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "StatusBar control [Windows Forms], refreshing panels"
   - "panels, refreshing status bar"
 ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -62,7 +60,6 @@ manager: "wpickett"
     Private Sub Timer1_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Timer1.Tick  
        StatusBar1.Panels(0).Text = Now.ToShortTimeString  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -70,7 +67,6 @@ manager: "wpickett"
     {  
        statusBar1.Panels[0].Text = DateTime.Now.ToShortTimeString();  
     }  
-  
     ```  
   
     ```cpp  

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "ink, AnalysisHintNode objects"
   - "AnalysisHintNode objects"
 ms.assetid: d4421ed4-77f5-4640-829e-9f1de50b2ff2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

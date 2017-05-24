@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "API calls, platform invoke"
   - "calls, stored procedures"
 ms.assetid: 27d75f0a-54ab-4ee1-b91d-43513a19b12d
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

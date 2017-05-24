@@ -15,8 +15,6 @@ dev_langs:
   - "C++"
   - "jsharp"
 ms.assetid: 0ae45c6e-8c4c-4c0d-8b9f-a93824648890
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"
@@ -32,7 +30,6 @@ Specifies how a <xref:System.Uri> will be parsed for specific schemes.
 ## Syntax  
   
 ```  
-  
       <schemeSettings>   
 </schemeSettings>  
 ```  

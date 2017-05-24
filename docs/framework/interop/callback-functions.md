@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "callback function"
   - "platform invoke, calling unmanaged functions"
 ms.assetid: c0aa8533-3b3b-42e8-9f60-84919793098c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

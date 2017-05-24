@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "transformations, order signficance"
 ms.assetid: 37d5f9dc-a5cf-4475-aa5d-34d714e808a9
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

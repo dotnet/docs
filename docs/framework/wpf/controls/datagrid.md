@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "DataGrid [WPF], customizing the appearance of"
   - "DataGrid columns [WPF], using"
 ms.assetid: bf89ea63-79b6-422b-bc9f-0485ad803216
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

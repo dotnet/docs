@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Validate method, ICLRValidator interface [.NET Framework hosting]"
   - "ICLRValidator::Validate method [.NET Framework hosting]"
 ms.assetid: 0b1b432a-d234-4002-839b-81366c3a8bdc
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

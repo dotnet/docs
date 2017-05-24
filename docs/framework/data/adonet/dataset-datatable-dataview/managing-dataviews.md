@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0b67fab5-1722-4d2b-bfc1-247a75f0f1ee
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -73,7 +71,6 @@ viewManager.DataViewSettings("Customers").Sort = "CompanyName"
 ' Bind to a DataGrid.  
 Dim grid As System.Windows.Forms.DataGrid = New System.Windows.Forms.DataGrid()  
 grid.SetDataBinding(viewManager, "Customers")  
-  
 ```  
   
 ```csharp  

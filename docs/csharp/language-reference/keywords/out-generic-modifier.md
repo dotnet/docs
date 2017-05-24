@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "covariance, out keyword [C#]"
   - "out keyword [C#]"
 ms.assetid: f8c20dec-a8bc-426a-9882-4076b1db1e00
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

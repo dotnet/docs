@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 41f1ac35-f559-473a-b2c3-8cc83a6a3831
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Represents a configuration section for defining routing tables that contain mapp
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "parameters [C#], out"
   - "out parameters [C#]"
 ms.assetid: 3fce0dc5-03f4-4faa-bd61-36c41bc6baf1
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"

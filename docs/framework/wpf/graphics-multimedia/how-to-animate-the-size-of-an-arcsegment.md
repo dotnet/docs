@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "animation, ArcSegment size"
   - "ArcSegment, animating size"
 ms.assetid: f93a1065-b00a-4d7e-9d4b-37023f98186a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "detecting whether.NET Framework 3.5 is installed [WPF]"
   - "determining whether.NET Framework 3.5 is installed [WPF]"
 ms.assetid: 8556a9d2-1eb8-48ef-919c-5baf22a2a9a2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -26,7 +24,7 @@ manager: "wpickett"
 Before administrators can deploy [!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] applications on a system that targets the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)], they must first confirm that the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)] runtime is present. This topic provides a script written in HTML/JavaScript that administrators can use to determine whether the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)] is present on a system.  
   
 > [!NOTE]
->  For more detailed information on installing, deploying, and detecting the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], see [Installing the .NET Framework](../../../../docs/framework/install/guide-for-developers.md).  
+>  For more detailed information on installing, deploying, and detecting the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], see [Install the .NET Framework for developers](../../../../docs/framework/install/guide-for-developers.md).  
   
 ## Example  
  When the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)] is installed, the MSI adds ".NET CLR" and the version number to the UserAgent string. The following example shows a script embedded in a simple HTML page. The script searches the UserAgent string to determine whether the [!INCLUDE[net_v35_short](../../../../includes/net-v35-short-md.md)] is installed, and displays a status message on the results of the search.  
@@ -122,7 +120,6 @@ Before administrators can deploy [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
     <div id="result" />  
   </BODY>  
 </HTML>  
-  
 ```  
   
  If the search for the ".NET CLR " version is successful, the following type of status message appears:  

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "asynchronous calls"
   - "Web services, accessing"
 ms.assetid: ff8046f4-f1f2-4d8b-90b7-95e3f7415418
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

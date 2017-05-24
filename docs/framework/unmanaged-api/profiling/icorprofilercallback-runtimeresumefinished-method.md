@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "RuntimeResumeFinished method [.NET Framework profiling]"
   - "ICorProfilerCallback::RuntimeResumeFinished method [.NET Framework profiling]"
 ms.assetid: 76de0494-dc49-426b-887d-bee98806a982
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

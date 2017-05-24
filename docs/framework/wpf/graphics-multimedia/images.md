@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "images"
   - "graphics, images"
 ms.assetid: 2fe21d59-b444-4786-b68d-35d94e18ce0d
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 83
 author: dotnet-bot
 ms.author: dotnetcontent

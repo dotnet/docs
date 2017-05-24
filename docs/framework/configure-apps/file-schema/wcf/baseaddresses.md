@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 78918102-2898-46e0-9ea8-6b8afe65603e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Represents a collection of `baseAddress` elements, which are base addresses for 
 ## Syntax  
   
 ```  
-  
 <baseAddresses>  
    <add baseAddress="string" />  
 </baseAddresses>  

@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, ETW events"
 ms.assetid: 87a9cff5-d86f-4e44-a06e-d12764d0dce2
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

@@ -47,7 +47,6 @@ Binding a text box designer control to an activity argument is fairly straightfo
         }  
     }  
     return null;  
-  
     ```  
   
      The expression in the above code snippet can also be created using <xref:Microsoft.CSharp.Activities.CSharpValue%601> instead of <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>.  
@@ -75,7 +74,6 @@ Binding a text box designer control to an activity argument is fairly straightfo
         }  
     }  
     return null;  
-  
     ```  
   
 4.  Add the following code to the `ConvertBack` method. This code converts the incoming combo box item back to an <xref:System.Activities.InArgument%601>.  
@@ -86,7 +84,6 @@ Binding a text box designer control to an activity argument is fairly straightfo
                 VisualBasicValue<string> vbArgument = new VisualBasicValue<string>(itemContent);  
                 InArgument<string> inArgument = new InArgument<string>(vbArgument);  
                 return inArgument;  
-  
     ```  
   
      The expression in the above code snippet can also be created using <xref:Microsoft.CSharp.Activities.CSharpValue%601> instead of <xref:Microsoft.VisualBasic.Activities.VisualBasicValue%601>.  
@@ -97,7 +94,6 @@ Binding a text box designer control to an activity argument is fairly straightfo
                 CSharpValue<string> csArgument = new CSharpValue<string>(itemContent);  
                 InArgument<string> inArgument = new InArgument<string>(csArgument);  
                 return inArgument;  
-  
     ```  
   
 #### Adding the ComboBoxItemConverter to the custom designer of an activity  
@@ -128,7 +124,6 @@ Binding a text box designer control to an activity argument is fairly straightfo
             </ComboBox>  
         </Grid>  
     </sap:ActivityDesigner>  
-  
     ```  
   
 4.  Create a new item of type <xref:System.Activities.CodeActivity>. The default code created by the IDE for the activity will be sufficient for this example.  
@@ -137,7 +132,6 @@ Binding a text box designer control to an activity argument is fairly straightfo
   
     ```  
     [Designer(typeof(CustomPropertyDesigner))]  
-  
     ```  
   
      This line associates the new designer with the new class.  

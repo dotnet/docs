@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "OnEvent method [.NET Framework hosting]"
   - "IActionOnCLREvent::OnEvent method [.NET Framework hosting]"
 ms.assetid: 0970f10c-4304-4c12-91c0-83e51455afb4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

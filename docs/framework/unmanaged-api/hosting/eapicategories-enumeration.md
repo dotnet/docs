@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "EApiCategories enumeration [.NET Framework hosting]"
 ms.assetid: 3c4a8a5a-8a46-4ac9-947f-4959bc9d6ac6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

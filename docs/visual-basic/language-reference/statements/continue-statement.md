@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Continue statement [Visual Basic]"
   - "loops, transferring to next iteration"
 ms.assetid: 3ad00103-358b-4af3-a3a8-1b9ea0e995d3
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

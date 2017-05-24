@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRAssemblyReferenceList interface [.NET Framework hosting]"
 ms.assetid: 5f890fdf-d22a-429e-a35f-135273d1a636
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

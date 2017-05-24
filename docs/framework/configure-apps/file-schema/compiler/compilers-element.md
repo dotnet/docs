@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "<compilers> element"
   - "compilers element"
 ms.assetid: d40fba59-98f9-4783-ae0c-2ebea27ce77b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"

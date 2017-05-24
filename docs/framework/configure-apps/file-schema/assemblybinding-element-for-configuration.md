@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "assemblyBinding Element"
   - "<assemblyBinding> Element"
 ms.assetid: 6cc55983-b894-449b-8e26-b258e53939cd
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"

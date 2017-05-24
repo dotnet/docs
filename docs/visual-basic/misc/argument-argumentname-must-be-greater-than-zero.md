@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_GTZero1"
 ms.assetid: f9939fbd-6c4f-4871-9452-9ea0267e948e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

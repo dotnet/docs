@@ -27,8 +27,6 @@ helpviewer_keywords:
   - "BypassNGenAttribute"
   - "System.Runtime.BypassNGenAttribute"
 ms.assetid: 44bf97aa-a9a4-4eba-9a0d-cfaa6fc53a66
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 57
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -69,9 +67,7 @@ The Native Image Generator (Ngen.exe) is a tool that improves the performance of
 ## Syntax  
   
 ```  
-  
 ngen action [options]  
-  
 ```  
   
 ```  

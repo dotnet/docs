@@ -32,8 +32,6 @@ helpviewer_keywords:
   - "parent table navigation in DataGrid"
   - "child tables, DataGrid control"
 ms.assetid: 85604bce-bc03-49d9-9030-dda8896c44b1
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetBoxClassLayout method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetBoxClassLayout method [.NET Framework profiling]"
 ms.assetid: 624672b5-1189-488a-85d2-3e12b49617c1
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

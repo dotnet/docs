@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "presence of WPT, detecting"
   - "detecting WPF presence"
 ms.assetid: 7f71d652-1749-4379-945a-aa2e3994cb43
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -119,7 +117,6 @@ Before administrators can deploy [!INCLUDE[TLA#tla_avalonwinfx](../../../../incl
     <div id="result" />  
   </BODY>  
 </HTML>  
-  
 ```  
   
  If the search for the ".NET CLR " version is successful, the following type of status message appears:  

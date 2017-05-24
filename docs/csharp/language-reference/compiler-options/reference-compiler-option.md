@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "public type information [C#]"
   - "-reference compiler option [C#]"
 ms.assetid: 8d13e5b0-abf6-4c46-bf71-2daf2cd0a6c4
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

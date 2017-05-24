@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], getting started"
   - "getting started [WCF]"
 ms.assetid: df939177-73cb-4440-bd95-092a421516a1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 47
 author: "Erikre"
 ms.author: "erikre"

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ad545e6f-f06e-4549-ac92-09d758d5c636
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Specifies authentication settings for a peer certificate used by a peer node.
 ## Syntax  
   
 ```  
-  
 <peerAuthentication  
       customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
       certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  

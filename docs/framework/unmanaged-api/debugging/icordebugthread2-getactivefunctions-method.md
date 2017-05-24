@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetActiveFunctions method [.NET Framework debugging]"
   - "ICorDebugThread2::GetActiveFunctions method [.NET Framework debugging]"
 ms.assetid: 27fae01a-ecec-423a-973e-24f8de55826c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

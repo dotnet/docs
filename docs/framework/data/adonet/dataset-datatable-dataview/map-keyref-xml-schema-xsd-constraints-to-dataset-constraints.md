@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5b634fea-cc1e-4f6b-9454-10858105b1c8
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -86,7 +84,6 @@ Order(OrderNumber, EmpNumber)
 -   A unique constraint on the **Order** table.  
   
     ```  
-  
               Table: Order  
     Columns: OrderNumber   
     ConstraintName: OrderNumberKey  
@@ -97,7 +94,6 @@ Order(OrderNumber, EmpNumber)
 -   A relationship between the **Order** and **OrderDetail** tables. The **Nested** property is set to **False** because the two elements are not nested in the schema.  
   
     ```  
-  
               ParentTable: Order  
     ParentColumns: OrderNumber   
     ChildTable: OrderDetail  
@@ -111,7 +107,6 @@ Order(OrderNumber, EmpNumber)
 -   A foreign key constraint on the **OrderDetail** table.  
   
     ```  
-  
               ConstraintName: OrderNoRef  
     Type: ForeignKeyConstraint  
     Table: OrderDetail  

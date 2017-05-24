@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "explicit variable declaration"
   - "Option Explicit statement"
 ms.assetid: e82ac1ad-2cd3-49b2-b985-8bcf016f3fcc
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

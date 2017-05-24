@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "managed debugging assistants (MDAs), binding failures"
   - "BindingFailure MDA"
 ms.assetid: 26ada5af-175c-4576-931a-9f07fa1723e9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetOffset method, ISymUnmanagedMethod interface [.NET Framework debugging]"
   - "ISymUnmanagedMethod::GetOffset method [.NET Framework debugging]"
 ms.assetid: 8bf3cb62-89bf-4159-ad53-de606aba89e8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

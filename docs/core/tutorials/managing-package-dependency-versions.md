@@ -1,5 +1,5 @@
 ---
-title: How to Manage Package Dependency Versions for .NET Core 1.0
+title: How to Manage Package Dependency Versions for .NET Core 1.0 | Microsoft Docs
 description: How to Manage Package Dependency Versions for .NET Core 1.0
 keywords: .NET, .NET Core
 author: cartermp

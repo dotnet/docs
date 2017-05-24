@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Web service binding"
   - "data binding, Web service"
 ms.assetid: 77e2d373-69ba-4cbd-b6f5-2c83c38fc98b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

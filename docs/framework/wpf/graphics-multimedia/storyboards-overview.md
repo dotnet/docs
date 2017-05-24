@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "syntax, Storyboard"
   - "Timelines"
 ms.assetid: 1a698c3c-30f1-4b30-ae56-57e8a39811bd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent

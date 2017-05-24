@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c79b897d-8ea3-40b5-a8b6-2471941f7ed3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ An endpoint can be addressed by one or more SOAP headers in addition to its basi
 ## Syntax  
   
 ```  
-  
 <headers>  
     <Region xmlns="Uri">"String"</Region>  
         <Member xmlns="Uri">"String"</Member>  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerCallback::RemotingClientReceivingReply method [.NET Framework profiling]"
   - "RemotingClientReceivingReply method [.NET Framework profiling]"
 ms.assetid: 15cfc300-8231-4ecb-9a04-19851c3eb484
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

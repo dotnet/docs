@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugProcess::ThreadForFiberCookie method [.NET Framework debugging]"
   - "ThreadForFiberCookie method [.NET Framework debugging]"
 ms.assetid: afe4e97f-bffc-47e1-adad-d6e842487f35
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

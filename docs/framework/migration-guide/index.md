@@ -13,8 +13,6 @@ helpviewer_keywords:
   - ".NET Framework, migrating applications to"
   - "migration, .NET Framework"
 ms.assetid: 02d55147-9b3a-4557-a45f-fa936fadae3b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 56
 author: "rpetrusha"
 ms.author: "ronpet"

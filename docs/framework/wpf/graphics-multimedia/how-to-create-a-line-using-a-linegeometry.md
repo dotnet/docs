@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "graphics [WPF], lines"
   - "LineGeometry class"
 ms.assetid: 41231b22-1f74-4c26-a8e7-a55b29f8f6bd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

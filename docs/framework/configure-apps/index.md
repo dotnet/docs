@@ -37,8 +37,6 @@ helpviewer_keywords:
   - "configuration files [.NET Framework], machine"
   - "configuration files [.NET Framework], format"
 ms.assetid: 86bd26d3-737e-4484-9782-19b17f34cd1f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 28
 author: "mcleblanc"
 ms.author: "markl"

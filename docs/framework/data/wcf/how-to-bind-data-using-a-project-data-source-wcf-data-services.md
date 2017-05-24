@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "data binding, WCF Data Services"
   - "WCF Data Services, data binding"
 ms.assetid: 2477af0a-676f-44f7-b73d-e66208785509
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

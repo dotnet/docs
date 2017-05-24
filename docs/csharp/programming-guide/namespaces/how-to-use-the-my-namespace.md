@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "C# language, My namespace access"
 ms.assetid: e7152414-0ea5-4c8e-bf02-c8d5bbe45ff4
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

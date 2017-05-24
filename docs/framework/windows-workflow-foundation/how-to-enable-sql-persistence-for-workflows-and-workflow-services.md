@@ -49,7 +49,6 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
 3.  Construct a <xref:System.Activities.DurableInstancing.SqlWorkflowInstanceStore> and assign it to the <xref:System.Activities.WorkflowApplication.InstanceStore%2A> of the <xref:System.Activities.WorkflowApplication> as shown in the following code example.  
   
     ```csharp  
-  
     SqlWorkflowInstanceStore store =   
         new SqlWorkflowInstanceStore("Server=.\\SQLEXPRESS;Initial Catalog=Persistence;Integrated Security=SSPI");  
   
@@ -57,7 +56,6 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
         new WorkflowApplication(new Workflow1());  
   
     wfApp.InstanceStore = store;  
-  
     ```  
   
     > [!NOTE]
@@ -94,16 +92,13 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
 3.  Create an instance of the `WorkflowServiceHost` and add endpoints for the workflow service.  
   
     ```  
-  
     WorkflowServiceHost host = new WorkflowServiceHost(new CountingWorkflow(), new Uri(hostBaseAddress));  
     host.AddServiceEndpoint("ICountingWorkflow", new BasicHttpBinding(), "");  
-  
     ```  
   
 4.  Construct a `SqlWorkflowInstanceStoreBehavior` object and to set properties of the behavior object.  
   
     ```csharp  
-  
     SqlWorkflowInstanceStoreBehavior instanceStoreBehavior = new SqlWorkflowInstanceStoreBehavior(connectionString);  
     instanceStoreBehavior.HostLockRenewalPeriod = new TimeSpan(0, 0, 5);  
     instanceStoreBehavior.InstanceCompletionAction = InstanceCompletionAction.DeleteAll;  
@@ -111,15 +106,12 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
     instanceStoreBehavior.InstanceEncodingOption = InstanceEncodingOption.GZip;  
     instanceStoreBehavior.RunnableInstancesDetectionPeriod = new TimeSpan("00:00:02");  
     host.Description.Behaviors.Add(instanceStoreBehavior);  
-  
     ```  
   
 5.  Open the workflow service host.  
   
     ```vb  
-  
     host.Open();  
-  
     ```  
   
 > [!IMPORTANT]
@@ -138,7 +130,6 @@ workflowServiceHost.DurableInstancingOptions.InstanceStore = sqlInstanceStoreObj
  The `SqlWorkflowInstanceStoreBehavior`, a service behavior that allows you to conveniently change the [SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md) properties through XML configuration. For WAS-hosted workflow services, use the Web.config file. The following configuration example shows how to configure the SQL Workflow Instance Store by using the `sqlWorkflowInstanceStore` behavior element in a configuration file.  
   
 ```  
-  
 <serviceBehaviors>  
     <behavior name="">  
         <sqlWorkflowInstanceStore   
@@ -152,7 +143,6 @@ workflowServiceHost.DurableInstancingOptions.InstanceStore = sqlInstanceStoreObj
         <sqlWorkflowInstanceStore/>  
     </behavior>  
 </serviceBehaviors>  
-  
 ```  
   
  If you do not set values for the `connectionString` or the `connectionStringName` property, the SQL Workflow Instance Store uses the default named connection string `DefaultSqlWorkflowInstanceStoreConnectionString`.  
@@ -172,7 +162,6 @@ workflowServiceHost.DurableInstancingOptions.InstanceStore = sqlInstanceStoreObj
 -   Adds the following behavior extension element to the Machine.config file so that you can use the <`sqlWorkflowInstanceStore`> service behavior element in the configuration file to configure persistence for your services.  
   
     ```  
-  
     <configuration>  
         <system.serviceModel>  
             <extensions>  
@@ -182,5 +171,4 @@ workflowServiceHost.DurableInstancingOptions.InstanceStore = sqlInstanceStoreObj
             </extensions>  
         <system.serviceModel>  
     <configuration>  
-  
     ```

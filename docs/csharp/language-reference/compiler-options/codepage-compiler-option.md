@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "codepage compiler option [C#]"
   - "-codepage compiler option [C#]"
 ms.assetid: 75942989-b69a-4308-90a0-840c73d2c478
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ClearCurrentException method, ICorDebugProcess interface [.NET Framework debugging]"
   - "ICorDebugProcess::ClearCurrentException method [.NET Framework debugging]"
 ms.assetid: 9e02ee1a-e495-4578-bfb5-b946274bede7
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

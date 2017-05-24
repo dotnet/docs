@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "digital signatures [WCF], encryption"
   - "digital signatures [WCF]"
 ms.assetid: 0868866d-40b4-4341-8e42-eee3b7f15b69
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"

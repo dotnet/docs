@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "caching [.NET Framework], configuration"
   - "<namedCaches> element"
 ms.assetid: 6bd4fbc5-55a6-4dc4-998b-cdcc7e023330
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"

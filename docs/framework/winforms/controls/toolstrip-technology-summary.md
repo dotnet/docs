@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], technology summary"
   - "menus [Windows Forms], technology summary"
 ms.assetid: e8d61973-7af9-429f-9df5-05a899c15a7b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

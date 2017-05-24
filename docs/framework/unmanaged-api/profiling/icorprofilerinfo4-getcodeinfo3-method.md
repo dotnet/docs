@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetCodeInfo3 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::GetCodeInfo3 method [.NET Framework profiling]"
 ms.assetid: bb8c105e-4d9a-4684-8c05-ed6909cc1b8c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

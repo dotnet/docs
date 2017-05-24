@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 57629d8f-393e-4677-8b83-29ffde27f5fc
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -26,7 +24,6 @@ You create an instance of a <xref:System.Data.DataSet> by calling the <xref:Syst
   
 ```vb  
 Dim customerOrders As DataSet = New DataSet("CustomerOrders")  
-  
 ```  
   
 ```csharp  

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "variables [C#], pointers"
   - "pointers [C#], * operator"
 ms.assetid: 460a813a-4995-44c1-9de2-213b91dc7668
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

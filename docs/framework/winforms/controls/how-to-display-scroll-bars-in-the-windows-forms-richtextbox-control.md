@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "scroll bars, displaying in controls"
   - "RichTextBox control [Windows Forms], displaying scroll bars"
 ms.assetid: cdeb42e1-86e8-410c-ba46-18aec264ef5f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

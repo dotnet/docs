@@ -14,8 +14,6 @@ dev_langs:
   - "C++"
   - "jsharp"
 ms.assetid: 118f97d1-7110-4d1b-b0bd-4143252c0bb0
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
@@ -61,7 +59,6 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides read-only random acces
 </xsl:template>  
   
 </xsl:stylesheet>  
-  
 ```  
   
 ## test.xml  
@@ -91,7 +88,6 @@ Public Class sample
         xslt.Transform(xd, Nothing, strmTemp, Nothing)  
     End Sub 'Main  
 End Class 'sample  
-  
 ```  
   
 ```csharp  
@@ -122,7 +118,6 @@ public class sample
   
 ```  
 <?xml version="1.0" encoding="utf-8"?>Joe  
-  
 ```  
   
 ## See Also  

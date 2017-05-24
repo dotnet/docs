@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_ALLOWABLE_AFTER_ATTACH bitmask [.NET Framework profiling]"
 ms.assetid: 9326ced8-7609-4ffe-a644-b73cf77607d0
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

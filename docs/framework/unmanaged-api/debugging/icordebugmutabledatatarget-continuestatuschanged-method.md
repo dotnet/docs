@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 5a66d3f4-dd16-4d62-9dcc-0eab7041d894
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,11 +23,9 @@ Changes the continuation status for the outstanding debug event on the specified
 ## Syntax  
   
 ```  
-  
 HRESULT ContinueStatusChanged(  
    [in] DWORD dwThreadId,  
    [in] CORDB_CONTINUE_STATUS continueStatus);  
-  
 ```  
   
 #### Parameters  

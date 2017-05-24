@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "port sharing [WCF]"
   - "activation services [WCF]"
 ms.assetid: c9175af4-c27c-4765-bf45-b8f7528a7282
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"

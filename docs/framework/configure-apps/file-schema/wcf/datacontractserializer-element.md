@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "DataContractSerializer"
   - "KnownTypes"
 ms.assetid: f41fb4d5-24e7-4059-8010-286a30bfea93
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"
@@ -34,7 +32,6 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
 ## Syntax  
   
 ```  
-  
 <dataContractSerializer ignoreExtensionDataObject="Boolean"  
    maxItemsInObjectGraph="Integer" />  
 ```  

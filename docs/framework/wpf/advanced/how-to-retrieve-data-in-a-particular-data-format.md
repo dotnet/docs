@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "DataFormats class [WPF], retrieving data"
   - "DataObject class [WPF], retrieving data"
 ms.assetid: a625acf3-1144-44cd-add7-456aefc3859f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

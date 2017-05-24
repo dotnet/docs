@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "numeric conversions [C#], implicit"
   - "types [C#], implicit numeric conversions"
 ms.assetid: 72eb5a94-0491-48bf-8032-d7ebfdfeb8d8
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

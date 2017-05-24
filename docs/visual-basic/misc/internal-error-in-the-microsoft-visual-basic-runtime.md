@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrInternalError"
 ms.assetid: 1a106880-dec8-4e75-a935-de3ec2096b25
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

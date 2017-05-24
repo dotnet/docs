@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "painting, with drawings"
   - "drawings, painting with"
 ms.assetid: c10dc4b1-09b1-41e8-ad14-456b5fb377df
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

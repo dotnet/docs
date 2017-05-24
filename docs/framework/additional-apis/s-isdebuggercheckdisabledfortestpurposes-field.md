@@ -16,8 +16,6 @@ api_location:
 api_type: 
   - "Assembly"
 ms.assetid: 9033a513-c255-4f31-b6d7-09b8d8c50e2d
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

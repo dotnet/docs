@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Windows Forms controls, copying"
   - "controls [Windows Forms], copying"
 ms.assetid: 106c1eb2-1fba-4f69-b2ec-9ea3fa182f1e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

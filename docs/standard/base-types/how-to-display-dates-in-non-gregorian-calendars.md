@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "calendars [.NET Framework], displaying dates"
   - "displaying date and time data"
 ms.assetid: ed324eff-4aff-4a76-b6c0-04e6c0d8f5a9
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

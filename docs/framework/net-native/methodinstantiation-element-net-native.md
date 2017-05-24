@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a3355d78-2a88-4109-8521-830d7cae260a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -23,13 +21,11 @@ Applies runtime reflection policy to a constructed generic method.
 ## Syntax  
   
 ```xml  
-  
 <MethodInstantiation Name="method_name"  
                      Signature="method_signature"  
                      Arguments="method_arguments"  
                      Browse="policy_type"  
                      Dynamic="policy_type" />  
-  
 ```  
   
 ## Attributes and Elements  

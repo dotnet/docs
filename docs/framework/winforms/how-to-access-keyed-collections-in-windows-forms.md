@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "keyed collections [Windows Forms]"
   - "collections, accessing with keys"
 ms.assetid: b9b79b8b-d9bf-4f8c-b9d6-9578bc3219d3
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

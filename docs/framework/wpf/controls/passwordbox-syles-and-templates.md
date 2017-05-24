@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "PasswordBox [WPF], styles and templates"
   - "parts [WPF], PasswordBox"
 ms.assetid: deb52107-959f-4a60-b303-d21a0a933060
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "versioning [WCF Data Services]"
   - "WCF Data Services, versioning"
 ms.assetid: e3e899cc-7f25-4f67-958f-063f01f79766
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"

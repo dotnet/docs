@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3f8e1c0c-cfdf-4c79-ac65-c64e9323a51c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -26,7 +24,6 @@ Specifies a COM+ integration service contract.
 ## Syntax  
   
 ```  
-  
 <comContracts>  
   <comContract  
       contract="string"  

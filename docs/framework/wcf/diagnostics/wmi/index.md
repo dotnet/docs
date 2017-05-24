@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fe48738d-e31b-454d-b5ec-24c85c6bf79a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 24
 author: "Erikre"
 ms.author: "erikre"
@@ -33,7 +31,6 @@ manager: "erikre"
     <diagnostics wmiProviderEnabled="true" />  
     …  
 </system.serviceModel>  
-  
 ```  
   
  This configuration entry exposes a WMI interface. Management applications can now connect through this interface and access the management instrumentation of the application.  
@@ -117,7 +114,6 @@ manager: "erikre"
     $outsddl = $converter.BinarySDToSDDL($binarySD[0])  
     write-host "New ACL:      "$outsddl.SDDL  
     write-host ""  
-  
     ```  
   
      This PowerShell script uses Security Descriptor Definition Language (SDDL) to grant the Built-In Users group access to the "root/servicemodel" WMI namespace. It specifies the following ACLs:  
@@ -148,7 +144,6 @@ manager: "erikre"
     $result = $provider.Put()  
     write-host "New ACL:      "$provider.SecurityDescriptor  
     write-host ""  
-  
     ```  
   
 ### Granting Access to Arbitrary Users or Groups  

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "writing extension methods"
   - "extension methods [Visual Basic]"
 ms.assetid: fb2739cc-958d-4ef4-a38b-214a74c93413
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -97,7 +95,6 @@ Module Module1
     End Sub  
   
 End Module  
-  
 ```  
   
  Notice that the method is defined with two parameters and called with only one. The first parameter, `aString`, in the method definition is bound to `example`, the instance of `String` that calls the method. The output of the example is as follows:  

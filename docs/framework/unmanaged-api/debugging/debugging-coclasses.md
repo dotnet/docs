@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "debugging coclasses [.NET Framework]"
   - "coclasses [.NET Framework debugging]"
 ms.assetid: 94f94159-108e-436c-99e7-dff3beeb2503
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

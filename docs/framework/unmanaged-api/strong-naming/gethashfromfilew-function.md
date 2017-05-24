@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "GetHashFromFileW function [.NET Framework strong naming]"
 ms.assetid: 97c2d7a6-5376-45a1-ba65-146a249147cc
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

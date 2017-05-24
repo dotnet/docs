@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrInvalidCast_FromStringTo"
 ms.assetid: a7382c0a-e8a4-4125-9690-db3fa030a06a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

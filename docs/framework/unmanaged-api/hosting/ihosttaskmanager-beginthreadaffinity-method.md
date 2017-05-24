@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IHostTaskManager::BeginThreadAffinity method [.NET Framework hosting]"
   - "BeginThreadAffinity method [.NET Framework hosting]"
 ms.assetid: fea3ab88-ce41-4c5a-847b-bb78cd748da6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

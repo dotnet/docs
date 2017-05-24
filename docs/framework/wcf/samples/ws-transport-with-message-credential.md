@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0d092f3a-b309-439b-920b-66d8f46a0e3c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -75,7 +73,6 @@ public string GetCallerIdentity()
 // WARNING: This code is only needed for test certificates such as those created by makecert. It is   
 // not recommended for production code.  
 PermissiveCertificatePolicy.Enact("CN=ServiceModelSamples-HTTPS-Server");  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  

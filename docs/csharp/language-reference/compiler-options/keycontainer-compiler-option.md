@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "keycontainer compiler option [C#]"
   - "-keycontainer compiler option [C#]"
 ms.assetid: b3982b6d-2382-4f7e-bebd-ce98eaa30763
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

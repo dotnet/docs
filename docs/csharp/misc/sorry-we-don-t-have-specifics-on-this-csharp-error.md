@@ -880,8 +880,6 @@ dev_langs:
 helpviewer_keywords: 
   - "errors [C#], additional information"
 ms.assetid: 48320e4a-6e17-45a6-9966-88c6ec89bd2f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

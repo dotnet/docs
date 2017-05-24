@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "RichTextBox control [Windows Forms], setting indents and bullets"
   - "text boxes, bullets"
 ms.assetid: abfb40e6-5642-4691-8ec1-9d9ae91688dc
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -35,12 +33,10 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
   
     ```vb  
     RichTextBox1.SelectionBullet = True  
-  
     ```  
   
     ```csharp  
     richTextBox1.SelectionBullet = true;  
-  
     ```  
   
     ```cpp  
@@ -59,14 +55,12 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control has numerous o
     RichTextBox1.SelectionIndent = 8  
     RichTextBox1.SelectionHangingIndent = 3  
     RichTextBox1.SelectionRightIndent = 12  
-  
     ```  
   
     ```csharp  
     richTextBox1.SelectionIndent = 8;  
     richTextBox1.SelectionHangingIndent = 3;  
     richTextBox1.SelectionRightIndent = 12;  
-  
     ```  
   
     ```cpp  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataImport::EnumEvents method [.NET Framework metadata]"
   - "EnumEvents method [.NET Framework metadata]"
 ms.assetid: e1efedcb-3dd7-42ae-a399-21c24728aec5
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameTokenFromPublicKey method [.NET Framework hosting]"
   - "StrongNameTokenFromPublicKey method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: 7962ce88-7e86-4a6f-8298-621b01ffc3c2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

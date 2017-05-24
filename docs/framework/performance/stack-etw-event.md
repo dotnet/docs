@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "stack event [.NET Framework]"
   - "ETW, stack event (CLR)"
 ms.assetid: f612fa5b-4b62-4593-a19e-85c9b1018dce
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

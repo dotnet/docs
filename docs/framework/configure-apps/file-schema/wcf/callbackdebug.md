@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4073feda-1857-4be4-9947-227afb847ced
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/ind
 ## Syntax  
   
 ```  
-  
 <callbackDebug  includeExceptionDetailInFaults="Boolean" />  
 ```  
   

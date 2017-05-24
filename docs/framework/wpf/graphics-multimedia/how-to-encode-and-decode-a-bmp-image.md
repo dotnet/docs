@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "BMP decoding"
   - "decoding image formats"
 ms.assetid: feb5ef27-28ac-40ab-bfc2-e0456990d32c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

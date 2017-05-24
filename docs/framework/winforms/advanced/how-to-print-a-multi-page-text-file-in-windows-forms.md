@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Windows Forms, printing text"
   - "printing [Windows Forms], text"
 ms.assetid: 362427f8-03d4-4826-b49f-60ab066ad322
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

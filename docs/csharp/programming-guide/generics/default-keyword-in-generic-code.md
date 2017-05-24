@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "generics [C#], default keyword"
   - "default keyword [C#], generic programming"
 ms.assetid: b9daf449-4e64-496e-8592-6ed2c8875a98
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

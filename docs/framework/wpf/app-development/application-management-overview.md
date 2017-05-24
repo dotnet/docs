@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "application management [WPF]"
 ms.assetid: 32b1c054-5aca-423b-b4b5-ed8dc4dc637d
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 56
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -98,7 +96,6 @@ All applications tend to share a common set of functionality that applies to app
   <Compile Include="App.xaml.cs" />  
   ...  
 </Project>  
-  
 ```  
   
  Because the code-behind file contains code, it is marked as an                          [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)]`Compile` item, as is normal.  

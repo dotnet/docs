@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Microsoft.VisualBasic namespace"
   - "members, Visual Basic run-time library"
 ms.assetid: f5e82c6e-3500-452b-bdb8-78f0d5477604
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

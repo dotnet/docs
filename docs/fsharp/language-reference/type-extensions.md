@@ -1,5 +1,5 @@
 ---
-title: Type Extensions (F#)
+title: Type Extensions (F#) | Microsoft Docs
 description: Type Extensions (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

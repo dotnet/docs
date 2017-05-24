@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "folders [Windows Forms], choosing"
   - "directories [Windows Forms], selecting"
 ms.assetid: 4593670e-7c7d-4661-b46b-4ffb63258adb
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -44,7 +42,6 @@ Often, within Windows applications you create, you will have to prompt users to 
             TextBox1.Text = FolderBrowserDialog1.SelectedPath  
         End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -55,7 +52,6 @@ Often, within Windows applications you create, you will have to prompt users to 
             textBox1.Text = folderBrowserDialog1.SelectedPath;  
         }  
     }  
-  
     ```  
   
     ```cpp  

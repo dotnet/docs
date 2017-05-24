@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongnameSignatureVerificationFromImage function [.NET Framework strong naming]"
 ms.assetid: 9fb144d2-07e0-4a0e-8e05-907bbb6c9e03
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

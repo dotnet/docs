@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 1a670c63-0a29-4738-80e6-101f66af05c3
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Converts a collection of collections into a flattened collection. The new collec
 ## Syntax  
   
 ```  
-  
 FLATTEN ( collection )  
 ```  
   

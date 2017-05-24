@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "examples [Visual Basic], string conversion"
   - "arrays [Visual Basic], byte arrays"
 ms.assetid: f477d35c-a3fc-4a30-b1d4-cd0d353aae1d
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -26,8 +26,6 @@ helpviewer_keywords:
   - "DataSet class, binding and Windows Forms"
   - "data [Windows Forms], data providers"
 ms.assetid: 3d2c43f6-462b-4d35-9c86-13e9afe012e1
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Visual Basic code, directives"
   - "directives"
 ms.assetid: 20d5fe65-490a-4c23-88c2-ee4f490ed762
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -57,7 +55,6 @@ The topics in this section document the Visual Basic source code compiler direct
         Console.WriteLine("testing")  
     End Function  
 #Enable Warning BC42356  
-  
 ```  
   
  You can disable and enable a comma-separated list of warning codes too.  

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "properties [C#], vs. indexers"
   - "indexers [C#], vs. properties"
 ms.assetid: 3358a89f-44a0-4a4d-bf8c-07237a90af39
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

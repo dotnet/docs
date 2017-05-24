@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Visual C#, programming concepts"
   - "C# language, concepts"
 ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 45
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "InvalidGCHandleCookie MDA"
   - "invalid cookies"
 ms.assetid: 613ad742-3c11-401d-a6b3-893ceb8de4f8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

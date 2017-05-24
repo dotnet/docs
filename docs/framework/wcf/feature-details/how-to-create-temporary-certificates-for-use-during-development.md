@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "certificates [WCF], creating temporary certificates"
   - "temporary certificates [WCF]"
 ms.assetid: bc5f6637-5513-4d27-99bb-51aad7741e4a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -98,13 +96,11 @@ When developing a secure service or client using [!INCLUDE[indigo1](../../../../
         </binding>  
       </wsHttpBinding>  
     </bindings>  
-  
     ```  
   
  In the configuration file for a client, use the following XML to specify that the certificate is found in the user’s store, and can be found by searching the SubjectName field for the value "CohoWinery."  
   
 ```xml  
-  
 <behaviors>  
   <endpointBehaviors>  
     <behavior name="CertForClient">  

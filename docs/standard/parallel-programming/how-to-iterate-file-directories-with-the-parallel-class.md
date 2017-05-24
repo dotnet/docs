@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "parallel loops, how to iterate directories"
 ms.assetid: 555e9f48-f53d-4774-9bcf-3e965c732ec5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

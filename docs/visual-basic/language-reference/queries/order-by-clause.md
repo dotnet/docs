@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "Order By clause"
   - "Order By statement"
 ms.assetid: fa911282-6b81-44c7-acfa-46b5bb93df75
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

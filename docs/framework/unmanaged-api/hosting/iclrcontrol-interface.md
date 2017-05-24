@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRControl interface [.NET Framework hosting]"
 ms.assetid: a24fd905-1fa6-45a0-ad65-e9e2ee58861e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

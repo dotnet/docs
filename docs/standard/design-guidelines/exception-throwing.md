@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "explicitly throwing exceptions"
   - "throwing exceptions, design guidelines"
 ms.assetid: 5388e02b-52f5-460e-a2b5-eeafe60eeebe
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

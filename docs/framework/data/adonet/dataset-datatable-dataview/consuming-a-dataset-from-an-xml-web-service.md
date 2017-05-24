@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9edd6b71-0fa5-4649-ae1d-ac1c12541019
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -95,7 +93,6 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
         Return custDS  
       End Function  
     End Class  
-  
     ```  
   
     ```csharp  
@@ -223,7 +220,6 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
         customersDataSet.AcceptChanges()  
       End Sub  
     End Class  
-  
     ```  
   
     ```csharp  

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "metadata, for dependency properties"
   - "overriding metadata"
 ms.assetid: d01ed009-b722-41bf-b82f-fe1a8cdc50dd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

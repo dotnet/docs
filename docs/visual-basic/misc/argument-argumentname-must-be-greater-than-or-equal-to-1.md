@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_GEOne1"
 ms.assetid: e7769937-5227-4530-89ca-3d6ffc505005
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

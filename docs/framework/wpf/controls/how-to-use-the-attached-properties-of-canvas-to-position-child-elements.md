@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "attached properties [WPF Designer]"
   - "Canvas control, attached properties"
 ms.assetid: 48f1d25d-3820-4107-a4cc-d6c1e5664a44
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

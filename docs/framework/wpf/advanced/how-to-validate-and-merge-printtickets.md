@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "validation of PrintTickets"
   - "PrintTicket, validation"
 ms.assetid: 4fe2d501-d0b0-4fef-86af-6ffe6c162532
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

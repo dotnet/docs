@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "GetHashCode method"
   - "hash codes, calculating"
 ms.assetid: 3a5f38d1-ebc8-44de-aaeb-2929f6e6b48f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

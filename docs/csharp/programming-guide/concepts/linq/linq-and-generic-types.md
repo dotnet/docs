@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "generic types [LINQ]"
   - "generics [LINQ]"
 ms.assetid: 660e3799-25ca-462c-8c4a-8bce04fbb031
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

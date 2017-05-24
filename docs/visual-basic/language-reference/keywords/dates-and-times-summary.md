@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "time, Visual Basic keywords and run-time library members"
   - "time data types"
 ms.assetid: 914d0563-b53c-492c-ac62-d833ce805f2f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

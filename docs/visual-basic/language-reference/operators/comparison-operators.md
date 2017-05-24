@@ -40,8 +40,6 @@ helpviewer_keywords:
   - "Is operator [Visual Basic]"
   - "comparison operators, Visual Basicl"
 ms.assetid: d6cb12a8-e52e-46a7-8aaf-f804d634a825
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -87,7 +85,6 @@ The following are the comparison operators defined in Visual Basic.
 ## Syntax  
   
 ```  
-  
       result = expression1 comparisonoperator expression2  
 result = object1 [Is | IsNot] object2  
 result = string Like pattern  

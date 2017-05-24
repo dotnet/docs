@@ -11,9 +11,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 946903f1-0fbf-4f67-805b-1eb48352024d
-ms.technology: 
-  - "dotnet-standard"
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -29,13 +26,11 @@ Starting with the [!INCLUDE[net_v462](../../../includes/net-v462-md.md)], there 
  If this behavior is undesirable, you can restore the previous behavior by setting the `Switch.System.Security.ClaimsIdentity.SetActorAsReferenceWhenCopyingClaimsIdentity` switch in your application configuration file to `true`. This requires that you add the following to  the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your web.config file:  
   
 ```  
-  
 <configuration>  
    <runtime>  
       <AppContextSwitchOverrides value="Switch.System.Security.ClaimsIdentity.SetActorAsReferenceWhenCopyingClaimsIdentity=true" />  
    </runtime>  
 </configuration>  
-  
 ```  
   
 ## See Also  

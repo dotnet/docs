@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "Terminate event"
   - "execution, stopping"
 ms.assetid: 07018828-2d49-4cf5-a44b-19fb15d9efea
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

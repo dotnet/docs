@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c1910bc1-3d0a-4fa6-b12a-4ed6fe759620
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"
@@ -86,7 +84,6 @@ static void InvokeCalculatorService(ServiceEndpoint serviceEndpoint)
    //Closing the client gracefully closes the connection and cleans up resources  
    client.Close();  
 }  
-  
 ```  
   
 #### To use this sample  

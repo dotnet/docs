@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a7c11f0a-9e68-4f03-a6b1-39cf478d1a89
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "Erikre"
 ms.author: "erikre"
@@ -52,7 +50,6 @@ public class CalculatorService : System.Web.Services.WebService
             return n1 / n2;  
         }  
     }  
-  
 ```  
   
  As configured, the service can be accessed at http://localhost/servicemodelsamples/service.asmx by a client on the same machine. For clients on remote machines to access the service, a qualified domain name must be specified instead of localhost.  
@@ -72,7 +69,6 @@ svcutil.exe /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samp
       binding="basicHttpBinding"   
       contract="Microsoft.ServiceModel.Samples.CalculatorServiceSoap" />  
 </client>  
-  
 ```  
   
  The client implementation constructs an instance of the generated client. The generated client can then be used to communicate with the service.  
@@ -111,7 +107,6 @@ client.Close();
 Console.WriteLine();  
 Console.WriteLine("Press <ENTER> to terminate client.");  
 Console.ReadLine();  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  

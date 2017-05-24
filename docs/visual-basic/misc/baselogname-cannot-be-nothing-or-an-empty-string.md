@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLogBaseNameNull"
 ms.assetid: 8e7665e3-5343-45fa-bc79-64e235a0477f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

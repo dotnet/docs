@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "XML axis [Visual Basic], descendant"
   - "XML [Visual Basic], accessing"
 ms.assetid: a178f85b-5d54-438f-8479-40b62af6fe76
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ Provides access to the descendants of the following: an <xref:System.Xml.Linq.XE
 ## Syntax  
   
 ```  
-  
 object...<descendant>  
 ```  
   

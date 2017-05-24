@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "-debug compiler option [C#]"
   - "/debug compiler option [C#]"
 ms.assetid: e2b48c07-01bc-45cc-a52c-92e9085eb969
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

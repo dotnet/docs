@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "out [C#]"
   - "out keyword [C#]"
 ms.assetid: 7e911a0c-3f98-4536-87be-d539b7536ca8
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"

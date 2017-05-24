@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], stretching"
   - "controls [Windows Forms], aligning"
 ms.assetid: 7dc1a157-6fee-4995-8ebc-b65bdc0909a8
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetName method, ISymUnmanagedVariable interface [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetName method [.NET Framework debugging]"
 ms.assetid: eedf1ef0-9d4a-4847-a201-4e99572dfe5e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

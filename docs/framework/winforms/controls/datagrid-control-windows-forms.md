@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "displaying data, on forms"
   - "data [Windows Forms], displaying on Windows Forms"
 ms.assetid: 1d9d5683-43d2-42dd-b6c3-e43f4cf0de99
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e53b029c-9d6d-4c0a-9cdc-5cfca8a5ca47
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -23,11 +21,9 @@ Applies runtime reflection policy to an event.
 ## Syntax  
   
 ```xml  
-  
 <Event Name="event_name"   
        Browse="policy_type"   
        Dynamic="policy_type" />  
-  
 ```  
   
 ## Attributes and Elements  

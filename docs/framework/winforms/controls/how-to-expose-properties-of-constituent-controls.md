@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], exposing properties"
   - "constituent controls"
 ms.assetid: 5c1ec98b-aa48-4823-986e-4712551cfdf1
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms], merging"
   - "MDI, merging menu items"
 ms.assetid: 0fad444e-26d9-49af-8860-044d9c10d608
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -69,7 +67,6 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
         'Display the new form.  
             NewMDIChild.Show()  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -81,7 +78,6 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
         // Display the new form.  
             newMDIChild.Show();  
     }  
-  
     ```  
   
 12. Place code similar to the following code example in the `&Open`<xref:System.Windows.Forms.ToolStripMenuItem> to register the event handler.  
@@ -89,12 +85,10 @@ In some applications, the kind of a multiple-document interface (MDI) child wind
     ```vb  
     Private Sub openToolStripMenuItem_Click(sender As Object, e As _  
     EventArgs) Handles openToolStripMenuItem.Click  
-  
     ```  
   
     ```csharp  
     this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);  
-  
     ```  
   
 ## Compiling the Code  

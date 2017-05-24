@@ -13,8 +13,6 @@ helpviewer_keywords:
   - ">> operator [C#]"
   - "right shift operator (>>) [C#]"
 ms.assetid: a07f8679-d318-4ef8-b38b-65903efb8056
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

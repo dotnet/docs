@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 395205c2-d8c0-4a5e-90f3-7ce3c085fccd
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Specifies an XML element that is sent in the message body to the Security Token 
 ## Syntax  
   
 ```  
-  
 <tokenRequestParameters>  
       <xmlElement xmlElement="String" />  
 </tokenRequestParameters>  

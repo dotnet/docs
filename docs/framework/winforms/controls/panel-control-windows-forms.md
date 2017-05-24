@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "grouping controls"
   - "Panel control [Windows Forms]"
 ms.assetid: 37c69803-5084-4347-b035-54cfbabdc310
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

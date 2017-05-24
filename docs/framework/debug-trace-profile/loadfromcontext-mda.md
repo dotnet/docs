@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "LoadFrom context"
   - "LoadFromContext MDA"
 ms.assetid: a9b14db1-d3a9-4150-a767-dcf3aea0071a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

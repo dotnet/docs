@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ExceptionOSHandlerEnter method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionOSHandlerEnter method [.NET Framework profiling]"
 ms.assetid: 09238b9b-9359-4780-89dc-2f5e4f57920e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

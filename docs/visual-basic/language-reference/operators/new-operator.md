@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "New constraint"
   - "New keyword"
 ms.assetid: d7d566d7-fe0e-4336-91f7-641a542de4d0
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

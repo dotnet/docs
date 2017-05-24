@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 492cc28f-b7a2-4c47-b582-b3c437b8a5d5
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

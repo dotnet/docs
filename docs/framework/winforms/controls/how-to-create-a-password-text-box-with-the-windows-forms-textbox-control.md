@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "passwords, input mask"
   - "passwords, password text box"
 ms.assetid: d105d6b9-3d50-44cd-80d8-2c0e2f486727
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -50,7 +48,6 @@ A password box is a Windows Forms text box that displays placeholder characters 
        ' The control will allow no more than 14 characters.  
        TextBox1.MaxLength = 14  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -63,7 +60,6 @@ A password box is a Windows Forms text box that displays placeholder characters 
        // The control will allow no more than 14 characters.  
        textBox1.MaxLength = 14;  
     }  
-  
     ```  
   
     ```cpp  

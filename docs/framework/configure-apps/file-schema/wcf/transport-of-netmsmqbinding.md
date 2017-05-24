@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 72e1b338-39f0-4af1-a5d9-7a2fb79f6a0b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Defines the transport security settings.
 ## Syntax  
   
 ```  
-  
 <netMsmqBinding>  
     <binding>  
     <security>  

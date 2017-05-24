@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1d06a7e6-9633-4a12-8c5d-123adbbc19c5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ This element defines the settings for the message-logging capabilities of Window
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
    <diagnostics>  
        <messageLogging logEntireMessage="Boolean"  

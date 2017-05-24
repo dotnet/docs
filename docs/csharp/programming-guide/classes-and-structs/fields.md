@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "fields [C#]"
 ms.assetid: 3cbb2f61-75f8-4cce-b4ef-f5d1b3de0db7
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 29
 author: "BillWagner"
 ms.author: "wiwagn"

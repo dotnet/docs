@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "runtime, attributes"
   - "extending metadata"
 ms.assetid: 30386922-1e00-4602-9ebf-526b271a8b87
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

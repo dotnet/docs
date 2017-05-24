@@ -27,7 +27,6 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
 3.  Add a `GetToolboxControl` method to the `MainWindow` class that creates a <xref:System.Activities.Presentation.Toolbox.ToolboxControl>, adds a new **Toolbox** category to the **Toolbox**, and assigns the <xref:System.Activities.Statements.Assign> and <xref:System.Activities.Statements.Sequence> activity types to that category.  
   
     ```csharp  
-  
     private ToolboxControl GetToolboxControl()  
     {  
         // Create the ToolBoxControl.  
@@ -52,26 +51,22 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
         ctrl.Categories.Add(category);  
         return ctrl;  
     }  
-  
     ```  
   
 4.  Add a private `AddToolbox` method to the `MainWindow` class that places the **Toolbox** in the left column on the grid.  
   
     ```csharp  
-  
     private void AddToolBox()  
     {  
         ToolboxControl tc = GetToolboxControl();  
         Grid.SetColumn(tc, 0);  
         grid1.Children.Add(tc);  
     }  
-  
     ```  
   
 5.  Add a call to the `AddToolBox` method in the `MainWindow()` class constructor as shown in the following code.  
   
     ```csharp  
-  
     public MainWindow()  
     {  
         InitializeComponent();  
@@ -80,7 +75,6 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
   
         this.AddToolBox();  
     }  
-  
     ```  
   
 6.  Press F5 to build and run your solution. The **Toolbox** containing the <xref:System.Activities.Statements.Assign> and <xref:System.Activities.Statements.Sequence> activities should be displayed.  
@@ -92,19 +86,16 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
 2.  Add the `AddPropertyInspector` method to the `MainWindow` class to place the **PropertyGrid** pane in the rightmost column on the grid.  
   
     ```csharp  
-  
     private void AddPropertyInspector()  
     {  
         Grid.SetColumn(wd.PropertyInspectorView, 2);  
         grid1.Children.Add(wd.PropertyInspectorView);              
     }  
-  
     ```  
   
 3.  Add a call to the `AddPropertyInspector` method in the `MainWindow()` class constructor as shown in the following code.  
   
     ```csharp  
-  
     public MainWindow()  
     {  
         InitializeComponent();  
@@ -114,7 +105,6 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
   
         this.AddPropertyInspector();   
     }  
-  
     ```  
   
 4.  Press F5 to build and run the solution. The **Toolbox**, workflow design canvas, and **PropertyGrid** panes should all be displayed, and when you drag an <xref:System.Activities.Statements.Assign> activity or a <xref:System.Activities.Statements.Sequence> activity onto the design canvas, the property grid should update depending on the highlighted activity.  
@@ -123,7 +113,6 @@ In this task, you will create the **Toolbox** and **PropertyGrid** panes and add
  The MainWindow.xaml.cs file should now contain the following code.  
   
 ```  
-  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -225,7 +214,6 @@ namespace HostingApplication
   
     }  
 }  
-  
 ```  
   
 ## See Also  

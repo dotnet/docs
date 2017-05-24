@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "classes, PointAnimation"
   - "animation, PointAnimation"
 ms.assetid: 42310977-cc90-438a-8a47-0345898e01be
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

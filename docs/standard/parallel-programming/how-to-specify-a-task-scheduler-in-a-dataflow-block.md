@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "task scheduler, linking from TPL"
 ms.assetid: 27ece374-ed5b-49ef-9cec-b20db34a65e8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

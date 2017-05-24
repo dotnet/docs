@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "GetType operator"
   - "GetType keyword"
 ms.assetid: 4f733297-2503-4607-850c-15eba65fff90
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

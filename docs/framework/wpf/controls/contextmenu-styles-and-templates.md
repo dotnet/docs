@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "ControlTemplate [WPF], ContextMenu"
   - "states [WPF], ContextMenu"
 ms.assetid: 342d1f17-c406-4f94-8f55-867c5f3ea511
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

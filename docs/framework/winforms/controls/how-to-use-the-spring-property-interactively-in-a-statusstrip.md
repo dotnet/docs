@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "status bars, examples"
   - "Spring property [Windows Forms]"
 ms.assetid: 18bde842-a93c-48dd-9db3-15738a1775ce
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

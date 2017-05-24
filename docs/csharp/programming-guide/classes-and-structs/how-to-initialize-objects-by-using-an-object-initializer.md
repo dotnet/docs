@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "object initializers [C#], how to use"
   - "objects [C#], initializing"
 ms.assetid: 4b75ebb2-2e29-43de-929c-d736a8f27ce6
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "interoperability [WPF], airspace"
   - "Win32 code, window regions"
 ms.assetid: b7cc350f-b9e2-48b1-be14-60f3d853222e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

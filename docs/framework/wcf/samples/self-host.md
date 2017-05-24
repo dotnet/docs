@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Self hosted service"
   - "Self Host Sample [Windows Communication Foundation]"
 ms.assetid: 05e68661-1ddf-4abf-a899-9bb1b8272a5b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 38
 author: "Erikre"
 ms.author: "erikre"
@@ -50,7 +48,6 @@ public static void Main()
         Console.ReadLine();  
     }  
 }  
-  
 ```  
   
  When a service is hosted in Internet Information Services (IIS) or Windows Process Activation Service (WAS), the base address of the service is provided by the hosting environment. In the self-hosted case, you must specify the base address yourself. This is done using the `add` element, child of [\<baseAddresses>](../../../../docs/framework/configure-apps/file-schema/wcf/baseaddresses.md), child of [\<host>](../../../../docs/framework/configure-apps/file-schema/wcf/host.md), child of [\<service>](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) as demonstrated in the following sample configuration.  

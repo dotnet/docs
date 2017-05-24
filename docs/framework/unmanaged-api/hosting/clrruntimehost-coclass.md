@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CLRRuntimeHost coclass [.NET Framework hosting]"
 ms.assetid: 2ac9cbf5-8a2d-4e4f-8831-0dad8ef0a897
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

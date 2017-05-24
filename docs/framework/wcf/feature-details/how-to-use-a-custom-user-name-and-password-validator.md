@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "WCF, username and password"
 ms.assetid: 8e08b74b-fa44-4018-b63d-0d0805f85e3f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"

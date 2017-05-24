@@ -13,8 +13,6 @@ dev_langs:
 helpviewer_keywords: 
   - "sbyte keyword [C#]"
 ms.assetid: 1a9c7b48-73d1-4d33-b485-c4faf0a816bc
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

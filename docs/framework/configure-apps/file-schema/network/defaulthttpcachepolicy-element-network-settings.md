@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "defaultHttpCachePolicy element"
   - "<defaultHttpCachePolicy> element"
 ms.assetid: 2c1247d0-39b0-4c12-919a-a925ce075c79
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "mcleblanc"
 ms.author: "markl"

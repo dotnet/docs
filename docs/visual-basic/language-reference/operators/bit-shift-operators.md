@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], shift"
   - "bit shift operators"
 ms.assetid: 64889319-a057-471b-85d8-69fcd4af6230
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

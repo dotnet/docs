@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 27c240cb-8cab-472c-87f8-c864f4978758
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"
@@ -51,7 +49,6 @@ This topic describes how to enable configuration and metadata support for bindin
     </extensions>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The extension can be referenced from custom bindings to use UDP as the transport.  
@@ -68,7 +65,6 @@ This topic describes how to enable configuration and metadata support for bindin
     </bindings>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ### Adding Configuration for a Binding  
@@ -95,7 +91,6 @@ protected override void OnApplyConfiguration(string configurationName)
             if (this.ClientBaseAddress != null)  
                    udpBinding.ClientBaseAddress = ClientBaseAddress;  
 }  
-  
 ```  
   
  To register this handler with the configuration system, add the following section to the relevant configuration file.  
@@ -127,7 +122,6 @@ protected override void OnApplyConfiguration(string configurationName)
     </client>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## Adding Metadata Support for a Binding Element  

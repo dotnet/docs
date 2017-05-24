@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetNextGuid method [.NET Framework metadata]"
   - "IMetaDataTables::GetNextGuid method [.NET Framework metadata]"
 ms.assetid: 68f6ea4d-9112-4d6b-93d9-e34f1e2f2496
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

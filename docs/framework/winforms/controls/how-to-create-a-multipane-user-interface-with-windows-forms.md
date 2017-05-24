@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "TreeView control [Windows Forms], examples"
   - "Splitter control [Windows Forms], examples"
 ms.assetid: e79f6bcc-3740-4d1e-b46a-c5594d9b7327
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ In the following procedure, you will create a multipane user interface that is s
         System.Windows.Forms.SplitContainer  
     Private WithEvents splitContainer2 As _  
         System.Windows.Forms.SplitContainer  
-  
     ```  
   
     ```csharp  
@@ -56,7 +53,6 @@ In the following procedure, you will create a multipane user interface that is s
     private System.Windows.Forms.RichTextBox richTextBox1;  
     private System.Windows.Forms. SplitContainer splitContainer2;  
     private System.Windows.Forms. SplitContainer splitContainer1;  
-  
     ```  
   
 2.  Create a procedure that defines your user interface. The following code sets the properties so that the form will resemble the user interface in Microsoft Outlook. However, by using other controls or docking them differently, it is just as easy to create other user interfaces that are equally flexible.  
@@ -121,7 +117,6 @@ In the following procedure, you will create a multipane user interface that is s
         Me.Controls.Add(Me.splitContainer2)  
         Me.Text = "Intricate UI Example"  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -172,7 +167,6 @@ In the following procedure, you will create a multipane user interface that is s
         this.Controls.Add(this.splitContainer2);  
         this.Text = "Intricate UI Example";  
     }  
-  
     ```  
   
 3.  In [!INCLUDE[vbprvb](../../../../includes/vbprvb-md.md)], add a call to the procedure you just created in the `New()` procedure. In [!INCLUDE[csprcs](../../../../includes/csprcs-md.md)], add this line of code to the constructor for the form class.  
@@ -180,13 +174,11 @@ In the following procedure, you will create a multipane user interface that is s
     ```vb  
     ' Add this to the New procedure.  
     CreateOutlookUI()  
-  
     ```  
   
     ```csharp  
     // Add this to the form class's constructor.  
     createOutlookUI();  
-  
     ```  
   
 ## See Also  

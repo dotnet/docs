@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7f8078e0-00d9-415c-b8ba-c1b6d5c31799
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"
@@ -44,7 +42,6 @@ manager: "erikre"
 <system.serviceModel>  
         <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />      
 </system.serviceModel>  
-  
 ```  
   
 > [!WARNING]

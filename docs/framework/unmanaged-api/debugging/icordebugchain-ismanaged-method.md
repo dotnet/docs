@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugChain::IsManaged method [.NET Framework debugging]"
   - "IsManaged method, ICorDebugChain interface [.NET Framework debugging]"
 ms.assetid: 17b389a0-1a4d-4e8a-8613-9bc1769930f9
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

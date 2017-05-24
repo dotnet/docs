@@ -14,8 +14,6 @@ api_name:
 api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 57a02dfa-f091-4ace-9c06-1f4ab52b3527
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -29,12 +27,10 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 HRESULT CreateIDispatchSTAForwarder(  
    __in IDispatch *pDispatchDelegate,   
    __deref_out IDispatch **ppForwarder  
 )  
-  
 ```  
   
 #### Parameters  

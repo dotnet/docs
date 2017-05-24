@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerCallback2::SurvivingReferences method [.NET Framework profiling]"
   - "SurvivingReferences method [.NET Framework profiling]"
 ms.assetid: f165200e-3a91-47f7-88fc-13ff10c8babc
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 16

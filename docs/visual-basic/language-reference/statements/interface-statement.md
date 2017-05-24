@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "interface statement [Visual Basic]"
   - "interfaces, interface definition"
 ms.assetid: 8997af73-bda3-4f79-bd41-ca396b610260
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "EndPreventAsyncAbort method [.NET Framework hosting]"
   - "ICLRTask2::EndPreventAsyncAbort method [.NET Framework hosting]"
 ms.assetid: d8013659-e3df-44b3-814f-a6b534ce62f8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

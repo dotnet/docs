@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "signature confirmation"
   - "WCF, security"
 ms.assetid: 2424c137-c7c2-4aa9-8d5d-a066e12fefda
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"

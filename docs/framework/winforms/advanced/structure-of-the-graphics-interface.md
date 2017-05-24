@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "GDI+, using managed interface"
   - "graphics, class structure"
 ms.assetid: 010a1e46-656b-40a1-8d5d-87aa05ee1243
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

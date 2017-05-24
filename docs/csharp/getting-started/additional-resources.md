@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "forums [C#]"
   - "Visual C#, additional resources"
 ms.assetid: cdec0df0-89ef-4ff1-8ccf-26fef47e61cb
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"

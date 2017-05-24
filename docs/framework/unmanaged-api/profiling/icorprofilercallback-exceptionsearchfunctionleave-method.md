@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ExceptionSearchFunctionLeave method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionSearchFunctionLeave method [.NET Framework profiling]"
 ms.assetid: 01de7ac6-0aad-42ef-bf93-50737667b0a4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

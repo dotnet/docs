@@ -14,8 +14,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "windows, managing"
 ms.assetid: 3090b408-94e4-446a-92ca-50f1fd36e5d8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 69
 author: dotnet-bot
 ms.author: dotnetcontent

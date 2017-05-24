@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "alwaysFlowImpersonationPolicy element"
   - "<alwaysFlowImpersonationPolicy> element"
 ms.assetid: ee622801-9e46-470b-85ab-88c4b1dd2ee1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -89,14 +87,12 @@ Specifies that the Windows identity always flows across asynchronous points, reg
  ASP.NET by default disables the impersonation flow in the aspnet.config file by using the following configuration settings:  
   
 ```  
-  
 configuration>  
    <runtime>  
       <legacyImpersonationPolicy enabled="true"/>  
       <alwaysFlowImpersonationPolicy enabled="false"/>  
    </runtime>  
 </configuration>  
-  
 ```  
   
  In ASP.NET, if you want to allow the flow of impersonation instead, you must explicitly use the following configuration settings:  

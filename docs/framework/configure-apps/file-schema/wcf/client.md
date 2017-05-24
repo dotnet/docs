@@ -16,8 +16,6 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: bf0f7031-76c8-4e7e-a6c6-9ad9119134be
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ The `client` element defines a list of endpoints that a client can connect to.
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <client>  
         <endpoint>  

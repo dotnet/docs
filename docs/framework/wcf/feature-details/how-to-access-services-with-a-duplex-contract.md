@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "duplex contracts [WCF]"
 ms.assetid: 746a9d64-f21c-426c-b85d-972e916ec6c5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"
@@ -63,7 +61,6 @@ One feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is the ab
             Console.Writeline("Equation({0})", equation)  
         End Sub  
     End Class  
-  
     ```  
   
 5.  Create an instance of the <xref:System.ServiceModel.InstanceContext> class. The constructor requires an instance of the client class.  

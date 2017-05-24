@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], scheduling"
   - "scheduling threads"
 ms.assetid: 67e4a0eb-3095-4ea7-b20f-908faa476277
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "WCF, federation"
   - "federation"
 ms.assetid: 149ab165-0ef3-490a-83a9-4322a07bd98a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "Erikre"
 ms.author: "erikre"

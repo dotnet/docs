@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 88c304d5-edaa-4c0e-a8e1-144e8a76877e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,14 +23,12 @@ Gets the name of the loaded module.
 ## Syntax  
   
 ```  
-  
 HRESULT GetName(  
    [in] ULONG32 cchName,  
    [out] ULONG32 *pcchName,  
    [out, size_is(cchName),  
    length_is(*pcchName)] WCHAR szName[]  
 );  
-  
 ```  
   
 #### Parameters  

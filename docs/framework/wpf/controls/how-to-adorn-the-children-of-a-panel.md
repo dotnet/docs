@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "adorners, binding to children of Panels"
   - "Panel control, binding adorners to children"
 ms.assetid: 4cc9b972-b472-4e5c-bdf3-3702d7fbb1f5
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

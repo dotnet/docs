@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ISymUnmanagedReader::Initialize method [.NET Framework debugging]"
   - "Initialize method, ISymUnmanagedReader interface [.NET Framework debugging]"
 ms.assetid: 8f0dd2fe-7df7-464e-91f4-5518c586bb5f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

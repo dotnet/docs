@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "file I/O classes"
 ms.assetid: 4a5ca924-eea8-4a95-a5f0-6ac10de276a3
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

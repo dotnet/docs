@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "Get keyword"
   - "property procedures, Get statements"
 ms.assetid: 56b05cdc-bd64-4dfd-bb12-824eacec6f94
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

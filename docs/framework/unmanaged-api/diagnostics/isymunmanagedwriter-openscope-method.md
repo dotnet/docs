@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "OpenScope method, ISymUnmanagedWriter interface [.NET Framework debugging]"
   - "ISymUnmanagedWriter::OpenScope method [.NET Framework debugging]"
 ms.assetid: dbea0644-3873-4329-90b8-624163e87467
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

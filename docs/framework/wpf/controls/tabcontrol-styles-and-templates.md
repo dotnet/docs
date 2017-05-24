@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "states [WPF], TabControl"
   - "templates [WPF], TabControl"
 ms.assetid: f6b19a30-f10e-4fa1-96ce-f17a54092ab6
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

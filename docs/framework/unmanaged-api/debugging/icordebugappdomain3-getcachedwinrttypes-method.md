@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugAppDomain3::GetCachedWinRTTypes method [.NET Framework debugging]"
   - "GetCachedWinRTTypes method, ICorDebugAppDomain3 interface [.NET Framework debugging]"
 ms.assetid: 9afd0e04-a403-41e2-9528-a6dcbcdcbd4d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

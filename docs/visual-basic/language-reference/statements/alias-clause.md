@@ -16,8 +16,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Alias keyword"
 ms.assetid: 58c06b11-465d-4d87-906a-73200a3d7f19
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

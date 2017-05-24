@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "unmanaged structures [.NET Framework], hosting"
   - "structures [.NET Framework hosting]"
 ms.assetid: 492e010f-7493-4134-9505-f7008ccdaae6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

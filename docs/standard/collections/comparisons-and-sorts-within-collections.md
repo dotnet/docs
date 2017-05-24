@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Equals method"
   - "collections [.NET Framework], comparisons"
 ms.assetid: 5e4d3b45-97f0-423c-a65f-c492ed40e73b
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

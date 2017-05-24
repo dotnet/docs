@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "parallel foreach loop, how to cancel"
   - "parallel for loops, how to cancel"
 ms.assetid: 9d19b591-ea95-4418-8ea7-b6266af9905b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

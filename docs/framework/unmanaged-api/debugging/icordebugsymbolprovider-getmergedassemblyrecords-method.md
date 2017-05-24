@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: cc4c510d-550d-4941-af34-81987caf3425
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Gets the symbol records for all the merged assemblies.
 ## Syntax  
   
 ```  
-  
 HRESULT GetMergedAssemblyRecords(  
    [in] ULONG32 cRequestedRecords,  
    [out] ULONG32 *pcFetchedRecords,  
    [out, size_is(cRequestedRecords), length_is(*pcFetchedRecords)] ICorDebugMergedAssemblyRecord *pRecords[]  
 );  
-  
 ```  
   
 #### Parameters  

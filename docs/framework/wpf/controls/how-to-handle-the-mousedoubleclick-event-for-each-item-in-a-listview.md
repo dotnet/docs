@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "ListView controls, MouseDoubleClick event"
 ms.assetid: 81b39369-655a-4585-ac58-4640e5bb8fed
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetClassFromToken method, ICorDebugModule interface [.NET Framework debugging]"
   - "ICorDebugModule::GetClassFromToken method [.NET Framework debugging]"
 ms.assetid: 622a4d3c-0425-4c54-a7e4-0735377cdad2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

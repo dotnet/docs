@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "files, moving"
 ms.assetid: 53a7457b-5815-41ad-b37d-28537c1fb77a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

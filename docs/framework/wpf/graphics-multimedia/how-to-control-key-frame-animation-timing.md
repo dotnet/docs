@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "key frames [WPF], timing"
   - "timing key-fram animation"
 ms.assetid: b059216f-7d4b-4ca8-a019-bc287ee7bf16
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

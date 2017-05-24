@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "data binding, XML namespaces"
   - "namespaces, XML"
 ms.assetid: a47c832f-dc84-48f2-96d5-cde18fc4284b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "automatic sizing"
   - "AutoSizeMode property"
 ms.assetid: 62fd82a2-9565-4f65-925b-9d1e66dc4e7d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Visual Basic, programming in"
   - "Visual Basic, language reference"
 ms.assetid: 640e5796-2796-433c-af37-4d2a2334895b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

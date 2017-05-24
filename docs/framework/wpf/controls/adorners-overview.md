@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "adorners [WPF], about adorners"
 ms.assetid: 33d4c5c2-2daf-4e45-ba9a-5b673e2b8280
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 35
 author: dotnet-bot
 ms.author: dotnetcontent

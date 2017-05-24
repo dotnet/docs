@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorNativeLinkFlags enumeration [.NET Framework metadata]"
 ms.assetid: 8027df7c-cfad-4724-bda0-7538d9519070
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

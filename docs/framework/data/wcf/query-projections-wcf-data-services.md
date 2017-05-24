@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "query projection [WCF Data Services]"
   - "WCF Data Services, querying"
 ms.assetid: a09f4985-9f0d-48c8-b183-83d67a3dfe5f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"

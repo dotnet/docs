@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ac99a063-e2d2-40cc-b659-d23c2f783f92
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 42
 author: "Erikre"
 ms.author: "erikre"
@@ -28,7 +26,6 @@ This sample demonstrates how to implement End-to-End (E2E) tracing using Event T
  Each trace source in the <xref:System.Diagnostics> tracing model can have multiple trace listeners that determine where and how the data is traced. The type of listener defines the format in which trace data is logged. The following code sample shows how to add the listener to configuration.  
   
 ```  
-  
 <system.diagnostics>  
     <sources>  
         <source name="System.ServiceModel"   
@@ -54,7 +51,6 @@ This sample demonstrates how to implement End-to-End (E2E) tracing using Event T
        </add>  
     </sharedListeners>  
 </system.diagnostics>  
-  
 ```  
   
  Before using this listener, an ETW Trace Session must be started. This session can be started by using Logman.exe or Tracelog.exe. A SetupETW.bat file is included with this sample so that you can set up the ETW Trace Session along with a CleanupETW.bat file for closing the session and completing the log file.  
@@ -76,7 +72,6 @@ logman create trace Wcf -o <logfilename> -p "{411a0819-c24b-428c-83e2-26b4109170
   
 ```  
 Logman start Wcf  
-  
 ```  
   
  After you have finished logging, you can stop the session with the following command.  

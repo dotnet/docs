@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 97e665b6-1c51-410b-928a-9bb42c954ddb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ A configuration element that allows you to add settings that define virtual serv
 ## Syntax  
   
 ```  
-  
 <serviceHostingEnvironment>   
    <serviceActivations>  
       <add factory="String"  

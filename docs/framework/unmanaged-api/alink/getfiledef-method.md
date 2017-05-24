@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "GetFileDef method"
 ms.assetid: 4e3fbe6c-b82a-4181-ab17-7faa1263f5b3
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

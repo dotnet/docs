@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: e2be4af2-15d1-4e6a-8b68-1d78c93294a4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Gets the name of the static field.
 ## Syntax  
   
 ```  
-  
 HRESULT GetName(  
    [in] ULONG32 cchName,   
    [out] ULONG32 *pcchName,   
    [out, size_is(cchName), length_is(*pcchName)] WCHAR szName[]  
 );  
-  
 ```  
   
 #### Parameters  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRDataTarget::GetImageBase method [.NET Framework debugging]"
   - "GetImageBase method [.NET Framework debugging]"
 ms.assetid: 091c5f32-c160-49e3-a75f-4692e084c8e4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

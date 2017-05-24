@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Windows Forms, controls"
   - "ListView control [Windows Forms], tile view"
 ms.assetid: c20e67a3-2d94-413d-9fcf-ecbd0fe251da
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

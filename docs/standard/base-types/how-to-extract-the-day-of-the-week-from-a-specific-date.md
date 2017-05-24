@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "DateTimeOffset.ToString method"
   - "full weekday names"
 ms.assetid: 1c9bef76-5634-46cf-b91c-9b9eb72091d7
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

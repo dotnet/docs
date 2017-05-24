@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "DataFormats class [WPF]"
   - "DataObject class [WPF]"
 ms.assetid: 5967d557-1867-420f-a524-ae3af78402da
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

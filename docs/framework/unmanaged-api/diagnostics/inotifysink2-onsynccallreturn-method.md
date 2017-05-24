@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "OnSyncCallReturn method [.NET Framework debugging]"
   - "INotifySink2::OnSyncCallReturn method [.NET Framework debugging]"
 ms.assetid: c1bda761-6292-4750-a14b-7d5db8f33456
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

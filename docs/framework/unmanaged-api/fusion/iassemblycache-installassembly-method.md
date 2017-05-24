@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "InstallAssembly method [.NET Framework fusion]"
   - "IAssemblyCache::InstallAssembly method [.NET Framework fusion]"
 ms.assetid: 33c1d269-c85e-4cb1-b0e6-1c510c8fb5fa
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

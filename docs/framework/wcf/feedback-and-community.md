@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "feedback [WCF]"
   - "customer feedback [WCF]"
 ms.assetid: ba0fd32b-cbcb-4f5b-b913-d98514ab5650
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"

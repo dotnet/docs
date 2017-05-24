@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "<<= operator (left-shift assignment) [C#]"
   - "left shift assignment operator (<<=) [C#]"
 ms.assetid: 3bc99c78-1edb-4827-86fc-bce6c3048871
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

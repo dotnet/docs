@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "picture controls, about picture controls"
   - "image controls, about image controls"
 ms.assetid: e5befee7-dc29-4888-a7c4-3b177e394112
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

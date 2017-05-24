@@ -30,8 +30,6 @@ helpviewer_keywords:
   - "zeros, trailing"
   - "numbers, floating point"
 ms.assetid: 224a2795-4cd5-496c-8f7a-a4f05a06d45d
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

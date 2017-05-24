@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "modulus operator [C#]"
   - "% operator [C#]"
 ms.assetid: 3b74f4f9-fd9c-45e7-84fa-c8d71a0dfad7
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

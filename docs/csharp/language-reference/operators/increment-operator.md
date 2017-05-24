@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "increment operator (++) [C#]"
   - "++ operator [C#]"
 ms.assetid: e9dec353-070b-44fb-98ed-eb8fdf753feb
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

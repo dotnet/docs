@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, how to unwrap nested tasks"
 ms.assetid: a0769dd2-0f6d-48ca-8418-a9d39de7f450
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

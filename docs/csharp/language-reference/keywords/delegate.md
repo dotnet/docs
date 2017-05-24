@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "delegate keyword [C#]"
   - "function pointers [C#]"
 ms.assetid: 0bb8cb6d-2f87-47c7-9d1f-d65c1cd01e9f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

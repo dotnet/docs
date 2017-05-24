@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "xml:space attribute [XAML Services]"
   - "whitespace processing [XAML Services]"
 ms.assetid: 5e1814f0-5b30-43d5-8c88-dede335a89d7
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: "wadepickett"
 ms.author: "wpickett"

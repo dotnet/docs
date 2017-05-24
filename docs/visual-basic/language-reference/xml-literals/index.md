@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "XML literals [Visual Basic], reference"
   - "literals [Visual Basic], XML"
 ms.assetid: 16b28c40-8768-423f-bd9c-22ff10de2b54
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

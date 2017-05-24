@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "strings [.NET Framework], examples"
 ms.assetid: 121d1eae-251b-44c0-8818-57da04b8215e
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

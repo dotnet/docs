@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "parts [WPF], StatusBar"
   - "StatusBar [WPF], styles and templates"
 ms.assetid: 9f5e1c25-81eb-4756-a0ac-d9e1fbe33ee2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

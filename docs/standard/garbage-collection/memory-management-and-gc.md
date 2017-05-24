@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "memory management [.NET Framework]"
   - "garbage collection [.NET Framework profiling]"
 ms.assetid: fd0462f7-57ad-4858-bf62-958378873602
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

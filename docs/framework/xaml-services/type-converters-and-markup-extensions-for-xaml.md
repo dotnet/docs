@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "value converters for XAML [XAML Services]"
   - "XAML [XAML Services], service context"
 ms.assetid: db07a952-05ce-4aa4-b6f9-aac7397d0326
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: "wadepickett"
 ms.author: "wpickett"

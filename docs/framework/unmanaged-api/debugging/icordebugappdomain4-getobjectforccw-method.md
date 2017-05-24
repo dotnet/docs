@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 2cacdb85-e7b8-42e7-b310-c3e8c22e5d33
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,12 +23,10 @@ Gets a managed object from a COM callable wrapper (CCW) pointer.
 ## Syntax  
   
 ```  
-  
 HRESULT GetObjectForCCW(  
    [in]CORDB_ADDRESS ccwPointer,   
    [out]ICorDebugValue **ppManagedObject  
 );  
-  
 ```  
   
 #### Parameters  

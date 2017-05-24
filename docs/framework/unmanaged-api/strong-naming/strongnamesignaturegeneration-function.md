@@ -23,8 +23,6 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameSignatureGeneration function [.NET Framework strong naming]"
 ms.assetid: 839b765c-3e41-44ce-bf1b-dc10453db18e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

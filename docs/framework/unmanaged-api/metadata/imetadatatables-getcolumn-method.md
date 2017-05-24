@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataTables::GetColumn method [.NET Framework metadata]"
   - "GetColumn method [.NET Framework metadata]"
 ms.assetid: 1032055b-cabb-45c5-a50e-7e853201b175
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

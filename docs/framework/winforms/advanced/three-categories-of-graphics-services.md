@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "vector graphics"
   - "typography"
 ms.assetid: 068c0ef3-f6ee-4d58-a7b6-eb2531ead408
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

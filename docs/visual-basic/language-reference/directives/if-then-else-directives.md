@@ -28,8 +28,6 @@ helpviewer_keywords:
   - "else directive (#else)"
   - "#Else directive [Visual Basic]"
 ms.assetid: 10bba104-e3fd-451b-b672-faa472530502
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

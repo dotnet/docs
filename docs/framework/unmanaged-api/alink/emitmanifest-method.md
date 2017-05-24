@@ -23,8 +23,6 @@ dev_langs:
 helpviewer_keywords: 
   - "EmitManifest method"
 ms.assetid: fdebc1f3-b62e-4d9e-b775-8ccaa8ecb250
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

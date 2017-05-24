@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "/win32icon compiler option [C#]"
   - "-win32icon compiler option [C#]"
 ms.assetid: 756d9b6d-ab07-41b7-ba58-5bd88f711138
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

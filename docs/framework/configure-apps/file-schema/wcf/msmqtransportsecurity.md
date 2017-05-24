@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 092e911b-ab1b-4069-a26e-6134c3299e06
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -30,7 +28,6 @@ Specifies MSMQ transport security settings for a custom binding.
 ## Syntax  
   
 ```  
-  
 <msmqTransportSecurity>  
    msmqAuthenticationMode="None/Windows/Certificate"  
    msmqEncryptionAlgorithm="RC4Stream/AES"  

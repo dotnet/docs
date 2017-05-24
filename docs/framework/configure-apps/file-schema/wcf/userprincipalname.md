@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 68032f69-149e-4613-bae4-18314d4fd294
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"
@@ -28,7 +26,6 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
 ## Syntax  
   
 ```  
-  
 <userPrincipalName value = "String" />  
 ```  
   

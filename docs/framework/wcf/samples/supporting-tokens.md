@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 65a8905d-92cc-4ab0-b6ed-1f710e40784e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 29
 author: "Erikre"
 ms.author: "erikre"
@@ -59,7 +57,6 @@ public static Binding CreateMultiFactorAuthenticationBinding()
     // Create a CustomBinding based on the constructed security binding element.  
     return new CustomBinding(messageSecurity, httpTransport);  
 }  
-  
 ```  
   
  The behavior specifies the service credentials that are to be used for client authentication and also information about the service X.509 certificate. The sample uses `CN=localhost` as a subject name in the service X.509 certificate.  

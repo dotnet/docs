@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "geometric paths, rotating objects by"
   - "rotating objects by geometric paths"
 ms.assetid: cb31ca4d-f05a-4c6b-9a18-4b6faaf38d45
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "requestCaching element"
   - "<requestCaching> element"
 ms.assetid: 9962a2fe-cbda-41a6-9377-571811eaea84
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
@@ -38,7 +36,6 @@ Controls the caching mechanism for network requests.
 ## Syntax  
   
 ```  
-  
       <requestCaching  
   isPrivateCache ="true|false"  
   disableAllCaching="true|false"  

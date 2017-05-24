@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "arrays [C#], foreach"
   - "foreach statement [C#], using with arrays"
 ms.assetid: 5f2da2a9-1f56-4de5-94cc-e07f4f7a0244
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

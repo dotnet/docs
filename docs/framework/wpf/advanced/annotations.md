@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "documents, annotations"
   - "sticky notes"
 ms.assetid: 232ad0d7-2264-4bed-aae3-10dfde116a9c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

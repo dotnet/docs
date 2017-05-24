@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "controls [WPF], BulletDecorator"
   - "BulletDecorator control [WPF]"
 ms.assetid: 1756cabf-59b4-47a7-883d-1bdf2e5abe00
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 67
 author: dotnet-bot
 ms.author: dotnetcontent

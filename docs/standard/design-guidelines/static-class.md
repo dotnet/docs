@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "classes [.NET Framework], design guidelines"
   - "type design guidelines, classes"
 ms.assetid: d67c14d8-c4dd-443f-affb-4ccae677c9b6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

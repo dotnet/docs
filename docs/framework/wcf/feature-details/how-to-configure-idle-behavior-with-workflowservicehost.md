@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1bb93652-d687-46ff-bff6-69ecdcf97437
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ Workflows go idle when they encounter a bookmark that must be resumed by some ex
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
     ```  
   
      The `timeToUnload` attribute specifies the time period between when a workflow service instance goes idle and when the workflow service is unloaded. The `timeToPersist` attribute specifies the time period between when a workflow service instance goes idle and when the workflow service instance is persisted. The default value for `timeToUnload` is 1 minute. The default value for `timeToPersist` is <xref:System.TimeSpan.MaxValue>. If you want to keep idle instances in memory but persist them for robustness, set values so that `timeToPersist` < `timeToUnload`. If you want to prevent idle instances from being unloaded, set `timeToUnload` to <xref:System.TimeSpan.MaxValue>. [!INCLUDE[crabout](../../../../includes/crabout-md.md)]<xref:System.ServiceModel.Activities.Description.WorkflowIdleBehavior>, see [Workflow Service Host Extensibility](../../../../docs/framework/wcf/feature-details/workflow-service-host-extensibility.md)  

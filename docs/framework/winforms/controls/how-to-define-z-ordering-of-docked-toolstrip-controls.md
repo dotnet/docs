@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], specifying z-order"
   - "z-order"
 ms.assetid: 8b595429-ba9f-46af-9c55-3d5cc53f7fff
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "animation, Doubles with key frames"
   - "key frames, animating Doubles with"
 ms.assetid: 3a1a7dba-7694-4907-8a2f-3408baebfa82
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

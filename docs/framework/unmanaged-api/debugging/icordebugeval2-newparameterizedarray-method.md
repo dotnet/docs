@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugEval2::NewParameterizedArray method [.NET Framework debugging]"
   - "NewParameterizedArray method [.NET Framework debugging]"
 ms.assetid: 45efb8ba-c4de-4109-945f-e734d376b43c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

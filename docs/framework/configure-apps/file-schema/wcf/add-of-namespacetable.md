@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cf7b5b75-63bd-49a6-abac-4bfdab377e36
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -33,7 +31,6 @@ Represents a configuration element that contains a namespace to prefix mapping t
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

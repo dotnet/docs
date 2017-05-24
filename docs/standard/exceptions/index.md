@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "exceptions [.NET Framework]"
   - "common language runtime, exceptions"
 ms.assetid: f99a1d29-a2a8-47af-9707-9909f9010735
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

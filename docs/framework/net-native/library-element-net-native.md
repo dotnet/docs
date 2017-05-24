@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f642276b-33fb-4a81-b882-8808c31ba69e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -67,13 +65,11 @@ Defines the assembly that contains types and type members whose metadata is avai
  `<Library>` directives may be conditionally utilized. If the name of the `<Library>` element starts and ends with an asterisk (*), the `<Library>` directive has an effect only if the assembly specified between the asterisks is referenced by the app. For example, the following runtime directive applies only if the Utillities.dll assembly is referenced by the app.  
   
 ```xml  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
   <Library Name="*Utilities*">  
    ...  
   </Library>  
 </Directives>  
-  
 ```  
   
 ## See Also  

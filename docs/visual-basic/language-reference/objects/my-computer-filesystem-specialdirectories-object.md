@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "My.Computer.FileSystem.SpecialDirectories object"
   - "SpecialDirectories object"
 ms.assetid: d5f375c3-094b-4011-8438-17a31bc6df2b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

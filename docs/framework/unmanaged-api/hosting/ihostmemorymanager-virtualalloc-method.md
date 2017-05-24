@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "VirtualAlloc method [.NET Framework hosting]"
   - "IHostMemoryManager::VirtualAlloc method [.NET Framework hosting]"
 ms.assetid: 4dff3646-a050-4bd9-ac31-fe307e8637ec
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14
@@ -46,7 +44,6 @@ HRESULT VirtualAlloc (
     [in]  EMemoryCriticalLevel dwCriticalLevel,  
     [out] void**  ppMem  
 );  
-  
 ```  
   
 #### Parameters  

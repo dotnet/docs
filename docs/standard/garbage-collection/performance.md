@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "garbage collection, troubleshooting"
   - "garbage collection, performance"
 ms.assetid: c203467b-e95c-4ccf-b30b-953eb3463134
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"

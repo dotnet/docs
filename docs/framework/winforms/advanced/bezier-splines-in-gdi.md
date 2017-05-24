@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "splines, Bezier"
   - "GDI+, Bezier splines"
 ms.assetid: 5774ce1e-87d4-4bc7-88c4-4862052781b8
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

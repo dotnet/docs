@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 697a3991-b660-4a5a-8a54-1a2304ff158e
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -41,7 +39,6 @@ Dim newDRV As DataRowView = custView.AddNew()
 newDRV("CustomerID") = "ABCDE"  
 newDRV("CompanyName") = "ABC Products"  
 newDRV.EndEdit()  
-  
 ```  
   
 ```csharp  

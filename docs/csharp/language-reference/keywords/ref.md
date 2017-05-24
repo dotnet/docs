@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "parameters [C#], ref"
   - "ref keyword [C#]"
 ms.assetid: b8a5e59c-907d-4065-b41d-95bf4273c0bd
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"

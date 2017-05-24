@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "declared elements, referencing"
   - "declared elements, about declared elements"
 ms.assetid: e39c0752-f19f-4d2e-a453-00df1b5fc7ee
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

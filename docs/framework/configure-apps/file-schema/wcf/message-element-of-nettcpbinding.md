@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1d71edd9-c085-4c2e-b6d3-980c313366f9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Defines the type of message-level security requirements for an endpoint configur
 ## Syntax  
   
 ```  
-  
 <message   
       algorithmSuite=System.Servicemodel.Security.SecurityAlgorithmsuite  
     clientCredentialType="None/Windows/UserName/Certificate/IssuedToken"/>  

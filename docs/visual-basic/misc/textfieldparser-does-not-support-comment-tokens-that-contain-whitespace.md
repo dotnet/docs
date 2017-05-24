@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_WhitespaceInToken"
 ms.assetid: 55107656-270e-4bbb-841a-478904df8e07
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "controls, DockPanel"
   - "DockPanel control, creating"
 ms.assetid: 9194f663-e279-4f1a-86d7-125a57d05c6f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1a85ca37-496d-4fa3-8d44-d6c9383d735c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ manager: "erikre"
 ## Syntax  
   
 ```  
-  
 <issuerMetaData address=String"/>  
 ```  
   

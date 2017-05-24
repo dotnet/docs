@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "DataGrid control [Windows Forms], master-details lists"
   - "related tables, displaying in DataGrid control"
 ms.assetid: 19438ba2-f687-4417-a2fb-ab1cd69d4ded
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

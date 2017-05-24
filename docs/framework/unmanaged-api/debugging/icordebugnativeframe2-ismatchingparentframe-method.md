@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IsMatchingParentFrame method [.NET Framework debugging]"
   - "ICorDebugNativeFrame2::IsMatchingParentFrame method [.NET Framework debugging]"
 ms.assetid: d2ca20db-df22-4528-a0dd-a09ea62c8998
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "conversions, Visual Basic"
   - "string conversion, Visual Basic"
 ms.assetid: 06085ed5-191d-4930-8fbc-da63930da400
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

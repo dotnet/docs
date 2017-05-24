@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetAvailableThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
   - "IHostThreadPoolManager::GetAvailableThreads method [.NET Framework hosting]"
 ms.assetid: 61d26dfd-7f24-4e7d-a63e-b30a463f08e1
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

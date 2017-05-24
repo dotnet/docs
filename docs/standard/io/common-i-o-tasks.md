@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "I/O, common tasks"
 ms.assetid: bf00c380-706a-4e38-b829-454a480629fc
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

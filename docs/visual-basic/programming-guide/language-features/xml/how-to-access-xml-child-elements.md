@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "XML child axis property [Visual Basic]"
   - "XML [Visual Basic], accessing"
 ms.assetid: 6689eb36-c471-469f-a82d-099ab8197b25
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

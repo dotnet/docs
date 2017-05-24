@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "cryptographic provider [WCF], changing"
   - "cryptographic provider [WCF]"
 ms.assetid: b4254406-272e-4774-bd61-27e39bbb6c12
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"

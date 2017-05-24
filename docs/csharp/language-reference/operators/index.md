@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "keywords [C#], operators"
   - "arithmetic operators [C#]"
 ms.assetid: 0301e31f-22ad-49af-ac3c-d5eae7f0ac43
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 40
 author: "BillWagner"
 ms.author: "wiwagn"

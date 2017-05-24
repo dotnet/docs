@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "OR assignment operator (|=) [C#]"
   - "|= operator (OR assignment) [C#]"
 ms.assetid: 8315b8cf-dd15-402f-92f0-c7db931696ca
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

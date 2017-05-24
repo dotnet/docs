@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "routing [WCF], message filters"
 ms.assetid: cb33ba49-8b1f-4099-8acb-240404a46d9a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"
@@ -59,7 +57,6 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
              customType="RoutingServiceFilters.RoundRobinMessageFilter,   
              RoutingService" filterData="group1"/>  
 </filters>  
-  
 ```  
   
 > [!NOTE]
@@ -89,7 +86,6 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
 <filters>  
      <filter name="XPathFilter" filterType="XPath" filterData="/s12:Envelope/s12:Header/custom:RoundingCalculator = 1"/>  
 </filters>  
-  
 ```  
   
 ## Filter Tables  
@@ -110,7 +106,6 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
        </table>  
      </filterTables>      
 </routing>  
-  
 ```  
   
 ### Filter Evaluation Priority  
@@ -136,7 +131,6 @@ To implement content-based routing, the Routing Service uses <xref:System.Servic
                priority="0"/>  
      </filterTable>  
 </filterTables>  
-  
 ```  
   
  In the preceding example, if a message matches the XPathFilter, it will be routed to the roundingCalcEndpoint and no further filters in the table will be evaluated because all other filters are of a lower priority. However, if the message does not match the XPathFilter it will then be evaluated against all filters of the next lower priority, EndpointNameFilter and PrefixAddressFilter.  

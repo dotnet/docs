@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_UnsupportedIOType1"
 ms.assetid: b6c527e3-b75a-4c1a-b6f1-ee9f7460b5f0
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

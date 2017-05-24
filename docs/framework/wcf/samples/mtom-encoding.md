@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 820e316f-4ee1-4eb5-ae38-b6a536e8a14f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -80,7 +78,6 @@ Press <ENTER> to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

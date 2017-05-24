@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "types [C#], nested types"
   - "C# language, type members"
 ms.assetid: 4a30a4ab-d690-4936-9124-92ce9448665a
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

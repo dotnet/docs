@@ -17,8 +17,6 @@ helpviewer_keywords:
   - ".NET Framework 2.0, hosting global static functions"
   - "hosting global static functions [.NET Framework], version 2.0"
 ms.assetid: 91fbbb35-e543-4814-b806-371cebae8c5a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetNativeCode method [.NET Framework debugging]"
   - "ICorDebugFunction::GetNativeCode method [.NET Framework debugging]"
 ms.assetid: c8a34916-0eef-4987-8d29-c8bcb4be9cf6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

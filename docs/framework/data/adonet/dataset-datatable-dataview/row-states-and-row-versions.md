@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2e6642c9-bfc6-425c-b3a7-e4912ffa6c1f
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -37,7 +35,6 @@ ADO.NET manages rows in tables using row states and versions. A row state indica
 ```vb  
 Dim custRow As DataRow = custTable.Rows(0)  
 Dim custID As String = custRow("CustomerID", DataRowVersion.Original).ToString()  
-  
 ```  
   
 ```csharp  
@@ -79,7 +76,6 @@ For Each delRow In delRows
   Next  
   Console.WriteLine()  
 Next  
-  
 ```  
   
 ```csharp  

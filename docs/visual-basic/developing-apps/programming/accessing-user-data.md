@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "login names"
   - "examples [Visual Basic], accessing user data"
 ms.assetid: 32492a15-ee59-4a63-a1f1-9b24cc13140a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

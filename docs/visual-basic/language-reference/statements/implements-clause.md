@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "members, Implements keyword"
   - "reimplementation"
 ms.assetid: 5252cdf9-964d-4fc6-af0f-0449b7126b5a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

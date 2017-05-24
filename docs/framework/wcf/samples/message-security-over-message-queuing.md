@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 329aea9c-fa80-45c0-b2b9-e37fd7b85b38
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -178,7 +176,6 @@ public interface IOrderProcessor
  The service configuration includes a service behavior that specifies the service's credentials that are used when the client authenticates the service. The server certificate subject name is specified in the `findValue` attribute in the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
   
 ```  
-  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   
@@ -250,7 +247,6 @@ public interface IOrderProcessor
   </system.serviceModel>  
   
 </configuration>  
-  
 ```  
   
  The sample demonstrates controlling authentication using configuration, and how to obtain the caller’s identity from the security context, as shown in the following sample code:  
@@ -306,7 +302,6 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
     echo making client cert  
     echo ************  
     makecert.exe -sr CurrentUser -ss MY -a sha1 -n CN=%CLIENT_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the client certificate into server’s trusted certificate store.  
@@ -318,7 +313,6 @@ Processing Purchase Order: 6536e097-da96-4773-9da3-77bab4345b5d
     echo copying client cert to server's LocalMachine store  
     echo ************  
     certmgr.exe -add -r CurrentUser -s My -c -n %CLIENT_NAME% -r LocalMachine -s TrustedPeople  
-  
     ```  
   
 -   Creating the server certificate.  

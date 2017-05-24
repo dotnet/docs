@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetMethodSemantics method [.NET Framework metadata]"
   - "IMetaDataImport::GetMethodSemantics method [.NET Framework metadata]"
 ms.assetid: 5e018eaa-d60e-4a0b-a2c5-8c36bd09d905
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

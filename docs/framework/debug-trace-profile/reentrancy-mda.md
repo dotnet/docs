@@ -26,8 +26,6 @@ helpviewer_keywords:
   - "managed code, debugging"
   - "native debugging, MDAs"
 ms.assetid: 7240c3f3-7df8-4b03-bbf1-17cdce142d45
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

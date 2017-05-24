@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "TrackBar control [Windows Forms], about TrackBar control"
   - "slider controls, about slider controls"
 ms.assetid: 95910ecb-8a4c-4776-89fa-206c89ed6973
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

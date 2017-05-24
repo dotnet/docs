@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "paragraphs, spacing between"
   - "documents, adjusting spacing between paragraphs"
 ms.assetid: 7cd2f2ac-0e19-4587-bfb6-7f5b18c9536e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

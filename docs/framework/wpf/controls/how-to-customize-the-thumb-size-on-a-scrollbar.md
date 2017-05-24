@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "customizing thumb size"
   - "thumb size"
 ms.assetid: fa32b866-5ca1-4e73-85e7-2ac64b80d194
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

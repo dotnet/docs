@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "C# Language, copy constructor"
   - "copy constructor [C#]"
 ms.assetid: fba899b5-fc41-428e-a745-3ebdbf37990a
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

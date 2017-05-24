@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "PrintForm component [Visual Basic], deploying"
 ms.assetid: b595ea44-a712-4625-a761-190c64f59bbe
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

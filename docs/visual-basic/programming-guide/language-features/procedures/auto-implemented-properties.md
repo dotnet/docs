@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "properties, auto-implemented [Visual Basic]"
   - "auto-implemented properties [Visual Basic]"
 ms.assetid: 5c669f0b-cf95-4b4e-ae84-9cc55212ca87
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -67,7 +65,6 @@ Class Customer
       Me.File = file  
    End Sub  
 End Class  
-  
 ```  
   
  You can assign to the property with initialization expressions as shown in the example, or you can assign to the properties in the containing type’s constructor.  You can assign to the backing fields of readonly properties at any time.  

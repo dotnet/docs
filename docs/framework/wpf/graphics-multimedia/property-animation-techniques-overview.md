@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "animation, properties, methods for"
   - "properties, methods for animating"
 ms.assetid: 74f61413-f8c0-4e75-bf04-951886426c8b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

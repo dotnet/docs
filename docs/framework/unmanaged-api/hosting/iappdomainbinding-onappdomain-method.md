@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IAppDomainBinding::OnAppDomain method [.NET Framework hosting]"
   - "OnAppDomain method [.NET Framework hosting]"
 ms.assetid: b419dcc9-e8aa-484b-af0d-0f40358edb99
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

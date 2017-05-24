@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: e7e2dc9e-bda9-420d-a5b1-4fabf1cca46b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -30,7 +28,6 @@ This topic shows how to get the descendant elements with a particular name.
  This example uses the following XML document: [Sample XML File: Multiple Purchase Orders (LINQ to XML)](../../../../visual-basic/programming-guide/concepts/linq/sample-xml-file-multiple-purchase-orders-linq-to-xml.md).  
   
 ```vb  
-  
       Dim po As XDocument = XDocument.Load("PurchaseOrders.xml")  
   
 ' LINQ to XML query  

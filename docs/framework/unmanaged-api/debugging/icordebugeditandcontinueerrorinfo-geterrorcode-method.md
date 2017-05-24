@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetErrorCode method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueErrorInfo::GetErrorCode method [.NET Framework debugging]"
 ms.assetid: 2f82fb2c-a42e-48bf-af41-a15e40f636c6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

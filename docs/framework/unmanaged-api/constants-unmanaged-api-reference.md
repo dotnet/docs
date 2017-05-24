@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "native API reference [.NET Framework], constants"
   - "unmanaged API reference [.NET Framework], constants"
 ms.assetid: 77526f65-b71c-4483-9d19-3a3751fd8a45
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

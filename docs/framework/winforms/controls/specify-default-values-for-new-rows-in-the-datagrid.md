@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "rows, specifying default values"
   - "DataGridView control [Windows Forms], default values for new rows"
 ms.assetid: 8d127963-d9f8-4e4e-9f7f-beb66688f1f2
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

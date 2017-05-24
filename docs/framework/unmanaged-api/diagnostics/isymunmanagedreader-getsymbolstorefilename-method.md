@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetSymbolStoreFileName method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetSymbolStoreFileName method [.NET Framework debugging]"
 ms.assetid: c84f4846-9bc8-44a4-9a76-e39106d6d8b2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

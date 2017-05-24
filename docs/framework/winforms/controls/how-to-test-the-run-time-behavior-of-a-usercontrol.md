@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "UserControl Test Container"
   - "UserControl class, run-time behavior"
 ms.assetid: 4e4d5c49-1346-40ac-9d96-40211b573583
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

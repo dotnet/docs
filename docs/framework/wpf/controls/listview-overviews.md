@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "controls, ListView"
   - "ListView controls [WPF], using"
 ms.assetid: 49dfef1a-dddf-4fc6-a511-6d5f925a4781
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

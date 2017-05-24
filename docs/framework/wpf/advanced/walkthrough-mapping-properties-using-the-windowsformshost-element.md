@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "mapping properties"
   - "WindowsFormsHost element property mapping"
 ms.assetid: 74809167-bf8e-48b7-a2e7-b4ea08bc7d8c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

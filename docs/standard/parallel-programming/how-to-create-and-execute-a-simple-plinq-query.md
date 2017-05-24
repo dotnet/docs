@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, how to create"
 ms.assetid: 983b4213-bddd-4a44-9262-cbe59186df4c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

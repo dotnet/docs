@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a4fe59e7-44d8-43c6-a1f8-40c45223adca
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"
@@ -42,7 +40,6 @@ public class JsonContentTypeMapper : WebContentTypeMapper
         }  
     }  
 }  
-  
 ```  
   
  The type must override the <xref:System.ServiceModel.Channels.WebContentTypeMapper.GetMessageFormatForContentType%28System.String%29> method. The method must evaluate the `contentType` argument and return one of the following values: <xref:System.ServiceModel.Channels.WebContentFormat>, <xref:System.ServiceModel.Channels.WebContentFormat>, <xref:System.ServiceModel.Channels.WebContentFormat>, or <xref:System.ServiceModel.Channels.WebContentFormat>. Returning <xref:System.ServiceModel.Channels.WebContentFormat> defers to the default Web message encoder mappings. In the previous sample code, the `text/javascript` content type is mapped to JSON, and all other mappings remain unchanged.  

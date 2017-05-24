@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 90abece1-392e-4ade-94a1-30c75b0f7074
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,7 +23,6 @@ Gets the value of a variable as a byte array.
 ## Syntax  
   
 ```  
-  
 HRESULT GetValue(  
    [in] ULONG32 offset,  
    [in] ULONG32 cbContext,  
@@ -34,7 +31,6 @@ HRESULT GetValue(
    [out] ULONG32 *pcbValue,  
    [out, size_is(cbValue), length_is(*pcbValue)] BYTE pValue[]  
 );  
-  
 ```  
   
 #### Parameters  

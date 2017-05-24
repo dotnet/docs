@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "color dialog box, about color dialog box"
   - "ColorDialog component, about ColorDialog"
 ms.assetid: 6dbdd8f0-f697-4728-bb09-7ea156f6d800
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

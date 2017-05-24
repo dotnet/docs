@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_NATIVE_LINK structure [.NET Framework metadata]"
 ms.assetid: 6ef78d3c-1c69-4141-b687-dcb065b7a74d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

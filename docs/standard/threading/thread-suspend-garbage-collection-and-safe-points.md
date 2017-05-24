@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], garbage collection"
   - "garbage collection, threads"
 ms.assetid: e8f58e17-2714-4821-802a-f8eb3b2baa62
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

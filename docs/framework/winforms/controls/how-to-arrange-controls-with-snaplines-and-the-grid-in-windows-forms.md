@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Windows Forms, grid options in designer"
   - "controls [Windows Forms], aligning"
 ms.assetid: bb54bce5-880f-4a36-af68-8cf92058dc1c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

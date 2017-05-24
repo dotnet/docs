@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "tracing [.NET Framework], enabling or disabling"
   - "Web.config configuration file, trace switches"
 ms.assetid: 5a0e41bf-f99c-4692-8799-f89617f5bcf9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
@@ -48,7 +46,6 @@ Trace switches enable you to enable, disable, and filter tracing output.
     ```vb  
     Dim dataSwitch As New BooleanSwitch("Data", "DataAccess module")  
     Dim generalSwitch As New TraceSwitch("General", "Entire application")  
-  
     ```  
   
     ```csharp  
@@ -57,7 +54,6 @@ Trace switches enable you to enable, disable, and filter tracing output.
     System.Diagnostics.TraceSwitch generalSwitch =   
        new System.Diagnostics.TraceSwitch("General",   
        "Entire application");  
-  
     ```  
   
 <a name="configure"></a>   

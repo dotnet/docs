@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "^= operator [Visual Basic]"
   - "compound assignment statements"
 ms.assetid: 397da132-2d96-4a85-a7bc-f7c730a608c9
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -46,7 +44,6 @@ Raises the value of a variable or property to the power of an expression and ass
 ## Syntax  
   
 ```  
-  
 variableorproperty ^= expression  
 ```  
   

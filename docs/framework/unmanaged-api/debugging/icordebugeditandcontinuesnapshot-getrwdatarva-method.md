@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetRwDataRVA method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueSnapshot::GetRwDataRVA method [.NET Framework debugging]"
 ms.assetid: 3e07b233-dd41-45ba-a4f9-662e4b006f1f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

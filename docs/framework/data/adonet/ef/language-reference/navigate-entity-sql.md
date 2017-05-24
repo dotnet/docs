@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: f107f29d-005f-4e39-a898-17f163abb1d0
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Navigates over the relationship established between entities.
 ## Syntax  
   
 ```  
-  
 navigate(instance-expresssion, [relationship-type], [to-end [, from-end] ])  
 ```  
   

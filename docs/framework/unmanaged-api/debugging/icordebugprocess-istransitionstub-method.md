@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugProcess::IsTransitionStub method [.NET Framework debugging]"
   - "IsTransitionStub method [.NET Framework debugging]"
 ms.assetid: f7653317-7e48-4163-be03-f50f1a4b0f70
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

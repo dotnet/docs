@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0e5da4e6-1aa5-466c-924e-f10efee57f0b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -25,7 +23,6 @@ This element defines two child collections named `endpointBehaviors` and `servic
 ## Syntax  
   
 ```  
-  
 <behaviors>  
    <serviceBehaviors>  
    </serviceBehaviors>  

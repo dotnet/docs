@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a7875f26-0da8-4afe-9846-7a21778f757b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -33,14 +31,12 @@ Memory gates checking failed because the free memory (nnnn bytes) is less than n
  To revert to the previous behavior where the [minFreeMemoryPercentageToActivateService](../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md) setting was ignored, modify the web.config file as follows:  
   
 ```  
-  
 <serviceHostingEnvironment multipleSiteBindingsEnabled="true"   
                            minFreeMemoryPercentageToActivateService="0">  
    <serviceActivations>  
    ...  
    </serviceActivations>  
 </serviceHostingEnvironment>  
-  
 ```  
   
 ## See Also  

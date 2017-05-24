@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 35ac4140-91ea-4c77-b1c4-1daf41986ca5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,14 +23,12 @@ Returns information about a type's properties, such as the number of signature o
 ## Syntax  
   
 ```  
-  
 HRESULT GetTypeProps(  
    [in]  ULONG32 vtableRva,  
    [in]  ULONG32 cbSignature,  
    [out] ULONG32 *pcbSignature,  
    [out, size_is(cbSignature), length_is(*pcbSignature)] BYTE signature[]  
 );  
-  
 ```  
   
 #### Parameters  

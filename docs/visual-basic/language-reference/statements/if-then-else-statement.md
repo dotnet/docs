@@ -31,8 +31,6 @@ helpviewer_keywords:
   - "IIf function, and If...Then...Else statements"
   - "Else statement [Visual Basic]"
 ms.assetid: 790068a2-1307-4e28-8a72-be5ebda099e9
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

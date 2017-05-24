@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "RichTextBox control, positioning custom context menus"
   - "context menus, positioning"
 ms.assetid: bf77c930-a546-4573-9a56-9af345ba189a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

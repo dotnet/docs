@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "ServiceProcessInstaller class, service application code model"
   - "Windows Service applications, states"
 ms.assetid: 83230026-d068-4174-97ff-e264c896eb2f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "ghogen"
 ms.author: "ghogen"

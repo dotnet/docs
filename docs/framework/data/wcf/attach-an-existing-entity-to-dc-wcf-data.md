@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "WCF Data Services, changing data"
 ms.assetid: e3f2d71d-434c-4e98-91c3-95adae4702b6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

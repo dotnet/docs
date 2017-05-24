@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "JPEG decoding"
   - "JPEG encoding"
 ms.assetid: b8cfde37-9f68-4911-a05e-51d8d7bdec7b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

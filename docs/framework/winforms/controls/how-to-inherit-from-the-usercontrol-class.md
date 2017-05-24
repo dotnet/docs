@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "user controls [Windows Forms], creating"
   - "composite controls, creating"
 ms.assetid: 67713625-e2e4-4f6a-bce7-0855ee5043d9
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

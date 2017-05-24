@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "service certificate validation [WCF]"
   - "certificates [WCF], service certificate validation"
 ms.assetid: 9dffcab2-70a9-40f0-99fd-d3a0b296028f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"

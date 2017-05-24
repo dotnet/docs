@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], LinkLabel control"
   - "LinkLabel control [Windows Forms], examples"
 ms.assetid: fdc5854f-5162-4457-8cbe-1042feb2d132
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -39,7 +37,6 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
     LinkLabel1.LinkColor = Color.FromArgb(0, 0, 255)  
     ' Or you can set the color using defined constants  
     LinkLabel1.VisitedLinkColor = Color.Purple  
-  
     ```  
   
     ```csharp  
@@ -47,7 +44,6 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
     linkLabel1.LinkColor = Color.FromArgb(0, 0, 255);  
     // Or you can set the color using defined constants  
     linkLabel1.VisitedLinkColor = Color.Purple;  
-  
     ```  
   
     ```cpp  
@@ -63,12 +59,10 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
   
     ```vb  
     LinkLabel1.Text = "Click here to see more."  
-  
     ```  
   
     ```csharp  
     linkLabel1.Text = "Click here to see more.";  
-  
     ```  
   
     ```cpp  
@@ -81,12 +75,10 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
   
     ```vb  
     LinkLabel1.LinkArea = new LinkArea(6,4)  
-  
     ```  
   
     ```csharp  
     linkLabel1.LinkArea = new LinkArea(6,4);  
-  
     ```  
   
     ```cpp  
@@ -109,7 +101,6 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
        LinkLabel1.LinkVisited = True  
        ' Then do whatever other action is appropriate  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -120,7 +111,6 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
        linkLabel1.LinkVisited = true;  
        // Then do whatever other action is appropriate  
     }  
-  
     ```  
   
     ```cpp  

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "paramref XML tag"
   - "<paramref> XML tag"
 ms.assetid: 8979d53b-beb1-41b7-b41e-6bbea1c17a03
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

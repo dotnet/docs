@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3af4805b-dc72-4f68-b168-da4fba8c6170
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"
@@ -34,7 +32,6 @@ Represents a routing entry that maps a filter to a client endpoint that was prev
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

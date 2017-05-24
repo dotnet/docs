@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "Windows Forms, linking to Web pages"
   - "LinkLabel control [Windows Forms], examples"
 ms.assetid: 477a7398-5971-4de3-b24c-f49f32bdb28a
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

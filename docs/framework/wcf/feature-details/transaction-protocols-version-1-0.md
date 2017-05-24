@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 034679af-0002-402e-98a8-ef73dcd71bb6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"
@@ -171,7 +169,6 @@ manager: "erikre"
     </wscoor:CreateCoordinationContext>  
   </s:Body>  
 </s11:Envelope>  
-  
 ```  
   
 #### CreateCoordinationContextResponse  
@@ -254,7 +251,6 @@ manager: "erikre"
     </wscoor:CreateCoordinationContextResponse>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 ### Registration Messages  
@@ -319,7 +315,6 @@ manager: "erikre"
     </wscoor:Register>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 #### Register Response  
@@ -356,7 +351,6 @@ manager: "erikre"
     </wscoor:RegisterResponse>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 ### Two Phase Commit Protocol Messages  
@@ -383,7 +377,6 @@ manager: "erikre"
     <wsat:Commit />  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 ### Application Messages  

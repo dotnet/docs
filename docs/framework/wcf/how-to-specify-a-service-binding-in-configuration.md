@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 885037f7-1c2b-4d7a-90d9-06b89be172f2
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"
@@ -76,7 +74,6 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
        </bindings>  
       </system.serviceModel>  
     </configuration>  
-  
     ```  
   
 4.  Create a Service.svc file that contains the following line and place it in your Internet Information Services (IIS) virtual directory.  

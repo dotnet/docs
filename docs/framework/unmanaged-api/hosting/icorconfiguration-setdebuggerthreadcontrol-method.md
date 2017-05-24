@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetDebuggerThreadControl method [.NET Framework hosting]"
   - "ICorConfiguration::SetDebuggerThreadControl method [.NET Framework hosting]"
 ms.assetid: 1ded7639-dacb-4db1-961c-d1ceaec01959
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

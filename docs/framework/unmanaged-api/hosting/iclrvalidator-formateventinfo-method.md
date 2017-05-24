@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "FormatEventInfo method, ICLRValidator interface [.NET Framework hosting]"
   - "ICLRValidator::FormatEventInfo method [.NET Framework hosting]"
 ms.assetid: 808e1f1d-52f4-47c4-83cc-dcf47d075219
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

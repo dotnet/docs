@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "XData in XAML [XAML Services]"
   - "x:XData XAML directive element [XAML Services]"
 ms.assetid: 7ce209c2-621b-4977-b643-565f7e663534
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 17
 author: "wadepickett"
 ms.author: "wpickett"

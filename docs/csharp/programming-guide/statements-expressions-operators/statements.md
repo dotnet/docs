@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "statements [C#], about statements"
   - "C# language, statements"
 ms.assetid: 901bcde7-87de-4e15-833c-f9cfd40c8ce3
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

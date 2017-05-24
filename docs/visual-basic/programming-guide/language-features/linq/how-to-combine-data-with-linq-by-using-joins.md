@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "joining [LINQ in Visual Basic]"
   - "queries [LINQ in Visual Basic], how-to topics"
 ms.assetid: 5b00a478-035b-41c6-8918-be1a97728396
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

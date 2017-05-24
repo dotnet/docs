@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "data transformations [LINQ in C#]"
   - "LINQ [C#], type relationships"
 ms.assetid: 99118938-d47c-4d7e-bb22-2657a9f95268
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"

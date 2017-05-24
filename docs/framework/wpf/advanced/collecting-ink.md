@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "properties, DefaultDrawingAttributes"
   - "DefaultDrawingAttributes property"
 ms.assetid: 66a3129d-9577-43eb-acbd-56c147282016
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

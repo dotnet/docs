@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "DataGridView control [Windows Forms], virtual mode"
 ms.assetid: feae5d43-2848-4b1a-8ea7-77085dc415b5
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

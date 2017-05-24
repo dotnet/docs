@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "CreateCordbObject function"
   - "Silverlight, remote debugging"
 ms.assetid: b259821d-4fa7-464d-85cf-304dfffc8089
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

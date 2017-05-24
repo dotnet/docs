@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "runtime element"
   - "container tags, <runtime> element"
 ms.assetid: 1eb2fae3-de4b-45b6-852f-517c39b751bd
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 70
 author: "mcleblanc"
 ms.author: "markl"

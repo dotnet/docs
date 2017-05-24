@@ -1,5 +1,5 @@
 ---
-title: Methods and Lambda Expressions
+title: Methods and Lambda Expressions | Microsoft Docs
 description: Methods and Lamba expressions are the core of your algorithms. Learn more here.
 keywords: .NET, .NET Core
 ms.date: 06/20/2016

@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: b1141c35-4253-4e34-b3e4-ed406a9dea4f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,11 +23,9 @@ Gets the merged module that was just loaded or unloaded.
 ## Syntax  
   
 ```  
-  
 HRESULT GetModule(  
    [out]ICorDebugModule **ppModule  
 );  
-  
 ```  
   
 #### Parameters  

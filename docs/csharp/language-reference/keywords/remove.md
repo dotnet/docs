@@ -12,8 +12,6 @@ dev_langs:
 helpviewer_keywords: 
   - "remove event accessor [C#]"
 ms.assetid: c8223426-c17b-4fe2-8406-01564cf1dd2b
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 8
 author: "BillWagner"
 ms.author: "wiwagn"

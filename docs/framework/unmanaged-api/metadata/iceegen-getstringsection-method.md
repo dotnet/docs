@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICeeGen::GetStringSection method [.NET Framework metadata]"
   - "GetStringSection method [.NET Framework metadata]"
 ms.assetid: a2267d39-69d1-4de1-bf37-f752cafacc71
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

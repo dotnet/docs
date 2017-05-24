@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameSignatureGenerationEx method [.NET Framework hosting]"
   - "StrongNameSignatureGenerationEx method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: c3f34584-c6e2-41fd-bb44-e44da8546309
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

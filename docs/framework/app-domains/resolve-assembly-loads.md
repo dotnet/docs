@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], loading"
   - "application domains, resolving assembly loads"
 ms.assetid: 5099e549-f4fd-49fb-a290-549edd456c6a
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

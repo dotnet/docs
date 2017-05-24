@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "lines, drawing"
   - "lines, dashed"
 ms.assetid: cd0ed96a-cce4-47b9-b58a-3bae2e3d1bee
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

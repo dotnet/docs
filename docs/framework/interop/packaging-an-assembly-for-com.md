@@ -29,8 +29,6 @@ helpviewer_keywords:
   - "COM interop, exposing COM components"
   - "Reqasm.exe"
 ms.assetid: 39dc55aa-f2a1-4093-87bb-f1c0edb6e761
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

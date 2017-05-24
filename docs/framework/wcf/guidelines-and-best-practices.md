@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "WCF, best practices"
   - "Windows Communication Foundation, guidelines"
 ms.assetid: 5098ba46-6e8d-4e02-b0c5-d737f9fdad84
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"

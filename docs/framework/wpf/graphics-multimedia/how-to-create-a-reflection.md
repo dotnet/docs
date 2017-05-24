@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "brushes, creating reflections"
   - "reflections, creating"
 ms.assetid: 4f017e16-ab80-43c7-98df-03b6bddbb203
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

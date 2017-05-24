@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "fully qualified names [C#]"
   - "namespaces [C#], how to use"
 ms.assetid: 1fe8bf39-addc-438a-bd9e-86410e32381d
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4331d2bc-5455-492a-9189-634a82597726
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -73,7 +71,6 @@ manager: "erikre"
 ## Example  
   
 ```  
-  
 <bindings>  
    <customBinding>  
       <binding name="FederationDuplexHttpMessageSecurityBinding">  
@@ -104,5 +101,4 @@ manager: "erikre"
        </binding>              
     </customBinding>  
 </bindings>  
-  
 ```

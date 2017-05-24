@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "menu items, enabling"
   - "menus, disabling menu items"
 ms.assetid: bcc1da84-50fd-41d2-8475-103b581d5654
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

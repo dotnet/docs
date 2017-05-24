@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "operator >>"
   - "right shift operators"
 ms.assetid: 054dc6a6-47d9-47ef-82da-cfa2b59fbf8f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ Performs an arithmetic right shift on a bit pattern.
 ## Syntax  
   
 ```  
-  
 result = pattern >> amount  
 ```  
   

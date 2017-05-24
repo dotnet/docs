@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f21e6aba-b76d-46ad-a83e-2ad8e0af1e12
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -115,7 +113,6 @@ selectCMD.Parameters.Add( _
   
 Dim customers As DataSet = New DataSet  
 adapter.Fill(customers, "Customers")  
-  
 ```  
   
 ```csharp  
@@ -150,7 +147,6 @@ selectCMD.Parameters.Add("@City", OdbcType.VarChar, 15).Value = "London"
   
 Dim customers As DataSet = New DataSet  
 adapter.Fill(customers, "Customers")  
-  
 ```  
   
 ```csharp  

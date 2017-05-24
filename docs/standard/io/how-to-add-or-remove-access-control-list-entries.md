@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "I/O [.NET Framework], access control list entries"
   - "access control lists [.NET Framework]"
 ms.assetid: 53758b39-bd9b-4640-bb04-cad5ed8d0abf
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

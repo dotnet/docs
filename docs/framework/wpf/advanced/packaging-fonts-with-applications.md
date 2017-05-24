@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "typography, packaging fonts with applications"
   - "packaging fonts with applications"
 ms.assetid: db15ee48-4d24-49f5-8b9d-a64460865286
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -52,7 +50,6 @@ This topic provides an overview of how to package fonts with your              [
     <Content Include="Pericl.ttf" />  
   </ItemGroup>  
 </Project>  
-  
 ```  
   
  In order to ensure that the application can use the fonts at run time, the fonts must be accessible in the application's deployment directory. The                  `<CopyToOutputDirectory>` element in the application's project file allows you to automatically copy the fonts to the application deployment directory during the build process. The following project file example shows how to copy fonts to the deployment directory.  
@@ -86,7 +83,6 @@ This topic provides an overview of how to package fonts with your              [
     <Resource Include="resources\Pericl.ttf" />  
   </ItemGroup>  
 </Project>  
-  
 ```  
   
 > [!NOTE]

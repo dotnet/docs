@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "x:Code XAML directive element [XAML Services]"
   - "XAML [XAML Services], x:Code directive element"
 ms.assetid: 87986b13-1a2e-4830-ae36-15f9dc5629e8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 19
 author: "wadepickett"
 ms.author: "wpickett"

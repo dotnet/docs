@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugManagedCallback::CreateThread method [.NET Framework debugging]"
   - "CreateThread method [.NET Framework debugging]"
 ms.assetid: 6b961728-21c4-4e8d-ae81-197458be62f4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "C# language, types"
   - "strong typing [C#]"
 ms.assetid: f782d7cc-035e-4500-b1b1-36a9881130ad
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 53
 author: "BillWagner"
 ms.author: "wiwagn"

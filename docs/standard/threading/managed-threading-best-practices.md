@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], best practices"
   - "managed threading"
 ms.assetid: e51988e7-7f4b-4646-a06d-1416cee8d557
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

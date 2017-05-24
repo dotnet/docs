@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "XAML, custom classes"
   - "classes, custom classes in XAML"
 ms.assetid: e7313137-581e-4a64-8453-d44e15a6164a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

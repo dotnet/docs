@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrFileSystem_IllegalInputAccess"
 ms.assetid: 60929c62-b9dc-4a9c-9363-2325238f744d
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

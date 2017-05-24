@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "method overloading"
   - "Overloads keyword, overloaded members"
 ms.assetid: b686fb97-e7d7-4001-afaa-6650cba08f0d
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "compiler options [C#], listed by category"
   - "Visual C#, compiler options listed by category"
 ms.assetid: 96437ecc-6502-4cd3-b070-e9386a298e83
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

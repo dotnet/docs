@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "deploying [WCF Data Services"
   - "developing applications [WCF Data Services]"
 ms.assetid: 6557c0e3-5aea-4f6e-bc14-77ad317a168b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"

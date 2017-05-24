@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "folders [Visual Basic], copying"
   - "directories [Visual Basic], copying"
 ms.assetid: 2a370bd7-10ba-4219-afc4-4519d031eb6c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

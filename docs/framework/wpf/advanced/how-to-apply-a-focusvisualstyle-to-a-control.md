@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "properties, FocusVisualStyle"
   - "FocusVisualStyle property"
 ms.assetid: 363de99e-8ecc-438c-ac4a-f9147432ebd6
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

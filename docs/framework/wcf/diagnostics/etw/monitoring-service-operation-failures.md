@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 59472ba3-8ebf-4479-bd7b-f440d5e636cb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ If analytic tracing is enabled for an application, service failures can easily b
   
     ```  
     if (n2 == 0) throw new DivideByZeroException();  
-  
     ```  
   
 5.  In the Program.cs file in the Client project, change the value assigned to value2 to zero:  
@@ -43,7 +40,6 @@ If analytic tracing is enabled for an application, service failures can easily b
     value2 = 0.00D;  
     result = client.Divide(value1, value2);  
     Console.WriteLine("Divide({0}, {1}) = {2}", value1, value2, result);  
-  
     ```  
   
 6.  Execute the server application without debugging by pressing **Ctrl+F5**.  

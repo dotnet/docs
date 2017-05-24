@@ -1,5 +1,5 @@
 ---
-title: Automatic memory management and garbage collection
+title: Automatic memory management and garbage collection | Microsoft Docs
 description: Automatic memory management and garbage collection
 keywords: .NET, .NET Core
 author: dotnet-bot

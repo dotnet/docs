@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "procedures, Sub"
   - "syntax, Sub procedures"
 ms.assetid: 6a0a4958-ed0a-4d3d-8d31-0772c82bda58
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

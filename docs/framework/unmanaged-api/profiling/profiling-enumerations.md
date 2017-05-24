@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "enumerations [.NET Framework profiling]"
   - "unmanaged enumerations [.NET Framework], profiling"
 ms.assetid: 8d5f9570-9853-4ce8-8101-df235d5b258e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"

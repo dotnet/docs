@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 939cabe1-b647-4090-b662-eeec23c6c58d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Returns the module base address and size from an address in that module.
 ## Syntax  
   
 ```  
-  
 HRESULT GetImageFromPointer(  
    [in] CORDB_ADDRESS addr,   
    [out] CORDB_ADDRESS *pImageBase,   
    [out] ULONG32 *pSize  
 );  
-  
 ```  
   
 #### Parameters  

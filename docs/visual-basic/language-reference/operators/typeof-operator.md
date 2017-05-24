@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "TypeOf operator [Visual Basic]"
   - "compatible data types"
 ms.assetid: 33f65296-659a-4b9a-9a29-c2a91cff68b2
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -49,12 +47,10 @@ Compares an object reference variable to a data type.
 ## Syntax  
   
 ```  
-  
 result = TypeOf objectexpression Is typename  
 ```  
   
 ```  
-  
 result = TypeOf objectexpression IsNot typename  
 ```  
   

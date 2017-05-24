@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRDebugManager::EndConnection method [.NET Framework hosting]"
   - "EndConnection method [.NET Framework hosting]"
 ms.assetid: 89dc7363-2f29-4eb2-8f23-fccdda6a76a6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

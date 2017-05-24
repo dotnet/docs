@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Global Assembly Cache tool"
   - "GAC (global assembly cache), removing assemblies"
 ms.assetid: acdcc588-b458-436d-876c-726de68244c1
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

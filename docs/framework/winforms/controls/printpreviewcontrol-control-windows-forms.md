@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "PrintPreview control (using designer)"
   - "print preview, custom interface (using designer)"
 ms.assetid: 3fdb2e46-92a3-4e26-bb8d-63a89087b337
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

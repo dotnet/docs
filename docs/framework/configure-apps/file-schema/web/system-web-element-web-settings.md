@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "ASP.NET configuration system"
   - "configuration files [ASP.NET]"
 ms.assetid: 24c4cf4f-ad32-42b2-b040-8e4549e2855e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"

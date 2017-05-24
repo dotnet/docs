@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "print jobs, completing in Windows Forms"
   - "printing [Windows Forms], print jobs"
 ms.assetid: 23ec74f7-34c5-4710-82a0-ee2914518548
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -33,12 +31,10 @@ Frequently, word processors and other applications that involve printing will pr
   
     ```vb  
     PrintDocument1.DocumentName = "MyTextFile"  
-  
     ```  
   
     ```csharp  
     printDocument1.DocumentName = "MyTextFile";  
-  
     ```  
   
     ```cpp  
@@ -53,7 +49,6 @@ Frequently, word processors and other applications that involve printing will pr
     Private Sub PrintDocument1_EndPrint(ByVal sender As Object, ByVal e As System.Drawing.Printing.PrintEventArgs) Handles PrintDocument1.EndPrint  
        MessageBox.Show(PrintDocument1.DocumentName + " has finished printing.")  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -63,7 +58,6 @@ Frequently, word processors and other applications that involve printing will pr
        MessageBox.Show(printDocument1.DocumentName +   
           " has finished printing.");  
     }  
-  
     ```  
   
     ```cpp  
@@ -82,7 +76,6 @@ Frequently, word processors and other applications that involve printing will pr
     this.printDocument1.EndPrint += new  
        System.Drawing.Printing.PrintEventHandler  
        (this.printDocument1_EndPrint);  
-  
     ```  
   
     ```cpp  

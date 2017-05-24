@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "ToolBar control [Windows Forms], coding button click events"
   - "toolbars [Windows Forms], click event handlers"
 ms.assetid: 98374f70-993d-4ca4-89fb-48fea6ce5b45
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -48,7 +46,6 @@ manager: "wpickett"
     ' Add the event handler delegate.  
        AddHandler ToolBar1.ButtonClick, AddressOf Me.ToolBar1_ButtonClick  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -61,7 +58,6 @@ manager: "wpickett"
        toolBar1.ButtonClick +=   
           new ToolBarButtonClickEventHandler(this.toolBar1_ButtonClick);  
     }  
-  
     ```  
   
     ```cpp  
@@ -97,7 +93,6 @@ manager: "wpickett"
            MessageBox.Show("Third toolbar button clicked")  
        End Select  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -119,7 +114,6 @@ manager: "wpickett"
              break;  
        }  
     }  
-  
     ```  
   
     ```cpp  

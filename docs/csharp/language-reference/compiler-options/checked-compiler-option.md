@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "-checked compiler option [C#]"
   - "/checked compiler option [C#]"
 ms.assetid: fb7475d3-e6a6-4e6d-b86c-69e7a74c854b
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "orderby clause [C#]"
   - "orderby keyword [C#]"
 ms.assetid: 21f87f48-d69d-4e95-9a52-6fec47b37e1f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

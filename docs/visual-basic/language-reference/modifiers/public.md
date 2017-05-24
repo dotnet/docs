@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Public keyword, syntax"
   - "Public access modifier"
 ms.assetid: 284c9e1b-ed23-499b-9bc9-ad87c11485a5
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

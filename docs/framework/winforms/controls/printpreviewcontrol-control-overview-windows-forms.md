@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "print preview"
   - "PrintPreviewControl control"
 ms.assetid: 4513c6c7-5e9b-4f4c-82ca-00f993a26955
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

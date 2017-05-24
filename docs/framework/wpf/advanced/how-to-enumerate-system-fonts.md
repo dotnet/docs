@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "system fonts, enumerating"
   - "enumerating, system fonts"
 ms.assetid: 36e37791-55b9-4f01-a496-5cc10335e6a6
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

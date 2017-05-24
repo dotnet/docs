@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "/baseaddress compiler option [C#]"
   - "-baseaddress compiler option [C#]"
 ms.assetid: ce13c965-dfe4-4433-94f5-63b476e3a608
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

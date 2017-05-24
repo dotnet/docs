@@ -14,8 +14,6 @@ dev_langs:
   - "C++"
   - "jsharp"
 ms.assetid: d2758ea1-03f6-47bd-88d2-0fb7ccdb2fab
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "documents, browser-viewable"
   - "browser-viewable documents"
 ms.assetid: 6e8db7bc-050a-4070-aa72-bb8c46e87ff8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent

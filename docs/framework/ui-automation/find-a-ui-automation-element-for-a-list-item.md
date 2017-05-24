@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "elements, finding for list items"
   - "UI Automation, finding elements for List items"
 ms.assetid: c326ad2b-2144-4f64-ae4c-d850c74f95c5
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 5
 author: "Xansky"
 ms.author: "mhopkins"

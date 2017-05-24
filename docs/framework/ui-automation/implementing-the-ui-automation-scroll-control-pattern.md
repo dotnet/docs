@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "control patterns, Scroll"
   - "Scroll control pattern"
 ms.assetid: 73d64242-6cbb-424c-92dd-dc69530b7899
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 23
 author: "Xansky"
 ms.author: "mhopkins"

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "styles [WPF], DataGrid"
   - "parts [WPF], DataGrid"
 ms.assetid: 9cb31d63-f148-4d25-b079-816e73f988c7
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

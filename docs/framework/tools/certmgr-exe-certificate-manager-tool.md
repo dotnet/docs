@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "CTLs"
   - "certificate revocation lists"
 ms.assetid: 7e953b43-1374-4bbc-814f-53ca1b6b52bb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -47,7 +45,6 @@ The Certificate Manager tool (Certmgr.exe) manages certificates, certificate tru
 ## Syntax  
   
 ```  
-  
       certmgr [/add | /del | /put] [options]  
 [/s[/r registryLocation]] [sourceStorename]  
 [/s[/r registryLocation]] [destinationStorename]  

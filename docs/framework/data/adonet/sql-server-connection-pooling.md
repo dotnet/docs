@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 7e51d44e-7c4e-4040-9332-f0190fe36f07
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 11
 author: "JennieHubbard"
 ms.author: "jhubbard"

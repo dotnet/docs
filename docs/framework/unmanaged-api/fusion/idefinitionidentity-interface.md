@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IDefinitionIdentity interface [.NET Framework fusion]"
 ms.assetid: ce5ba888-5fbe-4efd-91cf-f0ff94d8428b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

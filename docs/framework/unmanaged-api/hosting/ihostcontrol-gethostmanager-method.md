@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetHostManager method [.NET Framework hosting]"
   - "IHostControl::GetHostManager method [.NET Framework hosting]"
 ms.assetid: 0fa34bca-ed18-4626-9e78-d33684d18edb
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 19

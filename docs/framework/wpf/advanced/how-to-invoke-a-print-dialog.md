@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "invoking print dialogs"
   - "print dialogs, invoking"
 ms.assetid: e3a2c84c-74fe-45a4-8501-5813f9dbfed2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

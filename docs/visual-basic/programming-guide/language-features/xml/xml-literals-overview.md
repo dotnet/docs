@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "LINQ to XML [Visual Basic], XML literals"
   - "literals [Visual Basic], XML"
 ms.assetid: 37987c15-4ab8-471b-bd45-399816bfb57f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

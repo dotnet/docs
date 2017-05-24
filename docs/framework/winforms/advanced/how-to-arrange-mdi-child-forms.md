@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "child forms, arranging"
   - "MDI, arranging child forms"
 ms.assetid: a0786378-3206-4ccc-898e-7d3b38cc5089
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -37,7 +35,6 @@ Often, applications will have menu commands for actions such as Tile, Cascade, a
     Protected Sub CascadeWindows_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)  
        Me.LayoutMdi(System.Windows.Forms.MdiLayout.Cascade)  
     End Sub  
-  
     ```  
   
     ```csharp  

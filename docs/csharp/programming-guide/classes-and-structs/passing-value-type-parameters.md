@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "method parameters [C#], value types"
   - "parameters [C#], value"
 ms.assetid: 193ab86f-5f9b-4359-ac29-7cdf8afad3a6
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

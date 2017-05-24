@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "ListView controls, CheckBox controls"
   - "CheckBox control, ListView control"
 ms.assetid: f6d66c7f-906c-4f65-a55a-0ede9d00e26a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "MDI, activating forms"
   - "MDI, locating focus"
 ms.assetid: 33880ec3-0207-4c2b-a616-ff140443cc0f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -60,7 +58,6 @@ On occasion, you will want to provide a command that operates on the control tha
           End If  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -89,7 +86,6 @@ On occasion, you will want to provide a command that operates on the control tha
           }  
        }  
     }  
-  
     ```  
   
 ## See Also  

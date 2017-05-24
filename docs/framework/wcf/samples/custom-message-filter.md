@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 98dd0af8-fce6-4255-ac32-42eb547eea67
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -48,7 +46,6 @@ class MatchNoEAddressFilter : MessageFilter
   
 ```  
 public class FilteringEndpointBehaviorExtension : BehaviorExtensionElement  
-  
 ```  
   
  Variation 1 matches only addresses that contain an 'e' (but that have any Action) whereas Variation 2 matches only addresses that lack an 'e':  
@@ -60,7 +57,6 @@ if (Variation == 1)
 else  
     return new FilteringEndpointBehavior(  
         new MatchNoEAddressFilter(), new MatchAllMessageFilter());  
-  
 ```  
   
  In the configuration file, the service registers the new behavior:  
@@ -84,7 +80,6 @@ else
         <filteringEndpointBehavior variation="2" />  
     </behavior>  
 </endpointBehaviors>  
-  
 ```  
   
  Finally, the service's endpoint references one of the `behaviorConfigurations`:  
@@ -96,7 +91,6 @@ else
         binding="wsHttpBinding"  
         contract="Microsoft.ServiceModel.Samples.IHello"   
         behaviorConfiguration="endpoint2" />  
-  
 ```  
   
  The implementation of the client application is straightforward; it creates two channels to the service's URI (by passing in that value as the second (`via`) parameter to <xref:System.ServiceModel.Channels.IChannelFactory%601.CreateChannel%28System.ServiceModel.EndpointAddress%29> and sends a single message on each channel, but it uses different endpoint addresses for each. As a result, the outbound messages from the client have different To designations, and the server responds accordingly, as demonstrated by the client's output:  
@@ -118,7 +112,6 @@ Hello
           binding="wsHttpBinding"  
           contract="Microsoft.ServiceModel.Samples.IHello"   
           behaviorConfiguration="endpoint1" />  
-  
 ```  
   
 > [!IMPORTANT]

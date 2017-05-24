@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "TableLayoutPanel control [Windows Forms], walkthroughs"
   - "Windows Forms controls, arranging"
 ms.assetid: d474885e-12cc-4ab7-b997-2a23a643049b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent

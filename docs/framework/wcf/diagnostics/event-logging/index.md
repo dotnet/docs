@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "event logging [WCF]"
 ms.assetid: aac0530d-f44c-45a1-bada-e30e0677b41f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "Erikre"
 ms.author: "erikre"

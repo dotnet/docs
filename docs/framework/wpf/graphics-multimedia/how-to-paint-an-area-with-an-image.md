@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "painting, with images"
   - "brushes, painting with images"
 ms.assetid: 3432c533-1fc7-492d-94ee-0b13d60125ae
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

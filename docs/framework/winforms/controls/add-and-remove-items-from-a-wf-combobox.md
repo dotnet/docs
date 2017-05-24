@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "combo boxes, removing items"
   - "CheckedListBox control [Windows Forms], adding and removing items"
 ms.assetid: 7224c8d2-4118-443e-ae1e-d7c17d1e69ee
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -36,12 +34,10 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
     ```vb  
     ComboBox1.Items.Add("Tokyo")  
-  
     ```  
   
     ```csharp  
     comboBox1.Items.Add("Tokyo");  
-  
     ```  
   
     ```cpp  
@@ -54,12 +50,10 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
     ```vb  
     CheckedListBox1.Items.Insert(0, "Copenhagen")  
-  
     ```  
   
     ```csharp  
     checkedListBox1.Items.Insert(0, "Copenhagen");  
-  
     ```  
   
     ```cpp  
@@ -77,7 +71,6 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
        ItemObject(i) = "Item" & i  
     Next i  
     ListBox1.Items.AddRange(ItemObject)  
-  
     ```  
   
     ```csharp  
@@ -87,7 +80,6 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
        ItemObject[i] = "Item" + i;  
     }  
     listBox1.Items.AddRange(ItemObject);  
-  
     ```  
   
     ```cpp  
@@ -112,7 +104,6 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
     ComboBox1.Items.Remove(ComboBox1.SelectedItem)  
     ' To remove "Tokyo" item:  
     ComboBox1.Items.Remove("Tokyo")  
-  
     ```  
   
     ```csharp  
@@ -122,7 +113,6 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
     comboBox1.Items.Remove(comboBox1.SelectedItem);  
     // To remove "Tokyo" item:  
     comboBox1.Items.Remove("Tokyo");  
-  
     ```  
   
     ```cpp  
@@ -140,12 +130,10 @@ Items can be added to a Windows Forms combo box, list box, or checked list box i
   
     ```vb  
     ListBox1.Items.Clear()  
-  
     ```  
   
     ```csharp  
     listBox1.Items.Clear();  
-  
     ```  
   
     ```cpp  

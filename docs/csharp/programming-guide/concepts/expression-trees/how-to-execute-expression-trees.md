@@ -12,8 +12,6 @@ ms.topic: "get-started-article"
 dev_langs: 
   - "CSharp"
 ms.assetid: b8c40db5-2464-4bb9-9001-8c2bc7f006c5
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"

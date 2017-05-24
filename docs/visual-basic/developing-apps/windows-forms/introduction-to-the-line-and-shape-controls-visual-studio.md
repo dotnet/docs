@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "lines, drawing"
   - "shapes, drawing"
 ms.assetid: 5c4e8b1a-0733-4020-af6c-f582f4026728
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "C# language, versioning"
   - "C# language, override and new"
 ms.assetid: 88247d07-bd0d-49e9-a619-45ccbbfdf0c5
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "INotifyPropertyChanged interface, using with BindingSource"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 7fa2cf51-c09f-4375-adf0-e36c5617f099
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

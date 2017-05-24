@@ -14,8 +14,6 @@ dev_langs:
   - "C++"
   - "jsharp"
 ms.assetid: 450e350b-6a68-4634-a2a5-33f4dc33baf0
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -187,7 +185,6 @@ public class Sample
  **Output**  
   
 ```  
-  
 <?xml version='1.0'?><!--This is a sample XML document --><!DOCTYPE Items [<!ENTITY number "123">]<Items><Item>Test with an entity: 123</Item><Item>test with a child element <more> stuff</Item><Item>test with a CDATA section <![CDATA[<456>]]> def</Item><Item>Test with a char entity: A</Item><--Fourteen chars in this element.--><Item>1234567890ABCD</Item></Items>  
 ```  
   

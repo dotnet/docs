@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: c922b7d4-44e5-45e4-aef3-cc9c35a0be80
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Gets the name of a variable.
 ## Syntax  
   
 ```  
-  
 HRESULT GetName(  
    [in] ULONG32 cchName,   
    [out] ULONG32 *pcchName,   
    [out, size_is(cchName), length_is(*pcchName)] WCHAR szName[]  
 );  
-  
 ```  
   
 #### Parameters  

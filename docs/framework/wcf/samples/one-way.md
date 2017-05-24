@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 74e3e03d-cd15-4191-a6a5-1efa2dcb9e73
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 26
 author: "Erikre"
 ms.author: "erikre"
@@ -38,7 +36,6 @@ public interface IOneWayCalculator
     [OperationContract(IsOneWay = true)]  
     void Divide(double n1, double n2);  
 }  
-  
 ```  
   
  To demonstrate that the client does not wait for the service operations to complete, the service code in this sample implements a five-second delay, as shown in the following sample code:  
@@ -59,7 +56,6 @@ public class CalculatorService : IOneWayCalculator
     }  
     ...  
 }  
-  
 ```  
   
  When the client calls the service, the call returns without waiting for the service operation to complete.  
@@ -75,7 +71,6 @@ Multiply(9,81.25)
 Divide(22,7)  
   
 Press <ENTER> to terminate client.  
-  
 ```  
   
  The following service output is shown:  
@@ -92,7 +87,6 @@ Processing Add(100,15.99) - result: 115.99
 Processing Subtract(145,76.54) - result: 68.46  
 Processing Multiply(9,81.25) - result: 731.25  
 Processing Divide(22,7) - result: 3.14285714285714  
-  
 ```  
   
 > [!NOTE]

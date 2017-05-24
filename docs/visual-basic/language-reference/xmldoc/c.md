@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "c XML tag"
   - "<c> XML tag"
 ms.assetid: 36ad5d1b-11f7-4012-8932-41962ac327d1
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

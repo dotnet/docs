@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "reflection,partial trust"
   - "link demands"
 ms.assetid: 42d9dc2a-8fcc-4ff3-b002-4ff260ef3dc5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "constructors [C#], about constructors"
 ms.assetid: 464253b2-fd5d-469a-836d-df0fdf2a43f7
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 26
 author: "BillWagner"
 ms.author: "wiwagn"

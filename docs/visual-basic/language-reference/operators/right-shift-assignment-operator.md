@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "compound assignment statements"
   - ">>= operator [Visual Basic]"
 ms.assetid: 2bcd9abb-7a8c-4229-b75d-8816ff1dc700
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ Performs an arithmetic right shift on the value of a variable or property and as
 ## Syntax  
   
 ```  
-  
 variableorproperty >>= amount  
 ```  
   

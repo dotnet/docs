@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "printing"
   - "print system management"
 ms.assetid: 5f3d391a-4afd-49ee-ad99-ceb737c0c8a8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

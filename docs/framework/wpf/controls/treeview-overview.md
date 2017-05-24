@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "TreeView control, about TreeView control"
   - "Control class, TreeView"
 ms.assetid: 62212512-5a5c-4864-949e-b6a6a3a52c02
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent

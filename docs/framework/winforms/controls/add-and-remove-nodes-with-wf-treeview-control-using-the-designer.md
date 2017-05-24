@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "tree nodes in TreeView control"
   - "TreeView control [Windows Forms], adding nodes"
 ms.assetid: 35bf1750-045e-4ec5-97cb-b47b0dbdaa2c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

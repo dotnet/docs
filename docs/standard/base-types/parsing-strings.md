@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Parse method"
   - "parsing strings"
 ms.assetid: 5e758b41-db93-456b-8999-99b7304b090d
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

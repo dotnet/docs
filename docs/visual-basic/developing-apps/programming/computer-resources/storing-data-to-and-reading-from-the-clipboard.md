@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "data [Visual Basic], Clipboard"
   - "reading data, from Clipboard"
 ms.assetid: f690119a-4378-4f7d-b20e-d9377ef49496
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

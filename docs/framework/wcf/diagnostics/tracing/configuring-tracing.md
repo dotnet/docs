@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tracing [WCF]"
 ms.assetid: 82922010-e8b3-40eb-98c4-10fc05c6d65d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 53
 author: "Erikre"
 ms.author: "erikre"

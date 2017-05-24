@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 208e54ef-4741-4ec5-89d6-6ff700863cb0
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Returns the negative of the value of a numeric expression.
 ## Syntax  
   
 ```  
-  
 - expression  
 ```  
   

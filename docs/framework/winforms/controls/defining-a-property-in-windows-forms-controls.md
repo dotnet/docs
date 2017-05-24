@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "properties [Windows Forms], defining in code"
   - "custom controls [Windows Forms], defining properties in code"
 ms.assetid: c2eb8277-a842-4d99-89a9-647b901a0434
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -67,7 +65,6 @@ Public Class FlashTrackBar
    End Property  
    ...  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -114,7 +111,6 @@ Description("The current value of the track bar.  You can enter an actual value 
 Public ReadOnly Property Value() As Integer  
 ...  
 End Property  
-  
 ```  
   
 ```csharp  

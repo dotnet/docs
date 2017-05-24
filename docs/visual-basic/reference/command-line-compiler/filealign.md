@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "/filealign compiler option [Visual Basic]"
   - "filealign compiler option [Visual Basic]"
 ms.assetid: cc61ec3d-ad38-4b28-9659-099d73cad099
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

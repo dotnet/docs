@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: f5fddeb6-b82e-4ebb-b432-849ce8513c77
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,11 +23,9 @@ Returns the container assembly of this `ICorDebugAssembly3` object.
 ## Syntax  
   
 ```  
-  
 HRESULT GetContainerAssembly(  
     ICorDebugAssembly **ppAssembly  
 );  
-  
 ```  
   
 #### Parameters  

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 869c05e7-4ebe-467d-95ab-c8f8de4e6b9e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -29,7 +27,6 @@ Defines the security capabilities of the [\<wsDualHttpBinding>](../../../../../d
 ## Syntax  
   
 ```  
-  
 <security mode="Message/None">  
    <message  
       algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  

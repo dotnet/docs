@@ -17,8 +17,6 @@ dev_langs:
 helpviewer_keywords: 
   - "BC42110"
 ms.assetid: ef4442eb-08d1-434f-a03b-4aa2ed4e4414
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -61,7 +59,6 @@ Class Customer
   
     End Sub  
 End Class  
-  
 ```  
   
  By default, this message is a warning. For information about how to hide warnings or how to treat warnings as errors, see [Configuring Warnings in Visual Basic](https://docs.microsoft.com/visualstudio/ide/configuring-warnings-in-visual-basic).  

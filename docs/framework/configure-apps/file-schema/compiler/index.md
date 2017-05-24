@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "language providers, settings schema"
   - "compiler configuration settings"
 ms.assetid: c020b139-8699-4f0d-9ac9-70d0c5b2a8c8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"

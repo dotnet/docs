@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 8300e6d2-875b-481e-9ef4-e1e7c12d46fa
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Determines whether a specific character `String` matches a specified pattern.
 ## Syntax  
   
 ```  
-  
 match [NOT] LIKE pattern [ESCAPE escape]  
 ```  
   

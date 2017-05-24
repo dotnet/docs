@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "foreground threads"
   - "background threads"
 ms.assetid: cfe0d632-dd35-47e0-91ad-f742a444005e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

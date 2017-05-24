@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "SetNonAssemblyFlags method"
 ms.assetid: f8ba6fc8-f5aa-4066-ac96-56332758f5ec
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

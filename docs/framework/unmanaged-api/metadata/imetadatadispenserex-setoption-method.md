@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataDispenserEx::SetOption method [.NET Framework metadata]"
   - "SetOption method [.NET Framework metadata]"
 ms.assetid: 9f1c7ccd-7fb2-41d8-aa00-24b823376527
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 20

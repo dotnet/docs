@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fc54065c-518e-4146-b24a-0fe00038bfa7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 41
 author: "Erikre"
 ms.author: "erikre"
@@ -124,7 +122,6 @@ public static void Main()
     <!-- Use appSetting to configure the MSMQ queue name. -->  
     <add key="queueName" value=".\private$\Orders" />  
 </appSettings>  
-  
 ```  
   
 > [!NOTE]

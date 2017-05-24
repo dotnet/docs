@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "securing application [WCF Data Services]"
   - "WCF Data Services, security"
 ms.assetid: 99fc2baa-a040-4549-bc4d-f683d60298af
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d6aa8474-7bde-48f7-949d-20dc38a1625b
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -24,7 +22,6 @@ After you create a <xref:System.Data.DataTable> and define its structure using c
   
 ```vb  
 Dim workRow As DataRow = workTable.NewRow()  
-  
 ```  
   
 ```csharp  
@@ -36,7 +33,6 @@ DataRow workRow = workTable.NewRow();
 ```vb  
 workRow("CustLName") = "Smith"  
 workRow(1) = "Smith"  
-  
 ```  
   
 ```csharp  
@@ -48,7 +44,6 @@ workRow[1] = "Smith";
   
 ```vb  
 workTable.Rows.Add(workRow)  
-  
 ```  
   
 ```csharp  
@@ -59,7 +54,6 @@ workTable.Rows.Add(workRow);
   
 ```vb  
 workTable.Rows.Add(new Object() {1, "Smith"})  
-  
 ```  
   
 ```csharp  
@@ -80,7 +74,6 @@ For i = 0 To 9
   workRow(1) = "CustName" & I.ToString()  
   workTable.Rows.Add(workRow)  
 Next  
-  
 ```  
   
 ```csharp  

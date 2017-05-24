@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 50710506-e28f-45dd-ab7e-bff6f44173db
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "Erikre"
 ms.author: "erikre"
@@ -35,7 +33,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <add issuerAddress="string"  
      behaviorConfiguraton="string" />  
 ```  

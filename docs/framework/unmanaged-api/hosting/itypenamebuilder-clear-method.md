@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Clear method [.NET Framework hosting]"
   - "ITypeNameBuilder::Clear method [.NET Framework hosting]"
 ms.assetid: 18d54280-46af-479f-8d84-5ab64f8b23b9
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

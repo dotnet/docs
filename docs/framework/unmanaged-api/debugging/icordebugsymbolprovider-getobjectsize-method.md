@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 3c564396-ac64-4ef3-b4f6-df96f1d46fc7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Returns the object size for an object based on its typespec signature.
 ## Syntax  
   
 ```  
-  
 HRESULT GetObjectSize(  
    [in] ULONG32 cbSignature,  
    [in, size_is(cbSignature)]  BYTE typeSig[],  
    [out] ULONG32 *pObjectSize  
 );  
-  
 ```  
   
 #### Parameters  

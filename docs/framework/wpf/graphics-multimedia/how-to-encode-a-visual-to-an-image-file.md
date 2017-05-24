@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "encoding image formats"
   - "visuals, encoding to an image file"
 ms.assetid: 2036385b-ea47-4d54-8027-5797f52c8149
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICeeFileGen class [.NET Framework hosting]"
 ms.assetid: 90368606-506e-40df-be1f-8d595159203f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

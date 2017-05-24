@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "reusing commonly defined objects"
   - "XAML, reusing resources"
 ms.assetid: 91580b89-a0a8-4889-aecb-fddf8e63175f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent

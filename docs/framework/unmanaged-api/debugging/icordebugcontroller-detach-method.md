@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Detach method, ICorDebugController interface [.NET Framework debugging]"
   - "ICorDebugController::Detach method [.NET Framework debugging]"
 ms.assetid: 06fae364-f2c6-4a50-aa7e-3da9f2684dc3
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

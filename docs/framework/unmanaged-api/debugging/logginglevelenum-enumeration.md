@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "LoggingLevelEnum enumeration [.NET Framework debugging]"
 ms.assetid: 09daac08-005a-46b2-beab-408d0820c5e5
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

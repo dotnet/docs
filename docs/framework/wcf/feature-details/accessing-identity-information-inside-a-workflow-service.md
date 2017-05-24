@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0b832127-b35b-468e-a45f-321381170cbc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -54,7 +52,6 @@ To access identity information inside a workflow service, you must implement the
           }  
         }  
     }  
-  
     ```  
   
      This code uses the <xref:System.ServiceModel.OperationContext> passed into the method to access identity information.  
@@ -73,7 +70,6 @@ To access identity information inside a workflow service, you must implement the
         Variable<int> currentIndex;  
         CompletionCallback onChildComplete;  
     }  
-  
     ```  
   
 3.  Implement the constructor  
@@ -85,7 +81,6 @@ To access identity information inside a workflow service, you must implement the
         this.variables = new Collection<Variable>();  
         this.currentIndex = new Variable<int>();  
     }  
-  
     ```  
   
 4.  Implement the `Activities` and `Variables` properties.  
@@ -100,7 +95,6 @@ To access identity information inside a workflow service, you must implement the
     {  
         get { return this.variables; }  
     }  
-  
     ```  
   
 5.  Override <xref:System.Activities.NativeActivity.CacheMetadata%2A>  
@@ -113,7 +107,6 @@ To access identity information inside a workflow service, you must implement the
         //add the private implementation variable: currentIndex   
         metadata.AddImplementationVariable(this.currentIndex);  
     }  
-  
     ```  
   
 6.  Override <xref:System.Activities.NativeActivity.Execute%2A>  
@@ -150,7 +143,6 @@ To access identity information inside a workflow service, you must implement the
        //increment the currentIndex  
        this.currentIndex.Set(context, ++currentActivityIndex);  
     }  
-  
     ```  
   
 ### Implement the workflow service  
@@ -165,7 +157,6 @@ To access identity information inside a workflow service, you must implement the
        const string addr = "http://localhost:8080/Service";  
        static XName contract = XName.Get("IService", "http://tempuri.org");  
     }  
-  
     ```  
   
 3.  Add a static method called `GetWorkflowService` that creates the workflow service.  
@@ -205,7 +196,6 @@ To access identity information inside a workflow service, you must implement the
           }  
        };  
      }  
-  
     ```  
   
 4.  In the existing `Main` method, host the workflow service.  
@@ -227,7 +217,6 @@ To access identity information inside a workflow service, you must implement the
           host.Close();  
        }  
     }  
-  
     ```  
   
 ### Implement a workflow client  
@@ -294,7 +283,6 @@ To access identity information inside a workflow service, you must implement the
           };  
        }  
     }  
-  
     ```  
   
 4.  Add the following hosting code to the `Main()` method.  
@@ -308,14 +296,12 @@ To access identity information inside a workflow service, you must implement the
        Console.WriteLine("Press [ENTER] to exit");  
        Console.ReadLine();  
     }  
-  
     ```  
   
 ## Example  
  Here is a complete listing of the source code used in this topic.  
   
 ```  
-  
 // AccessIdentityCallback.cs  
 //----------------------------------------------------------------  
 // Copyright (c) Microsoft Corporation.  All rights reserved.  
@@ -353,11 +339,9 @@ namespace Microsoft.Samples.AccessingOperationContext.Service
         }  
     }  
 }  
-  
 ```  
   
 ```  
-  
 // AccessIdentityScope.cs  
 //----------------------------------------------------------------  
 // Copyright (c) Microsoft Corporation.  All rights reserved.  
@@ -440,11 +424,9 @@ namespace Microsoft.Samples.AccessingOperationContext.Service
         }  
     }  
 }  
-  
 ```  
   
 ```  
-  
 // Service.cs  
 //----------------------------------------------------------------  
 // Copyright (c) Microsoft Corporation.  All rights reserved.  
@@ -517,11 +499,9 @@ namespace Microsoft.Samples.AccessingOperationContext.Service
         }  
     }  
 }  
-  
 ```  
   
 ```  
-  
 // client.cs   
 //----------------------------------------------------------------  
 // Copyright (c) Microsoft Corporation.  All rights reserved.  
@@ -597,7 +577,6 @@ namespace Microsoft.Samples.AccessingOperationContext.Client
         }  
     }  
 }  
-  
 ```  
   
 ## See Also  

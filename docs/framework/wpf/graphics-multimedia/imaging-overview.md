@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "decoding image formats"
   - "rotating images"
 ms.assetid: 72aad87a-e6f3-4937-94cd-a18b7766e990
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 32
 author: dotnet-bot
 ms.author: dotnetcontent

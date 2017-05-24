@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "application configuration [.NET Framework]"
   - "assemblies [.NET Framework], binding redirection"
 ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 26
 author: "mcleblanc"
 ms.author: "markl"

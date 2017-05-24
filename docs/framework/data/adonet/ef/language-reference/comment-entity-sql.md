@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 5d9de735-2099-47f1-b7e7-60856f494924
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ manager: "jhubbard"
 ## Syntax  
   
 ```  
-  
 -- text_of_comment  
 ```  
   

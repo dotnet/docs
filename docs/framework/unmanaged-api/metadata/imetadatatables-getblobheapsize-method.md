@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetBlobHeapSize method [.NET Framework metadata]"
   - "IMetaDataTables::GetBlobHeapSize method [.NET Framework metadata]"
 ms.assetid: 6330a9ee-8cd5-4299-86f1-b4de2c701a0d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

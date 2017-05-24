@@ -16,8 +16,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IsNot operator"
 ms.assetid: 8dd2bcdb-0166-48a2-9094-60dfb448f36c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -43,7 +41,6 @@ Compares two object reference variables.
 ## Syntax  
   
 ```  
-  
 result = object1 IsNot object2  
 ```  
   

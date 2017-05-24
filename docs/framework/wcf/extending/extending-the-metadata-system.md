@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "extending metadata [WCF]"
 ms.assetid: 8c6b3b00-61b8-4589-8fa5-546cc33719bf
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

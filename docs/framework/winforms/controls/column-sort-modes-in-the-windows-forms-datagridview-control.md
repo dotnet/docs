@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "data grids, sort modes"
   - "DataGridView control [Windows Forms], sort mode"
 ms.assetid: 43715887-2df9-4da7-bcf1-b9c7c842b2bf
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

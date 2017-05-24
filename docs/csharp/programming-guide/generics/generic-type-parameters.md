@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "generics [C#], type parameters"
   - "type parameters [C#]"
 ms.assetid: a03b0ab2-0606-4b41-b7bf-e64d5bb4d18f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"

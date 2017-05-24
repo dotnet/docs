@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "code XML tag"
   - "<code> XML tag"
 ms.assetid: 925e5342-be05-45f2-bf66-7398bbd6710e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

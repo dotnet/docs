@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cc17dd47-b9ad-451c-a362-e36e0aac7ba0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ This topic covers how a client can access a service operation asynchronously whe
   
     ```  
     svcutil /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples http://localhost:8000/servicemodelsamples/service/mex /a  
-  
     ```  
   
      This generates an asynchronous client version of the service contract for the operation.  

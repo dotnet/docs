@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "global applications, naming guidelines"
   - "international applications, naming guidelines"
 ms.assetid: 8b0e97f3-7877-44fd-bc76-e05d36d5d79c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

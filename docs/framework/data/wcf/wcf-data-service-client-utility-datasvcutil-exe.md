@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "WCF Data Services, client library"
   - "WCF Data Services, consuming"
 ms.assetid: 9d0af606-929b-4c03-b307-3ef5f705afce
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -37,7 +35,6 @@ DataSvcUtil.exe is a command-line tool provided by [!INCLUDE[ssAstoria](../../..
 ## Syntax  
   
 ```  
-  
 datasvcutil /out:file [/in:file | /uri:serviceuri] [/dataservicecollection] [/language:devlang] [/nologo] [/version:ver] [/help]  
 ```  
   

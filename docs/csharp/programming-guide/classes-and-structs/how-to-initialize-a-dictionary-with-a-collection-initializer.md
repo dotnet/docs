@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "collection initializers [C#], with Dictionary"
 ms.assetid: 25283922-f8ee-40dc-a639-fac30804ec71
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

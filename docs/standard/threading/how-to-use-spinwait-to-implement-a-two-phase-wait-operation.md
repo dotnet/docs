@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "SpinWait, how to synchronize two-phase wait"
 ms.assetid: b2ac4e4a-051a-4f65-b4b9-f8e103aff195
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

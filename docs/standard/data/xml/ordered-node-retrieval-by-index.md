@@ -14,8 +14,6 @@ dev_langs:
   - "C++"
   - "jsharp"
 ms.assetid: 5412c90f-2703-4aa8-a9c4-1b8a35183c37
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
@@ -46,7 +44,6 @@ Dim doc as XmlDocument = new XmlDocument()
         ' Display all book titles in the Node List.  
         Console.WriteLine(elemList.ItemOf(i).InnerXml)  
     next  
-  
 ```  
   
 ```csharp  

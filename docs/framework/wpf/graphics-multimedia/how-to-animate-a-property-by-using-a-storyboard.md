@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "animation, Storyboards"
   - "Storyboards, animation"
 ms.assetid: f4a314e9-1da2-4367-85fc-1232487efa7a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

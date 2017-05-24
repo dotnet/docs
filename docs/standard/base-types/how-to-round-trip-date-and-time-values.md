@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "time [.NET Framework], round-trip values"
   - "formatting strings [.NET Framework], round-trip values"
 ms.assetid: b609b277-edc6-4c74-b03e-ea73324ecbdb
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

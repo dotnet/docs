@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "classes, ScaleTransform"
   - "ScaleTransform class"
 ms.assetid: 18158d94-bbe7-4f6a-814e-84d27fa748bf
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

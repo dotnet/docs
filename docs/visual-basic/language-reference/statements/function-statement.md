@@ -38,8 +38,6 @@ helpviewer_keywords:
   - "End keyword, Function statements"
   - "Handles keyword, Function statements"
 ms.assetid: a4497077-0f46-4ede-a27f-9e8670df52b9
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 62
 author: dotnet-bot
 ms.author: dotnetcontent

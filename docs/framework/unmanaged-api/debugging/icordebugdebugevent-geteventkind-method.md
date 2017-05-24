@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: c37aaceb-c948-46bd-a943-08be4cbb76f4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,11 +23,9 @@ Indicates what kind of event this `ICorDebugDebugEvent` object represents.
 ## Syntax  
   
 ```  
-  
 HRESULT GetEventKind(  
     [out]CorDebugDebugEventKind *pDebugEventKind  
 );  
-  
 ```  
   
 #### Parameters  

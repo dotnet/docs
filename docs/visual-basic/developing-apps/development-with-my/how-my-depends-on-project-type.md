@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "_MYTYPE"
 ms.assetid: c188b38e-bd9d-4121-9983-41ea6a94d28e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

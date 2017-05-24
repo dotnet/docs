@@ -13,8 +13,6 @@ dev_langs:
 helpviewer_keywords: 
   - "partial types [C#]"
 ms.assetid: 27320743-a22e-4c7b-b0b3-53afe3607334
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

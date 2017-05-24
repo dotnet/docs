@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "files, manipulating"
   - "File object"
 ms.assetid: 4b721769-3e45-4be7-b7fe-b08dc4141b44
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

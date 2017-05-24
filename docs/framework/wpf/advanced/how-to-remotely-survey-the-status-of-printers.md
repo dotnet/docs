@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "remotely surveying printer status"
   - "status, printers, surveying remotely"
 ms.assetid: d6324759-8292-4c23-9584-9c708887dc94
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

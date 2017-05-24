@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: c8c1d916-8d1a-4f82-8128-9fd3732383fc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -27,7 +25,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```cpp  
-  
 typedef struct _COR_PRF_ASSEMBLY_REFERENCE_INFO {  
     void* pbPublicKeyOrToken;  
     ULONG cbPublicKeyOrToken;  
@@ -37,7 +34,6 @@ typedef struct _COR_PRF_ASSEMBLY_REFERENCE_INFO {
     ULONG cbHashValue;  
     DWORD dwAssemblyRefFlags;  
 } COR_PRF_EX_CLAUSE_INFO;  
-  
 ```  
   
 ## Members  

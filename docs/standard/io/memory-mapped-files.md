@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "memory-mapped files"
   - "inter-process communiation"
 ms.assetid: a483d1b5-64aa-45b6-86ef-11b859f7f02e
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 24
 author: "mairaw"
 ms.author: "mairaw"

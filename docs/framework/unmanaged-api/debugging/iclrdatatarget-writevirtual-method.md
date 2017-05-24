@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRDataTarget::WriteVirtual method [.NET Framework debugging]"
   - "WriteVirtual method [.NET Framework debugging]"
 ms.assetid: d627e8b7-a605-40ac-b9bb-da9a3f1b66d9
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "EnumMethodSemantics method [.NET Framework metadata]"
   - "IMetaDataImport::EnumMethodSemantics method [.NET Framework metadata]"
 ms.assetid: e7e3c630-9691-46d6-94df-b5593a7bb08a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

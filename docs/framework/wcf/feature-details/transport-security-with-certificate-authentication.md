@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3d726b71-4d8b-4581-a3bb-02b9af51d11b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -65,7 +63,6 @@ This topic discusses using X.509 certificates for server and client authenticati
     </behaviors>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## Configure the Client  
@@ -101,7 +98,6 @@ cc.ClientCredentials.ClientCertificate.SetCertificate(
 Console.WriteLine(cc.Add(100, 1111));  
 //...  
 cc.Close();  
-  
 ```  
   
  Alternatively you can configure the client in an App.config file as shown in the following example:  
@@ -143,7 +139,6 @@ cc.Close();
   </system.serviceModel>  
   
 <startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup></configuration>  
-  
 ```  
   
 ## See Also  

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Matrix properties, animating with key frames"
   - "key frames, animating Matrix properties with"
 ms.assetid: b851a4c7-ecb1-420e-9203-83e7afd037fd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

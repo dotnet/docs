@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "status bars, setting panel size"
   - "panels, setting size in status bars"
 ms.assetid: a01bee43-d9eb-4954-84e6-45a93532d08d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -43,7 +41,6 @@ manager: "wpickett"
     ' Enable the StatusBar control to display panels.  
        StatusBar1.ShowPanels = True  
         End Sub  
-  
     ```  
   
     ```csharp  
@@ -56,7 +53,6 @@ manager: "wpickett"
        statusBar1.Panels[0].Width = 200;  
        statusBar1.ShowPanels = true;  
     }  
-  
     ```  
   
     ```cpp  

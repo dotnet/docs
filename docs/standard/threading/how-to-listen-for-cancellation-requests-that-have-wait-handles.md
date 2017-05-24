@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "cancellation, waiting with wait handles"
 ms.assetid: 6e2aa49b-fc84-4bcf-962b-17db98b7edcb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: a9ee1b71-5bec-4736-a1e9-448042dd7215
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -233,7 +231,6 @@ You can set up a button that you can use to cancel an async application if you d
 5.  If you don’t cancel the program, it produces the following output.  
   
     ```  
-  
     Length of the downloaded string: 35939.  
   
     Length of the downloaded string: 237682.  
@@ -249,7 +246,6 @@ You can set up a button that you can use to cancel an async application if you d
     Length of the downloaded string: 145790.  
   
     Downloads complete.  
-  
     ```  
   
      If you choose the **Cancel** button before the downloads are complete, the output contains the lengths of the downloads that completed before the cancellation.  
@@ -262,7 +258,6 @@ You can set up a button that you can use to cancel an async application if you d
     Length of the downloaded string: 128607.  
   
     Downloads canceled.  
-  
     ```  
   
 ##  <a name="BKMK_CompleteExamples"></a> Complete Examples  

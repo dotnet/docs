@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "3-D translations, animating, with Storyboards"
   - "animation, 3-D translations, with Storyboards"
 ms.assetid: 1020e44e-e21e-49a8-be53-53cbc1910e83
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

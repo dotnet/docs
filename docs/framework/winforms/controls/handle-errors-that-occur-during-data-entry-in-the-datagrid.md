@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "data entry, error handling"
   - "error handling, data entry"
 ms.assetid: 9004e72f-fdec-4264-a37d-2c99764efc13
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

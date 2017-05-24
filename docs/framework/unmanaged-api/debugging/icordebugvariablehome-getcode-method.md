@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetCode method [.NET Framework debugging]"
   - "GetCode method, ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: ef002890-4a7b-4a5d-abbf-16c60083f794
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4
@@ -38,11 +36,9 @@ Gets the "ICorDebugCode" instance that contains this [ICorDebugVariableHome](../
 ## Syntax  
   
 ```  
-  
 HRESULT GetCode(  
     [out] ICorDebugCode **ppCode  
 );  
-  
 ```  
   
 #### Parameters  

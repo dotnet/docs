@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "RichTextBox [WPF], drag-and-drop"
   - "drag-and-drop [WPF], open a dropped file"
 ms.assetid: 6bb8bb54-f576-41db-a9a7-24102ddeb490
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataEmit::SetClassLayout method [.NET Framework metadata]"
   - "SetClassLayout method [.NET Framework metadata]"
 ms.assetid: 2576c449-388d-4434-a0e1-9f53991e11b6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

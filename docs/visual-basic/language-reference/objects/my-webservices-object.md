@@ -17,8 +17,6 @@ dev_langs:
 helpviewer_keywords: 
   - "My.WebServices object"
 ms.assetid: f188dc05-2c75-41b6-bb68-122d1c3110a2
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

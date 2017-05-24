@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Clipboard"
   - "My.Computer.Clipboard object"
 ms.assetid: 05d4ede9-1f9a-4495-87f0-77350b8d2e5d
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

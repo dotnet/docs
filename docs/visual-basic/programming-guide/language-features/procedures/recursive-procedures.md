@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "functions [Visual Basic], calling recursively"
   - "recursion"
 ms.assetid: ba1d3962-b4c3-48d3-875e-96fdb4198327
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

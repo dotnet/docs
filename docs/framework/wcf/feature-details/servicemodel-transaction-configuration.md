@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "transactions [WCF], ServiceModel configuration"
 ms.assetid: 5636067a-7fbd-4485-aaa2-8141c502acf3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

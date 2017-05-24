@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "data validation, Windows Forms"
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: a4f1d015-2969-430c-8ea2-b612d179c290
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

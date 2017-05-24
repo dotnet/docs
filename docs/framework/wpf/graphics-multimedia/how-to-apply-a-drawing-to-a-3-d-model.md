@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "drawings, applying to 3-D models"
   - "3-D models, applying drawings to"
 ms.assetid: 68357577-b7fc-446e-8be9-a8cc7df3a350
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

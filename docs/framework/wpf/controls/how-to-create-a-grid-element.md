@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Grid control, creating, grid instance"
 ms.assetid: b2f07626-9df8-43b8-8d36-492f3cb42837
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

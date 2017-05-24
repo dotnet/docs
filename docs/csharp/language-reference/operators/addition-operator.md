@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "concatenation operator [C#]"
   - "addition operator [C#]"
 ms.assetid: 93e56486-bb42-43c1-bd43-60af11e64e67
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

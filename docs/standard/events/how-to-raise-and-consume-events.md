@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "raising events"
   - "events [.NET Framework], samples"
 ms.assetid: 42afade7-3a02-4f2e-868b-95845f302f8f
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

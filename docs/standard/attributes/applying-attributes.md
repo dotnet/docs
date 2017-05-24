@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], attributes"
   - "attributes [.NET Framework], applying"
 ms.assetid: dd7604eb-9fa3-4b60-b2dd-b47739fa3148
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

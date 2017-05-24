@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], positioning"
   - "z-order"
 ms.assetid: 1acc4281-2976-4715-86f4-bda68134baaf
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -45,12 +43,10 @@ When you create a complex user interface, or work with a multiple document inter
   
     ```vb  
     txtFirstName.BringToFront()  
-  
     ```  
   
     ```csharp  
     txtFirstName.BringToFront();  
-  
     ```  
   
     ```cpp  

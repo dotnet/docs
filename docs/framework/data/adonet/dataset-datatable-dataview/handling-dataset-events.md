@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 54edefe0-bc38-419b-b486-3d8a0c356f13
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -34,7 +32,6 @@ Private Shared Sub DataSetMergeFailed(  _
   Console.WriteLine("Merge failed for table " & args.Table.TableName)  
   Console.WriteLine("Conflict = " & args.Conflict)  
 End Sub  
-  
 ```  
   
 ```csharp  

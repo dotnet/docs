@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "UsingNamespace method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::UsingNamespace method [.NET Framework debugging]"
 ms.assetid: 8d746e0a-d158-4983-88da-db0a0856bc0b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

@@ -16,8 +16,6 @@ dev_langs:
 helpviewer_keywords: 
   - "SplitContainer control [Windows Forms], about SplitContainer control"
 ms.assetid: 6de5a5f7-97a5-402d-be6d-7e2785483db5
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

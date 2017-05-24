@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetIlSection method [.NET Framework metadata]"
   - "ICeeGen::GetIlSection method [.NET Framework metadata]"
 ms.assetid: 6f2db2ca-203f-4ac3-9530-208642ca385e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

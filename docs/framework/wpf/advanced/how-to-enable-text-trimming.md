@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "documents, trimmng text"
   - "trimmng text"
 ms.assetid: dd8c9191-d2be-45fd-9fb4-3c75b65578c5
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

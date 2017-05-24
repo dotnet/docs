@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "native API reference [.NET Framework], metadata"
   - "metadata [.NET Framework], using the unmanaged API"
 ms.assetid: 10cfea92-db5e-4bcb-b301-ef029bcf77a3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

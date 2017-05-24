@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "first-chance exception notifications"
   - "exceptions, first chance notifications"
 ms.assetid: 66f002b8-a97d-4a6e-a503-2cec01689113
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

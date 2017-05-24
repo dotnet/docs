@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "properties, restoring"
   - "application-scope properties, restoring"
 ms.assetid: 55d5904a-f444-4eb5-abd3-6bc74dd14226
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

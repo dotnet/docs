@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "TranslateSigWithScope method [.NET Framework metadata]"
   - "IMetaDataEmit::TranslateSigWithScope method [.NET Framework metadata]"
 ms.assetid: 47915d33-b7bf-409e-b484-4ee1df15de22
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

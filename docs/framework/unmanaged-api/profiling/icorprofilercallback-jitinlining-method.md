@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "JITInlining method [.NET Framework profiling]"
   - "ICorProfilerCallback::JITInlining method [.NET Framework profiling]"
 ms.assetid: c2f45801-dd38-4b78-b6b7-64397dc73f83
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

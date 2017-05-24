@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "message pumping"
   - "context switching deadlocks"
 ms.assetid: 26dfaa15-9ddb-4b0a-b6da-999bba664fa6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "mairaw"
 ms.author: "mairaw"

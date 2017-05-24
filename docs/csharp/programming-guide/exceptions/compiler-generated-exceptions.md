@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "exceptions [C#], compiler-generated"
 ms.assetid: 53b52f97-b366-4ed7-b05b-9eb78096b7f9
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

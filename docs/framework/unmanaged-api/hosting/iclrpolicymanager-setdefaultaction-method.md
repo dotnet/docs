@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetDefaultAction method [.NET Framework hosting]"
   - "ICLRPolicyManager::SetDefaultAction method [.NET Framework hosting]"
 ms.assetid: f9411e7a-27df-451f-9f6c-d643d6a7a7ce
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

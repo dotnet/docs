@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "Windows Forms controls, data binding"
   - "data-bound controls, Windows Forms"
 ms.assetid: dfd7f081-8bea-4a41-86a3-86a1934828ef
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ You can bind the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.F
       ComboBox1.DataSource = DataSet1.Tables("Suppliers")  
       ComboBox1.DisplayMember = "ProductName"  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -56,7 +53,6 @@ You can bind the <xref:System.Windows.Forms.ComboBox> and <xref:System.Windows.F
       comboBox1.DataSource = dataSet1.Tables["Suppliers"];  
       comboBox1.DisplayMember = "ProductName";  
     }  
-  
     ```  
   
     > [!NOTE]

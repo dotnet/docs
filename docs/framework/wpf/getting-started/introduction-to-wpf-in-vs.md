@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "WPF, about Windows Presentation Foundation"
   - "3-D rendering [WPF]"
 ms.assetid: 582a314e-e23d-4144-b45b-acbbd5579252
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 54
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetParent method [.NET Framework metadata]"
   - "IMetaDataEmit::SetParent method [.NET Framework metadata]"
 ms.assetid: 02a02ff7-ae0e-4692-a20e-372405f23052
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

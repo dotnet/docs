@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "strong-named assemblies, delaying assembly signing"
   - "partial assembly signing"
 ms.assetid: 9d300e17-5bf1-4360-97da-2aa55efd9070
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

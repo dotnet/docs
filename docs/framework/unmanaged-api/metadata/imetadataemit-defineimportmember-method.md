@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "DefineImportMember method [.NET Framework metadata]"
   - "IMetaDataEmit::DefineImportMember method [.NET Framework metadata]"
 ms.assetid: c7dd94c6-335b-46ff-9dfe-505056db5673
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

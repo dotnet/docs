@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetManagedCopy method [.NET Framework debugging]"
   - "ICorDebugObjectValue::GetManagedCopy method [.NET Framework debugging]"
 ms.assetid: 300af43f-b3eb-4ce5-9ead-30dbfc5fbcc3
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

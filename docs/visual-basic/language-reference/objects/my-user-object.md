@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "My.User property"
   - "My.User object"
 ms.assetid: caa7462e-2149-4bdb-8850-802b80b93cbf
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "security-transparent code"
   - "security [.NET Framework], security-transparent code"
 ms.assetid: 5fd8f46d-3961-46a7-84af-2eb1f48e75cf
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 32
 author: "mairaw"
 ms.author: "mairaw"

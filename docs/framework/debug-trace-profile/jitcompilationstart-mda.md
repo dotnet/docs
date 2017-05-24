@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "JitCompilationStart MDA"
   - "managed debugging assistants (MDAs), JIT compilation"
 ms.assetid: 5ffd2857-d0ba-4342-9824-9ffe04ec135d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

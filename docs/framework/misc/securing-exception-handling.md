@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "secure coding, exception handling"
   - "exception handling, security"
 ms.assetid: 1f3da743-9742-47ff-96e6-d0dd1e9e1c19
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"
@@ -102,7 +100,6 @@ YourObject.YourMethod()
       Thread.CurrentThread.CurrentUICulture = saveCulture;  
    }  
 }  
-  
 ```  
   
 ```vb  

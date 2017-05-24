@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 354c8b4c-7d23-45c6-a7d7-3be4c2a5b772
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,7 +23,6 @@ Creates a new stack unwinder that starts unwinding from an initial context (whic
 ## Syntax  
   
 ```  
-  
 HRESULT CreateVirtualUnwinder(  
     [in] DWORD nativeThreadID,  
     [in] ULONG32 contextFlags,  
@@ -33,7 +30,6 @@ HRESULT CreateVirtualUnwinder(
     [in, size_is(cbContext)] BYTE initialContext[],  
     [out] ICorDebugVirtualUnwinder ** ppUnwinder);  
 };  
-  
 ```  
   
 #### Parameters  

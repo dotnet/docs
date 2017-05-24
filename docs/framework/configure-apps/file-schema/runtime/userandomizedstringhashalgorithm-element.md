@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "UseRandomizedStringHashAlgorithm element"
   - "<UseRandomizedStringHashAlgorithm> element"
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -81,32 +79,26 @@ Determines whether the common language runtime calculates hash codes for strings
  When you run the example without supplying a configuration file, it displays output similar to the following. Note that the hash codes for the string are identical in the two application domains.  
   
 ```  
-  
 String 'This is a string.' in domain 'PerDomain.exe': 941BCEAC  
 String 'This is a string.' in domain 'NewDomain': 941BCEAC  
-  
 ```  
   
  However, if you add the following configuration file to the example's directory and then run the example, the hash codes for the same string will differ by application domain.  
   
 ```  
-  
 <?xml version ="1.0"?>  
 <configuration>  
    <runtime>  
       <UseRandomizedStringHashAlgorithm enabled="1" />  
    </runtime>  
 </configuration>  
-  
 ```  
   
  When the configuration file is present, the example displays the following output:  
   
 ```  
-  
 String 'This is a string.' in domain 'PerDomain.exe': 5435776D  
 String 'This is a string.' in domain 'NewDomain': 75CC8236  
-  
 ```  
   
 ## See Also  

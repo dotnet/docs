@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "optimization, enabling"
   - "-optimize compiler option [Visual Basic]"
 ms.assetid: fcba4a97-3622-4b87-a891-0f77deab4998
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

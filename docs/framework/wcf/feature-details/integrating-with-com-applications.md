@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "COM [WCF]"
   - "WCF, COM integration"
 ms.assetid: c98bda3e-6779-419e-8e6d-9aa94053026d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"

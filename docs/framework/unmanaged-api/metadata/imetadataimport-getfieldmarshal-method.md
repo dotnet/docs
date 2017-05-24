@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetFieldMarshal method [.NET Framework metadata]"
   - "IMetaDataImport::GetFieldMarshal method [.NET Framework metadata]"
 ms.assetid: 4e2d88c6-8a3a-4fbe-900b-b4f4c06bf6bf
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

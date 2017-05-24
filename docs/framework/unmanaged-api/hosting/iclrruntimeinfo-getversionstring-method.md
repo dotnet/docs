@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRRuntimeInfo::GetVersionString method [.NET Framework hosting]"
   - "GetVersionString method, ICLRRuntimeInfo interface [.NET Framework hosting]"
 ms.assetid: 98b097ef-2276-4dd9-8551-b03c972e8179
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 16

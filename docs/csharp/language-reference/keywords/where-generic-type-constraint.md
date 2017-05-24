@@ -13,8 +13,6 @@ dev_langs:
 helpviewer_keywords: 
   - "where (generic type constraint) [C#]"
 ms.assetid: d7aa871b-0714-416a-bab2-96f87ada4310
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "queues [WCF], differences in operating systems"
 ms.assetid: aa809d93-d0a3-4ae6-a726-d015cca37c04
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "Erikre"
 ms.author: "erikre"

@@ -1,5 +1,5 @@
 ---
-title: "Recursive Functions: The rec Keyword (F#)"
+title: "Recursive Functions: The rec Keyword (F#) | Microsoft Docs"
 description: "Recursive Functions: The rec Keyword (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "managed debugging assistants (MDAs), cache"
   - "MemberInfo cache"
 ms.assetid: 5abdad23-1335-4744-8acb-934002c0b6fe
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

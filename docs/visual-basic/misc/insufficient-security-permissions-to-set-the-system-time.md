@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrSetLocalTimeFailure"
 ms.assetid: 6c034821-a260-4837-af1c-c11f8eba6d54
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

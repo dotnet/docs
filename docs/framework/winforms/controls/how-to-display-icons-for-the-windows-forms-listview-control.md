@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "ImageList component [Windows Forms], with ListView control"
   - "list views, displaying icons"
 ms.assetid: 9d577542-8595-429b-99e5-078770ec9d35
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "bitmap images"
   - "XAML, using a BitmapImage in"
 ms.assetid: 5a5733aa-396d-4d72-b0c3-77f8c25d9a42
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

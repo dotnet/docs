@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "defining custom types [XAML Services]"
 ms.assetid: c2667cbd-2f46-4a7f-9dfc-53696e35e8e4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: "wadepickett"
 ms.author: "wpickett"

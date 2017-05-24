@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library, unlinking dataflow blocks"
 ms.assetid: 40f0208d-4618-47f7-85cf-4913d07d2d7d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

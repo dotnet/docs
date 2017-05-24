@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "graphics, combining geometries"
   - "geometries, combining"
 ms.assetid: 54c3277c-6b6e-4b25-91be-fda0bbc706b4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugNativeFrame interface [.NET Framework debugging]"
 ms.assetid: 04819c58-7246-4b32-befb-680cf1dbc436
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

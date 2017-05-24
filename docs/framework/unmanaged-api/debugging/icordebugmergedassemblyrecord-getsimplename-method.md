@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: bc3410f6-ebca-4bca-9b45-fc38c74fa9cb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Gets the simple name of the assembly.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSimpleName(  
    [in] ULONG32 cchName,   
    [out] ULONG32 *pcchName,   
    [out, size_is(cchName), length_is(*pcchName)] WCHAR szName[]  
 );  
-  
 ```  
   
 #### Parameters  

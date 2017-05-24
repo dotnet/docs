@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Capture method [.NET Framework hosting]"
   - "IHostSecurityContext::Capture method [.NET Framework hosting]"
 ms.assetid: ae0836d0-1170-4494-bac5-d0e809df51a2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

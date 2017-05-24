@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "CreateStackWalk method [.NET Framework debugging]"
   - "ICorDebugThread3::CreateStackWalk method [.NET Framework debugging]"
 ms.assetid: c55e35d9-f9aa-4268-94b5-dce44c61acf2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "layout [Windows Forms]"
   - "Windows Forms, arranging contents"
 ms.assetid: 630c9305-9ecf-4f99-94f9-ddf06de82713
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

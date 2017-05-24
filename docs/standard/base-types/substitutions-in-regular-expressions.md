@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "constructs, substitutions"
   - "substitutions"
 ms.assetid: d1f52431-1c7d-4dc6-8792-6b988256892e
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

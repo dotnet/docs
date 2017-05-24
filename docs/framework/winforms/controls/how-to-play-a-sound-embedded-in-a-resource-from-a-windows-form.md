@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "playing sounds, from resources"
   - "SoundPlayer class, playing sounds from resources"
 ms.assetid: 7d148bb6-8a1e-47d7-a08d-35828d2e688f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "LPOVERLAPPED_COMPLETION_ROUTINE function pointer [.NET Framework hosting]"
 ms.assetid: 5fb645d9-b818-401c-8c2c-c30d86de58ba
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

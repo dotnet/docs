@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b3c4e2e2-2957-4074-ae6a-776a5ca84278
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"
@@ -28,7 +26,6 @@ A discovery proxy may expose multiple discovery endpoints using different discov
     DiscoveryOperationContextExtension doce = OperationContext.Current.Extensions.Find<DiscoveryOperationContextExtension>();  
     // Access the discovery version from the DiscoveryOperationContextExtension  
     doce.DiscoveryVersion;  
-  
     ```  
   
 ## See Also  

@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "basicHttpBinding Element"
 ms.assetid: 85cf1a4f-26c2-48c7-bda6-6c960d5d3fb3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 43
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ Represents a binding that a [!INCLUDE[indigo1](../../../../../includes/indigo1-m
 ## Syntax  
   
 ```  
-  
 <basicHttpBinding>  
    <binding   
        allowCookies="Boolean"  

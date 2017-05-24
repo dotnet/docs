@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Creating GenericPrincipal Objects"
   - "GenericIdentity Objects"
 ms.assetid: 465694cf-258b-4747-9dae-35b01a5bcdbb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

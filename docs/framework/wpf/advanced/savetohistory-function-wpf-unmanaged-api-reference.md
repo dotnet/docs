@@ -14,8 +14,6 @@ api_name:
 api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 6dd101a3-44ad-4143-b228-772156f9b8ff
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -29,11 +27,9 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 HRESULT SaveToHistory(  
    __in_ecount(1) IStream* pHistoryStream  
 )  
-  
 ```  
   
 #### Parameters  

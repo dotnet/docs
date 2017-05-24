@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c8a3e10a-8bc2-4a78-8d86-a562ba6e65fa
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Support has been added to allow for WCF services with Internationalized Domain N
     <idn enabled="All/AllExceptIntranet/None" />  
   </uri>  
 </configuration>  
-  
 ```  
   
  The \<idn> element contains the enabled attribute which can be set to one of the following values:  

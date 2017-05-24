@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "WPF, localization"
   - "Windows Presentation Foundation, localization"
 ms.assetid: e96f9764-4e3f-4d1c-bf20-3fb890118aae
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 77
 author: dotnet-bot
 ms.author: dotnetcontent

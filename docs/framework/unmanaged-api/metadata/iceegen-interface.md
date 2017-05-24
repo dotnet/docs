@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICeeGen interface [.NET Framework metadata]"
 ms.assetid: 383d20b0-efe9-4e71-8fb8-1186b2e7d0c0
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 16

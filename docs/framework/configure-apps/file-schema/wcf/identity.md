@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c1d2ae56-e231-4a07-9c3f-9f13381dc0d8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ The identity element allows a client developer to specify at design time the exp
 ## Syntax  
   
 ```  
-  
 <identity>  
     <certificate encodedValue="String"/>  
     <certificateReference findValue="String"   

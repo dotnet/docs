@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "dynamic properties"
   - "user preferences, tracking"
 ms.assetid: 0dd8bca5-a6bf-4ac4-8eec-5725d08b38dc
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "authentication [WCF], user name and password"
 ms.assetid: a5415be2-0ef3-464c-9f76-c255cb8165a4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"
@@ -66,7 +64,6 @@ This topic demonstrates how to enable a [!INCLUDE[indigo1](../../../../includes/
                 password = Console.ReadLine();             
                 return;  
             }  
-  
     ```  
   
 2.  Create an instance of the client proxy specifying the client’s credentials as shown in the following code:  

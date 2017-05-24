@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "thread-safe collections, concurrent dictionary"
 ms.assetid: 81b64b95-13f7-4532-9249-ab532f629598
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "financial functions"
   - "payment"
 ms.assetid: 474f973e-7103-42b7-aa4d-367c935e07e1
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

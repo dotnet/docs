@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 8e649648-eb9a-4380-9d74-36e62260628c
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Combines two `Boolean` expressions.
 ## Syntax  
   
 ```  
-  
 boolean_expression OR boolean_expression  
 or   
 boolean_expression || boolean_expression  

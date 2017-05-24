@@ -13,8 +13,6 @@ dev_langs:
 helpviewer_keywords: 
   - "decimal keyword [C#]"
 ms.assetid: b6522132-b5ee-4be3-ad13-3adfdb7de7a1
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -44,7 +42,6 @@ The `decimal` keyword indicates a 128-bit data type. Compared to floating-point 
  If you want a numeric real literal to be treated as `decimal`, use the suffix m or M, for example:  
   
 ```  
-  
 decimal myMoney = 300.5m;  
 ```  
   
@@ -54,14 +51,12 @@ decimal myMoney = 300.5m;
  The integral types are implicitly converted to `decimal` and the result evaluates to `decimal`. Therefore you can initialize a decimal variable using an integer literal, without the suffix, as follows:  
   
 ```  
-  
 decimal myMoney = 300;  
 ```  
   
  There is no implicit conversion between floating-point types and the `decimal` type; therefore, a cast must be used to convert between these two types. For example:  
   
 ```  
-  
       decimal myMoney = 99.9m;  
 double x = (double)myMoney;  
 myMoney = (decimal)x;  
@@ -88,7 +83,6 @@ Console.WriteLine(dec + dub);
 // You can fix the error by using explicit casting of either operand.  
 Console.WriteLine(dec + (decimal)dub);  
 Console.WriteLine((double)dec + dub);  
-  
 ```  
   
  The result is the following error:  

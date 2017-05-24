@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "ThemeDictionary markup extension"
   - "XAML, ThemeDictionary markup extension"
 ms.assetid: aa75e10b-13dd-4989-972d-51bab63a05e2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

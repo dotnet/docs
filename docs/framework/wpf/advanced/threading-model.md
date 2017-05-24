@@ -27,8 +27,6 @@ helpviewer_keywords:
   - "classes, Dispatcher"
   - "reentrancy"
 ms.assetid: 02d8fd00-8d7c-4604-874c-58e40786770b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "ICorClrDebugTarget interface"
   - "Silverlight, remote debugging"
 ms.assetid: 7cfaee76-e284-4a66-a431-8e33f0f60038
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

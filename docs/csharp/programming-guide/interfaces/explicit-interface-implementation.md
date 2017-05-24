@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "explicit interfaces [C#]"
   - "interfaces [C#], explicit"
 ms.assetid: 181c901f-0d4c-4f29-97fc-895079617bf2
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

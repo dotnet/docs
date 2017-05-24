@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e31cd4df-13a3-4a9a-9be8-5243e0055356
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -37,7 +35,6 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
             <sqlWorkflowInstanceStore/>  
         </behavior>  
     </serviceBehaviors>  
-  
     ```  
   
      [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how to configure the SQL workflow instance store, see [How to: Enable SQL Persistence for Workflows and Workflow Services](../../../../docs/framework/windows-workflow-foundation/how-to-enable-sql-persistence-for-workflows-and-workflow-services.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the individual settings for the <`sqlWorkflowInstanceStore`> behavior element, see [SQL Workflow Instance Store](../../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md). Windows Server App Fabric provides its own persistence store. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Windows Server App Fabric Persistence](http://go.microsoft.com/fwlink/?LinkId=193121).  

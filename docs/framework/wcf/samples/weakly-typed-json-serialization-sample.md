@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0b30e501-4ef5-474d-9fad-a9d559cf9c52
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -62,7 +60,6 @@ When serializing a user-defined type to a given wire format, or deserializing a 
      [DataMember]  
      public int[] luckyNumbers;  
  }  
-  
 ```  
   
  This can be cumbersome, especially if the client has to handle more than one type of JSON object.  
@@ -105,7 +102,6 @@ string[] favoriteBands = {
         [WebGet(ResponseFormat = WebMessageFormat.Json)]  
         Message GetMemberProfile();  
     }  
-  
 ```  
   
  The `JsonObject` is then instantiated as shown in the following code.  
@@ -118,7 +114,6 @@ XmlDictionaryReader reader = channel.GetMemberProfile().GetReaderAtBodyContents(
   
 // Go through the Json as though it is a dictionary. There is no need to map it to a .NET CLR type.  
 JsonObject json = new JsonObject(reader);  
-  
 ```  
   
  The `JsonObject` constructor takes a <xref:System.Xml.XmlDictionaryReader>, which is obtained through the <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> method. The reader contains an XML representation of the JSON message received by the client. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the topic [Mapping Between JSON and XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md).  

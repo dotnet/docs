@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "templates [WPF], ComboBox"
   - "parts [WPF], ComboBox"
 ms.assetid: b0662fa1-16d7-4320-b26b-c1804e565a44
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

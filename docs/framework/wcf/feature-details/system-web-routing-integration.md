@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 31fe2a4f-5c47-4e5d-8ee1-84c524609d41
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -40,7 +38,6 @@ When hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service i
         routes.Add(new ServiceRoute("Customers", new WebServiceHostFactory(), typeof(Service)));   
    }  
 </script>  
-  
 ```  
   
  This routes all requests with a relative URI that begins with Customers to the `Service` service.  

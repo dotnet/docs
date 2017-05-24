@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "Silverlight, debugging"
   - "EnumerateCLRs function"
 ms.assetid: f8d50cb3-ec4f-4529-8fe3-bd61fd28e13c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

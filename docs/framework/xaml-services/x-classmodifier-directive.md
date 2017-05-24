@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "x:ClassModifier attribute [XAML Services]"
   - "ClassModifier attribute in XAML [XAML Services]"
 ms.assetid: ef30ab78-d334-4668-917d-c9f66c3b6aea
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 22
 author: "wadepickett"
 ms.author: "wpickett"

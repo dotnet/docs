@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "border thickness, animating changes to"
   - "animation, changes to border thickness"
 ms.assetid: fd021978-f74b-4e7b-a7f7-3987dcad9e0f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

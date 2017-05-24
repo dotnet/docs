@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "GridSplitter control [WPF]"
   - "content [WPF], GridSplitter control"
 ms.assetid: 98b007e8-ea6b-41b5-8120-ca7134e8239f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 61
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 7a4e3085-8f95-40ef-a4be-7d6146f47ce2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6
@@ -35,13 +33,11 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetInstrumentedILMap(  
    [in] ULONG32 cMap,  
    [out] ULONG32 *pcMap,  
    [out, size_is(cMap), length_is(*pcMap)] COR_IL_MAP map[]  
 );  
-  
 ```  
   
 #### Parameters  

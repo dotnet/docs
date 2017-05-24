@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], BindingSource component"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 1aae11fc-6fb2-4cb9-b3d0-e0638fe77ef0
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

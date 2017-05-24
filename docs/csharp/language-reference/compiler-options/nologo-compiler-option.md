@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "banners, suppressing startup"
   - "/nologo compiler option [C#]"
 ms.assetid: 426afb36-a8fb-469d-9c45-a35d9512557c
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

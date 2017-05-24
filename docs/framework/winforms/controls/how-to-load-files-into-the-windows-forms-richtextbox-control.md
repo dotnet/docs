@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "RichTextBox control [Windows Forms], opening files"
   - "RTF files, displaying in RichTextBox control"
 ms.assetid: c03451be-f285-4428-a71a-c41e002cc919
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a 
               RichTextBoxStreamType.RichText)  
           End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -58,7 +55,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a 
          richTextBox1.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.RichText);  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -78,7 +74,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display a 
   
     ```csharp  
     this.btnOpenFile.Click += new System.EventHandler(this. btnOpenFile_Click);  
-  
     ```  
   
     ```cpp  

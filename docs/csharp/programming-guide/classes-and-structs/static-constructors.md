@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "static constructors [C#]"
   - "constructors [C#], static"
 ms.assetid: 151ec95e-3c4d-4ed7-885d-95b7a3be2e7d
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"

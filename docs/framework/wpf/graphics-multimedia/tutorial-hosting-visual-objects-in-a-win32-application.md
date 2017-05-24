@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Win32 code, visual objects in"
   - "hosting, visual objects in Win32 code"
 ms.assetid: f0e1600c-3217-43d5-875d-1864fa7fe628
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

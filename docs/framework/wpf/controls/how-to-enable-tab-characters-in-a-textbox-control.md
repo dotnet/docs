@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "TextBox control, enabling tab characters"
   - "tab characters, enabling"
 ms.assetid: 14b1b064-61f7-4958-be63-88d85b868d03
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

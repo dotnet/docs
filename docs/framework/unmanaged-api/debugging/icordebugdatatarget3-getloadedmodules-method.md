@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 9a48c05b-1949-416e-933c-52549b6fcf5e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Gets a list of the modules that have been loaded so far.
 ## Syntax  
   
 ```  
-  
 HRESULT GetLoadedModules(  
    [in] ULONG32 cRequestedModules,  
    [out] ULONG32 *pcFetchedModules,  
    [out, size_is(cRequestedModules), length_is(*pcFetchedModules)] ICorDebugLoadedModule *pLoadedModules[]  
 );  
-  
 ```  
   
 #### Parameters  

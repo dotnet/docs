@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 3b4a02ad-ddfc-4c42-8dfa-676234461312
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Compares two expressions to determine whether the left expression is not equal t
 ## Syntax  
   
 ```  
-  
 expression != expression  
 or  
 expression <> expression  

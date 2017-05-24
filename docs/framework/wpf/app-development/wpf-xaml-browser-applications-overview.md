@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "XAML browser applications (XBAP)"
   - "browser-hosted applications [WPF]"
 ms.assetid: 3a7a86a8-75d5-4898-96b9-73da151e5e16
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 47
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -67,7 +65,6 @@ manager: "wpickett"
     <a href="XbapEx.xbap">Click this link to launch the application</a>  
   </body>   
 </html>  
-  
 ```  
   
  You can also host an XBAP in the frame of a Web page. Create a Web page with one or more frames. Set the source property of a frame to the deployment manifest file. If you want to use the built-in mechanism to communicate between the hosting Web page and the XBAP, you must host the application in a frame. The following example code shows an HTML page with two frames, the source for the second frame is set to an XBAP.  

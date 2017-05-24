@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Visual Basic, performance"
   - "performance [Visual Basic]"
 ms.assetid: ae275793-857d-4102-9095-b4c2a02d57f4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 36
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -42,8 +42,6 @@ helpviewer_keywords:
   - "output, managed debugging assistants"
   - "errors [.NET Framework], managed debugging assistants"
 ms.assetid: 76994ee6-9fa9-4059-b813-26578d24427c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 63
 author: "mairaw"
 ms.author: "mairaw"
@@ -113,13 +111,11 @@ Windows Registry Editor Version 5.00
   
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework]  
 "MDA"="1"  
-  
 ```  
   
  If the computer is running a 32-bit application on a 64-bit operating system, then the MDA key should be set like the following:  
   
 ```  
-  
       Windows Registry Editor Version 5.00   
   
 [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\.NETFramework]  

@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "powers"
   - "arithmetic operators, exponentiation"
 ms.assetid: d89a1ca8-83da-4784-a87b-a9d7dceb3f62
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -51,7 +49,6 @@ Raises a number to the power of another number.
 ## Syntax  
   
 ```  
-  
 number ^ exponent  
 ```  
   

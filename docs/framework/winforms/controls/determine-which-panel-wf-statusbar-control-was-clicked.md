@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "PanelClick event, determining panel clicked"
   - "Panel control [Windows Forms], determining click"
 ms.assetid: d14c6092-04b2-4a07-8ddf-0dd11277ff5f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -50,7 +48,6 @@ manager: "wpickett"
            MessageBox.Show("You have clicked Panel Two.")  
        End Select  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -67,7 +64,6 @@ manager: "wpickett"
              break;  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -93,7 +89,6 @@ manager: "wpickett"
     this.statusBar1.PanelClick += new   
        System.Windows.Forms.StatusBarPanelClickEventHandler   
        (this.statusBar1_PanelClick);  
-  
     ```  
   
     ```cpp  

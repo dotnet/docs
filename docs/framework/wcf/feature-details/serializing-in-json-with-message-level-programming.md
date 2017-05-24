@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5f940ba2-57ee-4c49-a779-957c5e7e71fa
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"
@@ -37,7 +35,6 @@ WCF supports serializing data in JSON format. This topic describes how to tell W
                              new DataContractJsonSerializer(typeof(string))); // Specify DataContractJsonSerializer  
       response.Properties.Add( WebBodyFormatMessageProperty.Name,   
                     new WebBodyFormatMessageProperty(WebContentFormat.Json)); // Use JSON format  
-  
 ```  
   
 ## See Also  

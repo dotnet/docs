@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "grouping items in ListViews implementing GridViews"
   - "GridView controls, grouping items"
 ms.assetid: eebef25b-ddc6-424e-a66d-ea228d1bf33d
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

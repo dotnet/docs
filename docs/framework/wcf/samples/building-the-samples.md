@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2899e7a5-9cb2-4e8d-b8d2-f31391549198
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 33
 author: "Erikre"
 ms.author: "erikre"
@@ -77,7 +75,6 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples can be built
   
     ```  
     svcutil.exe /n:"http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samples" http://localhost/servicemodelsamples/service.svc/mex /l:vb /out:generatedClient.vb  
-  
     ```  
   
      If the service is a self-hosted type, use the following command.  

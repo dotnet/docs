@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "run time, adding controls"
   - "controls [Windows Forms], removing using collections"
 ms.assetid: 771bf895-3d5f-469b-a324-3528f343657e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -54,7 +52,6 @@ Common tasks in application development are adding controls to and removing cont
        ' handler for your application.  
        AddHandler NewPanelButton.Click, AddressOf NewPanelButton_Click  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -91,7 +88,6 @@ Common tasks in application development are adding controls to and removing cont
           NewPanelButton.Dispose()  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  

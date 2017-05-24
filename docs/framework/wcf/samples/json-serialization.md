@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3c2c4747-7510-4bdf-b4fe-64f98428ef4a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "Erikre"
 ms.author: "erikre"
@@ -35,7 +33,6 @@ This sample demonstrates how to use the <xref:System.Runtime.Serialization.Json.
         [DataMember]  
         internal int age;  
     }  
-  
 ```  
   
  To serialize an instance of the `Person` type to JSON, create the <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer> first and use the `WriteObject` method to write JSON data to a stream.  
@@ -46,14 +43,12 @@ Person p = new Person();
 MemoryStream stream1 = new MemoryStream();  
 DataContractJsonSerializer ser = new DataContractJsonSerializer(typeof(Person));  
 ser.WriteObject(stream1, p);  
-  
 ```  
   
  The memory stream contains valid JSON data.  
   
 ```  
 {"age":42,"name":"John"}  
-  
 ```  
   
  The sample demonstrates deserializing from JSON data into an object. You then rewind the stream and call `ReadObject`.  

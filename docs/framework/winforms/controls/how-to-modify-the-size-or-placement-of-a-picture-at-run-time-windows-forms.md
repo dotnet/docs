@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "PictureBox control [Windows Forms], picture size and alignment"
   - "pictures, controlling placement in PictureBox control [Windows Forms]"
 ms.assetid: d0b332a3-fae2-4891-957c-dc3e17743326
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -55,7 +53,6 @@ If you use the Windows Forms <xref:System.Windows.Forms.PictureBox> control on a
        (System.Environment.SpecialFolder.Personal) _  
        & "\Image.gif")  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -71,7 +68,6 @@ If you use the Windows Forms <xref:System.Windows.Forms.PictureBox> control on a
        (System.Environment.SpecialFolder.Personal) _  
        + @"\Image.gif")  
     }  
-  
     ```  
   
     ```cpp  

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "service behaviors, throttling sample"
   - "Throttling Sample [Windows Communication Foundation]"
 ms.assetid: 40bb3582-8ae9-4410-96f0-6c515bfaf47c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"
@@ -54,13 +52,11 @@ public double Add(double n1, double n2)
     System.Threading.Thread.Sleep(2000);  
     return n1 + n2;  
 }  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The Add and Subtract methods are executed concurrently and the Multiply and Divide methods are executed concurrently proving that not more than 2 methods can be executed concurrently thus demonstrating throttling.  
   
 ```  
-  
 Press <ENTER> to terminate client.  
 Add(100,15.99)  
 Subtract(145,76.54)  

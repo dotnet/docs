@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b3bc7f31-95ff-46e1-8308-d206ec426f6e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -44,7 +42,6 @@ public interface IDataContractCalculator
     [OperationContract]  
     List<ComplexNumber> CombineLists(List<ComplexNumber> list1, List<ComplexNumber> list2);  
 }  
-  
 ```  
   
  The service contract is implemented as shown in the following example.  
@@ -91,7 +88,6 @@ public interface IDataContractCalculator
         return result;  
     }  
 }  
-  
 ```  
   
  Another project corresponds to the client, which communicates with the server and invokes the methods that it exposes. The definition of the client is shown in the following example.  
@@ -195,7 +191,6 @@ public interface IDataContractCalculator
         Console.ReadLine();  
     }  
 }  
-  
 ```  
   
  The definition of the service contract is marked with the `KnownAssembly` attribute. This attribute contains the name of a library of types, which all become known at runtime by both the service and the client.  
@@ -284,7 +279,6 @@ public class MyDataContractResolver : DataContractResolver
            }  
        }  
    }  
-  
 ```  
   
  The library of types used in this sample is shown in the following example.  
@@ -330,7 +324,6 @@ public class ComplexNumberWithMagnitude : ComplexNumber
         set { }  
     }  
 }  
-  
 ```  
   
  Note that `ComplexNumber` does not need to statically know the `ComplexNumberWithMagnitude` type, because it becomes known at runtime.  
@@ -355,7 +348,6 @@ Lists combined:
 2 + 2i  
 3 + 3i  
 4 + 4i  
-  
 ```  
   
 #### To set up, run, and build the sample  

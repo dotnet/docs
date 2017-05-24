@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "text [Windows Forms], antialiasing"
   - "strings [Windows Forms], antialiasing when drawing"
 ms.assetid: 48fc34f3-f236-4b01-a0cb-f0752e6d22ae
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

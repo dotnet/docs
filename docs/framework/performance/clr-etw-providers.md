@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "ETW, CLR providers"
   - "CLR ETW providers"
 ms.assetid: 0beafad4-b2c8-47f4-b342-83411d57a51f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

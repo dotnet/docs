@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "dynamic objects [Visual Basic]"
 ms.assetid: bdee2a00-07ff-46f9-86dd-fdac9b99cc97
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

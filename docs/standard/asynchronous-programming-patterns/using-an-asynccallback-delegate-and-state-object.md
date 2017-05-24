@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "asynchronous programming, state objects"
   - "IAsyncResult interface, samples"
 ms.assetid: e3e5475d-c5e9-43f0-928e-d18df8ca1f1d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

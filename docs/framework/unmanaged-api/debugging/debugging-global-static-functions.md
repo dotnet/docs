@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "debugging global static functions [.NET Framework]"
   - "unmanaged global static functions [.NET Framework], debugging"
 ms.assetid: efc64414-77c3-48d0-881a-8594ed416aad
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

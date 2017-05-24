@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ReleasedVirtualAddressSpace method [.NET Framework hosting]"
   - "IHostMemoryManager::ReleasedVirtualAddressSpace method [.NET Framework hosting]"
 ms.assetid: d1876601-6ab9-48e1-8ebd-184af1d0cd76
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

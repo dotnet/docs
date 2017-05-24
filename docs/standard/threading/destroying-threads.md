@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "destroying threads"
   - "threading [.NET Framework], destroying threads"
 ms.assetid: df54e648-c5d1-47c9-bd29-8e4438c1db6d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

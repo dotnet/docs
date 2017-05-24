@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "appDomainManagerType element"
   - "<appDomainManagerType> element"
 ms.assetid: ae8d5a7e-e7f7-47f7-98d9-455cc243a322
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

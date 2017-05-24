@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 733b67b4-08a1-4d25-9741-10046f9357ef
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <authentication customCertificateValidatorType="String" certificateValidationMode="None/PeerTrust/ChainTrust/PeerOrChainTrust/Custom"  
 revocationMode="NoCheck/Online/Offline"   
 trustedStoreLocation="LocalMachine/CurrentUser" />  

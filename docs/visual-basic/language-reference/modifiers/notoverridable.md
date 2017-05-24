@@ -26,8 +26,6 @@ helpviewer_keywords:
   - "methods [Visual Basic], sealed"
   - "properties [Visual Basic], overriding"
 ms.assetid: 66ec6984-f5f5-4857-b362-6a3907aaf9e0
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

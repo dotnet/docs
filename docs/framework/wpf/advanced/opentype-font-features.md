@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "typography, OpenType font technology"
   - "OpenType font technology"
 ms.assetid: 4061a9d1-fe8b-4921-9e17-18ec7d2e3ea2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 38
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "<add> element for <listeners>"
   - "add element for <listeners>"
 ms.assetid: 81e804a3-ef11-4d39-bbde-bfa012c179e2
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 24
 author: "mcleblanc"
 ms.author: "markl"

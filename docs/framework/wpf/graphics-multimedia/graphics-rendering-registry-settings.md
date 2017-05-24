@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "troubleshooting graphics rendering"
   - "graphics [WPF], rendering"
 ms.assetid: f4b41b42-327d-407c-b398-3ed5f505df8b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

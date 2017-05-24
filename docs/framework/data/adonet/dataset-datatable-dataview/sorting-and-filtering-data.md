@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fdd9c753-39df-48cd-9822-2781afe76200
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -52,7 +50,6 @@ Dim prodView As DataView = New DataView(prodDS.Tables("Products"), _
    "UnitsInStock <= ReorderLevel", _  
    "SupplierID, ProductName", _  
    DataViewRowState.CurrentRows)  
-  
 ```  
   
 ```csharp  

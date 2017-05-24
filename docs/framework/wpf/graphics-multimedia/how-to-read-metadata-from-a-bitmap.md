@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "metadata, in images"
   - "metadata, reading from a bitmap"
 ms.assetid: 920784ed-d96b-43e6-92d4-5dea5228f628
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

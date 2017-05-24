@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Windows Forms, ClickOnce deployment"
   - "walkthroughs [Windows Forms], ClickOnce deployment"
 ms.assetid: 1451fce9-1965-4a03-b4d3-831b5fe4ad66
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

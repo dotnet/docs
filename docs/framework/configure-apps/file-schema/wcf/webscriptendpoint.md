@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 85cb5ecf-351b-45f3-aa29-aa2e4b64bcdd
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -26,7 +24,6 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <webScriptEndpoint>           <standardEndpoint             webEndpointType="String"/>             </webScriptEndpoint>     </standardEndpoints>  
 </system.serviceModel>  

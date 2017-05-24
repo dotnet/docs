@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "events [.NET Framework], consuming"
   - "Web Forms, event handling"
 ms.assetid: 73bf8638-c4ec-4069-b0bb-a1dc79b92e32
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

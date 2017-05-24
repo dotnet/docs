@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: c5f4cb35-69e9-44cc-b63b-ee38922bbda1
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Returns a reference to an entity instance.
 ## Syntax  
   
 ```  
-  
 REF( expression )   
 ```  
   

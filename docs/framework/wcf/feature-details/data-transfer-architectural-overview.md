@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "data transfer [WCF], architectural overview"
 ms.assetid: 343c2ca2-af53-4936-a28c-c186b3524ee9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "<clear> element for <namedCaches>"
   - "clear element for <namedCaches>"
 ms.assetid: ea01a858-65da-4348-800f-5e3df59d4d79
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"

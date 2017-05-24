@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "check marks"
   - "list boxes, about list boxes"
 ms.assetid: e6cff3ce-e2ba-458e-851f-299e8e9c8abf
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

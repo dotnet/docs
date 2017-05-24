@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "keywords [C#], operators"
   - "operators [C#], keywords"
 ms.assetid: f745c81f-f8d8-4673-86a1-0f3a85cc63c3
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

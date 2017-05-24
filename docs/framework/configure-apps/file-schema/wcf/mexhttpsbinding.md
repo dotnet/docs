@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f2ed3774-78b9-4a15-b79b-655f1ad68b86
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
 ## Syntax  
   
 ```  
-  
 <mexHttpsBinding>  
    <binding   
        closeTimeout="TimeSpan"   

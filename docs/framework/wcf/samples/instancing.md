@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "service behaviors, instancing sample"
   - "Instancing Sample [Windows Communication Foundation]"
 ms.assetid: c290fa54-f6ae-45a1-9186-d9504ebc6ee6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 40
 author: "Erikre"
 ms.author: "erikre"

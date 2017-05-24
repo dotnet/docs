@@ -13,8 +13,6 @@ dev_langs:
 helpviewer_keywords: 
   - "byte keyword [C#]"
 ms.assetid: 111f1db9-ca32-4f0e-b497-4783517eda47
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -62,7 +60,6 @@ Starting with C# 7, you can also use the underscore character, `_`, as a digit s
  You cannot implicitly convert non-literal numeric types of larger storage size to `byte`. For more information on the storage sizes of integral types, see [Integral Types Table](../../../csharp/language-reference/keywords/integral-types-table.md). Consider, for example, the following two `byte` variables `x` and `y`:  
   
 ```  
-  
 byte x = 10, y = 20;  
 ```  
   

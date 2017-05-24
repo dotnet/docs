@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "registry keys, reading from"
   - "registry, reading"
 ms.assetid: 775d0a57-68c9-464e-8949-9a39bd29cc64
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent

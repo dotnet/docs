@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugFunction::GetILCode method [.NET Framework debugging]"
   - "GetILCode method [.NET Framework debugging]"
 ms.assetid: f794dd47-a7cd-47f6-96e9-a41a4dae8e72
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

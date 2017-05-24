@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "-debug compiler option [Visual Basic]"
   - "debug compiler option [Visual Basic]"
 ms.assetid: c2b0bea5-1d5e-499f-9bd5-4f6c6b715ea2
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

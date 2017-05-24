@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "DataRepeater, topic list"
 ms.assetid: 68e0cf5e-e2cb-480a-80cc-d13eb6c9b3dd
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

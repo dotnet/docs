@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "camera position, animating in 3-D scenes"
   - "animation, camera direction in 3-D scenes"
 ms.assetid: 480224b7-a5e5-4165-ba7f-ef760ddff94a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

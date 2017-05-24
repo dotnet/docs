@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "UI Automation, Combo Box control type"
   - "ComboBox controls"
 ms.assetid: bb321126-4770-41da-983a-67b7b89d45dd
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 23
 author: "Xansky"
 ms.author: "mhopkins"

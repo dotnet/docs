@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "controls [WPF], ProgressBar"
   - "ProgressBar control [WPF]"
 ms.assetid: 4545b358-b93c-47df-88e4-9946d7db9e3f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent

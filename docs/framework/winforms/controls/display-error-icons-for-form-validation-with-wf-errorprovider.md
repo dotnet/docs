@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "ErrorProvider component [Windows Forms], displaying error icons"
   - "error messages, displaying icons"
 ms.assetid: 3b681a32-9db4-497b-a34b-34980eabee46
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -48,7 +46,6 @@ You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component 
              ErrorProvider1.SetError(TextBox1, "")  
           End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -65,7 +62,6 @@ You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component 
           errorProvider1.SetError(textBox1, "Not an integer value.");  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -90,7 +86,6 @@ You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component 
     ```csharp  
     this.textBox1.Validating += new  
     System.ComponentModel.CancelEventHandler(this.textBox1_Validating);  
-  
     ```  
   
     ```cpp  

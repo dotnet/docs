@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Out keyword [Visual Basic]"
   - "covariance, Out keyword [Visual Basic]"
 ms.assetid: c4418369-1518-4a46-9a1e-054c61038eca
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

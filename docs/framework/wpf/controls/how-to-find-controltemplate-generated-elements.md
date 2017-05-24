@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "ControlTemplates [WPF], finding elements"
   - "finding ControlTemplate elements"
 ms.assetid: d7b25447-ceff-4bb4-9be5-fd7c40ef00af
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "local thread storage"
   - "TLS"
 ms.assetid: c633a4dc-a790-4ed1-96b5-f72bd968b284
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

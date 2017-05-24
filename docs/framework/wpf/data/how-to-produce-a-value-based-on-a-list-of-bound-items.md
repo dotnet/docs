@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "data binding, MultiBinding"
   - "MultiBinding"
 ms.assetid: b3d06378-b511-4181-95aa-316d60c9229b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

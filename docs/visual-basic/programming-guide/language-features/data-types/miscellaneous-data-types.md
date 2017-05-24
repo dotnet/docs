@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Object data type, data types"
   - "data types [Visual Basic], choosing"
 ms.assetid: 64c71a12-9057-4dbf-baca-7379c4aada69
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

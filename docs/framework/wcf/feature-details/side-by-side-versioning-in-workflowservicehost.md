@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 60887eed-df40-4412-b812-41e1dd329d15
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -66,7 +64,6 @@ WorkflowService service = new WorkflowService
         Version = new Version(1, 0, 0, 0)  
     }  
 };  
-  
 ```  
   
 ```vb  
@@ -131,7 +128,6 @@ WorkflowService serviceV1 = new WorkflowService
   
 // Add the previous version of the service to the SupportedVersions collection.  
 host.SupportedVersions.Add(serviceV1);  
-  
 ```  
   
 ```vb  

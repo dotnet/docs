@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "WCF, authentication"
 ms.assetid: 10e245f7-d31e-42e7-82a2-d5780325d372
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "BrucePerlerMS"
 ms.author: "bruceper"

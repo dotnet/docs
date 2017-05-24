@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8373f94d-d095-486f-8f1e-4ac2f72b58c7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"
@@ -45,7 +43,6 @@ This section enables the use of a user defined binding from a machine or applica
         <endpoint address="myAddress" binding="MyBinding" />  
     </service>  
 </services>  
-  
 ```  
   
 ## See Also  

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 593b3390-f65b-4684-ad40-0596b62f0954
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Represents a configuration section for defining a set of backup services used in
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

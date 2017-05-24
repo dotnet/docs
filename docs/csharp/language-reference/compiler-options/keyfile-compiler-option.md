@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "-keyfile compiler option [C#]"
   - "keyfile compiler option [C#]"
 ms.assetid: 0815f9de-ace4-4e98-b4c6-13c55dea40c2
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

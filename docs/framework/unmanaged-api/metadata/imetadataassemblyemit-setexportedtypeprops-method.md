@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetExportedTypeProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyEmit::SetExportedTypeProps method [.NET Framework metadata]"
 ms.assetid: 1c090153-fd5f-46c7-9cff-39a78d992c8f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

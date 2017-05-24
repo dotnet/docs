@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "control types, Split Button"
   - "UI Automation, Split Button control type"
 ms.assetid: 14b05ccf-bcd8-4045-9bae-f7679cd98711
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 23
 author: "Xansky"
 ms.author: "mhopkins"

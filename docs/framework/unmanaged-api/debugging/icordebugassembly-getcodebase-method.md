@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetCodeBase method [.NET Framework debugging]"
   - "ICorDebugAssembly::GetCodeBase method [.NET Framework debugging]"
 ms.assetid: 48adc154-9058-4fef-9c43-e9aad80e4dbf
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

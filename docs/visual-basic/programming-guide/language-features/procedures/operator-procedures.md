@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "operator overloading"
   - "operator procedures"
 ms.assetid: 8c513d38-246b-4fb7-8b75-29e1364e555b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

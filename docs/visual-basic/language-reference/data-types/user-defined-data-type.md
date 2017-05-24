@@ -33,8 +33,6 @@ helpviewer_keywords:
   - "user-defined data types"
   - "types [Visual Basic], user-defined"
 ms.assetid: be913dca-a364-4a51-96a1-549a1b390b0a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

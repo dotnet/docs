@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 40f21055-766c-4be9-86c4-d1d899007098
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"
@@ -80,7 +78,6 @@ Represents a collection of subscribed states from the tracked workflow instance 
  The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
   
 ```  
-  
 <workflowInstanceQueries>  
     <workflowInstanceQuery>  
       <states>  
@@ -88,7 +85,6 @@ Represents a collection of subscribed states from the tracked workflow instance 
       </states>  
     </workflowInstanceQuery>  
 </workflowInstanceQueries>  
-  
 ```  
   
 ## See Also  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetSecurityContext method [.NET Framework hosting]"
   - "IHostSecurityManager::SetSecurityContext method [.NET Framework hosting]"
 ms.assetid: e4372384-ee69-48d7-97e0-8fab7866597a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

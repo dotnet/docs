@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Help, Windows Forms"
   - "HelpProvider component [Windows Forms], providing Help in Windows applications"
 ms.assetid: 2a96a278-432c-41fc-9e3c-5bfedf5e1267
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

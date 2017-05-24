@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ToString method [.NET Framework hosting]"
   - "ITypeNameBuilder::ToString method [.NET Framework hosting]"
 ms.assetid: 6372aca7-869a-4af6-ba2b-0eb1047ef5c0
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

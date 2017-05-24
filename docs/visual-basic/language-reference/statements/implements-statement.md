@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Implements statement"
   - "interface implementation, Implements statement"
 ms.assetid: 1fafb83f-f55a-4215-8ea9-681e8622613d
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 597ae6d5-4938-4950-9f5e-b2280e816182
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specify an X.509 certificate that will be used to authenticate the service to cl
 ## Syntax  
   
 ```  
-  
 <serviceCertificate findValue="String"   
     storeLocation="LocalMachine/CurrentUser"  
     storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  

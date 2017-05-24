@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0fb41e2d-64f7-44ab-993e-05892eac6d82
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies the generic parameter when a declared type is a generic type.
 ## Syntax  
   
 ```  
-  
 <parameter index="integer"  
                       type=String" />  
 ```  

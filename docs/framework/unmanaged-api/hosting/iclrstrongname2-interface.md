@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRStrongName2 interface [.NET Framework hosting]"
 ms.assetid: 9f098a74-201e-4628-a468-8dee9ab99b4a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

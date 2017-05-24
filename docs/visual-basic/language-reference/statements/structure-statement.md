@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "UDT (user-defined types)"
   - "types [Visual Basic], user-defined"
 ms.assetid: 9bd1deea-2a89-4cdc-812c-6dcbb947c391
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent

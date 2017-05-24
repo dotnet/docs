@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "behavior [WCF], service performance"
 ms.assetid: f9dc120c-dc24-49d5-930e-b22f5bc73423
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

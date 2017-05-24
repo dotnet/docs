@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "host protection attributes"
   - "HostProtectionAttribute class, reliability"
 ms.assetid: 7dfa36b4-e773-4c75-a3ff-ff1af3ce4c4f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "<oidMap> element"
   - "oidMap element"
 ms.assetid: 7f0c2246-c070-4748-b96a-2f66a296c539
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"

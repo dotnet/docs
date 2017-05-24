@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "ListView controls, displaying contents with GridView"
   - "GridView, displaying ListView contents"
 ms.assetid: 5bc1e767-ab46-4f14-bd41-3d5d39e1d000
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

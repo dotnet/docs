@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "WCF, transactions"
   - "Windows Communication Foundation, transactions"
 ms.assetid: c7757854-1207-4019-8b31-552578b7d570
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"

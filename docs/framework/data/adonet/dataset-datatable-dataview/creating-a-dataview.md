@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b1cc02d1-23b1-4439-a998-0da1899f3442
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -31,7 +29,6 @@ Dim custDV As DataView = New DataView(custDS.Tables("Customers"), _
     "Country = 'USA'", _  
     "ContactName", _  
     DataViewRowState.CurrentRows)  
-  
 ```  
   
 ```csharp  
@@ -45,7 +42,6 @@ DataView custDV = new DataView(custDS.Tables["Customers"],
   
 ```vb  
 Dim custDV As DataView = custDS.Tables("Customers").DefaultView  
-  
 ```  
   
 ```csharp  

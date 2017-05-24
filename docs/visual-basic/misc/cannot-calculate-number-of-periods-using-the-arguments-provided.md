@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrFinancial_CannotCalculateNPer"
 ms.assetid: a96fed1c-73e6-4a2b-9906-0190bc3d4c3c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

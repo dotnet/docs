@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugFunctionBreakpoint::GetOffset method [.NET Framework debugging]"
   - "GetOffset method, ICorDebugFunctionBreakpoint interface [.NET Framework debugging]"
 ms.assetid: e619eae4-3ac3-4c37-bba4-55e59989b9cb
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

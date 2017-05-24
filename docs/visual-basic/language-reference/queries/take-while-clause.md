@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Take While clause"
   - "Take While statement"
 ms.assetid: db8f9f2f-fc9f-4a6c-b0b8-1bf048147e11
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

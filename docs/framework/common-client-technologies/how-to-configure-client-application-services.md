@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "client application services, configuring"
 ms.assetid: 34a8688a-a32c-40d3-94be-c8e610c6a4e8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

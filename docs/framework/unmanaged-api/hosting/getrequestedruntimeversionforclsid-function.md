@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "GetRequestedRuntimeVersionForCLSID function [.NET Framework hosting]"
 ms.assetid: 5bb12f9a-0612-434b-b4ed-2db636a20bec
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 17

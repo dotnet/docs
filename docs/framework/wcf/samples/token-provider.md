@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 947986cf-9946-4987-84e5-a14678d96edb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -88,7 +86,6 @@ This sample demonstrates how to implement a custom token provider. A token provi
       </serviceBehaviors>  
     </behaviors>  
   </system.serviceModel>  
-  
 ```  
   
  The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `Mode` and message `clientCredentialType`.  
@@ -135,7 +132,6 @@ This sample demonstrates how to implement a custom token provider. A token provi
         // return new UserNameSecurityToken containing information obtained from user  
         return new UserNameSecurityToken(username, password);  
     }  
-  
     ```  
   
 2.  Write custom security token manager.  
@@ -210,7 +206,6 @@ This sample demonstrates how to implement a custom token provider. A token provi
          client.ChannelFactory.Endpoint.Behaviors.Add(new MyUserNameClientCredentials());  
        // ...  
     }  
-  
     ```  
   
  On the service, to display the caller's information, use the <xref:System.ServiceModel.ServiceSecurityContext.PrimaryIdentity%2A> as shown in the following code example. The <xref:System.ServiceModel.ServiceSecurityContext.Current%2A> contains claims information about the current caller.  
@@ -221,7 +216,6 @@ static void DisplayIdentityInformation()
     Console.WriteLine("\t\tSecurity context identity  :  {0}",   
         ServiceSecurityContext.Current.PrimaryIdentity.Name);  
 }  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
@@ -251,7 +245,6 @@ static void DisplayIdentityInformation()
   
     ```  
     certmgr.exe -add -r LocalMachine -s My -c -n %SERVER_NAME% -r CurrentUser -s TrustedPeople  
-  
     ```  
   
 > [!NOTE]

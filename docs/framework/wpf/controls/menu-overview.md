@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Menu control"
   - "controls, Menu"
 ms.assetid: 67df6de5-db96-4c71-b752-af90729a6537
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "arguments [Visual Basic], Visual Basic"
   - "procedures, parameter lists"
 ms.assetid: 5d737319-0c34-4df9-a23d-188fc840becd
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

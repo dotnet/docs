@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "application development [.NET Framework], security"
   - "security [.NET Framework]"
 ms.assetid: 9a9621d7-8883-4a4f-a874-65e8e09e20a6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 37
 author: "mairaw"
 ms.author: "mairaw"

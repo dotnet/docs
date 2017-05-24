@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "LINQ, deferred execution"
   - "queries [LINQ], about LINQ queries"
 ms.assetid: 37895c02-268c-41d5-be39-f7d936fa88a8
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 47
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -76,7 +74,6 @@ IQueryable<Customer> custQuery =
     from cust in db.Customers  
     where cust.City == "London"  
     select cust;  
-  
 ```  
   
  For more information about how to create specific types of data sources, see the documentation for the various [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] providers. However, the basic rule is very simple: a [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] data source is any object that supports the generic <xref:System.Collections.Generic.IEnumerable%601> interface, or an interface that inherits from it.  

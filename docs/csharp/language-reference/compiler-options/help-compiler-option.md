@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "/help compiler option [C#]"
   - "-? compiler option [C#]"
 ms.assetid: 8d53f6ba-5c3b-4183-976e-9c0f26fd3680
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f4257abc-12df-4736-a03b-0731becf0fd4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"
@@ -114,7 +112,6 @@ public class PriceChangeEventArgs : EventArgs
         }  
   
     }  
-  
 ```  
   
  When you run the sample, launch several clients. The clients subscribe to the service. Then run the data source program, which sends information to the service. The service passes on the information to all subscribers. You can see activity on each client console confirming that the information has been received. Press ENTER in the client window to shut down the client.  

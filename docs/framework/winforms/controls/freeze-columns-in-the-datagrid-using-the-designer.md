@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], column freezing"
   - "data [Windows Forms], displaying"
 ms.assetid: 87412dd2-478f-4751-af87-dafc591fc215
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

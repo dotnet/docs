@@ -67,5 +67,4 @@ Activities created by inheriting from <xref:System.Activities.CodeActivity> can 
         record.Data.Add(new KeyValuePair<String, Object>("ExecutionTime", DateTime.Now));  
         context.Track(record);  
     }  
-  
     ```

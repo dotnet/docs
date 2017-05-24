@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Dock values, setting"
   - "Dock values, getting"
 ms.assetid: fcf4ab8a-c7cd-4835-8d04-de1c999ab4a8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

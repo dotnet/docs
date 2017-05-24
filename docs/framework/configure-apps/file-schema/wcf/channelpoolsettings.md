@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4755f3d3-4213-4c68-ae7f-45b67d744459
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies the channel pool settings for a custom binding.
 ## Syntax  
   
 ```  
-  
 <channelPoolSettings  
     idleTimeout"TimeSpan"  
         leaseTimeout"TimeSpan"  

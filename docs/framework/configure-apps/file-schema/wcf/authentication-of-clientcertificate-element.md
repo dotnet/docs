@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4a55eea2-1826-4026-b911-b7cc9e9c8bfe
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Specifies authentication behaviors for client certificates used by a service.
 ## Syntax  
   
 ```  
-  
 <authentication  
 customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
 certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  

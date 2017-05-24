@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], GDI+"
   - "lines, dashed"
 ms.assetid: 30b25aae-e3eb-4479-bdb8-187cf651fc84
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

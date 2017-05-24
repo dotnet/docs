@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugThread::GetID method [.NET Framework debugging]"
   - "GetID method, ICorDebugThread interface [.NET Framework debugging]"
 ms.assetid: f1de4584-92df-42f3-9da4-fca03a1c6821
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "drag and drop, Windows Forms"
   - "Windows Forms, drag and drop"
 ms.assetid: 65cd2c03-8782-474e-b958-cbe43eeb902c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

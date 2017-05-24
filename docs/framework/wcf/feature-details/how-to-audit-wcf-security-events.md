@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "security [WCF], auditing events"
 ms.assetid: e71e9587-3336-46a2-9a9e-d72a1743ecec
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -75,7 +73,6 @@ manager: "mbaldwin"
                     contract="WCS.Samples.Service.IEcho" />  
         </service>  
     </services>  
-  
     ```  
   
 ## Example  

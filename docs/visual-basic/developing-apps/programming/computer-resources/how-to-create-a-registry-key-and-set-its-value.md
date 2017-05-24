@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "registry keys, setting values"
   - "examples [Visual Basic], registry"
 ms.assetid: d3e40f74-c283-480c-ab18-e5e9052cd814
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

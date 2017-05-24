@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "paging output [WCF Data Services]"
 ms.assetid: 9a316cbd-9612-4482-a541-a10bc78b2635
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

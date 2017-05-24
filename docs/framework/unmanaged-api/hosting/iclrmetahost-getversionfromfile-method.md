@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRMetaHost::GetVersionFromFile method [.NET Framework hosting]"
   - "GetVersionFromFile method [.NET Framework hosting]"
 ms.assetid: 55bb3eb4-f665-42fc-973c-465567570e82
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 20

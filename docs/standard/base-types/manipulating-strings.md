@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "strings [.NET Framework], manipulating"
   - "manipulating strings"
 ms.assetid: d4568ff3-9f83-4549-acd8-47aec2194ac0
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "files [C#]"
   - "creating folders [C#]"
 ms.assetid: 4582ee2d-d72d-4687-bcb9-08d336c62c25
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -56,7 +54,6 @@ You can programmatically create a folder on your computer, create a subfolder, c
   
     // Replace that line with the following assignment.  
     string fileName = "MyNewFile.txt";  
-  
     ```  
   
 -   Replace the `if`-`else` statement with the `using` statement in the following code.  
@@ -69,7 +66,6 @@ You can programmatically create a folder on your computer, create a subfolder, c
             fs.WriteByte(i);  
         }  
     }  
-  
     ```  
   
  Run the example several times to verify that data is added to the file each time.  

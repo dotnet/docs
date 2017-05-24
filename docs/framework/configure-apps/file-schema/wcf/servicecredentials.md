@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 96db336c-4f7a-4193-81a5-910b8ffd804f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Specifies the credential to be used in authenticating the service and the client
 ## Syntax  
   
 ```  
-  
 <serviceCredentials type="String">  
    <clientCertificate>  
    </clientCertificate>  

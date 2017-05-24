@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "<summary> C# XML tag"
   - "summary C# XML tag"
 ms.assetid: b4c43d92-2067-4eac-a59a-d32f5248c08b
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -115,7 +113,6 @@ translation.priority.mt:
         </member>  
     </members>  
 </doc>  
-  
 ```  
   
 ## See Also  

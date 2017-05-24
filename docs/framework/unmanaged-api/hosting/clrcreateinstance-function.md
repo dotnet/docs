@@ -23,8 +23,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CLRCreateInstance function [.NET Framework hosting]"
 ms.assetid: 5de13327-96c6-4697-a89e-b8bf40717855
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 16

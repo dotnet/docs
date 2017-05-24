@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "ControlTemplate [WPF], ToolTip"
   - "templates [WPF], ToolTip"
 ms.assetid: 405fe385-4de9-49ee-a448-d8f4d1f740dd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

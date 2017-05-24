@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IDebugAutoAttach interface [.NET Framework debugging]"
 ms.assetid: d4cc51ac-c1d6-41b9-ab8e-ef0073f13241
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

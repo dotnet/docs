@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Windows Service applications, pausing"
   - "pausing Windows Service applications"
 ms.assetid: eddb9409-942b-46b6-a2ce-fbd4c65f2790
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "ghogen"
 ms.author: "ghogen"

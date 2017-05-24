@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "classes [Visual Basic], vs. modules"
   - "declarations, modules"
 ms.assetid: a1243afc-14a5-45df-95d5-51118aeac362
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

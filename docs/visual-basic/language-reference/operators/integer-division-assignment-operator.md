@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "operator \\= [Visual Basic]"
   - "compound assignment statements"
 ms.assetid: 6f39915d-e398-4045-afcc-da6885e57b9c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -48,7 +46,6 @@ Divides the value of a variable or property by the value of an expression and as
 ## Syntax  
   
 ```  
-  
 variableorproperty \= expression  
 ```  
   

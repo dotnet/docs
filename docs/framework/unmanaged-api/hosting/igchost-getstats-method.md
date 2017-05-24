@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetStats method, IGCHost interface [.NET Framework hosting]"
   - "IGCHost::GetStats method [.NET Framework hosting]"
 ms.assetid: c4ae022c-46ac-4f19-9ddd-09b955f19412
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

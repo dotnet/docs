@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "AssemblyComparisonResult enumeration [.NET Framework fusion]"
 ms.assetid: bd042f89-10b1-40ca-946e-46da082f5263
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

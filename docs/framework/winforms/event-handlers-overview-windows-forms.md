@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "event handling, Windows Forms"
   - "event handlers, about event handlers"
 ms.assetid: 228112e1-1711-42ee-8ffa-ff3555bffe66
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -30,7 +28,6 @@ An event handler is a method that is bound to an event. When the event is raised
 Private Sub button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles button1.Click  
   
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -38,7 +35,6 @@ private void button1_Click(object sender, System.EventArgs e)
 {  
   
 }  
-  
 ```  
   
 ```cpp  

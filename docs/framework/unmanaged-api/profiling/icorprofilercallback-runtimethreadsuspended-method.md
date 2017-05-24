@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "RuntimeThreadSuspended method [.NET Framework profiling]"
   - "ICorProfilerCallback::RuntimeThreadSuspended method [.NET Framework profiling]"
 ms.assetid: de830a8b-6ee1-4900-ace3-4237108f6b12
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

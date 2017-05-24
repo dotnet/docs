@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "matrices, alpha values"
   - "bitmaps [Windows Forms], using color matrices for semi-transparent"
 ms.assetid: a27121e6-f7e9-4c09-84e2-f05aa9d2a1bb
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

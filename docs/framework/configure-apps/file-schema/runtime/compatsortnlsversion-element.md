@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "<CompatSortNLSVersion> element"
   - "CompatSortNLSVersion element"
 ms.assetid: 782cc82e-83f7-404a-80b7-6d3061a8b6e3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

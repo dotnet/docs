@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "text, drawing to visuals"
   - "drawing, text to visuals"
 ms.assetid: fee4003c-e8a6-46ec-babd-2c7f4231a101
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugProcess::GetThread method [.NET Framework debugging]"
   - "GetThread method, ICorDebugProcess interface [.NET Framework debugging]"
 ms.assetid: a48261ed-700b-41c9-8cb4-18c526546603
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

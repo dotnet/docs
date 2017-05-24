@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "running a LINQ query [WPF], bind to results"
   - "binding to LINQ query results [WPF]"
 ms.assetid: ff2844d9-17ed-4ea6-aab1-5111af0bc684
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

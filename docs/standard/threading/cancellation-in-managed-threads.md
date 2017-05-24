@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "cancellation in .NET, overview"
 ms.assetid: eea11fe5-d8b0-4314-bb5d-8a58166fb1c3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"

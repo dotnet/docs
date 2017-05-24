@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: b7c0a2f0-e904-43b3-98e1-d669e8a589e8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,12 +23,10 @@ Returns the symbol-provider for a module from the base address of that module.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSymbolProviderForImage(  
     [in] CORDB_ADDRESS imageBaseAddress,   
     [out] ICorDebugSymbolProvider **ppSymProvider  
 );  
-  
 ```  
   
 #### Parameters  

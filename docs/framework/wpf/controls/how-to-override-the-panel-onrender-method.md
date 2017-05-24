@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "OnRender method, overriding"
   - "Panel control, overriding OnRender method"
 ms.assetid: 57397834-a085-4e36-90ab-416fad98f341
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

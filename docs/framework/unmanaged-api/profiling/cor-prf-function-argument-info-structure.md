@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_FUNCTION_ARGUMENT_INFO structure [.NET Framework profiling]"
 ms.assetid: 07cf3bab-e193-4991-8205-3f41cf2d67b3
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

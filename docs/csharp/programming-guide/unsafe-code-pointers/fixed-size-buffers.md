@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "unsafe buffers [C#]"
   - "unsafe code [C#], fixed size buffers"
 ms.assetid: 6220d454-947c-4977-ac9d-9308c6ed5051
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"

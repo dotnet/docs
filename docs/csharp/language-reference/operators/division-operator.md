@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "/ operator [C#]"
   - "division operator [C#]"
 ms.assetid: d155e496-678f-4efa-bebe-2bd08da2c5af
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

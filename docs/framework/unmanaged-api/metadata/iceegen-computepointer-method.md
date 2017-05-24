@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICeeGen::ComputePointer method [.NET Framework metadata]"
   - "ComputePointer method [.NET Framework metadata]"
 ms.assetid: b6b95c04-0f2c-4fcc-a8bc-3b1dcbdba731
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

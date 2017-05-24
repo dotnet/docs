@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ff226ce3-f6b5-47a1-8d22-dc78b67e07f5
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -36,7 +34,6 @@ The example in this section shows how to use <xref:System.Data.SqlClient.SqlDepe
 3.  Open the page's class module and add the following directives:  
   
     ```vb  
-  
     Option Strict On  
     Option Explicit On  
   

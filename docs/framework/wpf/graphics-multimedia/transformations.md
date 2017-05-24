@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "Transforms"
   - "Transforms, about Transforms"
 ms.assetid: 712b543f-d8b2-4dcf-ba2c-f7921c61c6fd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 50
 author: dotnet-bot
 ms.author: dotnetcontent

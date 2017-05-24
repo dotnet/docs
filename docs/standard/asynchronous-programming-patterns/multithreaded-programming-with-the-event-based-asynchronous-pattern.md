@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "AsyncOperation class"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 958d6617-5e70-4b36-b5db-63c16dc35e43
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

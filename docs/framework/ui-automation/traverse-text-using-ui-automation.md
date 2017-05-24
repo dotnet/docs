@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "text, traversing"
   - "traversing text"
 ms.assetid: 3ddb3b7b-1d6b-4dba-8678-5a68e868aadb
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 11
 author: "Xansky"
 ms.author: "mhopkins"

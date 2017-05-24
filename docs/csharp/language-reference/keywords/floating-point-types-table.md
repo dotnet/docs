@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "ranges of floating-point types [C#]"
   - "types [C#], floating-point types"
 ms.assetid: da886cc5-e01e-4f62-b3ec-6428c8f7a102
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

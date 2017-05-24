@@ -17,8 +17,6 @@ dev_langs:
 helpviewer_keywords: 
   - "My.Response object"
 ms.assetid: 626359bc-3165-40b4-bfaf-2c610e26eb5b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

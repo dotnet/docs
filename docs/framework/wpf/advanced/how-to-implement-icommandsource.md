@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "interfaces, ICommandSource, implementing"
   - "ICommandSource interfaces, implementing"
 ms.assetid: 7452dd39-6e11-44bf-806a-31d87f3772ac
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

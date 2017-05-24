@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "directories [Visual Basic], Visual Basic"
   - "files [Visual Basic], summary"
 ms.assetid: 588b75fd-a09b-4381-822d-19868990c170
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

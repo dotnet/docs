@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "registry, Visual Basic"
 ms.assetid: 4a0dcce0-c27b-4199-baa8-ee4528da6a56
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

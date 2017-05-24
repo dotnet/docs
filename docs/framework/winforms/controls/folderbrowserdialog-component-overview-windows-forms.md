@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "directories [Windows Forms], enabling browsing in applications"
   - "folders [Windows Forms], enabling browsing in applications"
 ms.assetid: 796b622c-3ba9-4356-93bb-e217fc52f2c7
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

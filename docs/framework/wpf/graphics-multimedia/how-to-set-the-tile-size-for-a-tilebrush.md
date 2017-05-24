@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "TileBrush, size of tiles"
   - "Viewport property of TileBrush"
 ms.assetid: 04f41090-1b46-4e36-832f-d27d28708b8c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

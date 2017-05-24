@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugCode::IsIL method [.NET Framework debugging]"
   - "IsIL method [.NET Framework debugging]"
 ms.assetid: 132ef8cc-d938-43f3-b8f2-e3b97c0ceb33
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

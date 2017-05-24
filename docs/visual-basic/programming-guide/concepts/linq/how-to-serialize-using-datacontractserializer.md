@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: ecaea518-8a0f-4249-b4e5-9b3fb0cdd8ad
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -85,7 +83,6 @@ Public Class XElementNullContainer
         member = Nothing  
     End Sub  
 End Class  
-  
 ```  
   
  This example produces the following output:  

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "native API reference [.NET Framework], hosting"
   - "hosting [.NET Framework], using the unmanaged API"
 ms.assetid: 14295c28-1da8-408b-a656-9584abcd9896
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

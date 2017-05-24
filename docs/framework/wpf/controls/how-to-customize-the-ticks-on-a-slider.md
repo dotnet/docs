@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "TickBar"
   - "Slider control, creating with TickBar"
 ms.assetid: 4fa694f2-a620-4b15-be78-5f4286f89361
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

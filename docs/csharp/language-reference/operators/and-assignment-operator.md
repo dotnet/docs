@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "AND assignment operator (&=) [C#]"
   - "&= operator [C#]"
 ms.assetid: e8d58f3f-72dd-4b5a-b995-452fcce7e6bb
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

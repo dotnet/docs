@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6ebf0240-d7be-4493-b0fe-f00fd5989d77
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Defines the SOAP message security settings on this `netMsmqBinding` binding.
 ## Syntax  
   
 ```  
-  
 <netMsmqBinding>  
     <binding>  
       <security>  

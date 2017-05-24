@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], controls"
   - "setting images, Windows Forms controls"
 ms.assetid: ae80d07a-e469-4251-90ca-df71f5852454
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

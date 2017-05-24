@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "images [Windows Forms], adding with PictureBox control [Windows Forms]"
   - "PictureBox control [Windows Forms], adding pictures"
 ms.assetid: 18ca41d0-68a5-4660-985e-a6c1fbc01d76
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -44,7 +42,6 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
        (System.Environment.SpecialFolder.Personal) _  
        & "\Image.gif")  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -57,7 +54,6 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
        (System.Environment.SpecialFolder.Personal)  
        + @"\Image.gif");  
     }  
-  
     ```  
   
     ```cpp  
@@ -82,7 +78,6 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
        PictureBox1.Image.Dispose()  
        PictureBox1.Image = Nothing  
     End If  
-  
     ```  
   
     ```csharp  
@@ -91,7 +86,6 @@ You can programmatically set the image displayed by a Windows Forms <xref:System
        pictureBox1.Image.Dispose();  
        pictureBox1.Image = null;  
     }  
-  
     ```  
   
     ```cpp  

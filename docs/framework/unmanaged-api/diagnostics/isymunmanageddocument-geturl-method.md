@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetURL method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::GetURL method [.NET Framework debugging]"
 ms.assetid: 60600178-c2b5-4cab-b3a5-f0f61acebaf1
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

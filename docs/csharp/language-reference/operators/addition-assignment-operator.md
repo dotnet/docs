@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "+= operator [C#]"
   - "addition assignment operator (+=) [C#]"
 ms.assetid: 9cdf97e6-331d-492b-85e1-3ec3171484e9
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

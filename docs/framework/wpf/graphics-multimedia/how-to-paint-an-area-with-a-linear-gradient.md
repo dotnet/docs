@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "brushes, painting with linear gradients"
   - "painting, with linear gradients"
 ms.assetid: 00e0cd04-48c0-4ec5-850e-d321beb37a34
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

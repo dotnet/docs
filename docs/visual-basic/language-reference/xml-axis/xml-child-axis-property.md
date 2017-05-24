@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "XML child axis property [Visual Basic]"
   - "XML [Visual Basic], accessing"
 ms.assetid: 89a59d00-985e-4f5c-b59f-29b47bad11cb
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ Provides access to the children of one of the following: an <xref:System.Xml.Lin
 ## Syntax  
   
 ```  
-  
 object.<child>  
 ```  
   

@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 4dcdd754-ae01-4e78-bf28-8a117fb2b73e
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Determines whether an expression results in a value in a specified range. The [!
 ## Syntax  
   
 ```  
-  
 expression [ NOT ] BETWEEN begin_expression AND end_expression    
 ```  
   

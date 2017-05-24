@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataTables interface [.NET Framework metadata]"
 ms.assetid: 31272cce-506a-4f18-bcbf-01ee45e36356
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

@@ -33,8 +33,6 @@ helpviewer_keywords:
   - "names, naming conventions"
   - "identifiers, elements"
 ms.assetid: 09d8843b-c0dc-4afe-9dab-87c439a69e66
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

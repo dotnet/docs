@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -30,7 +28,6 @@ Contains the security settings associated with a peer channel, including the typ
 ## Syntax  
   
 ```  
-  
 <security mode="None/Transport/Message/TransportWithMessageCredential">  
     <transport clientCredentialType="None/Windows/UserName/Certificate/CardSpace" />  
 </security  

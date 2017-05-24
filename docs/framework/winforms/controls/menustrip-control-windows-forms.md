@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms]"
   - "menus"
 ms.assetid: e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

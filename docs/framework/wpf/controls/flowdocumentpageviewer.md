@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "FlowDocumentPageViewer control [WPF]"
   - "controls [WPF], FlowDocumentPageViewer"
 ms.assetid: 1ed5a30e-f415-4c26-a52f-9f028a68f66f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_FINALIZER_FLAGS enumeration [.NET Framework profiling]"
 ms.assetid: 297d7721-3911-4f36-9e34-d9da0c33e22a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

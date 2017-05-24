@@ -13,8 +13,6 @@ dev_langs:
 helpviewer_keywords: 
   - "while keyword [C#]"
 ms.assetid: 72a0765c-6852-4aca-b327-4a11cb7f5c59
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 22
 author: "BillWagner"
 ms.author: "wiwagn"

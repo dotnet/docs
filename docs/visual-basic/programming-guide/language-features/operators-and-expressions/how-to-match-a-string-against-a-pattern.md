@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "pattern matching, empty strings"
   - "operators [Visual Basic], comparison"
 ms.assetid: 19a83804-b5af-4739-928b-ac93e64e457f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

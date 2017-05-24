@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "trace listeners, <sharedListeners> element"
   - "sharedListeners element"
 ms.assetid: de200534-19dd-4156-86cf-c50521802c4c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"

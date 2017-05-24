@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "SemaphoreSlim class, about SemaphoreSlim class"
   - "threading [.NET Framework], Semaphore class"
 ms.assetid: 7722a333-b974-47a2-a7c0-f09097fb644e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

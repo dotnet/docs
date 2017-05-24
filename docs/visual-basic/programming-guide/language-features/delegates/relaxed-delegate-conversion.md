@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "delegates [Visual Basic], relaxed conversion"
   - "conversions, relaxed delegate"
 ms.assetid: 64f371d0-5416-4f65-b23b-adcbf556e81c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

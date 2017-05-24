@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "conditional compilation, about conditional compilation"
   - "compilation, conditional"
 ms.assetid: 9c35e55e-7eee-44fb-a586-dad1f1884848
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

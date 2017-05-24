@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "graphics containers"
   - "examples [Windows Forms], graphics containers"
 ms.assetid: 74632f91-cefa-4f51-ab7c-f9ac91942caf
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

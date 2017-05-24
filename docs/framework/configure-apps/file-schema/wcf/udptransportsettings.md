@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 842d92e9-6199-4ec5-b2d1-58533054e1f0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ This configuration element exposes UDP transport settings for [\<udpDiscoveryEnd
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <udpDiscoveryEndpoint>           <standardEndpoint>               <updTransportSettings>                  duplicateMessageHistoryLength="Integer"                  maxBufferPoolSize="Integer"                   maxMulticastRetransmitCount="Integer"                  maxPendingMessageCount="Integer"                  maxReceivedMessageSize="Integer"                  maxUnicastRetransmitCount="Integer"                  multicastInterfaceId="String"                  socketReceiveBufferSize="Integer"                  timeToLive="Integer" />           </standardEndpoint>       </udpDiscoveryEndpoint>            </standardEndpoints>  
 </system.serviceModel>  

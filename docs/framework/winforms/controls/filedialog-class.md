@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "FileDialog class"
 ms.assetid: 85a8fb62-c7d9-4a30-9b74-1cd10efe6ccb
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

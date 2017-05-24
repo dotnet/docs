@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "namespaces [C#], :: operator"
   - "namespace alias qualifier operator (::) [C#]"
 ms.assetid: 698b5a73-85cf-4e0e-9e8e-6496887f8527
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "localization, features"
   - "globalization, features"
 ms.assetid: c4b484fb-bc90-4186-a08d-f081e7109cad
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 71
 author: dotnet-bot
 ms.author: dotnetcontent

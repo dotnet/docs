@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "x:Single [XAML Services]"
   - "x:Int32 [XAML Services]"
 ms.assetid: 11de2f08-5b95-4989-b5ec-5178eb968184
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: "wadepickett"
 ms.author: "wpickett"

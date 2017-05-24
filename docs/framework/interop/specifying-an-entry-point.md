@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "platform invoke, attribute fields"
   - "attribute fields in platform invoke, EntryPoint"
 ms.assetid: d1247f08-0965-416a-b978-e0b50652dfe3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -86,7 +84,6 @@ public class Win32 {
     public static extern int MsgBox(int hWnd, String text, String caption,  
                                     uint type);  
 }  
-  
 ```  
   
 ```cpp  

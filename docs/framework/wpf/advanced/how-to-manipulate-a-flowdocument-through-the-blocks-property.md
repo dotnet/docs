@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Blocks property, manipulating FlowDocuments"
   - "FlowDocuments, manipulating through Blocks property"
 ms.assetid: cbb7291e-3f1b-433e-9e16-f4d93ced14e8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

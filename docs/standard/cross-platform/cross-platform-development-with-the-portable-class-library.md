@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "targeting multiple platforms"
   - "multiple platforms, targeting"
 ms.assetid: c31e1663-c164-4e65-b66d-d3aa8750a154
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 95
 author: "mairaw"
 ms.author: "mairaw"
@@ -226,7 +224,6 @@ Version Information example
               style="visibility:hidden;height:0px;width:0px;border:0px">  
    </iframe>  
 </div>  
-  
 ```  
   
 ## See Also  

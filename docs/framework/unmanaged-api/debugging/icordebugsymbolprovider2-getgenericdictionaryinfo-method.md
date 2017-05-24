@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: ba28fe4e-5491-4670-bff7-7fde572d7593
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,11 +23,9 @@ Retrieves a generic dictionary map.
 ## Syntax  
   
 ```  
-  
 HRESULT GetGenericDictionaryInfo(  
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  
-  
 ```  
   
 #### Parameters  

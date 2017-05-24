@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "user input, validating in Windows Forms"
   - "validating user input, Windows Forms"
 ms.assetid: 4ec07681-1dee-4bf9-be5e-718f635a33a1
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

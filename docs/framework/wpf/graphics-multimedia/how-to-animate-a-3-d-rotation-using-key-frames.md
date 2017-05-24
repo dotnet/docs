@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "key frames, Rotation3DAnimation"
   - "3-D translations, animating, with key frames (Rotation3DAnimation)"
 ms.assetid: 6f671b95-7f30-4836-9a4f-aeb7dc30121f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

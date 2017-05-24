@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], application settings"
   - "application settings [Windows Forms], custom controls"
 ms.assetid: f44afb74-76cc-44f2-890a-44b7cdc211a1
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

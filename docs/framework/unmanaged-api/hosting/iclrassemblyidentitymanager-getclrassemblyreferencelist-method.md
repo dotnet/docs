@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetClrAssemblyReferenceList method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::GetCLRAssemblyReferenceList method [.NET Framework hosting]"
 ms.assetid: cb5ffae5-287b-4a87-9ca8-7ce3ae0601b7
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

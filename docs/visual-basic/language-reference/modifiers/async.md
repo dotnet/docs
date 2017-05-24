@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Async [Visual Basic]"
   - "Async keyword [Visual Basic]"
 ms.assetid: 1be8b4b5-9689-41b5-bd33-b906bfd53bc5
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ The `Async` modifier indicates that the method or [lambda expression](../../../v
  The following example shows the structure of an async method. By convention, async method names end in "Async."  
   
 ```vb  
-  
 Public Async Function ExampleMethodAsync() As Task(Of Integer)  
     ' . . .  
   
@@ -82,7 +79,6 @@ End Function
  The following examples show an async event handler, an async lambda expression, and an async method. For a full example that uses these elements, see [Walkthrough: Accessing the Web by Using Async and Await](../../../visual-basic/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md). You can download the walkthrough code from [Developer Code Samples](http://go.microsoft.com/fwlink/?LinkId=255191).  
   
 ```vb  
-  
 ' An event handler must be a Sub procedure.  
 Async Sub button1_Click(sender As Object, e As RoutedEventArgs) Handles button1.Click  
     textBox1.Clear()  
@@ -125,7 +121,6 @@ Private Async Function GetURLContentsAsync(url As String) As Task(Of Byte())
     ' Return the result as a byte array.  
     Return content.ToArray()  
 End Function  
-  
 ```  
   
 ## See Also  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRAssemblyReferenceList::IsStringAssemblyReferenceInList method [.NET Framework hosting]"
   - "IsStringAssemblyReferenceInList method [.NET Framework hosting]"
 ms.assetid: e6121cc3-2f11-42c7-bdae-47808581ff71
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

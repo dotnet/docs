@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "implicitly-typed arrays [C#]"
   - "C# language, implicitly typed arrays"
 ms.assetid: e05be95c-6732-403d-ae42-b35f057cbbea
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

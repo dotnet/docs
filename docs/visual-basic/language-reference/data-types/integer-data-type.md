@@ -31,8 +31,6 @@ helpviewer_keywords:
   - "I literal type character"
   - "Integer data type"
 ms.assetid: a8f233b4-4be3-455c-861b-05af2fbb6c60
-ms.technology: 
-  - "devlang-visual-basic"
 author: "rpetrusha"
 ms.author: "ronpet"
 

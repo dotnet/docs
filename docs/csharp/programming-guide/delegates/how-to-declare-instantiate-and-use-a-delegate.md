@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "delegates [C#], declaring and instantiating"
 ms.assetid: 61c4895f-f785-48f8-8bfe-db73b411c4ae
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

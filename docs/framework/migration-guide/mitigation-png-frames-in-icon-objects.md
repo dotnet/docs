@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ca87fefb-7144-4b4e-8832-5a939adbb4b2
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -31,7 +29,6 @@ Starting with the .NET Framework 4.6, the <xref:System.Drawing.Icon.ToBitmap%2A?
 ```  
 <AppContextSwitchOverrides   
       value="Switch.System.Drawing.DontSupportPngFramesInIcons=true" />  
-  
 ```  
   
  If the app.config file already contains the `AppContextSwitchOverrides` element, the new value should be merged with the `value` attribute like this:  
@@ -39,7 +36,6 @@ Starting with the .NET Framework 4.6, the <xref:System.Drawing.Icon.ToBitmap%2A?
 ```  
 <AppContextSwitchOverrides   
       value="Switch.System.Drawing.DontSupportPngFramesInIcons=true;<previous key>=<previous value>" />  
-  
 ```  
   
 ## See Also  

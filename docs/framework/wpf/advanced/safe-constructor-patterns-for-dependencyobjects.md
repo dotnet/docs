@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "dependency objects, constructor patterns"
   - "FXCop tool"
 ms.assetid: f704b81c-449a-47a4-ace1-9332e3cc6d60
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

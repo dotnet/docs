@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "GAC (global assembly cache), benefits"
   - "access control lists [.NET Framework]"
 ms.assetid: 8a18e5c2-d41d-49ef-abcb-7c27e2469433
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

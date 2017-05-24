@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "/preferreduilang compiler option [C#]"
   - "-preferreduilang compiler option [C#]"
 ms.assetid: 68b2462f-6778-48d7-8052-62805fe8e02c
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

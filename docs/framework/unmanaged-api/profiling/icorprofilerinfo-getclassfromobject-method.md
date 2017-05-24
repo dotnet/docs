@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetClassFromObject method [.NET Framework profiling]"
   - "ICorProfilerInfo::GetClassFromObject method [.NET Framework profiling]"
 ms.assetid: b97493fb-713e-49d5-a73e-5688b2ad0700
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

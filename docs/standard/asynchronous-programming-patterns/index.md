@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "asynchronous design patterns, .NET Framework"
   - ".NET Framework, asynchronous design patterns"
 ms.assetid: 4ece5c0b-f8fe-4114-9862-ac02cfe5a5d7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"

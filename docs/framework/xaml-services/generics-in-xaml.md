@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "generics [XAML Services]"
 ms.assetid: 835bfed7-585c-4216-ae67-b674edab8b92
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"

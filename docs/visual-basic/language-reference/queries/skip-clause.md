@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Skip statement"
   - "Skip clause"
 ms.assetid: f00eb172-3907-4c43-9745-d8546ab86234
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

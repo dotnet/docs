@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], numeric"
   - "unsigned types, using"
 ms.assetid: c2c0e712-8dc2-43b9-b4c6-345fbb02e7ce
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

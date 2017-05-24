@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ECustomDumpItemKind enumeration [.NET Framework hosting]"
 ms.assetid: 7105a6c8-6e4e-48de-ac3d-74ac75e5de2e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

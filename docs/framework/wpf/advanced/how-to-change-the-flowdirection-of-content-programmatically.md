@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "FlowDirection property, changing programmatically"
   - "documents, changing FlowDirection property programmatically"
 ms.assetid: 02f5a8ba-f8c0-4e5a-84b9-4c5bf12922a2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

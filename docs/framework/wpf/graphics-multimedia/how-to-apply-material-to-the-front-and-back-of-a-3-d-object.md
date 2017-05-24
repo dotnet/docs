@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Material class, applying to both sides of 3-D object"
   - "classes, Material"
 ms.assetid: d93c8ad6-4939-4d29-9544-4d16d98093c1
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

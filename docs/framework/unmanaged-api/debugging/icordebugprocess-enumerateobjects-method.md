@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "EnumerateObjects method [.NET Framework debugging]"
   - "ICorDebugProcess::EnumerateObjects method [.NET Framework debugging]"
 ms.assetid: 5cf8c5b0-6caa-4f5d-8afe-957573c5ee43
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

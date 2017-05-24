@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework development"
 ms.assetid: 653da4ba-3752-4d1f-a08a-de017dc86ecc
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 19
 author: "rpetrusha"
 ms.author: "ronpet"

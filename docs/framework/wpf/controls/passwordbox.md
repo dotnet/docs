@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "PasswordBox control [WPF]"
   - "controls [WPF], PasswordBox"
 ms.assetid: 4dbf0320-30c2-4015-b9bc-4f6502f78e32
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 69
 author: dotnet-bot
 ms.author: dotnetcontent

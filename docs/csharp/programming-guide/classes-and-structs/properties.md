@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "properties [C#]"
   - "C# language, properties"
 ms.assetid: e295a8a2-b357-4ee7-a12e-385a44146fa8
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 38
 author: "BillWagner"
 ms.author: "wiwagn"

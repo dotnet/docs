@@ -34,8 +34,6 @@ helpviewer_keywords:
   - "modal dialog boxes"
   - "displaying XAML pages"
 ms.assetid: 737d04ec-8861-46c3-8d44-fa11d3528d23
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -129,7 +127,6 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
     <Compile Include=" MarkupAndCodeBehindWindow.xaml.cs" />  
     ...  
 </Project>  
-  
 ```  
   
  For information about building                  [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] applications, see                  [Building a WPF Application](../../../../docs/framework/wpf/app-development/building-a-wpf-application-wpf.md).  

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "object variables, declaring"
   - "declaring object variables"
 ms.assetid: 2fa77dde-1fb2-439a-80d4-3e9787649fad
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -43,7 +41,6 @@ You declare a variable of the [Object Data Type](../../../../visual-basic/langua
  The following example declares an `Object` variable and assigns the current instance to it.  
   
 ```  
-  
       Dim thisObject As Object  
 thisObject = "This is an Object"  
 ```  

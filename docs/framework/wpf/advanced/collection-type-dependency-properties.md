@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "dependency properties"
   - "collection-type properties"
 ms.assetid: 99f96a42-3ab7-4f64-a16b-2e10d654e97c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

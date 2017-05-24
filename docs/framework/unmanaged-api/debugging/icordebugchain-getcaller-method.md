@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugChain::GetCaller method [.NET Framework debugging]"
   - "GetCaller method, ICorDebugChain interface [.NET Framework debugging]"
 ms.assetid: d0b8ab4b-d7d2-4fa0-945f-3d2b87e7e991
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

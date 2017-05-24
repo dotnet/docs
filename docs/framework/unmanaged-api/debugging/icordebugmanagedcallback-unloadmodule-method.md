@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugManagedCallback::UnloadModule method [.NET Framework debugging]"
   - "UnloadModule method [.NET Framework debugging]"
 ms.assetid: b12bfcd9-1e29-48bf-9a3d-44bfae5df5e8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

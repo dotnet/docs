@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a3d9d1f9-4a53-45e9-a880-86c8bee0b833
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ Represents a configuration section for defining a backup list that enumerates a 
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  
@@ -64,7 +61,6 @@ Represents a configuration section for defining a backup list that enumerates a 
  In the following example, if a send to the primary endpoint named "Destination" returns a communication exception, the service will attempt to send the message to the "alternateServiceQueue". If this attempt also returns a communication exception, the Routing Service will attempt to send the message to the next endpoint in the collection.  
   
 ```  
-  
 <filterTables>  
      <filterTable name="filterTable1">  
           <add filterName="MatchAllFilter1" endpointName="Destination" backupList="backupEndpointList"/>  

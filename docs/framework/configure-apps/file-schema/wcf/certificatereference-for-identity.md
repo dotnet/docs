@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ac359c65-c22d-42d2-97de-db53b77cebdb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -26,7 +24,6 @@ Specifies settings for X.509 certificate validation. A secure [!INCLUDE[indigo1]
 ## Syntax  
   
 ```  
-  
 <certificateReference   
         findValue="String"   
     isChainIncluded="Boolean"  

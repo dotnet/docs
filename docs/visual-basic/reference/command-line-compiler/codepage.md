@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "codepage compiler option [Visual Basic]"
   - "-codepage compiler option [Visual Basic]"
 ms.assetid: be36ec33-6800-4505-838c-4124564f5cc9
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

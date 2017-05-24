@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugProcess::EnumerateAppDomains method [.NET Framework debugging]"
   - "EnumerateAppDomains method [.NET Framework debugging]"
 ms.assetid: d508981f-e2b2-445b-a649-69951c22702d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

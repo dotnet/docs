@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerCallback::ExceptionUnwindFunctionLeave method [.NET Framework profiling]"
   - "ExceptionUnwindFunctionLeave method [.NET Framework profiling]"
 ms.assetid: ebaad1d5-ee0a-4cb0-96bc-8ba5d371b747
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

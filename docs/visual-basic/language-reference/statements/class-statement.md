@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "classes [Visual Basic], data members"
   - "data members, of classes"
 ms.assetid: f2664f38-eb5a-4d4b-a374-1d041521fb6c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 29
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_TYPE_LAYOUT structure [.NET Framework debugging]"
 ms.assetid: 43a7addd-f25a-4049-9907-abec3eb17af2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "creating add-ins [WPF]"
   - "add-ins [WPF], returns a UI"
 ms.assetid: c33980e8-36e7-45ce-a485-8c826dd29009
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent

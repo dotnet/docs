@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "BeginDelayAbort method [.NET Framework hosting]"
   - "IHostTaskManager::BeginDelayAbort method [.NET Framework hosting]"
 ms.assetid: 75f42a8b-ed68-4718-a030-a179cfba7d72
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "XAML, DynamicResource markup extension"
   - "DynamicResource markup extensions"
 ms.assetid: 7324f243-03af-4c2b-b0db-26ac6cdfcbe4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

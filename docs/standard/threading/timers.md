@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], timers"
   - "timers, about timers"
 ms.assetid: 7091500d-be18-499b-a942-95366ce185e5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IHostMemoryManager::VirtualFree method [.NET Framework hosting]"
   - "VirtualFree method [.NET Framework hosting]"
 ms.assetid: 1a436e89-eb28-4d15-bcf1-a072f86dbd99
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

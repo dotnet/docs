@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "resource files, .resx files"
   - ".resx files"
 ms.assetid: 168f941a-2b84-43f8-933f-cf4a8548d824
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

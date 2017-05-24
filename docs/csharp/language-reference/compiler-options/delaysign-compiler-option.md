@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "delaysign compiler option [C#]"
   - "/delaysign compiler option [C#]"
 ms.assetid: bcb058eb-2933-4e7f-b356-5c941db4de75
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

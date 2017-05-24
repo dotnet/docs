@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 39b16b82-4ec6-4eff-8031-67e026870961
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ Specifying a binding that provides context for the <xref:System.ServiceModel.Bas
 ## Syntax  
   
 ```  
-  
 <basicHttpContextBinding>  
    <binding   
        allowCookies="Boolean"  

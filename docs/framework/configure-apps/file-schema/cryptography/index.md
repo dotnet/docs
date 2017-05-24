@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "configuration sections [.NET Framework]"
   - "configuration settings [.NET Framework], cryptography"
 ms.assetid: 1f55050a-b2a3-4868-a3c0-da20826150f3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"

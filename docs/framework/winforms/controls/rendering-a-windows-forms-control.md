@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], graphics resources"
   - "custom controls [Windows Forms], invalidation and painting"
 ms.assetid: aae8e1e6-4786-432b-a15e-f4c44760d302
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

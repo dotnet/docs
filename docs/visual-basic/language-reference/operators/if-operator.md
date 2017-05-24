@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "conditional operator [Visual Basic]"
   - "If Operator [Visual Basic]"
 ms.assetid: dd56c9df-7cd4-442c-9ba6-20c70ee44c8f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

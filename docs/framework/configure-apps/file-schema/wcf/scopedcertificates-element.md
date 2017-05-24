@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c7b6fc35-d4b2-4c18-98bd-83e09591f1d3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <scopedCertificates>  
       <add findValue="String"  
                 storeLocation="CurrentUser/LocalMachine"  

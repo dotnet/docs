@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8ef05bc4-1950-4ee4-95c5-1c6a394eff7e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Specifies the types of claims to be removed in the federated credential.
 ## Syntax  
   
 ```  
-  
 <claimTypeRequirements>  
       <remove claimType="URI" />  
 </claimTypeRequirements>  

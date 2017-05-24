@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "3-D transformations"
   - "transformations, 3-D"
 ms.assetid: e45e555d-ac1e-4b36-aced-e433afe7f27f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

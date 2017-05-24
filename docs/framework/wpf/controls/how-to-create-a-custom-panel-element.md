@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Panel control"
   - "custom Panel elements"
 ms.assetid: e0df4f1e-8c07-4e86-89a3-e22acfffdc2a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

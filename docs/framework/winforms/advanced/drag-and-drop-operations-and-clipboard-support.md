@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "drag and drop, Windows Forms"
   - "Clipboard, Windows Forms"
 ms.assetid: 7cce79b6-5835-46fd-b690-73f12ad368b2
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "interop events [.NET Framework]"
   - "ETW, interop events (CLR)"
 ms.assetid: eb6eac2e-45f4-4923-a32c-38f203da66df
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

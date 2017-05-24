@@ -13,8 +13,6 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: 2fc8fedc-78d0-4e87-8142-fbfd26c15a4e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 23
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies binding, contract, and address properties for a service endpoint, whic
 ## Syntax  
   
 ```  
-  
 <endpoint address="String"  
    behaviorConfiguration="String"  
    binding="String"  

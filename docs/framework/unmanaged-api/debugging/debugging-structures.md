@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "debugging structures [.NET Framework]"
   - "structures [.NET Framework debugging]"
 ms.assetid: 173ba2c2-ab34-49ae-b6a8-e5c49882bf05
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

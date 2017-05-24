@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetAssemblyProps method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::GetAssemblyProps method [.NET Framework metadata]"
 ms.assetid: 0eaa4aa9-9441-444a-920c-e4b2a2db899e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

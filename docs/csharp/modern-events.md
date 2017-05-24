@@ -1,5 +1,5 @@
 ---
-title: The Updated .NET Core Event Pattern
+title: The Updated .NET Core Event Pattern | Microsoft Docs
 description: The Updated .NET Core Event Pattern
 keywords: .NET, .NET Core
 author: BillWagner

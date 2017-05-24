@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6c0b353d-79ee-4e61-b348-be49ad0e9a16
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "Erikre"
 ms.author: "erikre"
@@ -47,7 +45,6 @@ A custom binding is defined by an ordered list of discrete binding elements. Thi
         </binding>  
     </customBinding>  
 </bindings>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in both the service and client console window. The client communicates with each of the three endpoints, accessing first HTTP, then TCP, and finally NamedPipe. Press ENTER in each console window to shut down the service and client.  

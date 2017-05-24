@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "declaring constants, keywords"
   - "declarations, Visual Basic language elements"
 ms.assetid: 79d64f3e-941d-4d39-bc5b-79f225d5be6e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

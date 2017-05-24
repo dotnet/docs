@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "CommandBindings"
   - "commanding"
 ms.assetid: d8016266-58d9-48f7-8298-a86b7ed49fbd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "properties [Visual Basic], setting at run time"
   - "CallByName function"
 ms.assetid: 79a7b8b4-b8c7-4ad8-aca8-12a9a2b32f03
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

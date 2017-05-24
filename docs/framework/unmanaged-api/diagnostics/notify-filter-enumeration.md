@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "NOTIFY_FILTER enumeration [.NET Framework debugging]"
 ms.assetid: 4789d08f-8683-45d3-ac30-73d48c61e470
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

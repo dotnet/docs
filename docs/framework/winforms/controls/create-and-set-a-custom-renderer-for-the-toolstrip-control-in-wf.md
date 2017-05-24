@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "ToolStrip control [Windows Forms], rendering"
 ms.assetid: 88a804ba-679f-4ba3-938a-0dc396199c5b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

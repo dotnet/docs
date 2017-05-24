@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ee2b7be3-7148-4a3a-b861-48e7330615e5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Specifies a type to be used by <xref:System.Runtime.Serialization.DataContractSe
 ## Syntax  
   
 ```  
-  
 <knownType type="String">  
      <parameter index="Integer"  
                 type="String" />  

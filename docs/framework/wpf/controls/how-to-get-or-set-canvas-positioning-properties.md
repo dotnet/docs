@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Canvas control, setting positioning properties"
 ms.assetid: 1636b950-2b5a-4507-8a10-c5034cc58b1c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "parts [WPF], ListBox"
   - "ListBox [WPF], styles and templates"
 ms.assetid: fc5764cb-c27b-495b-88d4-d969a8213ccb
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

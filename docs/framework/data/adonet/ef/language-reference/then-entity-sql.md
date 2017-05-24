@@ -15,8 +15,6 @@ dev_langs:
   - "C++"
   - "ESQL"
 ms.assetid: 54222642-23c6-4f61-9861-67caca53ac5f
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -28,7 +26,6 @@ The result of a WHEN clause when it evaluates to `true`.
 ## Syntax  
   
 ```  
-  
 WHEN when_expression THEN then_expression  
 ```  
   

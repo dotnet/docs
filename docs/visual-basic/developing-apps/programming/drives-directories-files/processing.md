@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "files [Visual Basic], accessing"
   - "directories [Visual Studio], processing"
 ms.assetid: f1db14c8-a4fd-4d0b-8323-c7cb29d688c2
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

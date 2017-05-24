@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: cace24eb-0f43-4016-8e4b-199e5ef73a1c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -82,7 +80,6 @@ Public Class XLinqTest
         End Using  
     End Sub  
 End Class  
-  
 ```  
   
  This example produces the following output:  

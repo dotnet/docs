@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8586ecc9-bdaa-44d6-8d4d-7038e4ea1741
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ Defines an interoperable binding that provides support for the correct versions 
 ## Syntax  
   
 ```  
-  
 <ws2007HttpBinding>  
     <binding   
         allowCookies="Boolean"  

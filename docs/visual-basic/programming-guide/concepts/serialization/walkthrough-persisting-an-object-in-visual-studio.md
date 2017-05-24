@@ -12,8 +12,6 @@ ms.topic: "get-started-article"
 dev_langs: 
   - "VB"
 ms.assetid: f1d0b562-e349-4dce-ab5f-c05108467030
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent

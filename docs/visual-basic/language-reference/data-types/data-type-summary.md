@@ -47,8 +47,6 @@ helpviewer_keywords:
   - "storage order, controlling in Visual Basic"
   - "data types [Visual Basic], memory requirements"
 ms.assetid: e975cdb6-64d8-4a4a-ae27-f3b3ed198ae0
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

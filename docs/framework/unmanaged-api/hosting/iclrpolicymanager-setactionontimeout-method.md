@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetActionOnTimeout method [.NET Framework hosting]"
   - "ICLRPolicyManager::SetActionOnTimeout method [.NET Framework hosting]"
 ms.assetid: 38439fa1-2b99-4fa8-a6ec-08afc0f83b9c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

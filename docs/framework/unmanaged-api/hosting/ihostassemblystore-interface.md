@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostAssemblyStore interface [.NET Framework hosting]"
 ms.assetid: cccb650f-abe0-41e2-9fd1-b383788eb1f6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

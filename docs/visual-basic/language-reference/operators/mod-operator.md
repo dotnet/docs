@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "arithmetic operators, Mod"
   - "math operators"
 ms.assetid: 6ff7e40e-cec8-4c77-bff6-8ddd2791c25b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -50,7 +48,6 @@ Divides two numbers and returns only the remainder.
 ## Syntax  
   
 ```  
-  
 number1 Mod number2  
 ```  
   

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "UTC times, finding local system time zones"
   - "time zones [.NET Framework], UTC"
 ms.assetid: 3f63b1bc-9a4b-4bde-84ea-ab028a80d3e1
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

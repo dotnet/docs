@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "WCF, privacy information"
   - "privacy information [WCF]"
 ms.assetid: c9553724-f3e7-45cb-9ea5-450a22d309d9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 34
 author: "Erikre"
 ms.author: "erikre"

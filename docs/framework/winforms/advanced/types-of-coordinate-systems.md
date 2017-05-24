@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "coordinate systems"
   - "transformations, world"
 ms.assetid: c61ff50a-eb1d-4e6c-83cd-f7e9764cfa9f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

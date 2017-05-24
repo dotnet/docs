@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "WithEvents keyword, walkthroughs"
   - "event handlers [Visual Basic], walkthroughs"
 ms.assetid: f145b3fc-5ae0-4509-a2aa-1ff6934706bd
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "property pages, Windows Forms"
   - "Windows Forms dialog boxes, tabs"
 ms.assetid: 2b4ea784-a39d-463c-81d8-af74ce068476
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

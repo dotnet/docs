@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 98701444-b9bc-4978-9548-89ac3394147d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,7 +23,6 @@ Gets the assembly's prefix index.
 ## Syntax  
   
 ```  
-  
 HRESULT GetIndex(  
    [out] ULONG32 *pIndex  
 );  

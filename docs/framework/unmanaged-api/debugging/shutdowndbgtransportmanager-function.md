@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "Silverlight, remote debugging"
   - "ShutdownDbgTransportManager function"
 ms.assetid: 6325a782-6862-4346-8e20-d922ca246169
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

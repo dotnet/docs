@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "WCF Data Services, asynchronous operations"
 ms.assetid: 834614df-1427-4839-b0be-90f68e5afffd
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

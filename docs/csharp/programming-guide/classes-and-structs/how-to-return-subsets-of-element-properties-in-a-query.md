@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "anonymous types [C#], for subsets of element properties"
 ms.assetid: fabdf349-f443-4e3f-8368-6c471be1dd7b
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetAppDomainsContainingModule method [.NET Framework profiling]"
   - "ICorProfilerInfo3::GetAppDomainsContainingModule method [.NET Framework profiling]"
 ms.assetid: 603b3881-ea94-4dca-95cd-91eebac873a0
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

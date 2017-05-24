@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "graphics [WPF], shapes"
   - "shapes, creating with StreamGeometry class"
 ms.assetid: 08f7c8ce-074b-49cd-9aba-cc9592d4ee51
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

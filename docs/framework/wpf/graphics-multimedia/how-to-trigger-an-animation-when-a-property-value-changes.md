@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "triggering animation"
   - "Storyboards, starting when property values change"
 ms.assetid: 12399c21-0300-4f4f-9e3a-d92d9907e5f5
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

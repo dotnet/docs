@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "decoding image formats"
   - "encoding PNG images"
 ms.assetid: 3d31d186-af73-47f0-b5a7-c26ae46409a6
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

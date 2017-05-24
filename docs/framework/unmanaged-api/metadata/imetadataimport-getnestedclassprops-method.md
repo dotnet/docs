@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetNestedClassProps method [.NET Framework metadata]"
   - "IMetaDataImport::GetNestedClassProps method [.NET Framework metadata]"
 ms.assetid: 704d19f1-bdef-4745-af8c-6476eb246fb3
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

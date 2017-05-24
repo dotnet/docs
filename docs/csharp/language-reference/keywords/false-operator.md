@@ -10,8 +10,6 @@ dev_langs:
 helpviewer_keywords: 
   - "false operator keyword [C#]"
 ms.assetid: 81a888fd-011e-4589-b242-6c261fea505e
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

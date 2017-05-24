@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "graphics rendering tiers"
   - "graphics, rendering tiers"
 ms.assetid: 08dd1606-02a2-4122-9351-c0afd2ec3a70
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 44
 author: dotnet-bot
 ms.author: dotnetcontent

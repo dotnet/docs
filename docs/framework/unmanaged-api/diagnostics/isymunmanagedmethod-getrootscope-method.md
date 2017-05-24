@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ISymUnmanagedMethod::GetRootScope method [.NET Framework debugging]"
   - "GetRootScope method [.NET Framework debugging]"
 ms.assetid: 7d58caac-2e75-4dfa-9249-32d8a624b247
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

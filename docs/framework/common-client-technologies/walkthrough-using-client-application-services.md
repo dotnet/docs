@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "application services host [client application services]"
   - "client application services, walkthroughs"
 ms.assetid: bb7c8950-4517-4dae-b705-b74a14059b26
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 47
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -138,7 +136,6 @@ This topic describes how to create a Windows application that uses client applic
           serializeAs="String" allowAnonymous="false" />  
       </properties>  
     </profile>  
-  
     ```  
   
  In the following procedure, you use the ASP.NET Web Site Administration tool to complete the service configuration and populate the local database file. You will add two users named `employee` and `manager` belonging to two roles with the same names. The user passwords are `employee!` and `manager!` respectively.  

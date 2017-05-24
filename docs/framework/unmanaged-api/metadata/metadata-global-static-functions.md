@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "unmanaged global static functions [.NET Framework], metadata"
   - "metadata global static functions [.NET Framework]"
 ms.assetid: d3bbc8a7-b1c7-494f-b1cc-d71cf2ecb1bc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

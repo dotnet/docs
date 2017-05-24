@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataFilter::UnmarkAll method [.NET Framework metadata]"
   - "UnmarkAll method [.NET Framework metadata]"
 ms.assetid: a04d91dc-690f-4de8-8c97-55c69a8503b4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "ScrollBar control [Windows Forms], about ScrollBar control"
   - "scroll bars, about scroll bars"
 ms.assetid: 8b307679-1cae-41d8-99aa-3d1efd207cd6
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

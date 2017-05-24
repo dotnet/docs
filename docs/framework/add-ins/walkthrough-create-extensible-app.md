@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "add-in-side adapter [.NET Framework]"
   - "contracts for add-in pipelines [.NET Framework]"
 ms.assetid: 694a33c5-a040-450d-aed5-ac49fc88ce61
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 32
 author: "rpetrusha"
 ms.author: "ronpet"

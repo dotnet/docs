@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "calendars, selecting date range"
   - "MonthCalendar control [Windows Forms], selecting date range"
 ms.assetid: 95d9ab95-b0f8-4c19-9f63-b5cd4593a5d0
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

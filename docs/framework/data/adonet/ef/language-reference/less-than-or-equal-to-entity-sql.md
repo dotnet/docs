@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 7c46da5c-fa09-4d90-adcc-c7e1b769d8e6
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Compares two expressions to determine whether the left expression has a value le
 ## Syntax  
   
 ```  
-  
 expression <= expression  
 ```  
   

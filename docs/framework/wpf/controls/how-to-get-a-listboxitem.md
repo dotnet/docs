@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "ListBox controls, getting a ListBoxItem"
   - "ListBoxItem"
 ms.assetid: da877c6f-5fd8-40cb-8909-225cbfd99aa5
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

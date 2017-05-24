@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "ServiceInstaller class, adding installers to services"
   - "ServiceProcessInstaller class, adding installers to services"
 ms.assetid: 8b698e9a-b88e-4f44-ae45-e0c5ea0ae5a8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "ghogen"
 ms.author: "ghogen"

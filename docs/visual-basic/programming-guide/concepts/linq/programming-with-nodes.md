@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: d8422a9b-dd37-44a3-8aac-2237ed9561e0
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -39,7 +37,6 @@ translation.priority.mt:
 Dim doc As XDocument = XDocument.Parse("<!-- a comment --><Root/>")  
 Console.WriteLine(doc.Nodes().OfType(Of XComment).First().Parent Is Nothing)  
 Console.WriteLine(doc.Root.Parent Is Nothing)  
-  
 ```  
   
  This example produces the following output:  
@@ -65,7 +62,6 @@ Console.WriteLine(xmlTree.Nodes().OfType(Of XText)().Count())
 '// This does add a new, adjacent text node.  
 xmlTree.Add(New XText("more text"))  
 Console.WriteLine(xmlTree.Nodes().OfType(Of XText)().Count())  
-  
 ```  
   
  This example produces the following output:  
@@ -88,7 +84,6 @@ textNode.Value = ""
   
 Dim textNode2 As XText = xmlTree.Nodes().OfType(Of XText)().First()  
 Console.WriteLine(">>{0}<<", textNode2)  
-  
 ```  
   
  This example produces the following output:  
@@ -107,7 +102,6 @@ Dim child1 As XElement = New XElement("Child1", _
 Dim child2 As XElement = New XElement("Child2")  
 Console.WriteLine(child1)  
 Console.WriteLine(child2)  
-  
 ```  
   
  This example produces the following output:  
@@ -132,7 +126,6 @@ For Each att As XAttribute In root.Attributes()
     Console.WriteLine("{0}  IsNamespaceDeclaration:{1}", att, _  
                       att.IsNamespaceDeclaration)  
 Next  
-  
 ```  
   
  This example produces the following output:  
@@ -159,7 +152,6 @@ Console.WriteLine(root.Nodes().OfType(Of XText)().Count())
 ' Count the white space child nodes using XPathEvaluate.  
 Dim nodes As IEnumerable = CType(root.XPathEvaluate("text()"), IEnumerable)  
 Console.WriteLine(nodes.OfType(Of XText)().Count())  
-  
 ```  
   
  This example produces the following output:  
@@ -182,7 +174,6 @@ Console.WriteLine(File.ReadAllText("Temp.xml"))
   
 ' This shows that there is only one child node of the document.  
 Console.WriteLine(doc.Nodes().Count())  
-  
 ```  
   
  This example produces the following output:  

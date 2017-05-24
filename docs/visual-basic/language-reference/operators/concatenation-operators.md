@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], concatenation"
   - "concatenation operators, Visual Basic strings"
 ms.assetid: d787368b-3713-47ff-bce8-f112720a673a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

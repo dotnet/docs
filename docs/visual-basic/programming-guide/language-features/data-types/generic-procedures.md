@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "generics [Visual Basic], procedures"
   - "generic procedures, type inference"
 ms.assetid: 95577b28-137f-4d5c-a149-919c828600e5
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

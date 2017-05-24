@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetObjectGeneration method [.NET Framework profiling]"
   - "ICorProfilerInfo2::GetObjectGeneration method [.NET Framework profiling]"
 ms.assetid: b0d25f76-0bd5-4aa6-96cf-bfec0e1de28b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

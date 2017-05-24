@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "data binding, binding source"
   - "binding sources"
 ms.assetid: 55d47757-2648-4a52-987f-b767953f168c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -27,8 +27,6 @@ helpviewer_keywords:
   - "signed assemblies"
   - "COM interop, exposing COM components"
 ms.assetid: ea8a403e-ae03-4faa-9d9b-02179ec72992
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

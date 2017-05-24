@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "RotateTransform class"
   - "spinning elements"
 ms.assetid: 1f011976-8b07-4c31-9faf-019e0ddaa24c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

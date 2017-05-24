@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Imports statement, referencing assemblies"
   - "assemblies [Visual Basic], references"
 ms.assetid: 38149bd4-0a6f-4b31-b5f8-94a8c33f1600
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

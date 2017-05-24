@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 5b2b0d34-d0a7-4bcd-baf2-58aa8456d00b
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Determines whether the type of an expression is of the specified type or one of 
 ## Syntax  
   
 ```  
-  
 expression IS [ NOT ] OF ( [ ONLY ] type )  
 ```  
   

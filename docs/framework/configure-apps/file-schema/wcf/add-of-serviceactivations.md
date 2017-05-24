@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e5b01fc8-ee84-48b7-95fd-95ab54fa871f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -26,7 +24,6 @@ A configuration element that allows you to define virtual service activation set
 ## Syntax  
   
 ```  
-  
 <serviceHostingEnvironment>   
    <serviceActivations>  
       <add factory="String"  

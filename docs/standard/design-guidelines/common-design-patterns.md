@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "design patterns in class libraries"
   - "class library design guidelines [.NET Framework], design patterns"
 ms.assetid: f7bd1361-4ab2-4132-972d-a044b8f197e1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

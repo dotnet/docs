@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "data binding [WPF], binding to XDocument"
   - "data binding [WPF], binding to XElement"
 ms.assetid: 6a629a49-fe1c-465d-b76a-3dcbf4307b64
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

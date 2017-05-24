@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "writing to files"
   - "Visual Basic, writing to files"
 ms.assetid: ac6fb453-0d6c-4ce4-93b4-1bbcd06de83e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

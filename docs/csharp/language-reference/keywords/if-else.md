@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "else keyword [C#]"
   - "if keyword [C#]"
 ms.assetid: d9a1d562-8cf5-4bd4-9ba7-8ad970cd25b2
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 32
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -47,7 +45,6 @@ An `if` statement identifies which statement to run based on the value of a `Boo
  An `if` statement in C# can take two forms, as the following example shows.  
   
 ```csharp  
-  
 // if-else statement  
 if (condition)  
 {  

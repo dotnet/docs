@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "trace sources"
   - "<sources> element"
 ms.assetid: c727b2e2-423a-4463-a223-013f40ff16a3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"

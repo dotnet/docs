@@ -11,9 +11,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: cf3735f0-0dd4-4bef-b4b0-575264e10f39
-ms.technology: 
-  - "dotnet-standard"
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -33,17 +30,14 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
 -   You can opt out of this change without modifying your source code by adding the following to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your app.config file:  
   
     ```xml  
-  
     <runtime>  
         <AppContextSwitchOverrides value = "Switch.System.MemberDescriptorEqualsReturnsFalseIfEquivalent=true" />  
      </runtime>  
-  
     ```  
   
 -   You can modify your source code to restore the previous behavior by manually comparing the  <xref:System.ComponentModel.MemberDescriptor.Category%2A?displayProperty=fullName> and <xref:System.ComponentModel.MemberDescriptor.Description%2A?displayProperty=fullName> properties after calling the <xref:System.ComponentModel.MemberDescriptor.Equals%2A?displayProperty=fullName> method, as the following code fragment does.  
   
     ```csharp  
-  
     if (memberDescriptor1.Equals(memberDescriptor2) &   
         memberDescriptor1.Description.Equals(memberDescriptor2.Category)) {  
           // Code to execute if true.  
@@ -51,28 +45,23 @@ Starting with apps that target the [!INCLUDE[net_v462](../../../includes/net-v46
     else {  
           // Code to execute if false.     
     }  
-  
     ```  
   
     ```  
-  
     If memberDescriptor1.Equals(memberDescriptor2) And   
         memberDescriptor1.Description.Equals(memberDescriptor2.Category)  
           // Code to execute if True.  
     Else  
           // Code to execute if False.     
     End If  
-  
     ```  
   
  For apps that target the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and earlier versions, you can enable this change by adding the following value to your app.config file:  
   
 ```xml  
-  
 <runtime>  
     <AppContextSwitchOverrides value="Switch.System.MemberDescriptorEqualsReturnsFalseIfEquivalent=true />  
 </runtime>  
-  
 ```  
   
 ## See Also  

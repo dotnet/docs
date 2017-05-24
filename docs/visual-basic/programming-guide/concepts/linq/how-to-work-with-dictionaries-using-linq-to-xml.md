@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 6cb3f969-1986-414a-b850-87418712edea
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -42,7 +40,6 @@ Console.WriteLine(root)
  This code produces the following output:  
   
 ```xml  
-  
           <Root>  
   <Child1>Value1</Child1>  
   <Child2>Value2</Child2>  

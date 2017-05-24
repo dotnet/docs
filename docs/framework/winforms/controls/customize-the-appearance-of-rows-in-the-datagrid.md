@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "rows, customizing in DataGridView control"
   - "DataGridView control [Windows Forms], customizing rows"
 ms.assetid: d40b53d2-7e7c-48c5-8570-6e79d15c3bbb
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

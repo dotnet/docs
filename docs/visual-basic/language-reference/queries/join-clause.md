@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "Join statement"
   - "Join clause"
 ms.assetid: 6dd37936-b27c-4e00-98ad-154b23f4de64
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

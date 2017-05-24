@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Image control"
   - "rendering images"
 ms.assetid: 5b92e74b-1b56-4756-ac64-d5e9e08d9854
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

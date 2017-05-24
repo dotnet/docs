@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5034f5de-bb60-4157-9ad4-58aaade094e0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ A configuration element that allows you to enable and disable different aspects 
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
    <diagnostics>  
        <endToEndTracing activityTracing="Boolean"  

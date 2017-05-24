@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "statements [Visual Basic], structure"
   - "structures, declaring"
 ms.assetid: d5e98381-eb81-47d4-af83-48cc534a2572
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

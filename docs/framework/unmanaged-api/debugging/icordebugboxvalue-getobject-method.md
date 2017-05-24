@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugBoxValue::GetObject method [.NET Framework debugging]"
   - "GetObject method, ICorDebugBoxValue interface [.NET Framework debugging]"
 ms.assetid: 3a867a5b-bf94-493f-a4f5-b28685cf5325
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

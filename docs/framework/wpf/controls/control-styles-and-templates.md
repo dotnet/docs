@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "states [WPF]"
   - "templates [WPF]"
 ms.assetid: c19049bb-5ceb-492d-afd2-751dca0ed8e3
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent

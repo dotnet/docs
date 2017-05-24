@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "anonymous types [Visual Basic]"
   - "types [Visual Basic], anonymous"
 ms.assetid: 7b87532c-4b3e-4398-8503-6ea9d67574a4
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 46
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "-verbose compiler option [Visual Basic]"
   - "/verbose compiler option [Visual Basic]"
 ms.assetid: d1aec0c1-0261-421d-9adc-5b13756100be
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

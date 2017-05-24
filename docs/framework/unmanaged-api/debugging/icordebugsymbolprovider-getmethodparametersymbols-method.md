@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 58b7c0b9-f6ad-4b49-b92d-0e421cfd0ec6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,14 +23,12 @@ Gets a method's parameter symbols given the relative virtual address (RVA) of th
 ## Syntax  
   
 ```  
-  
 HRESULT GetMethodParameterSymbols(  
    [in] ULONG32 nativeRVA,  
    [in] ULONG32 cRequestedSymbols,  
    [out] ULONG32 *pcFetchedSymbols,  
    [out, size_is(cRequestedSymbols), length_is(*pcFetchedSymbols)] ICorDebugVariableSymbol *pSymbols[]  
 );  
-  
 ```  
   
 #### Parameters  

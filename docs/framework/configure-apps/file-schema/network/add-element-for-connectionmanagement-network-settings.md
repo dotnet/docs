@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "add element, connectionManagement"
   - "connectionManagement, add element"
 ms.assetid: 856bf57d-1c63-46c7-a178-03d97b0a4149
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
@@ -41,7 +39,6 @@ Adds an IP address or DNS name to the connection management list.
 ## Syntax  
   
 ```  
-  
       <add   
    address = "address expression"   
    maxconnection = integer   

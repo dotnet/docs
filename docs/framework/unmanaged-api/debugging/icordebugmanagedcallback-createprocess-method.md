@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugManagedCallback::CreateProcess method [.NET Framework debugging]"
   - "CreateProcess method, ICorDebugManagedCallback interface [.NET Framework debugging]"
 ms.assetid: 8e89d5ee-e4e3-4738-8302-0b7d1cf4846e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

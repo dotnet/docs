@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "graphics [WPF], how-to topics"
   - "visual effects"
 ms.assetid: 959cb1cc-d26c-4bbc-b637-251091987288
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 56
 author: dotnet-bot
 ms.author: dotnetcontent

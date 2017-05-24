@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], edit mode"
   - "data grids, edit mode"
 ms.assetid: 93e117e8-94c4-411b-ba31-645e475ed85c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

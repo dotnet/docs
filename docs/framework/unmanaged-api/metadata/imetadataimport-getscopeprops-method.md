@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataImport::GetScopeProps method [.NET Framework metadata]"
   - "GetScopeProps method [.NET Framework metadata]"
 ms.assetid: c8ba42d2-d9fa-43cb-bbc0-f33e1e592cb6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], managed debugging assistants"
   - "garbage collection, run-time errors"
 ms.assetid: 7417f837-805e-4fed-a430-ca919c8421dc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

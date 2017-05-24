@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerInfo::SetILFunctionBody method [.NET Framework profiling]"
   - "SetILFunctionBody method [.NET Framework profiling]"
 ms.assetid: b159c712-00f4-4fc7-a990-40bf9f642e8f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

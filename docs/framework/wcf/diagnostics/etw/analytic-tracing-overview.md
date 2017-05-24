@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "analytic tracing [WCF], overview"
 ms.assetid: ae55e9cc-0809-442f-921f-d644290ebf15
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "Erikre"
 ms.author: "erikre"
@@ -33,10 +31,8 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
  WCF diagnostics are enabled within the \<system.serviceModel>\<diagnostics> configuration section.  
   
 ```  
-  
 <system.serviceModel>  
   <diagnostics>  
-  
 ```  
   
  WCF diagnostic settings for a Web-hosted IIS virtual application are enabled in its’ Web.config file. Another option is to create a Web.config in a sub-directory within the application.  This choice applies the settings to all of the services within a sub-directory.  To ensure that the diagnostics settings are initialized consistently for all services within the application, the settings should be within the Web.config in the application directory and not in one of the individual sub-directories within the application.  

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "rows, new records"
   - "DataGridView control [Windows Forms], data entry"
 ms.assetid: 6110f1ea-9794-442c-a98a-f104a1feeaf4
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

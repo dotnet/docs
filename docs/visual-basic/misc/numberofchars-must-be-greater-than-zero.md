@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_NumberOfCharsMustBePositive"
 ms.assetid: 3eea4bbf-cd49-4d19-adfb-0e2adf087065
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b8256335-f1c2-419f-b862-9f220ccad84c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"
@@ -58,7 +56,6 @@ public class SimpleMessageInspector : IClientMessageInspector
         return null;  
     }  
 }  
-  
 ```  
   
 ```csharp  
@@ -103,7 +100,6 @@ public class SimpleBehaviorExtensionElement : BehaviorExtensionElement
         return new SimpleEndpointBehavior();  
     }  
 }  
-  
 ```  
   
 ```vb  
@@ -133,7 +129,6 @@ public class SimpleBehaviorExtensionElement : BehaviorExtensionElement
       </extensions>  
     </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## See Also  

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "navigation topologies [WPF]"
   - "dynamically-generated topology"
 ms.assetid: 5d5ee837-629a-4933-869a-186dc22ac43d
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

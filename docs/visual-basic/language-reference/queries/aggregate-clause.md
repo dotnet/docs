@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "Aggregate statement"
   - "queries [Visual Basic], Aggregate"
 ms.assetid: 1315a814-5db6-4077-b34b-b141e11cc0eb
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

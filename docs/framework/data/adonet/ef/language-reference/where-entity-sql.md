@@ -15,8 +15,6 @@ dev_langs:
   - "C++"
   - "ESQL"
 ms.assetid: a8e1061e-0028-4a6f-8f19-b9f48e96c4b8
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 2
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -28,7 +26,6 @@ The WHERE clause is applied directly after the [FROM](../../../../../../docs/fra
 ## Syntax  
   
 ```  
-  
 [ WHERE expression ]  
 ```  
   

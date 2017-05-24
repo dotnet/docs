@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "handling faults [WCF], specifying"
   - "handling faults [WCF], defining"
 ms.assetid: c00c84f1-962d-46a7-b07f-ebc4f80fbfc1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "Windows Forms, application settings schema"
   - "configuration schema [.NET Framework], application settings"
 ms.assetid: 5797fcff-6081-4e8c-bebf-63d9c70cf14b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "mcleblanc"
 ms.author: "markl"

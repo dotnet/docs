@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 85da7447-7125-426e-aa5f-438a290d1f77
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 30
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -105,7 +103,6 @@ using SqlConnection conn = new SqlConnection("…");
       cmd.ExecuteNonQuery();  
    }  
 }  
-  
 ```  
   
  When converted to use the new asynchronous functionality, the program would look like:  
@@ -287,7 +284,6 @@ class Program {
       }  
    }  
 }  
-  
 ```  
   
 ### Using SQL Transactions and the New Asynchronous Feature  
@@ -349,7 +345,6 @@ class Program {
       }  
    }  
 }  
-  
 ```  
   
 ### Cancelling an Asynchronous Operation  

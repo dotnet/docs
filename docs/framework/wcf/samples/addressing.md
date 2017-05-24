@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d438e6f2-d0f3-43aa-b259-b51b5bda2e64
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "Erikre"
 ms.author: "erikre"
@@ -113,7 +111,6 @@ Endpoint - address:  http://localhost:8000/ServiceModelSamples/service/mex
   
 The service is ready.  
 Press <ENTER> to terminate service.  
-  
 ```  
   
  When you run the client, the operation requests and responses are displayed in both the service and client console windows. Press ENTER in each console window to shut down the service and client.  

@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "ReaderWriterLock class, about ReaderWriterLock class"
   - "threading [.NET Framework], ReaderWriterLock class"
 ms.assetid: 8c71acf2-2c18-4f4d-8cdb-0728639265fd
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - ": separator character"
   - "Visual Basic code, labeling statements"
 ms.assetid: 38f1ff43-2054-42cb-963b-1998e60c6ed4
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

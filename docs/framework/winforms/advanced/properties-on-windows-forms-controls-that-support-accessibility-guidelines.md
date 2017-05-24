@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Windows Forms, accessibility properties of controls"
   - "accessibility, Windows Forms control properties"
 ms.assetid: ad3567a6-313b-4708-9e15-f487a831f049
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

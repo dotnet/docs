@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "ListBox control [WPF]"
   - "controls [WPF], ListBox"
 ms.assetid: b91bb352-4f51-44e0-9017-a041f216c852
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent

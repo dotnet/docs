@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Clone method"
 ms.assetid: 2a6a1900-aa55-45fa-9382-241d569a2dc4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

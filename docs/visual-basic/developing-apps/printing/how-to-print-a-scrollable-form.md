@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "entire form, printing"
   - "scrollable form, printing"
 ms.assetid: 1196e1cf-b77f-4928-a3e4-85b51ba3787d
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

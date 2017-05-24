@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "DataRepeater, overview"
   - "DataRepeater"
 ms.assetid: 78a52a1d-65f0-4ecb-97ff-53bc114300c5
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

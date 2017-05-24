@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], logical"
   - "logical operators, Visual Basic"
 ms.assetid: 55de4889-7679-4859-8063-bee15abca53f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

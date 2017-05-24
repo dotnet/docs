@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "catch keyword [C#]"
   - "try-catch statement [C#]"
 ms.assetid: cb5503c7-bfa1-4610-8fc2-ddcd2e84c438
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 45
 author: "BillWagner"
 ms.author: "wiwagn"

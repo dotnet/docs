@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3b3fa000-3434-4142-a178-11903bdd2c5d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Defines an X.509 certificate used to authenticate a client to a service.
 ## Syntax  
   
 ```  
-  
 <clientCertificate findValue="String"   
     storeLocation="LocalMachine/CurrentUser"  
     storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  

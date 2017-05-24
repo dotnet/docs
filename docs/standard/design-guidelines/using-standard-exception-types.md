@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "exceptions, catching"
   - "exceptions, throwing"
 ms.assetid: ab22ce03-78f9-4dca-8824-c7ed3bdccc27
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

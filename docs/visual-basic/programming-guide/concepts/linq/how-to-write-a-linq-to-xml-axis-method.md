@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: b676f025-a24c-4076-8713-aa809b2b8ce0
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -210,7 +208,6 @@ Public Module MyExtensions
     End Function  
   
 End Module  
-  
 ```  
   
  This code produces the following output:  

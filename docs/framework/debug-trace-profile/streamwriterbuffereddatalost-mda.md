@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "data buffering problems"
   - "streamWriterBufferedDataLost MDA"
 ms.assetid: 6e5c07be-bc5b-437a-8398-8779e23126ab
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

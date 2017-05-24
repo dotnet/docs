@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "controls [WPF], DocumentViewer"
   - "DocumentViewer control [WPF]"
 ms.assetid: c21eb322-d6b3-474b-ab05-94527bd1b0fa
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent

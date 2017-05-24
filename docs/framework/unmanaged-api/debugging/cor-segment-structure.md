@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_SEGMENT structure [.NET Framework debugging]"
 ms.assetid: 93aeecb9-7fef-4545-8daf-f566dfc47084
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

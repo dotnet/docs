@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 4609418d-71fa-44bc-9618-4d529d25cabb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,7 +23,6 @@ Assigns the value of a byte array to a variable.
 ## Syntax  
   
 ```  
-  
 HRESULT SetValue(  
    [in] ULONG32 offset,  
    [in] DWORD threadID,  
@@ -34,7 +31,6 @@ HRESULT SetValue(
    [in] ULONG32 cbValue,  
    [in, size_is(cbValue)] BYTE pValue[]  
 );  
-  
 ```  
   
 #### Parameters  

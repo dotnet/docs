@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ReplaceSymbolStore method [.NET Framework debugging]"
   - "ISymUnmanagedReader::ReplaceSymbolStore method [.NET Framework debugging]"
 ms.assetid: 43257761-8cb1-4eaf-8fb5-1f3980cb66cd
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Web services protocols"
   - "Windows Communication Foundation, Web service protocols"
 ms.assetid: 1f7fc4ff-30fe-4e46-adda-91caad3b06c6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 39
 author: "Erikre"
 ms.author: "erikre"

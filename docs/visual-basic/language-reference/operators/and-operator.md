@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], conjunction"
   - "bitwise comparison"
 ms.assetid: 2ea711f3-439a-4c7c-9e3a-1ffe3b0d6046
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -50,7 +48,6 @@ Performs a logical conjunction on two `Boolean` expressions, or a bitwise conjun
 ## Syntax  
   
 ```  
-  
 result = expression1 And expression2  
 ```  
   

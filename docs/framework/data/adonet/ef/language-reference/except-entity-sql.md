@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 69cc23e5-3f8f-4b49-b20e-2f84ff11c80d
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Returns a collection of any distinct values from the query expression to the lef
 ## Syntax  
   
 ```  
-  
 expression EXCEPT expression  
 ```  
   

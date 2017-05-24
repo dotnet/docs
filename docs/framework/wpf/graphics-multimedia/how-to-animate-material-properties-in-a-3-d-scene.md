@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "animation, Material properties in 3-D scenes"
   - "3-D scenes, animating Material properties"
 ms.assetid: 229fd6eb-7401-4992-b0c9-8b28de230c0f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

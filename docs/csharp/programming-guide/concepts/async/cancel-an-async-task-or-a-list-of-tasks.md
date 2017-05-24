@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "CSharp"
 ms.assetid: eec32dbb-70ea-4c88-bd27-fa2e34546914
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -237,7 +235,6 @@ You can set up a button that you can use to cancel an async application if you d
 5.  If you don’t cancel the program, it produces the following output.  
   
     ```  
-  
     Length of the downloaded string: 35939.  
   
     Length of the downloaded string: 237682.  
@@ -253,7 +250,6 @@ You can set up a button that you can use to cancel an async application if you d
     Length of the downloaded string: 145790.  
   
     Downloads complete.  
-  
     ```  
   
      If you choose the **Cancel** button before the downloads are complete, the output contains the lengths of the downloads that completed before the cancellation.  
@@ -266,7 +262,6 @@ You can set up a button that you can use to cancel an async application if you d
     Length of the downloaded string: 128607.  
   
     Downloads canceled.  
-  
     ```  
   
 ##  <a name="BKMK_CompleteExamples"></a> Complete Examples  

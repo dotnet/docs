@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "-linkresource compiler option [C#]"
   - "linkresource compiler option [C#]"
 ms.assetid: 440c26c2-77c1-4811-a0a3-57cce3f5fc96
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

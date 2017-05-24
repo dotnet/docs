@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "frames, accessing"
   - "DOM, accessing frames in managed HTML"
 ms.assetid: cdeeaa22-0be4-4bbf-9a75-4ddc79199f8d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

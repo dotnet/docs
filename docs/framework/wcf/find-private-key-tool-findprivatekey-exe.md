@@ -13,8 +13,6 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: b8846a95-3fcc-4e8c-b9c0-128d975a6307
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ This command-line tool can be used to retrieve a private key from a certificate 
 ## Syntax  
   
 ```  
-  
 FindPrivateKey<storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbprint>} } [-f | -d | -a]]  
 ```  
   

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "read-only TextBox controls"
   - "TextBox control read-only"
 ms.assetid: e707ec59-8b22-473e-b77c-3060a237517a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

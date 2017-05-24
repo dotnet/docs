@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "XAML [XAML Services], TypeConverter"
   - "type conversion for XAML [XAML Services]"
 ms.assetid: 51a65860-efcb-4fe0-95a0-1c679cde66b7
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: "wadepickett"
 ms.author: "wpickett"

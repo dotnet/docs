@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "bitmaps, rendering from visuals"
   - "visuals, rendering to bitmaps"
 ms.assetid: 103fc7f5-7306-4026-9d61-2005e79959f3
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

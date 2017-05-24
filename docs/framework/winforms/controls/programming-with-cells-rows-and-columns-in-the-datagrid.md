@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], programming with grid elements"
   - "rows [Windows Forms], data grids"
 ms.assetid: 0d76f7e4-4149-42c6-9118-bb37d6669dc5
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

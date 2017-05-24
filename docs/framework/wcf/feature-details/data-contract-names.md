@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "data contracts [WCF], naming"
 ms.assetid: 31f87e6c-247b-48f5-8e94-b9e1e33d8d09
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 27
 author: "Erikre"
 ms.author: "erikre"

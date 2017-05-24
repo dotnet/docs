@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "weak references, long"
   - "garbage collection, weak references"
 ms.assetid: 6a600fe5-3af3-4c64-82da-10a0a8e2d79b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

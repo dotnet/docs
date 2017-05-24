@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "forms, creating resizable"
   - "Windows Forms, resizable"
 ms.assetid: babdf198-404c-485d-a914-ed370c6ecd99
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

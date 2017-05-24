@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetGuid method [.NET Framework metadata]"
   - "IMetaDataTables::GetGuid method [.NET Framework metadata]"
 ms.assetid: a3546316-e24d-417f-9909-e45d42c9d471
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

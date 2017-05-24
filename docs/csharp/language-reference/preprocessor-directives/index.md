@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "preprocessor directives [C#]"
   - "keywords [C#], preprocessor directives"
 ms.assetid: f2406090-b244-4f7e-ab72-3698fefed724
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

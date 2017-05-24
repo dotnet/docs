@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 286cd191-4fd5-4c4e-a223-9c71cf7fdead
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -29,7 +27,6 @@ Defines the security settings for a binding.
 ## Syntax  
   
 ```  
-  
 <security mode="Message/None/Transport/TransportWithCredential">  
    <transport  
       clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  

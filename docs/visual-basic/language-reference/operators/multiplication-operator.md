@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "multiplication operator, syntax"
   - "math operators"
 ms.assetid: 2b210382-99da-4195-89ba-b1d06f5e89ad
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ Multiplies two numbers.
 ## Syntax  
   
 ```  
-  
 number1 * number2  
 ```  
   

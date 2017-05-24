@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "expressions [Visual Basic], lambda"
   - "inline functions [Visual Basic]"
 ms.assetid: 137064b0-3928-4bfa-ba71-c3f9cbd951e2
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 52
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -107,7 +105,6 @@ Public Class Form1
     End Function  
   
 End Class  
-  
 ```  
   
  You can add the same event handler by using an async lambda in an [AddHandler Statement](../../../../visual-basic/language-reference/statements/addhandler-statement.md). To add this handler, add an `Async` modifier before the lambda parameter list, as the following example shows.  
@@ -130,7 +127,6 @@ Public Class Form1
     End Function  
   
 End Class  
-  
 ```  
   
  For more information about how to create and use async methods, see [Asynchronous Programming with Async and Await](../../../../visual-basic/programming-guide/concepts/async/index.md).  

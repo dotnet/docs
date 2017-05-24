@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "scrolling methods"
   - "ScrollViewer control, scrolling methods"
 ms.assetid: 4708cc65-6510-45f8-82e6-30b0d3e30045
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

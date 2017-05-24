@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8c7b4c5b-ace3-4fe3-89ff-7b13c9aacd13
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Specifies transaction flow support for the custom binding.
 ## Syntax  
   
 ```  
-  
 <transactionFlow transactionProtocol="OleTransactions/WSAtomicTransactionOctober2004"/>  
 ```  
   

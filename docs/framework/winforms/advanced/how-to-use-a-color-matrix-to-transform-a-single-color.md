@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "image colors, transforming"
   - "color matrices, using"
 ms.assetid: 44df4556-a433-49c0-ac0f-9a12063a5860
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

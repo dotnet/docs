@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Web hosted service"
   - "IIS Hosting Using Inline Code Sample [Windows Communication Foundation]"
 ms.assetid: 56fe3687-a34b-4661-8e30-b33770f413fa
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 40
 author: "Erikre"
 ms.author: "erikre"
@@ -81,7 +79,6 @@ public class CalculatorService : ICalculator
         return n1 / n2;  
     }  
 }  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  

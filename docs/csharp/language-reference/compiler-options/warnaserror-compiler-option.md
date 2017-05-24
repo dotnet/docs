@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "-warnaserror compiler option [C#]"
   - "warnaserror compiler option [C#]"
 ms.assetid: 04680ec3-08d6-4e2e-a274-38310e10e33c
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

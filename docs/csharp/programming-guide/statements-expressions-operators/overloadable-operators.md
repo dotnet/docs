@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "C# language, operator overloading"
   - "operator overloading [C#]"
 ms.assetid: 390d9d01-79fc-40ab-9ed3-0bf448da1b6a
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -60,7 +58,6 @@ public static Complex operator +(Complex c1, Complex c2)
     {  
         Return new Complex(c1.real + c2.real, c1.imaginary + c2.imaginary);  
     }  
-  
 ```  
   
  It is common to have definitions that simply return immediately with the result of an expression.  There is a syntax shortcut using `=>` for these situations.  
@@ -72,7 +69,6 @@ public static Complex operator +(Complex c1, Complex c2) =>
     // Override ToString() to display a complex number   
     // in the traditional format:  
     public override string ToString() => $"{this.real} + {this.imaginary}";  
-  
 ```  
   
  For more information, see [How to: Use Operator Overloading to Create a Complex Number Class](../../../csharp/programming-guide/statements-expressions-operators/how-to-use-operator-overloading-to-create-a-complex-number-class.md).  

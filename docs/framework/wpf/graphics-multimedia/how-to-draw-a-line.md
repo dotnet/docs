@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "graphics [WPF], lines"
   - "lines, drawing"
 ms.assetid: 0513ee01-6b27-4bb3-85f3-3a3e6710d80e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

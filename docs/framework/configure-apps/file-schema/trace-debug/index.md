@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "configuration sections [.NET Framework]"
   - "elements [.NET Framework], trace and debug settings"
 ms.assetid: 277ca5f6-e1c4-41b6-a47f-3a67ce5b94ac
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"

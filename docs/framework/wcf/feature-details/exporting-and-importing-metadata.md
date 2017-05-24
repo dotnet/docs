@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "metadata [WCF], exporting and importing"
 ms.assetid: 614a75bb-e0b0-4c95-b6d8-02cb5e5ddb38
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "Erikre"
 ms.author: "erikre"

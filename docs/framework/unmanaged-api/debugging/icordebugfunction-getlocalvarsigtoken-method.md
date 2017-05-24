@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugFunction::GetLocalVarSigToken method [.NET Framework debugging]"
   - "GetLocalVarSigToken method [.NET Framework debugging]"
 ms.assetid: 31e53494-bcc9-4981-91a4-f7e0f02cad48
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

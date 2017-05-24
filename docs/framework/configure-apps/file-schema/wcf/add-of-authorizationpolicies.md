@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 613a03d8-4384-4556-bce2-8c23286c0bb0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies an authorization policy for claim transformation.
 ## Syntax  
   
 ```  
-  
 <authorizationPolicies>  
    <add policyType="String" />  
 </authorizationPolicies>  

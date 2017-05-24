@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "processes, starting and sending keystrokes"
   - "SendKeys.SendWait examples"
 ms.assetid: f1303184-fce4-44fb-88b4-aac5f42d5d77
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

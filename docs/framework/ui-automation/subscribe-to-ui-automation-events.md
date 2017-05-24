@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "events, subscribing to"
   - "listening for events"
 ms.assetid: b688effa-b3e8-4b05-944d-05ed89a245aa
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "COM,wrappers creating"
   - "COM,wrappers Visual Studio"
 ms.assetid: bdf89bea-1623-45ee-a57b-cf7c90395efa
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ddc3718d-ce60-44f6-92af-a5c67477dd99
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -77,14 +75,12 @@ This topic describes how to import custom WSDL. To handle the custom WSDL, you m
             </metadata>  
           </client>  
         </system.serviceModel>  
-  
     ```  
   
 3.  Create a new <xref:System.ServiceModel.Description.WsdlImporter> instance (passing in the <xref:System.ServiceModel.Description.MetadataSet> instance that contains the WSDL documents that you want to import), and call <xref:System.ServiceModel.Description.WsdlImporter.ImportAllContracts%2A>:  
   
     ```  
     WsdlImporter importer = new WsdlImporter(metaDocs);          System.Collections.ObjectModel.Collection<ContractDescription> contracts  = importer.ImportAllContracts();  
-  
     ```  
   
 ## See Also  

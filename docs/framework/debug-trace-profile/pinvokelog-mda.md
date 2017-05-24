@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "PInvokeLog MDA"
   - "managed debugging assistants (MDAs), platform invoke"
 ms.assetid: b830444a-5003-49fe-b89b-b8bee22f7b1a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

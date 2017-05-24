@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorPEKind enumeration [.NET Framework metadata]"
 ms.assetid: 22dc6dea-b1b9-4982-a730-a022d586b117
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

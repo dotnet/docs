@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5a29de74-acfc-4134-8616-829dd7ce0710
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -49,7 +47,6 @@ Private Shared Sub OnInfoMessage(sender As Object, _
     err.Procedure, err.Server, err.Message)  
   Next  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -69,7 +66,6 @@ protected static void OnInfoMessage(
    err.Procedure, err.Server, err.Message);  
   }  
 }  
-  
 ```  
   
 ## Handling Errors as InfoMessages  
@@ -97,7 +93,6 @@ Protected Shared Sub OnStateChange( _
   "The current Connection state has changed from {0} to {1}.", _  
   args.OriginalState, args.CurrentState)  
 End Sub  
-  
 ```  
   
 ```csharp  

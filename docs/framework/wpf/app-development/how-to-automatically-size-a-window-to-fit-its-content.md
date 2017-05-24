@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "windows, resizing to fit content"
   - "sizing windows to fit content"
 ms.assetid: 333ca72a-c2f3-4414-9303-3fdabaaa1b32
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

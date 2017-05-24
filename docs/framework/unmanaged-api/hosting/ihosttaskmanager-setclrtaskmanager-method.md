@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IHostTaskManager::SetCLRTaskManager method [.NET Framework hosting]"
   - "SetCLRTaskManager method [.NET Framework hosting]"
 ms.assetid: ec90ee83-bd4b-408b-9274-62a923ab86a1
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

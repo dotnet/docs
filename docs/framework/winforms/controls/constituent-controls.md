@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "constituent controls"
   - "user controls [Windows Forms], constituent controls"
 ms.assetid: 5565e720-198b-4bbd-a2bd-c447ba641798
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -32,7 +30,6 @@ Public Sub MyPaint(ByVal sender as Object, e as PaintEventArgs) Handles _
    MyButton.Paint  
    'Additional rendering code goes here  
 End Sub  
-  
 ```  
   
 ```csharp  

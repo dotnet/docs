@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "HScrollBar control [Windows Forms]"
   - "Scroll Bar control [Windows Forms]"
 ms.assetid: f5e9cda7-d8f3-406b-b0e6-bdb4375d6eb0
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "stopping pages from loading"
   - "loading, stopping"
 ms.assetid: e2b695b0-517e-462c-8ccf-90cc8d6ba864
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

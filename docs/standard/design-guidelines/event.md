@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "post-events"
   - "signatures, event handling"
 ms.assetid: 67b3c6e2-6a8f-480d-a78f-ebeeaca1b95a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

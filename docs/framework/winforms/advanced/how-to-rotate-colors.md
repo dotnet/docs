@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "colors, rotating"
   - "examples [Windows Forms], rotating colors"
 ms.assetid: e2e4c300-159c-4f4a-9b56-103b0f7cbc05
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

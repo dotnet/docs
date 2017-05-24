@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], about BindingSource component"
   - "data binding, BindingSource component"
 ms.assetid: be838caf-fcb0-4b68-827f-58b2c04b747f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

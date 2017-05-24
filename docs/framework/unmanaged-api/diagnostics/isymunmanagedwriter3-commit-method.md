@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Commit method, ISymUnmanagedWriter3 interface [.NET Framework debugging]"
   - "ISymUnmanagedWriter3::Commit method [.NET Framework debugging]"
 ms.assetid: f6961922-46ec-4d2c-8369-85f880731f37
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

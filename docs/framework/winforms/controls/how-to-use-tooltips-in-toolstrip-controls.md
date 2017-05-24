@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], adding tooltips"
   - "tooltips [Windows Forms], adding"
 ms.assetid: c5d86024-a7c5-44ee-8b3f-2daf53d80d3e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

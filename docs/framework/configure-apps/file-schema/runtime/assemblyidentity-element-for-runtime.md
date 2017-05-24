@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "container tags, <assemblyIdentity> element"
   - "assemblyIdentity element"
 ms.assetid: cea4d187-6398-4da4-af09-c1abc6a349c1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
@@ -41,7 +39,6 @@ Contains identifying information about the assembly.
 ## Syntax  
   
 ```  
-  
    <assemblyIdentity    
 name="assembly name"  
 publicKeyToken="public key token"  

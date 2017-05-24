@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "threading [Windows Forms], asynchronous features"
   - "AsyncCompletedEventArgs class"
 ms.assetid: 35e9549c-1568-4768-ad07-17cc6dff11e1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

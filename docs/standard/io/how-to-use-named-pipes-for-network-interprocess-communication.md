@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "impersonation [.NET Framework], named pipes"
   - "full duplex communcation [.NET Framework], named pipes"
 ms.assetid: 4e4d7e64-9f1b-4026-98f7-20488ac7b42b
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

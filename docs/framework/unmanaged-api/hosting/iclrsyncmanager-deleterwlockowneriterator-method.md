@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRSyncManager::DeleteRWLockOwnerIterator method [.NET Framework hosting]"
   - "DeleteRWLockOwnerIterator method [.NET Framework hosting]"
 ms.assetid: fcfd340a-b7d6-44e4-8167-2c05b789d483
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "controls, authoring overview"
   - "authoring overview for controls"
 ms.assetid: 3d864748-cff0-4e63-9b23-d8e5a635b28f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 32
 author: dotnet-bot
 ms.author: dotnetcontent

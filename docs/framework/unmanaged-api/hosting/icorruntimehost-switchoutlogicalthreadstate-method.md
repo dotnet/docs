@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorRuntimeHost::SwitchOutLogicalThreadState method [.NET Framework hosting]"
   - "SwitchOutLogicalThreadState method [.NET Framework hosting]"
 ms.assetid: e1968f0b-2675-4dc2-8507-46164e1df154
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

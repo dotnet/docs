@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "math functions, Visual Basic"
   - "math functions"
 ms.assetid: 6abf2dd7-92d2-488a-8e2b-819be9b30c3f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

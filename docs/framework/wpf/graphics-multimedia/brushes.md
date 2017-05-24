@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "painting [WPF]"
   - "brushes"
 ms.assetid: 26710879-12ad-4c63-9bc6-a1834bb4243b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 53
 author: dotnet-bot
 ms.author: dotnetcontent

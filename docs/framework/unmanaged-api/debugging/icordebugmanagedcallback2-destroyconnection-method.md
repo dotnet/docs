@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "DestroyConnection method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::DestroyConnection method [.NET Framework debugging]"
 ms.assetid: cf7940e9-4558-4319-925c-09f6c98c8fcd
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

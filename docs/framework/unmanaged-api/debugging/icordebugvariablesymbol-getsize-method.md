@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: add0cd9d-9a29-49b1-ae07-d9d3786b4ccd
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,11 +23,9 @@ Gets the size of a variable in bytes.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSize(  
    [out] ULONG32 *pcbValue  
 );  
-  
 ```  
   
 #### Parameters  

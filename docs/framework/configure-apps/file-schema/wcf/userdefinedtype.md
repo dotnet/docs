@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0f70ec06-8249-4f0c-9f49-b4df59985fb8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "Erikre"
 ms.author: "erikre"
@@ -28,7 +26,6 @@ Represents a User Defined Type (UDT) that is to be included in the service contr
 ## Syntax  
   
 ```  
-  
 <comContracts>  
   <comContract>  
       <userDefinedTypes>  

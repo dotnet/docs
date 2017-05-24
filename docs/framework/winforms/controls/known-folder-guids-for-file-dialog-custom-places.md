@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Custom Places, Known Folder GUIDs"
   - "Windows Vista Known Folder GUIDs, Custom Places"
 ms.assetid: d8d8b544-8b4d-4da5-ba3a-b05e93244778
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

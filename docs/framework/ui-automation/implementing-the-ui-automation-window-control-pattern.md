@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "UI Automation, Window control pattern"
   - "Window control pattern"
 ms.assetid: a28cb286-296e-4a62-b4cb-55ad636ebccc
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 21
 author: "Xansky"
 ms.author: "mhopkins"

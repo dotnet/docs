@@ -14,8 +14,6 @@ api_name:
 api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 495ce5f6-bb4d-4b30-807a-c3c35f1ca95c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -29,7 +27,6 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 void __stdcall ProcessUnhandledException(  
    __in_ecount(1) BSTR errorMsg  
 )  

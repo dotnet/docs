@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "DllMain function"
   - "MDAs (managed debugging assistants), DllMain returns false"
 ms.assetid: e2abdd04-f571-4b97-8c16-2221b8588429
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

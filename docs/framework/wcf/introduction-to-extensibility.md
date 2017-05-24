@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], extensibility"
   - "extensibility [WCF]"
 ms.assetid: ef56c251-d63c-4b3f-944f-b0c67bfb0f68
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"

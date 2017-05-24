@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "Equals method"
   - "StartsWith method"
 ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

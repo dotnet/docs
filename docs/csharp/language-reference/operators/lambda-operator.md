@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "=> operator [C#]"
   - "lambda expressions [C#], => operator"
 ms.assetid: 8c899251-dafa-4594-bec7-243b39072880
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

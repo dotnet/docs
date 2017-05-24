@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "3-D models, applying multiple transformations to"
 ms.assetid: cb72245a-5560-4c96-9f58-593c66296992
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

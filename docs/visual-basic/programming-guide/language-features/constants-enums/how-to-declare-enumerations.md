@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "enumerations [Visual Basic], declaring"
   - "declaring enumerations"
 ms.assetid: db4ca1c3-f429-4c81-ae81-29e0157b29fd
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 24
 author: dotnet-bot
 ms.author: dotnetcontent

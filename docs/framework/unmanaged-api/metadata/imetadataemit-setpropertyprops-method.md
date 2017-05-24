@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetPropertyProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetPropertyProps method [.NET Framework metadata]"
 ms.assetid: e2501fc8-b2bc-4dcc-9205-e3acd5a53ffe
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

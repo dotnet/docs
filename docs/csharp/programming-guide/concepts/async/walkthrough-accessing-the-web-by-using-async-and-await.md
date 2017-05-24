@@ -12,8 +12,6 @@ ms.topic: "get-started-article"
 dev_langs: 
   - "CSharp"
 ms.assetid: c95d8d71-5a98-4bf0-aaf4-45fed2ebbacd
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 4
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -248,7 +246,6 @@ You can write asynchronous programs more easily and intuitively by using async/a
      Output that resembles the following list should appear.  
   
     ```  
-  
     msdn.microsoft.com/library/windows/apps/br211380.aspx        383832  
     msdn.microsoft.com                                            33964  
     msdn.microsoft.com/library/hh290136.aspx               225793  
@@ -263,7 +260,6 @@ You can write asynchronous programs more easily and intuitively by using async/a
     Total bytes returned:  1834802  
   
     Control returned to startButton_Click.  
-  
     ```  
   
      Notice that it takes a few seconds to display the counts. During that time, the UI thread is blocked while it waits for requested resources to download. As a result, you can't move, maximize, minimize, or even close the display window after you choose the  **Start** button. These efforts fail until the byte counts start to appear. If a website isn’t responding, you have no indication of which site failed. It is difficult even to stop waiting and close the program.  

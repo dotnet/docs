@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "parentheses, complex expressions"
   - "numeric expressions"
 ms.assetid: bd22340e-b5be-458b-8772-3916c02309a4
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

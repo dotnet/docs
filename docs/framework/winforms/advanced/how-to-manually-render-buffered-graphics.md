@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "graphics [Windows Forms], rendering"
   - "BufferedGraphics class"
 ms.assetid: 5192295e-bd8e-45f7-8bd6-5c4f6bd21e61
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

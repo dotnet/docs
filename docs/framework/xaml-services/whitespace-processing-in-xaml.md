@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "whitespace processing in XAML [XAML Services]"
   - "characters [XAML Services], East Asian"
 ms.assetid: cc9cc377-7544-4fd0-b65b-117b90bb0b23
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 20
 author: "wadepickett"
 ms.author: "wpickett"

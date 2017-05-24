@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "serial ports, dialing"
   - "My.Computer.Ports object"
 ms.assetid: 3834db40-f431-45f1-b671-dc91787164b6
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

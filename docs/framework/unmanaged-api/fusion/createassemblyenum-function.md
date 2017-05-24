@@ -24,8 +24,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CreateAssemblyEnum function [.NET Framework fusion]"
 ms.assetid: 3506df38-6cea-42f6-946e-4287863bcfb3
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

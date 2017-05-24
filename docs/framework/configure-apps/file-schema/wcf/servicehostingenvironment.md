@@ -13,8 +13,6 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: 4f8a7c4f-e735-4987-979a-b74fcdae2652
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 24
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ This element defines the type the service hosting environment instantiates for a
 ## Syntax  
   
 ```  
-  
 <serviceHostingEnvironment     aspNetCompatibilityEnabled="Boolean"     minFreeMemoryPercentageToActivateService="Integer"     multipleSiteBindingsEnabled="Boolean">     <baseAddressPrefixFilters>        <add prefix="string"/>     </baseAddressPrefixFilters>      <serviceActivations>        <add factory="String" service="String"/>      </serviceActivations>     <transportConfigurationTypes>        <add name="String"              transportConfigurationType="String" />     </transportConfigurationTypes></serviceHostingEnvironment>  
 ```  
   

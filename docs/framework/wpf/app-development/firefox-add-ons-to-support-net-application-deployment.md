@@ -15,8 +15,6 @@ helpviewer_keywords:
   - ".NET application deployment, deploying with Firefox add-ons"
   - ".NET Framework Assistant for Firefox"
 ms.assetid: 2403403b-9b14-48e9-b70d-fa288a3c9081
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

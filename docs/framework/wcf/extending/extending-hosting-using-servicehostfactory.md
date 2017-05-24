@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bcc5ae1b-21ce-4e0e-a184-17fad74a441e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ public static void Main()
   
    ...  
 }  
-  
 ```  
   
  This approach is not reusable. The code that manipulates the description is coded into the host program (in this case, the Main() function), so it is difficult to reuse that logic in other contexts. There are also other ways of adding an <xref:System.ServiceModel.Description.IServiceBehavior> that do not require imperative code. You can derive an attribute from <xref:System.ServiceModel.ServiceBehaviorAttribute> and put that on your service implementation type or you can make a custom behavior configurable and compose it dynamically using configuration.  
@@ -79,7 +76,6 @@ public class DerivedFactory : ServiceHostFactory
       return new DerivedHost( t, baseAddresses )  
    }  
 }  
-  
 ```  
   
  To use this factory instead of the default factory, provide the type name in the @ServiceHost directive as follows:  

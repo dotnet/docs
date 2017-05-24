@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "MenuStrip, merging"
   - "Merging, automatic menu"
 ms.assetid: 55e32cad-1141-4a56-aa33-d9543ca3d393
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

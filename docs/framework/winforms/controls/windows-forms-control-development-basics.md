@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "programming concepts, Windows Forms controls"
   - "controls [Windows Forms], creating"
 ms.assetid: 6277bb81-90f7-4c5b-9f4b-b02bb42dd316
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Timelines"
   - "timing events"
 ms.assetid: 597e3280-0867-4359-a97b-5b2f4149e350
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "MEF, Composition Analysis Tool"
   - "Mefx [MEF], Composition Analysis Tool"
 ms.assetid: c48a7f93-83bb-4a06-aea0-d8e7bd1502ad
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "TreeView control [Windows Forms], adding shortcut menus"
   - "tree nodes in TreeView control, shortcut menus"
 ms.assetid: a23c6752-fd8f-44ad-b781-bab37962fc7c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

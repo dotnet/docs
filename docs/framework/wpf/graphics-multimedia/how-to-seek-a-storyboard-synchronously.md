@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "seeking Storyboards synchronously"
   - "Storyboards, seeking synchronously"
 ms.assetid: 03e06271-a946-4810-88ea-3fb4cfa9e0f1
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

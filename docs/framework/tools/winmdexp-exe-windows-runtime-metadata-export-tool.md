@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Windows Runtime Metadata Export Tool"
   - "Winmdexp.exe"
 ms.assetid: d2ce0683-343d-403e-bb8d-209186f7a19d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -37,7 +35,6 @@ The [!INCLUDE[wrt](../../../includes/wrt-md.md)] Metadata Export Tool (Winmdexp.
 ## Syntax  
   
 ```  
-  
 winmdexp [options] winmdmodule  
 ```  
   

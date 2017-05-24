@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "DataRepeater, walkthrough"
 ms.assetid: 65dcdb95-6c3e-47cc-987d-190000f71653
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

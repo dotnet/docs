@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "CorGetAvailableThreads method [.NET Framework hosting]"
   - "ICorThreadpool::CorGetAvailableThreads method [.NET Framework hosting]"
 ms.assetid: 0b09b750-0b86-4ba4-9621-041857cfe8ba
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IMethodMalloc interface [.NET Framework profiling]"
 ms.assetid: 8c8ab5dc-557c-473a-82f2-6e403eca7dac
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

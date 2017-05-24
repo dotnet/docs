@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "SplitContainer control [Windows Forms], using the designer"
   - "multipane user interface"
 ms.assetid: c3f9294d-a26c-4198-9242-f237f55f7573
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

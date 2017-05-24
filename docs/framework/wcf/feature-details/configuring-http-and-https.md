@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "configuring HTTP [WCF]"
 ms.assetid: b0c29a86-bc0c-41b3-bc1e-4eb5bb5714d4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"

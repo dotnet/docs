@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Net profile TCP"
 ms.assetid: e8475fe6-0ecd-407a-8e7e-45860561bb74
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 39
 author: "Erikre"
 ms.author: "erikre"
@@ -109,7 +107,6 @@ Press ENTER to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

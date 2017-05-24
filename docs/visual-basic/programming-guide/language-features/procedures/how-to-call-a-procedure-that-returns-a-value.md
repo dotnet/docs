@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "procedures, calling"
   - "procedures, returning a value"
 ms.assetid: a445127b-0f5f-465a-98fb-3e514b93d115
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

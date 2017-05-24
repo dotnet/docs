@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "asymmetric keys [.NET Framework]"
   - "cryptography [.NET Framework], keys"
 ms.assetid: c197dfc9-a453-4226-898d-37a16638056e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
@@ -41,7 +39,6 @@ Creating and managing keys is an important part of the cryptographic process. Sy
   
 ```vb  
 Dim TDES As TripleDESCryptoServiceProvider = new TripleDESCryptoServiceProvider()  
-  
 ```  
   
 ```csharp  
@@ -56,7 +53,6 @@ TripleDESCryptoServiceProvider TDES = new TripleDESCryptoServiceProvider();
 Dim TDES As TripleDESCryptoServiceProvider = new TripleDESCryptoServiceProvider()  
 TDES.GenerateIV()  
 TDES.GenerateKey()  
-  
 ```  
   
 ```csharp  
@@ -87,7 +83,6 @@ TDES.GenerateKey();
 Dim RSA as RSACryptoServiceProvider = new RSACryptoServiceProvider()  
 'Save the public key information to an RSAParameters structure.  
 Dim RSAKeyInfo As RSAParameters = RSA.ExportParameters(false)  
-  
 ```  
   
 ```csharp  

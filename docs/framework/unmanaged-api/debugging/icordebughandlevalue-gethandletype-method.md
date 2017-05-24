@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetHandleType method [.NET Framework debugging]"
   - "ICorDebugHandleValue::GetHandleType method [.NET Framework debugging]"
 ms.assetid: d5e7b12d-835a-4e86-ae2f-d658d4f1c67c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

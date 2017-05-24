@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "graphics, brushes"
   - "brushes"
 ms.assetid: 43e7f798-9558-4498-b5b6-4a4c6baf956b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 75
 author: dotnet-bot
 ms.author: dotnetcontent

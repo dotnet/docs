@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "rows [Windows Forms], spanning"
   - "cells, merging"
 ms.assetid: a8a2fdd3-a848-48b0-a4cd-4e85ebded87e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

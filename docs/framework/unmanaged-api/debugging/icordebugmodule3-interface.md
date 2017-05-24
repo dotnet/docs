@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugModule3 interface [.NET Framework debugging]"
 ms.assetid: 0b69f945-263a-4e11-8512-89d27f6ea296
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

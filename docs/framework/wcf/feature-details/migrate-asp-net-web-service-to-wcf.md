@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e528c64f-c027-4f2e-ada6-d8f3994cf8d6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"
@@ -213,7 +211,6 @@ The following procedure describes how to migrate an ASP.NET Web Service to [!INC
        aspNetCompatibilityEnabled ="true"/>  
      </system.serviceModel>  
     </configuration>  
-  
     ```  
   
 17. Save the configuration.  

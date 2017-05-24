@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "<system.serviceModel> element"
   - "system.serviceModel element"
 ms.assetid: 78519531-ad7a-40d3-b3e7-42f1103d8854
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 26
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ This configuration section contains all the [!INCLUDE[indigo1](../../../../../in
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <behaviors>  
     </behaviors>  

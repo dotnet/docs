@@ -20,8 +20,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 1745a0b9-8332-4777-a670-b549bff3b901
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -35,7 +33,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```  
-  
 HRESULT ReadInMemorySymbols(  
         [in] ModuleID moduleId,  
         [in] DWORD symbolsReadOffset,  
@@ -43,7 +40,6 @@ HRESULT ReadInMemorySymbols(
         [in] DWORD countSymbolBytes,  
         [out] DWORD* pCountSymbolBytesRead  
 );  
-  
 ```  
   
 #### Parameters  

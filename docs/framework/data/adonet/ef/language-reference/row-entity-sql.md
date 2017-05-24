@@ -15,8 +15,6 @@ dev_langs:
   - "C++"
   - "ESQL"
 ms.assetid: 06da96e8-55d7-486c-991a-4e514d837ff9
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -28,7 +26,6 @@ Constructs anonymous, structurally typed records from one or more values.
 ## Syntax  
   
 ```  
-  
 ROW ( expression [ AS alias ] [,...] )  
 ```  
   

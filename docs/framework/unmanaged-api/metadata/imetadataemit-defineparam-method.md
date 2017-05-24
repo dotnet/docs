@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataEmit::DefineParam method [.NET Framework metadata]"
   - "DefineParam method [.NET Framework metadata]"
 ms.assetid: d86a3d14-4796-4909-9591-dfafe3de5ce4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

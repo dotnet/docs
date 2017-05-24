@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 449276b8-4633-46f0-85c9-81f01d127636
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"
@@ -33,7 +31,6 @@ manager: "erikre"
        <httpTransport />  
    </binding>  
 </customBinding>  
-  
 ```  
   
  This custom binding contains two elements:  

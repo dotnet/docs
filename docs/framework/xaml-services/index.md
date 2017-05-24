@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "XAML Services in WPF [XAML Services]"
   - "System.Xaml [XAML Services], conceptual documentation"
 ms.assetid: 0e11f386-808c-4eae-9ba6-029ad7ba2211
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: "wadepickett"
 ms.author: "wpickett"

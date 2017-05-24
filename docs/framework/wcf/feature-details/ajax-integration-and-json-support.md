@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "AJAX integration and JSON support [WCF]"
 ms.assetid: 3851a8fc-d861-4ac1-873c-96af0343d3a7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"

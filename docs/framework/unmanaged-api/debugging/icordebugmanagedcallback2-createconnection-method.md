@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "CreateConnection method [.NET Framework debugging]"
   - "ICorDebugManagedCallback2::CreateConnection method [.NET Framework debugging]"
 ms.assetid: 49e647be-9d63-4250-9d11-704e2a400d1b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

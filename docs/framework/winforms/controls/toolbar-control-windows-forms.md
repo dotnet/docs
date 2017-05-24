@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "toolbars [Windows Forms]"
   - "ToolBar control [Windows Forms]"
 ms.assetid: 6b40e9ce-6a7a-4784-bfc9-7f1d36b7462e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

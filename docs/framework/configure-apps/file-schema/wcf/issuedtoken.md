@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b6eae4b7-a6cd-4e1a-b0f6-f407022550b0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <issuedToken   
    cacheIssuedTokens="Boolean"  
    defaultKeyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"  

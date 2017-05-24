@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Reliable session"
 ms.assetid: 86e914f2-060b-432b-bd17-333695317745
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 30
 author: "Erikre"
 ms.author: "erikre"
@@ -48,7 +46,6 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
           binding="wsHttpBinding"  
           bindingConfiguration="Binding1"   
           contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-  
 ```  
   
  The endpoint contains a `bindingConfiguration` attribute that references a binding configuration named "Binding1." The binding configuration enables reliable sessions by setting the `enabled` attribute of the [\<reliableSession>](../../../../docs/framework/configure-apps/file-schema/wcf/reliablesession.md) to `true`. Delivery assurances for ordered sessions are controlled by setting the ordered attribute to `true` or `false`. The default is `true`.  
@@ -61,7 +58,6 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
         </binding>  
     </wsHttpBinding>  
 </bindings>  
-  
 ```  
   
  The service implementation class implements <xref:System.ServiceModel.InstanceContextMode> instancing to maintain a separate class instance for each client, as shown in the following sample code.  
@@ -76,7 +72,6 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
-  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
@@ -91,7 +86,6 @@ Press <ENTER> to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

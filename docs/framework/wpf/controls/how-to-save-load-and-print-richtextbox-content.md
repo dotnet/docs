@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "RichTextBox control, printing"
   - "RichTextBox control, loading"
 ms.assetid: ffb113d3-c68a-47ca-8ac0-882283f38326
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

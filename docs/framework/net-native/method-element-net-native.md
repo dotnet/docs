@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 348b49e5-589d-4eb2-a597-d6ff60ab52d1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -23,12 +21,10 @@ Applies runtime reflection policy to a constructor or method.
 ## Syntax  
   
 ```xml  
-  
 <Method Name="method_name"  
         Signature="method_signature"  
         Browse="policy_type"  
         Dynamic="policy_type" />  
-  
 ```  
   
 ## Attributes and Elements  
@@ -98,7 +94,6 @@ Applies runtime reflection policy to a constructor or method.
  These exceptions can all be eliminated by using the [\<Type>](../../../docs/framework/net-native/type-element-net-native.md) element to define the types whose metadata must be present, and by adding `<Method>` elements to ensure that the implementation of method overloads that can be called dynamically is also present. The following is the default.rd.xml file that eliminates these exceptions and allows the example to execute without error.  
   
 ```xml  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
   <Application>  
      <Assembly Name="*Application*" Dynamic="Required All" />  
@@ -152,7 +147,6 @@ Applies runtime reflection policy to a constructor or method.
      </Namespace>  
   </Application>  
 </Directives>  
-  
 ```  
   
 ## See Also  

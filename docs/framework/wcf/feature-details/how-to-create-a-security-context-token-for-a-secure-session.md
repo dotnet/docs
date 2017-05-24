@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 640676b6-c75a-4ff7-aea4-b1a1524d71b2
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -112,7 +110,6 @@ By using a stateful security context token (SCT) in a secure session, the sessio
     <httpTransport />  
   </binding>  
 </customBinding>  
-  
 ```  
   
 ## See Also  

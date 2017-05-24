@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "PreCloseAssembly method"
 ms.assetid: 6d23ac54-15ea-4027-a172-9ebef43e8f56
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

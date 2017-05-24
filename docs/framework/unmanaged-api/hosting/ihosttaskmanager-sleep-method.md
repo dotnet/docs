@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IHostTaskManager::Sleep method [.NET Framework hosting]"
   - "Sleep method, IHostTaskManager interface [.NET Framework hosting]"
 ms.assetid: f67d25f3-9199-4c5f-b1e8-1c819243cfd5
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

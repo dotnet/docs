@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "Windows Forms, control licenses"
   - "licensed controls [Windows Forms]"
 ms.assetid: 2de803b8-495e-4982-b209-19a72aba0460
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -46,7 +44,6 @@ The License Compiler reads text files that contain licensing information and pro
 ## Syntax  
   
 ```  
-  
       lc /target:  
       targetPE /complist:filename [/outdir:path]  
 /i:modules [/nologo] [/v]  
@@ -98,7 +95,6 @@ lc /target:myApp /complist:hostapplic.txt /complist:hostapplic2.txt /complist: h
 /complist:hostapplic.txt   
 /i:WFCPrj.dll   
 /outdir:"C:\My Folder"  
-  
 ```  
   
  The following command line uses the `response.rsp` file.  

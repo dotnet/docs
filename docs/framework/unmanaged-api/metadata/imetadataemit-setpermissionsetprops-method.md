@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetPermissionSetProps method [.NET Framework metadata]"
   - "IMetaDataEmit::SetPermissionSetProps method [.NET Framework metadata]"
 ms.assetid: 8eaee971-40bf-45e2-a3d8-6e57674213b6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "My.Computer.Mouse object"
 ms.assetid: da473357-2120-47dd-bd42-c63d695157eb
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "error handling, data entry"
   - "walkthroughs [Windows Forms], DataGridView control"
 ms.assetid: 30a68b85-d3af-4946-83c1-1e2d010d0511
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

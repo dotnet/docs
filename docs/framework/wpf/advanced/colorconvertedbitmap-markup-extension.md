@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "XAML, ColorConvertedBitmap markup extension"
   - "ColorConvertedBitmap markup extension"
 ms.assetid: 18321c18-c898-4470-93fa-a702b47770c1
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

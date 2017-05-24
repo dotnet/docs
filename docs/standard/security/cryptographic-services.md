@@ -35,8 +35,6 @@ helpviewer_keywords:
   - "cryptography [.NET Framework], about"
   - "random number generation"
 ms.assetid: f96284bc-7b73-44b5-ac59-fac613ad09f8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 34
 author: "mairaw"
 ms.author: "mairaw"

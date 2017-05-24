@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "procedure arguments, in parentheses"
   - "arguments [Visual Basic], changing value"
 ms.assetid: 77b4f2d2-1055-4c2f-a521-874d1db86946
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

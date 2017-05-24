@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "converting, shape to button"
   - "Expression Blend [WPF Designer]"
 ms.assetid: ff5037c2-bba7-4cae-8abb-6475b686c48e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "hosting interfaces [.NET Framework], version 2.0"
   - ".NET Framework 2.0, hosting interfaces"
 ms.assetid: 703b8381-43db-4a4d-9faa-cca39302d922
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

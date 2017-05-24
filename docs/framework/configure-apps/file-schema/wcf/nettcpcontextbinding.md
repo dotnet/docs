@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1d4715e1-5fff-4c3d-a226-18f21d0b30c4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requir
 ## Syntax  
   
 ```  
-  
 <netTcpContextBinding>  
    <binding   
       closeTimeout="TimeSpan"  

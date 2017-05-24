@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "dynamic layout [WPF interoperability]"
   - "device-independent pixels"
 ms.assetid: 3c574597-bbde-440f-95cc-01371f1a5d9d
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

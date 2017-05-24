@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "/moduleassemblyname compiler option [Visual Basic]"
   - "-moduleassemblyname compiler option [Visual Basic]"
 ms.assetid: 013a57b6-f425-4dd3-b333-512d72c42f55
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

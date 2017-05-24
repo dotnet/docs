@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "WCF Data Services, customizing"
   - "query interceptors [WCF Data Services]"
 ms.assetid: 24b9df1b-b54b-4795-a033-edf333675de6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

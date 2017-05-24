@@ -13,8 +13,6 @@ dev_langs:
 helpviewer_keywords: 
   - "get keyword [C#]"
 ms.assetid: a52de048-fbe0-41b0-82ec-8e4ac04d3a71
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

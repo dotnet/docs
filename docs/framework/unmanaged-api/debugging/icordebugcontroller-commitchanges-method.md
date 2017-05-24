@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugController::CommitChanges method [.NET Framework debugging]"
   - "CommitChanges method [.NET Framework debugging]"
 ms.assetid: f8e38bf6-0312-4517-bed5-42031ed86331
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

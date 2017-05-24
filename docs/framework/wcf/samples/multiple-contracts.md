@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2bef319b-fe9c-4d49-ac6c-dfb23eb35099
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -46,7 +44,6 @@ The Multiple Contracts sample demonstrates how to implement more than one contra
            contract="Microsoft.ServiceModel.Samples.ICalculatorSession" />  
   ...  
 </service>  
-  
 ```  
   
  The generated client code now includes a client class for both the original `ICalculator` contract and the new `ICalculatorSession` contract. The client configuration and code have been modified to communicate with each contract at the appropriate service endpoint.  

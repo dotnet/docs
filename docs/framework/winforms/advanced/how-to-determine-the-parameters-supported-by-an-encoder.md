@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "encoder parameters, determining supported"
 ms.assetid: f47ae459-e3ce-4d41-a140-2f6c6aea3f44
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

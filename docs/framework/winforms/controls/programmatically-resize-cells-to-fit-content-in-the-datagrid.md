@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], resizing cells"
   - "grids, resizing cells to fit content"
 ms.assetid: 63d770dc-b3f5-462b-901a-3125b2753792
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

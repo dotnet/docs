@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Windows Runtime, .NET Framework support for"
   - "Windows Runtime, passing a URI to"
 ms.assetid: 3eb5ce6f-f304-4f87-8e81-0f25092f5ad4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

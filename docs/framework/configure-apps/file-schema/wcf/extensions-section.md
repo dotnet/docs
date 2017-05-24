@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 53a59fb6-dede-47ec-9384-b3c2e8f0c1fa
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -25,7 +23,6 @@ This configuration section contains a collection of extensions, which enable the
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <extensions>  
       <bindingExtensions>  

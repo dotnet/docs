@@ -15,8 +15,6 @@ dev_langs:
   - "C++"
   - "ESQL"
 ms.assetid: 5b77f156-55de-4cb4-8154-87f707d4c635
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -28,7 +26,6 @@ Treats an object of a particular base type as an object of the specified derived
 ## Syntax  
   
 ```  
-  
 TREAT ( expression as type)  
 ```  
   

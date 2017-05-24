@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 396b875a-d203-4ebe-a3a1-6a330d962e95
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"
@@ -84,7 +82,6 @@ binding.ClientBaseAddress = new Uri("http://localhost:8000/DuplexTestUsingCode/C
          </binding>  
     </wsDualHttpBinding>  
 </bindings>  
-  
 ```  
   
 > [!WARNING]

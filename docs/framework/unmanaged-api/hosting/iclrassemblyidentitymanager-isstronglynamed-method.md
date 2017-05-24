@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IsStronglyNamed method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::IsStronglyNamed method [.NET Framework hosting]"
 ms.assetid: 954bd386-2076-4d00-9d46-38c728aa9cab
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

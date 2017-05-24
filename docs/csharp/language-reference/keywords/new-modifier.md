@@ -10,8 +10,6 @@ dev_langs:
 helpviewer_keywords: 
   - "new modifier keyword [C#]"
 ms.assetid: a2e20856-33b9-4620-b535-a60dbce8349b
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 28
 author: "BillWagner"
 ms.author: "wiwagn"

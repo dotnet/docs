@@ -18,8 +18,6 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, anchors"
   - ".NET Framework regular expressions, atomic zero-width assertions"
 ms.assetid: 336391f6-2614-499b-8b1b-07a6837108a7
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

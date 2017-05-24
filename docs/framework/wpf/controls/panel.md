@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "layout [WPF], Panel control"
   - "Panel control [WPF]"
 ms.assetid: 792943c5-335d-49dd-aa5b-ec1582a10088
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 63
 author: dotnet-bot
 ms.author: dotnetcontent

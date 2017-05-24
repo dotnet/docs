@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "data grids, changing border styles"
   - "DataGridView control [Windows Forms], gridline styles"
 ms.assetid: 2f413c7a-4025-4171-8e3a-66ef908ea583
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

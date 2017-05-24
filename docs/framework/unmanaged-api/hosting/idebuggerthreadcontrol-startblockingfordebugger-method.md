@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IDebuggerThreadControl::StartBlockingForDebugger method [.NET Framework hosting]"
   - "StartBlockingForDebugger method [.NET Framework hosting]"
 ms.assetid: 5c8f11b4-35d3-4c39-9bbd-58b896ba5ba6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "application development [.NET Framework], globalization"
   - "multilingual application development"
 ms.assetid: 9a59696b-d89b-45bd-946d-c75da4732d02
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 42
 author: "rpetrusha"
 ms.author: "ronpet"

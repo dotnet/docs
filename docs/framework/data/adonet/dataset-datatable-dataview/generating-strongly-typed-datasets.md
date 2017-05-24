@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 54333cbf-bb43-4314-a7d4-6dc1dd1c44b3
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 5
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -42,7 +40,6 @@ csc.exe /t:library XSDSchemaFileName.cs /r:System.dll /r:System.Data.dll
   
 ```vb  
 Imports XSDSchema.Namespace  
-  
 ```  
   
 ```csharp  
@@ -64,7 +61,6 @@ Dim customerRow As CustomerDataSet.CustomersRow
 For Each customerRow In customers.Customers  
   Console.WriteLine(customerRow.CustomerID)  
 Next  
-  
 ```  
   
 ```csharp  

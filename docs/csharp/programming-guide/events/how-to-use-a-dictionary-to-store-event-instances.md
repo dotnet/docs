@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "events [C#], storing instances in a Dictionary"
 ms.assetid: 9512c64d-5aaf-40cd-b941-ca2a592f0064
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

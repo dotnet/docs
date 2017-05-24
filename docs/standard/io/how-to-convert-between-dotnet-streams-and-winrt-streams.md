@@ -9,8 +9,6 @@ ms.technology: dotnet-standard
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 23a763ea-8348-4244-9f8c-a4280b870b47
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

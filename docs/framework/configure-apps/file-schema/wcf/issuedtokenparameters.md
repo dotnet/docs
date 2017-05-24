@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 120b3f37-7331-4816-b712-d6aab39655a4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies the parameters for a security token issued in a Federated security sce
 ## Syntax  
   
 ```  
-  
 <issuedTokenParameters   
       DefaultMessageSecurityVersion="System.ServiceModel.MessageSecurityVersion"  
       inclusionMode="AlwaysToInitiator/AlwaysToRecipient/Never/Once"  

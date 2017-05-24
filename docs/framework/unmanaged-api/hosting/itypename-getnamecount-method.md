@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetNameCount method [.NET Framework hosting]"
   - "ITypeName::GetNameCount method [.NET Framework hosting]"
 ms.assetid: 0beb909a-5095-40e5-909d-9ecc280300b8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

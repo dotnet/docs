@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "displaying a background image inside a text box to aid user input [WPF]"
   - "aid usability of a TextBox using a background image [WPF]"
 ms.assetid: df89bdd8-a0fb-45e0-b312-dd53332d01a8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

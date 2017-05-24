@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 22664196-f270-4ebc-a169-70e16a83dfa1
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -71,7 +69,6 @@ Customers(CustomerID, CompanyName, Phone)
  The XML Schema mapping also creates a **UniqueConstraint** on the **CustomerID** column, as shown in the following <xref:System.Data.DataSet>. (For simplicity, only relevant properties are shown.)  
   
 ```  
-  
       DataSetName: MyDataSet  
 TableName: customers  
   ColumnName: CustomerID  

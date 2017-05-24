@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "UI Automation, Tab control type"
   - "control types, Tab"
 ms.assetid: f8be2732-836d-4e4d-85e2-73aa39479bf4
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 20
 author: "Xansky"
 ms.author: "mhopkins"

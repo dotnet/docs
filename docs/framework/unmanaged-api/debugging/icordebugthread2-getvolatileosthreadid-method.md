@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetVolatileOSThreadID method [.NET Framework debugging]"
   - "ICorDebugThread2::GetVolatileOSThreadID method [.NET Framework debugging]"
 ms.assetid: f0922545-c2cf-40c8-9ef6-ca033563e682
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

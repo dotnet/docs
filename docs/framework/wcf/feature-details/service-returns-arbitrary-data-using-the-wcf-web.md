@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0283955a-b4ae-458d-ad9e-6fbb6f529e3d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"
@@ -86,14 +84,12 @@ Sometimes developers must have full control of how data is returned from a servi
   
     ```  
     ServiceHost host = new ServiceHost(typeof(Service), new Uri(baseAddress));  
-  
     ```  
   
 4.  Add an endpoint using the <xref:System.ServiceModel.WebHttpBinding> and the <xref:System.ServiceModel.Description.WebHttpBehavior>.  
   
     ```  
     host.AddServiceEndpoint(typeof(IImageServer), new WebHttpBinding(), "").Behaviors.Add(new WebHttpBehavior());  
-  
     ```  
   
 5.  Open the service host.  
@@ -109,7 +105,6 @@ Sometimes developers must have full control of how data is returned from a servi
     Console.Write("Press ENTER to close the host");  
     Console.ReadLine();  
     host.Close();  
-  
     ```  
   
 ### To call the raw service using Internet Explorer  
@@ -180,7 +175,6 @@ namespace RawImageService
         }  
     }  
 }  
-  
 ```  
   
 ## Compiling the Code  

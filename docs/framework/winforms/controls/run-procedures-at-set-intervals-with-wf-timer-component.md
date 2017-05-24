@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Timer component [Windows Forms], initializing"
   - "procedures, specific time intervals"
 ms.assetid: 8025247a-2de4-4d86-b8ab-a8cb8aeab2ea
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -76,7 +74,6 @@ Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.Event
          Timer1.Enabled = True  
       End If  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -113,7 +110,6 @@ private void Button1_Click(object sender, EventArgs e)
     Timer1.Enabled = true;  
   }  
 }  
-  
 ```  
   
 ```cpp  
@@ -154,7 +150,6 @@ private:
          timer1->Enabled = true;  
       }  
    }  
-  
 ```  
   
 ## Example  
@@ -183,7 +178,6 @@ Private Sub Timer1_Tick(ByVal sender As Object, ByVal e As System.EventArgs) Han
       Label1.Text = "Procedures Run: " & counter.ToString  
    End If  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -216,7 +210,6 @@ private void timer1_Tick(object sender, System.EventArgs e)
       label1.Text = "Procedures Run: " + counter.ToString();  
       }  
 }  
-  
 ```  
   
 ```cpp  

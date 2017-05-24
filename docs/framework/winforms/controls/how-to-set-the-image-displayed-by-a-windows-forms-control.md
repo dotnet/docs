@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "images [Windows Forms], Windows Forms controls"
   - "examples [Windows Forms], controls"
 ms.assetid: 9445af8f-4f62-48b0-a3f6-068058964b9f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -41,7 +39,6 @@ Several Windows Forms controls can display images. These images can be icons tha
        (System.Environment.GetFolderPath _  
        (System.Environment.SpecialFolder.MyPictures) _  
        & "\Image.gif")  
-  
     ```  
   
     ```csharp  
@@ -52,7 +49,6 @@ Several Windows Forms controls can display images. These images can be icons tha
        (System.Environment.GetFolderPath  
        (System.Environment.SpecialFolder.MyPictures)  
        + @"\Image.gif");  
-  
     ```  
   
     ```cpp  

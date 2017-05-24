@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "code access security, partially trusted code"
   - "APTCA"
 ms.assetid: dd66cd4c-b087-415f-9c3e-94e3a1835f74
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 25
 author: "mairaw"
 ms.author: "mairaw"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "EnumerateLocalVariables method [.NET Framework debugging]"
   - "ICorDebugILFrame::EnumerateLocalVariables method [.NET Framework debugging]"
 ms.assetid: 1a67fa1b-2419-4cd0-aad4-6f46a0719b4b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

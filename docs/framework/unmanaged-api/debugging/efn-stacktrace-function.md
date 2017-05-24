@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "_EFN_StackTrace function [.NET Framework debugging]"
 ms.assetid: caea7754-867c-4360-a65c-5ced4408fd9d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

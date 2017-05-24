@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "file names, parsing [Visual Basic]"
   - "parsing, file paths [Visual Basic]"
 ms.assetid: c1bd99c9-8160-456a-b5ab-60a49139b923
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "| operator [C#]"
   - "binary operator (|) [C#]"
 ms.assetid: 82d6bb78-54c8-40bf-b679-531180ddaf70
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], detecting changes in cells"
   - "data grids, detecting changes in cells"
 ms.assetid: 7fa44d01-97f4-4ccb-a149-bc72628d2c36
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

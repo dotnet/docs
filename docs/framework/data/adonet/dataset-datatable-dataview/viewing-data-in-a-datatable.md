@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1d26e0fb-f6e0-4afa-9a9c-b8d55b8f20dc
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -66,7 +64,6 @@ Else
     Console.WriteLine(vbTab & rowState)  
   Next  
 End If  
-  
 ```  
   
 ```csharp  
@@ -101,7 +98,6 @@ Dim deletedRows() As DataRow = workTable.Select(Nothing, Nothing, DataViewRowSta
 ' Retrieve rows where CustID > 5, and order by CustLName.  
 Dim custRows() As DataRow = workTable.Select( _  
     "CustID > 5", "CustLName ASC")  
-  
 ```  
   
 ```csharp  

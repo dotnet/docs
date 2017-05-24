@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "math routines"
   - "Atn function"
 ms.assetid: 4d2d82e7-6924-42fe-a4a7-b4dd5bebbd0c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

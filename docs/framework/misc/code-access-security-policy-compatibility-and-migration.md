@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "policy migration, compatibility"
   - "CLR poliicy migration"
 ms.assetid: 19cb4d39-e38a-4262-b507-458915303115
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

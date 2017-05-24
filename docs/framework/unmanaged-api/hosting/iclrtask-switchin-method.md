@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRTask::SwitchIn method [.NET Framework hosting]"
   - "SwitchIn method [.NET Framework hosting]"
 ms.assetid: 3d37ce20-aa65-4043-8f13-7c728b5d8a52
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

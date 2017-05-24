@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "WCF [WCF], request-reply services"
   - "request-reply contracts [WCF]"
 ms.assetid: 2fa710f1-47f4-4598-b063-3ab3bd22ebba
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -34,7 +32,6 @@ public interface IRequestReplyCalculator
     [OperationContract]  
     double Add(double n1, double n2);  
 }  
-  
 ```  
   
  You do not have to set the  <xref:System.ServiceModel.OperationContractAttribute.IsOneWay%2A> property to `false` because this is the default behavior.  

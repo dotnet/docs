@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "resource dictionaries, application-scope"
   - "application-scope resource dictionaries"
 ms.assetid: 53857682-bd2c-4f2c-8f25-1307d0b451a2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

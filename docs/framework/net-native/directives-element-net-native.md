@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 444846f3-48d5-4341-a43e-69f7221389eb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,7 +23,6 @@ The root element in every runtime directives file for [!INCLUDE[net_native](../.
 ## Syntax  
   
 ```xml  
-  
       <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <!-- child elements -->   
 </Directives>  

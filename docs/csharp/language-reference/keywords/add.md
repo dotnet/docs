@@ -12,8 +12,6 @@ dev_langs:
 helpviewer_keywords: 
   - "add event accessor [C#]"
 ms.assetid: faf30b99-10e8-45cd-ab9a-57585d4d1d8d
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 7
 author: "BillWagner"
 ms.author: "wiwagn"

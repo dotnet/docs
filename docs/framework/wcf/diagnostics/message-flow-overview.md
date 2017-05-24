@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fb0899e1-84cc-4d90-b45b-dc5a50063943
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"
@@ -46,7 +44,6 @@ In a distributed system containing interconnected services, it is necessary to d
         <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
       </diagnostics>  
     </system.serviceModel>  
-  
     ```  
   
 6.  Execute the server application without debugging by pressing CTRL+F5. Execute the client project by right-clicking the **Client** project and selecting **Debug**, **Start New Instance**.  
@@ -57,14 +54,12 @@ In a distributed system containing interconnected services, it is necessary to d
     <diagnostics>  
       <endToEndTracing propagateActivity="true" messageFlowTracing="true"/>  
     </diagnostics>  
-  
     ```  
   
 8.  In Program.cs in the client, add the following Using statement.  
   
     ```  
     using System.Diagnostics;  
-  
     ```  
   
 9. In the Main method in the program.cs file in the client project, set the Trace GUID to be propagated in the event log.  
@@ -72,7 +67,6 @@ In a distributed system containing interconnected services, it is necessary to d
     ```  
     Guid guid = Guid.NewGuid();  
     Trace.CorrelationManager.ActivityId = guid;  
-  
     ```  
   
 10. Refresh and examine the **Analytic**  log.  Look for an event with Event ID 220.  Select the event, and click the **Details** tab in the preview pane. This event will contain the correlation ID for the calling activity.  

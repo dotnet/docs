@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "garbage collection events [.NET Framework]"
   - "ETW, garbage collection events (CLR)"
 ms.assetid: f14b6fd7-0966-4d87-bc89-54ef3a44a94a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"

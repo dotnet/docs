@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "control patterns, Toggle"
   - "UI Automation, Toggle control pattern"
 ms.assetid: 3cfe875f-b0c0-413d-9703-5f14e6a1a30e
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"

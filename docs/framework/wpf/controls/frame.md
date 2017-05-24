@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Frame control [WPF]"
   - "content [WPF], Frame control"
 ms.assetid: 1588f9bf-9001-4437-a8fc-cc57ef50561c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 65
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b4e9b37a-059b-4076-8f56-cb3f9cef0cd9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -26,7 +24,6 @@ Serves as a container for application-wide types and type members whose metadata
 ## Syntax  
   
 ```xml  
-  
 <Application Activate="policy_setting"  
              Browse="policy_setting"  
              Dynamic="policy_setting"  
@@ -37,7 +34,6 @@ Serves as a container for application-wide types and type members whose metadata
              MarshalObject="policy_setting"  
              MarshalDelegate="policy_setting"  
              MarshalStructure="policy_setting" />  
-  
 ```  
   
 ## Attributes and Elements  

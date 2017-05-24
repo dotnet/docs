@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "Group By statement"
   - "Group By clause"
 ms.assetid: b1b5dcea-6654-473b-a2db-01f7e4c265d7
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

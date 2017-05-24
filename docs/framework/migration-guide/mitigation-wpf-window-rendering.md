@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 28ed6bf8-141b-4b73-a4e3-44a99fae5084
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -31,11 +29,9 @@ In the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] running on Windows 8
 -   By adding the `<EnableMultiMonitorDisplayClipping>` element to the `<appSettings>` section of your application configuration file, you can disable or enable this behavior on apps running on Windows 8 or later. For example, the following configuration section disables rendering without clipping:  
   
     ```  
-  
     <appSettings>  
         <add key="EnableMultiMonitorDisplayClipping" value="true"/>  
       </appSettings>  
-  
     ```  
   
      The `<EnableMultiMonitorDisplayClipping>` configuration setting can have either of two values:  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataEmit::SetEventProps method [.NET Framework metadata]"
   - "SetEventProps method [.NET Framework metadata]"
 ms.assetid: 3b039e50-63ec-4730-99ff-2327408de477
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

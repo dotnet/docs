@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], explorer style interface"
   - "ListView control [Windows Forms], explorer-style interface"
 ms.assetid: 9e5e7721-19e2-4890-b273-a43589fe99ff
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

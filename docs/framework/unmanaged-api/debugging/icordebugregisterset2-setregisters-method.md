@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugRegisterSet2::SetRegisters method [.NET Framework debugging]"
   - "SetRegisters method, ICorDebugRegisterSet2 interface [.NET Framework debugging]"
 ms.assetid: fe0ac7e7-c9e1-4ec1-9f4e-1c56d63d73ac
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

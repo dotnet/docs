@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Terminate method, ICorDebugController interface [.NET Framework debugging]"
   - "ICorDebugController::Terminate method [.NET Framework debugging]"
 ms.assetid: 4275af0c-b5a7-4e4c-97c9-7e41f36b2dd8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

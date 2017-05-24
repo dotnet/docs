@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "parallel programming, debugging and profiling tools"
 ms.assetid: 38f7302a-ddf6-4179-ba19-f49e00395b9f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

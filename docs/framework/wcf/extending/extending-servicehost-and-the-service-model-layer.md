@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "extending service models [WCF]"
 ms.assetid: 954c138a-1cd0-45a0-8abe-e4d2b8ff5400
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"

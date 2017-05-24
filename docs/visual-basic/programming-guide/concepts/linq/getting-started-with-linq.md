@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "LINQ [Visual Basic]"
   - "LINQ, Visual Basic"
 ms.assetid: 53c66373-ff43-431f-b4bb-f98362830279
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

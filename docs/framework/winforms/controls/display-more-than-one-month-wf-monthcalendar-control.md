@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "calendars, multiple months"
   - "MonthCalendar control [Windows Forms], formatting display"
 ms.assetid: d197caa2-38a5-4cb4-acc3-562130c2ace3
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -33,12 +31,10 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
   
     ```vb  
     MonthCalendar1.CalendarDimensions = New System.Drawing.Size (3,2)  
-  
     ```  
   
     ```csharp  
     monthCalendar1.CalendarDimensions = new System.Drawing.Size (3,2);  
-  
     ```  
   
     ```cpp  

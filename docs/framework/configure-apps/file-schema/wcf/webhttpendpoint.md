@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ecaaeb6f-ebd0-411d-8b53-92477cd45347
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -26,7 +24,6 @@ This configuration element defines a standard endpoint with a fixed [\<webHttpBi
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <webHttpEndpoint>           <standardEndpoint             automaticFormatSelectionEnabled="String"              defaultOutgoingResponseFormat="Xml/Json"             helpEnabled="Boolean"             webEndpointType="String"/>             </webHttpEndpoint>     </standardEndpoints>  
 </system.serviceModel>  

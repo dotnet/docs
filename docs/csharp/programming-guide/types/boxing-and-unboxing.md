@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "unboxing [C#]"
   - "boxing [C#]"
 ms.assetid: 8da9bbf4-bce9-4b08-b2e5-f64c11c56514
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 34
 author: "BillWagner"
 ms.author: "wiwagn"

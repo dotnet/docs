@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, how to measure performance"
 ms.assetid: 491ba43b-2c10-473d-9aab-e2cb96446711
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

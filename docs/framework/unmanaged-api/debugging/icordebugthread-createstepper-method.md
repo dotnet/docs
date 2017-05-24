@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugThread::CreateStepper method [.NET Framework debugging]"
   - "CreateStepper method, ICorDebugThread interface [.NET Framework debugging]"
 ms.assetid: 4657443f-dd12-431b-a648-175c23f13c83
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

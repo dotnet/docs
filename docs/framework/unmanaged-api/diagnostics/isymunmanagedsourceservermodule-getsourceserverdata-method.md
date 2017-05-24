@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ISymUnmanagedSourceServerModule::GetSourceServerData method [.NET Framework debugging]"
   - "GetSourceServerData method [.NET Framework debugging]"
 ms.assetid: 20bdf8ff-2d15-4c64-8950-6888f642d6c0
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

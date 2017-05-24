@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "not equals operator (!=) [C#]"
   - "!= operator [C#]"
 ms.assetid: eeff7a4e-ad6f-462d-9f8d-49e9b91c6c97
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

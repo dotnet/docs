@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "strings [C#], converting from RTF"
 ms.assetid: 3b386a87-899d-4d98-bc82-a980526ddaac
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -55,7 +53,6 @@ Rich Text Format (RTF) is a document format developed by Microsoft in the late 1
 ```  
 The Greek word for "psyche" is spelled ψυχή. The Greek letters are encoded in Unicode.  
 These characters are from the extended ASCII character set (Windows code page 1252):  âäӑå  
-  
 ```  
   
  [!code-cs[csProgGuideStrings#33](../../../csharp/programming-guide/strings/codesnippet/CSharp/how-to-convert-rtf-to-plain-text_1.cs)]  

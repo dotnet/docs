@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "methods [Visual Basic], partial methods"
   - "inserting custom logic into code"
 ms.assetid: 74b3368b-b348-44a0-a326-7d7dc646f4e9
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

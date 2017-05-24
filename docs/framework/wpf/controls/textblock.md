@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "controls [WPF], TextBlock"
   - "TextBlock control [WPF]"
 ms.assetid: ea5f7826-7a92-4de9-9eee-10ef700ce7b6
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

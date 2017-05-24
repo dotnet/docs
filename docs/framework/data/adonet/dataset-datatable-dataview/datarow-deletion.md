@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c34f531d-4b9b-4071-b2d7-342c402aa586
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 5
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -28,7 +26,6 @@ There are two methods you can use to delete a <xref:System.Data.DataRow> object 
   
 ```vb  
 workTable.Rows.Remove(workRow)  
-  
 ```  
   
 ```csharp  
@@ -39,7 +36,6 @@ workTable.Rows.Remove(workRow);
   
 ```vb  
 workRow.Delete  
-  
 ```  
   
 ```csharp  

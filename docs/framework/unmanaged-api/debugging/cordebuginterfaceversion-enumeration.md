@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugInterfaceVersion enumeration [.NET Framework debugging]"
 ms.assetid: 7d1e6cd9-2a15-41c6-9b68-008705a4ed90
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 17

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "from clause [C#]"
   - "from keyword [C#]"
 ms.assetid: 1aefd18c-1314-47f8-99ec-9bcefb09e699
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"

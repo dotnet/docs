@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "providers, UI Automation"
   - "UI Automation, clients"
 ms.assetid: 69eebd8b-39ed-40e7-93cc-4457c4caf746
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"

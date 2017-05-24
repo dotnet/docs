@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ObjectReferences method [.NET Framework profiling]"
   - "ICorProfilerCallback::ObjectReferences method [.NET Framework profiling]"
 ms.assetid: dd5e9b64-b4a3-4ba6-9be6-ddb540f4ffcf
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 18

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], arranging with FlowLayoutPanel"
   - "layout [Windows Forms], walkthroughs"
 ms.assetid: a1744323-0316-49c2-992e-ebfc0a976b85
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

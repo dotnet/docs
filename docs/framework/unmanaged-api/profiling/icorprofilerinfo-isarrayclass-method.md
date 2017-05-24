@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IsArrayClass method [.NET Framework profiling]"
   - "ICorProfilerInfo::IsArrayClass method [.NET Framework profiling]"
 ms.assetid: 7f230961-23a6-4d56-ad2d-7a876d65705f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

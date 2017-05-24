@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetVirtualMethod method [.NET Framework debugging]"
   - "ICorDebugObjectValue::GetVirtualmethod method [.NET Framework debugging]"
 ms.assetid: f783ebc3-e952-46e6-9325-14dd2c666f21
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

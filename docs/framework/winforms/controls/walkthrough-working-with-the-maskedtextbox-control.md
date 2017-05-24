@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "user input, controlling"
   - "text, controls for input"
 ms.assetid: df60565e-5447-4110-92a6-be1f6ff5faa3
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -83,7 +81,6 @@ Tasks illustrated in this walkthrough include:
         ToolTip1.ToolTipTitle = "Invalid Input"  
         ToolTip1.Show("We're sorry, but only digits (0-9) are allowed in dates.", MaskedTextBox1, 5000)  
     End Sub  
-  
     ```  
   
 ## Alert the User to a Type that Is Not Valid  
@@ -130,7 +127,6 @@ Tasks illustrated in this walkthrough include:
            e.Cancel = True  
         End If  
     End Sub  
-  
     ```  
   
 ## See Also  

@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "objects [Visual Basic], variables referring to same"
   - "Visual Basic code, operators"
 ms.assetid: f760e828-8704-4256-bc2d-c22a4c93b524
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,8 +16,6 @@ dev_langs:
 helpviewer_keywords: 
   - "TreeView control [Windows Forms], about TreeView control"
 ms.assetid: 0ece823a-9508-478a-bbdb-7d7c3bae51d5
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

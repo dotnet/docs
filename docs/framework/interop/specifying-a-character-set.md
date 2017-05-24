@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "attribute fields in platform invoke, CharSet"
   - "CharSet field"
 ms.assetid: a8347eb1-295f-46b9-8a78-63331f9ecc50
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -100,7 +98,6 @@ End Class
 [DllImport("dllname", CharSet=CharSet.Ansi)]  
 [DllImport("dllname", CharSet=CharSet.Unicode)]  
 [DllImport("dllname", CharSet=CharSet.Auto)]  
-  
 ```  
   
 ```cpp  
@@ -121,7 +118,6 @@ End Class
 [DllImport("user32.dll", CharSet=CharSet.Auto)]  
     public static extern int MessageBox(int hWnd, String text,   
         String caption, uint type);  
-  
 ```  
   
 ```cpp  

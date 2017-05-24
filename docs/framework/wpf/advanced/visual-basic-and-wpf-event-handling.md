@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Visual Basic, event handlers"
   - "event handlers, Visual Basic"
 ms.assetid: ad4eb9aa-3afc-4a71-8cf6-add3fbea54a1
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

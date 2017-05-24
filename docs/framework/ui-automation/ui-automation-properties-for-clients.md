@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "properties, UI Automation clients"
   - "UI Automation, client properties"
 ms.assetid: 255905af-0b17-485c-93d4-8a2db2a6524b
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 17
 author: "Xansky"
 ms.author: "mhopkins"

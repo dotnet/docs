@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "WS-Metadata Exchange [WCF]"
   - "WS-Metadata Exchange [WCF], configuring a custom binding"
 ms.assetid: cdba4d73-da64-4805-bc56-9822becfd1e4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -119,7 +117,6 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
     MetadataSet mdSet = mexClient.GetMetadata(new EndpointAddress(mexAddress));  
     foreach (MetadataSection section in mdSet.MetadataSections)  
     Console.WriteLine("Metadata section: " + section.Dialect.ToString());  
-  
     ```  
   
 ## See Also  

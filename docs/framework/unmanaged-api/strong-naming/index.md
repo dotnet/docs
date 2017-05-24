@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "native API reference [.NET Framework], strong naming"
   - "unmanaged API reference [.NET Framework], strong naming"
 ms.assetid: 428c68b6-a7b4-44be-b280-75905f46612c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

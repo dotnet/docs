@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "application development [WPF], files"
   - "application management [WPF]"
 ms.assetid: 7ad2943b-3961-41d3-8fc6-1582d43f5d99
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -72,7 +70,6 @@ manager: "wpickett"
   </ItemGroup>  
   ...  
 </Project>  
-  
 ```  
   
 > [!NOTE]
@@ -115,7 +112,6 @@ manager: "wpickett"
   </ItemGroup>  
   ...  
 </Project>  
-  
 ```  
   
 > [!NOTE]
@@ -148,7 +144,6 @@ manager: "wpickett"
   </ItemGroup>  
   ...  
 </Project>  
-  
 ```  
   
 > [!NOTE]
@@ -220,7 +215,6 @@ manager: "wpickett"
   </None>  
   ...  
 </Project>  
-  
 ```  
   
 > [!NOTE]

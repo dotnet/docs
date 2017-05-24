@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0834768e-9665-46bf-86eb-d4b09ab91af5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "Erikre"
 ms.author: "erikre"
@@ -69,7 +67,6 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
            type="System.ServiceModel.Activation.ServiceHttpModule, System.ServiceModel,Version=3.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"/>  
     </modules>  
     </system.webServer>  
-  
 ```  
   
  If you have `aspNetCompatibilityEnabled` set to `true`, configure the `System.ServiceModel.Activation.ServiceHttpHandlerFactory` as shown in the following config snippet.  
@@ -88,7 +85,6 @@ This topic outlines some best practices for hosting [!INCLUDE[indigo1](../../../
                />  
     </handlers>      
   </system.webServer>  
-  
 ```  
   
 ## See Also  

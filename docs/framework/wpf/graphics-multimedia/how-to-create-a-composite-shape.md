@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "composite shapes"
   - "graphics, composite shapes"
 ms.assetid: 8e5c7ef4-d7ed-4c43-afc9-ca01325c300b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

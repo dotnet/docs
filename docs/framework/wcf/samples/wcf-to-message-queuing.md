@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 78d0d0c9-648e-4d4a-8f0a-14d9cafeead9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 32
 author: "Erikre"
 ms.author: "erikre"
@@ -38,7 +36,6 @@ static void Main(string[] args)
     Console.WriteLine("Order Service is running");  
     Console.ReadLine();  
 }  
-  
 ```  
   
  When a message is received in the queue, the message handler `ProcessOrder` is invoked.  
@@ -68,7 +65,6 @@ public static void ProcessOrder(Object source,
     }  
   
 }  
-  
 ```  
   
  The service extracts the `ProcessOrder` from the MSMQ message body, and processes the order.  
@@ -79,7 +75,6 @@ public static void ProcessOrder(Object source,
 <appSettings>  
     <add key="orderQueueName" value=".\private$\Orders" />  
 </appSettings>  
-  
 ```  
   
 > [!NOTE]
@@ -105,7 +100,6 @@ Console.WriteLine("Order has been submitted:{0}", po);
   
 //Closing the client gracefully closes the connection and cleans up resources  
 client.Close();  
-  
 ```  
   
  The client uses a custom client in-order to send the MSMQ message to the queue. Because the application that receives and processes the message is an MSMQ application and not a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application, there is no implicit service contract between the two applications. So, we cannot create a proxy using the Svcutil.exe tool in this scenario.  
@@ -113,7 +107,6 @@ client.Close();
  The custom client is essentially the same for all [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications that use the `MsmqIntegration` binding to send messages. Unlike other clients, it does not include a range of service operations. It is a submit message operation only.  
   
 ```  
-  
 [System.ServiceModel.ServiceContractAttribute(Namespace = "http://Microsoft.ServiceModel.Samples")]  
 public interface IOrderProcessor  
 {  

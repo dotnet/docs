@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), marshaling"
   - "invalid function pointers"
 ms.assetid: 99ae44f1-783e-49a9-9009-24f54bbd0f09
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

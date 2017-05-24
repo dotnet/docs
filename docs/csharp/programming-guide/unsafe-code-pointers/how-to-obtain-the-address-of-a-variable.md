@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "pointers [C#], & operator"
   - "pointer expressions [C#], address-of operator"
 ms.assetid: 44fe2cd9-a64f-4ef5-be2a-09ce807c0182
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "templates, inline"
   - "inline styles"
 ms.assetid: 69a1a3f9-acb5-4e2c-9c43-2e376c055ac4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

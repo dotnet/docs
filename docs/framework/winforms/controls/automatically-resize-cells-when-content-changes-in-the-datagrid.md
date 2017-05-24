@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "cells, resizing automatically"
   - "DataGridView control [Windows Forms], resizing cells"
 ms.assetid: 1d68934d-a04c-4b12-9e66-c856c6828131
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

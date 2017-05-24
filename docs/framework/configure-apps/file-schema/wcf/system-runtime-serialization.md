@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a8cebf4c-06d2-4667-8f5b-c3e1fc90df6f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -25,7 +23,6 @@ Represents the root element for the <xref:System.Runtime.Serialization> namespac
 ## Syntax  
   
 ```  
-  
 <configuration>  
   <system.runtime.serialization>  
     <dataContractSerializer ignoreExtensionDataObject="Boolean"  

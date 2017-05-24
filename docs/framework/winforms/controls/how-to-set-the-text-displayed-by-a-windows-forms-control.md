@@ -27,8 +27,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], captions"
   - "forms, captions"
 ms.assetid: 36b95bff-8780-479d-b86a-f1a0673653aa
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -75,7 +73,6 @@ Windows Forms controls usually display some text that is related to the primary 
   
     ```cpp#  
     mpMenuItem->Text = "&& Now For Something Completely Different";  
-  
     ```  
   
 ## See Also  

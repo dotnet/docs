@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "bitmap images"
   - "images, bitmap"
 ms.assetid: be180b56-ca6e-4da3-a839-f6b0bf482f7d
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 62
 author: dotnet-bot
 ms.author: dotnetcontent

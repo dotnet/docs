@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "printers, availability"
   - "print jobs, timing"
 ms.assetid: 7e9c8ec1-abf6-4b3d-b1c6-33b35d3c4063
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

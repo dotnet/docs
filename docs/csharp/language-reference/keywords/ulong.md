@@ -13,8 +13,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ulong keyword [C#]"
 ms.assetid: f2ece624-837a-40cf-92c5-343e7f33397c
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

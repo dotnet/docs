@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], creating a lookup table"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: 622fce80-879d-44be-abbf-8350ec22ca2b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

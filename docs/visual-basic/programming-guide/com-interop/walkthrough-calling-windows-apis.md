@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "DllImport attribute, calling Windows API"
   - "Declare statement, declaring DLL functions"
 ms.assetid: 9280ca96-7a93-47a3-8d01-6d01be0657cb
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetUILocale method, IHostTaskManager interface [.NET Framework hosting]"
   - "IHostTaskManager::SetUILocale method [.NET Framework hosting]"
 ms.assetid: d0c87a9c-ea81-4237-a16b-c22b36ec9dc8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

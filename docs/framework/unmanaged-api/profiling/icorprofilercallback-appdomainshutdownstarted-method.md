@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "AppDomainShutdownStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::AppDomainShutdownStarted method [.NET Framework profiling]"
 ms.assetid: d23a3408-b525-4aec-a186-2ac7ca65d7a4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

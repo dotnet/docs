@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "INotifySink2 interface [.NET Framework debugging]"
 ms.assetid: c1018789-4206-455d-aacc-2d876fc0d0bb
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

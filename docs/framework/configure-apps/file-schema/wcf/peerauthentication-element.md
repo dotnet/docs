@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 09a8a9ff-e395-42f6-8ceb-9d44bdc1cbe1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -33,7 +31,6 @@ Specifies authentication options for peer-to-peer clients.
 ## Syntax  
   
 ```  
-  
 <peerAuthentication  
 customCertificateValidatorType = "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
 certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  

@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 05dbbe2b-049c-4a60-be69-2ad7a949405e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6
@@ -35,10 +33,8 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT SetEventMask2(        [in] DWORD dwEventsLow,        [in] DWORD dwEventsHigh  
 );  
-  
 ```  
   
 #### Parameters  

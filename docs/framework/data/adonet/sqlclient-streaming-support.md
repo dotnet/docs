@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c449365b-470b-4edb-9d61-8353149f5531
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 14
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -300,7 +298,6 @@ namespace StreamingFromServer {
       }  
    }  
 }  
-  
 ```  
   
 ## Sample -- Streaming to [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]  
@@ -457,7 +454,6 @@ namespace StreamingToServer {
       }  
    }  
 }  
-  
 ```  
   
 ## Sample -- Streaming From One [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)] to Another [!INCLUDE[ssNoVersion](../../../../includes/ssnoversion-md.md)]  
@@ -524,7 +520,6 @@ namespace StreamingFromServerToAnother {
       }  
    }  
 }  
-  
 ```  
   
 ## See Also  

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], examples"
   - "BindingSource, using with multiple forms"
 ms.assetid: a1a49630-db9c-4485-b888-1f62a373a4f7
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

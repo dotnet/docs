@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ae1f2267-e40d-42ff-8abf-06ab7067bdb9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"
@@ -26,7 +24,6 @@ A secure WCF client that connects to an endpoint with this identity verifies tha
 ## Syntax  
   
 ```  
-  
 <rsa value = "String" />  
 ```  
   

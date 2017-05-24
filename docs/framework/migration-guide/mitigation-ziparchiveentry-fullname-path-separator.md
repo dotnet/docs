@@ -17,9 +17,6 @@ helpviewer_keywords:
   - ".NET Framework 4.6.1 retargeting changes"
   - "retargeting changes"
 ms.assetid: 8d575722-4fb6-49a2-8a06-f72d62dc3766
-ms.technology: 
-  - "dotnet-standard"
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -39,21 +36,17 @@ Starting with apps that target the [!INCLUDE[net_v461](../../../includes/net-v46
  If this behavior is undesirable, you can opt out of by adding a configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of your application configuration file. The following shows both the `<runtime>` section and the opt-out switch.  
   
 ```  
-  
 <runtime>  
    <AppContextSwitchOverrides value="Switch.System.IO.Compression.ZipFile.UseBackslash=true" />  
 </runtime>  
-  
 ```  
   
  In addition, apps that target previous versions of the .NET Framework but are running on the [!INCLUDE[net_v461](../../../includes/net-v461-md.md)] and later versions can opt in to this behavior by adding a configuration setting to the [\<runtime>](../../../docs/framework/configure-apps/file-schema/runtime/runtime-element.md) section of the application configuration file. The following shows both the `<runtime>` section and the opt-in switch.  
   
 ```  
-  
 <runtime>  
    <AppContextSwitchOverrides value="Switch.System.IO.Compression.ZipFile.UseBackslash=false" />  
 </runtime>  
-  
 ```  
   
 ## See Also  

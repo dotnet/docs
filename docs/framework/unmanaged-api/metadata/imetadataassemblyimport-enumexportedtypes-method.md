@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "EnumExportedTypes method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::EnumExportedTypes method [.NET Framework metadata]"
 ms.assetid: e5912ed8-e4ce-438b-8ea3-d9e4c288d109
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

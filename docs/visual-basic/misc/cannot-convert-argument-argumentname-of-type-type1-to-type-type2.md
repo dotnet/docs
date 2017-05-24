@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrForLoop_ConvertToType3"
 ms.assetid: fdf6c571-9c6c-4db2-8960-f394720b01e5
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

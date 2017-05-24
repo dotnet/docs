@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "DateTime object"
   - "time strings"
 ms.assetid: 43bae51e-9b1d-41a6-a187-772c0d096d90
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "WS Profile binding"
 ms.assetid: 22d85b19-0135-4141-9179-a0e9c343ad73
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 39
 author: "Erikre"
 ms.author: "erikre"
@@ -80,7 +78,6 @@ This sample demonstrates how to implement a typical service and a typical client
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
-  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
@@ -95,7 +92,6 @@ Press <ENTER> to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

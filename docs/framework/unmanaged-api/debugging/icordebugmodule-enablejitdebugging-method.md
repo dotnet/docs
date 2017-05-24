@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugModule::EnableJITDebugging method [.NET Framework debugging]"
   - "EnableJITDebugging method [.NET Framework debugging]"
 ms.assetid: 0a65e2a4-5bb6-496c-ae6f-40474426b5a6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

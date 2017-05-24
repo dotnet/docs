@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "abstractions [.NET Framework]"
   - "base classes, abstractions"
 ms.assetid: 37a2d9a4-9721-482a-a40f-eee2c1d97875
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

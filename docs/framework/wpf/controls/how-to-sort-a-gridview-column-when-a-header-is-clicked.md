@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "ListView controls, sorting GridView columns"
   - "GridView controls, ListView control"
 ms.assetid: 4865d720-d147-40ed-83a7-af7587f8aad8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -210,7 +208,6 @@ private void Sort(string sortBy, ListSortDirection direction)
     dataView.SortDescriptions.Add(sd);  
     dataView.Refresh();  
 }  
-  
 ```  
   
 ```vb  

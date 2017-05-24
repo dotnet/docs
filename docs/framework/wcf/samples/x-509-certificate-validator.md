@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3b042379-02c4-4395-b927-e57c842fd3e0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "Erikre"
 ms.author: "erikre"
@@ -100,7 +98,6 @@ This sample demonstrates how to implement a custom X.509 Certificate Validator. 
       </serviceBehaviors>  
     </behaviors>  
       </system.serviceModel>  
-  
 ```  
   
  The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate mode and message `clientCredentialType`.  
@@ -154,7 +151,6 @@ This sample demonstrates how to implement a custom X.509 Certificate Validator. 
       </endpointBehaviors>  
     </behaviors>  
   </system.serviceModel>  
-  
 ```  
   
  The client implementation sets the client certificate to use.  
@@ -220,7 +216,6 @@ public class CustomX509CertificateValidator : X509CertificateValidator
      throw new Exception("Certificate is not self-issued");  
    }  
 }  
-  
 ```  
   
  Once the validator is implemented in service code, the service host must be informed about the validator instance to use. This is done using the following code.  
@@ -256,7 +251,6 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
   </behavior>  
  </serviceBehaviors>  
 </behaviors>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The client should successfully call all the methods. Press ENTER in the client window to shut down the client.  
@@ -278,7 +272,6 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
     echo making server cert  
     echo ************  
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the server certificate into client's trusted certificate store:  
@@ -303,7 +296,6 @@ serviceHost.Credentials.ClientCertificate.Authentication.CustomCertificateValida
     echo making client cert  
     echo ************  
     makecert.exe -sr CurrentUser -ss MY -a sha1 -n CN=%USER_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the client certificate into server's trusted certificate store:  

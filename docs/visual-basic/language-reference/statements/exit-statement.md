@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "program termination"
   - "execution, stopping"
 ms.assetid: 760bfb32-5c3f-4bdb-a432-9a6001c92db7
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

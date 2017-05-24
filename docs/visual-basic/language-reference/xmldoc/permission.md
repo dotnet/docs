@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "<permission> XML tag"
   - "permission XML tag"
 ms.assetid: 0edf0500-5cd7-49c0-9255-64c48f972b77
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

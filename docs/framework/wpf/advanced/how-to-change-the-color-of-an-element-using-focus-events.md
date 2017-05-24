@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "colors of elements, changing"
   - "elements, changing color of"
 ms.assetid: 7e246802-3625-47a7-ae9d-c8a2a40fd040
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

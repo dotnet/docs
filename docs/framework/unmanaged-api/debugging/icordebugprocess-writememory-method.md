@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugProcess::WriteMemory method [.NET Framework debugging]"
   - "WriteMemory method [.NET Framework debugging]"
 ms.assetid: d5c07d86-045d-4391-893b-0bcd2959f90e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

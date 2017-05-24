@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Service Operations [WCF Data Services]"
   - "WCF Data Services, service operations"
 ms.assetid: dfcd3cb1-2f07-4d0b-b16a-6b056c4f45fa
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

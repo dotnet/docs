@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f32a56a0-e2b2-46bf-a302-29e1275917f9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -53,7 +51,6 @@ else
      sab.AuthenticationSchemes = AuthenticationSchemes.Basic | AuthenticationSchemes.Negotiate | AuthenticationSchemes.Digest;  
 }  
 // ...  
-  
 ```  
   
  When configuring this in a config file, use the \<serviceAuthenticationManager> element as shown in the following XML snippet.  
@@ -90,7 +87,6 @@ else
      sab.AuthenticationSchemes = AuthenticationSchemes.Basic | AuthenticationSchemes.Negotiate | AuthenticationSchemes.Digest;  
 }  
 // ...  
-  
 ```  
   
  In config, it looks like this:  
@@ -127,7 +123,6 @@ else
       <textMessageEncoding/>  
       <httpTransport authenticationScheme="Negotiate, Ntlm, Digest, Basic" />  
     </binding>  
-  
 ```  
   
 ## See Also  

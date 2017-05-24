@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugModuleBreakpoint::GetModule method [.NET Framework debugging]"
   - "GetModule method, ICorDebugModuleBreakpoint interface [.NET Framework debugging]"
 ms.assetid: ffd5d9ec-4564-4200-b625-b306eec0ebd7
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

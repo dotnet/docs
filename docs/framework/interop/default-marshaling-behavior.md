@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, marshaling"
   - "marshaling behavior"
 ms.assetid: c0a9bcdf-3df8-4db3-b1b6-abbdb2af809a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -208,7 +206,6 @@ End Structure
    <FieldOffset(8)> Public right As Integer  
    <FieldOffset(12)> Public bottom As Integer  
 End Structure  
-  
 ```  
   
 ```csharp  
@@ -241,7 +238,6 @@ Class Win32API
    Declare Auto Function PtInRect Lib "User32.dll" _  
     (ByRef r As Rect, p As Point) As Boolean  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -274,7 +270,6 @@ class Win32API {
    Public wSecond As System.UInt16  
    Public wMilliseconds As System.UInt16  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -304,7 +299,6 @@ Public Class Win32
    Declare Auto Sub GetSystemTime Lib "Kernel32.dll" (ByVal sysTime _  
    As SystemTime)  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -326,7 +320,6 @@ class Win32API {
       Me.y = y  
    End Sub  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -428,7 +421,6 @@ Public Interface IValueTypes
    Sub M3(d As System.Decimal)  
    Sub M4(d As System.Drawing.Color)  
 End Interface  
-  
 ```  
   
 ```csharp  

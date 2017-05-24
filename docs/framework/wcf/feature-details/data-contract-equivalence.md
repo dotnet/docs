@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "data contracts [WCF], equivalence"
 ms.assetid: f06f3c7e-c235-4ec1-b200-68142edf1ed1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"

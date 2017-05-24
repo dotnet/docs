@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "serialization [WCF], setting default values"
   - "OnSerializedAttribute [WCF]"
 ms.assetid: aa4a3a6f-05ec-4efd-bdbf-2181e13e6468
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"

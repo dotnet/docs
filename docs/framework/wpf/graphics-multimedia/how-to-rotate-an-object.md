@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "graphics, rotating objects"
   - "rotating objects"
 ms.assetid: ee3466cd-e66f-4e8f-8a5a-71d77bc1e390
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

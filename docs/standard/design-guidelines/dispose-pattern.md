@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "customizing Dispose method name"
   - "Finalize method"
 ms.assetid: 31a6c13b-d6a2-492b-9a9f-e5238c983bcb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

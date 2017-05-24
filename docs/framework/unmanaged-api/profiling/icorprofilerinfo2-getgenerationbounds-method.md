@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::GetGenerationBounds method [.NET Framework profiling]"
   - "GetGenerationBounds method [.NET Framework profiling]"
 ms.assetid: 9c37185f-d1e0-4a6e-8b99-707f7df61d88
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 17

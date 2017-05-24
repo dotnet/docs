@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "ImageList component [Windows Forms], removing images"
   - "images [Windows Forms], adding to ImageList component"
 ms.assetid: 5699b244-e37c-4d20-bc35-7441e55c1e3a
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

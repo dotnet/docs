@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "declared elements, access level"
   - "Protected keyword, accessing variables"
 ms.assetid: eaf4f073-7922-43ce-ae1e-90ff376ae947
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

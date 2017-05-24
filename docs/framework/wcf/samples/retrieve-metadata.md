@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e8a6ef8c-a195-495a-a15e-7d92bdf0b28c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "Erikre"
 ms.author: "erikre"
@@ -56,7 +54,6 @@ foreach (ServiceEndpoint ep in endpoints)
         client.Close();  
     }  
 }  
-  
 ```  
   
  The client console window displays the operations sent to each of the endpoints, displaying the address path and binding name.  

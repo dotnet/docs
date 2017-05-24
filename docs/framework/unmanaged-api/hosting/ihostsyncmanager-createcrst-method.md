@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "CreateCrst method [.NET Framework hosting]"
   - "IHostSyncManager::CreateCrst method [.NET Framework hosting]"
 ms.assetid: ac278cc8-2540-4a6c-b5c6-b90c3970b4f4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

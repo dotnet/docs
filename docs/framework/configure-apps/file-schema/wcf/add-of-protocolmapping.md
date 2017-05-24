@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 08e62249-1641-41d1-91b1-66d7b46244e4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  
@@ -58,14 +55,12 @@ Represents a default protocol mapping between a transport protocol scheme (e.g.,
  The following configuration example shows the default protocol mapping in the machine.config file. You can override this default mapping at the machine level by modifying the machine.config file. Or if you would only like to override it within the scope of an application, you can override this section within your application configuration file and change the mapping for individual protocol schemes.  
   
 ```  
-  
 <protocolMapping>  
         <add scheme="http" binding="basicHttpBinding"/>  
         <add scheme="net.tcp" binding="netTcpBinding"/>  
         <add scheme="net.pipe" binding="netNamedPipeBinding"/>  
         <add scheme="net.msmq" binding="netMsmqBinding"/>  
 </protocolMapping>  
-  
 ```  
   
 ## See Also  

@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "member design guidelines, operators"
   - "overloaded operators"
 ms.assetid: 37585bf2-4c27-4dee-849a-af70e3338cc1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

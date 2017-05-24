@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "WPF, Direct3D9 interop performance"
   - "Direct3D9 [WPF interoperability], performance"
 ms.assetid: ea8baf91-12fe-4b44-ac4d-477110ab14dd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

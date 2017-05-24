@@ -32,8 +32,6 @@ helpviewer_keywords:
   - "data [Visual Basic], string comparisons"
   - "string comparison [Visual Basic], Like operators"
 ms.assetid: 966283ec-80e2-4294-baa8-c75baff804f9
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -59,7 +57,6 @@ Compares a string against a pattern.
 ## Syntax  
   
 ```  
-  
 result = string Like pattern  
 ```  
   

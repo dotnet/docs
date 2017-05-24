@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "backgrounds, drawing text to"
   - "typography, drawing text to control backgrounds"
 ms.assetid: 686d8fba-f61c-4974-a871-c635d67a7f69
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

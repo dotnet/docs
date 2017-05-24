@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "classes, SystemFonts"
   - "resource keys, SystemFonts class"
 ms.assetid: 036ebea7-5677-4f60-8ba4-56c9f9d9b8bd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

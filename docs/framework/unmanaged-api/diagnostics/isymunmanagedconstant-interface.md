@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedConstant interface [.NET Framework debugging]"
 ms.assetid: e11c9baa-4cf1-4bb4-a95f-b1908893b46c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

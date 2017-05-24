@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "data grids, row styles"
   - "rows, data grids"
 ms.assetid: 699ef759-458c-426d-ac87-7c7e71b018ae
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

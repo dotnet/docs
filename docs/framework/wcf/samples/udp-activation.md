@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4b0ccd10-0dfb-4603-93f9-f0857c581cb7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"
@@ -87,7 +85,6 @@ This sample is based on the [Transport: UDP](../../../../docs/framework/wcf/samp
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Build the project on Windows Vista. After compilation, it also performs the following operations in the post-build phase:  

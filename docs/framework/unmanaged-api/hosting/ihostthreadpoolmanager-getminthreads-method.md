@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IHostThreadPoolManager::GetMinThreads method [.NET Framework hosting]"
   - "GetMinThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
 ms.assetid: dc07232b-b2e4-4dab-87e2-3c955974ab48
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

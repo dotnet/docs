@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "XAML Namespace"
   - "namespaces, XML"
 ms.assetid: 67992d76-8bcc-456c-8232-03807803d69e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

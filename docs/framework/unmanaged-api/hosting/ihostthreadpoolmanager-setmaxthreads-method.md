@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IHostThreadPoolManager::SetMaxThreads method [.NET Framework hosting]"
   - "SetMaxThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
 ms.assetid: 77cfd347-95c2-4425-b807-4ecc2a8d4578
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

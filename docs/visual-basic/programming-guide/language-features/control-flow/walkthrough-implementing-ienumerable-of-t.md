@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "loop structures, optimizing performance"
   - "control flow"
 ms.assetid: c60d7589-51f2-4463-a2d5-22506bbc1554
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

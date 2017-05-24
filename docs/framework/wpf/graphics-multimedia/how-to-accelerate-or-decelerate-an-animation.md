@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "animation, accelerating"
   - "animation, decelerating"
 ms.assetid: 4f383b2c-f94d-4a4e-9a06-f56f5dae95f9
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

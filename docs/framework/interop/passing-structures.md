@@ -17,8 +17,6 @@ dev_langs:
 helpviewer_keywords: 
   - "platform invoke, calling unmanaged functions"
 ms.assetid: 9b92ac73-32b7-4e1b-862e-6d8d950cf169
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -71,7 +69,6 @@ Class Win32API
     Declare Auto Function PtInRect Lib "user32.dll" _  
     (ByRef r As Rect, p As Point) As Boolean  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -143,7 +140,6 @@ Public Class TestPlatformInvoke
         Win32.MessageBox(IntPtr.Zero, dt, "Platform Invoke Sample", 0)        
     End Sub  
 End Class  
-  
 ```  
   
 ```csharp  

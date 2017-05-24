@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "DataContractSerializer"
   - "DataContractAttribute"
 ms.assetid: c3d37ae4-8f1c-463f-b195-658c5a7e90a1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"
@@ -33,7 +31,6 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
 ## Syntax  
   
 ```  
-  
 <add type="String">  
    <knownType type="String">  
        <parameter index="Integer"  

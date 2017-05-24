@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: bd7e462b-583b-4395-9c36-45aa9e61072c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -218,7 +216,6 @@ Task returnedTask = Task_MethodAsync()
 Await returnedTask  
 ' or, in a single statement  
 Await Task_MethodAsync()  
-  
 ```  
   
  Each returned task represents ongoing work. A task encapsulates information about the state of the asynchronous process and, eventually, either the final result from the process or the exception that the process raises if it doesn't succeed.  

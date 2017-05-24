@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "modules, Assembly Linker"
   - "assembly manifest, Assembly Linker"
 ms.assetid: b5382965-0053-47cf-b92f-862860275a01
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 37
 author: "mairaw"
 ms.author: "mairaw"

@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 3d5af8e7-c337-48f4-9fa6-97c83878b9b1
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5
@@ -35,11 +33,9 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT AddAssemblyReference(  
         const COR_PRF_ASSEMBLY_REFERENCE_INFO* pAssemblyRefInfo  
 );  
-  
 ```  
   
 #### Parameters  

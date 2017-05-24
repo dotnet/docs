@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "resources [Visual Basic], disposing"
   - "Using statement"
 ms.assetid: 665d1580-dd54-4e96-a9a9-6be2a68948f1
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 36
 author: dotnet-bot
 ms.author: dotnetcontent

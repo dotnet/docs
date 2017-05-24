@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "XML documentation [C#]"
   - "C# language, XML documentation features"
 ms.assetid: 8f33917b-9577-4c9a-818a-640dbbb0b399
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

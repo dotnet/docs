@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "VariableLocationType enumeration [.NET Framework debugging]"
 ms.assetid: 8635ee3a-c84b-4626-876c-416bee54f787
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5
@@ -37,14 +35,12 @@ Indicates the native location type of a variable.
 ## Syntax  
   
 ```  
-  
 typedef enum VariableLocationType  
 {  
     VLT_REGISTER,               
     VLT_REGISTER_RELATIVE,      
     VLT_INVALID  
 } VariableLocationType;  
-  
 ```  
   
 ## Members  

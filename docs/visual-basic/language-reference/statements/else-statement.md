@@ -16,8 +16,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Else keyword [Visual Basic]"
 ms.assetid: 154dd3d3-137b-4de6-a5aa-699b18dfb639
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

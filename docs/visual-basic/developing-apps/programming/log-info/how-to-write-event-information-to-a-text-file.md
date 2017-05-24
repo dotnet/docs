@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "text files, writing event information to a text file"
   - "events [Visual Basic], writing event information to a text file"
 ms.assetid: 9ca7cc03-bf99-4933-9e5e-61ee28e9a6b4
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

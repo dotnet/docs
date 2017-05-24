@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "walkthroughs [WPF]"
   - "WPF walkthroughs"
 ms.assetid: c29bde96-0389-4aff-a9fb-cd678f66b7f7
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

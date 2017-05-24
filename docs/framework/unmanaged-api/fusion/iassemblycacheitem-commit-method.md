@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IAssemblyCacheItem::Commit method [.NET Framework fusion]"
   - "Commit method, IAssemblyCacheItem interface [.NET Framework fusion]"
 ms.assetid: c2321f17-f46f-4815-ae41-b28678753613
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: dc7a0173-3664-4c90-a57b-5cbb0a8ed7ee
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Determines if a query expression is null.
 ## Syntax  
   
 ```  
-  
 expression IS [ NOT ] NULL  
 ```  
   

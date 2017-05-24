@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "C# Language, enums"
   - "bit flags [C#]"
 ms.assetid: 64a9b731-9e3c-4336-8a09-018db2aa10b7
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

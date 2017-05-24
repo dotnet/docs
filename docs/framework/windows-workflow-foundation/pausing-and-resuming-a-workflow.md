@@ -29,7 +29,6 @@ catch (TimeoutException e)
 {  
     Console.WriteLine(e.Message);  
 }  
-  
 ```  
   
 ## Resuming a Workflow  
@@ -39,7 +38,6 @@ catch (TimeoutException e)
 WorkflowApplication application = new WorkflowApplication(activity);  
 application.InstanceStore = instanceStore;  
 application.Load(id);  
-  
 ```  
   
 ## Example  
@@ -114,5 +112,4 @@ private static SqlWorkflowInstanceStore SetupSqlpersistenceStore()
     sqlWFInstanceStore.DefaultInstanceOwner = view.InstanceOwner;  
     return sqlWFInstanceStore;  
 }  
-  
 ```

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "interfaces"
   - "interfaces [Visual Basic]"
 ms.assetid: 61b06674-12c9-430b-be68-cc67ecee1f5b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

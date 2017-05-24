@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 00e67e0e-77c0-4695-9138-c0997b0e5f3c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Enables packet routing and the use of one-way methods for a custom binding.
 ## Syntax  
   
 ```  
-  
 <oneWay packetRoutable="Boolean">  
         <channelPoolSettings  
            idleTimeout"TimeSpan"  
@@ -38,7 +35,6 @@ Enables packet routing and the use of one-way methods for a custom binding.
 ```  
   
 ```  
-  
 </oneWay>  
 ```  
   

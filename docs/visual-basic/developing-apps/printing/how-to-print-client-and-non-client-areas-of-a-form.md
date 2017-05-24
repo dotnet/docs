@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "entire form"
   - "non-client area, printing"
 ms.assetid: 856bb0e4-dbc3-47e2-81cd-4b376cf07757
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

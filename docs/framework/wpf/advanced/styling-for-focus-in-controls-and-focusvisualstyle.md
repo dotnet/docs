@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "focus, visual styling"
   - "styles, focus visual style"
 ms.assetid: 786ac576-011b-4d72-913b-558deccb9b35
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

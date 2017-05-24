@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "adorners, implementing"
 ms.assetid: 56ae32b6-0599-455c-b52f-2ff97e6f1ec2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Points, animating with key frames"
   - "animation, Points with key frames"
 ms.assetid: d2e2ef10-0773-4133-856e-d41c09f60ded
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

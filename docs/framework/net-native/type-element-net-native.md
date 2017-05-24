@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1e88d368-a886-4f1e-8eb6-6127979a9fce
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -23,7 +21,6 @@ Applies runtime policy to a particular type, such as a class or structure.
 ## Syntax  
   
 ```xml  
-  
 <Type Name="type_name"  
       Activate="policy_type"  
       Browse="policy_type"  
@@ -35,7 +32,6 @@ Applies runtime policy to a particular type, such as a class or structure.
       MarshalObject="policy_setting"  
       MarshalDelegate="policy_setting"  
       MarshalStructure="policy_setting" />  
-  
 ```  
   
 ## Attributes and Elements  
@@ -113,7 +109,6 @@ Applies runtime policy to a particular type, such as a class or structure.
  Because metadata for the <xref:System.Collections.Generic.List%601> class isn't automatically included by the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain, the example fails to display the requested member information at run time. To provide the necessary metadata, add the following `<Type>` element to the runtime directives file. Note that, because we've provided a parent [<Namespace\>](../../../docs/framework/net-native/namespace-element-net-native.md) element, we don't have to provide a fully qualified type name in the `<Type>` element.  
   
 ```xml  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <Application>  
       <Assembly Name="*Application*" Dynamic="Required All" />  
@@ -122,7 +117,6 @@ Applies runtime policy to a particular type, such as a class or structure.
      </Namespace>  
    </Application>  
 </Directives>  
-  
 ```  
   
 ## Example  
@@ -133,14 +127,12 @@ Applies runtime policy to a particular type, such as a class or structure.
  Because metadata for the <xref:System.String> object isn't available, the call to the <xref:System.Reflection.PropertyInfo.GetValue%28System.Object%2CSystem.Object%5B%5D%29?displayProperty=fullName> method throws a <xref:System.NullReferenceException> exception at run time when compiled with the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain. To eliminate the exception and provide the necessary metadata, add the following `<Type>` element to the runtime directives file:  
   
 ```xml  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
   <Application>  
     <Assembly Name="*Application*" Dynamic="Required All" />  
     <Type Name="System.String" Dynamic="Required Public"/> -->  
   </Application>  
 </Directives>  
-  
 ```  
   
 ## See Also  

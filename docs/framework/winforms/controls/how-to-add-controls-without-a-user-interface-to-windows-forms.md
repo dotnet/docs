@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "Windows Forms controls, nonvisual"
   - "nonvisual controls"
 ms.assetid: 52134d9c-cff6-4eed-8e2b-3d5eb3bd494e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -61,7 +59,6 @@ A nonvisual control (or component) provides functionality to your application. U
        Dim timerKeepTrack As New System.Windows.Forms.Timer  
        timerKeepTrack.Interval = 1000  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -71,7 +68,6 @@ A nonvisual control (or component) provides functionality to your application. U
            System.Windows.Forms.Timer();  
        timerKeepTrack.Interval = 1000;  
     }  
-  
     ```  
   
     ```cpp  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetIMapTokenIface method [.NET Framework metadata]"
   - "ICeeGen::GetIMapTokenIface method [.NET Framework metadata]"
 ms.assetid: 847a5531-c37d-49cd-8844-9e54b5d86cf7
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

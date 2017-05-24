@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SuspensionEnding method, IHostGCManager interface [.NET Framework hosting]"
   - "IHostGCManager::SuspensionEnding method [.NET Framework hosting]"
 ms.assetid: 8849a1db-17f0-44b7-880a-bd36d431eb91
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

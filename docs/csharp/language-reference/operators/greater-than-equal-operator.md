@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "greater than or equal to operator (>=) [C#]"
   - ">= operator [C#]"
 ms.assetid: 0db4dcaf-56a3-4884-a7ad-35f64978a58d
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

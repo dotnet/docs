@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], displaying images"
   - "data grids, displaying images in cells"
 ms.assetid: 53b13d31-1b56-476d-9ab4-18bfac138a22
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

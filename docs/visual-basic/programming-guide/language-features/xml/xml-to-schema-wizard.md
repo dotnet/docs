@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "IntelliSense [Visual Basic], XML"
   - "XML schemas, creating"
 ms.assetid: 98c495ba-8f37-4517-a0db-aa738611ab76
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

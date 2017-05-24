@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorProfilerInfo3 interface [.NET Framework profiling]"
 ms.assetid: 044a262f-0fa7-485d-b0c1-64cdc359c654
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 17

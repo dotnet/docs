@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "visual objects, hit tests on"
   - "Win32 host containers, hit tests using"
 ms.assetid: 9491f7f3-d8ba-4573-a888-2f064d1349dc
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

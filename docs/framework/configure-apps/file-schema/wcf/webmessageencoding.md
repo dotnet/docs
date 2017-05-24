@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 892ca485-e21a-4a44-8e40-633161ef6796
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Enables plain-text XML, JavaScript Object Notation (JSON) message encodings and 
 ## Syntax  
   
 ```  
-  
 <webMessageEncoding   
       maxReadPoolSize="Integer"  
    maxWritePoolSize="Integer"  

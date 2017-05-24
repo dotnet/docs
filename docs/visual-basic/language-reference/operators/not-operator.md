@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "logical negation"
   - "operators [Visual Basic], negation"
 ms.assetid: 8f2ea83c-d2ed-480a-a474-3042a1cad9b5
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -51,7 +49,6 @@ Performs logical negation on a `Boolean` expression, or bitwise negation on a nu
 ## Syntax  
   
 ```  
-  
 result = Not expression  
 ```  
   

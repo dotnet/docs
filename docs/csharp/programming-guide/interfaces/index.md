@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "interfaces [C#]"
   - "C# language, interfaces"
 ms.assetid: 2feda177-ce11-432d-81b4-d50f5f35fd37
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 45
 author: "BillWagner"
 ms.author: "wiwagn"

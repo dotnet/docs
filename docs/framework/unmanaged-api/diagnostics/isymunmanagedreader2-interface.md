@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedReader2 interface [.NET Framework debugging]"
 ms.assetid: a01a881b-82a3-4b3e-a3a9-9dc305c2e5f7
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

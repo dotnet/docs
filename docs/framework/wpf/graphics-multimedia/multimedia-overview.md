@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "multimedia"
   - "media"
 ms.assetid: feb25b15-d741-4ac3-818f-1b19f63a3562
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

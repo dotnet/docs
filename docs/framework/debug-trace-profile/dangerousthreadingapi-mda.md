@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Suspend method"
   - "threading [.NET Framework], managed debugging assistants"
 ms.assetid: 3e5efbc5-92e4-4229-b31f-ce368a1adb96
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

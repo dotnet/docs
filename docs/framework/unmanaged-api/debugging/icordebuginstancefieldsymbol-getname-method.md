@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: d9c12b1f-9c1d-4943-8e9e-93b55faf085f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Gets the name of the instance field.
 ## Syntax  
   
 ```  
-  
 HRESULT GetName(  
    [in] ULONG32 cchName,   
    [out] ULONG32 *pcchName,   
    [out, size_is(cchName), length_is(*pcchName)] WCHAR szName[]  
 );  
-  
 ```  
   
 #### Parameters  

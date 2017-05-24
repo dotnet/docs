@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 8f836b80-b7a5-460b-bf76-5f0e45652aea
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,7 +23,6 @@ Returns information about method properties, such as the method's metadata token
 ## Syntax  
   
 ```  
-  
 HRESULT GetMethodProps(  
    [in]  ULONG32 codeRva,  
    [out] mdToken *pMethodToken,  
@@ -34,7 +31,6 @@ HRESULT GetMethodProps(
    [out] ULONG32 *pcbSignature,  
    [out, size_is(cbSignature), length_is(*pcbSignature)] BYTE signature[]  
 );  
-  
 ```  
   
 #### Parameters  

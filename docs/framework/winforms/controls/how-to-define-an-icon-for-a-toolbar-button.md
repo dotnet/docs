@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "icons [Windows Forms], toolbar buttons"
   - "ToolBar control [Windows Forms], adding icons to buttons"
 ms.assetid: 84db98b4-8566-49ce-b2c8-1fd66a5eb3a0
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -67,7 +65,6 @@ manager: "wpickett"
     ' Assign the ImageIndex property of the ToolBarButton.  
        ToolBarButton1.ImageIndex = 0  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -94,7 +91,6 @@ manager: "wpickett"
        // Assign ImageIndex property of the ToolBarButton.  
        toolBarButton1.ImageIndex = 0;  
     }  
-  
     ```  
   
     ```cpp  

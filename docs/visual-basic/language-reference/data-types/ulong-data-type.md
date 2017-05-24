@@ -26,8 +26,6 @@ helpviewer_keywords:
   - "ULong data type"
   - "UL literal type characters"
 ms.assetid: 017e0702-774e-44ae-bedc-786b424ca84e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"

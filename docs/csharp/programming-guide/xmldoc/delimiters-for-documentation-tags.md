@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "/** */ delimiters for C# documentation tags"
   - "/// delimiter for C# documentation"
 ms.assetid: 9b2bdd18-4f5c-4c0b-988e-fb992e0d233e
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -71,7 +69,6 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
     /**   
      * <summary>text</summary>   
     */  
-  
     ```  
   
 -   The compiler identifies a common pattern of " * " at the beginning of the second and third lines. The pattern is not included in the output.  

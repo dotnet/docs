@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "certificates [WCF], validation differences"
 ms.assetid: 953a219f-4745-4019-9894-c70704f352e6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "BrucePerlerMS"
 ms.author: "bruceper"

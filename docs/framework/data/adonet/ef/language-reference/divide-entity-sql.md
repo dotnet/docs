@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: ef48c368-f3ed-4275-8ada-4e9649781262
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Divides one number by another.
 ## Syntax  
   
 ```  
-  
 dividend / divisor  
 ```  
   

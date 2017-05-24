@@ -34,8 +34,6 @@ helpviewer_keywords:
   - "type parameters"
   - "constraints, Class keyword"
 ms.assetid: 56db947a-2ae8-40f2-a70a-960764e9d0db
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -61,7 +59,6 @@ Specifies the *type parameters* for a *generic* programming element. Multiple pa
 ## Syntax  
   
 ```  
-  
 [genericmodifier] typename [ As constraintlist ]  
 ```  
   

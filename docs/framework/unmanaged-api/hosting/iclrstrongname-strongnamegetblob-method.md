@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameGetBlob method [.NET Framework hosting]"
   - "StrongNameGetBlob method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: a24218f8-7196-44be-b7a2-ee9cdd7a85c4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

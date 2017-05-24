@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "EmitString method [.NET Framework metadata]"
   - "ICeeGen::EmitString method [.NET Framework metadata]"
 ms.assetid: ad2710a7-edb8-4493-8619-3fce235e3334
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

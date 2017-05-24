@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "radial gradients, painting with"
   - "painting, with radial gradients"
 ms.assetid: b5d0fc8a-8986-4796-b003-a75b41a48928
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

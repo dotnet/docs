@@ -31,8 +31,6 @@ helpviewer_keywords:
   - "images [Windows Forms], adding to menus"
   - "ToolStripMenuItems, showing separator bars"
 ms.assetid: aa5f19bb-b545-4378-bfa6-36ba592f0d7c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,8 +15,6 @@ dev_langs:
   - "C++"
   - "jsharp"
 ms.assetid: 4095ba51-de20-4f87-b562-018abe422c91
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
@@ -33,7 +31,6 @@ Removes a scheme setting for a scheme name.
 ## Syntax  
   
 ```  
-  
       <remove   
    <name = "http|https"/>  
 />  

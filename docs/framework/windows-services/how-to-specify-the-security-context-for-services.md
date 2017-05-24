@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "services, security"
   - "ServiceInstaller class, security context"
 ms.assetid: 02187c7b-dbf2-45f2-96c2-e11010225a22
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "ghogen"
 ms.author: "ghogen"

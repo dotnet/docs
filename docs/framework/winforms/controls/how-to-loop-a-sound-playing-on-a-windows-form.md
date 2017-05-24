@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "sounds, looping"
   - "playing sounds, looping"
 ms.assetid: ea95dd46-10a3-46c0-8263-4b205f00df7f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

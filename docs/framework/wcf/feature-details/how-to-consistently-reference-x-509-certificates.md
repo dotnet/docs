@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "certificates [WCF], referencing X.509 certificates"
 ms.assetid: a6de1c63-e450-4640-ad08-ad7302dbfbfc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"

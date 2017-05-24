@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Visual Basic code, data types"
   - "data types [Visual Basic], improving speed with"
 ms.assetid: 5e1b9aaf-c7ca-4b29-9b22-0e82ed8e85e2
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent

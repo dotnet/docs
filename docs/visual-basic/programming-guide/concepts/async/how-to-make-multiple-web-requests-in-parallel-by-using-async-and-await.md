@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: a894b99b-7cfd-4a38-adfb-20d24f986730
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -44,7 +42,6 @@ Dim myTask = someWebAccessMethodAsync(url)
 ' The application of Await suspends the rest of this method until the task is   
 ' complete.  
 Dim result = Await myTask  
-  
 ```  
   
  Between starting a task and awaiting it, you can start other tasks. The additional tasks implicitly run in parallel, but no additional threads are created.  

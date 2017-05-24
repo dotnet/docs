@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Boolean values"
   - "paths, validating"
 ms.assetid: f673462d-57b7-4120-b13a-6a7592f7ab2c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

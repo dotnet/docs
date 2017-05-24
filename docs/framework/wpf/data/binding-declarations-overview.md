@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "syntax, object elements"
   - "binding declarations"
 ms.assetid: b97fd626-4c0d-4761-872a-2bca5820da2c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent

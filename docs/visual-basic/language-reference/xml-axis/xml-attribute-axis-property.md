@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "XML axis [Visual Basic], attribute"
   - "XML [Visual Basic], accessing"
 ms.assetid: 7a4777e1-0618-4de9-9510-fb9ace2bf4db
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ Provides access to the value of an attribute for an <xref:System.Xml.Linq.XEleme
 ## Syntax  
   
 ```  
-  
       object.@attribute  
 -or-  
 object.@<attribute>  

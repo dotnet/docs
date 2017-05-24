@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "OnFailure method [.NET Framework hosting]"
   - "IHostPolicyManager::OnFailure method [.NET Framework hosting]"
 ms.assetid: 77d3f31e-9a53-4349-9c02-610a71736d42
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

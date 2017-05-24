@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "unmanaged structures [.NET Framework], metadata"
   - "metadata structures [.NET Framework]"
 ms.assetid: 3eeaec36-5e1a-4a62-9de3-ea3942f67d04
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

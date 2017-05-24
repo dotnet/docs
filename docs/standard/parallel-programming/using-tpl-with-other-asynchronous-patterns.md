@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks and APM"
 ms.assetid: 7add905b-ff60-4353-af79-5089038d9a08
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

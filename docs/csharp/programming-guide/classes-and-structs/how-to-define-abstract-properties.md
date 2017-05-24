@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "properties [C#], abstract"
   - "abstract properties [C#]"
 ms.assetid: 672a90eb-47b9-4ae0-9914-af53852fddcb
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

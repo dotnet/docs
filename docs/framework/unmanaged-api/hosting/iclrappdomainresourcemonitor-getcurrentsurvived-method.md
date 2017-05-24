@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRAppDomainResourceMonitor::GetCurrentSurvived method [.NET Framework hosting]"
   - "GetCurrentSurvived method [.NET Framework hosting]"
 ms.assetid: 392e9009-40ef-40e3-ad4d-7ce93a989e78
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

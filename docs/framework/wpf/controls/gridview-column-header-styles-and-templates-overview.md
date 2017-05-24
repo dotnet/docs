@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "headers, customizing"
   - "GridView view mode, customizing column headers"
 ms.assetid: 74835674-a39e-4ab5-9418-ad7f6ab7b956
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

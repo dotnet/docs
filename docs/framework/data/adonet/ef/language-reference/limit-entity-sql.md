@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: c22ffede-0a52-44d1-99b9-4a91e651e1b9
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Physical paging can be performed by using LIMIT sub-clause in ORDER BY clause. L
 ## Syntax  
   
 ```  
-  
 [ LIMIT n ]  
 ```  
   

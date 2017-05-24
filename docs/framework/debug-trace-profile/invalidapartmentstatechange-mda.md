@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], managed debugging assistants"
   - "COM apartment states"
 ms.assetid: e56fb9df-5286-4be7-b313-540c4d876cd7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

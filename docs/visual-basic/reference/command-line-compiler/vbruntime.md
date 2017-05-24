@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "-vbruntime compiler option [Visual Basic]"
   - "/vbruntime compiler option [Visual Basic]"
 ms.assetid: 1aa0239e-511a-4c29-957d-fd72877b350a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

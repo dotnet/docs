@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "drag-and-drop [WPF], data formats present"
   - "data formats [WPF], determining if present"
 ms.assetid: e487a454-c9fc-4e53-aeaa-c458d059ad4c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

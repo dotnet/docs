@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8c49c6ae-fa1a-4179-a84b-613c3216dcde
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Specifies the Security Token Service (STS) that issues security tokens.
 ## Syntax  
   
 ```  
-  
 <issuer address="Uri" >  
    <headers>  
       <add name="String"  

@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugMDAFlags enumeration [.NET Framework debugging]"
 ms.assetid: 7c0c92fe-8bd2-477f-b307-aca0143732ca
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

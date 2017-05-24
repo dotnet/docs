@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "linked configuration files"
   - "linkedConfiguration Element"
 ms.assetid: 8eb34f3b-427e-4288-a7ff-c73f489deb45
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"

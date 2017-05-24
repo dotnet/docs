@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "images, loading as thumbnails"
   - "thumbnails, loading images as"
 ms.assetid: 02e055a0-54df-499a-b8b6-ab6ff7535cff
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

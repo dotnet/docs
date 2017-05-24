@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b9884c11-8011-4763-bc2c-c526b80175d0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -110,7 +108,6 @@ There are four major groups of configuration settings used in discovery. This to
         </behavior>  
      </endpointBehaviors>  
    </behaviors>  
-  
 ```  
   
  The <xref:System.ServiceModel.Discovery.EndpointDiscoveryBehavior> behavior can also be used to add custom metadata to the endpoint metadata returned by the service. The following example shows how to do this.  

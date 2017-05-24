@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "GridSplitter control, resizing grid columns"
   - "resizing grid columns"
 ms.assetid: 47b20fe6-7adc-4aa6-9693-b4e184eef74b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

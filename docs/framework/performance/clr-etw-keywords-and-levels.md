@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "ETW, CLR keywords"
   - "ETW, CLR levels"
 ms.assetid: fdf5856d-516b-4042-849d-911c4518a6cb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

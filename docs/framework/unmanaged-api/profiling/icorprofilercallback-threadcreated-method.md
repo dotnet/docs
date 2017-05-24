@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerCallback::ThreadCreated method [.NET Framework profiling]"
   - "ThreadCreated method [.NET Framework profiling]"
 ms.assetid: cca0f799-09b8-4689-a33c-6d6537943a9b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

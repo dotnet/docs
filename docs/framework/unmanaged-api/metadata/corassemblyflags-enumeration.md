@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorAssemblyFlags enumeration [.NET Framework metadata]"
 ms.assetid: bb8db3b6-d81d-49fc-b74c-dbc908a9eab9
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

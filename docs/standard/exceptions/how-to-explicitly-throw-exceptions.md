@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "exceptions, throwing"
   - "implicitly throwing exceptions"
 ms.assetid: 72bdd157-caa9-4478-9ee3-cb4500b84528
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

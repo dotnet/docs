@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "C# language, constants"
   - "constants [C#]"
 ms.assetid: 1fb39621-1738-49b1-a1b3-8587f109123f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

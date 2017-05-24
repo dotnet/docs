@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "strings [.NET Framework], creating"
   - "Insert method"
 ms.assetid: 06fdf123-2fac-4459-8904-eb48ab908a30
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

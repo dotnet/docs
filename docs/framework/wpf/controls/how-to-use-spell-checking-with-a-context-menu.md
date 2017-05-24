@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "reenabling spell checking in a text box [WPF]"
   - "spell checking with a context menu [WPF]"
 ms.assetid: 61f69a20-2ff3-4056-9060-e32f4483ec5e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

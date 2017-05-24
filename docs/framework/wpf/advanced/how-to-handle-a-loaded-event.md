@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "events, Loaded"
   - "Loaded events"
 ms.assetid: 0cf8d003-8441-4df4-807a-6db09347e829
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

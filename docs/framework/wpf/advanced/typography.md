@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "text, typography"
   - "typography"
 ms.assetid: e4ef38db-b7d1-4bda-87ab-8bb738440ddc
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 60
 author: dotnet-bot
 ms.author: dotnetcontent

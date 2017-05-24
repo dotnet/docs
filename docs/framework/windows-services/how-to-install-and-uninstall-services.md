@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "uninstalling Windows Services"
   - "installutil.exe tool"
 ms.assetid: c89c5169-f567-4305-9d62-db31a1de5481
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "ghogen"
 ms.author: "ghogen"

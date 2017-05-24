@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "regions, clipping"
   - "regions, restricting drawing surface"
 ms.assetid: 43d121b4-e14c-4901-b25c-2d6c25ba4e29
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "columns [Windows Forms], deleting in data grids"
   - "DataGrid control [Windows Forms], hiding columns"
 ms.assetid: bcd0dd96-6687-4c48-b0e1-d5287b93ac91
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -63,7 +61,6 @@ manager: "wpickett"
        ' Delete the first column (index 0)  
        DataGrid1.TableStyles(0).GridColumnStyles.RemoveAt(0)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -111,7 +108,6 @@ manager: "wpickett"
        ' Hide the first column (index 0)  
        DataGrid1.TableStyles(0).GridColumnStyles(0).Width = 0  
     End Sub  
-  
     ```  
   
     ```csharp  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "<add> element, bypasslist"
   - "add element, bypasslist"
 ms.assetid: a0b86e28-86b4-4497-abe8-d5fd614c7926
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
@@ -42,7 +40,6 @@ Adds an IP address or DNS name to the proxy bypass list.
 ## Syntax  
   
 ```  
-  
       <add   
    address = "regular expression"   
 />  

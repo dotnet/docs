@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "mouse input, using in Windows Forms"
   - "keyboards, keyboard input"
 ms.assetid: 1486075f-1e06-4c9e-82c6-f948331db6d6
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

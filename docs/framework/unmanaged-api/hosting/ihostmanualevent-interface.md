@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostManualEvent interface [.NET Framework hosting]"
 ms.assetid: 300c2661-b7d1-4c39-b080-9ebdef0fd523
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

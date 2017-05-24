@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Button control [Windows Forms], selecting"
 ms.assetid: fe2fc058-5118-4f70-b264-6147d64a7a8d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

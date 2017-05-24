@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "RequestProfilerDetach method [.NET Framework profiling]"
   - "ICorProfilerInfo3::RequestProfilerDetach method [.NET Framework profiling]"
 ms.assetid: ea102e62-0454-4477-bcf3-126773acd184
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 20

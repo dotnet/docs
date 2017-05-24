@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "inheritance [C#], explicitly implementing interface members"
   - "interfaces [C#], explicitly implementing with inheritance"
 ms.assetid: 8b402ddc-dff9-4869-89cb-d718c764e68e
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

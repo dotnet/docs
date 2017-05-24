@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "controls, ScrollViewer"
   - "ScrollViewer control, about ScrollViewer control"
 ms.assetid: 94a13b94-cfdf-4b12-a1aa-90cb50c6e9b9
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "DataGrid [WPF], group"
   - "DataGrid [WPF], filter"
 ms.assetid: 03345e85-89e3-4aec-9ed0-3b80759df770
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

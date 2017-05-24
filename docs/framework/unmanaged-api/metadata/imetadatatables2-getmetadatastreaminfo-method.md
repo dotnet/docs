@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetMetaDataStreamInfo method [.NET Framework metadata]"
   - "IMetaDataTables2::GetMetaDataStreamInfo method [.NET Framework metadata]"
 ms.assetid: 8b280627-cc74-4789-95da-1fefc966de05
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

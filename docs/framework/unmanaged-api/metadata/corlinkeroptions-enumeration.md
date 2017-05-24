@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorLinkerOptions enumeration [.NET Framework metadata]"
 ms.assetid: a656aad6-cc7e-4994-8251-004a6a45e18f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

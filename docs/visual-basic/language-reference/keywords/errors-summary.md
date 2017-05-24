@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "errors [Visual Basic]"
 ms.assetid: 2557da60-c6dc-4e99-8128-fceb6f8a0736
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

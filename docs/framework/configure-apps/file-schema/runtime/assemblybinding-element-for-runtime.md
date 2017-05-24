@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "assemblyBinding element"
   - "container tags, <assemblyBinding> element"
 ms.assetid: 964cbb35-ab49-4498-8471-209689e5dada
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -38,7 +36,6 @@ Contains information about assembly version redirection and the locations of ass
 ## Syntax  
   
 ```  
-  
       <assemblyBinding    
    xmlns="urn:schemas-microsoft-com:asm.v1" appliesTo="v1.0.3705">  
 </assemblyBinding>  

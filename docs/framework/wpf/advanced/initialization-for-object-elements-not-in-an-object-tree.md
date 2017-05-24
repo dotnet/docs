@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "elements, initializing"
   - "initializing elements"
 ms.assetid: 7b8dfc9b-46ac-4ce8-b7bb-035734d688b7
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2820b0ec-2f32-430c-b299-1f0e95e1f2dc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -173,7 +171,6 @@ manager: "erikre"
     </wscoor:CreateCoordinationContext>  
   </s:Body>  
 </s11:Envelope>  
-  
 ```  
   
 #### CreateCoordinationContext with WSCoor 1.1  
@@ -200,7 +197,6 @@ manager: "erikre"
 </wscoor:CreateCoordinationContext>  
  </s:Body>   
 </s11:Envelope>  
-  
 ```  
   
 #### CreateCoordinationContextResponse with Trust Pre-1.3 and WSCoor 1.0  
@@ -283,7 +279,6 @@ manager: "erikre"
     </wscoor:CreateCoordinationContextResponse>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 #### CreateCoordinationContextResponse with Trust 1.3 and WSCoor 1.1  
@@ -360,7 +355,6 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
 </wscoor:CreateCoordinationContextResponse>   
 </s:Body>   
 </s:Envelope>  
-  
 ```  
   
 ### Registration Messages  
@@ -425,7 +419,6 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
     </wscoor:Register>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 #### Register with WSCoor 1.1  
@@ -485,7 +478,6 @@ Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
 </wscoor:Register>   
 </s:Body>   
 </s:Envelope>  
-  
 ```  
   
 #### Register Response with WSCoor 1.0  
@@ -522,7 +514,6 @@ Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
     </wscoor:RegisterResponse>  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 #### Register Response with WSCoor 1.1  
@@ -554,7 +545,6 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
 </wscoor:RegisterResponse>   
 </s:Body>   
 </s:Envelope>  
-  
 ```  
   
 ### Two Phase Commit Protocol Messages  
@@ -581,7 +571,6 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
     <wsat:Commit />  
   </s:Body>  
 </s:Envelope>  
-  
 ```  
   
 #### Commit with WSAT 1.1  
@@ -605,7 +594,6 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
 <wsat:Commit />   
 </s:Body>   
 </s:Envelope>  
-  
 ```  
   
 ### Application Messages  

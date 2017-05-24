@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "hit tests, using regions"
   - "regions, hit testing"
 ms.assetid: 3a4c07cb-a40a-4d14-ad35-008f531910a8
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

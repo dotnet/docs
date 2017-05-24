@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], comparison"
   - "operators [Visual Basic], short-circuiting logical"
 ms.assetid: d181afe5-fafa-460f-a13b-81203f6f4587
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "backing attached events with routed events [WPF]"
   - "attached events [WPF], definition"
 ms.assetid: 2c40eae3-80e4-4a45-ae09-df6c9ab4d91e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

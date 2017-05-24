@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "animation, rectangles"
   - "rectangles, animating"
 ms.assetid: 572ffb95-790d-4ace-adbf-b2ea8a90e75b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

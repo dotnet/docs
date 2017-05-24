@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "data contracts [WCF], enumeration types"
 ms.assetid: b5d694da-68cb-4b74-a5fb-75108a68ec3b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"

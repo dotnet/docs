@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "ICorClrDebugTarget::FreeMemory method [Silverlight debugging]"
   - "Silverlight, remote debugging"
 ms.assetid: 98f2a0db-a6ec-4f9b-861d-f82485237d08
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

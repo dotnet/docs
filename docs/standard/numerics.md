@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "numerics"
   - "BigInteger"
 ms.assetid: dfebc18e-acde-4510-9fa7-9a0f4aa3bd11
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

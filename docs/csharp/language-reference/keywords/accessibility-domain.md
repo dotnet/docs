@@ -10,8 +10,6 @@ dev_langs:
 helpviewer_keywords: 
   - "accessibility domain [C#]"
 ms.assetid: 8af779c1-275b-44be-a864-9edfbca71bcc
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

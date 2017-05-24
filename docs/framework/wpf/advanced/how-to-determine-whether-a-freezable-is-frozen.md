@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "IsFrozen property"
   - "Freezable objects, determining if frozen"
 ms.assetid: 92e58baa-ee12-4a9e-ac3a-ca458807a8b2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

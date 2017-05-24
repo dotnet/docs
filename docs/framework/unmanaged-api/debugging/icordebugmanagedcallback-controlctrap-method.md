@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugManagedCallback::ControlCTrap method [.NET Framework debugging]"
   - "ControlCTrap method [.NET Framework debugging]"
 ms.assetid: 0500854e-2121-43d9-a028-64312da35258
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

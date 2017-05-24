@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ConditionalWeakTableElementReferences method, ICorProfilerCallback5 interface [.NET Framework profiling]"
   - "ICorProfilerCallback5::ConditionalWeakTableElementReferences method [.NET Framework profiling]"
 ms.assetid: 532c7a02-a9de-4cea-bb2b-7f470da594de
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7
@@ -78,7 +76,6 @@ HRESULT Callback5Impl::ConditionalWeakTableElementReferences(
     }  
     return S_OK;  
 }  
-  
 ```  
   
 ## Remarks  

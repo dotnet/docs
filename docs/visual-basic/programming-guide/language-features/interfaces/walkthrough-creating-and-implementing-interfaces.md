@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "interface implementation, walkthrough"
   - "interfaces, creating"
 ms.assetid: ded82af2-9f52-4232-98ef-fe458180f112
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

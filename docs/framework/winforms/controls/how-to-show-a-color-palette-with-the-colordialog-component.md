@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "color palettes, showing in ColorDialog component"
   - "colors, showing palettes"
 ms.assetid: ee050f61-dbc8-4436-ba22-51360981ab48
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -48,7 +46,6 @@ The [ColorDialog](../../../../docs/framework/winforms/controls/colordialog-compo
           Button1.BackColor = ColorDialog1.Color  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -59,7 +56,6 @@ The [ColorDialog](../../../../docs/framework/winforms/controls/colordialog-compo
           button1.BackColor = colorDialog1.Color;  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -78,7 +74,6 @@ The [ColorDialog](../../../../docs/framework/winforms/controls/colordialog-compo
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
-  
     ```  
   
     ```cpp  

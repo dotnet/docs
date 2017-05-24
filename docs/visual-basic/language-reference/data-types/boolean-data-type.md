@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "True keyword [Visual Basic]"
   - "Boolean values, True keyword"
 ms.assetid: 4858e630-4813-4216-a55e-f4d0feb884e4
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

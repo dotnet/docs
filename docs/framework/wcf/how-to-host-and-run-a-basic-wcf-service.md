@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "WCF services [WCF]"
   - "WCF services [WCF], running"
 ms.assetid: 31774d36-923b-4e2d-812e-aa190127266f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 58
 author: "Erikre"
 ms.author: "erikre"
@@ -104,7 +102,6 @@ This is the third of six tasks required to create a [!INCLUDE[indigo1](../../../
             }  
         }  
     }  
-  
     ```  
   
     ```  
@@ -204,7 +201,6 @@ namespace GettingStartedLib
             double Divide(double n1, double n2);  
         }  
 }  
-  
 ```  
   
 ```  
@@ -254,7 +250,6 @@ namespace GettingStartedLib
         }  
     }  
 }  
-  
 ```  
   
 ```  
@@ -307,7 +302,6 @@ namespace GettingStartedHost
         }  
     }  
 }  
-  
 ```  
   
 ```  

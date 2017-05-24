@@ -1,5 +1,5 @@
 ---
-title: Inline Functions (F#)
+title: Inline Functions (F#) | Microsoft Docs
 description: Inline Functions (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

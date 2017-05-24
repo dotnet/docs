@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "templates [WPF], Button"
   - "ControlTemplate [WPF], Button"
 ms.assetid: e223c759-f8c4-4717-acfb-b1e40bdf5f3b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "streams, writing characters to strings"
   - "I/O [.NET Framework], writing characters to strings"
 ms.assetid: 1222cbeb-0760-44bf-9888-914a2a37174b
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

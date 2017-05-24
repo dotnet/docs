@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "menus [WPF], context"
   - "controls [WPF], ContextMenu"
 ms.assetid: 2f40b2bb-b702-4706-9fc4-10bcfd7cc35d
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 73
 author: dotnet-bot
 ms.author: dotnetcontent

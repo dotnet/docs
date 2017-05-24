@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "TAB key, enabling"
   - "ToolStrip control [Windows Forms], moving from"
 ms.assetid: 40f9e88b-09a3-428e-8da8-c00bb65079c6
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLog_FreeSpaceError"
 ms.assetid: 7f0ce827-6afc-4d59-ac58-6729e1c01c4c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

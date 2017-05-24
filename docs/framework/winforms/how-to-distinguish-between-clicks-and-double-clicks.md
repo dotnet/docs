@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "mouse, double-click"
   - "mouse clicks, single versus double"
 ms.assetid: d836ac8c-85bc-4f3a-a761-8aee03dc682c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

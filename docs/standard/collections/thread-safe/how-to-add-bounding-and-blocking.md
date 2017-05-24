@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "thread-safe collections, custom blocking collections"
 ms.assetid: 4c2492de-3876-4873-b5a1-000bb404d770
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

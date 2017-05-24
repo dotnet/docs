@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IGCHost2 interface [.NET Framework hosting]"
 ms.assetid: e5323fa4-18ac-424d-859d-a65a550d08d9
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

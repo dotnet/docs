@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "addmodule compiler option [Visual Basic]"
   - "-addmodule compiler option [Visual Basic]"
 ms.assetid: fb4b89d4-4926-4f20-868d-427fa28497b2
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

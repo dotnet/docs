@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Windows Service applications, starting"
   - "services, starting"
 ms.assetid: 9ea77955-2d96-4c3d-913c-14db7604cdad
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "ghogen"
 ms.author: "ghogen"

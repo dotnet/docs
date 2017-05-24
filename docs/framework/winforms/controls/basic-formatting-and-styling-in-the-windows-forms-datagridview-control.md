@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], formatting and styling"
   - "data grids, formatting"
 ms.assetid: b9b90836-1f56-4aa9-8db8-edc78fe830e8
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "DebuggerError method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::DebuggerError method [.NET Framework debugging]"
 ms.assetid: 9e983d11-eaf3-4741-b936-29ec456384a3
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

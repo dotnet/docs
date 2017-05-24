@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "C# language, generic classes"
   - "generics [C#], classes"
 ms.assetid: 27d6f256-cd61-41e3-bc6e-b990a53b0224
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "CreateLogicalThreadState method [.NET Framework hosting]"
   - "ICorRuntimeHost::CreateLogicalThreadState method [.NET Framework hosting]"
 ms.assetid: 90f5e791-038b-4b05-9bc5-8d4367d0173e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

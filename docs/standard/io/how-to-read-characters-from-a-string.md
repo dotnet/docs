@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "reading data, strings"
   - "streams, reading characters from string"
 ms.assetid: 27ea5e52-6db8-42d8-980a-50bcfc7fd270
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

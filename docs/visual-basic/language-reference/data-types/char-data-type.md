@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], assigning"
   - "Char data type, character literals"
 ms.assetid: cd7547a9-7855-4e8e-b216-35d74a362657
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

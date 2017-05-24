@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, samples"
   - "COM interop, samples"
 ms.assetid: a3f752bb-8945-4e1b-8163-71def6e9f137
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -102,7 +100,6 @@ Public Class LoanApp
         End While  
     End Sub  
 End Class  
-  
 ```  
   
 ```csharp  

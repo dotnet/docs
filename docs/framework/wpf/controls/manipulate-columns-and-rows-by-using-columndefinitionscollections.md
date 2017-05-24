@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Grid control, ColumnDefinitionCollection class"
   - "Grid control, RowDefinitionCollection class"
 ms.assetid: bfc7160a-45f2-4e17-9961-df414dfb13c5
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

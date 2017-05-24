@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ImportFileEx method"
 ms.assetid: ad276f3f-b303-46ac-97e0-66a377adaa4f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

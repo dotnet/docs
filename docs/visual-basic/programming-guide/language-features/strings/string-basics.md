@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "strings [Visual Basic], Visual Basic"
   - "strings [Visual Basic], regular expressions"
 ms.assetid: 5674418d-f00d-4f72-9f98-d15897793350
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -64,7 +62,6 @@ The `String` data type represents a series of characters (each representing in t
 ```vb  
 Dim x = "hello  
 world"  
-  
 ```  
   
  The resulting string contains newline sequences that you used in your string literal (vbcr, vbcrlf, etc.).  You no longer need to use the old workaround:  
@@ -72,7 +69,6 @@ world"
 ```vb  
 Dim x = <xml><![CDATA[Hello  
 World]]></xml>.Value  
-  
 ```  
   
 ## Characters in Strings  

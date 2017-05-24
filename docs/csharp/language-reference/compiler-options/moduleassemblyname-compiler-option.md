@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "/moduleassemblyname compiler option [C#]"
   - ".moduleassemblyname compiler option [C#]"
 ms.assetid: d464d9b9-f18d-423b-95e9-66c7878fd53a
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

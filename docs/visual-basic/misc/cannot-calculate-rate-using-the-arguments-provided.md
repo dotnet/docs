@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrFinancial_CannotCalculateRate"
 ms.assetid: 17d5c8eb-4716-4b72-977f-a640c02e630d
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

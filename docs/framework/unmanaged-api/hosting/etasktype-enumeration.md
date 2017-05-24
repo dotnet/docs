@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ETaskType enumeration [.NET Framework hosting]"
 ms.assetid: aa527b31-89d4-41f2-ad6f-63b76950b7df
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

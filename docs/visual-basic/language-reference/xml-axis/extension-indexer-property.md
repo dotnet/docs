@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "extension indexer [Visual Basic]"
   - "XML [Visual Basic], accessing"
 ms.assetid: a16a4b13-54be-432c-82b3-a87091464ada
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -46,7 +44,6 @@ Provides access to individual elements in a collection.
 ## Syntax  
   
 ```  
-  
 object(index)  
 ```  
   

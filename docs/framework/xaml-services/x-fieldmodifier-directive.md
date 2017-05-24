@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "x:FieldModifier attribute [XAML Services]"
   - "XAML [XAML Services], x:FieldModifier attribute"
 ms.assetid: ed427cd4-2f35-4d24-bd2f-0fa7b71ec248
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: "wadepickett"
 ms.author: "wpickett"

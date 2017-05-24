@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "<webProxyScript> element"
   - "webProxyScript element"
 ms.assetid: a13c26db-6218-4af3-9696-38f24b23bfac
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
@@ -39,7 +37,6 @@ Configures the characteristics of the script used to discover Web proxies.
 ## Syntax  
   
 ```  
-  
       <webProxyScript  
   downloadTimeout="hh:mm:ss"  
 />  

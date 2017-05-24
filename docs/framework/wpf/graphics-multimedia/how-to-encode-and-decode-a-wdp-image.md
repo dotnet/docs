@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "decoding image formats"
   - "encoding WDP images"
 ms.assetid: 911777d1-516b-49db-a87b-b54e31b18532
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

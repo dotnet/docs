@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "FindAssemblyModule method [.NET Framework metadata]"
   - "IMetaDataDispenserEx::FindAssemblyModule method [.NET Framework metadata]"
 ms.assetid: d1fb65e1-7e19-4513-85b1-44f87c294d3e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9ffd8db6-84a8-4b38-a9fe-2cb1a87a1c97
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Defines settings for message-level security of the [\<ws2007HttpBinding>](../../
 ## Syntax  
   
 ```  
-  
 <ws2007HttpBinding>  
  <binding >  
   <security>  

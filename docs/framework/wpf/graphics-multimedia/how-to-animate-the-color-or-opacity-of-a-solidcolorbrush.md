@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "animation, opacity of SolidColorBrush"
   - "SolidColorBrush, animating opacity of"
 ms.assetid: d9154354-843f-4713-bad1-35bb0ba6eaeb
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

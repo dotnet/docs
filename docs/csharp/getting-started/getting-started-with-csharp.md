@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "Visual C#, getting started"
   - "getting started, Visual C#"
 ms.assetid: d6ec050f-3956-4737-8030-a4fa3521d29f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 50
 author: "BillWagner"
 ms.author: "wiwagn"

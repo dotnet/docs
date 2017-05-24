@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugAppDomain2 interface [.NET Framework debugging]"
 ms.assetid: 314d29f3-feb0-4a92-9530-b569c280cc31
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

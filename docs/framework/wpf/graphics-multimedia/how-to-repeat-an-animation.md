@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Timelines RepeatBehavior property"
   - "animation, repeating"
 ms.assetid: e6f3b068-eeeb-47fd-8d40-8848c31f1e1e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

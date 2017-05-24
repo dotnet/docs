@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "page functions, returning from"
   - "functions, returning from"
 ms.assetid: 87804905-7e8f-417b-b0e3-5622da686396
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

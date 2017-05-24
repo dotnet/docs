@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "synchronization primitives, Barrier"
 ms.assetid: 613a8bc7-6a28-4795-bd6c-1abd9050478f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

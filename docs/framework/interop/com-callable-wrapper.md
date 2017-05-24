@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, COM wrappers"
   - "COM callable wrappers"
 ms.assetid: d04be3b5-27b9-4f5b-8469-a44149fabf78
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -89,7 +87,6 @@ Public Class Mammal
     Sub Breathe()  
     Sub Sleep()  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -145,7 +142,6 @@ coclass Mammal
     Sub M() Implements IExplicit.M  
 …  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -170,7 +166,6 @@ public class LoanApp : IExplicit {
     Sub M() Implements IAnother.M  
 …  
 End Class  
-  
 ```  
   
 ```csharp  

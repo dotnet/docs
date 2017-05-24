@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataAssemblyImport::EnumAssemblyRefs method [.NET Framework metadata]"
   - "EnumAssemblyRefs method [.NET Framework metadata]"
 ms.assetid: 8844d0dd-730e-4592-8a7b-c1462d312c70
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

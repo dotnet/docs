@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "command-line debugger [.NET Framework]"
   - "MDbg.exe"
 ms.assetid: 28a3f509-07e2-4dbe-81df-874c5e969cc4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 27
 author: "mairaw"
 ms.author: "mairaw"

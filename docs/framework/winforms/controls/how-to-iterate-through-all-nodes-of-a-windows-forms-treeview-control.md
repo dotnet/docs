@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "TreeView control [Windows Forms], iterating through nodes"
   - "tree nodes in TreeView control, iterating through"
 ms.assetid: 427f8928-ebcf-4beb-887f-695b905d5134
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -53,7 +51,6 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
           PrintRecursive(n)  
        Next  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -79,7 +76,6 @@ It is sometimes useful to examine every node in a Windows Forms <xref:System.Win
           PrintRecursive(n);  
        }  
     }  
-  
     ```  
   
     ```cpp  

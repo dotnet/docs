@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "client area, printing"
 ms.assetid: c06c9c0e-bc07-48cd-9596-e29a2ff96236
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "code, verification process"
   - "verification testing code"
 ms.assetid: 113a8bbf-6875-4a72-a49d-ca2d92e19cc8
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -163,7 +161,6 @@ Key = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN
 Name = Environment  
 Type = REG_MULTI_SZ  
 Value (to append) = COMPLUS_LoaderOptimization=1  
-  
 ```  
   
 <a name="reference"></a>   

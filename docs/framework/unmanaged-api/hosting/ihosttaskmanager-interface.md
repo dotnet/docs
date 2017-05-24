@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostTaskManager interface [.NET Framework hosting]"
 ms.assetid: 4a0b05b9-3ef1-4607-b7c8-bd4dd43647a0
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 18

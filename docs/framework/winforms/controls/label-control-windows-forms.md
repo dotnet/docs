@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "labels"
   - "LinkLabel control [Windows Forms]"
 ms.assetid: 2028bbe3-ffe2-43e8-8ae3-dec759d2ecec
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

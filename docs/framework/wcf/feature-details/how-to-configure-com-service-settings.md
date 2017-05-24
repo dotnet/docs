@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "COM+ [WCF], configuring service settings"
 ms.assetid: f42a55a8-3af8-4394-9fdd-bf12a93780eb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"
@@ -35,7 +33,6 @@ public interface IFinances
     string Debit(string accountNo, double amount);  
     string Credit(string accountNo, double amount);  
 }  
-  
 ```  
   
  If the component is exposed as a Web service, the corresponding service contract that is exposed, and that clients would need to conform to, is as follows:  
@@ -51,7 +48,6 @@ public interface IFinancesContract : IDisposable
     [OperationContract]  
     string Credit(string accountNo, double amount);  
 }  
-  
 ```  
   
 > [!NOTE]
@@ -104,7 +100,6 @@ public interface IFinancesContract : IDisposable
         </services>  
     </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## See Also  

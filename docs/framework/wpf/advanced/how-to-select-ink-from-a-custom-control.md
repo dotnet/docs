@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "ink, selecting from custom control"
   - "custom controls, ink selection"
 ms.assetid: 5f3a45c6-6d40-4017-9b47-933f134ceba3
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

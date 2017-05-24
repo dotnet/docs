@@ -30,8 +30,6 @@ helpviewer_keywords:
   - "compiling source code, multiple languages"
   - "CodeDOM, graphs"
 ms.assetid: 6c864c8e-6dd3-4a65-ace0-36879d9a9c42
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"

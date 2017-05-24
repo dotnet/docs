@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "controls [WPF], layout system"
   - "layout system [WPF]"
 ms.assetid: 3eecdced-3623-403a-a077-7595453a9221
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent

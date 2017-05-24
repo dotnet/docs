@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "flicker"
   - "bit-block transfer"
 ms.assetid: 33b76910-13a3-4521-be98-5c097341ae3b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -51,7 +49,6 @@ Private Sub Form1_Paint(ByVal sender As Object, ByVal e As _
         e.Graphics.CopyFromScreen(New Point(10, 10), New Point _  
              (100, 100), New Size(70, 70))  
 End Sub  
-  
 ```  
   
 ```csharp  

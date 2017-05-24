@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "text boxes, drag-and-drop operations"
   - "RichTextBox control [Windows Forms], drag-and-drop operations"
 ms.assetid: ca167d1c-2014-4cf0-96a0-20598470be3b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -43,7 +41,6 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
           e.Effect = DragDropEffects.None  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -55,7 +52,6 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
        else  
           e.Effect = DragDropEffects.None;  
     }  
-  
     ```  
   
     ```cpp  
@@ -105,7 +101,6 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
           e.Data.GetData(DataFormats.Text).ToString()  
        RichTextBox1.Text = RichTextBox1.Text + s  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -125,7 +120,6 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
           e.Data.GetData(DataFormats.Text).ToString();  
        richTextBox1.Text = richTextBox1.Text + s;  
     }  
-  
     ```  
   
     ```cpp  
@@ -154,7 +148,6 @@ Drag-and-drop operations with the Windows Forms <xref:System.Windows.Forms.RichT
     this.richTextBox1.DragDrop += new  
         System.Windows.Forms.DragEventHandler  
         (this.richTextBox1_DragDrop);  
-  
     ```  
   
     ```cpp  

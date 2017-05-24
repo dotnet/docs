@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "FunctionTailcall2 function [.NET Framework profiling]"
 ms.assetid: 249f9892-b5a9-41e1-b329-28a925904df6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

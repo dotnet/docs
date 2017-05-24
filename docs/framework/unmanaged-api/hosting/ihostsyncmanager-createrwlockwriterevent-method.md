@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "CreateRWLockWriterEvent method [.NET Framework hosting]"
   - "IHostSyncManager::CreateRWLockWriterEvent method [.NET Framework hosting]"
 ms.assetid: 70e488c2-cf53-4dc0-ba52-74372d215c41
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

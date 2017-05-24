@@ -17,8 +17,6 @@ helpviewer_keywords:
   - ".NET Framework regular expressions, character escapes"
   - "constructs, character escapes"
 ms.assetid: f49cc9cc-db7d-4058-8b8a-422bc08b29b0
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 31
 author: "rpetrusha"
 ms.author: "ronpet"

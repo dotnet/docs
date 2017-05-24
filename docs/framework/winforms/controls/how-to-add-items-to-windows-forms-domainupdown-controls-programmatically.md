@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "spin button control, adding items"
   - "DomainUpDown control [Windows Forms], adding items to"
 ms.assetid: fd31d314-33eb-4181-90f8-d32ed0c4e072
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -31,12 +29,10 @@ You can add items to the Windows Forms <xref:System.Windows.Forms.DomainUpDown> 
   
     ```vb  
     DomainUpDown1.Items.Add("noodles")  
-  
     ```  
   
     ```csharp  
     domainUpDown1.Items.Add("noodles");  
-  
     ```  
   
     ```cpp  
@@ -50,13 +46,11 @@ You can add items to the Windows Forms <xref:System.Windows.Forms.DomainUpDown> 
     ```vb  
     ' Inserts an item at the third position in the list  
     DomainUpDown1.Items.Insert(2, "rice")  
-  
     ```  
   
     ```csharp  
     // Inserts an item at the third position in the list  
     domainUpDown1.Items.Insert(2, "rice");  
-  
     ```  
   
     ```cpp  

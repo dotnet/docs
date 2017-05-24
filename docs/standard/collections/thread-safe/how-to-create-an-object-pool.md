@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "object pool, in .NET Framework"
 ms.assetid: 0480e7ff-b6f9-480e-a889-2ed4264d8372
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 5
 author: "mairaw"
 ms.author: "mairaw"

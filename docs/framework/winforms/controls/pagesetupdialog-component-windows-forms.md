@@ -29,8 +29,6 @@ helpviewer_keywords:
   - "page header"
   - "printing [Windows Forms], headers and footers"
 ms.assetid: 1c7ccb02-ac62-4fc8-8e4f-c67b01a86802
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

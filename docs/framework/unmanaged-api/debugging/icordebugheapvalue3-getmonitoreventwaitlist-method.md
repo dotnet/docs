@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugHeapValue3::GetMonitorEventWaitList method [.NET Framework debugging]"
   - "GetMonitorEventWaitList method [.NET Framework debugging]"
 ms.assetid: 035a9035-ac66-4953-b48a-99652b42b7fe
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

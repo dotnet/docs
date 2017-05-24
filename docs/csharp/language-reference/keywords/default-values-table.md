@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "constructors [C#], default constructor"
   - "types [C#], default constructor return values"
 ms.assetid: 4af2c1df-9e3a-48c1-83ac-b192986fc5bc
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

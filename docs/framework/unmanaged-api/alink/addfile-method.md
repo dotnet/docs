@@ -23,8 +23,6 @@ dev_langs:
 helpviewer_keywords: 
   - "AddFile method"
 ms.assetid: 9e707abb-f905-4568-9356-12aa21d1b11c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

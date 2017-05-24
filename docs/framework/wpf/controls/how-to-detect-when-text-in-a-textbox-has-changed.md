@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "text change, detecting"
   - "detecting text change"
 ms.assetid: 1c39ee14-e37f-49fb-a0d1-a9824ca13584
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

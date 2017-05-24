@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "controls [WPF], DockPanel"
   - "DockPanel control [WPF]"
 ms.assetid: 8d3d290b-d38c-47d0-918e-cee2baeb92ae
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 62
 author: dotnet-bot
 ms.author: dotnetcontent

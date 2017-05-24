@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ISymUnmanagedDocument::GetDocumentType method [.NET Framework debugging]"
   - "GetDocumentType method [.NET Framework debugging]"
 ms.assetid: 2d381ab1-7e7c-4281-af2b-e54d879b3ef8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

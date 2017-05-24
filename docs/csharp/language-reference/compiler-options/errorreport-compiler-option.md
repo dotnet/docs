@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "errorreport compiler option [C#]"
   - "/errorreport compiler option [C#]"
 ms.assetid: bd0e7493-b79d-4369-9c3f-ba26ebdfbedf
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 35
 author: "BillWagner"
 ms.author: "wiwagn"

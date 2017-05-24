@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "styles [WPF], TreeView"
   - "TreeView [WPF], styles and templates"
 ms.assetid: a49adb77-0202-4caa-b94a-8bb110d7fa9a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

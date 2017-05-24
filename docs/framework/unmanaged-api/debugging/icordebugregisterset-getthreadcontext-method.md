@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetThreadContext method, ICorDebugRegisterSet interface [.NET Framework debugging]"
   - "ICorDebugRegisterSet::GetThreadContext method [.NET Framework debugging]"
 ms.assetid: 0f63400b-dc1c-48d6-b51a-75c3f7f28e03
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

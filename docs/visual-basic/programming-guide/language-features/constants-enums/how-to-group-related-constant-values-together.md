@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "enumerations [Visual Basic], constants"
   - "constants, grouping together"
 ms.assetid: 09d61da5-c940-4126-a79f-ba93c36653dc
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

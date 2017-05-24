@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IsGlobal method [.NET Framework metadata]"
   - "IMetaDataImport::IsGlobal method [.NET Framework metadata]"
 ms.assetid: 44cf6908-f555-4ae8-b2cf-24bd974bf2fe
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "DebugEvent method [.NET Framework debugging]"
   - "ICorDebugUnmanagedCallback::DebugEvent method [.NET Framework debugging]"
 ms.assetid: be9cab04-65ec-44d5-a39a-f90709fdd043
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

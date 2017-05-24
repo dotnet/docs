@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Break method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::Break method [.NET Framework debugging]"
 ms.assetid: 7d78a301-82b3-43b2-9d65-3cda3285ae97
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

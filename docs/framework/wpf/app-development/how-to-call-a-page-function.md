@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "page functions, calling"
   - "functions, calling"
 ms.assetid: a4808397-c6d5-406a-83e0-0091f0c15ae4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

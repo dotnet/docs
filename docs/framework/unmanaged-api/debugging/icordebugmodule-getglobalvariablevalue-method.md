@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugModule::GetGlobalVariableValue method [.NET Framework debugging]"
   - "GetGlobalVariableValue method [.NET Framework debugging]"
 ms.assetid: bbc0881c-6a59-41a0-b5ee-2f3d1b71684c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

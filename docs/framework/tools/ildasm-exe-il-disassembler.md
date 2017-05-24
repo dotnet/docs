@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "text files produced by MSIL Disassembler"
   - "disassembling file for MSIL Assembler input"
 ms.assetid: db27f6b2-f1ec-499e-be3a-7eecf95ca42b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -39,7 +37,6 @@ The IL Disassembler is a companion tool to the IL Assembler (Ilasm.exe). Ildasm.
 ## Syntax  
   
 ```  
-  
 ildasm [options] [PEfilename] [options]  
 ```  
   
@@ -128,7 +125,6 @@ ildasm [options] [PEfilename] [options]
 // IL from Ildasm.exe output  
 .method public hidebysig instance void  
   Test(int32  marshal({ 46 }) test) cil managed  
-  
 ```  
   
  Starting with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)], Ildasm.exe displays attributes that are applied to interface implementations, as shown in the following excerpt from Ildasm.exe output:  
@@ -142,7 +138,6 @@ ildasm [options] [PEfilename] [options]
     .custom instance void  
       [mscorlib]System.Diagnostics.DebuggerNonUserCodeAttribute::.ctor() = ( 01 00 00 00 )  
       …  
-  
 ```  
   
 ## Examples  

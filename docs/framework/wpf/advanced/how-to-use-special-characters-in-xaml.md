@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "typography, special characters"
   - "special characters"
 ms.assetid: a57776d1-f353-4794-afa0-bfa3c712ed1c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

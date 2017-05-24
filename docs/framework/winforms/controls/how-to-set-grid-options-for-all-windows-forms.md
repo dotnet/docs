@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Windows Forms, grid options in designer"
   - "Windows Forms Designer"
 ms.assetid: 36967466-1dfd-4fae-a7f1-7bf2cbc94048
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

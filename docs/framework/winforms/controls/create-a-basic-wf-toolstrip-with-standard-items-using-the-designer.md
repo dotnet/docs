@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], adding items"
   - "ToolStrip control [Windows Forms], adding standard items"
 ms.assetid: 028deb1a-acf8-4911-979a-ba8431cd9d82
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), exceptions"
   - "ExceptionSwallowedOnCallFromCOM MDA"
 ms.assetid: 55d6ab12-f251-4aab-aa64-aacbe9d9f974
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"

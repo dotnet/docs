@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CreateApplicationContext function [.NET Framework fusion]"
 ms.assetid: 7bf8a141-b2c0-4058-9885-1cef7dcaa811
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

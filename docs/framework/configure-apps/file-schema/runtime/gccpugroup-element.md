@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "GCCpuGroup element"
   - "<GCCpuGroup> element"
 ms.assetid: c1fc7d6c-7220-475c-a312-5b8b201f66e0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

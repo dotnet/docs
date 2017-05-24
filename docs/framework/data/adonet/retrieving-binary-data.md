@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 56c5a9e3-31f1-482f-bce0-ff1c41a658d0
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 5
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -89,7 +87,6 @@ Loop
 ' Close the reader and the connection.  
 reader.Close()  
 connection.Close()  
-  
 ```  
   
 ```csharp  

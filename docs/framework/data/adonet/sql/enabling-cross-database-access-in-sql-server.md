@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 10663fb6-434c-4c81-8178-ec894b9cf895
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 10
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -46,7 +44,6 @@ RECONFIGURE;
 ```  
 ALTER DATABASE Database1 SET DB_CHAINING ON;  
 ALTER DATABASE Database2 SET DB_CHAINING ON;  
-  
 ```  
   
 ### Dynamic SQL  

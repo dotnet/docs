@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "graphics, rounding corners of RectangleGeometry objects"
   - "rounding corners of RectangleGeometry objects"
 ms.assetid: 926644bc-1357-4c0b-ac81-694bd090ae87
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

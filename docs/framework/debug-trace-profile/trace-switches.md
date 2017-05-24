@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "trace switches"
   - "trace switches, creating custom"
 ms.assetid: 8ab913aa-f400-4406-9436-f45bc6e54fbe
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
@@ -75,7 +73,6 @@ myTraceSwitch.Level = TraceLevel.Info
 MessageBox.Show(myTraceSwitch.TraceWarning.ToString())  
 ' This messagebox displays false.  
 MessageBox.Show(myTraceSwitch.TraceVerbose.ToString())  
-  
 ```  
   
 ```csharp  
@@ -87,7 +84,6 @@ myTraceSwitch.Level = System.Diagnostics.TraceLevel.Info;
 MessageBox.Show(myTraceSwitch.TraceWarning.ToString());  
 // This message box displays false.  
 MessageBox.Show(myTraceSwitch.TraceVerbose.ToString());  
-  
 ```  
   
 ## Developer-Defined Switches  

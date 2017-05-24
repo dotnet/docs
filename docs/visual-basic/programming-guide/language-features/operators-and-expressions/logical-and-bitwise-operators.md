@@ -31,8 +31,6 @@ helpviewer_keywords:
   - "OrElse operator [Visual Basic]"
   - "logical operators, unary"
 ms.assetid: ca474e13-567d-4b1d-a18b-301433705e57
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

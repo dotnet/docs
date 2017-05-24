@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 1d4424ab-5143-4e50-a84a-ceeb4ddf3bba
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5
@@ -33,13 +31,11 @@ Describes the amount of cached data that must be discarded based on changes to t
 ## Syntax  
   
 ```  
-  
 typedef enum CorDebugStateChange  
 {  
     PROCESS_RUNNING = 0x0000001,   
     FLUSH_ALL       = 0x0000002,   
 } CorDebugStateChange;  
-  
 ```  
   
 ## Members  

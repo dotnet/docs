@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], freezing columns"
   - "DataGridView control [Windows Forms], columns always in view"
 ms.assetid: 2ef8b1de-782e-4867-af8d-58171ab5c106
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

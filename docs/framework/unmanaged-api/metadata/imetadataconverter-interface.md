@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IMetaDataConverter interface [.NET Framework metadata]"
 ms.assetid: 9caea662-0167-4267-b14a-2fa42c3be4ea
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

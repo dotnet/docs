@@ -24,8 +24,6 @@ dev_langs:
 helpviewer_keywords: 
   - "GetAssemblyIdentityFromFile function [.NET Framework fusion]"
 ms.assetid: 2c32da53-76c7-4048-84d0-d05207333004
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

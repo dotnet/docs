@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "loadFromRemoteSources element"
   - "<loadFromRemoteSources> element"
 ms.assetid: 006d1280-2ac3-4db6-a984-a3d4e275046a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 31
 author: "rpetrusha"
 ms.author: "ronpet"

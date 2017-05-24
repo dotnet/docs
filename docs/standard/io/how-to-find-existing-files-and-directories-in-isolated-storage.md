@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "locating directories in isolated storage file"
   - "storing data using isolated storage, finding files and directories"
 ms.assetid: eb28458a-6161-4e7a-9ada-30ef93761b5c
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

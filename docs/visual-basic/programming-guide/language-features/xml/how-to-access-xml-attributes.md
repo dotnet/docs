@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "XML axis [Visual Basic], attribute"
   - "XML [Visual Basic], accessing"
 ms.assetid: 66cd704f-990c-4f8d-9b49-2b6aa76ca8fd
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

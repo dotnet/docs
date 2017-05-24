@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "styles [WPF], GroupBox"
   - "templates [WPF], GroupBox"
 ms.assetid: 33df7037-0a1b-476f-b9d0-41566a777699
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

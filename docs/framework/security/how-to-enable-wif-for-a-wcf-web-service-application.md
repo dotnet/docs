@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bfc64b3d-64e9-4093-a6a4-72e933917af7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -230,7 +228,6 @@ manager: "mbaldwin"
          </behavior>  
        </endpointBehaviors>  
      </behaviors>  
-  
     ```  
   
      This disables certificate validation.  

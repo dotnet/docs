@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "bypasslist, remove element"
   - "remove element, bypasslist"
 ms.assetid: 61dcfb4a-e3d9-4abf-a2cd-7d685fe2f64b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
@@ -42,7 +40,6 @@ Removes an IP address or DNS name from the proxy bypass list.
 ## Syntax  
   
 ```  
-  
       <remove   
    name = "regular expression"   
 />  

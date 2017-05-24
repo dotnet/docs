@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "runtime information events [.NET Framework]"
   - "ETW, runtime information events"
 ms.assetid: 68b4edbc-7f3b-45f6-ab75-4fd066d6af9a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "mairaw"
 ms.author: "mairaw"

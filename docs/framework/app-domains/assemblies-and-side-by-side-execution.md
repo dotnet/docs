@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "side-by-side execution [.NET Framework]"
   - "assemblies [.NET Framework], side-by-side execution"
 ms.assetid: e42036ee-7590-47d1-b884-cc856e39bd5d
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

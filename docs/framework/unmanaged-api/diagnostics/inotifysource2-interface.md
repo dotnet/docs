@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "INotifySource2 interface [.NET Framework debugging]"
 ms.assetid: f432fb85-5c78-43d1-8302-53b8fc605c97
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

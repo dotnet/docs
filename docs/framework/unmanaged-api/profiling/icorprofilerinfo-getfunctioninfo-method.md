@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerInfo::GetFunctionInfo method [.NET Framework profiling]"
   - "GetFunctionInfo method [.NET Framework profiling]"
 ms.assetid: c42b5891-019d-46b3-b551-4606295b75b8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

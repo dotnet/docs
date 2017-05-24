@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Windows Forms, getting started"
   - "getting started, Windows Forms"
 ms.assetid: a031aa58-5027-4082-b590-df7c12c77dec
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

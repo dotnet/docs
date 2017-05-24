@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "decryption"
   - "data [.NET Framework], encryption"
 ms.assetid: 606698b0-cb1a-42ca-beeb-0bea34205d20
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - ".NET Framework, extensibility"
   - "versioning [.NET Framework], add-ins"
 ms.assetid: 8dd45b02-7218-40f9-857d-40d7b98b850b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 42
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "event handling, troubleshooting"
   - "event handlers, troubleshooting"
 ms.assetid: e1c8759f-5370-4308-8476-8c48b73509bf
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

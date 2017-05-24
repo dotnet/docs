@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Task Parallel Library, dataflows"
   - "TPL dataflow library, creating dataflow pipeline"
 ms.assetid: 69308f82-aa22-4ac5-833d-e748533b58e8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

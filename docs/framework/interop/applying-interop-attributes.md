@@ -26,8 +26,6 @@ helpviewer_keywords:
   - "COM interop, exposing COM components"
   - "COM interop, applying attributes"
 ms.assetid: b6014613-641c-4912-9e2f-83a99210a037
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

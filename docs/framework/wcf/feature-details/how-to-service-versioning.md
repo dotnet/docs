@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4287b6b3-b207-41cf-aebe-3b1d4363b098
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "wadepickett"
 ms.author: "wpickett"
@@ -75,7 +73,6 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
                     binding="wsHttpBinding"  
                     contract="*" />  
         </client>  
-  
     ```  
   
 2.  Define the filters used to route messages to the destination endpoints.  For this example, the XPath filter is used to detect the value of the "CalcVer" custom header to determine which version the message should be routed to. An XPath filter is also used to detect messages that do not contain the "CalcVer" header. The following example defines the required filters and namespace table.  
@@ -137,7 +134,6 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
     ```  
   
 ## Example  
@@ -221,14 +217,12 @@ messageHeadersElement.Add(MessageHeader.CreateHeader("CalcVer", "http://my.custo
     </routing>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## Example  
  The following is a complete listing of the client application.  
   
 ```csharp  
-  
 using System;  
 using System.ServiceModel;  
 using System.ServiceModel.Channels;  
@@ -334,7 +328,6 @@ namespace Microsoft.Samples.AdvancedFilters
         }  
     }  
 }  
-  
 ```  
   
 ## See Also  

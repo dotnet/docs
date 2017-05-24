@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "properties, Blocks, manipulating flow content elements"
   - "Blocks property, manipulating flow content elements"
 ms.assetid: aeda4ece-b979-4818-a093-ef938e908751
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

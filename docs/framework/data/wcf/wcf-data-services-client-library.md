@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "DataServiceQuery class, about DataServiceQuery class"
   - "DataServiceContext class, about DataServiceContext class"
 ms.assetid: 21075e50-8917-413e-a8ea-35a0f6e65aa5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"

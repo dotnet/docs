@@ -14,8 +14,6 @@ api_name:
 api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 3e81be16-24c7-4399-b242-6268feaa49d7
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent

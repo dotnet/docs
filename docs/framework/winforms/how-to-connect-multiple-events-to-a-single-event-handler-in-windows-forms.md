@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Windows Forms controls, events"
   - "menu items, multicasting event-handling methods"
 ms.assetid: 5a20749a-41b5-4acc-8eb1-9e5040b0a2c4
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

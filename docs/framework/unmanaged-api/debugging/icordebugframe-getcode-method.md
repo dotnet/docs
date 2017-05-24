@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetCode method, ICorDebugFrame interface [.NET Framework debugging]"
   - "ICorDebugFrame::GetCode method [.NET Framework debugging]"
 ms.assetid: fbaa0794-a031-4015-8beb-2749e47ac340
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

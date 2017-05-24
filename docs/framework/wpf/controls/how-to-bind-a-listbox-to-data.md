@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "data binding, ListBox control"
   - "binding data, to ListBox control"
 ms.assetid: de93a907-709a-44a7-84bf-578b846a3d8b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

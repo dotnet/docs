@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 16902a42-ef80-40e9-8c4c-90e61ddfdfe5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -85,7 +83,6 @@ RemotingConfiguration.RegisterWellKnownServiceType(
     WellKnownObjectMode.Singleton);  
 Console.WriteLine("RemotingServer is running.  Press ENTER to terminate...");  
 Console.ReadLine();  
-  
 ```  
   
  There are many ways to make the Remoting type available as a server, including using configuration files. This is just one example.  
@@ -100,7 +97,6 @@ public interface IWCFServer
     [OperationContract]  
     Customer GetCustomer(int customerId);  
 }  
-  
 ```  
   
  The server’s implementation is defined in a separate concrete class, like in the following example:  
@@ -129,7 +125,6 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(WCFServer), baseAddress)
     Console.WriteLine();  
     Console.ReadLine();  
 }  
-  
 ```  
   
 > [!NOTE]
@@ -310,7 +305,6 @@ catch (FaultException<CustomerServiceFault> fault)
     Console.WriteLine(String.Format("Fault received: {0}",  
     fault.Detail.ErrorMessage));  
 }  
-  
 ```  
   
  For more information about fault contracts, see <xref:System.ServiceModel.FaultException>.  
@@ -385,7 +379,6 @@ public class RemotingServer : MarshalByRefObject
     // Demonstrates client passing object to server by-value  
     public bool UpdateCustomer(Customer customer) {…}  
 }  
-  
 ```  
   
 #### Scenario 1: Service Returns an Object by Value  

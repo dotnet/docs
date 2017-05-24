@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "alpha blending, using with fills"
   - "shapes, adding transparency"
 ms.assetid: 5440f48c-3ac9-44c3-b170-c1c110bdbab8
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

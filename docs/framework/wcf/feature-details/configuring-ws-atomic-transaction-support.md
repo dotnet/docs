@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "WS-AT protocol [WCF], configuring WS-Atomic Transaction"
 ms.assetid: cb9f1c9c-1439-4172-b9bc-b01c3e09ac48
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 31
 author: "Erikre"
 ms.author: "erikre"

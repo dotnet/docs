@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 70812717-888a-4748-9640-0df6715ff029
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "Erikre"
 ms.author: "erikre"
@@ -65,7 +63,6 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
  The following configuration example specifies filtering scopes and extension metadata to be published for an endpoint.  
   
 ```  
-  
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
@@ -100,7 +97,6 @@ Specifies the various discovery settings for an endpoint, such as its discoverab
     </behavior>  
   </endpointBehaviors>  
 </behaviors>  
-  
 ```  
   
 ## See Also  

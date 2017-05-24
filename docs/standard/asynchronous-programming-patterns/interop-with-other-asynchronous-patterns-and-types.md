@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Task-based Asynchronous Pattern, .NET Framework support for"
   - ".NET Framework, asynchronous design patterns"
 ms.assetid: f120a5d9-933b-4d1d-acb6-f034a57c3749
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

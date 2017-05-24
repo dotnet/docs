@@ -13,8 +13,6 @@ dev_langs:
 helpviewer_keywords: 
   - "stackalloc keyword [C#]"
 ms.assetid: adc04c28-3ed2-4326-807a-7545df92b852
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 27
 author: "BillWagner"
 ms.author: "wiwagn"

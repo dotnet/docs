@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "e-mail [.NET Framework], validating"
   - "IsMatch method"
 ms.assetid: 7536af08-4e86-4953-98a1-a8298623df92
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 30
 author: "rpetrusha"
 ms.author: "ronpet"

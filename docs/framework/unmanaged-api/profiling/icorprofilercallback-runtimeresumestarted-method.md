@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerCallback::RuntimeResumeStarted method [.NET Framework profiling]"
   - "RuntimeResumeStarted method [.NET Framework profiling]"
 ms.assetid: 5854bfb2-c568-4f19-904a-7c9d41e7b995
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugClass2::SetJMCStatus method [.NET Framework debugging]"
   - "SetJMCStatus method, ICorDebugClass2 interface [.NET Framework debugging]"
 ms.assetid: 077e6c7f-f857-480c-bebb-76ee1de4e8fc
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "menu items, standard"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: 75db9126-e70c-4e81-921d-b83c0a4a9f50
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

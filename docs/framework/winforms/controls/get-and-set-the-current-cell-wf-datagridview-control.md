@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], setting current cell"
   - "cells, getting and setting current"
 ms.assetid: b0e41e57-493a-4bd0-9376-a6f76723540c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

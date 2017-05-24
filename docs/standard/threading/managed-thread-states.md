@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "threading [.NET Framework], states"
 ms.assetid: 63890d5e-6025-4a7c-aaf0-d8bfd54b455f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

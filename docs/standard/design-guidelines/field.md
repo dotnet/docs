@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "read-only fields"
   - "member design guidelines, fields"
 ms.assetid: 7cb4b0f3-7a10-4c93-b84d-733f7134fcf8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

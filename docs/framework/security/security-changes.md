@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "security-critical code"
   - "code access security, changes"
 ms.assetid: 5e87881c-9c13-4b52-8ad1-e34bb46e8aaa
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 52
 author: "mairaw"
 ms.author: "mairaw"

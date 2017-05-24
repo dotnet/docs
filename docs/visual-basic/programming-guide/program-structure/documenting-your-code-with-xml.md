@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "XML comments, Visual Basic"
   - "Visual Basic code, documenting with XML"
 ms.assetid: a0d35dc7-c5f9-4d74-92ff-a1c6f28d5235
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

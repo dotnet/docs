@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IHostSecurityManager::OpenThreadToken method [.NET Framework hosting]"
   - "OpenThreadToken method [.NET Framework hosting]"
 ms.assetid: d5999052-8bf0-4a9e-8621-da6284406b18
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

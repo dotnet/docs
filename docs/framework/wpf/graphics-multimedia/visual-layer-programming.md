@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "rendering support with Visual objects"
   - "visual layer"
 ms.assetid: d82c89db-077f-4c3c-a4f8-310ebfbe0fe2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 61
 author: dotnet-bot
 ms.author: dotnetcontent

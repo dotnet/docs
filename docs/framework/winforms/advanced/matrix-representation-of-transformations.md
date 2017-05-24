@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "transformations, translation"
   - "affine transformations"
 ms.assetid: 0659fe00-9e0c-41c4-9118-016f2404c905
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

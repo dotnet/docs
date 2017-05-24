@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1ccff72e-d76b-4e36-93a2-e51f7b32dc83
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "wadepickett"
 ms.author: "wpickett"
@@ -64,7 +62,6 @@ This topic outlines the basic steps required to partition messages across multip
                   binding="netTcpBinding"  
                   contract="*" />  
      </client>  
-  
     ```  
   
 2.  Define the filters used to route messages to the destination endpoints.  For this example, the EndpointName filter is used to determine which service endpoint received the message. The following example defines the necessary routing section and filters.  
@@ -92,7 +89,6 @@ This topic outlines the basic steps required to partition messages across multip
          <add filterName="NormalPriority" endpointName="CalcEndpoint2"/>  
        </filterTable>  
     </filterTables>  
-  
     ```  
   
 4.  To evaluate incoming messages against the filters contained in the table, you must associate the filter table with the service endpoints by using the routing behavior. The following example demonstrates associating "filterTable1" with the service endpoints:  
@@ -106,7 +102,6 @@ This topic outlines the basic steps required to partition messages across multip
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
     ```  
   
 ## Example  

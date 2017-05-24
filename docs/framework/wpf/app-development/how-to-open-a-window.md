@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "windows, opening"
   - "opening windows"
 ms.assetid: 6b91b2bb-fda7-491d-a72e-139dd630a5b0
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

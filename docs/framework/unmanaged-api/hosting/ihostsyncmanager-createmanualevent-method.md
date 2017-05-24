@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "CreateManualEvent method [.NET Framework hosting]"
   - "IHostSyncManager::CreateManualEvent method [.NET Framework hosting]"
 ms.assetid: 68661fbd-09cf-46dc-890b-e694f8a3880a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

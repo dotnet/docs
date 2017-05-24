@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SafeHandle class, run-time errors"
   - "MDAs (managed debugging assistants), handles"
 ms.assetid: 44cd98ba-95e5-40a1-874d-e8e163612c51
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

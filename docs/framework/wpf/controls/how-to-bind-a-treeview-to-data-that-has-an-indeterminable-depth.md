@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "TreeView control [WPF], binding to data of indeterminate depth"
 ms.assetid: daddcd74-1b0f-4ffd-baeb-ec934c5e0f53
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

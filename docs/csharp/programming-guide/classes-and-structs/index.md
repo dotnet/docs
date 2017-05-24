@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "objects [C#]"
   - "C# language, classes"
 ms.assetid: cc39dbda-8754-423e-b5b1-16a1db0734c0
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 48
 author: "BillWagner"
 ms.author: "wiwagn"

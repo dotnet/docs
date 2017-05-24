@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "managed heap"
   - "runtime, automatic memory management"
 ms.assetid: d4850de5-fa63-4936-a250-5678d118acba
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

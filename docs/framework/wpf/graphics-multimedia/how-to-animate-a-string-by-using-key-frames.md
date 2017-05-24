@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "strings, animating with key frames"
   - "key frames, animating strings with"
 ms.assetid: c62bc9fd-c09a-4227-bce0-0a1ab82049dd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

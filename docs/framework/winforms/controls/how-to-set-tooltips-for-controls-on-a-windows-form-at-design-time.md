@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "tooltips [Windows Forms], for controls"
   - "examples [Windows Forms], tooltips"
 ms.assetid: c4b60637-4c0a-44c2-a103-f66dff887936
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -37,13 +35,11 @@ You can set a <xref:System.Windows.Forms.ToolTip> string in code or in the Windo
     ```vb  
     ' In this example, Button1 is the control to display the ToolTip.  
     ToolTip1.SetToolTip(Button1, "Save changes")  
-  
     ```  
   
     ```csharp  
     // In this example, button1 is the control to display the ToolTip.  
     toolTip1.SetToolTip(button1, "Save changes");  
-  
     ```  
   
     ```cpp  

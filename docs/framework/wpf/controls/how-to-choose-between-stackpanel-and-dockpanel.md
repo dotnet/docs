@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "StackPanel control, DockPanel control compared to"
   - "controls [WPF], StackPanel"
 ms.assetid: f9239086-451f-42e6-81f7-ef89ef349742
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

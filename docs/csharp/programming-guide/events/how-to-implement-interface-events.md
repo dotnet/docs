@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "interfaces [C#], event implementation in classes"
   - "events [C#], in interfaces"
 ms.assetid: 63527447-9535-4880-8e95-35e2075827df
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

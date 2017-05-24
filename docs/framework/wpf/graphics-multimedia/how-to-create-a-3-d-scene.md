@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "creating, 3-D scenes"
   - "3-D scenes"
 ms.assetid: adb4a598-71a2-4dd5-b677-ea3fc11b78b2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "types [C#]"
   - "data types [C#], type system"
 ms.assetid: 16b984df-f417-4e02-b1e6-4589d4a614ea
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

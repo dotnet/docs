@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "mailSettings element"
   - "<mailSettings> element"
 ms.assetid: 54f0f153-17e5-4f49-afdc-deadb940c9c1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
@@ -38,7 +36,6 @@ Configures mail sending options.
 ## Syntax  
   
 ```  
-  
       <mailSettings  
   <smtp> … </smtp>  
 /mailsettings>  

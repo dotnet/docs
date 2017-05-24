@@ -27,8 +27,6 @@ helpviewer_keywords:
   - "join clause [LINQ in C#]"
   - "group clause [LINQ in C#]"
 ms.assetid: a7ea3421-1cf4-4df7-832a-aa22fe6379e9
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 39
 author: "BillWagner"
 ms.author: "wiwagn"

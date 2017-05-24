@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5ff139f9-8806-47bc-8f33-47fe6c436b92
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "Erikre"
 ms.author: "erikre"
@@ -48,7 +46,6 @@ This sample demonstrates the implementation of a circular buffer trace listener.
   </sharedListeners>  
   <trace autoflush="true" />  
 </system.diagnostics>  
-  
 ```  
   
 #### To set up, build, and run the sample  

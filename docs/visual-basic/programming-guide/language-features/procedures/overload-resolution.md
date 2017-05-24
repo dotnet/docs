@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "signatures, procedure"
   - "overloads, resolution"
 ms.assetid: 766115d1-4352-45fb-859f-6063e0de0ec0
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

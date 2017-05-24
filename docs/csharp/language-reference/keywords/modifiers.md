@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "keywords [C#], modifiers"
   - "modifiers [C#]"
 ms.assetid: c96691dd-b357-49ec-b5ae-03ca214fadfb
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "procedure declarations"
   - "procedures, about procedures"
 ms.assetid: 4f779247-0b50-47e8-9e5c-ab5cf39ac0d2
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

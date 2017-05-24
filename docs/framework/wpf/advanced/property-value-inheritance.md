@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "value inheritance"
   - "properties, value inheritance"
 ms.assetid: d7c338f9-f2bf-48ed-832c-7be58ac390e4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

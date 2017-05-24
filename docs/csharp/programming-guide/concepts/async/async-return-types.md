@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "CSharp"
 ms.assetid: ddb2539c-c898-48c1-ad92-245e4a996df8
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -194,7 +192,6 @@ private async void button1_Click(object sender, RoutedEventArgs e)
   
         </Grid>  
     </Window>  
-  
     ```  
   
      A simple window that contains a text box and a button appears in the **Design** window of MainWindow.xaml.  

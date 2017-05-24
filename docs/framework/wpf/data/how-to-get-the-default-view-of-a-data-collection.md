@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "creating, views of data collections"
   - "data binding, creating views of data collections"
 ms.assetid: b641e96c-c2f6-42ea-9c5d-bac81176ad65
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

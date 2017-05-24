@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "GetFileVersion function [.NET Framework hosting]"
 ms.assetid: b3222c85-da88-4485-97d7-3a6ee3e8d358
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

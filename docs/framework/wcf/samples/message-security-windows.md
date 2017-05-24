@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "WS Security"
 ms.assetid: d2221d1c-c9cb-48d1-b044-a3b4445c7f05
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 34
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -45,7 +43,6 @@ This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBind
  The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `securityMode` and `authenticationMode`.  
   
 ```  
-  
 <system.serviceModel>  
   <client>  
     <endpoint address=  
@@ -71,7 +68,6 @@ This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBind
     </wsHttpBinding>  
   </bindings>  
 </system.serviceModel>  
-  
 ```  
   
  The service source code has been modified to demonstrate how the <xref:System.ServiceModel.OperationContext.ServiceSecurityContext%2A> can be used to access the identity of the caller.  
@@ -82,7 +78,6 @@ public string GetCallerIdentity()
     // The Windows identity of the caller can be accessed on the ServiceSecurityContext.WindowsIdentity.  
     return OperationContext.Current.ServiceSecurityContext.WindowsIdentity.Name;  
 }  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The first method called - `GetCallerIdentity` - returns the name of the caller identity back to the client. Press ENTER in the console window to shut down the client.  

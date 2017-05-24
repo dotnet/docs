@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "linear gradient brush"
   - "typography, outline effects"
 ms.assetid: 4aa3cf6e-1953-4f26-8230-7c1409e5f28d
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

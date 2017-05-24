@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "custom colors, creating with color remap table"
   - "color remap tables, using"
 ms.assetid: 977df1ce-8665-42d4-9fb1-ef7f0ff63419
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "GetTypeID method, ICorDebugType2 interface [.NET Framework debugging]"
   - "ICorDebugType2.GetTypeID method [.NET Framework debugging]"
 ms.assetid: 0b933686-226e-4373-92b7-fac579ee7b1a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4
@@ -36,11 +34,9 @@ Gets a [COR_TYPEID](../../../../docs/framework/unmanaged-api/debugging/cor-typei
 ## Syntax  
   
 ```  
-  
 HRESULT GetTypeID(  
     ([out] COR_TYPEID *id  
 );  
-  
 ```  
   
 #### Parameters  

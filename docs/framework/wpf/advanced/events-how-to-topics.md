@@ -14,8 +14,6 @@ f1_keywords:
 helpviewer_keywords: 
   - "events, how-to topics"
 ms.assetid: 00463181-36eb-4be0-bfa2-452854cce642
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 75
 author: dotnet-bot
 ms.author: dotnetcontent

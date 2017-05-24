@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Next method, ICorDebugObjectEnum interface [.NET Framework debugging]"
   - "ICorDebugObjectEnum::Next method [.NET Framework debugging]"
 ms.assetid: 10093e3d-26b6-4ad7-8ef3-bbf66243fc02
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

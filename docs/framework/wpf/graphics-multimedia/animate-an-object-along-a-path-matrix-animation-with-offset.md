@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "animation, objects along paths (matrix animation with offset accumulation)"
   - "matrix animation with offset accumulation"
 ms.assetid: 1bca90ef-9832-4128-8ed6-62908e7ec146
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "images [Windows Forms], creating"
   - "GDI+, rendering existing images"
 ms.assetid: c128b79a-3e31-47d8-9e66-3470f570a056
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -35,7 +33,6 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
     Dim myBitmap as New Bitmap _  
        (System.Environment.GetFolderPath _  
           (System.Environment.SpecialFolder.MyPictures))  
-  
     ```  
   
     ```csharp  
@@ -44,7 +41,6 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
     Bitmap myBitmap = new Bitmap  
        (System.Environment.GetFolderPath  
           (System.Environment.SpecialFolder.MyPictures));  
-  
     ```  
   
     ```cpp  
@@ -61,14 +57,12 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
     ' Creates a Graphics object that represents the drawing surface of   
     ' Button1.  
     Dim g as Graphics = Button1.CreateGraphics  
-  
     ```  
   
     ```csharp  
     // Creates a Graphics object that represents the drawing surface of   
     // Button1.  
     Graphics g = Button1.CreateGraphics();  
-  
     ```  
   
     ```cpp  
@@ -81,12 +75,10 @@ You can use [!INCLUDE[ndptecgdiplus](../../../../includes/ndptecgdiplus-md.md)] 
   
     ```vb  
     g.DrawImage(myBitmap, 1, 1)  
-  
     ```  
   
     ```csharp  
     g.DrawImage(myBitmap, 1, 1);  
-  
     ```  
   
     ```cpp  

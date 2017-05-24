@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0ce3793d-54b2-47e4-8cf7-b0591cc4dd21
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 5
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -79,7 +77,6 @@ The ADO.NET <xref:System.Data.DataSet> provides you with a relational representa
     ' Add code here to create the schema of the DataSet to view the data.  
   
     xmlDoc.Load("XMLDocument.xml")  
-  
     ```  
   
     ```csharp  

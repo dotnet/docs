@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 621abbde-590b-454d-90ac-68dc3c69c720
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Defines settings for message-level security of the [\<wsHttpBinding>](../../../.
 ## Syntax  
   
 ```  
-  
 <message   
    algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
    clientCredentialType="Certificate/IssuedToken/None/UserName/Windows"  

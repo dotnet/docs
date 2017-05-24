@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], object variable"
   - "variables [Visual Basic], object"
 ms.assetid: 31555704-58a3-49f1-9a0a-6421f605664f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

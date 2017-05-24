@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Windows Forms, anchoring and docking WPF content"
   - "interoperability [WPF]"
 ms.assetid: 5efb1c53-1484-43d6-aa8a-f4861b99bb8a
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "Do statement, Do loops"
   - "conditional statements, loop structures"
 ms.assetid: ecacb09b-a4c9-42be-98b2-a15d368b5db8
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

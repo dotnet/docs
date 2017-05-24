@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugObjectValue::GetClass method [.NET Framework debugging]"
   - "GetClass method, ICorDebugObjectValue interface [.NET Framework debugging]"
 ms.assetid: 5be25292-8357-445f-a09b-f997c0de761c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "code generators"
   - "CodeDOM, graphs"
 ms.assetid: 0444ddf3-c3f6-44ed-a999-f710d9c3e0cf
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

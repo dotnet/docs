@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "markup extensions [XAML Services], custom"
   - "XAML [XAML Services], markup extensions"
 ms.assetid: 261b2b11-2dc0-462f-8c66-55b8c9c6e436
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: "wadepickett"
 ms.author: "wpickett"

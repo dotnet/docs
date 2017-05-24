@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Next method, ICorProfilerObjectEnum interface [.NET Framework profiling]"
   - "ICorProfilerObjectEnum::Next method [.NET Framework profiling]"
 ms.assetid: b420433c-5ebe-4986-bba1-97902e6db819
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "enumeration format strings"
   - "formatting [.NET Framework], enumeration"
 ms.assetid: dd1ff672-1052-42cf-8666-4924fb6cd1a1
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

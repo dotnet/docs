@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "observer design pattern [.NET Framework], best practices"
   - "best practices [.NET Framework], observer design pattern"
 ms.assetid: c834760f-ddd4-417f-abb7-a059679d5b8c
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

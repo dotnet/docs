@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "security credentials, adding to SOAP messages"
   - "WCF, security"
 ms.assetid: 10f51bee-5f92-4c1a-9126-fa5418535d8f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

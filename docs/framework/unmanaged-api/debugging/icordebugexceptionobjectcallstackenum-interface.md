@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugExceptionObjectCallStackEnum interface [.NET Framework debugging]"
 ms.assetid: 39dffa18-c71b-48c4-b11d-e814631ab1e9
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

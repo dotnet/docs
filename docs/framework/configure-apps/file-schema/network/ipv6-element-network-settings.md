@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "<ipv6> element"
   - "ipv6 element"
 ms.assetid: 10b79aef-327b-4718-a892-e11f55e4d169
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "mcleblanc"
 ms.author: "markl"
@@ -39,7 +37,6 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 ## Syntax  
   
 ```  
-  
       <ipv6  
   enabled="true|false"  
 /ipv6>  

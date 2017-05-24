@@ -13,8 +13,6 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: 7865d171-cd1e-430a-8421-39cc13541d1b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ Specifies the encoding and message versioning used for SOAP Message Transmission
 ## Syntax  
   
 ```  
-  
 <mtomMessageEncoding   
    maxBufferSize="Integer"  
       maxReadPoolSize="Integer"  

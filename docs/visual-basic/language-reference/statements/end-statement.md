@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "End statement"
   - "execution, stopping"
 ms.assetid: 0e64467c-0f34-4aab-9ddd-43f8b9d55d90
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

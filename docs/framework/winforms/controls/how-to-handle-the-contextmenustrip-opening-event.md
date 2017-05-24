@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "event handling, context menus"
   - "shortcut menus, event handling"
 ms.assetid: b661b3dd-7815-4cc2-a1aa-a9a391ab3427
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

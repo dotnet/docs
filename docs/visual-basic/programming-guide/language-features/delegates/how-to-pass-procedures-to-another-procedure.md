@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "AddressOf operator"
   - "delegates [Visual Basic], passing procedures"
 ms.assetid: 5adbba15-5a1d-413f-ab3e-3ff6cc0a4669
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

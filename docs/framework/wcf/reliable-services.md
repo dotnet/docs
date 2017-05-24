@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Windows Communication Foundation [WCF], reliable sessions"
   - "service contracts [WCF], reliable services"
 ms.assetid: 07814ed0-0775-47f2-987b-d8134fdd5099
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

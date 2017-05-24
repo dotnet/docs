@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "controls [WPF], ComboBox"
   - "ComboBox control [WPF]"
 ms.assetid: fe0c2f62-fec2-4c41-a37e-5773d284170c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 73
 author: dotnet-bot
 ms.author: dotnetcontent

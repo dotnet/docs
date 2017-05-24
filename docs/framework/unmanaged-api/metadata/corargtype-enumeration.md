@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorArgType enumeration [.NET Framework metadata]"
 ms.assetid: 3c1cb268-57a0-4664-91c7-f6908ff29e32
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

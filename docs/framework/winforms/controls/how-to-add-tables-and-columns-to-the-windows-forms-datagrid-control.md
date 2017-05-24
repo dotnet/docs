@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "tables [Windows Forms], adding to DataGrid control"
   - "DataGrid control [Windows Forms], adding tables and columns"
 ms.assetid: 2fe661b9-aa06-49b9-a314-a0d3cbfdcb4d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -41,13 +39,11 @@ manager: "wpickett"
     ```vb  
     Dim ts1 As New DataGridTableStyle()  
     ts1.MappingName = "Customers"  
-  
     ```  
   
     ```csharp  
     DataGridTableStyle ts1 = new DataGridTableStyle();  
     ts1.MappingName = "Customers";  
-  
     ```  
   
     ```cpp  
@@ -61,14 +57,12 @@ manager: "wpickett"
     Dim myDataCol As New DataGridBoolColumn()  
     myDataCol.HeaderText = "My New Column"  
     myDataCol.MappingName = "Current"  
-  
     ```  
   
     ```csharp  
     DataGridBoolColumn myDataCol = new DataGridBoolColumn();  
     myDataCol.HeaderText = "My New Column";  
     myDataCol.MappingName = "Current";  
-  
     ```  
   
     ```cpp  
@@ -81,12 +75,10 @@ manager: "wpickett"
   
     ```vb  
     ts1.GridColumnStyles.Add(myDataCol)  
-  
     ```  
   
     ```csharp  
     ts1.GridColumnStyles.Add(myDataCol);  
-  
     ```  
   
     ```cpp  
@@ -97,12 +89,10 @@ manager: "wpickett"
   
     ```vb  
     DataGrid1.TableStyles.Add(ts1)  
-  
     ```  
   
     ```csharp  
     dataGrid1.TableStyles.Add(ts1);  
-  
     ```  
   
     ```cpp  

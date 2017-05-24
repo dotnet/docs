@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "operators [Visual Basic], Boolean"
   - "Visual Basic code, expressions"
 ms.assetid: d3d90406-55c8-4404-8143-50fd7f0d0d1a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

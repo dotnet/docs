@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "tasks, how to traverse a tree"
 ms.assetid: 4265d169-6c69-4f36-b10d-b7ae7f72f4df
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

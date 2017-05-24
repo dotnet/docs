@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "reflection, adding event-handler delegates"
   - "delegates [.NET Framework], adding event handlers with reflection"
 ms.assetid: 076ee62d-a964-449e-a447-c31b33518b81
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

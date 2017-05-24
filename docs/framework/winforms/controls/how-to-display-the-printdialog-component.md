@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "PrintDialog component [Windows Forms], displaying"
   - "printing [Windows Forms], displaying print dialog box"
 ms.assetid: 745a8db7-0526-4b21-b09d-18e13ed32014
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

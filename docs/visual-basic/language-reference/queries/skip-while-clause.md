@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Skip While clause"
   - "queries [Visual Basic], Skip While"
 ms.assetid: 5dee8350-7520-4f1a-b00d-590cacd572d6
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

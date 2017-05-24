@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "nodes [XAML Services], XAML node stream"
   - "XAML [XAML Services], XAML node streams"
 ms.assetid: 7c11abec-1075-474c-9d9b-778e5dab21c3
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: "wadepickett"
 ms.author: "wpickett"

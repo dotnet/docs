@@ -31,8 +31,6 @@ helpviewer_keywords:
   - "degrees"
   - "arccosine function"
 ms.assetid: 63e449d8-9444-44fb-8db1-6d9cf346e2aa
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

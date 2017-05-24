@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "Reset method"
 ms.assetid: 6f3255f0-90e0-4736-b184-c1d3b8387bd3
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

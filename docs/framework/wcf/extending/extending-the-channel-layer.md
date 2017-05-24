@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "extending channels [WCF]"
 ms.assetid: 4238db74-2fb6-4dc8-a326-f58527230810
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"

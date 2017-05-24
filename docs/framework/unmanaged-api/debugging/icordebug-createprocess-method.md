@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebug::CreateProcess method [.NET Framework debugging]"
   - "CreateProcess method, ICorDebugProcess interface [.NET Framework debugging]"
 ms.assetid: b6128694-11ed-46e7-bd4e-49ea1914c46a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 21

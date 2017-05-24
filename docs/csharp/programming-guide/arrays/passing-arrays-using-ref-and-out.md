@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "arrays [C#], passing using ref and out"
 ms.assetid: 6a2b261e-a1cc-49a6-b4f0-6cacae385a1e
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

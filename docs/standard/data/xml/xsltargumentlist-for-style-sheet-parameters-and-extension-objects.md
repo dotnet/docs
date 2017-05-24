@@ -14,8 +14,6 @@ dev_langs:
   - "C++"
   - "jsharp"
 ms.assetid: de2f0dce-6b98-4908-bba7-ed150cc50355
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
@@ -104,7 +102,6 @@ Public class Sample
   
   End Sub  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -257,7 +254,6 @@ Public Class Sample
     End Function  
   End Class  
 End Class  
-  
 ```  
   
 ```csharp  

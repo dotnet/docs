@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "validating numeric input [C#]"
   - "strings [C#], numeric"
 ms.assetid: a4e84e10-ea0a-489f-a868-503dded9d85f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"

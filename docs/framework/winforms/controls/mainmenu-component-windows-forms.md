@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "MainMenu control [Windows Forms]"
 ms.assetid: 7cd22f29-828b-42e8-9c88-f08aa4533850
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

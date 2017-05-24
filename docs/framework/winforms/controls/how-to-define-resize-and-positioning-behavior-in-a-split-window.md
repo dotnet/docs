@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "splitter windows, resizing"
   - "SplitContainer control [Windows Forms], resizing"
 ms.assetid: 9bf73f36-ed2d-4a02-b15a-0770eff4fdfa
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -50,7 +48,6 @@ The panels of the <xref:System.Windows.Forms.SplitContainer> control lend themse
         splitSnapper.Dock = DockStyle.Fill  
         splitSnapper.Parent = me  
     End Sub  
-  
     ```  
   
     ```csharp  

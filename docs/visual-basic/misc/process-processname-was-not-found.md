@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrProcessNotFound"
 ms.assetid: d6095a7f-6168-4b00-8639-11fb64dd2ebe
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

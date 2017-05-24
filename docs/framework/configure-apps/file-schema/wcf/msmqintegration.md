@@ -13,8 +13,6 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: ab677405-1ffe-457a-803f-00c1770e51e2
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ Specifies a MSMQ transport for custom binding.
 ## Syntax  
   
 ```  
-  
 <msmqIntegration>  
         customDeadLetterQueue="Uri"  
         deadLetterQueue="Custom/None/System"  

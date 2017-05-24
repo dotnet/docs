@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrMissingMember_ReadOnlyField2"
 ms.assetid: fb51f54b-f12d-4aea-9a6e-6e070721c010
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], ranges"
   - "operators [Visual Basic], result data types"
 ms.assetid: 9d524533-e1a1-4aa8-b1b8-622068173d06
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "data contracts [WCF], collection types"
   - "collection types [WCF]"
 ms.assetid: 9b45b28e-0a82-4ea3-8c33-ec0094aff9d5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "Erikre"
 ms.author: "erikre"
@@ -256,7 +254,6 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
 ```  
 svcutil.exe MyService.wsdl MyServiceSchema.xsd /r:C:\full_path_to_system_dll\System.dll /ct:System.Collections.Generic.List`1  
-  
 ```  
   
  When importing any collection, this list of referenced collection types is scanned, and the best-matching collection is used if one is found, either as a data member type (for non-customized collections) or as a base type to derive from (for customized collections). Dictionaries are only matched against dictionaries, while lists are matched against lists.  

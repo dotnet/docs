@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "graphics, rendering tiers"
   - "software rendering pipeline"
 ms.assetid: bfb89bae-7aab-4cac-a26c-a956eda8fce2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

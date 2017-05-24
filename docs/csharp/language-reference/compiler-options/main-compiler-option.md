@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "main compiler option [C#]"
   - "/main compiler option [C#]"
 ms.assetid: 975cf4d5-36ac-4530-826c-4aad0c7f2049
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "gradients, system colors in"
   - "system colors in gradients"
 ms.assetid: 11942e7e-6300-4b50-8ed1-f50e8d20e7d2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

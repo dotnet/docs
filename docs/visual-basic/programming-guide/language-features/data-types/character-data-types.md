@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Char data type, character data types"
   - "data types [Visual Basic], choosing"
 ms.assetid: 902479ef-1679-47fc-9911-0c1c5008226c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

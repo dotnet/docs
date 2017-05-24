@@ -26,8 +26,6 @@ helpviewer_keywords:
   - "security-neutral code"
   - "security [.NET Framework], coding guidelines"
 ms.assetid: 4f882d94-262b-4494-b0a6-ba9ba1f5f177
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

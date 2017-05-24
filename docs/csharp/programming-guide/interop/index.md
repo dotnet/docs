@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "platform invoke, accessing APIs with C#"
   - "C# language, interoperability"
 ms.assetid: 238bb95a-e962-4026-bbd5-197055bdb8ee
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 31
 author: "BillWagner"
 ms.author: "wiwagn"

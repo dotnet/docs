@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "message boxes, opening"
   - "opening message boxes"
 ms.assetid: acaad17f-af43-4eca-a004-f1c9e7c6f292
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

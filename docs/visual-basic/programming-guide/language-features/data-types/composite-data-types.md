@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "classes [Visual Basic], composite types"
   - "types [Visual Basic], composite"
 ms.assetid: 62970f2e-52c0-4369-8963-613820f1f434
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

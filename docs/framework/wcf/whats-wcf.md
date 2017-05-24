@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "technology overview [WCF]"
   - "WCF [WCF], technology overview"
 ms.assetid: 40e1009d-ef15-450b-9848-62eabe5e5738
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 51
 author: "Erikre"
 ms.author: "erikre"

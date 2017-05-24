@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "<bypasslist>, clear element"
   - "bypasslist, clear element"
 ms.assetid: 301584ca-a914-4100-b180-3b288d3b099e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
@@ -42,9 +40,7 @@ Clears the proxy bypass list.
 ## Syntax  
   
 ```  
-  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  

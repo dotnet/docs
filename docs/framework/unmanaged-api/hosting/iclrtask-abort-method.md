@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRTask::Abort method [.NET Framework hosting]"
   - "Abort method, ICLRTask interface [.NET Framework hosting]"
 ms.assetid: b3594b5f-2e41-4e36-9096-3586276a138c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

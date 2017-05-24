@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "tracing [.NET Framework], trace listeners"
   - "logs, trace listeners"
 ms.assetid: 21726de1-61ee-4fdc-9dd0-3be49324d066
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

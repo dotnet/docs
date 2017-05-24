@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetSymAttribute method [.NET Framework debugging]"
   - "ISymUnmanagedReader::GetSymAttribute method [.NET Framework debugging]"
 ms.assetid: c675ce7e-76e7-45ff-8273-3b6489a2767c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

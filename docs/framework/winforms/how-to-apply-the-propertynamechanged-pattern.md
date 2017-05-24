@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "data binding, custom controls"
   - "PropertyNameChanged pattern, applying"
 ms.assetid: aa47ddf6-5223-40c4-833f-a78992194836
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

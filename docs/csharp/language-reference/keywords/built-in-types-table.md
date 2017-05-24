@@ -11,8 +11,6 @@ helpviewer_keywords:
   - "types [C#], built-in"
   - "built-in C# types"
 ms.assetid: 54f901f2-bf2f-472c-ae8d-73e8ecfc57fe
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

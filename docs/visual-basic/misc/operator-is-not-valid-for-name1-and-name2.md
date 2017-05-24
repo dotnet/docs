@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrNoValidOperator_TwoOperands"
 ms.assetid: b2b1e6ce-d262-4644-8085-e48a2e2f06a6
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

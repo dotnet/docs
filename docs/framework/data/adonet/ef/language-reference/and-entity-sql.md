@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: e7d24213-471d-4807-b85e-570375df89b5
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Returns `true` if both expressions are `true`; otherwise, `false` or `NULL`.
 ## Syntax  
   
 ```  
-  
 boolean_expression AND boolean_expression  
 or  
 boolean_expression && boolean_expression  

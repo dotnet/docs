@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e50c0ac5-f0df-4c90-b54b-fc602c1f84ea
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies a certificate to use when authenticating a service to the client.
 ## Syntax  
   
 ```  
-  
 <serviceCertificate />  
 ```  
   

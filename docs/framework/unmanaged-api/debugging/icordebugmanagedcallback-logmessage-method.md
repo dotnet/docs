@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugManagedCallback::LogMessage method [.NET Framework debugging]"
   - "LogMessage method [.NET Framework debugging]"
 ms.assetid: d218554a-bf42-4d88-833d-ede30de67a53
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

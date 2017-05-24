@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "MenuStrip control [Windows Forms], appending"
   - "MDI, merging menu items"
 ms.assetid: ab70c936-b452-4653-b417-17be57bb795b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "try/finally block"
   - "garbage collection, encapsulating resources"
 ms.assetid: 81b2cdb5-c91a-4a31-9c83-eadc52da5cf0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

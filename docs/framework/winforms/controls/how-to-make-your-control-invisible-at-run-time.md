@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], invisible"
   - "run time, making controls invisible"
 ms.assetid: 69eb2e72-32f5-4f79-a157-c2c5f60c1628
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -37,7 +35,6 @@ There are times when you might want to create a user control that is invisible a
     Me.Visible = False  
     ' To set the Visible property from another object.  
     myControl1.Visible = False  
-  
     ```  
   
     ```csharp  
@@ -45,7 +42,6 @@ There are times when you might want to create a user control that is invisible a
     this.Visible = false;  
     // To set the Visible property from another object.  
     myControl1.Visible = false;  
-  
     ```  
   
 ## See Also  

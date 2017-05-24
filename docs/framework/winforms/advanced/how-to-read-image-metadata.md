@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "metadata, property item"
   - "metadata, reading image"
 ms.assetid: 72ec0b31-0be7-444a-9575-1dbcb864e0be
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

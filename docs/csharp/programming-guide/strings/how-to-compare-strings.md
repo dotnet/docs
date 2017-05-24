@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "strings [C#], comparison"
   - "comparing strings [C#]"
 ms.assetid: e1268e28-ee98-4695-98e9-92280f1c33c0
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"

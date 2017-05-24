@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "AppDomainCreationStarted method [.NET Framework profiling]"
   - "ICorProfilerCallback::AppDomainCreationStarted method [.NET Framework profiling]"
 ms.assetid: b2a8240b-07fe-4859-bb2b-7d3adbfa0a9f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

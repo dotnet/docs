@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "MALLOC_TYPE Enumeration"
 ms.assetid: c02476f9-23a2-4af7-9282-aa9c42c7429b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

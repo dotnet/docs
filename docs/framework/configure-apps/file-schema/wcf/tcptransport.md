@@ -13,8 +13,6 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: 8fcd18c1-9958-42e7-b442-7903f7bdb563
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 ## Syntax  
   
 ```  
-  
 <tcpTransport   
       channelInitializationTimeout="TimeSpan"   
       connectionBufferSize="Integer"   

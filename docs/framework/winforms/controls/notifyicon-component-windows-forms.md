@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "NotifyIcon component"
   - "SysTray icons"
 ms.assetid: 20312268-1d67-494a-8601-5c43b7f1b513
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

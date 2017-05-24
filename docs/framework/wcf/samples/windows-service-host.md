@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "NT Service"
   - "NT Service Host Sample [Windows Communication Foundation]"
 ms.assetid: 1b2f45c5-2bed-4979-b0ee-8f9efcfec028
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 40
 author: "Erikre"
 ms.author: "erikre"
@@ -60,7 +58,6 @@ This sample demonstrates a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md
     ...  
   </service>  
 </services>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in both the service and client console windows. Press ENTER in each console window to shut down the service and client.  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataEmit2::SaveDelta method [.NET Framework metadata]"
   - "SaveDelta method [.NET Framework metadata]"
 ms.assetid: b95739fe-d2fa-4776-ae0d-31d9707ef799
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

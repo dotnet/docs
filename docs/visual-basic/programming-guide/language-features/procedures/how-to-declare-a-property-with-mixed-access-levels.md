@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "properties [Visual Basic], access levels"
   - "Property statement, declaring mixed access levels"
 ms.assetid: fdbb2d97-279a-4956-b26c-cbdfbc34915a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

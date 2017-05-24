@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "printing XPS files programmatically"
   - "XPS files, printing programmatically"
 ms.assetid: 0b1c0a3f-b19e-43d6-bcc9-eb3ec4e555ad
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

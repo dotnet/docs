@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, merge options"
 ms.assetid: e8f7be3b-88de-4f33-ab14-dc008e76c1ba
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

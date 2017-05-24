@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "standard TimeSpan format strings"
   - "formatting [.NET Framework], time intervals"
 ms.assetid: 9f6c95eb-63ae-4dcc-9c32-f81985c75794
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

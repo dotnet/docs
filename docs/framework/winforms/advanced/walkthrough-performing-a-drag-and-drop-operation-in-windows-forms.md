@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Windows Forms, drag and drop operations"
   - "drag and drop, Windows Forms"
 ms.assetid: eb66f6bf-4a7d-4c2d-b276-40fefb2d3b6c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -43,7 +41,6 @@ To perform drag-and-drop operations within Windows-based applications you must h
     Private Sub Button1_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Button1.MouseDown  
        Button1.DoDragDrop(Button1.Text, DragDropEffects.Copy Or DragDropEffects.Move)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -53,7 +50,6 @@ To perform drag-and-drop operations within Windows-based applications you must h
        button1.DoDragDrop(button1.Text, DragDropEffects.Copy |   
           DragDropEffects.Move);  
     }  
-  
     ```  
   
     > [!NOTE]
@@ -78,7 +74,6 @@ To perform drag-and-drop operations within Windows-based applications you must h
          e.Effect = DragDropEffects.None  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -90,7 +85,6 @@ To perform drag-and-drop operations within Windows-based applications you must h
        else  
           e.Effect = DragDropEffects.None;  
     }  
-  
     ```  
   
     > [!NOTE]
@@ -104,7 +98,6 @@ To perform drag-and-drop operations within Windows-based applications you must h
     Private Sub TextBox1_DragDrop(ByVal sender As Object, ByVal e As System.Windows.Forms.DragEventArgs) Handles TextBox1.DragDrop  
        TextBox1.Text = e.Data.GetData(DataFormats.Text).ToString  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -113,7 +106,6 @@ To perform drag-and-drop operations within Windows-based applications you must h
     {  
        textBox1.Text = e.Data.GetData(DataFormats.Text).ToString();  
     }  
-  
     ```  
   
     > [!NOTE]

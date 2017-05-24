@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Enter key, detecting"
   - "keys, Enter"
 ms.assetid: a66f39d2-ef4a-43a5-b454-a4ea0fe88655
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

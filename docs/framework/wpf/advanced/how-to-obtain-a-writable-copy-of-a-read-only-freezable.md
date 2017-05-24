@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "cloning Freezable objects"
   - "Freezable objects, modifiable clones"
 ms.assetid: d028de61-bbe9-4d62-b656-8fe3b1b2ca24
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

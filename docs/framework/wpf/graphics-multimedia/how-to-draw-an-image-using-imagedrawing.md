@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "classes, ImageDrawing"
   - "images, drawing"
 ms.assetid: df28ab41-25fb-4ab3-b51d-7f695b24f55e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Windows Forms controls, adding to form"
   - "controls [Windows Forms], adding"
 ms.assetid: 2af86001-9d62-4154-87fb-66db2c3cd9fd
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -67,7 +65,6 @@ Most forms are designed by adding controls to the surface of the form to define 
        MyText.Location = New Point(25, 25)  
        Me.Controls.Add(MyText)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -77,7 +74,6 @@ Most forms are designed by adding controls to the surface of the form to define 
        myText.Location = new Point(25,25);  
        this.Controls.Add (myText);  
     }  
-  
     ```  
   
     ```cpp  

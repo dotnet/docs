@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "CanOverflow property"
 ms.assetid: fa10e0ad-4cbf-4c0d-9082-359c2f855d4e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -43,13 +41,11 @@ When all the items on a <xref:System.Windows.Forms.ToolStrip> control do not fit
     ```vb  
     toolStripTextBox1.Overflow = _  
     System.Windows.Forms.ToolStripItemOverflow.Never  
-  
     ```  
   
     ```csharp  
     toolStripTextBox1.Overflow = _  
     System.Windows.Forms.ToolStripItemOverflow.Never;  
-  
     ```  
   
 ## See Also  

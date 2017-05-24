@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "XAML, StaticResource markup extension"
   - "StaticResource markup extensions"
 ms.assetid: 97af044c-71f1-4617-9a94-9064b68185d2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

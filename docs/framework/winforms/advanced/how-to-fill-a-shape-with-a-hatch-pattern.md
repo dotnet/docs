@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "shapes, filling with patterns"
   - "brushes, using hatch brushes"
 ms.assetid: 9c8300ff-187b-404f-af1f-ebd499f5b16f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugVariableHomeEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugVariableHomeEnum interface [.NET Framework debugging]"
 ms.assetid: eb9ea96c-5b58-4655-8104-094fc8b393b8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7
@@ -38,13 +36,11 @@ Gets the specified number of [ICorDebugVariableHome](../../../../docs/framework/
 ## Syntax  
   
 ```  
-  
 HRESULT Next(  
     [in] ULONG celt,  
     [out, size_is(celt), length_is(*pceltFetched)] ICorDebugVariableHome *homes[],  
     [out] ULONG *pceltFetched  
 );  
-  
 ```  
   
 #### Parameters  

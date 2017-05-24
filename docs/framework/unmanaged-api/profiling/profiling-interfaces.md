@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "profiling interfaces [.NET Framework]"
   - "interfaces [.NET Framework profiling]"
 ms.assetid: d9303db8-e881-4217-91b7-8c7573c8ef9e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 31
 author: "mairaw"
 ms.author: "mairaw"

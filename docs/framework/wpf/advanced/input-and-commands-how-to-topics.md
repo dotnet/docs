@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "input API"
   - "commanding"
 ms.assetid: a5c266b6-969c-4049-a471-ddca7b10fb89
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 76
 author: dotnet-bot
 ms.author: dotnetcontent

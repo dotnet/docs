@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetVersionNumber method, ICorDebugCode interface [.NET Framework debugging]"
   - "ICorDebugCode::GetVersionNumber method [.NET Framework debugging]"
 ms.assetid: c8e02518-679f-4e9f-8a28-ba4a89a3876f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

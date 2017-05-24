@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], managed debugging assistants"
   - "MDAs (managed debugging assistants), asynchronous thread aborts"
 ms.assetid: 9ebe40b2-d703-421e-8660-984acc42bfe0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

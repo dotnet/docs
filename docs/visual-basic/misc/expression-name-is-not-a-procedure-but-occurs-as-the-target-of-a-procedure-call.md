@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrExpressionNotProcedure"
 ms.assetid: 59169d44-a279-4aca-8f14-fba8d69d8959
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

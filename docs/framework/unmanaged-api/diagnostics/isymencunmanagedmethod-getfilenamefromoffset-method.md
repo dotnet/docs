@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetFileNameFromOffset method [.NET Framework debugging]"
   - "ISymENCUnmanagedMethod::GetFileNameFromOffset method [.NET Framework debugging]"
 ms.assetid: 00e2e194-12f5-436e-a997-2b9d3e844d4f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

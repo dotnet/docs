@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Microsoft Annotations Framework"
   - "documents, annotations"
 ms.assetid: a893442b-e220-4603-bf6a-b01fefcb4b37
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

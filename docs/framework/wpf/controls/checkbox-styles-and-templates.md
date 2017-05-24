@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "CheckBox [WPF], styles and templates"
   - "styles [WPF], CheckBox"
 ms.assetid: bfdaec96-d101-4d3d-864d-c27e6b621d03
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

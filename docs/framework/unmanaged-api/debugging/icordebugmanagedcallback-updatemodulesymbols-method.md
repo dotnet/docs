@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "UpdateModuleSymbols method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::UpdateModuleSymbols method [.NET Framework debugging]"
 ms.assetid: 0863f644-58e8-45a0-b0c3-a28e99b20938
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 17

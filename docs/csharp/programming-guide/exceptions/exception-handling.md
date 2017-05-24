@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "exception handling [C#], about exception handling"
   - "exceptions [C#], handling"
 ms.assetid: b4e4ecf2-b907-4e58-891f-2563762258e9
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

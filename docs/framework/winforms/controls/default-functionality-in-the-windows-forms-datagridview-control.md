@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "data grids, default functionality in DataGridView control"
   - "DataGridView control [Windows Forms], default functionality"
 ms.assetid: 4405f697-cad1-4839-9bcd-8ddb09d9f00e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

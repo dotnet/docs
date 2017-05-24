@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "EClrEvent enumeration [.NET Framework hosting]"
 ms.assetid: 7c36a7c2-75a2-4971-bc23-abf54c812154
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

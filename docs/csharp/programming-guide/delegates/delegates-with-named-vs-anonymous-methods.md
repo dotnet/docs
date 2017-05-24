@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "delegates [C#], with named vs. anonymous methods"
   - "methods [C#], in delegates"
 ms.assetid: 98fa8c61-66b6-4146-986c-3236c4045733
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

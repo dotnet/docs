@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "left shift operator (<<) [C#]"
   - "<< operator [C#]"
 ms.assetid: a654eb56-1ff7-4bf3-9064-b631be0cdccc
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 18
 author: "BillWagner"
 ms.author: "wiwagn"

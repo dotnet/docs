@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "animation, properties, with AnimationClocks"
   - "AnimationClocks"
 ms.assetid: e6542021-714c-4675-9567-04f1c7380834
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

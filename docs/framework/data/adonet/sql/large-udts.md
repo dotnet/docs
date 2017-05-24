@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 420ae24e-762b-4e09-b4c3-2112c470ee49
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 6
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -134,7 +132,6 @@ Using connection As New SqlConnection( _
     End While  
     reader.Close()  
 End Using  
-  
 ```  
   
 ## See Also  

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "WindowsFormsHost keyboard and messages"
   - "modeless dialog boxes [WPF]"
 ms.assetid: 0eb6f137-f088-4c5e-9e37-f96afd28f235
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IHostPolicyManager::OnTimeout method [.NET Framework hosting]"
   - "OnTimeout method [.NET Framework hosting]"
 ms.assetid: 0a313b51-5e4d-4714-a86b-af75cf3902e6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

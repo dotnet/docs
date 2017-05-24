@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "pens, creating"
   - "Pen object"
 ms.assetid: 7fbea8b7-7ac1-4413-9c17-733a850381e3
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "x:Shared attribute [XAML Services]"
   - "Shared attribute in XAML [XAML Services]"
 ms.assetid: c8cff434-2785-405f-9f95-16deb34c9e64
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: "wadepickett"
 ms.author: "wpickett"

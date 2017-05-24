@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "ToolStripItem class, detecting mouse movement"
   - "mouse, detecting movement on toolbars"
 ms.assetid: d38b5082-aba7-4f6c-841b-bd9714e307fd
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Font dialog box, displaying"
   - "fonts, selecting"
 ms.assetid: 35692c1b-0937-4b7a-9207-1ae6bdc244a0
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -48,7 +46,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
           TextBox1.Font = FontDialog1.Font  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -59,7 +56,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
           textBox1.Font = fontDialog1.Font;  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -78,7 +74,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
-  
     ```  
   
     ```cpp  

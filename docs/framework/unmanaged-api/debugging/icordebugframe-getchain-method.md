@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugFrame::GetChain method [.NET Framework debugging]"
   - "GetChain method [.NET Framework debugging]"
 ms.assetid: e28e51d3-8f73-494f-bcd4-48bac239fbe1
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

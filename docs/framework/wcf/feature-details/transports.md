@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "WCF, transports"
   - "Windows Communication Foundation, transports"
 ms.assetid: 005c894b-af70-48aa-a1c1-c99338083c27
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "Erikre"
 ms.author: "erikre"

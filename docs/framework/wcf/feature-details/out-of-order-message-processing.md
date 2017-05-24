@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 33fc62a5-5d59-461c-a37a-0e1b51ac763d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ WorkflowService service = new WorkflowService
     Body = workflow,  
     AllowBufferedReceive = true  
 };  
-  
 ```  
   
  You can also apply the `AllowBufferedReceive` attribute to a workflow service in XAML as shown in the following example.  

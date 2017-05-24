@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "data binding, converting bound data"
   - "binding data, converting bound data"
 ms.assetid: b00aaa19-c6df-4c3b-a9fd-88a0b488df2b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "task_core_add_class_handling_routed_event"
   - "class handlers, routed events"
 ms.assetid: 15b7b06c-9112-4ee5-b30a-65d10c5c5df6
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

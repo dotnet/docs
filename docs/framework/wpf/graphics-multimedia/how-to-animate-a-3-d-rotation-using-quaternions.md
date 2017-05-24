@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "animation, 3-D translations, with quaternions"
   - "3-D translations, animating, with quaternions"
 ms.assetid: adca9cb1-066b-4de8-abbb-6b4007579ee7
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

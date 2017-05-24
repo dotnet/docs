@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "variables [Visual Basic], object"
   - "object variables, determining type"
 ms.assetid: 6f6a138d-58a4-40d1-9f4e-0a3c598eaf81
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

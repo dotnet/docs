@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Shape objects"
   - "Shape types"
 ms.assetid: 91a371f1-81e4-40da-ad61-ec24167152e6
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 71
 author: dotnet-bot
 ms.author: dotnetcontent

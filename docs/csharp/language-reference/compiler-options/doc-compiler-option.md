@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "-doc compiler option [C#]"
   - "/doc compiler option [C#]"
 ms.assetid: 849eea59-c936-4311-bad8-d07404480f2a
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

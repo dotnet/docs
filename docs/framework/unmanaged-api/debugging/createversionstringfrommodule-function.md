@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "Silverlight, debugging"
   - "CreateVersionStringFromModule function"
 ms.assetid: 3d2fe9bd-75ef-4364-84a6-da1e1994ac1a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

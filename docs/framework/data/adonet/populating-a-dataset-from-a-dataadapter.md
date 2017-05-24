@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3fa0ac7d-e266-4954-bfac-3fbe2f913153
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 6
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -95,7 +93,6 @@ For Each pRow In customerOrders.Tables("Customers").Rows
     Console.WriteLine(vbTab & cRow("OrderID").ToString())  
   Next  
 Next  
-  
 ```  
   
 ```csharp  

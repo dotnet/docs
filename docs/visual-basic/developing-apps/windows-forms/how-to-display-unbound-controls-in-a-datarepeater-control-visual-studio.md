@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "DataRepeater"
   - "displaying unbound data"
 ms.assetid: f234fa40-5a13-4209-930e-7c5f81e86e66
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugMDA::GetFlags method [.NET Framework debugging]"
   - "GetFlags method [.NET Framework debugging]"
 ms.assetid: 87ce7c5b-fd82-453e-bf55-c8a32150b183
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

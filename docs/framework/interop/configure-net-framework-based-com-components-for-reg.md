@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "registration-free COM interop, configuring .NET-based components"
   - "activation, registration-free"
 ms.assetid: 32f8b7c6-3f73-455d-8e13-9846895bd43b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

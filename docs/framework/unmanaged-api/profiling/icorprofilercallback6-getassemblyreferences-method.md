@@ -19,8 +19,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 8b391afb-d79f-41bd-94ce-43ce62c6b5fc
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10
@@ -36,11 +34,9 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetAssemblyReferences(        [in, string] const WCHAR* wszAssemblyPath,  
         [in] ICorProfilerAssemblyReferenceProvider* pAsmRefProvider  
 );  
-  
 ```  
   
 #### Parameters  

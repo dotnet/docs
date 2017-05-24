@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "support, Visual Studio sites"
   - "Visual Basic, videos"
 ms.assetid: 9bfb42e9-327f-439b-935e-8884f6aca80c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

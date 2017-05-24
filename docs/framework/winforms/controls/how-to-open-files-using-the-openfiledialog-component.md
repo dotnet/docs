@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "OpenFile method, OpenFileDialog component"
   - "files, opening with OpenFileDialog component"
 ms.assetid: 9d88367a-cc21-4ffd-be74-89fd63767d35
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -53,7 +51,6 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
          sr.Close()  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -67,7 +64,6 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
           sr.Close();  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -89,7 +85,6 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
-  
     ```  
   
     ```cpp  
@@ -127,7 +122,6 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
          Me.Cursor = New Cursor(openFileDialog1.OpenFile())  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -147,7 +141,6 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
           this.Cursor = new Cursor(openFileDialog1.OpenFile());  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -172,14 +165,12 @@ The <xref:System.Windows.Forms.OpenFileDialog> component allows users to browse 
                 openFileDialog1->OpenFile());  
           }  
        }  
-  
     ```  
   
      ([!INCLUDE[csprcs](../../../../includes/csprcs-md.md)] and [!INCLUDE[vcprvc](../../../../includes/vcprvc-md.md)]) Place the following code in the form's constructor to register the event handler.  
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
-  
     ```  
   
     ```cpp  

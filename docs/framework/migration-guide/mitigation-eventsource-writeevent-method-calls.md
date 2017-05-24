@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 327a9fdb-ba8e-40f7-89e5-4c89b46e594f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -24,13 +22,11 @@ The [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] enforces a contract b
  An ETW event method defined in the following way breaks the contract:  
   
 ```  
-  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info2(string message)  
 {  
    base.WriteEvent(2, message, "-");  
 }  
-  
 ```  
   
  When this contract is violated, an <xref:System.IndexOutOfRangeException> exception is thrown at run time if an <xref:System.Diagnostics.Tracing.EventListener> object reads <xref:System.Diagnostics.Tracing.EventSource> data in process.  
@@ -38,13 +34,11 @@ public void Info2(string message)
  The definition for this ETW event method should follow this pattern:  
   
 ```  
-  
 [Event(2, Level = EventLevel.Informational)]  
 public void Info2(string message)  
 {  
    base.WriteEvent(2, message);  
 }  
-  
 ```  
   
 ## Mitigation  
@@ -53,7 +47,6 @@ public void Info2(string message)
  You can minimize the amount of code that you have to change by defining two methods for calling the <xref:System.Diagnostics.Tracing.EventSource.WriteEvent%2A> method, as follows:  
   
 ```  
-  
 [NonEvent]  
 public void Info2(string message)  
 {  
@@ -64,7 +57,6 @@ public void Info2Internal(string message, string prefix)
 {  
    WriteEvent(2, message, prefix);  
 }  
-  
 ```  
   
 ## See Also  

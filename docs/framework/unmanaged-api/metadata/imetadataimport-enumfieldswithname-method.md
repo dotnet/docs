@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataImport::EnumFieldsWithName method [.NET Framework metadata]"
   - "EnumFieldsWithName method [.NET Framework metadata]"
 ms.assetid: 42145e8d-000f-4d0b-ae43-c08201190fa2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

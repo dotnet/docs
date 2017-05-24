@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "claims [WCF], comparing"
   - "claims [WCF]"
 ms.assetid: 0c4ec84d-53df-408f-8953-9bc437f56c28
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"

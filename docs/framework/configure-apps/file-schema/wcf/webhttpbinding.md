@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 84179d77-825d-44b9-895a-ab08e7aa044d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ Defines a binding element that is used to configure endpoints for [!INCLUDE[indi
 ## Syntax  
   
 ```  
-  
 <webHttpBinding>  
     <binding   
         allowCookies="Boolean"  

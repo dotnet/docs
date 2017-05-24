@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "claims [WCF], denying access to resources"
 ms.assetid: 145ebb41-680e-4256-b14c-1efb4af1e982
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

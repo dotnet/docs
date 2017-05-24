@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Imports statement [Visual Basic]"
   - "namespaces [Visual Basic], importing"
 ms.assetid: 1f4d50a6-08c7-4c2e-8206-ccae35fcd1b4
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

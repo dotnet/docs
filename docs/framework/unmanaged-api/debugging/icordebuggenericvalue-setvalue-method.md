@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugGenericValue::SetValue method [.NET Framework debugging]"
   - "SetValue method, ICorDebugGenericValue interface [.NET Framework debugging]"
 ms.assetid: ed4c6458-0435-44fc-8e78-8ba00be362f2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

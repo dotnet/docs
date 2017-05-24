@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorProfilerCallback4 interface [.NET Framework profiling]"
 ms.assetid: 665f3cfc-cd6f-4880-906c-ea65ad384783
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

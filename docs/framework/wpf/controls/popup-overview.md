@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "controls, Popup"
   - "Popup control [WPF], about Popup control"
 ms.assetid: 774f53ca-bff8-470e-9ce9-3928b4cf3d4c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 34
 author: dotnet-bot
 ms.author: dotnetcontent

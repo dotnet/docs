@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "opening dialog boxes"
   - "dialog boxes, opening"
 ms.assetid: 6b1557d2-da98-4ef4-9f68-4089f04ab9ea
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

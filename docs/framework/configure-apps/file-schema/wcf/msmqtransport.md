@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 19d89f35-76ac-49dc-832b-e8bec2d5e33b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Causes a channel to transfers messages on the MSMQ transport when it is included
 ## Syntax  
   
 ```  
-  
 <msmqTransport>  
     customDeadLetterQueue="Uri"  
     deadLetterQueue="Custom/None/System"  

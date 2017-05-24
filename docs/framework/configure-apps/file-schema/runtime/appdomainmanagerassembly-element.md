@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "<appDomainManagerAssembly> element"
   - "appDomainManagerAssembly element"
 ms.assetid: c7c56e39-a700-44f5-b94e-411bfce339d9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

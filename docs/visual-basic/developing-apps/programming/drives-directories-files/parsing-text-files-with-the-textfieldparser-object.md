@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "I/O [Visual Basic], parsing files"
   - "files, parsing"
 ms.assetid: fc31d6e6-af0c-403f-8a00-d556b2c57567
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

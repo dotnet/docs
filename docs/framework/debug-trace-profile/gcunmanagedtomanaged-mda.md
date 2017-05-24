@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "garbage collection, run-time errors"
   - "unmanaged to managed garbage collection"
 ms.assetid: 103eb3a3-1cf0-4406-8a9a-a7798fdc22d1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"

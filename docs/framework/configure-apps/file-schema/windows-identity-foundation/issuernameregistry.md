@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 58b39d12-c953-40c4-88af-d7eb3343ca28
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -82,7 +80,6 @@ Configures the issuer name registry that is used by handlers in the token handle
     <add thumbprint="9B74CB … 1EF40D0" name="LocalSTS" />  
   </trustedIssuers>  
 </issuerNameRegistry>  
-  
 ```  
   
 ## See Also  

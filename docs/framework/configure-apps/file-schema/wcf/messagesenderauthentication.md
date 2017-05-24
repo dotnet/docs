@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ea62fc06-55fb-42e0-aa2b-8867bdf4b415
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Specifies authentication settings for peer certificate used by a message sender.
 ## Syntax  
   
 ```  
-  
 <messageSenderAuthentication  
    customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
    certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetILMap method [.NET Framework debugging]"
   - "ICorDebugEditAndContinueSnapshot::SetILMap method [.NET Framework debugging]"
 ms.assetid: 26c1bf4b-75ff-4c32-872c-3078ccdde04f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

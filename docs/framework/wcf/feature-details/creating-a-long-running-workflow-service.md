@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4c39bd04-5b8a-4562-a343-2c63c2821345
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -144,7 +142,6 @@ This topic describes how to create a long-running workflow service. Long running
     ```xml  
     <sqlWorkflowInstanceStore connectionString="Data Source=your-machine\SQLExpress;Initial Catalog=SQLPersistenceStore;Integrated Security=True;Asynchronous Processing=True" instanceEncodingOption="None" instanceCompletionAction="DeleteAll" instanceLockedExceptionAction="BasicRetry" hostLockRenewalPeriod="00:00:30" runnableInstancesDetectionPeriod="00:00:02" />  
               <workflowIdle timeToUnload="0"/>  
-  
     ```  
   
     > [!WARNING]
@@ -189,7 +186,6 @@ This topic describes how to create a long-running workflow service. Long running
        string orderResult = addProxy.AddItem(item);  
        Console.WriteLine("Service returned: " + orderResult);  
     }  
-  
     ```  
   
 5.  Build the solution and run the `OrderClient` application. The client will display the following text:  

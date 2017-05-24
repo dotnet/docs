@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "styles [WPF], DatePicker"
   - "states [WPF], DatePicker"
 ms.assetid: c430a657-692f-44bd-a549-2341f92d6115
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

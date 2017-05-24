@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], toolbars"
   - "toolbars [Windows Forms], aligning items"
 ms.assetid: cd483466-0f49-43df-addf-e2b5fcd64027
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -34,12 +32,10 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
   
     ```vb  
     ToolStripButton1.AutoSize = False  
-  
     ```  
   
     ```csharp  
     toolStripButton1.AutoSize = false;  
-  
     ```  
   
 2.  Set the <xref:System.Windows.Forms.ToolStripItem.Size%2A> property the way you want for the associated <xref:System.Windows.Forms.ToolStripItem>.  
@@ -53,13 +49,11 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     ```vb  
     ToolStripTextBox1.Margin = New System.Windows.Forms.Padding _  
         (3, 0, 3, 0)  
-  
     ```  
   
     ```csharp  
     toolStripTextBox1.Margin = new System.Windows.Forms.Padding   
         (3, 0, 3, 0);  
-  
     ```  
   
 ### To align a ToolStripItem to the right side of the ToolStrip  
@@ -69,13 +63,11 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     ```vb  
     ToolStripSplitButton1.Alignment = _  
         System.Windows.Forms.ToolStripItemAlignment.Right  
-  
     ```  
   
     ```csharp  
     toolStripSplitButton1.Alignment =   
         System.Windows.Forms.ToolStripItemAlignment.Right;  
-  
     ```  
   
 ### To arrange ToolStrip items on the ToolStrip  
@@ -85,13 +77,11 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
     ```vb  
     ToolStripDropDown1.LayoutStyle = _  
         System.Windows.Forms.ToolStripLayoutStyle.Flow  
-  
     ```  
   
     ```csharp  
     toolStripDropDown1.LayoutStyle =   
         System.Windows.Forms.ToolStripLayoutStyle.Flow;  
-  
     ```  
   
 ## See Also  

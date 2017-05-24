@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "fusion enumerations [.NET Framework]"
   - "enumerations [.NET Framework fusion]"
 ms.assetid: 5817b4bc-b0ba-4b2f-a11c-a03dd8cb8f84
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

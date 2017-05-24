@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "report access violation on Com release"
   - "reference counting errors"
 ms.assetid: a2b86b63-08b2-4943-b344-3c2cf46ccd31
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

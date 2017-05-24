@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Freezable elements"
   - "PresentationOptions prefix"
 ms.assetid: 391032dd-2fba-4804-bb8a-3b071797a9f4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

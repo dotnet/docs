@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "tables [.NET Framework], type conversions"
   - "data types [.NET Framework], converting"
 ms.assetid: 0ea65c59-85eb-4a52-94ca-c36d3bd13058
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

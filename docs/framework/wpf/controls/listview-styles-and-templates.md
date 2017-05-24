@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "ListView [WPF], styles and templates"
   - "templates [WPF], ListView"
 ms.assetid: d2387356-2171-4785-822a-7247e024b4ee
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

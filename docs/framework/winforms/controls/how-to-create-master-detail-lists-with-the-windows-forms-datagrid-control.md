@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "DataGrid control [Windows Forms], master-details lists"
   - "related tables, displaying in DataGrid control"
 ms.assetid: 20388c6a-94f9-4d96-be18-8c200491247f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -54,7 +52,6 @@ manager: "wpickett"
     ds.Relations.Add(myDataRelation)  
     GridOrders.SetDataBinding(ds, "Customers")  
     GridDetails.SetDataBinding(ds, "Customers.CustOrd")  
-  
     ```  
   
     ```csharp  
@@ -64,7 +61,6 @@ manager: "wpickett"
     ds.Relations.Add(myDataRelation);  
     GridOrders.SetDataBinding(ds,"Customers");  
     GridDetails.SetDataBinding(ds,"Customers.CustOrd");  
-  
     ```  
   
     ```cpp  

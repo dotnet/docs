@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "enumeration members"
   - "constants, enumerated"
 ms.assetid: bbb5c3cc-7cdb-4814-8d6a-a6d91546ed1e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

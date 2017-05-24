@@ -11,9 +11,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fda998a5-f538-4f8b-a18c-ee7f35e16938
-ms.technology: 
-  - "dotnet-standard"
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -29,9 +26,7 @@ Determines whether date and time parsing methods use an adjusted set of rules to
 ## Syntax  
   
 ```  
-  
 <EnableAmPmParseAdjustment enabled="0"|"1" />  
-  
 ```  
   
 ## Attributes and Elements  

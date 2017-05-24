@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "automation tree"
   - "UI Automation, tree"
 ms.assetid: 03b98058-bdb3-47a0-8ff7-45e6cdf67166
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 25
 author: "Xansky"
 ms.author: "mhopkins"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "MarkToken method, IHostFilter interface [.NET Framework metadata]"
   - "IHostFilter::MarkToken method [.NET Framework metadata]"
 ms.assetid: d7061343-d0a3-4fd5-b312-61974f98bd62
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

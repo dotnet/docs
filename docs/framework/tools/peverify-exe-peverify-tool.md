@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "PEverify.exe"
   - "PE files, PEVerify"
 ms.assetid: f4f46f9e-8d08-4e66-a94b-0c69c9b0bbfa
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -40,7 +38,6 @@ The PEVerify tool helps developers who generate Microsoft intermediate language 
 ## Syntax  
   
 ```  
-  
 peverify filename [options]  
 ```  
   

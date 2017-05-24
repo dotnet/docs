@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetElementAtPosition method [.NET Framework debugging]"
   - "ICorDebugArrayValue::GetElementAtPosition method [.NET Framework debugging]"
 ms.assetid: 6fd5eaa4-1997-4910-82f5-3887480db764
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

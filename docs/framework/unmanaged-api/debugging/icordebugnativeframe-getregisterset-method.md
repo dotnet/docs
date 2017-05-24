@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugNativeFrame::GetRegisterSet method [.NET Framework debugging]"
   - "GetRegisterSet method, ICorDebugNativeFrame interface [.NET Framework debugging]"
 ms.assetid: 6f309b5f-5556-4f1e-b1dd-4fe97fc81d01
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

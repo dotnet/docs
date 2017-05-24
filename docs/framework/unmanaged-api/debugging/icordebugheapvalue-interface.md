@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugHeapValue interface [.NET Framework debugging]"
 ms.assetid: 1bca66db-0359-4ae8-846e-e35f7e547e8b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

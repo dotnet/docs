@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLog_FileExceedsMaximumSize"
 ms.assetid: 61747a9c-e460-424b-a365-73cdba9dd428
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

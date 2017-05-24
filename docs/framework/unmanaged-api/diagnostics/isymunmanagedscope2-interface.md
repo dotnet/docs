@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedScope2 interface [.NET Framework debugging]"
 ms.assetid: 2ed6a387-ba45-483e-9a1e-b0c69f67998b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

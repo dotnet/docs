@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "client application services, classes"
   - "client application services, about client application services"
 ms.assetid: f0a2da13-e282-4fd7-88a1-f9102c9aeab1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 25
 author: dotnet-bot
 ms.author: dotnetcontent

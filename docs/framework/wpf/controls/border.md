@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "controls [WPF], Border"
   - "Border control [WPF]"
 ms.assetid: 51739f83-b5a2-489b-854b-30607e74a502
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 69
 author: dotnet-bot
 ms.author: dotnetcontent

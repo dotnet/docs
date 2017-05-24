@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "-nowin32manifest compiler option [C#]"
   - "/nowin32manifest compiler option [C#]"
 ms.assetid: 6f06365b-b87b-46a2-b187-b3bfeaf4862d
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

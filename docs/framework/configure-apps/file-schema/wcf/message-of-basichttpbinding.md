@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 51cdd329-6461-471a-8747-56c2299b61e5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 23
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
 ## Syntax  
   
 ```  
-  
 <message   
    algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
       clientCredentialType="UserName/Certificate"/>  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetIP method, ICorDebugILFrame interface [.NET Framework debugging]"
   - "ICorDebugILFrame::GetIP method [.NET Framework debugging]"
 ms.assetid: 18217ba1-1776-4297-a3b9-f77e64b0fead
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

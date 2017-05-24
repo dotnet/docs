@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IHostSyncManager::CreateAutoEvent method [.NET Framework hosting]"
   - "CreateAutoEvent method [.NET Framework hosting]"
 ms.assetid: 3153643e-cf5c-4b44-8e0e-c2b22cb08208
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

@@ -23,8 +23,6 @@ dev_langs:
 helpviewer_keywords: 
   - "EnumCustomAttributes method"
 ms.assetid: 08dff60c-f01b-4050-8865-ea3f95361c9f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

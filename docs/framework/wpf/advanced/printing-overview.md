@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "PrintCapabilities class"
   - "GDI print path"
 ms.assetid: 0de8ac41-9aa6-413d-a121-7aa6f41539b1
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 35
 author: dotnet-bot
 ms.author: dotnetcontent

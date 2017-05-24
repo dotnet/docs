@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "My.Settings object, application settings"
   - "examples [Visual Basic], application settings"
 ms.assetid: e38d0cc7-247a-46ca-ba04-f2913f0adb2e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

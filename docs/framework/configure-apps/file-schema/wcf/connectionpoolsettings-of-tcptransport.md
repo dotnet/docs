@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2fbc3aa7-fcc9-4193-99a3-85d31d60d3f7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies additional connection pool settings for a TCP transport.
 ## Syntax  
   
 ```  
-  
 <connectionPoolSettings  
     groupName="String"  
     idleTimeout"TimeSpan"  

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "metadata interfaces [.NET Framework]"
   - "interfaces (.NET Framework metadata]"
 ms.assetid: f5cdac93-a28c-48ef-8a19-5773376e9e7c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrLateboundCallToInheritedComClass"
 ms.assetid: 7bc16e84-8d29-4f8e-bc4f-002c65c71099
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

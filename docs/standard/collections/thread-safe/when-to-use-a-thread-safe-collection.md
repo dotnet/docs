@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "thread-safe collections, when to upgrade"
 ms.assetid: a9babe97-e457-4ff3-b528-a1bc940d5320
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

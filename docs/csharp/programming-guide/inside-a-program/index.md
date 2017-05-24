@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "C# language, about C# program"
   - "Visual C#, program structure"
 ms.assetid: 9551354b-33f0-4e11-bbf0-1a35e3702b22
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

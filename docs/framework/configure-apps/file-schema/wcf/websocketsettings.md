@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bbf97e02-8dd1-4922-acac-3cd33397b249
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ A configuration element used to specify Web Socket settings.
 ## Syntax  
   
 ```  
-  
 <netHttpBinding>  
    <binding>   
        <webSocketSettings createNotificationOnConnection="boolean"                              disablePayloadMasking="boolean"                              keepAliveInterval="TimeSpan"                              maxPendingConnections="Integer"                              receiveBufferSize="Integer"                              sendBufferSize="Integer"                              subProtocol="String"                              transportUsage="WhenDuplex/Always/Never"/>   </binding>  

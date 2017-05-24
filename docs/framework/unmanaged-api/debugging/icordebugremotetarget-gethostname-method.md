@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugRemoteTarget::GetHostName method [.NET Framework debugging]"
   - "GetHostName method, ICorDebugRemoteTarget interface [.NET Framework debugging]"
 ms.assetid: 1c7276f7-7e54-470c-808c-e13745ac07a1
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

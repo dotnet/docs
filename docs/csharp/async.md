@@ -1,5 +1,5 @@
 ---
-title: Asynchronous programming
+title: Asynchronous programming | Microsoft Docs
 description: Asynchronous programming
 keywords: .NET, .NET Core
 author: cartermp
@@ -99,7 +99,7 @@ The first two examples of this guide showed how you can use `async` and `await` 
 
 Here are two questions you should ask before you write any code:
 
-1. Will you code be "waiting" for something, such as data from a database?
+1. Will your code be "waiting" for something, such as data from a database?
 
     If your answer is "yes", then your work is **I/O-bound**.
 
@@ -174,7 +174,6 @@ You may find yourself in a situation where you need to retrieve multiple pieces 
 This example shows how you might grab `User` data for a set of `userId`s.
 
 ```csharp
-
 public async Task<User> GetUser(int userId)
 {
     // Code omitted:
@@ -199,7 +198,6 @@ public static Task<IEnumerable<User>> GetUsers(IEnumerable<int> userIds)
 Here's another way to write this a bit more succinctly, using LINQ:
 
 ```csharp
-
 public async Task<User> GetUser(int userId)
 {
     // Code omitted:

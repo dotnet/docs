@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "CopyFile method, copying files in Visual Basic"
   - "I/O [Visual Basic], copying files"
 ms.assetid: f205d2ad-bbe5-4d55-8a40-acda21aa82dd
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

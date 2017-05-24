@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "application development [.NET Framework], console"
   - "console applications"
 ms.assetid: c21fb997-9f0e-40a5-8741-f73bba376bd8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "multiple attribute instances"
   - "attributes [.NET Framework], retrieving"
 ms.assetid: 37dfe4e3-7da0-48b6-a3d9-398981524e1c
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

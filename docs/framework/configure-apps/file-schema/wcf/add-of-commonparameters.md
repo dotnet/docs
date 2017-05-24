@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3713bf25-20c8-455f-bb85-de46b6487932
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Specifies a name-value pair of parameters that are used globally across multiple
 ## Syntax  
   
 ```  
-  
 <workflowRuntime>  
    <commonParameters>  
       <add name="String" value="String" />  

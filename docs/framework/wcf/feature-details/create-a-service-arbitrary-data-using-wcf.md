@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e566c15a-b600-4e4a-be3a-4af43e767dae
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"
@@ -63,7 +61,6 @@ Sometimes developers must have full control of how data is returned from a servi
        {  
        }  
     }  
-  
     ```  
   
 2.  Create a variable to hold the base address for the service within the `Main` method.  
@@ -97,7 +94,6 @@ Sometimes developers must have full control of how data is returned from a servi
   
     ```csharp  
     HttpWebRequest req = (HttpWebRequest)HttpWebRequest.Create(baseAddress + "/UploadFile/Test.txt");  
-  
     ```  
   
 2.  Set the <xref:System.Net.HttpWebRequest.Method%2A> property of the <xref:System.Net.HttpWebRequest> to `POST` and the <xref:System.Net.HttpWebRequest.ContentType%2A> property to `"text/plain"`. This tells the service that the code is sending data and that data is in plain text.  
@@ -125,7 +121,6 @@ Sometimes developers must have full control of how data is returned from a servi
     ```csharp  
     HttpWebResponse resp = (HttpWebResponse)req.GetResponse();  
     Console.WriteLine("Client: Receive Response HTTP/{0} {1} {2}", resp.ProtocolVersion, (int)resp.StatusCode, resp.StatusDescription);  
-  
     ```  
   
 5.  Close the service host.  
@@ -198,7 +193,6 @@ namespace ReceiveRawData
         }  
     }  
 }  
-  
 ```  
   
 ## Compiling the Code  

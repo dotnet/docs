@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 30b42987-0e0e-4b2b-adb1-5255ddfbcd7b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -52,7 +50,6 @@ Dim custList = _
 For Each cust In custList  
     Console.WriteLine("{0}:{1}:{2}", cust.CustomerID, cust.CompanyName, cust.ContactName)  
 Next  
-  
 ```  
   
  This code produces the following output:  

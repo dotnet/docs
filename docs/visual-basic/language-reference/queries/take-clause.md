@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "queries [Visual Basic], Take"
   - "Take clause"
 ms.assetid: 77bf87b2-1476-4456-957f-fee922fbad8c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

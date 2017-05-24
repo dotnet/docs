@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "-recurse compiler option [Visual Basic]"
   - "recurse compiler option [Visual Basic]"
 ms.assetid: 84a0b670-33ae-44c4-a46a-b90388809317
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

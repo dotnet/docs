@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "bound controls"
   - "data-bound controls, DataGrid"
 ms.assetid: 4e96e3d0-b1cc-4de1-8774-bc9970ec4554
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -54,12 +52,10 @@ manager: "wpickett"
   
     ```vb  
     sqlDataAdapter1.Fill(DsCategories1)  
-  
     ```  
   
     ```csharp  
     sqlDataAdapter1.Fill(DsCategories1);  
-  
     ```  
   
     ```cpp  

@@ -11,9 +11,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ef19c91a-b9df-4bf0-a28e-eb1e99c4bc95
-ms.technology: 
-  - "dotnet-standard"
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -38,7 +35,6 @@ The .NET Framework 4.6 adds TLS 1.1 and TLS 1.2 to the WCF SSL protocol default 
      The following configuration file does this:  
   
     ```xml  
-  
     <configuration>  
         <system.serviceModel>  
             <bindings>  
@@ -55,7 +51,6 @@ The .NET Framework 4.6 adds TLS 1.1 and TLS 1.2 to the WCF SSL protocol default 
             </bindings>  
         </system.ServiceModel>  
     </configuration>  
-  
     ```  
   
 -   If the binding is dynamically configured in source code, update the <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols%2A?displayProperty=fullName> property to use TLS 1.1 (<xref:System.Security.Authentication.SslProtocols?displayProperty=fullName>) or an  earlier version of the protocol in the source code.  

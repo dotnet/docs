@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: b3af44ec-7d41-425b-aed9-0c4379e5cbe9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -27,11 +25,9 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT EnableExceptionCallbacksOutsideOfMyCode(  
    [in] BOOL enableExceptionsOutsideOfJMC  
 );  
-  
 ```  
   
 #### Parameters  

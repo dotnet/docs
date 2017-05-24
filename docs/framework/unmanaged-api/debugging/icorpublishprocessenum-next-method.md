@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorPublishProcessEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorPublishProcessEnum interface [.NET Framework debugging]"
 ms.assetid: 6c399f37-1e38-4ca1-b70d-8ae41f7228b7
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

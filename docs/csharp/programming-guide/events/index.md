@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "C# language, events"
   - "events [C#]"
 ms.assetid: a8e51b22-d294-44fb-9539-0072f06c4cb3
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"

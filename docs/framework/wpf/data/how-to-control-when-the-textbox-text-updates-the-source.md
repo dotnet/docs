@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "data binding, timing of source updates"
   - "timing of source updates"
 ms.assetid: ffb7b96a-351d-4c68-81e7-054033781c64
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

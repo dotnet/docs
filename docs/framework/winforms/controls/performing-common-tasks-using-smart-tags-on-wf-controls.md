@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "smart tags"
   - "designer actions"
 ms.assetid: cac337e6-00f6-4584-80f4-75728f5ea113
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

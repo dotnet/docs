@@ -37,8 +37,6 @@ helpviewer_keywords:
   - "Visual Basic code, Sub procedures"
   - "Function procedures, declaring"
 ms.assetid: d3f21fb0-b804-4c99-97ed-583b23894cf1
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

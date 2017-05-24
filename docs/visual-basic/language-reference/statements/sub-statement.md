@@ -39,8 +39,6 @@ helpviewer_keywords:
   - "ByVal keyword, Sub statements"
   - "Visual Basic code, Sub procedures"
 ms.assetid: e347d700-d06c-405b-b302-e9b1edb57dfc
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 52
 author: dotnet-bot
 ms.author: dotnetcontent

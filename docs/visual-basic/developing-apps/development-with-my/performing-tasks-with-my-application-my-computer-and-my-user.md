@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "My.Computer object, developing applications"
   - "My.User object, developing applications"
 ms.assetid: c8af61bd-4dd3-4a0f-9af5-795b594b240b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

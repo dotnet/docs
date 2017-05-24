@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorEventAttr enumeration [.NET Framework metadata]"
 ms.assetid: dc2b3281-3820-487e-930d-350b66dc6417
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "win32manifest compiler option [C#]"
   - "-win32manifest compiler option [C#]"
 ms.assetid: 9460ea1b-6c9f-44b8-8f73-301b30a01de1
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

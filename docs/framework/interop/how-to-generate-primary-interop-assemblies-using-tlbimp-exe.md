@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Tlbimp.exe"
   - "Type Library Importer"
 ms.assetid: 5419011c-6e57-40f6-8c65-386db8f7a651
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ExitThread method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::ExitThread method [.NET Framework debugging]"
 ms.assetid: 62db708b-6cf0-45c5-b897-4b5c75bd2505
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

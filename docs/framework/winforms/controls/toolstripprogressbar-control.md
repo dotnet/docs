@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "toolbars [Windows Forms], progress bars"
   - "progress controls"
 ms.assetid: cb3eb0a8-60b1-483e-a03f-93b0b1351dae
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

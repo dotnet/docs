@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3af512f3-87d9-4005-9e2f-abb1060ff43f
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 7
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -80,7 +78,6 @@ Using connection As New OleDbConnection(connectionString)
     connection.Open()  
     ' Do work here.  
 End Using  
-  
 ```  
   
 ```csharp  
@@ -109,7 +106,6 @@ Using connection As New OdbcConnection(connectionString)
     connection.Open()  
     ' Do work here.  
 End Using  
-  
 ```  
   
 ```csharp  
@@ -135,7 +131,6 @@ Using connection As New OracleConnection(connectionString)
     connection.Open()  
     ' Do work here.  
 End Using  
-  
 ```  
   
 ```csharp  

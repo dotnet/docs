@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "tables [Windows Forms], adding to DataGrid control"
   - "DataGrid control [Windows Forms], adding tables and columns"
 ms.assetid: 4a6d1b34-b696-476b-bf8a-57c6230aa9e1
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

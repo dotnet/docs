@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "<add> element for <sharedListeners>"
   - "add element for <sharedListeners>"
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"

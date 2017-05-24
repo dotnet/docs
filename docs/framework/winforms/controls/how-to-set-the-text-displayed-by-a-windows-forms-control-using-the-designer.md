@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], setting caption"
   - "Windows Forms, setting the text displayed"
 ms.assetid: 9d18e0e0-f17f-4074-837d-e67ceeeaa89d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerInfo4::GetFunctionFromIP2 method [.NET Framework profiling]"
   - "GetFunctionFromIP2 method, ICorProfilerInfo4 interface [.NET Framework profiling]"
 ms.assetid: 46ff70f4-13e9-40a0-802a-0a40abcfc6a0
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

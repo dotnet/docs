@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "pages, navigating to"
   - "navigation, to page"
 ms.assetid: 2a556fc0-748b-417f-a58a-0d05a7afb66f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

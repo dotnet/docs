@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "application configuration [.NET Framework]"
   - "assemblies [.NET Framework], specifying location"
 ms.assetid: 1cb92bd7-6bab-44cf-8fd3-36303ce84fea
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"

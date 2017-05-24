@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "TrimStart method"
   - "removing characters"
 ms.assetid: ab248dab-70d4-4413-81c6-542d153fd195
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

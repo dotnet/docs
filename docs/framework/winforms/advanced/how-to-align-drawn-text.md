@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "text, aligning"
   - "Windows Forms, aligning drawn text"
 ms.assetid: 83c10a81-1a90-4b5c-98aa-2c6c4b280079
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

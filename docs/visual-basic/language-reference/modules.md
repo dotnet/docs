@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "modules, Visual Basic"
 ms.assetid: 370bfc90-e8f2-4942-bdec-9897ce605d31
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

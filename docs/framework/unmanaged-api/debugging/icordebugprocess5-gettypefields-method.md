@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetTypeFields method, ICorDebugProcess5 interface [.NET Framework debugging]"
   - "ICorDebugProcess5::GetTypeFields method [.NET Framework debugging]"
 ms.assetid: 6a0ad3ee-dacb-47e9-abae-4536bcc4804b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

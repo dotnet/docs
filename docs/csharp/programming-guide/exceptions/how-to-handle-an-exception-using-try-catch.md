@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "exceptions [C#], try/catch blocks"
   - "try/catch blocks [C#]"
 ms.assetid: ca8e3773-980e-4767-8633-7408540e9818
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a90f5662-a796-46cd-ae33-30a4072838af
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ WCF makes no guarantees about the order in which messages are processed, unless 
     {  
          // ...  
     }  
-  
 ```  
   
  If <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is set to any other value, an <xref:System.InvalidOperationException> is thrown.  

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "unboxing [C#], nullable types"
   - "nullable types [C#], boxing and unboxing"
 ms.assetid: bdb5b626-abc0-405d-8f64-0f0a0bf883a4
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

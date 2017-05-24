@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "lines, drawing alpha blended"
   - "alpha blending, drawing lines"
 ms.assetid: 8f2508af-f495-4223-b5cc-646cbbb520eb
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

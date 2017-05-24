@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Power Packs, deploying"
 ms.assetid: f2230f53-a745-4731-89e6-033943faa209
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

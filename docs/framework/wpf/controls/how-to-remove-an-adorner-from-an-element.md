@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "adorners, removing"
 ms.assetid: 97cf4d9f-0596-429e-8526-32a30aa4ae99
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

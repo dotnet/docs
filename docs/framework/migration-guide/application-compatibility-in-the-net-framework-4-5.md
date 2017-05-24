@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "application compatibility, .NET Framework"
   - "breaking changes [.NET Framework]"
 ms.assetid: 5c50747c-806c-44a9-ac58-5bbe12a284fa
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 76
 author: "rpetrusha"
 ms.author: "ronpet"

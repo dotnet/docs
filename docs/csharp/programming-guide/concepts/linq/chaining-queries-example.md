@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "CSharp"
 ms.assetid: abbca162-d95e-43af-b92c-e46e6aa2540e
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -86,7 +84,6 @@ Main: str >DEF!!!<
 ToUpper: source >ghi<  
 AppendString: source >GHI<  
 Main: str >GHI!!!<  
-  
 ```  
   
  In this example, you can see that each extension method operates one at a time for each item in the source collection.  

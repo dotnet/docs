@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "parsing text with regular expressions, threads"
   - "pattern-matching with regular expressions, threads"
 ms.assetid: 7c4a167b-5236-4cde-a2ca-58646230730f
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

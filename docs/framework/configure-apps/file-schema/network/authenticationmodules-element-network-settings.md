@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "authenticationModules element"
   - "<authenticationModules> element"
 ms.assetid: 10fcfaad-82ef-4692-871a-0aec9dfbe75e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
@@ -38,7 +36,6 @@ Specifies modules used to authenticate network requests.
 ## Syntax  
   
 ```  
-  
       <authenticationModules>   
 </authenticationModules>  
 ```  

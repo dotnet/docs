@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IHostPolicyManager interface [.NET Framework hosting]"
 ms.assetid: 8c4aa124-5e00-46d9-b1e8-57ba6574bb0d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

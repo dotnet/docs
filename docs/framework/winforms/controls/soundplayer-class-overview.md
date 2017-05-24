@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "SoundPlayer class, about SoundPlayer class"
   - "sounds, playing"
 ms.assetid: fcebb938-62b9-4677-9cbe-6465bc863e22
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

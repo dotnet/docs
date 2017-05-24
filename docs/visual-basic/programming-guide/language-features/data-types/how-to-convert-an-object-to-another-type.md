@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "objects [Visual Basic], converting"
 ms.assetid: 60cb5fc7-7ba4-4ab5-9c24-480fa12ddcdc
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

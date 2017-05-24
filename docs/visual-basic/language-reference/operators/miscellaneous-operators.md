@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "operators [Visual Basic]"
   - "operators [Visual Basic], miscellaneous"
 ms.assetid: 2423b3c5-fc3f-479c-bcd2-2c6ebe92814f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

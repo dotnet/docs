@@ -28,8 +28,6 @@ helpviewer_keywords:
   - "argument lists"
   - "procedures, parameter lists"
 ms.assetid: ff275aff-aa13-40df-bd4c-63486db8c1e9
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "operands"
   - "expressions [Visual Basic]"
 ms.assetid: b86f3131-94ee-448f-96cd-79611e028b26
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

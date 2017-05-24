@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f474e25d-2a27-4f31-84c5-395c442b8e70
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -75,7 +73,6 @@ Endpoints provide clients with access to the functionality a [!INCLUDE[indigo1](
   </system.serviceModel>  
   
 </configuration>  
-  
 ```  
   
 ## Example  

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "partial classes [C#]"
   - "C# language, partial classes and methods"
 ms.assetid: 804cecb7-62db-4f97-a99f-60975bd59fa1
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 35
 author: "BillWagner"
 ms.author: "wiwagn"

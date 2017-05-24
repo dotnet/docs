@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 622422f8-6651-442f-b8be-e654a4aabcac
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "Erikre"
 ms.author: "erikre"
@@ -61,7 +59,6 @@ public class Service : IEcho
 <httpModules>  
     <remove name="ServiceModel" />  
 <httpModules/>  
-  
 ```  
   
 ## See Also  

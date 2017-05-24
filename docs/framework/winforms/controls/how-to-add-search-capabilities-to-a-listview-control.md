@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "ListView control [Windows Forms], adding search capabilities"
   - "searching, adding search capabilities to ListView control"
 ms.assetid: 557782d9-b705-4bab-b496-9938afddac82
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

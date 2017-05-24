@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "limits, Visual Basic code"
   - "Visual Basic code, limitations"
 ms.assetid: cf1646b7-5d24-48c6-9616-bda8a4849d91
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

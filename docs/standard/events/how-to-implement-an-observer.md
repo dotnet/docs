@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "observers [.NET Framework], observer design pattern"
   - "observer design pattern [.NET Framework], implementing observers"
 ms.assetid: 8ecfa9f5-b500-473d-bcf0-5652ffb1e53d
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

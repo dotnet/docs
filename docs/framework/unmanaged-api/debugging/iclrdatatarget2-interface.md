@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRDataTarget2 interface [.NET Framework debugging]"
 ms.assetid: 94249397-861b-4294-a538-cf01466a66d3
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

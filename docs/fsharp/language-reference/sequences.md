@@ -1,5 +1,5 @@
 ---
-title: Sequences (F#)
+title: Sequences (F#) | Microsoft Docs
 description: Sequences (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

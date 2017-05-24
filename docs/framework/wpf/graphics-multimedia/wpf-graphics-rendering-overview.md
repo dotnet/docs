@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "graphics, rendering"
   - "rendering graphics"
 ms.assetid: 6dec9657-4d8c-4e46-8c54-40fb80008265
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 51
 author: dotnet-bot
 ms.author: dotnetcontent

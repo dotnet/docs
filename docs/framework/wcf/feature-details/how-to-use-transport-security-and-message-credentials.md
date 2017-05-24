@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "TransportWithMessageCredentials"
 ms.assetid: 6cc35346-c37a-4859-b82b-946c0ba6e68f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -163,7 +161,6 @@ Securing a service with both transport and message credentials uses the best of 
       </binding>  
     </netTcpBinding>  
     </bindings>  
-  
     ```  
   
 ## See Also  

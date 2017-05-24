@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "DockPanel control, partitioning space"
   - "partitioning space"
 ms.assetid: a219b9e5-b205-4438-89b5-0a137ac463ab
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

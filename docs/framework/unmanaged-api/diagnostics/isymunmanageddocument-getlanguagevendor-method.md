@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetLanguageVendor method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::GetLanguageVendor method [.NET Framework debugging]"
 ms.assetid: 1d4b702e-4922-441d-8b44-03804284f70b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

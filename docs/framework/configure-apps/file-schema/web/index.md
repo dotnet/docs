@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "configuration files [ASP.NET]"
   - "configuration schema [.NET Framework], Web settings"
 ms.assetid: ae1ac356-267d-4753-8d7a-7a04eb45a9be
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "mcleblanc"
 ms.author: "markl"

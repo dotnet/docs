@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "UI Automation, control patterns for clients"
   - "control patterns, UI Automation clients"
 ms.assetid: 571561d8-5f49-43a9-a054-87735194e013
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 24
 author: "Xansky"
 ms.author: "mhopkins"

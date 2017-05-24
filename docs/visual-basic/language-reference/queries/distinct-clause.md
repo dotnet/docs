@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Distinct statement"
   - "queries [Visual Basic], Distinct"
 ms.assetid: 86f42614-0d8f-4ffc-b888-ce8a37a8d36a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

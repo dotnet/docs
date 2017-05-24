@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "global static functions [.NET Framework hosting], version 4"
   - ".NET Framework 4, hosting global static functions"
 ms.assetid: 07a1a6e1-db73-4555-81df-bc4054c51492
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

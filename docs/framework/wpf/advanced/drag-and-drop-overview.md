@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "drag-and-drop [WPF], events"
   - "drop targets [WPF], drag-and-drop"
 ms.assetid: 1a5b27b0-0ac5-4cdf-86c0-86ac0271fa64
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 31
 author: dotnet-bot
 ms.author: dotnetcontent

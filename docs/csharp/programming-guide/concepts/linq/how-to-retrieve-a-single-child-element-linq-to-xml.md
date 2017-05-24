@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "CSharp"
 ms.assetid: ce37db9e-76fa-46eb-b4cc-e8f32d22ad90
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 3
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -42,7 +40,6 @@ Console.WriteLine(e);
  This example produces the following output:  
   
 ```xml  
-  
 <DeliveryNotes>Please leave packages in shed by driveway.</DeliveryNotes>  
 ```  
   
@@ -61,7 +58,6 @@ Console.WriteLine(e);
  This example produces the following output:  
   
 ```xml  
-  
 <aw:DeliveryNotes xmlns:aw="http://www.adventure-works.com">Please leave packages in shed by driveway.</aw:DeliveryNotes>  
 ```  
   

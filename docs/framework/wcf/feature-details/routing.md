@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "WCF [WCF], routing"
   - "Windows communication Foundation [WCF], routing"
 ms.assetid: bd56516c-420d-4c4e-97f9-f72d28d149a9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "wadepickett"
 ms.author: "wpickett"

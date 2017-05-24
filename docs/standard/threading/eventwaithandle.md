@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "event wait handles [.NET Framework]"
   - "threading [.NET Framework], cross-process synchronization"
 ms.assetid: 11ee0b38-d663-4617-b793-35eb6c64e9fc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

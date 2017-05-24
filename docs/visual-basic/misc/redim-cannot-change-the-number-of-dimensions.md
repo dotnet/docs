@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrArray_RankMismatch"
 ms.assetid: 52505298-9985-4682-8f6e-ff7d56077f34
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

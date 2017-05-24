@@ -15,8 +15,6 @@ dev_langs:
 helpviewer_keywords: 
   - "queues [WCF], MSMQ integration"
 ms.assetid: b8757992-ffce-40ad-9e9b-3243f6d0fce1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 28
 author: "Erikre"
 ms.author: "erikre"

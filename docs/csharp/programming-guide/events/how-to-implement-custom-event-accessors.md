@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "events [C#], remove accessor"
   - "remove accessor [C#]"
 ms.assetid: bf903abf-03a4-4f7b-ab6b-b7e59bc2ee1e
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 7
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -63,7 +61,6 @@ event EventHandler IDrawingObject.OnDraw
                 }  
             }  
         }  
-  
 ```  
   
 ## See Also  

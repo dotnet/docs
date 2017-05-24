@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "rounting [WCF], scenarios"
 ms.assetid: ec22f308-665a-413e-9f94-7267cb665dab
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "wadepickett"
 ms.author: "wpickett"

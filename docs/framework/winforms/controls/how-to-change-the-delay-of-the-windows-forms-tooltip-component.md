@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "tooltips [Windows Forms], delay values"
   - "examples [Windows Forms], tooltips"
 ms.assetid: 08979ba7-dd84-477b-ab17-8d06e759be99
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -34,14 +32,12 @@ There are multiple delay values that you can set for a Windows Forms <xref:Syste
     ToolTip1.InitialDelay = 500  
     ToolTip1.ReshowDelay = 100  
     ToolTip1.AutoPopDelay = 5000  
-  
     ```  
   
     ```csharp  
     ToolTip1.InitialDelay = 500;  
     ToolTip1.ReshowDelay = 100;  
     ToolTip1.AutoPopDelay = 5000;  
-  
     ```  
   
     ```cpp  

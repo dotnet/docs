@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "environment variables, setting for tools"
   - "developer command prompt"
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 45
 author: "mairaw"
 ms.author: "mairaw"

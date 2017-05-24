@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ProvideLibrary method [.NET Framework debugging]"
   - "ICLRDebuggingLibraryProvider::ProvideLibrary method [.NET Framework debugging]"
 ms.assetid: 86f06245-9517-49be-8d8c-ca5deaf34c02
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

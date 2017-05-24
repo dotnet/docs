@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "ListBox control [Windows Forms], accessing items"
   - "ListCount property"
 ms.assetid: 7bcaea58-1cfa-46db-9baf-b75a69d8f9ec
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 304c70fa-78d1-4d0f-b89f-0ca23d734c6f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ## Syntax  
   
 ```  
-  
 <workflowRuntime cachedInstanceExpiration="TimeSpan"  
                                   enablePerformanceCounters="Boolean"  
                                   name="String"  

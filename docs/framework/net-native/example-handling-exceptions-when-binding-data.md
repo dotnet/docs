@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bd63ed96-9853-46dc-ade5-7bd1b0f39110
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -24,16 +22,13 @@ manager: "wpickett"
  The following example shows how to resolve a [MissingMetadataException](../../../docs/framework/net-native/missingmetadataexception-class-net-native.md) exception that is thrown when an app compiled with the [!INCLUDE[net_native](../../../includes/net-native-md.md)] tool chain tries to bind data. Here’s the exception information:  
   
 ```  
-  
 This operation cannot be carried out as metadata for the following type was removed for performance reasons:   
 App.ViewModels.MainPageVM  
-  
 ```  
   
  Here's the associated call stack:  
   
 ```  
-  
 Reflection::Execution::ReflectionDomainSetupImplementation.CreateNonInvokabilityException+0x238  
 Reflection::Core::ReflectionDomain.CreateNonInvokabilityException+0x2e  
 Reflection::Core::Execution::ExecutionEnvironment.+0x316  
@@ -45,7 +40,6 @@ App!$66_Interop::McgNative::__vtable_Windows_UI_Xaml_Data__ICustomProperty.GetVa
 Windows_UI_Xaml!DirectUI::PropertyProviderPropertyAccess::GetValue+0x3f   
 Windows_UI_Xaml!DirectUI::PropertyAccessPathStep::GetValue+0x31   
 Windows_UI_Xaml!DirectUI::PropertyPathListener::ConnectPathStep+0x113  
-  
 ```  
   
 ## What was the app doing?  

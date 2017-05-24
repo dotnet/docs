@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "files, downloading"
   - "files, transferring"
 ms.assetid: ac479f81-c0e2-4b99-af73-217f446b73da
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

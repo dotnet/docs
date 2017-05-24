@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "stopping asynchronous operations"
   - "blocking application execution"
 ms.assetid: 3e32daf2-8161-4e8f-addd-9fd9ff101b03
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

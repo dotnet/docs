@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "BindingSource component [Windows Forms], binding to a type"
   - "types [Windows Forms], binding controls to"
 ms.assetid: 94faeebb-d2bc-45d6-86d7-96a42661b43d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

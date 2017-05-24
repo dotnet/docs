@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IAssemblyCacheItem interface [.NET Framework fusion]"
 ms.assetid: ccc9387a-9f44-4f4f-bf8f-0ea6d2afa21b
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "region directive (#region)"
   - "#Region keyword"
 ms.assetid: 90a6a104-3cbf-47d0-bdc4-b585d0921b87
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ Collapses and hides sections of code in Visual Basic files.
 ## Syntax  
   
 ```  
-  
       #Region "identifier_string"  
 #End Region  
 ```  

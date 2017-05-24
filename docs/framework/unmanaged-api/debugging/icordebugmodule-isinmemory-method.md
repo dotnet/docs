@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IsInMemory method [.NET Framework debugging]"
   - "ICorDebugModule::IsInMemory method [.NET Framework debugging]"
 ms.assetid: 89940711-98e7-4aa6-bffc-5e39e91e1b7d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

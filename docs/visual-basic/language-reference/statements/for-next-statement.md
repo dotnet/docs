@@ -33,8 +33,6 @@ helpviewer_keywords:
   - "Exit statement, For...Next statements"
   - "For statement"
 ms.assetid: f5fc0d51-67ce-4c36-9f09-31c9a91c94e9
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent

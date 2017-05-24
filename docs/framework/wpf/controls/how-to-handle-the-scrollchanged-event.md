@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "ScrollViewer control, raising ScrollChanged events"
   - "ScrollChanged events"
 ms.assetid: 42c695d8-ee28-49d4-80fd-fc71e9be7f29
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorRuntimeHost::EnumDomains method [.NET Framework hosting]"
   - "EnumDomains method [.NET Framework hosting]"
 ms.assetid: 96b74995-0cde-4876-b6df-7fc164e6a5d1
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

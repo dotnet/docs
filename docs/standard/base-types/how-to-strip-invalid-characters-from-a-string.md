@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Replace method"
   - "validating user input"
 ms.assetid: b4319c8a-9032-4129-a9d5-6f6fc28e7f32
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

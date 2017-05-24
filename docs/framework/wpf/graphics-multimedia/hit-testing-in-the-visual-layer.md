@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "hit testing functionality"
   - "visual layer, hit testing functionality"
 ms.assetid: b1a64b61-14be-4d75-b89a-5c67bebb2c7b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 42
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "WCF, using transactions"
   - "Windows Communication Foundation, using transactions"
 ms.assetid: 1e8d04dd-b7cf-41e7-8560-54b4381beb0f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"

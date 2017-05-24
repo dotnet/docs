@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "InitDbgTransportManager function"
   - "Silverlight, remote debugging"
 ms.assetid: a30102ff-c52e-48c9-b3a9-aa14286a42b2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

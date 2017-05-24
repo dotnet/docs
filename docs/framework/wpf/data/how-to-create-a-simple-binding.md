@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "data binding, creating simple bindings"
   - "binding data, creating"
 ms.assetid: 69b80f72-6259-44cb-8294-5bdcebca1e08
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

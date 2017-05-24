@@ -14,8 +14,6 @@ dev_langs:
   - "C++"
   - "jsharp"
 ms.assetid: 911d4460-dd91-4958-85b2-2ca3299f9ec6
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 4
 author: "mairaw"
 ms.author: "mairaw"
@@ -41,7 +39,6 @@ The <xref:System.Xml.Schema.XmlSchemaValidator> class provides an efficient, hig
  The example also takes the `contosoBooks.xsd` as an input.  
   
 ```xml  
-  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://www.contoso.com/books" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
     <xs:element name="bookstore">  
@@ -71,7 +68,6 @@ The <xref:System.Xml.Schema.XmlSchemaValidator> class provides an efficient, hig
         </xs:complexType>  
     </xs:element>  
 </xs:schema>  
-  
 ```  
   
 ## Validating XML Data using XmlSchemaValidator  

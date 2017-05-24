@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 9c7e96e1-af70-4e6e-ac5c-d67929dddbaa
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ This element enables the endpoint behavior that makes it possible to consume the
 ## Syntax  
   
 ```  
-  
 <enableWebScript />  
 ```  
   

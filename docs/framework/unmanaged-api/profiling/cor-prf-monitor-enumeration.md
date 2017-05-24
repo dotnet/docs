@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_PRF_MONITOR enumeration [.NET Framework profiling]"
 ms.assetid: 9294d702-b4e5-441c-a930-e63d27b86bfd
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 33
@@ -37,7 +35,6 @@ Contains values that are used to specify behavior, capabilities, or events to wh
 ## Syntax  
   
 ```  
-  
 typedef enum {  
     COR_PRF_MONITOR_NONE                = 0x00000000,  
     COR_PRF_MONITOR_FUNCTION_UNLOADS    = 0x00000001,  
@@ -106,7 +103,6 @@ typedef enum {
                      COR_PRF_DISABLE_TRANSPARENCY_CHECKS_UNDER_FULL_TRUST |  
                                           COR_PRF_DISABLE_ALL_NGEN_IMAGES  
 } COR_PRF_MONITOR;  
-  
 ```  
   
 ## Members  

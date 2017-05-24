@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "hash function"
   - "collections [.NET Framework], Hashtable collection type"
 ms.assetid: bfc20837-3d02-4fc7-8a8f-c5215b6b7913
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

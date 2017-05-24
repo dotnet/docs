@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugEval::CallFunction method [.NET Framework debugging]"
   - "CallFunction method [.NET Framework debugging]"
 ms.assetid: 7f470c5c-e1c0-4d8d-aad8-830f113ae751
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 16

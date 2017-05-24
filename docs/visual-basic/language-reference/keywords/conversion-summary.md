@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "conversions, Visual Basic"
   - "type conversion, keywords"
 ms.assetid: ae2c79a7-2d62-4fbe-8585-14360d11f987
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

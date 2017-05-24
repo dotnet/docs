@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrAmbiguousMatch_NarrowingConversion1"
 ms.assetid: 2fdbadb9-8ef1-404a-a2ed-ce5f5e55cfcb
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

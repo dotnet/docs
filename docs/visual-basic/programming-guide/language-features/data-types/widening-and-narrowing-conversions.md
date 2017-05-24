@@ -29,8 +29,6 @@ helpviewer_keywords:
   - "data type conversion, exceptions during conversion"
   - "conversions, widening"
 ms.assetid: 058c3152-6c28-4268-af44-2209e774f0bd
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetGuidHeapSize method [.NET Framework metadata]"
   - "IMetaDataTables::GetGuidHeapSize method [.NET Framework metadata]"
 ms.assetid: e875cbee-1ad9-4f1a-bf03-38cdb8ff371a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

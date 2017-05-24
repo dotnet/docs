@@ -27,8 +27,6 @@ helpviewer_keywords:
   - "trace listeners, filters"
   - "trace listeners, initializing"
 ms.assetid: 21dc2169-947d-453a-b0e2-3dac3ba0cc9f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, how to control ordering"
 ms.assetid: c67eccc7-004d-4b2f-987e-919cbbd62ef7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: adb46c98-a650-42e2-b62d-835920fe8421
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ Else
     Console.WriteLine("Results differ")  
 End If  
 Console.WriteLine(el1)  
-  
 ```  
   
  This example produces the following output:  

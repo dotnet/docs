@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "PInvokeStackImbalance MDA"
   - "managed debugging assistants (MDAs), platform invoke"
 ms.assetid: 34ddc6bd-1675-4f35-86aa-de1645d5c631
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"

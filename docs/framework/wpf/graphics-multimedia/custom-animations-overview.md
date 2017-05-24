@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "animation, custom classes"
   - "custom animation classes"
 ms.assetid: 9be69d50-3384-4938-886f-08ce00e4a7a6
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

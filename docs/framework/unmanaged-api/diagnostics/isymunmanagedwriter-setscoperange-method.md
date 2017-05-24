@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetScopeRange method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::SetScopeRange method [.NET Framework debugging]"
 ms.assetid: d4d98676-444b-46ca-bfe6-0d827385cd22
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

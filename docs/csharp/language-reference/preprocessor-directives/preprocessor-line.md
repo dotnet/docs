@@ -12,8 +12,6 @@ dev_langs:
 helpviewer_keywords: 
   - "#line directive [C#]"
 ms.assetid: 6439e525-5dd5-4acb-b8ea-efabb32ff95b
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

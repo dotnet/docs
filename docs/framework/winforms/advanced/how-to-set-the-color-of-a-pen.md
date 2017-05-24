@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "pens, setting color"
   - "colored pens"
 ms.assetid: a9df06f9-a6d5-4d9b-a2d1-583943540775
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

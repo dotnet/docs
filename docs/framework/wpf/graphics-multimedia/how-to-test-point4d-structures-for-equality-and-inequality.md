@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "testing, Point4D structures for inequality"
   - "Point4D structures, testing for equality"
 ms.assetid: e004a67e-db7f-4af8-a31f-e6b2a44ccf34
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

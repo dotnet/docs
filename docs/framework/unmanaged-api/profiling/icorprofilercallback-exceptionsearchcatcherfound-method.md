@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ExceptionSearchCatcherFound method [.NET Framework profiling]"
   - "ICorProfilerCallback::ExceptionSearchCatcherFound method [.NET Framework profiling]"
 ms.assetid: 190f424d-5e37-4163-a191-0895686e9476
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

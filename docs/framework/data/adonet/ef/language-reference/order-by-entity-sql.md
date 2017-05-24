@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: c0b61572-ecee-41eb-9d7f-74132ec8a26c
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Specifies the sort order used on objects returned in a SELECT statement.
 ## Syntax  
   
 ```  
-  
 [ ORDER BY   
    {  
       order_by_expression [SKIP n] [LIMIT n]  

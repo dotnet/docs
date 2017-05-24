@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "statements [Visual Basic]"
 ms.assetid: 1cbd7703-8d3b-48fd-831e-14c9cc85675a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

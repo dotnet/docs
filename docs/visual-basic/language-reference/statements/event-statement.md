@@ -28,8 +28,6 @@ helpviewer_keywords:
   - "ByRef keyword, Event statements"
   - "declaring user-defined events"
 ms.assetid: 306ff8ed-74dd-4b6a-bd2f-e91b17474042
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 33
 author: dotnet-bot
 ms.author: dotnetcontent

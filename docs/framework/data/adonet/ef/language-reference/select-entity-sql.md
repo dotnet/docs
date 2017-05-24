@@ -15,8 +15,6 @@ dev_langs:
   - "C++"
   - "ESQL"
 ms.assetid: 9a33bd0d-ded1-41e7-ba3c-305502755e3b
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -28,7 +26,6 @@ Specifies the elements returned by a query.
 ## Syntax  
   
 ```  
-  
 SELECT [ ALL | DISTINCT ] [ topSubclause ] aliasedExpr   
       [{ , aliasedExpr }] FROM fromClause [ WHERE whereClause ] [ GROUP BY groupByClause [ HAVING havingClause ] ] [ ORDER BY orderByClause ]  
 or  

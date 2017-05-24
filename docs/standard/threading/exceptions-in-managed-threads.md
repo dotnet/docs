@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "threading [.NET Framework],exceptions in managed threads"
   - "managed threading"
 ms.assetid: 11294769-2e89-43cb-890e-ad4ad79cfbee
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

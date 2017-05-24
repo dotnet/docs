@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 4c78e833-b260-453d-9bf4-eb39857dd0fa
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Dereferences a reference value and produces the result of that dereference.
 ## Syntax  
   
 ```  
-  
 SELECT DEREF ( o.expression ) from Table as o;  
 ```  
   

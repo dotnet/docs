@@ -1,5 +1,5 @@
 ---
-title: Using C# Interactive with MacOS or Linux terminal | C# Guide
+title: Using C# Interactive with MacOS or Linux terminal - C# Guide | Microsoft Docs
 description: Explore the C# Interactive Shell from the MacOS or Linux Command Line
 keywords: .NET, .NET Core, C#, REPL, cross-platform
 ms.date: 06/25/2016

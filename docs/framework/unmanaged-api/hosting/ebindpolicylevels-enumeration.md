@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "EBindPolicyLevels enumeration [.NET Framework hosting]"
 ms.assetid: a9e00b4f-b6d0-4257-bd88-4fe9af97b8fa
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

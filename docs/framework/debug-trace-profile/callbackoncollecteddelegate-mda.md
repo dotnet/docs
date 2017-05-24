@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "garbage collection, run-time errors"
   - "delegates [.NET Framework], garbage collection"
 ms.assetid: 398b0ce0-5cc9-4518-978d-b8263aa21e5b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

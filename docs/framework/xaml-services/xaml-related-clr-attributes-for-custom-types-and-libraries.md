@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "CLR attributes for custom types [XAML Services]"
 ms.assetid: 5dfb299a-b6e2-41b8-8694-e6ac987547f1
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: "wadepickett"
 ms.author: "wpickett"

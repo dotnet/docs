@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "/quiet compiler option [Visual Basic]"
   - "quiet compiler option [Visual Basic]"
 ms.assetid: 5d77fa23-4c50-4708-8535-649912b098e8
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

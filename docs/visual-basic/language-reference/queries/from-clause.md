@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "From clause"
   - "From statement"
 ms.assetid: 83e3665e-68a0-4540-a3a3-3d777a0f95d5
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

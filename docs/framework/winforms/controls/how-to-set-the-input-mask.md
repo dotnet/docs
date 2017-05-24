@@ -16,8 +16,6 @@ dev_langs:
 helpviewer_keywords: 
   - "MaskedTextBox control [Windows Forms]"
 ms.assetid: 779b3a12-cd74-4e58-b46e-04983bda5b2c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

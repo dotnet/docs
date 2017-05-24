@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 49a2451f-d250-4e73-aa96-9ff49d9f11c6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Gets the method start address and size given a relative virtual address (RVA) in
 ## Syntax  
   
 ```  
-  
 HRESULT GetCodeRange(  
    [in] ULONG32 codeRva,   
    [out] ULONG32* pCodeStartAddress,   
    [out] ULONG32* pCodeSize  
 );  
-  
 ```  
   
 #### Parameters  

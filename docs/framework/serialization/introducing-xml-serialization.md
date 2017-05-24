@@ -74,7 +74,6 @@ Serialization is the process of converting an object into a form that can be rea
 Public Class OrderForm  
     Public OrderDate As DateTime  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -152,7 +151,6 @@ public class OrderForm
 ```vb  
 <XmlElement(DataType:="NMTOKEN")> _  
 Public MyToken As String  
-  
 ```  
   
 ```csharp  

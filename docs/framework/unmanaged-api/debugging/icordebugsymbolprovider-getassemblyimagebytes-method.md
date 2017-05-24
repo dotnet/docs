@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 3db215aa-e180-4f70-8d23-6d5a0ffbc8e5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,13 +23,11 @@ Reads data from a merged assembly given a relative virtual address (RVA) in the 
 ## Syntax  
   
 ```  
-  
 HRESULT GetAssemblyImageBytes(  
    [in] CORDB_ADDRESS rva,   
    [in] ULONG32 length,   
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  
-  
 ```  
   
 #### Parameters  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Abort method, ICorDebugEval interface [.NET Framework debugging]"
   - "ICorDebugEval::Abort method [.NET Framework debugging]"
 ms.assetid: 7070b6d0-f2e0-44ff-b124-0944cd807e69
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

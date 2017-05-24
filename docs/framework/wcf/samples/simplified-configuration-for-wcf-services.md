@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 1e39ec25-18a3-4fdc-b6a3-9dfafbd60112
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"
@@ -43,7 +41,6 @@ This sample demonstrates how to implement and configure a typical service and cl
     </services>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  In [!INCLUDE[netfx40_short](../../../../includes/netfx40-short-md.md)], the `<service>` element is optional. When a service does not define any endpoints, an endpoint for each base address and contract implemented are added to the service. The base address is appended to the contract name to determine the endpoint and the binding is determined by the address scheme. The following code example demonstrates a simplified configuration file. As configured, the service can be accessed at http://localhost/servicemodelsamples/service.svc by a client on the same computer. For clients on remote computers to access the service, a fully-qualified domain name must be specified instead of localhost. The service does not expose metadata by default. As such, the service turns on the <xref:System.ServiceModel.Description.ServiceMetadataBehavior> behavior.  
@@ -62,7 +59,6 @@ This sample demonstrates how to implement and configure a typical service and cl
     </behaviors>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ### To use this sample  

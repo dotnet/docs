@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IGCThreadControl::SuspensionStarting method [.NET Framework hosting]"
   - "SuspensionStarting method, IGCThreadControl interface [.NET Framework hosting]"
 ms.assetid: 0af312af-98e9-415e-b182-42e80a1aee51
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

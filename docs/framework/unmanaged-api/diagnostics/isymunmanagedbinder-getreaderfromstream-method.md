@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ISymUnmanagedBinder::GetReaderFromStream method [.NET Framework debugging]"
   - "GetReaderFromStream method [.NET Framework debugging]"
 ms.assetid: aa38efd4-de7e-4482-a5d3-adc152093460
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Windows Forms controls, locking"
   - "controls [Windows Forms], locking"
 ms.assetid: 94efe0d2-c14e-4d14-b903-63ea9b07e290
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -12,8 +12,6 @@ dev_langs:
 helpviewer_keywords: 
   - "#else directive [C#]"
 ms.assetid: 6a347322-cfa2-4a86-98f8-ddfa2cb7d4db
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"

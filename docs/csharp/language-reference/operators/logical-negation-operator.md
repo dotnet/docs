@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "logical negation operator (!) [C#]"
   - "NOT operator [C#]"
 ms.assetid: f5ae133f-8f64-4560-b34f-cd9cd5eed4ad
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 13
 author: "BillWagner"
 ms.author: "wiwagn"

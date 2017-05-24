@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "add element, webRequestModules"
   - "<add> element, webRequestModules"
 ms.assetid: 47ec4adc-f39f-4bcd-8680-1ec21fd26890
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
@@ -41,7 +39,6 @@ Adds a custom Web request module to the application.
 ## Syntax  
   
 ```  
-  
       <add   
   prefix = "URI prefix"   
   type = "module name, Version, Culture, PublicKeyToken"   

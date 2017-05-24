@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "type libraries"
   - "COM interop, importing type library"
 ms.assetid: f5cfa6ba-cc25-4017-82cd-ba7391859113
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"

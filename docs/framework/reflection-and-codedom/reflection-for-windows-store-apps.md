@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "reflection, Windows Store apps"
   - ".NET for Windows Store apps, TypeInfo class"
 ms.assetid: 0d07090c-9b47-4ecc-81d1-29d539603c9b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"

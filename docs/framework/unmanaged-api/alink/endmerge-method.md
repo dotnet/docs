@@ -23,8 +23,6 @@ dev_langs:
 helpviewer_keywords: 
   - "EndMerge method"
 ms.assetid: 1d03bb15-a2c8-4a04-8fc6-b126c89c3778
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

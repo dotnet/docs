@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "graphics [Windows Forms], clipping"
   - "graphics, transformations in nested objects"
 ms.assetid: a0d9f178-43a4-4323-bb5a-d3e3f77ae6c1
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "implementing UI add-ins [WPF]"
   - "pipeline segments [WPF], creating add-ins"
 ms.assetid: 86375525-282b-4039-8352-8680051a10ea
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

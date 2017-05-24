@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "<shadowCopyTimeStampVerification> element"
   - "shadowCopyTimeStampVerification element"
 ms.assetid: 2f1648e5-997b-435e-a4f9-d236c574c66c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

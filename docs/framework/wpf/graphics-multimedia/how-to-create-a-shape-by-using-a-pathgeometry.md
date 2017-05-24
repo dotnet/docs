@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "shapes, creating with PathGeometry class"
   - "graphics [WPF], shapes"
 ms.assetid: 49a4a8b7-e738-45be-8dac-b54a6d8f5b21
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

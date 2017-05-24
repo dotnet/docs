@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "unfreezing Freezable objects"
   - "classes, Freezable"
 ms.assetid: 89c71692-4f43-4057-b611-67c6a8a863a2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 30
 author: dotnet-bot
 ms.author: dotnetcontent

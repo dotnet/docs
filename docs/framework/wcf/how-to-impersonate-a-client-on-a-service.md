@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "impersonation"
   - "WCF, security"
 ms.assetid: 431db851-a75b-4009-9fe2-247243d810d3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 33
 author: "Erikre"
 ms.author: "erikre"

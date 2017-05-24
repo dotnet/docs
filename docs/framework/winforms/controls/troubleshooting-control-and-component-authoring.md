@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "components [Windows Forms], troubleshooting"
   - "Windows Forms controls, debugging"
 ms.assetid: e9c8c099-2271-4737-882f-50f336c7a55e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

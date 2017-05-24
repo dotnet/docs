@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLog_NegativeNumber"
 ms.assetid: 597c412c-499e-49d2-b656-af2d90c292a5
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

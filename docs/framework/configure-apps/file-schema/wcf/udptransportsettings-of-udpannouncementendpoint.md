@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a7ddff1a-5eed-4bbc-8580-b95ef8890e1f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "Erikre"
 ms.author: "erikre"
@@ -27,7 +25,6 @@ This configuration element exposes UDP transport settings for [\<udpAnnoucementE
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <standardEndpoints>       <udpAnnouncementEndpoint>           <standardEndpoint>               <updTransportSettings>                  duplicateMessageHistoryLength="Integer"                  maxBufferPoolSize="Integer"                   maxMulticastRetransmitCount="Integer"                  maxPendingMessageCount="Integer"                  maxReceivedMessageSize="Integer"                  maxUnicastRetransmitCount="Integer"                  multicastInterfaceId="String"                  socketReceiveBufferSize="Integer"                  timeToLive="Integer" />           </standardEndpoint>       </udpAnnouncementEndpoint>            </standardEndpoints>  
 </system.serviceModel>  

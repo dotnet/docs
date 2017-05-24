@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], synchronizing threads"
   - "managed threading"
 ms.assetid: b980eb4c-71d5-4860-864a-6dfe3692430a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

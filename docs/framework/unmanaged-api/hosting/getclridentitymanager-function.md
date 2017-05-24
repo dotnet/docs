@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "GetCLRIdentityManager function [.NET Framework hosting]"
 ms.assetid: 66eeca30-adb4-45f4-aff5-347564c95724
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 15

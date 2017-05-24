@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 692befa3-8b0b-4ec5-b601-755874e98eb0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Defines authentication settings for the HTTP transport.
 ## Syntax  
   
 ```  
-  
 transport clientCredentialType =   
        "Basic/Certificate/Digest/None/Ntlm/Windows"  
        proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  

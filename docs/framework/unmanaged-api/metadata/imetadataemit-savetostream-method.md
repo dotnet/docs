@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataEmit::SaveToStream method [.NET Framework metadata]"
   - "SaveToStream method [.NET Framework metadata]"
 ms.assetid: e0290a49-3818-4a43-ad46-3014faa34f97
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

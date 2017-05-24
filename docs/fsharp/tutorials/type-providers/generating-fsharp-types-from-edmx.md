@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Generating F# Types from an EDMX Schema File (F#)"
+title: "Walkthrough: Generating F# Types from an EDMX Schema File (F#) | Microsoft Docs"
 description: "Walkthrough: Generating F# Types from an EDMX Schema File (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

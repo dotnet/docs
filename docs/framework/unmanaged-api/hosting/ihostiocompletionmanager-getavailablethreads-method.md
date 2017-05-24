@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetAvailableThreads method, IHostIoCompletionManager interface [.NET Framework hosting]"
   - "IHostIoCompletionManager::GetAvailableThreads method [.NET Framework hosting]"
 ms.assetid: bab363d1-b859-47a4-9884-5661c611cce7
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

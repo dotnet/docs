@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "certificates [WCF]"
 ms.assetid: 6ffb8682-8f07-4a45-afbb-8d2487e9dbc3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 26
 author: "Erikre"
 ms.author: "erikre"

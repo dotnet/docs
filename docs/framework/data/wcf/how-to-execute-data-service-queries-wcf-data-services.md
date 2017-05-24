@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "WCF Data Services, querying"
   - "WCF Data Services, accessing data"
 ms.assetid: 62997821-e0c6-4c4d-9fb7-1273fb5e5d18
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e2002ef4-5dee-4a54-9d87-03b33d35fc52
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"
@@ -70,7 +68,6 @@ Windows 8 introduces a new type of application called Windows Store applications
 ```csharp  
 static partial void Configure(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint,  
             System.ServiceModel.Description.ClientCredentials clientCredentials);  
-  
 ```  
   
  You can then implement this partial method and change the binding or endpoint in your client proxy class as follows:  
@@ -101,7 +98,6 @@ public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfCli
             }  
         }  
     }  
-  
 ```  
   
 ### Serialization  
@@ -179,7 +175,6 @@ void async SomeMethod()
        // Do something with result  
     }  
 }  
-  
 ```  
   
  Notice the use of the async keyword on the method making the asynchronous call and the await keyword when calling the asynchronous method.  

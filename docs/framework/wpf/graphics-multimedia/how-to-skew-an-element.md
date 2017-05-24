@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "graphics, skewing elements"
   - "classes, SkewTransform"
 ms.assetid: 56b65f2f-dc6e-4238-923f-ca44ec53c52f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

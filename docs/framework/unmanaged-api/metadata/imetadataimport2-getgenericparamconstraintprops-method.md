@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataImport2::GetGenericParamConstraintProps method [.NET Framework metadata]"
   - "GetGenericParamConstraintProps method [.NET Framework metadata]"
 ms.assetid: c5fee4a0-b132-4e5e-8730-e586ce314b9a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

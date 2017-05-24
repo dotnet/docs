@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "classes, TextDecoration"
   - "Hyperlink control type"
 ms.assetid: 3996cfe6-1dac-4835-aeb3-c719ce9cfee5
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

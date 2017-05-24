@@ -27,8 +27,6 @@ helpviewer_keywords:
   - "data marshaling, platform invoke"
   - "marshaling, platform invoke"
 ms.assetid: 027832a2-9b43-4fd9-9b45-7f4196261a4e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

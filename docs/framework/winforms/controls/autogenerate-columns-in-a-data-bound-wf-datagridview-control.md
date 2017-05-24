@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "columns [Windows Forms], autogenerating"
   - "DataGridView control [Windows Forms], data-bound columns"
 ms.assetid: 699f6f9e-6aa5-4811-902b-6a2c57dec7d6
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "WCF, schema import and export"
   - "XsdDataContractImporter class"
 ms.assetid: b9170583-8c34-43bd-97bb-6c0c8dddeee0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"

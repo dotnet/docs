@@ -12,8 +12,6 @@ dev_langs:
 helpviewer_keywords: 
   - "#error directive [C#]"
 ms.assetid: f2a7f3af-4cf9-4111-b369-70204d24b26b
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

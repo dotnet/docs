@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b226bede-8459-4de9-b2ac-3d39604ce2bc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -28,7 +26,6 @@ Represents a configuration element that specifies a pass-through filter, which p
 ## Syntax  
   
 ```  
-  
 <serviceHostingEnvironment>  
      <baseAddressPrefixFilters>  
         <add prefix="string"/>  

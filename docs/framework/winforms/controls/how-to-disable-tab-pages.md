@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "tab pages, hiding in forms"
   - "TabControl control [Windows Forms], disabling pages"
 ms.assetid: adcc6618-8a34-4ee1-bbe3-47e732de6a59
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -54,7 +52,6 @@ On some occasions, you will want to restrict access to data that is available wi
           TabControl1.SelectedTab = TabPage3  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -72,7 +69,6 @@ On some occasions, you will want to restrict access to data that is available wi
             tabControl1.SelectedTab = tabPage3;  
         }  
     }  
-  
     ```  
   
     ```cpp  
@@ -102,7 +98,6 @@ On some occasions, you will want to restrict access to data that is available wi
     ```csharp  
     this.tabControl1.SelectedIndexChanged +=   
        new System.EventHandler(this.tabControl1_SelectedIndexChanged);  
-  
     ```  
   
     ```cpp  

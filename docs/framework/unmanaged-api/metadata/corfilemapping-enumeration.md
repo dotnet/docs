@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorFileMapping enumeration [.NET Framework metadata]"
 ms.assetid: 3ca41592-b8da-475a-8032-a15627730003
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

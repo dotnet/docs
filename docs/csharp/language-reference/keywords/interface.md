@@ -12,8 +12,6 @@ dev_langs:
 helpviewer_keywords: 
   - "interface keyword [C#]"
 ms.assetid: 7da38e81-4f99-4bc5-b07d-c986b687eeba
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 29
 author: "BillWagner"
 ms.author: "wiwagn"

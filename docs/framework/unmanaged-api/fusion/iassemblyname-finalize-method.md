@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Finalize method [.NET Framework fusion]"
   - "IAssemblyName::Finalize method [.NET Framework fusion]"
 ms.assetid: 610e792d-98ef-411f-90b0-5b9a3813f547
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "polling asynchronous operation status"
   - "status information [.NET Framework], asynchronous operations"
 ms.assetid: b541af31-dacb-4e20-8847-1b1ff7c35363
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

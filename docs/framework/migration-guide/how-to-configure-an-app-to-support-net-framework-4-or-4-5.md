@@ -14,8 +14,6 @@ helpviewer_keywords:
   - ".NET Framework 4, configuring apps"
   - ".NET Framework 4.5, configuring apps"
 ms.assetid: 63c6b9a8-0088-4077-9aa3-521ab7290f79
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
@@ -61,7 +59,6 @@ All apps that host the common language runtime (CLR) need to start, or *activate
         <supportedRuntime version="<version>"/>  
       </startup>  
     </configuration>  
-  
     ```  
   
      where *\<version>* specifies the CLR version that aligns with the .NET Framework version that your app supports. Use the following strings:  

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "retrieving ink"
   - "Ink Serialized Format (ISF)"
 ms.assetid: a3f6d16b-d682-4680-9965-907332b4d2b8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "files [C#], getting information about"
 ms.assetid: 22fc2da6-5494-405b-995e-c0b99142a93e
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 30
 author: "BillWagner"
 ms.author: "wiwagn"

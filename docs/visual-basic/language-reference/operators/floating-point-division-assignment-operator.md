@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "operator /="
   - "compound assignment statements"
 ms.assetid: a1e22d0e-8380-4761-9da1-84fb51c34821
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -47,7 +45,6 @@ Divides the value of a variable or property by the value of an expression and as
 ## Syntax  
   
 ```  
-  
 variableorproperty /= expression  
 ```  
   

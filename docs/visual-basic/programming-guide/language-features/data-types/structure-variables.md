@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "variables [Visual Basic], structure variables"
   - "structure variables"
 ms.assetid: 156872f8-aabc-4454-8e2d-f2253c3c13c9
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

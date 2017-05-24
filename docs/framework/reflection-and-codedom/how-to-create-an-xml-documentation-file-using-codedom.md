@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "XML documentation, creating using CodeDOM"
   - "Code Document Object Model, generating XML documentation"
 ms.assetid: e3b80484-36b9-41dd-9d21-a2f9a36381dc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

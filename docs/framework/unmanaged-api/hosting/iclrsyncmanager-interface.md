@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICLRSyncManager interface [.NET Framework hosting]"
 ms.assetid: a49f9d80-1c76-4ddd-8c49-34f913a5c596
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

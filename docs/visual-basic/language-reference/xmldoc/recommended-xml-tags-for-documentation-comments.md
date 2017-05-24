@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "XML comments, recommended tags [Visual Basic]"
   - "comments, recommended XML tags"
 ms.assetid: 294e0736-ff1e-498e-af83-6db71ed41a72
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

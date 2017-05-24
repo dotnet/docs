@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a5509a5c-de24-4bc2-9a48-19138055dcce
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "Erikre"
 ms.author: "erikre"
@@ -316,7 +314,6 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
         8  
       </netrm:BufferRemaining>  
     </wsrm:SequenceAcknowledgement>  
-  
     ```  
   
 -   B4003: [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses `netrm:BufferRemaining` to indicate how many new messages the Reliable Messaging Destination can buffer.  

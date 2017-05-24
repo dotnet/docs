@@ -26,8 +26,6 @@ helpviewer_keywords:
   - "/ operator [Visual Basic]"
   - "math operators"
 ms.assetid: 335e97f2-c434-439e-9064-76973a051101
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -53,7 +51,6 @@ Divides two numbers and returns a floating-point result.
 ## Syntax  
   
 ```  
-  
 expression1 / expression2  
 ```  
   

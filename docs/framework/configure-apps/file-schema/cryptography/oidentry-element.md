@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "<oidEntry> element"
   - "oidEntry element"
 ms.assetid: 22fb88b0-bf27-489c-9ca0-e65950ac136c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"

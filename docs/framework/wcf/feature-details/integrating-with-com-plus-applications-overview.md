@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Windows Communication Foundation, COM+ integration"
   - "WCF, COM+ integration"
 ms.assetid: e481e48f-7096-40eb-9f20-7f0098412941
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 29
 author: "Erikre"
 ms.author: "erikre"

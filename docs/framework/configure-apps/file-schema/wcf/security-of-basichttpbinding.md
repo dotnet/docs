@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6432708d-5465-4bd9-bfc2-466742db99cb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -29,7 +27,6 @@ Defines the security capabilities of the [\<basicHttpBinding>](../../../../../do
 ## Syntax  
   
 ```  
-  
 <security mode="Message/None/Transport/TransportWithCredential">  
    <transport  
       clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  

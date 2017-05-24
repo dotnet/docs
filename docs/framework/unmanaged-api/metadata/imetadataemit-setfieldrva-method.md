@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataEmit::SetFieldRVA method [.NET Framework metadata]"
   - "SetFieldRVA method [.NET Framework metadata]"
 ms.assetid: 6dc37f9d-87ee-4cb3-9216-ced600184ce8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

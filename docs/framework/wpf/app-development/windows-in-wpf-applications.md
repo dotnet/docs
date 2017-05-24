@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "windows [WPF]"
   - "WPF application, windows"
 ms.assetid: dc091d04-68cf-4592-9695-75fda037db76
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 67
 author: dotnet-bot
 ms.author: dotnetcontent

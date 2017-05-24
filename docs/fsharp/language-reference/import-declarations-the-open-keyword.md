@@ -1,5 +1,5 @@
 ---
-title: "Import Declarations: The open Keyword (F#)"
+title: "Import Declarations: The open Keyword (F#) | Microsoft Docs"
 description: "Import Declarations: The open Keyword (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SaveDeltaToMemory method [.NET Framework metadata]"
   - "IMetaDataEmit2::SaveDeltaToMemory method [.NET Framework metadata]"
 ms.assetid: e2146726-0084-4c9e-a2d2-e8d461b13b21
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

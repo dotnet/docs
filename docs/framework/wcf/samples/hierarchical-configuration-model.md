@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 28dcc698-226c-4b77-9e51-8bf45a36216c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"
@@ -39,7 +37,6 @@ public interface IDesc
     [OperationContract]  
     List<string> ListEndpointBehaviors();  
 }  
-  
 ```  
   
  The implementation of these methods by the services is straightforward. `ListEndpoints` iterates through all the service endpoints and returns a list of all the endpoints that the service has. `ListServiceBehaviors` iterates through all the behaviors added to the service and returns the list of all the service behaviors associated with the service. `ListEndpointBehaviors` behaves in a similar way to `ListServiceBehaviors`, but it returns the list of endpoint behaviors instead.  

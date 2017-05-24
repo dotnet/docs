@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "RichTextBox control [Windows Forms]"
   - "rich edit controls"
 ms.assetid: 3225f2ef-c6d9-4bd4-9d3e-2219e58edbf2
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

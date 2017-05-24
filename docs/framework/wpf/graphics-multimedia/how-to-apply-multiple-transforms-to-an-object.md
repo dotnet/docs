@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "graphics, grouping Transform objects"
   - "TransformGroup"
 ms.assetid: 98cd1921-12bc-4bf5-8193-529228fb7402
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

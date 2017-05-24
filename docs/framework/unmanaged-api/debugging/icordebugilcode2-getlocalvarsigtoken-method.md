@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 17665b77-1342-4115-94fd-9f45b0ecfb0f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 3
@@ -35,7 +33,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetLocalVarSigToken(  
    [out] mdSignature *pmdSig  
 );  

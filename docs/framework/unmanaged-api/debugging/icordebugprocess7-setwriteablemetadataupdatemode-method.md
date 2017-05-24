@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 8589bba7-7304-45ba-9e31-7bf43dfd5c19
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4
@@ -35,7 +33,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT SetWriteableMetadataUpdateMode(  
    WriteableMetadataUpdateMode flags  
 );  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "<disableCachingBindingFailures> element"
   - "disableCachingBindingFailures element"
 ms.assetid: bf598873-83b7-48de-8955-00b0504fbad0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

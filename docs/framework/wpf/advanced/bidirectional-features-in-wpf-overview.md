@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "FlowDirection property"
   - "bidirectional features"
 ms.assetid: fd850e25-7dba-408c-b521-8873e51dc968
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 22
 author: dotnet-bot
 ms.author: dotnetcontent

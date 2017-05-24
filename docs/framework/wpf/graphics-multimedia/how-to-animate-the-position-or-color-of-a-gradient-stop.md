@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "animation, color of GradientStop objects"
   - "GradientStop objects, animating position of"
 ms.assetid: 6f5b8b47-6c32-4b8e-98ee-fdf6515ec843
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

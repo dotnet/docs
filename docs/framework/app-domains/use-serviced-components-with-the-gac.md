@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "serviced components, global assembly cache"
   - "global assembly cache, serviced components"
 ms.assetid: 3423e5d9-234c-4571-8161-e35f6d130128
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

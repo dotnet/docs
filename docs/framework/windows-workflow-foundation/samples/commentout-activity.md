@@ -31,7 +31,6 @@ protected override void Execute(CodeActivityContext context)
 [Designer(typeof(CommentOutDesigner))]  
 [ContentProperty("Body")]  
 public sealed class CommentOut : CodeActivity  
-  
 ```  
   
  The `Designer` attribute specifies the class that implements the visual interface of the activity at design time. The `ContentProperty` attribute declares that the `"Body"` property can be skipped in the XAML representation of an instance of this activity.  

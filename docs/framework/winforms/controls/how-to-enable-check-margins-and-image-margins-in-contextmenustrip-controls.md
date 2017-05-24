@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "ToolStrip control [Windows Forms]"
   - "MenuStrip control [Windows Forms]"
 ms.assetid: eb584e71-59da-4012-aaca-dbe1c7c7a156
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

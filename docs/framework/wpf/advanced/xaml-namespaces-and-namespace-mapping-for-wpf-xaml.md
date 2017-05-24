@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "classes, mapping namespaces to"
   - "namespaces"
 ms.assetid: 5c0854e3-7470-435d-9fe2-93eec9d3634e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

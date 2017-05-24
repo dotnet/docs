@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Visual Basic code, COM interop"
   - "COM interop, in Visual Basic"
 ms.assetid: 3ffd1bdf-1b8d-47f5-87eb-75b659f64294
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

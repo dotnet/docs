@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "performance, DataGridView control"
   - "performance tuning, data grids"
 ms.assetid: 6ccbff28-a0ff-41e4-b601-61b31b61851d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

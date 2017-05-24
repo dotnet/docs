@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "tables [Windows Forms], formatting in DataGrid control"
   - "formatting [Windows Forms]"
 ms.assetid: 533b9814-6124-49dc-9fda-085f1502609f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugObjectValue::IsValueClass method [.NET Framework debugging]"
   - "IsValueClass method [.NET Framework debugging]"
 ms.assetid: 13d89a4a-5d9d-4a79-9600-5e2a98c3d166
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

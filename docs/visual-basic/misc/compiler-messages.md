@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "compiler errors"
   - "errors [Visual Basic], compiler"
 ms.assetid: d50addfb-0683-45e5-8c3c-69a2eb510a19
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

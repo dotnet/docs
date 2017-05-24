@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "mscorlib element"
   - "<mscorlib> element"
 ms.assetid: d549668f-31f1-4b92-8021-a9135c09ca3c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
@@ -37,7 +35,6 @@ Contains the [\<cryptographySettings> element](../../../../../docs/framework/con
 ## Syntax  
   
 ```  
-  
       <mscorlib>   
 </mscorlib>  
 ```  

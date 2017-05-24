@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 679f0eae-f353-44d1-b42d-a9e247509774
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Enables the retrieval of metadata address information from the request message h
 ## Syntax  
   
 ```  
-  
 <useRequestHeadersForMetadataAddress>   <defaultPorts>      <add scheme="http" port="integer" />   </defaultPorts></useRequestHeadersForMetadataAddress>  
 ```  
   

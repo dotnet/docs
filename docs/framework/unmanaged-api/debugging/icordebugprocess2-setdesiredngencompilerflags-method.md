@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugProcess2::SetDesiredNGENCompilerFlags method [.NET Framework debugging]"
   - "SetDesiredNGENCompilerFlags method [.NET Framework debugging]"
 ms.assetid: 98320175-7c5e-4dbb-8683-86fa82e2641f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

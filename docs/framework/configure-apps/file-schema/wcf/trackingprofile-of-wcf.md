@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 09b651c2-c0d2-4850-a101-b0e009a1dc3a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 3
 author: "Erikre"
 ms.author: "erikre"
@@ -61,7 +59,6 @@ Represents a configuration section for creating a subscription to workflow track
  The following example shows a tracking profile in a configuration file that allows a tracking participant to subscribe to the `Started`and `Completed` workflow events.  
   
 ```  
-  
 <system.serviceModel>  
   <tracking>    
     <trackingProfile name="Sample Tracking Profile">  
@@ -79,7 +76,6 @@ Represents a configuration section for creating a subscription to workflow track
    </profiles>  
   </tracking>  
 </system.serviceModel>  
-  
 ```  
   
 ## See Also  

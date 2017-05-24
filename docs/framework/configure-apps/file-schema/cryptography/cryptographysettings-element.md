@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "cryptographySettings element"
   - "<cryptographySettings> element"
 ms.assetid: 6201b7da-bcb7-49f7-b9f5-ba1fe05573b9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
@@ -38,7 +36,6 @@ Contains cryptography settings.
 ## Syntax  
   
 ```  
-  
       <cryptographySettings>   
 </crytopgraphySettings>  
 ```  

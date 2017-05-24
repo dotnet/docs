@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], event handling"
   - "Button control [Windows Forms], event handlers"
 ms.assetid: 2e7c9e1a-61fe-444d-8113-3c5bacf1c8cb
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -40,7 +38,6 @@ In addition to creating events using the Windows Forms Designer, you can also cr
     Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs)  
        ' Add event handler code here.  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -48,7 +45,6 @@ In addition to creating events using the Windows Forms Designer, you can also cr
     {  
     // Add event handler code here.  
     }  
-  
     ```  
   
     ```cpp  
@@ -68,12 +64,10 @@ In addition to creating events using the Windows Forms Designer, you can also cr
   
     ```vb  
     AddHandler Button1.Click, AddressOf Button1_Click  
-  
     ```  
   
     ```csharp  
     button1.Click += new EventHandler(button1_Click);  
-  
     ```  
   
     ```cpp  

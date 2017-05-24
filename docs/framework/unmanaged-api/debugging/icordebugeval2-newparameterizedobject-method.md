@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "NewParameterizedObject method [.NET Framework debugging]"
   - "ICorDebugEval2::NewParameterizedObject method [.NET Framework debugging]"
 ms.assetid: 3d705463-e640-4249-8036-4e8206d03cfe
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 16

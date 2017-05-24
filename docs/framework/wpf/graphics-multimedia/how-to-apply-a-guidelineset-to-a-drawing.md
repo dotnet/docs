@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "GuidelineSet property, applying to drawings"
   - "graphics [WPF], GuidelineSet property"
 ms.assetid: 45f3e0b4-8820-45a7-b865-b8ea5b17b0c8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

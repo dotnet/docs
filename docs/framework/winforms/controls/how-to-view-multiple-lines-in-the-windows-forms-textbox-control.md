@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "TextBox control [Windows Forms], viewing multiple lines"
   - "carriage return"
 ms.assetid: 43173201-0b74-4067-a472-605029ca5f35
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -26,8 +26,6 @@ helpviewer_keywords:
   - "permissions [.NET Framework], overriding security checks"
   - "permissions [.NET Framework], assertions"
 ms.assetid: 1e40f4d3-fb7d-4f19-b334-b6076d469ea9
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
@@ -103,7 +101,6 @@ Namespace LogUtil
       End Sub  
    End Class  
 End Namespace  
-  
 ```  
   
 ```csharp  
@@ -151,7 +148,6 @@ Namespace LogUtil
       End Sub  
    End Class  
 End Namespace  
-  
 ```  
   
 ```csharp  

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "WebBrowser control [Windows Forms], communication between DHTML and client application"
   - "DHTML, embedding in Windows Forms"
 ms.assetid: 55353a32-b09e-4479-a521-ff3a5ff9a708
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

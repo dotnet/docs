@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "font families, constructing"
   - "fonts, constructing"
 ms.assetid: d3a4a223-9492-4b54-9afd-db1c31c3cefd
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

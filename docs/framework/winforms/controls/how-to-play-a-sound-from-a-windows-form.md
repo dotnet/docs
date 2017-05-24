@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "My.Computer.Audio object, playing sounds"
   - "examples [Windows Forms], sounds"
 ms.assetid: 3d3350b7-1ebd-4e05-a738-48ca1160a19d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

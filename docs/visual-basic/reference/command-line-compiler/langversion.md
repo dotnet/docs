@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "langversion compiler option [Visual Basic]"
   - "-langversion compiler option [Visual Basic]"
 ms.assetid: 59b7b0c8-2dde-4e9b-94e7-0237f7e0bafb
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

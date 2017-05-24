@@ -26,8 +26,6 @@ dev_langs:
 helpviewer_keywords: 
   - "StrongNameTokenFromPublicKey function [.NET Framework strong naming]"
 ms.assetid: 997e9e57-abb2-4217-bf20-1df621a75add
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 19

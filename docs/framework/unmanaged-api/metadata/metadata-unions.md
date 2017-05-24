@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "unions [.NET Framework metadata]"
   - "metadata unions [.NET Framework]"
 ms.assetid: 2c7534cf-34fa-470a-b29e-6cf5a7bd03d3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "Visual C# compiler, enabling"
   - "compiling source code, from command line"
 ms.assetid: 7ec09480-5612-4f6a-8d00-ad90ea9bca5d
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

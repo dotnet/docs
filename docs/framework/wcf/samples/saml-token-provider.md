@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: eb16e5e2-4c8d-4f61-a479-9c965fcec80c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "Erikre"
 ms.author: "erikre"
@@ -234,7 +232,6 @@ This sample demonstrates how to implement a custom client SAML token provider. A
        return base.CreateSecurityTokenProvider(tokenRequirement);  
       }  
     }  
-  
     ```  
   
 3.  Write a custom client credential.  
@@ -358,7 +355,6 @@ This sample demonstrates how to implement a custom client SAML token provider. A
   
     ```  
     certmgr.exe -add -r CurrentUser -s My -c -n %USER_NAME% -r LocalMachine -s TrustedPeople  
-  
     ```  
   
 #### To set up and build the sample  

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e8668b37-c79f-4714-9de5-afcb88b9ff02
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -62,7 +60,6 @@ public  class MyMessageContract
    public msgHeaderElement;  
    // other message contents...  
 }  
-  
 ```  
   
 ## See Also  

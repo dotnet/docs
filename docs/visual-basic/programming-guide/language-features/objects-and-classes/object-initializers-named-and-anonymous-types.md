@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "initializers [Visual Basic]"
   - "named types [Visual Basic]"
 ms.assetid: e2df3807-a70f-49dd-ac94-f1e07f472b1b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

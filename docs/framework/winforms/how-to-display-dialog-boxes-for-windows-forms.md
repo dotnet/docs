@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Windows Forms, calling one form from another"
   - "dialog boxes, displaying for Windows Forms"
 ms.assetid: aaac1b38-c651-495a-8d3d-5a9bfb32fee3
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -38,7 +36,6 @@ You display a dialog box in the same way you display any other form in an applic
        Dim dlg1 as new Form()  
        dlg1.ShowDialog()  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -47,7 +44,6 @@ You display a dialog box in the same way you display any other form in an applic
        Form dlg1 = new Form();  
        dlg1.ShowDialog();  
     }  
-  
     ```  
   
     ```cpp  

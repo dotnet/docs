@@ -13,8 +13,6 @@ dev_langs:
   - "VB"
   - "CSharp"
 ms.assetid: 725004d1-ce88-4405-a220-78e89844f81f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ Defines the binding element that is used when the client must expose an endpoint
 ## Syntax  
   
 ```  
-  
 <compositeDuplex clientBaseAddress="URI" />  
 ```  
   

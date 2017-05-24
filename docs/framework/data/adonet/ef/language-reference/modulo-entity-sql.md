@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: 243ddc4f-3c4e-41e1-a3ef-4ed39e36248b
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Returns the remainder of one expression divided by another.
 ## Syntax  
   
 ```  
-  
 dividend % divisor  
 ```  
   

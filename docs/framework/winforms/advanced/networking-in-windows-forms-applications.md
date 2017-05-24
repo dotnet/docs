@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "networking, Windows Forms"
   - "Windows Forms, networking"
 ms.assetid: babf8af3-8000-46e2-8c68-a42127efabba
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

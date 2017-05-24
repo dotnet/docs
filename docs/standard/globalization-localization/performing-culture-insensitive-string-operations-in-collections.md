@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "SortedList class, culture-insensitive string operations"
   - "culture parameter"
 ms.assetid: 5cdc9396-a64b-4615-a1cd-b605db4c5983
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -35,7 +33,6 @@ There are classes and members in the <xref:System.Collections> namespace that pr
   
 ```vb  
 internalHashtable = New Hashtable(CaseInsensitiveHashCodeProvider.Default, CaseInsensitiveComparer.Default)  
-  
 ```  
   
 ```csharp  
@@ -48,7 +45,6 @@ internalHashtable = new Hashtable(CaseInsensitiveHashCodeProvider.Default, CaseI
 internalHashtable = New Hashtable(New  
     CaseInsensitiveHashCodeProvider(CultureInfo.InvariantCulture),  
     New CaseInsensitiveComparer(CultureInfo.InvariantCulture))  
-  
 ```  
   
 ```csharp  
@@ -64,7 +60,6 @@ internalHashtable = new Hashtable(new CaseInsensitiveHashCodeProvider
 internalHashtable = New Hashtable(New  
     CaseInsensitiveHashCodeProvider(CultureInfo.InvariantCulture),  
     New CaseInsensitiveComparer(CultureInfo.InvariantCulture))  
-  
 ```  
   
 ```csharp  
@@ -102,7 +97,6 @@ Friend Class InvariantComparer
         End If  
     End Function  
 End Class  
-  
 ```  
   
 ```csharp  

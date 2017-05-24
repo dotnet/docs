@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "arguments [Visual Basic], optional"
   - "optional arguments, and named arguments"
 ms.assetid: 398d2845-1069-4e94-b934-a73b545c8b87
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -64,7 +62,6 @@ Sub sub name(ByVal parameter1 As datatype1, Optional ByVal parameter2 As datatyp
  When you omit one or more optional arguments in the argument list, you use successive commas to mark their positions. The following example call supplies the first and fourth arguments but not the second or third:  
   
 ```  
-  
 sub name(argument 1, , , argument 4)  
 ```  
   

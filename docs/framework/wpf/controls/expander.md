@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Expander control [WPF]"
   - "collapsing headers [WPF]"
 ms.assetid: e9dfc8d6-4555-47b9-a4de-0acd64f8770a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 64
 author: dotnet-bot
 ms.author: dotnetcontent

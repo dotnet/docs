@@ -16,8 +16,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Const statement [Visual Basic]"
 ms.assetid: 495b318d-b7c5-4198-94f8-0790a541b07a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent

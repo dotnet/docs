@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::DefineGlobalVariable method [.NET Framework debugging]"
   - "DefineGlobalVariable method [.NET Framework debugging]"
 ms.assetid: 843c904a-8176-4d8f-bd47-b4d4c29f4c5c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

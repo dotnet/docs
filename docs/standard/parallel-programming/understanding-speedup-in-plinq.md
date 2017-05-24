@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, performance tuning"
 ms.assetid: 53706c7e-397d-467a-98cd-c0d1fd63ba5e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -46,7 +44,6 @@ The primary purpose of PLINQ is to speed up the execution of LINQ to Objects que
     var queryB = from num in numberList.AsParallel()  
                  where num % 2 > 0  
                  select num; //not as good for PLINQ  
-  
     ```  
   
 2.  The number of logical cores on the system (degree of parallelism).  

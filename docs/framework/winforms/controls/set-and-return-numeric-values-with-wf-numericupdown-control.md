@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Windows Forms controls, NumericUpDown"
   - "NumericUpDown control [Windows Forms], setting and returning values"
 ms.assetid: 5bd8f8cd-4c12-49ea-9cc3-2a647d064689
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -33,12 +31,10 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
   
     ```vb  
     NumericUpDown1.Value = 55  
-  
     ```  
   
     ```csharp  
     numericUpDown1.Value = 55;  
-  
     ```  
   
     ```cpp  
@@ -51,12 +47,10 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
   
     ```vb  
     NumericUpDown1.UpButton()  
-  
     ```  
   
     ```csharp  
     numericUpDown1.UpButton();  
-  
     ```  
   
     ```cpp  
@@ -73,7 +67,6 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
     Else  
        MessageBox.Show("The customer is ineligible for a senior citizen discount.")  
     End If  
-  
     ```  
   
     ```csharp  
@@ -85,7 +78,6 @@ The numeric value of the Windows Forms <xref:System.Windows.Forms.NumericUpDown>
     {  
        MessageBox.Show("The customer is ineligible for a senior citizen discount.");  
     }  
-  
     ```  
   
     ```cpp  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataImport::FindMemberRef method [.NET Framework metadata]"
   - "FindMemberRef method [.NET Framework metadata]"
 ms.assetid: 1ccda329-d752-4d89-abe8-511af3c3f4c9
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

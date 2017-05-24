@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "width properties"
   - "Panel control, width properties of elements"
 ms.assetid: 6ee04a9d-63f0-4f5b-a406-0a8cd4c35729
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

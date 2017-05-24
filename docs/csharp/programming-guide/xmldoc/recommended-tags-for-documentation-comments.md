@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "XML [C#], tags"
   - "XML documentation [C#], tags"
 ms.assetid: 6e98f7a9-38f4-4d74-b644-1ff1b23320fd
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 20
 author: "BillWagner"
 ms.author: "wiwagn"

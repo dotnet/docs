@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "ProgressBar control [Windows Forms], setting value displayed"
   - "progress controls, setting value displayed"
 ms.assetid: 0e5010ad-1e9a-4271-895e-5a3d24d37a26
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -70,7 +68,6 @@ manager: "wpickett"
        ' Updates the label to show that a record was read.  
        Label1.Text = "Records Read = " & ProgressBar1.Value.ToString()  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -133,7 +130,6 @@ manager: "wpickett"
           Label1.Text = "# of Files Read = " & ProgressBar1.Value.ToString  
        Next i  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -204,7 +200,6 @@ manager: "wpickett"
           ProgressBar1.Value.ToString()  
        Next i  
     End Sub  
-  
     ```  
   
     ```csharp  

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "limitations of XamlWriter.Save"
   - "serialization limitations of XamlWriter.Save"
 ms.assetid: f86acc91-2b67-4039-8555-505734491d36
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

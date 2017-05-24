@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "application domains, unloading"
   - "unloading application domains"
 ms.assetid: f356116d-e415-4f7c-a332-6e6a60227192
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

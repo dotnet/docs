@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "security events [.NET Framework]"
   - "ETW, security events (CLR)"
 ms.assetid: 0ed69f73-5c01-4514-bd63-979c6e38d41d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mairaw"
 ms.author: "mairaw"

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "dependency properties, XAML loading and"
   - "loading XML data"
 ms.assetid: 6eea9f4e-45ce-413b-a266-f08238737bf2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

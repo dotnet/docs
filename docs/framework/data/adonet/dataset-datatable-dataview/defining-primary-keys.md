@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 2ea85959-e763-4669-8bd9-46a9dab894bd
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -32,7 +30,6 @@ workTable.PrimaryKey = New DataColumn() {workTable.Columns("CustID")}
 Dim columns(1) As DataColumn  
 columns(0) = workTable.Columns("CustID")  
 workTable.PrimaryKey = columns  
-  
 ```  
   
 ```csharp  
@@ -57,7 +54,6 @@ Dim keyColumn(2) As DataColumn
 keyColumn(0) = workTable.Columns("CustLName")  
 keyColumn(1) = workTable.Columns("CustFName")  
 workTable.PrimaryKey = keyColumn  
-  
 ```  
   
 ```csharp  

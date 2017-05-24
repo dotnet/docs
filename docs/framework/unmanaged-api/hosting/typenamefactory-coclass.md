@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "TypeNameFactory coclass [.NET Framework hosting]"
 ms.assetid: c853bb58-c9c5-476b-8e80-608aa53ea18d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

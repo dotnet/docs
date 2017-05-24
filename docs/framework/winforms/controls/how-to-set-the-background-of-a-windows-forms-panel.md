@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Panel control [Windows Forms], background"
   - "colors, Windows Forms Panel controls"
 ms.assetid: 096cbd8d-45cc-47b8-b1ef-a27f60ea8be0
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -33,12 +31,10 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
   
     ```vb  
     Panel1.BackColor = Color.AliceBlue  
-  
     ```  
   
     ```csharp  
     panel1.BackColor = Color.AliceBlue;  
-  
     ```  
   
     ```cpp  
@@ -54,7 +50,6 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
         (System.Environment.GetFolderPath _  
         (System.Environment.SpecialFolder.Personal) _  
         & "\Image.gif")  
-  
     ```  
   
     ```csharp  
@@ -65,7 +60,6 @@ A Windows Forms <xref:System.Windows.Forms.Panel> control can display both a bac
        (System.Environment.GetFolderPath  
        (System.Environment.SpecialFolder.Personal)  
        + @"\Image.gif");  
-  
     ```  
   
     ```cpp  

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 6bdc4590-aa9c-4ec8-9345-879d780cd141
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies settings for an instance of <xref:System.Workflow.Runtime.WorkflowRunt
 ## Syntax  
   
 ```  
-  
 <workflowRuntime>  
    <services>  
       <add type="String"/>  

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "registry keys, creating [C#]"
   - "keys, creating in registry"
 ms.assetid: 8fa475b0-e01f-483a-9327-fd03488fdf5d
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

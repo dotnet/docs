@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CorDebugCreateProcessFlags enumeration [.NET Framework debugging]"
 ms.assetid: e709acce-6a17-4346-b38a-467dba567358
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "world-ready applications"
   - "global applications, creating Windows Forms"
 ms.assetid: 72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

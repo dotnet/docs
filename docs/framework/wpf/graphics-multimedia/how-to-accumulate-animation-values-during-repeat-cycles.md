@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "accumulating animation values across repeating cycles"
   - "animation, accumulating values across repeating cycles"
 ms.assetid: 548df369-c7cc-4dab-b569-08b95ced2e7e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

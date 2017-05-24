@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: fe8297a1-1fc3-48ce-8eeb-f70f63f857aa
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 6
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -37,7 +35,6 @@ EdmGen.exe is a command-line tool used for working with [!INCLUDE[adonet_ef](../
 ## Syntax  
   
 ```  
-  
 EdmGen /mode:choice [options]  
 ```  
   

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "dependency properties, access"
   - "security, dependency properties"
 ms.assetid: d10150ec-90c5-4571-8d35-84bafa2429a4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

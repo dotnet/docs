@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "XAML [XAML Services], XamlServices class"
   - "XamlServices class [XAML Services], how to use"
 ms.assetid: 6ac27fad-3687-4d7a-add1-3e90675fdfde
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: "wadepickett"
 ms.author: "wpickett"

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], text boxes"
   - "RichTextBox control [Windows Forms], linking to Web pages"
 ms.assetid: 95089a37-a202-4f7a-94ee-6ee312908851
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -51,7 +49,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
           ' with link text as URL.  
           p = System.Diagnostics.Process.Start("IExplore.exe", e.LinkText)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -64,7 +61,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
        // with link text as URL.  
        p = System.Diagnostics.Process.Start("IExplore.exe", e.LinkText);  
     }  
-  
     ```  
   
     ```cpp  
@@ -94,7 +90,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
     this.richTextBox1.LinkClicked += new   
        System.Windows.Forms.LinkClickedEventHandler  
        (this.richTextBox1_LinkClicked);  
-  
     ```  
   
     ```cpp  
@@ -109,7 +104,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
     Public Sub StopWebProcess()  
        p.Kill()  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -117,7 +111,6 @@ The Windows Forms <xref:System.Windows.Forms.RichTextBox> control can display We
     {  
        p.Kill();  
     }  
-  
     ```  
   
     ```cpp  

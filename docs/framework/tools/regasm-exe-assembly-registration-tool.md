@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "Regasm.exe"
   - "registering assemblies"
 ms.assetid: e190e342-36ef-4651-a0b4-0e8c2c0281cb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -37,7 +35,6 @@ The Assembly Registration tool reads the metadata within an assembly and adds th
 ## Syntax  
   
 ```  
-  
 regasm assemblyFile [options]  
 ```  
   

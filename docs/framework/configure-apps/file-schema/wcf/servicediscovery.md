@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a3c68a4a-fc95-43c5-aacb-785936c0cf39
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -58,7 +56,6 @@ Specifies the discoverability of service endpoints.
  The following configuration example specifies that the CalculatorService to be discoverable, and optionally specifies the announcement endpoint to be used.  
   
 ```  
-  
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
@@ -78,7 +75,6 @@ Specifies the discoverability of service endpoints.
     </behavior>  
   </serviceBehaviors>  
 </behaviors>  
-  
 ```  
   
 ## See Also  

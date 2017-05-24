@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "bypasslist element"
   - "<bypasslist> element"
 ms.assetid: 124446b7-abb1-4e5e-a492-b64398f268f1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
@@ -39,7 +37,6 @@ Provides a set of regular expressions that describe addresses that do not use a 
 ## Syntax  
   
 ```  
-  
       <bypasslist>   
 </bypasslist>  
 ```  

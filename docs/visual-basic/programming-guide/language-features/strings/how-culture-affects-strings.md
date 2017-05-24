@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "locale, effect on strings"
   - "strings [Visual Basic], locale dependence"
 ms.assetid: c4664444-ee0d-47bf-bef1-eaa3c54bdd7f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

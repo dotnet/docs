@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "interoperation with unmanaged code, registering assemblies"
   - "registering assemblies"
 ms.assetid: 87925795-a3ae-4833-b138-125413478551
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"

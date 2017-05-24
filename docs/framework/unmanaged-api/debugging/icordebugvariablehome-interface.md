@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: 76f2bf3b-759f-4eed-bce7-119415b25915
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6
@@ -50,7 +48,6 @@ Represents a local variable or argument of a function.
  The following code fragment uses the [ICorDebugCode4](../../../../docs/framework/unmanaged-api/debugging/icordebugcode4-interface.md) object named `pCode4`.  
   
 ```cpp  
-  
 ICorDebugCode4 *pCode4 = NULL;  
 pCode->QueryInterface(IID_ICorDebugCode4, &pCode4);  
   
@@ -87,7 +84,6 @@ for (int i = 0; i < celtFetched; i++)
         break;  
     }  
 }  
-  
 ```  
   
 ## Requirements  

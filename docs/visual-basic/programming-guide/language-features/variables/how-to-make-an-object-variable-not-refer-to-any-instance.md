@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Nothing keyword, variable assignment"
   - "object variables, null reference"
 ms.assetid: e6d30578-bdae-4142-a3ac-a10697bf696a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

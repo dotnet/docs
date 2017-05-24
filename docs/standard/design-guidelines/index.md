@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "class library design guidelines [.NET Framework], about"
   - "class library design guidelines [.NET Framework]"
 ms.assetid: 5fbcaf4f-ea2a-4d20-b0d6-e61dee202b4b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

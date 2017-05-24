@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "controls [WPF], Calendar"
   - "Calendar control [WPF]"
 ms.assetid: ee844e4a-eefe-48e2-bd0d-1d82cc5e960b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

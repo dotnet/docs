@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRMemoryNotificationCallback::OnMemoryNotification method [.NET Framework hosting]"
   - "OnMemoryNotification method [.NET Framework hosting]"
 ms.assetid: 5612a44d-56cc-4f34-af31-8c9809ba9431
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

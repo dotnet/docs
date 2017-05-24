@@ -13,8 +13,6 @@ helpviewer_keywords:
   - ".NET Framework 4.5, migrating from 1.1"
   - ".NET Framework 1.1, migrating to .NET Framework 4.5"
 ms.assetid: 7ead0cb3-3b19-414a-8417-a1c1fa198d9e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,7 +32,6 @@ manager: "wpickett"
           <supportedRuntime version="v4.0"/>  
        </startup>  
     </configuration>  
-  
     ```  
   
 -   You can recompile the application with a compiler that targets the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. If you originally used Visual Studio 2003 to develop and compile your solution, you can open the solution in [!INCLUDE[vs_dev10_long](../../../includes/vs-dev10-long-md.md)] and use the **Project Compatibility** dialog box to convert the solution and project files from the formats used by Visual Studio 2003 to the Microsoft Build Engine (MSBuild) format used by [!INCLUDE[vs_dev10_long](../../../includes/vs-dev10-long-md.md)].  
@@ -56,7 +53,6 @@ manager: "wpickett"
       <CompatSortNLSVersion enabled="4096"/>  
    </runtime>  
 </configuration>  
-  
 ```  
   
  However, in some cases, you may have to modify your source code and recompile your application.  

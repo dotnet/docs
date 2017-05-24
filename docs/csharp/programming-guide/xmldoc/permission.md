@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "<permission> C# XML tag"
   - "permission C# XML tag"
 ms.assetid: 769e93fe-8404-443f-bf99-577aa42b6a49
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

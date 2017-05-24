@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "division assignment operator (/=) [C#]"
   - "/= (division assignment operator) [C#]"
 ms.assetid: 50fc02b0-ee9c-4c3e-b58d-d591282caf1c
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

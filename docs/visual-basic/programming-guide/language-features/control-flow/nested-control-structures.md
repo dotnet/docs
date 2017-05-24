@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "structures, nested control"
   - "nested control statements"
 ms.assetid: cf60b061-65d9-44a8-81f2-b0bdccd23a05
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

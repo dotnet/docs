@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "UI Automation, AutomationId property"
   - "properties, AutomationId"
 ms.assetid: a24e807b-d7c3-4e93-ac48-80094c4e1c90
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 21
 author: "Xansky"
 ms.author: "mhopkins"

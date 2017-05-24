@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "parallel foreach loop, how to use local state"
 ms.assetid: 24b10041-b30b-45cb-aa65-66cf568ca76d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"

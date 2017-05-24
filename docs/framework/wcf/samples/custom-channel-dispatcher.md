@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 813acf03-9661-4d57-a3c7-eeab497321c6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -50,7 +48,6 @@ Server replied: You said: Howdy. Message id: 2
 Server replied: You said: Howdy. Message id: 3  
 Server replied: You said: Howdy. Message id: 4  
 Server replied: You said: Howdy. Message id: 5  
-  
 ```  
   
  You can also browse the service from a browser so that an HTTP-GET message gets processed on the server. This gets you well-formatted HTML text back.  

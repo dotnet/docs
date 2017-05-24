@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0658549c-3f65-46dd-8c5c-9895441ed734
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Specifies the security settings of a local service for this binding.
 ## Syntax  
   
 ```  
-  
 <security>  
    <localServiceSettings detectReplays="Boolean"  
       inactivityTimeout="TimeSpan"  

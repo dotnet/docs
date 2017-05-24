@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "data grids, object binding"
   - "object binding, DataGridView control"
 ms.assetid: cb8f29fa-577e-4e2b-883f-3a01c6189b9c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

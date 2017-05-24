@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "elements, moving"
   - "UI Automation, moving elements"
 ms.assetid: 4042cb44-e27e-4a03-ac36-9be1eed65b47
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 19
 author: "Xansky"
 ms.author: "mhopkins"

@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "snaplines"
   - "controls [Windows Forms], positioning"
 ms.assetid: 4693977e-34a4-4f19-8221-68c3120c2b2b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

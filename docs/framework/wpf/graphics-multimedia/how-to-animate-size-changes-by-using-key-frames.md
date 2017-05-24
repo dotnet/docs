@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "animation, size changes with key frames"
   - "size changes, animating with key frames"
 ms.assetid: 86bd2950-d4c9-4ec4-aa8d-7dc3ccadded4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

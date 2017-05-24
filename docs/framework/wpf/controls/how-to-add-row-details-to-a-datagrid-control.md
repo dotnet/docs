@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "row details [WPF], DataGrid"
   - "DataGrid [WPF], row details"
 ms.assetid: 0bdc6f50-9b4c-483f-9df6-a47a1fde998b
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

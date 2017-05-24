@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrPPMT_PerGT0AndLTNPer"
 ms.assetid: 5f3fadba-d32c-4e52-b949-85a907e6c12f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

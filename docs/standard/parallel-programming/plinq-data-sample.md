@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "PLINQ queries, sample data"
 ms.assetid: 4fccbb35-eaa5-44e9-a252-a5c3d4bc7604
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -861,7 +859,6 @@ PRODUCTS
 76,Lakkalikööri,18.0000  
 77,Original Frankfurter grüne Soße,13.0000  
 END PRODUCTS  
-  
 ```  
   
 ## See Also  

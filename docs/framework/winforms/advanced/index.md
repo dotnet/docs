@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Windows Forms, enhancing"
   - "Windows Forms, adding features"
 ms.assetid: 733d1219-d6ad-4256-a55b-9eccf47f5a06
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

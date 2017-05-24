@@ -23,8 +23,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CompareAssemblyIdentity function [.NET Framework fusion]"
 ms.assetid: 8b364ae1-8efa-4744-a7da-81fd093d84d6
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "templates [WPF], ProgressBar"
   - "states [WPF], ProgressBar"
 ms.assetid: 935aa600-16e6-4947-a905-37a189a583dd
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - ". operator [C#]"
   - "dot operator (.) [C#]"
 ms.assetid: a1f54b52-b686-4ae5-a48e-a2a9ebd0eb7b
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

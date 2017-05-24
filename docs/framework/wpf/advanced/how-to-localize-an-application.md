@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "LocBaml tool"
   - "applications, localizing"
 ms.assetid: 5001227e-9326-48a4-9dcd-ba1b89ee6653
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent

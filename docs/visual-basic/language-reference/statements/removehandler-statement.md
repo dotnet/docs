@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "RemoveHandler keyword"
   - "RemoveHandler statement"
 ms.assetid: 647cd825-e877-4910-b4f1-8d168beebe6a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "IMEMode property"
   - "globalization [Windows Forms], character sets"
 ms.assetid: c60ae399-0dab-4f07-9dea-6dbfb15ec0ae
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "TypeArguments attribute in XAML [XAML Services]"
   - "XAML [XAML Services], x:TypeArguments attribute"
 ms.assetid: 86561058-d393-4a44-b5c3-993a4513ea74
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 18
 author: "wadepickett"
 ms.author: "wpickett"

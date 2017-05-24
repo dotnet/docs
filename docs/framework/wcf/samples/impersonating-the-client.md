@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Impersonating the Client Sample [Windows Communication Foundation]"
   - "impersonation, Windows Communication Foundation sample"
 ms.assetid: 8bd974e1-90db-4152-95a3-1d4b1a7734f8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 25
 author: "Erikre"
 ms.author: "erikre"
@@ -41,7 +39,6 @@ public double Add(double n1, double n2)
     DisplayIdentityInformation();  
     return result;  
 }  
-  
 ```  
   
  As a result, the security context of the executing thread is switched to impersonate the caller before entering the `Add` method and reverted on exiting the method.  
@@ -59,7 +56,6 @@ static void DisplayIdentityInformation()
          WindowsIdentity.GetCurrent().Token.ToString());  
     return;  
 }  
-  
 ```  
   
  The `Subtract` method on the service impersonates the caller using imperative calls as shown in the following sample code.  

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "reading text from files"
   - "files, reading"
 ms.assetid: 384033c6-18f9-4d59-9610-36371226558f
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

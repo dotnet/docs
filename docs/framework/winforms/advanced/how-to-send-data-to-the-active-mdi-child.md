@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Clipboard, pasting"
   - "Clipboard, getting data from"
 ms.assetid: 1047d2fe-1235-46db-aad9-563aea1d743b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -63,7 +61,6 @@ Often, within the context of [Multiple-Document Interface (MDI) Applications](..
           End Try  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -97,7 +94,6 @@ Often, within the context of [Multiple-Document Interface (MDI) Applications](..
           }  
        }  
     }  
-  
     ```  
   
 ## See Also  

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c44d86d2-1160-44d7-9c7a-297b12eccc7f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies settings for transport level security when using the [\<netPeerTcpBind
 ## Syntax  
   
 ```  
-  
 <netPeerTcpBinding>  
     <binding>  
         <security>  

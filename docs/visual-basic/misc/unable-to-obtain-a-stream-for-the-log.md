@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLog_ExhaustedPossibleStreamNames"
 ms.assetid: 33994f52-8efb-4790-a459-033e5c1db632
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "caller security checks"
   - "link demands"
 ms.assetid: a33fd5f9-2de9-4653-a4f0-d9df25082c4d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "mairaw"
 ms.author: "mairaw"

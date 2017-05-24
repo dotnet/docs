@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Visual Basic code, enumerations"
   - "enumerations [Visual Basic], about enumerations"
 ms.assetid: b42a38ee-5e77-4f99-a037-e3a127ead89c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

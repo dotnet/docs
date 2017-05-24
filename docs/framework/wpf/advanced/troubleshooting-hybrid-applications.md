@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "hybrid applications [WPF interoperability]"
   - "message loops [WPF]"
 ms.assetid: f440c23f-fa5d-4d5a-852f-ba61150e6405
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

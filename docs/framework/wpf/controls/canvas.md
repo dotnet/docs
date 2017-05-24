@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "controls [WPF], Canvas"
   - "Canvas control [WPF]"
 ms.assetid: fdb390e9-1bba-4b5f-87fe-c3bc246fa7e9
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 63
 author: dotnet-bot
 ms.author: dotnetcontent

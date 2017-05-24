@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "/utf8output compiler option [C#]"
   - "-utf8output compiler option [C#]"
 ms.assetid: 27ff7381-c281-45d7-b2eb-1ad644b1354e
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 10
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "graphics [WPF], subpaths"
   - "subpaths"
 ms.assetid: 104a862c-dde2-4e62-ac87-80660dd1681c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

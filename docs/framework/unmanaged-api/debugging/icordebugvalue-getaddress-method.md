@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugValue::GetAddress method [.NET Framework debugging]"
   - "GetAddress method, ICorDebugValue interface [.NET Framework debugging]"
 ms.assetid: a247c792-45e1-4538-9e1f-b46acca4a463
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

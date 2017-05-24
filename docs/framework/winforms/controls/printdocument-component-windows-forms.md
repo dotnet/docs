@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "PrintDocument component [Windows Forms]"
   - "printing [Windows Forms], documents"
 ms.assetid: 5af6a51d-66f6-43cd-a8cd-d64eb18fe7e7
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

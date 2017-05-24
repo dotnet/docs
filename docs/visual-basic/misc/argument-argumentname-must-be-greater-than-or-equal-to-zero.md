@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrFinancial_ArgGEZero1"
 ms.assetid: 7b901c2a-3447-4afc-91f8-8fa5f6f961d7
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

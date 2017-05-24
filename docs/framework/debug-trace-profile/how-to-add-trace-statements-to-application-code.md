@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "trace switches, conditional writes based on switches"
   - "WriteIf method"
 ms.assetid: f3a93fa7-1717-467d-aaff-393e5c9828b4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
@@ -45,7 +43,6 @@ The methods used most often for tracing are the methods for writing output to li
     Dim errorFlag As Boolean = False  
     Trace.WriteLine("Error in AppendData procedure.")  
     Trace.WriteLineIf(errorFlag, "Error in AppendData procedure.")  
-  
     ```  
   
     ```csharp  
@@ -53,7 +50,6 @@ The methods used most often for tracing are the methods for writing output to li
     System.Diagnostics.Trace.WriteLine ("Error in AppendData procedure.");  
     System.Diagnostics.Trace.WriteLineIf(errorFlag,   
        "Error in AppendData procedure.");  
-  
     ```  
   
 ### To write a partial line  
@@ -67,7 +63,6 @@ The methods used most often for tracing are the methods for writing output to li
     Trace.WriteIf(errorFlag, "Error in AppendData procedure.")  
     Debug.WriteIf(errorFlag, "Transaction abandoned.")  
     Trace.Write("Invalid value for data request")  
-  
     ```  
   
     ```csharp  
@@ -76,7 +71,6 @@ The methods used most often for tracing are the methods for writing output to li
        "Error in AppendData procedure.");  
     System.Diagnostics.Debug.WriteIf(errorFlag, "Transaction abandoned.");  
     Trace.Write("Invalid value for data request");  
-  
     ```  
   
 ### To verify that certain conditions exist either before or after you execute a method  
@@ -86,13 +80,11 @@ The methods used most often for tracing are the methods for writing output to li
     ```vb  
     Dim I As Integer = 4  
     Trace.Assert(I = 5, "I is not equal to 5.")  
-  
     ```  
   
     ```csharp  
     int I = 4;  
     System.Diagnostics.Trace.Assert(I == 5, "I is not equal to 5.");  
-  
     ```  
   
     > [!NOTE]

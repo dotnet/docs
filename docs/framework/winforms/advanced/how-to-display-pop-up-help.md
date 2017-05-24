@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "HelpProvider component [Windows Forms]"
   - "Help, adding to dialog boxes"
 ms.assetid: 218aa81e-e87e-4d67-af05-11627bbdce3b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

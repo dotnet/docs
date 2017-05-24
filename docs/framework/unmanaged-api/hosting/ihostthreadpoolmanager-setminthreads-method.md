@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetMinThreads method, IHostThreadPoolManager interface [.NET Framework hosting]"
   - "IHostThreadPoolManager::SetMinThreads method [.NET Framework hosting]"
 ms.assetid: 10409db9-9fd2-4e4d-b8cd-cf6fec0afaa2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

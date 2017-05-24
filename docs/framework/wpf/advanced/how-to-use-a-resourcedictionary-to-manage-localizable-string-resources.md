@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "ResourceDictionary [WPF]"
   - "localization [WPF], packaging string resources"
 ms.assetid: 19e7d9a5-20df-4ad3-b157-fe6515902e5e
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

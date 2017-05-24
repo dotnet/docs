@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "dynamic [C#]"
   - "dynamic keyword [C#]"
 ms.assetid: 9e797102-cc83-4964-bf58-afe4f54d16bc
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 25
 author: "BillWagner"
 ms.author: "wiwagn"

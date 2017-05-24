@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "w compiler option [C#]"
   - "warn compiler option [C#]"
 ms.assetid: 5f80ff59-4991-4382-9f9a-77da18446e71
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

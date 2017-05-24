@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CodeChunkInfo structure [.NET Framework debugging]"
 ms.assetid: 0f482454-8517-48de-ba7a-d7aedab13bb5
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

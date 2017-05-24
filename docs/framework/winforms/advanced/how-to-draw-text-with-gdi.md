@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "drawing, text"
   - "Windows Forms, drawing text with GDI"
 ms.assetid: 2a19fe5d-2ace-451c-94db-01cb1118ef7b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

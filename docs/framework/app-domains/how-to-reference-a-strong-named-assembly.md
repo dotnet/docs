@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], strong-named"
   - "assembly binding, strong-named"
 ms.assetid: 4c6a406a-b5eb-44fa-b4ed-4e95bb95a813
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"

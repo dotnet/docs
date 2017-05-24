@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "event handling [.NET Framework], with multiple events"
   - "events [.NET Framework], multiple"
 ms.assetid: 30047cba-e2fd-41c6-b9ca-2ad7a49003db
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

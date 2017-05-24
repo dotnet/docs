@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 0c2f95c4-cc12-4fb5-a70c-7fc6fa95db58
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 20
 author: "Erikre"
 ms.author: "erikre"
@@ -26,7 +24,6 @@ The `diagnostics` element defines settings that can be used by an administrator 
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
    <diagnostics etwProviderId="String"       performanceCounters="Off/ServiceOnly/All/Default"              wmiProviderEnabled="Boolean" >       <endToEndTracing activityTracing="Boolean"  
           messageFlowTracing="Boolean"  

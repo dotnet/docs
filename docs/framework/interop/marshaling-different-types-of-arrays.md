@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "marshaling, Arrays sample"
   - "data marshaling, Arrays sample"
 ms.assetid: c5ac9920-5b6e-4dc9-bf2d-1f6f8ad3b0bf
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

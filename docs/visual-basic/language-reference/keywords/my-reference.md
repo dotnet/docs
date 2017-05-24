@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "My feature"
   - "My reference"
 ms.assetid: 6f803bd7-21ff-4569-b1fe-b00a6678b1e3
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

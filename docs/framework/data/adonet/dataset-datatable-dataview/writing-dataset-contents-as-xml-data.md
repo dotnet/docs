@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fd15f8a5-3b4c-46d0-a561-4559ab2a4705
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 5
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -50,19 +48,16 @@ string xmlDS = custDS.GetXml();
   
 ```vb  
 custDS.WriteXml("Customers.xml", XmlWriteMode.WriteSchema)  
-  
 ```  
   
 ```csharp  
 custDS.WriteXml("Customers.xml", XmlWriteMode.WriteSchema);  
-  
 ```  
   
 ```vb  
 Dim xmlSW As System.IO.StreamWriter = New System.IO.StreamWriter("Customers.xml")  
 custDS.WriteXml(xmlSW, XmlWriteMode.WriteSchema)  
 xmlSW.Close()  
-  
 ```  
   
 ```csharp  

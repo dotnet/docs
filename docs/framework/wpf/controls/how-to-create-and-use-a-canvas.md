@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Canvas control, creating"
   - "Canvas control, using"
 ms.assetid: 420b9487-9a15-477c-9489-a22a4dec7779
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

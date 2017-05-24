@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "MDAs (managed debugging assistants), failed QueryInterface"
   - "managed debugging assistants (MDAs), failed QueryInterface"
 ms.assetid: 902dc863-34b3-477c-b433-b8a6bb6133c6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"

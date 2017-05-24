@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "declared elements, visibility"
   - "visibility, variables"
 ms.assetid: 44b7f62a-cb5c-4d50-bce9-60ae68f87072
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

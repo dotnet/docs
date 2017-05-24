@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 2868abfd-9f7b-412a-9cb5-f643f0fed146
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -48,7 +46,6 @@ End If
 For Each el As XElement In list1  
     Console.WriteLine(el)  
 Next  
-  
 ```  
   
  This example produces the following output:  

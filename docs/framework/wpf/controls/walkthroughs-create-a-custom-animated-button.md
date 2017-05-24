@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "buttons"
   - "animation, buttons"
 ms.assetid: e9532c72-460f-4898-9332-613fa21d746a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

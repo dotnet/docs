@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 63c7c695-44b6-4f31-bb9c-00f2763f525e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"
@@ -246,7 +244,6 @@ using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http:/
   </xs:complexType>  
   <xs:element name="ArrayOfQName" nillable="true" type="tns:ArrayOfQName" />  
 </xs:schema>  
-  
 ```  
   
  [!INCLUDE[crabout](../../../../includes/crabout-md.md)] the data contract serialization schema, see [Data Contract Schema Reference](../../../../docs/framework/wcf/feature-details/data-contract-schema-reference.md).

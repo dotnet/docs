@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "insertion points, TextBox controls"
   - "text boxes, controlling insertion point"
 ms.assetid: 5bee7d34-5121-429e-ab1f-d8ff67bc74c1
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -41,7 +39,6 @@ When a Windows Forms <xref:System.Windows.Forms.TextBox> control first receives 
        TextBox1.SelectionStart = 0  
        TextBox1.SelectionLength = 0  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -49,7 +46,6 @@ When a Windows Forms <xref:System.Windows.Forms.TextBox> control first receives 
        textBox1.SelectionStart = 0;  
        textBox1.SelectionLength = 0;  
     }  
-  
     ```  
   
     ```cpp  

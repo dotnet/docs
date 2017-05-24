@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "creating, buttons with automatic layout"
   - "automatic layout, creating buttons"
 ms.assetid: 96c206d0-9e77-4784-9d2d-5045aed2021c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "AutoReverse property of timelines"
   - "Timelines, AutoReverse property"
 ms.assetid: 1648dd90-1bee-409a-ac69-ac729867f557
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

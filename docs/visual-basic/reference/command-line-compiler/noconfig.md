@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "-noconfig compiler option [Visual Basic]"
   - "/noconfig compiler option [Visual Basic]"
 ms.assetid: a7405067-bd21-4171-adf4-a126fa3ad6c3
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: f3c0437d-006c-442e-bfb0-6b29216e4e29
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 28
 author: "Erikre"
 ms.author: "erikre"
@@ -75,7 +73,6 @@ public class CalculatorService : ICalculator
         return n1 / n2;  
     }  
 }  
-  
 ```  
   
  The sample uses a modified `netNamedPipeBinding` binding with no security. The binding is specified in the configuration files for the client and service. The binding type for the service is specified in the endpoint element’s `binding` attribute as shown in the following sample configuration.  

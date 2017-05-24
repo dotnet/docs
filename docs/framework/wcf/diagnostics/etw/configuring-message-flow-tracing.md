@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 15571ca2-bee2-47fb-ba10-fcbc09152ad0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ When [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] activity tracing
     <endToEndTracing propagateActivity="true" messageFlowTracing="true" />  
   </diagnostics>  
 </system.servicemodel>  
-  
 ```  
   
 > [!NOTE]
@@ -43,7 +40,6 @@ When [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] activity tracing
  Message flow tracing allows you to trace a request end to end.  With SOAP-based services an Activity ID is sent in a SOAP message header. REST requests do not contain this header so a special HTTP event header is used instead. The following code snippet shows how you can programmatically retrieve the Activity ID value:  
   
 ```vb  
-  
 Object output = null;                    
 if (OperationContext.Current.IncomingMessageProperties.TryGetValue(HttpRequestMessageProperty.Name, out output))  
 {  
@@ -51,15 +47,12 @@ if (OperationContext.Current.IncomingMessageProperties.TryGetValue(HttpRequestMe
    // Retrieve the Activity Id from the HTTP header    string e2eId = httpHeaders.Headers["E2EActivity"];  
    // ...  
 }  
-  
 ```  
   
  You can programmatically add the header using the following code:  
   
 ```csharp  
-  
 HttpContent content = new StreamContent(contentStream);  
 Guid correlation = Guid.NewGuid();  
 content.Headers.Add("E2EActivity", Convert.ToBase64String(correlation.ToByteArray()));  
-  
 ```

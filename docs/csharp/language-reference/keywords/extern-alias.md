@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "aliases [C#], extern keyword"
   - "aliases, extern keyword"
 ms.assetid: f487bf4f-c943-4fca-851b-e540c83d9027
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

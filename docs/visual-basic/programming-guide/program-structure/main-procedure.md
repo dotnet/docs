@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Main method [Visual Basic]"
   - "main function"
 ms.assetid: f0db283e-f283-4464-b521-b90858cc1b44
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

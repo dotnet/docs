@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ImportTypes2 method"
 ms.assetid: 32f3ba58-9695-41e9-ba58-fd19e45ed396
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

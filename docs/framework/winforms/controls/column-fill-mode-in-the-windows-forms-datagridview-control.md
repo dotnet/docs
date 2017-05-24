@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], column fill mode"
   - "data grids, column fill mode"
 ms.assetid: b4ef7411-ebf4-4e26-bb33-aecec90de80c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "CLSID_RESOLUTION_FLAGS enumeration [.NET Framework hosting]"
 ms.assetid: cd8b9879-962a-4811-aa46-2e2b6bae0d84
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

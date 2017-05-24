@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "parameters [C#], params"
   - "params keyword [C#]"
 ms.assetid: 1690815e-b52b-4967-8380-5780aff08012
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

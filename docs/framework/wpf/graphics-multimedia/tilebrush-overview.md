@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "TileBrush"
   - "brushes, TileBrush"
 ms.assetid: aa4a7b7e-d09d-44c2-8d61-310c50e08d68
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

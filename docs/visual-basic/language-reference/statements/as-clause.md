@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "As keyword, statement syntax"
   - "As keyword"
 ms.assetid: b4281ec8-2be5-49f7-aae8-ae0a96265b0d
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

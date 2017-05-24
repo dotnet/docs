@@ -15,8 +15,6 @@ dev_langs:
   - "C++"
   - "ESQL"
 ms.assetid: e2139412-8ea4-451b-8f10-91af18dfa3ec
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 5
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -28,7 +26,6 @@ You can perform physical paging by using the SKIP sub-clause in the ORDER BY cla
 ## Syntax  
   
 ```  
-  
 [ SKIP n ]  
 ```  
   

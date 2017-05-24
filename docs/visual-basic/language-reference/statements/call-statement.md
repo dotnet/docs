@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Call statement"
   - "procedures, calling"
 ms.assetid: e5b31571-6867-406f-b8e7-a3f9aae4723a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

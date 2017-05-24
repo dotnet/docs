@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "WCF, authentication"
   - "WCF, Windows authentication"
 ms.assetid: 181be4bd-79b1-4a66-aee2-931887a6d7cc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "Erikre"
 ms.author: "erikre"

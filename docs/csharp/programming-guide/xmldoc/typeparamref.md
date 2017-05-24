@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "typeparamref C# XML tag"
   - "<typeparamref> C# XML tag"
 ms.assetid: 6d8ffc58-12c5-4688-8db6-833a7ded5886
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

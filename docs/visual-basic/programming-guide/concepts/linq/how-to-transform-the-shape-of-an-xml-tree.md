@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 84b60854-48b2-452c-87f2-77d53e1d653a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -66,7 +64,6 @@ Console.WriteLine(newCustOrd)
  This code produces the following output:  
   
 ```xml  
-  
         <Root>  
 <Customer CustomerID="GREAL">  
   <CompanyName>Great Lakes Food Market</CompanyName>  
@@ -136,7 +133,6 @@ Sub Main()
         </PO>  
     Console.WriteLine(newPo)  
 End Sub  
-  
 ```  
   
  This code produces the following output:  

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerInfo2::GetThreadAppDomain method [.NET Framework profiling]"
   - "GetThreadAppDomain method [.NET Framework profiling]"
 ms.assetid: 4a11b264-8540-4732-aa35-bc2d95b95b8e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

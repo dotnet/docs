@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "controls [WPF], FlowDocumentScrollViewer"
   - "FlowDocumentScrollViewer control [WPF]"
 ms.assetid: 727b0a0a-b845-4aa9-9fd4-98f42ed738b4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 66
 author: dotnet-bot
 ms.author: dotnetcontent

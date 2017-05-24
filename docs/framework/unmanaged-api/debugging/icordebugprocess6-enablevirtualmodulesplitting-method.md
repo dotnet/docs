@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: e7733bd3-68da-47f9-82ef-477db5f2e32d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,11 +23,9 @@ Enables or disables virtual module splitting.
 ## Syntax  
   
 ```  
-  
 HRESULT EnableVirtualModuleSplitting(  
    BOOL enableSplitting  
 );  
-  
 ```  
   
 #### Parameters  

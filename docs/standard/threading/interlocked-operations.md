@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "Interlocked class, about Interlocked class"
   - "threading [.NET Framework], Interlocked class"
 ms.assetid: cbda7114-c752-4f3e-ada1-b1e8dd262f2b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

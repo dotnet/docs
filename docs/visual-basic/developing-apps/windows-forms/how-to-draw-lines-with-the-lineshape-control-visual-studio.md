@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "LineShape control"
   - "lines, drawing"
 ms.assetid: 83e71b4e-aa76-4f9b-b547-8704309fd1e5
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

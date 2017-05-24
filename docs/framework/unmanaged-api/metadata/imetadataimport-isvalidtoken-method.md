@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataImport::IsValidToken method [.NET Framework metadata]"
   - "IsValidToken method [.NET Framework metadata]"
 ms.assetid: aeb0fc63-9eff-4384-9284-cb9900572d74
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

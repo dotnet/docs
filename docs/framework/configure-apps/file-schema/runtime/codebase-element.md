@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "container tags, <codeBase> element"
   - "codeBase element"
 ms.assetid: d48a3983-2297-43ff-a14d-1f29d3995822
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
@@ -41,7 +39,6 @@ Specifies where the common language runtime can find an assembly.
 ## Syntax  
   
 ```  
-  
    <codeBase    
 version="Assembly version"  
 href="URL of assembly"/>  

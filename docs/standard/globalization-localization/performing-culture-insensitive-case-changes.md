@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "String.ToUpper method"
   - "culture parameter"
 ms.assetid: 822d551c-c69a-4191-82f4-183d82c9179c
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -41,7 +39,6 @@ The <xref:System.String.ToUpper%2A?displayProperty=fullName>, <xref:System.Strin
 Shared Function LookupKey(key As String) As Object  
    Return internalHashtable(key.ToLower())  
 End Function  
-  
 ```  
   
 ```csharp  
@@ -57,7 +54,6 @@ static object LookupKey(string key)
 Shared Function LookupKey(key As String) As Object  
     Return internalHashtable(key.ToLower(CultureInfo.InvariantCulture))  
 End Function  
-  
 ```  
   
 ```csharp  

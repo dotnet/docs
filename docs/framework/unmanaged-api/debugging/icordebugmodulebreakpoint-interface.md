@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorDebugModuleBreakpoint interface [.NET Framework debugging]"
 ms.assetid: 34667162-f314-475f-ae1b-ce9cb0fcbb83
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

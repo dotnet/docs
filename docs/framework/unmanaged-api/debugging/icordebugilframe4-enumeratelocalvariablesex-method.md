@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: 6f60aae6-70ec-4c4c-963a-138df98c4668
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6
@@ -35,12 +33,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT EnumerateLocalVariablesEx(  
    [in] ILCodeKind flags,   
    [out] ICorDebugValueEnum **ppValueEnum  
 );  
-  
 ```  
   
 #### Parameters  

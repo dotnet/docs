@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "localization, attributes"
   - "localization, comments"
 ms.assetid: ead2d9ac-b709-4ec1-a924-39927a29d02f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "controls [WPF], appearance specified by state"
   - "templates [WPF], custom for existing controls"
 ms.assetid: 678dd116-43a2-4b8c-82b5-6b826f126e31
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

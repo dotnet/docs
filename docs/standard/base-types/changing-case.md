@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "uppercase"
   - "lowercase"
 ms.assetid: 6805f81b-e9ad-4387-9f4c-b9bdb21b87c0
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

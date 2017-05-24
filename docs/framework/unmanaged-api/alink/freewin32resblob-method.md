@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "FreeWin32ResBlob method"
 ms.assetid: d941102b-2679-4c49-b15e-c0fc9c53e11f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4

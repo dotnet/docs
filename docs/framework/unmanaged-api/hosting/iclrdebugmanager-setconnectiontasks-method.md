@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetConnectionTasks method [.NET Framework hosting]"
   - "ICLRDebugManager::SetConnectionTasks method [.NET Framework hosting]"
 ms.assetid: b38bbc9a-872c-41a9-b8c3-ca011d25456a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

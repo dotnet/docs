@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "select keyword [C#]"
   - "select clause [C#]"
 ms.assetid: df01e266-5781-4aaa-80c4-67cf28ea093f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

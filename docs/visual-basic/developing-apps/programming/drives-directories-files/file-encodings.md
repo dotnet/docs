@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Unicode, file encoding"
   - "file encoding"
 ms.assetid: ea2c5f5f-bbb1-4150-9928-b9951fa6bc57
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

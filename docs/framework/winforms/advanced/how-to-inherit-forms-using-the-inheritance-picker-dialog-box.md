@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Inheritance Picker dialog box"
   - "inherited forms, creating"
 ms.assetid: 969b4c04-12aa-4297-93a2-0ae747447823
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

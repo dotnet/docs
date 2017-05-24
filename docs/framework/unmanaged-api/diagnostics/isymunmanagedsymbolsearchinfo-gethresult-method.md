@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ISymUnmanagedSymbolSearchInfo::GetHRESULT method [.NET Framework debugging]"
   - "GetHRESULT method [.NET Framework debugging]"
 ms.assetid: 6999dc3d-65d7-4bf6-bb0a-6efc0fc72588
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

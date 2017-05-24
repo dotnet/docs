@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "Rijndael"
   - "encryption [.NET Framework], asymmetric keys"
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"

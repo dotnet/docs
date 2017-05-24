@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "searching strings [C#]"
   - "strings [C#], searching with String methods"
 ms.assetid: fb1d9a6d-598d-4a35-bd5f-b86012edcb2b
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 8
 author: "BillWagner"
 ms.author: "wiwagn"

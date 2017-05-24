@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "media, synchronizing playback with events"
   - "multimedia, synchronizing media playback with events"
 ms.assetid: c4dbe632-6e7f-4d7f-9df5-98737a758bc3
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

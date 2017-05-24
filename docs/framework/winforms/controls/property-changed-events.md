@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], property changes (using code)"
   - "properties [Windows Forms], changes"
 ms.assetid: 268039ec-5aaa-4d76-b902-acccb036c850
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

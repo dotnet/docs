@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "<include> C# XML tag"
   - "include C# XML tag"
 ms.assetid: a8a70302-6196-4643-bd09-ef33f411f18f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

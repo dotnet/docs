@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: be566d55-9d50-4b2e-985d-52a5cc26cbbb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -28,7 +26,6 @@ Specifies settings for a service host.
 ## Syntax  
   
 ```  
-  
 <host>  
       <baseAddresses>  
          <baseAddress baseAddress="string" />  

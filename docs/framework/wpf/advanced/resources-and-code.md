@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "procedural code, accessing resources from"
   - "resources, creating with procedural code"
 ms.assetid: c1cfcddb-e39c-41c8-a7f3-60984914dfae
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

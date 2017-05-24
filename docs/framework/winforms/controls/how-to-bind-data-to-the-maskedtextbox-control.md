@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "data binding, MaskedTextBox control [Windows Forms]"
   - "MaskedTextBox control [Windows Forms], binding data"
 ms.assetid: 34b29f07-e8df-48d4-b08b-53fcca524708
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,8 +17,6 @@ dev_langs:
 helpviewer_keywords: 
   - "wrappers, creating manually"
 ms.assetid: cc2a70d8-6a58-4071-a8cf-ce28c018c09b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

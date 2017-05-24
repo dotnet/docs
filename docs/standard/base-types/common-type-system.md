@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "namespaces [.NET Framework], types"
   - "types, about types"
 ms.assetid: 53c57c96-83e1-4ee3-9543-9ac832671a89
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 25
 author: "rpetrusha"
 ms.author: "ronpet"

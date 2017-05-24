@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "menu items, hiding"
   - "hiding menu items"
 ms.assetid: 418a768f-808a-44cd-8cef-f4e161883621
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -34,17 +32,14 @@ Hiding menu items is a way to control the user interface of your application and
   
     ```vb  
     MenuItem3.Visible = False  
-  
     ```  
   
     ```csharp  
     menuItem3.Visible = false;  
-  
     ```  
   
     ```cpp  
     menuItem3->Visible = false;  
-  
     ```  
   
 ## See Also  

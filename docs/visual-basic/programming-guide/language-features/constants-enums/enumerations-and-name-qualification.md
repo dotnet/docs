@@ -27,8 +27,6 @@ helpviewer_keywords:
   - "naming conventions, naming conflicts"
   - "declarations, namespaces"
 ms.assetid: 08ba2738-df52-4140-bc55-f57c871c9b73
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

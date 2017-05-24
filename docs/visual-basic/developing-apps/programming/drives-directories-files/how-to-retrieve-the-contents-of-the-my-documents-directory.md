@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "My Documents directory"
 ms.assetid: 26560d01-7dda-4457-8e95-21db23d71aea
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

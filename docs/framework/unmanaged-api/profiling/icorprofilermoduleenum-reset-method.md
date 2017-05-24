@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "Reset method, ICorProfilerModuleEnum interface [.NET Framework profiling]"
   - "ICorProfilerModuleEnum::Reset method [.NET Framework profiling]"
 ms.assetid: c9110b49-823c-4ba9-9a4c-198afeb7780e
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

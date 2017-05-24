@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "My.Application.Log object, walkthroughs"
   - "event logs, changing output location"
 ms.assetid: ecc74f95-743c-450d-93f6-09a30db0fe4a
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

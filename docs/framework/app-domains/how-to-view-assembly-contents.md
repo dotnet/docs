@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "MSIL"
   - "viewing MSIL information"
 ms.assetid: fb7baaab-4c0d-47ad-8fd3-4591cf834709
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 11
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -50,7 +48,6 @@ You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ild
  Running the command ildasm.exe on the Hello.exe assembly and double-clicking the MANIFEST icon in the IL DASM window produces the following output:  
   
 ```  
-  
 // Metadata version: v4.0.30319  
 .assembly extern mscorlib  
 {  
@@ -73,7 +70,6 @@ You can use the [Ildasm.exe (IL Disassembler)](../../../docs/framework/tools/ild
 .subsystem 0x0003       // WINDOWS_CUI  
 .corflags 0x00000001    //  ILONLY  
 // Image base: 0x00600000  
-  
 ```  
   
  The following table describes each directive in the assembly manifest of the Hello.exe assembly used in the example.  

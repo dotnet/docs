@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "code modules"
   - "multifile assemblies"
 ms.assetid: 261c5583-8a76-412d-bda7-9b8ee3b131e5
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

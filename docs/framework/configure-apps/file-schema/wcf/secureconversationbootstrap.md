@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 66b46f95-fa2d-4b5b-b6ce-0572ab0cdd50
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -30,7 +28,6 @@ Specifies the default values used for initiating a secure conversation service.
 ## Syntax  
   
 ```  
-  
 <secureConversationBootstrap  
    allowSerializedSigningTokenOnReply="Boolean"  
    authenticationMode="AuthenticationMode"  

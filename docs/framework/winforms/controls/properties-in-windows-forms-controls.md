@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], properties"
   - "properties [Windows Forms]"
 ms.assetid: 2785279b-fb57-4937-8f6b-2050e475db6f
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

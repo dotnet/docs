@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "IEnumRAWINPUTDEVICE interface"
 ms.assetid: 88c8b389-a48b-46b9-b895-8ed7b1e26fea
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "DataGridView control [Windows Forms], column types"
   - "data grids, columns"
 ms.assetid: f0a0a9f1-8757-4bfd-891f-d7d12870dbed
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "data binding, Master-Detail data paradigm"
   - "Master-Detail data paradigm"
 ms.assetid: 11429b9e-058d-4084-bfb6-2cf209c8ddf7
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

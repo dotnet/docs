@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "batching messages [WCF]"
 ms.assetid: 53305392-e82e-4e89-aedc-3efb6ebcd28c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "Erikre"
 ms.author: "erikre"

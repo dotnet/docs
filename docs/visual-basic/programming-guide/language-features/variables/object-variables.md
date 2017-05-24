@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "objects [Visual Basic], accessing"
   - "object variables"
 ms.assetid: 6169a196-2b13-4ba5-a205-154bc1b87844
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

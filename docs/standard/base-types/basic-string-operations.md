@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "strings [.NET Framework], basic string operations"
   - "custom strings"
 ms.assetid: 8133d357-90b5-4b62-9927-43323d99b6b6
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

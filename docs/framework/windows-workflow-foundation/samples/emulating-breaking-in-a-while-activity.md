@@ -66,7 +66,6 @@ new While(env => i.Get(env) < this.Vendors.Get(env).Count && reliableVendor.Get(
         }  
     }  
 }  
-  
 ```  
   
 #### To use this sample  

@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "clients [WCF], security considerations"
 ms.assetid: 44c8578c-9a5b-4acd-8168-1c30a027c4c5
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "BrucePerlerMS"
 ms.author: "bruceper"

@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "cancellation, how to register callbacks"
 ms.assetid: 8838dd75-18ed-4b8b-b322-cd4531faac64
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"

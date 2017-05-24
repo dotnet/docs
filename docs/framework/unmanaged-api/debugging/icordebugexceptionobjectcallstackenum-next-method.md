@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugExceptionObjectCallStackEnum::Next method [.NET Framework debugging]"
   - "Next method, ICorDebugExceptionObjectCallStackEnum interface [.NET Framework debugging]"
 ms.assetid: 3328a2c0-1e48-4a54-802a-9b474cf82c21
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 3

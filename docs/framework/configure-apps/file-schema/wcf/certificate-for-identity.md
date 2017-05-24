@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 4aeccaf7-8f23-495c-aa5f-5bd8b5d4a10c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"
@@ -28,7 +26,6 @@ Specifies an X.509 certificate used to validate a server to a client.
 ## Syntax  
   
 ```  
-  
 <certificate encodedValue = "Sring" />  
 ```  
   

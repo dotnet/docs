@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "?: operator [C#]"
   - "conditional operator (?:) [C#]"
 ms.assetid: e83a17f1-7500-48ba-8bee-2fbc4c847af4
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -51,7 +49,6 @@ condition ? first_expression : second_expression;
  You can express calculations that might otherwise require an `if-else` construction more concisely by using the conditional operator. For example, the following code uses first an `if` statement and then a conditional operator to classify an integer as positive or negative.  
   
 ```  
-  
 int input = Convert.ToInt32(Console.ReadLine());  
 string classify;  
   
@@ -63,7 +60,6 @@ else
   
 // ?: conditional operator.  
 classify = (input > 0) ? "positive" : "negative";  
-  
 ```  
   
  The conditional operator is right-associative. The expression `a ? b : c ? d : e` is evaluated as `a ? b : (c ? d : e)`, not as `(a ? b : c) ? d : e`.  

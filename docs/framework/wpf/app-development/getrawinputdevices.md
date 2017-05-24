@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "GetRawInputDevices method"
   - "raw input [WPF]"
 ms.assetid: c4d37ecd-065a-4d1c-9e6c-26804ae968ca
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "Code Editor, event handlers"
   - "events [C#], creating using the IDE"
 ms.assetid: 6319f39f-282c-4173-8a62-6c4657cf51cd
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

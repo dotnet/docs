@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "<TimeSpan_LegacyFormatMode> element"
   - "TimeSpan_LegacyFormatMode element"
 ms.assetid: 865e7207-d050-4442-b574-57ea29d5e2d6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

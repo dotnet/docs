@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "AsyncCallback delegate"
   - "stopping asynchronous operations"
 ms.assetid: 9d97206c-8917-406c-8961-7d0909d84eeb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

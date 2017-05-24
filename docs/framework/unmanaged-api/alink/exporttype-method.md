@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ExportType method"
 ms.assetid: 91a7ce63-f5b8-4f16-b2c4-e1d0baa88944
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 6

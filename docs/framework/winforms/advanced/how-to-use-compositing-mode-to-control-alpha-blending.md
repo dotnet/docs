@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "colors, blending"
   - "colors, controlling transparency"
 ms.assetid: f331df2d-b395-4b0a-95be-24fec8c9bbb5
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetAppDomainManagerType method, ICLRDomainManager interface [.NET Framework hosting]"
   - "ICLRDomainManager::SetAppDomainManagerType method [.NET Framework hosting]"
 ms.assetid: ee91abb0-cb74-41dd-927b-e117fb8ffdf4
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"

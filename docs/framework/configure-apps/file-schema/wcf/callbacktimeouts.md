@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: d7fcfc5f-6d35-491e-8fa6-2f964c1e792f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"
@@ -29,7 +27,6 @@ Specifies the timeout value when flowing transactions from server to client.in a
 ## Syntax  
   
 ```  
-  
 <callbackTimeOuts transactionTimeout="TimeSpan" />  
 ```  
   

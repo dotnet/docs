@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetHashCode method"
   - "modulus of hashcodes"
 ms.assetid: b45366ff-2a7a-4b8e-ab01-537b72e9de68
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "mairaw"
 ms.author: "mairaw"

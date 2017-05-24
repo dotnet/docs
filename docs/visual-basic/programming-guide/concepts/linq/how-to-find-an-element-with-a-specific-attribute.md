@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 59fb7c19-d42f-40eb-8cf8-f1d5b9658eb7
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -41,7 +39,6 @@ Next
  This code produces the following output:  
   
 ```xml  
-  
           <Address Type="Billing">  
   <Name>Tai Yee</Name>  
   <Street>8 Oak Avenue</Street>  

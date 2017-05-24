@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "-subsystemversion compiler option [Visual Basic]"
   - "subsystemversion compiler option [Visual Basic]"
 ms.assetid: 08be22b2-f447-4cd3-8203-120b1b920b54
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

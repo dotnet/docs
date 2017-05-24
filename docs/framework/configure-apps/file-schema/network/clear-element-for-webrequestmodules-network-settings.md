@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "webRequestModules, clear element"
   - "clear element, webRequestModules"
 ms.assetid: 48f38bcb-f30c-4b74-a8f0-1a3caf1aa96f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
@@ -41,9 +39,7 @@ Removes all registered Web request modules from the application.
 ## Syntax  
   
 ```  
-  
 <clear/>  
-  
 ```  
   
 ## Attributes and Elements  

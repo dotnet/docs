@@ -29,8 +29,6 @@ helpviewer_keywords:
   - "Visual Basic code, handling errors while running"
   - "structured exception handling, Try...Catch...Finally statements"
 ms.assetid: d6488026-ccb3-42b8-a810-0d97b9d6472b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 69
 author: dotnet-bot
 ms.author: dotnetcontent

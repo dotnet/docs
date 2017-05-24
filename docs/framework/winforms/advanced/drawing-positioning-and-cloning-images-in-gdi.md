@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "GDI+, cloning images"
   - "GDI+, positioning images"
 ms.assetid: 09f0c07a-19c0-43b4-90a2-862a10545ce8
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "templates [WPF], TextBox"
   - "TextBox [WPF], styles and templates"
 ms.assetid: aa99130c-43a1-450f-9b46-c40ae0db0cca
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

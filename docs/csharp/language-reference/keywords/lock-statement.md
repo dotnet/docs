@@ -13,8 +13,6 @@ dev_langs:
 helpviewer_keywords: 
   - "lock keyword [C#]"
 ms.assetid: 656da1a4-707e-4ef6-9c6e-6d13b646af42
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 43
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -37,7 +35,6 @@ translation.priority.ht:
 The `lock` keyword marks a statement block as a critical section by obtaining the mutual-exclusion lock for a given object, executing a statement, and then releasing the lock. The following example includes a `lock` statement.  
   
 ```  
-  
 class Account  
 {  
     decimal balance;  
@@ -55,7 +52,6 @@ class Account
         }  
     }  
 }  
-  
 ```  
   
  For more information, see [Thread Synchronization](http://msdn.microsoft.com/library/413e1f28-a2c5-4eec-8338-aa43e7982ff4).  

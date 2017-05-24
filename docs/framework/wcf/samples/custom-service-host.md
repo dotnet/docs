@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fe16ff50-7156-4499-9c32-13d8a79dc100
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "Erikre"
 ms.author: "erikre"
@@ -116,7 +114,6 @@ foreach (Uri baseAddress in this.BaseAddresses)
                                 "mex");  
     }  
 }  
-  
 ```  
   
 ## Using a custom ServiceHost in self-host  

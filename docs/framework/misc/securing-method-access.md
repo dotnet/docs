@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "security [.NET Framework], method access"
   - "method access security"
 ms.assetid: f7c2d6ec-3b18-4e0e-9991-acd97189d818
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "mairaw"
 ms.author: "mairaw"
@@ -54,7 +52,6 @@ manager: "wpickett"
 <StrongNameIdentityPermissionAttribute(SecurityAction.Demand, PublicKey := "…hex…", Name := "App1", Version := "0.0.0.0")>  _  
 Public Class Class1  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -82,7 +79,6 @@ public class Class1
 System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name := "FullTrust")>  _  
 Public Class CanDeriveFromMe  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -99,7 +95,6 @@ public class CanDeriveFromMe
 <System.Security.Permissions.PermissionSetAttribute(System.Security.Permissions.SecurityAction.LinkDemand, Name := "FullTrust")>  _  
 NotInheritable Public Class CannotDeriveFromMe  
 End Class  
-  
 ```  
   
 ```csharp  

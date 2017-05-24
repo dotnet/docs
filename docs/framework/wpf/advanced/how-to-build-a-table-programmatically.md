@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "documents, programmatically creating tables"
   - "creating, tables (programmatically)"
 ms.assetid: e3ca88f3-6e94-4b61-82fc-42104c10b761
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

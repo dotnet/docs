@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugVariableHome::GetArgumentiIndex method [.NET Framework debugging]"
   - "GetArgumentIndex method, ICorDebugVariableHome interface [.NET Framework debugging]"
 ms.assetid: e86fcc72-388d-4009-ab21-8f9c3323e9a3
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4
@@ -38,11 +36,9 @@ Gets the index of a function argument.
 ## Syntax  
   
 ```  
-  
 HRESULT GetArgumentIndex(  
     [out] ULONG32* pArgumentIndex  
 );  
-  
 ```  
   
 #### Parameters  

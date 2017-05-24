@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: b134e21d-e5b5-458e-9309-626dbf8db4ed
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 7
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies the current credentials for a peer node.
 ## Syntax  
   
 ```  
-  
 <peer>  
   <certificate/>  
   <peerAuthentication/>  

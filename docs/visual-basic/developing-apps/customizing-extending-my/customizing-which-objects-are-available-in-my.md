@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "My namespace, customizing"
   - "My namespace"
 ms.assetid: 4e8279c2-ed5b-4681-8903-8a6671874000
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent

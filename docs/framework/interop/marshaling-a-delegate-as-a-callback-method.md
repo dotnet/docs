@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "data marshaling, Callback sample"
   - "marshaling, Callback sample"
 ms.assetid: 6ddd7866-9804-4571-84de-83f5cc017a5a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

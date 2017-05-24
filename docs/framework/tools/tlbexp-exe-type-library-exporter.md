@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "Type Library Exporter"
   - "type libraries [.NET Framework], exporting"
 ms.assetid: a487d61b-d166-467b-a7ca-d8b52fbff42d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 35
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -38,7 +36,6 @@ The Type Library Exporter generates a type library that describes the types defi
 ## Syntax  
   
 ```  
-  
 tlbexp assemblyName [options]  
 ```  
   

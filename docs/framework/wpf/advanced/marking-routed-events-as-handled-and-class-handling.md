@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "events, suppressing"
   - "bubbling events"
 ms.assetid: 5e745508-4861-4b48-b5f6-5fc7ce5289d2
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

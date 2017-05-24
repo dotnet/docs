@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "Document control type"
   - "UI Automation, Document control type"
 ms.assetid: a79d594b-1ca0-4543-8dac-afd2c645201d
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 27
 author: "Xansky"
 ms.author: "mhopkins"

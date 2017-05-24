@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "denial of service [WCF]"
 ms.assetid: dfb150f3-d598-4697-a5e6-6779e4f9b600
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"

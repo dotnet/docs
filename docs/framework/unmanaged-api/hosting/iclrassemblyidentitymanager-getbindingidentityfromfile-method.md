@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetBindingIdentityFromFile method [.NET Framework hosting]"
   - "ICLRAssemblyIdentityManager::GetBindingIdentifyFromFile method [.NET Framework hosting]"
 ms.assetid: 7797562d-7b4c-4bd9-8b93-f35e0e2869e4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

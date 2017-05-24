@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "MDI, creating forms"
   - "child forms"
 ms.assetid: 164b69bb-2eca-4339-ada3-0679eb2c6dda
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -72,7 +70,6 @@ MDI child forms are an essential element of [Multiple-Document Interface (MDI) A
        'Display the new form.  
        NewMDIChild.Show()  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -83,7 +80,6 @@ MDI child forms are an essential element of [Multiple-Document Interface (MDI) A
        // Display the new form.  
        newMDIChild.Show();  
     }  
-  
     ```  
   
     ```cpp  

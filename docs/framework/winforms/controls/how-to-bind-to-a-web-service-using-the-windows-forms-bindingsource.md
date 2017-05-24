@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], binding to Web service"
   - "BindingSource component [Windows Forms], examples"
 ms.assetid: ee261207-4573-4cb9-a8cb-5185037e0fba
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 26
 author: dotnet-bot
 ms.author: dotnetcontent

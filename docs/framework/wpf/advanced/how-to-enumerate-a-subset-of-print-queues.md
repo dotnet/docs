@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "enumerating, subset of print queues"
   - "print queues, enumerating subset of"
 ms.assetid: cc4a1b5b-d46f-4c5e-bc26-22c226e4bee0
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

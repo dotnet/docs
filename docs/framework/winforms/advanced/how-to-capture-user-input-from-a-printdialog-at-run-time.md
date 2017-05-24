@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "print options"
   - "run time, changing print options"
 ms.assetid: 438501d8-9a70-4fb3-aae6-e46579aba0c6
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -35,12 +33,10 @@ While you can set options related to printing at design time, you will sometimes
   
     ```vb  
     PrintDialog1.Document = PrintDocument1  
-  
     ```  
   
     ```csharp  
     printDialog1.Document = PrintDocument1;  
-  
     ```  
   
     ```cpp  
@@ -51,12 +47,10 @@ While you can set options related to printing at design time, you will sometimes
   
     ```vb  
     PrintDialog1.ShowDialog()  
-  
     ```  
   
     ```csharp  
     printDialog1.ShowDialog();  
-  
     ```  
   
     ```cpp  

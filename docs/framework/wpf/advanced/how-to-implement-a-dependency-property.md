@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "dependency properties, backing properties with"
   - "properties, backing with dependency properties"
 ms.assetid: 855fd6d7-19ac-493c-bf5e-2f40b57cdc92
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "list items, Windows Forms controls that display"
   - "list boxes"
 ms.assetid: b0172473-c5f2-411e-aaa4-c8f17cb5eed4
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

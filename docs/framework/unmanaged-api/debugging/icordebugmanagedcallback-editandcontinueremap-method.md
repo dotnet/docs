@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "EditAndContinueRemap method [.NET Framework debugging]"
   - "ICorDebugManagedCallback::EditAndContinueRemap method [.NET Framework debugging]"
 ms.assetid: 24a8fcce-317e-48ff-aefc-d86123ada935
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

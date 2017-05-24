@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ICorProfilerModuleEnum interface [.NET Framework profiling]"
 ms.assetid: 24d0fcfa-1601-4fba-868f-da8c97303467
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

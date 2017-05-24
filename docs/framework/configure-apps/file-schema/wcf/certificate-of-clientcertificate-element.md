@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 00297efb-a7f2-4e03-bc2b-943d545610fc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Specifies an X.509 certificate used to sign and encrypt messages.
 ## Syntax  
   
 ```  
-  
 <certificate findValue = "String"   
 storeLocation = "CurrentUser/LocalMachine"  
 storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  

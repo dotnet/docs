@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "container tags, <probing> element"
   - "probing element"
 ms.assetid: 09c80fc9-1ba5-4192-89f7-3a79b2e4b024
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"

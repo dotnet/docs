@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 505bd987-0042-4622-b68e-94f439729d53
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies credentials used when authenticating peer-to-peer clients.
 ## Syntax  
   
 ```  
-  
 <peer>  
   <certificate/>  
   <peerAuthentication/>  

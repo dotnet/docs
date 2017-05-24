@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "declared elements, referencing"
   - "variables [Visual Basic], accessing hidden"
 ms.assetid: ae21a8ac-9cd4-4fba-a3ec-ecc4321ef93c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

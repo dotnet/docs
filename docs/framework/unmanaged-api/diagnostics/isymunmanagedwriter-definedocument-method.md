@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ISymUnmanagedWriter::DefineDocument method [.NET Framework debugging]"
   - "DefineDocument method [.NET Framework debugging]"
 ms.assetid: c3bf15b0-3250-4bbe-b9b5-c5d695289b6f
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

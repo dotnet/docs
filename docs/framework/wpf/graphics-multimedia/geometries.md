@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "clipping regions defined [WPF]"
   - "hit-test objects [WPF]"
 ms.assetid: 47ad531d-a4da-4e99-b12e-1de710c32493
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 55
 author: dotnet-bot
 ms.author: dotnetcontent

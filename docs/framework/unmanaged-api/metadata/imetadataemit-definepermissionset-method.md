@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "DefinePermissionSet method [.NET Framework metadata]"
   - "IMetaDataEmit::DefinePermissionSet method [.NET Framework metadata]"
 ms.assetid: 36cffbf7-82ca-4cf9-bf60-50ab491ac2d9
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "String data type, validation"
 ms.assetid: 5d9a918f-6c1f-41a3-a019-b5c2b8ce0381
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

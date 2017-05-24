@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IBindingDisplay::InitializeForProcess method [.NET Framework debugging]"
   - "InitializeForProcess method [.NET Framework debugging]"
 ms.assetid: 59417acb-4e59-46ad-acfe-d827e6ab6078
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

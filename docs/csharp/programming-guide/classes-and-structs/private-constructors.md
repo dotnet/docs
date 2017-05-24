@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "C# language, private constructors"
   - "private constructors [C#]"
 ms.assetid: 29eeaa7d-8d81-453c-94b9-0e2800172621
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 19
 author: "BillWagner"
 ms.author: "wiwagn"

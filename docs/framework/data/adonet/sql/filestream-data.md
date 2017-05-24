@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bd8b845c-0f09-4295-b466-97ef106eefa8
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 5
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -43,7 +41,6 @@ GO
 Insert into employees  
 Values(1, 0x00, default)  
 GO  
-  
 ```  
   
 ### Example: Reading, Overwriting, and Inserting FILESTREAM Data  

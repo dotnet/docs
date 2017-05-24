@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ISymUnmanagedReader::GetNamespaces method [.NET Framework debugging]"
   - "GetNamespaces method, ISymUnmanagedReader interface [.NET Framework debugging]"
 ms.assetid: 3feb4796-2fab-45ce-beca-6f5bc530b971
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

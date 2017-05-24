@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "C# language, finalizers"
   - "finalizers [C#]"
 ms.assetid: 1ae6e46d-a4b1-4a49-abe5-b97f53d9e049
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 24
 author: "BillWagner"
 ms.author: "wiwagn"

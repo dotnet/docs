@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "namespaces [C#], global namespace qualifier"
   - "global namespace [C#]"
 ms.assetid: 98a1d89b-3c5a-44f7-8400-c4a3c0ec22a9
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 86fbeb87-4d89-4b61-9577-867e0ac12945
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 22
 author: "Erikre"
 ms.author: "erikre"
@@ -48,7 +46,6 @@ This sample demonstrates the use of `basicHttpBinding` that provides HTTP commun
              contract="Microsoft.ServiceModel.Samples.ICalculator" />  
     </service>  
 </services>  
-  
 ```  
   
  In this sample, the binding configuration is named `"Binding1"` and is defined as shown in the following code example.  
@@ -74,7 +71,6 @@ This sample demonstrates the use of `basicHttpBinding` that provides HTTP commun
       </binding>  
    </basicHttpBinding>  
 </bindings>  
-  
 ```  
   
  The binding element provides attributes for setting the host name comparison mode, maximum message size, proxy options, timeouts, message encoding, and other options.  
@@ -82,7 +78,6 @@ This sample demonstrates the use of `basicHttpBinding` that provides HTTP commun
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
-  
 Add(100,15.99) = 115.99  
 Subtract(145,76.54) = 68.46  
 Multiply(9,81.25) = 731.25  
@@ -97,7 +92,6 @@ Press <ENTER> to terminate client.
   
     ```  
     %windir%\Microsoft.NET\Framework\v4.0.XXXXX\aspnet_regiis.exe /i /enable  
-  
     ```  
   
 2.  Ensure that you have performed the [One-Time Setup Procedure for the Windows Communication Foundation Samples](../../../../docs/framework/wcf/samples/one-time-setup-procedure-for-the-wcf-samples.md).  

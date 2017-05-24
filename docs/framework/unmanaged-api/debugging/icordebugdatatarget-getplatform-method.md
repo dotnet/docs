@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetPlatform method [.NET Framework debugging]"
   - "ICorDebugDataTarget::GetPlatform method [.NET Framework debugging]"
 ms.assetid: 9ee96c9d-7a3d-4129-a6cc-7675c7f2dda4
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 9

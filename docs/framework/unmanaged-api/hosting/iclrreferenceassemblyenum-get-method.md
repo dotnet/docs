@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRReferenceAssemblyEnum::Get method [.NET Framework hosting]"
   - "Get method, ICLRReferenceAssemblyEnum interface [.NET Framework hosting]"
 ms.assetid: f21c1612-9c5d-4abc-a337-577086d29c17
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

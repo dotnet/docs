@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "quantifiers"
   - "lazy quantifiers"
 ms.assetid: 36b81212-6511-49ed-a8f1-ff080415312f
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"

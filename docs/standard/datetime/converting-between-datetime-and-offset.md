@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "Date data type, converting"
   - "local time conversions"
 ms.assetid: b605ff97-0c45-4c24-833f-4c6a3e8be64c
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

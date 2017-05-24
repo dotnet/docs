@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRStrongName::StrongNameKeyInstall method [.NET Framework hosting]"
   - "StrongNameKeyInstall method, ICLRStrongName interface [.NET Framework hosting]"
 ms.assetid: 5c15cf3b-164c-49d1-8e57-e42949d55acf
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "threading [.NET Framework], managed"
   - "managed threading"
 ms.assetid: 4fb6452f-c071-420d-9e71-da16dee7a1eb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "rpetrusha"
 ms.author: "ronpet"

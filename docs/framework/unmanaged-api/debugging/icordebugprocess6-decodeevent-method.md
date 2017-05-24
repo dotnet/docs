@@ -12,8 +12,6 @@ ms.topic: "reference"
 dev_langs: 
   - "C++"
 ms.assetid: 1453bc0c-6e0d-4d5a-b176-22607f8a3e6c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -25,7 +23,6 @@ Decodes managed debug events that have been encapsulated in the payload of speci
 ## Syntax  
   
 ```  
-  
 HRESULT DecodeEvent(  
         [in, length_is(countBytes), size_is(countBytes)]  const BYTE pRecord[],  
         [in] DWORD countBytes,  
@@ -34,7 +31,6 @@ HRESULT DecodeEvent(
         [in] DWORD dwThreadId,   
         [out] ICorDebugDebugEvent **ppEvent  
 );  
-  
 ```  
   
 #### Parameters  

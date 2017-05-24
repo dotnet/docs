@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "COR_HEAPINFO structure [.NET Framework debugging]"
 ms.assetid: bfb2cd39-3e0b-4d51-ba0c-f009755c1456
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

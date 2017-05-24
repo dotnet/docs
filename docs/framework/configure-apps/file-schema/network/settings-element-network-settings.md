@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "settings element"
   - "<settings> element"
 ms.assetid: 189ce989-c39b-427d-b004-6b82a668b931
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "mcleblanc"
 ms.author: "markl"
@@ -38,7 +36,6 @@ Configures basic network options for the <xref:System.Net?displayProperty=fullNa
 ## Syntax  
   
 ```  
-  
       <settings>  
 ..<httpListener> … </httpListener>  
 ..<httpWebRequest> … </httpWebRequest>  

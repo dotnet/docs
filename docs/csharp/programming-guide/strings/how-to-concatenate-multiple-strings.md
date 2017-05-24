@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "concatenating strings [C#]"
   - "strings [C#], concatenation"
 ms.assetid: 8e16736f-4096-4f3f-be0f-9d4c3ff63520
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 21
 author: "BillWagner"
 ms.author: "wiwagn"

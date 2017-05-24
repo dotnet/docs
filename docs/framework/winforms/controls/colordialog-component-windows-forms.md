@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "colors, dialog box"
   - "color dialog box"
 ms.assetid: 261793e0-8252-47c5-b76c-621857b8da44
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

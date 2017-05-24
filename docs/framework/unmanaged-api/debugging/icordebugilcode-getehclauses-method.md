@@ -18,8 +18,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: cf7a0e00-06ae-47a5-8037-598b26196802
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 4
@@ -35,12 +33,10 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetEHClauses(  
    [in] ULONG32 cClauses,  
    [out] ULONG32 * pcClauses,  
    [out, size_is(cClauses), length_is(*pcClauses)] CorDebugEHClause clauses[]);  
-  
 ```  
   
 #### Parameters  

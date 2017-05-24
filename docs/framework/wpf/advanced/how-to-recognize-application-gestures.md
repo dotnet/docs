@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "application gestures, recognizing"
   - "gestures, recognizing"
 ms.assetid: d58b740f-5192-4a3e-af59-7aa162e6ca15
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 4
 author: dotnet-bot
 ms.author: dotnetcontent

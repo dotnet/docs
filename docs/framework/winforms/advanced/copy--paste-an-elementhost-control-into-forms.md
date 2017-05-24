@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "ElementHost control, copying and pasting at design time"
   - "WPF user control, hosting in Windows Forms"
 ms.assetid: 6e81bb13-577c-46c3-a1cf-8d15969fb83e
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

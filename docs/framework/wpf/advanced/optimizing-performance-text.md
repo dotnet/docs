@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "text, performance"
   - "glyphs"
 ms.assetid: 66b1b9a7-8618-48db-b616-c57ea4327b98
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

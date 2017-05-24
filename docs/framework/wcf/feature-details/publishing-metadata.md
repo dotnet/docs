@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "meatadata [WCF], publishing"
 ms.assetid: 3a56831a-cabc-45c0-bd02-12e2e9bd7313
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "Erikre"
 ms.author: "erikre"

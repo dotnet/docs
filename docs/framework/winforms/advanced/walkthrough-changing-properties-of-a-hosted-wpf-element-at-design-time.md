@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "WPF content, hosting in Windows Forms"
   - "interoperability [WPF]"
 ms.assetid: a1f7a90c-0bbb-4781-8c3c-8cc8bef2488d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

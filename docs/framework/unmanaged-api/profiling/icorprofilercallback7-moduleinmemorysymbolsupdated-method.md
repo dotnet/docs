@@ -19,8 +19,6 @@ api_type:
 dev_langs: 
   - "C++"
 ms.assetid: f362a896-3247-4894-9727-e48dbbcd2c78
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 5
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -34,11 +32,9 @@ manager: "wpickett"
 ## Syntax  
   
 ```  
-  
 HRESULT ModuleInMemorySymbolsUpdated(  
      ModuleID moduleId  
 );  
-  
 ```  
   
 #### Parameters  

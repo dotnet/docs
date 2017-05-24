@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: e3834149-7b8c-4a54-806b-b4296720f31d
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 29
 author: "Erikre"
 ms.author: "erikre"
@@ -48,7 +46,6 @@ public interface IOrderProcessor
     void SubmitPurchaseOrder(PurchaseOrder po,   
                                            string reportOrderStatusTo);  
 }  
-  
 ```  
   
  The reply contract to send order status to is specified by the client. The client implements the order status contract. The service uses the generated client of this contract to send order status back to the client.  
@@ -60,7 +57,6 @@ public interface IOrderStatus
     [OperationContract(IsOneWay = true)]  
     void OrderStatus(string poNumber, string status);  
 }  
-  
 ```  
   
  The service operation processes the submitted purchase order. The <xref:System.ServiceModel.OperationBehaviorAttribute> is applied to the service operation to specify automatic enlistment in the transaction that is used to receive the message from the queue and automatic completion of the transaction on completion of the service operation. The `Orders` class encapsulates order processing functionality. In this case, it adds the purchase order to a dictionary. The transaction that the service operation enlisted in is available to the operations in the `Orders` class.  
@@ -87,7 +83,6 @@ public class OrderProcessorService : IOrderProcessor
             scope.Complete();  
         }  
     }  
-  
 ```  
   
  The client binding to use is specified using a configuration file.  
@@ -103,7 +98,6 @@ public class OrderProcessorService : IOrderProcessor
   
 ```xml  
 <%@ServiceHost language="c#" Debug="true" Service="Microsoft.ServiceModel.Samples.OrderProcessorService"%>  
-  
 ```  
   
  The Service.svc file also contains an assembly directive to ensure that System.Transactions.dll is loaded.  
@@ -165,7 +159,6 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderStatusService)))
     // Close the ServiceHostBase to shutdown the service.  
     serviceHost.Close();  
     }  
-  
 ```  
   
  The client code implements the `IOrderStatus` contract to receive order status from the service. In this case, it prints out the order status.  
@@ -214,7 +207,6 @@ public class OrderStatusService : IOrderStatus
     </client>  
   
   </system.serviceModel>  
-  
 ```  
   
  When you run the sample, the client and service activities are displayed in both the server and client console windows. You can see the server receive messages from the client. Press ENTER in each console window to shut down the server and client.  
@@ -267,7 +259,6 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
         ```  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site"   
         -+bindings.[protocol='net.msmq',bindingInformation='localhost']  
-  
         ```  
   
         > [!NOTE]
@@ -279,7 +270,6 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
         ```  
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http,net.msmq  
-  
         ```  
   
         > [!NOTE]
@@ -303,7 +293,6 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
         ```  
         %windir%\system32\inetsrv\appcmd.exe set app "Default Web Site/servicemodelsamples" /enabledProtocols:http  
-  
         ```  
   
         > [!NOTE]
@@ -313,7 +302,6 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
   
         ```  
         %windir%\system32\inetsrv\appcmd.exe set site "Default Web Site" --bindings.[protocol='net.msmq',bindingInformation='localhost']  
-  
         ```  
   
         > [!NOTE]
@@ -336,7 +324,6 @@ Status of order 70cf9d63-3dfa-4e69-81c2-23aa4478ebed :Pending
             </binding>  
         </netMsmqBinding>  
     </bindings>  
-  
     ```  
   
 2.  Change the configuration on both the server and the client before you run the sample.  

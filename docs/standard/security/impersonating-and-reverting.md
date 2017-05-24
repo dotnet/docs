@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "security [.NET Framework], impersonating Windows accounts"
   - "impersonating Windows accounts"
 ms.assetid: b93d402c-6c28-4f50-b2bc-d9607dc3e470
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "mairaw"
 ms.author: "mairaw"
@@ -36,7 +34,6 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
   
     ```csharp  
     WindowsIdentity ImpersonatedIdentity = new WindowsIdentity(hToken);  
-  
     ```  
   
     ```vb  
@@ -47,7 +44,6 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
   
     ```csharp  
     WindowsImpersonationContext MyImpersonation = ImpersonatedIdentity.Impersonate();  
-  
     ```  
   
     ```vb  
@@ -58,7 +54,6 @@ Sometimes you might need to obtain a Windows account token to impersonate a Wind
   
     ```csharp  
     MyImpersonation.Undo();  
-  
     ```  
   
     ```vb  

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "check boxes, determining checked state"
   - "CheckedListBox control [Windows Forms], determining checked state"
 ms.assetid: 178b477d-27c9-489c-8914-44a9623a4d41
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -40,7 +38,6 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
        Next x  
        MessageBox.Show(s)  
     End If  
-  
     ```  
   
     ```csharp  
@@ -55,7 +52,6 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
        }  
     MessageBox.Show (s);  
     }  
-  
     ```  
   
     ```cpp  
@@ -88,7 +84,6 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
        End If  
     Next  
     MessageBox.Show(s)  
-  
     ```  
   
     ```csharp  
@@ -103,7 +98,6 @@ When presenting data in a Windows Forms <xref:System.Windows.Forms.CheckedListBo
        }  
     }  
     MessageBox.Show (s);  
-  
     ```  
   
     ```cpp  

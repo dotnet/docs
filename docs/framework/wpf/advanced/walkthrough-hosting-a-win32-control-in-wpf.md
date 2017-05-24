@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "hosting Win32 control in WPF"
   - "Win32 code, WPF interoperation"
 ms.assetid: a676b1eb-fc55-4355-93ab-df840c41cea0
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

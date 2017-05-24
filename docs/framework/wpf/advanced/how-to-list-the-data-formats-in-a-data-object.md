@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "DataFormats class [WPF]"
   - "data formats [WPF], listing"
 ms.assetid: 18e7ba4b-ccef-4815-ae2d-3a32891010c0
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

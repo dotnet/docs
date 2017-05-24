@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "ContextMenuOpening event"
 ms.assetid: 789652fb-1951-4217-934a-7843e355adf4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

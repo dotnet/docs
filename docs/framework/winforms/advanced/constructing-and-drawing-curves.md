@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "examples [Windows Forms], drawing curves"
   - "curves, drawing"
 ms.assetid: 76e92623-4130-4644-b867-faca58bdb3a2
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

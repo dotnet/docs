@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "keystrokes"
   - "CapsLock property"
 ms.assetid: aa37d54c-5c98-4b44-b98a-c26d2a03c038
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

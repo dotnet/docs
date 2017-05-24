@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "keyfile compiler option [Visual Basic]"
   - "-keyfile compiler option [Visual Basic]"
 ms.assetid: ffa82a4b-517a-4c6c-9889-5bae7b534bb8
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "type promotion"
   - "declared elements, visibility"
 ms.assetid: 035eeb15-e4c5-4288-ab3c-6bd5d22f7051
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

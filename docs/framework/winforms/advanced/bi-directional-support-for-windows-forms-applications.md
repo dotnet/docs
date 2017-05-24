@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "bi-directional language support, Windows applications"
   - "Windows Forms, bi-directional support"
 ms.assetid: 7b622fa4-f390-4e4d-b624-83a1917cccf2
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

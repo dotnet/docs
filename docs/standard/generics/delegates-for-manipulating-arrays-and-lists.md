@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "lists [.NET Framework], generic delegates"
   - "generics [.NET Framework], delegates"
 ms.assetid: 416be383-cc61-4102-9b1b-88b51adb963e
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"

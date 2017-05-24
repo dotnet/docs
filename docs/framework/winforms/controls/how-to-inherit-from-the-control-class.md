@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "OnPaint method [Windows Forms]"
   - "custom controls [Windows Forms], creating"
 ms.assetid: 46ba0df3-5cf7-443c-a3b4-a72660172476
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

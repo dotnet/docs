@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "types [C#], explicit numeric conversions"
   - "type conversion [C#], explicit numeric"
 ms.assetid: f3bb9e76-6b92-4df7-bc36-f866c24e1dfd
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

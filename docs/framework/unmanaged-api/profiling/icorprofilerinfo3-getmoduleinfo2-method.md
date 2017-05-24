@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorProfilerInfo3::GetModuleInfo2 method [.NET Framework profiling]"
   - "GetModuleInfo2 method [.NET Framework profiling]"
 ms.assetid: f1f6b8f3-dcfc-49e8-be76-ea50ea90d5a7
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10
@@ -47,7 +45,6 @@ HRESULT GetModuleInfo2(
           WCHAR      szName[] ,  
     [out] AssemblyID *pAssemblyId);  
     [out] DWORD                 *pdwModuleFlags);  
-  
 ```  
   
 #### Parameters  

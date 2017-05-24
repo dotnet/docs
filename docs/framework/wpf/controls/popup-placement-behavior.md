@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "placing popups"
   - "positioning popups"
 ms.assetid: fbf642e9-f670-4efd-a7af-a67468a1c8e1
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

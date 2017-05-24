@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "ColorDialog component, formatting appearance"
   - "color dialog box, configuring appearance"
 ms.assetid: bba4e262-1cd7-4f63-89cf-330a36f7b539
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -39,7 +37,6 @@ You can configure the appearance of the Windows Forms <xref:System.Windows.Forms
     ColorDialog1.AnyColor = True  
     ColorDialog1.SolidColorOnly = False  
     ColorDialog1.ShowHelp = True  
-  
     ```  
   
     ```csharp  
@@ -47,7 +44,6 @@ You can configure the appearance of the Windows Forms <xref:System.Windows.Forms
     colorDialog1.AnyColor = true;  
     colorDialog1.SolidColorOnly = false;  
     colorDialog1.ShowHelp = true;  
-  
     ```  
   
     ```cpp  

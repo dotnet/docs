@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "interfaces [.NET Framework], names"
   - "generic type parameters"
 ms.assetid: 87a4b0da-ed64-43b1-ac43-968576c444ce
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 16
 author: "rpetrusha"
 ms.author: "ronpet"

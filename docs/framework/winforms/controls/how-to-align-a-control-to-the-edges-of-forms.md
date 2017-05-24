@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "controls [Windows Forms], aligning on forms"
   - "custom controls [Windows Forms], docking using code"
 ms.assetid: 5994cb59-242b-4e75-bd0e-62879c34d702
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

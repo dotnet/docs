@@ -25,8 +25,6 @@ helpviewer_keywords:
   - "layout [Windows Forms], margins and padding"
   - "Windows Forms, layout"
 ms.assetid: f8ae2a6b-db13-4630-8e25-d104091205c7
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 28
 author: dotnet-bot
 ms.author: dotnetcontent

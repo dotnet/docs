@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetSourceLength method [.NET Framework debugging]"
   - "ISymUnmanagedDocument::GetSourceLength method [.NET Framework debugging]"
 ms.assetid: e087dbbb-f4fb-4fbe-8292-e4f1a14d0df2
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

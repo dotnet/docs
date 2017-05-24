@@ -12,8 +12,6 @@ dev_langs:
 helpviewer_keywords: 
   - "#endif directive [C#]"
 ms.assetid: 6a5fca55-5aee-441f-86f6-1c99fbe9ec05
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -36,7 +34,6 @@ translation.priority.ht:
 `#endif` specifies the end of a conditional directive, which began with the [#if](../../../csharp/language-reference/preprocessor-directives/preprocessor-if.md) directive. For example,  
   
 ```  
-  
       #define DEBUG  
 // ...  
 #if DEBUG  

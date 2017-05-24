@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "configuration [WCF], interoperable services"
 ms.assetid: 91b70a21-8f5c-4679-808c-2ed5fa6b2013
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "Erikre"
 ms.author: "erikre"

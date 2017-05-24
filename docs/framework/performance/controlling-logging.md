@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "CLR ETW events, logging"
 ms.assetid: ce13088e-3095-4f0e-9f6b-fad30bbd3d41
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 40
 author: "mairaw"
 ms.author: "mairaw"

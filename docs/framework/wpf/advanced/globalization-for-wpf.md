@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "international user interface, XAML"
   - "globalization"
 ms.assetid: 4571ccfe-8a60-4f06-9b37-7ac0b1c2d10f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 35
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -186,7 +184,6 @@ This topic introduces issues that you should be aware of when writing           
 ```  
 [assembly: NeutralResourcesLanguageAttribute(  
     "de" , UltimateResourceFallbackLocation.Satellite)]  
-  
 ```  
   
 ## See Also  

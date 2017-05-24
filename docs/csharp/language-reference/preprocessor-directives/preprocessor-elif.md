@@ -12,8 +12,6 @@ dev_langs:
 helpviewer_keywords: 
   - "#elif directive [C#]"
 ms.assetid: 731d78df-08e0-4d51-b8c8-f193c27de13f
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

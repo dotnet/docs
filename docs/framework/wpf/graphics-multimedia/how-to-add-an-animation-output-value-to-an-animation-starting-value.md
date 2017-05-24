@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "IsAdditive property"
   - "animation"
 ms.assetid: b89a82be-b03d-481e-a8d3-cc513d09ca00
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: a210c209-3940-4288-9a8e-39b1e62606bc
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 4
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Represents a configuration section for defining a set of routing filters, which 
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  

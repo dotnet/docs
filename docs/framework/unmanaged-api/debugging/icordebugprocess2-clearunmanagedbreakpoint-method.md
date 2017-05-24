@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ClearUnmanagedBreakpoint method [.NET Framework debugging]"
   - "ICorDebugProcess2::ClearUnmanagedBreakpoint method [.NET Framework debugging]"
 ms.assetid: 12ed0fff-7f0e-4d7a-bb70-b3376371f36c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

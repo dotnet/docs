@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "displaying data with GridViewRowPresenter"
   - "GridViewRowPresenter"
 ms.assetid: bdb785a5-a262-44d5-a517-ea14383e5f70
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

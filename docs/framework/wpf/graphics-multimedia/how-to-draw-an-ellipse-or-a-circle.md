@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "graphics, drawing circles"
   - "graphics, drawing ellipses"
 ms.assetid: 99763b8c-bfc8-44be-8231-8a70daf5481a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

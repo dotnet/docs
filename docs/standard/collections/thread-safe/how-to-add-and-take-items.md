@@ -11,8 +11,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "thread-safe collections, blocking dictionary"
 ms.assetid: 38f2f3d8-15e5-4bf4-9c83-2b5b6f22bad1
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 7
 author: "mairaw"
 ms.author: "mairaw"

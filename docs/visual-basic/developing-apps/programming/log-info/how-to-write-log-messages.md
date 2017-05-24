@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "My.Application.Log object, writing log messags"
 ms.assetid: 972a3e0c-2996-4623-a7a9-d7ebc4d207f8
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

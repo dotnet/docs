@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "/removeintchecks compiler option [Visual Basic]"
   - "-removeintchecks compiler option [Visual Basic]"
 ms.assetid: c1835bd5-1e38-4fba-bd2f-6984774765d4
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

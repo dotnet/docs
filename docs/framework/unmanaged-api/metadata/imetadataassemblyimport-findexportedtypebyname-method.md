@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "FindExportedTypeByName method [.NET Framework metadata]"
   - "IMetaDataAssemblyImport::FindExportedTypeByName method [.NET Framework metadata]"
 ms.assetid: 46264b2c-574d-4dde-aafc-77187a104fdd
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

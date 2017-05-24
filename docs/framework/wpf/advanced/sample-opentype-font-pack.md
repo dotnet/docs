@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "fonts, OpenType font pack"
   - "typography, OpenType font pack"
 ms.assetid: 56b46fa1-a44e-419b-8f14-25ad51c715c3
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

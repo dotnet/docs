@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "bitmaps [Windows Forms], using texture"
   - "shapes, filling with images"
 ms.assetid: 508da5a6-2433-4d2b-9680-eaeae4e96e3b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 678e21b4-6493-47c3-8359-fcf0d37e2138
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"
@@ -31,7 +29,6 @@ Represents a collection of X.509 certificates that are provided to authenticate 
 ## Syntax  
   
 ```  
-  
 <knownCertificates>   
       <add findValue="String"  
          storeLocation="CurrentUser/LocalMachine"  

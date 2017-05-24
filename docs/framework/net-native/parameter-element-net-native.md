@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 22aaa1f3-596f-4733-93db-f4bcabcb5240
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -23,7 +21,6 @@ Applies reflection policy to the type of the argument passed to a method.
 ## Syntax  
   
 ```xml  
-  
 <Parameter Name="parameter_name"  
            Activate="policy_type"  
            Browse="policy_type"  
@@ -35,7 +32,6 @@ Applies reflection policy to the type of the argument passed to a method.
            MarshalObject="policy_type"  
            MarshalDelegate="policy_type"  
            MarshalStructure="policy_type" />  
-  
 ```  
   
 ## Attributes and Elements  

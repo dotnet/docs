@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "commanding"
   - "CommandManager"
 ms.assetid: bc208dfe-367d-426a-99de-52b7e7511e81
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 35
 author: dotnet-bot
 ms.author: dotnetcontent

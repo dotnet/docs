@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ba517369-a034-4f8e-a2c4-66517716062b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -29,7 +27,6 @@ Specifies settings that enable auditing of security events during service operat
 ## Syntax  
   
 ```  
-  
 <serviceSecurityAudit   
    auditLogLocation="Default/Application/Security"  
    messageAuthenticationAuditLevel= None/Success/Failure/SuccessAndFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessAndFailure"  

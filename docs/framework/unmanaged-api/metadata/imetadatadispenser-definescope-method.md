@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "DefineScope method [.NET Framework metadata]"
   - "IMetaDataDispenser::DefineScope method [.NET Framework metadata]"
 ms.assetid: af28db02-29af-45ac-aec6-8d6c6123c2ff
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 12

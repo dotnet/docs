@@ -14,8 +14,6 @@ dev_langs:
   - "C++"
   - "jsharp"
 ms.assetid: a2aa99ba-8239-4818-9281-f1d72ee40bde
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 3
 author: "mairaw"
 ms.author: "mairaw"
@@ -41,7 +39,6 @@ The majority of the methods found in an **XmlConvert** class are used to convert
 reader.ReadStartElement()  
 Dim vDateTime As DateTime = XmlConvert.ToDateTime(reader.ReadString())  
 Console.WriteLine(vDateTime)  
-  
 ```  
   
 ```csharp  
@@ -66,7 +63,6 @@ Console.WriteLine(vDateTime);
 ```vb  
 Dim vInt32 As Int32 = -2147483648  
 writer.WriteElementString("TestInt32", XmlConvert.ToString(vInt32))  
-  
 ```  
   
 ```csharp  

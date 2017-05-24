@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "displaying data, data grids"
   - "DataGridView control [Windows Forms], displaying data"
 ms.assetid: b170b52a-2ebd-4948-ac2f-e52d494cebb2
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 12
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -62,7 +60,7 @@ The `DataGridView` control is used to display data from a variety of external da
  [How to: Access Objects Bound to Windows Forms DataGridView Rows](../../../../docs/framework/winforms/controls/how-to-access-objects-bound-to-windows-forms-datagridview-rows.md)  
  Describes how to retrieve an object bound to a particular row of the control.  
   
- [Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/c5fa29e8-47f7-4691-829b-0e697a691f36.md)  
+ [Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/creating-a-master-detail-form-using-two-datagridviews.md)  
  Describes how to display data from two related database tables so that the values shown in one `DataGridView` control depend on the currently selected row in another control.  
   
  [How to: Customize Data Formatting in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/how-to-customize-data-formatting-in-the-windows-forms-datagridview-control.md)  

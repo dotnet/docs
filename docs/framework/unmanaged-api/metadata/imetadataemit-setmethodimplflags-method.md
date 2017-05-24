@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "IMetaDataEmit::SetMethodImplFlags method [.NET Framework metadata]"
   - "SetMethodImpFlags method [.NET Framework metadata]"
 ms.assetid: 4bc82d9b-9544-4be3-ba51-a2d4d806158a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

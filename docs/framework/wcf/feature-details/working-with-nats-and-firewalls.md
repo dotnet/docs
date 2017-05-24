@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "firewalls [WCF]"
   - "NATs [WCF]"
 ms.assetid: 74db0632-1bf0-428b-89c8-bd53b64332e7
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"

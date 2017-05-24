@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 3da4f276-dfd9-4247-8c07-01d83618727c
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 12
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies a digest type credential used when authenticating the client to a serv
 ## Syntax  
   
 ```  
-  
 <digest impersonationLevel="Identification/Impersonation/Delegation/Anonymous/None" />  
 ```  
   

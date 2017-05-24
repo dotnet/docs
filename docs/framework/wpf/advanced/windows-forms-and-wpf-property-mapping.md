@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "interoperability [WPF], Windows Forms"
   - "WindowsFormsHost element property mapping"
 ms.assetid: 999d8298-9c04-467d-a453-86e41002057d
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 21
 author: dotnet-bot
 ms.author: dotnetcontent

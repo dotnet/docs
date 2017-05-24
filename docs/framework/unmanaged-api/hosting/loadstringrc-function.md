@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "LoadStringRC function [.NET Framework hosting]"
 ms.assetid: 752e49b4-987c-4c28-a118-1a0c1ed510c5
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 16

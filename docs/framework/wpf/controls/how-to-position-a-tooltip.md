@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "ToolTip control, positioning"
   - "positioning ToolTip controls"
 ms.assetid: cddf3757-9e5f-4ce3-a6eb-44489cf3804a
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

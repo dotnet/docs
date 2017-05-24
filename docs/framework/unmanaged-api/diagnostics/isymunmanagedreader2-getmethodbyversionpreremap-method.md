@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetMethodByVersionPreRemap method [.NET Framework debugging]"
   - "ISymUnmanagedReader2::GetMethodByVersionPreRemap method [.NET Framework debugging]"
 ms.assetid: 0d144ed4-bdb0-4cac-960c-cb90f4dca173
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

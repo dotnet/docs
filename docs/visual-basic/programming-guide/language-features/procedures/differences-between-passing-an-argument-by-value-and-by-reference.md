@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "ByVal keyword, passing arguments by value"
   - "arguments [Visual Basic], passing by value or by reference"
 ms.assetid: 5f5c38fe-3e2d-494c-8fff-f4025b55ec93
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent

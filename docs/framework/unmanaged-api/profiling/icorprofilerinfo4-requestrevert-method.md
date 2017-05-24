@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "RequestRevert method, ICorProfilerInfo4 interface [.NET Framework profiling]"
   - "ICorProfilerInfo4::RequestRevert method [.NET Framework profiling]"
 ms.assetid: 70261da5-5933-4e25-9de0-ddf51cba56cc
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

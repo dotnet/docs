@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 793e41c2-31ea-4159-abbc-2123bf097233
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 13
 author: "Erikre"
 ms.author: "erikre"
@@ -30,7 +28,6 @@ Specifies the settings for a Windows credential to be used to represent the clie
 ## Syntax  
   
 ```  
-  
 <windows   
     allowedImpersonationLevel="Identification/Impersonation/Delegation/Anonymous/None"  
         allowNtlm="Boolean"  

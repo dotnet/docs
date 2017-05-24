@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "DomainUpDown control [Windows Forms], removing items from"
   - "spin button control, removing items"
 ms.assetid: e70f5cbc-b497-41a9-975a-344c00e56ed2
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -31,12 +29,10 @@ You can remove items from the Windows Forms <xref:System.Windows.Forms.DomainUpD
   
     ```vb  
     DomainUpDown1.Items.Remove("noodles")  
-  
     ```  
   
     ```csharp  
     domainUpDown1.Items.Remove("noodles");  
-  
     ```  
   
     ```cpp  
@@ -50,13 +46,11 @@ You can remove items from the Windows Forms <xref:System.Windows.Forms.DomainUpD
     ```vb  
     ' Removes the first item in the list.  
     DomainUpDown1.Items.RemoveAt(0)  
-  
     ```  
   
     ```csharp  
     // Removes the first item in the list.  
     domainUpDown1.Items.RemoveAt(0);  
-  
     ```  
   
     ```cpp  

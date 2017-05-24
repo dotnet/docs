@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "classes, geometry"
   - "geometry classes"
 ms.assetid: 83873331-b013-472e-8197-8ba993dd242f
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 72
 author: dotnet-bot
 ms.author: dotnetcontent

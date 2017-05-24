@@ -28,8 +28,6 @@ helpviewer_keywords:
   - "Option Compare statement"
   - "text [Visual Basic], comparing"
 ms.assetid: 54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 37
 author: dotnet-bot
 ms.author: dotnetcontent

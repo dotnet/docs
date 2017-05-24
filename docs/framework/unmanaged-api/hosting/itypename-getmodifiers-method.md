@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ITypeName::GetModifiers method [.NET Framework hosting]"
   - "GetModifiers method [.NET Framework hosting]"
 ms.assetid: 75508c55-3e09-4135-80da-cc811003fa82
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

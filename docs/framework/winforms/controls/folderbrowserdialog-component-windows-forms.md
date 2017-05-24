@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "browsing folders"
   - "directories [Windows Forms], browsing"
 ms.assetid: d71a0c5e-898a-4eea-be74-93bdf50d1852
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

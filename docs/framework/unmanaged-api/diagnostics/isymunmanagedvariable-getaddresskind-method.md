@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetAddressKind method [.NET Framework debugging]"
   - "ISymUnmanagedVariable::GetAddressKind method [.NET Framework debugging]"
 ms.assetid: a71563c0-62f2-4eb4-970c-825d61827613
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

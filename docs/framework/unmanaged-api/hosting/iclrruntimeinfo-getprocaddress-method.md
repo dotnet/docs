@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "GetProcAddress method [.NET Framework hosting]"
   - "ICLRRuntimeInfo::GetProcAddress method [.NET Framework hosting]"
 ms.assetid: a7732bfc-689a-4926-88fd-4f81e6f9ed78
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

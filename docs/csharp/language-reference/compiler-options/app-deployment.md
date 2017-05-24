@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "C# language, deployment"
   - "application deployment [C#]"
 ms.assetid: 5c561a21-cc5b-4180-8042-391062af0015
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 9
 author: "BillWagner"
 ms.author: "wiwagn"

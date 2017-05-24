@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "style design for controls"
   - "controls, style design"
 ms.assetid: c52dde45-a311-4531-af4c-853371c4d5f4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 18
 author: dotnet-bot
 ms.author: dotnetcontent

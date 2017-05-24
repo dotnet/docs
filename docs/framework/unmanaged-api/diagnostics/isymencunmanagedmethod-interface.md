@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymENCUnmanagedMethod interface [.NET Framework debugging]"
 ms.assetid: faebf594-67d5-4abf-b9c1-547fd3a1ff87
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

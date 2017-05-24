@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 27c9f2fd-f64d-4b4e-bbf6-1d24f47067cb
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 4
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -47,7 +45,6 @@ Dim custOrderFK As ForeignKeyConstraint = New ForeignKeyConstraint("CustOrderFK"
 custOrderFK.DeleteRule = Rule.None    
 ' Cannot delete a customer value that has associated existing orders.  
 custDS.Tables("OrdersTable").Constraints.Add(custOrderFK)  
-  
 ```  
   
 ```csharp  
@@ -88,7 +85,6 @@ Dim custUnique As UniqueConstraint = _
     New UniqueConstraint(New DataColumn()   {custTable.Columns("CustomerID"), _  
     custTable.Columns("CompanyName")})  
 custDS.Tables("Customers").Constraints.Add(custUnique)  
-  
 ```  
   
 ```csharp  

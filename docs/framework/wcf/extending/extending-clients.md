@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "proxy extensions [WCF]"
 ms.assetid: 1328c61c-06e5-455f-9ebd-ceefb59d3867
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 17
 author: "Erikre"
 ms.author: "erikre"

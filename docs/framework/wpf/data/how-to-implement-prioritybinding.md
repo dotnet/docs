@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "data binding, PriorityBinding class"
   - "PriorityBinding class"
 ms.assetid: d63b65ab-b3e9-4322-9aa8-1450f8d89532
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

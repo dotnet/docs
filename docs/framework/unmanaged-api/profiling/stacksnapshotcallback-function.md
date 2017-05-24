@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "StackSnapshotCallback function [.NET Framework profiling]"
 ms.assetid: d0f235b2-91fe-4f82-b7d5-e5c64186eea8
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 10

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "applications, optimizing"
   - "WPF application, optimizing"
 ms.assetid: ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 45
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "Page Setup dialog box, displaying"
   - "PageSetupDialog component"
 ms.assetid: 791caacb-a5ca-4fca-bad9-1a5721ad697c
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

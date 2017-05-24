@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "SetSymAttribute method [.NET Framework debugging]"
   - "ISymUnmanagedWriter::SetSymAttribute method [.NET Framework debugging]"
 ms.assetid: 64d9b80e-b883-4539-89c7-03573185a1eb
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

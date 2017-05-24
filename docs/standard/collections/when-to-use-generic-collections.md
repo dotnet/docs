@@ -12,8 +12,6 @@ helpviewer_keywords:
   - "collections [.NET Framework], generic"
   - "generic collections [.NET Framework]"
 ms.assetid: e7b868b1-11fe-4ac5-bed3-de68aca47739
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"

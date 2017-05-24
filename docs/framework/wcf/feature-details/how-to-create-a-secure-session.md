@@ -12,8 +12,6 @@ ms.topic: "article"
 helpviewer_keywords: 
   - "security [WCF], creating a session"
 ms.assetid: b6f42b5a-bbf7-45cf-b917-7ec9fa7ae110
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "BrucePerlerMS"
 ms.author: "bruceper"

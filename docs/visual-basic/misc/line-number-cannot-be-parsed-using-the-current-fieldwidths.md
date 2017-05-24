@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrTextFieldParser_MalFormedFixedWidthLine"
 ms.assetid: 84e14245-dfdf-4b62-8b84-e83a31608899
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 7
 author: dotnet-bot
 ms.author: dotnetcontent

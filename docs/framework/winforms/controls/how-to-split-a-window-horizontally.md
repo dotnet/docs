@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "splitter windows, horizontal"
   - "windows, splitting horizontally"
 ms.assetid: a1f74f29-048c-4723-85fa-b9d375ab8f4b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -45,7 +43,6 @@ The following code example makes the splitter that divides the <xref:System.Wind
         splitContainer1.Orientation = Orientation.Horizontal  
         Controls.Add(splitContainer1)  
     End Sub  
-  
     ```  
   
     ```csharp  

@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "video, painting with"
   - "brushes, painting with a video"
 ms.assetid: 04dd6600-4a6e-4b43-a93e-21cce7dfbcb8
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 5
 author: dotnet-bot
 ms.author: dotnetcontent

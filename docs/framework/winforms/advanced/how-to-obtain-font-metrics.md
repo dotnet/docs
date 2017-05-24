@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "fonts, obtaining metrics"
   - "font metrics, obtaining"
 ms.assetid: ff7c0616-67f7-4fa2-84ee-b8d642f2b09b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

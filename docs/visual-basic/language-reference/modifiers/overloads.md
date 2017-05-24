@@ -20,8 +20,6 @@ helpviewer_keywords:
   - "Shadows keyword"
   - "signature, hiding by"
 ms.assetid: 0c6820b8-25b2-4664-bc59-5ca93c99c042
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

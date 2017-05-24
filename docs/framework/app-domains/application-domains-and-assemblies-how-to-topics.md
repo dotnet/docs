@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "assemblies [.NET Framework], how-tos"
   - "application domains, how-tos"
 ms.assetid: 2264054e-712e-47e4-8657-1aa1cfec3e3d
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"

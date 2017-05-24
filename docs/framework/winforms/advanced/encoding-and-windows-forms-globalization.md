@@ -29,8 +29,6 @@ helpviewer_keywords:
   - "localization [Windows Forms], character sets"
   - "globalization [Windows Forms], character sets"
 ms.assetid: 22e8965d-a712-42b3-8167-3ee346bd70f9
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

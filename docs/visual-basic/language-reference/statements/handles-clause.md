@@ -17,8 +17,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Handles keyword"
 ms.assetid: 1b051c0e-f499-42f6-acb5-6f4f27824b40
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -44,7 +42,6 @@ Declares that a procedure handles a specified event.
 ## Syntax  
   
 ```  
-  
 proceduredeclaration Handles eventlist  
 ```  
   

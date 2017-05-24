@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "type libraries"
   - "registering assemblies"
 ms.assetid: 5220fe58-5aaf-4e8e-8bc3-b78c63025804
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -45,7 +43,6 @@ The .NET Services Installation tool performs the following actions:
 ## Syntax  
   
 ```  
-  
       regsvcs [/c | /fc | /u] [/tlb:typeLibraryFile] [/extlb]  
 [/reconfig] [/componly] [/appname:applicationName]  
 [/nologo] [/quiet]assemblyFile.dll   

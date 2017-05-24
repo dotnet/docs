@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 166923a9-a8ac-478f-92f9-529d9667f3a6
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -25,7 +23,6 @@ Contains a collection of configuration elements that specify user accounts for p
 ## Syntax  
   
 ```  
-  
 <allowAccounts>  
    <add securityIdentifier="String"/>  
 </allowAccounts>  

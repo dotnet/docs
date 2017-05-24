@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: ed1485fe-7529-4351-bca3-8bb915260b17
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -32,7 +30,6 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
          </behavior>              
        </serviceBehaviors>  
     <behaviors>  
-  
     ```  
   
     > [!NOTE]
@@ -57,7 +54,6 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
          </trackingProfile>   
        </tracking>  
     </system.serviceModel>  
-  
     ```  
   
      [!INCLUDE[crabout](../../../../includes/crabout-md.md)] tracking profiles, see [Tracking Profiles](../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md).  

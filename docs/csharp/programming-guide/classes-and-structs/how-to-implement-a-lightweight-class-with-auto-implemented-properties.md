@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "auto-implemented properties [C#]"
   - "properties [C#], auto-implemented"
 ms.assetid: 1dc5a8ad-a4f7-4f32-8506-3fc6d8c8bfed
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 11
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -133,7 +131,6 @@ This example shows how to create an immutable lightweight class that serves only
     Cesar Garcia, 12 108th St.  
     Debra Garcia, 89 E. 42nd St.  
 */  
-  
 ```  
   
  The compiler creates backing fields for each auto-implemented property. The fields are not accessible directly from source code.  

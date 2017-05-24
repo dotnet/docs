@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "WCF [WCF], what's new"
   - "Windows Communication Foundation [WCF], what's new"
 ms.assetid: 7e93fe73-af93-46b5-9f63-32f761ee40cf
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 35
 author: "Erikre"
 ms.author: "erikre"
@@ -128,7 +126,6 @@ This topic discusses features new to [!INCLUDE[indigo1](../../../includes/indigo
 <appSettings>  
     <add key="wcf:webservicehost:enableautomaticendpointscompatability" value="true"/>  
   </appSettings>  
-  
 ```  
   
 ## IHttpCookieContainerManager  
@@ -137,7 +134,6 @@ This topic discusses features new to [!INCLUDE[indigo1](../../../includes/indigo
 ```csharp  
 IHttpCookieContainerManager cookieManager = factory.GetProperty<IHttpCookieContainerManager>();   
 System.Net.CookieContainer container = cookieManager.CookieContainer;  
-  
 ```  
   
  You can then retrieve or set the cookies from the <xref:System.Net.CookieContainer>. When AllowCookies is set to false, you can manually retrieve the cookies using <xref:System.ServiceModel.OperationContext> and send it in other requests using another <xref:System.ServiceModel.OperationContext> or message inspector. The IHttpCookieContainerManager interface allows you to authenticate a user with a service and use the authentication cookie returned by that service to authenticate with other services.

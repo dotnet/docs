@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICLRRuntimeHost::GetCLRControl method [.NET Framework hosting]"
   - "GetCLRControl method [.NET Framework hosting]"
 ms.assetid: e47e3655-efd5-4572-a1dc-50c69bf2a468
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 13

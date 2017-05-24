@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "border thickness"
   - "ThicknessConverter objects"
 ms.assetid: 52682194-d7fd-499c-8005-73fcc84e7b2c
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

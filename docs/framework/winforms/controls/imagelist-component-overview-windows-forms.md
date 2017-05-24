@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "icon list control"
   - "ImageList component [Windows Forms], about ImageList component"
 ms.assetid: 7e25d89b-5633-40c1-afc3-82e0e301ffa2
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 8
 author: dotnet-bot
 ms.author: dotnetcontent

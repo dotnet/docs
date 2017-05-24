@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "EnumPermissionSets method [.NET Framework metadata]"
   - "IMetaDataImport::EnumPermissionSets method [.NET Framework metadata]"
 ms.assetid: 347d7e5c-c90f-45ad-bd1e-2c7912b0b19c
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

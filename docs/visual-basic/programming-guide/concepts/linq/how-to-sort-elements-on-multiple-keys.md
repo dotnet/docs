@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "VB"
 ms.assetid: 0c4c1462-3047-4766-b9e2-7e0e9cc7f421
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 3
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -42,7 +40,6 @@ For Each r In result
     Console.WriteLine("CustomerID:{0} EmployeeID:{1} ShipPostalCode:{2} OrderDate:{3:d}", _  
                 r.CustomerID, r.EmployeeID, r.ShipPostalCode, r.OrderDate)  
 Next  
-  
 ```  
   
  This code produces the following output:  

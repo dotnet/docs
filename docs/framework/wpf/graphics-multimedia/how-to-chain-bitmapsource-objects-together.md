@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "graphics, chaining BitmapSource objects"
   - "chaining BitmapSource objects"
 ms.assetid: 32d88853-395b-4855-9685-51a482a3b421
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 10
 author: dotnet-bot
 ms.author: dotnetcontent

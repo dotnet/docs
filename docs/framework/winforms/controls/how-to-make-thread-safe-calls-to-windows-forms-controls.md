@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "threading [Windows Forms], cross-thread calls"
   - "controls [Windows Forms], multithreading"
 ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 20
 author: dotnet-bot
 ms.author: dotnetcontent

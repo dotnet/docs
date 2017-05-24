@@ -14,8 +14,6 @@ dev_langs:
   - "CSharp"
   - "C++"
 ms.assetid: a1447a34-df06-4393-93c3-0612ebd41abc
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -27,7 +25,6 @@ Negates a `Boolean` expression.
 ## Syntax  
   
 ```  
-  
 NOT boolean_expression  
 or  
 ! boolean_expression  

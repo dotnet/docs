@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "classes, owners of dependency properties"
   - "metadata, dependency properties"
 ms.assetid: 1fbada8e-4867-4ed1-8d97-62c07dad7ebc
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 27
 author: dotnet-bot
 ms.author: dotnetcontent

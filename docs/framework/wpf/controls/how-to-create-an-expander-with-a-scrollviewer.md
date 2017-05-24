@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Expander control, creating"
   - "controls [WPF], ScrollViewer"
 ms.assetid: 2ad124d2-2406-4157-aaf2-64e067298f01
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

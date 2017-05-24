@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "Windows Forms, changing the appearance of"
 ms.assetid: 12f35d5b-1587-49cc-ada3-47eec1ff1738
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 6
 author: dotnet-bot
 ms.author: dotnetcontent

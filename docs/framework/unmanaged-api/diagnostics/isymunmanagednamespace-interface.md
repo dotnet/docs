@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "ISymUnmanagedNamespace interface [.NET Framework debugging]"
 ms.assetid: d42bea4e-5848-4e43-a883-69af7a313ce9
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 5

@@ -24,8 +24,6 @@ helpviewer_keywords:
   - "Xor keyword"
   - "bitwise comparison"
 ms.assetid: 036000a9-3934-4e7f-a9d0-a816de3d84a6
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -51,7 +49,6 @@ Performs a logical exclusion on two `Boolean` expressions, or a bitwise exclusio
 ## Syntax  
   
 ```  
-  
 result = expression1 Xor expression2  
 ```  
   

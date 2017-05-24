@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "<startup> element"
   - "startup element"
 ms.assetid: 536acfd8-f827-452f-838a-e14fa3b87621
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 19
 author: "mcleblanc"
 ms.author: "markl"

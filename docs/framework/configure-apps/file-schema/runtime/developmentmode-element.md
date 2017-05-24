@@ -22,8 +22,6 @@ helpviewer_keywords:
   - "container tags, <developmentMode> element"
   - "<developmentMode> element"
 ms.assetid: 60e79a8c-415a-497d-be29-b9d0fd9bdee3
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"

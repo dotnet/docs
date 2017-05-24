@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "TextPattern class"
   - "classes, TextPattern"
 ms.assetid: ca6ac045-7b21-4487-9379-59aa20909670
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 62
 author: "Xansky"
 ms.author: "mhopkins"

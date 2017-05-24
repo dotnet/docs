@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "strings, interop marshaling"
   - "interop marshaling, strings"
 ms.assetid: 9baea3ce-27b3-4b4f-af98-9ad0f9467e6f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -118,7 +116,6 @@ Public Declare Auto Sub PassAnsiBStr Lib "StringLib.Dll" _
 Public Declare Auto Sub PassTBStr Lib "StringLib.Dll" _  
 (<MarshalAs(UnmanagedType.TBStr)> s As String)  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -200,7 +197,6 @@ Structure StringInfoT
 <MarshalAs(UnmanagedType.ByValTStr, SizeConst := 256)> _  
 Public f2 As String  
 End Structure  
-  
 ```  
   
 ```csharp  
@@ -253,7 +249,6 @@ Public Class Window
    Return sb.ToString()  
    End Function  
 End Class  
-  
 ```  
   
 ```csharp  

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "data streams, reading text from files"
   - "I/O [.NET Framework], reading text from files"
 ms.assetid: ed180baa-dfc6-4c69-a725-46e87edafb27
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 23
 author: "mairaw"
 ms.author: "mairaw"

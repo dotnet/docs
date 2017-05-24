@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "validation [.NET Framework], client application services"
   - "client application services, authenticate users"
 ms.assetid: 5431a671-eb02-4e18-a651-24764fccec9a
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

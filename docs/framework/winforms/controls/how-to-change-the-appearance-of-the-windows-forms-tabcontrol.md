@@ -17,8 +17,6 @@ helpviewer_keywords:
   - "tabs, controlling appearance"
   - "buttons, displaying tabs as"
 ms.assetid: 7c6cc443-ed62-4d26-b94d-b8913b44f773
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -57,12 +55,10 @@ You can change the appearance of tabs in Windows Forms by using properties of th
   
     ```vb  
     TabPage1.Enabled = False  
-  
     ```  
   
     ```csharp  
     tabPage1.Enabled = false;  
-  
     ```  
   
     ```cpp  

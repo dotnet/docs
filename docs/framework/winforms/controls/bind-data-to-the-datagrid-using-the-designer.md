@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "data sources, binding to Windows Forms controls"
   - "DataGridView control [Windows Forms], data binding"
 ms.assetid: f4f46009-cec2-441b-8668-6b5af057558b
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

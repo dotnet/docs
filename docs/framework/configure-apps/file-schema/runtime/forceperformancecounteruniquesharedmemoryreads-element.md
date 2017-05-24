@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "forcePerformanceCounterUniqueSharedMemoryReads element"
   - "<forcePerformanceCounterUniqueSharedMemoryReads> element"
 ms.assetid: 91149858-4810-4f65-9b48-468488172c9b
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"

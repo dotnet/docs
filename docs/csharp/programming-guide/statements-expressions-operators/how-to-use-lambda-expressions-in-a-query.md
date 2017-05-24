@@ -14,8 +14,6 @@ dev_langs:
 helpviewer_keywords: 
   - "lambda expressions [C#], in LINQ"
 ms.assetid: 3cac4d25-d11f-4abd-9e7c-0f02e97ae06d
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 16
 author: "BillWagner"
 ms.author: "wiwagn"

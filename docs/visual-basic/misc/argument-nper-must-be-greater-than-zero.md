@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrRate_NPerMustBeGTZero"
 ms.assetid: d49242df-dbd1-4b26-bd8c-ed56d24fdfcd
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

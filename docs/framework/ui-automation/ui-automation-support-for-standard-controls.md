@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "controls, UI Automation support for"
   - "UI Automation, support for standard controls"
 ms.assetid: 3770ea8a-2655-4add-9c59-fe0610ad5084
-ms.technology: 
-  - "dotnet-standard"
 caps.latest.revision: 11
 author: "Xansky"
 ms.author: "mhopkins"

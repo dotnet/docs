@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: bcfe5c44-04ef-4a20-96a5-90bfadf39623
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"
@@ -21,7 +19,6 @@ manager: "erikre"
 This configuration element contains a collection of XML elements that contain custom metadata to be published along with the standard discoverable metadata (EPR, ContractTypeName, BindingName, Scope and ListenURI). The following is an example of using this configuration element.  
   
 ```  
-  
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
@@ -52,7 +49,6 @@ This configuration element contains a collection of XML elements that contain cu
     </behavior>  
   </endpointBehaviors>  
 </behaviors>  
-  
 ```  
   
 ## See Also  

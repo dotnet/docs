@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugMetaDataLocator::GetMetaData method [.NET Framework debugging]"
   - "GetMetaData method, ICorDebugMetaDataLocator interface [.NET Framework debugging]"
 ms.assetid: f9b0ff22-54db-45eb-9cc3-508000a3141d
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 8

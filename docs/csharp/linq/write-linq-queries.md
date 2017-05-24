@@ -1,5 +1,5 @@
 ---
-title: "Write LINQ queries in C#"
+title: Write LINQ queries in C# | Microsoft Docs
 description: How to write queries.
 keywords: .NET, .NET Core, C#
 author: BillWagner

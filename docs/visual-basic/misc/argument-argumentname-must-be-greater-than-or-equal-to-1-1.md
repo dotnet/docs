@@ -12,8 +12,6 @@ ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_GEMinusOne1"
 ms.assetid: 4bdbef4c-6eff-4fab-a1d0-cb176d5f8798
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

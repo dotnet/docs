@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "operator overloading [C#], using to create classes"
   - "operators [C#], overloading to create a complex number class"
 ms.assetid: c9b8d982-5112-413f-bae3-b42ae3248ddf
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

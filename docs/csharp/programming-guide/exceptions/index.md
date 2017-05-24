@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "exceptions [C#]"
   - "C# language, exceptions"
 ms.assetid: 0001887f-4fa2-47e2-8034-2819477e2344
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 33
 author: "BillWagner"
 ms.author: "wiwagn"

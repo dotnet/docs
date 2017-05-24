@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "Module modifier"
   - "attribute blocks, Module keyword"
 ms.assetid: d971b940-05ab-4d56-8485-e3b8a661906b
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

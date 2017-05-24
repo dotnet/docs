@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "<remarks> XML tag"
   - "remarks XML tag"
 ms.assetid: c6241773-a7ed-41c9-9a8b-9722a0c606a9
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

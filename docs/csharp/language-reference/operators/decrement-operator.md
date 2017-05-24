@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "-- operator [C#]"
   - "decrement operator (--) [C#]"
 ms.assetid: 6b9cfe86-63c7-421f-9379-c9690fea8720
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 17
 author: "BillWagner"
 ms.author: "wiwagn"

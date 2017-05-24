@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "text [Windows Forms], drawing in a rectangle"
   - "strings [Windows Forms], drawing in a rectangle"
 ms.assetid: e1fb432a-dc90-48b5-9b6b-acc14507133d
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent

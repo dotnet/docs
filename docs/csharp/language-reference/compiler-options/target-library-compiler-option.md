@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "target compiler options [C#], /target:library"
   - "/target compiler options [C#], /target:library"
 ms.assetid: c5670e88-2126-47c1-8d1c-217923837d17
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

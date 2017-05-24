@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "MatrixTransform class"
   - "graphics [WPF], custom Transforms"
 ms.assetid: 919381ca-989f-47cf-86b4-1094060236e4
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

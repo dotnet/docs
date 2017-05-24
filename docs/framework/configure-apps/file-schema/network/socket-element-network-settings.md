@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "<socket> element"
   - "socket element"
 ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "mcleblanc"
 ms.author: "markl"
@@ -39,7 +37,6 @@ Specifies whether socket operations use completion ports.
 ## Syntax  
   
 ```  
-  
       <socket  
   alwaysUseCompletionPortsForConnect="true|false"  
   alwaysUseCompletionPortsForAccept="true|false"  

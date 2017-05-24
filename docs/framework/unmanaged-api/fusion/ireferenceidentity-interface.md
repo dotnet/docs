@@ -22,8 +22,6 @@ dev_langs:
 helpviewer_keywords: 
   - "IReferenceIdentity interface [.NET Framework fusion]"
 ms.assetid: 9180ac5a-7019-4716-9f83-8a91d157239a
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 7

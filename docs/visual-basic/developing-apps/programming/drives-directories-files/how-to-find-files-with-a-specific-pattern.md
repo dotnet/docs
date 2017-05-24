@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "pattern matching"
   - "patterns, matching"
 ms.assetid: 25e3b71d-b844-4293-9e4e-f06c5836b5cc
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 23
 author: dotnet-bot
 ms.author: dotnetcontent

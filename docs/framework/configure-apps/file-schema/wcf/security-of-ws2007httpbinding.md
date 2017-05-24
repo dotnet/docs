@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: fdda0ff7-b462-4e26-af52-e87ddab71945
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 10
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -29,7 +27,6 @@ Represents the security settings used with the [\<ws2007HttpBinding>](../../../.
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <bindings>  
         <ws2007HttpBinding>  

@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "less than operator (<) [C#]"
   - "< operator [C#]"
 ms.assetid: 38cb91e6-79a6-48ec-9c1e-7b71fd8d2b41
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 14
 author: "BillWagner"
 ms.author: "wiwagn"

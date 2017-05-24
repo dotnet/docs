@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "NumericUpDown control [Windows Forms], formatting values"
   - "up-down controls, formatting numeric values"
 ms.assetid: fa7c5557-6bfb-45b2-975d-8887b23b0ba0
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 13
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -32,13 +30,11 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
     ```vb  
     NumericUpDown1.DecimalPlaces = 2  
     NumericUpDown1.ThousandsSeparator = True  
-  
     ```  
   
     ```csharp  
     numericUpDown1.DecimalPlaces = 2;  
     numericUpDown1.ThousandsSeparator = true;  
-  
     ```  
   
     ```cpp  
@@ -52,12 +48,10 @@ You can configure how values are displayed in the Windows Forms <xref:System.Win
   
     ```vb  
     NumericUpDown1.Hexadecimal = True  
-  
     ```  
   
     ```csharp  
     numericUpDown1.Hexadecimal = true;  
-  
     ```  
   
     ```cpp  

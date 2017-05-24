@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ICorDebugAppDomain::EnumerateBreakpoints method [.NET Framework debugging]"
   - "EnumerateBreakpoints method [.NET Framework debugging]"
 ms.assetid: 206069c5-25cb-4794-9d69-67c5aa7ed0af
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 14

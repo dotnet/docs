@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "globalization, about globalization"
   - "localization, about localization"
 ms.assetid: 56e5a5c8-6c96-4d19-b8e1-a5be1dc564af
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 39
 author: dotnet-bot
 ms.author: dotnetcontent

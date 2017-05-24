@@ -13,8 +13,6 @@ helpviewer_keywords:
   - "Visual C# compiler, errors"
   - "errors [C#]"
 ms.assetid: 57262ab1-6c50-4f9c-81ad-9fba48477416
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 23
 author: "BillWagner"
 ms.author: "wiwagn"

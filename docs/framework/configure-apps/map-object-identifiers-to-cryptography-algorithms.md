@@ -21,8 +21,6 @@ helpviewer_keywords:
   - "mapping object identifiers"
   - "cryptography, mapping object identifiers"
 ms.assetid: c9673f81-bf9e-47fd-bc6f-6bc1c1c4c15e
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"

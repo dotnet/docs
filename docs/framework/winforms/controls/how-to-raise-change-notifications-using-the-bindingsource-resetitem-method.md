@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "data sources, detecting changes"
   - "change notifications"
 ms.assetid: ab8b4096-37ff-4e30-aabc-de79a2f2e972
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 11
 author: dotnet-bot
 ms.author: dotnetcontent

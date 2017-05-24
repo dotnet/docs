@@ -17,8 +17,6 @@ dev_langs:
 helpviewer_keywords: 
   - "WCF Data Services, getting started"
 ms.assetid: c832fa5b-cf86-4690-be5a-a226c0e49530
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 2
 author: "Erikre"
 ms.author: "erikre"

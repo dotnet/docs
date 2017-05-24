@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 5da300e2-74c0-4d13-9202-fc20ed8212d8
-ms.technology: 
-  - "dotnet-ado"
 caps.latest.revision: 3
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -44,7 +42,6 @@ Else
     custView(rowIndex)("CustomerID").ToString(), _  
     custView(rowIndex)("CompanyName").ToString())  
 End If  
-  
 ```  
   
 ```csharp  
@@ -81,7 +78,6 @@ Else
       myDRV("CompanyName").ToString(), myDRV("ContactName").ToString())  
   Next  
 End If  
-  
 ```  
   
 ```csharp  

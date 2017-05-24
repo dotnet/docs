@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: c0e8f7bb-cb13-49ec-852f-b85d7c23972f
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 14
 author: "Erikre"
 ms.author: "erikre"
@@ -38,7 +36,6 @@ manager: "erikre"
   
 ```csharp  
 host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action = WorkflowUnhandledExceptionAction.Abandon });  
-  
 ```  
   
  It can also be configured in a configuration file as shown in the following example.  
@@ -52,7 +49,6 @@ host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action =
           <workflowUnhandledExceptionBehavior action="Abandon" />        
         </behavior>  
       </serviceBehaviors>  
-  
 ```  
   
 ## Hosting Non-Service Workflows  

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "VBC40059"
   - "BC40059"
 ms.assetid: 520e39cb-8ab6-46f5-aa00-08afd51b4b7c
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

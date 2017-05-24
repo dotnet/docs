@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 03ced70e-b540-4dd9-86c8-87f7bd61f609
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 11
 author: "Erikre"
 ms.author: "erikre"
@@ -78,7 +76,6 @@ Workflow services and clients can participate in transactions.  For a service op
         }  
   
     }  
-  
     ```  
   
      This is a native activity that displays information about the ambient transaction and is used in both the service and client workflows used in this topic. Build the solution to make this activity available in the **Common** section of the **Toolbox**.  
@@ -248,7 +245,6 @@ Workflow services and clients can participate in transactions.  For a service op
                   host.Close();  
               };         
           }  
-  
     ```  
   
 3.  Add the following app.config file to the project.  
@@ -265,7 +261,6 @@ Workflow services and clients can participate in transactions.  For a service op
             </bindings>  
         </system.serviceModel>  
     </configuration>  
-  
     ```  
   
 ### Create the client application  
@@ -321,7 +316,6 @@ Workflow services and clients can participate in transactions.  For a service op
                 return UnhandledExceptionAction.Cancel;  
             }  
         }  
-  
     ```  
   
 ## See Also  

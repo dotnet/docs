@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "literals, coercing data type"
   - "declarations, data types"
 ms.assetid: 057206d2-3a5b-40b9-b3af-57446f9b52fa
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 19
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "Windows Forms, data binding"
   - "Windows Forms, adding change notification for data binding"
 ms.assetid: b5b10f90-0585-41d9-a377-409835262a92
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

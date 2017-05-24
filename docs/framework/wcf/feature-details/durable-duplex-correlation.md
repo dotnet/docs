@@ -10,8 +10,6 @@ ms.technology:
 ms.tgt_pltfrm: ""
 ms.topic: "article"
 ms.assetid: 8eb0e49a-6d3b-4f7e-a054-0d4febee2ffb
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 9
 author: "Erikre"
 ms.author: "erikre"
@@ -204,7 +202,6 @@ WF1 - Request Submitted
 WF2 - Sending items  
 WF2 - Items sent  
 WF1 - Items Received  
-  
 ```  
   
  In this example, both workflows explicitly manage correlation using a <xref:System.ServiceModel.Activities.CallbackCorrelationInitializer>. Because there was only a single correlation in these sample workflows, the default <xref:System.ServiceModel.Activities.CorrelationHandle> management would have been sufficient.  

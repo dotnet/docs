@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "styles"
   - "templates"
 ms.assetid: 7fd571fd-d54a-40fc-b332-4c4015a5b6ff
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 15
 author: dotnet-bot
 ms.author: dotnetcontent

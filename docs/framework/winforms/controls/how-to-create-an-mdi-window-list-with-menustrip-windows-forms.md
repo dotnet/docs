@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "MDI, creating window lists"
   - "MenuStrip control [Windows Forms], creating window lists"
 ms.assetid: 04fb414b-811f-4a83-aab6-b4a24646dec5
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

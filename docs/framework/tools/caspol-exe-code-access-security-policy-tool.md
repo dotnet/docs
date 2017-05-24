@@ -28,8 +28,6 @@ helpviewer_keywords:
   - "security policy [.NET Framework], modifying"
   - "manually editing security configuration files"
 ms.assetid: d2bf6123-7b0c-4e60-87ad-a39a1c3eb2e0
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 44
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -51,7 +49,6 @@ The Code Access Security (CAS) Policy tool (Caspol.exe) enables users and admini
 ## Syntax  
   
 ```  
-  
 caspol [options]  
 ```  
   

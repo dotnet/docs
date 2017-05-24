@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "ReadMemory method [.NET Framework debugging]"
   - "ICorDebugProcess::ReadMemory method [.NET Framework debugging]"
 ms.assetid: 28e4b2f6-9589-445c-be24-24a3306795e7
-ms.technology: 
-  - "dotnet-clr"
 topic_type: 
   - "apiref"
 caps.latest.revision: 11

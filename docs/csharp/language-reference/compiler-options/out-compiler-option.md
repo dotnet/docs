@@ -14,8 +14,6 @@ helpviewer_keywords:
   - "out compiler option [C#]"
   - "-out compiler option [C#]"
 ms.assetid: 70d91d01-7bd2-4aea-ba8b-4e9807e9caa5
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 15
 author: "BillWagner"
 ms.author: "wiwagn"

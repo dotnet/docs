@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "application settings, Windows Forms"
   - "application settings, validating"
 ms.assetid: 9f145ada-4267-436a-aa4c-c4dcffd0afb7
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 17
 author: dotnet-bot
 ms.author: dotnetcontent

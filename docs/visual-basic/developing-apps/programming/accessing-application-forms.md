@@ -18,8 +18,6 @@ helpviewer_keywords:
   - "My.Forms object"
   - "forms, accessing all open"
 ms.assetid: 9aaf5aaf-2012-4f97-89c7-6e62b9d17863
-ms.technology: 
-  - "devlang-visual-basic"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

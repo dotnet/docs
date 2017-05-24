@@ -15,8 +15,6 @@ helpviewer_keywords:
   - "flow content elements [WPF], flow documents"
   - "flow documents"
 ms.assetid: ef236a50-d44f-43c8-ba7c-82b0c733c0b7
-ms.technology: 
-  - "dotnet-wpf"
 caps.latest.revision: 39
 author: dotnet-bot
 ms.author: dotnetcontent

@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "images [Windows Forms], scaling"
   - "images [Windows Forms], controlling quality"
 ms.assetid: fde9bccf-8aa5-4b0d-ba4b-788740627b02
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 16
 author: dotnet-bot
 ms.author: dotnetcontent

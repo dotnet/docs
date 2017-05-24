@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "TextBox control [Windows Forms], displaying quotation marks"
   - "quotation marks, adding to strings in text boxes"
 ms.assetid: 68bdc3f3-4177-4eab-99cd-cac17a82b515
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 14
 author: dotnet-bot
 ms.author: dotnetcontent
@@ -38,14 +36,12 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
     Private Sub InsertQuote()  
        TextBox1.Text = "She said, ""You deserve a treat!"" "  
     End Sub  
-  
     ```  
   
     ```csharp  
     private void InsertQuote(){  
        textBox1.Text = "She said, \"You deserve a treat!\" ";  
     }  
-  
     ```  
   
     ```cpp  
@@ -64,7 +60,6 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
     Private Sub InsertAscii()  
        TextBox1.Text = "She said, " & Chr(34) & "You deserve a treat!" & Chr(34)  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -83,13 +78,11 @@ Sometimes you might want to place quotation marks (" ") in a string of text. For
     ```vb  
     Const quote As String = """"  
     TextBox1.Text = "She said, " & quote & "You deserve a treat!" & quote  
-  
     ```  
   
     ```csharp  
     const string quote = "\"";  
     textBox1.Text = "She said, " + quote +  "You deserve a treat!"+ quote ;  
-  
     ```  
   
     ```cpp  

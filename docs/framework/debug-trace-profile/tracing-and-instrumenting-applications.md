@@ -23,8 +23,6 @@ helpviewer_keywords:
   - "performance monitoring, tracing code"
   - "Trace class, instrumentation for .NET applications"
 ms.assetid: 773b6fc4-9013-4322-b728-5dec7a72e743
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 21
 author: "mairaw"
 ms.author: "mairaw"
@@ -57,13 +55,11 @@ Tracing is a way for you to monitor the execution of your application while it i
 ```vb  
 Trace.WriteLine("Hello World!")  
 Debug.WriteLine("Hello World!")  
-  
 ```  
   
 ```csharp  
 System.Diagnostics.Trace.WriteLine("Hello World!");  
 System.Diagnostics.Debug.WriteLine("Hello World!");  
-  
 ```  
   
  Each of these examples will display "Hello World!" in the Output window when the application is run in the debugger.  

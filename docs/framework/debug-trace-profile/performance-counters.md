@@ -19,8 +19,6 @@ helpviewer_keywords:
   - "performance counters"
   - "performance monitoring, counters"
 ms.assetid: 06a4ae8c-eeb2-4d5a-817e-b1b95c0653e1
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -240,7 +238,6 @@ for (int i = 0; i < Array.Length; i++)
 {  
     Console.Out.WriteLine("{0}. Name={1} Help={2}", i, Array[i].CategoryName, Array[i].CategoryHelp);  
 }  
-  
 ```  
   
  The networking performance counters are listed in two categories:  

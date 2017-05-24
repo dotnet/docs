@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "shortcut menus, adding items"
   - "context menus, adding menu items"
 ms.assetid: 1ec14776-3ea2-4752-bd22-4fae0fd19e1a
-ms.technology: 
-  - "dotnet-winforms"
 caps.latest.revision: 9
 author: dotnet-bot
 ms.author: dotnetcontent

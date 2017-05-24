@@ -12,8 +12,6 @@ dev_langs:
 helpviewer_keywords: 
   - "#undef directive [C#]"
 ms.assetid: 686c92d2-7194-4be4-b2f4-80091712d513
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 12
 author: "BillWagner"
 ms.author: "wiwagn"

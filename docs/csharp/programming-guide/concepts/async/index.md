@@ -12,8 +12,6 @@ ms.topic: "article"
 dev_langs: 
   - "CSharp"
 ms.assetid: 9bcf896a-5826-4189-8c1a-3e35fa08243a
-ms.technology: 
-  - "devlang-csharp"
 caps.latest.revision: 5
 author: "BillWagner"
 ms.author: "wiwagn"
@@ -217,7 +215,6 @@ Task returnedTask = Task_MethodAsync();
 await returnedTask;  
 // or, in a single statement  
 await Task_MethodAsync();  
-  
 ```  
   
  Each returned task represents ongoing work. A task encapsulates information about the state of the asynchronous process and, eventually, either the final result from the process or the exception that the process raises if it doesn't succeed.  

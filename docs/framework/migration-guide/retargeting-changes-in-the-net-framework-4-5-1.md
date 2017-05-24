@@ -16,8 +16,6 @@ helpviewer_keywords:
   - "retargeting changes, .NET Framework 4.5.1"
   - "retargeting changes, .NET Framework"
 ms.assetid: 8087326d-77e9-4804-ba33-ff1bb1bec2b8
-ms.technology: 
-  - "dotnet-clr"
 caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"

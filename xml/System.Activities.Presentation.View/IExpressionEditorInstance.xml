@@ -605,7 +605,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MaxHeight%2A> is set, it will override `MaxLines`.  
+ If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MaxLines*> is set, it will override `MaxLines`.  
   
  ]]></format>
         </remarks>
@@ -630,7 +630,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MinHeight%2A> is set, then it will override MinLines.  
+ If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MinLines*> is set, then it will override MinLines.  
   
  ]]></format>
         </remarks>

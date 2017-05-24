@@ -40,7 +40,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If the `type` and `direction` parameters do not match the associated values of `boundArgument`, an <xref:System.InvalidArgumentException> is thrown.  
+ If the `type` and `direction` parameters do not match the associated values of `boundArgument`, an <xref:System.InvalidOperationException> is thrown.  
   
  ]]></format>
         </remarks>

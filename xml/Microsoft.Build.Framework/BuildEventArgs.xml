@@ -45,7 +45,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This implementation of the <xref:Microsoft.Build.Framework.BuildEventArgs> constructor takes no parameters, and sets the <xref:Microsoft.Build.Framework.BuildEventArgs.TimeStamp%2A> property to <xref:System.DateTime.Now%2A> and the <xref:Microsoft.Build.Framework.BuildEventArgs.ThreadId%2A> property to the current thread.  
+ This implementation of the <xref:Microsoft.Build.Framework.BuildEventArgs> constructor takes no parameters, and sets the <xref:Microsoft.Build.Framework.BuildEventArgs.Timestamp*> property to <xref:System.DateTime.Now%2A> and the <xref:Microsoft.Build.Framework.BuildEventArgs.ThreadId%2A> property to the current thread.  
   
  ]]></format>
         </remarks>

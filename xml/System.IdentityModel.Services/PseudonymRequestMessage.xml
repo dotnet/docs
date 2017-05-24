@@ -11,7 +11,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a WS-Federation Pseudonym Request message. This message is created when the received message wa parameter is "wpseudo1.0".</summary>
+    <summary>Represents a WS-Federation Pseudonym Request message. This message is created when the received message wa parameter is “wpseudo1.0”.</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -215,7 +215,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method calls the <xref:System.IdentityModel.Services.PseudonymReqeustMessage.Validate%2A> method before writing the message.  
+ This method calls the <xref:System.IdentityModel.Services.PseudonymRequestMessage.Validate*> method before writing the message.  
   
  ]]></format>
         </remarks>

@@ -1482,11 +1482,15 @@
 ## Remarks  
  This property is a convenience feature that indicates whether a <xref:System.Numerics.BigInteger> value is evenly divisible by two. It is equivalent to the following expression:  
   
-```csharp  
+ [C#]  
+  
+```  
 value % 2 == 0;  
 ```  
   
-```vb  
+ [Visual Basic]  
+  
+```  
 value Mod 2 = 0  
 ```  
   
@@ -1661,8 +1665,8 @@ value Mod 2 = 0
   
  You can find the square root of a number by calling the <xref:System.Numerics.BigInteger.Log%2A> method along with the <xref:System.Math.Exp%2A?displayProperty=fullName> method. Note that the result is <xref:System.Double.PositiveInfinity?displayProperty=fullName> if the result is greater than <xref:System.Double.MaxValue?displayProperty=fullName>. The following example calculates the square root of each element in an array of <xref:System.Numerics.BigInteger> values.  
   
- [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)] 
- [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]   
+ <!-- TODO: review snippet reference [!code-csharp[System.Numerics.BigInteger.Log#1](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.numerics.biginteger.log/cs/log1.cs#1)]  -->
+ <!-- TODO: review snippet reference [!code-vb[System.Numerics.BigInteger.Log#1](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.numerics.biginteger.log/vb/log1.vb#1)]  -->  
   
  This method corresponds to the <xref:System.Math.Log%28System.Double%29?displayProperty=fullName> method for the primitive numeric types.  
   
@@ -3337,7 +3341,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#21](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#21)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.%2A> Compare(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare*> Compare(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -3601,7 +3605,7 @@ value Mod 2 = 0
   
  [!code-vb[System.Numeric.BigInteger.Class#23](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#23)]  
   
- The equivalent method for this operator is <xref:System.Numerics.BigInteger.%2A> Compare(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Compare*> Compare(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -4990,7 +4994,7 @@ value Mod 2 = 0
  [!code-csharp[System.Numeric.BigInteger.Class#11](~/samples/snippets/csharp/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/cs/BigInteger_Examples.cs#11)]
  [!code-vb[System.Numeric.BigInteger.Class#11](~/samples/snippets/visualbasic/VS_Snippets_CLR_System/system.Numeric.BigInteger.Class/vb/BigInteger_Examples.vb#11)]  
   
- The equivalent method for this operator is <xref:System.Numeric%2A> s .BigInteger.Multiply(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
+ The equivalent method for this operator is <xref:System.Numerics.BigInteger.Multiply*> s .BigInteger.Multiply(System.Numeric s .BigInteger,System.Numeric s .BigInteger)?qualifyHint=True&autoUpgrade=False]]></format>
         </remarks>
       </Docs>
     </Member>

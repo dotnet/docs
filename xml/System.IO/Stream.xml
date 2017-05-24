@@ -61,7 +61,7 @@
   
  The <xref:System.IO.Stream.Read%2A> and <xref:System.IO.Stream.Write%2A> methods read and write data in a variety of formats. For streams that support seeking, use the <xref:System.IO.Stream.Seek%2A> and <xref:System.IO.Stream.SetLength%2A> methods and the <xref:System.IO.Stream.Position%2A> and <xref:System.IO.Stream.Length%2A> properties to query and modify the current position and length of a stream.  
   
- This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the "Using an Object that Implements IDisposable" section in the <xref:System.IDisposable> interface topic.  
+ This type implements the <xref:System.IDisposable> interface. When you have finished using the type, you should dispose of it either directly or indirectly. To dispose of the type directly, call its <xref:System.IDisposable.Dispose%2A> method in a `try`/`catch` block. To dispose of it indirectly, use a language construct such as `using` (in C#) or `Using` (in Visual Basic). For more information, see the “Using an Object that Implements IDisposable” section in the <xref:System.IDisposable> interface topic.  
   
  Disposing a <xref:System.IO.Stream> object flushes any buffered data, and essentially calls the <xref:System.IO.Stream.Flush%2A> method for you. <xref:System.IO.Stream.Dispose%2A> also releases operating system resources such as file handles, network connections, or memory used for any internal buffering. The <xref:System.IO.BufferedStream> class provides the capability of wrapping a buffered stream around another stream in order to improve read and write performance.  
   
@@ -428,7 +428,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If a class derived from <xref:System.IO.Stream> does not support writing, a call to <xref:System.IO.Stream.Write%2A>, <xref:System.IO.Stream.BeginWrite%2A>, or <xref:System.IO.Stream.WriteByte%2A> throws a <xref:System.NotSupportedException>. In such cases, <xref:System.IO.Stream.Flush%2A> is typically implemented as an empty method to ensure full compatibility with other <xref:System.IO.Stream> types since it's valid to flush a read-only stream.   
+ If a class derived from <xref:System.IO.Stream> does not support writing, a call to <xref:System.IO.Stream.Write%2A>, <xref:System.IO.Stream.BeginWrite%2A>, or <xref:System.IO.Stream.WriteByte%2A> throws a <xref:System.NotSupportedException>.  
   
  If the stream is closed, this property returns `false`.  
   
@@ -1075,8 +1075,6 @@
   
 ## Remarks  
  Override `Flush` on streams that implement a buffer. Use this method to move any information from an underlying buffer to its destination, clear the buffer, or both. Depending upon the state of the object, you might have to modify the current position within the stream (for example, if the underlying stream supports seeking). For additional information see <xref:System.IO.Stream.CanSeek%2A>.  
-  
- In a class derived from <xref:System.IO.Stream> that doesn't support writing, <xref:System.IO.Stream.Flush%2A> is typically implemented as an empty method to ensure full compatibility with other <xref:System.IO.Stream> types since it's valid to flush a read-only stream.  
   
  When using the <xref:System.IO.StreamWriter> or <xref:System.IO.BinaryWriter> class, do not flush the base <xref:System.IO.Stream> object. Instead, use the class's <xref:System.IO.Stream.Flush%2A> or <xref:System.IO.Stream.Close%2A> method, which makes sure that the data is flushed to the underlying stream first and then written to the file.  
   

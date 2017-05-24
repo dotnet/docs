@@ -420,7 +420,7 @@ sampleObject.Field = "Sample string"
 
 For more information, see:
 
-- [Generics](docs/standard/generics/index.md)
+- [Generics](~/docs/standard/generics/index.md)
 
 - [Generic Types in Visual Basic](../../../visual-basic/programming-guide/language-features/data-types/generic-types.md)
 

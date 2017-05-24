@@ -3,7 +3,6 @@ title: Install the .NET Framework on Windows XP | Microsoft Docs
 description: Learn how to install .NET Framework on Windows XP
 author: rlander
 keywords: .NET Framework, Install
-
 ms.date: 03/28/2017
 ms.topic: article
 ms.prod: .net-framework-4.6
@@ -17,7 +16,7 @@ ms.assetid: 87cda1d5-c8g5-5eb5-93e8-5f478de07ff7
 > [!NOTE]
 > Windows XP is no longer supported by Microsoft. We recommend you upgrade to Windows 10, which is supported and supports the latest version of the .NET Framework. This document is provided solely as a helpful troubleshooting guide.
 
-You may need the .NET Framework to run an application on Windows XP. You can use the following instructions to help you. The instructions depend on which version of the .NET Framework you need.
+You may need the .NET Framework to run an app on Windows XP. You can use the following instructions to help you. The instructions depend on which version of the .NET Framework you need.
 
 ## .NET Framework 4.5 and later
 

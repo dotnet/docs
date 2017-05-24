@@ -3,7 +3,6 @@ title: Repair the .NET Framework | Microsoft Docs
 description: Learn how to repair the .NET Framework
 author: rlander
 keywords: .NET Framework, Install
-
 ms.date: 03/28/2017
 ms.topic: article
 ms.prod: .net-framework-4.6
@@ -18,4 +17,4 @@ In some situations, your .NET Framework installation can become damaged and requ
 
 You can repair your .NET Framework install using the [.NET Framework Repair Tool](http://download.microsoft.com/download/2/B/D/2BDE5459-2225-48B8-830C-AE19CAF038F1/NetFxRepairTool.exe).
 
-If your app still isn't starting after repairing the .NET Framework, then the application might have a problem. In that case, you should contact the application publisher.
+If your app still isn't starting after repairing the .NET Framework, then the app might have a problem. In that case, you should contact the app publisher.

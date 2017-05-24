@@ -84,5 +84,5 @@ One of the most common scenarios for using the <xref:System.Windows.Forms.DataGr
  <xref:System.Windows.Forms.DataGridView>   
  <xref:System.Windows.Forms.BindingSource>   
  [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)   
- [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/create-a-master-detail-form-using-two-datagrids.md)   
+ [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/create-a-master-detail-form-using-two-datagridviews.md)   
  [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)

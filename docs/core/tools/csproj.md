@@ -69,6 +69,13 @@ This change does not modify the main mechanics of other includes. However, if yo
 ### Recommendation
 With csproj, we recommend that you remove the default globs from your project and only add file paths with globs for those artifacts that your app/library needs for various scenarios (runtime, NuGet packaging, etc.)
 
+## How to see the whole project as MSBuild sees it
+
+While those csproj changes greatly simplify project files, it is sometimes useful to be able to look at the fully expanded project as MSBuild sees it once the SDK and its targets are included. This can be done by simply typing the following in the command-line:
+
+```
+dotnet msbuild /pp
+```
 
 ## Additions
 

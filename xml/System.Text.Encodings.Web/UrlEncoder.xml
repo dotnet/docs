@@ -13,7 +13,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a type used to do URL encoding.</summary>
+    <summary>Represents a URL character encoding.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -83,12 +83,12 @@
       </Parameters>
       <Docs>
         <param name="allowedRanges">The set of characters that the encoder is allowed to not encode.</param>
-        <summary>Creates a new instance of the UrlEncoder class specifying characters to encode.</summary>
+        <summary>Creates a new instance of the UrlEncoder class that specifies characters the encoder is allowed to not encode.</summary>
         <returns>A new instance of the <see cref="T:System.Text.Encodings.Web.UrlEncoder"/> class.</returns>
         <remarks><format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
- Some characters in `allowedRanges` might still be encoded, that is, this parameter indicates what ranges the encoder is allowed to not encode, not what characters it must not encode.  
+ Some characters in `allowedRanges` might still be encoded; that is, this parameter indicates what ranges the encoder is allowed to not encode, not what characters it must not encode.  
  ]]></format>   
         </remarks>
       </Docs>
@@ -108,8 +108,8 @@
         <ReturnType>System.Text.Encodings.Web.UrlEncoder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a default built-in instance of the <see cref="T:System.Text.Encodings.Web.UrlEncoder"/> class.</summary>
-        <value>A default built-in instance of the <see cref="T:System.Text.Encodings.Web.UrlEncoder"/> class.</value>
+        <summary>Gets a built-in instance of the <see cref="T:System.Text.Encodings.Web.UrlEncoder"/> class.</summary>
+        <value>A built-in instance of the <see cref="T:System.Text.Encodings.Web.UrlEncoder"/> class.</value>
         <remarks></remarks>
       </Docs>
     </Member>

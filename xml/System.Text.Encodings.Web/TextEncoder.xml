@@ -18,7 +18,7 @@
     <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
- TextEncoder subclasses can be used to do HTML encoding, URI encoding, and JavaScript encoding. Instances of such subclasses can be accessed using the <xref:System.Text.Encodings.Web.HtmlEncoder.Default>, <xref:System.Text.Encodings.Web.UrlEncoder.Default>, and <xref:System.Text.Encodings.Web.JavaScriptEncoder.Default> methods.  
+ TextEncoder subclasses can be used to do HTML encoding, URI encoding, and JavaScript encoding. Instances of such subclasses can be accessed using the <xref:System.Text.Encodings.Web.HtmlEncoder.Default?displayProperty=fullName>, <xref:System.Text.Encodings.Web.UrlEncoder.Default?displayProperty=fullName>, and <xref:System.Text.Encodings.Web.JavaScriptEncoder.Default?displayProperty=fullName> properties.  
  ]]></format>    
 </remarks>
   </Docs>
@@ -112,8 +112,8 @@
       <Docs>
         <param name="output">The stream to which to write the encoded text.</param>
         <param name="value">The array of characters to encode.</param>
-        <param name="startIndex">The starting index of the substring.</param>
-        <param name="characterCount">The number of characters in the substring.</param>
+        <param name="startIndex">The array index of the first character to encode.</param>
+        <param name="characterCount">The number of characters in the array to encode.</param>
         <summary>Encodes characters from an array and writes them to a <see cref="T:System.IO.TextWriter"/> object.</summary>
         <remarks></remarks>
       </Docs>
@@ -175,7 +175,7 @@
       </Parameters>
       <Docs>
         <param name="text">The text buffer to search.</param>
-        <param name="textLength">The number of characters in the <paramref name="text"/>.</param>
+        <param name="textLength">The number of characters in <paramref name="text"/>.</param>
         <summary>Finds the index of the first character to encode.</summary>
         <returns>The index of the first character to encode.</returns>
         <remarks>
@@ -244,14 +244,14 @@
         <param name="unicodeScalar">A Unicode scalar value.</param>
         <param name="buffer">A pointer to the buffer to which to write the encoded text.</param>
         <param name="bufferLength">The length of the destination <paramref name="buffer"/> in characters.</param>
-        <param name="numberOfCharactersWritten">The number of characters written to the <paramref name="buffer"/>.</param>
+        <param name="numberOfCharactersWritten">When the method returns, indicates the number of characters written to the <paramref name="buffer"/>.</param>
         <summary>Encodes a Unicode scalar value and writes it to a buffer.</summary>
-        <returns>Returns <see langword="false" /> if <paramref name="bufferLength"/> is too small to fit the encoded text; otherwise, returns <see langword="true" />.</returns>
+        <returns><see langword="false" /> if <paramref name="bufferLength"/> is too small to fit the encoded text; otherwise, returns <see langword="true" />.</returns>
         <remarks> 
         <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
- This method is seldom called directly. One of the TextEncoder.Encode overloads should be used instead. Implementations of the <xref:System.Text.Encodings.Web.TextEncoder> class must be thread-safe and stateless.  
+ This method is seldom called directly. One of the <xref:System.Text.Encodings.Web.TextEncoder.Encode> overloads should be used instead. Implementations of the <xref:System.Text.Encodings.Web.TextEncoder> class must be thread-safe and stateless.  
  ]]></format>        
         </remarks>
       </Docs>
@@ -281,7 +281,7 @@
       <Docs>
         <param name="unicodeScalar">A Unicode scalar value.</param>
         <summary>Determines if a given Unicode scalar value will be encoded.</summary>
-        <returns>Returns <see langword="true" /> if the <paramref name="unicodeScalar"/> value will be encoded by this encoder; otherwise, returns <see langword="false" />.</returns>
+        <returns><see langword="true" /> if the <paramref name="unicodeScalar"/> value will be encoded by this encoder; otherwise, returns <see langword="false" />.</returns>
         <remarks></remarks>
       </Docs>
     </Member>

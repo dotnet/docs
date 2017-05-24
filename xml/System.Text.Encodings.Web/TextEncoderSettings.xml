@@ -50,7 +50,7 @@
       </Parameters>
       <Docs>
         <param name="other">The other <see cref="T:System.Text.Encodings.Web.TextEncoderSettings"/> object to be cloned.</param>
-        <summary>Instantiates the filter by cloning the allowed list of another <see cref="T:System.Text.Encodings.Web.TextEncoderSettings"/> object.</summary>
+        <summary>Instantiates a filter by cloning the allowed list of another <see cref="T:System.Text.Encodings.Web.TextEncoderSettings"/> object.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -76,7 +76,7 @@
       </Parameters>
       <Docs>
         <param name="allowedRanges">The allowed character ranges.</param>
-        <summary>Instantiates the filter where only the character ranges specified by <paramref name="allowedRanges"/> are allowed by the filter.</summary>
+        <summary>Instantiates a filter where only the character ranges specified by <paramref name="allowedRanges"/> are allowed by the filter.</summary>
         <remarks></remarks>
       </Docs>
     </Member>

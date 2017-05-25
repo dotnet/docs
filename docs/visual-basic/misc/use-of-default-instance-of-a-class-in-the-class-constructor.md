@@ -38,4 +38,4 @@ A default instance of a class has been used in the constructor of the class. Thi
 -   Remove the default instance from the class constructor.  
   
 ## See Also  
- [NOT IN BUILD: Using Constructors and Destructors](http://msdn.microsoft.com/en-us/548eebe1-86c4-4377-b2f5-447cb8be3d90)
+ [Constructors](~/docs/visual-basic/programming-guide/concepts/object-oriented-programming.md#constructors)

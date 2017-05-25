@@ -37,7 +37,7 @@ Walkthroughs give step-by-step instructions for common scenarios. This makes the
   
 |Title|Description|  
 |-----------|-----------------|  
-|[Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|Demonstrates creating a WPF application using many of the common features of WPF including controls, layout and data binding.|  
+|[Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|Demonstrates creating a WPF application using many of the common features of WPF including controls, layout and data binding.|  
 |[Create a Button by Using XAML](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-xaml.md)|Demonstrates how to create an animated button.|  
 |[Create a Button by Using Microsoft Expression Blend](../../../../docs/framework/wpf/controls/walkthrough-create-a-button-by-using-microsoft-expression-blend.md)|Demonstrates the process of creating a customized button by using Microsoft Expression Blend.|  
 |[Walkthrough: Display Data from a SQL Server Database in a DataGrid Control](../../../../docs/framework/wpf/controls/walkthrough-display-data-from-a-sql-server-database-in-a-datagrid-control.md)|Demonstrates how to retrieve data from a SQL Server database and display that data in a <xref:System.Windows.Controls.DataGrid> control.|  

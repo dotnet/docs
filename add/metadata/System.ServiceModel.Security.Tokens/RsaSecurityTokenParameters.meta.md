@@ -1,50 +1,5 @@
 ---
-uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.HasAsymmetricKey
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.SupportsClientAuthentication
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.CreateKeyIdentifierClause(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.SupportsServerAuthentication
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -62,16 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.CloneCore
+uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -89,7 +35,52 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters)
+uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.SupportsClientAuthentication
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.SupportsServerAuthentication
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.HasAsymmetricKey
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.CloneCore
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

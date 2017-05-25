@@ -1,12 +1,12 @@
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonth
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonth.#ctor(System.DateTime)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonth.Value
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonth.Parse(System.String)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -14,13 +14,6 @@ manager: "ghogen"
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonth.GetXsdType
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonth.#ctor
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -41,7 +34,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonth.Parse(System.String)
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonth.Value
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -55,7 +48,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonth.#ctor(System.DateTime)
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonth
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"

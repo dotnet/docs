@@ -1,5 +1,5 @@
 ---
-uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute
+uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.#ctor(System.String,System.String)
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -8,16 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.#ctor
+uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Namespace
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -35,7 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.#ctor(System.String,System.String)
+uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.#ctor
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -44,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute.Namespace
+uid: System.Web.Services.Configuration.XmlFormatExtensionPrefixAttribute
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"

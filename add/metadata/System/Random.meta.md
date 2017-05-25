@@ -1,23 +1,5 @@
 ---
-uid: System.Random
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Random.Next(System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Random.Sample
+uid: System.Random.Next(System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -35,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Random.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Random.#ctor(System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -53,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Random.Next(System.Int32,System.Int32)
+uid: System.Random.Next(System.Int32)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -71,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Random.Next
+uid: System.Random.Sample
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -90,6 +63,15 @@ manager: "wpickett"
 
 ---
 uid: System.Random.Next
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Random
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

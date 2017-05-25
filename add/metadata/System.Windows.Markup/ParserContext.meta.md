@@ -1,26 +1,5 @@
 ---
-uid: System.Windows.Markup.ParserContext
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Windows.Markup.ParserContext.XamlTypeMapper
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Windows.Markup.ParserContext.BaseUri
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Windows.Markup.ParserContext.XmlnsDictionary
+uid: System.Windows.Markup.ParserContext.ToXmlParserContext(System.Windows.Markup.ParserContext)
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
@@ -34,21 +13,14 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.ParserContext.#ctor
+uid: System.Windows.Markup.ParserContext.XmlnsDictionary
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.ParserContext.ToXmlParserContext(System.Windows.Markup.ParserContext)
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Windows.Markup.ParserContext.XmlLang
+uid: System.Windows.Markup.ParserContext.XamlTypeMapper
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
@@ -62,7 +34,28 @@ manager: "martinek"
 ---
 
 ---
+uid: System.Windows.Markup.ParserContext.BaseUri
+ms.technology: 
+  - "dotnet-wpf"
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ParserContext.XmlLang
+ms.technology: 
+  - "dotnet-wpf"
+manager: "martinek"
+---
+
+---
 uid: System.Windows.Markup.ParserContext.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+manager: "martinek"
+---
+
+---
+uid: System.Windows.Markup.ParserContext
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"

@@ -1,12 +1,12 @@
 ---
-uid: System.Transactions.PreparingEnlistment
+uid: System.Transactions.PreparingEnlistment.ForceRollback(System.Exception)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.PreparingEnlistment.ForceRollback
+uid: System.Transactions.PreparingEnlistment.RecoveryInformation
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -27,14 +27,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.PreparingEnlistment.ForceRollback(System.Exception)
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Transactions.PreparingEnlistment.RecoveryInformation
+uid: System.Transactions.PreparingEnlistment
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"

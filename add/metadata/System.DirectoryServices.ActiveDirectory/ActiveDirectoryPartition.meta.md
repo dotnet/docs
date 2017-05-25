@@ -1,5 +1,12 @@
 ---
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition.Dispose(System.Boolean)
+author: "BrucePerlerMS"
+ms.author: "bruceper"
+manager: "mbaldwin"
+---
+
+---
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition.GetDirectoryEntry
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
@@ -27,20 +34,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition.Dispose(System.Boolean)
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition.Name
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -48,7 +41,7 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition.GetDirectoryEntry
+uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryPartition
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"

@@ -1,5 +1,5 @@
 ---
-uid: System.Web.UI.Design.ScriptManagerDesigner
+uid: System.Web.UI.Design.ScriptManagerDesigner.GetApplicationServices(System.Web.UI.ScriptManager,System.Collections.Generic.IEnumerable{System.Web.UI.ScriptManagerProxy})
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -23,13 +23,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ScriptManagerDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
-uid: System.Web.UI.Design.ScriptManagerDesigner.GetProxyScript(System.Web.UI.ScriptManager,System.Web.UI.ServiceReference)
+uid: System.Web.UI.Design.ScriptManagerDesigner.GetScriptFromWebResource(System.Reflection.Assembly,System.String,System.Globalization.CultureInfo)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -37,7 +31,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ScriptManagerDesigner.GetApplicationServices(System.Web.UI.ScriptManager,System.Collections.Generic.IEnumerable{System.Web.UI.ScriptManagerProxy})
+uid: System.Web.UI.Design.ScriptManagerDesigner.GetProxyScript(System.Web.UI.ScriptManager,System.Web.UI.ServiceReference)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -69,7 +63,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ScriptManagerDesigner.GetScriptFromWebResource(System.Reflection.Assembly,System.String,System.Globalization.CultureInfo)
+uid: System.Web.UI.Design.ScriptManagerDesigner.#ctor
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -77,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ScriptManagerDesigner.#ctor
+uid: System.Web.UI.Design.ScriptManagerDesigner
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

@@ -1,5 +1,12 @@
 ---
-uid: System.Management.Instrumentation.WmiProviderInstallationException
+uid: System.Management.Instrumentation.WmiProviderInstallationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+ms.technology: 
+  - "dotnet-standard"
+manager: "jillfra"
+---
+
+---
+uid: System.Management.Instrumentation.WmiProviderInstallationException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"
@@ -20,21 +27,7 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.Instrumentation.WmiProviderInstallationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.Instrumentation.WmiProviderInstallationException.#ctor(System.String,System.Exception)
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.Instrumentation.WmiProviderInstallationException.#ctor
+uid: System.Management.Instrumentation.WmiProviderInstallationException
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"

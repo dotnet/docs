@@ -1,28 +1,4 @@
 ---
-uid: System.Web.UI.WebControls.TreeNodeStyle
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.TreeNodeStyle.VerticalPadding
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.TreeNodeStyle.NodeSpacing
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.TreeNodeStyle.MergeWith(System.Web.UI.WebControls.Style)
 ms.technology: 
   - "dotnet-webforms"
@@ -31,23 +7,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.TreeNodeStyle.ImageUrl
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.TreeNodeStyle.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.TreeNodeStyle.#ctor
+uid: System.Web.UI.WebControls.TreeNodeStyle.CopyFrom(System.Web.UI.WebControls.Style)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -79,6 +39,38 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Web.UI.WebControls.TreeNodeStyle.VerticalPadding
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.TreeNodeStyle.NodeSpacing
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.TreeNodeStyle.ImageUrl
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.TreeNodeStyle.#ctor
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
 uid: System.Web.UI.WebControls.TreeNodeStyle.Reset
 ms.technology: 
   - "dotnet-webforms"
@@ -87,7 +79,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.TreeNodeStyle.CopyFrom(System.Web.UI.WebControls.Style)
+uid: System.Web.UI.WebControls.TreeNodeStyle
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

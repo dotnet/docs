@@ -1,19 +1,5 @@
 ---
-uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Cancel(System.Guid)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.RunWorkflow(System.Guid)
+uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid,System.DateTime,System.Guid)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,27 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Stop
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.OnStarted
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid)
 author: "Erikre"
 ms.author: "erikre"
@@ -55,14 +20,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Schedule(System.Threading.WaitCallback,System.Guid,System.DateTime,System.Guid)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Schedule
+uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.RunWorkflow(System.Guid)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -76,7 +34,42 @@ manager: "erikre"
 ---
 
 ---
+uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Cancel(System.Guid)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.OnStarted
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Schedule
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService.Stop
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Hosting.ManualWorkflowSchedulerService
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

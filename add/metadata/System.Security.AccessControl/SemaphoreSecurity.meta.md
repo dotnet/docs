@@ -1,14 +1,5 @@
 ---
-uid: System.Security.AccessControl.SemaphoreSecurity
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.AccessControl.SemaphoreSecurity.RemoveAuditRuleAll(System.Security.AccessControl.SemaphoreAuditRule)
+uid: System.Security.AccessControl.SemaphoreSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,7 +17,43 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.SemaphoreSecurity.AuditRuleType
+uid: System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.SemaphoreAccessRule)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.AccessControl.SemaphoreSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.SemaphoreAuditRule)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.AccessControl.SemaphoreSecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleAll(System.Security.AccessControl.SemaphoreAccessRule)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.AccessControl.SemaphoreSecurity.RemoveAuditRuleAll(System.Security.AccessControl.SemaphoreAuditRule)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -53,52 +80,16 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Security.AccessControl.SemaphoreSecurity.RemoveAuditRule(System.Security.AccessControl.SemaphoreAuditRule)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
 uid: System.Security.AccessControl.SemaphoreSecurity.SetAccessRule(System.Security.AccessControl.SemaphoreAccessRule)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.AccessControl.SemaphoreSecurity.RemoveAuditRuleSpecific(System.Security.AccessControl.SemaphoreAuditRule)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.AccessControl.SemaphoreSecurity.SetAuditRule(System.Security.AccessControl.SemaphoreAuditRule)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.AccessControl.SemaphoreSecurity.#ctor(System.String,System.Security.AccessControl.AccessControlSections)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.AccessControl.SemaphoreSecurity.AccessRightType
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.AccessControl.SemaphoreSecurity.AddAuditRule(System.Security.AccessControl.SemaphoreAuditRule)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -116,7 +107,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.SemaphoreSecurity.#ctor
+uid: System.Security.AccessControl.SemaphoreSecurity.SetAuditRule(System.Security.AccessControl.SemaphoreAuditRule)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -125,7 +116,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.SemaphoreSecurity.RemoveAuditRule(System.Security.AccessControl.SemaphoreAuditRule)
+uid: System.Security.AccessControl.SemaphoreSecurity.AddAuditRule(System.Security.AccessControl.SemaphoreAuditRule)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -134,7 +125,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.SemaphoreSecurity.AccessRuleFactory(System.Security.Principal.IdentityReference,System.Int32,System.Boolean,System.Security.AccessControl.InheritanceFlags,System.Security.AccessControl.PropagationFlags,System.Security.AccessControl.AccessControlType)
+uid: System.Security.AccessControl.SemaphoreSecurity.AccessRightType
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -152,16 +143,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleAll(System.Security.AccessControl.SemaphoreAccessRule)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.AccessControl.SemaphoreSecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.SemaphoreAccessRule)
+uid: System.Security.AccessControl.SemaphoreSecurity.AuditRuleType
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -171,6 +153,15 @@ manager: "wpickett"
 
 ---
 uid: System.Security.AccessControl.SemaphoreSecurity.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.AccessControl.SemaphoreSecurity
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

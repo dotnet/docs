@@ -1,23 +1,5 @@
 ---
-uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor
+uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Quaternion,System.Double)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -34,6 +16,15 @@ manager: "ghogen"
 ---
 
 ---
+uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion)
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.CreateInstanceCore
 ms.technology: 
   - "dotnet-wpf"
@@ -43,7 +34,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Quaternion,System.Double)
+uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -52,7 +43,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame.#ctor(System.Windows.Media.Media3D.Quaternion)
+uid: System.Windows.Media.Animation.DiscreteQuaternionKeyFrame
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

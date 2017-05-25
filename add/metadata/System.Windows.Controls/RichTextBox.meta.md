@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Controls.RichTextBox
+uid: System.Windows.Controls.RichTextBox.GetNextSpellingErrorPosition(System.Windows.Documents.TextPointer,System.Windows.Documents.LogicalDirection)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -26,41 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.RichTextBox.Document
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Controls.RichTextBox.LogicalChildren
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Controls.RichTextBox.IsDocumentEnabled
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Controls.RichTextBox.GetSpellingError(System.Windows.Documents.TextPointer)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.RichTextBox.GetPositionFromPoint(System.Windows.Point,System.Boolean)
 ms.technology: 
   - "dotnet-wpf"
@@ -70,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.RichTextBox.OnCreateAutomationPeer
+uid: System.Windows.Controls.RichTextBox.System#Windows#Markup#IAddChild#AddChild(System.Object)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -79,15 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.RichTextBox.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Controls.RichTextBox.GetNextSpellingErrorPosition(System.Windows.Documents.TextPointer,System.Windows.Documents.LogicalDirection)
+uid: System.Windows.Controls.RichTextBox.GetSpellingError(System.Windows.Documents.TextPointer)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -114,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.RichTextBox.Selection
+uid: System.Windows.Controls.RichTextBox.IsDocumentEnabledProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -123,11 +80,30 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.RichTextBox.#ctor
+uid: System.Windows.Controls.RichTextBox.ShouldSerializeDocument
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.RichTextBox.OnCreateAutomationPeer
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.RichTextBox.LogicalChildren
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -148,7 +124,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Controls.RichTextBox.ShouldSerializeDocument
+uid: System.Windows.Controls.RichTextBox.Selection
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -157,7 +133,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.RichTextBox.IsDocumentEnabledProperty
+uid: System.Windows.Controls.RichTextBox.Document
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -166,10 +142,26 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.RichTextBox.System#Windows#Markup#IAddChild#AddChild(System.Object)
+uid: System.Windows.Controls.RichTextBox
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+---
+
+---
+uid: System.Windows.Controls.RichTextBox.IsDocumentEnabled
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Controls.RichTextBox.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

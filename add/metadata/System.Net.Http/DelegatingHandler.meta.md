@@ -1,11 +1,5 @@
 ---
-uid: System.Net.Http.DelegatingHandler
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Http.DelegatingHandler.#ctor
+uid: System.Net.Http.DelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -23,19 +17,19 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.DelegatingHandler.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Http.DelegatingHandler.InnerHandler
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.DelegatingHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+uid: System.Net.Http.DelegatingHandler.#ctor
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.DelegatingHandler
 ms.author: "bobdel"
 manager: "markl"
 ---

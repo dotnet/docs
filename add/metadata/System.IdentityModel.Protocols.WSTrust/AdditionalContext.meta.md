@@ -1,12 +1,4 @@
 ---
-uid: System.IdentityModel.Protocols.WSTrust.AdditionalContext
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Protocols.WSTrust.AdditionalContext.#ctor(System.Collections.Generic.IEnumerable{System.IdentityModel.Protocols.WSTrust.ContextItem})
 ms.technology: 
   - "dotnet-standard"
@@ -31,7 +23,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Protocols.WSTrust.AdditionalContext.#ctor
+uid: System.IdentityModel.Protocols.WSTrust.AdditionalContext
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

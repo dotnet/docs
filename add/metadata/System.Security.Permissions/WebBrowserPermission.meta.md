@@ -1,22 +1,4 @@
 ---
-uid: System.Security.Permissions.WebBrowserPermission
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Permissions.WebBrowserPermission.IsUnrestricted
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Permissions.WebBrowserPermission.#ctor(System.Security.Permissions.WebBrowserPermissionLevel)
 ms.technology: 
   - "dotnet-standard"
@@ -26,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Permissions.WebBrowserPermission.IsSubsetOf(System.Security.IPermission)
+uid: System.Security.Permissions.WebBrowserPermission.#ctor(System.Security.Permissions.PermissionState)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -44,7 +26,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Permissions.WebBrowserPermission.#ctor
+uid: System.Security.Permissions.WebBrowserPermission.IsSubsetOf(System.Security.IPermission)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.WebBrowserPermission.Intersect(System.Security.IPermission)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.WebBrowserPermission.Union(System.Security.IPermission)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Permissions.WebBrowserPermission.IsUnrestricted
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -89,25 +98,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Permissions.WebBrowserPermission.#ctor(System.Security.Permissions.PermissionState)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Permissions.WebBrowserPermission.Intersect(System.Security.IPermission)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Permissions.WebBrowserPermission.Union(System.Security.IPermission)
+uid: System.Security.Permissions.WebBrowserPermission
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

@@ -1,5 +1,13 @@
 ---
-uid: System.Windows.Documents.Figure
+uid: System.Windows.Documents.Figure.#ctor(System.Windows.Documents.Block,System.Windows.Documents.TextPointer)
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Documents.Figure.#ctor(System.Windows.Documents.Block)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -17,61 +25,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Figure.Width
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Figure.HeightProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Figure.WrapDirection
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Figure.Height
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Figure.CanDelayPlacement
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Documents.Figure.HorizontalOffsetProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Figure.VerticalOffsetProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -89,16 +43,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Figure.VerticalAnchor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Figure.HorizontalOffset
+uid: System.Windows.Documents.Figure.VerticalOffsetProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -116,15 +61,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Figure.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Documents.Figure.VerticalOffset
+uid: System.Windows.Documents.Figure.WrapDirectionProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -133,7 +70,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Figure.#ctor(System.Windows.Documents.Block)
+uid: System.Windows.Documents.Figure.CanDelayPlacement
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Figure.HorizontalOffset
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -151,7 +97,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Figure.WrapDirectionProperty
+uid: System.Windows.Documents.Figure.HeightProperty
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Figure.VerticalAnchor
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Figure.VerticalOffset
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Figure.WrapDirection
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -169,6 +142,24 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Windows.Documents.Figure.Height
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Figure.Width
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Windows.Documents.Figure.#ctor
 ms.technology: 
   - "dotnet-wpf"
@@ -178,9 +169,10 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Figure.#ctor(System.Windows.Documents.Block,System.Windows.Documents.TextPointer)
+uid: System.Windows.Documents.Figure
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

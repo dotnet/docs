@@ -1,12 +1,33 @@
 ---
-uid: System.Management.ManagementPath
+uid: System.Management.ManagementPath.System#ICloneable#Clone
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementPath.#ctor
+uid: System.Management.ManagementPath.#ctor(System.String)
+ms.technology: 
+  - "dotnet-standard"
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementPath.SetAsSingleton
+ms.technology: 
+  - "dotnet-standard"
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementPath.NamespacePath
+ms.technology: 
+  - "dotnet-standard"
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementPath.RelativePath
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"
@@ -20,7 +41,42 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementPath.SetAsSingleton
+uid: System.Management.ManagementPath.IsSingleton
+ms.technology: 
+  - "dotnet-standard"
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementPath.IsInstance
+ms.technology: 
+  - "dotnet-standard"
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementPath.SetAsClass
+ms.technology: 
+  - "dotnet-standard"
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementPath.ClassName
+ms.technology: 
+  - "dotnet-standard"
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementPath.ToString
+ms.technology: 
+  - "dotnet-standard"
+manager: "jillfra"
+---
+
+---
+uid: System.Management.ManagementPath.IsClass
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"
@@ -41,56 +97,7 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementPath.IsInstance
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementPath.IsClass
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementPath.ClassName
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementPath.IsSingleton
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementPath.ToString
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementPath.NamespacePath
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementPath.Clone
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementPath.SetAsClass
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"
@@ -104,21 +111,7 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementPath.RelativePath
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementPath.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementPath.System#ICloneable#Clone
+uid: System.Management.ManagementPath
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"

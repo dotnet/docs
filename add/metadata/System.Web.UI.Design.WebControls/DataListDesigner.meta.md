@@ -1,83 +1,5 @@
 ---
-uid: System.Web.UI.Design.WebControls.DataListDesigner
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.WebControls.DataListDesigner.OnSchemaRefreshed
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.WebControls.DataListDesigner.AllowResize
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.WebControls.DataListDesigner.GetCachedTemplateEditingVerbs
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.WebControls.DataListDesigner.Dispose
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
-uid: System.Web.UI.Design.WebControls.DataListDesigner.GetErrorDesignTimeHtml(System.Exception)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.WebControls.DataListDesigner.GetTemplateContainerDataItemProperty(System.String)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.WebControls.DataListDesigner.TemplatesExist
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.WebControls.DataListDesigner.OnTemplateEditingVerbsChanged
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.DataListDesigner.GetTemplateContent(System.Web.UI.Design.ITemplateEditingFrame,System.String,System.Boolean@)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.WebControls.DataListDesigner.AutoFormats
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -93,13 +15,15 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.DataListDesigner.GetDesignTimeHtml
+uid: System.Web.UI.Design.WebControls.DataListDesigner.CreateTemplateEditingFrame(System.Web.UI.Design.TemplateEditingVerb)
 ms.technology: 
   - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.DataListDesigner.#ctor
+uid: System.Web.UI.Design.WebControls.DataListDesigner.GetTemplateContainerDataItemProperty(System.String)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -115,7 +39,23 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.DataListDesigner.GetEmptyDesignTimeHtml
+uid: System.Web.UI.Design.WebControls.DataListDesigner.GetErrorDesignTimeHtml(System.Exception)
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataListDesigner.GetCachedTemplateEditingVerbs
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataListDesigner.OnTemplateEditingVerbsChanged
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -131,7 +71,15 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.DataListDesigner.CreateTemplateEditingFrame(System.Web.UI.Design.TemplateEditingVerb)
+uid: System.Web.UI.Design.WebControls.DataListDesigner.GetEmptyDesignTimeHtml
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataListDesigner.OnSchemaRefreshed
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -144,4 +92,50 @@ ms.technology:
   - "dotnet-webforms"
 ms.author: "riande"
 manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataListDesigner.TemplatesExist
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataListDesigner.AllowResize
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataListDesigner.AutoFormats
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataListDesigner.#ctor
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataListDesigner
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.Design.WebControls.DataListDesigner.Dispose
+ms.technology: 
+  - "dotnet-webforms"
 ---

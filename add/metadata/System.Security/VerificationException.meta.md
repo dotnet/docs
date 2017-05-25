@@ -1,14 +1,5 @@
 ---
-uid: System.Security.VerificationException
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.VerificationException.#ctor
+uid: System.Security.VerificationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.VerificationException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.VerificationException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +26,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.VerificationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Security.VerificationException.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.VerificationException
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

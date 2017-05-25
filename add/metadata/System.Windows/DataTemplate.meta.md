@@ -1,14 +1,5 @@
 ---
-uid: System.Windows.DataTemplate
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.DataTemplate.DataTemplateKey
+uid: System.Windows.DataTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -26,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.DataTemplate.#ctor
+uid: System.Windows.DataTemplate.DataTemplateKey
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.DataTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)
+uid: System.Windows.DataTemplate.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -62,9 +53,10 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.DataTemplate.#ctor
+uid: System.Windows.DataTemplate
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

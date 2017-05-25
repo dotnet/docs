@@ -1,30 +1,4 @@
 ---
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.BackColor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.#ctor(System.Drawing.Graphics,System.Drawing.Rectangle,System.Int32,System.Windows.Forms.ColumnHeader,System.Windows.Forms.ListViewItemStates,System.Drawing.Color,System.Drawing.Color,System.Drawing.Font)
 ms.technology: 
   - "dotnet-winforms"
@@ -33,16 +7,15 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.State
+uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText(System.Windows.Forms.TextFormatFlags)
 ms.technology: 
   - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText
+uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawBackground
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -60,7 +33,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Font
+uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawDefault
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -69,15 +42,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.ForeColor
+uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.BackColor
 ms.technology: 
   - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawDefault
+uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -104,27 +78,45 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText(System.Windows.Forms.TextFormatFlags)
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawBackground
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Header
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.State
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.Font
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.ForeColor
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
+manager: "ghogen"
 ---

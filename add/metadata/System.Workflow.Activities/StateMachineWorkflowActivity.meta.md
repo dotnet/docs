@@ -1,5 +1,26 @@
 ---
-uid: System.Workflow.Activities.StateMachineWorkflowActivity
+uid: System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateNameProperty
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateNameProperty
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.StateMachineWorkflowActivity.DynamicUpdateCondition
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.StateMachineWorkflowActivity.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -20,14 +41,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.StateMachineWorkflowActivity.DynamicUpdateCondition
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.StateMachineWorkflowActivity.#ctor
+uid: System.Workflow.Activities.StateMachineWorkflowActivity.PreviousStateName
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -41,14 +55,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.StateMachineWorkflowActivity.CompletedStateNameProperty
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.StateMachineWorkflowActivity.InitialStateNameProperty
+uid: System.Workflow.Activities.StateMachineWorkflowActivity.CurrentStateName
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -62,21 +69,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.StateMachineWorkflowActivity.#ctor(System.String)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.StateMachineWorkflowActivity.CurrentStateName
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.StateMachineWorkflowActivity.PreviousStateName
+uid: System.Workflow.Activities.StateMachineWorkflowActivity
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

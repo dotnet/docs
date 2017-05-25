@@ -1,5 +1,5 @@
 ---
-uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError
+uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError.#ctor(System.String,System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -13,21 +13,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError.#ctor(System.String,System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException)
+uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError.PropertyName
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -48,7 +34,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError.PropertyName
+uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

@@ -1,12 +1,19 @@
 ---
-uid: System.Management.Instrumentation.InstrumentedAttribute
+uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"
 ---
 
 ---
-uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor(System.String,System.String)
+uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor(System.String)
+ms.technology: 
+  - "dotnet-standard"
+manager: "jillfra"
+---
+
+---
+uid: System.Management.Instrumentation.InstrumentedAttribute.SecurityDescriptor
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"
@@ -27,21 +34,7 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.Instrumentation.InstrumentedAttribute.SecurityDescriptor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor
+uid: System.Management.Instrumentation.InstrumentedAttribute
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"

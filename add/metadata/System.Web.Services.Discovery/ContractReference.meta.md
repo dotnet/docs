@@ -1,5 +1,5 @@
 ---
-uid: System.Web.Services.Discovery.ContractReference
+uid: System.Web.Services.Discovery.ContractReference.WriteDocument(System.Object,System.IO.Stream)
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -8,25 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.ContractReference.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Discovery.ContractReference.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Discovery.ContractReference.Contract
+uid: System.Web.Services.Discovery.ContractReference.Resolve(System.String,System.IO.Stream)
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -44,7 +26,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.ContractReference.Resolve(System.String,System.IO.Stream)
+uid: System.Web.Services.Discovery.ContractReference.ReadDocument(System.IO.Stream)
+ms.technology: 
+  - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Discovery.ContractReference.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -71,7 +62,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.ContractReference.WriteDocument(System.Object,System.IO.Stream)
+uid: System.Web.Services.Discovery.ContractReference.Contract
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -80,13 +71,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.ContractReference.Resolve
+uid: System.Web.Services.Discovery.ContractReference.DocRef
 ms.technology: 
   - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.ContractReference.#ctor(System.String)
+uid: System.Web.Services.Discovery.ContractReference.#ctor
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -104,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.ContractReference.ReadDocument(System.IO.Stream)
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Discovery.ContractReference.Url
 ms.technology: 
   - "dotnet-webforms"
@@ -122,10 +107,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.ContractReference.DocRef
+uid: System.Web.Services.Discovery.ContractReference
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Discovery.ContractReference.Resolve
+ms.technology: 
+  - "dotnet-webforms"
 ---

@@ -1,5 +1,5 @@
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle
+uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.#ctor(System.Web.UI.DataVisualization.Charting.ChartArea)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"
@@ -7,7 +7,7 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.LightStyle
+uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.IsRightAngleAxes
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"
@@ -15,15 +15,7 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Rotation
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.WallWidth
+uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointGapDepth
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"
@@ -47,30 +39,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointDepth
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.IsRightAngleAxes
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Inclination
 ms.technology: 
   - "dotnet-webforms"
@@ -79,7 +47,7 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointGapDepth
+uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.LightStyle
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"
@@ -87,7 +55,23 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.#ctor(System.Web.UI.DataVisualization.Charting.ChartArea)
+uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.PointDepth
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.WallWidth
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Rotation
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"
@@ -104,6 +88,14 @@ manager: "mblythe"
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.#ctor
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"

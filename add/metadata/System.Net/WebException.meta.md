@@ -1,11 +1,17 @@
 ---
-uid: System.Net.WebException
+uid: System.Net.WebException.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.WebException.#ctor(System.String,System.Net.WebExceptionStatus)
+uid: System.Net.WebException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -17,25 +23,13 @@ manager: "markl"
 ---
 
 ---
+uid: System.Net.WebException.#ctor(System.String,System.Net.WebExceptionStatus)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
 uid: System.Net.WebException.#ctor(System.String,System.Exception)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.WebException.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.WebException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.WebException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -53,19 +47,19 @@ manager: "markl"
 ---
 
 ---
+uid: System.Net.WebException.Status
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
 uid: System.Net.WebException.#ctor
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.WebException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.WebException.Status
+uid: System.Net.WebException
 ms.author: "bobdel"
 manager: "markl"
 ---

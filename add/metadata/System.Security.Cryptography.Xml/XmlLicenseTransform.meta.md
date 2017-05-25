@@ -1,13 +1,4 @@
 ---
-uid: System.Security.Cryptography.Xml.XmlLicenseTransform
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.XmlLicenseTransform.LoadInnerXml(System.Xml.XmlNodeList)
 ms.technology: 
   - "dotnet-standard"
@@ -17,16 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlLicenseTransform.GetOutput
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.XmlLicenseTransform.Decryptor
+uid: System.Security.Cryptography.Xml.XmlLicenseTransform.LoadInput(System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -62,7 +44,25 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Security.Cryptography.Xml.XmlLicenseTransform.InputTypes
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
 uid: System.Security.Cryptography.Xml.XmlLicenseTransform.GetOutput
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.XmlLicenseTransform.Decryptor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -80,16 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlLicenseTransform.InputTypes
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.XmlLicenseTransform.LoadInput(System.Object)
+uid: System.Security.Cryptography.Xml.XmlLicenseTransform
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

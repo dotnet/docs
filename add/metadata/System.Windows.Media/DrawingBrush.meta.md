@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Media.DrawingBrush
+uid: System.Windows.Media.DrawingBrush.#ctor(System.Windows.Media.Drawing)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -8,28 +8,12 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.DrawingBrush.CloneCurrentValue
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.DrawingBrush.#ctor
+uid: System.Windows.Media.DrawingBrush.Drawing
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Media.DrawingBrush.DrawingProperty
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
@@ -51,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.DrawingBrush.Drawing
+uid: System.Windows.Media.DrawingBrush
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -60,10 +44,17 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.DrawingBrush.#ctor(System.Windows.Media.Drawing)
+uid: System.Windows.Media.DrawingBrush.CloneCurrentValue
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.DrawingBrush.DrawingProperty
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

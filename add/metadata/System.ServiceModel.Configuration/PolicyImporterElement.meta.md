@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.Configuration.PolicyImporterElement
+uid: System.ServiceModel.Configuration.PolicyImporterElement.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -17,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.PolicyImporterElement.#ctor(System.String)
+uid: System.ServiceModel.Configuration.PolicyImporterElement.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -35,16 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.PolicyImporterElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.PolicyImporterElement.#ctor
+uid: System.ServiceModel.Configuration.PolicyImporterElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

@@ -1,12 +1,12 @@
 ---
-uid: System.Workflow.ComponentModel.RemovedActivityAction
+uid: System.Workflow.ComponentModel.RemovedActivityAction.#ctor(System.Int32,System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.CompositeActivity)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.RemovedActivityAction.#ctor
+uid: System.Workflow.ComponentModel.RemovedActivityAction.OriginalRemovedActivity
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,14 +27,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.RemovedActivityAction.OriginalRemovedActivity
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.RemovedActivityAction.#ctor(System.Int32,System.Workflow.ComponentModel.Activity,System.Workflow.ComponentModel.CompositeActivity)
+uid: System.Workflow.ComponentModel.RemovedActivityAction
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

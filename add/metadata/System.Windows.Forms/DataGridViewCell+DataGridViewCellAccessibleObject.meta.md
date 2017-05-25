@@ -1,5 +1,23 @@
 ---
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Select(System.Windows.Forms.AccessibleSelection)
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.#ctor(System.Windows.Forms.DataGridViewCell)
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -9,6 +27,42 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetChild(System.Int32)
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.DoDefaultAction
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetChildCount
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.DefaultAction
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetFocused
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -44,15 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Name
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.State
 ms.technology: 
   - "dotnet-winforms"
@@ -71,7 +116,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.#ctor(System.Windows.Forms.DataGridViewCell)
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Value
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -80,24 +125,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetSelected
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Select(System.Windows.Forms.AccessibleSelection)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.#ctor
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Name
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -124,7 +152,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Value
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -133,46 +161,9 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.DoDefaultAction
+uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetSelected
 ms.technology: 
   - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetFocused
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.GetChildCount
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.DefaultAction
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

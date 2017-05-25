@@ -1,23 +1,5 @@
 ---
-uid: System.Windows.Documents.Span
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Span.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Span.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)
+uid: System.Windows.Documents.Span.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -35,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Span.#ctor
+uid: System.Windows.Documents.Span.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -62,7 +44,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Span.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)
+uid: System.Windows.Documents.Span.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Span
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

@@ -1,11 +1,17 @@
 ---
-uid: System.Net.Http.HttpMessageHandler
+uid: System.Net.Http.HttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.HttpMessageHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)
+uid: System.Net.Http.HttpMessageHandler.Dispose(System.Boolean)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Http.HttpMessageHandler.Dispose
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -17,19 +23,7 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.HttpMessageHandler.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Http.HttpMessageHandler.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Http.HttpMessageHandler.Dispose(System.Boolean)
+uid: System.Net.Http.HttpMessageHandler
 ms.author: "bobdel"
 manager: "markl"
 ---

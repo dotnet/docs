@@ -1,9 +1,37 @@
 ---
-uid: System.Windows.Media.Media3D.SpecularMaterial
+uid: System.Windows.Media.Media3D.SpecularMaterial.#ctor(System.Windows.Media.Brush,System.Double)
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.SpecularMaterial.CloneCurrentValue
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.SpecularMaterial.BrushProperty
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.SpecularMaterial.SpecularPower
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -25,50 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.SpecularMaterial.ColorProperty
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Media3D.SpecularMaterial.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.SpecularMaterial.BrushProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.SpecularMaterial.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.SpecularMaterial.SpecularPowerProperty
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Media3D.SpecularMaterial.#ctor(System.Windows.Media.Brush,System.Double)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -86,19 +71,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.SpecularMaterial.CloneCurrentValue
+uid: System.Windows.Media.Media3D.SpecularMaterial.SpecularPowerProperty
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.SpecularMaterial.SpecularPower
+uid: System.Windows.Media.Media3D.SpecularMaterial.ColorProperty
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Media3D.SpecularMaterial
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

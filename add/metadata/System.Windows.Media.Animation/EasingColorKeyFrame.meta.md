@@ -1,5 +1,14 @@
 ---
-uid: System.Windows.Media.Animation.EasingColorKeyFrame
+uid: System.Windows.Media.Animation.EasingColorKeyFrame.#ctor(System.Windows.Media.Color,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingColorKeyFrame.#ctor(System.Windows.Media.Color,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -25,34 +34,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingColorKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.EasingColorKeyFrame.#ctor(System.Windows.Media.Color,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.IEasingFunction)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingColorKeyFrame.EasingFunctionProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.EasingColorKeyFrame.#ctor(System.Windows.Media.Color,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -70,15 +52,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingColorKeyFrame.#ctor
+uid: System.Windows.Media.Animation.EasingColorKeyFrame.EasingFunction
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingColorKeyFrame.EasingFunction
+uid: System.Windows.Media.Animation.EasingColorKeyFrame.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.EasingColorKeyFrame
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

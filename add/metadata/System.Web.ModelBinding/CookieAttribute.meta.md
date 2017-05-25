@@ -1,5 +1,5 @@
 ---
-uid: System.Web.ModelBinding.CookieAttribute
+uid: System.Web.ModelBinding.CookieAttribute.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.CookieAttribute.#ctor
+uid: System.Web.ModelBinding.CookieAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -35,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.CookieAttribute.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)
+uid: System.Web.ModelBinding.CookieAttribute.#ctor
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -53,16 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.CookieAttribute.#ctor(System.String)
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.ModelBinding.CookieAttribute.#ctor
+uid: System.Web.ModelBinding.CookieAttribute
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

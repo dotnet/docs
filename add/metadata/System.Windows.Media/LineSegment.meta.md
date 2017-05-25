@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Media.LineSegment
+uid: System.Windows.Media.LineSegment.#ctor(System.Windows.Point,System.Boolean)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -17,15 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.LineSegment.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.LineSegment.#ctor(System.Windows.Point,System.Boolean)
+uid: System.Windows.Media.LineSegment.PointProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -52,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.LineSegment.PointProperty
+uid: System.Windows.Media.LineSegment.Point
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -61,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.LineSegment.Point
+uid: System.Windows.Media.LineSegment
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

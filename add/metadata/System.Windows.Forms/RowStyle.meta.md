@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Forms.RowStyle
+uid: System.Windows.Forms.RowStyle.#ctor(System.Windows.Forms.SizeType,System.Single)
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -8,12 +8,11 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.RowStyle.#ctor
+uid: System.Windows.Forms.RowStyle.#ctor(System.Windows.Forms.SizeType)
 ms.technology: 
   - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
@@ -35,15 +34,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.RowStyle.#ctor(System.Windows.Forms.SizeType)
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.RowStyle.#ctor(System.Windows.Forms.SizeType,System.Single)
+uid: System.Windows.Forms.RowStyle
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"

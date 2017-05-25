@@ -1,12 +1,5 @@
 ---
-uid: System.Windows.Markup.Localizer.ElementLocalizability
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Windows.Markup.Localizer.ElementLocalizability.Attribute
+uid: System.Windows.Markup.Localizer.ElementLocalizability.#ctor(System.String,System.Windows.LocalizabilityAttribute)
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
@@ -20,7 +13,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.Localizer.ElementLocalizability.#ctor
+uid: System.Windows.Markup.Localizer.ElementLocalizability.Attribute
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
@@ -34,7 +27,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.Localizer.ElementLocalizability.#ctor(System.String,System.Windows.LocalizabilityAttribute)
+uid: System.Windows.Markup.Localizer.ElementLocalizability
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"

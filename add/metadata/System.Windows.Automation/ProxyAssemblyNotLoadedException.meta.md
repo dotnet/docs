@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Automation.ProxyAssemblyNotLoadedException
+uid: System.Windows.Automation.ProxyAssemblyNotLoadedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-wpf"
 author: "Xansky"
@@ -8,7 +8,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Automation.ProxyAssemblyNotLoadedException.#ctor
+uid: System.Windows.Automation.ProxyAssemblyNotLoadedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-wpf"
 author: "Xansky"
@@ -35,15 +35,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Automation.ProxyAssemblyNotLoadedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-wpf"
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Automation.ProxyAssemblyNotLoadedException.#ctor
 ms.technology: 
   - "dotnet-wpf"
@@ -53,7 +44,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Automation.ProxyAssemblyNotLoadedException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Windows.Automation.ProxyAssemblyNotLoadedException
 ms.technology: 
   - "dotnet-wpf"
 author: "Xansky"

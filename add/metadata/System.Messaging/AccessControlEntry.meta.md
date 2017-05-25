@@ -1,12 +1,5 @@
 ---
-uid: System.Messaging.AccessControlEntry
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
-uid: System.Messaging.AccessControlEntry.#ctor
+uid: System.Messaging.AccessControlEntry.#ctor(System.Messaging.Trustee,System.Messaging.GenericAccessRights,System.Messaging.StandardAccessRights,System.Messaging.AccessControlEntryType)
 ms.technology: 
   - "dotnet-standard"
 manager: "tyoung"
@@ -20,21 +13,14 @@ manager: "tyoung"
 ---
 
 ---
+uid: System.Messaging.AccessControlEntry.StandardAccessRights
+ms.technology: 
+  - "dotnet-standard"
+manager: "tyoung"
+---
+
+---
 uid: System.Messaging.AccessControlEntry.GenericAccessRights
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
-uid: System.Messaging.AccessControlEntry.EntryType
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
-uid: System.Messaging.AccessControlEntry.#ctor(System.Messaging.Trustee,System.Messaging.GenericAccessRights,System.Messaging.StandardAccessRights,System.Messaging.AccessControlEntryType)
 ms.technology: 
   - "dotnet-standard"
 manager: "tyoung"
@@ -48,7 +34,14 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.AccessControlEntry.StandardAccessRights
+uid: System.Messaging.AccessControlEntry.EntryType
+ms.technology: 
+  - "dotnet-standard"
+manager: "tyoung"
+---
+
+---
+uid: System.Messaging.AccessControlEntry.Trustee
 ms.technology: 
   - "dotnet-standard"
 manager: "tyoung"
@@ -62,7 +55,7 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.AccessControlEntry.Trustee
+uid: System.Messaging.AccessControlEntry
 ms.technology: 
   - "dotnet-standard"
 manager: "tyoung"

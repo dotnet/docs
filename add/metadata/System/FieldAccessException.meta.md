@@ -1,14 +1,5 @@
 ---
-uid: System.FieldAccessException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.FieldAccessException.#ctor
+uid: System.FieldAccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.FieldAccessException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.FieldAccessException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +26,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.FieldAccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.FieldAccessException.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.FieldAccessException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

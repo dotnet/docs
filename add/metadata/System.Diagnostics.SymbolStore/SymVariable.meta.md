@@ -1,41 +1,5 @@
 ---
-uid: System.Diagnostics.SymbolStore.SymVariable
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.StartOffset
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.Finalize
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.Name
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymVariable.Dispose
+uid: System.Diagnostics.SymbolStore.SymVariable.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -62,7 +26,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymVariable.Dispose(System.Boolean)
+uid: System.Diagnostics.SymbolStore.SymVariable.AddressField2
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.GetSignature
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.StartOffset
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -80,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymVariable.EndOffset
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymVariable.Attributes
 ms.technology: 
   - "dotnet-standard"
@@ -98,7 +71,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymVariable.AddressField2
+uid: System.Diagnostics.SymbolStore.SymVariable.EndOffset
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable.Finalize
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -116,7 +98,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymVariable.GetSignature
+uid: System.Diagnostics.SymbolStore.SymVariable.Name
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymVariable
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

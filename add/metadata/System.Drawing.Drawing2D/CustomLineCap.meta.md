@@ -1,50 +1,5 @@
 ---
-uid: System.Drawing.Drawing2D.CustomLineCap
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Drawing2D.CustomLineCap.SetStrokeCaps(System.Drawing.Drawing2D.LineCap,System.Drawing.Drawing2D.LineCap)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Drawing2D.CustomLineCap.GetStrokeCaps(System.Drawing.Drawing2D.LineCap@,System.Drawing.Drawing2D.LineCap@)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Drawing2D.CustomLineCap.WidthScale
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Drawing2D.CustomLineCap.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Drawing2D.CustomLineCap.BaseInset
+uid: System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.LineCap,System.Single)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -62,6 +17,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Drawing.Drawing2D.CustomLineCap.GetStrokeCaps(System.Drawing.Drawing2D.LineCap@,System.Drawing.Drawing2D.LineCap@)
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath)
 ms.technology: 
   - "dotnet-standard"
@@ -71,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.CustomLineCap.#ctor(System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.GraphicsPath,System.Drawing.Drawing2D.LineCap,System.Single)
+uid: System.Drawing.Drawing2D.CustomLineCap.SetStrokeCaps(System.Drawing.Drawing2D.LineCap,System.Drawing.Drawing2D.LineCap)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -80,10 +44,39 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.CustomLineCap.Dispose
+uid: System.Drawing.Drawing2D.CustomLineCap.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.CustomLineCap.WidthScale
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.CustomLineCap.StrokeJoin
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Drawing2D.CustomLineCap.BaseInset
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -123,7 +116,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.CustomLineCap.StrokeJoin
+uid: System.Drawing.Drawing2D.CustomLineCap.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -132,7 +125,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.CustomLineCap.#ctor
+uid: System.Drawing.Drawing2D.CustomLineCap
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

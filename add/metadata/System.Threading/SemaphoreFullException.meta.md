@@ -1,32 +1,5 @@
 ---
-uid: System.Threading.SemaphoreFullException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.SemaphoreFullException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.SemaphoreFullException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.SemaphoreFullException.#ctor(System.String)
+uid: System.Threading.SemaphoreFullException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +17,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.SemaphoreFullException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Threading.SemaphoreFullException.#ctor(System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreFullException.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.SemaphoreFullException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

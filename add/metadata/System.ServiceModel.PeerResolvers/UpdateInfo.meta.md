@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.PeerResolvers.UpdateInfo
+uid: System.ServiceModel.PeerResolvers.UpdateInfo.#ctor(System.Guid,System.Guid,System.String,System.ServiceModel.PeerNodeAddress)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
@@ -7,23 +7,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.UpdateInfo.ClientId
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
-uid: System.ServiceModel.PeerResolvers.UpdateInfo.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
-uid: System.ServiceModel.PeerResolvers.UpdateInfo.MeshId
+uid: System.ServiceModel.PeerResolvers.UpdateInfo.RegistrationId
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
@@ -39,6 +23,14 @@ manager: "ghogen"
 ---
 
 ---
+uid: System.ServiceModel.PeerResolvers.UpdateInfo.ClientId
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "bobdel"
+manager: "ghogen"
+---
+
+---
 uid: System.ServiceModel.PeerResolvers.UpdateInfo.HasBody
 ms.technology: 
   - "dotnet-standard"
@@ -47,7 +39,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.UpdateInfo.#ctor(System.Guid,System.Guid,System.String,System.ServiceModel.PeerNodeAddress)
+uid: System.ServiceModel.PeerResolvers.UpdateInfo.MeshId
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"
@@ -63,7 +55,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.UpdateInfo.RegistrationId
+uid: System.ServiceModel.PeerResolvers.UpdateInfo
 ms.technology: 
   - "dotnet-standard"
 ms.author: "bobdel"

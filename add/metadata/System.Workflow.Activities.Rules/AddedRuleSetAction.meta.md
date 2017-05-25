@@ -1,12 +1,12 @@
 ---
-uid: System.Workflow.Activities.Rules.AddedRuleSetAction
+uid: System.Workflow.Activities.Rules.AddedRuleSetAction.#ctor(System.Workflow.Activities.Rules.RuleSet)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.AddedRuleSetAction.#ctor
+uid: System.Workflow.Activities.Rules.AddedRuleSetAction.RuleSetDefinition
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,14 +27,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.AddedRuleSetAction.RuleSetDefinition
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.Rules.AddedRuleSetAction.#ctor(System.Workflow.Activities.Rules.RuleSet)
+uid: System.Workflow.Activities.Rules.AddedRuleSetAction
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

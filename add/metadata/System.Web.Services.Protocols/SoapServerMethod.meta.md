@@ -1,5 +1,5 @@
 ---
-uid: System.Web.Services.Protocols.SoapServerMethod
+uid: System.Web.Services.Protocols.SoapServerMethod.#ctor(System.Type,System.Web.Services.Protocols.LogicalMethodInfo)
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -17,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapServerMethod.OneWay
+uid: System.Web.Services.Protocols.SoapServerMethod.ParameterSerializer
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -35,16 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapServerMethod.WsiClaims
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Protocols.SoapServerMethod.ParameterStyle
+uid: System.Web.Services.Protocols.SoapServerMethod.OutHeaderMappings
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -62,15 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapServerMethod.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Protocols.SoapServerMethod.InHeaderMappings
 ms.technology: 
   - "dotnet-webforms"
@@ -80,25 +62,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapServerMethod.OutHeaderMappings
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Protocols.SoapServerMethod.#ctor(System.Type,System.Web.Services.Protocols.LogicalMethodInfo)
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Protocols.SoapServerMethod.Action
+uid: System.Web.Services.Protocols.SoapServerMethod.ParameterStyle
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -116,7 +80,34 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapServerMethod.Rpc
+uid: System.Web.Services.Protocols.SoapServerMethod.BindingUse
+ms.technology: 
+  - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Protocols.SoapServerMethod.WsiClaims
+ms.technology: 
+  - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Protocols.SoapServerMethod.OneWay
+ms.technology: 
+  - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Protocols.SoapServerMethod.Action
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -134,7 +125,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapServerMethod.BindingUse
+uid: System.Web.Services.Protocols.SoapServerMethod.Rpc
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -143,7 +134,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapServerMethod.ParameterSerializer
+uid: System.Web.Services.Protocols.SoapServerMethod
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"

@@ -1,12 +1,12 @@
 ---
-uid: System.Workflow.ComponentModel.TerminateActivity
+uid: System.Workflow.ComponentModel.TerminateActivity.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.TerminateActivity.#ctor(System.String)
+uid: System.Workflow.ComponentModel.TerminateActivity.ErrorProperty
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,11 +27,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.TerminateActivity.#ctor
----
-
----
-uid: System.Workflow.ComponentModel.TerminateActivity.ErrorProperty
+uid: System.Workflow.ComponentModel.TerminateActivity
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

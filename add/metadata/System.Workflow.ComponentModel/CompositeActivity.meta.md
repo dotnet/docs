@@ -1,33 +1,26 @@
 ---
-uid: System.Workflow.ComponentModel.CompositeActivity
+uid: System.Workflow.ComponentModel.CompositeActivity.OnActivityChangeRemove(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.CompositeActivity.GetDynamicActivities(System.Workflow.ComponentModel.Activity)
+uid: System.Workflow.ComponentModel.CompositeActivity.OnActivityChangeAdd(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.CompositeActivity.#ctor
+uid: System.Workflow.ComponentModel.CompositeActivity.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Activity})
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.CompositeActivity.Uninitialize(System.IServiceProvider)
+uid: System.Workflow.ComponentModel.CompositeActivity.HandleFault(System.Workflow.ComponentModel.ActivityExecutionContext,System.Exception)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -41,25 +34,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.CompositeActivity.Activities
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.CompositeActivity.OnActivityExecutionContextUnload(System.IServiceProvider)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.CompositeActivity.Dispose
----
-
----
-uid: System.Workflow.ComponentModel.CompositeActivity.#ctor(System.String)
+uid: System.Workflow.ComponentModel.CompositeActivity.OnListChanging(System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -80,21 +55,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.CompositeActivity.OnActivityChangeRemove(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)
+uid: System.Workflow.ComponentModel.CompositeActivity.GetDynamicActivities(System.Workflow.ComponentModel.Activity)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.CompositeActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.CompositeActivity.OnListChanging(System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs)
+uid: System.Workflow.ComponentModel.CompositeActivity.OnActivityExecutionContextUnload(System.IServiceProvider)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -108,28 +76,14 @@ manager: "erikre"
 ---
 
 ---
+uid: System.Workflow.ComponentModel.CompositeActivity.Uninitialize(System.IServiceProvider)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.Workflow.ComponentModel.CompositeActivity.Initialize(System.IServiceProvider)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.CompositeActivity.EnabledActivities
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.CompositeActivity.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Activity})
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.CompositeActivity.OnActivityChangeAdd(System.Workflow.ComponentModel.ActivityExecutionContext,System.Workflow.ComponentModel.Activity)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -143,8 +97,47 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.CompositeActivity.HandleFault(System.Workflow.ComponentModel.ActivityExecutionContext,System.Exception)
+uid: System.Workflow.ComponentModel.CompositeActivity.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.CompositeActivity.CanModifyActivities
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.CompositeActivity.EnabledActivities
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.CompositeActivity.Activities
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.CompositeActivity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.CompositeActivity
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.CompositeActivity.Dispose
 ---

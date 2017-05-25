@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.Discovery.Version11.FindCriteria11
+uid: System.ServiceModel.Discovery.Version11.FindCriteria11.FromFindCriteria(System.ServiceModel.Discovery.FindCriteria)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -17,16 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.Version11.FindCriteria11.ToFindCriteria
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.Version11.FindCriteria11.FromFindCriteria(System.ServiceModel.Discovery.FindCriteria)
+uid: System.ServiceModel.Discovery.Version11.FindCriteria11.WriteXml(System.Xml.XmlWriter)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.Version11.FindCriteria11.GetSchema
+uid: System.ServiceModel.Discovery.Version11.FindCriteria11.ToFindCriteria
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -62,7 +53,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.Version11.FindCriteria11.WriteXml(System.Xml.XmlWriter)
+uid: System.ServiceModel.Discovery.Version11.FindCriteria11
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

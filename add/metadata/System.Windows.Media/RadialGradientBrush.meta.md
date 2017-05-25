@@ -1,40 +1,5 @@
 ---
-uid: System.Windows.Media.RadialGradientBrush
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.RadialGradientBrush.RadiusXProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.RadialGradientBrush.#ctor(System.Windows.Media.Color,System.Windows.Media.Color)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.RadialGradientBrush.RadiusY
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.RadialGradientBrush.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -52,7 +17,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.RadialGradientBrush.#ctor
+uid: System.Windows.Media.RadialGradientBrush.GradientOriginProperty
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.RadialGradientBrush.CloneCurrentValue
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.RadialGradientBrush.RadiusXProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -70,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.RadialGradientBrush.Center
+uid: System.Windows.Media.RadialGradientBrush.CenterProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -79,7 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.RadialGradientBrush.Clone
+uid: System.Windows.Media.RadialGradientBrush.RadiusY
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -97,7 +80,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.RadialGradientBrush.GradientOriginProperty
+uid: System.Windows.Media.RadialGradientBrush.Center
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.RadialGradientBrush.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.RadialGradientBrush.Clone
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -114,19 +115,9 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.RadialGradientBrush.CloneCurrentValue
+uid: System.Windows.Media.RadialGradientBrush
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.RadialGradientBrush.CenterProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

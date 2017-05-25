@@ -1,12 +1,5 @@
 ---
-uid: System.Runtime.Serialization.SerializationException
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Serialization.SerializationException.#ctor
+uid: System.Runtime.Serialization.SerializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -27,14 +20,14 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Serialization.SerializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Runtime.Serialization.SerializationException.#ctor
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Serialization.SerializationException.#ctor
+uid: System.Runtime.Serialization.SerializationException
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"

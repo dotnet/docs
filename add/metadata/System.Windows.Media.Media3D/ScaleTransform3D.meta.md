@@ -1,22 +1,5 @@
 ---
-uid: System.Windows.Media.Media3D.ScaleTransform3D
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Media3D.ScaleTransform3D.Value
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.ScaleTransform3D.#ctor
+uid: System.Windows.Media.Media3D.ScaleTransform3D.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -33,38 +16,12 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.ScaleTransform3D.ScaleXProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.ScaleTransform3D.#ctor(System.Double,System.Double,System.Double)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.ScaleTransform3D.CenterXProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.ScaleTransform3D.ScaleZProperty
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
@@ -86,6 +43,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Windows.Media.Media3D.ScaleTransform3D.CenterXProperty
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Windows.Media.Media3D.ScaleTransform3D.CenterZProperty
 ms.technology: 
   - "dotnet-wpf"
@@ -95,7 +61,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.ScaleTransform3D.Clone
+uid: System.Windows.Media.Media3D.ScaleTransform3D.CenterYProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -104,7 +70,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.ScaleTransform3D.ScaleZ
+uid: System.Windows.Media.Media3D.ScaleTransform3D.ScaleXProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -113,15 +79,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.ScaleTransform3D.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Media3D.ScaleTransform3D.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
+uid: System.Windows.Media.Media3D.ScaleTransform3D.ScaleYProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -157,7 +115,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.ScaleTransform3D.CenterYProperty
+uid: System.Windows.Media.Media3D.ScaleTransform3D.ScaleZ
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -184,10 +142,44 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.ScaleTransform3D.ScaleYProperty
+uid: System.Windows.Media.Media3D.ScaleTransform3D.Value
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.ScaleTransform3D.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.ScaleTransform3D.Clone
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.ScaleTransform3D.ScaleZProperty
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Media3D.ScaleTransform3D
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

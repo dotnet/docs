@@ -1,5 +1,13 @@
 ---
-uid: System.IdentityModel.Metadata.KeyDescriptor
+uid: System.IdentityModel.Metadata.KeyDescriptor.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.KeyDescriptor.EncryptionMethods
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -31,23 +39,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.KeyDescriptor.EncryptionMethods
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Metadata.KeyDescriptor.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Metadata.KeyDescriptor.#ctor
+uid: System.IdentityModel.Metadata.KeyDescriptor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

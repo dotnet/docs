@@ -1,13 +1,5 @@
 ---
-uid: System.IdentityModel.BadRequestException
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.BadRequestException.#ctor(System.String)
+uid: System.IdentityModel.BadRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -23,7 +15,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.BadRequestException.#ctor
+uid: System.IdentityModel.BadRequestException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -39,7 +31,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.BadRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.IdentityModel.BadRequestException
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

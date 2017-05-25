@@ -1,31 +1,4 @@
 ---
-uid: System.ServiceModel.Configuration.StandardBindingElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.StandardBindingElement.ReceiveTimeout
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.StandardBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.StandardBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)
 ms.technology: 
   - "dotnet-standard"
@@ -35,7 +8,25 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.StandardBindingElement.CloseTimeout
+uid: System.ServiceModel.Configuration.StandardBindingElement.ApplyConfiguration(System.ServiceModel.Channels.Binding)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.StandardBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.StandardBindingElement.Reset(System.Configuration.ConfigurationElement)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -53,7 +44,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.StandardBindingElement.Name
+uid: System.ServiceModel.Configuration.StandardBindingElement.BindingElementType
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -62,7 +53,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.StandardBindingElement.Properties
+uid: System.ServiceModel.Configuration.StandardBindingElement.ReceiveTimeout
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.StandardBindingElement.CloseTimeout
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -89,7 +89,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.StandardBindingElement.Reset(System.Configuration.ConfigurationElement)
+uid: System.ServiceModel.Configuration.StandardBindingElement.Properties
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -107,7 +107,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.StandardBindingElement.BindingElementType
+uid: System.ServiceModel.Configuration.StandardBindingElement.Name
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -116,16 +116,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.StandardBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.StandardBindingElement.ApplyConfiguration(System.ServiceModel.Channels.Binding)
+uid: System.ServiceModel.Configuration.StandardBindingElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

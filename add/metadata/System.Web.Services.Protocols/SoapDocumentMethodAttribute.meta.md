@@ -1,14 +1,5 @@
 ---
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor
+uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -26,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.ResponseNamespace
+uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestElementName
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -35,7 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor
+uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.ResponseNamespace
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -53,43 +44,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.Use
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestElementName
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor(System.String)
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.OneWay
+uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -107,7 +62,43 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.ParameterStyle
+uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.Action
+ms.technology: 
+  - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.OneWay
+ms.technology: 
+  - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor
+ms.technology: 
+  - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.Use
+ms.technology: 
+  - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"

@@ -1,5 +1,5 @@
 ---
-uid: System.Web.UI.WebControls.Expressions.OfTypeExpression
+uid: System.Web.UI.WebControls.Expressions.OfTypeExpression.GetQueryable(System.Linq.IQueryable)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -8,14 +8,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.WebControls.Expressions.OfTypeExpression.#ctor(System.Type)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.Expressions.OfTypeExpression.GetQueryable(System.Linq.IQueryable)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -39,7 +31,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.Expressions.OfTypeExpression.#ctor
+uid: System.Web.UI.WebControls.Expressions.OfTypeExpression
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

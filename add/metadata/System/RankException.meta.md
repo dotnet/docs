@@ -1,22 +1,4 @@
 ---
-uid: System.RankException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.RankException.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.RankException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
@@ -35,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.RankException.#ctor
+uid: System.RankException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -45,6 +27,15 @@ manager: "wpickett"
 
 ---
 uid: System.RankException.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.RankException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

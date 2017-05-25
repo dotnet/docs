@@ -1,20 +1,4 @@
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutBackColor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineAnchorCapStyle
 ms.technology: 
   - "dotnet-winforms"
@@ -39,7 +23,7 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor
+uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutBackColor
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "mblythe"
@@ -48,14 +32,6 @@ manager: "mblythe"
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineColor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "mblythe"
@@ -72,6 +48,22 @@ manager: "mblythe"
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutStyle
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "mblythe"

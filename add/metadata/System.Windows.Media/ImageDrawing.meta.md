@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Media.ImageDrawing
+uid: System.Windows.Media.ImageDrawing.#ctor(System.Windows.Media.ImageSource,System.Windows.Rect)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -17,15 +17,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.ImageDrawing.RectProperty
+uid: System.Windows.Media.ImageDrawing.CloneCurrentValue
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.ImageDrawing.#ctor(System.Windows.Media.ImageSource,System.Windows.Rect)
+uid: System.Windows.Media.ImageDrawing.ImageSource
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -52,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.ImageDrawing.#ctor
+uid: System.Windows.Media.ImageDrawing
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -61,21 +62,11 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.ImageDrawing.ImageSource
+uid: System.Windows.Media.ImageDrawing.RectProperty
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.ImageDrawing.CloneCurrentValue
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---

@@ -1,5 +1,5 @@
 ---
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier
+uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifierClause[])
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -7,7 +7,15 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.MakeReadOnly
+uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.Add(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.System#Collections#IEnumerable#GetEnumerator
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -31,7 +39,47 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.System#Collections#IEnumerable#GetEnumerator
+uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.GetEnumerator
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.MakeReadOnly
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.CanCreateKey
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.IsReadOnly
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.CreateKey
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.ToString
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -63,63 +111,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifierClause[])
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.CanCreateKey
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.ToString
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.GetEnumerator
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.IsReadOnly
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.CreateKey
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.Add(System.IdentityModel.Tokens.SecurityKeyIdentifierClause)
+uid: System.IdentityModel.Tokens.SecurityKeyIdentifier
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

@@ -1,5 +1,14 @@
 ---
-uid: System.Drawing.Imaging.ColorMatrix
+uid: System.Drawing.Imaging.ColorMatrix.Item(System.Int32,System.Int32)
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Imaging.ColorMatrix.#ctor(System.Single[][])
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -36,15 +45,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Imaging.ColorMatrix.Matrix42
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Imaging.ColorMatrix.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -233,7 +233,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ColorMatrix.#ctor(System.Single[][])
+uid: System.Drawing.Imaging.ColorMatrix.Matrix21
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -251,16 +251,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ColorMatrix.Item(System.Int32,System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Imaging.ColorMatrix.Matrix21
+uid: System.Drawing.Imaging.ColorMatrix
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

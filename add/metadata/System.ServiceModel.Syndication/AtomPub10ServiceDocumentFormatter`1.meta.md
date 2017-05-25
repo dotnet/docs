@@ -1,13 +1,4 @@
 ---
-uid: System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1.CreateDocumentInstance
 ms.technology: 
   - "dotnet-standard"
@@ -35,7 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1.#ctor
+uid: System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter`1
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

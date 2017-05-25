@@ -1,5 +1,5 @@
 ---
-uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime
+uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.CopyFrom(System.Security.Cryptography.AsnEncodedData)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,24 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.SigningTime
 ms.technology: 
   - "dotnet-standard"
@@ -53,7 +35,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.CopyFrom(System.Security.Cryptography.AsnEncodedData)
+uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

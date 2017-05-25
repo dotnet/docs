@@ -1,22 +1,5 @@
 ---
-uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Role
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Bounds
+uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -34,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.#ctor
+uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Bounds
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -52,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)
+uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.#ctor
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -70,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.#ctor
+uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -80,6 +63,14 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Owner
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Role
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "kempb"

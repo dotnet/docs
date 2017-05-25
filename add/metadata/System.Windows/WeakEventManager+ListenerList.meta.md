@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.WeakEventManager.ListenerList
+uid: System.Windows.WeakEventManager.ListenerList.DeliverEvent(System.Object,System.EventArgs,System.Type)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -8,56 +8,12 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList.Clone
+uid: System.Windows.WeakEventManager.ListenerList.CopyTo(System.Windows.WeakEventManager.ListenerList)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.#ctor(System.Int32)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.Add(System.Windows.IWeakEventListener)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.Item(System.Int32)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.Empty
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
@@ -70,16 +26,15 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList.DeliverEvent(System.Object,System.EventArgs,System.Type)
+uid: System.Windows.WeakEventManager.ListenerList.PrepareForWriting(System.Windows.WeakEventManager.ListenerList@)
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList.Purge
+uid: System.Windows.WeakEventManager.ListenerList.Add(System.Windows.IWeakEventListener)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -97,7 +52,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList.BeginUse
+uid: System.Windows.WeakEventManager.ListenerList.AddHandler(System.Delegate)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -106,7 +61,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList.CopyTo(System.Windows.WeakEventManager.ListenerList)
+uid: System.Windows.WeakEventManager.ListenerList.#ctor(System.Int32)
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.Item(System.Int32)
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.BeginUse
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -133,6 +106,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Windows.WeakEventManager.ListenerList.Clone
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Windows.WeakEventManager.ListenerList.#ctor
 ms.technology: 
   - "dotnet-wpf"
@@ -142,7 +124,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList.PrepareForWriting(System.Windows.WeakEventManager.ListenerList@)
+uid: System.Windows.WeakEventManager.ListenerList.Purge
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList.Empty
 ms.technology: 
   - "dotnet-wpf"
 ms.author: "kempb"
@@ -155,13 +155,4 @@ ms.technology:
   - "dotnet-wpf"
 ms.author: "kempb"
 manager: "ghogen"
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList.AddHandler(System.Delegate)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
 ---

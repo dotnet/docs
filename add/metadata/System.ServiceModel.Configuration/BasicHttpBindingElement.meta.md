@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.Configuration.BasicHttpBindingElement
+uid: System.ServiceModel.Configuration.BasicHttpBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -17,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.BasicHttpBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)
+uid: System.ServiceModel.Configuration.BasicHttpBindingElement.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -35,16 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.BasicHttpBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.BasicHttpBindingElement.#ctor
+uid: System.ServiceModel.Configuration.BasicHttpBindingElement.MessageEncoding
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -71,7 +62,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.BasicHttpBindingElement.#ctor(System.String)
+uid: System.ServiceModel.Configuration.BasicHttpBindingElement.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -80,7 +71,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.BasicHttpBindingElement.MessageEncoding
+uid: System.ServiceModel.Configuration.BasicHttpBindingElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

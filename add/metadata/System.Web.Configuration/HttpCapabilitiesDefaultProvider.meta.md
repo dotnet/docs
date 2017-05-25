@@ -1,22 +1,4 @@
 ---
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.ResultType
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.#ctor(System.Web.Configuration.HttpCapabilitiesDefaultProvider)
 ms.technology: 
   - "dotnet-webforms"
@@ -26,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.#ctor
+uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.GetBrowserCapabilities(System.Web.HttpRequest)
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -53,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.GetBrowserCapabilities(System.Web.HttpRequest)
+uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.UserAgentCacheKeyLength
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -62,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.#ctor
+uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.ResultType
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -80,7 +62,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.UserAgentCacheKeyLength
+uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.#ctor
+ms.technology: 
+  - "dotnet-webforms"
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

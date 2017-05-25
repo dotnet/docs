@@ -1,18 +1,10 @@
 ---
-uid: System.Windows.Media.Animation.LinearInt64KeyFrame
+uid: System.Windows.Media.Animation.LinearInt64KeyFrame.#ctor(System.Int64,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.LinearInt64KeyFrame.CreateInstanceCore
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
@@ -34,6 +26,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Windows.Media.Animation.LinearInt64KeyFrame
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Windows.Media.Animation.LinearInt64KeyFrame.#ctor(System.Int64)
 ms.technology: 
   - "dotnet-wpf"
@@ -42,19 +43,9 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.LinearInt64KeyFrame.#ctor(System.Int64,System.Windows.Media.Animation.KeyTime)
+uid: System.Windows.Media.Animation.LinearInt64KeyFrame.CreateInstanceCore
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.LinearInt64KeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,5 +1,5 @@
 ---
-uid: System.Workflow.Activities.Rules.RuleUpdateAction
+uid: System.Workflow.Activities.Rules.RuleUpdateAction.GetSideEffects(System.Workflow.Activities.Rules.RuleValidation)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -13,21 +13,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleUpdateAction.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.Rules.RuleUpdateAction.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.Rules.RuleUpdateAction.Path
+uid: System.Workflow.Activities.Rules.RuleUpdateAction.Execute(System.Workflow.Activities.Rules.RuleExecution)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -41,7 +27,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleUpdateAction.ToString
+uid: System.Workflow.Activities.Rules.RuleUpdateAction.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -55,14 +41,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleUpdateAction.#ctor(System.String)
+uid: System.Workflow.Activities.Rules.RuleUpdateAction.ToString
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleUpdateAction.Execute(System.Workflow.Activities.Rules.RuleExecution)
+uid: System.Workflow.Activities.Rules.RuleUpdateAction.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -76,7 +62,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleUpdateAction.GetSideEffects(System.Workflow.Activities.Rules.RuleValidation)
+uid: System.Workflow.Activities.Rules.RuleUpdateAction.Path
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RuleUpdateAction
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

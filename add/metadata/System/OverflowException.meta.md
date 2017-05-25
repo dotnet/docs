@@ -1,5 +1,5 @@
 ---
-uid: System.OverflowException
+uid: System.OverflowException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.OverflowException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.OverflowException.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.OverflowException.#ctor
+uid: System.OverflowException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

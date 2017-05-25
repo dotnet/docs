@@ -1,26 +1,10 @@
 ---
-uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame
+uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame.#ctor(System.Windows.Thickness,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
@@ -51,10 +35,18 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame.#ctor(System.Windows.Thickness,System.Windows.Media.Animation.KeyTime)
+uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

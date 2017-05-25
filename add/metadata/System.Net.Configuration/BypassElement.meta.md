@@ -1,5 +1,5 @@
 ---
-uid: System.Net.Configuration.BypassElement
+uid: System.Net.Configuration.BypassElement.#ctor(System.String)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -17,13 +17,7 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Configuration.BypassElement.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Configuration.BypassElement.#ctor(System.String)
+uid: System.Net.Configuration.BypassElement
 ms.author: "bobdel"
 manager: "markl"
 ---

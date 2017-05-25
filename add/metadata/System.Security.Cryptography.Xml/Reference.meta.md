@@ -1,40 +1,4 @@
 ---
-uid: System.Security.Cryptography.Xml.Reference
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.Reference.GetXml
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.Reference.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.Reference.Uri
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.Reference.AddTransform(System.Security.Cryptography.Xml.Transform)
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +8,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.Reference.Id
+uid: System.Security.Cryptography.Xml.Reference.LoadXml(System.Xml.XmlElement)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.Reference.#ctor(System.IO.Stream)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -71,6 +44,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Security.Cryptography.Xml.Reference.DigestMethod
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
 uid: System.Security.Cryptography.Xml.Reference.DigestValue
 ms.technology: 
   - "dotnet-standard"
@@ -80,7 +62,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.Reference.LoadXml(System.Xml.XmlElement)
+uid: System.Security.Cryptography.Xml.Reference.GetXml
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.Reference.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -98,7 +89,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.Reference.#ctor(System.IO.Stream)
+uid: System.Security.Cryptography.Xml.Reference.Uri
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -107,7 +98,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.Reference.DigestMethod
+uid: System.Security.Cryptography.Xml.Reference.Id
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -116,7 +107,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.Reference.#ctor
+uid: System.Security.Cryptography.Xml.Reference
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

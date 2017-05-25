@@ -1,18 +1,4 @@
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.Value
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.Parse(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -20,7 +6,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.#ctor
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -48,7 +34,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.#ctor(System.String)
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.Value
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -56,6 +42,13 @@ manager: "ghogen"
 
 ---
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.#ctor
+ms.technology: 
+  - "dotnet-standard"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"

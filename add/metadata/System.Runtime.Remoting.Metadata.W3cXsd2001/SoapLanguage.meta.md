@@ -1,12 +1,26 @@
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage.#ctor(System.String)
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage.Parse(System.String)
+ms.technology: 
+  - "dotnet-standard"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage.GetXsdType
+ms.technology: 
+  - "dotnet-standard"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage.ToString
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -34,28 +48,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage.ToString
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage.Parse(System.String)
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage.GetXsdType
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapLanguage
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"

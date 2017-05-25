@@ -1,5 +1,5 @@
 ---
-uid: System.Security.Cryptography.AesManaged
+uid: System.Security.Cryptography.AesManaged.CreateDecryptor(System.Byte[],System.Byte[])
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -8,16 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AesManaged.KeySize
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AesManaged.FeedbackSize
+uid: System.Security.Cryptography.AesManaged.CreateEncryptor(System.Byte[],System.Byte[])
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AesManaged.CreateEncryptor
+uid: System.Security.Cryptography.AesManaged.FeedbackSize
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -62,25 +53,25 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Security.Cryptography.AesManaged.GenerateIV
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesManaged.KeySize
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
 uid: System.Security.Cryptography.AesManaged.Padding
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AesManaged.IV
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AesManaged.CreateDecryptor(System.Byte[],System.Byte[])
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -107,24 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AesManaged.CreateEncryptor(System.Byte[],System.Byte[])
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AesManaged.CreateDecryptor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.AesManaged.Key
 ms.technology: 
   - "dotnet-standard"
@@ -134,7 +107,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AesManaged.GenerateIV
+uid: System.Security.Cryptography.AesManaged.IV
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.AesManaged
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

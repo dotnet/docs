@@ -1,13 +1,5 @@
 ---
-uid: System.Windows.Media.DrawingImage
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.DrawingImage.Clone
+uid: System.Windows.Media.DrawingImage.CloneCurrentValue
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -25,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.DrawingImage.Metadata
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.DrawingImage.#ctor(System.Windows.Media.Drawing)
 ms.technology: 
   - "dotnet-wpf"
@@ -42,20 +25,12 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.DrawingImage.CloneCurrentValue
+uid: System.Windows.Media.DrawingImage.Metadata
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Media.DrawingImage.Width
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
@@ -77,7 +52,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.DrawingImage.#ctor
+uid: System.Windows.Media.DrawingImage.Clone
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -87,6 +62,23 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.DrawingImage.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.DrawingImage.Width
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.DrawingImage
 ms.technology: 
   - "dotnet-wpf"
 ms.author: "kempb"

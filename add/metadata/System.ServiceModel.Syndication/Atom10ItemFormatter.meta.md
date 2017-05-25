@@ -1,13 +1,4 @@
 ---
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.Atom10ItemFormatter.System#Xml#Serialization#IXmlSerializable#WriteXml(System.Xml.XmlWriter)
 ms.technology: 
   - "dotnet-standard"
@@ -17,43 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.WriteTo(System.Xml.XmlWriter)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.PreserveElementExtensions
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.CanRead(System.Xml.XmlReader)
+uid: System.ServiceModel.Syndication.Atom10ItemFormatter.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -80,7 +35,25 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.System#Xml#Serialization#IXmlSerializable#ReadXml(System.Xml.XmlReader)
+uid: System.ServiceModel.Syndication.Atom10ItemFormatter.ReadFrom(System.Xml.XmlReader)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Syndication.Atom10ItemFormatter.WriteTo(System.Xml.XmlWriter)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Syndication.Atom10ItemFormatter.CanRead(System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -98,7 +71,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor(System.Type)
+uid: System.ServiceModel.Syndication.Atom10ItemFormatter.PreserveElementExtensions
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -107,7 +80,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.ItemType
+uid: System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor(System.Type)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -125,6 +98,15 @@ manager: "erikre"
 ---
 
 ---
+uid: System.ServiceModel.Syndication.Atom10ItemFormatter.ItemType
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.ServiceModel.Syndication.Atom10ItemFormatter.Version
 ms.technology: 
   - "dotnet-standard"
@@ -134,7 +116,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.ReadFrom(System.Xml.XmlReader)
+uid: System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Syndication.Atom10ItemFormatter
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

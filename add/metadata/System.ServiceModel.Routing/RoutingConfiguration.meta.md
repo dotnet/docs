@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.Routing.RoutingConfiguration
+uid: System.ServiceModel.Routing.RoutingConfiguration.#ctor(System.ServiceModel.Dispatcher.MessageFilterTable{System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ServiceEndpoint}},System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -17,15 +17,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Routing.RoutingConfiguration.SoapProcessingEnabled
 ms.technology: 
   - "dotnet-standard"
@@ -35,7 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.RoutingConfiguration.#ctor
+uid: System.ServiceModel.Routing.RoutingConfiguration.RouteOnHeadersOnly
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -53,7 +44,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.RoutingConfiguration.#ctor(System.ServiceModel.Dispatcher.MessageFilterTable{System.Collections.Generic.IEnumerable{System.ServiceModel.Description.ServiceEndpoint}},System.Boolean)
+uid: System.ServiceModel.Routing.RoutingConfiguration.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -62,7 +53,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.RoutingConfiguration.#ctor
+uid: System.ServiceModel.Routing.RoutingConfiguration
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

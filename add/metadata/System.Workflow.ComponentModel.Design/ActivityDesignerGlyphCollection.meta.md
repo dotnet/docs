@@ -1,12 +1,5 @@
 ---
-uid: System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection.#ctor
+uid: System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Design.DesignerGlyph})
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -20,14 +13,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection.#ctor(System.Collections.Generic.IEnumerable{System.Workflow.ComponentModel.Design.DesignerGlyph})
+uid: System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection.#ctor
+uid: System.Workflow.ComponentModel.Design.ActivityDesignerGlyphCollection
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

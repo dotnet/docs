@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Forms.ErrorProvider
+uid: System.Windows.Forms.ErrorProvider.SetIconAlignment(System.Windows.Forms.Control,System.Windows.Forms.ErrorIconAlignment)
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -8,19 +8,30 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.#ctor(System.Windows.Forms.ContainerControl)
+uid: System.Windows.Forms.ErrorProvider.SetIconPadding(System.Windows.Forms.Control,System.Int32)
 ms.technology: 
   - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.UpdateBinding
+uid: System.Windows.Forms.ErrorProvider.System#ComponentModel#ISupportInitialize#BeginInit
 ms.technology: 
   - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.System#ComponentModel#ISupportInitialize#EndInit
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -42,24 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.SetIconAlignment(System.Windows.Forms.Control,System.Windows.Forms.ErrorIconAlignment)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ErrorProvider.GetIconPadding(System.Windows.Forms.Control)
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.ErrorProvider.RightToLeft
+uid: System.Windows.Forms.ErrorProvider.GetError(System.Windows.Forms.Control)
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -76,7 +70,15 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.System#ComponentModel#ISupportInitialize#EndInit
+uid: System.Windows.Forms.ErrorProvider.BindToDataAndErrors(System.Object,System.String)
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.CanExtend(System.Object)
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -85,7 +87,32 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.DataSource
+uid: System.Windows.Forms.ErrorProvider.Dispose(System.Boolean)
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.#ctor(System.Windows.Forms.ContainerControl)
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.GetIconPadding(System.Windows.Forms.Control)
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.RightToLeftChanged
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -103,25 +130,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.System#ComponentModel#ISupportInitialize#BeginInit
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ErrorProvider.Tag
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ErrorProvider.Clear
+uid: System.Windows.Forms.ErrorProvider.#ctor(System.ComponentModel.IContainer)
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "kempb"
@@ -129,15 +138,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.BindToDataAndErrors(System.Object,System.String)
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.ErrorProvider.RightToLeftChanged
+uid: System.Windows.Forms.ErrorProvider.RightToLeft
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -146,7 +147,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.CanExtend(System.Object)
+uid: System.Windows.Forms.ErrorProvider.DataSource
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -164,33 +165,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.Site
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ErrorProvider.#ctor(System.ComponentModel.IContainer)
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.ErrorProvider.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ErrorProvider.SetIconPadding(System.Windows.Forms.Control,System.Int32)
+uid: System.Windows.Forms.ErrorProvider.DataMember
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -217,7 +192,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.DataMember
+uid: System.Windows.Forms.ErrorProvider.Site
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -226,9 +201,36 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.Dispose
+uid: System.Windows.Forms.ErrorProvider.Tag
 ms.technology: 
   - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.UpdateBinding
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ErrorProvider.Clear
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
 manager: "ghogen"
 ---
 
@@ -241,18 +243,8 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ErrorProvider.GetError(System.Windows.Forms.Control)
+uid: System.Windows.Forms.ErrorProvider.Dispose
 ms.technology: 
   - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ErrorProvider.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
 manager: "ghogen"
 ---

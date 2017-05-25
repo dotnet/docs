@@ -1,5 +1,5 @@
 ---
-uid: System.Web.Security.MembershipPasswordException
+uid: System.Web.Security.MembershipPasswordException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipPasswordException.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.MembershipPasswordException.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"
@@ -35,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipPasswordException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Web.Security.MembershipPasswordException.#ctor
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipPasswordException.#ctor
+uid: System.Web.Security.MembershipPasswordException
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

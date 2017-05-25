@@ -1,5 +1,5 @@
 ---
-uid: System.MulticastNotSupportedException
+uid: System.MulticastNotSupportedException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,16 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.MulticastNotSupportedException.#ctor(System.String,System.Exception)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.MulticastNotSupportedException.#ctor
+uid: System.MulticastNotSupportedException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -1,23 +1,17 @@
 ---
-uid: System.Net.WebResponse
+uid: System.Net.WebResponse.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebResponse.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
 uid: System.Net.WebResponse.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.WebResponse.Headers
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.WebResponse.ContentType
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -35,19 +29,7 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.WebResponse.IsFromCache
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.WebResponse.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.WebResponse.ContentLength
+uid: System.Net.WebResponse.GetResponseStream
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -59,19 +41,19 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.WebResponse.Dispose
+uid: System.Net.WebResponse.ContentLength
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.WebResponse.#ctor
+uid: System.Net.WebResponse.ContentType
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.WebResponse.Dispose
+uid: System.Net.WebResponse.IsFromCache
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -83,25 +65,31 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.WebResponse.Close
+uid: System.Net.WebResponse.Headers
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.WebResponse.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.WebResponse.GetResponseStream
+uid: System.Net.WebResponse.Dispose
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
 uid: System.Net.WebResponse.#ctor
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebResponse.Close
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.WebResponse
 ms.author: "bobdel"
 manager: "markl"
 ---

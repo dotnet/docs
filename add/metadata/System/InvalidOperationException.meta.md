@@ -1,13 +1,4 @@
 ---
-uid: System.InvalidOperationException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.InvalidOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.InvalidOperationException.#ctor
+uid: System.InvalidOperationException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

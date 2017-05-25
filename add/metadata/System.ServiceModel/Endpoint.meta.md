@@ -1,5 +1,14 @@
 ---
-uid: System.ServiceModel.Endpoint
+uid: System.ServiceModel.Endpoint.GetAddress(System.ServiceModel.ServiceHostBase)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Endpoint.BehaviorConfigurationName
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -26,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Endpoint.ListenUri
+uid: System.ServiceModel.Endpoint.GetAddress
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -35,7 +44,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Endpoint.GetAddress(System.ServiceModel.ServiceHostBase)
+uid: System.ServiceModel.Endpoint.ListenUri
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -53,7 +62,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Endpoint.GetAddress
+uid: System.ServiceModel.Endpoint.Headers
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -62,7 +71,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Endpoint.BehaviorConfigurationName
+uid: System.ServiceModel.Endpoint.Binding
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -80,24 +89,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Endpoint.Headers
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Endpoint.GetAddress
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Endpoint.Name
 ms.technology: 
   - "dotnet-standard"
@@ -107,7 +98,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Endpoint.Binding
+uid: System.ServiceModel.Endpoint
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

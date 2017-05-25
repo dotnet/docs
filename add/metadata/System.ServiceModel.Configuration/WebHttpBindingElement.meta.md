@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -8,7 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.ReaderQuotas
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -17,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.TransferMode
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.CrossDomainScriptAccessEnabled
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -26,7 +26,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.MaxBufferPoolSize
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.HostNameComparisonMode
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.MaxReceivedMessageSize
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -53,61 +62,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.MaxBufferSize
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.CrossDomainScriptAccessEnabled
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.WebHttpBindingElement.UseDefaultWebProxy
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.ContentTypeMapper
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.Properties
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.HostNameComparisonMode
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -125,7 +80,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.MaxReceivedMessageSize
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.MaxBufferPoolSize
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -134,7 +89,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.ContentTypeMapper
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -143,7 +98,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.#ctor
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.MaxBufferSize
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -161,7 +116,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.AllowCookies
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.ReaderQuotas
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -170,7 +125,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.Security
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.TransferMode
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.AllowCookies
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -188,7 +152,34 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.Properties
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.Security
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.WebHttpBindingElement.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.WebHttpBindingElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

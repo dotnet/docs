@@ -1,12 +1,12 @@
 ---
-uid: System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract
+uid: System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.#ctor(System.String)
+uid: System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Annotations
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,14 +27,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract.Annotations
+uid: System.Workflow.Runtime.Tracking.ActivityDataTrackingExtract
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

@@ -1,32 +1,5 @@
 ---
-uid: System.ServiceModel.Description.MetadataSection
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Description.MetadataSection.ServiceDescriptionDialect
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Description.MetadataSection.#ctor(System.String,System.String,System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Description.MetadataSection.#ctor
+uid: System.ServiceModel.Description.MetadataSection.CreateFromServiceDescription(System.Web.Services.Description.ServiceDescription)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,7 +17,43 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.MetadataSection.Dialect
+uid: System.ServiceModel.Description.MetadataSection.#ctor(System.String,System.String,System.Object)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Description.MetadataSection.CreateFromSchema(System.Xml.Schema.XmlSchema)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Description.MetadataSection.ServiceDescriptionDialect
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Description.MetadataSection.MetadataExchangeDialect
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Description.MetadataSection.XmlSchemaDialect
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -71,7 +80,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.MetadataSection.CreateFromServiceDescription(System.Web.Services.Description.ServiceDescription)
+uid: System.ServiceModel.Description.MetadataSection.Identifier
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -89,25 +98,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.MetadataSection.XmlSchemaDialect
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Description.MetadataSection.CreateFromSchema(System.Xml.Schema.XmlSchema)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Description.MetadataSection.MetadataExchangeDialect
+uid: System.ServiceModel.Description.MetadataSection.Dialect
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -125,7 +116,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.MetadataSection.Identifier
+uid: System.ServiceModel.Description.MetadataSection
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

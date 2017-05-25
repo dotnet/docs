@@ -1,13 +1,5 @@
 ---
-uid: System.IdentityModel.Tokens.AudienceRestriction
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.AudienceRestriction.AudienceMode
+uid: System.IdentityModel.Tokens.AudienceRestriction.#ctor(System.IdentityModel.Selectors.AudienceUriMode)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -23,7 +15,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.AudienceRestriction.#ctor
+uid: System.IdentityModel.Tokens.AudienceRestriction.AudienceMode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -39,7 +31,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.AudienceRestriction.#ctor(System.IdentityModel.Selectors.AudienceUriMode)
+uid: System.IdentityModel.Tokens.AudienceRestriction
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

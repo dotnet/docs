@@ -1,5 +1,5 @@
 ---
-uid: System.IO.FileSystemWatcher
+uid: System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes,System.Int32)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.NotifyFilter
+uid: System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -17,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.Changed
+uid: System.IO.FileSystemWatcher.OnDeleted(System.IO.FileSystemEventArgs)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,7 +26,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.Error
+uid: System.IO.FileSystemWatcher.OnChanged(System.IO.FileSystemEventArgs)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemWatcher.OnCreated(System.IO.FileSystemEventArgs)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemWatcher.OnRenamed(System.IO.RenamedEventArgs)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -44,7 +62,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.Deleted
+uid: System.IO.FileSystemWatcher.OnError(System.IO.ErrorEventArgs)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemWatcher.Dispose(System.Boolean)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemWatcher.IncludeSubdirectories
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -71,7 +107,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.EndInit
+uid: System.IO.FileSystemWatcher.EnableRaisingEvents
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -80,7 +116,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.OnError(System.IO.ErrorEventArgs)
+uid: System.IO.FileSystemWatcher.InternalBufferSize
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -89,10 +125,21 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.Dispose
+uid: System.IO.FileSystemWatcher.WaitForChanged
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemWatcher.NotifyFilter
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
 ---
 
 ---
@@ -105,7 +152,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes,System.Int32)
+uid: System.IO.FileSystemWatcher.Changed
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -114,7 +161,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.OnDeleted(System.IO.FileSystemEventArgs)
+uid: System.IO.FileSystemWatcher.Deleted
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -123,7 +170,52 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.WaitForChanged
+uid: System.IO.FileSystemWatcher.EndInit
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemWatcher.Renamed
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemWatcher.Created
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemWatcher.Filter
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemWatcher.Error
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemWatcher.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -150,7 +242,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.WaitForChanged(System.IO.WatcherChangeTypes)
+uid: System.IO.FileSystemWatcher
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -159,109 +251,8 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.EnableRaisingEvents
+uid: System.IO.FileSystemWatcher.Dispose
 ms.technology: 
   - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.InternalBufferSize
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.OnRenamed(System.IO.RenamedEventArgs)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.OnChanged(System.IO.FileSystemEventArgs)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.Renamed
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.IncludeSubdirectories
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.Filter
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.Created
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemWatcher.OnCreated(System.IO.FileSystemEventArgs)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
+manager: "ghogen"
 ---

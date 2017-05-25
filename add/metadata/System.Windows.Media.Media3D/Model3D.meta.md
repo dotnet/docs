@@ -1,23 +1,5 @@
 ---
-uid: System.Windows.Media.Media3D.Model3D
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.Model3D.TransformProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.Model3D.ToString
+uid: System.Windows.Media.Media3D.Model3D.System#IFormattable#ToString(System.String,System.IFormatProvider)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -35,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Model3D.System#IFormattable#ToString(System.String,System.IFormatProvider)
+uid: System.Windows.Media.Media3D.Model3D.TransformProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -44,16 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Model3D.Bounds
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.Model3D.ToString
+uid: System.Windows.Media.Media3D.Model3D.CloneCurrentValue
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -71,6 +44,24 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Windows.Media.Media3D.Model3D.ToString
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.Model3D.Bounds
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Windows.Media.Media3D.Model3D.Clone
 ms.technology: 
   - "dotnet-wpf"
@@ -80,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Model3D.CloneCurrentValue
+uid: System.Windows.Media.Media3D.Model3D
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

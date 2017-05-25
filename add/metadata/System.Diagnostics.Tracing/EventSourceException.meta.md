@@ -1,5 +1,5 @@
 ---
-uid: System.Diagnostics.Tracing.EventSourceException
+uid: System.Diagnostics.Tracing.EventSourceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.Tracing.EventSourceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Diagnostics.Tracing.EventSourceException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -35,16 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.Tracing.EventSourceException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.Tracing.EventSourceException.#ctor(System.String,System.Exception)
+uid: System.Diagnostics.Tracing.EventSourceException
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

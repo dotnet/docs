@@ -1,5 +1,5 @@
 ---
-uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner
+uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner.GetDesignTimeHtml
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -23,15 +23,9 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner.GetDesignTimeHtml
+uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
 manager: "wpickett"
----
-
----
-uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
 ---

@@ -1,5 +1,5 @@
 ---
-uid: System.Drawing.Printing.Margins
+uid: System.Drawing.Printing.Margins.op_Inequality(System.Drawing.Printing.Margins,System.Drawing.Printing.Margins)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.Margins.#ctor
+uid: System.Drawing.Printing.Margins.op_Equality(System.Drawing.Printing.Margins,System.Drawing.Printing.Margins)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -26,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.Margins.Right
+uid: System.Drawing.Printing.Margins.Equals(System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -35,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.Margins.Clone
+uid: System.Drawing.Printing.Margins.GetHashCode
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -62,7 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.Margins.op_Equality(System.Drawing.Printing.Margins,System.Drawing.Printing.Margins)
+uid: System.Drawing.Printing.Margins.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -71,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.Margins.Top
+uid: System.Drawing.Printing.Margins.Right
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -80,25 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.Margins.op_Inequality(System.Drawing.Printing.Margins,System.Drawing.Printing.Margins)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Printing.Margins.GetHashCode
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Printing.Margins.Equals(System.Object)
+uid: System.Drawing.Printing.Margins.Clone
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -116,7 +98,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.Margins.#ctor
+uid: System.Drawing.Printing.Margins.Top
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.Printing.Margins
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

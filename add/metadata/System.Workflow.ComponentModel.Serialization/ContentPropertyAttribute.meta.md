@@ -1,5 +1,5 @@
 ---
-uid: System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute
+uid: System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -20,14 +20,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute.#ctor(System.String)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute.#ctor
+uid: System.Workflow.ComponentModel.Serialization.ContentPropertyAttribute
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

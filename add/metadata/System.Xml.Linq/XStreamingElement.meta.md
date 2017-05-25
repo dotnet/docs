@@ -1,5 +1,5 @@
 ---
-uid: System.Xml.Linq.XStreamingElement
+uid: System.Xml.Linq.XStreamingElement.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.Name
+uid: System.Xml.Linq.XStreamingElement.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,7 +26,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.Add(System.Object)
+uid: System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object[])
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XStreamingElement.ToString(System.Xml.Linq.SaveOptions)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Xml.Linq.XStreamingElement.WriteTo(System.Xml.XmlWriter)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -44,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.ToString
+uid: System.Xml.Linq.XStreamingElement.Save(System.Xml.XmlWriter)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -53,16 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.Add
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object[])
+uid: System.Xml.Linq.XStreamingElement.Save(System.IO.TextWriter)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -89,15 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.Save(System.IO.Stream,System.Xml.Linq.SaveOptions)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XStreamingElement.Save(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -107,25 +116,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.ToString(System.Xml.Linq.SaveOptions)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XStreamingElement.Save(System.Xml.XmlWriter)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XStreamingElement.Save
+uid: System.Xml.Linq.XStreamingElement.Add(System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -152,7 +143,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.#ctor(System.Xml.Linq.XName,System.Object)
+uid: System.Xml.Linq.XStreamingElement.Name
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -161,7 +152,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.Save(System.IO.TextWriter)
+uid: System.Xml.Linq.XStreamingElement.Save
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -170,7 +161,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)
+uid: System.Xml.Linq.XStreamingElement.Add
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -179,7 +170,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XStreamingElement.WriteTo(System.Xml.XmlWriter)
+uid: System.Xml.Linq.XStreamingElement
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

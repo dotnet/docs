@@ -1,14 +1,5 @@
 ---
-uid: System.Windows.StaticResourceExtension
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.StaticResourceExtension.#ctor
+uid: System.Windows.StaticResourceExtension.ProvideValue(System.IServiceProvider)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -35,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.StaticResourceExtension.ProvideValue(System.IServiceProvider)
+uid: System.Windows.StaticResourceExtension.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -44,9 +35,10 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.StaticResourceExtension.#ctor
+uid: System.Windows.StaticResourceExtension
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---

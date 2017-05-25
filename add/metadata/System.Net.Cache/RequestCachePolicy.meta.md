@@ -1,17 +1,11 @@
 ---
-uid: System.Net.Cache.RequestCachePolicy
+uid: System.Net.Cache.RequestCachePolicy.#ctor(System.Net.Cache.RequestCacheLevel)
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
 uid: System.Net.Cache.RequestCachePolicy.ToString
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Cache.RequestCachePolicy.#ctor(System.Net.Cache.RequestCacheLevel)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -29,7 +23,7 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Cache.RequestCachePolicy.#ctor
+uid: System.Net.Cache.RequestCachePolicy
 ms.author: "bobdel"
 manager: "markl"
 ---

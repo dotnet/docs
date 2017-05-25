@@ -1,19 +1,5 @@
 ---
-uid: System.Workflow.Activities.TypedOperationInfo
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.TypedOperationInfo.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.TypedOperationInfo.ToString
+uid: System.Workflow.Activities.TypedOperationInfo.#ctor(System.Type,System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -41,6 +27,13 @@ manager: "erikre"
 ---
 
 ---
+uid: System.Workflow.Activities.TypedOperationInfo.ToString
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.Workflow.Activities.TypedOperationInfo.#ctor
 author: "Erikre"
 ms.author: "erikre"
@@ -55,7 +48,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.TypedOperationInfo.#ctor(System.Type,System.String)
+uid: System.Workflow.Activities.TypedOperationInfo
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

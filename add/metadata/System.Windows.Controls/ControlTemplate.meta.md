@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Controls.ControlTemplate
+uid: System.Windows.Controls.ControlTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -17,16 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.ControlTemplate.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Controls.ControlTemplate.#ctor
+uid: System.Windows.Controls.ControlTemplate.TargetType
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.ControlTemplate.TargetType
+uid: System.Windows.Controls.ControlTemplate.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.ControlTemplate.ValidateTemplatedParent(System.Windows.FrameworkElement)
+uid: System.Windows.Controls.ControlTemplate
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

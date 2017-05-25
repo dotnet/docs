@@ -1,13 +1,23 @@
 ---
-uid: System.Windows.Threading.DispatcherOperation
+uid: System.Windows.Threading.DispatcherOperation.InvokeDelegateCore
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Threading.DispatcherOperation.Aborted
+uid: System.Windows.Threading.DispatcherOperation.GetAwaiter
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Threading.DispatcherOperation.Dispatcher
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -34,34 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Threading.DispatcherOperation.Abort
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Threading.DispatcherOperation.GetAwaiter
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Threading.DispatcherOperation.InvokeDelegateCore
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Threading.DispatcherOperation.Wait
+uid: System.Windows.Threading.DispatcherOperation.Aborted
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -71,6 +54,15 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Threading.DispatcherOperation.Result
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Threading.DispatcherOperation.Abort
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -96,14 +88,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Threading.DispatcherOperation.Task
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Threading.DispatcherOperation.Status
 ms.technology: 
   - "dotnet-wpf"
@@ -112,10 +96,17 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Threading.DispatcherOperation.Dispatcher
+uid: System.Windows.Threading.DispatcherOperation.Task
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Threading.DispatcherOperation
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

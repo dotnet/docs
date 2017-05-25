@@ -1,12 +1,5 @@
 ---
-uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.#ctor(System.String)
+uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.System#Workflow#ComponentModel#IActivityEventListener{System#Workflow#ComponentModel#ActivityExecutionStatusChangedEventArgs}#OnEvent(System.Object,System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -20,14 +13,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.System#Workflow#ComponentModel#IActivityEventListener{System#Workflow#ComponentModel#ActivityExecutionStatusChangedEventArgs}#OnEvent(System.Object,System.Workflow.ComponentModel.ActivityExecutionStatusChangedEventArgs)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.#ctor
+uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -42,6 +28,13 @@ manager: "erikre"
 
 ---
 uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.ComponentModel.CompensatableTransactionScopeActivity
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

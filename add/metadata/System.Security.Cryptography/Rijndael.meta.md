@@ -1,5 +1,5 @@
 ---
-uid: System.Security.Cryptography.Rijndael
+uid: System.Security.Cryptography.Rijndael.Create(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Rijndael.Create(System.String)
+uid: System.Security.Cryptography.Rijndael.Create
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,16 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Rijndael.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Rijndael.Create
+uid: System.Security.Cryptography.Rijndael
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

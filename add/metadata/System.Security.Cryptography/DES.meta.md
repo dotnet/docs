@@ -1,13 +1,4 @@
 ---
-uid: System.Security.Cryptography.DES
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.DES.IsSemiWeakKey(System.Byte[])
 ms.technology: 
   - "dotnet-standard"
@@ -17,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.DES.Create
+uid: System.Security.Cryptography.DES.IsWeakKey(System.Byte[])
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -62,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.DES.IsWeakKey(System.Byte[])
+uid: System.Security.Cryptography.DES
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

@@ -1,9 +1,28 @@
 ---
-uid: System.Windows.Media.GradientBrush
+uid: System.Windows.Media.GradientBrush.#ctor(System.Windows.Media.GradientStopCollection)
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GradientBrush.ColorInterpolationModeProperty
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GradientBrush.ColorInterpolationMode
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -16,38 +35,12 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GradientBrush.Clone
+uid: System.Windows.Media.GradientBrush.SpreadMethodProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Media.GradientBrush.GradientStops
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.GradientBrush.#ctor(System.Windows.Media.GradientStopCollection)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.GradientBrush.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
@@ -69,7 +62,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GradientBrush.ColorInterpolationModeProperty
+uid: System.Windows.Media.GradientBrush.GradientStops
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GradientBrush.MappingMode
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GradientBrush.Clone
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -87,24 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GradientBrush.ColorInterpolationMode
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.GradientBrush.SpreadMethodProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.GradientBrush.SpreadMethod
 ms.technology: 
   - "dotnet-wpf"
@@ -113,10 +106,9 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.GradientBrush.MappingMode
+uid: System.Windows.Media.GradientBrush
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

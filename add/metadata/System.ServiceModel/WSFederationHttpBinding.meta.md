@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.WSFederationHttpBinding
+uid: System.ServiceModel.WSFederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode,System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -8,7 +8,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WSFederationHttpBinding.GetTransport
+uid: System.ServiceModel.WSFederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WSFederationHttpBinding.ShouldSerializeSecurity
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -27,15 +36,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.WSFederationHttpBinding.CreateMessageSecurity
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.WSFederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode,System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -71,7 +71,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WSFederationHttpBinding.#ctor
+uid: System.ServiceModel.WSFederationHttpBinding.GetTransport
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -89,15 +89,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WSFederationHttpBinding.ShouldSerializeSecurity
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.WSFederationHttpBinding.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -107,7 +98,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WSFederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode)
+uid: System.ServiceModel.WSFederationHttpBinding
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

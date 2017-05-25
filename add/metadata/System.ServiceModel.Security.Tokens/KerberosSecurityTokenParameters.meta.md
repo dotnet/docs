@@ -1,23 +1,5 @@
 ---
-uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters)
+uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.CreateKeyIdentifierClause(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -35,7 +17,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.HasAsymmetricKey
+uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.SupportsClientWindowsIdentity
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -62,16 +53,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.CreateKeyIdentifierClause(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.SupportsClientWindowsIdentity
+uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.HasAsymmetricKey
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -90,6 +72,15 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

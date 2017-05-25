@@ -1,19 +1,26 @@
 ---
-uid: System.Workflow.Activities.OperationParameterInfo
+uid: System.Workflow.Activities.OperationParameterInfo.ParameterTypeProperty
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.OperationParameterInfo.IsIn
+uid: System.Workflow.Activities.OperationParameterInfo.Equals(System.Object)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.OperationParameterInfo.ParameterType
+uid: System.Workflow.Activities.OperationParameterInfo.#ctor(System.String)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.OperationParameterInfo.AttributesProperty
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,14 +34,21 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.OperationParameterInfo.ParameterTypeProperty
+uid: System.Workflow.Activities.OperationParameterInfo.ParameterType
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.OperationParameterInfo.IsLcid
+uid: System.Workflow.Activities.OperationParameterInfo.NameProperty
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.OperationParameterInfo.GetHashCode
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -48,6 +62,13 @@ manager: "erikre"
 ---
 
 ---
+uid: System.Workflow.Activities.OperationParameterInfo.Attributes
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.Workflow.Activities.OperationParameterInfo.Position
 author: "Erikre"
 ms.author: "erikre"
@@ -55,7 +76,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.OperationParameterInfo.GetHashCode
+uid: System.Workflow.Activities.OperationParameterInfo.IsRetval
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.OperationParameterInfo.IsLcid
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -76,21 +104,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.OperationParameterInfo.NameProperty
+uid: System.Workflow.Activities.OperationParameterInfo.Clone
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.OperationParameterInfo.IsRetval
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.OperationParameterInfo.Attributes
+uid: System.Workflow.Activities.OperationParameterInfo.IsIn
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -104,35 +125,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.OperationParameterInfo.Clone
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.OperationParameterInfo.#ctor(System.String)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.OperationParameterInfo.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.OperationParameterInfo.Equals(System.Object)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.OperationParameterInfo.AttributesProperty
+uid: System.Workflow.Activities.OperationParameterInfo
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

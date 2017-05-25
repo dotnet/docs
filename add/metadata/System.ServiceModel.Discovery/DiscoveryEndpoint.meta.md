@@ -1,5 +1,14 @@
 ---
-uid: System.ServiceModel.Discovery.DiscoveryEndpoint
+uid: System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion,System.ServiceModel.Discovery.ServiceDiscoveryMode,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion,System.ServiceModel.Discovery.ServiceDiscoveryMode)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -26,25 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.DiscoveryEndpoint.MaxResponseDelay
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion,System.ServiceModel.Discovery.ServiceDiscoveryMode,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -62,7 +53,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion,System.ServiceModel.Discovery.ServiceDiscoveryMode)
+uid: System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -71,7 +62,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor
+uid: System.ServiceModel.Discovery.DiscoveryEndpoint
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

@@ -1,12 +1,5 @@
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.#ctor
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.#ctor(System.DateTime,System.Int32)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -20,7 +13,28 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.Sign
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.Parse(System.String)
+ms.technology: 
+  - "dotnet-standard"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.GetXsdType
+ms.technology: 
+  - "dotnet-standard"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.ToString
+ms.technology: 
+  - "dotnet-standard"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.XsdType
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -41,35 +55,14 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.XsdType
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.Sign
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.Parse(System.String)
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.#ctor(System.DateTime,System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.GetXsdType
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate.ToString
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapDate
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"

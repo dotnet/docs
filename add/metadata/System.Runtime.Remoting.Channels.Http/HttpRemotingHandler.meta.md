@@ -1,19 +1,5 @@
 ---
-uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor
+uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.ProcessRequest(System.Web.HttpContext)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -34,7 +20,14 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.ProcessRequest(System.Web.HttpContext)
+uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler.#ctor
+ms.technology: 
+  - "dotnet-standard"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Channels.Http.HttpRemotingHandler
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"

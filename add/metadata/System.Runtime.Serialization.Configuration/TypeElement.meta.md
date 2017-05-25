@@ -1,23 +1,5 @@
 ---
-uid: System.Runtime.Serialization.Configuration.TypeElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Runtime.Serialization.Configuration.TypeElement.Type
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Runtime.Serialization.Configuration.TypeElement.#ctor
+uid: System.Runtime.Serialization.Configuration.TypeElement.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -53,7 +35,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.Serialization.Configuration.TypeElement.#ctor(System.String)
+uid: System.Runtime.Serialization.Configuration.TypeElement.Type
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Runtime.Serialization.Configuration.TypeElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

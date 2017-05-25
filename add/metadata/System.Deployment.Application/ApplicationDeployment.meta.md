@@ -1,5 +1,5 @@
 ---
-uid: System.Deployment.Application.ApplicationDeployment
+uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync(System.String,System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -8,16 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.ApplicationDeployment.IsFileGroupDownloaded(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync(System.String)
+uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsyncCancel(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -35,7 +26,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed
+uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync(System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.IsFileGroupDownloaded(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -53,79 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.ApplicationDeployment.UpdatedApplicationFullName
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.UpdateAsync
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroupCompleted
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.IsFirstRun
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsyncCancel
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.DataDirectory
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync
+uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -143,7 +71,124 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdateProgressChanged
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.UpdatedApplicationFullName
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroupCompleted
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsyncCancel
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.UpdateProgressChanged
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.TimeOfLastUpdateCheck
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdateAsync
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.IsNetworkDeployed
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.UpdateAsyncCancel
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.CurrentDeployment
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.UpdateCompleted
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -170,70 +215,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdateCompleted
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroup(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Deployment.Application.ApplicationDeployment.CurrentVersion
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.TimeOfLastUpdateCheck
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.UpdateCompleted
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync(System.String,System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsync
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.UpdateAsyncCancel
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -251,16 +233,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.CurrentDeployment
+uid: System.Deployment.Application.ApplicationDeployment.DataDirectory
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -278,7 +251,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdate
+uid: System.Deployment.Application.ApplicationDeployment.UpdateAsync
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Deployment.Application.ApplicationDeployment.IsFirstRun
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -296,7 +278,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.ApplicationDeployment.DownloadFileGroupAsyncCancel(System.String)
+uid: System.Deployment.Application.ApplicationDeployment
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

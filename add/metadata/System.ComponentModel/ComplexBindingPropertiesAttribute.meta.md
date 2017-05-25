@@ -1,5 +1,5 @@
 ---
-uid: System.ComponentModel.ComplexBindingPropertiesAttribute
+uid: System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor
+uid: System.ComponentModel.ComplexBindingPropertiesAttribute.Equals(System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -17,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.ComplexBindingPropertiesAttribute.Default
+uid: System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -53,25 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor(System.String,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.ComplexBindingPropertiesAttribute.Equals(System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor(System.String)
+uid: System.ComponentModel.ComplexBindingPropertiesAttribute.Default
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -81,6 +63,15 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.ComplexBindingPropertiesAttribute.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.ComplexBindingPropertiesAttribute
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

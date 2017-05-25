@@ -1,19 +1,10 @@
 ---
-uid: Microsoft.JScript.DateConstructor
-ms.author: "mikejo"
----
-
----
-uid: Microsoft.JScript.DateConstructor.Invoke
----
-
----
 uid: Microsoft.JScript.DateConstructor.UTC(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)
 ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.DateConstructor.Invoke
+uid: Microsoft.JScript.DateConstructor.CreateInstance(System.Object[])
 ms.author: "mikejo"
 ---
 
@@ -23,6 +14,11 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.DateConstructor.CreateInstance(System.Object[])
+uid: Microsoft.JScript.DateConstructor.Invoke
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.DateConstructor
 ms.author: "mikejo"
 ---

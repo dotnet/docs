@@ -1,17 +1,5 @@
 ---
-uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs.TargetNames
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs.#ctor
+uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.DateTime)
 ms.author: "susanno"
 manager: "douge"
 ---
@@ -23,7 +11,7 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs.#ctor
+uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs.TargetNames
 ms.author: "susanno"
 manager: "douge"
 ---
@@ -35,7 +23,13 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.DateTime)
+uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs.#ctor
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs
 ms.author: "susanno"
 manager: "douge"
 ---

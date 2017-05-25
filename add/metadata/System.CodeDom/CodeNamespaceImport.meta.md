@@ -1,14 +1,5 @@
 ---
-uid: System.CodeDom.CodeNamespaceImport
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeNamespaceImport.#ctor
+uid: System.CodeDom.CodeNamespaceImport.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeNamespaceImport.#ctor(System.String)
+uid: System.CodeDom.CodeNamespaceImport
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -1,5 +1,5 @@
 ---
-uid: System.CodeDom.CodeTypeDeclaration
+uid: System.CodeDom.CodeTypeDeclaration.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -8,16 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeDeclaration.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeTypeDeclaration.#ctor
+uid: System.CodeDom.CodeTypeDeclaration.PopulateBaseTypes
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,24 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeDeclaration.Members
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeTypeDeclaration.PopulateBaseTypes
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTypeDeclaration.TypeParameters
 ms.technology: 
   - "dotnet-standard"
@@ -71,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeDeclaration.#ctor(System.String)
+uid: System.CodeDom.CodeTypeDeclaration.IsInterface
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -81,15 +54,6 @@ manager: "wpickett"
 
 ---
 uid: System.CodeDom.CodeTypeDeclaration.IsPartial
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeTypeDeclaration.IsEnum
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -116,6 +80,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.CodeDom.CodeTypeDeclaration.Members
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
 uid: System.CodeDom.CodeTypeDeclaration.IsClass
 ms.technology: 
   - "dotnet-standard"
@@ -125,7 +98,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeDeclaration.IsInterface
+uid: System.CodeDom.CodeTypeDeclaration.IsEnum
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeTypeDeclaration.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeTypeDeclaration
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -1,10 +1,5 @@
 ---
-uid: Microsoft.JScript.ReturnOutOfFinally
-ms.author: "mikejo"
----
-
----
-uid: Microsoft.JScript.ReturnOutOfFinally.#ctor
+uid: Microsoft.JScript.ReturnOutOfFinally.#ctor(System.String,System.Exception)
 ms.author: "mikejo"
 ---
 
@@ -14,11 +9,11 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.ReturnOutOfFinally.#ctor(System.String,System.Exception)
+uid: Microsoft.JScript.ReturnOutOfFinally.#ctor
 ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.ReturnOutOfFinally.#ctor
+uid: Microsoft.JScript.ReturnOutOfFinally
 ms.author: "mikejo"
 ---

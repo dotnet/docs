@@ -1,23 +1,5 @@
 ---
-uid: System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException.#ctor
+uid: System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +26,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AddIn.Hosting.AddInSegmentDirectoryNotFoundException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

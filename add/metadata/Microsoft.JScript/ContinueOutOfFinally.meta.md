@@ -1,10 +1,15 @@
 ---
-uid: Microsoft.JScript.ContinueOutOfFinally
+uid: Microsoft.JScript.ContinueOutOfFinally.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.ContinueOutOfFinally.#ctor
+uid: Microsoft.JScript.ContinueOutOfFinally.#ctor(System.String,System.Exception)
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.ContinueOutOfFinally.#ctor(System.String)
 ms.author: "mikejo"
 ---
 
@@ -19,21 +24,11 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.ContinueOutOfFinally.#ctor(System.String)
-ms.author: "mikejo"
----
-
----
-uid: Microsoft.JScript.ContinueOutOfFinally.#ctor(System.String,System.Exception)
-ms.author: "mikejo"
----
-
----
-uid: Microsoft.JScript.ContinueOutOfFinally.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.author: "mikejo"
----
-
----
 uid: Microsoft.JScript.ContinueOutOfFinally.#ctor
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.ContinueOutOfFinally
 ms.author: "mikejo"
 ---

@@ -1,14 +1,5 @@
 ---
-uid: System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor.#ctor
+uid: System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor.#ctor(System.Windows.DataTemplate,System.Windows.DataTemplate)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -35,7 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor.#ctor(System.Windows.DataTemplate,System.Windows.DataTemplate)
+uid: System.Activities.Presentation.PropertyEditing.ExtendedPropertyValueEditor
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

@@ -1,13 +1,4 @@
 ---
-uid: System.ComponentModel.CurrentChangingEventArgs
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.CurrentChangingEventArgs.#ctor(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
@@ -17,16 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.CurrentChangingEventArgs.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.CurrentChangingEventArgs.#ctor
+uid: System.ComponentModel.CurrentChangingEventArgs.IsCancelable
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -44,7 +26,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.CurrentChangingEventArgs.IsCancelable
+uid: System.ComponentModel.CurrentChangingEventArgs.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.CurrentChangingEventArgs
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

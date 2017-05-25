@@ -1,11 +1,4 @@
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.#ctor(System.String)
 author: "stevehoag"
 ms.author: "shoag"
@@ -20,21 +13,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.ComClasses
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlComClasses
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlProxyStubs
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -48,7 +34,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.TypeLibs
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.ComClasses
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -69,7 +55,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.XmlProxyStubs
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.TypeLibs
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -77,6 +63,13 @@ manager: "wpickett"
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.#ctor
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

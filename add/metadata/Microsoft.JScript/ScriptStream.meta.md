@@ -1,20 +1,20 @@
 ---
-uid: Microsoft.JScript.ScriptStream
-ms.author: "mikejo"
----
-
----
 uid: Microsoft.JScript.ScriptStream.PrintStackTrace(System.Exception)
 ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.ScriptStream.PrintStackTrace
+uid: Microsoft.JScript.ScriptStream.WriteLine(System.String)
 ms.author: "mikejo"
 ---
 
 ---
 uid: Microsoft.JScript.ScriptStream.Write(System.String)
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.ScriptStream.PrintStackTrace
 ms.author: "mikejo"
 ---
 
@@ -34,11 +34,6 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.ScriptStream.WriteLine(System.String)
-ms.author: "mikejo"
----
-
----
-uid: Microsoft.JScript.ScriptStream.PrintStackTrace
+uid: Microsoft.JScript.ScriptStream
 ms.author: "mikejo"
 ---

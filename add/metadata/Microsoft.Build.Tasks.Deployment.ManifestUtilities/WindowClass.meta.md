@@ -1,5 +1,5 @@
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.#ctor(System.String,System.Boolean)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -20,7 +20,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.#ctor(System.String,System.Boolean)
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.XmlName
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.#ctor
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -34,21 +41,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass.XmlName
+uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.WindowClass
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

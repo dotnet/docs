@@ -1,14 +1,5 @@
 ---
-uid: System.Configuration.Install.InstallEventArgs
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Install.InstallEventArgs.#ctor
+uid: System.Configuration.Install.InstallEventArgs.#ctor(System.Collections.IDictionary)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -35,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.Install.InstallEventArgs.#ctor(System.Collections.IDictionary)
+uid: System.Configuration.Install.InstallEventArgs
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

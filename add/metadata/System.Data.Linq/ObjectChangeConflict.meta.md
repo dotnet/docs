@@ -1,5 +1,23 @@
 ---
-uid: System.Data.Linq.ObjectChangeConflict
+uid: System.Data.Linq.ObjectChangeConflict.Resolve(System.Data.Linq.RefreshMode,System.Boolean)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Linq.ObjectChangeConflict.Resolve(System.Data.Linq.RefreshMode)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Linq.ObjectChangeConflict.MemberConflicts
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -26,24 +44,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Linq.ObjectChangeConflict.Resolve(System.Data.Linq.RefreshMode,System.Boolean)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Linq.ObjectChangeConflict.Resolve
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Linq.ObjectChangeConflict.Resolve
 ms.technology: 
   - "dotnet-ado"
@@ -62,16 +62,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Linq.ObjectChangeConflict.MemberConflicts
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Linq.ObjectChangeConflict.Resolve(System.Data.Linq.RefreshMode)
+uid: System.Data.Linq.ObjectChangeConflict
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

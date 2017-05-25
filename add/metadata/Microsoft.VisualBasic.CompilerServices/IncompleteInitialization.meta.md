@@ -1,5 +1,5 @@
 ---
-uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization
+uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor(System.String,System.Exception)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -20,14 +20,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor(System.String,System.Exception)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization.#ctor
+uid: Microsoft.VisualBasic.CompilerServices.IncompleteInitialization
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

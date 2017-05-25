@@ -1,5 +1,5 @@
 ---
-uid: System.Configuration.SettingElement
+uid: System.Configuration.SettingElement.#ctor(System.String,System.Configuration.SettingsSerializeAs)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -7,7 +7,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.SettingElement.#ctor
+uid: System.Configuration.SettingElement.Equals(System.Object)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -31,7 +31,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.SettingElement.#ctor(System.String,System.Configuration.SettingsSerializeAs)
+uid: System.Configuration.SettingElement.#ctor
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -55,15 +55,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.SettingElement.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.SettingElement.Equals(System.Object)
+uid: System.Configuration.SettingElement
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

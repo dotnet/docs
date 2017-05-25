@@ -1,5 +1,5 @@
 ---
-uid: System.Collections.Generic.Queue`1
+uid: System.Collections.Generic.Queue`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -17,14 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.System#Collections#ICollection#SyncRoot
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Generic.Queue`1.ToArray
+uid: System.Collections.Generic.Queue`1.#ctor(System.Collections.Generic.IEnumerable{`0})
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -33,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.#ctor
+uid: System.Collections.Generic.Queue`1.System#Collections#IEnumerable#GetEnumerator
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -42,14 +35,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.System#Collections#ICollection#IsSynchronized
+uid: System.Collections.Generic.Queue`1.CopyTo(`0[],System.Int32)
+ms.technology: 
+  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.Dequeue
+uid: System.Collections.Generic.Queue`1.#ctor(System.Int32)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Collections.Generic.Queue`1.GetEnumerator
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Collections.Generic.Queue`1.Contains(`0)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -76,7 +89,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.CopyTo(`0[],System.Int32)
+uid: System.Collections.Generic.Queue`1.ToArray
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -85,25 +98,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.GetEnumerator
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Generic.Queue`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Generic.Queue`1.Count
+uid: System.Collections.Generic.Queue`1.Dequeue
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -121,25 +116,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.Peek
-ms.technology: 
-  - "dotnet-standard"
+uid: System.Collections.Generic.Queue`1.System#Collections#ICollection#IsSynchronized
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.System#Collections#IEnumerable#GetEnumerator
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Generic.Queue`1.#ctor(System.Collections.Generic.IEnumerable{`0})
+uid: System.Collections.Generic.Queue`1.Count
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -157,7 +141,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.Contains(`0)
+uid: System.Collections.Generic.Queue`1.Peek
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -166,9 +150,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.#ctor(System.Int32)
+uid: System.Collections.Generic.Queue`1
 ms.technology: 
   - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Collections.Generic.Queue`1.System#Collections#ICollection#SyncRoot
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

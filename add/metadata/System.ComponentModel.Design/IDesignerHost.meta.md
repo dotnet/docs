@@ -1,5 +1,5 @@
 ---
-uid: System.ComponentModel.Design.IDesignerHost
+uid: System.ComponentModel.Design.IDesignerHost.DestroyComponent(System.ComponentModel.IComponent)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.Activated
+uid: System.ComponentModel.Design.IDesignerHost.GetDesigner(System.ComponentModel.IComponent)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -17,25 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.TransactionClosed
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.InTransaction
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.LoadComplete
+uid: System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type,System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -53,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.Deactivated
+uid: System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -80,33 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.Loading
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.IDesignerHost.CreateTransaction
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.IDesignerHost.RootComponentClassName
 ms.technology: 
   - "dotnet-standard"
@@ -116,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.Activate
+uid: System.ComponentModel.Design.IDesignerHost.TransactionClosing
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -125,7 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.Container
+uid: System.ComponentModel.Design.IDesignerHost.TransactionOpening
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -134,7 +89,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.GetDesigner(System.ComponentModel.IComponent)
+uid: System.ComponentModel.Design.IDesignerHost.TransactionClosed
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -143,7 +98,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.DestroyComponent(System.ComponentModel.IComponent)
+uid: System.ComponentModel.Design.IDesignerHost.CreateTransaction
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -170,6 +125,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.ComponentModel.Design.IDesignerHost.InTransaction
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.ComponentModel.Design.IDesignerHost.RootComponent
 ms.technology: 
   - "dotnet-standard"
@@ -179,7 +143,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.TransactionClosing
+uid: System.ComponentModel.Design.IDesignerHost.LoadComplete
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -188,7 +152,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.CreateComponent(System.Type)
+uid: System.ComponentModel.Design.IDesignerHost.Deactivated
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -197,7 +161,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.TransactionOpening
+uid: System.ComponentModel.Design.IDesignerHost.Activated
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -206,7 +170,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IDesignerHost.CreateTransaction
+uid: System.ComponentModel.Design.IDesignerHost.Container
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.Activate
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost.Loading
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.IDesignerHost
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

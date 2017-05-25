@@ -1,43 +1,4 @@
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Hosting.CompositionOptions,System.ComponentModel.Composition.Hosting.ExportProvider[])
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.ReleaseExport
-ms.technology: 
-  - "dotnet-standard"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.ReleaseExports
-ms.technology: 
-  - "dotnet-standard"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Providers
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.ComponentModel.Composition.Hosting.CompositionOptions,System.ComponentModel.Composition.Hosting.ExportProvider[])
 ms.technology: 
   - "dotnet-standard"
@@ -47,16 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.ReleaseExport``1(System.Lazy{``0})
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.Boolean,System.ComponentModel.Composition.Hosting.ExportProvider[])
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -74,7 +26,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Compose(System.ComponentModel.Composition.Hosting.CompositionBatch)
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.ComponentModel.Composition.Hosting.ExportProvider[])
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Hosting.CompositionOptions,System.ComponentModel.Composition.Hosting.ExportProvider[])
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -92,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Dispose
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.ReleaseExports``2(System.Collections.Generic.IEnumerable{System.Lazy{``0,``1}})
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -101,7 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.SatisfyImportsOnce(System.ComponentModel.Composition.Primitives.ComposablePart)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -110,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.ComponentModel.Composition.Hosting.ExportProvider[])
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.ReleaseExports``1(System.Collections.Generic.IEnumerable{System.Lazy{``0}})
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -119,7 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Catalog
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Compose(System.ComponentModel.Composition.Hosting.CompositionBatch)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -146,16 +107,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.ReleaseExports``2(System.Collections.Generic.IEnumerable{System.Lazy{``0,``1}})
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.ReleaseExports``1(System.Collections.Generic.IEnumerable{System.Lazy{``0}})
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.ReleaseExport``1(System.Lazy{``0})
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -173,6 +125,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Providers
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
 uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Dispose
 ms.technology: 
   - "dotnet-standard"
@@ -182,7 +143,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.SatisfyImportsOnce(System.ComponentModel.Composition.Primitives.ComposablePart)
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Catalog
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -191,10 +152,31 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.Boolean,System.ComponentModel.Composition.Hosting.ExportProvider[])
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.ReleaseExports
+ms.technology: 
+  - "dotnet-standard"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.CompositionContainer.ReleaseExport
+ms.technology: 
+  - "dotnet-standard"
 ---

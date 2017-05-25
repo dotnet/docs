@@ -1,5 +1,5 @@
 ---
-uid: System.Data.Entity.Design.PropertyGeneratedEventArgs
+uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.#ctor(System.Data.Metadata.Edm.MetadataItem,System.String,System.CodeDom.CodeTypeReference)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -17,16 +17,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.BackingFieldName
+uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalSetStatements
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -44,16 +35,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.#ctor(System.Data.Metadata.Edm.MetadataItem,System.String,System.CodeDom.CodeTypeReference)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.ReturnType
+uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.BackingFieldName
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -71,6 +53,15 @@ manager: "jhubbard"
 ---
 
 ---
+uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.ReturnType
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
 uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.#ctor
 ms.technology: 
   - "dotnet-ado"
@@ -80,7 +71,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalSetStatements
+uid: System.Data.Entity.Design.PropertyGeneratedEventArgs
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

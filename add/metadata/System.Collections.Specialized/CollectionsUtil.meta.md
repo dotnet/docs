@@ -1,5 +1,14 @@
 ---
-uid: System.Collections.Specialized.CollectionsUtil
+uid: System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable(System.Collections.IDictionary)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable(System.Int32)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable(System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.CollectionsUtil.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -44,16 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable(System.Collections.IDictionary)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable
+uid: System.Collections.Specialized.CollectionsUtil
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

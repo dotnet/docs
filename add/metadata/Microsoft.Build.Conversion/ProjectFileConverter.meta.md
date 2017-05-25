@@ -1,5 +1,5 @@
 ---
-uid: Microsoft.Build.Conversion.ProjectFileConverter
+uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory(Microsoft.Build.BuildEngine.Engine,Microsoft.Build.BuildEngine.ProjectLoadSettings)
 ms.author: "susanno"
 manager: "douge"
 ---
@@ -11,13 +11,7 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Conversion.ProjectFileConverter.SolutionFile
+uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory(Microsoft.Build.BuildEngine.Engine)
 ms.author: "susanno"
 manager: "douge"
 ---
@@ -35,30 +29,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory(Microsoft.Build.BuildEngine.Engine,Microsoft.Build.BuildEngine.ProjectLoadSettings)
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Conversion.ProjectFileConverter.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Conversion.ProjectFileConverter.Convert
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Conversion.ProjectFileConverter.Convert(System.String)
 ms.author: "susanno"
 manager: "douge"
@@ -71,7 +41,7 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Conversion.ProjectFileConverter.Convert
+uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory
 ms.author: "susanno"
 manager: "douge"
 ---
@@ -83,7 +53,13 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory(Microsoft.Build.BuildEngine.Engine)
+uid: Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Conversion.ProjectFileConverter.SolutionFile
 ms.author: "susanno"
 manager: "douge"
 ---
@@ -95,7 +71,19 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Conversion.ProjectFileConverter.OldProjectFile
+uid: Microsoft.Build.Conversion.ProjectFileConverter.Convert
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Conversion.ProjectFileConverter.#ctor
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Conversion.ProjectFileConverter
 ms.author: "susanno"
 manager: "douge"
 ---

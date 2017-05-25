@@ -1,5 +1,5 @@
 ---
-uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder
+uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.CreateMap(System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate}@)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -8,7 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.DisallowUpdateInside
+uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.OriginalWorkflowDefinition
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -35,16 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.UpdatedEnvironment
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.ForImplementation
+uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.DisallowUpdateInside
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -62,7 +53,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.CreateMap(System.Collections.Generic.IList{System.Activities.DynamicUpdate.ActivityBlockingUpdate}@)
+uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.UpdatedEnvironment
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -71,16 +62,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.OriginalWorkflowDefinition
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.CreateMap
+uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.ForImplementation
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -108,6 +90,15 @@ manager: "erikre"
 
 ---
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

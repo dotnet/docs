@@ -1,5 +1,5 @@
 ---
-uid: System.CodeDom.CodeTryCatchFinallyStatement
+uid: System.CodeDom.CodeTryCatchFinallyStatement.#ctor(System.CodeDom.CodeStatement[],System.CodeDom.CodeCatchClause[],System.CodeDom.CodeStatement[])
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -8,16 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTryCatchFinallyStatement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeTryCatchFinallyStatement.TryStatements
+uid: System.CodeDom.CodeTryCatchFinallyStatement.#ctor(System.CodeDom.CodeStatement[],System.CodeDom.CodeCatchClause[])
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -35,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTryCatchFinallyStatement.CatchClauses
+uid: System.CodeDom.CodeTryCatchFinallyStatement.TryStatements
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTryCatchFinallyStatement.#ctor(System.CodeDom.CodeStatement[],System.CodeDom.CodeCatchClause[],System.CodeDom.CodeStatement[])
+uid: System.CodeDom.CodeTryCatchFinallyStatement.CatchClauses
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -62,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTryCatchFinallyStatement.#ctor(System.CodeDom.CodeStatement[],System.CodeDom.CodeCatchClause[])
+uid: System.CodeDom.CodeTryCatchFinallyStatement
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

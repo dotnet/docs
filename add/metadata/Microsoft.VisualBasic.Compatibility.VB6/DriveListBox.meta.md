@@ -1,5 +1,26 @@
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnSelectedIndexChanged(System.EventArgs)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.WndProc(System.Windows.Forms.Message@)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnBackColorChanged(System.EventArgs)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -34,56 +55,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Sorted
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.WndProc(System.Windows.Forms.Message@)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnSelectedIndexChanged(System.EventArgs)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Items
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DisplayMember
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Items
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Text
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -97,14 +69,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DrawMode
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.MaxLength
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.ValueMember
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -118,6 +83,34 @@ manager: "wpickett"
 ---
 
 ---
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DataSource
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.MaxLength
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DrawMode
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Dispose
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Refresh
 author: "stevehoag"
 ms.author: "shoag"
@@ -125,7 +118,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Sorted
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Items
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -139,28 +139,21 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.ValueMember
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.OnBackColorChanged(System.EventArgs)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.DataSource
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Drive
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Text
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

@@ -1,14 +1,5 @@
 ---
-uid: System.Collections.CaseInsensitiveComparer
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.CaseInsensitiveComparer.Default
+uid: System.Collections.CaseInsensitiveComparer.#ctor(System.Globalization.CultureInfo)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.CaseInsensitiveComparer.#ctor(System.Globalization.CultureInfo)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.CaseInsensitiveComparer.DefaultInvariant
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.CaseInsensitiveComparer.#ctor
+uid: System.Collections.CaseInsensitiveComparer.Default
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -54,6 +36,15 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.CaseInsensitiveComparer.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Collections.CaseInsensitiveComparer
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

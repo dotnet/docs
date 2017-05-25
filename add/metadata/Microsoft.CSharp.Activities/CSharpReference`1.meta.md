@@ -1,19 +1,19 @@
 ---
-uid: Microsoft.CSharp.Activities.CSharpReference`1
+uid: Microsoft.CSharp.Activities.CSharpReference`1.CacheMetadata(System.Activities.CodeActivityMetadata)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.CSharp.Activities.CSharpReference`1.ExpressionText
+uid: Microsoft.CSharp.Activities.CSharpReference`1.Execute(System.Activities.CodeActivityContext)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.CSharp.Activities.CSharpReference`1.#ctor
+uid: Microsoft.CSharp.Activities.CSharpReference`1.#ctor(System.String)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -27,7 +27,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.CSharp.Activities.CSharpReference`1.#ctor(System.String)
+uid: Microsoft.CSharp.Activities.CSharpReference`1.GetExpressionTree
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.CSharp.Activities.CSharpReference`1.ExpressionText
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -55,21 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.CSharp.Activities.CSharpReference`1.Execute(System.Activities.CodeActivityContext)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.CSharp.Activities.CSharpReference`1.GetExpressionTree
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.CSharp.Activities.CSharpReference`1.CacheMetadata(System.Activities.CodeActivityMetadata)
+uid: Microsoft.CSharp.Activities.CSharpReference`1
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

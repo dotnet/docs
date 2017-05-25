@@ -1,23 +1,50 @@
 ---
-uid: System.Activities.Presentation.Model.ModelEditingScope
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Presentation.Model.ModelEditingScope.Revert
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.Model.ModelEditingScope.OnException(System.Exception)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.Model.ModelEditingScope.OnRevert(System.Boolean)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.Model.ModelEditingScope.Dispose(System.Boolean)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.Model.ModelEditingScope.CanComplete
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.Model.ModelEditingScope.Description
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.Model.ModelEditingScope.OnComplete
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,34 +71,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.Model.ModelEditingScope.CanComplete
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Presentation.Model.ModelEditingScope.OnComplete
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Presentation.Model.ModelEditingScope.OnRevert(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Presentation.Model.ModelEditingScope.Dispose
+uid: System.Activities.Presentation.Model.ModelEditingScope.Revert
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -89,16 +89,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.Model.ModelEditingScope.Description
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Presentation.Model.ModelEditingScope.Dispose(System.Boolean)
+uid: System.Activities.Presentation.Model.ModelEditingScope
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

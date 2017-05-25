@@ -1,19 +1,19 @@
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.SetIndex(System.Windows.Forms.MenuItem,System.Int16)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.#ctor
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.ShouldSerializeIndex(System.Windows.Forms.MenuItem)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.Popup
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.ResetIndex(System.Windows.Forms.MenuItem)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -27,14 +27,28 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.GetControlInstanceType
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.GetIndex(System.Windows.Forms.MenuItem)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.Click
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.HookUpControlEvents(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.CanExtend(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.GetControlInstanceType
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -55,21 +69,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.ResetIndex(System.Windows.Forms.MenuItem)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.SetIndex(System.Windows.Forms.MenuItem,System.Int16)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.#ctor
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.DrawItem
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -83,35 +83,28 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.CanExtend(System.Object)
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.#ctor
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.GetIndex(System.Windows.Forms.MenuItem)
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.Popup
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.ShouldSerializeIndex(System.Windows.Forms.MenuItem)
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.Click
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.HookUpControlEvents(System.Object)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.DrawItem
+uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

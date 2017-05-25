@@ -1,5 +1,5 @@
 ---
-uid: System.CodeDom.CodeExpressionCollection
+uid: System.CodeDom.CodeExpressionCollection.CopyTo(System.CodeDom.CodeExpression[],System.Int32)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -17,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeExpressionCollection.#ctor
+uid: System.CodeDom.CodeExpressionCollection.AddRange(System.CodeDom.CodeExpressionCollection)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -35,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeExpressionCollection.#ctor
+uid: System.CodeDom.CodeExpressionCollection.AddRange(System.CodeDom.CodeExpression[])
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -62,7 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeExpressionCollection.AddRange(System.CodeDom.CodeExpression[])
+uid: System.CodeDom.CodeExpressionCollection.IndexOf(System.CodeDom.CodeExpression)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -89,24 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeExpressionCollection.AddRange(System.CodeDom.CodeExpressionCollection)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeExpressionCollection.CopyTo(System.CodeDom.CodeExpression[],System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeExpressionCollection.Item(System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -125,7 +107,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeExpressionCollection.IndexOf(System.CodeDom.CodeExpression)
+uid: System.CodeDom.CodeExpressionCollection.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeExpressionCollection
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

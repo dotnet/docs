@@ -1,5 +1,5 @@
 ---
-uid: System.ComponentModel.DefaultBindingPropertyAttribute
+uid: System.ComponentModel.DefaultBindingPropertyAttribute.Equals(System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -17,16 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DefaultBindingPropertyAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.DefaultBindingPropertyAttribute.Name
+uid: System.ComponentModel.DefaultBindingPropertyAttribute.GetHashCode
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DefaultBindingPropertyAttribute.Equals(System.Object)
+uid: System.ComponentModel.DefaultBindingPropertyAttribute.Name
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -62,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DefaultBindingPropertyAttribute.GetHashCode
+uid: System.ComponentModel.DefaultBindingPropertyAttribute
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

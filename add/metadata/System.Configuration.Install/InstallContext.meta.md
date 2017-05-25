@@ -1,23 +1,5 @@
 ---
-uid: System.Configuration.Install.InstallContext
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Install.InstallContext.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Install.InstallContext.IsParameterTrue(System.String)
+uid: System.Configuration.Install.InstallContext.#ctor(System.String,System.String[])
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -35,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.Install.InstallContext.#ctor(System.String,System.String[])
+uid: System.Configuration.Install.InstallContext.IsParameterTrue(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -63,6 +45,15 @@ manager: "wpickett"
 
 ---
 uid: System.Configuration.Install.InstallContext.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.InstallContext
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

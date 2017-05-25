@@ -1,14 +1,5 @@
 ---
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.EntityContainer
+uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata(System.Collections.Generic.IEnumerable{System.Data.Entity.Design.EntityStoreSchemaFilterEntry},System.Version)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -26,25 +17,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.WriteStoreSchema(System.String)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.StoreItemCollection
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.WriteStoreSchema(System.Xml.XmlWriter)
+uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.CreateStoreSchemaConnection(System.String,System.String,System.Version)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -62,7 +35,34 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata(System.Collections.Generic.IEnumerable{System.Data.Entity.Design.EntityStoreSchemaFilterEntry},System.Version)
+uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.#ctor(System.String,System.String,System.String)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.WriteStoreSchema(System.Xml.XmlWriter)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.WriteStoreSchema(System.String)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateForeignKeyProperties
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -80,15 +80,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.#ctor(System.String,System.String,System.String)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata
 ms.technology: 
   - "dotnet-ado"
@@ -98,7 +89,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata
+uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.StoreItemCollection
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -116,7 +107,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.CreateStoreSchemaConnection(System.String,System.String,System.Version)
+uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.EntityContainer
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -125,7 +116,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateForeignKeyProperties
+uid: System.Data.Entity.Design.EntityStoreSchemaGenerator
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

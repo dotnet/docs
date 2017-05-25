@@ -1,5 +1,5 @@
 ---
-uid: System.Security.Cryptography.HMACMD5
+uid: System.Security.Cryptography.HMACMD5.#ctor(System.Byte[])
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,16 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.HMACMD5.#ctor(System.Byte[])
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.HMACMD5.#ctor
+uid: System.Security.Cryptography.HMACMD5
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

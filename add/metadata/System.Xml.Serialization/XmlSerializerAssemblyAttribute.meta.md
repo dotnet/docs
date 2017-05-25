@@ -1,22 +1,4 @@
 ---
-uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute
-ms.technology: 
-  - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor(System.String)
-ms.technology: 
-  - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor(System.String,System.String)
 ms.technology: 
   - "dotnet-wcf"
@@ -26,7 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor
+uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-wcf"
 author: "Erikre"
@@ -54,6 +36,15 @@ manager: "erikre"
 
 ---
 uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute.#ctor
+ms.technology: 
+  - "dotnet-wcf"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.XmlSerializerAssemblyAttribute
 ms.technology: 
   - "dotnet-wcf"
 author: "Erikre"

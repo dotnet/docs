@@ -1,14 +1,5 @@
 ---
-uid: System.Drawing.BufferedGraphics
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.BufferedGraphics.Dispose
+uid: System.Drawing.BufferedGraphics.Render(System.Drawing.Graphics)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -35,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.BufferedGraphics.Render(System.Drawing.Graphics)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.BufferedGraphics.Graphics
 ms.technology: 
   - "dotnet-standard"
@@ -53,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.BufferedGraphics.Render
+uid: System.Drawing.BufferedGraphics.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -63,6 +45,15 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.BufferedGraphics.Render
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Drawing.BufferedGraphics
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

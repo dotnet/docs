@@ -1,5 +1,5 @@
 ---
-uid: System.CodeDom.CodeDelegateInvokeExpression
+uid: System.CodeDom.CodeDelegateInvokeExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression[])
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -9,15 +9,6 @@ manager: "wpickett"
 
 ---
 uid: System.CodeDom.CodeDelegateInvokeExpression.#ctor(System.CodeDom.CodeExpression)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeDelegateInvokeExpression.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression[])
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeDelegateInvokeExpression.#ctor
+uid: System.CodeDom.CodeDelegateInvokeExpression
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

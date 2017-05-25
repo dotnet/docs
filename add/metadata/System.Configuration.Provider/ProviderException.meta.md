@@ -1,14 +1,5 @@
 ---
-uid: System.Configuration.Provider.ProviderException
-ms.technology: 
-  - "dotnet-standard"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Provider.ProviderException.#ctor
+uid: System.Configuration.Provider.ProviderException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -26,6 +17,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Configuration.Provider.ProviderException.#ctor(System.String)
+ms.technology: 
+  - "dotnet-webforms"
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
 uid: System.Configuration.Provider.ProviderException.#ctor
 ms.technology: 
   - "dotnet-webforms"
@@ -35,18 +35,9 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.Provider.ProviderException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Configuration.Provider.ProviderException
 ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Provider.ProviderException.#ctor(System.String)
-ms.technology: 
-  - "dotnet-webforms"
+  - "dotnet-standard"
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

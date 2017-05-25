@@ -1,5 +1,5 @@
 ---
-uid: System.IO.FileSystemInfo
+uid: System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -17,33 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemInfo.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemInfo.Delete
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemInfo.FullName
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileSystemInfo.LastAccessTimeUtc
 ms.technology: 
   - "dotnet-standard"
@@ -53,7 +26,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemInfo.Exists
+uid: System.IO.FileSystemInfo.LastWriteTimeUtc
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemInfo.CreationTimeUtc
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemInfo.LastAccessTime
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -80,61 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemInfo.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemInfo.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemInfo.Extension
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemInfo.LastAccessTime
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemInfo.Name
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemInfo.CreationTimeUtc
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.FileSystemInfo.FullPath
+uid: System.IO.FileSystemInfo.CreationTime
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -152,7 +89,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemInfo.CreationTime
+uid: System.IO.FileSystemInfo.Extension
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -161,7 +98,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemInfo.LastWriteTimeUtc
+uid: System.IO.FileSystemInfo.FullName
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemInfo.FullPath
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -171,6 +117,51 @@ manager: "wpickett"
 
 ---
 uid: System.IO.FileSystemInfo.Refresh
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemInfo.Delete
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemInfo.Exists
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemInfo.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemInfo.Name
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.IO.FileSystemInfo
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

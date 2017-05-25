@@ -1,14 +1,5 @@
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Chain
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.X509Certificates.X509Chain.Dispose
+uid: System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Chain.#ctor
+uid: System.Security.Cryptography.X509Certificates.X509Chain.#ctor(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Chain.ChainContext
+uid: System.Security.Cryptography.X509Certificates.X509Chain.ChainElements
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Chain.#ctor
+uid: System.Security.Cryptography.X509Certificates.X509Chain.ChainContext
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -80,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Chain.ChainElements
+uid: System.Security.Cryptography.X509Certificates.X509Chain.SafeHandle
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -107,7 +98,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Chain.#ctor(System.Boolean)
+uid: System.Security.Cryptography.X509Certificates.X509Chain.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -125,16 +116,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Chain.SafeHandle
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.X509Certificates.X509Chain.Build(System.Security.Cryptography.X509Certificates.X509Certificate2)
+uid: System.Security.Cryptography.X509Certificates.X509Chain
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

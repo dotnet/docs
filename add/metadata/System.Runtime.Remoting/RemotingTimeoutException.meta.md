@@ -1,12 +1,5 @@
 ---
-uid: System.Runtime.Remoting.RemotingTimeoutException
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.RemotingTimeoutException.#ctor
+uid: System.Runtime.Remoting.RemotingTimeoutException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -27,7 +20,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.RemotingTimeoutException.#ctor(System.String,System.Exception)
+uid: System.Runtime.Remoting.RemotingTimeoutException
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"

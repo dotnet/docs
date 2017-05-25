@@ -1,13 +1,5 @@
 ---
-uid: System.Windows.Resources.StreamResourceInfo
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Resources.StreamResourceInfo.#ctor
+uid: System.Windows.Resources.StreamResourceInfo.#ctor(System.IO.Stream,System.String)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -42,10 +34,9 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Resources.StreamResourceInfo.#ctor(System.IO.Stream,System.String)
+uid: System.Windows.Resources.StreamResourceInfo
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

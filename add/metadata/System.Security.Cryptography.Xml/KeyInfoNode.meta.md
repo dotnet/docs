@@ -1,22 +1,4 @@
 ---
-uid: System.Security.Cryptography.Xml.KeyInfoNode
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.KeyInfoNode.GetXml
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.KeyInfoNode.LoadXml(System.Xml.XmlElement)
 ms.technology: 
   - "dotnet-standard"
@@ -27,6 +9,15 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Xml.KeyInfoNode.#ctor(System.Xml.XmlElement)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.KeyInfoNode.GetXml
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.KeyInfoNode.#ctor
+uid: System.Security.Cryptography.Xml.KeyInfoNode
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

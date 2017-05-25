@@ -1,25 +1,20 @@
 ---
-uid: Microsoft.JScript.JSScanner
-ms.author: "mikejo"
----
-
----
 uid: Microsoft.JScript.JSScanner.IsOperator(Microsoft.JScript.JSToken)
 ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.JSScanner.GotEndOfLine
+uid: Microsoft.JScript.JSScanner.IsKeyword(Microsoft.JScript.JSToken)
 ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.JSScanner.GetSourceCode
+uid: Microsoft.JScript.JSScanner.SetSource(Microsoft.JScript.Context)
 ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.JSScanner.#ctor
+uid: Microsoft.JScript.JSScanner.GetCurrentPosition(System.Boolean)
 ms.author: "mikejo"
 ---
 
@@ -39,17 +34,7 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.JSScanner.GetCurrentLine
-ms.author: "mikejo"
----
-
----
-uid: Microsoft.JScript.JSScanner.IsKeyword(Microsoft.JScript.JSToken)
-ms.author: "mikejo"
----
-
----
-uid: Microsoft.JScript.JSScanner.SetSource(Microsoft.JScript.Context)
+uid: Microsoft.JScript.JSScanner.GetStartLinePosition
 ms.author: "mikejo"
 ---
 
@@ -59,7 +44,17 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.JSScanner.GetStartLinePosition
+uid: Microsoft.JScript.JSScanner.GetCurrentLine
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.GetSourceCode
+ms.author: "mikejo"
+---
+
+---
+uid: Microsoft.JScript.JSScanner.GotEndOfLine
 ms.author: "mikejo"
 ---
 
@@ -69,11 +64,11 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.JSScanner.GetCurrentPosition(System.Boolean)
+uid: Microsoft.JScript.JSScanner.#ctor
 ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.JSScanner.#ctor
+uid: Microsoft.JScript.JSScanner
 ms.author: "mikejo"
 ---

@@ -1,23 +1,5 @@
 ---
-uid: System.AppDomainUnloadedException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.AppDomainUnloadedException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.AppDomainUnloadedException.#ctor
+uid: System.AppDomainUnloadedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -35,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AppDomainUnloadedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.AppDomainUnloadedException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +26,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AppDomainUnloadedException.#ctor(System.String)
+uid: System.AppDomainUnloadedException.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AppDomainUnloadedException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

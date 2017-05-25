@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.Configuration.EndpointBehaviorElement
+uid: System.ServiceModel.Configuration.EndpointBehaviorElement.CanAdd(System.ServiceModel.Configuration.BehaviorExtensionElement)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -35,16 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.EndpointBehaviorElement.CanAdd(System.ServiceModel.Configuration.BehaviorExtensionElement)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.EndpointBehaviorElement.#ctor
+uid: System.ServiceModel.Configuration.EndpointBehaviorElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

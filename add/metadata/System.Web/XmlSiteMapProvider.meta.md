@@ -1,15 +1,9 @@
 ---
-uid: System.Web.XmlSiteMapProvider
+uid: System.Web.XmlSiteMapProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
 manager: "wpickett"
----
-
----
-uid: System.Web.XmlSiteMapProvider.AddNode
-ms.technology: 
-  - "dotnet-webforms"
 ---
 
 ---
@@ -29,7 +23,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.Dispose
+uid: System.Web.XmlSiteMapProvider.GetChildNodes(System.Web.SiteMapNode)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -37,7 +31,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.GetRootNodeCore
+uid: System.Web.XmlSiteMapProvider.GetParentNode(System.Web.SiteMapNode)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -45,29 +39,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.XmlSiteMapProvider.FindSiteMapNode
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
-uid: System.Web.XmlSiteMapProvider.Dispose
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.XmlSiteMapProvider.RootNode
+uid: System.Web.XmlSiteMapProvider.FindSiteMapNodeFromKey(System.String)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -91,7 +63,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.CurrentNode
+uid: System.Web.XmlSiteMapProvider.RemoveProvider(System.String)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -99,7 +71,15 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.GetChildNodes(System.Web.SiteMapNode)
+uid: System.Web.XmlSiteMapProvider.Dispose(System.Boolean)
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.XmlSiteMapProvider.GetRootNodeCore
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -115,7 +95,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.RemoveProvider(System.String)
+uid: System.Web.XmlSiteMapProvider.CurrentNode
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -123,7 +103,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.Initialize(System.String,System.Collections.Specialized.NameValueCollection)
+uid: System.Web.XmlSiteMapProvider.RootNode
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -131,7 +111,15 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.GetParentNode(System.Web.SiteMapNode)
+uid: System.Web.XmlSiteMapProvider.Dispose
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.XmlSiteMapProvider.#ctor
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -147,7 +135,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.FindSiteMapNodeFromKey(System.String)
+uid: System.Web.XmlSiteMapProvider
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -155,9 +143,13 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.Dispose(System.Boolean)
+uid: System.Web.XmlSiteMapProvider.FindSiteMapNode
 ms.technology: 
   - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
+---
+
+---
+uid: System.Web.XmlSiteMapProvider.AddNode
+ms.technology: 
+  - "dotnet-webforms"
 ---

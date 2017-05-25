@@ -1,5 +1,14 @@
 ---
-uid: System.Windows.Input.CommandBinding
+uid: System.Windows.Input.CommandBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.ExecutedRoutedEventHandler,System.Windows.Input.CanExecuteRoutedEventHandler)
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.ExecutedRoutedEventHandler)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -17,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.CommandBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.ExecutedRoutedEventHandler,System.Windows.Input.CanExecuteRoutedEventHandler)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.CommandBinding.PreviewCanExecute
 ms.technology: 
   - "dotnet-wpf"
@@ -35,11 +35,21 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.CommandBinding.PreviewExecuted
+uid: System.Windows.Input.CommandBinding.CanExecute
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Input.CommandBinding.Executed
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -61,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.CommandBinding.#ctor(System.Windows.Input.ICommand,System.Windows.Input.ExecutedRoutedEventHandler)
+uid: System.Windows.Input.CommandBinding
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -70,28 +80,9 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.CommandBinding.Executed
+uid: System.Windows.Input.CommandBinding.PreviewExecuted
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Input.CommandBinding.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Input.CommandBinding.CanExecute
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

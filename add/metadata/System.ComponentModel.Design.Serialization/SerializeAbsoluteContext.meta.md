@@ -1,14 +1,5 @@
 ---
-uid: System.ComponentModel.Design.Serialization.SerializeAbsoluteContext
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.#ctor
+uid: System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.ShouldSerialize(System.ComponentModel.MemberDescriptor)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -26,6 +17,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.Member
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -35,16 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.ShouldSerialize(System.ComponentModel.MemberDescriptor)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.Serialization.SerializeAbsoluteContext.Member
+uid: System.ComponentModel.Design.Serialization.SerializeAbsoluteContext
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

@@ -1,31 +1,4 @@
 ---
-uid: System.Xml.Serialization.SoapAttributes
-ms.technology: 
-  - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Xml.Serialization.SoapAttributes.#ctor
-ms.technology: 
-  - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Xml.Serialization.SoapAttributes.#ctor
-ms.technology: 
-  - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.SoapAttributes.#ctor(System.Reflection.ICustomAttributeProvider)
 ms.technology: 
   - "dotnet-wcf"
@@ -35,7 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.SoapAttributes.SoapAttribute
+uid: System.Xml.Serialization.SoapAttributes.SoapDefaultValue
 ms.technology: 
   - "dotnet-wcf"
 author: "Erikre"
@@ -44,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.SoapAttributes.SoapDefaultValue
+uid: System.Xml.Serialization.SoapAttributes.SoapAttribute
 ms.technology: 
   - "dotnet-wcf"
 author: "Erikre"
@@ -81,6 +54,24 @@ manager: "erikre"
 
 ---
 uid: System.Xml.Serialization.SoapAttributes.SoapType
+ms.technology: 
+  - "dotnet-wcf"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.SoapAttributes.#ctor
+ms.technology: 
+  - "dotnet-wcf"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Xml.Serialization.SoapAttributes
 ms.technology: 
   - "dotnet-wcf"
 author: "Erikre"

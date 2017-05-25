@@ -1,14 +1,5 @@
 ---
-uid: System.Resources.MissingSatelliteAssemblyException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Resources.MissingSatelliteAssemblyException.#ctor
+uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,7 +17,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.String,System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -53,16 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.String,System.String)
+uid: System.Resources.MissingSatelliteAssemblyException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

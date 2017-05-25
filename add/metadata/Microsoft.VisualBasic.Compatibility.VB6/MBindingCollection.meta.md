@@ -1,5 +1,26 @@
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection
+uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Add(System.Object,System.String,System.String,Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp,System.String,System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Add(System.Object,System.String,System.String,Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp,System.String)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Dispose(System.Boolean)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Remove(System.Object)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -13,7 +34,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Add(System.Object,System.String,System.String,Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp,System.String,System.Boolean)
+uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.SavePendingChanges
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.UpdateControls
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -34,6 +62,20 @@ manager: "wpickett"
 ---
 
 ---
+uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.DataMember
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.UpdateMode
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Dispose
 author: "stevehoag"
 ms.author: "shoag"
@@ -48,55 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.DataMember
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.UpdateControls
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.SavePendingChanges
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Add(System.Object,System.String,System.String,Microsoft.VisualBasic.Compatibility.VB6.IDataFormatDisp,System.String)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Remove(System.Object)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Dispose(System.Boolean)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Clear
 author: "stevehoag"
 ms.author: "shoag"
@@ -104,7 +97,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.UpdateMode
+uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.#ctor
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -118,7 +111,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.#ctor
+uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

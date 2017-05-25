@@ -1,13 +1,4 @@
 ---
-uid: System.Security.Cryptography.Xml.EncryptedReference
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.EncryptedReference.#ctor(System.String,System.Security.Cryptography.Xml.TransformChain)
 ms.technology: 
   - "dotnet-standard"
@@ -17,34 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.EncryptedReference.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.EncryptedReference.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.EncryptedReference.TransformChain
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.EncryptedReference.GetXml
+uid: System.Security.Cryptography.Xml.EncryptedReference.AddTransform(System.Security.Cryptography.Xml.Transform)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -71,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.EncryptedReference.Uri
+uid: System.Security.Cryptography.Xml.EncryptedReference.TransformChain
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -98,7 +62,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.EncryptedReference.AddTransform(System.Security.Cryptography.Xml.Transform)
+uid: System.Security.Cryptography.Xml.EncryptedReference.GetXml
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.EncryptedReference.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.EncryptedReference.Uri
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.EncryptedReference
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

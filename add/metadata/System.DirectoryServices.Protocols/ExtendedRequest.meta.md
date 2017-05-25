@@ -1,19 +1,12 @@
 ---
-uid: System.DirectoryServices.Protocols.ExtendedRequest
+uid: System.DirectoryServices.Protocols.ExtendedRequest.#ctor(System.String,System.Byte[])
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.ExtendedRequest.RequestValue
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.Protocols.ExtendedRequest.#ctor
+uid: System.DirectoryServices.Protocols.ExtendedRequest.ToXmlNode(System.Xml.XmlDocument)
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
@@ -27,7 +20,7 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.ExtendedRequest.ToXmlNode(System.Xml.XmlDocument)
+uid: System.DirectoryServices.Protocols.ExtendedRequest.RequestValue
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
@@ -48,7 +41,7 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.ExtendedRequest.#ctor(System.String,System.Byte[])
+uid: System.DirectoryServices.Protocols.ExtendedRequest
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"

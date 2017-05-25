@@ -1,5 +1,49 @@
 ---
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject
+uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.#ctor(System.Windows.Forms.DataGridViewRow)
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Select(System.Windows.Forms.AccessibleSelection)
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.GetChild(System.Int32)
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.GetChildCount
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.GetSelected
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -17,11 +61,12 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.#ctor
+uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Parent
 ms.technology: 
   - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -43,41 +88,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Select(System.Windows.Forms.AccessibleSelection)
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Owner
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.GetChildCount
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.State
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Navigate(System.Windows.Forms.AccessibleNavigation)
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -95,7 +106,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.#ctor(System.Windows.Forms.DataGridViewRow)
+uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Role
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -104,7 +115,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Parent
+uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -121,28 +132,9 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.GetChild(System.Int32)
+uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Owner
 ms.technology: 
   - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.GetSelected
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Role
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

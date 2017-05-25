@@ -1,41 +1,5 @@
 ---
-uid: System.Windows.Media.GeometryDrawing
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.GeometryDrawing.BrushProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.GeometryDrawing.Geometry
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.GeometryDrawing.PenProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.GeometryDrawing.Pen
+uid: System.Windows.Media.GeometryDrawing.#ctor(System.Windows.Media.Brush,System.Windows.Media.Pen,System.Windows.Media.Geometry)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -53,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GeometryDrawing.#ctor(System.Windows.Media.Brush,System.Windows.Media.Pen,System.Windows.Media.Geometry)
+uid: System.Windows.Media.GeometryDrawing.GeometryProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -62,15 +26,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GeometryDrawing.Clone
+uid: System.Windows.Media.GeometryDrawing.BrushProperty
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GeometryDrawing.GeometryProperty
+uid: System.Windows.Media.GeometryDrawing.PenProperty
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GeometryDrawing.Geometry
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -97,10 +71,27 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GeometryDrawing.#ctor
+uid: System.Windows.Media.GeometryDrawing.Pen
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GeometryDrawing
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.GeometryDrawing.Clone
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

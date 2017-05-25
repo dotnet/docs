@@ -1,22 +1,4 @@
 ---
-uid: System.Diagnostics.SymbolStore.SymDocumentWriter
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymDocumentWriter.Finalize
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymDocumentWriter.SetCheckSum(System.Guid,System.Byte[])
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose
+uid: System.Diagnostics.SymbolStore.SymDocumentWriter.Finalize
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -54,6 +36,15 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.SymbolStore.SymDocumentWriter.Dispose
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymDocumentWriter
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

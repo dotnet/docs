@@ -1,5 +1,5 @@
 ---
-uid: System.CodeDom.CodeExpressionStatement
+uid: System.CodeDom.CodeExpressionStatement.#ctor(System.CodeDom.CodeExpression)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,16 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeExpressionStatement.#ctor(System.CodeDom.CodeExpression)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeExpressionStatement.#ctor
+uid: System.CodeDom.CodeExpressionStatement
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -1,21 +1,13 @@
 ---
-uid: System.Web.UI.UrlPropertyAttribute
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.UrlPropertyAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.UrlPropertyAttribute.Equals(System.Object)
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.UrlPropertyAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -39,7 +31,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.UrlPropertyAttribute.#ctor(System.String)
+uid: System.Web.UI.UrlPropertyAttribute.#ctor
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -47,7 +39,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.UrlPropertyAttribute.#ctor
+uid: System.Web.UI.UrlPropertyAttribute
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

@@ -1,5 +1,5 @@
 ---
-uid: System.MethodAccessException
+uid: System.MethodAccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -35,16 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.MethodAccessException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.MethodAccessException.#ctor
+uid: System.MethodAccessException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -1,5 +1,5 @@
 ---
-uid: System.CodeDom.Compiler.CompilerParameters
+uid: System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[],System.String,System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerParameters.Win32Resource
+uid: System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[],System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -17,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerParameters.UserToken
+uid: System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,7 +26,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerParameters.#ctor
+uid: System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[])
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.TreatWarningsAsErrors
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -36,6 +45,33 @@ manager: "wpickett"
 
 ---
 uid: System.CodeDom.Compiler.CompilerParameters.CoreAssemblyFileName
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.ReferencedAssemblies
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.GenerateExecutable
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.EmbeddedResources
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -62,25 +98,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerParameters.TempFiles
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.TreatWarningsAsErrors
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.#ctor
+uid: System.CodeDom.Compiler.CompilerParameters.CompilerOptions
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -98,43 +116,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerParameters.EmbeddedResources
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.GenerateExecutable
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.ReferencedAssemblies
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[])
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.IncludeDebugInformation
+uid: System.CodeDom.Compiler.CompilerParameters.Win32Resource
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -152,7 +134,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[],System.String,System.Boolean)
+uid: System.CodeDom.Compiler.CompilerParameters.UserToken
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -161,16 +143,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerParameters.#ctor(System.String[],System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.Compiler.CompilerParameters.Evidence
+uid: System.CodeDom.Compiler.CompilerParameters.TempFiles
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -188,7 +161,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerParameters.CompilerOptions
+uid: System.CodeDom.Compiler.CompilerParameters.Evidence
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerParameters
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -1,5 +1,5 @@
 ---
-uid: System.Text.EncoderReplacementFallback
+uid: System.Text.EncoderReplacementFallback.Equals(System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -17,16 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.EncoderReplacementFallback.GetHashCode
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Text.EncoderReplacementFallback.MaxCharCount
+uid: System.Text.EncoderReplacementFallback.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.EncoderReplacementFallback.#ctor
+uid: System.Text.EncoderReplacementFallback.MaxCharCount
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -53,16 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.EncoderReplacementFallback.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Text.EncoderReplacementFallback.Equals(System.Object)
+uid: System.Text.EncoderReplacementFallback.GetHashCode
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -72,6 +54,15 @@ manager: "wpickett"
 
 ---
 uid: System.Text.EncoderReplacementFallback.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Text.EncoderReplacementFallback
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

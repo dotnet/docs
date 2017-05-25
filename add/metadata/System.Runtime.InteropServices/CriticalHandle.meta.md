@@ -1,5 +1,5 @@
 ---
-uid: System.Runtime.InteropServices.CriticalHandle
+uid: System.Runtime.InteropServices.CriticalHandle.SetHandle(System.IntPtr)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.CriticalHandle.IsInvalid
+uid: System.Runtime.InteropServices.CriticalHandle.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,25 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.CriticalHandle.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices.CriticalHandle.Finalize
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices.CriticalHandle.handle
+uid: System.Runtime.InteropServices.CriticalHandle.SetHandleAsInvalid
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -62,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.CriticalHandle.SetHandle(System.IntPtr)
+uid: System.Runtime.InteropServices.CriticalHandle.IsInvalid
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -71,16 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.CriticalHandle.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices.CriticalHandle.Close
+uid: System.Runtime.InteropServices.CriticalHandle.Finalize
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -98,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.CriticalHandle.SetHandleAsInvalid
+uid: System.Runtime.InteropServices.CriticalHandle.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -107,7 +80,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.CriticalHandle.Dispose(System.Boolean)
+uid: System.Runtime.InteropServices.CriticalHandle.handle
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices.CriticalHandle.Close
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Runtime.InteropServices.CriticalHandle
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -1,5 +1,5 @@
 ---
-uid: System.Xml.Xsl.XsltSettings
+uid: System.Xml.Xsl.XsltSettings.#ctor(System.Boolean,System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.XsltSettings.#ctor(System.Boolean,System.Boolean)
+uid: System.Xml.Xsl.XsltSettings.EnableDocumentFunction
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.XsltSettings.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.XsltSettings.Default
 ms.technology: 
   - "dotnet-standard"
@@ -62,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.XsltSettings.EnableDocumentFunction
+uid: System.Xml.Xsl.XsltSettings
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

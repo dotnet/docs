@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Media.Media3D.GeometryModel3D
+uid: System.Windows.Media.Media3D.GeometryModel3D.#ctor(System.Windows.Media.Media3D.Geometry3D,System.Windows.Media.Media3D.Material)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -17,15 +17,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.GeometryModel3D.MaterialProperty
+uid: System.Windows.Media.Media3D.GeometryModel3D.BackMaterial
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.GeometryModel3D.BackMaterial
+uid: System.Windows.Media.Media3D.GeometryModel3D.Clone
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.GeometryModel3D.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Media3D.GeometryModel3D
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -50,6 +69,14 @@ manager: "ghogen"
 ---
 
 ---
+uid: System.Windows.Media.Media3D.GeometryModel3D.MaterialProperty
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
 uid: System.Windows.Media.Media3D.GeometryModel3D.Material
 ms.technology: 
   - "dotnet-wpf"
@@ -58,45 +85,9 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.GeometryModel3D.Clone
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.GeometryModel3D.#ctor(System.Windows.Media.Media3D.Geometry3D,System.Windows.Media.Media3D.Material)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.GeometryModel3D.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.GeometryModel3D.Geometry
 ms.technology: 
   - "dotnet-wpf"
 ms.author: "kempb"
 manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Media3D.GeometryModel3D.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
 ---

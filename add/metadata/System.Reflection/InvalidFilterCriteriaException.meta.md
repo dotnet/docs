@@ -1,5 +1,5 @@
 ---
-uid: System.Reflection.InvalidFilterCriteriaException
+uid: System.Reflection.InvalidFilterCriteriaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -8,16 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.InvalidFilterCriteriaException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.InvalidFilterCriteriaException.#ctor
+uid: System.Reflection.InvalidFilterCriteriaException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -35,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.InvalidFilterCriteriaException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Reflection.InvalidFilterCriteriaException.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.InvalidFilterCriteriaException.#ctor(System.String,System.Exception)
+uid: System.Reflection.InvalidFilterCriteriaException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

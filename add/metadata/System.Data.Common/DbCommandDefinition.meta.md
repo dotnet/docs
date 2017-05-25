@@ -1,5 +1,5 @@
 ---
-uid: System.Data.Common.DbCommandDefinition
+uid: System.Data.Common.DbCommandDefinition.#ctor(System.Data.Common.DbCommand)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -26,16 +26,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbCommandDefinition.#ctor(System.Data.Common.DbCommand)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbCommandDefinition.#ctor
+uid: System.Data.Common.DbCommandDefinition
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

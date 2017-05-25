@@ -1,5 +1,5 @@
 ---
-uid: System.ComponentModel.Design.MenuCommand
+uid: System.ComponentModel.Design.MenuCommand.#ctor(System.EventHandler,System.ComponentModel.Design.CommandID)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -17,16 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.MenuCommand.Invoke
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.ToString
+uid: System.ComponentModel.Design.MenuCommand.Invoke(System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -62,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.MenuCommand.Enabled
+uid: System.ComponentModel.Design.MenuCommand.Supported
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -71,7 +62,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.MenuCommand.Supported
+uid: System.ComponentModel.Design.MenuCommand.CommandID
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.ToString
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.MenuCommand.Enabled
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -107,25 +116,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.MenuCommand.Invoke(System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.#ctor(System.EventHandler,System.ComponentModel.Design.CommandID)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.MenuCommand.CommandID
+uid: System.ComponentModel.Design.MenuCommand
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

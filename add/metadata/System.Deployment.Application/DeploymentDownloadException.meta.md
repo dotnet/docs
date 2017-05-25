@@ -1,5 +1,5 @@
 ---
-uid: System.Deployment.Application.DeploymentDownloadException
+uid: System.Deployment.Application.DeploymentDownloadException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.DeploymentDownloadException.#ctor
+uid: System.Deployment.Application.DeploymentDownloadException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.DeploymentDownloadException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Deployment.Application.DeploymentDownloadException.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.DeploymentDownloadException.#ctor(System.String,System.Exception)
+uid: System.Deployment.Application.DeploymentDownloadException
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

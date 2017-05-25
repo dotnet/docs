@@ -1,14 +1,5 @@
 ---
-uid: System.CodeDom.CodeMethodReturnStatement
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeMethodReturnStatement.#ctor
+uid: System.CodeDom.CodeMethodReturnStatement.#ctor(System.CodeDom.CodeExpression)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeMethodReturnStatement.#ctor(System.CodeDom.CodeExpression)
+uid: System.CodeDom.CodeMethodReturnStatement.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -35,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeMethodReturnStatement.#ctor
+uid: System.CodeDom.CodeMethodReturnStatement
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

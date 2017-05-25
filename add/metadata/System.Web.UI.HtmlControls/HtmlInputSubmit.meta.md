@@ -1,13 +1,4 @@
 ---
-uid: System.Web.UI.HtmlControls.HtmlInputSubmit
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.HtmlControls.HtmlInputSubmit.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"
@@ -26,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.HtmlControls.HtmlInputSubmit.#ctor
+uid: System.Web.UI.HtmlControls.HtmlInputSubmit
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

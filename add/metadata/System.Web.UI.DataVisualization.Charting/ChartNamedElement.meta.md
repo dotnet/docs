@@ -1,5 +1,5 @@
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartNamedElement
+uid: System.Web.UI.DataVisualization.Charting.ChartNamedElement.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"
@@ -8,14 +8,6 @@ manager: "mblythe"
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.ChartNamedElement.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.ChartNamedElement.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"
@@ -31,7 +23,7 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartNamedElement.#ctor
+uid: System.Web.UI.DataVisualization.Charting.ChartNamedElement
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"

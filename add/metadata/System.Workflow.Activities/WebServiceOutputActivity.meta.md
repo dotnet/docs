@@ -1,19 +1,12 @@
 ---
-uid: System.Workflow.Activities.WebServiceOutputActivity
+uid: System.Workflow.Activities.WebServiceOutputActivity.System#Workflow#ComponentModel#IDynamicPropertyTypeProvider#GetPropertyType(System.IServiceProvider,System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.WebServiceOutputActivity.InputActivityName
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.WebServiceOutputActivity.SendingOutputEvent
+uid: System.Workflow.Activities.WebServiceOutputActivity.System#Workflow#ComponentModel#IDynamicPropertyTypeProvider#GetAccessType(System.IServiceProvider,System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -41,28 +34,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.WebServiceOutputActivity.SendingOutput
+uid: System.Workflow.Activities.WebServiceOutputActivity.SendingOutputEvent
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.WebServiceOutputActivity.System#Workflow#ComponentModel#IDynamicPropertyTypeProvider#GetAccessType(System.IServiceProvider,System.String)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.WebServiceOutputActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.WebServiceOutputActivity.System#Workflow#ComponentModel#IDynamicPropertyTypeProvider#GetPropertyType(System.IServiceProvider,System.String)
+uid: System.Workflow.Activities.WebServiceOutputActivity.InputActivityName
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -76,7 +55,21 @@ manager: "erikre"
 ---
 
 ---
+uid: System.Workflow.Activities.WebServiceOutputActivity.SendingOutput
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.Workflow.Activities.WebServiceOutputActivity.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.WebServiceOutputActivity
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

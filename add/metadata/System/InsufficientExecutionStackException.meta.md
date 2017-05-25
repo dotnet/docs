@@ -1,5 +1,5 @@
 ---
-uid: System.InsufficientExecutionStackException
+uid: System.InsufficientExecutionStackException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.InsufficientExecutionStackException.#ctor(System.String,System.Exception)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.InsufficientExecutionStackException.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -35,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.InsufficientExecutionStackException.#ctor
+uid: System.InsufficientExecutionStackException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

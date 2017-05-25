@@ -1,5 +1,5 @@
 ---
-uid: System.Diagnostics.SymbolStore.SymScope
+uid: System.Diagnostics.SymbolStore.SymScope.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -8,34 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymScope.Parent
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymScope.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymScope.Method
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymScope.Dispose
+uid: System.Diagnostics.SymbolStore.SymScope.GetNamespaces
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -53,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymScope.GetLocals
+uid: System.Diagnostics.SymbolStore.SymScope.StartOffset
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -62,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymScope.Dispose(System.Boolean)
+uid: System.Diagnostics.SymbolStore.SymScope.GetLocals
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -80,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymScope.StartOffset
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymScope.Finalize
 ms.technology: 
   - "dotnet-standard"
@@ -98,7 +62,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymScope.GetNamespaces
+uid: System.Diagnostics.SymbolStore.SymScope.Dispose
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymScope.Parent
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymScope.Method
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymScope
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

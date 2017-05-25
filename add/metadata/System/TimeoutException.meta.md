@@ -1,14 +1,5 @@
 ---
-uid: System.TimeoutException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.TimeoutException.#ctor(System.String)
+uid: System.TimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.TimeoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.TimeoutException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.TimeoutException.#ctor
+uid: System.TimeoutException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

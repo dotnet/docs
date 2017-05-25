@@ -1,22 +1,4 @@
 ---
-uid: System.Security.Cryptography.Xml.RSAKeyValue
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.RSAKeyValue.GetXml
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.RSAKeyValue.#ctor(System.Security.Cryptography.RSA)
 ms.technology: 
   - "dotnet-standard"
@@ -26,7 +8,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.RSAKeyValue.#ctor
+uid: System.Security.Cryptography.Xml.RSAKeyValue.LoadXml(System.Xml.XmlElement)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.Xml.RSAKeyValue.GetXml
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.RSAKeyValue.LoadXml(System.Xml.XmlElement)
+uid: System.Security.Cryptography.Xml.RSAKeyValue
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

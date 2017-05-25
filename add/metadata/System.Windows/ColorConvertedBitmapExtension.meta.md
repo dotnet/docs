@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.ColorConvertedBitmapExtension
+uid: System.Windows.ColorConvertedBitmapExtension.ProvideValue(System.IServiceProvider)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -26,16 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.ColorConvertedBitmapExtension.ProvideValue(System.IServiceProvider)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.ColorConvertedBitmapExtension.#ctor
+uid: System.Windows.ColorConvertedBitmapExtension
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

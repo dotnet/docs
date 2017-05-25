@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Media.InvalidWmpVersionException
+uid: System.Windows.Media.InvalidWmpVersionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.InvalidWmpVersionException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.InvalidWmpVersionException.#ctor
 ms.technology: 
   - "dotnet-wpf"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.InvalidWmpVersionException.#ctor
+uid: System.Windows.Media.InvalidWmpVersionException
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

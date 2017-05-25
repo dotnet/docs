@@ -1,13 +1,4 @@
 ---
-uid: System.CodeDom.CodeGotoStatement
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeGotoStatement.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -35,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeGotoStatement.#ctor
+uid: System.CodeDom.CodeGotoStatement
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

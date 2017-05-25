@@ -1,14 +1,5 @@
 ---
-uid: System.Data.ReadOnlyException
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.ReadOnlyException.#ctor
+uid: System.Data.ReadOnlyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -35,7 +26,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.ReadOnlyException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Data.ReadOnlyException.#ctor
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -44,7 +35,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.ReadOnlyException.#ctor
+uid: System.Data.ReadOnlyException
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

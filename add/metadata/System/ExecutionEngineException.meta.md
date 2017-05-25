@@ -1,5 +1,5 @@
 ---
-uid: System.ExecutionEngineException
+uid: System.ExecutionEngineException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,16 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ExecutionEngineException.#ctor(System.String,System.Exception)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ExecutionEngineException.#ctor
+uid: System.ExecutionEngineException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

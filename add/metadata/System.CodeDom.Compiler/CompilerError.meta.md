@@ -1,41 +1,5 @@
 ---
-uid: System.CodeDom.Compiler.CompilerError
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.Compiler.CompilerError.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.Compiler.CompilerError.#ctor(System.String,System.Int32,System.Int32,System.String,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.Compiler.CompilerError.Column
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.Compiler.CompilerError.FileName
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -71,7 +35,34 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.CodeDom.Compiler.CompilerError.FileName
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
 uid: System.CodeDom.Compiler.CompilerError.ToString
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerError.Column
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.Compiler.CompilerError.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -89,7 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerError.#ctor
+uid: System.CodeDom.Compiler.CompilerError
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

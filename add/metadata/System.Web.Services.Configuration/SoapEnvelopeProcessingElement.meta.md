@@ -1,23 +1,5 @@
 ---
-uid: System.Web.Services.Configuration.SoapEnvelopeProcessingElement
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Configuration.SoapEnvelopeProcessingElement.#ctor(System.Int32,System.Boolean)
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Configuration.SoapEnvelopeProcessingElement.ReadTimeout
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -35,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Configuration.SoapEnvelopeProcessingElement.#ctor
+uid: System.Web.Services.Configuration.SoapEnvelopeProcessingElement.ReadTimeout
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -54,6 +36,15 @@ manager: "erikre"
 
 ---
 uid: System.Web.Services.Configuration.SoapEnvelopeProcessingElement.#ctor
+ms.technology: 
+  - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Configuration.SoapEnvelopeProcessingElement
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"

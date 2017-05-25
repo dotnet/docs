@@ -1,14 +1,5 @@
 ---
-uid: System.Configuration.ConfigurationSectionGroup
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.ConfigurationSectionGroup.IsDeclared
+uid: System.Configuration.ConfigurationSectionGroup.ShouldSerializeSectionGroupInTargetVersion(System.Runtime.Versioning.FrameworkName)
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -26,25 +17,16 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Configuration.ConfigurationSectionGroup.IsDeclarationRequired
+ms.technology: 
+  - "dotnet-webforms"
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
 uid: System.Configuration.ConfigurationSectionGroup.ForceDeclaration
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.ConfigurationSectionGroup.Sections
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.ConfigurationSectionGroup.ShouldSerializeSectionGroupInTargetVersion(System.Runtime.Versioning.FrameworkName)
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -71,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationSectionGroup.#ctor
+uid: System.Configuration.ConfigurationSectionGroup.IsDeclared
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -80,7 +62,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationSectionGroup.ForceDeclaration
+uid: System.Configuration.ConfigurationSectionGroup.Sections
+ms.technology: 
+  - "dotnet-webforms"
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.ConfigurationSectionGroup.#ctor
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -98,7 +89,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationSectionGroup.IsDeclarationRequired
+uid: System.Configuration.ConfigurationSectionGroup.Type
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -107,7 +98,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationSectionGroup.Type
+uid: System.Configuration.ConfigurationSectionGroup
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

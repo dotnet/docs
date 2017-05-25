@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Media.Animation.DiscreteStringKeyFrame
+uid: System.Windows.Media.Animation.DiscreteStringKeyFrame.InterpolateValueCore(System.String,System.Double)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -8,12 +8,11 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteStringKeyFrame.#ctor
+uid: System.Windows.Media.Animation.DiscreteStringKeyFrame.#ctor(System.String,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
@@ -35,15 +34,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteStringKeyFrame.#ctor(System.String,System.Windows.Media.Animation.KeyTime)
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.DiscreteStringKeyFrame.InterpolateValueCore(System.String,System.Double)
+uid: System.Windows.Media.Animation.DiscreteStringKeyFrame.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -52,7 +43,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteStringKeyFrame.#ctor
+uid: System.Windows.Media.Animation.DiscreteStringKeyFrame
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

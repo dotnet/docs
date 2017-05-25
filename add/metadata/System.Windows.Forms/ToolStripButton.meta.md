@@ -1,13 +1,4 @@
 ---
-uid: System.Windows.Forms.ToolStripButton
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripButton.#ctor(System.String,System.Drawing.Image,System.EventHandler,System.String)
 ms.technology: 
   - "dotnet-winforms"
@@ -17,15 +8,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripButton.GetPreferredSize(System.Drawing.Size)
+uid: System.Windows.Forms.ToolStripButton.#ctor(System.String,System.Drawing.Image,System.EventHandler)
 ms.technology: 
   - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripButton.CheckedChanged
+uid: System.Windows.Forms.ToolStripButton.OnPaint(System.Windows.Forms.PaintEventArgs)
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -52,59 +44,16 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Windows.Forms.ToolStripButton.OnCheckedChanged(System.EventArgs)
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Windows.Forms.ToolStripButton.#ctor(System.Drawing.Image)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ToolStripButton.CreateAccessibilityInstance
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.ToolStripButton.#ctor(System.String)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ToolStripButton.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ToolStripButton.OnPaint(System.Windows.Forms.PaintEventArgs)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ToolStripButton.CheckStateChanged
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Forms.ToolStripButton.#ctor(System.String,System.Drawing.Image,System.EventHandler)
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -122,7 +71,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripButton.CanSelect
+uid: System.Windows.Forms.ToolStripButton.#ctor(System.String)
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.ToolStripButton.GetPreferredSize(System.Drawing.Size)
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "kempb"
@@ -130,7 +88,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripButton.#ctor
+uid: System.Windows.Forms.ToolStripButton.CheckedChanged
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -157,7 +115,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripButton.OnCheckedChanged(System.EventArgs)
+uid: System.Windows.Forms.ToolStripButton.#ctor
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -166,11 +124,20 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripButton.CheckOnClick
+uid: System.Windows.Forms.ToolStripButton.CreateAccessibilityInstance
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "kempb"
 manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripButton
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -182,7 +149,31 @@ manager: "ghogen"
 ---
 
 ---
+uid: System.Windows.Forms.ToolStripButton.CheckStateChanged
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripButton.CheckOnClick
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
 uid: System.Windows.Forms.ToolStripButton.AutoToolTip
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Forms.ToolStripButton.CanSelect
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "kempb"

@@ -1,19 +1,5 @@
 ---
-uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue.DataValue
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue.#ctor
+uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue.#ctor(System.String,System.String,System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,7 +13,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue.#ctor
+uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue.DataValue
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -41,7 +27,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue.#ctor(System.String,System.String,System.String)
+uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Runtime.Tracking.TrackingDataItemValue
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

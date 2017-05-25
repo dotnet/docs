@@ -1,31 +1,4 @@
 ---
-uid: System.ServiceModel.WSHttpContextBinding
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.WSHttpContextBinding.CreateBindingElements
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.WSHttpContextBinding.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.WSHttpContextBinding.#ctor(System.ServiceModel.SecurityMode,System.Boolean)
 ms.technology: 
   - "dotnet-standard"
@@ -62,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WSHttpContextBinding.#ctor
+uid: System.ServiceModel.WSHttpContextBinding.CreateBindingElements
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -80,7 +53,25 @@ manager: "erikre"
 ---
 
 ---
+uid: System.ServiceModel.WSHttpContextBinding.#ctor(System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.ServiceModel.WSHttpContextBinding.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.WSHttpContextBinding
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

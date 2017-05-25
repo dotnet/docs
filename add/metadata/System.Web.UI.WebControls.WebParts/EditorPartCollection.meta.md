@@ -1,5 +1,5 @@
 ---
-uid: System.Web.UI.WebControls.WebParts.EditorPartCollection
+uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor(System.Web.UI.WebControls.WebParts.EditorPartCollection,System.Collections.ICollection)
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -8,25 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.Empty
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor(System.Collections.ICollection)
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor
+uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.CopyTo(System.Web.UI.WebControls.WebParts.EditorPart[],System.Int32)
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -53,16 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor(System.Web.UI.WebControls.WebParts.EditorPartCollection,System.Collections.ICollection)
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.CopyTo(System.Web.UI.WebControls.WebParts.EditorPart[],System.Int32)
+uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor(System.Collections.ICollection)
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -80,7 +53,25 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.Empty
+ms.technology: 
+  - "dotnet-webforms"
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
 uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor
+ms.technology: 
+  - "dotnet-webforms"
+author: "tdykstra"
+ms.author: "tdykstra"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.WebParts.EditorPartCollection
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

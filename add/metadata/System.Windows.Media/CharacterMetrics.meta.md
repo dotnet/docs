@@ -1,67 +1,5 @@
 ---
-uid: System.Windows.Media.CharacterMetrics
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.CharacterMetrics.Baseline
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.CharacterMetrics.RightSideBearing
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.CharacterMetrics.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.CharacterMetrics.LeftSideBearing
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.CharacterMetrics.TopSideBearing
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.CharacterMetrics.Metrics
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.CharacterMetrics.BlackBoxWidth
+uid: System.Windows.Media.CharacterMetrics.Equals(System.Object)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -88,7 +26,43 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.CharacterMetrics.#ctor
+uid: System.Windows.Media.CharacterMetrics.RightSideBearing
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.LeftSideBearing
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.TopSideBearing
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.BlackBoxHeight
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.BlackBoxWidth
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -106,7 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.CharacterMetrics.Equals(System.Object)
+uid: System.Windows.Media.CharacterMetrics.Metrics
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -115,10 +89,27 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.CharacterMetrics.BlackBoxHeight
+uid: System.Windows.Media.CharacterMetrics.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.CharacterMetrics.Baseline
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

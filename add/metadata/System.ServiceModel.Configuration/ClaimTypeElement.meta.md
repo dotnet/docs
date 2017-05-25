@@ -1,13 +1,4 @@
 ---
-uid: System.ServiceModel.Configuration.ClaimTypeElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.ClaimTypeElement.#ctor(System.String,System.Boolean)
 ms.technology: 
   - "dotnet-standard"
@@ -17,16 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.ClaimTypeElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.ClaimTypeElement.#ctor
+uid: System.ServiceModel.Configuration.ClaimTypeElement.IsOptional
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,7 +26,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.ClaimTypeElement.IsOptional
+uid: System.ServiceModel.Configuration.ClaimTypeElement.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.ClaimTypeElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

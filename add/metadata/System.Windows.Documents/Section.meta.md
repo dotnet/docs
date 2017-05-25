@@ -1,14 +1,5 @@
 ---
-uid: System.Windows.Documents.Section
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Section.HasTrailingParagraphBreakOnPaste
+uid: System.Windows.Documents.Section.ShouldSerializeBlocks(System.Windows.Markup.XamlDesignerSerializationManager)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -26,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Section.#ctor
+uid: System.Windows.Documents.Section.HasTrailingParagraphBreakOnPaste
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Section.ShouldSerializeBlocks(System.Windows.Markup.XamlDesignerSerializationManager)
+uid: System.Windows.Documents.Section
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

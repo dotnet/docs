@@ -1,5 +1,14 @@
 ---
-uid: System.CodeDom.CodeNamespace
+uid: System.CodeDom.CodeNamespace.#ctor(System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeNamespace.PopulateComments
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeNamespace.Imports
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeNamespace.Comments
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeNamespace.#ctor
+uid: System.CodeDom.CodeNamespace.Imports
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -53,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeNamespace.PopulateComments
+uid: System.CodeDom.CodeNamespace.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -71,25 +71,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeNamespace.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeNamespace.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeNamespace.Name
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeNamespace
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

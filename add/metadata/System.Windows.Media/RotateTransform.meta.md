@@ -1,5 +1,13 @@
 ---
-uid: System.Windows.Media.RotateTransform
+uid: System.Windows.Media.RotateTransform.#ctor(System.Double,System.Double,System.Double)
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.RotateTransform.#ctor(System.Double)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -8,11 +16,21 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.RotateTransform.#ctor(System.Double,System.Double,System.Double)
+uid: System.Windows.Media.RotateTransform.CenterYProperty
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.RotateTransform.CenterXProperty
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -34,57 +52,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.RotateTransform.Clone
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.RotateTransform.CloneCurrentValue
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.RotateTransform.#ctor(System.Double)
+uid: System.Windows.Media.RotateTransform.CenterY
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Media.RotateTransform.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.RotateTransform.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
 uid: System.Windows.Media.RotateTransform.Value
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.RotateTransform.CenterYProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -102,7 +79,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.RotateTransform.CenterY
+uid: System.Windows.Media.RotateTransform
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -111,10 +88,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.RotateTransform.CenterXProperty
+uid: System.Windows.Media.RotateTransform.CloneCurrentValue
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.RotateTransform.Clone
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.RotateTransform.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

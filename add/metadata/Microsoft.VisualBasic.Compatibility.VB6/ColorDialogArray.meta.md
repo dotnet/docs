@@ -1,5 +1,5 @@
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray
+uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.SetIndex(System.Windows.Forms.ColorDialog,System.Int16)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -7,27 +7,6 @@ manager: "wpickett"
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.ShouldSerializeIndex(System.Windows.Forms.ColorDialog)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.HookUpControlEvents(System.Object)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.CanExtend(System.Object)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -55,14 +34,28 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.Item(System.Int16)
+uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.HookUpControlEvents(System.Object)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.#ctor
+uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.CanExtend(System.Object)
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.GetControlInstanceType
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.Item(System.Int16)
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -76,14 +69,14 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.SetIndex(System.Windows.Forms.ColorDialog,System.Int16)
+uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.#ctor
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.GetControlInstanceType
+uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

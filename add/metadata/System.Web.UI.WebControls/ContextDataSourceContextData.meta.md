@@ -1,12 +1,4 @@
 ---
-uid: System.Web.UI.WebControls.ContextDataSourceContextData
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.ContextDataSourceContextData.#ctor(System.Object)
 ms.technology: 
   - "dotnet-webforms"
@@ -15,7 +7,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.ContextDataSourceContextData.#ctor
+uid: System.Web.UI.WebControls.ContextDataSourceContextData.EntitySet
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -39,7 +31,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.ContextDataSourceContextData.EntitySet
+uid: System.Web.UI.WebControls.ContextDataSourceContextData
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

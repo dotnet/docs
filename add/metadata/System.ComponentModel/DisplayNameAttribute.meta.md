@@ -1,14 +1,5 @@
 ---
-uid: System.ComponentModel.DisplayNameAttribute
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.DisplayNameAttribute.IsDefaultAttribute
+uid: System.ComponentModel.DisplayNameAttribute.Equals(System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -18,6 +9,15 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.DisplayNameAttribute.#ctor(System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.DisplayNameAttribute.IsDefaultAttribute
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -44,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DisplayNameAttribute.#ctor
+uid: System.ComponentModel.DisplayNameAttribute.DisplayName
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -71,16 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DisplayNameAttribute.DisplayName
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.DisplayNameAttribute.Equals(System.Object)
+uid: System.ComponentModel.DisplayNameAttribute
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

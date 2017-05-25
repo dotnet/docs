@@ -1,14 +1,5 @@
 ---
-uid: System.ComponentModel.Composition.Hosting.AtomicComposition
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.AtomicComposition.Complete
+uid: System.ComponentModel.Composition.Hosting.AtomicComposition.#ctor(System.ComponentModel.Composition.Hosting.AtomicComposition)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.AtomicComposition.Dispose
+uid: System.ComponentModel.Composition.Hosting.AtomicComposition.AddCompleteAction(System.Action)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.AtomicComposition.AddCompleteAction(System.Action)
+uid: System.ComponentModel.Composition.Hosting.AtomicComposition.AddRevertAction(System.Action)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -80,25 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.AtomicComposition.#ctor(System.ComponentModel.Composition.Hosting.AtomicComposition)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.AtomicComposition.AddRevertAction(System.Action)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.AtomicComposition.#ctor
+uid: System.ComponentModel.Composition.Hosting.AtomicComposition.Complete
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -117,6 +90,15 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Composition.Hosting.AtomicComposition.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Composition.Hosting.AtomicComposition
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

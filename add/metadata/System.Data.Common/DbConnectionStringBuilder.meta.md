@@ -1,5 +1,5 @@
 ---
-uid: System.Data.Common.DbConnectionStringBuilder
+uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -8,7 +8,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#GetEnumerator
+uid: System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair(System.Text.StringBuilder,System.String,System.String,System.Boolean)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -26,24 +26,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetConverter
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair(System.Text.StringBuilder,System.String,System.String)
 ms.technology: 
   - "dotnet-ado"
@@ -53,84 +35,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#IsSynchronized
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#SyncRoot
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetComponentName
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.Item(System.String)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.EquivalentTo(System.Data.Common.DbConnectionStringBuilder)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetEvents
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.#ctor(System.Boolean)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.ClearPropertyDescriptors
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.Remove(System.String)
+uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -148,7 +53,52 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IEnumerable#GetEnumerator
+uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Add(System.Object,System.Object)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetComponentName
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetDefaultEvent
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.EquivalentTo(System.Data.Common.DbConnectionStringBuilder)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -175,43 +125,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.Values
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.BrowsableConnectionString
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.GetProperties(System.Collections.Hashtable)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty
+uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetConverter
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -229,50 +143,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.IsFixedSize
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.ContainsKey(System.String)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Add(System.Object,System.Object)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Item(System.Object)
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair
+uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Contains(System.Object)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -290,7 +161,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.ToString
+uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Remove(System.Object)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -299,7 +170,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.IsReadOnly
+uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#GetEnumerator
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -308,7 +179,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.Clear
+uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IEnumerable#GetEnumerator
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -317,7 +188,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetProperties
+uid: System.Data.Common.DbConnectionStringBuilder.GetProperties(System.Collections.Hashtable)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -326,7 +197,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair(System.Text.StringBuilder,System.String,System.String,System.Boolean)
+uid: System.Data.Common.DbConnectionStringBuilder.TryGetValue(System.String,System.Object@)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -344,33 +215,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.Keys
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Remove(System.Object)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetEvents(System.Attribute[])
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbConnectionStringBuilder.ShouldSerialize(System.String)
 ms.technology: 
   - "dotnet-ado"
@@ -380,7 +224,61 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.Count
+uid: System.Data.Common.DbConnectionStringBuilder.ContainsKey(System.String)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.BrowsableConnectionString
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.ClearPropertyDescriptors
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.#ctor(System.Boolean)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.Remove(System.String)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.Item(System.String)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.AppendKeyValuePair
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -398,6 +296,56 @@ manager: "jhubbard"
 ---
 
 ---
+uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Item(System.Object)
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.IsFixedSize
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#IsSynchronized
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.IsReadOnly
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.ToString
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.Values
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
 uid: System.Data.Common.DbConnectionStringBuilder.#ctor
 ms.technology: 
   - "dotnet-ado"
@@ -407,7 +355,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#IDictionary#Contains(System.Object)
+uid: System.Data.Common.DbConnectionStringBuilder.Clear
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -416,7 +364,32 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.TryGetValue(System.String,System.Object@)
+uid: System.Data.Common.DbConnectionStringBuilder.Count
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.System#Collections#ICollection#SyncRoot
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder.Keys
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Common.DbConnectionStringBuilder
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

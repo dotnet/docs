@@ -1,9 +1,10 @@
 ---
-uid: System.Windows.Setter
+uid: System.Windows.Setter.ReceiveMarkupExtension(System.Object,System.Windows.Markup.XamlSetMarkupExtensionEventArgs)
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -16,7 +17,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Setter.Value
+uid: System.Windows.Setter.#ctor(System.Windows.DependencyProperty,System.Object,System.String)
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Setter.#ctor(System.Windows.DependencyProperty,System.Object)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -34,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Setter.#ctor
+uid: System.Windows.Setter.System#ComponentModel#ISupportInitialize#EndInit
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -61,6 +71,15 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Windows.Setter.Value
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Windows.Setter.#ctor
 ms.technology: 
   - "dotnet-wpf"
@@ -70,37 +89,9 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Setter.#ctor(System.Windows.DependencyProperty,System.Object)
+uid: System.Windows.Setter
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Setter.#ctor(System.Windows.DependencyProperty,System.Object,System.String)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Setter.ReceiveMarkupExtension(System.Object,System.Windows.Markup.XamlSetMarkupExtensionEventArgs)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Setter.System#ComponentModel#ISupportInitialize#EndInit
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

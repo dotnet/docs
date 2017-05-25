@@ -1,14 +1,5 @@
 ---
-uid: System.Security.Cryptography.HMACSHA384
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.HMACSHA384.Dispose
+uid: System.Security.Cryptography.HMACSHA384.ProduceLegacyHmacValues
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.HMACSHA384.ProduceLegacyHmacValues
+uid: System.Security.Cryptography.HMACSHA384.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.HMACSHA384.#ctor
+uid: System.Security.Cryptography.HMACSHA384
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

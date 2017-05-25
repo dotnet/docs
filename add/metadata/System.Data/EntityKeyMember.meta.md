@@ -1,23 +1,5 @@
 ---
-uid: System.Data.EntityKeyMember
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityKeyMember.Key
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityKeyMember.#ctor
+uid: System.Data.EntityKeyMember.#ctor(System.String,System.Object)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -44,7 +26,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityKeyMember.#ctor(System.String,System.Object)
+uid: System.Data.EntityKeyMember.Value
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -53,7 +35,16 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityKeyMember.Value
+uid: System.Data.EntityKeyMember.Key
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.EntityKeyMember
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Media.Animation.LinearRectKeyFrame
+uid: System.Windows.Media.Animation.LinearRectKeyFrame.#ctor(System.Windows.Rect,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.LinearRectKeyFrame.#ctor
+uid: System.Windows.Media.Animation.LinearRectKeyFrame.InterpolateValueCore(System.Windows.Rect,System.Double)
 ms.technology: 
   - "dotnet-wpf"
 ms.author: "kempb"
@@ -34,15 +34,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.LinearRectKeyFrame.InterpolateValueCore(System.Windows.Rect,System.Double)
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.LinearRectKeyFrame.#ctor(System.Windows.Rect,System.Windows.Media.Animation.KeyTime)
+uid: System.Windows.Media.Animation.LinearRectKeyFrame
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

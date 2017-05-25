@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Media.Animation.SplinePointKeyFrame
+uid: System.Windows.Media.Animation.SplinePointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplinePointKeyFrame.#ctor
+uid: System.Windows.Media.Animation.SplinePointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -34,7 +34,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplinePointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)
+uid: System.Windows.Media.Animation.SplinePointKeyFrame.CreateInstanceCore
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -70,16 +70,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplinePointKeyFrame.CreateInstanceCore
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.SplinePointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
+uid: System.Windows.Media.Animation.SplinePointKeyFrame
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

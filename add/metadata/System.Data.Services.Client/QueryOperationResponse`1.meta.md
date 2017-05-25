@@ -1,13 +1,4 @@
 ---
-uid: System.Data.Services.Client.QueryOperationResponse`1
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Services.Client.QueryOperationResponse`1.GetContinuation
 ms.technology: 
   - "dotnet-ado"
@@ -35,7 +26,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Services.Client.QueryOperationResponse`1.GetContinuation
+uid: System.Data.Services.Client.QueryOperationResponse`1
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

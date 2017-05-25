@@ -1,9 +1,4 @@
 ---
-uid: Microsoft.JScript.EnumeratorConstructor
-ms.author: "mikejo"
----
-
----
 uid: Microsoft.JScript.EnumeratorConstructor.CreateInstance(System.Object[])
 ms.author: "mikejo"
 ---
@@ -14,5 +9,6 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.EnumeratorConstructor.Invoke
+uid: Microsoft.JScript.EnumeratorConstructor
+ms.author: "mikejo"
 ---

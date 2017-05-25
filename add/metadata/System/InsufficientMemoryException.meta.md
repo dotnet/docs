@@ -1,5 +1,5 @@
 ---
-uid: System.InsufficientMemoryException
+uid: System.InsufficientMemoryException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,16 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.InsufficientMemoryException.#ctor(System.String,System.Exception)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.InsufficientMemoryException.#ctor
+uid: System.InsufficientMemoryException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

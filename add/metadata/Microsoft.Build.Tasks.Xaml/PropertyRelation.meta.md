@@ -1,5 +1,5 @@
 ---
-uid: Microsoft.Build.Tasks.Xaml.PropertyRelation
+uid: Microsoft.Build.Tasks.Xaml.PropertyRelation.#ctor(System.String,System.String,System.Boolean)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -7,13 +7,6 @@ manager: "erikre"
 
 ---
 uid: Microsoft.Build.Tasks.Xaml.PropertyRelation.Argument
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: Microsoft.Build.Tasks.Xaml.PropertyRelation.#ctor(System.String,System.String,System.Boolean)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -41,7 +34,7 @@ manager: "erikre"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Xaml.PropertyRelation.#ctor
+uid: Microsoft.Build.Tasks.Xaml.PropertyRelation
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

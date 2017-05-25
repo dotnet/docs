@@ -1,13 +1,4 @@
 ---
-uid: System.ServiceModel.Channels.StreamSecurityUpgradeProvider
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.StreamSecurityUpgradeProvider.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)
 ms.technology: 
   - "dotnet-standard"
@@ -35,7 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.StreamSecurityUpgradeProvider.#ctor
+uid: System.ServiceModel.Channels.StreamSecurityUpgradeProvider
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

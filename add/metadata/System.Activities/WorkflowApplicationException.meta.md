@@ -1,5 +1,32 @@
 ---
-uid: System.Activities.WorkflowApplicationException
+uid: System.Activities.WorkflowApplicationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.WorkflowApplicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.WorkflowApplicationException.#ctor(System.String,System.Guid,System.Exception)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.WorkflowApplicationException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -17,7 +44,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Activities.WorkflowApplicationException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,43 +71,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplicationException.#ctor(System.String,System.Exception)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplicationException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplicationException.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplicationException.#ctor(System.String,System.Guid,System.Exception)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplicationException.#ctor
+uid: System.Activities.WorkflowApplicationException
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

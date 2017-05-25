@@ -1,17 +1,23 @@
 ---
-uid: Microsoft.Build.Framework.TaskFinishedEventArgs
+uid: Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.DateTime)
 ms.author: "susanno"
 manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor
+uid: Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean)
 ms.author: "susanno"
 manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor
+uid: Microsoft.Build.Framework.TaskFinishedEventArgs.ProjectFile
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.TaskFinishedEventArgs.Succeeded
 ms.author: "susanno"
 manager: "douge"
 ---
@@ -29,25 +35,13 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.TaskFinishedEventArgs.Succeeded
+uid: Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor
 ms.author: "susanno"
 manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.TaskFinishedEventArgs.ProjectFile
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean)
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.DateTime)
+uid: Microsoft.Build.Framework.TaskFinishedEventArgs
 ms.author: "susanno"
 manager: "douge"
 ---

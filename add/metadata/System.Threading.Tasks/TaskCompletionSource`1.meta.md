@@ -1,5 +1,5 @@
 ---
-uid: System.Threading.Tasks.TaskCompletionSource`1
+uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Collections.Generic.IEnumerable{System.Exception})
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskCompletionSource`1.SetCanceled
+uid: System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -17,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)
+uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object,System.Threading.Tasks.TaskCreationOptions)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,61 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.TaskCompletionSource`1.SetException(System.Collections.Generic.IEnumerable{System.Exception})
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(`0)
+uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -116,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskCompletionSource`1.Task
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object)
 ms.technology: 
   - "dotnet-standard"
@@ -134,7 +71,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Exception)
+uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetResult(`0)
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetException
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetCanceled
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Tasks.TaskCompletionSource`1.SetResult(`0)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -152,7 +116,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor(System.Object,System.Threading.Tasks.TaskCreationOptions)
+uid: System.Threading.Tasks.TaskCompletionSource`1.SetCanceled
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -161,7 +125,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskCompletionSource`1.TrySetException(System.Collections.Generic.IEnumerable{System.Exception})
+uid: System.Threading.Tasks.TaskCompletionSource`1.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Tasks.TaskCompletionSource`1.Task
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Tasks.TaskCompletionSource`1
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

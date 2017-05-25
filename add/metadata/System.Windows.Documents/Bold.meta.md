@@ -1,20 +1,4 @@
 ---
-uid: System.Windows.Documents.Bold
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Documents.Bold.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Documents.Bold.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)
 ms.technology: 
   - "dotnet-wpf"
@@ -24,12 +8,11 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Bold.#ctor
+uid: System.Windows.Documents.Bold.#ctor(System.Windows.Documents.TextPointer,System.Windows.Documents.TextPointer)
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
@@ -48,4 +31,12 @@ ms.technology:
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Bold
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

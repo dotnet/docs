@@ -1,13 +1,5 @@
 ---
-uid: System.IdentityModel.Metadata.ContactPerson
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Metadata.ContactPerson.GivenName
+uid: System.IdentityModel.Metadata.ContactPerson.#ctor(System.IdentityModel.Metadata.ContactType)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -23,14 +15,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.ContactPerson.#ctor(System.IdentityModel.Metadata.ContactType)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Metadata.ContactPerson.EmailAddresses
 ms.technology: 
   - "dotnet-standard"
@@ -39,15 +23,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.ContactPerson.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Metadata.ContactPerson.Type
+uid: System.IdentityModel.Metadata.ContactPerson.GivenName
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -72,6 +48,22 @@ manager: "markgal"
 
 ---
 uid: System.IdentityModel.Metadata.ContactPerson.#ctor
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.ContactPerson.Type
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Metadata.ContactPerson
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

@@ -1,5 +1,5 @@
 ---
-uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor
+uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.ApplyTo(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -7,15 +7,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor
+uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -39,7 +31,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifier)
+uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -47,7 +39,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor.ApplyTo(System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse)
+uid: System.IdentityModel.Tokens.AsymmetricProofDescriptor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

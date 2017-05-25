@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.Channels.CustomBinding
+uid: System.ServiceModel.Channels.CustomBinding.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.BindingElement})
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -17,33 +17,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.CustomBinding.#ctor(System.ServiceModel.Channels.Binding)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.CustomBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.CustomBinding.Elements
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.CustomBinding.#ctor(System.ServiceModel.Channels.BindingElement[])
 ms.technology: 
   - "dotnet-standard"
@@ -53,16 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.CustomBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.CustomBinding.Scheme
+uid: System.ServiceModel.Channels.CustomBinding.#ctor(System.ServiceModel.Channels.Binding)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -89,7 +53,34 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.CustomBinding.#ctor(System.Collections.Generic.IEnumerable{System.ServiceModel.Channels.BindingElement})
+uid: System.ServiceModel.Channels.CustomBinding.Elements
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.CustomBinding.Scheme
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.CustomBinding.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.CustomBinding
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

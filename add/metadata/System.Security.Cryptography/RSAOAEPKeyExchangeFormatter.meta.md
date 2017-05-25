@@ -1,14 +1,5 @@
 ---
-uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.#ctor
+uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -26,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Parameter
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.CreateKeyExchange(System.Byte[],System.Type)
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
+uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.CreateKeyExchange(System.Byte[])
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -71,7 +53,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.CreateKeyExchange(System.Byte[])
+uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.Parameter
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -89,7 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter.#ctor
+uid: System.Security.Cryptography.RSAOAEPKeyExchangeFormatter
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

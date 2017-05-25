@@ -1,5 +1,5 @@
 ---
-uid: System.Security.RightsManagement.CryptoProvider
+uid: System.Security.RightsManagement.CryptoProvider.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -8,7 +8,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.RightsManagement.CryptoProvider.CanDecrypt
+uid: System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -18,6 +27,24 @@ manager: "wpickett"
 
 ---
 uid: System.Security.RightsManagement.CryptoProvider.CanMergeBlocks
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.RightsManagement.CryptoProvider.BoundGrants
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.RightsManagement.CryptoProvider.CanDecrypt
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -53,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.RightsManagement.CryptoProvider.Encrypt(System.Byte[])
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Security.RightsManagement.CryptoProvider.Dispose
 ms.technology: 
   - "dotnet-standard"
@@ -71,34 +89,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.RightsManagement.CryptoProvider.BoundGrants
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Security.RightsManagement.CryptoProvider.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Security.RightsManagement.CryptoProvider.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Security.RightsManagement.CryptoProvider.Decrypt(System.Byte[])
+uid: System.Security.RightsManagement.CryptoProvider
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

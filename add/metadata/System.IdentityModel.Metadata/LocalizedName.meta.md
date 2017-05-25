@@ -1,13 +1,5 @@
 ---
-uid: System.IdentityModel.Metadata.LocalizedName
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Metadata.LocalizedName.#ctor
+uid: System.IdentityModel.Metadata.LocalizedName.#ctor(System.String,System.Globalization.CultureInfo)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -31,7 +23,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.LocalizedName.#ctor(System.String,System.Globalization.CultureInfo)
+uid: System.IdentityModel.Metadata.LocalizedName
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

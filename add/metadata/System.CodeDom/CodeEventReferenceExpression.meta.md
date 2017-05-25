@@ -1,5 +1,5 @@
 ---
-uid: System.CodeDom.CodeEventReferenceExpression
+uid: System.CodeDom.CodeEventReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -17,24 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeEventReferenceExpression.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeEventReferenceExpression.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeEventReferenceExpression.EventName
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +26,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeEventReferenceExpression.#ctor(System.CodeDom.CodeExpression,System.String)
+uid: System.CodeDom.CodeEventReferenceExpression.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeEventReferenceExpression
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -1,13 +1,4 @@
 ---
-uid: System.Activities.OverloadGroupAttribute
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.OverloadGroupAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -17,7 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.OverloadGroupAttribute.#ctor
+uid: System.Activities.OverloadGroupAttribute.GroupName
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.OverloadGroupAttribute.GroupName
+uid: System.Activities.OverloadGroupAttribute
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

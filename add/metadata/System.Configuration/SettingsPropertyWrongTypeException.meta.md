@@ -1,12 +1,4 @@
 ---
-uid: System.Configuration.SettingsPropertyWrongTypeException
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.SettingsPropertyWrongTypeException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-webforms"
@@ -39,9 +31,9 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.SettingsPropertyWrongTypeException.#ctor
+uid: System.Configuration.SettingsPropertyWrongTypeException
 ms.technology: 
-  - "dotnet-webforms"
+  - "dotnet-standard"
 ms.author: "riande"
 manager: "wpickett"
 ---

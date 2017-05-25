@@ -1,19 +1,5 @@
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.GetXsdType
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.Value
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.#ctor(System.Decimal)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -27,7 +13,14 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.#ctor(System.Decimal)
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.GetXsdType
+ms.technology: 
+  - "dotnet-standard"
+manager: "ghogen"
+---
+
+---
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.ToString
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -41,7 +34,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.#ctor
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.Value
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -55,7 +48,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger.ToString
+uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapInteger
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"

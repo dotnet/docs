@@ -1,5 +1,32 @@
 ---
-uid: System.Windows.Media.DashStyle
+uid: System.Windows.Media.DashStyle.#ctor(System.Collections.Generic.IEnumerable{System.Double},System.Double)
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.DashStyle.CloneCurrentValue
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.DashStyle.DashesProperty
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.DashStyle.OffsetProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -35,33 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.DashStyle.DashesProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.DashStyle.CloneCurrentValue
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.DashStyle.OffsetProperty
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.DashStyle.#ctor
 ms.technology: 
   - "dotnet-wpf"
@@ -71,16 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.DashStyle.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.DashStyle.#ctor(System.Collections.Generic.IEnumerable{System.Double},System.Double)
+uid: System.Windows.Media.DashStyle
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

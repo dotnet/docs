@@ -1,13 +1,5 @@
 ---
-uid: System.Web.DynamicData.FilterRepeater
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.DynamicData.FilterRepeater.OnFilterItemCreated(System.Web.UI.WebControls.RepeaterItem)
+uid: System.Web.DynamicData.FilterRepeater.OnItemCreated(System.Web.UI.WebControls.RepeaterItemEventArgs)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -23,7 +15,39 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.FilterRepeater.Table
+uid: System.Web.DynamicData.FilterRepeater.OnFilterItemCreated(System.Web.UI.WebControls.RepeaterItem)
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.DynamicData.FilterRepeater.OnInit(System.EventArgs)
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.DynamicData.FilterRepeater.DynamicFilterContainerId
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.DynamicData.FilterRepeater.GetFilteredColumns
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.DynamicData.FilterRepeater.ContextTypeName
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -47,9 +71,19 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.FilterRepeater.DataBind
+uid: System.Web.DynamicData.FilterRepeater.Visible
 ms.technology: 
   - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.DynamicData.FilterRepeater.Table
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
@@ -61,47 +95,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.FilterRepeater.ContextTypeName
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.DynamicData.FilterRepeater.OnInit(System.EventArgs)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.DynamicData.FilterRepeater.GetFilteredColumns
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.DynamicData.FilterRepeater.Visible
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.DynamicData.FilterRepeater.DynamicFilterContainerId
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.DynamicData.FilterRepeater.OnItemCreated(System.Web.UI.WebControls.RepeaterItemEventArgs)
+uid: System.Web.DynamicData.FilterRepeater
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

@@ -1,13 +1,5 @@
 ---
-uid: System.Web.UI.WebControls.AccessDataSource
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.AccessDataSource.#ctor
+uid: System.Web.UI.WebControls.AccessDataSource.CreateDataSourceView(System.String)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -39,6 +31,22 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Web.UI.WebControls.AccessDataSource.ConnectionString
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.AccessDataSource.ProviderName
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
 uid: System.Web.UI.WebControls.AccessDataSource.DataFile
 ms.technology: 
   - "dotnet-webforms"
@@ -55,23 +63,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.AccessDataSource.ProviderName
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.AccessDataSource.ConnectionString
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.AccessDataSource.CreateDataSourceView(System.String)
+uid: System.Web.UI.WebControls.AccessDataSource
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

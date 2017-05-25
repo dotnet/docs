@@ -1,10 +1,4 @@
 ---
-uid: Microsoft.VisualC.DecoratedNameAttribute
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.DecoratedNameAttribute.#ctor(System.String)
 ms.author: "mblome"
 manager: "ghogen"
@@ -17,7 +11,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.DecoratedNameAttribute.#ctor
+uid: Microsoft.VisualC.DecoratedNameAttribute
 ms.author: "mblome"
 manager: "ghogen"
 ---

@@ -1,5 +1,5 @@
 ---
-uid: System.IdentityModel.Protocols.WSTrust.InvalidRequestException
+uid: System.IdentityModel.Protocols.WSTrust.InvalidRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -23,14 +23,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Protocols.WSTrust.InvalidRequestException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Protocols.WSTrust.InvalidRequestException.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -39,7 +31,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Protocols.WSTrust.InvalidRequestException.#ctor
+uid: System.IdentityModel.Protocols.WSTrust.InvalidRequestException
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

@@ -1,12 +1,4 @@
 ---
-uid: System.Web.UI.ConstructorNeedsTagAttribute
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.ConstructorNeedsTagAttribute.#ctor(System.Boolean)
 ms.technology: 
   - "dotnet-webforms"
@@ -31,7 +23,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.ConstructorNeedsTagAttribute.#ctor
+uid: System.Web.UI.ConstructorNeedsTagAttribute
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

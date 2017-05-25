@@ -1,5 +1,14 @@
 ---
-uid: System.Data.Entity.Design.EntityClassGenerator
+uid: System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.Xml.XmlReader,System.IO.TextWriter,System.Collections.Generic.IEnumerable{System.Xml.XmlReader})
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -26,7 +35,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityClassGenerator.#ctor
+uid: System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.String,System.String)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -36,6 +45,15 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Entity.Design.EntityClassGenerator.EdmToObjectNamespaceMap
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -62,7 +80,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.Xml.XmlReader,System.IO.TextWriter,System.Collections.Generic.IEnumerable{System.Xml.XmlReader})
+uid: System.Data.Entity.Design.EntityClassGenerator.GenerateCode
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -80,34 +98,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.String,System.String)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Entity.Design.EntityClassGenerator.OnPropertyGenerated
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Entity.Design.EntityClassGenerator.GenerateCode(System.String,System.String,System.Collections.Generic.IEnumerable{System.String})
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Entity.Design.EntityClassGenerator.GenerateCode
+uid: System.Data.Entity.Design.EntityClassGenerator
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

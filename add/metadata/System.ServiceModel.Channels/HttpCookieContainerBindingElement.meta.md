@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement
+uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement.#ctor(System.ServiceModel.Channels.HttpCookieContainerBindingElement)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -8,7 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement.#ctor
+uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -18,15 +18,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement.#ctor(System.ServiceModel.Channels.HttpCookieContainerBindingElement)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -53,7 +44,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)
+uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

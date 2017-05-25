@@ -1,5 +1,5 @@
 ---
-uid: System.Data.SqlClient.SqlDataAdapter
+uid: System.Data.SqlClient.SqlDataAdapter.#ctor(System.String,System.Data.SqlClient.SqlConnection)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -8,7 +8,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlDataAdapter.#ctor(System.String,System.Data.SqlClient.SqlConnection)
+uid: System.Data.SqlClient.SqlDataAdapter.#ctor(System.Data.SqlClient.SqlCommand)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -26,7 +26,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlDataAdapter.DeleteCommand
+uid: System.Data.SqlClient.SqlDataAdapter.System#ICloneable#Clone
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -35,7 +35,18 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlDataAdapter.System#Data#IDbDataAdapter#SelectCommand
+uid: System.Data.SqlClient.SqlDataAdapter.UpdateBatchSize
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlDataAdapter.DeleteCommand
+ms.technology: 
+  - "dotnet-ado"
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
@@ -51,32 +62,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlDataAdapter.System#Data#IDbDataAdapter#UpdateCommand
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlDataAdapter.#ctor(System.Data.SqlClient.SqlCommand)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlDataAdapter.UpdateCommand
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlDataAdapter.RowUpdated
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -103,7 +89,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlDataAdapter.UpdateBatchSize
+uid: System.Data.SqlClient.SqlDataAdapter.RowUpdated
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -112,9 +98,14 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlDataAdapter.System#ICloneable#Clone
-ms.technology: 
-  - "dotnet-ado"
+uid: System.Data.SqlClient.SqlDataAdapter.System#Data#IDbDataAdapter#SelectCommand
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.SqlClient.SqlDataAdapter.System#Data#IDbDataAdapter#UpdateCommand
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
@@ -144,7 +135,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlDataAdapter.#ctor
+uid: System.Data.SqlClient.SqlDataAdapter
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

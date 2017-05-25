@@ -1,13 +1,5 @@
 ---
-uid: System.Web.UI.DataSourceSelectArguments
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount
+uid: System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError(System.Web.UI.DataSourceView)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -23,7 +15,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataSourceSelectArguments.GetHashCode
+uid: System.Web.UI.DataSourceSelectArguments.#ctor(System.String,System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -31,7 +23,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataSourceSelectArguments.RaiseUnsupportedCapabilitiesError(System.Web.UI.DataSourceView)
+uid: System.Web.UI.DataSourceSelectArguments.#ctor(System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -39,7 +31,15 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataSourceSelectArguments.#ctor
+uid: System.Web.UI.DataSourceSelectArguments.RetrieveTotalRowCount
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.DataSourceSelectArguments.Equals(System.Object)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -63,7 +63,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataSourceSelectArguments.#ctor(System.String,System.Int32,System.Int32)
+uid: System.Web.UI.DataSourceSelectArguments.TotalRowCount
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -71,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataSourceSelectArguments.#ctor
+uid: System.Web.UI.DataSourceSelectArguments.StartRowIndex
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -79,23 +79,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataSourceSelectArguments.#ctor(System.Int32,System.Int32)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.DataSourceSelectArguments.Equals(System.Object)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.DataSourceSelectArguments.Empty
+uid: System.Web.UI.DataSourceSelectArguments.GetHashCode
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -111,7 +95,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataSourceSelectArguments.TotalRowCount
+uid: System.Web.UI.DataSourceSelectArguments.#ctor
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -119,7 +103,15 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataSourceSelectArguments.StartRowIndex
+uid: System.Web.UI.DataSourceSelectArguments.Empty
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.DataSourceSelectArguments
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

@@ -1,14 +1,5 @@
 ---
-uid: System.ComponentModel.AddingNewEventArgs
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.AddingNewEventArgs.#ctor
+uid: System.ComponentModel.AddingNewEventArgs.#ctor(System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -35,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.AddingNewEventArgs.#ctor(System.Object)
+uid: System.ComponentModel.AddingNewEventArgs
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

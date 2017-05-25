@@ -1,5 +1,5 @@
 ---
-uid: System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter
+uid: System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -9,15 +9,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.#ctor(System.Security.Cryptography.AsymmetricAlgorithm)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter.#ctor
+uid: System.Security.Cryptography.RSAOAEPKeyExchangeDeformatter
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

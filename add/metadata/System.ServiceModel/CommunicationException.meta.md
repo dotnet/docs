@@ -1,14 +1,5 @@
 ---
-uid: System.ServiceModel.CommunicationException
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.CommunicationException.#ctor
+uid: System.ServiceModel.CommunicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -26,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.CommunicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.ServiceModel.CommunicationException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.CommunicationException.#ctor(System.String)
+uid: System.ServiceModel.CommunicationException
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

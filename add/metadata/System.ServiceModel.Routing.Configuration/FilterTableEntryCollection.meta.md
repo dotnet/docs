@@ -1,32 +1,5 @@
 ---
-uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.Remove(System.ServiceModel.Routing.Configuration.FilterTableEntryElement)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.Clear
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,10 +17,30 @@ manager: "erikre"
 ---
 
 ---
+uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.GetElementKey(System.Configuration.ConfigurationElement)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.CreateNewElement
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.Clear
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
 ---
 
 ---
@@ -60,7 +53,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.GetElementKey(System.Configuration.ConfigurationElement)
+uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.Name
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -69,7 +62,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.Name
+uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

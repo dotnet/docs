@@ -1,5 +1,5 @@
 ---
-uid: System.Xaml.XamlObjectWriterException
+uid: System.Xaml.XamlObjectWriterException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
@@ -27,14 +27,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlObjectWriterException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Xaml.XamlObjectWriterException.#ctor
+uid: System.Xaml.XamlObjectWriterException
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"

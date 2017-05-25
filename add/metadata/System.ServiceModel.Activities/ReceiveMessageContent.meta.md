@@ -1,13 +1,4 @@
 ---
-uid: System.ServiceModel.Activities.ReceiveMessageContent
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Activities.ReceiveMessageContent.#ctor(System.Activities.OutArgument,System.Type)
 ms.technology: 
   - "dotnet-standard"
@@ -17,7 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activities.ReceiveMessageContent.#ctor
+uid: System.ServiceModel.Activities.ReceiveMessageContent.#ctor(System.Activities.OutArgument)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -35,7 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activities.ReceiveMessageContent.#ctor(System.Activities.OutArgument)
+uid: System.ServiceModel.Activities.ReceiveMessageContent.DeclaredMessageType
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -62,7 +53,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activities.ReceiveMessageContent.DeclaredMessageType
+uid: System.ServiceModel.Activities.ReceiveMessageContent
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

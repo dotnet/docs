@@ -1,32 +1,5 @@
 ---
-uid: System.ServiceModel.Channels.HttpsTransportBindingElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.HttpsTransportBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.HttpsTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.HttpsTransportBindingElement.Clone
+uid: System.ServiceModel.Channels.HttpsTransportBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -53,16 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.HttpsTransportBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.HttpsTransportBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
+uid: System.ServiceModel.Channels.HttpsTransportBindingElement.GetProperty``1(System.ServiceModel.Channels.BindingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -80,6 +44,15 @@ manager: "erikre"
 ---
 
 ---
+uid: System.ServiceModel.Channels.HttpsTransportBindingElement.RequireClientCertificate
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.ServiceModel.Channels.HttpsTransportBindingElement.Scheme
 ms.technology: 
   - "dotnet-standard"
@@ -89,7 +62,25 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.HttpsTransportBindingElement.RequireClientCertificate
+uid: System.ServiceModel.Channels.HttpsTransportBindingElement.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.HttpsTransportBindingElement.Clone
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Channels.HttpsTransportBindingElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

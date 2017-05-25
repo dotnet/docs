@@ -1,11 +1,4 @@
 ---
-uid: System.Workflow.Activities.MessageEventSubscription
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Type,System.String,System.Guid)
 author: "Erikre"
 ms.author: "erikre"
@@ -13,14 +6,21 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.MessageEventSubscription.MethodName
+uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Type,System.String)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.MessageEventSubscription.#ctor
+uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Guid)
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -28,13 +28,6 @@ manager: "erikre"
 
 ---
 uid: System.Workflow.Activities.MessageEventSubscription.CorrelationProperties
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.MessageEventSubscription.InterfaceType
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -55,7 +48,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid)
+uid: System.Workflow.Activities.MessageEventSubscription.InterfaceType
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.MessageEventSubscription.MethodName
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -76,14 +76,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Type,System.String)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.MessageEventSubscription.#ctor(System.IComparable,System.Guid,System.Guid)
+uid: System.Workflow.Activities.MessageEventSubscription
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

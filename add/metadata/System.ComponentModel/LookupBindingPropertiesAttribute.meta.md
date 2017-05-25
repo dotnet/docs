@@ -1,5 +1,5 @@
 ---
-uid: System.ComponentModel.LookupBindingPropertiesAttribute
+uid: System.ComponentModel.LookupBindingPropertiesAttribute.#ctor(System.String,System.String,System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -17,34 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.LookupBindingPropertiesAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.LookupBindingPropertiesAttribute.DataSource
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.LookupBindingPropertiesAttribute.GetHashCode
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.LookupBindingPropertiesAttribute.#ctor
+uid: System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -62,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.LookupBindingPropertiesAttribute.Default
+uid: System.ComponentModel.LookupBindingPropertiesAttribute.GetHashCode
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -80,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.LookupBindingPropertiesAttribute.DisplayMember
+uid: System.ComponentModel.LookupBindingPropertiesAttribute.DataSource
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -89,7 +62,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.LookupBindingPropertiesAttribute.#ctor(System.String,System.String,System.String,System.String)
+uid: System.ComponentModel.LookupBindingPropertiesAttribute.Default
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.LookupBindingPropertiesAttribute.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.LookupBindingPropertiesAttribute
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

@@ -1,5 +1,5 @@
 ---
-uid: System.Threading.Overlapped
+uid: System.Threading.Overlapped.#ctor(System.Int32,System.Int32,System.IntPtr,System.IAsyncResult)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Overlapped.UnsafePack
+uid: System.Threading.Overlapped.#ctor(System.Int32,System.Int32,System.Int32,System.IAsyncResult)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -17,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Overlapped.AsyncResult
+uid: System.Threading.Overlapped.UnsafePack(System.Threading.IOCompletionCallback,System.Object)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -35,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Overlapped.OffsetHigh
+uid: System.Threading.Overlapped.UnsafePack(System.Threading.IOCompletionCallback)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +44,43 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Overlapped.#ctor
+uid: System.Threading.Overlapped.Pack(System.Threading.IOCompletionCallback)
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Overlapped.Unpack(System.Threading.NativeOverlapped*)
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Overlapped.Free(System.Threading.NativeOverlapped*)
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Overlapped.EventHandleIntPtr
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Overlapped.AsyncResult
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -62,7 +98,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Overlapped.#ctor(System.Int32,System.Int32,System.Int32,System.IAsyncResult)
+uid: System.Threading.Overlapped.UnsafePack
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Overlapped.OffsetHigh
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -98,61 +143,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Overlapped.#ctor(System.Int32,System.Int32,System.IntPtr,System.IAsyncResult)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Overlapped.UnsafePack(System.Threading.IOCompletionCallback)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Overlapped.Pack(System.Threading.IOCompletionCallback)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Overlapped.UnsafePack(System.Threading.IOCompletionCallback,System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Overlapped.Unpack(System.Threading.NativeOverlapped*)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Overlapped.EventHandleIntPtr
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Overlapped.Free(System.Threading.NativeOverlapped*)
+uid: System.Threading.Overlapped
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

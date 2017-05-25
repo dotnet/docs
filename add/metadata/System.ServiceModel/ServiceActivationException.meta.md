@@ -1,14 +1,5 @@
 ---
-uid: System.ServiceModel.ServiceActivationException
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.ServiceActivationException.#ctor(System.String)
+uid: System.ServiceModel.ServiceActivationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -26,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ServiceActivationException.#ctor
+uid: System.ServiceModel.ServiceActivationException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ServiceActivationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.ServiceModel.ServiceActivationException
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

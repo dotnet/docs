@@ -1,9 +1,37 @@
 ---
-uid: System.Windows.Forms.DockingAttribute
+uid: System.Windows.Forms.DockingAttribute.#ctor(System.Windows.Forms.DockingBehavior)
 ms.technology: 
   - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DockingAttribute.Equals(System.Object)
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DockingAttribute.IsDefaultAttribute
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.DockingAttribute.DockingBehavior
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -25,24 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DockingAttribute.#ctor(System.Windows.Forms.DockingBehavior)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DockingAttribute.Equals(System.Object)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DockingAttribute.#ctor
 ms.technology: 
   - "dotnet-winforms"
@@ -52,28 +62,9 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DockingAttribute.DockingBehavior
+uid: System.Windows.Forms.DockingAttribute
 ms.technology: 
   - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DockingAttribute.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DockingAttribute.IsDefaultAttribute
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,23 +1,5 @@
 ---
-uid: System.Net.NetworkInformation.NetworkInformationException
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.NetworkInformation.NetworkInformationException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.NetworkInformation.NetworkInformationException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.NetworkInformation.NetworkInformationException.ErrorCode
+uid: System.Net.NetworkInformation.NetworkInformationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -29,7 +11,19 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.NetworkInformation.NetworkInformationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Net.NetworkInformation.NetworkInformationException.ErrorCode
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.NetworkInformation.NetworkInformationException.#ctor
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.NetworkInformation.NetworkInformationException
 ms.author: "bobdel"
 manager: "markl"
 ---

@@ -1,23 +1,5 @@
 ---
-uid: System.Diagnostics.PerformanceCounterCategory
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.GetInstanceNames
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String)
+uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.PerformanceCounterCategoryType,System.Diagnostics.CounterCreationDataCollection)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -35,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.Exists(System.String)
+uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.CounterCreationDataCollection)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -44,7 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.#ctor
+uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -53,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.GetCategories
+uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -62,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.GetCategories
+uid: System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -71,7 +53,43 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.MachineName
+uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.Exists(System.String,System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.#ctor(System.String,System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -107,25 +125,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.ReadCategory
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.GetCounters
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String)
+uid: System.Diagnostics.PerformanceCounterCategory.Exists(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -143,15 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.PerformanceCounterCategory.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -161,7 +152,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists(System.String,System.String)
+uid: System.Diagnostics.PerformanceCounterCategory.GetInstanceNames
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -170,7 +161,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.Exists(System.String,System.String)
+uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -179,7 +170,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.CounterCreationDataCollection)
+uid: System.Diagnostics.PerformanceCounterCategory.GetCategories
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -188,7 +179,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.#ctor
+uid: System.Diagnostics.PerformanceCounterCategory.CounterExists
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -197,16 +188,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.#ctor(System.String,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.GetCounters
+uid: System.Diagnostics.PerformanceCounterCategory.ReadCategory
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -233,7 +215,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.CounterExists(System.String,System.String,System.String)
+uid: System.Diagnostics.PerformanceCounterCategory.CategoryHelp
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.MachineName
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.PerformanceCounterCategory.GetCounters
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -251,24 +251,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.Diagnostics.PerformanceCounterCategoryType,System.Diagnostics.CounterCreationDataCollection)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.CounterExists
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.PerformanceCounterCategory.Exists
 ms.technology: 
   - "dotnet-standard"
@@ -278,7 +260,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.CategoryHelp
+uid: System.Diagnostics.PerformanceCounterCategory.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -287,16 +269,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.InstanceExists
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.Create(System.String,System.String,System.String,System.String)
+uid: System.Diagnostics.PerformanceCounterCategory
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

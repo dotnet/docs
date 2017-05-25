@@ -1,5 +1,14 @@
 ---
-uid: System.Windows.WeakEventManager.ListenerList`1
+uid: System.Windows.WeakEventManager.ListenerList`1.DeliverEvent(System.Object,System.EventArgs,System.Type)
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.WeakEventManager.ListenerList`1.#ctor(System.Int32)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -17,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList`1.DeliverEvent(System.Object,System.EventArgs,System.Type)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.WeakEventManager.ListenerList`1.#ctor
 ms.technology: 
   - "dotnet-wpf"
@@ -35,16 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList`1.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.WeakEventManager.ListenerList`1.#ctor(System.Int32)
+uid: System.Windows.WeakEventManager.ListenerList`1
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

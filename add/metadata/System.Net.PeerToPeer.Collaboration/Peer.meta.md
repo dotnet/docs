@@ -1,35 +1,5 @@
 ---
-uid: System.Net.PeerToPeer.Collaboration.Peer
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.Peer.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.Peer.Invite
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.Peer.PeerEndPoints
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.Peer.ToString
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.Peer.Dispose
+uid: System.Net.PeerToPeer.Collaboration.Peer.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -41,37 +11,19 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.Peer.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Net.PeerToPeer.Collaboration.Peer.InviteAsync(System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[],System.Object)
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.Peer.GetObjects(System.Guid)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.Peer.InviteAsync
+uid: System.Net.PeerToPeer.Collaboration.Peer.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.Peer.Invite(System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[])
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.Peer.Dispose(System.Boolean)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -101,7 +53,21 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.Peer.Equals
+uid: System.Net.PeerToPeer.Collaboration.Peer.InviteAsync(System.Object)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.Peer.GetObjects(System.Guid)
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.Peer.Dispose(System.Boolean)
+ms.author: "bobdel"
+manager: "markl"
 ---
 
 ---
@@ -111,25 +77,31 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.Peer.Invite
+uid: System.Net.PeerToPeer.Collaboration.Peer.InviteCompleted
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.Peer.InviteAsync(System.Object)
+uid: System.Net.PeerToPeer.Collaboration.Peer.PeerEndPoints
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.Peer.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.Net.PeerToPeer.Collaboration.Peer.InviteAsync
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.Peer.GetObjects
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.Peer.ToString
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -141,13 +113,23 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.Peer.InviteAsync(System.Net.PeerToPeer.Collaboration.PeerApplication,System.String,System.Byte[],System.Object)
+uid: System.Net.PeerToPeer.Collaboration.Peer.Dispose
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.Peer.GetObjects
+uid: System.Net.PeerToPeer.Collaboration.Peer.Invite
 ms.author: "bobdel"
 manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.Peer
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.PeerToPeer.Collaboration.Peer.Equals
 ---

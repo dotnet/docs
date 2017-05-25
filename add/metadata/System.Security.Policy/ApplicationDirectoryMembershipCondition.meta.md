@@ -1,22 +1,4 @@
 ---
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.GetHashCode
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.FromXml(System.Security.SecurityElement,System.Security.Policy.PolicyLevel)
 ms.technology: 
   - "dotnet-standard"
@@ -26,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.FromXml
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -35,34 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.Equals(System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.Copy
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.ToXml
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.FromXml(System.Security.SecurityElement)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -80,7 +35,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.FromXml(System.Security.SecurityElement)
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.Equals(System.Object)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.GetHashCode
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.ToString
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.FromXml
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -107,7 +89,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition.Copy
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Security.Policy.ApplicationDirectoryMembershipCondition
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

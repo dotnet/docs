@@ -1,12 +1,12 @@
 ---
-uid: System.Transactions.CommittableTransaction
+uid: System.Transactions.CommittableTransaction.BeginCommit(System.AsyncCallback,System.Object)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.CommittableTransaction.#ctor
+uid: System.Transactions.CommittableTransaction.#ctor(System.Transactions.TransactionOptions)
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -20,8 +20,10 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.CommittableTransaction.System#IAsyncResult#AsyncWaitHandle
-manager: "tyoung"
+uid: System.Transactions.CommittableTransaction.#ctor(System.TimeSpan)
+ms.technology: 
+  - "dotnet-standard"
+manager: "ghogen"
 ---
 
 ---
@@ -32,19 +34,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.CommittableTransaction.System#IAsyncResult#IsCompleted
-manager: "tyoung"
----
-
----
-uid: System.Transactions.CommittableTransaction.BeginCommit(System.AsyncCallback,System.Object)
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Transactions.CommittableTransaction.#ctor(System.TimeSpan)
+uid: System.Transactions.CommittableTransaction.#ctor
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -56,20 +46,23 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Transactions.CommittableTransaction.System#IAsyncResult#AsyncState
+uid: System.Transactions.CommittableTransaction
+ms.technology: 
+  - "dotnet-standard"
+manager: "ghogen"
+---
+
+---
+uid: System.Transactions.CommittableTransaction.System#IAsyncResult#AsyncWaitHandle
 manager: "tyoung"
 ---
 
 ---
-uid: System.Transactions.CommittableTransaction.#ctor(System.Transactions.TransactionOptions)
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
+uid: System.Transactions.CommittableTransaction.System#IAsyncResult#IsCompleted
+manager: "tyoung"
 ---
 
 ---
-uid: System.Transactions.CommittableTransaction.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
+uid: System.Transactions.CommittableTransaction.System#IAsyncResult#AsyncState
+manager: "tyoung"
 ---

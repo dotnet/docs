@@ -1,18 +1,10 @@
 ---
-uid: System.Windows.Media.Media3D.QuaternionRotation3D
+uid: System.Windows.Media.Media3D.QuaternionRotation3D.#ctor(System.Windows.Media.Media3D.Quaternion)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.QuaternionRotation3D.CloneCurrentValue
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
@@ -34,14 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.QuaternionRotation3D.Quaternion
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Media3D.QuaternionRotation3D.Clone
 ms.technology: 
   - "dotnet-wpf"
@@ -51,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.QuaternionRotation3D.#ctor
+uid: System.Windows.Media.Media3D.QuaternionRotation3D
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -60,10 +44,17 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.QuaternionRotation3D.#ctor(System.Windows.Media.Media3D.Quaternion)
+uid: System.Windows.Media.Media3D.QuaternionRotation3D.CloneCurrentValue
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Media3D.QuaternionRotation3D.Quaternion
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

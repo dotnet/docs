@@ -1,32 +1,5 @@
 ---
-uid: System.Diagnostics.SymbolStore.SymBinder
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymBinder.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymBinder.Finalize
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymBinder.GetReader
+uid: System.Diagnostics.SymbolStore.SymBinder.GetReader(System.IntPtr,System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -44,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymBinder.Dispose
+uid: System.Diagnostics.SymbolStore.SymBinder.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -53,7 +26,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymBinder.Dispose(System.Boolean)
+uid: System.Diagnostics.SymbolStore.SymBinder.GetReader
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymBinder.Finalize
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Diagnostics.SymbolStore.SymBinder.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -71,7 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymBinder.GetReader(System.IntPtr,System.String,System.String)
+uid: System.Diagnostics.SymbolStore.SymBinder
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

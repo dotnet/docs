@@ -1,5 +1,5 @@
 ---
-uid: System.Security.Cryptography.Xml.KeyInfoName
+uid: System.Security.Cryptography.Xml.KeyInfoName.LoadXml(System.Xml.XmlElement)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.KeyInfoName.LoadXml(System.Xml.XmlElement)
+uid: System.Security.Cryptography.Xml.KeyInfoName.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.KeyInfoName.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.KeyInfoName.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -53,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.KeyInfoName.#ctor
+uid: System.Security.Cryptography.Xml.KeyInfoName
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

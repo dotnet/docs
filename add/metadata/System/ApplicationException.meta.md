@@ -1,14 +1,5 @@
 ---
-uid: System.ApplicationException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ApplicationException.#ctor(System.String)
+uid: System.ApplicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ApplicationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
+uid: System.ApplicationException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ApplicationException.#ctor
+uid: System.ApplicationException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

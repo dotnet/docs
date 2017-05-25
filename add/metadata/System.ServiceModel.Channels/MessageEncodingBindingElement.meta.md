@@ -1,13 +1,4 @@
 ---
-uid: System.ServiceModel.Channels.MessageEncodingBindingElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.MessageEncodingBindingElement.#ctor(System.ServiceModel.Channels.MessageEncodingBindingElement)
 ms.technology: 
   - "dotnet-standard"
@@ -26,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.MessageEncodingBindingElement.#ctor
+uid: System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -53,7 +44,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.MessageEncodingBindingElement.CreateMessageEncoderFactory
+uid: System.ServiceModel.Channels.MessageEncodingBindingElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

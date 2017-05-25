@@ -1,13 +1,4 @@
 ---
-uid: System.AddIn.Pipeline.ContractHandle
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AddIn.Pipeline.ContractHandle.ContractOwnsAppDomain(System.AddIn.Contract.IContract,System.AppDomain)
 ms.technology: 
   - "dotnet-standard"
@@ -26,7 +17,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Pipeline.ContractHandle.Dispose
+uid: System.AddIn.Pipeline.ContractHandle.AppDomainOwner(System.AppDomain)
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.AddIn.Pipeline.ContractHandle.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Pipeline.ContractHandle.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AddIn.Pipeline.ContractHandle.Finalize
 ms.technology: 
   - "dotnet-standard"
@@ -62,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Pipeline.ContractHandle.AppDomainOwner(System.AppDomain)
+uid: System.AddIn.Pipeline.ContractHandle.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -71,7 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Pipeline.ContractHandle.Dispose(System.Boolean)
+uid: System.AddIn.Pipeline.ContractHandle
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

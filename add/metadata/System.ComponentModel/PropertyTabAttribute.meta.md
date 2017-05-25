@@ -1,40 +1,4 @@
 ---
-uid: System.ComponentModel.PropertyTabAttribute
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.PropertyTabAttribute.TabClassNames
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.PropertyTabAttribute.#ctor(System.Type)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.PropertyTabAttribute.GetHashCode
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.PropertyTabAttribute.InitializeArrays(System.String[],System.ComponentModel.PropertyTabScope[])
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.PropertyTabAttribute.InitializeArrays
+uid: System.ComponentModel.PropertyTabAttribute.InitializeArrays(System.Type[],System.ComponentModel.PropertyTabScope[])
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -53,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.PropertyTabAttribute.#ctor
+uid: System.ComponentModel.PropertyTabAttribute.#ctor(System.String,System.ComponentModel.PropertyTabScope)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -63,24 +27,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.PropertyTabAttribute.#ctor(System.Type,System.ComponentModel.PropertyTabScope)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.PropertyTabAttribute.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.PropertyTabAttribute.InitializeArrays(System.Type[],System.ComponentModel.PropertyTabScope[])
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -107,7 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.PropertyTabAttribute.TabScopes
+uid: System.ComponentModel.PropertyTabAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -116,7 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.PropertyTabAttribute.#ctor(System.String,System.ComponentModel.PropertyTabScope)
+uid: System.ComponentModel.PropertyTabAttribute.#ctor(System.Type)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -125,7 +71,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.PropertyTabAttribute.Equals
+uid: System.ComponentModel.PropertyTabAttribute.InitializeArrays
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.PropertyTabAttribute.TabClassNames
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.PropertyTabAttribute.GetHashCode
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -143,7 +107,34 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.ComponentModel.PropertyTabAttribute.TabScopes
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.PropertyTabAttribute.Equals
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.ComponentModel.PropertyTabAttribute.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.PropertyTabAttribute
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

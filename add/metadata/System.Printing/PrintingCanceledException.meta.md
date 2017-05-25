@@ -1,13 +1,4 @@
 ---
-uid: System.Printing.PrintingCanceledException
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintingCanceledException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
@@ -17,11 +8,12 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintingCanceledException.#ctor
+uid: System.Printing.PrintingCanceledException.#ctor(System.Int32,System.String,System.String,System.String,System.Int32)
 ms.technology: 
   - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -33,16 +25,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Printing.PrintingCanceledException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Printing.PrintingCanceledException.#ctor(System.Int32,System.String)
+uid: System.Printing.PrintingCanceledException.#ctor(System.Int32,System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -60,7 +43,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintingCanceledException.#ctor(System.Int32,System.String,System.Exception)
+uid: System.Printing.PrintingCanceledException.#ctor(System.Int32,System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -78,7 +61,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintingCanceledException.#ctor(System.Int32,System.String,System.String,System.String,System.Int32)
+uid: System.Printing.PrintingCanceledException.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Printing.PrintingCanceledException
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

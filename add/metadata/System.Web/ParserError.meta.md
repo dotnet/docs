@@ -1,13 +1,5 @@
 ---
-uid: System.Web.ParserError
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.ParserError.#ctor
+uid: System.Web.ParserError.#ctor(System.String,System.String,System.Int32)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -23,7 +15,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ParserError.#ctor(System.String,System.String,System.Int32)
+uid: System.Web.ParserError.ErrorText
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -47,7 +39,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ParserError.ErrorText
+uid: System.Web.ParserError
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

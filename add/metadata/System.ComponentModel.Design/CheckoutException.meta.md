@@ -1,14 +1,5 @@
 ---
-uid: System.ComponentModel.Design.CheckoutException
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.CheckoutException.#ctor
+uid: System.ComponentModel.Design.CheckoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -18,6 +9,24 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Design.CheckoutException.#ctor(System.String,System.Exception)
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.CheckoutException.#ctor(System.String,System.Int32)
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Design.CheckoutException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -44,25 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.CheckoutException.#ctor(System.String,System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.CheckoutException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.CheckoutException.#ctor(System.String)
+uid: System.ComponentModel.Design.CheckoutException
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

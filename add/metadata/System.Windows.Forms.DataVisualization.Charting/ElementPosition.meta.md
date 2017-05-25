@@ -1,60 +1,4 @@
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Height
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.X
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Width
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Bottom
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.#ctor(System.Single,System.Single,System.Single,System.Single)
 ms.technology: 
   - "dotnet-winforms"
@@ -79,7 +23,31 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto
+uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Height
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Bottom
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.#ctor
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Width
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "mblythe"
@@ -95,7 +63,7 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Y
+uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Auto
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "mblythe"
@@ -104,6 +72,30 @@ manager: "mblythe"
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Size
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.X
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition.Y
+ms.technology: 
+  - "dotnet-winforms"
+ms.author: "mblythe"
+manager: "mblythe"
+---
+
+---
+uid: System.Windows.Forms.DataVisualization.Charting.ElementPosition
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "mblythe"

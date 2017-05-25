@@ -1,13 +1,4 @@
 ---
-uid: System.CodeDom.CodeDelegateCreateExpression
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeDelegateCreateExpression.#ctor(System.CodeDom.CodeTypeReference,System.CodeDom.CodeExpression,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -26,16 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeDelegateCreateExpression.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.CodeDom.CodeDelegateCreateExpression.#ctor
+uid: System.CodeDom.CodeDelegateCreateExpression.DelegateType
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -53,7 +35,16 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeDelegateCreateExpression.DelegateType
+uid: System.CodeDom.CodeDelegateCreateExpression.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.CodeDom.CodeDelegateCreateExpression
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

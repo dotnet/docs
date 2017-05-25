@@ -1,19 +1,12 @@
 ---
-uid: System.Workflow.Activities.Rules.RuleStatementAction
+uid: System.Workflow.Activities.Rules.RuleStatementAction.GetSideEffects(System.Workflow.Activities.Rules.RuleValidation)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleStatementAction.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.Rules.RuleStatementAction.GetHashCode
+uid: System.Workflow.Activities.Rules.RuleStatementAction.Validate(System.Workflow.Activities.Rules.RuleValidation)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -27,21 +20,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleStatementAction.Clone
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.Rules.RuleStatementAction.#ctor(System.CodeDom.CodeExpression)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Activities.Rules.RuleStatementAction.CodeDomStatement
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -62,14 +41,14 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleStatementAction.Validate(System.Workflow.Activities.Rules.RuleValidation)
+uid: System.Workflow.Activities.Rules.RuleStatementAction.CodeDomStatement
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleStatementAction.#ctor
+uid: System.Workflow.Activities.Rules.RuleStatementAction.GetHashCode
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -83,7 +62,21 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleStatementAction.GetSideEffects(System.Workflow.Activities.Rules.RuleValidation)
+uid: System.Workflow.Activities.Rules.RuleStatementAction.#ctor
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RuleStatementAction.Clone
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Workflow.Activities.Rules.RuleStatementAction
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

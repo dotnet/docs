@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters
+uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityToken,System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -8,16 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.#ctor
+uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.CreateKeyIdentifierClause(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -35,7 +26,34 @@ manager: "erikre"
 ---
 
 ---
+uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.SecurityTokenParameters)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientWindowsIdentity
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsServerAuthentication
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientAuthentication
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -71,25 +89,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.CreateKeyIdentifierClause(System.IdentityModel.Tokens.SecurityToken,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.Clone
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.MatchesKeyIdentifierClause(System.IdentityModel.Tokens.SecurityToken,System.IdentityModel.Tokens.SecurityKeyIdentifierClause,System.ServiceModel.Security.Tokens.SecurityTokenReferenceStyle)
+uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.InclusionMode
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -125,7 +125,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientAuthentication
+uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.Clone
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -134,16 +134,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.SupportsClientWindowsIdentity
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters.#ctor(System.ServiceModel.Security.Tokens.SecurityTokenParameters)
+uid: System.ServiceModel.Security.Tokens.SecurityTokenParameters
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

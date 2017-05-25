@@ -1,9 +1,10 @@
 ---
-uid: System.Windows.ThemeDictionaryExtension
+uid: System.Windows.ThemeDictionaryExtension.ProvideValue(System.IServiceProvider)
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
 ---
 
 ---
@@ -25,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.ThemeDictionaryExtension.ProvideValue(System.IServiceProvider)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.ThemeDictionaryExtension.#ctor
 ms.technology: 
   - "dotnet-wpf"
@@ -43,10 +35,9 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.ThemeDictionaryExtension.#ctor
+uid: System.Windows.ThemeDictionaryExtension
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

@@ -1,14 +1,5 @@
 ---
-uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor(System.Boolean)
+uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor(System.Boolean,System.Byte[])
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -26,15 +17,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor(System.Boolean,System.Byte[])
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.DecodeSecurityState(System.Byte[])
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor
+uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.UseCurrentUserProtectionScope
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -53,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor
+uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -80,7 +62,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.UseCurrentUserProtectionScope
+uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

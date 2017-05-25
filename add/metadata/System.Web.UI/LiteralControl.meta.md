@@ -1,13 +1,5 @@
 ---
-uid: System.Web.UI.LiteralControl
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.LiteralControl.Text
+uid: System.Web.UI.LiteralControl.Render(System.Web.UI.HtmlTextWriter)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -39,7 +31,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.LiteralControl.#ctor
+uid: System.Web.UI.LiteralControl.Text
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -47,7 +39,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.LiteralControl.Render(System.Web.UI.HtmlTextWriter)
+uid: System.Web.UI.LiteralControl
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

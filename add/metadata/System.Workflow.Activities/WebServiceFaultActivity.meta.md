@@ -1,5 +1,5 @@
 ---
-uid: System.Workflow.Activities.WebServiceFaultActivity
+uid: System.Workflow.Activities.WebServiceFaultActivity.InputActivityNameProperty
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -20,7 +20,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.WebServiceFaultActivity.#ctor
+uid: System.Workflow.Activities.WebServiceFaultActivity.InputActivityName
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.WebServiceFaultActivity.InputActivityName
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.WebServiceFaultActivity.SendingFault
 author: "Erikre"
 ms.author: "erikre"
@@ -48,7 +41,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.WebServiceFaultActivity.InputActivityNameProperty
+uid: System.Workflow.Activities.WebServiceFaultActivity.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -62,7 +55,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.WebServiceFaultActivity.#ctor
+uid: System.Workflow.Activities.WebServiceFaultActivity
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

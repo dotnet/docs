@@ -1,14 +1,5 @@
 ---
-uid: System.Activities.Presentation.EditingContext
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Presentation.EditingContext.CreateServiceManager
+uid: System.Activities.Presentation.EditingContext.CreateContextItemManager
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -26,7 +17,25 @@ manager: "erikre"
 ---
 
 ---
+uid: System.Activities.Presentation.EditingContext.CreateServiceManager
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
 uid: System.Activities.Presentation.EditingContext.Disposing
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Activities.Presentation.EditingContext.Services
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -62,25 +71,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.EditingContext.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Presentation.EditingContext.Services
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Presentation.EditingContext.CreateContextItemManager
+uid: System.Activities.Presentation.EditingContext
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

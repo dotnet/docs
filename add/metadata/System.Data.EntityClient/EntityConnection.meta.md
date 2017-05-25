@@ -1,49 +1,4 @@
 ---
-uid: System.Data.EntityClient.EntityConnection
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityClient.EntityConnection.CreateCommand
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityClient.EntityConnection.Open
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityClient.EntityConnection.StoreConnection
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityClient.EntityConnection.BeginTransaction
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityClient.EntityConnection.#ctor(System.Data.Metadata.Edm.MetadataWorkspace,System.Data.Common.DbConnection)
 ms.technology: 
   - "dotnet-ado"
@@ -53,7 +8,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityConnection.#ctor(System.String)
+uid: System.Data.EntityClient.EntityConnection.EnlistTransaction(System.Transactions.Transaction)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -71,7 +26,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityConnection.GetMetadataWorkspace
+uid: System.Data.EntityClient.EntityConnection.ChangeDatabase(System.String)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -80,7 +35,16 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityConnection.State
+uid: System.Data.EntityClient.EntityConnection.#ctor(System.String)
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.EntityClient.EntityConnection.GetMetadataWorkspace
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -98,15 +62,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityConnection.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityClient.EntityConnection.BeginTransaction
 ms.technology: 
   - "dotnet-ado"
@@ -116,7 +71,34 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityConnection.ChangeDatabase(System.String)
+uid: System.Data.EntityClient.EntityConnection.ConnectionString
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.EntityClient.EntityConnection.StoreConnection
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.EntityClient.EntityConnection.CreateCommand
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.EntityClient.EntityConnection.ServerVersion
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -143,25 +125,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityConnection.EnlistTransaction(System.Transactions.Transaction)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityClient.EntityConnection.ConnectionString
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityClient.EntityConnection.Close
+uid: System.Data.EntityClient.EntityConnection.State
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -179,7 +143,25 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityConnection.ServerVersion
+uid: System.Data.EntityClient.EntityConnection.Close
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.EntityClient.EntityConnection.Open
+ms.technology: 
+  - "dotnet-ado"
+author: "JennieHubbard"
+ms.author: "jhubbard"
+manager: "jhubbard"
+---
+
+---
+uid: System.Data.EntityClient.EntityConnection
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

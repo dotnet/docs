@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.AddressAlreadyInUseException
+uid: System.ServiceModel.AddressAlreadyInUseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -9,24 +9,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.AddressAlreadyInUseException.#ctor(System.String,System.Exception)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.AddressAlreadyInUseException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.AddressAlreadyInUseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -45,6 +27,15 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.AddressAlreadyInUseException.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.AddressAlreadyInUseException
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

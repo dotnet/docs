@@ -1,36 +1,4 @@
 ---
-uid: System.Web.UI.WebControls.LoginView
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.LoginView.ViewChanging
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.LoginView.EnableTheming
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.LoginView.LoggedInTemplate
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.LoginView.SetDesignModeState(System.Collections.IDictionary)
 ms.technology: 
   - "dotnet-webforms"
@@ -39,7 +7,15 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.LoginView.SkinID
+uid: System.Web.UI.WebControls.LoginView.Render(System.Web.UI.HtmlTextWriter)
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -55,9 +31,27 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.LoginView.DataBind
+uid: System.Web.UI.WebControls.LoginView.LoadControlState(System.Object)
 ms.technology: 
   - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.LoginView.OnPreRender(System.EventArgs)
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.LoginView.OnInit(System.EventArgs)
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
 ---
 
 ---
@@ -69,7 +63,47 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.LoginView.Focus
+uid: System.Web.UI.WebControls.LoginView.AnonymousTemplate
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.LoginView.LoggedInTemplate
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.LoginView.SaveControlState
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.LoginView.EnableTheming
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.LoginView.ViewChanging
+ms.technology: 
+  - "dotnet-webforms"
+ms.author: "riande"
+manager: "wpickett"
+---
+
+---
+uid: System.Web.UI.WebControls.LoginView.ViewChanged
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -93,7 +127,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.LoginView.SaveControlState
+uid: System.Web.UI.WebControls.LoginView.DataBind
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -101,7 +135,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.LoginView.OnPreRender(System.EventArgs)
+uid: System.Web.UI.WebControls.LoginView.SkinID
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -109,39 +143,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.LoginView.Render(System.Web.UI.HtmlTextWriter)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.LoginView.LoadControlState(System.Object)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.LoginView.OnInit(System.EventArgs)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.LoginView.AnonymousTemplate
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.LoginView.ViewChanged
+uid: System.Web.UI.WebControls.LoginView.Focus
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"
@@ -157,15 +159,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.LoginView.DataBind
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.LoginView.OnViewChanging(System.EventArgs)
+uid: System.Web.UI.WebControls.LoginView
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

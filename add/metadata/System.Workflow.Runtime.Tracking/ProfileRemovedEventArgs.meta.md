@@ -1,5 +1,5 @@
 ---
-uid: System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs
+uid: System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.#ctor(System.Type)
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -20,14 +20,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs.#ctor(System.Type)
+uid: System.Workflow.Runtime.Tracking.ProfileRemovedEventArgs
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

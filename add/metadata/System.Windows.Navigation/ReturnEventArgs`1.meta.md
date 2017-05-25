@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Navigation.ReturnEventArgs`1
+uid: System.Windows.Navigation.ReturnEventArgs`1.#ctor(`0)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -26,15 +26,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Navigation.ReturnEventArgs`1.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Navigation.ReturnEventArgs`1.#ctor(`0)
+uid: System.Windows.Navigation.ReturnEventArgs`1
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

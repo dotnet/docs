@@ -1,12 +1,5 @@
 ---
-uid: System.Management.DeleteOptions
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.DeleteOptions.#ctor
+uid: System.Management.DeleteOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan)
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"
@@ -27,7 +20,7 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.DeleteOptions.#ctor(System.Management.ManagementNamedValueCollection,System.TimeSpan)
+uid: System.Management.DeleteOptions
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"

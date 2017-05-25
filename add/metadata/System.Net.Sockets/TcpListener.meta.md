@@ -1,41 +1,17 @@
 ---
-uid: System.Net.Sockets.TcpListener
+uid: System.Net.Sockets.TcpListener.BeginAcceptTcpClient(System.AsyncCallback,System.Object)
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.Pending
+uid: System.Net.Sockets.TcpListener.BeginAcceptSocket(System.AsyncCallback,System.Object)
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.AcceptTcpClientAsync
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Sockets.TcpListener.Start
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Sockets.TcpListener.LocalEndpoint
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Sockets.TcpListener.Active
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Sockets.TcpListener.AcceptSocket
+uid: System.Net.Sockets.TcpListener.#ctor(System.Net.IPAddress,System.Int32)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -47,7 +23,7 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.Stop
+uid: System.Net.Sockets.TcpListener.EndAcceptSocket(System.IAsyncResult)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -59,31 +35,19 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.Start
+uid: System.Net.Sockets.TcpListener.#ctor(System.Net.IPEndPoint)
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.BeginAcceptTcpClient(System.AsyncCallback,System.Object)
+uid: System.Net.Sockets.TcpListener.AcceptTcpClientAsync
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.EndAcceptSocket(System.IAsyncResult)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Sockets.TcpListener.AcceptSocketAsync
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Sockets.TcpListener.AcceptTcpClient
+uid: System.Net.Sockets.TcpListener.Create(System.Int32)
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -107,25 +71,37 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.#ctor(System.Net.IPAddress,System.Int32)
+uid: System.Net.Sockets.TcpListener.AcceptSocketAsync
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.#ctor(System.Net.IPEndPoint)
+uid: System.Net.Sockets.TcpListener.AcceptTcpClient
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.BeginAcceptSocket(System.AsyncCallback,System.Object)
+uid: System.Net.Sockets.TcpListener.LocalEndpoint
 ms.author: "bobdel"
 manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpListener.Create(System.Int32)
+uid: System.Net.Sockets.TcpListener.AcceptSocket
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Sockets.TcpListener.Pending
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Sockets.TcpListener.Active
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -137,7 +113,25 @@ manager: "markl"
 ---
 
 ---
+uid: System.Net.Sockets.TcpListener.Start
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
 uid: System.Net.Sockets.TcpListener.#ctor
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Sockets.TcpListener.Stop
+ms.author: "bobdel"
+manager: "markl"
+---
+
+---
+uid: System.Net.Sockets.TcpListener
 ms.author: "bobdel"
 manager: "markl"
 ---

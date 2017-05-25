@@ -1,5 +1,5 @@
 ---
-uid: System.Web.Services.Protocols.SoapRpcMethodAttribute
+uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -8,7 +8,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.ResponseNamespace
+uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.ResponseElementName
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -26,7 +26,16 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.Use
+uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.ResponseNamespace
+ms.technology: 
+  - "dotnet-webforms"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.RequestNamespace
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -71,7 +80,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.#ctor(System.String)
+uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.Use
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"
@@ -80,25 +89,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.RequestNamespace
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.ResponseElementName
+uid: System.Web.Services.Protocols.SoapRpcMethodAttribute
 ms.technology: 
   - "dotnet-webforms"
 author: "Erikre"

@@ -1,5 +1,13 @@
 ---
-uid: System.Linq.Expressions.LambdaExpression
+uid: System.Linq.Expressions.LambdaExpression.CompileToMethod(System.Reflection.Emit.MethodBuilder,System.Runtime.CompilerServices.DebugInfoGenerator)
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "billchi"
+manager: "ghogen"
+---
+
+---
+uid: System.Linq.Expressions.LambdaExpression.Compile(System.Runtime.CompilerServices.DebugInfoGenerator)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "billchi"
@@ -15,25 +23,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Linq.Expressions.LambdaExpression.Body
-ms.technology: 
-  - "dotnet-standard"
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-
----
 uid: System.Linq.Expressions.LambdaExpression.CompileToMethod
-ms.technology: 
-  - "dotnet-standard"
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-
----
-uid: System.Linq.Expressions.LambdaExpression.Compile
 ms.technology: 
   - "dotnet-standard"
 author: "BillWagner"
@@ -69,11 +59,12 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Linq.Expressions.LambdaExpression.CompileToMethod(System.Reflection.Emit.MethodBuilder,System.Runtime.CompilerServices.DebugInfoGenerator)
+uid: System.Linq.Expressions.LambdaExpression.TailCall
 ms.technology: 
   - "dotnet-standard"
-ms.author: "billchi"
-manager: "ghogen"
+author: "BillWagner"
+ms.author: "wiwagn"
+manager: "wpickett"
 ---
 
 ---
@@ -86,15 +77,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Linq.Expressions.LambdaExpression.Compile(System.Runtime.CompilerServices.DebugInfoGenerator)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "billchi"
-manager: "ghogen"
----
-
----
-uid: System.Linq.Expressions.LambdaExpression.TailCall
+uid: System.Linq.Expressions.LambdaExpression.Body
 ms.technology: 
   - "dotnet-standard"
 author: "BillWagner"
@@ -118,4 +101,12 @@ ms.technology:
 author: "BillWagner"
 ms.author: "wiwagn"
 manager: "wpickett"
+---
+
+---
+uid: System.Linq.Expressions.LambdaExpression
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "billchi"
+manager: "ghogen"
 ---

@@ -1,5 +1,39 @@
 ---
-uid: System.Windows.Media.Animation.SplineByteKeyFrame
+uid: System.Windows.Media.Animation.SplineByteKeyFrame.#ctor(System.Byte,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineByteKeyFrame.#ctor(System.Byte,System.Windows.Media.Animation.KeyTime)
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineByteKeyFrame.InterpolateValueCore(System.Byte,System.Double)
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineByteKeyFrame.CreateInstanceCore
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.SplineByteKeyFrame.KeySplineProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -17,15 +51,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineByteKeyFrame.#ctor(System.Byte,System.Windows.Media.Animation.KeyTime,System.Windows.Media.Animation.KeySpline)
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.SplineByteKeyFrame.KeySplineProperty
+uid: System.Windows.Media.Animation.SplineByteKeyFrame.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -34,16 +60,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineByteKeyFrame.CreateInstanceCore
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.SplineByteKeyFrame.#ctor(System.Byte,System.Windows.Media.Animation.KeyTime)
+uid: System.Windows.Media.Animation.SplineByteKeyFrame
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -53,32 +70,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.Animation.SplineByteKeyFrame.#ctor(System.Byte)
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.SplineByteKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.SplineByteKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.SplineByteKeyFrame.InterpolateValueCore(System.Byte,System.Double)
 ms.technology: 
   - "dotnet-wpf"
 ms.author: "kempb"

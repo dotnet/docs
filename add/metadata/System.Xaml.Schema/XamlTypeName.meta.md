@@ -1,32 +1,4 @@
 ---
-uid: System.Xaml.Schema.XamlTypeName
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Xaml.Schema.XamlTypeName.Name
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Xaml.Schema.XamlTypeName.Namespace
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Xaml.Schema.XamlTypeName.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Xaml.Schema.XamlTypeName.TryParseList(System.String,System.Xaml.IXamlNamespaceResolver,System.Collections.Generic.IList{System.Xaml.Schema.XamlTypeName}@)
 ms.technology: 
   - "dotnet-wpf"
@@ -41,7 +13,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlTypeName.ToString(System.Xaml.INamespacePrefixLookup)
+uid: System.Xaml.Schema.XamlTypeName.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.Xaml.Schema.XamlTypeName})
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
@@ -55,14 +27,21 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlTypeName.ToString
+uid: System.Xaml.Schema.XamlTypeName.ParseList(System.String,System.Xaml.IXamlNamespaceResolver)
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlTypeName.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.Xaml.Schema.XamlTypeName})
+uid: System.Xaml.Schema.XamlTypeName.Parse(System.String,System.Xaml.IXamlNamespaceResolver)
+ms.technology: 
+  - "dotnet-wpf"
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.Schema.XamlTypeName.ToString(System.Xaml.INamespacePrefixLookup)
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
@@ -76,14 +55,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlTypeName.ParseList(System.String,System.Xaml.IXamlNamespaceResolver)
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Xaml.Schema.XamlTypeName.#ctor
+uid: System.Xaml.Schema.XamlTypeName.#ctor(System.Xaml.XamlType)
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
@@ -97,7 +69,7 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlTypeName.#ctor(System.Xaml.XamlType)
+uid: System.Xaml.Schema.XamlTypeName.Namespace
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"
@@ -111,7 +83,21 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlTypeName.Parse(System.String,System.Xaml.IXamlNamespaceResolver)
+uid: System.Xaml.Schema.XamlTypeName.#ctor
+ms.technology: 
+  - "dotnet-wpf"
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.Schema.XamlTypeName.Name
+ms.technology: 
+  - "dotnet-wpf"
+manager: "martinek"
+---
+
+---
+uid: System.Xaml.Schema.XamlTypeName
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"

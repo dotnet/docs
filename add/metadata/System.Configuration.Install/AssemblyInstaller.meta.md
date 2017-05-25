@@ -1,23 +1,5 @@
 ---
-uid: System.Configuration.Install.AssemblyInstaller
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Install.AssemblyInstaller.CheckIfInstallable(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Install.AssemblyInstaller.Path
+uid: System.Configuration.Install.AssemblyInstaller.#ctor(System.Reflection.Assembly,System.String[])
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -53,6 +35,51 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Configuration.Install.AssemblyInstaller.Commit(System.Collections.IDictionary)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.AssemblyInstaller.#ctor(System.String,System.String[])
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.AssemblyInstaller.CheckIfInstallable(System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.AssemblyInstaller.UseNewContext
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
+uid: System.Configuration.Install.AssemblyInstaller.CommandLine
+ms.technology: 
+  - "dotnet-standard"
+author: "mairaw"
+ms.author: "mairaw"
+manager: "wpickett"
+---
+
+---
 uid: System.Configuration.Install.AssemblyInstaller.HelpText
 ms.technology: 
   - "dotnet-standard"
@@ -80,7 +107,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.Install.AssemblyInstaller.#ctor(System.Reflection.Assembly,System.String[])
+uid: System.Configuration.Install.AssemblyInstaller.Path
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -89,43 +116,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.Install.AssemblyInstaller.#ctor(System.String,System.String[])
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Install.AssemblyInstaller.UseNewContext
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Install.AssemblyInstaller.CommandLine
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Install.AssemblyInstaller.Commit(System.Collections.IDictionary)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.Install.AssemblyInstaller.#ctor
+uid: System.Configuration.Install.AssemblyInstaller
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

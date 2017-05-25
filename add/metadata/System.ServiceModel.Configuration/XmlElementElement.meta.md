@@ -1,22 +1,4 @@
 ---
-uid: System.ServiceModel.Configuration.XmlElementElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Configuration.XmlElementElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.XmlElementElement.Copy(System.ServiceModel.Configuration.XmlElementElement)
 ms.technology: 
   - "dotnet-standard"
@@ -45,6 +27,15 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Configuration.XmlElementElement.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Configuration.XmlElementElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

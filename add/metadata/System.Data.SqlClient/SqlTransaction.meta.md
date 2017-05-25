@@ -1,5 +1,5 @@
 ---
-uid: System.Data.SqlClient.SqlTransaction
+uid: System.Data.SqlClient.SqlTransaction.Rollback(System.String)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -8,7 +8,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlTransaction.Rollback
+uid: System.Data.SqlClient.SqlTransaction.Save(System.String)
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -35,15 +35,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlTransaction.Commit
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlTransaction.Rollback
 ms.technology: 
   - "dotnet-ado"
@@ -53,7 +44,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlTransaction.Rollback(System.String)
+uid: System.Data.SqlClient.SqlTransaction.Commit
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -62,7 +53,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlTransaction.Save(System.String)
+uid: System.Data.SqlClient.SqlTransaction
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

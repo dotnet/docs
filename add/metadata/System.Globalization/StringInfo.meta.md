@@ -1,5 +1,5 @@
 ---
-uid: System.Globalization.StringInfo
+uid: System.Globalization.StringInfo.GetTextElementEnumerator(System.String,System.Int32)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.StringInfo.SubstringByTextElements
+uid: System.Globalization.StringInfo.SubstringByTextElements(System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -17,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.StringInfo.String
+uid: System.Globalization.StringInfo.GetNextTextElement(System.String,System.Int32)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -27,6 +27,15 @@ manager: "wpickett"
 
 ---
 uid: System.Globalization.StringInfo.ParseCombiningCharacters(System.String)
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Globalization.StringInfo.GetTextElementEnumerator(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -53,7 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.StringInfo.LengthInTextElements
+uid: System.Globalization.StringInfo.GetTextElementEnumerator
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -62,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.StringInfo.GetHashCode
+uid: System.Globalization.StringInfo.SubstringByTextElements
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -80,43 +89,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.StringInfo.GetNextTextElement
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Globalization.StringInfo.GetTextElementEnumerator(System.String,System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Globalization.StringInfo.GetNextTextElement(System.String,System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Globalization.StringInfo.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Globalization.StringInfo.GetTextElementEnumerator
+uid: System.Globalization.StringInfo.LengthInTextElements
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -134,7 +107,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.StringInfo.GetTextElementEnumerator(System.String)
+uid: System.Globalization.StringInfo.GetNextTextElement
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Globalization.StringInfo.GetHashCode
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Globalization.StringInfo.String
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -152,7 +143,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.StringInfo.SubstringByTextElements(System.Int32,System.Int32)
+uid: System.Globalization.StringInfo
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

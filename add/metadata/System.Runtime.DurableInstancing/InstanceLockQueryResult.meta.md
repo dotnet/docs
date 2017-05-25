@@ -1,14 +1,5 @@
 ---
-uid: System.Runtime.DurableInstancing.InstanceLockQueryResult
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Runtime.DurableInstancing.InstanceLockQueryResult.InstanceOwnerIds
+uid: System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Guid,System.Guid})
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -26,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor
+uid: System.Runtime.DurableInstancing.InstanceLockQueryResult.InstanceOwnerIds
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstanceLockQueryResult.#ctor(System.Collections.Generic.IDictionary{System.Guid,System.Guid})
+uid: System.Runtime.DurableInstancing.InstanceLockQueryResult
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

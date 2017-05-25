@@ -1,13 +1,5 @@
 ---
-uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.MakeReadOnly
+uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.#ctor(System.IdentityModel.Tokens.SamlSubject,System.String,System.IdentityModel.Tokens.SamlAccessDecision,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAction},System.IdentityModel.Tokens.SamlEvidence)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -23,7 +15,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.#ctor
+uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.#ctor(System.IdentityModel.Tokens.SamlSubject,System.String,System.IdentityModel.Tokens.SamlAccessDecision,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAction})
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -31,7 +23,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.#ctor(System.IdentityModel.Tokens.SamlSubject,System.String,System.IdentityModel.Tokens.SamlAccessDecision,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAction},System.IdentityModel.Tokens.SamlEvidence)
+uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -40,6 +32,30 @@ manager: "markgal"
 
 ---
 uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AddClaimsToList(System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.MakeReadOnly
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "v-jibran"
+manager: "markgal"
+---
+
+---
+uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"
@@ -79,22 +95,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.WriteXml(System.Xml.XmlDictionaryWriter,System.IdentityModel.Tokens.SamlSerializer,System.IdentityModel.Selectors.SecurityTokenSerializer)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.SamlActions
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -103,15 +103,7 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.#ctor(System.IdentityModel.Tokens.SamlSubject,System.String,System.IdentityModel.Tokens.SamlAccessDecision,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlAction})
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement.AccessDecision
+uid: System.IdentityModel.Tokens.SamlAuthorizationDecisionStatement
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

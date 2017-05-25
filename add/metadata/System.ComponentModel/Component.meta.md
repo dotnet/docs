@@ -1,5 +1,5 @@
 ---
-uid: System.ComponentModel.Component
+uid: System.ComponentModel.Component.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Component.DesignMode
+uid: System.ComponentModel.Component.GetService(System.Type)
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -18,6 +18,15 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Component.CanRaiseEvents
+ms.technology: 
+  - "dotnet-standard"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.ComponentModel.Component.DesignMode
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -44,24 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Component.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Component.Events
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Component.ToString
 ms.technology: 
   - "dotnet-standard"
@@ -80,7 +71,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Component.GetService(System.Type)
+uid: System.ComponentModel.Component.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -89,7 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Component.Dispose
+uid: System.ComponentModel.Component.Events
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -116,7 +107,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Component.Dispose
+uid: System.ComponentModel.Component
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

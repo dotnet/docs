@@ -1,14 +1,5 @@
 ---
-uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor
+uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor(System.ServiceModel.Dispatcher.XPathMessageContext)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -26,7 +17,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor(System.ServiceModel.Dispatcher.XPathMessageContext)
+uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.Namespaces
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.Namespaces
+uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

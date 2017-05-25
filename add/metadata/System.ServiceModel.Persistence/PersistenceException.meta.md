@@ -1,5 +1,5 @@
 ---
-uid: System.ServiceModel.Persistence.PersistenceException
+uid: System.ServiceModel.Persistence.PersistenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -26,15 +26,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Persistence.PersistenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Persistence.PersistenceException.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +35,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Persistence.PersistenceException.#ctor
+uid: System.ServiceModel.Persistence.PersistenceException
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

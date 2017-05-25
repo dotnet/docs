@@ -1,13 +1,4 @@
 ---
-uid: System.Web.RegularExpressions.AspEncodedExprRegex
-ms.technology: 
-  - "dotnet-webforms"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Web.RegularExpressions.AspEncodedExprRegex.#ctor(System.TimeSpan)
 ms.technology: 
   - "dotnet-webforms"
@@ -26,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.RegularExpressions.AspEncodedExprRegex.#ctor
+uid: System.Web.RegularExpressions.AspEncodedExprRegex
 ms.technology: 
   - "dotnet-webforms"
 author: "rpetrusha"

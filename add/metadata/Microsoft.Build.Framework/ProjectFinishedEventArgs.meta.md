@@ -1,17 +1,5 @@
 ---
-uid: Microsoft.Build.Framework.ProjectFinishedEventArgs
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.Succeeded
+uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.Boolean,System.DateTime)
 ms.author: "susanno"
 manager: "douge"
 ---
@@ -23,19 +11,25 @@ manager: "douge"
 ---
 
 ---
+uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.ProjectFile
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
+uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.Succeeded
+ms.author: "susanno"
+manager: "douge"
+---
+
+---
 uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor
 ms.author: "susanno"
 manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.Boolean,System.DateTime)
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.ProjectFile
+uid: Microsoft.Build.Framework.ProjectFinishedEventArgs
 ms.author: "susanno"
 manager: "douge"
 ---

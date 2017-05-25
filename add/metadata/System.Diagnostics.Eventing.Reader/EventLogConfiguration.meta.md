@@ -1,5 +1,5 @@
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.#ctor(System.String,System.Diagnostics.Eventing.Reader.EventLogSession)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -7,7 +7,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderKeywords
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderMaximumNumberOfBuffers
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -15,15 +15,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderBufferSize
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderLevel
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderMinimumNumberOfBuffers
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -39,15 +31,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogFilePath
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.#ctor(System.String,System.Diagnostics.Eventing.Reader.EventLogSession)
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -63,6 +47,14 @@ manager: "ghogen"
 ---
 
 ---
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderBufferSize
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
 uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.MaximumSizeInBytes
 ms.technology: 
   - "dotnet-standard"
@@ -71,7 +63,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogType
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.SecurityDescriptor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -79,7 +71,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogMode
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.OwningProviderName
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -87,7 +79,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderKeywords
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -95,7 +87,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.IsEnabled
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderLatency
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -103,15 +95,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.#ctor(System.String)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderMaximumNumberOfBuffers
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderLevel
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -143,7 +127,39 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.Dispose
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogFilePath
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.SaveChanges
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.IsEnabled
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogType
+ms.technology: 
+  - "dotnet-standard"
+ms.author: "jgalasyn"
+manager: "ghogen"
+---
+
+---
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogMode
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -159,7 +175,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.SecurityDescriptor
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogName
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"
@@ -175,31 +191,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderMinimumNumberOfBuffers
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.OwningProviderName
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.ProviderLatency
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration.LogName
+uid: System.Diagnostics.Eventing.Reader.EventLogConfiguration
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"

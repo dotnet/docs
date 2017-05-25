@@ -1,40 +1,5 @@
 ---
-uid: System.Windows.Documents.Floater
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Floater.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Floater.HorizontalAlignment
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Documents.Floater.Width
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Documents.Floater.#ctor
+uid: System.Windows.Documents.Floater.#ctor(System.Windows.Documents.Block,System.Windows.Documents.TextPointer)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -52,6 +17,24 @@ manager: "wpickett"
 ---
 
 ---
+uid: System.Windows.Documents.Floater.HorizontalAlignmentProperty
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Floater.HorizontalAlignment
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
 uid: System.Windows.Documents.Floater.WidthProperty
 ms.technology: 
   - "dotnet-wpf"
@@ -61,7 +44,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Floater.#ctor(System.Windows.Documents.Block,System.Windows.Documents.TextPointer)
+uid: System.Windows.Documents.Floater.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -70,10 +53,18 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Floater.HorizontalAlignmentProperty
+uid: System.Windows.Documents.Floater
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
+---
+
+---
+uid: System.Windows.Documents.Floater.Width
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
 ---

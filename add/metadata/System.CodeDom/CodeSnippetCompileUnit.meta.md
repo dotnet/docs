@@ -1,5 +1,5 @@
 ---
-uid: System.CodeDom.CodeSnippetCompileUnit
+uid: System.CodeDom.CodeSnippetCompileUnit.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeSnippetCompileUnit.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeSnippetCompileUnit.Value
 ms.technology: 
   - "dotnet-standard"
@@ -44,7 +35,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeSnippetCompileUnit.#ctor(System.String)
+uid: System.CodeDom.CodeSnippetCompileUnit
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

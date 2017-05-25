@@ -1,5 +1,5 @@
 ---
-uid: System.Windows.Media.Animation.ColorAnimation
+uid: System.Windows.Media.Animation.ColorAnimation.#ctor(System.Windows.Media.Color,System.Windows.Media.Color,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -8,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ColorAnimation.#ctor(System.Windows.Media.Color,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)
+uid: System.Windows.Media.Animation.ColorAnimation.GetCurrentValueCore(System.Windows.Media.Color,System.Windows.Media.Color,System.Windows.Media.Animation.AnimationClock)
 ms.technology: 
   - "dotnet-wpf"
 ms.author: "kempb"
@@ -25,7 +25,15 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ColorAnimation.Clone
+uid: System.Windows.Media.Animation.ColorAnimation.#ctor(System.Windows.Media.Color,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)
+ms.technology: 
+  - "dotnet-wpf"
+ms.author: "kempb"
+manager: "ghogen"
+---
+
+---
+uid: System.Windows.Media.Animation.ColorAnimation.#ctor(System.Windows.Media.Color,System.Windows.Duration)
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -43,7 +51,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ColorAnimation.#ctor
+uid: System.Windows.Media.Animation.ColorAnimation.EasingFunction
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -61,45 +69,12 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ColorAnimation.By
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.ColorAnimation.IsCumulative
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.ColorAnimation.IsAdditive
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.ColorAnimation.EasingFunctionProperty
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.ColorAnimation.GetCurrentValueCore(System.Windows.Media.Color,System.Windows.Media.Color,System.Windows.Media.Animation.AnimationClock)
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
@@ -112,7 +87,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ColorAnimation.EasingFunction
+uid: System.Windows.Media.Animation.ColorAnimation.ToProperty
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -121,16 +96,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ColorAnimation.#ctor(System.Windows.Media.Color,System.Windows.Media.Color,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.ColorAnimation.From
+uid: System.Windows.Media.Animation.ColorAnimation.Clone
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -148,7 +114,34 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ColorAnimation.To
+uid: System.Windows.Media.Animation.ColorAnimation.From
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.ColorAnimation.By
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.ColorAnimation
+ms.technology: 
+  - "dotnet-wpf"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Media.Animation.ColorAnimation.EasingFunctionProperty
 ms.technology: 
   - "dotnet-wpf"
 ms.author: "kempb"
@@ -156,19 +149,17 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ColorAnimation.ToProperty
+uid: System.Windows.Media.Animation.ColorAnimation.IsCumulative
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ColorAnimation.#ctor(System.Windows.Media.Color,System.Windows.Duration)
+uid: System.Windows.Media.Animation.ColorAnimation.To
 ms.technology: 
   - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
+ms.author: "kempb"
+manager: "ghogen"
 ---

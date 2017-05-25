@@ -1,5 +1,14 @@
 ---
-uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11
+uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11.FromDiscoveryMessageSequence(System.ServiceModel.Discovery.DiscoveryMessageSequence)
+ms.technology: 
+  - "dotnet-standard"
+author: "Erikre"
+ms.author: "erikre"
+manager: "erikre"
+---
+
+---
+uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11.GetSchema(System.Xml.Schema.XmlSchemaSet)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -17,7 +26,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11.GetSchema
+uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11.ReadXml(System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -44,25 +53,7 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11.ReadXml(System.Xml.XmlReader)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11.GetSchema(System.Xml.Schema.XmlSchemaSet)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11.FromDiscoveryMessageSequence(System.ServiceModel.Discovery.DiscoveryMessageSequence)
+uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

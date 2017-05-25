@@ -1,30 +1,4 @@
 ---
-uid: System.Windows.Forms.Design.Behavior.Adorner
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Design.Behavior.Adorner.Invalidate(System.Drawing.Region)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Design.Behavior.Adorner.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.Design.Behavior.Adorner.Invalidate(System.Drawing.Rectangle)
 ms.technology: 
   - "dotnet-winforms"
@@ -34,7 +8,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Design.Behavior.Adorner.Glyphs
+uid: System.Windows.Forms.Design.Behavior.Adorner.Invalidate(System.Drawing.Region)
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -70,7 +44,25 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Design.Behavior.Adorner.Invalidate
+uid: System.Windows.Forms.Design.Behavior.Adorner.Glyphs
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.Behavior.Adorner
+ms.technology: 
+  - "dotnet-winforms"
+author: "stevehoag"
+ms.author: "shoag"
+manager: "wpickett"
+---
+
+---
+uid: System.Windows.Forms.Design.Behavior.Adorner.#ctor
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "kempb"

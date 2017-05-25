@@ -1,10 +1,9 @@
 ---
-uid: System.Linq.Expressions.Expression`1
+uid: System.Linq.Expressions.Expression`1.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})
 ms.technology: 
   - "dotnet-standard"
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
+ms.author: "billchi"
+manager: "ghogen"
 ---
 
 ---
@@ -26,15 +25,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Linq.Expressions.Expression`1.Update(System.Linq.Expressions.Expression,System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression})
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "billchi"
-manager: "ghogen"
----
-
----
-uid: System.Linq.Expressions.Expression`1.Compile
+uid: System.Linq.Expressions.Expression`1
 ms.technology: 
   - "dotnet-standard"
 author: "BillWagner"

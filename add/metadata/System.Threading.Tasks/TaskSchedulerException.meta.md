@@ -1,23 +1,5 @@
 ---
-uid: System.Threading.Tasks.TaskSchedulerException
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.TaskSchedulerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.TaskSchedulerException.#ctor(System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -35,7 +17,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskSchedulerException.#ctor
+uid: System.Threading.Tasks.TaskSchedulerException.#ctor(System.Exception)
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -54,6 +36,15 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.Tasks.TaskSchedulerException.#ctor
+ms.technology: 
+  - "dotnet-standard"
+author: "rpetrusha"
+ms.author: "ronpet"
+manager: "wpickett"
+---
+
+---
+uid: System.Threading.Tasks.TaskSchedulerException
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -1,5 +1,4 @@
 # [Tackling Business Complexity in a Microservice with DDD and CQRS Patterns](index.md)
-## [Vision](vision.md)
 ## [Applying simplified CQRS and DDD patterns in a microservice](applying-simplified-cqrs-and-ddd-patterns-in-a-microservice.md)
 ## [Applying CQRS and CQS approaches in a DDD microservice in eShopOnContainers](applying-cqrs-and-cqs-approaches-in-a-ddd-microservice-in-eshoponcontainers.md)
 ## [Implementing reads/queries in a CQRS microservice](implementing-reads--queries-in-a-cqrs-microservice.md)

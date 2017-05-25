@@ -312,14 +312,14 @@ For example, in the preceding code example, the \_someOrderInternalState field h
 
 #### Additional resources
 
--   **Vaughn Vernon. Modeling Aggregates with DDD and Entity Framework.** Note that this is *not* Entity Framework Core.\
-    *<https://vaughnvernon.co/?p=879> *
+-   **Vaughn Vernon. Modeling Aggregates with DDD and Entity Framework.** Note that this is *not* Entity Framework Core.
+    [*https://vaughnvernon.co/?p=879*](https://vaughnvernon.co/?p=879)
 
--   **Julie Lerman. Coding for Domain-Driven Design: Tips for Data-Focused Devs\
-    **[*https://msdn.microsoft.com/en-us/magazine/dn342868.aspx*](https://msdn.microsoft.com/en-us/magazine/dn342868.aspx)
+-   **Julie Lerman. Coding for Domain-Driven Design: Tips for Data-Focused Devs**
+    [*https://msdn.microsoft.com/en-us/magazine/dn342868.aspx*](https://msdn.microsoft.com/en-us/magazine/dn342868.aspx)
 
--   **Udi Dahan. How to create fully encapsulated Domain Models\
-    **[*http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/*](http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/)
+-   **Udi Dahan. How to create fully encapsulated Domain Models**
+    [*http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/*](http://udidahan.com/2008/02/29/how-to-create-fully-encapsulated-domain-models/)
 
 ## Seedwork (reusable base classes and interfaces for your domain model)
 
@@ -491,8 +491,8 @@ For example, the following example with the IOrderRepository interface defines w
 
 #### Additional resources
 
--   **Martin Fowler. Separated Interface.\
-    **[*http://www.martinfowler.com/eaaCatalog/separatedInterface.html*](http://www.martinfowler.com/eaaCatalog/separatedInterface.html%20)
+-   **Martin Fowler. Separated Interface.**
+    [*http://www.martinfowler.com/eaaCatalog/separatedInterface.html*](http://www.martinfowler.com/eaaCatalog/separatedInterface.html%20)
 
 ## Implementing value objects
 
@@ -692,26 +692,26 @@ Therefore, the ID is hidden from the domain model point of view, and in the futu
 
 #### Additional resources
 
--   **Martin Fowler. ValueObject pattern\
-    **[*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
+-   **Martin Fowler. ValueObject pattern**
+    [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
 
--   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects)\
+-   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects)
     [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
--   **Vaughn Vernon. Implementing Domain-Driven Design.** (Book; includes a discussion of value objects)\
+-   **Vaughn Vernon. Implementing Domain-Driven Design.** (Book; includes a discussion of value objects)
     [*https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/*](https://www.amazon.com/Implementing-Domain-Driven-Design-Vaughn-Vernon/dp/0321834577/)
 
--   **Shadow Properties\
-    ***<https://docs.microsoft.com/en-us/ef/core/modeling/shadow-properties> *
+-   **Shadow Properties**
+    [*https://docs.microsoft.com/en-us/ef/core/modeling/shadow-properties*](https://docs.microsoft.com/en-us/ef/core/modeling/shadow-properties)
 
--   **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab)**\
-    **[*https://github.com/aspnet/EntityFramework/issues/246*](https://github.com/aspnet/EntityFramework/issues/246)
+-   **Complex types and/or value objects**. Discussion in the EF Core GitHub repo (Issues tab)
+    [*https://github.com/aspnet/EntityFramework/issues/246*](https://github.com/aspnet/EntityFramework/issues/246)
 
--   **ValueObject.cs.** Base value object class in eShopOnContainers.**\
-    **[*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs)
+-   **ValueObject.cs.** Base value object class in eShopOnContainers.
+    [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/ValueObject.cs)
 
--   **Address class.** Sample value object class in eShopOnContainers.**\
-    **[*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs)
+-   **Address class.** Sample value object class in eShopOnContainers.
+    [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs)
 
 ## Using Enumeration classes instead of C\# language enum types
 
@@ -861,22 +861,22 @@ You can use this class as a type in any entity or value object, as for the follo
 
 #### Additional resources
 
--   **Enum’s are evil—update**\
+-   **Enum’s are evil—update**
     [*http://www.planetgeek.ch/2009/07/01/enums-are-evil/*](http://www.planetgeek.ch/2009/07/01/enums-are-evil/)
 
--   **Daniel Hardman. How Enums Spread Disease — And How To Cure It**\
+-   **Daniel Hardman. How Enums Spread Disease — And How To Cure It**
     [*https://codecraft.co/2012/10/29/how-enums-spread-disease-and-how-to-cure-it/*](https://codecraft.co/2012/10/29/how-enums-spread-disease-and-how-to-cure-it/)
 
--   **Jimmy Bogard. Enumeration classes**\
+-   **Jimmy Bogard. Enumeration classes**
     [*https://lostechies.com/jimmybogard/2008/08/12/enumeration-classes/*](https://lostechies.com/jimmybogard/2008/08/12/enumeration-classes/)
 
--   **Steve Smith. Enum Alternatives in C\#\
-    **[*http://ardalis.com/enum-alternatives-in-c*](http://ardalis.com/enum-alternatives-in-c)
+-   **Steve Smith. Enum Alternatives in C#**
+    [*http://ardalis.com/enum-alternatives-in-c*](http://ardalis.com/enum-alternatives-in-c)
 
--   **Enumeration.cs.** Base Enumeration class in eShopOnContainers**\
-    **[*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs)
+-   **Enumeration.cs.** Base Enumeration class in eShopOnContainers
+    [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/SeedWork/Enumeration.cs)
 
--   **CardType.cs**. Sample Enumeration class in eShopOnContainers.\
+-   **CardType.cs**. Sample Enumeration class in eShopOnContainers.
     [*https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/BuyerAggregate/CardType.cs*](https://github.com/dotnet/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/BuyerAggregate/CardType.cs)
 
 ## Designing validations in the domain model layer
@@ -1003,26 +1003,26 @@ Using field validation with data annotations, for example, you do not duplicate 
 
 #### Additional resources
 
--   **Rachel Appel. Introduction to model validation in ASP.NET Core MVC\
-    **[*https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation*](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation)
+-   **Rachel Appel. Introduction to model validation in ASP.NET Core MVC**
+    [*https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation*](https://docs.microsoft.com/en-us/aspnet/core/mvc/models/validation)
 
--   **Rick Anderson. Adding validation\
-    ***<https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation> *
+-   **Rick Anderson. Adding validation**
+    [*https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation*](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation)
 
--   **Martin Fowler. Replacing Throwing Exceptions with Notification in Validations\
-    ***<https://martinfowler.com/articles/replaceThrowWithNotification.html> *
+-   **Martin Fowler. Replacing Throwing Exceptions with Notification in Validations**
+    [*https://martinfowler.com/articles/replaceThrowWithNotification.html*](https://martinfowler.com/articles/replaceThrowWithNotification.html)
 
--   **Specification and Notification Patterns\
-    **[*https://www.codeproject.com/Tips/790758/Specification-and-Notification-Patterns*](https://www.codeproject.com/Tips/790758/Specification-and-Notification-Patterns)
+-   **Specification and Notification Patterns**
+    [*https://www.codeproject.com/Tips/790758/Specification-and-Notification-Patterns*](https://www.codeproject.com/Tips/790758/Specification-and-Notification-Patterns)
 
--   **Lev Gorodinski. Validation in Domain-Driven Design (DDD)\
-    **[*http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/*](http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/)
+-   **Lev Gorodinski. Validation in Domain-Driven Design (DDD)**
+    [*http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/*](http://gorodinski.com/blog/2012/05/19/validation-in-domain-driven-design-ddd/)
 
--   **Colin Jack. Domain Model Validation\
-    **[*http://colinjack.blogspot.com/2008/03/domain-model-validation.html*](http://colinjack.blogspot.com/2008/03/domain-model-validation.html)
+-   **Colin Jack. Domain Model Validation**
+    [*http://colinjack.blogspot.com/2008/03/domain-model-validation.html*](http://colinjack.blogspot.com/2008/03/domain-model-validation.html)
 
--   **Jimmy Bogard. Validation in a DDD world\
-    **[*https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/*](https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/)
+-   **Jimmy Bogard. Validation in a DDD world**
+    [*https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/*](https://lostechies.com/jimmybogard/2009/02/15/validation-in-a-ddd-world/)
 
 ## Client-side validation (validation in the presentation layers)
 
@@ -1042,26 +1042,26 @@ The implementation of client-side validation depends on what kind of client appl
 
 ##### Validation in Xamarin mobile apps
 
--   **Validate Text Input And Show Errors\
-    **[*https://developer.xamarin.com/recipes/ios/standard\_controls/text\_field/validate\_input/*](https://developer.xamarin.com/recipes/ios/standard_controls/text_field/validate_input/)
+-   **Validate Text Input and Show Errors**
+    [*https://developer.xamarin.com/recipes/ios/standard\_controls/text\_field/validate\_input/*](https://developer.xamarin.com/recipes/ios/standard_controls/text_field/validate_input/)
 
--   **Validation Callback\
-    ***<https://developer.xamarin.com/samples/xamarin-forms/XAML/ValidationCallback/> *
+-   **Validation Callback**
+    [*https://developer.xamarin.com/samples/xamarin-forms/XAML/ValidationCallback/*](https://developer.xamarin.com/samples/xamarin-forms/XAML/ValidationCallback/)
 
 ##### Validation in ASP.NET Core apps
 
--   **Rick Anderson. Adding validation**\
-    *<https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation> *
+-   **Rick Anderson. Adding validation** **
+    **[*https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation*](https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/validation)
 
 ##### Validation in SPA Web apps (Angular 2, TypeScript, JavaScript) 
 
--   **Ado Kukic. Angular 2 Form Validation**\
-    [*https://scotch.io/tutorials/angular-2-form-validation*](https://scotch.io/tutorials/angular-2-form-validation)
+-   **Ado Kukic. Angular 2 Form Validation** **
+    **[*https://scotch.io/tutorials/angular-2-form-validation*](https://scotch.io/tutorials/angular-2-form-validation)
 
--   **Form Validation\
-    **[*https://angular.io/docs/ts/latest/cookbook/form-validation.html*](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
+-   **Form Validation**
+    [*https://angular.io/docs/ts/latest/cookbook/form-validation.html*](https://angular.io/docs/ts/latest/cookbook/form-validation.html)
 
--   **Validation.** Breeze documentation.\
+-   **Validation.** Breeze documentation.
     [*http://breeze.github.io/doc-js/validation.html*](http://breeze.github.io/doc-js/validation.html)
 
 In summary, these are the most important concepts in regards to validation:

@@ -34,14 +34,14 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
 
 #### Additional resources
 
--   **SOLID: Fundamental OOP Principles**\
-    *[http://deviq.com/solid/](http://deviq.com/solid/%20) *
+-   **SOLID: Fundamental OOP Principles**
+    [*http://deviq.com/solid/*](http://deviq.com/solid/%20)
 
--   **Inversion of Control Containers and the Dependency Injection pattern**\
-    *[https://martinfowler.com/articles/injection.html](https://martinfowler.com/articles/injection.html%20) *
+-   **Inversion of Control Containers and the Dependency Injection pattern**
+    [*https://martinfowler.com/articles/injection.html*](https://martinfowler.com/articles/injection.html%20)
 
--   **Steve Smith. New is Glue\
-    **[*http://ardalis.com/new-is-glue*](http://ardalis.com/new-is-glue)
+-   **Steve Smith. New is Glue**
+    [*http://ardalis.com/new-is-glue*](http://ardalis.com/new-is-glue)
 
 
 >[!div class="step-by-step"]

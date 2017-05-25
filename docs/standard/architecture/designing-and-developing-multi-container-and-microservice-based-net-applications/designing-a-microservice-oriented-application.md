@@ -92,7 +92,7 @@ Therefore, the units of deployment for microservices (and even for databases in 
 
 ### Additional resources
 
--   **eShopOnContainers GitHub repo. Source code for the reference application**\
+-   **eShopOnContainers GitHub repo. Source code for the reference application**
     *https://aka.ms/eShopOnContainers/*
 
 ## Benefits of a microservice-based solution

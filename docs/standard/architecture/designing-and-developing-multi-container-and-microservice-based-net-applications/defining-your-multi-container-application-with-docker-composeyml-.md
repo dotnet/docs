@@ -132,25 +132,25 @@ The following YAML code is the definition of a possible global but single docker
   image: redis
   -------------------------------------------------------------------------------
 
-The root key in this file is services. Under that key you define the services you want to deploy and run when you execute the docker-compose up command or when you deploy from Visual Studio by using this docker-compose.yml file. In this case, the docker-compose.yml file has multiple services defined, as described in the following table.
+The root key in this file is services. Under that key you define the services you want to deploy and run when you execute the docker-compose up command or when you deploy from Visual Studio by using this docker-compose.yml file. In this case, the docker-compose.yml file has multiple services defined, as described in the following list.
 
-  --------------------------------------------------------------------------------------------------------------------------------
-  **Service name in **     **Description**
-                           
-  **docker-compose.yml**   
-  ------------------------ -------------------------------------------------------------------------------------------------------
-  webmvc                   Container including the ASP.NET Core MVC application consuming the microservices from server-side C\#
+-   webmvc
+    Container including the ASP.NET Core MVC application consuming the microservices from server-side C\#
 
-  catalog.api              Container including the Catalog ASP.NET Core Web API microservice
+-   catalog.api
+    Container including the Catalog ASP.NET Core Web API microservice
 
-  ordering.api             Container including the Ordering ASP.NET Core Web API microservice
+-   ordering.api
+    Container including the Ordering ASP.NET Core Web API microservice
 
-  sql.data                 Container running SQL Server for Linux, holding the microservices databases
+-   sql.data
+    Container running SQL Server for Linux, holding the microservices databases
 
-  basket.api               Container with the Basket ASP.NET Core Web API microservice
+-   basket.api
+    Container with the Basket ASP.NET Core Web API microservice
 
-  basket.data              Container running the REDIS cache service, with the basket database as a REDIS cache
-  --------------------------------------------------------------------------------------------------------------------------------
+-   basket.data
+    Container running the REDIS cache service, with the basket database as a REDIS cache
 
 ### A simple Web Service API container
 
@@ -620,10 +620,10 @@ Note that the values set in the runtime environment always override the values d
 
 #### Additional resources
 
--   **Overview of Docker Compose**\
+-   **Overview of Docker Compose**
     [*https://docs.docker.com/compose/overview/*](https://docs.docker.com/compose/overview/)
 
--   **Multiple Compose files**\
+-   **Multiple Compose files**
     [*https://docs.docker.com/compose/extends/\#multiple-compose-files*](https://docs.docker.com/compose/extends/#multiple-compose-files)
 
 ### Building optimized ASP.NET Core Docker images
@@ -654,7 +654,7 @@ The .NET team has been doing important work to make .NET Core and ASP.NET Core a
 
 #### Additional resources
 
--   **Building Optimized Docker Images with ASP.NET Core**\
+-   **Building Optimized Docker Images with ASP.NET Core**
     [*https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/*](https://blogs.msdn.microsoft.com/stevelasker/2016/09/29/building-optimized-docker-images-with-asp-net-core/)
 
 ### Building the application from a build (CI) container
@@ -733,7 +733,7 @@ The overall takeway here is that you are able to build your application the same
 
 #### Additional resources
 
--   **Building bits from a container: Setting the eShopOnContainers solution up in a Windows CLI environment (dotnet CLI, Docker CLI and VS Code)**\
+-   **Building bits from a container: Setting the eShopOnContainers solution up in a Windows CLI environment (dotnet CLI, Docker CLI and VS Code)**
     [*https://github.com/dotnet/eShopOnContainers/wiki/03.-Setting-the-eShopOnContainers-solution-up-in-a-Windows-CLI-environment-(dotnet-CLI,-Docker-CLI-and-VS-Code)*](https://github.com/dotnet/eShopOnContainers/wiki/03.-Setting-the-eShopOnContainers-solution-up-in-a-Windows-CLI-environment-(dotnet-CLI,-Docker-CLI-and-VS-Code))
 
 

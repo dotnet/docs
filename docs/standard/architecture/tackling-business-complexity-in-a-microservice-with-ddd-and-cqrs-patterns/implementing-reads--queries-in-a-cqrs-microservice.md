@@ -104,8 +104,8 @@ For most queries, you do not need to predefine a DTO or ViewModel class, which m
 
 #### Additional resources
 
--   **Dapper\
-    **[*https://github.com/StackExchange/dapper-dot-net*](https://github.com/StackExchange/dapper-dot-net)
+-   **Dapper**
+    [*https://github.com/StackExchange/dapper-dot-net*](https://github.com/StackExchange/dapper-dot-net)
 
 -   **Julie Lerman. Data Points - Dapper, Entity Framework and Hybrid Apps (MSDN Mag. article)**
 

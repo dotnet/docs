@@ -22,9 +22,11 @@ You can also create your own Docker image in cases where you want to use a diffe
 
 When you add the image name to your Dockerfile file, you can select the operating system and version depending on the tag you use, as in the following examples:
 
-  microsoft/dotnet**:1.1-runtime**              .NET Core 1.1 runtime-only on Linux
-  --------------------------------------------- ---------------------------------------------------
-  microsoft/dotnet:**1.1-runtime-nanoserver**   .NET Core 1.1 runtime-only on Windows Nano Server
+-   microsoft/dotnet**:1.1-runtime**
+    .NET Core 1.1 runtime-only on Linux
+
+-   microsoft/dotnet:**1.1-runtime-nanoserver**
+    .NET Core 1.1 runtime-only on Windows Nano Server
 
 
 

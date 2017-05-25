@@ -12,5 +12,5 @@ ms.technology: dotnet-docker
 
 
 >[!div class="step-by-step"]
-[Previous] (../migrating-legacy-monolithic-net-framework-applications-to-windows-containers/development-and-production-environments.md)
+[Previous] (../migrating-legacy-monolithic-net-framework-applications-to-windows-containers/index.md)
 [Next] (vision.md)

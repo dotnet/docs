@@ -26,19 +26,19 @@ Strategies for dealing with partial failures include the following.
 
 ### Additional resources
 
--   **Resiliency patterns\
-    **[*https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency)
+-   **Resiliency patterns**
+    [*https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency)
 
--   **Adding Resilience and Optimizing Performance**\
+-   **Adding Resilience and Optimizing Performance**
     [*https://msdn.microsoft.com/en-us/library/jj591574.aspx*](https://msdn.microsoft.com/en-us/library/jj591574.aspx)
 
--   **Bulkhead.** GitHub repo. Implementation with Polly policy.**\
-    **[*https://github.com/App-vNext/Polly/wiki/Bulkhead*](https://github.com/App-vNext/Polly/wiki/Bulkhead)
+-   **Bulkhead.** GitHub repo. Implementation with Polly policy.\
+    [*https://github.com/App-vNext/Polly/wiki/Bulkhead*](https://github.com/App-vNext/Polly/wiki/Bulkhead)
 
--   **Designing resilient applications for Azure\
-    **[*https://docs.microsoft.com/en-us/azure/architecture/resiliency/*](https://docs.microsoft.com/en-us/azure/architecture/resiliency/)
+-   **Designing resilient applications for Azure**
+    [*https://docs.microsoft.com/en-us/azure/architecture/resiliency/*](https://docs.microsoft.com/en-us/azure/architecture/resiliency/)
 
--   **Transient fault handling**\
+-   **Transient fault handling**
     <https://docs.microsoft.com/en-us/azure/architecture/best-practices/transient-faults>
 
 ## Implementing retries with exponential backoff
@@ -161,13 +161,13 @@ The first DbContext is \_catalogContext and the second DbContext is within the \
 
 ### Additional resources
 
--   **Connection Resiliency and Command Interception with the Entity Framework\
-    **[*https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency)
+-   **Connection Resiliency and Command Interception with the Entity Framework**
+    [*https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency*](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/resiliency)
 
--   **Cesar de la Torre. Using Resilient Entity Framework Core Sql Connections and Transactions\
-    **<https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/>
+-   **Cesar de la Torre. Using Resilient Entity Framework Core Sql Connections and Transactions**
+    <https://blogs.msdn.microsoft.com/cesardelatorre/2017/03/26/using-resilient-entity-framework-core-sql-connections-and-transactions-retries-with-exponential-backoff/>
 
-*\
+*
 *
 
 ### Implementing custom HTTP call retries with exponential backoff
@@ -924,20 +924,20 @@ A regular Retry policy can impact your system in cases of high concurrency and s
 
 ### Additional resources
 
--   **Retry pattern**\
-    *<https://docs.microsoft.com/en-us/azure/architecture/patterns/retry> *
+-   **Retry pattern**
+    [*https://docs.microsoft.com/en-us/azure/architecture/patterns/retry*](https://docs.microsoft.com/en-us/azure/architecture/patterns/retry)
 
--   **Connection Resiliency** (Entity Framework Core)\
-    *<https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency> *
+-   **Connection Resiliency** (Entity Framework Core)
+    [*https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency*](https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency)
 
--   **Polly** (.NET resilience and transient-fault-handling library)\
-    *<https://github.com/App-vNext/Polly> *
+-   **Polly** (.NET resilience and transient-fault-handling library)
+    [*https://github.com/App-vNext/Polly*](https://github.com/App-vNext/Polly)
 
 -   **Circuit Breaker pattern**\
     [*https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker*](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
 
--   **Marc Brooker. Jitter: Making Things Better With Randomness\
-    **https://brooker.co.za/blog/2015/03/21/backoff.html
+-   **Marc Brooker. Jitter: Making Things Better With Randomness**\
+    https://brooker.co.za/blog/2015/03/21/backoff.html
 
 
 >[!div class="step-by-step"]

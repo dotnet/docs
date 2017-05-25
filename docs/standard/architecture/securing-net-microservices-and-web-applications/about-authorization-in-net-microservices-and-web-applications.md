@@ -138,21 +138,21 @@ An example of a custom authorization requirement and handler for checking a user
 
 ### Additional resources
 
--   **ASP.NET Core Authentication**\
+-   **ASP.NET Core Authentication**
     [*https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity*](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity)
 
--   **ASP.NET Core Authorization**\
+-   **ASP.NET Core Authorization**
     [*https://docs.microsoft.com/en-us/aspnet/core/security/authorization/introduction*](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/introduction)
 
--   **Role based Authorization**\
+-   **Role based Authorization**
     [*https://docs.microsoft.com/en-us/aspnet/core/security/authorization/roles*](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/roles)
 
--   **Custom Policy-Based Authorization**\
+-   **Custom Policy-Based Authorization**
     [*https://docs.microsoft.com/en-us/aspnet/core/security/authorization/policies*](https://docs.microsoft.com/en-us/aspnet/core/security/authorization/policies)
 
 
 
 
 >[!div class="step-by-step"]
-[Previous] (implementing-authentication-in-net-microservices-and-web-applications-.md)
+[Previous] (index.md)
 [Next] (storing-application-secrets-safely-during-development.md)

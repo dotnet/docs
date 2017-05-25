@@ -232,16 +232,16 @@ Finally, if you were storing all the event streams, you can use Microsoft Power 
 
 ### Additional resources
 
--   **ASP.NET Core HealthChecks** (early release)\
-    *<https://github.com/aspnet/HealthChecks/> *
+-   **ASP.NET Core HealthChecks** (early release)
+    [*https://github.com/aspnet/HealthChecks/*](https://github.com/aspnet/HealthChecks/)
 
--   **Introduction to Service Fabric health monitoring**\
+-   **Introduction to Service Fabric health monitoring**
     [*https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-health-introduction*](https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-health-introduction)
 
--   **Azure Application Insights**\
+-   **Azure Application Insights**
     [*https://azure.microsoft.com/en-us/services/application-insights/*](https://azure.microsoft.com/en-us/services/application-insights/)
 
--   **Microsoft Operations Management Suite**\
+-   **Microsoft Operations Management Suite**
     [*https://www.microsoft.com/en-us/cloud-platform/operations-management-suite*](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite)
 
 >[!div class="step-by-step"]

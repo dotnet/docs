@@ -72,20 +72,20 @@ In this example, the call to AddAzureKeyVault comes at the end of configuration 
 
 ### Additional resources
 
--   **Using Azure Key Vault to protect application secrets***\
+-   **Using Azure Key Vault to protect application secrets***
     <https://docs.microsoft.com/en-us/azure/guidance/guidance-multitenant-identity-keyvault>*
 
--   **Safe storage of app secrets during development**\
+-   **Safe storage of app secrets during development**
     [*https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets*](https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets)
 
--   **Configuring data protection**\
+-   **Configuring data protection**
     [*https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/configuration/overview*](https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/configuration/overview)
 
--   **Key management and lifetime**\
+-   **Key management and lifetime**
     [*https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/configuration/default-settings\#data-protection-default-settings*](https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/configuration/default-settings#data-protection-default-settings)
 
--   **Microsoft.Extensions.Configuration.DockerSecrets.** GitHub repo.\
-    *<https://github.com/aspnet/Configuration/tree/dev/src/Microsoft.Extensions.Configuration.DockerSecrets>*
+-   **Microsoft.Extensions.Configuration.DockerSecrets.** GitHub repo.
+    *<https://github.com/aspnet/Configuration/tree/dev/src/Microsoft.Extensions.Configuration.DockerSecrets> *
 
 >[!div class="step-by-step"]
 [Previous] (storing-application-secrets-safely-during-development.md)

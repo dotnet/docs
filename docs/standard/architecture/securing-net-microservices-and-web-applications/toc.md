@@ -1,5 +1,4 @@
 # [Securing .NET Microservices and Web Applications](index.md)
-## [Implementing authentication in .NET microservices and web applications ](implementing-authentication-in-net-microservices-and-web-applications-.md)
 ## [About authorization in .NET microservices and web applications](about-authorization-in-net-microservices-and-web-applications.md)
 ## [Storing application secrets safely during development](storing-application-secrets-safely-during-development.md)
 ## [Using Azure Key Vault to protect secrets at production time](using-azure-key-vault-to-protect-secrets-at-production-time.md)

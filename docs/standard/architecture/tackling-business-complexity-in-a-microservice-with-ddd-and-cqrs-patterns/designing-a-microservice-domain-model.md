@@ -10,7 +10,7 @@ ms.technology: dotnet-docker
 ---
 # Designing a microservice domain model
 
-*Define one rich domain model for each business microservice or Bounded Context *
+*Define one rich domain model for each business microservice or Bounded Context*
 
 Your goal is to create a single cohesive domain model for each business microservice or Bounded Context (BC). Keep in mind, however, that a BC or business microservice could sometimes be composed of several physical services that share a single domain model. The domain model must capture the rules, behavior, business language, and constraints of the single Bounded Context or business microservice that it represents.
 
@@ -54,15 +54,15 @@ Some people say that the anemic domain model is an anti-pattern. It really depen
 
 #### Additional resources
 
--   **DevIQ. Domain Entity\
-    **[*http://deviq.com/entity/*](http://deviq.com/entity/)
+-   **DevIQ. Domain Entity**
+    [*http://deviq.com/entity/*](http://deviq.com/entity/)
 
--   **Martin Fowler. The Domain Model\
-    **[*https://martinfowler.com/eaaCatalog/domainModel.html*](https://martinfowler.com/eaaCatalog/domainModel.html)
+-   **Martin Fowler. The Domain Model**
+    [*https://martinfowler.com/eaaCatalog/domainModel.html*](https://martinfowler.com/eaaCatalog/domainModel.html)
 
 -   **Martin Fowler. The Anemic Domain Model**
 
-    *https://martinfowler.com/bliki/AnemicDomainModel.html*
+    <https://martinfowler.com/bliki/AnemicDomainModel.html>
 
 ### The Value Object pattern
 
@@ -78,16 +78,16 @@ Value objects are hard to manage in relational databases and ORMs like EF, where
 
 #### Additional resources
 
--   **Martin Fowler. Value Object pattern\
-    ***<https://martinfowler.com/bliki/ValueObject.html> *
+-   **Martin Fowler. Value Object pattern**
+    [*https://martinfowler.com/bliki/ValueObject.html*](https://martinfowler.com/bliki/ValueObject.html)
 
--   **Value Object\
-    **[*http://deviq.com/value-object/*](http://deviq.com/value-object/)
+-   **Value Object**
+    [*http://deviq.com/value-object/*](http://deviq.com/value-object/)
 
--   **Value Objects in Test-Driven Development\
-    **[*https://leanpub.com/tdd-ebook/read\#leanpub-auto-value-objects*](https://leanpub.com/tdd-ebook/read#leanpub-auto-value-objects)
+-   **Value Objects in Test-Driven Development**
+    [*https://leanpub.com/tdd-ebook/read\#leanpub-auto-value-objects*](https://leanpub.com/tdd-ebook/read#leanpub-auto-value-objects)
 
--   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects)\
+-   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of value objects)
     [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
 ### The Aggregate pattern
@@ -132,23 +132,23 @@ Identifying and working with aggregates requires research and experience. For mo
 
 #### Additional resources
 
--   **Vaughn Vernon. Effective Aggregate Design - Part I: Modeling a Single Aggregate\
-    ***<https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_1.pdf> *
+-   **Vaughn Vernon. Effective Aggregate Design - Part I: Modeling a Single Aggregate**
+    [*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD\_COMMUNITY\_ESSAY\_AGGREGATES\_PART\_1.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_1.pdf)
 
--   **Vaughn Vernon. Effective Aggregate Design - Part II: Making Aggregates Work Together\
-    **[*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD\_COMMUNITY\_ESSAY\_AGGREGATES\_PART\_2.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf)
+-   **Vaughn Vernon. Effective Aggregate Design - Part II: Making Aggregates Work Together**
+    *<https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_2.pdf> *
 
--   **Vaughn Vernon. Effective Aggregate Design - Part III: Gaining Insight Through Discovery\
-    **[*https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD\_COMMUNITY\_ESSAY\_AGGREGATES\_PART\_3.pdf*](https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf)
+-   **Vaughn Vernon. Effective Aggregate Design - Part III: Gaining Insight Through Discovery**
+    *<https://vaughnvernon.co/wordpress/wp-content/uploads/2014/10/DDD_COMMUNITY_ESSAY_AGGREGATES_PART_3.pdf> *
 
--   **Sergey Grybniak. DDD Tactical Design Patterns\
-    ***<https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part> *
+-   **Sergey Grybniak. DDD Tactical Design Patterns**
+    [*https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part*](https://www.codeproject.com/Articles/1164363/Domain-Driven-Design-Tactical-Design-Patterns-Part)
 
--   **Chris Richardson. Developing Transactional Microservices Using Aggregates\
-    **[*https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson*](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson)
+-   **Chris Richardson. Developing Transactional Microservices Using Aggregates**
+    [*https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson*](https://www.infoq.com/articles/microservices-aggregates-events-cqrs-part-1-richardson)
 
--   **DevIQ. The Aggregate pattern\
-    **[*http://deviq.com/aggregate-pattern/*](http://deviq.com/aggregate-pattern/)
+-   **DevIQ. The Aggregate pattern**
+    [*http://deviq.com/aggregate-pattern/*](http://deviq.com/aggregate-pattern/)
 
 
 >[!div class="step-by-step"]

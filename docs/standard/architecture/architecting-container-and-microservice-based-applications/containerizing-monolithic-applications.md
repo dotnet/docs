@@ -70,5 +70,5 @@ As also shown in Figure 4-4, the publish flow pushes an image through a containe
 
 
 >[!div class="step-by-step"]
-[Previous] (container-design-principles.md)
+[Previous] (index.md)
 [Next] (state-and-data-in-docker-applications.md)

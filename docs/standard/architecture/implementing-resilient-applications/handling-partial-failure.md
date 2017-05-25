@@ -38,5 +38,5 @@ In addition, it is essential that you design your microservices and client appli
 
 
 >[!div class="step-by-step"]
-[Previous] (vision.md)
+[Previous] (index.md)
 [Next] (strategies-for-handling-partial-failure.md)

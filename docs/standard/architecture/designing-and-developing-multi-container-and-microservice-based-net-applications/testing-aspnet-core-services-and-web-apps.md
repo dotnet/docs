@@ -128,26 +128,26 @@ As you can see in the following code, when you create integration tests for ASP.
 
 #### Additional resources
 
--   **Steve Smith. Testing controllers** (ASP.NET Core)**\
-    **[*https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/testing*](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/testing)
+-   **Steve Smith. Testing controllers** (ASP.NET Core)
+    [*https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/testing*](https://docs.microsoft.com/en-us/aspnet/core/mvc/controllers/testing)
 
--   **Steve Smith. Integration testing** (ASP.NET Core)**\
-    **[*https://docs.microsoft.com/en-us/aspnet/core/testing/integration-testing*](https://docs.microsoft.com/en-us/aspnet/core/testing/integration-testing)
+-   **Steve Smith. Integration testing** (ASP.NET Core)
+    [*https://docs.microsoft.com/en-us/aspnet/core/testing/integration-testing*](https://docs.microsoft.com/en-us/aspnet/core/testing/integration-testing)
 
--   **Unit testing in .NET Core using dotnet test\
-    **[*https://docs.microsoft.com/en-us/dotnet/articles/core/testing/unit-testing-with-dotnet-test*](https://docs.microsoft.com/en-us/dotnet/articles/core/testing/unit-testing-with-dotnet-test)
+-   **Unit testing in .NET Core using dotnet test**
+    [*https://docs.microsoft.com/en-us/dotnet/articles/core/testing/unit-testing-with-dotnet-test*](https://docs.microsoft.com/en-us/dotnet/articles/core/testing/unit-testing-with-dotnet-test)
 
--   **xUnit.net**. Official site.**\
-    **[*https://xunit.github.io/*](https://xunit.github.io/)
+-   **xUnit.net**. Official site.
+    [*https://xunit.github.io/*](https://xunit.github.io/)
 
--   **Unit Test Basics.\
-    **[*https://msdn.microsoft.com/en-us/library/hh694602.aspx*](https://msdn.microsoft.com/en-us/library/hh694602.aspx)
+-   **Unit Test Basics.**
+    [*https://msdn.microsoft.com/en-us/library/hh694602.aspx*](https://msdn.microsoft.com/en-us/library/hh694602.aspx)
 
--   **Moq**. GitHub repo.**\
-    **[*https://github.com/moq/moq*](https://github.com/moq/moq)
+-   **Moq**. GitHub repo.
+    [*https://github.com/moq/moq*](https://github.com/moq/moq)
 
--   **NUnit**. Official site.**\
-    **[*https://www.nunit.org/*](https://www.nunit.org/)
+-   **NUnit**. Official site.
+    [*https://www.nunit.org/*](https://www.nunit.org/)
 
 ### Implementing service tests on a multi-container application 
 

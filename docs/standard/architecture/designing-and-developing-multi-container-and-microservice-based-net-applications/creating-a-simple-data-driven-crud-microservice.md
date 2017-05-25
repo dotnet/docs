@@ -37,7 +37,7 @@ Finally, by editing the Dockerfile and docker-compose.yml metadata files, you ca
 To implement a simple CRUD microservice using .NET Core and Visual Studio, you start by creating a simple ASP.NET Core Web API project (running on .NET Core so it can run on a Linux Docker host), as shown in Figure 8-6.
 
   ------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
-  ![](./media/image6.png)   ![](./media/image7.png){width="2.6181167979002624in" height="1.7083333333333333in"}
+  ![](./media/image6.png)   ![](./media/image7.png)
   ------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
 
 **Figure 8-6**. Creating an ASP.NET Core Web API project in Visual Studio
@@ -282,10 +282,10 @@ An important configuration to set up in the Web API project is the DbContext cla
 
 ### Additional resources
 
--   **Querying Data**\
+-   **Querying Data**
     [*https://docs.microsoft.com/en-us/ef/core/querying/index*](https://docs.microsoft.com/en-us/ef/core/querying/index)
 
--   **Saving Data**\
+-   **Saving Data**
     [*https://docs.microsoft.com/en-us/ef/core/saving/index*](https://docs.microsoft.com/en-us/ef/core/saving/index)
 
 ### The DB connection string and environment variables used by Docker containers
@@ -388,15 +388,15 @@ This versioning mechanism is simple and depends on the server routing the reques
 
 ### Additional resources
 
--   **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy\
-    **[*http://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx*](http://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx)
+-   **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy**
+    [*http://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx*](http://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx)
 
 -   **Versioning a RESTful web API**
 
     [*https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design\#versioning-a-restful-web-api*](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design%23versioning-a-restful-web-api)
 
--   **Roy Fielding. Versioning, Hypermedia, and REST\
-    **[*https://www.infoq.com/articles/roy-fielding-on-versioning*](https://www.infoq.com/articles/roy-fielding-on-versioning)
+-   **Roy Fielding. Versioning, Hypermedia, and REST**
+    [*https://www.infoq.com/articles/roy-fielding-on-versioning*](https://www.infoq.com/articles/roy-fielding-on-versioning)
 
 ## Generating Swagger description metadata from your ASP.NET Core Web API 
 
@@ -538,8 +538,8 @@ It is that simple. And because it is automatically generated, the Swagger metada
 
 ### Additional resources
 
--   **ASP.NET Web API Help Pages using Swagger\
-    **[*https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger*](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger)
+-   **ASP.NET Web API Help Pages using Swagger**
+    [*https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger*](https://docs.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger)
 
 
 >[!div class="step-by-step"]

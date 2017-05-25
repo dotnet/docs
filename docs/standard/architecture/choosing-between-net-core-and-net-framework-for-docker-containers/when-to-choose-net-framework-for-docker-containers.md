@@ -52,17 +52,17 @@ In the meantime, you can always use the equivalent REST API from the Azure servi
 
 ### Additional resources
 
--   **.NET Core Guide\
-    **[*https://docs.microsoft.com/en-us/dotnet/articles/core/index*](https://docs.microsoft.com/en-us/dotnet/articles/core/index)
+-   **.NET Core Guide**
+    [*https://docs.microsoft.com/en-us/dotnet/articles/core/index*](https://docs.microsoft.com/en-us/dotnet/articles/core/index)
 
--   **Porting from .NET Framework to .NET Core\
-    **[*https://docs.microsoft.com/en-us/dotnet/articles/core/porting/index*](https://docs.microsoft.com/en-us/dotnet/articles/core/porting/index)
+-   **Porting from .NET Framework to .NET Core**
+    [*https://docs.microsoft.com/en-us/dotnet/articles/core/porting/index*](https://docs.microsoft.com/en-us/dotnet/articles/core/porting/index)
 
--   **.NET Framework on Docker Guide\
-    **[*https://docs.microsoft.com/en-us/dotnet/articles/framework/docker/*](https://docs.microsoft.com/en-us/dotnet/articles/framework/docker/)
+-   **.NET Framework on Docker Guide**
+    [*https://docs.microsoft.com/en-us/dotnet/articles/framework/docker/*](https://docs.microsoft.com/en-us/dotnet/articles/framework/docker/)
 
--   **.NET Components Overview\
-    **[*https://docs.microsoft.com/en-us/dotnet/articles/standard/components*](https://docs.microsoft.com/en-us/dotnet/articles/standard/components)
+-   **.NET Components Overview**
+    [*https://docs.microsoft.com/en-us/dotnet/articles/standard/components*](https://docs.microsoft.com/en-us/dotnet/articles/standard/components)
 
 
 

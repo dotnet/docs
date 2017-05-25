@@ -106,26 +106,26 @@ We find repositories useful, but we acknowledge that they are not critical for y
 
 ##### The Repository pattern
 
--   **Edward Hieatt and Rob Mee. Repository pattern.\
-    **[*http://martinfowler.com/eaaCatalog/repository.html*](http://martinfowler.com/eaaCatalog/repository.html)
+-   **Edward Hieatt and Rob Mee. Repository pattern.**
+    [*http://martinfowler.com/eaaCatalog/repository.html*](http://martinfowler.com/eaaCatalog/repository.html)
 
--   **The Repository pattern**\
+-   **The Repository pattern**
     [*https://msdn.microsoft.com/en-us/library/ff649690.aspx*](https://msdn.microsoft.com/en-us/library/ff649690.aspx)
 
--   **Repository Pattern: A data persistence abstraction\
-    **[*http://deviq.com/repository-pattern/*](http://deviq.com/repository-pattern/)
+-   **Repository Pattern: A data persistence abstraction**
+    [*http://deviq.com/repository-pattern/*](http://deviq.com/repository-pattern/)
 
--   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern)\
+-   **Eric Evans. Domain-Driven Design: Tackling Complexity in the Heart of Software.** (Book; includes a discussion of the Repository pattern)
     [*https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/*](https://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/)
 
 ##### Unit of Work pattern
 
--   **Martin Fowler. Unit of Work pattern.**\
+-   **Martin Fowler. Unit of Work pattern.**
     [*http://martinfowler.com/eaaCatalog/unitOfWork.html*](http://martinfowler.com/eaaCatalog/unitOfWork.html)
 
 <!-- -->
 
--   **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**\
+-   **Implementing the Repository and Unit of Work Patterns in an ASP.NET MVC Application**
     [*https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application*](https://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
 
 

@@ -40,6 +40,6 @@ Your array's dimensions do not match the dimensions you have specified in the `V
 -   Make the array dimensions in the array `Dim` statement match the dimensions specified by the `VBFixedArray` attribute.  
   
 ## See Also  
- [NOTINBUILD Overview of Arrays in Visual Basic](http://msdn.microsoft.com/en-us/ca50e2f2-b4d2-4c57-9169-9abbcc3392d8)   
+ [Arrays in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/index.md)   
  [ReDim Statement](../../visual-basic/language-reference/statements/redim-statement.md)   
  [VBFixedArrayAttribute Class](http://msdn.microsoft.com/en-us/7b7e9ef6-2854-4114-892e-e7ae45dd0b49)

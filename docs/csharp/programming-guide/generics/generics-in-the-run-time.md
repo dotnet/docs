@@ -72,4 +72,4 @@ When a generic type or method is compiled into Microsoft intermediate language (
  <xref:System.Collections.Generic>   
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Introduction to Generics](../../../csharp/programming-guide/generics/introduction-to-generics.md)   
- [Generics](https://msdn.microsoft.com/library/ms172192)
+ [Generics](~/docs/standard/generics/index.md)

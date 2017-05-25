@@ -52,4 +52,4 @@ In generic classes and methods, one issue that arises is how to assign a default
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   
  [Generics](../../../csharp/programming-guide/generics/index.md)   
  [Generic Methods](../../../csharp/programming-guide/generics/generic-methods.md)   
- [Generics](https://msdn.microsoft.com/library/ms172192)
+ [Generics](~/docs/standard/generics/index.md)

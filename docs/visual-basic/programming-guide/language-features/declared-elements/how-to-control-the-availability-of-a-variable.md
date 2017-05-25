@@ -47,7 +47,7 @@ You control the availability of a variable by specifying its *access level*. The
   
 -   *Local variables* (defined inside a procedure) nominally have public access, although only code within their procedure can access them. You cannot change the access level of a local variable, but you can change the access level of the procedure that contains it.  
   
- For more information, see [Access Levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ For more information, see [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 ## Private and Public Access  
   
@@ -109,7 +109,7 @@ Private numberForMeOnly As Integer
  The more restrictive the access level of a variable, the smaller the chances that malicious code can make improper use of it.  
   
 ## See Also  
- [Access Levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
+ [Access levels in Visual Basic](../../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
  [Dim Statement](../../../../visual-basic/language-reference/statements/dim-statement.md)   
  [Public](../../../../visual-basic/language-reference/modifiers/public.md)   
  [Protected](../../../../visual-basic/language-reference/modifiers/protected.md)   

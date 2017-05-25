@@ -517,8 +517,8 @@ feature:
 [!code-csharp[UsingValueTask](../../../samples/snippets/csharp/new-in-7/AsyncWork.cs#30_UsingValueTask "Using ValueTask")]
 
 > [!NOTE]
-> You need to add the pre-release NuGet package `System.Threading.Tasks.Extensions`
-> in order to use `ValueTask` in Visual Studio 15 Preview 5.
+> You need to add the NuGet package `System.Threading.Tasks.Extensions`
+> in order to use <xref:System.Threading.Tasks.Task.ValueTask%601> in Visual Studio 2017.
 
 A simple optimization would be to use `ValueTask` in places where
 `Task` would be used before. However, if you want to perform extra

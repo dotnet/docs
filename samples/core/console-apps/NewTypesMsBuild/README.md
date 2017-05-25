@@ -1,6 +1,6 @@
 # NewTypes Pets Sample
 
-This sample is part of the [Organizing and testing projects with the .NET Core command line tutorial](https://docs.microsoft.com/dotnet/articles/core/tutorials/testing-with-cli) for creating .NET Core console applications. See the tutorial for details on the code for this sample.
+This sample is part of the [Organizing and testing projects with the .NET Core command line tutorial](https://docs.microsoft.com/dotnet/core/tutorials/testing-with-cli) for creating .NET Core console applications. See the tutorial for details on the code for this sample.
 
 ## Key Features
 

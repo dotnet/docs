@@ -1,5 +1,5 @@
 ---
-title: "Loops: while...do Expression (F#)"
+title: "Loops: while...do Expression (F#) | Microsoft Docs"
 description: "Loops: while...do Expression (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

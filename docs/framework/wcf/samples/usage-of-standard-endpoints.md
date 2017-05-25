@@ -52,7 +52,6 @@ This sample demonstrates how to use standard endpoints in service configuration 
     </standardEndpoints>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The first endpoint defined for the service is of kind `customEndpoint`, whose definition can be seen in the `<standardEndpoints>` section, in which the property `property` is given the value `true`. This is the case of an endpoint customized with a new property. The second endpoint corresponds to a metadata endpoint, in which the values for address, binding and contract are fixed.  
@@ -108,7 +107,6 @@ public class CustomEndpointElement : StandardEndpointElement
     {  
     }  
 }  
-  
 ```  
   
  In the `CreateServiceEndpoint` function, a `CustomEndpoint` object is created. Its definition is shown in the following example.  
@@ -139,7 +137,6 @@ public class CustomEndpoint : ServiceEndpoint
             set;  
         }  
     }  
-  
 ```  
   
  To perform the communication between service and client, a service reference is created in the client to the service. When the sample is built and executed, the service executes and the client communicates with it. Note that the service reference should be updated every time there is some change in the service.  

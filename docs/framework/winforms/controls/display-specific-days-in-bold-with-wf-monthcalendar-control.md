@@ -34,13 +34,11 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
     ```vb  
     Dim myVacation1 As Date = New DateTime(2001, 6, 10)  
     Dim myVacation2 As Date = New DateTime(2001, 6, 17)  
-  
     ```  
   
     ```csharp  
     DateTime myVacation1 = new DateTime(2001, 6, 10);  
     DateTime myVacation2 = new DateTime(2001, 6, 17);  
-  
     ```  
   
     ```cpp  
@@ -53,13 +51,11 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
     ```vb  
     MonthCalendar1.AddBoldedDate(myVacation1)  
     MonthCalendar1.AddBoldedDate(myVacation2)  
-  
     ```  
   
     ```csharp  
     monthCalendar1.AddBoldedDate(myVacation1);  
     monthCalendar1.AddBoldedDate(myVacation2);  
-  
     ```  
   
     ```cpp  
@@ -74,13 +70,11 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
     ```vb  
     Dim VacationDates As DateTime() = {myVacation1, myVacation2}  
     MonthCalendar1.BoldedDates = VacationDates  
-  
     ```  
   
     ```csharp  
     DateTime[] VacationDates = {myVacation1, myVacation2};  
     monthCalendar1.BoldedDates = VacationDates;  
-  
     ```  
   
     ```cpp  
@@ -95,13 +89,11 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
     ```vb  
     MonthCalendar1.RemoveBoldedDate(myVacation1)  
     MonthCalendar1.RemoveBoldedDate(myVacation2)  
-  
     ```  
   
     ```csharp  
     monthCalendar1.RemoveBoldedDate(myVacation1);  
     monthCalendar1.RemoveBoldedDate(myVacation2);  
-  
     ```  
   
     ```cpp  
@@ -115,12 +107,10 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
   
     ```vb  
     MonthCalendar1.RemoveAllBoldedDates()  
-  
     ```  
   
     ```csharp  
     monthCalendar1.RemoveAllBoldedDates();  
-  
     ```  
   
     ```cpp  
@@ -131,12 +121,10 @@ The Windows Forms <xref:System.Windows.Forms.MonthCalendar> control can display 
   
     ```vb  
     MonthCalendar1.UpdateBoldedDates()  
-  
     ```  
   
     ```csharp  
     monthCalendar1.UpdateBoldedDates();  
-  
     ```  
   
     ```cpp  

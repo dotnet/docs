@@ -27,7 +27,6 @@ Specifies all the WSDL importers that imports Web Services Description Language 
 ## Syntax  
   
 ```  
-  
 <metadata>  
       <wsdlImporters>  
       <wsdlImporter type="string" />  

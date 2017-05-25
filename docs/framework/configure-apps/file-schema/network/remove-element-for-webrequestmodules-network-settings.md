@@ -39,7 +39,6 @@ Removes a custom Web request module from the application.
 ## Syntax  
   
 ```  
-  
       <remove   
   name = "URI prefix"   
 />  

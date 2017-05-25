@@ -1,5 +1,5 @@
 ---
-title: What's New in C# 6 | C# Guide
+title: What's New in C# 6 - C# Guide | Microsoft Docs
 description: Learn the new features in C# Version 6    
 keywords: .NET, .NET Core
 author: BillWagner

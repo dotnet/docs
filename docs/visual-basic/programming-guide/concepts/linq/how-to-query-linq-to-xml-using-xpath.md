@@ -40,7 +40,6 @@ Dim list As IEnumerable(Of XElement) = root.XPathSelectElements("./Child2")
 For Each el As XElement In list  
     Console.WriteLine(el)  
 Next  
-  
 ```  
   
  This example produces the following output:  

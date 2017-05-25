@@ -36,7 +36,6 @@ Specifies modules used to authenticate network requests.
 ## Syntax  
   
 ```  
-  
       <authenticationModules>   
 </authenticationModules>  
 ```  

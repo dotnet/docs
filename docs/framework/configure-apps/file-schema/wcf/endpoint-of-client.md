@@ -28,7 +28,6 @@ Specifies contract, binding, and address properties of the channel endpoint, whi
 ## Syntax  
   
 ```  
-  
 <endpoint address="String"  
    behaviorConfiguration="String"  
    binding="String"  

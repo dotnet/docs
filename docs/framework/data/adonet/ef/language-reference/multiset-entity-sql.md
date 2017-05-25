@@ -25,7 +25,6 @@ Creates an instance of a multiset from a list of values. All the values in the M
 ## Syntax  
   
 ```  
-  
 MULTISET ( expression [{, expression }] )  
 or  
 { expression [{, expression }] }  

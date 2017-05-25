@@ -27,7 +27,6 @@ Defines the security settings of the [\<wsFederationHttpBinding>](../../../../..
 ## Syntax  
   
 ```  
-  
 <wsFederationBinding>  
     <binding >  
        <security mode="None/Message/TransportWithMessageCredential">  

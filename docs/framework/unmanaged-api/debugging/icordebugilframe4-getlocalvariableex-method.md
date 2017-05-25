@@ -33,13 +33,11 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetLocalVariableEx(  
    [in] ILCodeKind flags,   
    [in] DWORD dwIndex,   
    [out] ICorDebugValue **ppValue  
 );  
-  
 ```  
   
 #### Parameters  

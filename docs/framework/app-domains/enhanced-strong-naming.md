@@ -101,7 +101,6 @@ A strong name signature is an identity mechanism in the .NET Framework for ident
   
     ```  
     csc MyAssembly.cs /keyfile:IdentityPubKey.snk /delaySign+  
-  
     ```  
   
 6.  Fully sign the assembly with the signature key pair.  

@@ -24,7 +24,6 @@ Specifies a COM+ integration service contract.
 ## Syntax  
   
 ```  
-  
 <comContracts>  
   <comContract  
       contract="string"  

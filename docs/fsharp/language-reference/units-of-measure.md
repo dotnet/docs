@@ -1,5 +1,5 @@
 ---
-title: Units of Measure (F#)
+title: Units of Measure (F#) | Microsoft Docs
 description: Units of Measure (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

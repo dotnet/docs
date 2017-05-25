@@ -28,7 +28,6 @@ Specifies the settings for a secure conversation service.
 ## Syntax  
   
 ```  
-  
 <secureConversationAuthentication securityStateEncoderType="String" />  
 ```  
   

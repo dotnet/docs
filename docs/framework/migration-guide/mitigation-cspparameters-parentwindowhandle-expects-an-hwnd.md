@@ -40,9 +40,9 @@ cspParameters.ParentWindowHandle = form.Handle;
 
 ## Mitigation
 
-Developers who had identified that the correct value was the address of the memory location that held the `form.Handle` value can opt out of this change in behavior by setting the <xref:System.Security.AppContext> switch `Switch.System.Security.Cryptography.DoNotAddrOfCspParentWindowHandle` to `true`:
+Developers who had identified that the correct value was the address of the memory location that held the `form.Handle` value can opt out of this change in behavior by setting the <xref:System.AppContext> switch `Switch.System.Security.Cryptography.DoNotAddrOfCspParentWindowHandle` to `true`:
 
-- By programmatically setting compatibility switches on the <xref:System.Security.AppContext> instance.
+- By programmatically setting compatibility switches on the <xref:System.AppContext> instance.
 
 - By adding the following line to the `<runtime>` section of the app.config file:
    
@@ -52,7 +52,7 @@ Developers who had identified that the correct value was the address of the memo
    </runtime>
    ```
 
-Conversely, users who wish to opt in to the new behavior for applications that run under the .NET Framework 4.7 but target an earlier version of the .NET Framework versions can set the <xref:System.Security.AppContext> switch to `false`.
+Conversely, users who wish to opt in to the new behavior for applications that run under the .NET Framework 4.7 but target an earlier version of the .NET Framework versions can set the <xref:System.AppContext> switch to `false`.
  
 ## See also
 

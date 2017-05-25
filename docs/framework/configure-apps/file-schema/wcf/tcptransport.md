@@ -30,7 +30,6 @@ Defines a TCP transport that can be used by a channel to transfers messages for 
 ## Syntax  
   
 ```  
-  
 <tcpTransport   
       channelInitializationTimeout="TimeSpan"   
       connectionBufferSize="Integer"   

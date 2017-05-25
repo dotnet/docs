@@ -45,7 +45,6 @@ typedef enum
     COR_PRF_MODULE_FLAT_LAYOUT      = 0x00000020,  
     COR_PRF_MODULE_WINDOWS_RUNTIME  = 0x00000040  
 }   COR_PRF_MODULE_FLAGS;  
-  
 ```  
   
 ## Members  

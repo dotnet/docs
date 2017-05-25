@@ -33,11 +33,9 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetActiveReJitRequestILCode(  
    ICorDebugILCode **ppReJitedILCode  
 );  
-  
 ```  
   
 #### Parameters  

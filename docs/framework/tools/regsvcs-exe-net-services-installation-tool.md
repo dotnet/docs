@@ -43,7 +43,6 @@ The .NET Services Installation tool performs the following actions:
 ## Syntax  
   
 ```  
-  
       regsvcs [/c | /fc | /u] [/tlb:typeLibraryFile] [/extlb]  
 [/reconfig] [/componly] [/appname:applicationName]  
 [/nologo] [/quiet]assemblyFile.dll   

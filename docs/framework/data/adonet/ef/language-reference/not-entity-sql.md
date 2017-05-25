@@ -25,7 +25,6 @@ Negates a `Boolean` expression.
 ## Syntax  
   
 ```  
-  
 NOT boolean_expression  
 or  
 ! boolean_expression  

@@ -45,7 +45,6 @@ If you want to convert a string to a .NET Framework data type, use the **XmlConv
 Dim writer As New XmlTextWriter("myfile.xml", Nothing)  
 Dim [date] As New DateTime(2001, 8, 4)  
 writer.WriteElementString("Date", XmlConvert.ToString([date]))  
-  
 ```  
   
 ```csharp  
@@ -64,7 +63,6 @@ writer.WriteElementString("Date", XmlConvert.ToString(date));
 Dim writer As New XmlTextWriter("myfile.xml", Nothing)  
 Dim value As Int32 = 200  
 writer.WriteElementString("Number", XmlConvert.ToString(value))  
-  
 ```  
   
 ```csharp  
@@ -104,7 +102,6 @@ writer.WriteElementString("Number", XmlConvert.ToString(value));
 Dim bvalue As Boolean = _  
    XmlConvert.ToBoolean(reader.ReadElementString())  
 Console.WriteLine(bvalue)  
-  
 ```  
   
 ```csharp  
@@ -133,7 +130,6 @@ Console.WriteLine(bvalue);
 ```vb  
 Dim value As Double = Double.PositiveInfinity  
 writer.WriteElementString("Infinity", XmlConvert.ToString(value))  
-  
 ```  
   
 ```csharp  

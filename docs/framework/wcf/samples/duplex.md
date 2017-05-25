@@ -52,7 +52,6 @@ public interface ICalculatorDuplexCallback
     [OperationContract(IsOneWay = true)]  
     void Equation(string eqn);  
 }  
-  
 ```  
   
  The `CalculatorService` class implements the primary `ICalculatorDuplex` interface. The service uses the <xref:System.ServiceModel.InstanceContextMode> instance mode to maintain the result for each session. A private property named `Callback` is used to access the callback channel to the client. The service uses the callback for sending messages back to the client through the callback interface.  
@@ -107,7 +106,6 @@ public class CallbackHandler : ICalculatorDuplexCallback
       Console.WriteLine("Equation({0}", equation);  
    }  
 }  
-  
 ```  
   
  The proxy that is generated for a duplex contract requires a <xref:System.ServiceModel.InstanceContext> to be provided upon construction. This <xref:System.ServiceModel.InstanceContext> is used as the site for an object that implements the callback interface and handles messages that are sent back from the service. An <xref:System.ServiceModel.InstanceContext> is constructed with an instance of the `CallbackHandler` class. This object handles messages sent from the service to the client on the callback interface.  
@@ -145,7 +143,6 @@ Console.ReadLine();
   
 //Closing the client gracefully closes the connection and cleans up resources.  
 client.Close();  
-  
 ```  
   
  The configuration has been modified to provide a binding that supports both session communication and duplex communication. The `wsDualHttpBinding` supports session communication and allows duplex communication by providing dual HTTP connections, one for each direction. On the service, the only difference in configuration is the binding that is used. On the client, you must configure an address that the server can use to connect to the client as shown in the following sample configuration.  
@@ -167,7 +164,6 @@ client.Close();
     </binding>  
   </wsDualHttpBinding>  
 </bindings>  
-  
 ```  
   
  When you run the sample, you see the messages that are returned to the client on the callback interface that is sent from the service. Each intermediate result is displayed, followed by the entire equation upon the completion of all operations. Press ENTER to shut down the client.  

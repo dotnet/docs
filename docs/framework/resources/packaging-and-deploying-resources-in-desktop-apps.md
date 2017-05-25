@@ -114,13 +114,11 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
  You optimize the probe for satellite assemblies by including the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element and setting its `enabled` attribute to `true` in the application configuration file, as shown in the following example.  
   
 ```  
-  
 <configuration>  
    <runtime>  
       <relativeBindForResources enabled="true" />  
    </runtime>  
 </configuration>  
-  
 ```  
   
  The optimized probe for satellite assemblies is an opt-in feature. That is, the runtime follows the steps documented in the [The Resource Fallback Process](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md#cpconpackagingdeployingresourcesanchor1) unless the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element is present in the application's configuration file and its `enabled` attribute is set to `true`. If this is the case, the process of probing for a satellite assembly is modified as follows:  

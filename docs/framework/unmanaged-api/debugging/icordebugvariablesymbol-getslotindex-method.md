@@ -23,11 +23,9 @@ Gets the managed slot index of a local variable.
 ## Syntax  
   
 ```  
-  
 HRESULT GetSlotIndex(  
    [out] ULONG32 *pSlotIndex  
 );  
-  
 ```  
   
 #### Parameters  

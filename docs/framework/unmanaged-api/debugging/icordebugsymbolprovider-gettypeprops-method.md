@@ -23,14 +23,12 @@ Returns information about a type's properties, such as the number of signature o
 ## Syntax  
   
 ```  
-  
 HRESULT GetTypeProps(  
    [in]  ULONG32 vtableRva,  
    [in]  ULONG32 cbSignature,  
    [out] ULONG32 *pcbSignature,  
    [out, size_is(cbSignature), length_is(*pcbSignature)] BYTE signature[]  
 );  
-  
 ```  
   
 #### Parameters  

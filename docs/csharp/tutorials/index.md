@@ -1,5 +1,5 @@
 ---
-title: C# Tutorials
+title: C# Tutorials | Microsoft Docs
 description: C# Tutorials
 keywords: .NET, .NET Core
 author: BillWagner

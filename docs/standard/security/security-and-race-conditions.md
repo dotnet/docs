@@ -37,7 +37,6 @@ Sub Dispose()
        myObj = Nothing  
     End If  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -76,7 +75,6 @@ Sub DoOtherWork()
         DoSomethingTrusted()  
     End If  
 End Sub  
-  
 ```  
   
 ```csharp  

@@ -1,5 +1,5 @@
 ---
-title: Records (F#)
+title: Records (F#) | Microsoft Docs
 description: Records (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -14,10 +14,7 @@ ms.assetid: 3a3701ea-4308-4fa1-9b5c-b955c470f17a
 
 # Records
 
-> [!NOTE]
-> The following article does not cover using the `struct` attribute for Records yet, which is an F# 4.1 feature.  It will be documented here.
-
-Records represent simple aggregates of named values, optionally with members.
+Records represent simple aggregates of named values, optionally with members.  Starting with F# 4.1, they can either be structs or reference types.  They are reference types by default.
 
 ## Syntax
 
@@ -32,7 +29,7 @@ type [accessibility-modifier] typename = {
 ```
 
 ## Remarks
-In the previous syntax, *typename* is the name of the record type, *label1* and *label2* are names of values, referred to as *labels*, and *type1* and *type2* are the types of these values. *member-list* is the optional list of members for the type.
+In the previous syntax, *typename* is the name of the record type, *label1* and *label2* are names of values, referred to as *labels*, and *type1* and *type2* are the types of these values. *member-list* is the optional list of members for the type.  You can use the `[<Struct>]` attribute to create a struct record rather than a record which is a reference type.
 
 Following are some examples.
 
@@ -53,7 +50,6 @@ The labels of the most recently declared type take precedence over those of the 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1908.fs)]
 
 Methods can be defined for record types just as for class types.
-
 
 ## Creating Records by Using Record Expressions
 You can initialize records by using the labels that are defined in the record. An expression that does this is referred to as a *record expression*. Use braces to enclose the record expression and use the semicolon as a delimiter.
@@ -119,7 +115,6 @@ Like union and structure types, records have structural equality semantics. Clas
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet1911.fs)]
 
 If you write the same code with classes, the two class objects would be unequal because the two values would represent two objects on the heap and only the addresses would be compared (unless the class type overrides the `System.Object.Equals` method).
-
 
 ## See Also
 [F# Types](fsharp-types.md)

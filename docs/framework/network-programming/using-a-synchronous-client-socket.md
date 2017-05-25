@@ -39,7 +39,6 @@ A synchronous client socket suspends the application program while the network o
 Dim msg As Byte() = _  
     System.Text.Encoding.ASCII.GetBytes("This is a test.")  
 Dim bytesSent As Integer = s.Send(msg)  
-  
 ```  
   
 ```csharp  
@@ -56,7 +55,6 @@ Dim bytes(1024) As Byte
 Dim bytesRec = s.Receive(bytes)  
 Console.WriteLine("Echoed text = {0}", _  
     System.Text.Encoding.ASCII.GetString(bytes, 0, bytesRec))  
-  
 ```  
   
 ```csharp  

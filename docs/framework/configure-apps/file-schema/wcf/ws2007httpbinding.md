@@ -25,7 +25,6 @@ Defines an interoperable binding that provides support for the correct versions 
 ## Syntax  
   
 ```  
-  
 <ws2007HttpBinding>  
     <binding   
         allowCookies="Boolean"  

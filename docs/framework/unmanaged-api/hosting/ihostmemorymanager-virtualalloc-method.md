@@ -44,7 +44,6 @@ HRESULT VirtualAlloc (
     [in]  EMemoryCriticalLevel dwCriticalLevel,  
     [out] void**  ppMem  
 );  
-  
 ```  
   
 #### Parameters  

@@ -25,7 +25,6 @@ Returns `true` if both expressions are `true`; otherwise, `false` or `NULL`.
 ## Syntax  
   
 ```  
-  
 boolean_expression AND boolean_expression  
 or  
 boolean_expression && boolean_expression  

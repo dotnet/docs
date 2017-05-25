@@ -1,5 +1,5 @@
 ---
-title: Getting started with F# with command-line tools
+title: Getting started with F# with command-line tools | Microsoft Docs
 description: Learn how to use F# with the cross-platform .NET CLI.
 keywords: visual f#, f#, functional programming, .NET, .NET Core
 author: cartermp
@@ -127,7 +127,7 @@ Change directories to the *App* console project and add a reference to the `Libr
 ```bash
 dotnet add reference ../Library/Library.fsproj
 ```
-Add the `Library` project to the `FSNetCore` solution using the `dotnet sln add` command:
+Add the `App` project to the `FSNetCore` solution using the `dotnet sln add` command:
 
 ```bash
 dotnet sln add src/App/App.fsproj

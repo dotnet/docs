@@ -1,5 +1,5 @@
 ---
-title: "Lambda Expressions: The fun Keyword (F#)"
+title: "Lambda Expressions: The fun Keyword (F#) | Microsoft Docs"
 description: "Lambda Expressions: The fun Keyword (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

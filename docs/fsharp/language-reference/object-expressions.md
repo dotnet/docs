@@ -1,5 +1,5 @@
 ---
-title: Object Expressions (F#)
+title: Object Expressions (F#) | Microsoft Docs
 description: Object Expressions (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

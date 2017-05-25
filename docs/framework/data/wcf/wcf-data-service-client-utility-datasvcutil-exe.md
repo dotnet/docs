@@ -35,7 +35,6 @@ DataSvcUtil.exe is a command-line tool provided by [!INCLUDE[ssAstoria](../../..
 ## Syntax  
   
 ```  
-  
 datasvcutil /out:file [/in:file | /uri:serviceuri] [/dataservicecollection] [/language:devlang] [/nologo] [/version:ver] [/help]  
 ```  
   

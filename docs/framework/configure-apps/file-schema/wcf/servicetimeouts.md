@@ -27,7 +27,6 @@ Specifies the timeout for a service.
 ## Syntax  
   
 ```  
-  
 <serviceTimeouts transactionTimeout="TimeSpan" />  
 ```  
   

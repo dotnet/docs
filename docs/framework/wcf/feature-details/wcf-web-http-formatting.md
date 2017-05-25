@@ -61,7 +61,6 @@ try
   {  
      Console.WriteLine("An exception occurred: " + ex.Message());  
   }  
-  
 ```  
   
  Automatic formatting can also be enabled through configuration. You can set the <xref:System.ServiceModel.Description.WebHttpBehavior.AutomaticFormatSelectionEnabled%2A> property directly on the <xref:System.ServiceModel.Description.WebHttpBehavior> or using the <xref:System.ServiceModel.Description.WebHttpEndpoint>. The following example shows how to enable the automatic format selection on the <xref:System.ServiceModel.Description.WebHttpBehavior>.  
@@ -145,7 +144,6 @@ public class Service : IService
  Each of these methods takes content and creates a message with the appropriate format. The `WebOperationContext.Current.IncomingRequest.GetAcceptHeaderElements` method can be used to get a list of formats preferred by the client in order of decreasing preference. The following example shows how to use `WebOperationContext.Current.IncomingRequest.GetAcceptHeaderElements` to determine the format to use and then uses the appropriate create response method to create the response message.  
   
 ```  
-  
 public class Service : IService  
 {  
     public Message EchoListWithGet(string list)  
@@ -169,7 +167,6 @@ public class Service : IService
     return CreateXmlResponse(returnList);  
     }  
 }  
-  
 ```  
   
 ## See Also  

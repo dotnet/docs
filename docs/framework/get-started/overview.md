@@ -36,7 +36,7 @@ The .NET Framework is a technology that supports building and running the next g
 -   To build all communication on industry standards to ensure that code based on the .NET Framework can integrate with any other code.  
   
 > [!NOTE]
->  For a general introduction to the .NET Framework for both users and developers, see [Getting Started](../../../docs/framework/get-started/index.md). To download the .NET Framework, see [Installation Guide](../../../docs/framework/install/guide-for-developers.md).  
+>  For a general introduction to the .NET Framework for both users and developers, see [Getting Started](../../../docs/framework/get-started/index.md).  
   
  The .NET Framework consists of the common language runtime and the .NET Framework class library. The common language runtime is the foundation of the .NET Framework. You can think of the runtime as an agent that manages code at execution time, providing core services such as memory management, thread management, and remoting, while also enforcing strict type safety and other forms of code accuracy that promote security and robustness. In fact, the concept of code management is a fundamental principle of the runtime. Code that targets the runtime is known as managed code, while code that does not target the runtime is known as unmanaged code. The class library is a comprehensive, object-oriented collection of reusable types that you can use to develop applications ranging from traditional command-line or graphical user interface (GUI) applications to applications based on the latest innovations provided by ASP.NET, such as Web Forms and XML Web services.  
   
@@ -97,7 +97,7 @@ The .NET Framework is a technology that supports building and running the next g
   
 ## See Also  
  [System Requirements](../../../docs/framework/get-started/system-requirements.md)   
- [Installation Guide](../../../docs/framework/install/guide-for-developers.md)   
+ [Installation guide](../../../docs/framework/install/index.md)   
  [Development Guide](../../../docs/framework/development-guide.md)   
  [Tools](../../../docs/framework/tools/index.md)   
  [.NET Framework Samples](http://msdn.microsoft.com/en-us/177055f8-4a1f-43e7-aee6-995c196079b1)   

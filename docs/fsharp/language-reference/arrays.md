@@ -1,5 +1,5 @@
 ---
-title: Arrays (F#)
+title: Arrays (F#) | Microsoft Docs
 description: Arrays (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -296,7 +296,6 @@ module test =
     let secondRow = test1.[1,*]
     let firstCol = test1.[*,0]
     printfn "%A" firstCol
-
 ```
 
 ### Boolean Functions on Arrays

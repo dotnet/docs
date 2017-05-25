@@ -98,7 +98,6 @@ End Class
 [DllImport("dllname", CharSet=CharSet.Ansi)]  
 [DllImport("dllname", CharSet=CharSet.Unicode)]  
 [DllImport("dllname", CharSet=CharSet.Auto)]  
-  
 ```  
   
 ```cpp  
@@ -119,7 +118,6 @@ End Class
 [DllImport("user32.dll", CharSet=CharSet.Auto)]  
     public static extern int MessageBox(int hWnd, String text,   
         String caption, uint type);  
-  
 ```  
   
 ```cpp  

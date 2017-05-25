@@ -72,7 +72,6 @@ manager: "wpickett"
     ' Set the ToolTipText property of one of the buttons.  
        ToolBar1.Buttons(1).ToolTipText = "Button 2"  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -111,7 +110,6 @@ manager: "wpickett"
        // Set the ToolTipText property of 1 of the buttons.  
        toolBar1.Buttons[1].ToolTipText = "Button 2";  
     }  
-  
     ```  
   
     ```cpp  

@@ -1,5 +1,5 @@
 ---
-title: "Query expression basics"
+title: Query expression basics | Microsoft Docs
 description: Introduces concepts related to query expressions
 keywords: .NET, .NET Core, C#
 author: BillWagner

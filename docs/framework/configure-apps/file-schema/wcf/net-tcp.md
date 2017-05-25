@@ -24,7 +24,6 @@ Specifies configuration settings for the NET.TCP Port Sharing Service, which all
 ## Syntax  
   
 ```  
-  
 <configuration>  
    <system.serviceModel.activation>  
        <net.tcp listenBacklog="Integer"  

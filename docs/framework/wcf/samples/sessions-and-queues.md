@@ -51,7 +51,6 @@ public interface IOrderTaker
     [OperationContract(IsOneWay = true)]  
     void EndPurchaseOrder();  
 }  
-  
 ```  
   
  The service defines service operations in such a way that the first operation enlists in a transaction but does not automatically complete the transaction. Subsequent operations also enlist in the same transaction but do not automatically complete. The last operation in the session automatically completes the transaction. Thus, the same transaction is used for several operation invocations in the service contract. If any of the operations throw an exception, then the transaction rolls back and the session is put back into the queue. Upon successful completion of the last operation, the transaction is committed. The service uses `PerSession` as the <xref:System.ServiceModel.InstanceContextMode> to receive all messages in a session on the same instance of the service.  
@@ -143,7 +142,6 @@ public static void Main()
   </services>  
   ...  
 <system.serviceModel>  
-  
 ```  
   
  The client creates a transaction scope. All messages in the session are sent to the queue within the transaction scope, causing it to be treated as an atomic unit where all messages succeed or fail. The transaction is committed by calling <xref:System.Transactions.TransactionScope.Complete%2A>.  
@@ -175,7 +173,6 @@ using (TransactionScope scope = new TransactionScope(TransactionScopeOption.Requ
     // Complete the transaction.  
     scope.Complete();  
 }  
-  
 ```  
   
 > [!NOTE]

@@ -38,7 +38,6 @@ Dim list1 = From el In po.Descendants("Address")
 For Each el In list1  
     Console.WriteLine(el)  
 Next  
-  
 ```  
   
  The query expression in this example is re-written by the compiler to method-based query syntax. The following example, which is written in method-based query syntax, produces the same results as the previous one:  
@@ -82,7 +81,6 @@ For Each n As Xml.XmlNode In nl
     Console.WriteLine(n.OuterXml)  
 Next  
 reader.Close()  
-  
 ```  
   
  This query returns the same output as the examples that use LINQ to XML; the only difference is that LINQ to XML indents the printed XML, whereas <xref:System.Xml.XmlDocument> does not.  

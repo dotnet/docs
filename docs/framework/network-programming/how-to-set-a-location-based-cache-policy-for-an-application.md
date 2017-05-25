@@ -44,7 +44,6 @@ Location-based cache policies allow an application to explicitly define caching 
             (HttpRequestCacheLevel.CacheIfAvailable);  
         HttpWebRequest.DefaultCachePolicy = policy;  
     }  
-  
     ```  
   
     ```vb  

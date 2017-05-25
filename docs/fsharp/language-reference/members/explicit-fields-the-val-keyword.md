@@ -1,5 +1,5 @@
 ---
-title: "Explicit Fields: The val Keyword (F#)"
+title: "Explicit Fields: The val Keyword (F#) | Microsoft Docs"
 description: "Explicit Fields: The val Keyword (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

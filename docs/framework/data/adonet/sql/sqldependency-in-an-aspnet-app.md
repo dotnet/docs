@@ -34,7 +34,6 @@ The example in this section shows how to use <xref:System.Data.SqlClient.SqlDepe
 3.  Open the page's class module and add the following directives:  
   
     ```vb  
-  
     Option Strict On  
     Option Explicit On  
   

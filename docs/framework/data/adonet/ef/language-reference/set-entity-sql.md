@@ -26,7 +26,6 @@ The SET expression is used to convert a collection of objects into a set by yiel
 ## Syntax  
   
 ```  
-  
 SET ( expression )  
 ```  
   

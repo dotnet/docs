@@ -18,41 +18,42 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-# How to: Determine which .NET Framework versions are installed
-Users can install and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer. Note that the .NET Framework consists of two main components, which are versioned separately:
-
-- A set of assemblies, which are collections of types and resources that provide the functionality for your apps. The .NET Framework and assemblies share the same version number.
-
-- The common language runtime (CLR), which manages and executes your app's code. The CLR is identified by its own version number (see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)).
-
- To get an accurate list of the .NET Framework versions installed on a computer, you can view the registry or query the registry in code:
-
- [Viewing the registry (versions 1-4)](#net_a)
- [Viewing the registry (version 4.5 and later)](#net_b)
- [Using code to query the registry (versions 1-4)](#net_c)
- [Using code to query the registry (version 4.5 and later)](#net_d)
-
- To find the CLR version, you can use a tool or code:
-
- [Using the Clrver tool](#clr_a)
- [Using code to query the System.Environment class](#clr_b)
-
- For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md). For information about installing the .NET Framework, see the [installation guide](../../../docs/framework/install/guide-for-developers.md).
-
-<a name="net_a"></a> 
-#### To find .NET Framework versions by viewing the registry (.NET Framework 1-4)
-
-1. On the **Start** menu, choose **Run**.
-
-2. In the **Open** box, enter **regedit.exe**.
-
-     You must have administrative credentials to run regedit.exe.
-
-3. In the Registry Editor, open the following subkey:
-
-     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP`
-
-     The installed versions are listed under the NDP subkey. The version number is stored in the **Version** entry. For the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] the **Version** entry is under the Client or Full subkey (under NDP), or under both subkeys.
+# How to: Determine Which .NET Framework Versions Are Installed
+Users can install and run multiple versions of the .NET Framework on their computers. When you develop or deploy your app, you might need to know which .NET Framework versions are installed on the user’s computer. Note that the .NET Framework consists of two main components, which are versioned separately:  
+  
+-   A set of assemblies, which are collections of types and resources that provide the functionality for your apps. The .NET Framework and assemblies share the same version number.  
+  
+-   The common language runtime (CLR), which manages and executes your app's code. The CLR is identified by its own version number (see [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)).  
+  
+ To get an accurate list of the .NET Framework versions installed on a computer, you can view the registry or query the registry in code:  
+  
+ [Viewing the registry (versions 1-4)](#net_a)  
+ [Viewing the registry (version 4.5 and later)](#net_b)  
+ [Using code to query the registry (versions 1-4)](#net_c)  
+ [Using code to query the registry (version 4.5 and later)](#net_d)  
+  
+ To find the CLR version, you can use a tool or code:  
+  
+ [Using the Clrver tool](#clr_a)  
+ [Using code to query the System.Environment class](#clr_b)  
+  
+ For information about detecting the installed updates for each version of the .NET Framework, see [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md). For information about installing the .NET Framework, see [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md).  
+  
+<a name="net_a"></a>   
+#### To find .NET Framework versions by viewing the registry (.NET Framework 1-4)  
+  
+1.  On the **Start** menu, choose **Run**.  
+  
+2.  In the **Open** box, enter **regedit.exe**.  
+  
+     You must have administrative credentials to run regedit.exe.  
+  
+3.  In the Registry Editor, open the following subkey:  
+  
+     `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\NET Framework Setup\NDP`  
+  
+     The installed versions are listed under the NDP subkey. The version number is stored in the **Version** entry. For the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)] the **Version** entry is under the Client or Full subkey (under NDP), or under both subkeys.  
+  
 
     > [!NOTE]
     > The "NET Framework Setup" folder in the registry does not begin with a period.
@@ -187,5 +188,5 @@ Users can install and run multiple versions of the .NET Framework on their compu
 
 ## See Also
  [How to: Determine Which .NET Framework Updates Are Installed](~/docs/framework/migration-guide/how-to-determine-which-net-framework-updates-are-installed.md)   
- [Installation Guide](../../../docs/framework/install/guide-for-developers.md)   
+ [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)   
  [Versions and Dependencies](~/docs/framework/migration-guide/versions-and-dependencies.md)

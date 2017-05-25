@@ -48,7 +48,6 @@ EtwTrackingParticipant trackingParticipant =
           }  
        };  
 instance.Extensions.Add(trackingParticipant);  
-  
 ```  
   
 ### Configuring Workflow Service Tracking  
@@ -57,7 +56,6 @@ instance.Extensions.Add(trackingParticipant);
  For a workflow service hosted in <xref:System.ServiceModel.WorkflowServiceHost>, you can add the <xref:System.Activities.Tracking.EtwTrackingParticipant> using the <`behavior`> element in a configuration file, as shown in the following example.  
   
 ```  
-  
 <behaviors>  
    <serviceBehaviors>  
         <behavior>  
@@ -65,7 +63,6 @@ instance.Extensions.Add(trackingParticipant);
         </behavior>              
    </serviceBehaviors>  
 <behaviors>  
-  
 ```  
   
  Alternatively, for a workflow service hosted in <xref:System.ServiceModel.WorkflowServiceHost>, you can add the <xref:System.Activities.Tracking.EtwTrackingParticipant> behavior extension through code. To add a custom tracking participant, create a new behavior extension and add it to the <xref:System.ServiceModel.ServiceHost> as shown in the following example code.  
@@ -83,7 +80,6 @@ EtwTrackingBehavior trackingBehavior =
     };  
 svcHost.Description.Behaviors.Add(trackingBehavior);  
 svcHost.Open();  
-  
 ```  
   
  The tracking participant is added to the workflow service host as an extension to the behavior.  
@@ -125,7 +121,6 @@ TrackingProfile GetProfile(string profileName, string displayName)
             }  
   
             return trackingProfile;  
-  
 ```  
   
  This sample code shows how to add a tracking profile to a workflow host.  
@@ -152,7 +147,6 @@ if (null != workflowServiceHost)
 WorkflowInvoker invoker = new WorkflowInvoker(BuildSampleWorkflow());  
 invoker.Extensions.Add(customTrackingParticipant);  
 invoker.Invoke();  
-  
 ```  
   
 ### Viewing tracking records in Event Viewer  
@@ -201,7 +195,6 @@ invoker.Invoke();
     <system.serviceModel>  
         <diagnostics etwProviderId="2720e974-9fe9-477a-bb60-81fe3bf91eec"/>  
     </system.serviceModel>  
-  
     ```  
   
 2.  Copy the manifest file from %windir%\Microsoft.NET\Framework\\<latest version of [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)]>\Microsoft.Windows.ApplicationServer.Applications.man to a temporary location, and rename it to Microsoft.Windows.ApplicationServer.Applications_Provider1.man  
@@ -210,14 +203,12 @@ invoker.Invoke();
   
     ```  
     <provider name="Microsoft-Windows-Application Server-Applications" guid="{2720e974-9fe9-477a-bb60-81fe3bf91eec}"  
-  
     ```  
   
 4.  Change the provider name if you do not want to uninstall the default provider.  
   
     ```  
     <provider name="Microsoft-Windows-Application Server-Applications" guid="{2720e974-9fe9-477a-bb60-81fe3bf91eec}"  
-  
     ```  
   
 5.  If you changed the provider name in the previous step, change the channel names in the manifest file to the new provider name.  
@@ -228,7 +219,6 @@ invoker.Invoke();
     <channel name="Microsoft-Windows-Application Server-Applications_Provider1/Analytic" chid="ANALYTIC_CHANNEL" symbol="ANALYTIC_CHANNEL" type="Analytic" enabled="false" isolation="Application" message="$(string.MICROSOFT_WINDOWS_APPLICATIONSERVER_APPLICATIONS.channel.ANALYTIC_CHANNEL.message)" />  
     <channel name="Microsoft-Windows-Application Server-Applications_Provider1/Debug" chid="DEBUG_CHANNEL" symbol="DEBUG_CHANNEL" type="Debug" enabled="false" isolation="Application" message="$(string.MICROSOFT_WINDOWS_APPLICATIONSERVER_APPLICATIONS.channel.DEBUG_CHANNEL.message)" />  
     <channel name="Microsoft-Windows-Application Server-Applications_Provider1/Perf" chid="PERF_CHANNEL" symbol="PERF_CHANNEL" type="Analytic" enabled="false" isolation="Application" message="$(string.MICROSOFT_WINDOWS_APPLICATIONSERVER_APPLICATIONS.channel.PERF_CHANNEL.message)" />  
-  
     ```  
   
 6.  Generate the resource DLL by following these steps.  
@@ -239,14 +229,12 @@ invoker.Invoke();
   
         ```  
         mc.exe Microsoft.Windows.ApplicationServer.Applications_Provider1.man  
-  
         ```  
   
     3.  Run rc.exe on the resource file generated in the previous step.  
   
         ```  
         rc.exe  Microsoft.Windows.ApplicationServer.Applications_Provider1.rc  
-  
         ```  
   
     4.  Create an empty cs file called NewProviderReg.cs.  
@@ -261,7 +249,6 @@ invoker.Invoke();
   
         ```  
         <provider name="Microsoft-Windows-Application Server-Applications_Provider1" guid="{2720e974-9fe9-477a-bb60-81fe3bf91eec}" symbol="Microsoft_Windows_ApplicationServer_ApplicationEvents" resourceFileName="<dll directory>\Microsoft.Windows.ApplicationServer.Applications_Provider1.dll" messageFileName="<dll directory>\Microsoft.Windows.ApplicationServer.Applications_Provider1.dll">  
-  
         ```  
   
     7.  Use [wevtutil](http://go.microsoft.com/fwlink/?LinkId=184608) to register the manifest.  

@@ -61,7 +61,6 @@ Public Class sample
       xslt.Transform(xd, arg, strmTemp, Nothing)  
    End Sub 'Main  
 End Class 'sample  
-  
 ```  
   
 ```csharp  

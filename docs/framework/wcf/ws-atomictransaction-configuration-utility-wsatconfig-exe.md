@@ -21,7 +21,6 @@ The WS-AtomicTransaction Configuration Utility is used to configure basic WS-Ato
 ## Syntax  
   
 ```  
-  
 wsatConfig [Options]  
 ```  
   

@@ -84,7 +84,6 @@ static void InvokeCalculatorService(ServiceEndpoint serviceEndpoint)
    //Closing the client gracefully closes the connection and cleans up resources  
    client.Close();  
 }  
-  
 ```  
   
 #### To use this sample  

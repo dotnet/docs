@@ -26,7 +26,6 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
 ## Syntax  
   
 ```  
-  
 <userPrincipalName value = "String" />  
 ```  
   

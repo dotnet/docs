@@ -41,7 +41,6 @@ manager: "erikre"
          </source>  
     </sources>  
 </system.diagnostics>  
-  
 ```  
   
  In this example, the name and type of the trace listener is specified. The Listener is named `sdt` and the standard .NET Framework trace listener (System.Diagnostics.XmlWriterTraceListener) is added as the type. The `initializeData` attribute is used to set the name of the log file for that Listener to be `SdrConfigExample.e2e`. For the log file, you can substitute a fully-qualified path for a simple file name.  

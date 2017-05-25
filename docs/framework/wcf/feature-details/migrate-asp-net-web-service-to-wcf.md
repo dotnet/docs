@@ -211,7 +211,6 @@ The following procedure describes how to migrate an ASP.NET Web Service to [!INC
        aspNetCompatibilityEnabled ="true"/>  
      </system.serviceModel>  
     </configuration>  
-  
     ```  
   
 17. Save the configuration.  

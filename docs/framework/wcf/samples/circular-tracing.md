@@ -46,7 +46,6 @@ This sample demonstrates the implementation of a circular buffer trace listener.
   </sharedListeners>  
   <trace autoflush="true" />  
 </system.diagnostics>  
-  
 ```  
   
 #### To set up, build, and run the sample  

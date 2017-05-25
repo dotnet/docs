@@ -57,7 +57,6 @@ Custom activity designers are typically implemented so that their associated act
 12. Open the RehostingWFDesigner.xaml file and paste the following code into it to define the UI for the application.  
   
     ```  
-  
     <Window x:Class=" UsingWorkflowItemPresenter.RehostingWFDesigner"  
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -106,13 +105,11 @@ Custom activity designers are typically implemented so that their associated act
             <Border Grid.Column="2" Name="PropertyBorder"/>  
         </Grid>  
     </Window>  
-  
     ```  
   
 13. To associate an activity designer with an activity type, you must register that activity designer with the metadata store. To do this, add the `RegisterMetadata` method to the `RehostingWFDesigner` class. Within the scope of the  `RegisterMetadata` method, create an <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder> object and call the <xref:System.Activities.Presentation.Metadata.AttributeTableBuilder.AddCustomAttributes%2A> method to add the attributes to it. Call the <xref:System.Activities.Presentation.Metadata.MetadataStore.AddAttributeTable%2A> method to add the <xref:System.Activities.Presentation.Metadata.AttributeTable> to the metadata store. The following code contains the rehosting logic for the designer. It registers the metadata, puts the `SimpleNativeActivity` into the toolbox, and creates the workflow. Put this code into the RehostingWFDesigner.xaml.cs file.  
   
     ```  
-  
     using System;  
     using System.Activities.Core.Presentation;  
     using System.Activities.Presentation;  
@@ -158,7 +155,6 @@ Custom activity designers are typically implemented so that their associated act
             }  
         }  
     }  
-  
     ```  
   
 14. Right-click the References directory in Solution Explorer and select **Add Reference …** to bring up the **Add Reference** dialogue.  
@@ -185,7 +181,6 @@ Custom activity designers are typically implemented so that their associated act
     >  The schema for <xref:System.Activities.Presentation.ActivityDesigner> allows the addition of only one child element to your custom activity designer definition; however, this element could be a `StackPanel`, `Grid`, or some other composite UI element.  
   
     ```  
-  
     <sap:ActivityDesigner x:Class=" UsingWorkflowItemPresenter.SimpleNativeDesigner"  
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -217,7 +212,6 @@ Custom activity designers are typically implemented so that their associated act
             <ContentPresenter Style="{DynamicResource ExpandOrCollapsedStyle}" Content="{Binding}" />  
         </Grid>  
     </sap:ActivityDesigner>  
-  
     ```  
   
 21. Right-click the UsingWorkflowItemPresenter project in **Solution Explorer**, select **Add**, then **New Item…** to bring up the **Add New Item** dialogue and select the **Workflow** category form the **Installed Templates** section on the left.  
@@ -227,7 +221,6 @@ Custom activity designers are typically implemented so that their associated act
 23. Implement the `SimpleNativeActivity` class by entering the following code into the SimpleNativeActivity.cs file.  
   
     ```  
-  
     using System.Activities;  
   
     namespace UsingWorkflowItemPresenter  
@@ -252,7 +245,6 @@ Custom activity designers are typically implemented so that their associated act
             }  
         }  
     }  
-  
     ```  
   
 24. Select **Build Solution** from the **Build** menu.  
@@ -307,13 +299,11 @@ Custom activity designers are typically implemented so that their associated act
             <ContentPresenter Style="{DynamicResource ExpandOrCollapsedStyle}" Content="{Binding}"/>  
         </Grid>  
     </sap:ActivityDesigner>  
-  
     ```  
   
 3.  Here is the code from the RehostingWFDesigner.xaml.cs file that provides the rehosting logic.  
   
     ```  
-  
     using System;  
     using System.Activities.Core.Presentation;  
     using System.Activities.Presentation;  

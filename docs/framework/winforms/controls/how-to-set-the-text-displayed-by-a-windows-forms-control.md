@@ -73,7 +73,6 @@ Windows Forms controls usually display some text that is related to the primary 
   
     ```cpp#  
     mpMenuItem->Text = "&& Now For Something Completely Different";  
-  
     ```  
   
 ## See Also  

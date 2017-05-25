@@ -41,7 +41,6 @@ GO
 Insert into employees  
 Values(1, 0x00, default)  
 GO  
-  
 ```  
   
 ### Example: Reading, Overwriting, and Inserting FILESTREAM Data  

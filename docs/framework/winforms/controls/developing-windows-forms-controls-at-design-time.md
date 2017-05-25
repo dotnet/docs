@@ -28,7 +28,7 @@ manager: "wpickett"
 For control authors, the .NET Framework provides a wealth of control authoring technology. Authors are no longer limited to designing composite controls that act as a collection of preexisting controls. Through inheritance, you can create your own controls from preexisting composite controls or preexisting Windows Forms controls. You can also design your own controls that implement custom painting. These options enable a great deal of flexibility to the design and functionality of the visual interface. To take advantage of these features, you should be familiar with object-based programming concepts.  
   
 > [!NOTE]
->  It is not necessary to have a thorough understanding of inheritance, but you may find it useful to refer to [NOT IN BUILD: Inheritance in Visual Basic](http://msdn.microsoft.com/en-us/e5e6e240-ed31-4657-820c-079b7c79313c).  
+>  It is not necessary to have a thorough understanding of inheritance, but you may find it useful to refer to [Inheritance basics (Visual Basic)](~/docs/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md).  
   
  If you want to create custom controls to use on Web Forms, see [Developing Custom ASP.NET Server Controls](http://msdn.microsoft.com/library/fbe26c16-cff4-4089-b3dd-877411f0c0ef).  
   

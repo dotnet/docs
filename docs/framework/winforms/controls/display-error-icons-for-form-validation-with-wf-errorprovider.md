@@ -46,7 +46,6 @@ You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component 
              ErrorProvider1.SetError(TextBox1, "")  
           End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -63,7 +62,6 @@ You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component 
           errorProvider1.SetError(textBox1, "Not an integer value.");  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -88,7 +86,6 @@ You can use a Windows Forms <xref:System.Windows.Forms.ErrorProvider> component 
     ```csharp  
     this.textBox1.Validating += new  
     System.ComponentModel.CancelEventHandler(this.textBox1_Validating);  
-  
     ```  
   
     ```cpp  

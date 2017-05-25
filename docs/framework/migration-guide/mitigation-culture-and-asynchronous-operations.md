@@ -30,13 +30,11 @@ For apps that target the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] an
 -   By opting into the old behavior of not flowing <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> by adding the following `AppContextSwitchOverrides` element to the application's configuration file:  
   
     ```xml  
-  
     <configuration>  
         <runtime>  
             <AppContextSwitchOverrides value="Switch.System.Globalization.NoAsyncCurrentCulture=true" />  
         </runtime>  
     </configuration>  
-  
     ```  
   
 -   By opting into the old behavior of not flowing <xref:System.Globalization.CultureInfo.CurrentCulture%2A?displayProperty=fullName> and <xref:System.Globalization.CultureInfo.CurrentUICulture%2A?displayProperty=fullName> by setting the following compatibility switch programatically:  

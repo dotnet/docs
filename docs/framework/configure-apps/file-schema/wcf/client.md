@@ -30,7 +30,6 @@ The `client` element defines a list of endpoints that a client can connect to.
 ## Syntax  
   
 ```  
-  
 <system.serviceModel>  
     <client>  
         <endpoint>  

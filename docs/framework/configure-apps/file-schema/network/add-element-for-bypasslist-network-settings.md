@@ -40,7 +40,6 @@ Adds an IP address or DNS name to the proxy bypass list.
 ## Syntax  
   
 ```  
-  
       <add   
    address = "regular expression"   
 />  

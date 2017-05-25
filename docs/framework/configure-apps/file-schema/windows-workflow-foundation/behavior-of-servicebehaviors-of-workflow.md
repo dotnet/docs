@@ -24,7 +24,6 @@ The **behavior** element contains a collection of settings for the behavior of a
 ## Syntax  
   
 ```  
-  
 <system.ServiceModel>  
   <behaviors>  
     <serviceBehaviors>  

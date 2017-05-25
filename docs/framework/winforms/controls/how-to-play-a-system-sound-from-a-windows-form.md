@@ -34,7 +34,6 @@ The following code example plays the `Exclamation` system sound at run time. For
 Public Sub PlayExclamation()  
     SystemSounds.Exclamation.Play()  
 End Sub  
-  
 ```  
   
 ```csharp  

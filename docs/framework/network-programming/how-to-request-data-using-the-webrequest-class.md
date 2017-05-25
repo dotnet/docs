@@ -37,7 +37,6 @@ The following procedure describes the steps used to request a resource from a se
   
     ```vb  
     Dim request as WebRequest = WebRequest.Create("http://www.contoso.com/")  
-  
     ```  
   
     > [!NOTE]
@@ -61,7 +60,6 @@ The following procedure describes the steps used to request a resource from a se
   
     ```vb  
     Ctype(request,HttpWebRequest).UserAgent = ".NET Framework Example Client"  
-  
     ```  
   
 3.  To send the request to the server, call <xref:System.Net.HttpWebRequest.GetResponse%2A>. The actual type of the returned **WebResponse** object is determined by the scheme of the requested URI.  
@@ -72,7 +70,6 @@ The following procedure describes the steps used to request a resource from a se
   
     ```vb  
     Dim response As WebResponse = request.GetResponse()  
-  
     ```  
   
     > [!NOTE]
@@ -96,7 +93,6 @@ The following procedure describes the steps used to request a resource from a se
   
     ```vb  
     Dim dataStream As Stream = response.GetResponseStream()  
-  
     ```  
   
 6.  After reading the data from the response, you must either close the response stream using the **Stream.Close** method or close the response using the **WebResponse.Close** method. It is not necessary to call the **Close** method on both the response stream and the **WebResponse**, but doing so is not harmful. **WebResponse.Close** calls **Stream.Close** when closing the response.  
@@ -107,7 +103,6 @@ The following procedure describes the steps used to request a resource from a se
   
     ```vb  
     response.Close()  
-  
     ```  
   
 ## Example  

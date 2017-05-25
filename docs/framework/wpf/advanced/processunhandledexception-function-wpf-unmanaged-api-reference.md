@@ -27,7 +27,6 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 void __stdcall ProcessUnhandledException(  
    __in_ecount(1) BSTR errorMsg  
 )  

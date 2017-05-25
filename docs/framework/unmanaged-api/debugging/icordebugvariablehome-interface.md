@@ -48,7 +48,6 @@ Represents a local variable or argument of a function.
  The following code fragment uses the [ICorDebugCode4](../../../../docs/framework/unmanaged-api/debugging/icordebugcode4-interface.md) object named `pCode4`.  
   
 ```cpp  
-  
 ICorDebugCode4 *pCode4 = NULL;  
 pCode->QueryInterface(IID_ICorDebugCode4, &pCode4);  
   
@@ -85,7 +84,6 @@ for (int i = 0; i < celtFetched; i++)
         break;  
     }  
 }  
-  
 ```  
   
 ## Requirements  

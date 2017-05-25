@@ -49,7 +49,6 @@ Module Module1
         Next  
     End Sub  
 End Module  
-  
 ```  
   
  This code produces the following output:  
@@ -80,7 +79,6 @@ Module Module1
         Console.WriteLine(newTree)  
     End Sub  
 End Module  
-  
 ```  
   
  This code produces the following output:  

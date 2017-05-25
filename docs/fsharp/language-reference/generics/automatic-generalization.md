@@ -1,5 +1,5 @@
 ---
-title: Automatic Generalization (F#)
+title: Automatic Generalization (F#) | Microsoft Docs
 description: Automatic Generalization (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

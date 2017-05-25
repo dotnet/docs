@@ -28,7 +28,6 @@ Specifies credentials used when authenticating peer-to-peer clients.
 ## Syntax  
   
 ```  
-  
 <peer>  
   <certificate/>  
   <peerAuthentication/>  

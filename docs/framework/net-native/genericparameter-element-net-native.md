@@ -21,7 +21,6 @@ Applies policy to the parameter type of a generic type or method.
 ## Syntax  
   
 ```xml  
-  
 <GenericParameter Name="generic_parameter_name"  
                   Activate="policy_type"  
                   Browse="policy_type"  
@@ -33,7 +32,6 @@ Applies policy to the parameter type of a generic type or method.
                   MarshalObject="policy_type"  
                   MarshalDelegate="policy_type"  
                   MarshalStructure="policy_type"  
-  
 ```  
   
 ## Attributes and Elements  
@@ -83,7 +81,6 @@ Applies policy to the parameter type of a generic type or method.
  The `<GenericParameter>` element is most useful when used with serializers. The following example uses the `<GenericParameter>` element to apply policy to the type `T` in calls to the NewtonSoft JSON serializer's [JsonConvert.DeserializeObject\<T>(String)](http://james.newtonking.com/json/help/index.html?topic=html/T_Newtonsoft_Json_JsonConvert.htm) method overloads.  
   
 ```xml  
-  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <Type Name="Newtonsoft.Json.JsonConvert" >  
       <Method Name="DeserializeObject{T}">  
@@ -91,7 +88,6 @@ Applies policy to the parameter type of a generic type or method.
       </Method>  
    </Type>  
 </Directives>  
-  
 ```  
   
 ## See Also  

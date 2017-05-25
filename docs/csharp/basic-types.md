@@ -1,5 +1,5 @@
 ---
-title: Basic Types | C# Guide
+title: Basic Types - C# Guide | Microsoft Docs
 description: Learn about the core types (numerics, strings, and object) in all C# programs 
 keywords: .NET, .NET Core, C#
 author: BillWagner

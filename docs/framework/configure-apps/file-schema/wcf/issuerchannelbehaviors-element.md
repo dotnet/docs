@@ -29,7 +29,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <issuerChannelBehaviors>  
       <add behaviorConfiguraton="string"  
                 issuerAddress="string" />  

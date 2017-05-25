@@ -92,7 +92,6 @@ This sample demonstrates how to implement a custom UserNamePassword Validator. T
   </behaviors>  
   
 </system.serviceModel>  
-  
 ```  
   
  The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate mode and message `clientCredentialType`.  
@@ -142,7 +141,6 @@ address="http://localhost:8001/servicemodelsamples/service/username"
     </behaviors>  
   
   </system.serviceModel>  
-  
 ```  
   
  The client implementation prompts the user to enter a username and password.  
@@ -203,7 +201,6 @@ try
       proxy.Abort();  
   }  
 }  
-  
 ```  
   
  This sample uses a custom UserNamePasswordValidator to validate username/password pairs. The sample implements `CustomUserNamePasswordValidator`, derived from <xref:System.IdentityModel.Selectors.UserNamePasswordValidator>. See the documentation for <xref:System.IdentityModel.Selectors.UserNamePasswordValidator> for more information. This particular custom validator sample implements the `Validate` method to accept two particular username/password pairs as shown in the following code.  
@@ -254,7 +251,6 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
   </behavior>  
  </serviceBehaviors>  
 </behaviors>  
-  
 ```  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The client should successfully call all the methods. Press ENTER in the client window to shut down the client.  
@@ -276,7 +272,6 @@ serviceHost.Credentials. UserNameAuthentication.CustomUserNamePasswordValidator 
     echo making server cert  
     echo ************  
     makecert.exe -sr LocalMachine -ss MY -a sha1 -n CN=%SERVER_NAME% -sky exchange -pe  
-  
     ```  
   
 -   Installing the server certificate into client's trusted certificate store:  

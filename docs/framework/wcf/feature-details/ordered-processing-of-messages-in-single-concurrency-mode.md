@@ -27,7 +27,6 @@ WCF makes no guarantees about the order in which messages are processed, unless 
     {  
          // ...  
     }  
-  
 ```  
   
  If <xref:System.ServiceModel.ServiceBehaviorAttribute.ConcurrencyMode%2A> is set to any other value, an <xref:System.InvalidOperationException> is thrown.  

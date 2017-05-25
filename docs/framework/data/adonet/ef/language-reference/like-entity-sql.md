@@ -25,7 +25,6 @@ Determines whether a specific character `String` matches a specified pattern.
 ## Syntax  
   
 ```  
-  
 match [NOT] LIKE pattern [ESCAPE escape]  
 ```  
   

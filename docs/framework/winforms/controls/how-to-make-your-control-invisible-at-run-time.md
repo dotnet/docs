@@ -35,7 +35,6 @@ There are times when you might want to create a user control that is invisible a
     Me.Visible = False  
     ' To set the Visible property from another object.  
     myControl1.Visible = False  
-  
     ```  
   
     ```csharp  
@@ -43,7 +42,6 @@ There are times when you might want to create a user control that is invisible a
     this.Visible = false;  
     // To set the Visible property from another object.  
     myControl1.Visible = false;  
-  
     ```  
   
 ## See Also  

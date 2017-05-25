@@ -27,7 +27,6 @@ This command-line tool can be used to retrieve a private key from a certificate 
 ## Syntax  
   
 ```  
-  
 FindPrivateKey<storeName> <storeLocation> [{ {-n <subjectName>} | {-t <thumbprint>} } [-f | -d | -a]]  
 ```  
   

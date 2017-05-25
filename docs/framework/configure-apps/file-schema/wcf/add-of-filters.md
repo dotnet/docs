@@ -27,7 +27,6 @@ A XPath filter that specifies the kind of message to be logged.
 ## Syntax  
   
 ```  
-  
 <filters>  
    <add filter="String"/>  
 </filters>  

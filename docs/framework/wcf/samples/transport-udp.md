@@ -94,21 +94,18 @@ The UDP Transport sample demonstrates how to implement UDP unicast and multicast
   
 ```  
 this.socket = new Socket(this.remoteEndPoint.AddressFamily, SocketType.Dgram, ProtocolType.Udp);  
-  
 ```  
   
  The channel can be closed gracefully or ungracefully. If the channel is closed gracefully the socket is closed and a call is made to the base class `OnClose` method. If this throws an exception, the infrastructure calls `Abort` to ensure the channel is cleaned up.  
   
 ```  
 this.socket.Close(0);  
-  
 ```  
   
  We then implement `Send()` and `BeginSend()`/`EndSend()`. This breaks down into two main sections. First we serialize the message into a byte array.  
   
 ```  
 ArraySegment<byte> messageBuffer = EncodeMessage(message);  
-  
 ```  
   
  Then we send the resulting data on the wire.  
@@ -325,7 +322,6 @@ if (context.Endpoint.Binding is CustomBinding)
     </extensions>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The extension can be referenced from custom bindings to use UDP as the transport.  
@@ -342,7 +338,6 @@ if (context.Endpoint.Binding is CustomBinding)
     </bindings>  
   </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ### Binding Section  
@@ -369,7 +364,6 @@ protected override void OnApplyConfiguration(string configurationName)
             if (this.ClientBaseAddress != null)  
                    udpBinding.ClientBaseAddress = ClientBaseAddress;  
 }  
-  
 ```  
   
  To register this handler with the configuration system, we add the following section to the relevant configuration file.  

@@ -117,7 +117,6 @@ This topic will explain how to configure a custom WS-Metadata exchange binding. 
     MetadataSet mdSet = mexClient.GetMetadata(new EndpointAddress(mexAddress));  
     foreach (MetadataSection section in mdSet.MetadataSections)  
     Console.WriteLine("Metadata section: " + section.Dialect.ToString());  
-  
     ```  
   
 ## See Also  

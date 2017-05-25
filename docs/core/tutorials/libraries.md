@@ -1,5 +1,5 @@
 ---
-title: Developing Libraries with Cross Platform Tools
+title: Developing Libraries with Cross Platform Tools | Microsoft Docs
 description: Developing Libraries with Cross Platform Tools
 keywords: .NET, .NET Core
 author: cartermp

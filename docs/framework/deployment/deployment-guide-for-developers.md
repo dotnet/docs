@@ -395,7 +395,7 @@ The following table lists .NET Framework language packs that are available for t
 ## See also
  [Deployment Guide for Administrators](../../../docs/framework/deployment/guide-for-administrators.md)   
  [System Requirements](../../../docs/framework/get-started/system-requirements.md)   
- [Installation Guide](../../../docs/framework/install/guide-for-developers.md)   
- [Troubleshooting](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)   
+ [Install the .NET Framework for developers](../../../docs/framework/install/guide-for-developers.md)   
+ [Troubleshoot blocked .NET Framework installations and uninstallations](../../../docs/framework/install/troubleshoot-blocked-installations-and-uninstallations.md)   
  [Reducing System Restarts During .NET Framework 4.5 Installations](../../../docs/framework/deployment/reducing-system-restarts.md)   
  [How to: Get Progress from the .NET Framework 4.5 Installer](../../../docs/framework/deployment/how-to-get-progress-from-the-dotnet-installer.md)

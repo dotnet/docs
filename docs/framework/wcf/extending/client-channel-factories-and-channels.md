@@ -61,14 +61,12 @@ A channel factory creates channels.
 ```  
 this.socket.Close();  
 base.OnClose(timeout);  
-  
 ```  
   
  Implement `Send()` and `BeginSend()`/`EndSend()`. This breaks down into two main sections. First serialize the message into a byte array:  
   
 ```  
 ArraySegment<byte> messageBuffer = EncodeMessage(message);  
-  
 ```  
   
  Then send the resulting data on the wire:  

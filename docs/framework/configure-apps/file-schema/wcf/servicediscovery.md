@@ -56,7 +56,6 @@ Specifies the discoverability of service endpoints.
  The following configuration example specifies that the CalculatorService to be discoverable, and optionally specifies the announcement endpoint to be used.  
   
 ```  
-  
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  
@@ -76,7 +75,6 @@ Specifies the discoverability of service endpoints.
     </behavior>  
   </serviceBehaviors>  
 </behaviors>  
-  
 ```  
   
 ## See Also  

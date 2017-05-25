@@ -83,7 +83,6 @@ Sub Main()
         Console.WriteLine(cust)  
     Next  
 End Sub  
-  
 ```  
   
  This code produces the following output:  

@@ -24,7 +24,7 @@
 ### [x:Uid Directive](x-uid-directive.md)
 ### [x:XData Intrinsic XAML Type](x-xdata-intrinsic-xaml-type.md)
 ### [XamlName Grammar](xamlname-grammar.md)
-### [{} Escape Sequence / Markup Extension]({}-escape-sequence-markup-extension.md)
+### [{} Escape Sequence / Markup Extension](escape-sequence-markup-extension.md)
 ### [xml:lang Handling in XAML](xml-lang-handling-in-xaml.md)
 ### [xml:space Handling in XAML](xml-space-handling-in-xaml.md)
 ## [Types Migrated from WPF to System.Xaml](types-migrated-from-wpf-to-system-xaml.md)

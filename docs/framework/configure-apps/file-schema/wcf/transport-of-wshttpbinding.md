@@ -28,7 +28,6 @@ Defines authentication settings for the HTTP transport.
 ## Syntax  
   
 ```  
-  
 <wsHttpBinding>  
     <binding>  
         <security mode="None|Transport|TransportWithMessageCredential|TransportCredentialOnly">  

@@ -65,7 +65,6 @@ Public Class FlashTrackBar
    End Property  
    ...  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -112,7 +111,6 @@ Description("The current value of the track bar.  You can enter an actual value 
 Public ReadOnly Property Value() As Integer  
 ...  
 End Property  
-  
 ```  
   
 ```csharp  

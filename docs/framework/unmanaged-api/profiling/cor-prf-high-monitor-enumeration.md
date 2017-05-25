@@ -25,7 +25,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```  
-  
 typedef enum {  
     COR_PRF_HIGH_MONITOR_NONE                = 0x00000000,  
     COR_PRF_HIGH_ADD_ASSEMBLY_REFERENCES     = 0x00000001,  
@@ -34,7 +33,6 @@ typedef enum {
     COR_PRF_HIGH_ALLOWABLE_AFTER_ATTACH      = COR_PRF_HIGH_IN_MEMORY_SYMBOLS_UPDATED,  
     COR_PRF_HIGH_MONITOR_IMMUTABLE           = 0  
 } COR_PRF_HIGH_MONITOR;  
-  
 ```  
   
 ## Members  

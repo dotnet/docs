@@ -70,7 +70,6 @@ manager: "wpickett"
   </ItemGroup>  
   ...  
 </Project>  
-  
 ```  
   
 > [!NOTE]
@@ -113,7 +112,6 @@ manager: "wpickett"
   </ItemGroup>  
   ...  
 </Project>  
-  
 ```  
   
 > [!NOTE]
@@ -146,7 +144,6 @@ manager: "wpickett"
   </ItemGroup>  
   ...  
 </Project>  
-  
 ```  
   
 > [!NOTE]
@@ -218,7 +215,6 @@ manager: "wpickett"
   </None>  
   ...  
 </Project>  
-  
 ```  
   
 > [!NOTE]

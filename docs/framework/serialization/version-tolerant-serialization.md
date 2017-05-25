@@ -141,7 +141,6 @@ private void SetCountryRegionDefault(StreamingContext sc)
 {  
     CountryField = "Japan";  
 }  
-  
 ```  
   
 ```vb  
@@ -170,7 +169,6 @@ public class Address
         CountryField = "Japan";  
     }  
 }  
-  
 ```  
   
 ```vb  

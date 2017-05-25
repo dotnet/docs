@@ -19,7 +19,6 @@ The XML Schema Definition (Xsd.exe) tool generates XML schema or common language
 ## Syntax  
   
 ```  
-  
 xsd file.xdr [/outputdir:directory][/parameters:file.xml]  
 xsd file.xml [/outputdir:directory] [/parameters:file.xml]  
 xsd file.xsd {/classes | /dataset} [/element:element]   

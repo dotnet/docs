@@ -45,7 +45,6 @@ Multiplies two numbers.
 ## Syntax  
   
 ```  
-  
 number1 * number2  
 ```  
   

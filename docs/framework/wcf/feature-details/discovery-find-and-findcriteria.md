@@ -68,7 +68,6 @@ findCriteria.Duration = TimeSpan.FromSeconds(10);
 FindResponse findResponse = discoveryClient.Find(findCriteria);  
   
 Console.WriteLine("Found {0} ICalculatorService endpoint(s).", findResponse.Endpoints.Count)  
-  
 ```  
   
 ## See Also  

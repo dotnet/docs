@@ -100,7 +100,6 @@ Public Class LoanApp
         End While  
     End Sub  
 End Class  
-  
 ```  
   
 ```csharp  

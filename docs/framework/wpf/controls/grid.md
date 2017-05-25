@@ -45,6 +45,6 @@ The <xref:System.Windows.Controls.Grid> element is used to precisely position co
 ## Related Sections  
  [Layout](../../../../docs/framework/wpf/advanced/layout.md)  
   
- [Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
+ [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)  
   
  [ScrollViewer Overview](../../../../docs/framework/wpf/controls/scrollviewer-overview.md)

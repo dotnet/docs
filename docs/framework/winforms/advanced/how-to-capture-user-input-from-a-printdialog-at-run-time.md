@@ -33,12 +33,10 @@ While you can set options related to printing at design time, you will sometimes
   
     ```vb  
     PrintDialog1.Document = PrintDocument1  
-  
     ```  
   
     ```csharp  
     printDialog1.Document = PrintDocument1;  
-  
     ```  
   
     ```cpp  
@@ -49,12 +47,10 @@ While you can set options related to printing at design time, you will sometimes
   
     ```vb  
     PrintDialog1.ShowDialog()  
-  
     ```  
   
     ```csharp  
     printDialog1.ShowDialog();  
-  
     ```  
   
     ```cpp  

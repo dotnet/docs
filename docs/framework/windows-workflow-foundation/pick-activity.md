@@ -69,7 +69,6 @@ Sequence body = new Sequence()
        }  
    }  
 };  
-  
 ```  
   
 ```xaml  
@@ -92,5 +91,4 @@ Sequence body = new Sequence()
     </PickBranch>  
   </Pick>  
 </Sequence>  
-  
 ```

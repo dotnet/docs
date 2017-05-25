@@ -1,10 +1,14 @@
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator
+ms.technology: 
+  - "dotnet-wpf"
 manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.MoveNext
+ms.technology: 
+  - "dotnet-wpf"
 manager: "martinek"
 ---
 
@@ -15,16 +19,22 @@ manager: "martinek"
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Current
+ms.technology: 
+  - "dotnet-wpf"
 manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Entry
+ms.technology: 
+  - "dotnet-wpf"
 manager: "martinek"
 ---
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Key
+ms.technology: 
+  - "dotnet-wpf"
 manager: "martinek"
 ---
 
@@ -35,6 +45,8 @@ manager: "martinek"
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Reset
+ms.technology: 
+  - "dotnet-wpf"
 manager: "martinek"
 ---
 
@@ -45,5 +57,7 @@ manager: "martinek"
 
 ---
 uid: System.Windows.Markup.Localizer.BamlLocalizationDictionaryEnumerator.Value
+ms.technology: 
+  - "dotnet-wpf"
 manager: "martinek"
 ---

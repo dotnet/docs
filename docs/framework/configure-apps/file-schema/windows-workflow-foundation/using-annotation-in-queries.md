@@ -28,7 +28,6 @@ Annotations allow you to arbitrarily tag tracking records with a value that can 
     <annotation name="MailServer" value="Mail Server1"/>  
   </annotations>  
 </activityStateQuery>  
-  
 ```  
   
 > [!NOTE]

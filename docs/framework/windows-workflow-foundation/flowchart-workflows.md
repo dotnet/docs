@@ -51,7 +51,6 @@ A flowchart is a well-known paradigm for designing programs. The Flowchart activ
     </FlowStep.Next>  
   </FlowStep>  
 </Flowchart>  
-  
 ```  
   
 ### Creating a Conditional Flowchart with a FlowDecision Node  
@@ -78,7 +77,6 @@ A flowchart is a well-known paradigm for designing programs. The Flowchart activ
     </FlowStep.Next>  
   </FlowStep>  
 </Flowchart>  
-  
 ```  
   
 ### Creating an Exclusive Switch with a FlowSwitch Node  
@@ -98,5 +96,4 @@ A flowchart is a well-known paradigm for designing programs. The Flowchart activ
       </FlowStep>  
     </FlowSwitch>  
 </Flowchart>  
-  
 ```

@@ -30,7 +30,6 @@ Specifies settings that authorize access to service operations
 ## Syntax  
   
 ```  
-  
 <serviceAuthorization  
      impersonateCallerForAllOperations="Boolean"  
       principalPermissionMode="None/UseWindowsGroups/UseAspNetRoles/Custom"  

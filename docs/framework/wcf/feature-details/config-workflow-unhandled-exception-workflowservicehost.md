@@ -30,7 +30,6 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
         </behavior>  
       </serviceBehaviors>  
     </behaviors>  
-  
     ```  
   
     > [!NOTE]
@@ -40,7 +39,6 @@ The <xref:System.ServiceModel.Activities.Description.WorkflowUnhandledExceptionB
   
     ```csharp  
     host.Description.Behaviors.Add(new WorkflowUnhandledExceptionBehavior { Action = WorkflowUnhandledExceptionAction.AbandonAndSuspend });  
-  
     ```  
   
      The `action` attribute of the <`workflowUnhandledException`> element can be set to one of the following values:  

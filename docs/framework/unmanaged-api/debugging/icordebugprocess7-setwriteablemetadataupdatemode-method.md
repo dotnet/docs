@@ -33,7 +33,6 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT SetWriteableMetadataUpdateMode(  
    WriteableMetadataUpdateMode flags  
 );  

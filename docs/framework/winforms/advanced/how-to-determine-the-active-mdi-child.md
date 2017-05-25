@@ -58,7 +58,6 @@ On occasion, you will want to provide a command that operates on the control tha
           End If  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -87,7 +86,6 @@ On occasion, you will want to provide a command that operates on the control tha
           }  
        }  
     }  
-  
     ```  
   
 ## See Also  

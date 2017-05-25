@@ -21,7 +21,6 @@ Defines a function in the scope of an Entity SQL query command.
 ## Syntax  
   
 ```  
-  
 FUNCTION function-name  
 ( [ { parameter_name <type_definition>   
         [ ,...n ]  

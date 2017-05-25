@@ -32,7 +32,6 @@ Adds types used by the <xref:System.Xml.Serialization.XmlSchemaImporter> for map
 ## Syntax  
   
 ```  
-  
 <add name = "typeName" type="fully qualified type [,Version=version number] [,Culture=culture] [,PublicKeyToken= token]"/>  
 ```  
   

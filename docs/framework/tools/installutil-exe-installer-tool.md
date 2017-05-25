@@ -41,7 +41,6 @@ The Installer tool is a command-line utility that allows you to install and unin
 ## Syntax  
   
 ```  
-  
 installutil [/u[ninstall]] [options] assembly [[options] assembly] ...  
 ```  
   

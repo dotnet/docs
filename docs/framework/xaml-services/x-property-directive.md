@@ -21,7 +21,6 @@ Declares a XAML property in markup.
 ## XAML Object Element Usage  
   
 ```  
-  
 <object x:Class="className">  
   <x:Members>  
     <x:Property Name="propertyName" Type="propertyType/>  

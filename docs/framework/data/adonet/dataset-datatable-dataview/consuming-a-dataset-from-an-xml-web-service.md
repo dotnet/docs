@@ -93,7 +93,6 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
         Return custDS  
       End Function  
     End Class  
-  
     ```  
   
     ```csharp  
@@ -221,7 +220,6 @@ The <xref:System.Data.DataSet> was architected with a disconnected design, in pa
         customersDataSet.AcceptChanges()  
       End Sub  
     End Class  
-  
     ```  
   
     ```csharp  

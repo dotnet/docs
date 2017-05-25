@@ -1,5 +1,5 @@
 ---
-title: .NET Core Versioning
+title: .NET Core Versioning | Microsoft Docs
 description: .NET Core Versioning
 keywords: .NET, .NET Core
 author: richlander
@@ -146,5 +146,4 @@ You can see major updates demonstrated in the following project file. (Note that
     <TargetFramework>netcoreapp2.0</TargetFramework>
   </PropertyGroup>
 </Project>
-
 ```

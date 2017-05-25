@@ -38,7 +38,6 @@ The Type Library Importer converts the type definitions found within a COM type 
 ## Syntax  
   
 ```  
-  
 tlbimp tlbFile [options]  
 ```  
   

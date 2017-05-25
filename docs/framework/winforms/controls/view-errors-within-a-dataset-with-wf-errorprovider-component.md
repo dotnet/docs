@@ -36,7 +36,6 @@ You can use the Windows Forms <xref:System.Windows.Forms.ErrorProvider> componen
     TextBox1.DataBindings.Add("Text", DataSet1, "Customers.Name")  
     ErrorProvider1.DataSource = DataSet1  
     ErrorProvider1.DataMember = "Customers"  
-  
     ```  
   
     ```csharp  
@@ -44,19 +43,16 @@ You can use the Windows Forms <xref:System.Windows.Forms.ErrorProvider> componen
     textBox1.DataBindings.Add("Text", DataSet1, "Customers.Name");  
     errorProvider1.DataSource = DataSet1;  
     errorProvider1.DataMember = "Customers";  
-  
     ```  
   
 2.  Set the <xref:System.Windows.Forms.ErrorProvider.ContainerControl%2A> property to the form.  
   
     ```vb  
     ErrorProvider1.ContainerControl = Me  
-  
     ```  
   
     ```csharp  
     errorProvider1.ContainerControl = this;  
-  
     ```  
   
 3.  Set the position of the current record to a row that contains a column error.  
@@ -64,13 +60,11 @@ You can use the Windows Forms <xref:System.Windows.Forms.ErrorProvider> componen
     ```vb  
     DataTable1.Rows(5).SetColumnError("Name", "Bad data in this row.")  
     Me.BindingContext(DataTable1).Position = 5  
-  
     ```  
   
     ```csharp  
     DataTable1.Rows[5].SetColumnError("Name", "Bad data in this row.");  
     this.BindingContext [DataTable1].Position = 5;  
-  
     ```  
   
 ## See Also  

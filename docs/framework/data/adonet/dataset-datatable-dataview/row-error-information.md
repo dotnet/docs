@@ -48,7 +48,6 @@ Private Shared Sub OnRowChanged( _
   If CDbl(args.Row("Total")) = 0 Then args.Row.RowError = _  
       "Total cannot be 0."  
 End Sub  
-  
 ```  
   
 ```csharp  

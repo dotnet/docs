@@ -1,5 +1,5 @@
 ---
-title: Reference Cells (F#)
+title: Reference Cells (F#) | Microsoft Docs
 description: Reference Cells (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -15,7 +15,6 @@ ms.assetid: 09a0b221-ea21-45c4-bae8-5e4a339750c4
 # Reference Cells
 
 *Reference cells* are storage locations that enable you to create mutable values with reference semantics.
-
 
 ## Syntax
 
@@ -52,8 +51,6 @@ let ref x = { contents = x }
 ```
 
 The following table shows the features that are available on the reference cell.
-
-
 
 |Operator, member, or field|Description|Type|Definition|
 |--------------------------|-----------|----|----------|
@@ -100,6 +97,51 @@ In the previous code, the reference cell `finished` is included in local state, 
 The following code examples demonstrate the use of reference cells in closures. In this case, the closure results from the partial application of function arguments.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2207.fs)]
+
+## Consuming C# `ref` returns
+
+Starting with F# 4.1, you can consume `ref` returns generated in C#.  The result of such a call is a `byref<_>` pointer.
+
+The following C# method:
+
+```csharp
+namespace RefReturns
+{
+    public static class RefClass
+    {
+        public static ref int Find(int val, int[] vals)
+        {
+            for (int i = 0; i < vals.Length; i++)
+            {
+                if (vals[i] == val)
+                {
+                    return ref numbers[i]; // Returns the location, not the value
+                }
+            }
+
+            throw new IndexOutOfRangeException($"{nameof(number)} not found");
+        }
+    }
+}
+```
+
+Can be transparently called by F# with no special syntax:
+
+```fsharp
+open RefReturns
+
+let consumeRefReturn() =
+    let result = RefClass.Find(3, [| 1; 2; 3; 4; 5 |]) // 'result' is of type 'byref<int>'.
+    ()
+```
+
+You can also declare functions which could take a `ref` return as input, for example:
+
+```fsharp
+let f (x: byref<int>) = &x
+```
+
+There is currently no way to generate a `ref` return in F# which could be consumed in C#.
 
 ## See Also
 [F# Language Reference](index.md)

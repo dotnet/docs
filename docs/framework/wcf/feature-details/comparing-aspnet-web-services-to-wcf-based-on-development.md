@@ -147,7 +147,6 @@ public class LineItem
           }  
      }  
 }  
-  
 ```  
   
  The <xref:System.Runtime.Serialization.DataContractAttribute> signifies that zero or more of a type’s fields or properties are to be serialized, while the <xref:System.Runtime.Serialization.DataMemberAttribute> indicates that a particular field or property is to be serialized. The <xref:System.Runtime.Serialization.DataContractAttribute> can be applied to a class or structure. The <xref:System.Runtime.Serialization.DataMemberAttribute> can be applied to a field or a property, and the fields and properties to which the attribute is applied can be either public or private. Instances of types that have the <xref:System.Runtime.Serialization.DataContractAttribute> applied to them are referred to as data contracts in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. They are serialized into XML using <xref:System.Runtime.Serialization.DataContractSerializer>.  
@@ -204,7 +203,6 @@ public class LineItem
      [DataMember]  
      public decimal UnitPrice;  
 }  
-  
 ```  
   
  The Windows software development kit (SDK) includes a command-line tool called the [ServiceModel Metadata Utility Tool (Svcutil.exe)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md).Like the xsd.exe tool used with ASP.NET Web services, Svcutil.exe can generate definitions of .NET data types from XML Schema. The types are data contracts if the <xref:System.Runtime.Serialization.DataContractSerializer> can emit XML in the format defined by the XML Schema; otherwise, they are intended for serialization using the <xref:System.Xml.Serialization.XmlSerializer>. The tool, Svcutil.exe, can also be made to generate XML Schema from data contracts using its `/dataContractOnly` switch.  
@@ -294,7 +292,6 @@ public class Service : IEcho
       </services>  
      </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The binding specifies the set of protocols for communicating with the application. The following table lists the system-provided bindings that represent common options.  
@@ -320,7 +317,6 @@ public class Service : IEcho
 ```  
 [ServiceBehavior(ConcurrencyMode=ConcurrencyMode.Multiple]  
 public class DerivativesCalculatorServiceType: IDerivativesCalculator  
-  
 ```  
   
  Some behaviors, like <xref:System.ServiceModel.ServiceBehaviorAttribute>, are attributes. Others, the ones with properties that administrators would want to set, can be modified in the configuration of an application.  
@@ -537,7 +533,6 @@ public interface IItemService
       </headers>  
      </endpoint>  
 </service>  
-  
 ```  
   
  That option allows you to avoid any reference to infrastructural protocol headers in the code for a client or service: the headers are added to messages because of how the endpoint is configured.  
@@ -548,7 +543,6 @@ public interface IItemService
  ASP.NET 2.0 made it possible to validate that a service is compliant with the Basic Profile 1.1 of the Web Services-Interoperability Organization (WS-I), and to insert a claim that the service is compliant into its WSDL. That is done using the `ConformsTo` and `EmitConformanceClaims` parameters of the <xref:System.Web.Services.WebServiceBindingAttribute> attribute.  
   
 ```  
-  
 [WebService(Namespace = "http://tempuri.org/")]  
 [WebServiceBinding(  
      ConformsTo = WsiProfiles.BasicProfile1_1,  

@@ -68,14 +68,12 @@ Before using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service
   
     ```  
     service4:address=http://localhost/MathService, binding=wsHttpBinding, bindingConfiguration=Binding1  
-  
     ```  
   
      `or`  
   
     ```  
     service4:address=http://localhost/MathService, binding=wsHttpBinding, bindingConfiguration=Binding1, contract={36ADAD5A-A944-4d5c-9B7C-967E4F00A090}  
-  
     ```  
   
      You can use either of these moniker strings from within a Visual Basic 6.0 application, after adding a reference to the assembly that contains the `IMathService` types, as shown in the following sample code.  
@@ -90,7 +88,6 @@ Before using the [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service
             bindingConfiguration=Binding1")  
   
     result = MathProxy.Add(3, 5)  
-  
     ```  
   
      In this example, the definition for the binding configuration `Binding1` is stored in a suitably named configuration file for the client application, such as vb6appname.exe.config.  

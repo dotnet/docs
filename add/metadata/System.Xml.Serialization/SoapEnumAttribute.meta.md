@@ -33,12 +33,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Xml.Serialization.SoapEnumAttribute.#ctor
-ms.technology: 
-  - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

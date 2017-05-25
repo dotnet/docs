@@ -134,15 +134,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.HashMembershipCondition.ToXml
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.HashMembershipCondition.Copy
 ms.technology: 
   - "dotnet-standard"

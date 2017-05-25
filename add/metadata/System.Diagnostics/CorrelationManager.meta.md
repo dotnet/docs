@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.CorrelationManager.StartLogicalOperation
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.CorrelationManager.LogicalOperationStack
 ms.technology: 
   - "dotnet-standard"

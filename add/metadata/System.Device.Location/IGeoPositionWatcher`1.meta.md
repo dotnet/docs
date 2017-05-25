@@ -55,13 +55,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Device.Location.IGeoPositionWatcher`1.Start
-ms.technology: 
-  - "dotnet-standard"
-manager: "martinek"
----
-
----
 uid: System.Device.Location.IGeoPositionWatcher`1.Status
 ms.technology: 
   - "dotnet-standard"

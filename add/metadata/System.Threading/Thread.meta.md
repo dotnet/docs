@@ -503,15 +503,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Thread.Abort
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Thread.#ctor(System.Threading.ThreadStart)
 ms.technology: 
   - "dotnet-standard"
@@ -629,25 +620,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Thread.Join
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Thread.VolatileWrite(System.Int16@,System.Int16)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Thread.Start
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

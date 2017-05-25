@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.NameValueCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.NameValueCollection.Item(System.String)
 ms.technology: 
   - "dotnet-standard"

@@ -183,14 +183,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintServer.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Printing.PrintServer.#ctor(System.Printing.PrintSystemDesiredAccess)
 ms.technology: 
   - "dotnet-standard"
@@ -214,14 +206,6 @@ ms.technology:
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Printing.PrintServer.GetPrintQueues
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---

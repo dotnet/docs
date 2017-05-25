@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ApplicationSettingsBase.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ApplicationSettingsBase.Reload
 ms.technology: 
   - "dotnet-standard"

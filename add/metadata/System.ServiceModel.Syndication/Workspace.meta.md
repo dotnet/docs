@@ -116,15 +116,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Workspace.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.Workspace.AttributeExtensions
 ms.technology: 
   - "dotnet-standard"

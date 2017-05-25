@@ -480,10 +480,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.PanelArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

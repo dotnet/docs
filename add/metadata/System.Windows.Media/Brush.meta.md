@@ -92,15 +92,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Brush.ToString
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Brush.RelativeTransformProperty
 ms.technology: 
   - "dotnet-wpf"

@@ -52,14 +52,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewCheckBoxColumn.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.DataGridViewCheckBoxColumn.FalseValue
 ms.technology: 
   - "dotnet-winforms"

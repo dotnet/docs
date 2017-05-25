@@ -173,12 +173,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.WebRequest.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.WebRequest.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "bobdel"
 manager: "markl"

@@ -61,14 +61,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingPoint3DKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.EasingPoint3DKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Point3D,System.Double)
 ms.technology: 
   - "dotnet-wpf"

@@ -83,21 +83,7 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementObjectSearcher.Get
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementObjectSearcher.Get(System.Management.ManagementOperationObserver)
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementObjectSearcher.#ctor
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"

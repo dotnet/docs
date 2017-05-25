@@ -179,24 +179,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.WaitHandle.WaitOne
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.WaitHandle.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.WaitHandle.Handle
 ms.technology: 
   - "dotnet-standard"

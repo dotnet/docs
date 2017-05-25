@@ -46,13 +46,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueueEnumerator.Dispose
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueueEnumerator.Close
 ms.technology: 
   - "dotnet-standard"

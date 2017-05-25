@@ -8,13 +8,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Routing.Configuration.BackupEndpointCollection.Name
 ms.technology: 
   - "dotnet-standard"

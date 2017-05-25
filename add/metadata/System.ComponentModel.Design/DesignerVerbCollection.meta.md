@@ -143,15 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.DesignerVerbCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.DesignerVerbCollection.Contains(System.ComponentModel.Design.DesignerVerb)
 ms.technology: 
   - "dotnet-standard"

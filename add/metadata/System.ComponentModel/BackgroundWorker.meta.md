@@ -125,15 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.BackgroundWorker.RunWorkerAsync
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.BackgroundWorker.RunWorkerAsync(System.Object)
 ms.technology: 
   - "dotnet-standard"

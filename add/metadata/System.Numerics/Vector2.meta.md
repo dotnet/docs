@@ -314,15 +314,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Numerics.Vector2.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Numerics.Vector2.Transform
 ms.technology: 
   - "dotnet-standard"

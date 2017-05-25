@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Hosting.InvalidPipelineStoreException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AddIn.Hosting.InvalidPipelineStoreException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

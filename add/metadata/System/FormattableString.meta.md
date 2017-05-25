@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.FormattableString.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.FormattableString.GetArgument(System.Int32)
 ms.technology: 
   - "dotnet-standard"

@@ -412,13 +412,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MaskedTextBoxArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.MaskedTextBoxArray.DragLeave
 author: "stevehoag"
 ms.author: "shoag"

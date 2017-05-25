@@ -17,14 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.DataGridViewRow.DataGridViewRowAccessibleObject.Value
 ms.technology: 
   - "dotnet-winforms"

@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeMethodInvokeExpression.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeMethodInvokeExpression.Method
 ms.technology: 
   - "dotnet-standard"

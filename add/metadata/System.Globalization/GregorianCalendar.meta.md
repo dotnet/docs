@@ -164,15 +164,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.GregorianCalendar.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Globalization.GregorianCalendar.GetDayOfMonth(System.DateTime)
 ms.technology: 
   - "dotnet-standard"

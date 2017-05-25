@@ -67,10 +67,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: Microsoft.CSharp.Activities.CSharpValue`1.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

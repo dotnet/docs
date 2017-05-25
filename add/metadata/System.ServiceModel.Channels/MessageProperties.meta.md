@@ -179,15 +179,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.MessageProperties.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.MessageProperties.Security
 ms.technology: 
   - "dotnet-standard"

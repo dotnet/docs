@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeDirectiveCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeDirectiveCollection.AddRange(System.CodeDom.CodeDirectiveCollection)
 ms.technology: 
   - "dotnet-standard"

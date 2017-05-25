@@ -87,13 +87,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.CompositeActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.CompositeActivity.OnListChanging(System.Workflow.ComponentModel.ActivityCollectionChangeEventArgs)
 author: "Erikre"
 ms.author: "erikre"

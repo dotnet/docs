@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.EditorAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.EditorAttribute.EditorBaseTypeName
 ms.technology: 
   - "dotnet-standard"

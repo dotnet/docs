@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.StringWriter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.StringWriter.Close
 ms.technology: 
   - "dotnet-standard"

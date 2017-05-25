@@ -39,12 +39,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ReadWriteControlDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.ReadWriteControlDesigner.OnComponentChanged(System.Object,System.ComponentModel.Design.ComponentChangedEventArgs)
 ms.technology: 
   - "dotnet-webforms"

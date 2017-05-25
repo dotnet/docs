@@ -187,24 +187,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.TypeDelegator.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.TypeDelegator.GetEvents
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.TypeDelegator.GetField
 ms.technology: 
   - "dotnet-standard"

@@ -926,15 +926,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Objects.SqlClient.SqlFunctions.Rand
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Objects.SqlClient.SqlFunctions.DateName(System.String,System.Nullable{System.DateTime})
 ms.technology: 
   - "dotnet-ado"
@@ -1026,15 +1017,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Objects.SqlClient.SqlFunctions.Checksum(System.Nullable{System.Double},System.Nullable{System.Double})
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Objects.SqlClient.SqlFunctions.UserName
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

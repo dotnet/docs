@@ -44,15 +44,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Linq.ObjectChangeConflict.Resolve
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Linq.ObjectChangeConflict.Object
 ms.technology: 
   - "dotnet-ado"

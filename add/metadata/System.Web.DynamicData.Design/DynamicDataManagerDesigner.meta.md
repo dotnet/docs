@@ -29,9 +29,3 @@ ms.technology:
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.DynamicData.Design.DynamicDataManagerDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----

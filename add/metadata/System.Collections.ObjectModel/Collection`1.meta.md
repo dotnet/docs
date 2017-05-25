@@ -241,15 +241,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.ObjectModel.Collection`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.ObjectModel.Collection`1.CopyTo(`0[],System.Int32)
 ms.technology: 
   - "dotnet-standard"

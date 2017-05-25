@@ -69,15 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.NetHttpsBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.NetHttpsBinding.MessageEncoding
 ms.technology: 
   - "dotnet-standard"

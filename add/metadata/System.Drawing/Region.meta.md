@@ -375,15 +375,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Region.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Region.Intersect(System.Drawing.Region)
 ms.technology: 
   - "dotnet-standard"

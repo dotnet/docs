@@ -31,14 +31,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"

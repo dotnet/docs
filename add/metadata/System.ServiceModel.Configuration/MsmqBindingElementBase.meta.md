@@ -80,15 +80,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.MsmqBindingElementBase.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.MsmqBindingElementBase.ReceiveErrorHandling
 ms.technology: 
   - "dotnet-standard"

@@ -116,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.UniqueId.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.UniqueId.ToCharArray(System.Char[],System.Int32)
 ms.technology: 
   - "dotnet-standard"

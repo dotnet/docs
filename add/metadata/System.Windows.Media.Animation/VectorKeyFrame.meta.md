@@ -84,14 +84,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.VectorKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.VectorKeyFrame.#ctor(System.Windows.Vector,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"

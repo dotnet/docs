@@ -365,12 +365,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.BuildEngine.Project.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.BuildEngine.Project.Load
 ms.author: "susanno"
 manager: "douge"
@@ -462,12 +456,6 @@ manager: "douge"
 
 ---
 uid: Microsoft.Build.BuildEngine.Project.SetProperty(System.String,System.String,System.String,Microsoft.Build.BuildEngine.PropertyPosition,System.Boolean)
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.BuildEngine.Project.Build
 ms.author: "susanno"
 manager: "douge"
 ---

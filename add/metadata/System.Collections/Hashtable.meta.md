@@ -224,15 +224,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Hashtable.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Hashtable.KeyEquals(System.Object,System.Object)
 ms.technology: 
   - "dotnet-standard"

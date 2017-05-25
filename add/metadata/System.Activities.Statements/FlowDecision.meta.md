@@ -62,15 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Statements.FlowDecision.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Statements.FlowDecision.False
 ms.technology: 
   - "dotnet-standard"

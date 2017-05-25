@@ -177,15 +177,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.NetNamedPipeBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.NetNamedPipeBinding.CreateBindingElements
 ms.technology: 
   - "dotnet-standard"

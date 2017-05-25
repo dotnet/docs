@@ -104,13 +104,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.Dispose
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.Design.WorkflowDesignerMessageFilter.OnMouseMove(System.Windows.Forms.MouseEventArgs)
 author: "Erikre"
 ms.author: "erikre"

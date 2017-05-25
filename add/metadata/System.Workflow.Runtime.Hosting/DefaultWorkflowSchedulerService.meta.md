@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.Hosting.DefaultWorkflowSchedulerService.Cancel(System.Guid)
 author: "Erikre"
 ms.author: "erikre"

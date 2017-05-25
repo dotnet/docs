@@ -651,15 +651,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.FrameworkElement.BringIntoView
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.FrameworkElement.GetVisualChild(System.Int32)
 ms.technology: 
   - "dotnet-wpf"

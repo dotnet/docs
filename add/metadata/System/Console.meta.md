@@ -323,15 +323,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Console.OpenStandardOutput
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Console.OpenStandardOutput(System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -503,15 +494,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Console.OpenStandardInput
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Console.WriteLine
 ms.technology: 
   - "dotnet-standard"
@@ -548,15 +530,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Console.ReadKey
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Console.Write(System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -576,15 +549,6 @@ manager: "wpickett"
 
 ---
 uid: System.Console.WindowTop
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Console.WriteLine
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -692,15 +656,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Console.Beep
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Console.Write(System.String,System.Object,System.Object,System.Object)
 ms.technology: 
   - "dotnet-standard"
@@ -711,15 +666,6 @@ manager: "wpickett"
 
 ---
 uid: System.Console.ResetColor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Console.OpenStandardError
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

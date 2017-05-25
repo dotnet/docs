@@ -271,14 +271,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.GrammarBuilder.AppendDictation
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -304,14 +296,6 @@ manager: "ghogen"
 
 ---
 uid: System.Speech.Recognition.GrammarBuilder.AppendRuleReference
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Recognition.GrammarBuilder.#ctor
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"

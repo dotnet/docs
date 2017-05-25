@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.StringKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.StringKeyFrame.KeyTimeProperty
 ms.technology: 
   - "dotnet-wpf"

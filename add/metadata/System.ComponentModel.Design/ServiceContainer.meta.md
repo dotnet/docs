@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.ServiceContainer.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.ServiceContainer.AddService
 ms.technology: 
   - "dotnet-standard"
@@ -126,15 +117,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Design.ServiceContainer.AddService(System.Type,System.ComponentModel.Design.ServiceCreatorCallback)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.ServiceContainer.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

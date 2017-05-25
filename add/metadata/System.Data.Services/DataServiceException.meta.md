@@ -71,15 +71,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Services.DataServiceException.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Services.DataServiceException.MessageLanguage
 ms.technology: 
   - "dotnet-ado"

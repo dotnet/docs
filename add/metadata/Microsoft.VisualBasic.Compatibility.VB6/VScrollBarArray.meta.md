@@ -132,13 +132,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.VScrollBarArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.VScrollBarArray.BindingContextChanged
 author: "stevehoag"
 ms.author: "shoag"

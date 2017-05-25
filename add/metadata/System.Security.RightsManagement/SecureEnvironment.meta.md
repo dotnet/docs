@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.RightsManagement.SecureEnvironment.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Security.RightsManagement.SecureEnvironment.IsUserActivated(System.Security.RightsManagement.ContentUser)
 ms.technology: 
   - "dotnet-standard"

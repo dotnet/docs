@@ -107,33 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AesCng.CreateDecryptor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AesCng.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AesCng.CreateEncryptor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.AesCng.#ctor(System.String,System.Security.Cryptography.CngProvider)
 ms.technology: 
   - "dotnet-standard"

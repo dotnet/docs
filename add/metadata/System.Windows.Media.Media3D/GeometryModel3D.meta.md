@@ -91,12 +91,3 @@ ms.technology:
 ms.author: "kempb"
 manager: "ghogen"
 ---
-
----
-uid: System.Windows.Media.Media3D.GeometryModel3D.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

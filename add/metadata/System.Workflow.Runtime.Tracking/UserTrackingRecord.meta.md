@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.UserTrackingRecord.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.Tracking.UserTrackingRecord.EventOrder
 author: "Erikre"
 ms.author: "erikre"

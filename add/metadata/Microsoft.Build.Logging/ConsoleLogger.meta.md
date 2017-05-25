@@ -143,12 +143,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Logging.ConsoleLogger.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Logging.ConsoleLogger.#ctor(Microsoft.Build.Framework.LoggerVerbosity,Microsoft.Build.Logging.WriteHandler,Microsoft.Build.Logging.ColorSetter,Microsoft.Build.Logging.ColorResetter)
 ms.author: "susanno"
 manager: "douge"

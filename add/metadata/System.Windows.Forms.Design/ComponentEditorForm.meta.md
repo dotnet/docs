@@ -61,15 +61,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Design.ComponentEditorForm.ShowForm
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Design.ComponentEditorForm.OnActivated(System.EventArgs)
 ms.technology: 
   - "dotnet-winforms"

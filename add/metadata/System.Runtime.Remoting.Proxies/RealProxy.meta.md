@@ -123,10 +123,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Proxies.RealProxy.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

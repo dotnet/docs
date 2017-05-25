@@ -221,14 +221,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartArea.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.ChartArea.BackImageAlignment
 ms.technology: 
   - "dotnet-webforms"

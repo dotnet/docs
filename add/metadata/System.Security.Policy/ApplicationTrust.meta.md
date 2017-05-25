@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.ApplicationTrust.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.ApplicationTrust.ExtraInfo
 ms.technology: 
   - "dotnet-standard"

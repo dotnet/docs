@@ -127,14 +127,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.CookieHandler.Read
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.CookieHandler.Domain
 ms.technology: 
   - "dotnet-standard"
@@ -176,14 +168,6 @@ manager: "markgal"
 
 ---
 uid: System.IdentityModel.Services.CookieHandler.Delete(System.String,System.Web.HttpContext)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Services.CookieHandler.Delete
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

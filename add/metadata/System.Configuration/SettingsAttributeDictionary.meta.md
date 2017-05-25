@@ -21,11 +21,3 @@ ms.technology:
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Configuration.SettingsAttributeDictionary.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----

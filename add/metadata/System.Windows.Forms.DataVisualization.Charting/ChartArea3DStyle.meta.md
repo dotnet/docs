@@ -71,14 +71,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.WallWidth
 ms.technology: 
   - "dotnet-winforms"

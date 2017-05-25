@@ -39,12 +39,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.RepeaterDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.RepeaterDesigner.DataSourceID
 ms.technology: 
   - "dotnet-webforms"

@@ -206,15 +206,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType
 ms.technology: 
   - "dotnet-standard"

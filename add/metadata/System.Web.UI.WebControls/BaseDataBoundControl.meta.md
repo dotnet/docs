@@ -125,12 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.BaseDataBoundControl.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.WebControls.BaseDataBoundControl.OnInit(System.EventArgs)
 ms.technology: 
   - "dotnet-webforms"

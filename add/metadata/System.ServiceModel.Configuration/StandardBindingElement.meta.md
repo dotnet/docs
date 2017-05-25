@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.StandardBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.StandardBindingElement.BindingElementType
 ms.technology: 
   - "dotnet-standard"

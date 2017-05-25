@@ -476,15 +476,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpRequestBase.GetBufferlessInputStream
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpRequestBase.ContentLength
 ms.technology: 
   - "dotnet-webforms"
@@ -513,15 +504,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.HttpRequestBase.Files
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.HttpRequestBase.InsertEntityBody
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

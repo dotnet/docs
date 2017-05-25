@@ -55,14 +55,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogRecord.FormatDescription
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventLogRecord.Properties
 ms.technology: 
   - "dotnet-standard"

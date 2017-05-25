@@ -17,12 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.TimerDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.TimerDesigner.#ctor
 ms.technology: 
   - "dotnet-webforms"

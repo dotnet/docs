@@ -71,14 +71,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Protocols.WSTrust.RequestSecurityTokenResponse.RequestedSecurityToken
 ms.technology: 
   - "dotnet-standard"

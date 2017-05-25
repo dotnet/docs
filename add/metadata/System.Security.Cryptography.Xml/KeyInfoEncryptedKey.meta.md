@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.KeyInfoEncryptedKey.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.KeyInfoEncryptedKey.#ctor(System.Security.Cryptography.Xml.EncryptedKey)
 ms.technology: 
   - "dotnet-standard"

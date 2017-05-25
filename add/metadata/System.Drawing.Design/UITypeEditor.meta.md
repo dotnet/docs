@@ -98,24 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Design.UITypeEditor.GetEditStyle
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Design.UITypeEditor.GetPaintValueSupported
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Design.UITypeEditor.PaintValue
 ms.technology: 
   - "dotnet-standard"

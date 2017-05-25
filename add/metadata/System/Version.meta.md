@@ -98,15 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Version.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Version.Major
 ms.technology: 
   - "dotnet-standard"
@@ -243,15 +234,6 @@ manager: "wpickett"
 
 ---
 uid: System.Version.ToString(System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Version.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

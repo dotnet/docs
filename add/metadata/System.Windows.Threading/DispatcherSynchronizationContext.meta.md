@@ -43,15 +43,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Threading.DispatcherSynchronizationContext.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Threading.DispatcherSynchronizationContext.Send(System.Threading.SendOrPostCallback,System.Object)
 ms.technology: 
   - "dotnet-wpf"

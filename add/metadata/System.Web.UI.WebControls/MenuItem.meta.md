@@ -175,14 +175,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.MenuItem.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.MenuItem.Selected
 ms.technology: 
   - "dotnet-webforms"

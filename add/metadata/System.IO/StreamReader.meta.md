@@ -240,15 +240,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.StreamReader.Read
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.StreamReader.#ctor(System.String,System.Boolean)
 ms.technology: 
   - "dotnet-standard"

@@ -69,13 +69,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.SelectQuery.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.SelectQuery.BuildQuery
 ms.technology: 
   - "dotnet-standard"

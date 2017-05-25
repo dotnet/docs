@@ -105,15 +105,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.StringReader.Read
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.StringReader.Read(System.Char[],System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"

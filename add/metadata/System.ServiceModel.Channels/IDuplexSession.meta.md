@@ -53,15 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.IDuplexSession.CloseOutputSession
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.IDuplexSession.BeginCloseOutputSession(System.TimeSpan,System.AsyncCallback,System.Object)
 ms.technology: 
   - "dotnet-standard"

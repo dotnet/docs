@@ -50,14 +50,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Annotations.Storage.AnnotationStore.Dispose
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Annotations.Storage.AnnotationStore.OnAnchorChanged(System.Windows.Annotations.AnnotationResourceChangedEventArgs)
 ms.technology: 
   - "dotnet-wpf"
@@ -67,15 +59,6 @@ manager: "ghogen"
 
 ---
 uid: System.Windows.Annotations.Storage.AnnotationStore.GetAnnotation(System.Guid)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Annotations.Storage.AnnotationStore.GetAnnotations
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

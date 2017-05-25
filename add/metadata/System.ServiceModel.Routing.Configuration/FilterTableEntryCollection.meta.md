@@ -44,13 +44,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Routing.Configuration.FilterTableEntryCollection.#ctor
 ms.technology: 
   - "dotnet-standard"

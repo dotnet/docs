@@ -880,14 +880,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStrip.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.ToolStrip.DefaultDropDownDirection
 ms.technology: 
   - "dotnet-winforms"

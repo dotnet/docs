@@ -76,13 +76,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)
 ms.technology: 
   - "dotnet-standard"

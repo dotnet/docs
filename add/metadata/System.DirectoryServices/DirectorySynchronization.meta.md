@@ -69,20 +69,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.DirectorySynchronization.ResetDirectorySynchronizationCookie
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.DirectorySynchronization.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.DirectorySynchronization.#ctor(System.DirectoryServices.DirectorySynchronizationOptions)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

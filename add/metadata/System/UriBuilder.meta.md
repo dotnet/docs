@@ -157,11 +157,3 @@ ms.technology:
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.UriBuilder.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "bobdel"
-manager: "markl"
----

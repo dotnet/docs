@@ -103,13 +103,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.System#Collections#Generic#ICollection{System#Xml#XPath#XPathItem}#IsReadOnly
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.System#Collections#Generic#ICollection{System#Xml#XPath#XPathItem}#Add
 ms.technology: 
   - "dotnet-standard"
@@ -210,15 +203,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.#ctor(System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -234,13 +218,6 @@ ms.technology:
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
----
-
----
-uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.System#Collections#Generic#ICollection{System#Xml#XPath#XPathItem}#Clear
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
 ---
 
 ---

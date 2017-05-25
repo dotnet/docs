@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.PropertyInfo.GetSetMethod
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.PropertyInfo.GetConstantValue
 ms.technology: 
   - "dotnet-standard"
@@ -144,15 +135,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.PropertyInfo.GetAccessors
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.PropertyInfo.GetGetMethod
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -297,15 +279,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.PropertyInfo.GetHashCode
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.PropertyInfo.GetAccessors
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

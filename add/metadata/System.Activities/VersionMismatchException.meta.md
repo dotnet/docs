@@ -62,15 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.VersionMismatchException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.VersionMismatchException.#ctor(System.String,System.Activities.WorkflowIdentity,System.Activities.WorkflowIdentity)
 ms.technology: 
   - "dotnet-standard"

@@ -90,13 +90,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Channels.PeerCustomResolverBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Channels.PeerCustomResolverBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
 ms.technology: 
   - "dotnet-standard"

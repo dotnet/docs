@@ -293,15 +293,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridColumnStyle.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridColumnStyle.Paint(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Brush,System.Drawing.Brush,System.Boolean)
 ms.technology: 
   - "dotnet-winforms"

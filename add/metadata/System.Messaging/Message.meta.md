@@ -223,13 +223,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.Message.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.Message.SourceMachine
 ms.technology: 
   - "dotnet-standard"

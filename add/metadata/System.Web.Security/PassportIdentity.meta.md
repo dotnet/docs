@@ -359,15 +359,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.PassportIdentity.LogoutURL
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.PassportIdentity.GetCurrentConfig(System.String)
 ms.technology: 
   - "dotnet-webforms"
@@ -387,24 +378,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Security.PassportIdentity.GetLoginChallenge(System.String)
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.PassportIdentity.LogoTag
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.PassportIdentity.GetLoginChallenge
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -450,15 +423,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Security.PassportIdentity.LogoTag(System.String)
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.PassportIdentity.LogoTag2
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"
@@ -530,15 +494,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.PassportIdentity.LoginUser
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.PassportIdentity.AuthenticationType
 ms.technology: 
   - "dotnet-webforms"
@@ -584,25 +539,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.PassportIdentity.AuthUrl
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.PassportIdentity.LoginUser(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Object)
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.PassportIdentity.AuthUrl2
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

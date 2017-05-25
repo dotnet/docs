@@ -51,9 +51,3 @@ author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.Design.WebControls.WebParts.DeclarativeCatalogPartDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----

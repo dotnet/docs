@@ -143,15 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Resources.ResXResourceWriter.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Resources.ResXResourceWriter.AddMetadata(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"

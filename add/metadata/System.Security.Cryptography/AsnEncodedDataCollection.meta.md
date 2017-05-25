@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AsnEncodedDataCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.AsnEncodedDataCollection.SyncRoot
 ms.technology: 
   - "dotnet-standard"

@@ -34,15 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Rotation3D.ToString
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.Rotation3D.System#IFormattable#ToString(System.String,System.IFormatProvider)
 ms.technology: 
   - "dotnet-wpf"

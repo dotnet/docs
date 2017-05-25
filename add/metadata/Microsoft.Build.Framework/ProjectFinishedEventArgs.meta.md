@@ -23,12 +23,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.ProjectFinishedEventArgs.#ctor(System.String,System.String,System.String,System.Boolean,System.DateTime)
 ms.author: "susanno"
 manager: "douge"

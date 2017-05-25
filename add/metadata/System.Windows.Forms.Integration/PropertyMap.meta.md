@@ -114,15 +114,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.Integration.PropertyMap.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Integration.PropertyMap.Clear
 ms.technology: 
   - "dotnet-winforms"

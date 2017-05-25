@@ -83,13 +83,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAdamInstance
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAllAdamInstances(System.String,System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -118,13 +111,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.Sites
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -133,13 +119,6 @@ manager: "mbaldwin"
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAdamInstance(System.String,System.String)
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ConfigurationSet.FindAllAdamInstances
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"

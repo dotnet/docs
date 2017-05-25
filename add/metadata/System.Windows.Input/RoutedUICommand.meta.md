@@ -35,14 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.RoutedUICommand.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Input.RoutedUICommand.Text
 ms.technology: 
   - "dotnet-wpf"

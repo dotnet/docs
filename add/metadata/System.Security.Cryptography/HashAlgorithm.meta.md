@@ -152,15 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.HashAlgorithm.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.HashAlgorithm.Create(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -207,15 +198,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.HashAlgorithm.ComputeHash(System.Byte[])
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.HashAlgorithm.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

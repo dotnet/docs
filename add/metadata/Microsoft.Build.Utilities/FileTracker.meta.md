@@ -239,12 +239,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Utilities.FileTracker.EnsureFileTrackerOnPath
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Utilities.FileTracker.FormatRootingMarker(Microsoft.Build.Framework.ITaskItem)
 ms.author: "susanno"
 manager: "douge"

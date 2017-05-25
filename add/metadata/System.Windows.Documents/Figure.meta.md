@@ -116,14 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Figure.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Documents.Figure.VerticalOffset
 ms.technology: 
   - "dotnet-wpf"

@@ -132,14 +132,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SizeAnimation.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.SizeAnimation.GetCurrentValueCore(System.Windows.Size,System.Windows.Size,System.Windows.Media.Animation.AnimationClock)
 ms.technology: 
   - "dotnet-wpf"

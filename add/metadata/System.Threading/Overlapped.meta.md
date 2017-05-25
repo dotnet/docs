@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Overlapped.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Overlapped.Pack
 ms.technology: 
   - "dotnet-standard"

@@ -111,14 +111,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DataAnnotations.ValidationAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType
 ms.technology: 
   - "dotnet-webforms"

@@ -69,15 +69,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Odbc.OdbcDataAdapter.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Odbc.OdbcDataAdapter.DeleteCommand
 ms.technology: 
   - "dotnet-ado"

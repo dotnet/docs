@@ -89,15 +89,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.ChannelListenerBase`1.AcceptChannel
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.ChannelListenerBase`1.#ctor(System.ServiceModel.IDefaultCommunicationTimeouts)
 ms.technology: 
   - "dotnet-standard"
@@ -108,15 +99,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Channels.ChannelListenerBase`1.EndAcceptChannel(System.IAsyncResult)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.ChannelListenerBase`1.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

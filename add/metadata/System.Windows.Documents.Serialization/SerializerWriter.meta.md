@@ -102,14 +102,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Documents.Serialization.SerializerWriter.CreateVisualsCollator
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Documents.Serialization.SerializerWriter.Write(System.Windows.Documents.FixedPage)
 ms.technology: 
   - "dotnet-wpf"

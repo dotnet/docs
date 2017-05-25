@@ -368,15 +368,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IO.Log.LogRecordSequence.Flush
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IO.Log.LogRecordSequence.WriteRestartArea(System.ArraySegment{System.Byte})
 ms.technology: 
   - "dotnet-standard"

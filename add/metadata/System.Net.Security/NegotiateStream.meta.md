@@ -95,12 +95,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Security.NegotiateStream.AuthenticateAsServerAsync
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Security.NegotiateStream.EndWrite(System.IAsyncResult)
 ms.author: "bobdel"
 manager: "markl"
@@ -126,12 +120,6 @@ manager: "markl"
 
 ---
 uid: System.Net.Security.NegotiateStream.EndAuthenticateAsClient(System.IAsyncResult)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Security.NegotiateStream.AuthenticateAsClientAsync
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -210,12 +198,6 @@ manager: "markl"
 
 ---
 uid: System.Net.Security.NegotiateStream.CanWrite
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Security.NegotiateStream.AuthenticateAsServer
 ms.author: "bobdel"
 manager: "markl"
 ---
@@ -376,12 +358,6 @@ manager: "markl"
 
 ---
 uid: System.Net.Security.NegotiateStream.BeginAuthenticateAsServer
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Security.NegotiateStream.AuthenticateAsClient
 ms.author: "bobdel"
 manager: "markl"
 ---

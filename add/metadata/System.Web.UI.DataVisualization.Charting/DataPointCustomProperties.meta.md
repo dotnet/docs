@@ -295,14 +295,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.ToolTip
 ms.technology: 
   - "dotnet-webforms"

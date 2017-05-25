@@ -26,15 +26,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.ComUdtElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.ComUdtElement.TypeLibVersion
 ms.technology: 
   - "dotnet-standard"

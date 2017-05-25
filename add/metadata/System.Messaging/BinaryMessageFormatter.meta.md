@@ -27,13 +27,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.BinaryMessageFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.BinaryMessageFormatter.Read(System.Messaging.Message)
 ms.technology: 
   - "dotnet-standard"

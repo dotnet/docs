@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Immutable.ImmutableStack`1.Pop
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Immutable.ImmutableStack`1.Peek
 author: "mairaw"
 ms.author: "mairaw"

@@ -539,18 +539,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Construction.ProjectRootElement.Save
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Construction.ProjectRootElement.Create
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Construction.ProjectRootElement.Imports
 ms.author: "susanno"
 manager: "douge"

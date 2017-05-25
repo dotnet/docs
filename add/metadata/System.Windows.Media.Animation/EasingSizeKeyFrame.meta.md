@@ -61,14 +61,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingSizeKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.EasingSizeKeyFrame.#ctor(System.Windows.Size)
 ms.technology: 
   - "dotnet-wpf"

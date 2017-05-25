@@ -44,13 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentDescription.#ctor(System.Byte[])
 ms.technology: 
   - "dotnet-standard"

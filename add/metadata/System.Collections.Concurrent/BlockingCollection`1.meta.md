@@ -186,15 +186,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Concurrent.BlockingCollection`1.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Concurrent.BlockingCollection`1.TryTake(`0@)
 ms.technology: 
   - "dotnet-standard"
@@ -313,24 +304,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Concurrent.BlockingCollection`1.GetConsumingEnumerable
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Concurrent.BlockingCollection`1.GetConsumingEnumerable
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Concurrent.BlockingCollection`1.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -482,15 +455,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Concurrent.BlockingCollection`1.TryTakeFromAny
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Concurrent.BlockingCollection`1.Take
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

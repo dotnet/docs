@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.ThrowActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.ThrowActivity.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

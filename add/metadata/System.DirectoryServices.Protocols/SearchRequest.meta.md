@@ -69,13 +69,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.SearchRequest.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.SearchRequest.Attributes
 author: "BrucePerlerMS"
 ms.author: "bruceper"

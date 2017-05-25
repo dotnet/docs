@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.CompensateActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.CompensateActivity.TargetActivityName
 author: "Erikre"
 ms.author: "erikre"

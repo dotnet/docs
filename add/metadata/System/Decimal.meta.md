@@ -242,15 +242,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Decimal.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Decimal.GetTypeCode
 ms.technology: 
   - "dotnet-standard"

@@ -341,15 +341,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbDataReader.Dispose
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbDataReader.RecordsAffected
 ms.technology: 
   - "dotnet-ado"
@@ -494,15 +485,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbDataReader.NextResultAsync
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbDataReader.GetTextReader(System.Int32)
 ms.technology: 
   - "dotnet-ado"
@@ -513,15 +495,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbDataReader.Read
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbDataReader.ReadAsync
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

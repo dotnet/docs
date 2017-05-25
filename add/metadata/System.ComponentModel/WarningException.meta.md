@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.WarningException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.WarningException.HelpUrl
 ms.technology: 
   - "dotnet-standard"

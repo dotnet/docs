@@ -55,13 +55,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllProperties
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.GetDirectoryEntry
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -70,13 +63,6 @@ manager: "mbaldwin"
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindDefunctProperty(System.String)
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchema.FindAllClasses
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"

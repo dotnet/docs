@@ -53,15 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.CustomBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.CustomBinding.Scheme
 ms.technology: 
   - "dotnet-standard"

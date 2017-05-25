@@ -42,14 +42,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteMatrixKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.DiscreteMatrixKeyFrame.#ctor(System.Windows.Media.Matrix)
 ms.technology: 
   - "dotnet-wpf"

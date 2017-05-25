@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.DSA.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.DSA.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[],System.Security.Cryptography.HashAlgorithmName)
 ms.technology: 
   - "dotnet-standard"

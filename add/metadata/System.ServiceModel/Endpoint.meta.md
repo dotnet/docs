@@ -89,15 +89,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Endpoint.GetAddress
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Endpoint.Name
 ms.technology: 
   - "dotnet-standard"

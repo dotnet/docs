@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.CompilerServices.RuntimeOps.ExpandoTrySetValue(System.Dynamic.ExpandoObject,System.Object,System.Int32,System.Object,System.String,System.Boolean)
 ms.technology: 
   - "dotnet-standard"

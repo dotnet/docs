@@ -530,15 +530,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Assembly.GetModules
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Assembly.SecurityRuleSet
 ms.technology: 
   - "dotnet-standard"
@@ -648,15 +639,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.Assembly.LoadFile
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Assembly.GetFiles
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -791,15 +773,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Assembly.GetLoadedModules
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Assembly.GetCustomAttributesData
 ms.technology: 
   - "dotnet-standard"
@@ -873,15 +846,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.Assembly.GetFiles(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Assembly.GetName
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

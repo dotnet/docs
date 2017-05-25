@@ -152,15 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Packaging.PackageProperties.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.IO.Packaging.PackageProperties.Created
 ms.technology: 
   - "dotnet-standard"

@@ -57,12 +57,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.MultipartContent.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Http.MultipartContent.#ctor(System.String,System.String)
 ms.author: "bobdel"
 manager: "markl"

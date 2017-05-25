@@ -17,15 +17,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.MissingPrimaryKeyException.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.MissingPrimaryKeyException.#ctor(System.String)
 ms.technology: 
   - "dotnet-ado"

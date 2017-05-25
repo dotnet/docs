@@ -17,14 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Controls.Ribbon.RibbonDismissPopupEventArgs.DismissMode
 ms.technology: 
   - "dotnet-wpf"

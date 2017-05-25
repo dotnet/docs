@@ -71,13 +71,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Routing.Configuration.NamespaceElementCollection.Clear
 ms.technology: 
   - "dotnet-standard"

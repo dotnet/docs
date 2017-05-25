@@ -8,14 +8,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.TimelineGroup.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.TimelineGroup.AddText(System.String)
 ms.technology: 
   - "dotnet-wpf"
@@ -35,15 +27,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.Animation.TimelineGroup.#ctor(System.Nullable{System.TimeSpan})
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.TimelineGroup.CreateClock
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

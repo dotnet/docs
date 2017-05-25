@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.#ctor(System.Boolean)
 ms.technology: 
   - "dotnet-webforms"

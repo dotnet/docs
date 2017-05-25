@@ -29,11 +29,3 @@ ms.technology:
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.HttpUnhandledException.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----

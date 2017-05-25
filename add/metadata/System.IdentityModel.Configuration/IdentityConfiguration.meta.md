@@ -175,14 +175,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Configuration.IdentityConfiguration.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Configuration.IdentityConfiguration.IssuerTokenResolver
 ms.technology: 
   - "dotnet-standard"

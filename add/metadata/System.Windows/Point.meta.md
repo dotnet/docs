@@ -186,15 +186,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Point.ToString
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Point.op_Equality(System.Windows.Point,System.Windows.Point)
 ms.technology: 
   - "dotnet-wpf"

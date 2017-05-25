@@ -1,5 +1,5 @@
 ---
-title: C# Expressions | A tour of the C# language
+title: C# Expressions - A tour of the C# language | Microsoft Docs
 description: expressions, operands, and operators are building blocks of the C# language
 keywords: .NET, csharp, expression, operator, operand
 author: BillWagner

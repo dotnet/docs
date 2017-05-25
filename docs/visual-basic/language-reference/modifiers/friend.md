@@ -54,7 +54,7 @@ Specifies that one or more declared programming elements are accessible only fro
   
  You can use the `Friend` modifier in conjunction with the [Protected](../../../visual-basic/language-reference/modifiers/protected.md) modifier in the same declaration. This combination confers both `Friend` access and protected access on the declared elements, so they are accessible from anywhere in the same assembly, from their own class, and from derived classes. You can specify `Protected Friend` only on members of classes.  
   
- For a comparison of `Friend` and the other access modifiers, see [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+ For a comparison of `Friend` and the other access modifiers, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
 > [!NOTE]
 >  You can specify that another assembly is a friend assembly, which allows it to access all types and members that are marked as `Friend`. For more information, see [Friend Assemblies](http://msdn.microsoft.com/library/df0c70ea-2c2a-4bdc-9526-df951ad2d055).  
@@ -98,7 +98,7 @@ Specifies that one or more declared programming elements are accessible only fro
  [Public](../../../visual-basic/language-reference/modifiers/public.md)   
  [Protected](../../../visual-basic/language-reference/modifiers/protected.md)   
  [Private](../../../visual-basic/language-reference/modifiers/private.md)   
- [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
+ [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

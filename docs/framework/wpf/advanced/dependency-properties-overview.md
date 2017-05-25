@@ -30,7 +30,7 @@ manager: "wpickett"
   
 <a name="prerequisites"></a>   
 ## Prerequisites  
- This topic assumes that you have some basic knowledge of the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] and object-oriented programming. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. For more information, see [Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).  
+ This topic assumes that you have some basic knowledge of the [!INCLUDE[TLA2#tla_clr](../../../../includes/tla2sharptla-clr-md.md)] and object-oriented programming. In order to follow the examples in this topic, you should also understand [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] and know how to write [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications. For more information, see [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md).  
   
 <a name="why_dependency_properties"></a>   
 ## Dependency Properties and CLR Properties  

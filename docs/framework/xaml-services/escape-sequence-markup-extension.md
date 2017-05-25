@@ -12,11 +12,11 @@ ms.topic: "article"
 f1_keywords: 
   - "{}"
 helpviewer_keywords: 
-  - "XAML [XAML Services], quotation mark (")"
+  - "XAML [XAML Services], quotation mark (\")"
   - "{} escape sequence [XAML Services]"
   - "XAML [XAML Services], {} escape sequence"
   - "XAML [XAML Services], escape sequence"
-  - "quotation mark (") [XAML Services]"
+  - "quotation mark (\") [XAML Services]"
   - "escape sequence [XAML Services]"
 ms.assetid: 3ce3e2ad-a868-43f9-9c98-b29561cb146e
 caps.latest.revision: 21

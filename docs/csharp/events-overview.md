@@ -1,5 +1,5 @@
 ---
-title: Introduction to Events
+title: Introduction to Events | Microsoft Docs
 description: Introduction to Events
 keywords: .NET, .NET Core
 author: BillWagner

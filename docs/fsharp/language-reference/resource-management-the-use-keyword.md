@@ -1,5 +1,5 @@
 ---
-title: "Resource Management: The use Keyword (F#)"
+title: "Resource Management: The use Keyword (F#) | Microsoft Docs"
 description: "Resource Management: The use Keyword (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

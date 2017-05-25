@@ -1,5 +1,5 @@
 ---
-title: "Handle null values in query expressions"
+title: Handle null values in query expressions | Microsoft Docs
 description: How to handle null values in query expressions.
 keywords: .NET, .NET Core, C#
 author: BillWagner

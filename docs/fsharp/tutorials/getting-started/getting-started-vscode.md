@@ -1,5 +1,5 @@
 ---
-title: Getting Started with F# in Visual Studio Code with Ionide
+title: Getting Started with F# in Visual Studio Code with Ionide | Microsoft Docs
 description: Learn how to use F# with Visual Studio Code and the Ionide plugin suite.
 keywords: visual f#, f#, functional programming, .NET, Visual Studio Code, vscode, Ionide
 author: cartermp

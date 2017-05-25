@@ -1,5 +1,5 @@
 ---
-title: Lists (F#)
+title: Lists (F#) | Microsoft Docs
 description: Lists (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

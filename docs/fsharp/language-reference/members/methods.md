@@ -1,5 +1,5 @@
 ---
-title: Methods (F#)
+title: Methods (F#) | Microsoft Docs
 description: Methods (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -45,6 +45,10 @@ default member [inline] self-identifier.method-nameparameter-list[ : return-type
 [ attributes ]
 override member [inline] self-identifier.method-nameparameter-list [ : return-type ]=
     method-body
+
+// Optional and DefaultParameterValue attributes on input parameters
+[ attributes ]
+[ modifier ] member [inline] self-identifier.method-name ([<Optional; DefaultParameterValue([ default-value ])>] input) [ : return-type ]
 ```
 
 ## Remarks
@@ -95,6 +99,18 @@ The following example illustrates a derived class that overrides a base class me
 
 ## Overloaded Methods
 Overloaded methods are methods that have identical names in a given type but that have different arguments. In F#, optional arguments are usually used instead of overloaded methods. However, overloaded methods are permitted in the language, provided that the arguments are in tuple form, not curried form.
+
+## Optional Arguments
+
+Starting with F# 4.1, you can also have optional arguments with a default parameter value in methods.  This is to help facilitate interoperation with C# code.  The following example demonstrates the syntax:
+
+```fsharp
+// A class with a method M, which takes in an optional integer argument.
+type C() =
+    __.M([<Optional; DefaultParameterValue(12)>] i) = i + 1
+```
+
+Note that the value passed in for `DefaultParameterValue` must match the input type.  In the above sample, it is an `int`.  Attempting to pass a non-integer value into `DefaultParameterValue` would result in a compile error.
 
 ## Example: Properties and Methods
 The following example contains a type that has examples of fields, private functions, properties, and a static method.

@@ -210,6 +210,6 @@ public static void Test()
 ```  
   
 ## See Also  
- [Generics](https://msdn.microsoft.com/library/ms172192)   
+ [Generics](~/docs/standard/generics/index.md)   
  [Using Variance for Func and Action Generic Delegates (C#)](../../../../csharp/programming-guide/concepts/covariance-contravariance/using-variance-for-func-and-action-generic-delegates.md)   
  [How to: Combine Delegates (Multicast Delegates)](../../../../csharp/programming-guide/delegates/how-to-combine-delegates-multicast-delegates.md)

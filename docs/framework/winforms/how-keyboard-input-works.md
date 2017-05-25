@@ -66,7 +66,7 @@ Windows Forms processes keyboard input by raising keyboard events in response to
 |<xref:System.Windows.Forms.Control.ProcessKeyEventArgs%2A>|This method raises the <xref:System.Windows.Forms.Control.KeyDown>, <xref:System.Windows.Forms.Control.KeyPress>, and <xref:System.Windows.Forms.Control.KeyUp> events, as appropriate.|  
   
 ## Overriding Keyboard Methods  
- There are many methods available for overriding when a keyboard message is preprocessed and processed; however, some methods are much better choices than others. Following table shows tasks you might want to accomplish and the best way to override the keyboard methods. For more information on overriding methods, see [NOT IN BUILD: Overriding Properties and Methods](http://msdn.microsoft.com/en-us/2167e8f5-1225-4b13-9ebd-02591ba90213).  
+ There are many methods available for overriding when a keyboard message is preprocessed and processed; however, some methods are much better choices than others. Following table shows tasks you might want to accomplish and the best way to override the keyboard methods. For more information on overriding methods, see [Overriding properties and methods in derived classes](~/docs/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics.md#overriding-properties-and-methods-in-derived-classes).  
   
 |Task|Method|  
 |----------|------------|  

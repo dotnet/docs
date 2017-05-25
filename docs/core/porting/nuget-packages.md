@@ -1,5 +1,5 @@
 ---
-title: Porting to .NET Core - NuGet packages
+title: Porting to .NET Core - NuGet packages | Microsoft Docs
 description: Porting to .NET Core - NuGet packages
 keywords: .NET, .NET Core
 ms.date: 06/20/2016

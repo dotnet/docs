@@ -10,7 +10,7 @@ Public Class Form1
     
     Protected Sub Method()
         ' <Snippet1>
-        Dim hostInfo As IPHostEntry = Dns.GetHostByName("www.contoso.com")
+        Dim hostInfo As IPHostEntry = Dns.GetHostEntry("www.contoso.com")
         ' </Snippet1>
     End Sub 'Method 
 End Class 'Form1 

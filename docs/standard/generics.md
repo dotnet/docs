@@ -1,5 +1,5 @@
 ---
-title: Generic Types (Generics) Overview
+title: Generic Types (Generics) Overview | Microsoft Docs
 description: Generic Types (Generics) Overview
 keywords: .NET, .NET Core
 author: kuhlenh

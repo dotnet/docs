@@ -1,5 +1,5 @@
 ---
-title: Samples and tutorials
+title: Samples and tutorials | Microsoft Docs
 description: Information on samples and tutorials for .NET Core, ASP.NET Core, and the C# language that help you learn about .NET.
 keywords: .NET, .NET Core, ASP.NET, C#, sample, tutorial
 author: BillWagner

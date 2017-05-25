@@ -255,7 +255,7 @@ manager: "wpickett"
  For additional information on creating [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications with localizable [!INCLUDE[TLA#tla_ui#plural](../../../../includes/tlasharptla-uisharpplural-md.md)]s, see the [Use Automatic Layout Overview](../../../../docs/framework/wpf/advanced/use-automatic-layout-overview.md).  
   
 ## See Also  
- [Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)   
+ [Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)   
  [WPF Layout Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160054)   
  [Layout](../../../../docs/framework/wpf/advanced/layout.md)   
  [WPF Controls Gallery Sample](http://go.microsoft.com/fwlink/?LinkID=160053)   

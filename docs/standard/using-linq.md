@@ -1,5 +1,5 @@
 ---
-title: LINQ (Language Integrated Query)
+title: LINQ (Language Integrated Query) | Microsoft Docs
 description: LINQ (Language Integrated Query)
 keywords: .NET, .NET Core
 author: cartermp

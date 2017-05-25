@@ -1,5 +1,5 @@
 ---
-title: Tour of F#
+title: Tour of F# | Microsoft Docs
 description: Tour of F# 
 keywords: visual f#, f#, functional programming, .NET, tour
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: Signatures (F#)
+title: Signatures (F#) | Microsoft Docs
 description: Signatures (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -27,7 +27,7 @@ One of the most common scenarios for using the <xref:System.Windows.Forms.DataGr
   
  Implementing a master/detail form is easy using the interaction between the <xref:System.Windows.Forms.DataGridView> control and the <xref:System.Windows.Forms.BindingSource> component. In this walkthrough, you will build the form using two <xref:System.Windows.Forms.DataGridView> controls and two <xref:System.Windows.Forms.BindingSource> components. The form will show two related tables in the Northwind SQL Server sample database: `Customers` and `Orders`. When you are finished, you will have a form that shows all the customers in the database in the master <xref:System.Windows.Forms.DataGridView> and all the orders for the selected customer in the detail <xref:System.Windows.Forms.DataGridView>.  
   
- To copy the code in this topic as a single listing, see [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/99f6e876-3f7f-4139-9063-e36587c95b02.md).  
+ To copy the code in this topic as a single listing, see [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/create-a-master-detail-form-using-two-datagridviews.md).  
   
 ## Prerequisites  
  In order to complete this walkthrough, you will need:  
@@ -84,5 +84,5 @@ One of the most common scenarios for using the <xref:System.Windows.Forms.DataGr
  <xref:System.Windows.Forms.DataGridView>   
  <xref:System.Windows.Forms.BindingSource>   
  [Displaying Data in the Windows Forms DataGridView Control](../../../../docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md)   
- [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/99f6e876-3f7f-4139-9063-e36587c95b02.md)   
+ [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](../../../../docs/framework/winforms/controls/create-a-master-detail-form-using-two-datagridviews.md)   
  [Protecting Connection Information](../../../../docs/framework/data/adonet/protecting-connection-information.md)

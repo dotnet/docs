@@ -1,5 +1,5 @@
 ---
-title: Structures (F#)
+title: Structures (F#) | Microsoft Docs
 description: Structures (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -49,6 +49,10 @@ Attributes and accessibility modifiers are allowed on structures, and follow the
 The following code examples illustrate structure definitions.
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/lang-ref-1/snippet2501.fs)]
+
+## Struct Records and Discriminated Unions
+
+Starting with F# 4.1, you can represent [Records](records.md) and [Discriminated Unions](discriminated-unions.md) as structs with the `[<Struct>]` attribute.  See each article to learn more.
     
 ## See Also
 [F# Language Reference](index.md)

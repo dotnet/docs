@@ -1,5 +1,5 @@
 ---
-title: Asynchronous UI Programming | C# Guide
+title: Asynchronous UI Programming - C# Guide | Microsoft Docs
 description: Learn techniques for keeping the UI responsive while a programming is working on asynchronous operations
 keywords: C#, UWP, XAML
 ms.date: 08/24/2016

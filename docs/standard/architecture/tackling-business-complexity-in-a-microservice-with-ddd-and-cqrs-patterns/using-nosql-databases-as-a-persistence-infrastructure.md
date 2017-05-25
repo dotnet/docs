@@ -26,7 +26,7 @@ When you design your domain model based on aggregates, moving to NoSQL and docum
 
 For instance, the following JSON code is a sample implementation of an order aggregate when using a document-oriented database. It is similar to the order aggregate we implemented in the eShopOnContainers sample, but without using EF Core underneath.
 
-  ------------------------------------------------------------------------
+```
   {
   
   "id": "2017001",
@@ -66,11 +66,11 @@ For instance, the following JSON code is a sample implementation of an order agg
   \]
   
   }
-  ------------------------------------------------------------------------
+```
 
 When you use a C\# model to implement the aggregate to be used by something like the Azure Document DB SDK, the aggregate is similar to the C\# POCO classes used with EF Core. The difference is in the way to use them from the application and infrastructure layers, as in the following code:
 
-  ------------------------------------------------------------------------------------
+```
   // C\# EXAMPLE OF AN ORDER AGGREGATE BEING PERSISTED WITH DOCUMENTDB API
   
   **// \*\*\* Domain Model Code \*\*\***
@@ -176,7 +176,7 @@ When you use a C\# model to implement the aggregate to be used by something like
   Order2 newOrder = GetOrderV2Sample("IdForSalesOrder2");
   
   await client.CreateDocumentAsync(collectionUri, newOrder);
-  ------------------------------------------------------------------------------------
+```
 
 You can see that the way you work with your domain model can be similar to the way you use it in your domain model layer when the infrastructure is EF. You still use the same aggregate root methods to ensure consistency, invariants, and validations within the aggregate.
 

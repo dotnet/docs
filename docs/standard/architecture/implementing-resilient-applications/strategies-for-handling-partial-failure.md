@@ -53,7 +53,7 @@ For Azure SQL DB, Entity Framework Core already provides internal database conne
 
 For instance, the following code at the EF Core connection level enables resilient SQL connections that are retried if the connection fails.
 
-  ------------------------------------------------------------------------
+```
   // Startup.cs from any ASP.NET Core Web API
   
   public class Startup
@@ -93,7 +93,7 @@ For instance, the following code at the EF Core connection level enables resilie
   }
   
   //...
-  ------------------------------------------------------------------------
+```
 
 #### Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts
 
@@ -105,7 +105,7 @@ However, if your code initiates a transaction using BeginTransaction, you are de
 
 The solution is to manually invoke the EF execution strategy with a delegate representing everything that needs to be executed. If a transient failure occurs, the execution strategy will invoke the delegate again. For example, the following code show how it is implemented in eShopOnContainers with two multiple DbContexts (\_catalogContext and the IntegrationEventLogContext) when updating a product and then saving the ProductPriceChangedIntegrationEvent object, which needs to use a different DbContext.
 
-  ---------------------------------------------------------------------------------
+```
   public async Task&lt;IActionResult&gt; UpdateProduct(\[FromBody\]CatalogItem
   
   productToUpdate)
@@ -155,7 +155,7 @@ The solution is to manually invoke the EF execution strategy with a delegate rep
   }
   
   **});**
-  ---------------------------------------------------------------------------------
+```
 
 The first DbContext is \_catalogContext and the second DbContext is within the \_integrationEventLogService object. The Commit action is performed across multiple DbContexts using an EF execution strategy.
 
@@ -178,7 +178,7 @@ In addition to handling temporal resource unavailability, the exponential backof
 
 As an initial exploration, you could implement your own code with a utility class for exponential backoff as in [RetryWithExponentialBackoff.cs](https://gist.github.com/CESARDELATORRE/6d7f647b29e55fdc219ee1fd2babb260), plus code like the following (which is also available on a [GitHub repo](https://gist.github.com/CESARDELATORRE/d80c6423a1aebaffaf387469f5194f5b)).
 
-  ------------------------------------------------------------------------------------
+```
   public sealed class RetryWithExponentialBackoff
   
   {
@@ -304,11 +304,11 @@ As an initial exploration, you could implement your own code with a utility clas
   }
   
   }
-  ------------------------------------------------------------------------------------
+```
 
 Using this code in a client C\# application (another Web API client microservice, an ASP.NET MVC application, or even a C\# Xamarin application) is straightforward. The following example shows how, using the HttpClient class.
 
-  --------------------------------------------------------------------------------------------
+```
   public async Task&lt;Catalog&gt; GetCatalogItems(int page,int take, int? brand, int? type)
   
   {
@@ -346,7 +346,7 @@ Using this code in a client C\# application (another Web API client microservice
   return JsonConvert.DeserializeObject&lt;Catalog&gt;(dataString);
   
   }
-  --------------------------------------------------------------------------------------------
+```
 
 However, this code is suitable only as a proof of concept. The next section explains how to use more sophisticated and proven libraries.
 
@@ -360,7 +360,7 @@ The Retry policy in Polly is the approach used in eShopOnContainers when impleme
 
 The following example shows the interface implemented in eShopOnContainers.
 
-  -------------------------------------------------------------------------------------
+```
   public interface **IHttpClient**
   
   {
@@ -384,11 +384,11 @@ The following example shows the interface implemented in eShopOnContainers.
   // Other methods ...
   
   }
-  -------------------------------------------------------------------------------------
+```
 
 You can use the standard implementation if you do not want to use a resilient mechanism, as when you are developing or testing simpler approaches. The following code shows the standard HttpClient implementation allowing requests with authentication tokens as an optional case.
 
-  -----------------------------------------------------------------------------------------
+```
   public class **StandardHttpClient** : IHttpClient
   
   {
@@ -442,11 +442,11 @@ You can use the standard implementation if you do not want to use a resilient me
   {
   
   // Rest of the code and other Http methods ...
-  -----------------------------------------------------------------------------------------
+```
 
 The interesting implementation is to code another, similar class, but using Polly to implement the resilient mechanisms you want to use—in the following example, retries with exponential backoff.
 
-  ----------------------------------------------------------------------------------
+```
   public class ResilientHttpClient : IHttpClient
   
   {
@@ -514,7 +514,7 @@ The interesting implementation is to code another, similar class, but using Poll
   // ...
   
   }
-  ----------------------------------------------------------------------------------
+```
 
 With Polly, you define a Retry policy with the number of retries, the exponential backoff configuration, and the actions to take when there is an HTTP exception, such as logging the error. In this case, the policy is configured so it will try the number of times specified when registering the types in the IoC container. Because of the exponential backoff configuration, whenever the code detects an HttpRequest exception, it retries the Http request after waiting an amount of time that increases exponentially depending on how the policy was configured.
 
@@ -522,7 +522,7 @@ The important method is HttpInvoker, which is what makes HTTP requests throughou
 
 In eShopOnContainers you specify Polly policies when registering the types at the IoC container, as in the following code from the [MVC web app at the startup.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Web/WebMVC/Startup.cs) class.
 
-  ----------------------------------------------------------------------------------
+```
   // Startup.cs class
   
   if (Configuration.GetValue&lt;string&gt;("UseResilientHttp") == bool.TrueString)
@@ -550,13 +550,13 @@ In eShopOnContainers you specify Polly policies when registering the types at th
   **services.AddSingleton&lt;IHttpClient, StandardHttpClient&gt;();**
   
   }
-  ----------------------------------------------------------------------------------
+```
 
 Note that the IHttpClient objects are instantiated as singleton instead of as transient so that TCP connections are used efficiently by the service and [an issue with sockets](https://aspnetmonsters.com/2016/08/2016-08-27-httpclientwrong/) will not occur.
 
 But the important point about resiliency is that you apply the Polly WaitAndRetryAsync policy within ResilientHttpClientFactory in the CreateResilientHttpClient method, as shown in the following code:
 
-  ---------------------------------------------------------------------
+```
   public ResilientHttpClient CreateResilientHttpClient()
   
   =&gt; new ResilientHttpClient(CreatePolicies(), \_logger);
@@ -604,7 +604,7 @@ But the important point about resiliency is that you apply the Polly WaitAndRetr
   }),
   
   }
-  ---------------------------------------------------------------------
+```
 
 ## Implementing the Circuit Breaker pattern
 
@@ -624,7 +624,7 @@ The eShopOnContainers application uses the Polly Circuit Breaker policy when imp
 
 The only addition here to the code used for HTTP call retries is the code where you add the Circuit Breaker policy to the list of policies to use, as shown at the end of the following code:
 
-  ---------------------------------------------------------------------
+```
   public ResilientHttpClient CreateResilientHttpClient()
   
   =&gt; new ResilientHttpClient(CreatePolicies(), \_logger);
@@ -702,7 +702,7 @@ The only addition here to the code used for HTTP call retries is the code where 
   })};
   
   }
-  ---------------------------------------------------------------------
+```
 
 The code adds a policy to the HTTP wrapper. That policy defines a circuit breaker that opens when the code detects the specified number of consecutive exceptions (exceptions in a row), as passed in the exceptionsAllowedBeforeBreaking parameter (5 in this case). When the circuit is open, HTTP requests do not work, but an exception is raised.
 
@@ -714,7 +714,7 @@ Of course, all those features are for cases where you are managing the failover 
 
 You use the ResilientHttpClient utility class in a way similar to how you use the .NET HttpClient class. In the following example from the eShopOnContainers MVC web application (the OrderingService agent class used by OrderController), the ResilientHttpClient object is injected through the httpClient parameter of the constructor. Then the object is used to perform HTTP requests.
 
-  ------------------------------------------------------------------------------------
+```
   public class **OrderingService : IOrderingService**
   
   {
@@ -800,7 +800,7 @@ You use the ResilientHttpClient utility class in a way similar to how you use th
   }
   
   }
-  ------------------------------------------------------------------------------------
+```
 
 Whenever the \_apiClient member object is used, it internally uses the wrapper class with Polly policiesؙ—the Retry policy, the Circuit Breaker policy, and any other policy that you might want to apply from the Polly policies collection.
 
@@ -850,7 +850,7 @@ Once the middleware is running, you can try making an order from the MVC web app
 
 In the following example, you can see that the MVC web application has a catch block in the logic for placing an order. If the code catches an open-circuit exception, it shows the user a friendly message telling them to wait.
 
-  ---------------------------------------------------------------------------
+```
   \[HttpPost\]
   
   public async Task&lt;IActionResult&gt; Create(Order model, string action)
@@ -890,7 +890,7 @@ In the following example, you can see that the MVC web application has a catch b
   return View(model);
   
   }
-  ---------------------------------------------------------------------------
+```
 
 Here’s a summary. The Retry policy tries several times to make the HTTP request and gets HTTP errors. When the number of tries reaches the maximum number set for the Circuit Breaker policy (in this case, 5), the application throws a BrokenCircuitException. The result is a friendly message, as shown in Figure 10-5.
 
@@ -906,7 +906,7 @@ Finally, another possibility for the CircuitBreakerPolicy is to use Isolate (whi
 
 A regular Retry policy can impact your system in cases of high concurrency and scalability and under high contention. To overcome peaks of similar retries coming from many clients in case of partial outages, a good workaround is to add a jitter strategy to the retry algorithm/policy. This can improve the overall performance of the end-to-end system by adding randomness to the exponential backoff. This spreads out the spikes when issues arise. When you use Polly, code to implement jitter could look like the following example:
 
-  --------------------------------------------------------------------
+```
   Random jitterer = new Random();
   
   Policy
@@ -920,7 +920,7 @@ A regular Retry policy can impact your system in cases of high concurrency and s
   + TimeSpan.FromMilliseconds(jitterer.Next(0, 100))
   
   );
-  --------------------------------------------------------------------
+```
 
 ### Additional resources
 

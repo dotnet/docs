@@ -114,7 +114,7 @@ Note that the Buyer aggregate could have additional child entities, depending on
 
 In order to maintain separation of aggregates and keep clear boundaries between them, it is a good practice in a DDD domain model to disallow direct navigation between aggregates and only having the foreign key (FK) field, as implemented in the [Ordering microservice domain model](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Order.cs) in eShopOnContainers. The Order entity only has a FK field for the buyer, but not an EF Core navigation property, as shown in the following code:
 
-  -------------------------------------------------------------------------
+```
   public class Order : Entity, IAggregateRoot
   
   {
@@ -126,7 +126,7 @@ In order to maintain separation of aggregates and keep clear boundaries between 
   **private int? \_buyerId;** //FK pointing to a different aggregate root
   
   public OrderStatus OrderStatus { get; private set; }
-  -------------------------------------------------------------------------
+```
 
 Identifying and working with aggregates requires research and experience. For more information, see the following Additional resources list.
 

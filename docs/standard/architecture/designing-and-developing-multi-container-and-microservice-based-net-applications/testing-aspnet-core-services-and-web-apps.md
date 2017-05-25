@@ -32,7 +32,7 @@ Unit tests are implemented based on test frameworks like xUnit.net, MSTest, Moq,
 
 When you write a unit test for a Web API controller, you instantiate the controller class directly using the new keyword in C\#, so that the test will run as fast as possible. The following example shows how to do this when using [XUnit](https://xunit.github.io/) as the Test framework.
 
-  -------------------------------------------------------------------------------
+```
   \[Fact\]
   
   public void Add\_new\_Order\_raises\_new\_event()
@@ -62,7 +62,7 @@ When you write a unit test for a Web API controller, you instantiate the control
   Assert.Equal(fakeOrder.DomainEvents.Count, expectedResult);
   
   }
-  -------------------------------------------------------------------------------
+```
 
 ### Implementing integration and functional tests for each microservice
 
@@ -78,7 +78,7 @@ ASP.NET Core includes a built-in test web host that can be used to handle HTTP r
 
 As you can see in the following code, when you create integration tests for ASP.NET Core controllers, you instantiate the controllers through the test host. This is comparable to an HTTP request, but it runs faster.
 
-  ------------------------------------------------------------------
+```
   public class PrimeWebDefaultRequestShould
   
   {
@@ -124,7 +124,7 @@ As you can see in the following code, when you create integration tests for ASP.
   }
   
   }
-  ------------------------------------------------------------------
+```
 
 #### Additional resources
 

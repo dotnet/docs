@@ -26,7 +26,7 @@ Typically, you want to inject dependencies that implement infrastructure objects
 
 In the following example, you can see how .NET Core is injecting the required repository objects through the constructor. The class is a command handler, which we will cover in the next section.
 
-  ---------------------------------------------------------------------------
+```
   // Sample command handler
   
   public class **CreateOrderCommandHandler**
@@ -108,7 +108,7 @@ In the following example, you can see how .NET Core is injecting the required re
   }
   
   }
-  ---------------------------------------------------------------------------
+```
 
 The class uses the injected repositories to execute the transaction and persist the state changes. It does not matter whether that class is a command handler, an ASP.NET Core Web API controller method, or a [DDD Application Service](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/). It is ultimately a simple class that uses repositories, domain entities, and other application coordination in a fashion similar to a command handler. Dependency Injection works the same way for all the mentioned classes, as in the example using DI based on the constructor.
 
@@ -120,7 +120,7 @@ Before you use the objects injected through constructors, you need to know where
 
 When you use the built-in IoC container provided by ASP.NET Core, you register the types you want to inject in the ConfigureServices method in the Startup.cs file, as in the following code:
 
-  -------------------------------------------------------------------------
+```
   // Registration of types into ASP.NET Core built-in container
   
   public void ConfigureServices(IServiceCollection services)
@@ -148,7 +148,7 @@ When you use the built-in IoC container provided by ASP.NET Core, you register t
   services.AddScoped&lt;IMyCustomRepository, MyCustomSQLRepository&gt;();
   
   }
-  -------------------------------------------------------------------------
+```
 
 The most common pattern when registering types in an IoC container is to register a pair of types—an interface and its related implementation class. Then when you request an object from the IoC container through any constructor, you request an object of a certain type of interface. For instance, in the previous example, the last line states that when any of your constructors have a dependency on IMyCustomRepository (interface or abstraction), the IoC container will inject an instance of the MyCustomSQLServerRepository implementation class.
 
@@ -172,7 +172,7 @@ You can also use additional IoC containers and plug them into the ASP.NET Core p
 
 For example, the following is the [Autofac application module](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Infrastructure/AutofacModules/ApplicationModule.cs) for the [Ordering.API Web API](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Services/Ordering/Ordering.API) project with the types you will want to inject.
 
-  ---------------------------------------------------------------------
+```
   public class ApplicationModule
   
   :Autofac.Module
@@ -220,7 +220,7 @@ For example, the following is the [Autofac application module](https://github.co
   }
   
   }
-  ---------------------------------------------------------------------
+```
 
 The registration process and concepts are very similar to the way you can register types with the built-in ASP.NET Core iOS container, but the syntax when using Autofac is a bit different.
 
@@ -277,7 +277,7 @@ A command is implemented with a class that contains data fields or collections w
 
 The following example shows the simplified CreateOrderCommand class. This is an immutable command that is used in the ordering microservice in eShopOnContainers.
 
-  -----------------------------------------------------------------------------------
+```
   // DDD and CQRS patterns comment
   
   // Note that it is recommended that yuo implement immutable commands
@@ -417,7 +417,7 @@ The following example shows the simplified CreateOrderCommand class. This is an 
   }
   
   }
-  -----------------------------------------------------------------------------------
+```
 
 Basically, the command class contains all the data you need for performing a business transaction by using the domain model objects. Thus, commands are simply data structures that contain read-only data, and no behavior. The command’s name indicates its purpose. In many languages like C\#, commands are represented as classes, but they are not true classes in the real object-oriented sense.
 
@@ -427,7 +427,7 @@ For example, the command class for creating an order is probably similar in term
 
 Many command classes can be simple, requiring only a few fields about some state that needs to be changed. That would be the case if you are just changing the status of an order from “in process” to “paid” or “shipped” by using a command similar to the following:
 
-  -------------------------------------------------------
+```
   \[DataContract\]
   
   public class UpdateOrderStatusCommand
@@ -449,7 +449,7 @@ Many command classes can be simple, requiring only a few fields about some state
   public string BuyerIdentityGuid { get; private set; }
   
   }
-  -------------------------------------------------------
+```
 
 Some developers make their UI request objects separate from their command DTOs, but that is just a matter of preference. It is a tedious separation with not much added value, and the objects are almost exactly the same shape. For instance, in eShopOnContainers, the commands come directly from the client side.
 
@@ -479,7 +479,7 @@ When command handlers get complex, with too much logic, that can be a code smell
 
 As an example of a command handler class, the following code shows the same CreateOrderCommandHandler class that you saw at the beginning of this chapter. In this case we have highlighted the Handle method and the operations with the domain model objects/aggregates.
 
-  ---------------------------------------------------------------------------
+```
   public class CreateOrderCommandHandler
   
   : IAsyncRequestHandler&lt;CreateOrderCommand, bool&gt;
@@ -563,7 +563,7 @@ As an example of a command handler class, the following code shows the same Crea
   }
   
   }
-  ---------------------------------------------------------------------------
+```
 
 These are additional steps a command handler should take:
 
@@ -656,7 +656,7 @@ I think it might be worth mentioning testing here – it provides a nice consist
 
 First, let us take a look to the controller code where you actually would use the mediator object. If you were not using the mediator object, you would need to inject all the dependencies for that controller, things like a logger object and others. Therefore, the constructor would be quite complicated. On the other hand, if you use the mediator object, the constructor of your controller can be a lot simpler, with just a few dependencies instead of many dependencies that you would have if you had one per cross-cutting operation, as in the following example:
 
-  -------------------------------------------------
+```
   public class OrdersController : Controller
   
   {
@@ -666,11 +666,11 @@ First, let us take a look to the controller code where you actually would use th
   IOrderQueries orderQueries)
   
   // ...
-  -------------------------------------------------
+```
 
 You can see that the mediator provides a clean and lean Web API controller constructor. In addition, within the controller methods, the code to send a command to the mediator object is almost one line:
 
-  -----------------------------------------------------------------------------------
+```
   \[Route("new")\]
   
   \[HttpPost\]
@@ -686,13 +686,13 @@ You can see that the mediator provides a clean and lean Web API controller const
   return commandResult ? (IActionResult)Ok() : (IActionResult)BadRequest();
   
   }
-  -----------------------------------------------------------------------------------
+```
 
 In order for MediatR to be aware of your command handler classes, you need to register the mediator classes and the command handler classes in your IoC container. By default, MediatR uses Autofac as the IoC container, but you can also use the built-in ASP.NET Core IoC container or any other container supported by MediatR.
 
 The following code shows how to register Mediator’s types and commands when using Autofac modules.
 
-  -----------------------------------------------------------------------------
+```
   public class MediatorModule : Autofac.Module
   
   {
@@ -724,17 +724,17 @@ The following code shows how to register Mediator’s types and commands when us
   // Other types registration
   
   }
-  -----------------------------------------------------------------------------
+```
 
 Because each command handler implements the interface with generic IAsyncRequestHandler&lt;T&gt; and then inspects the RegisteredAssemblyTypes object, the handler is able to relate each command with its command handler, because that relationship is stated in the CommandHandler class, as in the following example:
 
-  ------------------------------------------------------------
+```
   public class **CreateOrderCommandHandler**
   
   : IAsyncRequestHandler&lt;**CreateOrderCommand**, bool&gt;
   
   {
-  ------------------------------------------------------------
+```
 
 This is the code that correlates commands with command handlers. The handler is just a simple class, but it inherits from RequestHandler&lt;T&gt;, and MediatR makes sure it gets invoked with the correct payload.
 
@@ -746,7 +746,7 @@ Again, note that a future version of eShopOnContainers it will migrate to [Media
 
 That [LogDecorator](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Decorators/LogDecorator.cs) class can be implemented as the following code, which logs information about the command handler being executed and whether it was successful or not.
 
-  -----------------------------------------------------------------------------------
+```
   public class **LogDecorator&lt;TRequest, TResponse&gt;**
   
   : **IAsyncRequestHandler**&lt;TRequest, TResponse&gt;
@@ -790,13 +790,13 @@ That [LogDecorator](https://github.com/dotnet-architecture/eShopOnContainers/blo
   }
   
   }
-  -----------------------------------------------------------------------------------
+```
 
 Just by implementing this decorator class and by decorating the pipeline with it, all the commands processed through MediatR will be logging information about the execution.
 
 The eShopOnContainers ordering microservice also applies a second decorator for basic validations, the [ValidatorDecorator](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Decorators/ValidatorDecorator.cs) class that relies on the [FluentValidation](https://github.com/JeremySkinner/FluentValidation) library, as shown in the following code:
 
-  ---------------------------------------------------------------------------
+```
   public class **ValidatorDecorator**&lt;TRequest, TResponse&gt;
   
   : IAsyncRequestHandler&lt;TRequest, TResponse&gt;
@@ -856,11 +856,11 @@ The eShopOnContainers ordering microservice also applies a second decorator for 
   }
   
   }
-  ---------------------------------------------------------------------------
+```
 
 Then, based on the [FluentValidation](https://github.com/JeremySkinner/FluentValidation) library, we created validation for the data passed with CreateOrderCommand, as in the following code:
 
-  --------------------------------------------------------------------------------------------
+```
   public class **CreateOrderCommandValidator : AbstractValidator&lt;CreateOrderCommand&gt;**
   
   {
@@ -914,7 +914,7 @@ Then, based on the [FluentValidation](https://github.com/JeremySkinner/FluentVal
   }
   
   }
-  --------------------------------------------------------------------------------------------
+```
 
 You could create additional validations. This is a very clean and elegant way to implement your command validations.
 

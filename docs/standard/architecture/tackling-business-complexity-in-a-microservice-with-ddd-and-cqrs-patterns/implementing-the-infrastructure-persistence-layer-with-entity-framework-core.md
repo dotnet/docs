@@ -46,7 +46,7 @@ In a similar way, you can now have read-only access to collections by using a pu
 
 You can use a private collection while exposing a read-only IEnumerable object, as shown in the following code example:
 
-  ---------------------------------------------------------------------------------
+```
   public class Order : Entity
   
   {
@@ -92,13 +92,13 @@ You can use a private collection while exposing a read-only IEnumerable object, 
   }
   
   }
-  ---------------------------------------------------------------------------------
+```
 
 Note that the OrderItems property can only be accessed as read-only using List&lt;&gt;.AsReadOnly(). This method creates a read-only wrapper around the private list so that it is protected against external updates. It is much cheaper than using the ToList method, because it does not have to copy all the items in a new collection; instead, it performs just one heap alloc operation for the wrapper instance.
 
 EF Core provides a way to map the domain model to the physical database without contaminating the domain model. It is pure .NET POCO code, because the mapping action is implemented in the persistence layer. In that mapping action, you need to configure the fields-to-database mapping. In the following example of an OnModelCreating method, the highlighted code tells EF Core to access the OrderItems property through its field.
 
-  ------------------------------------------------------------------------
+```
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   
   {
@@ -126,7 +126,7 @@ EF Core provides a way to map the domain model to the physical database without 
   // Other configuration ...
   
   }
-  ------------------------------------------------------------------------
+```
 
 When you use fields instead of properties, the OrderItem entity is persisted just as if it had a List&lt;OrderItem&gt; property. However, it exposes a single accessor (the AddOrderItem method) for adding new items to the order. As a result, behavior and data are tied together and will be consistent throughout any application code that uses the domain model.
 
@@ -134,7 +134,7 @@ When you use fields instead of properties, the OrderItem entity is persisted jus
 
 At the implementation level, a repository is simply a class with data persistence code coordinated by a unit of work (DBContext in EF Core) when performing updates, as shown in the following class:
 
-  -------------------------------------------------------------------------------------
+```
   // using statements...
   
   namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositories
@@ -210,7 +210,7 @@ At the implementation level, a repository is simply a class with data persistenc
   }
   
   }
-  -------------------------------------------------------------------------------------
+```
 
 Note that the IBuyerRepository interface comes from the domain model layer. However, the repository implementation is done at the persistence and infrastructure layer.
 
@@ -250,7 +250,7 @@ The DbContext object (exposed as an IUnitOfWork object) might need to be shared 
 
 In order to do that, the instance of the DbContext object has to have its service lifetime set to ServiceLifetime.Scoped. This is the default lifetime when registering a DbContext with services.AddDbContext in your IoC container from the ConfigureServices method of the Startup.cs file in your ASP.NET Core Web API project. The following code illustrates this.
 
-  ------------------------------------------------------------------------
+```
   public IServiceProvider ConfigureServices(IServiceCollection services)
   
   {
@@ -288,7 +288,7 @@ In order to do that, the instance of the DbContext object has to have its servic
   );
   
   }
-  ------------------------------------------------------------------------
+```
 
 The DbContext instantiation mode should not be configured as ServiceLifetime.Transient or ServiceLifetime.Singleton.
 
@@ -296,7 +296,7 @@ The DbContext instantiation mode should not be configured as ServiceLifetime.Tra
 
 In a similar way, repository’s lifetime should usually be set as scoped (InstancePerLifetimeScope in Autofac). It could also be transient (InstancePerDependency in Autofac), but your service will be more efficient in regards memory when using the scoped lifetime.
 
-  ------------------------------------------------------
+```
   // Registering a Repository in Autofac IoC container
   
   builder.RegisterType&lt;OrderRepository&gt;()
@@ -304,7 +304,7 @@ In a similar way, repository’s lifetime should usually be set as scoped (Insta
   .As&lt;IOrderRepository&gt;()
   
   **.InstancePerLifetimeScope()**;
-  ------------------------------------------------------
+```
 
 Note that using the singleton lifetime for the repository could cause you serious concurrency problems when your DbContext is set to scoped (InstancePerLifetimeScope) lifetime (the default lifetimes for a DBContext).
 
@@ -335,7 +335,7 @@ Data annotations must be used on the entity model classes themselves, which is a
 
 As mentioned, in order to change conventions and mappings, you can use the OnModelCreating method in the DbContext class. The following example shows how we do this in the ordering microservice in eShopOnContainers.
 
-  -------------------------------------------------------------------------
+```
   protected override void OnModelCreating(ModelBuilder modelBuilder)
   
   {
@@ -413,7 +413,7 @@ As mentioned, in order to change conventions and mappings, you can use the OnMod
   }
   
   }
-  -------------------------------------------------------------------------
+```
 
 You could set all the Fluent API mappings within the same OnModelCreating method, but it is advisable to partition that code and have multiple submethods, one per entity, as shown in the example. For particularly large models, it can even be advisable to have separate source files (static classes) for configuring different entity types.
 
@@ -449,7 +449,7 @@ From a DDD point of view, shadow properties are a convenient way to implement va
 
 As you can see in the [Address value object](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs) in eShopOnContainers, in the Address model you do not see an ID:
 
-  ---------------------------------------------
+```
   public class Address : ValueObject
   
   {
@@ -467,11 +467,11 @@ As you can see in the [Address value object](https://github.com/dotnet-architect
   //Constructor initializing, etc
   
   }
-  ---------------------------------------------
+```
 
 But under the covers, we need to provide an ID so that EF Core is able to persist this data in the database tables. We do that in the ConfigureAddress method of the [OrderingContext.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Infrastructure/OrderingContext.cs) class at the infrastructure level, so we do not pollute the domain model with EF infrastructure code.
 
-  ------------------------------------------------------------------------------
+```
   void ConfigureAddress(EntityTypeBuilder&lt;Address&gt; addressConfiguration)
   
   {
@@ -495,7 +495,7 @@ But under the covers, we need to provide an ID so that EF Core is able to persis
   **addressConfiguration.HasKey("Id");**
   
   }
-  ------------------------------------------------------------------------------
+```
 
 #### Additional resources
 

@@ -40,7 +40,7 @@ If you open any of the files in an aggregate folder, you can see how it is marke
 
 You implement a domain model in .NET by creating POCO classes that implement your domain entities. In the following example, the Order class is defined as an entity and also as an aggregate root. Because the Order class derives from the Entity base class, it can reuse common code related to entities. Bear in mind that these base classes and interfaces are defined by you in the domain model project, so it is your code, not infrastructure code from an ORM like EF.
 
-  ------------------------------------------------------------------------------
+```
   // COMPATIBLE WITH ENTITY FRAMEWORK CORE 1.0
   
   // Entity is a custom base class with the ID
@@ -110,7 +110,7 @@ You implement a domain model in .NET by creating POCO classes that implement you
   // Additional methods with domain rules/logic related to the Order aggregate
   
   // ...
-  ------------------------------------------------------------------------------
+```
 
 It is important to note that this is a domain entity implemented as a POCO class. It does not have any direct dependency on Entity Framework Core or any other infrastructure framework. This implementation is as it should be, just C\# code implementing a domain model.
 
@@ -122,7 +122,7 @@ Having an aggregate root means that most of the code related to consistency and 
 
 For example, you should *not* do the following from any command handler method or application layer class:
 
-  -------------------------------------------------------------------------------------------------------------
+```
   // WRONG ACCORDING TO DDD PATTERNS – CODE AT THE APPLICATION LAYER OR
   
   // COMMAND HANDLERS
@@ -140,7 +140,7 @@ For example, you should *not* do the following from any command handler method o
   myOrder.**OrderItems.Add**(myNewOrderItem);
   
   //...
-  -------------------------------------------------------------------------------------------------------------
+```
 
 In this case, the Add method is purely an operation to add data, with direct access to the OrderItems collection. Therefore, most of the domain logic, rules, or validations related to that operation with the child entities will be spread across the application layer (command handlers and Web API controllers).
 
@@ -154,7 +154,7 @@ As you can see in the code for the Order aggregate root, all setters should be p
 
 The following code snippet shows the proper way to code the task of adding an OrderItem object to the Order aggregate.
 
-  -----------------------------------------------------------------------------------------------
+```
   // RIGHT ACCORDING TO DDD--CODE AT THE APPLICATION LAYER OR COMMAND HANDLERS
   
   // The code in command handlers or WebAPI controllers, related only to application stuff
@@ -168,7 +168,7 @@ The following code snippet shows the proper way to code the task of adding an Or
   // be WITHIN the AddOrderItem method.
   
   //...
-  -----------------------------------------------------------------------------------------------
+```
 
 In this snippet, most of the validations or logic related to the creation of an OrderItem object will be under the control of the Order aggregate root—in the AddOrderItem method—especially validations and logic related to other elements in the aggregate. For instance, you might get the same product item as the result of multiple calls to AddOrderItem. In that method, you could examine the product items and consolidate the same product items into a single OrderItem object with several units. Additionally, if there are different discount amounts but the product ID is the same, you would likely apply the higher discount. This principle applies to any other domain logic for the OrderItem object.
 
@@ -178,7 +178,7 @@ When you use Entity Framework 1.1, a DDD entity can be better expressed because 
 
 In DDD you want to update the entity only through methods in the entity (or the constructor) in order to control any invariant and the consistency of the data, so properties are defined only with a get accessor. The properties are backed by private fields. Private members can only be accessed from within the class. However, there one exception: EF Core needs to set these fields as well.
 
-  ---------------------------------------------------------------------------------
+```
   // ENTITY FRAMEWORK CORE 1.1 OR LATER
   
   // Entity is a custom base class with the ID
@@ -296,7 +296,7 @@ In DDD you want to update the entity only through methods in the entity (or the 
   // ...
   
   }
-  ---------------------------------------------------------------------------------
+```
 
 #### Mapping properties with only get accessors to the fields in the database table
 
@@ -337,7 +337,7 @@ This is the type of copy and paste reuse that many developers share between proj
 
 The following code is an example of an Entity base class where you can place code that can be used the same way by any domain entity, such as the entity ID, [equality operators](https://msdn.microsoft.com/en-us/library/c35t2ffz.aspx), etc.
 
-  -----------------------------------------------------------------------
+```
   // ENTITY FRAMEWORK CORE 1.1
   
   public abstract class Entity
@@ -459,7 +459,7 @@ The following code is an example of an Entity base class where you can place cod
   }
   
   }
-  -----------------------------------------------------------------------
+```
 
 ## Repository contracts (interfaces) in the domain model layer
 
@@ -471,7 +471,7 @@ Following the Separated Interface pattern enables the application layer (in this
 
 For example, the following example with the IOrderRepository interface defines what operations the OrderRepository class will need to implement at the infrastructure layer. In the current implementation of the application, the code just needs to add the order to the database, since queries are split following the CQS approach, and updates to orders are not implemented.
 
-  ----------------------------------------------------------------
+```
   public interface IOrderRepository : IRepository&lt;Order&gt;
   
   {
@@ -487,7 +487,7 @@ For example, the following example with the IOrderRepository interface defines w
   IUnitOfWork UnitOfWork { get; }
   
   }
-  ----------------------------------------------------------------
+```
 
 #### Additional resources
 
@@ -524,7 +524,7 @@ Value objects allow you to perform certain tricks for performance, thanks to the
 
 In terms of implementation, you can have a value object base class that has basic utility methods like equality based on comparison between all the attributes (since a value object must not be based on identity) and other fundamental characteristics. The following example shows a value object base class used in the ordering microservice from eShopOnContainers.
 
-  ----------------------------------------------------------------------------------
+```
   **public abstract class ValueObject**
   
   {
@@ -606,11 +606,11 @@ In terms of implementation, you can have a value object base class that has basi
   // Other utilility methods
   
   }
-  ----------------------------------------------------------------------------------
+```
 
 You can use this class when implementing your actual value object, as with the Address value object shown in the following example:
 
-  ----------------------------------------------------------------
+```
   **public class Address : ValueObject**
   
   {
@@ -660,7 +660,7 @@ You can use this class when implementing your actual value object, as with the A
   }
   
   }
-  ----------------------------------------------------------------
+```
 
 ### Hiding the identity characteristic when using EF Core to persist value objects
 
@@ -668,7 +668,7 @@ A limitation when using EF Core is that in its current version (EF Core 1.1) you
 
 In eShopOnContainers, the hidden ID needed by EF Core infrastructure is implemented in the following way in the DbContext level, using Fluent API at the infrastructure project.
 
-  ------------------------------------------------------------------------------
+```
   // Fluent API within the OrderingContext:DbContext in the
   
   // Ordering.Infrastructure project
@@ -686,7 +686,7 @@ In eShopOnContainers, the hidden ID needed by EF Core infrastructure is implemen
   **addressConfiguration.HasKey("Id");**
   
   }
-  ------------------------------------------------------------------------------
+```
 
 Therefore, the ID is hidden from the domain model point of view, and in the future, the value object infrastructure could also be implemented as a complex type or another way.
 
@@ -723,7 +723,7 @@ Instead, you can create Enumeration classes that enable all the rich features of
 
 The ordering microservice in eShopOnContainers provides a sample Enumeration base class implementation, as shown in the following example:
 
-  -----------------------------------------------------------------------------------
+```
   **public abstract class Enumeration : IComparable**
   
   {
@@ -821,11 +821,11 @@ The ordering microservice in eShopOnContainers provides a sample Enumeration bas
   // Other utility methods ...
   
   }
-  -----------------------------------------------------------------------------------
+```
 
 You can use this class as a type in any entity or value object, as for the following CardType Enumeration class.
 
-  --------------------------------------------------------------------
+```
   **public class CardType : Enumeration**
   
   {
@@ -857,7 +857,7 @@ You can use this class as a type in any entity or value object, as for the follo
   // Other util methods
   
   }
-  --------------------------------------------------------------------
+```
 
 #### Additional resources
 
@@ -897,7 +897,7 @@ Validations are usually implemented in domain entity constructors or in methods 
 
 The following code example shows the simplest approach to validation in a domain entity by raising an exception. In the references table at the end of this section you can see links to more advanced implementations based on the patterns we have discussed previously.
 
-  ---------------------------------------------------------------------------------
+```
   public void SetAddress(Address address)
   
   {
@@ -905,11 +905,11 @@ The following code example shows the simplest approach to validation in a domain
   \_shippingAddress = address?? throw new ArgumentNullException(nameof(address));
   
   }
-  ---------------------------------------------------------------------------------
+```
 
 A better example would demonstrate the need to ensure that either the internal state did not change, or that all the mutations for a method occurred. For example, the following implementation would leave the object in an invalid state:
 
-  -------------------------------------------------------------------
+```
   Public void SetAddress(string line1, string line2,
   
   string city, string state, int zip)
@@ -925,7 +925,7 @@ A better example would demonstrate the need to ensure that either the internal s
   \_shippingAddress.state = (IsValid(state) ? state : throw new …);
   
   }
-  -------------------------------------------------------------------
+```
 
 If the value of the state is invalid, the first address line and the city have already been changed. That might make the address invalid.
 
@@ -937,7 +937,7 @@ Another approach is to use validation attributes based on data annotations. Vali
 
 However, as shown in the following code, this approach might be too intrusive in a DDD model, because it takes a dependency on ModelState.IsValid from Microsoft.AspNetCore.Mvc.ModelState, which you must call from your MVC controllers. The model validation occurs prior to each controller action being invoked, and it is the controller method’s responsibility to inspect the result of calling ModelState.IsValid and react appropriately. The decision to use it depends on how tightly coupled you want the model to be with that infrastructure.
 
-  -----------------------------------------------------------
+```
   using System.ComponentModel.DataAnnotations;
   
   // Other using statements ...
@@ -979,7 +979,7 @@ However, as shown in the following code, this approach might be too intrusive in
   // Additional methods for entity logic and constructor...
   
   }
-  -----------------------------------------------------------
+```
 
 However, from a DDD point of view, the domain model is best kept lean with the use of exceptions in your entity’s behavior methods, or by implementing the Specification and Notification patterns to enforce validation rules. Validation frameworks like data annotations in ASP.NET Core or any other validation frameworks like FluentValidation carry a requirement to invoke the application framework. For example, when calling the ModelState.IsValid method in data annotations, you need to invoke ASP.NET controllers.
 

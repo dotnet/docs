@@ -34,7 +34,7 @@ Integration events are used for bringing domain state in sync across multiple mi
 
 An integration event is basically a data-holding class, as in the following example:
 
-  -----------------------------------------------------------------------------
+```
   public class **ProductPriceChangedIntegrationEvent : IntegrationEvent**
   
   {
@@ -60,7 +60,7 @@ An integration event is basically a data-holding class, as in the following exam
   }
   
   }
-  -----------------------------------------------------------------------------
+```
 
 The integration event class can be simple; for example, it might contain a GUID for its ID.
 
@@ -110,7 +110,7 @@ However, as highlighted previously, using abstractions (the event bus interface)
 
 Let’s start with some implementation code for the event bus interface and possible implementations for exploration purposes. The interface should be generic and straightforward, as in the following interface.
 
-  --------------------------------------------------------------------------
+```
   public interface **IEventBus**
   
   {
@@ -126,7 +126,7 @@ Let’s start with some implementation code for the event bus interface and poss
   where T : IntegrationEvent;
   
   }
-  --------------------------------------------------------------------------
+```
 
 The Publish method is straightforward. The event bus will broadcast the integration event passed to it to any microservice subscribed to that event. This method is used by the microservice that is publishing the event.
 
@@ -144,7 +144,7 @@ The eShopOnContainers custom implementation of an event bus is basically a libra
 
 In the code, the EventBusRabbitMQ class implements the generic IEventBus interface. This is based on Dependency Injection so that you can swap from this dev/test version to a production version.
 
-  ------------------------------------------------------------
+```
   public class **EventBusRabbitMQ : IEventBus**, IDisposable
   
   {
@@ -152,7 +152,7 @@ In the code, the EventBusRabbitMQ class implements the generic IEventBus interfa
   // Implementation using RabbitMQ API
   
   //...
-  ------------------------------------------------------------
+```
 
 The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. It has to handle the connection to the RabbitMQ server and provide code for publishing a message event to the queues. It also has to implement a dictionary of collections of integration event handlers for each event type; these event types can have a different instantiation and different subscriptions for each receiver microservice, as shown in Figure 8-21.
 
@@ -160,7 +160,7 @@ The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. 
 
 The following code is part of the eShopOnContainers event bus implementation for RabbitMQ, so you usually do not need to code it unless you are making improvements. The code gets a connection and channel to RabbitMQ, creates a message, and then publishes the message into the queue.
 
-  --------------------------------------------------------------------------
+```
   public **class EventBusRabbitMQ : IEventBus, IDisposable**
   
   {
@@ -204,7 +204,7 @@ The following code is part of the eShopOnContainers event bus implementation for
   }
   
   }
-  --------------------------------------------------------------------------
+```
 
 The [actual code](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) of the Publish method in the eShopOnContainers application is improved by using a [Polly](https://github.com/App-vNext/Polly) retry policy, which retries the task a certain number of times in case the RabbitMQ container is not ready. This can occur when docker-compose is starting the containers; for example, the RabbitMQ container might start more slowly than the other containers.
 
@@ -214,7 +214,7 @@ As mentioned earlier, there are many possible configurations in RabbitMQ, so thi
 
 As with the publish code, the following code is a simplification of part of the event bus implementation for RabbitMQ. Again, you usually do not need to change it unless you are improving it.
 
-  --------------------------------------------------------------------------------
+```
   public **class EventBusRabbitMQ : IEventBus, IDisposable**
   
   {
@@ -262,7 +262,7 @@ As with the publish code, the following code is a simplification of part of the 
   }
   
   }
-  --------------------------------------------------------------------------------
+```
 
 Each event type has a related channel to get events from RabbitMQ. You can then have as many event handlers per channel and event type as needed.
 
@@ -274,13 +274,13 @@ The first step for using the event bus is to subscribe the microservices to the 
 
 The following simple code shows what each receiver microservice needs to implement when starting the service (that is, in the Startup class) so it subscribes to the events it needs. For instance, the basket.api microservice needs to subscribe to ProductPriceChangedIntegrationEvent messages. This makes the microservice aware of any changes to the product price and lets it warn the user about the change if that product is in the user’s basket.
 
-  -------------------------------------------------------------------------------
+```
   var eventBus = app.ApplicationServices.GetRequiredService&lt;IEventBus&gt;();
   
   **eventBus.Subscribe**&lt;ProductPriceChangedIntegration**Event**&gt;(
   
   ProductPriceChangedIntegration**EventHandler**);
-  -------------------------------------------------------------------------------
+```
 
 After this code runs, the subscriber microservice will be listening through RabbitMQ channels. When any message of type ProductPriceChangedIntegrationEvent arrives, the code invokes the event handler that is passed to it and processes the event.
 
@@ -290,7 +290,7 @@ Finally, the message sender (origin microservice) publishes the integration even
 
 First, the event bus implementation object (based on RabbitMQ or based on a service bus) would be injected at the controller constructor, as in the following code:
 
-  ---------------------------------------------------------------
+```
   \[Route("api/v1/\[controller\]")\]
   
   public class CatalogController : ControllerBase
@@ -320,11 +320,11 @@ First, the event bus implementation object (based on RabbitMQ or based on a serv
   // ...
   
   }
-  ---------------------------------------------------------------
+```
 
 Then you use it from your controller’s methods, like in the UpdateProduct method:
 
-  -------------------------------------------------------------------------------------------
+```
   \[Route("update")\]
   
   \[HttpPost\]
@@ -366,7 +366,7 @@ Then you use it from your controller’s methods, like in the UpdateProduct meth
   **\_eventBus.Publish(@event);**
   
   // ...
-  -------------------------------------------------------------------------------------------
+```
 
 In this case, since the origin microservice is a simple CRUD microservice, that code is placed right into a Web API controller. In more advanced microservices, it could be implemented in the CommandHandler class, right after the original data is committed.
 
@@ -536,7 +536,7 @@ In addition to the event subscription logic, you need to implement the internal 
 
 An event handler first receives an event instance from the event bus. Then it locates the component to be processed related to that integration event, propagating and persisting the event as a change in state in the receiver microservice. For example, if a ProductPriceChanged event originates in the catalog microservice, it is handled in the basket microservice and changes the state in this receiver basket microservice as well, as shown in the following code.
 
-  ----------------------------------------------------------------------------------
+```
   Namespace Microsoft.eShopOnContainers.Services.Basket.
   
   API.IntegrationEvents.EventHandling
@@ -622,7 +622,7 @@ An event handler first receives an event instance from the event bus. Then it lo
   }
   
   }
-  ----------------------------------------------------------------------------------
+```
 
 The event handler needs to verify whether the product exists in any of the basket instances. It also updates the item price for each related basket line item. Finally, it creates an alert to be displayed to the user about the price change, as shown in Figure 8-24.
 

@@ -28,45 +28,45 @@ Set-AzureRmKeyVaultAccessPolicy -VaultName "&lt;VaultName&gt;" -ServicePrincipal
 
 Currently, the .NET Standard Library and.NET Core support getting configuration information from an Azure Key Vault using a client ID and client secret. .NET Framework applications can use an overload of IConfigurationBuilder.AddAzureKeyVault that takes a certificate in place of the client secret. As of this writing, work is [in progress](https://github.com/aspnet/Configuration/issues/605) to make that overload available in .NET Standard and .NET Core. Until the AddAzureKeyVault overload that accepts a certificate is available, ASP.NET Core applications can access an Azure Key Vault with certificate-based authentication by explicitly creating a KeyVaultClient object, as shown in the following example:
 
-  -----------------------------------------------------------------------------------
+```
   // Configure Key Vault client
-  
+```
   var kvClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(async
-  
+```
   (authority, resource, scope) =&gt;
-  
+```
   {
-  
+```
   var cert = // Get certificate from local store/file/key vault etc. as needed
-  
+```
   // From the Microsoft.IdentityModel.Clients.ActiveDirectory pacakge
-  
+```
   var authContext = new AuthenticationContext(authority,
-  
+```
   TokenCache.DefaultShared);
-  
+```
   var result = await authContext.AcquireTokenAsync(resource,
-  
+```
   // From the Microsoft.Rest.ClientRuntime.Azure.Authentication pacakge
-  
+```
   new ClientAssertionCertificate("{Application ID}", cert));
-  
+```
   return result.AccessToken;
-  
+```
   }));
-  
+```
   // Get configuration values from Key Vault
-  
+```
   var builder = new ConfigurationBuilder()
-  
+```
   .SetBasePath(env.ContentRootPath)
-  
+```
   // Other configuration providers go here.
-  
+```
   .AddAzureKeyVault("{KeyValueUri}", kvClient,
-  
+```
   new DefaultKeyVaultSecretManager());
-  -----------------------------------------------------------------------------------
+```
 
 In this example, the call to AddAzureKeyVault comes at the end of configuration provider registration. It is a best practice to register Azure Key Vault as the last configuration provider so that it has an opportunity to override configuration values from previous providers, and so that no configuration values from other sources override those from the key vault.
 

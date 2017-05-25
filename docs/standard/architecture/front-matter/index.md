@@ -40,17 +40,17 @@ All other marks and logos are property of their respective owners.
 
 Co-Authors: Editors:
 
-  -------------------------------------------------------------------------- ----------------
+```
   **Cesar de la Torre**, Sr. PM, .NET product team, Microsoft Corp.          **Mike Pope**
                                                                              
   **Bill Wagner**, Sr. Content Developer, C+E, Microsoft Corp.               **Steve Hoag**
                                                                              
   **Mike Rousos**, Principal Software Engineer, DevDiv CAT team, Microsoft   
-  -------------------------------------------------------------------------- ----------------
+```
 
 Participants and reviewers:
 
-  --------------------------------------------------------------------------- ----------------------------------------------------------------
+```
   **Jeffrey Ritcher**, Partner Software Eng, Azure team, Microsoft            **Dylan Reisenberger**, Architect and Dev Lead at Polly
                                                                               
   **Jimmy Bogard**, Chief Architect at Headspring                             **Steve Smith**, Software Craftsman & Trainer at ASPSmith Ltd.
@@ -72,7 +72,7 @@ Participants and reviewers:
   **Ankit Asthana**, Principal PM Manager, .NET team, Microsoft               **Michael Friis**, Product Manager, Docker Inc
                                                                               
   **Scott Hunter**, Partner Director PM, .NET team, Microsoft                 **Charles Lowell**, Software Engineer, VS CAT team, Microsoft
-  --------------------------------------------------------------------------- ----------------------------------------------------------------
+```
 
 
 

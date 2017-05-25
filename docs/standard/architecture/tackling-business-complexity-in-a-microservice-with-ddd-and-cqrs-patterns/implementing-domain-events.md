@@ -12,7 +12,7 @@ ms.technology: dotnet-docker
 
 In C\#, a domain event is simply a data-holding structure or class, like a DTO, with all the information related to what just happened in the domain, as shown in the following example:
 
-  ---------------------------------------------------------------
+```
   public class **OrderStartedDomainEvent** : IAsyncNotification
   
   {
@@ -54,7 +54,7 @@ In C\#, a domain event is simply a data-holding structure or class, like a DTO, 
   }
   
   }
-  ---------------------------------------------------------------
+```
 
 This is essentially a class that holds all the data related to the OrderStarted event.
 
@@ -78,7 +78,7 @@ Deciding if you send the domain events right before or right after committing th
 
 The deferred approach is what eShopOnContainers uses. First, you add the events happening in your entities into a collection or list of events per entity. That list should be part of the entity object, or even better, part of your base entity class, as shown in the following example:
 
-  --------------------------------------------------------------------------
+```
   public abstract class **Entity**
   
   {
@@ -110,11 +110,11 @@ The deferred approach is what eShopOnContainers uses. First, you add the events 
   // ...
   
   }
-  --------------------------------------------------------------------------
+```
 
 When you want to raise an event, you just add it to the event collection to be placed within an aggregate entity method, as the following code shows:
 
-  --------------------------------------------------------------------------------
+```
   var orderStartedDomainEvent = new OrderStartedDomainEvent(this, //Order object
   
   cardTypeId,
@@ -128,13 +128,13 @@ When you want to raise an event, you just add it to the event collection to be p
   cardExpiration);
   
   this.**AddDomainEvent**(orderStartedDomainEvent);
-  --------------------------------------------------------------------------------
+```
 
 Notice that the only thing that the AddDomainEvent method is doing is adding an event to the list. No event is raised yet, and no event handler is invoked yet.
 
 You actually want to dispatch the events later on, when you commit the transaction to the database. If you are using Entity Framework Core, that means in the SaveChanges method of your EF DbContext, as in the following code:
 
-  -------------------------------------------------------------------------------
+```
   // EF Core DbContext
   
   public class **OrderingContext : DbContext, IUnitOfWork**
@@ -174,7 +174,7 @@ You actually want to dispatch the events later on, when you commit the transacti
   }
   
   }
-  -------------------------------------------------------------------------------
+```
 
 With this code, you dispatch the entity events to their respective event handlers.
 
@@ -224,7 +224,7 @@ You can build all the plumbing and artifacts to implement that approach by yours
 
 In code, you first need to register the event handler types in your IoC container, as shown in the following example:
 
-  -----------------------------------------------------------------------------
+```
   public class MediatorModule : Autofac.Module
   
   {
@@ -256,7 +256,7 @@ In code, you first need to register the event handler types in your IoC containe
   }
   
   }
-  -----------------------------------------------------------------------------
+```
 
 The code first identifies the assembly that contains the domain event handlers by locating the assembly that holds any of the handlers (using typeof(ValidateOrAddBuyerAggregateWhenXxxx), but you could have chosen any other event handler to locate the assembly). Since all the event handlers implement the IAsyncNotificationHandler interface, the code then just searches for those types and registers all the event handlers.
 
@@ -264,11 +264,11 @@ The code first identifies the assembly that contains the domain event handlers b
 
 When you use MediatR, each event handler must use an event type that is provided on the generic parameter of the IAsyncNotificationHandler interface, as you can see in the following code:
 
-  ----------------------------------------------------------------------------
+```
   public class ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler
   
   : **IAsyncNotificationHandler&lt;OrderStartedDomainEvent&gt;**
-  ----------------------------------------------------------------------------
+```
 
 Based on the relationship between event and event handler, which can be considered the subscription, the MediatR artifact can discover all the event handlers for each event and trigger each of those event handlers.
 
@@ -276,7 +276,7 @@ Based on the relationship between event and event handler, which can be consider
 
 Finally, the event handler usually implements application layer code that uses infrastructure repositories to obtain the required additional aggregates and to execute side-effect domain logic. The following code shows an example.
 
-  -----------------------------------------------------------------------------------
+```
   public class **ValidateOrAddBuyerAggregateWhenOrderStartedDomainEventHandler **
   
   **: IAsyncNotificationHandler&lt;OrderStartedDomainEvent&gt;**
@@ -352,7 +352,7 @@ Finally, the event handler usually implements application layer code that uses i
   }
   
   }
-  -----------------------------------------------------------------------------------
+```
 
 This event handler code is considered application layer code because it uses infrastructure repositories, as explained in the next section on the infrastructure-persistence layer. Event handlers could also use other infrastructure components.
 

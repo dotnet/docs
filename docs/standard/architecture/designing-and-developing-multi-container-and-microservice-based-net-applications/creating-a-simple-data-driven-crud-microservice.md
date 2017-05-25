@@ -36,9 +36,9 @@ Finally, by editing the Dockerfile and docker-compose.yml metadata files, you ca
 
 To implement a simple CRUD microservice using .NET Core and Visual Studio, you start by creating a simple ASP.NET Core Web API project (running on .NET Core so it can run on a Linux Docker host), as shown in Figure 8-6.
 
-  ------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
-  ![](./media/image6.png)   ![](./media/image7.png)
-  ------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
+```
+  ![](./media/image6.png){width="3.5833333333333335in" height="1.6883923884514436in"}   ![](./media/image7.png){width="2.6181167979002624in" height="1.7083333333333333in"}
+```
 
 **Figure 8-6**. Creating an ASP.NET Core Web API project in Visual Studio
 
@@ -58,15 +58,15 @@ The catalog microservice uses EF and the SQL Server provider because its databas
 
 You can install the NuGet package for the database provider you want to use, in this case SQL Server, from within the Visual Studio IDE or with the NuGet console. Use the following command:
 
-  ---------------------------------------------------------
+```
   Install-Package Microsoft.EntityFrameworkCore.SqlServer
-  ---------------------------------------------------------
+```
 
 #### The data model
 
 With EF Core, data access is performed by using a model. A model is made up of entity classes and a derived context that represents a session with the database, allowing you to query and save data. You can generate a model from an existing database, manually code a model to match your database, or use EF migrations to create a database from your model (and evolve it as your model changes over time). For the catalog microservice we are using the last approach. You can see an example of the CatalogItem entity class in the following code example, which is a simple Plain Old CLR Object ([POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object)) entity class.
 
-  ------------------------------------------------
+```
   public class CatalogItem
   
   {
@@ -92,11 +92,11 @@ With EF Core, data access is performed by using a model. A model is made up of e
   public CatalogItem() { }
   
   }
-  ------------------------------------------------
+```
 
 You also need a DbContext that represents a session with the database. For the catalog microservice, the CatalogContext class derives from the DbContext base class, as shown in the following example:
 
-  ---------------------------------------------------------------------------------------
+```
   public class CatalogContext : DbContext
   
   {
@@ -116,7 +116,7 @@ You also need a DbContext that represents a session with the database. For the c
   // Additional code ...
   
   }
-  ---------------------------------------------------------------------------------------
+```
 
 You can have additional code in the DbContext implementation. For example, in the sample application, we have an OnModelCreating method in the CatalogContext class that automatically populates the sample data the first time it tries to access the database. This method is useful for demo data. You can also use the OnModelCreating method to customize object/database entity mappings with many other [EF extensibility points](https://blogs.msdn.microsoft.com/dotnet/2016/09/29/implementing-seeding-custom-conventions-and-interceptors-in-ef-core-1-0/).
 
@@ -126,7 +126,7 @@ You can see further details about OnModelCreating in the [Implementing the infra
 
 Instances of your entity classes are typically retrieved from the database using Language Integrated Query (LINQ), as shown in the following example:
 
-  ------------------------------------------------------------------------------
+```
   \[Route("api/v1/\[controller\]")\]
   
   public class **CatalogController : ControllerBase**
@@ -204,13 +204,13 @@ Instances of your entity classes are typically retrieved from the database using
   } //...
   
   }
-  ------------------------------------------------------------------------------
+```
 
 ##### Saving data
 
 Data is created, deleted, and modified in the database using instances of your entity classes. You could add code like the following hard-coded example (mock data, in this case) to your Web API controllers.
 
-  -------------------------------------------------------------------------
+```
   var catalogItem = new CatalogItem() {CatalogTypeId=2, CatalogBrandId=2,
   
   Name="Roslyn T-Shirt", Price = 12};
@@ -218,7 +218,7 @@ Data is created, deleted, and modified in the database using instances of your e
   \_context.Catalog.Add(catalogItem);
   
   \_context.SaveChanges();
-  -------------------------------------------------------------------------
+```
 
 ##### Dependency Injection in ASP.NET Core and Web API controllers
 
@@ -226,7 +226,7 @@ In ASP.NET Core you can use Dependency Injection (DI) out of the box. You do not
 
 An important configuration to set up in the Web API project is the DbContext class registration into the service’s IoC container. You typically do so in the Startup class by calling the services.AddDbContext method inside the ConfigureServices method, as shown in the following example:
 
-  ------------------------------------------------------------------------------
+```
   public void ConfigureServices(IServiceCollection services)
   
   {
@@ -278,7 +278,7 @@ An important configuration to set up in the Web API project is the DbContext cla
   //...
   
   }
-  ------------------------------------------------------------------------------
+```
 
 ### Additional resources
 
@@ -292,7 +292,7 @@ An important configuration to set up in the Web API project is the DbContext cla
 
 You can use the ASP.NET Core settings and add a ConnectionString property to your settings.json file as shown in the following example:
 
-  --------------------------------------------------------------------------------
+```
   {
   
   "ConnectionString": "Server=tcp:127.0.0.1,5433;Initial Catalog=
@@ -318,13 +318,13 @@ You can use the ASP.NET Core settings and add a ConnectionString property to you
   }
   
   }
-  --------------------------------------------------------------------------------
+```
 
 The settings.json file can have default values for the ConnectionString property or for any other property. However, those properties will be overridden by the values of environment variables that you specify in the docker-compose.override.yml file.
 
 From your docker-compose.yml or docker-compose.override.yml files, you can initialize those environment variables so that Docker will set them up as OS environment variables for you, as shown in the following docker-compose.override.yml file (the connection string and other lines wrap in this example, but it would not wrap in your own file).
 
-  -----------------------------------------------------------------------
+```
   \# docker-compose.override.yml
   
   \#
@@ -348,7 +348,7 @@ From your docker-compose.yml or docker-compose.override.yml files, you can initi
   ports:
   
   - "5101:5101"
-  -----------------------------------------------------------------------
+```
 
 The docker-compose.yml files at the solution level are not only more flexible than configuration files at the project or microservice level, but also more secure. Consider that the Docker images that you build per microservice do not contain the docker-compose.yml files, only binary files and configuration files for each microservice, including the Dockerfile. But the docker-compose.yml file is not deployed along with your application; it is used only at deployment time. Therefore, placing environment variables values in those docker-compose.yml files (even without encrypting the values) is more secure than placing those values in regular .NET configuration files that are deployed with your code.
 
@@ -374,7 +374,7 @@ With URI versioning, as in the eShopOnContainers sample application, each time y
 
 As shown in the following code example, the version can be set by using the Route attribute in the Web API, which makes the version explicit in the URI (v1 in this case).
 
-  -------------------------------------------------
+```
   \[Route("api/**v1**/\[controller\]")\]
   
   public class CatalogController : ControllerBase
@@ -382,7 +382,7 @@ As shown in the following code example, the version can be set by using the Rout
   {
   
   // Implementation ...
-  -------------------------------------------------
+```
 
 This versioning mechanism is simple and depends on the server routing the request to the appropriate endpoint. However, for a more sophisticated versioning and the best method when using REST, you should use hypermedia and implement [HATEOAS (Hypertext as the Engine of Application State)](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#using-the-hateoas-approach-to-enable-navigation-to-related-resources).
 
@@ -450,7 +450,7 @@ Note that for .NET Core Web API projects, you need to use [Swashbuckle.AspNetCor
 
 After you have installed these NuGet packages in your Web API project, you need to configure Swagger in the Startup class, as in the following code:
 
-  ---------------------------------------------------------------
+```
   public class Startup
   
   {
@@ -512,15 +512,15 @@ After you have installed these NuGet packages in your Web API project, you need 
   }
   
   }
-  ---------------------------------------------------------------
+```
 
 Once this is done, you can start your application and browse the following Swagger JSON and UI endpoints using URLs like these:
 
-  ------------------------------------------------------
+```
   http://&lt;your-root-url&gt;/swagger/v1/swagger.json
   
   http://&lt;your-root-url&gt;/swagger/ui
-  ------------------------------------------------------
+```
 
 You previously saw the generated UI created by Swashbuckle for a URL like http://&lt;your-root-url&gt;/swagger/ui. In Figure 8-9 you can also see how you can test any API method.
 

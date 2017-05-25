@@ -56,7 +56,7 @@ These files are standard docker-compose files, consistent with any Docker projec
 
 The docker-compose.yml file contains information about what images to build and what containers to launch. The templates specify how to build the eshopweb image and launch the application’s containers. You need to add the dependency on SQL Server by including an image for it (for example, mssql-server-linux), and a service for the sql.data image for Docker to build and launch that container. These settings are shown in the following example:
 
-  -----------------------------------------
+```
   version: '2'
   
   services:
@@ -78,7 +78,7 @@ The docker-compose.yml file contains information about what images to build and 
   **sql.data:**
   
   **image: microsoft/mssql-server-linux**
-  -----------------------------------------
+```
 
 The depends\_on directive tells Docker that the eShopWeb image depends on the sql.data image. Lines below that are the instructions to build an image tagged sql.data using the microsoft/mssql-server-linux image.
 
@@ -86,7 +86,7 @@ The **docker-compose** project displays the other docker-compose files under the
 
 The following example shows the docker-compose.vs.debug.yml file, which contains settings used for debugging in Visual Studio. In that file, the eshopweb image has the dev tag appended to it. That helps separate debug from release images so that you do not accidentally deploy the debug information to a production environment:
 
-  ------------------------------------------------------------
+```
   version: '2'
   
   services:
@@ -118,11 +118,11 @@ The following example shows the docker-compose.vs.debug.yml file, which contains
   labels:
   
   - "com.microsoft.visualstudio.targetoperatingsystem=linux"
-  ------------------------------------------------------------
+```
 
 The last file added is docker-compose.ci.build.yml. This would be used from the command line to build the project from a CI server. This compose file starts a Docker container that builds the images needed for your application. The following example shows the contents of the docker-compose.ci.build.yml file.
 
-  --------------------------------------------------------------------------
+```
   version: '2'
   
   services:
@@ -142,7 +142,7 @@ The last file added is docker-compose.ci.build.yml. This would be used from the 
   command: /bin/bash -c "dotnet restore ./eShopWeb.sln && dotnet publish
   
   ./eShopWeb.sln -c Release -o ./obj/Docker/publish"
-  --------------------------------------------------------------------------
+```
 
 Notice that the image is an ASP.NET Core build image. That image includes the SDK and build tools to build your application and create the required images. Running the **docker-compose** project using this file starts the build container from the image, then builds your application’s image in that container. You specify that docker-compose file as part of the command line to build your application in a Docker container, then launch it.
 

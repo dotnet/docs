@@ -56,7 +56,7 @@ DI inverts the typical object-oriented strategy of writing classes that allocate
 
 The DI container uses the web.config appSettings configuration to control whether to use the fake catalog data or the live data from the running service. The application registers an HttpModule object that builds the container and registers a pre-request handler to inject dependencies. You can see that code in the Modules/AutoFacHttpModule.cs file, which looks like the following example:
 
-  ---------------------------------------------------------------
+```
   private static IContainer CreateContainer()
   
   {
@@ -150,17 +150,17 @@ The DI container uses the web.config appSettings configuration to control whethe
   }
   
   }
-  ---------------------------------------------------------------
+```
 
 The application’s pages (Default.aspx.cs and EditPage.aspx.cs) define constructors that take these dependencies. Note that the default constructor is still present and accessible. The infrastructure needs the following code.
 
-  -------------------------------------------------
+```
   protected \_Default() { }
   
   public \_Default(ICatalogService catalog) =&gt;
   
   this.catalog = catalog;
-  -------------------------------------------------
+```
 
 The catalog APIs are all asynchronous methods. Web Forms now supports these for all data controls. The Catalog.WebForms application uses model binding for the list and edit pages; controls on the pages define SelectMethod, UpdateMethod, InsertMethod, and DeleteMethod properties that specify Task-returning asynchronous operations. Web Forms controls understand when the methods bound to a control are asynchronous. The only restriction you encounter when using asynchronous select methods is that you cannot support paging. The paging signature requires an out parameter, and asynchronous methods cannot have out parameters. This same technique is used on other pages that require data from the catalog service.
 
@@ -190,7 +190,7 @@ Let’s take a deeper look at the files added by the Docker project template. It
 
 The following Dockerfile example shows the basic settings for building a Docker image based on the Windows ASP.NET image that runs an ASP.NET site.
 
-  ---------------------------------------
+```
   FROM microsoft/aspnet
   
   ARG source
@@ -198,7 +198,7 @@ The following Dockerfile example shows the basic settings for building a Docker 
   WORKDIR /inetpub/wwwroot
   
   COPY \${source:-obj/Docker/publish} .
-  ---------------------------------------
+```
 
 This Dockerfile will look very similar to those created for running an ASP.NET Core application in Linux containers. However, there are a few important differences. The most important difference is that the base image is microsoft/aspnet, which is the current Windows Server image that includes the .NET Framework. Other differences are that the directories copied from your source directory are different.
 

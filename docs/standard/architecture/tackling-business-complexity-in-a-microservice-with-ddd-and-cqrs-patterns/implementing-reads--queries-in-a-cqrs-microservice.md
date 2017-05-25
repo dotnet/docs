@@ -50,7 +50,7 @@ When you use Dapper in your code, you directly use the SqlClient class available
 
 As shown in the following code from the ordering microservice, most of the ViewModels returned by the queries are implemented as *dynamic*. That means that the subset of attributes to be returned is based on the query itself. If you add a new column to the query or join, that data is dynamically added to the returned ViewModel. This approach reduces the need to modify queries in response to updates to the underlying data model, making this design approach more flexible and tolerant of future changes.
 
-  -----------------------------------------------------------------------------------------
+```
   using **Dapper;**
   
   using Microsoft.Extensions.Configuration;
@@ -96,7 +96,7 @@ As shown in the following code from the ordering microservice, most of the ViewM
   }
   
   }
-  -----------------------------------------------------------------------------------------
+```
 
 The important point is that by using a dynamic type, the returned collection of data will be dynamically assembled as the ViewModel.
 

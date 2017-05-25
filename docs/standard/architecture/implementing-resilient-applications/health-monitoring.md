@@ -52,7 +52,7 @@ Each service or web application should be configured by adding all its HTTP or d
 
 For instance, in the following code you can see how the catalog microservice adds a dependency on its SQL Server database.
 
-  ---------------------------------------------------------------------------
+```
   // Startup.cs from Catalog.api microservice
   
   //
@@ -80,11 +80,11 @@ For instance, in the following code you can see how the catalog microservice add
   }
   
   }
-  ---------------------------------------------------------------------------
+```
 
 However, the MVC web application of eShopOnContainers has multiple dependencies on the rest of the microservices. Therefore, it calls one AddUrlCheck method for each microservice, as shown in the following example:
 
-  ------------------------------------------------------------
+```
   // Startup.cs from the MVC web app
   
   public class Startup
@@ -116,13 +116,13 @@ However, the MVC web application of eShopOnContainers has multiple dependencies 
   }
   
   }
-  ------------------------------------------------------------
+```
 
 Thus, a microservice will not provide a “healthy” status until all its checks are healthy as well.
 
 If the microservice does not have a dependency on a service or on SQL Server, you should just add a Healthy("Ok") check. The following code is from the eShopOnContainers basket.api microservice. (The basket microservice uses the Redis cache, but the library does not yet include a Redis health check provider.)
 
-  ------------------------------------------------------------------------
+```
   services.AddHealthChecks(checks =&gt;
   
   {
@@ -132,11 +132,11 @@ If the microservice does not have a dependency on a service or on SQL Server, yo
   ValueTask&lt;IHealthCheckResult&gt;(HealthCheckResult.Healthy("Ok")));
   
   });
-  ------------------------------------------------------------------------
+```
 
 For a service or web application to expose the health check endpoint, it has to enable the UserHealthChecks(\[*url\_for\_health\_checks*\]) extension method. This method goes at the WebHostBuilder level in the main method of the Program class of your ASP.NET Core service or web application, right after UseKestrel as shown in the code below.
 
-  --------------------------------------------------
+```
   namespace Microsoft.eShopOnContainers.WebMVC
   
   {
@@ -170,7 +170,7 @@ For a service or web application to expose the health check endpoint, it has to 
   }
   
   }
-  --------------------------------------------------
+```
 
 The process works like this: each microservice exposes the endpoint /hc. That endpoint is created by the HealthChecks library ASP.NET Core middleware. When that endpoint is invoked, it runs all the health checks that are configured in the AddHealthChecks method in the Startup class.
 
@@ -182,9 +182,9 @@ Since you do not want to cause a Denial of Service (DoS) in your services, or yo
 
 By default, the cache duration is internally set to 5 minutes, but you can change that cache duration on each health check, as in the following code:
 
-  ---------------------------------------------------------------------------------
+```
   checks.AddUrlCheck(Configuration\["CatalogUrl"\],1); // 1 min as cache duration
-  ---------------------------------------------------------------------------------
+```
 
 ### Querying your microservices to report about their health status
 

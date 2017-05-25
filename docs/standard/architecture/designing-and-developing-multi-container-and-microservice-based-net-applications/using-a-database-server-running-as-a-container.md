@@ -18,7 +18,7 @@ In eShopOnContainers, there is a container named sql.data defined in the [docker
 
 The SQL Server container in the sample application is configured with the following YAML code in the docker-compose.yml file, which is executed when you run docker-compose up. Note that the YAML code has consolidated configuration information from the generic docker-compose.yml file and the docker-compose.override.yml file. (Usually you would separate the environment settings from the base or static information related to the SQL Server image.)
 
-  -------------------------------------
+```
   **sql.data:**
   
   image: microsoft/mssql-server-linux
@@ -32,13 +32,13 @@ The SQL Server container in the sample application is configured with the follow
   ports:
   
   - "5434:1433"
-  -------------------------------------
+```
 
 The following docker run command can run that container:
 
-  --------------------------------------------------------------------------------------------------------------
+```
   docker run -e 'ACCEPT\_EULA=Y' -e 'SA\_PASSWORD= your@password' -p 1433:1433 -d microsoft/mssql-server-linux
-  --------------------------------------------------------------------------------------------------------------
+```
 
 However, if you are deploying a multi-container application like eShopOnContainers, it is more convenient to use the docker-compose up command so that it deploys all the required containers for the application.
 
@@ -60,7 +60,7 @@ Having SQL Server running as a container is not just useful for a demo where you
 
 To add data to the database when the application starts up, you can add code like the following to the Configure method in the Startup class of the Web API project:
 
-  ------------------------------------------------
+```
   public class Startup
   
   {
@@ -88,11 +88,11 @@ To add data to the database when the application starts up, you can add code lik
   }
   
   }
-  ------------------------------------------------
+```
 
 The following code in the custom CatalogContextSeed class populates the data.
 
-  ----------------------------------------------------------------------------
+```
   public class CatalogContextSeed
   
   {
@@ -180,7 +180,7 @@ The following code in the custom CatalogContextSeed class populates the data.
   }
   
   }
-  ----------------------------------------------------------------------------
+```
 
 When you run integration tests, having a way to generate data consistent with your integration tests is useful. Being able to create everything from scratch, including an instance of SQL Server running on a container, is great for test environments.
 
@@ -188,7 +188,7 @@ When you run integration tests, having a way to generate data consistent with yo
 
 Another good choice when running tests is to use the Entity Framework InMemory database provider. You can specify that configuration in the ConfigureServices method of the Startup class in your Web API project:
 
-  -----------------------------------------------------------------------------------
+```
   public class Startup
   
   {
@@ -222,7 +222,7 @@ Another good choice when running tests is to use the Entity Framework InMemory d
   // Other Startup code ...
   
   }
-  -----------------------------------------------------------------------------------
+```
 
 There is an important catch, though. The in-memory database does not support many constraints that are specific to a particular database. For instance, you might add a unique index on a column in your EF Core model and write a test against your in-memory database to check that it does not let you add a duplicate value. But when you are using the in-memory database, you cannot handle unique indexes on a column. Therefore, the in-memory database does not behave exactly the same as a real SQL Server database—it does not emulate database-specific constraints.
 
@@ -240,15 +240,15 @@ Redis provides a Docker image with Redis. That image is available from Docker Hu
 
 You can directly run a Docker Redis container by executing the following Docker CLI command in your command prompt:
 
-  ---------------------------------------
+```
   docker run --name some-redis -d redis
-  ---------------------------------------
+```
 
 The Redis image includes expose:6379 (the port used by Redis), so standard container linking will make it automatically available to the linked containers.
 
 In eShopOnContainers, the basket.api microservice uses a Redis cache running as a container. That basket.data container is defined as part of the multi-container docker-compose.yml file, as shown in the following example:
 
-  ---------------------------
+```
   //docker-compose.yml file
   
   //...
@@ -260,13 +260,13 @@ In eShopOnContainers, the basket.api microservice uses a Redis cache running as 
   expose:
   
   - "6379"
-  ---------------------------
+```
 
 This code in the docker-compose.yml defines a container named basket.data based on the redis image and publishing the port 6379 internally, meaning that it will be accessible only from other containers running within the Docker host.
 
 Finally, in the docker-compose.override.yml file, the basket.api microservice for the eShopOnContainers sample defines the connection string to use for that Redis container:
 
-  --------------------------------
+```
   basket.api:
   
   environment:
@@ -276,7 +276,7 @@ Finally, in the docker-compose.override.yml file, the basket.api microservice fo
   - ConnectionString=basket.data
   
   - EventBusConnection=rabbitmq
-  --------------------------------
+```
 
 
 >[!div class="step-by-step"]

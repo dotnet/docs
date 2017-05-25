@@ -94,7 +94,7 @@ Using an official .NET image repository from Docker Hub with a version number en
 
 The following example shows a sample Dockerfile for an ASP.NET Core container.
 
-  ----------------------------------------------------------
+```
   FROM microsoft/aspnetcore:1.1
   
   ARG source
@@ -106,7 +106,7 @@ The following example shows a sample Dockerfile for an ASP.NET Core container.
   COPY \${source:-obj/Docker/publish} .
   
   ENTRYPOINT \["dotnet", " MySingleContainerWebApp.dll "\]
-  ----------------------------------------------------------
+```
 
 In this case, the container is based on version 1.1 of the official ASP.NET Core Docker image for Linux; this is the setting FROM microsoft/aspnetcore:1.1. (For further details about this base image, see the [ASP.NET Core Docker Image](https://hub.docker.com/r/microsoft/aspnetcore/) page and the [.NET Core Docker Image](https://hub.docker.com/r/microsoft/dotnet/) page.) In the Dockerfile, you also need to instruct Docker to listen on the TCP port you will use at runtime (in this case, port 80, as configured with the EXPOSE setting).
 
@@ -177,7 +177,7 @@ The [docker-compose.yml](https://docs.docker.com/compose/compose-file/) file let
 
 To use a docker-compose.yml file, you need to create the file in your main or root solution folder, with content similar to that in the following example:
 
-  -------------------------------------------------------------------
+```
   version: '2'
   
   services:
@@ -259,7 +259,7 @@ To use a docker-compose.yml file, you need to create the file in your main or ro
   environment:
   
   POSTGRES\_PASSWORD: tempPwd
-  -------------------------------------------------------------------
+```
 
 Note that this docker-compose.yml file is a simplified and merged version. It contains static configuration data for each container (like the name of the custom image), which always applies, plus configuration information that might depend on the deployment environment, like the connection string. In later sections, you will learn how you can split the docker-compose.yml configuration into multiple docker-compose files and override values depending on the environment and execution type (debug or release).
 
@@ -303,9 +303,9 @@ If your application only has a single container, you can run it by deploying it 
 
 You can run a Docker container using the docker run command, as in Figure 5-9:
 
-  ------------------------------------------------------------------------------
+```
   docker run -t -d -p 80:5000 cesardl/netcore-webapi-microservice-docker:first
-  ------------------------------------------------------------------------------
+```
 
 ![](./media/image13.png)
 
@@ -410,7 +410,7 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:
 
-  ---------------------------------------------------------
+```
   FROM microsoft/windowsservercore
   
   LABEL Description="IIS" Vendor="Microsoft" Version="10"
@@ -418,13 +418,13 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
   RUN powershell -Command Add-WindowsFeature Web-Server
   
   CMD \[ "ping", "localhost", "-t" \]
-  ---------------------------------------------------------
+```
 
 In this case, we are using a Windows Server Core base image (the FROM setting) and installing IIS with a PowerShell command (the RUN setting). In a similar way, you could also use PowerShell commands to set up additional components like ASP.NET 4.x, .NET 4.6, or any other Windows software. For example, the following command in a Dockerfile sets up ASP.NET 4.5:
 
-  -------------------------------------------------
+```
   RUN powershell add-windowsfeature web-asp-net45
-  -------------------------------------------------
+```
 
 ### Additional resources
 

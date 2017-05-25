@@ -1,5 +1,7 @@
 ---
 uid: System.Xml.Schema.XmlSchemaForm
+ms.technology: 
+  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

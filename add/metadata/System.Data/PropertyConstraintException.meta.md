@@ -34,13 +34,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.PropertyConstraintException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.PropertyConstraintException.#ctor(System.String,System.Exception)
 author: "JennieHubbard"
 ms.author: "jhubbard"

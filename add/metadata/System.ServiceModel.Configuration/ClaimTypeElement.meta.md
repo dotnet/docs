@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.ClaimTypeElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.ClaimTypeElement.ClaimType
 author: "Erikre"
 ms.author: "erikre"

@@ -149,12 +149,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Legend.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.Legend.HeaderSeparator
 ms.author: "mblythe"
 manager: "mblythe"

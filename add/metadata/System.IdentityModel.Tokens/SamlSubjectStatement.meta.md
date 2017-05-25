@@ -29,12 +29,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlSubjectStatement.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlSubjectStatement.CreatePolicy(System.IdentityModel.Claims.ClaimSet,System.IdentityModel.Selectors.SamlSecurityTokenAuthenticator)
 ms.author: "v-jibran"
 manager: "markgal"

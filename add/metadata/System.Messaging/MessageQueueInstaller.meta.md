@@ -49,11 +49,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueueInstaller.#ctor
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueueInstaller.CopyFromComponent(System.ComponentModel.IComponent)
 manager: "tyoung"
 ---

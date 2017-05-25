@@ -24,11 +24,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ObjectGetOptions.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.ObjectGetOptions.#ctor(System.Management.ManagementNamedValueCollection)
 manager: "jillfra"
 ---

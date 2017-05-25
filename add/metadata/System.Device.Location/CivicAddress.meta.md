@@ -34,11 +34,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Device.Location.CivicAddress.#ctor
-manager: "martinek"
----
-
----
 uid: System.Device.Location.CivicAddress.Unknown
 manager: "martinek"
 ---

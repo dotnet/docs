@@ -22,8 +22,3 @@ manager: "ghogen"
 uid: System.Runtime.Serialization.SerializationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Serialization.SerializationException.#ctor
-manager: "ghogen"
----

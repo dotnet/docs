@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlArrayItemAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlArrayItemAttribute.Form
 author: "Erikre"
 ms.author: "erikre"

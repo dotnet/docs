@@ -88,10 +88,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Cryptography.Xml.Reference.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

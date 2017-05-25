@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.RegularExpressions.RegexMatchTimeoutException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.RegularExpressions.RegexMatchTimeoutException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

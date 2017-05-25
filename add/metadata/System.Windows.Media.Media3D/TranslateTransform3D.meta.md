@@ -67,13 +67,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.TranslateTransform3D.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.TranslateTransform3D.Clone
 author: "stevehoag"
 ms.author: "shoag"

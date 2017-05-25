@@ -59,12 +59,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.DataPoint.#ctor(System.Double,System.Double[])
 ms.author: "mblythe"
 manager: "mblythe"

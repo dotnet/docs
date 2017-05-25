@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.ActiveDirectoryMembershipUser.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.ActiveDirectoryMembershipUser.ProviderUserKey
 author: "tdykstra"
 ms.author: "tdykstra"

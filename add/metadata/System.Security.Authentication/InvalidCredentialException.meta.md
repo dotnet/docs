@@ -27,9 +27,3 @@ uid: System.Security.Authentication.InvalidCredentialException.#ctor(System.Runt
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Security.Authentication.InvalidCredentialException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

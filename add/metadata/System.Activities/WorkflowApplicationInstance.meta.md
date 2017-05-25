@@ -55,13 +55,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplicationInstance.Abandon
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.WorkflowApplicationInstance.BeginAbandon(System.TimeSpan,System.AsyncCallback,System.Object)
 author: "Erikre"
 ms.author: "erikre"

@@ -137,12 +137,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.MobileListItemCollection.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.MobileControls.MobileListItemCollection.Add(System.String)
 ms.author: "riande"
 manager: "wpickett"

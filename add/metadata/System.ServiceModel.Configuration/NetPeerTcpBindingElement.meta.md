@@ -67,8 +67,3 @@ manager: "ghogen"
 uid: System.ServiceModel.Configuration.NetPeerTcpBindingElement.BindingElementType
 manager: "ghogen"
 ---
-
----
-uid: System.ServiceModel.Configuration.NetPeerTcpBindingElement.#ctor
-manager: "ghogen"
----

@@ -23,12 +23,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAttribute.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlAttribute.OriginalIssuer
 ms.author: "v-jibran"
 manager: "markgal"

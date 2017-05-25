@@ -125,13 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.DesignSurface.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.DesignSurface.CreateInstance(System.Type)
 author: "stevehoag"
 ms.author: "shoag"
@@ -252,13 +245,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Design.DesignSurface.OnUnloaded(System.EventArgs)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.DesignSurface.Dispose
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

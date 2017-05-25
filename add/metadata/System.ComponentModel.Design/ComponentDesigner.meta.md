@@ -208,13 +208,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.ComponentDesigner.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.ComponentDesigner.System#ComponentModel#Design#ITreeDesigner#Children
 ms.author: "jimwalk"
 manager: "martinek"

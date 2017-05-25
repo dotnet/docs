@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripProfessionalRenderer.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripProfessionalRenderer.OnRenderArrow(System.Windows.Forms.ToolStripArrowRenderEventArgs)
 author: "stevehoag"
 ms.author: "shoag"

@@ -158,10 +158,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Activities.WorkflowServiceHost.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

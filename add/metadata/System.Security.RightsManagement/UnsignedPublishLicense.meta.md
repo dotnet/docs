@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.RightsManagement.UnsignedPublishLicense.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Security.RightsManagement.UnsignedPublishLicense.Sign(System.Security.RightsManagement.SecureEnvironment,System.Security.RightsManagement.UseLicense@)
 author: "stevehoag"
 ms.author: "shoag"

@@ -21,9 +21,3 @@ uid: System.Net.Configuration.AuthenticationModuleElement.#ctor
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.Configuration.AuthenticationModuleElement.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

@@ -411,12 +411,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.Saml2SecurityTokenHandler.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.Saml2SecurityTokenHandler.ReadAction(System.Xml.XmlReader)
 ms.author: "v-jibran"
 manager: "markgal"

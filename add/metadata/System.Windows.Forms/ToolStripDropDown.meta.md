@@ -121,13 +121,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripDropDown.Show
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripDropDown.GripMargin
 author: "stevehoag"
 ms.author: "shoag"

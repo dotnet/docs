@@ -181,13 +181,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowInvoker.Invoke
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.WorkflowInvoker.Invoke``1(System.Activities.Activity{``0},System.Collections.Generic.IDictionary{System.String,System.Object})
 author: "Erikre"
 ms.author: "erikre"
@@ -203,13 +196,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowInvoker.Extensions
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowInvoker.InvokeAsync
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

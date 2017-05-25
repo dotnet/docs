@@ -41,13 +41,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlTypes.SqlChars.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlTypes.SqlChars.Storage
 author: "JennieHubbard"
 ms.author: "jhubbard"

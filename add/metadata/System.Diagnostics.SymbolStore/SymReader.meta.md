@@ -111,13 +111,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymReader.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymReader.GetGlobalVariables
 author: "mairaw"
 ms.author: "mairaw"

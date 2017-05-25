@@ -174,13 +174,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.MenuItem.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.MenuItem.PerformSelect
 author: "stevehoag"
 ms.author: "shoag"
@@ -196,13 +189,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.MenuItem.Index
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.MenuItem.MergeMenu
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

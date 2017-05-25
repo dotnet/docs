@@ -109,10 +109,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Threading.Semaphore.Release
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

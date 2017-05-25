@@ -34,13 +34,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Sql.SqlNotificationRequest.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Sql.SqlNotificationRequest.Timeout
 author: "JennieHubbard"
 ms.author: "jhubbard"

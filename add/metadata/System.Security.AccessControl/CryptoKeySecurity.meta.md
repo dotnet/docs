@@ -118,13 +118,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.CryptoKeySecurity.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.AccessControl.CryptoKeySecurity.RemoveAccessRuleSpecific(System.Security.AccessControl.CryptoKeyAccessRule)
 author: "mairaw"
 ms.author: "mairaw"

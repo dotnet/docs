@@ -146,13 +146,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Packaging.EncryptedPackageEnvelope.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.IO.Packaging.EncryptedPackageEnvelope.Open(System.String,System.IO.FileAccess,System.IO.FileShare)
 author: "stevehoag"
 ms.author: "shoag"

@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.IDuplexSession.CloseOutputSession
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.IDuplexSession.BeginCloseOutputSession(System.TimeSpan,System.AsyncCallback,System.Object)
 author: "Erikre"
 ms.author: "erikre"

@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.TripleDES.Create
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.TripleDES.IsWeakKey(System.Byte[])
 author: "mairaw"
 ms.author: "mairaw"

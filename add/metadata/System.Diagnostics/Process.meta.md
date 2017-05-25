@@ -181,13 +181,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.Process.WaitForExit
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.Process.GetProcessesByName(System.String)
 author: "mairaw"
 ms.author: "mairaw"
@@ -489,13 +482,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.Process.GetProcesses
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.Process.EnterDebugMode
 author: "mairaw"
 ms.author: "mairaw"
@@ -504,13 +490,6 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.Process.GetProcessById
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.Process.Start
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -595,13 +574,6 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.Process.CloseMainWindow
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.Process.WaitForInputIdle
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

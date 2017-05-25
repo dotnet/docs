@@ -53,13 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.NetHttpsBinding.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.NetHttpsBinding.MessageEncoding
 author: "Erikre"
 ms.author: "erikre"

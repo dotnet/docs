@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.ConcurrentExclusiveSchedulerPair.Completion
 author: "rpetrusha"
 ms.author: "ronpet"

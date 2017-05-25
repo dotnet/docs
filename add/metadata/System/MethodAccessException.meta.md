@@ -32,10 +32,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.MethodAccessException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

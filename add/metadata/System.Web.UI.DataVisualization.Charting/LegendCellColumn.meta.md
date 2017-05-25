@@ -153,12 +153,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.LegendCellColumn.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.LegendCellColumn.Margins
 ms.author: "mblythe"
 manager: "mblythe"

@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.DirectoryInfo.EnumerateFileSystemInfos
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.DirectoryInfo.SetAccessControl(System.Security.AccessControl.DirectorySecurity)
 author: "mairaw"
 ms.author: "mairaw"
@@ -83,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.DirectoryInfo.GetDirectories
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.DirectoryInfo.EnumerateFiles(System.String,System.IO.SearchOption)
 author: "mairaw"
 ms.author: "mairaw"
@@ -112,13 +98,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.DirectoryInfo.CreateSubdirectory
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.DirectoryInfo.EnumerateDirectories
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -181,13 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.DirectoryInfo.EnumerateFiles
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.DirectoryInfo.EnumerateDirectories(System.String,System.IO.SearchOption)
 author: "mairaw"
 ms.author: "mairaw"
@@ -223,20 +195,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.DirectoryInfo.GetFiles
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.DirectoryInfo.Delete
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.DirectoryInfo.EnumerateFileSystemInfos(System.String,System.IO.SearchOption)
 author: "mairaw"
 ms.author: "mairaw"
@@ -244,21 +202,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.DirectoryInfo.GetAccessControl
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.DirectoryInfo.GetFileSystemInfos(System.String)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.DirectoryInfo.GetFileSystemInfos
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -301,13 +245,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.DirectoryInfo.#ctor(System.String)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.DirectoryInfo.Create
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymDocument.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymDocument.Language
 author: "mairaw"
 ms.author: "mairaw"

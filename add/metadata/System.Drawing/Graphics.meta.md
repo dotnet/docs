@@ -1406,13 +1406,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Graphics.BeginContainer
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Graphics.GetContextInfo
 author: "stevehoag"
 ms.author: "shoag"
@@ -1735,13 +1728,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Graphics.Flush
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Graphics.FillEllipse(System.Drawing.Brush,System.Drawing.Rectangle)
 author: "stevehoag"
 ms.author: "shoag"
@@ -1925,13 +1911,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Graphics.DrawRectangle(System.Drawing.Pen,System.Single,System.Single,System.Single,System.Single)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Graphics.ReleaseHdc
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

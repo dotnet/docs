@@ -41,12 +41,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogException.#ctor
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventLogException.#ctor(System.Int32)
 ms.author: "jgalasyn"
 manager: "ghogen"

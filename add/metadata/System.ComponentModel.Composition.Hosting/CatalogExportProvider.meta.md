@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.CatalogExportProvider.#ctor
 author: "rpetrusha"
 ms.author: "ronpet"

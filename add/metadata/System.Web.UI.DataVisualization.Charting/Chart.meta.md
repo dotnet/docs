@@ -215,12 +215,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.Chart.Dispose
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.Chart.Compression
 ms.author: "mblythe"
 manager: "mblythe"
@@ -348,12 +342,6 @@ manager: "mblythe"
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Chart.OnCustomize(System.EventArgs)
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel
 ms.author: "mblythe"
 manager: "mblythe"
 ---

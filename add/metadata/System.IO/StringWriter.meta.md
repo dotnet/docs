@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.StringWriter.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.StringWriter.Close
 author: "mairaw"
 ms.author: "mairaw"

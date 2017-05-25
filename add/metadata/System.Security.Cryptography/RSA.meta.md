@@ -97,13 +97,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSA.Create
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RSA.KeyExchangeAlgorithm
 author: "mairaw"
 ms.author: "mairaw"

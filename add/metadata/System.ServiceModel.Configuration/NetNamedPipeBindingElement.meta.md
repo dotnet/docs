@@ -97,13 +97,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.NetNamedPipeBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.NetNamedPipeBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)
 author: "Erikre"
 ms.author: "erikre"

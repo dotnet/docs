@@ -195,13 +195,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Deployment.Application.ApplicationDeployment.CurrentDeployment
 author: "stevehoag"
 ms.author: "shoag"
@@ -210,13 +203,6 @@ manager: "wpickett"
 
 ---
 uid: System.Deployment.Application.ApplicationDeployment.ActivationUri
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdate
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

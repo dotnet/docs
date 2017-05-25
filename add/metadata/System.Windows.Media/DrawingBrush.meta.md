@@ -25,13 +25,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.DrawingBrush.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.DrawingBrush.Clone
 author: "stevehoag"
 ms.author: "shoag"

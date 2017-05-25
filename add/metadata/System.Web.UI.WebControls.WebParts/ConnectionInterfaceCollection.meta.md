@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.ConnectionInterfaceCollection.CopyTo(System.Type[],System.Int32)
 author: "tdykstra"
 ms.author: "tdykstra"

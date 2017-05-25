@@ -143,13 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Timeline.CreateClock
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Timeline.Name
 author: "stevehoag"
 ms.author: "shoag"

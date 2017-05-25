@@ -776,13 +776,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Control.DataBind
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Control.Adapter
 author: "tdykstra"
 ms.author: "tdykstra"

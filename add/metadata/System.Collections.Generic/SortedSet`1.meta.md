@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.SortedSet`1.CreateSetComparer
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.SortedSet`1.Min
 author: "mairaw"
 ms.author: "mairaw"
@@ -259,13 +252,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Generic.SortedSet`1.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

@@ -54,13 +54,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Owner
 ms.author: "kempb"
 manager: "ghogen"

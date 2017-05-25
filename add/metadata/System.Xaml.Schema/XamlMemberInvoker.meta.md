@@ -19,11 +19,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlMemberInvoker.#ctor
-manager: "martinek"
----
-
----
 uid: System.Xaml.Schema.XamlMemberInvoker.#ctor(System.Xaml.XamlMember)
 manager: "martinek"
 ---

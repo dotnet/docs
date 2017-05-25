@@ -41,12 +41,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor
-ms.author: "v-jibran"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Security.WSTrustChannelFactory.#ctor(System.String)
 ms.author: "v-jibran"
 manager: "ghogen"

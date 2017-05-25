@@ -46,10 +46,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Cryptography.Pkcs.Pkcs9AttributeObject.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

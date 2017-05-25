@@ -74,13 +74,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WSHttpBinding.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.WSHttpBinding.#ctor(System.ServiceModel.SecurityMode,System.Boolean)
 author: "Erikre"
 ms.author: "erikre"

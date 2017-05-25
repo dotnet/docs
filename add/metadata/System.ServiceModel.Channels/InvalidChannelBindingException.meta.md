@@ -32,10 +32,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Channels.InvalidChannelBindingException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

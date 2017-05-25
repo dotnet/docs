@@ -60,10 +60,3 @@ author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.WebControls.WebParts.EditorPartCollection.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----

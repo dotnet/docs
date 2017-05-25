@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineThicknessKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SplineThicknessKeyFrame.#ctor(System.Windows.Thickness)
 author: "stevehoag"
 ms.author: "shoag"

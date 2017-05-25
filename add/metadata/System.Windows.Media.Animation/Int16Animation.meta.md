@@ -67,13 +67,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Int16Animation.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Int16Animation.IsAdditive
 ms.author: "kempb"
 manager: "ghogen"

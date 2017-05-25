@@ -27,9 +27,3 @@ uid: System.IdentityModel.Metadata.MetadataSerializationException.#ctor(System.S
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Metadata.MetadataSerializationException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

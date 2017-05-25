@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.SpotLight.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.SpotLight.#ctor(System.Windows.Media.Color,System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Vector3D,System.Double,System.Double)
 ms.author: "kempb"
 manager: "ghogen"

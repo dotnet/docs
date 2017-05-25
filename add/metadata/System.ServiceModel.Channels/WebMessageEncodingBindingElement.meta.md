@@ -83,13 +83,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.WebMessageEncodingBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxWritePoolSize
 author: "Erikre"
 ms.author: "erikre"

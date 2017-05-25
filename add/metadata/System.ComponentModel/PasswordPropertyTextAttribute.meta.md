@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.PasswordPropertyTextAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.PasswordPropertyTextAttribute.No
 author: "stevehoag"
 ms.author: "shoag"

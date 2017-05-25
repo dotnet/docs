@@ -207,10 +207,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Threading.ReaderWriterLockSlim.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

@@ -19,12 +19,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Navigation.RequestNavigateEventArgs.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Navigation.RequestNavigateEventArgs.InvokeEventHandler(System.Delegate,System.Object)
 author: "stevehoag"
 ms.author: "shoag"

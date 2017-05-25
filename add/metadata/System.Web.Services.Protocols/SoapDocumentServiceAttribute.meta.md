@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapDocumentServiceAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Protocols.SoapDocumentServiceAttribute.ParameterStyle
 author: "Erikre"
 ms.author: "erikre"

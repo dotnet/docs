@@ -143,12 +143,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.LegendItem.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.LegendItem.ImageStyle
 ms.author: "mblythe"
 manager: "mblythe"

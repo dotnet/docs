@@ -39,10 +39,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Collections.CaseInsensitiveComparer.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

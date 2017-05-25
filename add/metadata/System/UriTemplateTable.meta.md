@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.UriTemplateTable.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.UriTemplateTable.#ctor(System.Uri,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.UriTemplate,System.Object}})
 author: "Erikre"
 ms.author: "erikre"

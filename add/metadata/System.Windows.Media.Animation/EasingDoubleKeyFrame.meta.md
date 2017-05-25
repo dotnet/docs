@@ -12,13 +12,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingDoubleKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingDoubleKeyFrame.CreateInstanceCore
 author: "stevehoag"
 ms.author: "shoag"

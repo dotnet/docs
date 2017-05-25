@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.SoapAttributeAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.SoapAttributeAttribute.Namespace
 author: "Erikre"
 ms.author: "erikre"

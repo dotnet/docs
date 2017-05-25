@@ -45,9 +45,3 @@ uid: System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.WriteXml(Syste
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Tokens.SamlAudienceRestrictionCondition.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

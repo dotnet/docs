@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Logging.Log.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Logging.Log.#ctor(System.String)
 author: "stevehoag"
 ms.author: "shoag"

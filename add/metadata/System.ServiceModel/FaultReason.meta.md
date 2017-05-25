@@ -60,10 +60,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.FaultReason.GetMatchingTranslation
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

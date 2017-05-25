@@ -167,13 +167,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

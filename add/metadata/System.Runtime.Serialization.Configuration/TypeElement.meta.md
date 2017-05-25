@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.Serialization.Configuration.TypeElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.Serialization.Configuration.TypeElement.Index
 author: "Erikre"
 ms.author: "erikre"

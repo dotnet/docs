@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Primitives.ComposablePartCatalog.GetExports(System.ComponentModel.Composition.Primitives.ImportDefinition)
 author: "rpetrusha"
 ms.author: "ronpet"

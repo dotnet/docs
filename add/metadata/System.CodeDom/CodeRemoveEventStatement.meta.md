@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeRemoveEventStatement.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeRemoveEventStatement.Listener
 author: "rpetrusha"
 ms.author: "ronpet"

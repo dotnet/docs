@@ -22,8 +22,3 @@ manager: "leannef"
 uid: System.Windows.Xps.XpsPackagingException.#ctor(System.String,System.Exception)
 manager: "leannef"
 ---
-
----
-uid: System.Windows.Xps.XpsPackagingException.#ctor
-manager: "leannef"
----

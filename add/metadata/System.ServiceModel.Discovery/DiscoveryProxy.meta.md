@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.DiscoveryProxy.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.DiscoveryProxy.#ctor(System.ServiceModel.Discovery.DiscoveryMessageSequenceGenerator)
 author: "Erikre"
 ms.author: "erikre"

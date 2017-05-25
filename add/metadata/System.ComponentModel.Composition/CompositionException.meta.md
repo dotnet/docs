@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.CompositionException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.CompositionException.RootCauses
 author: "rpetrusha"
 ms.author: "ronpet"

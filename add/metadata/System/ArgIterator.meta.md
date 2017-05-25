@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ArgIterator.GetNextArg
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ArgIterator.GetRemainingCount
 author: "rpetrusha"
 ms.author: "ronpet"

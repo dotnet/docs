@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.ValueProviderCollection.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.ValueProviderCollection.InsertItem(System.Int32,System.Web.ModelBinding.IValueProvider)
 author: "tdykstra"
 ms.author: "tdykstra"

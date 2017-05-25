@@ -167,13 +167,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.FormsAuthentication.RedirectToLoginPage
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(System.String,System.String)
 author: "tdykstra"
 ms.author: "tdykstra"

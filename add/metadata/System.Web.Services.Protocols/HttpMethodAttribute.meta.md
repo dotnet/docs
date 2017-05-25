@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.HttpMethodAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Protocols.HttpMethodAttribute.ReturnFormatter
 author: "Erikre"
 ms.author: "erikre"

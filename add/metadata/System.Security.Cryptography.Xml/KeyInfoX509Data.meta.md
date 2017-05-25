@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.KeyInfoX509Data.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.KeyInfoX509Data.Certificates
 author: "mairaw"
 ms.author: "mairaw"

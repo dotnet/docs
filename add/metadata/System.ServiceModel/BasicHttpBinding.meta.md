@@ -53,13 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.BasicHttpBinding.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.BasicHttpBinding.#ctor(System.ServiceModel.BasicHttpSecurityMode)
 author: "Erikre"
 ms.author: "erikre"

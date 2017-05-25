@@ -109,10 +109,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.PropertyTabAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

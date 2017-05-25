@@ -54,13 +54,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Vector3DAnimation.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Vector3DAnimation.ByProperty
 author: "stevehoag"
 ms.author: "shoag"

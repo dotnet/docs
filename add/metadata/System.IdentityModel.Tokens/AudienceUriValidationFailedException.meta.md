@@ -17,12 +17,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.String)
 ms.author: "v-jibran"
 manager: "markgal"

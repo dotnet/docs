@@ -25,10 +25,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.IdentityModel.Selectors.WindowsUserNameSecurityTokenAuthenticator.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

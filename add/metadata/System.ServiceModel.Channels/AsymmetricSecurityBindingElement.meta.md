@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.AsymmetricSecurityBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.AsymmetricSecurityBindingElement.RecipientTokenParameters
 author: "Erikre"
 ms.author: "erikre"

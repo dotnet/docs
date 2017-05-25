@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.ServiceActivationElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.ServiceActivationElement.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

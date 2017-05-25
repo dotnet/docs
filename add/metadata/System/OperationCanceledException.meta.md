@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.OperationCanceledException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.OperationCanceledException.#ctor(System.String,System.Exception)
 author: "rpetrusha"
 ms.author: "ronpet"

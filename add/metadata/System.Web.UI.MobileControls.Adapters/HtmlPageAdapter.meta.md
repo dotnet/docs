@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.#ctor(System.Int32)
 author: "tdykstra"
 ms.author: "tdykstra"

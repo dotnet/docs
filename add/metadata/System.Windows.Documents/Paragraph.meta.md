@@ -47,13 +47,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Paragraph.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Documents.Paragraph.ShouldSerializeInlines(System.Windows.Markup.XamlDesignerSerializationManager)
 author: "stevehoag"
 ms.author: "shoag"

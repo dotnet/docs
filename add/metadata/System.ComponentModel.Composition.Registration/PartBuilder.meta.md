@@ -167,20 +167,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Registration.PartBuilder.ExportInterfaces
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Registration.PartBuilder.Export
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Registration.PartBuilder.ExportProperties
 author: "rpetrusha"
 ms.author: "ronpet"

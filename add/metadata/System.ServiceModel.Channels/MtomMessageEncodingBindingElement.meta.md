@@ -132,13 +132,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.MtomMessageEncodingBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.MtomMessageEncodingBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
 author: "Erikre"
 ms.author: "erikre"

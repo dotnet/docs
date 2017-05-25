@@ -239,12 +239,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationElementCollection.CreateNewElement
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConfigurationElementCollection.GetEnumerator
 ms.author: "riande"
 manager: "wpickett"
@@ -252,12 +246,6 @@ manager: "wpickett"
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.#ctor
 ms.author: "riande"
 manager: "wpickett"
 ---

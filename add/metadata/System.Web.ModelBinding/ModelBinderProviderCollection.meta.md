@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.ModelBinderProviderCollection.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.ModelBinderProviderCollection.RegisterBinderForType(System.Type,System.Web.ModelBinding.IModelBinder)
 author: "tdykstra"
 ms.author: "tdykstra"

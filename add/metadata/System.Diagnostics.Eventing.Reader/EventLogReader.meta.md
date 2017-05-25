@@ -83,12 +83,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor
 ms.author: "jgalasyn"
 manager: "ghogen"
@@ -96,12 +90,6 @@ manager: "ghogen"
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.IO.SeekOrigin,System.Int64)
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent
 ms.author: "jgalasyn"
 manager: "ghogen"
 ---

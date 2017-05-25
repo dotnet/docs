@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.TransformerTypeCollection.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.TransformerTypeCollection.Empty
 author: "tdykstra"
 ms.author: "tdykstra"

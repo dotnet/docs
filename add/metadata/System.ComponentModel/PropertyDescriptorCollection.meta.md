@@ -175,13 +175,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.PropertyDescriptorCollection.Sort
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.PropertyDescriptorCollection.System#Collections#IEnumerable#GetEnumerator
 author: "stevehoag"
 ms.author: "shoag"

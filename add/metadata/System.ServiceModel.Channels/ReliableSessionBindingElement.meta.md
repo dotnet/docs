@@ -111,13 +111,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.ReliableSessionBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize
 author: "Erikre"
 ms.author: "erikre"

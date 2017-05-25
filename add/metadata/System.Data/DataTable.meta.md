@@ -153,13 +153,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataTable.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataTable.LoadDataRow(System.Object[],System.Data.LoadOption)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -608,13 +601,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataTable.Select
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataTable.ReadXmlSchema(System.String)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -812,13 +798,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.DataTable.OnRowDeleting(System.Data.DataRowChangeEventArgs)
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.DataTable.GetChanges
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

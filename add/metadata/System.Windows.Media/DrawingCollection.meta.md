@@ -128,13 +128,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.DrawingCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.DrawingCollection.Insert(System.Int32,System.Windows.Media.Drawing)
 author: "stevehoag"
 ms.author: "shoag"

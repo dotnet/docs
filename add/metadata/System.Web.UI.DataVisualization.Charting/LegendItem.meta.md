@@ -101,12 +101,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.LegendItem.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.LegendItem.Legend
 ms.author: "mblythe"
 manager: "mblythe"

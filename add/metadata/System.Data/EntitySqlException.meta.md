@@ -55,13 +55,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntitySqlException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntitySqlException.#ctor(System.String)
 author: "JennieHubbard"
 ms.author: "jhubbard"

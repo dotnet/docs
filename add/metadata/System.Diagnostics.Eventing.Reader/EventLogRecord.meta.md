@@ -41,12 +41,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogRecord.FormatDescription
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventLogRecord.Properties
 ms.author: "jgalasyn"
 manager: "ghogen"

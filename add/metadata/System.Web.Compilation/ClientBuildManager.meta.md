@@ -216,13 +216,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Compilation.ClientBuildManager.PrecompileApplication
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Compilation.ClientBuildManager.GetBrowserDefinitions
 author: "tdykstra"
 ms.author: "tdykstra"

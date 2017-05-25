@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeChecksumPragma.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeChecksumPragma.#ctor(System.String,System.Guid,System.Byte[])
 author: "rpetrusha"
 ms.author: "ronpet"

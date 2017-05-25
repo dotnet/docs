@@ -29,11 +29,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.PutOptions.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.PutOptions.UseAmendedQualifiers
 manager: "jillfra"
 ---

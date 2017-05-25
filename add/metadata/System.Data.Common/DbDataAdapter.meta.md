@@ -104,13 +104,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbDataAdapter.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbDataAdapter.Update(System.Data.DataRow[])
 author: "JennieHubbard"
 ms.author: "jhubbard"

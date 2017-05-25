@@ -202,13 +202,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.IsolatedStorage.IsolatedStorageFile.Remove
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForApplication
 author: "mairaw"
 ms.author: "mairaw"
@@ -244,13 +237,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForSite
 author: "mairaw"
 ms.author: "mairaw"
@@ -273,13 +259,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

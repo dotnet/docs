@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11.GetSchema
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.Version11.DiscoveryMessageSequence11.ReadXml(System.Xml.XmlReader)
 author: "Erikre"
 ms.author: "erikre"

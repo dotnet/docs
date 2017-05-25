@@ -39,10 +39,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Workflow.Activities.Rules.UpdatedRuleSetAction.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

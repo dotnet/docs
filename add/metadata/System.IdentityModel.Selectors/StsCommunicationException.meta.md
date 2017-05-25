@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IdentityModel.Selectors.StsCommunicationException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IdentityModel.Selectors.StsCommunicationException.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

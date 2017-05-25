@@ -32,10 +32,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Threading.ThreadInterruptedException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

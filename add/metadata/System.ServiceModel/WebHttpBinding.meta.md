@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WebHttpBinding.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.WebHttpBinding.Scheme
 author: "Erikre"
 ms.author: "erikre"

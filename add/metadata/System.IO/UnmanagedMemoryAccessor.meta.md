@@ -97,13 +97,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.UnmanagedMemoryAccessor.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.UnmanagedMemoryAccessor.Capacity
 author: "mairaw"
 ms.author: "mairaw"
@@ -112,13 +105,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.SByte)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.UnmanagedMemoryAccessor.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

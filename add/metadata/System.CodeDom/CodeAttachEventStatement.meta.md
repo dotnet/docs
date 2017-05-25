@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeAttachEventStatement.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeAttachEventStatement.Listener
 author: "rpetrusha"
 ms.author: "ronpet"

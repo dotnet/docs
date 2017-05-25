@@ -272,13 +272,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.MaskedTextProvider.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.MaskedTextProvider.FindAssignedEditPositionFrom(System.Int32,System.Boolean)
 author: "stevehoag"
 ms.author: "shoag"
@@ -440,13 +433,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.MaskedTextProvider.Clear
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.MaskedTextProvider.#ctor(System.String,System.Char,System.Boolean)
 author: "stevehoag"
 ms.author: "shoag"
@@ -602,13 +588,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.MaskedTextProvider.#ctor(System.String,System.Globalization.CultureInfo)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.MaskedTextProvider.Remove
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

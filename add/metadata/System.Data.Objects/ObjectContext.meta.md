@@ -272,13 +272,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Objects.ObjectContext.SaveChanges
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Objects.ObjectContext.CreateProxyTypes(System.Collections.Generic.IEnumerable{System.Type})
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -301,13 +294,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Objects.ObjectContext.CreateQuery``1(System.String,System.Data.Objects.ObjectParameter[])
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Objects.ObjectContext.Dispose
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

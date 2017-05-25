@@ -41,12 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.QueryStringParameter.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.QueryStringParameter.#ctor(System.String,System.String)
 ms.author: "riande"
 manager: "wpickett"

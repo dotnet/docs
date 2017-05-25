@@ -19,11 +19,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueueTransaction.Dispose
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueueTransaction.Dispose(System.Boolean)
 manager: "tyoung"
 ---

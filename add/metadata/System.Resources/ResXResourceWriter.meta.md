@@ -111,13 +111,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Resources.ResXResourceWriter.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Resources.ResXResourceWriter.AddMetadata(System.String,System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

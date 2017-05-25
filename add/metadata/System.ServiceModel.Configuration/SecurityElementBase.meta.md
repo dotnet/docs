@@ -181,13 +181,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.SecurityElementBase.CreateBindingElement
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.SecurityElementBase.RequireSignatureConfirmation
 author: "Erikre"
 ms.author: "erikre"

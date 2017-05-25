@@ -23,12 +23,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.#ctor
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator`1.op_Increment(Microsoft.VisualC.StlClr.Generic.ConstReverseRandomAccessIterator{`0}@,System.Int32)
 ms.author: "mblome"
 manager: "ghogen"

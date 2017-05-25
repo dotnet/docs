@@ -60,13 +60,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Vector3DKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Vector3DKeyFrame.KeyTime
 author: "stevehoag"
 ms.author: "shoag"

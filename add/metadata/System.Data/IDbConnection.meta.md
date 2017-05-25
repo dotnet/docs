@@ -74,10 +74,3 @@ author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
 ---
-
----
-uid: System.Data.IDbConnection.BeginTransaction
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----

@@ -53,10 +53,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Activities.Statements.Switch`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

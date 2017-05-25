@@ -181,13 +181,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.OrderedDictionary.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.OrderedDictionary.#ctor(System.Int32,System.Collections.IEqualityComparer)
 author: "mairaw"
 ms.author: "mairaw"

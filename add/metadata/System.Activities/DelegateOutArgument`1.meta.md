@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DelegateOutArgument`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DelegateOutArgument`1.Set(System.Activities.ActivityContext,`0)
 author: "Erikre"
 ms.author: "erikre"

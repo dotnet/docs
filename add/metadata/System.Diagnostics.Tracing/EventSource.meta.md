@@ -272,13 +272,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.Tracing.EventSource.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.Tracing.EventSource.Finalize
 author: "mairaw"
 ms.author: "mairaw"
@@ -391,13 +384,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.Tracing.EventSource.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.Tracing.EventSource.Write
 author: "mairaw"
 ms.author: "mairaw"
@@ -406,13 +392,6 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.String)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.Tracing.EventSource.IsEnabled
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeEventReferenceExpression.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeEventReferenceExpression.EventName
 author: "rpetrusha"
 ms.author: "ronpet"

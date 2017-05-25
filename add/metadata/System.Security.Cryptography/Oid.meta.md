@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Oid.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Oid.Value
 author: "mairaw"
 ms.author: "mairaw"

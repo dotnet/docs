@@ -111,13 +111,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.FaultException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.FaultException.#ctor(System.ServiceModel.FaultReason)
 author: "Erikre"
 ms.author: "erikre"

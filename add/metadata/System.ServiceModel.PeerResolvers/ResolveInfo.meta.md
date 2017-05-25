@@ -23,12 +23,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.ResolveInfo.#ctor
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.PeerResolvers.ResolveInfo.#ctor(System.Guid,System.String,System.Int32)
 ms.author: "bobdel"
 manager: "ghogen"

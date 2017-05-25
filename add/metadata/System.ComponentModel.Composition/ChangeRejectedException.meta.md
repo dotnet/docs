@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.ChangeRejectedException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.ChangeRejectedException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

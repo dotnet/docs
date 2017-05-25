@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Permissions.WebBrowserPermission.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Permissions.WebBrowserPermission.ToXml
 author: "mairaw"
 ms.author: "mairaw"

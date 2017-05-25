@@ -102,13 +102,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintSystemObject.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintSystemObject.#ctor
 ms.author: "kempb"
 manager: "ghogen"

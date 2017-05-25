@@ -55,13 +55,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbConnectionStringBuilder.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OleDb.OleDbConnectionStringBuilder.PersistSecurityInfo
 author: "JennieHubbard"
 ms.author: "jhubbard"

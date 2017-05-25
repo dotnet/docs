@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstanceLockedException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.DurableInstancing.InstanceLockedException.#ctor(System.Xml.Linq.XName,System.Guid,System.Exception)
 author: "Erikre"
 ms.author: "erikre"

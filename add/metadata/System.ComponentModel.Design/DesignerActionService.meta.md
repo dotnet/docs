@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.DesignerActionService.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.DesignerActionService.Contains(System.ComponentModel.IComponent)
 author: "stevehoag"
 ms.author: "shoag"

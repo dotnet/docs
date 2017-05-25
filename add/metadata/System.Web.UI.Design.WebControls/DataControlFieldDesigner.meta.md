@@ -71,12 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateField
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetNodeText(System.Web.UI.WebControls.DataControlField)
 ms.author: "riande"
 manager: "wpickett"

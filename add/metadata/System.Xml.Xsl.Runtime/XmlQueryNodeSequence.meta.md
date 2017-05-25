@@ -81,13 +81,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.System#Collections#Generic#ICollection{System#Xml#XPath#XPathItem}#IsReadOnly
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.System#Collections#Generic#ICollection{System#Xml#XPath#XPathItem}#Add
 manager: "ghogen"
 ---
@@ -160,13 +153,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.AddClone(System.Xml.XPath.XPathNavigator)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Xsl.Runtime.XmlQueryNodeSequence.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

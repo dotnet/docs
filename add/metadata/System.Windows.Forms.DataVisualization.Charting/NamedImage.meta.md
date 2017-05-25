@@ -21,12 +21,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.NamedImage.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.NamedImage.Image
 ms.author: "mblythe"
 manager: "mblythe"

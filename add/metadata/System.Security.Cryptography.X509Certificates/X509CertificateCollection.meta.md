@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509CertificateCollection.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.X509Certificates.X509CertificateCollection.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate[])
 author: "mairaw"
 ms.author: "mairaw"

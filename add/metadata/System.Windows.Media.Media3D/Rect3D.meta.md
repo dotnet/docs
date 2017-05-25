@@ -158,13 +158,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Rect3D.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.Rect3D.Contains(System.Windows.Media.Media3D.Point3D)
 author: "stevehoag"
 ms.author: "shoag"

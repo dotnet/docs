@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.PointKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.PointKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value
 ms.author: "jimwalk"
 manager: "martinek"

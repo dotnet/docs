@@ -12,12 +12,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame.InterpolateValueCore(System.Windows.Thickness,System.Double)
 author: "stevehoag"
 ms.author: "shoag"

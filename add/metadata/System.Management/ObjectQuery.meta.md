@@ -9,11 +9,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ObjectQuery.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.ObjectQuery.#ctor(System.String,System.String)
 manager: "jillfra"
 ---

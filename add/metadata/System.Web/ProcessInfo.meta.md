@@ -35,12 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ProcessInfo.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.ProcessInfo.Status
 ms.author: "riande"
 manager: "wpickett"

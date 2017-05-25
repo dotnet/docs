@@ -19,13 +19,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Resources.StreamResourceInfo.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Resources.StreamResourceInfo.Stream
 ms.author: "kempb"
 manager: "ghogen"

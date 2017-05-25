@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.CompilerServices.RuntimeOps.CreateRuntimeVariables
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.CompilerServices.RuntimeOps.ExpandoTrySetValue(System.Dynamic.ExpandoObject,System.Object,System.Int32,System.Object,System.String,System.Boolean)
 author: "mairaw"
 ms.author: "mairaw"

@@ -510,13 +510,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlSerializationWriter.WriteEndElement
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlSerializationWriter.FromByteArrayHex(System.Byte[])
 author: "Erikre"
 ms.author: "erikre"

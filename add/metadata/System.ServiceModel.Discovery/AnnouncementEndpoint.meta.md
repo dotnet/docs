@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.AnnouncementEndpoint.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.AnnouncementEndpoint.#ctor(System.ServiceModel.Discovery.DiscoveryVersion,System.ServiceModel.Channels.Binding,System.ServiceModel.EndpointAddress)
 author: "Erikre"
 ms.author: "erikre"

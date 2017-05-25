@@ -53,12 +53,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Scope.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Scope.#ctor(System.String,System.IdentityModel.Tokens.SigningCredentials,System.IdentityModel.Tokens.EncryptingCredentials)
 ms.author: "v-jibran"
 manager: "markgal"

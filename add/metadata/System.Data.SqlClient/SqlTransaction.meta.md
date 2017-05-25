@@ -34,13 +34,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlTransaction.Rollback
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlTransaction.Rollback(System.String)
 author: "JennieHubbard"
 ms.author: "jhubbard"

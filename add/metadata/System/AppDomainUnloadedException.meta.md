@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AppDomainUnloadedException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AppDomainUnloadedException.#ctor(System.String,System.Exception)
 author: "rpetrusha"
 ms.author: "ronpet"

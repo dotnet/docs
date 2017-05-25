@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.X509Certificates.X509SubjectKeyIdentifierExtension.#ctor(System.Security.Cryptography.X509Certificates.PublicKey,System.Boolean)
 author: "mairaw"
 ms.author: "mairaw"

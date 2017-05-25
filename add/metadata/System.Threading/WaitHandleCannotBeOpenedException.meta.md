@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.WaitHandleCannotBeOpenedException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.WaitHandleCannotBeOpenedException.#ctor(System.String,System.Exception)
 author: "rpetrusha"
 ms.author: "ronpet"

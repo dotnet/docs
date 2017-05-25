@@ -34,11 +34,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlException.#ctor
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlException.Message
 manager: "martinek"
 ---

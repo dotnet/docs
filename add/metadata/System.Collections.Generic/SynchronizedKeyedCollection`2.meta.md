@@ -109,13 +109,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Collections.Generic.SynchronizedKeyedCollection`2.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Collections.Generic.SynchronizedKeyedCollection`2.Contains(`0)
 author: "Erikre"
 ms.author: "erikre"

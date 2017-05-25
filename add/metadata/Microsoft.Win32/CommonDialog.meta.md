@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Win32.CommonDialog.ShowDialog
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Win32.CommonDialog.ShowDialog(System.Windows.Window)
 author: "stevehoag"
 ms.author: "shoag"

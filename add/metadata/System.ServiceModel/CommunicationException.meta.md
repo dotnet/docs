@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.CommunicationException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.CommunicationException.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

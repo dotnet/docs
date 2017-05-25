@@ -70,13 +70,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Brush.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Brush.RelativeTransformProperty
 author: "stevehoag"
 ms.author: "shoag"

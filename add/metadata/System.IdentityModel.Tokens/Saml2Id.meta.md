@@ -35,12 +35,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.Saml2Id.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.Saml2Id.#ctor(System.String)
 ms.author: "v-jibran"
 manager: "markgal"

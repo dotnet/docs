@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.HybridDictionary.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.HybridDictionary.Count
 author: "mairaw"
 ms.author: "mairaw"

@@ -25,10 +25,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.CancelEventArgs.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

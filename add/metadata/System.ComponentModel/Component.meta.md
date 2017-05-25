@@ -88,10 +88,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.Component.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

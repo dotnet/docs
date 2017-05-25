@@ -153,12 +153,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.Title.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.Title.TextOrientation
 ms.author: "mblythe"
 manager: "mblythe"

@@ -27,13 +27,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityKeyMember.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityKeyMember.#ctor(System.String,System.Object)
 author: "JennieHubbard"
 ms.author: "jhubbard"

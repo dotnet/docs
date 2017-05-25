@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeAssignStatement.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeAssignStatement.#ctor(System.CodeDom.CodeExpression,System.CodeDom.CodeExpression)
 author: "rpetrusha"
 ms.author: "ronpet"

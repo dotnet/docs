@@ -46,10 +46,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Drawing.BufferedGraphics.Render
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

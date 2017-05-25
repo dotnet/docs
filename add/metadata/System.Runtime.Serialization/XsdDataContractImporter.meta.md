@@ -55,13 +55,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.Serialization.XsdDataContractImporter.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.Serialization.XsdDataContractImporter.GetCodeTypeReference
 author: "Erikre"
 ms.author: "erikre"

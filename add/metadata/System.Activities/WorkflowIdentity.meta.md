@@ -88,10 +88,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Activities.WorkflowIdentity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

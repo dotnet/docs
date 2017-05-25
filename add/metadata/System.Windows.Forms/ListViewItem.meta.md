@@ -191,13 +191,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ListViewItem.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewItem.ListViewSubItem[],System.Int32,System.Windows.Forms.ListViewGroup)
 author: "stevehoag"
 ms.author: "shoag"

@@ -27,9 +27,3 @@ uid: System.IdentityModel.Metadata.IndexedProtocolEndpoint.#ctor
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Metadata.IndexedProtocolEndpoint.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

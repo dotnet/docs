@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ServiceProcess.ServiceControllerPermissionEntry.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ServiceProcess.ServiceControllerPermissionEntry.MachineName
 author: "rpetrusha"
 ms.author: "ronpet"

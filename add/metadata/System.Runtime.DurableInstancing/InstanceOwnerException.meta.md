@@ -67,10 +67,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Runtime.DurableInstancing.InstanceOwnerException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

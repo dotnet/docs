@@ -35,12 +35,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.RoleDescriptor.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Metadata.RoleDescriptor.ErrorUrl
 ms.author: "v-jibran"
 manager: "markgal"

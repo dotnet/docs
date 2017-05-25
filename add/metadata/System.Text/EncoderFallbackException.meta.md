@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.EncoderFallbackException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.EncoderFallbackException.#ctor(System.String,System.Exception)
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.SignerInfo.ComputeCounterSignature
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.SignerInfo.Certificate
 author: "mairaw"
 ms.author: "mairaw"

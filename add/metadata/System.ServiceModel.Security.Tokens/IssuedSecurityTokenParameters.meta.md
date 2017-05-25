@@ -160,13 +160,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType
 author: "Erikre"
 ms.author: "erikre"

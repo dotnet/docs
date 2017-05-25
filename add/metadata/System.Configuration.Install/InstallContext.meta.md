@@ -46,10 +46,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Configuration.Install.InstallContext.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

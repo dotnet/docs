@@ -473,13 +473,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.WebBrowser.Refresh
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.WebBrowser.Navigate(System.Uri,System.String,System.Byte[],System.String)
 author: "stevehoag"
 ms.author: "shoag"

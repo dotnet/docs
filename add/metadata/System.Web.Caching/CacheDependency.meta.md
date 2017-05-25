@@ -89,12 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Caching.CacheDependency.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.Caching.CacheDependency.DependencyDispose
 ms.author: "riande"
 manager: "wpickett"

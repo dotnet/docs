@@ -49,11 +49,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Device.Location.GeoCoordinateWatcher.Dispose
-manager: "martinek"
----
-
----
 uid: System.Device.Location.GeoCoordinateWatcher.StatusChanged
 manager: "martinek"
 ---
@@ -69,11 +64,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Device.Location.GeoCoordinateWatcher.Start
-manager: "martinek"
----
-
----
 uid: System.Device.Location.GeoCoordinateWatcher.MovementThreshold
 manager: "martinek"
 ---
@@ -85,11 +75,6 @@ manager: "martinek"
 
 ---
 uid: System.Device.Location.GeoCoordinateWatcher.Dispose(System.Boolean)
-manager: "martinek"
----
-
----
-uid: System.Device.Location.GeoCoordinateWatcher.#ctor
 manager: "martinek"
 ---
 

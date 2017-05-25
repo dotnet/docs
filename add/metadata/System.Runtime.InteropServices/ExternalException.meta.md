@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.ExternalException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices.ExternalException.#ctor(System.String,System.Exception)
 author: "rpetrusha"
 ms.author: "ronpet"

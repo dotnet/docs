@@ -21,9 +21,3 @@ uid: System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.Script
 ms.author: "kbridge"
 manager: "ghogen"
 ---
-
----
-uid: System.Speech.Recognition.SrgsGrammar.SrgsSemanticInterpretationTag.#ctor
-ms.author: "kbridge"
-manager: "ghogen"
----

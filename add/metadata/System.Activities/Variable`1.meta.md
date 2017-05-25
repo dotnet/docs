@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Variable`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Variable`1.Default
 author: "Erikre"
 ms.author: "erikre"

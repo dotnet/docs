@@ -46,10 +46,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Deployment.Application.SupportedRuntimeMissingException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

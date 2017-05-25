@@ -132,13 +132,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleParameter.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleParameter.#ctor(System.String,System.Object)
 author: "JennieHubbard"
 ms.author: "jhubbard"

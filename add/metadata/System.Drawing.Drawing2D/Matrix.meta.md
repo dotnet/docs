@@ -272,13 +272,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.Matrix.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Drawing2D.Matrix.Clone
 author: "stevehoag"
 ms.author: "shoag"

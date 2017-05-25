@@ -111,13 +111,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataTableCollection.Add
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataTableCollection.Clear
 author: "JennieHubbard"
 ms.author: "jhubbard"

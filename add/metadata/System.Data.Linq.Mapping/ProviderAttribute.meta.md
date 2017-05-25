@@ -25,10 +25,3 @@ author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
 ---
-
----
-uid: System.Data.Linq.Mapping.ProviderAttribute.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----

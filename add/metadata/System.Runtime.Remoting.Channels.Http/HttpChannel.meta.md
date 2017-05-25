@@ -54,11 +54,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Http.HttpChannel.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelScheme
 manager: "ghogen"
 ---

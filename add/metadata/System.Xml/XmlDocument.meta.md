@@ -153,13 +153,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDocument.CreateNavigator
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlDocument.CreateElement(System.String,System.String,System.String)
 author: "mairaw"
 ms.author: "mairaw"
@@ -315,13 +308,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlDocument.CreateElement(System.String,System.String)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlDocument.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

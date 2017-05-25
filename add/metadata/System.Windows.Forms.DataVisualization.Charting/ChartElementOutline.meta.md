@@ -23,12 +23,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.Dispose
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.ChartElementOutline.OutlinePath
 ms.author: "mblythe"
 manager: "mblythe"

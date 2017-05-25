@@ -53,10 +53,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Dispatcher.MultipleFilterMatchesException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

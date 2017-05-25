@@ -32,10 +32,3 @@ author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.Security.MembershipPasswordException.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----

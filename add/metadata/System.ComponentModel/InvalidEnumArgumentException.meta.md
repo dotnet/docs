@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.InvalidEnumArgumentException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.InvalidEnumArgumentException.#ctor(System.String,System.Exception)
 author: "stevehoag"
 ms.author: "shoag"

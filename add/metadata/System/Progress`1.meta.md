@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Progress`1.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Progress`1.System#IProgress{T}#Report(`0)
 author: "rpetrusha"
 ms.author: "ronpet"

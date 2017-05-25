@@ -19,11 +19,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.BinaryMessageFormatter.#ctor
-manager: "tyoung"
----
-
----
 uid: System.Messaging.BinaryMessageFormatter.Read(System.Messaging.Message)
 manager: "tyoung"
 ---

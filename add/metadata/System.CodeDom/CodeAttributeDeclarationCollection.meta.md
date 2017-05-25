@@ -95,10 +95,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.CodeDom.CodeAttributeDeclarationCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

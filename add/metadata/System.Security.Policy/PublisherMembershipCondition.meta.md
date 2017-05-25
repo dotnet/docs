@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.PublisherMembershipCondition.ToXml
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.PublisherMembershipCondition.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate)
 author: "mairaw"
 ms.author: "mairaw"

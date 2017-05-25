@@ -209,13 +209,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.XslCompiledTransform.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.XslCompiledTransform.Load(System.Xml.XmlReader)
 author: "mairaw"
 ms.author: "mairaw"

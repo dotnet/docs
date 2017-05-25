@@ -281,12 +281,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Axis.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.Axis.StripLines
 ms.author: "mblythe"
 manager: "mblythe"

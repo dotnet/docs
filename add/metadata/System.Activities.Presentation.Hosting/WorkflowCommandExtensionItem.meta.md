@@ -25,10 +25,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Activities.Presentation.Hosting.WorkflowCommandExtensionItem.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

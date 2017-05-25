@@ -54,11 +54,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.#ctor
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceDescription,System.ServiceModel.ServiceHostBase)
 manager: "ghogen"
 ---

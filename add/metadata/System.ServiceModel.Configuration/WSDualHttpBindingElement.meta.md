@@ -55,13 +55,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WSDualHttpBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.WSDualHttpBindingElement.TextEncoding
 author: "Erikre"
 ms.author: "erikre"

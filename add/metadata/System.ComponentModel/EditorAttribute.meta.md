@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.EditorAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.EditorAttribute.EditorBaseTypeName
 author: "stevehoag"
 ms.author: "shoag"

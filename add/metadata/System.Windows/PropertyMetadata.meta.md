@@ -60,13 +60,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.PropertyMetadata.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.PropertyMetadata.DefaultValue
 ms.author: "kempb"
 manager: "ghogen"

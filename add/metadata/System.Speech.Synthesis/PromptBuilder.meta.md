@@ -131,12 +131,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Synthesis.PromptBuilder.#ctor
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Synthesis.PromptBuilder.AppendSsml(System.Xml.XmlReader)
 ms.author: "kbridge"
 manager: "ghogen"
@@ -221,12 +215,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Synthesis.PromptBuilder.StartSentence
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Synthesis.PromptBuilder.Culture
 ms.author: "kbridge"
 manager: "ghogen"
@@ -264,18 +252,6 @@ manager: "ghogen"
 
 ---
 uid: System.Speech.Synthesis.PromptBuilder.AppendAudio(System.String)
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Synthesis.PromptBuilder.AppendBreak
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Synthesis.PromptBuilder.StartParagraph
 ms.author: "kbridge"
 manager: "ghogen"
 ---

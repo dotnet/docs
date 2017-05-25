@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.MenuItemArray.Select
 author: "stevehoag"
 ms.author: "shoag"

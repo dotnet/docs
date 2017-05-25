@@ -149,12 +149,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.MetaModel.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.DynamicData.MetaModel.GetTable
 ms.author: "riande"
 manager: "wpickett"

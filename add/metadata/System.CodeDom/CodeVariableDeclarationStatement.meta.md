@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeVariableDeclarationStatement.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeVariableDeclarationStatement.#ctor(System.CodeDom.CodeTypeReference,System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

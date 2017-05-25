@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.SemaphoreFullException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.SemaphoreFullException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

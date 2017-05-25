@@ -23,12 +23,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.ChunkedCookieHandler.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize
 ms.author: "v-jibran"
 manager: "markgal"

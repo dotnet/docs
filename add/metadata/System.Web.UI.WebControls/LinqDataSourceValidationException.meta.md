@@ -53,10 +53,3 @@ author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.WebControls.LinqDataSourceValidationException.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----

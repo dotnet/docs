@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeMethodInvokeExpression.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeMethodInvokeExpression.Method
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -52,8 +52,3 @@ manager: "tyoung"
 uid: System.Transactions.CommittableTransaction.#ctor(System.Transactions.TransactionOptions)
 manager: "ghogen"
 ---
-
----
-uid: System.Transactions.CommittableTransaction.#ctor
-manager: "ghogen"
----

@@ -32,10 +32,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.CodeDom.CodePropertyReferenceExpression.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

@@ -398,13 +398,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBoxArray.PathChange
 author: "stevehoag"
 ms.author: "shoag"

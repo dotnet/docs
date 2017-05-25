@@ -39,9 +39,3 @@ uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

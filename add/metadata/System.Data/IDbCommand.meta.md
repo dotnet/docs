@@ -62,13 +62,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.IDbCommand.ExecuteReader
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.IDbCommand.CreateParameter
 author: "JennieHubbard"
 ms.author: "jhubbard"

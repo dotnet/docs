@@ -95,10 +95,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Xml.Serialization.CodeIdentifiers.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

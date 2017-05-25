@@ -354,13 +354,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueue.GetPrintCapabilities
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintQueue.AveragePagesPerMinute
 author: "stevehoag"
 ms.author: "shoag"
@@ -519,13 +512,6 @@ manager: "wpickett"
 
 ---
 uid: System.Printing.PrintQueue.IsTonerLow
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Printing.PrintQueue.GetPrintCapabilitiesAsXml
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

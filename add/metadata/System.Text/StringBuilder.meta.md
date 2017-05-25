@@ -256,13 +256,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.StringBuilder.AppendLine
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.StringBuilder.Append(System.Char)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -347,13 +340,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.StringBuilder.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -369,13 +355,6 @@ manager: "wpickett"
 
 ---
 uid: System.Text.StringBuilder.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Text.StringBuilder.#ctor
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

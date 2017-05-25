@@ -398,13 +398,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.List`1.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.List`1.IndexOf(`0)
 author: "mairaw"
 ms.author: "mairaw"
@@ -420,13 +413,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.List`1.LastIndexOf
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Generic.List`1.Reverse
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -490,13 +476,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.List`1.IndexOf
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Generic.List`1.Sort
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

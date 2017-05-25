@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.ManualResetEventSlim.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.ManualResetEventSlim.#ctor(System.Boolean)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -83,21 +76,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.ManualResetEventSlim.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.ManualResetEventSlim.Wait(System.Int32,System.Threading.CancellationToken)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.ManualResetEventSlim.Wait
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

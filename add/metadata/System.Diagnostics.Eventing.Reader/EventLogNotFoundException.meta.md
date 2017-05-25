@@ -27,9 +27,3 @@ uid: System.Diagnostics.Eventing.Reader.EventLogNotFoundException.#ctor(System.S
 ms.author: "jgalasyn"
 manager: "ghogen"
 ---
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogNotFoundException.#ctor
-ms.author: "jgalasyn"
-manager: "ghogen"
----

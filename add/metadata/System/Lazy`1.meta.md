@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Lazy`1.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Lazy`1.IsValueCreated
 author: "rpetrusha"
 ms.author: "ronpet"

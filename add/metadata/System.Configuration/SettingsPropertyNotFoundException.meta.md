@@ -27,9 +27,3 @@ uid: System.Configuration.SettingsPropertyNotFoundException.#ctor(System.Runtime
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Configuration.SettingsPropertyNotFoundException.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

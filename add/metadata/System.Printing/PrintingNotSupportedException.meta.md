@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintingNotSupportedException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintingNotSupportedException.#ctor(System.String)
 author: "stevehoag"
 ms.author: "shoag"

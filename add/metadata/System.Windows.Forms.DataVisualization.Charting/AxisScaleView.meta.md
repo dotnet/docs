@@ -143,12 +143,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.AxisScaleView.ZoomReset
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScaleView.ViewMinimum
 ms.author: "mblythe"
 manager: "mblythe"

@@ -97,13 +97,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.SymmetricAlgorithm.Key
 author: "mairaw"
 ms.author: "mairaw"
@@ -223,28 +216,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.SymmetricAlgorithm.Create
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.SymmetricAlgorithm.Clear
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

@@ -67,10 +67,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Security.Tokens.KerberosSecurityTokenParameters.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

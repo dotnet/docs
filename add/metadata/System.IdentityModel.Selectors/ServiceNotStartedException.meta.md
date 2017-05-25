@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IdentityModel.Selectors.ServiceNotStartedException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IdentityModel.Selectors.ServiceNotStartedException.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

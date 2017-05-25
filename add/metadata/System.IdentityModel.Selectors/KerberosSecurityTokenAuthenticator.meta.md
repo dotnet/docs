@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IdentityModel.Selectors.KerberosSecurityTokenAuthenticator.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IdentityModel.Selectors.KerberosSecurityTokenAuthenticator.#ctor(System.Boolean)
 author: "Erikre"
 ms.author: "erikre"

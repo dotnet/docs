@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.HtmlControls.HtmlInputButton.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes(System.Web.UI.HtmlTextWriter)
 author: "tdykstra"
 ms.author: "tdykstra"

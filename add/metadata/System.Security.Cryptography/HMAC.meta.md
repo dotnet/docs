@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.HMAC.Create
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.HMAC.Initialize
 author: "mairaw"
 ms.author: "mairaw"

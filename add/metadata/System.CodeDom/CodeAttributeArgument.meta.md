@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeAttributeArgument.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeAttributeArgument.#ctor(System.CodeDom.CodeExpression)
 author: "rpetrusha"
 ms.author: "ronpet"

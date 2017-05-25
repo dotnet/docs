@@ -69,13 +69,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlTypes.SqlXml.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlTypes.SqlXml.System#Xml#Serialization#IXmlSerializable#GetSchema
 author: "JennieHubbard"
 ms.author: "jhubbard"

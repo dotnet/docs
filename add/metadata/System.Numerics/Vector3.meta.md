@@ -265,13 +265,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Numerics.Vector3.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Numerics.Vector3.#ctor
 author: "rpetrusha"
 ms.author: "ronpet"

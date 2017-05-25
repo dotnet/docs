@@ -65,12 +65,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.Margins.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.Margins.ToString
 ms.author: "mblythe"
 manager: "mblythe"

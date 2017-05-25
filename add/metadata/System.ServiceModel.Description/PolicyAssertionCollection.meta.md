@@ -25,13 +25,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.PolicyAssertionCollection.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.PolicyAssertionCollection.InsertItem(System.Int32,System.Xml.XmlElement)
 author: "Erikre"
 ms.author: "erikre"

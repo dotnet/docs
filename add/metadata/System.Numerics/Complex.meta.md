@@ -181,13 +181,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Numerics.Complex.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Numerics.Complex.op_Implicit
 author: "rpetrusha"
 ms.author: "ronpet"

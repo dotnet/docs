@@ -149,22 +149,7 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementClass.GetInstances
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementClass.GetSubclasses
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementClass.#ctor
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementClass.GetRelationshipClasses
 manager: "jillfra"
 ---
 
@@ -194,22 +179,12 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementClass.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementClass.#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)
 manager: "jillfra"
 ---
 
 ---
 uid: System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String)
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementClass.GetRelatedClasses
 manager: "jillfra"
 ---
 

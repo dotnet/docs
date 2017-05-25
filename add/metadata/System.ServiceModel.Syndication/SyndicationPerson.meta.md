@@ -97,13 +97,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.SyndicationPerson.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.SyndicationPerson.Email
 author: "Erikre"
 ms.author: "erikre"

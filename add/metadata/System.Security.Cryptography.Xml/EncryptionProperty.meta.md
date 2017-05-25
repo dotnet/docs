@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.EncryptionProperty.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.EncryptionProperty.LoadXml(System.Xml.XmlElement)
 author: "mairaw"
 ms.author: "mairaw"

@@ -48,13 +48,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityModelSchemaGenerator.GenerateMetadata
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Entity.Design.EntityModelSchemaGenerator.GenerateMetadata(System.Version)
 author: "JennieHubbard"
 ms.author: "jhubbard"

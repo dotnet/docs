@@ -440,13 +440,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.DateTimeOffset.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.DateTimeOffset.Minute
 author: "rpetrusha"
 ms.author: "ronpet"

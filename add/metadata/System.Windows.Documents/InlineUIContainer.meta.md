@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.InlineUIContainer.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Documents.InlineUIContainer.#ctor(System.Windows.UIElement)
 author: "stevehoag"
 ms.author: "shoag"

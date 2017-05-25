@@ -19,11 +19,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Channels.PeerResolverBindingElement.#ctor
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Channels.PeerResolverBindingElement.ReferralPolicy
 manager: "ghogen"
 ---

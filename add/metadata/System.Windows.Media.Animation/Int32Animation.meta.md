@@ -112,13 +112,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Int32Animation.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Int32Animation.#ctor(System.Int32,System.Windows.Duration)
 author: "stevehoag"
 ms.author: "shoag"

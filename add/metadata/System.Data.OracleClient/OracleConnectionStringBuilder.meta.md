@@ -165,10 +165,3 @@ author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
 ---
-
----
-uid: System.Data.OracleClient.OracleConnectionStringBuilder.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----

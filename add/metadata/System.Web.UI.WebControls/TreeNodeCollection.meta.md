@@ -123,9 +123,3 @@ uid: System.Web.UI.WebControls.TreeNodeCollection.System#Web#UI#IStateManager#Tr
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.WebControls.TreeNodeCollection.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

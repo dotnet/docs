@@ -21,9 +21,3 @@ uid: System.Web.HttpRequestValidationException.#ctor
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.HttpRequestValidationException.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

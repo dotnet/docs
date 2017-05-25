@@ -11,12 +11,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Pair.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Pair.Second
 ms.author: "riande"
 manager: "wpickett"

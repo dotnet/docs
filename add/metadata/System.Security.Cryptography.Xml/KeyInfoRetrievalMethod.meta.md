@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.KeyInfoRetrievalMethod.LoadXml(System.Xml.XmlElement)
 author: "mairaw"
 ms.author: "mairaw"

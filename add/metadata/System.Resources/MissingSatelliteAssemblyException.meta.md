@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Resources.MissingSatelliteAssemblyException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

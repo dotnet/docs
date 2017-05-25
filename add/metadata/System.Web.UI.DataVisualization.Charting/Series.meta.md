@@ -167,12 +167,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.Series.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.Series.SmartLabelStyle
 ms.author: "mblythe"
 manager: "mblythe"

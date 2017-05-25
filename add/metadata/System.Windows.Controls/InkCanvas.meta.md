@@ -615,13 +615,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.InkCanvas.Paste
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.InkCanvas.OnCreateAutomationPeer
 author: "stevehoag"
 ms.author: "shoag"

@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerParameters.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.Compiler.CompilerParameters.OutputAssembly
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.IInputChannel.Receive
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.IInputChannel.BeginTryReceive(System.TimeSpan,System.AsyncCallback,System.Object)
 author: "Erikre"
 ms.author: "erikre"

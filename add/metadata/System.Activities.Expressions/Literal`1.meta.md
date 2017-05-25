@@ -53,10 +53,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Activities.Expressions.Literal`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

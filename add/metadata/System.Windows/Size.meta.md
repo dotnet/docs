@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Size.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Size.ToString(System.IFormatProvider)
 ms.author: "kempb"
 manager: "ghogen"

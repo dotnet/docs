@@ -194,13 +194,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.IO.MemoryStream.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.MemoryStream.#ctor(System.Byte[],System.Int32,System.Int32,System.Boolean)
 author: "mairaw"
 ms.author: "mairaw"

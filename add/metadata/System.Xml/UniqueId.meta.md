@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.UniqueId.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.UniqueId.ToCharArray(System.Char[],System.Int32)
 author: "mairaw"
 ms.author: "mairaw"

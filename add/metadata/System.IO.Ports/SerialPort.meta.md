@@ -314,13 +314,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Ports.SerialPort.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.Ports.SerialPort.ReadBufferSize
 author: "mairaw"
 ms.author: "mairaw"

@@ -39,10 +39,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Collections.Specialized.CollectionsUtil.CreateCaseInsensitiveHashtable
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

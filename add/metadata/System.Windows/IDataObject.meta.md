@@ -81,13 +81,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.IDataObject.GetFormats
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.IDataObject.GetDataPresent
 ms.author: "kempb"
 manager: "ghogen"

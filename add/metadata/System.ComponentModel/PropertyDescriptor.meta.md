@@ -132,13 +132,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.PropertyDescriptor.GetChildProperties
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.PropertyDescriptor.ResetValue(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

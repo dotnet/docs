@@ -178,13 +178,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridTextBoxColumn.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridTextBoxColumn.GetPreferredHeight(System.Drawing.Graphics,System.Object)
 author: "stevehoag"
 ms.author: "shoag"

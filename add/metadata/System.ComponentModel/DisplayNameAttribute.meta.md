@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DisplayNameAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DisplayNameAttribute.DisplayName
 author: "stevehoag"
 ms.author: "shoag"

@@ -79,13 +79,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Annotations.Annotation.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Annotations.Annotation.CargoChanged
 ms.author: "kempb"
 manager: "ghogen"

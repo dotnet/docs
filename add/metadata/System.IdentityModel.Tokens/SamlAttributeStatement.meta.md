@@ -29,12 +29,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAttributeStatement.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlAttributeStatement.AddClaimsToList(System.Collections.Generic.IList{System.IdentityModel.Claims.Claim})
 ms.author: "v-jibran"
 manager: "markgal"

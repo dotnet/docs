@@ -261,13 +261,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.Task.RunSynchronously
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.Task.WaitAll
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -527,13 +520,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.Task.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.Task.WhenAll
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -584,13 +570,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.Tasks.Task.Delay(System.Int32)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.Task.Start
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -703,13 +682,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.Tasks.Task.Wait(System.Int32,System.Threading.CancellationToken)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Tasks.Task.Wait
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

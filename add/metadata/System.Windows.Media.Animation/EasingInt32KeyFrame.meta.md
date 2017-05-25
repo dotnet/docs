@@ -40,13 +40,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingInt32KeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame.InterpolateValueCore(System.Int32,System.Double)
 author: "stevehoag"
 ms.author: "shoag"

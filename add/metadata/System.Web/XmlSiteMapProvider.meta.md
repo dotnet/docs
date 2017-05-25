@@ -43,12 +43,6 @@ uid: System.Web.XmlSiteMapProvider.FindSiteMapNode
 ---
 
 ---
-uid: System.Web.XmlSiteMapProvider.Dispose
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.XmlSiteMapProvider.RootNode
 ms.author: "riande"
 manager: "wpickett"

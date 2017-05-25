@@ -113,12 +113,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAssertion.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlAssertion.WriteSourceData(System.Xml.XmlWriter)
 ms.author: "v-jibran"
 manager: "markgal"

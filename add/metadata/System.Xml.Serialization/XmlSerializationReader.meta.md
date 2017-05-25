@@ -111,13 +111,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlSerializationReader.ReadReferencedElement
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlSerializationReader.ReadSerializable
 author: "Erikre"
 ms.author: "erikre"

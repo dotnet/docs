@@ -101,12 +101,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.ContextDataSourceView.DisposeContext
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.ContextDataSourceView.EntityType
 ms.author: "riande"
 manager: "wpickett"

@@ -69,13 +69,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlCommand.BeginExecuteReader
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -258,21 +251,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlCommand.ExecuteReaderAsync
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlCommand.ExecuteScalar
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
@@ -307,13 +286,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -342,21 +314,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlCommand.ExecuteReader
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlCommand.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
@@ -371,13 +329,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.SqlClient.SqlCommand.StatementCompleted
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlCommand.#ctor
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

@@ -251,13 +251,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Console.OpenStandardOutput
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Console.OpenStandardOutput(System.Int32)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -391,13 +384,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Console.OpenStandardInput
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Console.WriteLine
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -426,13 +412,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Console.ReadKey
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Console.Write(System.Int32)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -448,13 +427,6 @@ manager: "wpickett"
 
 ---
 uid: System.Console.WindowTop
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Console.WriteLine
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -538,13 +510,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Console.Beep
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Console.Write(System.String,System.Object,System.Object,System.Object)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -553,13 +518,6 @@ manager: "wpickett"
 
 ---
 uid: System.Console.ResetColor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Console.OpenStandardError
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

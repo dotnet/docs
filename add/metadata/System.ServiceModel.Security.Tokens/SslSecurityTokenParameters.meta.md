@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.Tokens.SslSecurityTokenParameters.InitializeSecurityTokenRequirement(System.IdentityModel.Selectors.SecurityTokenRequirement)
 author: "Erikre"
 ms.author: "erikre"

@@ -69,11 +69,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.NOT_SUPPORTED
 manager: "ghogen"
 ---

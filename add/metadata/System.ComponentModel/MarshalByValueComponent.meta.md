@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.MarshalByValueComponent.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.MarshalByValueComponent.Container
 author: "stevehoag"
 ms.author: "shoag"

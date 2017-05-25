@@ -62,21 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.DesignSurfaceManager.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.DesignSurfaceManager.ActiveDesignSurface
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.DesignSurfaceManager.CreateDesignSurface
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -98,13 +84,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Design.DesignSurfaceManager.DesignSurfaceDisposed
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.DesignSurfaceManager.#ctor
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

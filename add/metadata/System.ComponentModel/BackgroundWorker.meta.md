@@ -97,13 +97,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.BackgroundWorker.RunWorkerAsync
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.BackgroundWorker.RunWorkerAsync(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

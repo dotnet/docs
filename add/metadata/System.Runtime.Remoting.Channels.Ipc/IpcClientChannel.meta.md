@@ -39,11 +39,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.CreateMessageSink(System.String,System.Object,System.String@)
 manager: "ghogen"
 ---

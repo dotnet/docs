@@ -74,10 +74,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Persistence.InstanceNotFoundException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

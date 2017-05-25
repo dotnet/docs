@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeParameter.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTypeParameter.Name
 author: "rpetrusha"
 ms.author: "ronpet"

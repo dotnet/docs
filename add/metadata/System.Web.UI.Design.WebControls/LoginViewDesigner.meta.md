@@ -17,12 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.LoginViewDesigner.GetDesignTimeHtml
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.LoginViewDesigner.PreFilterProperties(System.Collections.IDictionary)
 ms.author: "riande"
 manager: "wpickett"

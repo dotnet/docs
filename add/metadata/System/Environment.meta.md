@@ -174,13 +174,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Environment.GetEnvironmentVariables
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Environment.CommandLine
 author: "rpetrusha"
 ms.author: "ronpet"

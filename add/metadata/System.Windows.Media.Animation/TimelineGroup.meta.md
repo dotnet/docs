@@ -33,13 +33,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.TimelineGroup.CreateClock
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.TimelineGroup.#ctor
 author: "stevehoag"
 ms.author: "shoag"

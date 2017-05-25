@@ -272,13 +272,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataViewManager.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataViewManager.System#Collections#IEnumerable#GetEnumerator
 author: "JennieHubbard"
 ms.author: "jhubbard"

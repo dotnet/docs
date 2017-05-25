@@ -122,13 +122,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.StylusPointCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.StylusPointCollection.ToHiMetricArray
 ms.author: "kempb"
 manager: "ghogen"

@@ -105,10 +105,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Windows.Media.Media3D.RotateTransform3D.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

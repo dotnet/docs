@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.ChannelFactoryBase.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.ChannelFactoryBase.OnAbort
 author: "Erikre"
 ms.author: "erikre"

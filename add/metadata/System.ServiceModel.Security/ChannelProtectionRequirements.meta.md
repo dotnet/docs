@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.ChannelProtectionRequirements.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.ChannelProtectionRequirements.MakeReadOnly
 author: "Erikre"
 ms.author: "erikre"

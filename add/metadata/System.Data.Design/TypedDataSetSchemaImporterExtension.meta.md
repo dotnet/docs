@@ -27,13 +27,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Design.TypedDataSetSchemaImporterExtension.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Design.TypedDataSetSchemaImporterExtension.ImportSchemaType
 author: "JennieHubbard"
 ms.author: "jhubbard"

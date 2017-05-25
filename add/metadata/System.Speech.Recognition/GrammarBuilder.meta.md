@@ -203,12 +203,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.GrammarBuilder.AppendDictation
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.GrammarBuilder.AppendRuleReference(System.String,System.String)
 ms.author: "kbridge"
 manager: "ghogen"
@@ -228,12 +222,6 @@ manager: "ghogen"
 
 ---
 uid: System.Speech.Recognition.GrammarBuilder.AppendRuleReference
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Recognition.GrammarBuilder.#ctor
 ms.author: "kbridge"
 manager: "ghogen"
 ---

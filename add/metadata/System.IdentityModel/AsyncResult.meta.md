@@ -59,18 +59,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.AsyncResult.Dispose
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.AsyncResult.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.AsyncResult.End(System.IAsyncResult)
 ms.author: "v-jibran"
 manager: "markgal"

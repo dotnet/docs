@@ -49,11 +49,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.SelectQuery.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.SelectQuery.BuildQuery
 manager: "jillfra"
 ---

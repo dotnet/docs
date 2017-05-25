@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Mutex.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Mutex.OpenExisting(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

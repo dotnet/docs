@@ -49,11 +49,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementScope.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementScope.#ctor(System.Management.ManagementPath,System.Management.ConnectionOptions)
 manager: "jillfra"
 ---

@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.TypeConverterAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.TypeConverterAttribute.Default
 author: "stevehoag"
 ms.author: "shoag"

@@ -59,12 +59,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SessionSecurityTokenHandler.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SessionSecurityTokenHandler.CanReadToken
 ---
 

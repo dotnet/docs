@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.CounterCreationDataCollection.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.CounterCreationDataCollection.Add(System.Diagnostics.CounterCreationData)
 author: "mairaw"
 ms.author: "mairaw"

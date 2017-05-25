@@ -39,9 +39,3 @@ uid: System.Web.UI.DataVisualization.Charting.Point3D.X
 ms.author: "mblythe"
 manager: "mblythe"
 ---
-
----
-uid: System.Web.UI.DataVisualization.Charting.Point3D.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----

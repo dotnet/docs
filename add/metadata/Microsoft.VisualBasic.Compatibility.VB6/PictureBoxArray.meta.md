@@ -321,13 +321,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray.PaddingChanged
 author: "stevehoag"
 ms.author: "shoag"

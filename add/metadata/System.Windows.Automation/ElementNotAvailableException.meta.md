@@ -46,10 +46,3 @@ author: "Xansky"
 ms.author: "mhopkins"
 manager: "ghogen"
 ---
-
----
-uid: System.Windows.Automation.ElementNotAvailableException.#ctor
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "ghogen"
----

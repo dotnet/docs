@@ -167,13 +167,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.DiscoveryClient.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.DiscoveryClient.System#ServiceModel#ICommunicationObject#Open
 author: "Erikre"
 ms.author: "erikre"
@@ -230,13 +223,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.DiscoveryClient.System#ServiceModel#ICommunicationObject#Close
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.DiscoveryClient.Open
 author: "Erikre"
 ms.author: "erikre"
@@ -245,13 +231,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Discovery.DiscoveryClient.ProxyAvailable
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.DiscoveryClient.System#ServiceModel#ICommunicationObject#Open
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

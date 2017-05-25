@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Packaging.StreamInfo.GetStream
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.IO.Packaging.StreamInfo.CompressionOption
 author: "stevehoag"
 ms.author: "shoag"

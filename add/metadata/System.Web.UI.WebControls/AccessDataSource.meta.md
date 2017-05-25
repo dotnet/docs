@@ -35,12 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.AccessDataSource.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.AccessDataSource.ProviderName
 ms.author: "riande"
 manager: "wpickett"

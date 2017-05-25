@@ -54,11 +54,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ConnectionOptions.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.ConnectionOptions.Username
 manager: "jillfra"
 ---

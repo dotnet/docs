@@ -272,13 +272,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Numerics.BigInteger.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Numerics.BigInteger.Min(System.Numerics.BigInteger,System.Numerics.BigInteger)
 author: "rpetrusha"
 ms.author: "ronpet"

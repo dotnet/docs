@@ -95,12 +95,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Evaluation.ProjectCollection.Dispose
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Evaluation.ProjectCollection.LoadProject
 ms.author: "susanno"
 manager: "douge"
@@ -282,12 +276,6 @@ manager: "douge"
 
 ---
 uid: Microsoft.Build.Evaluation.ProjectCollection.GetLoadedProjects(System.String)
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Evaluation.ProjectCollection.#ctor
 ms.author: "susanno"
 manager: "douge"
 ---

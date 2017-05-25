@@ -102,10 +102,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Syndication.SyndicationCategory.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

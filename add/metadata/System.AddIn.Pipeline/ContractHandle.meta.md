@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Pipeline.ContractHandle.Dispose
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AddIn.Pipeline.ContractHandle.Finalize
 author: "rpetrusha"
 ms.author: "ronpet"

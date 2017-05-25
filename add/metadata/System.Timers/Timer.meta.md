@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Timers.Timer.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Timers.Timer.Dispose
 manager: "ghogen"
 ---

@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTryCatchFinallyStatement.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTryCatchFinallyStatement.#ctor(System.CodeDom.CodeStatement[],System.CodeDom.CodeCatchClause[])
 author: "rpetrusha"
 ms.author: "ronpet"

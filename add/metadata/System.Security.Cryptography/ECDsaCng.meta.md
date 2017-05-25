@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.ECDsaCng.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.ECDsaCng.VerifyData(System.Byte[],System.Int32,System.Int32,System.Byte[])
 author: "mairaw"
 ms.author: "mairaw"

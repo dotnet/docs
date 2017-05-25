@@ -174,11 +174,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.XpsDocumentWriter.WritingCancelled
 manager: "leannef"
 ---

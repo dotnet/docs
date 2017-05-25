@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.XamlIntegration.UpnEndpointIdentityExtension.ProvideValue(System.IServiceProvider)
 author: "Erikre"
 ms.author: "erikre"

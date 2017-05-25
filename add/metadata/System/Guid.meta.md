@@ -104,13 +104,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Guid.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Guid.#ctor
 author: "rpetrusha"
 ms.author: "ronpet"

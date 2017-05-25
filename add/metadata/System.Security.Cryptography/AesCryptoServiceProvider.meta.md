@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.AesCryptoServiceProvider.CreateEncryptor(System.Byte[],System.Byte[])
 author: "mairaw"
 ms.author: "mairaw"
@@ -63,13 +56,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.AesCryptoServiceProvider.GenerateIV
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AesCryptoServiceProvider.CreateDecryptor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

@@ -125,13 +125,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IO.Log.LogStore.CreateLogArchiveSnapshot
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IO.Log.LogStore.FreeBytes
 author: "Erikre"
 ms.author: "erikre"

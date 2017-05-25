@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.StandardBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.StandardBindingElement.BindingElementType
 author: "Erikre"
 ms.author: "erikre"

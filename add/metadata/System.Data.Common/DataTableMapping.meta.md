@@ -41,13 +41,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DataTableMapping.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DataTableMapping.#ctor(System.String,System.String,System.Data.Common.DataColumnMapping[])
 author: "JennieHubbard"
 ms.author: "jhubbard"

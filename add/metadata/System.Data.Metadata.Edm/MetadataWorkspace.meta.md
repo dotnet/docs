@@ -188,13 +188,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Metadata.Edm.MetadataWorkspace.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Metadata.Edm.MetadataWorkspace.GetEntityContainer(System.String,System.Boolean,System.Data.Metadata.Edm.DataSpace)
 author: "JennieHubbard"
 ms.author: "jhubbard"

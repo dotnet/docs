@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlTypeAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlTypeAttribute.IncludeInSchema
 author: "Erikre"
 ms.author: "erikre"

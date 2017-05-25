@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.UI.WebControls.EntityDataSourceValidationException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.UI.WebControls.EntityDataSourceValidationException.#ctor(System.String,System.Exception)
 author: "Erikre"
 ms.author: "erikre"

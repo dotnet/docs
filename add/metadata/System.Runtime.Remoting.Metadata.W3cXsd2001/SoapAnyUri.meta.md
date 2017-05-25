@@ -37,8 +37,3 @@ manager: "ghogen"
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.#ctor(System.String)
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapAnyUri.#ctor
-manager: "ghogen"
----

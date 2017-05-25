@@ -32,10 +32,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.IO.Log.ReservationNotFoundException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Stack`1.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.Stack`1.Pop
 author: "mairaw"
 ms.author: "mairaw"

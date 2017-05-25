@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.XmlSerializerImportOptions.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.XmlSerializerImportOptions.ClrNamespace
 author: "Erikre"
 ms.author: "erikre"

@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeNamespace.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeNamespace.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

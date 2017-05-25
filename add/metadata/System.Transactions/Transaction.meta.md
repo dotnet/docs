@@ -177,13 +177,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.Transaction.Rollback
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "ghogen"
----
-
----
 uid: System.Transactions.Transaction.GetPromotedToken
 ms.author: "sdanie"
 manager: "ghogen"

@@ -279,13 +279,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.PassportIdentity.LogoutURL
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.PassportIdentity.GetCurrentConfig(System.String)
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -301,20 +294,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Security.PassportIdentity.GetLoginChallenge(System.String)
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.PassportIdentity.LogoTag
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.PassportIdentity.GetLoginChallenge
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
@@ -350,13 +329,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Security.PassportIdentity.LogoTag(System.String)
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.PassportIdentity.LogoTag2
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
@@ -412,13 +384,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.PassportIdentity.LoginUser
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.PassportIdentity.AuthenticationType
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -454,21 +419,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.PassportIdentity.AuthUrl
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.PassportIdentity.LoginUser(System.String,System.Int32,System.Int32,System.String,System.Int32,System.String,System.Int32,System.Int32,System.Object)
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.PassportIdentity.AuthUrl2
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

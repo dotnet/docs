@@ -226,13 +226,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.VectorCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.VectorCollection.Count
 author: "stevehoag"
 ms.author: "shoag"

@@ -20,13 +20,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.ObjectNotFoundException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.ObjectNotFoundException.#ctor(System.String)
 author: "JennieHubbard"
 ms.author: "jhubbard"

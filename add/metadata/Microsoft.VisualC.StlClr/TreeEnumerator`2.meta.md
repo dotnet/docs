@@ -29,12 +29,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.TreeEnumerator`2.Dispose
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.TreeEnumerator`2.MoveNext
 ms.author: "mblome"
 manager: "ghogen"

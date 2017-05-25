@@ -60,13 +60,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Printing.IndexedProperties.PrintPropertyDictionary.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.IndexedProperties.PrintPropertyDictionary.OnDeserialization(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

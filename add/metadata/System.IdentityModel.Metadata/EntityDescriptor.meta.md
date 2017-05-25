@@ -45,9 +45,3 @@ uid: System.IdentityModel.Metadata.EntityDescriptor.FederationId
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Metadata.EntityDescriptor.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

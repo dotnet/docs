@@ -187,13 +187,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Clipboard.GetText
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Clipboard.GetImage
 author: "stevehoag"
 ms.author: "shoag"

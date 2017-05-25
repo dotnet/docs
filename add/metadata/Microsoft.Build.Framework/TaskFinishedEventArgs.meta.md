@@ -11,12 +11,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.TaskFinishedEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.TaskFinishedEventArgs.TaskName
 ms.author: "susanno"
 manager: "douge"

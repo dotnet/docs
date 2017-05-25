@@ -22,8 +22,3 @@ manager: "jillfra"
 uid: System.Management.Instrumentation.InstanceNotFoundException.#ctor
 manager: "jillfra"
 ---
-
----
-uid: System.Management.Instrumentation.InstanceNotFoundException.#ctor
-manager: "jillfra"
----

@@ -130,10 +130,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Syndication.ResourceCollectionInfo.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

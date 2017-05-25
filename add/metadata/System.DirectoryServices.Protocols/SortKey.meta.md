@@ -34,13 +34,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.SortKey.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.SortKey.#ctor(System.String,System.String,System.Boolean)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

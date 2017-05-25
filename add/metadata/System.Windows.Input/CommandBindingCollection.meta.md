@@ -128,13 +128,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Input.CommandBindingCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#Contains(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

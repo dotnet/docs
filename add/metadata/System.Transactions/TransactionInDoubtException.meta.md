@@ -9,11 +9,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.TransactionInDoubtException.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Transactions.TransactionInDoubtException.#ctor(System.String)
 manager: "ghogen"
 ---

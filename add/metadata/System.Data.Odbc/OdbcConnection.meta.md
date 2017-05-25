@@ -62,13 +62,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Odbc.OdbcConnection.GetSchema
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Odbc.OdbcConnection.#ctor
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -133,20 +126,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Odbc.OdbcConnection.DataSource
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Odbc.OdbcConnection.BeginTransaction
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Odbc.OdbcConnection.#ctor
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

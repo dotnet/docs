@@ -195,13 +195,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.ObjectDataSource.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.ObjectDataSource.DeleteParameters
 author: "tdykstra"
 ms.author: "tdykstra"

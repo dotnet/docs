@@ -47,12 +47,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifierClause[])
 ms.author: "v-jibran"
 manager: "markgal"

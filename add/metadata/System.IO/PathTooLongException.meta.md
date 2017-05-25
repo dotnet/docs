@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.PathTooLongException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.PathTooLongException.#ctor(System.String)
 author: "mairaw"
 ms.author: "mairaw"

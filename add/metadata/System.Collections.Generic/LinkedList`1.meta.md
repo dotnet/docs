@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.LinkedList`1.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.LinkedList`1.Remove(`0)
 author: "mairaw"
 ms.author: "mairaw"

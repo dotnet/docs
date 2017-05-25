@@ -81,10 +81,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.Composition.Primitives.ImportDefinition.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

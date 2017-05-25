@@ -90,13 +90,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlTypes.SqlBytes.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlTypes.SqlBytes.ToSqlBinary
 author: "JennieHubbard"
 ms.author: "jhubbard"

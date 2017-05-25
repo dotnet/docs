@@ -223,13 +223,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Linq.EntitySet`1.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Linq.EntitySet`1.AddRange(System.Collections.Generic.IEnumerable{`0})
 author: "JennieHubbard"
 ms.author: "jhubbard"

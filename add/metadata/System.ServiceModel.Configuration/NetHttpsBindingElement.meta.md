@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.NetHttpsBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.NetHttpsBindingElement.WebSocketSettings
 author: "Erikre"
 ms.author: "erikre"

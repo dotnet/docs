@@ -152,12 +152,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.Security.Claims.ClaimsIdentity.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.Security.Claims.ClaimsIdentity.WriteTo
 manager: "markgal"
 ---

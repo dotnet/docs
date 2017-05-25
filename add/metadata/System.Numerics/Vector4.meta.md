@@ -461,13 +461,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Numerics.Vector4.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Numerics.Vector4.Transform(System.Numerics.Vector4,System.Numerics.Matrix4x4)
 author: "rpetrusha"
 ms.author: "ronpet"

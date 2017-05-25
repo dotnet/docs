@@ -131,12 +131,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.TemplateControl.ReadStringResource
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.TemplateControl.OnCommitTransaction(System.EventArgs)
 ms.author: "riande"
 manager: "wpickett"

@@ -71,12 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ParserErrorCollection.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.ParserErrorCollection.Insert(System.Int32,System.Web.ParserError)
 ms.author: "riande"
 manager: "wpickett"

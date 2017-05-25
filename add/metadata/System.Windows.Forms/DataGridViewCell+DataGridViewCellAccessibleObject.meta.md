@@ -75,13 +75,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject.Help
 author: "stevehoag"
 ms.author: "shoag"

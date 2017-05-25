@@ -111,13 +111,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.StringInfo.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Globalization.StringInfo.SubstringByTextElements(System.Int32,System.Int32)
 author: "rpetrusha"
 ms.author: "ronpet"

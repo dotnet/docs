@@ -88,10 +88,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Drawing.Printing.Margins.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

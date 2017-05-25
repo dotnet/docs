@@ -221,12 +221,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlSecurityTokenHandler.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlSecurityTokenHandler.FindUpn(System.Security.Claims.ClaimsIdentity)
 ms.author: "v-jibran"
 manager: "markgal"

@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.FindCriteria.CreateMetadataExchangeEndpointCriteria
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix
 author: "Erikre"
 ms.author: "erikre"
@@ -119,13 +112,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Discovery.FindCriteria.ContractTypeNames
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.FindCriteria.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

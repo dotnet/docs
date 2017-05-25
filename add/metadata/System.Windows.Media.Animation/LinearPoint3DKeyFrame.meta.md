@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.LinearPoint3DKeyFrame.CreateInstanceCore
 author: "stevehoag"
 ms.author: "shoag"

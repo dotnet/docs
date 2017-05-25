@@ -33,9 +33,3 @@ uid: System.IdentityModel.Metadata.KeyDescriptor.#ctor(System.IdentityModel.Toke
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Metadata.KeyDescriptor.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

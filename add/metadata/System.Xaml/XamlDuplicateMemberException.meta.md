@@ -39,11 +39,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlDuplicateMemberException.#ctor
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlDuplicateMemberException.#ctor(System.String,System.Exception)
 manager: "martinek"
 ---

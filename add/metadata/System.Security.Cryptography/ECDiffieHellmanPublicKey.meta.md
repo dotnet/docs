@@ -60,17 +60,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Cryptography.ECDiffieHellmanPublicKey.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.ECDiffieHellmanPublicKey.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

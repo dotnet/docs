@@ -146,13 +146,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.CodeGroup.ToXml
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.CodeGroup.GetHashCode
 author: "mairaw"
 ms.author: "mairaw"

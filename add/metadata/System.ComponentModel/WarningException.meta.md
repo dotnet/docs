@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.WarningException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.WarningException.HelpUrl
 author: "stevehoag"
 ms.author: "shoag"

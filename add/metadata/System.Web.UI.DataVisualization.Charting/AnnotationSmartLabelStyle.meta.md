@@ -23,12 +23,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineAnchorCapStyle
 ms.author: "mblythe"
 manager: "mblythe"

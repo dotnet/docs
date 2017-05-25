@@ -167,13 +167,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlSerializer.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlSerializer.UnreferencedObject
 author: "Erikre"
 ms.author: "erikre"

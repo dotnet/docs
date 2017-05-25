@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Exception.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Exception.Message
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.InvalidComObjectException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices.InvalidComObjectException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

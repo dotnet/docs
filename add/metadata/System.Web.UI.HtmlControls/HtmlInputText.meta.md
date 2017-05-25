@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.HtmlControls.HtmlInputText.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.HtmlControls.HtmlInputText.OnServerChange(System.EventArgs)
 author: "tdykstra"
 ms.author: "tdykstra"

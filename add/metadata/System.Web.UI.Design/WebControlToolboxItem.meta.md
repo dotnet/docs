@@ -67,9 +67,3 @@ uid: System.Web.UI.Design.WebControlToolboxItem.Deserialize(System.Runtime.Seria
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.Design.WebControlToolboxItem.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

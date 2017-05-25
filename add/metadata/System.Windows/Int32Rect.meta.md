@@ -82,13 +82,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Int32Rect.ToString
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Int32Rect.op_Inequality(System.Windows.Int32Rect,System.Windows.Int32Rect)
 author: "stevehoag"
 ms.author: "shoag"

@@ -251,13 +251,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Double.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Double.System#IConvertible#ToType(System.Type,System.IFormatProvider)
 author: "rpetrusha"
 ms.author: "ronpet"

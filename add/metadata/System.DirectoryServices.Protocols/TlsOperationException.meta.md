@@ -27,13 +27,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.TlsOperationException.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.TlsOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

@@ -53,12 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.CompositeDataBoundControl.CreateChildControls(System.Collections.IEnumerable,System.Boolean)
 ms.author: "riande"
 manager: "wpickett"

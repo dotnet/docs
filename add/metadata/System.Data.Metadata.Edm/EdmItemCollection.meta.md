@@ -27,13 +27,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Metadata.Edm.EdmItemCollection.GetPrimitiveTypes
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Metadata.Edm.EdmItemCollection.#ctor
 author: "JennieHubbard"
 ms.author: "jhubbard"

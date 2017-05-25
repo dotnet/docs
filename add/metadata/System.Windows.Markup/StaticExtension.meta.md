@@ -24,11 +24,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.StaticExtension.#ctor
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.StaticExtension.Member
 manager: "martinek"
 ---

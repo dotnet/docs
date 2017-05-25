@@ -23,12 +23,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.ExternalProjectStartedEventArgs.ProjectFile
 ms.author: "susanno"
 manager: "douge"

@@ -143,20 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.TypeDelegator.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.TypeDelegator.GetEvents
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.TypeDelegator.GetField
 manager: "ghogen"
 ---

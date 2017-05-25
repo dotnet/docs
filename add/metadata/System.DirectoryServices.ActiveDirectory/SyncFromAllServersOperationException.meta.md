@@ -34,13 +34,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.SyncFromAllServersOperationException.ErrorInformation
 author: "BrucePerlerMS"
 ms.author: "bruceper"

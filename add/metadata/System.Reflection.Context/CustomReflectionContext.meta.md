@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Context.CustomReflectionContext.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Context.CustomReflectionContext.GetCustomAttributes(System.Reflection.MemberInfo,System.Collections.Generic.IEnumerable{System.Object})
 author: "rpetrusha"
 ms.author: "ronpet"

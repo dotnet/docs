@@ -251,21 +251,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.ArrayList.ToArray
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.ArrayList.ToArray(System.Type)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.ArrayList.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -308,13 +294,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.ArrayList.Reverse
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -405,13 +384,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.ArrayList.GetEnumerator
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.ArrayList.IndexOf
 author: "mairaw"
 ms.author: "mairaw"
@@ -441,13 +413,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.ArrayList.Synchronized
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.ArrayList.Sort
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

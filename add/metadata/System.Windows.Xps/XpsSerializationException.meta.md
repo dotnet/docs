@@ -14,11 +14,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.XpsSerializationException.#ctor
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.XpsSerializationException.#ctor(System.String)
 manager: "leannef"
 ---

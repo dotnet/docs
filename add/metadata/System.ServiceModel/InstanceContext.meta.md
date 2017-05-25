@@ -90,13 +90,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.InstanceContext.GetServiceInstance
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.InstanceContext.Extensions
 author: "Erikre"
 ms.author: "erikre"

@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.LookupBindingPropertiesAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember
 author: "stevehoag"
 ms.author: "shoag"

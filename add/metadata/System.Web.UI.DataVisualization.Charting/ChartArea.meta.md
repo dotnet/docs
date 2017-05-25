@@ -165,12 +165,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartArea.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.ChartArea.BackImageAlignment
 ms.author: "mblythe"
 manager: "mblythe"

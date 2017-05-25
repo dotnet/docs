@@ -9,11 +9,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueuePermission.#ctor
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueuePermission.IsSubsetOf(System.Security.IPermission)
 manager: "tyoung"
 ---

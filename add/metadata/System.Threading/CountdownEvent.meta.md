@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.CountdownEvent.Wait
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.CountdownEvent.Wait(System.Int32)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -125,27 +118,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.CountdownEvent.TryAddCount
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CountdownEvent.Signal
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CountdownEvent.AddCount
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.CountdownEvent.AddCount
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -175,20 +147,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.CountdownEvent.Wait(System.TimeSpan,System.Threading.CancellationToken)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CountdownEvent.Reset
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CountdownEvent.Dispose
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

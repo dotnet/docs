@@ -20,13 +20,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityParameter.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityClient.EntityParameter.SourceColumnNullMapping
 author: "JennieHubbard"
 ms.author: "jhubbard"

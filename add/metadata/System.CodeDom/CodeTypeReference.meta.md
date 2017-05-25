@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeReference.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTypeReference.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

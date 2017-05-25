@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.TextReader.Read
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
 author: "mairaw"
 ms.author: "mairaw"
@@ -119,13 +112,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.TextReader.Dispose
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

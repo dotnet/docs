@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.ProcessModuleCollection.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.ProcessModuleCollection.Item(System.Int32)
 author: "mairaw"
 ms.author: "mairaw"

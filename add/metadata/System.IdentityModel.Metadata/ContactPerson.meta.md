@@ -51,9 +51,3 @@ uid: System.IdentityModel.Metadata.ContactPerson.Surname
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Metadata.ContactPerson.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

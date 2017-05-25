@@ -20,13 +20,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.TypedTableBase`1.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.TypedTableBase`1.GetEnumerator
 author: "JennieHubbard"
 ms.author: "jhubbard"

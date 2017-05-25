@@ -72,10 +72,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Printing.IndexedProperties.PrintProperty.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

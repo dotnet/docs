@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.VersionCD1.FindCriteriaCD1.GetSchema
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.VersionCD1.FindCriteriaCD1.ToFindCriteria
 author: "Erikre"
 ms.author: "erikre"

@@ -104,13 +104,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.TextMessageEncodingBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.TextMessageEncodingBindingElement.MessageVersion
 author: "Erikre"
 ms.author: "erikre"

@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IReferenceService.GetReferences
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.IReferenceService.GetReference(System.String)
 author: "stevehoag"
 ms.author: "shoag"

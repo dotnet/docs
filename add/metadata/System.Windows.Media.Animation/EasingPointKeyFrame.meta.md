@@ -54,13 +54,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingPointKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingPointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)
 author: "stevehoag"
 ms.author: "shoag"

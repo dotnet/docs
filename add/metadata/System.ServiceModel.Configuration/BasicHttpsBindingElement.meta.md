@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.BasicHttpsBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.BasicHttpsBindingElement.OnApplyConfiguration(System.ServiceModel.Channels.Binding)
 author: "Erikre"
 ms.author: "erikre"

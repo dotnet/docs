@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.SoapReflectionImporter.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.SoapReflectionImporter.ImportMembersMapping(System.String,System.String,System.Xml.Serialization.XmlReflectionMember[],System.Boolean,System.Boolean,System.Boolean)
 author: "Erikre"
 ms.author: "erikre"

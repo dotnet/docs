@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.HtmlControls.HtmlControl.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.HtmlControls.HtmlControl.CreateControlCollection
 author: "tdykstra"
 ms.author: "tdykstra"

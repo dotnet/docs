@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.RouteDataAttribute.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.RouteDataAttribute.GetValueProvider(System.Web.ModelBinding.ModelBindingExecutionContext)
 author: "tdykstra"
 ms.author: "tdykstra"

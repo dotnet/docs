@@ -221,12 +221,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.ToolTip
 ms.author: "mblythe"
 manager: "mblythe"

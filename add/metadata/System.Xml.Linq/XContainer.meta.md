@@ -118,20 +118,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XContainer.Descendants
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XContainer.Elements
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XContainer.Elements
 author: "mairaw"
 ms.author: "mairaw"

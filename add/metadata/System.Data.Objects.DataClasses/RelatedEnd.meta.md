@@ -125,13 +125,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Objects.DataClasses.RelatedEnd.Load
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Objects.DataClasses.RelatedEnd.RelationshipName
 author: "JennieHubbard"
 ms.author: "jhubbard"

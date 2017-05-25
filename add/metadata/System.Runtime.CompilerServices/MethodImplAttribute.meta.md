@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.CompilerServices.MethodImplAttribute.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.CompilerServices.MethodImplAttribute.Value
 author: "rpetrusha"
 ms.author: "ronpet"

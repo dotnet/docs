@@ -210,13 +210,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.PictureBox.LoadAsync
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.PictureBox.InitialImage
 author: "stevehoag"
 ms.author: "shoag"
@@ -285,13 +278,6 @@ manager: "ghogen"
 
 ---
 uid: System.Windows.Forms.PictureBox.Font
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.PictureBox.Load
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

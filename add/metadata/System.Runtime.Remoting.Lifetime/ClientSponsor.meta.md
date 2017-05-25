@@ -47,8 +47,3 @@ manager: "ghogen"
 uid: System.Runtime.Remoting.Lifetime.ClientSponsor.Renewal(System.Runtime.Remoting.Lifetime.ILease)
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Lifetime.ClientSponsor.#ctor
-manager: "ghogen"
----

@@ -53,12 +53,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.ChartArea3DStyle.WallWidth
 ms.author: "mblythe"
 manager: "mblythe"

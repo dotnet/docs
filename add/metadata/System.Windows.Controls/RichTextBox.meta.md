@@ -95,12 +95,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.RichTextBox.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Controls.RichTextBox.CaretPosition
 author: "stevehoag"
 ms.author: "shoag"

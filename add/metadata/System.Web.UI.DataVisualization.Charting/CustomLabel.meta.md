@@ -95,12 +95,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.CustomLabel.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.CustomLabel.ImageTransparentColor
 ms.author: "mblythe"
 manager: "mblythe"

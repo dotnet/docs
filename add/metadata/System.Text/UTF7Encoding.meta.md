@@ -67,13 +67,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.UTF7Encoding.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.UTF7Encoding.GetByteCount(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

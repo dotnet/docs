@@ -85,13 +85,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Pen.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Pen.LineJoinProperty
 author: "stevehoag"
 ms.author: "shoag"

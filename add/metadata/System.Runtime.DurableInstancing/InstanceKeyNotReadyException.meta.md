@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstanceKeyNotReadyException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.DurableInstancing.InstanceKeyNotReadyException.#ctor(System.Xml.Linq.XName,System.Runtime.DurableInstancing.InstanceKey,System.Exception)
 author: "Erikre"
 ms.author: "erikre"

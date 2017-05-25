@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.KeyedHashAlgorithm.Create
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.KeyedHashAlgorithm.Key
 author: "mairaw"
 ms.author: "mairaw"

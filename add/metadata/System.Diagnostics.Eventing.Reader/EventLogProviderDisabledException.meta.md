@@ -27,9 +27,3 @@ uid: System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException.#ctor(
 ms.author: "jgalasyn"
 manager: "ghogen"
 ---
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogProviderDisabledException.#ctor
-ms.author: "jgalasyn"
-manager: "ghogen"
----

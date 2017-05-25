@@ -42,8 +42,3 @@ manager: "martinek"
 uid: System.Windows.Markup.ArrayExtension.AddText(System.String)
 manager: "martinek"
 ---
-
----
-uid: System.Windows.Markup.ArrayExtension.#ctor
-manager: "martinek"
----

@@ -167,13 +167,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Int16.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Int16.MinValue
 author: "rpetrusha"
 ms.author: "ronpet"

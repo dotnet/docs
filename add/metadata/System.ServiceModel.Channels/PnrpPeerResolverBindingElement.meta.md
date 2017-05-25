@@ -9,11 +9,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Channels.PnrpPeerResolverBindingElement.#ctor
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Channels.PnrpPeerResolverBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
 manager: "ghogen"
 ---

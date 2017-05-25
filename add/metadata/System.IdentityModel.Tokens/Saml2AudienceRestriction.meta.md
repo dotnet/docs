@@ -27,9 +27,3 @@ uid: System.IdentityModel.Tokens.Saml2AudienceRestriction.Audiences
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Tokens.Saml2AudienceRestriction.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

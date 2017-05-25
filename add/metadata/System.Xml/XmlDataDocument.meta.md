@@ -131,10 +131,3 @@ manager: "wpickett"
 uid: System.Xml.XmlDataDocument.GetElementsByTagName
 manager: "ghogen"
 ---
-
----
-uid: System.Xml.XmlDataDocument.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.TimeZoneNotFoundException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.TimeZoneNotFoundException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

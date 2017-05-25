@@ -230,13 +230,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplication.Run
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.WorkflowApplication.LoadRunnableInstance
 author: "Erikre"
 ms.author: "erikre"
@@ -266,13 +259,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowApplication.BeginCancel(System.TimeSpan,System.AsyncCallback,System.Object)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplication.LoadRunnableInstance
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -364,13 +350,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowApplication.BeginRun(System.TimeSpan,System.AsyncCallback,System.Object)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplication.Cancel
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -636,13 +615,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplication.Abort
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.WorkflowApplication.Terminate(System.String)
 author: "Erikre"
 ms.author: "erikre"
@@ -658,13 +630,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowApplication.Run(System.TimeSpan)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplication.Persist
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -735,13 +700,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowApplication.EndCreateDefaultInstanceOwner(System.IAsyncResult)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplication.Unload
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
@@ -840,13 +798,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowApplication.BeginGetRunnableInstance(System.Runtime.DurableInstancing.InstanceStore,System.AsyncCallback,System.Object)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplication.GetBookmarks
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

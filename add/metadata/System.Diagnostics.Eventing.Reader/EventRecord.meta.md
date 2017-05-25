@@ -65,12 +65,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventRecord.FormatDescription
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventRecord.FormatDescription(System.Collections.Generic.IEnumerable{System.Object})
 ms.author: "jgalasyn"
 manager: "ghogen"
@@ -144,12 +138,6 @@ manager: "ghogen"
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.Version
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.Dispose
 ms.author: "jgalasyn"
 manager: "ghogen"
 ---

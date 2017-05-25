@@ -47,13 +47,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Design.ComponentEditorForm.ShowForm
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Design.ComponentEditorForm.OnActivated(System.EventArgs)
 author: "stevehoag"
 ms.author: "shoag"

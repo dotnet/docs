@@ -159,11 +159,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.Message.#ctor
-manager: "tyoung"
----
-
----
 uid: System.Messaging.Message.SourceMachine
 manager: "tyoung"
 ---

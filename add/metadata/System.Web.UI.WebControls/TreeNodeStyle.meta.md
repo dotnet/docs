@@ -35,12 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.TreeNodeStyle.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.TreeNodeStyle.#ctor(System.Web.UI.StateBag)
 ms.author: "riande"
 manager: "wpickett"

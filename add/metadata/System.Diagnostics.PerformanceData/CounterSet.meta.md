@@ -51,9 +51,3 @@ uid: System.Diagnostics.PerformanceData.CounterSet.#ctor(System.Guid,System.Guid
 ms.author: "jgalasyn"
 manager: "ghogen"
 ---
-
----
-uid: System.Diagnostics.PerformanceData.CounterSet.Dispose
-ms.author: "jgalasyn"
-manager: "ghogen"
----

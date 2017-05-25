@@ -18,10 +18,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.RegularExpressions.LTRegex.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

@@ -274,11 +274,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueue.BeginReceive
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueue.BeginPeek
 manager: "tyoung"
 ---
@@ -294,11 +289,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueue.GetMessageQueueEnumerator
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueue.BeginReceive(System.TimeSpan,System.Object,System.AsyncCallback)
 manager: "tyoung"
 ---
@@ -310,11 +300,6 @@ manager: "tyoung"
 
 ---
 uid: System.Messaging.MessageQueue.SetPermissions(System.Messaging.AccessControlList)
-manager: "tyoung"
----
-
----
-uid: System.Messaging.MessageQueue.BeginPeek
 manager: "tyoung"
 ---
 
@@ -428,11 +413,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueue.#ctor
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueue.ReceiveById(System.String,System.TimeSpan)
 manager: "tyoung"
 ---
@@ -454,11 +434,6 @@ manager: "tyoung"
 
 ---
 uid: System.Messaging.MessageQueue.Send(System.Object,System.Messaging.MessageQueueTransaction)
-manager: "tyoung"
----
-
----
-uid: System.Messaging.MessageQueue.Receive
 manager: "tyoung"
 ---
 
@@ -513,11 +488,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueue.GetPublicQueues
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueue.ClearConnectionCache
 manager: "tyoung"
 ---
@@ -544,11 +514,6 @@ manager: "tyoung"
 
 ---
 uid: System.Messaging.MessageQueue.GetPublicQueues(System.Messaging.MessageQueueCriteria)
-manager: "tyoung"
----
-
----
-uid: System.Messaging.MessageQueue.Peek
 manager: "tyoung"
 ---
 

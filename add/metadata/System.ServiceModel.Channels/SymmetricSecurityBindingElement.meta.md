@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder
 author: "Erikre"
 ms.author: "erikre"

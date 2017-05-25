@@ -59,22 +59,12 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlTypeName.#ctor
-manager: "martinek"
----
-
----
 uid: System.Xaml.Schema.XamlTypeName.TypeArguments
 manager: "martinek"
 ---
 
 ---
 uid: System.Xaml.Schema.XamlTypeName.#ctor(System.Xaml.XamlType)
-manager: "martinek"
----
-
----
-uid: System.Xaml.Schema.XamlTypeName.ToString
 manager: "martinek"
 ---
 

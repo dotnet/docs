@@ -107,12 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.Configuration.Save
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode,System.Boolean)
 ms.author: "riande"
 manager: "wpickett"

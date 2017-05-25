@@ -183,13 +183,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.ComponentModel.BindingList`1.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.BindingList`1.AllowNew
 author: "stevehoag"
 ms.author: "shoag"

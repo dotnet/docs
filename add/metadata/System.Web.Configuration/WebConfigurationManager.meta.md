@@ -107,12 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String)
 ms.author: "riande"
 manager: "wpickett"

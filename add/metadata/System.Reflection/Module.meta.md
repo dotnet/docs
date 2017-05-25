@@ -349,13 +349,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Module.GetMethods
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Module.GetField
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -406,13 +399,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.Module.ResolveType(System.Int32,System.Type[],System.Type[])
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Module.GetFields
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

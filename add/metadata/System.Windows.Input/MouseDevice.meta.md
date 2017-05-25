@@ -114,13 +114,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.MouseDevice.GetClientPosition
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.MouseDevice.GetClientPosition(System.Windows.PresentationSource)
 author: "stevehoag"
 ms.author: "shoag"

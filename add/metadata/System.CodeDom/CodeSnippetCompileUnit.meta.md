@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeSnippetCompileUnit.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeSnippetCompileUnit.Value
 author: "rpetrusha"
 ms.author: "ronpet"

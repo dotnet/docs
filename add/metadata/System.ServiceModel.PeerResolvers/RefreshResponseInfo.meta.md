@@ -29,12 +29,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.RefreshResponseInfo.#ctor
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.PeerResolvers.RefreshResponseInfo.HasBody
 ms.author: "bobdel"
 manager: "ghogen"

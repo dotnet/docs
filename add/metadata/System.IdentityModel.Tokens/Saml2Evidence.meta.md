@@ -17,12 +17,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.Saml2Evidence.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.Saml2Evidence.#ctor(System.Uri)
 ms.author: "v-jibran"
 manager: "markgal"

@@ -491,12 +491,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.HtmlTextWriter.WriteLine
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.HtmlTextWriter.Write(System.Single)
 ms.author: "riande"
 manager: "wpickett"

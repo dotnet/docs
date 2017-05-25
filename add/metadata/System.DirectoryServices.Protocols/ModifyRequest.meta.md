@@ -27,13 +27,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.ModifyRequest.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.ModifyRequest.#ctor(System.String,System.DirectoryServices.Protocols.DirectoryAttributeModification[])
 author: "BrucePerlerMS"
 ms.author: "bruceper"

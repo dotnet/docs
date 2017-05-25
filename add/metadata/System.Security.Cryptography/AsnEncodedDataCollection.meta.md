@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AsnEncodedDataCollection.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.AsnEncodedDataCollection.SyncRoot
 author: "mairaw"
 ms.author: "mairaw"

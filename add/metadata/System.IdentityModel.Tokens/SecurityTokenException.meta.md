@@ -27,9 +27,3 @@ uid: System.IdentityModel.Tokens.SecurityTokenException.#ctor(System.Runtime.Ser
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Tokens.SecurityTokenException.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

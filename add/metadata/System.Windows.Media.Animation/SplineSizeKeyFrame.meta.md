@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineSizeKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SplineSizeKeyFrame.KeySpline
 author: "stevehoag"
 ms.author: "shoag"

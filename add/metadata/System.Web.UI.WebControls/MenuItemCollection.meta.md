@@ -59,12 +59,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.MenuItemCollection.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.MenuItemCollection.Remove(System.Web.UI.WebControls.MenuItem)
 ms.author: "riande"
 manager: "wpickett"

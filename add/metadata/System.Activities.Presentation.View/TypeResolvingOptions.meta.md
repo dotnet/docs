@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.View.TypeResolvingOptions.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.View.TypeResolvingOptions.Filter
 author: "Erikre"
 ms.author: "erikre"

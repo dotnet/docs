@@ -144,13 +144,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.MethodBuilder.GetILGenerator
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.MethodBuilder.GetToken
 author: "rpetrusha"
 ms.author: "ronpet"

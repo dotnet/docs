@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.SignatureDescription.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.SignatureDescription.CreateFormatter(System.Security.Cryptography.AsymmetricAlgorithm)
 author: "mairaw"
 ms.author: "mairaw"

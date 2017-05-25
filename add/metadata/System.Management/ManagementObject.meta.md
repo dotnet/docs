@@ -94,11 +94,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementObject.GetRelated
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementObject.GetRelationships
 manager: "jillfra"
 ---
@@ -145,11 +140,6 @@ manager: "jillfra"
 
 ---
 uid: System.Management.ManagementObject.GetMethodParameters(System.String)
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementObject.Delete
 manager: "jillfra"
 ---
 
@@ -239,16 +229,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementObject.Put
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementObject.Get
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementObject.Put(System.Management.PutOptions)
 manager: "jillfra"
 ---
@@ -269,11 +249,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementObject.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String)
 manager: "jillfra"
 ---
@@ -284,11 +259,6 @@ uid: System.Management.ManagementObject.Dispose
 
 ---
 uid: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementObject.GetRelationships
 manager: "jillfra"
 ---
 

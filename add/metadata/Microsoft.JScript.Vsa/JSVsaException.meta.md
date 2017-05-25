@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.JScript.Vsa.JSVsaException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: Microsoft.JScript.Vsa.JSVsaException.#ctor(Microsoft.JScript.Vsa.JSVsaError,System.String,System.Exception)
 author: "mairaw"
 ms.author: "mairaw"

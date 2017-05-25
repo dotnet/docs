@@ -186,13 +186,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.StreamReader.Read
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.StreamReader.#ctor(System.String,System.Boolean)
 author: "mairaw"
 ms.author: "mairaw"

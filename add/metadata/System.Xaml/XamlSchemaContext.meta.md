@@ -79,11 +79,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlSchemaContext.#ctor
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlSchemaContext.GetXamlType
 manager: "martinek"
 ---

@@ -13,13 +13,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.TypedDataSetGeneratorException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.TypedDataSetGeneratorException.ErrorList
 author: "JennieHubbard"
 ms.author: "jhubbard"

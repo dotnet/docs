@@ -22,8 +22,3 @@ manager: "ghogen"
 uid: System.Runtime.Remoting.RemotingException.#ctor(System.String)
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.RemotingException.#ctor
-manager: "ghogen"
----

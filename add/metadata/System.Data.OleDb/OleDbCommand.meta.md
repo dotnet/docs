@@ -90,13 +90,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbCommand.ExecuteReader
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OleDb.OleDbCommand.UpdatedRowSource
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -139,13 +132,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbCommand.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OleDb.OleDbCommand.CreateParameter
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -182,13 +168,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OleDb.OleDbCommand.CommandTimeout
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OleDb.OleDbCommand.System#Data#IDbCommand#ExecuteReader
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

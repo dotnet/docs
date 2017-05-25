@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Nullable`1.GetValueOrDefault
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Nullable`1.HasValue
 author: "rpetrusha"
 ms.author: "ronpet"

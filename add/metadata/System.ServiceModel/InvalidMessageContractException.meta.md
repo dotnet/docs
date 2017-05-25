@@ -32,10 +32,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.InvalidMessageContractException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

@@ -45,9 +45,3 @@ uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner.GetDesignTimeHt
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.Design.WebControls.ContentPlaceHolderDesigner.GetDesignTimeHtml
-ms.author: "riande"
-manager: "wpickett"
----

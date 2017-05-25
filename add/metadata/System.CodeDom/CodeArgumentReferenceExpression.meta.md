@@ -25,10 +25,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.CodeDom.CodeArgumentReferenceExpression.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

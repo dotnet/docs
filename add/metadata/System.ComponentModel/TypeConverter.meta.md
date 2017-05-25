@@ -216,13 +216,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.TypeConverter.GetCreateInstanceSupported
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.TypeConverter.IsValid(System.Object)
 author: "stevehoag"
 ms.author: "shoag"
@@ -286,13 +279,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.TypeConverter.GetStandardValuesExclusive
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.TypeConverter.GetPropertiesSupported
 author: "stevehoag"
 ms.author: "shoag"
@@ -342,21 +328,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.TypeConverter.GetStandardValuesSupported
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.TypeConverter.CanConvertTo(System.Type)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.TypeConverter.GetStandardValues
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -371,13 +343,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.TypeConverter.ConvertToString(System.Object)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.TypeConverter.GetPropertiesSupported
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

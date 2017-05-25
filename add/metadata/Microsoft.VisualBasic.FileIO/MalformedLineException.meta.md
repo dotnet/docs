@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.FileIO.MalformedLineException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.FileIO.MalformedLineException.LineNumber
 author: "stevehoag"
 ms.author: "shoag"

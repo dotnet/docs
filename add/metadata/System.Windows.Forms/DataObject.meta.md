@@ -80,13 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataObject.GetText
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#SetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@,System.Boolean)
 author: "stevehoag"
 ms.author: "shoag"
@@ -310,21 +303,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DataObject.GetFormats
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#GetCanonicalFormatEtc(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.FORMATETC@)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataObject.#ctor
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

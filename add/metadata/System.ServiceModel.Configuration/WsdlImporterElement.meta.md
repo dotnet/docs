@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WsdlImporterElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.WsdlImporterElement.#ctor(System.Type)
 author: "Erikre"
 ms.author: "erikre"

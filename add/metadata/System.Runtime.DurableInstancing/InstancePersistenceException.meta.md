@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstancePersistenceException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.DurableInstancing.InstancePersistenceException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "Erikre"
 ms.author: "erikre"

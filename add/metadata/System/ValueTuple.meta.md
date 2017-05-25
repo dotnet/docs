@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ValueTuple.Create
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ValueTuple.Equals(System.Object)
 author: "rpetrusha"
 ms.author: "ronpet"

@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebBrowsableAttribute.#ctor(System.Boolean)
 author: "tdykstra"
 ms.author: "tdykstra"

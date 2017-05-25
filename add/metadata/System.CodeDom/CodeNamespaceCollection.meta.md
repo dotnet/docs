@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeNamespaceCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeNamespaceCollection.Remove(System.CodeDom.CodeNamespace)
 author: "rpetrusha"
 ms.author: "ronpet"

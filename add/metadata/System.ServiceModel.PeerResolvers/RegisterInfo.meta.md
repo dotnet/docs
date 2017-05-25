@@ -23,12 +23,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.RegisterInfo.#ctor
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.PeerResolvers.RegisterInfo.MeshId
 ms.author: "bobdel"
 manager: "ghogen"

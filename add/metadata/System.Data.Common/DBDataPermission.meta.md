@@ -55,13 +55,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DBDataPermission.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DBDataPermission.AllowBlankPassword
 author: "JennieHubbard"
 ms.author: "jhubbard"

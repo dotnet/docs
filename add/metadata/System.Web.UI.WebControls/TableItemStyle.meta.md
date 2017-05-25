@@ -61,9 +61,3 @@ uid: System.Web.UI.WebControls.TableItemStyle.VerticalAlign
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.WebControls.TableItemStyle.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

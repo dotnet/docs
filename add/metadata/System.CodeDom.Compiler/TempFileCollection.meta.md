@@ -146,13 +146,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.TempFileCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.Compiler.TempFileCollection.System#IDisposable#Dispose
 author: "rpetrusha"
 ms.author: "ronpet"

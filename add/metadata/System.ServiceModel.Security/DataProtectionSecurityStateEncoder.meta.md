@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.DataProtectionSecurityStateEncoder.GetEntropy
 author: "Erikre"
 ms.author: "erikre"

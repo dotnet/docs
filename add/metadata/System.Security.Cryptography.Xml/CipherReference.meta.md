@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.CipherReference.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.CipherReference.LoadXml(System.Xml.XmlElement)
 author: "mairaw"
 ms.author: "mairaw"

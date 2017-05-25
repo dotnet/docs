@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.MessageHeader`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.MessageHeader`1.MustUnderstand
 author: "Erikre"
 ms.author: "erikre"

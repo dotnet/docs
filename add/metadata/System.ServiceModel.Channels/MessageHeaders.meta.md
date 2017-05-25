@@ -146,13 +146,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.MessageHeaders.HaveMandatoryHeadersBeenUnderstood
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.MessageHeaders.RemoveAt(System.Int32)
 author: "Erikre"
 ms.author: "erikre"

@@ -160,13 +160,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetAttributes
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -182,13 +175,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbDataRecord.GetDouble(System.Int32)
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetEvents
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

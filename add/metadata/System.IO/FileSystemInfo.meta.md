@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemInfo.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileSystemInfo.Extension
 author: "mairaw"
 ms.author: "mairaw"

@@ -14,11 +14,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlBackgroundReader.StartThread
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlBackgroundReader.Namespace
 manager: "martinek"
 ---

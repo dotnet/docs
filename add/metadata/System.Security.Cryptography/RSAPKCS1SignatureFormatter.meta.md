@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSAPKCS1SignatureFormatter.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RSAPKCS1SignatureFormatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
 author: "mairaw"
 ms.author: "mairaw"

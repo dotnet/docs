@@ -29,12 +29,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.DynamicControlParameter.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.DynamicData.DynamicControlParameter.ControlId
 ms.author: "riande"
 manager: "wpickett"

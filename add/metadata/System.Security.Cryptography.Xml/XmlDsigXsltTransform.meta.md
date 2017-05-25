@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.InputTypes
 author: "mairaw"
 ms.author: "mairaw"
@@ -63,13 +56,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetOutput(System.Type)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetOutput
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

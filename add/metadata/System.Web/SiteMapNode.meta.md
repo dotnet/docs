@@ -197,12 +197,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.SiteMapNode.Clone
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.SiteMapNode.HasChildNodes
 ms.author: "riande"
 manager: "wpickett"

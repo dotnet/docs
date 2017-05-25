@@ -32,10 +32,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Workflow.Activities.SetStateActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

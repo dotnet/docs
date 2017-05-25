@@ -155,12 +155,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.Grammar.#ctor
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.Grammar.#ctor(System.String,System.String,System.Object[])
 ms.author: "kbridge"
 manager: "ghogen"

@@ -81,9 +81,3 @@ uid: System.IdentityModel.Tokens.SamlAuthenticationStatement.ClaimType
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Tokens.SamlAuthenticationStatement.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

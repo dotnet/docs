@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.PropertyEditing.PropertyValueEditor.#ctor(System.Windows.DataTemplate)
 author: "Erikre"
 ms.author: "erikre"

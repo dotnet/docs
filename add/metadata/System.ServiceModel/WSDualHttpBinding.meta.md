@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WSDualHttpBinding.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.WSDualHttpBinding.#ctor(System.ServiceModel.WSDualHttpSecurityMode)
 author: "Erikre"
 ms.author: "erikre"

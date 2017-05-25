@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeParameterDeclarationExpressionCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeParameterDeclarationExpressionCollection.#ctor(System.CodeDom.CodeParameterDeclarationExpressionCollection)
 author: "rpetrusha"
 ms.author: "ronpet"

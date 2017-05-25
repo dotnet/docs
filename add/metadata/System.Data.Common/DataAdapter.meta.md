@@ -167,13 +167,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DataAdapter.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DataAdapter.CreateTableMappings
 author: "JennieHubbard"
 ms.author: "jhubbard"

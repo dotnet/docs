@@ -121,13 +121,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Data.CompositeCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Data.CompositeCollection.#ctor(System.Int32)
 author: "stevehoag"
 ms.author: "shoag"

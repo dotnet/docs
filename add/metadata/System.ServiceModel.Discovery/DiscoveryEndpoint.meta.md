@@ -53,10 +53,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Discovery.DiscoveryEndpoint.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.CancellationTokenSource.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.CancellationTokenSource.Dispose
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -77,13 +70,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.CancellationTokenSource.IsCancellationRequested
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CancellationTokenSource.Dispose
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -119,13 +105,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.CancellationTokenSource.Token
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CancellationTokenSource.Cancel
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

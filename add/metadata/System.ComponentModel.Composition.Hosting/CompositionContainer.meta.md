@@ -77,13 +77,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.ComponentModel.Composition.Hosting.ExportProvider[])
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -127,13 +120,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Dispose(System.Boolean)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Dispose
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

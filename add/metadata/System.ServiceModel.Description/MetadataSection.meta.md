@@ -90,13 +90,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.MetadataSection.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.MetadataSection.Identifier
 author: "Erikre"
 ms.author: "erikre"

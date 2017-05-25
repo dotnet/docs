@@ -300,13 +300,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Font.GetHeight
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Font.Bold
 author: "stevehoag"
 ms.author: "shoag"

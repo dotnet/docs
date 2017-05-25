@@ -20,13 +20,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbTransaction.Dispose
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbTransaction.DbConnection
 author: "JennieHubbard"
 ms.author: "jhubbard"

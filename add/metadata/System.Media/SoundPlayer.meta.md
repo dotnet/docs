@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Media.SoundPlayer.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Media.SoundPlayer.PlaySync
 author: "stevehoag"
 ms.author: "shoag"

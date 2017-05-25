@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.MsmqBindingElementBase.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.MsmqBindingElementBase.ReceiveErrorHandling
 author: "Erikre"
 ms.author: "erikre"

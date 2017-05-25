@@ -60,17 +60,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Random.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Random.Next
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

@@ -104,13 +104,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Concurrent.ConcurrentBag`1.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Concurrent.ConcurrentBag`1.TryTake(`0@)
 author: "mairaw"
 ms.author: "mairaw"

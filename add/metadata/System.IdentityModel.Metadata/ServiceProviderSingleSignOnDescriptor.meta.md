@@ -29,12 +29,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AssertionConsumerServices
 ms.author: "v-jibran"
 manager: "markgal"

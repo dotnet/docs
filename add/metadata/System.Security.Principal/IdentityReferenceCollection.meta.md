@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Principal.IdentityReferenceCollection.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Principal.IdentityReferenceCollection.Translate(System.Type)
 author: "mairaw"
 ms.author: "mairaw"

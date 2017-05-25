@@ -230,13 +230,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ClientBase`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.ClientBase`1.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

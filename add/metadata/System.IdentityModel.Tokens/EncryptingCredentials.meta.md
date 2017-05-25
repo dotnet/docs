@@ -33,9 +33,3 @@ uid: System.IdentityModel.Tokens.EncryptingCredentials.#ctor
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Tokens.EncryptingCredentials.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

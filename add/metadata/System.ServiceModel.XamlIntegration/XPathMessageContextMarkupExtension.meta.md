@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.Namespaces
 author: "Erikre"
 ms.author: "erikre"

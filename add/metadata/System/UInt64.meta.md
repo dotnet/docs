@@ -118,13 +118,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.UInt64.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.UInt64.System#IConvertible#ToUInt16(System.IFormatProvider)
 author: "rpetrusha"
 ms.author: "ronpet"

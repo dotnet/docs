@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.ObjectModel.ObservableCollection`1.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Collections.ObjectModel.ObservableCollection`1.RemoveItem(System.Int32)
 author: "stevehoag"
 ms.author: "shoag"

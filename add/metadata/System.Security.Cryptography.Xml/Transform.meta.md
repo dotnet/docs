@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.Transform.GetOutput
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.Transform.InputTypes
 author: "mairaw"
 ms.author: "mairaw"

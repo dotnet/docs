@@ -113,13 +113,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewImageCell.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridViewImageCell.CreateAccessibilityInstance
 author: "stevehoag"
 ms.author: "shoag"

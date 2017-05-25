@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IdentityModel.Selectors.CardSpaceException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IdentityModel.Selectors.CardSpaceException.#ctor(System.String,System.Exception)
 author: "Erikre"
 ms.author: "erikre"

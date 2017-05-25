@@ -160,13 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.ProcessStartInfo.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.ProcessStartInfo.ErrorDialogParentHandle
 author: "mairaw"
 ms.author: "mairaw"

@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlTextAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlTextAttribute.Type
 author: "Erikre"
 ms.author: "erikre"

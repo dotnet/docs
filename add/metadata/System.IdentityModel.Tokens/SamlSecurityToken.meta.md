@@ -69,9 +69,3 @@ uid: System.IdentityModel.Tokens.SamlSecurityToken.SecurityKeys
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Tokens.SamlSecurityToken.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

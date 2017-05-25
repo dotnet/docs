@@ -299,12 +299,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.DataManipulator.ExportSeriesValues
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.DataManipulator.InsertEmptyPoints(System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Windows.Forms.DataVisualization.Charting.IntervalType,System.Double,System.Double,System.String)
 ms.author: "mblythe"
 manager: "mblythe"

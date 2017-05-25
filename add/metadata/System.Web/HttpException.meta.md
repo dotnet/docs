@@ -71,12 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpException.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpException.#ctor(System.Int32,System.String,System.Int32)
 ms.author: "riande"
 manager: "wpickett"

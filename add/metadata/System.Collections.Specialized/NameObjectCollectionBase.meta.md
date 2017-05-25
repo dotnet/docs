@@ -160,13 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllValues
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.NameObjectCollectionBase.BaseSet(System.String,System.Object)
 author: "mairaw"
 ms.author: "mairaw"
@@ -196,13 +189,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Specialized.NameObjectCollectionBase.BaseGet(System.String)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Specialized.NameObjectCollectionBase.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

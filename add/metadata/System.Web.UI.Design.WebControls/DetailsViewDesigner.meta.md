@@ -59,12 +59,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.DetailsViewDesigner.#ctor
 ms.author: "riande"
 manager: "wpickett"

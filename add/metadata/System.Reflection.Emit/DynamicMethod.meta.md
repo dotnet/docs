@@ -165,13 +165,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.DynamicMethod.GetILGenerator
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.DynamicMethod.GetCustomAttributes
 author: "rpetrusha"
 ms.author: "ronpet"

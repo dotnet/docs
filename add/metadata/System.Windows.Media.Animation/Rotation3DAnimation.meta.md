@@ -88,13 +88,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Rotation3DAnimation.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Rotation3DAnimation.By
 ms.author: "kempb"
 manager: "ghogen"

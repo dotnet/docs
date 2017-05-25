@@ -111,13 +111,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WebHttpBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.WebHttpBindingElement.WriteEncoding
 author: "Erikre"
 ms.author: "erikre"

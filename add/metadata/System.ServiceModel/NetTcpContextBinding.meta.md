@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.NetTcpContextBinding.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.NetTcpContextBinding.ClientCallbackAddress
 author: "Erikre"
 ms.author: "erikre"

@@ -52,13 +52,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingVector3DKeyFrame.EasingFunctionProperty
 ms.author: "kempb"
 manager: "ghogen"

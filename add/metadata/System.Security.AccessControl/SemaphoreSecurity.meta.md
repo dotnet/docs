@@ -130,10 +130,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.AccessControl.SemaphoreSecurity.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

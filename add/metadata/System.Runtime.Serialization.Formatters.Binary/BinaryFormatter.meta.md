@@ -89,12 +89,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.#ctor
-ms.author: "sethm"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)
 ms.author: "sethm"
 manager: "ghogen"

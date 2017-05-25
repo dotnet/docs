@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingDecimalKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingDecimalKeyFrame.#ctor(System.Decimal,System.Windows.Media.Animation.KeyTime)
 author: "stevehoag"
 ms.author: "shoag"

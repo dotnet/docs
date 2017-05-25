@@ -27,8 +27,3 @@ manager: "jillfra"
 uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor(System.String)
 manager: "jillfra"
 ---
-
----
-uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor
-manager: "jillfra"
----

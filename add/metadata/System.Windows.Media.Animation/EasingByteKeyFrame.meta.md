@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingByteKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingByteKeyFrame.EasingFunctionProperty
 author: "stevehoag"
 ms.author: "shoag"

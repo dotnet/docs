@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "mairaw"
 ms.author: "mairaw"

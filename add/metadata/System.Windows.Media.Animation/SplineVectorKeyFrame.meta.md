@@ -33,13 +33,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor(System.Windows.Vector)
 author: "stevehoag"
 ms.author: "shoag"

@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.Parameters
 author: "mairaw"
 ms.author: "mairaw"

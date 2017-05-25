@@ -21,9 +21,3 @@ uid: System.Web.Caching.TableNotEnabledForNotificationException.#ctor(System.Str
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.Caching.TableNotEnabledForNotificationException.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

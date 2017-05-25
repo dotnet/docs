@@ -69,13 +69,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Services.Client.DataServiceCollection`1.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Services.Client.DataServiceCollection`1.#ctor(System.Collections.Generic.IEnumerable{`0})
 author: "JennieHubbard"
 ms.author: "jhubbard"

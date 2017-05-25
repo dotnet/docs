@@ -59,12 +59,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.ListItem.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.ListItem.System#Web#UI#IStateManager#LoadViewState(System.Object)
 ms.author: "riande"
 manager: "wpickett"

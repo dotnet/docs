@@ -39,10 +39,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Cryptography.Xml.KeyInfoNode.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

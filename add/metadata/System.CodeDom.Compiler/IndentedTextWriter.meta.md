@@ -272,13 +272,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.IndentedTextWriter.WriteLine
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.Compiler.IndentedTextWriter.#ctor(System.IO.TextWriter)
 author: "rpetrusha"
 ms.author: "ronpet"

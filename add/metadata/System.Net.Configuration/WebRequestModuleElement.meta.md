@@ -33,9 +33,3 @@ uid: System.Net.Configuration.WebRequestModuleElement.#ctor(System.String,System
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.Configuration.WebRequestModuleElement.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

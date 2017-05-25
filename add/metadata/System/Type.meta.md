@@ -447,13 +447,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Type.GetMethods
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Type.GetGenericTypeDefinition
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -539,13 +532,6 @@ manager: "wpickett"
 
 ---
 uid: System.Type.GetAttributeFlagsImpl
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Type.MakeArrayType
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -916,13 +902,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Type.GetMembers
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Type.op_Equality(System.Type,System.Type)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -1021,13 +1000,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Type.GetConstructors
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Type.Namespace
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -1043,13 +1015,6 @@ manager: "wpickett"
 
 ---
 uid: System.Type.GetField(System.String,System.Reflection.BindingFlags)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Type.GetType
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -1078,13 +1043,6 @@ manager: "wpickett"
 
 ---
 uid: System.Type.GetConstructor(System.Type[])
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Type.GetProperties
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -1203,13 +1161,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Type.GetNestedTypes
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -1253,13 +1204,6 @@ manager: "wpickett"
 
 ---
 uid: System.Type.HasElementTypeImpl
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Type.GetFields
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -1379,13 +1323,6 @@ manager: "wpickett"
 
 ---
 uid: System.Type.GetProperty(System.String,System.Type,System.Type[])
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Type.GetEvents
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

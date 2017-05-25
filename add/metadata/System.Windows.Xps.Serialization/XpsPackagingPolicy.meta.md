@@ -147,13 +147,3 @@ manager: "leannef"
 uid: System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireXmlWriterForResourceDictionary
 manager: "leannef"
 ---
-
----
-uid: System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont
-manager: "leannef"
----
-
----
-uid: System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsFont
-manager: "leannef"
----

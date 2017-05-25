@@ -49,11 +49,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementEventWatcher.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementEventWatcher.#ctor(System.Management.ManagementScope,System.Management.EventQuery)
 manager: "jillfra"
 ---

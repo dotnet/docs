@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.ZoneMembershipCondition.ToXml
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.ZoneMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)
 author: "mairaw"
 ms.author: "mairaw"

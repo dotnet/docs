@@ -75,9 +75,3 @@ uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.Enable3D
 ms.author: "mblythe"
 manager: "mblythe"
 ---
-
----
-uid: System.Web.UI.DataVisualization.Charting.ChartArea3DStyle.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----

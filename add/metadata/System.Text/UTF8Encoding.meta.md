@@ -139,13 +139,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.UTF8Encoding.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.UTF8Encoding.#ctor(System.Boolean)
 author: "rpetrusha"
 ms.author: "ronpet"

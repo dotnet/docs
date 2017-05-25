@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.CustomBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.CustomBindingElement.SendTimeout
 author: "Erikre"
 ms.author: "erikre"

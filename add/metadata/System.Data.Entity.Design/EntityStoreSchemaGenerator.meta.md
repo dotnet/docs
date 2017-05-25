@@ -76,13 +76,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.WriteStoreSchema
 author: "JennieHubbard"
 ms.author: "jhubbard"

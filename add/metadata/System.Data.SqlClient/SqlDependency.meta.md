@@ -62,13 +62,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlDependency.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlDependency.Stop(System.String)
 author: "JennieHubbard"
 ms.author: "jhubbard"

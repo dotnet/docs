@@ -215,12 +215,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SpeechRecognitionEngine.Dispose
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate
 ms.author: "kbridge"
 manager: "ghogen"
@@ -228,12 +222,6 @@ manager: "ghogen"
 
 ---
 uid: System.Speech.Recognition.SpeechRecognitionEngine.AudioStateChanged
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Recognition.SpeechRecognitionEngine.RequestRecognizerUpdate
 ms.author: "kbridge"
 manager: "ghogen"
 ---
@@ -293,31 +281,13 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SpeechRecognitionEngine.Recognize
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SpeechRecognitionEngine.SetInputToDefaultAudioDevice
 ms.author: "kbridge"
 manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsync
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SpeechRecognitionEngine.RecognizeAsyncCancel
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Recognition.SpeechRecognitionEngine.#ctor
 ms.author: "kbridge"
 manager: "ghogen"
 ---

@@ -18,10 +18,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NWithCommentsTransform.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

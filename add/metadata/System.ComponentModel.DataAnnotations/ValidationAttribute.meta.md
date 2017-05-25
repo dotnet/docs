@@ -83,12 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DataAnnotations.ValidationAttribute.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DataAnnotations.ValidationAttribute.ErrorMessageResourceType
 ms.author: "riande"
 manager: "wpickett"

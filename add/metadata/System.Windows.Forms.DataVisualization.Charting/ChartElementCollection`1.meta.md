@@ -53,12 +53,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.Dispose
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.Invalidate
 ms.author: "mblythe"
 manager: "mblythe"

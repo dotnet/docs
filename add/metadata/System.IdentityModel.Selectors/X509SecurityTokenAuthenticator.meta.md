@@ -53,10 +53,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.IdentityModel.Selectors.X509SecurityTokenAuthenticator.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

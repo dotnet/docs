@@ -72,10 +72,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Windows.Annotations.AnnotationResource.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

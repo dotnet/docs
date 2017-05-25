@@ -126,13 +126,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.GregorianCalendar.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Globalization.GregorianCalendar.GetDayOfMonth(System.DateTime)
 author: "rpetrusha"
 ms.author: "ronpet"

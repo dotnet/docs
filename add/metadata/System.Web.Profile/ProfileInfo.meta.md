@@ -23,12 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Profile.ProfileInfo.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.Profile.ProfileInfo.IsAnonymous
 ms.author: "riande"
 manager: "wpickett"

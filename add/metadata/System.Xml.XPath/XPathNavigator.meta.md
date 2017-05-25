@@ -396,20 +396,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XPath.XPathNavigator.MoveToNext
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XPath.XPathNavigator.AppendChild
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XPath.XPathNavigator.MoveToFirstAttribute
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -439,13 +425,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XPath.XPathNavigator.PrependChild(System.Xml.XmlReader)
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XPath.XPathNavigator.PrependChild
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -725,13 +704,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XPath.XPathNavigator.MoveToFirstNamespace
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XPath.XPathNavigator.PrependChild(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -802,13 +774,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XPath.XPathNavigator.InsertAfter
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XPath.XPathNavigator.ValueAsBoolean
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -844,13 +809,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XPath.XPathNavigator.InsertBefore
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XPath.XPathNavigator.MoveTo(System.Xml.XPath.XPathNavigator)
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -873,13 +831,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XPath.XPathNavigator.XmlLang
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XPath.XPathNavigator.MoveToNextNamespace
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

@@ -88,13 +88,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.NumberSubstitution.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.NumberSubstitution.Substitution
 author: "stevehoag"
 ms.author: "shoag"

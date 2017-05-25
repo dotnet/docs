@@ -216,13 +216,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Byte.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Byte.MinValue
 author: "rpetrusha"
 ms.author: "ronpet"

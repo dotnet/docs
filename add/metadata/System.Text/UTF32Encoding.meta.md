@@ -165,13 +165,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.UTF32Encoding.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.UTF32Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)
 author: "rpetrusha"
 ms.author: "ronpet"

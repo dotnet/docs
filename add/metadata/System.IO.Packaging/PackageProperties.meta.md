@@ -118,13 +118,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Packaging.PackageProperties.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.IO.Packaging.PackageProperties.Created
 author: "stevehoag"
 ms.author: "shoag"

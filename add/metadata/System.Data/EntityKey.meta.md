@@ -104,13 +104,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityKey.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityKey.op_Inequality(System.Data.EntityKey,System.Data.EntityKey)
 author: "JennieHubbard"
 ms.author: "jhubbard"

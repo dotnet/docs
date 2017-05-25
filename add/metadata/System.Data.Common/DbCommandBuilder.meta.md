@@ -125,13 +125,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbCommandBuilder.GetInsertCommand
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbCommandBuilder.GetSchemaTable(System.Data.Common.DbCommand)
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -181,21 +174,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbCommandBuilder.GetDeleteCommand
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbCommandBuilder.CatalogSeparator
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbCommandBuilder.GetUpdateCommand
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

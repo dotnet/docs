@@ -19,11 +19,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.TransactionAbortedException.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Transactions.TransactionAbortedException.#ctor(System.String)
 manager: "ghogen"
 ---

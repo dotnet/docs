@@ -48,13 +48,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.CloneCore
 author: "Erikre"
 ms.author: "erikre"

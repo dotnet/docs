@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.View.Selection.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.View.Selection.#ctor(System.Activities.Presentation.Model.ModelItem[])
 author: "Erikre"
 ms.author: "erikre"

@@ -46,10 +46,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Xml.Serialization.XmlSerializerNamespaces.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

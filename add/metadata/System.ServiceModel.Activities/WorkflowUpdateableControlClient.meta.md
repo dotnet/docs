@@ -244,13 +244,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activities.WorkflowUpdateableControlClient.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Activities.WorkflowUpdateableControlClient.EndTerminate(System.IAsyncResult)
 author: "Erikre"
 ms.author: "erikre"

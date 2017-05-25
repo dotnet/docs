@@ -188,13 +188,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.CommunicationObject.Open
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.CommunicationObject.OnOpening
 author: "Erikre"
 ms.author: "erikre"
@@ -251,13 +244,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.CommunicationObject.Close
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.CommunicationObject.BeginOpen
 author: "Erikre"
 ms.author: "erikre"
@@ -280,13 +266,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Channels.CommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.CommunicationObject.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

@@ -40,13 +40,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.InterpolateValueCore(System.Decimal,System.Double)
 author: "stevehoag"
 ms.author: "shoag"

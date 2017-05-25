@@ -45,9 +45,3 @@ uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.#ctor(Sy
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Protocols.WSTrust.WSTrustSerializationContext.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----

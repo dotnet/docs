@@ -151,12 +151,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.Security.Claims.ClaimsPrincipal.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.Security.Claims.ClaimsPrincipal.HasClaim
 ms.author: "v-jibran"
 manager: "markgal"

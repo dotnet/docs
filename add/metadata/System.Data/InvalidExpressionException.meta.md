@@ -27,13 +27,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.InvalidExpressionException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.InvalidExpressionException.#ctor(System.String,System.Exception)
 author: "JennieHubbard"
 ms.author: "jhubbard"

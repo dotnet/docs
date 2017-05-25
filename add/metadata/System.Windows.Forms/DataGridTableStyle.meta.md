@@ -213,13 +213,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridTableStyle.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridTableStyle.OnGridLineStyleChanged(System.EventArgs)
 ms.author: "kempb"
 manager: "ghogen"

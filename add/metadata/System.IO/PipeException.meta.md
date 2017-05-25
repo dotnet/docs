@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IO.PipeException.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IO.PipeException.#ctor(System.String,System.Int32)
 author: "Erikre"
 ms.author: "erikre"

@@ -25,10 +25,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Diagnostics.ConsoleTraceListener.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

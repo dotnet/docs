@@ -84,13 +84,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DecimalAnimation.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.DecimalAnimation.EasingFunction
 author: "stevehoag"
 ms.author: "shoag"

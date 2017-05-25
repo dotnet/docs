@@ -66,13 +66,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.DiscoveryDocumentReference.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Discovery.DiscoveryDocumentReference.WriteDocument(System.Object,System.IO.Stream)
 author: "Erikre"
 ms.author: "erikre"

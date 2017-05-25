@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.ViewStateAttribute.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.ViewStateAttribute.GetModelName
 author: "tdykstra"
 ms.author: "tdykstra"

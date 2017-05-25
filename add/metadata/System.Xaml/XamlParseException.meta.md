@@ -19,11 +19,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlParseException.#ctor
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlParseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 manager: "martinek"
 ---

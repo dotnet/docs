@@ -179,12 +179,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.DesignerRegionCollection.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.DesignerRegionCollection.IsReadOnly
 ms.author: "riande"
 manager: "wpickett"

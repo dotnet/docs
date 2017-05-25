@@ -29,12 +29,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.LiteralControl.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.LiteralControl.Render(System.Web.UI.HtmlTextWriter)
 ms.author: "riande"
 manager: "wpickett"

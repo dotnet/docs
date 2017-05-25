@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.BaseReference.TargetPath
 author: "stevehoag"
 ms.author: "shoag"

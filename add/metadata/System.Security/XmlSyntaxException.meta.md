@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.XmlSyntaxException.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.XmlSyntaxException.#ctor(System.String)
 author: "mairaw"
 ms.author: "mairaw"

@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IntPtr.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.IntPtr.op_Equality(System.IntPtr,System.IntPtr)
 author: "rpetrusha"
 ms.author: "ronpet"

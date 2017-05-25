@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.BinaryWriter.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.BinaryWriter.Write(System.Int32)
 author: "mairaw"
 ms.author: "mairaw"
@@ -168,13 +161,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.BinaryWriter.Write(System.UInt64)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.BinaryWriter.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

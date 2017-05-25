@@ -29,12 +29,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ProviderSettings.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ProviderSettings.Name
 ms.author: "riande"
 manager: "wpickett"

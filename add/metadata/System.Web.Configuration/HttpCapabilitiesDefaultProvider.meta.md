@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.CacheTime
 author: "tdykstra"
 ms.author: "tdykstra"

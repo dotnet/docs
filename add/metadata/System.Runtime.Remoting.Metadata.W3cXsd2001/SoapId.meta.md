@@ -37,8 +37,3 @@ manager: "ghogen"
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapId.ToString
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapId.#ctor
-manager: "ghogen"
----

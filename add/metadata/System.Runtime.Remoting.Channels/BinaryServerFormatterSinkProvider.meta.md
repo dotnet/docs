@@ -32,8 +32,3 @@ manager: "ghogen"
 uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelReceiver)
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.#ctor
-manager: "ghogen"
----

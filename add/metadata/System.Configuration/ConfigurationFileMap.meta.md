@@ -27,9 +27,3 @@ uid: System.Configuration.ConfigurationFileMap.Clone
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Configuration.ConfigurationFileMap.#ctor
-ms.author: "riande"
-manager: "wpickett"
----

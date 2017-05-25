@@ -73,12 +73,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Style.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Style.RegisterName(System.String,System.Object)
 author: "stevehoag"
 ms.author: "shoag"

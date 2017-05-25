@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeObjectCreateExpression.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeObjectCreateExpression.#ctor(System.String,System.CodeDom.CodeExpression[])
 author: "rpetrusha"
 ms.author: "ronpet"

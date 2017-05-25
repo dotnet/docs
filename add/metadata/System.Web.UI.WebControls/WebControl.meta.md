@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebControl.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebControl.LoadViewState(System.Object)
 author: "tdykstra"
 ms.author: "tdykstra"

@@ -160,20 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Schema.XmlSchemaSet.Schemas
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Schema.XmlSchemaSet.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Schema.XmlSchemaSet.Add(System.String,System.Xml.XmlReader)
 author: "mairaw"
 ms.author: "mairaw"

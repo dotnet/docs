@@ -139,13 +139,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Bitmap.GetHbitmap
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Bitmap.LockBits(System.Drawing.Rectangle,System.Drawing.Imaging.ImageLockMode,System.Drawing.Imaging.PixelFormat,System.Drawing.Imaging.BitmapData)
 author: "stevehoag"
 ms.author: "shoag"
@@ -175,13 +168,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Bitmap.MakeTransparent
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

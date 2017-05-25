@@ -23,12 +23,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.HttpMessageHandler.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Http.HttpMessageHandler.Dispose(System.Boolean)
 ms.author: "bobdel"
 manager: "markl"

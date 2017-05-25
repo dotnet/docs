@@ -29,11 +29,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapHexBinary.GetXsdType
 manager: "ghogen"
 ---

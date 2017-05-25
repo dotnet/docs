@@ -59,13 +59,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Linq.Expressions.LambdaExpression.Compile
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-
----
 uid: System.Linq.Expressions.LambdaExpression.Compile(System.Runtime.CompilerServices.DebugInfoGenerator)
 ms.author: "billchi"
 manager: "ghogen"

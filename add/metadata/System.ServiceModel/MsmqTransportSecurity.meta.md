@@ -46,10 +46,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.MsmqTransportSecurity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

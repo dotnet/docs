@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ColorKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.ColorKeyFrame.KeyTime
 author: "stevehoag"
 ms.author: "shoag"

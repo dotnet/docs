@@ -76,20 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.FromBase64Transform.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.FromBase64Transform.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.FromBase64Transform.Clear
 author: "mairaw"
 ms.author: "mairaw"

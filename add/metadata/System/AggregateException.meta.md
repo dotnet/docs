@@ -97,13 +97,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AggregateException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AggregateException.GetBaseException
 author: "rpetrusha"
 ms.author: "ronpet"

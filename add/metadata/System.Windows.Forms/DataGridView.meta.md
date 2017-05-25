@@ -1072,13 +1072,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridView.EndEdit
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridView.FontChanged
 author: "stevehoag"
 ms.author: "shoag"
@@ -1618,13 +1611,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.DataGridView.AllowUserToDeleteRowsChanged
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoResizeColumns
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -2775,13 +2761,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridView.AutoResizeRows(System.Windows.Forms.DataGridViewAutoSizeRowsMode)
 author: "stevehoag"
 ms.author: "shoag"
@@ -2852,13 +2831,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.DataGridView.VirtualMode
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridView.ClearSelection
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

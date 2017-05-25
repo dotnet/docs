@@ -55,13 +55,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityCommand.ExecuteReader
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityClient.EntityCommand.Parameters
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -126,13 +119,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.EntityClient.EntityCommand.#ctor(System.String,System.Data.EntityClient.EntityConnection)
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityClient.EntityCommand.#ctor
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

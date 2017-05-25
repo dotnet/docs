@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.Binding.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.Binding.BuildChannelListener``1(System.Uri,System.String,System.ServiceModel.Channels.BindingParameterCollection)
 author: "Erikre"
 ms.author: "erikre"

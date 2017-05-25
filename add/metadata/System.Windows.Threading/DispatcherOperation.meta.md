@@ -61,13 +61,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Threading.DispatcherOperation.Wait
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Threading.DispatcherOperation.Wait(System.TimeSpan)
 ms.author: "kempb"
 manager: "ghogen"

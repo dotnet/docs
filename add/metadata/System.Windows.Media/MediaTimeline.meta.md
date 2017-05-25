@@ -100,13 +100,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.MediaTimeline.CreateClock
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.MediaTimeline.CreateInstanceCore
 author: "stevehoag"
 ms.author: "shoag"

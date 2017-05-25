@@ -503,13 +503,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.FrameworkElement.BringIntoView
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.FrameworkElement.GetVisualChild(System.Int32)
 ms.author: "kempb"
 manager: "ghogen"

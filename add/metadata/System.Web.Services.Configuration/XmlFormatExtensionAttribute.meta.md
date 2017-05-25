@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Configuration.XmlFormatExtensionAttribute.Namespace
 author: "Erikre"
 ms.author: "erikre"

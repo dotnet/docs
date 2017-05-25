@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.WebParts.EditorZoneDesigner.GetDesignTimeHtml
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.WebParts.EditorZoneDesigner.TemplateGroups
 author: "tdykstra"
 ms.author: "tdykstra"

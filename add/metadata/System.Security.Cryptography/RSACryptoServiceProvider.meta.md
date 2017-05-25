@@ -223,13 +223,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSACryptoServiceProvider.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RSACryptoServiceProvider.EncryptValue(System.Byte[])
 author: "mairaw"
 ms.author: "mairaw"

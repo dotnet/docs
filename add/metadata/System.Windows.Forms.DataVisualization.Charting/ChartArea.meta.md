@@ -171,12 +171,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.ChartArea.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.ChartArea.AlignWithChartArea
 ms.author: "mblythe"
 manager: "mblythe"

@@ -83,13 +83,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName
 author: "Erikre"
 ms.author: "erikre"

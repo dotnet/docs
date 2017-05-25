@@ -265,13 +265,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.Runtime.XmlQuerySequence`1.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.Runtime.XmlQuerySequence`1.CreateOrReuse(System.Xml.Xsl.Runtime.XmlQuerySequence{`0})
 author: "mairaw"
 ms.author: "mairaw"

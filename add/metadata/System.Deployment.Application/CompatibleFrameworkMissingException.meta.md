@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.CompatibleFrameworkMissingException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Deployment.Application.CompatibleFrameworkMissingException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "stevehoag"
 ms.author: "shoag"

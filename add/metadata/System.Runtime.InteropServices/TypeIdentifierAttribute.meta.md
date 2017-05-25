@@ -32,10 +32,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Runtime.InteropServices.TypeIdentifierAttribute.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

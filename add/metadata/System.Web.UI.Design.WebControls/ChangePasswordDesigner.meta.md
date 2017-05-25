@@ -87,9 +87,3 @@ uid: System.Web.UI.Design.WebControls.ChangePasswordDesigner.#ctor
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.Design.WebControls.ChangePasswordDesigner.GetDesignTimeHtml
-ms.author: "riande"
-manager: "wpickett"
----

@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.ControlParameter.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.ControlParameter.#ctor(System.String,System.Data.DbType,System.String,System.String)
 author: "tdykstra"
 ms.author: "tdykstra"

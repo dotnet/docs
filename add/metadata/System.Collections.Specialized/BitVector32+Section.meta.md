@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.BitVector32.Section.ToString
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.BitVector32.Section.op_Equality(System.Collections.Specialized.BitVector32.Section,System.Collections.Specialized.BitVector32.Section)
 author: "mairaw"
 ms.author: "mairaw"

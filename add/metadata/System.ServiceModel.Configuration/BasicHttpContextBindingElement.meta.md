@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.BasicHttpContextBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.BasicHttpContextBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)
 author: "Erikre"
 ms.author: "erikre"

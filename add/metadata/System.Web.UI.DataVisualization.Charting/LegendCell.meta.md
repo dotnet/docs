@@ -83,12 +83,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.LegendCell.#ctor
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.LegendCell.MapAreaAttributes
 ms.author: "mblythe"
 manager: "mblythe"

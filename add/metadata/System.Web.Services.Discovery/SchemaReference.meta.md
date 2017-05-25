@@ -66,13 +66,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.SchemaReference.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Discovery.SchemaReference.DefaultFilename
 author: "Erikre"
 ms.author: "erikre"

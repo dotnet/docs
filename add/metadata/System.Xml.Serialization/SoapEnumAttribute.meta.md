@@ -25,10 +25,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Xml.Serialization.SoapEnumAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

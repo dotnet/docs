@@ -65,12 +65,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolTip.#ctor
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.ToolTip.StopTimer
 author: "stevehoag"
 ms.author: "shoag"

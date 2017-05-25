@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.ControlTemplate.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.ControlTemplate.Triggers
 author: "stevehoag"
 ms.author: "shoag"

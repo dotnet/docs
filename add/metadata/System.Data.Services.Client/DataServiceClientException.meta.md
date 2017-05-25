@@ -48,13 +48,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Services.Client.DataServiceClientException.#ctor
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Services.Client.DataServiceClientException.#ctor(System.String,System.Int32)
 author: "JennieHubbard"
 ms.author: "jhubbard"

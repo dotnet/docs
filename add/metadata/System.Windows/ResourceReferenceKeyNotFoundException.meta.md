@@ -36,10 +36,3 @@ uid: System.Windows.ResourceReferenceKeyNotFoundException.#ctor(System.String,Sy
 ms.author: "kempb"
 manager: "ghogen"
 ---
-
----
-uid: System.Windows.ResourceReferenceKeyNotFoundException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

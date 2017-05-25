@@ -55,13 +55,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbConnection.GetSchema
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OleDb.OleDbConnection.Open
 author: "JennieHubbard"
 ms.author: "jhubbard"
@@ -91,13 +84,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OleDb.OleDbConnection.Database
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OleDb.OleDbConnection.#ctor
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"
@@ -154,13 +140,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OleDb.OleDbConnection.EnlistTransaction(System.Transactions.Transaction)
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OleDb.OleDbConnection.BeginTransaction
 author: "JennieHubbard"
 ms.author: "jhubbard"
 manager: "jhubbard"

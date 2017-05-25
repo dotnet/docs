@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DefaultBindingPropertyAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DefaultBindingPropertyAttribute.Equals(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.ScopedMessagePartSpecification.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.ScopedMessagePartSpecification.AddParts(System.ServiceModel.Security.MessagePartSpecification,System.String)
 author: "Erikre"
 ms.author: "erikre"

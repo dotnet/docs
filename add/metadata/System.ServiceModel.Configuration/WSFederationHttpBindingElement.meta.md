@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WSFederationHttpBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.WSFederationHttpBindingElement.PrivacyNoticeAt
 author: "Erikre"
 ms.author: "erikre"

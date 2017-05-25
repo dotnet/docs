@@ -125,13 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Store.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.X509Certificates.X509Store.Name
 author: "mairaw"
 ms.author: "mairaw"

@@ -202,13 +202,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.ServiceDocumentFormatter.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.ServiceDocument,System.String)
 author: "Erikre"
 ms.author: "erikre"

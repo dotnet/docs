@@ -29,11 +29,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.ObjRef.#ctor
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.ObjRef.IsFromThisAppDomain
 manager: "ghogen"
 ---

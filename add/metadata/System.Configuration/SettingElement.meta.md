@@ -41,12 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.SettingElement.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.SettingElement.Equals(System.Object)
 ms.author: "riande"
 manager: "wpickett"

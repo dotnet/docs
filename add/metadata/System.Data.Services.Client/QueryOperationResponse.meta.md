@@ -41,13 +41,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Services.Client.QueryOperationResponse.GetContinuation
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Services.Client.QueryOperationResponse.TotalCount
 author: "JennieHubbard"
 ms.author: "jhubbard"

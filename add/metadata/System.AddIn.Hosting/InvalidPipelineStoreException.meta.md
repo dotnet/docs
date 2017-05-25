@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Hosting.InvalidPipelineStoreException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AddIn.Hosting.InvalidPipelineStoreException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

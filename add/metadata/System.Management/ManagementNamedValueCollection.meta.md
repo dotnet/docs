@@ -14,11 +14,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementNamedValueCollection.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementNamedValueCollection.RemoveAll
 manager: "jillfra"
 ---

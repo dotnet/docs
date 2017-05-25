@@ -22,8 +22,3 @@ manager: "martinek"
 uid: System.Xaml.XamlXmlWriterException.#ctor(System.String,System.Exception)
 manager: "martinek"
 ---
-
----
-uid: System.Xaml.XamlXmlWriterException.#ctor
-manager: "martinek"
----

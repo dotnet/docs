@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.PropertyMetadata.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.PropertyMetadata.IsSealed
 author: "Erikre"
 ms.author: "erikre"
@@ -140,13 +133,6 @@ manager: "erikre"
 
 ---
 uid: System.Workflow.ComponentModel.PropertyMetadata.#ctor(System.Object,System.Workflow.ComponentModel.DependencyPropertyOptions,System.Workflow.ComponentModel.GetValueOverride,System.Workflow.ComponentModel.SetValueOverride,System.Attribute[])
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.PropertyMetadata.GetAttributes
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

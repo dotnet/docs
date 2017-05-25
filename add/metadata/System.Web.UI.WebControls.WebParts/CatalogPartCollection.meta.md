@@ -55,13 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.CatalogPartCollection.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.CatalogPartCollection.Contains(System.Web.UI.WebControls.WebParts.CatalogPart)
 author: "tdykstra"
 ms.author: "tdykstra"

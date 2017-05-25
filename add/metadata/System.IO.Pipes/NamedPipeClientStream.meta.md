@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Pipes.NamedPipeClientStream.ConnectAsync
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.Pipes.NamedPipeClientStream.Finalize
 author: "mairaw"
 ms.author: "mairaw"
@@ -91,13 +84,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.Pipes.NamedPipeClientStream.#ctor(System.String,System.String,System.IO.Pipes.PipeDirection)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.Pipes.NamedPipeClientStream.Connect
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

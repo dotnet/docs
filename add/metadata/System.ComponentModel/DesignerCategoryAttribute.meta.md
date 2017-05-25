@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DesignerCategoryAttribute.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DesignerCategoryAttribute.Equals(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

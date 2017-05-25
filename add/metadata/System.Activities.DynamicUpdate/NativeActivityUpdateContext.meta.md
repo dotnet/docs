@@ -132,13 +132,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetLocation``1(System.Activities.Variable)
 author: "Erikre"
 ms.author: "erikre"

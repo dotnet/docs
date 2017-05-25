@@ -603,13 +603,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripItem.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripItem.MergeAction
 author: "stevehoag"
 ms.author: "shoag"
@@ -914,13 +907,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.ToolStripItem.OnMouseEnter(System.EventArgs)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ToolStripItem.Invalidate
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

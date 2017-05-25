@@ -134,16 +134,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsFont
-manager: "leannef"
----
-
----
-uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireResourceStreamForXpsFont
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.PersistPrintTicket(System.Printing.PrintTicket)
 manager: "leannef"
 ---

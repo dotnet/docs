@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlLicenseTransform.GetOutput
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.XmlLicenseTransform.#ctor
 author: "mairaw"
 ms.author: "mairaw"

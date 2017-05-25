@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipUser.ResetPassword
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.MembershipUser.UnlockUser
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -111,13 +104,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipUser.GetPassword
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.MembershipUser.ProviderUserKey
 author: "tdykstra"
 ms.author: "tdykstra"
@@ -168,13 +154,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Security.MembershipUser.Comment
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.MembershipUser.#ctor
 author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"

@@ -69,13 +69,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.ListDictionary.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.ListDictionary.Remove(System.Object)
 author: "mairaw"
 ms.author: "mairaw"

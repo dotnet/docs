@@ -19,11 +19,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.WqlObjectQuery.#ctor
-manager: "jillfra"
----
-
----
 uid: System.Management.WqlObjectQuery.Clone
 manager: "jillfra"
 ---

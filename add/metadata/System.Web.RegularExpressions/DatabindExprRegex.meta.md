@@ -18,10 +18,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.RegularExpressions.DatabindExprRegex.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

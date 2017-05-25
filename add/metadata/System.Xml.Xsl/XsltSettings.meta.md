@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.XsltSettings.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.XsltSettings.EnableDocumentFunction
 author: "mairaw"
 ms.author: "mairaw"

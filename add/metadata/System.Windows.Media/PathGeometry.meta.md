@@ -102,13 +102,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.PathGeometry.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.PathGeometry.MayHaveCurves
 author: "stevehoag"
 ms.author: "shoag"

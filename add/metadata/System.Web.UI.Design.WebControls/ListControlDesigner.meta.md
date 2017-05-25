@@ -81,12 +81,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged(System.Boolean)
 ms.author: "riande"
 manager: "wpickett"

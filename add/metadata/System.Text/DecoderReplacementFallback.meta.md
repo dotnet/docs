@@ -53,10 +53,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.Text.DecoderReplacementFallback.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

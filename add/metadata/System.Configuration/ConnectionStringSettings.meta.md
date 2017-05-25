@@ -41,12 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConnectionStringSettings.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConnectionStringSettings.ProviderName
 ms.author: "riande"
 manager: "wpickett"

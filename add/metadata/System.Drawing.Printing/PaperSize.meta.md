@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.PaperSize.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Printing.PaperSize.#ctor(System.String,System.Int32,System.Int32)
 author: "stevehoag"
 ms.author: "shoag"

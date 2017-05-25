@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ApplicationSettingsBase.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ApplicationSettingsBase.Reload
 author: "stevehoag"
 ms.author: "shoag"

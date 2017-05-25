@@ -60,13 +60,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.AnimationTimeline.CreateClock
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.AnimationTimeline.IsDestinationDefault
 author: "stevehoag"
 ms.author: "shoag"

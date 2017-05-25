@@ -65,12 +65,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationException.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConfigurationException.#ctor(System.String,System.Exception)
 ms.author: "riande"
 manager: "wpickett"

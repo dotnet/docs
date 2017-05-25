@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.KeyReference.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.KeyReference.#ctor(System.String)
 author: "mairaw"
 ms.author: "mairaw"

@@ -53,12 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.Design.DynamicFieldDesigner.CreateField
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.DynamicData.Design.DynamicFieldDesigner.IsEnabled(System.Web.UI.WebControls.DataBoundControl)
 ms.author: "riande"
 manager: "wpickett"

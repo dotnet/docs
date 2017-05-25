@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.ECDsa.Create
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.ECDsa.KeyExchangeAlgorithm
 author: "mairaw"
 ms.author: "mairaw"

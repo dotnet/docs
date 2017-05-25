@@ -46,10 +46,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Discovery.VersionCD1.DiscoveryMessageSequenceCD1.GetSchema
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WSHttpBindingElement.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.WSHttpBindingElement.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

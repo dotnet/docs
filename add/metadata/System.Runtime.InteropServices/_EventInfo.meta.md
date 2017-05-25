@@ -139,13 +139,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._EventInfo.GetRaiseMethod
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._EventInfo.ReflectedType
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -181,13 +174,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._EventInfo.GetAddMethod
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._EventInfo.IsMulticast
 author: "rpetrusha"
 ms.author: "ronpet"
@@ -210,13 +196,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._EventInfo.Attributes
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._EventInfo.GetRemoveMethod
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

@@ -39,10 +39,3 @@ author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.Compilation.ImplicitResourceKey.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----

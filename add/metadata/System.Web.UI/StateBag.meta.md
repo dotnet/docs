@@ -125,12 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.StateBag.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.StateBag.System#Collections#IDictionary#IsReadOnly
 ms.author: "riande"
 manager: "wpickett"

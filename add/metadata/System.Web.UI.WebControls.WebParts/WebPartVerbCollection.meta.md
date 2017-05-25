@@ -41,13 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebPartVerbCollection.#ctor
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebPartVerbCollection.CopyTo(System.Web.UI.WebControls.WebParts.WebPartVerb[],System.Int32)
 author: "tdykstra"
 ms.author: "tdykstra"

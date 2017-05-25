@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.Version11.ResolveCriteria11.GetSchema
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.Version11.ResolveCriteria11.ReadXml(System.Xml.XmlReader)
 author: "Erikre"
 ms.author: "erikre"

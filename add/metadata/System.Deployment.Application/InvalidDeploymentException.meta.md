@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.InvalidDeploymentException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Deployment.Application.InvalidDeploymentException.#ctor(System.String)
 author: "stevehoag"
 ms.author: "shoag"

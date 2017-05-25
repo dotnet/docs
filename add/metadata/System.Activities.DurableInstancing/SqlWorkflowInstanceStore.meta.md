@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DurableInstancing.SqlWorkflowInstanceStore.InstanceEncodingOption
 author: "Erikre"
 ms.author: "erikre"

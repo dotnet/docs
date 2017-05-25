@@ -158,10 +158,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.Design.IDesignerHost.CreateTransaction
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

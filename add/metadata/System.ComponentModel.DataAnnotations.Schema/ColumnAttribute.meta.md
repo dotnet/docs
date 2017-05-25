@@ -23,12 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DataAnnotations.Schema.ColumnAttribute.#ctor(System.String)
 ms.author: "riande"
 manager: "wpickett"

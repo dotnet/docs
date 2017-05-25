@@ -19,11 +19,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.Packaging.XpsDigitalSignature.SignedDocumentSequence
 manager: "leannef"
 ---
@@ -40,11 +35,6 @@ manager: "leannef"
 
 ---
 uid: System.Windows.Xps.Packaging.XpsDigitalSignature.IsCertificateAvailable
-manager: "leannef"
----
-
----
-uid: System.Windows.Xps.Packaging.XpsDigitalSignature.Verify
 manager: "leannef"
 ---
 

@@ -54,11 +54,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.XamlParseException.#ctor
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.XamlParseException.#ctor(System.String)
 manager: "martinek"
 ---

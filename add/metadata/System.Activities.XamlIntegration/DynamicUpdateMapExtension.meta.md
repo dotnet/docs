@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.XamlIntegration.DynamicUpdateMapExtension.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.XamlIntegration.DynamicUpdateMapExtension.UpdateMap
 author: "Erikre"
 ms.author: "erikre"

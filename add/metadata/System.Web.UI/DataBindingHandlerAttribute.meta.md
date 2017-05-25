@@ -41,12 +41,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataBindingHandlerAttribute.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.DataBindingHandlerAttribute.Default
 ms.author: "riande"
 manager: "wpickett"

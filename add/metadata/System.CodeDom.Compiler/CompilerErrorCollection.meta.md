@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerErrorCollection.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.Compiler.CompilerErrorCollection.HasErrors
 author: "rpetrusha"
 ms.author: "ronpet"

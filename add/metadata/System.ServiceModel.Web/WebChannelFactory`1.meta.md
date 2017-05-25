@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Web.WebChannelFactory`1.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.String,System.Uri)
 author: "Erikre"
 ms.author: "erikre"

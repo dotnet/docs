@@ -95,12 +95,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.CookieHandler.Read
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.CookieHandler.Domain
 ms.author: "v-jibran"
 manager: "markgal"
@@ -132,12 +126,6 @@ manager: "markgal"
 
 ---
 uid: System.IdentityModel.Services.CookieHandler.Delete(System.String,System.Web.HttpContext)
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Services.CookieHandler.Delete
 ms.author: "v-jibran"
 manager: "markgal"
 ---

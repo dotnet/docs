@@ -90,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.SignedCms.ComputeSignature
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType)
 author: "mairaw"
 ms.author: "mairaw"
@@ -119,13 +112,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Pkcs.SignedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Pkcs.SignedCms.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

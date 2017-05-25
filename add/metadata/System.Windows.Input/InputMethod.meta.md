@@ -123,13 +123,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.InputMethod.ShowConfigureUI
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.InputMethod.ImeConversionMode
 author: "stevehoag"
 ms.author: "shoag"

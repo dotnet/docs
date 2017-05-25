@@ -314,13 +314,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GlyphTypeface.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.GlyphTypeface.Descriptions
 author: "stevehoag"
 ms.author: "shoag"

@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.PlatformNotSupportedException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.PlatformNotSupportedException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "rpetrusha"
 ms.author: "ronpet"

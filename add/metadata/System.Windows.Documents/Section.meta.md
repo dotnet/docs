@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Section.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Documents.Section.ShouldSerializeBlocks(System.Windows.Markup.XamlDesignerSerializationManager)
 author: "stevehoag"
 ms.author: "shoag"

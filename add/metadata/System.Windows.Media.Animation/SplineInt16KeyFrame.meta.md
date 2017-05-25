@@ -33,13 +33,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineInt16KeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SplineInt16KeyFrame.#ctor(System.Int16)
 author: "stevehoag"
 ms.author: "shoag"

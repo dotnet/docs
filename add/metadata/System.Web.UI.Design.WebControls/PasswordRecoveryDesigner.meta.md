@@ -71,12 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.PasswordRecoveryDesigner.GetDesignTimeHtml
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.PasswordRecoveryDesigner.GetErrorDesignTimeHtml(System.Exception)
 ms.author: "riande"
 manager: "wpickett"

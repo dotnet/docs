@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlSerializerVersionAttribute.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlSerializerVersionAttribute.Type
 author: "Erikre"
 ms.author: "erikre"

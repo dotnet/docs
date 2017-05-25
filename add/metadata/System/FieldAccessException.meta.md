@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.FieldAccessException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.FieldAccessException.#ctor(System.String)
 author: "rpetrusha"
 ms.author: "ronpet"

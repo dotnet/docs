@@ -131,12 +131,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.MenuItem.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.MenuItem.Selected
 ms.author: "riande"
 manager: "wpickett"

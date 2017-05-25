@@ -297,12 +297,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Invalidate
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.GetService(System.Type)
 ms.author: "mblythe"
 manager: "mblythe"
@@ -448,12 +442,6 @@ manager: "mblythe"
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderDashStyle
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel
 ms.author: "mblythe"
 manager: "mblythe"
 ---

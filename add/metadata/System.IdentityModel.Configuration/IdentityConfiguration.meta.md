@@ -131,12 +131,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Configuration.IdentityConfiguration.#ctor
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Configuration.IdentityConfiguration.IssuerTokenResolver
 ms.author: "v-jibran"
 manager: "markgal"

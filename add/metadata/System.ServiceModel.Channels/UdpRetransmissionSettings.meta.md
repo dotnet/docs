@@ -57,8 +57,3 @@ manager: "ghogen"
 uid: System.ServiceModel.Channels.UdpRetransmissionSettings.ShouldSerializeMaxDelayPerRetransmission
 manager: "ghogen"
 ---
-
----
-uid: System.ServiceModel.Channels.UdpRetransmissionSettings.#ctor
-manager: "ghogen"
----

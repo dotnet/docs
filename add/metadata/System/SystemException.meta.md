@@ -20,13 +20,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.SystemException.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.SystemException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "rpetrusha"
 ms.author: "ronpet"

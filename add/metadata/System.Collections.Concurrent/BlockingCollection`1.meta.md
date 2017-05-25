@@ -146,13 +146,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Concurrent.BlockingCollection`1.Dispose
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Concurrent.BlockingCollection`1.TryTake(`0@)
 author: "mairaw"
 ms.author: "mairaw"
@@ -245,20 +238,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Concurrent.BlockingCollection`1.GetConsumingEnumerable
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Concurrent.BlockingCollection`1.GetConsumingEnumerable
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Concurrent.BlockingCollection`1.#ctor
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -378,13 +357,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Concurrent.BlockingCollection`1.TryTakeFromAny
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Concurrent.BlockingCollection`1.Take
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

@@ -67,12 +67,6 @@ uid: System.Web.Script.Serialization.JavaScriptSerializer.Deserialize
 ---
 
 ---
-uid: System.Web.Script.Serialization.JavaScriptSerializer.#ctor
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType``1(System.Object)
 ms.author: "riande"
 manager: "wpickett"

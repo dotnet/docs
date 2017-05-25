@@ -286,13 +286,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IO.Log.LogRecordSequence.Flush
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IO.Log.LogRecordSequence.WriteRestartArea(System.ArraySegment{System.Byte})
 author: "Erikre"
 ms.author: "erikre"

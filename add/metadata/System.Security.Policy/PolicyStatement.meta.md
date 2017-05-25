@@ -102,10 +102,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Policy.PolicyStatement.ToXml
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt
 author: "mairaw"
 ms.author: "mairaw"
@@ -97,13 +90,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)
 author: "mairaw"
 ms.author: "mairaw"
@@ -126,13 +112,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Pkcs.EnvelopedCms.ContentEncryptionAlgorithm
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

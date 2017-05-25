@@ -27,13 +27,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscretePointKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.DiscretePointKeyFrame.InterpolateValueCore(System.Windows.Point,System.Double)
 author: "stevehoag"
 ms.author: "shoag"

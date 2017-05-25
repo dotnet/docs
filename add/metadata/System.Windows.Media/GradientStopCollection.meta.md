@@ -141,13 +141,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.GradientStopCollection.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.GradientStopCollection.Add(System.Windows.Media.GradientStop)
 author: "stevehoag"
 ms.author: "shoag"

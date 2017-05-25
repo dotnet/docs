@@ -25,10 +25,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Cryptography.MD5.Create
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

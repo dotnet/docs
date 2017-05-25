@@ -19,13 +19,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteVector3DKeyFrame.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.DiscreteVector3DKeyFrame.CreateInstanceCore
 ms.author: "kempb"
 manager: "ghogen"

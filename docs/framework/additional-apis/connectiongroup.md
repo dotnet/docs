@@ -1,5 +1,5 @@
 ---
-title: "ConnectionGroup class | Microsoft Docs"
+title: "ConnectionGroup Class | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -18,7 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 
-# ConnectionGroup class
+# ConnectionGroup Class
 
 The `ConnectionGroup` class groups a list of connections within the <xref:System.Net.ServicePoint> context and is used to maintain context for network resources (for example, proxies and separate clients).
 

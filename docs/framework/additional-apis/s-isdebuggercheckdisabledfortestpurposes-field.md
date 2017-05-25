@@ -1,5 +1,5 @@
 ---
-title: "s_isDebuggerCheckDisabledForTestPurposes field | Microsoft Docs"
+title: "s_isDebuggerCheckDisabledForTestPurposes Field | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -22,7 +22,7 @@ manager: "wpickett"
 robots: noindex,nofollow
 ---
 
-# s_isDebuggerCheckDisabledForTestPurposes field
+# s_isDebuggerCheckDisabledForTestPurposes Field
 
 This private field in the `System.Windows.Diagnostics.VisualDiagnostics` class is used by Visual Studio to determine whether an internal check for an active debugger will be performed.
 

@@ -1,5 +1,5 @@
 ---
-title: "DataMemberListEditor class | Microsoft Docs"
+title: "DataMemberListEditor Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -21,7 +21,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 
-# DataMemberListEditor class
+# DataMemberListEditor Class
 
 Provides a drop-down user interface for editing properties of data-bound objects (objects that have non-null `DataSource` property) by listing all properties of the `DataSource` object to select the value source from.  
   

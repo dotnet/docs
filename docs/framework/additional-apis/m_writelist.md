@@ -1,5 +1,5 @@
 ---
-title: "Connection.m_WriteList field | Microsoft Docs"
+title: "Connection.m_WriteList Field | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -18,7 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 
-# Connection.m\_WriteList field
+# Connection.m\_WriteList Field
 
 `Connection.m_WriteList` is an <xref:System.Collections.ArrayList> of <xref:System.Net.HttpWebRequest> objects that are queued up to be sent over HTTP.
 

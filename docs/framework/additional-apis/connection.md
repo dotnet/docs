@@ -1,5 +1,5 @@
 ---
-title: "Connection class | Microsoft Docs"
+title: "Connection Class | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -18,7 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 
-# Connection class
+# Connection Class
 
 The `Connection` class parses server responses, queue requests, and pipeline requests.
 

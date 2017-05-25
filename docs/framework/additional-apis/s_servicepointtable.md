@@ -1,5 +1,5 @@
 ---
-title: "ServicePointManager.s_ServicePointTable field | Microsoft Docs"
+title: "ServicePointManager.s_ServicePointTable Field | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -18,7 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 
-# ServicePointManager.s\_ServicePointTable field
+# ServicePointManager.s\_ServicePointTable Field
 
 `ServicePointManager.s_ServicePointTable` is a <xref:System.Collections.Hashtable> that contains the list of active HTTP connections (<xref:System.Net.ServicePoint>s) in the <xref:System.AppDomain>.
 

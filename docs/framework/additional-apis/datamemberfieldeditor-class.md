@@ -1,5 +1,5 @@
 ---
-title: "DataMemberFieldEditor class | Microsoft Docs"
+title: "DataMemberFieldEditor Class | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
 ms.prod: ".net-framework"
@@ -21,7 +21,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 
-# DataMemberFieldEditor class
+# DataMemberFieldEditor Class
 
 Provides user interface for editing properties of data-bound objects by listing all properties of the `DataSource` object to select the value source from.  
   

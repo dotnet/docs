@@ -1,5 +1,5 @@
 ---
-title: "ServicePoint.m_ConnectionGroupList field | Microsoft Docs"
+title: "ServicePoint.m_ConnectionGroupList Field | Microsoft Docs"
 ms.date: "05/01/2017"
 ms.prod: ".net-framework"
 ms.technology: ""
@@ -18,7 +18,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 
-# ServicePoint.m\_ConnectionGroupList field
+# ServicePoint.m\_ConnectionGroupList Field
 
 `ServicePoint.m_ConnectionGroupList` is a <xref:System.Collections.Hashtable> of connection groups, each holding a connection for the <xref:System.Net.ServicePoint>'s URI.
 

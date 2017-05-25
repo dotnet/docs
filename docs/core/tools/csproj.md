@@ -71,13 +71,13 @@ With csproj, we recommend that you remove the default globs from your project an
 
 ## How to see the whole project as MSBuild sees it
 
-While those csproj changes greatly simplify project files, you might want to see the fully expanded project as MSBuild sees it once the SDK and its targets are included. Preprocess the project with the `/pp` switch of the [`dotnet msbuild`](dotnet-msbuild.md) command, which shows which files are imported, their sources, and their contributions to the build without actually building the project:
-
-`dotnet msbuild /pp`
-
-Direct the output of this command to a file by specifying it as the value of the `/pp` option:
+While those csproj changes greatly simplify project files, you might want to see the fully expanded project as MSBuild sees it once the SDK and its targets are included. Preprocess the project with [the `/pp` switch](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-command-line-reference#preprocess) of the [`dotnet msbuild`](dotnet-msbuild.md) command, which shows which files are imported, their sources, and their contributions to the build without actually building the project:
 
 `dotnet msbuild /pp:fullproject.xml`
+
+If the project has multiple target frameworks, the results of the command should be focused on only one of them by specifying it as an MSBuild property:
+
+`dotnet msbuild /p:TargetFramework=netcoreapp2.0 /pp:fullproject.xml`
 
 ## Additions
 

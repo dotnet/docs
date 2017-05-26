@@ -43,14 +43,14 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Type Relationships in LINQ Query Operations (C#)
-To write queries effectively, you should understand how types of the variables in a complete query operation all relate to each other. If you understand these relationships you will more easily comprehend the [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] samples and code examples in the documentation. Furthermore, you will understand what occurs behind the scenes when variables are implicitly typed by using `var`.  
+To write queries effectively, you should understand how types of the variables in a complete query operation all relate to each other. If you understand these relationships you will more easily comprehend the [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] samples and code examples in the documentation. Furthermore, you will understand what occurs behind the scenes when variables are implicitly typed by using `var`.  
   
- [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] query operations are strongly typed in the data source, in the query itself, and in the query execution. The type of the variables in the query must be compatible with the type of the elements in the data source and with the type of the iteration variable in the `foreach` statement. This strong typing guarantees that type errors are caught at compile time when they can be corrected before users encounter them.  
+ [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query operations are strongly typed in the data source, in the query itself, and in the query execution. The type of the variables in the query must be compatible with the type of the elements in the data source and with the type of the iteration variable in the `foreach` statement. This strong typing guarantees that type errors are caught at compile time when they can be corrected before users encounter them.  
   
  In order to demonstrate these type relationships, most of the examples that follow use explicit typing for all variables. The last example shows how the same principles apply even when you use implicit typing by using [var](../../../../csharp/language-reference/keywords/var.md).  
   
 ## Queries that do not Transform the Source Data  
- The following illustration shows a [!INCLUDE[vbteclinq](../../../../csharp/includes/vbteclinq_md.md)] to Objects query operation that performs no transformations on the data. The source contains a sequence of strings and the query output is also a sequence of strings.  
+ The following illustration shows a [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] to Objects query operation that performs no transformations on the data. The source contains a sequence of strings and the query output is also a sequence of strings.  
   
  ![Relation of data types in a LINQ query](../../../../csharp/programming-guide/concepts/linq/media/linq_flow1.png "LINQ_flow1")  
   
@@ -61,7 +61,7 @@ To write queries effectively, you should understand how types of the variables i
 3.  The query variable is iterated over in the `foreach` statement. Because the query variable is a sequence of strings, the iteration variable is also a string.  
   
 ## Queries that Transform the Source Data  
- The following illustration shows a [!INCLUDE[vbtecdlinq](../../../../csharp/includes/vbtecdlinq_md.md)] query operation that performs a simple transformation on the data. The query takes a sequence of `Customer` objects as input, and selects only the `Name` property in the result. Because `Name` is a string, the query produces a sequence of strings as output.  
+ The following illustration shows a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] query operation that performs a simple transformation on the data. The query takes a sequence of `Customer` objects as input, and selects only the `Name` property in the result. Because `Name` is a string, the query produces a sequence of strings as output.  
   
  ![A query that transforms the data type](../../../../csharp/programming-guide/concepts/linq/media/linq_flow2.png "LINQ_flow2")  
   

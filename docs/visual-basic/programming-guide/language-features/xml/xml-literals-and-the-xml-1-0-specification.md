@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # XML Literals and the XML 1.0 Specification (Visual Basic)
-The XML literal syntax in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] supports most of the Extensible Markup Language (XML) 1.0 specification. For details about the XML 1.0 specification, see [Extensible Markup Language (XML) 1.0](http://go.microsoft.com/fwlink/?LinkId=73927) on the W3C Web site.  
+The XML literal syntax in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supports most of the Extensible Markup Language (XML) 1.0 specification. For details about the XML 1.0 specification, see [Extensible Markup Language (XML) 1.0](http://go.microsoft.com/fwlink/?LinkId=73927) on the W3C Web site.  
   
 ## What Visual Basic Does Not Support  
   

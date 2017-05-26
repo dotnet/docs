@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Visual Basic Compiler Options Listed Alphabetically
-The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] command-line compiler is provided as an alternative to compiling programs from the [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] integrated development environment (IDE). The following is a list of the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] command-line compiler options sorted alphabetically.  
+The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler is provided as an alternative to compiling programs from the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] integrated development environment (IDE). The following is a list of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] command-line compiler options sorted alphabetically.  
   
 |Option|Purpose|  
 |------------|-------------|  
@@ -51,7 +51,7 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
 |[/define](../../../visual-basic/reference/command-line-compiler/define.md)|Defines symbols for conditional compilation.|  
 |[/delaysign](../../../visual-basic/reference/command-line-compiler/delaysign.md)|Specifies whether the assembly will be fully or partially signed.|  
 |[/doc](../../../visual-basic/reference/command-line-compiler/doc.md)|Processes documentation comments to an XML file.|  
-|[/errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)|Specifies how the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler should report internal compiler errors.|  
+|[/errorreport](../../../visual-basic/reference/command-line-compiler/errorreport.md)|Specifies how the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler should report internal compiler errors.|  
 |[/filealign](../../../visual-basic/reference/command-line-compiler/filealign.md)|Specifies where to align the sections of the output file.|  
 |[/help](../../../visual-basic/reference/command-line-compiler/help.md)|Displays compiler options. This command is the same as specifying the `/?` option. No compilation occurs.|  
 |[/highentropyva](../../../visual-basic/reference/command-line-compiler/highentropyva.md)|Indicates whether a particular executable supports high entropy Address Space Layout Randomization (ASLR).|  

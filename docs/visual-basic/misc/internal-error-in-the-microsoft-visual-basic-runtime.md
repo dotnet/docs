@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Internal error in the Microsoft Visual Basic runtime
-An internal error has occurred in the Microsoft [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] runtime.  
+An internal error has occurred in the Microsoft [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] runtime.  
   
 ## To correct this error  
   

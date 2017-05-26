@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Working with XML Namespaces (Visual Basic)
-The topics in this section describe how [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] supports namespaces.  
+The topics in this section describe how [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] supports namespaces.  
   
 ## In This Section  
   

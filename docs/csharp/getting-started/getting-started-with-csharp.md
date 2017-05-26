@@ -42,7 +42,7 @@ The following topics help you start developing applications by using C#. These t
   
 ## Related Sections  
  [Using the Visual Studio Development Environment for C#](https://docs.microsoft.com/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
- Provides a guide to using the [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)] integrated development environment.  
+ Provides a guide to using the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] integrated development environment.  
   
  [C# Programming Guide](../../csharp/programming-guide/index.md)  
  Provides information about C# programming concepts, and describes how to perform various tasks in C#.  

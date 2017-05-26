@@ -28,7 +28,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # /target:appcontainerexe (C# Compiler Options)
-If you use the **/target:appcontainerexe** compiler option, the compiler creates a Windows executable (.exe) file that must be run in an app container. This option is equivalent to [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md) but is designed for [!INCLUDE[win8_appname_long](../../../csharp/includes/win8_appname_long_md.md)] apps.  
+If you use the **/target:appcontainerexe** compiler option, the compiler creates a Windows executable (.exe) file that must be run in an app container. This option is equivalent to [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md) but is designed for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] apps.  
   
 ## Syntax  
   
@@ -49,7 +49,7 @@ If you use the **/target:appcontainerexe** compiler option, the compiler creates
   
 2.  On the **Application** tab, in the **Output type** list, choose **Windows Store App**.  
   
-     This option is available only for [!INCLUDE[win8_appname_long](../../../csharp/includes/win8_appname_long_md.md)] app templates.  
+     This option is available only for [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app templates.  
   
  For information about how to set this compiler option programmatically, see <xref:VSLangProj80.ProjectProperties3.OutputType%2A>.  
   

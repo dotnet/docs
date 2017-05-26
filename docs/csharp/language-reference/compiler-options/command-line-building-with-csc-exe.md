@@ -36,7 +36,7 @@ If you use the **Developer Command Prompt for Visual Studio** window, all the ne
 
 If you use a standard Command Prompt window, you must adjust your path before you can invoke *csc.exe* from any subdirectory on your computer. You also must run *vsvars32.bat* to set the appropriate environment variables to support command-line builds. For more information about *vsvars32.bat*, including instructions for how to find and run it, see [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md).
 
-If you're working on a computer that has only the [!INCLUDE[winsdklong](../../../csharp/language-reference/compiler-options/includes/winsdklong_md.md)], you can use the C# compiler at the **SDK Command Prompt**, which you open from the **Microsoft .NET Framework SDK** menu option.
+If you're working on a computer that has only the [!INCLUDE[winsdklong](~/includes/winsdklong-md.md)], you can use the C# compiler at the **SDK Command Prompt**, which you open from the **Microsoft .NET Framework SDK** menu option.
 
 You can also use MSBuild to build C# programs programmatically. For more information, see [MSBuild](/visualstudio/msbuild/msbuild).
 

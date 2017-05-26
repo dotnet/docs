@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Sample XML Documents (LINQ to XML)
-The following example files are used in the code samples and code snippets throughout the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] documentation.  
+The following example files are used in the code samples and code snippets throughout the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation.  
   
 > [!NOTE]
 >  The example companies, organizations, products, domain names, e-mail addresses, logos, people, places, and events depicted herein are fictitious. No association with any real company, organization, product, domain name, e-mail address, logo, person, places, or events is intended or should be inferred.  

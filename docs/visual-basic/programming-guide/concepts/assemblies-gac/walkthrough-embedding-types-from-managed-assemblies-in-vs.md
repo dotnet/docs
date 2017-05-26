@@ -59,7 +59,7 @@ If you embed type information from a strong-named managed assembly, you can loos
   
 -   Run the client program to see that the new version of the runtime assembly is being used without having to recompile the client program.  
   
-[!INCLUDE[note_settings_general](../../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ## Creating an Interface  
   

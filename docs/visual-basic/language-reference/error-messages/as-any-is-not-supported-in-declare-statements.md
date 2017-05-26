@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # &#39;As Any&#39; is not supported in &#39;Declare&#39; statements
-The `Any` data type was used with `Declare` statements in Visual Basic 6.0 and earlier versions to permit the use of arguments that could contain any type of data. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] supports overloading, however, and so makes the `Any` data type obsolete.  
+The `Any` data type was used with `Declare` statements in Visual Basic 6.0 and earlier versions to permit the use of arguments that could contain any type of data. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supports overloading, however, and so makes the `Any` data type obsolete.  
   
  **Error ID:** BC30828  
   

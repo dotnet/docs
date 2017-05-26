@@ -33,7 +33,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Automation object does not have a default value
-[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] cannot determine the default member for the specified object.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] cannot determine the default member for the specified object.  
   
 ### To correct the error  
   

@@ -1,5 +1,4 @@
 # [.NET Microservices: Architecture for Containerized .NET Applications](index.md)
-## [Front Matter](front-matter/)
 ## [Introduction](introduction/)
 ## [Introduction to Containers and Docker](introduction-to-containers-and-docker/)
 ## [Choosing Between NET Core and NET Framework for Docker Containers](choosing-between-net-core-and-net-framework-for-docker-containers/)

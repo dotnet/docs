@@ -49,8 +49,8 @@ When you explore the .NET image repositories at Docker Hub, you will find multip
 -   microsoft/aspnetcore:**1.1**
     ASP.NET Core, with runtime only and ASP.NET Core optimizations, on Linux
 
--   microsoft/aspnetcore-build:**1.0-1.1
-    **ASP.NET Core, with SDKs included, on Linux
+-   microsoft/aspnetcore-build:**1.0-1.1**
+    ASP.NET Core, with SDKs included, on Linux
 
 -   microsoft/dotnet:**1.1-runtime**
     .NET Core 1.1, with runtime only, on Linux

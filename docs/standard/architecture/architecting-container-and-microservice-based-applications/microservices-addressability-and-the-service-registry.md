@@ -21,7 +21,7 @@ Note that there is certain overlap between the service registry and the API gate
 ## Additional resources
 
 -   **Chris Richardson. Pattern: Service registry**
-    *http://microservices.io/patterns/service-registry.html,xu*
+    *http://microservices.io/patterns/service-registry.html*
 
 -   **Auth0. The Service Registry**
     [*https://auth0.com/blog/an-introduction-to-microservices-part-3-the-service-registry/*](https://auth0.com/blog/an-introduction-to-microservices-part-3-the-service-registry/)

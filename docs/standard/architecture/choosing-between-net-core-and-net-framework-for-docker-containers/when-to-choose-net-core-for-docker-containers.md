@@ -24,7 +24,7 @@ Clearly, if your goal is to have an application (web app or service) that can ru
 
 [Visual Studio](https://www.visualstudio.com/) provides an integrated development environment (IDE) for Windows. [Visual Studio for Mac](https://www.visualstudio.com/vs/visual-studio-mac/) is an evolution of Xamarin Studio running in macOS, but as of the time of this writing, it still does not support Docker development. You can also use [Visual Studio Code](https://code.visualstudio.com/) (VS Code) on macOS, Linux, and Windows. VS Code fully supports .NET Core, including IntelliSense and debugging. Because VS Code is a lightweight editor, you can use it to develop containerized apps on the Mac in conjunction with the Docker CLI and the .NET Core CLI (dotnet cli). You can also target .NET Core with most third-party editors like Sublime, Emacs, vi, and the open-source OmniSharp project, which also provides IntelliSense support. In addition to the IDEs and editors, you can use the .NET Core command-line tools (dotnet CLI) for all supported platforms.
 
-## Using containers for new (“green-field”) projects
+## Using containers for new ("green-field") projects
 
 Containers are commonly used in conjunction with a microservices architecture, although they can also be used to containerize web apps or services that follow any architectural pattern. You can use .NET Framework on Windows Containers, but the modularity and lightweight nature of .NET Core makes it perfect for containers and microservices architectures. When you create and deploy a container, its image is far smaller with .NET Core than with .NET Framework.
 

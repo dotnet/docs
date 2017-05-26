@@ -33,7 +33,7 @@ These products provide a simple but robust experience that streamlines the devel
     [*https://code.visualstudio.com/download*](https://code.visualstudio.com/download)
 
 -   **Docker Community Edition (CE) for Mac and Windows**
-    [*https://www.docker.com/community-editions*](https://www.docker.com/community-editions)
+    [*https://www.docker.com/community-editions*](https://www.docker.com/community-edition)
 
 ## .NET languages and frameworks for Docker containers
 

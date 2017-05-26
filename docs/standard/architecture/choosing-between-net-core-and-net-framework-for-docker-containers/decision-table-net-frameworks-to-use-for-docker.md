@@ -12,18 +12,39 @@ ms.technology: dotnet-docker
 
 The following decision table summarizes whether to use .NET Framework or .NET Core. Remember that for Linux containers, you need Linux-based Docker hosts (VMs or servers) and that for Windows Containers you need Windows Server based Docker hosts (VMs or servers).
 
-  **Architecture / App Type**                                         **Linux containers**                                                               **Windows Containers**
-  ------------------------------------------------------------------- ---------------------------------------------------------------------------------- -------------------------------------------------------------------------------------------------
-  Microservices on containers                                         .NET Core                                                                          .NET Core
-  Monolithic app                                                      .NET Core                                                                          .NET Framework, .NET Core
-  Best-in-class performance and scalability                           .NET Core                                                                          .NET Core
-  Windows Server legacy app (“brown-field”) migration to containers   --                                                                                 .NET Framework
-  New container-based development (“green-field”)                     .NET Core                                                                          .NET Core
-  ASP.NET Core                                                        .NET Core                                                                          .NET Core (recommended), .NET Framework
-  ASP.NET 4 (MVC 5, Web API 2, and Web Forms)                         --                                                                                 .NET Framework
-  SignalR services                                                    .NET Core (future release)                                                         .NET Framework,.NET Core (future release)
-  WCF, WF, and other legacy frameworks                                WCF in .NET Core (in the roadmap)                                                  .NET Framework, WCF in .NET Core (in the roadmap)
-  Consumption of Azure services                                       .NET Core (eventually all Azure services will provide client SDKs for .NET Core)   .NET Framework,.NET Core (eventually all Azure services will provide client SDKs for .NET Core)
+* **Architecture / application type**:
+    - *When you choose Linux containers*.
+    - *When you choose Windows containers*.
+* **Microservices on containers**
+    - *.NET Core* on Linux containers.
+    - *.NET Core* on Windows containers.
+* **Monolithic application**
+    - *.NET Core* on Linux containers.
+    - *.NET Framework* or *.NET Core* on Windows containers.
+* **Best-in-class performance and scalability**
+    - *.NET Core* on Linux containers.
+    - *.NET Core* on Windows containers.
+* **Windows Server legacy app ("brown-field") migration to containers**
+    - *Do not choose* Linux containers because of .NET Framework dependency.
+    - *.NET Framework* on Windows containers.
+* **New container-based development ("green-field")**
+    - *.NET Core* on Linux containers.
+    - *.NET Core* on Windows containers.
+* **ASP.NET Core**
+    - *.NET Core* on Linux containers.
+    - *.NET Core (recommended)*, or *.NET Framework* on Windows containers.
+* **ASP.NET 4 (MVC 5, Web API 2, and Web Forms)**
+    - *Do not choose* Linux cvontainers because of .NET Framework dependency.
+    - *.NET Framework* on Windows containers.
+* **SignalR services**
+    - *.NET Core (future release)* on Linux containers.
+    - *.NET Framework*, or *.NET Core (future release)* on Windows containers.
+* **WCF, WF, and other legacy frameworks**
+    - *WCF in .NET Core (in the roadmap)* on Linux containers.
+    - *.NET Framework*, of *WCF in .NET Core (in the roadmap)* on Windows containers.
+* **Consumption of Azure services**
+    - *.NET Core (eventually all Azure services will provide client SDKs for .NET Core)* on Linux containers.
+    - *.NET Framework* or ,*.NET Core (eventually all Azure services will provide client SDKs for .NET Core)* on Windows containers.
 
 
 >[!div class="step-by-step"]

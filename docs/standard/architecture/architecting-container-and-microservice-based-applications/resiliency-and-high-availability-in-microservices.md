@@ -61,7 +61,7 @@ Different orchestrators might sound similar, but the diagnostics and health chec
     [*https://docs.microsoft.com/en-us/azure/azure-diagnostics*](https://docs.microsoft.com/en-us/azure/azure-diagnostics)
 
 -   **Connect Windows computers to the Log Analytics service in Azure**
-    [*https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-windows-agents*](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-windows-agents%20)
+    [*https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-windows-agents*](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-windows-agents)
 
 -   **Logging What You Mean: Using the Semantic Logging Application Block**
     [*https://msdn.microsoft.com/en-us/library/dn440729(v=pandp.60).aspx*](https://msdn.microsoft.com/en-us/library/dn440729(v=pandp.60).aspx)

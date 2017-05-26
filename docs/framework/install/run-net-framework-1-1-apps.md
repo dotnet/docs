@@ -1,7 +1,7 @@
 ---
 title: "Run .NET Framework 1.1 apps on Windows 8, Windows 8.1, or Windows 10 | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "05/26/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""

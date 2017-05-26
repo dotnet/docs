@@ -1,7 +1,7 @@
 ---
-title: "Troubleshooting the installation of the .NET Framework 3.5 on Windows 8, Windows 8.1, and Windows 10 | Microsoft Docs"
+title: "Install the .NET Framework 3.5 on Windows 8, Windows 8.1, and Windows 10 | Microsoft Docs"
 ms.custom: ""
-ms.date: "04/20/2017"
+ms.date: "05/26/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
@@ -19,7 +19,7 @@ ms.author: "mairaw"
 manager: "wpickett"
 ---
 
-# Installing the .NET Framework 3.5 on Windows 8, Windows 8.1, and Windows 10
+# Install the .NET Framework 3.5 on Windows 8, Windows 8.1, and Windows 10
 
 The .NET Framework is an integral part of many apps running on Windows and provides common functionality for those apps to run. For developers, the .NET Framework provides a consistent programming model for building apps. If you're using the Windows operating system, the .NET Framework may already be installed on your computer. Specifically, the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is included with [!INCLUDE[win8](../../../includes/win8-md.md)], the [!INCLUDE[net_v451](../../../includes/net-v451-md.md)] is included with [!INCLUDE[win81](../../../includes/win81-md.md)], and the [!INCLUDE[net_v46](../../../includes/net-v46-md.md)] is included with Windows 10.  
   

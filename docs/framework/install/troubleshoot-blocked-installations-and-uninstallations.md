@@ -1,7 +1,7 @@
 ---
 title: "Troubleshoot blocked .NET Framework installations and uninstallations | Microsoft Docs"
 ms.custom: ""
-ms.date: "03/30/2017"
+ms.date: "05/26/2017"
 ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""

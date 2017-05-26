@@ -3,7 +3,7 @@ title: Install the .NET Framework on Windows 8 | Microsoft Docs
 description: Learn how to install .NET Framework on Windows 8
 author: rlander
 keywords: .NET Framework, Install
-ms.date: 03/28/2017
+ms.date: 05/26/2017
 ms.topic: article
 ms.prod: .net-framework-4.6
 ms.technology: vs-ide-deployment
@@ -17,9 +17,9 @@ You may need the .NET Framework to run an app on Windows 8. You can use the foll
 
 ## .NET Framework 4.7
 
-You can install the [.NET Framework 4.7](https://www.microsoft.com/net/download/framework) or later on Windows 8.
+You can install the [.NET Framework 4.7](https://www.microsoft.com/net/download/framework) on Windows 8.
 
-The .NET Framework 4.7 is included with [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10).
+The .NET Framework 4.7 is included with the [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10).
 
 The .NET Framework 4.7 supports apps built for .NET Framework 4.0 or later.
 

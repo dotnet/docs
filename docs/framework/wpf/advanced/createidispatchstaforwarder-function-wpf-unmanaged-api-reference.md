@@ -27,12 +27,10 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 HRESULT CreateIDispatchSTAForwarder(  
    __in IDispatch *pDispatchDelegate,   
    __deref_out IDispatch **ppForwarder  
 )  
-  
 ```  
   
 #### Parameters  

@@ -28,7 +28,6 @@ Specifies the settings of a Windows service credential.
 ## Syntax  
   
 ```  
-  
 <windowsAuthentication  
       allowAnonymousLogons="Boolean"  
       includeWindowsGroups="Boolean" />  

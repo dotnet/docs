@@ -80,13 +80,11 @@ Specifies whether the common language runtime runs server garbage collection.
  The following example enables server garbage collection.  
   
 ```  
-  
 <configuration>  
    <runtime>  
       <gcServer enabled="true"/>  
    </runtime>  
 </configuration>  
-  
 ```  
   
 ## See Also  

@@ -34,12 +34,10 @@ You can enable the user to rearrange <xref:System.Windows.Forms.ToolStripItem> c
   
     ```vb  
     toolStrip1.AllowItemReorder = True  
-  
     ```  
   
     ```csharp  
     toolStrip1.AllowItemReorder = true;  
-  
     ```  
   
 ## See Also  

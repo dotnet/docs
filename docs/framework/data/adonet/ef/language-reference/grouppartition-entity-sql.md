@@ -21,7 +21,6 @@ Returns a collection of argument values that are projected off the current group
 ## Syntax  
   
 ```  
-  
 GROUPPARTITION( [ALL|DISTINCT] expression )  
 ```  
   

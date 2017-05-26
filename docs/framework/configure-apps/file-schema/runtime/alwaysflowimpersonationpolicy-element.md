@@ -87,14 +87,12 @@ Specifies that the Windows identity always flows across asynchronous points, reg
  ASP.NET by default disables the impersonation flow in the aspnet.config file by using the following configuration settings:  
   
 ```  
-  
 configuration>  
    <runtime>  
       <legacyImpersonationPolicy enabled="true"/>  
       <alwaysFlowImpersonationPolicy enabled="false"/>  
    </runtime>  
 </configuration>  
-  
 ```  
   
  In ASP.NET, if you want to allow the flow of impersonation instead, you must explicitly use the following configuration settings:  

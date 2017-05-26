@@ -55,7 +55,7 @@ Specifies that one or more declared programming elements have no access restrict
   
 -   **Default Access.** Local variables inside a procedure default to public access, and you cannot use any access modifiers on them.  
   
--   **Access Modifiers.** The keywords that specify access level are called *access modifiers*. For a comparison of the access modifiers, see [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+-   **Access Modifiers.** The keywords that specify access level are called *access modifiers*. For a comparison of the access modifiers, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
  The `Public` modifier can be used in these contexts:  
   
@@ -91,7 +91,7 @@ Specifies that one or more declared programming elements have no access restrict
  [Protected](../../../visual-basic/language-reference/modifiers/protected.md)   
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)   
  [Private](../../../visual-basic/language-reference/modifiers/private.md)   
- [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
+ [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

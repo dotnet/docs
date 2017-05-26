@@ -25,7 +25,6 @@ Specifies the collection used in [SELECT](../../../../../../docs/framework/data/
 ## Syntax  
   
 ```  
-  
 FROM expression [ ,...n ] as C  
 ```  
   

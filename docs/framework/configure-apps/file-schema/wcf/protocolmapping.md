@@ -28,7 +28,6 @@ Represents a configuration section for defining a set of default protocol mappin
 ```  
   
 ```csharp  
-  
 ```  
   
 ## Attributes and Elements  
@@ -53,14 +52,12 @@ Represents a configuration section for defining a set of default protocol mappin
  The following configuration example shows the default protocol mapping in the machine.config file. You can override this default mapping at the machine level by modifying the machine.config file. Or if you would only like to override it within the scope of an application, you can override this section within your application configuration file and change the mapping for individual protocol schemes.  
   
 ```  
-  
 <protocolMapping>  
         <add scheme="http" binding="basicHttpBinding"/>  
         <add scheme="net.tcp" binding="netTcpBinding"/>  
         <add scheme="net.pipe" binding="netNamedPipeBinding"/>  
         <add scheme="net.msmq" binding="netMsmqBinding"/>  
 </protocolMapping>  
-  
 ```  
   
 ## See Also  

@@ -87,7 +87,6 @@ Sub New2(<MarshalAs(UnmanagedType.SafeArray, SafeArraySubType:=VT_DATE)> _
    ar() As DateTime)  
 Sub New3(ByRef <MarshalAs(UnmanagedType.SafeArray, SafeArraySubType:=VT_BSTR)> _   
    ar() As String)  
-  
 ```  
   
 ```csharp  
@@ -129,7 +128,6 @@ Sub New2(<MarshalAs(UnmanagedType.LPArray, SizeConst=200)> _
 Sub New2(<MarshalAs(UnmanagedType.LPArray, _  
    ArraySubType=UnmanagedType.LPWStr, SizeConst=10)> _  
    ar() As String)  
-  
 ```  
   
 ```csharp  
@@ -155,7 +153,6 @@ HRESULT New3(int ElemCnt, [length_is(ElemCnt)] LPStr ar[]);
 Sub New1(ByRef ar As Integer)  
 Sub New2(ByRef ar As Double)  
 Sub New3(ByRef ar As String)  
-  
 ```  
   
 ```csharp  
@@ -172,7 +169,6 @@ void New3(ref String ar);
     Sub [New](ElemCnt As Integer, _  
        \<MarshalAs(UnmanagedType.LPArray, SizeParamIndex:=1)> _  
        ar() As Integer)  
-  
     ```  
   
     ```csharp  
@@ -186,7 +182,6 @@ void New3(ref String ar);
     ```vb  
     Sub [New](\<MarshalAs(UnmanagedType.LPArray, SizeConst:=128)> _  
        ar() As Integer)  
-  
     ```  
   
     ```csharp  
@@ -221,7 +216,6 @@ void New3(ref String ar);
 ```vb  
 Sub [New](ar() As Long)  
 Sub [New](ar() As String)  
-  
 ```  
   
 ```csharp  
@@ -250,7 +244,6 @@ Sub [New](<MarshalAs(UnmanagedType.LPArray, SizeParamIndex:=1)> _
 Sub [New](<MarshalAs(UnmanagedType.LPArray, _  
    ArraySubType= UnmanagedType.LPStr, SizeParamIndex:=1)> _  
    ar() As String, size as Integer)  
-  
 ```  
   
 ```csharp  
@@ -281,7 +274,6 @@ HRESULT New(LPStr ar[]);
 ```vb  
 Sub [New](ar(,) As Long)  
 Sub [New](ar(,) As String)  
-  
 ```  
   
 ```csharp  
@@ -308,7 +300,6 @@ Sub [New](<MarshalAs(UnmanagedType.LPARRAY, SizeParamIndex:=1)> _
 Sub [New](<MarshalAs(UnmanagedType.LPARRAY, _  
    ArraySubType:=UnmanagedType.LPStr, SizeParamIndex:=1)> _  
    ar(,) As String, size As Integer)  
-  
 ```  
   
 ```csharp  
@@ -332,7 +323,6 @@ HRESULT New(LPStr ar[]);
   
 ```vb  
 Sub [New](ar()()() As Long)  
-  
 ```  
   
 ```csharp  
@@ -347,7 +337,6 @@ void New(long [][][] ar );
 ```vb  
 Sub New1( ar As System.Array )  
 Sub New2( <MarshalAs(UnmanagedType.Safe array)> ar As System.Array )  
-  
 ```  
   
 ```csharp  
@@ -380,7 +369,6 @@ Public Structure <StructLayout(LayoutKind.Sequential)> MyStruct
    Public <MarshalAs(UnmanagedType.ByValArray, SizeConst := 128)> _  
      s1() As Short  
 End Structure  
-  
 ```  
   
 ```csharp  

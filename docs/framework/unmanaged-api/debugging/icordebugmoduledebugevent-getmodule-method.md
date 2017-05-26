@@ -23,11 +23,9 @@ Gets the merged module that was just loaded or unloaded.
 ## Syntax  
   
 ```  
-  
 HRESULT GetModule(  
    [out]ICorDebugModule **ppModule  
 );  
-  
 ```  
   
 #### Parameters  

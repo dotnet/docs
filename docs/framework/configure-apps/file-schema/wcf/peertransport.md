@@ -27,7 +27,6 @@ Defines a peer transport for a custom binding.
 ## Syntax  
   
 ```  
-  
 <peerTransport   
     listenIpAddress="String"  
     maxBufferPoolSize="Integer"  

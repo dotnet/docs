@@ -56,7 +56,6 @@ Private Shared Sub OnColumnChanged( _
     End If  
   End If  
 End Sub  
-  
 ```  
   
 ```csharp  

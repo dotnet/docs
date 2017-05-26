@@ -37,12 +37,10 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control can display icons
   
     ```vb  
     TreeView1.ImageList = ImageList1  
-  
     ```  
   
     ```csharp  
     treeView1.ImageList = imageList1;  
-  
     ```  
   
     ```cpp  
@@ -58,7 +56,6 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control can display icons
     ' the TreeView control contains a selected image.)  
     TreeView1.SelectedNode.ImageIndex = 0  
     TreeView1.SelectedNode.SelectedImageIndex = 1  
-  
     ```  
   
     ```csharp  
@@ -66,7 +63,6 @@ The Windows Forms <xref:System.Windows.Forms.TreeView> control can display icons
     // the TreeView control contains a selected image.)  
     treeView1.SelectedNode.ImageIndex = 0;  
     treeView1.SelectedNode.SelectedImageIndex = 1;  
-  
     ```  
   
     ```cpp  

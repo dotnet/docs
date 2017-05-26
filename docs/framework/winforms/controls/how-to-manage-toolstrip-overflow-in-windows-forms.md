@@ -41,13 +41,11 @@ When all the items on a <xref:System.Windows.Forms.ToolStrip> control do not fit
     ```vb  
     toolStripTextBox1.Overflow = _  
     System.Windows.Forms.ToolStripItemOverflow.Never  
-  
     ```  
   
     ```csharp  
     toolStripTextBox1.Overflow = _  
     System.Windows.Forms.ToolStripItemOverflow.Never;  
-  
     ```  
   
 ## See Also  

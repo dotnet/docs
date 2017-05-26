@@ -31,12 +31,10 @@ Gets an "ICorDebugValue" object that encapsulates the return value of a function
 ## Syntax  
   
 ```vb  
-  
 HRESULT GetReturnValueForILOffset(  
     ULONG32 ILoffset,   
     [out] ICorDebugValue **ppReturnValue  
 );  
-  
 ```  
   
 #### Parameters  

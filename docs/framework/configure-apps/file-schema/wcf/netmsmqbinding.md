@@ -28,7 +28,6 @@ Defines a queued binding suitable for cross-machine communication.
 ## Syntax  
   
 ```  
-  
 <netMsmqBinding>  
     <binding   
        closeTimeout="TimeSpan"   

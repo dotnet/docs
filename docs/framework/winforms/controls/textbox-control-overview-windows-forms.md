@@ -35,7 +35,6 @@ Private Sub InitializeMyControl()
    ' Put some text into the control first.  
    TextBox1.Text = "This is a TextBox control."  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -43,7 +42,6 @@ private void InitializeMyControl() {
    // Put some text into the control first.  
    textBox1.Text = "This is a TextBox control.";  
 }  
-  
 ```  
   
 ```cpp  

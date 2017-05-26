@@ -27,12 +27,10 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 HRESULT LoadFromHistory_export(  
         IStream* pHistoryStream,   
         IBindCtx* pBindCtx  
 )  
-  
 ```  
   
 #### Parameters  

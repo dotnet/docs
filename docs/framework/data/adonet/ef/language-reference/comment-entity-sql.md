@@ -25,7 +25,6 @@ manager: "jhubbard"
 ## Syntax  
   
 ```  
-  
 -- text_of_comment  
 ```  
   

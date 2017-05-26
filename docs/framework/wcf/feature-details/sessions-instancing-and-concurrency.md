@@ -100,7 +100,6 @@ public class CalculatorService : ICalculatorConcurrency
 {   
     ...  
 }  
-  
 ```  
   
 ## Sessions Interact with InstanceContext Settings  

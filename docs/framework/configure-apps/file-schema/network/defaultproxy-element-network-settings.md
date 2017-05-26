@@ -36,7 +36,6 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 ## Syntax  
   
 ```  
-  
       <defaultProxy  
   enabled="true|false"  
   useDefaultCredentials="true|false"  

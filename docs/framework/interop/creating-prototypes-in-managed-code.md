@@ -63,7 +63,6 @@ Public Class Win32
         ByVal Typ As Integer) As IntPtr  
    End Function  
 End Class  
-  
 ```  
   
 ```csharp  
@@ -71,7 +70,6 @@ using System.Runtime.InteropServices;
 [DllImport("user32.dll")]  
     public static extern IntPtr MessageBox(int hWnd, String text,   
                                        String caption, uint type);  
-  
 ```  
   
 ```cpp  
@@ -132,7 +130,6 @@ using namespace System::Runtime::InteropServices;
  <xref:System.Security.Permissions.SecurityAction> modifiers do work correctly if they are placed on a class that contains (wraps) the platform invoke call.  
   
 ```cpp  
-  
       [RegistryPermission(SecurityAction.Demand, Unrestricted = true)]  
 public ref class PInvokeWrapper  
 {  
@@ -149,13 +146,11 @@ class PInvokeWrapper
 [DllImport("MyClass.dll", EntryPoint = "CallRegistryPermission")]  
     private static extern bool CallRegistryPermissionDeny();  
 }  
-  
 ```  
   
  <xref:System.Security.Permissions.SecurityAction> modifiers also work correctly in a nested scenario where they are placed on the caller of the platform invoke call:  
   
 ```cpp  
-  
       {  
 public ref class PInvokeWrapper  
 public:  
@@ -216,7 +211,6 @@ interface IAssertStubsItf
 [FileIOPermission(SecurityAction.PermitOnly, Unrestricted = true)]  
     bool CallFileIoPermission();  
 }  
-  
 ```  
   
  Additionally, the `Demand` modifier is not accepted in COM interop interface declaration scenarios, as shown in the following example.  

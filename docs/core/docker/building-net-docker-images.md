@@ -1,5 +1,5 @@
 ---
-title: Building .NET Core Docker Images
+title: Building .NET Core Docker Images | Microsoft Docs
 description: Understanding Docker images and .NET Core
 keywords: .NET, .NET Core, Docker
 author: spboyer
@@ -142,7 +142,6 @@ $ yo docker
 ❯ .NET Core
   Golang
   Node.js
-
 ```
 
 - Select `.NET Core` as the project type

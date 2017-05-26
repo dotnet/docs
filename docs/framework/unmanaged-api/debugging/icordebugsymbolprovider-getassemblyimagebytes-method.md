@@ -23,13 +23,11 @@ Reads data from a merged assembly given a relative virtual address (RVA) in the 
 ## Syntax  
   
 ```  
-  
 HRESULT GetAssemblyImageBytes(  
    [in] CORDB_ADDRESS rva,   
    [in] ULONG32 length,   
    [out] ICorDebugMemoryBuffer** ppMemoryBuffer  
 );  
-  
 ```  
   
 #### Parameters  

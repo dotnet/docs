@@ -1,5 +1,5 @@
 ---
-title: Microservices hosted in Docker | C#
+title: Microservices hosted in Docker - C# | Microsoft Docs
 description: Learn to create asp.net core services that run in Docker containers
 keywords: .NET, .NET Core, Docker, C#, ASP.NET, Microservice
 author: BillWagner

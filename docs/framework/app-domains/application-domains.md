@@ -161,7 +161,6 @@ Key = HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\IISADMIN
 Name = Environment  
 Type = REG_MULTI_SZ  
 Value (to append) = COMPLUS_LoaderOptimization=1  
-  
 ```  
   
 <a name="reference"></a>   

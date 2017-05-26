@@ -1,5 +1,5 @@
 ---
-title: "Exceptions: The failwith Function (F#)"
+title: "Exceptions: The failwith Function (F#) | Microsoft Docs"
 description: "Exceptions: The failwith Function (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

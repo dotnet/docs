@@ -32,17 +32,14 @@ Hiding menu items is a way to control the user interface of your application and
   
     ```vb  
     MenuItem3.Visible = False  
-  
     ```  
   
     ```csharp  
     menuItem3.Visible = false;  
-  
     ```  
   
     ```cpp  
     menuItem3->Visible = false;  
-  
     ```  
   
 ## See Also  

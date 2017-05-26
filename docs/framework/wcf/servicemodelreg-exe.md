@@ -24,7 +24,6 @@ This command-line tool provides the ability to manage the registration of WCF an
 ## Syntax  
   
 ```  
-  
 ServiceModelReg.exe[(-ia|-ua|-r)|((-i|-u) -c:<command>)] [-v|-q] [-nologo] [-?]  
 ```  
   

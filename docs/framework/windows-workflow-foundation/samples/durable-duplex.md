@@ -40,7 +40,6 @@ This sample demonstrates how to set up and configure durable duplex message exch
           …  
      </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 > [!NOTE]
@@ -63,7 +62,6 @@ This sample demonstrates how to set up and configure durable duplex message exch
           …  
      </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The following code example exposes endpoints using this custom binding by changing the default protocol mapping for net.msmq base addresses to use this custom binding.  
@@ -77,7 +75,6 @@ This sample demonstrates how to set up and configure durable duplex message exch
           …  
      </system.serviceModel>  
 </configuration>  
-  
 ```  
   
  The following code example enables persistence for both services by adding the <xref:System.ServiceModel.Activities.Description.SqlWorkflowInstanceStoreBehavior> behavior to both services and specifying the connection string for the persistence database.  
@@ -98,7 +95,6 @@ This sample demonstrates how to set up and configure durable duplex message exch
           </behaviors>  
      </system.serviceModel>  
 </configuration>  
-  
 ```  
   
 ## System Requirements  

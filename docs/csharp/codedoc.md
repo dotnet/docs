@@ -1,5 +1,5 @@
 ---
-title: Documenting your code with XML comments
+title: Documenting your code with XML comments | Microsoft Docs
 description: Documenting your code
 keywords: .NET, .NET Core
 author: tsolarin

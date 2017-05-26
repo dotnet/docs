@@ -66,7 +66,6 @@ manager: "erikre"
         }   
         public bool PersistExceptions { get; set; }   
     }  
-  
     ```  
   
      If exceptions are not to be serialized, ensure that exceptions are used within a <xref:System.Activities.Statements.NoPersistScope>.  

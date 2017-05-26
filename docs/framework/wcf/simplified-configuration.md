@@ -50,7 +50,6 @@ system.serviceModel>
     </service>  
   </services>  
 </system.serviceModel>  
-  
 ```  
   
  [!INCLUDE[netfx_current_short](../../../includes/netfx-current-short-md.md)] makes configuring a [!INCLUDE[indigo2](../../../includes/indigo2-md.md)] service easier by removing the requirement for the <`service`> element. If you do not add a <`service`>  section or add any endpoints in a <`service`> section and your service does not programmatically define any endpoints, then a set of default endpoints are automatically added to your service, one for each service base address and for each contract implemented by your service. In each of these endpoints, the endpoint address corresponds to the base address, the binding is determined by the base address scheme and the contract is the one implemented by your service. If you do not need to specify any endpoints or service behaviors or make any binding setting changes, you do not need to specify a service configuration file at all. If a service implements two contracts and the host enables both HTTP and TCP transports the service host creates four default endpoints, one for each contract using each transport. To create default endpoints the service host must know what bindings to use. These settings are specified in a <`protocolMappings`> section within the <`system.serviceModel`> section. The <`protocolMappings`> section contains a list of transport protocol schemes mapped to binding types. The service host uses the base addresses passed to it to determine which binding to use. The following example uses the <`protocolMappings`> element.  
@@ -68,7 +67,6 @@ system.serviceModel>
   <add scheme="net.pipe" binding="netNamedPipeBinding"/>  
   <add scheme="net.msmq" binding="netMSMQBinding"/>  
 </protocolMapping>  
-  
 ```  
   
  In the previous example, an endpoint with a base address that starts with the "http" scheme uses the <xref:System.ServiceModel.BasicHttpBinding>. An endpoint with a base address that starts with the "net.tcp" scheme uses the <xref:System.ServiceModel.NetTcpBinding>. You can override settings in a local App.config or Web.config file.  

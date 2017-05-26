@@ -28,7 +28,6 @@ Specifies additional connection pool settings for a Named Pipe binding.
 ## Syntax  
   
 ```  
-  
 <connectionPoolSettings  
         groupName="String"  
     idleTimeout"TimeSpan"  

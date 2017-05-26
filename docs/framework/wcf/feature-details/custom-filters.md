@@ -88,5 +88,4 @@ RoutingConfiguration rc = new RoutingConfiguration();
 List<ServiceEndpoint> endpointList = new List<ServiceEndpoint>();  
 endpointList.Add(client);  
 rc.FilterTable.Add(new MyMessageFilter("CustomData"), endpointList);  
-  
 ```

@@ -28,7 +28,6 @@ Specifies additional connection pool settings for a TCP transport.
 ## Syntax  
   
 ```  
-  
 <connectionPoolSettings  
     groupName="String"  
     idleTimeout"TimeSpan"  

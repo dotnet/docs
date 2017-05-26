@@ -45,7 +45,6 @@ Provides access to the descendants of the following: an <xref:System.Xml.Linq.XE
 ## Syntax  
   
 ```  
-  
 object...<descendant>  
 ```  
   

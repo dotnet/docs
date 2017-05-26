@@ -84,7 +84,6 @@ public class Win32 {
     public static extern int MsgBox(int hWnd, String text, String caption,  
                                     uint type);  
 }  
-  
 ```  
   
 ```cpp  

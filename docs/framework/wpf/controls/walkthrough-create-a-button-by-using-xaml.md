@@ -312,7 +312,6 @@ The objective of this walkthrough is to learn how to create an animated button f
 4.  **Add animations for**  <xref:System.Windows.UIElement.MouseEnter> **and** <xref:System.Windows.UIElement.MouseLeave> **:** Next we add some animations to the triggers. Add the following markup anywhere inside of the `ControlTemplate.Triggers` block.  
   
     ```  
-  
     <!-- Animations that start when mouse enters and leaves button. -->  
     <EventTrigger RoutedEvent="Mouse.MouseEnter">  
       <EventTrigger.Actions>  
@@ -339,7 +338,6 @@ The objective of this walkthrough is to learn how to create an animated button f
         <StopStoryboard BeginStoryboardName="mouseEnterBeginStoryboard" />  
       </EventTrigger.Actions>  
     </EventTrigger>  
-  
     ```  
   
      The glass rectangle shrinks when the mouse pointer moves over the button and returns back to normal size when the pointer leaves.  
@@ -351,7 +349,6 @@ The objective of this walkthrough is to learn how to create an animated button f
 5.  **Add an animation for when the button is clicked:** The final step is to add a trigger for when the user clicks the button. Add the following markup anywhere inside of the `ControlTemplate.Triggers` block:  
   
     ```  
-  
     <!-- Animation fires when button is clicked, causing glass to spin.  -->  
     <EventTrigger RoutedEvent="Button.Click">  
       <EventTrigger.Actions>  
@@ -365,7 +362,6 @@ The objective of this walkthrough is to learn how to create an animated button f
         </BeginStoryboard>  
       </EventTrigger.Actions>  
     </EventTrigger>  
-  
     ```  
   
      Press F5 to run the application, and click one of the buttons. When you click a button, the glass rectangle spins around.  

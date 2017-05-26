@@ -110,7 +110,6 @@ By using a stateful security context token (SCT) in a secure session, the sessio
     <httpTransport />  
   </binding>  
 </customBinding>  
-  
 ```  
   
 ## See Also  

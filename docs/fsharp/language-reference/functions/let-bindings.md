@@ -1,5 +1,5 @@
 ---
-title: let Bindings (F#)
+title: let Bindings (F#) | Microsoft Docs
 description: let Bindings (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

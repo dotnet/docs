@@ -78,7 +78,6 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
            fs.Close()  
         End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -121,7 +120,6 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
        fs.Close();  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -171,7 +169,6 @@ The <xref:System.Windows.Forms.SaveFileDialog> component allows users to browse 
   
     ```csharp  
     this.button2.Click += new System.EventHandler(this.button2_Click);  
-  
     ```  
   
     ```cpp  

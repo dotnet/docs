@@ -27,7 +27,6 @@ This API supports the Windows Presentation Foundation (WPF) infrastructure and i
 ## Syntax  
   
 ```cpp  
-  
 void Activate(  
     const ActivateParameters* pParameters,  
     __deref_out_ecount(1) LPUNKNOWN* ppInner,  

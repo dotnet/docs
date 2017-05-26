@@ -5,11 +5,10 @@ using System.Windows.Forms;
 
 public class Form1: Form
 {
- protected void Method()
- {
-// <Snippet1>
-IPHostEntry hostInfo = Dns.GetHostByName("www.contoso.com");
-   
-// </Snippet1>
- }
+    protected void Method()
+    {
+        // <Snippet1>
+        IPHostEntry hostInfo = Dns.GetHostEntry("www.contoso.com");
+        // </Snippet1>
+    }
 }

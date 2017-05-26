@@ -25,7 +25,6 @@ Subtracts two numbers.
 ## Syntax  
   
 ```  
-  
 expression - expression  
 ```  
   

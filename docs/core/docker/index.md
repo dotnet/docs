@@ -1,5 +1,5 @@
 ---
-title: Docker and .NET Core
+title: Docker and .NET Core | Microsoft Docs
 description: Docker and .NET Core
 keywords: Docker, .NET, .NET Core
 author: spboyer

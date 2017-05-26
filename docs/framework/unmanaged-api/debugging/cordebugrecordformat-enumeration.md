@@ -31,12 +31,10 @@ Describes the format of the data in a byte array that contains information about
 ## Syntax  
   
 ```  
-  
 typedef enum CorDebugRecordFormat {  
     FORMAT_WINDOWS_EXCEPTIONRECORD32 = 1,  
     FORMAT_WINDOWS_EXCEPTIONRECORD64 = 2,  
 } CorDebugRecordFormat;  
-  
 ```  
   
 ## Members  

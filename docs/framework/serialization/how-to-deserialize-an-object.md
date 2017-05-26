@@ -41,7 +41,6 @@ When you deserialize an object, the transport format determines whether you will
     ' Call the Deserialize method and cast to the object type.  
     myObject = CType( _  
     mySerializer.Deserialize(myFileStream), MySerializableClass)  
-  
     ```  
   
     ```csharp  

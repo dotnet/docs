@@ -33,7 +33,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <add issuerAddress="string"  
      behaviorConfiguraton="string" />  
 ```  

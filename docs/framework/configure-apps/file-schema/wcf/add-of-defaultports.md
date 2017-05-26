@@ -29,7 +29,6 @@ A default communications endpoint that the client application listens to.
 ## Syntax  
   
 ```  
-  
 <useRequestHeadersForMetadataAddress>   <defaultPorts>      <add port="Integer" scheme="String" />   </defaultPorts></useRequestHeadersForMetadataAddress>  
 ```  
   

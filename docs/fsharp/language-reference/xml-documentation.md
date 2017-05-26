@@ -1,5 +1,5 @@
 ---
-title: XML Documentation (F#)
+title: XML Documentation (F#) | Microsoft Docs
 description: XML Documentation (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

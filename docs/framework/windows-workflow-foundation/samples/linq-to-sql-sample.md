@@ -38,14 +38,12 @@ This sample demonstrates how to create an activity to use LINQ to SQL query enti
  The following code example uses the `FindInSqlTable` custom activity to find all rows in a SQL Server table named `Employee` where the `Role` column is equal to `SDE`.  
   
 ```csharp  
-  
 new FindInSqlTable<Employee>   
 {  
     ConnectionString = @"Data Source=.\SQLExpress;Initial Catalog=LinqToSqlSample;Integrated Security=True",                          
     Predicate = new LambdaValue<Func<Employee, bool>>(c => new Func<Employee, bool>(emp => emp.Role.Equals("SDE"))),  
     Result = new OutArgument<IList<Employee>>(employees)  
 },  
-  
 ```  
   
 #### To use this sample  

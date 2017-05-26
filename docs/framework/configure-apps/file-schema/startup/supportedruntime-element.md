@@ -38,7 +38,6 @@ Specifies which versions of the common language runtime the application supports
 ## Syntax  
   
 ```  
-  
 <supportedRuntime version="runtime version" sku="sku id"/>  
 ```  
   
@@ -123,13 +122,11 @@ Specifies which versions of the common language runtime the application supports
  The following example shows how to specify the supported runtime version in a configuration file. The configuration file indicates that the app targets the .NET Framework 4.6.  
   
 ```xml  
-  
 <configuration>  
    <startup>  
       <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6" />  
    </startup>  
 </configuration>  
-  
 ```  
   
 ## Configuration File  

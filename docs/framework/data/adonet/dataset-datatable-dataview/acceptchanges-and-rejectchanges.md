@@ -38,7 +38,6 @@ If workTable.HasErrors Then
 End If  
   
 workTable.AcceptChanges()  
-  
 ```  
   
 ```csharp  

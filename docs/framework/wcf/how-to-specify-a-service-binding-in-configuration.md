@@ -74,7 +74,6 @@ In this example, an `ICalculator` contract is defined for a basic calculator ser
        </bindings>  
       </system.serviceModel>  
     </configuration>  
-  
     ```  
   
 4.  Create a Service.svc file that contains the following line and place it in your Internet Information Services (IIS) virtual directory.  

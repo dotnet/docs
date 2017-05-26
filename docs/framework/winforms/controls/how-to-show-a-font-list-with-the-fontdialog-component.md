@@ -46,7 +46,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
           TextBox1.Font = FontDialog1.Font  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -57,7 +56,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
           textBox1.Font = fontDialog1.Font;  
        }  
     }  
-  
     ```  
   
     ```cpp  
@@ -76,7 +74,6 @@ The [FontDialog](../../../../docs/framework/winforms/controls/fontdialog-compone
   
     ```csharp  
     this.button1.Click += new System.EventHandler(this.button1_Click);  
-  
     ```  
   
     ```cpp  

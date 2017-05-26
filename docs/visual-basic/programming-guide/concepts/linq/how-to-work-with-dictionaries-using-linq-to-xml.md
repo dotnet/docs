@@ -40,7 +40,6 @@ Console.WriteLine(root)
  This code produces the following output:  
   
 ```xml  
-  
           <Root>  
   <Child1>Value1</Child1>  
   <Child2>Value2</Child2>  

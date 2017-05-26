@@ -1,5 +1,5 @@
 ---
-title: do Bindings in Classes (F#)
+title: do Bindings in Classes (F#) | Microsoft Docs
 description: do Bindings in Classes (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

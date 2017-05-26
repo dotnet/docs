@@ -45,7 +45,6 @@ The <xref:System.Activities.Presentation.Model.ModelItem> editing context is the
 [Designer(typeof(MyClassDesigner))]  
 public sealed class MyClass : CodeActivity  
 {  
-  
 ```  
   
 ## Creating a service  
@@ -68,7 +67,6 @@ public interface IMyService
             } ;  
         }  
     }  
-  
 ```  
   
 ## Publishing a service  
@@ -95,7 +93,6 @@ protected override void OnModelItemChanged(object newItem)
         subscribed = true;   
     }  
 }  
-  
 ```  
   
 ## Sharing data using the Items collection  

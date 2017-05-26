@@ -71,7 +71,6 @@ command.ExecuteReader();
 // Process the DataReader.  
 // You can use Transact-SQL syntax to periodically poll the   
 // SQL Server queue to see if you have a new message.  
-  
 ```  
   
 ## See Also  

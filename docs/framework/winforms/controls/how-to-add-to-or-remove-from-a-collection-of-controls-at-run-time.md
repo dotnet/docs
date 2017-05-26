@@ -52,7 +52,6 @@ Common tasks in application development are adding controls to and removing cont
        ' handler for your application.  
        AddHandler NewPanelButton.Click, AddressOf NewPanelButton_Click  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -89,7 +88,6 @@ Common tasks in application development are adding controls to and removing cont
           NewPanelButton.Dispose()  
        End If  
     End Sub  
-  
     ```  
   
     ```csharp  

@@ -30,7 +30,6 @@ endpointBehaviors section
 ## Syntax  
   
 ```  
-  
 <add findValue="String"  
           storeLocation="CurrentUser/LocalMachine"  
           storeName=" CurrentUser/LocalMachine"  

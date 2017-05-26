@@ -27,7 +27,6 @@ Specify Windows stream security settings of the custom binding.
 ## Syntax  
   
 ```  
-  
 <windowsStreamSecurity protectionLevel="None/Sign/EncryptAndSign"/>  
 ```  
   

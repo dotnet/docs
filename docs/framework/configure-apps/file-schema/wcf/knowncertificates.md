@@ -29,7 +29,6 @@ Represents a collection of X.509 certificates that are provided to authenticate 
 ## Syntax  
   
 ```  
-  
 <knownCertificates>   
       <add findValue="String"  
          storeLocation="CurrentUser/LocalMachine"  

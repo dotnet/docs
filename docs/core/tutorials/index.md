@@ -1,5 +1,5 @@
 ---
-title: .NET Core Tutorials
+title: .NET Core Tutorials | Microsoft Docs
 description: .NET Core Tutorials
 keywords: .NET, .NET Core
 author: richlander

@@ -132,7 +132,6 @@ Activity wf = new Sequence()
         new PurchaseFlight()  
     }  
 };  
-  
 ```  
   
  This example is the workflow in XAML  

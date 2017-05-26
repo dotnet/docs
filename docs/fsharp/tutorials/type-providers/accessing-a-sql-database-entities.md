@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Accessing a SQL Database by Using Type Providers and Entities (F#)"
+title: "Walkthrough: Accessing a SQL Database by Using Type Providers and Entities (F#) | Microsoft Docs"
 description: "Walkthrough: Accessing a SQL Database by Using Type Providers and Entities (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

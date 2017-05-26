@@ -27,7 +27,6 @@ manager: "erikre"
 ## Syntax  
   
 ```  
-  
 <issuerMetaData address=String"/>  
 ```  
   

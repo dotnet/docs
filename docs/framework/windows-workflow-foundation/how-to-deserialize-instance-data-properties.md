@@ -33,7 +33,6 @@ There may be situations when a user or workflow administrator may want to manual
  This example does not demonstrate how to deserialize complex data properties because this is currently not a supported operation.  
   
 ```  
-  
 using System;  
 using System.Collections.Generic;  
 using System.Linq;  
@@ -251,5 +250,4 @@ namespace PropertyReader
         }  
     }  
 }  
-  
 ```

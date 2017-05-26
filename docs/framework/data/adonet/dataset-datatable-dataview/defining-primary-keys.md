@@ -30,7 +30,6 @@ workTable.PrimaryKey = New DataColumn() {workTable.Columns("CustID")}
 Dim columns(1) As DataColumn  
 columns(0) = workTable.Columns("CustID")  
 workTable.PrimaryKey = columns  
-  
 ```  
   
 ```csharp  
@@ -55,7 +54,6 @@ Dim keyColumn(2) As DataColumn
 keyColumn(0) = workTable.Columns("CustLName")  
 keyColumn(1) = workTable.Columns("CustFName")  
 workTable.PrimaryKey = keyColumn  
-  
 ```  
   
 ```csharp  

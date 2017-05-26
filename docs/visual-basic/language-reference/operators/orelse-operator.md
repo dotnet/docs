@@ -46,7 +46,6 @@ Performs short-circuiting inclusive logical disjunction on two expressions.
 ## Syntax  
   
 ```  
-  
 result = expression1 OrElse expression2  
 ```  
   

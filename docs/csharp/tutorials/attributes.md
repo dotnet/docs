@@ -1,5 +1,5 @@
 ---
-title: Attributes | C#
+title: Attributes - C# | Microsoft Docs
 description: Learn how attributes work in C#.
 keywords: .NET, .NET Core, C#, attributes
 author: mgroves

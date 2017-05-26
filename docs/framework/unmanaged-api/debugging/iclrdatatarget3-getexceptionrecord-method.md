@@ -31,13 +31,11 @@ Called by the common language runtime (CLR) data access services to retrieve the
 ## Syntax  
   
 ```cpp  
-  
 HRESULT GetExceptionRecord(  
     [in] ULONG32 bufferSize,  
     [out] ULONG32* bufferUsed,  
     [out, size_is(bufferSize] BYTE* buffer  
 );  
-  
 ```  
   
 #### Parameters  

@@ -33,11 +33,9 @@ manager: "wpickett"
 ## Syntax  
   
 ```vb  
-  
 HRESULT AddAssemblyReference(  
         const COR_PRF_ASSEMBLY_REFERENCE_INFO* pAssemblyRefInfo  
 );  
-  
 ```  
   
 #### Parameters  

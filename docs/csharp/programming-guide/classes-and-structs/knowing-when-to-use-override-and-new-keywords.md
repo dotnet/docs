@@ -56,7 +56,6 @@ class DerivedClass : BaseClass
         Console.WriteLine("Derived - Method2");  
     }  
 }  
-  
 ```  
   
  In the `Main` method, declare variables `bc`, `dc`, and `bcdc`.  
@@ -89,7 +88,6 @@ class Program
     // Derived - Method2  
     // Base - Method1  
 }  
-  
 ```  
   
  Next, add the following `Method2` method to `BaseClass`. The signature of this method matches the signature of the `Method2` method in `DerivedClass`.  
@@ -99,7 +97,6 @@ public void Method2()
 {  
     Console.WriteLine("Base - Method2");  
 }  
-  
 ```  
   
  Because `BaseClass` now has a `Method2` method, a second calling statement can be added for `BaseClass` variables `bc` and `bcdc`, as shown in the following code.  
@@ -111,7 +108,6 @@ dc.Method1();
 dc.Method2();  
 bcdc.Method1();  
 bcdc.Method2();  
-  
 ```  
   
  When you build the project, you see that the addition of the `Method2` method in `BaseClass` causes a warning. The warning says that the `Method2` method in `DerivedClass` hides the `Method2` method in `BaseClass`. You are advised to use the `new` keyword in the `Method2` definition if you intend to cause that result. Alternatively, you could rename one of the `Method2` methods to resolve the warning, but that is not always practical.  
@@ -126,7 +122,6 @@ bcdc.Method2();
 // Derived - Method2  
 // Base - Method1  
 // Base - Method2  
-  
 ```  
   
  The `new` keyword preserves the relationships that produce that output, but it suppresses the warning. The variables that have type `BaseClass` continue to access the members of `BaseClass`, and the variable that has type `DerivedClass` continues to access members in `DerivedClass` first, and then to consider members inherited from `BaseClass`.  
@@ -138,7 +133,6 @@ public new void Method2()
 {  
     Console.WriteLine("Derived - Method2");  
 }  
-  
 ```  
   
  Run the program again to verify that the output has not changed. Also verify that the warning no longer appears. By using `new`, you are asserting that you are aware that the member that it modifies hides a member that is inherited from the base class. For more information about name hiding through inheritance, see [new Modifier](../../../csharp/language-reference/keywords/new-modifier.md).  
@@ -150,7 +144,6 @@ public override void Method1()
 {  
     Console.WriteLine("Derived - Method1");  
 }  
-  
 ```  
   
  Add the `virtual` modifier to the definition of `Method1` in `BaseClass`. The `virtual` modifier can be added before or after `public`.  
@@ -160,7 +153,6 @@ public virtual void Method1()
 {  
     Console.WriteLine("Base - Method1");  
 }  
-  
 ```  
   
  Run the project again. Notice especially the last two lines of the following output.  
@@ -173,7 +165,6 @@ public virtual void Method1()
 // Derived - Method2  
 // Derived - Method1  
 // Base - Method2  
-  
 ```  
   
  The use of the `override` modifier enables `bcdc` to access the `Method1` method that is defined in `DerivedClass`. Typically, that is the desired behavior in inheritance hierarchies. You want objects that have values that are created from the derived class to use the methods that are defined in the derived class. You achieve that behavior by using `override` to extend the base class method.  
@@ -246,7 +237,6 @@ namespace OverrideAndNew
         }  
     }  
 }  
-  
 ```  
   
  The following example illustrates similar behavior in a different context. The example defines three classes: a base class named `Car` and two classes that are derived from it, `ConvertibleCar` and `Minivan`. The base class contains a `DescribeCar` method. The method displays a basic description of a car, and then calls `ShowDetails` to provide additional information. Each of the three classes defines a `ShowDetails` method. The `new` modifier is used to define `ShowDetails` in the `ConvertibleCar` class. The `override` modifier is used to define `ShowDetails` in the `Minivan` class.  
@@ -291,7 +281,6 @@ class Minivan : Car
         System.Console.WriteLine("Carries seven people.");  
     }  
 }  
-  
 ```  
   
  The example tests which version of `ShowDetails` is called. The following method, `TestCars1`, declares an instance of each class, and then calls `DescribeCar` on each instance.  
@@ -318,13 +307,11 @@ public static void TestCars1()
     car3.DescribeCar();  
     System.Console.WriteLine("----------");  
 }  
-  
 ```  
   
  `TestCars1` produces the following output. Notice especially the results for `car2`, which probably are not what you expected. The type of the object is `ConvertibleCar`, but `DescribeCar` does not access the version of `ShowDetails` that is defined in the `ConvertibleCar` class because that method is declared with the `new` modifier, not the `override` modifier. As a result, a `ConvertibleCar` object displays the same description as a `Car` object. Contrast the results for `car3`, which is a `Minivan` object. In this case, the `ShowDetails` method that is declared in the `Minivan` class overrides the `ShowDetails` method that is declared in the `Car` class, and the description that is displayed describes a minivan.  
   
 ```csharp  
-  
 // TestCars1  
 // ----------  
 // Four wheels and an engine.  
@@ -336,7 +323,6 @@ public static void TestCars1()
 // Four wheels and an engine.  
 // Carries seven people.  
 // ----------  
-  
 ```  
   
  `TestCars2` creates a list of objects that have type `Car`. The values of the objects are instantiated from the `Car`, `ConvertibleCar`, and `Minivan` classes. `DescribeCar` is called on each element of the list. The following code shows the definition of `TestCars2`.  
@@ -356,7 +342,6 @@ public static void TestCars2()
         System.Console.WriteLine("----------");  
     }  
 }  
-  
 ```  
   
  The following output is displayed. Notice that it is the same as the output that is displayed by `TestCars1`. The `ShowDetails` method of the `ConvertibleCar` class is not called, regardless of whether the type of the object is `ConvertibleCar`, as in `TestCars1`, or `Car`, as in `TestCars2`. Conversely, `car3` calls the `ShowDetails` method from the `Minivan` class in both cases, whether it has type `Minivan` or type `Car`.  
@@ -373,13 +358,11 @@ public static void TestCars2()
 // Four wheels and an engine.  
 // Carries seven people.  
 // ----------  
-  
 ```  
   
  Methods `TestCars3` and `TestCars4` complete the example. These methods call `ShowDetails` directly, first from objects declared to have type `ConvertibleCar` and `Minivan` (`TestCars3`), then from objects declared to have type `Car` (`TestCars4`). The following code defines these two methods.  
   
 ```csharp  
-  
 public static void TestCars3()  
 {  
     System.Console.WriteLine("\nTestCars3");  
@@ -399,7 +382,6 @@ public static void TestCars4()
     car2.ShowDetails();  
     car3.ShowDetails();  
 }  
-  
 ```  
   
  The methods produce the following output, which corresponds to the results from the first example in this topic.  
@@ -414,7 +396,6 @@ public static void TestCars4()
 // ----------  
 // Standard transportation.  
 // Carries seven people.  
-  
 ```  
   
  The following code shows the complete project and its output.  
@@ -580,7 +561,6 @@ namespace OverrideAndNew2
     }  
   
 }  
-  
 ```  
   
 ## See Also  

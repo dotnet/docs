@@ -21,7 +21,6 @@ manager: "erikre"
 1.  In this example scenario, a document processing (DP) application has workflows, each of which uses custom activities for document processing. These workflows have a set of state variables that need to be made visible to the end user. To achieve this, the DP application provides an instance extension of type <xref:System.Activities.Persistence.PersistenceParticipant>, which is used by activities to supply the state variables.  
   
     ```  
-  
     class DocumentStatusExtension : PersistenceParticipant  
     {  
         public string DocumentId;  
@@ -29,7 +28,6 @@ manager: "erikre"
         public string UserName;  
         public DateTime LastUpdateTime;  
     }  
-  
     ```  
   
 2.  The new extension is then added to the host.  
@@ -46,7 +44,6 @@ manager: "erikre"
 3.  The custom activities in the DP application populate various status fields in the **Execute** method.  
   
     ```  
-  
     public override void Execute(CodeActivityContext context)  
     {  
         // ...  
@@ -56,13 +53,11 @@ manager: "erikre"
         context.GetExtension<DocumentStatusExtension>().LastUpdateTime = DateTime.Now();  
         // ...  
     }  
-  
     ```  
   
 4.  When a workflow instance reaches a persistence point, the **CollectValues** method of the **DocumentStatusExtension** persistence participant saves these properties into the persistence data collection.  
   
     ```  
-  
     class DocumentStatusExtension : PersistenceParticipant  
     {  
         const XNamespace xNS = XNamespace.Get("http://contoso.com/DocumentStatus");  
@@ -79,7 +74,6 @@ manager: "erikre"
         }  
         // ...  
     }  
-  
     ```  
   
     > [!NOTE]
@@ -106,7 +100,6 @@ manager: "erikre"
 6.  To query a subset of the data from the promotion table, the DP application adds a customized view on top of the promotion view.  
   
     ```  
-  
     create view [dbo].[DocumentStatus] with schemabinding  
     as  
         select  P.[InstanceId] as [InstanceId],  
@@ -117,7 +110,6 @@ manager: "erikre"
     from [System.Activities.DurableInstancing].[InstancePromotedProperties] as P  
     where P.PromotionName = N'DocumentStatus'  
     go  
-  
     ```  
   
 ##  <a name="InstancePromotedProperties"></a> [System.Activities.DurableInstancing.InstancePromotedProperties] view  

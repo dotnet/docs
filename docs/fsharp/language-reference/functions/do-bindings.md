@@ -1,5 +1,5 @@
 ---
-title: do Bindings (F#)
+title: do Bindings (F#) | Microsoft Docs
 description: do Bindings (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

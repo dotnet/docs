@@ -1,5 +1,5 @@
 ---
-title: F# Types
+title: F# Types | Microsoft Docs
 description: F# Types
 keywords: visual f#, f#, functional programming
 author: cartermp

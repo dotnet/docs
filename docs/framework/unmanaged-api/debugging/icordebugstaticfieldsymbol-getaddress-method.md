@@ -23,11 +23,9 @@ Gets the address of a static field.
 ## Syntax  
   
 ```  
-  
 HRESULT GetAddress(  
    [out] CORDB_ADDRESS *pRVA  
 );  
-  
 ```  
   
 #### Parameters  

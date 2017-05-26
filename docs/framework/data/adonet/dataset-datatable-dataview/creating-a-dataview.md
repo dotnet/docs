@@ -29,7 +29,6 @@ Dim custDV As DataView = New DataView(custDS.Tables("Customers"), _
     "Country = 'USA'", _  
     "ContactName", _  
     DataViewRowState.CurrentRows)  
-  
 ```  
   
 ```csharp  
@@ -43,7 +42,6 @@ DataView custDV = new DataView(custDS.Tables["Customers"],
   
 ```vb  
 Dim custDV As DataView = custDS.Tables("Customers").DefaultView  
-  
 ```  
   
 ```csharp  

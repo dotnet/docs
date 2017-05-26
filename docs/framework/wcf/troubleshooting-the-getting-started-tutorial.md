@@ -67,7 +67,6 @@ This topic lists the most common problems encountered when working through the G
 ```  
 // Step 3 of the hosting procedure: Add a service endpoint  
 selfhost.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(SecurityMode.None), "CalculatorService");  
-  
 ```  
   
  For the client, change the **\<security>** element under the **\<binding>** element to be the following:  

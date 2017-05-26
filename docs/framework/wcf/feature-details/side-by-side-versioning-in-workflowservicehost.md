@@ -64,7 +64,6 @@ WorkflowService service = new WorkflowService
         Version = new Version(1, 0, 0, 0)  
     }  
 };  
-  
 ```  
   
 ```vb  
@@ -129,7 +128,6 @@ WorkflowService serviceV1 = new WorkflowService
   
 // Add the previous version of the service to the SupportedVersions collection.  
 host.SupportedVersions.Add(serviceV1);  
-  
 ```  
   
 ```vb  

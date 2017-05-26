@@ -69,7 +69,6 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
     /**   
      * <summary>text</summary>   
     */  
-  
     ```  
   
 -   The compiler identifies a common pattern of " * " at the beginning of the second and third lines. The pattern is not included in the output.  

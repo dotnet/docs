@@ -30,7 +30,6 @@ Specifies the character encoding and message versioning used for text-based XML 
 ## Syntax  
   
 ```  
-  
 <textMessageEncoding maxReadPoolSize="Integer"  
    maxWritePoolSize="Integer"  
    messageVersion="Soap11Addressing10/Soap12Addressing10"  

@@ -52,7 +52,6 @@ Divides two numbers and returns an integer result.
 ## Syntax  
   
 ```  
-  
 expression1 \ expression2  
 ```  
   

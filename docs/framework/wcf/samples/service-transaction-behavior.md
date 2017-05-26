@@ -43,7 +43,6 @@ public interface ICalculator
     [TransactionFlow(TransactionFlowOption.Mandatory)]  
     double Divide(double n);  
 }  
-  
 ```  
   
  To enable the incoming transaction flow, the service is configured with the system-provided wsHttpBinding with the transactionFlow attribute set to `true`. This binding uses the interoperable WSAtomicTransactionOctober2004 protocol:  
@@ -54,7 +53,6 @@ public interface ICalculator
     <binding name="transactionalBinding" transactionFlow="true" />  
   </wsHttpBinding>  
 </bindings>  
-  
 ```  
   
  After initiating both a connection to the service and a transaction, the client accesses several service operations within the scope of that transaction and then completes the transaction and closes the connection:  

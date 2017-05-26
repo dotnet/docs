@@ -47,7 +47,6 @@ Private Shared Sub OnInfoMessage(sender As Object, _
     err.Procedure, err.Server, err.Message)  
   Next  
 End Sub  
-  
 ```  
   
 ```csharp  
@@ -67,7 +66,6 @@ protected static void OnInfoMessage(
    err.Procedure, err.Server, err.Message);  
   }  
 }  
-  
 ```  
   
 ## Handling Errors as InfoMessages  
@@ -95,7 +93,6 @@ Protected Shared Sub OnStateChange( _
   "The current Connection state has changed from {0} to {1}.", _  
   args.OriginalState, args.CurrentState)  
 End Sub  
-  
 ```  
   
 ```csharp  

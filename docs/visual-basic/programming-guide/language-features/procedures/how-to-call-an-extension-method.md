@@ -50,7 +50,6 @@ Module StringExtensions
     End Sub  
   
 End Module  
-  
 ```  
   
  The method must be in scope when it is called.  

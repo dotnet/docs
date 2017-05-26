@@ -32,7 +32,6 @@ protected override Guid Execute(CodeActivityContext context)
             return context.WorkflowInstanceId;  
         }  
 }  
-  
 ```  
   
 > [!IMPORTANT]

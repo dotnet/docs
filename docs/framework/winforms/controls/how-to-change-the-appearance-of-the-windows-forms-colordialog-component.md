@@ -37,7 +37,6 @@ You can configure the appearance of the Windows Forms <xref:System.Windows.Forms
     ColorDialog1.AnyColor = True  
     ColorDialog1.SolidColorOnly = False  
     ColorDialog1.ShowHelp = True  
-  
     ```  
   
     ```csharp  
@@ -45,7 +44,6 @@ You can configure the appearance of the Windows Forms <xref:System.Windows.Forms
     colorDialog1.AnyColor = true;  
     colorDialog1.SolidColorOnly = false;  
     colorDialog1.ShowHelp = true;  
-  
     ```  
   
     ```cpp  

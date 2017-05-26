@@ -37,7 +37,6 @@ public interface IOrderProcessor
     void SubmitPurchaseOrder(PurchaseOrder po, string   
                                   reportOrderStatusTo);  
 }  
-  
 ```  
   
  The reply contract to send order status is specified by the client. The client implements the order status contract. The service uses the generated proxy of this contract to send order status back to the client.  
@@ -148,7 +147,6 @@ using (ServiceHost serviceHost = new ServiceHost(typeof(OrderStatusService)))
     // Close the ServiceHost to shutdown the service.  
     serviceHost.Close();  
 }  
-  
 ```  
   
  The client code implements the `IOrderStatus` contract to receive order status from the service. In this case, it prints out the order status.  
@@ -165,7 +163,6 @@ public class OrderStatusService : IOrderStatus
                                                            status);  
     }  
 }  
-  
 ```  
   
  The order status queue is created in the `Main` method. The client configuration includes the order status service configuration to host the order status service, as shown in the following sample configuration.  
@@ -197,7 +194,6 @@ public class OrderStatusService : IOrderStatus
   </client>  
   
 </system.serviceModel>  
-  
 ```  
   
  When you run the sample, the client and service activities are displayed in both the service and client console windows. You can see the service receive messages from the client. Press ENTER in each console window to shut down the service and client.  
@@ -224,7 +220,6 @@ Sending back order status information
 ```  
 Press <ENTER> to terminate client.  
 Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending  
-  
 ```  
   
 ### To set up, build, and run the sample  
@@ -275,7 +270,6 @@ Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending
       </system.serviceModel>  
   
     </configuration>  
-  
     ```  
   
 2.  Turning off security for a client configuration generates the following:  

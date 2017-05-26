@@ -36,7 +36,6 @@ You display a dialog box in the same way you display any other form in an applic
        Dim dlg1 as new Form()  
        dlg1.ShowDialog()  
     End Sub  
-  
     ```  
   
     ```csharp  
@@ -45,7 +44,6 @@ You display a dialog box in the same way you display any other form in an applic
        Form dlg1 = new Form();  
        dlg1.ShowDialog();  
     }  
-  
     ```  
   
     ```cpp  

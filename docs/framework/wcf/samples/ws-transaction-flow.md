@@ -44,7 +44,6 @@ public interface ICalculator
     [OperationContract]  
     double Divide(double n1, double n2);   
 }  
-  
 ```  
   
  This defines the operations in the order they are to be processed:  
@@ -124,7 +123,6 @@ public class CalculatorService : ICalculator
 // Create a client using either wsat or oletx endpoint configurations  
 CalculatorClient client = new CalculatorClient("WSAtomicTransaction_endpoint");  
 // CalculatorClient client = new CalculatorClient("OleTransactions_endpoint");  
-  
 ```  
   
 > [!NOTE]
@@ -189,7 +187,6 @@ using (TransactionScope tx =
 }  
   
 Console.WriteLine("Transaction committed");  
-  
 ```  
   
  The calls to the operations are as follows:  

@@ -1,5 +1,5 @@
 ---
-title: Getting Started with F#
+title: Getting Started with F# | Microsoft Docs
 description: Getting Started with F#
 keywords: visual f#, f#, functional programming, .NET, .NET Core
 author: cartermp

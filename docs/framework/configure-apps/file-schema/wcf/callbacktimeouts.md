@@ -27,7 +27,6 @@ Specifies the timeout value when flowing transactions from server to client.in a
 ## Syntax  
   
 ```  
-  
 <callbackTimeOuts transactionTimeout="TimeSpan" />  
 ```  
   

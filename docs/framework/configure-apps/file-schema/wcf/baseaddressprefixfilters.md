@@ -27,7 +27,6 @@ Represents a collection of configuration elements that specify pass through filt
 ## Syntax  
   
 ```  
-  
 <serviceHostingEnvironment>  
      <baseAddressPrefixFilters>  
         <add prefix="string"/>  

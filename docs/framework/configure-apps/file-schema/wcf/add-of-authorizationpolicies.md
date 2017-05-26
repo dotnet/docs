@@ -28,7 +28,6 @@ Specifies an authorization policy for claim transformation.
 ## Syntax  
   
 ```  
-  
 <authorizationPolicies>  
    <add policyType="String" />  
 </authorizationPolicies>  

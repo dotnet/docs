@@ -68,7 +68,6 @@ manager: "erikre"
     //Execute the activity with a parameter dictionary  
                 WorkflowInvoker.Invoke(dynamicWorkflow, new Dictionary<string, object> { { "Text", "Hello World!" } });  
                 Console.ReadLine();  
-  
     ```  
   
 6.  Execute the application. A console window with the text "Hello World!" displays.  

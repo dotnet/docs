@@ -1,5 +1,5 @@
 ---
-title: Compiler Options (F#)
+title: Compiler Options (F#) | Microsoft Docs
 description: Compiler Options (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

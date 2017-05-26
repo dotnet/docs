@@ -39,7 +39,6 @@ public double Add(double n1, double n2)
     DisplayIdentityInformation();  
     return result;  
 }  
-  
 ```  
   
  As a result, the security context of the executing thread is switched to impersonate the caller before entering the `Add` method and reverted on exiting the method.  
@@ -57,7 +56,6 @@ static void DisplayIdentityInformation()
          WindowsIdentity.GetCurrent().Token.ToString());  
     return;  
 }  
-  
 ```  
   
  The `Subtract` method on the service impersonates the caller using imperative calls as shown in the following sample code.  

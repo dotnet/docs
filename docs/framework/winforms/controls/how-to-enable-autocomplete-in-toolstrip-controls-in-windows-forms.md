@@ -44,7 +44,6 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
     toolStrip1 = new System.Windows.Forms.ToolStrip();  
     toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[]   
         {toolStripLabel1, toolStripComboBox1});  
-  
     ```  
   
 2.  Set the <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property of the label and the combo box to <xref:System.Windows.Forms.ToolStripItemOverflow> so that the list is always available regardless of the form's size.  
@@ -60,7 +59,6 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
     toolStripLabel1.Overflow = _  
         System.Windows.Forms.ToolStripItemOverflow.Never  
     toolStripComboBox1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never  
-  
     ```  
   
 3.  Add words to the Items collection of the <xref:System.Windows.Forms.ToolStripComboBox> control.  
@@ -68,12 +66,10 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
     ```vb  
     ToolStripComboBox1.Items.AddRange(New Object() {"First Item", _  
         "Second Item", "Third Item"})  
-  
     ```  
   
     ```csharp  
     toolStripComboBox1.Items.AddRange(new object[] {"First item", "Second item", "Third item"});  
-  
     ```  
   
 4.  Set the <xref:System.Windows.Forms.ComboBox.AutoCompleteMode%2A> property of the combo box to <xref:System.Windows.Forms.AutoCompleteMode>.  
@@ -85,7 +81,6 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
   
     ```csharp  
     toolStripComboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append;  
-  
     ```  
   
 5.  Set the <xref:System.Windows.Forms.ComboBox.AutoCompleteSource%2A> property of the combo box to <xref:System.Windows.Forms.AutoCompleteSource>.  
@@ -97,7 +92,6 @@ The following procedure combines a <xref:System.Windows.Forms.ToolStripLabel> wi
   
     ```csharp  
     toolStripComboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;  
-  
     ```  
   
 ## See Also  

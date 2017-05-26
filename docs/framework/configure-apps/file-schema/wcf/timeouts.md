@@ -27,7 +27,6 @@ Represents a configuration element that specifies the interval of time allowed f
 ## Syntax  
   
 ```  
-  
 <timeOuts closeTimeout="TimeSpan"  
    openTimeout="TimeSpan" >  
 ```  

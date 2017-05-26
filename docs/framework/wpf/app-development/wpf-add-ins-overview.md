@@ -211,7 +211,7 @@ manager: "wpickett"
 -   <xref:System.AddIn.Hosting.AddInStore.Update%28System.AddIn.Hosting.PipelineStoreLocation%29?displayProperty=fullName>  
   
 ### Accessing the Host's Site of Origin  
- To ensure that an add-in can reference files from the site of origin, the add-in must be loaded with security isolation that is equivalent to the host application. This security level is identified by the <xref:System.AddIn.Hosting.AddInSecurityLevel?displayProperty=fullName> enumeration value, and passed to the <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method when an add-in is activated.  
+ To ensure that an add-in can reference files from the site of origin, the add-in must be loaded with security isolation that is equivalent to the host application. This security level is identified by the <xref:System.AddIn.Hosting.AddInSecurityLevel.Host?displayProperty=fullName> enumeration value, and passed to the <xref:System.AddIn.Hosting.AddInToken.Activate%2A> method when an add-in is activated.  
   
 <a name="WPFAddInModelArchitecture"></a>   
 ## WPF Add-In Architecture  

@@ -215,7 +215,7 @@ Discarding native image.
      See the Important note regarding assemblies that are loaded as domain neutral.  
   
 > [!IMPORTANT]
->  When an assembly is loaded as domain neutral, for example by setting the <xref:System.AppDomainSetup.LoaderOptimization%2A> property to <xref:System.LoaderOptimization?displayProperty=fullName> or <xref:System.LoaderOptimization?displayProperty=fullName>, turning on logging might leak memory in some cases. This can happen if a log entry is made when a domain-neutral module is loaded into an application domain, and later the application domain is unloaded. The log entry might not be released until the process ends. Some debuggers automatically turn on logging.  
+>  When an assembly is loaded as domain neutral, for example by setting the <xref:System.AppDomainSetup.LoaderOptimization%2A> property to <xref:System.LoaderOptimization.MultiDomain?displayProperty=fullName> or <xref:System.LoaderOptimization.MultiDomainHost?displayProperty=fullName>, turning on logging might leak memory in some cases. This can happen if a log entry is made when a domain-neutral module is loaded into an application domain, and later the application domain is unloaded. The log entry might not be released until the process ends. Some debuggers automatically turn on logging.  
   
 #### To enable a custom log path  
   

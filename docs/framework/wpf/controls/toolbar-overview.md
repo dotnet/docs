@@ -39,7 +39,7 @@ manager: "wpickett"
  ![ToolBar with overflow](../../../../docs/framework/wpf/controls/media/toolbarwithoverflowitem.png "ToolbarWithOverflowItem")  
 Toolbar with Overflow Items  
   
- You can specify when an item on a toolbar is placed on the overflow panel by setting the <xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=fullName> attached property to <xref:System.Windows.Controls.OverflowMode?displayProperty=fullName>, <xref:System.Windows.Controls.OverflowMode?displayProperty=fullName>, or <xref:System.Windows.Controls.OverflowMode?displayProperty=fullName>. The following example specifies that the last four buttons on the toolbar should always be on the overflow panel.  
+ You can specify when an item on a toolbar is placed on the overflow panel by setting the <xref:System.Windows.Controls.ToolBar.OverflowMode%2A?displayProperty=fullName> attached property to <xref:System.Windows.Controls.OverflowMode.Always?displayProperty=fullName>, <xref:System.Windows.Controls.OverflowMode.Never?displayProperty=fullName>, or <xref:System.Windows.Controls.OverflowMode.AsNeeded?displayProperty=fullName>. The following example specifies that the last four buttons on the toolbar should always be on the overflow panel.  
   
  [!code-xml[ToolBarExample#3](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ToolBarExample/CS/Pane1.xaml#3)]  
   

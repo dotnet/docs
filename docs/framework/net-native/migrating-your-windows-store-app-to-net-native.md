@@ -221,11 +221,11 @@ manager: "wpickett"
 |<xref:System.Runtime.InteropServices.ErrorWrapper?displayProperty=fullName>|  
 |<xref:System.Runtime.InteropServices.UnknownWrapper?displayProperty=fullName>|  
 |<xref:System.Runtime.InteropServices.VariantWrapper?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|  
+|<xref:System.Runtime.InteropServices.UnmanagedType.IDispatch?displayProperty=fullName>|  
+|<xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=fullName>|  
 |<xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName>|  
   
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> is supported, but it throws an exception in some scenarios, such as when it is used with [IDispatch](http://msdn.microsoft.com/library/windows/apps/ms221608.aspx) or byref variants.  
+ <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=fullName> is supported, but it throws an exception in some scenarios, such as when it is used with [IDispatch](http://msdn.microsoft.com/library/windows/apps/ms221608.aspx) or byref variants.  
   
  Deprecated APIs for [IDispatch](http://msdn.microsoft.com/library/windows/apps/ms221608.aspx) support:  
   
@@ -282,7 +282,7 @@ manager: "wpickett"
   
  Most platform invoke and COM interop scenarios are still supported in [!INCLUDE[net_native](../../../includes/net-native-md.md)]. In particular, all interoperability with Windows Runtime (WinRT) APIs and all marshaling required for the Windows Runtime is supported. This includes marshaling support for:  
   
--   Arrays (including <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>)  
+-   Arrays (including <xref:System.Runtime.InteropServices.UnmanagedType.ByValArray?displayProperty=fullName>)  
   
 -   `BStr`  
   

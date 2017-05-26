@@ -125,7 +125,7 @@ AppDomain.CreateDomain( string friendlyName,
   
     -   You can use a code base that points to a location that does not contain your assembly.  
   
-    -   You can do the creation under an <xref:System.Security.CodeAccessPermission.Assert%2A> for full-trust (<xref:System.Security.Permissions.PermissionState?displayProperty=fullName>), which enables you to create an instance of a critical class. (This happens whenever your assembly has no transparency markings and is loaded as fully trusted.) Therefore, you have to be careful to create only code that you trust with this function, and we recommend that you create only instances of fully trusted classes in the new application domain.  
+    -   You can do the creation under an <xref:System.Security.CodeAccessPermission.Assert%2A> for full-trust (<xref:System.Security.Permissions.PermissionState.Unrestricted?displayProperty=fullName>), which enables you to create an instance of a critical class. (This happens whenever your assembly has no transparency markings and is loaded as fully trusted.) Therefore, you have to be careful to create only code that you trust with this function, and we recommend that you create only instances of fully trusted classes in the new application domain.  
   
     ```  
     ObjectHandle handle = Activator.CreateInstanceFrom(  

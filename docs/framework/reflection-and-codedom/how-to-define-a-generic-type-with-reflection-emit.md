@@ -27,7 +27,7 @@ This topic shows how to create a simple generic type with two type parameters, h
   
 ### To define a generic type  
   
-1.  Define a dynamic assembly named `GenericEmitExample1`. In this example, the assembly is executed and saved to disk, so <xref:System.Reflection.Emit.AssemblyBuilderAccess?displayProperty=fullName> is specified.  
+1.  Define a dynamic assembly named `GenericEmitExample1`. In this example, the assembly is executed and saved to disk, so <xref:System.Reflection.Emit.AssemblyBuilderAccess.RunAndSave?displayProperty=fullName> is specified.  
   
      [!code-cpp[EmitGenericType#2](../../../samples/snippets/cpp/VS_Snippets_CLR/EmitGenericType/CPP/source.cpp#2)]
      [!code-csharp[EmitGenericType#2](../../../samples/snippets/csharp/VS_Snippets_CLR/EmitGenericType/CS/source.cs#2)]

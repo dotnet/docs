@@ -524,7 +524,7 @@ feature:
 
 > [!NOTE]
 > You need to add the NuGet package [`System.Threading.Tasks.Extensions`](https://www.nuget.org/packages/System.Threading.Tasks.Extensions/)
-> in order to use <xref:System.Threading.Tasks.Task.ValueTask%601>.
+> in order to use the <xref:System.Threading.Tasks.Task.ValueTask%601> type.
 
 A simple optimization would be to use `ValueTask` in places where
 `Task` would be used before. However, if you want to perform extra

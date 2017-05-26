@@ -64,7 +64,7 @@ When you overload a procedure, you must use a different *signature* for each ove
 ## Alternatives to Overloaded Versions  
  You sometimes have alternatives to overloaded versions, particularly when the presence of arguments is optional or their number is variable.  
   
- Keep in mind that optional arguments are not necessarily supported by all languages, and parameter arrays are limited to [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]. If you are writing a procedure that is likely to be called from code written in any of several different languages, overloaded versions offer the greatest flexibility.  
+ Keep in mind that optional arguments are not necessarily supported by all languages, and parameter arrays are limited to [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. If you are writing a procedure that is likely to be called from code written in any of several different languages, overloaded versions offer the greatest flexibility.  
   
 ### Overloads and Optional Arguments  
  When the calling code can optionally supply or omit one or more arguments, you can define multiple overloaded versions or use optional parameters.  

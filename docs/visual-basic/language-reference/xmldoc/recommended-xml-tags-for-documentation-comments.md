@@ -38,7 +38,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Recommended XML Tags for Documentation Comments (Visual Basic)
-The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler can process documentation comments in your code to an XML file. You can use additional tools to process the XML file into documentation.  
+The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler can process documentation comments in your code to an XML file. You can use additional tools to process the XML file into documentation.  
   
  XML comments are allowed on code constructs such as types and type members. For partial types, only one part of the type can have XML comments, although there is no restriction on commenting its members.  
   

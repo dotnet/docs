@@ -23,7 +23,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Sample XML File: Books (LINQ to XML)
-The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] documentation. The file contains information about books.  
+The following XML file is used in various examples in the [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] documentation. The file contains information about books.  
   
 ## books.xml  
   

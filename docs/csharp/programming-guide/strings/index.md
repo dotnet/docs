@@ -133,7 +133,7 @@ string s = String.Empty;
  [!code-cs[csProgGuideStrings#15](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_12.cs)]  
   
 ## Strings, Extension Methods and LINQ  
- Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] query expressions on strings. For more information, see [LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md).  
+ Because the <xref:System.String> type implements <xref:System.Collections.Generic.IEnumerable%601>, you can use the extension methods defined in the <xref:System.Linq.Enumerable> class on strings. To avoid visual clutter, these methods are excluded from IntelliSense for the <xref:System.String> type, but they are available nevertheless. You can also use [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions on strings. For more information, see [LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md).  
   
 ## Related Topics  
   

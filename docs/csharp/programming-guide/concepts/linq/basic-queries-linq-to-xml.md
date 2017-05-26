@@ -18,7 +18,7 @@ ms.author: "wiwagn"
 
 ---
 # Basic Queries (LINQ to XML) (C#)
-This section provides examples of basic [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] queries.  
+This section provides examples of basic [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] queries.  
   
 ## In This Section  
   
@@ -34,7 +34,7 @@ This section provides examples of basic [!INCLUDE[sqltecxlinq](../../../../cshar
 |[How to: Find All Nodes in a Namespace (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-find-all-nodes-in-a-namespace.md)|Shows how to find all nodes that are in a specific namespace.|  
 |[How to: Sort Elements (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-sort-elements.md)|Shows how to write a query that sorts its results.|  
 |[How to: Sort Elements on Multiple Keys (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-sort-elements-on-multiple-keys.md)|Shows how to sort on multiple keys.|  
-|[How to: Calculate Intermediate Values (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-calculate-intermediate-values.md)|Shows how to use the `Let` clause to calculate intermediate values in a [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] query.|  
+|[How to: Calculate Intermediate Values (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-calculate-intermediate-values.md)|Shows how to use the `Let` clause to calculate intermediate values in a [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] query.|  
 |[How to: Write a Query that Finds Elements Based on Context (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-write-a-query-that-finds-elements-based-on-context.md)|Shows how to select elements based on other elements in the tree.|  
 |[How to: Debug Empty Query Results Sets (C#)](../../../../csharp/programming-guide/concepts/linq/how-to-debug-empty-query-results-sets.md)|Shows the appropriate fix when debugging queries on XML that is in a default namespace.|  
   

@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Unable to emit assembly: &lt;error message&gt;
-The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest, with the linker reporting an error in the emission stage of creating the assembly.  
+The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest, with the linker reporting an error in the emission stage of creating the assembly.  
   
  **Error ID:** BC30145  
   
@@ -75,7 +75,7 @@ The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/v
   
      Use double quotation marks (") if a path or file contains spaces.  
   
-6.  In [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)], add a .NET Assembly reference to the file you just created.  
+6.  In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], add a .NET Assembly reference to the file you just created.  
   
 ## See Also  
  [Al.exe (Assembly Linker)](https://msdn.microsoft.com/library/c405shex)   

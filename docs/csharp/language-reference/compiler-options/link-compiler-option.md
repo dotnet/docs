@@ -60,7 +60,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
 > [!NOTE]
 >  When you create an instance of an embedded COM type in your code, you must create the instance by using the appropriate interface. Attempting to create an instance of an embedded COM type by using the CoClass causes an error.  
   
- To set the `/link` option in [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)], add an assembly reference and set the `Embed Interop Types` property to **true**. The default for the `Embed Interop Types` property is **false**.  
+ To set the `/link` option in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], add an assembly reference and set the `Embed Interop Types` property to **true**. The default for the `Embed Interop Types` property is **false**.  
   
  If you link to a COM assembly (Assembly A) which itself references another COM assembly (Assembly B), you also have to link to Assembly B if either of the following is true:  
   
@@ -68,7 +68,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
   
 -   A field, property, event, or method that has a return type or parameter type from Assembly B is invoked.  
   
- Like the [/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) compiler option, the `/link` compiler option uses the Csc.rsp response file, which references frequently used [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] assemblies. Use the [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) compiler option if you do not want the compiler to use the Csc.rsp file.  
+ Like the [/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md) compiler option, the `/link` compiler option uses the Csc.rsp response file, which references frequently used [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] assemblies. Use the [/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md) compiler option if you do not want the compiler to use the Csc.rsp file.  
   
  The short form of `/link` is `/l`.  
   

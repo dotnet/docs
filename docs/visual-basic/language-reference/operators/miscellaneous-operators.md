@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Miscellaneous Operators (Visual Basic)
-The following are miscellaneous operators defined in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+The following are miscellaneous operators defined in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
  [AddressOf Operator](../../../visual-basic/language-reference/operators/addressof-operator.md)  
   

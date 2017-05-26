@@ -23,10 +23,10 @@
 ## Remarks  
   
  Using the <see cref="T:System.Buffers.ArrayPool{T}"/> class to rent and return buffers (using the <see cref="M:System.Buffers.ArrayPool`1.Rent(System.Int32)"/> and <see cref="M:System.Buffers.ArrayPool`1.Return(`0[],System.Boolean)"/> methods) can improve performance in situations where arrays are created and destroyed frequently, resulting in significant memory pressure on the garbage collector.
-
- This class is thread-safe.  All members may be used by multiple threads concurrently. 
+  
  ]]></format>
     </remarks>
+    <threadsafe>This class is thread-safe. All members may be used by multiple threads concurrently.</threadsafe>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -42,8 +42,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Invokes the static constructor when a new instance of the <see cref="ArrayPool{T}"/> class is instantiated.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -151,7 +151,7 @@ This buffer is loaned to the caller and should be returned to the same pool usin
       </Parameters>
       <Docs>
         <param name="array">A buffer to return to the pool that was previously obtained using the <see cref="Rent"/> method.</param>
-        <param name="clearArray">Indicates whether the contents of the buffer should be cleared before reuse. If <paramref name="bufferLength"/> is set to <see langword="true" />, and if the pool will store the buffer to enable subsequent reuse, the <see cref="Return"/> method will clear the <paramref name="array"/> of its contents so that a subsequent consumer using the <see cref="Rent"/> method will not see the previous consumer's content. If <paramref name="bufferLength"/> is set to <see langword="false" /> or if the pool will release the buffer, the array's contents are left unchanged.</param>
+        <param name="clearArray">Indicates whether the contents of the buffer should be cleared before reuse. If <paramref name="bufferLength"/> is set to <see langword="true" />, and if the pool will store the buffer to enable subsequent reuse, the <see cref="Return"/> method will clear the <paramref name="array"/> of its contents so that a subsequent caller using the <see cref="Rent"/> method will not see the content of the previous caller. If <paramref name="bufferLength"/> is set to <see langword="false" /> or if the pool will release the buffer, the array's contents are left unchanged.</param>
         <summary>Returns an array to the pool that was previously obtained using the <see cref="Rent"/> method on the same <see cref="ArrayPool{T}"/> instance.</summary>
         <remarks>
         <format type="text/markdown"><![CDATA[  

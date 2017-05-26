@@ -16,7 +16,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Activities.Presentation.WorkflowElementDialog> is a base type providing a set of methods and services that enable a dialog box to be displayed on the designer surface in a modal fashion in order to obtain input from a user. Examples of this in [!INCLUDE[wf2](~/includes/wf2-md.md)] include the dynamic argument designer that enables dynamic arguments to be manipulated and the <xref:System.Activities.Statements.FlowSwitch> case editor. Custom activity designer authors are encouraged to use the <xref:System.Activities.Presentation.WorkflowElementDialog> rather than their own dialog mechanisms to provide a common way to handle this display.  
+ The <xref:System.Activities.Presentation.WorkflowElementDialog> is a base type providing a set of methods and services that enable a dialog box to be displayed on the designer surface in a modal fashion in order to obtain input from a user. Examples of this in [!INCLUDE[wf2](~/includes/wf2-md.md)] include the dynamic argument designer that enables dynamic arguments to be manipulated and the <xref:System.Activities.Statements.FlowSwitch`1> case editor. Custom activity designer authors are encouraged to use the <xref:System.Activities.Presentation.WorkflowElementDialog> rather than their own dialog mechanisms to provide a common way to handle this display.  
   
  ]]></format>
     </remarks>

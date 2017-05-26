@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -30,47 +30,47 @@ Currently, the .NET Standard Library and.NET Core support getting configuration 
 
 ```
   // Configure Key Vault client
-```
+  
   var kvClient = new KeyVaultClient(new KeyVaultClient.AuthenticationCallback(async
-```
-  (authority, resource, scope) =&gt;
-```
+  
+  (authority, resource, scope) =>
+  
   {
-```
+  
   var cert = // Get certificate from local store/file/key vault etc. as needed
-```
+  
   // From the Microsoft.IdentityModel.Clients.ActiveDirectory pacakge
-```
+  
   var authContext = new AuthenticationContext(authority,
-```
+  
   TokenCache.DefaultShared);
-```
+  
   var result = await authContext.AcquireTokenAsync(resource,
-```
+  
   // From the Microsoft.Rest.ClientRuntime.Azure.Authentication pacakge
-```
+  
   new ClientAssertionCertificate("{Application ID}", cert));
-```
+  
   return result.AccessToken;
-```
+  
   }));
-```
+  
   // Get configuration values from Key Vault
-```
+  
   var builder = new ConfigurationBuilder()
-```
+  
   .SetBasePath(env.ContentRootPath)
-```
+  
   // Other configuration providers go here.
-```
+  
   .AddAzureKeyVault("{KeyValueUri}", kvClient,
-```
+  
   new DefaultKeyVaultSecretManager());
 ```
 
 In this example, the call to AddAzureKeyVault comes at the end of configuration provider registration. It is a best practice to register Azure Key Vault as the last configuration provider so that it has an opportunity to override configuration values from previous providers, and so that no configuration values from other sources override those from the key vault.
 
-### Additional resources
+## Additional resources
 
 -   **Using Azure Key Vault to protect application secrets***
     <https://docs.microsoft.com/en-us/azure/guidance/guidance-multitenant-identity-keyvault>*

@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -20,14 +20,14 @@ Note that there is certain overlap between the service registry and the API gate
 
 ## Additional resources
 
--   **Chris Richardson. Pattern: Service registry** **
-    ***http://microservices.io/patterns/service-registry.html,xu*
+-   **Chris Richardson. Pattern: Service registry**
+    *http://microservices.io/patterns/service-registry.html,xu*
 
--   **Auth0. The Service Registry** **
-    **[*https://auth0.com/blog/an-introduction-to-microservices-part-3-the-service-registry/*](https://auth0.com/blog/an-introduction-to-microservices-part-3-the-service-registry/)
+-   **Auth0. The Service Registry**
+    [*https://auth0.com/blog/an-introduction-to-microservices-part-3-the-service-registry/*](https://auth0.com/blog/an-introduction-to-microservices-part-3-the-service-registry/)
 
--   **Gabriel Schenker. Service discovery** **
-    **[*https://lostechies.com/gabrielschenker/2016/01/27/service-discovery/*](https://lostechies.com/gabrielschenker/2016/01/27/service-discovery/)
+-   **Gabriel Schenker. Service discovery**
+    [*https://lostechies.com/gabrielschenker/2016/01/27/service-discovery/*](https://lostechies.com/gabrielschenker/2016/01/27/service-discovery/)
 
 
 >[!div class="step-by-step"]

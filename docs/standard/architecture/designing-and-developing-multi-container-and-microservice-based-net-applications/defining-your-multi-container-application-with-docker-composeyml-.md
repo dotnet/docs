@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -23,7 +23,7 @@ The following YAML code is the definition of a possible global but single docker
   
   services:
   
-  **webmvc:**
+  webmvc:
   
   image: eshop/webmvc
   
@@ -39,7 +39,7 @@ The following YAML code is the definition of a possible global but single docker
   
   - "5100:80"
   
-  depends\_on:
+  depends_on:
   
   - catalog.api
   
@@ -47,7 +47,7 @@ The following YAML code is the definition of a possible global but single docker
   
   - basket.api
   
-  **catalog.api:**
+  catalog.api:
   
   image: eshop/catalog.api
   
@@ -65,17 +65,17 @@ The following YAML code is the definition of a possible global but single docker
   
   - "5101:80"
   
-  \#extra hosts can be used for standalone SQL Server or services at the dev PC
+  #extra hosts can be used for standalone SQL Server or services at the dev PC
   
-  extra\_hosts:
+  extra_hosts:
   
   - "CESARDLSURFBOOK:10.0.75.1"
   
-  depends\_on:
+  depends_on:
   
   - sql.data
   
-  **ordering.api:**
+  ordering.api:
   
   image: eshop/ordering.api
   
@@ -89,17 +89,17 @@ The following YAML code is the definition of a possible global but single docker
   
   - "5102:80"
   
-  \#extra hosts can be used for standalone SQL Server or services at the dev PC
+  #extra hosts can be used for standalone SQL Server or services at the dev PC
   
-  extra\_hosts:
+  extra_hosts:
   
   - "CESARDLSURFBOOK:10.0.75.1"
   
-  depends\_on:
+  depends_on:
   
   - sql.data
   
-  **basket.api:**
+  basket.api:
   
   image: eshop/basket.api
   
@@ -111,23 +111,23 @@ The following YAML code is the definition of a possible global but single docker
   
   - "5103:80"
   
-  depends\_on:
+  depends_on:
   
   - sql.data
   
-  **sql.data:**
+  sql.data:
   
   environment:
   
-  - SA\_PASSWORD=your@password
+  - SA_PASSWORD=your@password
   
-  - ACCEPT\_EULA=Y
+  - ACCEPT_EULA=Y
   
   ports:
   
   - "5434:1433"
   
-  **basket.data:**
+  basket.data:
   
   image: redis
 ```
@@ -175,13 +175,13 @@ Focusing on a single container, the catalog.api container-microservice has a str
   
   - "5101:80"
   
-  \#extra hosts can be used for standalone SQL Server or services at the dev PC
+  #extra hosts can be used for standalone SQL Server or services at the dev PC
   
-  extra\_hosts:
+  extra_hosts:
   
   - "CESARDLSURFBOOK:10.0.75.1"
   
-  depends\_on:
+  depends_on:
   
   - sql.data
 ```
@@ -229,7 +229,7 @@ With Docker Compose you can create and destroy that isolated environment very ea
 ```
   docker-compose up -d
   
-  ./run\_unit\_tests
+  ./run_unit_tests
   
   docker-compose down
 ```
@@ -273,7 +273,7 @@ A typical use case is when you define multiple compose files so you can target m
 You start with the base docker-compose.yml file. This base file has to contain the base or static configuration settings that do not change depending on the environment. For example, the eShopOnContainers has the following docker-compose.yml file as the base file.
 
 ```
-  \#docker-compose.yml (Base)
+  #docker-compose.yml (Base)
   
   version: '2'
   
@@ -289,7 +289,7 @@ You start with the base docker-compose.yml file. This base file has to contain t
   
   dockerfile: Dockerfile
   
-  depends\_on:
+  depends_on:
   
   - basket.data
   
@@ -307,7 +307,7 @@ You start with the base docker-compose.yml file. This base file has to contain t
   
   dockerfile: Dockerfile
   
-  depends\_on:
+  depends_on:
   
   - sql.data
   
@@ -323,7 +323,7 @@ You start with the base docker-compose.yml file. This base file has to contain t
   
   dockerfile: Dockerfile
   
-  depends\_on:
+  depends_on:
   
   - sql.data
   
@@ -337,7 +337,7 @@ You start with the base docker-compose.yml file. This base file has to contain t
   
   dockerfile: Dockerfile
   
-  depends\_on:
+  depends_on:
   
   - sql.data
   
@@ -353,31 +353,31 @@ You start with the base docker-compose.yml file. This base file has to contain t
   
   dockerfile: Dockerfile
   
-  depends\_on:
+  depends_on:
   
   - identity.api
   
   - basket.api
   
-  **webmvc:**
+  webmvc:
   
-  **image: eshop/webmvc**
+  image: eshop/webmvc
   
-  **build:**
+  build:
   
-  **context: ./src/Web/WebMVC**
+  context: ./src/Web/WebMVC
   
-  **dockerfile: Dockerfile**
+  dockerfile: Dockerfile
   
-  **depends\_on:**
+  depends_on:
   
-  **- catalog.api**
+  - catalog.api
   
-  **- ordering.api**
+  - ordering.api
   
-  **- identity.api**
+  - identity.api
   
-  **- basket.api**
+  - basket.api
   
   sql.data:
   
@@ -427,57 +427,57 @@ You can have additional configuration, but the important point is that in the ba
 Usually, the docker-compose.override.yml is used for your development environment, as in the following example from eShopOnContainers:
 
 ```
-  **\#docker-compose.override.yml (Extended config for DEVELOPMENT env.)**
+  #docker-compose.override.yml (Extended config for DEVELOPMENT env.)
   
   version: '2'
   
   services:
   
-  **\# Simplified number of services here:**
+  # Simplified number of services here:
   
-  **catalog.api:**
+  catalog.api:
   
   environment:
   
-  - ASPNETCORE\_ENVIRONMENT=Development
+  - ASPNETCORE_ENVIRONMENT=Development
   
-  - ASPNETCORE\_URLS=http://0.0.0.0:5101
+  - ASPNETCORE_URLS=http://0.0.0.0:5101
   
   - ConnectionString=Server=sql.data; Database =
   
   Microsoft.eShopOnContainers.Services.CatalogDb; User Id=sa;Password=Pass@word
   
-  - ExternalCatalogBaseUrl=http://**localhost**:5101
+  - ExternalCatalogBaseUrl=http://localhost:5101
   
   ports:
   
   - "5101:5101"
   
-  **identity.api:**
+  identity.api:
   
   environment:
   
-  - ASPNETCORE\_ENVIRONMENT=Development
+  - ASPNETCORE_ENVIRONMENT=Development
   
-  - ASPNETCORE\_URLS=http://0.0.0.0:5105
+  - ASPNETCORE_URLS=http://0.0.0.0:5105
   
-  - SpaClient=http://**localhost**:5104
+  - SpaClient=http://localhost:5104
   
-  - ConnectionStrings\_\_DefaultConnection = Server=sql.data;Database=Microsoft.eShopOnContainers.Service.IdentityDb;User Id=sa;Password=Pass@word
+  - ConnectionStrings__DefaultConnection = Server=sql.data;Database=Microsoft.eShopOnContainers.Service.IdentityDb;User Id=sa;Password=Pass@word
   
-  - MvcClient=http://**localhost**:5100
+  - MvcClient=http://localhost:5100
   
   ports:
   
   - "5105:5105"
   
-  **webspa:**
+  webspa:
   
   environment:
   
-  - ASPNETCORE\_ENVIRONMENT=Development
+  - ASPNETCORE_ENVIRONMENT=Development
   
-  - ASPNETCORE\_URLS=http://0.0.0.0:5104
+  - ASPNETCORE_URLS=http://0.0.0.0:5104
   
   - CatalogUrl=http://localhost:5101
   
@@ -491,13 +491,13 @@ Usually, the docker-compose.override.yml is used for your development environmen
   
   - "5104:5104"
   
-  **sql.data:**
+  sql.data:
   
   environment:
   
-  - SA\_PASSWORD=Pass@word
+  - SA_PASSWORD=Pass@word
   
-  - ACCEPT\_EULA=Y
+  - ACCEPT_EULA=Y
   
   ports:
   
@@ -511,75 +511,75 @@ When you run docker-compose up (or launch it from Visual Studio), the command r
 Suppose that you want another Compose file for the production environment, with different configuration values. You can create another override file, like the following. (This file might be stored in a different Git repo or managed and secured by a different team.)
 
 ```
-  **\#docker-compose.prod.yml (Extended config for PRODUCTION env.)**
+  #docker-compose.prod.yml (Extended config for PRODUCTION env.)
   
   version: '2'
   
   services:
   
-  **\# Simplified number of services here:**
+  # Simplified number of services here:
   
-  **catalog.api:**
+  catalog.api:
   
   environment:
   
-  - ASPNETCORE\_ENVIRONMENT=Production
+  - ASPNETCORE_ENVIRONMENT=Production
   
-  - ASPNETCORE\_URLS=http://0.0.0.0:5101
+  - ASPNETCORE_URLS=http://0.0.0.0:5101
   
   - ConnectionString=Server=sql.data; Database = Microsoft.eShopOnContainers.Services.CatalogDb; User Id=sa;Password=Prod@Pass
   
-  - ExternalCatalogBaseUrl=http://\${ESHOP\_PROD\_EXTERNAL\_DNS\_NAME\_OR\_IP}:5101
+  - ExternalCatalogBaseUrl=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5101
   
   ports:
   
   - "5101:5101"
   
-  **identity.api:**
+  identity.api:
   
   environment:
   
-  - ASPNETCORE\_ENVIRONMENT=Production
+  - ASPNETCORE_ENVIRONMENT=Production
   
-  - ASPNETCORE\_URLS=http://0.0.0.0:5105
+  - ASPNETCORE_URLS=http://0.0.0.0:5105
   
-  - SpaClient=http://\${ESHOP\_PROD\_EXTERNAL\_DNS\_NAME\_OR\_IP}:5104
+  - SpaClient=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5104
   
-  - ConnectionStrings\_\_DefaultConnection = Server=sql.data;Database=Microsoft.eShopOnContainers.Service.IdentityDb;User Id=sa;Password=Pass@word
+  - ConnectionStrings__DefaultConnection = Server=sql.data;Database=Microsoft.eShopOnContainers.Service.IdentityDb;User Id=sa;Password=Pass@word
   
-  - MvcClient=http://\${ESHOP\_PROD\_EXTERNAL\_DNS\_NAME\_OR\_IP}:5100
+  - MvcClient=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5100
   
   ports:
   
   - "5105:5105"
   
-  **webspa:**
+  webspa:
   
   environment:
   
-  - ASPNETCORE\_ENVIRONMENT= Production
+  - ASPNETCORE_ENVIRONMENT= Production
   
-  - ASPNETCORE\_URLS=http://0.0.0.0:5104
+  - ASPNETCORE_URLS=http://0.0.0.0:5104
   
-  - CatalogUrl=http://\${ESHOP\_PROD\_EXTERNAL\_DNS\_NAME\_OR\_IP}:5101
+  - CatalogUrl=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5101
   
-  - OrderingUrl=http://\${ESHOP\_PROD\_EXTERNAL\_DNS\_NAME\_OR\_IP}:5102
+  - OrderingUrl=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5102
   
-  - IdentityUrl=http://\${ESHOP\_PROD\_EXTERNAL\_DNS\_NAME\_OR\_IP}:5105
+  - IdentityUrl=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5105
   
-  - BasketUrl=http://\${ESHOP\_PROD\_EXTERNAL\_DNS\_NAME\_OR\_IP}:5103
+  - BasketUrl=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5103
   
   ports:
   
   - "5104:5104"
   
-  **sql.data:**
+  sql.data:
   
   environment:
   
-  - SA\_PASSWORD=Prod@Pass
+  - SA_PASSWORD=Prod@Pass
   
-  - ACCEPT\_EULA=Y
+  - ACCEPT_EULA=Y
   
   ports:
   
@@ -599,7 +599,7 @@ To use multiple override files, or an override file with a different name, you c
 It is convenient, especially in production environments, to be able to get configuration information from environment variables, as we have shown in previous examples. You reference an environment variable in your docker-compose files using the syntax \${MY\_VAR}. The following line from a docker-compose.prod.yml file shows how to reference the value of an environment variable.
 
 ```
-  IdentityUrl=http://\${ESHOP\_PROD\_EXTERNAL\_DNS\_NAME\_OR\_IP}:5105
+  IdentityUrl=http://${ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP}:5105
 ```
 
 Environment variables are created and initialized in different ways, depending on your host environment (Linux, Windows, Cloud cluster, etc.). However, a convenient approach is to use an .env file. The docker-compose files support declaring default environment variables in the .env file. These values for the environment variables are the default values. But they can be overridden by the values you might have defined in each of your environments (host OS or environment variables from your cluster). You place this .env file in the folder where the docker-compose command is executed from.
@@ -607,11 +607,11 @@ Environment variables are created and initialized in different ways, depending o
 The following example shows an .env file like the [.env](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/.env) file for the eShopOnContainers application.
 
 ```
-  \# .env file
+  # .env file
   
-  ESHOP\_EXTERNAL\_DNS\_NAME\_OR\_IP=localhost
+  ESHOP_EXTERNAL_DNS_NAME_OR_IP=localhost
   
-  ESHOP\_PROD\_EXTERNAL\_DNS\_NAME\_OR\_IP=10.121.122.92
+  ESHOP_PROD_EXTERNAL_DNS_NAME_OR_IP=10.121.122.92
 ```
 
 Docker-compose expects each line in an .env file to be in the format &lt;variable&gt;=&lt;value&gt;.
@@ -635,7 +635,7 @@ If you are exploring Docker and .NET Core on sources on the Internet, you will f
   
   WORKDIR /app
   
-  ENV ASPNETCORE\_URLS http://+:80
+  ENV ASPNETCORE_URLS http://+:80
   
   EXPOSE 80
   
@@ -643,7 +643,7 @@ If you are exploring Docker and .NET Core on sources on the Internet, you will f
   
   RUN dotnet restore
   
-  ENTRYPOINT \["dotnet", "run"\]
+  ENTRYPOINT ["dotnet", "run"]
 ```
 
 A Dockerfile like this will work. However, you can substantially optimize your images, especially your production images.
@@ -692,15 +692,15 @@ The [docker-compose.ci.build.yml](https://github.com/dotnet/eShopOnContainers/bl
   
   ci-build:
   
-  image: **microsoft/aspnetcore-build:1.0-1.1**
+  image: microsoft/aspnetcore-build:1.0-1.1
   
   volumes:
   
   - .:/src
   
-  working\_dir: /src
+  working_dir: /src
   
-  **command:** /bin/bash -c "pushd ./src/Web/WebSPA && npm rebuild node-sass && pushd ./../../.. && **dotnet restore** ./eShopOnContainers-ServicesAndWebApps.sln && **dotnet publish** ./eShopOnContainers-ServicesAndWebApps.sln -c Release -o ./obj/Docker/publish"
+  command: /bin/bash -c "pushd ./src/Web/WebSPA && npm rebuild node-sass && pushd ./../../.. && dotnet restore ./eShopOnContainers-ServicesAndWebApps.sln && dotnet publish ./eShopOnContainers-ServicesAndWebApps.sln -c Release -o ./obj/Docker/publish"
 ```
 
 Once the build container is up and running, it runs the .NET SDK dotnet restore and dotnet publish commands against all the projects in the solution in order to compile the .NET bits. In this case, because eShopOnContainers also has an SPA based on TypeScript and Angular for the client code, it also needs to check JavaScript dependencies with npm, but that action is not related to the .NET bits.

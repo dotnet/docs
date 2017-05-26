@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -36,9 +36,9 @@ Finally, by editing the Dockerfile and docker-compose.yml metadata files, you ca
 
 To implement a simple CRUD microservice using .NET Core and Visual Studio, you start by creating a simple ASP.NET Core Web API project (running on .NET Core so it can run on a Linux Docker host), as shown in Figure 8-6.
 
-```
-  ![](./media/image6.png){width="3.5833333333333335in" height="1.6883923884514436in"}   ![](./media/image7.png){width="2.6181167979002624in" height="1.7083333333333333in"}
-```
+  ------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
+  ![](./media/image6.png)   ![](./media/image7.png)
+  ------------------------------------------------------------------------------------- -------------------------------------------------------------------------------------
 
 **Figure 8-6**. Creating an ASP.NET Core Web API project in Visual Studio
 
@@ -101,17 +101,17 @@ You also need a DbContext that represents a session with the database. For the c
   
   {
   
-  public CatalogContext(DbContextOptions&lt;CatalogContext&gt; options) : base(options)
+  public CatalogContext(DbContextOptions<;CatalogContext> options) : base(options)
   
   {
   
   }
   
-  public DbSet&lt;CatalogItem&gt; CatalogItems { get; set; }
+  public DbSet<;CatalogItem> CatalogItems { get; set; }
   
-  public DbSet&lt;CatalogBrand&gt; CatalogBrands { get; set; }
+  public DbSet<;CatalogBrand> CatalogBrands { get; set; }
   
-  public DbSet&lt;CatalogType&gt; CatalogTypes { get; set; }
+  public DbSet<;CatalogType> CatalogTypes { get; set; }
   
   // Additional code ...
   
@@ -127,39 +127,39 @@ You can see further details about OnModelCreating in the [Implementing the infra
 Instances of your entity classes are typically retrieved from the database using Language Integrated Query (LINQ), as shown in the following example:
 
 ```
-  \[Route("api/v1/\[controller\]")\]
+  [Route("api/v1/[controller]")]
   
-  public class **CatalogController : ControllerBase**
+  public class CatalogController : ControllerBase
   
   {
   
-  private readonly CatalogContext \_catalogContext;
+  private readonly CatalogContext _catalogContext;
   
-  private readonly CatalogSettings \_settings;
+  private readonly CatalogSettings _settings;
   
   private readonly ICatalogIntegrationEventService
   
-  \_catalogIntegrationEventService;
+  _catalogIntegrationEventService;
   
-  public **CatalogController(CatalogContext context,**
+  public CatalogController(CatalogContext context,
   
-  **IOptionsSnapshot&lt;CatalogSettings&gt; settings,**
+  IOptionsSnapshot<;CatalogSettings> settings,
   
-  **ICatalogIntegrationEventService **
+  ICatalogIntegrationEventService
   
-  **catalogIntegrationEventService)**
+  catalogIntegrationEventService)
   
   {
   
-  \_catalogContext = context ?? throw new
+  _catalogContext = context ?? throw new
   
   ArgumentNullException(nameof(context));
   
-  \_catalogIntegrationEventService = catalogIntegrationEventService ??
+  _catalogIntegrationEventService = catalogIntegrationEventService ??
   
   throw new ArgumentNullException(nameof(catalogIntegrationEventService));
   
-  \_settings = settings.Value;
+  _settings = settings.Value;
   
   ((DbContext)context).ChangeTracker.QueryTrackingBehavior =
   
@@ -167,27 +167,27 @@ Instances of your entity classes are typically retrieved from the database using
   
   }
   
-  // GET api/v1/\[controller\]/items\[?pageSize=3&pageIndex=10\]
+  // GET api/v1/[controller]/items[?pageSize=3&pageIndex=10]
   
-  \[HttpGet\]
+  [HttpGet]
   
-  \[Route("\[action\]")\]
+  [Route("[action]")]
   
-  public async Task&lt;IActionResult&gt; Items(\[FromQuery\]int pageSize = 10,
+  public async Task<;IActionResult> Items([FromQuery]int pageSize = 10,
   
-  \[FromQuery\]int pageIndex = 0)
+  [FromQuery]int pageIndex = 0)
   
   {
   
-  var totalItems = await \_catalogContext.CatalogItems
+  var totalItems = await _catalogContext.CatalogItems
   
   .LongCountAsync();
   
-  var itemsOnPage = await \_catalogContext.CatalogItems
+  var itemsOnPage = await _catalogContext.CatalogItems
   
-  .OrderBy(c =&gt; c.Name)
+  .OrderBy(c => c.Name)
   
-  .Skip(pageSize \* pageIndex)
+  .Skip(pageSize * pageIndex)
   
   .Take(pageSize)
   
@@ -195,7 +195,7 @@ Instances of your entity classes are typically retrieved from the database using
   
   itemsOnPage = ChangeUriPlaceholder(itemsOnPage);
   
-  var model = new PaginatedItemsViewModel&lt;CatalogItem&gt;(
+  var model = new PaginatedItemsViewModel<;CatalogItem>(
   
   pageIndex, pageSize, totalItems, itemsOnPage);
   
@@ -215,9 +215,9 @@ Data is created, deleted, and modified in the database using instances of your e
   
   Name="Roslyn T-Shirt", Price = 12};
   
-  \_context.Catalog.Add(catalogItem);
+  _context.Catalog.Add(catalogItem);
   
-  \_context.SaveChanges();
+  _context.SaveChanges();
 ```
 
 ##### Dependency Injection in ASP.NET Core and Web API controllers
@@ -231,13 +231,13 @@ An important configuration to set up in the Web API project is the DbContext cla
   
   {
   
-  services.AddDbContext&lt;CatalogContext&gt;(options =&gt;
+  services.AddDbContext<;CatalogContext>(options =>
   
   {
   
-  options.UseSqlServer(Configuration\["ConnectionString"\],
+  options.UseSqlServer(Configuration["ConnectionString"],
   
-  sqlServerOptionsAction: sqlOptions =&gt;
+  sqlServerOptionsAction: sqlOptions =>
   
   {
   
@@ -269,7 +269,7 @@ An important configuration to set up in the Web API project is the DbContext cla
   
   // Default in EFCore would be to log warning when client evaluation is done.
   
-  options.ConfigureWarnings(warnings =&gt; warnings.Throw(
+  options.ConfigureWarnings(warnings => warnings.Throw(
   
   RelationalEventId.QueryClientEvaluationWarning));
   
@@ -288,7 +288,7 @@ An important configuration to set up in the Web API project is the DbContext cla
 -   **Saving Data**
     [*https://docs.microsoft.com/en-us/ef/core/saving/index*](https://docs.microsoft.com/en-us/ef/core/saving/index)
 
-### The DB connection string and environment variables used by Docker containers
+## The DB connection string and environment variables used by Docker containers
 
 You can use the ASP.NET Core settings and add a ConnectionString property to your settings.json file as shown in the following example:
 
@@ -325,23 +325,23 @@ The settings.json file can have default values for the ConnectionString property
 From your docker-compose.yml or docker-compose.override.yml files, you can initialize those environment variables so that Docker will set them up as OS environment variables for you, as shown in the following docker-compose.override.yml file (the connection string and other lines wrap in this example, but it would not wrap in your own file).
 
 ```
-  \# docker-compose.override.yml
+  # docker-compose.override.yml
   
-  \#
+  #
   
   catalog.api:
   
   environment:
   
-  - **ConnectionString=Server=**
+  - ConnectionString=Server=
   
-  **sql.data;Database=Microsoft.eShopOnContainers.Services.CatalogDb;**
+  sql.data;Database=Microsoft.eShopOnContainers.Services.CatalogDb;
   
-  **User Id=sa;Password=Pass@word**
+  User Id=sa;Password=Pass@word
   
   - ExternalCatalogBaseUrl=http://10.0.75.1:5101
   
-  \#- ExternalCatalogBaseUrl=
+  #- ExternalCatalogBaseUrl=
   
   http://dockerhoststaging.westus.cloudapp.azure.com:5101
   
@@ -375,7 +375,7 @@ With URI versioning, as in the eShopOnContainers sample application, each time y
 As shown in the following code example, the version can be set by using the Route attribute in the Web API, which makes the version explicit in the URI (v1 in this case).
 
 ```
-  \[Route("api/**v1**/\[controller\]")\]
+  [Route("api/v1/[controller]")]
   
   public class CatalogController : ControllerBase
   
@@ -465,9 +465,9 @@ After you have installed these NuGet packages in your Web API project, you need 
   
   // Other ConfigureServices() code...
   
-  services.**AddSwaggerGen**();
+  services.AddSwaggerGen();
   
-  services.**ConfigureSwaggerGen**(options =&gt;
+  services.ConfigureSwaggerGen(options =>
   
   {
   
@@ -493,11 +493,11 @@ After you have installed these NuGet packages in your Web API project, you need 
   
   }
   
-  public void **Configure(**IApplicationBuilder app,
+  public void Configure(IApplicationBuilder app,
   
   IHostingEnvironment env,
   
-  ILoggerFactory loggerFactory**)**
+  ILoggerFactory loggerFactory)
   
   {
   
@@ -505,9 +505,9 @@ After you have installed these NuGet packages in your Web API project, you need 
   
   // ...
   
-  app.**UseSwagger**()
+  app.UseSwagger()
   
-  .**UseSwaggerUi**();
+  .UseSwaggerUi();
   
   }
   
@@ -517,9 +517,9 @@ After you have installed these NuGet packages in your Web API project, you need 
 Once this is done, you can start your application and browse the following Swagger JSON and UI endpoints using URLs like these:
 
 ```
-  http://&lt;your-root-url&gt;/swagger/v1/swagger.json
+  http://<;your-root-url>/swagger/v1/swagger.json
   
-  http://&lt;your-root-url&gt;/swagger/ui
+  http://<;your-root-url>/swagger/ui
 ```
 
 You previously saw the generated UI created by Swashbuckle for a URL like http://&lt;your-root-url&gt;/swagger/ui. In Figure 8-9 you can also see how you can test any API method.

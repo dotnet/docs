@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -134,7 +134,7 @@ In this guide and the reference sample application (eShopOnContainers) we are li
 
 -   If the API Gateway is developed by a single team, there can be a development bottleneck. This is another reason why a better approach is to have several fined-grained API Gateways that respond to different client needs. You could also segregate the API Gateway internally into multiple areas or layers that are owned by the different teams working on the internal microservices.
 
-### Additional resources
+## Additional resources
 
 -   **Charles Richardson. Pattern: API Gateway / Backend for Front-End**
     [*http://microservices.io/patterns/apigateway.html*](http://microservices.io/patterns/apigateway.html)
@@ -142,13 +142,13 @@ In this guide and the reference sample application (eShopOnContainers) we are li
 -   **Azure API Management**
     [*https://azure.microsoft.com/en-us/services/api-management/*](https://azure.microsoft.com/en-us/services/api-management/)
 
--   **Udi Dahan. Service Oriented Composition** **\
-    **[*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
+-   **Udi Dahan. Service Oriented Composition**\
+    [*http://udidahan.com/2014/07/30/service-oriented-composition-with-video/*](http://udidahan.com/2014/07/30/service-oriented-composition-with-video/)
 
--   **Clemens Vasters. Messaging and Microservices at GOTO 2016** (video)**
-    **[*https://www.youtube.com/watch?v=rXi5CLjIQ9k*](https://www.youtube.com/watch?v=rXi5CLjIQ9k)
+-   **Clemens Vasters. Messaging and Microservices at GOTO 2016** (video)
+    [*https://www.youtube.com/watch?v=rXi5CLjIQ9k*](https://www.youtube.com/watch?v=rXi5CLjIQ9k)
 
 
 >[!div class="step-by-step"]
-[Previous] (microservices-architecture.md)
+[Previous] (challenges-and-solutions-for-distributed-data-management.md)
 [Next] (communication-between-microservices.md)

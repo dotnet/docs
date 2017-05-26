@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -22,17 +22,17 @@ For example, setting an environment variable Logging:LogLevel:Default to Debug w
 
 ```
   {
-```
+  
   "Logging": {
-```
+  
   "LogLevel": {
-```
+  
   "Default": "Debug"
-```
+  
   }
-```
+  
   }
-```
+  
   }
 ```
 
@@ -47,16 +47,16 @@ The ASP.NET Core [Secret Manager](https://docs.microsoft.com/en-us/aspnet/core/s
 Secrets set by the Secret Manager tool are organized by the UserSecretsId property of the project that is using the secrets. Therefore, you must be sure to set the UserSecretsId property in your project file (as shown in the snippet below). The actual string used as the ID is not important as long as it is unique in the project.
 
 ```
-  &lt;PropertyGroup&gt;
-```
-  &lt;UserSecretsId&gt;UniqueIdentifyingString&lt;/UserSecretsId&gt;
-```
-  &lt;/PropertyGroup&gt;
+  <;PropertyGroup>
+  
+  <;UserSecretsId>UniqueIdentifyingString<;/UserSecretsId>
+  
+  <;/PropertyGroup>
 ```
 
 Using secrets stored with Secret Manager in an application is accomplished by calling AddUserSecrets&lt;T&gt; on the ConfigurationBuilder instance to include secrets for the application in its configuration. The generic parameter T should be a type from the assembly that the UserSecretId was applied to. Usually using AddUserSecrets&lt;Startup&gt; is fine.
 
 
 >[!div class="step-by-step"]
-[Previous] (index.md)
+[Previous] (about-authorization-in-net-microservices-and-web-applications.md)
 [Next] (using-azure-key-vault-to-protect-secrets-at-production-time.md)

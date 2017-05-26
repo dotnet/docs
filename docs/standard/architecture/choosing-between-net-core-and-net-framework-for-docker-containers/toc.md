@@ -3,3 +3,5 @@
 ## [When to choose .NET Core for Docker containers](when-to-choose-net-core-for-docker-containers.md)
 ## [When to choose .NET Framework for Docker containers](when-to-choose-net-framework-for-docker-containers.md)
 ## [Decision table: .NET frameworks to use for Docker](decision-table-net-frameworks-to-use-for-docker.md)
+## [What OS to target with .NET containers](what-os-to-target-with-net-containers.md)
+## [Official .NET Docker images](official-net-docker-images.md)

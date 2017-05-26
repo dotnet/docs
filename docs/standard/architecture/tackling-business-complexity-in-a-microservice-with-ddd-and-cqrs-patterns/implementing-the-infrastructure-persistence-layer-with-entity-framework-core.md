@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -53,13 +53,13 @@ You can use a private collection while exposing a read-only IEnumerable object, 
   
   // Using private fields, allowed since EF Core 1.1
   
-  private DateTime \_orderDate;
+  private DateTime _orderDate;
   
   // Other fields ...
   
-  private readonly List&lt;OrderItem&gt; \_orderItems;
+  private readonly List<;OrderItem> _orderItems;
   
-  public IEnumerable&lt;OrderItem&gt; OrderItems =&gt; \_orderItems.AsReadOnly();
+  public IEnumerable<;OrderItem> OrderItems => _orderItems.AsReadOnly();
   
   protected Order() { }
   
@@ -85,7 +85,7 @@ You can use a private collection while exposing a read-only IEnumerable object, 
   
   pictureUrl, units);
   
-  \_orderItems.Add(orderItem);
+  _orderItems.Add(orderItem);
   
   }
   
@@ -105,13 +105,13 @@ EF Core provides a way to map the domain model to the physical database without 
   
   // ...
   
-  modelBuilder.Entity&lt;Order&gt;(ConfigureOrder);
+  modelBuilder.Entity<;Order>(ConfigureOrder);
   
   // Other entities ...
   
   }
   
-  void ConfigureOrder(EntityTypeBuilder&lt;Order&gt; orderConfiguration)
+  void ConfigureOrder(EntityTypeBuilder<;Order> orderConfiguration)
   
   {
   
@@ -121,7 +121,7 @@ EF Core provides a way to map the domain model to the physical database without 
   
   FindNavigation(nameof(Order.OrderItems));
   
-  navigation.**SetPropertyAccessMode(PropertyAccessMode.Field);**
+  navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
   
   // Other configuration ...
   
@@ -141,11 +141,11 @@ At the implementation level, a repository is simply a class with data persistenc
   
   {
   
-  public class **BuyerRepository : IBuyerRepository**
+  public class BuyerRepository : IBuyerRepository
   
   {
   
-  private readonly OrderingContext \_context;
+  private readonly OrderingContext _context;
   
   public IUnitOfWork UnitOfWork
   
@@ -155,7 +155,7 @@ At the implementation level, a repository is simply a class with data persistenc
   
   {
   
-  return \_context;
+  return _context;
   
   }
   
@@ -163,7 +163,7 @@ At the implementation level, a repository is simply a class with data persistenc
   
   }
   
-  public **BuyerRepository**(**OrderingContext context**)
+  public BuyerRepository(OrderingContext context)
   
   {
   
@@ -177,15 +177,15 @@ At the implementation level, a repository is simply a class with data persistenc
   
   }
   
-  \_context = context;
+  _context = context;
   
   }
   
-  public Buyer **Add**(Buyer buyer)
+  public Buyer Add(Buyer buyer)
   
   {
   
-  return \_context.Buyers
+  return _context.Buyers
   
   .Add(buyer)
   
@@ -193,15 +193,15 @@ At the implementation level, a repository is simply a class with data persistenc
   
   }
   
-  public async Task&lt;Buyer&gt; **FindAsync**(string BuyerIdentityGuid)
+  public async Task<;Buyer> FindAsync(string BuyerIdentityGuid)
   
   {
   
-  var buyer = await \_context.Buyers
+  var buyer = await _context.Buyers
   
-  .Include(b =&gt; b.Payments)
+  .Include(b => b.Payments)
   
-  .Where(b =&gt; b.FullName == BuyerIdentityGuid)
+  .Where(b => b.FullName == BuyerIdentityGuid)
   
   .SingleOrDefaultAsync();
   
@@ -257,7 +257,7 @@ In order to do that, the instance of the DbContext object has to have its servic
   
   // Add framework services.
   
-  services.AddMvc(options =&gt;
+  services.AddMvc(options =>
   
   {
   
@@ -267,19 +267,19 @@ In order to do that, the instance of the DbContext object has to have its servic
   
   services.AddEntityFrameworkSqlServer()
   
-  **.AddDbContext&lt;OrderingContext&gt;**(options =&gt;
+  .AddDbContext<;OrderingContext>(options =>
   
   {
   
-  options.UseSqlServer(Configuration\["ConnectionString"\],
+  options.UseSqlServer(Configuration["ConnectionString"],
   
-  sqlop =&gt; sqlop.MigrationsAssembly(typeof(Startup).GetTypeInfo().
+  sqlop => sqlop.MigrationsAssembly(typeof(Startup).GetTypeInfo().
   
   Assembly.GetName().Name));
   
   },
   
-  **ServiceLifetime.Scoped** // Note that Scoped is the default choice
+  ServiceLifetime.Scoped // Note that Scoped is the default choice
   
   // in AddDbContext. It is shown here only for
   
@@ -299,11 +299,11 @@ In a similar way, repository’s lifetime should usually be set as scoped (Insta
 ```
   // Registering a Repository in Autofac IoC container
   
-  builder.RegisterType&lt;OrderRepository&gt;()
+  builder.RegisterType<;OrderRepository>()
   
-  .As&lt;IOrderRepository&gt;()
+  .As<;IOrderRepository>()
   
-  **.InstancePerLifetimeScope()**;
+  .InstancePerLifetimeScope();
 ```
 
 Note that using the singleton lifetime for the repository could cause you serious concurrency problems when your DbContext is set to scoped (InstancePerLifetimeScope) lifetime (the default lifetimes for a DBContext).
@@ -342,41 +342,41 @@ As mentioned, in order to change conventions and mappings, you can use the OnMod
   
   //Other entities
   
-  **modelBuilder.Entity&lt;OrderStatus&gt;(ConfigureOrderStatus);**
+  modelBuilder.Entity<;OrderStatus>(ConfigureOrderStatus);
   
   //Other entities
   
   }
   
-  void ConfigureOrder(EntityTypeBuilder&lt;Order&gt; orderConfiguration)
+  void ConfigureOrder(EntityTypeBuilder<;Order> orderConfiguration)
   
   {
   
-  orderConfiguration.ToTable("orders", DEFAULT\_SCHEMA);
+  orderConfiguration.ToTable("orders", DEFAULT_SCHEMA);
   
-  orderConfiguration.HasKey(o =&gt; o.Id);
+  orderConfiguration.HasKey(o => o.Id);
   
-  **orderConfiguration.Property(o =&gt; o.Id)**
+  orderConfiguration.Property(o => o.Id)
   
-  .ForSqlServerUseSequenceHiLo("orderseq", DEFAULT\_SCHEMA);
+  .ForSqlServerUseSequenceHiLo("orderseq", DEFAULT_SCHEMA);
   
-  orderConfiguration.Property&lt;DateTime&gt;("OrderDate").IsRequired();
+  orderConfiguration.Property<;DateTime>("OrderDate").IsRequired();
   
-  orderConfiguration.Property&lt;string&gt;("Street").IsRequired();
+  orderConfiguration.Property<;string>("Street").IsRequired();
   
-  orderConfiguration.Property&lt;string&gt;("State").IsRequired();
+  orderConfiguration.Property<;string>("State").IsRequired();
   
-  orderConfiguration.Property&lt;string&gt;("City").IsRequired();
+  orderConfiguration.Property<;string>("City").IsRequired();
   
-  orderConfiguration.Property&lt;string&gt;("ZipCode").IsRequired();
+  orderConfiguration.Property<;string>("ZipCode").IsRequired();
   
-  orderConfiguration.Property&lt;string&gt;("Country").IsRequired();
+  orderConfiguration.Property<;string>("Country").IsRequired();
   
-  orderConfiguration.Property&lt;int&gt;("BuyerId").IsRequired();
+  orderConfiguration.Property<;int>("BuyerId").IsRequired();
   
-  orderConfiguration.Property&lt;int&gt;("OrderStatusId").IsRequired();
+  orderConfiguration.Property<;int>("OrderStatusId").IsRequired();
   
-  orderConfiguration.Property&lt;int&gt;("PaymentMethodId").IsRequired();
+  orderConfiguration.Property<;int>("PaymentMethodId").IsRequired();
   
   var navigation =
   
@@ -388,9 +388,9 @@ As mentioned, in order to change conventions and mappings, you can use the OnMod
   
   // the OrderItem collection property as a field
   
-  **navigation.SetPropertyAccessMode(PropertyAccessMode.Field);**
+  navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
   
-  orderConfiguration.HasOne(o =&gt; o.PaymentMethod)
+  orderConfiguration.HasOne(o => o.PaymentMethod)
   
   .WithMany()
   
@@ -398,13 +398,13 @@ As mentioned, in order to change conventions and mappings, you can use the OnMod
   
   .OnDelete(DeleteBehavior.Restrict);
   
-  orderConfiguration.HasOne(o =&gt; o.Buyer)
+  orderConfiguration.HasOne(o => o.Buyer)
   
   .WithMany()
   
   .HasForeignKey("BuyerId");
   
-  orderConfiguration.HasOne(o =&gt; o.OrderStatus)
+  orderConfiguration.HasOne(o => o.OrderStatus)
   
   .WithMany()
   
@@ -472,11 +472,11 @@ As you can see in the [Address value object](https://github.com/dotnet-architect
 But under the covers, we need to provide an ID so that EF Core is able to persist this data in the database tables. We do that in the ConfigureAddress method of the [OrderingContext.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Infrastructure/OrderingContext.cs) class at the infrastructure level, so we do not pollute the domain model with EF infrastructure code.
 
 ```
-  void ConfigureAddress(EntityTypeBuilder&lt;Address&gt; addressConfiguration)
+  void ConfigureAddress(EntityTypeBuilder<;Address> addressConfiguration)
   
   {
   
-  addressConfiguration.ToTable("address", DEFAULT\_SCHEMA);
+  addressConfiguration.ToTable("address", DEFAULT_SCHEMA);
   
   // DDD pattern comment:
   
@@ -490,9 +490,9 @@ But under the covers, we need to provide an ID so that EF Core is able to persis
   
   // See: https://docs.microsoft.com/en-us/ef/core/modeling/shadow-properties
   
-  **addressConfiguration.Property&lt;int&gt;("Id").IsRequired();**
+  addressConfiguration.Property<;int>("Id").IsRequired();
   
-  **addressConfiguration.HasKey("Id");**
+  addressConfiguration.HasKey("Id");
   
   }
 ```

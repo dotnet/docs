@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -32,7 +32,7 @@ On the other hand, the purpose of integration events is to propagate committed t
 
 In addition, and as mentioned, integration events must be based on asynchronous communication between multiple microservices (other Bounded Contexts) or even external systems/applications. Thus, the event bus interface needs some infrastructure that allows inter-process and distributed communication between potentially remote services. It can be based on a commercial service bus, queues, a shared database used as a mailbox, or any other distributed and ideally push based messaging system.
 
-### Domain events as a preferred way to trigger side effects across multiple aggregates within the same domain
+## Domain events as a preferred way to trigger side effects across multiple aggregates within the same domain
 
 If executing a command related to one aggregate instance requires additional domain rules to be run on one or more additional aggregates, you should design and implement those side effects to be triggered by domain events. As shown in Figure 9-14, and as one of the most important use cases, a domain event should be used to propagate state changes across multiple aggregates within the same domain model.
 
@@ -82,5 +82,5 @@ When the total amount purchased by a customer in the store, across any number of
 
 
 >[!div class="step-by-step"]
-[Previous] (implementing-a-microservice-domain-model-with-net-core-.md)
+[Previous] (client-side-validation-(validation-in-the-presentation-layers).md)
 [Next] (implementing-domain-events.md)

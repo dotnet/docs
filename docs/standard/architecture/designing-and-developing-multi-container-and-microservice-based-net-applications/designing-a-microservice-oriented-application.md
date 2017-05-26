@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -82,7 +82,7 @@ As explained in the architecture section of this guide, the direct client-to-mic
 
 However, if you are going to design a large microservice-based application with dozens of microservices, we strongly recommend that you consider the API Gateway pattern, as we explained in the architecture section.
 
-#### Data sovereignty per microservice
+### Data sovereignty per microservice
 
 In the sample application, each microservice owns its own database or data source, and each database or data source is deployed as another container. This design decision was made only to make it easy for a developer to get the code from GitHub, clone it, and open it in Visual Studio or Visual Studio Code. Or alternatively, it makes it easy to compile the custom Docker images using .NET Core CLI and the Docker CLI, and then deploy and run them in a Docker development environment. Either way, using containers for data sources lets developers build and deploy in a matter of minutes without having to provision an external database or any other data source with hard dependencies on infrastructure (cloud or on-premises).
 
@@ -189,5 +189,5 @@ There is no silver bullet or a right architecture pattern for every given case. 
 
 
 >[!div class="step-by-step"]
-[Previous] (vision.md)
+[Previous] (index.md)
 [Next] (creating-a-simple-data-driven-crud-microservice.md)

@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -119,11 +119,11 @@ In order to maintain separation of aggregates and keep clear boundaries between 
   
   {
   
-  private DateTime \_orderDate;
+  private DateTime _orderDate;
   
   public Address Address { get; private set; }
   
-  **private int? \_buyerId;** //FK pointing to a different aggregate root
+  private int? _buyerId; //FK pointing to a different aggregate root
   
   public OrderStatus OrderStatus { get; private set; }
 ```

@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -34,13 +34,13 @@ The images for these containers are created the same way and function the same. 
 
 Figure 2-3 shows a comparison between VMs and Docker containers.
 
-```
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
   **Virtual Machines**                                                                                                                                                                  **Docker Containers**
                                                                                                                                                                                         
-  ![](./media/image3.png){width="2.85in" height="3.1in"}                                                                                                                                ![](./media/image4.png){width="3.136111111111111in" height="3.0993055555555555in"}
+  ![](./media/image3.png)                                                                                                                                ![](./media/image4.png)
                                                                                                                                                                                         
   Virtual machines include the application, the required libraries or binaries, and a full guest operating system. Full virtualization requires more resources than containerization.   Containers include the application and all its dependencies. However, they share the OS kernel with other containers, running as isolated processes in user space on the host operating system. (Except in Hyper-V containers, where each container runs inside of a special virtual machine per container.)
-```
+  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 **Figure 2-3**. Comparison of traditional virtual machines to Docker containers
 

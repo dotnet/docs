@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -48,7 +48,7 @@ The complex problems shown in Figure 4-21 are very hard to solve by yourself. De
 
 Different orchestrators might sound similar, but the diagnostics and health checks offered by each of them differ in features and state of maturity, sometimes depending on the OS platform, as explained in the next section.
 
-### Additional resources
+## Additional resources
 
 -   **The Twelve-Factor App. XI. Logs: Treat logs as event streams**
     [*https://12factor.net/logs*](https://12factor.net/logs)

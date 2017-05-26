@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -24,16 +24,16 @@ Finally, if you are using a REST architecture, [Hypermedia](https://www.infoq.co
 
 ## Additional resources
 
--   **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy** **
-    **<http://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx>
+-   **Scott Hanselman. ASP.NET Core RESTful Web API versioning made easy**
+    <http://www.hanselman.com/blog/ASPNETCoreRESTfulWebAPIVersioningMadeEasy.aspx>
 
--   **Versioning a RESTful web API** **
-    **[*https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design\#versioning-a-restful-web-api*](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
+-   **Versioning a RESTful web API**
+    [*https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design\#versioning-a-restful-web-api*](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 
--   **Roy Fielding. Versioning, Hypermedia, and REST** **
-    **<https://www.infoq.com/articles/roy-fielding-on-versioning>
+-   **Roy Fielding. Versioning, Hypermedia, and REST**
+    <https://www.infoq.com/articles/roy-fielding-on-versioning>
 
 
 >[!div class="step-by-step"]
-[Previous] (communication-between-microservices.md)
+[Previous] (asynchronous-message-based-communication.md)
 [Next] (microservices-addressability-and-the-service-registry.md)

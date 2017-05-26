@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -28,5 +28,5 @@ In short, containers offer the benefits of isolation, portability, agility, scal
 
 
 >[!div class="step-by-step"]
-[Previous] (../introduction/send-us-your-feedback.md)
+[Previous] (../introduction/index.md)
 [Next] (what-is-docker.md)

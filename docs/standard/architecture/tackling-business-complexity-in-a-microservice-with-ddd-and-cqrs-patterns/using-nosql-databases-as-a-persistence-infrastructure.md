@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -35,7 +35,7 @@ For instance, the following JSON code is a sample implementation of an order agg
   
   "buyerId": "1234567",
   
-  "address": \[
+  "address": [
   
   {
   
@@ -51,9 +51,9 @@ For instance, the following JSON code is a sample implementation of an order agg
   
   }
   
-  \],
+  ],
   
-  "orderItems": \[
+  "orderItems": [
   
   {"id": 20170011, "productId": "123456", "productName": ".NET T-Shirt",
   
@@ -63,7 +63,7 @@ For instance, the following JSON code is a sample implementation of an order agg
   
   "unitPrice": 15, "units": 1, "discount": 0}
   
-  \]
+  ]
   
   }
 ```
@@ -71,9 +71,9 @@ For instance, the following JSON code is a sample implementation of an order agg
 When you use a C\# model to implement the aggregate to be used by something like the Azure Document DB SDK, the aggregate is similar to the C\# POCO classes used with EF Core. The difference is in the way to use them from the application and infrastructure layers, as in the following code:
 
 ```
-  // C\# EXAMPLE OF AN ORDER AGGREGATE BEING PERSISTED WITH DOCUMENTDB API
+  // C# EXAMPLE OF AN ORDER AGGREGATE BEING PERSISTED WITH DOCUMENTDB API
   
-  **// \*\*\* Domain Model Code \*\*\***
+  // *** Domain Model Code ***
   
   // Aggregate: Create an Order object with its child entities and/or value objects.
   
@@ -153,15 +153,15 @@ When you use a C\# model to implement the aggregate to be used by something like
   
   //Using methods with domain logic within the entity. No anemic-domain model
   
-  **orderAggregate.AddOrderItem(orderItem1); **
+  orderAggregate.AddOrderItem(orderItem1);
   
-  **orderAggregate.AddOrderItem(orderItem2); **
+  orderAggregate.AddOrderItem(orderItem2);
   
-  // \*\*\* End of Domain Model Code \*\*\*
+  // *** End of Domain Model Code ***
   
   //...
   
-  // \*\*\* Infrastructure Code using Document DB Client API \*\*\*
+  // *** Infrastructure Code using Document DB Client API ***
   
   Uri collectionUri = UriFactory.CreateDocumentCollectionUri(databaseName,
   

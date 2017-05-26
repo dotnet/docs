@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -19,15 +19,15 @@ In eShopOnContainers, there is a container named sql.data defined in the [docker
 The SQL Server container in the sample application is configured with the following YAML code in the docker-compose.yml file, which is executed when you run docker-compose up. Note that the YAML code has consolidated configuration information from the generic docker-compose.yml file and the docker-compose.override.yml file. (Usually you would separate the environment settings from the base or static information related to the SQL Server image.)
 
 ```
-  **sql.data:**
+  sql.data:
   
   image: microsoft/mssql-server-linux
   
   environment:
   
-  - SA\_PASSWORD=your@password
+  - SA_PASSWORD=your@password
   
-  - ACCEPT\_EULA=Y
+  - ACCEPT_EULA=Y
   
   ports:
   
@@ -37,7 +37,7 @@ The SQL Server container in the sample application is configured with the follow
 The following docker run command can run that container:
 
 ```
-  docker run -e 'ACCEPT\_EULA=Y' -e 'SA\_PASSWORD= your@password' -p 1433:1433 -d microsoft/mssql-server-linux
+  docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD= your@password' -p 1433:1433 -d microsoft/mssql-server-linux
 ```
 
 However, if you are deploying a multi-container application like eShopOnContainers, it is more convenient to use the docker-compose up command so that it deploys all the required containers for the application.
@@ -139,11 +139,11 @@ The following code in the custom CatalogContextSeed class populates the data.
   
   }
   
-  static IEnumerable&lt;CatalogBrand&gt; GetPreconfiguredCatalogBrands()
+  static IEnumerable<;CatalogBrand> GetPreconfiguredCatalogBrands()
   
   {
   
-  return new List&lt;CatalogBrand&gt;()
+  return new List<;CatalogBrand>()
   
   {
   
@@ -159,11 +159,11 @@ The following code in the custom CatalogContextSeed class populates the data.
   
   }
   
-  static IEnumerable&lt;CatalogType&gt; GetPreconfiguredCatalogTypes()
+  static IEnumerable<;CatalogType> GetPreconfiguredCatalogTypes()
   
   {
   
-  return new List&lt;CatalogType&gt;()
+  return new List<;CatalogType>()
   
   {
   
@@ -199,19 +199,19 @@ Another good choice when running tests is to use the Entity Framework InMemory d
   
   {
   
-  services.AddSingleton&lt;IConfiguration&gt;(Configuration);
+  services.AddSingleton<;IConfiguration>(Configuration);
   
   // DbContext using an InMemory database provider
   
-  services.AddDbContext&lt;CatalogContext&gt;(opt =&gt; opt.UseInMemoryDatabase());
+  services.AddDbContext<;CatalogContext>(opt => opt.UseInMemoryDatabase());
   
   //(Alternative: DbContext using a SQL Server provider
   
-  //services.AddDbContext&lt;CatalogContext&gt;(c =&gt;
+  //services.AddDbContext<;CatalogContext>(c =>
   
   //{
   
-  // c.UseSqlServer(Configuration\["ConnectionString"\]);
+  // c.UseSqlServer(Configuration["ConnectionString"]);
   
   //
   

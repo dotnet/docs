@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -29,17 +29,17 @@ In the following example, you can see how .NET Core is injecting the required re
 ```
   // Sample command handler
   
-  public class **CreateOrderCommandHandler**
+  public class CreateOrderCommandHandler
   
-  : IAsyncRequestHandler&lt;CreateOrderCommand, bool&gt;
+  : IAsyncRequestHandler<;CreateOrderCommand, bool>
   
   {
   
-  private readonly IOrderRepository \_orderRepository;
+  private readonly IOrderRepository _orderRepository;
   
   // Constructor where Dependencies are injected
   
-  **public CreateOrderCommandHandler(IOrderRepository orderRepository**)
+  public CreateOrderCommandHandler(IOrderRepository orderRepository)
   
   {
   
@@ -51,11 +51,11 @@ In the following example, you can see how .NET Core is injecting the required re
   
   }
   
-  \_orderRepository = orderRepository;
+  _orderRepository = orderRepository;
   
   }
   
-  public async Task&lt;bool&gt; Handle(CreateOrderCommand message)
+  public async Task<;bool> Handle(CreateOrderCommand message)
   
   {
   
@@ -89,7 +89,7 @@ In the following example, you can see how .NET Core is injecting the required re
   
   {
   
-  **order.AddOrderItem**(item.ProductId, item.ProductName, item.UnitPrice,
+  order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
   
   item.Discount, item.PictureUrl, item.Units);
   
@@ -97,13 +97,13 @@ In the following example, you can see how .NET Core is injecting the required re
   
   //Persist the Order through the Repository
   
-  **\_orderRepository.Add(order);**
+  _orderRepository.Add(order);
   
-  var result = await \_orderRepository.UnitOfWork
+  var result = await _orderRepository.UnitOfWork
   
-  **.SaveEntitiesAsync();**
+  .SaveEntitiesAsync();
   
-  return result &gt; 0;
+  return result > 0;
   
   }
   
@@ -127,13 +127,13 @@ When you use the built-in IoC container provided by ASP.NET Core, you register t
   
   {
   
-  **// Register out-of-the-box framework services.**
+  // Register out-of-the-box framework services.
   
-  services.**AddDbContext&lt;CatalogContext&gt;**(c =&gt;
+  services.AddDbContext<;CatalogContext>(c =>
   
   {
   
-  c.UseSqlServer(Configuration\["ConnectionString"\]);
+  c.UseSqlServer(Configuration["ConnectionString"]);
   
   },
   
@@ -145,7 +145,7 @@ When you use the built-in IoC container provided by ASP.NET Core, you register t
   
   // Register custom application dependencies.
   
-  services.AddScoped&lt;IMyCustomRepository, MyCustomSQLRepository&gt;();
+  services.AddScoped<;IMyCustomRepository, MyCustomSQLRepository>();
   
   }
 ```
@@ -193,27 +193,27 @@ For example, the following is the [Autofac application module](https://github.co
   
   {
   
-  builder.Register(c =&gt; new OrderQueries(QueriesConnectionString))
+  builder.Register(c => new OrderQueries(QueriesConnectionString))
   
-  .As&lt;IOrderQueries&gt;()
-  
-  .InstancePerLifetimeScope();
-  
-  builder.RegisterType&lt;**BuyerRepository**&gt;()
-  
-  .As&lt;**IBuyerRepository**&gt;()
+  .As<;IOrderQueries>()
   
   .InstancePerLifetimeScope();
   
-  builder.RegisterType&lt;**OrderRepository**&gt;()
+  builder.RegisterType<;BuyerRepository>()
   
-  .As&lt;**IOrderRepository**&gt;()
+  .As<;IBuyerRepository>()
   
   .InstancePerLifetimeScope();
   
-  builder.RegisterType&lt;**RequestManager**&gt;()
+  builder.RegisterType<;OrderRepository>()
   
-  .As&lt;**IRequestManager**&gt;()
+  .As<;IOrderRepository>()
+  
+  .InstancePerLifetimeScope();
+  
+  builder.RegisterType<;RequestManager>()
+  
+  .As<;IRequestManager>()
   
   .InstancePerLifetimeScope();
   
@@ -298,71 +298,71 @@ The following example shows the simplified CreateOrderCommand class. This is an 
   
   // https://msdn.microsoft.com/en-us/library/bb383979.aspx
   
-  \[DataContract\]
+  [DataContract]
   
   public class CreateOrderCommand
   
-  :IAsyncRequest&lt;bool&gt;
+  :IAsyncRequest<;bool>
   
   {
   
-  \[DataMember\]
+  [DataMember]
   
-  private readonly List&lt;OrderItemDTO&gt; \_orderItems;
+  private readonly List<;OrderItemDTO> _orderItems;
   
-  \[DataMember\]
+  [DataMember]
   
   public string City { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public string Street { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public string State { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public string Country { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public string ZipCode { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public string CardNumber { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public string CardHolderName { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public DateTime CardExpiration { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public string CardSecurityNumber { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public int CardTypeId { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
-  public IEnumerable&lt;OrderItemDTO&gt; OrderItems =&gt; \_orderItems;
+  public IEnumerable<;OrderItemDTO> OrderItems => _orderItems;
   
   public CreateOrderCommand()
   
   {
   
-  \_orderItems = new List&lt;OrderItemDTO&gt;();
+  _orderItems = new List<;OrderItemDTO>();
   
   }
   
-  public CreateOrderCommand(List&lt;OrderItemDTO&gt; orderItems, string city,
+  public CreateOrderCommand(List<;OrderItemDTO> orderItems, string city,
   
   string street,
   
@@ -374,7 +374,7 @@ The following example shows the simplified CreateOrderCommand class. This is an 
   
   {
   
-  \_orderItems = orderItems;
+  _orderItems = orderItems;
   
   City = city;
   
@@ -428,23 +428,23 @@ For example, the command class for creating an order is probably similar in term
 Many command classes can be simple, requiring only a few fields about some state that needs to be changed. That would be the case if you are just changing the status of an order from “in process” to “paid” or “shipped” by using a command similar to the following:
 
 ```
-  \[DataContract\]
+  [DataContract]
   
   public class UpdateOrderStatusCommand
   
-  :IAsyncRequest&lt;bool&gt;
+  :IAsyncRequest<;bool>
   
   {
   
-  \[DataMember\]
+  [DataMember]
   
   public string Status { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public string OrderId { get; private set; }
   
-  \[DataMember\]
+  [DataMember]
   
   public string BuyerIdentityGuid { get; private set; }
   
@@ -482,13 +482,13 @@ As an example of a command handler class, the following code shows the same Crea
 ```
   public class CreateOrderCommandHandler
   
-  : IAsyncRequestHandler&lt;CreateOrderCommand, bool&gt;
+  : IAsyncRequestHandler<;CreateOrderCommand, bool>
   
   {
   
-  private readonly IBuyerRepository \_buyerRepository;
+  private readonly IBuyerRepository _buyerRepository;
   
-  private readonly IOrderRepository \_orderRepository;
+  private readonly IOrderRepository _orderRepository;
   
   public CreateOrderCommandHandler(IBuyerRepository buyerRepository,
   
@@ -512,13 +512,13 @@ As an example of a command handler class, the following code shows the same Crea
   
   }
   
-  \_buyerRepository = buyerRepository;
+  _buyerRepository = buyerRepository;
   
-  \_orderRepository = orderRepository;
+  _orderRepository = orderRepository;
   
   }
   
-  public async Task&lt;bool&gt; **Handle(CreateOrderCommand message)**
+  public async Task<;bool> Handle(CreateOrderCommand message)
   
   {
   
@@ -536,7 +536,7 @@ As an example of a command handler class, the following code shows the same Crea
   
   // make sure that consistency is preserved across the whole aggregate
   
-  var **order = new Order**(buyer.Id, payment.Id,
+  var order = new Order(buyer.Id, payment.Id,
   
   new Address(message.Street,
   
@@ -548,7 +548,7 @@ As an example of a command handler class, the following code shows the same Crea
   
   {
   
-  **order.AddOrderItem**(item.ProductId, item.ProductName, item.UnitPrice,
+  order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
   
   item.Discount, item.PictureUrl, item.Units);
   
@@ -556,9 +556,9 @@ As an example of a command handler class, the following code shows the same Crea
   
   // Persist the Order through the aggregate's repository
   
-  **\_orderRepository.Add(order);**
+  _orderRepository.Add(order);
   
-  return await \_orderRepository.UnitOfWork**.SaveChangesAsync();**
+  return await _orderRepository.UnitOfWork.SaveChangesAsync();
   
   }
   
@@ -661,7 +661,7 @@ First, let us take a look to the controller code where you actually would use th
   
   {
   
-  public OrdersController(**IMediator mediator**,
+  public OrdersController(IMediator mediator,
   
   IOrderQueries orderQueries)
   
@@ -671,17 +671,17 @@ First, let us take a look to the controller code where you actually would use th
 You can see that the mediator provides a clean and lean Web API controller constructor. In addition, within the controller methods, the code to send a command to the mediator object is almost one line:
 
 ```
-  \[Route("new")\]
+  [Route("new")]
   
-  \[HttpPost\]
+  [HttpPost]
   
-  public async Task&lt;IActionResult&gt; CreateOrder(\[FromBody\]CreateOrderCommand
+  public async Task<;IActionResult> CreateOrder([FromBody]CreateOrderCommand
   
   createOrderCommand)
   
   {
   
-  var commandResult = await **\_mediator.SendAsync(createOrderCommand);**
+  var commandResult = await _mediator.SendAsync(createOrderCommand);
   
   return commandResult ? (IActionResult)Ok() : (IActionResult)BadRequest();
   
@@ -701,23 +701,23 @@ The following code shows how to register Mediator’s types and commands when us
   
   {
   
-  builder.RegisterAssemblyTypes(typeof(**IMediator**).GetTypeInfo().Assembly)
+  builder.RegisterAssemblyTypes(typeof(IMediator).GetTypeInfo().Assembly)
   
   .AsImplementedInterfaces();
   
-  builder.RegisterAssemblyTypes(typeof(**CreateOrderCommand**).
+  builder.RegisterAssemblyTypes(typeof(CreateOrderCommand).
   
   GetTypeInfo().Assembly)
   
-  .As(o =&gt; o.GetInterfaces()
+  .As(o => o.GetInterfaces()
   
-  .Where(i =&gt; i.IsClosedTypeOf(typeof(**IAsyncRequestHandler**&lt;,&gt;)))
+  .Where(i => i.IsClosedTypeOf(typeof(IAsyncRequestHandler<;,>)))
   
-  .Select(i =&gt; new KeyedService("**IAsyncRequestHandler**", i)));
+  .Select(i => new KeyedService("IAsyncRequestHandler", i)));
   
-  builder.**RegisterGenericDecorator**(typeof(**LogDecorator**&lt;,&gt;),
+  builder.RegisterGenericDecorator(typeof(LogDecorator<;,>),
   
-  typeof(IAsyncRequestHandler&lt;,&gt;),
+  typeof(IAsyncRequestHandler<;,>),
   
   "IAsyncRequestHandler");
   
@@ -729,9 +729,9 @@ The following code shows how to register Mediator’s types and commands when us
 Because each command handler implements the interface with generic IAsyncRequestHandler&lt;T&gt; and then inspects the RegisteredAssemblyTypes object, the handler is able to relate each command with its command handler, because that relationship is stated in the CommandHandler class, as in the following example:
 
 ```
-  public class **CreateOrderCommandHandler**
+  public class CreateOrderCommandHandler
   
-  : IAsyncRequestHandler&lt;**CreateOrderCommand**, bool&gt;
+  : IAsyncRequestHandler<;CreateOrderCommand, bool>
   
   {
 ```
@@ -747,43 +747,43 @@ Again, note that a future version of eShopOnContainers it will migrate to [Media
 That [LogDecorator](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Decorators/LogDecorator.cs) class can be implemented as the following code, which logs information about the command handler being executed and whether it was successful or not.
 
 ```
-  public class **LogDecorator&lt;TRequest, TResponse&gt;**
+  public class LogDecorator<;TRequest, TResponse>
   
-  : **IAsyncRequestHandler**&lt;TRequest, TResponse&gt;
+  : IAsyncRequestHandler<;TRequest, TResponse>
   
-  where TRequest : IAsyncRequest&lt;TResponse&gt;
+  where TRequest : IAsyncRequest<;TResponse>
   
   {
   
-  private readonly IAsyncRequestHandler&lt;TRequest, TResponse&gt; \_inner;
+  private readonly IAsyncRequestHandler<;TRequest, TResponse> _inner;
   
-  private readonly ILogger&lt;LogDecorator&lt;TRequest, TResponse&gt;&gt; \_logger;
+  private readonly ILogger<;LogDecorator<;TRequest, TResponse>> _logger;
   
   public LogDecorator(
   
-  IAsyncRequestHandler&lt;TRequest, TResponse&gt; inner,
+  IAsyncRequestHandler<;TRequest, TResponse> inner,
   
-  ILogger&lt;LogDecorator&lt;TRequest, TResponse&gt;&gt; logger)
+  ILogger<;LogDecorator<;TRequest, TResponse>> logger)
   
   {
   
-  \_inner = inner;
+  _inner = inner;
   
-  \_logger = logger;
+  _logger = logger;
   
   }
   
-  public async Task&lt;TResponse&gt; Handle(TRequest message)
+  public async Task<;TResponse> Handle(TRequest message)
   
   {
   
-  \_logger.LogInformation(\$"Executing command {\_inner.GetType().FullName}");
+  _logger.LogInformation($"Executing command {_inner.GetType().FullName}");
   
-  var response = await \_inner.Handle(message);
+  var response = await _inner.Handle(message);
   
-  \_logger.LogInformation(\$"Succeeded executed command
+  _logger.LogInformation($"Succeeded executed command
   
-  {\_inner.GetType().FullName}");
+  {_inner.GetType().FullName}");
   
   return response;
   
@@ -797,43 +797,43 @@ Just by implementing this decorator class and by decorating the pipeline with it
 The eShopOnContainers ordering microservice also applies a second decorator for basic validations, the [ValidatorDecorator](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Decorators/ValidatorDecorator.cs) class that relies on the [FluentValidation](https://github.com/JeremySkinner/FluentValidation) library, as shown in the following code:
 
 ```
-  public class **ValidatorDecorator**&lt;TRequest, TResponse&gt;
+  public class ValidatorDecorator<;TRequest, TResponse>
   
-  : IAsyncRequestHandler&lt;TRequest, TResponse&gt;
+  : IAsyncRequestHandler<;TRequest, TResponse>
   
-  where TRequest : IAsyncRequest&lt;TResponse&gt;
+  where TRequest : IAsyncRequest<;TResponse>
   
   {
   
-  private readonly IAsyncRequestHandler&lt;TRequest, TResponse&gt; \_inner;
+  private readonly IAsyncRequestHandler<;TRequest, TResponse> _inner;
   
-  private readonly IValidator&lt;TRequest&gt;\[\] \_validators;
+  private readonly IValidator<;TRequest>[] _validators;
   
   public ValidatorDecorator(
   
-  IAsyncRequestHandler&lt;TRequest, TResponse&gt; inner,
+  IAsyncRequestHandler<;TRequest, TResponse> inner,
   
-  IValidator&lt;TRequest&gt;\[\] validators)
+  IValidator<;TRequest>[] validators)
   
   {
   
-  \_inner = inner;
+  _inner = inner;
   
-  \_validators = validators;
+  _validators = validators;
   
   }
   
-  public async Task&lt;TResponse&gt; Handle(TRequest message)
+  public async Task<;TResponse> Handle(TRequest message)
   
   {
   
-  var failures = \_validators
+  var failures = _validators
   
-  .Select(v =&gt; v.Validate(message))
+  .Select(v => v.Validate(message))
   
-  .SelectMany(result =&gt; result.Errors)
+  .SelectMany(result => result.Errors)
   
-  .Where(error =&gt; error != null)
+  .Where(error => error != null)
   
   .ToList();
   
@@ -843,13 +843,13 @@ The eShopOnContainers ordering microservice also applies a second decorator for 
   
   throw new OrderingDomainException(
   
-  \$"Command Validation Errors for type {typeof(TRequest).Name}",
+  $"Command Validation Errors for type {typeof(TRequest).Name}",
   
   new ValidationException("Validation exception", failures));
   
   }
   
-  var response = await \_inner.Handle(message);
+  var response = await _inner.Handle(message);
   
   return response;
   
@@ -861,7 +861,7 @@ The eShopOnContainers ordering microservice also applies a second decorator for 
 Then, based on the [FluentValidation](https://github.com/JeremySkinner/FluentValidation) library, we created validation for the data passed with CreateOrderCommand, as in the following code:
 
 ```
-  public class **CreateOrderCommandValidator : AbstractValidator&lt;CreateOrderCommand&gt;**
+  public class **CreateOrderCommandValidator : AbstractValidator<;CreateOrderCommand>**
   
   {
   
@@ -869,29 +869,29 @@ Then, based on the [FluentValidation](https://github.com/JeremySkinner/FluentVal
   
   {
   
-  RuleFor(command =&gt; command.City).NotEmpty();
+  RuleFor(command => command.City).NotEmpty();
   
-  RuleFor(command =&gt; command.Street).NotEmpty();
+  RuleFor(command => command.Street).NotEmpty();
   
-  RuleFor(command =&gt; command.State).NotEmpty();
+  RuleFor(command => command.State).NotEmpty();
   
-  RuleFor(command =&gt; command.Country).NotEmpty();
+  RuleFor(command => command.Country).NotEmpty();
   
-  RuleFor(command =&gt; command.ZipCode).NotEmpty();
+  RuleFor(command => command.ZipCode).NotEmpty();
   
-  RuleFor(command =&gt; command.CardNumber).NotEmpty().Length(12, 19);
+  RuleFor(command => command.CardNumber).NotEmpty().Length(12, 19);
   
-  RuleFor(command =&gt; command.CardHolderName).NotEmpty();
+  RuleFor(command => command.CardHolderName).NotEmpty();
   
-  RuleFor(command =&gt; command.CardExpiration).NotEmpty().Must(BeValidExpirationDate).
+  RuleFor(command => command.CardExpiration).NotEmpty().Must(BeValidExpirationDate).
   
   WithMessage("Please specify a valid card expiration date");
   
-  RuleFor(command =&gt; command.CardSecurityNumber).NotEmpty().Length(3);
+  RuleFor(command => command.CardSecurityNumber).NotEmpty().Length(3);
   
-  RuleFor(command =&gt; command.CardTypeId).NotEmpty();
+  RuleFor(command => command.CardTypeId).NotEmpty();
   
-  RuleFor(command =&gt; command.OrderItems).
+  RuleFor(command => command.OrderItems).
   
   Must(ContainOrderItems).WithMessage("No order items found");
   
@@ -901,11 +901,11 @@ Then, based on the [FluentValidation](https://github.com/JeremySkinner/FluentVal
   
   {
   
-  return dateTime &gt;= DateTime.UtcNow;
+  return dateTime >= DateTime.UtcNow;
   
   }
   
-  private bool ContainOrderItems(IEnumerable&lt;OrderItemDTO&gt; orderItems)
+  private bool ContainOrderItems(IEnumerable<;OrderItemDTO> orderItems)
   
   {
   

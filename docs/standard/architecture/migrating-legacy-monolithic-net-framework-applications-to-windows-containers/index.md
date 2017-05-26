@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -67,7 +67,7 @@ The DI container uses the web.config appSettings configuration to control whethe
   
   var settings = WebConfigurationManager.AppSettings;
   
-  var useFake = settings\["usefake"\];
+  var useFake = settings["usefake"];
   
   bool fake = useFake == "true";
   
@@ -77,9 +77,9 @@ The DI container uses the web.config appSettings configuration to control whethe
   
   {
   
-  builder.RegisterType&lt;CatalogMockService&gt;()
+  builder.RegisterType<;CatalogMockService>()
   
-  .As&lt;ICatalogService&gt;();
+  .As<;ICatalogService>();
   
   }
   
@@ -87,13 +87,13 @@ The DI container uses the web.config appSettings configuration to control whethe
   
   {
   
-  builder.RegisterType&lt;CatalogService&gt;()
+  builder.RegisterType<;CatalogService>()
   
-  .As&lt;ICatalogService&gt;();
+  .As<;ICatalogService>();
   
-  builder.RegisterType&lt;RequestProvider&gt;()
+  builder.RegisterType<;RequestProvider>()
   
-  .As&lt;IRequestProvider&gt;();
+  .As<;IRequestProvider>();
   
   }
   
@@ -119,7 +119,7 @@ The DI container uses the web.config appSettings configuration to control whethe
   
   var ctor = (from c in pageType.GetConstructors()
   
-  where c.GetParameters().Length &gt; 0
+  where c.GetParameters().Length > 0
   
   select c).FirstOrDefault();
   
@@ -155,9 +155,9 @@ The DI container uses the web.config appSettings configuration to control whethe
 The application’s pages (Default.aspx.cs and EditPage.aspx.cs) define constructors that take these dependencies. Note that the default constructor is still present and accessible. The infrastructure needs the following code.
 
 ```
-  protected \_Default() { }
+  protected _Default() { }
   
-  public \_Default(ICatalogService catalog) =&gt;
+  public _Default(ICatalogService catalog) =>
   
   this.catalog = catalog;
 ```
@@ -197,7 +197,7 @@ The following Dockerfile example shows the basic settings for building a Docker 
   
   WORKDIR /inetpub/wwwroot
   
-  COPY \${source:-obj/Docker/publish} .
+  COPY ${source:-obj/Docker/publish} .
 ```
 
 This Dockerfile will look very similar to those created for running an ASP.NET Core application in Linux containers. However, there are a few important differences. The most important difference is that the base image is microsoft/aspnet, which is the current Windows Server image that includes the .NET Framework. Other differences are that the directories copied from your source directory are different.

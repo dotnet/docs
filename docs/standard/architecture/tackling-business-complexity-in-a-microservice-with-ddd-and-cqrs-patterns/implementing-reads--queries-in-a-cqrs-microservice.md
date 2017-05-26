@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -51,7 +51,7 @@ When you use Dapper in your code, you directly use the SqlClient class available
 As shown in the following code from the ordering microservice, most of the ViewModels returned by the queries are implemented as *dynamic*. That means that the subset of attributes to be returned is based on the query itself. If you add a new column to the query or join, that data is dynamically added to the returned ViewModel. This approach reduces the need to modify queries in response to updates to the underlying data model, making this design approach more flexible and tolerant of future changes.
 
 ```
-  using **Dapper;**
+  using Dapper;
   
   using Microsoft.Extensions.Configuration;
   
@@ -67,29 +67,29 @@ As shown in the following code from the ordering microservice, most of the ViewM
   
   {
   
-  public **async Task&lt;IEnumerable&lt;dynamic&gt;&gt; GetOrdersAsync()**
+  public async Task<;IEnumerable<;dynamic>> GetOrdersAsync()
   
   {
   
-  using (var connection = new SqlConnection(\_connectionString))
+  using (var connection = new SqlConnection(_connectionString))
   
   {
   
   connection.Open();
   
-  return await connection.**QueryAsync&lt;dynamic&gt;**(@"SELECT o.\[Id\] as ordernumber,
+  return await connection.QueryAsync<;dynamic>(@"SELECT o.[Id] as ordernumber,
   
-  o.\[OrderDate\] as \[date\],os.\[Name\] as \[status\],
+  o.[OrderDate] as [date],os.[Name] as [status],
   
-  SUM(oi.units\*oi.unitprice) as total
+  SUM(oi.units*oi.unitprice) as total
   
-  FROM \[ordering\].\[Orders\] o
+  FROM [ordering].[Orders] o
   
-  LEFT JOIN\[ordering\].\[orderitems\] oi ON o.Id = oi.orderid
+  LEFT JOIN[ordering].[orderitems] oi ON o.Id = oi.orderid
   
-  LEFT JOIN\[ordering\].\[orderstatus\] os on o.OrderStatusId = os.Id
+  LEFT JOIN[ordering].[orderstatus] os on o.OrderStatusId = os.Id
   
-  GROUP BY o.\[Id\], o.\[OrderDate\], os.\[Name\]");
+  GROUP BY o.[Id], o.[OrderDate], os.[Name]");
   
   }
   

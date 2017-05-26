@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -47,7 +47,7 @@ Thus, each repository class implemented at the infrastructure layer implements i
   
   {
   
-  public class OrderRepository : **IOrderRepository**
+  public class OrderRepository : IOrderRepository
   
   {
 ```
@@ -55,7 +55,7 @@ Thus, each repository class implemented at the infrastructure layer implements i
 Each specific repository interface implements the generic IRepository interface:
 
 ```
-  public interface IOrderRepository **: IRepository&lt;Order&gt;**
+  public interface IOrderRepository : IRepository<;Order>
   
   {
   
@@ -69,7 +69,7 @@ Each specific repository interface implements the generic IRepository interface:
 However, a better way to have the code enforce the convention that each repository should be related to a single aggregate would be to implement a generic repository type so it is explicit that you are using a repository to target a specific aggregate. That can be easily done by implementing that generic in the IRepository base interface, as in the following code:
 
 ```
-  public interface **IRepository&lt;T&gt; where T : IAggregateRoot**
+  public interface IRepository<;T> where T : IAggregateRoot
 ```
 
 ### The Repository pattern makes it easier to test your application logic

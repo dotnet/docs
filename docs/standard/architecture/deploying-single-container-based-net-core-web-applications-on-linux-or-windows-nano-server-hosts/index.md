@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -40,7 +40,7 @@ The application uses a SQL Server database for the catalog storage. In container
 
 The initial feature set only enables browsing the catalog. Updates would enable the full feature set of the containerized application. A more advanced monolithic web application architecture is described in the [ASP.NET Web Application architecture practices](https://aka.ms/webappebook) eBook and related [eShopOnWeb sample application](http://aka.ms/WebAppArchitecture), although in that case it is not running on Docker containers because that scenario focuses on plain web development with ASP.NET Core.
 
-However, the simplified version available in eShopOnContainers ([eShopWeb](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Web/WebMonolithic)) runs in a Docker container.
+However, the simplified version available in eShopOnContainers (eShopWeb) runs in a Docker container.
 
 ## Docker support
 
@@ -71,13 +71,13 @@ The docker-compose.yml file contains information about what images to build and 
   
   dockerfile: Dockerfile
   
-  **depends\_on:**
+  depends_on:
   
-  **- sql.data**
+  - sql.data
   
-  **sql.data:**
+  sql.data:
   
-  **image: microsoft/mssql-server-linux**
+  image: microsoft/mssql-server-linux
 ```
 
 The depends\_on directive tells Docker that the eShopWeb image depends on the sql.data image. Lines below that are the instructions to build an image tagged sql.data using the microsoft/mssql-server-linux image.
@@ -99,19 +99,19 @@ The following example shows the docker-compose.vs.debug.yml file, which contains
   
   args:
   
-  source: \${DOCKER\_BUILD\_SOURCE}
+  source: ${DOCKER_BUILD_SOURCE}
   
   environment:
   
-  - DOTNET\_USE\_POLLING\_FILE\_WATCHER=1
+  - DOTNET_USE_POLLING_FILE_WATCHER=1
   
   volumes:
   
   - ./eShopWeb:/app
   
-  - \~/.nuget/packages:/root/.nuget/packages:ro
+  - ~/.nuget/packages:/root/.nuget/packages:ro
   
-  - \~/clrdbg:/clrdbg:ro
+  - ~/clrdbg:/clrdbg:ro
   
   entrypoint: tail -f /dev/null
   
@@ -135,9 +135,9 @@ The last file added is docker-compose.ci.build.yml. This would be used from the 
   
   - .:/src
   
-  working\_dir: /src
+  working_dir: /src
   
-  \# The following two lines in the document are one line in the YML file.
+  # The following two lines in the document are one line in the YML file.
   
   command: /bin/bash -c "dotnet restore ./eShopWeb.sln && dotnet publish
   

@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -33,9 +33,9 @@ Unit tests are implemented based on test frameworks like xUnit.net, MSTest, Moq,
 When you write a unit test for a Web API controller, you instantiate the controller class directly using the new keyword in C\#, so that the test will run as fast as possible. The following example shows how to do this when using [XUnit](https://xunit.github.io/) as the Test framework.
 
 ```
-  \[Fact\]
+  [Fact]
   
-  public void Add\_new\_Order\_raises\_new\_event()
+  public void Add_new_Order_raises_new_event()
   
   {
   
@@ -83,9 +83,9 @@ As you can see in the following code, when you create integration tests for ASP.
   
   {
   
-  private readonly TestServer \_server;
+  private readonly TestServer _server;
   
-  private readonly HttpClient \_client;
+  private readonly HttpClient _client;
   
   public PrimeWebDefaultRequestShould()
   
@@ -93,15 +93,15 @@ As you can see in the following code, when you create integration tests for ASP.
   
   // Arrange
   
-  **\_server = new TestServer(new WebHostBuilder()**
+  _server = new TestServer(new WebHostBuilder()
   
-  .UseStartup&lt;Startup&gt;());
+  .UseStartup<;Startup>());
   
-  **\_client = \_server.CreateClient();**
+  _client = _server.CreateClient();
   
   }
   
-  \[Fact\]
+  [Fact]
   
   public async Task ReturnHelloWorld()
   
@@ -109,7 +109,7 @@ As you can see in the following code, when you create integration tests for ASP.
   
   // Act
   
-  **var response = await \_client.GetAsync("/");**
+  var response = await _client.GetAsync("/");
   
   response.EnsureSuccessStatusCode();
   
@@ -158,5 +158,5 @@ There are a few approaches you can use. In the docker-compose.yml file that you 
 Once the compose application is up and running, you can take advantage of breakpoints and exceptions if you are running Visual Studio. Or you can run the integration tests automatically in your CI pipeline in Visual Studio Team Services or any other CI/CD system that supports Docker containers.
 
 >[!div class="step-by-step"]
-[Previous] (implementing-event-based-communication-between-microservices-(integration-events).md)
+[Previous] (subscribing-to-events.md)
 [Next] (../tackling-business-complexity-in-a-microservice-with-ddd-and-cqrs-patterns/index.md)

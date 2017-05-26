@@ -4,7 +4,7 @@ description: .NET Microservices Architecture for Containerized .NET Applications
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/19/2017
+ms.date: 05/26/2017
 ms.prod: .net-core
 ms.technology: dotnet-docker
 ---
@@ -67,11 +67,11 @@ For instance, in the following code you can see how the catalog microservice add
   
   // Add framework services
   
-  **services.AddHealthChecks(checks =&gt;**
+  services.AddHealthChecks(checks =>
   
   {
   
-  **checks.AddSqlCheck("CatalogDb", Configuration\["ConnectionString"\]);**
+  checks.AddSqlCheck("CatalogDb", Configuration["ConnectionString"]);
   
   });
   
@@ -97,19 +97,19 @@ However, the MVC web application of eShopOnContainers has multiple dependencies 
   
   services.AddMvc();
   
-  services.Configure&lt;AppSettings&gt;(Configuration);
+  services.Configure<;AppSettings>(Configuration);
   
-  **services.AddHealthChecks**(checks =&gt;
+  services.AddHealthChecks(checks =>
   
   {
   
-  **checks.AddUrlCheck(Configuration\["CatalogUrl"\]);**
+  checks.AddUrlCheck(Configuration["CatalogUrl"]);
   
-  **checks.AddUrlCheck(Configuration\["OrderingUrl"\]);**
+  checks.AddUrlCheck(Configuration["OrderingUrl"]);
   
-  **checks.AddUrlCheck(Configuration\["BasketUrl"\]);**
+  checks.AddUrlCheck(Configuration["BasketUrl"]);
   
-  **checks.AddUrlCheck(Configuration\["IdentityUrl"\]);**
+  checks.AddUrlCheck(Configuration["IdentityUrl"]);
   
   });
   
@@ -123,13 +123,13 @@ Thus, a microservice will not provide a “healthy” status until all its check
 If the microservice does not have a dependency on a service or on SQL Server, you should just add a Healthy("Ok") check. The following code is from the eShopOnContainers basket.api microservice. (The basket microservice uses the Redis cache, but the library does not yet include a Redis health check provider.)
 
 ```
-  services.AddHealthChecks(checks =&gt;
+  services.AddHealthChecks(checks =>
   
   {
   
-  checks.AddValueTaskCheck("HTTP Endpoint", () =&gt; new
+  checks.AddValueTaskCheck("HTTP Endpoint", () => new
   
-  ValueTask&lt;IHealthCheckResult&gt;(HealthCheckResult.Healthy("Ok")));
+  ValueTask<;IHealthCheckResult>(HealthCheckResult.Healthy("Ok")));
   
   });
 ```
@@ -145,7 +145,7 @@ For a service or web application to expose the health check endpoint, it has to 
   
   {
   
-  public static void Main(string\[\] args)
+  public static void Main(string[] args)
   
   {
   
@@ -153,13 +153,13 @@ For a service or web application to expose the health check endpoint, it has to 
   
   .UseKestrel()
   
-  **.UseHealthChecks("/hc")**
+  .UseHealthChecks("/hc")
   
   .UseContentRoot(Directory.GetCurrentDirectory())
   
   .UseIISIntegration()
   
-  .UseStartup&lt;Startup&gt;()
+  .UseStartup<;Startup>()
   
   .Build();
   
@@ -183,7 +183,7 @@ Since you do not want to cause a Denial of Service (DoS) in your services, or yo
 By default, the cache duration is internally set to 5 minutes, but you can change that cache duration on each health check, as in the following code:
 
 ```
-  checks.AddUrlCheck(Configuration\["CatalogUrl"\],1); // 1 min as cache duration
+  checks.AddUrlCheck(Configuration["CatalogUrl"],1); // 1 min as cache duration
 ```
 
 ### Querying your microservices to report about their health status
@@ -230,7 +230,7 @@ You can use simple custom applications showing the state of your services, like 
 
 Finally, if you were storing all the event streams, you can use Microsoft Power BI or a third-party solution like Kibana or Splunk to visualize the data.
 
-### Additional resources
+## Additional resources
 
 -   **ASP.NET Core HealthChecks** (early release)
     [*https://github.com/aspnet/HealthChecks/*](https://github.com/aspnet/HealthChecks/)
@@ -245,5 +245,5 @@ Finally, if you were storing all the event streams, you can use Microsoft Power 
     [*https://www.microsoft.com/en-us/cloud-platform/operations-management-suite*](https://www.microsoft.com/en-us/cloud-platform/operations-management-suite)
 
 >[!div class="step-by-step"]
-[Previous] (strategies-for-handling-partial-failure.md)
+[Previous] (implementing-the-circuit-breaker-pattern.md)
 [Next] (../securing-net-microservices-and-web-applications/index.md)

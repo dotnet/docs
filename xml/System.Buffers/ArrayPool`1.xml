@@ -17,12 +17,12 @@
   <Interfaces />
   <Docs>
     <typeparam name="T">The type of the objects that are in the resource pool.</typeparam>
-    <summary>Provides a resource pool that enables the reusing of instances of type <see cref="T:T[]"/>.</summary>
+    <summary>Provides a resource pool that enables reusing instances of type <see cref="T:T[]"/>.</summary>
     <remarks><format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
- Using the <see cref="T:System.Buffers.ArrayPool{T}"/> class to rent and return buffers (using the <see cref="M:System.Buffers.ArrayPool`1.Rent(System.Int32)"/> and <see cref="M:System.Buffers.ArrayPool`1.Return(`0[],System.Boolean)"/> methods) can increase performance in situations where arrays are created and destroyed frequently, resulting in significant memory pressure on the garbage collector.
+ Using the <see cref="T:System.Buffers.ArrayPool{T}"/> class to rent and return buffers (using the <see cref="M:System.Buffers.ArrayPool`1.Rent(System.Int32)"/> and <see cref="M:System.Buffers.ArrayPool`1.Return(`0[],System.Boolean)"/> methods) can improve performance in situations where arrays are created and destroyed frequently, resulting in significant memory pressure on the garbage collector.
 
  This class is thread-safe.  All members may be used by multiple threads concurrently. 
  ]]></format>
@@ -88,14 +88,14 @@
       <Docs>
         <param name="maxArrayLength">The maximum length of an array instance that may be stored in the pool.</param>
         <param name="maxArraysPerBucket">The maximum number of array instances that may be stored in each bucket in the pool. The pool groups arrays of similar lengths into buckets for faster access.</param>
-        <summary>Creates a new instance of the <see cref="ArrayPool{T}"/> class using the specifed configuration options.</summary>
-        <returns>A new instance of the <see cref="ArrayPool{T}"/> class with the specified configuration options.</returns>
+        <summary>Creates a new instance of the <see cref="ArrayPool{T}"/> class using the specifed configuration.</summary>
+        <returns>A new instance of the <see cref="ArrayPool{T}"/> class with the specified configuration.</returns>
         <remarks>
         <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
   
-The instance of the <see cref="ArrayPool{T}"/> class created by this method will group arrays into buckets, with no more than <paramref name="maxArraysPerBucket"/> in each bucket and with those arrays not exceeding <paramref name="maxArrayLength"/> in length.
+The instance of the <see cref="ArrayPool{T}"/> class created by this method will group arrays into buckets, with no more than <paramref name="maxArraysPerBucket"/> in each bucket, and with those arrays not exceeding <paramref name="maxArrayLength"/> in length.
  ]]></format>
         </remarks>
       </Docs>
@@ -185,7 +185,7 @@ Once a buffer has been returned to the pool, the caller gives up all ownership o
   
 ## Remarks  
 
-The shared pool provides a default implementation of the <see cref="ArrayPool{T}"/> class that's intended for general applicability. A shared class maintains arrays of multiple sizes, and may hand back a larger array than was actually requested, but will never hand back a smaller array than was requested. Renting a buffer from a shared class using the <see cref="Rent"/> method will result in an existing buffer being taken from the pool if an appropriate buffer is available or in a new buffer being allocated if one is not available.
+The shared pool provides a default implementation of the <see cref="ArrayPool{T}"/> class that's intended for general applicability. A shared class maintains arrays of multiple sizes, and may hand back a larger array than was actually requested, but it will never hand back a smaller array than was requested. Renting a buffer from a shared class using the <see cref="Rent"/> method will result in an existing buffer being taken from the pool if an appropriate buffer is available or in a new buffer being allocated if one is not available.
  ]]></format>
         </remarks>
       </Docs>

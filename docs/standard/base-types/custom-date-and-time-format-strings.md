@@ -344,11 +344,11 @@ A date and time format string defines the text representation of a <xref:System.
 ## The "K" custom format specifier  
  The "K" custom format specifier represents the time zone information of a date and time value. When this format specifier is used with <xref:System.DateTime> values, the result string is defined by the value of the <xref:System.DateTime.Kind%2A?displayProperty=fullName> property:  
   
--   For the local time zone (a <xref:System.DateTime.Kind%2A?displayProperty=fullName> property value of <xref:System.DateTimeKind?displayProperty=fullName>), this specifier is equivalent to the "zzz" specifier and produces a result string containing the local offset from Coordinated Universal Time (UTC); for example, "-07:00".  
+-   For the local time zone (a <xref:System.DateTime.Kind%2A?displayProperty=fullName> property value of <xref:System.DateTimeKind.Local?displayProperty=fullName>), this specifier is equivalent to the "zzz" specifier and produces a result string containing the local offset from Coordinated Universal Time (UTC); for example, "-07:00".  
   
--   For a UTC time (a <xref:System.DateTime.Kind%2A?displayProperty=fullName> property value of <xref:System.DateTimeKind?displayProperty=fullName>), the result string includes a "Z" character to represent a UTC date.  
+-   For a UTC time (a <xref:System.DateTime.Kind%2A?displayProperty=fullName> property value of <xref:System.DateTimeKind.Utc?displayProperty=fullName>), the result string includes a "Z" character to represent a UTC date.  
   
--   For a time from an unspecified time zone (a time whose <xref:System.DateTime.Kind%2A?displayProperty=fullName> property equals <xref:System.DateTimeKind?displayProperty=fullName>), the result is equivalent to <xref:System.String.Empty?displayProperty=fullName>.  
+-   For a time from an unspecified time zone (a time whose <xref:System.DateTime.Kind%2A?displayProperty=fullName> property equals <xref:System.DateTimeKind.Unspecified?displayProperty=fullName>), the result is equivalent to <xref:System.String.Empty?displayProperty=fullName>.  
   
  For <xref:System.DateTimeOffset> values, the "K" format specifier is equivalent to the "zz" format specifier, and produces a result string containing the <xref:System.DateTimeOffset> value's offset from UTC.  
   

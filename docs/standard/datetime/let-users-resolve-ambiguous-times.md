@@ -40,7 +40,7 @@ This topic shows how to let a user resolve an ambiguous time.
 
 5. Get the UTC date and time by subtracting the offset selected by the user from the local time.
 
-6. Call the `static` (`Shared` in Visual Basic .NET) <xref:System.DateTime.SpecifyKind%2A> method to set the UTC date and time value's <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind?displayProperty=fullName>.
+6. Call the `static` (`Shared` in Visual Basic .NET) <xref:System.DateTime.SpecifyKind%2A> method to set the UTC date and time value's <xref:System.DateTime.Kind%2A> property to <xref:System.DateTimeKind.Utc?displayProperty=fullName>.
 
 ## Example
 

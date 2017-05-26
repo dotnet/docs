@@ -119,5 +119,5 @@ Specifies whether socket operations use completion ports.
  <xref:System.Net.Configuration.SocketElement?displayProperty=fullName>   
  <xref:System.Net.Sockets?displayProperty=fullName>   
  <xref:System.Net.Sockets.IPProtectionLevel?displayProperty=fullName>   
- <xref:System.Net.Sockets.SocketOptionName?displayProperty=fullName>   
+ <xref:System.Net.Sockets.SocketOptionName.IPProtectionLevel?displayProperty=fullName>   
  [Network Settings Schema](../../../../../docs/framework/configure-apps/file-schema/network/index.md)

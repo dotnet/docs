@@ -363,7 +363,7 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
 2.  <xref:System.Windows.FrameworkElement.MaxHeight%2A?displayProperty=fullName> >  
   
-3.  <xref:System.Windows.SizeToContent?displayProperty=fullName>/                         <xref:System.Windows.SizeToContent?displayProperty=fullName> >  
+3.  <xref:System.Windows.SizeToContent.Height?displayProperty=fullName>/                         <xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=fullName> >  
   
 4.  <xref:System.Windows.FrameworkElement.Height%2A?displayProperty=fullName>  
   
@@ -373,7 +373,7 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
 2.  <xref:System.Windows.FrameworkElement.MaxWidth%2A?displayProperty=fullName> >  
   
-3.  <xref:System.Windows.SizeToContent?displayProperty=fullName>/                         <xref:System.Windows.SizeToContent?displayProperty=fullName> >  
+3.  <xref:System.Windows.SizeToContent.Width?displayProperty=fullName>/                         <xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=fullName> >  
   
 4.  <xref:System.Windows.FrameworkElement.Width%2A?displayProperty=fullName>  
   

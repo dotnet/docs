@@ -31,7 +31,7 @@ In many applications, a date and time value is intended to unambiguously identif
   
 3.  Retrieve the string that represents the <xref:System.DateTime> value.  
   
-4.  Call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, and pass <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> as the value of the `styles` parameter.  
+4.  Call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, and pass <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=fullName> as the value of the `styles` parameter.  
   
  The following example illustrates how to round-trip a <xref:System.DateTime> value.  
   
@@ -48,7 +48,7 @@ In many applications, a date and time value is intended to unambiguously identif
   
 3.  Retrieve the string that represents the <xref:System.DateTimeOffset> value.  
   
-4.  Call the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, and pass <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> as the value of the `styles` parameter.  
+4.  Call the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, and pass <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=fullName> as the value of the `styles` parameter.  
   
  The following example illustrates how to round-trip a <xref:System.DateTimeOffset> value.  
   

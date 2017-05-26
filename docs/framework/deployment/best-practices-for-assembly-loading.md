@@ -79,7 +79,7 @@ This article discusses ways to avoid problems of type identity that can lead to 
   
 -   If an assembly is loaded with <xref:System.Reflection.Assembly.LoadFrom%2A>, and the probing path includes an assembly with the same identity but in a different location, an <xref:System.InvalidCastException>, <xref:System.MissingMethodException>, or other unexpected behavior can occur.  
   
--   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=fullName> and <xref:System.Security.Permissions.FileIOPermissionAccess?displayProperty=fullName>, or <xref:System.Net.WebPermission>, on the specified path.  
+-   <xref:System.Reflection.Assembly.LoadFrom%2A> demands <xref:System.Security.Permissions.FileIOPermissionAccess.Read?displayProperty=fullName> and <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery?displayProperty=fullName>, or <xref:System.Net.WebPermission>, on the specified path.  
   
 -   If a native image exists for the assembly, it is not used.  
   

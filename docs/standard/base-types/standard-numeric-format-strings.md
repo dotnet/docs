@@ -31,7 +31,7 @@ Standard numeric format strings are used to format common numeric types. A stand
   
 -   `xx` is an optional integer called the *precision specifier*. The precision specifier ranges from 0 to 99 and affects the number of digits in the result. Note that the precision specifier controls the number of digits in the string representation of a number. It does not round the number itself. To perform a rounding operation, use the <xref:System.Math.Ceiling%2A?displayProperty=fullName>, <xref:System.Math.Floor%2A?displayProperty=fullName>, or <xref:System.Math.Round%2A?displayProperty=fullName> method.  
   
-     When *precision specifier* controls the number of fractional digits in the result string, the result strings reflect numbers that are rounded away from zero (that is, using <xref:System.MidpointRounding?displayProperty=fullName>).  
+     When *precision specifier* controls the number of fractional digits in the result string, the result strings reflect numbers that are rounded away from zero (that is, using <xref:System.MidpointRounding.AwayFromZero?displayProperty=fullName>).  
   
     > [!NOTE]
     >  The precision specifier determines the number of digits in the result string. To pad a result string with leading or trailing spaces, use the [composite formatting](../../../docs/standard/base-types/composite-formatting.md) feature and define an *alignment component* in the format item.  

@@ -24,11 +24,11 @@ Sessions create a shared state between two or more endpoints that enables useful
   
 2.  Modify the <xref:System.ServiceModel.ServiceContractAttribute?displayProperty=fullName> that declares the contract by setting the <xref:System.ServiceModel.ServiceContractAttribute.SessionMode%2A?displayProperty=fullName> property to either:  
   
-    -   <xref:System.ServiceModel.SessionMode?displayProperty=fullName> if this contract must be run within a session.  
+    -   <xref:System.ServiceModel.SessionMode.Required?displayProperty=fullName> if this contract must be run within a session.  
   
-    -   <xref:System.ServiceModel.SessionMode?displayProperty=fullName> if this contract can be run within a session.  
+    -   <xref:System.ServiceModel.SessionMode.Allowed?displayProperty=fullName> if this contract can be run within a session.  
   
-    -   <xref:System.ServiceModel.SessionMode?displayProperty=fullName> if this contract must not be run within a session.  
+    -   <xref:System.ServiceModel.SessionMode.NotAllowed?displayProperty=fullName> if this contract must not be run within a session.  
   
 3.  Configure your service endpoint to use a binding that supports sessions. The following configuration example shows the use of the <xref:System.ServiceModel.WSDualHttpBinding?displayProperty=fullName>, which supports a WS`-`ReliableMessaging session.  
   

@@ -37,7 +37,7 @@ This option adds a module that was created with the target:module switch to the 
   
 ## Syntax  
   
-```  
+```console  
 /addmodule:file[;file2]  
 ```  
   
@@ -57,7 +57,7 @@ This option adds a module that was created with the target:module switch to the 
 ## Example  
  Compile source file `input.cs` and add metadata from `metad1.netmodule` and `metad2.netmodule` to produce `out.exe`:  
   
-```  
+```console  
 csc /addmodule:metad1.netmodule;metad2.netmodule /out:out.exe input.cs  
 ```  
   

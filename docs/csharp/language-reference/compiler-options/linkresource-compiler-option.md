@@ -40,7 +40,7 @@ Creates a link to a .NET Framework resource in the output file. The resource fil
   
 ## Syntax  
   
-```  
+```console  
 /linkresource:filename[,identifier[,accessibility-modifier]]  
 ```  
   
@@ -70,14 +70,14 @@ Creates a link to a .NET Framework resource in the output file. The resource fil
 ## Example  
  Compile `in.cs` and link to resource file `rf.resource`:  
   
-```  
+```console  
 csc /linkresource:rf.resource in.cs  
 ```  
   
 ## Example  
  Compile `A.cs` into a DLL, link to a native DLL N.dll, and put the output in the Global Assembly Cache (GAC). In this example, both A.dll and N.dll will reside in the GAC.  
   
-```  
+```console  
 csc /linkresource:N.dll /t:library A.cs  
 gacutil -i A.dll  
 ```  
@@ -85,7 +85,7 @@ gacutil -i A.dll
 ## Example  
  This example does the same thing as the previous one, but by using Assembly Linker options.  
   
-```  
+```console  
 csc /t:module A.cs  
 al /out:A.dll A.netmodule /link:N.dll   
 gacutil -i A.dll  

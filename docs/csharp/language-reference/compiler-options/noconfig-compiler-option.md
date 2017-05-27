@@ -38,7 +38,7 @@ The **/noconfig** option tells the compiler not to compile with the csc.rsp file
   
 ## Syntax  
   
-```  
+```console  
 /noconfig  
 ```  
   

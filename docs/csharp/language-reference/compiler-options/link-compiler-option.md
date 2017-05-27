@@ -40,7 +40,7 @@ Causes the compiler to make COM type information in the specified assemblies ava
   
 ## Syntax  
   
-```  
+```console  
 /link:fileList  
 // -or-  
 /l:fileList  

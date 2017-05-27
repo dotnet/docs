@@ -93,12 +93,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.DataListDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.DataListDesigner.#ctor
 ms.technology: 
   - "dotnet-webforms"

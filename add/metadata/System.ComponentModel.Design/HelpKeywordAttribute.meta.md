@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.HelpKeywordAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.HelpKeywordAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

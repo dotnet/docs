@@ -34,13 +34,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementPath.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementPath.IsInstance
 ms.technology: 
   - "dotnet-standard"

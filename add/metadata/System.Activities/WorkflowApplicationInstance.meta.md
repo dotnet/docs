@@ -71,15 +71,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplicationInstance.Abandon
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.WorkflowApplicationInstance.BeginAbandon(System.TimeSpan,System.AsyncCallback,System.Object)
 ms.technology: 
   - "dotnet-standard"

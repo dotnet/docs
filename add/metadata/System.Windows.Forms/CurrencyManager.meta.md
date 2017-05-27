@@ -88,13 +88,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.CurrencyManager.GetItemProperties
-ms.technology: 
-  - "dotnet-winforms"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.CurrencyManager.OnPositionChanged(System.EventArgs)
 ms.technology: 
   - "dotnet-winforms"

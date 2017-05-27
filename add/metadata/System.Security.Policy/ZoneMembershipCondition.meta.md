@@ -98,15 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.ZoneMembershipCondition.ToXml
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.ZoneMembershipCondition.ToXml(System.Security.Policy.PolicyLevel)
 ms.technology: 
   - "dotnet-standard"

@@ -79,14 +79,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Hosting.HostingEnvironment.SetCultures
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "robmcm"
-manager: "wpickett"
----
-
----
 uid: System.Web.Hosting.HostingEnvironment.SiteName
 ms.technology: 
   - "dotnet-webforms"
@@ -263,14 +255,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Hosting.HostingEnvironment.IsHosted
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "robmcm"
-manager: "wpickett"
----
-
----
-uid: System.Web.Hosting.HostingEnvironment.Impersonate
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "robmcm"

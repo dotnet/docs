@@ -71,14 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.Design.DynamicFieldDesigner.CreateField
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.DynamicData.Design.DynamicFieldDesigner.IsEnabled(System.Web.UI.WebControls.DataBoundControl)
 ms.technology: 
   - "dotnet-webforms"

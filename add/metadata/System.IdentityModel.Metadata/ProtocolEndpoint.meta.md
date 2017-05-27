@@ -39,14 +39,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.ProtocolEndpoint.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Metadata.ProtocolEndpoint.ResponseLocation
 ms.technology: 
   - "dotnet-standard"

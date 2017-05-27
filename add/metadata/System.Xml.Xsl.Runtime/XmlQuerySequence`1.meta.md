@@ -329,15 +329,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.Runtime.XmlQuerySequence`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.Runtime.XmlQuerySequence`1.CreateOrReuse(System.Xml.Xsl.Runtime.XmlQuerySequence{`0})
 ms.technology: 
   - "dotnet-standard"

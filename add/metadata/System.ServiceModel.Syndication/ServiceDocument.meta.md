@@ -150,15 +150,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.ServiceDocument.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.ServiceDocument.GetFormatter
 ms.technology: 
   - "dotnet-standard"

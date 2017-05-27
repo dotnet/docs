@@ -61,15 +61,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DockingAttribute.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DockingAttribute.IsDefaultAttribute
 ms.technology: 
   - "dotnet-winforms"

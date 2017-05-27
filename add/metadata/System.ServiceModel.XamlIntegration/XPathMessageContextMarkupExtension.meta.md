@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.XamlIntegration.XPathMessageContextMarkupExtension.Namespaces
 ms.technology: 
   - "dotnet-standard"

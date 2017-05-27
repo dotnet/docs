@@ -47,12 +47,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.FilterRepeater.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.DynamicData.FilterRepeater.#ctor
 ms.technology: 
   - "dotnet-webforms"

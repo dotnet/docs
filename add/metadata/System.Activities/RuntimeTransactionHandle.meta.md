@@ -152,15 +152,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.RuntimeTransactionHandle.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.RuntimeTransactionHandle.AbortInstanceOnTransactionFailure
 ms.technology: 
   - "dotnet-standard"

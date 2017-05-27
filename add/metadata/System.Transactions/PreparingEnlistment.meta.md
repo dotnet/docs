@@ -13,13 +13,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.PreparingEnlistment.ForceRollback
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Transactions.PreparingEnlistment.Prepared
 ms.technology: 
   - "dotnet-standard"

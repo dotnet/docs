@@ -53,10 +53,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "jillfra"
 ---
-
----
-uid: System.Management.ManagementException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----

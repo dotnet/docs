@@ -471,14 +471,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.WSFederationAuthenticationModule.SignOut
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.WSFederationAuthenticationModule.SignIn(System.String)
 ms.technology: 
   - "dotnet-standard"

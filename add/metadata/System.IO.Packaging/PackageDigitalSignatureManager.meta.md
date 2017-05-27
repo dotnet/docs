@@ -206,15 +206,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Packaging.PackageDigitalSignatureManager.Countersign
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.IO.Packaging.PackageDigitalSignatureManager.CertificateOption
 ms.technology: 
   - "dotnet-standard"

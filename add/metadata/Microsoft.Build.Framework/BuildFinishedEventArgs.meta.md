@@ -29,12 +29,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.BuildFinishedEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.BuildFinishedEventArgs.Succeeded
 ms.author: "susanno"
 manager: "douge"

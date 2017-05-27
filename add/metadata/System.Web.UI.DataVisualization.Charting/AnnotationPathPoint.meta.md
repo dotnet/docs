@@ -31,14 +31,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.AnnotationPathPoint.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.AnnotationPathPoint.#ctor(System.Single,System.Single)
 ms.technology: 
   - "dotnet-webforms"

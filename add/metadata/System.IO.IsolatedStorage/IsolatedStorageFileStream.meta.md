@@ -152,15 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.IsolatedStorage.IsolatedStorageFileStream.Flush
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.IsolatedStorage.IsolatedStorageFileStream.Dispose
 ms.technology: 
   - "dotnet-standard"

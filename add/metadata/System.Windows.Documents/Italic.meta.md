@@ -17,14 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Italic.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Documents.Italic.#ctor(System.Windows.Documents.Inline,System.Windows.Documents.TextPointer)
 ms.technology: 
   - "dotnet-wpf"

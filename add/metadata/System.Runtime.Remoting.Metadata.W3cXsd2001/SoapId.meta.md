@@ -53,10 +53,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapId.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

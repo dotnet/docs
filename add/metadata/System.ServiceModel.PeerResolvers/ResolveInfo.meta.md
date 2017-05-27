@@ -31,14 +31,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.ResolveInfo.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.PeerResolvers.ResolveInfo.#ctor(System.Guid,System.String,System.Int32)
 ms.technology: 
   - "dotnet-standard"

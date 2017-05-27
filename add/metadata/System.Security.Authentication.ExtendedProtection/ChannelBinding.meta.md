@@ -10,13 +10,6 @@ manager: "markl"
 uid: System.Security.Authentication.ExtendedProtection.ChannelBinding.#ctor
 ms.technology: 
   - "dotnet-standard"
-manager: "markl"
----
-
----
-uid: System.Security.Authentication.ExtendedProtection.ChannelBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
 ms.author: "bobdel"
 manager: "markl"
 ---

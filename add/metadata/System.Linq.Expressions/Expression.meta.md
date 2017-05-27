@@ -2012,14 +2012,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Linq.Expressions.Expression.Rethrow
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "billchi"
-manager: "ghogen"
----
-
----
 uid: System.Linq.Expressions.Expression.Block(System.Collections.Generic.IEnumerable{System.Linq.Expressions.ParameterExpression},System.Linq.Expressions.Expression[])
 ms.technology: 
   - "dotnet-standard"
@@ -2338,15 +2330,6 @@ manager: "wpickett"
 
 ---
 uid: System.Linq.Expressions.Expression.Label(System.Type,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-
----
-uid: System.Linq.Expressions.Expression.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "BillWagner"
@@ -3597,15 +3580,6 @@ manager: "wpickett"
 
 ---
 uid: System.Linq.Expressions.Expression.ModuloAssign(System.Linq.Expressions.Expression,System.Linq.Expressions.Expression)
-ms.technology: 
-  - "dotnet-standard"
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-
----
-uid: System.Linq.Expressions.Expression.Label
 ms.technology: 
   - "dotnet-standard"
 author: "BillWagner"

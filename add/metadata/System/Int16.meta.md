@@ -215,15 +215,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Int16.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Int16.MinValue
 ms.technology: 
   - "dotnet-standard"

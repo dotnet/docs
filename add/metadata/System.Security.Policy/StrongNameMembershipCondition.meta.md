@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.StrongNameMembershipCondition.ToXml
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.StrongNameMembershipCondition.#ctor(System.Security.Permissions.StrongNamePublicKeyBlob,System.String,System.Version)
 ms.technology: 
   - "dotnet-standard"

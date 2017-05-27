@@ -51,15 +51,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DataTableMapping.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DataTableMapping.#ctor(System.String,System.String,System.Data.Common.DataColumnMapping[])
 ms.technology: 
   - "dotnet-ado"

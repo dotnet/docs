@@ -53,15 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.StreamUpgradeProvider.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.StreamUpgradeProvider.CreateUpgradeAcceptor
 ms.technology: 
   - "dotnet-standard"

@@ -272,15 +272,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.PictureBox.LoadAsync
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.PictureBox.InitialImage
 ms.technology: 
   - "dotnet-winforms"
@@ -369,15 +360,6 @@ manager: "ghogen"
 
 ---
 uid: System.Windows.Forms.PictureBox.Font
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.PictureBox.Load
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"

@@ -231,15 +231,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.StreamWriter.WriteLineAsync
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.StreamWriter.WriteAsync(System.Char)
 ms.technology: 
   - "dotnet-standard"

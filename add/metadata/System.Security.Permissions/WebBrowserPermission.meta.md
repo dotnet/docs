@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Permissions.WebBrowserPermission.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Permissions.WebBrowserPermission.ToXml
 ms.technology: 
   - "dotnet-standard"

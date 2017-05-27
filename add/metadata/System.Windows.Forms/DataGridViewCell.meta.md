@@ -265,14 +265,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewCell.Dispose
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.DataGridViewCell.BorderWidths(System.Windows.Forms.DataGridViewAdvancedBorderStyle)
 ms.technology: 
   - "dotnet-winforms"

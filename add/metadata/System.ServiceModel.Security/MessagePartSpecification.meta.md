@@ -81,10 +81,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "ghogen"
 ---
-
----
-uid: System.ServiceModel.Security.MessagePartSpecification.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

@@ -98,15 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IntPtr.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.IntPtr.op_Equality(System.IntPtr,System.IntPtr)
 ms.technology: 
   - "dotnet-standard"

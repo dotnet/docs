@@ -167,14 +167,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.Security.Claims.Claim.Clone
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.Security.Claims.Claim.CustomSerializationData
 ms.technology: 
   - "dotnet-standard"

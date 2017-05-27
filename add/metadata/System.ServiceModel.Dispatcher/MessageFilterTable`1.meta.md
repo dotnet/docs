@@ -188,15 +188,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Dispatcher.MessageFilterTable`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Dispatcher.MessageFilterTable`1.GetEnumerator
 ms.technology: 
   - "dotnet-standard"

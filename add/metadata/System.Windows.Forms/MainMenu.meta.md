@@ -8,14 +8,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.MainMenu.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.MainMenu.CreateMenuHandle
 ms.technology: 
   - "dotnet-winforms"
@@ -85,13 +77,6 @@ ms.technology:
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.MainMenu.CloneMenu
-ms.technology: 
-  - "dotnet-winforms"
-manager: "ghogen"
 ---
 
 ---

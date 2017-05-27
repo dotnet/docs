@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.Runtime.XmlQueryItemSequence.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.Runtime.XmlQueryItemSequence.CreateOrReuse(System.Xml.Xsl.Runtime.XmlQueryItemSequence)
 ms.technology: 
   - "dotnet-standard"

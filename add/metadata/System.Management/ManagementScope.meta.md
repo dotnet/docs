@@ -69,13 +69,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementScope.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementScope.#ctor(System.Management.ManagementPath,System.Management.ConnectionOptions)
 ms.technology: 
   - "dotnet-standard"

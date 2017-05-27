@@ -25,14 +25,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Material.ToString
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Media3D.Material.System#IFormattable#ToString(System.String,System.IFormatProvider)
 ms.technology: 
   - "dotnet-wpf"

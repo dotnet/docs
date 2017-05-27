@@ -60,12 +60,3 @@ author: "Xansky"
 ms.author: "mhopkins"
 manager: "ghogen"
 ---
-
----
-uid: System.Windows.Automation.ElementNotAvailableException.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "Xansky"
-ms.author: "mhopkins"
-manager: "ghogen"
----

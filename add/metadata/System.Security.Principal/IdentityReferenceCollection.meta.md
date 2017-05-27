@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Principal.IdentityReferenceCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Principal.IdentityReferenceCollection.Translate(System.Type)
 ms.technology: 
   - "dotnet-standard"

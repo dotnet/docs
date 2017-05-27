@@ -614,15 +614,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.MaskedTextBox.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.MaskedTextBox.CreateHandle
 ms.technology: 
   - "dotnet-winforms"

@@ -101,11 +101,3 @@ ms.technology:
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.Design.WebControls.ListViewDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----

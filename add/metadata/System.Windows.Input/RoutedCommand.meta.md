@@ -25,15 +25,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.RoutedCommand.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.RoutedCommand.OwnerType
 ms.technology: 
   - "dotnet-wpf"

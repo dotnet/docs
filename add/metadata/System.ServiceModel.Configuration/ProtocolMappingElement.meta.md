@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.ProtocolMappingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.ProtocolMappingElement.Scheme
 ms.technology: 
   - "dotnet-standard"

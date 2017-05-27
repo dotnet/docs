@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.EndpointIdentityExtension.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.EndpointIdentityExtension.ProvideValue(System.IServiceProvider)
 ms.technology: 
   - "dotnet-standard"

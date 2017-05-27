@@ -460,15 +460,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Controls.DocumentViewer.OnFitToMaxPagesAcrossCommand
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.DocumentViewer.ScrollPageUp
 ms.technology: 
   - "dotnet-wpf"
@@ -598,15 +589,6 @@ ms.technology:
   - "dotnet-wpf"
 ms.author: "kempb"
 manager: "ghogen"
----
-
----
-uid: System.Windows.Controls.DocumentViewer.FitToMaxPagesAcross
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
 ---
 
 ---

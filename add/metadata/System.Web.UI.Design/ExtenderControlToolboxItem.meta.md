@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ExtenderControlToolboxItem.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.ExtenderControlToolboxItem.#ctor(System.Type)
 ms.technology: 
   - "dotnet-webforms"

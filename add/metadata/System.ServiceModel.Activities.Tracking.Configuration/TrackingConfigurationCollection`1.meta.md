@@ -78,13 +78,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.CreateNewElement
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Activities.Tracking.Configuration.TrackingConfigurationCollection`1.RemoveAt(System.Int32)
 ms.technology: 
   - "dotnet-standard"

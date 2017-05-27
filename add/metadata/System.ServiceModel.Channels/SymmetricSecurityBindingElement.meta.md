@@ -44,15 +44,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.SymmetricSecurityBindingElement.MessageProtectionOrder
 ms.technology: 
   - "dotnet-standard"

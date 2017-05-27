@@ -8,14 +8,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.LinearRectKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.LinearRectKeyFrame.#ctor(System.Windows.Rect)
 ms.technology: 
   - "dotnet-wpf"

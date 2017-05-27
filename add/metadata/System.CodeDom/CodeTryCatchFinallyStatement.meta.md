@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTryCatchFinallyStatement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTryCatchFinallyStatement.#ctor(System.CodeDom.CodeStatement[],System.CodeDom.CodeCatchClause[])
 ms.technology: 
   - "dotnet-standard"

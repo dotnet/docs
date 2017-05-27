@@ -39,12 +39,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.MenuDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.MenuDesigner.CanRefreshSchema
 ms.technology: 
   - "dotnet-webforms"

@@ -154,13 +154,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.WorkflowRuntime.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.WorkflowRuntime.WorkflowAborted
 author: "Erikre"
 ms.author: "erikre"

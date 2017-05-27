@@ -17,14 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.MediaTimeline.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.MediaTimeline.FreezeCore(System.Boolean)
 ms.technology: 
   - "dotnet-wpf"
@@ -122,15 +114,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.MediaTimeline.CloneCore(System.Windows.Freezable)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.MediaTimeline.CreateClock
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

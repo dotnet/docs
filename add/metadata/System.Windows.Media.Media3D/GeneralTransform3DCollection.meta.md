@@ -223,15 +223,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.GeneralTransform3DCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.GeneralTransform3DCollection.Item(System.Int32)
 ms.technology: 
   - "dotnet-wpf"

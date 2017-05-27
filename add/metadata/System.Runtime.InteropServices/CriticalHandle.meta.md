@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices.CriticalHandle.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices.CriticalHandle.Close
 ms.technology: 
   - "dotnet-standard"

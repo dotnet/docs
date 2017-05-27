@@ -87,14 +87,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationException.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConfigurationException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-webforms"

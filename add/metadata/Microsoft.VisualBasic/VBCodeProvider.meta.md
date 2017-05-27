@@ -55,21 +55,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.VBCodeProvider.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.VBCodeProvider.GetConverter(System.Type)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.VBCodeProvider.CreateGenerator
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

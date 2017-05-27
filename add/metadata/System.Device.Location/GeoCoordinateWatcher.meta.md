@@ -69,13 +69,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Device.Location.GeoCoordinateWatcher.Dispose
-ms.technology: 
-  - "dotnet-standard"
-manager: "martinek"
----
-
----
 uid: System.Device.Location.GeoCoordinateWatcher.StatusChanged
 ms.technology: 
   - "dotnet-standard"
@@ -97,13 +90,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Device.Location.GeoCoordinateWatcher.Start
-ms.technology: 
-  - "dotnet-standard"
-manager: "martinek"
----
-
----
 uid: System.Device.Location.GeoCoordinateWatcher.MovementThreshold
 ms.technology: 
   - "dotnet-standard"
@@ -119,13 +105,6 @@ manager: "martinek"
 
 ---
 uid: System.Device.Location.GeoCoordinateWatcher.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-manager: "martinek"
----
-
----
-uid: System.Device.Location.GeoCoordinateWatcher.#ctor
 ms.technology: 
   - "dotnet-standard"
 manager: "martinek"

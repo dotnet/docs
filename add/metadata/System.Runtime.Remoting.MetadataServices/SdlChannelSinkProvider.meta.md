@@ -34,13 +34,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.MetadataServices.SdlChannelSinkProvider.Next
 ms.technology: 
   - "dotnet-standard"

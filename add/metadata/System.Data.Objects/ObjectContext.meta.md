@@ -350,15 +350,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Objects.ObjectContext.SaveChanges
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Objects.ObjectContext.CreateProxyTypes(System.Collections.Generic.IEnumerable{System.Type})
 ms.technology: 
   - "dotnet-ado"
@@ -387,15 +378,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Objects.ObjectContext.CreateQuery``1(System.String,System.Data.Objects.ObjectParameter[])
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Objects.ObjectContext.Dispose
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

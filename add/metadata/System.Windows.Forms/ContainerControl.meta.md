@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ContainerControl.ValidateChildren
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ContainerControl.Dispose
 ms.technology: 
   - "dotnet-winforms"
@@ -209,15 +200,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.ContainerControl.ParentForm
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ContainerControl.Validate
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"

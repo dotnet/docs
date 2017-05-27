@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Context.CustomReflectionContext.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Context.CustomReflectionContext.GetCustomAttributes(System.Reflection.MemberInfo,System.Collections.Generic.IEnumerable{System.Object})
 ms.technology: 
   - "dotnet-standard"

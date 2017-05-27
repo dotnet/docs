@@ -35,12 +35,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Execution.BuildParameters.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Execution.BuildParameters.NodeExeLocation
 ms.author: "susanno"
 manager: "douge"

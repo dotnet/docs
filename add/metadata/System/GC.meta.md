@@ -98,15 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.GC.WaitForFullGCComplete
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.GC.EndNoGCRegion
 ms.technology: 
   - "dotnet-standard"
@@ -162,15 +153,6 @@ manager: "wpickett"
 
 ---
 uid: System.GC.TryStartNoGCRegion(System.Int64,System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.GC.Collect
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -279,15 +261,6 @@ manager: "wpickett"
 
 ---
 uid: System.GC.KeepAlive(System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.GC.WaitForFullGCApproach
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

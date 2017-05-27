@@ -83,15 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SingleKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SingleKeyFrame.KeyTimeProperty
 ms.technology: 
   - "dotnet-wpf"

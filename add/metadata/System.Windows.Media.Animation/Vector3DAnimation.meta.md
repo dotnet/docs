@@ -70,15 +70,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Vector3DAnimation.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Vector3DAnimation.ByProperty
 ms.technology: 
   - "dotnet-wpf"

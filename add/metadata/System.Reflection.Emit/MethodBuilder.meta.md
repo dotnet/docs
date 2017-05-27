@@ -186,15 +186,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.MethodBuilder.GetILGenerator
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.MethodBuilder.GetToken
 ms.technology: 
   - "dotnet-standard"

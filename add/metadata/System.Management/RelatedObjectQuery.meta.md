@@ -123,10 +123,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "jillfra"
 ---
-
----
-uid: System.Management.RelatedObjectQuery.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----

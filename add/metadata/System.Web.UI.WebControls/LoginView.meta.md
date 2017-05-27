@@ -55,12 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.LoginView.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.WebControls.LoginView.CreateChildControls
 ms.technology: 
   - "dotnet-webforms"

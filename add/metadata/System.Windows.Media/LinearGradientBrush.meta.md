@@ -78,15 +78,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.LinearGradientBrush.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.LinearGradientBrush.#ctor(System.Windows.Media.GradientStopCollection,System.Double)
 ms.technology: 
   - "dotnet-wpf"

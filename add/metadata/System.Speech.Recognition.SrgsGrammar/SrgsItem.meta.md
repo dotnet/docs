@@ -111,14 +111,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SrgsGrammar.SrgsItem.#ctor(System.Int32)
 ms.technology: 
   - "dotnet-standard"

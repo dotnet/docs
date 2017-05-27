@@ -34,15 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridViewColumnDesignTimeVisibleAttribute.Equals(System.Object)
 ms.technology: 
   - "dotnet-winforms"

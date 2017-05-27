@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscretePointKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.DiscretePointKeyFrame.InterpolateValueCore(System.Windows.Point,System.Double)
 ms.technology: 
   - "dotnet-wpf"

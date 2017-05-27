@@ -1808,15 +1808,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Graphics.BeginContainer
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Graphics.GetContextInfo
 ms.technology: 
   - "dotnet-standard"
@@ -2231,15 +2222,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Graphics.Flush
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Graphics.FillEllipse(System.Drawing.Brush,System.Drawing.Rectangle)
 ms.technology: 
   - "dotnet-standard"
@@ -2475,15 +2457,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Graphics.DrawRectangle(System.Drawing.Pen,System.Single,System.Single,System.Single,System.Single)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Graphics.ReleaseHdc
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

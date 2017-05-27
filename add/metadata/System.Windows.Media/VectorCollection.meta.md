@@ -17,14 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.VectorCollection.ToString
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.VectorCollection.Insert(System.Int32,System.Windows.Vector)
 ms.technology: 
   - "dotnet-wpf"
@@ -272,15 +264,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.VectorCollection.System#Collections#Generic#IEnumerable{System#Windows#Vector}#GetEnumerator
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.VectorCollection.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

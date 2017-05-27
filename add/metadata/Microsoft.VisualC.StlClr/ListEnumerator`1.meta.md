@@ -29,12 +29,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.ListEnumerator`1.Dispose
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.ListEnumerator`1.Reset
 ms.author: "mblome"
 manager: "ghogen"

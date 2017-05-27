@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.CompositionException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.CompositionException.RootCauses
 ms.technology: 
   - "dotnet-standard"

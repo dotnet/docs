@@ -319,14 +319,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationElementCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConfigurationElementCollection.GetEnumerator
 ms.technology: 
   - "dotnet-webforms"
@@ -336,14 +328,6 @@ manager: "wpickett"
 
 ---
 uid: System.Configuration.ConfigurationElementCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Configuration.ConfigurationElementCollection.#ctor
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

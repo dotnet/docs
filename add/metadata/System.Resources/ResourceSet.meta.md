@@ -116,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Resources.ResourceSet.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Resources.ResourceSet.GetEnumerator
 ms.technology: 
   - "dotnet-standard"
@@ -171,15 +162,6 @@ manager: "wpickett"
 
 ---
 uid: System.Resources.ResourceSet.GetDefaultReader
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Resources.ResourceSet.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

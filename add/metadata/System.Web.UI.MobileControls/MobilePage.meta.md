@@ -197,12 +197,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.MobilePage.Validate
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.MobileControls.MobilePage.StyleSheetTheme
 ms.technology: 
   - "dotnet-webforms"

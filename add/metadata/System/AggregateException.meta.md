@@ -125,15 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AggregateException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AggregateException.GetBaseException
 ms.technology: 
   - "dotnet-standard"

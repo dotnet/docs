@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.MobileControls.Adapters.HtmlPageAdapter.#ctor(System.Int32)
 ms.technology: 
   - "dotnet-webforms"

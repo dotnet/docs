@@ -76,13 +76,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Http.HttpChannel.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Http.HttpChannel.ChannelScheme
 ms.technology: 
   - "dotnet-standard"

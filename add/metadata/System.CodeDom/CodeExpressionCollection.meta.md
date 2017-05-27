@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeExpressionCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeExpressionCollection.Contains(System.CodeDom.CodeExpression)
 ms.technology: 
   - "dotnet-standard"

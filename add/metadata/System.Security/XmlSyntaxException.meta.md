@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.XmlSyntaxException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.XmlSyntaxException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

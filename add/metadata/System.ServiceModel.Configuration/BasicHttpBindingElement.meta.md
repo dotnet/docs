@@ -44,15 +44,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.BasicHttpBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.BasicHttpBindingElement.Properties
 ms.technology: 
   - "dotnet-standard"

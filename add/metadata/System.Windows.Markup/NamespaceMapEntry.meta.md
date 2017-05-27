@@ -27,13 +27,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.NamespaceMapEntry.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.NamespaceMapEntry.ClrNamespace
 ms.technology: 
   - "dotnet-wpf"

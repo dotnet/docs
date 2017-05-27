@@ -53,14 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.QuadraticBezierSegment.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.QuadraticBezierSegment.Point1Property
 ms.technology: 
   - "dotnet-wpf"

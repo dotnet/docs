@@ -79,14 +79,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Threading.DispatcherTimer.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Threading.DispatcherTimer.#ctor(System.Windows.Threading.DispatcherPriority)
 ms.technology: 
   - "dotnet-wpf"

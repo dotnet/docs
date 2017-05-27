@@ -242,15 +242,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.CommunicationObject.Open
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.CommunicationObject.OnOpening
 ms.technology: 
   - "dotnet-standard"
@@ -323,15 +314,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.CommunicationObject.Close
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.CommunicationObject.BeginOpen
 ms.technology: 
   - "dotnet-standard"
@@ -360,15 +342,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Channels.CommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.CommunicationObject.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

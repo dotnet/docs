@@ -78,15 +78,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.AnimationTimeline.CreateClock
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.AnimationTimeline.IsDestinationDefault
 ms.technology: 
   - "dotnet-wpf"

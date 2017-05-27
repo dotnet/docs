@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.DesignerActionListCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.DesignerActionListCollection.#ctor(System.ComponentModel.Design.DesignerActionList[])
 ms.technology: 
   - "dotnet-standard"

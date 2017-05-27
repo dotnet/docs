@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.InArgument`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.InArgument`1.#ctor(System.Activities.DelegateArgument)
 ms.technology: 
   - "dotnet-standard"

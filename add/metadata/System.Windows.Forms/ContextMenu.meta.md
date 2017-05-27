@@ -94,15 +94,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ContextMenu.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ContextMenu.Show(System.Windows.Forms.Control,System.Drawing.Point,System.Windows.Forms.LeftRightAlignment)
 ms.technology: 
   - "dotnet-winforms"

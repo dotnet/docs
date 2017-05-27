@@ -167,15 +167,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.ItemContainerGenerator.System#Windows#Controls#Primitives#IItemContainerGenerator#GenerateNext
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.ItemContainerGenerator.ContainerFromItem(System.Object)
 ms.technology: 
   - "dotnet-wpf"

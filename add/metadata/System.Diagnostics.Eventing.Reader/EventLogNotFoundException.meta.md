@@ -37,11 +37,3 @@ ms.technology:
 ms.author: "jgalasyn"
 manager: "ghogen"
 ---
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogNotFoundException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----

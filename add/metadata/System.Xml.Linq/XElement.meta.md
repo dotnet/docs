@@ -377,15 +377,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XElement.DescendantsAndSelf
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XElement.System#Xml#Serialization#IXmlSerializable#GetSchema
 ms.technology: 
   - "dotnet-standard"
@@ -547,24 +538,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.Linq.XElement.FirstAttribute
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XElement.AncestorsAndSelf
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XElement.Attributes
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

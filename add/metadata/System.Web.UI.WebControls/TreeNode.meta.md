@@ -351,14 +351,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.TreeNode.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.TreeNode.Depth
 ms.technology: 
   - "dotnet-webforms"

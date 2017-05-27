@@ -70,15 +70,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridColumnStyle.DataGridColumnHeaderAccessibleObject.Owner
 ms.technology: 
   - "dotnet-winforms"

@@ -233,15 +233,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.Process.WaitForExit
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.Process.GetProcessesByName(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -629,15 +620,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.Process.GetProcesses
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.Process.EnterDebugMode
 ms.technology: 
   - "dotnet-standard"
@@ -648,15 +630,6 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.Process.GetProcessById
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.Process.Start
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -765,15 +738,6 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.Process.CloseMainWindow
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.Process.WaitForInputIdle
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

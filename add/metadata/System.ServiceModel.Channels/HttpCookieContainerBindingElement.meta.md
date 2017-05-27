@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.HttpCookieContainerBindingElement.Clone
 ms.technology: 
   - "dotnet-standard"

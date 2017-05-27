@@ -83,13 +83,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Dispose
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.MBindingCollection.Dispose(System.Boolean)
 author: "stevehoag"
 ms.author: "shoag"

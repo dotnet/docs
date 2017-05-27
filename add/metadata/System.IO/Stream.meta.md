@@ -233,15 +233,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Stream.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.Stream.CopyToAsync(System.IO.Stream,System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -351,15 +342,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.Stream.Close
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.Stream.FlushAsync
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

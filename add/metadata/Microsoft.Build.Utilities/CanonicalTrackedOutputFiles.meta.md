@@ -183,9 +183,3 @@ uid: Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.RemoveRootsWithShared
 ms.author: "susanno"
 manager: "douge"
 ---
-
----
-uid: Microsoft.Build.Utilities.CanonicalTrackedOutputFiles.SaveTlog
-ms.author: "susanno"
-manager: "douge"
----

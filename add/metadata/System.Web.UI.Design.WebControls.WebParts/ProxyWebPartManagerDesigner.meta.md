@@ -26,12 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.WebParts.ProxyWebPartManagerDesigner.Initialize(System.ComponentModel.IComponent)
 ms.technology: 
   - "dotnet-webforms"

@@ -41,12 +41,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.LoggerException.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.LoggerException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "susanno"
 manager: "douge"

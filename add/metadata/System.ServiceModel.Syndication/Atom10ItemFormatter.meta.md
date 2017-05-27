@@ -44,15 +44,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Atom10ItemFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.Atom10ItemFormatter.CanRead(System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"

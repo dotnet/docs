@@ -27,13 +27,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.TransactionAbortedException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Transactions.TransactionAbortedException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

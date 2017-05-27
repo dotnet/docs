@@ -130,15 +130,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Concurrent.ConcurrentBag`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Concurrent.ConcurrentBag`1.TryTake(`0@)
 ms.technology: 
   - "dotnet-standard"

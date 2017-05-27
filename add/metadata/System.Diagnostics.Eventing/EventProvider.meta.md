@@ -71,23 +71,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.EventProvider.Dispose
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.EventProvider.WriteTransferEvent
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.EventProvider.IsEnabled
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"

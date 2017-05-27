@@ -107,15 +107,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.Toolbox.ToolboxItemWrapper.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.Toolbox.ToolboxItemWrapper.BitmapName
 ms.technology: 
   - "dotnet-standard"

@@ -27,9 +27,3 @@ uid: System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.DescriptiveText
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerPresenceInfo.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

@@ -41,12 +41,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Conversion.ProjectFileConverter.ConvertInMemory
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Conversion.ProjectFileConverter.#ctor
 ms.author: "susanno"
 manager: "douge"
@@ -66,12 +60,6 @@ manager: "douge"
 
 ---
 uid: Microsoft.Build.Conversion.ProjectFileConverter.ConversionWarnings
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Conversion.ProjectFileConverter.Convert
 ms.author: "susanno"
 manager: "douge"
 ---

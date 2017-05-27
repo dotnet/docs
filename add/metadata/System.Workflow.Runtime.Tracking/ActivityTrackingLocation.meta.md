@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.Tracking.ActivityTrackingLocation.ExecutionStatusEvents
 author: "Erikre"
 ms.author: "erikre"

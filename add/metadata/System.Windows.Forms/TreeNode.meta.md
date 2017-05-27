@@ -152,14 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.TreeNode.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.TreeNode.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-winforms"
@@ -412,14 +404,6 @@ ms.technology:
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.TreeNode.Collapse
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---

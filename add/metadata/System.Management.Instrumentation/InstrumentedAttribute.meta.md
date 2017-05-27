@@ -39,10 +39,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "jillfra"
 ---
-
----
-uid: System.Management.Instrumentation.InstrumentedAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----

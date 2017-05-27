@@ -116,15 +116,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.Model.ModelItem.BeginEdit
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.Model.ModelItem.BeginEdit(System.String)
 ms.technology: 
   - "dotnet-standard"

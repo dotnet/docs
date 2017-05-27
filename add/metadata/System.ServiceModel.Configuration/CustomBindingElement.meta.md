@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.CustomBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.CustomBindingElement.SendTimeout
 ms.technology: 
   - "dotnet-standard"

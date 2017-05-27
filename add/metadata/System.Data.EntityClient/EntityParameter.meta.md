@@ -26,15 +26,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityParameter.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityClient.EntityParameter.SourceColumnNullMapping
 ms.technology: 
   - "dotnet-ado"

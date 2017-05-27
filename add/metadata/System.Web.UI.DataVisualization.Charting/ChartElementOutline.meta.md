@@ -15,14 +15,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartElementOutline.Dispose
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.ChartElementOutline.OutlinePath
 ms.technology: 
   - "dotnet-webforms"

@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.ServiceDescription.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.ServiceDescription.Behaviors
 ms.technology: 
   - "dotnet-standard"

@@ -47,14 +47,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.TreeNodeStyle.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.TreeNodeStyle.#ctor(System.Web.UI.StateBag)
 ms.technology: 
   - "dotnet-webforms"

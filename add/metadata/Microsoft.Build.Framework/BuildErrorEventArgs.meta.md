@@ -47,12 +47,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.BuildErrorEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.BuildErrorEventArgs.ColumnNumber
 ms.author: "susanno"
 manager: "douge"

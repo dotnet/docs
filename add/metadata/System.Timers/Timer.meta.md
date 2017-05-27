@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Timers.Timer.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Timers.Timer.Dispose
 ms.technology: 
   - "dotnet-standard"

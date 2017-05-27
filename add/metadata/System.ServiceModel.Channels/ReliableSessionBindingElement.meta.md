@@ -143,15 +143,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.ReliableSessionBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.ReliableSessionBindingElement.MaxTransferWindowSize
 ms.technology: 
   - "dotnet-standard"

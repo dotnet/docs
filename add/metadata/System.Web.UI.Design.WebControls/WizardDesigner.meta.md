@@ -111,14 +111,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.WizardDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.WizardDesigner.ResetTemplate(System.String,System.ComponentModel.IComponent,System.String)
 ms.technology: 
   - "dotnet-webforms"

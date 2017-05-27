@@ -83,13 +83,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.NetPeerTcpBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.NetPeerTcpBinding.Security
 ms.technology: 
   - "dotnet-standard"

@@ -449,15 +449,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Module.GetMethods
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Module.GetField
 ms.technology: 
   - "dotnet-standard"
@@ -522,15 +513,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.Module.ResolveType(System.Int32,System.Type[],System.Type[])
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Module.GetFields
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

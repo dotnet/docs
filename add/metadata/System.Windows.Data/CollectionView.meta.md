@@ -296,15 +296,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Data.CollectionView.OnCurrentChanging
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Data.CollectionView.GetItemAt(System.Int32)
 ms.technology: 
   - "dotnet-wpf"

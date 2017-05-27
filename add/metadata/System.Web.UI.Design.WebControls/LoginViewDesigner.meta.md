@@ -23,14 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.LoginViewDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.LoginViewDesigner.PreFilterProperties(System.Collections.IDictionary)
 ms.technology: 
   - "dotnet-webforms"

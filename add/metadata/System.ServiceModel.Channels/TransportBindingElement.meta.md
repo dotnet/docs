@@ -26,13 +26,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.TransportBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Channels.TransportBindingElement.MaxReceivedMessageSize
 ms.technology: 
   - "dotnet-standard"

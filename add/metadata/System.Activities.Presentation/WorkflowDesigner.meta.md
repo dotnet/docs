@@ -26,15 +26,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.WorkflowDesigner.Load
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.WorkflowDesigner.PropertyInspectorFontAndColorData
 ms.technology: 
   - "dotnet-standard"

@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetOutput
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor(System.Boolean,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -126,15 +117,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.GetOutput(System.Type)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigExcC14NTransform.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

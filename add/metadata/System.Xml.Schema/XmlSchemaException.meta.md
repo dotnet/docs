@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Schema.XmlSchemaException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Schema.XmlSchemaException.SourceSchemaObject
 ms.technology: 
   - "dotnet-standard"

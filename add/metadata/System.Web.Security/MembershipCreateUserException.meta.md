@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipCreateUserException.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.MembershipCreateUserException.StatusCode
 ms.technology: 
   - "dotnet-webforms"

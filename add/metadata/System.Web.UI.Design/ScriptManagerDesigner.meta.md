@@ -23,12 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ScriptManagerDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.ScriptManagerDesigner.GetProxyScript(System.Web.UI.ScriptManager,System.Web.UI.ServiceReference)
 ms.technology: 
   - "dotnet-webforms"

@@ -50,12 +50,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.ExtenderControlDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.ExtenderControlDesigner.#ctor
 ms.technology: 
   - "dotnet-webforms"

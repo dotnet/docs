@@ -62,15 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstanceCompleteException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.DurableInstancing.InstanceCompleteException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"

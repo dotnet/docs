@@ -55,14 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.HtmlControls.HtmlInputGenericControl.System#Web#UI#IPostBackDataHandler#RaisePostDataChangedEvent
 ms.technology: 
   - "dotnet-webforms"

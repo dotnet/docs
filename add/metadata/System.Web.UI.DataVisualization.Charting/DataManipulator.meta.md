@@ -407,14 +407,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.DataManipulator.ExportSeriesValues
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.DataManipulator.GroupByAxisLabel(System.String,System.Web.UI.DataVisualization.Charting.Series,System.Web.UI.DataVisualization.Charting.Series)
 ms.technology: 
   - "dotnet-webforms"

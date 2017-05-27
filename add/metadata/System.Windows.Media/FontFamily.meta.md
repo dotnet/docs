@@ -26,14 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.FontFamily.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.FontFamily.Baseline
 ms.technology: 
   - "dotnet-wpf"

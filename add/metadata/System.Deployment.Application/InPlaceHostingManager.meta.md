@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements(System.Boolean)
 ms.technology: 
   - "dotnet-standard"

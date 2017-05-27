@@ -52,14 +52,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.InputGestureCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Input.InputGestureCollection.SyncRoot
 ms.technology: 
   - "dotnet-wpf"

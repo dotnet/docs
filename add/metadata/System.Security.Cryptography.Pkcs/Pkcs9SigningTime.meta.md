@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.Pkcs9SigningTime.SigningTime
 ms.technology: 
   - "dotnet-standard"

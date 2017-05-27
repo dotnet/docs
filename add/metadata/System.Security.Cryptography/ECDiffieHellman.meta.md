@@ -76,15 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.ECDiffieHellman.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.ECDiffieHellman.ImportParameters(System.Security.Cryptography.ECParameters)
 author: "mairaw"
 ms.author: "mairaw"

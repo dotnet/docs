@@ -580,13 +580,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Immutable.ImmutableList`1.Sort
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Immutable.ImmutableList`1.System#Collections#Generic#IList{T}#Insert(System.Int32,`0)
 author: "mairaw"
 ms.author: "mairaw"
@@ -609,13 +602,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Immutable.ImmutableList`1.System#Collections#IList#Add(System.Object)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Immutable.ImmutableList`1.Reverse
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

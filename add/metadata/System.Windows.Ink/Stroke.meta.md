@@ -309,15 +309,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Ink.Stroke.GetGeometry
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Ink.Stroke.RemovePropertyData(System.Guid)
 ms.technology: 
   - "dotnet-wpf"

@@ -278,15 +278,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Byte.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Byte.MinValue
 ms.technology: 
   - "dotnet-standard"

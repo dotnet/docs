@@ -55,13 +55,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.AccountManagement.PrincipalOperationException.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.AccountManagement.PrincipalOperationException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

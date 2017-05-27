@@ -350,15 +350,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.Matrix.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Drawing2D.Matrix.Clone
 ms.technology: 
   - "dotnet-standard"

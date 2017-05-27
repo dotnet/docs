@@ -125,15 +125,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.NetNamedPipeBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.NetNamedPipeBindingElement.InitializeFrom(System.ServiceModel.Channels.Binding)
 ms.technology: 
   - "dotnet-standard"

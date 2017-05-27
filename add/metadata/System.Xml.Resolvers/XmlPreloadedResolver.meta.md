@@ -116,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Resolvers.XmlPreloadedResolver.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Resolvers.XmlPreloadedResolver.Add(System.Uri,System.Byte[],System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"

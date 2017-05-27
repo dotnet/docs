@@ -55,13 +55,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Design.IMemberCreationService.ShowCode
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.Design.IMemberCreationService.RemoveProperty(System.String,System.String,System.Type)
 author: "Erikre"
 ms.author: "erikre"

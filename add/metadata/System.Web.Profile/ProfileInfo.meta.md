@@ -31,14 +31,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Profile.ProfileInfo.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.Profile.ProfileInfo.IsAnonymous
 ms.technology: 
   - "dotnet-webforms"

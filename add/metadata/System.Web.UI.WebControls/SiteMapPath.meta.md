@@ -39,12 +39,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.SiteMapPath.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.WebControls.SiteMapPath.RenderCurrentNodeAsLink
 ms.technology: 
   - "dotnet-webforms"

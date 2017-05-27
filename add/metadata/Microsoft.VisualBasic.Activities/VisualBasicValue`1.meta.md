@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Activities.VisualBasicValue`1.ExpressionText
 author: "stevehoag"
 ms.author: "shoag"

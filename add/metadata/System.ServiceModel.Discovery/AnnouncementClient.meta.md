@@ -89,24 +89,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Open
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.AnnouncementClient.System#ServiceModel#ICommunicationObject#Close
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.AnnouncementClient.AnnounceOnline(System.ServiceModel.Discovery.EndpointDiscoveryMetadata)
 ms.technology: 
   - "dotnet-standard"
@@ -180,15 +162,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Discovery.AnnouncementClient.System#IDisposable#Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.AnnouncementClient.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

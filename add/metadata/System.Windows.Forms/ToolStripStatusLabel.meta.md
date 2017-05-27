@@ -69,15 +69,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripStatusLabel.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripStatusLabel.#ctor(System.String,System.Drawing.Image,System.EventHandler)
 ms.technology: 
   - "dotnet-winforms"

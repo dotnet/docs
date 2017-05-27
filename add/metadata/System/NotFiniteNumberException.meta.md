@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.NotFiniteNumberException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.NotFiniteNumberException.OffendingNumber
 ms.technology: 
   - "dotnet-standard"

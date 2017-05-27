@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Barrier.SignalAndWait
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Barrier.#ctor(System.Int32,System.Action{System.Threading.Barrier})
 ms.technology: 
   - "dotnet-standard"
@@ -171,15 +162,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.Barrier.SignalAndWait(System.Threading.CancellationToken)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.Barrier.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

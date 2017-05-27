@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlDsigXPathTransform.GetOutput
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.XmlDsigXPathTransform.GetInnerXml
 ms.technology: 
   - "dotnet-standard"

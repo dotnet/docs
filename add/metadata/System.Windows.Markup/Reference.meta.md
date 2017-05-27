@@ -27,13 +27,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.Reference.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.Reference.#ctor(System.String)
 ms.technology: 
   - "dotnet-wpf"

@@ -141,15 +141,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.UdpBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.UdpBinding.MaxPendingMessagesTotalSize
 ms.technology: 
   - "dotnet-standard"

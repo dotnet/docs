@@ -31,14 +31,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.ChunkedCookieHandler.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.ChunkedCookieHandler.DefaultChunkSize
 ms.technology: 
   - "dotnet-standard"

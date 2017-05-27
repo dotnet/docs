@@ -179,15 +179,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.TextWriter.WriteLine
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.TextWriter.CoreNewLine
 ms.technology: 
   - "dotnet-standard"
@@ -261,15 +252,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.TextWriter.Write(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.TextWriter.WriteLineAsync
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -378,15 +360,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.TextWriter.WriteLine(System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.TextWriter.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -531,15 +504,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.TextWriter.Write(System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.TextWriter.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

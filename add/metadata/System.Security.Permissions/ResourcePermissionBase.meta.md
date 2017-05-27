@@ -152,15 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Permissions.ResourcePermissionBase.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Permissions.ResourcePermissionBase.Any
 ms.technology: 
   - "dotnet-standard"

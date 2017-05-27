@@ -27,13 +27,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.DeleteRequest.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.DeleteRequest.#ctor(System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

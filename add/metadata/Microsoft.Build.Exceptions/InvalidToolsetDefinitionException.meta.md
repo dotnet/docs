@@ -51,9 +51,3 @@ uid: Microsoft.Build.Exceptions.InvalidToolsetDefinitionException.ErrorCode
 ms.author: "susanno"
 manager: "douge"
 ---
-
----
-uid: Microsoft.Build.Exceptions.InvalidToolsetDefinitionException.#ctor
-ms.author: "susanno"
-manager: "douge"
----

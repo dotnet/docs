@@ -467,15 +467,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.GenericTypeParameterBuilder.MakeArrayType
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.IsAssignableFrom(System.Reflection.TypeInfo)
 ms.technology: 
   - "dotnet-standard"
@@ -572,15 +563,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.Emit.GenericTypeParameterBuilder.DeclaringType
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Emit.GenericTypeParameterBuilder.GetEvents
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

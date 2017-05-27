@@ -23,12 +23,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Evaluation.Toolset.GenerateSubToolsetVersion
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Evaluation.Toolset.Properties
 ms.author: "susanno"
 manager: "douge"

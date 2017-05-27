@@ -37,8 +37,3 @@ ms.author: "mikejo"
 uid: Microsoft.JScript.ScriptStream.WriteLine(System.String)
 ms.author: "mikejo"
 ---
-
----
-uid: Microsoft.JScript.ScriptStream.PrintStackTrace
-ms.author: "mikejo"
----

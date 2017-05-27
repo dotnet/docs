@@ -1063,14 +1063,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Control.ResumeLayout
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.Control.Enter
 ms.technology: 
   - "dotnet-winforms"
@@ -1774,14 +1766,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Control.Select
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.Control.DpiChangedAfterParent
 author: "stevehoag"
 ms.author: "shoag"
@@ -2006,14 +1990,6 @@ ms.technology:
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Control.UpdateBounds
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---
@@ -2452,15 +2428,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Control.Invalidate
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Control.OnMove(System.EventArgs)
 ms.technology: 
   - "dotnet-winforms"
@@ -2723,15 +2690,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.Control.PreviewKeyDown
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Control.#ctor
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -3046,15 +3004,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.Control.CreateHandle
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Control.PerformLayout
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"

@@ -59,14 +59,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DecimalKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.DecimalKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value
 ms.author: "jimwalk"
 manager: "martinek"

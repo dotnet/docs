@@ -191,14 +191,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.BindingNavigator.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.BindingNavigator.MoveFirstItem
 ms.technology: 
   - "dotnet-winforms"

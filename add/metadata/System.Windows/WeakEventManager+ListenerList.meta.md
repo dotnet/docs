@@ -133,15 +133,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.WeakEventManager.ListenerList.PrepareForWriting(System.Windows.WeakEventManager.ListenerList@)
 ms.technology: 
   - "dotnet-wpf"

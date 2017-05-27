@@ -44,14 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.MouseGesture.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Input.MouseGesture.Matches(System.Object,System.Windows.Input.InputEventArgs)
 ms.technology: 
   - "dotnet-wpf"

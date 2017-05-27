@@ -125,15 +125,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Web.OutgoingWebResponseContext.SetStatusAsNotFound
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Web.OutgoingWebResponseContext.SetETag(System.Guid)
 ms.technology: 
   - "dotnet-standard"

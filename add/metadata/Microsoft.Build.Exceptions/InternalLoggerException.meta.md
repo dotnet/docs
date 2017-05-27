@@ -29,12 +29,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Exceptions.InternalLoggerException.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Exceptions.InternalLoggerException.#ctor(System.String,System.Exception)
 ms.author: "susanno"
 manager: "douge"

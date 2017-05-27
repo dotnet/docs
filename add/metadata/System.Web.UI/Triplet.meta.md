@@ -47,14 +47,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Triplet.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Triplet.Third
 ms.technology: 
   - "dotnet-webforms"

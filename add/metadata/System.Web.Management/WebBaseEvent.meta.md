@@ -152,15 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Management.WebBaseEvent.ToString
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Management.WebBaseEvent.EventID
 ms.technology: 
   - "dotnet-webforms"
@@ -171,15 +162,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Management.WebBaseEvent.ToString(System.Boolean,System.Boolean)
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Management.WebBaseEvent.Raise
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

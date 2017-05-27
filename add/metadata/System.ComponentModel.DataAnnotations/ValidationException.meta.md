@@ -47,14 +47,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DataAnnotations.ValidationException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-webforms"

@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.EventInfo.GetOtherMethods
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.EventInfo.IsSpecialName
 ms.technology: 
   - "dotnet-standard"
@@ -144,15 +135,6 @@ manager: "wpickett"
 
 ---
 uid: System.Reflection.EventInfo.AddEventHandler(System.Object,System.Delegate)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.EventInfo.GetAddMethod
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -260,25 +242,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.EventInfo.GetRemoveMethod
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.EventInfo.AddMethod
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.EventInfo.GetRaiseMethod
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -32,8 +32,3 @@ ms.author: "mikejo"
 uid: Microsoft.JScript.ContinueOutOfFinally.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.author: "mikejo"
 ---
-
----
-uid: Microsoft.JScript.ContinueOutOfFinally.#ctor
-ms.author: "mikejo"
----

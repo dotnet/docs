@@ -384,13 +384,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueue.BeginReceive
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueue.BeginPeek
 ms.technology: 
   - "dotnet-standard"
@@ -412,13 +405,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueue.GetMessageQueueEnumerator
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueue.BeginReceive(System.TimeSpan,System.Object,System.AsyncCallback)
 ms.technology: 
   - "dotnet-standard"
@@ -434,13 +420,6 @@ manager: "tyoung"
 
 ---
 uid: System.Messaging.MessageQueue.SetPermissions(System.Messaging.AccessControlList)
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
-uid: System.Messaging.MessageQueue.BeginPeek
 ms.technology: 
   - "dotnet-standard"
 manager: "tyoung"
@@ -600,13 +579,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueue.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueue.ReceiveById(System.String,System.TimeSpan)
 ms.technology: 
   - "dotnet-standard"
@@ -636,13 +608,6 @@ manager: "tyoung"
 
 ---
 uid: System.Messaging.MessageQueue.Send(System.Object,System.Messaging.MessageQueueTransaction)
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
-uid: System.Messaging.MessageQueue.Receive
 ms.technology: 
   - "dotnet-standard"
 manager: "tyoung"
@@ -719,13 +684,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueue.GetPublicQueues
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueue.ClearConnectionCache
 ms.technology: 
   - "dotnet-standard"
@@ -762,13 +720,6 @@ manager: "tyoung"
 
 ---
 uid: System.Messaging.MessageQueue.GetPublicQueues(System.Messaging.MessageQueueCriteria)
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
-uid: System.Messaging.MessageQueue.Peek
 ms.technology: 
   - "dotnet-standard"
 manager: "tyoung"

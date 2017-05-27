@@ -25,14 +25,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Point3DCollection.ToString
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Media3D.Point3DCollection.IndexOf(System.Windows.Media.Media3D.Point3D)
 ms.technology: 
   - "dotnet-wpf"
@@ -242,15 +234,6 @@ manager: "ghogen"
 
 ---
 uid: System.Windows.Media.Media3D.Point3DCollection.#ctor(System.Int32)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Media3D.Point3DCollection.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

@@ -48,13 +48,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.ModifyDNRequest.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.ModifyDNRequest.ToXmlNode(System.Xml.XmlDocument)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

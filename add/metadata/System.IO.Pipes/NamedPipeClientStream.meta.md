@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Pipes.NamedPipeClientStream.ConnectAsync
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.Pipes.NamedPipeClientStream.Finalize
 ms.technology: 
   - "dotnet-standard"
@@ -117,15 +108,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.Pipes.NamedPipeClientStream.#ctor(System.String,System.String,System.IO.Pipes.PipeDirection)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.Pipes.NamedPipeClientStream.Connect
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

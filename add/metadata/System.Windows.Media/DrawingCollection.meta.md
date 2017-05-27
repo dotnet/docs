@@ -160,15 +160,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.DrawingCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.DrawingCollection.Insert(System.Int32,System.Windows.Media.Drawing)
 ms.technology: 
   - "dotnet-wpf"

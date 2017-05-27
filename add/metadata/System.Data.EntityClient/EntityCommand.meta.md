@@ -71,15 +71,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityCommand.ExecuteReader
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityClient.EntityCommand.Parameters
 ms.technology: 
   - "dotnet-ado"
@@ -162,15 +153,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.EntityClient.EntityCommand.#ctor(System.String,System.Data.EntityClient.EntityConnection)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityClient.EntityCommand.#ctor
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

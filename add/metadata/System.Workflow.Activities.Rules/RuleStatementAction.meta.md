@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.RuleStatementAction.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.Rules.RuleStatementAction.ToString
 author: "Erikre"
 ms.author: "erikre"

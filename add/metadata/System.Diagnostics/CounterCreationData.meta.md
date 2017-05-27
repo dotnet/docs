@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.CounterCreationData.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.CounterCreationData.CounterType
 ms.technology: 
   - "dotnet-standard"

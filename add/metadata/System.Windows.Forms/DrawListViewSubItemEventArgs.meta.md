@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewSubItemEventArgs.DrawText
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DrawListViewSubItemEventArgs.DrawFocusRectangle(System.Drawing.Rectangle)
 ms.technology: 
   - "dotnet-winforms"

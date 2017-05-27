@@ -330,25 +330,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#GetToolboxItems
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#DeserializeToolboxItem
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Design.ToolboxService.System#Drawing#Design#IToolboxService#GetSelectedToolboxItem
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -527,15 +509,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Design.ToolboxService.CreateItemContainer
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Design.ToolboxService.GetItemContainers
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

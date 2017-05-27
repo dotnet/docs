@@ -134,15 +134,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Guid.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Guid.#ctor
 ms.technology: 
   - "dotnet-standard"

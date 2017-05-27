@@ -32,12 +32,3 @@ ms.technology:
 ms.author: "billchi"
 manager: "ghogen"
 ---
-
----
-uid: System.Linq.Expressions.Expression`1.Compile
-ms.technology: 
-  - "dotnet-standard"
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----

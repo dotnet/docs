@@ -34,15 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.LinearDecimalKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.LinearDecimalKeyFrame.CreateInstanceCore
 ms.technology: 
   - "dotnet-wpf"

@@ -296,15 +296,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplication.Run
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.WorkflowApplication.LoadRunnableInstance
 ms.technology: 
   - "dotnet-standard"
@@ -342,15 +333,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowApplication.BeginCancel(System.TimeSpan,System.AsyncCallback,System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplication.LoadRunnableInstance
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -468,15 +450,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowApplication.BeginRun(System.TimeSpan,System.AsyncCallback,System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplication.Cancel
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -818,15 +791,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.WorkflowApplication.Abort
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.WorkflowApplication.Terminate(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -846,15 +810,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowApplication.Run(System.TimeSpan)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplication.Persist
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -945,15 +900,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowApplication.EndCreateDefaultInstanceOwner(System.IAsyncResult)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplication.Unload
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -1080,15 +1026,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.WorkflowApplication.BeginGetRunnableInstance(System.Runtime.DurableInstancing.InstanceStore,System.AsyncCallback,System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.WorkflowApplication.GetBookmarks
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

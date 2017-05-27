@@ -330,15 +330,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.StringBuilder.AppendLine
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.StringBuilder.Append(System.Char)
 ms.technology: 
   - "dotnet-standard"
@@ -447,15 +438,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.StringBuilder.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.StringBuilder.AppendFormat(System.String,System.Object,System.Object)
 ms.technology: 
   - "dotnet-standard"
@@ -475,15 +457,6 @@ manager: "wpickett"
 
 ---
 uid: System.Text.StringBuilder.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Text.StringBuilder.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

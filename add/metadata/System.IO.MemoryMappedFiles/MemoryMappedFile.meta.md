@@ -107,15 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.MemoryMappedFiles.MemoryMappedFile.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.MemoryMappedFiles.MemoryMappedFile.CreateFromFile(System.IO.FileStream,System.String,System.Int64,System.IO.MemoryMappedFiles.MemoryMappedFileAccess,System.IO.MemoryMappedFiles.MemoryMappedFileSecurity,System.IO.HandleInheritability,System.Boolean)
 ms.technology: 
   - "dotnet-standard"
@@ -144,15 +135,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedFile.OpenExisting(System.String,System.IO.MemoryMappedFiles.MemoryMappedFileRights)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewStream
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -279,15 +261,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.MemoryMappedFiles.MemoryMappedFile.CreateNew(System.String,System.Int64)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.MemoryMappedFiles.MemoryMappedFile.CreateViewAccessor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

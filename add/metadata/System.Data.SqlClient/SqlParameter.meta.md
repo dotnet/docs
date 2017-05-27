@@ -215,15 +215,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlParameter.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlParameter.#ctor(System.String,System.Data.SqlDbType)
 ms.technology: 
   - "dotnet-ado"

@@ -77,12 +77,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.WebPermission.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.WebPermission.Intersect(System.Security.IPermission)
 ms.author: "bobdel"
 manager: "markl"

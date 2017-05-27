@@ -50,15 +50,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.CaseInsensitiveHashCodeProvider.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.CaseInsensitiveHashCodeProvider.Default
 ms.technology: 
   - "dotnet-standard"

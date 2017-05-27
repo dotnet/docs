@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.ItemPager.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.MobileControls.ItemPager.ItemIndex
 ms.technology: 
   - "dotnet-webforms"

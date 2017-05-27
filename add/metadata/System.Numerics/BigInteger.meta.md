@@ -350,15 +350,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Numerics.BigInteger.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Numerics.BigInteger.Min(System.Numerics.BigInteger,System.Numerics.BigInteger)
 ms.technology: 
   - "dotnet-standard"

@@ -26,14 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.ImageSource.ToString
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.ImageSource.CloneCurrentValue
 ms.technology: 
   - "dotnet-wpf"

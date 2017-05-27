@@ -55,13 +55,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.XmlMessageFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.XmlMessageFormatter.#ctor(System.Type[])
 ms.technology: 
   - "dotnet-standard"

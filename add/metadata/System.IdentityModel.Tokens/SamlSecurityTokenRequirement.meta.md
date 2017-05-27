@@ -39,14 +39,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlSecurityTokenRequirement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlSecurityTokenRequirement.ValidateAudienceRestriction(System.Collections.Generic.IList{System.Uri},System.Collections.Generic.IList{System.Uri})
 ms.technology: 
   - "dotnet-standard"

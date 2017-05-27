@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.LinearByteKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.LinearByteKeyFrame.InterpolateValueCore(System.Byte,System.Double)
 ms.technology: 
   - "dotnet-wpf"

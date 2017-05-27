@@ -296,15 +296,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Type.GetFields
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Type.FindMembers(System.Reflection.MemberTypes,System.Reflection.BindingFlags,System.Reflection.MemberFilter,System.Object)
 ms.technology: 
   - "dotnet-standard"
@@ -674,15 +665,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Type.GetEvents
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Type.IsNestedFamANDAssem
 ms.technology: 
   - "dotnet-standard"
@@ -737,15 +719,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Type.GetConstructors
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Type.IsValueType
 ms.technology: 
   - "dotnet-standard"
@@ -765,15 +738,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._Type.AssemblyQualifiedName
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Type.GetMembers
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -891,24 +855,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._Type.GetMethods(System.Reflection.BindingFlags)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Type.GetNestedTypes
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Type.GetMethods
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -1134,15 +1080,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._Type.GetProperty(System.String,System.Type,System.Type[],System.Reflection.ParameterModifier[])
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Type.GetProperties
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

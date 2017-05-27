@@ -171,15 +171,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Model3DCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.Model3DCollection.System#Collections#IList#IsFixedSize
 ms.author: "jimwalk"
 manager: "martinek"

@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.SignatureHelper.GetMethodSigHelper(System.Reflection.CallingConventions,System.Type)
 ms.technology: 
   - "dotnet-standard"

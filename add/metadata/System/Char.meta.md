@@ -530,15 +530,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Char.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Char.IsPunctuation(System.Char)
 ms.technology: 
   - "dotnet-standard"

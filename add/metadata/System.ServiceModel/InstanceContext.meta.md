@@ -116,15 +116,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.InstanceContext.GetServiceInstance
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.InstanceContext.Extensions
 ms.technology: 
   - "dotnet-standard"

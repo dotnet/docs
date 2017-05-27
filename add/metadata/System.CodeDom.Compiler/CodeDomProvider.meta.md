@@ -215,15 +215,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CodeDomProvider.CreateGenerator
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.Compiler.CodeDomProvider.GetCompilerInfo(System.String)
 ms.technology: 
   - "dotnet-standard"

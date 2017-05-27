@@ -165,15 +165,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.FreezableCollection`1.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.FreezableCollection`1.System#Collections#IList#IsFixedSize
 author: "stevehoag"
 ms.author: "shoag"

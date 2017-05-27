@@ -317,12 +317,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.Socket.Close
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Sockets.Socket.#ctor(System.Net.Sockets.SocketType,System.Net.Sockets.ProtocolType)
 ms.author: "bobdel"
 manager: "markl"
@@ -534,12 +528,6 @@ manager: "markl"
 
 ---
 uid: System.Net.Sockets.Socket.IsBound
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Sockets.Socket.Dispose
 ms.author: "bobdel"
 manager: "markl"
 ---

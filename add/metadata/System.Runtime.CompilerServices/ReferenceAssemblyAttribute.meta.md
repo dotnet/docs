@@ -8,13 +8,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.CompilerServices.ReferenceAssemblyAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.CompilerServices.ReferenceAssemblyAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

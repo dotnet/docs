@@ -179,15 +179,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._EventInfo.GetRaiseMethod
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._EventInfo.ReflectedType
 ms.technology: 
   - "dotnet-standard"
@@ -233,15 +224,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._EventInfo.GetAddMethod
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._EventInfo.IsMulticast
 ms.technology: 
   - "dotnet-standard"
@@ -270,15 +252,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._EventInfo.Attributes
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._EventInfo.GetRemoveMethod
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

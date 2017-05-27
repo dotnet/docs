@@ -55,13 +55,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.ReplicatorActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.ReplicatorActivity.ChildCompletedEvent
 author: "Erikre"
 ms.author: "erikre"

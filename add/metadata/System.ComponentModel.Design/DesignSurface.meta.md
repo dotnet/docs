@@ -161,15 +161,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.DesignSurface.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.DesignSurface.CreateInstance(System.Type)
 ms.technology: 
   - "dotnet-standard"
@@ -324,15 +315,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Design.DesignSurface.OnUnloaded(System.EventArgs)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.DesignSurface.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

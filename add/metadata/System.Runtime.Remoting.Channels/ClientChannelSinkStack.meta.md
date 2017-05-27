@@ -20,13 +20,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.ClientChannelSinkStack.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.ClientChannelSinkStack.DispatchException(System.Exception)
 ms.technology: 
   - "dotnet-standard"

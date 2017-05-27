@@ -89,12 +89,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.CookieContainer.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.CookieContainer.GetCookies(System.Uri)
 ms.author: "bobdel"
 manager: "markl"

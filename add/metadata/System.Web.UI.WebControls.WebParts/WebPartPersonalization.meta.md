@@ -188,15 +188,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebPartPersonalization.ExtractPersonalizationState
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebPartPersonalization.SetDirty(System.Web.UI.WebControls.WebParts.WebPart)
 ms.technology: 
   - "dotnet-webforms"
@@ -270,24 +261,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartPersonalization.EnsureEnabled(System.Boolean)
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartPersonalization.ApplyPersonalizationState
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartPersonalization.SetDirty
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

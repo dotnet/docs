@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.DSASignatureDeformatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.DSASignatureDeformatter.SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
 ms.technology: 
   - "dotnet-standard"

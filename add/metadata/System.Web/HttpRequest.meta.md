@@ -404,15 +404,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpRequest.InsertEntityBody
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpRequest.TotalBytes
 ms.technology: 
   - "dotnet-webforms"
@@ -504,15 +495,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.HttpRequest.AppRelativeCurrentExecutionFilePath
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.HttpRequest.GetBufferlessInputStream
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

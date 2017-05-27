@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.ImportEngine.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.ImportEngine.#ctor(System.ComponentModel.Composition.Hosting.ExportProvider,System.Boolean)
 ms.technology: 
   - "dotnet-standard"

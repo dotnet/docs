@@ -26,15 +26,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.ComPersistableTypeElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.ComPersistableTypeElement.Name
 ms.technology: 
   - "dotnet-standard"

@@ -98,12 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.ObjectList.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.MobileControls.ObjectList.System#Web#UI#IPostBackEventHandler#RaisePostBackEvent(System.String)
 ms.technology: 
   - "dotnet-webforms"

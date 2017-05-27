@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.BinaryReader.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.BinaryReader.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -207,15 +198,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.BinaryReader.PeekChar
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.BinaryReader.Read
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

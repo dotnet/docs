@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Items
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.DriveListBox.Text
 author: "stevehoag"
 ms.author: "shoag"

@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipUser.ResetPassword
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.MembershipUser.UnlockUser
 ms.technology: 
   - "dotnet-webforms"
@@ -143,15 +134,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.MembershipUser.GetPassword
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.MembershipUser.ProviderUserKey
 ms.technology: 
   - "dotnet-webforms"
@@ -216,15 +198,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Security.MembershipUser.Comment
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.MembershipUser.#ctor
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

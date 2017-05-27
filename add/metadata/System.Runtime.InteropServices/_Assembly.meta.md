@@ -206,15 +206,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Assembly.GetType
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Assembly.GetExportedTypes
 ms.technology: 
   - "dotnet-standard"
@@ -287,15 +278,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Assembly.GetName
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Assembly.FullName
 ms.technology: 
   - "dotnet-standard"
@@ -333,15 +315,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._Assembly.GetType(System.String,System.Boolean,System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Assembly.GetLoadedModules
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -431,15 +404,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._Assembly.GetModules
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._Assembly.LoadModule(System.String,System.Byte[])
 ms.technology: 
   - "dotnet-standard"
@@ -450,15 +414,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._Assembly.GetManifestResourceInfo(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._Assembly.GetFiles
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -98,15 +98,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.GenerateStoreMetadata
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Entity.Design.EntityStoreSchemaGenerator.WriteStoreSchema
 ms.technology: 
   - "dotnet-ado"

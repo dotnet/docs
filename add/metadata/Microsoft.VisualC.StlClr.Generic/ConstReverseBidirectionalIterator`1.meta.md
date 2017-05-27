@@ -113,12 +113,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator`1.#ctor
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.Generic.ConstReverseBidirectionalIterator`1.equal_to
 ms.author: "mblome"
 manager: "ghogen"

@@ -116,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeDeclarationCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTypeDeclarationCollection.AddRange
 ms.technology: 
   - "dotnet-standard"

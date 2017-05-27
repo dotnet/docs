@@ -43,15 +43,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SplineVectorKeyFrame.#ctor(System.Windows.Vector)
 ms.technology: 
   - "dotnet-wpf"

@@ -123,14 +123,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.RichTextBox.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Controls.RichTextBox.CaretPosition
 ms.technology: 
   - "dotnet-wpf"

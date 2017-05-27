@@ -35,12 +35,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.PeerNameRecord.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.PeerToPeer.PeerNameRecord.Comment
 ms.author: "bobdel"
 manager: "markl"

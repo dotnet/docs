@@ -1187,12 +1187,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.GridView.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.WebControls.GridView.ShowFooter
 ms.technology: 
   - "dotnet-webforms"

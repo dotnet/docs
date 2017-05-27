@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.TextReader.Read
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.TextReader.ReadBlockAsync(System.Char[],System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -153,15 +144,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.TextReader.ReadAsync(System.Char[],System.Int32,System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.TextReader.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

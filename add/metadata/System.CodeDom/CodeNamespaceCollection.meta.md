@@ -116,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeNamespaceCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeNamespaceCollection.Remove(System.CodeDom.CodeNamespace)
 ms.technology: 
   - "dotnet-standard"

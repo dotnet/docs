@@ -113,14 +113,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ThicknessAnimation.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.ThicknessAnimation.EasingFunctionProperty
 ms.technology: 
   - "dotnet-wpf"

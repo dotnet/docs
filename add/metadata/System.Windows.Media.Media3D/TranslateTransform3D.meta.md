@@ -87,15 +87,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.TranslateTransform3D.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.TranslateTransform3D.Clone
 ms.technology: 
   - "dotnet-wpf"

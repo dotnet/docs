@@ -26,15 +26,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ICommunicationObject.Close
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.ICommunicationObject.Abort
 ms.technology: 
   - "dotnet-standard"
@@ -180,15 +171,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.ICommunicationObject.BeginClose(System.TimeSpan,System.AsyncCallback,System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.ICommunicationObject.Open
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.WeakEventManager.ListenerList`1.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.WeakEventManager.ListenerList`1.#ctor(System.Int32)
 ms.technology: 
   - "dotnet-wpf"

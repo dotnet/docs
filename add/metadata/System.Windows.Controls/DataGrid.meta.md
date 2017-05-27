@@ -651,15 +651,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.DataGrid.CommitEdit
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.DataGrid.OnColumnReordering(System.Windows.Controls.DataGridColumnReorderingEventArgs)
 ms.technology: 
   - "dotnet-wpf"
@@ -1095,15 +1086,6 @@ manager: "ghogen"
 
 ---
 uid: System.Windows.Controls.DataGrid.OnCurrentCellChanged(System.EventArgs)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Controls.DataGrid.BeginEdit
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -1773,15 +1755,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Controls.DataGrid.CanUserResizeRows
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Controls.DataGrid.CancelEdit
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

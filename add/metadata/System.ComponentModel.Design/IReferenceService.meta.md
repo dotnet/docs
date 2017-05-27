@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.IReferenceService.GetReferences
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.IReferenceService.GetReference(System.String)
 ms.technology: 
   - "dotnet-standard"

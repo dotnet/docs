@@ -98,15 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.ObjectSelectorEditor.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.ObjectSelectorEditor.EqualsToValue(System.Object)
 ms.technology: 
   - "dotnet-standard"

@@ -27,13 +27,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.Localizer.ElementLocalizability.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.Localizer.ElementLocalizability.#ctor(System.String,System.Windows.LocalizabilityAttribute)
 ms.technology: 
   - "dotnet-wpf"

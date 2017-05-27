@@ -242,15 +242,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Metadata.Edm.MetadataWorkspace.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Metadata.Edm.MetadataWorkspace.GetEntityContainer(System.String,System.Boolean,System.Data.Metadata.Edm.DataSpace)
 ms.technology: 
   - "dotnet-ado"

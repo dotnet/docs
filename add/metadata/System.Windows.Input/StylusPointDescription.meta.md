@@ -34,14 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.StylusPointDescription.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Input.StylusPointDescription.AreCompatible(System.Windows.Input.StylusPointDescription,System.Windows.Input.StylusPointDescription)
 ms.technology: 
   - "dotnet-wpf"

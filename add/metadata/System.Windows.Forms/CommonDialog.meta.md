@@ -61,14 +61,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.CommonDialog.ShowDialog
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.CommonDialog.Reset
 ms.technology: 
   - "dotnet-winforms"

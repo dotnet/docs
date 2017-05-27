@@ -233,15 +233,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.SecurityElementBase.CreateBindingElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.SecurityElementBase.RequireSignatureConfirmation
 ms.technology: 
   - "dotnet-standard"

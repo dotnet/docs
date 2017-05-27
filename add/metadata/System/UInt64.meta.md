@@ -152,15 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.UInt64.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.UInt64.System#IConvertible#ToUInt16(System.IFormatProvider)
 ms.technology: 
   - "dotnet-standard"

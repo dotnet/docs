@@ -71,15 +71,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbConnection.GetSchema
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OleDb.OleDbConnection.Open
 ms.technology: 
   - "dotnet-ado"
@@ -117,15 +108,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OleDb.OleDbConnection.Database
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OleDb.OleDbConnection.#ctor
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -198,15 +180,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OleDb.OleDbConnection.EnlistTransaction(System.Transactions.Transaction)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OleDb.OleDbConnection.BeginTransaction
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

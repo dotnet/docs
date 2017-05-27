@@ -183,14 +183,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.MobileControls.MobileListItemCollection.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.MobileControls.MobileListItemCollection.Add(System.String)
 ms.technology: 
   - "dotnet-webforms"

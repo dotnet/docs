@@ -95,14 +95,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Style.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Style.RegisterName(System.String,System.Object)
 ms.technology: 
   - "dotnet-wpf"

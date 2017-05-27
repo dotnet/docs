@@ -135,12 +135,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.ProfilePropertySettingsCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.Configuration.ProfilePropertySettingsCollection.Remove(System.String)
 ms.technology: 
   - "dotnet-webforms"

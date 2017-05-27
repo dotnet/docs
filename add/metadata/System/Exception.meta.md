@@ -116,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Exception.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Exception.Message
 ms.technology: 
   - "dotnet-standard"

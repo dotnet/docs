@@ -638,15 +638,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.ListView.CreateChildControls
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.ListView.SetPageProperties(System.Int32,System.Int32,System.Boolean)
 ms.technology: 
   - "dotnet-webforms"

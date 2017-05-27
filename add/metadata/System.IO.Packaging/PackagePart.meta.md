@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Packaging.PackagePart.GetStream
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode,System.IO.FileAccess)
 ms.technology: 
   - "dotnet-standard"

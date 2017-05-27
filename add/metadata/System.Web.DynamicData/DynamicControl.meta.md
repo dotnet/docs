@@ -143,14 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.DynamicControl.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.DynamicData.DynamicControl.NullDisplayText
 ms.technology: 
   - "dotnet-webforms"

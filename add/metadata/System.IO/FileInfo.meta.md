@@ -161,15 +161,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileInfo.GetAccessControl
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileInfo.DirectoryName
 ms.technology: 
   - "dotnet-standard"

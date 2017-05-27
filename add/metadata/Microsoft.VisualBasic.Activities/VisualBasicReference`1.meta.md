@@ -60,10 +60,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: Microsoft.VisualBasic.Activities.VisualBasicReference`1.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

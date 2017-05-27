@@ -35,12 +35,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.MultipartFormDataContent.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Http.MultipartFormDataContent.Add(System.Net.Http.HttpContent,System.String,System.String)
 ms.author: "bobdel"
 manager: "markl"

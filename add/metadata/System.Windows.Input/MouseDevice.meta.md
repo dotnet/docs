@@ -148,15 +148,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.MouseDevice.GetClientPosition
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.MouseDevice.GetClientPosition(System.Windows.PresentationSource)
 ms.technology: 
   - "dotnet-wpf"

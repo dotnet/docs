@@ -170,15 +170,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataSet.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataSet.GetSerializationData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-ado"
@@ -726,15 +717,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataSet.HasChanges
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataSet.WriteXml(System.IO.TextWriter,System.Data.XmlWriteMode)
 ms.technology: 
   - "dotnet-ado"
@@ -816,15 +798,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataSet.CreateDataReader
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataSet.IsInitialized
 ms.technology: 
   - "dotnet-ado"
@@ -835,15 +808,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.DataSet.Tables
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.DataSet.GetChanges
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

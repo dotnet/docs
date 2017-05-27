@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.ControlAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.ControlAttribute.#ctor(System.String)
 ms.technology: 
   - "dotnet-webforms"

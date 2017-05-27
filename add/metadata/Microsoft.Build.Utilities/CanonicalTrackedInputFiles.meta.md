@@ -113,12 +113,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Utilities.CanonicalTrackedInputFiles.ComputeSourcesNeedingCompilation
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveEntriesForSource
 ms.author: "susanno"
 manager: "douge"
@@ -132,12 +126,6 @@ manager: "douge"
 
 ---
 uid: Microsoft.Build.Utilities.CanonicalTrackedInputFiles.RemoveDependencyFromEntry
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Utilities.CanonicalTrackedInputFiles.SaveTlog
 ms.author: "susanno"
 manager: "douge"
 ---

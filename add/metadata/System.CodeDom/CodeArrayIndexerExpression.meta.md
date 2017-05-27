@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeArrayIndexerExpression.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeArrayIndexerExpression.TargetObject
 ms.technology: 
   - "dotnet-standard"

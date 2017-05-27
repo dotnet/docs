@@ -37,9 +37,3 @@ ms.technology:
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.UI.Design.UserControlDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----

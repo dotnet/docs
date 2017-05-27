@@ -279,14 +279,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Synthesis.SpeechSynthesizer.GetInstalledVoices
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Synthesis.SpeechSynthesizer.State
 ms.technology: 
   - "dotnet-standard"

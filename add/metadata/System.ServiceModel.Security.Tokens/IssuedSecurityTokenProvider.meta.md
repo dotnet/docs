@@ -242,15 +242,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Close
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -279,15 +270,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Closed
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Security.Tokens.IssuedSecurityTokenProvider.Open
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

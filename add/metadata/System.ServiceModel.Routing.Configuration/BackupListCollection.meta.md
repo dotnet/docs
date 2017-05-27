@@ -63,13 +63,6 @@ manager: "erikre"
 uid: System.ServiceModel.Routing.Configuration.BackupListCollection.CreateNewElement
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.ServiceModel.Routing.Configuration.BackupListCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-standard"
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

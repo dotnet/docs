@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.ActiveDirectoryMembershipUser.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.ActiveDirectoryMembershipUser.ProviderUserKey
 ms.technology: 
   - "dotnet-webforms"

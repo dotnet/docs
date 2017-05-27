@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.ObjectModel.ObservableCollection`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Collections.ObjectModel.ObservableCollection`1.RemoveItem(System.Int32)
 ms.technology: 
   - "dotnet-standard"

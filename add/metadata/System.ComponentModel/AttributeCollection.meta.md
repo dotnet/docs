@@ -155,15 +155,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.AttributeCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.AttributeCollection.System#Collections#IEnumerable#GetEnumerator
 ms.technology: 
   - "dotnet-standard"

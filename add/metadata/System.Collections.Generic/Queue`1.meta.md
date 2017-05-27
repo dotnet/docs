@@ -112,15 +112,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Queue`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.Queue`1.Peek
 ms.technology: 
   - "dotnet-standard"

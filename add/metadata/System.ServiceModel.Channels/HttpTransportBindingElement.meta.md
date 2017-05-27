@@ -305,15 +305,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.HttpTransportBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.HttpTransportBindingElement.MaxBufferSize
 ms.technology: 
   - "dotnet-standard"

@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeConditionStatement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeConditionStatement.Condition
 ms.technology: 
   - "dotnet-standard"

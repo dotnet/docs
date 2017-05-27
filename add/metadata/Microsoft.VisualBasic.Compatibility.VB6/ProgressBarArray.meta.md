@@ -279,13 +279,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.ProgressBarArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.ProgressBarArray.TabIndexChanged
 author: "stevehoag"
 ms.author: "shoag"

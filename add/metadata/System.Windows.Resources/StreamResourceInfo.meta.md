@@ -25,15 +25,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Resources.StreamResourceInfo.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Resources.StreamResourceInfo.Stream
 ms.technology: 
   - "dotnet-wpf"

@@ -116,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.MenuCommandService.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.MenuCommandService.GetService(System.Type)
 ms.technology: 
   - "dotnet-standard"

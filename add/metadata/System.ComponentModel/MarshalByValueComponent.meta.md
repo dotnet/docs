@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.MarshalByValueComponent.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.MarshalByValueComponent.Container
 ms.technology: 
   - "dotnet-standard"

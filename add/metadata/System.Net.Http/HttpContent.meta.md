@@ -83,12 +83,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Http.HttpContent.LoadIntoBufferAsync
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Http.HttpContent.CopyToAsync(System.IO.Stream,System.Net.TransportContext)
 ms.author: "bobdel"
 manager: "markl"
@@ -96,12 +90,6 @@ manager: "markl"
 
 ---
 uid: System.Net.Http.HttpContent.ReadAsByteArrayAsync
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Http.HttpContent.Dispose
 ms.author: "bobdel"
 manager: "markl"
 ---

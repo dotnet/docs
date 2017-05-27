@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Compilation.BuildProvider.OpenStream
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Compilation.BuildProvider.OpenStream(System.String)
 ms.technology: 
   - "dotnet-webforms"
@@ -153,15 +144,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Compilation.BuildProvider.CodeCompilerType
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Compilation.BuildProvider.OpenReader
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

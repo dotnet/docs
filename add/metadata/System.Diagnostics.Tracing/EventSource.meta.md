@@ -350,15 +350,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.Tracing.EventSource.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.Tracing.EventSource.Finalize
 ms.technology: 
   - "dotnet-standard"
@@ -503,15 +494,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.Tracing.EventSource.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.Tracing.EventSource.Write
 ms.technology: 
   - "dotnet-standard"
@@ -522,15 +504,6 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.Tracing.EventSource.WriteEvent(System.Int32,System.Int64,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.Tracing.EventSource.IsEnabled
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

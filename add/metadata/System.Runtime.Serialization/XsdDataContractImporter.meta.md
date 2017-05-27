@@ -71,15 +71,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.Serialization.XsdDataContractImporter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.Serialization.XsdDataContractImporter.GetCodeTypeReference
 ms.technology: 
   - "dotnet-standard"

@@ -107,15 +107,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.WebMessageEncodingBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.WebMessageEncodingBindingElement.MaxWritePoolSize
 ms.technology: 
   - "dotnet-standard"

@@ -8,14 +8,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.QueryAccessibilityHelpEventArgs.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.QueryAccessibilityHelpEventArgs.HelpNamespace
 ms.technology: 
   - "dotnet-winforms"

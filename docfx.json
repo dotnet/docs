@@ -4,11 +4,9 @@
     "content": [
       {
         "files": [
-          "api/**/*.yml",
-          "api/**/*.md"
+          "api/**/*.yml"
         ],
         "exclude": [
-          "api/overwrites/**",
           "samples/**/*.*",
           "**/includes/**",
           "***/contributing.md"
@@ -16,26 +14,15 @@
       },
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+	  "**/**.yml"
         ],
         "src": "docs",
         "dest": ".",
         "exclude": [
-          "api/overwrites/**",
           "samples/**/*.*",
           "**/includes/**",
           "***/contributing.md"
-        ]
-      },
-      {
-          "files": [
-           "core/**/*.md"
-         ]
-      },
-      {
-        "files": [
-          "toc.yml",
-          "index.md"
         ]
       }
     ],
@@ -80,7 +67,7 @@
       },
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/dotnet/toc.json",
+      "breadcrumb_path": "~/_breadcrumb/toc.yml",
       "_displayLangs": [
         "csharp"
       ],

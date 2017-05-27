@@ -1,7 +1,7 @@
 C# REST Client Sample
 ================
 
-This sample is created during the [REST client tutorial](https://docs.microsoft.com/dotnet/articles/csharp/tutorials/console-webapiclient)
+This sample is created during the [REST client tutorial](https://docs.microsoft.com/dotnet/csharp/tutorials/console-webapiclient)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 

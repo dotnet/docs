@@ -22,13 +22,13 @@
   
  Use the <xref:System.Activities.Presentation.PropertyEditing.EditModeSwitchButton> in your <xref:System.Windows.DataTemplate> to invoke your custom <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor> class.  
   
- You can provide a <xref:System.Windows.DataTemplate> which is shown in a host dialog box, or you can override the <xref:Systems.Windows.Forms.ShowDialog> method, which enables the reuse of existing or system dialog boxes.  
+ You can provide a <xref:System.Windows.DataTemplate> which is shown in a host dialog box, or you can override the <xref:System.Windows.Forms.Form.ShowDialog> method, which enables the reuse of existing or system dialog boxes.  
   
- The following list shows the rules for determining whether the <xref:System.Windows.DataTemplate> or <xref:Systems.Windows.Forms.ShowDialog> method is used.  
+ The following list shows the rules for determining whether the <xref:System.Windows.DataTemplate> or <xref:System.Windows.Forms.Form.ShowDialog> method is used.  
   
- If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is not a [!INCLUDE[null](~/includes/null-md.md)] reference (Nothing in Visual Basic), that <xref:System.Windows.DataTemplate> is hosted in a host-specific dialog box, which provides host styling. The <xref:Systems.Windows.Forms.ShowDialog> is not called.  
+ If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is not a [!INCLUDE[null](~/includes/null-md.md)] reference (Nothing in Visual Basic), that <xref:System.Windows.DataTemplate> is hosted in a host-specific dialog box, which provides host styling. The <xref:System.Windows.Forms.Form.ShowDialog> is not called.  
   
- If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is a [!INCLUDE[null](~/includes/null-md.md)] reference (Nothing in Visual Basic), the virtual <xref:Systems.Windows.Forms.ShowDialog> method is called and you can override this method to show any dialog box.  
+ If the <xref:System.Activities.Presentation.PropertyEditing.DialogPropertyValueEditor.DialogEditorTemplate%2A> property is a [!INCLUDE[null](~/includes/null-md.md)] reference (Nothing in Visual Basic), the virtual <xref:System.Windows.Forms.Form.ShowDialog> method is called and you can override this method to show any dialog box.  
   
   
  ]]></format>

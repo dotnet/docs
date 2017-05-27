@@ -34,16 +34,16 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Publish Events that Conform to .NET Framework Guidelines (C# Programming Guide)
-The following procedure demonstrates how to add events that follow the standard [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] pattern to your classes and structs. All events in the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] class library are based on the <xref:System.EventHandler> delegate, which is defined as follows:  
+The following procedure demonstrates how to add events that follow the standard [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] pattern to your classes and structs. All events in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library are based on the <xref:System.EventHandler> delegate, which is defined as follows:  
   
 ```csharp  
 public delegate void EventHandler(object sender, EventArgs e);  
 ```  
   
 > [!NOTE]
->  The [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] introduces a generic version of this delegate, <xref:System.EventHandler%601>. The following examples show how to use both versions.  
+>  The [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] introduces a generic version of this delegate, <xref:System.EventHandler%601>. The following examples show how to use both versions.  
   
- Although events in classes that you define can be based on any valid delegate type, even delegates that return a value, it is generally recommended that you base your events on the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] pattern by using <xref:System.EventHandler>, as shown in the following example.  
+ Although events in classes that you define can be based on any valid delegate type, even delegates that return a value, it is generally recommended that you base your events on the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] pattern by using <xref:System.EventHandler>, as shown in the following example.  
   
 ### To publish events based on the EventHandler pattern  
   

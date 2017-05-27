@@ -41,12 +41,12 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Operator Procedures (Visual Basic)
-An operator procedure is a series of [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] statements that define the behavior of a standard operator (such as `*`, `<>`, or `And`) on a class or structure you have defined. This is also called *operator overloading*.  
+An operator procedure is a series of [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] statements that define the behavior of a standard operator (such as `*`, `<>`, or `And`) on a class or structure you have defined. This is also called *operator overloading*.  
   
 ## When to Define Operator Procedures  
  When you have defined a class or structure, you can declare variables to be of the type of that class or structure. Sometimes such a variable needs to participate in an operation as part of an expression. To do this, it must be an operand of an operator.  
   
- [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] defines operators only on its fundamental data types. You can define the behavior of an operator when one or both of the operands are of the type of your class or structure.  
+ [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] defines operators only on its fundamental data types. You can define the behavior of an operator when one or both of the operands are of the type of your class or structure.  
   
  For more information, see [Operator Statement](../../../../visual-basic/language-reference/statements/operator-statement.md).  
   

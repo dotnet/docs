@@ -53,7 +53,7 @@ Inserts an .ico file in the output file. This .ico file represents the output fi
 ## Remarks  
  You can create an .ico file with the Microsoft Windows Resource Compiler (RC). The resource compiler is invoked when you compile a Visual C++ program; an .ico file is created from the .rc file. The `/win32icon` and `/win32resource` options are mutually exclusive.  
   
- See [/linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md) to reference a [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] resource file, or [/resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md) to attach a [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)] resource file. See [/win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md) to import a .res file.  
+ See [/linkresource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/linkresource.md) to reference a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resource file, or [/resource (Visual Basic)](../../../visual-basic/reference/command-line-compiler/resource.md) to attach a [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] resource file. See [/win32resource](../../../visual-basic/reference/command-line-compiler/win32resource.md) to import a .res file.  
   
 |To set /win32icon in the Visual Studio IDE|  
 |---|  

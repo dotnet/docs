@@ -37,15 +37,15 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Unable to write temporary file because temporary path is not available
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] could not determine the path where temporary files are stored.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] could not determine the path where temporary files are stored.  
   
  **Error ID:** BC30698  
   
 ## To correct this error  
   
-1.  Restart [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
+1.  Restart [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
-2.  If the problem persists, reinstall [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].  
+2.  If the problem persists, reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 ## See Also  
  [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)

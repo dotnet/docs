@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Elementary Data Types (Visual Basic)
-[!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] supplies a set of predefined data types, which you can use for many of your programming elements. This section describes these types and how to use them.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] supplies a set of predefined data types, which you can use for many of your programming elements. This section describes these types and how to use them.  
   
 > [!NOTE]
 >  Every elementary data type in Visual Basic is supported by a structure or a class that is in the <xref:System> namespace. The compiler uses each data type keyword as an alias for the underlying structure or class. For example, declaring a variable by using the reserved word `Byte` is the same as declaring it by using the fully qualified structure name <xref:System.Byte?displayProperty=fullName>.  
@@ -52,7 +52,7 @@ translation.priority.ht:
   
 ## Related Sections  
  [Data Types](../../../../visual-basic/programming-guide/language-features/data-types/index.md)  
- Introduces the [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] data types and describes how to use them.  
+ Introduces the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] data types and describes how to use them.  
   
  [Data Types](../../../../visual-basic/language-reference/data-types/data-type-summary.md)  
- Provides an overview of the elementary data types supplied by [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].
+ Provides an overview of the elementary data types supplied by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].

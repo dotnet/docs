@@ -13,7 +13,7 @@ title: .NET Documentation
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/dotnet/articles/images/hub/featured-1.svg" src="/dotnet/articles/images/hub/featured-1.png" alt="" />
+                                        <img data-hoverimage="/dotnet/images/hub/featured-1.svg" src="/dotnet/images/hub/featured-1.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -31,7 +31,7 @@ title: .NET Documentation
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/dotnet/articles/images/hub/featured-2.svg" src="/dotnet/articles/images/hub/featured-2.png" alt="" />
+                                        <img data-hoverimage="/dotnet/images/hub/featured-2.svg" src="/dotnet/images/hub/featured-2.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -49,7 +49,7 @@ title: .NET Documentation
                             <div class="card">
                                 <div class="cardImageOuter">
                                     <div class="cardImage">
-                                        <img data-hoverimage="/dotnet/articles/images/hub/featured-3.svg" src="/dotnet/articles/images/hub/featured-3.png" alt="" />
+                                        <img data-hoverimage="/dotnet/images/hub/featured-3.svg" src="/dotnet/images/hub/featured-3.png" alt="" />
                                     </div>
                                 </div>
                                 <div class="cardText">
@@ -77,14 +77,14 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/articles/images/hub/net.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/articles/standard/">.NET Platform Guide</a></h3>
-                                                <p><a href="/dotnet/articles/standard/get-started">Get Started</a></p>
-                                                <p><a href="/dotnet/articles/standard/tour">Tour of .NET</a></p>
-                                                <p><a href="/dotnet/articles/standard/components">.NET Architectural Concepts</a></p>
+                                                <h3><a href="/dotnet/standard/">.NET Platform Guide</a></h3>
+                                                <p><a href="/dotnet/standard/get-started">Get Started</a></p>
+                                                <p><a href="/dotnet/standard/tour">Tour of .NET</a></p>
+                                                <p><a href="/dotnet/standard/components">.NET Architectural Concepts</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -96,14 +96,14 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/articles/images/hub/netcore.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/netcore.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/articles/core">.NET Core Guide</a></h3>
-                                                <p><a href="/dotnet/articles/core/get-started">Get Started</a></p>
-                                                <p><a href="/dotnet/articles/core/tutorials">Tutorials</a></p>
-                                                <p><a href="/dotnet/articles/core/porting">Porting from .NET Framework</a></p>
+                                                <h3><a href="/dotnet/core">.NET Core Guide</a></h3>
+                                                <p><a href="/dotnet/core/get-started">Get Started</a></p>
+                                                <p><a href="/dotnet/core/tutorials">Tutorials</a></p>
+                                                <p><a href="/dotnet/core/porting">Porting from .NET Framework</a></p>
                                                 <p><a href="/aspnet/core/getting-started">ASP.NET Core</a></p>
                                             </div>
                                         </div>
@@ -116,14 +116,14 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/articles/images/hub/netframework.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/netframework.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/articles/framework/">.NET Framework Guide</a></h3>
-                                                <p><a href="/dotnet/articles/framework/get-started/">Get Started</a></p>
-                                                <p><a href="/dotnet/articles/framework/development-guide">Development Guide</a></p>
-                                                <p><a href="/dotnet/articles/framework/develop-client-apps">Client Development</a></p>
+                                                <h3><a href="/dotnet/framework/">.NET Framework Guide</a></h3>
+                                                <p><a href="/dotnet/framework/get-started/">Get Started</a></p>
+                                                <p><a href="/dotnet/framework/development-guide">Development Guide</a></p>
+                                                <p><a href="/dotnet/framework/develop-client-apps">Client Development</a></p>
                                                 <p><a href="/aspnet/#pivot=aspnet">ASP.NET</a></p>
                                             </div>
                                         </div>
@@ -136,7 +136,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/articles/images/hub/xamarin.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/xamarin.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -156,14 +156,14 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/articles/images/hub/csharp.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/csharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/articles/csharp">C# Guide</a></h3>
-                                                <p><a href="/dotnet/articles/csharp/getting-started">Get Started</a></p>
-                                                <p><a href="/dotnet/articles/csharp/tour-of-csharp">Tour of C#</a></p>
-                                                <p><a href="/dotnet/articles/csharp/language-reference">C# Language Reference</a></p>
+                                                <h3><a href="/dotnet/csharp">C# Guide</a></h3>
+                                                <p><a href="/dotnet/csharp/getting-started">Get Started</a></p>
+                                                <p><a href="/dotnet/csharp/tour-of-csharp">Tour of C#</a></p>
+                                                <p><a href="/dotnet/csharp/language-reference">C# Language Reference</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -175,14 +175,14 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/articles/images/hub/fsharp.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/fsharp.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/articles/fsharp">F# Guide</a></h3>
-                                                <p><a href="/dotnet/articles/fsharp/tutorials/getting-started">Get Started</a></p>
-                                                <p><a href="/dotnet/articles/fsharp/tour">Tour of F#</a></p>
-                                                <p><a href="/dotnet/articles/fsharp/language-reference">F# Language Reference</a></p>
+                                                <h3><a href="/dotnet/fsharp">F# Guide</a></h3>
+                                                <p><a href="/dotnet/fsharp/tutorials/getting-started">Get Started</a></p>
+                                                <p><a href="/dotnet/fsharp/tour">Tour of F#</a></p>
+                                                <p><a href="/dotnet/fsharp/language-reference">F# Language Reference</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -194,14 +194,14 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage">
-                                                    <img src="/dotnet/articles/images/hub/vb.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/vb.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <h3><a href="/dotnet/articles/visual-basic">Visual Basic Guide</a></h3>
-                                                <p><a href="/dotnet/articles/visual-basic/getting-started">Get Started</a></p>
-                                                <p><a href="/dotnet/articles/visual-basic/walkthroughs">Tour of Visual Basic</a></p>
-                                                <p><a href="/dotnet/articles/visual-basic/language-reference">Visual Basic Language Reference</a></p>
+                                                <h3><a href="/dotnet/visual-basic">Visual Basic Guide</a></h3>
+                                                <p><a href="/dotnet/visual-basic/getting-started">Get Started</a></p>
+                                                <p><a href="/dotnet/visual-basic/walkthroughs">Tour of Visual Basic</a></p>
+                                                <p><a href="/dotnet/visual-basic/language-reference">Visual Basic Language Reference</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -210,7 +210,7 @@ title: .NET Documentation
                             <li class="fullSpan">
                                 <div class="container footer">
                                     <p><a href="https://github.com/dotnet/Docs/blob/master/CONTRIBUTING.md">Contribute to .NET docs and samples</a></p>
-                                    <p><a href="https://docs.microsoft.com/dotnet/articles/project-json">Find Visual Studio 2015/project.json version of the documentation</a></p>
+                                    <p><a href="/dotnet/project-json">Find Visual Studio 2015/project.json version of the documentation</a></p>
                                 </div>
                             </li>
                         </ul>
@@ -224,7 +224,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-web-1.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-web-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -243,7 +243,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-web-2.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-web-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -262,7 +262,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-web-3.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-web-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -281,7 +281,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-web-4.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-web-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -301,11 +301,11 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-web-5.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-web-5.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/dotnet/articles/framework/docker/aspnetmvc">
+                                                <a href="/dotnet/framework/docker/aspnetmvc">
                                                     <h3>ASP.NET Apps in Containers</h3>
                                                     <p>Learn how to deploy ASP.NET apps with Docker.</p>
                                                 </a>
@@ -320,7 +320,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-web-6.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-web-6.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -345,7 +345,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-cloud-1.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-cloud-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -365,11 +365,11 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-cloud-2.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-cloud-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="https://azure.microsoft.com/documentation/articles/cloud-services-dotnet-get-started">
+                                                <a href="/azure/cloud-services/cloud-services-dotnet-get-started">
                                                     <h3>Azure Cloud Services and ASP.NET</h3>
                                                     <p>Learn to configure, monitor, and scale your cloud services in Azure.</p>
                                                 </a>
@@ -384,11 +384,11 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-cloud-3.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-cloud-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
-                                                <a href="/dotnet/articles/fsharp/using-fsharp-on-azure">
+                                                <a href="/dotnet/fsharp/using-fsharp-on-azure">
                                                     <h3>Using F# on Azure</h3>
                                                     <p>Learn how to use various Azure services in F# such as Azure Storage,
                                                         Cloud Services, and Azure Functions.</p>
@@ -404,7 +404,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-cloud-4.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-cloud-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -429,7 +429,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-mobile-1.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-mobile-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -448,7 +448,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-mobile-2.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-mobile-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -467,7 +467,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-mobile-3.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-mobile-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -491,7 +491,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-desktop-1.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-desktop-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -512,7 +512,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-desktop-2.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-desktop-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -532,7 +532,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-desktop-3.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-desktop-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -551,7 +551,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-desktop-4.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-desktop-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -575,7 +575,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-gaming-1.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-gaming-1.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -596,7 +596,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-gaming-2.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-gaming-2.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -615,7 +615,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-gaming-3.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-gaming-3.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">
@@ -635,7 +635,7 @@ title: .NET Documentation
                                         <div class="card">
                                             <div class="cardImageOuter">
                                                 <div class="cardImage bgdAccent1">
-                                                    <img src="/dotnet/articles/images/hub/net-docs-gaming-4.svg" alt="" />
+                                                    <img src="/dotnet/images/hub/net-docs-gaming-4.svg" alt="" />
                                                 </div>
                                             </div>
                                             <div class="cardText">

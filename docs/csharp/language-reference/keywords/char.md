@@ -52,7 +52,7 @@ The `char` keyword is used to declare an instance of the <xref:System.Char?displ
  The <xref:System.Char?displayProperty=fullName> type provides several static methods for working with `char` values.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Char>   

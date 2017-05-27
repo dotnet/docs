@@ -20,7 +20,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:Microsoft.JScript.JScriptException> is also an <xref:Microsoft.Vsa.IVsaError> and can be passed to the host through <xref:Microsoft.Vsa.IVsaSite.OnCompilerError%2A>.  
+ A <xref:Microsoft.JScript.JScriptException> is also an <xref:Microsoft.JScript.Vsa.IJSVsaError> and can be passed to the host through <xref:Microsoft.JScript.Vsa.IJSVsaSite.OnCompilerError*>.  
   
  ]]></format>
     </remarks>

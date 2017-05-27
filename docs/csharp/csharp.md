@@ -44,10 +44,10 @@ C# (pronounced "C sharp") is a programming language that is designed for buildin
   
 ## In This Section  
  [Getting Started with C#](../csharp/getting-started/getting-started-with-csharp.md)  
- Introduces the features of C# for programmers who are new to the language or are new to [!INCLUDE[vsprvs](../csharp/includes/vsprvs_md.md)], and provides a roadmap for finding Help about [!INCLUDE[vsprvs](../csharp/includes/vsprvs_md.md)].  
+ Introduces the features of C# for programmers who are new to the language or are new to [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], and provides a roadmap for finding Help about [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
  [Using the Visual Studio Development Environment for C#](https://docs.microsoft.com/visualstudio/csharp-ide/using-the-visual-studio-development-environment-for-csharp)  
- Introduces the [!INCLUDE[csprcs](../csharp/includes/csprcs_md.md)] development environment.  
+ Introduces the [!INCLUDE[csprcs](~/includes/csprcs-md.md)] development environment.  
   
  [C# Programming Guide](../csharp/programming-guide/index.md)  
  Provides information and practical examples about how to use C# language constructs.  

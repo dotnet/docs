@@ -220,7 +220,7 @@ Elements of the "students" array
   
  You might need to create a zero-length array under the following circumstances:  
   
--   Without risking a <xref:System.NullReferenceException> exception, your code must access members of the <xref:System.Array> class, such as <xref:System.Array.Length%2A> or <xref:System.Array.Rank%2A>, or call a [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] function such as <xref:Microsoft.VisualBasic.Information.UBound%2A>.  
+-   Without risking a <xref:System.NullReferenceException> exception, your code must access members of the <xref:System.Array> class, such as <xref:System.Array.Length%2A> or <xref:System.Array.Rank%2A>, or call a [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] function such as <xref:Microsoft.VisualBasic.Information.UBound%2A>.  
   
 -   You want to keep the consuming code simpler by not having to check for `Nothing` as a special case.  
   
@@ -270,7 +270,7 @@ Dim prices(3, 4, 5) As Long
 ##  <a name="BKMK_Collections"></a> Collections as an Alternative to Arrays  
  Arrays are most useful for creating and working with a fixed number of strongly typed objects. Collections provide a more flexible way to work with groups of objects. Unlike arrays, the group of objects that you work with can grow and shrink dynamically as the needs of the application change.  
   
- If you need to change the size of an array, you must use the [ReDim Statement](../../../../visual-basic/language-reference/statements/redim-statement.md). When you do this, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] creates a new array and releases the previous array for disposal. This takes execution time. Therefore, if the number of items you are working with changes frequently, or you cannot predict the maximum number of items you need, you might obtain better performance using a collection.  
+ If you need to change the size of an array, you must use the [ReDim Statement](../../../../visual-basic/language-reference/statements/redim-statement.md). When you do this, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] creates a new array and releases the previous array for disposal. This takes execution time. Therefore, if the number of items you are working with changes frequently, or you cannot predict the maximum number of items you need, you might obtain better performance using a collection.  
   
  For some collections, you can assign a key to any object that you put into the collection so that you can quickly retrieve the object by using the key.  
   
@@ -279,7 +279,7 @@ Dim prices(3, 4, 5) As Long
  For more information about collections, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b).  
   
 ### Example  
- The following example uses the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] generic class <xref:System.Collections.Generic.List%601?displayProperty=fullName> to create a list collection of `Customer` objects.  
+ The following example uses the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] generic class <xref:System.Collections.Generic.List%601?displayProperty=fullName> to create a list collection of `Customer` objects.  
   
  [!code-vb[VbVbalrArrays#1](../../../../visual-basic/programming-guide/language-features/arrays/codesnippet/VisualBasic/index_22.vb)]  
   

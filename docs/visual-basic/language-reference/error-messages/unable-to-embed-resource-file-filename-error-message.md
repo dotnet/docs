@@ -37,7 +37,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Unable to embed resource file &#39;&lt;filename&gt;&#39;: &lt;error message&gt;
-The [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker has reported an error embedding a native COM+ resource file directly into the assembly.  
+The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler calls the Assembly Linker (Al.exe, also known as Alink) to generate an assembly with a manifest. The linker has reported an error embedding a native COM+ resource file directly into the assembly.  
   
  **Error ID:** BC30143  
   

@@ -35,7 +35,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Queries (Visual Basic)
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] enables you to create [!INCLUDE[vbteclinqext](../../../csharp/getting-started/includes/vbteclinqext_md.md)] expressions in your code.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] enables you to create [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions in your code.  
   
 ## In This Section  
  [Aggregate Clause](../../../visual-basic/language-reference/queries/aggregate-clause.md)  

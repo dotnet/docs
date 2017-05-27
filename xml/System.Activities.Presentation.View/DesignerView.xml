@@ -960,7 +960,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is invoked when an unhandled <xref:System.Windows.Input.Mouse.PreviewMouseWheel%2A> attached event reaches an element in its route that is derived from this class. Override this method to add class handling for this event. If the CTRL key is pressed when this event is processed, the view is zoomed in or out, based on the movement of the mouse wheel.  
+ This event is invoked when an unhandled <xref:System.Windows.Input.Mouse.PreviewMouseWheel> attached event reaches an element in its route that is derived from this class. Override this method to add class handling for this event. If the CTRL key is pressed when this event is processed, the view is zoomed in or out, based on the movement of the mouse wheel.  
   
  ]]></format>
         </remarks>
@@ -1105,7 +1105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Call the <xref:System.Activities.Presentation.View.DesignerView.MakeRootDesigner%2A> method to set this property to a <xref:System.Activities.Design.WorkflowViewElement> representation of a <xref:System.Activities.Design.Model.ModelItem>.  
+ Call the <xref:System.Activities.Presentation.View.DesignerView.MakeRootDesigner%2A> method to set this property to a <xref:System.Activities.Presentation.WorkflowViewElement> representation of a <xref:System.Activities.Presentation.Model.ModelItem>.  
   
  ]]></format>
         </remarks>

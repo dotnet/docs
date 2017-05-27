@@ -72,7 +72,7 @@ IntelliSense when Option Infer is on
 IntelliSense when Option Infer is off  
   
 > [!NOTE]
->  When a variable is declared as an `Object`, the run-time type can change while the program is running. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] performs operations called *boxing* and *unboxing* to convert between an `Object` and a value type, which makes execution slower. For information about boxing and unboxing, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification.md).  
+>  When a variable is declared as an `Object`, the run-time type can change while the program is running. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] performs operations called *boxing* and *unboxing* to convert between an `Object` and a value type, which makes execution slower. For information about boxing and unboxing, see the [Visual Basic Language Specification](../../../visual-basic/reference/language-specification.md).  
   
  Type inference applies at the procedure level, and does not apply outside a procedure in a class, structure, module, or interface.  
   

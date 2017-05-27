@@ -110,10 +110,10 @@ Dim n3 As Integer = 96 / (8 / 4)
   
  The first expression evaluates the division 96 / 8 (which results in 12) and then the division 12 / 4, which results in three. Because the compiler evaluates the operations for `n1` from left to right, the evaluation is the same when that order is explicitly indicated for `n2`. Both `n1` and `n2` have a result of three. By contrast, `n3` has a result of 48, because the parentheses force the compiler to evaluate 8 / 4 first.  
   
- Because of this behavior, operators are said to be *left associative* in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+ Because of this behavior, operators are said to be *left associative* in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 ## Overriding Precedence and Associativity  
- You can use parentheses to force some parts of an expression to be evaluated before others. This can override both the order of precedence and the left associativity. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] always performs operations that are enclosed in parentheses before those outside. However, within parentheses, it maintains ordinary precedence and associativity, unless you use parentheses within the parentheses. The following example illustrates this.  
+ You can use parentheses to force some parts of an expression to be evaluated before others. This can override both the order of precedence and the left associativity. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] always performs operations that are enclosed in parentheses before those outside. However, within parentheses, it maintains ordinary precedence and associativity, unless you use parentheses within the parentheses. The following example illustrates this.  
   
 ```  
 Dim a, b, c, d, e, f, g As Double  

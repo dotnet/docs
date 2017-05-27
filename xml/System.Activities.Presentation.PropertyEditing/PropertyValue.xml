@@ -256,12 +256,12 @@
       </ReturnValue>
       <Docs>
         <summary>When implemented in a derived class, gets a value that indicates whether multiple objects contain this property and have different values.</summary>
-        <value>A <see cref="T:System.Boolean" /> that, when <see cref="T:System.Boolean.True" />, verifies that multiple objects contain this property, otherwise <see cref="T:System.Boolean.False" />.</value>
+        <value><see langword="true" /> if multiple objects contain this property; otherwise, <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Boolean.True>, <xref:System.Activities.Presentation.PropertyEditing.PropertyValue.Value%2A> will return null and <xref:System.Activities.Presentation.PropertyEditing.PropertyValue.StringValue%2A> will return <xref:System.String.Empty>.  
+ If `true`, <xref:System.Activities.Presentation.PropertyEditing.PropertyValue.Value%2A> will return null and <xref:System.Activities.Presentation.PropertyEditing.PropertyValue.StringValue%2A> will return <xref:System.String.Empty>.  
   
  ]]></format>
         </remarks>

@@ -60,22 +60,22 @@ Lists new features in each of the versions of Visual Basic .NET.
  Provides links to pages that introduce object-oriented programming and describe how to create your own objects and how to use objects to simplify your coding.  
   
  [Samples](../../visual-basic/sample-applications.md)  
- Provides links to sample code in [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+ Provides links to sample code in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
  [Walkthroughs](../../visual-basic/walkthroughs.md)  
- Provides a list of Help pages that demonstrate aspects of the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language.  
+ Provides a list of Help pages that demonstrate aspects of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language.  
   
  [Talk to Us](https://docs.microsoft.com/visualstudio/ide/talk-to-us)  
  Covers how to receive support and give feedback.  
   
  [Visual Studio](https://docs.microsoft.com/en-us/visualstudio/)  
- Provides links into the [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] documentation.  
+ Provides links into the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] documentation.  
   
  [C#](../../csharp/csharp.md)  
- Provides links into the documentation on application development with [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)].  
+ Provides links into the documentation on application development with [!INCLUDE[csprcs](~/includes/csprcs-md.md)].  
   
  [Visual C++](https://docs.microsoft.com/cpp/)  
  Provides links into the Visual C++ documentation.  
   
  [Office and SharePoint Development](https://msdn.microsoft.com/library/d2tx7z6d)  
- Provides information about using Microsoft Office and [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)] as part of a business application.
+ Provides information about using Microsoft Office and [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] as part of a business application.

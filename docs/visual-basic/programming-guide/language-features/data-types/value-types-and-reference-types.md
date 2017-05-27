@@ -40,7 +40,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Value Types and Reference Types
-In Visual Basic, data types are implemented based on their classification. The [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] data types can be classified according to whether a variable of a particular type stores its own data or a pointer to the data. If it stores its own data it is a *value type*; if it holds a pointer to data elsewhere in memory it is a *reference type*.  
+In Visual Basic, data types are implemented based on their classification. The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] data types can be classified according to whether a variable of a particular type stores its own data or a pointer to the data. If it stores its own data it is a *value type*; if it holds a pointer to data elsewhere in memory it is a *reference type*.  
   
 ## Value Types  
  A data type is a *value type* if it holds the data within its own memory allocation. Value types include the following:  
@@ -68,7 +68,7 @@ In Visual Basic, data types are implemented based on their classification. The [
   
 -   Delegates  
   
- A class is a *reference type*. For this reason, reference types such as `Object` and `String` are supported by [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] classes. Note that every array is a reference type, even if its members are value types.  
+ A class is a *reference type*. For this reason, reference types such as `Object` and `String` are supported by [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] classes. Note that every array is a reference type, even if its members are value types.  
   
  Since every reference type represents an underlying .NET Framework class, you must use the [New Operator](../../../../visual-basic/language-reference/operators/new-operator.md) keyword when you initialize it. The following statement initializes an array.  
   

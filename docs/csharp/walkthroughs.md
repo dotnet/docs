@@ -46,7 +46,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Shows how to create an asynchronous solution by using [async](../csharp/language-reference/keywords/async.md) and [await](../csharp/language-reference/keywords/await.md).  
   
  [Creating a Windows Runtime Component in C# or Visual Basic and Calling it from JavaScript](https://msdn.microsoft.com/library/windows/apps/hh779077.aspx)  
- Shows how to create a [!INCLUDE[wrt](../csharp/includes/wrt_md.md)] type, package it in a [!INCLUDE[wrt](../csharp/includes/wrt_md.md)] component, and then call the component from a [!INCLUDE[win8_appname_long](../csharp/includes/win8_appname_long_md.md)] app that's built for Windows by using JavaScript.  
+ Shows how to create a [!INCLUDE[wrt](~/includes/wrt-md.md)] type, package it in a [!INCLUDE[wrt](~/includes/wrt-md.md)] component, and then call the component from a [!INCLUDE[win8_appname_long](~/includes/win8-appname-long-md.md)] app that's built for Windows by using JavaScript.  
   
  [Office Programming (C# and Visual Basic)](../csharp/programming-guide/interop/walkthrough-office-programming.md)  
  Shows how to create an Excel workbook and a Word document by using C# and Visual Basic.  
@@ -70,10 +70,10 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Demonstrates some of the commonly performed tasks such as adding or removing a tab on a `TabControl`, docking a control to its parent, and changing the orientation of a `SplitContainer` control.  
   
  [Writing Queries in C# (LINQ)](../csharp/programming-guide/concepts/linq/walkthrough-writing-queries-linq.md)  
- Demonstrates the C# language features that are used to write [!INCLUDE[vbteclinq](../csharp/includes/vbteclinq_md.md)] query expressions.  
+ Demonstrates the C# language features that are used to write [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)] query expressions.  
   
  [Manipulating Data (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386927.aspx)  
- Describes a [!INCLUDE[vbtecdlinq](../csharp/includes/vbtecdlinq_md.md)] scenario for adding, modifying, and deleting data in a database.  
+ Describes a [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] scenario for adding, modifying, and deleting data in a database.  
   
  [Simple Object Model and Query (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386940.aspx)  
  Demonstrates how to create an entity class and a simple query to filter the entity class.  
@@ -82,7 +82,7 @@ Walkthroughs give step-by-step instructions for common scenarios, which makes th
  Demonstrates how to use LINQ to SQL to access data by executing only stored procedures.  
   
  [Querying Across Relationships (C#) (LINQ to SQL)](https://msdn.microsoft.com/library/bb386951.aspx)  
- Demonstrates the use of [!INCLUDE[vbtecdlinq](../csharp/includes/vbtecdlinq_md.md)] associations to represent foreign-key relationships in a database.  
+ Demonstrates the use of [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)] associations to represent foreign-key relationships in a database.  
 
  [Writing a Visualizer in C#](https://docs.microsoft.com/visualstudio/debugger/walkthrough-writing-a-visualizer-in-csharp)  
  Shows how to write a simple visualizer by using C#.  

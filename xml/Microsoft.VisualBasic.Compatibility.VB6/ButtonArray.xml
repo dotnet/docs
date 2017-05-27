@@ -2089,7 +2089,7 @@ MsgBox(CStr(ButtonArray(1).Text))
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This event is raised if the <xref:System.Windows.Forms.Text> property is changed by either a programmatic modification or user interaction.  
+ This event is raised if the <xref:System.Windows.Forms.Control.Text> property is changed by either a programmatic modification or user interaction.  
   
  For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   

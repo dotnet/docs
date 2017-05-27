@@ -1,7 +1,5 @@
 ---
 uid: System.Web.RegularExpressions.LTRegex
-ms.technology: 
-  - "dotnet-webforms"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -9,8 +7,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.RegularExpressions.LTRegex.#ctor(System.TimeSpan)
-ms.technology: 
-  - "dotnet-webforms"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -18,8 +14,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.RegularExpressions.LTRegex.#ctor
-ms.technology: 
-  - "dotnet-webforms"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
@@ -27,8 +21,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.RegularExpressions.LTRegex.#ctor
-ms.technology: 
-  - "dotnet-webforms"
 author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"

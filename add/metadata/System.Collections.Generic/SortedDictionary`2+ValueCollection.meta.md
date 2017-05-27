@@ -1,7 +1,5 @@
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -9,8 +7,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Add(`1)
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -18,8 +14,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.Count
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -31,8 +25,6 @@ uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collec
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -40,8 +32,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.#ctor(System.Collections.Generic.SortedDictionary{`0,`1})
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -49,8 +39,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#IEnumerable{TValue}#GetEnumerator
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -58,8 +46,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Contains(`1)
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -74,8 +60,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.CopyTo(`1[],System.Int32)
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -83,8 +67,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Remove(`1)
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -92,8 +74,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#IEnumerable#GetEnumerator
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -101,8 +81,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.System#Collections#Generic#ICollection{TValue}#Clear
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -117,8 +95,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedDictionary`2.ValueCollection.GetEnumerator
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

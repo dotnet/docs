@@ -1,7 +1,5 @@
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -9,8 +7,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.MoveNext
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -46,8 +42,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.System#Collections#IEnumerator#Reset
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -55,8 +49,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.Current
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -64,8 +56,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.Dictionary`2.Enumerator.Dispose
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

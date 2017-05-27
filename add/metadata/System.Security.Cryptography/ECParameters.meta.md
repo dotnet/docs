@@ -14,8 +14,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.ECParameters.Curve
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -23,8 +21,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.ECParameters.Validate
-ms.technology: 
-  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

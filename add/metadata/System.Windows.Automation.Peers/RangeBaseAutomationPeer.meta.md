@@ -1,5 +1,7 @@
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer
+ms.technology: 
+  - "dotnet-wpf"
 ms.author: "kempb"
 manager: "ghogen"
 ---
@@ -12,6 +14,8 @@ manager: "markl"
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.#ctor(System.Windows.Controls.Primitives.RangeBase)
+ms.technology: 
+  - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -49,6 +53,8 @@ manager: "markl"
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.System#Windows#Automation#Provider#IRangeValueProvider#SetValue(System.Double)
+ms.technology: 
+  - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
@@ -56,6 +62,8 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Automation.Peers.RangeBaseAutomationPeer.GetPattern(System.Windows.Automation.Peers.PatternInterface)
+ms.technology: 
+  - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

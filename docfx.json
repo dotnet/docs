@@ -15,7 +15,7 @@
       {
         "files": [
           "**/*.md",
-	  "**/**.yml"
+          "**/**.yml"
         ],
         "src": "docs",
         "dest": ".",
@@ -23,6 +23,12 @@
           "samples/**/*.*",
           "**/includes/**",
           "***/contributing.md"
+        ]
+      },
+      {
+        "files": [
+          "_breadcrumb/toc.yml",
+          "index.md"
         ]
       }
     ],
@@ -67,7 +73,7 @@
       },
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "~/_breadcrumb/toc.yml",
+      "breadcrumb_path": "/_breadcrumb/toc.json",
       "_displayLangs": [
         "csharp"
       ],

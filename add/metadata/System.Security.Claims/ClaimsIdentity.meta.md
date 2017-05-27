@@ -204,14 +204,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.Security.Claims.ClaimsIdentity.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.Security.Claims.ClaimsIdentity.WriteTo
 ms.technology: 
   - "dotnet-standard"

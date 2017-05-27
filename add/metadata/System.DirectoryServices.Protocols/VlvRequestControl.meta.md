@@ -55,13 +55,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.VlvRequestControl.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.VlvRequestControl.#ctor(System.Int32,System.Int32,System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

@@ -323,15 +323,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Double.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Double.System#IConvertible#ToType(System.Type,System.IFormatProvider)
 ms.technology: 
   - "dotnet-standard"

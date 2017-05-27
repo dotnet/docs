@@ -152,15 +152,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.Rss20FeedFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.Rss20FeedFormatter.#ctor(System.ServiceModel.Syndication.SyndicationFeed,System.Boolean)
 ms.technology: 
   - "dotnet-standard"

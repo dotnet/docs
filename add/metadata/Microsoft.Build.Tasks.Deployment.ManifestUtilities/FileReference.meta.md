@@ -74,10 +74,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.FileReference.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

@@ -20,13 +20,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.TypeExtension.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.TypeExtension.#ctor(System.Type)
 ms.technology: 
   - "dotnet-wpf"

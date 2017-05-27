@@ -299,15 +299,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripSplitButton.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripSplitButton.OnDefaultItemChanged(System.EventArgs)
 ms.technology: 
   - "dotnet-winforms"

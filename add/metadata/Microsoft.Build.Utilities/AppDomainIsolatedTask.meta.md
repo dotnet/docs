@@ -63,9 +63,3 @@ uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.#ctor
 ms.author: "susanno"
 manager: "douge"
 ---
-
----
-uid: Microsoft.Build.Utilities.AppDomainIsolatedTask.#ctor
-ms.author: "susanno"
-manager: "douge"
----

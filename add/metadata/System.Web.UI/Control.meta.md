@@ -998,15 +998,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Control.DataBind
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Control.Adapter
 ms.technology: 
   - "dotnet-webforms"

@@ -169,14 +169,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.X509SecurityTokenHandler.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.X509SecurityTokenHandler.WriteXmlDSigDefinedClauseTypes
 ms.technology: 
   - "dotnet-standard"

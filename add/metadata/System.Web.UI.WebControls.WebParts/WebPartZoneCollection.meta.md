@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebPartZoneCollection.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebPartZoneCollection.IndexOf(System.Web.UI.WebControls.WebParts.WebPartZoneBase)
 ms.technology: 
   - "dotnet-webforms"

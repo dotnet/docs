@@ -143,15 +143,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleConnection.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleConnection.ClearPool(System.Data.OracleClient.OracleConnection)
 ms.technology: 
   - "dotnet-ado"
@@ -197,25 +188,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleConnection.BeginTransaction
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleConnection.InfoMessage
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OracleClient.OracleConnection.GetSchema
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

@@ -31,14 +31,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.RequestFailedException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.RequestFailedException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

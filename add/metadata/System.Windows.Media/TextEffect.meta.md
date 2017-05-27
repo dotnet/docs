@@ -105,15 +105,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.TextEffect.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.TextEffect.#ctor(System.Windows.Media.Transform,System.Windows.Media.Brush,System.Windows.Media.Geometry,System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-wpf"

@@ -143,14 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.Configuration.Save
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.Configuration.SaveAs(System.String,System.Configuration.ConfigurationSaveMode,System.Boolean)
 ms.technology: 
   - "dotnet-webforms"

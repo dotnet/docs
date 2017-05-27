@@ -161,15 +161,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbCommandBuilder.GetInsertCommand
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbCommandBuilder.GetSchemaTable(System.Data.Common.DbCommand)
 ms.technology: 
   - "dotnet-ado"
@@ -233,25 +224,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbCommandBuilder.GetDeleteCommand
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbCommandBuilder.CatalogSeparator
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbCommandBuilder.GetUpdateCommand
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

@@ -165,15 +165,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Interop.D3DImage.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Interop.D3DImage.Lock
 ms.technology: 
   - "dotnet-wpf"

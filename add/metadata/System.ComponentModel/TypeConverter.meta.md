@@ -278,15 +278,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.TypeConverter.GetCreateInstanceSupported
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.TypeConverter.IsValid(System.Object)
 ms.technology: 
   - "dotnet-standard"
@@ -368,15 +359,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.TypeConverter.GetStandardValuesExclusive
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.TypeConverter.GetPropertiesSupported
 ms.technology: 
   - "dotnet-standard"
@@ -440,25 +422,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.TypeConverter.GetStandardValuesSupported
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.TypeConverter.CanConvertTo(System.Type)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.TypeConverter.GetStandardValues
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -477,15 +441,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.TypeConverter.ConvertToString(System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.TypeConverter.GetPropertiesSupported
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

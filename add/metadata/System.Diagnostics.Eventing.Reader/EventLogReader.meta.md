@@ -111,14 +111,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -128,14 +120,6 @@ manager: "ghogen"
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.IO.SeekOrigin,System.Int64)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"

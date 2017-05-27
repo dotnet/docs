@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.CryptographicAttributeObjectCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.CryptographicAttributeObjectCollection.IsSynchronized
 ms.technology: 
   - "dotnet-standard"

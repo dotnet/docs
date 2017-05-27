@@ -125,13 +125,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.Domain.FindDomainController
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.Domain.GetTrustRelationship(System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -160,13 +153,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.Domain.FindAllDomainControllers
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.Domain.VerifyOutboundTrustRelationship(System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -182,13 +168,6 @@ manager: "mbaldwin"
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Domain.Children
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Domain.FindAllDiscoverableDomainControllers
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"

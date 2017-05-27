@@ -20,13 +20,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlBackgroundReader.StartThread
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlBackgroundReader.Namespace
 ms.technology: 
   - "dotnet-wpf"

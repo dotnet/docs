@@ -113,12 +113,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.HttpWebRequest.GetRequestStream
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.HttpWebRequest.Host
 ms.author: "bobdel"
 manager: "markl"
@@ -366,12 +360,6 @@ manager: "markl"
 
 ---
 uid: System.Net.HttpWebRequest.ConnectionGroupName
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.HttpWebRequest.#ctor
 ms.author: "bobdel"
 manager: "markl"
 ---

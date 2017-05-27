@@ -43,15 +43,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingVectorKeyFrame.#ctor(System.Windows.Vector,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"

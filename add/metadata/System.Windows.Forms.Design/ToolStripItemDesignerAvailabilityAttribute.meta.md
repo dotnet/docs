@@ -60,14 +60,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute.Equals(System.Object)
 ms.technology: 
   - "dotnet-winforms"

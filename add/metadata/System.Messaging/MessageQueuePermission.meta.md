@@ -13,13 +13,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueuePermission.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueuePermission.IsSubsetOf(System.Security.IPermission)
 ms.technology: 
   - "dotnet-standard"

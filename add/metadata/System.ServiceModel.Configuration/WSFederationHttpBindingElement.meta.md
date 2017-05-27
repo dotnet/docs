@@ -53,15 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WSFederationHttpBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.WSFederationHttpBindingElement.PrivacyNoticeAt
 ms.technology: 
   - "dotnet-standard"

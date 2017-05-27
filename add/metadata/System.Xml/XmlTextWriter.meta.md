@@ -96,15 +96,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlTextWriter.WriteStartDocument
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlTextWriter.WriteEndAttribute
 ms.technology: 
   - "dotnet-standard"

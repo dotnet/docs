@@ -47,12 +47,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.BuildEngine.InvalidProjectFileException.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.BuildEngine.InvalidProjectFileException.HelpKeyword
 ms.author: "susanno"
 manager: "douge"

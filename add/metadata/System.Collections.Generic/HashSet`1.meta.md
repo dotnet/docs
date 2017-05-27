@@ -240,15 +240,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.HashSet`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.HashSet`1.IsSubsetOf(System.Collections.Generic.IEnumerable{`0})
 ms.technology: 
   - "dotnet-standard"

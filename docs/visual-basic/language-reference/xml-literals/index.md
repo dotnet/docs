@@ -39,7 +39,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # XML Literals (Visual Basic)
-The topics in this section document the syntax of XML literals in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]. The XML literal syntax enables you to incorporate XML directly in your code.  
+The topics in this section document the syntax of XML literals in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The XML literal syntax enables you to incorporate XML directly in your code.  
   
 ## In This Section  
   

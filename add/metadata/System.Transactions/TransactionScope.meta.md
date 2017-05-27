@@ -104,13 +104,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.TransactionScope.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Transactions.TransactionScope.Complete
 ms.technology: 
   - "dotnet-standard"

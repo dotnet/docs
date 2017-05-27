@@ -88,14 +88,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Imaging.FormatConvertedBitmap.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Imaging.FormatConvertedBitmap.DestinationPaletteProperty
 ms.technology: 
   - "dotnet-wpf"

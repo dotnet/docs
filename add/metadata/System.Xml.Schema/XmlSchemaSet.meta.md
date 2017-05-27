@@ -206,24 +206,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Schema.XmlSchemaSet.Schemas
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Schema.XmlSchemaSet.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Schema.XmlSchemaSet.Add(System.String,System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"

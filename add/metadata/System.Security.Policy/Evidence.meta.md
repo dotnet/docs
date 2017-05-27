@@ -197,15 +197,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.Evidence.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.Evidence.GetHostEnumerator
 ms.technology: 
   - "dotnet-standard"

@@ -96,15 +96,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WSDualHttpBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.WSDualHttpBinding.#ctor(System.ServiceModel.WSDualHttpSecurityMode)
 ms.technology: 
   - "dotnet-standard"

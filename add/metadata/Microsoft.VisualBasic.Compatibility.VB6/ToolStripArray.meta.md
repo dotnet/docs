@@ -496,13 +496,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.ToolStripArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.ToolStripArray.ContextMenuChanged
 author: "stevehoag"
 ms.author: "shoag"

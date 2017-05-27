@@ -34,15 +34,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Printing.PrintServerException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintServerException.ServerName
 ms.technology: 
   - "dotnet-standard"

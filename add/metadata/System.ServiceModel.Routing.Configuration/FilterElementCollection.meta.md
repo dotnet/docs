@@ -44,13 +44,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Routing.Configuration.FilterElementCollection.Add(System.ServiceModel.Routing.Configuration.FilterElement)
 ms.technology: 
   - "dotnet-standard"

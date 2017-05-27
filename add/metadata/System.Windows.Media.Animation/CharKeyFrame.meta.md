@@ -76,15 +76,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.CharKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.CharKeyFrame.Value
 ms.technology: 
   - "dotnet-wpf"

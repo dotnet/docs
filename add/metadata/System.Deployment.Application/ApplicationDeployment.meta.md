@@ -251,15 +251,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Deployment.Application.ApplicationDeployment.CheckForDetailedUpdate
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Deployment.Application.ApplicationDeployment.CurrentDeployment
 ms.technology: 
   - "dotnet-standard"
@@ -270,15 +261,6 @@ manager: "wpickett"
 
 ---
 uid: System.Deployment.Application.ApplicationDeployment.ActivationUri
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Deployment.Application.ApplicationDeployment.CheckForUpdate
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

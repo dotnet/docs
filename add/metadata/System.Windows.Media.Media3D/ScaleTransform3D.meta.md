@@ -113,14 +113,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.ScaleTransform3D.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Media3D.ScaleTransform3D.#ctor(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
 ms.technology: 
   - "dotnet-wpf"

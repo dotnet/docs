@@ -23,14 +23,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.Organization.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Metadata.Organization.#ctor(System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedName},System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedName},System.IdentityModel.Metadata.LocalizedEntryCollection{System.IdentityModel.Metadata.LocalizedUri})
 ms.technology: 
   - "dotnet-standard"

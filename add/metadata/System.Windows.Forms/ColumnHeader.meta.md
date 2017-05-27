@@ -122,15 +122,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ColumnHeader.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ColumnHeader.Name
 ms.technology: 
   - "dotnet-winforms"

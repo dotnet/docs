@@ -225,15 +225,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.System#Collections#IList#Item(System.Int32)
 author: "mairaw"
 ms.author: "mairaw"
@@ -269,15 +260,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.ToArray
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.CompilerServices.ReadOnlyCollectionBuilder`1.Reverse
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

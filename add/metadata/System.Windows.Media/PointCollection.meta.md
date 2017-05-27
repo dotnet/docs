@@ -231,15 +231,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.PointCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.PointCollection.Clone
 ms.technology: 
   - "dotnet-wpf"
@@ -266,15 +257,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.PointCollection.Contains(System.Windows.Point)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.PointCollection.ToString
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

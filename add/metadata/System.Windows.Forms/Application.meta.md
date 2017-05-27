@@ -53,14 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Application.Run
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.Application.ProductName
 ms.technology: 
   - "dotnet-winforms"
@@ -371,15 +363,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.Application.ExecutablePath
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Application.Exit
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"

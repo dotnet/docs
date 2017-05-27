@@ -203,15 +203,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.TextDecorationCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.TextDecorationCollection.Insert(System.Int32,System.Windows.TextDecoration)
 ms.technology: 
   - "dotnet-wpf"

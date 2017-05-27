@@ -385,15 +385,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.TextBlock.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.TextBlock.TextEffectsProperty
 ms.technology: 
   - "dotnet-wpf"

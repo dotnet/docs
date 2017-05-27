@@ -47,14 +47,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.RoleDescriptor.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Metadata.RoleDescriptor.ErrorUrl
 ms.technology: 
   - "dotnet-standard"

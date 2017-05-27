@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemInfo.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileSystemInfo.Extension
 ms.technology: 
   - "dotnet-standard"

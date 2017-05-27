@@ -53,15 +53,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Odbc.OdbcCommandBuilder.GetInsertCommand
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand
 ms.technology: 
   - "dotnet-ado"
@@ -81,15 +72,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Odbc.OdbcCommandBuilder.UnquoteIdentifier
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Odbc.OdbcCommandBuilder.#ctor
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -152,15 +134,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Odbc.OdbcCommandBuilder.GetDeleteCommand
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Odbc.OdbcCommandBuilder.#ctor(System.Data.Odbc.OdbcDataAdapter)
 ms.technology: 
   - "dotnet-ado"
@@ -171,15 +144,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Odbc.OdbcCommandBuilder.UnquoteIdentifier(System.String,System.Data.Odbc.OdbcConnection)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Odbc.OdbcCommandBuilder.GetUpdateCommand
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

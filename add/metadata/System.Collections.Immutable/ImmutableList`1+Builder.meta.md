@@ -192,13 +192,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Immutable.ImmutableList`1.Builder.Reverse
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Immutable.ImmutableList`1.Builder.Contains(`0)
 author: "mairaw"
 ms.author: "mairaw"
@@ -299,13 +292,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Immutable.ImmutableList`1.Builder.System#Collections#IList#IsReadOnly
----
-
----
-uid: System.Collections.Immutable.ImmutableList`1.Builder.Sort
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
 ---
 
 ---

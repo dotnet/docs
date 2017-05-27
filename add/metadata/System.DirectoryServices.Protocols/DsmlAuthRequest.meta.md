@@ -27,13 +27,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.DsmlAuthRequest.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.DsmlAuthRequest.Principal
 author: "BrucePerlerMS"
 ms.author: "bruceper"

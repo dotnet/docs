@@ -161,15 +161,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.EventLog.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.EventLog.MinimumRetentionDays
 ms.technology: 
   - "dotnet-standard"
@@ -318,15 +309,6 @@ uid: System.Diagnostics.EventLog.Dispose
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
----
-
----
-uid: System.Diagnostics.EventLog.GetEventLogs
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
 ---
 
 ---

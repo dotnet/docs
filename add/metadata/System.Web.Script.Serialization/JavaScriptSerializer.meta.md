@@ -91,14 +91,6 @@ ms.technology:
 ---
 
 ---
-uid: System.Web.Script.Serialization.JavaScriptSerializer.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.Script.Serialization.JavaScriptSerializer.ConvertToType``1(System.Object)
 ms.technology: 
   - "dotnet-webforms"

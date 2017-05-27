@@ -52,15 +52,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Data.XmlNamespaceMapping.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Data.XmlNamespaceMapping.Prefix
 ms.technology: 
   - "dotnet-wpf"

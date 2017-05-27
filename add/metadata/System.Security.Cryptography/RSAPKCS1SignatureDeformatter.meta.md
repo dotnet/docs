@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSAPKCS1SignatureDeformatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RSAPKCS1SignatureDeformatter.VerifySignature
 ms.technology: 
   - "dotnet-standard"

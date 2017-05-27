@@ -66,7 +66,7 @@ You can add functionality to the application model by overriding the `Overridabl
   
     2.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A>. Allows a designer to emit code that initializes the splash screen.  
   
-         By default, this method does nothing. If you select a splash screen for your application in the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A> property to a new instance of the splash-screen form.  
+         By default, this method does nothing. If you select a splash screen for your application in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateSplashScreen%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.SplashScreen%2A> property to a new instance of the splash-screen form.  
   
 2.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartup%2A>. Provides an extensibility point for raising the `Startup` event. The application startup sequence stops if this function returns `False`.  
   
@@ -78,7 +78,7 @@ You can add functionality to the application model by overriding the `Overridabl
   
     1.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A>. Provides a way for a designer to emit code that initializes the main form.  
   
-         By default, this method does nothing. However, when you select a main form for your application in the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to a new instance of the main form.  
+         By default, this method does nothing. However, when you select a main form for your application in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] **Project Designer**, the designer overrides the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnCreateMainForm%2A> method with a method that sets the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.MainForm%2A> property to a new instance of the main form.  
   
     2.  <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.HideSplashScreen%2A>. If application has a splash screen defined and it is open, this method closes the splash screen.  
   
@@ -101,7 +101,7 @@ You can add functionality to the application model by overriding the `Overridabl
  The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> constructor calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property to determine which text rendering engine to use for the application's forms. By default, the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property returns `False`, indicating that the GDI text rendering engine be used, which is the default in [!INCLUDE[vbprvblong](../../../visual-basic/developing-apps/customizing-extending-my/includes/vbprvblong_md.md)]. You can override the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property to return `True`, which indicates that the GDI+ text rendering engine be used, which is the default in Visual Basic .NET 2002 and Visual Basic .NET 2003.  
   
 ## Configuring the Application  
- As a part of the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Application model, the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class provides protected properties that configure the application. These properties should be set in the constructor of the implementing class.  
+ As a part of the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Application model, the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase> class provides protected properties that configure the application. These properties should be set in the constructor of the implementing class.  
   
  In a default Windows Forms project, the **Project Designer** creates code to set the properties with the designer settings. The properties are used only when the application is starting; setting them after the application starts has no effect.  
   

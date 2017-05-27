@@ -88,15 +88,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.HierarchicalDataTemplate.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.HierarchicalDataTemplate.ItemStringFormat
 ms.technology: 
   - "dotnet-wpf"

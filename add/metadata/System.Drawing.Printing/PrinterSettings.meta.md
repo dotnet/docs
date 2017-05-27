@@ -107,15 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.PrinterSettings.CreateMeasurementGraphics
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Printing.PrinterSettings.PrintToFile
 ms.technology: 
   - "dotnet-standard"
@@ -189,15 +180,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Printing.PrinterSettings.IsDefaultPrinter
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Printing.PrinterSettings.GetHdevmode
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

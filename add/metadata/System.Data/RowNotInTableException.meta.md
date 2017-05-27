@@ -35,15 +35,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.RowNotInTableException.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.RowNotInTableException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-ado"

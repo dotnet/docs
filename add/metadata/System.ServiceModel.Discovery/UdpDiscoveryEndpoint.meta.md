@@ -89,15 +89,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.UdpDiscoveryEndpoint.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.UdpDiscoveryEndpoint.TransportSettings
 ms.technology: 
   - "dotnet-standard"

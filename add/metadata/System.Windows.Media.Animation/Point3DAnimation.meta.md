@@ -141,14 +141,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Point3DAnimation.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.Point3DAnimation.GetCurrentValueCore(System.Windows.Media.Media3D.Point3D,System.Windows.Media.Media3D.Point3D,System.Windows.Media.Animation.AnimationClock)
 ms.technology: 
   - "dotnet-wpf"

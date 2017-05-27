@@ -458,15 +458,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueue.GetPrintCapabilities
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Printing.PrintQueue.AveragePagesPerMinute
 ms.technology: 
   - "dotnet-standard"
@@ -609,14 +600,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueue.AddJob
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Printing.PrintQueue.Commit
 ms.technology: 
   - "dotnet-standard"
@@ -671,15 +654,6 @@ manager: "wpickett"
 
 ---
 uid: System.Printing.PrintQueue.IsTonerLow
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Printing.PrintQueue.GetPrintCapabilitiesAsXml
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

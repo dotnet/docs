@@ -271,14 +271,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.MetadataSerializer.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Metadata.MetadataSerializer.WriteContactPerson(System.Xml.XmlWriter,System.IdentityModel.Metadata.ContactPerson)
 ms.technology: 
   - "dotnet-standard"

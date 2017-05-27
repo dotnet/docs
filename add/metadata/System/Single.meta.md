@@ -449,15 +449,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Single.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Single.op_Inequality(System.Single,System.Single)
 ms.technology: 
   - "dotnet-standard"

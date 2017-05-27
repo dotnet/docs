@@ -105,15 +105,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.IDataObject.GetFormats
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.IDataObject.GetDataPresent
 ms.technology: 
   - "dotnet-wpf"

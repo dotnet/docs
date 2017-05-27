@@ -32,10 +32,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "jillfra"
 ---
-
----
-uid: System.Management.EventQuery.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----

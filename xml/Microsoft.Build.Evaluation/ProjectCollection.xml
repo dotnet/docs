@@ -1288,9 +1288,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This is the Windows file version (specifically the value of the ProductVersion resource), which is not necessarily the assembly version. To obtain the assembly version, use Constants.AssemblyVersion.  
-  
- See also the <xref:Microsoft.Build.Evaluation.ProjectCollection.ToolsetsVersion%2A>.  
+ This is the Windows file version (specifically the value of the ProductVersion resource), which is not necessarily the assembly version. To obtain the assembly version, use Constants.AssemblyVersion.
   
  ]]></format>
         </remarks>

@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.FormAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.FormAttribute.GetModelName
 ms.technology: 
   - "dotnet-webforms"

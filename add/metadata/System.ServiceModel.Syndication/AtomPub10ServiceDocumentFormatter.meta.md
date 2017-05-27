@@ -53,15 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.AtomPub10ServiceDocumentFormatter.ReadFrom(System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"

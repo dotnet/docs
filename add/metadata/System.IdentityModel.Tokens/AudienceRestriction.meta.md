@@ -31,14 +31,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.AudienceRestriction.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.AudienceRestriction.#ctor(System.IdentityModel.Selectors.AudienceUriMode)
 ms.technology: 
   - "dotnet-standard"

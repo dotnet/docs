@@ -48,13 +48,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.ErrorResponseException.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.ErrorResponseException.#ctor(System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

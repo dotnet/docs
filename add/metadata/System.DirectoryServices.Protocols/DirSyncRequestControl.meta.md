@@ -55,13 +55,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.DirSyncRequestControl.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.DirSyncRequestControl.AttributeCount
 author: "BrucePerlerMS"
 ms.author: "bruceper"

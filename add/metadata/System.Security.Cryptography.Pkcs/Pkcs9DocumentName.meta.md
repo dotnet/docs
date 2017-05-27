@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentName.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.Pkcs9DocumentName.CopyFrom(System.Security.Cryptography.AsnEncodedData)
 ms.technology: 
   - "dotnet-standard"

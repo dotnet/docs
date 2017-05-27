@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.TrustManagerContext.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.TrustManagerContext.NoPrompt
 ms.technology: 
   - "dotnet-standard"

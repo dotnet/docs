@@ -71,14 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.TableStyle.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.TableStyle.CopyFrom(System.Web.UI.WebControls.Style)
 ms.technology: 
   - "dotnet-webforms"

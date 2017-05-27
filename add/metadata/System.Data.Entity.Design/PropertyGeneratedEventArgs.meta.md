@@ -71,15 +71,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Entity.Design.PropertyGeneratedEventArgs.AdditionalSetStatements
 ms.technology: 
   - "dotnet-ado"

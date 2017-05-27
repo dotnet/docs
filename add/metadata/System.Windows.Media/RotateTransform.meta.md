@@ -67,14 +67,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.RotateTransform.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.RotateTransform.Value
 ms.technology: 
   - "dotnet-wpf"

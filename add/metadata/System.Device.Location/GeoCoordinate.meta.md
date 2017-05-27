@@ -132,13 +132,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Device.Location.GeoCoordinate.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "martinek"
----
-
----
 uid: System.Device.Location.GeoCoordinate.op_Equality(System.Device.Location.GeoCoordinate,System.Device.Location.GeoCoordinate)
 ms.technology: 
   - "dotnet-standard"

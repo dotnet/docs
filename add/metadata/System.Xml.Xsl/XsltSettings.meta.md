@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.XsltSettings.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.XsltSettings.EnableDocumentFunction
 ms.technology: 
   - "dotnet-standard"

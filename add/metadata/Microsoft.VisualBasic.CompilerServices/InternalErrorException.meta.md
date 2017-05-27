@@ -25,10 +25,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: Microsoft.VisualBasic.CompilerServices.InternalErrorException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

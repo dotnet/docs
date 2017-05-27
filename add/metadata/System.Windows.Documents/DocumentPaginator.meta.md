@@ -140,14 +140,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.DocumentPaginator.ComputePageCountAsync
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Documents.DocumentPaginator.OnPagesChanged(System.Windows.Documents.PagesChangedEventArgs)
 ms.technology: 
   - "dotnet-wpf"

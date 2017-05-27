@@ -31,14 +31,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineAnchorCapStyle
 ms.technology: 
   - "dotnet-webforms"

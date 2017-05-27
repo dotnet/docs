@@ -119,14 +119,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "sethm"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Deserialize(System.IO.Stream)
 ms.technology: 
   - "dotnet-standard"

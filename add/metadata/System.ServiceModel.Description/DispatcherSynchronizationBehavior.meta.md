@@ -71,15 +71,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.DispatcherSynchronizationBehavior.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.DispatcherSynchronizationBehavior.System#ServiceModel#Description#IEndpointBehavior#Validate(System.ServiceModel.Description.ServiceEndpoint)
 ms.technology: 
   - "dotnet-standard"

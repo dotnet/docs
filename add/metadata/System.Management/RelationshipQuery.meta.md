@@ -102,10 +102,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "jillfra"
 ---
-
----
-uid: System.Management.RelationshipQuery.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----

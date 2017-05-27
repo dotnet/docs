@@ -268,15 +268,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Dictionary`2.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.Dictionary`2.System#Collections#IDictionary#Add(System.Object,System.Object)
 ms.technology: 
   - "dotnet-standard"

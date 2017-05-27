@@ -177,15 +177,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.TimelineCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.TimelineCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.Animation.Timeline})
 ms.technology: 
   - "dotnet-wpf"

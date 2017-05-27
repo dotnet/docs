@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.CustomTypeDescriptor.GetProperties
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.CustomTypeDescriptor.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)
 ms.technology: 
   - "dotnet-standard"
@@ -135,24 +126,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.CustomTypeDescriptor.GetConverter
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.CustomTypeDescriptor.GetEvents
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

@@ -80,15 +80,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.NamedPipeTransportBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.NamedPipeTransportBindingElement.#ctor(System.ServiceModel.Channels.NamedPipeTransportBindingElement)
 ms.technology: 
   - "dotnet-standard"

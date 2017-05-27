@@ -269,15 +269,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.GraphicsPath.GetBounds
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Drawing2D.GraphicsPath.AddBezier(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
 ms.technology: 
   - "dotnet-standard"
@@ -692,15 +683,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Drawing2D.GraphicsPath.Flatten
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Drawing2D.GraphicsPath.IsVisible(System.Drawing.Point,System.Drawing.Graphics)
 ms.technology: 
   - "dotnet-standard"
@@ -765,15 +747,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Drawing2D.GraphicsPath.Warp(System.Drawing.PointF[],System.Drawing.RectangleF,System.Drawing.Drawing2D.Matrix,System.Drawing.Drawing2D.WarpMode,System.Single)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Drawing2D.GraphicsPath.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

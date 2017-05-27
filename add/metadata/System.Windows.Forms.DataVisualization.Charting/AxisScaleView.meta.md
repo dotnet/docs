@@ -191,14 +191,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.AxisScaleView.ZoomReset
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.AxisScaleView.ViewMinimum
 ms.technology: 
   - "dotnet-winforms"

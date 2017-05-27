@@ -92,7 +92,7 @@ If a property has both a `get` and a `set` accessor, both must be auto-implement
 -   [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See also
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

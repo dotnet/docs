@@ -15,14 +15,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Protocols.WSTrust.Renewing.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Protocols.WSTrust.Renewing.OkForRenewalAfterExpiration
 ms.technology: 
   - "dotnet-standard"

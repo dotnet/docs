@@ -209,14 +209,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripDropDownItem.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.ToolStripDropDownItem.OnFontChanged(System.EventArgs)
 ms.technology: 
   - "dotnet-winforms"

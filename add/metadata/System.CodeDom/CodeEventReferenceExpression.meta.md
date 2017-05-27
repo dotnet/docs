@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeEventReferenceExpression.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeEventReferenceExpression.EventName
 ms.technology: 
   - "dotnet-standard"

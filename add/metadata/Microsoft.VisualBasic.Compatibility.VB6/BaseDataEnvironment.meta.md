@@ -76,20 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Commands
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Connections
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Object
 author: "stevehoag"
 ms.author: "shoag"
@@ -112,20 +98,6 @@ manager: "wpickett"
 
 ---
 uid: Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Recordsets(System.Object)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Recordsets
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.Compatibility.VB6.BaseDataEnvironment.Dispose
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

@@ -75,14 +75,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Int16KeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.Int16KeyFrame.#ctor(System.Int16,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"

@@ -117,14 +117,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.DataPointCollection.FindMaxByValue
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.DataPointCollection.FindAllByValue(System.Double,System.String)
 ms.technology: 
   - "dotnet-winforms"
@@ -262,14 +254,6 @@ manager: "mblythe"
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.DataPointCollection.AddXY(System.Object,System.Object[])
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.DataPointCollection.FindMinByValue
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "mblythe"

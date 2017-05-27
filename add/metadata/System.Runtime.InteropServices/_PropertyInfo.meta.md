@@ -287,15 +287,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.InteropServices._PropertyInfo.GetGetMethod
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.InteropServices._PropertyInfo.MemberType
 ms.technology: 
   - "dotnet-standard"
@@ -315,24 +306,6 @@ manager: "wpickett"
 
 ---
 uid: System.Runtime.InteropServices._PropertyInfo.GetSetMethod
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetSetMethod
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Runtime.InteropServices._PropertyInfo.GetAccessors
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

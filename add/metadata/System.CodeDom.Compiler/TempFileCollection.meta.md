@@ -184,15 +184,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.TempFileCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.Compiler.TempFileCollection.System#IDisposable#Dispose
 ms.technology: 
   - "dotnet-standard"

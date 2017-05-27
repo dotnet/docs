@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Int32.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Int32.System#IConvertible#ToType(System.Type,System.IFormatProvider)
 ms.technology: 
   - "dotnet-standard"

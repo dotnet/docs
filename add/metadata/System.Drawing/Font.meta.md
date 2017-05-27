@@ -386,15 +386,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Font.GetHeight
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Font.Bold
 ms.technology: 
   - "dotnet-standard"

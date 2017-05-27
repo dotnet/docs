@@ -287,14 +287,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.Chart.Dispose
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.Chart.Compression
 ms.technology: 
   - "dotnet-webforms"
@@ -464,14 +456,6 @@ manager: "mblythe"
 
 ---
 uid: System.Web.UI.DataVisualization.Charting.Chart.OnCustomize(System.EventArgs)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"

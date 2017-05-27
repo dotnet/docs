@@ -80,25 +80,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AsymmetricAlgorithm.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AsymmetricAlgorithm.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

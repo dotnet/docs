@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.HMAC.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.HMAC.Initialize
 ms.technology: 
   - "dotnet-standard"

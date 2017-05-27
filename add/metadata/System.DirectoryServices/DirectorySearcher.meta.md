@@ -90,13 +90,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.DirectorySearcher.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.DirectorySearcher.FindAll
 author: "BrucePerlerMS"
 ms.author: "bruceper"

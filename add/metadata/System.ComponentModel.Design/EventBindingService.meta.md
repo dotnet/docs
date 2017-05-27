@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#ShowCode
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.EventBindingService.ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -153,15 +144,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Design.EventBindingService.System#ComponentModel#Design#IEventBindingService#ShowCode(System.ComponentModel.IComponent,System.ComponentModel.EventDescriptor)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Design.EventBindingService.ShowCode
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

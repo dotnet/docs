@@ -107,15 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeParameterDeclarationExpressionCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeParameterDeclarationExpressionCollection.#ctor(System.CodeDom.CodeParameterDeclarationExpressionCollection)
 ms.technology: 
   - "dotnet-standard"

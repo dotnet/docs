@@ -80,12 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.BaseDataList.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.WebControls.BaseDataList.Render(System.Web.UI.HtmlTextWriter)
 ms.technology: 
   - "dotnet-webforms"

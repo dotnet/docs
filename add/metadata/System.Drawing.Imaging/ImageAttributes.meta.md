@@ -269,15 +269,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ImageAttributes.ClearGamma
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ImageAttributes.SetColorMatrix(System.Drawing.Imaging.ColorMatrix,System.Drawing.Imaging.ColorMatrixFlag,System.Drawing.Imaging.ColorAdjustType)
 ms.technology: 
   - "dotnet-standard"
@@ -287,25 +278,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ImageAttributes.SetNoOp
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ImageAttributes.ClearRemapTable(System.Drawing.Imaging.ColorAdjustType)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Imaging.ImageAttributes.ClearOutputChannel
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"
@@ -422,24 +395,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ImageAttributes.ClearColorKey
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Imaging.ImageAttributes.ClearColorMatrix
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ImageAttributes.ClearRemapTable
 ms.technology: 
   - "dotnet-standard"
@@ -485,15 +440,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ImageAttributes.ClearRemapTable
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ImageAttributes.SetGamma(System.Single)
 ms.technology: 
   - "dotnet-standard"
@@ -530,15 +476,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.ImageAttributes.ClearNoOp
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.ImageAttributes.SetColorKey(System.Drawing.Color,System.Drawing.Color)
 ms.technology: 
   - "dotnet-standard"
@@ -549,24 +486,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Imaging.ImageAttributes.SetThreshold
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Imaging.ImageAttributes.ClearThreshold
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Imaging.ImageAttributes.ClearOutputChannelColorProfile
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

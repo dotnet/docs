@@ -185,12 +185,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.WebHeaderCollection.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.WebHeaderCollection.Remove(System.Net.HttpRequestHeader)
 ms.author: "bobdel"
 manager: "markl"

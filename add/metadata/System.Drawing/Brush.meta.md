@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Brush.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Brush.SetNativeBrush(System.IntPtr)
 ms.technology: 
   - "dotnet-standard"

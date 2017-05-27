@@ -62,15 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.DurableInstancing.InstanceHandleConflictException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.DurableInstancing.InstanceHandleConflictException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"

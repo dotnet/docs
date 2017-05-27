@@ -76,13 +76,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.GetText
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.SetImage(System.Drawing.Image)
 author: "stevehoag"
 ms.author: "shoag"
@@ -175,13 +168,6 @@ manager: "wpickett"
 
 ---
 uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText(System.Windows.Forms.TextDataFormat)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.MyServices.ClipboardProxy.ContainsText
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

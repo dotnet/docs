@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.ConsumerConnectionPointCollection.Item
 ms.technology: 
   - "dotnet-webforms"

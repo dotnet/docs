@@ -84,15 +84,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Rotation3DKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Rotation3DKeyFrame.KeyTimeProperty
 ms.technology: 
   - "dotnet-wpf"

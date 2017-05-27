@@ -34,14 +34,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingSingleKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.EasingSingleKeyFrame.#ctor(System.Single,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"

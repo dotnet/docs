@@ -41,13 +41,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.PutOptions.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.PutOptions.UseAmendedQualifiers
 ms.technology: 
   - "dotnet-standard"

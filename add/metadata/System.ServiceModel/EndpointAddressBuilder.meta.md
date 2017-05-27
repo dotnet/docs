@@ -71,15 +71,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.EndpointAddressBuilder.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.EndpointAddressBuilder.Uri
 ms.technology: 
   - "dotnet-standard"

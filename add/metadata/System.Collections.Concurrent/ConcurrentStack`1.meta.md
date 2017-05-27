@@ -148,15 +148,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Concurrent.ConcurrentStack`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Concurrent.ConcurrentStack`1.PushRange
 ms.technology: 
   - "dotnet-standard"

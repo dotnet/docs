@@ -44,12 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.WebParts.ConnectionsZoneDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.WebParts.ConnectionsZoneDesigner.#ctor
 ms.technology: 
   - "dotnet-webforms"

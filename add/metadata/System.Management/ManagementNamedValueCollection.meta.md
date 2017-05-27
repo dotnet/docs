@@ -20,13 +20,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementNamedValueCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementNamedValueCollection.RemoveAll
 ms.technology: 
   - "dotnet-standard"

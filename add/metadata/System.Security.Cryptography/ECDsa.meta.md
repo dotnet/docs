@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.ECDsa.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.ECDsa.KeyExchangeAlgorithm
 ms.technology: 
   - "dotnet-standard"

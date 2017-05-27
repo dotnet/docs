@@ -33,9 +33,3 @@ uid: System.Net.Http.MessageProcessingHandler.SendAsync(System.Net.Http.HttpRequ
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.Http.MessageProcessingHandler.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

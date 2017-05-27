@@ -121,15 +121,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Security.AccessControl.DirectoryObjectSecurity.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.AccessControl.DirectoryObjectSecurity.GetAccessRules(System.Boolean,System.Boolean,System.Type)
 ms.technology: 
   - "dotnet-standard"

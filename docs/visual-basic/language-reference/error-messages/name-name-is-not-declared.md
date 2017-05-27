@@ -43,7 +43,7 @@ A statement refers to a programming element, but the compiler cannot find an ele
   
 ## To correct this error  
   
-1.  Check the spelling of the name in the referring statement. [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] is case-insensitive, but any other variation in the spelling is regarded as a completely different name. Note that the underscore (`_`) is part of the name and therefore part of the spelling.  
+1.  Check the spelling of the name in the referring statement. [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] is case-insensitive, but any other variation in the spelling is regarded as a completely different name. Note that the underscore (`_`) is part of the name and therefore part of the spelling.  
   
 2.  Check that you have the member access operator (`.`) between an object and its member. For example, if you have a <xref:System.Windows.Forms.TextBox> control named `TextBox1`, to access its <xref:System.Windows.Forms.TextBoxBase.Text%2A> property you should type `TextBox1.Text`. If instead you type `TextBox1Text`, you have created a different name.  
   

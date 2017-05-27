@@ -249,15 +249,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ListViewItem.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ListViewItem.#ctor(System.Windows.Forms.ListViewItem.ListViewSubItem[],System.Int32,System.Windows.Forms.ListViewGroup)
 ms.technology: 
   - "dotnet-winforms"

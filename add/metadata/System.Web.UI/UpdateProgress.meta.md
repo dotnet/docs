@@ -42,12 +42,6 @@ manager: "wpickett"
 uid: System.Web.UI.UpdateProgress.DataBind
 ms.technology: 
   - "dotnet-webforms"
----
-
----
-uid: System.Web.UI.UpdateProgress.DataBind
-ms.technology: 
-  - "dotnet-webforms"
 ms.author: "riande"
 manager: "wpickett"
 ---

@@ -184,15 +184,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.MaterialCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.MaterialCollection.System#Collections#IEnumerable#GetEnumerator
 ms.technology: 
   - "dotnet-wpf"

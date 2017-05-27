@@ -71,12 +71,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Execution.BuildManager.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Execution.BuildManager.DefaultBuildManager
 ms.author: "susanno"
 manager: "douge"

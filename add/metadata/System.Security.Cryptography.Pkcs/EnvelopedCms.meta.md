@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt
 ms.technology: 
   - "dotnet-standard"
@@ -125,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Pkcs.EnvelopedCms.Decrypt
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Pkcs.EnvelopedCms.#ctor(System.Security.Cryptography.Pkcs.SubjectIdentifierType,System.Security.Cryptography.Pkcs.ContentInfo)
 ms.technology: 
   - "dotnet-standard"
@@ -162,15 +144,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Pkcs.EnvelopedCms.ContentEncryptionAlgorithm
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Pkcs.EnvelopedCms.Encrypt
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

@@ -45,14 +45,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DataAnnotations.MaxLengthAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DataAnnotations.MaxLengthAttribute.Length
 ms.technology: 
   - "dotnet-webforms"

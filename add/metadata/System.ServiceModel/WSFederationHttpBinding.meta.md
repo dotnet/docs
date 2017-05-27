@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WSFederationHttpBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.WSFederationHttpBinding.#ctor(System.ServiceModel.WSFederationHttpSecurityMode)
 ms.technology: 
   - "dotnet-standard"

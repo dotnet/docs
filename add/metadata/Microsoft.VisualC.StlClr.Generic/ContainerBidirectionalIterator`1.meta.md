@@ -65,12 +65,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1.#ctor
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.Generic.ContainerBidirectionalIterator`1.valid
 ms.author: "mblome"
 manager: "ghogen"

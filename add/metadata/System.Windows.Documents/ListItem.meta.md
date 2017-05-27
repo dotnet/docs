@@ -53,14 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.ListItem.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Documents.ListItem.LineHeight
 ms.technology: 
   - "dotnet-wpf"

@@ -32,10 +32,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.RemotingException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

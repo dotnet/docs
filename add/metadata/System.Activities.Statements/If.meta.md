@@ -44,15 +44,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Statements.If.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Statements.If.Else
 ms.technology: 
   - "dotnet-standard"

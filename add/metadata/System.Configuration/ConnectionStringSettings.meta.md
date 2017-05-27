@@ -55,14 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConnectionStringSettings.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConnectionStringSettings.ProviderName
 ms.technology: 
   - "dotnet-webforms"

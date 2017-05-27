@@ -27,13 +27,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.WqlObjectQuery.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.WqlObjectQuery.Clone
 ms.technology: 
   - "dotnet-standard"

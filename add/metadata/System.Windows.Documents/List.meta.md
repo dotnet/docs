@@ -52,15 +52,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.List.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Documents.List.MarkerStyleProperty
 ms.technology: 
   - "dotnet-wpf"

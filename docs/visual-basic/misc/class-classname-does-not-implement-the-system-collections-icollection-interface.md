@@ -33,11 +33,11 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Class &#39;&lt;classname&gt;&#39; does not implement the System.Collections.ICollection interface
-The class does not implement the `System.Collections.ICollection` interface, which defines size, enumerators and synchronization methods for all collections. It may be necessary to reinstall [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
+The class does not implement the `System.Collections.ICollection` interface, which defines size, enumerators and synchronization methods for all collections. It may be necessary to reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 ## To correct this error  
   
-1.  Reinstall [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
+1.  Reinstall [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
 ## See Also  
  <xref:System.Collections.ICollection>

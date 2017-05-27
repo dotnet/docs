@@ -121,14 +121,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.LineGeometry.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.LineGeometry.StartPoint
 ms.technology: 
   - "dotnet-wpf"

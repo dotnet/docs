@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.LinearQuaternionKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.LinearQuaternionKeyFrame.InterpolateValueCore(System.Windows.Media.Media3D.Quaternion,System.Double)
 ms.technology: 
   - "dotnet-wpf"

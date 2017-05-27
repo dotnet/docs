@@ -107,14 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.RectAnimation.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.RectAnimation.#ctor(System.Windows.Rect,System.Windows.Rect,System.Windows.Duration,System.Windows.Media.Animation.FillBehavior)
 ms.technology: 
   - "dotnet-wpf"

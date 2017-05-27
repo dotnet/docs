@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.NamedPermissionSet.Copy
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.NamedPermissionSet.Copy(System.String)
 ms.technology: 
   - "dotnet-standard"

@@ -215,15 +215,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.FormsAuthentication.RedirectToLoginPage
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.FormsAuthentication.HashPasswordForStoringInConfigFile(System.String,System.String)
 ms.technology: 
   - "dotnet-webforms"

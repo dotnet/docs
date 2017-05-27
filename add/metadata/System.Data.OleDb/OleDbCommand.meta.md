@@ -116,15 +116,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbCommand.ExecuteReader
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OleDb.OleDbCommand.UpdatedRowSource
 ms.technology: 
   - "dotnet-ado"
@@ -179,15 +170,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbCommand.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OleDb.OleDbCommand.CreateParameter
 ms.technology: 
   - "dotnet-ado"
@@ -234,15 +216,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OleDb.OleDbCommand.CommandTimeout
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OleDb.OleDbCommand.System#Data#IDbCommand#ExecuteReader
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

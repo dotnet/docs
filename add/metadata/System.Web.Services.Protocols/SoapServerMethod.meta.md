@@ -125,15 +125,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapServerMethod.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Protocols.SoapServerMethod.BindingUse
 ms.technology: 
   - "dotnet-webforms"

@@ -59,15 +59,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GlyphRunDrawing.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.GlyphRunDrawing.GlyphRun
 ms.technology: 
   - "dotnet-wpf"

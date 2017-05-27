@@ -7,12 +7,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.ConvertersCollection.CreateNewElement
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.Configuration.ConvertersCollection.#ctor
 ms.technology: 
   - "dotnet-webforms"

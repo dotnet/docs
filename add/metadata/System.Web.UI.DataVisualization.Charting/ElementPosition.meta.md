@@ -47,14 +47,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ElementPosition.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.ElementPosition.FromRectangleF(System.Drawing.RectangleF)
 ms.technology: 
   - "dotnet-webforms"

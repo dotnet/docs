@@ -18,10 +18,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Workflow.Runtime.Tracking.TrackingAnnotationCollection.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

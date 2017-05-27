@@ -16,14 +16,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.DiscreteThicknessKeyFrame.InterpolateValueCore(System.Windows.Thickness,System.Double)
 ms.technology: 
   - "dotnet-wpf"

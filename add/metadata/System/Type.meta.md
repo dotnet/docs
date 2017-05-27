@@ -575,15 +575,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Type.GetMethods
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Type.GetGenericTypeDefinition
 ms.technology: 
   - "dotnet-standard"
@@ -693,15 +684,6 @@ manager: "wpickett"
 
 ---
 uid: System.Type.GetAttributeFlagsImpl
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Type.MakeArrayType
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -1178,15 +1160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Type.GetMembers
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Type.op_Equality(System.Type,System.Type)
 ms.technology: 
   - "dotnet-standard"
@@ -1313,15 +1286,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Type.GetConstructors
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Type.Namespace
 ms.technology: 
   - "dotnet-standard"
@@ -1341,15 +1305,6 @@ manager: "wpickett"
 
 ---
 uid: System.Type.GetField(System.String,System.Reflection.BindingFlags)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Type.GetType
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -1386,15 +1341,6 @@ manager: "wpickett"
 
 ---
 uid: System.Type.GetConstructor(System.Type[])
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Type.GetProperties
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -1547,15 +1493,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Type.GetNestedTypes
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Type.ReflectionOnlyGetType(System.String,System.Boolean,System.Boolean)
 ms.technology: 
   - "dotnet-standard"
@@ -1611,15 +1548,6 @@ manager: "wpickett"
 
 ---
 uid: System.Type.HasElementTypeImpl
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Type.GetFields
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -1773,15 +1701,6 @@ manager: "wpickett"
 
 ---
 uid: System.Type.GetProperty(System.String,System.Type,System.Type[])
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Type.GetEvents
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

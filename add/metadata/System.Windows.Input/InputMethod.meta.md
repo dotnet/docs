@@ -116,14 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.InputMethod.ShowRegisterWordUI
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Input.InputMethod.IsInputMethodEnabledProperty
 ms.technology: 
   - "dotnet-wpf"
@@ -151,15 +143,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Input.InputMethod.GetPreferredImeConversionMode(System.Windows.DependencyObject)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Input.InputMethod.ShowConfigureUI
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

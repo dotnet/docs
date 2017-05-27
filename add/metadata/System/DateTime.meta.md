@@ -791,15 +791,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.DateTime.GetDateTimeFormats
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.DateTime.System#Runtime#Serialization#ISerializable#GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"
@@ -972,15 +963,6 @@ manager: "wpickett"
 
 ---
 uid: System.DateTime.Parse(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.DateTime.ToString
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

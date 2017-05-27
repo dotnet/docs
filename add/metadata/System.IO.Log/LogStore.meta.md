@@ -161,15 +161,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IO.Log.LogStore.CreateLogArchiveSnapshot
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IO.Log.LogStore.FreeBytes
 ms.technology: 
   - "dotnet-standard"

@@ -27,9 +27,3 @@ uid: System.Net.Configuration.ConnectionManagementElement.MaxConnection
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.Configuration.ConnectionManagementElement.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

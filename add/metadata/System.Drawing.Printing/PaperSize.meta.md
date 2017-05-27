@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.PaperSize.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Printing.PaperSize.#ctor(System.String,System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"

@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.TaskCanceledException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.TaskCanceledException.Task
 ms.technology: 
   - "dotnet-standard"

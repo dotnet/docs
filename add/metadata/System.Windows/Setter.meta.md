@@ -61,15 +61,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Setter.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Setter.#ctor(System.Windows.DependencyProperty,System.Object)
 ms.technology: 
   - "dotnet-wpf"

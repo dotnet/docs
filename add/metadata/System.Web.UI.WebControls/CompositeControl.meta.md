@@ -23,12 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.CompositeControl.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.WebControls.CompositeControl.Controls
 ms.technology: 
   - "dotnet-webforms"

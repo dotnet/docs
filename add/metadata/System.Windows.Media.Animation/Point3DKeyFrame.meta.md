@@ -59,15 +59,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Point3DKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Point3DKeyFrame.System#Windows#Media#Animation#IKeyFrame#Value
 ms.author: "jimwalk"
 manager: "martinek"

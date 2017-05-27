@@ -287,15 +287,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Linq.DataContext.SubmitChanges
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Linq.DataContext.Refresh(System.Data.Linq.RefreshMode,System.Object)
 ms.technology: 
   - "dotnet-ado"
@@ -378,15 +369,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Linq.DataContext.ExecuteQuery
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Linq.DataContext.Dispose
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

@@ -106,15 +106,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.ArcSegment.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.ArcSegment.Size
 ms.technology: 
   - "dotnet-wpf"

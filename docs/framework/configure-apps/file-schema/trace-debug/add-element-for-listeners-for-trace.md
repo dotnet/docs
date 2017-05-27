@@ -86,7 +86,7 @@ Adds a listener to the **Listeners** collection.
   
 |Trace listener class|initializeData attribute value|  
 |--------------------------|------------------------------------|  
-|<xref:System.Diagnostics.ConsoleTraceListener?displayProperty=fullName>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to <xref:System.Console.Error%2A?displayProperty=fullName>; "`false`" to write to <xref:System.Console.Out%2A?displayProperty=fullName>.|  
+|<xref:System.Diagnostics.ConsoleTraceListener.#ctor(System.Boolean)?displayProperty=fullName>|The `useErrorStream` value for the <xref:System.Diagnostics.ConsoleTraceListener.%23ctor%2A> constructor.  Set the `initializeData` attribute to "`true`" to write trace and debug output to <xref:System.Console.Error%2A?displayProperty=fullName>; "`false`" to write to <xref:System.Console.Out%2A?displayProperty=fullName>.|  
 |<xref:System.Diagnostics.DelimitedListTraceListener?displayProperty=fullName>|The name of the file the <xref:System.Diagnostics.DelimitedListTraceListener> writes to.|  
 |<xref:System.Diagnostics.EventLogTraceListener?displayProperty=fullName>|The name of the name of an existing event log source.|  
 |<xref:System.Diagnostics.EventSchemaTraceListener?displayProperty=fullName>|The name of the file that the <xref:System.Diagnostics.EventSchemaTraceListener> writes to.|  

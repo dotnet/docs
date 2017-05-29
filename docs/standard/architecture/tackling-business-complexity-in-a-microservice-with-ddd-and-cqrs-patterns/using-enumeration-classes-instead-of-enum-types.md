@@ -18,140 +18,88 @@ Instead, you can create Enumeration classes that enable all the rich features of
 
 The ordering microservice in eShopOnContainers provides a sample Enumeration base class implementation, as shown in the following example:
 
-```
-  public abstract class Enumeration : IComparable
-  
-  {
-  
-  public string Name { get; private set; }
-  
-  public int Id { get; private set; }
-  
-  protected Enumeration()
-  
-  {
-  
-  }
-  
-  protected Enumeration(int id, string name)
-  
-  {
-  
-  Id = id;
-  
-  Name = name;
-  
-  }
-  
-  public override string ToString()
-  
-  {
-  
-  return Name;
-  
-  }
-  
-  public static IEnumerable<;T> GetAll<;T>() where T : Enumeration, new()
-  
-  {
-  
-  var type = typeof(T);
-  
-  var fields = type.GetTypeInfo().GetFields(BindingFlags.Public |
-  
-  BindingFlags.Static |
-  
-  BindingFlags.DeclaredOnly);
-  
-  foreach (var info in fields)
-  
-  {
-  
-  var instance = new T();
-  
-  var locatedValue = info.GetValue(instance) as T;
-  
-  if (locatedValue != null)
-  
-  {
-  
-  yield return locatedValue;
-  
-  }
-  
-  }
-  
-  }
-  
-  public override bool Equals(object obj)
-  
-  {
-  
-  var otherValue = obj as Enumeration;
-  
-  if (otherValue == null)
-  
-  {
-  
-  return false;
-  
-  }
-  
-  var typeMatches = GetType().Equals(obj.GetType());
-  
-  var valueMatches = Id.Equals(otherValue.Id);
-  
-  return typeMatches && valueMatches;
-  
-  }
-  
-  public int CompareTo(object other)
-  
-  {
-  
-  return Id.CompareTo(((Enumeration)other).Id);
-  
-  }
-  
-  // Other utility methods ...
-  
-  }
+```csharp
+public abstract class Enumeration : IComparable
+{
+    public string Name { get; private set; }
+    public int Id { get; private set; }
+
+    protected Enumeration()
+    {
+    }
+
+    protected Enumeration(int id, string name)
+    {
+        Id = id;
+        Name = name;
+    }
+
+    public override string ToString()
+    {
+        return Name;
+    }
+
+    public static IEnumerable<T> GetAll<T>() where T : Enumeration, new()
+    {
+        var type = typeof(T);
+        var fields = type.GetTypeInfo().GetFields(BindingFlags.Public |
+            BindingFlags.Static |
+            BindingFlags.DeclaredOnly);
+        foreach (var info in fields)
+        {
+            var instance = new T();
+            var locatedValue = info.GetValue(instance) as T;
+            if (locatedValue != null)
+            {
+                yield return locatedValue;
+            }
+        }
+    }
+
+    public override bool Equals(object obj)
+    {
+        var otherValue = obj as Enumeration;
+        if (otherValue == null)
+        {
+            return false;
+        }
+        var typeMatches = GetType().Equals(obj.GetType());
+        var valueMatches = Id.Equals(otherValue.Id);
+        return typeMatches && valueMatches;
+    }
+
+    public int CompareTo(object other)
+    {
+        return Id.CompareTo(((Enumeration)other).Id);
+    }
+
+    // Other utility methods ...
+}
 ```
 
 You can use this class as a type in any entity or value object, as for the following CardType Enumeration class.
 
-```
-  public class CardType : Enumeration
-  
-  {
-  
-  public static CardType Amex = new CardType(1, "Amex");
-  
-  public static CardType Visa = new CardType(2, "Visa");
-  
-  public static CardType MasterCard = new CardType(3, "MasterCard");
-  
-  protected CardType() { }
-  
-  public CardType(int id, string name)
-  
-  : base(id, name)
-  
-  {
-  
-  }
-  
-  public static IEnumerable<;CardType> List()
-  
-  {
-  
-  return new[] { Amex, Visa, MasterCard };
-  
-  }
-  
-  // Other util methods
-  
-  }
+```csharp
+public class CardType : Enumeration
+{
+    public static CardType Amex = new CardType(1, "Amex");
+    public static CardType Visa = new CardType(2, "Visa");
+    public static CardType MasterCard = new CardType(3, "MasterCard");
+
+    protected CardType() { }
+
+    public CardType(int id, string name)
+        : base(id, name)
+    {
+    }
+
+
+    public static IEnumerable<CardType> List()
+    {
+        return new[] { Amex, Visa, MasterCard };
+    }
+    // Other util methods
+}
 ```
 
 ## Additional resources

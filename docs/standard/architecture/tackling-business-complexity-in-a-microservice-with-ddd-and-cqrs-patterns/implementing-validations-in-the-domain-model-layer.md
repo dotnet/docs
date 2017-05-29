@@ -16,34 +16,24 @@ Validations are usually implemented in domain entity constructors or in methods 
 
 The following code example shows the simplest approach to validation in a domain entity by raising an exception. In the references table at the end of this section you can see links to more advanced implementations based on the patterns we have discussed previously.
 
-```
-  public void SetAddress(Address address)
-  
-  {
-  
-  _shippingAddress = address?? throw new ArgumentNullException(nameof(address));
-  
-  }
+```csharp
+public void SetAddress(Address address)
+{
+    _shippingAddress = address?? throw new ArgumentNullException(nameof(address));
+}
 ```
 
 A better example would demonstrate the need to ensure that either the internal state did not change, or that all the mutations for a method occurred. For example, the following implementation would leave the object in an invalid state:
 
-```
-  Public void SetAddress(string line1, string line2,
-  
-  string city, string state, int zip)
-  
-  {
-  
-  _shipingAddress.line1 = line1 ?? throw new ...
-  
-  _shippingAddress.line2 = line2;
-  
-  _shippingAddress.city = city ?? throw new ...
-  
-  _shippingAddress.state = (IsValid(state) ? state : throw new …);
-  
-  }
+```csharp
+public void SetAddress(string line1, string line2,
+    string city, string state, int zip)
+{
+    _shipingAddress.line1 = line1 ?? throw new ...
+    _shippingAddress.line2 = line2;
+    _shippingAddress.city = city ?? throw new ...
+    _shippingAddress.state = (IsValid(state) ? state : throw new …);
+}
 ```
 
 If the value of the state is invalid, the first address line and the city have already been changed. That might make the address invalid.
@@ -56,48 +46,32 @@ Another approach is to use validation attributes based on data annotations. Vali
 
 However, as shown in the following code, this approach might be too intrusive in a DDD model, because it takes a dependency on ModelState.IsValid from Microsoft.AspNetCore.Mvc.ModelState, which you must call from your MVC controllers. The model validation occurs prior to each controller action being invoked, and it is the controller method’s responsibility to inspect the result of calling ModelState.IsValid and react appropriately. The decision to use it depends on how tightly coupled you want the model to be with that infrastructure.
 
-```
-  using System.ComponentModel.DataAnnotations;
-  
-  // Other using statements ...
-  
-  // Entity is a custom base class which has the ID
-  
-  public class Product : Entity
-  
-  {
-  
-  [Required]
-  
-  [StringLength(100)]
-  
-  public string Title { get; private set; }
-  
-  [Required]
-  
-  [Range(0, 999.99)]
-  
-  public decimal Price { get; private set; }
-  
-  [Required]
-  
-  [VintageProduct(1970)]
-  
-  [DataType(DataType.Date)]
-  
-  public DateTime ReleaseDate { get; private set; }
-  
-  [Required]
-  
-  [StringLength(1000)]
-  
-  public string Description { get; private set; }
-  
-  // Constructor...
-  
-  // Additional methods for entity logic and constructor...
-  
-  }
+```csharp
+using System.ComponentModel.DataAnnotations;
+// Other using statements ...
+// Entity is a custom base class which has the ID
+public class Product : Entity
+{
+    [Required]
+    [StringLength(100)]
+    public string Title { get; private set; }
+
+    [Required]
+    [Range(0, 999.99)]
+    public decimal Price { get; private set; }
+
+    [Required]
+    [VintageProduct(1970)]
+    [DataType(DataType.Date)]
+    public DateTime ReleaseDate { get; private set; }
+
+    [Required]
+    [StringLength(1000)]
+    public string Description { get; private set; }
+
+    // Constructor...
+    // Additional methods for entity logic and constructor...
+}
 ```
 
 However, from a DDD point of view, the domain model is best kept lean with the use of exceptions in your entity’s behavior methods, or by implementing the Specification and Notification patterns to enforce validation rules. Validation frameworks like data annotations in ASP.NET Core or any other validation frameworks like FluentValidation carry a requirement to invoke the application framework. For example, when calling the ModelState.IsValid method in data annotations, you need to invoke ASP.NET controllers.

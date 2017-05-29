@@ -78,7 +78,7 @@ The event handlers are typically in the application layer, because you will use 
 
 The possibility of an open number of handlers per domain event allows you to add many more domain rules without impacting your current code. For instance, implementing the following business rule that has to happen right after an event might be as easy as adding a few event handlers (or even just one):
 
-When the total amount purchased by a customer in the store, across any number of orders, exceeds \$6,000, apply a 10% off discount to every new order and notify the customer with an email about that discount for future orders.
+When the total amount purchased by a customer in the store, across any number of orders, exceeds $6,000, apply a 10% off discount to every new order and notify the customer with an email about that discount for future orders.
 
 
 >[!div class="step-by-step"]

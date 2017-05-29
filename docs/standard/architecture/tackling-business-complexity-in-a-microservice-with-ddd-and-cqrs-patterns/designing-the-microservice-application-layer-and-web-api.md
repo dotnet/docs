@@ -38,7 +38,7 @@ It would take another guide to cover SOLID in detail. Therefore, this guide requ
     [*http://deviq.com/solid/*](http://deviq.com/solid/%20)
 
 -   **Inversion of Control Containers and the Dependency Injection pattern**
-    [*https://martinfowler.com/articles/injection.html*](https://martinfowler.com/articles/injection.html%20)
+    [*https://martinfowler.com/articles/injection.html*](https://martinfowler.com/articles/injection.html)
 
 -   **Steve Smith. New is Glue**
     [*http://ardalis.com/new-is-glue*](http://ardalis.com/new-is-glue)

@@ -38,142 +38,85 @@ Value objects allow you to perform certain tricks for performance, thanks to the
 
 In terms of implementation, you can have a value object base class that has basic utility methods like equality based on comparison between all the attributes (since a value object must not be based on identity) and other fundamental characteristics. The following example shows a value object base class used in the ordering microservice from eShopOnContainers.
 
-```
-  **public abstract class ValueObject**
-  
-  **{**
-  
-  **protected static bool EqualOperator(ValueObject left, ValueObject right)**
-  
-  **{**
-  
-  **if (ReferenceEquals(left, null) \^ ReferenceEquals(right, null))**
-  
-  **{**
-  
-  **return false;**
-  
-  **}**
-  
-  **return ReferenceEquals(left, null) || left.Equals(right);**
-  
-  **}**
-  
-  **protected static bool NotEqualOperator(ValueObject left, ValueObject right)**
-  
-  **{**
-  
-  **return !(EqualOperator(left, right));**
-  
-  **}**
-  
-  **protected abstract IEnumerable<;object> GetAtomicValues();**
-  
-  **public override bool Equals(object obj)**
-  
-  **{**
-  
-  **if (obj == null || obj.GetType() != GetType())**
-  
-  **{**
-  
-  **return false;**
-  
-  **}**
-  
-  **ValueObject other = (ValueObject)obj;**
-  
-  **IEnumerator<;object> thisValues = GetAtomicValues().GetEnumerator();**
-  
-  **IEnumerator<;object> otherValues = other.GetAtomicValues().GetEnumerator();**
-  
-  **while (thisValues.MoveNext() && otherValues.MoveNext())**
-  
-  **{**
-  
-  **if (ReferenceEquals(thisValues.Current, null) \^ **
-  
-  **ReferenceEquals(otherValues.Current, null))**
-  
-  **{**
-  
-  **return false;**
-  
-  **}**
-  
-  **if (thisValues.Current != null && **
-  
-  **!thisValues.Current.Equals(otherValues.Current))**
-  
-  **{**
-  
-  **return false;**
-  
-  **}**
-  
-  **}**
-  
-  **return !thisValues.MoveNext() && !otherValues.MoveNext();**
-  
-  **}**
-  
-  **// Other utilility methods**
-  
-  **}**
+```csharp
+public abstract class ValueObject
+{
+    protected static bool EqualOperator(ValueObject left, ValueObject right)
+    {
+        if (ReferenceEquals(left, null) ^ ReferenceEquals(right, null))
+        {
+            return false;
+        }
+        return ReferenceEquals(left, null) || left.Equals(right);
+    }
+
+    protected static bool NotEqualOperator(ValueObject left, ValueObject right)
+    {
+        return !(EqualOperator(left, right));
+    }
+
+    protected abstract IEnumerable<object> GetAtomicValues();
+
+    public override bool Equals(object obj)
+    {
+        if (obj == null || obj.GetType() != GetType())
+        {
+            return false;
+        }
+
+        ValueObject other = (ValueObject)obj;
+        IEnumerator<object> thisValues = GetAtomicValues().GetEnumerator();
+        IEnumerator<object> otherValues = other.GetAtomicValues().GetEnumerator();
+        while (thisValues.MoveNext() && otherValues.MoveNext())
+        {
+            if (ReferenceEquals(thisValues.Current, null) ^
+                ReferenceEquals(otherValues.Current, null))
+            {
+                return false;
+            }
+
+            if (thisValues.Current != null &&
+                !thisValues.Current.Equals(otherValues.Current))
+            {
+                return false;
+            }
+        }
+        return !thisValues.MoveNext() && !otherValues.MoveNext();
+    }
+    // Other utilility methods
+}
 ```
 
 You can use this class when implementing your actual value object, as with the Address value object shown in the following example:
 
 ```
-  public class Address : ValueObject
-  
-  {
-  
-  public String Street { get; private set; }
-  
-  public String City { get; private set; }
-  
-  public String State { get; private set; }
-  
-  public String Country { get; private set; }
-  
-  public String ZipCode { get; private set; }
-  
-  public Address(string street, string city, string state,
-  
-  string country, string zipcode)
-  
-  {
-  
-  Street = street;
-  
-  City = city;
-  
-  State = state;
-  
-  Country = country;
-  
-  ZipCode = zipcode;
-  
-  }
-  
-  protected override IEnumerable<;object> GetAtomicValues()
-  
-  {
-  
-  yield return Street;
-  
-  yield return City;
-  
-  yield return State;
-  
-  yield return Country;
-  
-  yield return ZipCode;
-  
-  }
-  
-  }
+public class Address : ValueObject
+{
+    public String Street { get; private set; }
+    public String City { get; private set; }
+    public String State { get; private set; }
+    public String Country { get; private set; }
+    public String ZipCode { get; private set; }
+
+    public Address(string street, string city, string state,
+        string country, string zipcode)
+    {
+        Street = street;
+        City = city;
+        State = state;
+        Country = country;
+        ZipCode = zipcode;
+    }
+
+    protected override IEnumerable<object> GetAtomicValues()
+    {
+        yield return Street;
+        yield return City;
+        yield return State;
+        yield return Country;
+        yield return ZipCode;
+    }
+}
 ```
 
 ## Hiding the identity characteristic when using EF Core to persist value objects
@@ -182,24 +125,16 @@ A limitation when using EF Core is that in its current version (EF Core 1.1) you
 
 In eShopOnContainers, the hidden ID needed by EF Core infrastructure is implemented in the following way in the DbContext level, using Fluent API at the infrastructure project.
 
-```
-  // Fluent API within the OrderingContext:DbContext in the
-  
-  // Ordering.Infrastructure project
-  
-  void ConfigureAddress(EntityTypeBuilder<;Address> addressConfiguration)
-  
-  {
-  
-  addressConfiguration.ToTable("address", DEFAULT_SCHEMA);
-  
-  addressConfiguration.Property<;int>("Id")
-  
-  .IsRequired();
-  
-  addressConfiguration.HasKey("Id");
-  
-  }
+```csharp
+// Fluent API within the OrderingContext:DbContext in the
+// Ordering.Infrastructure project
+
+void ConfigureAddress(EntityTypeBuilder<Address> addressConfiguration)
+{
+    addressConfiguration.ToTable("address", DEFAULT_SCHEMA);
+    addressConfiguration.Property<int>("Id").IsRequired();
+    addressConfiguration.HasKey("Id");
+}
 ```
 
 Therefore, the ID is hidden from the domain model point of view, and in the future, the value object infrastructure could also be implemented as a complex type or another way.

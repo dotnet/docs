@@ -46,86 +46,55 @@ In a similar way, you can now have read-only access to collections by using a pu
 
 You can use a private collection while exposing a read-only IEnumerable object, as shown in the following code example:
 
-```
-  public class Order : Entity
-  
-  {
-  
-  // Using private fields, allowed since EF Core 1.1
-  
-  private DateTime _orderDate;
-  
-  // Other fields ...
-  
-  private readonly List<;OrderItem> _orderItems;
-  
-  public IEnumerable<;OrderItem> OrderItems => _orderItems.AsReadOnly();
-  
-  protected Order() { }
-  
-  public Order(int buyerId, int paymentMethodId, Address address)
-  
-  {
-  
-  // Initializations ...
-  
-  }
-  
-  public void AddOrderItem(int productId, string productName,
-  
-  decimal unitPrice, decimal discount,
-  
-  string pictureUrl, int units = 1)
-  
-  {
-  
-  // Validation logic...
-  
-  var orderItem = new OrderItem(productId, productName, unitPrice, discount,
-  
-  pictureUrl, units);
-  
-  _orderItems.Add(orderItem);
-  
-  }
-  
-  }
-  
-  }
+```csharp
+public class Order : Entity
+{
+    // Using private fields, allowed since EF Core 1.1
+    private DateTime _orderDate;
+    // Other fields ...
+    private readonly List<OrderItem> _orderItems;
+
+    public IEnumerable<OrderItem> OrderItems => _orderItems.AsReadOnly();
+
+    protected Order() { }
+
+    public Order(int buyerId, int paymentMethodId, Address address)
+    {
+        // Initializations ...
+    }
+
+    public void AddOrderItem(int productId, string productName,
+        decimal unitPrice, decimal discount,
+        string pictureUrl, int units = 1)
+    {
+        // Validation logic...
+        var orderItem = new OrderItem(productId, productName, unitPrice, discount,
+            pictureUrl, units);
+        _orderItems.Add(orderItem);
+    }
+}
 ```
 
 Note that the OrderItems property can only be accessed as read-only using List&lt;&gt;.AsReadOnly(). This method creates a read-only wrapper around the private list so that it is protected against external updates. It is much cheaper than using the ToList method, because it does not have to copy all the items in a new collection; instead, it performs just one heap alloc operation for the wrapper instance.
 
 EF Core provides a way to map the domain model to the physical database without contaminating the domain model. It is pure .NET POCO code, because the mapping action is implemented in the persistence layer. In that mapping action, you need to configure the fields-to-database mapping. In the following example of an OnModelCreating method, the highlighted code tells EF Core to access the OrderItems property through its field.
 
-```
-  protected override void OnModelCreating(ModelBuilder modelBuilder)
-  
-  {
-  
-  // ...
-  
-  modelBuilder.Entity<;Order>(ConfigureOrder);
-  
-  // Other entities ...
-  
-  }
-  
-  void ConfigureOrder(EntityTypeBuilder<;Order> orderConfiguration)
-  
-  {
-  
-  // Other configuration ...
-  
-  var navigation = orderConfiguration.Metadata.
-  
-  FindNavigation(nameof(Order.OrderItems));
-  
-  navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
-  
-  // Other configuration ...
-  
-  }
+```csharp
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    // ...
+    modelBuilder.Entity<Order>(ConfigureOrder);
+    // Other entities ...
+}
+
+void ConfigureOrder(EntityTypeBuilder<Order> orderConfiguration)
+{
+    // Other configuration ...
+    var navigation = orderConfiguration.Metadata.
+    FindNavigation(nameof(Order.OrderItems));
+    navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
+    // Other configuration ...
+}
 ```
 
 When you use fields instead of properties, the OrderItem entity is persisted just as if it had a List&lt;OrderItem&gt; property. However, it exposes a single accessor (the AddOrderItem method) for adding new items to the order. As a result, behavior and data are tied together and will be consistent throughout any application code that uses the domain model.
@@ -134,82 +103,46 @@ When you use fields instead of properties, the OrderItem entity is persisted jus
 
 At the implementation level, a repository is simply a class with data persistence code coordinated by a unit of work (DBContext in EF Core) when performing updates, as shown in the following class:
 
-```
-  // using statements...
-  
-  namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositories
-  
-  {
-  
-  public class BuyerRepository : IBuyerRepository
-  
-  {
-  
-  private readonly OrderingContext _context;
-  
-  public IUnitOfWork UnitOfWork
-  
-  {
-  
-  get
-  
-  {
-  
-  return _context;
-  
-  }
-  
-  }
-  
-  }
-  
-  public BuyerRepository(OrderingContext context)
-  
-  {
-  
-  if (context == null)
-  
-  {
-  
-  throw new ArgumentNullException(
-  
-  nameof(context));
-  
-  }
-  
-  _context = context;
-  
-  }
-  
-  public Buyer Add(Buyer buyer)
-  
-  {
-  
-  return _context.Buyers
-  
-  .Add(buyer)
-  
-  .Entity;
-  
-  }
-  
-  public async Task<;Buyer> FindAsync(string BuyerIdentityGuid)
-  
-  {
-  
-  var buyer = await _context.Buyers
-  
-  .Include(b => b.Payments)
-  
-  .Where(b => b.FullName == BuyerIdentityGuid)
-  
-  .SingleOrDefaultAsync();
-  
-  return buyer;
-  
-  }
-  
-  }
+```csharp
+// using statements...
+namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositories
+{
+    public class BuyerRepository : IBuyerRepository
+    {
+        private readonly OrderingContext _context;
+
+        public IUnitOfWork UnitOfWork
+        {
+            get
+            {
+                return _context;
+            }
+        }
+    }
+
+    public BuyerRepository(OrderingContext context)
+    {
+        if (context == null)
+        {
+            throw new ArgumentNullException(
+                nameof(context));
+        }
+        _context = context;
+    }
+
+    public Buyer Add(Buyer buyer)
+    {
+        return _context.Buyers.Add(buyer).Entity;
+    }
+
+    public async Task<Buyer> FindAsync(string BuyerIdentityGuid)
+    {
+        var buyer = await _context.Buyers.Include(b => b.Payments)
+            .Where(b => b.FullName == BuyerIdentityGuid)
+            .SingleOrDefaultAsync();
+        return buyer;
+    }
+}
 ```
 
 Note that the IBuyerRepository interface comes from the domain model layer. However, the repository implementation is done at the persistence and infrastructure layer.
@@ -250,44 +183,27 @@ The DbContext object (exposed as an IUnitOfWork object) might need to be shared 
 
 In order to do that, the instance of the DbContext object has to have its service lifetime set to ServiceLifetime.Scoped. This is the default lifetime when registering a DbContext with services.AddDbContext in your IoC container from the ConfigureServices method of the Startup.cs file in your ASP.NET Core Web API project. The following code illustrates this.
 
-```
-  public IServiceProvider ConfigureServices(IServiceCollection services)
-  
-  {
-  
-  // Add framework services.
-  
-  services.AddMvc(options =>
-  
-  {
-  
-  options.Filters.Add(typeof(HttpGlobalExceptionFilter));
-  
-  }).AddControllersAsServices();
-  
-  services.AddEntityFrameworkSqlServer()
-  
-  .AddDbContext<;OrderingContext>(options =>
-  
-  {
-  
-  options.UseSqlServer(Configuration["ConnectionString"],
-  
-  sqlop => sqlop.MigrationsAssembly(typeof(Startup).GetTypeInfo().
-  
-  Assembly.GetName().Name));
-  
-  },
-  
-  ServiceLifetime.Scoped // Note that Scoped is the default choice
-  
-  // in AddDbContext. It is shown here only for
-  
-  // pedagogic purposes.
-  
-  );
-  
-  }
+```csharp
+public IServiceProvider ConfigureServices(IServiceCollection services)
+{
+    // Add framework services.
+    services.AddMvc(options =>
+    {
+        options.Filters.Add(typeof(HttpGlobalExceptionFilter));
+    }).AddControllersAsServices();
+
+    services.AddEntityFrameworkSqlServer()
+    .AddDbContext<OrderingContext>(options =>
+    {
+        options.UseSqlServer(Configuration["ConnectionString"],
+        sqlop => sqlop.MigrationsAssembly(typeof(Startup).GetTypeInfo().
+        Assembly.GetName().Name));
+    },
+    ServiceLifetime.Scoped // Note that Scoped is the default choice
+    // in AddDbContext. It is shown here only for
+    // pedagogic purposes.
+    );
+}
 ```
 
 The DbContext instantiation mode should not be configured as ServiceLifetime.Transient or ServiceLifetime.Singleton.
@@ -296,14 +212,11 @@ The DbContext instantiation mode should not be configured as ServiceLifetime.Tra
 
 In a similar way, repository’s lifetime should usually be set as scoped (InstancePerLifetimeScope in Autofac). It could also be transient (InstancePerDependency in Autofac), but your service will be more efficient in regards memory when using the scoped lifetime.
 
-```
-  // Registering a Repository in Autofac IoC container
-  
-  builder.RegisterType<;OrderRepository>()
-  
-  .As<;IOrderRepository>()
-  
-  .InstancePerLifetimeScope();
+```csharp
+// Registering a Repository in Autofac IoC container
+builder.RegisterType<OrderRepository>()
+    .As<IOrderRepository>()
+    .InstancePerLifetimeScope();
 ```
 
 Note that using the singleton lifetime for the repository could cause you serious concurrency problems when your DbContext is set to scoped (InstancePerLifetimeScope) lifetime (the default lifetimes for a DBContext).
@@ -335,84 +248,47 @@ Data annotations must be used on the entity model classes themselves, which is a
 
 As mentioned, in order to change conventions and mappings, you can use the OnModelCreating method in the DbContext class. The following example shows how we do this in the ordering microservice in eShopOnContainers.
 
-```
-  protected override void OnModelCreating(ModelBuilder modelBuilder)
-  
-  {
-  
-  //Other entities
-  
-  modelBuilder.Entity<;OrderStatus>(ConfigureOrderStatus);
-  
-  //Other entities
-  
-  }
-  
-  void ConfigureOrder(EntityTypeBuilder<;Order> orderConfiguration)
-  
-  {
-  
-  orderConfiguration.ToTable("orders", DEFAULT_SCHEMA);
-  
-  orderConfiguration.HasKey(o => o.Id);
-  
-  orderConfiguration.Property(o => o.Id)
-  
-  .ForSqlServerUseSequenceHiLo("orderseq", DEFAULT_SCHEMA);
-  
-  orderConfiguration.Property<;DateTime>("OrderDate").IsRequired();
-  
-  orderConfiguration.Property<;string>("Street").IsRequired();
-  
-  orderConfiguration.Property<;string>("State").IsRequired();
-  
-  orderConfiguration.Property<;string>("City").IsRequired();
-  
-  orderConfiguration.Property<;string>("ZipCode").IsRequired();
-  
-  orderConfiguration.Property<;string>("Country").IsRequired();
-  
-  orderConfiguration.Property<;int>("BuyerId").IsRequired();
-  
-  orderConfiguration.Property<;int>("OrderStatusId").IsRequired();
-  
-  orderConfiguration.Property<;int>("PaymentMethodId").IsRequired();
-  
-  var navigation =
-  
-  orderConfiguration.Metadata.FindNavigation(nameof(Order.OrderItems));
-  
-  // DDD Patterns comment:
-  
-  // Set as Field (new since EF 1.1) to access
-  
-  // the OrderItem collection property as a field
-  
-  navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
-  
-  orderConfiguration.HasOne(o => o.PaymentMethod)
-  
-  .WithMany()
-  
-  .HasForeignKey("PaymentMethodId")
-  
-  .OnDelete(DeleteBehavior.Restrict);
-  
-  orderConfiguration.HasOne(o => o.Buyer)
-  
-  .WithMany()
-  
-  .HasForeignKey("BuyerId");
-  
-  orderConfiguration.HasOne(o => o.OrderStatus)
-  
-  .WithMany()
-  
-  .HasForeignKey("OrderStatusId");
-  
-  }
-  
-  }
+```csharp
+protected override void OnModelCreating(ModelBuilder modelBuilder)
+{
+    //Other entities
+    modelBuilder.Entity<OrderStatus>(ConfigureOrderStatus);
+    //Other entities
+}
+
+void ConfigureOrder(EntityTypeBuilder<Order> orderConfiguration)
+{
+    orderConfiguration.ToTable("orders", DEFAULT_SCHEMA);
+    orderConfiguration.HasKey(o => o.Id);
+    orderConfiguration.Property(o => o.Id).ForSqlServerUseSequenceHiLo("orderseq", DEFAULT_SCHEMA);
+    orderConfiguration.Property<DateTime>("OrderDate").IsRequired();
+    orderConfiguration.Property<string>("Street").IsRequired();
+    orderConfiguration.Property<string>("State").IsRequired();
+    orderConfiguration.Property<string>("City").IsRequired();
+    orderConfiguration.Property<string>("ZipCode").IsRequired();
+    orderConfiguration.Property<string>("Country").IsRequired();
+    orderConfiguration.Property<int>("BuyerId").IsRequired();
+    orderConfiguration.Property<int>("OrderStatusId").IsRequired();
+    orderConfiguration.Property<int>("PaymentMethodId").IsRequired();
+
+    var navigation =
+    orderConfiguration.Metadata.FindNavigation(nameof(Order.OrderItems));
+    // DDD Patterns comment:
+    // Set as Field (new since EF 1.1) to access
+    // the OrderItem collection property as a field
+    navigation.SetPropertyAccessMode(PropertyAccessMode.Field);
+
+    orderConfiguration.HasOne(o => o.PaymentMethod)
+        .WithMany()
+        .HasForeignKey("PaymentMethodId")
+        .OnDelete(DeleteBehavior.Restrict);
+        orderConfiguration.HasOne(o => o.Buyer)
+        .WithMany()
+        .HasForeignKey("BuyerId");
+        orderConfiguration.HasOne(o => o.OrderStatus)
+        .WithMany()
+        .HasForeignKey("OrderStatusId");
+}
 ```
 
 You could set all the Fluent API mappings within the same OnModelCreating method, but it is advisable to partition that code and have multiple submethods, one per entity, as shown in the example. For particularly large models, it can even be advisable to have separate source files (static classes) for configuring different entity types.
@@ -449,52 +325,33 @@ From a DDD point of view, shadow properties are a convenient way to implement va
 
 As you can see in the [Address value object](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Domain/AggregatesModel/OrderAggregate/Address.cs) in eShopOnContainers, in the Address model you do not see an ID:
 
-```
-  public class Address : ValueObject
-  
-  {
-  
-  public String Street { get; private set; }
-  
-  public String City { get; private set; }
-  
-  public String State { get; private set; }
-  
-  public String Country { get; private set; }
-  
-  public String ZipCode { get; private set; }
-  
-  //Constructor initializing, etc
-  
-  }
+```csharp
+public class Address : ValueObject
+{
+    public String Street { get; private set; }
+    public String City { get; private set; }
+    public String State { get; private set; }
+    public String Country { get; private set; }
+    public String ZipCode { get; private set; }
+    //Constructor initializing, etc
+}
 ```
 
 But under the covers, we need to provide an ID so that EF Core is able to persist this data in the database tables. We do that in the ConfigureAddress method of the [OrderingContext.cs](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.Infrastructure/OrderingContext.cs) class at the infrastructure level, so we do not pollute the domain model with EF infrastructure code.
 
-```
-  void ConfigureAddress(EntityTypeBuilder<;Address> addressConfiguration)
-  
-  {
-  
-  addressConfiguration.ToTable("address", DEFAULT_SCHEMA);
-  
-  // DDD pattern comment:
-  
-  // Implementing the Address ID as a shadow property, because the
-  
-  // address is a value object and an identity is not required for a
-  
-  // value object
-  
-  // EF Core just needs the ID so it can store it in a database table
-  
-  // See: https://docs.microsoft.com/en-us/ef/core/modeling/shadow-properties
-  
-  addressConfiguration.Property<;int>("Id").IsRequired();
-  
-  addressConfiguration.HasKey("Id");
-  
-  }
+```csharp
+void ConfigureAddress(EntityTypeBuilder<Address> addressConfiguration)
+{
+    addressConfiguration.ToTable("address", DEFAULT_SCHEMA);
+    // DDD pattern comment:
+    // Implementing the Address ID as a shadow property, because the
+    // address is a value object and an identity is not required for a
+    // value object
+    // EF Core just needs the ID so it can store it in a database table
+    // See: https://docs.microsoft.com/en-us/ef/core/modeling/shadow-properties
+    addressConfiguration.Property<int>("Id").IsRequired();
+    addressConfiguration.HasKey("Id");
+}
 ```
 
 #### Additional resources

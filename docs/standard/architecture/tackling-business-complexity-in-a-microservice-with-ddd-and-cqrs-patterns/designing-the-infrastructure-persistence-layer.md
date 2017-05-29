@@ -42,34 +42,27 @@ It can be valuable to implement your repository design in such a way that it enf
 
 Thus, each repository class implemented at the infrastructure layer implements its own contract or interface, as shown in the following code:
 
-```
-  namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositories
-  
-  {
-  
-  public class OrderRepository : IOrderRepository
-  
-  {
+```csharp
+namespace Microsoft.eShopOnContainers.Services.Ordering.Infrastructure.Repositories
+{
+    public class OrderRepository : IOrderRepository
+    {
 ```
 
 Each specific repository interface implements the generic IRepository interface:
 
-```
-  public interface IOrderRepository : IRepository<;Order>
-  
-  {
-  
-  Order Add(Order order);
-  
-  // ...
-  
-  }
+```csharp
+public interface IOrderRepository : IRepository<Order>
+{
+    Order Add(Order order);
+    // ...
+}
 ```
 
 However, a better way to have the code enforce the convention that each repository should be related to a single aggregate would be to implement a generic repository type so it is explicit that you are using a repository to target a specific aggregate. That can be easily done by implementing that generic in the IRepository base interface, as in the following code:
 
-```
-  public interface IRepository<;T> where T : IAggregateRoot
+```csharp
+  public interface IRepository<T> where T : IAggregateRoot
 ```
 
 ### The Repository pattern makes it easier to test your application logic

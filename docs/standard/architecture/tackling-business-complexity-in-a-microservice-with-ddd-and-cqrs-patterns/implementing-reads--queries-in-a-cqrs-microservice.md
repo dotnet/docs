@@ -50,52 +50,32 @@ When you use Dapper in your code, you directly use the SqlClient class available
 
 As shown in the following code from the ordering microservice, most of the ViewModels returned by the queries are implemented as *dynamic*. That means that the subset of attributes to be returned is based on the query itself. If you add a new column to the query or join, that data is dynamically added to the returned ViewModel. This approach reduces the need to modify queries in response to updates to the underlying data model, making this design approach more flexible and tolerant of future changes.
 
-```
-  using Dapper;
-  
-  using Microsoft.Extensions.Configuration;
-  
-  using System.Data.SqlClient;
-  
-  using System.Threading.Tasks;
-  
-  using System.Dynamic;
-  
-  using System.Collections.Generic;
-  
-  public class OrderQueries : IOrderQueries
-  
-  {
-  
-  public async Task<;IEnumerable<;dynamic>> GetOrdersAsync()
-  
-  {
-  
-  using (var connection = new SqlConnection(_connectionString))
-  
-  {
-  
-  connection.Open();
-  
-  return await connection.QueryAsync<;dynamic>(@"SELECT o.[Id] as ordernumber,
-  
-  o.[OrderDate] as [date],os.[Name] as [status],
-  
-  SUM(oi.units*oi.unitprice) as total
-  
-  FROM [ordering].[Orders] o
-  
-  LEFT JOIN[ordering].[orderitems] oi ON o.Id = oi.orderid
-  
-  LEFT JOIN[ordering].[orderstatus] os on o.OrderStatusId = os.Id
-  
-  GROUP BY o.[Id], o.[OrderDate], os.[Name]");
-  
+```csharp
+using Dapper;
+using Microsoft.Extensions.Configuration;
+using System.Data.SqlClient;
+using System.Threading.Tasks;
+using System.Dynamic;
+using System.Collections.Generic;
+
+public class OrderQueries : IOrderQueries
+{
+    public async Task<IEnumerable<dynamic>> GetOrdersAsync()
+    {
+        using (var connection = new SqlConnection(_connectionString))
+        {
+            connection.Open();
+            return await connection.QueryAsync<dynamic>(
+@"SELECT o.[Id] as ordernumber,
+o.[OrderDate] as [date],os.[Name] as [status],
+SUM(oi.units*oi.unitprice) as total
+FROM [ordering].[Orders] o
+LEFT JOIN[ordering].[orderitems] oi ON o.Id = oi.orderid
+LEFT JOIN[ordering].[orderstatus] os on o.OrderStatusId = os.Id
+GROUP BY o.[Id], o.[OrderDate], os.[Name]");
+        }
   }
-  
-  }
-  
-  }
+}
 ```
 
 The important point is that by using a dynamic type, the returned collection of data will be dynamically assembled as the ViewModel.

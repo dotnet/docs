@@ -26,156 +26,92 @@ When you design your domain model based on aggregates, moving to NoSQL and docum
 
 For instance, the following JSON code is a sample implementation of an order aggregate when using a document-oriented database. It is similar to the order aggregate we implemented in the eShopOnContainers sample, but without using EF Core underneath.
 
-```
-  {
-  
-  "id": "2017001",
-  
-  "orderDate": "2/25/2017",
-  
-  "buyerId": "1234567",
-  
-  "address": [
-  
-  {
-  
-  "street": "100 One Microsoft Way",
-  
-  "city": "Redmond",
-  
-  "state": "WA",
-  
-  "zip": "98052",
-  
-  "country": "U.S."
-  
-  }
-  
-  ],
-  
-  "orderItems": [
-  
-  {"id": 20170011, "productId": "123456", "productName": ".NET T-Shirt",
-  
-  "unitPrice": 25, "units": 2, "discount": 0},
-  
-  {"id": 20170012, "productId": "123457", "productName": ".NET Mug",
-  
-  "unitPrice": 15, "units": 1, "discount": 0}
-  
-  ]
-  
-  }
+```json
+{
+    "id": "2017001",
+    "orderDate": "2/25/2017",
+    "buyerId": "1234567",
+    "address": [
+        {
+        "street": "100 One Microsoft Way",
+        "city": "Redmond",
+        "state": "WA",
+        "zip": "98052",
+        "country": "U.S."
+        }
+    ],
+    "orderItems": [
+        {"id": 20170011, "productId": "123456", "productName": ".NET T-Shirt",
+        "unitPrice": 25, "units": 2, "discount": 0},
+        {"id": 20170012, "productId": "123457", "productName": ".NET Mug",
+        "unitPrice": 15, "units": 1, "discount": 0}
+    ]
+}
 ```
 
 When you use a C\# model to implement the aggregate to be used by something like the Azure Document DB SDK, the aggregate is similar to the C\# POCO classes used with EF Core. The difference is in the way to use them from the application and infrastructure layers, as in the following code:
 
-```
-  // C# EXAMPLE OF AN ORDER AGGREGATE BEING PERSISTED WITH DOCUMENTDB API
-  
-  // *** Domain Model Code ***
-  
-  // Aggregate: Create an Order object with its child entities and/or value objects.
-  
-  // Then, use AggregateRoot’s methods to add the nested objects so invariants and
-  
-  // logic is consistent across the nested properties (value objects and entities).
-  
-  // This can be saved as JSON as is without converting into rows/columns.
-  
-  Order orderAggregate = new Order
-  
-  {
-  
-  Id = "2017001",
-  
-  OrderDate = new DateTime(2005, 7, 1),
-  
-  BuyerId = "1234567",
-  
-  PurchaseOrderNumber = "PO18009186470"
-  
-  }
-  
-  Address address = new Address
-  
-  {
-  
-  Street = "100 One Microsoft Way",
-  
-  City = "Redmond",
-  
-  State = "WA",
-  
-  Zip = "98052",
-  
-  Country = "U.S."
-  
-  }
-  
-  orderAggregate.UpdateAddress(address);
-  
-  OrderItem orderItem1 = new OrderItem
-  
-  {
-  
-  Id = 20170011,
-  
-  ProductId = "123456",
-  
-  ProductName = ".NET T-Shirt",
-  
-  UnitPrice = 25,
-  
-  Units = 2,
-  
-  Discount = 0;
-  
-  };
-  
-  OrderItem orderItem2 = new OrderItem
-  
-  {
-  
-  Id = 20170012,
-  
-  ProductId = "123457",
-  
-  ProductName = ".NET Mug",
-  
-  UnitPrice = 15,
-  
-  Units = 1,
-  
-  Discount = 0;
-  
-  };
-  
-  //Using methods with domain logic within the entity. No anemic-domain model
-  
-  orderAggregate.AddOrderItem(orderItem1);
-  
-  orderAggregate.AddOrderItem(orderItem2);
-  
-  // *** End of Domain Model Code ***
-  
-  //...
-  
-  // *** Infrastructure Code using Document DB Client API ***
-  
-  Uri collectionUri = UriFactory.CreateDocumentCollectionUri(databaseName,
-  
-  collectionName);
-  
-  await client.CreateDocumentAsync(collectionUri, order);
-  
-  // As your app evolves, let's say your object has a new schema. You can insert
-  
-  // OrderV2 objects without any changes to the database tier.
-  
-  Order2 newOrder = GetOrderV2Sample("IdForSalesOrder2");
-  
-  await client.CreateDocumentAsync(collectionUri, newOrder);
+```csharp
+// C# EXAMPLE OF AN ORDER AGGREGATE BEING PERSISTED WITH DOCUMENTDB API
+// *** Domain Model Code ***
+// Aggregate: Create an Order object with its child entities and/or value objects.
+// Then, use AggregateRoot’s methods to add the nested objects so invariants and
+// logic is consistent across the nested properties (value objects and entities).
+// This can be saved as JSON as is without converting into rows/columns.
+Order orderAggregate = new Order
+{
+    Id = "2017001",
+    OrderDate = new DateTime(2005, 7, 1),
+    BuyerId = "1234567",
+    PurchaseOrderNumber = "PO18009186470"
+}
+
+Address address = new Address
+{
+    Street = "100 One Microsoft Way",
+    City = "Redmond",
+    State = "WA",
+    Zip = "98052",
+    Country = "U.S."
+}
+
+orderAggregate.UpdateAddress(address);
+OrderItem orderItem1 = new OrderItem
+{
+    Id = 20170011,
+    ProductId = "123456",
+    ProductName = ".NET T-Shirt",
+    UnitPrice = 25,
+    Units = 2,
+    Discount = 0;
+};
+
+OrderItem orderItem2 = new OrderItem
+{
+    Id = 20170012,
+    ProductId = "123457",
+    ProductName = ".NET Mug",
+    UnitPrice = 15,
+    Units = 1,
+    Discount = 0;
+};
+
+//Using methods with domain logic within the entity. No anemic-domain model
+orderAggregate.AddOrderItem(orderItem1);
+orderAggregate.AddOrderItem(orderItem2);
+
+// *** End of Domain Model Code ***
+//...
+// *** Infrastructure Code using Document DB Client API ***
+Uri collectionUri = UriFactory.CreateDocumentCollectionUri(databaseName,
+    collectionName);
+
+await client.CreateDocumentAsync(collectionUri, order);
+
+// As your app evolves, let's say your object has a new schema. You can insert
+// OrderV2 objects without any changes to the database tier.
+Order2 newOrder = GetOrderV2Sample("IdForSalesOrder2");
+await client.CreateDocumentAsync(collectionUri, newOrder);
 ```
 
 You can see that the way you work with your domain model can be similar to the way you use it in your domain model layer when the infrastructure is EF. You still use the same aggregate root methods to ensure consistency, invariants, and validations within the aggregate.

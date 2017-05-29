@@ -40,76 +40,45 @@ If you open any of the files in an aggregate folder, you can see how it is marke
 
 You implement a domain model in .NET by creating POCO classes that implement your domain entities. In the following example, the Order class is defined as an entity and also as an aggregate root. Because the Order class derives from the Entity base class, it can reuse common code related to entities. Bear in mind that these base classes and interfaces are defined by you in the domain model project, so it is your code, not infrastructure code from an ORM like EF.
 
-```
-  // COMPATIBLE WITH ENTITY FRAMEWORK CORE 1.0
+```csharp
+// COMPATIBLE WITH ENTITY FRAMEWORK CORE 1.0
+// Entity is a custom base class with the ID
+public class Order : Entity, IAggregateRoot
+{
+    public int BuyerId { get; private set; }
+    public DateTime OrderDate { get; private set; }
+    public int StatusId { get; private set; }
+    public ICollection<OrderItem> OrderItems { get; private set; }
+    public Address ShippingAddress { get; private set; }
+    public int PaymentId { get; private set; }
+    protected Order() { } //Design constraint needed only by EF Core
+    public Order(int buyerId, int paymentId)
+    {
+        BuyerId = buyerId;
+        PaymentId = paymentId;
+        StatusId = OrderStatus.InProcess.Id;
+        OrderDate = DateTime.UtcNow;
+        OrderItems = new List<OrderItem>();
+    }
+
+    public void AddOrderItem(productName,
+        pictureUrl,
+        unitPrice,
+        discount,
+        units)
+    {
+        //...
+        // Domain rules/logic for adding the OrderItem to the order
+        // ...
+        OrderItem item = new OrderItem(this.Id, ProductId, productName,
+            pictureUrl, unitPrice, discount, units);
   
-  // Entity is a custom base class with the ID
-  
-  public class Order : Entity, IAggregateRoot
-  
-  {
-  
-  public int BuyerId { get; private set; }
-  
-  public DateTime OrderDate { get; private set; }
-  
-  public int StatusId { get; private set; }
-  
-  public ICollection<;OrderItem> OrderItems { get; private set; }
-  
-  public Address ShippingAddress { get; private set; }
-  
-  public int PaymentId { get; private set; }
-  
-  protected Order() { } //Design constraint needed only by EF Core
-  
-  public Order(int buyerId, int paymentId)
-  
-  {
-  
-  BuyerId = buyerId;
-  
-  PaymentId = paymentId;
-  
-  StatusId = OrderStatus.InProcess.Id;
-  
-  OrderDate = DateTime.UtcNow;
-  
-  OrderItems = new List<;OrderItem>();
-  
-  }
-  
-  public void AddOrderItem(productName,
-  
-  pictureUrl,
-  
-  unitPrice,
-  
-  discount,
-  
-  units)
-  
-  {
-  
-  //...
-  
-  // Domain rules/logic for adding the OrderItem to the order
-  
-  // ...
-  
-  OrderItem item = new OrderItem(this.Id, ProductId, ProductName,
-  
-  PictureUrl, UnitPrice, Discount, Units);
-  
-  OrderItems.Add(item);
-  
-  }
-  
-  // ...
-  
-  // Additional methods with domain rules/logic related to the Order aggregate
-  
-  // ...
+        OrderItems.Add(item);
+    }
+    // ...
+    // Additional methods with domain rules/logic related to the Order aggregate
+    // ...
+}
 ```
 
 It is important to note that this is a domain entity implemented as a POCO class. It does not have any direct dependency on Entity Framework Core or any other infrastructure framework. This implementation is as it should be, just C\# code implementing a domain model.
@@ -122,24 +91,17 @@ Having an aggregate root means that most of the code related to consistency and 
 
 For example, you should *not* do the following from any command handler method or application layer class:
 
-```
-  // WRONG ACCORDING TO DDD PATTERNS – CODE AT THE APPLICATION LAYER OR
-  
-  // COMMAND HANDLERS
-  
-  // Code in command handler methods or Web API controllers
-  
-  //... (WRONG) Some code with business logic out of the domain classes ...
-  
-  OrderItem myNewOrderItem = new OrderItem(orderId, productId, productName,
-  
-  pictureUrl, unitPrice, discount, units);
-  
-  //... (WRONG) Accessing the OrderItems colletion directly from the application layer // or command handlers
-  
-  myOrder.OrderItems.Add(myNewOrderItem);
-  
-  //...
+```csharp
+// WRONG ACCORDING TO DDD PATTERNS – CODE AT THE APPLICATION LAYER OR
+// COMMAND HANDLERS
+// Code in command handler methods or Web API controllers
+//... (WRONG) Some code with business logic out of the domain classes ...
+OrderItem myNewOrderItem = new OrderItem(orderId, productId, productName,
+    pictureUrl, unitPrice, discount, units);
+
+//... (WRONG) Accessing the OrderItems colletion directly from the application layer // or command handlers
+myOrder.OrderItems.Add(myNewOrderItem);
+//...
 ```
 
 In this case, the Add method is purely an operation to add data, with direct access to the OrderItems collection. Therefore, most of the domain logic, rules, or validations related to that operation with the child entities will be spread across the application layer (command handlers and Web API controllers).
@@ -154,20 +116,16 @@ As you can see in the code for the Order aggregate root, all setters should be p
 
 The following code snippet shows the proper way to code the task of adding an OrderItem object to the Order aggregate.
 
-```
-  // RIGHT ACCORDING TO DDD--CODE AT THE APPLICATION LAYER OR COMMAND HANDLERS
-  
-  // The code in command handlers or WebAPI controllers, related only to application stuff
-  
-  // There is NO code here related to OrderItem object’s business logic
-  
-  myOrder.AddOrderItem(productId, productName, pictureUrl, unitPrice, discount, units);
-  
-  // The code related to OrderItem params validations or domain rules should
-  
-  // be WITHIN the AddOrderItem method.
-  
-  //...
+```csharp
+// RIGHT ACCORDING TO DDD--CODE AT THE APPLICATION LAYER OR COMMAND HANDLERS
+// The code in command handlers or WebAPI controllers, related only to application stuff
+// There is NO code here related to OrderItem object’s business logic
+myOrder.AddOrderItem(productId, productName, pictureUrl, unitPrice, discount, units);
+
+// The code related to OrderItem params validations or domain rules should
+// be WITHIN the AddOrderItem method.
+
+//...
 ```
 
 In this snippet, most of the validations or logic related to the creation of an OrderItem object will be under the control of the Order aggregate root—in the AddOrderItem method—especially validations and logic related to other elements in the aggregate. For instance, you might get the same product item as the result of multiple calls to AddOrderItem. In that method, you could examine the product items and consolidate the same product items into a single OrderItem object with several units. Additionally, if there are different discount amounts but the product ID is the same, you would likely apply the higher discount. This principle applies to any other domain logic for the OrderItem object.
@@ -178,124 +136,71 @@ When you use Entity Framework 1.1, a DDD entity can be better expressed because 
 
 In DDD you want to update the entity only through methods in the entity (or the constructor) in order to control any invariant and the consistency of the data, so properties are defined only with a get accessor. The properties are backed by private fields. Private members can only be accessed from within the class. However, there one exception: EF Core needs to set these fields as well.
 
-```
-  // ENTITY FRAMEWORK CORE 1.1 OR LATER
-  
-  // Entity is a custom base class with the ID
-  
-  public class Order : Entity, IAggregateRoot
-  
-  {
-  
-  // DDD Patterns comment
-  
-  // Using private fields, allowed since EF Core 1.1, is a much better
-  
-  // encapsulation aligned with DDD aggregates and domain entities (instead of
-  
-  // properties and property collections)
-  
-  private bool _someOrderInternalState;
-  
-  private DateTime _orderDate;
-  
-  public Address Address { get; private set; }
-  
-  public Buyer Buyer { get; private set; }
-  
-  private int _buyerId;
-  
-  public OrderStatus OrderStatus { get; private set; }
-  
-  private int _orderStatusId;
-  
-  // DDD patterns comment
-  
-  // Using a private collection field is better for DDD aggregate encapsulation.
-  
-  // OrderItem objects cannot be added from outside the aggregate root
-  
-  // directly to the collection, but only through the
-  
-  // OrderAggrergateRoot.AddOrderItem method, which includes behavior.
-  
-  private readonly List<;OrderItem> _orderItems;
-  
-  public IEnumerable<;OrderItem> OrderItems => _orderItems.AsReadOnly();
-  
-  // Using List<;>.AsReadOnly()
-  
-  // This will create a read-only wrapper around the private list so it is
-  
-  // protected against external updates. It's much cheaper than .ToList(),
-  
-  // because it will not have to copy all items in a new collection.
-  
-  // (Just one heap alloc for the wrapper instance)
-  
-  // https://msdn.microsoft.com/en-us/library/e78dcd75(v=vs.110).aspx
-  
-  public PaymentMethod PaymentMethod { get; private set; }
-  
-  private int _paymentMethodId;
-  
-  protected Order() { }
-  
-  public Order(int buyerId, int paymentMethodId, Address address)
-  
-  {
-  
-  _orderItems = new List<;OrderItem>();
-  
-  _buyerId = buyerId;
-  
-  _paymentMethodId = paymentMethodId;
-  
-  _orderStatusId = OrderStatus.InProcess.Id;
-  
-  _orderDate = DateTime.UtcNow;
-  
-  Address = address;
-  
-  }
-  
-  // DDD patterns comment
-  
-  // The Order aggregate root method AddOrderitem() should be the only way
-  
-  // to add items to the Order object, so that any behavior (discounts, etc.)
-  
-  // and validations are controlled by the aggregate root in order to
-  
-  // maintain consistency within the whole aggregate.
-  
-  public void AddOrderItem(int productId, string productName, decimal unitPrice,
-  
-  decimal discount, string pictureUrl, int units = 1)
-  
-  {
-  
-  // ...
-  
-  // Domain rules/logic here for adding OrderItem objects to the order
-  
-  // ...
-  
-  OrderItem item = new OrderItem(this.Id, productId, productName,
-  
-  pictureUrl, unitPrice, discount, units);
-  
-  OrderItems.Add(item);
-  
-  }
-  
-  // ...
-  
-  // Additional methods with domain rules/logic related to the Order aggregate
-  
-  // ...
-  
-  }
+```csharp
+// ENTITY FRAMEWORK CORE 1.1 OR LATER
+// Entity is a custom base class with the ID
+public class Order : Entity, IAggregateRoot
+{
+    // DDD Patterns comment
+    // Using private fields, allowed since EF Core 1.1, is a much better
+    // encapsulation aligned with DDD aggregates and domain entities (instead of
+    // properties and property collections)
+    private bool _someOrderInternalState;
+    private DateTime _orderDate;
+    public Address Address { get; private set; }
+    public Buyer Buyer { get; private set; }
+    private int _buyerId;
+    public OrderStatus OrderStatus { get; private set; }
+    private int _orderStatusId;
+
+    // DDD patterns comment
+    // Using a private collection field is better for DDD aggregate encapsulation.
+    // OrderItem objects cannot be added from outside the aggregate root
+    // directly to the collection, but only through the
+    // OrderAggrergateRoot.AddOrderItem method, which includes behavior.
+    private readonly List<OrderItem> _orderItems;
+    public IEnumerable<OrderItem> OrderItems => _orderItems.AsReadOnly();
+    // Using List<>.AsReadOnly()
+    // This will create a read-only wrapper around the private list so it is
+    // protected against external updates. It's much cheaper than .ToList(),
+    // because it will not have to copy all items in a new collection.
+    // (Just one heap alloc for the wrapper instance)
+    // https://msdn.microsoft.com/en-us/library/e78dcd75(v=vs.110).aspx
+    public PaymentMethod PaymentMethod { get; private set; }
+    private int _paymentMethodId;
+
+    protected Order() { }
+
+    public Order(int buyerId, int paymentMethodId, Address address)
+    {
+        _orderItems = new List<OrderItem>();
+        _buyerId = buyerId;
+        _paymentMethodId = paymentMethodId;
+        _orderStatusId = OrderStatus.InProcess.Id;
+        _orderDate = DateTime.UtcNow;
+        Address = address;
+    }
+
+    // DDD patterns comment
+    // The Order aggregate root method AddOrderitem() should be the only way
+    // to add items to the Order object, so that any behavior (discounts, etc.)
+    // and validations are controlled by the aggregate root in order to
+    // maintain consistency within the whole aggregate.
+    public void AddOrderItem(int productId, string productName, decimal unitPrice,
+        decimal discount, string pictureUrl, int units = 1)
+    {
+        // ...
+        // Domain rules/logic here for adding OrderItem objects to the order
+        // ...
+        OrderItem item = new OrderItem(this.Id, productId, productName,
+            pictureUrl, unitPrice, discount, units);
+        OrderItems.Add(item);
+    }
+
+    // ...
+    // Additional methods with domain rules/logic related to the Order aggregate
+    // ...
+}
 ```
 
 ### Mapping properties with only get accessors to the fields in the database table

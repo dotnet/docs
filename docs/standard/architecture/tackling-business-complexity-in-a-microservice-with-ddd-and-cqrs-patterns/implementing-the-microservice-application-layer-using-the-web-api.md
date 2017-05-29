@@ -26,88 +26,52 @@ Typically, you want to inject dependencies that implement infrastructure objects
 
 In the following example, you can see how .NET Core is injecting the required repository objects through the constructor. The class is a command handler, which we will cover in the next section.
 
-```
-  // Sample command handler
-  
-  public class CreateOrderCommandHandler
-  
-  : IAsyncRequestHandler<;CreateOrderCommand, bool>
-  
-  {
-  
-  private readonly IOrderRepository _orderRepository;
-  
-  // Constructor where Dependencies are injected
-  
-  public CreateOrderCommandHandler(IOrderRepository orderRepository)
-  
-  {
-  
-  if (orderRepository == null)
-  
-  {
-  
-  throw new ArgumentNullException(nameof(orderRepository));
-  
-  }
-  
-  _orderRepository = orderRepository;
-  
-  }
-  
-  public async Task<;bool> Handle(CreateOrderCommand message)
-  
-  {
-  
-  //
-  
-  // ... Additional code
-  
-  //
-  
-  // Create the Order AggregateRoot
-  
-  // Add child entities and value objects through the Order aggregate root
-  
-  // methods and constructor so validations, invariants, and business logic
-  
-  // make sure that consistency is preserved across the whole aggregate
-  
-  var address = new Address(message.Street, message.City, message.State,
-  
-  message.Country, message.ZipCode);
-  
-  var order = new Order(address, message.CardTypeId, message.CardNumber,
-  
-  message.CardSecurityNumber,
-  
-  message.CardHolderName,
-  
-  message.CardExpiration);
-  
-  foreach (var item in message.OrderItems)
-  
-  {
-  
-  order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
-  
-  item.Discount, item.PictureUrl, item.Units);
-  
-  }
-  
-  //Persist the Order through the Repository
-  
-  _orderRepository.Add(order);
-  
-  var result = await _orderRepository.UnitOfWork
-  
-  .SaveEntitiesAsync();
-  
-  return result > 0;
-  
-  }
-  
-  }
+```csharp
+// Sample command handler
+public class CreateOrderCommandHandler
+    : IAsyncRequestHandler<CreateOrderCommand, bool>
+{
+    private readonly IOrderRepository _orderRepository;
+
+    // Constructor where Dependencies are injected
+    public CreateOrderCommandHandler(IOrderRepository orderRepository)
+    {
+        if (orderRepository == null)
+        {
+            throw new ArgumentNullException(nameof(orderRepository));
+        }
+        _orderRepository = orderRepository;
+    }
+
+    public async Task<bool> Handle(CreateOrderCommand message)
+    {
+        //
+        // ... Additional code
+        //
+        // Create the Order AggregateRoot
+        // Add child entities and value objects through the Order aggregate root
+        // methods and constructor so validations, invariants, and business logic
+        // make sure that consistency is preserved across the whole aggregate
+        var address = new Address(message.Street, message.City, message.State,
+            message.Country, message.ZipCode);
+        var order = new Order(address, message.CardTypeId, message.CardNumber,
+            message.CardSecurityNumber,
+            message.CardHolderName,
+            message.CardExpiration);
+
+        foreach (var item in message.OrderItems)
+        {
+            order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
+                item.Discount, item.PictureUrl, item.Units);
+        }
+
+        //Persist the Order through the Repository
+        _orderRepository.Add(order);
+        var result = await _orderRepository.UnitOfWork
+            .SaveEntitiesAsync();
+        return result > 0;
+    }
+}
 ```
 
 The class uses the injected repositories to execute the transaction and persist the state changes. It does not matter whether that class is a command handler, an ASP.NET Core Web API controller method, or a [DDD Application Service](https://lostechies.com/jimmybogard/2008/08/21/services-in-domain-driven-design/). It is ultimately a simple class that uses repositories, domain entities, and other application coordination in a fashion similar to a command handler. Dependency Injection works the same way for all the mentioned classes, as in the example using DI based on the constructor.
@@ -120,34 +84,21 @@ Before you use the objects injected through constructors, you need to know where
 
 When you use the built-in IoC container provided by ASP.NET Core, you register the types you want to inject in the ConfigureServices method in the Startup.cs file, as in the following code:
 
-```
-  // Registration of types into ASP.NET Core built-in container
-  
-  public void ConfigureServices(IServiceCollection services)
-  
-  {
-  
-  // Register out-of-the-box framework services.
-  
-  services.AddDbContext<;CatalogContext>(c =>
-  
-  {
-  
-  c.UseSqlServer(Configuration["ConnectionString"]);
-  
-  },
-  
-  ServiceLifetime.Scoped
-  
-  );
-  
-  services.AddMvc();
-  
-  // Register custom application dependencies.
-  
-  services.AddScoped<;IMyCustomRepository, MyCustomSQLRepository>();
-  
-  }
+```csharp
+// Registration of types into ASP.NET Core built-in container
+public void ConfigureServices(IServiceCollection services)
+{
+    // Register out-of-the-box framework services.
+    services.AddDbContext<CatalogContext>(c =>
+    {
+        c.UseSqlServer(Configuration["ConnectionString"]);
+    },
+    ServiceLifetime.Scoped
+    );
+    services.AddMvc();
+    // Register custom application dependencies.
+    services.AddScoped<IMyCustomRepository, MyCustomSQLRepository>();
+}
 ```
 
 The most common pattern when registering types in an IoC container is to register a pair of types—an interface and its related implementation class. Then when you request an object from the IoC container through any constructor, you request an object of a certain type of interface. For instance, in the previous example, the last line states that when any of your constructors have a dependency on IMyCustomRepository (interface or abstraction), the IoC container will inject an instance of the MyCustomSQLServerRepository implementation class.
@@ -172,54 +123,32 @@ You can also use additional IoC containers and plug them into the ASP.NET Core p
 
 For example, the following is the [Autofac application module](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Infrastructure/AutofacModules/ApplicationModule.cs) for the [Ordering.API Web API](https://github.com/dotnet-architecture/eShopOnContainers/tree/master/src/Services/Ordering/Ordering.API) project with the types you will want to inject.
 
-```
-  public class ApplicationModule
-  
-  :Autofac.Module
-  
-  {
-  
-  public string QueriesConnectionString { get; }
-  
-  public ApplicationModule(string qconstr)
-  
-  {
-  
-  QueriesConnectionString = qconstr;
-  
-  }
-  
-  protected override void Load(ContainerBuilder builder)
-  
-  {
-  
-  builder.Register(c => new OrderQueries(QueriesConnectionString))
-  
-  .As<;IOrderQueries>()
-  
-  .InstancePerLifetimeScope();
-  
-  builder.RegisterType<;BuyerRepository>()
-  
-  .As<;IBuyerRepository>()
-  
-  .InstancePerLifetimeScope();
-  
-  builder.RegisterType<;OrderRepository>()
-  
-  .As<;IOrderRepository>()
-  
-  .InstancePerLifetimeScope();
-  
-  builder.RegisterType<;RequestManager>()
-  
-  .As<;IRequestManager>()
-  
-  .InstancePerLifetimeScope();
-  
-  }
-  
-  }
+```csharp
+public class ApplicationModule
+    :Autofac.Module
+{
+    public string QueriesConnectionString { get; }
+    public ApplicationModule(string qconstr)
+    {
+        QueriesConnectionString = qconstr;
+    }
+
+    protected override void Load(ContainerBuilder builder)
+    {
+        builder.Register(c => new OrderQueries(QueriesConnectionString))
+            .As<IOrderQueries>()
+            .InstancePerLifetimeScope();
+        builder.RegisterType<BuyerRepository>()
+            .As<IBuyerRepository>()
+            .InstancePerLifetimeScope();
+        builder.RegisterType<OrderRepository>()
+            .As<IOrderRepository>()
+            .InstancePerLifetimeScope();
+        builder.RegisterType<RequestManager>()
+            .As<IRequestManager>()
+            .InstancePerLifetimeScope();
+   }
+}
 ```
 
 The registration process and concepts are very similar to the way you can register types with the built-in ASP.NET Core iOS container, but the syntax when using Autofac is a bit different.
@@ -277,146 +206,91 @@ A command is implemented with a class that contains data fields or collections w
 
 The following example shows the simplified CreateOrderCommand class. This is an immutable command that is used in the ordering microservice in eShopOnContainers.
 
-```
-  // DDD and CQRS patterns comment
-  
-  // Note that it is recommended that yuo implement immutable commands
-  
-  // In this case, immutability is achieved by having all the setters as private
-  
-  // plus being able to update the data just once, when creating the object
-  
-  // through the constructor.
-  
-  // References on immutable commands:
-  
-  // http://cqrs.nu/Faq
-  
-  // https://docs.spine3.org/motivation/immutability.html
-  
-  // http://blog.gauffin.org/2012/06/griffin-container-introducing-command-support/
-  
-  // https://msdn.microsoft.com/en-us/library/bb383979.aspx
-  
-  [DataContract]
-  
-  public class CreateOrderCommand
-  
-  :IAsyncRequest<;bool>
-  
-  {
-  
-  [DataMember]
-  
-  private readonly List<;OrderItemDTO> _orderItems;
-  
-  [DataMember]
-  
-  public string City { get; private set; }
-  
-  [DataMember]
-  
-  public string Street { get; private set; }
-  
-  [DataMember]
-  
-  public string State { get; private set; }
-  
-  [DataMember]
-  
-  public string Country { get; private set; }
-  
-  [DataMember]
-  
-  public string ZipCode { get; private set; }
-  
-  [DataMember]
-  
-  public string CardNumber { get; private set; }
-  
-  [DataMember]
-  
-  public string CardHolderName { get; private set; }
-  
-  [DataMember]
-  
-  public DateTime CardExpiration { get; private set; }
-  
-  [DataMember]
-  
-  public string CardSecurityNumber { get; private set; }
-  
-  [DataMember]
-  
-  public int CardTypeId { get; private set; }
-  
-  [DataMember]
-  
-  public IEnumerable<;OrderItemDTO> OrderItems => _orderItems;
-  
-  public CreateOrderCommand()
-  
-  {
-  
-  _orderItems = new List<;OrderItemDTO>();
-  
-  }
-  
-  public CreateOrderCommand(List<;OrderItemDTO> orderItems, string city,
-  
-  string street,
-  
-  string state, string country, string zipcode,
-  
-  string cardNumber, string cardHolderName, DateTime cardExpiration,
-  
-  string cardSecurityNumber, int cardTypeId) : this()
-  
-  {
-  
-  _orderItems = orderItems;
-  
-  City = city;
-  
-  Street = street;
-  
-  State = state;
-  
-  Country = country;
-  
-  ZipCode = zipcode;
-  
-  CardNumber = cardNumber;
-  
-  CardHolderName = cardHolderName;
-  
-  CardSecurityNumber = cardSecurityNumber;
-  
-  CardTypeId = cardTypeId;
-  
-  CardExpiration = cardExpiration;
-  
-  }
-  
-  public class OrderItemDTO
-  
-  {
-  
-  public int ProductId { get; set; }
-  
-  public string ProductName { get; set; }
-  
-  public decimal UnitPrice { get; set; }
-  
-  public decimal Discount { get; set; }
-  
-  public int Units { get; set; }
-  
-  public string PictureUrl { get; set; }
-  
-  }
-  
-  }
+```csharp
+// DDD and CQRS patterns comment
+// Note that it is recommended that yuo implement immutable commands
+// In this case, immutability is achieved by having all the setters as private
+// plus being able to update the data just once, when creating the object
+// through the constructor.
+// References on immutable commands:
+// http://cqrs.nu/Faq
+// https://docs.spine3.org/motivation/immutability.html
+// http://blog.gauffin.org/2012/06/griffin-container-introducing-command-support/
+// https://msdn.microsoft.com/en-us/library/bb383979.aspx
+[DataContract]
+public class CreateOrderCommand
+    :IAsyncRequest<bool>
+{
+    [DataMember]
+    private readonly List<OrderItemDTO> _orderItems;
+
+    [DataMember]
+    public string City { get; private set; }
+
+    [DataMember]
+    public string Street { get; private set; }
+
+    [DataMember]
+    public string State { get; private set; }
+
+    [DataMember]
+    public string Country { get; private set; }
+
+    [DataMember]
+    public string ZipCode { get; private set; }
+
+    [DataMember]
+    public string CardNumber { get; private set; }
+
+    [DataMember]
+    public string CardHolderName { get; private set; }
+
+    [DataMember]
+    public DateTime CardExpiration { get; private set; }
+
+    [DataMember]
+    public string CardSecurityNumber { get; private set; }
+
+    [DataMember]
+    public int CardTypeId { get; private set; }
+
+    [DataMember]
+    public IEnumerable<OrderItemDTO> OrderItems => _orderItems;
+
+    public CreateOrderCommand()
+    {
+        _orderItems = new List<OrderItemDTO>();
+    }
+
+    public CreateOrderCommand(List<OrderItemDTO> orderItems, string city,
+        string street,
+        string state, string country, string zipcode,
+        string cardNumber, string cardHolderName, DateTime cardExpiration,
+        string cardSecurityNumber, int cardTypeId) : this()
+    {
+        _orderItems = orderItems;
+        City = city;
+        Street = street;
+        State = state;
+        Country = country;
+        ZipCode = zipcode;
+        CardNumber = cardNumber;
+        CardHolderName = cardHolderName;
+        CardSecurityNumber = cardSecurityNumber;
+        CardTypeId = cardTypeId;
+        CardExpiration = cardExpiration;
+    }
+
+    public class OrderItemDTO
+    {
+        public int ProductId { get; set; }
+        public string ProductName { get; set; }
+        public decimal UnitPrice { get; set; }
+        public decimal Discount { get; set; }
+        public int Units { get; set; }
+        public string PictureUrl { get; set; }
+    }
+}
 ```
 
 Basically, the command class contains all the data you need for performing a business transaction by using the domain model objects. Thus, commands are simply data structures that contain read-only data, and no behavior. The command’s name indicates its purpose. In many languages like C\#, commands are represented as classes, but they are not true classes in the real object-oriented sense.
@@ -427,28 +301,20 @@ For example, the command class for creating an order is probably similar in term
 
 Many command classes can be simple, requiring only a few fields about some state that needs to be changed. That would be the case if you are just changing the status of an order from “in process” to “paid” or “shipped” by using a command similar to the following:
 
-```
-  [DataContract]
-  
-  public class UpdateOrderStatusCommand
-  
-  :IAsyncRequest<;bool>
-  
-  {
-  
-  [DataMember]
-  
-  public string Status { get; private set; }
-  
-  [DataMember]
-  
-  public string OrderId { get; private set; }
-  
-  [DataMember]
-  
-  public string BuyerIdentityGuid { get; private set; }
-  
-  }
+```csharp
+[DataContract]
+public class UpdateOrderStatusCommand
+    :IAsyncRequest<bool>
+{
+    [DataMember]
+    public string Status { get; private set; }
+
+    [DataMember]
+    public string OrderId { get; private set; }
+
+    [DataMember]
+    public string BuyerIdentityGuid { get; private set; }
+}
 ```
 
 Some developers make their UI request objects separate from their command DTOs, but that is just a matter of preference. It is a tedious separation with not much added value, and the objects are almost exactly the same shape. For instance, in eShopOnContainers, the commands come directly from the client side.
@@ -479,90 +345,54 @@ When command handlers get complex, with too much logic, that can be a code smell
 
 As an example of a command handler class, the following code shows the same CreateOrderCommandHandler class that you saw at the beginning of this chapter. In this case we have highlighted the Handle method and the operations with the domain model objects/aggregates.
 
-```
-  public class CreateOrderCommandHandler
-  
-  : IAsyncRequestHandler<;CreateOrderCommand, bool>
-  
-  {
-  
-  private readonly IBuyerRepository _buyerRepository;
-  
-  private readonly IOrderRepository _orderRepository;
-  
-  public CreateOrderCommandHandler(IBuyerRepository buyerRepository,
-  
-  IOrderRepository orderRepository)
-  
-  {
-  
-  if (buyerRepository == null)
-  
-  {
-  
-  throw new ArgumentNullException(nameof(buyerRepository));
-  
-  }
-  
-  if (orderRepository == null)
-  
-  {
-  
-  throw new ArgumentNullException(nameof(orderRepository));
-  
-  }
-  
-  _buyerRepository = buyerRepository;
-  
-  _orderRepository = orderRepository;
-  
-  }
-  
-  public async Task<;bool> Handle(CreateOrderCommand message)
-  
-  {
-  
-  //
-  
-  // Additional code ...
-  
-  //
-  
-  // Create the Order aggregate root
-  
-  // Add child entities and value objects through the Order aggregate root
-  
-  // methods and constructor so validations, invariants, and business logic
-  
-  // make sure that consistency is preserved across the whole aggregate
-  
-  var order = new Order(buyer.Id, payment.Id,
-  
-  new Address(message.Street,
-  
-  message.City, message.State,
-  
-  message.Country, message.ZipCode));
-  
-  foreach (var item in message.OrderItems)
-  
-  {
-  
-  order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
-  
-  item.Discount, item.PictureUrl, item.Units);
-  
-  }
-  
-  // Persist the Order through the aggregate's repository
-  
-  _orderRepository.Add(order);
-  
-  return await _orderRepository.UnitOfWork.SaveChangesAsync();
-  
-  }
-  
-  }
+```csharp
+public class CreateOrderCommandHandler
+    : IAsyncRequestHandler<CreateOrderCommand, bool>
+{
+    private readonly IBuyerRepository _buyerRepository;
+    private readonly IOrderRepository _orderRepository;
+
+    public CreateOrderCommandHandler(IBuyerRepository buyerRepository,
+        IOrderRepository orderRepository)
+    {
+        if (buyerRepository == null)
+        {
+            throw new ArgumentNullException(nameof(buyerRepository));
+        }
+        if (orderRepository == null)
+        {
+            throw new ArgumentNullException(nameof(orderRepository));
+        }
+
+        _buyerRepository = buyerRepository;
+        _orderRepository = orderRepository;
+    }
+
+    public async Task<bool> Handle(CreateOrderCommand message)
+    {
+        //
+        // Additional code ...
+        //
+        // Create the Order aggregate root
+        // Add child entities and value objects through the Order aggregate root
+        // methods and constructor so validations, invariants, and business logic
+        // make sure that consistency is preserved across the whole aggregate
+        var order = new Order(buyer.Id, payment.Id,
+            new Address(message.Street,
+            message.City, message.State,
+            message.Country, message.ZipCode));
+
+        foreach (var item in message.OrderItems)
+        {
+            order.AddOrderItem(item.ProductId, item.ProductName, item.UnitPrice,
+                item.Discount, item.PictureUrl, item.Units);
+        }
+
+        // Persist the Order through the aggregate's repository
+        _orderRepository.Add(order);
+        return await _orderRepository.UnitOfWork.SaveChangesAsync();
+    }
+}
 ```
 
 These are additional steps a command handler should take:
@@ -656,84 +486,57 @@ I think it might be worth mentioning testing here – it provides a nice consist
 
 First, let us take a look to the controller code where you actually would use the mediator object. If you were not using the mediator object, you would need to inject all the dependencies for that controller, things like a logger object and others. Therefore, the constructor would be quite complicated. On the other hand, if you use the mediator object, the constructor of your controller can be a lot simpler, with just a few dependencies instead of many dependencies that you would have if you had one per cross-cutting operation, as in the following example:
 
-```
-  public class OrdersController : Controller
-  
-  {
-  
-  public OrdersController(IMediator mediator,
-  
-  IOrderQueries orderQueries)
-  
-  // ...
+```csharp
+public class OrdersController : Controller
+{
+    public OrdersController(IMediator mediator,
+        IOrderQueries orderQueries)
+    // ...
 ```
 
 You can see that the mediator provides a clean and lean Web API controller constructor. In addition, within the controller methods, the code to send a command to the mediator object is almost one line:
 
-```
-  [Route("new")]
-  
-  [HttpPost]
-  
-  public async Task<;IActionResult> CreateOrder([FromBody]CreateOrderCommand
-  
-  createOrderCommand)
-  
-  {
-  
-  var commandResult = await _mediator.SendAsync(createOrderCommand);
-  
-  return commandResult ? (IActionResult)Ok() : (IActionResult)BadRequest();
-  
-  }
+```csharp
+[Route("new")]
+[HttpPost]
+public async Task<IActionResult> CreateOrder([FromBody]CreateOrderCommand
+    createOrderCommand)
+{
+    var commandResult = await _mediator.SendAsync(createOrderCommand);
+    return commandResult ? (IActionResult)Ok() : (IActionResult)BadRequest();
+}
 ```
 
 In order for MediatR to be aware of your command handler classes, you need to register the mediator classes and the command handler classes in your IoC container. By default, MediatR uses Autofac as the IoC container, but you can also use the built-in ASP.NET Core IoC container or any other container supported by MediatR.
 
 The following code shows how to register Mediator’s types and commands when using Autofac modules.
 
-```
-  public class MediatorModule : Autofac.Module
-  
-  {
-  
-  protected override void Load(ContainerBuilder builder)
-  
-  {
-  
-  builder.RegisterAssemblyTypes(typeof(IMediator).GetTypeInfo().Assembly)
-  
-  .AsImplementedInterfaces();
-  
-  builder.RegisterAssemblyTypes(typeof(CreateOrderCommand).
-  
-  GetTypeInfo().Assembly)
-  
-  .As(o => o.GetInterfaces()
-  
-  .Where(i => i.IsClosedTypeOf(typeof(IAsyncRequestHandler<;,>)))
-  
-  .Select(i => new KeyedService("IAsyncRequestHandler", i)));
-  
-  builder.RegisterGenericDecorator(typeof(LogDecorator<;,>),
-  
-  typeof(IAsyncRequestHandler<;,>),
-  
-  "IAsyncRequestHandler");
-  
-  // Other types registration
-  
-  }
+```csharp
+public class MediatorModule : Autofac.Module
+{
+    protected override void Load(ContainerBuilder builder)
+    {
+        builder.RegisterAssemblyTypes(typeof(IMediator).GetTypeInfo().Assembly)
+            .AsImplementedInterfaces();
+        builder.RegisterAssemblyTypes(typeof(CreateOrderCommand)
+            .GetTypeInfo().Assembly)
+            .As(o => o.GetInterfaces()
+            .Where(i => i.IsClosedTypeOf(typeof(IAsyncRequestHandler<,>)))
+            .Select(i => new KeyedService("IAsyncRequestHandler", i)));
+        builder.RegisterGenericDecorator(typeof(LogDecorator<,>),
+            typeof(IAsyncRequestHandler<,>), "IAsyncRequestHandler");
+
+        // Other types registration
+    }
+}
 ```
 
 Because each command handler implements the interface with generic IAsyncRequestHandler&lt;T&gt; and then inspects the RegisteredAssemblyTypes object, the handler is able to relate each command with its command handler, because that relationship is stated in the CommandHandler class, as in the following example:
 
-```
-  public class CreateOrderCommandHandler
-  
-  : IAsyncRequestHandler<;CreateOrderCommand, bool>
-  
-  {
+```csharp
+public class CreateOrderCommandHandler
+  : IAsyncRequestHandler<CreateOrderCommand, bool>
+{
 ```
 
 This is the code that correlates commands with command handlers. The handler is just a simple class, but it inherits from RequestHandler&lt;T&gt;, and MediatR makes sure it gets invoked with the correct payload.
@@ -746,174 +549,103 @@ Again, note that a future version of eShopOnContainers it will migrate to [Media
 
 That [LogDecorator](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Decorators/LogDecorator.cs) class can be implemented as the following code, which logs information about the command handler being executed and whether it was successful or not.
 
-```
-  public class LogDecorator<;TRequest, TResponse>
-  
-  : IAsyncRequestHandler<;TRequest, TResponse>
-  
-  where TRequest : IAsyncRequest<;TResponse>
-  
-  {
-  
-  private readonly IAsyncRequestHandler<;TRequest, TResponse> _inner;
-  
-  private readonly ILogger<;LogDecorator<;TRequest, TResponse>> _logger;
-  
-  public LogDecorator(
-  
-  IAsyncRequestHandler<;TRequest, TResponse> inner,
-  
-  ILogger<;LogDecorator<;TRequest, TResponse>> logger)
-  
-  {
-  
-  _inner = inner;
-  
-  _logger = logger;
-  
-  }
-  
-  public async Task<;TResponse> Handle(TRequest message)
-  
-  {
-  
-  _logger.LogInformation($"Executing command {_inner.GetType().FullName}");
-  
-  var response = await _inner.Handle(message);
-  
-  _logger.LogInformation($"Succeeded executed command
-  
-  {_inner.GetType().FullName}");
-  
-  return response;
-  
-  }
-  
-  }
+```csharp
+public class LogDecorator<TRequest, TResponse>
+    : IAsyncRequestHandler<TRequest, TResponse>
+    where TRequest : IAsyncRequest<TResponse>
+{
+    private readonly IAsyncRequestHandler<TRequest, TResponse> _inner;
+    private readonly ILogger<LogDecorator<TRequest, TResponse>> _logger;
+
+    public LogDecorator(
+        IAsyncRequestHandler<TRequest, TResponse> inner,
+        ILogger<LogDecorator<TRequest, TResponse>> logger)
+    {
+        _inner = inner;
+        _logger = logger;
+    }
+
+    public async Task<TResponse> Handle(TRequest message)
+    {
+        _logger.LogInformation($"Executing command {_inner.GetType().FullName}");
+        var response = await _inner.Handle(message);
+        _logger.LogInformation($"Succeeded executed command{_inner.GetType().FullName}");
+        return response;
+    }
+}
 ```
 
 Just by implementing this decorator class and by decorating the pipeline with it, all the commands processed through MediatR will be logging information about the execution.
 
 The eShopOnContainers ordering microservice also applies a second decorator for basic validations, the [ValidatorDecorator](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/Services/Ordering/Ordering.API/Application/Decorators/ValidatorDecorator.cs) class that relies on the [FluentValidation](https://github.com/JeremySkinner/FluentValidation) library, as shown in the following code:
 
-```
-  public class ValidatorDecorator<;TRequest, TResponse>
-  
-  : IAsyncRequestHandler<;TRequest, TResponse>
-  
-  where TRequest : IAsyncRequest<;TResponse>
-  
-  {
-  
-  private readonly IAsyncRequestHandler<;TRequest, TResponse> _inner;
-  
-  private readonly IValidator<;TRequest>[] _validators;
-  
-  public ValidatorDecorator(
-  
-  IAsyncRequestHandler<;TRequest, TResponse> inner,
-  
-  IValidator<;TRequest>[] validators)
-  
-  {
-  
-  _inner = inner;
-  
-  _validators = validators;
-  
-  }
-  
-  public async Task<;TResponse> Handle(TRequest message)
-  
-  {
-  
-  var failures = _validators
-  
-  .Select(v => v.Validate(message))
-  
-  .SelectMany(result => result.Errors)
-  
-  .Where(error => error != null)
-  
-  .ToList();
-  
-  if (failures.Any())
-  
-  {
-  
-  throw new OrderingDomainException(
-  
-  $"Command Validation Errors for type {typeof(TRequest).Name}",
-  
-  new ValidationException("Validation exception", failures));
-  
-  }
-  
-  var response = await _inner.Handle(message);
-  
-  return response;
-  
-  }
-  
-  }
+```csharp
+public class ValidatorDecorator<TRequest, TResponse>
+    : IAsyncRequestHandler<TRequest, TResponse>
+    where TRequest : IAsyncRequest<TResponse>
+{
+    private readonly IAsyncRequestHandler<TRequest, TResponse> _inner;
+    private readonly IValidator<TRequest>[] _validators;
+
+    public ValidatorDecorator(
+        IAsyncRequestHandler<TRequest, TResponse> inner,
+        IValidator<TRequest>[] validators)
+    {
+        _inner = inner;
+        _validators = validators;
+    }
+
+    public async Task<TResponse> Handle(TRequest message)
+    {
+        var failures = _validators
+            .Select(v => v.Validate(message))
+            .SelectMany(result => result.Errors)
+            .Where(error => error != null)
+            .ToList();
+            if (failures.Any())
+            {
+                throw new OrderingDomainException(
+                $"Command Validation Errors for type {typeof(TRequest).Name}",
+                new ValidationException("Validation exception", failures));
+            }
+            var response = await _inner.Handle(message);
+        return response;
+    }
+}
 ```
 
 Then, based on the [FluentValidation](https://github.com/JeremySkinner/FluentValidation) library, we created validation for the data passed with CreateOrderCommand, as in the following code:
 
-```
-  public class **CreateOrderCommandValidator : AbstractValidator<;CreateOrderCommand>**
-  
-  {
-  
-  public CreateOrderCommandValidator()
-  
-  {
-  
-  RuleFor(command => command.City).NotEmpty();
-  
-  RuleFor(command => command.Street).NotEmpty();
-  
-  RuleFor(command => command.State).NotEmpty();
-  
-  RuleFor(command => command.Country).NotEmpty();
-  
-  RuleFor(command => command.ZipCode).NotEmpty();
-  
-  RuleFor(command => command.CardNumber).NotEmpty().Length(12, 19);
-  
-  RuleFor(command => command.CardHolderName).NotEmpty();
-  
-  RuleFor(command => command.CardExpiration).NotEmpty().Must(BeValidExpirationDate).
-  
-  WithMessage("Please specify a valid card expiration date");
-  
-  RuleFor(command => command.CardSecurityNumber).NotEmpty().Length(3);
-  
-  RuleFor(command => command.CardTypeId).NotEmpty();
-  
-  RuleFor(command => command.OrderItems).
-  
-  Must(ContainOrderItems).WithMessage("No order items found");
-  
-  }
-  
-  private bool BeValidExpirationDate(DateTime dateTime)
-  
-  {
-  
-  return dateTime >= DateTime.UtcNow;
-  
-  }
-  
-  private bool ContainOrderItems(IEnumerable<;OrderItemDTO> orderItems)
-  
-  {
-  
-  return orderItems.Any();
-  
-  }
-  
-  }
+```csharp
+public class CreateOrderCommandValidator : AbstractValidator<CreateOrderCommand>
+{
+    public CreateOrderCommandValidator()
+    {
+        RuleFor(command => command.City).NotEmpty();
+        RuleFor(command => command.Street).NotEmpty();
+        RuleFor(command => command.State).NotEmpty();
+        RuleFor(command => command.Country).NotEmpty();
+        RuleFor(command => command.ZipCode).NotEmpty();
+        RuleFor(command => command.CardNumber).NotEmpty().Length(12, 19);
+        RuleFor(command => command.CardHolderName).NotEmpty();
+        RuleFor(command => command.CardExpiration).NotEmpty().Must(BeValidExpirationDate).
+            WithMessage("Please specify a valid card expiration date");
+        RuleFor(command => command.CardSecurityNumber).NotEmpty().Length(3);
+        RuleFor(command => command.CardTypeId).NotEmpty();
+        RuleFor(command => command.OrderItems).
+            Must(ContainOrderItems).WithMessage("No order items found");
+    }
+
+    private bool BeValidExpirationDate(DateTime dateTime)
+    {
+        return dateTime >= DateTime.UtcNow;
+    }
+
+    private bool ContainOrderItems(IEnumerable<OrderItemDTO> orderItems)
+    {
+        return orderItems.Any();
+    }
+}
 ```
 
 You could create additional validations. This is a very clean and elegant way to implement your command validations.

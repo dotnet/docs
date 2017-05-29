@@ -34,32 +34,21 @@ Integration events are used for bringing domain state in sync across multiple mi
 
 An integration event is basically a data-holding class, as in the following example:
 
-```
-  public class ProductPriceChangedIntegrationEvent : IntegrationEvent
-  
-  {
-  
-  public int ProductId { get; private set; }
-  
-  public decimal NewPrice { get; private set; }
-  
-  public decimal OldPrice { get; private set; }
-  
-  public ProductPriceChangedIntegrationEvent(int productId, decimal newPrice,
-  
-  decimal oldPrice)
-  
-  {
-  
-  ProductId = productId;
-  
-  NewPrice = newPrice;
-  
-  OldPrice = oldPrice;
-  
-  }
-  
-  }
+```csharp
+public class ProductPriceChangedIntegrationEvent : IntegrationEvent
+{
+    public int ProductId { get; private set; }
+    public decimal NewPrice { get; private set; }
+    public decimal OldPrice { get; private set; }
+
+    public ProductPriceChangedIntegrationEvent(int productId, decimal newPrice,
+        decimal oldPrice)
+    {
+        ProductId = productId;
+        NewPrice = newPrice;
+        OldPrice = oldPrice;
+    }
+}
 ```
 
 The integration event class can be simple; for example, it might contain a GUID for its ID.
@@ -110,22 +99,16 @@ However, as highlighted previously, using abstractions (the event bus interface)
 
 Let’s start with some implementation code for the event bus interface and possible implementations for exploration purposes. The interface should be generic and straightforward, as in the following interface.
 
-```
-  public interface IEventBus
-  
-  {
-  
-  void Publish(IntegrationEvent @event);
-  
-  void Subscribe<;T>(IIntegrationEventHandler<;T> handler)
-  
-  where T: IntegrationEvent;
-  
-  void Unsubscribe<;T>(IIntegrationEventHandler<;T> handler)
-  
-  where T : IntegrationEvent;
-  
-  }
+```csharp
+public interface IEventBus
+{
+    void Publish(IntegrationEvent @event);
+    void Subscribe<T>(IIntegrationEventHandler<T> handler)
+        where T: IntegrationEvent;
+
+    void Unsubscribe<T>(IIntegrationEventHandler<T> handler)
+        where T : IntegrationEvent;
+}
 ```
 
 The Publish method is straightforward. The event bus will broadcast the integration event passed to it to any microservice subscribed to that event. This method is used by the microservice that is publishing the event.

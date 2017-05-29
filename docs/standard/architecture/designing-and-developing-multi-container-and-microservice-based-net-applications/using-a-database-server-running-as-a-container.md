@@ -18,20 +18,14 @@ In eShopOnContainers, there is a container named sql.data defined in the [docker
 
 The SQL Server container in the sample application is configured with the following YAML code in the docker-compose.yml file, which is executed when you run docker-compose up. Note that the YAML code has consolidated configuration information from the generic docker-compose.yml file and the docker-compose.override.yml file. (Usually you would separate the environment settings from the base or static information related to the SQL Server image.)
 
-```
-  sql.data:
-  
+```yml
+sql.data:
   image: microsoft/mssql-server-linux
-  
   environment:
-  
-  - SA_PASSWORD=your@password
-  
-  - ACCEPT_EULA=Y
-  
+    - SA_PASSWORD=your@password
+    - ACCEPT_EULA=Y
   ports:
-  
-  - "5434:1433"
+    - "5434:1433"
 ```
 
 The following docker run command can run that container:
@@ -60,126 +54,72 @@ Having SQL Server running as a container is not just useful for a demo where you
 
 To add data to the database when the application starts up, you can add code like the following to the Configure method in the Startup class of the Web API project:
 
-```
-  public class Startup
-  
-  {
-  
-  // Other Startup code...
-  
-  public void Configure(IApplicationBuilder app,
-  
-  IHostingEnvironment env,
-  
-  ILoggerFactory loggerFactory)
-  
-  {
-  
-  // Other Configure code...
-  
-  // Seed data through our custom class
-  
-  CatalogContextSeed.SeedAsync(app)
-  
-  .Wait();
-  
-  // Other Configure code...
-  
-  }
-  
-  }
+```csharp
+public class Startup
+{
+    // Other Startup code...
+    public void Configure(IApplicationBuilder app,
+        IHostingEnvironment env,
+        ILoggerFactory loggerFactory)
+    {
+        // Other Configure code...
+        // Seed data through our custom class
+        CatalogContextSeed.SeedAsync(app)
+            .Wait();
+        // Other Configure code...
+    }
+}
 ```
 
 The following code in the custom CatalogContextSeed class populates the data.
 
-```
-  public class CatalogContextSeed
-  
-  {
-  
-  public static async Task SeedAsync(IApplicationBuilder applicationBuilder)
-  
-  {
-  
-  var context = (CatalogContext)applicationBuilder
-  
-  .ApplicationServices.GetService(typeof(CatalogContext));
-  
-  using (context)
-  
-  {
-  
-  context.Database.Migrate();
-  
-  if (!context.CatalogBrands.Any())
-  
-  {
-  
-  context.CatalogBrands.AddRange(
-  
-  GetPreconfiguredCatalogBrands());
-  
-  await context.SaveChangesAsync();
-  
-  }
-  
-  if (!context.CatalogTypes.Any())
-  
-  {
-  
-  context.CatalogTypes.AddRange(
-  
-  GetPreconfiguredCatalogTypes());
-  
-  await context.SaveChangesAsync();
-  
-  }
-  
-  }
-  
-  }
-  
-  static IEnumerable<;CatalogBrand> GetPreconfiguredCatalogBrands()
-  
-  {
-  
-  return new List<;CatalogBrand>()
-  
-  {
-  
-  new CatalogBrand() { Brand = "Azure"},
-  
-  new CatalogBrand() { Brand = ".NET" },
-  
-  new CatalogBrand() { Brand = "Visual Studio" },
-  
-  new CatalogBrand() { Brand = "SQL Server" }
-  
-  };
-  
-  }
-  
-  static IEnumerable<;CatalogType> GetPreconfiguredCatalogTypes()
-  
-  {
-  
-  return new List<;CatalogType>()
-  
-  {
-  
-  new CatalogType() { Type = "Mug"},
-  
-  new CatalogType() { Type = "T-Shirt" },
-  
-  new CatalogType() { Type = "Backpack" },
-  
-  new CatalogType() { Type = "USB Memory Stick" }
-  
-  };
-  
-  }
-  
-  }
+```csharp
+public class CatalogContextSeed
+{
+    public static async Task SeedAsync(IApplicationBuilder applicationBuilder)
+    {
+        var context = (CatalogContext)applicationBuilder
+            .ApplicationServices.GetService(typeof(CatalogContext));
+        using (context)
+        {
+            context.Database.Migrate();
+            if (!context.CatalogBrands.Any())
+            {
+                context.CatalogBrands.AddRange(
+                    GetPreconfiguredCatalogBrands());
+                await context.SaveChangesAsync();
+            }
+            if (!context.CatalogTypes.Any())
+            {
+                context.CatalogTypes.AddRange(
+                    GetPreconfiguredCatalogTypes());
+                await context.SaveChangesAsync();
+            }
+        }
+    }
+
+    static IEnumerable<;CatalogBrand> GetPreconfiguredCatalogBrands()
+    {
+        return new List<CatalogBrand>()
+       {
+           new CatalogBrand() { Brand = "Azure"},
+           new CatalogBrand() { Brand = ".NET" },
+           new CatalogBrand() { Brand = "Visual Studio" },
+           new CatalogBrand() { Brand = "SQL Server" }
+       };
+    }
+
+    static IEnumerable<;CatalogType> GetPreconfiguredCatalogTypes()
+    {
+        return new List<CatalogType>()
+        {
+            new CatalogType() { Type = "Mug"},
+            new CatalogType() { Type = "T-Shirt" },
+            new CatalogType() { Type = "Backpack" },
+            new CatalogType() { Type = "USB Memory Stick" }
+        };
+    }
+}
 ```
 
 When you run integration tests, having a way to generate data consistent with your integration tests is useful. Being able to create everything from scratch, including an instance of SQL Server running on a container, is great for test environments.
@@ -188,40 +128,26 @@ When you run integration tests, having a way to generate data consistent with yo
 
 Another good choice when running tests is to use the Entity Framework InMemory database provider. You can specify that configuration in the ConfigureServices method of the Startup class in your Web API project:
 
-```
-  public class Startup
+```csharp
+public class Startup
+{
+    // Other Startup code ...
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddSingleton<IConfiguration>(Configuration);
+        // DbContext using an InMemory database provider
+        services.AddDbContext<;CatalogContext>(opt => opt.UseInMemoryDatabase());
+        //(Alternative: DbContext using a SQL Server provider
+        //services.AddDbContext<;CatalogContext>(c =>
+        //{
+            // c.UseSqlServer(Configuration["ConnectionString"]);
+            //
+        //});
+    }
   
-  {
-  
-  // Other Startup code ...
-  
-  public void ConfigureServices(IServiceCollection services)
-  
-  {
-  
-  services.AddSingleton<;IConfiguration>(Configuration);
-  
-  // DbContext using an InMemory database provider
-  
-  services.AddDbContext<;CatalogContext>(opt => opt.UseInMemoryDatabase());
-  
-  //(Alternative: DbContext using a SQL Server provider
-  
-  //services.AddDbContext<;CatalogContext>(c =>
-  
-  //{
-  
-  // c.UseSqlServer(Configuration["ConnectionString"]);
-  
-  //
-  
-  //});
-  
-  }
-  
-  // Other Startup code ...
-  
-  }
+    // Other Startup code ...
+
+}
 ```
 
 There is an important catch, though. The in-memory database does not support many constraints that are specific to a particular database. For instance, you might add a unique index on a column in your EF Core model and write a test against your in-memory database to check that it does not let you add a duplicate value. But when you are using the in-memory database, you cannot handle unique indexes on a column. Therefore, the in-memory database does not behave exactly the same as a real SQL Server database—it does not emulate database-specific constraints.
@@ -248,34 +174,25 @@ The Redis image includes expose:6379 (the port used by Redis), so standard conta
 
 In eShopOnContainers, the basket.api microservice uses a Redis cache running as a container. That basket.data container is defined as part of the multi-container docker-compose.yml file, as shown in the following example:
 
-```
-  //docker-compose.yml file
-  
-  //...
-  
+```yml
+#docker-compose.yml file
+#...
   basket.data:
-  
-  image: redis
-  
-  expose:
-  
-  - "6379"
+    image: redis
+    expose:
+      - "6379"
 ```
 
 This code in the docker-compose.yml defines a container named basket.data based on the redis image and publishing the port 6379 internally, meaning that it will be accessible only from other containers running within the Docker host.
 
 Finally, in the docker-compose.override.yml file, the basket.api microservice for the eShopOnContainers sample defines the connection string to use for that Redis container:
 
-```
+```yml
   basket.api:
-  
-  environment:
-  
-  // Other data ...
-  
-  - ConnectionString=basket.data
-  
-  - EventBusConnection=rabbitmq
+    environment:
+      # Other data ...
+      - ConnectionString=basket.data
+      - EventBusConnection=rabbitmq
 ```
 
 

@@ -14,12 +14,10 @@ The first step for using the event bus is to subscribe the microservices to the 
 
 The following simple code shows what each receiver microservice needs to implement when starting the service (that is, in the Startup class) so it subscribes to the events it needs. For instance, the basket.api microservice needs to subscribe to ProductPriceChangedIntegrationEvent messages. This makes the microservice aware of any changes to the product price and lets it warn the user about the change if that product is in the user’s basket.
 
-```
-  var eventBus = app.ApplicationServices.GetRequiredService<;IEventBus>();
-  
-  eventBus.Subscribe<;ProductPriceChangedIntegrationEvent>(
-  
-  ProductPriceChangedIntegrationEventHandler);
+```csharp
+var eventBus = app.ApplicationServices.GetRequiredService<IEventBus>();
+eventBus.Subscribe<ProductPriceChangedIntegrationEvent>(
+    ProductPriceChangedIntegrationEventHandler);
 ```
 
 After this code runs, the subscriber microservice will be listening through RabbitMQ channels. When any message of type ProductPriceChangedIntegrationEvent arrives, the code invokes the event handler that is passed to it and processes the event.
@@ -30,82 +28,53 @@ Finally, the message sender (origin microservice) publishes the integration even
 
 First, the event bus implementation object (based on RabbitMQ or based on a service bus) would be injected at the controller constructor, as in the following code:
 
-```
-  [Route("api/v1/[controller]")]
-  
-  public class CatalogController : ControllerBase
-  
-  {
-  
-  private readonly CatalogContext _context;
-  
-  private readonly IOptionsSnapshot<;Settings> _settings;
-  
-  private readonly IEventBus _eventBus;
-  
-  public CatalogController(CatalogContext context,
-  
-  IOptionsSnapshot<;Settings> settings,
-  
-  IEventBus eventBus)
-  
-  {
-  
-  _context = context;
-  
-  _settings = settings;
-  
-  _eventBus = eventBus;
-  
-  // ...
-  
-  }
+```csharp
+[Route("api/v1/[controller]")]
+public class CatalogController : ControllerBase
+{
+    private readonly CatalogContext _context;
+    private readonly IOptionsSnapshot<Settings> _settings;
+    private readonly IEventBus _eventBus;
+
+    public CatalogController(CatalogContext context,
+        IOptionsSnapshot<Settings> settings,
+        IEventBus eventBus)
+    {
+        _context = context;
+        _settings = settings;
+        _eventBus = eventBus;
+    }
+    // ...
+}
 ```
 
 Then you use it from your controller’s methods, like in the UpdateProduct method:
 
-```
-  [Route("update")]
-  
-  [HttpPost]
-  
-  public async Task<;IActionResult> UpdateProduct([FromBody]CatalogItem product)
-  
-  {
-  
-  var item = await _context.CatalogItems.SingleOrDefaultAsync(
-  
-  i => i.Id == product.Id);
-  
-  // ...
-  
-  if (item.Price != product.Price)
-  
-  {
-  
-  var oldPrice = item.Price;
-  
-  item.Price = product.Price;
-  
-  _context.CatalogItems.Update(item);
-  
-  var @event = new ProductPriceChangedIntegrationEvent(item.Id,
-  
-  item.Price,
-  
-  oldPrice);
-  
-  // Commit changes in original transaction
-  
-  await _context.SaveChangesAsync();
-  
-  // Publish integration event to the event bus
-  
-  // (RabbitMQ or a service bus underneath)
-  
-  _eventBus.Publish(@event);
-  
-  // ...
+```csharp
+[Route("update")]
+[HttpPost]
+public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem product)
+{
+    var item = await _context.CatalogItems.SingleOrDefaultAsync(
+        i => i.Id == product.Id);
+    // ...
+    if (item.Price != product.Price)
+    {
+        var oldPrice = item.Price;
+        item.Price = product.Price;
+        _context.CatalogItems.Update(item);
+        var @event = new ProductPriceChangedIntegrationEvent(item.Id,
+            item.Price,
+            oldPrice);
+        // Commit changes in original transaction
+        await _context.SaveChangesAsync();
+        // Publish integration event to the event bus
+        // (RabbitMQ or a service bus underneath)
+        _eventBus.Publish(@event);
+        // ...
+    }
+    // ...
+}
 ```
 
 In this case, since the origin microservice is a simple CRUD microservice, that code is placed right into a Web API controller. In more advanced microservices, it could be implemented in the CommandHandler class, right after the original data is committed.
@@ -174,95 +143,60 @@ Note that the transaction in the example code below will not be resilient if con
 
 For clarity, the following example shows the whole process in a single piece of code. However, the eShopOnContainers implementation is actually refactored and split this logic into multiple classes so it is easier to maintain.
 
-```
- // Update Product from the Catalog microservice
+```csharp
+// Update Product from the Catalog microservice
+//
+public async Task<IActionResult>
+    UpdateProduct([FromBody]CatalogItem productToUpdate)
+{
+    var catalogItem = await _catalogContext.CatalogItems
+        .SingleOrDefaultAsync(i => i.Id == productToUpdate.Id);
 
- //
+    if (catalogItem == null) return NotFound();
 
- public async Task<;IActionResult>
- UpdateProduct([FromBody]CatalogItem\
- productToUpdate)
+    bool raiseProductPriceChangedEvent = false;
 
- {
+    IntegrationEvent priceChangedEvent = null;
 
- var catalogItem =
+    if (catalogItem.Price != productToUpdate.Price)
+        raiseProductPriceChangedEvent = true;
 
- await _catalogContext.CatalogItems.SingleOrDefaultAsync(i => i.Id
- ==
+    if (raiseProductPriceChangedEvent) // Create event if price has changed
+    {
+        var oldPrice = catalogItem.Price;
+        priceChangedEvent = new ProductPriceChangedIntegrationEvent(catalogItem.Id,
+            productToUpdate.Price,
+            oldPrice);
+    }
 
- productToUpdate.Id);
+    // Update current product
+    catalogItem = productToUpdate;
+    // Achieving atomicity between original DB and the IntegrationEventLog
+    // with a local transaction
 
- if (catalogItem == null) return NotFound();
+    using (var transaction = _catalogContext.Database.BeginTransaction())
+    {
+        _catalogContext.CatalogItems.Update(catalogItem);
 
- bool raiseProductPriceChangedEvent = false;
+        await _catalogContext.SaveChangesAsync();
 
- IntegrationEvent priceChangedEvent = null;
+        // Save to EventLog only if product price changed
+        if(raiseProductPriceChangedEvent)
+            await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
+        transaction.Commit();
+   }
 
- if (catalogItem.Price != productToUpdate.Price)
+   // Publish to event bus only if product price changed
 
- raiseProductPriceChangedEvent = true;
+   if (raiseProductPriceChangedEvent)
+   {
+       _eventBus.Publish(priceChangedEvent);
+       integrationEventLogService.MarkEventAsPublishedAsync(
+           priceChangedEvent);
+   }
 
- if (raiseProductPriceChangedEvent) // Create event if price has
- changed
-
- {
-
- var oldPrice = catalogItem.Price;
-
- priceChangedEvent = new
- ProductPriceChangedIntegrationEvent(catalogItem.Id,
-
- productToUpdate.Price,
-
- oldPrice);
-
- }
-
- // Update current product
-
- catalogItem = productToUpdate;
-
- // Achieving atomicity between original DB and the
- IntegrationEventLog
-
- // with a local transaction
-
- using (var transaction =
- _catalogContext.Database.BeginTransaction())
-
- {
-
- _catalogContext.CatalogItems.Update(catalogItem);
-
- await _catalogContext.SaveChangesAsync();
-
- // Save to EventLog only if product price changed
-
- if(raiseProductPriceChangedEvent)
-
- await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
-
- transaction.Commit();
-
- }
-
- // Publish to event bus only if product price changed
-
- if (raiseProductPriceChangedEvent)
-
- {
-
- _eventBus.Publish(priceChangedEvent);
-
- integrationEventLogService.MarkEventAsPublishedAsync(
-
- priceChangedEvent);
-
- }
-
- return Ok();
-
- }
+   return Ok();
+}
 ```
 
 After the ProductPriceChangedIntegrationEvent integration event is created, the transaction that stores the original domain operation (update the catalog item) also includes the persistence of the event in the EventLog table. This makes it a single transaction, and you will always be able to check whether event messages were sent.
@@ -275,92 +209,51 @@ In addition to the event subscription logic, you need to implement the internal 
 
 An event handler first receives an event instance from the event bus. Then it locates the component to be processed related to that integration event, propagating and persisting the event as a change in state in the receiver microservice. For example, if a ProductPriceChanged event originates in the catalog microservice, it is handled in the basket microservice and changes the state in this receiver basket microservice as well, as shown in the following code.
 
-```
-  Namespace Microsoft.eShopOnContainers.Services.Basket.
-  
-  API.IntegrationEvents.EventHandling
-  
-  {
-  
-  public class ProductPriceChangedIntegrationEventHandler :
-  
-  IIntegrationEventHandler<;ProductPriceChangedIntegrationEvent>
-  
-  {
-  
-  private readonly IBasketRepository _repository;
-  
-  public ProductPriceChangedIntegrationEventHandler(
-  
-  IBasketRepository repository)
-  
-  {
-  
-  _repository = repository;
-  
-  }
-  
-  public async Task Handle(ProductPriceChangedIntegrationEvent @event)
-  
-  {
-  
-  var userIds = await _repository.GetUsers();
-  
-  foreach (var id in userIds)
-  
-  {
-  
-  var basket = await _repository.GetBasket(id);
-  
-  await UpdatePriceInBasketItems(@event.ProductId, @event.NewPrice,
-  
-  basket);
-  
-  }
-  
-  }
-  
-  private async Task UpdatePriceInBasketItems(int productId, decimal newPrice,
-  
-  CustomerBasket basket)
-  
-  {
-  
-  var itemsToUpdate = basket?.Items?.Where(x => int.Parse(x.ProductId) ==
-  
-  productId).ToList();
-  
-  if (itemsToUpdate != null)
-  
-  {
-  
-  foreach (var item in itemsToUpdate)
-  
-  {
-  
-  if(item.UnitPrice != newPrice)
-  
-  {
-  
-  var originalPrice = item.UnitPrice;
-  
-  item.UnitPrice = newPrice;
-  
-  item.OldUnitPrice = originalPrice;
-  
-  }
-  
-  }
-  
-  await _repository.UpdateBasket(basket);
-  
-  }
-  
-  }
-  
-  }
-  
-  }
+```csharp
+namespace Microsoft.eShopOnContainers.Services.Basket.API.IntegrationEvents.EventHandling
+{
+    public class ProductPriceChangedIntegrationEventHandler :
+        IIntegrationEventHandler<ProductPriceChangedIntegrationEvent>
+    {
+        private readonly IBasketRepository _repository;
+
+        public ProductPriceChangedIntegrationEventHandler(
+            IBasketRepository repository)
+        {
+            _repository = repository;
+        }
+
+        public async Task Handle(ProductPriceChangedIntegrationEvent @event)
+        {
+            var userIds = await _repository.GetUsers();
+            foreach (var id in userIds)
+            {
+                var basket = await _repository.GetBasket(id);
+                await UpdatePriceInBasketItems(@event.ProductId, @event.NewPrice, basket);
+            }
+        }
+
+        private async Task UpdatePriceInBasketItems(int productId, decimal newPrice,
+            CustomerBasket basket)
+        {
+            var itemsToUpdate = basket?.Items?.Where(x => int.Parse(x.ProductId) ==
+                productId).ToList();
+            if (itemsToUpdate != null)
+            {
+                foreach (var item in itemsToUpdate)
+                {
+                    if(item.UnitPrice != newPrice)
+                    {
+                        var originalPrice = item.UnitPrice;
+                        item.UnitPrice = newPrice;
+                        item.OldUnitPrice = originalPrice;
+                    }
+                }
+                await _repository.UpdateBasket(basket);
+            }
+        }
+    }
+}
 ```
 
 The event handler needs to verify whether the product exists in any of the basket instances. It also updates the item price for each related basket line item. Finally, it creates an alert to be displayed to the user about the price change, as shown in Figure 8-24.

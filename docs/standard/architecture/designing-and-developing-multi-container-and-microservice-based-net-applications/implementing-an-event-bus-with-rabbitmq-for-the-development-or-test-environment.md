@@ -20,14 +20,11 @@ The eShopOnContainers custom implementation of an event bus is basically a libra
 
 In the code, the EventBusRabbitMQ class implements the generic IEventBus interface. This is based on Dependency Injection so that you can swap from this dev/test version to a production version.
 
-```
-  public class EventBusRabbitMQ : IEventBus, IDisposable
-  
-  {
-  
-  // Implementation using RabbitMQ API
-  
-  //...
+```csharp
+public class EventBusRabbitMQ : IEventBus, IDisposable
+{
+    // Implementation using RabbitMQ API
+    //...
 ```
 
 The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. It has to handle the connection to the RabbitMQ server and provide code for publishing a message event to the queues. It also has to implement a dictionary of collections of integration event handlers for each event type; these event types can have a different instantiation and different subscriptions for each receiver microservice, as shown in Figure 8-21.
@@ -36,50 +33,30 @@ The RabbitMQ implementation of a sample dev/test event bus is boilerplate code. 
 
 The following code is part of the eShopOnContainers event bus implementation for RabbitMQ, so you usually do not need to code it unless you are making improvements. The code gets a connection and channel to RabbitMQ, creates a message, and then publishes the message into the queue.
 
-```
-  public class EventBusRabbitMQ : IEventBus, IDisposable
-  
-  {
-  
-  // Member objects and other methods ...
-  
-  // ...
-  
-  public void Publish(IntegrationEvent @event)
-  
-  {
-  
-  var eventName = @event.GetType().Name;
-  
-  var factory = new ConnectionFactory() { HostName = _connectionString };
-  
-  using (var connection = factory.CreateConnection())
-  
-  using (var channel = connection.CreateModel())
-  
-  {
-  
-  channel.ExchangeDeclare(exchange: _brokerName,
-  
-  type: "direct");
-  
-  string message = JsonConvert.SerializeObject(@event);
-  
-  var body = Encoding.UTF8.GetBytes(message);
-  
-  channel.BasicPublish(exchange: _brokerName,
-  
-  routingKey: eventName,
-  
-  basicProperties: null,
-  
-  body: body);
-  
-  }
-  
-  }
-  
-  }
+```csharp
+public class EventBusRabbitMQ : IEventBus, IDisposable
+{
+    // Member objects and other methods ...
+    // ...
+
+    public void Publish(IntegrationEvent @event)
+    {
+        var eventName = @event.GetType().Name;
+        var factory = new ConnectionFactory() { HostName = _connectionString };
+        using (var connection = factory.CreateConnection())
+        using (var channel = connection.CreateModel())
+        {
+            channel.ExchangeDeclare(exchange: _brokerName,
+                type: "direct");
+            string message = JsonConvert.SerializeObject(@event);
+            var body = Encoding.UTF8.GetBytes(message);
+            channel.BasicPublish(exchange: _brokerName,
+                routingKey: eventName,
+                basicProperties: null,
+                body: body);
+       }
+    }
+}
 ```
 
 The [actual code](https://github.com/dotnet-architecture/eShopOnContainers/blob/master/src/BuildingBlocks/EventBus/EventBusRabbitMQ/EventBusRabbitMQ.cs) of the Publish method in the eShopOnContainers application is improved by using a [Polly](https://github.com/App-vNext/Polly) retry policy, which retries the task a certain number of times in case the RabbitMQ container is not ready. This can occur when docker-compose is starting the containers; for example, the RabbitMQ container might start more slowly than the other containers.
@@ -90,54 +67,31 @@ As mentioned earlier, there are many possible configurations in RabbitMQ, so thi
 
 As with the publish code, the following code is a simplification of part of the event bus implementation for RabbitMQ. Again, you usually do not need to change it unless you are improving it.
 
-```
-  public class EventBusRabbitMQ : IEventBus, IDisposable
-  
-  {
-  
-  // Member objects and other methods ...
-  
-  // ...
-  
-  public void Subscribe<;T>(IIntegrationEventHandler<;T> handler)
-  
-  where T : IntegrationEvent
-  
-  {
-  
-  var eventName = typeof(T).Name;
-  
-  if (_handlers.ContainsKey(eventName))
-  
-  {
-  
-  _handlers[eventName].Add(handler);
-  
-  }
-  
-  else
-  
-  {
-  
-  var channel = GetChannel();
-  
-  channel.QueueBind(queue: _queueName,
-  
-  exchange: _brokerName,
-  
-  routingKey: eventName);
-  
-  _handlers.Add(eventName, new List<;IIntegrationEventHandler>());
-  
-  _handlers[eventName].Add(handler);
-  
-  _eventTypes.Add(typeof(T));
-  
-  }
-  
-  }
-  
-  }
+```csharp
+public class EventBusRabbitMQ : IEventBus, IDisposable
+{
+    // Member objects and other methods ...
+    // ...
+    public void Subscribe<T>(IIntegrationEventHandler<T> handler)
+        where T : IntegrationEvent
+    {
+        var eventName = typeof(T).Name;
+        if (_handlers.ContainsKey(eventName))
+        {
+            _handlers[eventName].Add(handler);
+        }
+        else
+        {
+            var channel = GetChannel();
+            channel.QueueBind(queue: _queueName,
+                exchange: _brokerName,
+                routingKey: eventName);
+            _handlers.Add(eventName, new List<;IIntegrationEventHandler>());
+            _handlers[eventName].Add(handler);
+            _eventTypes.Add(typeof(T));
+        }
+    }
+}
 ```
 
 Each event type has a related channel to get events from RabbitMQ. You can then have as many event handlers per channel and event type as needed.

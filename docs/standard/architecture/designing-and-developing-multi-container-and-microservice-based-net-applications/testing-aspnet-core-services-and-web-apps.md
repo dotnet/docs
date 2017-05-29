@@ -32,36 +32,22 @@ Unit tests are implemented based on test frameworks like xUnit.net, MSTest, Moq,
 
 When you write a unit test for a Web API controller, you instantiate the controller class directly using the new keyword in C\#, so that the test will run as fast as possible. The following example shows how to do this when using [XUnit](https://xunit.github.io/) as the Test framework.
 
-```
-  [Fact]
-  
-  public void Add_new_Order_raises_new_event()
-  
-  {
-  
-  // Arrange
-  
-  var street = " FakeStreet ";
-  
-  var city = "FakeCity";
-  
-  // Other variables omitted for brevity ...
-  
-  // Act
-  
-  var fakeOrder = new Order(new Address(street, city, state, country, zipcode),
-  
-  cardTypeId, cardNumber,
-  
-  cardSecurityNumber, cardHolderName,
-  
-  cardExpiration);
-  
-  // Assert
-  
-  Assert.Equal(fakeOrder.DomainEvents.Count, expectedResult);
-  
-  }
+```csharp
+[Fact]
+public void Add_new_Order_raises_new_event()
+{
+    // Arrange
+    var street = " FakeStreet ";
+    var city = "FakeCity";
+    // Other variables omitted for brevity ...
+    // Act
+    var fakeOrder = new Order(new Address(street, city, state, country, zipcode),
+        cardTypeId, cardNumber,
+        cardSecurityNumber, cardHolderName,
+        cardExpiration);
+    // Assert
+    Assert.Equal(fakeOrder.DomainEvents.Count, expectedResult);
+}
 ```
 
 ### Implementing integration and functional tests for each microservice
@@ -78,52 +64,31 @@ ASP.NET Core includes a built-in test web host that can be used to handle HTTP r
 
 As you can see in the following code, when you create integration tests for ASP.NET Core controllers, you instantiate the controllers through the test host. This is comparable to an HTTP request, but it runs faster.
 
-```
-  public class PrimeWebDefaultRequestShould
-  
-  {
-  
-  private readonly TestServer _server;
-  
-  private readonly HttpClient _client;
-  
-  public PrimeWebDefaultRequestShould()
-  
-  {
-  
-  // Arrange
-  
-  _server = new TestServer(new WebHostBuilder()
-  
-  .UseStartup<;Startup>());
-  
-  _client = _server.CreateClient();
-  
-  }
-  
-  [Fact]
-  
-  public async Task ReturnHelloWorld()
-  
-  {
-  
-  // Act
-  
-  var response = await _client.GetAsync("/");
-  
-  response.EnsureSuccessStatusCode();
-  
-  var responseString = await response.Content.ReadAsStringAsync();
-  
-  // Assert
-  
-  Assert.Equal("Hello World!",
-  
-  responseString);
-  
-  }
-  
-  }
+```csharp
+public class PrimeWebDefaultRequestShould
+{
+    private readonly TestServer _server;
+    private readonly HttpClient _client;
+
+    public PrimeWebDefaultRequestShould()
+    {
+        // Arrange
+        _server = new TestServer(new WebHostBuilder()
+           .UseStartup<Startup>());
+           _client = _server.CreateClient();
+    }
+
+    [Fact]
+    public async Task ReturnHelloWorld()
+    {
+        // Act
+        var response = await _client.GetAsync("/");
+        response.EnsureSuccessStatusCode();
+        var responseString = await response.Content.ReadAsStringAsync();
+        // Assert
+        Assert.Equal("Hello World!", responseString);
+    }
+}
 ```
 
 #### Additional resources

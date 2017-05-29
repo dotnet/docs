@@ -66,56 +66,38 @@ You can install the NuGet package for the database provider you want to use, in 
 
 With EF Core, data access is performed by using a model. A model is made up of entity classes and a derived context that represents a session with the database, allowing you to query and save data. You can generate a model from an existing database, manually code a model to match your database, or use EF migrations to create a database from your model (and evolve it as your model changes over time). For the catalog microservice we are using the last approach. You can see an example of the CatalogItem entity class in the following code example, which is a simple Plain Old CLR Object ([POCO](https://en.wikipedia.org/wiki/Plain_Old_CLR_Object)) entity class.
 
-```
-  public class CatalogItem
-  
-  {
-  
-  public int Id { get; set; }
-  
-  public string Name { get; set; }
-  
-  public string Description { get; set; }
-  
-  public decimal Price { get; set; }
-  
-  public string PictureUri { get; set; }
-  
-  public int CatalogTypeId { get; set; }
-  
-  public CatalogType CatalogType { get; set; }
-  
-  public int CatalogBrandId { get; set; }
-  
-  public CatalogBrand CatalogBrand { get; set; }
-  
-  public CatalogItem() { }
-  
-  }
+```csharp
+public class CatalogItem
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public string Description { get; set; }
+    public decimal Price { get; set; }
+    public string PictureUri { get; set; }
+    public int CatalogTypeId { get; set; }
+    public CatalogType CatalogType { get; set; }
+    public int CatalogBrandId { get; set; }
+    public CatalogBrand CatalogBrand { get; set; }
+    public CatalogItem() { }
+}
 ```
 
 You also need a DbContext that represents a session with the database. For the catalog microservice, the CatalogContext class derives from the DbContext base class, as shown in the following example:
 
-```
-  public class CatalogContext : DbContext
-  
-  {
-  
-  public CatalogContext(DbContextOptions<;CatalogContext> options) : base(options)
-  
-  {
-  
-  }
-  
-  public DbSet<;CatalogItem> CatalogItems { get; set; }
-  
-  public DbSet<;CatalogBrand> CatalogBrands { get; set; }
-  
-  public DbSet<;CatalogType> CatalogTypes { get; set; }
-  
-  // Additional code ...
-  
-  }
+```csharp
+public class CatalogContext : DbContext
+{
+    public CatalogContext(DbContextOptions<;CatalogContext> options) : base(options)
+    {
+    }
+
+    public DbSet<;CatalogItem> CatalogItems { get; set; }
+    public DbSet<;CatalogBrand> CatalogBrands { get; set; }
+    public DbSet<;CatalogType> CatalogTypes { get; set; }
+
+    // Additional code ...
+
+}
 ```
 
 You can have additional code in the DbContext implementation. For example, in the sample application, we have an OnModelCreating method in the CatalogContext class that automatically populates the sample data the first time it tries to access the database. This method is useful for demo data. You can also use the OnModelCreating method to customize object/database entity mappings with many other [EF extensibility points](https://blogs.msdn.microsoft.com/dotnet/2016/09/29/implementing-seeding-custom-conventions-and-interceptors-in-ef-core-1-0/).
@@ -126,98 +108,57 @@ You can see further details about OnModelCreating in the [Implementing the infra
 
 Instances of your entity classes are typically retrieved from the database using Language Integrated Query (LINQ), as shown in the following example:
 
-```
-  [Route("api/v1/[controller]")]
-  
-  public class CatalogController : ControllerBase
-  
-  {
-  
-  private readonly CatalogContext _catalogContext;
-  
-  private readonly CatalogSettings _settings;
-  
-  private readonly ICatalogIntegrationEventService
-  
-  _catalogIntegrationEventService;
-  
-  public CatalogController(CatalogContext context,
-  
-  IOptionsSnapshot<;CatalogSettings> settings,
-  
-  ICatalogIntegrationEventService
-  
-  catalogIntegrationEventService)
-  
-  {
-  
-  _catalogContext = context ?? throw new
-  
-  ArgumentNullException(nameof(context));
-  
-  _catalogIntegrationEventService = catalogIntegrationEventService ??
-  
-  throw new ArgumentNullException(nameof(catalogIntegrationEventService));
-  
-  _settings = settings.Value;
-  
-  ((DbContext)context).ChangeTracker.QueryTrackingBehavior =
-  
-  QueryTrackingBehavior.NoTracking;
-  
-  }
-  
-  // GET api/v1/[controller]/items[?pageSize=3&pageIndex=10]
-  
-  [HttpGet]
-  
-  [Route("[action]")]
-  
-  public async Task<;IActionResult> Items([FromQuery]int pageSize = 10,
-  
-  [FromQuery]int pageIndex = 0)
-  
-  {
-  
-  var totalItems = await _catalogContext.CatalogItems
-  
-  .LongCountAsync();
-  
-  var itemsOnPage = await _catalogContext.CatalogItems
-  
-  .OrderBy(c => c.Name)
-  
-  .Skip(pageSize * pageIndex)
-  
-  .Take(pageSize)
-  
-  .ToListAsync();
-  
-  itemsOnPage = ChangeUriPlaceholder(itemsOnPage);
-  
-  var model = new PaginatedItemsViewModel<;CatalogItem>(
-  
-  pageIndex, pageSize, totalItems, itemsOnPage);
-  
-  return Ok(model);
-  
-  } //...
-  
-  }
+```csharp
+[Route("api/v1/[controller]")]
+public class CatalogController : ControllerBase
+{
+    private readonly CatalogContext _catalogContext;
+    private readonly CatalogSettings _settings;
+    private readonly ICatalogIntegrationEventService _catalogIntegrationEventService;
+
+    public CatalogController(CatalogContext context,
+        IOptionsSnapshot<;CatalogSettings> settings,
+        ICatalogIntegrationEventService catalogIntegrationEventService)
+    {
+        _catalogContext = context ?? throw new ArgumentNullException(nameof(context));
+        _catalogIntegrationEventService = catalogIntegrationEventService ??
+           throw new ArgumentNullException(nameof(catalogIntegrationEventService));
+        _settings = settings.Value;
+        ((DbContext)context).ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
+    }
+
+    // GET api/v1/[controller]/items[?pageSize=3&pageIndex=10]
+    [HttpGet]
+    [Route("[action]")]
+    public async Task<;IActionResult> Items([FromQuery]int pageSize = 10,
+    [FromQuery]int pageIndex = 0)
+    {
+        var totalItems = await _catalogContext.CatalogItems
+            .LongCountAsync();
+        var itemsOnPage = await _catalogContext.CatalogItems
+            .OrderBy(c => c.Name)
+            .Skip(pageSize * pageIndex)
+            .Take(pageSize)
+            .ToListAsync();
+        itemsOnPage = ChangeUriPlaceholder(itemsOnPage);
+        var model = new PaginatedItemsViewModel<;CatalogItem>(
+            pageIndex, pageSize, totalItems, itemsOnPage);
+        return Ok(model);
+    } 
+
+    //...
+}
 ```
 
 ##### Saving data
 
 Data is created, deleted, and modified in the database using instances of your entity classes. You could add code like the following hard-coded example (mock data, in this case) to your Web API controllers.
 
-```
-  var catalogItem = new CatalogItem() {CatalogTypeId=2, CatalogBrandId=2,
-  
-  Name="Roslyn T-Shirt", Price = 12};
-  
-  _context.Catalog.Add(catalogItem);
-  
-  _context.SaveChanges();
+```csharp
+var catalogItem = new CatalogItem() {CatalogTypeId=2, CatalogBrandId=2,
+   Name="Roslyn T-Shirt", Price = 12};
+_context.Catalog.Add(catalogItem);
+_context.SaveChanges();
 ```
 
 ##### Dependency Injection in ASP.NET Core and Web API controllers
@@ -226,58 +167,38 @@ In ASP.NET Core you can use Dependency Injection (DI) out of the box. You do not
 
 An important configuration to set up in the Web API project is the DbContext class registration into the service’s IoC container. You typically do so in the Startup class by calling the services.AddDbContext method inside the ConfigureServices method, as shown in the following example:
 
-```
-  public void ConfigureServices(IServiceCollection services)
-  
-  {
-  
-  services.AddDbContext<;CatalogContext>(options =>
-  
-  {
-  
-  options.UseSqlServer(Configuration["ConnectionString"],
-  
-  sqlServerOptionsAction: sqlOptions =>
-  
-  {
-  
-  sqlOptions.
-  
-  MigrationsAssembly(
-  
-  typeof(Startup).
-  
-  GetTypeInfo().
-  
-  Assembly.
-  
-  GetName().Name);
-  
-  //Configuring Connection Resiliency:
-  
-  sqlOptions.
-  
-  EnableRetryOnFailure(maxRetryCount: 5,
-  
-  maxRetryDelay: TimeSpan.FromSeconds(30),
-  
-  errorNumbersToAdd: null);
-  
-  });
-  
-  // Changing default behavior when client evaluation occurs to throw.
-  
-  // Default in EFCore would be to log warning when client evaluation is done.
-  
-  options.ConfigureWarnings(warnings => warnings.Throw(
-  
-  RelationalEventId.QueryClientEvaluationWarning));
-  
-  });
-  
+```csharp
+public void ConfigureServices(IServiceCollection services)
+{
+    services.AddDbContext<;CatalogContext>(options =>
+    {
+        options.UseSqlServer(Configuration["ConnectionString"],
+        sqlServerOptionsAction: sqlOptions =>
+        {
+           sqlOptions.
+               MigrationsAssembly(
+               typeof(Startup).
+               GetTypeInfo().
+               Assembly.
+               GetName().Name);
+
+           //Configuring Connection Resiliency:
+           sqlOptions.
+               EnableRetryOnFailure(maxRetryCount: 5,
+               maxRetryDelay: TimeSpan.FromSeconds(30),
+               errorNumbersToAdd: null);
+
+       });
+
+       // Changing default behavior when client evaluation occurs to throw.
+       // Default in EFCore would be to log warning when client evaluation is done.
+       options.ConfigureWarnings(warnings => warnings.Throw(
+           RelationalEventId.QueryClientEvaluationWarning));
+   });
+
   //...
-  
-  }
+
+}
 ```
 
 ### Additional resources
@@ -292,62 +213,37 @@ An important configuration to set up in the Web API project is the DbContext cla
 
 You can use the ASP.NET Core settings and add a ConnectionString property to your settings.json file as shown in the following example:
 
-```
-  {
-  
-  "ConnectionString": "Server=tcp:127.0.0.1,5433;Initial Catalog=
-  
-  Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=Pass@word",
-  
-  "ExternalCatalogBaseUrl": "http://localhost:5101",
-  
-  "Logging": {
-  
-  "IncludeScopes": false,
-  
-  "LogLevel": {
-  
-  "Default": "Debug",
-  
-  "System": "Information",
-  
-  "Microsoft": "Information"
-  
-  }
-  
-  }
-  
-  }
+```csharp
+{
+    "ConnectionString": "Server=tcp:127.0.0.1,5433;Initial Catalog=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=Pass@word",
+    "ExternalCatalogBaseUrl": "http://localhost:5101",
+    "Logging": {
+        "IncludeScopes": false,
+        "LogLevel": {
+            "Default": "Debug",
+            "System": "Information",
+            "Microsoft": "Information"
+        }
+    }
+}
 ```
 
 The settings.json file can have default values for the ConnectionString property or for any other property. However, those properties will be overridden by the values of environment variables that you specify in the docker-compose.override.yml file.
 
 From your docker-compose.yml or docker-compose.override.yml files, you can initialize those environment variables so that Docker will set them up as OS environment variables for you, as shown in the following docker-compose.override.yml file (the connection string and other lines wrap in this example, but it would not wrap in your own file).
 
-```
-  # docker-compose.override.yml
-  
-  #
-  
-  catalog.api:
-  
+```yml
+# docker-compose.override.yml
+
+#
+catalog.api:
   environment:
-  
-  - ConnectionString=Server=
-  
-  sql.data;Database=Microsoft.eShopOnContainers.Services.CatalogDb;
-  
-  User Id=sa;Password=Pass@word
-  
-  - ExternalCatalogBaseUrl=http://10.0.75.1:5101
-  
-  #- ExternalCatalogBaseUrl=
-  
-  http://dockerhoststaging.westus.cloudapp.azure.com:5101
+    - ConnectionString=Server=sql.data;Database=Microsoft.eShopOnContainers.Services.CatalogDb;User Id=sa;Password=Pass@word
+    - ExternalCatalogBaseUrl=http://10.0.75.1:5101
+    #- ExternalCatalogBaseUrl=http://dockerhoststaging.westus.cloudapp.azure.com:5101
   
   ports:
-  
-  - "5101:5101"
+    - "5101:5101"
 ```
 
 The docker-compose.yml files at the solution level are not only more flexible than configuration files at the project or microservice level, but also more secure. Consider that the Docker images that you build per microservice do not contain the docker-compose.yml files, only binary files and configuration files for each microservice, including the Dockerfile. But the docker-compose.yml file is not deployed along with your application; it is used only at deployment time. Therefore, placing environment variables values in those docker-compose.yml files (even without encrypting the values) is more secure than placing those values in regular .NET configuration files that are deployed with your code.
@@ -374,14 +270,11 @@ With URI versioning, as in the eShopOnContainers sample application, each time y
 
 As shown in the following code example, the version can be set by using the Route attribute in the Web API, which makes the version explicit in the URI (v1 in this case).
 
-```
-  [Route("api/v1/[controller]")]
-  
-  public class CatalogController : ControllerBase
-  
-  {
-  
-  // Implementation ...
+```csharp
+[Route("api/v1/[controller]")]
+public class CatalogController : ControllerBase
+{
+    // Implementation ...
 ```
 
 This versioning mechanism is simple and depends on the server routing the request to the appropriate endpoint. However, for a more sophisticated versioning and the best method when using REST, you should use hypermedia and implement [HATEOAS (Hypertext as the Engine of Application State)](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#using-the-hateoas-approach-to-enable-navigation-to-related-resources).
@@ -393,7 +286,7 @@ This versioning mechanism is simple and depends on the server routing the reques
 
 -   **Versioning a RESTful web API**
 
-    [*https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design\#versioning-a-restful-web-api*](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design%23versioning-a-restful-web-api)
+    [*https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#versioning-a-restful-web-api*](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#versioning-a-restful-web-api)
 
 -   **Roy Fielding. Versioning, Hypermedia, and REST**
     [*https://www.infoq.com/articles/roy-fielding-on-versioning*](https://www.infoq.com/articles/roy-fielding-on-versioning)
@@ -450,73 +343,45 @@ Note that for .NET Core Web API projects, you need to use [Swashbuckle.AspNetCor
 
 After you have installed these NuGet packages in your Web API project, you need to configure Swagger in the Startup class, as in the following code:
 
-```
-  public class Startup
-  
-  {
-  
-  public IConfigurationRoot Configuration { get; }
-  
-  // Other startup code...
-  
-  public void ConfigureServices(IServiceCollection services)
-  
-  {
-  
-  // Other ConfigureServices() code...
-  
-  services.AddSwaggerGen();
-  
-  services.ConfigureSwaggerGen(options =>
-  
-  {
-  
-  options.DescribeAllEnumsAsStrings();
-  
-  options.SingleApiVersion(new Swashbuckle.Swagger.Model.Info()
-  
-  {
-  
-  Title = "eShopOnContainers - Catalog HTTP API",
-  
-  Version = "v1",
-  
-  Description = "The Catalog Microservice HTTP API",
-  
-  TermsOfService = "eShopOnContainers terms of service"
-  
-  });
-  
-  });
-  
-  // Other ConfigureServices() code...
-  
-  }
-  
-  public void Configure(IApplicationBuilder app,
-  
-  IHostingEnvironment env,
-  
-  ILoggerFactory loggerFactory)
-  
-  {
-  
-  // Other Configure() code...
-  
-  // ...
-  
-  app.UseSwagger()
-  
-  .UseSwaggerUi();
-  
-  }
-  
-  }
+```csharp
+public class Startup
+{
+    public IConfigurationRoot Configuration { get; }
+    // Other startup code...
+
+    public void ConfigureServices(IServiceCollection services)
+    {
+        // Other ConfigureServices() code...
+        services.AddSwaggerGen();
+        services.ConfigureSwaggerGen(options =>
+        {
+            options.DescribeAllEnumsAsStrings();
+            options.SingleApiVersion(new Swashbuckle.Swagger.Model.Info()
+            {
+                Title = "eShopOnContainers - Catalog HTTP API",
+                Version = "v1",
+                Description = "The Catalog Microservice HTTP API",
+                TermsOfService = "eShopOnContainers terms of service"
+            });
+        });
+        // Other ConfigureServices() code...
+    }
+
+    public void Configure(IApplicationBuilder app,
+        IHostingEnvironment env,
+        ILoggerFactory loggerFactory)
+    {
+        // Other Configure() code...
+        // ...
+        app.UseSwagger()
+            .UseSwaggerUi();
+    }
+}
 ```
 
 Once this is done, you can start your application and browse the following Swagger JSON and UI endpoints using URLs like these:
 
-```
+```json
   http://<;your-root-url>/swagger/v1/swagger.json
   
   http://<;your-root-url>/swagger/ui

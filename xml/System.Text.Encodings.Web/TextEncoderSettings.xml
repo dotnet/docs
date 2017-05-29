@@ -78,6 +78,7 @@
         <param name="allowedRanges">The allowed character ranges.</param>
         <summary>Instantiates a filter where only the character ranges specified by <paramref name="allowedRanges"/> are allowed by the filter.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="allowedRanges"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllowCharacter">
@@ -130,6 +131,7 @@
         <param name="characters">The allowed characters.</param>
         <summary>Allows all characters specified by <paramref name="characters"/> through the filter.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="characters"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllowCodePoints">
@@ -153,6 +155,7 @@
         <param name="codePoints">The allowed code points.</param>
         <summary>Allows all code points specified by <paramref name="codePoints"/>.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="codePoints"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllowRange">
@@ -176,6 +179,7 @@
         <param name="range">The range of characters to be allowed.</param>
         <summary>Allows all characters specified by <paramref name="range"/> through the filter.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="range"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="AllowRanges">
@@ -205,6 +209,7 @@
         <param name="ranges">The ranges of characters to be allowed.</param>
         <summary>Allows all characters specified by <paramref name="ranges"/> through the filter.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="ranges"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -277,6 +282,7 @@
         <param name="characters">The disallowed characters.</param>
         <summary>Disallows all characters specified by <paramref name="characters"/> through the filter.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="characters"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ForbidRange">
@@ -300,6 +306,7 @@
         <param name="range">The range of characters to be disallowed.</param>
         <summary>Disallows all characters specified by <paramref name="range"/> through the filter.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="range"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="ForbidRanges">
@@ -329,6 +336,7 @@
         <param name="ranges">The ranges of characters to be disallowed.</param>
         <summary>Disallows all characters specified by <paramref name="ranges"/> through the filter.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="ranges"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetAllowedCodePoints">

@@ -56,6 +56,7 @@
         <summary>Creates a new instance of the HtmlEncoder class with the specified settings.</summary>
         <returns>A new instance of the <see cref="T:System.Text.Encodings.Web.HtmlEncoder"/> class.</returns>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="settings"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -89,9 +90,9 @@
 
 ## Remarks  
  Some characters in `allowedRanges` might still be encoded; that is, this parameter indicates what ranges the encoder is allowed to not encode, not what characters it must not encode.  
- ]]></format> 
-        
+ ]]></format>
         </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="allowedRanges"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Default">

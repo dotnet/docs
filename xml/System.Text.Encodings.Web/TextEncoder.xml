@@ -62,6 +62,8 @@
         <summary>Encodes the supplied string and returns the encoded text as a new string.</summary>
         <returns>The encoded string.</returns>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value"/> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)"/> method failed. The encoder does not implement <see cref="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter"> correctly.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -116,6 +118,11 @@
         <param name="characterCount">The number of characters in the array to encode.</param>
         <summary>Encodes characters from an array and writes them to a <see cref="T:System.IO.TextWriter"/> object.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="output"/> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)"/> method failed. The encoder does not implement <see cref="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter"> correctly.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value"/> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex"/> is out of range.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="characterCount"/> is out of range.</exception>
       </Docs>
     </Member>
     <Member MemberName="Encode">
@@ -145,6 +152,11 @@
         <param name="characterCount">The number of characters in the substring.</param>
         <summary>Encodes a substring and writes it to a <see cref="T:System.IO.TextWriter"/> object.</summary>
         <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="output"/> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentException">The <see cref="M:System.Text.Encodings.Web.TextEncoder.TryEncodeUnicodeScalar(System.Int32,System.Char*,System.Int32,System.Int32@)"/> method failed. The encoder does not implement <see cref="P:System.Text.Encodings.Web.TextEncoder.MaxOutputCharactersPerInputCharacter"> correctly.</exception>
+        <exception cref="T:System.ArgumentNullException"><paramref name="value"/> is <see langword="null" />.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="startIndex"/> is out of range.</exception>
+        <exception cref="T:System.ArgumentOutOfRangeException"><paramref name="characterCount"/> is out of range.</exception>
       </Docs>
     </Member>
     <Member MemberName="FindFirstCharacterToEncode">
@@ -207,7 +219,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum number of characters that this encoder can generate for each input character.</summary>
+        <summary>Gets the maximum number of characters that this encoder can generate for each input code point.</summary>
         <value>The maximum number of characters.</value>
         <remarks></remarks>
       </Docs>
@@ -251,7 +263,7 @@
         <format type="text/markdown"><![CDATA[ 
 
 ## Remarks  
- This method is seldom called directly. One of the <xref:System.Text.Encodings.Web.TextEncoder.Encode> overloads should be used instead. Implementations of the <xref:System.Text.Encodings.Web.TextEncoder> class must be thread-safe and stateless.  
+ This method is seldom called directly. One of the <xref:System.Text.Encodings.Web.TextEncoder.Encode%20> overloads should be used instead. Implementations of the <xref:System.Text.Encodings.Web.TextEncoder> class must be thread-safe and stateless.  
  ]]></format>        
         </remarks>
       </Docs>

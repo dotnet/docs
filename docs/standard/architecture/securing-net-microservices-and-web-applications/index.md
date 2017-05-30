@@ -30,16 +30,12 @@ The primary mechanism in ASP.NET Core for identifying an application’s users i
 
 The following code is taken from the ASP.NET Core Web Application project template with individual user account authentication selected. It shows how to configure ASP.NET Core Identity using EntityFramework.Core in the Startup.ConfigureServices method.
 
-```
-  services.AddDbContext<;ApplicationDbContext>(options =>
-  
-  options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-  
-  services.AddIdentity<;ApplicationUser, IdentityRole>()
-  
-  .AddEntityFrameworkStores<;ApplicationDbContext>()
-  
-  .AddDefaultTokenProviders();
+```csharp
+services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+    services.AddIdentity<ApplicationUser, IdentityRole>()
+        .AddEntityFrameworkStores<ApplicationDbContext>()
+        .AddDefaultTokenProviders();
 ```
 
 Once ASP.NET Core Identity is configured, you enable it by calling app.UseIdentity in the service’s Startup.Configure method.
@@ -76,74 +72,45 @@ In all cases, the middleware is registered with a call to a registration method 
 
 Once the middleware is registered in Startup.Configure, you can prompt users to log in from any controller action. To do this, you create an AuthenticationProperties object that includes the authentication provider’s name and a redirect URL. You then return a Challenge response that passes the AuthenticationProperties object. The following code shows an example of this.
 
-```
-  var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider,
-  
-  redirectUrl);
-  
-  return Challenge(properties, provider);
+```csharp
+var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider,
+    redirectUrl);
+return Challenge(properties, provider);
 ```
 
 The redirectUrl parameter includes the URL that the external provider should redirect to once the user has authenticated. The URL should represent an action that will sign the user in based on external identity information, as in the following simplified example:
 
-```
-  // Sign in the user with this external login provider if the user
-  
-  // already has a login.
-  
-  var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false);
-  
-  if (result.Succeeded)
-  
-  {
-  
-  return RedirectToLocal(returnUrl);
-  
-  }
-  
-  else
-  
-  {
-  
-  ApplicationUser newUser = new ApplicationUser
-  
-  {
-  
-  // The user object can be constructed with claims from the
-  
-  // external authentication provider, combined with information
-  
-  // supplied by the user after they have authenticated with
-  
-  // the external provider.
-  
-  UserName = info.Principal.FindFirstValue(ClaimTypes.Name),
-  
-  Email = info.Principal.FindFirstValue(ClaimTypes.Email)
-  
-  };
-  
-  var identityResult = await _userManager.CreateAsync(newUser);
-  
-  if (identityResult.Succeeded)
-  
-  {
-  
-  identityResult = await _userManager.AddLoginAsync(newUser, info);
-  
-  if (identityResult.Succeeded)
-  
-  {
-  
-  await _signInManager.SignInAsync(newUser, isPersistent: false);
-  
-  }
-  
-  return RedirectToLocal(returnUrl);
-  
-  }
-  
-  }
+```csharp
+// Sign in the user with this external login provider if the user
+// already has a login.
+var result = await _signInManager.ExternalLoginSignInAsync(info.LoginProvider, info.ProviderKey, isPersistent: false);
+
+if (result.Succeeded)
+{
+    return RedirectToLocal(returnUrl);
+}
+else
+{
+    ApplicationUser newUser = new ApplicationUser
+    {
+        // The user object can be constructed with claims from the
+        // external authentication provider, combined with information
+        // supplied by the user after they have authenticated with
+        // the external provider.
+        UserName = info.Principal.FindFirstValue(ClaimTypes.Name),
+        Email = info.Principal.FindFirstValue(ClaimTypes.Email)
+    };
+    var identityResult = await _userManager.CreateAsync(newUser);
+    if (identityResult.Succeeded)
+    {
+        identityResult = await _userManager.AddLoginAsync(newUser, info);
+        if (identityResult.Succeeded)
+        {
+            await _signInManager.SignInAsync(newUser, isPersistent: false);
+        }
+        return RedirectToLocal(returnUrl);
+    }
+}
 ```
 
 If you choose the **Individual User Account** authentication option when you create the ASP.NET Code web application project in Visual Studio, all the code necessary to sign in with an external provider is already in the project, as shown in Figure 11-3.
@@ -166,24 +133,16 @@ For example, in an ASP.NET Core Web API that exposes RESTful endpoints that migh
 
 If user information is stored in Azure Active Directory or another identity solution that supports OpenID Connect or OAuth 2.0, you can use the Microsoft.AspNetCore.Authentication.OpenIdConnect package to authenticate using the OpenID Connect workflow. For example, to [authenticate against Azure Active Directory](https://azure.microsoft.com/en-us/resources/samples/active-directory-dotnet-webapp-openidconnect-aspnetcore/), an ASP.NET Core web application can use middleware from that package as shown in the following example:
 
-```
-  // Configure the OWIN pipeline to use OpenID Connect auth
-  
-  app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions
-  
-  {
-  
-  ClientId = Configuration["AzureAD:ClientId"],
-  
-  Authority = String.Format(Configuration["AzureAd:AadInstance"],
-  
-  Configuration["AzureAd:Tenant"]),
-  
-  ResponseType = OpenIdConnectResponseType.IdToken,
-  
-  PostLogoutRedirectUri = Configuration["AzureAd:PostLogoutRedirectUri"]
-  
-  });
+```csharp
+// Configure the OWIN pipeline to use OpenID Connect auth
+app.UseOpenIdConnectAuthentication(new OpenIdConnectOptions
+{
+    ClientId = Configuration["AzureAD:ClientId"],
+    Authority = String.Format(Configuration["AzureAd:AadInstance"],
+    Configuration["AzureAd:Tenant"]),
+    ResponseType = OpenIdConnectResponseType.IdToken,
+    PostLogoutRedirectUri = Configuration["AzureAd:PostLogoutRedirectUri"]
+});
 ```
 
 The configuration values are Azure Active Directory values that are created when your application is [registered as an Azure AD client](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-authentication-scenarios#basics-of-registering-an-application-in-azure-ad). A single client ID can be shared among multiple microservices in an application if they all need to authenticate users authenticated via Azure Active Directory.
@@ -214,7 +173,7 @@ If you prefer to issue security tokens for local ASP.NET Core Identity users rat
 
 <!-- -->
 
--   The [clients](https://identityserver4.readthedocs.io/en/release/configuration/clients.html) that will be connecting in order to request tokens.
+-   The [clients](https://identityserver4.readthedocs.io/en/release/topics/clients.html) that will be connecting in order to request tokens.
 
 -   The storage mechanism for user information, such as [ASP.NET Core Identity](https://identityserver4.readthedocs.io/en/release/quickstarts/6_aspnet_identity.html) or an alternative.
 
@@ -222,18 +181,13 @@ When you specify clients and resources for IdentityServer4 to use, you can pass 
 
 A sample configuration for IdentityServer4 to use in-memory resources and clients provided by a custom IClientStore type might look like the following example:
 
-```
-  // Add IdentityServer services
-  
-  services.AddSingleton<;IClientStore, CustomClientStore>();
-  
-  services.AddIdentityServer()
-  
-  .AddSigningCredential("CN=sts")
-  
-  .AddInMemoryApiResources(MyApiResourceProvider.GetAllResources())
-  
-  .AddAspNetIdentity<;ApplicationUser>();
+```csharp
+// Add IdentityServer services
+services.AddSingleton<IClientStore, CustomClientStore>();
+services.AddIdentityServer()
+    .AddSigningCredential("CN=sts")
+    .AddInMemoryApiResources(MyApiResourceProvider.GetAllResources())
+    .AddAspNetIdentity<ApplicationUser>();
 ```
 
 ## Consuming security tokens
@@ -242,18 +196,13 @@ Authenticating against an OpenID Connect endpoint or issuing your own security t
 
 For that scenario, authentication middleware that handles JWT tokens is available in the Microsoft.AspNetCore.Authentication.JwtBearer package. JWT stands for "[JSON Web Token](https://tools.ietf.org/html/rfc7519)" and is a common security token format (defined by RFC 7519) for communicating security claims. A simple example of how to use middleware to consume such tokens might look like the following example. This code must precede calls to ASP.NET Core MVC middleware (app.UseMvc).
 
-```
-  app.UseJwtBearerAuthentication(new JwtBearerOptions()
-  
-  {
-  
-  Audience = "http://localhost:5001/",
-  
-  Authority = "http://localhost:5000/",
-  
-  AutomaticAuthenticate = true
-  
-  });
+```csharp
+app.UseJwtBearerAuthentication(new JwtBearerOptions()
+{
+    Audience = "http://localhost:5001/",
+    Authority = "http://localhost:5000/",
+    AutomaticAuthenticate = true
+});
 ```
 
 The parameters in this usage are:

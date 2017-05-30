@@ -20,20 +20,14 @@ One way to keep secrets out of source code is for developers to set string-based
 
 For example, setting an environment variable Logging:LogLevel:Default to Debug would be equivalent to a configuration value from the following JSON file:
 
-```
-  {
-  
-  "Logging": {
-  
-  "LogLevel": {
-  
-  "Default": "Debug"
-  
-  }
-  
-  }
-  
-  }
+```json
+{
+    "Logging": {
+        "LogLevel": {
+            "Default": "Debug"
+        }
+    }
+}
 ```
 
 To access these values from environment variables, the application just needs to call AddEnvironmentVariables on its ConfigurationBuilder when constructing an IConfigurationRoot object.
@@ -46,12 +40,10 @@ The ASP.NET Core [Secret Manager](https://docs.microsoft.com/en-us/aspnet/core/s
 
 Secrets set by the Secret Manager tool are organized by the UserSecretsId property of the project that is using the secrets. Therefore, you must be sure to set the UserSecretsId property in your project file (as shown in the snippet below). The actual string used as the ID is not important as long as it is unique in the project.
 
-```
-  <;PropertyGroup>
-  
-  <;UserSecretsId>UniqueIdentifyingString<;/UserSecretsId>
-  
-  <;/PropertyGroup>
+```xml
+<PropertyGroup>
+    <UserSecretsId>UniqueIdentifyingString</UserSecretsId>
+</PropertyGroup>
 ```
 
 Using secrets stored with Secret Manager in an application is accomplished by calling AddUserSecrets&lt;T&gt; on the ConfigurationBuilder instance to include secrets for the application in its configuration. The generic parameter T should be a type from the assembly that the UserSecretId was applied to. Usually using AddUserSecrets&lt;Startup&gt; is fine.

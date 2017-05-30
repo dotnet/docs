@@ -14,24 +14,18 @@ After authentication, ASP.NET Core Web APIs need to authorize access. This proce
 
 Restricting access to an ASP.NET Core MVC route is as easy as applying an Authorize attribute to the action method (or to the controller’s class if all the controller’s actions require authorization), as shown in following example:
 
-```
-  public class AccountController : Controller
-  
-  {
-  
-  public ActionResult Login()
-  
-  {
-  
-  }
-  
-  **[Authorize]**
-  
-  public ActionResult Logout()
-  
-  {
-  
-  }
+```csharp
+public class AccountController : Controller
+{
+    public ActionResult Login()
+    {
+    }
+
+    [Authorize]
+    public ActionResult Logout()
+    {
+    }
+}
 ```
 
 By default, adding an Authorize attribute without parameters will limit access to authenticated users for that controller or action. To further restrict an API to be available for only specific users, the attribute can be expanded to specify required roles or policies that users must satisfy.
@@ -42,46 +36,32 @@ ASP.NET Core Identity has a built-in concept of roles. In addition to users, ASP
 
 If you are authenticating with JWT bearer tokens, the ASP.NET Core JWT bearer authentication middleware will populate a user’s roles based on role claims found in the token. To limit access to an MVC action or controller to users in specific roles, you can include a Roles parameter in the Authorize header, as shown in the following example:
 
-```
-  **[Authorize(Roles = "Administrator, PowerUser")]**
-  
-  public class ControlPanelController : Controller
-  
-  {
-  
-  public ActionResult SetTime()
-  
-  {
-  
-  }
-  
-  **[Authorize(Roles = "Administrator")]**
-  
-  public ActionResult ShutDown()
-  
-  {
-  
-  }
-  
-  }
+```csharp
+[Authorize(Roles = "Administrator, PowerUser")]
+public class ControlPanelController : Controller
+{
+    public ActionResult SetTime()
+    {
+    }
+
+    [Authorize(Roles = "Administrator")]
+    public ActionResult ShutDown()
+    {
+    }
+}
 ```
 
 In this example, only users in the Administrator or PowerUser roles can access APIs in the ControlPanel controller (such as executing the SetTime action). The ShutDown API is further restricted to allow access only to users in the Administrator role.
 
 To require a user be in multiple roles, you use multiple Authorize attributes, as shown in the following example:
 
-```
-  **[Authorize(Roles = "Administrator, PowerUser")]**
-  
-  **[Authorize(Roles = "RemoteEmployee ")]**
-  
-  **[Authorize(Policy = "CustomPolicy")]**
-  
-  public ActionResult API1 ()
-  
-  {
-  
-  }
+```csharp
+[Authorize(Roles = "Administrator, PowerUser")]
+[Authorize(Roles = "RemoteEmployee ")]
+[Authorize(Policy = "CustomPolicy")]
+public ActionResult API1 ()
+{
+}
 ```
 
 In this example, to call API1, a user must:
@@ -98,24 +78,16 @@ Custom authorization rules can also be written using [authorization policies](ht
 
 Custom authorization policies are registered in the Startup.ConfigureServices method using the service.AddAuthorization method. This method takes a delegate that configures an AuthorizationOptions argument.
 
-```
-  services.AddAuthorization(options =>
-  
-  {
-  
-  options.AddPolicy("AdministratorsOnly", policy =>
-  
-  policy.RequireRole("Administrator"));
-  
-  options.AddPolicy("EmployeesOnly", policy =>
-  
-  policy.RequireClaim("EmployeeNumber"));
-  
-  options.AddPolicy("Over21", policy =>
-  
-  policy.Requirements.Add(new MinimumAgeRequirement(21)));
-  
-  });
+```csharp
+services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdministratorsOnly", policy =>
+        policy.RequireRole("Administrator"));
+    options.AddPolicy("EmployeesOnly", policy =>
+        policy.RequireClaim("EmployeeNumber"));
+    options.AddPolicy("Over21", policy =>
+        policy.Requirements.Add(new MinimumAgeRequirement(21)));
+});
 ```
 
 As shown in the example, policies can be associated with different types of requirements. After the policies are registered, they can be applied to an action or controller by passing the policy’s name as the Policy argument of the Authorize attribute (for example, \[Authorize(Policy="EmployeesOnly")\]) Policies can have multiple requirements, not just one (as shown in these examples).

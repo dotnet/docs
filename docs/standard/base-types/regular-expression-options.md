@@ -25,16 +25,16 @@ manager: "wpickett"
   
 |RegexOptions member|Inline character|Effect|  
 |-------------------------|----------------------|------------|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|Not available|Use default behavior. For more information, see [Default Options](#Default).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|`i`|Use case-insensitive matching. For more information, see [Case-Insensitive Matching](#Case).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|`m`|Use multiline mode, where `^` and `$` match the beginning and end of each line (instead of the beginning and end of the input string). For more information, see [Multiline Mode](#Multiline).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|`s`|Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). For more information, see [Singleline Mode](#Singleline).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|`n`|Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. For more information, see [Explicit Captures Only](#Explicit).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|Not available|Compile the regular expression to an assembly. For more information, see [Compiled Regular Expressions](#Compiled).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore Whitespace](#Whitespace).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|Not available|Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-Left Mode](#RightToLeft).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|Not available|Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ECMAScript).|  
-|<xref:System.Text.RegularExpressions.RegexOptions>|Not available|Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#Invariant).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.None>|Not available|Use default behavior. For more information, see [Default Options](#Default).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase>|`i`|Use case-insensitive matching. For more information, see [Case-Insensitive Matching](#Case).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.Multiline>|`m`|Use multiline mode, where `^` and `$` match the beginning and end of each line (instead of the beginning and end of the input string). For more information, see [Multiline Mode](#Multiline).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.Singleline>|`s`|Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). For more information, see [Singleline Mode](#Singleline).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture>|`n`|Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. For more information, see [Explicit Captures Only](#Explicit).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.Compiled>|Not available|Compile the regular expression to an assembly. For more information, see [Compiled Regular Expressions](#Compiled).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore Whitespace](#Whitespace).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.RightToLeft>|Not available|Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-Left Mode](#RightToLeft).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.ECMAScript>|Not available|Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ECMAScript).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant>|Not available|Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#Invariant).|  
   
 ## Specifying the Options  
  You can specify options for regular expressions in one of three ways:  
@@ -62,44 +62,44 @@ manager: "wpickett"
      [!code-csharp[Conceptual.Regex.Language.Options#8](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/example1.cs#8)]
      [!code-vb[Conceptual.Regex.Language.Options#8](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/example1.vb#8)]  
   
- If options are specified inline, a minus sign (`-`) before an option or set of options turns off those options. For example, the inline construct `(?ix-ms)` turns on the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> and <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> options and turns off the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> and <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> options. All regular expression options are turned off by default.  
+ If options are specified inline, a minus sign (`-`) before an option or set of options turns off those options. For example, the inline construct `(?ix-ms)` turns on the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> and <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=fullName> options and turns off the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> and <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=fullName> options. All regular expression options are turned off by default.  
   
 > [!NOTE]
 >  If the regular expression options specified in the `options` parameter of a constructor or method call conflict with the options specified inline in a regular expression pattern, the inline options are used.  
   
  The following five regular expression options can be set both with the options parameter and inline:  
   
--   <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>  
+-   <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName>  
   
--   <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>  
+-   <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName>  
   
--   <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>  
+-   <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=fullName>  
   
--   <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>  
+-   <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=fullName>  
   
--   <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>  
+-   <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=fullName>  
   
  The following five regular expression options can be set using the `options` parameter but cannot be set inline:  
   
--   <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>  
+-   <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=fullName>  
   
--   <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>  
+-   <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=fullName>  
   
--   <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>  
+-   <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=fullName>  
   
--   <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>  
+-   <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant?displayProperty=fullName>  
   
--   <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>  
+-   <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=fullName>  
   
 ## Determining the Options  
  You can determine which options were provided to a <xref:System.Text.RegularExpressions.Regex> object when it was instantiated by retrieving the value of the read-only <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=fullName> property. This property is particularly useful for determining the options that are defined for a compiled regular expression created by the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=fullName> method.  
   
- To test for the presence of any option except <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>, perform an AND operation with the value of the <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=fullName> property and the <xref:System.Text.RegularExpressions.RegexOptions> value in which you are interested. Then test whether the result equals that <xref:System.Text.RegularExpressions.RegexOptions> value. The following example tests whether the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option has been set.  
+ To test for the presence of any option except <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=fullName>, perform an AND operation with the value of the <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=fullName> property and the <xref:System.Text.RegularExpressions.RegexOptions> value in which you are interested. Then test whether the result equals that <xref:System.Text.RegularExpressions.RegexOptions> value. The following example tests whether the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option has been set.  
   
  [!code-csharp[Conceptual.Regex.Language.Options#19](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/determine1.cs#19)]
  [!code-vb[Conceptual.Regex.Language.Options#19](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/determine1.vb#19)]  
   
- To test for <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>, determine whether the value of the <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=fullName> property is equal to <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>, as the following example illustrates.  
+ To test for <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=fullName>, determine whether the value of the <xref:System.Text.RegularExpressions.Regex.Options%2A?displayProperty=fullName> property is equal to <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=fullName>, as the following example illustrates.  
   
  [!code-csharp[Conceptual.Regex.Language.Options#20](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/determine1.cs#20)]
  [!code-vb[Conceptual.Regex.Language.Options#20](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/determine1.vb#20)]  
@@ -108,7 +108,7 @@ manager: "wpickett"
   
 <a name="Default"></a>   
 ## Default Options  
- The <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option indicates that no options have been specified, and the regular expression engine uses its default behavior. This includes the following:  
+ The <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=fullName> option indicates that no options have been specified, and the regular expression engine uses its default behavior. This includes the following:  
   
 -   The pattern is interpreted as a canonical rather than an ECMAScript regular expression.  
   
@@ -127,17 +127,17 @@ manager: "wpickett"
 -   Capturing groups in the regular expression pattern are implicit as well as explicit.  
   
 > [!NOTE]
->  The <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option has no inline equivalent. When regular expression options are applied inline, the default behavior is restored on an option-by-option basis, by turning a particular option off. For example, `(?i)` turns on case-insensitive comparison, and `(?-i)` restores the default case-sensitive comparison.  
+>  The <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=fullName> option has no inline equivalent. When regular expression options are applied inline, the default behavior is restored on an option-by-option basis, by turning a particular option off. For example, `(?i)` turns on case-insensitive comparison, and `(?-i)` restores the default case-sensitive comparison.  
   
- Because the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option represents the default behavior of the regular expression engine, it is rarely explicitly specified in a method call. A constructor or static pattern-matching method without an `options` parameter is called instead.  
+ Because the <xref:System.Text.RegularExpressions.RegexOptions.None?displayProperty=fullName> option represents the default behavior of the regular expression engine, it is rarely explicitly specified in a method call. A constructor or static pattern-matching method without an `options` parameter is called instead.  
   
  [Back to Top](#Top)  
   
 <a name="Case"></a>   
 ## Case-Insensitive Matching  
- The <xref:System.Text.RegularExpressions.RegexOptions> option, or the `i` inline option, provides case-insensitive matching. By default, the casing conventions of the current culture are used.  
+ The <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase> option, or the `i` inline option, provides case-insensitive matching. By default, the casing conventions of the current culture are used.  
   
- The following example defines a regular expression pattern, `\bthe\w*\b`, that matches all words starting with "the". Because the first call to the <xref:System.Text.RegularExpressions.Regex.Match%2A> method uses the default case-sensitive comparison, the output indicates that the string "The" that begins the sentence is not matched. It is matched when the <xref:System.Text.RegularExpressions.Regex.Match%2A> method is called with options set to <xref:System.Text.RegularExpressions.RegexOptions>.  
+ The following example defines a regular expression pattern, `\bthe\w*\b`, that matches all words starting with "the". Because the first call to the <xref:System.Text.RegularExpressions.Regex.Match%2A> method uses the default case-sensitive comparison, the output indicates that the string "The" that begins the sentence is not matched. It is matched when the <xref:System.Text.RegularExpressions.Regex.Match%2A> method is called with options set to <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase>.  
   
  [!code-csharp[Conceptual.Regex.Language.Options#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/case1.cs#1)]
  [!code-vb[Conceptual.Regex.Language.Options#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/case1.vb#1)]  
@@ -151,11 +151,11 @@ manager: "wpickett"
   
 <a name="Multiline"></a>   
 ## Multiline Mode  
- The <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option, or the `m` inline option, enables the regular expression engine to handle an input string that consists of multiple lines. It changes the interpretation of the `^` and `$` language elements so that they match the beginning and end of a line, instead of the beginning and end of the input string.  
+ The <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> option, or the `m` inline option, enables the regular expression engine to handle an input string that consists of multiple lines. It changes the interpretation of the `^` and `$` language elements so that they match the beginning and end of a line, instead of the beginning and end of the input string.  
   
- By default, `$` matches only the end of the input string. If you specify the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option, it matches either the newline character (`\n`) or the end of the input string. It does not, however, match the carriage return/line feed character combination. To successfully match them, use the subexpression `\r?$` instead of just `$`.  
+ By default, `$` matches only the end of the input string. If you specify the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> option, it matches either the newline character (`\n`) or the end of the input string. It does not, however, match the carriage return/line feed character combination. To successfully match them, use the subexpression `\r?$` instead of just `$`.  
   
- The following example extracts bowlers' names and scores and adds them to a <xref:System.Collections.Generic.SortedList%602> collection that sorts them in descending order. The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method is called twice. In the first method call, the regular expression is `^(\w+)\s(\d+)$` and no options are set. As the output shows, because the regular expression engine cannot match the input pattern along with the beginning and end of the input string, no matches are found. In the second method call, the regular expression is changed to `^(\w+)\s(\d+)\r?$` and the options are set to <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>. As the output shows, the names and scores are successfully matched, and the scores are displayed in descending order.  
+ The following example extracts bowlers' names and scores and adds them to a <xref:System.Collections.Generic.SortedList%602> collection that sorts them in descending order. The <xref:System.Text.RegularExpressions.Regex.Matches%2A> method is called twice. In the first method call, the regular expression is `^(\w+)\s(\d+)$` and no options are set. As the output shows, because the regular expression engine cannot match the input pattern along with the beginning and end of the input string, no matches are found. In the second method call, the regular expression is changed to `^(\w+)\s(\d+)\r?$` and the options are set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName>. As the output shows, the names and scores are successfully matched, and the scores are displayed in descending order.  
   
  [!code-csharp[Conceptual.Regex.Language.Options#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/multiline1.cs#3)]
  [!code-vb[Conceptual.Regex.Language.Options#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/multiline1.vb#3)]  
@@ -180,9 +180,9 @@ manager: "wpickett"
   
 <a name="Singleline"></a>   
 ## Single-line Mode  
- The <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option, or the `s` inline option, causes the regular expression engine to treat the input string as if it consists of a single line. It does this by changing the behavior of the period (`.`) language element so that it matches every character, instead of matching every character except for the newline character `\n` or \u000A.  
+ The <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=fullName> option, or the `s` inline option, causes the regular expression engine to treat the input string as if it consists of a single line. It does this by changing the behavior of the period (`.`) language element so that it matches every character, instead of matching every character except for the newline character `\n` or \u000A.  
   
- The following example illustrates how the behavior of the `.` language element changes when you use the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r` or \u000D, but it does not match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.  
+ The following example illustrates how the behavior of the `.` language element changes when you use the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=fullName> option. The regular expression `^.+` starts at the beginning of the string and matches every character. By default, the match ends at the end of the first line; the regular expression pattern matches the carriage return character, `\r` or \u000D, but it does not match `\n`. Because the <xref:System.Text.RegularExpressions.RegexOptions.Singleline?displayProperty=fullName> option interprets the entire input string as a single line, it matches every character in the input string, including `\n`.  
   
  [!code-csharp[Conceptual.Regex.Language.CharacterClasses#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.characterclasses/cs/any2.cs#5)]
  [!code-vb[Conceptual.Regex.Language.CharacterClasses#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.characterclasses/vb/any2.vb#5)]  
@@ -206,9 +206,9 @@ manager: "wpickett"
   
  is intended only to extract sentences that end with a period, exclamation point, or question mark from a document, only the resulting sentence (which is represented by the <xref:System.Text.RegularExpressions.Match> object) is of interest. The individual words in the collection are not.  
   
- Capturing groups that are not subsequently used can be expensive, because the regular expression engine must populate both the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> collection objects. As an alternative, you can use either the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option or the `n` inline option to specify that the only valid captures are explicitly named or numbered groups that are designated by the `(?<`*name*`>` *subexpression*`)` construct.  
+ Capturing groups that are not subsequently used can be expensive, because the regular expression engine must populate both the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> collection objects. As an alternative, you can use either the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=fullName> option or the `n` inline option to specify that the only valid captures are explicitly named or numbered groups that are designated by the `(?<`*name*`>` *subexpression*`)` construct.  
   
- The following example displays information about the matches returned by the `\b\(?((\w+),?\s?)+[\.!?]\)?` regular expression pattern when the <xref:System.Text.RegularExpressions.Regex.Match%2A> method is called with and without the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option. As the output from the first method call shows, the regular expression engine fully populates the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> collection objects with information about captured substrings. Because the second method is called with `options` set to <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>, it does not capture information on groups.  
+ The following example displays information about the matches returned by the `\b\(?((\w+),?\s?)+[\.!?]\)?` regular expression pattern when the <xref:System.Text.RegularExpressions.Regex.Match%2A> method is called with and without the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=fullName> option. As the output from the first method call shows, the regular expression engine fully populates the <xref:System.Text.RegularExpressions.GroupCollection> and <xref:System.Text.RegularExpressions.CaptureCollection> collection objects with information about captured substrings. Because the second method is called with `options` set to <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=fullName>, it does not capture information on groups.  
   
  [!code-csharp[Conceptual.Regex.Language.Options#9](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/explicit1.cs#9)]
  [!code-vb[Conceptual.Regex.Language.Options#9](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/explicit1.vb#9)]  
@@ -224,7 +224,7 @@ manager: "wpickett"
 |`((\w+),?\s?)+`|Match the combination of one or more word characters, zero or one commas, and zero or one white-space characters one or more times.|  
 |`[\.!?]\)?`|Match any of the three punctuation symbols, followed by zero or one closing parentheses (")").|  
   
- You can also use the `(?n)` inline element to suppress automatic captures. The following example modifies the previous regular expression pattern to use the `(?n)` inline element instead of the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option.  
+ You can also use the `(?n)` inline element to suppress automatic captures. The following example modifies the previous regular expression pattern to use the `(?n)` inline element instead of the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=fullName> option.  
   
  [!code-csharp[Conceptual.Regex.Language.Options#10](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/explicit2.cs#10)]
  [!code-vb[Conceptual.Regex.Language.Options#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/explicit2.vb#10)]  
@@ -240,12 +240,12 @@ manager: "wpickett"
 ## Compiled Regular Expressions  
  By default, regular expressions in .NET are interpreted. When a <xref:System.Text.RegularExpressions.Regex> object is instantiated or a static <xref:System.Text.RegularExpressions.Regex> method is called, the regular expression pattern is parsed into a set of custom opcodes, and an interpreter uses these opcodes to run the regular expression. This involves a tradeoff: The cost of initializing the regular expression engine is minimized at the expense of run-time performance.  
   
- You can use compiled instead of interpreted regular expressions by using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option. In this case, when a pattern is passed to the regular expression engine, it is parsed into a set of opcodes and then converted to Microsoft intermediate language (MSIL), which can be passed directly to the common language runtime. Compiled regular expressions maximize run-time performance at the expense of initialization time.  
+ You can use compiled instead of interpreted regular expressions by using the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=fullName> option. In this case, when a pattern is passed to the regular expression engine, it is parsed into a set of opcodes and then converted to Microsoft intermediate language (MSIL), which can be passed directly to the common language runtime. Compiled regular expressions maximize run-time performance at the expense of initialization time.  
   
 > [!NOTE]
->  A regular expression can be compiled only by supplying the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or a static pattern-matching method. It is not available as an inline option.  
+>  A regular expression can be compiled only by supplying the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=fullName> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or a static pattern-matching method. It is not available as an inline option.  
   
- You can use compiled regular expressions in calls to both static and instance regular expressions. In static regular expressions, the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option is passed to the `options` parameter of the regular expression pattern-matching method. In instance regular expressions, it is passed to the `options` parameter of the <xref:System.Text.RegularExpressions.Regex> class constructor. In both cases, it results in enhanced performance.  
+ You can use compiled regular expressions in calls to both static and instance regular expressions. In static regular expressions, the <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=fullName> option is passed to the `options` parameter of the regular expression pattern-matching method. In instance regular expressions, it is passed to the `options` parameter of the <xref:System.Text.RegularExpressions.Regex> class constructor. In both cases, it results in enhanced performance.  
   
  However, this improvement in performance occurs only under the following conditions:  
   
@@ -256,7 +256,7 @@ manager: "wpickett"
 -   A static regular expression is used in multiple calls to regular expression pattern-matching methods. (The performance improvement is possible because regular expressions used in static method calls are cached by the regular expression engine.)  
   
 > [!NOTE]
->  The <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option is unrelated to the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=fullName> method, which creates a special-purpose assembly that contains predefined compiled regular expressions.  
+>  The <xref:System.Text.RegularExpressions.RegexOptions.Compiled?displayProperty=fullName> option is unrelated to the <xref:System.Text.RegularExpressions.Regex.CompileToAssembly%2A?displayProperty=fullName> method, which creates a special-purpose assembly that contains predefined compiled regular expressions.  
   
  [Back to Top](#Top)  
   
@@ -264,13 +264,13 @@ manager: "wpickett"
 ## Ignore White Space  
  By default, white space in a regular expression pattern is significant; it forces the regular expression engine to match a white-space character in the input string. Because of this, the regular expression "`\b\w+\s`" and "`\b\w+` " are roughly equivalent regular expressions. In addition, when the number sign (#) is encountered in a regular expression pattern, it is interpreted as a literal character to be matched.  
   
- The <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option, or the `x` inline option, changes this default behavior as follows:  
+ The <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=fullName> option, or the `x` inline option, changes this default behavior as follows:  
   
 -   Unescaped white space in the regular expression pattern is ignored. To be part of a regular expression pattern, white-space characters must be escaped (for example, as `\s` or "`\` ").  
   
 -   The number sign (#) is interpreted as the beginning of a comment, rather than as a literal character. All text in the regular expression pattern from the # character to the end of the string is interpreted as a comment.  
   
- However, in the following cases, white space characters in a regular expression aren't ignored, even if you use the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option:  
+ However, in the following cases, white space characters in a regular expression aren't ignored, even if you use the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=fullName> option:  
   
 -   White space within a character class is always interpreted literally. For example, the regular expression pattern `[ .,;:]` matches any single white-space character, period, comma, semicolon, or colon.  
   
@@ -288,7 +288,7 @@ manager: "wpickett"
   
  `\b \(? ( (?>\w+) ,?\s? )+  [\.!?] \)? # Matches an entire sentence.`  
   
- This pattern is similar to the pattern defined in the [Explicit Captures Only](#Explicit) section, except that it uses the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option to ignore pattern white space.  
+ This pattern is similar to the pattern defined in the [Explicit Captures Only](#Explicit) section, except that it uses the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=fullName> option to ignore pattern white space.  
   
  [!code-csharp[Conceptual.Regex.Language.Options#12](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/whitespace1.cs#12)]
  [!code-vb[Conceptual.Regex.Language.Options#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/whitespace1.vb#12)]  
@@ -302,12 +302,12 @@ manager: "wpickett"
   
 <a name="RightToLeft"></a>   
 ## Right-to-Left Mode  
- By default, the regular expression engine searches from left to right. You can reverse the search direction by using the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option. The search automatically begins at the last character position of the string. For pattern-matching methods that include a starting position parameter, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=fullName>, the starting position is the index of the rightmost character position at which the search is to begin.  
+ By default, the regular expression engine searches from left to right. You can reverse the search direction by using the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=fullName> option. The search automatically begins at the last character position of the string. For pattern-matching methods that include a starting position parameter, such as <xref:System.Text.RegularExpressions.Regex.Match%28System.String%2CSystem.Int32%29?displayProperty=fullName>, the starting position is the index of the rightmost character position at which the search is to begin.  
   
 > [!NOTE]
->  Right-to-left pattern mode is available only by supplying the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or static pattern-matching method. It is not available as an inline option.  
+>  Right-to-left pattern mode is available only by supplying the <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=fullName> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or static pattern-matching method. It is not available as an inline option.  
   
- The <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option changes the search direction only; it does not interpret the regular expression pattern from right to left. For example, the regular expression `\bb\w+\s` matches words that begin with the letter "b" and are followed by a white-space character. In the following example, the input string consists of three words that include one or more "b" characters. The first word begins with "b", the second ends with "b", and the third includes two "b" characters in the middle of the word. As the output from the example shows, only the first word matches the regular expression pattern.  
+ The <xref:System.Text.RegularExpressions.RegexOptions.RightToLeft?displayProperty=fullName> option changes the search direction only; it does not interpret the regular expression pattern from right to left. For example, the regular expression `\bb\w+\s` matches words that begin with the letter "b" and are followed by a white-space character. In the following example, the input string consists of three words that include one or more "b" characters. The first word begins with "b", the second ends with "b", and the third includes two "b" characters in the middle of the word. As the output from the example shows, only the first word matches the regular expression pattern.  
   
  [!code-csharp[Conceptual.Regex.Language.Options#17](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/righttoleft1.cs#17)]
  [!code-vb[Conceptual.Regex.Language.Options#17](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/righttoleft1.vb#17)]  
@@ -331,12 +331,12 @@ manager: "wpickett"
   
 <a name="ECMAScript"></a>   
 ## ECMAScript Matching Behavior  
- By default, the regular expression engine uses canonical behavior when matching a regular expression pattern to input text. However, you can instruct the regular expression engine to use ECMAScript matching behavior by specifying the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option.  
+ By default, the regular expression engine uses canonical behavior when matching a regular expression pattern to input text. However, you can instruct the regular expression engine to use ECMAScript matching behavior by specifying the <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=fullName> option.  
   
 > [!NOTE]
->  ECMAScript-compliant behavior is available only by supplying the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or static pattern-matching method. It is not available as an inline option.  
+>  ECMAScript-compliant behavior is available only by supplying the <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=fullName> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or static pattern-matching method. It is not available as an inline option.  
   
- The <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option can be combined only with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> and <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> options. The use of any other option in a regular expression results in an <xref:System.ArgumentOutOfRangeException>.  
+ The <xref:System.Text.RegularExpressions.RegexOptions.ECMAScript?displayProperty=fullName> option can be combined only with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> and <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> options. The use of any other option in a regular expression results in an <xref:System.ArgumentOutOfRangeException>.  
   
  The behavior of ECMAScript and canonical regular expressions differs in three areas: character class syntax, self-referencing capturing groups, and octal versus backreference interpretation.  
   
@@ -383,12 +383,12 @@ manager: "wpickett"
 > [!NOTE]
 >  For more information about string comparisons that are case-sensitive and that use the invariant culture, see [Best Practices for Using Strings](../../../docs/standard/base-types/best-practices-strings.md).  
   
- Instead of using the case-insensitive comparisons of the current culture, you can specify the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option to ignore cultural differences in language and to use the conventions of the invariant culture.  
+ Instead of using the case-insensitive comparisons of the current culture, you can specify the <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant?displayProperty=fullName> option to ignore cultural differences in language and to use the conventions of the invariant culture.  
   
 > [!NOTE]
->  Comparison using the invariant culture is available only by supplying the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or static pattern-matching method. It is not available as an inline option.  
+>  Comparison using the invariant culture is available only by supplying the <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant?displayProperty=fullName> value to the `options` parameter of a <xref:System.Text.RegularExpressions.Regex> class constructor or static pattern-matching method. It is not available as an inline option.  
   
- The following example is identical to the previous example, except that the static <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method is called with options that include <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>. Even when the current culture is set to Turkish (Turkey), the regular expression engine is able to successfully match "FILE" and "file" and block access to the file resource.  
+ The following example is identical to the previous example, except that the static <xref:System.Text.RegularExpressions.Regex.IsMatch%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method is called with options that include <xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant?displayProperty=fullName>. Even when the current culture is set to Turkish (Turkey), the regular expression engine is able to successfully match "FILE" and "file" and block access to the file resource.  
   
  [!code-csharp[Conceptual.Regex.Language.Options#15](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.options/cs/culture1.cs#15)]
  [!code-vb[Conceptual.Regex.Language.Options#15](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.options/vb/culture1.vb#15)]  

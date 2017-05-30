@@ -76,9 +76,9 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 > [!NOTE]
 >  Although the <xref:System.Windows.Forms.CheckedListBox> control is derived from the <xref:System.Windows.Forms.ListBox> control, it does not support owner drawing.  
   
- To draw each item the same size, set the `DrawMode` property to <xref:System.Windows.Forms.DrawMode> and handle the `DrawItem` event.  
+ To draw each item the same size, set the `DrawMode` property to <xref:System.Windows.Forms.DrawMode.OwnerDrawFixed> and handle the `DrawItem` event.  
   
- To draw each item using a different size, set the `DrawMode` property to <xref:System.Windows.Forms.DrawMode> and handle both the `MeasureItem` and `DrawItem` events. The `MeasureItem` event lets you indicate the size of an item before the `DrawItem` event occurs for that item.  
+ To draw each item using a different size, set the `DrawMode` property to <xref:System.Windows.Forms.DrawMode.OwnerDrawVariable> and handle both the `MeasureItem` and `DrawItem` events. The `MeasureItem` event lets you indicate the size of an item before the `DrawItem` event occurs for that item.  
   
  For more information, including code examples, see the following topics:  
   
@@ -112,7 +112,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 ### TabControl Control  
  The <xref:System.Windows.Forms.TabControl> control enables you to draw individual tabs in the control. Owner drawing affects only the tabs; the <xref:System.Windows.Forms.TabPage> contents are not affected.  
   
- To draw each tab in a <xref:System.Windows.Forms.TabControl>, set the `DrawMode` property to <xref:System.Windows.Forms.TabDrawMode> and handle the `DrawItem` event. This event occurs once for each tab only when the tab is visible in the control.  
+ To draw each tab in a <xref:System.Windows.Forms.TabControl>, set the `DrawMode` property to <xref:System.Windows.Forms.TabDrawMode.OwnerDrawFixed> and handle the `DrawItem` event. This event occurs once for each tab only when the tab is visible in the control.  
   
  For more information, including code examples, see the following reference topics:  
   
@@ -140,7 +140,7 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
   
  To draw each item in the control, handle the `DrawItem` event.  
   
- To draw each subitem or column header in the control when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View>, handle the `DrawSubItem` and `DrawColumnHeader` events.  
+ To draw each subitem or column header in the control when the <xref:System.Windows.Forms.ListView.View%2A> property is set to <xref:System.Windows.Forms.View.Details>, handle the `DrawSubItem` and `DrawColumnHeader` events.  
   
  For more information, including code examples, see the following reference topics:  
   
@@ -155,9 +155,9 @@ Owner drawing in Windows Forms, which is also known as custom drawing, is a tech
 ### TreeView Control  
  The <xref:System.Windows.Forms.TreeView> control enables you to draw individual nodes in the control.  
   
- To draw only the text displayed in each node, set the `DrawMode` property to <xref:System.Windows.Forms.TreeViewDrawMode> and handle the `DrawNode` event to draw the text.  
+ To draw only the text displayed in each node, set the `DrawMode` property to <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawText> and handle the `DrawNode` event to draw the text.  
   
- To draw all elements of each node, set the `DrawMode` property to <xref:System.Windows.Forms.TreeViewDrawMode> and handle the `DrawNode` event to draw whichever elements you need, such as text, icons, check boxes, plus and minus signs, and lines connecting the nodes.  
+ To draw all elements of each node, set the `DrawMode` property to <xref:System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll> and handle the `DrawNode` event to draw whichever elements you need, such as text, icons, check boxes, plus and minus signs, and lines connecting the nodes.  
   
  For more information, including code examples, see the following reference topics:  
   

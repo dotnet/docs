@@ -58,7 +58,7 @@ manager: "markl"
 |<xref:System.Windows.Automation.Provider.IWindowProvider.WaitForInputIdle%2A>|Method|None|  
 |<xref:System.Windows.Automation.WindowPattern.WindowClosedEvent>|Event|None|  
 |<xref:System.Windows.Automation.WindowPattern.WindowOpenedEvent>|Event|None|  
-|<xref:System.Windows.Automation.WindowInteractionState>|Event|Is not guaranteed to be <xref:System.Windows.Automation.WindowInteractionState>|  
+|<xref:System.Windows.Automation.WindowInteractionState>|Event|Is not guaranteed to be <xref:System.Windows.Automation.WindowInteractionState.ReadyForUserInteraction>|  
   
 <a name="Exceptions"></a>   
 ## Exceptions  

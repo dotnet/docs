@@ -183,7 +183,7 @@ manager: "wpickett"
   
  **Automatic decompression**  
   
- .NET for Windows Store apps allows you to set the <xref:System.Net.Http.HttpClientHandler.AutomaticDecompression%2A?displayProperty=fullName> property to <xref:System.Net.DecompressionMethods>, <xref:System.Net.DecompressionMethods>, both <xref:System.Net.DecompressionMethods> and <xref:System.Net.DecompressionMethods>, or <xref:System.Net.DecompressionMethods>.  [!INCLUDE[net_native](../../../includes/net-native-md.md)] only supports <xref:System.Net.DecompressionMethods> together with <xref:System.Net.DecompressionMethods>, or <xref:System.Net.DecompressionMethods>.  Trying to set the <xref:System.Net.Http.HttpClientHandler.AutomaticDecompression%2A> property to either <xref:System.Net.DecompressionMethods> or <xref:System.Net.DecompressionMethods> alone silently sets it to both <xref:System.Net.DecompressionMethods> and <xref:System.Net.DecompressionMethods>.  
+ .NET for Windows Store apps allows you to set the <xref:System.Net.Http.HttpClientHandler.AutomaticDecompression%2A?displayProperty=fullName> property to <xref:System.Net.DecompressionMethods.Deflate>, <xref:System.Net.DecompressionMethods.GZip>, both <xref:System.Net.DecompressionMethods.Deflate> and <xref:System.Net.DecompressionMethods.GZip>, or <xref:System.Net.DecompressionMethods.None>.  [!INCLUDE[net_native](../../../includes/net-native-md.md)] only supports <xref:System.Net.DecompressionMethods.Deflate> together with <xref:System.Net.DecompressionMethods.GZip>, or <xref:System.Net.DecompressionMethods.None>.  Trying to set the <xref:System.Net.Http.HttpClientHandler.AutomaticDecompression%2A> property to either <xref:System.Net.DecompressionMethods.Deflate> or <xref:System.Net.DecompressionMethods.GZip> alone silently sets it to both <xref:System.Net.DecompressionMethods.Deflate> and <xref:System.Net.DecompressionMethods.GZip>.  
   
  **Cookies**  
   
@@ -197,7 +197,7 @@ manager: "wpickett"
   
  In [!INCLUDE[net_native](../../../includes/net-native-md.md)]:  
   
--   The value of the <xref:System.Net.Http.HttpClientHandler.ClientCertificateOptions%2A?displayProperty=fullName> property is always <xref:System.Net.Http.ClientCertificateOption>.  In .NET for Windows Store apps, the default is <xref:System.Net.Http.ClientCertificateOption>.  
+-   The value of the <xref:System.Net.Http.HttpClientHandler.ClientCertificateOptions%2A?displayProperty=fullName> property is always <xref:System.Net.Http.ClientCertificateOption.Automatic>.  In .NET for Windows Store apps, the default is <xref:System.Net.Http.ClientCertificateOption.Manual>.  
   
 -   The <xref:System.Net.Http.HttpClientHandler.MaxRequestContentBufferSize%2A?displayProperty=fullName> property isn't configurable.  
   
@@ -221,18 +221,18 @@ manager: "wpickett"
 |<xref:System.Runtime.InteropServices.ErrorWrapper?displayProperty=fullName>|  
 |<xref:System.Runtime.InteropServices.UnknownWrapper?displayProperty=fullName>|  
 |<xref:System.Runtime.InteropServices.VariantWrapper?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|  
+|<xref:System.Runtime.InteropServices.UnmanagedType.IDispatch?displayProperty=fullName>|  
+|<xref:System.Runtime.InteropServices.UnmanagedType.SafeArray?displayProperty=fullName>|  
 |<xref:System.Runtime.InteropServices.VarEnum?displayProperty=fullName>|  
   
- <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName> is supported, but it throws an exception in some scenarios, such as when it is used with [IDispatch](http://msdn.microsoft.com/library/windows/apps/ms221608.aspx) or byref variants.  
+ <xref:System.Runtime.InteropServices.UnmanagedType.Struct?displayProperty=fullName> is supported, but it throws an exception in some scenarios, such as when it is used with [IDispatch](http://msdn.microsoft.com/library/windows/apps/ms221608.aspx) or byref variants.  
   
  Deprecated APIs for [IDispatch](http://msdn.microsoft.com/library/windows/apps/ms221608.aspx) support:  
   
 |Type|Member|  
 |----------|------------|  
-|<xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.ClassInterfaceType>|  
-|<xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.ClassInterfaceType>|  
+|<xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch>|  
+|<xref:System.Runtime.InteropServices.ClassInterfaceType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.ClassInterfaceType.AutoDual>|  
 |<xref:System.Runtime.InteropServices.ComDefaultInterfaceAttribute?displayProperty=fullName>|Attribute isn't supported|  
   
  Deprecated APIs for classic COM events:  
@@ -257,11 +257,11 @@ manager: "wpickett"
 |----------|------------|  
 |<xref:System.Runtime.InteropServices.ICustomAdapter?displayProperty=fullName>|All members.|  
 |<xref:System.Runtime.InteropServices.SafeBuffer?displayProperty=fullName>|All members.|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.UnmanagedType>|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.UnmanagedType>|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.UnmanagedType>|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.UnmanagedType>|  
-|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.UnmanagedType>|  
+|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.UnmanagedType.Currency>|  
+|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.UnmanagedType.VBByRefStr>|  
+|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.UnmanagedType.AnsiBStr>|  
+|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.UnmanagedType.AsAny>|  
+|<xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>|<xref:System.Runtime.InteropServices.UnmanagedType.CustomMarshaler>|  
   
  Rarely used marshalling APIs:  
   
@@ -282,7 +282,7 @@ manager: "wpickett"
   
  Most platform invoke and COM interop scenarios are still supported in [!INCLUDE[net_native](../../../includes/net-native-md.md)]. In particular, all interoperability with Windows Runtime (WinRT) APIs and all marshaling required for the Windows Runtime is supported. This includes marshaling support for:  
   
--   Arrays (including <xref:System.Runtime.InteropServices.UnmanagedType?displayProperty=fullName>)  
+-   Arrays (including <xref:System.Runtime.InteropServices.UnmanagedType.ByValArray?displayProperty=fullName>)  
   
 -   `BStr`  
   

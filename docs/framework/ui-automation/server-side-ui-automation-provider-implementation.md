@@ -145,7 +145,7 @@ manager: "markl"
   
  The structure of the fragment is determined by your implementation of <xref:System.Windows.Automation.Provider.IRawElementProviderFragment.Navigate%2A>. For each possible direction from each fragment, this method returns the provider object for the element in that direction. If there is no element in that direction, the method returns a `null` reference.  
   
- The fragment root supports navigation only to child elements. For example, a list box returns the first item in the list when the direction is <xref:System.Windows.Automation.Provider.NavigateDirection>, and the last item when the direction is <xref:System.Windows.Automation.Provider.NavigateDirection>. The fragment root does not support navigation to a parent or siblings; this is handled by the host window provider.  
+ The fragment root supports navigation only to child elements. For example, a list box returns the first item in the list when the direction is <xref:System.Windows.Automation.Provider.NavigateDirection.FirstChild>, and the last item when the direction is <xref:System.Windows.Automation.Provider.NavigateDirection.LastChild>. The fragment root does not support navigation to a parent or siblings; this is handled by the host window provider.  
   
  Elements of a fragment that are not the root must support navigation to the parent, and to any siblings and children they have.  
   

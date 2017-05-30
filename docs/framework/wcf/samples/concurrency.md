@@ -34,7 +34,7 @@ The Concurrency sample demonstrates using the <xref:System.ServiceModel.ServiceB
   
 -   `Reentrant`: Each service instance processes one message at a time, but accepts reentrant calls. The service only accepts these calls when it is calling out. Reentrant is demonstrated in the [ConcurrencyMode.Reentrant](../../../../docs/framework/wcf/samples/concurrencymode-reentrant.md) sample.  
   
- The use of concurrency is related to the instancing mode. In <xref:System.ServiceModel.InstanceContextMode> instancing, concurrency is not relevant, because each message is processed by a new service instance. In <xref:System.ServiceModel.InstanceContextMode> instancing, either <xref:System.ServiceModel.ConcurrencyMode> or <xref:System.ServiceModel.ConcurrencyMode> concurrency is relevant, depending on whether the single instance processes messages sequentially or concurrently. In <xref:System.ServiceModel.InstanceContextMode> instancing, any of the concurrency modes may be relevant.  
+ The use of concurrency is related to the instancing mode. In <xref:System.ServiceModel.InstanceContextMode.PerCall> instancing, concurrency is not relevant, because each message is processed by a new service instance. In <xref:System.ServiceModel.InstanceContextMode.Single> instancing, either <xref:System.ServiceModel.ConcurrencyMode.Single> or <xref:System.ServiceModel.ConcurrencyMode.Multiple> concurrency is relevant, depending on whether the single instance processes messages sequentially or concurrently. In <xref:System.ServiceModel.InstanceContextMode.PerSession> instancing, any of the concurrency modes may be relevant.  
   
  The service class specifies concurrency behavior with the `[ServiceBehavior(ConcurrencyMode=<setting>)]` attribute as shown in the code sample that follows. By changing which lines are commented out, you can experiment with the `Single` and `Multiple` concurrency modes. Remember to rebuild the service after changing the concurrency mode.  
   
@@ -95,7 +95,7 @@ public class CalculatorService : ICalculatorConcurrency
 }  
 ```  
   
- The sample uses <xref:System.ServiceModel.ConcurrencyMode> concurrency with <xref:System.ServiceModel.InstanceContextMode> instancing by default. The client code has been modified to use an asynchronous proxy. This allows the client to make multiple calls to the service without waiting for a response between each call. You can observe the difference in behavior of the service concurrency mode.  
+ The sample uses <xref:System.ServiceModel.ConcurrencyMode.Multiple> concurrency with <xref:System.ServiceModel.InstanceContextMode.Single> instancing by default. The client code has been modified to use an asynchronous proxy. This allows the client to make multiple calls to the service without waiting for a response between each call. You can observe the difference in behavior of the service concurrency mode.  
   
  When you run the sample, the operation requests and responses are displayed in the client console window. The concurrency mode that the service is running under is displayed, each operation is called, and then the operation count is displayed. Notice that when the concurrency mode is `Multiple`, the results are returned in a different order than how they were called, because the service processes multiple messages concurrently. By changing the concurrency mode to `Single`, the results are returned in the order they were called, because the service processes each message sequentially. Press ENTER in the client window to shut down the client.  
   

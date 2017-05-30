@@ -42,7 +42,7 @@ This topic discusses how to create custom encoders.
   
 -   <<!--zz xref:System.ServiceModel.Channels.MTOMMessageEncodingBindingElement --> `System.ServiceModel.Channels.MTOMMessageEncodingBindingElement`>: Represents the binding element that specifies the character encoding and message versioning used for a message using a Message Transmission Optimization Mechanism (MTOM) encoding. MTOM is an efficient technology for transmitting binary data in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] messages. The MTOM encoder attempts to balance between efficiency and interoperability. The MTOM encoding transmits most XML in textual form, but optimizes large blocks of binary data by transmitting them as-is, without conversion to text.  
   
- The binding element creates a binary, MTOM, or text <xref:System.ServiceModel.Channels.MessageEncoderFactory>. The factory creates a binary, MTOM, or text <xref:System.ServiceModel.Channels.MessageEncoder> instance. Typically, there is only a single instance. However if sessions are used, a different encoder may be provided to each session. The Binary encoder makes use of this to coordinate dynamic dictionaries (see XML Infrastructure).  
+ The binding element creates a binary, MTOM, or text <xref:System.ServiceModel.Channels.MessageEncoderFactory>. The factory creates a binary, MTOM, or text <xref:System.ServiceModel.Channels.MessageEncoderFactory> instance. Typically, there is only a single instance. However if sessions are used, a different encoder may be provided to each session. The Binary encoder makes use of this to coordinate dynamic dictionaries (see XML Infrastructure).  
   
  The <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A> and <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> methods are the core of the encoders. The methods provide for reading a message from a stream or from a <xref:System.Byte> array. Byte arrays are used when the transport is operating in buffered mode. Messages are always written to streams. If the transport must buffer the message, it provides a stream that does the buffering.  
   
@@ -85,7 +85,7 @@ This topic discusses how to create custom encoders.
   
 -   The key methods of this class that you must override are:  
   
--   <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> which takes a <xref:System.ServiceModel.Channels.Message> object and writes it into a <xref:System.IO.Stream> object.  
+-   <xref:System.ServiceModel.Channels.MessageEncoder.WriteMessage%2A> which takes a <xref:System.ServiceModel.Channels.MessageEncodingBindingElement> object and writes it into a <xref:System.IO.Stream> object.  
   
 -   <xref:System.ServiceModel.Channels.MessageEncoder.ReadMessage%2A> which takes a <xref:System.IO.Stream> object and a maximum header size and returns a <xref:System.ServiceModel.Channels.Message> object.  
   

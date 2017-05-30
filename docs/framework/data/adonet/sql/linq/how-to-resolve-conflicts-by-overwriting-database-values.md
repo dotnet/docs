@@ -16,7 +16,7 @@ ms.author: "jhubbard"
 manager: "jhubbard"
 ---
 # How to: Resolve Conflicts by Overwriting Database Values
-To reconcile differences between expected and actual database values before you try to resubmit your changes, you can use <xref:System.Data.Linq.RefreshMode> to overwrite database values. For more information, see [Optimistic Concurrency: Overview](../../../../../../docs/framework/data/adonet/sql/linq/optimistic-concurrency-overview.md).  
+To reconcile differences between expected and actual database values before you try to resubmit your changes, you can use <xref:System.Data.Linq.RefreshMode.KeepCurrentValues> to overwrite database values. For more information, see [Optimistic Concurrency: Overview](../../../../../../docs/framework/data/adonet/sql/linq/optimistic-concurrency-overview.md).  
   
 > [!NOTE]
 >  In all cases, the record on the client is first refreshed by retrieving the updated data from the database. This action makes sure that the next update try will not fail on the same concurrency checks.  
@@ -32,7 +32,7 @@ To reconcile differences between expected and actual database values before you 
   
  User1 decides to resolve this conflict by overwriting database values with the current client member values.  
   
- When User1 resolves the conflict by using <xref:System.Data.Linq.RefreshMode>, the result in the database is as in following table:  
+ When User1 resolves the conflict by using <xref:System.Data.Linq.RefreshMode.KeepCurrentValues>, the result in the database is as in following table:  
   
 ||Manager|Assistant|Department|  
 |------|-------------|---------------|----------------|  

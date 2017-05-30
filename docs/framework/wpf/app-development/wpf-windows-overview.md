@@ -277,7 +277,7 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
 -   A window's owner closes (see                                  <xref:System.Windows.Window.Owner%2A>).  
   
--   The main application window is closed and                                  <xref:System.Windows.Application.ShutdownMode%2A> is                                  <xref:System.Windows.ShutdownMode>.  
+-   The main application window is closed and                                  <xref:System.Windows.Application.ShutdownMode%2A> is                                  <xref:System.Windows.ShutdownMode.OnMainWindowClose>.  
   
 -   <xref:System.Windows.Application.Shutdown%2A> is called.  
   
@@ -306,7 +306,7 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
 -   <xref:System.Windows.WindowStartupLocation.Manual>  
   
- If the startup location is specified as                  <xref:System.Windows.WindowStartupLocation>, and the                  <xref:System.Windows.Window.Left%2A> and                  <xref:System.Windows.Window.Top%2A> properties have not been set,                  <xref:System.Windows.Window> will ask                  [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] for a location to appear in.  
+ If the startup location is specified as                  <xref:System.Windows.WindowStartupLocation.Manual>, and the                  <xref:System.Windows.Window.Left%2A> and                  <xref:System.Windows.Window.Top%2A> properties have not been set,                  <xref:System.Windows.Window> will ask                  [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] for a location to appear in.  
   
 <a name="Topmost_Windows_and_Z_Order"></a>   
 ### Topmost Windows and Z-Order  
@@ -335,13 +335,13 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  If you'd like the width and height of your window to have a size that fits to the size of the window's content, you can use the                  <xref:System.Windows.Window.SizeToContent%2A> property, which has the following values:  
   
--   <xref:System.Windows.SizeToContent>. No effect (default).  
+-   <xref:System.Windows.SizeToContent.Manual>. No effect (default).  
   
--   <xref:System.Windows.SizeToContent>. Fit to content width, which has the same effect as setting both                          <xref:System.Windows.FrameworkElement.MinWidth%2A> and                          <xref:System.Windows.FrameworkElement.MaxWidth%2A> to the width of the content.  
+-   <xref:System.Windows.SizeToContent.Width>. Fit to content width, which has the same effect as setting both                          <xref:System.Windows.FrameworkElement.MinWidth%2A> and                          <xref:System.Windows.FrameworkElement.MaxWidth%2A> to the width of the content.  
   
--   <xref:System.Windows.SizeToContent>. Fit to content height, which has the same effect as setting both                          <xref:System.Windows.FrameworkElement.MinHeight%2A> and                          <xref:System.Windows.FrameworkElement.MaxHeight%2A> to the height of the content.  
+-   <xref:System.Windows.SizeToContent.Height>. Fit to content height, which has the same effect as setting both                          <xref:System.Windows.FrameworkElement.MinHeight%2A> and                          <xref:System.Windows.FrameworkElement.MaxHeight%2A> to the height of the content.  
   
--   <xref:System.Windows.SizeToContent>. Fit to content width and height, which has the same effect as setting both                          <xref:System.Windows.FrameworkElement.MinHeight%2A> and                          <xref:System.Windows.FrameworkElement.MaxHeight%2A> to the height of the content, and setting both                          <xref:System.Windows.FrameworkElement.MinWidth%2A> and                          <xref:System.Windows.FrameworkElement.MaxWidth%2A> to the width of the content.  
+-   <xref:System.Windows.SizeToContent.WidthAndHeight>. Fit to content width and height, which has the same effect as setting both                          <xref:System.Windows.FrameworkElement.MinHeight%2A> and                          <xref:System.Windows.FrameworkElement.MaxHeight%2A> to the height of the content, and setting both                          <xref:System.Windows.FrameworkElement.MinWidth%2A> and                          <xref:System.Windows.FrameworkElement.MaxWidth%2A> to the width of the content.  
   
  The following example shows a window that automatically sizes to fit its content, both vertically and horizontally, when first shown.  
   
@@ -363,7 +363,7 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
 2.  <xref:System.Windows.FrameworkElement.MaxHeight%2A?displayProperty=fullName> >  
   
-3.  <xref:System.Windows.SizeToContent?displayProperty=fullName>/                         <xref:System.Windows.SizeToContent?displayProperty=fullName> >  
+3.  <xref:System.Windows.SizeToContent.Height?displayProperty=fullName>/                         <xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=fullName> >  
   
 4.  <xref:System.Windows.FrameworkElement.Height%2A?displayProperty=fullName>  
   
@@ -373,7 +373,7 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
 2.  <xref:System.Windows.FrameworkElement.MaxWidth%2A?displayProperty=fullName> >  
   
-3.  <xref:System.Windows.SizeToContent?displayProperty=fullName>/                         <xref:System.Windows.SizeToContent?displayProperty=fullName> >  
+3.  <xref:System.Windows.SizeToContent.Width?displayProperty=fullName>/                         <xref:System.Windows.SizeToContent.WidthAndHeight?displayProperty=fullName> >  
   
 4.  <xref:System.Windows.FrameworkElement.Width%2A?displayProperty=fullName>  
   
@@ -392,11 +392,11 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  The state of a window can be configured by setting its                  <xref:System.Windows.Window.WindowState%2A> property, which can have one of the following                  <xref:System.Windows.WindowState> enumeration values:  
   
--   <xref:System.Windows.WindowState> (default)  
+-   <xref:System.Windows.WindowState.Normal> (default)  
   
--   <xref:System.Windows.WindowState>  
+-   <xref:System.Windows.WindowState.Maximized>  
   
--   <xref:System.Windows.WindowState>  
+-   <xref:System.Windows.WindowState.Minimized>  
   
  The following example shows how to create a window that is shown as maximized when it opens.  
   
@@ -418,13 +418,13 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  You can configure how a window resizes by setting its                          <xref:System.Windows.Window.ResizeMode%2A> property, which can be one of the following                          <xref:System.Windows.ResizeMode> enumeration values:  
   
--   <xref:System.Windows.ResizeMode>  
+-   <xref:System.Windows.ResizeMode.NoResize>  
   
--   <xref:System.Windows.ResizeMode>  
+-   <xref:System.Windows.ResizeMode.CanMinimize>  
   
--   <xref:System.Windows.ResizeMode> (default)  
+-   <xref:System.Windows.ResizeMode.CanResize> (default)  
   
--   <xref:System.Windows.ResizeMode>  
+-   <xref:System.Windows.ResizeMode.CanResizeWithGrip>  
   
  As with                          <xref:System.Windows.Window.WindowStyle%2A>, the resize mode of a window is unlikely to change during its lifetime, which means that you'll most likely set it from                          [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] markup.  
   
@@ -439,13 +439,13 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  To control what type of border a window gets, you set its                          <xref:System.Windows.Window.WindowStyle%2A> property with one of the following values of the                          <xref:System.Windows.WindowStyle> enumeration:  
   
--   <xref:System.Windows.WindowStyle>  
+-   <xref:System.Windows.WindowStyle.None>  
   
--   <xref:System.Windows.WindowStyle> (default)  
+-   <xref:System.Windows.WindowStyle.SingleBorderWindow> (default)  
   
--   <xref:System.Windows.WindowStyle>  
+-   <xref:System.Windows.WindowStyle.ThreeDBorderWindow>  
   
--   <xref:System.Windows.WindowStyle>  
+-   <xref:System.Windows.WindowStyle.ToolWindow>  
   
  The effect of these window styles are illustrated in the following figure.  
   
@@ -463,7 +463,7 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  ![Nonrectangular window](../../../../docs/framework/wpf/app-development/media/nonrectangularwindowfigure.PNG "NonRectangularWindowFigure")  
   
- This type of window can be created by setting the                                  <xref:System.Windows.Window.WindowStyle%2A> property to                                  <xref:System.Windows.WindowStyle>, and by using special support that                                  <xref:System.Windows.Window> has for transparency.  
+ This type of window can be created by setting the                                  <xref:System.Windows.Window.WindowStyle%2A> property to                                  <xref:System.Windows.WindowStyle.None>, and by using special support that                                  <xref:System.Windows.Window> has for transparency.  
   
  [!code-xml[WindowsOverviewSnippets#TransparentWindowMARKUP1](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewSnippets/CSharp/TransparentWindow.xaml#transparentwindowmarkup1)]  
 [!code-xml[WindowsOverviewSnippets#TransparentWindowMARKUP2](../../../../samples/snippets/csharp/VS_Snippets_Wpf/WindowsOverviewSnippets/CSharp/TransparentWindow.xaml#transparentwindowmarkup2)]  

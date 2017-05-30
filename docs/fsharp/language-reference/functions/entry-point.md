@@ -37,7 +37,7 @@ The following example illustrates a simple `main` function.
 
 When this code is executed with the command line `EntryPoint.exe 1 2 3`, the output is as follows.
 
-```text
+```console
 Arguments passed to function : [|"1"; "2"; "3"|]
 ```
 

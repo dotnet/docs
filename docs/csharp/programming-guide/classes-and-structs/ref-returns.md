@@ -4,7 +4,7 @@ description: "Learn how to define and use ref return and ref local values"
 keywords: "ref returns, C#", "reference return values, C#", "ref return values, C#", "ref locals, C#", "ref local values, C#" 
 author: "rpetrusha"
 ms.author: "ronpet"
-ms.date: "05/10/2017"
+ms.date: "05/30/2017"
 ms.topic: "article"
 ms.prod: ".net"
 ms.technology: "devlang-csharp"
@@ -31,7 +31,7 @@ There are some restrictions on the value that a method can return as a reference
 
 - The return value cannot be `void`. Attempting to define a method with a `void` reference return value generates compiler error CS1547, "Keyword 'void' cannot be used in this context."
  
-- The return value cannot be a local variable in the procedure that returns it; it must have global scope. Attempting to return a local variable generates compiler error CS8168, "Cannot return local 'obj' by reference because it is not a ref local."
+- The return value cannot be a local variable in the method that returns it; it must have a scope that is outside the method that returns it. It can be an instance or static field of a class, or it can be an argument passed to the method. Attempting to return a local variable generates compiler error CS8168, "Cannot return local 'obj' by reference because it is not a ref local."
 
 - The return value cannot be a `null`. Attempting to return `null` generates compiler error CS8156, "An expression cannot be used in this context because it may not be returned by reference."
 
@@ -59,7 +59,7 @@ return ref p;
 
 A caller can handle a ref return value in either of two ways:
 
-- As an ordinary value returned by value from a method. The caller can choose to ignore that the return value is a reference return value. In this case, any changes made to the value returned by the method call are not reflected in the state of the called type.
+- As an ordinary value returned by value from a method. The caller can choose to ignore that the return value is a reference return value. In this case, any changes made to the value returned by the method call are not reflected in the state of the called type. If the returned value is a value type, any changes made to the value returned by the method call are not reflected in the state of the called type.
 
 - As a reference return value. The caller must define the variable to which the reference return value is assigned as a [ref local](#ref-local), and any changes to the value returned by the method call are reflected in the state of the called type. 
 

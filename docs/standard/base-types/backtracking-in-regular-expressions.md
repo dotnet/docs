@@ -164,7 +164,7 @@ manager: "wpickett"
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Start the match at the beginning of the string.|  
-|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option.|  
+|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option.|  
 |`[-.\w]*`|Match zero, one, or more occurrences of a hyphen, period, or word character.|  
 |`[0-9A-Z]`|Match an alphanumeric character.|  
 |`([-.\w]*[0-9A-Z])*`|Match zero or more occurrences of the combination of zero or more hyphens, periods, or word characters, followed by an alphanumeric character. This is the first capturing group.|  
@@ -175,7 +175,7 @@ manager: "wpickett"
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Start the match at the beginning of the string.|  
-|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option.|  
+|`[0-9A-Z]`|Match an alphanumeric character. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option.|  
 |`[-.\w]*`|Match zero or more occurrences of a hyphen, period, or word character.|  
 |`(?<=[0-9A-Z])`|Look back at the last matched character and continue the match if it is alphanumeric. Note that alphanumeric characters are a subset of the set that consists of periods, hyphens, and all word characters.|  
 |`@`|Match an at sign ("@").|  
@@ -196,7 +196,7 @@ manager: "wpickett"
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Start the match at the beginning of the string.|  
-|`([A-Z]\w*)+\.`|Match an alphabetical character (A-Z) followed by zero or more word characters one or more times, followed by a period. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option.|  
+|`([A-Z]\w*)+\.`|Match an alphabetical character (A-Z) followed by zero or more word characters one or more times, followed by a period. This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option.|  
 |`(([A-Z]\w*)+\.)*`|Match the previous pattern zero or more times.|  
 |`[A-Z]\w*`|Match an alphabetical character followed by zero or more word characters.|  
 |`$`|End the match at the end of the input string.|  
@@ -206,7 +206,7 @@ manager: "wpickett"
 |Pattern|Description|  
 |-------------|-----------------|  
 |`^`|Start the match at the beginning of the string.|  
-|`(?=[A-Z])`|Look ahead to the first character and continue the match if it is alphabetical (A-Z). This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option.|  
+|`(?=[A-Z])`|Look ahead to the first character and continue the match if it is alphabetical (A-Z). This comparison is case-insensitive, because the <xref:System.Text.RegularExpressions.Regex.IsMatch%2A?displayProperty=fullName> method is called with the <xref:System.Text.RegularExpressions.RegexOptions.IgnoreCase?displayProperty=fullName> option.|  
 |`\w+\.`|Match one or more word characters followed by a period.|  
 |`((?=[A-Z])\w+\.)*`|Match the pattern of one or more word characters followed by a period zero or more times. The initial word character must be alphabetical.|  
 |`[A-Z]\w*`|Match an alphabetical character followed by zero or more word characters.|  

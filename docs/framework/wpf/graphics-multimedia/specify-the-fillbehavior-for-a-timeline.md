@@ -26,7 +26,7 @@ This example shows how to specify the <xref:System.Windows.Media.Animation.Timel
   
  The following example uses a <xref:System.Windows.Media.Animation.DoubleAnimation> to animate the <xref:System.Windows.FrameworkElement.Width%2A> of two rectangles. Each rectangle uses a different <xref:System.Windows.Media.Animation.Timeline> object.  
   
- One <xref:System.Windows.Media.Animation.Timeline> has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> that is set to <xref:System.Windows.Media.Animation.FillBehavior>, which causes the width of the rectangle to revert back to its non-animated value when the <xref:System.Windows.Media.Animation.Timeline> ends. The other <xref:System.Windows.Media.Animation.Timeline> has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> of <xref:System.Windows.Media.Animation.FillBehavior>, which causes the width to remain at its end value when the <xref:System.Windows.Media.Animation.Timeline> ends.  
+ One <xref:System.Windows.Media.Animation.Timeline> has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> that is set to <xref:System.Windows.Media.Animation.FillBehavior.Stop>, which causes the width of the rectangle to revert back to its non-animated value when the <xref:System.Windows.Media.Animation.Timeline> ends. The other <xref:System.Windows.Media.Animation.Timeline> has a <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> of <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>, which causes the width to remain at its end value when the <xref:System.Windows.Media.Animation.Timeline> ends.  
   
  [!code-xml[timingbehaviors_snip#FillBehaviorWholePage](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/FillBehaviorExample.xaml#fillbehaviorwholepage)]  
   
@@ -37,8 +37,8 @@ This example shows how to specify the <xref:System.Windows.Media.Animation.Timel
  <xref:System.Windows.FrameworkElement.Width%2A>   
  <xref:System.Windows.Media.Animation.Timeline>   
  <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A>   
- <xref:System.Windows.Media.Animation.FillBehavior>   
- <xref:System.Windows.Media.Animation.FillBehavior>   
+ <xref:System.Windows.Media.Animation.FillBehavior.Stop>   
+ <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>   
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)   
  [Animation and Timing](http://msdn.microsoft.com/en-us/7d83765b-d5ae-41b1-b423-80206e1124aa)   
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)

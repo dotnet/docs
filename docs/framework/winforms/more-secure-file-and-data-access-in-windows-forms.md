@@ -46,8 +46,8 @@ The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] uses permission
   
 |Class|Required access value|  
 |-----------|---------------------------|  
-|<xref:System.Windows.Forms.OpenFileDialog>|<xref:System.Security.Permissions.FileDialogPermissionAccess>|  
-|<xref:System.Windows.Forms.SaveFileDialog>|<xref:System.Security.Permissions.FileDialogPermissionAccess>|  
+|<xref:System.Windows.Forms.OpenFileDialog>|<xref:System.Security.Permissions.FileDialogPermissionAccess.Open>|  
+|<xref:System.Windows.Forms.SaveFileDialog>|<xref:System.Security.Permissions.FileDialogPermissionAccess.Save>|  
   
 > [!NOTE]
 >  The specific permission is not requested until the <xref:System.Windows.Forms.OpenFileDialog.OpenFile%2A> method is actually called.  
@@ -143,7 +143,7 @@ private void ButtonOpen_Click(object sender, System.EventArgs e)
 ### Other Files  
  Sometimes you will need to read or write to files that the user does not specify, such as when you must persist application settings. In the local intranet and Internet zones, your application will not have permission to store data in a local file. However, your application will be able to store data in isolated storage. Isolated storage is an abstract data compartment (not a specific storage location) that contains one or more isolated storage files, called stores, that contain the actual directory locations where data is stored. File access permissions like <xref:System.Security.Permissions.FileIOPermission> are not required; instead, the <xref:System.Security.Permissions.IsolatedStoragePermission> class controls the permissions for isolated storage. By default, applications that are running in the local intranet and Internet zones can store data using isolated storage; however, settings like disk quota can vary. For more information about isolated storage, see [Isolated Storage](../../../docs/standard/io/isolated-storage.md).  
   
- The following example uses isolated storage to write data to a file located in a store. The example requires <xref:System.Security.Permissions.IsolatedStorageFilePermission> and the <xref:System.Security.Permissions.IsolatedStorageContainment> enumeration value. The example demonstrates reading and writing certain property values of the <xref:System.Windows.Forms.Button> control to a file in isolated storage. The `Read` function would be called after the application starts and the `Write` function would be called before the application ends. The example requires that the `Read` and `Write` functions exist as members of a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.Button>control named `MainButton`.  
+ The following example uses isolated storage to write data to a file located in a store. The example requires <xref:System.Security.Permissions.IsolatedStorageFilePermission> and the <xref:System.Security.Permissions.IsolatedStorageContainment.DomainIsolationByUser> enumeration value. The example demonstrates reading and writing certain property values of the <xref:System.Windows.Forms.Button> control to a file in isolated storage. The `Read` function would be called after the application starts and the `Write` function would be called before the application ends. The example requires that the `Read` and `Write` functions exist as members of a <xref:System.Windows.Forms.Form> that contains a <xref:System.Windows.Forms.Button>control named `MainButton`.  
   
 ```vb  
 ' Reads the button options from the isolated storage. Uses Default values   

@@ -219,7 +219,7 @@ public class BankingDepositLog
 ## Signing and Encrypting Parts of the Message  
  A message contract can indicate whether the headers and/or body of the message should be digitally signed and encrypted.  
   
- This is done by setting the <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=fullName> property on the <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes. The property is an enumeration of the <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> type and can be set to <xref:System.Net.Security.ProtectionLevel> (no encryption or signature), <xref:System.Net.Security.ProtectionLevel> (digital signature only), or <xref:System.Net.Security.ProtectionLevel> (both encryption and a digital signature). The default is <xref:System.Net.Security.ProtectionLevel>.  
+ This is done by setting the <xref:System.ServiceModel.MessageContractMemberAttribute.ProtectionLevel%2A?displayProperty=fullName> property on the <xref:System.ServiceModel.MessageHeaderAttribute> and <xref:System.ServiceModel.MessageBodyMemberAttribute> attributes. The property is an enumeration of the <xref:System.Net.Security.ProtectionLevel?displayProperty=fullName> type and can be set to <xref:System.Net.Security.ProtectionLevel.None> (no encryption or signature), <xref:System.Net.Security.ProtectionLevel.Sign> (digital signature only), or <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> (both encryption and a digital signature). The default is <xref:System.Net.Security.ProtectionLevel.EncryptAndSign>.  
   
  For these security features to work, you must properly configure the binding and behaviors. If you use these security features without the proper configuration (for example, attempting to sign a message without supplying your credentials), an exception is thrown at validation time.  
   
@@ -242,7 +242,7 @@ public class PatientRecord
 }  
 ```  
   
- In this example, the `recordID` header is not protected, `patientName` is `signed`, and `SSN` is encrypted and signed. At least one body part, `medicalHistory`, has <xref:System.Net.Security.ProtectionLevel> applied, and thus the entire message body is encrypted and signed, even though the comments and diagnosis body parts specify lower protection levels.  
+ In this example, the `recordID` header is not protected, `patientName` is `signed`, and `SSN` is encrypted and signed. At least one body part, `medicalHistory`, has <xref:System.Net.Security.ProtectionLevel.EncryptAndSign> applied, and thus the entire message body is encrypted and signed, even though the comments and diagnosis body parts specify lower protection levels.  
   
 ## SOAP Action  
  SOAP and related Web services standards define a property called `Action` that can be present for every SOAP message sent. The operation's <xref:System.ServiceModel.OperationContractAttribute.Action%2A?displayProperty=fullName> and <xref:System.ServiceModel.OperationContractAttribute.ReplyAction%2A?displayProperty=fullName> properties control the value of this property.  

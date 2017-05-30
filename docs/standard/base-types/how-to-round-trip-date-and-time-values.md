@@ -31,14 +31,14 @@ In many applications, a date and time value is intended to unambiguously identif
   
 3.  Retrieve the string that represents the <xref:System.DateTime> value.  
   
-4.  Call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, and pass <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> as the value of the `styles` parameter.  
+4.  Call the <xref:System.DateTime.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, and pass <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=fullName> as the value of the `styles` parameter.  
   
  The following example illustrates how to round-trip a <xref:System.DateTime> value.  
   
  [!code-csharp[Formatting.HowTo.RoundTrip#1](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.HowTo.RoundTrip/cs/RoundTrip.cs#1)]
  [!code-vb[Formatting.HowTo.RoundTrip#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.HowTo.RoundTrip/vb/RoundTrip.vb#1)]  
   
- When round-tripping a <xref:System.DateTime> value, this technique successfully preserves the time for all local and universal times. For example, if a local <xref:System.DateTime> value is saved on a system in the U.S. Pacific Standard Time zone and is restored on a system in the U.S. Central Standard Time zone, the restored date and time will be two hours later than the original time, which reflects the time difference between the two time zones. However, this technique is not necessarily accurate for unspecified times. All <xref:System.DateTime> values whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind> are treated as if they are local times. If this is not the case, the <xref:System.DateTime> will not successfully identify the correct point in time. The workaround for this limitation is to tightly couple a date and time value with its time zone for the save and restore operation.  
+ When round-tripping a <xref:System.DateTime> value, this technique successfully preserves the time for all local and universal times. For example, if a local <xref:System.DateTime> value is saved on a system in the U.S. Pacific Standard Time zone and is restored on a system in the U.S. Central Standard Time zone, the restored date and time will be two hours later than the original time, which reflects the time difference between the two time zones. However, this technique is not necessarily accurate for unspecified times. All <xref:System.DateTime> values whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified> are treated as if they are local times. If this is not the case, the <xref:System.DateTime> will not successfully identify the correct point in time. The workaround for this limitation is to tightly couple a date and time value with its time zone for the save and restore operation.  
   
 ### To round-trip a DateTimeOffset value  
   
@@ -48,7 +48,7 @@ In many applications, a date and time value is intended to unambiguously identif
   
 3.  Retrieve the string that represents the <xref:System.DateTimeOffset> value.  
   
-4.  Call the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, and pass <xref:System.Globalization.DateTimeStyles?displayProperty=fullName> as the value of the `styles` parameter.  
+4.  Call the <xref:System.DateTimeOffset.Parse%28System.String%2CSystem.IFormatProvider%2CSystem.Globalization.DateTimeStyles%29?displayProperty=fullName> method, and pass <xref:System.Globalization.DateTimeStyles.RoundtripKind?displayProperty=fullName> as the value of the `styles` parameter.  
   
  The following example illustrates how to round-trip a <xref:System.DateTimeOffset> value.  
   

@@ -71,12 +71,12 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
     |--------------|-----------|  
     |Name|`stackStrip`|  
     |CanOverflow|`false`|  
-    |Dock|<xref:System.Windows.Forms.DockStyle>|  
+    |Dock|<xref:System.Windows.Forms.DockStyle.Bottom>|  
     |Font|`Tahoma, 10pt, style=Bold`|  
-    |GripStyle|<xref:System.Windows.Forms.ToolStripGripStyle>|  
-    |LayoutStyle|<xref:System.Windows.Forms.ToolStripLayoutStyle>|  
+    |GripStyle|<xref:System.Windows.Forms.ToolStripGripStyle.Hidden>|  
+    |LayoutStyle|<xref:System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow>|  
     |Padding|`0, 7, 0, 0`|  
-    |RenderMode|<xref:System.Windows.Forms.ToolStripRenderMode>|  
+    |RenderMode|<xref:System.Windows.Forms.ToolStripRenderMode.Professional>|  
   
 3.  In the Windows Forms Designer, click the <xref:System.Windows.Forms.ToolStrip> control's **Add** button and add a <xref:System.Windows.Forms.ToolStripButton> to the `stackStrip` control.  
   
@@ -86,15 +86,15 @@ You can give your application’s <xref:System.Windows.Forms.ToolStrip> controls
     |--------------|-----------|  
     |Name|`mailStackButton`|  
     |CheckOnClick|true|  
-    |CheckState|<xref:System.Windows.Forms.CheckState>|  
-    |DisplayStyle|<xref:System.Windows.Forms.ToolStripItemDisplayStyle>|  
-    |ImageAlign|<xref:System.Drawing.ContentAlignment>|  
-    |ImageScaling|<xref:System.Windows.Forms.ToolStripItemImageScaling>|  
+    |CheckState|<xref:System.Windows.Forms.CheckState.Checked>|  
+    |DisplayStyle|<xref:System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText>|  
+    |ImageAlign|<xref:System.Drawing.ContentAlignment.MiddleLeft>|  
+    |ImageScaling|<xref:System.Windows.Forms.ToolStripItemImageScaling.None>|  
     |ImageTransparentColor|`238, 238, 238`|  
     |Margin|`0, 0, 0, 0`|  
     |Padding|`3, 3, 3, 3`|  
     |Text|**Mail**|  
-    |TextAlign|<xref:System.Drawing.ContentAlignment>|  
+    |TextAlign|<xref:System.Drawing.ContentAlignment.MiddleLeft>|  
   
 5.  Repeat step 7 for three more <xref:System.Windows.Forms.ToolStripButton> controls.  
   

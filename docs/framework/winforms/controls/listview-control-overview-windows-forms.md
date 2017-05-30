@@ -37,21 +37,21 @@ The Windows Forms <xref:System.Windows.Forms.ListView> control displays a list o
   
 |ListView member|View|  
 |---------------------|----------|  
-|<xref:System.Windows.Forms.ListView.Alignment%2A> property|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.AutoArrange%2A> property|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.AutoResizeColumn%2A> method|<xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.Columns%2A> property|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.DrawSubItem> event|<xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.FindItemWithText%2A> method|<xref:System.Windows.Forms.View>, <xref:System.Windows.Forms.View>, or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.FindNearestItem%2A> method|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.GetItemAt%2A> method|<xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.Groups%2A> property|All views except <xref:System.Windows.Forms.View>|  
-|<xref:System.Windows.Forms.ListView.HeaderStyle%2A> property|<xref:System.Windows.Forms.View>.|  
-|<xref:System.Windows.Forms.ListView.InsertionMark%2A> property|<xref:System.Windows.Forms.View>, <xref:System.Windows.Forms.View>, or <xref:System.Windows.Forms.View>|  
+|<xref:System.Windows.Forms.ListView.Alignment%2A> property|<xref:System.Windows.Forms.View.SmallIcon> or <xref:System.Windows.Forms.View.LargeIcon>|  
+|<xref:System.Windows.Forms.ListView.AutoArrange%2A> property|<xref:System.Windows.Forms.View.SmallIcon> or <xref:System.Windows.Forms.View.LargeIcon>|  
+|<xref:System.Windows.Forms.ListView.AutoResizeColumn%2A> method|<xref:System.Windows.Forms.View.Details>|  
+|<xref:System.Windows.Forms.ListView.Columns%2A> property|<xref:System.Windows.Forms.View.Details> or <xref:System.Windows.Forms.View.Tile>|  
+|<xref:System.Windows.Forms.ListView.DrawSubItem> event|<xref:System.Windows.Forms.View.Details>|  
+|<xref:System.Windows.Forms.ListView.FindItemWithText%2A> method|<xref:System.Windows.Forms.View.Details>, <xref:System.Windows.Forms.View.List>, or <xref:System.Windows.Forms.View.Tile>|  
+|<xref:System.Windows.Forms.ListView.FindNearestItem%2A> method|<xref:System.Windows.Forms.View.SmallIcon> or <xref:System.Windows.Forms.View.LargeIcon>|  
+|<xref:System.Windows.Forms.ListView.GetItemAt%2A> method|<xref:System.Windows.Forms.View.Details> or <xref:System.Windows.Forms.View.Tile>|  
+|<xref:System.Windows.Forms.ListView.Groups%2A> property|All views except <xref:System.Windows.Forms.View.List>|  
+|<xref:System.Windows.Forms.ListView.HeaderStyle%2A> property|<xref:System.Windows.Forms.View.Details>.|  
+|<xref:System.Windows.Forms.ListView.InsertionMark%2A> property|<xref:System.Windows.Forms.View.LargeIcon>, <xref:System.Windows.Forms.View.SmallIcon>, or <xref:System.Windows.Forms.View.Tile>|  
   
  The key property of the <xref:System.Windows.Forms.ListView> control is <xref:System.Windows.Forms.ListView.Items%2A>, which contains the items displayed by the control. The <xref:System.Windows.Forms.ListView.SelectedItems%2A> property contains a collection of the items currently selected in the control. The user can select multiple items, for example to drag and drop several items at a time to another control, if the <xref:System.Windows.Forms.ListView.MultiSelect%2A> property is set to `true`. The <xref:System.Windows.Forms.ListView> control can display check boxes next to the items, if the <xref:System.Windows.Forms.ListView.CheckBoxes%2A> property is set to `true`.  
   
- The <xref:System.Windows.Forms.ListView.Activation%2A> property determines what type of action the user must take to activate an item in the list: the options are <xref:System.Windows.Forms.ItemActivation>, <xref:System.Windows.Forms.ItemActivation>, and <xref:System.Windows.Forms.ItemActivation>. <xref:System.Windows.Forms.ItemActivation> activation requires a single click to activate the item. <xref:System.Windows.Forms.ItemActivation> activation requires the user to double-click to activate the item; a single click changes the color of the item text. <xref:System.Windows.Forms.ItemActivation> activation requires the user to double-click to activate an item, but the item does not change appearance.  
+ The <xref:System.Windows.Forms.ListView.Activation%2A> property determines what type of action the user must take to activate an item in the list: the options are <xref:System.Windows.Forms.ItemActivation.Standard>, <xref:System.Windows.Forms.ItemActivation.OneClick>, and <xref:System.Windows.Forms.ItemActivation.TwoClick>. <xref:System.Windows.Forms.ItemActivation.OneClick> activation requires a single click to activate the item. <xref:System.Windows.Forms.ItemActivation.TwoClick> activation requires the user to double-click to activate the item; a single click changes the color of the item text. <xref:System.Windows.Forms.ItemActivation.Standard> activation requires the user to double-click to activate an item, but the item does not change appearance.  
   
  The <xref:System.Windows.Forms.ListView> control also supports the visual styles and other features available on the Windows XP platform, including grouping, tile view, and insertion marks. For more information, see [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0).  
   

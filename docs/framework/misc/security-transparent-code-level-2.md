@@ -40,7 +40,7 @@ manager: "wpickett"
   
     -   Call native code or code with the <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> attribute.  
   
-    -   Call a member that is protected by a <xref:System.Security.Permissions.SecurityAction>.  
+    -   Call a member that is protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand>.  
   
     -   Inherit from critical types.  
   
@@ -180,7 +180,7 @@ manager: "wpickett"
 ## Additional Information and Rules  
   
 ### LinkDemand Support  
- The level 2 transparency model replaces the <xref:System.Security.Permissions.SecurityAction> with the <xref:System.Security.SecurityCriticalAttribute> attribute. In legacy (level 1) code, a <xref:System.Security.Permissions.SecurityAction> is automatically treated as a <xref:System.Security.Permissions.SecurityAction>.  
+ The level 2 transparency model replaces the <xref:System.Security.Permissions.SecurityAction.LinkDemand> with the <xref:System.Security.SecurityCriticalAttribute> attribute. In legacy (level 1) code, a <xref:System.Security.Permissions.SecurityAction.LinkDemand> is automatically treated as a <xref:System.Security.Permissions.SecurityAction.Demand>.  
   
 ### Reflection  
  Invoking a critical method or reading a critical field triggers a demand for full trust (just as if you were invoking a private method or field). Therefore, full-trust code can invoke a critical method, whereas partial-trust code cannot.  

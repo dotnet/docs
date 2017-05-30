@@ -206,7 +206,7 @@ For more information about installing the latest version of Visual Studio, see [
   
     [!code-xml[ExpenseIt#8](../../../../samples/snippets/csharp/VS_Snippets_Wpf/ExpenseIt/CSharp/ExpenseIt3/ExpenseItHome.xaml#8)]  
   
-     The <xref:System.Windows.Controls.RowDefinition.Height%2A> of two rows is set to <xref:System.Windows.GridLength.Auto%2A> which means that the rows will be sized base on the content in the rows. The default <xref:System.Windows.Controls.RowDefinition.Height%2A> is <xref:System.Windows.GridUnitType> sizing, which means that the row will be a weighted proportion of the available space. For example if two rows each have a height of "*", they will each have a height that is half of the available space. 
+     The <xref:System.Windows.Controls.RowDefinition.Height%2A> of two rows is set to <xref:System.Windows.GridLength.Auto%2A> which means that the rows will be sized base on the content in the rows. The default <xref:System.Windows.Controls.RowDefinition.Height%2A> is <xref:System.Windows.GridUnitType.Star> sizing, which means that the row will be a weighted proportion of the available space. For example if two rows each have a height of "*", they will each have a height that is half of the available space.  
   
      Your <xref:System.Windows.Controls.Grid> should now look like the following XAML:  
   

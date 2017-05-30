@@ -149,9 +149,9 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
  **A:** By default, messages are signed using an MSMQ internal certificate that requires the Active Directory directory service. In workgroup mode, because Active Directory is not available, signing the message fails. So the message lands in the dead-letter queue and failure cause, such as "Bad signature", is indicated.  
   
- The workaround is to turn off security. This is done by setting <xref:System.ServiceModel.NetMsmqSecurity.Mode%2A> = <xref:System.ServiceModel.NetMsmqSecurityMode> to make it work in workgroup mode.  
+ The workaround is to turn off security. This is done by setting <xref:System.ServiceModel.NetMsmqSecurity.Mode%2A> = <xref:System.ServiceModel.NetMsmqSecurityMode.None> to make it work in workgroup mode.  
   
- Another workaround is to get the <xref:System.ServiceModel.MsmqTransportSecurity> from the <xref:System.ServiceModel.NetMsmqSecurity.Transport%2A> property and set it to <xref:System.ServiceModel.MsmqAuthenticationMode>, and set the client certificate.  
+ Another workaround is to get the <xref:System.ServiceModel.MsmqTransportSecurity> from the <xref:System.ServiceModel.NetMsmqSecurity.Transport%2A> property and set it to <xref:System.ServiceModel.MsmqAuthenticationMode.Certificate>, and set the client certificate.  
   
  Yet another workaround is to install MSMQ with Active Directory integration.  
   
@@ -159,7 +159,7 @@ System.ServiceModel.MsmqPoisonMessageException: The transport channel detected a
   
  **A:** This means that the certificate in Active Directory for the sender must be renewed. To do so, open **Control Panel**, **Administrative Tools**, **Computer Management**, right-click **MSMQ**, and select **Properties**. Select the **User Certificate** tab and click the **Renew** button.  
   
- **Q:** When I send a message using <xref:System.ServiceModel.MsmqAuthenticationMode> and specify the certificate to use, I get an "Invalid certificate" message. How do I fix this?  
+ **Q:** When I send a message using <xref:System.ServiceModel.MsmqAuthenticationMode.Certificate> and specify the certificate to use, I get an "Invalid certificate" message. How do I fix this?  
   
  **A:** You cannot use a local machine certificate store with certificate mode. You have to copy the certificate from the machine certificate store to the current user store using the Certificate snap-in. To get the Certificate snap-in:  
   

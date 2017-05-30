@@ -49,7 +49,7 @@ public interface ICalculatorSession
 }  
 ```  
   
- The service uses a <xref:System.ServiceModel.InstanceContextMode> of <xref:System.ServiceModel.InstanceContextMode> to bind a given service instance context to each incoming session. This allows the service to maintain the running result for each session in a local member variable.  
+ The service uses a <xref:System.ServiceModel.InstanceContextMode> of <xref:System.ServiceModel.InstanceContextMode.PerSession> to bind a given service instance context to each incoming session. This allows the service to maintain the running result for each session in a local member variable.  
   
 ```  
 [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)]  

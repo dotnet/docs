@@ -15,6 +15,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
@@ -66,6 +70,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -135,6 +143,10 @@ Display the modified XML...
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlAttributeCollection</ReturnType>
       </ReturnValue>
@@ -174,6 +186,10 @@ Display the modified XML...
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -266,6 +282,10 @@ Display the modified XML...
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeList</ReturnType>
       </ReturnValue>
@@ -306,6 +326,10 @@ Display the modified XML...
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -376,6 +400,10 @@ Display the modified XML...
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -442,6 +470,10 @@ Display the modified XML...
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XPath.XPathNavigator</ReturnType>
       </ReturnValue>
@@ -488,6 +520,10 @@ Display the modified XML...
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -531,6 +567,10 @@ Display the modified XML...
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
@@ -542,7 +582,7 @@ Display the modified XML...
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Provides support for the “for each” style iteration over the nodes in the `XmlNode`.  
+ Provides support for the "for each" style iteration over the nodes in the `XmlNode`.  
   
  This method is a Microsoft extension to the Document Object Model (DOM).  
   
@@ -580,6 +620,10 @@ Display the modified XML...
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -628,6 +672,10 @@ Display the modified XML...
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -675,6 +723,10 @@ Display the modified XML...
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -718,6 +770,10 @@ Display the modified XML...
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -778,6 +834,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -785,12 +845,9 @@ d.</elem>
         <summary>Gets or sets the markup representing only the child nodes of this node.</summary>
         <value>The markup of the child nodes of this node.  
   
- <block subset="none" type="note">  
-<para>  
- <see langword="InnerXml" /> does not return default attributes.  
+ <block subset="none" type="note"><para><see langword="InnerXml" /> does not return default attributes.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -834,6 +891,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -899,6 +960,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -961,6 +1026,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -997,6 +1066,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
@@ -1045,6 +1118,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlElement</ReturnType>
       </ReturnValue>
@@ -1085,6 +1162,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -1123,6 +1204,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1132,136 +1217,71 @@ d.</elem>
   
  The name returned is dependent on the <see cref="P:System.Xml.XmlNode.NodeType" /> of the node:  
   
- <list type="table">  
-<listheader>  
-<term> Type  
+ <list type="table"><listheader><term> Type  
   
- </term>  
-<description> Name  
+ </term><description> Name  
   
- </description>  
-</listheader>  
-<item>  
-<term> Attribute  
+ </description></listheader><item><term> Attribute  
   
- </term>  
-<description> The local name of the attribute.  
+ </term><description> The local name of the attribute.  
   
- </description>  
-</item>  
-<item>  
-<term> CDATA  
+ </description></item><item><term> CDATA  
   
- </term>  
-<description> #cdata-section  
+ </term><description> #cdata-section  
   
- </description>  
-</item>  
-<item>  
-<term> Comment  
+ </description></item><item><term> Comment  
   
- </term>  
-<description> #comment  
+ </term><description> #comment  
   
- </description>  
-</item>  
-<item>  
-<term> Document  
+ </description></item><item><term> Document  
   
- </term>  
-<description> #document  
+ </term><description> #document  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentFragment  
+ </description></item><item><term> DocumentFragment  
   
- </term>  
-<description> #document-fragment  
+ </term><description> #document-fragment  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentType  
+ </description></item><item><term> DocumentType  
   
- </term>  
-<description> The document type name.  
+ </term><description> The document type name.  
   
- </description>  
-</item>  
-<item>  
-<term> Element  
+ </description></item><item><term> Element  
   
- </term>  
-<description> The local name of the element.  
+ </term><description> The local name of the element.  
   
- </description>  
-</item>  
-<item>  
-<term> Entity  
+ </description></item><item><term> Entity  
   
- </term>  
-<description> The name of the entity.  
+ </term><description> The name of the entity.  
   
- </description>  
-</item>  
-<item>  
-<term> EntityReference  
+ </description></item><item><term> EntityReference  
   
- </term>  
-<description> The name of the entity referenced.  
+ </term><description> The name of the entity referenced.  
   
- </description>  
-</item>  
-<item>  
-<term> Notation  
+ </description></item><item><term> Notation  
   
- </term>  
-<description> The notation name.  
+ </term><description> The notation name.  
   
- </description>  
-</item>  
-<item>  
-<term> ProcessingInstruction  
+ </description></item><item><term> ProcessingInstruction  
   
- </term>  
-<description> The target of the processing instruction.  
+ </term><description> The target of the processing instruction.  
   
- </description>  
-</item>  
-<item>  
-<term> Text  
+ </description></item><item><term> Text  
   
- </term>  
-<description> #text  
+ </term><description> #text  
   
- </description>  
-</item>  
-<item>  
-<term> Whitespace  
+ </description></item><item><term> Whitespace  
   
- </term>  
-<description> #whitespace  
+ </term><description> #whitespace  
   
- </description>  
-</item>  
-<item>  
-<term> SignificantWhitespace  
+ </description></item><item><term> SignificantWhitespace  
   
- </term>  
-<description> #significant-whitespace  
+ </term><description> #significant-whitespace  
   
- </description>  
-</item>  
-<item>  
-<term> XmlDeclaration  
+ </description></item><item><term> XmlDeclaration  
   
- </term>  
-<description> #xml-declaration  
+ </term><description> #xml-declaration  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1290,6 +1310,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1297,136 +1321,71 @@ d.</elem>
         <summary>Gets the qualified name of the node, when overridden in a derived class.</summary>
         <value>The qualified name of the node. The name returned is dependent on the <see cref="P:System.Xml.XmlNode.NodeType" /> of the node:  
   
- <list type="table">  
-<listheader>  
-<term> Type  
+ <list type="table"><listheader><term> Type  
   
- </term>  
-<description> Name  
+ </term><description> Name  
   
- </description>  
-</listheader>  
-<item>  
-<term> Attribute  
+ </description></listheader><item><term> Attribute  
   
- </term>  
-<description> The qualified name of the attribute.  
+ </term><description> The qualified name of the attribute.  
   
- </description>  
-</item>  
-<item>  
-<term> CDATA  
+ </description></item><item><term> CDATA  
   
- </term>  
-<description> #cdata-section  
+ </term><description> #cdata-section  
   
- </description>  
-</item>  
-<item>  
-<term> Comment  
+ </description></item><item><term> Comment  
   
- </term>  
-<description> #comment  
+ </term><description> #comment  
   
- </description>  
-</item>  
-<item>  
-<term> Document  
+ </description></item><item><term> Document  
   
- </term>  
-<description> #document  
+ </term><description> #document  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentFragment  
+ </description></item><item><term> DocumentFragment  
   
- </term>  
-<description> #document-fragment  
+ </term><description> #document-fragment  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentType  
+ </description></item><item><term> DocumentType  
   
- </term>  
-<description> The document type name.  
+ </term><description> The document type name.  
   
- </description>  
-</item>  
-<item>  
-<term> Element  
+ </description></item><item><term> Element  
   
- </term>  
-<description> The qualified name of the element.  
+ </term><description> The qualified name of the element.  
   
- </description>  
-</item>  
-<item>  
-<term> Entity  
+ </description></item><item><term> Entity  
   
- </term>  
-<description> The name of the entity.  
+ </term><description> The name of the entity.  
   
- </description>  
-</item>  
-<item>  
-<term> EntityReference  
+ </description></item><item><term> EntityReference  
   
- </term>  
-<description> The name of the entity referenced.  
+ </term><description> The name of the entity referenced.  
   
- </description>  
-</item>  
-<item>  
-<term> Notation  
+ </description></item><item><term> Notation  
   
- </term>  
-<description> The notation name.  
+ </term><description> The notation name.  
   
- </description>  
-</item>  
-<item>  
-<term> ProcessingInstruction  
+ </description></item><item><term> ProcessingInstruction  
   
- </term>  
-<description> The target of the processing instruction.  
+ </term><description> The target of the processing instruction.  
   
- </description>  
-</item>  
-<item>  
-<term> Text  
+ </description></item><item><term> Text  
   
- </term>  
-<description> #text  
+ </term><description> #text  
   
- </description>  
-</item>  
-<item>  
-<term> Whitespace  
+ </description></item><item><term> Whitespace  
   
- </term>  
-<description> #whitespace  
+ </term><description> #whitespace  
   
- </description>  
-</item>  
-<item>  
-<term> SignificantWhitespace  
+ </description></item><item><term> SignificantWhitespace  
   
- </term>  
-<description> #significant-whitespace  
+ </term><description> #significant-whitespace  
   
- </description>  
-</item>  
-<item>  
-<term> XmlDeclaration  
+ </description></item><item><term> XmlDeclaration  
   
- </term>  
-<description> #xml-declaration  
+ </term><description> #xml-declaration  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1447,6 +1406,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1483,6 +1446,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -1522,6 +1489,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeType</ReturnType>
       </ReturnValue>
@@ -1555,6 +1526,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -1590,6 +1565,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1597,12 +1576,9 @@ d.</elem>
         <summary>Gets the markup containing this node and all its child nodes.</summary>
         <value>The markup containing this node and all its child nodes.  
   
- <block subset="none" type="note">  
-<para>  
- <see langword="OuterXml" /> does not return default attributes.  
+ <block subset="none" type="note"><para><see langword="OuterXml" /> does not return default attributes.  
   
-</para>  
-</block></value>
+</para></block></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1639,6 +1615,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlDocument</ReturnType>
@@ -1681,6 +1661,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -1688,80 +1672,43 @@ d.</elem>
         <summary>Gets the parent of this node (for nodes that can have parents).</summary>
         <value>The <see langword="XmlNode" /> that is the parent of the current node. If a node has just been created and not yet added to the tree, or if it has been removed from the tree, the parent is <see langword="null" />. For all other nodes, the value returned depends on the <see cref="P:System.Xml.XmlNode.NodeType" /> of the node. The following table describes the possible return values for the <see langword="ParentNode" /> property.  
   
- <list type="table">  
-<listheader>  
-<term> NodeType  
+ <list type="table"><listheader><term> NodeType  
   
- </term>  
-<description> Return Value of ParentNode  
+ </term><description> Return Value of ParentNode  
   
- </description>  
-</listheader>  
-<item>  
-<term> Attribute, Document, DocumentFragment, Entity, Notation  
+ </description></listheader><item><term> Attribute, Document, DocumentFragment, Entity, Notation  
   
- </term>  
-<description> Returns <see langword="null" />; these nodes do not have parents.  
+ </term><description> Returns <see langword="null" />; these nodes do not have parents.  
   
- </description>  
-</item>  
-<item>  
-<term> CDATA  
+ </description></item><item><term> CDATA  
   
- </term>  
-<description> Returns the element or entity reference containing the CDATA section.  
+ </term><description> Returns the element or entity reference containing the CDATA section.  
   
- </description>  
-</item>  
-<item>  
-<term> Comment  
+ </description></item><item><term> Comment  
   
- </term>  
-<description> Returns the element, entity reference, document type, or document containing the comment.  
+ </term><description> Returns the element, entity reference, document type, or document containing the comment.  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentType  
+ </description></item><item><term> DocumentType  
   
- </term>  
-<description> Returns the document node.  
+ </term><description> Returns the document node.  
   
- </description>  
-</item>  
-<item>  
-<term> Element  
+ </description></item><item><term> Element  
   
- </term>  
-<description> Returns the parent node of the element. If the element is the root node in the tree, the parent is the document node.  
+ </term><description> Returns the parent node of the element. If the element is the root node in the tree, the parent is the document node.  
   
- </description>  
-</item>  
-<item>  
-<term> EntityReference  
+ </description></item><item><term> EntityReference  
   
- </term>  
-<description> Returns the element, attribute, or entity reference containing the entity reference.  
+ </term><description> Returns the element, attribute, or entity reference containing the entity reference.  
   
- </description>  
-</item>  
-<item>  
-<term> ProcessingInstruction  
+ </description></item><item><term> ProcessingInstruction  
   
- </term>  
-<description> Returns the document, element, document type, or entity reference containing the processing instruction.  
+ </term><description> Returns the document, element, document type, or entity reference containing the processing instruction.  
   
- </description>  
-</item>  
-<item>  
-<term> Text  
+ </description></item><item><term> Text  
   
- </term>  
-<description> Returns the parent element, attribute, or entity reference containing the text node.  
+ </term><description> Returns the parent element, attribute, or entity reference containing the text node.  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1789,6 +1736,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -1836,6 +1787,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -1897,6 +1852,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -1935,6 +1894,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -1945,7 +1908,7 @@ d.</elem>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has faster performance than the <xref:System.Xml.XmlNode.PreviousSibling%2A> property but you can use it only to get a node of type <xref:System.Xml.XmlNodeType>. To get any other type of node that that precedes this node, use the <xref:System.Xml.XmlNode.PreviousSibling%2A> property.  
+ This property has faster performance than the <xref:System.Xml.XmlNode.PreviousSibling%2A> property but you can use it only to get a node of type <xref:System.Xml.XmlNodeType.Text>. To get any other type of node that that precedes this node, use the <xref:System.Xml.XmlNode.PreviousSibling%2A> property.  
   
  ]]></format>
         </remarks>
@@ -1968,6 +1931,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2017,6 +1984,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
       </ReturnValue>
@@ -2062,6 +2033,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -2121,6 +2096,10 @@ d.</elem>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.Schema.IXmlSchemaInfo</ReturnType>
       </ReturnValue>
@@ -2137,6 +2116,29 @@ d.</elem>
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SelectNodes">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects a list of nodes matching the XPath expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
+  
+> [!NOTE]
+>  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected.  
+  
+ For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md). For code examples, choose an overload from the overload list in the previous section.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SelectNodes">
       <MemberSignature Language="C#" Value="public System.Xml.XmlNodeList SelectNodes (string xpath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlNodeList SelectNodes(string xpath) cil managed" />
@@ -2150,6 +2152,10 @@ d.</elem>
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeList</ReturnType>
@@ -2224,6 +2230,10 @@ nodeList = root.SelectNodes("//book[contains(title,""'Emma'"")]")
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNodeList</ReturnType>
@@ -2307,6 +2317,40 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
         <exception cref="T:System.Xml.XPath.XPathException">The XPath expression contains a prefix which is not defined in the <see langword="XmlNamespaceManager" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="SelectSingleNode">
+      <AssemblyInfo>
+        <AssemblyName>System.Xml</AssemblyName>
+        <AssemblyVersion>2.0.5.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
+  
+> [!NOTE]
+>  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
+  
+   
+  
+## Examples  
+ The following example returns the first book with the matching author name. The `XmlNamespaceManager` resolves the default namespace in the XPath expression.  
+  
+ [!code-cpp[XmlNode.SelectSingleNode2#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNode.SelectSingleNode2/CPP/XmlNode.SelectSingleNode2.cpp#1)]
+ [!code-csharp[XmlNode.SelectSingleNode2#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNode.SelectSingleNode2/CS/selectsingnode2.cs#1)]
+ [!code-vb[XmlNode.SelectSingleNode2#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNode.SelectSingleNode2/VB/selectsingnode2.vb#1)]  
+  
+ The example uses the file, `newbooks.xml`, as input.  
+  
+ [!code-xml[XmlNode.SelectSingleNode2#2](~/samples/snippets/xml/VS_Snippets_Data/XmlNode.SelectSingleNode2/XML/newbooks.xml#2)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="SelectSingleNode">
       <MemberSignature Language="C#" Value="public System.Xml.XmlNode SelectSingleNode (string xpath);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Xml.XmlNode SelectSingleNode(string xpath) cil managed" />
@@ -2320,6 +2364,10 @@ nodeList = root.SelectNodes("//ab:book[contains(ab:title,""'Emma'"")]", nsmgr)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -2392,6 +2440,10 @@ book = root.SelectSingleNode("descendant::book[title=""'Emma'""]")
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Xml.XmlNode</ReturnType>
@@ -2491,6 +2543,10 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -2505,32 +2561,19 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <returns>
           <see langword="true" /> if the feature is implemented in the specified version; otherwise, <see langword="false" />. The following table describes the combinations that return <see langword="true" />.  
   
- <list type="table">  
-<listheader>  
-<term> Feature  
+ <list type="table"><listheader><term> Feature  
   
- </term>  
-<description> Version  
+ </term><description> Version  
   
- </description>  
-</listheader>  
-<item>  
-<term> XML  
+ </description></listheader><item><term> XML  
   
- </term>  
-<description> 1.0  
+ </term><description> 1.0  
   
- </description>  
-</item>  
-<item>  
-<term> XML  
+ </description></item><item><term> XML  
   
- </term>  
-<description> 2.0  
+ </term><description> 2.0  
   
- </description>  
-</item>  
-</list></returns>
+ </description></item></list></returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2551,6 +2594,10 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
@@ -2582,6 +2629,10 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -2618,6 +2669,10 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -2625,136 +2680,71 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <summary>Gets or sets the value of the node.</summary>
         <value>The value returned depends on the <see cref="P:System.Xml.XmlNode.NodeType" /> of the node:  
   
- <list type="table">  
-<listheader>  
-<term> Type  
+ <list type="table"><listheader><term> Type  
   
- </term>  
-<description> Value  
+ </term><description> Value  
   
- </description>  
-</listheader>  
-<item>  
-<term> Attribute  
+ </description></listheader><item><term> Attribute  
   
- </term>  
-<description> The value of the attribute.  
+ </term><description> The value of the attribute.  
   
- </description>  
-</item>  
-<item>  
-<term> CDATASection  
+ </description></item><item><term> CDATASection  
   
- </term>  
-<description> The content of the CDATA Section.  
+ </term><description> The content of the CDATA Section.  
   
- </description>  
-</item>  
-<item>  
-<term> Comment  
+ </description></item><item><term> Comment  
   
- </term>  
-<description> The content of the comment.  
+ </term><description> The content of the comment.  
   
- </description>  
-</item>  
-<item>  
-<term> Document  
+ </description></item><item><term> Document  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentFragment  
+ </description></item><item><term> DocumentFragment  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> DocumentType  
+ </description></item><item><term> DocumentType  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Element  
+ </description></item><item><term> Element  
   
- </term>  
-<description> <see langword="null" />. You can use the <see cref="P:System.Xml.XmlElement.InnerText" /> or <see cref="P:System.Xml.XmlElement.InnerXml" /> properties to access the value of the element node.  
+ </term><description><see langword="null" />. You can use the <see cref="P:System.Xml.XmlElement.InnerText" /> or <see cref="P:System.Xml.XmlElement.InnerXml" /> properties to access the value of the element node.  
   
- </description>  
-</item>  
-<item>  
-<term> Entity  
+ </description></item><item><term> Entity  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> EntityReference  
+ </description></item><item><term> EntityReference  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> Notation  
+ </description></item><item><term> Notation  
   
- </term>  
-<description> <see langword="null" />.  
+ </term><description><see langword="null" />.  
   
- </description>  
-</item>  
-<item>  
-<term> ProcessingInstruction  
+ </description></item><item><term> ProcessingInstruction  
   
- </term>  
-<description> The entire content excluding the target.  
+ </term><description> The entire content excluding the target.  
   
- </description>  
-</item>  
-<item>  
-<term> Text  
+ </description></item><item><term> Text  
   
- </term>  
-<description> The content of the text node.  
+ </term><description> The content of the text node.  
   
- </description>  
-</item>  
-<item>  
-<term> SignificantWhitespace  
+ </description></item><item><term> SignificantWhitespace  
   
- </term>  
-<description> The white space characters. White space can consist of one or more space characters, carriage returns, line feeds, or tabs.  
+ </term><description> The white space characters. White space can consist of one or more space characters, carriage returns, line feeds, or tabs.  
   
- </description>  
-</item>  
-<item>  
-<term> Whitespace  
+ </description></item><item><term> Whitespace  
   
- </term>  
-<description> The white space characters. White space can consist of one or more space characters, carriage returns, line feeds, or tabs.  
+ </term><description> The white space characters. White space can consist of one or more space characters, carriage returns, line feeds, or tabs.  
   
- </description>  
-</item>  
-<item>  
-<term> XmlDeclaration  
+ </description></item><item><term> XmlDeclaration  
   
- </term>  
-<description> The content of the declaration (that is, everything between &lt;?xml and ?&gt;).  
+ </term><description> The content of the declaration (that is, everything between &lt;?xml and ?&gt;).  
   
- </description>  
-</item>  
-</list></value>
+ </description></item></list></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2788,6 +2778,10 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
@@ -2835,6 +2829,10 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Xml.ReaderWriter</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2863,62 +2861,5 @@ book = root.SelectSingleNode("descendant::ab:book[ab:title=""'Emma'""]", nsmgr)
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="SelectSingleNode">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Selects the first <see langword="XmlNode" /> that matches the XPath expression.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
-  
-> [!NOTE]
->  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected. For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md).  
-  
-   
-  
-## Examples  
- The following example returns the first book with the matching author name. The `XmlNamespaceManager` resolves the default namespace in the XPath expression.  
-  
- [!code-cpp[XmlNode.SelectSingleNode2#1](~/samples/snippets/cpp/VS_Snippets_Data/XmlNode.SelectSingleNode2/CPP/XmlNode.SelectSingleNode2.cpp#1)]
- [!code-csharp[XmlNode.SelectSingleNode2#1](~/samples/snippets/csharp/VS_Snippets_Data/XmlNode.SelectSingleNode2/CS/selectsingnode2.cs#1)]
- [!code-vb[XmlNode.SelectSingleNode2#1](~/samples/snippets/visualbasic/VS_Snippets_Data/XmlNode.SelectSingleNode2/VB/selectsingnode2.vb#1)]  
-  
- The example uses the file, `newbooks.xml`, as input.  
-  
- [!code-xml[XmlNode.SelectSingleNode2#2](~/samples/snippets/xml/VS_Snippets_Data/XmlNode.SelectSingleNode2/XML/newbooks.xml#2)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="SelectNodes">
-      <AssemblyInfo>
-        <AssemblyName>System.Xml</AssemblyName>
-        <AssemblyVersion>2.0.5.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Selects a list of nodes matching the XPath expression.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- XPath expressions can include namespaces. Namespace resolution is supported using the `XmlNamespaceManager`. If the XPath expression includes a prefix, the prefix and namespace URI pair must be added to the `XmlNamespaceManager`.  
-  
-> [!NOTE]
->  If the XPath expression does not include a prefix, it is assumed that the namespace URI is the empty namespace. If your XML includes a default namespace, you must still add a prefix and namespace URI to the `XmlNamespaceManager`; otherwise, you will not get any nodes selected.  
-  
- For more information, see [Select Nodes Using XPath Navigation](~/docs/standard/data/xml/select-nodes-using-xpath-navigation.md). For code examples, choose an overload from the overload list in the previous section.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

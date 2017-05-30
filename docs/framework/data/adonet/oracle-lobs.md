@@ -31,9 +31,7 @@ The .NET Framework Data Provider for Oracle includes the <xref:System.Data.Oracl
 ## Creating, Retrieving, and Writing to a LOB  
  The following C# example demonstrates how you can create LOBs in an Oracle table, and then retrieve and write to them in the form of **OracleLob** objects. The example demonstrates using the <xref:System.Data.OracleClient.OracleDataReader> object and the **OracleLob** **Read** and **Write** methods. The example uses Oracle **BLOB**, **CLOB**, and **NCLOB** data types.  
   
- [C#]  
-  
-```  
+```csharp  
 using System;  
 using System.IO;              
 using System.Text;             
@@ -226,9 +224,7 @@ public class LobExample
 ## Creating a Temporary LOB  
  The following C# example demonstrates how to create a temporary LOB.  
   
- [C#]  
-  
-```  
+```csharp  
 OracleConnection conn = new OracleConnection(  
   "server=test8172; integrated security=yes;");  
 conn.Open();  

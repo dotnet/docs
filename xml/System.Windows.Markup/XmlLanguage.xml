@@ -144,7 +144,7 @@
         <exception cref="T:System.ArgumentNullException">
           <paramref name="ietfLanguageTag" /> parameter cannot be null.</exception>
         <exception cref="T:System.ArgumentException">
-          <paramref name="ietfLanguageTag" /> parameter was non-empty, but did not conform to the syntax specified in RFC 3066. See Remarks.</exception>
+          <paramref name="ietfLanguageTag" /> parameter was non-empty, but did not conform to the syntax specified in RFC 3066.</exception>
       </Docs>
     </Member>
     <Member MemberName="GetSpecificCulture">
@@ -173,7 +173,7 @@
   
  ]]></format>
         </remarks>
-        <exception cref="T:System.InvalidOperationException">No related non-neutral <see cref="T:System.Globalization.CultureInfo" /> is registered for the current <see cref="T:System.Windows.Markup.XmlLanguage" /> <see cref="P:System.Windows.Markup.XmlLanguage.IetfLanguageTag" />.</exception>
+        <exception cref="T:System.InvalidOperationException">No related non-neutral <see cref="T:System.Globalization.CultureInfo" /> is registered for the current <see cref="T:System.Windows.Markup.XmlLanguage" /><see cref="P:System.Windows.Markup.XmlLanguage.IetfLanguageTag" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="IetfLanguageTag">

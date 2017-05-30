@@ -27,7 +27,7 @@ Configure a list of tracking participants that listen to the tracking records be
 ## Syntax  
   
 ```vb  
-   <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>   
+   <tracking>    <participants>       <add name="String"            profileName="String"           type="String" />    </participants> </tracking>   
 ```  
   
 ## Attributes and Elements  

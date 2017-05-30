@@ -13,7 +13,7 @@
   <Docs>
     <summary>Gathers the list of installed SDKS in the registry and on disk and outputs them into the project so they can be used during SDK reference resolution and RAR for single files.  
   
- GetInstalledSDKLocations doesn't recognize a version folder if “v” appears in its name.  For example, an SDK that's located at C:\Windows\Program Files\Microsoft SDKs\Windows\8.0\SDKFolders\3rdPartySDK\2.5\will be located correctly. However, the same SDK located atC:\Windows\Program Files\Microsoft SDKs\Windows\8.0\SDKFolders\3rdPartySDK\v2.5\won't be located and will be ignored. If an SDK is ignored, the failure won't be recorded in the log, and no error will be thrown.  
+ GetInstalledSDKLocations doesn't recognize a version folder if "v" appears in its name.  For example, an SDK that's located at C:\Windows\Program Files\Microsoft SDKs\Windows\8.0\SDKFolders\3rdPartySDK\2.5\will be located correctly. However, the same SDK located atC:\Windows\Program Files\Microsoft SDKs\Windows\8.0\SDKFolders\3rdPartySDK\v2.5\won't be located and will be ignored. If an SDK is ignored, the failure won't be recorded in the log, and no error will be thrown.  
   
  Version folder names need to be formed as major.minor[.build[.revision]]. For more information, see <see cref="M:System.Version.TryParse(System.String,System.Version@)" />.  
   

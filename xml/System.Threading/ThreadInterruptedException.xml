@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Threading.Thread</AssemblyName>
+    <AssemblyVersion>4.1.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.SystemException</BaseTypeName>
   </Base>
@@ -26,7 +30,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- After a thread is created, it is in one or more <xref:System.Threading.ThreadState> states until it is destroyed. Calling <xref:System.Threading.Thread.Interrupt%2A> when a thread is in the <xref:System.Threading.ThreadState> state will cause a <xref:System.Threading.ThreadInterruptedException> to be thrown in the target thread. If the thread is not in the <xref:System.Threading.ThreadState> state, the exception is not thrown until the thread enters that state. If the thread never blocks, it could complete without ever being interrupted.  
+ After a thread is created, it is in one or more <xref:System.Threading.ThreadState> states until it is destroyed. Calling <xref:System.Threading.Thread.Interrupt%2A> when a thread is in the <xref:System.Threading.ThreadState.WaitSleepJoin> state will cause a <xref:System.Threading.ThreadInterruptedException> to be thrown in the target thread. If the thread is not in the <xref:System.Threading.ThreadState.WaitSleepJoin> state, the exception is not thrown until the thread enters that state. If the thread never blocks, it could complete without ever being interrupted.  
   
  <xref:System.Threading.ThreadInterruptedException> uses the HRESULT COR_E_THREADINTERRUPTED, which has the value 0x80131519.  
   
@@ -59,6 +63,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Threading.ThreadInterruptedException" /> class with default properties.</summary>
@@ -90,6 +98,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />
@@ -126,6 +138,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
         <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
@@ -157,6 +173,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Threading.Thread</AssemblyName>
+        <AssemblyVersion>4.1.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
         <Parameter Name="message" Type="System.String" />

@@ -25,9 +25,7 @@
 ## Examples  
  The following example shows how to create an in-memory cache item that monitors the path for a text file. The cache creates a <xref:System.Runtime.Caching.CacheItemPolicy> object and sets the <xref:System.Runtime.Caching.CacheItemPolicy.AbsoluteExpiration%2A> property to evict the cache after 60 seconds.  
   
- [Visual Basic]  
-  
-```  
+```vb  
 Protected Sub Button1_Click(ByVal sender As Object, _  
             ByVal e As System.EventArgs) Handles Button1.Click  
     Dim cache As ObjectCache = MemoryCache.Default  
@@ -52,9 +50,7 @@ Protected Sub Button1_Click(ByVal sender As Object, _
 End Sub  
 ```  
   
- [C#]  
-  
-```  
+```csharp  
 protected void Button1_Click(object sender, EventArgs e)  
     {  
         ObjectCache cache = MemoryCache.Default;  
@@ -168,10 +164,10 @@ protected void Button1_Click(object sender, EventArgs e)
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In ASP.NET, the priority enumeration only has two possible priorities: <xref:System.Runtime.Caching.CacheItemPriority> (which means no priority), and <xref:System.Runtime.Caching.CacheItemPriority> (which means the entry cannot be removed). Therefore, the only priority that can be set is whether a cache entry should remain in the cache forever.  
+ In ASP.NET, the priority enumeration only has two possible priorities: <xref:System.Runtime.Caching.CacheItemPriority.Default> (which means no priority), and <xref:System.Runtime.Caching.CacheItemPriority.NotRemovable> (which means the entry cannot be removed). Therefore, the only priority that can be set is whether a cache entry should remain in the cache forever.  
   
 > [!IMPORTANT]
->  Adding an entry to the cache with a priority level of <xref:System.Runtime.Caching.CacheItemPriority> can cause the cache to overflow with entries that can never be removed. Cache implementations should set the <xref:System.Runtime.Caching.CacheItemPriority> priority for a cache entry only if the cache implementation provides ways to evict entries from the cache and to manage the number of cache entries.  
+>  Adding an entry to the cache with a priority level of <xref:System.Runtime.Caching.CacheItemPriority.NotRemovable> can cause the cache to overflow with entries that can never be removed. Cache implementations should set the <xref:System.Runtime.Caching.CacheItemPriority.NotRemovable> priority for a cache entry only if the cache implementation provides ways to evict entries from the cache and to manage the number of cache entries.  
   
  ]]></format>
         </remarks>

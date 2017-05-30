@@ -69,7 +69,7 @@
   
 |Property|Initial Value|  
 |--------------|-------------------|  
-|<xref:System.Web.UI.WebControls.Unit.Type%2A>|<xref:System.Web.UI.WebControls.UnitType>|  
+|<xref:System.Web.UI.WebControls.Unit.Type%2A>|<xref:System.Web.UI.WebControls.UnitType.Pixel>|  
 |<xref:System.Web.UI.WebControls.Unit.Value%2A>|The value specified by `value`.|  
   
 > [!CAUTION]
@@ -106,7 +106,7 @@
   
 |Property|Initial Value|  
 |--------------|-------------------|  
-|<xref:System.Web.UI.WebControls.Unit.Type%2A>|<xref:System.Web.UI.WebControls.UnitType>|  
+|<xref:System.Web.UI.WebControls.Unit.Type%2A>|<xref:System.Web.UI.WebControls.UnitType.Pixel>|  
 |<xref:System.Web.UI.WebControls.Unit.Value%2A>|The value specified by `value`.|  
   
 > [!CAUTION]
@@ -464,7 +464,7 @@
  Use the <xref:System.Web.UI.WebControls.Unit.Parse%2A> static method to convert the string specified by the `s` parameter to a <xref:System.Web.UI.WebControls.Unit>.  
   
 > [!NOTE]
->  The unit of measurement when using this method is <xref:System.Web.UI.WebControls.UnitType>.  
+>  The unit of measurement when using this method is <xref:System.Web.UI.WebControls.UnitType.Pixel>.  
   
    
   
@@ -506,7 +506,7 @@
  Use the <xref:System.Web.UI.WebControls.Unit.Parse%2A> static method to convert the string specified by `s` to a <xref:System.Web.UI.WebControls.Unit> in the culture specified by `culture`.  
   
 > [!NOTE]
->  The unit of measurement when using this method is <xref:System.Web.UI.WebControls.UnitType>.  
+>  The unit of measurement when using this method is <xref:System.Web.UI.WebControls.UnitType.Pixel>.  
   
  ]]></format>
         </remarks>
@@ -535,7 +535,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Percentage%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType> that represents the length specified by the `n` parameter. For example, if you specify 80 for *n* and use the returned unit to set the <xref:System.Web.UI.WebControls.WebControl.Height%2A> of a Web server control, the `height` attribute is set to 80%.  
+ Use the <xref:System.Web.UI.WebControls.Unit.Percentage%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType.Percentage> that represents the length specified by the `n` parameter. For example, if you specify 80 for *n* and use the returned unit to set the <xref:System.Web.UI.WebControls.WebControl.Height%2A> of a Web server control, the `height` attribute is set to 80%.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Unit> class can represent values only between -32768 and 32767.  
@@ -567,7 +567,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Pixel%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType> that represents the length specified by the `n` parameter.  
+ Use the <xref:System.Web.UI.WebControls.Unit.Pixel%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType.Pixel> that represents the length specified by the `n` parameter.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Unit> class can represent values only between -32768 and 32767.  
@@ -606,7 +606,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Use the <xref:System.Web.UI.WebControls.Unit.Point%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType> that represents the length specified by the `n` parameter.  
+ Use the <xref:System.Web.UI.WebControls.Unit.Point%2A> static method to create a <xref:System.Web.UI.WebControls.Unit> of type <xref:System.Web.UI.WebControls.UnitType.Point> that represents the length specified by the `n` parameter.  
   
 > [!NOTE]
 >  The <xref:System.Web.UI.WebControls.Unit> class can represent values only between -32768 and 32767.  
@@ -690,15 +690,15 @@
   
 |Unit type|Abbreviation|  
 |---------------|------------------|  
-|<xref:System.Web.UI.WebControls.UnitType>|px|  
-|<xref:System.Web.UI.WebControls.UnitType>|pt|  
-|<xref:System.Web.UI.WebControls.UnitType>|pc|  
-|<xref:System.Web.UI.WebControls.UnitType>|in|  
-|<xref:System.Web.UI.WebControls.UnitType>|mm|  
-|<xref:System.Web.UI.WebControls.UnitType>|cm|  
-|<xref:System.Web.UI.WebControls.UnitType>|%|  
-|<xref:System.Web.UI.WebControls.UnitType>|em|  
-|<xref:System.Web.UI.WebControls.UnitType>|ex|  
+|<xref:System.Web.UI.WebControls.UnitType.Pixel>|px|  
+|<xref:System.Web.UI.WebControls.UnitType.Point>|pt|  
+|<xref:System.Web.UI.WebControls.UnitType.Pica>|pc|  
+|<xref:System.Web.UI.WebControls.UnitType.Inch>|in|  
+|<xref:System.Web.UI.WebControls.UnitType.Mm>|mm|  
+|<xref:System.Web.UI.WebControls.UnitType.Cm>|cm|  
+|<xref:System.Web.UI.WebControls.UnitType.Percentage>|%|  
+|<xref:System.Web.UI.WebControls.UnitType.Em>|em|  
+|<xref:System.Web.UI.WebControls.UnitType.Ex>|ex|  
   
  Use `formatProvider` to specify culture-specific information used to format the <xref:System.Web.UI.WebControls.Unit.Value%2A>. If `formatProvider` is `null`, the numeric portion of the string is formatted using a default <xref:System.Globalization.NumberFormatInfo> object set for the current culture.  
   
@@ -728,7 +728,7 @@
  Use the <xref:System.Web.UI.WebControls.Unit.Type%2A> property to determine the unit of measurement that the <xref:System.Web.UI.WebControls.Unit> represents, such as pixels. The <xref:System.Web.UI.WebControls.Unit.Type%2A> property is represented by one of the <xref:System.Web.UI.WebControls.UnitType> enumeration values.  
   
 > [!NOTE]
->  If <xref:System.Web.UI.WebControls.Unit.IsEmpty%2A> property is set to `true`, the <xref:System.Web.UI.WebControls.UnitType> enumeration value is returned.  
+>  If <xref:System.Web.UI.WebControls.Unit.IsEmpty%2A> property is set to `true`, the <xref:System.Web.UI.WebControls.UnitType.Point> enumeration value is returned.  
   
  ]]></format>
         </remarks>

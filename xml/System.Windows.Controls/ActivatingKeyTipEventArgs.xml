@@ -153,7 +153,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVisibility%2A> property is set to <xref:System.Windows.Visibility>, the KeyTip is visible and accessible. When the <xref:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVisibility%2A> property is set to <xref:System.Windows.Visibility>, the KeyTip is hidden but still accessible. When the <xref:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVisibility%2A> property is set to <xref:System.Windows.Visibility>, the KeyTip is not visible and not accessible.  
+ When the <xref:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVisibility%2A> property is set to <xref:System.Windows.Visibility.Visible>, the KeyTip is visible and accessible. When the <xref:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVisibility%2A> property is set to <xref:System.Windows.Visibility.Hidden>, the KeyTip is hidden but still accessible. When the <xref:System.Windows.Controls.ActivatingKeyTipEventArgs.KeyTipVisibility%2A> property is set to <xref:System.Windows.Visibility.Collapsed>, the KeyTip is not visible and not accessible.  
   
  ]]></format>
         </remarks>

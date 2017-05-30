@@ -36,7 +36,7 @@ Specifies a collection of configuration settings for the named <xref:System.Runt
   
 ```  
 <namedCaches>  
-  <add name="default"   
+  <add name="default"   
 </namedCaches>  
 ```  
   

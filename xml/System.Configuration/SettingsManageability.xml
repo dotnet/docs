@@ -6,6 +6,10 @@
     <AssemblyName>System</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
@@ -15,7 +19,7 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The ttribute is used to apply individual application settings properties and property groups to indicate that special, predefined services are to be provided for them. The <xref:System.Configuration.SettingsManageability> enumeration lists the services that are available. Most of these services will be provided by the Windows operating system.  
+ The ttribute is used to apply individual application settings properties and property groups to indicate that special, predefined services are to be provided for them. The <xref:System.Configuration.SettingsManageabilityAttribute> enumeration lists the services that are available. Most of these services will be provided by the Windows operating system.  
   
  ]]></format>
     </remarks>
@@ -28,6 +32,10 @@
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>System</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

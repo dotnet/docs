@@ -243,7 +243,7 @@
   
  **Enabling Partial-Page Updates**  
   
- The following example shows how to use the <xref:System.Web.UI.ScriptManager> control to enable partial-page updates. In this example, a <xref:System.Web.UI.WebControls.Calendar> and a <xref:System.Web.UI.WebControls.DropDownList> control are inside an <xref:System.Web.UI.UpdatePanel> control. By default, the value of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is <xref:System.Web.UI.UpdatePanelUpdateMode>, and the value of the <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> property is `true`. Therefore, child controls of the panel cause an asynchronous postback.  
+ The following example shows how to use the <xref:System.Web.UI.ScriptManager> control to enable partial-page updates. In this example, a <xref:System.Web.UI.WebControls.Calendar> and a <xref:System.Web.UI.WebControls.DropDownList> control are inside an <xref:System.Web.UI.UpdatePanel> control. By default, the value of the <xref:System.Web.UI.UpdatePanel.UpdateMode%2A> property is <xref:System.Web.UI.UpdatePanelUpdateMode.Always>, and the value of the <xref:System.Web.UI.UpdatePanel.ChildrenAsTriggers%2A> property is `true`. Therefore, child controls of the panel cause an asynchronous postback.  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.UpdatePanel#1](~/samples/snippets/csharp/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/CS/UpdatePanelExample1CS.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.UpdatePanel#1](~/samples/snippets/visualbasic/VS_Snippets_Atlas/System.Web.UI.UpdatePanel/VB/UpdatePanelExample1VB.aspx#1)]  -->  
@@ -288,6 +288,23 @@
         </remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddHistoryPoint">
+      <AssemblyInfo>
+        <AssemblyName>System.Web.Extensions</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Creates a history point and adds it to the browser's history stack.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ These method overloads enable you to define server state, and optionally the title of the history entry in the browser. When you create a history point, serialized and encrypted data is appended to the URL of the Web page and an entry is included in the browser's history stack. You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](http://msdn.microsoft.com/library/bad617c8-f84c-4d94-8852-60af400810e9).  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddHistoryPoint">
       <MemberSignature Language="C#" Value="public void AddHistoryPoint (System.Collections.Specialized.NameValueCollection state, string title);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddHistoryPoint(class System.Collections.Specialized.NameValueCollection state, string title) cil managed" />
@@ -3059,10 +3076,10 @@
   
 |Value|Definition|  
 |-----------|----------------|  
-|<xref:System.Web.UI.ScriptMode>|Debug versions of client script libraries are used in the Web page when the `retail` attribute of the  configuration element is set to `false`. Otherwise, the release versions of client script libraries are used.|  
-|<xref:System.Web.UI.ScriptMode>|When applied to the <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property of the <xref:System.Web.UI.ScriptManager> object, this value is the same as <xref:System.Web.UI.ScriptMode>.|  
-|<xref:System.Web.UI.ScriptMode>|Debug versions of client script libraries are used in the Web page unless the `retail` attribute of the  configuration element is set to `true`.|  
-|<xref:System.Web.UI.ScriptMode>|Release versions of client script libraries are used in the Web page unless the `retail` attribute of the  configuration element is set to `false`.|  
+|<xref:System.Web.UI.ScriptMode.Auto>|Debug versions of client script libraries are used in the Web page when the `retail` attribute of the  configuration element is set to `false`. Otherwise, the release versions of client script libraries are used.|  
+|<xref:System.Web.UI.ScriptMode.Inherit>|When applied to the <xref:System.Web.UI.ScriptManager.ScriptMode%2A> property of the <xref:System.Web.UI.ScriptManager> object, this value is the same as <xref:System.Web.UI.ScriptMode.Auto>.|  
+|<xref:System.Web.UI.ScriptMode.Debug>|Debug versions of client script libraries are used in the Web page unless the `retail` attribute of the  configuration element is set to `true`.|  
+|<xref:System.Web.UI.ScriptMode.Release>|Release versions of client script libraries are used in the Web page unless the `retail` attribute of the  configuration element is set to `false`.|  
   
 > [!NOTE]
 >  The `debug` attribute of the  directive does not affect Ajax-enabled ASP.NET applications. The <xref:System.Web.UI.ScriptManager> control uses only the settings in the Web.config file and in its <xref:System.Web.UI.ScriptManager.IsDebuggingEnabled%2A> and <xref:System.Web.UI.ScriptManager.ScriptMode%2A> properties to determine whether to render debug scripts.  
@@ -3513,22 +3530,5 @@ ScriptManager.ScriptResourceMapping.AddDefinition("jquery", Nothing, myScriptRes
         <exception cref="T:System.NotImplementedException">A value is assigned to the <see cref="P:System.Web.UI.ScriptManager.Visible" /> property.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddHistoryPoint">
-      <AssemblyInfo>
-        <AssemblyName>System.Web.Extensions</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Creates a history point and adds it to the browser's history stack.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- These method overloads enable you to define server state, and optionally the title of the history entry in the browser. When you create a history point, serialized and encrypted data is appended to the URL of the Web page and an entry is included in the browser's history stack. You can use the state data to re-create the page when any subsequent server navigation event is raised. For more information, see [Managing Browser History Using Server Controls](http://msdn.microsoft.com/library/bad617c8-f84c-4d94-8852-60af400810e9).  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -166,7 +166,7 @@
   
 -   The geometric operation is not a union.  
   
--   Either of the geometries has a <xref:System.Windows.Media.FillRule> value of <xref:System.Windows.Media.FillRule> and the geometries are self-intersecting (i.e. the <xref:System.Windows.Media.FillRule> actually matters).  
+-   Either of the geometries has a <xref:System.Windows.Media.FillRule> value of <xref:System.Windows.Media.FillRule.EvenOdd> and the geometries are self-intersecting (i.e. the <xref:System.Windows.Media.FillRule> actually matters).  
   
 -   Time is not a concern, but space is (for instance, if the geometry is created once and then cached). Typically, <xref:System.Windows.Media.Geometry.Combine%2A> produces smaller output than <xref:System.Windows.Media.PathGeometry.AddGeometry%2A>.  
   
@@ -217,7 +217,7 @@
   
 -   The geometric operation is not a union.  
   
--   Either of the geometries has a <xref:System.Windows.Media.FillRule> value of <xref:System.Windows.Media.FillRule> and the geometries are self-intersecting (i.e. the <xref:System.Windows.Media.FillRule> actually matters).  
+-   Either of the geometries has a <xref:System.Windows.Media.FillRule> value of <xref:System.Windows.Media.FillRule.EvenOdd> and the geometries are self-intersecting (i.e. the <xref:System.Windows.Media.FillRule> actually matters).  
   
 -   Time is not a concern, but space is (for instance, if the geometry is created once and then cached). Typically, <xref:System.Windows.Media.Geometry.Combine%2A> produces smaller output than <xref:System.Windows.Media.PathGeometry.AddGeometry%2A>.  
   
@@ -1107,7 +1107,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Media.Geometry>|  
+|Identifier field|<xref:System.Windows.Media.Geometry.TransformProperty>|  
 |Metadata properties set to `true`|None|  
   
    

@@ -665,7 +665,7 @@ ListBox that contains multiple types of objects
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ItemsControl>|  
+|Identifier field|<xref:System.Windows.Controls.ItemsControl.HasItemsProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -876,7 +876,7 @@ ListBox that contains multiple types of objects
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.ItemsControl>|  
+|Identifier field|<xref:System.Windows.Controls.ItemsControl.IsTextSearchEnabledProperty>|  
 |Metadata properties set to `true`|None|  
   
  ]]></format>
@@ -1057,22 +1057,19 @@ ListBox that contains multiple types of objects
 ## Examples  
  The following example demonstrates how to use this property. Consider the following data-bound <xref:System.Windows.Controls.ListBox>:  
   
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#UIListBox](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#uilistbox)]  -->
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#UIListBox](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#uilistbox)]  -->  
+ [!code-xml[StylingIntroSnippet#UIListBox](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#uilistbox)]   
   
  To create a style for the elements that contain the data items, create a <xref:System.Windows.Controls.ListBoxItem> style, as shown in the following example. The style is applied to all <xref:System.Windows.Controls.ListBoxItem> elements within the scope the style is defined in.  
   
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxItemStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxitemstyle)]  -->
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxItemStyle](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxitemstyle)]  -->  
+ [!code-xml[StylingIntroSnippet#ListBoxItemStyle](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#listboxitemstyle)]   
   
  The <xref:System.Windows.Controls.ListBoxItem> is the container element for the <xref:System.Windows.Controls.ListBox> control. Therefore, an alternative to the preceding is to set the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property of the <xref:System.Windows.Controls.ListBox> to the defined style. To do that, give the <xref:System.Windows.Controls.ListBoxItem> style an `x:Key` so it is available as a resource:  
   
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ContainerStyle1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#containerstyle1)]  -->  
-<!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ContainerStyle2](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#containerstyle2)]  -->  
+ [!code-xml[StylingIntroSample_snippet#ContainerStyle1](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#containerstyle1)]   
   
  Next, set the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property to the resource, as in the following example:  
   
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ListBox](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#listbox)]  -->  
+ [!code-xml[StylingIntroSample_snippet#ListBox](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#listbox)]   
   
  Both of the preceding scenarios produce the same result. However, one of the advantages of making the style available as a resource is that you can reuse the style. Setting the <xref:System.Windows.Controls.ItemsControl.ItemContainerStyle%2A> property explicitly can also provide greater readability.  
   
@@ -1348,17 +1345,15 @@ ListBox that contains multiple types of objects
 ## Examples  
  To create a horizontal <xref:System.Windows.Controls.ListBox>, you can create a template that specifies a horizontal <xref:System.Windows.Controls.StackPanel> and set it as the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property. The following example shows a <xref:System.Windows.Controls.ListBox> <xref:System.Windows.Style> that creates a horizontal <xref:System.Windows.Controls.ListBox>.  
   
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ItemsPanel](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#itemspanel)]  -->  
+ [!code-xml[StylingIntroSample_snippet#ItemsPanel](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#itemspanel)] 
   
  The following example uses a <xref:System.Windows.Controls.ControlTemplate> to create a horizontal <xref:System.Windows.Controls.ListBox> that has rounded corners. In this example, instead of setting the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> property as in previous example, the horizontal <xref:System.Windows.Controls.StackPanel> is specified within the <xref:System.Windows.Controls.ControlTemplate>. The <xref:System.Windows.Controls.Panel.IsItemsHost%2A> property is set to `true` on the <xref:System.Windows.Controls.StackPanel>, indicating that the generated items should go in the panel. When you specify it this way, the <xref:System.Windows.Controls.ItemsControl.ItemsPanel%2A> cannot be replaced by the user of the control without using a <xref:System.Windows.Controls.ControlTemplate>. Therefore, only do this if you know you would not want the panel to be replaced without the use of a template.  
   
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample/CS/window1.xaml#listboxct)]  -->
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample#ListBoxCT](~/samples/snippets/xaml/VS_Snippets_Wpf/StylingIntroSample/xaml/window1.xaml#listboxct)]  -->  
+ [!code-xml[StylingIntroSnippet#ListBoxCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSnippet/CS/window1.xaml#listboxct)]   
   
  Alternatively, you can do the following to achieve the same results. In this case, the <xref:System.Windows.Controls.ItemsPresenter> creates the panel for the layout of the items based on what is specified by the <xref:System.Windows.Controls.ItemsPanelTemplate>.  
   
- [!code-xml[StyleOvw01#ItemsPanelTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#itemspaneltemplate)]
- <!-- TODO: review snippet reference [!code-xml[StyleOvw01#ItemsPanelTemplate](~/samples/snippets/xaml/VS_Snippets_Wpf/StyleOvw01/XAML/Page1.xaml#itemspaneltemplate)]  -->  
+ [!code-xml[StyleOvw01#ItemsPanelTemplate](~/samples/snippets/csharp/VS_Snippets_Wpf/StyleOvw01/CS/Page1.xaml#itemspaneltemplate)]   
   
  ]]></format>
         </remarks>
@@ -1410,7 +1405,7 @@ ListBox that contains multiple types of objects
 ## Remarks  
  **Content Model:** This property may be used to add items to an <xref:System.Windows.Controls.ItemsControl>.  
   
- A common scenario is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a data collection, or to bind an <xref:System.Windows.Controls.ItemsControl> to a collection object. To bind an <xref:System.Windows.Controls.ItemsControl> to a collection object, use the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property. Note that the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property supports <xref:System.Windows.Data.BindingMode> binding by default.  
+ A common scenario is to use an <xref:System.Windows.Controls.ItemsControl> such as a <xref:System.Windows.Controls.ListBox>, <xref:System.Windows.Controls.ListView>, or <xref:System.Windows.Controls.TreeView> to display a data collection, or to bind an <xref:System.Windows.Controls.ItemsControl> to a collection object. To bind an <xref:System.Windows.Controls.ItemsControl> to a collection object, use the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property. Note that the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property supports <xref:System.Windows.Data.BindingMode.OneWay> binding by default.  
   
  When the <xref:System.Windows.Controls.ItemsControl.ItemsSource%2A> property is set, the <xref:System.Windows.Controls.ItemsControl.Items%2A> collection is made read-only and fixed-size.  
   

@@ -39,9 +39,9 @@ Configures the delivery format, delivery method, and from address for sending e-
 ```  
   
       <smtp  
-  deliveryFormat="format"   
-  deliveryMethod="method"   
-  from="from address"   
+  deliveryFormat="format"   
+  deliveryMethod="method"   
+  from="from address"   
   <specifiedPickupDirectory> … </ specifiedPickupDirectory >  
   <network> … </network>  
 /smtp>  

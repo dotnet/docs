@@ -84,6 +84,6 @@ namespace CS
 	//To use this factory instead of the default factory,
 	//provide the type name in the @ServiceHost directive as follows:
 
-	//<% @ServiceHost Factory=”DerivedFactory” Service=”MyService” %> 
+	//<% @ServiceHost Factory="DerivedFactory" Service="MyService" %> 
 
 }

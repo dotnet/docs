@@ -24,9 +24,9 @@
   
 |Button type|Description|  
 |-----------------|-----------------|  
-|<xref:System.Web.UI.WebControls.ButtonType>|A <xref:System.Web.UI.WebControls.Button> control.|  
-|<xref:System.Web.UI.WebControls.ButtonType>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
-|<xref:System.Web.UI.WebControls.ButtonType>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Button>|A <xref:System.Web.UI.WebControls.Button> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Image>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Link>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
   
  You can hide a <xref:System.Web.UI.WebControls.NextPreviousPagerField> object in a <xref:System.Web.UI.WebControls.DataPager> control by setting the <xref:System.Web.UI.WebControls.DataPagerField.Visible%2A> property to `false`. You can also hide the individual buttons (the first-page, previous-page, next-page, and last-page buttons) by setting the <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowFirstPageButton%2A>, <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowPreviousPageButton%2A>, <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowNextPageButton%2A>, and <xref:System.Web.UI.WebControls.NextPreviousPagerField.ShowLastPageButton%2A> properties to `false`.  
   
@@ -160,9 +160,9 @@
   
 |Button type value|Description|  
 |-----------------------|-----------------|  
-|<xref:System.Web.UI.WebControls.ButtonType>|A <xref:System.Web.UI.WebControls.Button> control.|  
-|<xref:System.Web.UI.WebControls.ButtonType>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
-|<xref:System.Web.UI.WebControls.ButtonType>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Button>|A <xref:System.Web.UI.WebControls.Button> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Image>|An <xref:System.Web.UI.WebControls.ImageButton> control.|  
+|<xref:System.Web.UI.WebControls.ButtonType.Link>|A <xref:System.Web.UI.WebControls.LinkButton> control.|  
   
  When <xref:System.Web.UI.WebControls.NextPreviousPagerField.ButtonType%2A> is set to `ButtonType.Image`, you must set the image to display for the buttons by using the properties shown in the following table.  
   

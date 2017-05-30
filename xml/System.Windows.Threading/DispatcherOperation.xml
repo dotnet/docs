@@ -51,7 +51,7 @@
 ## Remarks  
  If an operation is already in progress, this method will return `false`.  
   
- When an operation is aborted, the <xref:System.Windows.Threading.DispatcherOperation.Status%2A> of the <xref:System.Windows.Threading.DispatcherOperation> is set to <xref:System.Windows.Threading.DispatcherOperationStatus> and the <xref:System.Windows.Threading.DispatcherOperation.Aborted> event is raised.  
+ When an operation is aborted, the <xref:System.Windows.Threading.DispatcherOperation.Status%2A> of the <xref:System.Windows.Threading.DispatcherOperation> is set to <xref:System.Windows.Threading.DispatcherOperationStatus.Aborted> and the <xref:System.Windows.Threading.DispatcherOperation.Aborted> event is raised.  
   
  ]]></format>
         </remarks>
@@ -211,7 +211,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The stages of a <xref:System.Windows.Threading.DispatcherOperation> are <xref:System.Windows.Threading.DispatcherOperationStatus>, <xref:System.Windows.Threading.DispatcherOperationStatus>, and <xref:System.Windows.Threading.DispatcherOperationStatus>.  At any point before the operation has completed, the status can be set to <xref:System.Windows.Threading.DispatcherOperationStatus>.  
+ The stages of a <xref:System.Windows.Threading.DispatcherOperation> are <xref:System.Windows.Threading.DispatcherOperationStatus.Pending>, <xref:System.Windows.Threading.DispatcherOperationStatus.Executing>, and <xref:System.Windows.Threading.DispatcherOperationStatus.Completed>.  At any point before the operation has completed, the status can be set to <xref:System.Windows.Threading.DispatcherOperationStatus.Aborted>.  
   
  ]]></format>
         </remarks>

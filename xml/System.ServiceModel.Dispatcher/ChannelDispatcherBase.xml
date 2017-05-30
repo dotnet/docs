@@ -65,7 +65,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ This method can only be set when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
  A <xref:System.ServiceModel.ServiceHost> calls this method when the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> is added to its <xref:System.ServiceModel.ServiceHostBase.ChannelDispatchers%2A> collection.  This gives the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase> a chance to hook events and inspect the <xref:System.ServiceModel.ServiceHost>, and provides the value that should be returned from the <xref:System.ServiceModel.Dispatcher.ChannelDispatcherBase.Host%2A> property.  
   
@@ -125,7 +125,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.ServiceModel.ServiceHostBase> can only be detached when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState> state, as this is the only state that is both mutable and not disposed.  
+ The <xref:System.ServiceModel.ServiceHostBase> can only be detached when the instance of the <xref:System.ServiceModel.Dispatcher.ChannelDispatcher> is in the <xref:System.ServiceModel.CommunicationState.Created> state, as this is the only state that is both mutable and not disposed.  
   
  Should set the <xref:System.ServiceModel.ServiceHostBase> associated with the channel dispatcher to `null`.  
   

@@ -78,6 +78,25 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndSource" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+> [!IMPORTANT]
+>  This method is not available in the Internet security zone.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public HwndSource (System.Windows.Interop.HwndSourceParameters parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(valuetype System.Windows.Interop.HwndSourceParameters parameters) cil managed" />
@@ -350,7 +369,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The native behavior of <xref:System.Windows.Interop.HwndSource> is to automatically resize content and the window region based on changes reported through the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] layout system. The window does not resize if it is currently minimized or if <xref:System.Windows.Interop.HwndSource.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent>.  
+ The native behavior of <xref:System.Windows.Interop.HwndSource> is to automatically resize content and the window region based on changes reported through the [!INCLUDE[TLA2#tla_winclient](~/includes/tla2sharptla-winclient-md.md)] layout system. The window does not resize if it is currently minimized or if <xref:System.Windows.Interop.HwndSource.SizeToContent%2A> is set to <xref:System.Windows.SizeToContent.Manual>.  
   
  ]]></format>
         </remarks>
@@ -1326,24 +1345,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Interop.HwndSource" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
-  
-> [!IMPORTANT]
->  This method is not available in the Internet security zone.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

@@ -74,7 +74,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- MSMQ can authenticate messages that are sent to message queues that require authentication, or messages can explicitly request authentication. The default authentication mode is <xref:System.ServiceModel.MsmqAuthenticationMode>.  
+ MSMQ can authenticate messages that are sent to message queues that require authentication, or messages can explicitly request authentication. The default authentication mode is <xref:System.ServiceModel.MsmqAuthenticationMode.WindowsDomain>.  
   
  ]]></format>
         </remarks>
@@ -105,7 +105,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- MSMQ can encrypt messages on the wire when transferring messages between message queue managers. The default encryption algorithm is <xref:System.ServiceModel.MsmqEncryptionAlgorithm>.  
+ MSMQ can encrypt messages on the wire when transferring messages between message queue managers. The default encryption algorithm is <xref:System.ServiceModel.MsmqEncryptionAlgorithm.RC4Stream>.  
   
  ]]></format>
         </remarks>
@@ -136,7 +136,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default protection level is <xref:System.Net.Security.ProtectionLevel>.  
+ The default protection level is <xref:System.Net.Security.ProtectionLevel.Sign>.  
   
  ]]></format>
         </remarks>
@@ -167,7 +167,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The default hash algorithm is <xref:System.ServiceModel.MsmqSecureHashAlgorithm>.  
+ The default hash algorithm is <xref:System.ServiceModel.MsmqSecureHashAlgorithm.SHA1>.  
   
  ]]></format>
         </remarks>

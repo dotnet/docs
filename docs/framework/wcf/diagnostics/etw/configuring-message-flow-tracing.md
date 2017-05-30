@@ -42,7 +42,7 @@ When [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] activity tracing
   
 ```vb  
   
-Object output = null;                    
+Object output = null;                    
 if (OperationContext.Current.IncomingMessageProperties.TryGetValue(HttpRequestMessageProperty.Name, out output))  
 {  
    HttpRequestMessageProperty httpHeaders = output as HttpRequestMessageProperty;       

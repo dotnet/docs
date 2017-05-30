@@ -60,6 +60,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="BeginAnimation">
+      <AssemblyInfo>
+        <AssemblyName>PresentationCore</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initiates an animation sequence for this instance.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The animation sequence is triggered once the next frame is rendered.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="BeginAnimation">
       <MemberSignature Language="C#" Value="public void BeginAnimation (System.Windows.DependencyProperty dp, System.Windows.Media.Animation.AnimationTimeline animation);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void BeginAnimation(class System.Windows.DependencyProperty dp, class System.Windows.Media.Animation.AnimationTimeline animation) cil managed" />
@@ -171,28 +188,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Note that this property returns `true` even if the associated animation is <xref:System.Windows.Media.Animation.ClockState> or <xref:System.Windows.Media.Animation.ClockState>.  
+ Note that this property returns `true` even if the associated animation is <xref:System.Windows.Media.Animation.ClockState.Stopped> or <xref:System.Windows.Media.Animation.ClockState.Filling>.  
   
  ]]></format>
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="BeginAnimation">
-      <AssemblyInfo>
-        <AssemblyName>PresentationCore</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initiates an animation sequence for this instance.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The animation sequence is triggered once the next frame is rendered.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

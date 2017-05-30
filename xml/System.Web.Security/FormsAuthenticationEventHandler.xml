@@ -30,7 +30,7 @@
   
  You can use the <xref:System.Web.Security.FormsAuthenticationEventArgs.User%2A> property of the <xref:System.Web.Security.FormsAuthenticationEventArgs> object supplied to the **FormsAuthentication_OnAuthenticate** event to set the <xref:System.Web.HttpContext.User%2A> property of the current <xref:System.Web.HttpContext> to a custom <xref:System.Security.Principal.IPrincipal> object. If you do not specify a value for the <xref:System.Web.Security.FormsAuthenticationEventArgs.User%2A> property during the **FormsAuthentication_OnAuthenticate** event, the identity supplied by the forms authentication ticket in the cookie or URL is used.  
   
- The **FormsAuthentication_OnAuthenticate** event is only raised when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode> and the <xref:System.Web.Security.FormsAuthenticationModule> is an active HTTP module for the application.  
+ The **FormsAuthentication_OnAuthenticate** event is only raised when the authentication <xref:System.Web.Configuration.AuthenticationSection.Mode%2A> is set to <xref:System.Web.Configuration.AuthenticationMode.Forms> and the <xref:System.Web.Security.FormsAuthenticationModule> is an active HTTP module for the application.  
   
    
   

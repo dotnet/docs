@@ -109,13 +109,13 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
 -   The IProgressObserver.h file implements a progress observer ([see complete code](http://go.microsoft.com/fwlink/?LinkId=231370)). This observer gets notified of download and installation progress (specified as an unsigned `char`, 0-255, indicating 1%-100% complete). The observer is also notified when the chainee sends a message, and the observer should send a response.  
   
     ```cpp  
-        class IProgressObserver  
-        {  
-        public:  
-            virtual void OnProgress(unsigned char) = 0; // 0 - 255:  255 == 100%  
-            virtual void Finished(HRESULT) = 0;         // Called when operation is complete    
-            virtual DWORD Send(DWORD dwMessage, LPVOID pData, DWORD dwDataLength) = 0; // Called when a message is sent  
-        };  
+        class IProgressObserver  
+        {  
+        public:  
+            virtual void OnProgress(unsigned char) = 0; // 0 - 255:  255 == 100%  
+            virtual void Finished(HRESULT) = 0;         // Called when operation is complete    
+            virtual DWORD Send(DWORD dwMessage, LPVOID pData, DWORD dwDataLength) = 0; // Called when a message is sent  
+        };  
   
     ```  
   
@@ -124,12 +124,12 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
 -   The [ChainingdotNet4.5.cpp](http://go.microsoft.com/fwlink/?LinkId=231368) file implements the `Server` class, which derives from the `MmioChainer` class and overrides the appropriate methods to display progress information. The MmioChainer creates a section with the specified section name and initializes the chainer with the specified event name. The event name is saved in the mapped data structure. You should make the section and event names unique. The `Server` class in the following code launches the specified setup program, monitors its progress, and returns an exit code.  
   
     ```cpp  
-    class Server : public ChainerSample::MmioChainer, public ChainerSample::IProgressObserver  
+    class Server : public ChainerSample::MmioChainer, public ChainerSample::IProgressObserver  
     {  
     public:  
-        …………….  
-        Server():ChainerSample::MmioChainer(L"TheSectionName", L"TheEventName") //customize for your event names  
-        {}  
+        …………….  
+        Server():ChainerSample::MmioChainer(L"TheSectionName", L"TheEventName") //customize for your event names  
+        {}  
   
     ```  
   
@@ -163,53 +163,53 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
 -   Before launching the installation, the chainer checks to see if the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is already installed by calling `IsNetFx4Present`:  
   
     ```cpp  
-    ///  Checks for presence of the .NET Framework 4.  
-    ///    A value of 0 for dwMinimumRelease indicates a check for the .NET Framework 4 full  
-    ///    Any other value indicates a check for a specific compatible release of the .NET Framework 4.  
-    #define NETFX40_FULL_REVISION 0  
+    ///  Checks for presence of the .NET Framework 4.  
+    ///    A value of 0 for dwMinimumRelease indicates a check for the .NET Framework 4 full  
+    ///    Any other value indicates a check for a specific compatible release of the .NET Framework 4.  
+    #define NETFX40_FULL_REVISION 0  
     // TODO: Replace with released revision number  
     #define NETFX45_RC_REVISION MAKELONG(50309, 5)   // .NET Framework 4.5   
-    bool IsNetFx4Present(DWORD dwMinimumRelease)  
+    bool IsNetFx4Present(DWORD dwMinimumRelease)  
     {  
-        DWORD dwError = ERROR_SUCCESS;  
-        HKEY hKey = NULL;  
-        DWORD dwData = 0;  
-        DWORD dwType = 0;  
-        DWORD dwSize = sizeof(dwData);  
+        DWORD dwError = ERROR_SUCCESS;  
+        HKEY hKey = NULL;  
+        DWORD dwData = 0;  
+        DWORD dwType = 0;  
+        DWORD dwSize = sizeof(dwData);  
   
-        dwError = ::RegOpenKeyExW(HKEY_LOCAL_MACHINE, L"SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full", 0, KEY_READ, &hKey);  
-        if (ERROR_SUCCESS == dwError)  
-        {  
-            dwError = ::RegQueryValueExW(hKey, L"Release", 0, &dwType, (LPBYTE)&dwData, &dwSize);  
+        dwError = ::RegOpenKeyExW(HKEY_LOCAL_MACHINE, L"SOFTWARE\\Microsoft\\NET Framework Setup\\NDP\\v4\\Full", 0, KEY_READ, &hKey);  
+        if (ERROR_SUCCESS == dwError)  
+        {  
+            dwError = ::RegQueryValueExW(hKey, L"Release", 0, &dwType, (LPBYTE)&dwData, &dwSize);  
   
-            if ((ERROR_SUCCESS == dwError) && (REG_DWORD != dwType))  
-            {  
-                dwError = ERROR_INVALID_DATA;  
-            }  
-            else if (ERROR_FILE_NOT_FOUND == dwError)  
-            {  
-                // Release value was not found, let's check for 4.0.  
-                dwError = ::RegQueryValueExW(hKey, L"Install", 0, &dwType, (LPBYTE)&dwData, &dwSize);  
+            if ((ERROR_SUCCESS == dwError) && (REG_DWORD != dwType))  
+            {  
+                dwError = ERROR_INVALID_DATA;  
+            }  
+            else if (ERROR_FILE_NOT_FOUND == dwError)  
+            {  
+                // Release value was not found, let's check for 4.0.  
+                dwError = ::RegQueryValueExW(hKey, L"Install", 0, &dwType, (LPBYTE)&dwData, &dwSize);  
   
-                // Install = (REG_DWORD)1;  
-                if ((ERROR_SUCCESS == dwError) && (REG_DWORD == dwType) && (dwData == 1))  
-                {  
-                    // treat 4.0 as Release = 0  
-                    dwData = 0;  
-                }  
-                else  
-                {  
-                    dwError = ERROR_INVALID_DATA;  
-                }  
-            }  
-        }  
+                // Install = (REG_DWORD)1;  
+                if ((ERROR_SUCCESS == dwError) && (REG_DWORD == dwType) && (dwData == 1))  
+                {  
+                    // treat 4.0 as Release = 0  
+                    dwData = 0;  
+                }  
+                else  
+                {  
+                    dwError = ERROR_INVALID_DATA;  
+                }  
+            }  
+        }  
   
-        if (hKey != NULL)  
-        {  
-            ::RegCloseKey(hKey);  
-        }  
+        if (hKey != NULL)  
+        {  
+            ::RegCloseKey(hKey);  
+        }  
   
-        return ((ERROR_SUCCESS == dwError) && (dwData >= dwMinimumRelease));  
+        return ((ERROR_SUCCESS == dwError) && (dwData >= dwMinimumRelease));  
     }  
   
     ```  
@@ -218,28 +218,28 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
   
     ```cpp  
   
-    bool Launch(const CString& args)  
+    bool Launch(const CString& args)  
     {  
-    CString cmdline = L"dotNetFx45_Full_x86_x64.exe -pipe TheSectionName " + args; // Customize with name and location of setup .exe that you want to run  
-    STARTUPINFO si = {0};  
-    si.cb = sizeof(si);  
-    PROCESS_INFORMATION pi = {0};  
+    CString cmdline = L"dotNetFx45_Full_x86_x64.exe -pipe TheSectionName " + args; // Customize with name and location of setup .exe that you want to run  
+    STARTUPINFO si = {0};  
+    si.cb = sizeof(si);  
+    PROCESS_INFORMATION pi = {0};  
   
-    // Launch the Setup.exe that installs the .NET Framework 4.5  
-    BOOL bLaunchedSetup = ::CreateProcess(NULL,   
-     cmdline.GetBuffer(),  
-     NULL, NULL, FALSE, 0, NULL, NULL,   
-     &si,  
-     &pi);  
+    // Launch the Setup.exe that installs the .NET Framework 4.5  
+    BOOL bLaunchedSetup = ::CreateProcess(NULL,   
+     cmdline.GetBuffer(),  
+     NULL, NULL, FALSE, 0, NULL, NULL,   
+     &si,  
+     &pi);  
   
-    // If successful   
-    if (bLaunchedSetup != 0)  
+    // If successful   
+    if (bLaunchedSetup != 0)  
     {  
-    IProgressObserver& observer = dynamic_cast<IProgressObserver&>(*this);  
-    Run(pi.hProcess, observer);  
+    IProgressObserver& observer = dynamic_cast<IProgressObserver&>(*this);  
+    Run(pi.hProcess, observer);  
   
     ……………………..   
-    return (bLaunchedSetup != 0);  
+    return (bLaunchedSetup != 0);  
     }  
   
     ```  
@@ -247,54 +247,54 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
 -   The `Send` method intercepts and processes the messages.  In this version of the .NET Framework, the only supported message is the close application message.  
   
     ```cpp  
-            // SendMessage  
-            //  
-            // Send a message and wait for the response.  
-            // dwMessage: Message to send  
-            // pData: The buffer to copy the data to  
-            // dwDataLength: Initially a pointer to the size of pBuffer.  Upon successful call, the number of bytes copied to pBuffer.  
-            //--------------------------------------------------------------  
-        virtual DWORD Send(DWORD dwMessage, LPVOID pData, DWORD dwDataLength)  
-        {  
-            DWORD dwResult = 0;  
-            printf("recieved message: %d\n", dwMessage);  
-            // Handle message  
-            switch (dwMessage)  
-            {  
-            case MMIO_CLOSE_APPS:  
-                {  
-                    printf("    applications are holding files in use:\n");  
-                    IronMan::MmioCloseApplications* applications = reinterpret_cast<IronMan::MmioCloseApplications*>(pData);  
-                    for(DWORD i = 0; i < applications->m_dwApplicationsSize; i++)  
-                    {  
-                        printf("      %ls (%d)\n", applications->m_applications[i].m_szName, applications->m_applications[i].m_dwPid);  
-                    }  
+            // SendMessage  
+            //  
+            // Send a message and wait for the response.  
+            // dwMessage: Message to send  
+            // pData: The buffer to copy the data to  
+            // dwDataLength: Initially a pointer to the size of pBuffer.  Upon successful call, the number of bytes copied to pBuffer.  
+            //--------------------------------------------------------------  
+        virtual DWORD Send(DWORD dwMessage, LPVOID pData, DWORD dwDataLength)  
+        {  
+            DWORD dwResult = 0;  
+            printf("recieved message: %d\n", dwMessage);  
+            // Handle message  
+            switch (dwMessage)  
+            {  
+            case MMIO_CLOSE_APPS:  
+                {  
+                    printf("    applications are holding files in use:\n");  
+                    IronMan::MmioCloseApplications* applications = reinterpret_cast<IronMan::MmioCloseApplications*>(pData);  
+                    for(DWORD i = 0; i < applications->m_dwApplicationsSize; i++)  
+                    {  
+                        printf("      %ls (%d)\n", applications->m_applications[i].m_szName, applications->m_applications[i].m_dwPid);  
+                    }  
   
-                    printf("    should appliations be closed? (Y)es, (N)o, (R)efresh : ");  
-                    while (dwResult == 0)  
-                    {  
-                        switch (toupper(getwchar()))  
-                        {  
-                        case 'Y':  
-                            dwResult = IDYES;  // Close apps  
-                            break;  
-                        case 'N':  
-                            dwResult = IDNO;  
-                            break;  
-                        case 'R':  
-                            dwResult = IDRETRY;  
-                            break;  
-                        }  
-                    }  
-                    printf("\n");  
-                    break;  
-                }  
-            default:  
-                break;  
-            }  
-            printf("  response: %d\n  ", dwResult);  
-            return dwResult;  
-        }  
+                    printf("    should appliations be closed? (Y)es, (N)o, (R)efresh : ");  
+                    while (dwResult == 0)  
+                    {  
+                        switch (toupper(getwchar()))  
+                        {  
+                        case 'Y':  
+                            dwResult = IDYES;  // Close apps  
+                            break;  
+                        case 'N':  
+                            dwResult = IDNO;  
+                            break;  
+                        case 'R':  
+                            dwResult = IDRETRY;  
+                            break;  
+                        }  
+                    }  
+                    printf("\n");  
+                    break;  
+                }  
+            default:  
+                break;  
+            }  
+            printf("  response: %d\n  ", dwResult);  
+            return dwResult;  
+        }  
     };  
   
     ```  
@@ -302,21 +302,21 @@ The [!INCLUDE[net_v45](../../../includes/net-v45-md.md)] is a redistributable ru
 -   Progress data is an unsigned `char` between 0 (0%) and 255 (100%).  
   
     ```cpp  
-    private: // IProgressObserver  
-        virtual void OnProgress(unsigned char ubProgressSoFar)  
-        {…………  
-       }  
+    private: // IProgressObserver  
+        virtual void OnProgress(unsigned char ubProgressSoFar)  
+        {…………  
+       }  
   
     ```  
   
 -   The HRESULT is passed to the `Finished` method.  
   
     ```cpp  
-    virtual void Finished(HRESULT hr)  
+    virtual void Finished(HRESULT hr)  
     {  
-    // This HRESULT is communicated over MMIO and may be different than process  
-    // Exit code of the Chainee Setup.exe itself  
-    printf("\r\nFinished HRESULT: 0x%08X\r\n", hr);  
+    // This HRESULT is communicated over MMIO and may be different than process  
+    // Exit code of the Chainee Setup.exe itself  
+    printf("\r\nFinished HRESULT: 0x%08X\r\n", hr);  
     }  
   
     ```  

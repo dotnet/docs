@@ -414,7 +414,7 @@
 ## Remarks  
  Use the <xref:System.Windows.Forms.ToolStripMenuItem.CheckState%2A> property to control or determine whether a <xref:System.Windows.Forms.ToolStripMenuItem> is initially checked, unchecked, or in an indeterminate state.  
   
- Starting with the .NET Framework 4.5.2, if the <xref:System.Windows.Forms.ToolStripMenuItem.CheckState%2A> property is set to <xref:System.Windows.Forms.CheckState> or <xref:System.Windows.Forms.CheckState>, the corresponding icon may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
+ Starting with the .NET Framework 4.5.2, if the <xref:System.Windows.Forms.ToolStripMenuItem.CheckState%2A> property is set to <xref:System.Windows.Forms.CheckState.Checked> or <xref:System.Windows.Forms.CheckState.Indeterminate>, the corresponding icon may be resized. Resizing is determined by the system DPI setting when the app.config file contains the following entry:  
   
 ```  
 <appSettings>  

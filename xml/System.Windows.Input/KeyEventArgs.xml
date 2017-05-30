@@ -328,7 +328,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- The following example creates a <xref:System.Windows.Input.KeyEventHandler> and checks whether the key associated with the <xref:System.Windows.Input.KeyEventArgs> is the <xref:System.Windows.Input.Key> key.  
+ The following example creates a <xref:System.Windows.Input.KeyEventHandler> and checks whether the key associated with the <xref:System.Windows.Input.KeyEventArgs> is the <xref:System.Windows.Input.Key.Return> key.  
   
  [!code-csharp[keydown#KeyDownSample](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyDown/CSharp/Window1.xaml.cs#keydownsample)]
  [!code-vb[keydown#KeyDownSample](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyDown/VisualBasic/Window1.xaml.vb#keydownsample)]  
@@ -361,7 +361,7 @@
    
   
 ## Examples  
- The following example checks whether a key associated with an instance of <xref:System.Windows.Input.KeyEventArgs> is down by performing a bitwise `AND` comparison on the <xref:System.Windows.Input.KeyEventArgs.KeyStates%2A> of the key and the <xref:System.Windows.Input.KeyStates> enumeration value.  
+ The following example checks whether a key associated with an instance of <xref:System.Windows.Input.KeyEventArgs> is down by performing a bitwise `AND` comparison on the <xref:System.Windows.Input.KeyEventArgs.KeyStates%2A> of the key and the <xref:System.Windows.Input.KeyStates.Down> enumeration value.  
   
  [!code-csharp[keyargssnippetsample#KeyEventArgsKeyStatesDown](~/samples/snippets/csharp/VS_Snippets_Wpf/KeyArgsSnippetSample/CSharp/Window1.xaml.cs#keyeventargskeystatesdown)]
  [!code-vb[keyargssnippetsample#KeyEventArgsKeyStatesDown](~/samples/snippets/visualbasic/VS_Snippets_Wpf/KeyArgsSnippetSample/visualbasic/window1.xaml.vb#keyeventargskeystatesdown)]  

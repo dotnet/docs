@@ -31,7 +31,7 @@
    
   
 ## Examples  
- The following code shows an implementation of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class that only accepts issuers that use certificates with subject “CN=localhost”.  
+ The following code shows an implementation of the <xref:System.IdentityModel.Tokens.IssuerNameRegistry> class that only accepts issuers that use certificates with subject "CN=localhost".  
   
 > [!WARNING]
 >  The following code is for illustrative purposes only. Validating certificates based on subject name is not a good practice. This code should not be used as is in production.  
@@ -67,6 +67,23 @@
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetIssuerName">
+      <AssemblyInfo>
+        <AssemblyName>System.IdentityModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>When overridden in a derived class, returns the issuer name for the specified security token.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Called from the processing pipeline by the security token handler that is processing the token. The method should return a unique name for the issuer within the context of the RP application.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetIssuerName">
       <MemberSignature Language="C#" Value="public abstract string GetIssuerName (System.IdentityModel.Tokens.SecurityToken securityToken);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance string GetIssuerName(class System.IdentityModel.Tokens.SecurityToken securityToken) cil managed" />
@@ -199,22 +216,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetIssuerName">
-      <AssemblyInfo>
-        <AssemblyName>System.IdentityModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>When overridden in a derived class, returns the issuer name for the specified security token.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Called from the processing pipeline by the security token handler that is processing the token. The method should return a unique name for the issuer within the context of the RP application.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

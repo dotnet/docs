@@ -26,7 +26,7 @@ This configuration element defines a standard endpoint that is pre-configured fo
 ```  
   
 <system.serviceModel>  
-    <standardEndpoints>       <discoveryEndpoint>           <standardEndpoint                  discoveryMode=”Adhoc/Managed”                  discoveryVersion=”WSDiscovery11/WSDiscoveryApril2005”                  maxResponseDelay=”Timespan”                  multicastAddress=”Uri”                   name="String" />       </discoveryEndpoint>            </standardEndpoints>  
+    <standardEndpoints>       <discoveryEndpoint>           <standardEndpoint                  discoveryMode="Adhoc/Managed"                  discoveryVersion="WSDiscovery11/WSDiscoveryApril2005"                  maxResponseDelay="Timespan"                  multicastAddress="Uri"                   name="String" />       </discoveryEndpoint>            </standardEndpoints>  
 </system.serviceModel>  
 ```  
   
@@ -37,7 +37,7 @@ This configuration element defines a standard endpoint that is pre-configured fo
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|discoveryMode|A string that specifies the mode of discovery protocol. Valid values are “Adhoc” and “Managed”. In managed mode the protocol relies on a Discovery Proxy, which acts as a repository of Discoverable services. Adhoc mode requires the protocol to use UDP multicast mechanism to find available services. This value is of type <xref:System.ServiceModel.Discovery.ServiceDiscoveryMode>.|  
+|discoveryMode|A string that specifies the mode of discovery protocol. Valid values are "Adhoc" and "Managed". In managed mode the protocol relies on a Discovery Proxy, which acts as a repository of Discoverable services. Adhoc mode requires the protocol to use UDP multicast mechanism to find available services. This value is of type <xref:System.ServiceModel.Discovery.ServiceDiscoveryMode>.|  
 |discoveryVersion|A string that specifies one of the two versions of WS-Discovery protocol. Valid values are WSDiscovery11 and WSDiscoveryApril2005. This value is of type <xref:System.ServiceModel.Discovery.DiscoveryVersion>.|  
 |maxResponseDelay|A Timespan value that specifies the maximum value for the delay the Discovery protocol will wait before sending certain messages such as Probe Match or Resolve Match.<br /><br /> If all ProbeMatches are sent at the same time, a network storm may result. To prevent this from occurring, ProbeMatches are sent with a random delay between each ProbeMatch. The random delay is in the range of 0 to the value set by this attribute. If this attribute is set to 0, then the ProbeMatches messages are sent in a tight loop without any delay. Otherwise, the ProbeMatches messages are sent with some random delay such that the total time taken to send all ProbeMatches messages does not exceed the maxResponseDelay. This value is only relevant for services, it is not used by clients.|  
 |multicastAddress|A Uri that specifies a multicast address to use for sending and receiving the discovery messages. The default value is the multicast address as conformant to the protocol specification.|  

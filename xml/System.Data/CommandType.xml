@@ -5,6 +5,7 @@
   <AssemblyInfo>
     <AssemblyName>System.Data.Common</AssemblyName>
     <AssemblyVersion>4.1.0.0</AssemblyVersion>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
   </AssemblyInfo>
   <AssemblyInfo>
     <AssemblyName>System.Data</AssemblyName>
@@ -31,7 +32,7 @@
  In order to access multiple tables, use a comma delimited list, without spaces or padding, containing the names of the tables to access. When the `CommandText` property names multiple tables, a join of the specified tables is returned.  
   
 > [!NOTE]
->  `TableDirect` is only supported by the .NET Framework Data Provider for OLE DB. Multiple table access is not supported when <xref:System.Data.CommandType> is set to `TableDirect`.  
+>  `TableDirect` is only supported by the .NET Framework Data Provider for OLE DB. Multiple table access is not supported when <xref:System.Data.CommandType.TableDirect> is set to `TableDirect`.  
   
  ]]></format>
     </remarks>
@@ -45,6 +46,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -70,6 +72,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>
@@ -95,6 +98,7 @@
       <AssemblyInfo>
         <AssemblyName>System.Data.Common</AssemblyName>
         <AssemblyVersion>4.1.0.0</AssemblyVersion>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <AssemblyInfo>
         <AssemblyName>System.Data</AssemblyName>

@@ -20,7 +20,7 @@
    
   
 ## Examples  
- The following example shows how to use markup to set the <xref:System.Web.UI.WebControls.Expressions.SearchExpression> filter option to the StartsWith value of the <xref:System.Web.UI.WebControls.Expressions.SearchType> enumeration.  
+ The following example shows how to use markup to set the <xref:System.Web.UI.WebControls.Expressions.SearchExpression> filter option to the StartsWith value of the <xref:System.Web.UI.WebControls.Expressions.SearchType.StartsWith> enumeration.  
   
 ```  
 <asp:SearchExpression SearchType="StartsWith" DataFields="Name" >  

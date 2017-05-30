@@ -112,13 +112,13 @@ go
   
  Note that the `PromotedValue` activity also has a Boolean member called `ClearExistingPromotedData`. When this member is set to `true`, this clears all the promoted property values up to that point in the workflow. For example, if a Sequence activity is defined as follows:  
   
-1.  PromoteValue { Name = “Count”, Value = 3}  
+1.  PromoteValue { Name = "Count", Value = 3}  
   
-2.  PromoteValue {Name = “LastIncrementedAt”, Value = 1-1-2000 }  
+2.  PromoteValue {Name = "LastIncrementedAt", Value = 1-1-2000 }  
   
 3.  Persist  
   
-4.  PromoteValue {Name = “Count”, Value = 4, ClearExistingPromotedData = true}  
+4.  PromoteValue {Name = "Count", Value = 4, ClearExistingPromotedData = true}  
   
 5.  Persist  
   

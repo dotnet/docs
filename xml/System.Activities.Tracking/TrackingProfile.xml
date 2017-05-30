@@ -93,15 +93,15 @@
 ## Remarks  
  Tracking records can be filtered using two visibility modes within a tracking profile. The visibility mode specifies the activities being tracked within the workflow. The visibility modes specified by the implementationVisibility setting in the tracking profile are:  
   
--   <xref:System.Activities.Tracking.ImplementationVisibility>  
+-   <xref:System.Activities.Tracking.ImplementationVisibility.RootScope>  
   
--   <xref:System.Activities.Tracking.ImplementationVisibility>  
+-   <xref:System.Activities.Tracking.ImplementationVisibility.All>  
   
  This setting applies to the filtering of tracking records for composite activities (activities that contain other activities within its implementation.)  
   
  If **implementationVisibility** is **RootScope** and the composite activity is not the root activity for the workflow, only the top level activity within the composite activity is tracked. When set to **RootScope**, this flag suppresses the tracking records for activities that are not visible from the root of the workflow. Only the root activity and its implementation are tracked. If the implementation contains activities that are composite activities, then the composite activity is tracked but not its implementation.  
   
- For example, if a composite activity is created that is implemented as “MyActivity” with an implementation containing “Activity1” and “Activity2”, and **implementationVisibility** is set to **RootScope**, when this activity is added to a workflow tracking records are emitted only for “MyActivity” and not “Activity1” or “Activity2”. If **implementationVisibility** is set to **All**, then tracking records for “MyActivity”, “Activity1”, and “Activity2” are emitted.  
+ For example, if a composite activity is created that is implemented as "MyActivity" with an implementation containing "Activity1" and "Activity2", and **implementationVisibility** is set to **RootScope**, when this activity is added to a workflow tracking records are emitted only for "MyActivity" and not "Activity1" or "Activity2". If **implementationVisibility** is set to **All**, then tracking records for "MyActivity", "Activity1", and "Activity2" are emitted.  
   
  ]]></format>
         </remarks>

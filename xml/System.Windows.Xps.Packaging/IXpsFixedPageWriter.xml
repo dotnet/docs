@@ -55,6 +55,23 @@
           <see cref="M:System.IDisposable.Dispose" /> has been called.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddFont">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> to the current page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsFont> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddFont">
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsFont AddFont ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Xps.Packaging.XpsFont AddFont() cil managed" />
@@ -185,6 +202,23 @@
           <see cref="M:System.IDisposable.Dispose" /> has been called.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="AddImage">
+      <AssemblyInfo>
+        <AssemblyName>ReachFramework</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Adds a new <see cref="T:System.Windows.Xps.Packaging.XpsImage" /> to the current page.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImage> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="AddImage">
       <MemberSignature Language="C#" Value="public System.Windows.Xps.Packaging.XpsImage AddImage (string mimeType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Windows.Xps.Packaging.XpsImage AddImage(string mimeType) cil managed" />
@@ -254,7 +288,7 @@
 ## Remarks  
  <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImage> with the specified <xref:System.Windows.Xps.Packaging.XpsImageType> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
   
- For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType>. to add  a JPEG or PNG <xref:System.Windows.Xps.Packaging.XpsImage>, respectively.  
+ For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType.JpegImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType.PngImageType>. to add  a JPEG or PNG <xref:System.Windows.Xps.Packaging.XpsImage>, respectively.  
   
    
   
@@ -363,7 +397,7 @@
 ## Remarks  
  <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddThumbnail%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImageType> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
   
- For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType>. to add  a JPEG or PNG thumbnail image, respectively.  
+ For example, `imageType` can be <xref:System.Windows.Xps.Packaging.XpsImageType.JpegImageType> or <xref:System.Windows.Xps.Packaging.XpsImageType.PngImageType>. to add  a JPEG or PNG thumbnail image, respectively.  
   
  ]]></format>
         </remarks>
@@ -527,39 +561,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName="AddImage">
-      <AssemblyInfo>
-        <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new <see cref="T:System.Windows.Xps.Packaging.XpsImage" /> to the current page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddImage%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsImage> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="AddFont">
-      <AssemblyInfo>
-        <AssemblyName>ReachFramework</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Adds a new <see cref="T:System.Windows.Xps.Packaging.XpsFont" /> to the current page.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- <xref:System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont%2A> adds a new <xref:System.Windows.Xps.Packaging.XpsFont> to the document package and associates it with the current <xref:System.Windows.Documents.FixedPage>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

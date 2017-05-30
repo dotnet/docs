@@ -302,12 +302,12 @@
   
 |Row type|Description|  
 |--------------|-----------------|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|A data row in the <xref:System.Web.UI.WebControls.GridView> control.|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|The footer row in the <xref:System.Web.UI.WebControls.GridView> control.|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|The header row in the <xref:System.Web.UI.WebControls.GridView> control.|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|The empty row in the <xref:System.Web.UI.WebControls.GridView> control. The empty row is displayed when <xref:System.Web.UI.WebControls.GridView> control does not have any records to display.|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|A pager row in the <xref:System.Web.UI.WebControls.GridView> control.|  
-|<xref:System.Web.UI.WebControls.DataControlRowType>|A separator row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.DataRow>|A data row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.Footer>|The footer row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.Header>|The header row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.EmptyDataRow>|The empty row in the <xref:System.Web.UI.WebControls.GridView> control. The empty row is displayed when <xref:System.Web.UI.WebControls.GridView> control does not have any records to display.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.Pager>|A pager row in the <xref:System.Web.UI.WebControls.GridView> control.|  
+|<xref:System.Web.UI.WebControls.DataControlRowType.Separator>|A separator row in the <xref:System.Web.UI.WebControls.GridView> control.|  
   
  This property is commonly used to determine a row's type before performing an operation.  
   

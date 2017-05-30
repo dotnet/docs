@@ -43,7 +43,7 @@
  Also, the internal backing for <xref:System.Xaml.XamlMember.DeclaringType%2A> remains unset and returns `null`.  
   
 > [!IMPORTANT]
->  <xref:System.Xaml.XamlDirective> is a <xref:System.Xaml.XamlMember> subclass. As with <xref:System.Xaml.XamlMember>, <xref:System.Xaml.XamlDirective> has security considerations regarding how the XAML type system reports access. See Remarks in <xref:System.Xaml.XamlMember>.  
+>  <xref:System.Xaml.XamlDirective> is a <xref:System.Xaml.XamlMember> subclass. As with <xref:System.Xaml.XamlMember>, <xref:System.Xaml.XamlDirective> has security considerations regarding how the XAML type system reports access. See <xref:System.Xaml.XamlMember>.  
   
  ]]></format>
     </remarks>
@@ -74,7 +74,7 @@
 > [!IMPORTANT]
 >  This signature of the constructor always generates an identifier for the directive where <xref:System.Xaml.XamlMember.IsUnknown%2A> reports `true` for the XAML type system. If the necessary information is available (the backing type and a text syntax information item for conversion) and you want an identifier that can apply the directive, use the <xref:System.Xaml.XamlDirective.%23ctor%2A?displayProperty=fullName> constructor signature instead.  
   
- If you use this signature, the <xref:System.Xaml.XamlDirective.AllowedLocation%2A> value for the instance is <xref:System.Xaml.Schema.AllowedMemberLocations>; and the <xref:System.Xaml.XamlMember.Type%2A> value and <xref:System.Xaml.XamlMember.TypeConverter%2A> value are both `null`.  
+ If you use this signature, the <xref:System.Xaml.XamlDirective.AllowedLocation%2A> value for the instance is <xref:System.Xaml.Schema.AllowedMemberLocations.Any>; and the <xref:System.Xaml.XamlMember.Type%2A> value and <xref:System.Xaml.XamlMember.TypeConverter%2A> value are both `null`.  
   
  ]]></format>
         </remarks>
@@ -133,7 +133,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- You can set this value in the <xref:System.Xaml.XamlDirective.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%2CSystem.Xaml.XamlType%2CSystem.Xaml.Schema.XamlValueConverter%7BSystem.ComponentModel.TypeConverter%7D%2CSystem.Xaml.Schema.AllowedMemberLocations%29> constructor signature. If you construct by using the <xref:System.Xaml.XamlDirective.%23ctor%28System.String%2CSystem.String%29> constructor signature, the <xref:System.Xaml.XamlDirective.AllowedLocation%2A> value for the instance is <xref:System.Xaml.Schema.AllowedMemberLocations>. However, the instance always reports <xref:System.Xaml.XamlMember.IsUnknown%2A> as `true`. This behavior typically affects attempts to write object graphs and also affects other practical uses of a <xref:System.Xaml.XamlMember> value.  
+ You can set this value in the <xref:System.Xaml.XamlDirective.%23ctor%28System.Collections.Generic.IEnumerable%7BSystem.String%7D%2CSystem.String%2CSystem.Xaml.XamlType%2CSystem.Xaml.Schema.XamlValueConverter%7BSystem.ComponentModel.TypeConverter%7D%2CSystem.Xaml.Schema.AllowedMemberLocations%29> constructor signature. If you construct by using the <xref:System.Xaml.XamlDirective.%23ctor%28System.String%2CSystem.String%29> constructor signature, the <xref:System.Xaml.XamlDirective.AllowedLocation%2A> value for the instance is <xref:System.Xaml.Schema.AllowedMemberLocations.Any>. However, the instance always reports <xref:System.Xaml.XamlMember.IsUnknown%2A> as `true`. This behavior typically affects attempts to write object graphs and also affects other practical uses of a <xref:System.Xaml.XamlMember> value.  
   
  You typically would not construct a XAML directive case where <xref:System.Xaml.XamlDirective.AllowedLocation%2A> is <xref:System.Xaml.Schema.AllowedMemberLocations?displayProperty=fullName>.  
   

@@ -17,12 +17,12 @@
 ## Remarks  
  The <xref:System.Web.UI.WebControls.SqlDataSourceMode> enumeration is used by the <xref:System.Web.UI.WebControls.SqlDataSource> and <xref:System.Web.UI.WebControls.AccessDataSource> controls to describe the data retrieval mode that the data source control uses when the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> method is called. When the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to DataSet, data is loaded into a <xref:System.Data.DataSet> structure. This enables scenarios where user interface controls such as <xref:System.Web.UI.WebControls.GridView> offer sorting and paging capabilities. When the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> property is set to DataReader, data is retrieved by an <xref:System.Data.IDataReader> object, which is a read-only, forward-only cursor.  
   
- The <xref:System.Web.UI.WebControls.SqlDataSourceMode> enumeration is only used to describe how the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> command retrieves data; it has no effect on other operations the <xref:System.Web.UI.WebControls.SqlDataSource> control performs, such as <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A>, or <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A>.  
+ The <xref:System.Web.UI.WebControls.SqlDataSourceMode.DataReader> enumeration is only used to describe how the <xref:System.Web.UI.WebControls.SqlDataSource.Select%2A> command retrieves data; it has no effect on other operations the <xref:System.Web.UI.WebControls.SqlDataSourceMode> control performs, such as <xref:System.Web.UI.WebControls.SqlDataSource.Insert%2A>, <xref:System.Web.UI.WebControls.SqlDataSource.Update%2A>, or <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A>.  
   
    
   
 ## Examples  
- The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> of a <xref:System.Web.UI.WebControls.SqlDataSource> control to DataReader when retrieving a simple list of items from a SQL Server database into a <xref:System.Web.UI.WebControls.ListBox> control.  
+ The following code example demonstrates how to set the <xref:System.Web.UI.WebControls.SqlDataSource.DataSourceMode%2A> of a <xref:System.Web.UI.WebControls.SqlDataSource.Delete%2A> control to DataReader when retrieving a simple list of items from a SQL Server database into a <xref:System.Web.UI.WebControls.ListBox> control.  
   
  <!-- TODO: review snippet reference [!code-csharp[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/csharp/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/CS/sql1cs.aspx#1)]  -->
  <!-- TODO: review snippet reference [!code-vb[System.Web.UI.WebControls.SqlDataSource_1sql#1](~/samples/snippets/visualbasic/VS_Snippets_WebNet/System.Web.UI.WebControls.SqlDataSource_1sql/VB/sql1vb.aspx#1)]  -->  

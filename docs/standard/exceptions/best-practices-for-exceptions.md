@@ -108,7 +108,7 @@ The error message that the user sees is derived from the description string of t
 
 ## Use grammatically correct error messages
 
-Write clear sentences and include ending punctuation. Each sentence in a description string of an exception should end in a period. For example, "The log table has overflowed.” would be an appropriate description string.
+Write clear sentences and include ending punctuation. Each sentence in a description string of an exception should end in a period. For example, "The log table has overflowed." would be an appropriate description string.
 
 ## In custom exceptions, provide additional properties as needed
 

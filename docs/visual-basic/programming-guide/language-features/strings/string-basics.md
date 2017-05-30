@@ -99,4 +99,4 @@ World]]></xml>.Value
  [Introduction to Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/introduction-to-strings.md)   
  [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md)   
  [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md)   
- [Basic String Operations](http://msdn.microsoft.com/library/8133d357-90b5-4b62-9927-43323d99b6b6)
+ [Basic String Operations](../../../../standard/base-types/basic-string-operations.md)

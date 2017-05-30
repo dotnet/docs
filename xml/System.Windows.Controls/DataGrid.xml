@@ -920,8 +920,7 @@
 ## Examples  
  The following example uses a trigger to change the <xref:System.Windows.Controls.Control.Background%2A> color of a <xref:System.Windows.Controls.DataGridCell> when the cell is selected.  
   
- [!code-xml[DataGrid_CellStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_cellstyle/CS/window1.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[DataGrid_CellStyle#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datagrid_cellstyle/xaml/window1.xaml#1)]  -->  
+ [!code-xml[DataGrid_CellStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_cellstyle/CS/window1.xaml#1)]   
   
  The following illustration shows the output.  
   
@@ -1182,7 +1181,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Set this property to <xref:System.Double> to make the size of the column header automatically adjust to fit its content.  
+ Set this property to <xref:System.Double.NaN> to make the size of the column header automatically adjust to fit its content.  
   
  ]]></format>
         </remarks>
@@ -1233,8 +1232,7 @@
 ## Examples  
  The following example uses a style resource to change the style of column headers in the <xref:System.Windows.Controls.DataGrid>. The style of the first column header is then set with an inline style that overrides the <xref:System.Windows.Controls.DataGrid.ColumnHeaderStyle%2A?displayProperty=fullName>.  
   
- [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnheaderstyle/CS/mainwindow.xaml#1)]
- <!-- TODO: review snippet reference [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datagrid_columnheaderstyle/xaml/mainwindow.xaml#1)]  -->  
+ [!code-xml[DataGrid_ColumnHeaderStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_columnheaderstyle/CS/mainwindow.xaml#1)]   
   
  The following illustration shows the output.  
   
@@ -2179,7 +2177,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Horizontal grid lines separate the rows in the <xref:System.Windows.Controls.DataGrid>. This property has no effect if the <xref:System.Windows.Controls.DataGrid.GridLinesVisibility%2A> property is set to <xref:System.Windows.Controls.DataGridGridLinesVisibility> or <xref:System.Windows.Controls.DataGridGridLinesVisibility>.  
+ Horizontal grid lines separate the rows in the <xref:System.Windows.Controls.DataGrid>. This property has no effect if the <xref:System.Windows.Controls.DataGrid.GridLinesVisibility%2A> property is set to <xref:System.Windows.Controls.DataGridGridLinesVisibility.Vertical> or <xref:System.Windows.Controls.DataGridGridLinesVisibility.None>.  
   
  ]]></format>
         </remarks>
@@ -4135,7 +4133,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the row details section is displayed for selected rows if a <xref:System.Windows.Controls.DataGrid.RowDetailsTemplate%2A> is defined. Set this property to <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode> to show the details for all rows or <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode> to hide the details for all rows.  
+ By default, the row details section is displayed for selected rows if a <xref:System.Windows.Controls.DataGrid.RowDetailsTemplate%2A> is defined. Set this property to <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode.Visible> to show the details for all rows or <xref:System.Windows.Controls.DataGridRowDetailsVisibilityMode.Collapsed> to hide the details for all rows.  
   
  The <xref:System.Windows.Controls.DataGrid.RowDetailsVisibilityChanged> event occurs when this property is changed.  
   
@@ -4380,7 +4378,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you set a value for the <xref:System.Windows.Controls.DataGrid.RowHeaderWidth%2A> property, it must be equal to or greater than 0.0. Set this property to <xref:System.Double> ("Auto" in XAML) to make the row header automatically adjust its size to fit its content.  
+ When you set a value for the <xref:System.Windows.Controls.DataGrid.RowHeaderWidth%2A> property, it must be equal to or greater than 0.0. Set this property to <xref:System.Double.NaN> ("Auto" in XAML) to make the row header automatically adjust its size to fit its content.  
   
  <xref:System.Double?displayProperty=fullName> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
@@ -4424,7 +4422,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you set a value for the <xref:System.Windows.Controls.DataGrid.RowHeight%2A> property, it must be equal to or greater than 0.0. Set this property to <xref:System.Double> ("Auto" in XAML) to make the row automatically adjust its size to fit its content.  
+ When you set a value for the <xref:System.Windows.Controls.DataGrid.RowHeight%2A> property, it must be equal to or greater than 0.0. Set this property to <xref:System.Double.NaN> ("Auto" in XAML) to make the row automatically adjust its size to fit its content.  
   
  <xref:System.Double?displayProperty=fullName> is not a valid value for this property. The value restrictions on the <xref:System.Double> value are enforced by a <xref:System.Windows.ValidateValueCallback> mechanism. If you attempt to set a value that is not valid, a run-time exception is thrown.  
   
@@ -4483,8 +4481,7 @@
 ## Examples  
  The following example sets the <xref:System.Windows.Controls.Control.Background%2A> color of all the rows and uses a trigger to change the <xref:System.Windows.Controls.Control.Background%2A> and <xref:System.Windows.Controls.Control.Foreground%2A> colors when the mouse pointer is over the row.  
   
- <!-- TODO: review snippet reference [!code-xml[DataGrid_RowStyle#1](~/samples/snippets/xaml/VS_Snippets_Wpf/datagrid_rowstyle/xaml/mainwindow.xaml#1)]  -->
- [!code-xml[DataGrid_RowStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_rowstyle/CS/mainwindow.xaml#1)]  
+ [!code-xml[DataGrid_RowStyle#1](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_rowstyle/CS/mainwindow.xaml#1)]   
   
  The following illustration shows the output.  
   
@@ -4633,7 +4630,7 @@
  [!code-csharp[DataGrid_Validation#CourseValidationRule](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml.cs#coursevalidationrule)]
  [!code-vb[DataGrid_Validation#CourseValidationRule](~/samples/snippets/visualbasic/VS_Snippets_Wpf/datagrid_validation/vb/mainwindow.xaml.vb#coursevalidationrule)]  
   
- The following example sets the <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A> property in XAML. The <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> property is set to <xref:System.Windows.Controls.ValidationStep> so that the validation occurs only after the bound data object is updated. When a user specifies an end date that is earlier than the start date, a red exclamation mark (!) appears in the row header.  
+ The following example sets the <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A> property in XAML. The <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> property is set to <xref:System.Windows.Controls.ValidationStep.UpdatedValue> so that the validation occurs only after the bound data object is updated. When a user specifies an end date that is earlier than the start date, a red exclamation mark (!) appears in the row header.  
   
  [!code-xml[DataGrid_Validation#RowValidationRulesXaml](~/samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml#rowvalidationrulesxaml)]  
   
@@ -4760,9 +4757,9 @@
   
 |<xref:System.Windows.Controls.DataGridSelectionUnit> value|<xref:System.Windows.Controls.DataGrid.SelectedCells%2A> value|<xref:System.Windows.Controls.Primitives.MultiSelector.SelectedItems%2A> value|  
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
-|<xref:System.Windows.Controls.DataGridSelectionUnit>|Collection of selected cells|Empty|  
-|<xref:System.Windows.Controls.DataGridSelectionUnit>|Collection of cells in the selected rows|Collection of selected rows|  
-|<xref:System.Windows.Controls.DataGridSelectionUnit>|Collection of selected cells, including all cells in a selected row|Collection of selected rows or empty if no full rows are selected|  
+|<xref:System.Windows.Controls.DataGridSelectionUnit.Cell>|Collection of selected cells|Empty|  
+|<xref:System.Windows.Controls.DataGridSelectionUnit.FullRow>|Collection of cells in the selected rows|Collection of selected rows|  
+|<xref:System.Windows.Controls.DataGridSelectionUnit.CellOrRowHeader>|Collection of selected cells, including all cells in a selected row|Collection of selected rows or empty if no full rows are selected|  
   
  When a cell is selected, the <xref:System.Windows.Controls.DataGridCell.Selected?displayProperty=fullName> event is raised, the <xref:System.Windows.Controls.DataGridCell.IsSelected%2A?displayProperty=fullName> property is set to `true`, and the cell is added to the <xref:System.Windows.Controls.DataGrid.SelectedCells%2A> collection.  
   
@@ -4831,7 +4828,7 @@
 ## Remarks  
  The <xref:System.Windows.Controls.DataGrid.SelectionMode%2A> and <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> properties together define the selection behavior for the <xref:System.Windows.Controls.DataGrid>.  
   
- If the selection mode is <xref:System.Windows.Controls.DataGridSelectionMode>, the user can select multiple items where the item type is defined by the <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> property. If the selection mode is <xref:System.Windows.Controls.DataGridSelectionMode>, the user can only select single items.  
+ If the selection mode is <xref:System.Windows.Controls.DataGridSelectionMode.Extended>, the user can select multiple items where the item type is defined by the <xref:System.Windows.Controls.DataGrid.SelectionUnit%2A> property. If the selection mode is <xref:System.Windows.Controls.DataGridSelectionMode.Single>, the user can only select single items.  
   
  ]]></format>
         </remarks>
@@ -5036,7 +5033,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Vertical grid lines separate the columns in the <xref:System.Windows.Controls.DataGrid>. This property has no effect if the <xref:System.Windows.Controls.DataGrid.GridLinesVisibility%2A> property is set to <xref:System.Windows.Controls.DataGridGridLinesVisibility> or <xref:System.Windows.Controls.DataGridGridLinesVisibility>.  
+ Vertical grid lines separate the columns in the <xref:System.Windows.Controls.DataGrid>. This property has no effect if the <xref:System.Windows.Controls.DataGrid.GridLinesVisibility%2A> property is set to <xref:System.Windows.Controls.DataGridGridLinesVisibility.Horizontal> or <xref:System.Windows.Controls.DataGridGridLinesVisibility.None>.  
   
  ]]></format>
         </remarks>

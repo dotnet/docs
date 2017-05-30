@@ -28,7 +28,7 @@
    
   
 ## Examples  
- The following XML Web service method specifies that the `myHeader`<xref:System.Web.Services.Protocols.SoapHeader> is sent from the XML Web service client to the XML Web service and then back to the XML Web service client, regardless of an exception thrown during execution of the XML Web service method.  
+ The following XML Web service method specifies that the `myHeader`<xref:System.Web.Services.Protocols.SoapHeaderDirection.Fault> is sent from the XML Web service client to the XML Web service and then back to the XML Web service client, regardless of an exception thrown during execution of the XML Web service method.  
   
  [!code-cpp[Classic SoapHeaderDirection Example#1](~/samples/snippets/cpp/VS_Snippets_Remoting/Classic SoapHeaderDirection Example/CPP/source.cpp#1)]
  [!code-csharp[Classic SoapHeaderDirection Example#1](~/samples/snippets/csharp/VS_Snippets_Remoting/Classic SoapHeaderDirection Example/CS/source.cs#1)]

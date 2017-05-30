@@ -2,6 +2,7 @@
 title: "&lt;claimsAuthorizationManager&gt; | Microsoft Docs"
 ms.custom: ""
 ms.date: "03/30/2017"
+ms.prod: ".net-framework"
 ms.reviewer: ""
 ms.suite: ""
 ms.technology: 
@@ -25,11 +26,11 @@ Registers a claims authorization manager for the incoming claims.
   
 ```  
 \<system.identityModel>  
-  <identityConfiguration>  
-    \<claimsAuthorizationManager type = xs:string>  
-      <optionalConfigurationElements />  
-    </claimsAuthorizationManager>  
-  </identityConfiguration>  
+  <identityConfiguration>  
+    \<claimsAuthorizationManager type = xs:string>  
+      <optionalConfigurationElements />  
+    </claimsAuthorizationManager>  
+  </identityConfiguration>  
 \</system.identityModel>  
 ```  
   

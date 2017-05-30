@@ -148,7 +148,7 @@ Example of a strikethrough text decoration
    
   
 ## Examples  
- In the following example, a strikethrough text decoration is created by using solid color brush for the pen. The <xref:System.Windows.TextDecoration.Location%2A> property is set to <xref:System.Windows.TextDecorationLocation>.  
+ In the following example, a strikethrough text decoration is created by using solid color brush for the pen. The <xref:System.Windows.TextDecoration.Location%2A> property is set to <xref:System.Windows.TextDecorationLocation.Strikethrough>.  
   
  [!code-csharp[TextDecorationSnippets#TextDecorationSnippets1](~/samples/snippets/csharp/VS_Snippets_Wpf/TextDecorationSnippets/CSharp/Window1.xaml.cs#textdecorationsnippets1)]
  [!code-vb[TextDecorationSnippets#TextDecorationSnippets1](~/samples/snippets/visualbasic/VS_Snippets_Wpf/TextDecorationSnippets/visualbasic/window1.xaml.vb#textdecorationsnippets1)]

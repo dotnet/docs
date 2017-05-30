@@ -94,7 +94,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
   
  [!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
  [!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
@@ -125,7 +125,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
   
  [!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
  [!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  
@@ -156,7 +156,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Examples  
- In the following example, an <xref:System.Windows.Automation.AutomationElement> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
+ In the following example, an <xref:System.Windows.Automation.AutomationElement.AutomationFocusChangedEvent> listener is declared to track the traversal of table items within a table container. Item properties are recorded upon each focus changed event.  
   
  [!code-csharp[UIATableItemPattern_snip#102](~/samples/snippets/csharp/VS_Snippets_Wpf/UIATableItemPattern_snip/CSharp/UIATableItemPattern_snippets.cs#102)]
  [!code-vb[UIATableItemPattern_snip#102](~/samples/snippets/visualbasic/VS_Snippets_Wpf/UIATableItemPattern_snip/VisualBasic/UIATableItemPattern_snippets.vb#102)]  

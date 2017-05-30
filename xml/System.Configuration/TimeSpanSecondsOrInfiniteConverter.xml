@@ -6,6 +6,10 @@
     <AssemblyName>System.Configuration</AssemblyName>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Configuration.TimeSpanSecondsConverter</BaseTypeName>
   </Base>
@@ -18,7 +22,7 @@
 ## Remarks  
  This type, like all the other configuration converter types, converts strings found in the configuration file to and from the related strongly typed properties.  
   
- In particular, the <xref:System.Configuration.TimeSpanSecondsOrInfiniteConverter> converts <xref:System.String> seconds, assigned to a configuration property, to <xref:System.TimeSpan> seconds, and vice versa. If the configuration property has a <xref:System.String> value of "infinite", it converts this value to <xref:System.TimeSpan> and vice versa.  
+ In particular, the <xref:System.Configuration.TimeSpanSecondsOrInfiniteConverter> converts <xref:System.String> seconds, assigned to a configuration property, to <xref:System.TimeSpan> seconds, and vice versa. If the configuration property has a <xref:System.String> value of "infinite", it converts this value to <xref:System.TimeSpan.MaxValue> and vice versa.  
   
  The infinite <xref:System.TimeSpan> value is represented by the <xref:System.TimeSpan.MaxValue> enumeration value.  
   
@@ -38,6 +42,10 @@
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters />
@@ -60,6 +68,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -98,6 +110,10 @@
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Configuration</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Configuration.ConfigurationManager</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>

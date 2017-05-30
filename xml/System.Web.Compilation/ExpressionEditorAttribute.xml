@@ -31,6 +31,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName=".ctor">
+      <AssemblyInfo>
+        <AssemblyName>System.Web</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ExpressionEditorAttribute" /> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Use the <xref:System.Web.UI.Design.ExpressionEditor.%23ctor%2A> constructor to initialize an empty instance of the <xref:System.Web.Compilation.ExpressionEditorAttribute> class. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type object, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type name, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName=".ctor">
       <MemberSignature Language="C#" Value="public ExpressionEditorAttribute (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig specialname rtspecialname instance void .ctor(string typeName) cil managed" />
@@ -157,22 +174,5 @@
         </remarks>
       </Docs>
     </Member>
-    <MemberGroup MemberName=".ctor">
-      <AssemblyInfo>
-        <AssemblyName>System.Web</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Web.Compilation.ExpressionEditorAttribute" /> class.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- Use the <xref:System.Web.UI.Design.ExpressionEditor.%23ctor%2A> constructor to initialize an empty instance of the <xref:System.Web.Compilation.ExpressionEditorAttribute> class. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type object, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor. To initialize the <xref:System.Web.Compilation.ExpressionEditorAttribute> class using a type name, use the <xref:System.Web.Compilation.ExpressionEditorAttribute.%23ctor%2A> constructor.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

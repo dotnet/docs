@@ -160,7 +160,7 @@
 |Property setting|Behavior|  
 |----------------------|--------------|  
 |Default ("{0}")|The user's name is displayed when the user is logged on; otherwise, nothing is displayed.|  
-|<xref:System.String>|Same as default. To hide the control, set the <xref:System.Web.UI.Control.Visible%2A> property to `false`.|  
+|<xref:System.String.Empty>|Same as default. To hide the control, set the <xref:System.Web.UI.Control.Visible%2A> property to `false`.|  
 |"Welcome to my site, {0}."|Displays the string "Welcome to my site, *username*." when the user is logged in. When the user is not logged in, nothing is displayed.|  
 |"Welcome to my site."|When the <xref:System.Web.UI.WebControls.LoginName.FormatString%2A> property is set to a string, the string is displayed when the user is logged in. Because the string does not contain "{0}", the user's name is not displayed. When the user is not logged in, nothing is displayed.|  
   

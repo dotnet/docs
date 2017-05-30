@@ -109,7 +109,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> normalizes numbers to the words that correspond to how the number will be spoken. For example, the synthesizer speaks the number “4003” as “four thousand three”. It raises a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress> event for each of the spoken words, and returns the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.AudioPosition%2A> for each word.  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> normalizes numbers to the words that correspond to how the number will be spoken. For example, the synthesizer speaks the number "4003" as "four thousand three". It raises a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress> event for each of the spoken words, and returns the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.AudioPosition%2A> for each word.  
   
  ]]></format>
         </remarks>
@@ -134,7 +134,7 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> normalizes numbers to the words that correspond to how the number will be spoken. For example, the synthesizer speaks the number “4003” as “four thousand three”. It raises a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress> event for each of the spoken words. However, the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterCount%2A> property for each of the three words is the same. It is the count of the characters in the number “4003” in the text of the prompt, in this case, four.  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> normalizes numbers to the words that correspond to how the number will be spoken. For example, the synthesizer speaks the number "4003" as "four thousand three". It raises a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress> event for each of the spoken words. However, the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterCount%2A> property for each of the three words is the same. It is the count of the characters in the number "4003" in the text of the prompt, in this case, four.  
   
  ]]></format>
         </remarks>
@@ -159,14 +159,14 @@ namespace SampleSynthesis
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> includes the count for characters in XML tags, including their enclosing brackets. When using any of the <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithAlias%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithHint%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>, or <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation%2A> methods, the contents are added to an SSML prompt that includes the opening and closing `speak` elements. The opening `speak` element adds an offset of 82 characters and spaces to the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> of the all the words and letters in the prompt. For example, in the following snippet, the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> of the first word, “this”, is 82.  
+ The <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> includes the count for characters in XML tags, including their enclosing brackets. When using any of the <xref:System.Speech.Synthesis.PromptBuilder.AppendText%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithAlias%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithHint%2A>, <xref:System.Speech.Synthesis.PromptBuilder.AppendSsmlMarkup%2A>, or <xref:System.Speech.Synthesis.PromptBuilder.AppendTextWithPronunciation%2A> methods, the contents are added to an SSML prompt that includes the opening and closing `speak` elements. The opening `speak` element adds an offset of 82 characters and spaces to the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> of the all the words and letters in the prompt. For example, in the following snippet, the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> of the first word, "this", is 82.  
   
 ```csharp  
 builder.AppendText("This is a test");  
 Synthesizer.Speak(builder);  
 ```  
   
- In the above example the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> of the word “test” is 92. In the following snippet the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> of the word “test” is 23 characters higher (115) because the opening **\<prosody pitch="high">**  tag that precedes it contains 23 characters and spaces (the two escape characters "\\" are not counted).  
+ In the above example the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> of the word "test" is 92. In the following snippet the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> of the word "test" is 23 characters higher (115) because the opening **\<prosody pitch="high">**  tag that precedes it contains 23 characters and spaces (the two escape characters "\\" are not counted).  
   
 ```csharp  
 builder.AppendSsmlMarkup("This is a <prosody pitch=\"high\"> test </prosody>.");   
@@ -175,13 +175,13 @@ Synthesizer.Speak(builder);
   
  If you use the <xref:System.Speech.Synthesis.PromptBuilder.AppendSsml%2A> methods to add content to a prompt by specifying a file, the opening `xml` declaration and `speak` elements in the file are not used or counted. The first character in the file after the opening `speak` tag will be at position 82 if it is the first content in the prompt.  
   
- By contrast, the string parameter of a <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method does not get added to an SSML prompt before being spoken. Therefore, the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> of the first word, “this”, in the following snippet is zero.  
+ By contrast, the string parameter of a <xref:System.Speech.Synthesis.SpeechSynthesizer.Speak%2A> method does not get added to an SSML prompt before being spoken. Therefore, the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> of the first word, "this", in the following snippet is zero.  
   
 ```csharp  
-Synthesizer.Speak(“This is a test.”);  
+Synthesizer.Speak("This is a test.");  
 ```  
   
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> normalizes numbers to the words that correspond to how the number will be spoken. For example, the synthesizer speaks the number “4003” as “four thousand three”. It raises a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress> event for each of the three spoken words. However, the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> property for each of the three words is the same. It is the position before the first character of the number “4003” in the text of the prompt.  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> normalizes numbers to the words that correspond to how the number will be spoken. For example, the synthesizer speaks the number "4003" as "four thousand three". It raises a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress> event for each of the three spoken words. However, the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.CharacterPosition%2A> property for each of the three words is the same. It is the position before the first character of the number "4003" in the text of the prompt.  
   
    
   
@@ -291,7 +291,7 @@ showers. </p>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- The <xref:System.Speech.Synthesis.SpeechSynthesizer> normalizes numbers to the words that correspond to how the number will be spoken. For example, the synthesizer speaks the number “4003” as “four thousand three”. It raises a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress> event for each of the spoken words. However, the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.Text%2A> property for each of the three words is the same. It is the text “4003” from the prompt.  
+ The <xref:System.Speech.Synthesis.SpeechSynthesizer> normalizes numbers to the words that correspond to how the number will be spoken. For example, the synthesizer speaks the number "4003" as "four thousand three". It raises a <xref:System.Speech.Synthesis.SpeechSynthesizer.SpeakProgress> event for each of the spoken words. However, the <xref:System.Speech.Synthesis.SpeakProgressEventArgs.Text%2A> property for each of the three words is the same. It is the text "4003" from the prompt.  
   
    
   

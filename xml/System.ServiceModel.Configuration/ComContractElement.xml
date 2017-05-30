@@ -16,14 +16,14 @@
       <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- COM+ integration service contracts are currently restricted to the “http://tempuri.org” namespace, and the contract name is derived from the supporting COM interface. You can, however, specify alternatives by using the `comContracts` section in the configuration file.  
+ COM+ integration service contracts are currently restricted to the "http://tempuri.org" namespace, and the contract name is derived from the supporting COM interface. You can, however, specify alternatives by using the `comContracts` section in the configuration file.  
   
    
   
 ## Examples  
  You can use the following configuration to specify the namespace, contract name, and user defined types to be included. You can also specify other settings for a service contract  
   
- <!-- TODO: review snippet reference [!code[S_UEComContractElement#100](~/samples/snippets/common/VS_Snippets_CFX/s_uecomcontractelement/common/app.config#100)]  -->  
+ [!code-xml[S_UEComContractElement#100](~/samples/snippets/csharp/VS_Snippets_CFX/s_uecomcontractelement/common/app.config#100)]   
   
  When the service is initialized, the specified namespaces and contract names are applied to the generated service descriptions.  
   
@@ -124,7 +124,7 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
   
  When you run the ComSvcConfig.exe tool, it then generates the following service contract listing the previously mentioned methods as `exposedMethod` elements.  
   
- <!-- TODO: review snippet reference [!code[S_UEComContractElement#101](~/samples/snippets/common/VS_Snippets_CFX/s_uecomcontractelement/common/app2.config#101)]  -->  
+ [!code-xml[S_UEComContractElement#101](~/samples/snippets/csharp/VS_Snippets_CFX/s_uecomcontractelement/common/app2.config#101)]   
   
  At service initialization time, the runtime attempts to generate a service contract by reflecting over and adding only the methods included in the list of `exposedMethod` elements. A trace is produced for every interface method that is not included on the service contract.  
   
@@ -289,7 +289,7 @@ ComSvcConfig.exe /i /application:OnlineStore /contract:ItemOrders.Financial,IFin
 ## Examples  
  The following example demonstrates adding two specific UDTs to the <`userDefinedTypes`> section of the configuration file for this purpose.  
   
- <!-- TODO: review snippet reference [!code[S_UEComContractElement#102](~/samples/snippets/common/VS_Snippets_CFX/s_uecomcontractelement/common/app3.config#102)]  -->  
+ [!code-xml[S_UEComContractElement#102](~/samples/snippets/csharp/VS_Snippets_CFX/s_uecomcontractelement/common/app3.config#102)]   
   
  The attributes of the <`userDefinedType`> element are defined as follows:  
   

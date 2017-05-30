@@ -75,7 +75,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A <xref:System.Windows.Controls.Ribbon.Ribbon> control can display a <xref:System.Windows.Controls.Ribbon.RibbonImageSize> image, a <xref:System.Windows.Controls.Ribbon.RibbonImageSize> image, or the image can be <xref:System.Windows.Controls.Ribbon.RibbonImageSize>. If the control does not specify an image of the size that corresponds to the <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize%2A> setting, no image is displayed.  
+ A <xref:System.Windows.Controls.Ribbon.Ribbon> control can display a <xref:System.Windows.Controls.Ribbon.RibbonImageSize.Large> image, a <xref:System.Windows.Controls.Ribbon.RibbonImageSize.Small> image, or the image can be <xref:System.Windows.Controls.Ribbon.RibbonImageSize.Collapsed>. If the control does not specify an image of the size that corresponds to the <xref:System.Windows.Controls.Ribbon.RibbonControlSizeDefinition.ImageSize%2A> setting, no image is displayed.  
   
 <a name="dependencyPropertyInfo_ImageSize"></a>   
 ## Dependency Property Information  

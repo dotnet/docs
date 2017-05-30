@@ -345,7 +345,7 @@ public class DerivativesCalculatorServiceType: IDerivativesCalculator
 2.  Create a service file with a .svc extension with an `@ ServiceHost` directive to identify the service type:  
   
     ```  
-    <%@ServiceHost language=”c#” Service="MyService" %>  
+    <%@ServiceHost language="c#" Service="MyService" %>  
     ```  
   
 3.  Copy the service file into a virtual directory, and the assembly into the \bin subdirectory of that virtual directory.  
@@ -368,7 +368,7 @@ Uri[] baseAdresses = new Uri[] {
  tcpBaseAddressUri};  
   
 using(ServiceHost host = new ServiceHost(  
-typeof(Service), //”Service” is the name of the service type baseAdresses))  
+typeof(Service), //"Service" is the name of the service type baseAdresses))  
 {  
      host.Open();  
   

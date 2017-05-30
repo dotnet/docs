@@ -35,6 +35,23 @@
     </remarks>
   </Docs>
   <Members>
+    <MemberGroup MemberName="Find">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns the first service endpoint found that satisfies specific criteria from the collection of service endpoints.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="Find">
       <MemberSignature Language="C#" Value="public System.ServiceModel.Description.ServiceEndpoint Find (Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.ServiceModel.Description.ServiceEndpoint Find(class System.Type contractType) cil managed" />
@@ -194,6 +211,23 @@
           <paramref name="contractName" /> or <paramref name="bindingName" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="FindAll">
+      <AssemblyInfo>
+        <AssemblyName>System.ServiceModel</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Returns a collection of all the service endpoints that satisfy specific criteria.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ If you only need to find the first <xref:System.ServiceModel.Description.ServiceEndpoint> that satisfies the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> methods instead.  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="FindAll">
       <MemberSignature Language="C#" Value="public System.Collections.ObjectModel.Collection&lt;System.ServiceModel.Description.ServiceEndpoint&gt; FindAll (Type contractType);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.ObjectModel.Collection`1&lt;class System.ServiceModel.Description.ServiceEndpoint&gt; FindAll(class System.Type contractType) cil managed" />
@@ -332,39 +366,5 @@
           <paramref name="item" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="FindAll">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns a collection of all the service endpoints that satisfy specific criteria.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If you only need to find the first <xref:System.ServiceModel.Description.ServiceEndpoint> that satisfies the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.Find%2A> methods instead.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
-    <MemberGroup MemberName="Find">
-      <AssemblyInfo>
-        <AssemblyName>System.ServiceModel</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Returns the first service endpoint found that satisfies specific criteria from the collection of service endpoints.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- There are potentially multiple endpoints that could satisfy the criteria. The method returns the first one encountered in the collection. If you need to find all of the <xref:System.ServiceModel.Description.ServiceEndpoint> objects that satisfy the specified criteria, use one of the <xref:System.ServiceModel.Description.ServiceEndpointCollection.FindAll%2A> methods instead.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

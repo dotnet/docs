@@ -44,7 +44,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.AddIn.Contract.SerializableObjectData.DimensionLengths> is `null` if <xref:System.AddIn.Contract.SerializableObjectData> is `false`.  
+ <xref:System.AddIn.Contract.SerializableObjectData.DimensionLengths> is `null` if <xref:System.AddIn.Contract.SerializableObjectData.IsArray> is `false`.  
   
  ]]></format>
         </remarks>
@@ -68,7 +68,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.AddIn.Contract.SerializableObjectData.DimensionLowerBounds> is `null` if <xref:System.AddIn.Contract.SerializableObjectData> is `false`.  
+ <xref:System.AddIn.Contract.SerializableObjectData.DimensionLowerBounds> is `null` if <xref:System.AddIn.Contract.SerializableObjectData.IsArray> is `false`.  
   
  ]]></format>
         </remarks>
@@ -92,7 +92,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.AddIn.Contract.SerializableObjectData.ElementIndexes> is `null` if <xref:System.AddIn.Contract.SerializableObjectData> is `false`.  
+ <xref:System.AddIn.Contract.SerializableObjectData.ElementIndexes> is `null` if <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `false`.  
   
  ]]></format>
         </remarks>
@@ -118,7 +118,7 @@
 ## Remarks  
  <xref:System.AddIn.Contract.SerializableObjectData.IsArray> is `true` if the <xref:System.AddIn.Contract.SerializableObjectData> describes an array; otherwise, <xref:System.AddIn.Contract.SerializableObjectData.IsArray> is `false`.  
   
- If <xref:System.AddIn.Contract.SerializableObjectData.IsArray> and <xref:System.AddIn.Contract.SerializableObjectData> are both `true`, the <xref:System.AddIn.Contract.SerializableObjectData> describes a jagged array.  
+ If <xref:System.AddIn.Contract.SerializableObjectData.IsArray> and <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> are both `true`, the <xref:System.AddIn.Contract.SerializableObjectData> describes a jagged array.  
   
  ]]></format>
         </remarks>
@@ -144,7 +144,7 @@
 ## Remarks  
  <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `true` if the <xref:System.AddIn.Contract.SerializableObjectData> describes an element in an array; otherwise, <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `false`.  
   
- If <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `true`, then <xref:System.AddIn.Contract.SerializableObjectData> identifies the array, and <xref:System.AddIn.Contract.SerializableObjectData.MemberName> is `null`.  
+ If <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> is `true`, then <xref:System.AddIn.Contract.SerializableObjectData.ParentId> identifies the array, and <xref:System.AddIn.Contract.SerializableObjectData.MemberName> is `null`.  
   
  If <xref:System.AddIn.Contract.SerializableObjectData.IsArray> and <xref:System.AddIn.Contract.SerializableObjectData.IsArrayElement> are both `true`, the <xref:System.AddIn.Contract.SerializableObjectData> describes a jagged array.  
   
@@ -170,7 +170,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.AddIn.Contract.SerializableObjectData.MemberName> is `null` if the <xref:System.AddIn.Contract.SerializableObjectData> describes an object that is not a member of another object (that is, <xref:System.AddIn.Contract.SerializableObjectData> is `null`).  
+ <xref:System.AddIn.Contract.SerializableObjectData.MemberName> is `null` if the <xref:System.AddIn.Contract.SerializableObjectData> describes an object that is not a member of another object (that is, <xref:System.AddIn.Contract.SerializableObjectData.ParentId> is `null`).  
   
  ]]></format>
         </remarks>

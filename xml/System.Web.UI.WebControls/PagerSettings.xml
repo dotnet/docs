@@ -31,12 +31,12 @@
   
 |Mode|Description|  
 |----------|-----------------|  
-|<xref:System.Web.UI.WebControls.PagerButtons>|Previous-page and next-page buttons.|  
-|<xref:System.Web.UI.WebControls.PagerButtons>|Previous-page, next-page, first-page, and last -page buttons.|  
-|<xref:System.Web.UI.WebControls.PagerButtons>|Numbered link buttons to access pages directly.|  
-|<xref:System.Web.UI.WebControls.PagerButtons>|Numbered-link, first-link, and last-link buttons.|  
+|<xref:System.Web.UI.WebControls.PagerButtons.NextPrevious>|Previous-page and next-page buttons.|  
+|<xref:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast>|Previous-page, next-page, first-page, and last -page buttons.|  
+|<xref:System.Web.UI.WebControls.PagerButtons.Numeric>|Numbered link buttons to access pages directly.|  
+|<xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast>|Numbered-link, first-link, and last-link buttons.|  
   
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons>, <xref:System.Web.UI.WebControls.PagerButtons>, or <xref:System.Web.UI.WebControls.PagerButtons> value you can customize the text of the non-numeric buttons by setting the properties shown in the following table.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.NextPrevious>, <xref:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast>, or <xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast> value you can customize the text of the non-numeric buttons by setting the properties shown in the following table.  
   
 |Property|Description|  
 |--------------|-----------------|  
@@ -57,7 +57,7 @@
 > [!NOTE]
 >  When an image property is set, the corresponding text property acts as the alternate text for the image. For example, when the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl%2A> property is set, the text that is specified by the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> property is displayed as the alternate text for the image. On browsers that support ToolTips, this text is also displayed as a ToolTip for the corresponding button.  
   
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons> or <xref:System.Web.UI.WebControls.PagerButtons> value, you can specify the number of page buttons to display in the pager by setting the <xref:System.Web.UI.WebControls.PagerSettings.PageButtonCount%2A> property.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.Numeric> or <xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast> value, you can specify the number of page buttons to display in the pager by setting the <xref:System.Web.UI.WebControls.PagerSettings.PageButtonCount%2A> property.  
   
  The pager can be displayed at the top, the bottom, or both the top and bottom of a control. To specify the position of the pager, set the <xref:System.Web.UI.WebControls.PagerSettings.Position%2A> property. To show or hide the pager, use the <xref:System.Web.UI.WebControls.PagerSettings.Visible%2A> property.  
   
@@ -131,7 +131,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons> or <xref:System.Web.UI.WebControls.PagerButtons> value, use the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl%2A> property to specify the URL to an image to display for the first-page button.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast> or <xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast> value, use the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl%2A> property to specify the URL to an image to display for the first-page button.  
   
 > [!NOTE]
 >  As an alternative, you can display text for the first-page button by setting the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> property instead of the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl%2A> property. If the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl%2A> and <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> properties are both set, the image is displayed with the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> property acting as the alternate text for the image. On browsers that support ToolTips, this text is also displayed as a ToolTip for the corresponding button.  
@@ -177,7 +177,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons> or <xref:System.Web.UI.WebControls.PagerButtons> value, use the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> property to specify the text to display for the first-page button.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast> or <xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast> value, use the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> property to specify the text to display for the first-page button.  
   
 > [!NOTE]
 >  As an alternative, you can display an image for the first-page button by setting the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl%2A> property instead of the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> property. If the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageImageUrl%2A> and <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> properties are both set, the image is displayed with the <xref:System.Web.UI.WebControls.PagerSettings.FirstPageText%2A> property acting as the alternate text for the image. On browsers that support ToolTips, this text is also displayed as a ToolTip for the corresponding button.  
@@ -229,7 +229,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons> or <xref:System.Web.UI.WebControls.PagerButtons> value, use the <xref:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl%2A> property to specify the URL to an image to display for the last-page button.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast> or <xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast> value, use the <xref:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl%2A> property to specify the URL to an image to display for the last-page button.  
   
 > [!NOTE]
 >  As an alternative, you can simply display text for the last-page button by setting the <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> property instead of the <xref:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl%2A> property. If the <xref:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl%2A> and <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> properties are both set, the image is displayed with the <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> property acting as the alternate text for the image. On browsers that support ToolTips, this text is also displayed as a ToolTip for the corresponding button.  
@@ -275,7 +275,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons> or <xref:System.Web.UI.WebControls.PagerButtons> value, use the <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> property to specify the text to display for the last-page button.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast> or <xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast> value, use the <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> property to specify the text to display for the last-page button.  
   
 > [!NOTE]
 >  As an alternative, you can display an image for the last-page button by setting the <xref:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl%2A> property instead of the <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> property. If the <xref:System.Web.UI.WebControls.PagerSettings.LastPageImageUrl%2A> and <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> properties are both set, the image is displayed with the <xref:System.Web.UI.WebControls.PagerSettings.LastPageText%2A> property acting as the alternate text for the image. On browsers that support ToolTips, this text is also displayed as a ToolTip for the corresponding button.  
@@ -325,12 +325,12 @@
   
 |Mode|Description|  
 |----------|-----------------|  
-|<xref:System.Web.UI.WebControls.PagerButtons>|Previous-page and next-page buttons.|  
-|<xref:System.Web.UI.WebControls.PagerButtons>|Previous-page, next-page, first-page, and last-page buttons.|  
-|<xref:System.Web.UI.WebControls.PagerButtons>|Numbered link buttons to access pages directly.|  
-|<xref:System.Web.UI.WebControls.PagerButtons>|Numbered and first-link and last-link buttons.|  
+|<xref:System.Web.UI.WebControls.PagerButtons.NextPrevious>|Previous-page and next-page buttons.|  
+|<xref:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast>|Previous-page, next-page, first-page, and last-page buttons.|  
+|<xref:System.Web.UI.WebControls.PagerButtons.Numeric>|Numbered link buttons to access pages directly.|  
+|<xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast>|Numbered and first-link and last-link buttons.|  
   
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons>, <xref:System.Web.UI.WebControls.PagerButtons>, or <xref:System.Web.UI.WebControls.PagerButtons> value, you can specify custom text for the non-numeric buttons by setting the properties shown in the following table.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.NextPrevious>, <xref:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast>, or <xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast> value, you can specify custom text for the non-numeric buttons by setting the properties shown in the following table.  
   
 |Property|Description|  
 |--------------|-----------------|  
@@ -399,7 +399,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons> or <xref:System.Web.UI.WebControls.PagerButtons> value, use the <xref:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl%2A> property to specify the URL to an image to display for the next-page button.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast> or <xref:System.Web.UI.WebControls.PagerButtons.NextPrevious> value, use the <xref:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl%2A> property to specify the URL to an image to display for the next-page button.  
   
 > [!NOTE]
 >  As an alternative, you can simply display text for the next-page button by setting the <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> property instead of the <xref:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl%2A> property. If the <xref:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl%2A> and <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> properties are both set, the image is displayed with the <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> property acting as the alternate text for the image. On browsers that support ToolTips, this text is also displayed as a ToolTip for the corresponding button.  
@@ -445,7 +445,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons> or <xref:System.Web.UI.WebControls.PagerButtons> value, use the <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> property to specify the text to display for the next-page button.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast> or <xref:System.Web.UI.WebControls.PagerButtons.NextPrevious> value, use the <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> property to specify the text to display for the next-page button.  
   
 > [!NOTE]
 >  As an alternative, you can display an image for the next-page button by setting the <xref:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl%2A> property instead of the <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> property. If the <xref:System.Web.UI.WebControls.PagerSettings.NextPageImageUrl%2A> and <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> properties are both set, the image is displayed with the <xref:System.Web.UI.WebControls.PagerSettings.NextPageText%2A> property acting as the alternate text for the image. On browsers that support ToolTips, this text is also displayed as a ToolTip for the corresponding button.  
@@ -491,7 +491,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons> or <xref:System.Web.UI.WebControls.PagerButtons> value, use the <xref:System.Web.UI.WebControls.PagerSettings.PageButtonCount%2A> property to specify the number of page buttons to display in the pager.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.Numeric> or <xref:System.Web.UI.WebControls.PagerButtons.NumericFirstLast> value, use the <xref:System.Web.UI.WebControls.PagerSettings.PageButtonCount%2A> property to specify the number of page buttons to display in the pager.  
   
  The value of this property is stored in view state.  
   
@@ -539,9 +539,9 @@
   
 |Position|Location|  
 |--------------|--------------|  
-|<xref:System.Web.UI.WebControls.PagerPosition>|The bottom of the control.|  
-|<xref:System.Web.UI.WebControls.PagerPosition>|The top of the control.|  
-|<xref:System.Web.UI.WebControls.PagerPosition>|At both the top and bottom of the control.|  
+|<xref:System.Web.UI.WebControls.PagerPosition.Bottom>|The bottom of the control.|  
+|<xref:System.Web.UI.WebControls.PagerPosition.Top>|The top of the control.|  
+|<xref:System.Web.UI.WebControls.PagerPosition.TopAndBottom>|At both the top and bottom of the control.|  
   
  The value of this property is stored in view state.  
   
@@ -591,7 +591,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons> or <xref:System.Web.UI.WebControls.PagerButtons> value, use the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl%2A> property to specify the URL to an image to display for the previous-page button.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast> or <xref:System.Web.UI.WebControls.PagerButtons.NextPrevious> value, use the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl%2A> property to specify the URL to an image to display for the previous-page button.  
   
 > [!NOTE]
 >  As an alternative, you can display text for the previous-page button by setting the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> property instead of the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl%2A> property. If the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl%2A> and <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> properties are both set, the image is displayed with the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> property acting as the alternate text for the image. On browsers that support ToolTips, this text is also displayed as a ToolTip for the corresponding button.  
@@ -637,7 +637,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons> or <xref:System.Web.UI.WebControls.PagerButtons> value, use the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> property to specify the text to display for the previous-page button.  
+ When the <xref:System.Web.UI.WebControls.PagerSettings.Mode%2A> property is set to the <xref:System.Web.UI.WebControls.PagerButtons.NextPreviousFirstLast> or <xref:System.Web.UI.WebControls.PagerButtons.NextPrevious> value, use the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> property to specify the text to display for the previous-page button.  
   
 > [!NOTE]
 >  As an alternative, you can display an image for the previous-page button by setting the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl%2A> property instead of the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> property. If the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageImageUrl%2A> and <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> properties are both set, the image is displayed with the <xref:System.Web.UI.WebControls.PagerSettings.PreviousPageText%2A> property acting as the alternate text for the image. On browsers that support ToolTips, this text is also displayed as a ToolTip for the corresponding button.  

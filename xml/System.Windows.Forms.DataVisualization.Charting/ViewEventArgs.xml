@@ -204,9 +204,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When this property is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>, the unit of measurement for the <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize%2A> property is automatically determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control, and will be either a number or a day.  
+ When this property is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto>, the unit of measurement for the <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize%2A> property is automatically determined by the <xref:System.Windows.Forms.DataVisualization.Charting.Chart> control, and will be either a number or a day.  
   
- Recall that the <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize%2A> property is always measured as an axis value. Make sure that if you explicitly set the size type, the type matches the axis that the scrollbar belongs to. In other words, do not specify <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType> if the axis does not use <xref:System.DateTime> values.  
+ Recall that the <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize%2A> property is always measured as an axis value. Make sure that if you explicitly set the size type, the type matches the axis that the scrollbar belongs to. In other words, do not specify <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Minutes> if the axis does not use <xref:System.DateTime> values.  
   
  Note that the <xref:System.Windows.Forms.DataVisualization.Charting.ViewEventArgs.NewSize%2A> property can be set to a new value in the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanging> event, but cannot be set to a new value for the <xref:System.Windows.Forms.DataVisualization.Charting.Chart.AxisViewChanged> event because the view is already created.  
   

@@ -11,6 +11,10 @@
     <AssemblyName>netstandard</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Runtime</AssemblyName>
+    <AssemblyVersion>4.2.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Attribute</BaseTypeName>
   </Base>
@@ -46,6 +50,10 @@
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters>
         <Parameter Name="ruleSet" Type="System.Security.SecurityRuleSet" />
       </Parameters>
@@ -56,7 +64,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- When you specify the `ruleSet` parameter, use <xref:System.Security.SecurityRuleSet> for .NET Framework version 2.0 rules or <xref:System.Security.SecurityRuleSet> for [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] rules. For more information about <xref:System.Security.SecurityRuleSet> behavior, see [Security-Transparent Code, Level 1](~/docs/framework/misc/security-transparent-code-level-1.md). For information about <xref:System.Security.SecurityRuleSet> behavior, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
+ When you specify the `ruleSet` parameter, use <xref:System.Security.SecurityRuleSet.Level1> for .NET Framework version 2.0 rules or <xref:System.Security.SecurityRuleSet.Level2> for [!INCLUDE[net_v40_short](~/includes/net-v40-short-md.md)] rules. For more information about <xref:System.Security.SecurityRuleSet.Level1> behavior, see [Security-Transparent Code, Level 1](~/docs/framework/misc/security-transparent-code-level-1.md). For information about <xref:System.Security.SecurityRuleSet.Level2> behavior, see [Security-Transparent Code, Level 2](~/docs/framework/misc/security-transparent-code-level-2.md).  
   
  ]]></format>
         </remarks>
@@ -75,6 +83,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Security.SecurityRuleSet</ReturnType>
@@ -98,6 +110,10 @@
       <AssemblyInfo>
         <AssemblyName>netstandard</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Runtime</AssemblyName>
+        <AssemblyVersion>4.2.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>

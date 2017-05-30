@@ -49,7 +49,7 @@
         <summary>Initializes a new instance of the <see cref="T:System.IdentityModel.Tokens.X509SubjectKeyIdentifierClause" /> class using the specified subject key identifier.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="ski" /> is <see langword="null" />.</exception>
+          <paramref name="certificateSubject" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="CanCreateFrom">

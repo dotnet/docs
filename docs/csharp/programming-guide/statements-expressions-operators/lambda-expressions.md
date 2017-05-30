@@ -69,7 +69,7 @@ namespace ConsoleApplication1
 }  
 ```  
   
- The `=>` operator has the same precedence as assignment (`=`) and is [right associative](../../../csharp/programming-guide/statements-expressions-operators/operators.md) (see “Associativity” section of the Operators article).  
+ The `=>` operator has the same precedence as assignment (`=`) and is [right associative](../../../csharp/programming-guide/statements-expressions-operators/operators.md) (see "Associativity" section of the Operators article).  
   
  Lambdas are used in method-based [!INCLUDE[vbteclinq](../../../csharp/includes/vbteclinq_md.md)] queries as arguments to standard query operator methods such as <xref:System.Linq.Enumerable.Where%2A>.  
   

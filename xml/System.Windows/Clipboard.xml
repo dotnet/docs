@@ -126,12 +126,12 @@
         <param name="format">The format of the data to look for. See <see cref="T:System.Windows.DataFormats" /> for predefined formats.</param>
         <summary>Queries the Clipboard for the presence of data in a specified data format.</summary>
         <returns>
-          <see langword="true" /> if data in the specified format is available on the Clipboard; otherwise, <see langword="false" />. See Remarks.</returns>
+          <see langword="true" /> if data in the specified format is available on the Clipboard; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A query for the data format <xref:System.Windows.DataFormats> or <xref:System.Windows.DataFormats.FileDrop> will return `true` if the data can be automatically converted to the specified data format.  For other data formats, this method returns `true` only if the specified format is available natively on the Clipboard.  
+ A query for the data format <xref:System.Windows.DataFormats.Bitmap> or <xref:System.Windows.DataFormats.FileDrop> will return `true` if the data can be automatically converted to the specified data format.  For other data formats, this method returns `true` only if the specified format is available natively on the Clipboard.  
   
    
   
@@ -598,7 +598,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This method adds data with auto-conversion enabled if the corresponding data format is <xref:System.Windows.DataFormats> or <xref:System.Windows.DataFormats.Bitmap>.  Otherwise, auto-conversion is disabled.  
+ This method adds data with auto-conversion enabled if the corresponding data format is <xref:System.Windows.DataFormats.FileDrop> or <xref:System.Windows.DataFormats.Bitmap>.  Otherwise, auto-conversion is disabled.  
   
    
   

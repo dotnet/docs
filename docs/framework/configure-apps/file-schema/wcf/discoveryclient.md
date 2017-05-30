@@ -28,7 +28,7 @@ A configuration element for creating a custom binding that enables a client appl
   
 ```  
   
-<discoveryClient discoveryEndpoint=”String” >   <findCriteria duration=”TimeSpan”       maxResults=”Integer”        scopeMatchBy=”Uri” >       <contractTypeNames>          <add name="String" namespace="String" />       <contractTypeNames>       <extensions />       <scopes>          <add scope="URI"/>       </scopes>   </findCriteria></discoveryClient>  
+<discoveryClient discoveryEndpoint="String" >   <findCriteria duration="TimeSpan"       maxResults="Integer"        scopeMatchBy="Uri" >       <contractTypeNames>          <add name="String" namespace="String" />       <contractTypeNames>       <extensions />       <scopes>          <add scope="URI"/>       </scopes>   </findCriteria></discoveryClient>  
 ```  
   
 ## Attributes and Elements  

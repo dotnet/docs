@@ -417,7 +417,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Control>|  
+|Identifier field|<xref:System.Windows.Controls.Control.FontSizeProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsMeasure%2A>, <xref:System.Windows.FrameworkPropertyMetadata.AffectsRender%2A>, <xref:System.Windows.FrameworkPropertyMetadata.Inherits%2A>|  
   
 <a name="xamlAttributeUsage_FontSize"></a>   
@@ -800,7 +800,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In addition to <xref:System.Windows.HorizontalAlignment>, <xref:System.Windows.HorizontalAlignment>, and <xref:System.Windows.HorizontalAlignment>, you can set the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> property to <xref:System.Windows.HorizontalAlignment>, which stretches the child element to fill the allocated space of the parent element. For more information, see [Alignment, Margins, and Padding Overview](~/docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md).  
+ In addition to <xref:System.Windows.HorizontalAlignment.Left>, <xref:System.Windows.HorizontalAlignment.Right>, and <xref:System.Windows.HorizontalAlignment.Center>, you can set the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> property to <xref:System.Windows.HorizontalAlignment.Stretch>, which stretches the child element to fill the allocated space of the parent element. For more information, see [Alignment, Margins, and Padding Overview](~/docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md).  
   
  This property only affects a control whose template uses the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> property as a parameter. On other controls, this property has no impact.  
   
@@ -1145,7 +1145,7 @@
   
 |||  
 |-|-|  
-|Identifier field|<xref:System.Windows.Controls.Control>|  
+|Identifier field|<xref:System.Windows.Controls.Control.PaddingProperty>|  
 |Metadata properties set to `true`|<xref:System.Windows.FrameworkPropertyMetadata.AffectsParentMeasure%2A>|  
   
    
@@ -1346,7 +1346,7 @@
 ## Examples  
  The following example creates a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.Button>.  If you add this to your application as a resource, all the buttons in the application will appear as ellipses but will still function as buttons.  
   
- <!-- TODO: review snippet reference [!code-xml[StylingIntroSample_snip#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snip/CSharp/Window1.xaml#buttonct)]  -->  
+ [!code-xml[StylingIntroSample_snippet#ButtonCT](~/samples/snippets/csharp/VS_Snippets_Wpf/StylingIntroSample_snippet/CSharp/Window1.xaml#buttonct)]   
   
  ]]></format>
         </remarks>
@@ -1422,7 +1422,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- In addition to <xref:System.Windows.VerticalAlignment>, <xref:System.Windows.VerticalAlignment>, and <xref:System.Windows.VerticalAlignment>, you can set the <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> property to <xref:System.Windows.VerticalAlignment>, which stretches the child element to fill the allocated layout space of the parent element. For more information, see [Alignment, Margins, and Padding Overview](~/docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md).  
+ In addition to <xref:System.Windows.VerticalAlignment.Top>, <xref:System.Windows.VerticalAlignment.Bottom>, and <xref:System.Windows.VerticalAlignment.Center>, you can set the <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> property to <xref:System.Windows.VerticalAlignment.Stretch>, which stretches the child element to fill the allocated layout space of the parent element. For more information, see [Alignment, Margins, and Padding Overview](~/docs/framework/wpf/advanced/alignment-margins-and-padding-overview.md).  
   
  This property only affects a control whose template uses the <xref:System.Windows.Controls.Control.VerticalContentAlignment%2A> property as a parameter. On other controls, this property has no impact.  
   

@@ -25,7 +25,7 @@ Packages construction arguments for a non-default constructor object element dec
 ## XAML Element Usage (Nondefault constructor)  
   
 ```  
-<object ...>  
+<object ...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
   </x:Arguments>  
@@ -35,7 +35,7 @@ Packages construction arguments for a non-default constructor object element dec
 ## XAML Element Usage (factory method)  
   
 ```  
-<object x:FactoryMethod="methodName"...>  
+<object x:FactoryMethod="methodName"...>  
   <x:Arguments>  
     oneOrMoreObjectElements  
   </x:Arguments>  

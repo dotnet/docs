@@ -528,7 +528,7 @@ Windows Taskbar Thumb Buttons
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- By default, the thumbnail button is <xref:System.Windows.Visibility>. [!INCLUDE[win7](~/includes/win7-md.md)] allows a maximum of seven buttons in the taskbar thumbnail. When the <xref:System.Windows.Shell.ThumbButtonInfo.Visibility%2A> property is set to <xref:System.Windows.Visibility>, the thumbnail button has no visible elements, but space is still reserved for it. When the thumbnail button is <xref:System.Windows.Visibility>, it does not have any visible elements and no space is reserved for it. In this case, additional thumbnail buttons in the <xref:System.Windows.Shell.TaskbarItemInfo.ThumbButtonInfos%2A> collection are displayed.  
+ By default, the thumbnail button is <xref:System.Windows.Visibility.Visible>. [!INCLUDE[win7](~/includes/win7-md.md)] allows a maximum of seven buttons in the taskbar thumbnail. When the <xref:System.Windows.Shell.ThumbButtonInfo.Visibility%2A> property is set to <xref:System.Windows.Visibility.Hidden>, the thumbnail button has no visible elements, but space is still reserved for it. When the thumbnail button is <xref:System.Windows.Visibility.Collapsed>, it does not have any visible elements and no space is reserved for it. In this case, additional thumbnail buttons in the <xref:System.Windows.Shell.TaskbarItemInfo.ThumbButtonInfos%2A> collection are displayed.  
   
  ]]></format>
         </remarks>

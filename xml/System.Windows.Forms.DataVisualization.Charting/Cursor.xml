@@ -279,7 +279,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalOffsetType%2A> property determines the type of interval offset, which is specified using the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalOffset%2A> property.  
   
- If the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalOffsetType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>, the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalType%2A> property setting will be used.  
+ If the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalOffsetType%2A> property is set to <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto>, the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalType%2A> property setting will be used.  
   
 > [!NOTE]
 >  Interval-related properties have no effect when a range selection or cursor position are set programmatically.  
@@ -317,7 +317,7 @@
 ## Remarks  
  The <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.IntervalType%2A> property determines the type of interval, which is specified using the <xref:System.Windows.Forms.DataVisualization.Charting.Cursor.Interval%2A> property.  
   
- If the interval type is <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType>, the unit of measurement for the interval is treated as a `double`, which is equivalent to one day when <xref:System.DateTime> values are specified.  
+ If the interval type is <xref:System.Windows.Forms.DataVisualization.Charting.DateTimeIntervalType.Auto>, the unit of measurement for the interval is treated as a `double`, which is equivalent to one day when <xref:System.DateTime> values are specified.  
   
 > [!NOTE]
 >  Interval-related properties have no effect when a range selection or cursor position is set programmatically.  

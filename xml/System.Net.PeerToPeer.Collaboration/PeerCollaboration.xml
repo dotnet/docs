@@ -32,7 +32,7 @@
   
  "Link-local cloud", "subnet of the calling peer", and "NearMe scope" are synonymous terms. "Internet scope" and "serverless presence" are synonymous. The site-local <xref:System.Net.PeerToPeer.PnrpScope> has no equivalent in the collaboration namespace.  
   
- The use of every method or property in this class requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the peer collaboration session begins.  
+ The use of every method or property in this class requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the peer collaboration session begins.  
   
  ]]></format>
     </remarks>
@@ -64,7 +64,7 @@
 ## Remarks  
  This property is to be used by a collaboration-aware <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> instance after it is started to determine whether it was started due to a collaboration request from a remote peer.  The calling application should inspect the <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Data%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerApplicationLaunchInfo.Message%2A> properties to get further information about the invitation request.  
   
- Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -123,7 +123,7 @@
 ## Remarks  
  Peer objects are automatically deregistered (removed) from the Peer Collaboration infrastructure when a reference to the object is no longer valid.  If a caller does not maintain a reference to the object, it is deregistered from the Peer Collaboration infrastructure.  Alternatively, an object can be manually deregistered by using this method.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -131,6 +131,32 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">Unable to complete <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.DeleteObject(System.Net.PeerToPeer.Collaboration.PeerObject)" /> operation.</exception>
       </Docs>
     </Member>
+    <MemberGroup MemberName="GetLocalRegisteredApplications">
+      <AssemblyInfo>
+        <AssemblyName>System.Net</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Docs>
+        <summary>Gets a collection of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> objects that are registered on the local machine.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The caller required to sign in to the peer collaboration infrastructure via the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or prior to the use of this method.  
+  
+ Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+  
+   
+  
+## Examples  
+ The following example code illustrates how to retrieve a collection of applications registered with the Collaboration infrastructure:  
+  
+ [!code-csharp[NCLPNRPContacts#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#5)]  
+  
+ ]]></format>
+        </remarks>
+      </Docs>
+    </MemberGroup>
     <Member MemberName="GetLocalRegisteredApplications">
       <MemberSignature Language="C#" Value="public static System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetLocalRegisteredApplications ();" />
       <MemberSignature Language="ILAsm" Value=".method public static hidebysig class System.Net.PeerToPeer.Collaboration.PeerApplicationCollection GetLocalRegisteredApplications() cil managed" />
@@ -153,7 +179,7 @@
 ## Remarks  
  The caller is required to sign-in to the peer collaboration infrastructure via the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method prior to the use of this method.  
   
- Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -191,7 +217,7 @@
 ## Remarks  
  The caller is required to sign-in to the Peer Collaboration infrastructure via the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method prior to the use of this method.  
   
- Access to this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Access to this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -226,7 +252,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -262,7 +288,7 @@
 ## Remarks  
  The return of a fully populated <xref:System.Net.PeerToPeer.Collaboration.PeerNearMeCollection> via this method can require an indeterminate amount of time after sign-in depending on network topology and latency.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
    
   
@@ -330,7 +356,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -439,7 +465,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -481,7 +507,7 @@
 ## Remarks  
  The calling peer is required to sign in to the peer collaboration infrastructure with the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method prior to calling this method.  
   
- Access to this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Access to this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
    
   
@@ -531,7 +557,7 @@
   
  The size of the data portion of the <xref:System.Net.PeerToPeer.Collaboration.PeerObject> must be less than or equal to 16,384 bytes.  
   
- Access to this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Access to this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -573,7 +599,7 @@
   
  This function signs the users into the Collaboration Infrastructure.  
   
- Access to this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Access to this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
    
   
@@ -654,7 +680,7 @@
   
  When a user signs out of People Near Me, their published information is deleted from the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> endpoint object set.  This includes <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalEndPointName%2A> and <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.LocalPresenceInfo%2A>, in addition to any identifying objects registered by the calling peer into the collaboration infrastructure. Because this information is deleted, it is no longer available to either remote peers or a peer host for collaboration. From the perspective of the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> class, other sharing of the same information with trusted contacts is not relevant; use of the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration> class does not affect other objects in which this information was persisted, such as a remote peer <xref:System.Net.PeerToPeer.Collaboration.ContactManager> object. Likewise, deleting a peer from the <xref:System.Net.PeerToPeer.Collaboration.ContactManager> does not affect its presence in a collaboration application; other contacts are still able to view its presence and collaborate with it.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -724,7 +750,7 @@
 ## Remarks  
  Deregistering a <xref:System.Net.PeerToPeer.Collaboration.PeerApplication> stops the calling peer from receiving collaboration invitations for it.  If the application being deregistered was not previously registered, this is a no-op.  
   
- Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
+ Calling this method requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState.Unrestricted>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
   
  ]]></format>
         </remarks>
@@ -734,31 +760,5 @@
         <exception cref="T:System.Net.PeerToPeer.PeerToPeerException">The  <see cref="M:System.Net.PeerToPeer.Collaboration.PeerCollaboration.UnregisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)" /> operation could not be completed.</exception>
       </Docs>
     </Member>
-    <MemberGroup MemberName="GetLocalRegisteredApplications">
-      <AssemblyInfo>
-        <AssemblyName>System.Net</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Docs>
-        <summary>Gets a collection of <see cref="T:System.Net.PeerToPeer.Collaboration.PeerApplication" /> objects that are registered on the local machine.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The caller required to sign in to the peer collaboration infrastructure via the <xref:System.Net.PeerToPeer.Collaboration.PeerCollaboration.SignIn%2A> method or prior to the use of this method.  
-  
- Access to this property requires a <xref:System.Security.Permissions.PermissionState> of <xref:System.Security.Permissions.PermissionState>. This state is created when the <xref:System.Net.PeerToPeer.Collaboration.Peer> collaboration session begins.  
-  
-   
-  
-## Examples  
- The following example code illustrates how to retrieve a collection of applications registered with the Collaboration infrastructure:  
-  
- [!code-csharp[NCLPNRPContacts#5](~/samples/snippets/csharp/VS_Snippets_Remoting/NCLPNRPContacts/CS/NCLPNRPContacts.cs#5)]  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </MemberGroup>
   </Members>
 </Type>

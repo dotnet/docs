@@ -21,9 +21,9 @@
   
 -   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is SizeToFit, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is SizeToFit, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is None, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is None, neither image nor <xref:System.Windows.Forms.ToolStripItemImageScaling> scaling occurs.  
   
  To control the image size, use the <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> property.  
   

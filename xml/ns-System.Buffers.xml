@@ -1,6 +1,13 @@
 <Namespace Name="System.Buffers">
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>The <see cref="N:System.Buffers" /> namespace contains the <see cref="ArrayPool{T}"/> class that represents a shared resource pool of resusable instances of type <see cref="T:T[]"/>.</summary>
+    <remarks>
+       <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+Resources of the <see cref="ArrayPool{T}"/> class are obtained by calling the <cref="Rent"/> method, and must be returned to the pool using the <see cref="Return"/> method so that they can be safely reused. By allocating shared buffer resources in this way, the <see cref="ArrayPool{T}"/> class can improve performance by relieving memory pressure on the garbage collector in situations where arrays are created and destroyed frequently.
+ ]]></format>
+    </remarks>
   </Docs>
-</Namespace>
+</Namespace> 

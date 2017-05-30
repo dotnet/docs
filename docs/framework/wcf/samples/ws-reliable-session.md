@@ -60,7 +60,7 @@ This sample demonstrates the use of reliable sessions. Reliable sessions provide
 </bindings>  
 ```  
   
- The service implementation class implements <xref:System.ServiceModel.InstanceContextMode> instancing to maintain a separate class instance for each client, as shown in the following sample code.  
+ The service implementation class implements <xref:System.ServiceModel.InstanceContextMode.PerSession> instancing to maintain a separate class instance for each client, as shown in the following sample code.  
   
 ```  
 [ServiceBehavior(InstanceContextMode=InstanceContextMode.PerSession)] public class CalculatorService : ICalculator  

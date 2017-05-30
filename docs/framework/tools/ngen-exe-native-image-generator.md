@@ -283,7 +283,7 @@ ngen /? | /help
   
 <a name="DependencyHint"></a>   
 ### Specifying a binding hint for a dependency  
- Apply the <xref:System.Runtime.CompilerServices.DependencyAttribute> to an assembly to indicate the likelihood that a specified dependency will be loaded. <xref:System.Runtime.CompilerServices.LoadHint?displayProperty=fullName> indicates that hard binding is appropriate, <xref:System.Runtime.CompilerServices.LoadHint> indicates that the default for the dependency should be used, and <xref:System.Runtime.CompilerServices.LoadHint> indicates that hard binding is not appropriate.  
+ Apply the <xref:System.Runtime.CompilerServices.DependencyAttribute> to an assembly to indicate the likelihood that a specified dependency will be loaded. <xref:System.Runtime.CompilerServices.LoadHint.Always?displayProperty=fullName> indicates that hard binding is appropriate, <xref:System.Runtime.CompilerServices.LoadHint.Default> indicates that the default for the dependency should be used, and <xref:System.Runtime.CompilerServices.LoadHint.Sometimes> indicates that hard binding is not appropriate.  
   
  The following code shows the attributes for an assembly that has two dependencies. The first dependency (Assembly1) is an appropriate candidate for hard binding, and the second (Assembly2) is not.  
   
@@ -309,10 +309,10 @@ using namespace System::Runtime::CompilerServices;
   
 <a name="AssemblyHint"></a>   
 ### Specifying a default binding hint for an assembly  
- Default binding hints are only needed for assemblies that will be used immediately and frequently by any application that has a dependency on them. Apply the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> with <xref:System.Runtime.CompilerServices.LoadHint?displayProperty=fullName> to such assemblies to specify that hard binding should be used.  
+ Default binding hints are only needed for assemblies that will be used immediately and frequently by any application that has a dependency on them. Apply the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> with <xref:System.Runtime.CompilerServices.LoadHint.Always?displayProperty=fullName> to such assemblies to specify that hard binding should be used.  
   
 > [!NOTE]
->  There is no reason to apply <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> to .dll assemblies that do not fall into this category, because applying the attribute with any value other than <xref:System.Runtime.CompilerServices.LoadHint?displayProperty=fullName> has the same effect as not applying the attribute at all.  
+>  There is no reason to apply <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> to .dll assemblies that do not fall into this category, because applying the attribute with any value other than <xref:System.Runtime.CompilerServices.LoadHint.Always?displayProperty=fullName> has the same effect as not applying the attribute at all.  
   
  Microsoft uses the <xref:System.Runtime.CompilerServices.DefaultDependencyAttribute> to specify that hard binding is the default for a very small number of assemblies in the .NET Framework, such as mscorlib.dll.  
   

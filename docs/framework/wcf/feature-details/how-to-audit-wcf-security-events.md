@@ -88,7 +88,7 @@ manager: "mbaldwin"
   
  To set the property, open the **Local Security Settings** dialog box. Under **Security Settings**, click **Local Policies**. Then click **Security Options**.  
   
- If the <xref:System.ServiceModel.AuditLogLocation> property is set to <xref:System.ServiceModel.AuditLogLocation> and **Audit Object Access** is not set in the **Local Security Policy**, audit events will not be written to the Security log. Note that no failure is returned, but audit entries are not written to the Security log.  
+ If the <xref:System.ServiceModel.AuditLogLocation> property is set to <xref:System.ServiceModel.AuditLogLocation.Security> and **Audit Object Access** is not set in the **Local Security Policy**, audit events will not be written to the Security log. Note that no failure is returned, but audit entries are not written to the Security log.  
   
 ## See Also  
  <xref:System.ServiceModel.Description.ServiceSecurityAuditBehavior.AuditLogLocation%2A>   

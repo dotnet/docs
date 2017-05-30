@@ -28,7 +28,7 @@ The <xref:System.Threading.EventWaitHandle> class allows threads to communicate 
  Both local and named event wait handles use system synchronization objects, which are protected by <xref:Microsoft.Win32.SafeHandles.SafeWaitHandle> wrappers to ensure that the resources are released. You can use the <xref:System.Threading.WaitHandle.Dispose%2A> method to free the resources immediately when you have finished using the object.  
   
 ## Event Wait Handles That Reset Automatically  
- You create an automatic reset event by specifying <xref:System.Threading.EventResetMode?displayProperty=fullName> when you create the <xref:System.Threading.EventWaitHandle> object. As its name implies, this synchronization event resets automatically when signaled, after releasing a single waiting thread. Signal the event by calling its <xref:System.Threading.EventWaitHandle.Set%2A> method.  
+ You create an automatic reset event by specifying <xref:System.Threading.EventResetMode.AutoReset?displayProperty=fullName> when you create the <xref:System.Threading.EventWaitHandle> object. As its name implies, this synchronization event resets automatically when signaled, after releasing a single waiting thread. Signal the event by calling its <xref:System.Threading.EventWaitHandle.Set%2A> method.  
   
  Automatic reset events are usually used to provide exclusive access to a resource for a single thread at a time. A thread requests the resource by calling the <xref:System.Threading.WaitHandle.WaitOne%2A> method. If no other thread is holding the wait handle, the method returns `true` and the calling thread has control of the resource.  
   
@@ -38,7 +38,7 @@ The <xref:System.Threading.EventWaitHandle> class allows threads to communicate 
  If an automatic reset event is signaled when no threads are waiting, it remains signaled until a thread attempts to wait on it. The event releases the thread and immediately resets, blocking subsequent threads.  
   
 ## Event Wait Handles That Reset Manually  
- You create a manual reset event by specifying <xref:System.Threading.EventResetMode?displayProperty=fullName> when you create the <xref:System.Threading.EventWaitHandle> object. As its name implies, this synchronization event must be reset manually after it has been signaled. Until it is reset, by calling its <xref:System.Threading.EventWaitHandle.Reset%2A> method, threads that wait on the event handle proceed immediately without blocking.  
+ You create a manual reset event by specifying <xref:System.Threading.EventResetMode.ManualReset?displayProperty=fullName> when you create the <xref:System.Threading.EventWaitHandle> object. As its name implies, this synchronization event must be reset manually after it has been signaled. Until it is reset, by calling its <xref:System.Threading.EventWaitHandle.Reset%2A> method, threads that wait on the event handle proceed immediately without blocking.  
   
  A manual reset event acts like the gate of a corral. When the event is not signaled, threads that wait on it block, like horses in a corral. When the event is signaled, by calling its <xref:System.Threading.EventWaitHandle.Set%2A> method, all waiting threads are free to proceed. The event remains signaled until its <xref:System.Threading.EventWaitHandle.Reset%2A> method is called. This makes the manual reset event an ideal way to hold up threads that need to wait until one thread finishes a task.  
   

@@ -31,11 +31,11 @@ The Instancing sample demonstrates the instancing behavior setting, which contro
   
  The following instancing modes are available:  
   
--   <xref:System.ServiceModel.InstanceContextMode>: A new service instance is created for each client request.  
+-   <xref:System.ServiceModel.InstanceContextMode.PerCall>: A new service instance is created for each client request.  
   
--   <xref:System.ServiceModel.InstanceContextMode>: A new instance is created for each new client session, and maintained for the lifetime of that session (requires a binding that supports session).  
+-   <xref:System.ServiceModel.InstanceContextMode.PerSession>: A new instance is created for each new client session, and maintained for the lifetime of that session (requires a binding that supports session).  
   
--   <xref:System.ServiceModel.InstanceContextMode>: A single instance of the service class handles all client requests for the lifetime of the application.  
+-   <xref:System.ServiceModel.InstanceContextMode.Single>: A single instance of the service class handles all client requests for the lifetime of the application.  
   
  The service class specifies instancing behavior with the `[ServiceBehavior(InstanceContextMode=<setting>)]` attribute as shown in the code sample that follows. By changing which lines are commented out, you can observe the behavior of each of the instance modes. Remember to rebuild the service after changing the instancing mode. There are no instancing-related settings to specify on the client.  
   

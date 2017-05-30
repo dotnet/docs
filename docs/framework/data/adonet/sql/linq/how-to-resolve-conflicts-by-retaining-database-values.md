@@ -16,7 +16,7 @@ ms.author: "jhubbard"
 manager: "jhubbard"
 ---
 # How to: Resolve Conflicts by Retaining Database Values
-To reconcile differences between expected and actual database values before you try to resubmit your changes, you can use <xref:System.Data.Linq.RefreshMode> to retain the values found in the database. The current values in the object model are then overwritten. For more information, see [Optimistic Concurrency: Overview](../../../../../../docs/framework/data/adonet/sql/linq/optimistic-concurrency-overview.md).  
+To reconcile differences between expected and actual database values before you try to resubmit your changes, you can use <xref:System.Data.Linq.RefreshMode.OverwriteCurrentValues> to retain the values found in the database. The current values in the object model are then overwritten. For more information, see [Optimistic Concurrency: Overview](../../../../../../docs/framework/data/adonet/sql/linq/optimistic-concurrency-overview.md).  
   
 > [!NOTE]
 >  In all cases, the record on the client is first refreshed by retrieving the updated data from the database. This action makes sure that the next update try will not fail on the same concurrency checks.  
@@ -32,7 +32,7 @@ To reconcile differences between expected and actual database values before you 
   
  User1 decides to resolve this conflict by having the newer database values overwrite the current values in the object model.  
   
- When User1 resolves the conflict by using <xref:System.Data.Linq.RefreshMode>, the result in the database is as follows in the table:  
+ When User1 resolves the conflict by using <xref:System.Data.Linq.RefreshMode.OverwriteCurrentValues>, the result in the database is as follows in the table:  
   
 ||Manager|Assistant|Department|  
 |------|-------------|---------------|----------------|  

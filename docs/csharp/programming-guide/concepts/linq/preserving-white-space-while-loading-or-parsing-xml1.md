@@ -44,7 +44,7 @@ This topic describes how to control the white space behavior of [!INCLUDE[sqltec
   
  If the method does not take <xref:System.Xml.Linq.LoadOptions> as an argument, the method will not preserve insignificant white space.  
   
- In most cases, if the method takes <xref:System.Xml.Linq.LoadOptions> as an argument, you can optionally preserve insignificant white space as text nodes in the XML tree. However, if the method is loading the XML from an <xref:System.Xml.XmlReader>, then the <xref:System.Xml.XmlReader> determines whether white space will be preserved or not. Setting <xref:System.Xml.Linq.LoadOptions> will have no effect.  
+ In most cases, if the method takes <xref:System.Xml.Linq.LoadOptions> as an argument, you can optionally preserve insignificant white space as text nodes in the XML tree. However, if the method is loading the XML from an <xref:System.Xml.XmlReader>, then the <xref:System.Xml.XmlReader> determines whether white space will be preserved or not. Setting <xref:System.Xml.Linq.LoadOptions.PreserveWhitespace> will have no effect.  
   
  With these methods, if white space is preserved, insignificant white space is inserted into the XML tree as <xref:System.Xml.Linq.XText> nodes. If white space is not preserved, text nodes are not inserted.  
   

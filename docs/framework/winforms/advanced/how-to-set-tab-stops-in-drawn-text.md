@@ -24,7 +24,7 @@ manager: "wpickett"
 You can set tab stops for text by calling the <xref:System.Drawing.StringFormat.SetTabStops%2A> method of a <xref:System.Drawing.StringFormat> object and then passing that <xref:System.Drawing.StringFormat> object to the <xref:System.Drawing.Graphics.DrawString%2A> method of the <xref:System.Drawing.Graphics> class.  
   
 > [!NOTE]
->  The <xref:System.Windows.Forms.TextRenderer?displayProperty=fullName> does not support adding tab stops to drawn text, although you can expand existing tab stops using the <xref:System.Windows.Forms.TextFormatFlags?displayProperty=fullName> flag.  
+>  The <xref:System.Windows.Forms.TextRenderer?displayProperty=fullName> does not support adding tab stops to drawn text, although you can expand existing tab stops using the <xref:System.Windows.Forms.TextFormatFlags.ExpandTabs?displayProperty=fullName> flag.  
   
 ## Example  
  The following example sets tab stops at 150, 250, and 350. Then, the code displays a tabbed list of names and test scores.  

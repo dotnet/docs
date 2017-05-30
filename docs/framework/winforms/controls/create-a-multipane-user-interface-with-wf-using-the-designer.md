@@ -24,7 +24,7 @@ manager: "wpickett"
 # How to: Create a Multipane User Interface with Windows Forms Using the Designer
 In the following procedure, you will create a multipane user interface that is similar to the one used in Microsoft Outlook, with a **Folder** list, a **Messages** pane, and a **Preview** pane. This arrangement is achieved chiefly through docking controls with the form.  
   
- When you dock a control, you determine which edge of the parent container a control is fastened to. Thus, if you set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>, the right edge of the control will be docked to the right edge of its parent control. Additionally, the docked edge of the control is resized to match that of its container control. For more information about how the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property works, see [How to: Dock Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-dock-controls-on-windows-forms.md).  
+ When you dock a control, you determine which edge of the parent container a control is fastened to. Thus, if you set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Right>, the right edge of the control will be docked to the right edge of its parent control. Additionally, the docked edge of the control is resized to match that of its container control. For more information about how the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property works, see [How to: Dock Controls on Windows Forms](../../../../docs/framework/winforms/controls/how-to-dock-controls-on-windows-forms.md).  
   
  This procedure focuses on arranging the <xref:System.Windows.Forms.SplitContainer> and the other controls on the form, not on adding functionality to make the application mimic Microsoft Outlook.  
   
@@ -37,15 +37,15 @@ In the following procedure, you will create a multipane user interface that is s
   
 1.  Create a new Windows Application project. For details, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
-2.  Drag a <xref:System.Windows.Forms.SplitContainer> control from the **Toolbox** to the form. In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>.  
+2.  Drag a <xref:System.Windows.Forms.SplitContainer> control from the **Toolbox** to the form. In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
-3.  Drag a <xref:System.Windows.Forms.TreeView> control from the **Toolbox** to the left-hand panel of the <xref:System.Windows.Forms.SplitContainer> control. In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle> by clicking the left hand panel in the value editor shown when the down arrow is clicked.  
+3.  Drag a <xref:System.Windows.Forms.TreeView> control from the **Toolbox** to the left-hand panel of the <xref:System.Windows.Forms.SplitContainer> control. In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Left> by clicking the left hand panel in the value editor shown when the down arrow is clicked.  
   
-4.  Drag another <xref:System.Windows.Forms.SplitContainer> control from the **Toolbox**; place it in the right-hand panel of the <xref:System.Windows.Forms.SplitContainer> control you added to your form. In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle> and the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property to <xref:System.Windows.Forms.Orientation>.  
+4.  Drag another <xref:System.Windows.Forms.SplitContainer> control from the **Toolbox**; place it in the right-hand panel of the <xref:System.Windows.Forms.SplitContainer> control you added to your form. In the **Properties** window, set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill> and the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property to <xref:System.Windows.Forms.Orientation.Horizontal>.  
   
-5.  Drag a <xref:System.Windows.Forms.ListView> control from the **Toolbox** to the upper panel of the second <xref:System.Windows.Forms.SplitContainer> control you added to your form. Set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property of the <xref:System.Windows.Forms.ListView> control to <xref:System.Windows.Forms.DockStyle>.  
+5.  Drag a <xref:System.Windows.Forms.ListView> control from the **Toolbox** to the upper panel of the second <xref:System.Windows.Forms.SplitContainer> control you added to your form. Set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property of the <xref:System.Windows.Forms.ListView> control to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
-6.  Drag a <xref:System.Windows.Forms.RichTextBox> control from the **Toolbox** to the lower panel of the second <xref:System.Windows.Forms.SplitContainer> control. Set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property of the <xref:System.Windows.Forms.RichTextBox> control to <xref:System.Windows.Forms.DockStyle>.  
+6.  Drag a <xref:System.Windows.Forms.RichTextBox> control from the **Toolbox** to the lower panel of the second <xref:System.Windows.Forms.SplitContainer> control. Set the <xref:System.Windows.Forms.SplitContainer.Dock%2A> property of the <xref:System.Windows.Forms.RichTextBox> control to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
      At this point, if you press F5 to run the application, the form displays a three-part user interface, similar to that of Microsoft Outlook.  
   

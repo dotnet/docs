@@ -58,7 +58,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  where *subexpression* is any valid regular expression pattern. Captures that use parentheses are numbered automatically from left to right based on the order of the opening parentheses in the regular expression, starting from one. The capture that is numbered zero is the text matched by the entire regular expression pattern.  
   
 > [!NOTE]
->  By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the matched subexpression is not captured.  
+>  By default, the `(`*subexpression*`)` language element captures the matched subexpression. But if the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=fullName> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the matched subexpression is not captured.  
   
  You can access captured groups in four ways:  
   
@@ -107,7 +107,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
  where *name* is a valid group name, and *subexpression* is any valid regular expression pattern. *name* must not contain any punctuation characters and cannot begin with a number.  
   
 > [!NOTE]
->  If the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the only way to capture a subexpression is to explicitly name capturing groups.  
+>  If the <xref:System.Text.RegularExpressions.RegexOptions> parameter of a regular expression pattern matching method includes the <xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture?displayProperty=fullName> flag, or if the `n` option is applied to this subexpression (see [Group options](#group_options) later in this topic), the only way to capture a subexpression is to explicitly name capturing groups.  
   
  You can access named captured groups in the following ways:  
   

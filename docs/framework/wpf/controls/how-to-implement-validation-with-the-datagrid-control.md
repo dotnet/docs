@@ -54,7 +54,7 @@ The <xref:System.Windows.Controls.DataGrid> control enables you to perform valid
   
 2.  Add the validation rule to the <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A?displayProperty=fullName> collection. The <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A> property provides direct access to the <xref:System.Windows.Data.BindingGroup.ValidationRules%2A> property of a <xref:System.Windows.Data.BindingGroup> instance that groups all the bindings used by the control.  
   
-     The following example sets the <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A> property in XAML. The <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> property is set to <xref:System.Windows.Controls.ValidationStep> so that the validation occurs only after the bound data object is updated.  
+     The following example sets the <xref:System.Windows.Controls.DataGrid.RowValidationRules%2A> property in XAML. The <xref:System.Windows.Controls.ValidationRule.ValidationStep%2A> property is set to <xref:System.Windows.Controls.ValidationStep.UpdatedValue> so that the validation occurs only after the bound data object is updated.  
   
      [!code-xml[DataGrid_Validation#RowValidationRulesXaml](../../../../samples/snippets/csharp/VS_Snippets_Wpf/datagrid_validation/cs/mainwindow.xaml#rowvalidationrulesxaml)]  
   

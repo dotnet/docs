@@ -28,7 +28,7 @@ A constrained execution region (CER) is part of a mechanism for authoring reliab
   
  The developer is required to indicate that a code region is a CER:  
   
--   The top level CER region and methods in the full call graph that have the <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute> attribute applied are prepared in advance. The <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute> can only state guarantees of <xref:System.Runtime.ConstrainedExecution.Cer> or <xref:System.Runtime.ConstrainedExecution.Cer>.  
+-   The top level CER region and methods in the full call graph that have the <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute> attribute applied are prepared in advance. The <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute> can only state guarantees of <xref:System.Runtime.ConstrainedExecution.Cer.Success> or <xref:System.Runtime.ConstrainedExecution.Cer.MayFail>.  
   
 -   Advance preparation cannot be performed for calls that cannot be statically determined, such as virtual dispatch. Use the <xref:System.Runtime.CompilerServices.RuntimeHelpers.PrepareMethod%2A> method in these cases. When using the <xref:System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup%2A> method, the <xref:System.Runtime.ConstrainedExecution.PrePrepareMethodAttribute> attribute should be applied to the clean up code.  
   
@@ -53,9 +53,9 @@ A constrained execution region (CER) is part of a mechanism for authoring reliab
 ### Reliability Guarantees  
  Reliability guarantees, represented by <xref:System.Runtime.ConstrainedExecution.Cer> enumeration values, indicate the degree of reliability of a given method:  
   
--   <xref:System.Runtime.ConstrainedExecution.Cer>. Under exceptional conditions, the method might fail. In this case, the method reports back to the calling method whether it succeeded or failed. The method must be contained in a CER to ensure that it can report the return value.  
+-   <xref:System.Runtime.ConstrainedExecution.Cer.MayFail>. Under exceptional conditions, the method might fail. In this case, the method reports back to the calling method whether it succeeded or failed. The method must be contained in a CER to ensure that it can report the return value.  
   
--   <xref:System.Runtime.ConstrainedExecution.Cer>. The method, type, or assembly has no concept of a CER and is most likely not safe to call within a CER without substantial mitigation from state corruption. It does not take advantage of CER guarantees. This implies the following:  
+-   <xref:System.Runtime.ConstrainedExecution.Cer.None>. The method, type, or assembly has no concept of a CER and is most likely not safe to call within a CER without substantial mitigation from state corruption. It does not take advantage of CER guarantees. This implies the following:  
   
     1.  Under exceptional conditions the method might fail.  
   
@@ -63,20 +63,20 @@ A constrained execution region (CER) is part of a mechanism for authoring reliab
   
     3.  The method is not written to use a CER, the most likely scenario.  
   
-    4.  If a method, type, or assembly is not explicitly identified to succeed, it is implicitly identified as <xref:System.Runtime.ConstrainedExecution.Cer>.  
+    4.  If a method, type, or assembly is not explicitly identified to succeed, it is implicitly identified as <xref:System.Runtime.ConstrainedExecution.Cer.None>.  
   
--   <xref:System.Runtime.ConstrainedExecution.Cer>. Under exceptional conditions, the method is guaranteed to succeed. To achieve this level of reliability you should always construct a CER around the method that is called, even when it is called from within a non-CER region. A method is successful if it accomplishes what is intended, although success can be viewed subjectively. For example, marking Count with `ReliabilityContractAttribute(Cer.Success)` implies that when it is run under a CER, it always returns a count of the number of elements in the <xref:System.Collections.ArrayList> and it can never leave the internal fields in an undetermined state.  However, the <xref:System.Threading.Interlocked.CompareExchange%2A> method is marked as success as well, with the understanding that success may mean the value could not be replaced with a new value due to a race condition.  The key point is that the method behaves in the way it is documented to behave, and CER code does not need to be written to expect any unusual behavior beyond what correct but unreliable code would look like.  
+-   <xref:System.Runtime.ConstrainedExecution.Cer.Success>. Under exceptional conditions, the method is guaranteed to succeed. To achieve this level of reliability you should always construct a CER around the method that is called, even when it is called from within a non-CER region. A method is successful if it accomplishes what is intended, although success can be viewed subjectively. For example, marking Count with `ReliabilityContractAttribute(Cer.Success)` implies that when it is run under a CER, it always returns a count of the number of elements in the <xref:System.Collections.ArrayList> and it can never leave the internal fields in an undetermined state.  However, the <xref:System.Threading.Interlocked.CompareExchange%2A> method is marked as success as well, with the understanding that success may mean the value could not be replaced with a new value due to a race condition.  The key point is that the method behaves in the way it is documented to behave, and CER code does not need to be written to expect any unusual behavior beyond what correct but unreliable code would look like.  
   
 ### Corruption levels  
  Corruption levels, represented by <xref:System.Runtime.ConstrainedExecution.Consistency> enumeration values, indicate how much state may be corrupted in a given environment:  
   
--   <xref:System.Runtime.ConstrainedExecution.Consistency>. Under exceptional conditions, the common language runtime (CLR) makes no guarantees regarding state consistency in the current application domain.  
+-   <xref:System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain>. Under exceptional conditions, the common language runtime (CLR) makes no guarantees regarding state consistency in the current application domain.  
   
--   <xref:System.Runtime.ConstrainedExecution.Consistency>. Under exceptional conditions, the method is guaranteed to limit state corruption to the current instance.  
+-   <xref:System.Runtime.ConstrainedExecution.Consistency.MayCorruptInstance>. Under exceptional conditions, the method is guaranteed to limit state corruption to the current instance.  
   
--   <xref:System.Runtime.ConstrainedExecution.Consistency>, Under exceptional conditions, the CLR makes no guarantees regarding state consistency; that is, the condition might corrupt the process.  
+-   <xref:System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess>, Under exceptional conditions, the CLR makes no guarantees regarding state consistency; that is, the condition might corrupt the process.  
   
--   <xref:System.Runtime.ConstrainedExecution.Consistency>. Under exceptional conditions, the method is guaranteed not to corrupt state.  
+-   <xref:System.Runtime.ConstrainedExecution.Consistency.WillNotCorruptState>. Under exceptional conditions, the method is guaranteed not to corrupt state.  
   
 ## Reliability try/catch/finally  
  The reliability `try/catch/finally` is an exception handling mechanism with the same level of predictability guarantees as the unmanaged version. The `catch/finally` block is the CER. Methods in the block require advance preparation and must be noninterruptible.  

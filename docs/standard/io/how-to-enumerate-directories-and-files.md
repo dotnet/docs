@@ -34,7 +34,7 @@ You can enumerate directories and files by using methods that return an enumerab
 |File system information|File system entries|<xref:System.IO.Directory.EnumerateFileSystemEntries%2A?displayProperty=fullName>|  
 ||File system information (<xref:System.IO.FileSystemInfo>)|<xref:System.IO.DirectoryInfo.EnumerateFileSystemInfos%2A?displayProperty=fullName>|  
   
- Although you can immediately enumerate all the files in the subdirectories of a parent directory by using the <xref:System.IO.SearchOption> search option provided by the <xref:System.IO.SearchOption> enumeration, unauthorized access exceptions (<xref:System.UnauthorizedAccessException>) may cause the enumeration to be incomplete. If these exceptions are possible, you can catch them and continue by first enumerating directories and then enumerating files.  
+ Although you can immediately enumerate all the files in the subdirectories of a parent directory by using the <xref:System.IO.SearchOption.AllDirectories> search option provided by the <xref:System.IO.SearchOption> enumeration, unauthorized access exceptions (<xref:System.UnauthorizedAccessException>) may cause the enumeration to be incomplete. If these exceptions are possible, you can catch them and continue by first enumerating directories and then enumerating files.  
   
 ### To enumerate directory names  
   

@@ -155,7 +155,7 @@ The <xref:System.Windows.Forms?displayProperty=fullName> namespace supports mult
   
 3.  Select the <xref:System.Windows.Forms.ToolStripPanel> control.  
   
-4.  In the Properties window, change the value of the control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>.  
+4.  In the Properties window, change the value of the control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Left>.  
   
      The <xref:System.Windows.Forms.ToolStripPanel> control docks to the left side of the form, underneath the main menu. The MDI client area resizes to fit the <xref:System.Windows.Forms.ToolStripPanel> control.  
   

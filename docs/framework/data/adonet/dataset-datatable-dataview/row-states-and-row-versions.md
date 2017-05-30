@@ -22,11 +22,11 @@ ADO.NET manages rows in tables using row states and versions. A row state indica
   
 |RowState value|Description|  
 |--------------------|-----------------|  
-|<xref:System.Data.DataRowState>|No changes have been made since the last call to `AcceptChanges` or since the row was created by `DataAdapter.Fill`.|  
-|<xref:System.Data.DataRowState>|The row has been added to the table, but `AcceptChanges` has not been called.|  
-|<xref:System.Data.DataRowState>|Some element of the row has been changed.|  
-|<xref:System.Data.DataRowState>|The row has been deleted from a table, and `AcceptChanges` has not been called.|  
-|<xref:System.Data.DataRowState>|The row is not part of any `DataRowCollection`. The `RowState` of a newly created row is set to `Detached`. After the new `DataRow` is added to the `DataRowCollection` by calling the `Add` method, the value of the `RowState` property is set to `Added`.<br /><br /> `Detached` is also set for a row that has been removed from a `DataRowCollection` using the `Remove` method, or by the `Delete` method followed by the `AcceptChanges` method.|  
+|<xref:System.Data.DataRowState.Unchanged>|No changes have been made since the last call to `AcceptChanges` or since the row was created by `DataAdapter.Fill`.|  
+|<xref:System.Data.DataRowState.Added>|The row has been added to the table, but `AcceptChanges` has not been called.|  
+|<xref:System.Data.DataRowState.Modified>|Some element of the row has been changed.|  
+|<xref:System.Data.DataRowState.Deleted>|The row has been deleted from a table, and `AcceptChanges` has not been called.|  
+|<xref:System.Data.DataRowState.Detached>|The row is not part of any `DataRowCollection`. The `RowState` of a newly created row is set to `Detached`. After the new `DataRow` is added to the `DataRowCollection` by calling the `Add` method, the value of the `RowState` property is set to `Added`.<br /><br /> `Detached` is also set for a row that has been removed from a `DataRowCollection` using the `Remove` method, or by the `Delete` method followed by the `AcceptChanges` method.|  
   
  When `AcceptChanges` is called on a <xref:System.Data.DataSet>, <xref:System.Data.DataTable> , or <xref:System.Data.DataRow>, all rows with a row state of `Deleted` are removed. The remaining rows are given a row state of `Unchanged`, and the values in the `Original` row version are overwritten with the `Current` row version values. When `RejectChanges` is called, all rows with a row state of `Added` are removed. The remaining rows are given a row state of `Unchanged`, and the values in the `Current` row version are overwritten with the `Original` row version values.  
   
@@ -46,10 +46,10 @@ string custID = custRow["CustomerID", DataRowVersion.Original].ToString();
   
 |DataRowVersion value|Description|  
 |--------------------------|-----------------|  
-|<xref:System.Data.DataRowVersion>|The current values for the row. This row version does not exist for rows with a `RowState` of `Deleted`.|  
-|<xref:System.Data.DataRowVersion>|The default row version for a particular row. The default row version for an `Added`, `Modified`, or `Unchanged` row is `Current`. The default row version for a `Deleted` row is `Original`. The default row version for a `Detached` row is `Proposed`.|  
-|<xref:System.Data.DataRowVersion>|The original values for the row. This row version does not exist for rows with a `RowState` of `Added`.|  
-|<xref:System.Data.DataRowVersion>|The proposed values for the row. This row version exists during an edit operation on a row, or for a row that is not part of a `DataRowCollection`.|  
+|<xref:System.Data.DataRowVersion.Current>|The current values for the row. This row version does not exist for rows with a `RowState` of `Deleted`.|  
+|<xref:System.Data.DataRowVersion.Default>|The default row version for a particular row. The default row version for an `Added`, `Modified`, or `Unchanged` row is `Current`. The default row version for a `Deleted` row is `Original`. The default row version for a `Detached` row is `Proposed`.|  
+|<xref:System.Data.DataRowVersion.Original>|The original values for the row. This row version does not exist for rows with a `RowState` of `Added`.|  
+|<xref:System.Data.DataRowVersion.Proposed>|The proposed values for the row. This row version exists during an edit operation on a row, or for a row that is not part of a `DataRowCollection`.|  
   
  You can test whether a `DataRow` has a particular row version by calling the <xref:System.Data.DataRow.HasVersion%2A> method and passing a `DataRowVersion` as an argument. For example, `DataRow.HasVersion(DataRowVersion.Original)` will return `false` for newly added rows before `AcceptChanges` has been called.  
   

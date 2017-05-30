@@ -82,7 +82,7 @@ manager: "erikre"
  If your solution does not require interoperability, but you still want to use HTTP transport, you can compose the <xref:System.ServiceModel.Channels.BinaryMessageEncodingBindingElement> into a custom binding that uses the <xref:System.ServiceModel.Channels.HttpTransportBindingElement> class for the transport. If a number of clients on your service require interoperability, it is recommended that you expose parallel endpoints that each has the appropriate transport and encoding choices for the respective clients enabled.  
   
 ### Enabling MTOM  
- When interoperability is a requirement and large binary data must be sent, then MTOM message encoding is the alternative encoding strategy that you can enable on the standard <xref:System.ServiceModel.BasicHttpBinding> or <xref:System.ServiceModel.WSHttpBinding> bindings by setting the respective `MessageEncoding` property to <xref:System.ServiceModel.WSMessageEncoding> or by composing the <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> into a <xref:System.ServiceModel.Channels.CustomBinding>. The following example code, extracted from the [MTOM Encoding](../../../../docs/framework/wcf/samples/mtom-encoding.md) sample demonstrates how to enable MTOM in configuration.  
+ When interoperability is a requirement and large binary data must be sent, then MTOM message encoding is the alternative encoding strategy that you can enable on the standard <xref:System.ServiceModel.BasicHttpBinding> or <xref:System.ServiceModel.WSHttpBinding> bindings by setting the respective `MessageEncoding` property to <xref:System.ServiceModel.WSMessageEncoding.Mtom> or by composing the <xref:System.ServiceModel.Channels.MtomMessageEncodingBindingElement> into a <xref:System.ServiceModel.Channels.CustomBinding>. The following example code, extracted from the [MTOM Encoding](../../../../docs/framework/wcf/samples/mtom-encoding.md) sample demonstrates how to enable MTOM in configuration.  
   
 ```  
 <system.serviceModel>  
@@ -166,13 +166,13 @@ class MyData
 ### Enabling Streaming  
  You can enable streaming in the following ways:  
   
--   Send and accept requests in streaming mode, and accept and return responses in buffered mode (<xref:System.ServiceModel.TransferMode>).  
+-   Send and accept requests in streaming mode, and accept and return responses in buffered mode (<xref:System.ServiceModel.TransferMode.StreamedRequest>).  
   
--   Send and accept requests in buffered mode, and accept and return responses in streamed mode (<xref:System.ServiceModel.TransferMode>).  
+-   Send and accept requests in buffered mode, and accept and return responses in streamed mode (<xref:System.ServiceModel.TransferMode.StreamedResponse>).  
   
--   Send and receive requests and responses in streamed mode in both directions. (<xref:System.ServiceModel.TransferMode>).  
+-   Send and receive requests and responses in streamed mode in both directions. (<xref:System.ServiceModel.TransferMode.Streamed>).  
   
- You can disable streaming by setting the transfer mode to <xref:System.ServiceModel.TransferMode>, which is the default setting on all bindings. The following code shows how to set the transfer mode in configuration.  
+ You can disable streaming by setting the transfer mode to <xref:System.ServiceModel.TransferMode.Buffered>, which is the default setting on all bindings. The following code shows how to set the transfer mode in configuration.  
   
 ```  
 <system.serviceModel>  
@@ -209,7 +209,7 @@ public interface IStreamedService
 }  
 ```  
   
- The operation `Echo` in the preceding example receives and returns a stream and should therefore be used on a binding with <xref:System.ServiceModel.TransferMode>. For the operation `RequestInfo`, <xref:System.ServiceModel.TransferMode> is best suited, because it only returns a <xref:System.IO.Stream>. The one-way operation is best suited for <xref:System.ServiceModel.TransferMode>.  
+ The operation `Echo` in the preceding example receives and returns a stream and should therefore be used on a binding with <xref:System.ServiceModel.TransferMode.Streamed>. For the operation `RequestInfo`, <xref:System.ServiceModel.TransferMode.StreamedResponse> is best suited, because it only returns a <xref:System.IO.Stream>. The one-way operation is best suited for <xref:System.ServiceModel.TransferMode.StreamedRequest>.  
   
  Note that adding a second parameter to the following `Echo` or `ProvideInfo` operations causes the service model to revert back to a buffered strategy and use the run-time serialization representation of the stream. Only operations with a single input stream parameter are compatible with end-to-end request streaming.  
   

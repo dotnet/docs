@@ -42,8 +42,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Invokes the static constructor when a new instance of the <see cref="ArrayPool{T}"/> class is instantiated.</summary>
-        <remarks></remarks>
+        <summary>Initializes a new instance of the <see cref="ArrayPool{T}"/> class.</summary>
+        <remarks>
+        <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+  
+Note that this constructor is protected; it can only be called by classes derived from the <see cref="ArrayPool{T}"/> class. 
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">

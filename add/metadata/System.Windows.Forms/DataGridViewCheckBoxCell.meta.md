@@ -352,14 +352,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewCheckBoxCell.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.DataGridViewCheckBoxCell.MouseEnterUnsharesRow(System.Int32)
 ms.technology: 
   - "dotnet-winforms"

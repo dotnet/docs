@@ -47,13 +47,6 @@ manager: "wpickett"
 uid: System.Drawing.ImageAnimator.UpdateFrames
 ms.technology: 
   - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Drawing.ImageAnimator.UpdateFrames
-ms.technology: 
-  - "dotnet-standard"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

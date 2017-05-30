@@ -87,14 +87,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.EventRecord.FormatDescription
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.EventRecord.FormatDescription(System.Collections.Generic.IEnumerable{System.Object})
 ms.technology: 
   - "dotnet-standard"
@@ -192,14 +184,6 @@ manager: "ghogen"
 
 ---
 uid: System.Diagnostics.Eventing.Reader.EventRecord.Version
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
-uid: System.Diagnostics.Eventing.Reader.EventRecord.Dispose
 ms.technology: 
   - "dotnet-standard"
 ms.author: "jgalasyn"

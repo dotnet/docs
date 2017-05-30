@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.MissingMemberException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.MissingMemberException.ClassName
 ms.technology: 
   - "dotnet-standard"

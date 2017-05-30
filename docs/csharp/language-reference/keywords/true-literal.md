@@ -35,7 +35,7 @@ Represents the boolean value true.
  [!code-cs[csrefKeywordsOperator#14](../../../csharp/language-reference/keywords/codesnippet/CSharp/true-literal_1.cs)]  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

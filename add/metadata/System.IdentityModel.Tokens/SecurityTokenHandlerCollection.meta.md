@@ -247,14 +247,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CanReadToken
 ms.technology: 
   - "dotnet-standard"
@@ -288,14 +280,6 @@ manager: "markgal"
 
 ---
 uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CanReadToken(System.Xml.XmlReader)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.Tokens.SecurityTokenHandlerCollection.CreateDefaultSecurityTokenHandlerCollection
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

@@ -167,14 +167,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.StateBag.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.StateBag.System#Collections#IDictionary#IsReadOnly
 ms.technology: 
   - "dotnet-webforms"

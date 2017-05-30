@@ -52,15 +52,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SplineDecimalKeyFrame.InterpolateValueCore(System.Decimal,System.Double)
 ms.technology: 
   - "dotnet-wpf"

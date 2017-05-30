@@ -347,15 +347,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataView.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataView.UpdateIndex
 ms.technology: 
   - "dotnet-ado"
@@ -599,15 +590,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataView.ToTable
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataView.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-ado"
@@ -702,15 +684,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.DataView.FindRows(System.Object[])
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.DataView.UpdateIndex
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

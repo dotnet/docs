@@ -80,15 +80,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Xml.Serialization.XmlReflectionImporter.#ctor
-ms.technology: 
-  - "dotnet-wcf"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(System.Type,System.Xml.Serialization.XmlRootAttribute,System.String)
 ms.technology: 
   - "dotnet-wcf"

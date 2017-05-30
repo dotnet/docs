@@ -485,15 +485,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.ReadElementContentAsDouble
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.MoveToFirstAttribute
 ms.technology: 
   - "dotnet-standard"
@@ -567,15 +558,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlReader.ReadAttributeValue
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadElementString
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -854,15 +836,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.ReadElementContentAsObject
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.ReadContentAsDouble
 ms.technology: 
   - "dotnet-standard"
@@ -890,34 +863,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.ReadElementContentAsFloat
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadElementContentAsDecimal
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.Depth
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadElementContentAsString
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -971,15 +917,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.ReadElementContentAsBoolean
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.Item(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -999,15 +936,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlReader.Item
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -1151,24 +1079,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.ReadElementContentAsInt
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadElementContentAsLong
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.ReadToFollowing(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -1233,15 +1143,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlReader.ReadStartElement(System.String,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadStartElement
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -1340,15 +1241,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlReader.IsStartElement
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlReader.Create
 ms.technology: 
   - "dotnet-standard"
@@ -1377,15 +1269,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlReader.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlReader.ReadElementContentAsDateTime
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

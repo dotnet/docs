@@ -125,15 +125,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.MetadataExchangeClient.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.MetadataExchangeClient.GetMetadataAsync(System.Uri,System.ServiceModel.Description.MetadataExchangeClientMode)
 ms.technology: 
   - "dotnet-standard"
@@ -144,15 +135,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Description.MetadataExchangeClient.GetChannelFactory(System.ServiceModel.EndpointAddress,System.String,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Description.MetadataExchangeClient.GetMetadata
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -234,15 +216,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Description.MetadataExchangeClient.MaximumResolvedReferences
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Description.MetadataExchangeClient.GetMetadataAsync
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

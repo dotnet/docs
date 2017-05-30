@@ -44,7 +44,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Comments in Code (Visual Basic)
-As you read the code examples, you often encounter the comment symbol (`'`). This symbol tells the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler to ignore the text following it, or the *comment*. Comments are brief explanatory notes added to code for the benefit of those reading it.  
+As you read the code examples, you often encounter the comment symbol (`'`). This symbol tells the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler to ignore the text following it, or the *comment*. Comments are brief explanatory notes added to code for the benefit of those reading it.  
   
  It is good programming practice to begin all procedures with a brief comment describing the functional characteristics of the procedure (what it does). This is for your own benefit and the benefit of anyone else who examines the code. You should separate the implementation details (how the procedure does it) from comments that describe the functional characteristics. When you include implementation details in the description, remember to update them when you update the function.  
   
@@ -57,7 +57,7 @@ As you read the code examples, you often encounter the comment symbol (`'`). Thi
  [!code-vb[VbVbcnConventions#17](../../../visual-basic/programming-guide/language-features/codesnippet/VisualBasic/comments-in-code_2.vb)]  
   
 ## Commenting Guidelines  
- The following table provides general guidelines for what types of comments can precede a section of code. These are suggestions; [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] does not enforce rules for adding comments. Write what works best, both for you and for anyone else who reads your code.  
+ The following table provides general guidelines for what types of comments can precede a section of code. These are suggestions; [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] does not enforce rules for adding comments. Write what works best, both for you and for anyone else who reads your code.  
   
 |||  
 |---|---|  

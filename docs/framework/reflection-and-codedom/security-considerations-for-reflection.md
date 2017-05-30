@@ -46,9 +46,9 @@ Reflection provides the ability to obtain information about types and members, a
   
  For example, code that is run in a sandboxed application domain is limited to the access described in this list, unless the application domain grants additional permissions.  
   
- Starting with the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)], attempting to access members that are normally inaccessible generates a demand for the grant set of the target object plus <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag. Code that is running with full trust (for example, code in an application that is launched from the command line) can always satisfy these permissions. (This is subject to limitations in accessing security-critical members, as described later in this article.)  
+ Starting with the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)], attempting to access members that are normally inaccessible generates a demand for the grant set of the target object plus <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=fullName> flag. Code that is running with full trust (for example, code in an application that is launched from the command line) can always satisfy these permissions. (This is subject to limitations in accessing security-critical members, as described later in this article.)  
   
- Optionally, a sandboxed application domain can grant <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag, as described in the section [Accessing Members That Are Normally Inaccessible](#accessingNormallyInaccessible), later in this article.  
+ Optionally, a sandboxed application domain can grant <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=fullName> flag, as described in the section [Accessing Members That Are Normally Inaccessible](#accessingNormallyInaccessible), later in this article.  
   
 <a name="accessingSecurityCritical"></a>   
 ## Accessing Security-Critical Members  
@@ -81,14 +81,14 @@ Reflection provides the ability to obtain information about types and members, a
 ## Accessing Members That Are Normally Inaccessible  
  To use reflection to invoke members that are inaccessible according to the accessibility rules of the common language runtime, your code must be granted one of two permissions:  
   
--   To allow code to invoke any nonpublic member:Your code must be granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag.  
+-   To allow code to invoke any nonpublic member:Your code must be granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=fullName> flag.  
   
     > [!NOTE]
     >  By default, security policy denies this permission to code that originates from the Internet. This permission should never be granted to code that originates from the Internet.  
   
--   To allow code to invoke any nonpublic member, as long as the grant set of the assembly that contains the invoked member is the same as, or a subset of, the grant set of the assembly that contains the invoking code: Your code must be granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag.  
+-   To allow code to invoke any nonpublic member, as long as the grant set of the assembly that contains the invoked member is the same as, or a subset of, the grant set of the assembly that contains the invoking code: Your code must be granted <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=fullName> flag.  
   
- For example, suppose you grant an application domain Internet permissions plus <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag, and then run an Internet application with two assemblies, A and B.  
+ For example, suppose you grant an application domain Internet permissions plus <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=fullName> flag, and then run an Internet application with two assemblies, A and B.  
   
 -   Assembly A can use reflection to access private members of assembly B, because the grant set of assembly B does not include any permissions that A has not been granted.  
   
@@ -104,9 +104,9 @@ Reflection provides the ability to obtain information about types and members, a
   
 -   Beginning with the [!INCLUDE[net_v40_long](../../../includes/net-v40-long-md.md)], transparent code cannot use reflection to access security-critical members.  
   
--   The <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag is introduced in the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)]. Earlier versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] require the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag for code that uses reflection to access nonpublic members. This is a permission that should never be granted to partially trusted code.  
+-   The <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess?displayProperty=fullName> flag is introduced in the [!INCLUDE[net_v20SP1_long](../../../includes/net-v20sp1-long-md.md)]. Earlier versions of the [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] require the <xref:System.Security.Permissions.ReflectionPermissionFlag.MemberAccess?displayProperty=fullName> flag for code that uses reflection to access nonpublic members. This is a permission that should never be granted to partially trusted code.  
   
--   Beginning with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], using reflection to obtain information about nonpublic types and members does not require any permissions. In earlier versions, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag?displayProperty=fullName> flag is required.  
+-   Beginning with the [!INCLUDE[dnprdnlong](../../../includes/dnprdnlong-md.md)], using reflection to obtain information about nonpublic types and members does not require any permissions. In earlier versions, <xref:System.Security.Permissions.ReflectionPermission> with the <xref:System.Security.Permissions.ReflectionPermissionFlag.TypeInformation?displayProperty=fullName> flag is required.  
   
 ## See Also  
  <xref:System.Security.Permissions.ReflectionPermissionFlag>   

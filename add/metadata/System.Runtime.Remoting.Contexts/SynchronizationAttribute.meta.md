@@ -97,13 +97,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Contexts.SynchronizationAttribute.NOT_SUPPORTED
 ms.technology: 
   - "dotnet-standard"

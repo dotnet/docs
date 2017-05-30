@@ -65,12 +65,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.PeerApplication.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.PeerToPeer.Collaboration.PeerApplication.Path
 ms.author: "bobdel"
 manager: "markl"
@@ -96,12 +90,6 @@ manager: "markl"
 
 ---
 uid: System.Net.PeerToPeer.Collaboration.PeerApplication.ApplicationChanged
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.Collaboration.PeerApplication.Dispose
 ms.author: "bobdel"
 manager: "markl"
 ---

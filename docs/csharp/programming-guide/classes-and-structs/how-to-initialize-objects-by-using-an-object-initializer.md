@@ -52,7 +52,7 @@ You can use object initializers to initialize type objects in a declarative mann
  [!code-cs[csProgGuideLINQ#36](../../../csharp/programming-guide/arrays/codesnippet/CSharp/how-to-initialize-objects-by-using-an-object-initializer_2.cs)]  
   
 ## Compiling the Code  
- To run this code, copy and paste the class into a Visual C# console application project that has been created in [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)].   
+ To run this code, copy and paste the class into a Visual C# console application project that has been created in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].   
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

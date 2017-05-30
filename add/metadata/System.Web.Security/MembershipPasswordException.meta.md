@@ -42,12 +42,3 @@ author: "tdykstra"
 ms.author: "tdykstra"
 manager: "wpickett"
 ---
-
----
-uid: System.Web.Security.MembershipPasswordException.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----

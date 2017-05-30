@@ -34,11 +34,11 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Variable uses an Automation type not supported in Visual Basic
-You tried to use a variable defined in a type library or object library that has a data type not supported by [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+You tried to use a variable defined in a type library or object library that has a data type not supported by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 ## To correct this error  
   
--   Use a variable of a type recognized by [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+-   Use a variable of a type recognized by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
      -or-  
   

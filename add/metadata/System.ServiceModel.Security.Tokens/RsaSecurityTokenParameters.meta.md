@@ -62,15 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.Tokens.RsaSecurityTokenParameters.CloneCore
 ms.technology: 
   - "dotnet-standard"

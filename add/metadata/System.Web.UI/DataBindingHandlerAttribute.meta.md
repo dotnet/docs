@@ -55,14 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataBindingHandlerAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.DataBindingHandlerAttribute.Default
 ms.technology: 
   - "dotnet-webforms"

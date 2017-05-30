@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeCatchClause.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeCatchClause.CatchExceptionType
 ms.technology: 
   - "dotnet-standard"

@@ -34,15 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.PointLight.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.PointLight.CloneCurrentValue
 ms.technology: 
   - "dotnet-wpf"

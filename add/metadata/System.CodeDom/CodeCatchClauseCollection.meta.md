@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeCatchClauseCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeCatchClauseCollection.Insert(System.Int32,System.CodeDom.CodeCatchClause)
 ms.technology: 
   - "dotnet-standard"

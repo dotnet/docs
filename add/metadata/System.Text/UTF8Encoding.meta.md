@@ -179,15 +179,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.UTF8Encoding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.UTF8Encoding.#ctor(System.Boolean)
 ms.technology: 
   - "dotnet-standard"

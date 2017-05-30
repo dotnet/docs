@@ -54,7 +54,7 @@ Specifies a default base address when creating a DLL.
 |`address`|Required. The base address for the DLL. This address must be specified as a hexadecimal number.|  
   
 ## Remarks  
- The default base address for a DLL is set by the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)].  
+ The default base address for a DLL is set by the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
   
  Be aware that the lower-order word in this address is rounded. For example, if you specify 0x11110001, it is rounded to 0x11110000.  
   

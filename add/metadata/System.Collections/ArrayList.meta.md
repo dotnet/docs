@@ -323,25 +323,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.ArrayList.ToArray
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.ArrayList.ToArray(System.Type)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.ArrayList.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -396,15 +378,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.ArrayList.IndexOf(System.Object,System.Int32,System.Int32)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.ArrayList.Reverse
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -521,15 +494,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.ArrayList.GetEnumerator
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.ArrayList.IndexOf
 ms.technology: 
   - "dotnet-standard"
@@ -567,15 +531,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.ArrayList.Synchronized
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.ArrayList.Sort
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

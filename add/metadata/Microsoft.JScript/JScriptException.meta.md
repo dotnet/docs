@@ -112,8 +112,3 @@ ms.author: "mikejo"
 uid: Microsoft.JScript.JScriptException.#ctor(System.String)
 ms.author: "mikejo"
 ---
-
----
-uid: Microsoft.JScript.JScriptException.#ctor
-ms.author: "mikejo"
----

@@ -322,7 +322,7 @@
 ## Remarks  
  This property uses the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> property to display the Help context of the specified Help file.  
   
- This field is optional. If this property, together with <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A>, is specified, then the values of <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpString%2A> are ignored.  
+ This field is optional. If this property, together with <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A>, is specified, then the value of <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> is ignored.  
   
  ]]></format>
         </remarks>
@@ -384,7 +384,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has a higher priority than the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>+<xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> and <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpString%2A> properties. In other words, these properties are ignored if <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> is set.  
+ This property has a higher priority than the <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpContext%2A>+<xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpFile%2A> properties. In other words, these properties are ignored if <xref:Microsoft.Build.Framework.XamlTypes.BaseProperty.HelpUrl%2A> is set.  
   
  This field is optional and is culture-insensitive.  
   

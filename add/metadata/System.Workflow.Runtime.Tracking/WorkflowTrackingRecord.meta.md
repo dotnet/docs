@@ -41,13 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.Tracking.WorkflowTrackingRecord.EventOrder
 author: "Erikre"
 ms.author: "erikre"

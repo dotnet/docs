@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ArgIterator.GetNextArg
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ArgIterator.GetRemainingCount
 ms.technology: 
   - "dotnet-standard"

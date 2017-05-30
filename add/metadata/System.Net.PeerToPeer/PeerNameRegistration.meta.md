@@ -59,12 +59,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.PeerNameRegistration.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.PeerToPeer.PeerNameRegistration.Comment
 ms.author: "bobdel"
 manager: "markl"
@@ -120,12 +114,6 @@ manager: "markl"
 
 ---
 uid: System.Net.PeerToPeer.PeerNameRegistration.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.PeerToPeer.PeerNameRegistration.Dispose
 ms.author: "bobdel"
 manager: "markl"
 ---

@@ -79,22 +79,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.AsyncResult.Dispose
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
-uid: System.IdentityModel.AsyncResult.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.AsyncResult.End(System.IAsyncResult)
 ms.technology: 
   - "dotnet-standard"

@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Runtime.CompilerServices.MethodImplAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Runtime.CompilerServices.MethodImplAttribute.Value
 ms.technology: 
   - "dotnet-standard"

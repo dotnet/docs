@@ -71,12 +71,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.WebResponse.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.WebResponse.ResponseUri
 ms.author: "bobdel"
 manager: "markl"
@@ -96,12 +90,6 @@ manager: "markl"
 
 ---
 uid: System.Net.WebResponse.GetResponseStream
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.WebResponse.#ctor
 ms.author: "bobdel"
 manager: "markl"
 ---

@@ -158,15 +158,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.StylusPointCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.StylusPointCollection.ToHiMetricArray
 ms.technology: 
   - "dotnet-wpf"

@@ -125,15 +125,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.SyndicationFeed.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.SyndicationFeed.Description
 ms.technology: 
   - "dotnet-standard"
@@ -171,15 +162,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Syndication.SyndicationFeed.ImageUrl
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Syndication.SyndicationFeed.GetRss20Formatter
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

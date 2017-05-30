@@ -35,7 +35,7 @@ Code contracts provide a way to specify preconditions, postconditions, and objec
   
 -   Static verification: The static checker can decide whether there are any contract violations without running the program. It checks for implicit contracts, such as null dereferences and array bounds, and explicit contracts.  
   
--   Reference documentation: The documentation generator augments existing XML documentation files with contract information. There are also style sheets that can be used with [Sandcastle](http://go.microsoft.com/fwlink/?LinkID=169253) so that the generated documentation pages have contract sections.  
+-   Reference documentation: The documentation generator augments existing XML documentation files with contract information. There are also style sheets that can be used with [Sandcastle](https://github.com/EWSoftware/SHFB) so that the generated documentation pages have contract sections.  
   
  All .NET Framework languages can immediately take advantage of contracts; you do not have to write a special parser or compiler. A Visual Studio add-in lets you specify the level of code contract analysis to be performed. The analyzers can confirm that the contracts are well-formed (type checking and name resolution) and can produce a compiled form of the contracts in Microsoft intermediate language (MSIL) format. Authoring contracts in Visual Studio lets you take advantage of the standard IntelliSense provided by the tool.  
   

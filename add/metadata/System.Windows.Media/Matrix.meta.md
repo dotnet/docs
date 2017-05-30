@@ -255,15 +255,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Matrix.ToString
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Matrix.Equals(System.Windows.Media.Matrix,System.Windows.Media.Matrix)
 ms.technology: 
   - "dotnet-wpf"

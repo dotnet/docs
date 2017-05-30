@@ -209,12 +209,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Execution.ProjectInstance.Build
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Execution.ProjectInstance.Build(System.String[],System.Collections.Generic.IEnumerable{Microsoft.Build.Framework.ILogger},System.Collections.Generic.IEnumerable{Microsoft.Build.Logging.ForwardingLoggerRecord},System.Collections.Generic.IDictionary{System.String,Microsoft.Build.Execution.TargetResult}@)
 ms.author: "susanno"
 manager: "douge"
@@ -246,12 +240,6 @@ manager: "douge"
 
 ---
 uid: Microsoft.Build.Execution.ProjectInstance.GetMetadataValueEscaped(Microsoft.Build.Execution.ProjectItemDefinitionInstance,System.String)
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Execution.ProjectInstance.DeepCopy
 ms.author: "susanno"
 manager: "douge"
 ---

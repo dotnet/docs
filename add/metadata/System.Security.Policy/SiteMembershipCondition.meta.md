@@ -114,12 +114,3 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
-
----
-uid: System.Security.Policy.SiteMembershipCondition.ToXml
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----

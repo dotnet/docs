@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.MutexSecurity.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.AccessControl.MutexSecurity.SetAccessRule(System.Security.AccessControl.MutexAccessRule)
 ms.technology: 
   - "dotnet-standard"

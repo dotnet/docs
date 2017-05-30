@@ -143,15 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.StringInfo.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Globalization.StringInfo.SubstringByTextElements(System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"

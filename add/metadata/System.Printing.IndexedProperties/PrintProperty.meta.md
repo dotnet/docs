@@ -94,12 +94,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Printing.IndexedProperties.PrintProperty.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

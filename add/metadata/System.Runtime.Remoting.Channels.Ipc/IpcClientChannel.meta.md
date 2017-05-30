@@ -55,13 +55,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Ipc.IpcClientChannel.CreateMessageSink(System.String,System.Object,System.String@)
 ms.technology: 
   - "dotnet-standard"

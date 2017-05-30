@@ -260,15 +260,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.ServiceDocumentFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.ServiceDocumentFormatter.WriteAttributeExtensions(System.Xml.XmlWriter,System.ServiceModel.Syndication.ServiceDocument,System.String)
 ms.technology: 
   - "dotnet-standard"

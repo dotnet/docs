@@ -199,14 +199,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.MetaModel.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.DynamicData.MetaModel.GetTable
 ms.technology: 
   - "dotnet-webforms"

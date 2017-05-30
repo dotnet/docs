@@ -277,15 +277,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridTableStyle.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridTableStyle.OnGridLineStyleChanged(System.EventArgs)
 ms.technology: 
   - "dotnet-winforms"

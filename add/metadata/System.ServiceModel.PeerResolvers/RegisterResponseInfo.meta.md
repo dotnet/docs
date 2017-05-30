@@ -31,14 +31,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.RegisterResponseInfo.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.PeerResolvers.RegisterResponseInfo.HasBody
 ms.technology: 
   - "dotnet-standard"

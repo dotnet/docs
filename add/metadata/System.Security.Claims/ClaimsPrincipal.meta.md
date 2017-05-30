@@ -203,14 +203,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.Security.Claims.ClaimsPrincipal.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.Security.Claims.ClaimsPrincipal.HasClaim
 ms.technology: 
   - "dotnet-standard"

@@ -71,15 +71,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OleDb.OleDbConnectionStringBuilder.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OleDb.OleDbConnectionStringBuilder.PersistSecurityInfo
 ms.technology: 
   - "dotnet-ado"

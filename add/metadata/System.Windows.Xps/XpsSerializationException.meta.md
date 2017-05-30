@@ -20,13 +20,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.XpsSerializationException.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.XpsSerializationException.#ctor(System.String)
 ms.technology: 
   - "dotnet-wpf"

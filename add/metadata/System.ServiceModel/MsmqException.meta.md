@@ -26,15 +26,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.MsmqException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.MsmqException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

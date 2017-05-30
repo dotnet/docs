@@ -32,10 +32,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "martinek"
 ---
-
----
-uid: System.Device.Location.GeoPosition`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "martinek"
----

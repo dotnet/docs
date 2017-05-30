@@ -74,10 +74,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Workflow.Activities.DelayActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

@@ -426,13 +426,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.LabelArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.LabelArray.Click
 author: "stevehoag"
 ms.author: "shoag"

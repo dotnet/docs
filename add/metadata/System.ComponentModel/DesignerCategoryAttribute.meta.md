@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DesignerCategoryAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DesignerCategoryAttribute.Equals(System.Object)
 ms.technology: 
   - "dotnet-standard"

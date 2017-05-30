@@ -114,15 +114,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.Stack`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.Stack`1.Pop
 ms.technology: 
   - "dotnet-standard"

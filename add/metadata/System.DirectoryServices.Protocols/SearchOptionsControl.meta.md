@@ -32,10 +32,3 @@ author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
 ---
-
----
-uid: System.DirectoryServices.Protocols.SearchOptionsControl.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----

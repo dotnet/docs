@@ -116,15 +116,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.SyndicationContent.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.SyndicationContent.WriteContentsTo(System.Xml.XmlWriter)
 ms.technology: 
   - "dotnet-standard"

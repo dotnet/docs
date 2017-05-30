@@ -206,15 +206,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.TraceListener.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.TraceListener.Fail(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -288,15 +279,6 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.TraceListener.Fail
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.TraceListener.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

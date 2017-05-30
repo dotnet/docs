@@ -267,15 +267,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ServiceProcess.ServiceController.GetDevices
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ServiceProcess.ServiceController.GetServices(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -285,34 +276,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ServiceProcess.ServiceController.GetServices
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ServiceProcess.ServiceController.Start
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ServiceProcess.ServiceController.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ServiceProcess.ServiceController.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

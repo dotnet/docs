@@ -328,15 +328,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Vector.ToString
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Vector.LengthSquared
 ms.technology: 
   - "dotnet-wpf"

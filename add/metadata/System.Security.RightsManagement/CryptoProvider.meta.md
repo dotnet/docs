@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.RightsManagement.CryptoProvider.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Security.RightsManagement.CryptoProvider.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"

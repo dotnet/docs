@@ -255,12 +255,6 @@ uid: System.Net.Http.HttpClient.Dispose
 ---
 
 ---
-uid: System.Net.Http.HttpClient.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Http.HttpClient.Timeout
 ms.author: "bobdel"
 manager: "markl"

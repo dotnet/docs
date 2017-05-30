@@ -127,14 +127,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.SpeechRecognizer.RequestRecognizerUpdate(System.Object,System.TimeSpan)
 ms.technology: 
   - "dotnet-standard"
@@ -296,14 +288,6 @@ manager: "ghogen"
 
 ---
 uid: System.Speech.Recognition.SpeechRecognizer.EmulateRecognize(System.Speech.Recognition.RecognizedWordUnit[],System.Globalization.CompareOptions)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Recognition.SpeechRecognizer.Dispose
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"

@@ -170,15 +170,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleParameter.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleParameter.#ctor(System.String,System.Object)
 ms.technology: 
   - "dotnet-ado"

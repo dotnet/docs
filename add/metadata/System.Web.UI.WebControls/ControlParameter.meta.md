@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.ControlParameter.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.ControlParameter.#ctor(System.String,System.Data.DbType,System.String,System.String)
 ms.technology: 
   - "dotnet-webforms"

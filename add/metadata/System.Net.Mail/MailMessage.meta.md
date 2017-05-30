@@ -95,18 +95,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Mail.MailMessage.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Mail.MailMessage.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Mail.MailMessage.Attachments
 ms.author: "bobdel"
 manager: "markl"

@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.StateActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.StateActivity.Execute(System.Workflow.ComponentModel.ActivityExecutionContext)
 author: "Erikre"
 ms.author: "erikre"

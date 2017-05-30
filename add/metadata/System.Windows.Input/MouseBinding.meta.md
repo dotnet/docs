@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.MouseBinding.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.MouseBinding.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
 ms.technology: 
   - "dotnet-wpf"

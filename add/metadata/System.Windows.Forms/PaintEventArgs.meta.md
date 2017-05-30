@@ -33,14 +33,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.PaintEventArgs.Dispose
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.PaintEventArgs.Finalize
 ms.technology: 
   - "dotnet-winforms"

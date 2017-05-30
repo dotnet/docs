@@ -79,15 +79,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Threading.DispatcherOperation.Wait
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Threading.DispatcherOperation.Wait(System.TimeSpan)
 ms.technology: 
   - "dotnet-wpf"

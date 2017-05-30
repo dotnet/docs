@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Configuration.HttpCapabilitiesDefaultProvider.CacheTime
 ms.technology: 
   - "dotnet-webforms"

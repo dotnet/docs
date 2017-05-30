@@ -254,15 +254,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.Serialization.DesignerSerializationManager.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#ReportError(System.Object)
 ms.technology: 
   - "dotnet-standard"

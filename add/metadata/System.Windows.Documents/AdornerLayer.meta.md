@@ -106,15 +106,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.AdornerLayer.Update
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Documents.AdornerLayer.ArrangeOverride(System.Windows.Size)
 ms.technology: 
   - "dotnet-wpf"

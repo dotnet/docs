@@ -213,15 +213,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.UTF32Encoding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.UTF32Encoding.GetBytes(System.Char*,System.Int32,System.Byte*,System.Int32)
 ms.technology: 
   - "dotnet-standard"

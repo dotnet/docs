@@ -88,7 +88,7 @@ This page lists some common problems that can occur when you perform operations 
  Note that it is not sufficient to declare `decimalRemainder` as `Decimal`. You must also force the literals to `Decimal`, or they use `Double` by default and `decimalRemainder` receives the same inaccurate value as `doubleRemainder`.  
   
 ## Boolean Type Does Not Convert to Numeric Type Accurately  
- [Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md) values are not stored as numbers, and the stored values are not intended to be equivalent to numbers. For compatibility with earlier versions, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] provides conversion keywords ([CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), `CBool`, `CInt`, and so on) to convert between `Boolean` and numeric types. However, other languages sometimes perform these conversions differently, as do the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] methods.  
+ [Boolean Data Type](../../../../visual-basic/language-reference/data-types/boolean-data-type.md) values are not stored as numbers, and the stored values are not intended to be equivalent to numbers. For compatibility with earlier versions, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] provides conversion keywords ([CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), `CBool`, `CInt`, and so on) to convert between `Boolean` and numeric types. However, other languages sometimes perform these conversions differently, as do the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] methods.  
   
  You should never write code that relies on equivalent numeric values for `True` and `False`. Whenever possible, you should restrict usage of `Boolean` variables to the logical values for which they are designed. If you must mix `Boolean` and numeric values, make sure that you understand the conversion method that you select.  
   
@@ -101,7 +101,7 @@ This page lists some common problems that can occur when you perform operations 
  If you must convert a `Boolean` value to a numeric data type, be careful about which conversion method you use.  
   
 ## Character Literal Generates Compiler Error  
- In the absence of any type characters, [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] assumes default data types for literals. The default type for a character literal — enclosed in quotation marks (`" "`) — is `String`.  
+ In the absence of any type characters, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] assumes default data types for literals. The default type for a character literal — enclosed in quotation marks (`" "`) — is `String`.  
   
  The `String` data type does not widen to the [Char Data Type](../../../../visual-basic/language-reference/data-types/char-data-type.md). This means that if you want to assign a literal to a `Char` variable, you must either make a narrowing conversion or force the literal to the `Char` type.  
 
@@ -118,7 +118,7 @@ This page lists some common problems that can occur when you perform operations 
 ## String Conversion Fails at Run Time  
  The [String Data Type](../../../../visual-basic/language-reference/data-types/string-data-type.md) participates in very few widening conversions. `String` widens only to itself and `Object`, and only `Char` and `Char()` (a `Char` array) widen to `String`. This is because `String` variables and constants can contain values that other data types cannot contain.  
   
- When the type checking switch ([Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)) is `On`, the compiler disallows all implicit narrowing conversions. This includes those involving `String`. Your code can still use conversion keywords such as `CStr` and [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), which direct the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)] to attempt the conversion.  
+ When the type checking switch ([Option Strict Statement](../../../../visual-basic/language-reference/statements/option-strict-statement.md)) is `On`, the compiler disallows all implicit narrowing conversions. This includes those involving `String`. Your code can still use conversion keywords such as `CStr` and [CType Function](../../../../visual-basic/language-reference/functions/ctype-function.md), which direct the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] to attempt the conversion.  
   
 > [!NOTE]
 >  The narrowing-conversion error is suppressed for conversions from the elements in a `For Each…Next` collection to the loop control variable. For more information and examples, see the "Narrowing Conversions" section in [For Each...Next Statement](../../../../visual-basic/language-reference/statements/for-each-next-statement.md).  

@@ -187,15 +187,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Concurrent.ConcurrentDictionary`2.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Concurrent.ConcurrentDictionary`2.AddOrUpdate(`0,System.Func{`0,`1},System.Func{`0,`1,`1})
 ms.technology: 
   - "dotnet-standard"

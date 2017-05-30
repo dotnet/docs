@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Win32.CommonDialog.ShowDialog
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Win32.CommonDialog.ShowDialog(System.Windows.Window)
 ms.technology: 
   - "dotnet-standard"

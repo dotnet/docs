@@ -20,13 +20,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlSchemaContextSettings.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlSchemaContextSettings.SupportMarkupExtensionsWithDuplicateArity
 ms.technology: 
   - "dotnet-wpf"

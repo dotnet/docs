@@ -89,14 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Shell.JumpList.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Shell.JumpList.AddToRecentCategory(System.Windows.Shell.JumpTask)
 ms.technology: 
   - "dotnet-wpf"

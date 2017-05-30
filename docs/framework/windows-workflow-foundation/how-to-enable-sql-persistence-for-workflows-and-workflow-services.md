@@ -61,7 +61,7 @@ This topic describes how to configure the SQL Workflow Instance Store feature to
     > [!NOTE]
     >  Depending on your edition of SQL Server, the connection string server name may be different.  
   
-4.  Invoke the <xref:System.Activities.WorkflowApplication.Persist%2A> method on the <xref:System.Activities.WorkflowApplication> object to persist a workflow, or <xref:System.Activities.WorkflowApplication.Unload%2A> method to persist and unload a workflow. You can also handle the <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> event raised by the <xref:System.Activities.WorkflowApplication> object and return appropriate (<xref:System.Activities.PersistableIdleAction> or <xref:System.Activities.PersistableIdleAction>) member of <xref:System.Activities.PersistableIdleAction>.  
+4.  Invoke the <xref:System.Activities.WorkflowApplication.Persist%2A> method on the <xref:System.Activities.WorkflowApplication> object to persist a workflow, or <xref:System.Activities.WorkflowApplication.Unload%2A> method to persist and unload a workflow. You can also handle the <xref:System.Activities.WorkflowApplication.PersistableIdle%2A> event raised by the <xref:System.Activities.WorkflowApplication> object and return appropriate (<xref:System.Activities.PersistableIdleAction.Persist> or <xref:System.Activities.PersistableIdleAction.Unload>) member of <xref:System.Activities.PersistableIdleAction>.  
   
     ```csharp  
     wfApp.PersistableIdle = delegate(WorkflowApplicationIdleEventArgs e)  

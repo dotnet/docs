@@ -31,12 +31,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.SiteMapPathDesigner.TemplateGroups
 ms.technology: 
   - "dotnet-webforms"

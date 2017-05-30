@@ -40,11 +40,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Printing.PrintSystemObjectPropertiesChangedEventArgs.Dispose
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
----

@@ -781,15 +781,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripItem.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripItem.MergeAction
 ms.technology: 
   - "dotnet-winforms"
@@ -1182,15 +1173,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.ToolStripItem.OnMouseEnter(System.EventArgs)
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.ToolStripItem.Invalidate
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"

@@ -333,14 +333,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.Legend.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.Legend.ForeColor
 ms.technology: 
   - "dotnet-webforms"

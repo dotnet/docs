@@ -67,7 +67,7 @@ myDecimal = 100000000000000000000   ' This causes a compiler error.
   
  [!code-vb[VbVbalrConstants#3](../../../../visual-basic/programming-guide/language-features/constants-enums/codesnippet/VisualBasic/constant-and-literal-data-types_3.vb)]  
   
- The following table shows the enclosing characters and type characters available in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+ The following table shows the enclosing characters and type characters available in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 |Data type|Enclosing character|Appended type character|  
 |---|---|---|  

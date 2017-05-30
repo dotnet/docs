@@ -397,14 +397,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.Invalidate
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.GetService(System.Type)
 ms.technology: 
   - "dotnet-winforms"
@@ -598,14 +590,6 @@ manager: "mblythe"
 
 ---
 uid: System.Windows.Forms.DataVisualization.Charting.Chart.BorderDashStyle
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.Chart.AlignDataPointsByAxisLabel
 ms.technology: 
   - "dotnet-winforms"
 ms.author: "mblythe"

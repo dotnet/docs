@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebDescriptionAttribute.GetHashCode
 ms.technology: 
   - "dotnet-webforms"

@@ -86,15 +86,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.ApplicationCatalog.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.ApplicationCatalog.GetExports(System.ComponentModel.Composition.Primitives.ImportDefinition)
 ms.technology: 
   - "dotnet-standard"

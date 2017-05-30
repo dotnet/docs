@@ -122,24 +122,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.FilteredCatalog.IncludeDependencies
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.FilteredCatalog.IncludeDependents
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.FilteredCatalog.OnChanged(System.ComponentModel.Composition.Hosting.ComposablePartCatalogChangeEventArgs)
 ms.technology: 
   - "dotnet-standard"

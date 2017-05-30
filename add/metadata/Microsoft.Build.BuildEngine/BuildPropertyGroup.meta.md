@@ -107,10 +107,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.BuildEngine.BuildPropertyGroup.#ctor
----
-
----
 uid: Microsoft.Build.BuildEngine.BuildPropertyGroup.SetProperty
 ms.author: "susanno"
 manager: "douge"

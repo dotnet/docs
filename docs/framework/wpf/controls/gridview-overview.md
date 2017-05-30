@@ -89,7 +89,7 @@ manager: "wpickett"
   
      Users can reorder columns in a <xref:System.Windows.Controls.GridView> by pressing the left mouse button while it is over a column header and then dragging that column to a new position. While the user drags the column header, a floating version of the header is displayed as well as a solid black line that shows where to insert the column.  
   
-     If you want to modify the default style for the floating version of a header, specify a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.GridViewColumnHeader> type that is triggered when the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> property is set to <xref:System.Windows.Controls.GridViewColumnHeaderRole>. For more information, see [Create a Style for a Dragged GridView Column Header](../../../../docs/framework/wpf/controls/how-to-create-a-style-for-a-dragged-gridview-column-header.md).  
+     If you want to modify the default style for the floating version of a header, specify a <xref:System.Windows.Controls.ControlTemplate> for a <xref:System.Windows.Controls.GridViewColumnHeader> type that is triggered when the <xref:System.Windows.Controls.GridViewColumnHeader.Role%2A> property is set to <xref:System.Windows.Controls.GridViewColumnHeaderRole.Floating>. For more information, see [Create a Style for a Dragged GridView Column Header](../../../../docs/framework/wpf/controls/how-to-create-a-style-for-a-dragged-gridview-column-header.md).  
   
 -   **Resize a column to its content.**  
   

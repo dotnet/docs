@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewItemEventArgs.DrawText
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DrawListViewItemEventArgs.Item
 ms.technology: 
   - "dotnet-winforms"

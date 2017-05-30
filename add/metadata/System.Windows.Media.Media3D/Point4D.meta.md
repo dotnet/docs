@@ -193,15 +193,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Point4D.ToString
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.Point4D.W
 ms.technology: 
   - "dotnet-wpf"

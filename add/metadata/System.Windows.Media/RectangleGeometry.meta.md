@@ -139,15 +139,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.RectangleGeometry.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.RectangleGeometry.GetArea(System.Double,System.Windows.Media.ToleranceType)
 ms.technology: 
   - "dotnet-wpf"

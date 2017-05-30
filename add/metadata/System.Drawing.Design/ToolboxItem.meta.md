@@ -107,15 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Design.ToolboxItem.CreateComponents
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Design.ToolboxItem.TypeName
 ms.technology: 
   - "dotnet-standard"
@@ -198,15 +189,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Design.ToolboxItem.Company
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Design.ToolboxItem.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

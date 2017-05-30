@@ -134,15 +134,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityKey.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityKey.op_Inequality(System.Data.EntityKey,System.Data.EntityKey)
 ms.technology: 
   - "dotnet-ado"

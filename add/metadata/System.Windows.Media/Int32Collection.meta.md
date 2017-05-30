@@ -119,14 +119,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Int32Collection.ToString
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Int32Collection.Clone
 ms.technology: 
   - "dotnet-wpf"
@@ -298,15 +290,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.Int32Collection.System#Collections#IList#IndexOf(System.Object)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Int32Collection.#ctor
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

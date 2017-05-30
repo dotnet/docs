@@ -13,13 +13,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.Instrumentation.InstrumentationBaseException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.Instrumentation.InstrumentationBaseException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"

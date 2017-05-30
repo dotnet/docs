@@ -34,13 +34,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.CallExternalMethodActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.CallExternalMethodActivity.#ctor(System.String)
 author: "Erikre"
 ms.author: "erikre"

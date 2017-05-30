@@ -27,12 +27,12 @@ You can make your control align to the edge of your forms by setting the <xref:S
   
 |Setting|Effect on your control|  
 |-------------|----------------------------|  
-|<xref:System.Windows.Forms.DockStyle>|Docks to the bottom of the form.|  
-|<xref:System.Windows.Forms.DockStyle>|Fills all remaining space in the form.|  
-|<xref:System.Windows.Forms.DockStyle>|Docks to the left side of the form.|  
-|<xref:System.Windows.Forms.DockStyle>|Does not dock anywhere, and it appears at the location specified by its <xref:System.Windows.Forms.Control.Location%2A> property.|  
-|<xref:System.Windows.Forms.DockStyle>|Docks to the right side of the form.|  
-|<xref:System.Windows.Forms.DockStyle>|Docks to the top of the form.|  
+|<xref:System.Windows.Forms.DockStyle.Bottom>|Docks to the bottom of the form.|  
+|<xref:System.Windows.Forms.DockStyle.Fill>|Fills all remaining space in the form.|  
+|<xref:System.Windows.Forms.DockStyle.Left>|Docks to the left side of the form.|  
+|<xref:System.Windows.Forms.DockStyle.None>|Does not dock anywhere, and it appears at the location specified by its <xref:System.Windows.Forms.Control.Location%2A> property.|  
+|<xref:System.Windows.Forms.DockStyle.Right>|Docks to the right side of the form.|  
+|<xref:System.Windows.Forms.DockStyle.Top>|Docks to the top of the form.|  
   
  There is design-time support for this feature in Visual Studio.  
   

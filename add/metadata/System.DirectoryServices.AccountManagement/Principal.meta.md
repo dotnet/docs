@@ -69,13 +69,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.AccountManagement.Principal.GetGroups
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.AccountManagement.Principal.#ctor
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -259,13 +252,6 @@ manager: "mbaldwin"
 
 ---
 uid: System.DirectoryServices.AccountManagement.Principal.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.AccountManagement.Principal.Save
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"

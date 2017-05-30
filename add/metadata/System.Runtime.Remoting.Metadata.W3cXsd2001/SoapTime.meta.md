@@ -34,13 +34,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapTime.GetXsdType
 ms.technology: 
   - "dotnet-standard"

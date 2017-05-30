@@ -218,15 +218,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Imaging.BitmapImage.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Imaging.BitmapImage.StreamSource
 ms.technology: 
   - "dotnet-wpf"

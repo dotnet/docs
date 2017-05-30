@@ -116,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeAttributeArgumentCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeAttributeArgumentCollection.Contains(System.CodeDom.CodeAttributeArgument)
 ms.technology: 
   - "dotnet-standard"

@@ -87,14 +87,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.Dispose
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "jgalasyn"
-manager: "ghogen"
----
-
----
 uid: System.Diagnostics.Eventing.Reader.ProviderMetadata.MessageFilePath
 ms.technology: 
   - "dotnet-standard"

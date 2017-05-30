@@ -15,12 +15,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.XmlDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.XmlDesigner.Initialize(System.ComponentModel.IComponent)
 ms.technology: 
   - "dotnet-webforms"

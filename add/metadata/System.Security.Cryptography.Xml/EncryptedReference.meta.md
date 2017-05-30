@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.EncryptedReference.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.EncryptedReference.TransformChain
 ms.technology: 
   - "dotnet-standard"

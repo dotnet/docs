@@ -29,12 +29,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.NetworkCredential.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.NetworkCredential.Password
 ms.author: "bobdel"
 manager: "markl"

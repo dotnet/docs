@@ -75,13 +75,13 @@ This topic describes security considerations that are specific to developing, de
 #### Run applications with the minimum permissions.  
  When you allow a managed application to run with full-trust permission, the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] does not limit the application's access to your computer. This may enable a security vulnerability in your application to compromise the entire system. To use code access security and other security mechanisms in the [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)], you should run applications by using partial-trust permissions and with the minimum set of permissions that are needed to enable the application to function. The following code access permissions are the minimum permissions your [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] application needs:  
   
--   <xref:System.Security.Permissions.FileIOPermission>: <xref:System.Security.Permissions.FileIOPermissionAccess> to open the specified metadata files or <xref:System.Security.Permissions.FileIOPermissionAccess> to search a directory for metadata files.  
+-   <xref:System.Security.Permissions.FileIOPermission>: <xref:System.Security.Permissions.FileIOPermissionAccess.Write> to open the specified metadata files or <xref:System.Security.Permissions.FileIOPermissionAccess.PathDiscovery> to search a directory for metadata files.  
   
--   <xref:System.Security.Permissions.ReflectionPermission>: <xref:System.Security.Permissions.ReflectionPermissionFlag> to support LINQ to Entities queries.  
+-   <xref:System.Security.Permissions.ReflectionPermission>: <xref:System.Security.Permissions.ReflectionPermissionFlag.RestrictedMemberAccess> to support LINQ to Entities queries.  
   
--   <xref:System.Transactions.DistributedTransactionPermission>: <xref:System.Security.Permissions.PermissionState> to enlist in a <xref:System.Transactions><xref:System.Transactions.Transaction>.  
+-   <xref:System.Transactions.DistributedTransactionPermission>: <xref:System.Security.Permissions.PermissionState.Unrestricted> to enlist in a <xref:System.Transactions><xref:System.Transactions.Transaction>.  
   
--   <xref:System.Security.Permissions.SecurityPermission>: <xref:System.Security.Permissions.SecurityPermissionFlag> to serialize exceptions by using the <xref:System.Runtime.Serialization.ISerializable> interface.  
+-   <xref:System.Security.Permissions.SecurityPermission>: <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> to serialize exceptions by using the <xref:System.Runtime.Serialization.ISerializable> interface.  
   
 -   Permission to open a database connection and execute commands against the database, such as <xref:System.Data.SqlClient.SqlClientPermission> for a [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] database.  
   

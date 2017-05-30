@@ -170,15 +170,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.MtomMessageEncodingBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.MtomMessageEncodingBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
 ms.technology: 
   - "dotnet-standard"

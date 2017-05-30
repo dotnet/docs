@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Build.Tasks.Deployment.Bootstrapper.BootstrapperBuilder.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

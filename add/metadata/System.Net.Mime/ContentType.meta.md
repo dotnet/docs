@@ -17,12 +17,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Mime.ContentType.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Mime.ContentType.Name
 ms.author: "bobdel"
 manager: "markl"

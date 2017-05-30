@@ -23,12 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.CompositeControlDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.CompositeControlDesigner.CreateChildControls
 ms.technology: 
   - "dotnet-webforms"

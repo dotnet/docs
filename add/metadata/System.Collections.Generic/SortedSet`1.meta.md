@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.SortedSet`1.CreateSetComparer
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.SortedSet`1.Min
 ms.technology: 
   - "dotnet-standard"
@@ -329,15 +320,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.SortedSet`1.#ctor(System.Collections.Generic.IEnumerable{`0})
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Generic.SortedSet`1.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

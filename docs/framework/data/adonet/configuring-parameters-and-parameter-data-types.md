@@ -27,10 +27,10 @@ Command objects use parameters to pass values to SQL statements or stored proced
   
 |Member name|Description|  
 |-----------------|-----------------|  
-|<xref:System.Data.ParameterDirection>|The parameter is an input parameter. This is the default.|  
-|<xref:System.Data.ParameterDirection>|The parameter can perform both input and output.|  
-|<xref:System.Data.ParameterDirection>|The parameter is an output parameter.|  
-|<xref:System.Data.ParameterDirection>|The parameter represents a return value from an operation such as a stored procedure, built-in function, or user-defined function.|  
+|<xref:System.Data.ParameterDirection.Input>|The parameter is an input parameter. This is the default.|  
+|<xref:System.Data.ParameterDirection.InputOutput>|The parameter can perform both input and output.|  
+|<xref:System.Data.ParameterDirection.Output>|The parameter is an output parameter.|  
+|<xref:System.Data.ParameterDirection.ReturnValue>|The parameter represents a return value from an operation such as a stored procedure, built-in function, or user-defined function.|  
   
 ## Working with Parameter Placeholders  
  The syntax for parameter placeholders depends on the data source. The [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] data providers handle naming and specifying parameters and parameter placeholders differently. This syntax is customized to a specific data source, as described in the following table.  
@@ -59,7 +59,7 @@ Command objects use parameters to pass values to SQL statements or stored proced
 |<xref:System.Double>|Double|Float|Double|Double|Double|  
 |<xref:System.Single>|Single|Real|Single|Real|Float|  
 |<xref:System.Guid>|Guid|UniqueIdentifier|Guid|UniqueIdentifier|Raw|  
-|<xref:System.Int16>|Int16|SmallInt|SmallInt|SmallInt|Int16|  
+|<xref:System.Int16 >|Int16|SmallInt|SmallInt|SmallInt|Int16|  
 |<xref:System.Int32>|Int32|Int|Int|Int|Int32|  
 |<xref:System.Int64>|Int64|BigInt|BigInt|BigInt|Number|  
 |<xref:System.Object>|Object|Variant|Variant|Inferring an OdbcType from Object is not supported.|Blob|  

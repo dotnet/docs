@@ -248,11 +248,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Windows.Forms.ErrorProvider.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----

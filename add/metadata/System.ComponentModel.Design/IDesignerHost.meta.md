@@ -204,12 +204,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.Design.IDesignerHost.CreateTransaction
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

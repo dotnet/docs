@@ -41,13 +41,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapBase64Binary.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapBase64Binary.ToString
 ms.technology: 
   - "dotnet-standard"

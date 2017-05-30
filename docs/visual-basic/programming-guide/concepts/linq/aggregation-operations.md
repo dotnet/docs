@@ -46,12 +46,12 @@ An aggregation operation computes a single value from a collection of values. An
 ## Query Expression Syntax Examples  
   
 ### Average  
- The following code example uses the `Aggregate Into Average` clause in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] to calculate the average temperature in an array of numbers that represent temperatures.  
+ The following code example uses the `Aggregate Into Average` clause in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] to calculate the average temperature in an array of numbers that represent temperatures.  
   
  [!code-vb[CsLINQAggregating#1](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/aggregation-operations_1.vb)]  
   
 ### Count  
- The following code example uses the `Aggregate Into Count` clause in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] to count the number of values in an array that are greater than or equal to 80.  
+ The following code example uses the `Aggregate Into Count` clause in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] to count the number of values in an array that are greater than or equal to 80.  
   
  [!code-vb[CsLINQAggregating#2](../../../../visual-basic/programming-guide/concepts/linq/codesnippet/VisualBasic/aggregation-operations_2.vb)]  
   

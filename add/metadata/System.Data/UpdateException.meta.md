@@ -26,15 +26,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.UpdateException.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.UpdateException.#ctor(System.String)
 ms.technology: 
   - "dotnet-ado"

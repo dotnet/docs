@@ -53,25 +53,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RandomNumberGenerator.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RandomNumberGenerator.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.RandomNumberGenerator.Create
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

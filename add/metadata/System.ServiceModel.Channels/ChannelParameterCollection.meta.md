@@ -44,15 +44,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.ChannelParameterCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.ChannelParameterCollection.SetItem(System.Int32,System.Object)
 ms.technology: 
   - "dotnet-standard"

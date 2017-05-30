@@ -204,15 +204,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.Rect3D.ToString
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Media3D.Rect3D.Contains(System.Windows.Media.Media3D.Point3D)
 ms.technology: 
   - "dotnet-wpf"

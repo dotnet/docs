@@ -79,14 +79,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlAdvice.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlAdvice.AssertionIdReferences
 ms.technology: 
   - "dotnet-standard"

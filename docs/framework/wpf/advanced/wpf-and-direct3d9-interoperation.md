@@ -95,7 +95,7 @@ You can include Direct3D9 content in a Windows Presentation Foundation (WPF) app
  Call the `Reset` method to recover from an invalid device only if you implement multi-adapter support. Otherwise, release all Direct3D9 interfaces and re-create them completely. If the adapter layout has changed, Direct3D9 objects created before the change are not updated.  
   
 ## Handling Resizing  
- If a <xref:System.Windows.Interop.D3DImage> is displayed at a resolution other than its native size, it is scaled according to the current <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A>, except that <xref:System.Windows.Media.Effects.SamplingMode> is substituted for <xref:System.Windows.Media.BitmapScalingMode>.  
+ If a <xref:System.Windows.Interop.D3DImage> is displayed at a resolution other than its native size, it is scaled according to the current <xref:System.Windows.Media.RenderOptions.BitmapScalingMode%2A>, except that <xref:System.Windows.Media.Effects.SamplingMode.Bilinear> is substituted for <xref:System.Windows.Media.BitmapScalingMode.Fant>.  
   
  If you require higher fidelity, you must create a new surface when the container of the <xref:System.Windows.Interop.D3DImage> changes size.  
   

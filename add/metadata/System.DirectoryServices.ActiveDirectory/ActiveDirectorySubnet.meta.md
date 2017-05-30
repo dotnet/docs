@@ -62,13 +62,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySubnet.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

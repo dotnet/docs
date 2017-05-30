@@ -20,13 +20,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.SoapClientFormatterSinkProvider.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.SoapClientFormatterSinkProvider.CreateSink(System.Runtime.Remoting.Channels.IChannelSender,System.String,System.Object)
 ms.technology: 
   - "dotnet-standard"

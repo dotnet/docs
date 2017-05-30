@@ -30,13 +30,13 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Introduction to the C# Language and the .NET Framework
-C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)]. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. Visual C# provides an advanced code editor, convenient user interface designers, integrated debugger, and many other tools to make it easier to develop applications based on the C# language and the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)].  
+C# is an elegant and type-safe object-oriented language that enables developers to build a variety of secure and robust applications that run on the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. You can use C# to create Windows client applications, XML Web services, distributed components, client-server applications, database applications, and much, much more. Visual C# provides an advanced code editor, convenient user interface designers, integrated debugger, and many other tools to make it easier to develop applications based on the C# language and the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
   
 > [!NOTE]
-> The [!INCLUDE[csprcs](../../csharp/includes/csprcs_md.md)] documentation assumes that you have an understanding of basic programming concepts. If you are a complete beginner, you might want to explore [!INCLUDE[csprcsxpr](../../csharp/getting-started/includes/csprcsxpr_md.md)], which is available on the Web. You can also take advantage of books and Web resources about C# to learn practical programming skills.  
+> The [!INCLUDE[csprcs](~/includes/csprcs-md.md)] documentation assumes that you have an understanding of basic programming concepts. If you are a complete beginner, you might want to explore [!INCLUDE[csprcsxpr](~/includes/csprcsxpr-md.md)], which is available on the Web. You can also take advantage of books and Web resources about C# to learn practical programming skills.  
   
 ## C# Language  
- C# syntax is highly expressive, yet it is also simple and easy to learn. The curly-brace syntax of C# will be instantly recognizable to anyone familiar with C, C++ or Java. Developers who know any of these languages are typically able to begin to work productively in C# within a very short time. C# syntax simplifies many of the complexities of C++ and provides powerful features such as nullable value types, enumerations, delegates, lambda expressions and direct memory access, which are not found in Java. C# supports generic methods and types, which provide increased type safety and performance, and iterators, which enable implementers of collection classes to define custom iteration behaviors that are simple to use by client code. [!INCLUDE[vbteclinqext](../../csharp/getting-started/includes/vbteclinqext_md.md)] expressions make the strongly-typed query a first-class language construct.  
+ C# syntax is highly expressive, yet it is also simple and easy to learn. The curly-brace syntax of C# will be instantly recognizable to anyone familiar with C, C++ or Java. Developers who know any of these languages are typically able to begin to work productively in C# within a very short time. C# syntax simplifies many of the complexities of C++ and provides powerful features such as nullable value types, enumerations, delegates, lambda expressions and direct memory access, which are not found in Java. C# supports generic methods and types, which provide increased type safety and performance, and iterators, which enable implementers of collection classes to define custom iteration behaviors that are simple to use by client code. [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] expressions make the strongly-typed query a first-class language construct.  
   
  As an object-oriented language, C# supports the concepts of encapsulation, inheritance, and polymorphism. All variables and methods, including the `Main` method, the application's entry point, are encapsulated within class definitions. A class may inherit directly from one parent class, but it may implement any number of interfaces. Methods that override virtual methods in a parent class require the `override` keyword as a way to avoid accidental redefinition. In C#, a struct is like a lightweight class; it is a stack-allocated type that can implement interfaces but does not support inheritance.  
   
@@ -50,7 +50,7 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 -   Inline XML documentation comments.  
   
--   [!INCLUDE[vbteclinqext](../../csharp/getting-started/includes/vbteclinqext_md.md)] which provides built-in query capabilities across a variety of data sources.  
+-   [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] which provides built-in query capabilities across a variety of data sources.  
   
  If you have to interact with other Windows software such as COM objects or native Win32 DLLs, you can do this in C# through a process called "Interop." Interop enables C# programs to do almost anything that a native C++ application can do. C# even supports pointers and the concept of "unsafe" code for those cases in which direct memory access is absolutely critical.  
   
@@ -62,12 +62,12 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
 -   For detailed information about specific aspects of the C# language, see the [C# Reference](../../csharp/language-reference/index.md).  
   
--   For more information about [!INCLUDE[vbteclinq](../../csharp/includes/vbteclinq_md.md)], see [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
+-   For more information about [!INCLUDE[vbteclinq](~/includes/vbteclinq-md.md)], see [LINQ (Language-Integrated Query)](http://msdn.microsoft.com/library/a73c4aec-5d15-4e98-b962-1274021ea93d).  
   
 -   To find the latest articles and resources from the Visual C# team, see the [Visual C# Developer Center](http://go.microsoft.com/fwlink/?LinkId=47811).  
   
 ## .NET Framework Platform Architecture  
- C# programs run on the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)], an integral component of Windows that includes a virtual execution system called the common language runtime (CLR) and a unified set of class libraries. The CLR is the commercial implementation by Microsoft of the common language infrastructure (CLI), an international standard that is the basis for creating execution and development environments in which languages and libraries work together seamlessly.  
+ C# programs run on the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], an integral component of Windows that includes a virtual execution system called the common language runtime (CLR) and a unified set of class libraries. The CLR is the commercial implementation by Microsoft of the common language infrastructure (CLI), an international standard that is the basis for creating execution and development environments in which languages and libraries work together seamlessly.  
   
  Source code written in C# is compiled into an intermediate language (IL) that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings, are stored on disk in an executable file called an assembly, typically with an extension of .exe or .dll. An assembly contains a manifest that provides information about the assembly's types, version, culture, and security requirements.  
   
@@ -75,9 +75,9 @@ C# is an elegant and type-safe object-oriented language that enables developers 
   
  ![From C&#35; source code to machine execution](../../csharp/getting-started/media/netarchitecture.png "NETarchitecture")  
   
- Language interoperability is a key feature of the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)]. Because the IL code produced by the C# compiler conforms to the Common Type Specification (CTS), IL code generated from C# can interact with code that was generated from the .NET versions of Visual Basic, Visual C++, or any of more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages, and the types can reference each other just as if they were written in the same language.  
+ Language interoperability is a key feature of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]. Because the IL code produced by the C# compiler conforms to the Common Type Specification (CTS), IL code generated from C# can interact with code that was generated from the .NET versions of Visual Basic, Visual C++, or any of more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages, and the types can reference each other just as if they were written in the same language.  
   
- In addition to the run time services, the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)] also includes an extensive library of over 4000 classes organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to Windows Forms controls. The typical C# application uses the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)] class library extensively to handle common "plumbing" chores.  
+ In addition to the run time services, the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] also includes an extensive library of over 4000 classes organized into namespaces that provide a wide variety of useful functionality for everything from file input and output to string manipulation to XML parsing, to Windows Forms controls. The typical C# application uses the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library extensively to handle common "plumbing" chores.  
   
  For more information about the .NET Framework, see [Overview of the Microsoft .NET Framework](http://msdn.microsoft.com/en-us/d05daf50-00fe-45c7-8383-06fe41697355).  
   

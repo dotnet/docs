@@ -305,15 +305,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.Membership.GetUser
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.Membership.MinRequiredNonAlphanumericCharacters
 ms.technology: 
   - "dotnet-webforms"
@@ -342,15 +333,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.Security.Membership.CreateUser
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.Security.Membership.GetAllUsers
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

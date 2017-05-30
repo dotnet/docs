@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RSAPKCS1KeyExchangeFormatter.Parameters
 ms.technology: 
   - "dotnet-standard"

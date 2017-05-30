@@ -53,7 +53,7 @@ The .NET Framework 4.6 adds TLS 1.1 and TLS 1.2 to the WCF SSL protocol default 
     </configuration>  
     ```  
   
--   If the binding is dynamically configured in source code, update the <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols%2A?displayProperty=fullName> property to use TLS 1.1 (<xref:System.Security.Authentication.SslProtocols?displayProperty=fullName>) or an  earlier version of the protocol in the source code.  
+-   If the binding is dynamically configured in source code, update the <xref:System.ServiceModel.TcpTransportSecurity.SslProtocols%2A?displayProperty=fullName> property to use TLS 1.1 (<xref:System.Security.Authentication.SslProtocols.Tls11?displayProperty=fullName>) or an  earlier version of the protocol in the source code.  
   
     > [!CAUTION]
     >  This workaround is not recommended, since a certificate with the MD5 hash algorithm is considered insecure.  

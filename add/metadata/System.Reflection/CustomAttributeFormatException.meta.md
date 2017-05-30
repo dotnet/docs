@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.CustomAttributeFormatException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.CustomAttributeFormatException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

@@ -338,7 +338,7 @@ Uri relativeUri = new Uri("/File.xaml",
                         UriKind.Relative);  
 ```  
   
- You should specify only                          <xref:System.UriKind> or                          <xref:System.UriKind> when you are certain that the provided pack                          [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] is one or the other. If you don't know the type of pack                          [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] that is used, such as when a user enters a pack                          [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] at run time, use                          <xref:System.UriKind> instead.  
+ You should specify only                          <xref:System.UriKind.Absolute> or                          <xref:System.UriKind.Relative> when you are certain that the provided pack                          [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] is one or the other. If you don't know the type of pack                          [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] that is used, such as when a user enters a pack                          [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)] at run time, use                          <xref:System.UriKind.RelativeOrAbsolute> instead.  
   
 ```csharp  
 // Relative or Absolute URI provided by user via a text box  

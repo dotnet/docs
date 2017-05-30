@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeTypeMemberCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeTypeMemberCollection.Remove(System.CodeDom.CodeTypeMember)
 ms.technology: 
   - "dotnet-standard"

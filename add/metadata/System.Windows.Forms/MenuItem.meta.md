@@ -226,15 +226,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.MenuItem.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.MenuItem.PerformSelect
 ms.technology: 
   - "dotnet-winforms"
@@ -262,15 +253,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.MenuItem.MergeMenu
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.MenuItem.ShowShortcut
 ms.technology: 
   - "dotnet-winforms"
@@ -286,14 +268,6 @@ ms.technology:
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.MenuItem.CloneMenu
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---

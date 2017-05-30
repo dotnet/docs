@@ -52,13 +52,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Design.ActivityToolboxItem.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.Design.ActivityToolboxItem.CreateComponentsWithUI(System.ComponentModel.Design.IDesignerHost)
 author: "Erikre"
 ms.author: "erikre"

@@ -413,15 +413,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpRequestWrapper.GetBufferlessInputStream
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpRequestWrapper.Abort
 ms.technology: 
   - "dotnet-webforms"
@@ -531,15 +522,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.HttpRequestWrapper.ContentEncoding
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.HttpRequestWrapper.InsertEntityBody
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

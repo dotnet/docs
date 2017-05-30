@@ -48,14 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GeometryCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.GeometryCollection.#ctor(System.Collections.Generic.IEnumerable{System.Windows.Media.Geometry})
 ms.technology: 
   - "dotnet-wpf"

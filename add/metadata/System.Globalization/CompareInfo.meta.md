@@ -170,15 +170,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.CompareInfo.GetHashCode
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Globalization.CompareInfo.IsSortable(System.Char)
 ms.technology: 
   - "dotnet-standard"

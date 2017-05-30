@@ -83,13 +83,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Ipc.IpcChannel.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Ipc.IpcChannel.ChannelData
 ms.technology: 
   - "dotnet-standard"

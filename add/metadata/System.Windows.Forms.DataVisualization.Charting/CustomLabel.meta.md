@@ -103,14 +103,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.CustomLabel.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.CustomLabel.Axis
 ms.technology: 
   - "dotnet-winforms"

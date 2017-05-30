@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.InputTypes
 ms.technology: 
   - "dotnet-standard"
@@ -81,15 +72,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetOutput(System.Type)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigXsltTransform.GetOutput
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

@@ -130,20 +130,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: System.Printing.PrintSystemObject.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Printing.PrintSystemObject.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
----

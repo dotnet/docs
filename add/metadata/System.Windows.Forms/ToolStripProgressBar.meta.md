@@ -137,14 +137,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripProgressBar.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.ToolStripProgressBar.ProgressBar
 ms.technology: 
   - "dotnet-winforms"

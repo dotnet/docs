@@ -77,15 +77,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Linq.Expressions.LambdaExpression.Compile
-ms.technology: 
-  - "dotnet-standard"
-author: "BillWagner"
-ms.author: "wiwagn"
-manager: "wpickett"
----
-
----
 uid: System.Linq.Expressions.LambdaExpression.Compile(System.Runtime.CompilerServices.DebugInfoGenerator)
 ms.technology: 
   - "dotnet-standard"

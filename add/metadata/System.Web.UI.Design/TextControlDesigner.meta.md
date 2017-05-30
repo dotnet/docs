@@ -7,12 +7,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.TextControlDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.TextControlDesigner.#ctor
 ms.technology: 
   - "dotnet-webforms"

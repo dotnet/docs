@@ -80,7 +80,7 @@ Unhandled exceptions that are thrown by user code that is running inside a task 
   
 <a name="ExceptionProp"></a>   
 ## Observing Exceptions by Using the Task.Exception Property  
- If a task completes in the <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> state, its <xref:System.Threading.Tasks.Task.Exception%2A> property can be examined to discover which specific exception caused the fault. A good way to observe the <xref:System.Threading.Tasks.Task.Exception%2A> property is to use a continuation that runs only if the antecedent task faults, as shown in the following example.  
+ If a task completes in the <xref:System.Threading.Tasks.TaskStatus.Faulted?displayProperty=fullName> state, its <xref:System.Threading.Tasks.Task.Exception%2A> property can be examined to discover which specific exception caused the fault. A good way to observe the <xref:System.Threading.Tasks.Task.Exception%2A> property is to use a continuation that runs only if the antecedent task faults, as shown in the following example.  
   
  [!code-csharp[TPL_Exceptions#27](../../../samples/snippets/csharp/VS_Snippets_Misc/tpl_exceptions/cs/exceptionprop21.cs#27)]
  [!code-vb[TPL_Exceptions#27](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpl_exceptions/vb/exceptionprop21.vb#27)]  

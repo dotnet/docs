@@ -189,14 +189,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.Series.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.Series.YValueType
 ms.technology: 
   - "dotnet-winforms"

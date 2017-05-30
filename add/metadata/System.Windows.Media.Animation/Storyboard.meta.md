@@ -142,45 +142,11 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Storyboard.GetIsPaused
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.Stop
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.GetCurrentIteration
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Storyboard.SetSpeedRatio(System.Double)
 ms.technology: 
   - "dotnet-wpf"
 ms.author: "kempb"
 manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.GetCurrentTime
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
 ---
 
 ---
@@ -280,15 +246,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Storyboard.Resume
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Storyboard.GetCurrentIteration(System.Windows.FrameworkContentElement)
 ms.technology: 
   - "dotnet-wpf"
@@ -377,33 +334,7 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Storyboard.GetCurrentState
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.Storyboard.SeekAlignedToLastTick(System.Windows.FrameworkElement,System.TimeSpan,System.Windows.Media.Animation.TimeSeekOrigin)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.SkipToFill
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.Begin
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -464,15 +395,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Storyboard.Pause
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Storyboard.SkipToFill(System.Windows.FrameworkElement)
 ms.technology: 
   - "dotnet-wpf"
@@ -492,15 +414,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.Animation.Storyboard.Stop
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.GetCurrentProgress
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"
@@ -713,28 +626,11 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Storyboard.GetCurrentGlobalSpeed
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.Storyboard.Begin(System.Windows.FrameworkContentElement,System.Boolean)
 ms.technology: 
   - "dotnet-wpf"
 ms.author: "kempb"
 manager: "ghogen"
----
-
----
-uid: System.Windows.Media.Animation.Storyboard.Remove
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
 ---
 
 ---

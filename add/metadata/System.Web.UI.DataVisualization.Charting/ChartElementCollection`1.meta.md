@@ -55,14 +55,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.Dispose
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.ChartElementCollection`1.SuspendUpdates
 ms.technology: 
   - "dotnet-webforms"

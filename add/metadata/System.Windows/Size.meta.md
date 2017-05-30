@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Size.ToString
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Size.ToString(System.IFormatProvider)
 ms.technology: 
   - "dotnet-wpf"

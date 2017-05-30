@@ -83,13 +83,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.ActivityBind.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.ActivityBind.Path
 author: "Erikre"
 ms.author: "erikre"

@@ -233,15 +233,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Certificate2.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor(System.String,System.Security.SecureString,System.Security.Cryptography.X509Certificates.X509KeyStorageFlags)
 ms.technology: 
   - "dotnet-standard"
@@ -396,15 +387,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.X509Certificates.X509Certificate2.NotAfter
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.X509Certificates.X509Certificate2.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

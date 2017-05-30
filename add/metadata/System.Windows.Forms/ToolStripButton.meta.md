@@ -130,15 +130,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripButton.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripButton.CheckState
 ms.technology: 
   - "dotnet-winforms"

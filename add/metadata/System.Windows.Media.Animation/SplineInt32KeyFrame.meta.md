@@ -8,14 +8,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineInt32KeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.SplineInt32KeyFrame.InterpolateValueCore(System.Int32,System.Double)
 ms.technology: 
   - "dotnet-wpf"

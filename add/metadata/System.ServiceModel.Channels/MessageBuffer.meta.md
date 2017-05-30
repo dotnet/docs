@@ -105,12 +105,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.ServiceModel.Channels.MessageBuffer.CreateNavigator
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

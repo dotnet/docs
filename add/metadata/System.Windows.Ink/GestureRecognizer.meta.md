@@ -35,14 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Ink.GestureRecognizer.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Ink.GestureRecognizer.GetEnabledGestures
 ms.technology: 
   - "dotnet-wpf"

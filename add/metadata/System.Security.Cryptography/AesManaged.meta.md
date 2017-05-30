@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.AesManaged.CreateEncryptor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.AesManaged.GenerateKey
 ms.technology: 
   - "dotnet-standard"
@@ -108,15 +99,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.AesManaged.CreateEncryptor(System.Byte[],System.Byte[])
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.AesManaged.CreateDecryptor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

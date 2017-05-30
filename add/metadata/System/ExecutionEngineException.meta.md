@@ -33,12 +33,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.ExecutionEngineException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

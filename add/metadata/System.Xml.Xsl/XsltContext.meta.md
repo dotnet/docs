@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Xsl.XsltContext.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Xsl.XsltContext.#ctor(System.Xml.NameTable)
 ms.technology: 
   - "dotnet-standard"

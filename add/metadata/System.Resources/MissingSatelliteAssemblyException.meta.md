@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Resources.MissingSatelliteAssemblyException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Resources.MissingSatelliteAssemblyException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

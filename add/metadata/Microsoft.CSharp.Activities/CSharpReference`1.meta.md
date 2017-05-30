@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.CSharp.Activities.CSharpReference`1.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.CSharp.Activities.CSharpReference`1.Execute(System.Activities.CodeActivityContext)
 author: "stevehoag"
 ms.author: "shoag"

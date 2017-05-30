@@ -207,14 +207,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.Grammar.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.Grammar.#ctor(System.String,System.String,System.Object[])
 ms.technology: 
   - "dotnet-standard"

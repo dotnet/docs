@@ -52,15 +52,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingInt32KeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingInt32KeyFrame.InterpolateValueCore(System.Int32,System.Double)
 ms.technology: 
   - "dotnet-wpf"

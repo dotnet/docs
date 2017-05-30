@@ -38,7 +38,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Conversion Summary (Visual Basic)
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language keywords and run-time library members are organized by purpose and use.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
   
 |Action|Language element|  
 |------------|----------------------|  

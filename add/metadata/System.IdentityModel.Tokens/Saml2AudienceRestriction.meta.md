@@ -37,11 +37,3 @@ ms.technology:
 ms.author: "v-jibran"
 manager: "markgal"
 ---
-
----
-uid: System.IdentityModel.Tokens.Saml2AudienceRestriction.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----

@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.AsymmetricSecurityBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.AsymmetricSecurityBindingElement.RecipientTokenParameters
 ms.technology: 
   - "dotnet-standard"

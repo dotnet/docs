@@ -44,15 +44,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.IO.PipeException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.IO.PipeException.#ctor(System.String,System.Int32)
 ms.technology: 
   - "dotnet-standard"

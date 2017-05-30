@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.EllipseGeometry.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.EllipseGeometry.Bounds
 ms.technology: 
   - "dotnet-wpf"

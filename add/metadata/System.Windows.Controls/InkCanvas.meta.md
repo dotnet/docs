@@ -797,15 +797,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Controls.InkCanvas.Paste
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.InkCanvas.OnCreateAutomationPeer
 ms.technology: 
   - "dotnet-wpf"

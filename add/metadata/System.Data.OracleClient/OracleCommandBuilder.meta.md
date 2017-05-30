@@ -53,15 +53,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleCommandBuilder.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand
 ms.technology: 
   - "dotnet-ado"
@@ -72,15 +63,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OracleClient.OracleCommandBuilder.GetDeleteCommand
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -125,15 +107,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.OracleClient.OracleCommandBuilder.GetInsertCommand
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.OracleClient.OracleCommandBuilder.SchemaSeparator
 ms.technology: 
   - "dotnet-ado"
@@ -162,15 +135,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand(System.Boolean)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.OracleClient.OracleCommandBuilder.GetUpdateCommand
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

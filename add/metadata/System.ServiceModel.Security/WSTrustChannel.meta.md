@@ -271,14 +271,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Security.WSTrustChannel.Open
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Security.WSTrustChannel.BeginCancel(System.IdentityModel.Protocols.WSTrust.RequestSecurityToken,System.AsyncCallback,System.Object)
 ms.technology: 
   - "dotnet-standard"
@@ -376,14 +368,6 @@ manager: "ghogen"
 
 ---
 uid: System.ServiceModel.Security.WSTrustChannel.Renew(System.ServiceModel.Channels.Message)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "ghogen"
----
-
----
-uid: System.ServiceModel.Security.WSTrustChannel.Close
 ms.technology: 
   - "dotnet-standard"
 ms.author: "v-jibran"

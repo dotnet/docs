@@ -88,7 +88,7 @@ translation.priority.mt:
  You use the [struct](../../../csharp/language-reference/keywords/struct.md), [class](../../../csharp/language-reference/keywords/class.md), [interface](../../../csharp/language-reference/keywords/interface.md), and [enum](../../../csharp/language-reference/keywords/enum.md) constructs to create your own custom types. The .NET Framework class library itself is a collection of custom types provided by Microsoft that you can use in your own applications. By default, the most frequently used types in the class library are available in any C# program. Others become available only when you explicitly add a project reference to the assembly in which they are defined. After the compiler has a reference to the assembly, you can declare variables (and constants) of the types declared in that assembly in source code. For more information, see [.NET Framework Class Library](http://go.microsoft.com/fwlink/?LinkID=217856).  
   
 ## The Common Type System  
- It is important to understand two fundamental points about the type system in the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)]:  
+ It is important to understand two fundamental points about the type system in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)]:  
   
 -   It supports the principle of inheritance. Types can derive from other types, called *base types*. The derived type inherits (with some restrictions) the methods, properties, and other members of the base type. The base type can in turn derive from some other type, in which case the derived type inherits the members of both base types in its inheritance hierarchy. All types, including built-in numeric types such as <xref:System.Int32?displayProperty=fullName> (C# keyword: [int](../../../csharp/language-reference/keywords/int.md)), derive ultimately from a single base type, which is <xref:System.Object?displayProperty=fullName> (C# keyword: [object](../../../csharp/language-reference/keywords/object.md)). This unified type hierarchy is called the [Common Type System](../../../standard/base-types/common-type-system.md) (CTS). For more information about inheritance in C#, see [Inheritance](../../../csharp/programming-guide/classes-and-structs/inheritance.md).  
   
@@ -128,7 +128,7 @@ char c = 'Z';
   
  [!code-cs[csProgGuideObjects#1](../../../csharp/programming-guide/classes-and-structs/codesnippet/CSharp/index_4.cs)]  
   
- For more information about structs, see [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md). For more information about value types in the [!INCLUDE[dnprdnshort](../../../csharp/getting-started/includes/dnprdnshort_md.md)], see [Common Type System](../../../standard/base-types/common-type-system.md).  
+ For more information about structs, see [Structs](../../../csharp/programming-guide/classes-and-structs/structs.md). For more information about value types in the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)], see [Common Type System](../../../standard/base-types/common-type-system.md).  
   
  The other category of value types is [enum](../../../csharp/language-reference/keywords/enum.md). An enum defines a set of named integral constants. For example, the <xref:System.IO.FileMode?displayProperty=fullName> enumeration in the .NET Framework class library contains a set of named constant integers that specify how a file should be opened. It is defined as shown in the following example:  
  
@@ -204,7 +204,7 @@ stringList.Add(4);
 -   [Generics](../../../csharp/programming-guide/generics/index.md)  
 
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

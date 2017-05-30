@@ -104,13 +104,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectorySchemaProperty.Name
 author: "BrucePerlerMS"
 ms.author: "bruceper"

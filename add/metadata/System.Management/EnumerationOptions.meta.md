@@ -76,13 +76,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.EnumerationOptions.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.EnumerationOptions.ReturnImmediately
 ms.technology: 
   - "dotnet-standard"

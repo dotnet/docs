@@ -28,10 +28,6 @@ manager: "erikre"
 
 ---
 uid: System.Workflow.ComponentModel.SuspendActivity.#ctor
----
-
----
-uid: System.Workflow.ComponentModel.SuspendActivity.#ctor
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

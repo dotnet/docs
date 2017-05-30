@@ -66,10 +66,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "ghogen"
 ---
-
----
-uid: System.Transactions.CommittableTransaction.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

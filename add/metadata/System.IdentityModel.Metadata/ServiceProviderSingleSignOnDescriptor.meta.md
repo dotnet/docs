@@ -39,14 +39,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Metadata.ServiceProviderSingleSignOnDescriptor.AssertionConsumerServices
 ms.technology: 
   - "dotnet-standard"

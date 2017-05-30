@@ -255,14 +255,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Color.ToString
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Color.Multiply(System.Windows.Media.Color,System.Single)
 ms.technology: 
   - "dotnet-wpf"

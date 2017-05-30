@@ -244,13 +244,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.XpsDocumentWriter.CreateVisualsCollator
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.XpsDocumentWriter.WritingCancelled
 ms.technology: 
   - "dotnet-wpf"

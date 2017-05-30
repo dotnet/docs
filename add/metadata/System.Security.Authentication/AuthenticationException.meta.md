@@ -37,11 +37,3 @@ ms.technology:
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Security.Authentication.AuthenticationException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "bobdel"
-manager: "markl"
----

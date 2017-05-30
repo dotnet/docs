@@ -31,14 +31,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingInt16KeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.EasingInt16KeyFrame.#ctor(System.Int16)
 ms.technology: 
   - "dotnet-wpf"

@@ -25,10 +25,3 @@ author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
 ---
-
----
-uid: Microsoft.VisualBasic.Logging.AspLog.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

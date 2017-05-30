@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.PolyLineSegment.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.PolyLineSegment.Points
 ms.technology: 
   - "dotnet-wpf"

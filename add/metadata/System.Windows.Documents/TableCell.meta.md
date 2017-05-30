@@ -174,15 +174,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.TableCell.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Documents.TableCell.ColumnSpan
 ms.technology: 
   - "dotnet-wpf"

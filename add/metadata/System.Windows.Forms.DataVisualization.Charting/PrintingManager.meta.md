@@ -69,11 +69,3 @@ ms.technology:
 ms.author: "mblythe"
 manager: "mblythe"
 ---
-
----
-uid: System.Windows.Forms.DataVisualization.Charting.PrintingManager.Dispose
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----

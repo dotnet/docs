@@ -41,13 +41,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.ObjRef.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.ObjRef.IsFromThisAppDomain
 ms.technology: 
   - "dotnet-standard"

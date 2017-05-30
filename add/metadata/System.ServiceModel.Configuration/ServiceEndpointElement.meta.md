@@ -80,15 +80,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.ServiceEndpointElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.ServiceEndpointElement.BindingName
 ms.technology: 
   - "dotnet-standard"

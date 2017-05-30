@@ -454,13 +454,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.ListBoxArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.ListBoxArray.ControlRemoved
 author: "stevehoag"
 ms.author: "shoag"

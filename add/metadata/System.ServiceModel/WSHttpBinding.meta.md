@@ -96,15 +96,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.WSHttpBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.WSHttpBinding.#ctor(System.ServiceModel.SecurityMode,System.Boolean)
 ms.technology: 
   - "dotnet-standard"

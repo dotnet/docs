@@ -101,15 +101,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Hosting.CompositionContainer.#ctor(System.ComponentModel.Composition.Primitives.ComposablePartCatalog,System.ComponentModel.Composition.Hosting.ExportProvider[])
 ms.technology: 
   - "dotnet-standard"
@@ -165,15 +156,6 @@ manager: "wpickett"
 
 ---
 uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Dispose(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Hosting.CompositionContainer.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

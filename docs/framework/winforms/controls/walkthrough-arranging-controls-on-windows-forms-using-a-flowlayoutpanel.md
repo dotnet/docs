@@ -91,16 +91,16 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 #### To change the flow direction in a FlowLayoutPanel  
   
-1.  Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property to <xref:System.Windows.Forms.FlowDirection>. Note that the child controls are rearranged into one or more columns, depending on the height of the control.  
+1.  Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property to <xref:System.Windows.Forms.FlowDirection.TopDown>. Note that the child controls are rearranged into one or more columns, depending on the height of the control.  
   
-2.  Resize the <xref:System.Windows.Forms.FlowLayoutPanel> so its height is shorter than the column of <xref:System.Windows.Forms.Button> controls. Note that the <xref:System.Windows.Forms.FlowLayoutPanel> rearranges the child controls to flow into the next column. Continue decreasing the height and note that the child controls flow into consecutive columns. Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property to <xref:System.Windows.Forms.FlowDirection>. Note that the positions of the child controls are reversed. Observe the layout when you change the value of the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property to <xref:System.Windows.Forms.FlowDirection>.  
+2.  Resize the <xref:System.Windows.Forms.FlowLayoutPanel> so its height is shorter than the column of <xref:System.Windows.Forms.Button> controls. Note that the <xref:System.Windows.Forms.FlowLayoutPanel> rearranges the child controls to flow into the next column. Continue decreasing the height and note that the child controls flow into consecutive columns. Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property to <xref:System.Windows.Forms.FlowDirection.RightToLeft>. Note that the positions of the child controls are reversed. Observe the layout when you change the value of the <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property to <xref:System.Windows.Forms.FlowDirection.BottomUp>.  
   
 ## Inserting Flow Breaks  
  The <xref:System.Windows.Forms.FlowLayoutPanel> control provides a FlowBreak property to its child controls. Setting the value of the FlowBreak property to `true` causes the <xref:System.Windows.Forms.FlowLayoutPanel> control to stop laying out controls in the current flow direction and wrap to the next row or column.  
   
 #### To insert flow breaks  
   
-1.  Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property to <xref:System.Windows.Forms.FlowDirection>.  
+1.  Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.FlowLayoutPanel.FlowDirection%2A> property to <xref:System.Windows.Forms.FlowDirection.TopDown>.  
   
 2.  Select one of the <xref:System.Windows.Forms.Button> controls in the middle of the leftmost column.  
   
@@ -115,11 +115,11 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 2.  Select the top <xref:System.Windows.Forms.Button> control. Increase its width so that it is about twice as wide as the other <xref:System.Windows.Forms.Button> controls.  
   
-3.  Select the second <xref:System.Windows.Forms.Button> control. Change the value of its <xref:System.Windows.Forms.Control.Anchor%2A> property to <xref:System.Windows.Forms.AnchorStyles>. Note that it is moved so that its right border is aligned with the first <xref:System.Windows.Forms.Button> control's right border.  
+3.  Select the second <xref:System.Windows.Forms.Button> control. Change the value of its <xref:System.Windows.Forms.Control.Anchor%2A> property to <xref:System.Windows.Forms.AnchorStyles.Right>. Note that it is moved so that its right border is aligned with the first <xref:System.Windows.Forms.Button> control's right border.  
   
-4.  Change the value of its <xref:System.Windows.Forms.Control.Anchor%2A> property to <xref:System.Windows.Forms.AnchorStyles> and <xref:System.Windows.Forms.AnchorStyles>. Note that it is sized to the same width as the first <xref:System.Windows.Forms.Button> control.  
+4.  Change the value of its <xref:System.Windows.Forms.Control.Anchor%2A> property to <xref:System.Windows.Forms.AnchorStyles.Right> and <xref:System.Windows.Forms.AnchorStyles.Left>. Note that it is sized to the same width as the first <xref:System.Windows.Forms.Button> control.  
   
-5.  Select the third <xref:System.Windows.Forms.Button> control. Change the value of its <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>. Note that it is sized to the same width as the first <xref:System.Windows.Forms.Button> control.  
+5.  Select the third <xref:System.Windows.Forms.Button> control. Change the value of its <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. Note that it is sized to the same width as the first <xref:System.Windows.Forms.Button> control.  
   
 ## Arranging Controls Using Padding and Margins  
  You can also arrange controls in your <xref:System.Windows.Forms.FlowLayoutPanel> control by changing the <xref:System.Windows.Forms.Control.Padding%2A> and <xref:System.Windows.Forms.Control.Margin%2A> properties.  
@@ -130,7 +130,7 @@ Some applications require a form with a layout that arranges itself appropriatel
   
 #### To arrange controls using the Padding and Margin properties  
   
-1.  Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>. If your form is large enough, the <xref:System.Windows.Forms.Button> controls will be moved into the first column of the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
+1.  Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>. If your form is large enough, the <xref:System.Windows.Forms.Button> controls will be moved into the first column of the <xref:System.Windows.Forms.FlowLayoutPanel> control.  
   
 2.  Change the value of the <xref:System.Windows.Forms.FlowLayoutPanel> control's <xref:System.Windows.Forms.Control.Padding%2A> property by expanding the <xref:System.Windows.Forms.Control.Padding%2A> entry in the **Properties** window and setting the <xref:System.Windows.Forms.Padding.All%2A> property to **20**. For more information, see [Walkthrough: Laying Out Windows Forms Controls with Padding, Margins, and the AutoSize Property](../../../../docs/framework/winforms/controls/windows-forms-controls-padding-autosize.md). Note that the child controls are moved toward the center of the <xref:System.Windows.Forms.FlowLayoutPanel> control. The increased value for the <xref:System.Windows.Forms.Control.Padding%2A> property pushes the child controls away from the <xref:System.Windows.Forms.FlowLayoutPanel> control's borders.  
   

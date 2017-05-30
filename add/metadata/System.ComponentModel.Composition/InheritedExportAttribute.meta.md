@@ -42,12 +42,3 @@ author: "rpetrusha"
 ms.author: "ronpet"
 manager: "wpickett"
 ---
-
----
-uid: System.ComponentModel.Composition.InheritedExportAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----

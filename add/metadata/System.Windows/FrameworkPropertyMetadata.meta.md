@@ -158,14 +158,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.FrameworkPropertyMetadata.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.FrameworkPropertyMetadata.#ctor(System.Object,System.Windows.FrameworkPropertyMetadataOptions,System.Windows.PropertyChangedCallback,System.Windows.CoerceValueCallback,System.Boolean)
 ms.technology: 
   - "dotnet-wpf"

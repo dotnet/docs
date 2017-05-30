@@ -71,7 +71,7 @@ To enable improved interaction with browsers, you can use [!INCLUDE[TLA#tla_actx
   
 2.  From the **Toolbox**, add the Windows Media Player control to the design surface.  
   
-3.  In the Properties window, set the value of the Windows Media Player control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>.  
+3.  In the Properties window, set the value of the Windows Media Player control's <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
 4.  Build the WmpAxLib control library project.  
   

@@ -42,15 +42,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.TranslateTransform.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.TranslateTransform.Clone
 ms.technology: 
   - "dotnet-wpf"

@@ -75,9 +75,3 @@ uid: Microsoft.Build.Utilities.Task.HelpKeywordPrefix
 ms.author: "susanno"
 manager: "douge"
 ---
-
----
-uid: Microsoft.Build.Utilities.Task.#ctor
-ms.author: "susanno"
-manager: "douge"
----

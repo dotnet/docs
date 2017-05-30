@@ -61,11 +61,3 @@ ms.technology:
 ms.author: "mblythe"
 manager: "mblythe"
 ---
-
----
-uid: System.Web.UI.DataVisualization.Charting.ChartElement.Dispose
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----

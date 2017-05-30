@@ -41,10 +41,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService.#ctor
----
-
----
 uid: System.Workflow.Runtime.Hosting.DefaultWorkflowCommitWorkBatchService.CommitWorkBatch(System.Workflow.Runtime.Hosting.WorkflowCommitWorkBatchService.CommitWorkBatchCallback)
 author: "Erikre"
 ms.author: "erikre"

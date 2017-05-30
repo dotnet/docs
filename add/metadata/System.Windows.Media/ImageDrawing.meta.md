@@ -52,15 +52,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.ImageDrawing.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.ImageDrawing.ImageSource
 ms.technology: 
   - "dotnet-wpf"

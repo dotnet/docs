@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Lazy`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Lazy`1.IsValueCreated
 ms.technology: 
   - "dotnet-standard"

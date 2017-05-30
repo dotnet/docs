@@ -102,4 +102,4 @@ Participants and reviewers:
 > **Charles Lowell**, Software Engineer, VS CAT team, Microsoft
 
 >[!div class="step-by-step"]
-[Next] (../introduction/index.md)
+[Next] (introduction/index.md)

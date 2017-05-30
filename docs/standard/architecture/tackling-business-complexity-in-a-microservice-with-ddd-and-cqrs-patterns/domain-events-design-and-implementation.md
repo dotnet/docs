@@ -53,20 +53,13 @@ The key point is the open number of actions to be executed when a domain event o
 On the other hand, if you use domain events, you can create a fine-grained and decoupled implementation by segregating responsibilities using this approach:
 
 1.  Send a command (for example, CreateOrder).
-
 2.  Receive the command in a command handler.
-
--   Execute a single aggregate’s transaction.
-
--   (Optional) Raise domain events for side effects (for example, OrderStartedDomainDvent).
-
+    -   Execute a single aggregate’s transaction.
+    -   (Optional) Raise domain events for side effects (for example, OrderStartedDomainDvent).
 1.  Handle domain events (within the current process) thast will execute an open number of side effects in multiple aggregates or application actions. For example:
-
--   Verify or create buyer and payment method.
-
--   Create and send a related integration event to the event bus to propagate states across microservices or trigger external actions like sending an email to the buyer.
-
--   Handle other side effects.
+    -   Verify or create buyer and payment method.
+    -   Create and send a related integration event to the event bus to propagate states across microservices or trigger external actions like sending an email to the buyer.
+    -   Handle other side effects.
 
 As shown in Figure 9-15, starting from the same domain event, you can handle multiple actions related to other aggregates in the domain or additional application actions you need to perform across microservices connecting with integration events and the event bus.
 

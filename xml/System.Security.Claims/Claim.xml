@@ -47,7 +47,7 @@
    
   
 ## Examples  
- The following example extracts the claims associated to the authenticated user performing an HTTP request and writes them in the HTTP response. The current user is read from the <xref:System.Web.HttpContext> as a <xref:System.Security.Claims.ClaimsPrincipal> and the claims are read from it. The claims are then written to HTTP the response.  
+ The following example extracts the claims associated to the authenticated user performing an HTTP request and writes them in the HTTP response. The current user is read from the <xref:System.Web.HttpContext> as a <xref:System.Security.Claims.ClaimsPrincipal> and the claims are read from it. The claims are then written to the <xref:System.Web.HttpResponse> object.  
   
 ```csharp  
 ClaimsPrincipal principal = HttpContext.Current.User as ClaimsPrincipal;  
@@ -497,8 +497,14 @@ if (null != principal)
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Contains any additional data provided by a derived type. Typically set when calling <see cref="M:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])" />.</summary>
-        <remarks></remarks>
+        <summary>Contains any additional data provided by a derived type.</summary>
+        <remarks><format type="text/markdown"><![CDATA[
+
+## Remarks  
+ The <xref:System.Security.Claims.Claim.CustomSerializationData%2A> property is typically set when calling <xref:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])>.
+  
+ ]]></format>
+        </remarks>
         <value>A <see cref="T:System.Byte" /> array representing the additional serialized data.</value>
       </Docs>
     </Member>

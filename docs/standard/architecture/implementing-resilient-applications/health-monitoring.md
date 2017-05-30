@@ -30,13 +30,10 @@ You can see how the HealthChecks library is used in the eShopOnContainers sample
 
 In the future, you will be able to install the HealthChecks library as a NuGet package. But as of this writing, you need to download and compile the code as part of your solution. Clone the code available at https://github.com/aspnet/HealthChecks and copy the following folders to your solution.
 
-src/common
-
-src/Microsoft.AspNetCore.HealthChecks
-
-src/Microsoft.Extensions.HealthChecks
-
-src/Microsoft.Extensions.HealthChecks.SqlServer
+> src/common
+> src/Microsoft.AspNetCore.HealthChecks
+> src/Microsoft.Extensions.HealthChecks
+> src/Microsoft.Extensions.HealthChecks.SqlServer
 
 You could also use additional checks like the ones for Azure (Microsoft.Extensions.HealthChecks.AzureStorage), but since this version of eShopOnContainers does not have any dependency on Azure, you do not need it. You do not need the ASP.NET health checks, because eShopOnContainers is based on ASP.NET Core.
 
@@ -52,124 +49,76 @@ Each service or web application should be configured by adding all its HTTP or d
 
 For instance, in the following code you can see how the catalog microservice adds a dependency on its SQL Server database.
 
-```
-  // Startup.cs from Catalog.api microservice
-  
-  //
-  
-  public class Startup
-  
-  {
-  
-  public void ConfigureServices(IServiceCollection services)
-  
-  {
-  
-  // Add framework services
-  
-  services.AddHealthChecks(checks =>
-  
-  {
-  
-  checks.AddSqlCheck("CatalogDb", Configuration["ConnectionString"]);
-  
-  });
-  
-  // Other services
-  
-  }
-  
-  }
+```csharp
+// Startup.cs from Catalog.api microservice
+//
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        // Add framework services
+        services.AddHealthChecks(checks =>
+        {
+            checks.AddSqlCheck("CatalogDb", Configuration["ConnectionString"]);
+        });
+        // Other services
+    }
+}
 ```
 
 However, the MVC web application of eShopOnContainers has multiple dependencies on the rest of the microservices. Therefore, it calls one AddUrlCheck method for each microservice, as shown in the following example:
 
-```
-  // Startup.cs from the MVC web app
-  
-  public class Startup
-  
-  {
-  
-  public void ConfigureServices(IServiceCollection services)
-  
-  {
-  
-  services.AddMvc();
-  
-  services.Configure<;AppSettings>(Configuration);
-  
-  services.AddHealthChecks(checks =>
-  
-  {
-  
-  checks.AddUrlCheck(Configuration["CatalogUrl"]);
-  
-  checks.AddUrlCheck(Configuration["OrderingUrl"]);
-  
-  checks.AddUrlCheck(Configuration["BasketUrl"]);
-  
-  checks.AddUrlCheck(Configuration["IdentityUrl"]);
-  
-  });
-  
-  }
-  
-  }
+```csharp
+// Startup.cs from the MVC web app
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddMvc();
+        services.Configure<AppSettings>(Configuration);
+        services.AddHealthChecks(checks =>
+        {
+            checks.AddUrlCheck(Configuration["CatalogUrl"]);
+            checks.AddUrlCheck(Configuration["OrderingUrl"]);
+            checks.AddUrlCheck(Configuration["BasketUrl"]);
+            checks.AddUrlCheck(Configuration["IdentityUrl"]);
+        });
+    }
+}
 ```
 
 Thus, a microservice will not provide a “healthy” status until all its checks are healthy as well.
 
 If the microservice does not have a dependency on a service or on SQL Server, you should just add a Healthy("Ok") check. The following code is from the eShopOnContainers basket.api microservice. (The basket microservice uses the Redis cache, but the library does not yet include a Redis health check provider.)
 
-```
-  services.AddHealthChecks(checks =>
-  
-  {
-  
-  checks.AddValueTaskCheck("HTTP Endpoint", () => new
-  
-  ValueTask<;IHealthCheckResult>(HealthCheckResult.Healthy("Ok")));
-  
-  });
+```csharp
+services.AddHealthChecks(checks =>
+{
+    checks.AddValueTaskCheck("HTTP Endpoint", () => new
+        ValueTask<IHealthCheckResult>(HealthCheckResult.Healthy("Ok")));
+});
 ```
 
 For a service or web application to expose the health check endpoint, it has to enable the UserHealthChecks(\[*url\_for\_health\_checks*\]) extension method. This method goes at the WebHostBuilder level in the main method of the Program class of your ASP.NET Core service or web application, right after UseKestrel as shown in the code below.
 
-```
-  namespace Microsoft.eShopOnContainers.WebMVC
-  
-  {
-  
-  public class Program
-  
-  {
-  
-  public static void Main(string[] args)
-  
-  {
-  
-  var host = new WebHostBuilder()
-  
-  .UseKestrel()
-  
-  .UseHealthChecks("/hc")
-  
-  .UseContentRoot(Directory.GetCurrentDirectory())
-  
-  .UseIISIntegration()
-  
-  .UseStartup<;Startup>()
-  
-  .Build();
-  
-  host.Run();
-  
-  }
-  
-  }
-  
-  }
+```csharp
+namespace Microsoft.eShopOnContainers.WebMVC
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var host = new WebHostBuilder()
+                .UseKestrel()
+                .UseHealthChecks("/hc")
+                .UseContentRoot(Directory.GetCurrentDirectory())
+                .UseIISIntegration()
+                .UseStartup<Startup>()
+                .Build();
+            host.Run();
+        }
+    }
+}
 ```
 
 The process works like this: each microservice exposes the endpoint /hc. That endpoint is created by the HealthChecks library ASP.NET Core middleware. When that endpoint is invoked, it runs all the health checks that are configured in the AddHealthChecks method in the Startup class.
@@ -182,8 +131,8 @@ Since you do not want to cause a Denial of Service (DoS) in your services, or yo
 
 By default, the cache duration is internally set to 5 minutes, but you can change that cache duration on each health check, as in the following code:
 
-```
-  checks.AddUrlCheck(Configuration["CatalogUrl"],1); // 1 min as cache duration
+```csharp
+checks.AddUrlCheck(Configuration["CatalogUrl"],1); // 1 min as cache duration
 ```
 
 ### Querying your microservices to report about their health status

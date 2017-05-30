@@ -26,84 +26,47 @@ The eShopOnContainers application uses the Polly Circuit Breaker policy when imp
 
 The only addition here to the code used for HTTP call retries is the code where you add the Circuit Breaker policy to the list of policies to use, as shown at the end of the following code:
 
-```
-  public ResilientHttpClient CreateResilientHttpClient()
-  
-  => new ResilientHttpClient(CreatePolicies(), _logger);
-  
-  private Policy[] CreatePolicies()
-  
-  => new Policy[]
-  
-  {
-  
-  Policy.Handle<;HttpRequestException>()
-  
-  .WaitAndRetryAsync(
-  
-  // number of retries
-  
-  6,
-  
-  // exponential backofff
-  
-  retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
-  
-  // on retry
-  
-  (exception, timeSpan, retryCount, context) =>
-  
-  {
-  
-  var msg = $"Retry {retryCount} implemented with Polly
-  
-  RetryPolicy " +
-  
-  $"of {context.PolicyKey} " +
-  
-  $"at {context.ExecutionKey}, " +
-  
-  $"due to: {exception}.";
-  
-  _logger.LogWarning(msg);
-  
-  _logger.LogDebug(msg);
-  
-  }),
-  
-  Policy.Handle<;HttpRequestException>()
-  
-  .CircuitBreakerAsync(
-  
-  // number of exceptions before breaking circuit
-  
-  5,
-  
-  // time circuit opened before retry
-  
-  TimeSpan.FromMinutes(1),
-  
-  (exception, duration) =>
-  
-  {
-  
-  // on circuit opened
-  
-  _logger.LogTrace("Circuit breaker opened");
-  
-  },
-  
-  () =>
-  
-  {
-  
-  // on circuit closed
-  
-  _logger.LogTrace("Circuit breaker reset");
-  
-  })};
-  
-  }
+```csharp
+public ResilientHttpClient CreateResilientHttpClient()
+    => new ResilientHttpClient(CreatePolicies(), _logger);
+
+private Policy[] CreatePolicies()
+    => new Policy[]
+    {
+        Policy.Handle<HttpRequestException>()
+            .WaitAndRetryAsync(
+            // number of retries
+            6,
+            // exponential backofff
+            retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)),
+            // on retry
+            (exception, timeSpan, retryCount, context) =>
+            {
+                var msg = $"Retry {retryCount} implemented with Polly RetryPolicy " +
+                    $"of {context.PolicyKey} " +
+                    $"at {context.ExecutionKey}, " +
+                    $"due to: {exception}.";
+                _logger.LogWarning(msg);
+                _logger.LogDebug(msg);
+            }),
+            Policy.Handle<HttpRequestException>()
+                .CircuitBreakerAsync(
+                    // number of exceptions before breaking circuit
+                    5,
+                    // time circuit opened before retry
+                    TimeSpan.FromMinutes(1),
+                    (exception, duration) =>
+                    {
+                        // on circuit opened
+                        _logger.LogTrace("Circuit breaker opened");
+                    },
+                    () =>
+                    {
+                        // on circuit closed
+                        _logger.LogTrace("Circuit breaker reset");
+                    })
+    };
+}
 ```
 
 The code adds a policy to the HTTP wrapper. That policy defines a circuit breaker that opens when the code detects the specified number of consecutive exceptions (exceptions in a row), as passed in the exceptionsAllowedBeforeBreaking parameter (5 in this case). When the circuit is open, HTTP requests do not work, but an exception is raised.
@@ -116,92 +79,53 @@ Of course, all those features are for cases where you are managing the failover 
 
 You use the ResilientHttpClient utility class in a way similar to how you use the .NET HttpClient class. In the following example from the eShopOnContainers MVC web application (the OrderingService agent class used by OrderController), the ResilientHttpClient object is injected through the httpClient parameter of the constructor. Then the object is used to perform HTTP requests.
 
-```
-  public class OrderingService : IOrderingService
-  
-  {
-  
-  private IHttpClient _apiClient;
-  
-  private readonly string _remoteServiceBaseUrl;
-  
-  private readonly IOptionsSnapshot<;AppSettings> _settings;
-  
-  private readonly IHttpContextAccessor _httpContextAccesor;
-  
-  public OrderingService(IOptionsSnapshot<;AppSettings> settings,
-  
-  IHttpContextAccessor httpContextAccesor,
-  
-  IHttpClient httpClient)
-  
-  {
-  
-  _remoteServiceBaseUrl = $"{settings.Value.OrderingUrl}/api/v1/orders";
-  
-  _settings = settings;
-  
-  _httpContextAccesor = httpContextAccesor;
-  
-  _apiClient = httpClient;
-  
-  }
-  
-  async public Task<;List<;Order>> GetMyOrders(ApplicationUser user)
-  
-  {
-  
-  var context = _httpContextAccesor.HttpContext;
-  
-  var token = await context.Authentication.GetTokenAsync("access_token");
-  
-  _apiClient.Inst.DefaultRequestHeaders.Authorization = new
-  
-  System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-  
-  var ordersUrl = _remoteServiceBaseUrl;
-  
-  var dataString = await _apiClient.GetStringAsync(ordersUrl);
-  
-  var response = JsonConvert.DeserializeObject<;List<;Order>>(dataString);
-  
-  return response;
-  
-  }
-  
-  // Other methods ...
-  
-  async public Task CreateOrder(Order order)
-  
-  {
-  
-  var context = _httpContextAccesor.HttpContext;
-  
-  var token = await context.Authentication.GetTokenAsync("access_token");
-  
-  _apiClient.Inst.DefaultRequestHeaders.Authorization = new
-  
-  System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-  
-  _apiClient.Inst.DefaultRequestHeaders.Add("x-requestid",
-  
-  order.RequestId.ToString());
-  
-  var ordersUrl = $"{_remoteServiceBaseUrl}/new";
-  
-  order.CardTypeId = 1;
-  
-  order.CardExpirationApiFormat();
-  
-  SetFakeIdToProducts(order);
-  
-  var response = await _apiClient.PostAsync(ordersUrl, order);
-  
-  response.EnsureSuccessStatusCode();
-  
-  }
-  
-  }
+```csharp
+public class OrderingService : IOrderingService
+{
+    private IHttpClient _apiClient;
+    private readonly string _remoteServiceBaseUrl;
+    private readonly IOptionsSnapshot<AppSettings> _settings;
+    private readonly IHttpContextAccessor _httpContextAccesor;
+
+    public OrderingService(IOptionsSnapshot<AppSettings> settings,
+        IHttpContextAccessor httpContextAccesor,
+        IHttpClient httpClient)
+    {
+        _remoteServiceBaseUrl = $"{settings.Value.OrderingUrl}/api/v1/orders";
+        _settings = settings;
+        _httpContextAccesor = httpContextAccesor;
+        _apiClient = httpClient;
+    }
+
+    async public Task<List<Order>> GetMyOrders(ApplicationUser user)
+    {
+        var context = _httpContextAccesor.HttpContext;
+        var token = await context.Authentication.GetTokenAsync("access_token");
+        _apiClient.Inst.DefaultRequestHeaders.Authorization = new
+            System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+        var ordersUrl = _remoteServiceBaseUrl;
+        var dataString = await _apiClient.GetStringAsync(ordersUrl);
+        var response = JsonConvert.DeserializeObject<List<Order>>(dataString);
+        return response;
+    }
+
+    // Other methods ...
+    async public Task CreateOrder(Order order)
+    {
+        var context = _httpContextAccesor.HttpContext;
+        var token = await context.Authentication.GetTokenAsync("access_token");
+        _apiClient.Inst.DefaultRequestHeaders.Authorization = new
+            System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
+        _apiClient.Inst.DefaultRequestHeaders.Add("x-requestid",
+            order.RequestId.ToString());
+        var ordersUrl = $"{_remoteServiceBaseUrl}/new";
+        order.CardTypeId = 1;
+        order.CardExpirationApiFormat();
+        SetFakeIdToProducts(order);
+        var response = await _apiClient.PostAsync(ordersUrl, order);
+        response.EnsureSuccessStatusCode();
+    }
+}
 ```
 
 Whenever the \_apiClient member object is used, it internally uses the wrapper class with Polly policiesؙ—the Retry policy, the Circuit Breaker policy, and any other policy that you might want to apply from the Polly policies collection.
@@ -252,46 +176,27 @@ Once the middleware is running, you can try making an order from the MVC web app
 
 In the following example, you can see that the MVC web application has a catch block in the logic for placing an order. If the code catches an open-circuit exception, it shows the user a friendly message telling them to wait.
 
-```
-  [HttpPost]
-  
-  public async Task<;IActionResult> Create(Order model, string action)
-  
-  {
-  
-  try
-  
-  {
-  
-  if (ModelState.IsValid)
-  
-  {
-  
-  var user = _appUserParser.Parse(HttpContext.User);
-  
-  await _orderSvc.CreateOrder(model);
-  
-  //Redirect to historic list.
-  
-  return RedirectToAction("Index");
-  
-  }
-  
-  }
-  
-  catch(BrokenCircuitException ex)
-  
-  {
-  
-  ModelState.AddModelError("Error",
-  
-  "It was not possible to create a new order, please try later on");
-  
-  }
-  
-  return View(model);
-  
-  }
+```csharp
+[HttpPost]
+public async Task<IActionResult> Create(Order model, string action)
+{
+    try
+    {
+        if (ModelState.IsValid)
+        {
+            var user = _appUserParser.Parse(HttpContext.User);
+            await _orderSvc.CreateOrder(model);
+            //Redirect to historic list.
+            return RedirectToAction("Index");
+        }
+    }
+    catch(BrokenCircuitException ex)
+    {
+        ModelState.AddModelError("Error",
+            "It was not possible to create a new order, please try later on");
+    }
+    return View(model);
+}
 ```
 
 Here’s a summary. The Retry policy tries several times to make the HTTP request and gets HTTP errors. When the number of tries reaches the maximum number set for the Circuit Breaker policy (in this case, 5), the application throws a BrokenCircuitException. The result is a friendly message, as shown in Figure 10-5.
@@ -308,20 +213,13 @@ Finally, another possibility for the CircuitBreakerPolicy is to use Isolate (whi
 
 A regular Retry policy can impact your system in cases of high concurrency and scalability and under high contention. To overcome peaks of similar retries coming from many clients in case of partial outages, a good workaround is to add a jitter strategy to the retry algorithm/policy. This can improve the overall performance of the end-to-end system by adding randomness to the exponential backoff. This spreads out the spikes when issues arise. When you use Polly, code to implement jitter could look like the following example:
 
-```
-  Random jitterer = new Random();
-  
-  Policy
-  
-  .Handle<;HttpResponseException>() // etc
-  
-  .WaitAndRetry(5, // exponential back-off plus some jitter
-  
-  retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))
-  
-  + TimeSpan.FromMilliseconds(jitterer.Next(0, 100))
-  
-  );
+```csharp
+Random jitterer = new Random();
+Policy.Handle<HttpResponseException>() // etc
+    .WaitAndRetry(5, // exponential back-off plus some jitter
+        retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt))
+            + TimeSpan.FromMilliseconds(jitterer.Next(0, 100))
+    );
 ```
 
 ## Additional resources

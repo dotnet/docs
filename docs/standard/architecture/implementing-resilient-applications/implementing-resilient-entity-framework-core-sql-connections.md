@@ -14,46 +14,28 @@ For Azure SQL DB, Entity Framework Core already provides internal database conne
 
 For instance, the following code at the EF Core connection level enables resilient SQL connections that are retried if the connection fails.
 
-```
-  // Startup.cs from any ASP.NET Core Web API
-  
-  public class Startup
-  
-  {
-  
-  // Other code ...
-  
-  public IServiceProvider ConfigureServices(IServiceCollection services)
-  
-  {
-  
-  // ...
-  
-  services.AddDbContext<;OrderingContext>(options =>
-  
-  {
-  
-  options.UseSqlServer(Configuration["ConnectionString"],
-  
-  sqlServerOptionsAction: sqlOptions =>
-  
-  {
-  
-  sqlOptions.EnableRetryOnFailure(
-  
-  maxRetryCount: 5,
-  
-  maxRetryDelay: TimeSpan.FromSeconds(30),
-  
-  errorNumbersToAdd: null);
-  
-  });
-  
-  });
-  
-  }
-  
-  //...
+```csharp
+// Startup.cs from any ASP.NET Core Web API
+public class Startup
+{
+    // Other code ...
+    public IServiceProvider ConfigureServices(IServiceCollection services)
+    {
+        // ...
+        services.AddDbContext<OrderingContext>(options =>
+        {
+            options.UseSqlServer(Configuration["ConnectionString"],
+            sqlServerOptionsAction: sqlOptions =>
+            {
+                sqlOptions.EnableRetryOnFailure(
+                maxRetryCount: 5,
+                maxRetryDelay: TimeSpan.FromSeconds(30),
+                errorNumbersToAdd: null);
+            });
+        });
+    }
+//...
+}
 ```
 
 ## Execution strategies and explicit transactions using BeginTransaction and multiple DbContexts
@@ -66,56 +48,34 @@ However, if your code initiates a transaction using BeginTransaction, you are de
 
 The solution is to manually invoke the EF execution strategy with a delegate representing everything that needs to be executed. If a transient failure occurs, the execution strategy will invoke the delegate again. For example, the following code show how it is implemented in eShopOnContainers with two multiple DbContexts (\_catalogContext and the IntegrationEventLogContext) when updating a product and then saving the ProductPriceChangedIntegrationEvent object, which needs to use a different DbContext.
 
-```
-  public async Task<;IActionResult> UpdateProduct([FromBody]CatalogItem
-  
-  productToUpdate)
-  
-  {
-  
-  // Other code ...
-  
-  // Update current product
-  
-  catalogItem = productToUpdate;
-  
-  // Use of an EF Core resiliency strategy when using multiple DbContexts
-  
-  // within an explicit transaction
-  
-  // See:
-  
-  // https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency
-  
-  var strategy = _catalogContext.Database.CreateExecutionStrategy();
-  
-  await strategy.ExecuteAsync(async () =>
-  
-  {
-  
-  // Achieving atomicity between original Catalog database operation and the
-  
-  // IntegrationEventLog thanks to a local transaction
-  
-  using (var transaction = _catalogContext.Database.BeginTransaction())
-  
-  {
-  
-  _catalogContext.CatalogItems.Update(catalogItem);
-  
-  await _catalogContext.SaveChangesAsync();
-  
-  // Save to EventLog only if product price changed
-  
-  if (raiseProductPriceChangedEvent)
-  
-  await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
-  
-  transaction.Commit();
-  
-  }
-  
-  });
+```csharp
+public async Task<IActionResult> UpdateProduct([FromBody]CatalogItem
+    productToUpdate)
+{
+    // Other code ...
+    // Update current product
+    catalogItem = productToUpdate;
+
+    // Use of an EF Core resiliency strategy when using multiple DbContexts
+    // within an explicit transaction
+    // See:
+    // https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency
+    var strategy = _catalogContext.Database.CreateExecutionStrategy();
+    await strategy.ExecuteAsync(async () =>
+    {
+        // Achieving atomicity between original Catalog database operation and the
+        // IntegrationEventLog thanks to a local transaction
+        using (var transaction = _catalogContext.Database.BeginTransaction())
+        {
+            _catalogContext.CatalogItems.Update(catalogItem);
+            await _catalogContext.SaveChangesAsync();
+            // Save to EventLog only if product price changed
+            if (raiseProductPriceChangedEvent)
+            await _integrationEventLogService.SaveEventAsync(priceChangedEvent);
+            transaction.Commit();
+        }
+    });
+}
 ```
 
 The first DbContext is \_catalogContext and the second DbContext is within the \_integrationEventLogService object. The Commit action is performed across multiple DbContexts using an EF execution strategy.

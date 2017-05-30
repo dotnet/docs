@@ -58,37 +58,25 @@ The Microsoft distribution of .NET Core is licensed with the [MICROSOFT .NET LIB
 
 [.NET NuGet packages](https://www.nuget.org/profiles/dotnetframework) use this same license but do not enable telemetry (see [Scope](#scope) above).
 
-```text
-2.      DATA.  The software may collect information about you and your use of
-the software, and send that to Microsoft. Microsoft may use this information
-to improve our products and services. You can learn more about data collection
-and use in the help documentation and the privacy statement at
-http://go.microsoft.com/fwlink/?LinkId=528096 . Your use of the software
-operates as your consent to these practices.
-```
+> 2. DATA. The software may collect information about you and your use of the software, and send that to Microsoft. Microsoft may use this information to improve our products and services. You can learn more about data collection and use in the help documentation and the privacy statement at http://go.microsoft.com/fwlink/?LinkId=528096. Your use of the software operates as your consent to these practices.
 
 ## Disclosure
 
 The .NET Core Tools display the following text when you first run one of the commands (for example, `dotnet restore`). This "first run" experience is how Microsoft notifies you about data collection. This same experience also initially populates your NuGet cache with the libraries in the .NET Core SDK, avoiding requests to NuGet.org (or other NuGet feed) for these libraries.
 
-```text
+```console
 Welcome to .NET Core!
 ---------------------
-Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to 
-see available commands or go to https://aka.ms/dotnet-cli-docs.
+Learn more about .NET Core @ https://aka.ms/dotnet-docs. Use dotnet --help to see available commands or go to https://aka.ms/dotnet-cli-docs.
 
 Telemetry
 --------------
-The .NET Core tools collect usage data in order to improve your experience. 
-The data is anonymous and does not include command-line arguments. The data is 
-collected by Microsoft and shared with the community.
-You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT 
-environment variable to 1 using your favorite shell.
+The .NET Core tools collect usage data in order to improve your experience.
+The data is anonymous and does not include command-line arguments. The data is collected by Microsoft and shared with the community.
+You can opt out of telemetry by setting a DOTNET_CLI_TELEMETRY_OPTOUT environment variable to 1 using your favorite shell.
 You can read more about .NET Core tools telemetry @ https://aka.ms/dotnet-cli-telemetry.
 
 Configuring...
 -------------------
-A command is running to initially populate your local package cache, to 
-improve restore speed and enable offline access. This command will take up to 
-a minute to complete and will only happen once. 
+A command is running to initially populate your local package cache, to improve restore speed and enable offline access. This command will take up to a minute to complete and will only happen once.
 ```

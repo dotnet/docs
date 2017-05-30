@@ -28,7 +28,7 @@ See the [.NET Core Release Notes](https://github.com/dotnet/core/blob/master/rel
 
 .NET Core requires OpenSSL when running on macOS. An easy way to obtain OpenSSL is by using the [Homebrew ("brew")](https://brew.sh/) package manager for macOS. After installing *brew*, install OpenSSL by executing the following commands at a Terminal (command) prompt:
 
-```Terminal
+```console
 brew update
 brew install openssl
 mkdir -p /usr/local/lib

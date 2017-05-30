@@ -19,7 +19,7 @@ A *copy and update record expression* is an expression that copies an existing r
 
 ## Syntax
 
-``` fsharp
+```fsharp
 { record-name with
     updated-member-definitions }
 ```

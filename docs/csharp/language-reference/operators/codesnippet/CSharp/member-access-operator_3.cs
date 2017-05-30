@@ -1,1 +1,1 @@
-            Simple s = new Simple();
+Simple s = new Simple();

@@ -1,4 +1,4 @@
-    class TryFinallyTest
+class TryFinallyTest
 {
     static void ProcessString(string s)
     {
@@ -23,8 +23,8 @@
         }
     }
 }
-    /*
+/*
     Output:
     System.ArgumentNullException: Value cannot be null.
-       at TryFinallyTest.Main() Exception caught.
-     * */
+    at TryFinallyTest.Main() Exception caught.
+    */

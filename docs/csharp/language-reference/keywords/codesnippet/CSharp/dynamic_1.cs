@@ -1,13 +1,13 @@
-    class Program
+class Program
+{
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            dynamic dyn = 1;
-            object obj = 1;
+        dynamic dyn = 1;
+        object obj = 1;
 
-            // Rest the mouse pointer over dyn and obj to see their
-            // types at compile time.
-            System.Console.WriteLine(dyn.GetType());
-            System.Console.WriteLine(obj.GetType());
-        }
+        // Rest the mouse pointer over dyn and obj to see their
+        // types at compile time.
+        System.Console.WriteLine(dyn.GetType());
+        System.Console.WriteLine(obj.GetType());
     }
+}

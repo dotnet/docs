@@ -7,4 +7,12 @@ using Microsoft.Office.Interop.Excel;
 public class Utility
 {
     // The following code causes an error when called by a client assembly.
-    public List<Range> GetRange1() {
+    public List<Range> GetRange1()
+    {
+    }
+
+    // The following code is valid for calls from a client assembly.
+    public IList<Range> GetRange2()
+    {
+    }
+}

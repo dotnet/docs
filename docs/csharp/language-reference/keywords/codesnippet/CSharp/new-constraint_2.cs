@@ -1,4 +1,4 @@
-    public class ItemFactory2<T>
-        where T : IComparable, new()
-    {
-    }
+public class ItemFactory2<T>
+    where T : IComparable, new()
+{
+}

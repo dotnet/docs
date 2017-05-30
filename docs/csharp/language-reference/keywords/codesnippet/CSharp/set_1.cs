@@ -1,11 +1,9 @@
-    class TimePeriod
+class TimePeriod
+{
+    private double _seconds;
+    public double Seconds
     {
-        private double _seconds;
-        public double Seconds
-        {
-            get { return _seconds; }
-            set { _seconds = value; }
-        }
-
-
+        get { return _seconds; }
+        set { _seconds = value; }
     }
+}

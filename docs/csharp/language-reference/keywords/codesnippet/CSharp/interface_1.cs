@@ -1,22 +1,22 @@
-    interface ISampleInterface
+interface ISampleInterface
+{
+    void SampleMethod();
+}
+
+class ImplementationClass : ISampleInterface
+{
+    // Explicit interface member implementation: 
+    void ISampleInterface.SampleMethod()
     {
-        void SampleMethod();
+        // Method implementation.
     }
 
-    class ImplementationClass : ISampleInterface
+    static void Main()
     {
-        // Explicit interface member implementation: 
-        void ISampleInterface.SampleMethod()
-        {
-            // Method implementation.
-        }
+        // Declare an interface instance.
+        ISampleInterface obj = new ImplementationClass();
 
-        static void Main()
-        {
-            // Declare an interface instance.
-            ISampleInterface obj = new ImplementationClass();
-
-            // Call the member.
-            obj.SampleMethod();
-        }
+        // Call the member.
+        obj.SampleMethod();
     }
+}

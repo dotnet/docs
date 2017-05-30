@@ -1,19 +1,19 @@
-    // compile with: /unsafe
+// compile with: /unsafe
 
-    class UnsafeTest
+class UnsafeTest
+{
+    // Unsafe method: takes pointer to int:
+    unsafe static void SquarePtrParam(int* p)
     {
-       // Unsafe method: takes pointer to int:
-       unsafe static void SquarePtrParam(int* p)
-       {
-          *p *= *p;
-       }
-
-       unsafe static void Main()
-       {
-          int i = 5;
-          // Unsafe method: uses address-of operator (&):
-          SquarePtrParam(&i);
-          Console.WriteLine(i);
-       }
+        *p *= *p;
     }
-    // Output: 25
+
+    unsafe static void Main()
+    {
+        int i = 5;
+        // Unsafe method: uses address-of operator (&):
+        SquarePtrParam(&i);
+        Console.WriteLine(i);
+    }
+}
+// Output: 25

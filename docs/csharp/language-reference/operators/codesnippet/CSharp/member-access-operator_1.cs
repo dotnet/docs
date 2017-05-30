@@ -1,2 +1,2 @@
-            // The class Console in namespace System:
-            System.Console.WriteLine("hello");
+// The class Console in namespace System:
+System.Console.WriteLine("hello");

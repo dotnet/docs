@@ -1,71 +1,71 @@
-    interface IPoint
+interface IPoint
+{
+    // Property signatures:
+    int x
     {
-       // Property signatures:
-       int x
-       {
-          get;
-          set;
-       }
-
-       int y
-       {
-          get;
-          set;
-       }
+        get;
+        set;
     }
 
-    class Point : IPoint
+    int y
     {
-       // Fields:
-       private int _x;
-       private int _y;
+        get;
+        set;
+    }
+}
 
-       // Constructor:
-       public Point(int x, int y)
-       {
-          _x = x;
-          _y = y;
-       }
+class Point : IPoint
+{
+    // Fields:
+    private int _x;
+    private int _y;
 
-       // Property implementation:
-       public int x
-       {
-          get
-          {
-             return _x;
-          }
-
-          set
-          {
-             _x = value;
-          }
-       }
-
-       public int y
-       {
-          get
-          {
-             return _y;
-          }
-          set
-          {
-             _y = value;
-          }
-       }
+    // Constructor:
+    public Point(int x, int y)
+    {
+        _x = x;
+        _y = y;
     }
 
-    class MainClass
+    // Property implementation:
+    public int x
     {
-       static void PrintPoint(IPoint p)
-       {
-          Console.WriteLine("x={0}, y={1}", p.x, p.y);
-       }
+        get
+        {
+            return _x;
+        }
 
-       static void Main()
-       {
-          Point p = new Point(2, 3);
-          Console.Write("My Point: ");
-          PrintPoint(p);
-       }
+        set
+        {
+            _x = value;
+        }
     }
-    // Output: My Point: x=2, y=3
+
+    public int y
+    {
+        get
+        {
+            return _y;
+        }
+        set
+        {
+            _y = value;
+        }
+    }
+}
+
+class MainClass
+{
+    static void PrintPoint(IPoint p)
+    {
+        Console.WriteLine("x={0}, y={1}", p.x, p.y);
+    }
+
+    static void Main()
+    {
+        Point p = new Point(2, 3);
+        Console.Write("My Point: ");
+        PrintPoint(p);
+    }
+}
+// Output: My Point: x=2, y=3

@@ -1,12 +1,12 @@
-    class TrueTest
+class TrueTest
+{
+    static void Main() 
     {
-        static void Main() 
-        {
-            bool a = true;
-            Console.WriteLine( a ? "yes" : "no" );
-        }
+        bool a = true;
+        Console.WriteLine( a ? "yes" : "no" );
     }
-    /*
+}
+/*
     Output:
     yes
-    */
+*/

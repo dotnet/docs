@@ -1,1 +1,1 @@
-        class TestClass : global::TestApp { }
+class TestClass : global::TestApp { }

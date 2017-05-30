@@ -10,6 +10,7 @@ namespace PC
             Project.MyClass mc = new Project.MyClass();
         }
     }
+    
     namespace MyCompany
     {
         namespace Project

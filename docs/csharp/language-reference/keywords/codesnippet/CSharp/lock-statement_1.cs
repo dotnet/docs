@@ -1,17 +1,17 @@
-    //using System.Threading;
+//using System.Threading;
 
-    class ThreadTest
+class ThreadTest
+{
+    public void RunMe()
     {
-        public void RunMe()
-        {
-            Console.WriteLine("RunMe called");
-        }
-
-        static void Main()
-        {
-            ThreadTest b = new ThreadTest();
-            Thread t = new Thread(b.RunMe);
-            t.Start();
-        }
+        Console.WriteLine("RunMe called");
     }
-    // Output: RunMe called
+
+    static void Main()
+    {
+        ThreadTest b = new ThreadTest();
+        Thread t = new Thread(b.RunMe);
+        t.Start();
+    }
+}
+// Output: RunMe called

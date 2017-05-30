@@ -11,7 +11,6 @@ public static class GalaxyClass
 
     public class Galaxies
     {
-
         public System.Collections.Generic.IEnumerable<Galaxy> NextGalaxy
         {
             get
@@ -22,7 +21,6 @@ public static class GalaxyClass
                 yield return new Galaxy { Name = "Andromeda", MegaLightYears = 3 };
             }
         }
-
     }
 
     public class Galaxy

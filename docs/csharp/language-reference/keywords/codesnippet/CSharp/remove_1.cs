@@ -1,24 +1,22 @@
+class Events : IDrawingObject
+{
+    event EventHandler PreDrawEvent;
 
-    class Events : IDrawingObject
+    event EventHandler IDrawingObject.OnDraw
     {
-        event EventHandler PreDrawEvent;
-
-        event EventHandler IDrawingObject.OnDraw
+        add
         {
-            add
+            lock (PreDrawEvent)
             {
-                lock (PreDrawEvent)
-                {
-                    PreDrawEvent += value;
-                }
-            }
-            remove
-            {
-                lock (PreDrawEvent)
-                {
-                    PreDrawEvent -= value;
-                }
+                PreDrawEvent += value;
             }
         }
-
+        remove
+        {
+            lock (PreDrawEvent)
+            {
+                PreDrawEvent -= value;
+            }
+        }
     }
+}

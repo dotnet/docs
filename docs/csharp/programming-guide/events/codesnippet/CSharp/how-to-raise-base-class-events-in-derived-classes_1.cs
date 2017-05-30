@@ -1,4 +1,3 @@
-
 namespace BaseClassEvents
 {
     using System;
@@ -164,9 +163,10 @@ namespace BaseClassEvents
         }
     }
 }
-/* Output:
-        Received event. Shape area is now 10201.86
-        Drawing a circle
-        Received event. Shape area is now 49
-        Drawing a rectangle
+/*
+    Output:
+    Received event. Shape area is now 10201.86
+    Drawing a circle
+    Received event. Shape area is now 49
+    Drawing a rectangle
  */

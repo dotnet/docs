@@ -94,7 +94,7 @@ $LocalDotnet = "$InstallDir/dotnet"
 # Run the build process now. Implement your build script here.
 ```
 
-You provide the implementation for your build process at the end of the script. When run and after the tooling is acquired, the script executes your build process. For UNIX machines, the following bash script performs the actions described in the PowerShell script in a similar manner:
+You provide the implementation for your build process at the end of the script. The script acquires the tools and then executes your build process. For UNIX machines, the following bash script performs the actions described in the PowerShell script in a similar manner:
 
 ```bash
 #!/bin/bash

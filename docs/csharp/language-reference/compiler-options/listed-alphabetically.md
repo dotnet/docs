@@ -38,14 +38,14 @@ The following compiler options are sorted alphabetically. For a categorical list
 |------------|-------------|  
 |[@](../../../csharp/language-reference/compiler-options/response-file-compiler-option.md)|Reads a response file for more options.|  
 |[/?](../../../csharp/language-reference/compiler-options/help-compiler-option.md)|Displays a usage message to stdout.|  
-|`/additionalfile`|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|  
+|/additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|  
 |[/addmodule](../../../csharp/language-reference/compiler-options/addmodule-compiler-option.md)|Links the specified modules into this assembly|  
-|`/analyzer`|Run the analyzers from this assembly (Short form: /a)|  
+|/analyzer|Run the analyzers from this assembly (Short form: /a)|  
 |[/appconfig](../../../csharp/language-reference/compiler-options/appconfig-compiler-option.md)|Specifies the location of app.config at assembly binding time.|  
 |[/baseaddress](../../../csharp/language-reference/compiler-options/baseaddress-compiler-option.md)|Specifies the base address for the library to be built.|  
-|[/bugreport](../../../csharp/language-reference/compiler-options/bugreport-compiler-option.md)|Creates a 'Bug Report' file. This file will be sent together with any crash information if it is used with **/errorreport:prompt** or **/errorreport:send**.|  
+|[/bugreport](../../../csharp/language-reference/compiler-options/bugreport-compiler-option.md)|Creates a 'Bug Report' file. This file will be sent together with any crash information if it is used with /errorreport:prompt or /errorreport:send.|  
 |[/checked](../../../csharp/language-reference/compiler-options/checked-compiler-option.md)|Causes the compiler to generate overflow checks.|  
-|`/checksumalgorithm:<alg>`|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
+|/checksumalgorithm:\<alg>|Specify the algorithm for calculating the source file checksum stored in PDB.  Supported values are: SHA1 (default) or SHA256.|  
 |[/codepage](../../../csharp/language-reference/compiler-options/codepage-compiler-option.md)|Specifies the codepage to use when opening source files.|  
 |[/debug](../../../csharp/language-reference/compiler-options/debug-compiler-option.md)|Emits debugging information.|  
 |[/define](../../../csharp/language-reference/compiler-options/define-compiler-option.md)|Defines conditional compilation symbols.|  
@@ -56,7 +56,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[/fullpaths](../../../csharp/language-reference/compiler-options/fullpaths-compiler-option.md)|Causes the compiler to generate fully qualified paths.|  
 |[/help](../../../csharp/language-reference/compiler-options/help-compiler-option.md)|Displays a usage message to stdout.|  
 |[/highentropyva](../../../csharp/language-reference/compiler-options/highentropyva-compiler-option.md)|Specifies that high entropy ASLR is supported.|  
-|**/incremental**|Enables incremental compilation [obsolete].|  
+|/incremental|Enables incremental compilation [obsolete].|  
 |[/keycontainer](../../../csharp/language-reference/compiler-options/keycontainer-compiler-option.md)|Specifies a strong name key container.|  
 |[/keyfile](../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md)|Specifies a strong name key file.|  
 |[/langversion:\<string>](../../../csharp/language-reference/compiler-options/langversion-compiler-option.md)|Specify language version mode: ISO-1, ISO-2, 3, 4, 5, 6, or Default|  
@@ -65,7 +65,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[/linkresource](../../../csharp/language-reference/compiler-options/linkresource-compiler-option.md)|Links the specified resource to this assembly.|  
 |[/main](../../../csharp/language-reference/compiler-options/main-compiler-option.md)|Specifies the type that contains the entry point (ignore all other possible entry points).|  
 |[/moduleassemblyname](../../../csharp/language-reference/compiler-options/moduleassemblyname-compiler-option.md)|Specifies an assembly whose non-public types a .netmodule can access.|  
-|`/modulename:<string>`|Specify the name of the source module|  
+|/modulename:\<string>|Specify the name of the source module|  
 |[/noconfig](../../../csharp/language-reference/compiler-options/noconfig-compiler-option.md)|Instructs the compiler not to auto include CSC.RSP file.|  
 |[/nologo](../../../csharp/language-reference/compiler-options/nologo-compiler-option.md)|Suppresses compiler copyright message.|  
 |[/nostdlib](../../../csharp/language-reference/compiler-options/nostdlib-compiler-option.md)|Instructs the compiler not to reference standard library (mscorlib.dll).|  
@@ -73,16 +73,16 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[/nowin32manifest](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)|Instructs the compiler not to embed an application manifest in the executable file.|  
 |[/optimize](../../../csharp/language-reference/compiler-options/optimize-compiler-option.md)|Enables/disables optimizations.|  
 |[/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md)|Specifies the output file name (default: base name of file with main class or first file).|  
-|`/parallel[+&#124;-]`|Specifies whether to use concurrent build (+).|  
+|/parallel[+&#124;-]|Specifies whether to use concurrent build (+).|  
 |[/pdb](../../../csharp/language-reference/compiler-options/pdb-compiler-option.md)|Specifies the file name and location of the .pdb file.|  
 |[/platform](../../../csharp/language-reference/compiler-options/platform-compiler-option.md)|Limits which platforms this code can run on: x86, Itanium, x64, anycpu, or anycpu32bitpreferred. The default is anycpu.|  
 |[/preferreduilang](../../../csharp/language-reference/compiler-options/preferreduilang-compiler-option.md)|Specifies the language to be used for compiler output.|  
 |[/recurse](../../../csharp/language-reference/compiler-options/recurse-compiler-option.md)|Includes all files in the current directory and subdirectories according to the wildcard specifications.|  
 |[/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)|References metadata from the specified assembly files.|  
 |[/resource](../../../csharp/language-reference/compiler-options/resource-compiler-option.md)|Embeds the specified resource.|  
-|`/ruleset:<file>`|Specify a ruleset file that disables specific diagnostics.|  
+|/ruleset:\<file>|Specify a ruleset file that disables specific diagnostics.|  
 |[/subsystemversion](../../../csharp/language-reference/compiler-options/subsystemversion-compiler-option.md)|Specifies the minimum version of the subsystem that the executable file can use.|  
-|[/target](../../../csharp/language-reference/compiler-options/target-compiler-option.md)|Specifies the format of the output file by using one of four options:[/target:appcontainerexe](../../../csharp/language-reference/compiler-options/target-appcontainerexe-compiler-option.md), [/target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md), [/target:library](../../../csharp/language-reference/compiler-options/target-library-compiler-option.md), [/target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md), [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md),  [/target:winmdobj](../../../csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md).|  
+|[/target](../../../csharp/language-reference/compiler-options/target-compiler-option.md)|Specifies the format of the output file by using one of four options: [/target:appcontainerexe](../../../csharp/language-reference/compiler-options/target-appcontainerexe-compiler-option.md), [/target:exe](../../../csharp/language-reference/compiler-options/target-exe-compiler-option.md), [/target:library](../../../csharp/language-reference/compiler-options/target-library-compiler-option.md), [/target:module](../../../csharp/language-reference/compiler-options/target-module-compiler-option.md), [/target:winexe](../../../csharp/language-reference/compiler-options/target-winexe-compiler-option.md),  [/target:winmdobj](../../../csharp/language-reference/compiler-options/target-winmdobj-compiler-option.md).|  
 |[/unsafe](../../../csharp/language-reference/compiler-options/unsafe-compiler-option.md)|Allows [unsafe](../../../csharp/language-reference/keywords/unsafe.md) code.|  
 |[/utf8output](../../../csharp/language-reference/compiler-options/utf8output-compiler-option.md)|Outputs compiler messages in UTF-8 encoding.|  
 |[/warn](../../../csharp/language-reference/compiler-options/warn-compiler-option.md)|Sets the warning level (0-4).|  

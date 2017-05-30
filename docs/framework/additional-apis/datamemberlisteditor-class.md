@@ -23,23 +23,30 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
+
 # DataMemberListEditor Class
-This API supports the product infrastructure and is not intended to be used directly from your code.  
+
+Provides a drop-down user interface for editing properties of data-bound objects (objects that have non-null `DataSource` property) by listing all properties of the `DataSource` object to select the value source from.  
   
- Provides a drop-down user interface for editing properties of data-bound objects (objects that have non-null `DataSource` property) by listing all properties of the `DataSource` object to select the value source from.  
+## Syntax
   
-## Syntax  
+```csharp  
+internal class DataMemberListEditor : UITypeEditor
+```
+
+> [!WARNING]
+> The `DataMemberListEditor` class is internal and not meant to be used directly in your code.
+> 
+> Microsoft does not support the use of this class in a production application under any circumstance.
   
-```  
-internal class DataMemberListEditor : UITypeEditor  
-```  
+## Requirements
+
+**Namespace:** <xref:System.Windows.Forms.Design?displayProperty=fullName>  
   
-## Requirements  
- **Namespace:** <xref:System.Windows.Forms.Design?displayProperty=fullName>  
+**Assembly:** System.Design (in System.Design.dll)  
   
- **Assembly:** System.Design (in System.Design.dll)  
+**.NET Framework versions:** Available since 2.0.  
   
- **.NET Framework versions:** Available since 2.0.  
-  
-## See Also  
- <xref:System.Windows.Forms.Design?displayProperty=fullName>
+## See also
+
+<xref:System.Windows.Forms.Design?displayProperty=fullName>

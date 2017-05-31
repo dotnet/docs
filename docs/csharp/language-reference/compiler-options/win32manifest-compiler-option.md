@@ -37,7 +37,7 @@ Use the **/win32manifest** option to specify a user-defined Win32 application ma
   
 ## Syntax  
   
-```  
+```console  
 /win32manifest: filename  
 ```  
   
@@ -69,7 +69,7 @@ Use the **/win32manifest** option to specify a user-defined Win32 application ma
 > [!NOTE]
 >  The compiler inserts a standard application name " MyApplication.app " into the xml. This is a workaround to enable applications to run on Windows Server 2003 Service Pack 3.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">  
   <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>  

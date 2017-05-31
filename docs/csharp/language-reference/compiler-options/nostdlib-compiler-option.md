@@ -38,7 +38,7 @@ translation.priority.mt:
   
 ## Syntax  
   
-```  
+```console  
 /nostdlib[+ | -]  
 ```  
   

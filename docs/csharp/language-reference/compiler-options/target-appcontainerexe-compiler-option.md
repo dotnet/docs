@@ -32,7 +32,7 @@ If you use the **/target:appcontainerexe** compiler option, the compiler creates
   
 ## Syntax  
   
-```  
+```console  
 /target:appcontainerexe  
 ```  
   
@@ -56,7 +56,7 @@ If you use the **/target:appcontainerexe** compiler option, the compiler creates
 ## Example  
  The following command compiles `filename.cs` into a Windows executable file that can be run only in an app container.  
   
-```  
+```console  
 csc /target:appcontainerexe filename.cs  
 ```  
   

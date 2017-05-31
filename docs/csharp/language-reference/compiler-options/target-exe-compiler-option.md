@@ -37,7 +37,7 @@ The **/target:exe** option causes the compiler to create an executable (EXE), co
   
 ## Syntax  
   
-```  
+```console  
 /target:exe  
 ```  
   
@@ -65,7 +65,7 @@ The **/target:exe** option causes the compiler to create an executable (EXE), co
 ## Example  
  Each of the following command lines will compile `in.cs`, creating `in.exe`:  
   
-```  
+```console  
 csc /target:exe in.cs  
 csc in.cs  
 ```  

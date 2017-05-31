@@ -37,7 +37,7 @@ The **/warnaserror+** option treats all warnings as errors
   
 ## Syntax  
   
-```  
+```console  
 /warnaserror[<U>+</U> | -][:warning-list]  
 ```  
   
@@ -63,7 +63,7 @@ The **/warnaserror+** option treats all warnings as errors
 ## Example  
  Compile `in.cs` and have the compiler display no warnings:  
   
-```  
+```console  
 csc /warnaserror in.cs  
 csc /warnaserror:642,649,652 in.cs  
 ```  

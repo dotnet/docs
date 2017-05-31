@@ -37,7 +37,7 @@ The **/highentropyva** compiler option tells the Windows kernel whether a partic
   
 ## Syntax  
   
-```  
+```console  
 /highentropyva[+ | -]  
 ```  
   

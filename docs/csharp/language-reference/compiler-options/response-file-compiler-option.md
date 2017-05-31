@@ -66,7 +66,7 @@ The @ option lets you specify a file that contains compiler options and source c
 ## Example  
  The following are a few lines from a sample response file:  
   
-```  
+```console  
 # build the first output file  
 /target:exe /out:MyExe.exe source1.cs source2.cs  
 ```  

@@ -20,7 +20,7 @@ Annotations enable you to modify the names of the elements in your typed <xref:S
   
  Using annotations, you can customize the names of objects in your typed **DataSet** with more meaningful names, making code more readable and your typed **DataSet** easier for clients to use, while leaving underlying schema intact. For example, the following schema element for the **Customers** table of the **Northwind** database would result in a **DataRow** object name of **CustomersRow** and a <xref:System.Data.DataRowCollection> named **Customers**.  
   
-```  
+```xml  
 <xs:element name="Customers">  
   <xs:complexType>  
     <xs:sequence>  
@@ -32,7 +32,7 @@ Annotations enable you to modify the names of the elements in your typed <xref:S
   
  A **DataRowCollection** name of **Customers** is meaningful in client code, but a **DataRow** name of **CustomersRow** is misleading because it is a single object. Also, in common scenarios, the object would be referred to without the **Row** identifier and instead would be simply referred to as a **Customer** object. The solution is to annotate the schema and identify new names for the **DataRow** and **DataRowCollection** objects. Following is the annotated version of the previous schema.  
   
-```  
+```xml  
 <xs:element name="Customers" codegen:typedName="Customer" codegen:typedPlural="Customers">  
   <xs:complexType>  
     <xs:sequence>  
@@ -85,7 +85,7 @@ xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"
   
  The following is a sample annotated schema that exposes the **Customers** table of the **Northwind** database with a relation to the **Orders** table included.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema id="CustomerDataSet"   
       xmlns:codegen="urn:schemas-microsoft-com:xml-msprop"  

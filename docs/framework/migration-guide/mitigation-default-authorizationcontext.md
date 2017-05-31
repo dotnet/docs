@@ -28,7 +28,7 @@ The implementation of the <xref:System.IdentityModel.Policy.AuthorizationContext
   
 -   Add the following line to the `<appSettings>` section of your app.config file:  
   
-    ```  
+    ```xml  
     <add key="appContext.SetSwitch:Switch.System.IdentityModel.EnableCachedEmptyDefaultAuthorizationContext" value="true" />  
     ```  
   

@@ -29,7 +29,7 @@ Specifies settings that authorize access to service operations
   
 ## Syntax  
   
-```  
+```xml  
 <serviceAuthorization  
      impersonateCallerForAllOperations="Boolean"  
       principalPermissionMode="None/UseWindowsGroups/UseAspNetRoles/Custom"  
@@ -70,7 +70,7 @@ Specifies settings that authorize access to service operations
   
  The `principalPermissionMode` attribute specifies the groups of users to use when authorizing use of a protected method. The default value is `UseWindowsGroups` and specifies that Windows groups, such as "Administrators" or "Users," are searched for an identity trying to access a resource. You can also specify `UseAspNetRoles` to use a custom role provider that is configured under the \<system.web> element, as shown in the following code.  
   
-```  
+```xml  
 <system.web>  
   <membership defaultProvider="SqlProvider"   
    userIsOnlineTimeWindow="15">  
@@ -94,7 +94,7 @@ Specifies settings that authorize access to service operations
   
  The following code shows the `roleProviderName` used with the `principalPermissionMode` attribute.  
   
-```  
+```xml  
 <behaviors>  
    <behavior name="ServiceBehaviour">  
      <serviceAuthorization principalPermissionMode ="UseAspNetRoles"   

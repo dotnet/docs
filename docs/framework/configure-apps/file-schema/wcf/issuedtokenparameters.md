@@ -27,7 +27,7 @@ Specifies the parameters for a security token issued in a Federated security sce
   
 ## Syntax  
   
-```  
+```xml  
 <issuedTokenParameters   
       DefaultMessageSecurityVersion="System.ServiceModel.MessageSecurityVersion"  
       inclusionMode="AlwaysToInitiator/AlwaysToRecipient/Never/Once"  

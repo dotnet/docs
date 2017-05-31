@@ -21,7 +21,7 @@ Tracking profiles contain tracking queries that permit a tracking participant to
   
  Tracking profiles manifest themselves as XML elements within a standard [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] configuration file or specified in code. The following example is of a [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)] tracking profile in a configuration file that allows a tracking participant to subscribe to the `Started` and `Completed` workflow events.  
   
-```  
+```xml  
 <system.serviceModel>  
     ...  
     <tracking>    
@@ -94,7 +94,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
  The `implementationVisibility` functionality is specified as <xref:System.Activities.Tracking.ImplementationVisibility.All> on the tracking profile in a configuration file as follows:  
   
-```  
+```xml  
 <tracking>  
       <profiles>  
         <trackingProfile name="Shipping Monitoring" implementationVisibility="All">  
@@ -127,7 +127,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
      The configuration or code used to subscribe to workflow instance-level tracking records for the `Started` instance state using the <xref:System.Activities.Tracking.WorkflowInstanceQuery> is shown in the following example.  
   
-    ```  
+    ```xml  
     <workflowInstanceQueries>  
         <workflowInstanceQuery>  
           <states>  
@@ -155,7 +155,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
      The configuration and code used to subscribe activity state tracking records that use the <xref:System.Activities.Tracking.ActivityStateQuery> for the `SendEmailActivity` activity is shown in the following example.  
   
-    ```  
+    ```xml  
     <activityStateQueries>  
       <activityStateQuery activityName="SendEmailActivity">  
         <states>  
@@ -187,7 +187,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
      The configuration and code used to subscribe to records related to the `SendEmailActivity` child activity being scheduled using the <xref:System.Activities.Tracking.ActivityScheduledQuery> is shown in the following example.  
   
-    ```  
+    ```xml  
     <activityScheduledQueries>  
       <activityScheduledQuery activityName="ProcessNotificationsActivity" childActivityName="SendEmailActivity" />  
      </activityScheduledQueries>  
@@ -212,7 +212,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
      The configuration and code used to subscribe to records related to fault propagation using <xref:System.Activities.Tracking.FaultPropagationQuery> is shown in the following example.  
   
-    ```  
+    ```xml  
     <faultPropagationQueries>  
       <faultPropagationQuery faultSourceActivityName="SendEmailActivity" faultHandlerActivityName="NotificationsFaultHandler" />  
     </faultPropagationQueries>  
@@ -237,7 +237,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
      The configuration and code used to subscribe to records related to activity cancellation using <xref:System.Activities.Tracking.CancelRequestedQuery>is shown in the following example.  
   
-    ```  
+    ```xml  
     <cancelRequestedQueries>  
       <cancelRequestedQuery activityName="ProcessNotificationsActivity" childActivityName="SendEmailActivity" />  
     </cancelRequestedQueries>  
@@ -262,7 +262,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
      The configuration and code used to subscribe to records related to custom tracking records using <xref:System.Activities.Tracking.CustomTrackingQuery> is shown in the following example.  
   
-    ```  
+    ```xml  
     <customTrackingQueries>  
       <customTrackingQuery name="EmailAddress" activityName="SendEmailActivity" />  
     </customTrackingQueries>  
@@ -287,7 +287,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
      The configuration and code used to subscribe to records related to bookmark resumption using <xref:System.Activities.Tracking.BookmarkResumptionQuery> is shown in the following example.  
   
-    ```  
+    ```xml  
     <bookmarkResumptionQueries>  
       <bookmarkResumptionQuery name="SentEmailBookmark" />  
     </bookmarkResumptionQueries>  
@@ -312,7 +312,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
  To accomplish this, an annotation is added to a tracking query as shown in the following example.  
   
-```  
+```xml  
 <activityStateQuery activityName="SendEmailActivity">  
   <states>  
     <state name="Closed"/>  
@@ -326,7 +326,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
 ### How to Create a Tracking Profile  
  Tracking query elements are used to create a tracking profile using either an XML configuration file or [!INCLUDE[netfx_current_long](../../../includes/netfx-current-long-md.md)]code.  Here is an example of a tracking profile created using a configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
   <tracking>  
     <profiles>  
@@ -351,7 +351,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
 -   A tracking profile to obtain workflow instance records and faults.  
   
-```  
+```xml  
 <trackingProfile name="Instance and Fault Records">  
   <workflow activityDefinitionId="*">  
     <workflowInstanceQueries>  
@@ -374,7 +374,7 @@ TrackingProfile sampleTrackingProfile = new TrackingProfile()
   
 1.  A tracking profile to obtain all custom tracking records.  
   
-```  
+```xml  
 <trackingProfile name="Instance_And_Custom_Records">  
   <workflow activityDefinitionId="*">  
     <customTrackingQueries>  

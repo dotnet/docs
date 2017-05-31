@@ -75,7 +75,7 @@ The `bindingFailure` managed debugging assistant (MDA) is activated when an asse
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <bindingFailure />  

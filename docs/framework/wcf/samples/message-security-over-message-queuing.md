@@ -115,7 +115,7 @@ public interface IOrderProcessor
   
  The client configuration specifies the service certificate to authenticate the service. It uses its LocalMachine store as the trusted store to rely on the validity of the service. It also specifies the client certificate that is attached with the message for service authentication of the client.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   
@@ -175,7 +175,7 @@ public interface IOrderProcessor
   
  The service configuration includes a service behavior that specifies the service's credentials that are used when the client authenticates the service. The server certificate subject name is specified in the `findValue` attribute in the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   

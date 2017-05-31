@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;discoveryClient&gt;
 A configuration element for creating a custom binding that enables a client application to automatically search for a discoverable service and find its address at runtime.  
   
- \<system.serviceModel>  
+\<system.serviceModel>  
 \<bindings>  
 \<customBinding>  
 \<binding>  
@@ -26,8 +26,18 @@ A configuration element for creating a custom binding that enables a client appl
   
 ## Syntax  
   
-```  
-<discoveryClient discoveryEndpoint="String" >   <findCriteria duration="TimeSpan"       maxResults="Integer"        scopeMatchBy="Uri" >       <contractTypeNames>          <add name="String" namespace="String" />       <contractTypeNames>       <extensions />       <scopes>          <add scope="URI"/>       </scopes>   </findCriteria></discoveryClient>  
+```xml  
+<discoveryClient discoveryEndpoint="String" >
+  <findCriteria duration="TimeSpan" maxResults="Integer" scopeMatchBy="Uri">
+    <contractTypeNames>
+      <add name="String" namespace="String" />
+    <contractTypeNames>
+    <extensions />
+    <scopes>
+      <add scope="URI"/>
+    </scopes>
+  </findCriteria>
+</discoveryClient>  
 ```  
   
 ## Attributes and Elements  

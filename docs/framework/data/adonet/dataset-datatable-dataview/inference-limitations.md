@@ -20,7 +20,7 @@ The process of inferring a <xref:System.Data.DataSet> schema from XML can result
   
  Document1:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1>Text1</Element1>  
   <Element1>Text2</Element1>  
@@ -29,7 +29,7 @@ The process of inferring a <xref:System.Data.DataSet> schema from XML can result
   
  Document2:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1>Text1</Element1>  
 </DocumentElement>  

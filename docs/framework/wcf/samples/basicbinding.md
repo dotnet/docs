@@ -35,7 +35,7 @@ This sample demonstrates the use of `basicHttpBinding` that provides HTTP commun
   
  To use the basic binding with default behavior, only the binding section name is required. If you want to configure the basic binding and change some of its settings, it is necessary to define a binding configuration. The endpoint must reference the binding configuration by name by using the `bindingConfiguration` attribute of the <`endpoint`> element, as shown in the following sample code.  
   
-```  
+```xml  
 <services>  
     <service   
         type="Microsoft.ServiceModel.Samples.CalculatorService"  
@@ -50,7 +50,7 @@ This sample demonstrates the use of `basicHttpBinding` that provides HTTP commun
   
  In this sample, the binding configuration is named `"Binding1"` and is defined as shown in the following code example.  
   
-```  
+```xml  
 <bindings>  
    <basicHttpBinding>  
       <binding name="Binding1"   

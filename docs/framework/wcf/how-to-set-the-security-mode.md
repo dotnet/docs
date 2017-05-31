@@ -87,7 +87,7 @@ manager: "mbaldwin"
   
      The following example sets the mode to "`Transport"`, and then sets the `clientCredentialType` attribute of the `<transport>` element to "`Windows"`.  
   
-    ```  
+    ```xml  
     <wsHttpBinding>  
     <binding name="TransportSecurity">  
         <security mode="Transport" />  
@@ -99,7 +99,7 @@ manager: "mbaldwin"
   
      Alternatively, set the `security mode` to "`Message"`, followed by a `<"message">` element. This example sets the `clientCredentialType` to "`Certificate"`.  
   
-    ```  
+    ```xml  
     <wsHttpBinding>  
     <binding name="MessageSecurity">  
         <security mode="Message" />  

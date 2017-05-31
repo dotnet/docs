@@ -42,7 +42,7 @@ This sample demonstrates a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md
   
  The endpoint that is defined uses the base address and a [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md). The following sample shows the configuration of the base address as well as the endpoint that exposes the CalculatorService.  
   
-```  
+```xml  
 <services>  
   <service name="Microsoft.ServiceModel.Samples.WcfCalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  

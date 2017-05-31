@@ -73,7 +73,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
 3.  Configure the bindings in the configuration file, specifying that the transaction context should be flowed, and the protocols to be used to do so. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][ServiceModel Transaction Configuration](../../../../docs/framework/wcf/feature-details/servicemodel-transaction-configuration.md). Specifically, the binding type is specified in the endpoint element’s `binding` attribute. The [\<endpoint>](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element contains a `bindingConfiguration` attribute that references a binding configuration named `transactionalOleTransactionsTcpBinding`, as shown in the following sample configuration.  
   
-    ```  
+    ```xml  
     <service name="CalculatorService">  
       <endpoint address="net.tcp://localhost:8008/CalcService"  
         binding="netTcpBinding"  
@@ -85,7 +85,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
      Transaction flow is enabled at the configuration level by using the `transactionFlow` attribute, and the transaction protocol is specified using the `transactionProtocol` attribute, as shown in the following configuration.  
   
-    ```  
+    ```xml  
     <bindings>  
       <netTcpBinding>  
         <binding name="transactionalOleTransactionsTcpBinding"  
@@ -99,7 +99,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
 1.  For optimal performance, you should use the OleTransactions protocol for scenarios involving a client and service written using [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)]. However, the WS-AtomicTransaction (WS-AT) protocol is useful for scenarios when interoperability with third-party protocol stacks is required. You can configure [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] services to accept both protocols by providing multiple endpoints with appropriate protocol-specific bindings, as shown in the following sample configuration.  
   
-    ```  
+    ```xml  
     <service name="CalculatorService">  
       <endpoint address="http://localhost:8000/CalcService"  
         binding="wsHttpBinding"  
@@ -116,7 +116,7 @@ This sample demonstrates various aspects of creating a transactional service and
   
      The transaction protocol is specified using the `transactionProtocol` attribute. However, this attribute is absent from the system-provided `wsHttpBinding`, because this binding can only use the WS-AT protocol.  
   
-    ```  
+    ```xml  
     <bindings>  
       <wsHttpBinding>  
         <binding name="transactionalWsatHttpBinding"  

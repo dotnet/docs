@@ -31,7 +31,7 @@ This sample demonstrates how to configure security by using a custom binding. It
   
  The custom binding configuration enables secure transport by simultaneously enabling the message-level security. The ordering of binding elements is important in defining a custom binding, because each represents a layer in the channel stack (see [Custom Bindings](../../../../docs/framework/wcf/extending/custom-bindings.md)). The custom binding is defined in the service and client configuration files, as shown in the following sample configuration.  
   
-```  
+```xml  
 <bindings>  
   <!-- Configure a custom binding. -->  
   <customBinding>  
@@ -49,7 +49,7 @@ This sample demonstrates how to configure security by using a custom binding. It
   
  The custom binding uses a service certificate to authenticate the service on the transport level and to protect the messages during the transmission between client and service. This is accomplished by the `sslStreamSecurity` binding element. The service's certificate is configured using a service behavior as shown in the following sample configuration.  
   
-```  
+```xml  
 <behaviors>  
       <serviceBehaviors>  
         <behavior name="CalculatorServiceBehavior">  
@@ -173,7 +173,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
     6.  Modify the client’s App.config file as follows:  
   
-        ```  
+        ```xml  
         <client>  
             <endpoint name="default"  
                 address="net.tcp://ReplaceThisWithServiceMachineName:8000/ServiceModelSamples/Service"   

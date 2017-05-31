@@ -29,7 +29,7 @@ This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> 
   
  Take, for example, the following piece of an XML document.  
   
-```  
+```xml  
 <parent attribute1="6">  
     <child>One</child>  
     <child>Two</child>  
@@ -73,7 +73,7 @@ This topic describes how to use the <xref:System.Xml.Schema.XmlSchemaInference> 
 ## Inline Schemas  
  If an inline XML Schema definition language (XSD) schema is encountered during the <xref:System.Xml.Schema.XmlSchemaInference> process, an <xref:System.Xml.Schema.XmlSchemaInferenceException> is thrown. For example, the following inline schema throws an <xref:System.Xml.Schema.XmlSchemaInferenceException>.  
   
-```  
+```xml  
 <root xmlns:ex="http://www.contoso.com" xmlns="http://www.tempuri.org">  
     <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.contoso.com">  
         <xs:element name="Contoso" type="xs:normalizedString" />  

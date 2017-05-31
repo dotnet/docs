@@ -73,7 +73,7 @@ Controlling the access to resources on a Windows-domain computer is a basic secu
   
 4.  Set the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior.PrincipalPermissionMode%2A> property to <xref:System.ServiceModel.Description.PrincipalPermissionMode.UseAspNetRoles> as shown in the following configuration example:  
   
-    ```  
+    ```xml  
     <behaviors>  
       <serviceBehaviors>  
       <behavior name="SvcBehavior1">  

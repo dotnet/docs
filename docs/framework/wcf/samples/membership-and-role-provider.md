@@ -37,7 +37,7 @@ The Membership and Role Provider sample demonstrates how a service can use the [
   
  The membership and role providers are configured to use a store backed by SQL Server. A connection string and various options are specified in the service configuration file. The membership provider is given the name `SqlMembershipProvider` while the role provider is given the name `SqlRoleProvider`.  
   
-```  
+```xml  
 <!-- Set the connection string for SQL Server -->  
 <connectionStrings>  
   <add name="SqlConn"   
@@ -77,7 +77,7 @@ The Membership and Role Provider sample demonstrates how a service can use the [
   
  The service exposes a single endpoint for communicating with the service, which is defined by using the Web.config configuration file. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding`, which defaults to using Windows authentication. This sample sets the standard `wsHttpBinding` to use username authentication. The behavior specifies that the server certificate is to be used for service authentication. The server certificate must contain the same value for the `SubjectName` as the `findValue` attribute in the [\<serviceCertificate>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecertificate-of-servicecredentials.md) configuration element. In addition the behavior specifies that authentication of username-password pairs is performed by the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provider and role mapping is performed by the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider by specifying the names defined for the two providers.  
   
-```  
+```xml  
 <system.serviceModel>  
   
   <protocolMapping>  

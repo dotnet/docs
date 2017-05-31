@@ -22,7 +22,7 @@ Specifies a user account for processes that host [!INCLUDE[indigo2](../../../../
   
 ## Syntax  
   
-```  
+```xml  
 <allowAccounts>  
    <add securityIdentifier="String"/>  
 </allowAccounts>  
@@ -49,7 +49,7 @@ Specifies a user account for processes that host [!INCLUDE[indigo2](../../../../
 ## Example  
  The following configuration example adds the five default identifiers for user accounts to this collection.  
   
-```  
+```xml  
 <allowAccounts>  
    // LocalSystem account  
    <add securityIdentifier="S-1-5-18"/>  

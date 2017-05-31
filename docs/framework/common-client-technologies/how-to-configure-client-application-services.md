@@ -136,13 +136,13 @@ This topic describes how to use the [!INCLUDE[vsprvs](../../../includes/vsprvs-m
   
 5.  Add an `<add>` element as a child of the `<providers>` element. You must specify `name` and `type` attributes as shown in the following example. The `type` attribute value must be an assembly-qualified type name. For more information, see <xref:System.Type.AssemblyQualifiedName%2A?displayProperty=fullName> and [Assembly Names](../../../docs/framework/app-domains/assembly-names.md).  
   
-    ```  
+    ```xml  
     <add name="MyCustomRoleProvider" type="MyNamespace.MyRoleProvider, MyAssembly" />  
     ```  
   
 6.  Modify the `defaultProvider` attribute of the `<membership>` or `<roleManager>` element to specify the name value from the `<add>` element that you added in the previous step.  
   
-    ```  
+    ```xml  
     <roleManager enabled="true" defaultProvider="MyCustomRoleProvider">  
     ```  
   

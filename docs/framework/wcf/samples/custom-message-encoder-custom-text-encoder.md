@@ -226,7 +226,7 @@ CustomBinding binding = new CustomBinding(bindingElements);
   
  This configuration handler maps to the following representation in the App.config or Web.config for the service or client.  
   
-```  
+```xml  
 <customTextMessageEncoding encoding="utf-8" contentType="text/xml" messageVersion="Soap11Addressing1" />  
 ```  
   
@@ -234,7 +234,7 @@ CustomBinding binding = new CustomBinding(bindingElements);
   
  To use this configuration handler it must be registered using the following configuration element.  
   
-```  
+```xml  
 <extensions>  
     <bindingElementExtensions>  
         <add name="customTextMessageEncoding" type="   

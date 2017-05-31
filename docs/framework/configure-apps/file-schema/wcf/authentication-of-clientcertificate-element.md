@@ -28,7 +28,7 @@ Specifies authentication behaviors for client certificates used by a service.
   
 ## Syntax  
   
-```  
+```xml  
 <authentication  
 customCertificateValidatorType="namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
 certificateValidationMode="ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
@@ -94,7 +94,7 @@ trustedStoreLocation="CurrentUser/LocalMachine"
 ## Example  
  The following code specifies an X.509 certificate and a custom validation type in the `<authentication>` element.  
   
-```  
+```xml  
 <serviceBehaviors>  
  <behavior name="myServiceBehavior">  
   <clientCertificate>  

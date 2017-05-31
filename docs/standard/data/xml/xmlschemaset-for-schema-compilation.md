@@ -244,7 +244,7 @@ foreach (XmlSchema schema in schemaSet.Schemas())
   
  For example, consider an <xref:System.Xml.Schema.XmlSchemaSet> that contains multiple schemas for the `http://www.contoso.com` namespace. A schema with the following `xs:import` directive is added to the <xref:System.Xml.Schema.XmlSchemaSet>.  
   
-```  
+```xml  
 <xs:import namespace="http://www.contoso.com" schemaLocation="http://www.contoso.com/schema.xsd" />  
 ```  
   

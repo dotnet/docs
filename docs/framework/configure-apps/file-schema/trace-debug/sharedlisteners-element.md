@@ -38,7 +38,7 @@ Contains listeners that any source or trace element can reference.  These listen
   
 ## Syntax  
   
-```  
+```xml  
 <sharedListeners>   
   <add>...</add>  
 </sharedListeners>  
@@ -71,7 +71,7 @@ Contains listeners that any source or trace element can reference.  These listen
 ## Example  
  The following example shows how to use the `<sharedListeners>` element to add the listener `console` to the `Listeners` collection for both the <xref:System.Diagnostics.TraceSource> and <xref:System.Diagnostics.Trace> classes. The console trace listener writes trace information to the console through calls to either <xref:System.Diagnostics.TraceSource> or <xref:System.Diagnostics.Trace>.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sharedListeners>  

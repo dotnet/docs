@@ -91,7 +91,7 @@ To successfully deploy your .NET Framework application, you must understand how 
   
  The following code provides a simple example of an application configuration file. This example adds a <xref:System.Diagnostics.TextWriterTraceListener> to the <xref:System.Diagnostics.Debug.Listeners%2A> collection to enable recording debug information to a file.  
   
-```  
+```xml  
 <configuration>  
    <system.diagnostics>  
       <trace useGlobalLock="false" autoflush="true" indentsize="0">  
@@ -108,7 +108,7 @@ To successfully deploy your .NET Framework application, you must understand how 
   
  The following is an example of a Publisher Policy configuration file:  
   
-```  
+```xml  
 <configuration>  
     <runtime>  
         <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
@@ -243,7 +243,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
 ##### Multiple Assemblies with the Same Name  
  The following example shows how to configure multiple assemblies with the same name.  
   
-```  
+```xml  
 <dependentAssembly>  
    <assemblyIdentity name="Server" publicKeyToken="c0305c36380ba429" />   
       <codeBase version="1.0.0.0" href="v1/Server.dll"/>  

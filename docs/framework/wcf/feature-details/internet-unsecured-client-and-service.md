@@ -46,7 +46,7 @@ The following illustration shows an example of a public, unsecured [!INCLUDE[ind
 ### Service Configuration  
  The following code sets up the same endpoint using configuration.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  
@@ -89,7 +89,7 @@ The following illustration shows an example of a public, unsecured [!INCLUDE[ind
 ### Client Configuration  
  The following code configures the client.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

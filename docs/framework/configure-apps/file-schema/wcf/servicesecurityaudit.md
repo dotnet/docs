@@ -26,7 +26,7 @@ Specifies settings that enable auditing of security events during service operat
   
 ## Syntax  
   
-```  
+```xml  
 <serviceSecurityAudit   
    auditLogLocation="Default/Application/Security"  
    messageAuthenticationAuditLevel= None/Success/Failure/SuccessAndFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessAndFailure"  
@@ -70,7 +70,7 @@ Specifies settings that enable auditing of security events during service operat
   
 ## Example  
   
-```  
+```xml  
 <system.serviceModel>  
    <serviceBehaviors>  
       <behavior name="NewBehavior">  

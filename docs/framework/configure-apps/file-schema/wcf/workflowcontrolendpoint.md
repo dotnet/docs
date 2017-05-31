@@ -18,14 +18,18 @@ manager: "erikre"
 # &lt;workflowControlEndpoint&gt;
 This configuration element defines a standard endpoint for controlling the execution of workflow instances (create, run, suspend, terminate, etc).  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<standardEndpoints>  
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
-    <standardEndpoints>       <workflowControlEndpoint>           <standardEndpoint                  name="String" />        </workflowControlEndpoint>            </standardEndpoints>  
+  <standardEndpoints>
+    <workflowControlEndpoint>
+      <standardEndpoint name="String" />
+    </workflowControlEndpoint>
+  </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

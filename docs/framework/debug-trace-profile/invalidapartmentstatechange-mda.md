@@ -61,7 +61,7 @@ The `invalidApartmentStateChange` managed debugging assistant (MDS) is activated
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <invalidApartmentStateChange />  

@@ -37,7 +37,7 @@ Encapsulates binding policy and assembly location for each assembly. Use one `de
   
 ## Syntax  
   
-```  
+```xml  
 <dependentAssembly>   
 </dependentAssembly>  
 ```  
@@ -68,7 +68,7 @@ Encapsulates binding policy and assembly location for each assembly. Use one `de
 ## Example  
  The following example shows how to encapsulate assembly information for two assemblies.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

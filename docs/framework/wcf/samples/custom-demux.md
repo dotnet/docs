@@ -117,7 +117,7 @@ public static void Main()
 > [!NOTE]
 >  The queue name uses a dot (.) for the local computer and backslash separators in its path. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint address specifies a msmq.formatname scheme, and uses localhost for the local computer. What follows the scheme is a properly formatted queue address according to the MSMQ Format name addressing guidelines.  
   
-```  
+```xml  
 <appSettings>  
     <!-- Use appSetting to configure the MSMQ queue name. -->  
     <add key="queueName" value=".\private$\Orders" />  

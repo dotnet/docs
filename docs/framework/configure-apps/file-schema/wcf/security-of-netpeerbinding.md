@@ -26,7 +26,7 @@ Defines the security settings of the [\<netPeerTcpBinding>](../../../../../docs/
   
 ## Syntax  
   
-```  
+```xml  
 <netPeerBinding>  
     <binding>  
         <security mode="Message/None/Transport//TransportWithMessageCredential">  

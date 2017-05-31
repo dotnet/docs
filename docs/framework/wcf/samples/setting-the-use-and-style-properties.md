@@ -23,36 +23,36 @@ This sample demonstrates how to use the Use and Style properties on the <xref:Sy
   
  The <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> style property determines how the WSDL metadata for the service is formatted. Possible values are <xref:System.ServiceModel.OperationFormatStyle.Document>, and <xref:System.ServiceModel.OperationFormatStyle.Rpc>. RPC means that the WSDL representation of messages exchanged for an operation contains parameters as if it were a remote procedure call. The following is an example.  
   
-```  
+```xml  
 <wsdl:message name="IUseAndStyleCalculator_Add_InputMessage">  
-    <wsdl:part name="n1" type="xsd:double"/>  
-    <wsdl:part name="n2" type="xsd:double"/>  
+  <wsdl:part name="n1" type="xsd:double"/>  
+  <wsdl:part name="n2" type="xsd:double"/>  
 </wsdl:message>  
 ```  
   
  Setting the style to <xref:System.ServiceModel.OperationFormatStyle.Document> means that the WSDL representation contains a single element that represents the document that is exchanged for an operation as shown in the following example.  
   
-```  
+```xml  
 <wsdl:message name="IUseAndStyleCalculator_Add_InputMessage">  
-    <wsdl:part name="parameters" element="tns:Add"/>  
+  <wsdl:part name="parameters" element="tns:Add"/>  
 </wsdl:message>  
 ```  
   
  The <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> property determines the format of the message. Possible values are <xref:System.ServiceModel.OperationFormatUse.Literal> and <xref:System.ServiceModel.OperationFormatUse.Encoded>; the default value is <xref:System.ServiceModel.OperationFormatUse.Literal>. Literal means that the message is a literal instance of the schema in the WSDL as shown in the following Document/ Literal example.  
   
-```  
+```xml  
 <Add xmlns="http://Microsoft.ServiceModel.Samples">  
-    <n1>100</n1>  
-    <n2>15.99</n2>  
+  <n1>100</n1>  
+  <n2>15.99</n2>  
 </Add>  
 ```  
   
  Encoded means that the schemas in the WSDL are abstract specifications that are encoded according to the rules found in SOAP 1.1 section 5. The following is an RPC/Encoded example.  
   
-```  
+```xml  
 <q1:Add xmlns:q1="http://Microsoft.ServiceModel.Samples">  
-    <n1 xsi:type="xsd:double" xmlns="">100</n1>  
-    <n2 xsi:type="xsd:double" xmlns="">15.99</n2>  
+  <n1 xsi:type="xsd:double" xmlns="">100</n1>  
+  <n2 xsi:type="xsd:double" xmlns="">15.99</n2>  
 </q1:Add>  
 ```  
   

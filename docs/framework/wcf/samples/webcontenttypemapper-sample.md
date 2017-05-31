@@ -46,7 +46,7 @@ public class JsonContentTypeMapper : WebContentTypeMapper
   
  To use the `JsonContentTypeMapper` class, use the following in your Web.config:  
   
-```  
+```xml  
 <system.serviceModel>  
   <standardEndpoints>  
     <webHttpEndpoint>  

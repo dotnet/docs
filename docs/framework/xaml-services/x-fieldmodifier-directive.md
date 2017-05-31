@@ -24,7 +24,7 @@ Modifies XAML compilation behavior so that fields for named object references ar
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object x:FieldModifier="Public".../>  
 ```  
   

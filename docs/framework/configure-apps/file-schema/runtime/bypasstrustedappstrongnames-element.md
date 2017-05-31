@@ -34,7 +34,7 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
   
 ## Syntax  
   
-```  
+```xml  
 <bypassTrustedAppStrongNames    
    enabled="true|false"/>  
 ```  
@@ -84,7 +84,7 @@ Specifies whether to bypass the validation of strong names on full-trust assembl
 ## Example  
  The following example shows how to specify the behavior that validates the strong-name signature on full-trust assemblies.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <bypassTrustedAppStrongNames enabled="false"/>  

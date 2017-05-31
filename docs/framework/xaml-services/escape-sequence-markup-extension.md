@@ -29,7 +29,7 @@ Provides the XAML escape sequence for attribute values. The escape sequence allo
   
 ## XAML Attribute Usage  
   
-```  
+```xml  
 <object property="{} literalValue" .../>  
 ```  
   

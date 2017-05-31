@@ -163,7 +163,7 @@ public class GameBoard {
 }  
 ```  
   
-```  
+```xaml  
 <GameBoard BoardSize="8x8"/>  
 ```  
   

@@ -60,7 +60,7 @@ The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler incorporates only the s
   
  When run, this code displays the following text.  
   
-```  
+```xml  
 <outer>  
   <inner>  
                                           Inner text  

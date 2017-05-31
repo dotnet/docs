@@ -35,7 +35,7 @@ Specifies whether to display a message box when you call the <xref:System.Diagno
   
 ## Syntax  
   
-```  
+```xml  
 <assert assertuienabled="true|false" logfilename="file name"/>  
 ```  
   
@@ -72,7 +72,7 @@ Specifies whether to display a message box when you call the <xref:System.Diagno
 ## Example  
  The following example shows how to disable displaying message boxes when you call **Debug.Assert** and write the messages to `c:\log.txt`.  
   
-```  
+```xml  
 <configuration>  
    <system.diagnostics>  
       <assert assertuienabled="false" logfilename="c:\log.txt"/>  

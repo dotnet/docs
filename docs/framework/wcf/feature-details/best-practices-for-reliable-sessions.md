@@ -68,7 +68,7 @@ This section discusses best practices for reliable sessions.
   
 -   Reliable sessions using dual HTTP channels (for example, using `WsDualHttpBinding`) can require more than the default HTTP connections per-client of 2. This means a duplex reliable session can require up to 2 connections each way, because concurrent application and protocol messages may be transferring each way at any given time. This means that, under certain conditions, depending on the message exchange pattern of the service, it is possible to deadlock a Web-hosted service using dual HTTP and reliable sessions. To increase the number of allowable HTTP connections per client, add the following to the relevant configuration file (for example, web.config of the service in question):  
   
-```  
+```xml  
 <configuration>  
    <system.net>  
       <connectionManagement>  

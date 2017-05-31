@@ -57,7 +57,7 @@ Queued applications use transactions to ensure correctness and reliable delivery
 ## Example  
  The following example shows how to specify the `TransactedBatchingBehavior` in a configuration file.  
   
-```  
+```xml  
 <behaviors>  
       <endpointBehaviors>  
         <behavior name="TransactedBatchingBehavior"  

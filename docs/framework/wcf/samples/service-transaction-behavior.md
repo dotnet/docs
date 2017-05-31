@@ -47,7 +47,7 @@ public interface ICalculator
   
  To enable the incoming transaction flow, the service is configured with the system-provided wsHttpBinding with the transactionFlow attribute set to `true`. This binding uses the interoperable WSAtomicTransactionOctober2004 protocol:  
   
-```  
+```xml  
 <bindings>  
   <wsHttpBinding>  
     <binding name="transactionalBinding" transactionFlow="true" />  

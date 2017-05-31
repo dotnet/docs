@@ -56,7 +56,7 @@ The `loaderLock` managed debugging assistant (MDA) detects attempts to execute m
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <loaderLock/>  

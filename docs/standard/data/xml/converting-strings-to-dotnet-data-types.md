@@ -91,7 +91,7 @@ writer.WriteElementString("Number", XmlConvert.ToString(value));
   
  **Input**  
   
-```  
+```xml  
 <Boolean>true</Boolean>  
 <Boolean>1</Boolean>   
 ```  

@@ -28,7 +28,7 @@ Represents a collection of X.509 certificates that are provided to authenticate 
   
 ## Syntax  
   
-```  
+```xml  
 <knownCertificates>   
       <add findValue="String"  
          storeLocation="CurrentUser/LocalMachine"  
@@ -60,7 +60,7 @@ Represents a collection of X.509 certificates that are provided to authenticate 
   
  The [\<issuedTokenAuthentication>](../../../../../docs/framework/configure-apps/file-schema/wcf/issuedtokenauthentication-of-servicecredentials.md) element is the repository for any such secure token service certificates. To add certificates, use the [\<knownCertificates> element](../../../../../docs/framework/configure-apps/file-schema/wcf/knowncertificates.md). Insert an [\<add>](../../../../../docs/framework/configure-apps/file-schema/wcf/add-of-knowncertificates.md) for each certificate, as shown in the following example.  
   
-```  
+```xml  
 <issuedTokenAuthentication>  
    <knownCertificates>  
       <add findValue="www.contoso.com"   

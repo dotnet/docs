@@ -102,7 +102,7 @@ This topic provides a brief overview of the concept of federated security. It al
   
  The service endpoint `MyServiceEndpoint` uses the [\<wsFederationHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsfederationhttpbinding.md) and requires a valid Security Assertions Markup Language (SAML) token with an `accessAuthorized` claim issued by STS B. This is declaratively specified in the service configuration.  
   
-```  
+```xml  
 <system.serviceModel>  
   <services>  
     <service type="FederationSample.MyService"      
@@ -167,7 +167,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
   
  STS B exposes a single endpoint, called `STSEndpoint` that can be use to request security tokens. Specifically, STS B issues SAML tokens with the `accessAuthorized` claim, which can be presented at the `MyService` service site for accessing the service. However, STS B requires users to present a valid SAML token issued by STS A that contains the `userAuthenticated` claim. This is declaratively specified in the STS configuration.  
   
-```  
+```xml  
 <system.serviceModel>  
   <services>  
     <service type="FederationSample.STS_B" behaviorConfiguration=  
@@ -229,7 +229,7 @@ operationRequirementType="FederationSample.MyServiceOperationRequirement, MyServ
   
  Similar to the STS B, the STS A is also a Web service that issues security tokens and exposes a single endpoint for this purpose. However, it uses a different binding (`wsHttpBinding`) and requires users to present a valid [!INCLUDE[infocard](../../../../includes/infocard-md.md)] with an `emailAddress` claim. In response, it issues SAML tokens with the `userAuthenticated` claim. This is declaratively specified in the service configuration.  
   
-```  
+```xml  
 <system.serviceModel>  
   <services>  
     <service type="FederationSample.STS_A" behaviorConfiguration="STS-A_Behavior">  

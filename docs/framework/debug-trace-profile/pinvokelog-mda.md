@@ -39,7 +39,7 @@ The `pInvokeLog` managed debugging assistant (MDA) is activated for each unique 
 ## Configuration  
  Each match element filters the .dll files to which platform invoke calls are made.  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <pInvokeLog>  

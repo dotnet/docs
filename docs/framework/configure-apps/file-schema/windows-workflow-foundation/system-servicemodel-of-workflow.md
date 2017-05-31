@@ -18,7 +18,7 @@ This configuration section contains all the workflow configuration elements.
   
 ## Syntax  
   
-```  
+```xml  
 <system.ServiceModel>  
   <behaviors>  
     <serviceBehaviors>  

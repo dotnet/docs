@@ -47,7 +47,7 @@
    
   
 ## Examples  
- The following example extracts the claims associated to the authenticated user performing an HTTP request and writes them in the HTTP response. The current user is read from the <xref:System.Web.HttpContext> as a <xref:System.Security.Claims.ClaimsPrincipal> and the claims are read from it. The claims are then written to HTTP the response.  
+ The following example extracts the claims associated to the authenticated user performing an HTTP request and writes them in the HTTP response. The current user is read from the <xref:System.Web.HttpContext> as a <xref:System.Security.Claims.ClaimsPrincipal> and the claims are read from it. The claims are then written to the <xref:System.Web.HttpResponse> object.  
   
 ```csharp  
 ClaimsPrincipal principal = HttpContext.Current.User as ClaimsPrincipal;  
@@ -89,9 +89,18 @@ if (null != principal)
         <Parameter Name="reader" Type="System.IO.BinaryReader" />
       </Parameters>
       <Docs>
-        <param name="reader">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="reader">A <see cref="T:System.IO.BinaryReader" /> pointing to a <see cref="T:System.Security.Claims.Claim" />.</param>
+        <summary>Initializes an instance of <see cref="T:System.Security.Claims.Claim" /> with the specified <see cref="T:System.IO.BinaryReader" />.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ Normally, the reader is constructed from the bytes returned from <xref:System.Security.Claims.Claim.WriteTo%2A>. 
+  
+ ]]></format>
+        </remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="reader" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -119,7 +128,7 @@ if (null != principal)
       <Docs>
         <param name="other">The security claim.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class.</summary>
-        <remarks>To be added.</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -148,8 +157,8 @@ if (null != principal)
       <Docs>
         <param name="reader">The binary reader.</param>
         <param name="subject">The subject that this claim describes.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified reader, and subject.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified reader and subject.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -178,8 +187,8 @@ if (null != principal)
       <Docs>
         <param name="other">The security claim.</param>
         <param name="subject">The subject that this claim describes.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified security claim, and subject.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified security claim and subject.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName=".ctor">
@@ -385,7 +394,7 @@ if (null != principal)
         <param name="originalIssuer">The original issuer of the claim. If this parameter is empty or <see langword="null" />, then the <see cref="P:System.Security.Claims.Claim.OriginalIssuer" /> property is set to the value of the <see cref="P:System.Security.Claims.Claim.Issuer" /> property.</param>
         <param name="subject">The subject that this claim describes.</param>
         <summary>Initializes a new instance of the <see cref="T:System.Security.Claims.Claim" /> class with the specified claim type, value, value type, issuer, original issuer and subject.</summary>
-        <remarks>To be added.</remarks>
+        <remarks></remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="type" /> or <paramref name="value" /> is <see langword="null" />.</exception>
       </Docs>
@@ -488,9 +497,15 @@ if (null != principal)
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>Returns <see cref="T:System.Byte" />.</value>
-        <remarks>To be added.</remarks>
+        <summary>Contains any additional data provided by a derived type.</summary>
+        <remarks><format type="text/markdown"><![CDATA[
+
+## Remarks  
+ The <xref:System.Security.Claims.Claim.CustomSerializationData%2A> property is typically set when calling <xref:System.Security.Claims.ClaimsIdentity.WriteTo(System.IO.BinaryWriter,System.Byte[])>.
+  
+ ]]></format>
+        </remarks>
+        <value>A <see cref="T:System.Byte" /> array representing the additional serialized data.</value>
       </Docs>
     </Member>
     <Member MemberName="Issuer">
@@ -806,9 +821,11 @@ if (null != principal)
         <Parameter Name="writer" Type="System.IO.BinaryWriter" />
       </Parameters>
       <Docs>
-        <param name="writer">To be added.</param>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <param name="writer">The writer to use for data storage.</param>
+        <summary>Writes this <see cref="T:System.Security.Claims.Claim" /> to the writer.</summary>
+        <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException">
+          <paramref name="writer" /> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="WriteTo">
@@ -838,10 +855,10 @@ if (null != principal)
         <Parameter Name="userData" Type="System.Byte[]" />
       </Parameters>
       <Docs>
-        <param name="writer">The writer to write this claim</param>
-        <param name="userData">The user data to claim</param>
+        <param name="writer">The writer to write this claim.</param>
+        <param name="userData">The user data to claim.</param>
         <summary>Writes this <see cref="T:System.Security.Claims.Claim" /> to the writer.</summary>
-        <remarks>To be added.</remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

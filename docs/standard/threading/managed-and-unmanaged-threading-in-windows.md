@@ -47,9 +47,9 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
 |Close to **CoInitializeEx** (OLE32.DLL)|<xref:System.Threading.Thread.ApartmentState%2A?displayProperty=fullName>|  
   
 ## Managed Threads and COM Apartments  
- A managed thread can be marked to indicate that it will host a [single-threaded](http://msdn.microsoft.com/library/windows/desktop/ms680112.aspx) or [multithreaded](http://msdn.microsoft.com/library/windows/desktop/ms693421.aspx) apartment. (For more information on the COM threading architecture, see [Processes, threads, and Apartments](http://msdn.microsoft.com/library/windows/desktop/ms693344.aspx).) The <xref:System.Threading.Thread.GetApartmentState%2A>, <xref:System.Threading.Thread.SetApartmentState%2A>, and <xref:System.Threading.Thread.TrySetApartmentState%2A> methods of the <xref:System.Threading.Thread> class return and assign the apartment state of a thread. If the state has not been set, <xref:System.Threading.Thread.GetApartmentState%2A> returns <xref:System.Threading.ApartmentState?displayProperty=fullName>.  
+ A managed thread can be marked to indicate that it will host a [single-threaded](http://msdn.microsoft.com/library/windows/desktop/ms680112.aspx) or [multithreaded](http://msdn.microsoft.com/library/windows/desktop/ms693421.aspx) apartment. (For more information on the COM threading architecture, see [Processes, threads, and Apartments](http://msdn.microsoft.com/library/windows/desktop/ms693344.aspx).) The <xref:System.Threading.Thread.GetApartmentState%2A>, <xref:System.Threading.Thread.SetApartmentState%2A>, and <xref:System.Threading.Thread.TrySetApartmentState%2A> methods of the <xref:System.Threading.Thread> class return and assign the apartment state of a thread. If the state has not been set, <xref:System.Threading.Thread.GetApartmentState%2A> returns <xref:System.Threading.ApartmentState.Unknown?displayProperty=fullName>.  
   
- The property can be set only when the thread is in the <xref:System.Threading.ThreadState?displayProperty=fullName> state; it can be set only once for a thread.  
+ The property can be set only when the thread is in the <xref:System.Threading.ThreadState.Unstarted?displayProperty=fullName> state; it can be set only once for a thread.  
   
  If the apartment state is not set before the thread is started, the thread is initialized as a multithreaded apartment (MTA). The finalizer thread and all threads controlled by <xref:System.Threading.ThreadPool> are MTA.  
   
@@ -58,7 +58,7 @@ Management of all threads is done through the <xref:System.Threading.Thread> cla
   
  Managed objects that are exposed to COM behave as if they had aggregated the free-threaded marshaler. In other words, they can be called from any COM apartment in a free-threaded manner. The only managed objects that do not exhibit this free-threaded behavior are those objects that derive from <xref:System.EnterpriseServices.ServicedComponent>or <xref:System.Runtime.InteropServices.StandardOleMarshalObject>.  
   
- In the managed world, there is no support for the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> unless you use contexts and context-bound managed instances. If you are using Enterprise Services, then your object must derive from <xref:System.EnterpriseServices> (which is itself derived from <xref:System.ContextBoundObject>).  
+ In the managed world, there is no support for the <xref:System.Runtime.Remoting.Contexts.SynchronizationAttribute> unless you use contexts and context-bound managed instances. If you are using Enterprise Services, then your object must derive from <xref:System.EnterpriseServices.ServicedComponent> (which is itself derived from <xref:System.ContextBoundObject>).  
   
  When managed code calls out to COM objects, it always follows COM rules. In other words, it calls through COM apartment proxies and COM+ 1.0 context wrappers as dictated by OLE32.  
   

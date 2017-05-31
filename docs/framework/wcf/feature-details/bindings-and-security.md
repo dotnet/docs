@@ -169,7 +169,7 @@ The system-provided bindings included with [!INCLUDE[indigo1](../../../../includ
   
 -   Client Credential Types supported: None, Windows, UserName, Certificate, IssuedToken.  
   
- The <xref:System.ServiceModel.MessageCredentialType> credential is supported only when the security mode is set to either <xref:System.ServiceModel.NetMsmqSecurityMode> or <xref:System.ServiceModel.NetMsmqSecurityMode>.  
+ The <xref:System.ServiceModel.MessageCredentialType.Certificate> credential is supported only when the security mode is set to either <xref:System.ServiceModel.NetMsmqSecurityMode.Both> or <xref:System.ServiceModel.NetMsmqSecurityMode.Message>.  
   
  [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] <xref:System.ServiceModel.MessageSecurityOverMsmq> and <xref:System.ServiceModel.MsmqTransportSecurity>.  
   

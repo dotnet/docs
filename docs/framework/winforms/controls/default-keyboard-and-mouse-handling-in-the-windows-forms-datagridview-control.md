@@ -53,7 +53,7 @@ The following tables describe how users can interact with the <xref:System.Windo
 |CTRL+HOME|Moves the focus to the first cell in the control.|  
 |CTRL+END|Moves the focus to the last cell in the control.|  
 |CTRL+PAGE DOWN/UP|Same as PAGE DOWN or PAGE UP.|  
-|F2|Puts the current cell into cell edit mode if the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property value is <xref:System.Windows.Forms.DataGridViewEditMode> or <xref:System.Windows.Forms.DataGridViewEditMode>.|  
+|F2|Puts the current cell into cell edit mode if the <xref:System.Windows.Forms.DataGridView.EditMode%2A> property value is <xref:System.Windows.Forms.DataGridViewEditMode.EditOnF2> or <xref:System.Windows.Forms.DataGridViewEditMode.EditOnKeystrokeOrF2>.|  
 |F4|If the current cell is a <xref:System.Windows.Forms.DataGridViewComboBoxCell>, puts the cell into edit mode and displays the drop-down list.|  
 |ALT+UP/DOWN ARROW|If the current cell is a <xref:System.Windows.Forms.DataGridViewComboBoxCell>, puts the cell into edit mode and displays the drop-down list.|  
 |SPACE|If the current cell is a <xref:System.Windows.Forms.DataGridViewButtonCell>, <xref:System.Windows.Forms.DataGridViewLinkCell>, or <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, raises the <xref:System.Windows.Forms.DataGridView.CellClick> and <xref:System.Windows.Forms.DataGridView.CellContentClick> events. If the current cell is a <xref:System.Windows.Forms.DataGridViewButtonCell>, also presses the button. If the current cell is a <xref:System.Windows.Forms.DataGridViewCheckBoxCell>, also changes the check state.|  
@@ -65,20 +65,20 @@ The following tables describe how users can interact with the <xref:System.Windo
 |CTRL+0|Enters a <xref:System.DBNull.Value?displayProperty=fullName> value into the current cell if the cell can be edited. By default, the display value for a <xref:System.DBNull> cell value is the value of the <xref:System.Windows.Forms.DataGridViewCellStyle.NullValue%2A> property of the <xref:System.Windows.Forms.DataGridViewCellStyle> in effect for the current cell.|  
   
 ### Selection Keys  
- If the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property is set to `false` and the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode>, changing the current cell by using the navigation keys changes the selection to the new cell. The SHIFT, CTRL, and ALT keys do not affect this behavior.  
+ If the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property is set to `false` and the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.CellSelect>, changing the current cell by using the navigation keys changes the selection to the new cell. The SHIFT, CTRL, and ALT keys do not affect this behavior.  
   
- If the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>, the same behavior occurs but with the following additions.  
+ If the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect>, the same behavior occurs but with the following additions.  
   
 |Key or key combination|Description|  
 |----------------------------|-----------------|  
 |SHIFT+SPACEBAR|Selects the full row or column (the same as clicking the row or column header).|  
 |navigation key (arrow key, PAGE UP/DOWN, HOME, END)|If a full row or column is selected, changing the current cell to a new row or column moves the selection to the full new row or column (depending on the selection mode).|  
   
- If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `false` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>, changing the current cell to a new row or column by using the keyboard moves the selection to the full new row or column. The SHIFT, CTRL, and ALT keys do not affect this behavior.  
+ If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `false` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect>, changing the current cell to a new row or column by using the keyboard moves the selection to the full new row or column. The SHIFT, CTRL, and ALT keys do not affect this behavior.  
   
  If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true`, the navigation behavior does not change, but navigating with the keyboard while pressing SHIFT (including CTRL+SHIFT) will modify a multi-cell selection. Before navigation begins, the control marks the current cell as an anchor cell. When you navigate while pressing SHIFT, the selection includes all cells between the anchor cell and the current cell. Other cells in the control will remain selected if they were already selected, but they may become unselected if the keyboard navigation temporarily puts them between the anchor cell and the current cell.  
   
- If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>, the behavior of the anchor cell and current cell is the same, but only full rows or columns become selected or unselected.  
+ If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect>, the behavior of the anchor cell and current cell is the same, but only full rows or columns become selected or unselected.  
   
 ## Default Mouse Handling  
   
@@ -97,16 +97,16 @@ The following tables describe how users can interact with the <xref:System.Windo
 ### Mouse Selection  
  No selection behavior is associated with the middle mouse button or the mouse wheel.  
   
- If the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property is set to `false` and the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode>, the following behavior occurs.  
+ If the <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> property is set to `false` and the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> property is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.CellSelect>, the following behavior occurs.  
   
 |Mouse action|Description|  
 |------------------|-----------------|  
 |Click left mouse button|Selects only the current cell if the user clicks a cell. No selection behavior if the user clicks a row or column header.|  
 |Click right mouse button|Displays a shortcut menu if one is available.|  
   
- The same behavior occurs when the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>, except that, depending on the selection mode, clicking a row or column header will select the full row or column and set the current cell to the first cell in the row or column.  
+ The same behavior occurs when the <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect>, except that, depending on the selection mode, clicking a row or column header will select the full row or column and set the current cell to the first cell in the row or column.  
   
- If <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>, clicking any cell in a row or column will select the full row or column.  
+ If <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect>, clicking any cell in a row or column will select the full row or column.  
   
  If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true`, clicking a cell while pressing CTRL or SHIFT will modify a multi-cell selection.  
   
@@ -114,9 +114,9 @@ The following tables describe how users can interact with the <xref:System.Windo
   
  When you click a cell or a series of cells while pressing SHIFT, the selection includes all cells between the current cell and an anchor cell located at the position of the current cell before the first click. When you click and drag the pointer across multiple cells, the anchor cell is the cell clicked at the beginning of the drag operation. Subsequent clicks while pressing SHIFT change the current cell, but not the anchor cell. Other cells in the control will remain selected if they were already selected, but they may become unselected if mouse navigation temporarily puts them between the anchor cell and the current cell.  
   
- If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>, clicking a row or column header (depending on the selection mode) while pressing SHIFT will modify an existing selection of full rows or columns if such a selection exists. Otherwise, it will clear the selection and start a new selection of full rows or columns. Clicking a row or column header while pressing CTRL, however, will add or remove the clicked row or column from the current selection without otherwise modifying the current selection.  
+ If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.RowHeaderSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.ColumnHeaderSelect>, clicking a row or column header (depending on the selection mode) while pressing SHIFT will modify an existing selection of full rows or columns if such a selection exists. Otherwise, it will clear the selection and start a new selection of full rows or columns. Clicking a row or column header while pressing CTRL, however, will add or remove the clicked row or column from the current selection without otherwise modifying the current selection.  
   
- If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode> or <xref:System.Windows.Forms.DataGridViewSelectionMode>, clicking a cell while pressing SHIFT or CTRL behaves the same way except that only full rows and columns are affected.  
+ If <xref:System.Windows.Forms.DataGridView.MultiSelect%2A> is set to `true` and <xref:System.Windows.Forms.DataGridView.SelectionMode%2A> is set to <xref:System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect> or <xref:System.Windows.Forms.DataGridViewSelectionMode.FullColumnSelect>, clicking a cell while pressing SHIFT or CTRL behaves the same way except that only full rows and columns are affected.  
   
 ## See Also  
  <xref:System.Windows.Forms.DataGridView>   

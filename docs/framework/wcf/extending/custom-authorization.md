@@ -32,7 +32,7 @@ Authorization is the process of controlling access to resources and tasks. The t
  Describes how to compare claims.  
   
  [How to: Create a Custom Principal Identity](../../../../docs/framework/wcf/extending/how-to-create-a-custom-principal-identity.md)  
- Illustrates the scenario when <xref:System.ServiceModel.Description.PrincipalPermissionMode> is used in combination with a custom authorization policy and a custom principal.  
+ Illustrates the scenario when <xref:System.ServiceModel.Description.PrincipalPermissionMode.Custom> is used in combination with a custom authorization policy and a custom principal.  
   
 ## Reference  
  <xref:System.IdentityModel.Claims>  

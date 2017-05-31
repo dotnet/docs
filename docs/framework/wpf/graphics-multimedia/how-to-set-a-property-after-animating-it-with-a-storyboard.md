@@ -33,14 +33,14 @@ In some cases, it might appear that you can't change the value of a property aft
   
  The previous code doesn't appear to do anything: the brush remains yellow, which is the value supplied by the <xref:System.Windows.Media.Animation.ColorAnimation> that animated the brush. The underlying property value (the base value) is actually changed to blue. However, the effective, or current, value remains yellow because the <xref:System.Windows.Media.Animation.ColorAnimation> is still overriding the base value. If you want the base value to become the effective value again, you must stop the animation from influencing the property. There are three ways to do this with storyboard animations:  
   
--   Set the animation's <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property to <xref:System.Windows.Media.Animation.FillBehavior>  
+-   Set the animation's <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> property to <xref:System.Windows.Media.Animation.FillBehavior.Stop>  
   
 -   Remove the entire Storyboard.  
   
 -   Remove the animation from the individual property.  
   
 ## Set the animation's FillBehavior property to Stop  
- By setting <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> to <xref:System.Windows.Media.Animation.FillBehavior>, you tell the animation to stop affecting its target property after it reaches the end of its active period.  
+ By setting <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> to <xref:System.Windows.Media.Animation.FillBehavior.Stop>, you tell the animation to stop affecting its target property after it reaches the end of its active period.  
   
  [!code-xml[timingbehaviors_snip#GraphicsMMButton2Declaration](../../../../samples/snippets/csharp/VS_Snippets_Wpf/timingbehaviors_snip/CSharp/AnimateThenSetPropertyExample.xaml#graphicsmmbutton2declaration)]  
   

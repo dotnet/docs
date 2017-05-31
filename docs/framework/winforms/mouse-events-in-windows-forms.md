@@ -64,7 +64,7 @@ When you handle mouse input, you usually want to know the location of the mouse 
   
 5.  <xref:System.Windows.Forms.Control.MouseDown> event.  
   
-6.  <xref:System.Windows.Forms.Control.DoubleClick> event. (This can vary, depending on whether the control in question has the <xref:System.Windows.Forms.ControlStyles> style bit set to `true`. For more information about how to set a <xref:System.Windows.Forms.ControlStyles> bit, see the <xref:System.Windows.Forms.Control.SetStyle%2A> method.)  
+6.  <xref:System.Windows.Forms.Control.DoubleClick> event. (This can vary, depending on whether the control in question has the <xref:System.Windows.Forms.ControlStyles.StandardDoubleClick> style bit set to `true`. For more information about how to set a <xref:System.Windows.Forms.ControlStyles> bit, see the <xref:System.Windows.Forms.Control.SetStyle%2A> method.)  
   
 7.  <xref:System.Windows.Forms.Control.MouseDoubleClick> event.  
   

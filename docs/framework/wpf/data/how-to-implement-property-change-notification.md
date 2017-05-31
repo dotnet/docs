@@ -21,7 +21,7 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # How to: Implement Property Change Notification
-To support <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.BindingMode> binding to enable your binding target properties to automatically reflect the dynamic changes of the binding source (for example, to have the preview pane updated automatically when the user edits a form), your class needs to provide the proper property changed notifications. This example shows how to create a class that implements <xref:System.ComponentModel.INotifyPropertyChanged>.  
+To support <xref:System.Windows.Data.BindingMode.OneWay> or <xref:System.Windows.Data.BindingMode.TwoWay> binding to enable your binding target properties to automatically reflect the dynamic changes of the binding source (for example, to have the preview pane updated automatically when the user edits a form), your class needs to provide the proper property changed notifications. This example shows how to create a class that implements <xref:System.ComponentModel.INotifyPropertyChanged>.  
   
 ## Example  
  To implement <xref:System.ComponentModel.INotifyPropertyChanged> you need to declare the <xref:System.ComponentModel.INotifyPropertyChanged.PropertyChanged> event and create the `OnPropertyChanged` method. Then for each property you want change notifications for, you call `OnPropertyChanged` whenever the property is updated.  
@@ -29,7 +29,7 @@ To support <xref:System.Windows.Data.BindingMode> or <xref:System.Windows.Data.B
  [!code-csharp[SimpleBinding#PersonClass](../../../../samples/snippets/csharp/VS_Snippets_Wpf/SimpleBinding/CSharp/Person.cs#personclass)]
  [!code-vb[SimpleBinding#PersonClass](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/SimpleBinding/VisualBasic/Person.vb#personclass)]  
   
- To see an example of how the `Person` class can be used to support <xref:System.Windows.Data.BindingMode> binding, see [Control When the TextBox Text Updates the Source](../../../../docs/framework/wpf/data/how-to-control-when-the-textbox-text-updates-the-source.md).  
+ To see an example of how the `Person` class can be used to support <xref:System.Windows.Data.BindingMode.TwoWay> binding, see [Control When the TextBox Text Updates the Source](../../../../docs/framework/wpf/data/how-to-control-when-the-textbox-text-updates-the-source.md).  
   
 ## See Also  
  [Binding Sources Overview](../../../../docs/framework/wpf/data/binding-sources-overview.md)   

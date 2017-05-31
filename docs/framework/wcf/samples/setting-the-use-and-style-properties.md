@@ -16,12 +16,12 @@ ms.author: "erikre"
 manager: "erikre"
 ---
 # Setting the Use and Style Properties
-This sample demonstrates how to use the Use and Style properties on the <xref:System.ServiceModel.XmlSerializerFormatAttribute> and the <xref:System.ServiceModel.DataContractFormatAttribute>. These properties affect how messages are formatted. By default, the message body is formatted with the style set to <xref:System.ServiceModel.OperationFormatStyle>. These settings can be specified at either the service contract level or the operation contract level.  
+This sample demonstrates how to use the Use and Style properties on the <xref:System.ServiceModel.XmlSerializerFormatAttribute> and the <xref:System.ServiceModel.DataContractFormatAttribute>. These properties affect how messages are formatted. By default, the message body is formatted with the style set to <xref:System.ServiceModel.OperationFormatStyle.Document>. These settings can be specified at either the service contract level or the operation contract level.  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
- The <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> style property determines how the WSDL metadata for the service is formatted. Possible values are <xref:System.ServiceModel.OperationFormatStyle>, and <xref:System.ServiceModel.OperationFormatStyle>. RPC means that the WSDL representation of messages exchanged for an operation contains parameters as if it were a remote procedure call. The following is an example.  
+ The <xref:System.ServiceModel.DataContractFormatAttribute.Style%2A> style property determines how the WSDL metadata for the service is formatted. Possible values are <xref:System.ServiceModel.OperationFormatStyle.Document>, and <xref:System.ServiceModel.OperationFormatStyle.Rpc>. RPC means that the WSDL representation of messages exchanged for an operation contains parameters as if it were a remote procedure call. The following is an example.  
   
 ```  
 <wsdl:message name="IUseAndStyleCalculator_Add_InputMessage">  
@@ -30,7 +30,7 @@ This sample demonstrates how to use the Use and Style properties on the <xref:Sy
 </wsdl:message>  
 ```  
   
- Setting the style to <xref:System.ServiceModel.OperationFormatStyle> means that the WSDL representation contains a single element that represents the document that is exchanged for an operation as shown in the following example.  
+ Setting the style to <xref:System.ServiceModel.OperationFormatStyle.Document> means that the WSDL representation contains a single element that represents the document that is exchanged for an operation as shown in the following example.  
   
 ```  
 <wsdl:message name="IUseAndStyleCalculator_Add_InputMessage">  
@@ -38,7 +38,7 @@ This sample demonstrates how to use the Use and Style properties on the <xref:Sy
 </wsdl:message>  
 ```  
   
- The <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> property determines the format of the message. Possible values are <xref:System.ServiceModel.OperationFormatUse> and <xref:System.ServiceModel.OperationFormatUse>; the default value is <xref:System.ServiceModel.OperationFormatUse>. Literal means that the message is a literal instance of the schema in the WSDL as shown in the following Document/ Literal example.  
+ The <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> property determines the format of the message. Possible values are <xref:System.ServiceModel.OperationFormatUse.Literal> and <xref:System.ServiceModel.OperationFormatUse.Encoded>; the default value is <xref:System.ServiceModel.OperationFormatUse.Literal>. Literal means that the message is a literal instance of the schema in the WSDL as shown in the following Document/ Literal example.  
   
 ```  
 <Add xmlns="http://Microsoft.ServiceModel.Samples">  
@@ -56,11 +56,11 @@ This sample demonstrates how to use the Use and Style properties on the <xref:Sy
 </q1:Add>  
 ```  
   
- The WS-I Basic Profile 1.0 prohibits the use of <xref:System.ServiceModel.OperationFormatUse> and you should only use it when required by legacy services. The `Encoded` message format is only available when using the XmlSerializer.  
+ The WS-I Basic Profile 1.0 prohibits the use of <xref:System.ServiceModel.OperationFormatUse.Encoded> and you should only use it when required by legacy services. The `Encoded` message format is only available when using the XmlSerializer.  
   
  To allow you to see the messages being sent and received, this sample is based on the [Tracing and Message Logging](../../../../docs/framework/wcf/samples/tracing-and-message-logging.md). The service configuration and source code have been modified to enable and utilize tracing and message logging. In addition, the <<!--zz xref:System.ServiceModel.WsHttpBinding --> `xref:System.ServiceModel.WsHttpBinding`> has been configured without security, so the logged messages can be viewed in an unencrypted format. The resulting trace logs (System.ServiceModel.e2e and Message.log) should be viewed by using the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md). The traces are configured to be created in the C:\LOGS folder. Create the folder before running the sample. To view message contents in the Trace Viewer tool, select **Messages** in both the left and the right panes of the tool.  
   
- The following code shows the service contract with the <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> property set to <xref:System.ServiceModel.OperationFormatUse> and the format of the message body changed from the default <xref:System.ServiceModel.OperationFormatStyle> to <xref:System.ServiceModel.OperationFormatStyle>.  
+ The following code shows the service contract with the <xref:System.ServiceModel.XmlSerializerFormatAttribute.Use%2A> property set to <xref:System.ServiceModel.OperationFormatUse> and the format of the message body changed from the default <xref:System.ServiceModel.OperationFormatStyle> to <xref:System.ServiceModel.OperationFormatStyle.Document>.  
   
 ```  
 [ServiceContract(Namespace="http://Microsoft.ServiceModel.Samples"),  

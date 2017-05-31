@@ -25,13 +25,13 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
  A theoretical line has a width of 0. When you draw a line that is 1 pixel wide, the pixels are centered on the theoretical line. If you draw a line that is more than one pixel wide, the pixels are either centered on the theoretical line or appear to one side of the theoretical line. You can set the pen alignment property of a <xref:System.Drawing.Pen> to determine how the pixels drawn with that pen will be positioned relative to theoretical lines.  
   
- The values <xref:System.Drawing.Drawing2D.PenAlignment>, <xref:System.Drawing.Drawing2D.PenAlignment>, and <xref:System.Drawing.Drawing2D.PenAlignment> that appear in the following code examples are members of the <xref:System.Drawing.Drawing2D.PenAlignment> enumeration.  
+ The values <xref:System.Drawing.Drawing2D.PenAlignment.Center>, <xref:System.Drawing.Drawing2D.PenAlignment.Outset>, and <xref:System.Drawing.Drawing2D.PenAlignment.Inset> that appear in the following code examples are members of the <xref:System.Drawing.Drawing2D.PenAlignment> enumeration.  
   
  The following code example draws a line twice: once with a black pen of width 1 and once with a green pen of width 10.  
   
 ### To vary the width of a pen  
   
--   Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment> (the default) to specify that pixels drawn with the green pen will be centered on the theoretical line. The following illustration shows the resulting line.  
+-   Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment.Center> (the default) to specify that pixels drawn with the green pen will be centered on the theoretical line. The following illustration shows the resulting line.  
   
      ![Pens](../../../../docs/framework/winforms/advanced/media/pens1a.gif "pens1A")  
   
@@ -42,7 +42,7 @@ When you create a <xref:System.Drawing.Pen>, you can supply the pen width as one
   
 ### To change the alignment of a pen  
   
--   Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment> to specify that the pixels drawn with the green pen will be centered on the boundary of the rectangle.  
+-   Set the value of the <xref:System.Drawing.Pen.Alignment%2A> property to <xref:System.Drawing.Drawing2D.PenAlignment.Center> to specify that the pixels drawn with the green pen will be centered on the boundary of the rectangle.  
   
      The following illustration shows the resulting rectangle.  
   

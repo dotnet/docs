@@ -97,7 +97,7 @@ ToolStrip object model
   
  If you are writing a new item and want to control all aspects of the painting, override the `OnPaint` method. From within `OnPaint`, you can use methods from the <xref:System.Windows.Forms.ToolStripRenderer>.  
   
- By default, the <xref:System.Windows.Forms.ToolStrip> is double buffered, taking advantage of the <xref:System.Windows.Forms.ControlStyles> setting.  
+ By default, the <xref:System.Windows.Forms.ToolStrip> is double buffered, taking advantage of the <xref:System.Windows.Forms.ControlStyles.OptimizedDoubleBuffer> setting.  
   
 #### Parenting  
  The concept of container ownership and parenting is more complex in <xref:System.Windows.Forms.ToolStrip> controls than in other Windows Forms container controls. That is necessary to support dynamic scenarios such as overflow, sharing drop-down items across multiple <xref:System.Windows.Forms.ToolStrip> items, and to support the generation of a <xref:System.Windows.Forms.ContextMenuStrip> from a control.  
@@ -161,13 +161,13 @@ ToolStrip object model
 #### Partial Trust  
  The limitations of `ToolStrip`s under partial trust are designed to prevent inadvertent entry of personal information that might be used by unauthorized persons or services. The protective measures are as follows:  
   
--   `ToolStripDropDown` controls require <xref:System.Security.Permissions.UIPermissionWindow> to display items in a <xref:System.Windows.Forms.ToolStripControlHost>. This applies to both intrinsic controls such as <xref:System.Windows.Forms.ToolStripTextBox>, <xref:System.Windows.Forms.ToolStripComboBox>, and <xref:System.Windows.Forms.ToolStripProgressBar> as well as to user-created controls. If this requirement is not met, these items are not displayed. No exception is thrown.  
+-   `ToolStripDropDown` controls require <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> to display items in a <xref:System.Windows.Forms.ToolStripControlHost>. This applies to both intrinsic controls such as <xref:System.Windows.Forms.ToolStripTextBox>, <xref:System.Windows.Forms.ToolStripComboBox>, and <xref:System.Windows.Forms.ToolStripProgressBar> as well as to user-created controls. If this requirement is not met, these items are not displayed. No exception is thrown.  
   
 -   Setting the <xref:System.Windows.Forms.ToolStripDropDown.AutoClose%2A> property to `false` is not allowed, and the cancelable <xref:System.Windows.Forms.ToolStripDropDown.Closing> event parameter is ignored. This makes it impossible to enter more than one keystroke without dismissing the drop-down item. If this requirement is not met, such items are not displayed. No exception is thrown.  
   
--   Many keystroke handling events will not be raised if they occur in partial trust contexts other than <xref:System.Security.Permissions.UIPermissionWindow>.  
+-   Many keystroke handling events will not be raised if they occur in partial trust contexts other than <xref:System.Security.Permissions.UIPermissionWindow.AllWindows>.  
   
--   Access keys are not processed when <xref:System.Security.Permissions.UIPermissionWindow> is not granted.  
+-   Access keys are not processed when <xref:System.Security.Permissions.UIPermissionWindow.AllWindows> is not granted.  
   
 #### Usage  
  The following usage patterns have a bearing on <xref:System.Windows.Forms.ToolStrip> layout, keyboard interaction, and end-user behavior:  
@@ -206,26 +206,26 @@ ToolStrip object model
 ##### Stack Layouts  
  Stacking is the arranging of items beside each other at both ends of the <xref:System.Windows.Forms.ToolStrip>. The following list describes the stack layouts.  
   
--   <xref:System.Windows.Forms.ToolStripLayoutStyle> is the default. This setting causes the <xref:System.Windows.Forms.ToolStrip> to alter its layout automatically in accordance with the <xref:System.Windows.Forms.ToolStrip.Orientation%2A> property to handle dragging and docking scenarios.  
+-   <xref:System.Windows.Forms.ToolStripLayoutStyle.StackWithOverflow> is the default. This setting causes the <xref:System.Windows.Forms.ToolStrip> to alter its layout automatically in accordance with the <xref:System.Windows.Forms.ToolStrip.Orientation%2A> property to handle dragging and docking scenarios.  
   
--   <xref:System.Windows.Forms.ToolStripLayoutStyle> renders the <xref:System.Windows.Forms.ToolStrip> items beside each other vertically.  
+-   <xref:System.Windows.Forms.ToolStripLayoutStyle.VerticalStackWithOverflow> renders the <xref:System.Windows.Forms.ToolStrip> items beside each other vertically.  
   
--   <xref:System.Windows.Forms.ToolStripLayoutStyle> renders the <xref:System.Windows.Forms.ToolStrip> items beside each other horizontally.  
+-   <xref:System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow> renders the <xref:System.Windows.Forms.ToolStrip> items beside each other horizontally.  
   
 ##### Other Features of Stack Layouts  
  <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> determines the end of the <xref:System.Windows.Forms.ToolStrip> to which the item is aligned.  
   
  When items do not fit within the <xref:System.Windows.Forms.ToolStrip>, an overflow button automatically appears. The <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property setting determines whether an item appears in the overflow area always, as needed, or never.  
   
- In the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event, you can inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip>, the overflow <xref:System.Windows.Forms.ToolStrip>, or if it is not currently showing at all. The typical reasons why an item is not displayed are that the item did not fit on the main <xref:System.Windows.Forms.ToolStrip> and its <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property was set to <xref:System.Windows.Forms.ToolStripItemOverflow>.  
+ In the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event, you can inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip>, the overflow <xref:System.Windows.Forms.ToolStrip>, or if it is not currently showing at all. The typical reasons why an item is not displayed are that the item did not fit on the main <xref:System.Windows.Forms.ToolStrip> and its <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> property was set to <xref:System.Windows.Forms.ToolStripItemOverflow.Never>.  
   
- Make a <xref:System.Windows.Forms.ToolStrip> movable by putting it in a <xref:System.Windows.Forms.ToolStripPanel> and setting its <xref:System.Windows.Forms.ToolStrip.GripStyle%2A> to <xref:System.Windows.Forms.ToolStripGripStyle>.  
+ Make a <xref:System.Windows.Forms.ToolStrip> movable by putting it in a <xref:System.Windows.Forms.ToolStripPanel> and setting its <xref:System.Windows.Forms.ToolStrip.GripStyle%2A> to <xref:System.Windows.Forms.ToolStripGripStyle.Visible>.  
   
 ##### Other Layout Options  
- The other layout options are <xref:System.Windows.Forms.ToolStripLayoutStyle> and <xref:System.Windows.Forms.ToolStripLayoutStyle>.  
+ The other layout options are <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> and <xref:System.Windows.Forms.ToolStripLayoutStyle.Table>.  
   
 ##### Flow Layout  
- <xref:System.Windows.Forms.ToolStripLayoutStyle> layout is the default for <xref:System.Windows.Forms.ContextMenuStrip>, <xref:System.Windows.Forms.ToolStripDropDownMenu>, and <xref:System.Windows.Forms.ToolStripOverflow>. It is similar to the <xref:System.Windows.Forms.FlowLayoutPanel>. The features of <xref:System.Windows.Forms.ToolStripLayoutStyle> layout are as follows:  
+ <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> layout is the default for <xref:System.Windows.Forms.ContextMenuStrip>, <xref:System.Windows.Forms.ToolStripDropDownMenu>, and <xref:System.Windows.Forms.ToolStripOverflow>. It is similar to the <xref:System.Windows.Forms.FlowLayoutPanel>. The features of <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> layout are as follows:  
   
 -   All of the features of <xref:System.Windows.Forms.FlowLayoutPanel> are exposed by the <xref:System.Windows.Forms.ToolStrip.LayoutSettings%2A> property. You must cast the <xref:System.Windows.Forms.LayoutSettings> class to a <xref:System.Windows.Forms.FlowLayoutSettings> class.  
   
@@ -235,12 +235,12 @@ ToolStrip object model
   
 -   In the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event, you can inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip> or did not fit.  
   
--   The grip is not rendered, and therefore a <xref:System.Windows.Forms.ToolStrip> in <xref:System.Windows.Forms.ToolStripLayoutStyle> layout style in a <xref:System.Windows.Forms.ToolStripPanel> cannot be moved.  
+-   The grip is not rendered, and therefore a <xref:System.Windows.Forms.ToolStrip> in <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> layout style in a <xref:System.Windows.Forms.ToolStripPanel> cannot be moved.  
   
 -   The <xref:System.Windows.Forms.ToolStrip> overflow button is not rendered, and <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> is ignored.  
   
 ##### Table Layout  
- <xref:System.Windows.Forms.ToolStripLayoutStyle> layout is the default for <xref:System.Windows.Forms.StatusStrip>. It is similar to <xref:System.Windows.Forms.TableLayoutPanel>. The features of <xref:System.Windows.Forms.ToolStripLayoutStyle> layout are as follows:  
+ <xref:System.Windows.Forms.ToolStripLayoutStyle.Table> layout is the default for <xref:System.Windows.Forms.StatusStrip>. It is similar to <xref:System.Windows.Forms.TableLayoutPanel>. The features of <xref:System.Windows.Forms.ToolStripLayoutStyle.Flow> layout are as follows:  
   
 -   All of the features of <xref:System.Windows.Forms.TableLayoutPanel> are exposed by the <xref:System.Windows.Forms.ToolStrip.LayoutSettings%2A> property. You must cast the <xref:System.Windows.Forms.LayoutSettings> class to a <xref:System.Windows.Forms.TableLayoutSettings> class.  
   
@@ -250,7 +250,7 @@ ToolStrip object model
   
 -   In the <xref:System.Windows.Forms.ToolStrip.LayoutCompleted> event, you can inspect the <xref:System.Windows.Forms.ToolStripItem.Placement%2A> property to determine whether an item was placed on the main <xref:System.Windows.Forms.ToolStrip> or did not fit.  
   
--   The grip is not rendered, and therefore a <xref:System.Windows.Forms.ToolStrip> in <xref:System.Windows.Forms.ToolStripLayoutStyle> layout style in a <xref:System.Windows.Forms.ToolStripPanel> cannot be moved.  
+-   The grip is not rendered, and therefore a <xref:System.Windows.Forms.ToolStrip> in <xref:System.Windows.Forms.ToolStripLayoutStyle.Table> layout style in a <xref:System.Windows.Forms.ToolStripPanel> cannot be moved.  
   
 -   The <xref:System.Windows.Forms.ToolStrip> overflow button is not rendered, and <xref:System.Windows.Forms.ToolStripItem.Overflow%2A> is ignored.  
   
@@ -356,9 +356,9 @@ ToolStripItem object model
   
 -   <xref:System.Windows.Forms.ToolStrip.ImageScalingSize%2A> is the scale of the final image as determined by the combination of the image's <xref:System.Windows.Forms.ToolStripItem.ImageScaling%2A> setting and the container's <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> setting.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `true` (the default) and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.SizeToFit>, no image scaling occurs, and the <xref:System.Windows.Forms.ToolStrip> size is that of the largest item, or a prescribed minimum size.  
   
-    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
+    -   If <xref:System.Windows.Forms.ToolStrip.AutoSize%2A> is `false` and <xref:System.Windows.Forms.ToolStripItemImageScaling> is <xref:System.Windows.Forms.ToolStripItemImageScaling.None>, neither image nor <xref:System.Windows.Forms.ToolStrip> scaling occurs.  
   
 #### Alignment  
  The value of the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property determines the end of the <xref:System.Windows.Forms.ToolStrip> at which an item appears. The <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property works only when the layout style of the <xref:System.Windows.Forms.ToolStrip> is set to one of the stack overflow values.  

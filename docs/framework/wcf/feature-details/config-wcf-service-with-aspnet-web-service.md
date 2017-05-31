@@ -18,7 +18,7 @@ manager: "erikre"
 # How to: Configure WCF Service to Interoperate with ASP.NET Web Service Clients
 To configure a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service endpoint to be interoperable with [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web service clients, use the <xref:System.ServiceModel.BasicHttpBinding?displayProperty=fullName> type as the binding type for your service endpoint.  
   
- You can optionally enable support for HTTPS and transport-level client authentication on the binding. [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web service clients do not support MTOM message encoding, so the <xref:System.ServiceModel.BasicHttpBinding.MessageEncoding%2A?displayProperty=fullName> property should be left as its default value, which is <xref:System.ServiceModel.WSMessageEncoding?displayProperty=fullName>. ASP.Net Web Service clients do not support WS-Security, so the <xref:System.ServiceModel.BasicHttpBinding.Security%2A?displayProperty=fullName> should be set to <xref:System.ServiceModel.BasicHttpSecurityMode>.  
+ You can optionally enable support for HTTPS and transport-level client authentication on the binding. [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web service clients do not support MTOM message encoding, so the <xref:System.ServiceModel.BasicHttpBinding.MessageEncoding%2A?displayProperty=fullName> property should be left as its default value, which is <xref:System.ServiceModel.WSMessageEncoding.Text?displayProperty=fullName>. ASP.Net Web Service clients do not support WS-Security, so the <xref:System.ServiceModel.BasicHttpBinding.Security%2A?displayProperty=fullName> should be set to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>.  
   
  To make the metadata for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service available to [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] Web service proxy generation tools (that is, [Web Services Description Language Tool (Wsdl.exe)](http://go.microsoft.com/fwlink/?LinkId=73833), [Web Services Discovery Tool (Disco.exe)](http://go.microsoft.com/fwlink/?LinkId=73834), and the Add Web Reference feature in Visual Studio), you should expose an HTTP/GET metadata endpoint.  
   
@@ -26,7 +26,7 @@ To configure a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service e
   
 1.  Create a new <xref:System.ServiceModel.BasicHttpBinding> instance  
   
-2.  Optionally enable transport security for this service endpoint binding by setting the security mode for the binding to <xref:System.ServiceModel.BasicHttpSecurityMode>. For details, please see [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md).  
+2.  Optionally enable transport security for this service endpoint binding by setting the security mode for the binding to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>. For details, please see [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md).  
   
 3.  Add a new application endpoint to your service host using the binding instance that you just created. For details about how to add a service endpoint in code, see the [How to: Create a Service Endpoint in Code](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-code.md).  
   
@@ -36,7 +36,7 @@ To configure a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service e
   
 1.  Create a new <xref:System.ServiceModel.BasicHttpBinding> binding configuration. For details, see the [How to: Specify a Service Binding in Configuration](../../../../docs/framework/wcf/how-to-specify-a-service-binding-in-configuration.md).  
   
-2.  Optionally enable transport security for this service endpoint binding configuration by setting the security mode for the binding to <xref:System.ServiceModel.BasicHttpSecurityMode>. For details, see [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md).  
+2.  Optionally enable transport security for this service endpoint binding configuration by setting the security mode for the binding to <xref:System.ServiceModel.BasicHttpSecurityMode.Transport>. For details, see [Transport Security](../../../../docs/framework/wcf/feature-details/transport-security.md).  
   
 3.  Configure a new application endpoint for your service using the binding configuration that you just created. For details about how to add a service endpoint in a configuration file, see the [How to: Create a Service Endpoint in Configuration](../../../../docs/framework/wcf/feature-details/how-to-create-a-service-endpoint-in-configuration.md).  
   

@@ -108,11 +108,11 @@ The WPF data templating model provides you with great flexibility to define the 
   
  ![Data templating sample screen shot](../../../../docs/framework/wpf/data/media/datatemplatingintro-fig4.png "DataTemplatingIntro_fig4")  
   
- We can set <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> to <xref:System.Windows.HorizontalAlignment> on the <xref:System.Windows.Controls.ListBox> to make sure the width of the items takes up the entire space:  
+ We can set <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> to <xref:System.Windows.HorizontalAlignment.Stretch> on the <xref:System.Windows.Controls.ListBox> to make sure the width of the items takes up the entire space:  
   
  [!code-xml[DataTemplatingIntro_snip#Stretch](../../../../samples/snippets/csharp/VS_Snippets_Wpf/DataTemplatingIntro_snip/CSharp/Window1.xaml#stretch)]  
   
- With the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> property set to <xref:System.Windows.HorizontalAlignment>, the <xref:System.Windows.Controls.ListBox> now looks like this:  
+ With the <xref:System.Windows.Controls.Control.HorizontalContentAlignment%2A> property set to <xref:System.Windows.HorizontalAlignment.Stretch>, the <xref:System.Windows.Controls.ListBox> now looks like this:  
   
  ![Data templating sample screen shot](../../../../docs/framework/wpf/data/media/datatemplatingintro-fig5.png "DataTemplatingIntro_fig5")  
   

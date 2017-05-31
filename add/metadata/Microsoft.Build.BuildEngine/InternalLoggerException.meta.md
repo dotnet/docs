@@ -47,12 +47,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.BuildEngine.InternalLoggerException.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.BuildEngine.InternalLoggerException.HelpKeyword
 ms.author: "susanno"
 manager: "douge"

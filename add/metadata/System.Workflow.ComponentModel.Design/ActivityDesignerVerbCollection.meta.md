@@ -18,10 +18,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: System.Workflow.ComponentModel.Design.ActivityDesignerVerbCollection.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

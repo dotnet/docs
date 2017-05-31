@@ -62,13 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.ColorDialogArray.HelpRequest
 author: "stevehoag"
 ms.author: "shoag"

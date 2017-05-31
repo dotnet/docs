@@ -1,5 +1,5 @@
 ---
-title: .NET Platform Guide
+title: .NET Platform Guide | Microsoft Docs
 description: Learn about the .NET Platform.
 keywords: .NET, .NET Core
 author: cartermp

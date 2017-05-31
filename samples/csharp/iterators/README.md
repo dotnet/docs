@@ -1,7 +1,7 @@
 C# Iterators Sample
 ================
 
-This sample is created during the [Iterators topic](https://docs.microsoft.com/dotnet/articles/csharp/iterators)
+This sample is created during the [Iterators topic](https://docs.microsoft.com/dotnet/csharp/iterators)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 

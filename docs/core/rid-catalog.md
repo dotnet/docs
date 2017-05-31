@@ -1,5 +1,5 @@
 ---
-title: .NET Core Runtime IDentifier (RID) catalog
+title: .NET Core Runtime IDentifier (RID) catalog | Microsoft Docs
 description: .NET Core Runtime IDentifier (RID) catalog
 keywords: .NET, .NET Core
 author: blackdwarf

@@ -1,5 +1,5 @@
 ---
-title: .NET Architectural Components
+title: .NET Architectural Components | Microsoft Docs
 description: Describes key .NET architectural components such as the .NET Standard Library, .NET runtimes, and tooling.
 keywords: .NET, .NET Standard Library, .NET Standard, .NET Core, .NET Framework, Xamarin, MSBuild, C#, F#, VB, compilers
 author: cartermp

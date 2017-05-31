@@ -1,5 +1,5 @@
 ---
-title: Generics (F#)
+title: Generics (F#) | Microsoft Docs
 description: Generics (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -98,7 +98,7 @@ There are two kinds of type parameters that can be used in F# programs. The firs
 
 [Statically Resolved Type Parameters](statically-resolved-type-parameters.md)
 
-[Generics in the .NET Framework](https://msdn.microsoft.com/library/ms172192.aspx)
+[Generics in the .NET Framework](~/docs/standard/generics/index.md)
 
 [Automatic Generalization](automatic-generalization.md)
 

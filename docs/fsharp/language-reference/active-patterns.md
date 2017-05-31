@@ -1,5 +1,5 @@
 ---
-title: Active Patterns (F#)
+title: Active Patterns (F#) | Microsoft Docs
 description: Active Patterns (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

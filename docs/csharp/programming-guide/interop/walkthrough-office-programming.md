@@ -46,9 +46,9 @@ This walkthrough demonstrates these features in the context of Office programmin
 
 You must have Microsoft Office Excel and Microsoft Office Word installed on your computer to complete this walkthrough.  
   
- If you are using an operating system that is older than [!INCLUDE[windowsver](../../../csharp/programming-guide/interop/includes/windowsver_md.md)], make sure that [!INCLUDE[dnprdnlong](../../../csharp/programming-guide/events/includes/dnprdnlong_md.md)] is installed.  
+ If you are using an operating system that is older than [!INCLUDE[windowsver](../../../csharp/programming-guide/interop/includes/windowsver_md.md)], make sure that [!INCLUDE[dnprdnlong](~/includes/dnprdnlong-md.md)] is installed.  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### To set up an Excel Add-in application  
   
@@ -108,7 +108,7 @@ You must have Microsoft Office Excel and Microsoft Office Word installed on your
   
      Two new C# features are used in this method. Both of these features already exist in Visual Basic.  
   
-    -   Method [Add](http://go.microsoft.com/fwlink/?LinkId=210910) has an *optional parameter* for specifying a particular template. Optional parameters, new in [!INCLUDE[csharp_dev10_long](../../../csharp/programming-guide/classes-and-structs/includes/csharp_dev10_long_md.md)], enable you to omit the argument for that parameter if you want to use the parameter's default value. Because no argument is sent in the previous example, `Add` uses the default template and creates a new workbook. The equivalent statement in earlier versions of C# requires a placeholder argument: `excelApp.Workbooks.Add(Type.Missing)`.  
+    -   Method [Add](http://go.microsoft.com/fwlink/?LinkId=210910) has an *optional parameter* for specifying a particular template. Optional parameters, new in [!INCLUDE[csharp_dev10_long](~/includes/csharp-dev10-long-md.md)], enable you to omit the argument for that parameter if you want to use the parameter's default value. Because no argument is sent in the previous example, `Add` uses the default template and creates a new workbook. The equivalent statement in earlier versions of C# requires a placeholder argument: `excelApp.Workbooks.Add(Type.Missing)`.  
   
          For more information, see [Named and Optional Arguments](../../../csharp/programming-guide/classes-and-structs/named-and-optional-arguments.md).  
   

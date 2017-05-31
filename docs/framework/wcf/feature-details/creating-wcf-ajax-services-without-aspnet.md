@@ -79,7 +79,7 @@ string[] GetCities(string firstLetters);
   
  You can use the full Web Programming Model to customize these basic aspects. For example, you can use the <xref:System.ServiceModel.Web.WebGetAttribute> or <xref:System.ServiceModel.Web.WebInvokeAttribute> attributes to control the HTTP verb to which the operation responds or use the `UriTemplate` property of these respective attributes to specify custom URIs. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)] the [WCF Web HTTP Programming Model](../../../../docs/framework/wcf/feature-details/wcf-web-http-programming-model.md) topic.  
   
- The JSON data format is often used in AJAX services. To create an operation that returns JSON instead of XML, set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> (or the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A>) property to <xref:System.ServiceModel.Web.WebMessageFormat>. The [Stand-Alone JSON Serialization](../../../../docs/framework/wcf/feature-details/stand-alone-json-serialization.md) topic shows how built-in .NET types and data contract types map to JSON.  
+ The JSON data format is often used in AJAX services. To create an operation that returns JSON instead of XML, set the <xref:System.ServiceModel.Web.WebGetAttribute.ResponseFormat%2A> (or the <xref:System.ServiceModel.Web.WebInvokeAttribute.ResponseFormat%2A>) property to <xref:System.ServiceModel.Web.WebMessageFormat.Json>. The [Stand-Alone JSON Serialization](../../../../docs/framework/wcf/feature-details/stand-alone-json-serialization.md) topic shows how built-in .NET types and data contract types map to JSON.  
   
  Normally, JSON requests and responses consist of just one item. For the preceding `GetCities` operation, the request resembles the following statement.  
   
@@ -95,7 +95,7 @@ string[] GetCities(string firstLetters);
   
  If the operation takes an extra parameter, the request style must be wrapped to wrap both parameters in a single JSON object. An example of this style JSON message is in the following example.  
   
-```  
+```json  
 {"firstLetters": "na", "maxNumber": 2}  
 ```  
   

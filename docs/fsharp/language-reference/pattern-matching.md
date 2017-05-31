@@ -1,5 +1,5 @@
 ---
-title: Pattern Matching (F#)
+title: Pattern Matching (F#) | Microsoft Docs
 description: Pattern Matching (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.AddedActivityAction.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.AddedActivityAction.AddedActivity
 author: "Erikre"
 ms.author: "erikre"

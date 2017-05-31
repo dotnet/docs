@@ -52,7 +52,7 @@ C# programs can consist of one or more files. Each file can contain zero or more
 -   [Delegates](../../../csharp/programming-guide/delegates/index.md)  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

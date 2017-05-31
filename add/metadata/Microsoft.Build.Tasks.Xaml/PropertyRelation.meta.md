@@ -39,10 +39,3 @@ author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"
 ---
-
----
-uid: Microsoft.Build.Tasks.Xaml.PropertyRelation.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----

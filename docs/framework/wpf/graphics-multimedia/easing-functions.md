@@ -70,11 +70,11 @@ Easing functions allow you to apply custom mathematical formulas to your animati
   
  You can use the              <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A> property to alter how the easing function behaves, that is, change how the animation interpolates. There are three possible values you can give for              <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A>:  
   
--   <xref:System.Windows.Media.Animation.EasingMode>: Interpolation follows the mathematical formula associated with the easing function.  
+-   <xref:System.Windows.Media.Animation.EasingMode.EaseIn>: Interpolation follows the mathematical formula associated with the easing function.  
   
--   <xref:System.Windows.Media.Animation.EasingMode>: Interpolation follows 100% interpolation minus the output of the formula associated with the easing function.  
+-   <xref:System.Windows.Media.Animation.EasingMode.EaseOut>: Interpolation follows 100% interpolation minus the output of the formula associated with the easing function.  
   
--   <xref:System.Windows.Media.Animation.EasingMode>: Interpolation uses                      <xref:System.Windows.Media.Animation.EasingMode> for the first half of the animation and                      <xref:System.Windows.Media.Animation.EasingMode> for the second half.  
+-   <xref:System.Windows.Media.Animation.EasingMode.EaseInOut>: Interpolation uses                      <xref:System.Windows.Media.Animation.EasingMode.EaseIn> for the first half of the animation and                      <xref:System.Windows.Media.Animation.EasingMode.EaseOut> for the second half.  
   
  The graphs below demonstrate the different values of              <xref:System.Windows.Media.Animation.EasingFunctionBase.EasingMode%2A> where              *f*(             *x*) represents the animation progress and              *t* represents time.  
   

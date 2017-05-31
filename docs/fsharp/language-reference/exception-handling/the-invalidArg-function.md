@@ -1,5 +1,5 @@
 ---
-title: "Exceptions: The invalidArg Function (F#)"
+title: "Exceptions: The invalidArg Function (F#) | Microsoft Docs"
 description: "Exceptions: The invalidArg Function (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

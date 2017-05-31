@@ -53,12 +53,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.GetLocalRegisteredApplications
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.PeerToPeer.Collaboration.PeerCollaboration.UnregisterApplication(System.Net.PeerToPeer.Collaboration.PeerApplication,System.Net.PeerToPeer.Collaboration.PeerApplicationRegistrationType)
 ms.author: "bobdel"
 manager: "markl"

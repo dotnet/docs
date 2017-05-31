@@ -1,5 +1,5 @@
 ---
-title: Install the .NET Framework on Windows 7 SP1
+title: Install the .NET Framework on Windows 7 SP1 | Microsoft Docs
 description: Learn how to install .NET Framework on Windows 7 SP1
 author: rlander
 keywords: .NET Framework, Install

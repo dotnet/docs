@@ -95,12 +95,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Mail.SmtpClient.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Mail.SmtpClient.UseDefaultCredentials
 ms.author: "bobdel"
 manager: "markl"
@@ -174,12 +168,6 @@ manager: "markl"
 
 ---
 uid: System.Net.Mail.SmtpClient.SendMailAsync(System.Net.Mail.MailMessage)
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Mail.SmtpClient.#ctor
 ms.author: "bobdel"
 manager: "markl"
 ---

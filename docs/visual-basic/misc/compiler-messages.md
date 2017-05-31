@@ -34,4 +34,4 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Visual Basic Compiler Messages
-This section contains the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] error messages that occur at compile time.
+This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error messages that occur at compile time.

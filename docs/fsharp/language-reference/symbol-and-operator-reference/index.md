@@ -1,5 +1,5 @@
 ---
-title: Symbol and Operator Reference (F#)
+title: Symbol and Operator Reference (F#) | Microsoft Docs
 description: Symbol and Operator Reference (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

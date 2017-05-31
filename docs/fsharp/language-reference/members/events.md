@@ -1,5 +1,5 @@
 ---
-title: Events (F#)
+title: Events (F#) | Microsoft Docs
 description: Events (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

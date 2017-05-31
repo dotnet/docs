@@ -59,7 +59,7 @@ This section describes the context exchange protocol introduced in [!INCLUDE[ind
   
  Service endpoints that require support for the context exchange protocol can make it explicit in the published policy. Two new policy assertions have been introduced to represent the requirement for the client to support the context exchange protocol at the SOAP level or to enable HTTP cookie support. Generation of these assertions into the policy on the service is controlled by the value of the <xref:System.ServiceModel.Channels.ContextBindingElement.ContextExchangeMechanism%2A> property as follows:  
   
--   For <xref:System.ServiceModel.Channels.ContextExchangeMechanism>, the following assertion is generated:  
+-   For <xref:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader>, the following assertion is generated:  
   
     ```  
     <IncludeContext   
@@ -67,7 +67,7 @@ This section describes the context exchange protocol introduced in [!INCLUDE[ind
     protectionLevel="Sign" />  
     ```  
   
--   For <xref:System.ServiceModel.Channels.ContextExchangeMechanism>, the following assertion is generated:  
+-   For <xref:System.ServiceModel.Channels.ContextExchangeMechanism.HttpCookie>, the following assertion is generated:  
   
     ```  
     <HttpUseCookie xmlns="http://schemas.xmlsoap.org/soap/http"/>  

@@ -21,13 +21,13 @@ After ADO.NET has determined from an XML document which elements to infer as tab
 ## Migration and Backward Compatibility  
  The **ReadXml** method takes an argument of type **InferSchema**. This argument allows you to specify inference behavior compatible with previous versions. The available values for the **InferSchema** enumeration are shown in the following table.  
   
- <xref:System.Data.XmlReadMode>  
+ <xref:System.Data.XmlReadMode.InferSchema>  
  Provides backward compatibility by always inferring a simple type as <xref:System.String>.  
   
- <xref:System.Data.XmlReadMode>  
+ <xref:System.Data.XmlReadMode.InferTypedSchema>  
  Infers a strongly typed data type. Throws an exception if used with a <xref:System.Data.DataTable>.  
   
- <xref:System.Data.XmlReadMode>  
+ <xref:System.Data.XmlReadMode.IgnoreSchema>  
  Ignores any inline schema and reads data into the existing <xref:System.Data.DataSet> schema.  
   
 ## Attributes  

@@ -84,7 +84,7 @@ Enums are a special kind of value type. There are two kinds of enums: simple enu
   
  **✓ CONSIDER** providing special enum values for commonly used combinations of flags.  
   
- Bitwise operations are an advanced concept and should not be required for simple tasks. <xref:System.IO.FileAccess> is an example of such a special value.  
+ Bitwise operations are an advanced concept and should not be required for simple tasks. <xref:System.IO.FileAccess.ReadWrite> is an example of such a special value.  
   
  **X AVOID** creating flag enums where certain combinations of values are invalid.  
   

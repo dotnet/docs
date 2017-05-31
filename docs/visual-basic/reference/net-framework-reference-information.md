@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # .NET Framework Reference Information (Visual Basic)
-This topic provides links to information about how to work with the [!INCLUDE[dnprdnshort](../../csharp/getting-started/includes/dnprdnshort_md.md)] class library.  
+This topic provides links to information about how to work with the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)] class library.  
   
 ## Related Sections  
  [Getting Started](../../framework/get-started/index.md)  

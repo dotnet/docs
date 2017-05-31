@@ -63,7 +63,7 @@ Console.WriteLine("{0} is month number #{1}.", thisMonth, monthNumber);
   
 -   You clearly specify for client code which values are valid for the variable.  
   
--   In [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)], IntelliSense lists the defined values.  
+-   In [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)], IntelliSense lists the defined values.  
   
  When you do not specify values for the elements in the enumerator list, the values are automatically incremented by 1. In the previous example, `Days.Sunday` has a value of 0, `Days.Monday` has a value of 1, and so on. When you create a new `Days` object, it will have a default value of `Days.Sunday` (0) if you do not explicitly assign it a value. When you create an enum, select the most logical default value and give it a value of zero. That will cause all enums to have that default value if they are not explicitly assigned a value when they are created.  
   

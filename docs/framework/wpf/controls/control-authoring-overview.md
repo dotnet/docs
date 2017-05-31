@@ -143,7 +143,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
   
     -   The name of the event is `ValueChanged`.  
   
-    -   The routing strategy is <xref:System.Windows.RoutingStrategy>, which means that an event handler on the source (the object that raises the event) is called first, and then event handlers on the source's parent elements are called in succession, starting with the event handler on the closest parent element.  
+    -   The routing strategy is <xref:System.Windows.RoutingStrategy.Bubble>, which means that an event handler on the source (the object that raises the event) is called first, and then event handlers on the source's parent elements are called in succession, starting with the event handler on the closest parent element.  
   
     -   The type of the event handler is <xref:System.Windows.RoutedPropertyChangedEventHandler%601>, constructed with a <xref:System.Decimal> type.  
   
@@ -266,7 +266,7 @@ The extensibility of the [!INCLUDE[TLA#tla_winclient](../../../../includes/tlash
 ##### Specifying the Location of Theme Resources  
  To find the resources for a control, the hosting application needs to know that the assembly contains control-specific resources. You can accomplish that by adding the <xref:System.Windows.ThemeInfoAttribute> to the assembly that contains the control. The <xref:System.Windows.ThemeInfoAttribute> has a <xref:System.Windows.ThemeInfoAttribute.GenericDictionaryLocation%2A> property that specifies the location of generic resources, and a <xref:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation%2A> property that specifies the location of the theme-specific resources.  
   
- The following example sets the <xref:System.Windows.ThemeInfoAttribute.GenericDictionaryLocation%2A> and <xref:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation%2A> properties to <xref:System.Windows.ResourceDictionaryLocation>, to specify that the generic and theme-specific resources are in the same assembly as the control.  
+ The following example sets the <xref:System.Windows.ThemeInfoAttribute.GenericDictionaryLocation%2A> and <xref:System.Windows.ThemeInfoAttribute.ThemeDictionaryLocation%2A> properties to <xref:System.Windows.ResourceDictionaryLocation.SourceAssembly>, to specify that the generic and theme-specific resources are in the same assembly as the control.  
   
  [!code-csharp[CustomControlNumericUpDown#ThemesSection](../../../../samples/snippets/csharp/VS_Snippets_Wpf/CustomControlNumericUpDown/CSharp/CustomControlLibrary/Properties/AssemblyInfo.cs#themessection)]
  [!code-vb[CustomControlNumericUpDown#ThemesSection](../../../../samples/snippets/visualbasic/VS_Snippets_Wpf/CustomControlNumericUpDown/visualbasic/customcontrollibrary/my project/assemblyinfo.vb#themessection)]  

@@ -1,5 +1,5 @@
 ---
-title: Tour of F#
+title: Tour of F# | Microsoft Docs
 description: Tour of F# 
 keywords: visual f#, f#, functional programming, .NET, tour
 author: cartermp
@@ -21,7 +21,7 @@ There are two primary concepts in F#: functions and types.  This tour will empha
 ## How to Run the Code Samples
 
 >[!NOTE]
-Eventually, this documentation site will have the ability to run these code samples directly in your browser.  If your browser supports Silverlight, you can use [TryFsharp](http://www.tryfsharp.org/Create) for the time being.
+Two options for running the code samples are [TryFsharp](http://www.tryfsharp.org/Create) (requires Silverlight) and [F# for Azure Notebooks](https://notebooks.azure.com/Microsoft/libraries/fsharp/html/FSharp%20for%20Azure%20Notebooks.ipynb) on Microsoft Azure.
 
 The quickest way to run these code samples is to use [F# Interactive](tutorials/fsharp-interactive/index.md).  Just copy/paste the code samples and run them there.  Alternatively you can set up a project to compile and run the code as a Console Application in [Visual Studio](tutorials/getting-started/getting-started-visual-studio.md) or [Visual Studio Code and Ionide](tutorials/getting-started/getting-started-vscode.md).
 

@@ -48,7 +48,7 @@ The stack is a working area of memory that grows and shrinks dynamically with th
   
 5.  Check the number of nested `DoEvents` function calls, by using the `Calls` dialog box to view which procedures are active on the stack.  
   
-6.  Make sure you did not cause an "event cascade" by triggering an event that calls an event procedure already on the stack. An event cascade is similar to an unterminated recursive procedure call, but it is less obvious, since the call is made by [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] rather than an explicit call in the code. Use the `Calls`dialog box to view which procedures are active on the stack.  
+6.  Make sure you did not cause an "event cascade" by triggering an event that calls an event procedure already on the stack. An event cascade is similar to an unterminated recursive procedure call, but it is less obvious, since the call is made by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] rather than an explicit call in the code. Use the `Calls`dialog box to view which procedures are active on the stack.  
   
 ## See Also  
  [Memory Windows](https://docs.microsoft.com/visualstudio/debugger/memory-windows)

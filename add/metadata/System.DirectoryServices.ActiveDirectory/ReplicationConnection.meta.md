@@ -146,13 +146,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ReplicationConnection.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ReplicationConnection.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String,System.DirectoryServices.ActiveDirectory.DirectoryServer,System.DirectoryServices.ActiveDirectory.ActiveDirectoryTransportType)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

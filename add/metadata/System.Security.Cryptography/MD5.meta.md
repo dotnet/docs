@@ -1,5 +1,7 @@
 ---
 uid: System.Security.Cryptography.MD5
+ms.technology: 
+  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -7,6 +9,8 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.MD5.Create
+ms.technology: 
+  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -14,6 +18,8 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.MD5.#ctor
+ms.technology: 
+  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
@@ -21,13 +27,8 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.MD5.Create(System.String)
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.MD5.Create
+ms.technology: 
+  - "dotnet-standard"
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"

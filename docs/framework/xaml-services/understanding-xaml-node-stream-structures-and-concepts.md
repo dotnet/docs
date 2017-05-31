@@ -45,13 +45,13 @@ XAML readers and XAML writers as implemented in .NET Framework XAML Services are
   
 -   Based on which <xref:System.Xaml.XamlNodeType> is reported as the current node or current record, call one of the following to obtain information about the node contents:  
   
-    -   For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType> or <xref:System.Xaml.XamlNodeType>, call <xref:System.Xaml.XamlXmlReader.Member%2A> to obtain <xref:System.Xaml.XamlMember> information about a member. Note that the member might be a <xref:System.Xaml.XamlDirective>, and thus might not necessarily be a conventional type-defined member of the preceding object. For example, `x:Name` applied to an object appears as a XAML member where <xref:System.Xaml.XamlMember.IsDirective%2A> is true and the <xref:System.Xaml.XamlMember.Name%2A> of the member is `Name`, with other properties indicating that this directive is under the XAML language XAML namespace.  
+    -   For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.StartMember> or <xref:System.Xaml.XamlNodeType.EndMember>, call <xref:System.Xaml.XamlXmlReader.Member%2A> to obtain <xref:System.Xaml.XamlMember> information about a member. Note that the member might be a <xref:System.Xaml.XamlDirective>, and thus might not necessarily be a conventional type-defined member of the preceding object. For example, `x:Name` applied to an object appears as a XAML member where <xref:System.Xaml.XamlMember.IsDirective%2A> is true and the <xref:System.Xaml.XamlMember.Name%2A> of the member is `Name`, with other properties indicating that this directive is under the XAML language XAML namespace.  
   
-    -   For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType> or <xref:System.Xaml.XamlNodeType>, call <xref:System.Xaml.XamlXmlReader.Type%2A> to obtain <xref:System.Xaml.XamlType> information about an object.  
+    -   For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.StartObject> or <xref:System.Xaml.XamlNodeType.EndObject>, call <xref:System.Xaml.XamlXmlReader.Type%2A> to obtain <xref:System.Xaml.XamlType> information about an object.  
   
-    -   For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType>, call <xref:System.Xaml.XamlXmlReader.Value%2A>. A node is a value only if it is the simplest expression of a value for a member, or the initialization text for an object (however, you should be aware of type conversion behavior as documented in an upcoming section of this topic).  
+    -   For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.Value>, call <xref:System.Xaml.XamlXmlReader.Value%2A>. A node is a value only if it is the simplest expression of a value for a member, or the initialization text for an object (however, you should be aware of type conversion behavior as documented in an upcoming section of this topic).  
   
-    -   For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType>, call <xref:System.Xaml.XamlXmlReader.Namespace%2A> to obtain namespace information for a namespace node.  
+    -   For a <xref:System.Xaml.XamlXmlReader.NodeType%2A> of <xref:System.Xaml.XamlNodeType.NamespaceDeclaration>, call <xref:System.Xaml.XamlXmlReader.Namespace%2A> to obtain namespace information for a namespace node.  
   
 -   Call <xref:System.Xaml.XamlXmlReader.Read%2A> to advance the XAML reader to the next node in the XAML node stream, and repeat the steps again.  
   

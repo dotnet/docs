@@ -37,7 +37,7 @@ Use the **/nowin32manifest** option to instruct the compiler not to embed any ap
   
 ## Syntax  
   
-```  
+```console  
 /nowin32manifest  
 ```  
   

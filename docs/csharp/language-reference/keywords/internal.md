@@ -53,7 +53,7 @@ public class BaseClass
  It is an error to reference a type or a member with internal access outside the assembly within which it was defined.  
   
 ## Example  
- This example contains two files, `Assembly1.cs` and `Assembly1`_`a.cs`. The first file contains an internal base class, `BaseClass`. In the second file, an attempt to instantiate `BaseClass` will produce an error.  
+ This example contains two files, `Assembly1.cs` and `Assembly1_a.cs`. The first file contains an internal base class, `BaseClass`. In the second file, an attempt to instantiate `BaseClass` will produce an error.  
   
 ```  
 // Assembly1.cs  
@@ -102,7 +102,7 @@ public class TestAccess
 ```  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Reference](../../../csharp/language-reference/index.md)   

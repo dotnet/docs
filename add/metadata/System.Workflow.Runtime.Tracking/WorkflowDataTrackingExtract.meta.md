@@ -27,13 +27,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.Tracking.WorkflowDataTrackingExtract.Member
 author: "Erikre"
 ms.author: "erikre"

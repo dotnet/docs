@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.FontDialogArray.HookUpControlEvents(System.Object)
 author: "stevehoag"
 ms.author: "shoag"

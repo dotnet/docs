@@ -46,7 +46,7 @@ The `My.Application.Log` object can write information to several log listeners. 
   
 ### To determine the listeners for My.Application.Log  
   
-1.  Locate the assembly's configuration file. If you are developing the assembly, you can access the app.config in [!INCLUDE[vsprvs](../../../../csharp/includes/vsprvs_md.md)] from the **Solution Explorer**. Otherwise, the configuration file name is the assembly's name appended with ".config", and it is located in the same directory as the assembly.  
+1.  Locate the assembly's configuration file. If you are developing the assembly, you can access the app.config in [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] from the **Solution Explorer**. Otherwise, the configuration file name is the assembly's name appended with ".config", and it is located in the same directory as the assembly.  
   
     > [!NOTE]
     >  Not every assembly has a configuration file.  
@@ -57,7 +57,7 @@ The `My.Application.Log` object can write information to several log listeners. 
   
      If these sections do not exist, then the computer's configuration file may configure the `My.Application.Log` log listeners. The following steps describe how to determine what the computer configuration file defines:  
   
-    1.  Locate the computer's machine.config file. Typically, it is located in the *SystemRoot\Microsoft.NET\Framework\frameworkVersion\CONFIG* directory, where `SystemRoot` is the operating system directory, and `frameworkVersion` is the version of the [!INCLUDE[dnprdnshort](../../../../csharp/getting-started/includes/dnprdnshort_md.md)].  
+    1.  Locate the computer's machine.config file. Typically, it is located in the *SystemRoot\Microsoft.NET\Framework\frameworkVersion\CONFIG* directory, where `SystemRoot` is the operating system directory, and `frameworkVersion` is the version of the [!INCLUDE[dnprdnshort](~/includes/dnprdnshort-md.md)].  
   
          The settings in machine.config can be overridden by an application's configuration file.  
   

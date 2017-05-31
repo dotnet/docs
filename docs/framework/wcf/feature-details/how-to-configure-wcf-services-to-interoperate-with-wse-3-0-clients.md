@@ -34,12 +34,12 @@ manager: "erikre"
   
         |WCF Authentication Mode|WSE 3.0 turnkey security assertion|  
         |-----------------------------|----------------------------------------|  
-        |<xref:System.ServiceModel.Configuration.AuthenticationMode>|`anonymousForCertificateSecurity`|  
-        |<xref:System.ServiceModel.Configuration.AuthenticationMode>|`kerberosSecurity`|  
-        |<xref:System.ServiceModel.Configuration.AuthenticationMode>|`mutualCertificate10Security`*|  
-        |<xref:System.ServiceModel.Configuration.AuthenticationMode>|`mutualCertificate11Security`*|  
-        |<xref:System.ServiceModel.Configuration.AuthenticationMode>|`usernameOverTransportSecurity`|  
-        |<xref:System.ServiceModel.Configuration.AuthenticationMode>|`usernameForCertificateSecurity`|  
+        |<xref:System.ServiceModel.Configuration.AuthenticationMode.AnonymousForCertificate>|`anonymousForCertificateSecurity`|  
+        |<xref:System.ServiceModel.Configuration.AuthenticationMode.Kerberos>|`kerberosSecurity`|  
+        |<xref:System.ServiceModel.Configuration.AuthenticationMode.MutualCertificate>|`mutualCertificate10Security`*|  
+        |<xref:System.ServiceModel.Configuration.AuthenticationMode.MutualCertificate>|`mutualCertificate11Security`*|  
+        |<xref:System.ServiceModel.Configuration.AuthenticationMode.UserNameOverTransport>|`usernameOverTransportSecurity`|  
+        |<xref:System.ServiceModel.Configuration.AuthenticationMode.UserNameForCertificate>|`usernameForCertificateSecurity`|  
   
          \* One of the primary differences between the `mutualCertificate10Security` and `mutualCertificate11Security` turnkey security assertions is the version of the WS-Security specification that WSE uses to secure the SOAP messages. For `mutualCertificate10Security`, WS-Security 1.0 is used, whereas WS-Security 1.1 is used for `mutualCertificate11Security`. For [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], the version of the WS-Security specification is specified in the `messageSecurityVersion` attribute of the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md).  
   
@@ -57,7 +57,7 @@ manager: "erikre"
     2.  Set the `bindingConfiguration` attribute of the [\<endpoint>](../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md) element to the value specified in the `name` attribute of the [\<binding>](../../../../docs/framework/misc/binding.md) for the custom binding.  
   
 ## Example  
- The following code example specifies that the `Service.HelloWorldService` uses a custom binding to interoperate with WSE 3.0 clients. The custom binding specifies that the August 2004 version of the WS-Addressing and the WS-Security 1.1 set of specifications are used to encode the exchanged messages. The messages are secured using the <xref:System.ServiceModel.Configuration.AuthenticationMode> authentication mode.  
+ The following code example specifies that the `Service.HelloWorldService` uses a custom binding to interoperate with WSE 3.0 clients. The custom binding specifies that the August 2004 version of the WS-Addressing and the WS-Security 1.1 set of specifications are used to encode the exchanged messages. The messages are secured using the <xref:System.ServiceModel.Configuration.AuthenticationMode.AnonymousForCertificate> authentication mode.  
   
 ```  
 <configuration>  

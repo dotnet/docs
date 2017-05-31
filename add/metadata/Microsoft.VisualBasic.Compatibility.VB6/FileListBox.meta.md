@@ -160,13 +160,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBox.Items
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.FileListBox.OnPatternChange(System.EventArgs)
 author: "stevehoag"
 ms.author: "shoag"

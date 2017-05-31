@@ -39,9 +39,3 @@ uid: Microsoft.Build.Framework.BuildStartedEventArgs.BuildEnvironment
 ms.author: "susanno"
 manager: "douge"
 ---
-
----
-uid: Microsoft.Build.Framework.BuildStartedEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----

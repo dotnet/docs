@@ -55,7 +55,7 @@ Undeclared variables and variables declared without a data type are assigned the
 -   It results in faster execution of your code.  
   
 ## Most Efficient Data Types  
- For variables that never contain fractions, the integral data types are more efficient than the nonintegral types. In [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)], `Integer` and `UInteger` are the most efficient numeric types.  
+ For variables that never contain fractions, the integral data types are more efficient than the nonintegral types. In [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], `Integer` and `UInteger` are the most efficient numeric types.  
   
  For fractional numbers, `Double` is the most efficient data type, because the processors on current platforms perform floating-point operations in double precision. However, operations with `Double` are not as fast as with the integral types such as `Integer`.  
   

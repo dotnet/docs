@@ -30,7 +30,7 @@ This topic discusses how access is restricted on the types of resources that <xr
 ## Trust Levels  
   
 ### APTCA (Partial Trust)  
- The <xref:System.Transactions> assembly can be called by partially trusted code because it has been marked with the **AllowPartiallyTrustedCallers** attribute (APTCA). This attribute essentially removes the implicit <xref:System.Security.Permissions.SecurityAction> for the **FullTrust** permission set that is otherwise automatically placed on each publicly accessible method in each type. However, some types and members still require stronger permissions.  
+ The <xref:System.Transactions> assembly can be called by partially trusted code because it has been marked with the **AllowPartiallyTrustedCallers** attribute (APTCA). This attribute essentially removes the implicit <xref:System.Security.Permissions.SecurityAction.LinkDemand> for the **FullTrust** permission set that is otherwise automatically placed on each publicly accessible method in each type. However, some types and members still require stronger permissions.  
   
  The APTCA attribute enables applications to use transactions in partial trust within a single application domain. This enables non-escalated transactions and volatile enlistments that can be used for error handling. One example of this is a transacted hash table and an application that uses it. Data can be added to and removed from the hash table under a single transaction. If the transaction is later rolled back, all of the changes made to the hash table under that transaction can be undone.  
   

@@ -37,7 +37,7 @@ translation.priority.ht:
   
 |Type|Range|Size|.NET Framework type|  
 |----------|-----------|----------|-------------------------|  
-|`long`|–9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|Signed 64-bit integer|<xref:System.Int64?displayProperty=fullName>|  
+|`long`|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|Signed 64-bit integer|<xref:System.Int64?displayProperty=fullName>|  
   
 ## Literals 
 
@@ -113,7 +113,7 @@ long y = (long)3.0;   // OK: explicit conversion
 ```  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  <xref:System.Int64>   

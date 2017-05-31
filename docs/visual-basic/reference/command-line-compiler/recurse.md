@@ -58,13 +58,13 @@ Compiles source-code files in all child directories of either the specified dire
 >  The `/recurse` option is not available from within the Visual Studio development environment; it is available only when compiling from the command line.  
   
 ## Example  
- The following code compiles all [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] files in the current directory.  
+ The following code compiles all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] files in the current directory.  
   
 ```  
 vbc *.vb  
 ```  
   
- The following code compiles all [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] files in the `Test\ABC` directory and any directories below it, and then generates `Test.ABC.dll`.  
+ The following code compiles all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] files in the `Test\ABC` directory and any directories below it, and then generates `Test.ABC.dll`.  
   
 ```  
 vbc /target:library /out:Test.ABC.dll /recurse:Test\ABC\*.vb  

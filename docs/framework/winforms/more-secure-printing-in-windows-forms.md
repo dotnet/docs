@@ -23,16 +23,16 @@ ms.author: dotnetcontent
 manager: "wpickett"
 ---
 # More Secure Printing in Windows Forms
-Windows Forms applications frequently include printing abilities. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] uses the <xref:System.Drawing.Printing.PrintingPermission> class to control access to printing capabilities and the associated <xref:System.Drawing.Printing.PrintingPermissionLevel> enumeration value to indicate the level of access. By default, printing is enabled by default in the Local Intranet and Internet zones; however, the level of access is restricted in both zones. Whether your application can print, requires user interaction, or cannot print depends upon the permission value granted to the application. By default, the Local Intranet zone receives <xref:System.Drawing.Printing.PrintingPermissionLevel> access and the Intranet zone receives <xref:System.Drawing.Printing.PrintingPermissionLevel> access.  
+Windows Forms applications frequently include printing abilities. The [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] uses the <xref:System.Drawing.Printing.PrintingPermission> class to control access to printing capabilities and the associated <xref:System.Drawing.Printing.PrintingPermissionLevel> enumeration value to indicate the level of access. By default, printing is enabled by default in the Local Intranet and Internet zones; however, the level of access is restricted in both zones. Whether your application can print, requires user interaction, or cannot print depends upon the permission value granted to the application. By default, the Local Intranet zone receives <xref:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting> access and the Intranet zone receives <xref:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting> access.  
   
  The following table shows the functionality available at each printing permission level.  
   
 |PrintingPermissionLevel|Description|  
 |-----------------------------|-----------------|  
-|<xref:System.Drawing.Printing.PrintingPermissionLevel>|Provides full access to all installed printers.|  
-|<xref:System.Drawing.Printing.PrintingPermissionLevel>|Enables programmatic printing to the default printer and safer printing through a restrictive printing dialog box. <xref:System.Drawing.Printing.PrintingPermissionLevel> is a subset of <xref:System.Drawing.Printing.PrintingPermissionLevel>.|  
-|<xref:System.Drawing.Printing.PrintingPermissionLevel>|Provides printing only from a more-restricted dialog box. <xref:System.Drawing.Printing.PrintingPermissionLevel> is a subset of <xref:System.Drawing.Printing.PrintingPermissionLevel>.|  
-|<xref:System.Drawing.Printing.PrintingPermissionLevel>|Prevents access to printers. <xref:System.Drawing.Printing.PrintingPermissionLevel> is a subset of <xref:System.Drawing.Printing.PrintingPermissionLevel>.|  
+|<xref:System.Drawing.Printing.PrintingPermissionLevel.AllPrinting>|Provides full access to all installed printers.|  
+|<xref:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting>|Enables programmatic printing to the default printer and safer printing through a restrictive printing dialog box. <xref:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting> is a subset of <xref:System.Drawing.Printing.PrintingPermissionLevel.AllPrinting>.|  
+|<xref:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting>|Provides printing only from a more-restricted dialog box. <xref:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting> is a subset of <xref:System.Drawing.Printing.PrintingPermissionLevel.DefaultPrinting>.|  
+|<xref:System.Drawing.Printing.PrintingPermissionLevel.NoPrinting>|Prevents access to printers. <xref:System.Drawing.Printing.PrintingPermissionLevel.NoPrinting> is a subset of <xref:System.Drawing.Printing.PrintingPermissionLevel.SafePrinting>.|  
   
 ## See Also  
  [More Secure File and Data Access in Windows Forms](../../../docs/framework/winforms/more-secure-file-and-data-access-in-windows-forms.md)   

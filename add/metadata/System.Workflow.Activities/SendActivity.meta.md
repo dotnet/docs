@@ -76,13 +76,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.SendActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.SendActivity.GetContext
 author: "Erikre"
 ms.author: "erikre"

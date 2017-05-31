@@ -48,13 +48,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.CompareRequest.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.CompareRequest.#ctor(System.String,System.String,System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

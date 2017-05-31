@@ -1,7 +1,7 @@
 C# Delegates and Events Sample
 ================
 
-This sample is created during the [Delegates and Events topic](https://docs.microsoft.com/dotnet/articles/csharp/delegates-events)
+This sample is created during the [Delegates and Events topic](https://docs.microsoft.com/dotnet/csharp/delegates-events)
 for learning C# features. Please see that topic for detailed steps on the code
 for this sample.
 

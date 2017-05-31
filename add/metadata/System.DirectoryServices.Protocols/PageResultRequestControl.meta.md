@@ -46,10 +46,3 @@ author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
 ---
-
----
-uid: System.DirectoryServices.Protocols.PageResultRequestControl.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----

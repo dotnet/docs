@@ -83,13 +83,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.Rules.Rule.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.Rules.Rule.Name
 author: "Erikre"
 ms.author: "erikre"

@@ -58,7 +58,7 @@ The <xref:System.Windows.Forms.ToolStrip> control fully supports layout features
   
 ### To align a ToolStripItem to the right side of the ToolStrip  
   
-1.  Set the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property to <xref:System.Windows.Forms.ToolStripItemAlignment> for the associated control. By default, <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> is set to <xref:System.Windows.Forms.ToolStripItemAlignment>, which aligns controls to the left side of the <xref:System.Windows.Forms.ToolStrip>.  
+1.  Set the <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> property to <xref:System.Windows.Forms.ToolStripItemAlignment.Right> for the associated control. By default, <xref:System.Windows.Forms.ToolStripItem.Alignment%2A> is set to <xref:System.Windows.Forms.ToolStripItemAlignment.Left>, which aligns controls to the left side of the <xref:System.Windows.Forms.ToolStrip>.  
   
     ```vb  
     ToolStripSplitButton1.Alignment = _  

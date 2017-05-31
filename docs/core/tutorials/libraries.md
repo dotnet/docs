@@ -1,5 +1,5 @@
 ---
-title: Developing Libraries with Cross Platform Tools
+title: Developing Libraries with Cross Platform Tools | Microsoft Docs
 description: Developing Libraries with Cross Platform Tools
 keywords: .NET, .NET Core
 author: cartermp
@@ -40,7 +40,7 @@ If you're not quite familiar with the .NET Standard, refer to [the .NET Standard
 
 In that article, there is a table which maps .NET Standard versions to various implementations:
 
-[!INCLUDE [net-standard-table](../../includes/net-standard-table.md)]
+[!INCLUDE [net-standard-table](~/includes/net-standard-table.md)]
 
 Here's what this table means for the purposes of creating a library:
 

@@ -50,14 +50,14 @@ When you use the [!INCLUDE[ssAstoria](../../../../includes/ssastoria-md.md)] cli
  For more information, see [How to: Add, Modify, and Delete Entities](../../../../docs/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services.md).  
   
 ## Attaching Entities  
- The client library enables you to save updates that you made to an entity without first executing a query to load the entity into the <xref:System.Data.Services.Client.DataServiceContext>. Use the <xref:System.Data.Services.Client.DataServiceContext.AttachTo%2A> method to attach an existing object to a specific entity set in the <xref:System.Data.Services.Client.DataServiceContext>. You can then modify the object and save the changes to the data service. In the following example, a customer object that has been changed is attached to the context and then <xref:System.Data.Services.Client.DataServiceContext.UpdateObject%2A> is called to mark the attached object as <xref:System.Data.Services.Client.EntityStates> before <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> is called:  
+ The client library enables you to save updates that you made to an entity without first executing a query to load the entity into the <xref:System.Data.Services.Client.DataServiceContext>. Use the <xref:System.Data.Services.Client.DataServiceContext.AttachTo%2A> method to attach an existing object to a specific entity set in the <xref:System.Data.Services.Client.DataServiceContext>. You can then modify the object and save the changes to the data service. In the following example, a customer object that has been changed is attached to the context and then <xref:System.Data.Services.Client.DataServiceContext.UpdateObject%2A> is called to mark the attached object as <xref:System.Data.Services.Client.EntityStates.Modified> before <xref:System.Data.Services.Client.DataServiceContext.SaveChanges%2A> is called:  
   
  [!code-csharp[Astoria Northwind Client#AttachObjectSpecific](../../../../samples/snippets/csharp/VS_Snippets_Misc/astoria northwind client/cs/source.cs#attachobjectspecific)]
  [!code-vb[Astoria Northwind Client#AttachObjectSpecific](../../../../samples/snippets/visualbasic/VS_Snippets_Misc/astoria northwind client/vb/source.vb#attachobjectspecific)]  
   
  The following considerations apply when attaching objects:  
   
--   An object is attached in the <xref:System.Data.Services.Client.EntityStates> state.  
+-   An object is attached in the <xref:System.Data.Services.Client.EntityStates.Unchanged> state.  
   
 -   When an object is attached, objects that are related to the attached object are not also attached.  
   

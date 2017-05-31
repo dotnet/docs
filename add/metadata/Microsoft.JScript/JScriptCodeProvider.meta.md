@@ -19,10 +19,6 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.JScriptCodeProvider.CreateGenerator
----
-
----
 uid: Microsoft.JScript.JScriptCodeProvider.CreateCompiler
 ms.author: "mikejo"
 ---

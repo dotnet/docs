@@ -1,5 +1,5 @@
 ---
-title: Getting started with C# Interactive | C# Guide
+title: Getting started with C# Interactive - C# Guide | Microsoft Docs
 description: Getting Started with C# interactive
 keywords: C#, Getting Started, REPL,  Cross Platform
 ms.date: 08/23/2016

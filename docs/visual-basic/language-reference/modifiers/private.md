@@ -50,7 +50,7 @@ Specifies that one or more declared programming elements are accessible only fro
   
 -   **Access Level.** All code within a declaration context can access its `Private` elements. This includes code within a contained type, such as a nested class or an assignment expression in an enumeration. No code outside of the declaration context can access its `Private` elements.  
   
--   **Access Modifiers.** The keywords that specify access level are called *access modifiers*. For a comparison of the access modifiers, see [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
+-   **Access Modifiers.** The keywords that specify access level are called *access modifiers*. For a comparison of the access modifiers, see [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
  The `Private` modifier can be used in these contexts:  
   
@@ -82,7 +82,7 @@ Specifies that one or more declared programming elements are accessible only fro
  [Public](../../../visual-basic/language-reference/modifiers/public.md)   
  [Protected](../../../visual-basic/language-reference/modifiers/protected.md)   
  [Friend](../../../visual-basic/language-reference/modifiers/friend.md)   
- [Access Levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
+ [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md)   
  [Procedures](../../../visual-basic/programming-guide/language-features/procedures/index.md)   
  [Structures](../../../visual-basic/programming-guide/language-features/data-types/structures.md)   
  [Objects and Classes](../../../visual-basic/programming-guide/language-features/objects-and-classes/index.md)

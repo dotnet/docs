@@ -135,13 +135,13 @@ This topic provides an introduction to the [!INCLUDE[TLA#tla_wic](../../../../in
 #### Stretching Images  
  The <xref:System.Windows.Controls.Image.Stretch%2A> property controls how an image is stretched to fill its container. The <xref:System.Windows.Controls.Image.Stretch%2A> property accepts the following values, defined by the <xref:System.Windows.Media.Stretch> enumeration:  
   
--   <xref:System.Windows.Media.Stretch>: The image is not stretched to fill the output area. If the image is larger than the output area, the image is drawn to the output area, clipping what does not fit.  
+-   <xref:System.Windows.Media.Stretch.None>: The image is not stretched to fill the output area. If the image is larger than the output area, the image is drawn to the output area, clipping what does not fit.  
   
--   <xref:System.Windows.Media.Stretch>: The image is scaled to fit the output area. Because the image height and width are scaled independently, the original aspect ratio of the image might not be preserved. That is, the image might be warped in order to completely fill the output container.  
+-   <xref:System.Windows.Media.Stretch.Fill>: The image is scaled to fit the output area. Because the image height and width are scaled independently, the original aspect ratio of the image might not be preserved. That is, the image might be warped in order to completely fill the output container.  
   
--   <xref:System.Windows.Media.Stretch>: The image is scaled so that it fits completely within the output area. The image's aspect ratio is preserved.  
+-   <xref:System.Windows.Media.Stretch.Uniform>: The image is scaled so that it fits completely within the output area. The image's aspect ratio is preserved.  
   
--   <xref:System.Windows.Media.Stretch>: The image is scaled so that it completely fills the output area while preserving the image's original aspect ratio.  
+-   <xref:System.Windows.Media.Stretch.UniformToFill>: The image is scaled so that it completely fills the output area while preserving the image's original aspect ratio.  
   
  The following example applies each of the available <xref:System.Windows.Media.Stretch> enumerations to an <xref:System.Windows.Controls.Image>.  
   

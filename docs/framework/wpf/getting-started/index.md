@@ -26,7 +26,7 @@ Windows Presentation Foundation (WPF) is a UI framework that creates desktop cli
   
 |||  
 |-|-|  
-|I want to jump right in…|[Walkthrough: My First WPF Desktop Application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|  
+|I want to jump right in…|[Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|  
 |How do I design the application UI?|[Designing XAML in Visual Studio](/visualstudio/designers/designing-xaml-in-visual-studio)|  
 |New to .NET?|[Overview of the .NET Framework](https://msdn.microsoft.com/en-us/library/zw4w595w\(v=vs.140\).aspx)<br /><br /> [.NET Framework Application Essentials](../../../../docs/standard/application-essentials.md)<br /><br /> [Getting Started with Visual C# and Visual Basic](https://msdn.microsoft.com/en-us/library/dd492171\(v=vs.140\).aspx)|  
 |Tell me more about WPF…|[Introduction to WPF in Visual Studio 2015](../../../../docs/framework/wpf/getting-started/introduction-to-wpf-in-vs.md)<br /><br /> [XAML Overview (WPF)](../../../../docs/framework/wpf/advanced/xaml-overview-wpf.md)<br /><br /> [Controls](../../../../docs/framework/wpf/controls/index.md)<br /><br /> [Data Binding Overview](../../../../docs/framework/wpf/data/data-binding-overview.md)|  

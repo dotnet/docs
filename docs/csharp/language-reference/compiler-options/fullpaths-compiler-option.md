@@ -39,7 +39,7 @@ The **/fullpaths** option causes the compiler to specify the full path to the fi
   
 ## Syntax  
   
-```  
+```console  
 /fullpaths  
 ```  
   

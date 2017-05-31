@@ -1966,7 +1966,7 @@
    
   
 ## Examples  
- The following code example illustrates how to use this property in a master/detail scenario where two <xref:System.Windows.Forms.DataGridView> controls display data from two tables in a parent/child relationship. In this example, the column sizing mode for the master control is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnsMode.None>, and the column widths are programmatically initialized to fit the loaded values. The details control is set to an automatic column sizing mode so that columns will adjust automatically whenever the values change (for example, when the user changes the current row in the parent table). This example is part of a larger example available in [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](~/docs/framework/winforms/controls/99f6e876-3f7f-4139-9063-e36587c95b02.md).  
+ The following code example illustrates how to use this property in a master/detail scenario where two <xref:System.Windows.Forms.DataGridView> controls display data from two tables in a parent/child relationship. In this example, the column sizing mode for the master control is <xref:System.Windows.Forms.DataGridViewAutoSizeColumnsMode.None>, and the column widths are programmatically initialized to fit the loaded values. The details control is set to an automatic column sizing mode so that columns will adjust automatically whenever the values change (for example, when the user changes the current row in the parent table). This example is part of a larger example available in [How to: Create a Master/Detail Form Using Two Windows Forms DataGridView Controls](~/docs/framework/winforms/controls/create-a-master-detail-form-using-two-datagridviews.md).  
   
  [!code-csharp[System.Windows.Forms.DataGridViewMasterDetails#10](~/samples/snippets/csharp/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMasterDetails/CS/masterdetails.cs#10)]
  [!code-vb[System.Windows.Forms.DataGridViewMasterDetails#10](~/samples/snippets/visualbasic/VS_Snippets_Winforms/System.Windows.Forms.DataGridViewMasterDetails/VB/masterdetails.vb#10)]  
@@ -5624,7 +5624,7 @@
   
  For more information, see [Displaying Data in the Windows Forms DataGridView Control](~/docs/framework/winforms/controls/displaying-data-in-the-windows-forms-datagridview-control.md). The following table provides direct links to common tasks related to the <xref:System.Windows.Forms.DataGridView.DataSource%2A> property.  
   
- See [Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls](~/docs/framework/winforms/controls/c5fa29e8-47f7-4691-829b-0e697a691f36.md)and [How to: Bind Objects to Windows Forms DataGridView Controls](~/docs/framework/winforms/controls/how-to-bind-objects-to-windows-forms-datagridview-controls.md).  
+ See [Walkthrough: Creating a Master/Detail Form Using Two Windows Forms DataGridView Controls](~/docs/framework/winforms/controls/creating-a-master-detail-form-using-two-datagridviews.md) and [How to: Bind Objects to Windows Forms DataGridView Controls](~/docs/framework/winforms/controls/how-to-bind-objects-to-windows-forms-datagridview-controls.md).  
   
    
   

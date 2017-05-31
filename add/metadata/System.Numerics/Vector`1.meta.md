@@ -251,13 +251,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Numerics.Vector`1.ToString
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Numerics.Vector`1.CopyTo(`0[])
 author: "rpetrusha"
 ms.author: "ronpet"

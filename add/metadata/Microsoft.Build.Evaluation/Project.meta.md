@@ -323,12 +323,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Evaluation.Project.Save
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Evaluation.Project.AllEvaluatedItems
 ms.author: "susanno"
 manager: "douge"
@@ -437,12 +431,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Evaluation.Project.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Evaluation.Project.AddItem(System.String,System.String)
 ms.author: "susanno"
 manager: "douge"
@@ -497,12 +485,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Evaluation.Project.CreateProjectInstance
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Evaluation.Project.GetEvaluatedItemIncludeEscaped
 ms.author: "susanno"
 manager: "douge"
@@ -552,12 +534,6 @@ manager: "douge"
 
 ---
 uid: Microsoft.Build.Evaluation.Project.AllEvaluatedProperties
-ms.author: "susanno"
-manager: "douge"
----
-
----
-uid: Microsoft.Build.Evaluation.Project.Build
 ms.author: "susanno"
 manager: "douge"
 ---

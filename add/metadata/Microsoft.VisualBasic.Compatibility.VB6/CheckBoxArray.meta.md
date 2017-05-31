@@ -496,13 +496,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.CheckBoxArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.CheckBoxArray.MouseCaptureChanged
 author: "stevehoag"
 ms.author: "shoag"

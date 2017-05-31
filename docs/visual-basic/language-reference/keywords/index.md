@@ -41,7 +41,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Keywords (Visual Basic)
-The following tables list all [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language keywords.  
+The following tables list all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords.  
   
 ## Reserved Keywords  
  The following keywords are *reserved*, which means that you cannot use them as names for programming elements such as variables or procedures. You can bypass this restriction by enclosing the name in brackets (`[``]`). For more information, see "Escaped Names" in [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
@@ -100,7 +100,7 @@ The following tables list all [!INCLUDE[vbprvb](../../../csharp/programming-guid
 |[>> Operator](../../../visual-basic/language-reference/operators/right-shift-operator.md)|[>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)|[<<](../../../visual-basic/language-reference/operators/left-shift-operator.md)|[<\<=](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)|  
   
 > [!NOTE]
->  `EndIf`, `GoSub`, `Variant`, and `Wend` are retained as reserved keywords, although they are no longer used in [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)]. The meaning of the `Let` keyword has changed. `Let` is now used in LINQ queries. For more information, see [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md).  
+>  `EndIf`, `GoSub`, `Variant`, and `Wend` are retained as reserved keywords, although they are no longer used in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The meaning of the `Let` keyword has changed. `Let` is now used in LINQ queries. For more information, see [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md).  
   
 ## Unreserved Keywords  
  The following keywords are not reserved, which means you can use them as names for your programming elements. However, doing this is not recommended, because it can make your code hard to read and can lead to subtle errors that can be difficult to find.  

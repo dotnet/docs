@@ -37,7 +37,7 @@ Causes the compiler to accept only syntax that is included in the chosen C# lang
   
 ## Syntax  
   
-```  
+```console  
 /langversion:option  
 ```  
   

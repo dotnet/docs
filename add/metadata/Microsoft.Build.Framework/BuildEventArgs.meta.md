@@ -23,12 +23,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Framework.BuildEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Framework.BuildEventArgs.Timestamp
 ms.author: "susanno"
 manager: "douge"

@@ -50,7 +50,7 @@ In this case, the offset of the `utcTime2` variable is 00:00. Similarly, the fol
 [!code-csharp[System.DateTimeOffset.Conceptual.Conversions#2](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs/Conversions.cs#2)]
 [!code-vb[System.DateTimeOffset.Conceptual.Conversions#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/vb/Conversions.vb#2)]
 
-However, for <xref:System.DateTime> values whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind?displayProperty=fullName>, these two conversion methods produce a <xref:System.DateTimeOffset> value whose offset is that of the local time zone. This is shown in the following example, which is run in the U.S. Pacific Standard Time zone.
+However, for <xref:System.DateTime> values whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified?displayProperty=fullName>, these two conversion methods produce a <xref:System.DateTimeOffset> value whose offset is that of the local time zone. This is shown in the following example, which is run in the U.S. Pacific Standard Time zone.
 
 [!code-csharp[System.DateTimeOffset.Conceptual.Conversions#3](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs/Conversions.cs#3)]
 [!code-vb[System.DateTimeOffset.Conceptual.Conversions#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/vb/Conversions.vb#3)]
@@ -64,7 +64,7 @@ The second parameter to this constructor overload, a <xref:System.TimeSpan> obje
 
 ## Conversions from DateTimeOffset to DateTime
 
-The <xref:System.DateTimeOffset.DateTime%2A> property is most commonly used to perform <xref:System.DateTimeOffset> to <xref:System.DateTime> conversion. However, it returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind>, as the following example illustrates.
+The <xref:System.DateTimeOffset.DateTime%2A> property is most commonly used to perform <xref:System.DateTimeOffset> to <xref:System.DateTime> conversion. However, it returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Unspecified>, as the following example illustrates.
 
 [!code-csharp[System.DateTimeOffset.Conceptual.Conversions#5](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs/Conversions.cs#5)]
 [!code-vb[System.DateTimeOffset.Conceptual.Conversions#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/vb/Conversions.vb#5)]
@@ -77,7 +77,7 @@ To preserve as much time zone information as possible when converting a <xref:Sy
 
 To indicate that a converted <xref:System.DateTimeOffset.DateTime%2A> value is the UTC time, you can retrieve the value of the <xref:System.DateTimeOffset.UtcDateTime%2A?displayProperty=fullName> property. It differs from the <xref:System.DateTimeOffset.DateTime%2A> property in two ways:
 
-* It returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind>.
+* It returns a <xref:System.DateTime> value whose <xref:System.DateTime.Kind%2A> property is <xref:System.DateTimeKind.Utc>.
 
 * If the <xref:System.DateTimeOffset.Offset%2A> property value does not equal <xref:System.TimeSpan.Zero?displayProperty=fullName>, it converts the time to UTC.
 
@@ -101,7 +101,7 @@ To indicate that a <xref:System.DateTimeOffset> value represents the local time,
 [!code-csharp[System.DateTimeOffset.Conceptual.Conversions#7](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs/Conversions.cs#7)]
 [!code-vb[System.DateTimeOffset.Conceptual.Conversions#7](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/vb/Conversions.vb#7)]
 
-You can also use the <xref:System.DateTimeOffset.LocalDateTime%2A?displayProperty=fullName> property to convert a <xref:System.DateTimeOffset> value to a local <xref:System.DateTime> value. The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is <xref:System.DateTimeKind>. The following code uses the <xref:System.DateTimeOffset.LocalDateTime%2A?displayProperty=fullName> property when converting a <xref:System.DateTimeOffset> value whose offset corresponds to that of the local time zone. 
+You can also use the <xref:System.DateTimeOffset.LocalDateTime%2A?displayProperty=fullName> property to convert a <xref:System.DateTimeOffset> value to a local <xref:System.DateTime> value. The <xref:System.DateTime.Kind%2A> property of the returned <xref:System.DateTime> value is <xref:System.DateTimeKind.Local>. The following code uses the <xref:System.DateTimeOffset.LocalDateTime%2A?displayProperty=fullName> property when converting a <xref:System.DateTimeOffset> value whose offset corresponds to that of the local time zone. 
 
 [!code-csharp[System.DateTimeOffset.Conceptual.Conversions#10](../../../samples/snippets/csharp/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/cs/Conversions.cs#10)]
 [!code-vb[System.DateTimeOffset.Conceptual.Conversions#10](../../../samples/snippets/visualbasic/VS_Snippets_CLR_System/system.DateTimeOffset.Conceptual.Conversions/vb/Conversions.vb#10)]

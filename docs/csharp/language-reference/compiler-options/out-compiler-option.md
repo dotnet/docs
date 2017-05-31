@@ -37,7 +37,7 @@ The **/out** option specifies the name of the output file.
   
 ## Syntax  
   
-```  
+```console  
 /out:filename  
 ```  
   
@@ -77,7 +77,7 @@ The **/out** option specifies the name of the output file.
 ## Example  
  Compile `t.cs` and create output file `t.exe`, as well as build `t2.cs` and create module output file `mymodule.netmodule`:  
   
-```  
+```console  
 csc t.cs /out:mymodule.netmodule /target:module t2.cs  
 ```  
   

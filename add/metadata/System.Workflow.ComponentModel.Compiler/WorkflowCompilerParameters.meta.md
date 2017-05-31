@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerParameters.#ctor(System.String[],System.String)
 author: "Erikre"
 ms.author: "erikre"

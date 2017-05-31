@@ -1,5 +1,5 @@
 ---
-title: Language independence and language-independent components
+title: Language independence and language-independent components | Microsoft Docs
 description: Language independence and language-independent components
 keywords: .NET, .NET Core
 author: dotnet-bot

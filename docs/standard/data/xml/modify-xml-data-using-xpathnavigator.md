@@ -201,7 +201,7 @@ Console.WriteLine(navigator.OuterXml);
 ## Modifying Namespace Nodes  
  In the Document Object Model (DOM), namespace declarations are treated as if they are regular attributes that can be inserted, updated and deleted. The <xref:System.Xml.XPath.XPathNavigator> class does not allow such operations on namespace nodes because altering the value of a namespace node can change the identity of the elements and attributes within the scope of the namespace node as illustrated in the following example.  
   
-```  
+```xml  
 <root xmlns="http://www.contoso.com">  
     <child />  
 </root>  
@@ -209,7 +209,7 @@ Console.WriteLine(navigator.OuterXml);
   
  If the XML example above is changed in the following way, this effectively renames every element in the document because the value of each element's namespace URI is changed.  
   
-```  
+```xml  
 <root xmlns="urn:contoso.com">  
     <child />  
 </root>  
@@ -217,7 +217,7 @@ Console.WriteLine(navigator.OuterXml);
   
  Inserting namespace nodes that do not conflict with namespace declarations at the scope that they are inserted in is allowed by the <xref:System.Xml.XPath.XPathNavigator> class. In this case, the namespace declarations are not declared at lower scopes in the XML document and does not result in renaming as illustrated in the following example.  
   
-```  
+```xml  
 <root xmlns:a="http://www.contoso.com">  
     <parent>  
         <a:child />  
@@ -227,7 +227,7 @@ Console.WriteLine(navigator.OuterXml);
   
  If the XML example above is changed in the following way, the namespace declarations are correctly propagated across the XML document below the scope of the other namespace declaration.  
   
-```  
+```xml  
 <root xmlns:a="http://www.contoso.com">  
     <parent a:parent-id="1234" xmlns:a="http://www.contoso.com/parent-id">  
         <a:child xmlns:a="http://www.contoso.com/">  

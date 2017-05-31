@@ -46,7 +46,7 @@ The following illustration shows a [!INCLUDE[indigo1](../../../../includes/indig
 ## Configuration  
  The following configures a service to use basic authentication with transport-level security:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
     <system.serviceModel>  
@@ -89,7 +89,7 @@ The following illustration shows a [!INCLUDE[indigo1](../../../../includes/indig
 > [!NOTE]
 >  You cannot use configuration to set the user name and password. The configuration shown here must be augmented using code to set the user name and password.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

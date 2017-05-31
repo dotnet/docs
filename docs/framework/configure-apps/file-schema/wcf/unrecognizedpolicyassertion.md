@@ -26,7 +26,7 @@ Represents a binding element that specifies policy assertion. This element has n
   
 ## Syntax  
   
-```  
+```xml  
 <unrecognizedPolicyAssertion/>  
 ```  
   

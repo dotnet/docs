@@ -58,7 +58,7 @@ Metadata for a service can contain sensitive information about your application 
   
 8.  To use the behavior with a service, set the `behaviorConfiguration` attribute of the [\<service>](../../../../docs/framework/configure-apps/file-schema/wcf/service.md) element to the value of the name attribute of the behavior element. The following configuration code shows a complete example.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <configuration>  
      <system.serviceModel>  

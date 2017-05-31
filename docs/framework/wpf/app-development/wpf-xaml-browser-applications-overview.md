@@ -58,7 +58,7 @@ manager: "wpickett"
   
  To prepare your XBAP for deployment, copy the .exe and the associated manifests to the Web server. Create an HTML page that contains a hyperlink to open the deployment manifest, which is the file that has the .xbap extension. When the user clicks the link to the .xbap file, [!INCLUDE[TLA2#tla_clickonce](../../../../includes/tla2sharptla-clickonce-md.md)] automatically handles the mechanics of downloading and starting the application. The following example code shows an HTML page that contains a hyperlink that points to an XBAP.  
   
-```  
+```xml  
 <html>   
   <head></head>  
   <body>   
@@ -69,7 +69,7 @@ manager: "wpickett"
   
  You can also host an XBAP in the frame of a Web page. Create a Web page with one or more frames. Set the source property of a frame to the deployment manifest file. If you want to use the built-in mechanism to communicate between the hosting Web page and the XBAP, you must host the application in a frame. The following example code shows an HTML page with two frames, the source for the second frame is set to an XBAP.  
   
-```  
+```xml  
 <html>   
   <head>A page with frames.</head>  
     <frameset cols="50%,50%">   

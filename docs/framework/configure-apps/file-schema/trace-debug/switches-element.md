@@ -36,7 +36,7 @@ Contains trace switches and the level where the trace switches are set.
   
 ## Syntax  
   
-```  
+```xml  
       <switches>   
 </switches>  
 ```  
@@ -66,7 +66,7 @@ Contains trace switches and the level where the trace switches are set.
 ## Example  
  The following example shows how to use the **\<switch>** element to set the `General` trace switch to the <xref:System.Diagnostics.TraceLevel> level, and enable the `Data` Boolean trace switch.  
   
-```  
+```xml  
 <configuration>  
    <system.diagnostics>  
       <switches>  

@@ -112,7 +112,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
 3.  Add this element to the `<listeners>` section:  
   
-    ```  
+    ```xml  
     <add name="SimpleLog" />  
     ```  
   
@@ -120,7 +120,7 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
 5.  Add this element to that `<sharedListeners>` section:  
   
-    ```  
+    ```xml  
     <add name="SimpleLog" type="SimpleLogStrongName" />  
     ```  
   

@@ -32,7 +32,7 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider (in 
   
 4.  As a child to the <`providers`> element, add an <`add`> element with the following attributes set to appropriate values: `name`, `type`, `connectionStringName`, and `applicationName`, as shown in the following example.  
   
-    ```  
+    ```xml  
     <!-- Configure the Sql Role Provider. -->  
     <roleManager enabled ="true"   
      defaultProvider ="SqlRoleProvider" >  
@@ -61,7 +61,7 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] role provider (in 
   
 7.  Set the `roleProviderName` attribute to `SqlRoleProvider`. The following example shows a fragment of the configuration.  
   
-    ```  
+    ```xml  
     <behaviors>  
      <serviceBehaviors>  
       <behavior name="CalculatorServiceBehavior">  

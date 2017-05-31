@@ -39,7 +39,7 @@ Specifies a remarks section for the member.
   
 ## Syntax  
   
-```  
+```xml  
 <remarks>description</remarks>  
 ```  
   

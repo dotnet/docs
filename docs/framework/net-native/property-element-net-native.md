@@ -89,7 +89,7 @@ Applies runtime reflection policy to a property.
   
 -   By adding a nested [\<Property>](../../../docs/framework/net-native/property-element-net-native.md) element for each property whose getter we'd like to invoke, as the following default.rd.xml file does.  
   
-    ```  
+    ```xml  
     <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
        <Application>  
           <Namespace Name="LibraryApplications"  Browse="Required Public" >  

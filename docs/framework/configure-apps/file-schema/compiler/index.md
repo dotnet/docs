@@ -51,7 +51,7 @@ Compiler and language provider settings specify compiler configuration elements 
 ## Example  
  The following example illustrates a typical compiler configuration element.  
   
-```  
+```xml  
 <configuration>  
    <system.codedom>  
      <compilers>  

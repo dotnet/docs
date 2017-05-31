@@ -50,7 +50,7 @@ manager: "mbaldwin"
   
 1.  To set up auditing in configuration, add a [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) element to the [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md) section of the web.config file. Then add a [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) element and set the various attributes, as shown in the following example.  
   
-    ```  
+    ```xml  
     <behaviors>  
        <behavior name="myAuditBehavior">  
           <serviceSecurityAudit auditLogLocation="Application"  
@@ -63,7 +63,7 @@ manager: "mbaldwin"
   
 2.  You must specify the behavior for the service, as shown in the following example.  
   
-    ```  
+    ```xml  
     <services>  
         <service type="WCS.Samples.Service.Echo"   
         behaviorConfiguration=" myAuditBehavior">  

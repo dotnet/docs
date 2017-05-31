@@ -25,7 +25,7 @@ This topic describes how you can rename a [!INCLUDE[indigo1](../../../includes/i
   
 -   In the configuration file of the service, change the name of the service to the new name you have chosen, as indicated in the following example. The configuration file can be either app.config or web.config file depending on your hosting model.  
   
-```  
+```xml  
 <system.servicemodel>  
    <services>  
       <service name="WcfService.NewName">  
@@ -48,7 +48,7 @@ This topic describes how you can rename a [!INCLUDE[indigo1](../../../includes/i
   
 -   In the configuration file of the service, change the name of the service contract to the new name you have chosen, as indicated in the following example. The configuration file can be either app.config or web.config file depending on your hosting model.  
   
-```  
+```xml  
 <system.servicemodel>  
    <services>  
       <service>  

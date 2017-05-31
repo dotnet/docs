@@ -29,7 +29,7 @@ When creating an application, you often want to defer decisions to the administr
 ## Major Sections  
  The [!INCLUDE[indigo1](../../../includes/indigo1-md.md)] configuration scheme includes the following three major sections (`serviceModel`, `bindings`, and `services`):  
   
-```  
+```xml  
 <configuration>  
     <system.serviceModel>  
         <bindings>  
@@ -56,7 +56,7 @@ When creating an application, you often want to defer decisions to the administr
 #### Specifying an Endpoint to Use a Binding Type  
  The first example illustrates how to specify an endpoint configured with an address, a contract, and a binding.  
   
-```  
+```xml  
 <service name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">  
   <!—- This section is optional with the default configuration introduced  
        in .NET Framework 4. -->  
@@ -84,7 +84,7 @@ When creating an application, you often want to defer decisions to the administr
 > [!NOTE]
 >  If you give a particular name to the binding, the `bindingConfiguration` specified in the service endpoint must match with it.  
   
-```  
+```xml  
 <service name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">  
   <endpoint   
       address="/HelloWorld2/"  
@@ -105,7 +105,7 @@ When creating an application, you often want to defer decisions to the administr
 > [!NOTE]
 >  If you give a particular name to the behavior, the `behaviorConfiguration` specified in the service or endpoint section must match it.  
   
-```  
+```xml  
 <behaviors>  
     <behavior>  
         <ServiceMetadata httpGetEnabled="true" />   
@@ -130,7 +130,7 @@ When creating an application, you often want to defer decisions to the administr
 ## Specifying a Service with Two Endpoints Using Different Binding Values  
  In this last example, two endpoints are configured for the `HelloWorld` service type. Each endpoint uses a different customized  `bindingConfiguration` attribute of the same binding type (each modifies the `basicHttpBinding`).  
   
-```  
+```xml  
 <service name="HelloWorld, IndigoConfig, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">  
     <endpoint  
         address="http://computer:8080/Hello1"  

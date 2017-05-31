@@ -145,7 +145,7 @@ for (int i = 0; i < args.Length; i++)
   
  The sample then publishes metadata in the standard way, using the following configuration file.  
   
-```  
+```xml  
 <services>  
   <service   
       name="Microsoft.ServiceModel.Samples.CalculatorService"  
@@ -224,7 +224,7 @@ public void GenerateOperation(OperationContractGenerationContext context)
 ## The Client Application  
  The client application loads the custom WSDL importer by specifying it in the application configuration file.  
   
-```  
+```xml  
 <client>  
   <endpoint address="http://localhost/servicemodelsamples/service.svc"   
   binding="wsHttpBinding"   

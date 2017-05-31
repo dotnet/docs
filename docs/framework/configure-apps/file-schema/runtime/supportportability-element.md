@@ -33,7 +33,7 @@ Specifies that an application can reference the same assembly in two different i
   
 ## Syntax  
   
-```  
+```xml  
 <supportPortability PKT="public_key_token" enabled="true|false"/>  
 ```  
   
@@ -76,7 +76,7 @@ Specifies that an application can reference the same assembly in two different i
 ## Example  
  The following example enables an application to have references to both the .NET Framework implementation and the .NET Framework for Silverlight implementation of any .NET Framework assembly that exists in both implementations. The `/appconfig` compiler option must be used to specify the location of this app.config file.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding>  

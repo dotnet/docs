@@ -34,7 +34,7 @@ The readers and writers produced by the <xref:System.Runtime.Serialization.Json.
   
  To read this JSON document using one of the readers previously mentioned, use the same sequence of <xref:System.Xml.XmlDictionaryReader> calls as you would to read the following XML document.  
   
-```  
+```xml  
 <root type="object">  
     <product type="string">pencil</product>  
     <price type="number">12</price>  

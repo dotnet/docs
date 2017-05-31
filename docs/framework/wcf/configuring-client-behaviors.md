@@ -23,7 +23,7 @@ manager: "erikre"
 ## Example  
  The following configuration code defines a behavior called `myBehavior`. The client endpoint references this behavior in the `behaviorConfiguration` attribute.  
   
-```  
+```xml  
 <configuration>  
     <system.serviceModel>  
         <behaviors>  

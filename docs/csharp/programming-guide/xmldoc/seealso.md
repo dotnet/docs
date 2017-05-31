@@ -44,7 +44,7 @@ translation.priority.ht:
 # &lt;seealso&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <seealso cref="member"/>  
 ```  
   

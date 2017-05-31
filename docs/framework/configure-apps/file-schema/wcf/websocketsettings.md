@@ -18,16 +18,24 @@ manager: "erikre"
 # &lt;webSocketSettings&gt;
 A configuration element used to specify Web Socket settings.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<bindings>  
 \<netHttpBinding>  
   
 ## Syntax  
   
-```  
+```xml  
 <netHttpBinding>  
-   <binding>   
-       <webSocketSettings createNotificationOnConnection="boolean"                              disablePayloadMasking="boolean"                              keepAliveInterval="TimeSpan"                              maxPendingConnections="Integer"                              receiveBufferSize="Integer"                              sendBufferSize="Integer"                              subProtocol="String"                              transportUsage="WhenDuplex/Always/Never"/>   </binding>  
+  <binding>   
+    <webSocketSettings createNotificationOnConnection="boolean" 
+                       disablePayloadMasking="boolean" 
+                       keepAliveInterval="TimeSpan" 
+                       maxPendingConnections="Integer" 
+                       receiveBufferSize="Integer" 
+                       sendBufferSize="Integer" 
+                       subProtocol="String" 
+                       transportUsage="WhenDuplex/Always/Never"/>
+  </binding>  
 </netHttpBinding>  
 ```  
   

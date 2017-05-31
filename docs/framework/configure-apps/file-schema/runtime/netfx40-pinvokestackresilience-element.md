@@ -32,7 +32,7 @@ Specifies whether the runtime automatically fixes incorrect platform invoke decl
   
 ## Syntax  
   
-```  
+```xml  
 <NetFx40_PInvokeStackResilience  enabled="1|0"/>  
 ```  
   
@@ -77,7 +77,7 @@ Specifies whether the runtime automatically fixes incorrect platform invoke decl
 ## Example  
  The following example shows how to opt into increased resilience against incorrect platform invoke declarations for an application, at the cost of slower transitions between managed and unmanaged code.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <NetFx40_PInvokeStackResilience enabled="1"/>  

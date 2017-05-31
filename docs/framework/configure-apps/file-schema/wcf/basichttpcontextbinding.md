@@ -24,7 +24,7 @@ Specifying a binding that provides context for the <xref:System.ServiceModel.Bas
   
 ## Syntax  
   
-```  
+```xml  
 <basicHttpContextBinding>  
    <binding   
        allowCookies="Boolean"  

@@ -38,7 +38,7 @@ The <xref:System.Diagnostics.TraceSource> class is used by applications to produ
   
 3.  Replace the default configuration file content with the following settings to initialize a console trace listener and a text writer trace listener for the trace source that was created in step 1.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.diagnostics>  
         <sources>  

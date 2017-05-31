@@ -25,7 +25,7 @@ Specifies settings that are used to find and validate an X.509 certificate in a 
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel.services>  
   <federationConfiguration>  
     <serviceCertificate>  

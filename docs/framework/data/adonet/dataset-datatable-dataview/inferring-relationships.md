@@ -20,7 +20,7 @@ If an element that is inferred as a table has a child element that is also infer
   
  For example, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1>  
     <ChildElement1 attr1="value1" attr2="value2"/>  

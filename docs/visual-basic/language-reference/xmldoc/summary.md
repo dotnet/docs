@@ -39,7 +39,7 @@ Specifies the summary of the member.
   
 ## Syntax  
   
-```  
+```xml  
 <summary>description</summary>  
 ```  
   

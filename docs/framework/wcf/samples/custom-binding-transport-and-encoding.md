@@ -27,7 +27,7 @@ A custom binding is defined by an ordered list of discrete binding elements. Thi
   
  The service configuration defines the custom bindings as follows:  
   
-```  
+```xml  
 <bindings>  
     <customBinding>  
         <binding name="HttpBinding" >  

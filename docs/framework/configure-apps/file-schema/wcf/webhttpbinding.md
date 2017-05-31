@@ -18,39 +18,41 @@ manager: "erikre"
 # &lt;webHttpBinding&gt;
 Defines a binding element that is used to configure endpoints for [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] Web services that respond to HTTP requests instead of SOAP messages.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<bindings>  
 \<webHttpBinding>  
   
 ## Syntax  
   
-```  
+```xml  
 <webHttpBinding>  
-    <binding   
-        allowCookies="Boolean"  
-        bypassProxyOnLocal="Boolean"  
-        closeTimeout="TimeSpan"  
-        hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
-        maxBufferPoolSize="integer"  
-        maxBufferSize="integer"  
-        maxReceivedMessageSize="Integer"  
-        name="string"  
-        openTimeout="TimeSpan"   
-        proxyAddress="URI"  
-        receiveTimeout="TimeSpan"  
-        sendTimeout="TimeSpan"  
-                transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
-        useDefaultWebProxy="Boolean">  
-  
-writeEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"  
-        <security mode="None/Transport/TransportCredentialOnly">  
-            <transport clientCredentialType =   
-                 "Basic/Certificate/Digest/None/Ntlm/Windows"  
-                  proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
-                  realm="string" />  
-        </security>  
-       <readerQuotas             maxArrayLength="Integer"            maxBytesPerRead="Integer"            maxDepth="Integer"             maxNameTableCharCount="Integer"                     maxStringContentLength="Integer" />  
-    </binding>  
+  <binding   
+    allowCookies="Boolean"  
+    bypassProxyOnLocal="Boolean"  
+    closeTimeout="TimeSpan"  
+    hostNameComparisonMode="StrongWildCard/Exact/WeakWildcard"  
+    maxBufferPoolSize="integer"  
+    maxBufferSize="integer"  
+    maxReceivedMessageSize="Integer"  
+    name="string"  
+    openTimeout="TimeSpan"   
+    proxyAddress="URI"  
+    receiveTimeout="TimeSpan"  
+    sendTimeout="TimeSpan"  
+    transferMode="Buffered/Streamed/StreamedRequest/StreamedResponse"  
+    useDefaultWebProxy="Boolean" 
+    writeEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding">  
+  <security mode="None/Transport/TransportCredentialOnly">  
+    <transport clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  
+               proxyCredentialType="Basic/Digest/None/Ntlm/Windows"  
+               realm="string" />  
+  </security>  
+  <readerQuotas maxArrayLength="Integer" 
+                maxBytesPerRead="Integer" 
+                maxDepth="Integer" 
+                maxNameTableCharCount="Integer" 
+                maxStringContentLength="Integer" />  
+  </binding>  
 </webHttpBinding>  
 ```  
   

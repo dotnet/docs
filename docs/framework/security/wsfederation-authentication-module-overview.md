@@ -106,7 +106,7 @@ Windows Identity Foundation (WIF) includes support for federated authentication 
 > [!WARNING]
 >  In the following example, both the `requireHttps` attribute of the `<wsFederation>` element and the `requireSsl` attribute of the `<cookieHandler>` element are `false`. This presents a potential security threat. In production, both these values should be set `true`.  
   
-```  
+```xml  
 <configuration>  
   <configSections>  
     <section name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />  

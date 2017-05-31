@@ -28,7 +28,7 @@ Represents a collection of target URIs for which the <xref:System.IdentityModel.
   
 ## Syntax  
   
-```  
+```xml  
 <allowedAudienceUris>  
       <add allowedAudienceUri="String"/>  
 </allowedAudienceUris>  

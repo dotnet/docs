@@ -32,7 +32,7 @@ Specifies that the runtime should use legacy sort orders when performing string 
   
 ## Syntax  
   
-```  
+```xml  
 <CompatSortNLSVersion    
    enabled="4096"/>  
 ```  
@@ -90,7 +90,7 @@ sta equals a in the sort order.
   
  However, if you add the following configuration file to the example's directory and then run the example on the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], the output is identical to that produced by the example when it is run on the [!INCLUDE[net_v35_short](../../../../../includes/net-v35-short-md.md)].  
   
-```  
+```xml  
 <?xml version ="1.0"?>  
 <configuration>  
    <runtime>  

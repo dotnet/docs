@@ -70,7 +70,7 @@ manager: "erikre"
   
 ## Example  
   
-```  
+```xml  
 <bindings>  
    <customBinding>  
       <binding name="FederationDuplexHttpMessageSecurityBinding">  

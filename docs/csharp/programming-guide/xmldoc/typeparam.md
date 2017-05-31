@@ -39,7 +39,7 @@ translation.priority.ht:
 # &lt;typeparam&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <typeparam name="name">description</typeparam>  
 ```  
   

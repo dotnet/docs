@@ -88,7 +88,7 @@ public static void Main()
   
  The MSMQ queue name is specified in an appSettings section of the configuration file, as shown in the following sample configuration.  
   
-```  
+```xml  
 <appSettings>  
     <add key="queueName" value=".\private$\ServiceModelSamplesTransacted" />  
 </appSettings>  
@@ -188,7 +188,7 @@ Processing Purchase Order: 7b31ce51-ae7c-4def-9b8b-617e4288eafd
   
 1.  If your computer is not part of a domain or does not have Active Directory integration installed, turn off transport security by setting the authentication mode and protection level to `None` as shown in the following sample configuration code.  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
       <services>  
         <service name="Microsoft.ServiceModel.Samples.OrderProcessorService"  

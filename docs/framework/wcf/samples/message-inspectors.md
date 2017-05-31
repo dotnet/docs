@@ -267,7 +267,7 @@ public class SchemaValidationBehavior : IEndpointBehavior
 ## Adding the Message Inspector through Configuration  
  For configuring a custom behavior on an endpoint in the application configuration file, the service model requires implementers to create a configuration *extension element* represented by a class derived from <xref:System.ServiceModel.Configuration.BehaviorExtensionElement>. This extension must then be added to the service model's configuration section for extensions as shown for the following extension discussed in this section.  
   
-```  
+```xml  
 <system.serviceModel>  
 …  
    <extensions>  
@@ -283,7 +283,7 @@ public class SchemaValidationBehavior : IEndpointBehavior
   
  When the extension is added to a configuration scope, the behavior can be added to a behavior configuration as it is shown in the following code. Behavior configurations are reusable elements that can be applied to multiple endpoints as required. Because the particular behavior to be configured here implements <xref:System.ServiceModel.Description.IEndpointBehavior>, it is only valid in the respective configuration section in the configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
    <behaviors>  
       …  

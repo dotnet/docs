@@ -37,7 +37,7 @@ Specifies whether to disable the caching of binding failures that occur because 
   
 ## Syntax  
   
-```  
+```xml  
 <disableCachingBindingFailures enabled="0|1"/>  
 ```  
   
@@ -81,7 +81,7 @@ Specifies whether to disable the caching of binding failures that occur because 
 ## Example  
  The following code example shows how to disable the caching of assembly binding failures that occur because the assembly was not found by probing.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <disableCachingBindingFailures enabled="1" />  

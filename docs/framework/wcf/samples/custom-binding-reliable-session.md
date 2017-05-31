@@ -37,7 +37,7 @@ A custom binding is defined by an ordered list of discrete binding elements. Thi
   
  The service configuration for the sample is defined as shown in the following code example.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.serviceModel>  
@@ -122,7 +122,7 @@ Press <ENTER> to terminate client.
     > [!IMPORTANT]
     >  When running the client in a cross-machine configuration, be sure to replace "localhost" in both the `address` attribute of the [\<endpoint>](../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md) element and the `clientBaseAddress` attribute of the [\<compositeDuplex>](../../../../docs/framework/configure-apps/file-schema/wcf/compositeduplex.md) with the name of the appropriate machine, as shown in the following example.  
   
-    ```  
+    ```xml  
     <endpoint name = ""  
     address="http://service_machine_name/servicemodelsamples/service.svc"  
     ... />  

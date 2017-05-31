@@ -34,7 +34,7 @@ compound expressions
 </td>
 <td>
 
-```
+```xml
 <expression1>
 <expression2>
 ```

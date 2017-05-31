@@ -39,7 +39,7 @@ Formats a word as a parameter.
   
 ## Syntax  
   
-```  
+```xml  
 <paramref name="name"/>  
 ```  
   

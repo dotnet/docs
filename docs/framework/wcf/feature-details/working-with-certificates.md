@@ -155,7 +155,7 @@ To program [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] security, X.5
   
  With this capability enabled, you can set the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication.MapClientCertificateToWindowsAccount%2A> property of the <xref:System.ServiceModel.Security.X509ClientCertificateAuthentication> class to `true`. In configuration, you can set the `mapClientCertificateToWindowsAccount` attribute of the [\<authentication>](../../../../docs/framework/configure-apps/file-schema/wcf/authentication-of-servicecertificate-element.md) element to `true`, as shown in the following code.  
   
-```  
+```xml  
 <serviceBehaviors>  
  <behavior name="MappingBehavior">  
   <serviceCredentials>  

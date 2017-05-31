@@ -24,7 +24,7 @@ An endpoint can be addressed by one or more SOAP headers in addition to its basi
   
 ## Syntax  
   
-```  
+```xml  
 <headers>  
     <Region xmlns="Uri">"String"</Region>  
         <Member xmlns="Uri">"String"</Member>  

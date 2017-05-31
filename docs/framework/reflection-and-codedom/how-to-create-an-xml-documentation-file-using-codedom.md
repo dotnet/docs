@@ -53,7 +53,7 @@ CodeDOM can be used to create code that generates XML documentation. The process
   
  The code example creates the following XML documentation in the HelloWorldDoc.xml file.  
   
-```  
+```xml  
 <?xml version="1.0" ?>   
 <doc>  
   <assembly>  

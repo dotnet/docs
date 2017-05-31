@@ -71,7 +71,7 @@ By default, when a user name and password is used for authentication, [!INCLUDE[
   
      The following example shows the configuration code for the binding.  
   
-    ```  
+    ```xml  
     <system.serviceModel>   
       <bindings>  
       <wsHttpBinding>  
@@ -106,7 +106,7 @@ By default, when a user name and password is used for authentication, [!INCLUDE[
   
      The following example shows the `<serviceCredentials>` fragment to this point.  
   
-    ```  
+    ```xml  
     <serviceCredentials>  
       <userNameAuthentication userNamePasswordValidationMode="Custom" customUserNamePasswordValidatorType="Microsoft.ServiceModel.Samples.CalculatorService.CustomUserNameValidator, service" />  
     </serviceCredentials>  

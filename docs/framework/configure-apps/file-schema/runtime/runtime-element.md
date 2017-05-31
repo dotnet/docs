@@ -35,7 +35,7 @@ Provides information used by the common language runtime to configure applicatio
   
 ## Syntax  
   
-```  
+```xml  
 <runtime>  
 </runtime>  
 ```  

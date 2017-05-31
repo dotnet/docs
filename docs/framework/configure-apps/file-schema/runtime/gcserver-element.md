@@ -35,7 +35,7 @@ Specifies whether the common language runtime runs server garbage collection.
   
 ## Syntax  
   
-```  
+```xml  
 <gcServer    
    enabled="true|false"/>  
 ```  
@@ -79,7 +79,7 @@ Specifies whether the common language runtime runs server garbage collection.
 ## Example  
  The following example enables server garbage collection.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <gcServer enabled="true"/>  

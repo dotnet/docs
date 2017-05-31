@@ -73,7 +73,7 @@ One of the new features in the .NET Framework version 2.0 is an enhanced tracing
   
 1.  The code in the first procedure does not programmatically identify any trace listeners or filters. The code alone results in the trace messages being written to the default trace listener. To configure specific trace listeners and their associated filters, edit the configuration file that corresponds to the name of your application. In this file, you can add or remove a listener, set the properties and filter for a listener, or remove listeners. The following configuration file example shows how to initialize a console trace listener and a text writer trace listener for the trace source that is created in the preceding procedure. In addition to configuring the trace listeners, the configuration file creates filters for both of the listeners and creates a source switch for the trace source. Two techniques are shown for adding trace listeners: adding the listener directly to the trace source and adding a listener to the shared listeners collection and then adding it by name to the trace source. The filters identified for the two listeners are initialized with different source levels. This results in some messages being written by only one of the two listeners.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.diagnostics>  
         <sources>  

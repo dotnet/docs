@@ -63,7 +63,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation
   
  The following examples show what namespaces are returned by the <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A> methods at various scopes in an XML document.  
   
-```  
+```xml  
 <root>  
     <element1 xmlns="http://www.contoso.com" xmlns:books="http://www.contoso.com/books">  
         <element2 />  
@@ -84,7 +84,7 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides two sets of navigation
   
  The following examples show what namespaces are returned by the <xref:System.Xml.XPath.XPathNavigator.MoveToFirstNamespace%2A> and <xref:System.Xml.XPath.XPathNavigator.MoveToNextNamespace%2A> methods with the <xref:System.Xml.XPath.XPathNamespaceScope> enumeration specified at various scopes in an XML document.  
   
-```  
+```xml  
 <root xmlns="http://www.contoso.com" xmlns:a="http://www.contoso.com/a" xmlns:b="http://www.contoso.com/b">  
     <child1 xmlns="" xmlns:a="urn:a">  
         <child2 xmlns:c="urn:c" />  

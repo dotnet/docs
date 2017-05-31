@@ -32,7 +32,7 @@ Contains the known types that the <xref:System.Runtime.Serialization.DataContrac
   
 ## Syntax  
   
-```  
+```xml  
 <configuration>  
   <system.runtime.serialization>  
     <dataContractSerializer>  
@@ -72,7 +72,7 @@ Contains the known types that the <xref:System.Runtime.Serialization.DataContrac
 ## Example  
  The following XML code shows declared types and known types added to a `DataContractSerializer` element. The example shows three types being added. The first is a custom type named "Orders" that uses a known type named "Item". The second declared type is a <xref:System.Collections.Generic.List%601> that uses `Item` as a known type. Finally the third declared type is a <xref:System.Collections.Generic.Dictionary%602>. The <xref:System.Collections.Generic.Dictionary%602> class type is a generic type, with two type parameters. The first represents the key and the second represents the value. The following example adds a <xref:System.Collections.Generic.List%601> of the second type (the value) to the list of known types. You must use the `index` attribute to specify which type parameter to use in the known type. In this case, the value type is indicated by the index attribute set to "1" (the collection is zero-based).  
   
-```  
+```xml  
 <configuration>  
   <system.runtime.serialization>  
     <dataContractSerializer>  

@@ -29,7 +29,7 @@ Specifies an HTTP transport for transmitting SOAP messages for a custom binding.
   
 ## Syntax  
   
-```  
+```xml  
 <httpTransport  
     allowCookies=Boolean"  
     authenticationScheme="Digest/Negotiate/Ntlm/Basic/Anonymous"  

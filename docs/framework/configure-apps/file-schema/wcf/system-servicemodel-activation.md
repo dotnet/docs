@@ -21,7 +21,7 @@ This configuration section represents the configuration settings for the SMSvcHo
 ## Sample Configuration File  
  The following is a sample configuration file (SMSvcHost.exe.config), which is used by the listener process SMSvcHost.exe.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <gcConcurrent enabled="false" />  

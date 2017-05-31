@@ -42,7 +42,7 @@ manager: "erikre"
   
  Alternatively, you can also use configuration to add an AJAX endpoint. Use the <xref:System.ServiceModel.WebHttpBinding> on the service endpoint and configure that endpoint with the <xref:System.ServiceModel.Description.WebHttpBehavior> as shown in the following code snippet.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <behaviors>  

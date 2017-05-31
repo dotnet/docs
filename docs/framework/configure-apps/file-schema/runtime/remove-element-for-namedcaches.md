@@ -33,7 +33,7 @@ Removes a named cache entry from the `namedCaches` collection for a memory cache
   
 ## Syntax  
   
-```  
+```xml  
 <namedCaches>  
     <remove name="default" />  
     <!-- child elements -->  

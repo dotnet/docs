@@ -80,7 +80,7 @@ The `My.Applicaton.Log` and `My.Log` objects make it easy to write logging and t
   
  Examples of `<sources>`, `<switches>`, and `<sharedListeners>` nodes are shown in the following code:  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

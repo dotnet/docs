@@ -41,7 +41,7 @@ foreach (XElement el in list)
   
  This example produces the following output:  
   
-```  
+```xml  
 <Child2>4</Child2>  
 <Child2>5</Child2>  
 <Child2>6</Child2>  

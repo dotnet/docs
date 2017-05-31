@@ -16,7 +16,7 @@ manager: "erikre"
 # &lt;bufferReceive&gt;
 A service behavior that enables a service to use buffered receive processing, which enables a workflow service to process out-of-order messages.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -24,8 +24,14 @@ A service behavior that enables a service to use buffered receive processing, wh
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <bufferReceive maxPendingMessagesPerChannel="Integer" />    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <bufferReceive maxPendingMessagesPerChannel="Integer" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  

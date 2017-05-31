@@ -25,7 +25,7 @@ Registers a token replay cache with a service or a security token handler collec
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <caches>  
@@ -60,7 +60,7 @@ Registers a token replay cache with a service or a security token handler collec
 ## Example  
  The following XML shows the configuration of a custom cache for detecting replayed tokens.  
   
-```  
+```xml  
 <caches>  
   <tokenReplayCache type="MyCacheLibrary.MyTokenReplayCache, MyCacheLibrary">  
   </tokenReplayCache>  

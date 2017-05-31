@@ -28,7 +28,7 @@ Passes constraining type arguments of a generic to the constructor of the generi
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object x:TypeArguments="typeString" .../>  
 ```  
   
@@ -81,7 +81,7 @@ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"
   
  If you use XAML 2009 instead of mapping the CLR base types to obtain XAML types for common language primitives, you can use [Built-in Types for Common XAML Language Primitives](../../../docs/framework/xaml-services/built-in-types-for-common-xaml-language-primitives.md) as information items in a `typeString`. For example, you could declare the following (prefix mappings not shown, but x is the XAML language XAML namespace for XAML 2009):  
   
-```  
+```xaml  
 <my:BusinessObject x:TypeArguments="x:String,x:Int32"/>  
 ```  
   

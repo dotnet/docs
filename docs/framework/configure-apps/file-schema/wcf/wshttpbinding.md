@@ -29,7 +29,7 @@ Defines a secure, reliable, interoperable binding suitable for non-duplex servic
   
 ## Syntax  
   
-```  
+```xml  
 <wsHttpBinding>  
     <binding   
         allowCookies="Boolean"  
@@ -107,7 +107,7 @@ Defines a secure, reliable, interoperable binding suitable for non-duplex servic
   
 ## Example  
   
-```  
+```xml  
 <configuration>  
     <system.ServiceModel>  
         <bindings>  

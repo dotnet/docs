@@ -30,7 +30,7 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
   
 ## Syntax  
   
-```  
+```xml  
 <add type="String">  
    <knownType type="String">  
        <parameter index="Integer"  
@@ -70,7 +70,7 @@ Adds a type used by the <xref:System.Runtime.Serialization.DataContractSerialize
   
 ## Example  
   
-```  
+```xml  
 <add type="MyCompany.Library.Shape,   
            MyAssembly, Version=2.0.0.0, Culture=neutral,  
            PublicKeyToken=XXXXXX, processorArchitecture=MSIL">  

@@ -65,7 +65,7 @@ This topic describes the format of trace data, how to view it, and approaches th
   
  If you examine the "Sent a message over a channel" trace, you may see the following content.  
   
-```  
+```xml  
 <E2ETraceEvent xmlns="http://schemas.microsoft.com/2004/06/E2ETraceEvent">  
    <System xmlns="http://schemas.microsoft.com/2004/06/windows/eventlog/system">  
       <EventID>262163</EventID>  

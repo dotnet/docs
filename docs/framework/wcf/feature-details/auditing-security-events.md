@@ -62,7 +62,7 @@ Applications created with [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)
 ### Configuration  
  You can also use configuration to specify auditing behavior by adding a [\<serviceSecurityAudit>](../../../../docs/framework/configure-apps/file-schema/wcf/servicesecurityaudit.md) under the [\<behaviors>](../../../../docs/framework/configure-apps/file-schema/wcf/behaviors.md). You must add the element under a [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md) as shown in the following code.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <behaviors>  

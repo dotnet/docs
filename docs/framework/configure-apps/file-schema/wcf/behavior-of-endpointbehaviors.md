@@ -28,7 +28,7 @@ The `behavior` element contains a collection of settings for the behavior of an 
   
 ## Syntax  
   
-```  
+```xml  
 <system.ServiceModel>  
   <behaviors>  
     <endpointBehaviors>  

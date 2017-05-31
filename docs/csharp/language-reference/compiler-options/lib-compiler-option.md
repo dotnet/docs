@@ -37,7 +37,7 @@ The **/lib** option specifies the location of assemblies referenced by means of 
   
 ## Syntax  
   
-```  
+```console  
 /lib:dir1[,dir2]  
 ```  
   
@@ -80,7 +80,7 @@ The **/lib** option specifies the location of assemblies referenced by means of 
 ## Example  
  Compile t2.cs to create an .exe file. The compiler will look in the working directory and in the root directory of the C drive for assembly references.  
   
-```  
+```console  
 csc /lib:c:\ /reference:t2.dll t2.cs  
 ```  
   

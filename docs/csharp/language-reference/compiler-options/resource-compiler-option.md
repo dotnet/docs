@@ -40,7 +40,7 @@ Embeds the specified resource into the output file.
   
 ## Syntax  
   
-```  
+```console  
 /resource:filename[,identifier[,accessibility-modifier]]  
 ```  
   
@@ -80,7 +80,7 @@ Embeds the specified resource into the output file.
 ## Example  
  Compile `in.cs` and attach resource file `rf.resource`:  
   
-```  
+```console  
 csc /resource:rf.resource in.cs  
 ```  
   

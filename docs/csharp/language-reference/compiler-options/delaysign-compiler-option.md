@@ -37,7 +37,7 @@ This option causes the compiler to reserve space in the output file so that a di
   
 ## Syntax  
   
-```  
+```console  
 /delaysign[ + | - ]  
 ```  
   

@@ -37,7 +37,7 @@ The **/target:winexe** option causes the compiler to create an executable (EXE),
   
 ## Syntax  
   
-```  
+```console  
 /target:winexe  
 ```  
   
@@ -65,7 +65,7 @@ The **/target:winexe** option causes the compiler to create an executable (EXE),
 ## Example  
  Compile `in.cs` into a Windows program:  
   
-```  
+```console  
 csc /target:winexe in.cs  
 ```  
   

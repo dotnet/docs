@@ -205,9 +205,17 @@ Finally, you can add a `null` case to ensure the argument is not `null`:
 
 [!code-csharp[NullCase](../../samples/csharp/PatternMatching/GeometricUtilities.cs#10_NullCase "Add null case")]
 
-The special case for the `null` pattern is interesting because the constant `null` does
-not have a type, but can be converted to any reference type or nullable
-type. 
+The special behavior for the `null` pattern is interesting because the constant
+`null` does not have a type, but can be converted to any reference
+type or nullable type. The value `null` does not match any type pattern,
+regardless of the compile time type of the variable. There are no null
+checks in any of the case blocks of the samples above. They would not be
+necessary: matching the type pattern guarantees a non null value.
+
+This special case makes the new `switch` based type pattern consistent
+with the `is` statement: `is` statements always returned `false` when
+the value being checked was `null`. It's also simpler: once you have
+checked the type, you don't need an additional null check.
 
 ## Conclusions
 

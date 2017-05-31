@@ -1,5 +1,5 @@
 ---
-title: Type Inference (F#)
+title: Type Inference (F#) | Microsoft Docs
 description: Type Inference (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

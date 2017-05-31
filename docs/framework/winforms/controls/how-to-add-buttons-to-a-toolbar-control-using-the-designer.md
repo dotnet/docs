@@ -46,9 +46,9 @@ manager: "wpickett"
   
     |Property|Description|  
     |--------------|-----------------|  
-    |<xref:System.Windows.Forms.ToolBarButton.DropDownMenu%2A>|Sets the menu to be displayed in the drop-down toolbar button. The toolbar button's <xref:System.Windows.Forms.ToolBarButton.Style%2A> property must be set to <xref:System.Windows.Forms.ToolBarButtonStyle>. This property takes an instance of the <xref:System.Windows.Forms.ContextMenu> class as a reference.|  
-    |<xref:System.Windows.Forms.ToolBarButton.PartialPush%2A>|Sets whether a toggle-style toolbar button is partially pushed. The toolbar button's <xref:System.Windows.Forms.ToolBarButton.Style%2A> property must be set to <xref:System.Windows.Forms.ToolBarButtonStyle>.|  
-    |<xref:System.Windows.Forms.ToolBarButton.Pushed%2A>|Sets whether a toggle-style toolbar button is currently in the pushed state. The toolbar button's <xref:System.Windows.Forms.ToolBarButton.Style%2A> property must be set to <xref:System.Windows.Forms.ToolBarButtonStyle> or <xref:System.Windows.Forms.ToolBarButtonStyle>.|  
+    |<xref:System.Windows.Forms.ToolBarButton.DropDownMenu%2A>|Sets the menu to be displayed in the drop-down toolbar button. The toolbar button's <xref:System.Windows.Forms.ToolBarButton.Style%2A> property must be set to <xref:System.Windows.Forms.ToolBarButtonStyle.DropDownButton>. This property takes an instance of the <xref:System.Windows.Forms.ContextMenu> class as a reference.|  
+    |<xref:System.Windows.Forms.ToolBarButton.PartialPush%2A>|Sets whether a toggle-style toolbar button is partially pushed. The toolbar button's <xref:System.Windows.Forms.ToolBarButton.Style%2A> property must be set to <xref:System.Windows.Forms.ToolBarButtonStyle.ToggleButton>.|  
+    |<xref:System.Windows.Forms.ToolBarButton.Pushed%2A>|Sets whether a toggle-style toolbar button is currently in the pushed state. The toolbar button's <xref:System.Windows.Forms.ToolBarButton.Style%2A> property must be set to <xref:System.Windows.Forms.ToolBarButtonStyle.ToggleButton> or <xref:System.Windows.Forms.ToolBarButtonStyle.PushButton>.|  
     |<xref:System.Windows.Forms.ToolBarButton.Style%2A>|Sets the style of the toolbar button. Must be one of the values in the <xref:System.Windows.Forms.ToolBarButtonStyle> enumeration.|  
     |<xref:System.Windows.Forms.ToolBarButton.Text%2A>|The text string displayed by the button.|  
     |<xref:System.Windows.Forms.ToolBarButton.ToolTipText%2A>|The text that appears as a ToolTip for the button.|  

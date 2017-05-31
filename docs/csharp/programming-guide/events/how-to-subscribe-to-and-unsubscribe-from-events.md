@@ -46,7 +46,7 @@ You subscribe to an event that is published by another class when you want to wr
   
 3.  Double-click the event that you want to create, for example the `Load` event.  
   
-     [!INCLUDE[csprcs](../../../csharp/includes/csprcs_md.md)] creates an empty event handler method and adds it to your code. Alternatively you can add the code manually in **Code** view. For example, the following lines of code declare an event handler method that will be called when the `Form` class raises the `Load` event.  
+     [!INCLUDE[csprcs](~/includes/csprcs-md.md)] creates an empty event handler method and adds it to your code. Alternatively you can add the code manually in **Code** view. For example, the following lines of code declare an event handler method that will be called when the `Form` class raises the `Load` event.  
   
      [!code-cs[csProgGuideEvents#11](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-subscribe-to-and-unsubscribe-from-events_1.cs)]  
   

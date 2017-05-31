@@ -37,7 +37,7 @@ The **/pdb** compiler option specifies the name and location of the debug symbol
   
 ## Syntax  
   
-```  
+```console  
 /pdb:filename  
 ```  
   
@@ -55,7 +55,7 @@ The **/pdb** compiler option specifies the name and location of the debug symbol
 ## Example  
  Compile `t.cs` and create a .pdb file called tt.pdb:  
   
-```  
+```console  
 csc /debug /pdb:tt t.cs  
 ```  
   

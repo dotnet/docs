@@ -42,7 +42,7 @@ The **/reference** option causes the compiler to import [public](../../../csharp
   
 ## Syntax  
   
-```  
+```console  
 /reference:[alias=]filename  
 /reference:filename  
 ```  
@@ -89,7 +89,7 @@ The **/reference** option causes the compiler to import [public](../../../csharp
   
  This sets up the external aliases "GridV1" and "GridV2," which you use in your program by means of an extern statement:  
   
-```  
+```csharp  
 extern alias GridV1;  
 extern alias GridV2;  
 // Using statements go here.  
@@ -97,13 +97,13 @@ extern alias GridV2;
   
  Once this is done, you can refer to the grid control from grid.dll by prefixing the control name with GridV1, like this:  
   
-```  
+```csharp  
 GridV1::Grid  
 ```  
   
  In addition, you can refer to the grid control from grid20.dll by prefixing the control name with GridV2 like this:  
   
-```  
+```csharp  
 GridV2::Grid   
 ```  
   

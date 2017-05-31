@@ -1,5 +1,5 @@
 ---
-title: "Adjusting the Size and Scale of Windows Forms | Microsoft Docs"
+title: "Adjusting the size and scale of Windows Forms | Microsoft Docs"
 ms.custom: ""
 ms.date: "04/07/2017"
 ms.prod: ".net-framework"
@@ -21,7 +21,7 @@ author: dotnet-bot
 ms.author: dotnetcontent
 manager: "wpickett"
 ---
-# Adjusting the Size and Scale of Windows Forms
+# Adjusting the size and scale of Windows Forms
 This topic provides links to information about resizing Windows Forms.  
   
 ## In This Section  
@@ -31,8 +31,8 @@ This topic provides links to information about resizing Windows Forms.
  [Automatic Scaling in Windows Forms](~/docs/framework/winforms/automatic-scaling-in-windows-forms.md)  
  Discusses how automatic scaling enables a form and its controls to be displayed appropriately between machines.  
   
-[High DPI Support in Windows Forms](../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)    
-Discusses Windows Forms' support for High DPI and dynamic scaling. 
+ [High DPI Support in Windows Forms](../../../docs/framework/winforms/high-dpi-support-in-windows-forms.md)    
+ Discusses Windows Forms' support for High DPI and dynamic scaling. 
   
 ## Reference  
  <xref:System.Drawing.Size>  
@@ -44,6 +44,6 @@ Discusses Windows Forms' support for High DPI and dynamic scaling.
  <xref:System.Windows.Forms.FlowLayoutPanel>  
  Describes this class and has links to all of its members.  
   
-## Related Sections  
- [Changing the Appearance of Windows Forms](~/docs/framework/winforms/changing-the-appearance-of-windows-forms.md)  
+## Related sections  
+ [Changing the appearance of Windows Forms](~/docs/framework/winforms/changing-the-appearance-of-windows-forms.md)  
  Provides links to topics describing other ways to change the appearance of Windows Forms.

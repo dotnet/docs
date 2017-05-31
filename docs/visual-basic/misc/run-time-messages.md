@@ -34,7 +34,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Visual Basic Run-Time Messages
-This section contains the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] error messages that occur at run time.  
+This section contains the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] error messages that occur at run time.  
   
  [\<address> is not a valid remote file address](../../visual-basic/misc/address-is-not-a-valid-remote-file-address.md)  
   

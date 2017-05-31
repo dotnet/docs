@@ -1,5 +1,5 @@
 ---
-title: Iterators
+title: Iterators | Microsoft Docs
 description: Iterators
 keywords: .NET, .NET Core
 author: BillWagner

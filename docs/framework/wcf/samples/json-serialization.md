@@ -47,7 +47,7 @@ ser.WriteObject(stream1, p);
   
  The memory stream contains valid JSON data.  
   
-```  
+```json  
 {"age":42,"name":"John"}  
 ```  
   

@@ -70,7 +70,7 @@ sealed class B : A {}
  `'MyDerivedC' cannot inherit from sealed class 'SealedClass'.`  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## Remarks  
  To determine whether to seal a class, method, or property, you should generally consider the following two points:  

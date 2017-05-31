@@ -318,7 +318,7 @@ The .NET Framework is language independent. This means that, as a developer, you
      [!code-csharp[Conceptual.CLSCompliant#7](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/enum3.cs#7)]
      [!code-vb[Conceptual.CLSCompliant#7](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/enum3.vb#7)]  
   
--   An enumeration type must have a single instance field named `Value__` that is marked with the <xref:System.Reflection.FieldAttributes?displayProperty=fullName> attribute. This enables you to reference the field value implicitly.  
+-   An enumeration type must have a single instance field named `Value__` that is marked with the <xref:System.Reflection.FieldAttributes.RTSpecialName?displayProperty=fullName> attribute. This enables you to reference the field value implicitly.  
   
 -   An enumeration includes literal static fields whose types match the type of the enumeration itself. For example, if you define a `State` enumeration with values of `State.On` and `State.Off`, `State.On` and `State.Off` are both literal static fields whose type is `State`.  
   
@@ -361,7 +361,7 @@ The .NET Framework is language independent. This means that, as a developer, you
  [!code-csharp[Conceptual.CLSCompliant#29](../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.clscompliant/cs/nestedgenerics2.cs#29)]
  [!code-vb[Conceptual.CLSCompliant#29](../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.clscompliant/vb/nestedgenerics2.vb#29)]  
   
- Generic type names are encoded in the form *name*```*n*, where *name* is the type name, ``` is a character literal, and *n* is the number of parameters declared on the type, or, for nested generic types, the number of newly introduced type parameters. This encoding of generic type names is primarily of interest to developers who use reflection to access CLS-complaint generic types in a library.  
+ Generic type names are encoded in the form *name\`n*, where *name* is the type name, \` is a character literal, and *n* is the number of parameters declared on the type, or, for nested generic types, the number of newly introduced type parameters. This encoding of generic type names is primarily of interest to developers who use reflection to access CLS-complaint generic types in a library.  
   
  If constraints are applied to a generic type, any types used as constraints must also be CLS-compliant. The following example defines a class named `BaseClass` that is not CLS-compliant and a generic class named `BaseCollection` whose type parameter must derive from `BaseClass`. But because `BaseClass` is not CLS-compliant, the compiler emits a warning.  
   
@@ -506,7 +506,7 @@ The .NET Framework is language independent. This means that, as a developer, you
 > [!WARNING]
 >  In some cases, language compilers enforce CLS-compliant rules regardless of whether the <xref:System.CLSCompliantAttribute> attribute is used. For example, defining a static member in an interface violates a CLS rule. However, if you define a `static` (in C#) or `Shared` (in Visual Basic) member in an interface, both the C# and Visual Basic compilers display an error message and fail to compile the app.  
   
- The <xref:System.CLSCompliantAttribute> attribute is marked with an <xref:System.AttributeUsageAttribute> attribute that has a value of <xref:System.AttributeTargets?displayProperty=fullName>. This value allows you to apply the <xref:System.CLSCompliantAttribute> attribute to any program element, including assemblies, modules, types (classes, structures, enumerations, interfaces, and delegates), type members (constructors, methods, properties, fields, and events), parameters, generic parameters, and return values. However, in practice, you should apply the attribute only to assemblies, types, and type members. Otherwise, compilers ignore the attribute and continue to generate compiler warnings whenever they encounter a non-compliant parameter, generic parameter, or return value in your library's public interface.  
+ The <xref:System.CLSCompliantAttribute> attribute is marked with an <xref:System.AttributeUsageAttribute> attribute that has a value of <xref:System.AttributeTargets.All?displayProperty=fullName>. This value allows you to apply the <xref:System.CLSCompliantAttribute> attribute to any program element, including assemblies, modules, types (classes, structures, enumerations, interfaces, and delegates), type members (constructors, methods, properties, fields, and events), parameters, generic parameters, and return values. However, in practice, you should apply the attribute only to assemblies, types, and type members. Otherwise, compilers ignore the attribute and continue to generate compiler warnings whenever they encounter a non-compliant parameter, generic parameter, or return value in your library's public interface.  
   
  The value of the <xref:System.CLSCompliantAttribute> attribute is inherited by contained program elements. For example, if an assembly is marked as CLS-compliant, its types are also CLS-compliant. If a type is marked as CLS-compliant, its nested types and members are also CLS-compliant.  
   

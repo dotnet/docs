@@ -1,5 +1,5 @@
 ---
-title: Copy and Update Record Expressions (F#)
+title: Copy and Update Record Expressions (F#) | Microsoft Docs
 description: Copy and Update Record Expressions (F#)
 keywords: visual f#, f#, functional programming
 author: ChrSteinert
@@ -19,7 +19,7 @@ A *copy and update record expression* is an expression that copies an existing r
 
 ## Syntax
 
-``` fsharp
+```fsharp
 { record-name with
     updated-member-definitions }
 ```

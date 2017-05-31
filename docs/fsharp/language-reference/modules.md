@@ -1,10 +1,10 @@
 ---
-title: Modules (F#)
+title: Modules (F#) | Microsoft Docs
 description: Modules (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
 ms.author: phcart
-ms.date: 05/16/2016
+ms.date: 04/24/2017
 ms.topic: language-reference
 ms.prod: .net
 ms.technology: devlang-fsharp
@@ -87,7 +87,53 @@ If you want all the code in a file to be in a single outer module and you want i
 
 [!code-fsharp[Main](../../../samples/snippets/fsharp/modules/snippet6612.fs)]
 
-## See Also
-[F# Language Reference](index.md)
+## Module `rec`: allowing mutual recursive code at the module level
 
+F# 4.1 introduces the notion of modules which allow for all contained code to be mutually recursive.  This is done via `module rec`.  Use of `module rec` can alleviate some pains in not being able to write mutually referential code between types and modules.  The following is an example of this:
+
+```fsharp
+module rec RecursiveModule =
+    type Orientation = Up | Down
+    type PeelState = Peeled | Unpeeled
+
+    // This exception depends on the type below.
+    exception DontSqueezeTheBananaException of Banana
+
+    type BananaPeel() = class end
+
+    type Banana(orientation : Orientation) =
+        member val IsPeeled = false with get, set
+        member val Orientation = orientation with get, set
+        member val Sides: PeelState list = [ Unpeeled; Unpeeled; Unpeeled; Unpeeled] with get, set
+        
+        member self.Peel() = BananaHelpers.peel self // Note the dependency on the BananaHelpers module.
+        member self.SqueezeJuiceOut() = raise (DontSqueezeTheBananaException self) // This member depends on the exception above.
+
+    module private BananaHelpers =
+        let peel (b : Banana) =
+            let flip banana =
+                match banana.Orientation with
+                | Up -> 
+                    banana.Orientation <- Down
+                    banana
+                | Down -> banana
+
+            let peelSides banana =
+                for side in banana.Sides do
+                    if side = Unpeeled then
+                        side <- Peeled
+
+            match b.Orientation with
+            | Up ->   b |> flip |> peelSides
+            | Down -> b |> peelSides
+```
+
+Note that the exception `DontSqueezeTheBananaException` and the class `Banana` both refer to each other.  Additionally, the module `BananaHelpers` and the class `Banana` also refer to each other.  This would not be possible to express in F# if you removed the `rec` keyword from the `RecursiveModule` module.
+
+This capability is also possible in [Namespaces](namespaces.md) with F# 4.1.
+
+## See Also
+
+[F# Language Reference](index.md)
 [Namespaces](namespaces.md)
+[F# RFC FS-1009 - Allow mutually referential types and modules over larger scopes within files](https://github.com/fsharp/fslang-design/blob/master/FSharp-4.1/FS-1009-mutually-referential-types-and-modules-single-scope.md)

@@ -37,6 +37,6 @@ Windows hosts a set of services and modules that together constitute a transacti
   
 |Exception type|Condition|  
 |--------------------|---------------|  
-|<xref:System.InvalidOperationException>|An attempt to escalate a transaction with isolation level equal to <xref:System.Transactions.IsolationLevel>.|  
+|<xref:System.InvalidOperationException>|An attempt to escalate a transaction with isolation level equal to <xref:System.Transactions.IsolationLevel.Snapshot>.|  
 |<xref:System.Transactions.TransactionAbortedException>|The transaction manager is down.|  
 |<xref:System.Transactions.TransactionException>|The escalation fails and the application is aborted.|

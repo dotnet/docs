@@ -291,7 +291,7 @@ WPF composite control hosted in a Windows Forms application
   
 1.  Create a new                                  <xref:System.Windows.Forms.Integration.ElementHost> object.  
   
-2.  Set the control's                                  <xref:System.Windows.Forms.Control.Dock%2A> property to                                  <xref:System.Windows.Forms.DockStyle?displayProperty=fullName>.  
+2.  Set the control's                                  <xref:System.Windows.Forms.Control.Dock%2A> property to                                  <xref:System.Windows.Forms.DockStyle.Fill?displayProperty=fullName>.  
   
 3.  Add the                                  <xref:System.Windows.Forms.Integration.ElementHost> control to the                                  <xref:System.Windows.Forms.Panel> control's                                  <xref:System.Windows.Forms.Control.Controls%2A> collection.  
   

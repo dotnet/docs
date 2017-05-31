@@ -23,23 +23,30 @@ author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
 ---
+
 # DataMemberFieldEditor Class
-This API supports the product infrastructure and is not intended to be used directly from your code.  
+
+Provides user interface for editing properties of data-bound objects by listing all properties of the `DataSource` object to select the value source from.  
   
- Provides user interface for editing properties of data-bound objects by listing all properties of the `DataSource` object to select the value source from.  
+## Syntax
   
-## Syntax  
+```csharp
+internal class DataMemberFieldEditor : UITypeEditor
+```
+
+> [!WARNING]
+> The `DataMemberFieldEditor` class is internal and not meant to be used directly in your code.
+> 
+> Microsoft does not support the use of this class in a production application under any circumstance.
+
+## Requirements
+
+**Namespace:** <xref:System.Windows.Forms.Design?displayProperty=fullName>  
   
-```  
-internal class DataMemberFieldEditor : UITypeEditor  
-```  
+**Assembly:** System.Design (in System.Design.dll)  
   
-## Requirements  
- **Namespace:** <xref:System.Windows.Forms.Design?displayProperty=fullName>  
+**.NET Framework versions:** Available since 2.0.  
   
- **Assembly:** System.Design (in System.Design.dll)  
-  
- **.NET Framework versions:** Available since 2.0.  
-  
-## See Also  
- <xref:System.Windows.Forms.Design?displayProperty=fullName>
+## See also
+
+<xref:System.Windows.Forms.Design?displayProperty=fullName>

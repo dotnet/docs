@@ -18,13 +18,13 @@ ms.author: "wiwagn"
 
 ---
 # Advanced LINQ to XML Programming (C#)
-This section provides information that will only be applicable to advanced developers in certain [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] scenarios.  
+This section provides information that will only be applicable to advanced developers in certain [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] scenarios.  
   
 ## In This Section  
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[LINQ to XML Annotations](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-annotations.md)|Describes how to add annotations to [!INCLUDE[sqltecxlinq](../../../../csharp/programming-guide/concepts/linq/includes/sqltecxlinq_md.md)] nodes and attributes.|  
+|[LINQ to XML Annotations](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-annotations.md)|Describes how to add annotations to [!INCLUDE[sqltecxlinq](~/includes/sqltecxlinq-md.md)] nodes and attributes.|  
 |[LINQ to XML Events (C#)](../../../../csharp/programming-guide/concepts/linq/linq-to-xml-events.md)|Describes how to write event handlers for events that occur when you alter an XML tree.|  
 |[Programming with Nodes (C#)](../../../../csharp/programming-guide/concepts/linq/programming-with-nodes.md)|Describes how to query and manipulate nodes at a finer level of granularity than elements and attributes.|  
 |[Mixed Declarative Code/Imperative Code Bugs (LINQ to XML) (C#)](../../../../csharp/programming-guide/concepts/linq/mixed-declarative-code-imperative-code-bugs-linq-to-xml.md)|Describes the problems that appear when you mix declarative code (queries) with imperative code (code that modifies the XML tree).|  

@@ -1,5 +1,5 @@
 ---
-title: Get started with Azure Blob storage using F#
+title: Get started with Azure Blob storage using F# | Microsoft Docs
 description: Store unstructured data in the cloud with Azure Blob storage.
 keywords: visual f#, f#, functional programming, .NET, .NET Core, Azure
 author: sylvanc
@@ -104,23 +104,21 @@ You can also name blobs with path information in their names. This creates a vir
 
 For example, consider the following set of block blobs in a container named `photos`:
 
-```none
-    photo1.jpg
-    2015/architecture/description.txt
-    2015/architecture/photo3.jpg
-    2015/architecture/photo4.jpg
-    2016/architecture/photo5.jpg
-    2016/architecture/photo6.jpg
-    2016/architecture/description.txt
-    2016/photo7.jpg
-```
+*photo1.jpg*
+*2015/architecture/description.txt*
+*2015/architecture/photo3.jpg*
+*2015/architecture/photo4.jpg*
+*2016/architecture/photo5.jpg*
+*2016/architecture/photo6.jpg*
+*2016/architecture/description.txt*
+*2016/photo7.jpg*
 
 When you call `ListBlobs` on a container (as in the above sample), a hierarchical listing is returned. If it contains both `CloudBlobDirectory` and `CloudBlockBlob` objects, representing the directories and blobs in the container, respectively, then the resulting output looks similar to this:
 
-```none
-	Directory: https://<accountname>.blob.core.windows.net/photos/2015/
-	Directory: https://<accountname>.blob.core.windows.net/photos/2016/
-	Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/photo1.jpg
+```console
+Directory: https://<accountname>.blob.core.windows.net/photos/2015/
+Directory: https://<accountname>.blob.core.windows.net/photos/2016/
+Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/photo1.jpg
 ```
 
 Optionally, you can set the `UseFlatBlobListing` parameter of the `ListBlobs` method to `true`. In this case, every blob in the container is returned as a `CloudBlockBlob` object. The call to `ListBlobs` to return a flat listing looks like this:
@@ -129,15 +127,15 @@ Optionally, you can set the `UseFlatBlobListing` parameter of the `ListBlobs` me
 
 and, depending on the current contents of your container, the results look like this:
 
-```none
-	Block blob of length 4: https://<accountname>.blob.core.windows.net/photos/2015/architecture/description.txt
-	Block blob of length 314618: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo3.jpg
-	Block blob of length 522713: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo4.jpg
-	Block blob of length 4: https://<accountname>.blob.core.windows.net/photos/2016/architecture/description.txt
-	Block blob of length 419048: https://<accountname>.blob.core.windows.net/photos/2016/architecture/photo5.jpg
-	Block blob of length 506388: https://<accountname>.blob.core.windows.net/photos/2016/architecture/photo6.jpg
-	Block blob of length 399751: https://<accountname>.blob.core.windows.net/photos/2016/photo7.jpg
-	Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/photo1.jpg
+```console
+Block blob of length 4: https://<accountname>.blob.core.windows.net/photos/2015/architecture/description.txt
+Block blob of length 314618: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo3.jpg
+Block blob of length 522713: https://<accountname>.blob.core.windows.net/photos/2015/architecture/photo4.jpg
+Block blob of length 4: https://<accountname>.blob.core.windows.net/photos/2016/architecture/description.txt
+Block blob of length 419048: https://<accountname>.blob.core.windows.net/photos/2016/architecture/photo5.jpg
+Block blob of length 506388: https://<accountname>.blob.core.windows.net/photos/2016/architecture/photo6.jpg
+Block blob of length 399751: https://<accountname>.blob.core.windows.net/photos/2016/photo7.jpg
+Block blob of length 505623: https://<accountname>.blob.core.windows.net/photos/photo1.jpg
 ```
 
 ## Download blobs

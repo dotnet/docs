@@ -38,7 +38,7 @@ The **/nologo** option suppresses display of the sign-on banner when the compile
   
 ## Syntax  
   
-```  
+```console  
 /nologo  
 ```  
   

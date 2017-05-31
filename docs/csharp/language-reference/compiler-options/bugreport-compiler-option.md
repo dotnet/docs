@@ -37,7 +37,7 @@ Specifies that debug information should be placed in a file for later analysis.
   
 ## Syntax  
   
-```  
+```console  
 /bugreport:file  
 ```  
   

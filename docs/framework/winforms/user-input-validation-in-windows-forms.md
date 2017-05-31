@@ -59,9 +59,9 @@ When users enter data into your application, you may want to verify that the dat
 #### Implicit Validation  
  The implicit validation approach validates data as the user enters it. You can validate the data as the data is entered in a control by reading the keys as they are pressed, or more commonly whenever the user takes the input focus away from one control and moves to the next. This approach is useful when you want to give the user immediate feedback about the data as they are working.  
   
- If you want to use implicit validation for a control, you must set that control's <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property to `true`. If you cancel the <xref:System.Windows.Forms.Control.Validating> event, the behavior of the control will be determined by what value that you assigned to <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A>. If you assigned <xref:System.Windows.Forms.AutoValidate>, canceling the event will cause the <xref:System.Windows.Forms.Control.Validated> event not to occur. Input focus will remain on the current control until the user changes the data to a valid input. If you assigned <xref:System.Windows.Forms.AutoValidate>, the <xref:System.Windows.Forms.Control.Validated> event will not occur when you cancel the event, but focus will still change to the next control.  
+ If you want to use implicit validation for a control, you must set that control's <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property to `true`. If you cancel the <xref:System.Windows.Forms.Control.Validating> event, the behavior of the control will be determined by what value that you assigned to <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A>. If you assigned <xref:System.Windows.Forms.AutoValidate.EnablePreventFocusChange>, canceling the event will cause the <xref:System.Windows.Forms.Control.Validated> event not to occur. Input focus will remain on the current control until the user changes the data to a valid input. If you assigned <xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>, the <xref:System.Windows.Forms.Control.Validated> event will not occur when you cancel the event, but focus will still change to the next control.  
   
- Assigning <xref:System.Windows.Forms.AutoValidate> to the <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property prevents implicit validation altogether. To validate your controls, you will have to use explicit validation.  
+ Assigning <xref:System.Windows.Forms.AutoValidate.Disable> to the <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property prevents implicit validation altogether. To validate your controls, you will have to use explicit validation.  
   
 #### Explicit Validation  
  The explicit validation approach validates data at one time. You can validate the data in response to a user action, such as clicking a Save button or a Next link. When the user action occurs, you can trigger explicit validation in one of the following ways:  
@@ -77,12 +77,12 @@ When users enter data into your application, you may want to verify that the dat
   
 |Control|Default Validation Behavior|  
 |-------------|---------------------------------|  
-|<xref:System.Windows.Forms.ContainerControl>|<xref:System.Windows.Forms.AutoValidate>|  
-|<xref:System.Windows.Forms.Form>|<xref:System.Windows.Forms.AutoValidate>|  
+|<xref:System.Windows.Forms.ContainerControl>|<xref:System.Windows.Forms.AutoValidate.Inherit>|  
+|<xref:System.Windows.Forms.Form>|<xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>|  
 |<xref:System.Windows.Forms.PropertyGrid>|Property not exposed in Visual Studio|  
 |<xref:System.Windows.Forms.ToolStripContainer>|Property not exposed in Visual Studio|  
-|<xref:System.Windows.Forms.SplitContainer>|<xref:System.Windows.Forms.AutoValidate>|  
-|<xref:System.Windows.Forms.UserControl>|<xref:System.Windows.Forms.AutoValidate>|  
+|<xref:System.Windows.Forms.SplitContainer>|<xref:System.Windows.Forms.AutoValidate.Inherit>|  
+|<xref:System.Windows.Forms.UserControl>|<xref:System.Windows.Forms.AutoValidate.EnableAllowFocusChange>|  
   
 ## Closing the Form and Overriding Validation  
  When a control maintains focus because the data it contains is invalid, it is impossible to close the parent form in one of the usual ways:  

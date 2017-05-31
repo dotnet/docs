@@ -1,5 +1,5 @@
 ---
-title: Visual Studio Tools for Docker
+title: Visual Studio Tools for Docker | Microsoft Docs
 description: Using Visual Studio Tools for Docker 
 keywords: .NET, .NET Core, Docker, ASP.NET Core, Visual Studio
 author: spboyer

@@ -1,5 +1,5 @@
 ---
-title: Classes (F#)
+title: Classes (F#) | Microsoft Docs
 description: Classes (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: Code Quotations (F#)
+title: Code Quotations (F#) | Microsoft Docs
 description: Code Quotations (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

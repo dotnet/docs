@@ -1,5 +1,5 @@
 ---
-title: Properties
+title: Properties | Microsoft Docs
 description: Properties
 keywords: .NET, .NET Core
 author: BillWagner

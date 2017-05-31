@@ -1,5 +1,5 @@
 ---
-title: Using C# Interactive with Visual Studio | C# Guide
+title: Using C# Interactive with Visual Studio - C# Guide | Microsoft Docs
 description: Explore the C# Interactive Shell inside Visual Studio
 keywords: .NET, .NET Core, C#
 ms.date: 06/25/2016

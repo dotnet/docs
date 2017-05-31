@@ -50,7 +50,7 @@ When you migrate a project, the project and all its dependencies are migrated.
 Files that were migrated (*project.json*, *global.json* and *.xproj*) will be moved to a *backup* folder.
 
 > [!NOTE]
-> If you are using VS Code, the `dotnet migrate` command will not modify VS Code-specific files such as `tasks.json`. These files need to be changed manually. 
+> If you are using Visual Studio Code, the `dotnet migrate` command will not modify Visual Studio Code-specific files such as `tasks.json`. These files need to be changed manually. 
 > This is also true if you are using Project Ryder or any editor or Integrated Development Environment (IDE) other than Visual Studio. 
 
 See [A mapping between project.json and csproj properties](../tools/project-json-to-csproj.md) for a comparison of project.json and csproj formats.

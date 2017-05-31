@@ -1,5 +1,5 @@
 ---
-title: "Walkthrough: Generating F# Types from a DBML File (F#)"
+title: "Walkthrough: Generating F# Types from a DBML File (F#) | Microsoft Docs"
 description: "Walkthrough: Generating F# Types from a DBML File (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

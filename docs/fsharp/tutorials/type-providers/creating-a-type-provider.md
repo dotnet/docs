@@ -1,5 +1,5 @@
 ---
-title: "Tutorial: Creating a Type Provider (F#)"
+title: "Tutorial: Creating a Type Provider (F#) | Microsoft Docs"
 description: "Tutorial: Creating a Type Provider (F#)"
 keywords: visual f#, f#, functional programming
 author: cartermp

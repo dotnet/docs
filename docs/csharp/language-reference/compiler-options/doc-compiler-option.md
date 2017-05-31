@@ -41,7 +41,7 @@ The **/doc** option allows you to place documentation comments in an XML file.
   
 ## Syntax  
   
-```  
+```console  
 /doc:file  
 ```  
   

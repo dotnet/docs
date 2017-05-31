@@ -45,7 +45,7 @@ xmlns="http://schemas.microsoft.com/2009/workflow">
  [!code-csharp[CFX_WorkflowApplicationExample#15](../../../samples/snippets/csharp/VS_Snippets_CFX/cfx_workflowapplicationexample/cs/program.cs#15)]  
   
 ## Activity Life Cycle  
- An instance of an activity starts out in the <xref:System.Activities.ActivityInstanceState> state. Unless exceptions are encountered, it remains in this state until all child activities are finished executing and any other pending work (<xref:System.Activities.Bookmark> objects, for instance) is completed, at which point it transitions to the <xref:System.Activities.ActivityInstanceState> state. The parent of an activity instance can request a child to cancel; if the child is able to be canceled it completes in the <xref:System.Activities.ActivityInstanceState> state. If an exception is thrown during execution, the runtime puts the activity into the <xref:System.Activities.ActivityInstanceState> state and propagates the exception up the parent chain of activities. Following are the three completion states of an activity:  
+ An instance of an activity starts out in the <xref:System.Activities.ActivityInstanceState.Executing> state. Unless exceptions are encountered, it remains in this state until all child activities are finished executing and any other pending work (<xref:System.Activities.Bookmark> objects, for instance) is completed, at which point it transitions to the <xref:System.Activities.ActivityInstanceState.Closed> state. The parent of an activity instance can request a child to cancel; if the child is able to be canceled it completes in the <xref:System.Activities.ActivityInstanceState.Canceled> state. If an exception is thrown during execution, the runtime puts the activity into the <xref:System.Activities.ActivityInstanceState.Faulted> state and propagates the exception up the parent chain of activities. Following are the three completion states of an activity:  
   
 -   **Closed:** The activity has completed its work and exited.  
   
@@ -53,4 +53,4 @@ xmlns="http://schemas.microsoft.com/2009/workflow">
   
 -   **Faulted:** The activity has encountered an error and has exited without completing its work.  
   
- Activities remain in the <xref:System.Activities.ActivityInstanceState> state when they are persisted or unloaded.
+ Activities remain in the <xref:System.Activities.ActivityInstanceState.Executing> state when they are persisted or unloaded.

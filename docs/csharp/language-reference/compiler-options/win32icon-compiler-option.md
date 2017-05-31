@@ -37,7 +37,7 @@ The **/win32icon** option inserts an .ico file in the output file, which gives t
   
 ## Syntax  
   
-```  
+```console  
 /win32icon:filename  
 ```  
   
@@ -63,7 +63,7 @@ The **/win32icon** option inserts an .ico file in the output file, which gives t
 ## Example  
  Compile `in.cs` and attach an .ico file `rf.ico` to produce `in.exe`:  
   
-```  
+```console  
 csc /win32icon:rf.ico in.cs  
 ```  
   

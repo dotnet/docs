@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Directories and Files Summary (Visual Basic)
-[!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] language keywords and run-time library members are organized by purpose and use.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords and run-time library members are organized by purpose and use.  
   
  Using the `My` feature gives you greater productivity and performance in file I/O operations than using these members. For more information, see <xref:Microsoft.VisualBasic.FileIO.FileSystem>.  
   

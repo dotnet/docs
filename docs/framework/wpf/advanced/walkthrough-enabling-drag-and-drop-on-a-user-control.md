@@ -125,7 +125,7 @@ This walkthrough demonstrates how to create a custom user control that can parti
   
         -   `data` – The <xref:System.Windows.DataObject> created in the previous code.  
   
-        -   `allowedEffects` – The allowed drag-and-drop operations, which are <xref:System.Windows.DragDropEffects> or <xref:System.Windows.DragDropEffects>.  
+        -   `allowedEffects` – The allowed drag-and-drop operations, which are <xref:System.Windows.DragDropEffects.Copy> or <xref:System.Windows.DragDropEffects.Move>.  
   
 3.  Press F5 to build and run the application.  
   
@@ -229,11 +229,11 @@ This walkthrough demonstrates how to create a custom user control that can parti
   
      This <xref:System.Windows.UIElement.OnDragOver%2A> override performs the following tasks:  
   
-    -   Sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects>.  
+    -   Sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.None>.  
   
     -   Performs the same checks that are performed in the <xref:System.Windows.UIElement.OnDrop%2A> method to determine whether the Circle user control can process the dragged data.  
   
-    -   If the user control can process the data, sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects> or <xref:System.Windows.DragDropEffects>.  
+    -   If the user control can process the data, sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.Copy> or <xref:System.Windows.DragDropEffects.Move>.  
   
 3.  Press F5 to build and run the application.  
   
@@ -308,7 +308,7 @@ This walkthrough demonstrates how to create a custom user control that can parti
   
     -   If the "Object" data is present, checks whether the CTRL key is pressed.  
   
-    -   If the CTRL key is pressed, sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects>. Otherwise, set the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects>.  
+    -   If the CTRL key is pressed, sets the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.Copy>. Otherwise, set the <xref:System.Windows.DragEventArgs.Effects%2A> property to <xref:System.Windows.DragDropEffects.Move>.  
   
 5.  Add the following code for the <xref:System.Windows.UIElement.Drop> event handler.  
   

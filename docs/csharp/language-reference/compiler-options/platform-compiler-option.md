@@ -37,7 +37,7 @@ Specifies which version of the common language runtime (CLR) can run the assembl
   
 ## Syntax  
   
-```  
+```console  
 /platform:string  
 ```  
   
@@ -88,7 +88,7 @@ Specifies which version of the common language runtime (CLR) can run the assembl
 ## Example  
  The following example shows how to use the **/platform** option to specify that the application should be run by the 64-bit CLR on a 64-bit Windows operating system.  
   
-```  
+```console  
 csc /platform:anycpu filename.cs  
 ```  
   

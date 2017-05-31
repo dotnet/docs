@@ -37,7 +37,7 @@ You tried to assign a graphics format other than a bitmap, icon, or Windows meta
   
 ## To correct this error  
   
-1.  Ensure that the file you are trying to load into the `Picture` property is a valid graphics file supported by [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+1.  Ensure that the file you are trying to load into the `Picture` property is a valid graphics file supported by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 ## See Also  
  [Graphics Changes in Visual Basic .NET](http://msdn.microsoft.com/en-us/24cd2d55-ebf1-42d6-b755-00e9001f1cb8)

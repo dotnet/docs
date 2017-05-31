@@ -1,5 +1,5 @@
 ---
-title: Troubleshooting Type Providers
+title: Troubleshooting Type Providers | Microsoft Docs
 description: Troubleshooting Type Providers
 keywords: visual f#, f#, functional programming
 author: cartermp

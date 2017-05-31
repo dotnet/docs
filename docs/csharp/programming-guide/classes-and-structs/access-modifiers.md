@@ -93,7 +93,7 @@ All types and type members have an accessibility level, which controls whether t
  Delegates behave like classes and structs. By default, they have internal access when declared directly within a namespace, and private access when nested.  
   
 ## C# Language Specification  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)   

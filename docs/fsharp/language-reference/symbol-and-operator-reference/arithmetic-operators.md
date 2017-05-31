@@ -1,5 +1,5 @@
 ---
-title: Arithmetic Operators (F#)
+title: Arithmetic Operators (F#) | Microsoft Docs
 description: Arithmetic Operators (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

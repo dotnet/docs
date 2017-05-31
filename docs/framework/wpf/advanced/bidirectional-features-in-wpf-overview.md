@@ -29,7 +29,7 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
 <a name="FlowDirection"></a>   
 ## FlowDirection  
- The basic property that defines the content flow direction in a                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application is                  <xref:System.Windows.FrameworkElement.FlowDirection%2A>. This property can be set to one of two enumeration values,                  <xref:System.Windows.FlowDirection> or                  <xref:System.Windows.FlowDirection>. The property is available to all                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements that inherit from                  <xref:System.Windows.FrameworkElement>.  
+ The basic property that defines the content flow direction in a                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application is                  <xref:System.Windows.FrameworkElement.FlowDirection%2A>. This property can be set to one of two enumeration values,                  <xref:System.Windows.FlowDirection.LeftToRight> or                  <xref:System.Windows.FlowDirection.RightToLeft>. The property is available to all                  [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] elements that inherit from                  <xref:System.Windows.FrameworkElement>.  
   
  The following examples set the flow direction of a                  <xref:System.Windows.Controls.TextBox> element.  
   
@@ -53,7 +53,7 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
  [!code-xml[FlowDirection#FlowDirection](../../../../samples/snippets/csharp/VS_Snippets_Wpf/FlowDirection/CS/Window1.xaml#flowdirection)]  
   
- The top level                  <xref:System.Windows.Window> has a                  <xref:System.Windows.FlowDirection><xref:System.Windows.FlowDirection>, so all elements contained within it also inherit the same                  <xref:System.Windows.FrameworkElement.FlowDirection%2A>. For an element to override a specified                  <xref:System.Windows.FrameworkElement.FlowDirection%2A> it must add an explicit direction change such as the second                  <xref:System.Windows.Controls.TextBlock> in the previous example which changes to                  <xref:System.Windows.FlowDirection>. When no                  <xref:System.Windows.FrameworkElement.FlowDirection%2A> is defined, the default                  <xref:System.Windows.FlowDirection> applies.  
+ The top level                  <xref:System.Windows.Window> has a                  <xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.FlowDirection>, so all elements contained within it also inherit the same                  <xref:System.Windows.FrameworkElement.FlowDirection%2A>. For an element to override a specified                  <xref:System.Windows.FrameworkElement.FlowDirection%2A> it must add an explicit direction change such as the second                  <xref:System.Windows.Controls.TextBlock> in the previous example which changes to                  <xref:System.Windows.FlowDirection.LeftToRight>. When no                  <xref:System.Windows.FrameworkElement.FlowDirection%2A> is defined, the default                  <xref:System.Windows.FlowDirection.LeftToRight> applies.  
   
  The following graphic shows the output of the previous example.  
   
@@ -69,13 +69,13 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
  Adding text to a                  <xref:System.Windows.Documents.FlowDocument> can be done in more that one way. A simple way to do so is through a                  <xref:System.Windows.Documents.Paragraph> which is a block-level element used to group content such as text. To add text to inline-level elements the samples use                  <xref:System.Windows.Documents.Span> and                  <xref:System.Windows.Documents.Run>.                  <xref:System.Windows.Documents.Span> is an inline-level flow content element used for grouping other inline elements, while a                  <xref:System.Windows.Documents.Run> is an inline-level flow content element intended to contain a run of unformatted text. A                  <xref:System.Windows.Documents.Span> can contain multiple                  <xref:System.Windows.Documents.Run> elements.  
   
- The first document example contains a document that has a number of network share names; for example                  `\\server1\folder\file.ext`. Whether you have this network link in an Arabic or English document, you always want it to appear in the same way. The following graphic shows the link in an Arabic                  <xref:System.Windows.FlowDirection> document.  
+ The first document example contains a document that has a number of network share names; for example                  `\\server1\folder\file.ext`. Whether you have this network link in an Arabic or English document, you always want it to appear in the same way. The following graphic shows the link in an Arabic                  <xref:System.Windows.FlowDirection.RightToLeft> document.  
   
  **Graphic That Illustrates Using the Span Element**  
   
  ![Document that flows from right to left](../../../../docs/framework/wpf/advanced/media/flowdocument.PNG "FlowDocument")  
   
- Because the text is                  <xref:System.Windows.FlowDirection>, all special characters, such as the "\\", separate the text in a right to left order. That results in the link not being shown in the correct order, therefore to solve the problem, the text must be embedded to preserve a separate                  <xref:System.Windows.Documents.Run> flowing                  <xref:System.Windows.FlowDirection>. Instead of having a separate                  <xref:System.Windows.Documents.Run> for each language, a better way to solve the problem is to embed the less frequently used English text into a larger Arabic                  <xref:System.Windows.Documents.Span>.  
+ Because the text is                  <xref:System.Windows.FlowDirection.RightToLeft>, all special characters, such as the "\\", separate the text in a right to left order. That results in the link not being shown in the correct order, therefore to solve the problem, the text must be embedded to preserve a separate                  <xref:System.Windows.Documents.Run> flowing                  <xref:System.Windows.FlowDirection.LeftToRight>. Instead of having a separate                  <xref:System.Windows.Documents.Run> for each language, a better way to solve the problem is to embed the less frequently used English text into a larger Arabic                  <xref:System.Windows.Documents.Span>.  
   
  The following graphic illustrates this.  
   
@@ -134,7 +134,7 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
  ![Gradient screen shot](../../../../docs/framework/wpf/advanced/media/gradient.PNG "Gradient")  
   
- After setting the                  <xref:System.Windows.FlowDirection> to                  <xref:System.Windows.FlowDirection>, not only the                  <xref:System.Windows.Controls.ToolBar> buttons are arranged from right to left, but even the                  <xref:System.Windows.Media.LinearGradientBrush> realigns its offsets to flow from right to left.  
+ After setting the                  <xref:System.Windows.FlowDirection> to                  <xref:System.Windows.FlowDirection.RightToLeft>, not only the                  <xref:System.Windows.Controls.ToolBar> buttons are arranged from right to left, but even the                  <xref:System.Windows.Media.LinearGradientBrush> realigns its offsets to flow from right to left.  
   
  The following graphic shows the realignment of the                  <xref:System.Windows.Media.LinearGradientBrush>.  
   
@@ -142,7 +142,7 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
  ![A gradient that flows from right to left](../../../../docs/framework/wpf/advanced/media/gradient2-wpf.PNG "Gradient2_WPF")  
   
- The following example draws a                  <xref:System.Windows.FlowDirection><xref:System.Windows.Controls.ToolBar>. (To draw it left to right, remove the                  <xref:System.Windows.FlowDirection> attribute on the                  <xref:System.Windows.Controls.ToolBar>.  
+ The following example draws a                  <xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.Controls.ToolBar>. (To draw it left to right, remove the                  <xref:System.Windows.FlowDirection> attribute on the                  <xref:System.Windows.Controls.ToolBar>.  
   
  [!code-xml[Gradient#Gradient](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Gradient/CS/Window1.xaml#gradient)]  
   
@@ -154,7 +154,7 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
  An                          <xref:System.Windows.Controls.Image> represents a control that displays an image. In                          [!INCLUDE[TLA#tla_titlexaml](../../../../includes/tlasharptla-titlexaml-md.md)] it can be used with a                          <xref:System.Windows.Controls.Image.Source%2A> property that defines the                          [!INCLUDE[TLA#tla_uri](../../../../includes/tlasharptla-uri-md.md)] of the                          <xref:System.Windows.Controls.Image> to display.  
   
- Unlike other                          [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements, an                          <xref:System.Windows.Controls.Image> does not inherit the                          <xref:System.Windows.FlowDirection> from the container. However, if the                          <xref:System.Windows.FlowDirection> is set explicitly to                          <xref:System.Windows.FlowDirection>, an                          <xref:System.Windows.Controls.Image> is displayed flipped horizontally. This is implemented as a convenient feature for developers of bidirectional content; because in some cases, horizontally flipping the image produces the desired effect.  
+ Unlike other                          [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] elements, an                          <xref:System.Windows.Controls.Image> does not inherit the                          <xref:System.Windows.FlowDirection> from the container. However, if the                          <xref:System.Windows.FlowDirection> is set explicitly to                          <xref:System.Windows.FlowDirection.RightToLeft>, an                          <xref:System.Windows.Controls.Image> is displayed flipped horizontally. This is implemented as a convenient feature for developers of bidirectional content; because in some cases, horizontally flipping the image produces the desired effect.  
   
  The following graphic shows a flipped                          <xref:System.Windows.Controls.Image>.  
   
@@ -170,9 +170,9 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
  **Paths**  
   
- In addition to an                          <xref:System.Windows.Controls.Image>, another interesting element is                          <xref:System.Windows.Shapes.Path>. A Path is an object that can draw a series of connected lines and curves. It behaves in a manner similar to an                          <xref:System.Windows.Controls.Image> regarding its                          <xref:System.Windows.FlowDirection>; for example its                          <xref:System.Windows.FlowDirection><xref:System.Windows.FlowDirection> is a horizontal mirror of its                          <xref:System.Windows.FlowDirection> one. However, unlike an                          <xref:System.Windows.Controls.Image>,                          <xref:System.Windows.Shapes.Path> inherits its                          <xref:System.Windows.FlowDirection> from the container and one does not need to specify it explicitly.  
+ In addition to an                          <xref:System.Windows.Controls.Image>, another interesting element is                          <xref:System.Windows.Shapes.Path>. A Path is an object that can draw a series of connected lines and curves. It behaves in a manner similar to an                          <xref:System.Windows.Controls.Image> regarding its                          <xref:System.Windows.FlowDirection>; for example its                          <xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.FlowDirection> is a horizontal mirror of its                          <xref:System.Windows.FlowDirection.LeftToRight> one. However, unlike an                          <xref:System.Windows.Controls.Image>,                          <xref:System.Windows.Shapes.Path> inherits its                          <xref:System.Windows.FlowDirection> from the container and one does not need to specify it explicitly.  
   
- The following example draws a simple arrow using 3 lines. The first arrow inherits the                          <xref:System.Windows.FlowDirection> flow direction from the                          <xref:System.Windows.Controls.StackPanel> so that its start and end points are measured from a root on the right side. The second arrow which has an explicit                          <xref:System.Windows.FlowDirection><xref:System.Windows.FlowDirection> also starts on the right side. However, the third arrow has its starting root on the left side. For more information on drawing see                          <xref:System.Windows.Media.LineGeometry> and                          <xref:System.Windows.Media.GeometryGroup>.  
+ The following example draws a simple arrow using 3 lines. The first arrow inherits the                          <xref:System.Windows.FlowDirection.RightToLeft> flow direction from the                          <xref:System.Windows.Controls.StackPanel> so that its start and end points are measured from a root on the right side. The second arrow which has an explicit                          <xref:System.Windows.FlowDirection.RightToLeft><xref:System.Windows.FlowDirection> also starts on the right side. However, the third arrow has its starting root on the left side. For more information on drawing see                          <xref:System.Windows.Media.LineGeometry> and                          <xref:System.Windows.Media.GeometryGroup>.  
   
  [!code-xml[Paths#Paths](../../../../samples/snippets/csharp/VS_Snippets_Wpf/Paths/CS/Window1.xaml#paths)]  
   
@@ -206,21 +206,21 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
  **CultureOverride**:  
   
- The                  <xref:System.Windows.Media.NumberSubstitution.CultureOverride%2A> property is used only if the                  <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property is set to                  <xref:System.Windows.Media.NumberCultureSource> and is ignored otherwise. It specifies the number culture. A value of                  `null`, the default value, is interpreted as en-US.  
+ The                  <xref:System.Windows.Media.NumberSubstitution.CultureOverride%2A> property is used only if the                  <xref:System.Windows.Media.NumberSubstitution.CultureSource%2A> property is set to                  <xref:System.Windows.Media.NumberCultureSource.Override> and is ignored otherwise. It specifies the number culture. A value of                  `null`, the default value, is interpreted as en-US.  
   
  **Substitution**:  
   
  This property specifies the type of number substitution to perform. It takes one of the following                  <xref:System.Windows.Media.NumberSubstitutionMethod> enumeration values.  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod>: The substitution method is determined based on the number culture's                          <xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A?displayProperty=fullName> property. This is the default.  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.AsCulture>: The substitution method is determined based on the number culture's                          <xref:System.Globalization.NumberFormatInfo.DigitSubstitution%2A?displayProperty=fullName> property. This is the default.  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod>: If the number culture is an Arabic or Farsi culture, it specifies that the digits depend on the context.  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.Context>: If the number culture is an Arabic or Farsi culture, it specifies that the digits depend on the context.  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod>: Numbers are always rendered as European digits.  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.European>: Numbers are always rendered as European digits.  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod>: Numbers are rendered using the national digits for the number culture, as specified by the culture's                          <xref:System.Globalization.CultureInfo.NumberFormat%2A>.  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational>: Numbers are rendered using the national digits for the number culture, as specified by the culture's                          <xref:System.Globalization.CultureInfo.NumberFormat%2A>.  
   
--   <xref:System.Windows.Media.NumberSubstitutionMethod>: Numbers are rendered using the traditional digits for the number culture. For most cultures, this is the same as                          <xref:System.Windows.Media.NumberSubstitutionMethod>. However,                          <xref:System.Windows.Media.NumberSubstitutionMethod> results in Latin digits for some Arabic cultures, whereas this value results in Arabic digits for all Arabic cultures.  
+-   <xref:System.Windows.Media.NumberSubstitutionMethod.Traditional>: Numbers are rendered using the traditional digits for the number culture. For most cultures, this is the same as                          <xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational>. However,                          <xref:System.Windows.Media.NumberSubstitutionMethod.NativeNational> results in Latin digits for some Arabic cultures, whereas this value results in Arabic digits for all Arabic cultures.  
   
  What do those values mean for a bidirectional content developer? In most cases, the developer might need only to define                  <xref:System.Windows.FlowDirection> and the language of each textual                  [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)] element, for example                  `Language="ar-SA"` and the                  <xref:System.Windows.Media.NumberSubstitution> logic takes care of displaying the numbers according to the correct                  [!INCLUDE[TLA2#tla_ui](../../../../includes/tla2sharptla-ui-md.md)]. The following example demonstrates using Arabic and English numbers in a                  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] application running in an Arabic version of                  [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)].  
   
@@ -232,7 +232,7 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
  ![XamlPad screen shot with numbers](../../../../docs/framework/wpf/advanced/media/numbers.PNG "Numbers")  
   
- The                  <xref:System.Windows.FlowDirection> was important in this case because setting the                  <xref:System.Windows.FlowDirection> to                  <xref:System.Windows.FlowDirection> instead would have yielded European digits. The following sections discuss how to have a unified display of digits throughout your document. If this example is not running on Arabic Windows, all the digits display as European digits.  
+ The                  <xref:System.Windows.FlowDirection> was important in this case because setting the                  <xref:System.Windows.FlowDirection> to                  <xref:System.Windows.FlowDirection.LeftToRight> instead would have yielded European digits. The following sections discuss how to have a unified display of digits throughout your document. If this example is not running on Arabic Windows, all the digits display as European digits.  
   
  **Defining Substitution Rules**  
   
@@ -278,7 +278,7 @@ Unlike any other development platform,              [!INCLUDE[TLA2#tla_winclient
   
  **Using the Substitution Property**  
   
- The way number substitution works in                  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] depends on both the Language of the text element and its                  <xref:System.Windows.FlowDirection>. If the                  <xref:System.Windows.FlowDirection> is left to right, then European digits are rendered. However if it is preceded by Arabic text, or has the language set to "ar" and the                  <xref:System.Windows.FlowDirection> is                  <xref:System.Windows.FlowDirection>, Arabic digits are rendered instead.  
+ The way number substitution works in                  [!INCLUDE[TLA#tla_winclient](../../../../includes/tlasharptla-winclient-md.md)] depends on both the Language of the text element and its                  <xref:System.Windows.FlowDirection>. If the                  <xref:System.Windows.FlowDirection> is left to right, then European digits are rendered. However if it is preceded by Arabic text, or has the language set to "ar" and the                  <xref:System.Windows.FlowDirection> is                  <xref:System.Windows.FlowDirection.RightToLeft>, Arabic digits are rendered instead.  
   
  In some cases, however, you might want to create a unified application, for example European digits for all users. Or Arabic digits in                  <xref:System.Windows.Documents.Table> cells with a specific                  <xref:System.Windows.Style>. One easy way to do that is using the                  <xref:System.Windows.Media.NumberSubstitution.Substitution%2A> property.  
   

@@ -38,7 +38,7 @@ You can display related data by using two or more <xref:Microsoft.VisualBasic.Po
   
  You can display related data by dragging detail items that share the same master table node from the **Data Sources** window onto a <xref:Microsoft.VisualBasic.PowerPacks.DataRepeater> control. For example, if you have a data source that has a Customers table and a related Orders table, you see both tables as top-level nodes in the tree view in the **Data Sources** window. Expand the Customers node so that you can see the columns. Notice that the last column in the list is an expandable node that represents the Orders table. This node represents the related orders for a customer.  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### To display related data in two DataRepeater controls  
   

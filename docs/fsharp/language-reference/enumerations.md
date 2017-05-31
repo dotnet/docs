@@ -1,5 +1,5 @@
 ---
-title: Enumerations (F#)
+title: Enumerations (F#) | Microsoft Docs
 description: Enumerations (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

@@ -1,5 +1,5 @@
 ---
-title: .NET Class Libraries
+title: .NET Class Libraries | Microsoft Docs
 description: .NET Class Libraries
 keywords: .NET, .NET Core
 author: richlander

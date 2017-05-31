@@ -1,5 +1,5 @@
 ---
-title: Entry Point (F#)
+title: Entry Point (F#) | Microsoft Docs
 description: Entry Point (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp
@@ -37,7 +37,7 @@ The following example illustrates a simple `main` function.
 
 When this code is executed with the command line `EntryPoint.exe 1 2 3`, the output is as follows.
 
-```text
+```console
 Arguments passed to function : [|"1"; "2"; "3"|]
 ```
 

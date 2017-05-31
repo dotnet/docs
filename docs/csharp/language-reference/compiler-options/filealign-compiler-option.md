@@ -45,7 +45,7 @@ The **/filealign** option lets you specify the size of sections in your output f
   
 ## Syntax  
   
-```  
+```console  
 /filealign:number  
 ```  
   

@@ -1,5 +1,5 @@
 ---
-title: Functions (F#)
+title: Functions (F#) | Microsoft Docs
 description: Functions (F#)
 keywords: visual f#, f#, functional programming
 author: cartermp

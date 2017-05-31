@@ -30,9 +30,8 @@ Async code has the following characteritics:
 * Handles more server requests by yielding threads to handle more requests while waiting for I/O requests to return.
 * Enables UIs to be more responsive by yielding threads to UI interaction while waiting for I/O requests and by transitioning long-running work to other CPU cores.
 * Many of the newer .NET APIs are asynchronous.
-* It’s super easy to write async code in .NET!
+* It's super easy to write async code in .NET!
 
-## What’s next?
+## What's next?
 
 For a deep dive into async concepts and programming, see [Async in depth](async-in-depth.md).
-

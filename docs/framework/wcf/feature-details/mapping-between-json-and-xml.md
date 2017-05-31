@@ -28,7 +28,7 @@ The readers and writers produced by the <xref:System.Runtime.Serialization.Json.
   
  To clarify the concept of a mapping, the following example is of a JSON document.  
   
-```  
+```json  
 {"product":"pencil","price":12}  
 ```  
   

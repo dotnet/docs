@@ -30,7 +30,7 @@ different ways to use them, and initial guidance on working with Tuples.
 > on platforms that do not include the types.
 >
 > This is similar to other language features that rely on types
-> delivered in the framework. Example include `async` and `await`
+> delivered in the framework. Examples include `async` and `await`
 > relying on the `INotifyCompletion` interface, and LINQ relying
 > on `IEnumerable<T>`. However, the delivery mechanism is changing
 > as .NET is becoming more platform independent. The .NET Framework

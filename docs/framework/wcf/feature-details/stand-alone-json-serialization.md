@@ -151,7 +151,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 #### XmlElement  
  <xref:System.Xml.XmlElement> is serialized as is, with no wrapping. For example, data member "x" of type <xref:System.Xml.XmlElement> that contains \<abc/> is as represented as follows.  
   
-```  
+```json  
 {"x":"<abc/>"}  
 ```  
   
@@ -178,7 +178,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
   
  To preserve type identity, when serializing complex types to JSON a "type hint" can be added, and the deserializer recognizes the hint and acts appropriately. The "type hint" is a JSON key/value pair with the key name of "__type" (two underscores followed by the word "type"). The value is a JSON string of the form "DataContractName:DataContractNamespace" (anything up to the first colon is the name). Using the earlier example, "Circle" can be serialized as follows.  
   
-```  
+```json  
 {"__type":"Circle:http://example.com/myNamespace","x":50,"y":70,"radius":10}  
 ```  
   
@@ -189,7 +189,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 #### Reducing the Size of Type Hints  
  To reduce the size of JSON messages, the default data contract namespace prefix (http://schemas.datacontract.org/2004/07/) is replaced with the "#" character. (To make this replacement reversible, an escaping rule is used: if the namespace starts with the "#" or "\\" characters, they are appended with an extra "\\" character). Thus, if "Circle" is a type in the .NET namespace "MyApp.Shapes", its default data contract namespace is http://schemas.datacontract.org/2004/07/MyApp. Shapes and the JSON representation is as follows.  
   
-```  
+```json  
 {"__type":"Circle:#MyApp.Shapes","x":50,"y":70,"radius":10}  
 ```  
   
@@ -198,7 +198,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 #### Type Hint Position in JSON Objects  
  Note that the type hint must appear first in the JSON representation. This is the only case where order of key/value pairs is important in JSON processing. For example, the following is not a valid way to specify the type hint.  
   
-```  
+```json  
 {"x":50,"y":70,"radius":10,"__type":"Circle:#MyApp.Shapes"}  
 ```  
   
@@ -219,13 +219,13 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 #### Duplicate Data Member Names  
  Derived type information is present in the same JSON object together with base type information, and can occur in any order. For example, `Shape` may be represented as follows.  
   
-```  
+```json  
 {"__type":"Shape:#MyApp.Shapes","x":50,"y":70}  
 ```  
   
  Whereas Circle may be represented as follows.  
   
-```  
+```json  
 {"__type":"Circle:#MyApp.Shapes","x":50, "radius":10,"y":70}  
 ```  
   
@@ -243,7 +243,7 @@ http://example.com/myservice.svc/MyOperation?number=7&p={"name":"John","age":42}
 #### Collections Assigned to Object  
  Collections assigned to Object are serialized as if they are collections that implement <xref:System.Collections.Generic.IEnumerable%601>: a JSON array with each entry that has a type hint if it is a complex type. For example, a <xref:System.Collections.Generic.List%601> of type `Shape` assigned to <xref:System.Object> looks like the following.  
   
-```  
+```json  
 [{"__type":"Shape:#MyApp.Shapes","x":50,"y":70},  
 {"__type":"Shape:#MyApp.Shapes","x":58,"y":73},  
 {"__type":"Shape:#MyApp.Shapes","x":41,"y":32}]  

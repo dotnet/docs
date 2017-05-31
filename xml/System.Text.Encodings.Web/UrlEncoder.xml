@@ -14,7 +14,12 @@
   <Interfaces />
   <Docs>
     <summary>Represents a URL character encoding.</summary>
-    <remarks></remarks>
+    <remarks><format type="text/markdown"><![CDATA[ 
+
+## Remarks  
+ The source code for this type is available in the [System.Text.Encodings.Web project](https://github.com/dotnet/corefx/tree/master/src/System.Text.Encodings.Web) on GitHub. Unit tests that can also serve as code examples are found in the [System.Text.Encodings.Web/tests](https://github.com/dotnet/corefx/tree/master/src/System.Text.Encodings.Web/tests) folder on GitHub.  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">

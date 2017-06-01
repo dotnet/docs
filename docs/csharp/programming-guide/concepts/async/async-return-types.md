@@ -31,7 +31,7 @@ Async methods can have the following return types:
 
 - `void`, for an event handler. 
 
-- Any type that has an accessible `GetAwaiter` method (starting with C# 7).
+- Starting with C# 7, any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=fullName> interface.
   
 For more information about async methods, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md).  
   

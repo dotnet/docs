@@ -97,7 +97,7 @@ You can add functionality to the application model by overriding the `Overridabl
      By default, this method raises the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UnhandledException> event as long as a debugger is not attached and the application is handling the `UnhandledException` event.  
   
  If the application is a single-instance application, and the application is already running, the subsequent instance of the application calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance%2A> method on the original instance of the application, and then exits.  
-  
+ 
  The <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.OnStartupNextInstance(Microsoft.VisualBasic.ApplicationServices.StartupNextInstanceEventArgs)> constructor calls the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property to determine which text rendering engine to use for the application's forms. By default, the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property returns `False`, indicating that the GDI text rendering engine be used, which is the default in [!INCLUDE[vbprvblong](~/includes/vbprvblong-md.md)]. You can override the <xref:Microsoft.VisualBasic.ApplicationServices.WindowsFormsApplicationBase.UseCompatibleTextRendering%2A> property to return `True`, which indicates that the GDI+ text rendering engine be used, which is the default in Visual Basic .NET 2002 and Visual Basic .NET 2003.  
   
 ## Configuring the Application  

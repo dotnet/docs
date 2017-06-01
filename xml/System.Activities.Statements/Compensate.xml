@@ -111,8 +111,8 @@
         <ReturnType>System.Activities.InArgument&lt;System.Activities.Statements.CompensationToken&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.WorkflowModel.InArgument`1" /> that contains the <see cref="T:System.Activities.Statements.CompensationHandle" /> for this <see cref="T:System.Activities.Statements.Compensate" /> activity.</summary>
-        <value>A <see cref="T:System.WorkflowModel.InArgument`1" /> that contains the <see cref="T:System.Activities.Statements.CompensationHandle" /> for this <see cref="T:System.Activities.Statements.Compensate" />.</value>
+        <summary>Gets or sets the <see cref="T:System.Activities.InArgument`1" /> that contains the <see cref="T:System.Activities.Statements.CompensationToken" /> for this <see cref="T:System.Activities.Statements.Compensate" /> activity.</summary>
+        <value>A <see cref="T:System.Activities.InArgument`1" /> that contains the <see cref="T:System.Activities.Statements.CompensationToken" /> for this <see cref="T:System.Activities.Statements.Compensate" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

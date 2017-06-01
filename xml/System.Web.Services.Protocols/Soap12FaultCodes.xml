@@ -87,9 +87,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET does not automatically throw a <xref:System.Web.Services.Protocols.SoapException> with the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code*%2A?displayProperty=fullName> property set to <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingUntypedValueFaultCode>.  
+ ASP.NET does not automatically throw a <xref:System.Web.Services.Protocols.SoapException> with the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A?displayProperty=fullName> property set to <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingUntypedValueFaultCode>.  
   
- The <xref:System.Web.Services.Protocols.SoapException> class has a <xref:System.Web.Services.Protocols.SoapException.Subcode%2A> property of type <xref:System.Web.Services.Protocols.SoapFaultSubcode> that represents the SOAP fault subcode. The <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code*%2A?displayProperty=fullName> property represents the URI for the actual SOAP fault subcode. When setting the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code*%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingUntypedValueFaultCode>, set the <xref:System.Web.Services.Protocols.SoapException.Code%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode>.  
+ The <xref:System.Web.Services.Protocols.SoapException> class has a <xref:System.Web.Services.Protocols.SoapException.SubCode%2A> property of type <xref:System.Web.Services.Protocols.SoapFaultSubCode> that represents the SOAP fault subcode. The <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A?displayProperty=fullName> property represents the URI for the actual SOAP fault subcode. When setting the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.EncodingUntypedValueFaultCode>, set the <xref:System.Web.Services.Protocols.SoapException.Code%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode>.  
   
  ]]></format>
         </remarks>
@@ -168,9 +168,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET does not automatically throw a <xref:System.Web.Services.Protocols.SoapException> with the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code*%2A?displayProperty=fullName> property set to <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcBadArgumentsFaultCode>.  
+ ASP.NET does not automatically throw a <xref:System.Web.Services.Protocols.SoapException> with the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A?displayProperty=fullName> property set to <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcBadArgumentsFaultCode>.  
   
- The <xref:System.Web.Services.Protocols.SoapException> class has a <xref:System.Web.Services.Protocols.SoapException.Subcode%2A> property of type <xref:System.Web.Services.Protocols.SoapFaultSubcode> that represents the SOAP fault subcode. The <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code*%2A?displayProperty=fullName> property represents the URI for the actual SOAP fault subcode. When setting the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code*%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcBadArgumentsFaultCode>, set the <xref:System.Web.Services.Protocols.SoapException.Code%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode>.  
+ The <xref:System.Web.Services.Protocols.SoapException> class has a <xref:System.Web.Services.Protocols.SoapException.SubCode%2A> property of type <xref:System.Web.Services.Protocols.SoapFaultSubCode> that represents the SOAP fault subcode. The <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A?displayProperty=fullName> property represents the URI for the actual SOAP fault subcode. When setting the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcBadArgumentsFaultCode>, set the <xref:System.Web.Services.Protocols.SoapException.Code%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode>.  
   
  ]]></format>
         </remarks>
@@ -195,9 +195,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- ASP.NET does not automatically throw a <xref:System.Web.Services.Protocols.SoapException> with the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code*%2A?displayProperty=fullName> property set to <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcProcedureNotPresentFaultCode>.  
+ ASP.NET does not automatically throw a <xref:System.Web.Services.Protocols.SoapException> with the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A?displayProperty=fullName> property set to <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcProcedureNotPresentFaultCode>.  
   
- The <xref:System.Web.Services.Protocols.SoapException> class has a <xref:System.Web.Services.Protocols.SoapException.Subcode%2A> property of type <xref:System.Web.Services.Protocols.SoapFaultSubcode> that represents the SOAP fault subcode. The <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code*%2A?displayProperty=fullName> property represents the URI for the actual SOAP fault subcode. When setting the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code*%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcProcedureNotPresentFaultCode>, set the <xref:System.Web.Services.Protocols.SoapException.Code%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode>.  
+ The <xref:System.Web.Services.Protocols.SoapException> class has a <xref:System.Web.Services.Protocols.SoapException.SubCode%2A> property of type <xref:System.Web.Services.Protocols.SoapFaultSubCode> that represents the SOAP fault subcode. The <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A?displayProperty=fullName> property represents the URI for the actual SOAP fault subcode. When setting the <xref:System.Web.Services.Protocols.SoapFaultSubCode.Code%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.RpcProcedureNotPresentFaultCode>, set the <xref:System.Web.Services.Protocols.SoapException.Code%2A?displayProperty=fullName> property to <xref:System.Web.Services.Protocols.Soap12FaultCodes.SenderFaultCode>.  
   
  ]]></format>
         </remarks>

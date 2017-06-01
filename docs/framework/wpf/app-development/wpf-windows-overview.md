@@ -119,7 +119,7 @@ Users interact with              [!INCLUDE[TLA#tla_wpf](../../../../includes/tla
   
  This is shown in the following                  [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] project file.  
   
-```  
+```xml  
 <Project ...  
                 xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
     ...  

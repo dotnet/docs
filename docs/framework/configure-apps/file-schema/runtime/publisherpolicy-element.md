@@ -39,7 +39,7 @@ Specifies whether the runtime applies publisher policy.
   
 ## Syntax  
   
-```  
+```xml  
 <publisherPolicy apply="yes|no"/>  
 ```  
   
@@ -79,7 +79,7 @@ Specifies whether the runtime applies publisher policy.
 ## Example  
  The following example turns off publisher policy for the assembly, `myAssembly`.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

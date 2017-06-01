@@ -38,7 +38,7 @@ Removes an IP address or DNS name from the connection management list.
   
 ## Syntax  
   
-```  
+```xml  
       <remove   
    name = "server name or IP address"   
 />  
@@ -73,7 +73,7 @@ Removes an IP address or DNS name from the connection management list.
 ## Example  
  The following code example removes any connection management list entries for the server www.adventure-works.com and then configures an application to use four connections to the server www.contoso.com and two connections to all other servers.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <connectionManagement>  

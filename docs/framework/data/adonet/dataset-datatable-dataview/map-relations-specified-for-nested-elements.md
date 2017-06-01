@@ -20,7 +20,7 @@ A schema can include an **msdata:Relationship** annotation to explicitly specify
   
  The following example shows an XML Schema in which the **OrderDetail** element is a child element of **Order**. The **msdata:Relationship** identifies this parent-child relationship and specifies that the **OrderNumber** column of the resulting **Order** table is related to the **OrderNo** column of the resulting **OrderDetail** table.  
   
-```  
+```xml  
 <xs:schema id="MyDataSet" xmlns=""   
             xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  

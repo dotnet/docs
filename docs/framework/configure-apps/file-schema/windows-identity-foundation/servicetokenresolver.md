@@ -26,7 +26,7 @@ Registers the service token resolver that is used by handlers in the token handl
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
@@ -67,6 +67,6 @@ Registers the service token resolver that is used by handlers in the token handl
   
 ## Example  
   
-```  
+```xml  
 <serviceTokenResolver type="MyNamespace.CustomTokenResolver, MyAssembly" />  
 ```

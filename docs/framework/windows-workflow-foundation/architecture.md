@@ -21,7 +21,7 @@ manager: "erikre"
   
  Authoring activities that derive from <xref:System.Activities.Activity> is declarative and these activities can be authored in XAML. In the following example, an activity called `Prompt` is created using other activities for the execution body.  
   
-```  
+```xml  
 <Activity x:Class='Prompt'  
   xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml'  
     xmlns:z='http://schemas.microsoft.com/netfx/2008/xaml/schema'  

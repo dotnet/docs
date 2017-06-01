@@ -113,7 +113,7 @@ This topic shows how to enable transfer security on a [!INCLUDE[indigo1](../../.
   
 5.  In the service's configuration file, replace the `<bindings>` section with the following code. If you do not already have a service configuration file, see [Using Bindings to Configure Services and Clients](../../../docs/framework/wcf/using-bindings-to-configure-services-and-clients.md).  
   
-    ```  
+    ```xml  
     <bindings>  
       <wsHttpBinding>  
        <binding name = "wsHttpBinding_Calculator">  

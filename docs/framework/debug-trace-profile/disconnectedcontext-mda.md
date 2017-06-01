@@ -47,7 +47,7 @@ The `disconnectedContext` managed debugging assistant (MDA) is activated when th
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <disconnectedContext />  

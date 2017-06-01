@@ -49,7 +49,7 @@ The `reportAvOnComRelease` managed debugging assistant (MDA) is activated when e
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <reportAvOnComRelease />  

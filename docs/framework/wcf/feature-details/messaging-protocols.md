@@ -138,7 +138,7 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
   
  Consider a scenario where a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service requires authentication using a Security Assertions Markup Language (SAML) token issued by the token issuer at http://sts.fabrikam123.com. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] endpoint describes this authentication requirement by using `sp:IssuedToken` assertion with a nested `sp:Issuer` assertion pointing to the token issuer. Client applications that access the `sp:Issuer` assertion need to know how to communicate with the token issuer endpoint. The client needs to know metadata about the token issuer. Using the endpoint reference metadata extensions defined in MEX, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] provides a reference to the token issuer metadata.  
   
-```  
+```xml  
 <sp:IssuedToken>  
   <sp:Issuer>  
     <wsa10:Address>  
@@ -231,7 +231,7 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
   
  The following policy assertion has Endpoint Policy Subject [WS-PA] and indicates messages sent and received from the endpoint must use WS-Addressing 2004/08.  
   
-```  
+```xml  
 <wsap:UsingAddressing />  
 ```  
   
@@ -245,7 +245,7 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
   
  The following policy assertion has an Endpoint Policy Subject [WS-PA] and indicates that messages sent and received from the endpoint must use WS-Addressing 2004/08.  
   
-```  
+```xml  
 <wsaw10:UsingAddressing />  
 ```  
   
@@ -291,7 +291,7 @@ dp|http://schemas.microsoft.com/net/2006/06/duplex|
   
  Use of the following assertion that has Endpoint Policy Subject [WS-PA] on endpoints that use WSDL 1.1 SOAP 1.x HTTP bindings requires two separate converse HTTP connections to be used for messages flowing from requester to responder and responder to requester, respectively.  
   
-```  
+```xml  
 <cdp:CompositeDuplex/>  
 ```  
   
@@ -571,7 +571,7 @@ mail-address   =     id-left "@" id-right
 ### WS-Policy Assertion for MTOM  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses the following policy assertion to indicate MTOM usage by endpoint:  
   
-```  
+```xml  
 <wsoma:OptimizedMimeSerialization ... />  
 ```  
   

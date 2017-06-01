@@ -40,7 +40,7 @@ translation.priority.ht:
 # &lt;remarks&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <remarks>description</remarks>  
 ```  
   

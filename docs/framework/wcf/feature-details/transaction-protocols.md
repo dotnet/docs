@@ -149,7 +149,7 @@ manager: "erikre"
   
 #### CreateCoordinationContext with WSCoor 1.0  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <a:Action>http://.../ws/2004/10/wscoor/CreateCoordinationContext</Action>  
@@ -175,7 +175,7 @@ manager: "erikre"
   
 #### CreateCoordinationContext with WSCoor 1.1  
   
-```  
+```xml  
 <s:Envelope>   
 <s:Header>  
 <a:Action>http://docs.oasis-open.org/ws-tx/wscoor/2006/06/CreateCoordinationContext</Action>  
@@ -201,7 +201,7 @@ manager: "erikre"
   
 #### CreateCoordinationContextResponse with Trust Pre-1.3 and WSCoor 1.0  
   
-```  
+```xml  
 <s:Envelope>  
   <!-- Data below is shown in the clear for  
        illustration purposes only. -->  
@@ -283,7 +283,7 @@ manager: "erikre"
   
 #### CreateCoordinationContextResponse with Trust 1.3 and WSCoor 1.1  
   
-```  
+```xml  
 <s:Envelope>  
 <!-- Data below is shown in the clear for illustration purposes only. -->   
 <s:Header>   
@@ -362,7 +362,7 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
   
 #### Register with WSCoor 1.0  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <a:Action>http://schemas.xmlsoap.org/ws/2004/10/wscoor/Register</a:Action>  
@@ -423,7 +423,7 @@ xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy">
   
 #### Register with WSCoor 1.1  
   
-```  
+```xml  
 <s:Envelope>  
 <s:Header>   
 <a:Action>http://docs.oasis-open.org/ws-tx/wscoor/2006/06/Register</a:Action>   
@@ -482,7 +482,7 @@ Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
   
 #### Register Response with WSCoor 1.0  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <a:Action>  
@@ -518,7 +518,7 @@ Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
   
 #### Register Response with WSCoor 1.1  
   
-```  
+```xml  
 <s:Envelope>  
 <s:Header>   
 <a:Action> http://docs.oasis-open.org/ws-tx/wscoor/2006/06/RegisterResponse  
@@ -552,7 +552,7 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
   
 #### Commit with WSAT 1.0  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <a:Action>http://.../ws/2004/10/wsat/Commit</a:Action>  
@@ -575,7 +575,7 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
   
 #### Commit with WSAT 1.1  
   
-```  
+```xml  
 <s:Envelope>  
 <s:Header>   
 <a:Action>http://docs.oasis-open.org/ws-tx/wsat/2006/06</a:Action>  
@@ -601,7 +601,7 @@ xmlns:wssu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-u
   
 #### Application message-Request  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
 <!-- Addressing headers, all signed-->  

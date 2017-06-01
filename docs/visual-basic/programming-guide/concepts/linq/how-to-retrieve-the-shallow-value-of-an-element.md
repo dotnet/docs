@@ -27,7 +27,7 @@ This topic shows how to get the shallow value of an element. The shallow value i
 ## Example  
  The following text file, Report.xml, is the source for this example.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <Report>  
   <Section>  

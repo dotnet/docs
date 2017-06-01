@@ -16,7 +16,7 @@ manager: "erikre"
 # &lt;workflowUnhandledException&gt;
 A service behavior that enables you to specify the action to take when an unhandled exception occurs within a workflow service.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -24,8 +24,14 @@ A service behavior that enables you to specify the action to take when an unhand
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <workflowUnhandledException action="Abandon/AbandonAndSuspend/Cancel/Terminate" />    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <workflowUnhandledException action="Abandon/AbandonAndSuspend/Cancel/Terminate" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  

@@ -39,7 +39,7 @@ appcmd.exe set site "Default Web Site" -+bindings.[protocol='net.tcp',bindingInf
   
  This command adds the new net.tcp binding to the default Web site by adding the line indicated below to the applicationHost.config file.  
   
-```  
+```xml  
 <sites>  
     <site name="Default Web Site" id="1">  
         <bindings>  
@@ -62,7 +62,7 @@ appcmd.exe set app "Default Web Site/appOne" /enabledProtocols:net.tcp
   
  The following XML code from applicationHost.config illustrates a site bound to both HTTP and non-HTTP protocols. The additional configuration required to support non-HTTP protocols is called out with comments.  
   
-```  
+```xml  
 <sites>  
     <site name="Default Web Site" id="1">  
     <application path="/">  

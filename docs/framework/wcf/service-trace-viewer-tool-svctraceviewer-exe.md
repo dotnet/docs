@@ -26,7 +26,7 @@ manager: "erikre"
   
  You can configure tracing using the application’s configuration file—either Web.config for Web-hosted applications, or *Appname*.config for self-hosted applications. The following is an example:  
   
-```  
+```xml  
 <system.diagnostics>  
     <trace autoflush="true" />  
     <sources>  

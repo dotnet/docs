@@ -26,7 +26,7 @@ Specifies whether transaction batching is supported for receive operations.
   
 ## Syntax  
   
-```  
+```xml  
 <transactedBatching maxBatchSize="Integer" />  
 ```  
   
@@ -54,7 +54,7 @@ Specifies whether transaction batching is supported for receive operations.
 ## Example  
  The following example shows how to add the transacted batching behavior to a service in a configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
   <services>  
     <service name="Microsoft.ServiceModel.Samples.CalculatorService"  

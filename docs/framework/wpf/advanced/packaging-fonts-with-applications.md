@@ -40,7 +40,7 @@ This topic provides an overview of how to package fonts with your              [
 ## Adding Fonts as Content Items  
  You can add fonts to your application as project content items that are separate from the application's assembly files. This means that content items are not embedded as resources within an assembly. The following project file example shows how to define content items.  
   
-```  
+```xml  
 <Project DefaultTargets="Build"  
                 xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- Other project build settings ... -->  
@@ -54,7 +54,7 @@ This topic provides an overview of how to package fonts with your              [
   
  In order to ensure that the application can use the fonts at run time, the fonts must be accessible in the application's deployment directory. The                  `<CopyToOutputDirectory>` element in the application's project file allows you to automatically copy the fonts to the application deployment directory during the build process. The following project file example shows how to copy fonts to the deployment directory.  
   
-```  
+```xml  
 <ItemGroup>  
   <Content Include="Peric.ttf">  
     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>  
@@ -73,7 +73,7 @@ This topic provides an overview of how to package fonts with your              [
 ## Adding Fonts as Resource Items  
  You can add fonts to your application as project resource items that are embedded within the application's assembly files. Using a separate subdirectory for resources helps to organize the application's project files. The following project file example shows how to define fonts as resource items in a separate subdirectory.  
   
-```  
+```xml  
 <Project DefaultTargets="Build"  
                 xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  
   <!-- Other project build settings ... -->  
@@ -106,7 +106,7 @@ This topic provides an overview of how to package fonts with your              [
 ### Referencing Fonts from the Same Application Subdirectory  
  You can place both application content and resource files within the same user-defined subdirectory of your application project. The following project file example shows a content page and font resources defined in the same subdirectory.  
   
-```  
+```xml  
 <ItemGroup>  
   <Page Include="pages\HomePage.xaml" />  
 </ItemGroup>  
@@ -138,7 +138,7 @@ This topic provides an overview of how to package fonts with your              [
 ## Creating a Font Resource Library  
  You can create a resource-only library that contains only fonts—no code is part of this type of library project. Creating a resource-only library is a common technique for decoupling resources from the application code that uses them. This also allows the library assembly to be included with multiple application projects. The following project file example shows the key portions of a resource-only library project.  
   
-```  
+```xml  
 <PropertyGroup>  
   <AssemblyName>FontLibrary</AssemblyName>  
   <OutputType>library</OutputType>  

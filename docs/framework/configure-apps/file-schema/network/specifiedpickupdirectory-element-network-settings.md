@@ -37,7 +37,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
   
 ## Syntax  
   
-```  
+```xml  
       <specifiedPickupDirectory  
   pickupDirectoryLocation="directory"   
 />  
@@ -67,7 +67,7 @@ Configures the local directory for a Simple Mail Transport Protocol (SMTP) serve
 ## Example  
  The following code example specifies c:\maildrop as the mail pickup directory.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <mailSettings>  

@@ -39,7 +39,7 @@ This scenario sample demonstrates how to flow caller's identity information from
 ### Communication Path between Client and Façade Service  
  The client to the façade service communication path uses `wsHttpBinding` with a `UserName` client credential type. This means that the client uses username and password to authenticate to the façade service and the façade service uses X.509 certificate to authenticate to the client. The binding configuration looks like the following example.  
   
-```  
+```xml  
 <bindings>  
   <wsHttpBinding>  
     <binding name="Binding1">  
@@ -71,7 +71,7 @@ public class MyUserNamePasswordValidator : UserNamePasswordValidator
   
  The custom validator is configured to be used inside the `serviceCredentials` behavior in the façade service configuration file. This behavior is also used to configure the service's X.509 certificate.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name="FacadeServiceBehavior">  
@@ -103,7 +103,7 @@ public class MyUserNamePasswordValidator : UserNamePasswordValidator
   
  The following is the binding configuration for this communication path.  
   
-```  
+```xml  
 <bindings>  
   <customBinding>  
     <binding name="ClientBinding">  
@@ -157,7 +157,7 @@ public class MyUserNamePasswordValidator : UserNamePasswordValidator
   
  The custom validator is configured to be used inside the `serviceCredentials` behavior in the façade service configuration file.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name="BackendServiceBehavior">  

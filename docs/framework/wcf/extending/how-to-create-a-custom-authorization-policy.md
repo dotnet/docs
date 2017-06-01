@@ -42,7 +42,7 @@ The Identity Model infrastructure in [!INCLUDE[indigo1](../../../../includes/ind
   
 1.  Specify the type of the custom authorization policy in the `policyType` attribute in the `add` element in the `authorizationPolicies` element in the `serviceAuthorization` element.  
   
-    ```  
+    ```xml  
     <configuration>  
      <system.serviceModel>  
       <behaviors>  

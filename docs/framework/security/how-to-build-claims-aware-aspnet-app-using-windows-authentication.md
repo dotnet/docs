@@ -126,13 +126,13 @@ manager: "mbaldwin"
   
 3.  To change the application’s authentication type, modify the **\<authentication>** block in the **\<system.web>** section of the project’s root *Web.config* file so that it only includes the following configuration entry:  
   
-    ```  
+    ```xml  
     <authentication mode="Windows" />  
     ```  
   
 4.  Finally, modify the **\<authorization>** block in the **\<system.web>** section of the same *Web.config* file to force authentication:  
   
-    ```  
+    ```xml  
     <authorization>  
         <deny users="?" />  
     </authorization>  

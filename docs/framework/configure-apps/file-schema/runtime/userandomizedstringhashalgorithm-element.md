@@ -32,7 +32,7 @@ Determines whether the common language runtime calculates hash codes for strings
   
 ## Syntax  
   
-```  
+```xml  
 <UseRandomizedStringHashAlgorithm   
    enabled=0|1 />  
 ```  
@@ -85,7 +85,7 @@ String 'This is a string.' in domain 'NewDomain': 941BCEAC
   
  However, if you add the following configuration file to the example's directory and then run the example, the hash codes for the same string will differ by application domain.  
   
-```  
+```xml  
 <?xml version ="1.0"?>  
 <configuration>  
    <runtime>  

@@ -42,7 +42,7 @@ public class CalculatorService : ICalculator
   
  The service exposes a single endpoint for communicating with the service, defined using a configuration file (Web.config). The endpoint consists of an address, a binding, and a contract. The binding is configured with a `wsHttpBinding` binding. The default security mode for the `wsHttpBinding` binding is `Message`. The `clientCredentialType` attribute is set to `None`.  
   
-```  
+```xml  
 <system.serviceModel>  
   
   <protocolMapping>  
@@ -69,7 +69,7 @@ public class CalculatorService : ICalculator
   
  The credentials to be used for service authentication are specified in the [\<behavior>](../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md). The server certificate must contain the same value for the `SubjectName` as the value specified for the `findValue` attribute as shown in the following sample code.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior>  
@@ -90,7 +90,7 @@ public class CalculatorService : ICalculator
   
  The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract. The client security mode for the `wsHttpBinding` binding is `Message`. The `clientCredentialType` attribute is set to `None`.  
   
-```  
+```xml  
 <system.serviceModel>  
   <client>  
     <endpoint name=""  

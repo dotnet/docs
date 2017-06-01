@@ -43,7 +43,7 @@ A literal representing an <xref:System.Xml.Linq.XComment> object.
   
 ## Syntax  
   
-```  
+```xml  
 <!-- content -->  
 ```  
   

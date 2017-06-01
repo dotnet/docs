@@ -30,7 +30,7 @@ manager: "erikre"
   
  The following is an example of a configuration section that configures the specified binding to support transaction flow, as well as a use the WS-AtomicTransaction protocol.  
   
-```  
+```xml  
 <netNamedPipeBinding>  
    <binding name="test"  
       closeTimeout="00:00:10"  
@@ -50,7 +50,7 @@ manager: "erikre"
 ## Configuring transactionTimeout  
  You can configure the `transactionTimeout` attribute for your [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service in the `behavior` element of the configuration file. The following code demonstrates how to do this.  
   
-```  
+```xml  
 <configuration>  
    <system.serviceModel>  
       <behaviors>  

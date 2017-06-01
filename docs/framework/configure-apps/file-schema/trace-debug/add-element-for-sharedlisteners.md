@@ -36,7 +36,7 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
   
 ## Syntax  
   
-```  
+```xml  
 <add name="name"   
   type="TraceListenerClassName, Version, Culture, PublicKeyToken"  
   initializeData="data"/>  
@@ -90,7 +90,7 @@ Adds a listener to the `sharedListeners` collection. `sharedListeners` is a coll
 ## Example  
  The following example shows how to use `<add>` elements to add the <xref:System.Diagnostics.TextWriterTraceListener>`textListener` to the `sharedListeners` collection.   `textListener` is added by name to the `Listeners` collection for the trace source `TraceSourceApp`. The `textListener` listener writes trace output to the file myListener.log.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

@@ -18,19 +18,22 @@ manager: "erikre"
 # &lt;extensions&gt; section
 This configuration section contains a collection of extensions, which enable the user to create user-defined bindings, behaviors, and other aspects of extensions.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
-    <extensions>  
-      <bindingExtensions>  
-      </bindingExtensions>  
-      <behaviorExtensions>  
-      </behaviorExtensions>  
-      <bindingElementExtensions>  
-      </bindingElementExtensions>      <endpointExtensions>      </endpointExtensions>    </extensions>  
+  <extensions>  
+    <bindingExtensions>  
+    </bindingExtensions>  
+    <behaviorExtensions>  
+    </behaviorExtensions>  
+    <bindingElementExtensions>  
+    </bindingElementExtensions>
+    <endpointExtensions>
+    </endpointExtensions>
+  </extensions>  
 </system.serviceModel>  
 ```  
   

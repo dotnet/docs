@@ -61,7 +61,7 @@ else
   
  In the configuration file, the service registers the new behavior:  
   
-```  
+```xml  
 <extensions>  
     <behaviorExtensions>  
         <add name="filteringEndpointBehavior" type="Microsoft.ServiceModel.Samples.FilteringEndpointBehaviorExtension, service" />  
@@ -71,7 +71,7 @@ else
   
  Then the service creates `endpointBehavior` configurations for each variation:  
   
-```  
+```xml  
 <endpointBehaviors>  
     <behavior name="endpoint1">  
         <filteringEndpointBehavior variation="1" />  
@@ -84,7 +84,7 @@ else
   
  Finally, the service's endpoint references one of the `behaviorConfigurations`:  
   
-```  
+```xml  
 <endpoint address=""  
         bindingConfiguration="ws"  
         listenUri=""   
@@ -105,7 +105,7 @@ Hello
   
  Switching the variation in the server's configuration file causes the filter to be swapped and the client sees the opposite behavior (the message to `urn:e` succeeds, whereas the message to `urn:a` fails).  
   
-```  
+```xml  
 <endpoint address=""  
           bindingConfiguration="ws"  
           listenUri=""   

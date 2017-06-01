@@ -25,7 +25,7 @@ Sets the custom cookie handler type. This element may only be present if the `mo
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel.services>  
   <federationConfiguration>  
     <cookieHandler mode="Custom">  
@@ -62,7 +62,7 @@ Sets the custom cookie handler type. This element may only be present if the `mo
 ## Example  
  The following example configures the SAM to use a custom cookie handler of type `MyNamespace.MyCustomCookieHandler`.  
   
-```  
+```xml  
 <cookieHandler mode="Custom">  
     <customCookieHandler type="MyNamespace.MyCustomCookieHandler, MyAssembly" />  
 </cookieHandler>  

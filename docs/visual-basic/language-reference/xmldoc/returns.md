@@ -39,7 +39,7 @@ Specifies the return value of the property or function.
   
 ## Syntax  
   
-```  
+```xml  
 <returns>description</returns>  
 ```  
   

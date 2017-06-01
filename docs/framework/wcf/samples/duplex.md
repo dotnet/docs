@@ -147,7 +147,7 @@ client.Close();
   
  The configuration has been modified to provide a binding that supports both session communication and duplex communication. The `wsDualHttpBinding` supports session communication and allows duplex communication by providing dual HTTP connections, one for each direction. On the service, the only difference in configuration is the binding that is used. On the client, you must configure an address that the server can use to connect to the client as shown in the following sample configuration.  
   
-```  
+```xml  
 <client>  
   <endpoint name=""  
             address="http://localhost/servicemodelsamples/service.svc"   
@@ -179,7 +179,7 @@ client.Close();
     > [!IMPORTANT]
     >  When running the client in a cross-machine configuration, be sure to replace "localhost" in both the `address` attribute of the [endpoint](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element and the `clientBaseAddress` attribute of the [\<binding>](../../../../docs/framework/misc/binding.md) element of the [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md) element with the name of the appropriate machine, as shown in the following:  
   
-    ```  
+    ```xml  
     <client>  
     <endpoint name = ""  
     address="http://service_machine_name/servicemodelsamples/service.svc"  

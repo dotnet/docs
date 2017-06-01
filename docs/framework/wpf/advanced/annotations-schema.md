@@ -47,7 +47,7 @@ This topic describes the XML schema definition (XSD) used by the Microsoft Annot
 ## Annotations XML Core Schema  
  The Annotations XML Core Schema defines the XML structure that is used to store <xref:System.Windows.Annotations.Annotation> objects.  
   
-```  
+```xml  
 <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified"  
             blockDefault="#all"  
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
@@ -199,7 +199,7 @@ This topic describes the XML schema definition (XSD) used by the Microsoft Annot
 ## Annotations XML Base Schema  
  The Base Schema defines the XML structure for the three abstract elements defined in the Core Schema – <xref:System.Windows.Annotations.Annotation.Authors%2A>, <xref:System.Windows.Annotations.ContentLocatorPart>, and <xref:System.Windows.Annotations.AnnotationResource.Contents%2A>.  
   
-```  
+```xml  
 <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified"  
      blockDefault="#all"  
      xmlns:xsd="http://www.w3.org/2001/XMLSchema"  
@@ -510,7 +510,7 @@ This topic describes the XML schema definition (XSD) used by the Microsoft Annot
 ## Sample XML Produced by Annotations XmlStreamStore  
  The XML that follows shows the output of an Annotations <xref:System.Windows.Annotations.Storage.XmlStreamStore> and the organization of a sample file that contains three annotations - a highlight, a text sticky-note, and an ink stick-note.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <anc:Annotations  
      xmlns:anc="http://schemas.microsoft.com/windows/annotations/2003/11/core"  

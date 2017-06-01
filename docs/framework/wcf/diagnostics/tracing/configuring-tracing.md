@@ -40,7 +40,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  You can configure tracing by editing the application’s configuration file—either Web.config for Web-hosted applications, or Appname.exe.config for self-hosted applications. The following is an example of such edit. For more information on these settings, see the "Configuring Trace Listeners to Consume Traces" section.  
   
-```  
+```xml  
 <configuration>  
    <system.diagnostics>  
       <sources>  
@@ -80,7 +80,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  You can configure each trace source to use the same (shared) listener, as indicated in the following configuration example.  
   
-```  
+```xml  
 <configuration>  
     <system.diagnostics>  
         <sources>  
@@ -124,7 +124,7 @@ This topic describes how you can enable tracing, configure trace sources to emit
   
  In addition, you can add user-defined trace sources, as demonstrated by the following example, to emit user code traces.  
   
-```  
+```xml  
 <system.diagnostics>  
    <sources>  
        <source name="UserTraceSource" switchValue="Warning, ActivityTracing" >  

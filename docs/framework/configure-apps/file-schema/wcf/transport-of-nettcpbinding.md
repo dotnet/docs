@@ -27,7 +27,7 @@ Defines the type of message-level security requirements for an endpoint configur
   
 ## Syntax  
   
-```  
+```xml  
 <netTcpBinding>  
     <binding>  
         <security  

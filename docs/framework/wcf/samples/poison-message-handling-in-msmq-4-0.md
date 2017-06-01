@@ -126,7 +126,7 @@ public class OrderProcessorService : IOrderProcessor
   
  The service configuration includes the following poison message properties: `receiveRetryCount`, `maxRetryCycles`, `retryCycleDelay`, and `receiveErrorHandling` as shown in the following configuration file.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <appSettings>  
@@ -217,7 +217,7 @@ public class OrderProcessorService : IOrderProcessor
 > [!NOTE]
 >  In the sample for MSMQ v3.0, the poison queue name is not a sub-queue, rather the queue that we moved the message to.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.serviceModel>  
@@ -303,7 +303,7 @@ Processing Purchase Order: 23e0b991-fbf9-4438-a0e2-20adf93a4f89
   
 1.  If your computer is not part of a domain, turn off transport security by setting the authentication mode and protection level to `None` as shown in the following sample configuration:  
   
-    ```  
+    ```xml  
     <bindings>  
         <netMsmqBinding>  
             <binding name="TransactedBinding">  

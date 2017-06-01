@@ -35,7 +35,7 @@ Specifies compiler configuration settings for available language providers.
   
 ## Syntax  
   
-```  
+```xml  
 <system.codedom>  
   <compilers> ... </compilers>  
 </system.codedom>  
@@ -80,7 +80,7 @@ Specifies compiler configuration settings for available language providers.
 ## Example  
  The following example illustrates a typical compiler configuration.  
   
-```  
+```xml  
 <configuration>  
   <system.codedom>  
     <compilers>  

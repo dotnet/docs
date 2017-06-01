@@ -28,7 +28,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
   
  The easiest way to address issues caused by missing metadata for these serializers is to collect types that will be used in serialization under a single namespace (such as `App.Models`) and apply a `Serialize` metadata directive to it:  
   
-```  
+```xml  
 <Namespace Name="App.Models" Serialize="Required PublicAndInternal" />  
 ```  
   
@@ -52,7 +52,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
   
  In this case, you must specify the type in the runtime directives file by adding an entry like this:  
   
-```  
+```xml  
 <Type Name="DataSet" Browse="Required Public" />  
 ```  
   
@@ -62,7 +62,7 @@ If your app serializes and deserializes objects, you may need to add entries to 
   
  You must add entries such as the following for each type to the runtime directives file:  
   
-```  
+```xml  
 <Type Name="t" Browse="Required Public" />  
 ```  
   

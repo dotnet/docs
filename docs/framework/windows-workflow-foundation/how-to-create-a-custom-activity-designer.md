@@ -56,7 +56,7 @@ Custom activity designers are typically implemented so that their associated act
   
 12. Open the RehostingWFDesigner.xaml file and paste the following code into it to define the UI for the application.  
   
-    ```  
+    ```xml  
     <Window x:Class=" UsingWorkflowItemPresenter.RehostingWFDesigner"  
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -180,7 +180,7 @@ Custom activity designers are typically implemented so that their associated act
     > [!NOTE]
     >  The schema for <xref:System.Activities.Presentation.ActivityDesigner> allows the addition of only one child element to your custom activity designer definition; however, this element could be a `StackPanel`, `Grid`, or some other composite UI element.  
   
-    ```  
+    ```xml  
     <sap:ActivityDesigner x:Class=" UsingWorkflowItemPresenter.SimpleNativeDesigner"  
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
@@ -257,7 +257,7 @@ Custom activity designers are typically implemented so that their associated act
   
 2.  Key differences are contained in the CustomParallelDesigner.xaml and RehostingWFDesigner.xaml.cs files. Here is the code from the CustomParallelDesigne.xaml file that defines the UI.  
   
-    ```  
+    ```xml  
     <sap:ActivityDesigner x:Class=" UsingWorkflowItemsPresenter.CustomParallelDesigner"  
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  

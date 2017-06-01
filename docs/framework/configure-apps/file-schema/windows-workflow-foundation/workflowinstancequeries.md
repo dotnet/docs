@@ -18,7 +18,7 @@ Represents a collection of configuration elements that track workflow instance l
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
   
- \<system.serviceModel>  
+\<system.serviceModel>  
 \<tracking>  
 \<trackingProfile>  
 \<workflow>  
@@ -26,8 +26,20 @@ Represents a collection of configuration elements that track workflow instance l
   
 ## Syntax  
   
-```vb  
-<tracking>   <trackingProfile name="Name">       <workflow>          <workflowInstanceQueries>             <workflowInstanceQuery>                <states>                   <state name="Name"/>                </states>            </workflowInstanceQuery>         </workflowInstanceQueries>       </workflow>   </trackingProfile></tracking>  
+```xml  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <workflowInstanceQueries>
+        <workflowInstanceQuery>
+          <states>
+            <state name="Name"/>
+          </states>
+        </workflowInstanceQuery>
+      </workflowInstanceQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```  
   
 ## Attributes and Elements  
@@ -64,7 +76,7 @@ Represents a collection of configuration elements that track workflow instance l
 ## Example  
  The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
   
-```  
+```xml  
 <workflowInstanceQueries>  
     <workflowInstanceQuery>  
       <states>  

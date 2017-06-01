@@ -25,7 +25,7 @@ In an XML Schema definition language (XSD) schema, you can specify constraints (
   
  The following example shows an XML Schema that includes **Order** and **OrderDetail** elements, which are not nested. The schema also specifies key and keyref constraints.  
   
-```  
+```xml  
 <xs:schema id="MyDataSet" xmlns=""   
             xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
@@ -93,7 +93,7 @@ In an XML Schema definition language (XSD) schema, you can specify constraints (
   
  In the previous schema example, the **Order** and **OrderDetail** elements are not nested. In the following schema example, these elements are nested. However, no **msdata:Relationship** annotation is specified; therefore, an implicit relation is assumed. For more information, see [Map Implicit Relations Between Nested Schema Elements](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/map-implicit-relations-between-nested-schema-elements.md). The schema also specifies key and keyref constraints.  
   
-```  
+```xml  
 <xs:schema id="MyDataSet" xmlns=""   
             xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  

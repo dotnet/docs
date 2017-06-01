@@ -64,7 +64,7 @@ As applications evolve, you may also have to change the data contracts the servi
   
  The version 2 endpoint can successfully send data to the version 1 endpoint. Serializing version 2 of the `Car` data contract yields XML similar to the following.  
   
-```  
+```xml  
 <Car>  
     <Model>Porsche</Model>  
     <HorsePower>300</HorsePower>  
@@ -75,7 +75,7 @@ As applications evolve, you may also have to change the data contracts the servi
   
  Also, the version 1 endpoint can send data to the version 2 endpoint. Serializing version 1 of the `Car` data contract yields XML similar to the following.  
   
-```  
+```xml  
 <Car>  
     <Model>Porsche</Model>  
 </Car>  

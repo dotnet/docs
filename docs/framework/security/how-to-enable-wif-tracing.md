@@ -74,7 +74,7 @@ manager: "mbaldwin"
   
 7.  Add the following **\<system.diagnostics>** element to the *Web.config* configuration file immediately following the closing **\</configSections>** element, like shown:  
   
-    ```  
+    ```xml  
     <configuration>  
         <configSections>  
         …  

@@ -30,7 +30,7 @@ Analytic tracing in [!INCLUDE[netfx_current_long](../../../../../includes/netfx-
 ### Enabling WCF Diagnostics Settings  
  WCF diagnostics are enabled within the \<system.serviceModel>\<diagnostics> configuration section.  
   
-```  
+```xml  
 <system.serviceModel>  
   <diagnostics>  
 ```  

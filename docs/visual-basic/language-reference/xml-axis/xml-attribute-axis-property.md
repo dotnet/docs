@@ -106,7 +106,7 @@ object.@<attribute>
   
  This code displays the following text:  
   
-```  
+```xml  
 <phone type="home" owner="Harris, Phyllis">206-555-0144</phone>  
 ```  
   

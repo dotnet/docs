@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;wsdlImporter&gt;
 Specifies all the WSDL importers that imports Web Services Description Language (WSDL) 1.1 metadata with WS-Policy attachments.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<client>  
 \<metadata>  
 \<wsdlImporters>  
@@ -26,11 +26,11 @@ Specifies all the WSDL importers that imports Web Services Description Language 
   
 ## Syntax  
   
-```  
+```xml  
 <metadata>  
-      <wsdlImporters>  
-      <wsdlImporter type="string" />  
-   </wsdlImporters>  
+  <wsdlImporters>  
+    <wsdlImporter type="string" />  
+  </wsdlImporters>  
 </metadata>  
 ```  
   

@@ -23,7 +23,7 @@ The `comContracts` configuration section contains elements that allow you to spe
   
  For example, you can use the following configuration to specify the namespace and contract name of the service contract, as well as an option to enforce usage on sessionful bindings.  
   
-```  
+```xml  
 <comContracts>  
   <comContract  
       contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"  

@@ -24,7 +24,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
 ## Registering DbProviderFactories  
  Each .NET Framework data provider that supports a factory-based class registers configuration information in the **DbProviderFactories** section of the **machine.config** file on the local computer. The following configuration file fragment shows the syntax and format for <xref:System.Data.SqlClient>.  
   
-```  
+```xml  
 <system.data>  
   <DbProviderFactories>  
     <add name="SqlClient Data Provider"  
@@ -62,7 +62,7 @@ The process of obtaining a <xref:System.Data.Common.DbProviderFactory> involves 
   
  The following configuration file fragment demonstrates how to save two named connection strings, "NorthwindSQL" for a connection to the Northwind database in SQL Server, and "NorthwindAccess" for a connection to the Northwind database in Access/Jet. The **invariant** name is used for the **providerName** attribute.  
   
-```  
+```xml  
 <configuration>  
   <connectionStrings>  
     <clear/>  

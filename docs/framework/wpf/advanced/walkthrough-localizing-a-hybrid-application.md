@@ -105,7 +105,7 @@ This walkthrough shows you how to localize              [!INCLUDE[TLA2#tla_wincl
   
 10. Copy the following line into the first                                  `PropertyGroup` in the project file.  
   
-    ```  
+    ```xml  
     <UICulture>en-US</UICulture>   
     ```  
   

@@ -25,7 +25,7 @@ This sample demonstrates how to access [!INCLUDE[indigo1](../../../../includes/i
   
  Performance counters are enabled in the diagnostics section of the Web.config file for the service, as shown in the following sample configuration.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <diagnostics performanceCounters="All" />   

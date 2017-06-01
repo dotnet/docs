@@ -278,7 +278,7 @@ public class Service : IEcho
   
  The next step is to associate an address and a binding with a service type. That is typically done in a configuration file, either by editing the file directly, or by using a configuration editor provided with [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]. Here is an example of a configuration file.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
      <system.serviceModel>  
@@ -389,7 +389,7 @@ typeof(Service), //"Service" is the name of the service type baseAdresses))
   
 2.  The administrator must configure the application to use the ASP.NET compatibility mode.  
   
-    ```  
+    ```xml  
     <configuration>  
          <system.serviceModel>  
           <services>  
@@ -402,7 +402,7 @@ typeof(Service), //"Service" is the name of the service type baseAdresses))
   
      [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] applications can also be configured to use .asmx as the extension for their service files rather than .svc.  
   
-    ```  
+    ```xml  
     <system.web>  
          <compilation>  
           <compilation debug="true">  
@@ -519,7 +519,7 @@ public interface IItemService
   
  This syntax yields an explicit representation of the structure of the messages, whereas the structure of messages is implied by the code of an ASP.NET Web service. Also, in the ASP.NET syntax, message headers are represented as properties of the service, such as the `ProtocolHeader` property in the previous example, whereas in [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] syntax, they are more accurately represented as properties of messages. Also, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] allows message headers to be added to the configuration of endpoints.  
   
-```  
+```xml  
 <service name="Service ">  
      <endpoint   
       address="EchoService"  
@@ -558,7 +558,7 @@ public interface IEcho
   
  The WSDL that [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates can be extensively customized. The <xref:System.ServiceModel.Description.ServiceMetadataBehavior> class provides some facilities for customizing the WSDL. The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] can also be configured to not generate WSDL, but rather to use a static WSDL file at a given URL.  
   
-```  
+```xml  
 <behaviors>  
      <behavior name="DescriptionBehavior">  
      <metadataPublishing   
@@ -685,7 +685,7 @@ void ITradingService.AddTrade(Trade trade)
   
  The [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] configuration system provides its own identity element for designating a particular user to impersonate. Also, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] clients and services can be independently configured for impersonation. Clients can be configured to impersonate the current user when they transmit requests.  
   
-```  
+```xml  
 <behaviors>  
      <behavior name="DerivativesCalculatorClientBehavior">  
       <clientCredentials>  
@@ -712,7 +712,7 @@ public void Receive(Message input)
   
  The role provider mechanism can actually be used independently of ASP.NET in any .NET application, including a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. The following sample configuration for a [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application shows how the use of an ASP.NET role provider is an option selected by means of the <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>.  
   
-```  
+```xml  
 <system.serviceModel>  
      <services>  
          <service name="Service.ResourceAccessServiceType"   
@@ -736,7 +736,7 @@ public void Receive(Message input)
   
  Authorization based on claims is accomplished by comparing a set of claims to the access requirements of the operation and, depending on the outcome of that comparison, granting or denying access to the operation. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], you can specify a class to use to run claims-based authorization, once again by assigning a value to the `ServiceAuthorizationManager` property of <xref:System.ServiceModel.Description.ServiceAuthorizationBehavior>.  
   
-```  
+```xml  
 <behaviors>  
      <behavior name='ServiceBehavior'>  
      <serviceAuthorization   

@@ -27,7 +27,7 @@ Specifies the current credentials for a peer node.
   
 ## Syntax  
   
-```  
+```xml  
 <peer>  
   <certificate/>  
   <peerAuthentication/>  

@@ -32,7 +32,7 @@ Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can spec
   
  The following XML code shows configuration for a client using message security and requiring a certificate to authenticate the client.  
   
-```  
+```xml  
 <security mode="Message">  
     <transport clientCredentialType="Windows" proxyCredentialType="None"  
         realm="" />  
@@ -67,7 +67,7 @@ Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can spec
   
 4.  Set the following attributes to appropriate values: `storeLocation`, `storeName`, `x509FindType`, and `findValue`, as shown in the following code. [!INCLUDE[crabout](../../../includes/crabout-md.md)] certificates, see [Working with Certificates](../../../docs/framework/wcf/feature-details/working-with-certificates.md).  
   
-    ```  
+    ```xml  
     <behaviors>  
        <endpointBehaviors>  
           <behavior name="endpointCredentialBehavior">  
@@ -84,7 +84,7 @@ Using [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service can spec
   
 5.  When configuring the client, specify the behavior by setting the `behaviorConfiguration` attribute of the `<endpoint>` element, as shown in the following code. The endpoint element is a child of the [\<client>](../../../docs/framework/configure-apps/file-schema/wcf/client.md) element. Also, specify the name of the binding configuration by setting the `bindingConfiguration` attribute to the binding for the client. If you are using a generated configuration file, the binding's name is automatically generated. In this example, the name is `"tcpBindingWithCredential"`.  
   
-    ```  
+    ```xml  
     <client>  
       <endpoint name =""  
                 address="net.tcp://contoso.com:8036/aloha"  

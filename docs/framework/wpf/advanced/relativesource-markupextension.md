@@ -25,19 +25,19 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
   
 ## XAML Attribute Usage  
   
-```  
+```xml  
 <Binding RelativeSource="{RelativeSource modeEnumValue}" .../>  
 ```  
   
 ## XAML Attribute Usage (nested within Binding extension)  
   
-```  
+```xml  
 <object property="{Binding RelativeSource={RelativeSource modeEnumValue} ...}" .../>  
 ```  
   
 ## XAML Object Element Usage  
   
-```  
+```xml  
 <Binding>  
   <Binding.RelativeSource>  
     <RelativeSource Mode="modeEnumValue"/>  
@@ -83,7 +83,7 @@ Specifies properties of a <xref:System.Windows.Data.RelativeSource> binding sour
   
  In the following example, the first <xref:System.Windows.Controls.TextBlock> in the items template displays the current number. The second <xref:System.Windows.Controls.TextBlock> binding is a <xref:System.Windows.Data.MultiBinding> that nominally has two <xref:System.Windows.Data.Binding> consistuents: the current record, and a binding that deliberately uses the previous data record by using `{RelativeSource PreviousData}`. Then, a converter on the <xref:System.Windows.Data.MultiBinding> calculates the difference and returns it to the binding.  
   
-```  
+```xml  
 <ListBox Name="fibolist">  
     <ListBox.ItemTemplate>  
         <DataTemplate>  

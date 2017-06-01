@@ -26,7 +26,7 @@ Specifies the security settings of a local service for this binding.
   
 ## Syntax  
   
-```  
+```xml  
 <security>  
    <localServiceSettings detectReplays="Boolean"  
       inactivityTimeout="TimeSpan"  

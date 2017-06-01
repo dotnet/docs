@@ -68,7 +68,7 @@ Time-critical functions can be derailed if the clock settings on two computers a
   
 7.  For a secure conversation, the security settings must occur at the bootstrap in the [\<secureConversationBootstrap>](../../../../docs/framework/configure-apps/file-schema/wcf/secureconversationbootstrap.md) element.  
   
-    ```  
+    ```xml  
     <bindings>  
       <customBinding>  
         <binding name="MaxClockSkewBinding">  

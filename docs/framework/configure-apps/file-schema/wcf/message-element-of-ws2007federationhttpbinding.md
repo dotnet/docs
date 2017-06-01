@@ -27,7 +27,7 @@ Defines settings for the message-level security for the [\<ws2007FederationHttpB
   
 ## Syntax  
   
-```  
+```xml  
 <ws2007FederationBinding>  
    <binding >  
       <security>  

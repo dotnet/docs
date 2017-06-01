@@ -83,7 +83,7 @@ The .NET Framework offers role-based security as well as code access security (C
 #### ConnectionString Syntax  
  The following example demonstrates how to use the `connectionStrings` element of a configuration file to allow only a specific connection string to be used. See [Connection Strings](../../../../docs/framework/data/adonet/connection-strings.md) for more information on storing and retrieving connection strings from configuration files.  
   
-```  
+```xml  
 <connectionStrings>  
   <add name="DatabaseConnection"   
     connectionString="Data Source=(local);Initial   
@@ -94,7 +94,7 @@ The .NET Framework offers role-based security as well as code access security (C
 #### KeyRestrictions Syntax  
  The following example enables the same connection string, enables the use of the `Encrypt` and `Packet``Size` connection string options, but restricts the use of any other connection string options.  
   
-```  
+```xml  
 <connectionStrings>  
   <add name="DatabaseConnection"   
     connectionString="Data Source=(local);Initial   
@@ -107,7 +107,7 @@ The .NET Framework offers role-based security as well as code access security (C
 #### KeyRestrictionBehavior with PreventUsage Syntax  
  The following example enables the same connection string and allows all other connection parameters except for `User Id`, `Password` and `Persist Security Info`.  
   
-```  
+```xml  
 <connectionStrings>  
   <add name="DatabaseConnection"   
     connectionString="Data Source=(local);Initial   
@@ -120,7 +120,7 @@ The .NET Framework offers role-based security as well as code access security (C
 #### KeyRestrictionBehavior with AllowOnly Syntax  
  The following example enables two connection strings that also contain `Initial Catalog`, `Connection Timeout`, `Encrypt`, and `Packet Size` parameters. All other connection string parameters are restricted.  
   
-```  
+```xml  
 <connectionStrings>  
   <add name="DatabaseConnection"   
     connectionString="Data Source=(local);Initial   
@@ -144,7 +144,7 @@ The .NET Framework offers role-based security as well as code access security (C
 ### Sample Permission Set  
  The following is a sample permission set for the .NET Framework Data Provider for SQL Server in a partially trusted scenario. For information on creating custom permission sets, see [NIB:Configuring Permission Sets Using Caspol.exe](http://msdn.microsoft.com/en-us/94e2625e-21ad-4038-af36-6d1f9df40a57).  
   
-```  
+```xml  
 <PermissionSet class="System.Security.NamedPermissionSet"  
   version="1"  
   Name="CustomLocalIntranet"  

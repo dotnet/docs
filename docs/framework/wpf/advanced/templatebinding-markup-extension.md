@@ -26,13 +26,13 @@ Links the value of a property in a control template to be the value of another p
   
 ## XAML Attribute Usage  
   
-```  
+```xml  
 <object property="{TemplateBinding sourceProperty}" .../>  
 ```  
   
 ## XAML Attribute Usage (for Setter property in template or style)  
   
-```  
+```xml  
 <Setter Property="propertyName" Value="{TemplateBinding sourceProperty}" .../>  
 ```  
   
@@ -56,7 +56,7 @@ Links the value of a property in a control template to be the value of another p
   
  `TemplateBinding` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.TemplateBindingExtension.Property%2A> property as a property=value pair:  
   
-```  
+```xml  
 <object property="{TemplateBinding Property=sourceProperty}" .../>  
 ```  
   

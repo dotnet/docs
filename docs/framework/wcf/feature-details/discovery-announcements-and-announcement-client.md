@@ -40,7 +40,7 @@ serviceHost.Description.Behaviors.Add(serviceDiscoveryBehavior);
   
  The behavior can be configured in the configuration file as well, as shown in the following example.  
   
-```  
+```xml  
 <services>  
   <service behaviorConfiguration="CalculatorBehavior" name="Microsoft.Samples.Discovery.CalculatorService">  
     <!--Add Discovery Endpoint-->  

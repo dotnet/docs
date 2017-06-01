@@ -30,7 +30,7 @@ Specifies authentication options for peer-to-peer clients.
   
 ## Syntax  
   
-```  
+```xml  
 <peerAuthentication  
 customCertificateValidatorType = "namespace.typeName, [,AssemblyName] [,Version=version number] [,Culture=culture] [,PublicKeyToken=token]"  
 certificateValidationMode = "ChainTrust/None/PeerTrust/PeerOrChainTrust/Custom"  
@@ -90,7 +90,7 @@ trustedStoreLocation="CurrentUser/LocalMachine"
 ## Example  
  The following code sets the certificate validation mode to `PeerOrChainTrust`.  
   
-```  
+```xml  
 <behaviors>  
  <endpointBehaviors>  
   <behavior name="MyEndpointBehavior">  

@@ -26,7 +26,7 @@ Specifies the credentials used to authenticate the client to a service.
   
 ## Syntax  
   
-```  
+```xml  
 <clientCredentials type="String"  
       supportInteractive="Boolean" >  
    <clientCertificate>  

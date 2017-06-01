@@ -24,7 +24,7 @@ Specifies the set of required claims for incoming security tokens.
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <claimTypeRequired>  

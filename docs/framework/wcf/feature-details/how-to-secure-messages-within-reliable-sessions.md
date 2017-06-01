@@ -55,7 +55,7 @@ This topic outlines the steps required to enable message-level security for mess
   
      The following example sets the mode to `Message`, and then sets the `clientCredentialType` attribute of the <`message`> element to `Certificate`.  
   
-    ```  
+    ```xml  
     <wsHttpBinding>  
     <binding name="MessageSecurity">  
         <security mode="Message" />  

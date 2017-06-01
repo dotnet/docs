@@ -36,7 +36,7 @@ Customizes Web request parameters.
   
 ## Syntax  
   
-```  
+```xml  
       <httpWebRequest  
   maximumResponseHeadersLength="size"  
   maximumErrorResponseLength="size"  
@@ -75,7 +75,7 @@ Customizes Web request parameters.
 ## Example  
  The following code example shows how to specify a larger than normal maximum header length.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <settings>  

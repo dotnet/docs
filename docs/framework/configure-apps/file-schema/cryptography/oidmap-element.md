@@ -36,7 +36,7 @@ Contains ASN.1 object identifier (OID) mappings to classes.
   
 ## Syntax  
   
-```  
+```xml  
 <oidMap>   
 </oidMap>  
 ```  
@@ -64,7 +64,7 @@ Contains ASN.1 object identifier (OID) mappings to classes.
 ## Example  
  The following example shows how to use the **\<oidMap>** element to contain a mapping of an OID for the RIPEMD-160 hash algorithm to an implementation of that hash algorithm.  
   
-```  
+```xml  
 <configuration>  
    <mscorlib>  
       <cryptographySettings>  

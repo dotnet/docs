@@ -67,7 +67,7 @@ public interface IFinancesContract : IDisposable
   
      In the COM+-hosted case, the named pipes transport is used by default, but an off-machine transport like TCP can be used instead.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
     <system.serviceModel>  

@@ -71,7 +71,7 @@ The classes in the <xref:System.Xml.Schema?displayProperty=fullName> namespace m
  [!code-csharp[XmlSchemaCreateExample#1](../../../../samples/snippets/csharp/VS_Snippets_Data/XmlSchemaCreateExample/CS/XmlSchemaCreateExample.cs#1)]
  [!code-vb[XmlSchemaCreateExample#1](../../../../samples/snippets/visualbasic/VS_Snippets_Data/XmlSchemaCreateExample/VB/XmlSchemaCreateExample.vb#1)]  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema xmlns:tns="http://www.tempuri.org" targetNamespace="http://www.tempuri.org" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
    <xs:element name="Customer">  

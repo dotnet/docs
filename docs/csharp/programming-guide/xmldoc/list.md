@@ -44,7 +44,7 @@ translation.priority.ht:
 # &lt;list&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <list type="bullet" | "number" | "table">  
     <listheader>  
         <term>term</term>  

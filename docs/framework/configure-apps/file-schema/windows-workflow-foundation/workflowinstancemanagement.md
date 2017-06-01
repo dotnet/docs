@@ -16,7 +16,7 @@ manager: "erikre"
 # &lt;workflowInstanceManagement&gt;
 A service behavior that enables you to specify settings that control how workflow instances are run, including persistence, unhandled Exception behavior and idle behavior.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -24,8 +24,14 @@ A service behavior that enables you to specify settings that control how workflo
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <workflowInstanceManagement authorizedWindowsGroup="" />    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <workflowInstanceManagement authorizedWindowsGroup="" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  

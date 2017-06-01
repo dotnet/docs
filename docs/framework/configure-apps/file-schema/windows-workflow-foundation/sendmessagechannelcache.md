@@ -16,7 +16,7 @@ manager: "erikre"
 # &lt;sendMessageChannelCache&gt;
 A service behavior that enables the customization of the cache sharing levels, the settings of the channel factory cache, and the settings of the channel cache for workflows that send messages to service endpoints using Send messaging activities.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -24,8 +24,21 @@ A service behavior that enables the customization of the cache sharing levels, t
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">       <sendMessageChannelCache allowUnsafeCaching="Boolean" >                   <channelSettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />           <factorySettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />       </sendMessageChannelCache>    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <sendMessageChannelCache allowUnsafeCaching="Boolean">
+        <channelSettings idleTimeout="TimeSpan"
+                         leaseTimeout="TimeSpan" 
+                         maxItemsInCache="Integer" />
+        <factorySettings idleTimeout="TimeSpan" 
+                         leaseTimeout="TimeSpan" 
+                         maxItemsInCache="Integer" />
+      </sendMessageChannelCache>
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  
@@ -60,7 +73,7 @@ A service behavior that enables the customization of the cache sharing levels, t
 ## Example  
  In a hosted workflow service, you can specify the factory cache and channel cache settings in the application configuration file. To do so, add a service behavior that contains the cache settings for the factory and channel cache and add this service behavior to your service. The following example shows the contents of a configuration file that contains the **MyChannelCacheBehavior**  service behavior with the custom factory cache and channel cache settings. This service behavior is added to the service through the **behaviorConfiguarion** attribute.  
   
-```  
+```xml  
 <configuration>    
   <system.serviceModel>  
     <!-- List of other config sections here -->   

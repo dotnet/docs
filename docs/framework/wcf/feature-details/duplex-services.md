@@ -66,7 +66,7 @@ binding.ClientBaseAddress = new Uri("http://localhost:8000/DuplexTestUsingCode/C
   
  The following sample code shows how to specify the client endpoint address in configuration.  
   
-```  
+```xml  
 <client>  
     <endpoint name ="ServerEndpoint"   
           address="http://localhost:12000/DuplexTestUsingConfig/Server"  

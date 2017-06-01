@@ -18,7 +18,7 @@ Represents a collection of queries that are used to track requests to cancel a c
   
  For more information on tracking profile queries, see [Tracking Profiles](../../../../../docs/framework/windows-workflow-foundation/tracking-profiles.md)  
   
- \<system.serviceModel>  
+\<system.serviceModel>  
 \<tracking>  
 \<trackingProfile>  
 \<workflow>  
@@ -26,8 +26,17 @@ Represents a collection of queries that are used to track requests to cancel a c
   
 ## Syntax  
   
-```vb  
-<tracking>   <trackingProfile name="Name">       <workflow>          <cancelRequestQueries>             <cancelRequestQuery activityName="String"                 childActivityName="String"/>          </cancelRequestQueries>       </workflow>   </trackingProfile></tracking>  
+```xml  
+<tracking>
+  <trackingProfile name="Name">
+    <workflow>
+      <cancelRequestQueries>
+        <cancelRequestQuery activityName="String" 
+                            childActivityName="String"/>
+      </cancelRequestQueries>
+    </workflow>
+  </trackingProfile>
+</tracking>  
 ```  
   
 ## Attributes and Elements  

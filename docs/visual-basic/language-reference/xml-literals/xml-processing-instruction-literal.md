@@ -42,7 +42,7 @@ A literal representing an <xref:System.Xml.Linq.XProcessingInstruction> object.
   
 ## Syntax  
   
-```  
+```xml  
 <?piName [ = piData ] ?>  
 ```  
   

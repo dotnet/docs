@@ -50,7 +50,7 @@ Provides a property and a method for accessing the computer's serial ports.
   
  **Class:** <xref:Microsoft.VisualBasic.Devices.Ports>  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](../../../visual-basic/language-reference/objects/includes/vbprvbruntime_md.md)]  
+ **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
 ## See Also  
  [My.Computer Object](../../../visual-basic/language-reference/objects/my-computer-object.md)

@@ -1,7 +1,7 @@
 ---
 title: "Async Return Types (C#) | Microsoft Docs"
 ms.custom: ""
-ms.date: "2015-07-20"
+ms.date: "2075-05-29"
 ms.prod: .net
 ms.reviewer: ""
 ms.suite: ""
@@ -23,313 +23,75 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Async Return Types (C#)
-Async methods have three possible return types: <xref:System.Threading.Tasks.Task%601>, <xref:System.Threading.Tasks.Task>, and void. In Visual Basic, the void return type is written as a [Sub](../../../../visual-basic/programming-guide/language-features/procedures/sub-procedures.md) procedure. For more information about async methods, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md).  
+Async methods can have the following return types:
+
+- <xref:System.Threading.Tasks.Task%601>, for an async method that returns a value. 
+ 
+-  <xref:System.Threading.Tasks.Task>, for an async method that performs an operation but returns no value.
+
+- `void`, for an event handler. 
+
+- Starting with C# 7, any type that has an accessible `GetAwaiter` method. The object returned by the `GetAwaiter` method must implement the <xref:System.Runtime.CompilerServices.ICriticalNotifyCompletion?displayProperty=fullName> interface.
   
- Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
+For more information about async methods, see [Asynchronous Programming with async and await (C#)](../../../../csharp/programming-guide/concepts/async/index.md).  
   
-> [!NOTE]
->  To run the example, you must have Visual Studio 2012 or newer and the .NET Framework 4.5 or newer installed on your computer.  
+Each return type is examined in one of the following sections, and you can find a full example that uses all three types at the end of the topic.  
   
 ##  <a name="BKMK_TaskTReturnType"></a> Task(T) Return Type  
- The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a[return](../../../../csharp/language-reference/keywords/return.md) (C#) statement in which the operand has type `TResult`.  
+The <xref:System.Threading.Tasks.Task%601> return type is used for an async method that contains a[return](../../../../csharp/language-reference/keywords/return.md) (C#) statement in which the operand has type `TResult`.  
   
- In the following example, the `TaskOfT_MethodAsync` async method contains a return statement that returns an integer. Therefore, the method declaration must specify a return type of `Task<int>`.  
+In the following example, the `GetLeisureHours` async method contains a `return` statement that returns an integer. Therefore, the method declaration must specify a return type of `Task<int>`.  The <xref:System.Threading.Tasks.Task.FromResult%601%2A> async method is a placeholder for an operation that returns a string.
   
-```csharp  
-// TASK<T> EXAMPLE  
-async Task<int> TaskOfT_MethodAsync()  
-{  
-    // The body of the method is expected to contain an awaited asynchronous  
-    // call.  
-    // Task.FromResult is a placeholder for actual work that returns a string.  
-    var today = await Task.FromResult<string>(DateTime.Now.DayOfWeek.ToString());  
+[!code-cs[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns1.cs)]
+
+When `GetLeisureHours` is called from within an await expression in the `ShowTodaysInfo` method, the await expression retrieves the integer value (the value of `leisureHours`) that's stored in the task returned by the `GetLeisureHours` method. For more information about await expressions, see [await](../../../../csharp/language-reference/keywords/await.md).  
   
-    // The method then can process the result in some way.  
-    int leisureHours;  
-    if (today.First() == 'S')  
-        leisureHours = 16;  
-    else  
-        leisureHours = 5;  
+You can better understand how this happens by separating the call to `GetLeisureHours` from the application of `await`, as the following code shows. A call to method `TaskOfT_MethodAsync` that isn't immediately awaited returns a `Task<int>`, as you would expect from the declaration of the method. The task is assigned to the `integerTask` variable in the example. Because `integerTask` is a <xref:System.Threading.Tasks.Task%601>, it contains a <xref:System.Threading.Tasks.Task%601.Result> property of type `TResult`. In this case, TResult represents an integer type. When `await` is applied to `integerTask`, the await expression evaluates to the contents of the <xref:System.Threading.Tasks.Task%601.Result%2A> property of `integerTask`. The value is assigned to the `result2` variable.  
   
-    // Because the return statement specifies an operand of type int, the  
-    // method must have a return type of Task<int>.  
-    return leisureHours;  
-}  
-```  
-  
- When `TaskOfT_MethodAsync` is called from within an await expression, the await expression retrieves the integer value (the value of `leisureHours`) that's stored in the task that's returned by `TaskOfT_MethodAsync`. For more information about await expressions, see [await](../../../../csharp/language-reference/keywords/await.md).  
-  
- The following code calls and awaits method `TaskOfT_MethodAsync`. The result is assigned to the `result1` variable.  
-  
-```csharp  
-// Call and await the Task<T>-returning async method in the same statement.  
-int result1 = await TaskOfT_MethodAsync();  
-```  
-  
- You can better understand how this happens by separating the call to `TaskOfT_MethodAsync` from the application of `await`, as the following code shows. A call to method `TaskOfT_MethodAsync` that isn't immediately awaited returns a `Task<int>`, as you would expect from the declaration of the method. The task is assigned to the `integerTask` variable in the example. Because `integerTask` is a <xref:System.Threading.Tasks.Task%601>, it contains a <xref:System.Threading.Tasks.Task%601.Result> property of type `TResult`. In this case, TResult represents an integer type. When `await` is applied to `integerTask`, the await expression evaluates to the contents of the <xref:System.Threading.Tasks.Task%601.Result%2A> property of `integerTask`. The value is assigned to the `result2` variable.  
-  
-> [!WARNING]
->  The <xref:System.Threading.Tasks.Task%601.Result%2A> property is a blocking property. If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available. In most cases, you should access the value by using `await` instead of accessing the property directly.  
-  
-```csharp  
-// Call and await in separate statements.  
-Task<int> integerTask = TaskOfT_MethodAsync();  
-  
-// You can do other work that does not rely on integerTask before awaiting.  
-textBox1.Text += String.Format("Application can continue working while the Task<T> runs. . . . \r\n");  
-  
-int result2 = await integerTask;  
-```  
-  
- The display statements in the following code verify that the values of the `result1` variable, the `result2` variable, and the `Result` property are the same. Remember that the `Result` property is a blocking property and shouldn't be accessed before its task has been awaited.  
-  
-```csharp  
-// Display the values of the result1 variable, the result2 variable, and  
-// the integerTask.Result property.  
-textBox1.Text += String.Format("\r\nValue of result1 variable:   {0}\r\n", result1);  
-textBox1.Text += String.Format("Value of result2 variable:   {0}\r\n", result2);  
-textBox1.Text += String.Format("Value of integerTask.Result: {0}\r\n", integerTask.Result);  
-```  
+> [!IMPORTANT]
+>  The <xref:System.Threading.Tasks.Task%601.Result%2A> property is a blocking property. If you try to access it before its task is finished, the thread that's currently active is blocked until the task completes and the value is available. In most cases, you should access the value by using `await` instead of accessing the property directly. <br/> The previous example retrieved the value of the <xref:System.Threading.Tasks.Task%601.Result%2A> property to block the main thread so that the `ShowTodaysInfo` method could finish execution before the application ended.  
+
+[!code-cs[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns1a.cs#1)]
   
 ##  <a name="BKMK_TaskReturnType"></a> Task Return Type  
- Async methods that don't contain a return statement or that contain a return statement that doesn't return an operand usually have a return type of <xref:System.Threading.Tasks.Task>. Such methods would be void-returning methods if they were written to run synchronously. If you use a `Task` return type for an async method, a calling method can use an await operator to suspend the caller's completion until the called async method has finished.  
+Async methods that don't contain a `return` statement or that contain a `return` statement that doesn't return an operand usually have a return type of <xref:System.Threading.Tasks.Task>. Such methods return `void` if they run synchronously. If you use a <xref:System.Threading.Tasks.Task> return type for an async method, a calling method can use an `await` operator to suspend the caller's completion until the called async method has finished.  
   
- In the following example, async method `Task_MethodAsync` doesn't contain a return statement. Therefore, you specify a return type of `Task` for the method, which enables `Task_MethodAsync` to be awaited. The definition of the `Task` type doesn't include a `Result` property to store a return value.  
+In the following example, the `WaitAndApologize` async method doesn't contain a `return` statement, so the method returns a <xref:System.Threading.Tasks.Task> object. This enables `WaitAndApologize` to be awaited. Note that the <xref:System.Threading.Tasks.Task> type doesn't include a `Result` property because it has no return value.  
+
+[!code-cs[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns2.cs)]  
   
-```csharp  
-// TASK EXAMPLE  
-async Task Task_MethodAsync()  
-{  
-    // The body of an async method is expected to contain an awaited   
-    // asynchronous call.  
-    // Task.Delay is a placeholder for actual work.  
-    await Task.Delay(2000);  
-    // Task.Delay delays the following line by two seconds.  
-    textBox1.Text += String.Format("\r\nSorry for the delay. . . .\r\n");  
+`WaitAndApologize` is awaited by using an await statement instead of an await expression, similar to the calling statement for a synchronous void-returning method. The application of an await operator in this case doesn't produce a value.  
   
-    // This method has no return statement, so its return type is Task.    
-}  
-```  
+As in the previous <xref:System.Threading.Tasks.Task%601> example, you can separate the call to `Task_MethodAsync` from the application of an await operator, as the following code shows. However, remember that a `Task` doesn't have a `Result` property, and that no value is produced when an await operator is applied to a `Task`.  
   
- `Task_MethodAsync` is called and awaited by using an await statement instead of an await expression, similar to the calling statement for a synchronous void-returning method. The application of an await operator in this case doesn't produce a value.  
+The following code separates calling the `WaitAndApologize` method from awaiting the task that the method returns.  
+ 
+[!code-cs[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns2a.cs#1)]  
+ 
+##  <a name="BKMK_VoidReturnType"></a> Void return type  
+You use the `void` return type in asynchronous event handlers, which require a `void` return type. For methods other than event handlers don't return a value, you should return a <xref:System.Threading.Tasks.Task> instead, because an async method that returns `void` can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.  
   
- The following code calls and awaits method `Task_MethodAsync`.  
+The caller of a void-returning async method can't catch exceptions that are thrown from the method, and such unhandled exceptions are likely to cause your application to fail. If an exception occurs in an async method that returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, the exception is stored in the returned task and is rethrown when the task is awaited. Therefore, make sure that any async method that can produce an exception has a return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> and that calls to the method are awaited.  
   
-```csharp  
-// Call and await the Task-returning async method in the same statement.  
-await Task_MethodAsync();  
-```  
+For more information about how to catch exceptions in async methods, see [try-catch](../../../../csharp/language-reference/keywords/try-catch.md) .  
   
- As in the previous <xref:System.Threading.Tasks.Task%601> example, you can separate the call to `Task_MethodAsync` from the application of an await operator, as the following code shows. However, remember that a `Task` doesn't have a `Result` property, and that no value is produced when an await operator is applied to a `Task`.  
+The following eample defines an async event handler.  
+ 
+[!code-cs[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-returns3.cs)]  
+ 
+## Generalized async return types and ValueTask<T>
+
+Starting with C# 7, an async method can return any type that has an accessible `GetAwaiter` method.
+ 
+Because <xref:System.Threading.Tasks.Task> and <xref:System.Threading.Tasks.Task%601> are reference types, memory allocation in performance-critical paths, particularly when allocations occur in tight loops, can adversely affect performance. Support for generalized return types means that you can return a lightweight value type instead of a reference type to avoid additional memory allocations. 
+
+.NET provides the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=fullName> structure as a light-weight implementation of a generalized task-returning value. To use the <xref:System.Threading.Tasks.ValueTask%601?displayProperty=fullName> type, you must add the `System.Threading.Tasks.Extensions` NuGet package to your project. The following example uses the <xref:System.Threading.Tasks.ValueTask%601> structure to retrieve the value of two dice rolls. 
   
- The following code separates calling `Task_MethodAsync` from awaiting the task that `Task_MethodAsync` returns.  
-  
-```csharp  
-// Call and await in separate statements.  
-Task simpleTask = Task_MethodAsync();  
-  
-// You can do other work that does not rely on simpleTask before awaiting.  
-textBox1.Text += String.Format("\r\nApplication can continue working while the Task runs. . . .\r\n");  
-  
-await simpleTask;  
-```  
-  
-##  <a name="BKMK_VoidReturnType"></a> Void Return Type  
- The primary use of the void return type is in event handlers, where a void return type is required. A void return also can be used to override void-returning methods or for methods that perform activities that can be categorized as "fire and forget." However, you should return a `Task` wherever possible, because a void-returning async method can't be awaited. Any caller of such a method must be able to continue to completion without waiting for the called async method to finish, and the caller must be independent of any values or exceptions that the async method generates.  
-  
- The caller of a void-returning async method can't catch exceptions that are thrown from the method, and such unhandled exceptions are likely to cause your application to fail. If an exception occurs in an async method that returns a <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601>, the exception is stored in the returned task, and rethrown when the task is awaited. Therefore, make sure that any async method that can produce an exception has a return type of <xref:System.Threading.Tasks.Task> or <xref:System.Threading.Tasks.Task%601> and that calls to the method are awaited.  
-  
- For more information about how to catch exceptions in async methods, see [try-catch](../../../../csharp/language-reference/keywords/try-catch.md) .  
-  
- The following code defines an async event handler.  
-  
-```csharp  
-// VOID EXAMPLE  
-private async void button1_Click(object sender, RoutedEventArgs e)  
-{  
-    textBox1.Clear();  
-  
-    // Start the process and await its completion. DriverAsync is a   
-    // Task-returning async method.  
-    await DriverAsync();  
-  
-    // Say goodbye.  
-    textBox1.Text += "\r\nAll done, exiting button-click event handler.";  
-}  
-```  
-  
-##  <a name="BKMK_Example"></a> Complete Example  
- The following Windows Presentation Foundation (WPF) project contains the code examples from this topic.  
-  
- To run the project, perform the following steps:  
-  
-1.  Start Visual Studio.  
-  
-2.  On the menu bar, choose **File**, **New**, **Project**.  
-  
-     The **New Project** dialog box opens.  
-  
-3.  In the **Installed**, **Templates** category, choose Visual C#, and then choose **Windows**. Choose **WPF Application** from the list of project types.  
-  
-4.  Enter `AsyncReturnTypes` as the name of the project, and then choose the **OK** button.  
-  
-     The new project appears in **Solution Explorer**.  
-  
-5.  In the Visual Studio Code Editor, choose the **MainWindow.xaml** tab.  
-  
-     If the tab is not visible, open the shortcut menu for MainWindow.xaml in **Solution Explorer**, and then choose **Open**.  
-  
-6.  In the **XAML** window of MainWindow.xaml, replace the code with the following code.  
-  
-    ```csharp  
-    <Window x:Class="AsyncReturnTypes.MainWindow"  
-            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  
-            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
-            Title="MainWindow" Height="350" Width="525">  
-        <Grid>  
-            <Button x:Name="button1" Content="Start" HorizontalAlignment="Left" Margin="214,28,0,0" VerticalAlignment="Top" Width="75" HorizontalContentAlignment="Center" FontWeight="Bold" FontFamily="Aharoni" Click="button1_Click"/>  
-            <TextBox x:Name="textBox1" Margin="0,80,0,0" TextWrapping="Wrap" FontFamily="Lucida Console"/>  
-  
-        </Grid>  
-    </Window>  
-    ```  
-  
-     A simple window that contains a text box and a button appears in the **Design** window of MainWindow.xaml.  
-  
-7.  In **Solution Explorer**, open the shortcut menu for MainWindow.xaml.cs, and then choose **View Code**.  
-  
-8.  Replace the code in MainWindow.xaml.cs with the following code.  
-  
-    ```csharp  
-    using System;  
-    using System.Collections.Generic;  
-    using System.Linq;  
-    using System.Text;  
-    using System.Threading.Tasks;  
-    using System.Windows;  
-    using System.Windows.Controls;  
-    using System.Windows.Data;  
-    using System.Windows.Documents;  
-    using System.Windows.Input;  
-    using System.Windows.Media;  
-    using System.Windows.Media.Imaging;  
-    using System.Windows.Navigation;  
-    using System.Windows.Shapes;  
-  
-    namespace AsyncReturnTypes  
-    {  
-        public partial class MainWindow : Window  
-        {  
-            public MainWindow()  
-            {  
-                InitializeComponent();  
-            }  
-  
-            // VOID EXAMPLE  
-            private async void button1_Click(object sender, RoutedEventArgs e)  
-            {  
-                textBox1.Clear();  
-  
-                // Start the process and await its completion. DriverAsync is a   
-                // Task-returning async method.  
-                await DriverAsync();  
-  
-                // Say goodbye.  
-                textBox1.Text += "\r\nAll done, exiting button-click event handler.";  
-            }  
-  
-            async Task DriverAsync()  
-            {  
-                // Task<T>   
-                // Call and await the Task<T>-returning async method in the same statement.  
-                int result1 = await TaskOfT_MethodAsync();  
-  
-                // Call and await in separate statements.  
-                Task<int> integerTask = TaskOfT_MethodAsync();  
-  
-                // You can do other work that does not rely on integerTask before awaiting.  
-                textBox1.Text += String.Format("Application can continue working while the Task<T> runs. . . . \r\n");  
-  
-                int result2 = await integerTask;  
-  
-                // Display the values of the result1 variable, the result2 variable, and  
-                // the integerTask.Result property.  
-                textBox1.Text += String.Format("\r\nValue of result1 variable:   {0}\r\n", result1);  
-                textBox1.Text += String.Format("Value of result2 variable:   {0}\r\n", result2);  
-                textBox1.Text += String.Format("Value of integerTask.Result: {0}\r\n", integerTask.Result);  
-  
-                // Task  
-                // Call and await the Task-returning async method in the same statement.  
-                await Task_MethodAsync();  
-  
-                // Call and await in separate statements.  
-                Task simpleTask = Task_MethodAsync();  
-  
-                // You can do other work that does not rely on simpleTask before awaiting.  
-                textBox1.Text += String.Format("\r\nApplication can continue working while the Task runs. . . .\r\n");  
-  
-                await simpleTask;  
-            }  
-  
-            // TASK<T> EXAMPLE  
-            async Task<int> TaskOfT_MethodAsync()  
-            {  
-                // The body of the method is expected to contain an awaited asynchronous  
-                // call.  
-                // Task.FromResult is a placeholder for actual work that returns a string.  
-                var today = await Task.FromResult<string>(DateTime.Now.DayOfWeek.ToString());  
-  
-                // The method then can process the result in some way.  
-                int leisureHours;  
-                if (today.First() == 'S')  
-                    leisureHours = 16;  
-                else  
-                    leisureHours = 5;  
-  
-                // Because the return statement specifies an operand of type int, the  
-                // method must have a return type of Task<int>.  
-                return leisureHours;  
-            }  
-  
-            // TASK EXAMPLE  
-            async Task Task_MethodAsync()  
-            {  
-                // The body of an async method is expected to contain an awaited   
-                // asynchronous call.  
-                // Task.Delay is a placeholder for actual work.  
-                await Task.Delay(2000);  
-                // Task.Delay delays the following line by two seconds.  
-                textBox1.Text += String.Format("\r\nSorry for the delay. . . .\r\n");  
-  
-                // This method has no return statement, so its return type is Task.    
-            }  
-        }  
-    }  
-    ```  
-  
-9. Choose the F5 key to run the program, and then choose the **Start** button.  
-  
-     The following output should appear.  
-  
-    ```  
-    Application can continue working while the Task<T> runs. . . .   
-  
-    Value of result1 variable:   5  
-    Value of result2 variable:   5  
-    Value of integerTask.Result: 5  
-  
-    Sorry for the delay. . . .  
-  
-    Application can continue working while the Task runs. . . .  
-  
-    Sorry for the delay. . . .  
-  
-    All done, exiting button-click event handler.  
-    ```  
-  
-## See Also  
- <xref:System.Threading.Tasks.Task.FromResult%2A>   
- [Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
- [Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)   
- [async](../../../../csharp/language-reference/keywords/async.md)   
- [await](../../../../csharp/language-reference/keywords/await.md)
+[!code-cs[return-value](../../../../../samples/snippets/csharp/programming-guide/async/async-valuetask.cs)]
+
+## See also  
+<xref:System.Threading.Tasks.Task.FromResult%2A>   
+[Walkthrough: Accessing the Web by Using async and await (C#)](../../../../csharp/programming-guide/concepts/async/walkthrough-accessing-the-web-by-using-async-and-await.md)   
+[Control Flow in Async Programs (C#)](../../../../csharp/programming-guide/concepts/async/control-flow-in-async-programs.md)   
+[async](../../../../csharp/language-reference/keywords/async.md)   
+[await](../../../../csharp/language-reference/keywords/await.md)

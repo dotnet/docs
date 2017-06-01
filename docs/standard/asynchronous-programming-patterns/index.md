@@ -72,13 +72,16 @@ public class MyClass
   
 For a comprehensive discussion of TAP, APM, and EAP, see the links provided in the next section.  
   
-## See also
-  
-| Title | Description |  
-| ----- | ----------- |  
-| [Asynchronous Programming Model (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) | Describes the legacy model that uses the <xref:System.IAsyncResult> interface to provide asynchronous behavior. This model is no longer recommended for new development. |  
-| [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md) | Describes the event-based legacy model for providing asynchronous behavior. This model is no longer recommended for new development. |  
+## Related topics
+
+| Title | Description |
+| ----- | ----------- |
+| [Asynchronous Programming Model (APM)](../../../docs/standard/asynchronous-programming-patterns/asynchronous-programming-model-apm.md) | Describes the legacy model that uses the <xref:System.IAsyncResult> interface to provide asynchronous behavior. This model is no longer recommended for new development. |
+| [Event-based Asynchronous Pattern (EAP)](../../../docs/standard/asynchronous-programming-patterns/event-based-asynchronous-pattern-eap.md) | Describes the event-based legacy model for providing asynchronous behavior. This model is no longer recommended for new development. |
 | [Task-based Asynchronous Pattern (TAP)](../../../docs/standard/asynchronous-programming-patterns/task-based-asynchronous-pattern-tap.md) | Describes the new asynchronous pattern based on the <xref:System.Threading.Tasks> namespace. This model is the recommended approach to asynchronous programming in the .NET Framework 4 and later versions. |
-| [Asynchronous programming in C#](~/docs/csharp/async.md) | |
-| [Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md) | |  
-| [Asynchronous Programming with Async and Await (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md) | |
+
+## See also
+
+[Asynchronous programming in C#](~/docs/csharp/async.md)   
+[Async Programming in F#](~/docs/fsharp/tutorials/asynchronous-and-concurrent-programming/async.md)   
+[Asynchronous Programming with Async and Await (Visual Basic)](~/docs/visual-basic/programming-guide/concepts/async/index.md)

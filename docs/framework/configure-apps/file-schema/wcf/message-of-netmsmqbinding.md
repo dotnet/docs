@@ -27,7 +27,7 @@ Defines the SOAP message security settings on this `netMsmqBinding` binding.
   
 ## Syntax  
   
-```  
+```xml  
 <netMsmqBinding>  
     <binding>  
       <security>  

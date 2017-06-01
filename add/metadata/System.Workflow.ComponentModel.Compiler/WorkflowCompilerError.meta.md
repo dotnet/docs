@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.Compiler.WorkflowCompilerError.#ctor(System.String,System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationException)
 author: "Erikre"
 ms.author: "erikre"

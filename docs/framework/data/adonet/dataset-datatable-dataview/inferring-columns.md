@@ -21,19 +21,19 @@ After ADO.NET has determined from an XML document which elements to infer as tab
 ## Migration and Backward Compatibility  
  The **ReadXml** method takes an argument of type **InferSchema**. This argument allows you to specify inference behavior compatible with previous versions. The available values for the **InferSchema** enumeration are shown in the following table.  
   
- <xref:System.Data.XmlReadMode>  
+ <xref:System.Data.XmlReadMode.InferSchema>  
  Provides backward compatibility by always inferring a simple type as <xref:System.String>.  
   
- <xref:System.Data.XmlReadMode>  
+ <xref:System.Data.XmlReadMode.InferTypedSchema>  
  Infers a strongly typed data type. Throws an exception if used with a <xref:System.Data.DataTable>.  
   
- <xref:System.Data.XmlReadMode>  
+ <xref:System.Data.XmlReadMode.IgnoreSchema>  
  Ignores any inline schema and reads data into the existing <xref:System.Data.DataSet> schema.  
   
 ## Attributes  
  As defined in [Inferring Tables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-tables.md), an element with attributes will be inferred as a table. The attributes of that element will then be inferred as columns for the table. The **ColumnMapping** property of the columns will be set to **MappingType.Attribute**, to ensure that the column names will be written as attributes if the schema is written back to XML. The values of the attributes are stored in a row in the table. For example, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1 attr1="value1" attr2="value2"/>  
 </DocumentElement>  
@@ -52,7 +52,7 @@ After ADO.NET has determined from an XML document which elements to infer as tab
 ## Elements Without Attributes or Child Elements  
  If an element has no child elements or attributes, it will be inferred as a column. The **ColumnMapping** property of the column will be set to **MappingType.Element**. The text for child elements is stored in a row in the table. For example, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1>  
     <ChildElement1>Text1</ChildElement1>  

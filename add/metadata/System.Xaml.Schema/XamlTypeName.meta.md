@@ -83,13 +83,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlTypeName.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Xaml.Schema.XamlTypeName.TypeArguments
 ms.technology: 
   - "dotnet-wpf"
@@ -98,13 +91,6 @@ manager: "martinek"
 
 ---
 uid: System.Xaml.Schema.XamlTypeName.#ctor(System.Xaml.XamlType)
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
-uid: System.Xaml.Schema.XamlTypeName.ToString
 ms.technology: 
   - "dotnet-wpf"
 manager: "martinek"

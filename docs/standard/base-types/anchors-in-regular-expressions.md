@@ -39,13 +39,13 @@ manager: "wpickett"
   
 <a name="Start"></a>   
 ## Start of String or Line: ^  
- The `^` anchor specifies that the following pattern must begin at the first character position of the string. If you use `^` with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option (see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)), the match must occur at the beginning of each line.  
+ The `^` anchor specifies that the following pattern must begin at the first character position of the string. If you use `^` with the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> option (see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md)), the match must occur at the beginning of each line.  
   
  The following example uses the `^` anchor in a regular expression that extracts information about the years during which some professional baseball teams existed. The example calls two overloads of the <xref:System.Text.RegularExpressions.Regex.Matches%2A?displayProperty=fullName> method:  
   
 -   The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29> overload finds only the first substring in the input string that matches the regular expression pattern.  
   
--   The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> overload with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> finds all five substrings.  
+-   The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29> overload with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> finds all five substrings.  
   
  [!code-csharp[Conceptual.RegEx.Language.Assertions#1](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/startofstring1.cs#1)]
  [!code-vb[Conceptual.RegEx.Language.Assertions#1](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/startofstring1.vb#1)]  
@@ -54,7 +54,7 @@ manager: "wpickett"
   
 |Pattern|Description|  
 |-------------|-----------------|  
-|`^`|Begin the match at the beginning of the input string (or the beginning of the line if the method is called with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option).|  
+|`^`|Begin the match at the beginning of the input string (or the beginning of the line if the method is called with the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> option).|  
 |`((\w+(\s?)){2,}`|Match one or more word characters followed either by zero or by one space exactly two times. This is the first capturing group. This expression also defines a second and third capturing group: The second consists of the captured word, and the third consists of the captured spaces.|  
 |`,\s`|Match a comma followed by a white-space character.|  
 |`(\w+\s\w+)`|Match one or more word characters followed by a space, followed by one or more word characters. This is the fourth capturing group.|  
@@ -70,9 +70,9 @@ manager: "wpickett"
 ## End of String or Line: $  
  The `$` anchor specifies that the preceding pattern must occur at the end of the input string, or before `\n` at the end of the input string.  
   
- If you use `$` with the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option, the match can also occur at the end of a line. Note that `$` matches `\n` but does not match `\r\n` (the combination of carriage return and newline characters, or CR/LF). To match the CR/LF character combination, include `\r?$` in the regular expression pattern.  
+ If you use `$` with the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> option, the match can also occur at the end of a line. Note that `$` matches `\n` but does not match `\r\n` (the combination of carriage return and newline characters, or CR/LF). To match the CR/LF character combination, include `\r?$` in the regular expression pattern.  
   
- The following example adds the `$` anchor to the regular expression pattern used in the example in the [Start of String or Line](#Start) section. When used with the original input string, which includes five lines of text, the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=fullName> method is unable to find a match, because the end of the first line does not match the `$` pattern. When the original input string is split into a string array, the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=fullName> method succeeds in matching each of the five lines. When the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method is called with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName>, no matches are found because the regular expression pattern does not account for the carriage return element (\u+000D). However, when the regular expression pattern is modified by replacing `$` with `\r?$`, calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> again finds five matches.  
+ The following example adds the `$` anchor to the regular expression pattern used in the example in the [Start of String or Line](#Start) section. When used with the original input string, which includes five lines of text, the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=fullName> method is unable to find a match, because the end of the first line does not match the `$` pattern. When the original input string is split into a string array, the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%29?displayProperty=fullName> method succeeds in matching each of the five lines. When the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method is called with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName>, no matches are found because the regular expression pattern does not account for the carriage return element (\u+000D). However, when the regular expression pattern is modified by replacing `$` with `\r?$`, calling the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method with the `options` parameter set to <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> again finds five matches.  
   
  [!code-csharp[Conceptual.RegEx.Language.Assertions#2](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/endofstring1.cs#2)]
  [!code-vb[Conceptual.RegEx.Language.Assertions#2](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/endofstring1.vb#2)]  
@@ -81,9 +81,9 @@ manager: "wpickett"
   
 <a name="StartOnly"></a>   
 ## Start of String Only: \A  
- The `\A` anchor specifies that a match must occur at the beginning of the input string. It is identical to the `^` anchor, except that `\A` ignores the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option. Therefore, it can only match the start of the first line in a multiline input string.  
+ The `\A` anchor specifies that a match must occur at the beginning of the input string. It is identical to the `^` anchor, except that `\A` ignores the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> option. Therefore, it can only match the start of the first line in a multiline input string.  
   
- The following example is similar to the examples for the `^` and `$` anchors. It uses the `\A` anchor in a regular expression that extracts information about the years during which some professional baseball teams existed. The input string includes five lines. The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method finds only the first substring in the input string that matches the regular expression pattern. As the example shows, the <xref:System.Text.RegularExpressions.RegexOptions> option has no effect.  
+ The following example is similar to the examples for the `^` and `$` anchors. It uses the `\A` anchor in a regular expression that extracts information about the years during which some professional baseball teams existed. The input string includes five lines. The call to the <xref:System.Text.RegularExpressions.Regex.Matches%28System.String%2CSystem.String%2CSystem.Text.RegularExpressions.RegexOptions%29?displayProperty=fullName> method finds only the first substring in the input string that matches the regular expression pattern. As the example shows, the <xref:System.Text.RegularExpressions.RegexOptions.Multiline> option has no effect.  
   
  [!code-csharp[Conceptual.RegEx.Language.Assertions#3](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regex.language.assertions/cs/startofstring2.cs#3)]
  [!code-vb[Conceptual.RegEx.Language.Assertions#3](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regex.language.assertions/vb/startofstring2.vb#3)]  
@@ -92,7 +92,7 @@ manager: "wpickett"
   
 <a name="EndOrNOnly"></a>   
 ## End of String or Before Ending Newline: \Z  
- The `\Z` anchor specifies that a match must occur at the end of the input string, or before `\n` at the end of the input string. It is identical to the `$` anchor, except that `\Z` ignores the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option. Therefore, in a multiline string, it can only match the end of the last line, or the last line before `\n`.  
+ The `\Z` anchor specifies that a match must occur at the end of the input string, or before `\n` at the end of the input string. It is identical to the `$` anchor, except that `\Z` ignores the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> option. Therefore, in a multiline string, it can only match the end of the last line, or the last line before `\n`.  
   
  Note that `\Z` matches `\n` but does not match `\r\n` (the CR/LF character combination). To match CR/LF, include `\r?\Z` in the regular expression pattern.  
   
@@ -105,7 +105,7 @@ manager: "wpickett"
   
 <a name="EndOnly"></a>   
 ## End of String Only: \z  
- The `\z` anchor specifies that a match must occur at the end of the input string. Like the `$` language element, `\z` ignores the <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=fullName> option. Unlike the `\Z` language element, `\z` does not match a `\n` character at the end of a string. Therefore, it can only match the last line of the input string.  
+ The `\z` anchor specifies that a match must occur at the end of the input string. Like the `$` language element, `\z` ignores the <xref:System.Text.RegularExpressions.RegexOptions.Multiline?displayProperty=fullName> option. Unlike the `\Z` language element, `\z` does not match a `\n` character at the end of a string. Therefore, it can only match the last line of the input string.  
   
  The following example uses the `\z` anchor in a regular expression that is otherwise identical to the example in the previous section, which extracts information about the years during which some professional baseball teams existed. The example tries to match each of five elements in a string array with the regular expression pattern `^((\w+(\s?)){2,}),\s(\w+\s\w+),(\s\d{4}(-(\d{4}|present))?,?)+\r?\z`. Two of the strings end with carriage return and line feed characters, one ends with a line feed character, and two end with neither a carriage return nor a line feed character. As the output shows, only the strings without a carriage return or line feed character match the pattern.  
   

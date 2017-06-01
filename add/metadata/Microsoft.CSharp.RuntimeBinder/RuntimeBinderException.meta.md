@@ -13,13 +13,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.CSharp.RuntimeBinder.RuntimeBinderException.#ctor(System.String,System.Exception)
 author: "stevehoag"
 ms.author: "shoag"

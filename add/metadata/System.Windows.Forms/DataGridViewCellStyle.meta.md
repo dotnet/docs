@@ -33,14 +33,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewCellStyle.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.DataGridViewCellStyle.DataSourceNullValue
 ms.technology: 
   - "dotnet-winforms"

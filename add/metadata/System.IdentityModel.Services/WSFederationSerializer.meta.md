@@ -47,14 +47,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.WSFederationSerializer.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.WSFederationSerializer.GetReferencedResult(System.String)
 ms.technology: 
   - "dotnet-standard"

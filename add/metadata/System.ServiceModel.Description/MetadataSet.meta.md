@@ -71,15 +71,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.MetadataSet.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.MetadataSet.ReadFrom(System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"

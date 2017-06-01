@@ -260,15 +260,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.IsolatedStorage.IsolatedStorageFile.Remove
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.IsolatedStorage.IsolatedStorageFile.GetMachineStoreForApplication
 ms.technology: 
   - "dotnet-standard"
@@ -314,15 +305,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.IsolatedStorage.IsolatedStorageFile.GetDirectoryNames
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.IsolatedStorage.IsolatedStorageFile.GetUserStoreForSite
 ms.technology: 
   - "dotnet-standard"
@@ -351,15 +333,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.IsolatedStorage.IsolatedStorageFile.OpenFile
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.IsolatedStorage.IsolatedStorageFile.GetFileNames
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

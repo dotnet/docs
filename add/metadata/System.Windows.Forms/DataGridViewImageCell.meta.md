@@ -147,15 +147,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridViewImageCell.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridViewImageCell.CreateAccessibilityInstance
 ms.technology: 
   - "dotnet-winforms"

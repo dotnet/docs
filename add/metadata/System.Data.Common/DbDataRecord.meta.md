@@ -206,15 +206,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetAttributes
 ms.technology: 
   - "dotnet-ado"
@@ -234,15 +225,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbDataRecord.GetDouble(System.Int32)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbDataRecord.System#ComponentModel#ICustomTypeDescriptor#GetEvents
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

@@ -48,7 +48,7 @@ The following scenario shows a client and service secured by [!INCLUDE[indigo1](
 ### Configuration  
  The following configuration can be used instead of the code. The service behavior element is used to specify a certificate that is used to authenticate the service to the client. The service element must specify the behavior using the `behaviorConfiguration` attribute. The binding element specifies that the client credential type is `None`, allowing anonymous clients to use the service.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  
@@ -106,7 +106,7 @@ The following scenario shows a client and service secured by [!INCLUDE[indigo1](
 ### Configuration  
  The following code configures the client.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

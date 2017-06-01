@@ -39,7 +39,7 @@ Specifies the description of a property.
   
 ## Syntax  
   
-```  
+```xml  
 <value>property-description</value>  
 ```  
   

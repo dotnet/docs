@@ -233,15 +233,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Numerics.Complex.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Numerics.Complex.op_Implicit
 ms.technology: 
   - "dotnet-standard"

@@ -510,24 +510,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XPath.XPathNavigator.MoveToNext
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XPath.XPathNavigator.AppendChild
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XPath.XPathNavigator.MoveToFirstAttribute
 ms.technology: 
   - "dotnet-standard"
@@ -565,15 +547,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XPath.XPathNavigator.PrependChild(System.Xml.XmlReader)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XPath.XPathNavigator.PrependChild
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -933,15 +906,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XPath.XPathNavigator.MoveToFirstNamespace
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XPath.XPathNavigator.PrependChild(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -1032,15 +996,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XPath.XPathNavigator.InsertAfter
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XPath.XPathNavigator.ValueAsBoolean
 ms.technology: 
   - "dotnet-standard"
@@ -1086,15 +1041,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XPath.XPathNavigator.InsertBefore
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XPath.XPathNavigator.MoveTo(System.Xml.XPath.XPathNavigator)
 ms.technology: 
   - "dotnet-standard"
@@ -1123,15 +1069,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XPath.XPathNavigator.XmlLang
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XPath.XPathNavigator.MoveToNextNamespace
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

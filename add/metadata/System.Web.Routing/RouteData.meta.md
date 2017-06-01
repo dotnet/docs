@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.RouteData.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Routing.RouteData.GetRequiredString(System.String)
 ms.technology: 
   - "dotnet-webforms"

@@ -341,15 +341,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Numerics.Vector3.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Numerics.Vector3.#ctor
 ms.technology: 
   - "dotnet-standard"

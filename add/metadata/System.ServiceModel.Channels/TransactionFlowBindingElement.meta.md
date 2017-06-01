@@ -89,15 +89,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.TransactionFlowBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.TransactionFlowBindingElement.BuildChannelFactory``1(System.ServiceModel.Channels.BindingContext)
 ms.technology: 
   - "dotnet-standard"

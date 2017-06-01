@@ -139,15 +139,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.EventLogTraceListener.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.EventLogTraceListener.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

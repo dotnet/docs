@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.SymbolStore.SymWriter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.SymbolStore.SymWriter.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-standard"
@@ -207,15 +198,6 @@ manager: "wpickett"
 
 ---
 uid: System.Diagnostics.SymbolStore.SymWriter.InitWriter(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.SymbolStore.SymWriter.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

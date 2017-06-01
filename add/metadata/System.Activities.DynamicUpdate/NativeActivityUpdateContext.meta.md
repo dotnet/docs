@@ -170,15 +170,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DynamicUpdate.NativeActivityUpdateContext.CreateBookmark
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DynamicUpdate.NativeActivityUpdateContext.GetLocation``1(System.Activities.Variable)
 ms.technology: 
   - "dotnet-standard"

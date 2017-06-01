@@ -176,7 +176,7 @@ To run the samples that are hosted by Internet Information Services (IIS), you m
   
 ## Sample Code  
   
-```  
+```xml  
 <html>  
    <body>  
        <form >  

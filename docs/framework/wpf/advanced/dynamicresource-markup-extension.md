@@ -26,13 +26,13 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
   
 ## XAML Attribute Usage  
   
-```  
+```xml  
 <object property="{DynamicResource key}" .../>  
 ```  
   
 ## XAML Property Element Usage  
   
-```  
+```xml  
 <object>  
   <object.property>  
     <DynamicResource ResourceKey="key" .../>  
@@ -68,7 +68,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
   
  `DynamicResource` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.DynamicResourceExtension.ResourceKey%2A> property as a property=value pair:  
   
-```  
+```xml  
 <object property="{DynamicResource ResourceKey=key}" .../>  
 ```  
   

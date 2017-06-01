@@ -67,10 +67,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Lifetime.ClientSponsor.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

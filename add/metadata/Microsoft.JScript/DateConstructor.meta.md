@@ -4,10 +4,6 @@ ms.author: "mikejo"
 ---
 
 ---
-uid: Microsoft.JScript.DateConstructor.Invoke
----
-
----
 uid: Microsoft.JScript.DateConstructor.UTC(System.Object,System.Object,System.Object,System.Object,System.Object,System.Object,System.Object)
 ms.author: "mikejo"
 ---

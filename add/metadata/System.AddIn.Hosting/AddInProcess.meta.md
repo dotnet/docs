@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.AddIn.Hosting.AddInProcess.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.AddIn.Hosting.AddInProcess.Shutdown
 ms.technology: 
   - "dotnet-standard"

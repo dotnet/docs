@@ -76,7 +76,7 @@ This section discusses how a data store provider can support the types and funct
   
  For example:  
   
-```  
+```xml  
 <Schema Namespace="Northwind" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:edm="http://schemas.microsoft.com/ado/2006/04/edm/ssdl" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">  
 ```  
   
@@ -106,7 +106,7 @@ public DbProviderManifest GetProviderManifest(string manifestToken);
 ### Provider Manifest Schema  
  The schema of information defined for each provider contains the static information to be consumed by metadata:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema elementFormDefault="qualified"  
    xmlns:xs="http://www.w3.org/2001/XMLSchema"  

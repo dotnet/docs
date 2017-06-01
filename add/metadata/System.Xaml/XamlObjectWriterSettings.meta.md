@@ -92,13 +92,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlObjectWriterSettings.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlObjectWriterSettings.AfterBeginInitHandler
 ms.technology: 
   - "dotnet-wpf"

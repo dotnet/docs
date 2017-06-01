@@ -38,7 +38,7 @@ manager: "erikre"
   
  You must also turn on ASP.NET compatibility mode in the Web.config file as shown in the following example.  
   
-```  
+```xml  
 <system.serviceModel>  
         <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />      
 </system.serviceModel>  
@@ -49,7 +49,7 @@ manager: "erikre"
   
  The cache profile name specified by the <xref:System.ServiceModel.Web.AspNetCacheProfileAttribute> identifies a cache profile that is added to your Web.config configuration file. The cache profile is defined with in a <`outputCacheSetting`> element as shown in the following configuration example.  
   
-```  
+```xml  
 <!-- ...  -->  
 <system.web>  
    <caching>  
@@ -68,7 +68,7 @@ manager: "erikre"
 ## SQL Cache Dependency  
  Web HTTP service responses can also be cached with a SQL cache dependency. If your WCF Web HTTP service depends on data stored in a SQL database, you may want to cache the service's response and invalidate the cached response when data in the SQL database table changes. This behavior is configured completely within the Web.config file. You must first define a connection string in the <`connectionStrings`> element.  
   
-```  
+```xml  
 <connectionStrings>  
     <add name="connectString"  
         connectionString="Data Source=MyService;Initial Catalog=MyTestDatabase;Integrated Security=True"  
@@ -78,7 +78,7 @@ manager: "erikre"
   
  Then you must enable SQL cache dependency within a <`caching`> element within the <`system.web`> element as shown in the following config example.  
   
-```  
+```xml  
 <system.web>  
    <caching>  
       <sqlCacheDependency enabled="true" pollTime="1000" >  
@@ -94,7 +94,7 @@ manager: "erikre"
   
  Here SQL cache dependency is enabled and a polling time of 1000 milliseconds is set. Each time the polling time elapses the database table is checked for updates. If changes are detected the contents of the cache are removed and the next time the service operation is invoked a new response is cached. Within the <`sqlCacheDependency`> element add the databases and reference the connection strings within the <`databases`> element as shown in the following example.  
   
-```  
+```xml  
 <system.web>  
    <caching>  
       <sqlCacheDependency enabled="true" pollTime="1000" >  
@@ -110,7 +110,7 @@ manager: "erikre"
   
  Next you must configure the output cache settings within the <`caching`> element as shown in the following example.  
   
-```  
+```xml  
 <system.web>  
 <caching>  
       <!-- ...  -->  

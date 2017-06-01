@@ -245,15 +245,6 @@ ms.technology:
 ---
 
 ---
-uid: System.Web.Routing.RouteCollection.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Routing.RouteCollection.GetVirtualPath(System.Web.Routing.RequestContext,System.String,System.Web.Routing.RouteValueDictionary)
 ms.technology: 
   - "dotnet-webforms"

@@ -69,7 +69,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
  An example of a `CreateSequence` message.  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <a:Action s:mustUnderstand="1">  
@@ -106,7 +106,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
  An example of a `CreateSequenceResponse` message.  
   
-```  
+```xml  
 <s:Envelope>  
   <s:Header>  
     <a:Action s:mustUnderstand="1">  
@@ -147,7 +147,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
  An example of a Sequence Header.  
   
-```  
+```xml  
 <wsrm:Sequence>  
   <wsrm:Identifier>  
     urn:uuid:addabbbf-60cb-44d3-8c5b-9e0841629a36  
@@ -162,7 +162,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
 ### AckRequested Header  
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] uses `AckRequested` Header as a keep-alive mechanism. [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not generate the optional `MessageNumber` element. Upon receiving a message with an `AckRequested` header that contains the `MessageNumber` element, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] ignores the `MessageNumber` element’s value, as shown in the following example.  
   
-```  
+```xml  
 <wsrm:AckRequested>  
   <wsrm:Identifier>  
     urn:uuid:addabbbf-60cb-44d3-8c5b-9e0841629a36  
@@ -177,7 +177,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
 -   B1402: When [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] must generate an acknowledgement prior to receiving any sequence messages (for example, to satisfy an `AckRequested` message), [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates a `SequenceAcknowledgement` header that contains the range 0-0, as shown in the following example.  
   
-    ```  
+    ```xml  
     <wsrm:SequenceAcknowledgement>  
       <wsrm:Identifier>  
         urn:uuid:addabbbf-60cb-44d3-8c5b-9e0841629a36  
@@ -197,7 +197,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
 -   B1503:When the service endpoint reaches its connection limit and cannot process new connections, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] generates an additional `CreateSequenceRefused` fault subcode, `netrm:ConnectionLimitReached`, as shown in the following example.  
   
-    ```  
+    ```xml  
     <s:Envelope>  
       <s:Header>  
         <wsa:Action>  
@@ -288,7 +288,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
      The following is an example.  
   
-    ```  
+    ```xml  
     <wsrm:RMAssertion>  
       <wsrm:InactivityTimeout Milliseconds="600000" />  
       <wsrm:AcknowledgementInterval Milliseconds="200" />  
@@ -304,7 +304,7 @@ This topic covers [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] implem
   
 -   B4002: When Reliable Messaging Flow Control is enabled, [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] does not require a `netrm:BufferRemaining` element to be present in `SequenceAcknowledgement` header, as shown in the following example.  
   
-    ```  
+    ```xml  
     <wsrm:SequenceAcknowledgement>  
       <wsrm:Identifier>  
         http://fabrikam123.com/abc  

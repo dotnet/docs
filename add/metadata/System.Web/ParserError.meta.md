@@ -31,14 +31,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ParserError.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.ParserError.Line
 ms.technology: 
   - "dotnet-webforms"

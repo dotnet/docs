@@ -135,9 +135,3 @@ uid: System.Net.WebProxy.#ctor(System.Uri,System.Boolean)
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.WebProxy.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

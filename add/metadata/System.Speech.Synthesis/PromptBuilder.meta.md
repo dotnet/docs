@@ -175,14 +175,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Synthesis.PromptBuilder.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Synthesis.PromptBuilder.AppendSsml(System.Xml.XmlReader)
 ms.technology: 
   - "dotnet-standard"
@@ -295,14 +287,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Synthesis.PromptBuilder.StartSentence
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Synthesis.PromptBuilder.Culture
 ms.technology: 
   - "dotnet-standard"
@@ -352,22 +336,6 @@ manager: "ghogen"
 
 ---
 uid: System.Speech.Synthesis.PromptBuilder.AppendAudio(System.String)
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Synthesis.PromptBuilder.AppendBreak
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
-uid: System.Speech.Synthesis.PromptBuilder.StartParagraph
 ms.technology: 
   - "dotnet-standard"
 ms.author: "kbridge"

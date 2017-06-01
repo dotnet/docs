@@ -293,13 +293,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.HScrollBarArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.HScrollBarArray.CursorChanged
 author: "stevehoag"
 ms.author: "shoag"

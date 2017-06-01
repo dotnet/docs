@@ -33,7 +33,7 @@ manager: "mbaldwin"
   
 4.  Set the `authenticationMode` attribute to one of the values described below. For example, the following code sets the mode to `AnonymousForCertificate`.  
   
-    ```  
+    ```xml  
     <bindings>  
       <customBinding>  
         <binding name="SecureCustomBinding">  
@@ -84,7 +84,7 @@ manager: "mbaldwin"
 >  In order to use this authentication mode, the service account must be associated with a service principal name (SPN). To do this, run the service under the NETWORK SERVICE account or the LOCAL SYSTEM account. Alternatively, use the SetSpn.exe tool to create an SPN for the service account. In either case, the client must use the correct SPN in the [\<servicePrincipalName>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceprincipalname.md) element, or by using the <xref:System.ServiceModel.EndpointAddress> constructor. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Service Identity and Authentication](../../../../docs/framework/wcf/feature-details/service-identity-and-authentication.md).  
   
 > [!NOTE]
->  When the `Kerberos` authentication mode is used, the <xref:System.Security.Principal.TokenImpersonationLevel> and <xref:System.Security.Principal.TokenImpersonationLevel> impersonation levels are not supported.  
+>  When the `Kerberos` authentication mode is used, the <xref:System.Security.Principal.TokenImpersonationLevel.Anonymous> and <xref:System.Security.Principal.TokenImpersonationLevel.Delegation> impersonation levels are not supported.  
   
 ### KerberosOverTransport  
  With this authentication mode, the client authenticates to the service using a Kerberos ticket. The Kerberos token appears at the SOAP layer as an endorsing supporting token; that is, a token that signs the message signature. The service is authenticated using an X.509 certificate at the transport layer. The security binding element is a `TransportSecurityBindingElement` returned by the <xref:System.ServiceModel.Channels.SecurityBindingElement.CreateKerberosOverTransportBindingElement%2A> method. Alternatively, set the `authenticationMode` attribute to `KerberosOverTransport`.  

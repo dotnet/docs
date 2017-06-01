@@ -95,7 +95,7 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
 ## Setting Options with an XML File  
  By using the `/parameters` switch, you can specify a single XML file that sets various options. The options you can set depend on how you are using the XSD.exe tool. Choices include generating schemas, generating code files, or generating code files that include `DataSet` features. For example, you can set the `<assembly\>` element to the name of an executable (.exe) or type library (.dll) file when generating a schema, but not when generating a code file. The following XML shows how to use the `<generateSchemas\>` element with a specified executable:  
   
-```  
+```xml  
 <!-- This is in a file named GenerateSchemas.xml. -->  
 <xsd xmlns='http://microsoft.com/dotnet/tools/xsd/'>  
 <generateSchemas>  
@@ -110,7 +110,7 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
   
  On the other hand, if you are generating a schema for a single type found in the assembly, you can use the following XML:  
   
-```  
+```xml  
 <!-- This is in a file named GenerateSchemaFromType.xml. -->  
 <xsd xmlns='http://microsoft.com/dotnet/tools/xsd/'>  
 <generateSchemas>  
@@ -134,7 +134,7 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
   
  To generate a code file, use the `<generateClasses\>` element. The following example generates a code file. Note that two attributes are also shown that allow you to set the programming language and namespace of the generated file.  
   
-```  
+```xml  
 <xsd xmlns='http://microsoft.com/dotnet/tools/xsd/'>  
 <generateClasses language='VB' namespace='Microsoft.Serialization.Examples'/>  
 </xsd>  
@@ -184,7 +184,7 @@ xsd {file.dll | file.exe} [/outputdir:directory] [/type:typename [...]][/paramet
   
  There are attributes that you can set on the top level `<xsd\>` element. These options can be used with any of the child elements (`<generateSchemas\>`, `<generateClasses\>` or `<generateDataSet\>`). The following XML code generates code for an element named "IDItems" in the output directory named "MyOutputDirectory".  
   
-```  
+```xml  
 <xsd xmlns='http://microsoft.com/dotnet/tools/xsd/' output='MyOutputDirectory'>  
 <generateClasses>  
 <element>IDItems</element>  

@@ -114,15 +114,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Rotation3DAnimation.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Rotation3DAnimation.By
 ms.technology: 
   - "dotnet-wpf"

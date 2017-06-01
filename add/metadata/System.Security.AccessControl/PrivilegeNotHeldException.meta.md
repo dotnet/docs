@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.AccessControl.PrivilegeNotHeldException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.AccessControl.PrivilegeNotHeldException.PrivilegeName
 ms.technology: 
   - "dotnet-standard"

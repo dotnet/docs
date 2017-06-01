@@ -251,19 +251,7 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.UdpClient.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Sockets.UdpClient.BeginSend
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Sockets.UdpClient.#ctor
 ms.author: "bobdel"
 manager: "markl"
 ---

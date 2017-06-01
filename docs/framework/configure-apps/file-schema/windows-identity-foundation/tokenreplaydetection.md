@@ -24,7 +24,7 @@ Enables token replay detection and specifies the expiration time for tokens.
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <tokenReplayDetection enabled=xs:boolean expirationPeriod=TimeSpan>  

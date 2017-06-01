@@ -27,7 +27,7 @@ Defines properties that control authentication parameters for the HTTP transport
   
 ## Syntax  
   
-```  
+```xml  
 <basicHttpBinding>  
     <binding>  
         <security  
@@ -91,7 +91,7 @@ Defines properties that control authentication parameters for the HTTP transport
 ## Example  
  The following example demonstrates the use of SSL transport security with the basic binding. By default, the basic binding supports HTTP communication.  
   
-```  
+```xml  
 <system.serviceModel>  
    <services>  
       <service   

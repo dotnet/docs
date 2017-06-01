@@ -66,7 +66,7 @@ Specifies whether the runtime distributes managed threads across all CPU groups.
 ## Example  
  The following example shows how to enable support for multiple CPU groups.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <Thread_UseAllCpuGroups enabled="true"/>  

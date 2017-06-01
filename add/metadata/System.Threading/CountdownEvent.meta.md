@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.CountdownEvent.Wait
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.CountdownEvent.Wait(System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -161,33 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.CountdownEvent.TryAddCount
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CountdownEvent.Signal
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CountdownEvent.AddCount
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.CountdownEvent.AddCount
 ms.technology: 
   - "dotnet-standard"
@@ -225,24 +189,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.CountdownEvent.Wait(System.TimeSpan,System.Threading.CancellationToken)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CountdownEvent.Reset
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CountdownEvent.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

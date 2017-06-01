@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionary.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlDictionary.Empty
 ms.technology: 
   - "dotnet-standard"

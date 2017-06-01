@@ -44,14 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintQueueException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Printing.PrintQueueException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"

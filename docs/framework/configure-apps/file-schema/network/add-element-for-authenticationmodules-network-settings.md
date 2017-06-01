@@ -73,7 +73,7 @@ Adds an authentication module to the application.
 ## Example  
  The following code example enables the default authentication modules. You should replace the values for Version and PublicKeyToken with the correct values for the specified module.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
         <authenticationModules>  

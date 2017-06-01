@@ -29,7 +29,7 @@ Specifies the encoding and message versioning used for SOAP Message Transmission
   
 ## Syntax  
   
-```  
+```xml  
 <mtomMessageEncoding   
    maxBufferSize="Integer"  
       maxReadPoolSize="Integer"  
@@ -70,7 +70,7 @@ Specifies the encoding and message versioning used for SOAP Message Transmission
   
 ## Example  
   
-```  
+```xml  
 <mtomMessageEncoding maxReadPoolSize="211"  
     maxWritePoolSize="2132"  
     messageVersion="Soap11Addressing10"  

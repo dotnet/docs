@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.X509Certificates.X509Chain.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.X509Certificates.X509Chain.ChainPolicy
 ms.technology: 
   - "dotnet-standard"
@@ -81,15 +72,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.X509Certificates.X509Chain.ChainElements
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.X509Certificates.X509Chain.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

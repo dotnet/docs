@@ -44,14 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.EmissiveMaterial.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Media3D.EmissiveMaterial.Brush
 ms.technology: 
   - "dotnet-wpf"

@@ -142,15 +142,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Freezable.Freeze
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Freezable.GetAsFrozenCore(System.Windows.Freezable)
 ms.technology: 
   - "dotnet-wpf"

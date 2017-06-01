@@ -122,15 +122,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.Design.PropertyTab.Dispose
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Design.PropertyTab.GetProperties(System.Object)
 ms.technology: 
   - "dotnet-winforms"

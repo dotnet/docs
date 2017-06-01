@@ -55,14 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.TemplateEditingVerb.Dispose
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.TemplateEditingVerb.#ctor(System.String,System.Int32)
 ms.technology: 
   - "dotnet-webforms"

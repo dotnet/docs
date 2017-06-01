@@ -27,7 +27,7 @@ manager: "wpickett"
   
  A result tree fragment is created as a result of using an `<xsl:variable>` or `<xsl:param>` element in a specific manner in a style sheet. The syntax for the `variable` and `parameter` elements is as follows:  
   
-```  
+```xml  
 <xsl:param name=Qname select= XPath Expression >  
     template body  
 </xsl:param>  
@@ -49,7 +49,7 @@ manager: "wpickett"
   
  To iterate over the returned nodes of a result tree fragment, an <xref:System.Xml.XPath.XPathNavigator> is used. The following code sample shows how to create a result tree fragment within a style sheet by calling the function with a parameter `fragment`, which contains XML.  
   
-```  
+```xml  
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
                 xmlns:user="http://www.adventure-works.com"  
@@ -77,7 +77,7 @@ manager: "wpickett"
   
  Here is another sample showing a variable, which is in Rich Text Format (RTF), and hence, a type of result tree fragment, that is not converted to a node set. Instead, it is passed to a script function, and the <xref:System.Xml.XPath.XPathNavigator> is used to navigate over the nodes.  
   
-```  
+```xml  
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
         xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
         xmlns:user="urn:books"  
@@ -121,7 +121,7 @@ manager: "wpickett"
   
 ## Output  
   
-```  
+```xml  
 <first_book xmlns:user="urn:books">Book1</first_book>  
 ```  
   
@@ -135,7 +135,7 @@ manager: "wpickett"
   
  In the following example, `$var` is a variable that is a node tree in the style sheet. The for-each statement, combined with the `node-set` function, allows the user to iterate over this tree as a node set.  
   
-```  
+```xml  
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
                 xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
                 xmlns:user="http://www.adventure-works.com"  
@@ -155,7 +155,7 @@ manager: "wpickett"
   
  Here is another example of a variable that is in RTF, and hence of type result tree fragment, that is converted to a node set before being passed to a script function as XPathNodeIterator.  
   
-```  
+```xml  
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
         xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
         xmlns:user="urn:books"  
@@ -194,7 +194,7 @@ manager: "wpickett"
   
  The following is the result of transforming XML with this style sheet:  
   
-```  
+```xml  
 <books xmlns:user="urn:books">Book1Book2Book3Book4</books>  
 ```  
   

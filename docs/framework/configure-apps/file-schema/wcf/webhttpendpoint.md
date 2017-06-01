@@ -18,14 +18,21 @@ manager: "erikre"
 # &lt;webHttpEndpoint&gt;
 This configuration element defines a standard endpoint with a fixed [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md) binding that automatically adds the [\<webHttp>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttp.md) behavior. Use this endpoint when writing a REST service.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<standardEndpoints>  
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
-    <standardEndpoints>       <webHttpEndpoint>           <standardEndpoint             automaticFormatSelectionEnabled="String"              defaultOutgoingResponseFormat="Xml/Json"             helpEnabled="Boolean"             webEndpointType="String"/>             </webHttpEndpoint>     </standardEndpoints>  
+  <standardEndpoints>
+    <webHttpEndpoint>
+      <standardEndpoint automaticFormatSelectionEnabled="String" 
+                        defaultOutgoingResponseFormat="Xml/Json" 
+                        helpEnabled="Boolean" 
+                        webEndpointType="String"/>
+    </webHttpEndpoint>
+  </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

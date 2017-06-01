@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.UpdateFileInfo
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.#ctor
 ms.technology: 
   - "dotnet-standard"
@@ -153,15 +144,6 @@ manager: "wpickett"
 
 ---
 uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.Validate
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: Microsoft.Build.Tasks.Deployment.ManifestUtilities.Manifest.ResolveFiles
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -28,7 +28,7 @@ Specifies an X.509 certificate used to sign and encrypt messages.
   
 ## Syntax  
   
-```  
+```xml  
 <certificate findValue = "String"   
 storeLocation = "CurrentUser/LocalMachine"  
 storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  
@@ -63,7 +63,7 @@ X509FindType="FindByThumbPrint/FindBySubjectName/FindBySubjectDistinguishedName/
 ## Example  
  The following code specifies how to find an appropriate X.509 certificate and a custom validation type in the `<authentication>` element.  
   
-```  
+```xml  
 <serviceBehaviors>  
  <behavior name="myServiceBehavior">  
   <clientCertificate>  

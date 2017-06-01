@@ -62,15 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.EditingContext.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.EditingContext.Services
 ms.technology: 
   - "dotnet-standard"

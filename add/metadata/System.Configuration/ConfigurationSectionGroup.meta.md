@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationSectionGroup.ForceDeclaration
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConfigurationSectionGroup.Name
 ms.technology: 
   - "dotnet-webforms"

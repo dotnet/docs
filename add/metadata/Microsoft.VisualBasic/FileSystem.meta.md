@@ -97,13 +97,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.FileSystem.Dir
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.FileSystem.FileGet(System.Int32,System.String@,System.Int64,System.Boolean)
 author: "stevehoag"
 ms.author: "shoag"
@@ -426,13 +419,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.FileSystem.TAB
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.FileSystem.Input(System.Int32,System.DateTime@)
 author: "stevehoag"
 ms.author: "shoag"
@@ -518,13 +504,6 @@ manager: "wpickett"
 
 ---
 uid: Microsoft.VisualBasic.FileSystem.FilePut(System.Int32,System.DateTime,System.Int64)
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: Microsoft.VisualBasic.FileSystem.CurDir
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

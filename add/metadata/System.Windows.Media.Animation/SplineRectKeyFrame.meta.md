@@ -25,14 +25,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineRectKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.SplineRectKeyFrame.#ctor(System.Windows.Rect,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"

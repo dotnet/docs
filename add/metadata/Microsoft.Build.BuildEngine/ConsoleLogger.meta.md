@@ -143,12 +143,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.BuildEngine.ConsoleLogger.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.BuildEngine.ConsoleLogger.CustomEventHandler(System.Object,Microsoft.Build.Framework.CustomBuildEventArgs)
 ms.author: "susanno"
 manager: "douge"

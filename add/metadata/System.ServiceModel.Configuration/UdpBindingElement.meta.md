@@ -76,13 +76,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.UdpBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Configuration.UdpBindingElement.MaxBufferPoolSize
 ms.technology: 
   - "dotnet-standard"

@@ -227,15 +227,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.ComponentModel.BindingList`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.BindingList`1.AllowNew
 ms.technology: 
   - "dotnet-standard"

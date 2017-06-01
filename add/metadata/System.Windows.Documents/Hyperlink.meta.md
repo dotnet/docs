@@ -114,15 +114,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.Hyperlink.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Documents.Hyperlink.RequestNavigateEvent
 ms.technology: 
   - "dotnet-wpf"

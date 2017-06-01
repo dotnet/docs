@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.InOutArgument`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.InOutArgument`1.FromVariable(System.Activities.Variable{`0})
 ms.technology: 
   - "dotnet-standard"

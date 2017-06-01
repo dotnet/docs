@@ -41,13 +41,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.VerifyNameControl.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.VerifyNameControl.Flag
 author: "BrucePerlerMS"
 ms.author: "bruceper"

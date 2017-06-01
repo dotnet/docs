@@ -32,7 +32,7 @@ The following code example shows how to modify the computer configuration file, 
   
 ## Example  
   
-```  
+```xml  
 <system.net>  
     …………  
     <settings>  

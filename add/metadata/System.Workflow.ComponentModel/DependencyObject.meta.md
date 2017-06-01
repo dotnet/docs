@@ -167,13 +167,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.DependencyObject.Dispose
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.DependencyObject.InitializeProperties
 author: "Erikre"
 ms.author: "erikre"

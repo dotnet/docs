@@ -47,7 +47,7 @@ The `raceOnRCWCleanup` managed debugging assistant (MDA) is activated when the c
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <raceOnRCWCleanup/>  

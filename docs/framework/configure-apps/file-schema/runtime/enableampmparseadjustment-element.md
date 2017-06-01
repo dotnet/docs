@@ -25,7 +25,7 @@ Determines whether date and time parsing methods use an adjusted set of rules to
   
 ## Syntax  
   
-```  
+```xml  
 <EnableAmPmParseAdjustment enabled="0"|"1" />  
 ```  
   

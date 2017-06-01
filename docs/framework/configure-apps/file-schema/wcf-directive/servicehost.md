@@ -53,7 +53,7 @@ CodeBehind = "CodeBehind"%>
   
  To use you own custom service host factory instead of the default factory, just provide the type name in the [@ServiceHost](../../../../../docs/framework/configure-apps/file-schema/wcf-directive/servicehost.md) directive as follows:  
   
-```  
+```xml  
 <% @ServiceHost Factory="DerivedFactory" Service="MyService" %>  
 ```  
   

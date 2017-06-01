@@ -143,15 +143,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataTableCollection.Add
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataTableCollection.Clear
 ms.technology: 
   - "dotnet-ado"

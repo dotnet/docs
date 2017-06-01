@@ -80,7 +80,7 @@ public class Sample
   
  Given the following XML:  
   
-```  
+```xml  
 <book genre='novel' ISBN='1-861001-57-5'>  
 <title>Pride And Prejudice</title>  
 </book>  
@@ -110,7 +110,7 @@ doc.DocumentElement.SetAttributeNode(attr);
   
  **Output**  
   
-```  
+```xml  
 <book genre="novel" ISBN="1-861001-57-5" publisher="WorldWide Publishing">  
 <title>Pride And Prejudice</title>  
 </book>  

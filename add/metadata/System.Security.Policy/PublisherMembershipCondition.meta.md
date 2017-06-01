@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.PublisherMembershipCondition.ToXml
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.PublisherMembershipCondition.#ctor(System.Security.Cryptography.X509Certificates.X509Certificate)
 ms.technology: 
   - "dotnet-standard"

@@ -135,17 +135,17 @@ This walkthrough shows you how to use the Windows Forms layout features, such as
   
 4.  Select `elementHost2`.  
   
-5.  In the **Properties** window, set the value of the <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>.  
+5.  In the **Properties** window, set the value of the <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
      The `elementHost2` control resizes to fill the cell.  
   
 6.  Select the <xref:System.Windows.Forms.TableLayoutPanel> control.  
   
-7.  Set the value of its <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>.  
+7.  Set the value of its <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Top>.  
   
 8.  Select `elementHost3`.  
   
-9. Set the value of its <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle>.  
+9. Set the value of its <xref:System.Windows.Forms.Control.Dock%2A> property to <xref:System.Windows.Forms.DockStyle.Fill>.  
   
      The `elementHost3` control resizes to fill the remaining space on the form.  
   

@@ -125,15 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.SymmetricAlgorithm.CreateDecryptor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.SymmetricAlgorithm.Key
 ms.technology: 
   - "dotnet-standard"
@@ -287,34 +278,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.SymmetricAlgorithm.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.SymmetricAlgorithm.Clear
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.CreateEncryptor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.SymmetricAlgorithm.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

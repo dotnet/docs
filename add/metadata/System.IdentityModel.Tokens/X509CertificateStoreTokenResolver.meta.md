@@ -23,14 +23,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.X509CertificateStoreTokenResolver.TryResolveTokenCore
 ms.technology: 
   - "dotnet-standard"

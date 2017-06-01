@@ -28,7 +28,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data contract model 
   
  This is serialized to XML as follows:  
   
-```  
+```xml  
 <MyDataContract xmlns="http://schemas.contoso.com">  
     <myDataMember>  
         <myElement xmlns="" myAttribute="myValue">  
@@ -60,7 +60,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data contract model 
   
  When serialized, the resulting XML is similar to the following code.  
   
-```  
+```xml  
 <MyDataContract xmlns="http://schemas.contoso.com">  
   <myDataMember myAttribute="myValue">  
      <!--myComment-->  
@@ -97,7 +97,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data contract model 
   
  A data member of type `XmlElement` is mapped to an element defined using the following anonymous type.  
   
-```  
+```xml  
 <xsd:complexType>  
    <xsd:sequence>  
       <xsd:any minOccurs="0" processContents="lax" />  
@@ -107,7 +107,7 @@ The [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] data contract model 
   
  A data member of type Array of `XmlNode` is mapped to an element defined using the following anonymous type.  
   
-```  
+```xml  
 <xsd:complexType mixed="true">  
    <xsd:sequence>  
       <xsd:any minOccurs="0" maxOccurs="unbounded" processContents="lax" />  

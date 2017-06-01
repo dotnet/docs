@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.TimeZoneNotFoundException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.TimeZoneNotFoundException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

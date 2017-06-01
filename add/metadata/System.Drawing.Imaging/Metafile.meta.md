@@ -404,15 +404,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Imaging.Metafile.GetMetafileHeader
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Imaging.Metafile.#ctor(System.String,System.IntPtr,System.Drawing.Rectangle,System.Drawing.Imaging.MetafileFrameUnit)
 ms.technology: 
   - "dotnet-standard"

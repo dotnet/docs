@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Concurrent.ConcurrentQueue`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Concurrent.ConcurrentQueue`1.Enqueue(`0)
 ms.technology: 
   - "dotnet-standard"

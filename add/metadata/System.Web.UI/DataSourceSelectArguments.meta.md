@@ -71,14 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.DataSourceSelectArguments.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.DataSourceSelectArguments.#ctor(System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-webforms"

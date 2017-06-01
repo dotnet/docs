@@ -98,15 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService.Deserialize(System.ComponentModel.Design.Serialization.SerializationStore)
 ms.technology: 
   - "dotnet-standard"

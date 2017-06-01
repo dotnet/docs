@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.DefaultBindingPropertyAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.DefaultBindingPropertyAttribute.Equals(System.Object)
 ms.technology: 
   - "dotnet-standard"

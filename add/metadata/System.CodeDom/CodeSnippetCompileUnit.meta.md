@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeSnippetCompileUnit.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeSnippetCompileUnit.Value
 ms.technology: 
   - "dotnet-standard"

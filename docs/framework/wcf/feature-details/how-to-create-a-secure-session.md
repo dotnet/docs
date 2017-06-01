@@ -39,7 +39,7 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
   
      The following code example uses configuration to specify a binding named `wsHttpBinding_Calculator` that uses the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md), message security, and secure sessions.  
   
-    ```  
+    ```xml  
     <bindings>  
       <WSHttpBinding>  
        <binding name = "wsHttpBinding_Calculator">  
@@ -67,7 +67,7 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
   
      The following code example uses configuration to specify a custom binding that messages using a secure session.  
   
-    ```  
+    ```xml  
     <bindings>  
       <!-- configure a custom binding -->  
       <customBinding>  
@@ -81,7 +81,7 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
     </bindings>  
     ```  
   
-     The following code example creates a custom binding that uses the <xref:System.ServiceModel.Configuration.AuthenticationMode> authentication mode to bootstrap a secure session.  
+     The following code example creates a custom binding that uses the <xref:System.ServiceModel.Configuration.AuthenticationMode.MutualCertificate> authentication mode to bootstrap a secure session.  
   
      [!code-csharp[c_CreateSecureSession#2](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_createsecuresession/cs/secureservice.cs#2)]
      [!code-vb[c_CreateSecureSession#2](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_createsecuresession/vb/secureservice.vb#2)]  

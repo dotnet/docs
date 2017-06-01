@@ -25,7 +25,7 @@ The sample uses the <xref:System.ServiceModel.Syndication.SyndicationFeed> class
 ## Sample XML  
  The following XML example shows an Atom 1.0 entry with an additional `<in-reply-to>` extension element.  
   
-```  
+```xml  
 <entry>  
     <id>tag:example.org,2005:1,2</id>  
     <title type="text">Another response to the original</title>  

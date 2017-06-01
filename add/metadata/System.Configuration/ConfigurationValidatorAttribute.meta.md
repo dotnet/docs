@@ -15,14 +15,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.ConfigurationValidatorAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.ConfigurationValidatorAttribute.ValidatorInstance
 ms.technology: 
   - "dotnet-webforms"

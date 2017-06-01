@@ -36,7 +36,7 @@ Provides a set of regular expressions that describe addresses that do not use a 
   
 ## Syntax  
   
-```  
+```xml  
       <bypasslist>   
 </bypasslist>  
 ```  
@@ -74,7 +74,7 @@ Provides a set of regular expressions that describe addresses that do not use a 
 ## Example  
  The following code example adds two addresses to the bypass list. The first bypasses the proxy for all servers in the contoso.com domain; the second bypasses the proxy for all servers whose IP addresses begin with 192.168.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <defaultProxy>  

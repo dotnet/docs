@@ -15,14 +15,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Media.Animation.RectKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.RectKeyFrame.InterpolateValueCore(System.Windows.Rect,System.Double)
 ms.technology: 
   - "dotnet-wpf"

@@ -143,15 +143,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Collections.Generic.SynchronizedKeyedCollection`2.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Collections.Generic.SynchronizedKeyedCollection`2.Contains(`0)
 ms.technology: 
   - "dotnet-standard"

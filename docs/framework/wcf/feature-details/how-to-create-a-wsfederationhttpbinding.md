@@ -49,7 +49,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], the <xref:System.Ser
   
 1.  Create an instance of the <xref:System.ServiceModel.WSFederationHttpBinding>.  
   
-2.  Set the <xref:System.ServiceModel.WSFederationHttpSecurity.Mode%2A> property to <xref:System.ServiceModel.WSFederationHttpSecurityMode> or <xref:System.ServiceModel.WSFederationHttpSecurityMode> as required. If an algorithm suite other than <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256%2A> is required, set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.AlgorithmSuite%2A> property to a value taken from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>.  
+2.  Set the <xref:System.ServiceModel.WSFederationHttpSecurity.Mode%2A> property to <xref:System.ServiceModel.WSFederationHttpSecurityMode> or <xref:System.ServiceModel.WSFederationHttpSecurityMode.Message> as required. If an algorithm suite other than <xref:System.ServiceModel.Security.SecurityAlgorithmSuite.Basic256%2A> is required, set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.AlgorithmSuite%2A> property to a value taken from <xref:System.ServiceModel.Security.SecurityAlgorithmSuite>.  
   
 3.  Set the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.NegotiateServiceCredential%2A> property as appropriate.  
   

@@ -191,18 +191,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Sockets.TcpClient.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
-uid: System.Net.Sockets.TcpClient.Dispose
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Sockets.TcpClient.ReceiveTimeout
 ms.author: "bobdel"
 manager: "markl"

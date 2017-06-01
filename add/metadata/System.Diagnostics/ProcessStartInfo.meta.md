@@ -206,15 +206,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.ProcessStartInfo.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.ProcessStartInfo.ErrorDialogParentHandle
 ms.technology: 
   - "dotnet-standard"

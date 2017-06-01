@@ -45,14 +45,6 @@ ms.technology:
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.NamedImage.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.NamedImage.#ctor(System.String,System.Drawing.Image)
 ms.technology: 
   - "dotnet-webforms"

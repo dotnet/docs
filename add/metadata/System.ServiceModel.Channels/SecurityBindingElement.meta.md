@@ -260,15 +260,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateCertificateOverTransportBindingElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.SecurityBindingElement.CreateUserNameForSslBindingElement
 ms.technology: 
   - "dotnet-standard"
@@ -306,15 +297,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Channels.SecurityBindingElement.OptionalOperationSupportingTokenParameters
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationOverTransportBindingElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -449,24 +431,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateDuplexBindingElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateMutualCertificateBindingElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.SecurityBindingElement.CreateSecureConversationBindingElement(System.ServiceModel.Channels.SecurityBindingElement,System.Boolean,System.ServiceModel.Security.ChannelProtectionRequirements)
 ms.technology: 
   - "dotnet-standard"
@@ -522,24 +486,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Channels.SecurityBindingElement.CreateIssuedTokenForCertificateBindingElement(System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateSspiNegotiationBindingElement
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Channels.SecurityBindingElement.CreateUserNameForSslBindingElement
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

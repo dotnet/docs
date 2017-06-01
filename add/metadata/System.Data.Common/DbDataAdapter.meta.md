@@ -132,15 +132,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbDataAdapter.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbDataAdapter.Update(System.Data.DataRow[])
 ms.technology: 
   - "dotnet-ado"

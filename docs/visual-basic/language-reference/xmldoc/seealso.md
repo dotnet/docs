@@ -39,7 +39,7 @@ Specifies a link that appears in the See Also section.
   
 ## Syntax  
   
-```  
+```xml  
 <seealso cref="member"/>  
 ```  
   

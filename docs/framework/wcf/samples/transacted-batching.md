@@ -54,7 +54,7 @@ This sample demonstrates how to batch transacted reads by using Message Queuing 
   
 2.  If your computer is not part of a domain or does not have active directory integration installed, turn off transport security by setting the authentication mode and protection level to `None` as shown in the following sample configuration:  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
       <behaviors>  
         <serviceBehaviors>  
@@ -233,7 +233,7 @@ public class Orders
   
  The batching behavior and its configuration are specified in the service application configuration.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <appSettings>  

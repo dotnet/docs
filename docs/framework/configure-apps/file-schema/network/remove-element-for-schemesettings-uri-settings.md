@@ -30,7 +30,7 @@ Removes a scheme setting for a scheme name.
   
 ## Syntax  
   
-```  
+```xml  
       <remove   
    <name = "http|https"/>  
 />  
@@ -75,7 +75,7 @@ Removes a scheme setting for a scheme name.
 ## Example  
  The following code example shows a configuration used by the <xref:System.Uri> class that removes any scheme settings for the http scheme.  
   
-```  
+```xml  
 <configuration>  
   <uri>  
     <schemeSettings>  

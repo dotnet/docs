@@ -303,14 +303,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.MetaTable.GetQuery
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.DynamicData.MetaTable.Columns
 ms.technology: 
   - "dotnet-webforms"

@@ -79,14 +79,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SamlConditions.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SamlConditions.#ctor(System.DateTime,System.DateTime,System.Collections.Generic.IEnumerable{System.IdentityModel.Tokens.SamlCondition})
 ms.technology: 
   - "dotnet-standard"

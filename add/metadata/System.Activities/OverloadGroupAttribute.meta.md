@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.OverloadGroupAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.OverloadGroupAttribute.GroupName
 ms.technology: 
   - "dotnet-standard"

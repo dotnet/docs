@@ -87,14 +87,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.ParseChildrenAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.ParseChildrenAttribute.Default
 ms.technology: 
   - "dotnet-webforms"

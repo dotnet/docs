@@ -46,10 +46,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Channels.BinaryServerFormatterSinkProvider.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

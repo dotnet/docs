@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.LookupBindingPropertiesAttribute.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.LookupBindingPropertiesAttribute.LookupMember
 ms.technology: 
   - "dotnet-standard"

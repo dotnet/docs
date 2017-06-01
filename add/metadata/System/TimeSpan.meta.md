@@ -611,15 +611,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.TimeSpan.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.TimeSpan.Equals(System.TimeSpan)
 ms.technology: 
   - "dotnet-standard"

@@ -24,7 +24,7 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel.services>  
   <federationConfiguration>  
     <cookieHandler name=xs:string  
@@ -84,7 +84,7 @@ Configures the <xref:System.IdentityModel.Services.CookieHandler> that the <xref
 > [!WARNING]
 >  In this example, HTTPS is not required to write session cookies. This is because the `requireSsl` attribute on the `<cookieHandler>` element is set to `false`. This setting is not recommended for most production environments as it may present a security risk.  
   
-```  
+```xml  
 <cookieHandler requireSsl="false" />  
 ```  
   

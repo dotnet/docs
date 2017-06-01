@@ -80,15 +80,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Protocols.SoapRpcMethodAttribute.RequestNamespace
 ms.technology: 
   - "dotnet-webforms"

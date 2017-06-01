@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.PersonalizationDictionary.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.PersonalizationDictionary.System#Collections#IDictionary#Remove(System.Object)
 ms.technology: 
   - "dotnet-webforms"

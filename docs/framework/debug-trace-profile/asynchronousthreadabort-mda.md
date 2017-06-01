@@ -56,7 +56,7 @@ The `asynchronousThreadAbort` managed debugging assistant (MDA) is activated whe
 
 ## Configuration
 
-```
+```xml
 <mdaConfig>
   <assistants>
     <asynchronousThreadAbort />

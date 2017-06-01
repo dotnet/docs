@@ -194,14 +194,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.GlyphRun.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.GlyphRun.BuildGeometry
 ms.technology: 
   - "dotnet-wpf"

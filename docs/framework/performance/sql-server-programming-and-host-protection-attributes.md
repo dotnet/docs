@@ -37,7 +37,7 @@ The ability to load and execute managed code in a SQL Server host requires meeti
   
 -   Could lead to destabilization of the server process itself.  
   
- SQL Server disallows the use of a type or member that has a <xref:System.Security.Permissions.HostProtectionAttribute> that specifies a <xref:System.Security.Permissions.HostProtectionResource> value of <xref:System.Security.Permissions.HostProtectionResource>, <xref:System.Security.Permissions.HostProtectionResource>, <xref:System.Security.Permissions.HostProtectionResource>, or <xref:System.Security.Permissions.HostProtectionResource>. This prevents the assemblies from calling members that enable sharing state, perform synchronization, might cause a resource leak on termination, or affect the integrity of the SQL Server process.  
+ SQL Server disallows the use of a type or member that has a <xref:System.Security.Permissions.HostProtectionAttribute> that specifies a <xref:System.Security.Permissions.HostProtectionResource> value of <xref:System.Security.Permissions.HostProtectionResource.SharedState>, <xref:System.Security.Permissions.HostProtectionResource.Synchronization>, <xref:System.Security.Permissions.HostProtectionResource.MayLeakOnAbort>, or <xref:System.Security.Permissions.HostProtectionResource.ExternalProcessMgmt>. This prevents the assemblies from calling members that enable sharing state, perform synchronization, might cause a resource leak on termination, or affect the integrity of the SQL Server process.  
   
 ### Disallowed Types and Members  
  The following table identifies types and members whose <xref:System.Security.Permissions.HostProtectionResource> values are disallowed by SQL Server.  

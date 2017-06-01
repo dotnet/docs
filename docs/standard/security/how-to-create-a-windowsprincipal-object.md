@@ -31,7 +31,7 @@ There are two ways to create a <xref:System.Security.Principal.WindowsPrincipal>
   
 ### To create a WindowsPrincipal object for repeated validation  
   
-1.  Call the <xref:System.AppDomain.SetPrincipalPolicy%2A> method on the <xref:System.AppDomain> object that is returned by the static <xref:System.AppDomain.CurrentDomain%2A?displayProperty=fullName> property, passing the method a <xref:System.Security.Principal.PrincipalPolicy> enumeration value that indicates what the new policy should be. Supported values are <xref:System.Security.Principal.PrincipalPolicy>, <xref:System.Security.Principal.PrincipalPolicy>, and <xref:System.Security.Principal.PrincipalPolicy>. The following code demonstrates this method call.  
+1.  Call the <xref:System.AppDomain.SetPrincipalPolicy%2A> method on the <xref:System.AppDomain> object that is returned by the static <xref:System.AppDomain.CurrentDomain%2A?displayProperty=fullName> property, passing the method a <xref:System.Security.Principal.PrincipalPolicy> enumeration value that indicates what the new policy should be. Supported values are <xref:System.Security.Principal.PrincipalPolicy.NoPrincipal>, <xref:System.Security.Principal.PrincipalPolicy.UnauthenticatedPrincipal>, and <xref:System.Security.Principal.PrincipalPolicy.WindowsPrincipal>. The following code demonstrates this method call.  
   
     ```csharp  
     AppDomain.CurrentDomain.SetPrincipalPolicy(  

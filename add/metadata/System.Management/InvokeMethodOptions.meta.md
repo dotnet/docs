@@ -25,10 +25,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "jillfra"
 ---
-
----
-uid: System.Management.InvokeMethodOptions.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----

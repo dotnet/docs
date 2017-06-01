@@ -35,7 +35,7 @@ manager: "jhubbard"
  Resolution of this conflict includes discovering which members of the object are in conflict, and then deciding what you want to do about it.  
   
 > [!NOTE]
->  Only members mapped as <xref:System.Data.Linq.Mapping.UpdateCheck> or <xref:System.Data.Linq.Mapping.UpdateCheck> participate in optimistic concurrency checks. No check is performed for members marked <xref:System.Data.Linq.Mapping.UpdateCheck>. For more information, see <xref:System.Data.Linq.Mapping.UpdateCheck>.  
+>  Only members mapped as <xref:System.Data.Linq.Mapping.UpdateCheck.Always> or <xref:System.Data.Linq.Mapping.UpdateCheck.WhenChanged> participate in optimistic concurrency checks. No check is performed for members marked <xref:System.Data.Linq.Mapping.UpdateCheck.Never>. For more information, see <xref:System.Data.Linq.Mapping.UpdateCheck>.  
   
 ## Example  
  For example, in the following scenario, User1 starts to prepare an update by querying the database for a row. User1 receives a row with values of Alfreds, Maria, and Sales.  

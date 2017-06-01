@@ -37,7 +37,7 @@ This option specifies which codepage to use during compilation if the required p
   
 ## Syntax  
   
-```  
+```console  
 /codepage:id  
 ```  
   

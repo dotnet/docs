@@ -28,7 +28,7 @@ Specifies an X.509 certificate to use for signing and encrypting messages for pe
   
 ## Syntax  
   
-```  
+```xml  
 <certificate findValue="String"   
   
 storeLocation="LocalMachine/CurrentUser"  
@@ -66,7 +66,7 @@ storeLocation="LocalMachine/CurrentUser"
 ## Example  
  The following code specifies how to find the certificate used in a peer-to-peer scenario.  
   
-```  
+```xml  
 <behaviors>  
  <endpointBehaviors>  
   <behavior name="MyEndpointBehavior">  

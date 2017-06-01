@@ -37,7 +37,7 @@ When sending large messages using [!INCLUDE[indigo1](../../../../includes/indigo
 ### Message Structure  
  The chunking channel assumes the following message structure for messages to be chunked:  
   
-```  
+```xml  
 <soap:Envelope ...>  
   <!-- headers -->  
   <soap:Body>  
@@ -76,7 +76,7 @@ interface ITestService
   
 ### Start Message  
   
-```  
+```xml  
 <s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"   
             xmlns:s="http://www.w3.org/2003/05/soap-envelope">  
   <s:Header>  
@@ -122,7 +122,7 @@ the data to be chunked.
   
 ### Chunk Message  
   
-```  
+```xml  
 <s:Envelope   
   xmlns:a="http://www.w3.org/2005/08/addressing"   
   xmlns:s="http://www.w3.org/2003/05/soap-envelope">  
@@ -164,7 +164,7 @@ kfSr2QcBlkHTvQ==
   
 ### End Message  
   
-```  
+```xml  
 <s:Envelope xmlns:a="http://www.w3.org/2005/08/addressing"   
             xmlns:s="http://www.w3.org/2003/05/soap-envelope">  
   <s:Header>  

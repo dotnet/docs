@@ -272,15 +272,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.ECDiffieHellmanCng.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.ECDiffieHellmanCng.GenerateKey(System.Security.Cryptography.ECCurve)
 author: "mairaw"
 ms.author: "mairaw"

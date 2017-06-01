@@ -24,7 +24,7 @@ Normally when hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] 
 > [!NOTE]
 >  Each <`add`> element must specify a service or a factory attribute. Specifying both service and factory attributes is allowed.  
   
-```  
+```xml  
 <serviceHostingEnvironment>  
   <serviceActivations>  
     <add relativeAddress="MyServiceAddress" service="Service" factory="MyServiceHostFactory"/>  

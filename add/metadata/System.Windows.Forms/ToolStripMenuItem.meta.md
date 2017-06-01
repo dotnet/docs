@@ -332,15 +332,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.ToolStripMenuItem.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.ToolStripMenuItem.Dispose(System.Boolean)
 ms.technology: 
   - "dotnet-winforms"

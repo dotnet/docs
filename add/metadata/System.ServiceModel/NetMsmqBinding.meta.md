@@ -107,15 +107,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.NetMsmqBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.NetMsmqBinding.ReaderQuotas
 ms.technology: 
   - "dotnet-standard"

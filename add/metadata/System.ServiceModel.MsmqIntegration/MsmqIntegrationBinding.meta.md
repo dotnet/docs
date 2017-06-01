@@ -62,15 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.MsmqIntegration.MsmqIntegrationBinding.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

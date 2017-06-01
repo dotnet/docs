@@ -1274,15 +1274,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Page.Validate
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Page.GetPostBackEventReference(System.Web.UI.Control)
 ms.technology: 
   - "dotnet-webforms"

@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Statements.DoWhile.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Statements.DoWhile.#ctor(System.Activities.Activity{System.Boolean})
 ms.technology: 
   - "dotnet-standard"

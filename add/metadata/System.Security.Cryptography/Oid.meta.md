@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Oid.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Oid.Value
 ms.technology: 
   - "dotnet-standard"

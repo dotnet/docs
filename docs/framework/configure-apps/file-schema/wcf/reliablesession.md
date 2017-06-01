@@ -29,7 +29,7 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
   
 ## Syntax  
   
-```  
+```xml  
 <reliableSession acknowledgementInterval="TimeSpan"  
         flowControlEnabled="Boolean"   
     inactivityTimeout="TimeSpan"  
@@ -75,7 +75,7 @@ Defines setting for WS-Reliable Messaging. When this element is added to a custo
 ## Example  
  The following example demonstrates how to configure a custom binding with various transport and message encoding elements, especially enabling reliable sessions, which maintains client state and specifies in-order delivery assurances. This feature is configured in the application configuration files for the client and service. The example show the service configuration.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.serviceModel>  

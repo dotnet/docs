@@ -48,13 +48,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Immutable.ImmutableQueue`1.Dequeue
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Immutable.ImmutableQueue`1.Clear
 author: "mairaw"
 ms.author: "mairaw"

@@ -32,10 +32,3 @@ ms.technology:
   - "dotnet-wpf"
 manager: "leannef"
 ---
-
----
-uid: System.Windows.Xps.XpsPackagingException.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----

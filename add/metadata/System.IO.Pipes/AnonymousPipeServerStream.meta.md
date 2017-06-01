@@ -80,15 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Pipes.AnonymousPipeServerStream.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.Pipes.AnonymousPipeServerStream.#ctor(System.IO.Pipes.PipeDirection,Microsoft.Win32.SafeHandles.SafePipeHandle,Microsoft.Win32.SafeHandles.SafePipeHandle)
 ms.technology: 
   - "dotnet-standard"

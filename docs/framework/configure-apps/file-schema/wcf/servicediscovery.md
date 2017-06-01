@@ -26,8 +26,23 @@ Specifies the discoverability of service endpoints.
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <serviceDiscovery>        <announcementEndpoints>              <endpoint name="String"                        kind="Type" />        </announcementEndpoints>        <discoveryEndpoints>              <endpoint name="String"                        kind="Type" />        </discoveryEndpoints>      </serviceDiscovery>    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <serviceDiscovery>
+        <announcementEndpoints>
+          <endpoint name="String" 
+                    kind="Type" />
+        </announcementEndpoints>
+        <discoveryEndpoints>
+          <endpoint name="String" 
+                    kind="Type" />
+        </discoveryEndpoints>
+      </serviceDiscovery>
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  
@@ -55,7 +70,7 @@ Specifies the discoverability of service endpoints.
 ## Example  
  The following configuration example specifies that the CalculatorService to be discoverable, and optionally specifies the announcement endpoint to be used.  
   
-```  
+```xml  
 <services>  
   <service name="CalculatorService"  
            behaviorConfiguration="CalculatorServiceBehavior">  

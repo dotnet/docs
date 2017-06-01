@@ -197,15 +197,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataTable.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataTable.LoadDataRow(System.Object[],System.Data.LoadOption)
 ms.technology: 
   - "dotnet-ado"
@@ -782,15 +773,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataTable.Select
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataTable.ReadXmlSchema(System.String)
 ms.technology: 
   - "dotnet-ado"
@@ -1042,15 +1024,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.DataTable.OnRowDeleting(System.Data.DataRowChangeEventArgs)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.DataTable.GetChanges
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

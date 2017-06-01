@@ -12,7 +12,3 @@ ms.author: "mikejo"
 uid: Microsoft.JScript.EnumeratorConstructor.Invoke
 ms.author: "mikejo"
 ---
-
----
-uid: Microsoft.JScript.EnumeratorConstructor.Invoke
----

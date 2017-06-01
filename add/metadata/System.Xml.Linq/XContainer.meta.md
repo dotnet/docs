@@ -152,24 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XContainer.Descendants
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XContainer.Elements
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XContainer.Elements
 ms.technology: 
   - "dotnet-standard"

@@ -23,12 +23,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.ListControlDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.ListControlDesigner.ActionLists
 ms.technology: 
   - "dotnet-webforms"
@@ -102,14 +96,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.Design.WebControls.ListControlDesigner.UseDataSourcePickerActionList
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.Design.WebControls.ListControlDesigner.OnDataSourceChanged
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "riande"

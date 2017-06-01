@@ -62,13 +62,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.ExternalDataEventArgs.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.ExternalDataEventArgs.WaitForIdle
 author: "Erikre"
 ms.author: "erikre"

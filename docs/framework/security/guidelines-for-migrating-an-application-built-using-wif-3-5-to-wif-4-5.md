@@ -72,13 +72,13 @@ manager: "mbaldwin"
 ### WIF Configuration Changes  
  Many of the changes in the configuration file have been caused by namespace updates in WIF 4.5. For example, consider the following WIF 3.5 entry in the `<httpModules>` section to add the WS-Federation Authentication Manager to an application:  
   
-```  
+```xml  
 <add name="WSFederationAuthenticationModule" type="Microsoft.IdentityModel.Web.WSFederationAuthenticationModule, Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=abcd … 5678" />  
 ```  
   
  This entry has been updated in WIF 4.5 to include the new namespaces and assembly version:  
   
-```  
+```xml  
 <add name="WSFederationAuthenticationModule" type="System.IdentityModel.Services.WSFederationAuthenticationModule, System.IdentityModel.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=abcd … 5678"/>  
 ```  
   

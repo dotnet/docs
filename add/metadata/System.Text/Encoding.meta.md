@@ -368,15 +368,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.Encoding.IsAlwaysNormalized
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.Encoding.GetBytes(System.Char[],System.Int32,System.Int32,System.Byte[],System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -522,15 +513,6 @@ manager: "wpickett"
 
 ---
 uid: System.Text.Encoding.GetEncoding(System.String,System.Text.EncoderFallback,System.Text.DecoderFallback)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Text.Encoding.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

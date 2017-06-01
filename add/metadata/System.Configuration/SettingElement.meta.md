@@ -55,14 +55,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Configuration.SettingElement.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Configuration.SettingElement.Equals(System.Object)
 ms.technology: 
   - "dotnet-webforms"

@@ -440,15 +440,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.EnumBuilder.MakeArrayType
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.EnumBuilder.CreateTypeInfo
 ms.technology: 
   - "dotnet-standard"
@@ -473,15 +464,6 @@ manager: "ghogen"
 
 ---
 uid: System.Reflection.Emit.EnumBuilder.GetProperties(System.Reflection.BindingFlags)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Reflection.Emit.EnumBuilder.GetEvents
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

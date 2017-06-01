@@ -69,13 +69,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.ConditionedActivityGroup.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.ConditionedActivityGroup.SetWhenCondition(System.Object,System.Object)
 author: "Erikre"
 ms.author: "erikre"

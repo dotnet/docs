@@ -33,15 +33,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Description.PolicyAssertionCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Description.PolicyAssertionCollection.InsertItem(System.Int32,System.Xml.XmlElement)
 ms.technology: 
   - "dotnet-standard"

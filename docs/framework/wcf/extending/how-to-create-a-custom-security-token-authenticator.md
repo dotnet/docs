@@ -56,7 +56,7 @@ This topic shows how to create a custom security token authenticator and how to 
   
 1.  Override the <xref:System.IdentityModel.Selectors.SecurityTokenManager.CreateSecurityTokenAuthenticator%2A> method in your custom security token manager implementation.  
   
-2.  Add logic to the method to enable it to return your custom security token authenticator based on the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> parameter. The following example returns a custom security token authenticator if the token requirements token type is a user name (represented by the <xref:System.IdentityModel.Tokens.SecurityTokenTypes.UserName%2A> property) and the message direction for which the security token authenticator is being requested is input (represented by the <xref:System.ServiceModel.Description.MessageDirection> field).  
+2.  Add logic to the method to enable it to return your custom security token authenticator based on the <xref:System.IdentityModel.Selectors.SecurityTokenRequirement> parameter. The following example returns a custom security token authenticator if the token requirements token type is a user name (represented by the <xref:System.IdentityModel.Tokens.SecurityTokenTypes.UserName%2A> property) and the message direction for which the security token authenticator is being requested is input (represented by the <xref:System.ServiceModel.Description.MessageDirection.Input> field).  
   
      [!code-csharp[c_CustomTokenAuthenticator#3](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_customtokenauthenticator/cs/source.cs#3)]
      [!code-vb[c_CustomTokenAuthenticator#3](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_customtokenauthenticator/vb/source.vb#3)]  

@@ -281,15 +281,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetEvents
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbConnectionStringBuilder.ToString
 ms.technology: 
   - "dotnet-ado"
@@ -309,15 +300,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbConnectionStringBuilder.Clear
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.System#ComponentModel#ICustomTypeDescriptor#GetProperties
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -390,15 +372,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbConnectionStringBuilder.ConnectionString
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbConnectionStringBuilder.#ctor
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

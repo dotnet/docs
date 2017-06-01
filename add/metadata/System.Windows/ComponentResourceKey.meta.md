@@ -59,14 +59,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.ComponentResourceKey.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.ComponentResourceKey.#ctor(System.Type,System.Object)
 ms.technology: 
   - "dotnet-wpf"

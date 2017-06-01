@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeAttachEventStatement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeAttachEventStatement.Listener
 ms.technology: 
   - "dotnet-standard"

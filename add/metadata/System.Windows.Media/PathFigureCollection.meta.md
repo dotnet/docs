@@ -103,15 +103,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.PathFigureCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.PathFigureCollection.#ctor(System.Int32)
 ms.technology: 
   - "dotnet-wpf"
@@ -261,15 +252,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Media.PathFigureCollection.System#Collections#IList#Remove(System.Object)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Media.PathFigureCollection.ToString
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

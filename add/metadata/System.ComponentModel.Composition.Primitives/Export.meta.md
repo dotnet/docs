@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Primitives.Export.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Primitives.Export.#ctor(System.String,System.Func{System.Object})
 ms.technology: 
   - "dotnet-standard"

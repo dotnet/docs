@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.CreateMap
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DynamicUpdate.DynamicUpdateMapBuilder.#ctor
 ms.technology: 
   - "dotnet-standard"

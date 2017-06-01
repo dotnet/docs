@@ -40,7 +40,7 @@ Console.WriteLine(doc.InnerXml);
   
  **Output**  
   
-```  
+```xml  
 <b:test xmlns:a="123" xmlns:b="456" />  
 ```  
   
@@ -64,7 +64,7 @@ Console.WriteLine(doc.InnerXml);
   
  **Output**  
   
-```  
+```xml  
 <a:test xmlns="123" xmlns:a="123" />  
 ```  
   

@@ -80,15 +80,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DynamicUpdate.InstanceUpdateException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DynamicUpdate.InstanceUpdateException.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"

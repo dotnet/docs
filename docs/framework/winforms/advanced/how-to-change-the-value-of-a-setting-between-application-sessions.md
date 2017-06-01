@@ -29,7 +29,7 @@ At times, you might want to change the value of a setting between application se
   
 2.  Locate the entry for the setting you want to change. It should look similar to the example presented below.  
   
-    ```  
+    ```xml  
     <setting name="Setting1" serializeAs="String" >  
        <value>My Setting Value</value>  
     </setting>  

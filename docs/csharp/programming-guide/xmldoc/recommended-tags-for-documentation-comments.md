@@ -36,7 +36,7 @@ translation.priority.mt:
   - "tr-tr"
 ---
 # Recommended Tags for Documentation Comments (C# Programming Guide)
-The C# compiler processes documentation comments in your code and formats them as XML in a file whose name you specify in the **/doc** command-line option. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [Sandcastle](http://shfb.codeplex.com/).  
+The C# compiler processes documentation comments in your code and formats them as XML in a file whose name you specify in the **/doc** command-line option. To create the final documentation based on the compiler-generated file, you can create a custom tool, or use a tool such as [Sandcastle](https://github.com/EWSoftware/SHFB).  
   
  Tags are processed on code constructs such as types and type members.  
   

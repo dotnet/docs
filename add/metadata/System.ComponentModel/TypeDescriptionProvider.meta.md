@@ -107,15 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.TypeDescriptionProvider.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.TypeDescriptionProvider.GetTypeDescriptor(System.Type,System.Object)
 ms.technology: 
   - "dotnet-standard"

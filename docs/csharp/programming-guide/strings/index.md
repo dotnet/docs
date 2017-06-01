@@ -75,7 +75,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
 |---------------------|--------------------|----------------------|  
 |\\'|Single quote|0x0027|  
 |\\"|Double quote|0x0022|  
-|\\\|Backslash|0x005C|  
+|\\\\ |Backslash|0x005C|  
 |\0|Null|0x0000|  
 |\a|Alert|0x0007|  
 |\b|Backspace|0x0008|  

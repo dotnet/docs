@@ -411,14 +411,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.DataObject.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.DataObject.GetData
 ms.technology: 
   - "dotnet-wpf"
@@ -464,23 +456,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.DataObject.GetText
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.DataObject.GetFormats
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.DataObject.RemovePastingHandler(System.Windows.DependencyObject,System.Windows.DataObjectPastingEventHandler)
 ms.technology: 
   - "dotnet-wpf"
@@ -517,15 +492,6 @@ manager: "ghogen"
 
 ---
 uid: System.Windows.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.DataObject.ContainsText
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

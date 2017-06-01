@@ -43,14 +43,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.ListViewItem.ListViewSubItem.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.ListViewItem.ListViewSubItem.Font
 ms.technology: 
   - "dotnet-winforms"

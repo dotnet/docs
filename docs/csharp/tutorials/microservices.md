@@ -14,7 +14,7 @@ ms.assetid: 87e93838-a363-4813-b859-7356023d98ed
 
 # Microservices hosted in Docker
 
-##Introduction
+## Introduction
 
 This tutorial details the tasks necessary to build and deploy
 an ASP.NET Core microservice in a Docker container. During the course

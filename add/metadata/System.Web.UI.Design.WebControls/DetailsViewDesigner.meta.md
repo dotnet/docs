@@ -79,14 +79,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.DetailsViewDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.DetailsViewDesigner.#ctor
 ms.technology: 
   - "dotnet-webforms"

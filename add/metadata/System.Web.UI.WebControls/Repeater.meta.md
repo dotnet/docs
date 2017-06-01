@@ -143,12 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.Repeater.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.WebControls.Repeater.CreateChildControls
 ms.technology: 
   - "dotnet-webforms"

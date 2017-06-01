@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.SplineThicknessKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.SplineThicknessKeyFrame.#ctor(System.Windows.Thickness)
 ms.technology: 
   - "dotnet-wpf"

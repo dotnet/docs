@@ -227,15 +227,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.OrderedDictionary.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.OrderedDictionary.#ctor(System.Int32,System.Collections.IEqualityComparer)
 ms.technology: 
   - "dotnet-standard"

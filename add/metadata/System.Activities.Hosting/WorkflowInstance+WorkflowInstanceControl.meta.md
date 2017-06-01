@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetCompletionState
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.op_Inequality(System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl,System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl)
 ms.technology: 
   - "dotnet-standard"
@@ -126,15 +117,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.IsPersistable
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.GetBookmarks
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"
@@ -279,15 +261,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.ScheduleBookmarkResumption(System.Activities.Bookmark,System.Object,System.Activities.BookmarkScope)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.Hosting.WorkflowInstance.WorkflowInstanceControl.Abort
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

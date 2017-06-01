@@ -67,7 +67,7 @@ The `contextSwitchDeadlock` managed debugging assistant (MDA) is activated when 
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <contextSwitchDeadlock />  

@@ -69,13 +69,6 @@ manager: "tyoung"
 ---
 
 ---
-uid: System.Messaging.MessageQueueInstaller.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----
-
----
 uid: System.Messaging.MessageQueueInstaller.CopyFromComponent(System.ComponentModel.IComponent)
 ms.technology: 
   - "dotnet-standard"

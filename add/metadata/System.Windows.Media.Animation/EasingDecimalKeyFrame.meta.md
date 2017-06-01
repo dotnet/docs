@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingDecimalKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingDecimalKeyFrame.#ctor(System.Decimal,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"

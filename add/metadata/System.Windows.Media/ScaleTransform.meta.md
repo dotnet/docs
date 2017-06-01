@@ -123,15 +123,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.ScaleTransform.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.ScaleTransform.CenterXProperty
 ms.technology: 
   - "dotnet-wpf"

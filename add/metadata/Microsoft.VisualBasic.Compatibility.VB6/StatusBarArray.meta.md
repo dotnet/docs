@@ -363,13 +363,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: Microsoft.VisualBasic.Compatibility.VB6.StatusBarArray.#ctor
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: Microsoft.VisualBasic.Compatibility.VB6.StatusBarArray.PaddingChanged
 author: "stevehoag"
 ms.author: "shoag"

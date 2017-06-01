@@ -197,15 +197,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataColumn.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataColumn.CheckUnique
 ms.technology: 
   - "dotnet-ado"

@@ -538,7 +538,7 @@ Dim serviceHost As ServiceHost = New ServiceHost(GetType(IDataService))
 ### Controlling Serialization Settings in Configuration  
  The `MaxItemsInObjectGraph` and `IgnoreExtensionDataObject` can be controlled through configuration by using the `dataContractSerializer` endpoint or service behavior, as shown in the following example.  
   
-```  
+```xml  
 <configuration>  
     <system.serviceModel>  
         <behaviors>  

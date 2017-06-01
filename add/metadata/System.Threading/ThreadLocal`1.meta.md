@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.ThreadLocal`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.ThreadLocal`1.IsValueCreated
 ms.technology: 
   - "dotnet-standard"
@@ -81,15 +72,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.ThreadLocal`1.#ctor(System.Boolean)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.ThreadLocal`1.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

@@ -177,15 +177,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Text.UnicodeEncoding.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.UnicodeEncoding.GetChars
 ms.technology: 
   - "dotnet-standard"

@@ -188,15 +188,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.MessageHeaders.HaveMandatoryHeadersBeenUnderstood
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.MessageHeaders.RemoveAt(System.Int32)
 ms.technology: 
   - "dotnet-standard"

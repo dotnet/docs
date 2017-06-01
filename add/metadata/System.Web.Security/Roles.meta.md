@@ -206,15 +206,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Security.Roles.GetRolesForUser
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Security.Roles.CookieProtectionValue
 ms.technology: 
   - "dotnet-webforms"

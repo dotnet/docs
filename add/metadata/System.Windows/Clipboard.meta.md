@@ -159,15 +159,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Clipboard.GetText
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Clipboard.ContainsImage
 ms.technology: 
   - "dotnet-wpf"
@@ -178,15 +169,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Clipboard.Flush
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Clipboard.ContainsText
 ms.technology: 
   - "dotnet-wpf"
 author: "stevehoag"

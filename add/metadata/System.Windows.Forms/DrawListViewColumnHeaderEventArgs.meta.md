@@ -8,14 +8,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.DrawText
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.DrawListViewColumnHeaderEventArgs.BackColor
 ms.technology: 
   - "dotnet-winforms"

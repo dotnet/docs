@@ -50,7 +50,7 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 -   Set the <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> property to the <xref:System.Windows.Forms.ToolStripRenderMode> value you want.  
   
-     With <xref:System.Windows.Forms.ToolStripRenderMode>, the static <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> determines the renderer for your application. The other values of <xref:System.Windows.Forms.ToolStripRenderMode> are <xref:System.Windows.Forms.ToolStripRenderMode>, <xref:System.Windows.Forms.ToolStripRenderMode>, and <xref:System.Windows.Forms.ToolStripRenderMode>.  
+     With <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode>, the static <xref:System.Windows.Forms.ToolStrip.RenderMode%2A> determines the renderer for your application. The other values of <xref:System.Windows.Forms.ToolStripRenderMode> are <xref:System.Windows.Forms.ToolStripRenderMode.Custom>, <xref:System.Windows.Forms.ToolStripRenderMode.Professional>, and <xref:System.Windows.Forms.ToolStripRenderMode.System>.  
   
 ### To change the Microsoft Office–style borders to straight  
   
@@ -121,7 +121,7 @@ The <xref:System.Windows.Forms.ToolStrip> controls have the following associated
   
 2.  Use <xref:System.Windows.Forms.ToolStripManager.Renderer%2A?displayProperty=fullName> to assign a custom renderer.  
   
-3.  Ensure that <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=fullName> is set to the default value of <xref:System.Windows.Forms.ToolStripRenderMode>.  
+3.  Ensure that <xref:System.Windows.Forms.ToolStrip.RenderMode%2A?displayProperty=fullName> is set to the default value of <xref:System.Windows.Forms.ToolStripRenderMode.ManagerRenderMode>.  
   
 ### To turn off the Microsoft Office colors for the entire application  
   

@@ -35,7 +35,7 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
   
 ## Syntax  
   
-```  
+```xml  
       <defaultProxy  
   enabled="true|false"  
   useDefaultCredentials="true|false"  
@@ -80,7 +80,7 @@ Configures the Hypertext Transfer Protocol (HTTP) proxy server.
 ## Example  
  The following code example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access and contoso.com.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <defaultProxy>  

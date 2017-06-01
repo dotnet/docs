@@ -36,7 +36,7 @@ Specifies whether the common language runtime runs garbage collection on a separ
   
 ## Syntax  
   
-```  
+```xml  
 <gcConcurrent    
    enabled="true|false"/>  
 ```  
@@ -90,7 +90,7 @@ Specifies whether the common language runtime runs garbage collection on a separ
 ## Example  
  The following example enables concurrent garbage collection.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <gcConcurrent enabled="true"/>  

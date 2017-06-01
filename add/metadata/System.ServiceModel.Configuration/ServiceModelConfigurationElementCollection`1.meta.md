@@ -87,13 +87,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.CreateNewElement
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.Clear
 ms.technology: 
   - "dotnet-standard"

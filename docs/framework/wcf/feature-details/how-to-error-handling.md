@@ -76,7 +76,7 @@ This topic outlines the basic steps required to create a routing configuration t
   
      If the backup list contains multiple endpoints, when a network or communications failure occurs the Routing Service attempts to send the message to the first endpoint in the list. If a network or communications failure occurs when sending to this endpoint, the Routing Service attempts to send the message to the next endpoint contained in the list. The service continues sending the message to each endpoint in the backup endpoint list until the message is successfully sent, all backup endpoints return a network or communications-related error, or the message is sent and the endpoint returns a non-network, non-communications-related error.  
   
-    ```  
+    ```xml  
     <backupLists>          
       <backupList name="backupEndpointList">  
           <add endpointName="realDestination" />  

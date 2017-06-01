@@ -35,12 +35,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.VectorEnumerator`1.Dispose
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.VectorEnumerator`1.Reset
 ms.author: "mblome"
 manager: "ghogen"

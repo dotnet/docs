@@ -53,12 +53,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Mime.ContentDisposition.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Mime.ContentDisposition.Equals(System.Object)
 ms.author: "bobdel"
 manager: "markl"

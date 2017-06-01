@@ -219,15 +219,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Interop.HwndHost.Dispose
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Interop.HwndHost.Finalize
 ms.technology: 
   - "dotnet-wpf"

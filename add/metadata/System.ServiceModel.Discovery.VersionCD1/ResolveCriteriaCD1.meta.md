@@ -17,15 +17,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.VersionCD1.ResolveCriteriaCD1.GetSchema
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.VersionCD1.ResolveCriteriaCD1.ToResolveCriteria
 ms.technology: 
   - "dotnet-standard"

@@ -613,15 +613,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.WebBrowser.Refresh
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.WebBrowser.Navigate(System.Uri,System.String,System.Byte[],System.String)
 ms.technology: 
   - "dotnet-winforms"

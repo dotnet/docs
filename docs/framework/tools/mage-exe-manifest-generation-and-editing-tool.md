@@ -142,7 +142,7 @@ mage -Update c:\HelloWorldDeployment\HelloWorld.deploy -CertFile cert.pfx
   
  Mage.exe creates new manifests that target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)]. ClickOnce applications that target the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)] can run on both the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)] and the full version of the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)]. If your application targets the full version of the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] and cannot run on the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)], remove the client `<framework>` element by using a text editor and re-sign the manifest. The following is a sample `<framework>` element that targets the [!INCLUDE[net_client_v40_long](../../../includes/net-client-v40-long-md.md)].  
   
-```  
+```xml  
 <framework targetVersion="4.0" profile="client" supportedRuntime="4.0.20506" />  
 ```  
   

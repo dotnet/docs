@@ -166,15 +166,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.SortedDictionary`2.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.SortedDictionary`2.System#Collections#IDictionary#IsFixedSize
 author: "mairaw"
 ms.author: "mairaw"

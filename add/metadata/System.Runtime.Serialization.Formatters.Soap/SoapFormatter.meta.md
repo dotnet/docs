@@ -111,14 +111,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "sethm"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Serialization.Formatters.Soap.SoapFormatter.AssemblyFormat
 ms.technology: 
   - "dotnet-standard"

@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ArithmeticException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ArithmeticException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

@@ -22,7 +22,7 @@ This section provides an overview of how the relational schema of a `DataSet` is
   
  The following example demonstrates an XML Schema where `customers` is the child element of the `MyDataSet` element, which is a **DataSet** element.  
   
-```  
+```xml  
 <xs:schema id="SomeID"   
             xmlns=""   
             xmlns:xs="http://www.w3.org/2001/XMLSchema"   
@@ -60,7 +60,7 @@ Customers (CustomerID , CompanyName, Phone)
   
  In the following XML Schema, the **Schema** element has two element children, `InStateCustomers` and `OutOfStateCustomers`.  
   
-```  
+```xml  
 <xs:schema id="SomeID"   
             xmlns=""   
             xmlns:xs="http://www.w3.org/2001/XMLSchema"   

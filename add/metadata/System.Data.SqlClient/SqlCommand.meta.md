@@ -89,15 +89,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlCommand.BeginExecuteReader
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlCommand.ExecuteNonQueryAsync(System.Threading.CancellationToken)
 ms.technology: 
   - "dotnet-ado"
@@ -332,25 +323,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlCommand.ExecuteReaderAsync
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlCommand.ExecuteScalar
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlCommand.ExecuteXmlReaderAsync
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -395,15 +368,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlCommand.BeginExecuteNonQuery
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlCommand.#ctor(System.String,System.Data.SqlClient.SqlConnection,System.Data.SqlClient.SqlTransaction)
 ms.technology: 
   - "dotnet-ado"
@@ -440,25 +404,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlCommand.ExecuteReader
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlCommand.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlCommand.BeginExecuteXmlReader
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -477,15 +423,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.SqlClient.SqlCommand.StatementCompleted
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlCommand.#ctor
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

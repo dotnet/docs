@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeRegionDirective.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeRegionDirective.#ctor(System.CodeDom.CodeRegionMode,System.String)
 ms.technology: 
   - "dotnet-standard"

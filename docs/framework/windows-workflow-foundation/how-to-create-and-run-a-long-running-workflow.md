@@ -575,7 +575,7 @@ One of the central features of [!INCLUDE[wf](../../../includes/wf-md.md)] is the
     };  
     ```  
   
-     The <xref:System.Activities.PersistableIdleAction> enumeration has three values: <xref:System.Activities.PersistableIdleAction>, <xref:System.Activities.PersistableIdleAction>, and <xref:System.Activities.PersistableIdleAction>. <xref:System.Activities.PersistableIdleAction> causes the workflow to persist but it does not cause the workflow to unload. <xref:System.Activities.PersistableIdleAction> causes the workflow to persist and be unloaded.  
+     The <xref:System.Activities.PersistableIdleAction> enumeration has three values: <xref:System.Activities.PersistableIdleAction.None>, <xref:System.Activities.PersistableIdleAction.Persist>, and <xref:System.Activities.PersistableIdleAction.Unload>. <xref:System.Activities.PersistableIdleAction.Persist> causes the workflow to persist but it does not cause the workflow to unload. <xref:System.Activities.PersistableIdleAction.Unload> causes the workflow to persist and be unloaded.  
   
      The following example is the completed `ConfigureWorkflowApplication` method.  
   

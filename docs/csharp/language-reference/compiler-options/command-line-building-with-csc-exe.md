@@ -75,37 +75,37 @@ The C# compiler uses the following rules when it interprets arguments given on t
 
 - Compiles *File.cs* producing *File.exe*:
 
-```
+```console
 csc File.cs 
 ```
 
 - Compiles *File.cs* producing *File.dll*:
 
-```
+```console
 csc /target:library File.cs
 ```
 
 - Compiles *File.cs* and creates *My.exe*:
 
-```
+```console
 csc /out:My.exe File.cs
 ```
 
 - Compiles all the C# files in the current directory with optimizations enabled and defines the DEBUG symbol. The output is *File2.exe*:
 
-```
+```console
 csc /define:DEBUG /optimize /out:File2.exe *.cs
 ```
 
 - Compiles all the C# files in the current directory producing a debug version of *File2.dll*. No logo and no warnings are displayed:
 
-```
+```console
 csc /target:library /out:File2.dll /warn:0 /nologo /debug *.cs
 ```
 
 - Compiles all the C# files in the current directory to *Something.xyz* (a DLL):
 
-```
+```console
 csc /target:library /out:Something.xyz *.cs
 ```
 

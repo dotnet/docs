@@ -82,7 +82,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
   
 ## Example  
   
-```  
+```xml  
 <root>  
     <creditcard>  
         <number>19834209</number>  

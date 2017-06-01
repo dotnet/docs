@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ModelBinding.ValueProviderCollection.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.ModelBinding.ValueProviderCollection.InsertItem(System.Int32,System.Web.ModelBinding.IValueProvider)
 ms.technology: 
   - "dotnet-webforms"

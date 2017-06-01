@@ -31,14 +31,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpCompileException.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpCompileException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-webforms"

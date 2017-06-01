@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Runtime.Serialization.XsdDataContractExporter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Runtime.Serialization.XsdDataContractExporter.CanExport(System.Collections.Generic.ICollection{System.Reflection.Assembly})
 ms.technology: 
   - "dotnet-standard"

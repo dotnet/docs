@@ -146,7 +146,7 @@ This topic describes how the schema inference process translates the node types 
 |---------------|-----------------|  
 |Processing instruction|Ignored.|  
 |Comment|Ignored.|  
-|Entity reference|The <xref:System.Xml.Schema.XmlSchemaInference> class does not handle entity references. If an XML document contains entity references, you need to use a reader that expands the entities. For example, you can pass an <xref:System.Xml.XmlTextReader> with the <xref:System.Xml.XmlTextReader.EntityHandling%2A> property set to <xref:System.Xml.EntityHandling> as a parameter. If entity references are encountered and the reader does not expand entities, an exception is throw.|  
+|Entity reference|The <xref:System.Xml.Schema.XmlSchemaInference> class does not handle entity references. If an XML document contains entity references, you need to use a reader that expands the entities. For example, you can pass an <xref:System.Xml.XmlTextReader> with the <xref:System.Xml.XmlTextReader.EntityHandling%2A> property set to <xref:System.Xml.EntityHandling.ExpandEntities> as a parameter. If entity references are encountered and the reader does not expand entities, an exception is throw.|  
 |CDATA|Any `<![CDATA[ … ]]` sections in an XML document will be inferred as `xs:string`.|  
 |Document type|Ignored.|  
 |Namespaces|Ignored.|  

@@ -188,15 +188,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Policy.CodeGroup.ToXml
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Policy.CodeGroup.GetHashCode
 ms.technology: 
   - "dotnet-standard"

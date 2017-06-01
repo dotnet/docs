@@ -36,7 +36,7 @@ The `invalidCERCall` managed debugging assistant (MDA) is activated when there i
 ## Cause  
  Code within a CER is calling a function with no <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute> or with a weak <xref:System.Runtime.ConstrainedExecution.ReliabilityContractAttribute> that is not compatible with running in a CER.  
   
- In terms of reliability contract syntax, a weak contract is a contract that does not specify a <xref:System.Runtime.ConstrainedExecution.Consistency> enumeration value or specifies a <xref:System.Runtime.ConstrainedExecution.Consistency> value of <xref:System.Runtime.ConstrainedExecution.Consistency>, <xref:System.Runtime.ConstrainedExecution.Consistency>, or <xref:System.Runtime.ConstrainedExecution.Cer>. Any of these conditions indicates that the code called may impede the efforts of the other code in the CER to maintain consistent state.  CERs allow code to treat errors in a very deterministic manner, maintaining internal invariants that are important to the application and allowing it to continue running in the face of transient errors such as out-of-memory exceptions.  
+ In terms of reliability contract syntax, a weak contract is a contract that does not specify a <xref:System.Runtime.ConstrainedExecution.Consistency> enumeration value or specifies a <xref:System.Runtime.ConstrainedExecution.Consistency> value of <xref:System.Runtime.ConstrainedExecution.Consistency.MayCorruptProcess>, <xref:System.Runtime.ConstrainedExecution.Consistency.MayCorruptAppDomain>, or <xref:System.Runtime.ConstrainedExecution.Cer.None>. Any of these conditions indicates that the code called may impede the efforts of the other code in the CER to maintain consistent state.  CERs allow code to treat errors in a very deterministic manner, maintaining internal invariants that are important to the application and allowing it to continue running in the face of transient errors such as out-of-memory exceptions.  
   
  The activation of this MDA indicates a possibility the method being called in the CER can fail in a way that the caller did not expect or that leaves the <xref:System.AppDomain> or process state corrupted or unrecoverable. Of course, the called code might execute correctly and the problem is simply a missing contract. However, the issues involved in writing reliable code are subtle and the absence of a contract is a good indicator the code might not execute correctly. The contracts are indicators that the programmer has coded reliably and also promises that these guarantees will not change in future revisions of the code.  That is, the contracts are declarations of intent and not just implementation details.  
   
@@ -55,7 +55,7 @@ The `invalidCERCall` managed debugging assistant (MDA) is activated when there i
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <invalidCERCall />  

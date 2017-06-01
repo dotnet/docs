@@ -29,7 +29,7 @@ Oftentimes when working with a large list of items in a <xref:System.Windows.For
   
 ### To find an item using text  
   
-1.  Create a <xref:System.Windows.Forms.ListView> with the <xref:System.Windows.Forms.ListView.View%2A> property set to <xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>, and then populate the <xref:System.Windows.Forms.ListView> with items.  
+1.  Create a <xref:System.Windows.Forms.ListView> with the <xref:System.Windows.Forms.ListView.View%2A> property set to <xref:System.Windows.Forms.View.Details> or <xref:System.Windows.Forms.View.List>, and then populate the <xref:System.Windows.Forms.ListView> with items.  
   
 2.  Call the <xref:System.Windows.Forms.ListView.FindItemWithText%2A> method, passing the text of the item you would like to find.  
   
@@ -41,7 +41,7 @@ Oftentimes when working with a large list of items in a <xref:System.Windows.For
   
 ### To find an item using x- and y-coordinates  
   
-1.  Create a <xref:System.Windows.Forms.ListView> with the <xref:System.Windows.Forms.View> property set to <xref:System.Windows.Forms.View> or <xref:System.Windows.Forms.View>, and then populate the <xref:System.Windows.Forms.ListView> with items.  
+1.  Create a <xref:System.Windows.Forms.ListView> with the <xref:System.Windows.Forms.View> property set to <xref:System.Windows.Forms.View.SmallIcon> or <xref:System.Windows.Forms.View.LargeIcon>, and then populate the <xref:System.Windows.Forms.ListView> with items.  
   
 2.  Call the <xref:System.Windows.Forms.ListView.FindNearestItem%2A> method, passing the desired x- and y-coordinates and the direction you would like to search.  
   

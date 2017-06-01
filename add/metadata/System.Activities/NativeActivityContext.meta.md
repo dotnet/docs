@@ -422,15 +422,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.NativeActivityContext.Abort
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.NativeActivityContext.ScheduleAction``2(System.Activities.ActivityAction{``0,``1},``0,``1,System.Activities.CompletionCallback,System.Activities.FaultCallback)
 ms.technology: 
   - "dotnet-standard"
@@ -630,15 +621,6 @@ manager: "erikre"
 
 ---
 uid: System.Activities.NativeActivityContext.ScheduleAction``8(System.Activities.ActivityAction{``0,``1,``2,``3,``4,``5,``6,``7},``0,``1,``2,``3,``4,``5,``6,``7,System.Activities.CompletionCallback,System.Activities.FaultCallback)
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Activities.NativeActivityContext.CreateBookmark
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

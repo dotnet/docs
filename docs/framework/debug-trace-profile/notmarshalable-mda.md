@@ -49,7 +49,7 @@ The `notMarshalable` managed debugging assistant (MDA) is activated when the com
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <notMarshalable/>  

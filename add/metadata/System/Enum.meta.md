@@ -251,15 +251,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Enum.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Enum.GetHashCode
 ms.technology: 
   - "dotnet-standard"

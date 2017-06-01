@@ -17,14 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintingCanceledException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Printing.PrintingCanceledException.#ctor(System.Int32,System.String,System.String,System.String,System.Int32,System.Exception)
 ms.technology: 
   - "dotnet-standard"

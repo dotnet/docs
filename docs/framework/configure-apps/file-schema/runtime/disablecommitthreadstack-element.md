@@ -35,7 +35,7 @@ Specifies whether the full thread stack is committed when a thread is started.
   
 ## Syntax  
   
-```  
+```xml  
 <disableCommitThreadStack enabled="0|1"/>  
 ```  
   
@@ -74,7 +74,7 @@ Specifies whether the full thread stack is committed when a thread is started.
 ## Example  
  The following example shows how to disable the default behavior of the common language runtime, which is to commit the full thread stack on thread startup.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <disableCommitThreadStack enabled="1" />  

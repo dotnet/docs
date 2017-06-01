@@ -136,7 +136,7 @@ this doc.DocumentElement.FirstChild.SelectNodes(. . .);
 #### Input File  
  The following is the bookstore.xml file that is used as the input file in the examples in this topic:  
   
-```  
+```xml  
 <?xml version='1.0'?>  
 <bookstore xmlns="urn:newbooks-schema">  
   <book genre="novel" style="hardcover">  

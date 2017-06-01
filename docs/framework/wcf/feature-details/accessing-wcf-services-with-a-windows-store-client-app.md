@@ -115,9 +115,9 @@ public partial class Service1Client : System.ServiceModel.ClientBase<MetroWcfCli
 ### Security  
  The following security modes are supported in Windows Store applications  
   
-1.  <xref:System.ServiceModel.SecurityMode>  
+1.  <xref:System.ServiceModel.SecurityMode.None>  
   
-2.  <xref:System.ServiceModel.SecurityMode>  
+2.  <xref:System.ServiceModel.SecurityMode.Transport>  
   
 3.  <!--zz <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredentials> --> `System.ServiceModel.SecurityMode.TransportWithMessageCredentials`
   

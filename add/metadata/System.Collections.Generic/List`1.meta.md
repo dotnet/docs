@@ -500,15 +500,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Generic.List`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Generic.List`1.IndexOf(`0)
 ms.technology: 
   - "dotnet-standard"
@@ -528,15 +519,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.List`1.LastIndexOf
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Generic.List`1.Reverse
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -618,15 +600,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Generic.List`1.IndexOf
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Generic.List`1.Sort
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

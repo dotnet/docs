@@ -39,14 +39,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.DynamicData.DynamicControlParameter.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.DynamicData.DynamicControlParameter.ControlId
 ms.technology: 
   - "dotnet-webforms"

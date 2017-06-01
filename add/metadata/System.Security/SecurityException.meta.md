@@ -206,15 +206,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.SecurityException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.SecurityException.Demanded
 ms.technology: 
   - "dotnet-standard"

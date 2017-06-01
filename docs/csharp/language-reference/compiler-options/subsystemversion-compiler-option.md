@@ -34,7 +34,7 @@ Specifies the minimum version of the subsystem on which the generated executable
   
 ## Syntax  
   
-```  
+```console  
 /subsystemversion:major.minor  
 ```  
   

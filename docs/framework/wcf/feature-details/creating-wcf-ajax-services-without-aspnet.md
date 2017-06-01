@@ -95,7 +95,7 @@ string[] GetCities(string firstLetters);
   
  If the operation takes an extra parameter, the request style must be wrapped to wrap both parameters in a single JSON object. An example of this style JSON message is in the following example.  
   
-```  
+```json  
 {"firstLetters": "na", "maxNumber": 2}  
 ```  
   

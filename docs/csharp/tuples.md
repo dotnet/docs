@@ -25,10 +25,20 @@ In this topic, you'll learn the language rules governing Tuples in C# 7,
 different ways to use them, and initial guidance on working with Tuples.
 
 > [!NOTE]
-> The new tuples features require the `System.ValueTuple` type. For Visual Studio 2017,
-> you must add the NuGet package [System.ValueTuple](https://www.nuget.org/packages/System.ValueTuple/), available on the NuGet Gallery.
-> Without this package you may get a compilation error similar to `error CS8179: Predefined type 'System.ValueTuple``2' is not defined or imported`
-> or `error CS8137: Cannot define a class or member that utilizes tuples because the compiler required type 'System.Runtime.CompilerServices.TupleElementNamesAttribute' cannot be found.`
+> The new tuples features require the @System.ValueTuple types.
+> You must add the NuGet package [`System.ValueTuple`](https://www.nuget.org/packages/System.ValueTuple/) in order to use it
+> on platforms that do not include the types.
+>
+> This is similar to other language features that rely on types
+> delivered in the framework. Examples include `async` and `await`
+> relying on the `INotifyCompletion` interface, and LINQ relying
+> on `IEnumerable<T>`. However, the delivery mechanism is changing
+> as .NET is becoming more platform independent. The .NET Framework
+> may not always ship on the same cadence as the language compiler. When new language
+> features rely on new types, those types will be available as NuGet packages when
+> the language features ship. As these new types get added to the .NET Standard
+> API and delivered as part of the framework, the NuGet package requirement will
+> be removed.
 
 Let's start with the reasons for adding new Tuple support. Methods return
 a single object. Tuples enable you to package multiple values in that single

@@ -35,7 +35,7 @@ The **/appconfig** compiler option enables a C# application to specify the locat
   
 ## Syntax  
   
-```  
+```console  
 /appconfig:file  
 ```  
   
@@ -58,7 +58,7 @@ The **/appconfig** compiler option enables a C# application to specify the locat
 ## Example  
  The following example shows an app.config file that enables an application to have references to both the .NET Framework implementation and the .NET Framework for Silverlight implementation of any .NET Framework assembly that exists in both implementations. The **/appconfig** compiler option specifies the location of this app.config file.  
   
-```  
+```xml  
 <configuration>  
       <runtime>  
       <assemblyBinding>  

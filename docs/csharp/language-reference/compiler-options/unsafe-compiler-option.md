@@ -37,7 +37,7 @@ The **/unsafe** compiler option allows code that uses the [unsafe](../../../csha
   
 ## Syntax  
   
-```  
+```console  
 /unsafe  
 ```  
   
@@ -57,7 +57,7 @@ The **/unsafe** compiler option allows code that uses the [unsafe](../../../csha
 ## Example  
  Compile `in.cs` for unsafe mode:  
   
-```  
+```console  
 csc /unsafe in.cs  
 ```  
   

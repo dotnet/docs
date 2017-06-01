@@ -14,7 +14,7 @@ ms.assetid: 1e38f9d9-8f84-46ee-a15f-199aec4f2e34
 
 # Async in depth
 
-Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET Task-based async model. The model is exposed by the `Task` and `Task<T>` types and the `async` and `await` language keywords. This article explains how to use .NET async and provides insight into the async framework used under the covers.
+Writing I/O- and CPU-bound asynchronous code is straightforward using the .NET Task-based async model. The model is exposed by the `Task` and `Task<T>` types and the `async` and `await` C# language keywords. (Any other languages have respective pattern.) This article explains how to use .NET async and provides insight into the async framework used under the covers.
 
 ## Task and Task&lt;T&gt;
 

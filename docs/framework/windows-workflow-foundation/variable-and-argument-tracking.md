@@ -27,7 +27,7 @@ When tracking the execution of a workflow, it is often useful to extract data. T
   
  The following example shows an activity state query that extracts variables and arguments when the activity’s `Closed` tracking record is emitted. Variables and arguments can be extracted only with an <xref:System.Activities.Tracking.ActivityStateRecord> and thus are subscribed to within a tracking profile using <xref:System.Activities.Tracking.ActivityStateQuery>.  
   
-```  
+```xml  
 <activityStateQuery activityName="SendEmailActivity">  
   <states>  
     <state name="Closed"/>  

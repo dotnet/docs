@@ -38,7 +38,7 @@ Specifies a configuration file to include.
   
 ## Syntax  
   
-```  
+```xml  
 <linkedConfiguration  
    href="URL of linked configuration file"/>  
 ```  
@@ -84,7 +84,7 @@ Specifies a configuration file to include.
 ## Example  
  The following code example shows how to include configuration file from the local hard disk.  
   
-```  
+```xml  
 <configuration>  
    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
       <linkedConfiguration href="file://c:\Program Files\Contoso\sharedConfig.xml"/>  

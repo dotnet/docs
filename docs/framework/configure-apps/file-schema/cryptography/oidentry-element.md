@@ -37,7 +37,7 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
   
 ## Syntax  
   
-```  
+```xml  
 <oidEntry OID="object identifier number" name="friendly name" />  
 ```  
   
@@ -69,7 +69,7 @@ Maps an ASN.1 object identifier (OID) to a friendly name.
 ## Example  
  The following example shows how to use the **\<oidEntry>** element to map an object identifier for the RIPEMD-160 hash algorithm to an implementation of that hash algorithm.  
   
-```  
+```xml  
 <configuration>  
    <mscorlib>  
       <cryptographySettings>  

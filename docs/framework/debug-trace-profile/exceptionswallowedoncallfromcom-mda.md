@@ -47,7 +47,7 @@ The `exceptionSwallowedOnCallFromCOM` managed debugging assistant (MDA) is activ
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <exceptionSwallowedOnCallFromCom />  

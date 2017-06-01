@@ -37,7 +37,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
   
 ## Syntax  
   
-```  
+```xml  
       <network  
   clientDomain="string"   
   defaultCredentials="true|false"  
@@ -102,7 +102,7 @@ userName="string"
 ## Example  
  The following code example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <mailSettings>  

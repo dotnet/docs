@@ -30,7 +30,7 @@ Contains settings that specify how the .NET Framework handles web addresses expr
   
 ## Syntax  
   
-```  
+```xml  
 <uri>  
 </uri>  
 ```  
@@ -65,7 +65,7 @@ Contains settings that specify how the .NET Framework handles web addresses expr
   
 ### Code  
   
-```  
+```xml  
 <configuration>  
   <uri>  
     <idn enabled="All" />  

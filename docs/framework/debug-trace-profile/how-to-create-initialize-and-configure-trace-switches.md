@@ -87,7 +87,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
     -   **Visual C#:** In the **Add New Item** dialog box, choose **XML File**. Name this file **app.config**. In the XML editor, after the XML declaration, add the following XML:  
   
-        ```  
+        ```xml  
         <configuration>  
         </configuration>  
         ```  
@@ -96,7 +96,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
 3.  After the `<configuration>` tag but before the `</configuration>` tag, add the appropriate XML to configure your switches. The following examples demonstrate a **BooleanSwitch** with a **DisplayName** property of `DataMessageSwitch` and a **TraceSwitch** with a **DisplayName** property of `TraceLevelSwitch`.  
   
-    ```  
+    ```xml  
     <system.diagnostics>  
        <switches>  
           <add name="DataMessagesSwitch" value="0" />  
@@ -115,7 +115,7 @@ Trace switches enable you to enable, disable, and filter tracing output.
   
      The following example shows how the final code, including comments, might look:  
   
-    ```  
+    ```xml  
     <system.diagnostics>  
        <switches>  
           <!-- This switch controls data messages. In order to receive data   

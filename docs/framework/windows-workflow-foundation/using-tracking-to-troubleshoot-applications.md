@@ -19,7 +19,7 @@ manager: "erikre"
 ## Troubleshooting a WF using WF Tracking  
  To detect faults within the processing of a [!INCLUDE[wf2](../../../includes/wf2-md.md)] activity, you can enable tracking with a tracking profile that queries for an <xref:System.Activities.Tracking.ActivityStateRecord> with the state of Faulted. The corresponding query is specified in the following code.  
   
-```  
+```xml  
 <activityStateQueries>  
               <activityStateQuery activityName="*">  
                 <states>  
@@ -31,7 +31,7 @@ manager: "erikre"
   
  If a fault is propagated and handled within a fault handler (such as a <xref:System.Activities.Statements.TryCatch> activity) this can be detected using a <xref:System.Activities.Tracking.FaultPropagationRecord>. The <xref:System.Activities.Tracking.FaultPropagationRecord> indicates the source activity of the fault and the name of the fault handler. The <xref:System.Activities.Tracking.FaultPropagationRecord> contains fault details in form of the exception stack for the fault.The query to subscribe for a <xref:System.Activities.Tracking.FaultPropagationRecord> is shown in the following example.  
   
-```  
+```xml  
 <faultPropagationQueries>  
               <faultPropagationQuery faultSourceActivityName ="*" faultHandlerActivityName="*"/>  
  </faultPropagationQueries>  
@@ -39,7 +39,7 @@ manager: "erikre"
   
  If a fault is not handled within the workflow it results in an unhandled exception at the workflow instance and the workflow instance is aborted. To understand the details of the unhandled exception, the tracking profile must query the workflow instance record with `state name="UnhandledException"` as specified in the following example.  
   
-```  
+```xml  
 <workflowInstanceQueries>  
               <workflowInstanceQuery>  
                 <states>  

@@ -99,7 +99,7 @@ You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace
 ## Example  
  This example assumes that a file named `test.xml` exists in the same directory as the compiled program.  You can place the following XML into a file called `test.xml` and use it with this example.  
   
-```  
+```xml  
 <root>  
     <creditcard>  
         <number>19834209</number>  

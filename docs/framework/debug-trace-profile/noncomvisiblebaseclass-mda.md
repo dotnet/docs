@@ -55,7 +55,7 @@ constrained by the COM versioning rules.
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <nonComVisibleBaseClass />  

@@ -27,7 +27,7 @@ Specify an X.509 certificate that will be used to authenticate the service to cl
   
 ## Syntax  
   
-```  
+```xml  
 <serviceCertificate findValue="String"   
     storeLocation="LocalMachine/CurrentUser"  
     storeName="AddressBook/AuthRoot/CertificateAuthority/Disallowed/My/Root/TrustedPeople/TrustedPublisher"  

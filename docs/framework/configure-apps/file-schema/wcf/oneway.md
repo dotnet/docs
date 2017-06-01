@@ -26,7 +26,7 @@ Enables packet routing and the use of one-way methods for a custom binding.
   
 ## Syntax  
   
-```  
+```xml  
 <oneWay packetRoutable="Boolean">  
         <channelPoolSettings  
            idleTimeout"TimeSpan"  
@@ -34,7 +34,7 @@ Enables packet routing and the use of one-way methods for a custom binding.
           maxOutboundConnectionsPerEndpopint="Integer" />  
 ```  
   
-```  
+```xml  
 </oneWay>  
 ```  
   

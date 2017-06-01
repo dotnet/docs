@@ -27,7 +27,7 @@ Specifies credentials used when authenticating peer-to-peer clients.
   
 ## Syntax  
   
-```  
+```xml  
 <peer>  
   <certificate/>  
   <peerAuthentication/>  

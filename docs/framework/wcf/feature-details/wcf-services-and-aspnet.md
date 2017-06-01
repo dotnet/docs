@@ -74,7 +74,7 @@ This topic discusses hosting [!INCLUDE[indigo1](../../../../includes/indigo1-md.
   
  [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)]’s ASP.NET compatibility mode is enabled at the application level through the following configuration (located in the application’s Web.config file):  
   
-```  
+```xml  
 <system.serviceModel>  
     <serviceHostingEnvironment aspNetCompatibilityEnabled="true" />  
 </system.serviceModel>  

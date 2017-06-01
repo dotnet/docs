@@ -26,7 +26,7 @@ Defines the security settings for a binding.
   
 ## Syntax  
   
-```  
+```xml  
 <netNamedPipeBinding>  
       <binding>  
             <security mode="None/Transport">  

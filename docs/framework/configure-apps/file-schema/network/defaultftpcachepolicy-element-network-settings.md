@@ -36,7 +36,7 @@ Describes whether FTP caching is active and describes the default caching policy
   
 ## Syntax  
   
-```  
+```xml  
 < defaultFtpCachePolicy  
   policyLevel="BypassCache|Default|CacheOnly|CacheIfAvailable|Revalidate|Reload|NoCacheNoStore|Revalidate"  
 />  
@@ -78,7 +78,7 @@ Describes whether FTP caching is active and describes the default caching policy
 ## Example  
  The following code example shows how to specify an FTP caching policy of `NoCacheNoStore`.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <requestCaching>  

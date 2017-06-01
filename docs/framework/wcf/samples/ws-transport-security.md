@@ -32,7 +32,7 @@ This sample demonstrates the use of SSL transport security with the <xref:System
   
  The program code in the sample is identical to that of the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) service. You must create a certificate and assign it by using the Web Server Certificate Wizard before building and running the sample. The endpoint definition and binding definition in the configuration file settings enable `Transport` security mode, as shown in the following sample configuration for the client.  
   
-```  
+```xml  
 <system.serviceModel>  
   
     <client>  

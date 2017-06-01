@@ -167,7 +167,7 @@ public class OrderStatusService : IOrderStatus
   
  The order status queue is created in the `Main` method. The client configuration includes the order status service configuration to host the order status service, as shown in the following sample configuration.  
   
-```  
+```xml  
 <appSettings>  
   <!-- Use appSetting to configure MSMQ queue name. -->  
   <add key="queueName" value=".\private$\ServiceModelSamplesTwo-way/OrderStatus" />  
@@ -239,7 +239,7 @@ Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending
   
 1.  If your computer is not part of a domain or does not have active directory integration installed, turn off transport security by setting the authentication mode and protection level to `None` as shown in the following sample configuration:  
   
-    ```  
+    ```xml  
     <configuration>  
   
       <appSettings>  
@@ -274,7 +274,7 @@ Status of order 124a1f69-3699-4b16-9bcc-43147a8756fc:Pending
   
 2.  Turning off security for a client configuration generates the following:  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <configuration>  
       <appSettings>  

@@ -33,7 +33,7 @@ Specifies assembly binding policy at the configuration level.
   
 ## Syntax  
   
-```  
+```xml  
 <assemblyBinding    
    xmlns="urn:schemas-microsoft-com:asm.v1">  
 </assemblyBinding>  
@@ -69,7 +69,7 @@ Specifies assembly binding policy at the configuration level.
 ## Example  
  The following code example shows how to include a configuration file on the local hard disk.  
   
-```  
+```xml  
 <configuration>  
    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
       <linkedConfiguration href="file://c:\Program Files\Contoso\sharedConfig.xml"/>  

@@ -251,7 +251,7 @@ elementFormDefault="qualified" >
 ## Sample DBML File  
  The following code is an excerpt from the DBML file created from the Northwind sample database. You can generate the whole file by using SQLMetal with the **/xml** option. For more information, see [SqlMetal.exe (Code Generation Tool)](../../../../../../docs/framework/tools/sqlmetal-exe-code-generation-tool.md).  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-16"?>  
 <Database Name="northwnd" Class="Northwnd" xmlns="http://schemas.microsoft.com/dsltools/DLinqML">  
   

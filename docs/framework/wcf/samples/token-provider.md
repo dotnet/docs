@@ -40,7 +40,7 @@ This sample demonstrates how to implement a custom token provider. A token provi
   
  The service exposes a single endpoint for communicating with the service, defined using the App.config configuration file. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding`, which uses message security by default. This sample sets the standard `wsHttpBinding` to use client username authentication. The service also configures the service certificate using the serviceCredentials behavior. The serviceCredentials behavior allows you to configure a service certificate. A service certificate is used by a client to authenticate the service and provide message protection. The following configuration references the localhost certificate installed during the sample setup as described in the following setup instructions.  
   
-```  
+```xml  
 <system.serviceModel>  
     <services>  
       <service   
@@ -90,7 +90,7 @@ This sample demonstrates how to implement a custom token provider. A token provi
   
  The client endpoint configuration consists of a configuration name, an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `Mode` and message `clientCredentialType`.  
   
-```  
+```xml  
 <system.serviceModel>  
   <client>  
     <endpoint name=""  

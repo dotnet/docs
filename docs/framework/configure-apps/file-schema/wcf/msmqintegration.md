@@ -29,7 +29,7 @@ Specifies a MSMQ transport for custom binding.
   
 ## Syntax  
   
-```  
+```xml  
 <msmqIntegration>  
         customDeadLetterQueue="Uri"  
         deadLetterQueue="Custom/None/System"  

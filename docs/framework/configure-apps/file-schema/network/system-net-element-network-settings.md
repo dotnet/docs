@@ -34,7 +34,7 @@ Contains settings that specify how the .NET Framework connects to the network.
   
 ## Syntax  
   
-```  
+```xml  
       <system.net>   
 </system.net>  
 ```  
@@ -69,7 +69,7 @@ Contains settings that specify how the .NET Framework connects to the network.
 ## Example  
  The following code example shows a typical configuration used by <xref:System.Net> classes.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <authenticationModules>  

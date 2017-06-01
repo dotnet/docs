@@ -33,7 +33,7 @@ Defines an element that is used to configure a cache that is based on the <xref:
   
 ## Syntax  
   
-```  
+```xml  
 <memoryCache   
     <namedCaches>  
         <!-- child elements -->  
@@ -86,7 +86,7 @@ Defines an element that is used to configure a cache that is based on the <xref:
   
  The `cacheMemoryLimitMegabytes` attribute and the `physicalMemoryPercentage` attribute are set to zero. Setting these attributes to zero means that the <xref:System.Runtime.Caching.MemoryCache> autosizing heuristics are used by default. The cache implementation should compare the current memory load against the absolute and percentage-based memory limits every two minutes.  
   
-```  
+```xml  
 <configuration>  
   <system.runtime.caching>  
     <memoryCache>  

@@ -57,7 +57,7 @@ When hosting a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] service i
   
  This loads a module and handler required for routing. [!INCLUDE[crdefault](../../../../includes/crdefault-md.md)][Routing](../../../../docs/framework/wcf/feature-details/routing.md). You must also set the `aspNetCompatibilityEnabled` attribute to `true` in the `<serviceHostingEnvironment>` element as shown in the following example.  
   
-```  
+```xml  
 <system.serviceModel>  
     <serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>  
         <!-- ... -->  

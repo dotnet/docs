@@ -23,7 +23,7 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
   
  To do this, use the `ActivityTracing` setting as demonstrated in the previous example. In addition, set the `propagateActivity` attribute for the `System.ServiceModel` trace source at all endpoints.  
   
-```  
+```xml  
 <source name="System.ServiceModel" switchValue="Verbose,ActivityTracing" propagateActivity="true" >  
 ```  
   
@@ -40,7 +40,7 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
   
  The gAId is propagated through the ActivityId message header, as illustrated in the following XML schema.  
   
-```  
+```xml  
 <xsd:element name="ActivityId" type="integer" minOccurs="0">  
   <xsd:attribute name="CorrelationId" type="integer" minOccurs="0"/>  
 </xsd:element>  
@@ -48,7 +48,7 @@ This topic describes activity propagation in the [!INCLUDE[indigo1](../../../../
   
  The following is an example of the message header.  
   
-```  
+```xml  
 <MessageLogTraceRecord>  
   <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope"     
                       xmlns:a="http://www.w3.org/2005/08/addressing">  

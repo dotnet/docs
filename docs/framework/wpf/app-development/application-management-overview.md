@@ -87,7 +87,7 @@ All applications tend to share a common set of functionality that applies to app
   
  Traditionally, developers have needed to write some or all of this code for themselves, depending on the technology. However,                          [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] generates this code for you when the markup file of your application definition is configured as an                          [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)]`ApplicationDefinition` item, as shown in the following                          [!INCLUDE[TLA2#tla_msbuild](../../../../includes/tla2sharptla-msbuild-md.md)] project file:  
   
-```  
+```xml  
 <Project   
   DefaultTargets="Build"  
                         xmlns="http://schemas.microsoft.com/developer/msbuild/2003">  

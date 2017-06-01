@@ -36,7 +36,7 @@ Defines a proxy server.
   
 ## Syntax  
   
-```  
+```xml  
       <proxy   
   autoDetect="true|false|unspecified"    
   bypassonlocal="true|false|unspecified"   
@@ -87,7 +87,7 @@ proxyaddress="uriString"
 ## Example  
  The following code example uses the defaults from the Internet Explorer proxy, specifies the proxy address, and bypasses the proxy for local access.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <defaultProxy>  

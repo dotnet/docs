@@ -26,7 +26,7 @@ Provides optional configuration for the <xref:System.IdentityModel.Tokens.X509Se
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
@@ -68,7 +68,7 @@ Provides optional configuration for the <xref:System.IdentityModel.Tokens.X509Se
   
 ## Example  
   
-```  
+```xml  
 <add type="System.IdentityModel.Tokens.X509SecurityTokenHandler, System.IdentityModel">  
     <x509SecurityTokenHandlerRequirement mapToWindows="true"   
                                          certificateValidationMode="PeerOrChainTrust"   

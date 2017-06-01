@@ -26,13 +26,13 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
   
 ## XAML Attribute Usage  
   
-```  
+```xml  
 <object property="{StaticResource key}" .../>  
 ```  
   
 ## XAML Object Element Usage  
   
-```  
+```xml  
 <object>  
   <object.property>  
 <StaticResource ResourceKey="key" .../>  
@@ -63,7 +63,7 @@ Provides a value for any [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharp
   
  `StaticResource` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.StaticResourceExtension.ResourceKey%2A> property as a property=value pair:  
   
-```  
+```xml  
 <object property="{StaticResource ResourceKey=key}" .../>  
 ```  
   

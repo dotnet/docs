@@ -105,7 +105,7 @@ Side-by-side execution of two versions of a component
   
  The following example shows the application configuration file entry to fully qualify an assembly called `myAssembly`.  
   
-```  
+```xml  
 <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">   
 <qualifyAssembly partialName="myAssembly"   
 fullName="myAssembly,  

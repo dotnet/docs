@@ -110,7 +110,7 @@ This topic describes how to create a Windows application that uses client applic
     > [!NOTE]
     >  In production code, you should always access the authentication service over the secure sockets layer (SSL, by using the HTTPS protocol). For information about how to set up SSL, see [Configuring Secure Sockets Layer (IIS 6.0 Operations Guide)](http://go.microsoft.com/fwlink/?LinkId=91844).  
   
-    ```  
+    ```xml  
     <system.web.extensions>  
       <scripting>  
         <webServices>  
@@ -128,7 +128,7 @@ This topic describes how to create a Windows application that uses client applic
   
      The `profile` element configures a single Web setting named `WebSettingsTestText`.  
   
-    ```  
+    ```xml  
     <profile enabled="true" >  
       <properties>  
         <add name="WebSettingsTestText" type="string"   

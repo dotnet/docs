@@ -26,7 +26,7 @@ This configuration element is used to specify run-time behavior for receiving me
   
 ## Syntax  
   
-```  
+```xml  
 <synchronousReceive />  
 ```  
   

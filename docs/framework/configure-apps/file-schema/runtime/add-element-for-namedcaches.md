@@ -33,7 +33,7 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
   
 ## Syntax  
   
-```  
+```xml  
 <namedCaches>  
     <add name="default" />  
       <!-- child elements -->  
@@ -70,7 +70,7 @@ Adds a `namedCache` entry to the `namedCaches` collection for a memory cache.
 ## Example  
  The following example shows how to define settings for the default `namedCache` entry to the `namedCaches` collection for a memory cache.  
   
-```  
+```xml  
 <configuration>  
   
   <system.runtime.caching>  

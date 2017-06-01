@@ -64,7 +64,7 @@ manager: "erikre"
   
  Serializing an instance of the `Person` class produces XML similar to the following.  
   
-```  
+```xml  
 <PersonContract xmlns="http://schemas.contoso.com">  
   <AddressMember>  
     <StreetMember>123 Main Street</StreetMember>  
@@ -103,7 +103,7 @@ manager: "erikre"
   
  Notice that `billTo` and `shipTo` fields are set to the same object instance. However, the generated XML duplicates the information duplicated, and looks similar to the following XML.  
   
-```  
+```xml  
 <PurchaseOrder>  
   <billTo><street>123 Main St.</street></billTo>  
   <shipTo><street>123 Main St.</street></shipTo>  
@@ -120,7 +120,7 @@ manager: "erikre"
   
  For these reasons, some `DataContractSerializer` constructor overloads have a `preserveObjectReferences` parameter (the default is `false`). When this parameter is set to `true`, a special method of encoding object references, which only [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] understands, is used. When set to `true`, the XML code example now resembles the following.  
   
-```  
+```xml  
 <PurchaseOrder ser:id="1">  
   <billTo ser:id="2"><street ser:id="3">123 Main St.</street></billTo>  
   <shipTo ser:ref="2"/>  
@@ -161,7 +161,7 @@ manager: "erikre"
   
  This produces XML similar to the following.  
   
-```  
+```xml  
 <Person>  
   <Name>Jay Hamlin</Name>  
   <Address>123 Main St.</Address>  
@@ -181,7 +181,7 @@ manager: "erikre"
   
  This produces XML similar to the following.  
   
-```  
+```xml  
 <Person serializedBy="myCode">  
   <Name>Jay Hamlin</Name>  
   <Address>123 Main St.</Address>  
@@ -195,7 +195,7 @@ manager: "erikre"
   
  This produces XML similar to the following.  
   
-```  
+```xml  
 <MyCustomWrapper>  
   <Name>Jay Hamlin</Name>  
   <Address>123 Main St.</Address>  

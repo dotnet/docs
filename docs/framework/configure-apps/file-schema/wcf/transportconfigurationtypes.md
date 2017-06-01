@@ -24,7 +24,7 @@ Represents a collection of configuration elements that identify the type of a pa
   
 ## Syntax  
   
-```  
+```xml  
 <serviceHostingEnvironment>   
    <transportConfigurationTypes>  
       <add name="String"  

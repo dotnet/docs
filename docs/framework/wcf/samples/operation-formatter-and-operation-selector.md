@@ -111,7 +111,7 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
   
 -   The App.config for the service must use a custom POX binding that sets the `messageVersion` attribute of the `textMessageEncoding` element to `None`.  
   
-    ```  
+    ```xml  
     <bindings>  
       <customBinding>  
         <binding name="poxBinding">  
@@ -124,7 +124,7 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
   
 -   The App.config for the service also must specify the custom `EnableHttpGetRequestsBehavior` by adding it to the behavior extensions section and using it.  
   
-    ```  
+    ```xml  
     <behaviors>  
       <endpointBehaviors>  
         <behavior name="enableHttpGetRequestsBehavior">  
@@ -150,7 +150,7 @@ void ReplaceFormatterBehavior(OperationDescription operationDescription, Endpoin
   
 -   The App.config for the client must use a custom POX binding that sets the `messageVersion` attribute of the `textMessageEncoding` element to `None`. One difference from the service is that the client must enable manual addressing so that the outgoing To address can be modified.  
   
-    ```  
+    ```xml  
     <bindings>  
       <customBinding>  
         <binding name="poxBinding">  

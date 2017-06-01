@@ -41,7 +41,7 @@ Developers might want to make sure that a shared assembly they are building work
   
 ## Example  
   
-```  
+```xml  
 <configuration>  
   <runtime>  
     <developmentMode developerInstallation="true"/>  

@@ -37,7 +37,7 @@ Specifies application base subdirectories for the common language runtime to sea
   
 ## Syntax  
   
-```  
+```xml  
 <probing privatePath="paths"/>  
 ```  
   
@@ -64,7 +64,7 @@ Specifies application base subdirectories for the common language runtime to sea
 ## Example  
  The following example shows how to specify application base subdirectories the runtime should search for assemblies.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

@@ -29,7 +29,7 @@ Specifies the security options for a custom binding.
   
 ## Syntax  
   
-```  
+```xml  
 <security   
    allowSerializedSigningTokenOnReply="Boolean"  
    authenticationMode="AuthenticationMode"  
@@ -123,7 +123,7 @@ messageProtectionOrder="SignBeforeEncrypt/SignBeforeEncryptAndEncryptSignature/E
   
  Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the [security](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) binding element. Both client and service are authenticated using message-level security if Kerberos authentication mechanism is available. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate service to the client. The [security](../../../../../docs/framework/configure-apps/file-schema/wcf/security-of-custombinding.md) binding element is configured to use `SecureConversation` authenticationType, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work. For more information on running this example, see [Custom Binding Security](../../../../../docs/framework/wcf/samples/custom-binding-security.md).  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <services>  

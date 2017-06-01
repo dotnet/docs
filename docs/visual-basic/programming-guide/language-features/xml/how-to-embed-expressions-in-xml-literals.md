@@ -51,7 +51,7 @@ You can combine XML literals with embedded expressions to create an XML document
   
      This example produces the following output:  
   
-    ```  
+    ```xml  
     <contact>  
       <name>Patrick Hines</name>  
     </contact>  
@@ -65,7 +65,7 @@ You can combine XML literals with embedded expressions to create an XML document
   
      This example produces the following output:  
   
-    ```  
+    ```xml  
     <contact>  
       <phone type="home">206-555-0144</phone>  
     </contact>  
@@ -81,7 +81,7 @@ You can combine XML literals with embedded expressions to create an XML document
   
      This example produces the following output:  
   
-    ```  
+    ```xml  
     <contact>  
       <name>Patrick Hines</name>  
     </contact>  

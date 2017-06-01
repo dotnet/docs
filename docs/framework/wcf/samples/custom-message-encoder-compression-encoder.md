@@ -175,7 +175,7 @@ GZipMessageEncoderFactory(innerBindingElement.CreateMessageEncoderFactory());
   
  Note that `GZipMessageEncodingBindingElement` class implements the `IPolicyExportExtension` interface, so that this binding element can be exported as a policy in metadata, as shown in the following example.  
   
-```  
+```xml  
 <wsp:Policy wsu:Id="BufferedHttpSampleServer_ISampleServer_policy">  
     <wsp:ExactlyOne>  
       <wsp:All>  
@@ -189,7 +189,7 @@ GZipMessageEncoderFactory(innerBindingElement.CreateMessageEncoderFactory());
   
  The `GZipMessageEncodingBindingElementImporter` class implements the `IPolicyImportExtension` interface, this class imports policy for `GZipMessageEncodingBindingElement`. Svcutil.exe tool can be used to import policies to the configuration file, to handle `GZipMessageEncodingBindingElement`, the following should be added to Svcutil.exe.config.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <extensions>  
@@ -295,13 +295,13 @@ public class GZipMessageEncodingElement : BindingElementExtensionElement
   
  This configuration handler maps to the following representation in the App.config or Web.config for the service or client.  
   
-```  
+```xml  
 <gzipMessageEncoding innerMessageEncoding="textMessageEncoding" />  
 ```  
   
  To use this configuration handler, it must be registered within the [\<system.serviceModel>](../../../../docs/framework/configure-apps/file-schema/wcf/system-servicemodel.md) element, as shown in the following sample configuration.  
   
-```  
+```xml  
 <extensions>  
     <bindingElementExtensions>  
        <add   

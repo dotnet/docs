@@ -40,7 +40,7 @@ translation.priority.ht:
 # &lt;example&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <example>description</example>  
 ```  
   

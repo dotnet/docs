@@ -36,7 +36,7 @@ Container for compiler configuration elements; contains zero or more [\<compiler
   
 ## Syntax  
   
-```  
+```xml  
 <compilers>  
   <compiler ... />  
 </compilers>  
@@ -72,7 +72,7 @@ Container for compiler configuration elements; contains zero or more [\<compiler
 ## Example  
  The following example illustrates a typical compiler configuration element.  
   
-```  
+```xml  
 <configuration>  
    <system.codedom>  
      <compilers>  

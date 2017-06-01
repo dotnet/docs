@@ -23,7 +23,7 @@ Specifies how service metadata can be processed.
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
     <client>  
         <metadata>  

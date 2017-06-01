@@ -26,7 +26,7 @@ Represents the security capabilities of the [\<wsHttpBinding>](../../../../../do
   
 ## Syntax  
   
-```  
+```xml  
 <security mode="Message/None/Transport/TransportWithMessageCredential">  
    <transport  
          clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  

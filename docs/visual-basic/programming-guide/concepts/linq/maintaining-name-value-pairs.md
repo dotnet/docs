@@ -67,7 +67,7 @@ Console.WriteLine(root)
   
  This example produces the following output:  
   
-```  
+```xml  
 <Root Top="22" Left="20" Bottom="122" Right="300" DefaultColor="Color.Red" />  
 <Root Top="10" Left="20" Bottom="122" Right="300" DefaultColor="Color.Red" />  
 <Root Top="10" Left="20" Bottom="122" Right="300" />  
@@ -101,7 +101,7 @@ Console.WriteLine(root)
   
  This example produces the following output:  
   
-```  
+```xml  
 <Root>  
   <Top>22</Top>  
   <Left>20</Left>  

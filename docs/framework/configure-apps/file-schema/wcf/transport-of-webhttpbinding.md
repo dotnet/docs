@@ -27,7 +27,7 @@ Defines the transport-level security settings for a service endpoint configured 
   
 ## Syntax  
   
-```  
+```xml  
 <webHttpBinding>  
     <binding>  
         <security  

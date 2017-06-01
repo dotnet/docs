@@ -44,7 +44,7 @@ Network tracing provides access to information about method invocations and netw
   
  To send traces to a log file, add the following node to the `<system.diagnostics>` node of the appropriate configuration file (application or machine). You can change the name of the file (trace.log) to suit your needs.  
   
-```  
+```xml  
 <system.diagnostics>  
   <trace autoflush="true" indentsize="4">  
     <listeners>  

@@ -29,7 +29,7 @@ This sample demonstrates how to enable tracing and message logging. The resultin
 ## Tracing  
  [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] uses the tracing mechanism defined in the <xref:System.Diagnostics> namespace. In this tracing model, trace data is produced by trace sources that applications implement. Each source is identified by a name. Trace consumers create trace listeners for the trace sources for which they want to retrieve information. To receive trace data, you must create a listener for the trace source. In [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)], this can be done by adding the following code to either the service’s or client’s configuration file by setting the Service Model trace source `switchValue`:  
   
-```  
+```xml  
 <system.diagnostics>  
     <sources>  
       <source name="System.ServiceModel" switchValue="Information,ActivityTracing"  
@@ -72,7 +72,7 @@ This sample demonstrates how to enable tracing and message logging. The resultin
 ## Message Logging  
  Message logging can be enabled both on the client and service of any [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] application. To enable message logging, you must add the following code to either the client or service:  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <diagnostics>  
@@ -92,7 +92,7 @@ This sample demonstrates how to enable tracing and message logging. The resultin
   
  Configure the trace listener by adding the following code to the <xref:System.Diagnostics> section of the client's App.config file or the service's Web.config file:  
   
-```  
+```xml  
 <system.diagnostics>  
     <sources>  
       <source name="System.ServiceModel" switchValue="Information,ActivityTracing"  

@@ -32,7 +32,7 @@ Console.WriteLine(str)
   
  This example produces the following output:  
   
-```  
+```xml  
 <Root Attr="abcde" />  
 abcde  
 ```  

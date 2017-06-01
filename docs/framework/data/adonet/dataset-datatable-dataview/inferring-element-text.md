@@ -20,7 +20,7 @@ If an element contains text and has no child elements to be inferred as tables (
   
  For example, consider the following XML.  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1 attr1="value1">Text1</Element1>  
 </DocumentElement>  
@@ -38,7 +38,7 @@ If an element contains text and has no child elements to be inferred as tables (
   
  If an element contains text, but also has child elements that contain text, a column will not be added to the table to store the text contained in the element. The text contained in the element will be ignored, while the text in the child elements is included in a row in the table. For example, consider the following XML.  
   
-```  
+```xml  
 <Element1>  
   Text1  
   <ChildElement1>Text2</ChildElement1>  

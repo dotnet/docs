@@ -58,7 +58,7 @@ When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndic
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed> is serialized to Atom 1.0.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <feed xml:lang="EN-US" xmlns="http://www.w3.org/2005/Atom">  
   <title type="text">My Feed Title</title>  
@@ -107,7 +107,7 @@ When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndic
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationFeed> is serialized to RSS 2.0.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <rss xmlns:a10="http://www.w3.org/2005/Atom" version="2.0">  
   <channel>  
@@ -155,7 +155,7 @@ When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndic
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationItem> is serialized to Atom 1.0.  
   
-```  
+```xml  
 <entry xmlns="http://www.w3.org/2005/Atom">  
   <id>ItemID</id>  
   <title type="text">Item Title</title>  
@@ -197,7 +197,7 @@ When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndic
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationItem> is serialized to RSS 2.0.  
   
-```  
+```xml  
 <item>  
   <guid isPermaLink="false">ItemID</guid>  
   <link>http://myitemuri/</link>  
@@ -241,7 +241,7 @@ When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndic
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationPerson> is serialized to Atom 1.0.  
   
-```  
+```xml  
   <author>  
     <name>Jesper Aaberg</name>  
     <uri>http://Contoso/Aaberg</uri>  
@@ -256,7 +256,7 @@ When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndic
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationPerson> class is serialized to RSS 2.0 if only one <xref:System.ServiceModel.Syndication.SyndicationPerson> exists in the `Authors` or `Contributors` collections, respectively.  
   
-```  
+```xml  
 <author>Jesper.Aaberg@contoso.com</author>  
 <a10:contributor>  
     <a10:name>Lene Aaling</a10:name>  
@@ -267,7 +267,7 @@ When developing a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] syndic
   
  The following XML shows how the <xref:System.ServiceModel.Syndication.SyndicationPerson> class is serialized to RSS 2.0 if more than one <xref:System.ServiceModel.Syndication.SyndicationPerson> exists in the `Authors` or `Contributors` collections, respectively.  
   
-```  
+```xml  
 <a10:author>  
     <a10:name>Jesper Aaberg</a10:name>  
     <a10:uri>http://Contoso/Aaberg</a10:uri>  

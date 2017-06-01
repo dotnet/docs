@@ -234,7 +234,7 @@ The ServiceModel Metadata Utility tool is used to generate service model code fr
   
  The following config file shows how to set the reader quotas for svcutil  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
     <system.serviceModel>  

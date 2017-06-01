@@ -43,7 +43,7 @@ The `cref` attribute in an XML documentation tag means "code reference." It spec
   
  When compiled, the program produces the following XML file. Notice that the `cref` attribute for the `GetZero` method, for example, has been transformed by the compiler to `"M:TestNamespace.TestClass.GetZero"`. The "M:" prefix means "method" and is a convention that is recognized by documentation tools such as Sandcastle. For a complete list of prefixes, see [Processing the XML File](../../../csharp/programming-guide/xmldoc/processing-the-xml-file.md).  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <doc>  
     <assembly>  

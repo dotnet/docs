@@ -44,7 +44,7 @@ public class CalculatorService : ICalculator
   
  The service exposes one endpoint for communicating with the service and one endpoint for exposing the service's WSDL document using the WS-MetadataExchange protocol, defined by using the configuration file (Web.config). The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element, which defaults to using message security. This sample sets the `clientCredentialType` attribute to Certificate to require client authentication.  
   
-```  
+```xml  
 <system.serviceModel>  
     <protocolMapping>  
       <add scheme="http" binding="wsHttpBinding"/>  
@@ -95,7 +95,7 @@ public class CalculatorService : ICalculator
   
  The behavior specifies the service's credentials that are used when the client authenticates the service. The server certificate subject name is specified in the `findValue` attribute in the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md) element.  
   
-```  
+```xml  
 <!--For debugging purposes, set the includeExceptionDetailInFaults attribute to true.-->  
 <behaviors>  
       <serviceBehaviors>  
@@ -128,7 +128,7 @@ public class CalculatorService : ICalculator
   
  The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate security mode and authentication mode. When running in a cross-computer scenario, ensure that the service endpoint address is changed accordingly.  
   
-```  
+```xml  
 <system.serviceModel>  
     <client>  
       <!-- Use a behavior to configure the client certificate to present to the service. -->  
@@ -154,7 +154,7 @@ public class CalculatorService : ICalculator
   
  The client implementation can set the certificate to use, either through the configuration file or through code. The following sample shows how to set the certificate to use in the configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
   ...  
   

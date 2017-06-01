@@ -32,7 +32,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
   
 ## Syntax  
   
-```  
+```xml  
 <disableFusionUpdatesFromADManager enabled="0|1"/>  
 ```  
   
@@ -76,7 +76,7 @@ Specifies whether the default behavior, which is to allow the runtime host to ov
 ## Example  
  The following code example shows how to disable the ability to override Fusion settings by using the `<disableFusionUpdatesFromADManager>` element.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <disableFusionUpdatesFromADManager enabled="1" />  

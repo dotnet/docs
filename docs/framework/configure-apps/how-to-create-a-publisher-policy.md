@@ -38,7 +38,7 @@ Vendors of assemblies can state that applications should use a newer version of 
   
  The schema for publisher policy is described in [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md). The following example shows a publisher policy file that redirects one version of `myAssembly` to another.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

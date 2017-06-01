@@ -92,19 +92,19 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a client fo
   
 4.  If a value other than the default is preferred, set the `issuedTokenRenewalThresholdPercentage` attribute on the <`issuedToken`> element to an appropriate value, for example:  
   
-    ```  
+    ```xml  
     <issuedToken issuedTokenRenewalThresholdPercentage = "80" />  
     ```  
   
 5.  If a key entropy mode other than `CombinedEntropy` is on a binding that does not use message security or transport security with message credentials (for example, the binding does not have a `SecurityBindingElement`), set the `defaultKeyEntropyMode` attribute on the `<issuedToken>` element to a either `ServerEntropy` or `ClientEntropy` as required.  
   
-    ```  
+    ```xml  
     <issuedToken defaultKeyEntropyMode = "ServerEntropy" />  
     ```  
   
 6.  Optional. Configure any issuer-specific custom endpoint behavior by creating an <`issuerChannelBehaviors`> element as a child of the <`issuedToken`> element. For each behavior, create an <`add`> element as a child of the <`issuerChannelBehaviors`> element. Specify the issuer address of the behavior by setting the `issuerAddress` attribute on the <`add`> element. Specify the behavior itself by setting the `behaviorConfiguration` attribute on the <`add`> element.  
   
-    ```  
+    ```xml  
     <issuerChannelBehaviors>  
     <add issuerAddress="http://fabrikam.org/sts" behaviorConfiguration="FabrikamSTS" />  
     </issuerChannelBehaviors>  
@@ -133,7 +133,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a client fo
   
 2.  Create an `<add>` element as a child of the `<scopedCertificates>` element. Specify values for the `storeLocation`, `storeName`, `x509FindType`, and `findValue` attributes to refer to the appropriate certificate. Set the `targetUri` attribute to a value that provides the address of the endpoint that the certificate is to be used for, as shown in the following example.  
   
-    ```  
+    ```xml  
     <scopedCertificates>  
      <add targetUri="http://fabrikam.com/sts"   
           storeLocation="CurrentUser"  

@@ -35,7 +35,7 @@ Specifies a listener that collects, stores, and routes messages. Listeners direc
   
 ## Syntax  
   
-```  
+```xml  
 <listeners>   
   <add>...</add>  
   <clear/>  
@@ -74,7 +74,7 @@ Specifies a listener that collects, stores, and routes messages. Listeners direc
 ## Example  
  The following example shows how to use the **\<listeners>** element to add the listeners `MyListener` and `MyEventListener` to the **Listeners** collection. `MyListener` creates a file called `MyListener.log` and writes the output to the file. `MyEventListener` creates an entry in the event log.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="true" indentsize="0">  

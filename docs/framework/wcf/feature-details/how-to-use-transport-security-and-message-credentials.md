@@ -91,7 +91,7 @@ Securing a service with both transport and message credentials uses the best of 
   
 2.  Specify the client credential type for the message-level security. The following example sets the `clientCredentialType` attribute of the <`message`> element to `UserName`.  
   
-    ```  
+    ```xml  
     <wsHttpBinding>  
     <binding name="WsHttpBinding_ICalculator">  
             <security mode="TransportWithMessageCredential" >  
@@ -105,7 +105,7 @@ Securing a service with both transport and message credentials uses the best of 
   
 1.  For SSL over TCP, you must explicitly specify the certificate in the `<behaviors>` element. The following example specifies a certificate by its issuer in the default store location (local machine and personal stores).  
   
-    ```  
+    ```xml  
     <behaviors>  
      <serviceBehaviors>  
        <behavior name="mySvcBehavior">  
@@ -126,7 +126,7 @@ Securing a service with both transport and message credentials uses the best of 
   
 5.  Add a <`message>` element, and set the `clientCredentialType` attribute to an appropriate value.  
   
-    ```  
+    ```xml  
     <bindings>  
     <netTcpBinding>  
       <binding name="myTcpBinding">  
@@ -150,7 +150,7 @@ Securing a service with both transport and message credentials uses the best of 
   
 5.  Add a <`message`> element and set the `clientCredentialType` attribute to an appropriate value. The following code sets the value to a certificate.  
   
-    ```  
+    ```xml  
     <bindings>  
     <netTcpBinding>  
       <binding name="myTcpBinding">  

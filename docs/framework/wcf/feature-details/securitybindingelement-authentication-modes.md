@@ -33,7 +33,7 @@ manager: "mbaldwin"
   
 4.  Set the `authenticationMode` attribute to one of the values described below. For example, the following code sets the mode to `AnonymousForCertificate`.  
   
-    ```  
+    ```xml  
     <bindings>  
       <customBinding>  
         <binding name="SecureCustomBinding">  

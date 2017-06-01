@@ -55,14 +55,6 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.#ctor
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Windows.Forms.DataVisualization.Charting.AnnotationSmartLabelStyle.CalloutLineWidth
 ms.technology: 
   - "dotnet-winforms"

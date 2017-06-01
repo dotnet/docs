@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.UInt16.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.UInt16.System#IConvertible#ToDouble(System.IFormatProvider)
 ms.technology: 
   - "dotnet-standard"

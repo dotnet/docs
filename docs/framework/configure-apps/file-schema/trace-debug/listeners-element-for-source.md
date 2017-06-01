@@ -36,7 +36,7 @@ Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%
   
 ## Syntax  
   
-```  
+```xml  
 <listeners>   
   <add>...</add>  
   <remove ... />  
@@ -75,7 +75,7 @@ Adds or removes listeners in the <xref:System.Diagnostics.TraceSource.Listeners%
 ## Example  
  The following example shows how to use the `<listeners>` element to add a console trace listener to the `mySource` source and to remove the default trace listener.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

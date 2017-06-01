@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Schema.XmlSchemaInferenceException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Schema.XmlSchemaInferenceException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
 ms.technology: 
   - "dotnet-standard"

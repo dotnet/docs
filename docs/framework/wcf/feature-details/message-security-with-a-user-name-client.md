@@ -49,7 +49,7 @@ The following illustration shows an [!INCLUDE[indigo1](../../../../includes/indi
 ### Configuration  
  The following configuration can be used instead of the code:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  
@@ -100,7 +100,7 @@ The following illustration shows an [!INCLUDE[indigo1](../../../../includes/indi
 ### Configuration  
  The following code configures the client. The binding is to message mode security, and the client credential type is set to `UserName`. The user name and password can only be specified using code (it is not configurable).  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

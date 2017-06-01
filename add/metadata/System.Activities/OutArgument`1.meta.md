@@ -71,15 +71,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.OutArgument`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.OutArgument`1.GetLocation(System.Activities.ActivityContext)
 ms.technology: 
   - "dotnet-standard"

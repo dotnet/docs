@@ -61,7 +61,7 @@ The `moduloObjectHashcode` managed debugging assistant (MDA) changes the behavio
 ## Configuration  
  The `modulus` attribute specifies the modulus used on the hash code. The default value is 1.  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <moduloObjectHashcode modulus="1" />  

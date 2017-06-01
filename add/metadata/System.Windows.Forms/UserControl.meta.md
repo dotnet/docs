@@ -97,14 +97,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.UserControl.ValidateChildren
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.UserControl.AutoValidate
 ms.technology: 
   - "dotnet-winforms"

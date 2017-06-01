@@ -25,7 +25,7 @@ This sample demonstrates how to implement End-to-End (E2E) tracing using Event T
   
  Each trace source in the <xref:System.Diagnostics> tracing model can have multiple trace listeners that determine where and how the data is traced. The type of listener defines the format in which trace data is logged. The following code sample shows how to add the listener to configuration.  
   
-```  
+```xml  
 <system.diagnostics>  
     <sources>  
         <source name="System.ServiceModel"   

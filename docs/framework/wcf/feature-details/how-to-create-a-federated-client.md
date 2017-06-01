@@ -28,7 +28,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a client fo
 3.  Set the properties of the <xref:System.ServiceModel.Security.X509CertificateRecipientClientCredential>, which allows certificates needed to communicate securely with given endpoints, such as security token services.  
   
 > [!NOTE]
->  A <xref:System.Security.Cryptography.CryptographicException> might be thrown when a client uses impersonated credentials, the <xref:System.ServiceModel.WSFederationHttpBinding> binding or a custom-issued token, and asymmetric keys. Asymmetric keys are used with the <xref:System.ServiceModel.WSFederationHttpBinding> binding and custom-issued tokens when the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType%2A> and <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType%2A> properties, respectively, are set to <xref:System.IdentityModel.Tokens.SecurityKeyType>. The <xref:System.Security.Cryptography.CryptographicException> is thrown when the client attempts to send a message and a user profile doesn’t exist for the identity that the client is impersonating. To mitigate this issue, log on to the client computer or call `LoadUserProfile` before sending the message.  
+>  A <xref:System.Security.Cryptography.CryptographicException> might be thrown when a client uses impersonated credentials, the <xref:System.ServiceModel.WSFederationHttpBinding> binding or a custom-issued token, and asymmetric keys. Asymmetric keys are used with the <xref:System.ServiceModel.WSFederationHttpBinding> binding and custom-issued tokens when the <xref:System.ServiceModel.FederatedMessageSecurityOverHttp.IssuedKeyType%2A> and <xref:System.ServiceModel.Security.Tokens.IssuedSecurityTokenParameters.KeyType%2A> properties, respectively, are set to <xref:System.IdentityModel.Tokens.SecurityKeyType.AsymmetricKey>. The <xref:System.Security.Cryptography.CryptographicException> is thrown when the client attempts to send a message and a user profile doesn’t exist for the identity that the client is impersonating. To mitigate this issue, log on to the client computer or call `LoadUserProfile` before sending the message.  
   
  This topic provides detailed information about these procedures. [!INCLUDE[crabout](../../../../includes/crabout-md.md)] creating an appropriate binding, see [How to: Create a WSFederationHttpBinding](../../../../docs/framework/wcf/feature-details/how-to-create-a-wsfederationhttpbinding.md). [!INCLUDE[crabout](../../../../includes/crabout-md.md)] how a federated service works, see [Federation](../../../../docs/framework/wcf/feature-details/federation.md).  
   
@@ -68,7 +68,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a client fo
   
      The renewal interval determined by the token validity period and the `IssuedTokenRenewalThresholdPercentage` value is overridden by the `MaxIssuedTokenCachingTime` value in cases where the caching time is shorter than the renewal threshold time. For example, if the product of `IssuedTokenRenewalThresholdPercentage` and the token's duration is eight hours, and the `MaxIssuedTokenCachingTime` value is 10 minutes, the client contacts the security token service for an updated token every 10 minutes.  
   
-5.  If a key entropy mode other than <xref:System.ServiceModel.Security.SecurityKeyEntropyMode> is needed on a binding that does not use message security or transport security with message credentials (for example. the binding does not have a <xref:System.ServiceModel.Channels.SecurityBindingElement>), set the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.DefaultKeyEntropyMode%2A> property to an appropriate value. The *entropy* mode determines whether symmetric keys can be controlled using the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.DefaultKeyEntropyMode%2A> property. This default is <xref:System.ServiceModel.Security.SecurityKeyEntropyMode>, where both the client and the token issuer provide data that is combined to produce the actual key. Other values are <xref:System.ServiceModel.Security.SecurityKeyEntropyMode> and <xref:System.ServiceModel.Security.SecurityKeyEntropyMode>, which means the entire key is specified by the client or the server, respectively. The following example sets the property to use only the server data for the key.  
+5.  If a key entropy mode other than <xref:System.ServiceModel.Security.SecurityKeyEntropyMode.CombinedEntropy> is needed on a binding that does not use message security or transport security with message credentials (for example. the binding does not have a <xref:System.ServiceModel.Channels.SecurityBindingElement>), set the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.DefaultKeyEntropyMode%2A> property to an appropriate value. The *entropy* mode determines whether symmetric keys can be controlled using the <xref:System.ServiceModel.Security.IssuedTokenClientCredential.DefaultKeyEntropyMode%2A> property. This default is <xref:System.ServiceModel.Security.SecurityKeyEntropyMode.CombinedEntropy>, where both the client and the token issuer provide data that is combined to produce the actual key. Other values are <xref:System.ServiceModel.Security.SecurityKeyEntropyMode.ClientEntropy> and <xref:System.ServiceModel.Security.SecurityKeyEntropyMode.ServerEntropy>, which means the entire key is specified by the client or the server, respectively. The following example sets the property to use only the server data for the key.  
   
      [!code-csharp[c_CreateSTS#17](../../../../samples/snippets/csharp/VS_Snippets_CFX/c_creatests/cs/source.cs#17)]
      [!code-vb[c_CreateSTS#17](../../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_creatests/vb/source.vb#17)]  
@@ -92,19 +92,19 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a client fo
   
 4.  If a value other than the default is preferred, set the `issuedTokenRenewalThresholdPercentage` attribute on the <`issuedToken`> element to an appropriate value, for example:  
   
-    ```  
+    ```xml  
     <issuedToken issuedTokenRenewalThresholdPercentage = "80" />  
     ```  
   
 5.  If a key entropy mode other than `CombinedEntropy` is on a binding that does not use message security or transport security with message credentials (for example, the binding does not have a `SecurityBindingElement`), set the `defaultKeyEntropyMode` attribute on the `<issuedToken>` element to a either `ServerEntropy` or `ClientEntropy` as required.  
   
-    ```  
+    ```xml  
     <issuedToken defaultKeyEntropyMode = "ServerEntropy" />  
     ```  
   
 6.  Optional. Configure any issuer-specific custom endpoint behavior by creating an <`issuerChannelBehaviors`> element as a child of the <`issuedToken`> element. For each behavior, create an <`add`> element as a child of the <`issuerChannelBehaviors`> element. Specify the issuer address of the behavior by setting the `issuerAddress` attribute on the <`add`> element. Specify the behavior itself by setting the `behaviorConfiguration` attribute on the <`add`> element.  
   
-    ```  
+    ```xml  
     <issuerChannelBehaviors>  
     <add issuerAddress="http://fabrikam.org/sts" behaviorConfiguration="FabrikamSTS" />  
     </issuerChannelBehaviors>  
@@ -133,7 +133,7 @@ In [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)], creating a client fo
   
 2.  Create an `<add>` element as a child of the `<scopedCertificates>` element. Specify values for the `storeLocation`, `storeName`, `x509FindType`, and `findValue` attributes to refer to the appropriate certificate. Set the `targetUri` attribute to a value that provides the address of the endpoint that the certificate is to be used for, as shown in the following example.  
   
-    ```  
+    ```xml  
     <scopedCertificates>  
      <add targetUri="http://fabrikam.com/sts"   
           storeLocation="CurrentUser"  

@@ -35,15 +35,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Odbc.OdbcConnectionStringBuilder.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Odbc.OdbcConnectionStringBuilder.Dsn
 ms.technology: 
   - "dotnet-ado"

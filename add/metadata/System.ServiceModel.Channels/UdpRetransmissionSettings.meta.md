@@ -81,10 +81,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "ghogen"
 ---
-
----
-uid: System.ServiceModel.Channels.UdpRetransmissionSettings.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

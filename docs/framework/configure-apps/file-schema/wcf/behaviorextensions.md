@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;behaviorExtensions&gt;
 Behavior extensions enable the user to create user-defined behavior elements. These elements can be used alongside the standard Windows Communication Foundation (WCF) behavior elements. The `behaviorExtensions` section defines the element such that it can be used in configuration. Here is an example of a typical behavior extension.  
   
-```  
+```xml  
 <system.serviceModel>  
     <extensions>  
         <behaviorExtensions>  
@@ -33,7 +33,7 @@ Behavior extensions enable the user to create user-defined behavior elements. Th
   
  After the element and its configuration type are defined, the extension can be used, as shown in the following example.  
   
-```  
+```xml  
 <behaviors>  
     <behavior configurationName="testChannelBehavior">  
         <myBehavior />  

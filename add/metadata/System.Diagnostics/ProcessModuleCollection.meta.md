@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.ProcessModuleCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.ProcessModuleCollection.Item(System.Int32)
 ms.technology: 
   - "dotnet-standard"

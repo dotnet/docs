@@ -68,7 +68,7 @@ This topic describes how to write an extension for the <xref:System.ServiceModel
   
 3.  Add the WSDL importer to your client configuration.  
   
-    ```  
+    ```xml  
     <metadata>  
       <wsdlImporters>  
         <extension type="Microsoft.WCF.Documentation.WsdlDocumentationImporter, WsdlDocumentation" />  

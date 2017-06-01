@@ -80,15 +80,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.IDbCommand.ExecuteReader
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.IDbCommand.CreateParameter
 ms.technology: 
   - "dotnet-ado"

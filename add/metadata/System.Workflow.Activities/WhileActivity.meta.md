@@ -13,13 +13,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Activities.WhileActivity.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Activities.WhileActivity.DynamicActivity
 author: "Erikre"
 ms.author: "erikre"

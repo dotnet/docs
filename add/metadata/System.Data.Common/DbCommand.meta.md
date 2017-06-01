@@ -103,25 +103,7 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbCommand.System#Data#IDbCommand#ExecuteReader
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbCommand.ExecuteReaderAsync
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbCommand.ExecuteNonQueryAsync
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -202,15 +184,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbCommand.ExecuteReaderAsync
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbCommand.ExecuteScalarAsync
 ms.technology: 
   - "dotnet-ado"
@@ -230,24 +203,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.Common.DbCommand.CommandTimeout
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbCommand.ExecuteScalarAsync
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.Common.DbCommand.ExecuteReader
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

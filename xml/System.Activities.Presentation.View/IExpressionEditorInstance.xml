@@ -601,14 +601,7 @@
       <Docs>
         <summary>Gets or sets the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control. This property implicitly sets the height of the <see langword="ExpressionTextBox" /> control when growing to fit.</summary>
         <value>Returns an <see cref="T:System.Int32" /> that containing the maximum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MaxHeight%2A> is set, it will override `MaxLines`.  
-  
- ]]></format>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="MinLines">
@@ -626,14 +619,7 @@
       <Docs>
         <summary>Gets or sets the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control. This property implicitly sets the height of the <see langword="ExpressionTextBox" /> control.</summary>
         <value>Returns an <see cref="T:System.Int32" /> that contains the minimum number of lines of text to be displayed by the <see langword="ExpressionTextBox" /> control.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If <xref:System.Activities.Presentation.View.IExpressionEditorInstance.MinHeight%2A> is set, then it will override MinLines.  
-  
- ]]></format>
-        </remarks>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ParameterInfo">

@@ -109,11 +109,3 @@ ms.technology:
 ms.author: "mblythe"
 manager: "mblythe"
 ---
-
----
-uid: System.Web.UI.DataVisualization.Charting.DataPoint.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----

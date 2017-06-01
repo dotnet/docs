@@ -27,7 +27,7 @@ endpointBehaviors section
   
 ## Syntax  
   
-```  
+```xml  
 <issuedToken   
    cacheIssuedTokens="Boolean"  
    defaultKeyEntropyMode="ClientEntropy/ServerEntropy/CombinedEntropy"  

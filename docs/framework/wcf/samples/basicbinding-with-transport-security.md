@@ -35,30 +35,28 @@ This sample demonstrates the use of SSL transport security with the basic bindin
   
  The program code in the sample is identical to that of the [Getting Started](../../../../docs/framework/wcf/samples/getting-started-sample.md) service. The endpoint definition and binding definition in the configuration file settings are modified to enable secure communication, as shown in the following sample configuration.  
   
-```  
+```xml  
 <system.serviceModel>  
-   <services>  
-      <service   
-          type="Microsoft.ServiceModel.Samples.CalculatorService"  
-          behaviorConfiguration="CalculatorServiceBehavior">  
-         <endpoint address=""  
-               binding="basicHttpBinding"  
-               bindingConfiguration="Binding1"   
-               contract="Microsoft.ServiceModel.Samples.ICalculator" />  
-      </service>  
+  <services>  
+    <service type="Microsoft.ServiceModel.Samples.CalculatorService"  
+             behaviorConfiguration="CalculatorServiceBehavior">  
+      <endpoint address=""  
+                binding="basicHttpBinding"  
+                bindingConfiguration="Binding1"   
+                contract="Microsoft.ServiceModel.Samples.ICalculator" />  
+    </service>  
    </services>  
-    <bindings>  
-        <basicHttpBinding>  
-        <!-- Configure basicHttpBinding with Transport security -- >  
-        <!-- mode and clientCredentialType set to None.-->  
-           <binding name="Binding1">  
-               <security mode="Transport">  
-                   <transport clientCredentialType="None"/>  
-               </security>  
-           </binding>  
-        </basicHttpBinding>  
-    </bindings>  
-    ...  
+  <bindings>  
+    <basicHttpBinding>  
+      <!-- Configure basicHttpBinding with Transport security -- >  
+      <!-- mode and clientCredentialType set to None.-->  
+      <binding name="Binding1">  
+        <security mode="Transport">  
+          <transport clientCredentialType="None"/>  
+        </security>  
+      </binding>  
+    </basicHttpBinding>  
+  </bindings>  
 </system.serviceModel>  
 ```  
   

@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Principal.IdentityNotMappedException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Principal.IdentityNotMappedException.UnmappedIdentities
 ms.technology: 
   - "dotnet-standard"

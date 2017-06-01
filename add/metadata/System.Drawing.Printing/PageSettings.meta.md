@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Printing.PageSettings.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Printing.PageSettings.SetHdevmode(System.IntPtr)
 ms.technology: 
   - "dotnet-standard"

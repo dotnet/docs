@@ -36,7 +36,7 @@ SyndicationFeedFormatter GetTemplate1();
   
  To turn on the WCF WEB HTTP Help page, you must add an endpoint behavior to your service's endpoints. This can be done in configuration or code. To enable the WCF WEB HTTP Help age in configuration, add an endpoint behavior with a `<webHttp>` element, set `enableHelp` to `true`, and add an endpoint and configure it to use the endpoint behavior. The following configuration code shows how to do this.  
   
-```  
+```xml  
 <endpointBehaviors>  
    <behavior name="RESTEndpointBehavior">  
       <webHttp enableHelp="true"/>  
@@ -67,7 +67,7 @@ using (WebServiceHost host = new WebServiceHost(typeof(Service), new Uri("http:/
 ## Schemas Used in the WCF Web HTTP Service Help Page  
  The following schemas are used in the WCF Web HTTP service help page.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-16"?>  
 <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">  
   <xs:element name="anyType" nillable="true" type="xs:anyType" />  

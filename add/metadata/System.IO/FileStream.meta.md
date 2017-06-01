@@ -51,15 +51,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileStream.Flush
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileStream.GetAccessControl
 ms.technology: 
   - "dotnet-standard"

@@ -116,15 +116,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XNode.ElementsAfterSelf
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XNode.ReplaceWith
 ms.technology: 
   - "dotnet-standard"
@@ -215,15 +206,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XNode.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XNode.ElementsBeforeSelf
 ms.technology: 
   - "dotnet-standard"
@@ -305,34 +287,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XNode.ElementsBeforeSelf
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XNode.CompareDocumentOrder(System.Xml.Linq.XNode,System.Xml.Linq.XNode)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XNode.Ancestors
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.Linq.XNode.CreateReader
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

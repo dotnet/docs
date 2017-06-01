@@ -48,13 +48,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.AccountManagement.PrincipalSearcher.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.AccountManagement.PrincipalSearcher.GetUnderlyingSearcherType
 author: "BrucePerlerMS"
 ms.author: "bruceper"

@@ -63,14 +63,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SecurityKeyIdentifier.#ctor(System.IdentityModel.Tokens.SecurityKeyIdentifierClause[])
 ms.technology: 
   - "dotnet-standard"

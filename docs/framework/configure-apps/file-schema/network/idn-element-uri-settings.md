@@ -32,7 +32,7 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
   
 ## Syntax  
   
-```  
+```xml  
 <idn  
   enabled="All|AllExceptIntranet|None"  
 /idn>  
@@ -63,7 +63,7 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
   
 1.  Add the following line to the machine.config file under the .NET Framework 2.0 directory  
   
-    ```  
+    ```xml  
     <section name="uri" type="System.Configuration.UriSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />  
     ```  
   
@@ -95,7 +95,7 @@ Specifies if Internationalized Domain Name (IDN) parsing is applied to a domain 
   
 ### Code  
   
-```  
+```xml  
 <configuration>  
   <uri>  
     <idn enabled="All" />  

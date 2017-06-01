@@ -98,15 +98,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Timer.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Timer.#ctor(System.Threading.TimerCallback,System.Object,System.Int64,System.Int64)
 ms.technology: 
   - "dotnet-standard"

@@ -16,14 +16,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.ObjectKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.ObjectKeyFrame.ValueProperty
 ms.technology: 
   - "dotnet-wpf"

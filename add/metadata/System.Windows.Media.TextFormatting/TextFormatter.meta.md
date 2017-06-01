@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.TextFormatting.TextFormatter.Create
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.TextFormatting.TextFormatter.Dispose
 ms.technology: 
   - "dotnet-wpf"

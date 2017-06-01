@@ -26,15 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.ToBase64Transform.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.ToBase64Transform.#ctor
 ms.technology: 
   - "dotnet-standard"

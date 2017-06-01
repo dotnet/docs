@@ -143,12 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.DataSourceDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.DataSourceDesigner.ViewSchemasEquivalent(System.Web.UI.Design.IDataSourceViewSchema,System.Web.UI.Design.IDataSourceViewSchema)
 ms.technology: 
   - "dotnet-webforms"

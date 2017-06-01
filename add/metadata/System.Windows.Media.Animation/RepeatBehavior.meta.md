@@ -44,15 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.RepeatBehavior.ToString
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.RepeatBehavior.HasCount
 ms.technology: 
   - "dotnet-wpf"

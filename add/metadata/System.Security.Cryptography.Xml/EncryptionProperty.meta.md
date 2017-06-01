@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.EncryptionProperty.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.EncryptionProperty.LoadXml(System.Xml.XmlElement)
 ms.technology: 
   - "dotnet-standard"

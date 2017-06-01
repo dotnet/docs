@@ -28,7 +28,7 @@ This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBind
   
  The default security for the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) is message security using Windows authentication. The configuration files in this sample explicitly set the `mode` attribute of the [\<security>](../../../../docs/framework/configure-apps/file-schema/wcf/security-of-wshttpbinding.md) to `Message` and the `clientCredentialType` attribute to `Windows`. These values are the default values for this binding, but they have been explicitly configured, as shown in the following sample configuration to demonstrate their use.  
   
-```  
+```xml  
 <bindings>  
     <wsHttpBinding>  
         <binding>  
@@ -42,7 +42,7 @@ This sample demonstrates how to configure a <xref:System.ServiceModel.WSHttpBind
   
  The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `securityMode` and `authenticationMode`.  
   
-```  
+```xml  
 <system.serviceModel>  
   <client>  
     <endpoint address=  

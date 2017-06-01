@@ -36,7 +36,7 @@ void client_GetAlbumListCompleted(object sender, GetAlbumListCompletedEventArgs 
   
  In the following sample XAML code, the `ListBox` specifies `ItemsSource="{Binding }"`.  
   
-```  
+```xml  
 <ListBox   
           ItemTemplate="{StaticResource AlbumStyle}"  
           ItemsSource="{Binding }"   
@@ -47,7 +47,7 @@ void client_GetAlbumListCompleted(object sender, GetAlbumListCompletedEventArgs 
   
  The `AlbumStyle` data template lays out a grid with two `TextBlock`s side by side. One specifies the name of the Album and the other the number of Tracks in the album.  
   
-```  
+```xaml  
 <DataTemplate x:Key="AlbumStyle">  
     <Grid>  
         <Grid.ColumnDefinitions>  
@@ -62,7 +62,7 @@ void client_GetAlbumListCompleted(object sender, GetAlbumListCompletedEventArgs 
   
  The following XAML code creates a second `ListBox`.  
   
-```  
+```xaml  
 <ListBox Grid.Row="2"   
             Grid.ColumnSpan="2"   
             ItemTemplate="{StaticResource TrackStyle}"  

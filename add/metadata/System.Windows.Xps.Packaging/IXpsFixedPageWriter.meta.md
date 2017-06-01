@@ -76,13 +76,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.Packaging.IXpsFixedPageWriter.AddFont(System.Boolean)
 ms.technology: 
   - "dotnet-wpf"

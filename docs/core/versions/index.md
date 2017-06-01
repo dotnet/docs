@@ -109,7 +109,7 @@ After shipping a .NET Core v1.0.0 stable version, patch-level changes (no new AP
 
 You can see patch updates demonstrated in the project.json examples below.
 
-```
+```json
 {
   "dependencies": {
     "Microsoft.NETCore.App": "1.0.1"

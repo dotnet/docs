@@ -146,15 +146,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.Int32Animation.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.Int32Animation.#ctor(System.Int32,System.Windows.Duration)
 ms.technology: 
   - "dotnet-wpf"

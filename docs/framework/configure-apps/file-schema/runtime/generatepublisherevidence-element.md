@@ -32,7 +32,7 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
   
 ## Syntax  
   
-```  
+```xml  
 <generatePublisherEvidence    
    enabled="true|false"/>  
 ```  
@@ -79,7 +79,7 @@ Specifies whether the runtime creates <xref:System.Security.Policy.Publisher> ev
 ## Example  
  The following example shows how to use the `<generatePublisherEvidence>` element to disable checking for CAS publisher policy for an application.  
   
-```  
+```xml  
 <configuration>  
     <runtime>  
         <generatePublisherEvidence enabled="false"/>  

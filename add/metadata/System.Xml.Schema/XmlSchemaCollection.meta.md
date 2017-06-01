@@ -157,15 +157,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Schema.XmlSchemaCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Schema.XmlSchemaCollection.Contains(System.String)
 ms.technology: 
   - "dotnet-standard"

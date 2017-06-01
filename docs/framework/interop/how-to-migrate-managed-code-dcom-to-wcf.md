@@ -150,7 +150,7 @@ public class CustomerService: ICustomerManager
 ### Step 4: Configure the service and the client  
  To run a WCF service, you need to declare an endpoint that exposes that service interface at a specific URL using a specific WCF binding. A binding specifies the transport, encoding and protocol details for the clients and server to communicate. You typically add bindings to the service project’s configuration file (web.config). The following shows a binding entry for the example service:  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <services>  
@@ -166,7 +166,7 @@ public class CustomerService: ICustomerManager
   
  Next, you need to configure the client to match the binding information specified by the service. To do so, add the following to the client’s application configuration (app.config) file.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <client>  
@@ -340,7 +340,7 @@ public class SessionBoundFactory : ISessionBoundFactory
   
  Following is an example configuration file with these settings:  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <client>  
@@ -380,7 +380,7 @@ sessionBoundServiceHost.Open();
 ### Step 4: Configure the client and call the service  
  Configure the client to communicate with the WCF services by making the following entries in the project’s application configuration file (app.config).  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <client>  

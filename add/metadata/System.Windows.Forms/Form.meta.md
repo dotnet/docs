@@ -612,15 +612,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.Form.ValidateChildren
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.Form.MinimizeBox
 ms.technology: 
   - "dotnet-winforms"
@@ -1385,15 +1376,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.Form.MenuStart
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.Form.ShowDialog
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"

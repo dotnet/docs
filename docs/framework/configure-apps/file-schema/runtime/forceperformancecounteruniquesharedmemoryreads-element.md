@@ -32,7 +32,7 @@ Specifies whether PerfCounter.dll uses the CategoryOptions registry setting in a
   
 ## Syntax  
   
-```  
+```xml  
 <forcePerformanceCounterUniqueSharedMemoryReads   
 enabled="true|false"/>  
 ```  
@@ -80,7 +80,7 @@ enabled="true|false"/>
 ## Example  
  The following example shows how to specify that PerfCounter.dll should reference the CategoryOptions registry entry to determine whether it should use category-specific shared memory.  
   
-```  
+```xml  
 <configuration>  
   <runtime>  
     <forcePerformanceCounterUniqueSharedMemoryReads enabled="true"/>  

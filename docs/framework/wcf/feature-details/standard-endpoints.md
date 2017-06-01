@@ -127,7 +127,7 @@ public class CustomEndpointCollectionElement : StandardEndpointCollectionElement
   
  The following example shows how to register a standard endpoint in the extensions section.  
   
-```  
+```xml  
 <extensions>  
       <standardEndpointExtensions>  
         <add  

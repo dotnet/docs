@@ -37,17 +37,17 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Invoke the Command-Line Compiler (Visual Basic)
-You can invoke the command-line compiler by typing the name of its executable file into the command line, also known as the MS-DOS prompt. If you compile from the default Windows Command Prompt, you must type the fully qualified path to the executable file. To override this default behavior, you can either use the [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] Command Prompt, or modify the PATH environment variable. Both allow you to compile from any directory by simply typing the compiler name.  
+You can invoke the command-line compiler by typing the name of its executable file into the command line, also known as the MS-DOS prompt. If you compile from the default Windows Command Prompt, you must type the fully qualified path to the executable file. To override this default behavior, you can either use the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Command Prompt, or modify the PATH environment variable. Both allow you to compile from any directory by simply typing the compiler name.  
   
-[!INCLUDE[note_settings_general](../../../csharp/language-reference/compiler-messages/includes/note_settings_general_md.md)]  
+[!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
 ### To invoke the compiler using the Visual Studio Command Prompt  
   
 1.  Open the Visual Studio Tools program folder within the Microsoft Visual Studio program group.  
   
-2.  You can use the [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] Command Prompt to access the compiler from any directory on your machine, if Visual Studio is installed.  
+2.  You can use the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Command Prompt to access the compiler from any directory on your machine, if Visual Studio is installed.  
   
-3.  Invoke the [!INCLUDE[vsprvs](../../../csharp/includes/vsprvs_md.md)] Command Prompt.  
+3.  Invoke the [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)] Command Prompt.  
   
 4.  At the command line, type `vbc.exe` *sourceFileName* and then press ENTER.  
   
@@ -69,7 +69,7 @@ You can invoke the command-line compiler by typing the name of its executable fi
   
 6.  Click **OK** to confirm your edits and close the dialog boxes.  
   
-     After you change the PATH environment variable, you can run the [!INCLUDE[vbprvb](../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] compiler at the Windows Command Prompt from any directory on the computer.  
+     After you change the PATH environment variable, you can run the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] compiler at the Windows Command Prompt from any directory on the computer.  
   
 ### To invoke the compiler using the Windows Command Prompt  
   

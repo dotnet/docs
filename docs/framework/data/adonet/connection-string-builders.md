@@ -67,7 +67,7 @@ initial catalog="AdventureWorks;NewValue=Bad"
 ### Example  
  This example demonstrates retrieving a partial connection string from a configuration file and completing it by setting the <xref:System.Data.SqlClient.SqlConnectionStringBuilder.DataSource%2A>, <xref:System.Data.SqlClient.SqlConnectionStringBuilder.UserID%2A>, and <xref:System.Data.SqlClient.SqlConnectionStringBuilder.Password%2A> properties of the <xref:System.Data.SqlClient.SqlConnectionStringBuilder>. The configuration file is defined as follows.  
   
-```  
+```xml  
 <connectionStrings>  
   <clear/>  
   <add name="partialConnectString"   

@@ -107,15 +107,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.Compiler.CompilerErrorCollection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.Compiler.CompilerErrorCollection.HasErrors
 ms.technology: 
   - "dotnet-standard"

@@ -33,9 +33,3 @@ uid: Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.#ctor
 ms.author: "susanno"
 manager: "douge"
 ---
-
----
-uid: Microsoft.Build.Framework.ExternalProjectFinishedEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----

@@ -53,10 +53,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "tyoung"
 ---
-
----
-uid: System.Messaging.Trustee.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "tyoung"
----

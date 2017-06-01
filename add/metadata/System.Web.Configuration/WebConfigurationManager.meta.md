@@ -143,14 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Configuration.WebConfigurationManager.OpenMachineConfiguration
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration(System.String)
 ms.technology: 
   - "dotnet-webforms"

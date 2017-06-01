@@ -59,15 +59,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.TextDecoration.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.TextDecoration.Clone
 ms.technology: 
   - "dotnet-wpf"

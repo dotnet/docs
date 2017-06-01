@@ -34,7 +34,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Introduction to Strings in Visual Basic
-This section describes the basic concepts behind using strings in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+This section describes the basic concepts behind using strings in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
 ## In This Section  
  [String Basics](../../../../visual-basic/programming-guide/language-features/strings/string-basics.md)  
@@ -44,7 +44,7 @@ This section describes the basic concepts behind using strings in [!INCLUDE[vbpr
  Introduces several different ways to analyze and manipulate strings.  
   
  [How Culture Affects Strings in Visual Basic](../../../../visual-basic/programming-guide/language-features/strings/how-culture-affects-strings.md)  
- Discusses how [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] uses culture information to perform string conversions and comparisons.  
+ Discusses how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] uses culture information to perform string conversions and comparisons.  
   
 ## See Also  
  [Strings](../../../../visual-basic/programming-guide/language-features/strings/index.md)

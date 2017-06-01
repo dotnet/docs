@@ -57,9 +57,3 @@ uid: Microsoft.Build.Framework.TargetFinishedEventArgs.Succeeded
 ms.author: "susanno"
 manager: "douge"
 ---
-
----
-uid: Microsoft.Build.Framework.TargetFinishedEventArgs.#ctor
-ms.author: "susanno"
-manager: "douge"
----

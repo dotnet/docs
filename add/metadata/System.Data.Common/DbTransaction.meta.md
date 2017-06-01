@@ -26,15 +26,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DbTransaction.Dispose
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DbTransaction.DbConnection
 ms.technology: 
   - "dotnet-ado"

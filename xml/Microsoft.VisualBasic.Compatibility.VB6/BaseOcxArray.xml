@@ -743,7 +743,7 @@
   
  If the <xref:System.Windows.Forms.Control.CausesValidation%2A> property is set to `false`, the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating> and `Validated` events are suppressed.  
   
- If the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> is set to `true` in the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOCXArray.Validating> event delegate, all events that would usually occur after the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOCXArray.Validating> event are suppressed.  
+ If the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> is set to `true` in the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating> event delegate, all events that would usually occur after the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOCXArray.Validating> event are suppressed.  
   
  For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   
@@ -788,7 +788,7 @@
   
  When you change the focus by using the mouse or by calling the <xref:System.Windows.Forms.Control.Focus%2A> method, focus events occur in the following order:  
   
- <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOCXArray.Enter>  
+ <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Enter>  
   
  <xref:System.Windows.Forms.Control.GotFocus>  
   
@@ -802,7 +802,7 @@
   
  If the <xref:System.Windows.Forms.Control.CausesValidation%2A> property is set to `false`, the `Validating` and `Validated` events are suppressed.  
   
- If the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> is set to `true` in the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOCXArray.Validating> event delegate, all events that would usually occur after the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOCXArray.Validating> event are suppressed.  
+ If the <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> property of the <xref:System.ComponentModel.CancelEventArgs> is set to `true` in the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating> event delegate, all events that would usually occur after the <xref:Microsoft.VisualBasic.Compatibility.VB6.BaseOcxArray.Validating> event are suppressed.  
   
  For more information about how to handle events, see [Events](http://msdn.microsoft.com/library/b6f65241-e0ad-4590-a99f-200ce741bb1f).  
   

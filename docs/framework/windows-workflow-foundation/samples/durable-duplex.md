@@ -66,7 +66,7 @@ This sample demonstrates how to set up and configure durable duplex message exch
   
  The following code example exposes endpoints using this custom binding by changing the default protocol mapping for net.msmq base addresses to use this custom binding.  
   
-```  
+```xml  
 <configuration>  
      <system.serviceModel>  
           <protocolMapping>  

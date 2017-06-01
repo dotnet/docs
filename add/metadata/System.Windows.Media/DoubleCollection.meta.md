@@ -101,14 +101,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.DoubleCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.DoubleCollection.CopyTo(System.Double[],System.Int32)
 ms.technology: 
   - "dotnet-wpf"
@@ -167,14 +159,6 @@ uid: System.Windows.Media.DoubleCollection.System#Collections#ICollection#SyncRo
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"
----
-
----
-uid: System.Windows.Media.DoubleCollection.ToString
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
 ---
 
 ---

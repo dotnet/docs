@@ -13,13 +13,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.Channels.PnrpPeerResolverBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.Channels.PnrpPeerResolverBindingElement.BuildChannelListener``1(System.ServiceModel.Channels.BindingContext)
 ms.technology: 
   - "dotnet-standard"

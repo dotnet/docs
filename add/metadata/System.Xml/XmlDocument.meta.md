@@ -197,15 +197,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDocument.CreateNavigator
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlDocument.CreateElement(System.String,System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -405,15 +396,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlDocument.CreateElement(System.String,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlDocument.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

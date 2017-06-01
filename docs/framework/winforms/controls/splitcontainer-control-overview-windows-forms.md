@@ -33,7 +33,7 @@ The Windows Forms <xref:System.Windows.Forms.SplitContainer> control can be thou
   
  Be aware that the <xref:System.Windows.Forms.SplitContainer> control is keyboard-accessible by default; users can press the ARROW keys to move the splitter if the <xref:System.Windows.Forms.SplitContainer.IsSplitterFixed%2A> property is set to `false`.  
   
- The <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control determines the direction of the splitter, not of the control itself. Hence, when this property is set to <xref:System.Windows.Forms.Orientation>, the splitter runs from top to bottom, creating left and right panels.  
+ The <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property of the <xref:System.Windows.Forms.SplitContainer> control determines the direction of the splitter, not of the control itself. Hence, when this property is set to <xref:System.Windows.Forms.Orientation.Vertical>, the splitter runs from top to bottom, creating left and right panels.  
   
  Additionally, be aware that the value of the <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> property varies depending on the value of the <xref:System.Windows.Forms.SplitContainer.Orientation%2A> property. For more information, see <xref:System.Windows.Forms.SplitContainer.SplitterRectangle%2A> property.  
   

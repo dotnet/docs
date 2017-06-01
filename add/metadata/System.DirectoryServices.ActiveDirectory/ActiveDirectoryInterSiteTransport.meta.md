@@ -69,13 +69,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryInterSiteTransport.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ActiveDirectoryInterSiteTransport.Save
 author: "BrucePerlerMS"
 ms.author: "bruceper"

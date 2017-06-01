@@ -305,15 +305,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Globalization.DateTimeFormatInfo.GetAllDateTimePatterns
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Globalization.DateTimeFormatInfo.YearMonthPattern
 ms.technology: 
   - "dotnet-standard"

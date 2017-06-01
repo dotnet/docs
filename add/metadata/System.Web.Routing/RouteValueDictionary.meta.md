@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.Routing.RouteValueDictionary.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.Routing.RouteValueDictionary.Clear
 ms.technology: 
   - "dotnet-webforms"

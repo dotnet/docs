@@ -83,13 +83,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDiscoverableDirectoryServers
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.ApplicationPartition.#ctor(System.DirectoryServices.ActiveDirectory.DirectoryContext,System.String)
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -105,13 +98,6 @@ manager: "mbaldwin"
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ApplicationPartition.Dispose(System.Boolean)
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindDirectoryServer
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
@@ -140,13 +126,6 @@ manager: "mbaldwin"
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.ApplicationPartition.SecurityReferenceDomain
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.ApplicationPartition.FindAllDirectoryServers
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"

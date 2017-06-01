@@ -99,7 +99,7 @@ Applies runtime policy to a particular type, such as a class or structure.
   
  A `<Type>` element of a generic type applies its policy to all instantiations that do not have their own policy. The policy of constructed generic types is defined by the [\<TypeInstantiation>](../../../docs/framework/net-native/typeinstantiation-element-net-native.md) element.  
   
- If the type is a generic type, its name is decorated by a grave accent symbol (```) followed by its number of generic parameters. For example, the `Name` attribute of a `<Type>` element for the <xref:System.Collections.Generic.List%601?displayProperty=fullName> class appears as `Name="System.Collections.Generic.List`1"`.  
+ If the type is a generic type, its name is decorated by a grave accent symbol (\`) followed by its number of generic parameters. For example, the `Name` attribute of a `<Type>` element for the <xref:System.Collections.Generic.List%601?displayProperty=fullName> class appears as `Name="System.Collections.Generic.List`1"`.  
   
 ## Example  
  The following example uses reflection to display information about the fields, properties, and methods of the <xref:System.Collections.Generic.List%601?displayProperty=fullName> class. The variable `b` in the example is a [TextBlock](http://msdn.microsoft.com/library/windows/apps/windows.ui.xaml.controls.textblock.aspx) control. Because the example simply retrieves type information, the availability of metadata is controlled by the `Browse` policy setting.  

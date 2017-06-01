@@ -56,7 +56,7 @@ The *identity* feature of [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)
   
 ### To implement a custom binding and set the custom IdentityVerifier  
   
-1.  Create a method that returns a <xref:System.ServiceModel.Channels.Binding> object. This example begins creates an instance of the <xref:System.ServiceModel.WSHttpBinding> class and sets its security mode to <xref:System.ServiceModel.SecurityMode>, and its <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> to <xref:System.ServiceModel.MessageCredentialType>.  
+1.  Create a method that returns a <xref:System.ServiceModel.Channels.Binding> object. This example begins creates an instance of the <xref:System.ServiceModel.WSHttpBinding> class and sets its security mode to <xref:System.ServiceModel.SecurityMode.Message>, and its <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> to <xref:System.ServiceModel.MessageCredentialType.None>.  
   
 2.  Create a <xref:System.ServiceModel.Channels.BindingElementCollection> using the <xref:System.ServiceModel.WSHttpBinding.CreateBindingElements%2A> method.  
   

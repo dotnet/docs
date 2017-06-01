@@ -79,7 +79,7 @@ public class CalculatorService : ICalculator
   
  If you want use a secured named pipe binding, change the server's security mode to the desired security setting and run svcutil.exe again on the client to obtain an updated client configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
         <services>  
             <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
@@ -120,7 +120,7 @@ public class CalculatorService : ICalculator
   
  The client’s endpoint information is configured as shown in the following sample code.  
   
-```  
+```xml  
 <system.serviceModel>  
   
     <client>  

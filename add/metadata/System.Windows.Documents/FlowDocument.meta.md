@@ -264,14 +264,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Documents.FlowDocument.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Documents.FlowDocument.ColumnWidth
 ms.technology: 
   - "dotnet-wpf"

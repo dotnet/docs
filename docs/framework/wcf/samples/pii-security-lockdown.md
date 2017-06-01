@@ -62,7 +62,7 @@ This sample demonstrates how to control several security-related features of a [
   
  A configuration element can be locked by specifying the `lockItem` attribute for a node in the configuration file, for example, to lock the CalculatorServiceBehavior node in the configuration file so that calculator services in nested configuration files cannot change the behavior, the following configuration can be used.  
   
-```  
+```xml  
 <configuration>  
    <system.serviceModel>  
       <behaviors>   
@@ -84,7 +84,7 @@ This sample demonstrates how to control several security-related features of a [
   
  The computer-wide setting is controlled by setting `enableLoggingKnownPii` to `true` or `false`, in the `machineSettings` element in Machine.config. For example, the following allows applications to turn on logging of PII.  
   
-```  
+```xml  
 <configuration>  
     <system.serviceModel>  
         <machineSettings enableLoggingKnownPii="true" />  
@@ -99,7 +99,7 @@ This sample demonstrates how to control several security-related features of a [
   
  Enabling logging of PII for an application is done by setting the `logKnownPii` attribute of the source element to `true` or `false` in the Web.config or App.config file. For example, the following enables logging of PII for both message logging and trace logging.  
   
-```  
+```xml  
 <configuration>  
     <system.diagnostics>  
         <sources>  

@@ -44,16 +44,16 @@ By default, the Windows Forms <xref:System.Windows.Forms.TextBox> control displa
   
     |Value|Description|  
     |-----------|-----------------|  
-    |<xref:System.Windows.Forms.ScrollBars>|Use this value if the text will be a paragraph that almost always fits the control. The user can use the mouse pointer to move around inside the control if the text is too long to display all at once.|  
-    |<xref:System.Windows.Forms.ScrollBars>|Use this value if you want to display a list of lines, some of which may be longer than the width of the <xref:System.Windows.Forms.TextBox> control.|  
-    |<xref:System.Windows.Forms.ScrollBars>|Use this value if the list may be longer than the height of the control.|  
+    |<xref:System.Windows.Forms.ScrollBars.None>|Use this value if the text will be a paragraph that almost always fits the control. The user can use the mouse pointer to move around inside the control if the text is too long to display all at once.|  
+    |<xref:System.Windows.Forms.ScrollBars.Horizontal>|Use this value if you want to display a list of lines, some of which may be longer than the width of the <xref:System.Windows.Forms.TextBox> control.|  
+    |<xref:System.Windows.Forms.ScrollBars.Both>|Use this value if the list may be longer than the height of the control.|  
   
 3.  Set the <xref:System.Windows.Forms.TextBoxBase.WordWrap%2A> property to an appropriate value.  
   
     |Value|Description|  
     |-----------|-----------------|  
-    |`false`|Text in the control will not automatically be wrapped, so it will scroll to the right until a line break is reached. Use this value if you chose <xref:System.Windows.Forms.ScrollBars> scroll bars or <xref:System.Windows.Forms.ScrollBars>, above.|  
-    |`true` (default)|The horizontal scrollbar will not appear. Use this value if you chose <xref:System.Windows.Forms.ScrollBars> scroll bars or <xref:System.Windows.Forms.ScrollBars>, above, to display one or more paragraphs.|  
+    |`false`|Text in the control will not automatically be wrapped, so it will scroll to the right until a line break is reached. Use this value if you chose <xref:System.Windows.Forms.ScrollBars.Horizontal> scroll bars or <xref:System.Windows.Forms.ScrollBars.Both>, above.|  
+    |`true` (default)|The horizontal scrollbar will not appear. Use this value if you chose <xref:System.Windows.Forms.ScrollBars.Vertical> scroll bars or <xref:System.Windows.Forms.ScrollBars.None>, above, to display one or more paragraphs.|  
   
 ## See Also  
  <xref:System.Windows.Forms.TextBox>   

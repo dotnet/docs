@@ -62,7 +62,7 @@ The `openGenericCERCall` managed debugging assistant is activated to warn that a
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <openGenericCERCall/>  

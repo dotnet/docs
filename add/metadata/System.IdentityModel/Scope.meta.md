@@ -71,14 +71,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Scope.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Scope.#ctor(System.String,System.IdentityModel.Tokens.SigningCredentials,System.IdentityModel.Tokens.EncryptingCredentials)
 ms.technology: 
   - "dotnet-standard"

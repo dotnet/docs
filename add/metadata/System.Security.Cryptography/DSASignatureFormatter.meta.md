@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.DSASignatureFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.DSASignatureFormatter.SetHashAlgorithm(System.String)
 ms.technology: 
   - "dotnet-standard"

@@ -50,12 +50,3 @@ ms.technology:
 ms.author: "kempb"
 manager: "ghogen"
 ---
-
----
-uid: System.Windows.Media.Animation.LinearInt32KeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----

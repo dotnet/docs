@@ -548,15 +548,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Text.RegularExpressions.Regex.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Text.RegularExpressions.Regex.IsMatch(System.String)
 ms.technology: 
   - "dotnet-standard"

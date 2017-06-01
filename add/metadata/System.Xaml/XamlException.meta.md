@@ -48,13 +48,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.XamlException.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Xaml.XamlException.Message
 ms.technology: 
   - "dotnet-wpf"

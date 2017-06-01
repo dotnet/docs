@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.IInputChannel.Receive
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.IInputChannel.BeginTryReceive(System.TimeSpan,System.AsyncCallback,System.Object)
 ms.technology: 
   - "dotnet-standard"

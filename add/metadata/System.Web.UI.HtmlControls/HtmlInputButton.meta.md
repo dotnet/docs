@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.HtmlControls.HtmlInputButton.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.HtmlControls.HtmlInputButton.RenderAttributes(System.Web.UI.HtmlTextWriter)
 ms.technology: 
   - "dotnet-webforms"

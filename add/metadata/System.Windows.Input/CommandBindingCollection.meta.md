@@ -164,15 +164,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Input.CommandBindingCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Input.CommandBindingCollection.System#Collections#IList#Contains(System.Object)
 ms.technology: 
   - "dotnet-wpf"

@@ -43,15 +43,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.DiscreteInt64KeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.DiscreteInt64KeyFrame.#ctor(System.Int64,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"

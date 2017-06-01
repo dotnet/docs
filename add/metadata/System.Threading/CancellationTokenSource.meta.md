@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.CancellationTokenSource.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.CancellationTokenSource.Dispose
 ms.technology: 
   - "dotnet-standard"
@@ -99,15 +90,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.CancellationTokenSource.IsCancellationRequested
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CancellationTokenSource.Dispose
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -153,15 +135,6 @@ manager: "wpickett"
 
 ---
 uid: System.Threading.CancellationTokenSource.Token
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.Threading.CancellationTokenSource.Cancel
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

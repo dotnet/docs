@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.GetCategories
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.PerformanceCounterCategory.MachineName
 ms.technology: 
   - "dotnet-standard"
@@ -188,25 +179,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.PerformanceCounterCategory.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.PerformanceCounterCategory.#ctor(System.String,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Diagnostics.PerformanceCounterCategory.GetCounters
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

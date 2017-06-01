@@ -20,13 +20,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.Runtime.Tracking.SqlTrackingQuery.#ctor
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.Runtime.Tracking.SqlTrackingQuery.TryGetWorkflow(System.Guid,System.Workflow.Runtime.Tracking.SqlTrackingWorkflowInstance@)
 author: "Erikre"
 ms.author: "erikre"

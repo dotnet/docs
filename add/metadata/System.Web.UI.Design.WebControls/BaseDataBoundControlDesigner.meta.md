@@ -15,12 +15,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.GetDesignTimeHtml
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.Design.WebControls.BaseDataBoundControlDesigner.DisconnectFromDataSource
 ms.technology: 
   - "dotnet-webforms"

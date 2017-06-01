@@ -39,14 +39,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.HttpParseException.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.HttpParseException.ParserErrors
 ms.technology: 
   - "dotnet-webforms"

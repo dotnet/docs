@@ -71,15 +71,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Common.DBDataPermission.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Common.DBDataPermission.AllowBlankPassword
 ms.technology: 
   - "dotnet-ado"

@@ -17,15 +17,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ValueTuple.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ValueTuple.Equals(System.Object)
 ms.technology: 
   - "dotnet-standard"

@@ -47,14 +47,14 @@ Windows_UI_Xaml!DirectUI::PropertyPathListener::ConnectPathStep+0x113
   
  The first step in providing a metadata directive would be to add `serialize` metadata for the type so that its properties are all accessible:  
   
-```  
+```xml  
 <Type Name="App.ViewModels.MainPageVM" Serialize="Required Public" />  
 ```  
   
 ## Is this an isolated case?  
  In this scenario, if data binding has incomplete metadata for one `ViewModel`, it may for others, too.  If the code is structured in a way that the app’s view models are all in the `App.ViewModels` namespace, you could use a more general runtime directive:  
   
-```  
+```xml  
 <Namespace Name="App.ViewModels " Serialize="Required Public" />  
 ```  
   

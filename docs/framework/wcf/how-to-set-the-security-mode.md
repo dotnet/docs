@@ -20,7 +20,7 @@ ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # How to: Set the Security Mode
-[!INCLUDE[indigo1](../../../includes/indigo1-md.md)] security has three common security modes that are found on most predefined bindings: transport, message, and "transport with message credential." Two additional modes are specific to two bindings: the "transport-credential only" mode found on the <xref:System.ServiceModel.BasicHttpBinding>, and the "Both" mode, found on the <xref:System.ServiceModel.NetMsmqBinding>. However, this topic concentrates on the three common security modes: <xref:System.ServiceModel.SecurityMode>, <xref:System.ServiceModel.SecurityMode>, and <xref:System.ServiceModel.SecurityMode>.  
+[!INCLUDE[indigo1](../../../includes/indigo1-md.md)] security has three common security modes that are found on most predefined bindings: transport, message, and "transport with message credential." Two additional modes are specific to two bindings: the "transport-credential only" mode found on the <xref:System.ServiceModel.BasicHttpBinding>, and the "Both" mode, found on the <xref:System.ServiceModel.NetMsmqBinding>. However, this topic concentrates on the three common security modes: <xref:System.ServiceModel.SecurityMode.Transport>, <xref:System.ServiceModel.SecurityMode.Message>, and <xref:System.ServiceModel.SecurityMode.TransportWithMessageCredential>.  
   
  Note that not every predefined binding supports all of these modes. This topic sets the mode with the <xref:System.ServiceModel.WSHttpBinding> and <xref:System.ServiceModel.NetTcpBinding> classes and demonstrates how to set the mode both programmatically and through configuration.  
   
@@ -87,7 +87,7 @@ manager: "mbaldwin"
   
      The following example sets the mode to "`Transport"`, and then sets the `clientCredentialType` attribute of the `<transport>` element to "`Windows"`.  
   
-    ```  
+    ```xml  
     <wsHttpBinding>  
     <binding name="TransportSecurity">  
         <security mode="Transport" />  
@@ -99,7 +99,7 @@ manager: "mbaldwin"
   
      Alternatively, set the `security mode` to "`Message"`, followed by a `<"message">` element. This example sets the `clientCredentialType` to "`Certificate"`.  
   
-    ```  
+    ```xml  
     <wsHttpBinding>  
     <binding name="MessageSecurity">  
         <security mode="Message" />  
@@ -109,7 +109,7 @@ manager: "mbaldwin"
     </wsHttpBinding >  
     ```  
   
-     Using the <xref:System.ServiceModel.BasicHttpSecurityMode> value is a special case, and is explained below.  
+     Using the <xref:System.ServiceModel.BasicHttpSecurityMode.TransportWithMessageCredential> value is a special case, and is explained below.  
   
 ### Using TransportWithMessageCredential  
  When setting the security mode to `TransportWithMessageCredential`, the transport determines the actual mechanism that provides the transport-level security. For example, the HTTP protocol uses Secure Sockets Layer (SSL) over HTTP (HTTPS). Therefore, setting the `ClientCredentialType` property of any transport security object (such as <xref:System.ServiceModel.HttpTransportSecurity>) is ignored.  In other words, you can only set the `ClientCredentialType` of the message security object (for the `WSHttpBinding` binding, the <xref:System.ServiceModel.NonDualMessageSecurityOverHttp> object).  

@@ -111,13 +111,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Remoting.Channels.Http.HttpServerChannel.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Remoting.Channels.Http.HttpServerChannel.AddHookChannelUri(System.String)
 ms.technology: 
   - "dotnet-standard"

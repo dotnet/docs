@@ -49,7 +49,7 @@ graphics.DrawRectangle(pen, 10, 10, 200, 100);
 ### Quality Settings  
  A <xref:System.Drawing.Graphics> object has several properties that influence the quality of the items that are drawn. For example, you can set the <xref:System.Drawing.Graphics.TextRenderingHint%2A> property to specify the type of antialiasing (if any) applied to text. Other properties that influence quality are <xref:System.Drawing.Graphics.SmoothingMode%2A>, <xref:System.Drawing.Graphics.CompositingMode%2A>, <xref:System.Drawing.Graphics.CompositingQuality%2A>, and <xref:System.Drawing.Graphics.InterpolationMode%2A>.  
   
- The following example draws two ellipses, one with the smoothing mode set to <xref:System.Drawing.Drawing2D.SmoothingMode> and one with the smoothing mode set to <xref:System.Drawing.Drawing2D.SmoothingMode>:  
+ The following example draws two ellipses, one with the smoothing mode set to <xref:System.Drawing.Drawing2D.SmoothingMode.AntiAlias> and one with the smoothing mode set to <xref:System.Drawing.Drawing2D.SmoothingMode.HighSpeed>:  
   
 ```vb  
 Dim graphics As Graphics = e.Graphics  

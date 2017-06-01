@@ -23,7 +23,7 @@ When [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] activity tracing
 ## Enabling Tracing  
  You can enable message flow tracing by setting the .NET Framework 4 `messageFlowTracing` configuration element to `true`, as shown in the following example.  
   
-```  
+```xml  
 <system.servicemodel>  
   <diagnostics>  
     <endToEndTracing propagateActivity="true" messageFlowTracing="true" />  

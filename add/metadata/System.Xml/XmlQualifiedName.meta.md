@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlQualifiedName.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlQualifiedName.ToString(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -99,15 +90,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlQualifiedName.#ctor(System.String,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlQualifiedName.ToString
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

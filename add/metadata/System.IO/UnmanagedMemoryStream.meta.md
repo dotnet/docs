@@ -234,15 +234,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.UnmanagedMemoryStream.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.UnmanagedMemoryStream.Initialize(System.Runtime.InteropServices.SafeBuffer,System.Int64,System.Int64,System.IO.FileAccess)
 ms.technology: 
   - "dotnet-standard"

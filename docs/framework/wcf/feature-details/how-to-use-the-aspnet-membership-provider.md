@@ -125,7 +125,7 @@ The [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] membership provide
 ## Example  
  The following code shows the configuration for a service that uses the ASP membership feature.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.serviceModel>  

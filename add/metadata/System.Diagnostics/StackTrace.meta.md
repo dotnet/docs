@@ -71,15 +71,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Diagnostics.StackTrace.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Diagnostics.StackTrace.ToString
 ms.technology: 
   - "dotnet-standard"

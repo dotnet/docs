@@ -426,13 +426,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Workflow.ComponentModel.Design.ActivityDesigner.Dispose
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Workflow.ComponentModel.Design.ActivityDesigner.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)
 author: "Erikre"
 ms.author: "erikre"
@@ -714,13 +707,6 @@ manager: "erikre"
 
 ---
 uid: System.Workflow.ComponentModel.Design.ActivityDesigner.GetService(System.Type)
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.Workflow.ComponentModel.Design.ActivityDesigner.Invalidate
 author: "Erikre"
 ms.author: "erikre"
 manager: "erikre"

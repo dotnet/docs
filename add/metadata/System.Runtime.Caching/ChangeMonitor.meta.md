@@ -77,11 +77,3 @@ ms.technology:
 ms.author: "riande"
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Caching.ChangeMonitor.Dispose
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "riande"
-manager: "ghogen"
----

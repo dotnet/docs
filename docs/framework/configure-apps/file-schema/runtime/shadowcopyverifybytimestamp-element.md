@@ -32,7 +32,7 @@ Specifies whether shadow copying uses the default startup behavior introduced in
   
 ## Syntax  
   
-```  
+```xml  
 <shadowCopyVerifyByTimestamp enabled="true|false" />  
 ```  
   
@@ -68,7 +68,7 @@ Specifies whether shadow copying uses the default startup behavior introduced in
 ## Example  
  The following example shows how to disable the default startup behavior of shadow copying in the [!INCLUDE[net_v40_short](../../../../../includes/net-v40-short-md.md)], and revert to the startup behavior of previous versions of the .NET Framework.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <shadowCopyVerifyByTimestamp enabled="false" />  

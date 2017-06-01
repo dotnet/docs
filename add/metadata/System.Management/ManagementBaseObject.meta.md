@@ -13,12 +13,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementBaseObject.Dispose
-ms.technology: 
-  - "dotnet-standard"
----
-
----
 uid: System.Management.ManagementBaseObject.SetPropertyQualifierValue(System.String,System.String,System.Object)
 ms.technology: 
   - "dotnet-standard"

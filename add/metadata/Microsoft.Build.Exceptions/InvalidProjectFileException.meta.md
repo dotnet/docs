@@ -41,12 +41,6 @@ manager: "douge"
 ---
 
 ---
-uid: Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor
-ms.author: "susanno"
-manager: "douge"
----
-
----
 uid: Microsoft.Build.Exceptions.InvalidProjectFileException.#ctor(System.String)
 ms.author: "susanno"
 manager: "douge"

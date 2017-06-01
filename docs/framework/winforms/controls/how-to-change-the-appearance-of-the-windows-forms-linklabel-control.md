@@ -85,9 +85,9 @@ You can change the text displayed by the <xref:System.Windows.Forms.LinkLabel> c
     linkLabel1->LinkArea = LinkArea(6,4);  
     ```  
   
-4.  Set the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A> property to <xref:System.Windows.Forms.LinkBehavior>, <xref:System.Windows.Forms.LinkBehavior>, or <xref:System.Windows.Forms.LinkBehavior>.  
+4.  Set the <xref:System.Windows.Forms.LinkLabel.LinkBehavior%2A> property to <xref:System.Windows.Forms.LinkBehavior.AlwaysUnderline>, <xref:System.Windows.Forms.LinkBehavior.HoverUnderline>, or <xref:System.Windows.Forms.LinkBehavior.NeverUnderline>.  
   
-     If it is set to <xref:System.Windows.Forms.LinkBehavior>, the part of the caption determined by <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> will only be underlined when the pointer rests on it.  
+     If it is set to <xref:System.Windows.Forms.LinkBehavior.HoverUnderline>, the part of the caption determined by <xref:System.Windows.Forms.LinkLabel.LinkArea%2A> will only be underlined when the pointer rests on it.  
   
 5.  In the <xref:System.Windows.Forms.LinkLabel.LinkClicked> event handler, set the <xref:System.Windows.Forms.LinkLabel.LinkVisited%2A> property to `true`.  
   

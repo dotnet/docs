@@ -34,13 +34,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.StaticExtension.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.StaticExtension.Member
 ms.technology: 
   - "dotnet-wpf"

@@ -4,7 +4,7 @@ description: The dotnet-msbuild command provides access to the MSBuild command l
 keywords: dotnet-msmsbuild, CLI, CLI command, .NET Core
 author: blackdwarf
 ms.author: mairaw
-ms.date: 03/15/2017
+ms.date: 05/24/2017
 ms.topic: article
 ms.prod: .net-core
 ms.technology: dotnet-cli
@@ -41,3 +41,7 @@ Build a project and its dependencies using Release configuration:
 Run the publish target and publish for the `osx.10.11-x64` RID:
 
 `dotnet msbuild /t:Publish /p:RuntimeIdentifiers=osx.10.11-x64`
+
+See the whole project with all targets included by the SDK:
+
+`dotnet msbuild /pp`

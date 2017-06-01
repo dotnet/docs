@@ -35,20 +35,20 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Accessing data in Visual Basic applications
-[!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] includes several new features to assist in developing applications that access data. Data-bound forms for Windows applications are created by dragging items from the [Data Sources Window](https://docs.microsoft.com/visualstudio/data-tools/add-new-data-sources) onto the form. You bind controls to data by dragging items from the **Data Sources Window** onto existing controls.  
+[!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] includes several new features to assist in developing applications that access data. Data-bound forms for Windows applications are created by dragging items from the [Data Sources Window](https://docs.microsoft.com/visualstudio/data-tools/add-new-data-sources) onto the form. You bind controls to data by dragging items from the **Data Sources Window** onto existing controls.  
   
 ## Related sections  
  [Accessing Data in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/)  
  Provides links to pages that discuss incorporating data access functionality into your applications.
 
  [Visual Studio data tools for .NET](https://docs.microsoft.com/visualstudio/data-tools/visual-studio-data-tools-for-dotnet)  
- Provides links to pages on creating applications that work with data, using [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
+ Provides links to pages on creating applications that work with data, using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
   
  [LINQ](../../visual-basic/programming-guide/language-features/linq/index.md)  
  Provides links to topics that describe how to use LINQ with Visual Basic.  
   
  [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
- Provides information about [!INCLUDE[vbtecdlinq](../../csharp/includes/vbtecdlinq_md.md)]. Includes programming examples.  
+ Provides information about [!INCLUDE[vbtecdlinq](~/includes/vbtecdlinq-md.md)]. Includes programming examples.  
   
  [LINQ to SQL Tools in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/linq-to-sql-tools-in-visual-studio2)  
  Provides links to topics about how to create a [LINQ to SQL](https://msdn.microsoft.com/library/bb386976) object model in applications.  
@@ -57,7 +57,7 @@ translation.priority.ht:
  Provides links to topics about how to create multitiered data applications.  
      
  [Add new connections](https://docs.microsoft.com/visualstudio/data-tools/add-new-connections)  
- Provides links to pages on connecting your application to data with design-time tools and ADO.NET connection objects, using [!INCLUDE[vsprvs](../../csharp/includes/vsprvs_md.md)].  
+ Provides links to pages on connecting your application to data with design-time tools and ADO.NET connection objects, using [!INCLUDE[vsprvs](~/includes/vsprvs-md.md)].  
 
  [Dataset Tools in Visual Studio](https://docs.microsoft.com/visualstudio/data-tools/dataset-tools-in-visual-studio)  
  Provides links to pages describing how to load data into datasets and how to execute SQL statements and stored procedures.  

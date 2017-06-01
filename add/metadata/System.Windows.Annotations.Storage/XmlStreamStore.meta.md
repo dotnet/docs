@@ -80,14 +80,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotations
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Annotations.Storage.XmlStreamStore.GetAnnotation(System.Guid)
 ms.technology: 
   - "dotnet-wpf"

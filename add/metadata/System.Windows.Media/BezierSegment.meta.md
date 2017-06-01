@@ -60,15 +60,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.BezierSegment.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.BezierSegment.Point1Property
 ms.technology: 
   - "dotnet-wpf"

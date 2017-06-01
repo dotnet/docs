@@ -239,14 +239,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.DesignerRegionCollection.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.DesignerRegionCollection.IsReadOnly
 ms.technology: 
   - "dotnet-webforms"

@@ -278,15 +278,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.ConstructorBuilder.GetILGenerator
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.ConstructorBuilder.InitLocals
 ms.technology: 
   - "dotnet-standard"

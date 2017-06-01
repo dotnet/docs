@@ -51,7 +51,7 @@ public interface IStreamingSample
   
  The following configuration code from the sample shows setting the `TransferMode` property to streaming on the `basicHttpBinding` and a custom HTTP binding:  
   
-```  
+```xml  
 <!-- An example basicHttpBinding using streaming. -->  
 <basicHttpBinding>  
   <binding name="HttpStreaming" maxReceivedMessageSize="67108864"  

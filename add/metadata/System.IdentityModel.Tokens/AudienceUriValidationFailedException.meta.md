@@ -23,14 +23,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.AudienceUriValidationFailedException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

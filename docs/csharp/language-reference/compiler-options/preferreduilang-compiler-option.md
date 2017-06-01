@@ -37,7 +37,7 @@ By using the `/preferreduilang` compiler option, you can specify the language in
   
 ## Syntax  
   
-```  
+```console  
 /preferreduilang: language  
 ```  
   

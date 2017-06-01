@@ -27,13 +27,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.ExtendedDNControl.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.ExtendedDNControl.#ctor(System.DirectoryServices.Protocols.ExtendedDNFlag)
 author: "BrucePerlerMS"
 ms.author: "bruceper"

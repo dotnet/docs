@@ -82,7 +82,7 @@ PropertyChanged?.Invoke(e)
  You need to explicitly call the `Invoke` method because there is no null-conditional delegate invocation syntax `PropertyChanged?(e)`.  There were too many ambiguous parsing situations to allow it.  
   
 ## Language Specifications  
- [!INCLUDE[CSharplangspec](../../../csharp/language-reference/keywords/includes/csharplangspec_md.md)]  
+ [!INCLUDE[CSharplangspec](~/includes/csharplangspec-md.md)]  
   
  For more information, see the [Visual Basic Language Reference](../../../visual-basic/language-reference/index.md).  
   

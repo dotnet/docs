@@ -71,14 +71,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Services.FederatedSessionExpiredException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Services.FederatedSessionExpiredException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

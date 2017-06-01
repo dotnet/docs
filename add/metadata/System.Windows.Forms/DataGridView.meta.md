@@ -660,14 +660,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridView.AutoResizeRows
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight(System.Int32,System.Boolean,System.Boolean)
 ms.technology: 
   - "dotnet-winforms"
@@ -1386,15 +1378,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridView.EndEdit
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridView.FontChanged
 ms.technology: 
   - "dotnet-winforms"
@@ -2094,15 +2077,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.DataGridView.AllowUserToDeleteRowsChanged
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridView.AutoResizeColumns
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"
@@ -3589,15 +3563,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Forms.DataGridView.AutoResizeColumnHeadersHeight
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Forms.DataGridView.AutoResizeRows(System.Windows.Forms.DataGridViewAutoSizeRowsMode)
 ms.technology: 
   - "dotnet-winforms"
@@ -3688,15 +3653,6 @@ manager: "wpickett"
 
 ---
 uid: System.Windows.Forms.DataGridView.VirtualMode
-ms.technology: 
-  - "dotnet-winforms"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Windows.Forms.DataGridView.ClearSelection
 ms.technology: 
   - "dotnet-winforms"
 author: "stevehoag"

@@ -80,15 +80,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Web.WebChannelFactory`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Web.WebChannelFactory`1.#ctor(System.String,System.Uri)
 ms.technology: 
   - "dotnet-standard"

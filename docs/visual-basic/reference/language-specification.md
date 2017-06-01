@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # Visual Basic Language Specification
-The [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] Language Specification is the authoritative source for answers to all questions about [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] grammar and syntax. It contains detailed information about the language, including many points not covered in the [!INCLUDE[vbprvb](../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] reference documentation.  
+The [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] Language Specification is the authoritative source for answers to all questions about [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] grammar and syntax. It contains detailed information about the language, including many points not covered in the [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] reference documentation.  
   
  The specification is available on the [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkId=188623).  
   

@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DelegateOutArgument`1.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DelegateOutArgument`1.Set(System.Activities.ActivityContext,`0)
 ms.technology: 
   - "dotnet-standard"

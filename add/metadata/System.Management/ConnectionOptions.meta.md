@@ -76,13 +76,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ConnectionOptions.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ConnectionOptions.Username
 ms.technology: 
   - "dotnet-standard"

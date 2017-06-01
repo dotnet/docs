@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileNotFoundException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileNotFoundException.Message
 ms.technology: 
   - "dotnet-standard"

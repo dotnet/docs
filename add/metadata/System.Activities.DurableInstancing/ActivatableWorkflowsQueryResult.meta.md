@@ -26,15 +26,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.DurableInstancing.ActivatableWorkflowsQueryResult.ActivationParameters
 ms.technology: 
   - "dotnet-standard"

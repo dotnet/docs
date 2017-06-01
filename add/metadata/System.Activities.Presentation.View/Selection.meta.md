@@ -98,15 +98,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Activities.Presentation.View.Selection.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Activities.Presentation.View.Selection.#ctor(System.Activities.Presentation.Model.ModelItem[])
 ms.technology: 
   - "dotnet-standard"

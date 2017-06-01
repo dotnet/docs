@@ -31,14 +31,6 @@ manager: "markgal"
 ---
 
 ---
-uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "v-jibran"
-manager: "markgal"
----
-
----
 uid: System.IdentityModel.Tokens.SecurityTokenNotYetValidException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-standard"

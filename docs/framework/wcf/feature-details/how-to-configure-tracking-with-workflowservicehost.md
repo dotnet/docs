@@ -22,7 +22,7 @@ This topic explains how to configure tracking for a [!INCLUDE[netfx_current_long
   
 1.  Add the <xref:System.Activities.Tracking.EtwTrackingParticipant> using the <`behavior`> element in a configuration file, as shown in the following example.  
   
-    ```  
+    ```xml  
     <behaviors>  
        <serviceBehaviors>  
          <behavior>  

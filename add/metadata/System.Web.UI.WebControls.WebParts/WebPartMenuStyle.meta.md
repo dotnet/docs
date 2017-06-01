@@ -125,15 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.Reset
 ms.technology: 
   - "dotnet-webforms"
@@ -161,15 +152,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetEvents
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.MergeWith(System.Web.UI.WebControls.Style)
 ms.technology: 
   - "dotnet-webforms"
@@ -180,15 +162,6 @@ manager: "wpickett"
 
 ---
 uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetDefaultProperty
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
-uid: System.Web.UI.WebControls.WebParts.WebPartMenuStyle.System#ComponentModel#ICustomTypeDescriptor#GetProperties
 ms.technology: 
   - "dotnet-webforms"
 author: "tdykstra"

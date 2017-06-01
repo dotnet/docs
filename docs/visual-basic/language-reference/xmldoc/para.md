@@ -39,7 +39,7 @@ Specifies that the content is formatted as a paragraph.
   
 ## Syntax  
   
-```  
+```xml  
 <para>content</para>  
 ```  
   

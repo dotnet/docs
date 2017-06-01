@@ -70,15 +70,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingPointKeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Media.Animation.EasingPointKeyFrame.#ctor(System.Windows.Point,System.Windows.Media.Animation.KeyTime)
 ms.technology: 
   - "dotnet-wpf"

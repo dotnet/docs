@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.CodeDom.CodeBinaryOperatorExpression.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.CodeDom.CodeBinaryOperatorExpression.Operator
 ms.technology: 
   - "dotnet-standard"

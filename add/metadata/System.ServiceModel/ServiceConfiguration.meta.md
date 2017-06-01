@@ -80,15 +80,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.ServiceConfiguration.LoadFromConfiguration
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.ServiceConfiguration.AddServiceEndpoint(System.Type,System.ServiceModel.Channels.Binding,System.Uri)
 ms.technology: 
   - "dotnet-standard"

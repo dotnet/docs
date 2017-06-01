@@ -49,13 +49,13 @@ Example of a text stream with embedded objects and their range spans
   
  When it is necessary to traverse the content of a text range, a series of steps are involved behind the scenes in order for the <xref:System.Windows.Automation.Text.TextPatternRange.Move%2A> method to execute successfully.  
   
-1.  The text range is normalized; that is, the text range is collapsed to a degenerate range at the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint, which makes the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint superfluous. This step is necessary to remove ambiguity in situations where a text range spans <xref:System.Windows.Automation.Text.TextUnit> boundaries: for example, "{The U}RL [http://www.microsoft.com](http://www.microsoft.com) is embedded in text" where "{" and "}" are the text range endpoints.  
+1.  The text range is normalized; that is, the text range is collapsed to a degenerate range at the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start> endpoint, which makes the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> endpoint superfluous. This step is necessary to remove ambiguity in situations where a text range spans <xref:System.Windows.Automation.Text.TextUnit> boundaries: for example, "{The U}RL [http://www.microsoft.com](http://www.microsoft.com) is embedded in text" where "{" and "}" are the text range endpoints.  
   
 2.  The resulting range is moved backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> to the beginning of the requested <xref:System.Windows.Automation.Text.TextUnit> boundary.  
   
 3.  The range is moved forward or backward in the <xref:System.Windows.Automation.TextPattern.DocumentRange%2A> by the requested number of <xref:System.Windows.Automation.Text.TextUnit> boundaries.  
   
-4.  The range is then expanded from a degenerate range state by moving the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint> endpoint by one requested <xref:System.Windows.Automation.Text.TextUnit> boundary.  
+4.  The range is then expanded from a degenerate range state by moving the <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End> endpoint by one requested <xref:System.Windows.Automation.Text.TextUnit> boundary.  
   
  ![Range adjustments by Move & ExpandToEnclosingUnit](../../../docs/framework/ui-automation/media/uia-textpattern-moveandexpand-examples.png "UIA_TextPattern_MoveAndExpand_Examples")  
 Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()  
@@ -66,9 +66,9 @@ Examples of how a text range is adjusted for Move() and ExpandToEnclosingUnit()
   
  Legend for the examples shown:  
   
- { = <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint>  
+ { = <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.Start>  
   
- } = <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint>  
+ } = <xref:System.Windows.Automation.Text.TextPatternRangeEndpoint.End>  
   
 <a name="Hyperlink"></a>   
 ### Hyperlink  

@@ -40,7 +40,7 @@ translation.priority.ht:
 # &lt;para&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <para>content</para>  
 ```  
   

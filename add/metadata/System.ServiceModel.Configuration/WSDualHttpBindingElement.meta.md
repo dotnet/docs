@@ -71,15 +71,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Configuration.WSDualHttpBindingElement.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Configuration.WSDualHttpBindingElement.TextEncoding
 ms.technology: 
   - "dotnet-standard"

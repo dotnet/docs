@@ -29,11 +29,10 @@ This sample demonstrates how to use the [\<serviceAuthorization>](../../../../do
   
  The service configuration file uses the [\<serviceAuthorization>](../../../../docs/framework/configure-apps/file-schema/wcf/serviceauthorization-element.md) to set the `principalPermissionMode` attribute:  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
-    <behavior>  
-      ...  
+    <behavior>   
       <!-- The serviceAuthorization behavior sets the  
            principalPermissionMode to UseWindowsGroups.  
            This puts a WindowsPrincipal on the current thread when a   

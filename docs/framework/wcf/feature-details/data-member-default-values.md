@@ -37,7 +37,7 @@ In the [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)], types ha
 ### XML Representation  
  If the previous example is serialized to XML, the representation is similar to the following.  
   
-```  
+```xml  
 <Employee>  
    <employeeName xsi:nil="true" />  
    <employeeID>0</employeeID>  

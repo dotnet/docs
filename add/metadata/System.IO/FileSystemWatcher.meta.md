@@ -231,15 +231,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.FileSystemWatcher.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.FileSystemWatcher.Filter
 ms.technology: 
   - "dotnet-standard"

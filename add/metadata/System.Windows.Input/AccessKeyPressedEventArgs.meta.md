@@ -26,14 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Input.AccessKeyPressedEventArgs.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Input.AccessKeyPressedEventArgs.Key
 ms.technology: 
   - "dotnet-wpf"

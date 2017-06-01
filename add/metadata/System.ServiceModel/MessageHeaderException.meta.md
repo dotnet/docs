@@ -53,15 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.MessageHeaderException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.MessageHeaderException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

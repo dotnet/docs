@@ -32,7 +32,7 @@ Instructs the runtime to collect statistics on all application domains in the pr
   
 ## Syntax  
   
-```  
+```xml  
 <appDomainResourceMonitoring    
    enabled="true|false"/>  
 ```  
@@ -73,7 +73,7 @@ Instructs the runtime to collect statistics on all application domains in the pr
 ## Example  
  The following example shows how to enable application domain resource monitoring.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <appDomainResourceMonitoring enabled="true"/>  

@@ -31,7 +31,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
 ## msxsl:script Element Definition  
  The `msxsl:script` element is a Microsoft extension to the XSLT 1.0 recommendation and has the following definition:  
   
-```  
+```xml  
 <msxsl:script language = "language-name" implements-prefix = "prefix of user namespace"> </msxsl:script>  
 ```  
   
@@ -44,7 +44,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
 > [!NOTE]
 >  When using the `msxsl:script` element, we strongly recommend that the script, regardless of language, be placed inside a CDATA section. Because the script can contain operators, identifiers, or delimiters for a given language, if it is not contained within a CDATA section, it has the potential of being misinterpreted as XML. The following XML shows a template of the CDATA section where code can be placed.  
   
-```  
+```xml  
 <msxsl:script implements-prefix='your-prefix' language='CSharp'>  
 <![CDATA[  
 // Code block.  
@@ -83,7 +83,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
   
  You can import the additional assemblies using the `msxsl:assembly` element. This includes the assembly when the style sheet is compiled. The `msxsl:assembly` element has the following definition:  
   
-```  
+```xml  
 <msxsl:script>  
   <msxsl:assembly name="system.assemblyName" />  
   <msxsl:assembly href="path-name" />  
@@ -116,7 +116,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
   
  You can add support for additional namespaces using the `namespace` attribute. The attribute value is the name of the namespace.  
   
-```  
+```xml  
 <msxsl:script>  
   <msxsl:using namespace="system.namespaceName" />  
     <![CDATA[  
@@ -139,7 +139,7 @@ The <xref:System.Xml.Xsl.XslCompiledTransform> class supports embedded scripts u
   
 ### Output  
   
-```  
+```xml  
 <circles xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="urn:my-scripts">  
   <circle>  
     <radius>12</radius>  

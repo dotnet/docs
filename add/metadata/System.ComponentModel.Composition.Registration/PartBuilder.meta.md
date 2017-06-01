@@ -215,24 +215,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.Composition.Registration.PartBuilder.ExportInterfaces
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.ComponentModel.Composition.Registration.PartBuilder.Export
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.Composition.Registration.PartBuilder.ExportProperties
 ms.technology: 
   - "dotnet-standard"

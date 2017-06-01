@@ -118,13 +118,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.WqlEventQuery.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.WqlEventQuery.EventClassName
 ms.technology: 
   - "dotnet-standard"

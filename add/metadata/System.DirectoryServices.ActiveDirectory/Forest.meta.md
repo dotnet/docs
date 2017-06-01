@@ -160,13 +160,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.Forest.FindAllDiscoverableGlobalCatalogs
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.Forest.ForestModeLevel
 author: "BrucePerlerMS"
 ms.author: "bruceper"
@@ -202,21 +195,7 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.ActiveDirectory.Forest.Dispose
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.ActiveDirectory.Forest.Name
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.FindGlobalCatalog
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"
@@ -315,13 +294,6 @@ manager: "mbaldwin"
 
 ---
 uid: System.DirectoryServices.ActiveDirectory.Forest.UpdateTrustRelationship(System.DirectoryServices.ActiveDirectory.Forest,System.DirectoryServices.ActiveDirectory.TrustDirection)
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
-uid: System.DirectoryServices.ActiveDirectory.Forest.FindAllGlobalCatalogs
 author: "BrucePerlerMS"
 ms.author: "bruceper"
 manager: "mbaldwin"

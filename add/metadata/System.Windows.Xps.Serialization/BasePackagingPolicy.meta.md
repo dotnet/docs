@@ -188,20 +188,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.Serialization.BasePackagingPolicy.ReleaseResourceStreamForXpsFont
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----
-
----
-uid: System.Windows.Xps.Serialization.BasePackagingPolicy.AcquireResourceStreamForXpsFont
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.Serialization.BasePackagingPolicy.PersistPrintTicket(System.Printing.PrintTicket)
 ms.technology: 
   - "dotnet-wpf"

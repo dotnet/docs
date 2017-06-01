@@ -76,13 +76,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Xaml.Schema.XamlTypeInvoker.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Xaml.Schema.XamlTypeInvoker.SetTypeConverterHandler
 ms.technology: 
   - "dotnet-wpf"

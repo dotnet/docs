@@ -39,14 +39,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Speech.Recognition.Choices.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kbridge"
-manager: "ghogen"
----
-
----
 uid: System.Speech.Recognition.Choices.Add(System.String[])
 ms.technology: 
   - "dotnet-standard"

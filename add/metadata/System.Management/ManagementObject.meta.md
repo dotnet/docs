@@ -132,13 +132,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementObject.GetRelated
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementObject.GetRelationships
 ms.technology: 
   - "dotnet-standard"
@@ -203,13 +196,6 @@ manager: "jillfra"
 
 ---
 uid: System.Management.ManagementObject.GetMethodParameters(System.String)
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementObject.Delete
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"
@@ -335,20 +321,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementObject.Put
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementObject.Get
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementObject.Put(System.Management.PutOptions)
 ms.technology: 
   - "dotnet-standard"
@@ -377,13 +349,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementObject.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementObject.GetRelated(System.Management.ManagementOperationObserver,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -391,20 +356,7 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementObject.Dispose
-ms.technology: 
-  - "dotnet-standard"
----
-
----
 uid: System.Management.ManagementObject.InvokeMethod(System.Management.ManagementOperationObserver,System.String,System.Management.ManagementBaseObject,System.Management.InvokeMethodOptions)
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementObject.GetRelationships
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"

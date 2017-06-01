@@ -246,13 +246,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Immutable.ImmutableArray`1.Sort
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Immutable.ImmutableArray`1.op_Inequality(System.Collections.Immutable.ImmutableArray{`0},System.Collections.Immutable.ImmutableArray{`0})
 author: "mairaw"
 ms.author: "mairaw"

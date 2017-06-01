@@ -52,15 +52,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Windows.Controls.CalendarDateRange.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Controls.CalendarDateRange.#ctor(System.DateTime)
 ms.technology: 
   - "dotnet-wpf"

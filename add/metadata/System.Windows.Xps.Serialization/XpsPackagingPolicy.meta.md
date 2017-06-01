@@ -207,17 +207,3 @@ ms.technology:
   - "dotnet-wpf"
 manager: "leannef"
 ---
-
----
-uid: System.Windows.Xps.Serialization.XpsPackagingPolicy.ReleaseResourceStreamForXpsFont
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----
-
----
-uid: System.Windows.Xps.Serialization.XpsPackagingPolicy.AcquireResourceStreamForXpsFont
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----

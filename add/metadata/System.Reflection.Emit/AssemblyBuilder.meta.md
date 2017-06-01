@@ -308,15 +308,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.Emit.AssemblyBuilder.GlobalAssemblyCache
 ms.technology: 
   - "dotnet-standard"

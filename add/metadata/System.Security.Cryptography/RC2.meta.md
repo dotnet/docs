@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RC2.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RC2.EffectiveKeySizeValue
 ms.technology: 
   - "dotnet-standard"

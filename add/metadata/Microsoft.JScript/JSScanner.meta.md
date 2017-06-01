@@ -72,8 +72,3 @@ ms.author: "mikejo"
 uid: Microsoft.JScript.JSScanner.GetCurrentPosition(System.Boolean)
 ms.author: "mikejo"
 ---
-
----
-uid: Microsoft.JScript.JSScanner.#ctor
-ms.author: "mikejo"
----

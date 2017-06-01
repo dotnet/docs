@@ -73,14 +73,6 @@ manager: "wpickett"
 uid: System.Windows.RoutedEventArgs.#ctor
 ms.technology: 
   - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
-uid: System.Windows.RoutedEventArgs.#ctor
-ms.technology: 
-  - "dotnet-wpf"
 author: "stevehoag"
 ms.author: "shoag"
 manager: "wpickett"

@@ -62,7 +62,7 @@ The sample demonstrates how to create a binding that is designed to support stre
   
      Register the handler with the configuration system, by adding the following section to the service's configuration file.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.serviceModel>  
         <extensions>  
@@ -76,7 +76,7 @@ The sample demonstrates how to create a binding that is designed to support stre
   
      The handler can then be referenced from the serviceModel configuration section.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.serviceModel>  
         <client>  

@@ -32,7 +32,7 @@ This topic shows how to use the [EDM Generator (EdmGen.exe)](../../../../../docs
   
 3.  At the command prompt, execute the following command without line breaks:  
   
-    ```scr  
+    ```console
     "%windir%\Microsoft.NET\Framework\v4.0.30319\edmgen.exe" /mode:ValidateArtifacts /inssdl:.\School.ssdl /inmsl:.\School.msl /incsdl:.\School.csdl  
     ```  
   

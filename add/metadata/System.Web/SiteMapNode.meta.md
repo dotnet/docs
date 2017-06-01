@@ -263,14 +263,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.SiteMapNode.Clone
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.SiteMapNode.HasChildNodes
 ms.technology: 
   - "dotnet-webforms"

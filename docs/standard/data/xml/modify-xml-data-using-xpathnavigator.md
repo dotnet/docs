@@ -33,16 +33,16 @@ The <xref:System.Xml.XPath.XPathNavigator> class provides a set of methods used 
   
 |<xref:System.Xml.XPath.XPathNodeType>|Data Changed|  
 |---------------------------------------------------------------------------------------------------------------------------------------------|------------------|  
-|<xref:System.Xml.XPath.XPathNodeType>|Not supported.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The content of the element.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The value of the attribute.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The text content.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The content, excluding the target.|  
-|<xref:System.Xml.XPath.XPathNodeType>|The content of the comment.|  
-|<xref:System.Xml.XPath.XPathNodeType>|Not Supported.|  
+|<xref:System.Xml.XPath.XPathNodeType.Root>|Not supported.|  
+|<xref:System.Xml.XPath.XPathNodeType.Element>|The content of the element.|  
+|<xref:System.Xml.XPath.XPathNodeType.Attribute>|The value of the attribute.|  
+|<xref:System.Xml.XPath.XPathNodeType.Text>|The text content.|  
+|<xref:System.Xml.XPath.XPathNodeType.ProcessingInstruction>|The content, excluding the target.|  
+|<xref:System.Xml.XPath.XPathNodeType.Comment>|The content of the comment.|  
+|<xref:System.Xml.XPath.XPathNodeType.Namespace>|Not Supported.|  
   
 > [!NOTE]
->  Editing <xref:System.Xml.XPath.XPathNodeType> nodes or the <xref:System.Xml.XPath.XPathNodeType> node is not supported.  
+>  Editing <xref:System.Xml.XPath.XPathNodeType.Namespace> nodes or the <xref:System.Xml.XPath.XPathNodeType.Root> node is not supported.  
   
  The <xref:System.Xml.XPath.XPathNavigator> class also provides a set of methods used to insert and remove nodes. For more information about inserting and removing nodes from an XML document, see the [Insert XML Data using XPathNavigator](../../../../docs/standard/data/xml/insert-xml-data-using-xpathnavigator.md) and [Remove XML Data using XPathNavigator](../../../../docs/standard/data/xml/remove-xml-data-using-xpathnavigator.md) topics.  
   
@@ -116,7 +116,7 @@ navigator.SetTypedValue(DateTime.Now);
   
  An element or attribute can be considered to be schema-valid if it conforms to all the rules specific to its type definition. An element that has the simple type `xs:int` has to contain a numeric value between -2147483648 and 2147483647 to be schema-valid. For complex types, the schema-validity of the element is dependent on the schema-validity of its child elements and attributes. Thus if an element is valid against its complex type definition, all its child elements and attributes are valid against their type definitions. Similarly, if even one of the child elements or attributes of an element is invalid against its type definition, or has an unknown validity, the element is also either invalid or of unknown validity.  
   
- Given that the validity of an element is dependent on the validity of its child elements and attributes, modifications to either result in altering the validity of the element if it was previously valid. Specifically, if the child elements or attributes of an element are inserted, updated, or deleted, then the validity of the element becomes unknown. This is represented by the <xref:System.Xml.Schema.IXmlSchemaInfo.Validity%2A> property of the element's <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> property being set to <xref:System.Xml.Schema.XmlSchemaValidity>. Furthermore, this effect cascades upwards recursively across the XML document, because the validity of the element's parent element (and its parent element, and so on) also becomes unknown.  
+ Given that the validity of an element is dependent on the validity of its child elements and attributes, modifications to either result in altering the validity of the element if it was previously valid. Specifically, if the child elements or attributes of an element are inserted, updated, or deleted, then the validity of the element becomes unknown. This is represented by the <xref:System.Xml.Schema.IXmlSchemaInfo.Validity%2A> property of the element's <xref:System.Xml.XPath.XPathNavigator.SchemaInfo%2A> property being set to <xref:System.Xml.Schema.XmlSchemaValidity.NotKnown>. Furthermore, this effect cascades upwards recursively across the XML document, because the validity of the element's parent element (and its parent element, and so on) also becomes unknown.  
   
  For more information about schema validation and the <xref:System.Xml.XPath.XPathNavigator> class, see [Schema Validation using XPathNavigator](../../../../docs/standard/data/xml/schema-validation-using-xpathnavigator.md).  
   
@@ -201,7 +201,7 @@ Console.WriteLine(navigator.OuterXml);
 ## Modifying Namespace Nodes  
  In the Document Object Model (DOM), namespace declarations are treated as if they are regular attributes that can be inserted, updated and deleted. The <xref:System.Xml.XPath.XPathNavigator> class does not allow such operations on namespace nodes because altering the value of a namespace node can change the identity of the elements and attributes within the scope of the namespace node as illustrated in the following example.  
   
-```  
+```xml  
 <root xmlns="http://www.contoso.com">  
     <child />  
 </root>  
@@ -209,7 +209,7 @@ Console.WriteLine(navigator.OuterXml);
   
  If the XML example above is changed in the following way, this effectively renames every element in the document because the value of each element's namespace URI is changed.  
   
-```  
+```xml  
 <root xmlns="urn:contoso.com">  
     <child />  
 </root>  
@@ -217,7 +217,7 @@ Console.WriteLine(navigator.OuterXml);
   
  Inserting namespace nodes that do not conflict with namespace declarations at the scope that they are inserted in is allowed by the <xref:System.Xml.XPath.XPathNavigator> class. In this case, the namespace declarations are not declared at lower scopes in the XML document and does not result in renaming as illustrated in the following example.  
   
-```  
+```xml  
 <root xmlns:a="http://www.contoso.com">  
     <parent>  
         <a:child />  
@@ -227,7 +227,7 @@ Console.WriteLine(navigator.OuterXml);
   
  If the XML example above is changed in the following way, the namespace declarations are correctly propagated across the XML document below the scope of the other namespace declaration.  
   
-```  
+```xml  
 <root xmlns:a="http://www.contoso.com">  
     <parent a:parent-id="1234" xmlns:a="http://www.contoso.com/parent-id">  
         <a:child xmlns:a="http://www.contoso.com/">  

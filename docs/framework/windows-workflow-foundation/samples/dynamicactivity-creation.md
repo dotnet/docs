@@ -102,7 +102,7 @@ DynamicActivity act = new DynamicActivity()
   
  When created in XAML, the input and output are declared as shown in the following example.  
   
-```  
+```xml  
 <Activity x:Class="Microsoft.Samples.DynamicActivityCreation.FindAverage"  
           xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"  
           xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib"  

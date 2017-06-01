@@ -63,9 +63,3 @@ uid: System.Net.Http.Headers.RangeHeaderValue.System#ICloneable#Clone
 ms.author: "bobdel"
 manager: "markl"
 ---
-
----
-uid: System.Net.Http.Headers.RangeHeaderValue.#ctor
-ms.author: "bobdel"
-manager: "markl"
----

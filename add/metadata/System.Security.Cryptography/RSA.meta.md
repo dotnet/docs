@@ -125,15 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSA.Create
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RSA.KeyExchangeAlgorithm
 ms.technology: 
   - "dotnet-standard"

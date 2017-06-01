@@ -251,15 +251,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Security.WSSecurityTokenSerializer.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Security.WSSecurityTokenSerializer.MaximumKeyDerivationLabelLength
 ms.technology: 
   - "dotnet-standard"

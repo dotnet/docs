@@ -24,7 +24,7 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
   
 ## Syntax  
   
-```  
+```xml  
 <ws2007FederationHttpBinding>  
     <binding   
         bypassProxyOnLocal="Boolean"  
@@ -100,7 +100,7 @@ A secure and interoperable binding that derives from [\<wsFederationHttpBinding>
   
 ## Example  
   
-```  
+```xml  
 <configuration>  
 <system.ServiceModel>  
 <bindings>  

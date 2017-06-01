@@ -61,7 +61,7 @@ xmlStream.Close();
   
  For example, consider the following XML:  
   
-```  
+```xml  
 <NewDataSet xmlns:od="urn:schemas-microsoft-com:officedata">  
 <Categories>  
   <CategoryID od:adotype="3">1</CategoryID>   

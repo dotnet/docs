@@ -53,15 +53,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.WebParts.WebPartVerbCollection.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.WebParts.WebPartVerbCollection.CopyTo(System.Web.UI.WebControls.WebParts.WebPartVerb[],System.Int32)
 ms.technology: 
   - "dotnet-webforms"

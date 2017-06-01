@@ -27,13 +27,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.XpsWriterException.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.XpsWriterException.#ctor(System.String,System.Exception)
 ms.technology: 
   - "dotnet-wpf"

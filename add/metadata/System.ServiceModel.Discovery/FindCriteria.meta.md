@@ -80,15 +80,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Discovery.FindCriteria.CreateMetadataExchangeEndpointCriteria
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Discovery.FindCriteria.ScopeMatchByPrefix
 ms.technology: 
   - "dotnet-standard"
@@ -153,15 +144,6 @@ manager: "erikre"
 
 ---
 uid: System.ServiceModel.Discovery.FindCriteria.ContractTypeNames
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
-uid: System.ServiceModel.Discovery.FindCriteria.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "Erikre"

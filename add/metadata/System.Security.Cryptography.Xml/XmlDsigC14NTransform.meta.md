@@ -35,15 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.Xml.XmlDsigC14NTransform.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.Xml.XmlDsigC14NTransform.LoadInnerXml(System.Xml.XmlNodeList)
 ms.technology: 
   - "dotnet-standard"
@@ -90,15 +81,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.Xml.XmlDsigC14NTransform.LoadInput(System.Object)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.Xml.XmlDsigC14NTransform.GetOutput
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

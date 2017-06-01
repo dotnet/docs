@@ -611,15 +611,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlWriter.WriteStartDocumentAsync
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlWriter.LookupPrefix(System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -818,15 +809,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlWriter.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlWriter.WriteProcessingInstruction(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -900,15 +882,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlWriter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlWriter.WriteStartDocument
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

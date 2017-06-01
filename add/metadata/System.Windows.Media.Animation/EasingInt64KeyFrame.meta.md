@@ -62,14 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Animation.EasingInt64KeyFrame.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Animation.EasingInt64KeyFrame.#ctor(System.Int64)
 ms.technology: 
   - "dotnet-wpf"

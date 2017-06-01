@@ -32,13 +32,13 @@ Supplies the CLR <xref:System.Type> object that is the underlying type for a spe
   
 ## XAML Attribute Usage  
   
-```  
+```xaml  
 <object property="{x:Type prefix:typeNameValue}" .../>  
 ```  
   
 ## XAML Object Element Usage  
   
-```  
+```xaml  
 <x:Type TypeName="prefix:typeNameValue"/>  
 ```  
   

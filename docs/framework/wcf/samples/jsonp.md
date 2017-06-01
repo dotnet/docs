@@ -32,7 +32,7 @@ proxy.GetCustomer(onSuccess, onFail, null);
   
  The Web page can call the WCF REST service because the service is using the <xref:System.ServiceModel.Description.WebScriptEndpoint> with `crossDomainScriptAccessEnabled` set to `true`. Both of these configurations are done in the Web.config file under the \<system.serviceModel> element.  
   
-```  
+```xml  
 <system.serviceModel>  
   <serviceHostingEnvironment aspNetCompatibilityEnabled="true"/>  
   <standardEndpoints>  

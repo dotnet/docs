@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.ListDictionary.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.ListDictionary.Remove(System.Object)
 ms.technology: 
   - "dotnet-standard"

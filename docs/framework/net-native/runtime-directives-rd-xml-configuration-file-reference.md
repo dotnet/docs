@@ -18,7 +18,7 @@ manager: "wpickett"
 # Runtime Directives (rd.xml) Configuration File Reference
 A runtime directives (.rd.xml) file is an XML configuration file that specifies whether designated program elements are available for reflection. Here’s an example of a runtime directives file:  
   
-```  
+```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
 <Application>  
   <Namespace Name="Contoso.Cloud.AppServices" Serialize="Required Public" />  
@@ -131,7 +131,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
   
  A [Library](../../../docs/framework/net-native/library-element-net-native.md) element has a single attribute, `Name`, that specifies the name of a library or assembly, without its file extension. For example, the following [Library](../../../docs/framework/net-native/library-element-net-native.md) element applies to an assembly named Extensions.dll.  
   
-```  
+```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
   <Application>  
      <!-- Child elements go here -->    
@@ -193,7 +193,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
   
  For example, the following runtime directives file defines policy for all types and members in the assembly DataClasses.dll. It enables reflection for serialization of all public properties, enables browsing for all types and type members, enables activation for all types (because of the `Dynamic` attribute), and enables reflection for all public types and members.  
   
-```  
+```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <Application>  
       <Assembly Name="DataClasses" Serialize="Required Public"   
@@ -251,7 +251,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
   
  For example, if a single project includes the following two runtime directives files, the serialization policy for DataClasses.dll is set to both `Required Public` and `All`. In this case, the serialization policy would be resolved as `Required All`.  
   
-```  
+```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <Application>  
       <Assembly Name="DataClasses" Serialize="Required Public"/>  
@@ -262,7 +262,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
 </Directives>  
 ```  
   
-```  
+```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <Application>  
       <Assembly Name="DataClasses" Serialize="All" />  
@@ -280,7 +280,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
   
  In the following example, the serialization policy setting for everything in `DataClasses` that’s not in `DataClasses.ViewModels` would be `Required Public`, and everything that's in both `DataClasses` and `DataClasses.ViewModels` would be `All`.  
   
-```  
+```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <Application>  
       <Assembly Name="DataClasses" Serialize="Required Public" >  
@@ -296,7 +296,7 @@ A runtime directives (.rd.xml) file is an XML configuration file that specifies 
 ### If open generics and instantiated elements apply the same policy type  
  In the following example, `Dictionary<int,int>` is assigned the `Browse` policy only if the engine has another reason to give it the `Browse` policy (which would otherwise be the default behavior); every other instantiation of <xref:System.Collections.Generic.Dictionary%602> will have all of its members browsable.  
   
-```  
+```xml  
 <Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">  
    <Application>  
       <Assembly Name="DataClasses" Serialize="Required Public" >  

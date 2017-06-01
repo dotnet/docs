@@ -566,15 +566,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.DateTimeOffset.ToString
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.DateTimeOffset.Minute
 ms.technology: 
   - "dotnet-standard"

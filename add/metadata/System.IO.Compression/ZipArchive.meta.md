@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.Compression.ZipArchive.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.Compression.ZipArchive.Mode
 ms.technology: 
   - "dotnet-standard"

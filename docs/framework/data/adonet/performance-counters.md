@@ -45,7 +45,7 @@ ADO.NET 2.0 introduced expanded support for performance counters that includes s
 ### Activating Off-By-Default Counters  
  The performance counters `NumberOfFreeConnections`, `NumberOfActiveConnections`, `SoftDisconnectsPerSecond`, and `SoftConnectsPerSecond` are off by default. Add the following information to the application's configuration file to enable them:  
   
-```  
+```xml  
 <system.diagnostics>  
   <switches>  
     <add name="ConnectionPoolPerformanceCounterDetail"  

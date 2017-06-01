@@ -183,14 +183,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.FontUnit.ToString
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.FontUnit.Larger
 ms.technology: 
   - "dotnet-webforms"

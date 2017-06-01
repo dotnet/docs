@@ -46,10 +46,3 @@ ms.technology:
   - "dotnet-standard"
 manager: "ghogen"
 ---
-
----
-uid: System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----

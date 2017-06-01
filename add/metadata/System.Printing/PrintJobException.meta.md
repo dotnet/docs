@@ -89,14 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Printing.PrintJobException.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Printing.PrintJobException.#ctor(System.String)
 ms.technology: 
   - "dotnet-standard"

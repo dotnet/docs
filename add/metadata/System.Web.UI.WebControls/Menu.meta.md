@@ -426,12 +426,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.Menu.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.WebControls.Menu.DynamicPopOutImageTextFormatString
 ms.technology: 
   - "dotnet-webforms"

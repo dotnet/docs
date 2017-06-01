@@ -37,11 +37,3 @@ ms.technology:
 ms.author: "riande"
 manager: "wpickett"
 ---
-
----
-uid: System.Configuration.SettingsPropertyWrongTypeException.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----

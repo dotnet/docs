@@ -38,7 +38,7 @@ Specifies the compiler configuration attributes for a language provider.
   
 ## Syntax  
   
-```  
+```xml  
 <compiler  
   language="languageName[;...;...]"  
   extension="fileExtension[;...;...]"  
@@ -88,7 +88,7 @@ Specifies the compiler configuration attributes for a language provider.
 ## Example  
  The following example illustrates a typical compiler configuration element.  
   
-```  
+```xml  
 <configuration>  
   <system.codedom>  
     <compilers>  

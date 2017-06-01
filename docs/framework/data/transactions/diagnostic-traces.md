@@ -21,7 +21,7 @@ Traces are the publishing of specific messages that are generated during applica
 ## Enabling Tracing  
  To enable traces during transaction processing, you should edit your application’s configuration file. The following is an example.  
   
-```  
+```xml  
 <configuration>  
 <system.diagnostics>  
      <sources>  

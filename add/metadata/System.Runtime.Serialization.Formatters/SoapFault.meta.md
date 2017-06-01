@@ -20,13 +20,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Runtime.Serialization.Formatters.SoapFault.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Runtime.Serialization.Formatters.SoapFault.Detail
 ms.technology: 
   - "dotnet-standard"

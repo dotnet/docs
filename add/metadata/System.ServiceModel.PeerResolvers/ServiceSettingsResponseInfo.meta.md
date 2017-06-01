@@ -31,14 +31,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo.#ctor
-ms.technology: 
-  - "dotnet-standard"
-ms.author: "bobdel"
-manager: "ghogen"
----
-
----
 uid: System.ServiceModel.PeerResolvers.ServiceSettingsResponseInfo.ControlMeshShape
 ms.technology: 
   - "dotnet-standard"

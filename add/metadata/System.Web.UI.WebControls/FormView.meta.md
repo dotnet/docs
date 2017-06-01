@@ -26,12 +26,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.FormView.DataBind
-ms.technology: 
-  - "dotnet-webforms"
----
-
----
 uid: System.Web.UI.WebControls.FormView.System#Web#UI#WebControls#IDataBoundControl#DataSource
 ms.technology: 
   - "dotnet-webforms"

@@ -266,7 +266,7 @@ public class DbQueryDataSet : AsyncCodeActivity<DataSet>
   
 -   `ConfigName`: Set the name of the configuration section that contains the connection information.  
   
-    ```  
+    ```xml  
     <connectionStrings>      
         <add name="DbActivitiesSample"  
              providerName="System.Data.SqlClient"  

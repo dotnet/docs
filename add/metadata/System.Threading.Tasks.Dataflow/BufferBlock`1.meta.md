@@ -34,13 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Threading.Tasks.Dataflow.BufferBlock`1.#ctor
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Threading.Tasks.Dataflow.BufferBlock`1.Completion
 author: "rpetrusha"
 ms.author: "ronpet"

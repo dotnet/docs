@@ -44,15 +44,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Channels.ChannelFactoryBase.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Channels.ChannelFactoryBase.OnAbort
 ms.technology: 
   - "dotnet-standard"

@@ -38,7 +38,7 @@ Adds a listener to the `Listeners` collection for a trace source.
   
 ## Syntax  
   
-```  
+```xml  
 <add name="name"   
   type="TraceListenerClassName, Version, Culture, PublicKeyToken"  
   initializeData="data"/>  
@@ -103,7 +103,7 @@ Adds a listener to the `Listeners` collection for a trace source.
 ## Example  
  The following example shows how to use `<add>` elements to add the listeners `console` and `textListener` to the `Listeners` collection for the trace source `TraceSourceApp`. The `textListener` listener writes trace output to the file myListener.log.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

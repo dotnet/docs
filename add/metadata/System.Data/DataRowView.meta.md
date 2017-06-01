@@ -193,15 +193,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetProperties
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.DataRowView.CancelEdit
 ms.technology: 
   - "dotnet-ado"
@@ -311,15 +302,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetEditor(System.Type)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.DataRowView.System#ComponentModel#ICustomTypeDescriptor#GetEvents
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

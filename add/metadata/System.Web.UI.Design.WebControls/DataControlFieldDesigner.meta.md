@@ -95,14 +95,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.Design.WebControls.DataControlFieldDesigner.CreateField
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.Design.WebControls.DataControlFieldDesigner.GetNodeText(System.Web.UI.WebControls.DataControlField)
 ms.technology: 
   - "dotnet-webforms"

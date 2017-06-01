@@ -70,14 +70,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Forms.IDataObject.GetFormats
-ms.technology: 
-  - "dotnet-winforms"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Forms.IDataObject.SetData(System.Type,System.Object)
 ms.technology: 
   - "dotnet-winforms"

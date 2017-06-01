@@ -61,9 +61,9 @@ manager: "wpickett"
   
  The levels are as follows:  
   
--   Level 2 (<xref:System.Security.SecurityRuleSet>) – the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] transparency rules.  
+-   Level 2 (<xref:System.Security.SecurityRuleSet.Level2>) – the [!INCLUDE[net_v40_short](../../../includes/net-v40-short-md.md)] transparency rules.  
   
--   Level 1 (<xref:System.Security.SecurityRuleSet>) – the .NET Framework 2.0 transparency rules.  
+-   Level 1 (<xref:System.Security.SecurityRuleSet.Level1>) – the .NET Framework 2.0 transparency rules.  
   
  The primary difference between the two transparency levels is that level 1 does not enforce transparency rules for calls from outside the assembly and is intended only for compatibility.  
   
@@ -83,7 +83,7 @@ manager: "wpickett"
   
     -   Call native code or code that has the <xref:System.Security.SuppressUnmanagedCodeSecurityAttribute> attribute.  
   
-    -   Call a member that is protected by a <xref:System.Security.Permissions.SecurityAction>.  
+    -   Call a member that is protected by a <xref:System.Security.Permissions.SecurityAction.LinkDemand>.  
   
     -   Inherit from critical types.  
   

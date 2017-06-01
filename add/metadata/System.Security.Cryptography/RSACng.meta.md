@@ -89,15 +89,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.RSACng.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.RSACng.Decrypt(System.Byte[],System.Security.Cryptography.RSAEncryptionPadding)
 ms.technology: 
   - "dotnet-standard"

@@ -36,7 +36,7 @@ translation.priority.ht:
   - "zh-tw"
 ---
 # How to: Dial Modems Attached to Serial Ports in Visual Basic
-This topic describes how to use `My.Computer.Ports` to dial a modem in [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)].  
+This topic describes how to use `My.Computer.Ports` to dial a modem in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
   
  Typically, the modem is connected to one of the serial ports on the computer. For your application to communicate with the modem, it must send commands to the appropriate serial port.  
   

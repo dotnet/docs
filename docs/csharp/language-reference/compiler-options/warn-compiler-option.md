@@ -41,7 +41,7 @@ The **/warn** option specifies the warning level for the compiler to display.
   
 ## Syntax  
   
-```  
+```console  
 /warn:option  
 ```  
   
@@ -77,7 +77,7 @@ The **/warn** option specifies the warning level for the compiler to display.
 ## Example  
  Compile `in.cs` and have the compiler only display level 1 warnings:  
   
-```  
+```console  
 csc /warn:1 in.cs  
 ```  
   

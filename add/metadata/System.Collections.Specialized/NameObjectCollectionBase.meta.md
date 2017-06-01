@@ -204,15 +204,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Collections.Specialized.NameObjectCollectionBase.BaseGetAllValues
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Collections.Specialized.NameObjectCollectionBase.BaseSet(System.String,System.Object)
 ms.technology: 
   - "dotnet-standard"
@@ -248,15 +239,6 @@ manager: "wpickett"
 
 ---
 uid: System.Collections.Specialized.NameObjectCollectionBase.BaseGet(System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Collections.Specialized.NameObjectCollectionBase.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

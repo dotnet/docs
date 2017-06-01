@@ -215,15 +215,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Reflection.AssemblyName.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.Reflection.AssemblyName.SetPublicKey(System.Byte[])
 ms.technology: 
   - "dotnet-standard"

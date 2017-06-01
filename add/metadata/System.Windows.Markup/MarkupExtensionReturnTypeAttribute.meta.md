@@ -34,13 +34,6 @@ manager: "martinek"
 ---
 
 ---
-uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-manager: "martinek"
----
-
----
 uid: System.Windows.Markup.MarkupExtensionReturnTypeAttribute.#ctor(System.Type)
 ms.technology: 
   - "dotnet-wpf"

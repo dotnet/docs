@@ -44,15 +44,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.TypeGeneratedEventArgs.#ctor
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Entity.Design.TypeGeneratedEventArgs.#ctor(System.Data.Metadata.Edm.GlobalItem,System.CodeDom.CodeTypeReference)
 ms.technology: 
   - "dotnet-ado"

@@ -161,15 +161,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.DSACryptoServiceProvider.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.DSACryptoServiceProvider.VerifySignature(System.Byte[],System.Byte[])
 ms.technology: 
   - "dotnet-standard"

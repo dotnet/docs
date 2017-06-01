@@ -229,15 +229,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: System.Transactions.Transaction.Rollback
-ms.technology: 
-  - "dotnet-standard"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "ghogen"
----
-
----
 uid: System.Transactions.Transaction.GetPromotedToken
 ms.technology: 
   - "dotnet-standard"

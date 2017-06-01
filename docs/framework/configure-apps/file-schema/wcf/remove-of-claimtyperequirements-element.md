@@ -28,7 +28,7 @@ Specifies the types of claims to be removed in the federated credential.
   
 ## Syntax  
   
-```  
+```xml  
 <claimTypeRequirements>  
       <remove claimType="URI" />  
 </claimTypeRequirements>  

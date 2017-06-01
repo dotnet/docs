@@ -27,7 +27,7 @@ After setting a security mode (either transport or message), you have the option
   
 2.  Set the <xref:System.ServiceModel.WSHttpSecurity.Mode%2A> property to an appropriate value. This example uses the Message mode.  
   
-3.  Set the <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> property to an appropriate value. This example sets it to use Windows authentication (<xref:System.ServiceModel.MessageCredentialType>).  
+3.  Set the <xref:System.ServiceModel.MessageSecurityOverHttp.ClientCredentialType%2A> property to an appropriate value. This example sets it to use Windows authentication (<xref:System.ServiceModel.MessageCredentialType.Windows>).  
   
      [!code-csharp[c_ProgrammingSecurity#14](../../../samples/snippets/csharp/VS_Snippets_CFX/c_programmingsecurity/cs/source.cs#14)]
      [!code-vb[c_ProgrammingSecurity#14](../../../samples/snippets/visualbasic/VS_Snippets_CFX/c_programmingsecurity/vb/source.vb#14)]  
@@ -46,7 +46,7 @@ After setting a security mode (either transport or message), you have the option
   
 6.  Add either a `<message>` or `<transport>` element, as determined by the security mode. Set the `clientCredentialType` attribute to an appropriate value. This example uses `"Windows"`.  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
       <bindings>  
         <wsHttpBinding>  

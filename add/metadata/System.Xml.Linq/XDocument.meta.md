@@ -260,15 +260,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.Linq.XDocument.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.Linq.XDocument.Save(System.IO.TextWriter,System.Xml.Linq.SaveOptions)
 ms.technology: 
   - "dotnet-standard"

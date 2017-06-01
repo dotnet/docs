@@ -125,15 +125,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.IO.UnmanagedMemoryAccessor.Dispose
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.IO.UnmanagedMemoryAccessor.Capacity
 ms.technology: 
   - "dotnet-standard"
@@ -144,15 +135,6 @@ manager: "wpickett"
 
 ---
 uid: System.IO.UnmanagedMemoryAccessor.Write(System.Int64,System.SByte)
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.IO.UnmanagedMemoryAccessor.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

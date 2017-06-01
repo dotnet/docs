@@ -53,15 +53,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Discovery.DiscoveryReference.Resolve
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Discovery.DiscoveryReference.FilenameFromUrl(System.String)
 ms.technology: 
   - "dotnet-webforms"

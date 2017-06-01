@@ -44,13 +44,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.ReadElementContentAsLong
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Xml.XmlDictionaryReader.ReadDecimalArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString)
 ms.technology: 
   - "dotnet-standard"
@@ -88,13 +81,6 @@ manager: "wpickett"
 
 ---
 uid: System.Xml.XmlDictionaryReader.ReadStartElement
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
-uid: System.Xml.XmlDictionaryReader.ReadContentAsBase64
 ms.technology: 
   - "dotnet-standard"
 manager: "ghogen"
@@ -242,13 +228,6 @@ ms.technology:
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
----
-
----
-uid: System.Xml.XmlDictionaryReader.ReadElementContentAsDecimal
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
 ---
 
 ---
@@ -468,13 +447,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.ReadElementContentAsInt
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Xml.XmlDictionaryReader.ReadFullStartElement(System.String,System.String)
 ms.technology: 
   - "dotnet-standard"
@@ -538,13 +510,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.ReadElementContentAsDateTime
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Xml.XmlDictionaryReader.CanCanonicalize
 ms.technology: 
   - "dotnet-standard"
@@ -581,15 +546,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.ReadContentAsString
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlDictionaryReader.ReadElementContentAsLong
 ms.technology: 
   - "dotnet-standard"
@@ -616,15 +572,6 @@ manager: "ghogen"
 
 ---
 uid: System.Xml.XmlDictionaryReader.ReadSingleArray
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Xml.XmlDictionaryReader.ReadFullStartElement
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -768,15 +715,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.MoveToStartElement
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlDictionaryReader.ReadArray(System.String,System.String,System.TimeSpan[],System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -840,15 +778,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.ReadContentAsBinHex
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlDictionaryReader.ReadElementContentAsString
 ms.technology: 
   - "dotnet-standard"
@@ -876,13 +805,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.ReadElementContentAsDouble
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Int64[],System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -907,13 +829,6 @@ ms.technology:
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
----
-
----
-uid: System.Xml.XmlDictionaryReader.ReadElementContentAsBinHex
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
 ---
 
 ---
@@ -1061,13 +976,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.ReadElementContentAsBase64
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Xml.XmlDictionaryReader.ReadArray(System.Xml.XmlDictionaryString,System.Xml.XmlDictionaryString,System.Boolean[],System.Int32,System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -1110,13 +1018,6 @@ ms.technology:
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
----
-
----
-uid: System.Xml.XmlDictionaryReader.ReadElementContentAsFloat
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
 ---
 
 ---
@@ -1318,13 +1219,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.ReadElementContentAsString
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
----
-
----
 uid: System.Xml.XmlDictionaryReader.ReadContentAs(System.Type,System.Xml.IXmlNamespaceResolver)
 ms.technology: 
   - "dotnet-standard"
@@ -1386,15 +1280,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Xml.XmlDictionaryReader.ReadString
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Xml.XmlDictionaryReader.CreateBinaryReader(System.Byte[],System.Int32,System.Int32,System.Xml.IXmlDictionary,System.Xml.XmlDictionaryReaderQuotas)
 ms.technology: 
   - "dotnet-standard"
@@ -1410,11 +1295,4 @@ ms.technology:
 author: "mairaw"
 ms.author: "mairaw"
 manager: "wpickett"
----
-
----
-uid: System.Xml.XmlDictionaryReader.ReadElementContentAsBoolean
-ms.technology: 
-  - "dotnet-standard"
-manager: "ghogen"
 ---

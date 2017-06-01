@@ -62,25 +62,7 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Security.Cryptography.TripleDESCng.CreateEncryptor
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
 uid: System.Security.Cryptography.TripleDESCng.GenerateKey
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.TripleDESCng.#ctor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"
@@ -126,15 +108,6 @@ manager: "wpickett"
 
 ---
 uid: System.Security.Cryptography.TripleDESCng.CreateDecryptor(System.Byte[],System.Byte[])
-ms.technology: 
-  - "dotnet-standard"
-author: "mairaw"
-ms.author: "mairaw"
-manager: "wpickett"
----
-
----
-uid: System.Security.Cryptography.TripleDESCng.CreateDecryptor
 ms.technology: 
   - "dotnet-standard"
 author: "mairaw"

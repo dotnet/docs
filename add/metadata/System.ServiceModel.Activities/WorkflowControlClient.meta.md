@@ -575,15 +575,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Activities.WorkflowControlClient.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Activities.WorkflowControlClient.BeginCancel(System.Guid,System.AsyncCallback,System.Object)
 ms.technology: 
   - "dotnet-standard"

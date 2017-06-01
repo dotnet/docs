@@ -34,14 +34,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Media3D.MatrixCamera.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Media3D.MatrixCamera.ProjectionMatrixProperty
 ms.technology: 
   - "dotnet-wpf"

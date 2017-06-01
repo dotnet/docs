@@ -155,12 +155,6 @@ manager: "ghogen"
 ---
 
 ---
-uid: Microsoft.VisualC.StlClr.Generic.ConstContainerRandomAccessIterator`1.#ctor
-ms.author: "mblome"
-manager: "ghogen"
----
-
----
 uid: Microsoft.VisualC.StlClr.Generic.ConstContainerRandomAccessIterator`1.op_Addition(Microsoft.VisualC.StlClr.Generic.ConstContainerRandomAccessIterator{`0}@,System.Int32)
 ms.author: "mblome"
 manager: "ghogen"

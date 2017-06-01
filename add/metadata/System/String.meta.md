@@ -143,15 +143,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.String.Normalize
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.String.System#IConvertible#ToUInt32(System.IFormatProvider)
 ms.technology: 
   - "dotnet-standard"
@@ -278,15 +269,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.String.ToCharArray
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.String.PadRight(System.Int32)
 ms.technology: 
   - "dotnet-standard"
@@ -360,15 +342,6 @@ manager: "wpickett"
 
 ---
 uid: System.String.CompareOrdinal(System.String,System.String)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.String.ToString
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -612,15 +585,6 @@ manager: "wpickett"
 
 ---
 uid: System.String.Clone
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.String.ToLower
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"
@@ -1178,15 +1142,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.String.Trim
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.String.System#IConvertible#ToUInt16(System.IFormatProvider)
 ms.technology: 
   - "dotnet-standard"
@@ -1418,15 +1373,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.String.ToUpper
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
 uid: System.String.EndsWith(System.String,System.StringComparison)
 ms.technology: 
   - "dotnet-standard"
@@ -1446,15 +1392,6 @@ manager: "wpickett"
 
 ---
 uid: System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean,System.Globalization.CultureInfo)
-ms.technology: 
-  - "dotnet-standard"
-author: "rpetrusha"
-ms.author: "ronpet"
-manager: "wpickett"
----
-
----
-uid: System.String.IsNormalized
 ms.technology: 
   - "dotnet-standard"
 author: "rpetrusha"

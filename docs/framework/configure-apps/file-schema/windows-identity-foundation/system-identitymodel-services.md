@@ -22,7 +22,7 @@ Configuration section for authentication using the WS-Federation protocol.
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel.services>  
   <federationConfiguration name=xs:string identityConfigurationName=xs:string>  
   </federationConfiguration>  
@@ -55,7 +55,7 @@ Configuration section for authentication using the WS-Federation protocol.
 ## Example  
  The following XML shows how to add a `<system.identityModel.services>` section to a configuration file. You must first add section declarations for both the `<system.identityModel.services>` section and the `<system.identityModel>` sections. (When you add a `<system.identityModel.services>` section, you should also add a declaration for the `<system.identityModel>` section to ensure that a default `<identityConfiguration>` section can be created by the runtime if necessary.) After the section declarations have been added, you can configure federated authentication settings under the `<system.identityModel.services>` element.  
   
-```  
+```xml  
 <configuration>  
   <configSections>  
     <section name="system.identityModel" type="System.IdentityModel.Configuration.SystemIdentityModelSection, System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=B77A5C561934E089" />  

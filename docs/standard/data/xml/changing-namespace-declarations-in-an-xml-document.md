@@ -22,7 +22,7 @@ manager: "wpickett"
 # Changing Namespace Declarations in an XML Document
 The **XmlDocument** exposes namespace declarations and **xmlns** attributes as part of the document object model. These are stored in the **XmlDocument**, so when you save the document, it can preserve the location of those attributes. Changing these attributes has no affect on the **Name**, **NamespaceURI**, and **Prefix** properties of other nodes already in the tree. For example, if you load the following document, then the `test` element has **NamespaceURI** `123.`  
   
-```  
+```xml  
 <test xmlns="123"/>  
 ```  
   

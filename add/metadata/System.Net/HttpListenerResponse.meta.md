@@ -47,12 +47,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.HttpListenerResponse.Close
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.HttpListenerResponse.System#IDisposable#Dispose
 ms.author: "bobdel"
 manager: "markl"

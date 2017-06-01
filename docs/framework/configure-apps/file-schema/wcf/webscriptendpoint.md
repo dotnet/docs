@@ -18,14 +18,18 @@ manager: "erikre"
 # &lt;webScriptEndpoint&gt;
 This configuration element defines a standard endpoint with a fixed [\<webHttpBinding>](../../../../../docs/framework/configure-apps/file-schema/wcf/webhttpbinding.md) binding that automatically adds the [\<enableWebScript>](../../../../../docs/framework/configure-apps/file-schema/wcf/enablewebscript.md) behavior. Use this endpoint when you are writing a service that is called from an ASP.NET AJAX application.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<standardEndpoints>  
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
-    <standardEndpoints>       <webScriptEndpoint>           <standardEndpoint             webEndpointType="String"/>             </webScriptEndpoint>     </standardEndpoints>  
+  <standardEndpoints>
+    <webScriptEndpoint>
+      <standardEndpoint webEndpointType="String"/>
+    </webScriptEndpoint>
+  </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

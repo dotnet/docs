@@ -260,15 +260,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.UI.WebControls.EntityDataSource.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "tdykstra"
-ms.author: "tdykstra"
-manager: "wpickett"
----
-
----
 uid: System.Web.UI.WebControls.EntityDataSource.Inserted
 ms.technology: 
   - "dotnet-webforms"

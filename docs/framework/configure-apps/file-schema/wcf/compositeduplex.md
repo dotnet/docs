@@ -29,7 +29,7 @@ Defines the binding element that is used when the client must expose an endpoint
   
 ## Syntax  
   
-```  
+```xml  
 <compositeDuplex clientBaseAddress="URI" />  
 ```  
   
@@ -58,7 +58,7 @@ Defines the binding element that is used when the client must expose an endpoint
   
 ## Example  
   
-```  
+```xml  
 <compositeDuplex clientBaseAddress="http://www.contoso.com" />  
 ```  
   

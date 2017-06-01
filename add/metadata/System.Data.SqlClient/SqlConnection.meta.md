@@ -98,15 +98,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.SqlClient.SqlConnection.GetSchema
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.SqlClient.SqlConnection.WorkstationId
 ms.technology: 
   - "dotnet-ado"
@@ -142,15 +133,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.SqlClient.SqlConnection.EnlistDistributedTransaction(System.EnterpriseServices.ITransaction)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlConnection.#ctor
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"
@@ -347,15 +329,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.SqlClient.SqlConnection.BeginTransaction(System.String)
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.SqlClient.SqlConnection.BeginTransaction
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

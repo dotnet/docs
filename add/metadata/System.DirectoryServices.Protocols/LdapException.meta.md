@@ -48,13 +48,6 @@ manager: "mbaldwin"
 ---
 
 ---
-uid: System.DirectoryServices.Protocols.LdapException.#ctor
-author: "BrucePerlerMS"
-ms.author: "bruceper"
-manager: "mbaldwin"
----
-
----
 uid: System.DirectoryServices.Protocols.LdapException.PartialResults
 author: "BrucePerlerMS"
 ms.author: "bruceper"

@@ -27,13 +27,6 @@ manager: "leannef"
 ---
 
 ---
-uid: System.Windows.Xps.Packaging.XpsDigitalSignature.VerifyCertificate
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----
-
----
 uid: System.Windows.Xps.Packaging.XpsDigitalSignature.SignedDocumentSequence
 ms.technology: 
   - "dotnet-wpf"
@@ -56,13 +49,6 @@ manager: "leannef"
 
 ---
 uid: System.Windows.Xps.Packaging.XpsDigitalSignature.IsCertificateAvailable
-ms.technology: 
-  - "dotnet-wpf"
-manager: "leannef"
----
-
----
-uid: System.Windows.Xps.Packaging.XpsDigitalSignature.Verify
 ms.technology: 
   - "dotnet-wpf"
 manager: "leannef"

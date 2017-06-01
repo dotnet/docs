@@ -209,28 +209,7 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementClass.GetInstances
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementClass.GetSubclasses
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementClass.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementClass.GetRelationshipClasses
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"
@@ -272,13 +251,6 @@ manager: "jillfra"
 ---
 
 ---
-uid: System.Management.ManagementClass.#ctor
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
 uid: System.Management.ManagementClass.#ctor(System.Management.ManagementPath,System.Management.ObjectGetOptions)
 ms.technology: 
   - "dotnet-standard"
@@ -287,13 +259,6 @@ manager: "jillfra"
 
 ---
 uid: System.Management.ManagementClass.GetRelationshipClasses(System.Management.ManagementOperationObserver,System.String)
-ms.technology: 
-  - "dotnet-standard"
-manager: "jillfra"
----
-
----
-uid: System.Management.ManagementClass.GetRelatedClasses
 ms.technology: 
   - "dotnet-standard"
 manager: "jillfra"

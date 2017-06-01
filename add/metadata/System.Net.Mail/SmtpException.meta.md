@@ -53,12 +53,6 @@ manager: "markl"
 ---
 
 ---
-uid: System.Net.Mail.SmtpException.#ctor
-ms.author: "bobdel"
-manager: "markl"
----
-
----
 uid: System.Net.Mail.SmtpException.#ctor(System.String)
 ms.author: "bobdel"
 manager: "markl"

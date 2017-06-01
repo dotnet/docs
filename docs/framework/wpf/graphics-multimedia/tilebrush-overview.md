@@ -56,13 +56,13 @@ Components of a TileBrush with a TileMode of Tile
 ## The Base Tile  
  A                  <xref:System.Windows.Media.TileBrush> projects its content onto a base tile. The                  <xref:System.Windows.Media.TileBrush.Stretch%2A> property controls how                  <xref:System.Windows.Media.TileBrush> content is stretched to fill the base tile. The                  <xref:System.Windows.Media.TileBrush.Stretch%2A> property accepts the following values, defined by the                  <xref:System.Windows.Media.Stretch> enumeration:  
   
--   <xref:System.Windows.Media.Stretch>: The brush's content is not stretched to fill the tile.  
+-   <xref:System.Windows.Media.Stretch.None>: The brush's content is not stretched to fill the tile.  
   
--   <xref:System.Windows.Media.Stretch>: The brush's content is scaled to fit the tile. Because the content's height and width are scaled independently, the original aspect ratio of the content might not be preserved. That is, the brush's content might be warped in order to completely fill the output tile.  
+-   <xref:System.Windows.Media.Stretch.Fill>: The brush's content is scaled to fit the tile. Because the content's height and width are scaled independently, the original aspect ratio of the content might not be preserved. That is, the brush's content might be warped in order to completely fill the output tile.  
   
--   <xref:System.Windows.Media.Stretch>: The brush's content is scaled so that it fits completely within the tile. The content's aspect ratio is preserved.  
+-   <xref:System.Windows.Media.Stretch.Uniform>: The brush's content is scaled so that it fits completely within the tile. The content's aspect ratio is preserved.  
   
--   <xref:System.Windows.Media.Stretch>: The brush's content is scaled so that it completely fills the output area while preserving the content's original aspect ratio.  
+-   <xref:System.Windows.Media.Stretch.UniformToFill>: The brush's content is scaled so that it completely fills the output area while preserving the content's original aspect ratio.  
   
  The following image illustrates the different                  <xref:System.Windows.Media.TileBrush.Stretch%2A> settings.  
   
@@ -79,7 +79,7 @@ Components of a TileBrush with a TileMode of Tile
   
 <a name="basetilesize"></a>   
 ### Base Tile Size  
- The                          <xref:System.Windows.Media.TileBrush.Viewport%2A> property determines the size and position of the base tile, and the                          <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property determines whether the                          <xref:System.Windows.Media.TileBrush.Viewport%2A> is specified using absolute or relative coordinates. If the coordinates are relative, they are relative to the size of the output area. The point (0,0) represents the top left corner of the output area, and (1,1) represents the bottom right corner of the output area. To specify that the                          <xref:System.Windows.Media.TileBrush.Viewport%2A> property uses absolute coordinates, set the                          <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to                          <xref:System.Windows.Media.BrushMappingMode>.  
+ The                          <xref:System.Windows.Media.TileBrush.Viewport%2A> property determines the size and position of the base tile, and the                          <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property determines whether the                          <xref:System.Windows.Media.TileBrush.Viewport%2A> is specified using absolute or relative coordinates. If the coordinates are relative, they are relative to the size of the output area. The point (0,0) represents the top left corner of the output area, and (1,1) represents the bottom right corner of the output area. To specify that the                          <xref:System.Windows.Media.TileBrush.Viewport%2A> property uses absolute coordinates, set the                          <xref:System.Windows.Media.TileBrush.ViewportUnits%2A> property to                          <xref:System.Windows.Media.BrushMappingMode.Absolute>.  
   
  The following illustration shows the difference in output between a                          <xref:System.Windows.Media.TileBrush> with relative versus absolute                          <xref:System.Windows.Media.TileBrush.ViewportUnits%2A>. Notice that the illustrations each show a tiled pattern; the next section describes how to specify tile pattern.  
   
@@ -101,23 +101,23 @@ Components of a TileBrush with a TileMode of Tile
   
 <a name="tilingbehavior"></a>   
 ### Tiling Behavior  
- A                          <xref:System.Windows.Media.TileBrush> produces a tiled pattern when its base tile does not completely fill the output area and a                          tiling mode                          other then                          <xref:System.Windows.Media.TileMode> is specified. When a tile brush's tile does not completely fill the output area, its                          <xref:System.Windows.Media.TileBrush.TileMode%2A> property specifies whether the base tile should be duplicated to fill the output area and, if so, how the base tile should be duplicated. The                          <xref:System.Windows.Media.TileBrush.TileMode%2A> property accepts the following values, defined by the                          <xref:System.Windows.Media.TileMode> enumeration:  
+ A                          <xref:System.Windows.Media.TileBrush> produces a tiled pattern when its base tile does not completely fill the output area and a                          tiling mode                          other then                          <xref:System.Windows.Media.TileMode.None> is specified. When a tile brush's tile does not completely fill the output area, its                          <xref:System.Windows.Media.TileBrush.TileMode%2A> property specifies whether the base tile should be duplicated to fill the output area and, if so, how the base tile should be duplicated. The                          <xref:System.Windows.Media.TileBrush.TileMode%2A> property accepts the following values, defined by the                          <xref:System.Windows.Media.TileMode> enumeration:  
   
--   <xref:System.Windows.Media.TileMode>: Only the base tile is drawn.  
+-   <xref:System.Windows.Media.TileMode.None>: Only the base tile is drawn.  
   
--   <xref:System.Windows.Media.TileMode>: The base tile is drawn and the remaining area is filled by repeating the base tile such that the right edge of one tile is adjacent to the left edge of the next, and similarly for bottom and top.  
+-   <xref:System.Windows.Media.TileMode.Tile>: The base tile is drawn and the remaining area is filled by repeating the base tile such that the right edge of one tile is adjacent to the left edge of the next, and similarly for bottom and top.  
   
--   <xref:System.Windows.Media.TileMode>: The same as                                  <xref:System.Windows.Media.TileMode>, but alternate columns of tiles are flipped horizontally.  
+-   <xref:System.Windows.Media.TileMode.FlipX>: The same as                                  <xref:System.Windows.Media.TileMode.Tile>, but alternate columns of tiles are flipped horizontally.  
   
--   <xref:System.Windows.Media.TileMode>: The same as                                  <xref:System.Windows.Media.TileMode>, but alternate rows of tiles are flipped vertically.  
+-   <xref:System.Windows.Media.TileMode.FlipY>: The same as                                  <xref:System.Windows.Media.TileMode.Tile>, but alternate rows of tiles are flipped vertically.  
   
--   <xref:System.Windows.Media.TileMode>: A combination of                                  <xref:System.Windows.Media.TileMode> and                                  <xref:System.Windows.Media.TileMode>.  
+-   <xref:System.Windows.Media.TileMode.FlipXY>: A combination of                                  <xref:System.Windows.Media.TileMode.FlipX> and                                  <xref:System.Windows.Media.TileMode.FlipY>.  
   
  The following image illustrates the different tiling modes.  
   
  ![Different TileBrush TileMode settings](../../../../docs/framework/wpf/graphics-multimedia/media/img-mmgraphics-tilemodes.gif "img_mmgraphics_tilemodes")  
   
- In the following example, an image is used to paint a rectangle that is 100 pixels wide and 100 pixels tall. By setting the brush's                          <xref:System.Windows.Media.TileBrush.Viewport%2A> has been set to 0,0,0.25,0.25, the brush's base tile is made to be 1/4 of the output area. The brush's                          <xref:System.Windows.Media.TileBrush.TileMode%2A> is set to                          <xref:System.Windows.Media.TileMode>. so that it fills the rectangle with rows of tiles.  
+ In the following example, an image is used to paint a rectangle that is 100 pixels wide and 100 pixels tall. By setting the brush's                          <xref:System.Windows.Media.TileBrush.Viewport%2A> has been set to 0,0,0.25,0.25, the brush's base tile is made to be 1/4 of the output area. The brush's                          <xref:System.Windows.Media.TileBrush.TileMode%2A> is set to                          <xref:System.Windows.Media.TileMode.FlipXY>. so that it fills the rectangle with rows of tiles.  
   
  [!code-xml[BrushOverviewExamples_snip#GraphicsMMFlipXYExample](../../../../samples/snippets/xaml/VS_Snippets_Wpf/BrushOverviewExamples_snip/XAML/TilingExample.xaml#graphicsmmflipxyexample)]  
   

@@ -115,7 +115,7 @@ The following sections answer some common issues that you might encounter when y
 ## Avoiding Explicit Setting of Database-Generated Values on Insert or Update  
  Q. I have a database table with a `DateCreated` column that defaults to SQL `Getdate()`. When I try to insert a new record by using [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)], the value gets set to `NULL`. I would expect it to be set to the database default.  
   
- A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] handles this situation automatically for identity (auto-increment) and rowguidcol (database-generated GUID) and timestamp columns. In other cases, you should manually set <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>=`true` and <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>=<xref:System.Data.Linq.Mapping.AutoSync>/<xref:System.Data.Linq.Mapping.AutoSync>/<xref:System.Data.Linq.Mapping.AutoSync> properties.  
+ A. [!INCLUDE[vbtecdlinq](../../../../../../includes/vbtecdlinq-md.md)] handles this situation automatically for identity (auto-increment) and rowguidcol (database-generated GUID) and timestamp columns. In other cases, you should manually set <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A>=`true` and <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A>=<xref:System.Data.Linq.Mapping.AutoSync.Always>/<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>/<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate> properties.  
   
 ## Multiple DataLoadOptions  
  Q. Can I specify additional load options without overwriting the first?  
@@ -163,7 +163,7 @@ dlo.LoadWith<Order>(o => o.OrderDetails);
   
 2.  Add a partial class. Create a constructor with parameters for the read-only members.  
   
-3.  Review the default <xref:System.Data.Linq.Mapping.UpdateCheck> value (<xref:System.Data.Linq.Mapping.UpdateCheck>) to determine whether that is the correct value for your application.  
+3.  Review the default <xref:System.Data.Linq.Mapping.UpdateCheck> value (<xref:System.Data.Linq.Mapping.UpdateCheck.Never>) to determine whether that is the correct value for your application.  
   
     > [!CAUTION]
     >  If you are using the [!INCLUDE[vs_ordesigner_long](../../../../../../includes/vs-ordesigner-long-md.md)] in [!INCLUDE[vs_current_short](../../../../../../includes/vs-current-short-md.md)], your changes might be overwritten.  

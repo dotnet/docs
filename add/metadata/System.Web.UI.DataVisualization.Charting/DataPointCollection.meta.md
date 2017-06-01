@@ -119,23 +119,7 @@ manager: "mblythe"
 ---
 
 ---
-uid: System.Web.UI.DataVisualization.Charting.DataPointCollection.FindMaxByValue
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
 uid: System.Web.UI.DataVisualization.Charting.DataPointCollection.FindByValue(System.Double,System.String,System.Int32)
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "mblythe"
-manager: "mblythe"
----
-
----
-uid: System.Web.UI.DataVisualization.Charting.DataPointCollection.FindMinByValue
 ms.technology: 
   - "dotnet-webforms"
 ms.author: "mblythe"

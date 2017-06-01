@@ -47,14 +47,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Web.ProcessInfo.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-ms.author: "riande"
-manager: "wpickett"
----
-
----
 uid: System.Web.ProcessInfo.Status
 ms.technology: 
   - "dotnet-webforms"

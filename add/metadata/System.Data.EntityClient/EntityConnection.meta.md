@@ -107,15 +107,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.EntityClient.EntityConnection.BeginTransaction
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.EntityClient.EntityConnection.ChangeDatabase(System.String)
 ms.technology: 
   - "dotnet-ado"
@@ -162,15 +153,6 @@ manager: "jhubbard"
 
 ---
 uid: System.Data.EntityClient.EntityConnection.Close
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
-uid: System.Data.EntityClient.EntityConnection.#ctor
 ms.technology: 
   - "dotnet-ado"
 author: "JennieHubbard"

@@ -35,15 +35,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.#ctor
-ms.technology: 
-  - "dotnet-webforms"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.Web.Services.Protocols.SoapDocumentMethodAttribute.RequestNamespace
 ms.technology: 
   - "dotnet-webforms"

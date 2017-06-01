@@ -62,15 +62,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.StringFormat.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.StringFormat.#ctor(System.Drawing.StringFormatFlags)
 ms.technology: 
   - "dotnet-standard"

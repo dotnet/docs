@@ -350,15 +350,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Ink.StrokeCollection.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Windows.Ink.StrokeCollection.SetItem(System.Int32,System.Windows.Ink.Stroke)
 ms.technology: 
   - "dotnet-wpf"

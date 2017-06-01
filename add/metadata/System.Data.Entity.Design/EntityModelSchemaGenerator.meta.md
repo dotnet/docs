@@ -62,15 +62,6 @@ manager: "jhubbard"
 ---
 
 ---
-uid: System.Data.Entity.Design.EntityModelSchemaGenerator.GenerateMetadata
-ms.technology: 
-  - "dotnet-ado"
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
----
-
----
 uid: System.Data.Entity.Design.EntityModelSchemaGenerator.GenerateMetadata(System.Version)
 ms.technology: 
   - "dotnet-ado"

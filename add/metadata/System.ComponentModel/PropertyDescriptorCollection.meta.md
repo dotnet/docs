@@ -215,15 +215,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.ComponentModel.PropertyDescriptorCollection.Sort
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.ComponentModel.PropertyDescriptorCollection.System#Collections#IEnumerable#GetEnumerator
 ms.technology: 
   - "dotnet-standard"

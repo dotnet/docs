@@ -26,7 +26,7 @@ This element enables the endpoint behavior that makes it possible to consume the
   
 ## Syntax  
   
-```  
+```xml  
 <enableWebScript />  
 ```  
   

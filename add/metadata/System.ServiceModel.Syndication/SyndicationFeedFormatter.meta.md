@@ -287,15 +287,6 @@ manager: "erikre"
 ---
 
 ---
-uid: System.ServiceModel.Syndication.SyndicationFeedFormatter.#ctor
-ms.technology: 
-  - "dotnet-standard"
-author: "Erikre"
-ms.author: "erikre"
-manager: "erikre"
----
-
----
 uid: System.ServiceModel.Syndication.SyndicationFeedFormatter.#ctor(System.ServiceModel.Syndication.SyndicationFeed)
 ms.technology: 
   - "dotnet-standard"

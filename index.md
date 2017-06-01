@@ -325,7 +325,7 @@ title: .NET Documentation
                                             </div>
                                             <div class="cardText">
                                                 <a href="/aspnet/core/tutorials/your-first-mac-aspnet">
-                                                    <h3>ASP.NET on macOS and VS Code</h3>
+                                                    <h3>ASP.NET on macOS and Visual Studio Code</h3>
                                                     <p>Learn how to set up, build, and deploy ASP.NET Core apps on macOS with
                                                         Visual Studio Code.</p>
                                                 </a>

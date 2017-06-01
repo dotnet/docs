@@ -78,14 +78,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Media.Imaging.CroppedBitmap.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Media.Imaging.CroppedBitmap.#ctor(System.Windows.Media.Imaging.BitmapSource,System.Windows.Int32Rect)
 ms.technology: 
   - "dotnet-wpf"

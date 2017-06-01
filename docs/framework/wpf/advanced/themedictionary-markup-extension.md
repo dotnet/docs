@@ -26,13 +26,13 @@ Provides a way for custom control authors or applications that integrate third-p
   
 ## XAML Attribute Usage  
   
-```  
+```xml  
 <object property="{ThemeDictionary assemblyUri}" .../>  
 ```  
   
 ## XAML Object Element Usage  
   
-```  
+```xml  
 <object>  
   <object.property>  
     <ThemeDictionary AssemblyName="assemblyUri"/>  
@@ -59,7 +59,7 @@ Provides a way for custom control authors or applications that integrate third-p
   
  `ThemeDictionary` can also be used in a verbose attribute usage that specifies the <xref:System.Windows.Markup.StaticExtension.Member%2A> property as a property=value pair:  
   
-```  
+```xml  
 <object property="{ThemeDictionary AssemblyName=assemblyUri}" .../>  
 ```  
   

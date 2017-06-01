@@ -179,15 +179,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Drawing.Bitmap.GetHbitmap
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
 uid: System.Drawing.Bitmap.LockBits(System.Drawing.Rectangle,System.Drawing.Imaging.ImageLockMode,System.Drawing.Imaging.PixelFormat,System.Drawing.Imaging.BitmapData)
 ms.technology: 
   - "dotnet-standard"
@@ -225,15 +216,6 @@ manager: "wpickett"
 
 ---
 uid: System.Drawing.Bitmap.#ctor(System.Int32,System.Int32,System.Drawing.Imaging.PixelFormat)
-ms.technology: 
-  - "dotnet-standard"
-author: "stevehoag"
-ms.author: "shoag"
-manager: "wpickett"
----
-
----
-uid: System.Drawing.Bitmap.MakeTransparent
 ms.technology: 
   - "dotnet-standard"
 author: "stevehoag"

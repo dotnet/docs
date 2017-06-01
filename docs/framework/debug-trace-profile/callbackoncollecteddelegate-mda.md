@@ -57,7 +57,7 @@ The `callbackOnCollectedDelegate` managed debugging assistant (MDA) is activated
 ## Configuration  
  The following example shows the application configuration options. It sets the number of thunks the MDA keeps alive to 1,500. The default `listSize` value is 1,000, the minimum is 50, and the maximum is 2,000.  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <callbackOnCollectedDelegate listSize="1500" />  

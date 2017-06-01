@@ -35,14 +35,6 @@ manager: "wpickett"
 ---
 
 ---
-uid: System.Windows.Data.RelativeSource.#ctor
-ms.technology: 
-  - "dotnet-wpf"
-ms.author: "kempb"
-manager: "ghogen"
----
-
----
 uid: System.Windows.Data.RelativeSource.Self
 ms.technology: 
   - "dotnet-wpf"

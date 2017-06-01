@@ -113,7 +113,7 @@ This page lists some common problems that can occur when working with procedures
  If you are overloading a procedure with one or more [Optional](../../../../visual-basic/language-reference/modifiers/optional.md) parameters or a [ParamArray](../../../../visual-basic/language-reference/modifiers/paramarray.md) parameter, you must avoid duplicating any of the *implicit overloads*. For information, see [Considerations in Overloading Procedures](./considerations-in-overloading-procedures.md).  
   
 ## Calling a Wrong Version of an Overloaded Procedure  
- If a procedure has several overloaded versions, you should be familiar with all their parameter lists and understand how [!INCLUDE[vbprvb](../../../../csharp/programming-guide/concepts/linq/includes/vbprvb_md.md)] resolves calls among the overloads. Otherwise you could call an overload other than the intended one.  
+ If a procedure has several overloaded versions, you should be familiar with all their parameter lists and understand how [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] resolves calls among the overloads. Otherwise you could call an overload other than the intended one.  
   
  When you have determined which overload you want to call, be careful to observe the following rules:  
   

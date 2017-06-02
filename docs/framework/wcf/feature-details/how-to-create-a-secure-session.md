@@ -39,7 +39,7 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
   
      The following code example uses configuration to specify a binding named `wsHttpBinding_Calculator` that uses the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md), message security, and secure sessions.  
   
-    ```  
+    ```xml  
     <bindings>  
       <WSHttpBinding>  
        <binding name = "wsHttpBinding_Calculator">  
@@ -67,7 +67,7 @@ With the exception of the [\<basicHttpBinding>](../../../../docs/framework/confi
   
      The following code example uses configuration to specify a custom binding that messages using a secure session.  
   
-    ```  
+    ```xml  
     <bindings>  
       <!-- configure a custom binding -->  
       <customBinding>  

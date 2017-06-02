@@ -48,7 +48,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
   
  The `<security>` element can contain either a `<transport>` or `<message>` element, or both. The significant element is the one that matches the security mode. For example, the following code specifies that the security mode is `"Message"`, and the client credential type for the `<message>` element is `"Certificate"`. In this case, the `<transport>` element can be ignored. However, the `<message>` element specifies that an X.509 certificate must be supplied.  
   
-```  
+```xml  
 <wsHttpBinding>  
     <binding name="WSHttpBinding_ICalculator">  
        <security mode="Message">  
@@ -65,7 +65,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
   
  Note that if the `clientCredentialType` attribute is set to `"Windows"`, as shown in the following example, you do not need to supply an actual credential value. This is because the Windows integrated security provides the actual credential (a Kerberos token) of the person who is running the client.  
   
-```  
+```xml  
 <security mode="Message">  
     <transport clientCredentialType="Windows "   
         realm="" />  
@@ -97,7 +97,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
 #### Setting a \<clientCredentials> Value in Configuration  
  Credential values are specified by using an endpoint behavior as child elements of the [\<clientCredentials>](../../../docs/framework/configure-apps/file-schema/wcf/clientcredentials.md) element. The element used depends on the client credential type. For example, the following example shows the configuration to set an X.509 certificate using the <[\<clientCertificate>](../../../docs/framework/configure-apps/file-schema/wcf/clientcertificate-of-clientcredentials-element.md).  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <behaviors>  
@@ -145,7 +145,7 @@ In [!INCLUDE[indigo1](../../../includes/indigo1-md.md)], the service dictates th
 > [!NOTE]
 >  `ClientCredentialType` is ignored when `SecurityMode` is set to `"TransportWithMessageCredential",` as shown in the following sample configuration.  
   
-```  
+```xml  
 <wsHttpBinding>  
     <binding name="PingBinding">  
         <security mode="TransportWithMessageCredential"  >  

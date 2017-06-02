@@ -39,7 +39,7 @@ In some applications, it is useful to know the order in which data from the vari
   
  The XML produced is similar to the following.  
   
-```  
+```xml  
 <DerivedType>  
     <!-- Zebra is a base data member, and appears first. -->  
     <zebra/>   

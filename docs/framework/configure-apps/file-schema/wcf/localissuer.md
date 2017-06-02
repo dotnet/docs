@@ -28,7 +28,7 @@ endpointBehaviors section
   
 ## Syntax  
   
-```  
+```xml  
 <localIssuer address="string"  
       binding="string"  
       bindingConfiguration="string" />  
@@ -64,7 +64,7 @@ endpointBehaviors section
 ## Example  
  The following example sets the `address`, `binding`, and `bindingConfiguration` attributes of a `localIssuer` element.  
   
-```  
+```xml  
 <system.serviceModel>  
  <behaviors>  
  <endpointBehaviors>  

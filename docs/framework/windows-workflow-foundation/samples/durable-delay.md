@@ -41,7 +41,7 @@ This sample demonstrates how to use a durable delay, which is a delay that persi
   
     3.  Edit the WorkflowManagementService.exe.config file and add the following connection string inside the <`database`> element.  
   
-        ```  
+        ```xml  
         <database connectionString="Data Source=localhost\SQLEXPRESS;Initial Catalog=DefaultSampleStore;Integrated Security=True;Asynchronous Processing=True" />  
         ```  
   

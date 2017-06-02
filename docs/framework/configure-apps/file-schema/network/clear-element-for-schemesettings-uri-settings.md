@@ -30,7 +30,7 @@ Clears all existing scheme settings.
   
 ## Syntax  
   
-```  
+```xml  
 <clear/>  
 ```  
   
@@ -70,7 +70,7 @@ Clears all existing scheme settings.
 ## Example  
  The following code example shows a configuration used by the <xref:System.Uri> class that clears all scheme settings and then adds support for not escaping percent-encoded path delimiters for the http scheme.  
   
-```  
+```xml  
 <configuration>  
   <uri>  
     <schemeSettings>  

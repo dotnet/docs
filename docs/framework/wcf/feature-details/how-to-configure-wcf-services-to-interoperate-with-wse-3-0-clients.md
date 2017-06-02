@@ -59,7 +59,7 @@ manager: "erikre"
 ## Example  
  The following code example specifies that the `Service.HelloWorldService` uses a custom binding to interoperate with WSE 3.0 clients. The custom binding specifies that the August 2004 version of the WS-Addressing and the WS-Security 1.1 set of specifications are used to encode the exchanged messages. The messages are secured using the <xref:System.ServiceModel.Configuration.AuthenticationMode.AnonymousForCertificate> authentication mode.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
     <services>  

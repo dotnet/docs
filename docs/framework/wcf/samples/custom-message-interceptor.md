@@ -89,7 +89,7 @@ class DroppingServerElement : InterceptingElement
   
  You can access it from configuration as follows:  
   
-```  
+```xml  
 <configuration>  
     ...  
     <system.serviceModel>  
@@ -107,7 +107,7 @@ class DroppingServerElement : InterceptingElement
   
  The client and server both use this newly created configuration section to insert the custom factories into the lowest-level of their run-time channel stacks (above the transport level).  
   
-```  
+```xml  
 <customBinding>  
   <binding name="sampleBinding">  
     <droppingInterceptor/>  

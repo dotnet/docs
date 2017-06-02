@@ -23,7 +23,7 @@ The `diagnostics` element defines settings that can be used by an administrator 
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
    <diagnostics etwProviderId="String"       performanceCounters="Off/ServiceOnly/All/Default"              wmiProviderEnabled="Boolean" >       <endToEndTracing activityTracing="Boolean"  
           messageFlowTracing="Boolean"  
@@ -71,7 +71,7 @@ The `diagnostics` element defines settings that can be used by an administrator 
   
 ## Example  
   
-```  
+```xml  
 <diagnostics wmiProviderEnabled="false"  
        performanceCounters="all">  
        <messageLogging logEntireMessage="true"  

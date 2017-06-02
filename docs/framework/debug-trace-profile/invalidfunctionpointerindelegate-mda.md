@@ -49,7 +49,7 @@ The `invalidFunctionPointerInDelegate` managed debugging assistant (MDA) is acti
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <invalidFunctionPointerInDelegate />  

@@ -27,7 +27,7 @@ Specifies the claim type that defines the role type claims in the collection of 
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
@@ -65,7 +65,7 @@ Specifies the claim type that defines the role type claims in the collection of 
   
 ## Example  
   
-```  
+```xml  
 <add type="System.IdentityModel.Tokens.SamlSecurityTokenHandler, System.IdentityModel">  
     <samlSecurityTokenRequirement>  
         <roleClaimType value="schemas.microsoft.com/ws/2006/04/identity/claims/role" />  

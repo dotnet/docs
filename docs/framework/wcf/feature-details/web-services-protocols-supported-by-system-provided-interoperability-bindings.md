@@ -75,7 +75,7 @@ manager: "erikre"
   
  Example:  
   
-```  
+```xml  
 <wsFederationHttpBinding>  
   <binding name="myBinding">  
      <security mode="Message">  

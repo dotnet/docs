@@ -33,7 +33,7 @@ Clears all `namedCache` entries in the `namedCaches` collection for a memory cac
   
 ## Syntax  
   
-```  
+```xml  
 <namedCaches>  
     <clear name="default" />  
     <!-- child elements -->  

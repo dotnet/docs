@@ -90,7 +90,7 @@ Mid( _
   
  **Module:** `Strings`  
   
- **Assembly:** [!INCLUDE[vbprvbruntime](../../../visual-basic/language-reference/objects/includes/vbprvbruntime_md.md)]  
+ **Assembly:** [!INCLUDE[vbprvbruntime](~/includes/vbprvbruntime-md.md)]  
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Strings.Mid%2A>   

@@ -39,7 +39,7 @@ Removes an IP address or DNS name from the proxy bypass list.
   
 ## Syntax  
   
-```  
+```xml  
       <remove   
    name = "regular expression"   
 />  
@@ -76,7 +76,7 @@ Removes an IP address or DNS name from the proxy bypass list.
 ## Example  
  The following code example removes any previous definition for the adventure-works.com domain, and then adds the contoso.com domain to the bypass list.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <defaultProxy>  

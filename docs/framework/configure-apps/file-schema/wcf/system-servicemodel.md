@@ -29,27 +29,32 @@ This configuration section contains all the [!INCLUDE[indigo1](../../../../../in
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
-    <behaviors>  
-    </behaviors>  
-    <bindings>  
-    </bindings>  
-    <client>  
-    </client>  
-    <comContracts>  
-    </comContracts>  
-    <commonBehaviors>  
-    </commonBehaviors>  
-    <diagnostics>  
-    </diagnostics>  
-    <extensions>  
-    </extensions>    <protocolMapping>    </protocolMapping>    <routing>    </routing>  
-    <serviceHostingEnvironment>  
-    </serviceHostingEnvironment>  
-    <services>  
-    </services>    <standardEndpoints>  
-    </standardEndpoints>  
+  <behaviors>  
+  </behaviors>  
+  <bindings>  
+  </bindings>  
+  <client>  
+  </client>  
+  <comContracts>  
+  </comContracts>  
+  <commonBehaviors>  
+  </commonBehaviors>  
+  <diagnostics>  
+  </diagnostics>  
+  <extensions>  
+  </extensions>
+  <protocolMapping>
+  </protocolMapping>
+  <routing>
+  </routing>  
+  <serviceHostingEnvironment>  
+  </serviceHostingEnvironment>  
+  <services>  
+  </services>
+  <standardEndpoints>  
+  </standardEndpoints>  
 </system.serviceModel>  
 ```  
   
@@ -98,7 +103,7 @@ This configuration section contains all the [!INCLUDE[indigo1](../../../../../in
 ## Example  
  This is an example of a WCF configuration file.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
     <system.serviceModel>  

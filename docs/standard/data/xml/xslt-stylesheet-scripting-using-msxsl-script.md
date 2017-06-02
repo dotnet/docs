@@ -29,7 +29,7 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
   
  The `<msxsl:script>` element is defined below:  
   
-```  
+```xml  
 <msxsl:script language = "language-name" implements-prefix = "prefix of user namespace"> </msxsl:script>  
 ```  
   
@@ -82,7 +82,7 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
   
  When using the `msxsl:script` element, it is highly recommended that the script, regardless of language, be placed inside a CDATA section. For example, the following XML shows the template of the CDATA section where your code is placed.  
   
-```  
+```xml  
 <msxsl:script implements-prefix='yourprefix' language='CSharp'>  
     <![CDATA[  
     ... your code here ...  
@@ -92,7 +92,7 @@ The <xref:System.Xml.Xsl.XslTransform> class supports embedded scripting using t
   
  It is highly recommended that all script content be placed in a CDATA section, because operators, identifiers, or delimiters for a given language have the potential of being misinterpreted as XML. The following example shows the use of the logical AND operator in script.  
   
-```  
+```xml  
 <msxsl:script implements-prefix='yourprefix' language='CSharp>  
     public string book(string abc, string xyz)  
     {  if ((abc== abc)&&(abc== xyz)) return bar+xyz;  
@@ -173,7 +173,7 @@ public class Sample
 ## Input  
  number.xml  
   
-```  
+```xml  
 <?xml version='1.0'?>  
 <data>  
   <circle>  
@@ -187,7 +187,7 @@ public class Sample
   
  calc.xsl  
   
-```  
+```xml  
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
     xmlns:msxsl="urn:schemas-microsoft-com:xslt"  
     xmlns:user="urn:my-scripts">  
@@ -220,7 +220,7 @@ public class Sample
   
 ## Output  
   
-```  
+```xml  
 <circles xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:user="urn:my-scripts">  
   <circle>  
     <radius>12</radius>  

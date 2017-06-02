@@ -33,7 +33,7 @@ Console.WriteLine("Value of e:" & e.Value)
   
  This example produces the following output:  
   
-```  
+```xml  
 <StringElement>abcde</StringElement>  
 Value of e:abcde  
 ```  
@@ -49,7 +49,7 @@ Console.WriteLine("Value of e:" & CInt(e))
   
  This example produces the following output:  
   
-```  
+```xml  
 <Age>44</Age>  
 Value of e:44  
 ```  
@@ -69,7 +69,7 @@ Console.WriteLine("Value of e:" & e.Value)
   
  This example produces the following output:  
   
-```  
+```xml  
 <StringElement>abcde</StringElement>  
 Value of e:abcde  
 ```  

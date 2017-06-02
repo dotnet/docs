@@ -92,7 +92,7 @@ public class SerializeOverride()
   
  The XML stream might resemble the following.  
   
-```  
+```xml  
 <Book>  
     <BookID>123456789</BookID>  
 </Book>  

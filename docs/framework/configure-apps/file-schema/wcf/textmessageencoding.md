@@ -29,7 +29,7 @@ Specifies the character encoding and message versioning used for text-based XML 
   
 ## Syntax  
   
-```  
+```xml  
 <textMessageEncoding maxReadPoolSize="Integer"  
    maxWritePoolSize="Integer"  
    messageVersion="Soap11Addressing10/Soap12Addressing10"  
@@ -67,7 +67,7 @@ Specifies the character encoding and message versioning used for text-based XML 
   
 ## Example  
   
-```  
+```xml  
 <textMessageEncoding maxReadPoolSize="211"  
     maxWritePoolSize="2132"  
     messageVersion="Soap12Addressing10"  

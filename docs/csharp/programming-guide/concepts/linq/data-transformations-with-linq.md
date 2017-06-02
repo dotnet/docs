@@ -90,8 +90,8 @@ translation.priority.mt:
   
  The code produces the following XML output:  
   
-```  
-< Root>  
+```xml  
+<Root>  
   <student>  
     <First>Svetlana</First>  
     <Last>Omelchenko</Last>  

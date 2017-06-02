@@ -36,7 +36,7 @@ Removes a listener from the **Listeners** collection.
   
 ## Syntax  
   
-```  
+```xml  
 <remove name="listener name" />  
 ```  
   
@@ -69,7 +69,7 @@ Removes a listener from the **Listeners** collection.
 ## Example  
  The following example shows how to remove the default trace listener from the trace **Listeners** collection.  
   
-```  
+```xml  
 <configuration>  
    <system.diagnostics>  
       <trace autoflush="true" indentsize="0">  

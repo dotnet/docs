@@ -25,7 +25,7 @@ Specifies the expected identity of the server. This identity is valid for X509 C
   
 ## Syntax  
   
-```  
+```xml  
 <dns value = "String" />  
 ```  
   
@@ -50,7 +50,7 @@ Specifies the expected identity of the server. This identity is valid for X509 C
 ## Example  
  The following configuration code specifies the DNS of an X.509 certificate that is used to authenticate a server.  
   
-```  
+```xml  
 <identity>  
   <dns value = "www.cohowinery.com" />  
 </identity>  

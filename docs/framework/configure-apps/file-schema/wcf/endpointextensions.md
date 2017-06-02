@@ -20,7 +20,7 @@ This section registers a new standard endpoint in the extensions section in a ma
   
  The following example uses the `add` element, as well as the `name` attribute to add a standard endpoint to the `<endpointExtensions>` section of the configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
     <extensions>  
         <endpointExtensions>  
@@ -33,7 +33,7 @@ This section registers a new standard endpoint in the extensions section in a ma
   
  After the standard endpoint has been registered, you can use it as shown in the following example. In the [\<endpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md) element, the `kind` attribute specifies the standard endpoint type that has been registered in the `<endpointExtensions>` section. The `endpointConfiguration` attribute will be identical to the `name` attribute of the configuration element of the standard endpoint in the `<standardEndpoints>` section.  
   
-```  
+```xml  
 <system.serviceModel>  
     <services>  
       <service name="Service1">  

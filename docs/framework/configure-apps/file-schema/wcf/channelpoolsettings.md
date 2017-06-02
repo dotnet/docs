@@ -27,7 +27,7 @@ Specifies the channel pool settings for a custom binding.
   
 ## Syntax  
   
-```  
+```xml  
 <channelPoolSettings  
     idleTimeout"TimeSpan"  
         leaseTimeout"TimeSpan"  

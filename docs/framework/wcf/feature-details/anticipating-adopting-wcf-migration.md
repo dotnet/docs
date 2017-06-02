@@ -21,7 +21,7 @@ To ensure an easier future migration of new ASP.NET applications to [!INCLUDE[in
 ## Protocols  
  Disable ASP.NET 2.0’s support for SOAP 1.2:  
   
-```  
+```xml  
 <configuration>  
      <system.web>  
       <webServices >  

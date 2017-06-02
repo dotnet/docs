@@ -74,7 +74,7 @@ The `fatalExecutionEngine``Error` managed debugging assistant (MDA) is activated
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <fatalExecutionEngineError />  

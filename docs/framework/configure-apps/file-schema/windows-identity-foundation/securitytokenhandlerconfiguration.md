@@ -25,7 +25,7 @@ Provides configuration for the collection of token handlers.
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
@@ -70,7 +70,7 @@ Provides configuration for the collection of token handlers.
   
 ## Example  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>   

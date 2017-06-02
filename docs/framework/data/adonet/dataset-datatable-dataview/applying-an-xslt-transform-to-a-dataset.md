@@ -20,7 +20,7 @@ The **WriteXml** method of the <xref:System.Data.DataSet> enables you to write t
   
  The following example populates a **DataSet** with tables and relationships, synchronizes the **DataSet** with an **XmlDataDocument**, and writes a portion of the **DataSet** as an HTML file using an XSLT stylesheet. Following are the contents of the XSLT stylesheet.  
   
-```  
+```xml  
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">  
   
 <xsl:template match="CustomerOrders">  

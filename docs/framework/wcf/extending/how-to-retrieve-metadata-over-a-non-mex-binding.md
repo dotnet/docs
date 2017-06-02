@@ -22,7 +22,7 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
   
 1.  Determine the binding used by the MEX endpoint. For [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] services, you can determine the MEX binding by accessing the service's configuration file. In this case, the MEX binding is defined in the following service configuration.  
   
-    ```  
+    ```xml  
     <services>  
         <service name="Microsoft.ServiceModel.Samples.CalculatorService"  
                 behaviorConfiguration="CalculatorServiceBehavior">  
@@ -56,7 +56,7 @@ This topic describes how to retrieve metadata from a MEX endpoint over a non-MEX
   
 2.  In the client configuration file, configure the same custom binding. Here the client also defines a `clientCredentials` behavior to provide a certificate to use to authenticate to the service when requesting metadata from the MEX endpoint. When using Svcutil.exe to request metadata over a custom binding, you should add the MEX endpoint configuration to the configuration file for Svcutil.exe (Svcutil.exe.config), and the name of the endpoint configuration should match the URI scheme of the address of the MEX endpoint, as shown in the following code.  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
       <client>  
         <endpoint name="http"  

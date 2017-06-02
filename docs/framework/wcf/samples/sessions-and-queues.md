@@ -122,7 +122,7 @@ public static void Main()
   
  The MSMQ queue name is specified in an appSettings section of the configuration file. The endpoint for the service is defined in the system.serviceModel section of the configuration file and specifies the `netMsmqBinding` binding.  
   
-```  
+```xml  
 <appSettings>  
   <!-- Use appSetting to configure MSMQ queue name. -->  
   <add key="queueName" value=".\private$\ServiceModelSamplesSession" />  
@@ -225,7 +225,7 @@ Purchase Order: 7c86fef0-2306-4c51-80e6-bcabcc1a6e5e
   
 1.  If your computer is not part of a domain or does not have active directory integration installed, turn off transport security by setting the authentication mode and protection level to `None` as shown in the following sample configuration.  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
       <services>  
         <service name="Microsoft.ServiceModel.Samples.OrderTakerService"  

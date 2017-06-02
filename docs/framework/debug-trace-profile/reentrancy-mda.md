@@ -67,7 +67,7 @@ ConsoleApplication1\bin\Debug\ConsoleApplication1.vshost.exe'.
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <reentrancy />  

@@ -33,7 +33,7 @@ After ADO.NET has determined from an XML document which elements to infer as tab
 ## Attributes  
  As defined in [Inferring Tables](../../../../../docs/framework/data/adonet/dataset-datatable-dataview/inferring-tables.md), an element with attributes will be inferred as a table. The attributes of that element will then be inferred as columns for the table. The **ColumnMapping** property of the columns will be set to **MappingType.Attribute**, to ensure that the column names will be written as attributes if the schema is written back to XML. The values of the attributes are stored in a row in the table. For example, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1 attr1="value1" attr2="value2"/>  
 </DocumentElement>  
@@ -52,7 +52,7 @@ After ADO.NET has determined from an XML document which elements to infer as tab
 ## Elements Without Attributes or Child Elements  
  If an element has no child elements or attributes, it will be inferred as a column. The **ColumnMapping** property of the column will be set to **MappingType.Element**. The text for child elements is stored in a row in the table. For example, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1>  
     <ChildElement1>Text1</ChildElement1>  

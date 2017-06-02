@@ -19,7 +19,7 @@ Annotations allow you to arbitrarily tag tracking records with a value that can 
 ## Adding Annotations  
  An annotation can be added to a tracking query as shown in the following example.  
   
-```  
+```xml  
 <activityStateQuery activityName="SendEmailActivity">  
   <states>  
     <state name="Closed"/>  

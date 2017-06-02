@@ -48,7 +48,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
   
 8.  Click the **Invoke** button on the `HelloWorld` test page. You should receive the following XML response.  
   
-    ```  
+    ```xml  
     <?xml version="1.0" encoding="utf-8" ?>  
     <string xmlns="http://tempuri.org/">Hello World</string>  
     ```  
@@ -110,7 +110,7 @@ This topic outlines procedures to migrate a basic ASP.NET AJAX service to an equ
   
 10. The service now exposes an endpoint at `WCFHello.svc/HelloWorld`, which responds to HTTP POST requests. HTTP POST requests cannot be tested from the browser, but the endpoint returns XML following XML.  
   
-    ```  
+    ```xml  
     <string xmlns="http://schemas.microsoft.com/2003/10/Serialization/">Hello World</string>  
     ```  
   

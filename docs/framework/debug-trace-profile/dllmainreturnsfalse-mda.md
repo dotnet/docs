@@ -45,7 +45,7 @@ The `dllMainReturnsFalse` managed debugging assistant (MDA) is activated if the 
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <dllMainReturnsFalse />  

@@ -53,7 +53,7 @@ All apps that host the common language runtime (CLR) need to start, or *activate
   
 2.  Add the [\<supportedRuntime>](../../../docs/framework/configure-apps/file-schema/startup/supportedruntime-element.md) element as follows to the application configuration file:  
   
-    ```  
+    ```xml  
     <configuration>  
       <startup>  
         <supportedRuntime version="<version>"/>  

@@ -31,7 +31,7 @@ To use XPath queries with XML documents, you have to correctly address XML names
   
  The following XML document will be referenced as `response.xml` in the navigation example in the next section.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <e:Envelope xmlns:e="http://schemas.xmlsoap.org/soap/envelope/">  
   <e:Body>  

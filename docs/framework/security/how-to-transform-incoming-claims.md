@@ -163,7 +163,7 @@ manager: "mbaldwin"
   
 11. In the root **Web.config** file, navigate to the **\<system.identityModel>** entry. Within the **\<identityConfiguration>** elements, add the following line and save the file:  
   
-    ```  
+    ```xml  
     <claimsAuthenticationManager type="ClaimsTransformation.ClaimsTransformationModule, ClaimsTransformation" />  
     ```  
   

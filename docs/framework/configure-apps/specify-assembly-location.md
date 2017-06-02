@@ -38,7 +38,7 @@ There are two ways to specify an assembly's location:
   
  The following example shows how to specify an assembly's location.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  
@@ -64,7 +64,7 @@ There are two ways to specify an assembly's location:
   
  You can use the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element in the application configuration file to specify subdirectories the runtime should search when locating an assembly. The following example shows how to specify directories the runtime should search.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

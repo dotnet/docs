@@ -37,7 +37,7 @@ This sample demonstrates how to implement a typical service and a typical client
   
  This sample exposes the `ICalculator` contract using the [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md). The configuration of this binding has been expanded in the Web.config file.  
   
-```  
+```xml
 <bindings>  
   <wsHttpBinding>  
     <!--The following is the expanded configuration section for a-->  

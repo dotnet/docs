@@ -28,7 +28,7 @@ This sample demonstrates how to extend tracking in [!INCLUDE[wf](../../../../inc
 ## Behavior Extension Elements Configuration  
  One more step is required to make use of the behavior extension element previously described using .NET Framework configuration files. The following configuration must be placed in configuration files where the extension is to be used.  
   
-```  
+```xml  
 <system.serviceModel>  
     <extensions>  
       <behaviorExtensions>  

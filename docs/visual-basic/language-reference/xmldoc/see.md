@@ -39,7 +39,7 @@ Specifies a link to another member.
   
 ## Syntax  
   
-```  
+```xml  
 <see cref="member"/>  
 ```  
   

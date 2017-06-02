@@ -29,9 +29,9 @@ This sample demonstrates the use of the Message Transmission Optimization Mechan
   
  By default, the WSHttpBinding sends and received messages as normal text XML. To enable sending and receiving MTOM messages, set the `messageEncoding` attribute on the binding's configuration (as in the following example code), or directly on the binding using the `MessageEncoding` property. The service or client can now send and receive MTOM messages.  
   
-```  
+```xml  
 <wsHttpBinding>  
-    <binding name="WSHttpBinding_IUpload" messageEncoding="Mtom"/>  
+  <binding name="WSHttpBinding_IUpload" messageEncoding="Mtom" />  
 </wsHttpBinding>  
 ```  
   

@@ -85,7 +85,7 @@ public class OrderForm
   
  When an instance of this class is serialized, it might resemble the following.  
   
-```  
+```xml  
 <OrderForm>  
     <OrderDate>12/12/01</OrderDate>  
 </OrderForm>  

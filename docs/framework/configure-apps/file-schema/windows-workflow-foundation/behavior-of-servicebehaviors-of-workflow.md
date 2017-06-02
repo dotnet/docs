@@ -16,18 +16,39 @@ manager: "erikre"
 # &lt;behavior&gt; of &lt;serviceBehaviors&gt; of workflow
 The **behavior** element contains a collection of settings for the behavior of a service. Each behavior is indexed by its **name**. Services can link to each behavior through this name using the **behaviorConfiguration**attribute of the [\<endpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/endpoint-element.md) element. This allows endpoints to share common behavior configurations without redefining the settings.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
   
 ## Syntax  
   
-```  
+```xml  
 <system.ServiceModel>  
   <behaviors>  
     <serviceBehaviors>  
-    <behavior name=String">      <bufferReceive maxPendingMessagesPerChannel="Integer" />      <etwTracking profileName="String" />     <sendMessageChannelCache allowUnsafeCaching="Boolean" >                <channelSettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />        <factorySettings idleTimeout="TimeSpan" leaseTimeout="TimeSpan" maxItemsInCache="Integer" />     </sendMessageChannelCache>      <sqlWorkflowInstanceStore           connectionStringName="String"           honstLockRenewalPeriod="TimeSpan"          instanceCompletionAction="DeleteNothing/DeleteAll"          instanceEncodingAction="None/GZip"          instanceLockedExceptionAction="NoRetry/BasicRetry/AggressiveRetry"          runnableInstancesDetectionPeriod="TimeSpan" />      <workflowIdle timeToPersist="TimeSpan"          timeToUnload="TimeSpan" />      <workflowUnhandledException action="Abandon/AbandonAndSuspend/Cancel/Terminate" />    </behavior>    </serviceBehaviors>  
+      <behavior name="String">
+        <bufferReceive maxPendingMessagesPerChannel="Integer" />
+        <etwTracking profileName="String" />
+        <sendMessageChannelCache allowUnsafeCaching="Boolean">
+          <channelSettings idleTimeout="TimeSpan" 
+                           leaseTimeout="TimeSpan" 
+                           maxItemsInCache="Integer" />
+          <factorySettings idleTimeout="TimeSpan" 
+                           leaseTimeout="TimeSpan" 
+                           maxItemsInCache="Integer" />
+        </sendMessageChannelCache>
+        <sqlWorkflowInstanceStore connectionStringName="String" 
+                                  honstLockRenewalPeriod="TimeSpan" 
+                                  instanceCompletionAction="DeleteNothing/DeleteAll" 
+                                  instanceEncodingAction="None/GZip" 
+                                  instanceLockedExceptionAction="NoRetry/BasicRetry/AggressiveRetry" 
+                                  runnableInstancesDetectionPeriod="TimeSpan" />
+        <workflowIdle timeToPersist="TimeSpan" 
+                      timeToUnload="TimeSpan" />
+        <workflowUnhandledException action="Abandon/AbandonAndSuspend/Cancel/Terminate" />
+      </behavior>
+    </serviceBehaviors>  
   </behaviors>  
 </system.ServiceModel>  
 ```  

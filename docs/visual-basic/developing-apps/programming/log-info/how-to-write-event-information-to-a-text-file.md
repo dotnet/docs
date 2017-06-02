@@ -58,7 +58,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 3.  Add this element to that `<listeners>` section:  
   
-    ```  
+    ```xml  
     <add name="FileLogListener" />  
     ```  
   
@@ -66,7 +66,7 @@ You can use the `My.Application.Log` and `My.Log` objects to log information abo
   
 5.  Add this element to that `<sharedListeners>` section:  
   
-    ```  
+    ```xml  
     <add name="FileLogListener"   
         type="Microsoft.VisualBasic.Logging.FileLogTraceListener,   
               Microsoft.VisualBasic, Version=8.0.0.0, Culture=neutral,   

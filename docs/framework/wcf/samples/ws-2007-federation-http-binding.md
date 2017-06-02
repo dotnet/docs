@@ -25,7 +25,7 @@ This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHt
   
  The sample makes the `ICalculator` contract available using the `ws2007FederationHttpBinding` element. The configuration of this binding on the client is shown in the following code.  
   
-```  
+```xml  
 <bindings>  
   <ws2007FederationHttpBinding>  
     <binding name="ServiceFed" >  
@@ -46,7 +46,7 @@ This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHt
   
  The configuration of this binding on the service is shown in the following code.  
   
-```  
+```xml  
 <bindings>  
   <ws2007FederationHttpBinding>  
     <binding name="ServiceFed" >  
@@ -73,7 +73,7 @@ This sample demonstrates the use of <xref:System.ServiceModel.WS2007FederationHt
   
  The behavior for the service is shown in the following code.  
   
-```  
+```xml  
 <behaviors>  
   <serviceBehaviors>  
     <behavior name ="ServiceBehaviour" >  

@@ -37,7 +37,7 @@ Adds a listener to the **Listeners** collection.
   
 ## Syntax  
   
-```  
+```xml  
 <add name="name"   
      type="trace listener class name, Version, Culture, PublicKeyToken"  
      initializeData="data"/>  
@@ -96,7 +96,7 @@ Adds a listener to the **Listeners** collection.
 ## Example  
  The following example shows how to use **\<add>** elements to add the listeners `MyListener` and `MyEventListener` to the **Listeners** collection. `MyListener` creates a file called `MyListener.log` and writes the output to the file. `MyEventListener` creates an entry in the event log.  
   
-```  
+```xml  
 <configuration>  
    <system.diagnostics>  
       <trace autoflush="true" indentsize="0">  

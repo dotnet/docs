@@ -57,7 +57,7 @@ manager: "erikre"
   
  Physically, an `AirfareRequestMessage` instance contains only two strings ("fromCity" and "toCity"). However, logically the message contains the following XML infoset:  
   
-```  
+```xml  
 <airfareRequest>  
     <from>Tokyo</from>  
     <to>London</to>  

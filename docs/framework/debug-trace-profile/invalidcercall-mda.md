@@ -55,7 +55,7 @@ The `invalidCERCall` managed debugging assistant (MDA) is activated when there i
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <invalidCERCall />  

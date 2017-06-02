@@ -39,7 +39,7 @@ translation.priority.ht:
 # &lt;typeparamref&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <typeparamref name="name"/>  
 ```  
   

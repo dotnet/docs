@@ -24,7 +24,7 @@ Specifies all the persistable types.
   
 ## Syntax  
   
-```  
+```xml  
 <comContracts>  
   <comContract>  
       <persistableTypes>  

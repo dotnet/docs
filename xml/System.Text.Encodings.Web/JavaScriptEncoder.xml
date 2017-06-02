@@ -13,8 +13,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents a JavaScript character encoding.</summary>
+    <remarks><format type="text/markdown"><![CDATA[ 
+
+## Remarks  
+ The source code for this type is available in the [System.Text.Encodings.Web project](https://github.com/dotnet/corefx/tree/master/src/System.Text.Encodings.Web) on GitHub. Unit tests that can also serve as code examples are found in the [System.Text.Encodings.Web/tests](https://github.com/dotnet/corefx/tree/master/src/System.Text.Encodings.Web/tests) folder on GitHub.  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -30,8 +35,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder"/> class.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -52,10 +57,11 @@
         <Parameter Name="settings" Type="System.Text.Encodings.Web.TextEncoderSettings" />
       </Parameters>
       <Docs>
-        <param name="settings">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="settings">Settings that control how the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder"/> instance encodes, primarily which characters to encode.</param>
+        <summary>Creates a new instance of JavaScriptEncoder class with the specified settings.</summary>
+        <returns>A new instance of the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder"/> class.</returns>
+        <remarks></remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="settings"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Create">
@@ -82,10 +88,16 @@
         </Parameter>
       </Parameters>
       <Docs>
-        <param name="allowedRanges">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="allowedRanges">The set of characters that the encoder is allowed to not encode.</param>
+        <summary>Creates a new instance of the JavaScriptEncoder class that specifies characters the encoder is allowed to not encode.</summary>
+        <returns>A new instance of the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder"/> class.</returns>
+        <remarks><format type="text/markdown"><![CDATA[ 
+
+## Remarks  
+ Some characters in `allowedRanges` might still be encoded; that is, this parameter indicates what ranges the encoder is allowed to not encode, not what characters it must not encode.  
+ ]]></format>  
+        </remarks>
+        <exception cref="T:System.ArgumentNullException"><paramref name="allowedRanges"/> is <see langword="null" />.</exception>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -103,9 +115,9 @@
         <ReturnType>System.Text.Encodings.Web.JavaScriptEncoder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
-        <remarks>To be added.</remarks>
+        <summary>Gets a built-in instance of the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder"/> class.</summary>
+        <value>A built-in instance of the <see cref="T:System.Text.Encodings.Web.JavaScriptEncoder"/> class.</value>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

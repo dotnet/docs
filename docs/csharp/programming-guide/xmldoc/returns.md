@@ -40,7 +40,7 @@ translation.priority.ht:
 # &lt;returns&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <returns>description</returns>  
 ```  
   

@@ -105,7 +105,7 @@ This topic describes how to use the [!INCLUDE[indigo1](../../../../includes/indi
   
      When using the OleTransactions protocol, protocol messages cannot be traced. The tracing support the <xref:System.Transactions> infrastructure provides (which uses OleTransactions) allows users to view events that occurred to the transactions. To enable tracing for a <xref:System.Transactions> application, include the following code in the `App.config` configuration file.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.diagnostics>  
          <sources>  

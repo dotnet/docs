@@ -41,7 +41,7 @@ translation.priority.mt:
 # &lt;summary&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <summary>description</summary>  
 ```  
   
@@ -61,7 +61,7 @@ translation.priority.mt:
   
  The previous example produces the following XML file.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <doc>  
     <assembly>  
@@ -91,7 +91,7 @@ translation.priority.mt:
   
  The previous example produces the following XML file.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <doc>  
     <assembly>  

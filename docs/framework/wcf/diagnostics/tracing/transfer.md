@@ -23,7 +23,7 @@ This topic describes transfer in the [!INCLUDE[indigo1](../../../../../includes/
   
  To emit transfer traces, use the `ActivityTracing` setting on the trace source as demonstrated by the following configuration code.  
   
-```  
+```xml  
 <source name="System.ServiceModel" switchValue="Verbose,ActivityTracing">  
 ```  
   

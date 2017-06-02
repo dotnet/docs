@@ -57,7 +57,7 @@ declaringType name="VirtualCERCall+MyClass"
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     < VirtualCERCall />  

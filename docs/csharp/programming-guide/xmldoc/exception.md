@@ -40,7 +40,7 @@ translation.priority.ht:
 # &lt;exception&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <exception cref="member">description</exception>  
 ```  
   

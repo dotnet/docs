@@ -38,7 +38,7 @@ Specifies where the common language runtime can find an assembly.
   
 ## Syntax  
   
-```  
+```xml  
    <codeBase    
 version="Assembly version"  
 href="URL of assembly"/>  
@@ -82,7 +82,7 @@ href="URL of assembly"/>
 ## Example  
  The following example shows how to specify where the runtime can find an assembly.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">  

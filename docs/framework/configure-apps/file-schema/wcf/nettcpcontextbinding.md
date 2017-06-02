@@ -24,7 +24,7 @@ Specifies a context for the <xref:System.ServiceModel.NetTcpBinding> that requir
   
 ## Syntax  
   
-```  
+```xml  
 <netTcpContextBinding>  
    <binding   
       closeTimeout="TimeSpan"  

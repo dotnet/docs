@@ -71,7 +71,7 @@ selfhost.AddServiceEndpoint(typeof(ICalculator), new WSHttpBinding(SecurityMode.
   
  For the client, change the **\<security>** element under the **\<binding>** element to be the following:  
   
-```  
+```xml  
 <security mode="Node" />  
 ```  
   

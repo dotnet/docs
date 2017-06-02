@@ -23,7 +23,7 @@ Contains configuration data for the <xref:System.Runtime.Serialization.DataContr
   
 ## Syntax  
   
-```  
+```xml  
 <configuration>  
   <system.runtime.serialization>  
     <dataContractSerializer ignoreExtensionDataObject="Boolean"  

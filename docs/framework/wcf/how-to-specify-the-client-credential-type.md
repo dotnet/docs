@@ -46,7 +46,7 @@ After setting a security mode (either transport or message), you have the option
   
 6.  Add either a `<message>` or `<transport>` element, as determined by the security mode. Set the `clientCredentialType` attribute to an appropriate value. This example uses `"Windows"`.  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
       <bindings>  
         <wsHttpBinding>  

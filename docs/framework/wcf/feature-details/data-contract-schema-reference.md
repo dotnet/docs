@@ -308,7 +308,7 @@ public enum MyEnum
   
  This class maps to the following schema by the `DataContractSerializer`. If enumeration values start from 1, `xs:annotation` blocks are not generated.  
   
-```  
+```xml  
 <xs:simpleType name="MyEnum">  
 <xs:restriction base="xs:string">  
  <xs:enumeration value="first">  
@@ -369,7 +369,7 @@ public enum AuthFlags
   
  This type maps to the following schema.  
   
-```  
+```xml  
 <xs:simpleType name="AuthFlags">  
     <xs:list>  
       <xs:simpleType>  
@@ -425,7 +425,7 @@ public class Employee : Person
   
  This data contract maps to the following XML Schema type declaration.  
   
-```  
+```xml  
 <xs:complexType name="Employee">  
  <xs:complexContent mixed="false">  
   <xs:extension base="tns:Person">  
@@ -532,7 +532,7 @@ public class Employee : Person
 ## ISerializable types mapping  
  In [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] version 1.0, `ISerializable` was introduced as a general mechanism to serialize objects for persistence or data transfer. There are many [!INCLUDE[dnprdnshort](../../../../includes/dnprdnshort-md.md)] types that implement `ISerializable` and that can be passed between applications. `DataContractSerializer` naturally provides support for `ISerializable` classes. The `DataContractSerializer` maps `ISerializable` implementation schema types that differ only by the QName (qualified name) of the type and are effectively property collections. For example, the `DataContractSerializer` maps <xref:System.Exception> to the following XSD type in the http://schemas.datacontract.org/2004/07/System namespace.  
   
-```  
+```xml  
 <xs:complexType name="Exception">  
  <xs:sequence>  
   <xs:any minOccurs="0" maxOccurs="unbounded"   
@@ -551,7 +551,7 @@ public class Employee : Person
   
  The following is a complete Data Contract Serialization schema declaration.  
   
-```  
+```xml  
 <xs:schema attributeFormDefault="qualified"          
    elementFormDefault="qualified"        
    targetNamespace =   
@@ -662,7 +662,7 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
 ## DateTimeOffset Serialization  
  The <xref:System.DateTimeOffset> is not treated as a primitive type. Instead, it is serialized as a complex element with two parts. The first part represents the date time, and the second part represents the offset from the date time. An example of a serialized DateTimeOffset value is shown in the following code.  
   
-```  
+```xml  
 <OffSet xmlns:a="http://schemas.datacontract.org/2004/07/System">  
   <DateTime i:type="b:dateTime" xmlns=""   
     xmlns:b="http://www.w3.org/2001/XMLSchema">2008-08-28T08:00:00    
@@ -675,7 +675,7 @@ new XmlQualifiedName("Person","http://Microsoft.ServiceModel.Samples");
   
  The schema is as follows.  
   
-```  
+```xml  
 <xs:schema targetNamespace="http://schemas.datacontract.org/2004/07/System">  
    <xs:complexType name="DateTimeOffset">  
       <xs:sequence minOccurs="1" maxOccurs="1">  

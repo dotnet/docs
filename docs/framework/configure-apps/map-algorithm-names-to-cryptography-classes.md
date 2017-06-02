@@ -47,7 +47,7 @@ There are four ways a developer can create a cryptography object using the [!INC
   
  The following example shows how to configure the runtime so that **System.Security.Cryptography.SHA1.Create**, **System.Security.CryptoConfig.CreateFromName("SHA1")**, and **System.Security.Cryptography.HashAlgorithm.Create** return a `MySHA1HashClass` object.  
   
-```  
+```xml  
 <configuration>  
    <!-- Other configuration settings. -->  
    <mscorlib>  

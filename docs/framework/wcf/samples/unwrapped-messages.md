@@ -18,7 +18,7 @@ manager: "erikre"
 # Unwrapped Messages
 This sample demonstrates unwrapped messages. By default, the message body is formatted such that the parameters to a service operation are wrapped. The following sample shows an `Add` request message to the `ICalculator` service in wrapped mode.  
   
-```  
+```xml  
 <s:Envelope   
     xmlns:s=http://www.w3.org/2003/05/soap-envelope  
     xmlns:a="http://schemas.xmlsoap.org/ws/2005/08/addressing">  
@@ -36,7 +36,7 @@ This sample demonstrates unwrapped messages. By default, the message body is for
   
  The `<Add>` element in the message body wraps the `n1` and `n2` parameters. In contrast, the following sample shows the equivalent message in the unwrapped mode.  
   
-```  
+```xml  
 <s:Envelope   
     xmlns:s="http://www.w3.org/2003/05/soap-envelope"   
     xmlns:a="http://schemas.xmlsoap.org/ws/2005/08/addressing">  

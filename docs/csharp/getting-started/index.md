@@ -24,6 +24,10 @@ The following topics are available:
 
      Provides an overview of the C# language and .NET.
 
+* [Interactive C# Lessons](interactive-lessons/)
+
+    This series teaches you C# interactively, using your browser to write C# and see the results of compiling and running your code. It contains a series of lessons that begin with a "Hello World" program. These lessons teach you the fundamentals of the C# language. Each lesson is roughly 30 minutes in length. 
+
 * [Building a C# Hello World application with .NET Core in Visual Studio 2017](../../core/tutorials/with-visual-studio.md)
 
    Visual Studio 2017, the latest release of Visual Studio, lets you code, compile, run, debug, profile, and publish your applications from a integrated development environment for Windows.

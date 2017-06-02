@@ -1,4 +1,5 @@
 # [Getting Started](index.md)
+## [Interactive lessons](interactive-lessons/)
 ## [Building a C# Hello World application with .NET Core in Visual Studio 2017](../../core/tutorials/with-visual-studio.md)
 ### [Debugging your C# Hello World application with Visual Studio 2017](../../core/tutorials/debugging-with-visual-studio.md)
 ### [Publishing your Hello World application with Visual Studio 2017](../../core/tutorials/publishing-with-visual-studio.md)

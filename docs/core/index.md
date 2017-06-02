@@ -15,7 +15,9 @@ ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 
 <xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601.System%23Collections%23ICollection%23SyncRoot%2A>
 
-<xref:System.Collections.Specialized.Bit​Vector32.Section.​Equals%28System.​Collections.​Specialized.​Bit​Vector32+Section%29?displayProperty=fullName>
+<xref:System.Collections.Specialized.BitVector32.Section.Equals%28System.Collections.Specialized.BitVector32.Section.Equals.System.Collections.Specialized.BitVector32+Section%29?displayProperty=fullName>
+
+<xref:System.Collections.Specialized.BitVector32.Section.Equals%28System.Collections.Specialized.BitVector32.Section.Equals.System.Collections.Specialized.BitVector32%2BSection%29?displayProperty=fullName>
 
 <xref:System.ComponentModel.PropertyDescriptorCollection.System%23Collections%23IList%23Item%2A>
 

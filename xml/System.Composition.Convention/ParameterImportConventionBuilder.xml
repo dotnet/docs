@@ -12,8 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Contains methods used when configuring a <see cref="PartConventionBuilder{T}"/>. This class is used only in expressions, instances of this type are never created.</summary>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="Import&lt;T&gt;">
@@ -34,10 +34,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the parameter.</typeparam>
+        <summary>Specifies an import with a contract of type <typeparamref name="T"/>.</summary>
+        <returns>The imported instance.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="Import&lt;T&gt;">
@@ -60,11 +60,11 @@
         <Parameter Name="configure" Type="System.Action&lt;System.Composition.Convention.ImportConventionBuilder&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="configure">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type of the parameter.</typeparam>
+        <param name="configure">Configuration for the import.</param>
+        <summary>Specifies an import with a contract of type <typeparamref name="T"/>.</summary>
+        <returns>The imported instance.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

@@ -12,8 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Provides methods for building a convention by defining rules for configuring plain old CLR objects as Managed Extensibility Framework (MEF) parts.</summary>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +28,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Initializes a new instance of the <see cref="ConventionBuilder"/> class.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForType">
@@ -49,10 +49,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The type to which the rule applies.</param>
+        <summary>Creates an instance of <see cref="PartConventionBuilder"/> for defining a rule that will apply to the specified type.</summary>
+        <returns>The builder that must be used to specify the rule.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForType&lt;T&gt;">
@@ -73,10 +73,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type to which the rule applies.</typeparam>
+        <summary>Creates an instance of <see cref="PartConventionBuilder{T}"/> for defining a rule that will apply to the types specified by <typeparamref name="T"/>.</summary>
+        <returns>The builder that must be used to specify the rule.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesDerivedFrom">
@@ -96,10 +96,10 @@
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="type">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="type">The type from which matching types derive.</param>
+        <summary>Creates an instance of the <see cref="PartConventionBuilder"/> class for defining a rule that will apply to all types that derive from (or implement) the specified type.</summary>
+        <returns>The builder for constructing the rule.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesDerivedFrom&lt;T&gt;">
@@ -120,10 +120,10 @@
       </TypeParameters>
       <Parameters />
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type from which the matching types derive.</typeparam>
+        <summary>Creates an instance of <see cref="PartConventionBuilder"/> for defining a rule that will apply to all types that derive from (or implement) the specified type.</summary>
+        <returns>The builder that must be used to specify the rule.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesMatching">
@@ -143,10 +143,10 @@
         <Parameter Name="typeFilter" Type="System.Predicate&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <param name="typeFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="typeFilter">A predicate that selects matching types.</param>
+        <summary>Creates an instance of <see cref="PartConventionBuilder{T}"/> for defining a rule that will apply to types that match the specified predicate.</summary>
+        <returns>The builder that must be used to specify the rule.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ForTypesMatching&lt;T&gt;">
@@ -169,11 +169,11 @@
         <Parameter Name="typeFilter" Type="System.Predicate&lt;System.Type&gt;" />
       </Parameters>
       <Docs>
-        <typeparam name="T">To be added.</typeparam>
-        <param name="typeFilter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <typeparam name="T">The type to which the rule applies.</typeparam>
+        <param name="typeFilter">A predicate that selects matching types.</param>
+        <summary>Creates an instance of <see cref="PartConventionBuilder{T}"/> for defining a rule that will apply to types assignable to <typeparamref name="T"/> matching the specified predicate.</summary>
+        <returns>The builder that must be used to specify the rule.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -194,11 +194,11 @@
         <Parameter Name="member" Type="System.Reflection.MemberInfo" />
       </Parameters>
       <Docs>
-        <param name="reflectedType">To be added.</param>
-        <param name="member">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reflectedType">The type used to retrieve attributes from the member.</param>
+        <param name="member">The member to supply attributes for.</param>
+        <summary>Provides the list of attributes applied to the specified member.</summary>
+        <returns>The list of applied attributes.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -219,11 +219,11 @@
         <Parameter Name="parameter" Type="System.Reflection.ParameterInfo" />
       </Parameters>
       <Docs>
-        <param name="reflectedType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reflectedType">The type used to retrieve attributes from the parameter.</param>
+        <param name="parameter">The parameter to supply attributes for.</param>
+        <summary>Provides the list of attributes applied to the specified parameter.</summary>
+        <returns>The list of applied attributes.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

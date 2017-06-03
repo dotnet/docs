@@ -12,8 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Configures an import associated with a part.</summary>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName="AddMetadataConstraint">
@@ -34,11 +34,11 @@
         <Parameter Name="getConstraintValueFromPartType" Type="System.Func&lt;System.Type,System.Object&gt;" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="getConstraintValueFromPartType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the metadata item to be constrained.</param>
+        <param name="getConstraintValueFromPartType">A function that calculates the constraint value to match the specified type.</param>
+        <summary>Adds an import constraint.</summary>
+        <returns>An import builder containing the constraint that allows for further configuration.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AddMetadataConstraint">
@@ -59,11 +59,11 @@
         <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="name">To be added.</param>
-        <param name="value">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="name">The name of the metadata item to be constrained.</param>
+        <param name="value">The constraint value to match the specified name.</param>
+        <summary>Adds an import constraint.</summary>
+        <returns>An import builder containing the metadata constraint that allows for further import configuration.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AllowDefault">
@@ -81,9 +81,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Allows the import to receive the default value for its type if the contract cannot be supplied by another part.</summary>
+        <returns>An import builder that allows default values and can be further configured.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractName">
@@ -103,10 +103,10 @@
         <Parameter Name="getContractNameFromPartType" Type="System.Func&lt;System.Type,System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="getContractNameFromPartType">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="getContractNameFromPartType">A function that retrieves the contract name from the specified part type.</param>
+        <summary>Specifies the contract name for the import.</summary>
+        <returns>An import builder containing the contract name that allows for further import configuration.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AsContractName">
@@ -126,10 +126,10 @@
         <Parameter Name="contractName" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="contractName">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="contractName">The contract name.</param>
+        <summary>Specifies the contract name for the import.</summary>
+        <returns>An import builder containing the contract name that allows for further import configuration.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AsMany">
@@ -147,9 +147,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <summary>Configures the import to receive all exports of the contract.</summary>
+        <returns>An import builder that is configured to receive all exports of the contract, and allows for further import configuration.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="AsMany">
@@ -169,10 +169,10 @@
         <Parameter Name="isMany" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="isMany">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="isMany">Indicates whether the import will receive all values from the export.</param>
+        <summary>Configures a flag in the import that indicates whether it will receive all exports of the contract.</summary>
+        <returns>An import builder that allows further import configuration.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

@@ -5,8 +5,8 @@ docker login -u "$DOCKER_UN" -p "$DOCKER_PW" constructors.azurecr.io
 
 docker pull constructors.azurecr.io/platforms/netcoresdk
 
-echo "Creating container..."
-docker container create constructors.azurecr.io/platforms/netcoresdk --name "container-netcoresdk-$BUILD_BUILDNUMBER"
+echo "Creating container container-netcoresdk-$BUILD_BUILDNUMBER..."
+docker create constructors.azurecr.io/platforms/netcoresdk --name "container-netcoresdk-$BUILD_BUILDNUMBER"
 
 echo "Copying samples to container..."
 docker cp "$BUILD_REPOSITORY_LOCALPATH/samples/." "container-netcoresdk-$BUILD_BUILDNUMBER":/samples/

@@ -7,10 +7,10 @@ echo $WORK_FOLDER >> "$BUILD_REPOSITORY_LOCALPATH/buildtarget.txt"
 
 docker login -u "$DOCKER_UN" -p "$DOCKER_PW" constructors.azurecr.io
 
-docker pull constructors.azurecr.io/platforms/netcoresdk
+docker pull $TARGET_IMAGE
 
 echo "Creating container for pre-provisioning..."
-docker create --name builder constructors.azurecr.io/platforms/netcoresdk
+docker create --name builder $TARGET_IMAGE
 
 echo "Copying samples to container..."
 docker cp "$BUILD_REPOSITORY_LOCALPATH/samples/." builder:/samples/
@@ -18,7 +18,7 @@ docker cp "$BUILD_REPOSITORY_LOCALPATH/ci-scripts/buildsamples.sh" builder:build
 docker cp "$BUILD_REPOSITORY_LOCALPATH/buildtarget.txt" builder:buildtarget.txt
 
 echo "Committing changes..."
-docker commit builder constructors.azurecr.io/platforms/netcoresdk
+docker commit builder $TARGET_IMAGE
 
 #docker run --name builder bash -c "for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done"
 

@@ -6,10 +6,10 @@ docker login -u "$DOCKER_UN" -p "$DOCKER_PW" constructors.azurecr.io
 docker pull constructors.azurecr.io/platforms/netcoresdk
 
 echo "Creating container container-netcoresdk-$BUILD_BUILDNUMBER..."
-docker create constructors.azurecr.io/platforms/netcoresdk --name "container-netcoresdk-$BUILD_BUILDNUMBER"
+docker create --name builder constructors.azurecr.io/platforms/netcoresdk
 
 echo "Copying samples to container..."
-docker cp "$BUILD_REPOSITORY_LOCALPATH/samples/." "container-netcoresdk-$BUILD_BUILDNUMBER":/samples/
+docker cp "$BUILD_REPOSITORY_LOCALPATH/samples/." builder:/samples/
 
 docker run --name "container-netcoresdk-$BUILD_BUILDNUMBER" -c "for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done"
 

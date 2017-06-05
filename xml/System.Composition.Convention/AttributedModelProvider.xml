@@ -12,8 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Defines the core behavior of methods used to retrieve metadata attributes for a type, and provides a base for derived classes.</summary>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +28,8 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Called from constructors in derived classes to initialize the <see cref="AttributedModelProvider"/> class.</summary>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -50,11 +50,11 @@
         <Parameter Name="member" Type="System.Reflection.MemberInfo" />
       </Parameters>
       <Docs>
-        <param name="reflectedType">To be added.</param>
-        <param name="member">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reflectedType">The type used to retrieve attributes from the member.</param>
+        <param name="member">The member whose attributes are to be retrieved.</param>
+        <summary>Provides the list of attributes applied to the specified member.</summary>
+        <returns>The list of applied attributes.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">
@@ -75,11 +75,11 @@
         <Parameter Name="parameter" Type="System.Reflection.ParameterInfo" />
       </Parameters>
       <Docs>
-        <param name="reflectedType">To be added.</param>
-        <param name="parameter">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="reflectedType">The type used to retrieve attributes from the parameter.</param>
+        <param name="parameter">The parameter whose attributes are to be retrieved.</param>
+        <summary>Provides the list of attributes applied to the specified parameter.</summary>
+        <returns>The list of applied attributes.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

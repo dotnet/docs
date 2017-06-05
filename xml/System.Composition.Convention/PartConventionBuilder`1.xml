@@ -269,7 +269,7 @@
       </Parameters>
       <Docs>
         <param name="constructorSelector">An <see cref="T:System.Linq.Expressions.Expression"/> that selects a single constructor.</param>
-        <summary>Selects which of the available constructors will be used to instantiate the part.</summary>
+        <summary>Selects which constructor is used to instantiate the part.</summary>
         <returns>A part builder allowing further configuration of the part.</returns>
         <remarks></remarks>
       </Docs>

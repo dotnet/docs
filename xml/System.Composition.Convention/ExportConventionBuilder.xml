@@ -35,7 +35,7 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the metadata item.</param>
-        <param name="getValueFromPartType">A function that calculates the metadata value based on the type.</param>
+        <param name="getValueFromPartType">A function that determines the metadata value based on the type.</param>
         <summary>Adds export metadata to the export.</summary>
         <returns>An export builder containing the metadata that allows for further export configuration.</returns>
         <remarks></remarks>

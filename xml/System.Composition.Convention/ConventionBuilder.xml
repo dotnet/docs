@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods for building a convention by defining rules for configuring plain old CLR objects as Managed Extensibility Framework (MEF) parts.</summary>
+    <summary>Provides methods for building a convention by defining rules for configuring CLR objects as Managed Extensibility Framework (MEF) parts.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -50,8 +50,8 @@
       </Parameters>
       <Docs>
         <param name="type">The type to which the rule applies.</param>
-        <summary>Creates an instance of <see cref="PartConventionBuilder"/> for defining a rule that will apply to the specified type.</summary>
-        <returns>The builder that must be used to specify the rule.</returns>
+        <summary>Creates an instance of <see cref="PartConventionBuilder"/> for defining a rule that applies to the specified type.</summary>
+        <returns>The builder for constructing the rule.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -74,8 +74,8 @@
       <Parameters />
       <Docs>
         <typeparam name="T">The type to which the rule applies.</typeparam>
-        <summary>Creates an instance of <see cref="PartConventionBuilder{T}"/> for defining a rule that will apply to the types specified by <typeparamref name="T"/>.</summary>
-        <returns>The builder that must be used to specify the rule.</returns>
+        <summary>Creates an instance of <see cref="PartConventionBuilder{T}"/> for defining a rule that applies to the type specified by <typeparamref name="T"/>.</summary>
+        <returns>The builder for constructing the rule.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -97,7 +97,7 @@
       </Parameters>
       <Docs>
         <param name="type">The type from which matching types derive.</param>
-        <summary>Creates an instance of the <see cref="PartConventionBuilder"/> class for defining a rule that will apply to all types that derive from (or implement) the specified type.</summary>
+        <summary>Creates an instance of the <see cref="PartConventionBuilder"/> class for defining a rule that applies to all types that derive from (or implement) the specified type.</summary>
         <returns>The builder for constructing the rule.</returns>
         <remarks></remarks>
       </Docs>
@@ -121,8 +121,8 @@
       <Parameters />
       <Docs>
         <typeparam name="T">The type from which the matching types derive.</typeparam>
-        <summary>Creates an instance of <see cref="PartConventionBuilder"/> for defining a rule that will apply to all types that derive from (or implement) the specified type.</summary>
-        <returns>The builder that must be used to specify the rule.</returns>
+        <summary>Creates an instance of <see cref="PartConventionBuilder"/> for defining a rule that applies to all types that derive from (or implement) the specified type.</summary>
+        <returns>The builder for constructing the rule.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -144,8 +144,8 @@
       </Parameters>
       <Docs>
         <param name="typeFilter">A predicate that selects matching types.</param>
-        <summary>Creates an instance of <see cref="PartConventionBuilder{T}"/> for defining a rule that will apply to types that match the specified predicate.</summary>
-        <returns>The builder that must be used to specify the rule.</returns>
+        <summary>Creates an instance of <see cref="PartConventionBuilder{T}"/> for defining a rule that applies to types that match the specified predicate.</summary>
+        <returns>The builder for constructing the rule.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -171,8 +171,8 @@
       <Docs>
         <typeparam name="T">The type to which the rule applies.</typeparam>
         <param name="typeFilter">A predicate that selects matching types.</param>
-        <summary>Creates an instance of <see cref="PartConventionBuilder{T}"/> for defining a rule that will apply to types assignable to <typeparamref name="T"/> matching the specified predicate.</summary>
-        <returns>The builder that must be used to specify the rule.</returns>
+        <summary>Creates an instance of <see cref="PartConventionBuilder{T}"/> for defining a rule that applies to types assignable to <typeparamref name="T"/> that match the specified predicate.</summary>
+        <returns>The builder for constructing the rule.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -195,7 +195,7 @@
       </Parameters>
       <Docs>
         <param name="reflectedType">The type used to retrieve attributes from the member.</param>
-        <param name="member">The member to supply attributes for.</param>
+        <param name="member">The member whose attributes are to be retrieved.</param>
         <summary>Provides the list of attributes applied to the specified member.</summary>
         <returns>The list of applied attributes.</returns>
         <remarks></remarks>
@@ -220,7 +220,7 @@
       </Parameters>
       <Docs>
         <param name="reflectedType">The type used to retrieve attributes from the parameter.</param>
-        <param name="parameter">The parameter to supply attributes for.</param>
+        <param name="parameter">The parameter whose attributes are to be retrieved.</param>
         <summary>Provides the list of attributes applied to the specified parameter.</summary>
         <returns>The list of applied attributes.</returns>
         <remarks></remarks>

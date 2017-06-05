@@ -35,7 +35,7 @@
       </Parameters>
       <Docs>
         <param name="name">The metadata name.</param>
-        <param name="getValueFromPartType">A function that calculates the metadata value based on the type.</param>
+        <param name="getValueFromPartType">A function that determines the metadata value based on the type.</param>
         <summary>Adds the specified metadata to the part.</summary>
         <returns>A part builder containing the metadata that allows further configuration of the part.</returns>
         <remarks></remarks>
@@ -198,7 +198,7 @@
       </Parameters>
       <Docs>
         <param name="interfaceFilter">The filter for selecting the interfaces.</param>
-        <summary>Selects the interfaces on the part type that will be exported.</summary>
+        <summary>Selects the interfaces on the part type to export.</summary>
         <returns>A part builder allowing further configuration of the part.</returns>
         <remarks></remarks>
       </Docs>
@@ -223,7 +223,7 @@
       <Docs>
         <param name="interfaceFilter">The filter for selecting the interfaces.</param>
         <param name="exportConfiguration">The action to configure the selected interfaces.</param>
-        <summary>Selects the interfaces on the part type that will be exported.</summary>
+        <summary>Selects the interfaces on the part type to export.</summary>
         <returns>A part builder allowing further configuration of the part.</returns>
         <remarks></remarks>
       </Docs>
@@ -476,8 +476,8 @@
         <Parameter Name="constructorSelector" Type="System.Func&lt;System.Collections.Generic.IEnumerable&lt;System.Reflection.ConstructorInfo&gt;,System.Reflection.ConstructorInfo&gt;" />
       </Parameters>
       <Docs>
-        <param name="constructorSelector">Filter that selects a single constructor.</param>
-        <summary>Selects which of the available constructors will be used to instantiate the part.</summary>
+        <param name="constructorSelector">A filter that selects a single constructor.</param>
+        <summary>Selects which constructors is used to instantiate the part.</summary>
         <returns>A part builder allowing further configuration of the part.</returns>
         <remarks></remarks>
       </Docs>
@@ -502,7 +502,7 @@
       <Docs>
         <param name="constructorSelector">A filter that selects a single constructor.</param>
         <param name="importConfiguration">The action configuring the parameters of the selected constructor.</param>
-        <summary>Selects which of the available constructors will be used to instantiate the part.</summary>
+        <summary>Selects which constructor is used to instantiate the part.</summary>
         <returns>>A part builder allowing further configuration of the part.</returns>
         <remarks></remarks>
       </Docs>

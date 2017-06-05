@@ -3,7 +3,7 @@ export AZURE_STORAGE_CONNECTION_STRING="$1"
 #config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 
 CONTAINER_NAME=constructors-images
-SOURCE_FOLDER=/buildimages/*
+SOURCE_FOLDER=/buildimage/*
 
 # Install the CLI
 # sudo npm install -g azure-cli

@@ -4,7 +4,7 @@ CONTAINER_NAME=constructors-images
 SOURCE_FOLDER=/buildimages/*
 
 # Install the CLI
-npm install -g azure-cli
+sudo npm install -g azure-cli
 
 # Reload bash
 source ~/.profile

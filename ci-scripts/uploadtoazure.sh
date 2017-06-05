@@ -1,4 +1,4 @@
-export AZURE_STORAGE_CONNECTION_STRING=$1
+export AZURE_STORAGE_CONNECTION_STRING="$1"
 
 #config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 

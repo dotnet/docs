@@ -1,5 +1,7 @@
 export AZURE_STORAGE_CONNECTION_STRING=$AZURESCS
 
+config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
+
 CONTAINER_NAME=constructors-images
 SOURCE_FOLDER=/buildimages/*
 
@@ -8,6 +10,10 @@ sudo npm install -g azure-cli
 
 # Reload bash
 source ~/.profile
+
+exec -l $SHELL
+
+azure
 
 az storage container create -n $CONTAINER_NAME
 

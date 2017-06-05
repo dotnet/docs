@@ -1,2 +1,2 @@
 mkdir buildimage
-docker save -o "$BUILD_REPOSITORY_LOCALPATH/buildimage" "platforms/netcoresdk"
+docker save -o "$BUILD_REPOSITORY_LOCALPATH/buildimage" "constructors.azurecr.io/platforms/netcoresdk"

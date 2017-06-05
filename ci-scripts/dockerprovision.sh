@@ -2,16 +2,19 @@ DOCKER_UN="$1"
 DOCKER_PW="$2"
 WORK_FOLDER="$3"
 
+echo $WORK_FOLDER >> .buildtarget
+
 docker login -u "$DOCKER_UN" -p "$DOCKER_PW" constructors.azurecr.io
 
 docker pull constructors.azurecr.io/platforms/netcoresdk
 
-echo "Creating container container-netcoresdk-$BUILD_BUILDNUMBER..."
+echo "Creating container for pre-provisioning..."
 docker create --name builder constructors.azurecr.io/platforms/netcoresdk
 
 echo "Copying samples to container..."
 docker cp "$BUILD_REPOSITORY_LOCALPATH/samples/." builder:/samples/
 docker cp "$BUILD_REPOSITORY_LOCALPATH/ci-scripts/buildsamples.sh" builder:buildsamples.sh
+docker cp "$BUILD_REPOSITORY_LOCALPATH/.buildtarget" builder:.buildtarget
 
 echo "Committing changes..."
 docker commit builder constructors.azurecr.io/platforms/netcoresdk

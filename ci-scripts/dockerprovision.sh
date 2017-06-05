@@ -15,7 +15,7 @@ docker create --name builder constructors.azurecr.io/platforms/netcoresdk
 echo "Copying samples to container..."
 docker cp "$BUILD_REPOSITORY_LOCALPATH/samples/." builder:/samples/
 docker cp "$BUILD_REPOSITORY_LOCALPATH/ci-scripts/buildsamples.sh" builder:buildsamples.sh
-docker cp "$BUILD_REPOSITORY_LOCALPATH/.buildtarget" builder:.buildtarget
+docker cp "$BUILD_REPOSITORY_LOCALPATH/buildtarget.txt" builder:buildtarget.txt
 
 echo "Committing changes..."
 docker commit builder constructors.azurecr.io/platforms/netcoresdk

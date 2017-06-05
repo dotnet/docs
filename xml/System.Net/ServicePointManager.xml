@@ -756,9 +756,11 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property selects the version of the Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocol to use for new connections that use the Secure Hypertext Transfer Protocol (HTTPS) scheme only; existing connections are not changed.  
+This property selects the version of the Secure Sockets Layer (SSL) or Transport Layer Security (TLS) protocol to use for new connections; existing connections aren't changed.  
   
- Note that no default value is listed for this property, on purpose. The security landscape changes constantly, and default protocols and protection levels are changed over time in order to avoid known weaknesses. Defaults will vary depending on individual machine configuration, and on which software is installed, and on which patches have been applied.  
+Starting with the .NET Framework 4.7, the default value of this property is <xref:System.Net.SecurityProtocolType.SystemDefault?displayProperty=fullName>. This allows .NET Framework networking APIs based on <xref:System.Net.Security.SslStream> (such as FTP, HTTP, and SMTP) to inherit the default security protocols from the operating system or from any custom configurations performed by a system administrator. For information about which SSL/TLS protocols are enabled by default on each version of the Windows operating system, see  [Protocols in TLS/SSL (Schannel SSP)](https://msdn.microsoft.com/library/windows/desktop/mt808159.aspx).
+ 
+For versions of the .NET Framework through the .NET Framework 4.6.2, no default value is listed for this property. The security landscape changes constantly, and default protocols and protection levels are changed over time in order to avoid known weaknesses. Defaults vary depending on individual machine configuration, installed software, and applied patches.  
   
  Your code should never implicitly depend on using a particular protection level, or on the assumption that a given security level is used by default. If your app depends on the use of a particular security level, you must explicitly specify that level and then check to be sure that it is actually in use on the established connection. Further, your code should be designed to be robust in the face of changes to which protocols are supported, as such changes are often made with little advance notice in order to mitigate emerging threats.  
   

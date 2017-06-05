@@ -12,8 +12,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains methods used when configuring a <see cref="PartConventionBuilder{T}"/>. This class is used only in expressions, instances of this type are never created.</summary>
-    <remarks></remarks>
+    <summary>Contains methods used when configuring a <see cref="PartConventionBuilder{T}"/>.</summary>
+    <remarks>
+      <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This class is used only in expressions; instances of this type are never created.
+  
+ ]]></format>
+    </remarks>
   </Docs>
   <Members>
     <Member MemberName="Import&lt;T&gt;">

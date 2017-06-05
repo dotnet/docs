@@ -11,6 +11,8 @@ else
   azure storage container create "$CONTAINER_NAME"
 fi
 
+ls "$BUILD_REPOSITORY_LOCALPATH/buildimage"
+
 for file in $SOURCE_FOLDER; do
   azure storage blob upload "$file" "$CONTAINER_NAME" "$BUILD_BUILDNUMBER"
 done

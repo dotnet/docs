@@ -11,10 +11,11 @@ docker create --name builder constructors.azurecr.io/platforms/netcoresdk
 
 echo "Copying samples to container..."
 docker cp "$BUILD_REPOSITORY_LOCALPATH/samples/." builder:/samples/
+docker cp "$BUILD_REPOSITORY_LOCALPATH/ci-scripts/buildsamples.sh" builder:buildsamples.sh
 
 echo "Committing changes..."
 docker commit builder constructors.azurecr.io/platforms/netcoresdk
 
 #docker run --name builder bash -c "for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done"
 
-docker run --name newbuilder --rm -w $WORK_FOLDER constructors.azurecr.io/platforms/netcoresdk bash -c 'for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done'
+docker run --name newbuilder --rm -w $WORK_FOLDER constructors.azurecr.io/platforms/netcoresdk bash -c 'sh ~/buildsamples.sh'

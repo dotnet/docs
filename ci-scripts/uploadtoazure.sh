@@ -13,9 +13,15 @@ SOURCE_FOLDER=/buildimages/*
 
 # azure
 
-az storage container create -n $CONTAINER_NAME
+CONTAINER_LIST=$(azure storage container list)
+
+if [[ $CONTAINER_LIST == *$CONTAINER_NAME* ]]; then
+  echo "It's there!"
+else
+  azure storage container create -n $CONTAINER_NAME
+fi
 
 for file in $SOURCE_FOLDER
 do
-  az storage blob upload --file $file --container-name $CONTAINER_NAME --name $BUILD_BUILDNUMBER
+  azure storage blob upload $file $CONTAINER_NAME $BUILD_BUILDNUMBER
 done

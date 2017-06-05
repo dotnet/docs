@@ -7,7 +7,7 @@ SOURCE_FOLDER=/buildimages/*
 npm install -g azure-cli
 
 # Reload bash
-source ~/.bash_profile
+source ~/.profile
 
 az storage container create -n $CONTAINER_NAME
 

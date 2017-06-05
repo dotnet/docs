@@ -9,6 +9,10 @@ sudo npm install -g azure-cli
 # Reload bash
 source ~/.profile
 
+exec -l $SHELL
+
+azure
+
 az storage container create -n $CONTAINER_NAME
 
 for file in $SOURCE_FOLDER

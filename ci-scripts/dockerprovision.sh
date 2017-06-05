@@ -16,6 +16,4 @@ docker commit builder constructors.azurecr.io/platforms/netcoresdk
 
 #docker run --name builder bash -c "for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done"
 
-docker run --name=newbuilder --rm constructors.azurecr.io/platforms/netcoresdk bash -c "for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done"
-
-docker wait newbuilder
+docker run --name newbuilder --rm constructors.azurecr.io/platforms/netcoresdk bash -c for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done

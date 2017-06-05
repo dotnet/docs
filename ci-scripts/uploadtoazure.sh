@@ -6,12 +6,12 @@ CONTAINER_NAME=constructors-images
 SOURCE_FOLDER=/buildimages/*
 
 # Install the CLI
-sudo npm install -g azure-cli
+# sudo npm install -g azure-cli
 
 # Reload bash
-source ~/.profile
+#source ~/.profile
 
-azure
+# azure
 
 az storage container create -n $CONTAINER_NAME
 

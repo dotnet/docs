@@ -1,6 +1,7 @@
 DOCKER_UN="$1"
 DOCKER_PW="$2"
 WORK_FOLDER="$3"
+TARGET_IMAGE="$4"
 
 echo $WORK_FOLDER >> .buildtarget
 
@@ -21,4 +22,4 @@ docker commit builder constructors.azurecr.io/platforms/netcoresdk
 
 #docker run --name builder bash -c "for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done"
 
-docker run --name newbuilder --rm -w $WORK_FOLDER constructors.azurecr.io/platforms/netcoresdk bash -c 'sh ../../buildsamples.sh'
+docker run --name newbuilder --rm -w $WORK_FOLDER $TARGET_IMAGE bash -c 'sh ../../buildsamples.sh'

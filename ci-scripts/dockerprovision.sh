@@ -3,7 +3,7 @@ DOCKER_PW="$2"
 WORK_FOLDER="$3"
 TARGET_IMAGE="$4"
 
-echo $WORK_FOLDER >> buildtarget.txt
+echo $WORK_FOLDER >> "$BUILD_REPOSITORY_LOCALPATH/buildtarget.txt"
 
 docker login -u "$DOCKER_UN" -p "$DOCKER_PW" constructors.azurecr.io
 

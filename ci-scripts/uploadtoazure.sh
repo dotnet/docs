@@ -3,6 +3,12 @@ export AZURE_STORAGE_CONNECTION_STRING=$AZURESCS
 CONTAINER_NAME=constructors-images
 SOURCE_FOLDER=/buildimages/*
 
+# Install the CLI
+npm install -g azure-cli
+
+# Reload bash
+source ~/.bash_profile
+
 az storage container create -n $CONTAINER_NAME
 
 for file in $SOURCE_FOLDER

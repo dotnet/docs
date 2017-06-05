@@ -1,5 +1,6 @@
 DOCKER_UN="$1"
 DOCKER_PW="$2"
+WORK_FOLDER="$3"
 
 docker login -u "$DOCKER_UN" -p "$DOCKER_PW" constructors.azurecr.io
 
@@ -16,4 +17,4 @@ docker commit builder constructors.azurecr.io/platforms/netcoresdk
 
 #docker run --name builder bash -c "for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done"
 
-docker run --name newbuilder --rm constructors.azurecr.io/platforms/netcoresdk -w /samples/csharp bash -c 'for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done'
+docker run --name newbuilder --rm -w $WORK_FOLDER constructors.azurecr.io/platforms/netcoresdk bash -c 'for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done'

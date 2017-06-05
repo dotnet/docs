@@ -31,11 +31,13 @@ translation.priority.ht:
   - "zh-cn"
   - "zh-tw"
 ---
-# C# Compiler Options Listed Alphabetically
+
+# C# compiler options listed alphabetically
+
 The following compiler options are sorted alphabetically. For a categorical list, see [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md).  
   
-|Option|Purpose|  
-|------------|-------------|  
+| Option | Purpose |  
+| ------ | ------- |  
 |[@](../../../csharp/language-reference/compiler-options/response-file-compiler-option.md)|Reads a response file for more options.|  
 |[/?](../../../csharp/language-reference/compiler-options/help-compiler-option.md)|Displays a usage message to stdout.|  
 |/additionalfile|Names additional files that don't directly affect code generation but may be used by analyzers for producing errors or warnings.|  
@@ -56,7 +58,6 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[/fullpaths](../../../csharp/language-reference/compiler-options/fullpaths-compiler-option.md)|Causes the compiler to generate fully qualified paths.|  
 |[/help](../../../csharp/language-reference/compiler-options/help-compiler-option.md)|Displays a usage message to stdout.|  
 |[/highentropyva](../../../csharp/language-reference/compiler-options/highentropyva-compiler-option.md)|Specifies that high entropy ASLR is supported.|  
-|/incremental|Enables incremental compilation [obsolete].|  
 |[/keycontainer](../../../csharp/language-reference/compiler-options/keycontainer-compiler-option.md)|Specifies a strong name key container.|  
 |[/keyfile](../../../csharp/language-reference/compiler-options/keyfile-compiler-option.md)|Specifies a strong name key file.|  
 |[/langversion:\<string>](../../../csharp/language-reference/compiler-options/langversion-compiler-option.md)|Specify language version mode: ISO-1, ISO-2, 3, 4, 5, 6, or Default|  
@@ -70,7 +71,7 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[/nologo](../../../csharp/language-reference/compiler-options/nologo-compiler-option.md)|Suppresses compiler copyright message.|  
 |[/nostdlib](../../../csharp/language-reference/compiler-options/nostdlib-compiler-option.md)|Instructs the compiler not to reference standard library (mscorlib.dll).|  
 |[/nowarn](../../../csharp/language-reference/compiler-options/nowarn-compiler-option.md)|Disables specific warning messages|  
-|[/nowin32manifest](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)|Instructs the compiler not to embed an application manifest in the executable file.|  
+|[/nowin32manifest](../../../csharp/language-reference/compiler-options/nowin32manifest-compiler-option.md)|Instructs the compiler not to embed an application manifest in the executable file.|
 |[/optimize](../../../csharp/language-reference/compiler-options/optimize-compiler-option.md)|Enables/disables optimizations.|  
 |[/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md)|Specifies the output file name (default: base name of file with main class or first file).|  
 |/parallel[+&#124;-]|Specifies whether to use concurrent build (+).|  
@@ -90,9 +91,15 @@ The following compiler options are sorted alphabetically. For a categorical list
 |[/win32icon](../../../csharp/language-reference/compiler-options/win32icon-compiler-option.md)|Uses this icon for the output.|  
 |[/win32manifest](../../../csharp/language-reference/compiler-options/win32manifest-compiler-option.md)|Specifies a custom win32 manifest file.|  
 |[/win32res](../../../csharp/language-reference/compiler-options/win32res-compiler-option.md)|Specifies the win32 resource file (.res).|  
-  
-## See Also  
- [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
- [C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)   
- [How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)   
- [\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)
+
+## Obsolete options  
+    
+| Option       | Purpose                          |  
+| ------------ | -------------------------------- |   
+| /incremental | Enables incremental compilation. |  
+
+## See also  
+[C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)   
+[C# Compiler Options Listed by Category](../../../csharp/language-reference/compiler-options/listed-by-category.md)   
+[How to: Set Environment Variables for the Visual Studio Command Line](../../../csharp/language-reference/compiler-options/how-to-set-environment-variables-for-the-visual-studio-command-line.md)   
+[\<compiler> Element](../../../framework/configure-apps/file-schema/compiler/compiler-element.md)

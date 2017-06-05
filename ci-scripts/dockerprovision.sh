@@ -11,6 +11,9 @@ docker create --name builder constructors.azurecr.io/platforms/netcoresdk
 echo "Copying samples to container..."
 docker cp "$BUILD_REPOSITORY_LOCALPATH/samples/." builder:/samples/
 
-docker run --name "container-netcoresdk-$BUILD_BUILDNUMBER" -c "for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done"
+echo "Committing changes..."
+docker commit builder constructors.azurecr.io/platforms/netcoresdk
+
+docker run --name "container-netcoresdk-$BUILD_BUILDNUMBER" /bin/bash -c "for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done"
 
 #docker run --name container-netcoresdk-305 --rm -v /opt/vsts/work/1/s:/source -w /source/samples/csharp constructors.azurecr.io/platforms/netcoresdk bash -c for sample in $(find . -name *.csproj); do dotnet restore $sample; dotnet build $sample; done

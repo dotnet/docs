@@ -1,1 +1,0 @@
-﻿SchTasks /Create /SC MINUTE /MO 1 /TN "Jenkins Agent Inspector" /TR "powershell.exe -File C:\prstack\inspector.ps1 -WindowStyle Hidden"

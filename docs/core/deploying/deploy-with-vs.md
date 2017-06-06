@@ -96,11 +96,11 @@ Deploying a self-contained deployment with no third-party dependencies involves 
 
    For example, the following example indicates that the app runs on 64-bit Windows 10 operating systems and the 64-bit OS X Version 10.11 operating system.
 
-       ```xml
-        <PropertyGroup>
-          <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
-        </PropertyGroup>
-       ```
+```xml
+<PropertyGroup>
+    <RuntimeIdentifiers>win10-x64;osx.10.11-x64</RuntimeIdentifiers>
+</PropertyGroup>
+```
    Note that the `<RuntimeIdentifiers>` element can go into any `<PropertyGroup>` that you have in your *csproj* file. A complete sample *csproj* file appears later in this section.
 
 1. Create a Debug build of your app.

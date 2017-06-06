@@ -13,6 +13,34 @@ ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 
 # .NET Core
 
+<xref:System.Collections.Generic.SynchronizedReadOnlyCollection%601.System%23Collections%23ICollection%23SyncRoot%2A>
+
+<xref:System.Collections.Specialized.BitVector32.Section.Equals%28System.Collections.Specialized.BitVector32.Section.Equals.System.Collections.Specialized.BitVector32.Section%29?displayProperty=fullName>
+
+<xref:System.Collections.Specialized.Bit​Vector32.Section.​Equals%28System.​Collections.​Specialized.​Bit​Vector32+Section%29?displayProperty=fullName>
+
+<xref:System.Collections.Specialized.BitVector32.Section.Equals%28System.Collections.Specialized.BitVector32.Section.Equals.System.Collections.Specialized.BitVector32+Section%29?displayProperty=fullName>
+
+<xref:System.Collections.Specialized.BitVector32.Section.Equals%28System.Collections.Specialized.BitVector32.Section.Equals.System.Collections.Specialized.BitVector32%2BSection%29?displayProperty=fullName>
+
+[Bit​Vector32.Section.​Equals(System.​Collections.​Specialized.​Bit​Vector32+Section)](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.bitvector32.section.equals?view=netframework-4.7#System_Collections_Specialized_BitVector32_Section_Equals_System_Collections_Specialized_BitVector32_Section_)
+
+<xref:System.ComponentModel.PropertyDescriptorCollection.System%23Collections%23IList%23Item%2A>
+
+<xref:System.Data.Objects.ObjectQuery%601.System%23Collections%23Generic%23IEnumerable%7BT%7D%23GetEnumerator%2A?displayProperty=fullName>
+
+<xref:System.Data.EntityKey.Equals%28System.Data.EntityKey%29?displayProperty=fullName>
+
+<xref:System.Diagnostics.SymbolStore.SymbolToken.Equals%28System.Diagnostics.SymbolStore.SymbolToken%29?displayProperty=fullName>
+
+<xref:System.Diagnostics.CounterSample.Equals%28System.Diagnostics.CounterSample%29?displayProperty=fullName>
+
+<xref:System.Drawing.CharacterRange.Equals%28System.Object%29?displayProperty=fullName>
+
+<xref:System.ConsoleKeyInfo.Equals%28System.ConsoleKeyInfo%29?displayProperty=fullName>
+
+<xref:System.DateTimeOffset.Add%28System.TimeSpan%29?displayProperty=fullName>
+
 > Check out the ["Getting Started" tutorials](get-started.md) to learn how to create a simple .NET Core application. It only takes a few minutes to get your first app up and running.
 
 .NET Core is a general purpose development platform maintained by Microsoft and the .NET community on [GitHub](https://github.com/dotnet/core). It is cross-platform, supporting Windows, macOS and Linux, and can be used in device, cloud, and embedded/IoT scenarios. 

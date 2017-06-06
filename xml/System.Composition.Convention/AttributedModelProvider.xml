@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Defines the core behavior of methods used to retrieve metadata attributes for a type, and provides a base for derived classes.</summary>
+    <summary>Serves as the base class that defines the core behavior of methods used to retrieve metadata attributes for a type.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -28,8 +28,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Called from constructors in derived classes to initialize the <see cref="AttributedModelProvider"/> class.</summary>
-        <remarks></remarks>
+        <summary>Creates a new instance of the <see cref="AttributedModelProvider"/> class.</summary>
+        <remarks>
+         <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a protected constructor that can only be called from derived classes.
+  
+ ]]></format>        
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetCustomAttributes">

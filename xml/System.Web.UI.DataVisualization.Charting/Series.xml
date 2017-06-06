@@ -351,7 +351,7 @@ public void CreateSecondLegend()
   
  Certain properties are only applicable for specific chart types. For example, the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImage%2A> property does not apply to line charts, but does apply to an area chart.  
   
- To display an image that indicates an empty point, use the <xref:System.Web.UI.DataVisualization.Charting.Series.MarkerImage%2A> and <xref:System.Web.UI.DataVisualization.Charting.Series.MarkerStyle%2A> properties, and not the <xref:System.Web.UI.DataVisualization.Charting.Chart.BackImage%2A> property.  
+ To display an image that indicates an empty point, use the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerImage%2A> and <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.MarkerStyle%2A> properties, and not the <xref:System.Web.UI.DataVisualization.Charting.DataPointCustomProperties.BackImage%2A> property.  
   
  The <xref:System.Web.UI.DataVisualization.Charting.Series.AxisLabel%2A> property determines the axis label for empty points. Note that for stacked chart types, the axis label is determined by the <xref:System.Web.UI.DataVisualization.Charting.Series.AxisLabel%2A> property of the first plotted series that has this property set.  
   
@@ -433,7 +433,7 @@ public void CreateSecondLegend()
       <Docs>
         <summary>Gets or sets a flag that indicates whether data point indices will be used for the X-values.</summary>
         <value>
-          <see langword="true" /> if the indices of data points that belong to the series will be used for X-values; <see langword="false " /> if they will not. The default value is <see langword="false" />.</value>
+          <see langword="true" /> if the indices of data points that belong to the series will be used for X-values; <see langword="false" /> if they will not. The default value is <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

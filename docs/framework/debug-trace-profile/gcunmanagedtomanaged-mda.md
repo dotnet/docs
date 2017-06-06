@@ -50,7 +50,7 @@ The `gcUnmanagedToManaged` managed debugging assistant (MDA) causes a garbage co
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <gcUnmanagedToManaged/>  

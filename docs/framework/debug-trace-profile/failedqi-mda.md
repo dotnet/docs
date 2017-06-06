@@ -51,7 +51,7 @@ The `failedQI` managed debugging assistant (MDA) is activated when the runtime c
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <failedQI/>  

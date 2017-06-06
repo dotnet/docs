@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;add&gt; of &lt;scopes&gt;
 Adds a custom scope Uri that can be used to filter service endpoints during query.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<endpointBehaviors>  
 \<behavior>  
@@ -28,8 +28,18 @@ Adds a custom scope Uri that can be used to filter service endpoints during quer
   
 ## Syntax  
   
-```  
-<behaviors>  <endpointBehaviors>    <behavior name="String">      <endpointDiscovery enable="Boolean">        <scopes>          <add scope="URI"/>        </scopes>      </endpointDiscovery>    </behavior>  </endpointBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <endpointBehaviors>
+    <behavior name="String">
+      <endpointDiscovery enable="Boolean">
+        <scopes>
+          <add scope="URI"/>
+        </scopes>
+      </endpointDiscovery>
+    </behavior>
+  </endpointBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  

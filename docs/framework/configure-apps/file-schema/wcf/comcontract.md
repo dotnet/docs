@@ -23,7 +23,7 @@ Specifies a COM+ integration service contract.
   
 ## Syntax  
   
-```  
+```xml  
 <comContracts>  
   <comContract  
       contract="string"  
@@ -78,7 +78,7 @@ Specifies a COM+ integration service contract.
 ## Remarks  
  COM+ integration service contracts are currently restricted to the "http://tempuri.org" namespace, and contract name is derived from the supporting COM interface. You can, however, specify alternatives by using the `comContracts` section, as well as the `comContract` element in the configuration file. For example, you can use the following configuration to specify the namespace, contract name, and user defined types to be included, as well as other settings for a service contract.  
   
-```  
+```xml  
 <comContracts>  
   <comContract  
       contract="{5163B1E7-F0CF-4B6A-9A02-4AB654F34284}"  

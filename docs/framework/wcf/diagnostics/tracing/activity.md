@@ -23,7 +23,7 @@ This topic describes activity traces in the [!INCLUDE[indigo1](../../../../../in
   
  To emit activity traces at run time, use the `ActivityTracing` setting for the `System.ServiceModel` trace source, or other [!INCLUDE[indigo2](../../../../../includes/indigo2-md.md)] or custom trace sources, as demonstrated by the following configuration code.  
   
-```  
+```xml  
 <source name="System.ServiceModel" switchValue="Verbose,ActivityTracing">  
 ```  
   

@@ -57,7 +57,7 @@ The .NET Framework, through configuration files, gives developers and administra
   
  You specify configuration settings using predefined attributes, which are name/value pairs inside an element's start tag. The following example specifies two attributes (`version` and `href`) for the `<codeBase>` element, which specifies where the runtime can locate an assembly (for more information, see [Specifying an Assembly's Location](../../../docs/framework/configure-apps/specify-assembly-location.md)).  
   
-```  
+```xml  
 <codeBase version="2.0.0.0"  
           href="http://www.litwareinc.com/myAssembly.dll"/>  
 ```  

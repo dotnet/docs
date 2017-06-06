@@ -37,7 +37,7 @@ Specifies which versions of the common language runtime the application supports
   
 ## Syntax  
   
-```  
+```xml  
 <supportedRuntime version="runtime version" sku="sku id"/>  
 ```  
   

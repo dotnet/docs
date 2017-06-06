@@ -71,7 +71,7 @@ public static void ProcessOrder(Object source,
   
  The MSMQ queue name is specified in an appSettings section of the configuration file, as shown in the following sample configuration.  
   
-```  
+```xml  
 <appSettings>  
     <add key="orderQueueName" value=".\private$\Orders" />  
 </appSettings>  

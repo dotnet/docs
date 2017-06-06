@@ -38,7 +38,7 @@ The application or computer configuration file holds the settings that determine
   
 -   Add the following lines to the appropriate configuration file. The values and options for these settings are described in the tables below.  
   
-    ```  
+    ```xml  
     <configuration>  
       <system.diagnostics>  
         <sources>  

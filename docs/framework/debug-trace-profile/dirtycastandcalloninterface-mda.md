@@ -50,7 +50,7 @@ The `dirtyCastAndCallOnInterface` managed debugging assistant (MDA) is activated
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <dirtyCastAndCallOnInterface />  

@@ -59,7 +59,7 @@ A proxy server handles client requests for resources. A proxy can return a reque
   
  The following example shows a typical adaptive proxy configuration.  
   
-```  
+```xml  
 <system.net>  
     <defaultProxy>  
       <proxy  scriptDownloadInterval="600"  
@@ -93,7 +93,7 @@ A proxy server handles client requests for resources. A proxy can return a reque
   
  The following example shows a typical static proxy configuration.  
   
-```  
+```xml  
 <system.net>  
     <defaultProxy>  
         <proxy  proxyaddress="http://proxy.contoso.com:3128"  

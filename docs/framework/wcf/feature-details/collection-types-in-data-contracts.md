@@ -42,7 +42,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  Both data contracts result in XML similar to the following code.  
   
-```  
+```xml  
 <PurchaseOrder>  
     <customerName>...</customerName>  
     <items>  
@@ -97,7 +97,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  Both types’ data contract name is "ArrayOfstring" and not "CustomerList1" or "StringList1". This means that serializing any one of these types at the root level yields XML similar to the following code.  
   
-```  
+```xml  
 <ArrayOfstring>  
     <string>...</string>  
     <string>...</string>  
@@ -115,7 +115,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  When serialized, the resulting XML is similar to the following.  
   
-```  
+```xml  
 <CustomerList2>  
     <string>...</string>  
     <string>...</string>  
@@ -133,7 +133,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  The resulting XML is similar to the following.  
   
-```  
+```xml  
 <cust_list>  
     <string>...</string>  
     <string>...</string>  
@@ -156,7 +156,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  The resulting XML is similar to the following.  
   
-```  
+```xml  
 <CustomerList4>  
     <customer>...</ customer>  
     <customer>...</customer>  
@@ -179,7 +179,7 @@ A *collection* is a list of items of a certain type. In the [!INCLUDE[dnprdnshor
   
  When serialized, the resulting XML is similar to the following.  
   
-```  
+```xml  
 <CountriesOrRegionsWithCapitals>  
     <entry>  
         <countryorregion>USA</countryorregion>  

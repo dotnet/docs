@@ -24,7 +24,7 @@ When the entity reference is not expanded, but preserved, the XML Document Objec
   
  Using the following XML,  
   
-```  
+```xml  
 <author>Fred</author>  
 <pubinfo>Published by &publisher;</pubinfo>  
 ```  

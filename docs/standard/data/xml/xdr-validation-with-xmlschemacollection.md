@@ -140,7 +140,7 @@ namespace ValidationSample
   
  The following outlines the contents of the input file, HeadCount.xml, to be validated.  
   
-```  
+```xml  
 <!--Load HeadCount.xdr in SchemaCollection for Validation-->  
 <HeadCount xmlns='xdrHeadCount'>  
    <Name>Waldo Pepper</Name>  
@@ -150,7 +150,7 @@ namespace ValidationSample
   
  The following outlines the contents of the XDR schema file, HeadCount.xdr, to be validated against.  
   
-```  
+```xml  
 <Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">  
    <ElementType name="Name" content="textOnly"/>  
    <AttributeType name="Bldg" default="2"/>  

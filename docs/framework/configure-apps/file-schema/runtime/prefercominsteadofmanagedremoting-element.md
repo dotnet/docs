@@ -32,7 +32,7 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
   
 ## Syntax  
   
-```  
+```xml  
 <PreferComInsteadOfManagedRemoting enabled="true|false"/>  
 ```  
   
@@ -74,7 +74,7 @@ Specifies whether the runtime will use COM interop instead of remoting for all c
 ## Example  
  The following example shows how to specify that the runtime should use COM interop across isolation boundaries:  
   
-```  
+```xml  
 <configuration>  
   <runtime>  
     <PreferComInsteadOfManagedRemoting enabled="true"/>  

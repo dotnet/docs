@@ -240,7 +240,7 @@ When dealing with data in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)
   
  An attacker may send a malicious message like this, getting around the constraints and getting the object into an invalid state, which may have unintended and unpredictable consequences.  
   
-```  
+```xml  
 <SpaceStationAirlock>  
     <innerDoorOpen>true</innerDoorOpen>  
     <outerDoorOpen>true</outerDoorOpen>  

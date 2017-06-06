@@ -70,7 +70,7 @@ Every endpoint has an address associated with it, which is used to locate and id
   
  The following is an example of configuration code that uses the prefix filters.  
   
-```  
+```xml  
 <system.serviceModel>  
   <serviceHostingEnvironment>  
      <baseAddressPrefixFilters>  
@@ -92,7 +92,7 @@ Every endpoint has an address associated with it, which is used to locate and id
   
  The following is an example of configuration code that uses multipleSiteBindingsEnabled on [\<serviceHostingEnvironment>](../../../../docs/framework/configure-apps/file-schema/wcf/servicehostingenvironment.md).  
   
-```  
+```xml  
 <system.serviceModel>  
   <serviceHostingEnvironment multipleSiteBindingsEnabled="true" >  
   </serviceHostingEnvironment>  

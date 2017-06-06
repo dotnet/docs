@@ -46,7 +46,7 @@ The easiest way to use net.tcp:// port sharing in your [!INCLUDE[indigo1](../../
   
 1.  The following example shows how to enable port sharing and add the service endpoint using configuration elements.  
   
-```  
+```xml  
 <system.serviceModel>  
   <bindings>  
     <netTcpBinding name="portSharingBinding"   

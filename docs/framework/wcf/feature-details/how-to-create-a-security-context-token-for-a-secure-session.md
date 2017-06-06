@@ -33,7 +33,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
   
     1.  Define a custom binding, by adding a [\<customBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/custombinding.md) to the configuration file for the service.  
   
-        ```  
+        ```xml  
         <customBinding>  
         ```  
   
@@ -41,7 +41,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
   
          Specify a binding name by setting the `name` attribute to a unique name within the configuration file.  
   
-        ```  
+        ```xml  
         <binding name="StatefulSCTSecureSession">  
         ```  
   
@@ -49,7 +49,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
   
          Specify that a secure session is used by setting the `authenticationMode` attribute to `SecureConversation`. Specify that stateful SCTs are used by setting the `requireSecurityContextCancellation` attribute to `false`.  
   
-        ```  
+        ```xml  
         <security authenticationMode="SecureConversation"  
                   requireSecurityContextCancellation="false">  
         ```  
@@ -58,25 +58,25 @@ By using a stateful security context token (SCT) in a secure session, the sessio
   
          Specify how the client is authenticated by setting the `authenticationMode` attribute.  
   
-        ```  
+        ```xml  
         <secureConversationBootstrap authenticationMode="UserNameForCertificate" />  
         ```  
   
     5.  Specify the message encoding by adding an encoding element, such as [\<textMessageEncoding>](../../../../docs/framework/configure-apps/file-schema/wcf/textmessageencoding.md).  
   
-        ```  
+        ```xml  
         <textMessageEncoding />  
         ```  
   
     6.  Specify the transport by adding a transport element, such as the [\<httpTransport>](../../../../docs/framework/configure-apps/file-schema/wcf/httptransport.md).  
   
-        ```  
+        ```xml  
         <httpTransport />  
         ```  
   
      The following code example uses configuration to specify a custom binding that messages can use with stateful SCTs in a secure session.  
   
-    ```  
+    ```xml  
     <customBinding>  
       <binding name="StatefulSCTSecureSession">  
         <security authenticationMode="SecureConversation"  
@@ -99,7 +99,7 @@ By using a stateful security context token (SCT) in a secure session, the sessio
   
  The following configuration exhibits this behavior.  
   
-```  
+```xml  
 <customBinding>  
   <binding name="Cancellation">  
        <textMessageEncoding />  

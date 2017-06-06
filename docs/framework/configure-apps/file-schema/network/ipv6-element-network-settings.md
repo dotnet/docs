@@ -36,7 +36,7 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
   
 ## Syntax  
   
-```  
+```xml  
       <ipv6  
   enabled="true|false"  
 /ipv6>  
@@ -69,7 +69,7 @@ Enables Internet Protocol version 6 (IPv6) responses from obsolete members of th
 ## Example  
  The following code example shows how to enable IPv6 support for the <xref:System.Net.Dns> class.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <settings>  

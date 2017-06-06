@@ -26,7 +26,7 @@ Specifies service debugging for a [!INCLUDE[indigo1](../../../../../includes/ind
   
 ## Syntax  
   
-```  
+```xml  
 <callbackDebug  includeExceptionDetailInFaults="Boolean" />  
 ```  
   

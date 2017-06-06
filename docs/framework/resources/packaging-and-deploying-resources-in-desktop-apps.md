@@ -113,7 +113,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
   
  You optimize the probe for satellite assemblies by including the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element and setting its `enabled` attribute to `true` in the application configuration file, as shown in the following example.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <relativeBindForResources enabled="true" />  

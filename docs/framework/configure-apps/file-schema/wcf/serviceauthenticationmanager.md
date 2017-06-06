@@ -18,7 +18,7 @@ manager: "erikre"
 # &lt;serviceAuthenticationManager&gt;
 Provides a workflow configuration element that establishes at the service level the validity of a transmission, message, or originator..  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -26,8 +26,14 @@ Provides a workflow configuration element that establishes at the service level 
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <serviceAuthenticationManager serviceAuthenticationManagerType ="String"/>    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <serviceAuthenticationManager serviceAuthenticationManagerType="String" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  

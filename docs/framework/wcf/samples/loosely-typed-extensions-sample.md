@@ -33,7 +33,7 @@ The Syndication object model provides rich support for working with extension da
 ## Sample XML  
  For reference, the following XML document is used in this sample.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="IBM437"?>  
 <feed myAttribute="someValue" xmlns="http://www.w3.org/2005/Atom">  
   <title type="text"></title>  

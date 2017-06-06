@@ -27,7 +27,7 @@ In a <xref:System.Data.DataSet>, you form an association between two or more col
 ## Nested Complex Types  
  Nested complex type definitions in a schema indicate the parent-child relationships of the elements. The following XML Schema fragment shows that **OrderDetail** is a child element of the **Order** element.  
   
-```  
+```xml  
 <xs:element name="Order">  
   <xs:complexType>  
      <xs:sequence>          
@@ -44,7 +44,7 @@ In a <xref:System.Data.DataSet>, you form an association between two or more col
 ## msdata:Relationship Annotation  
  The **msdata:Relationship** annotation allows you to explicitly specify parent-child relationships between elements in the schema that are not nested. The following example shows the structure of the **Relationship** element.  
   
-```  
+```xml  
 <msdata:Relationship name="CustOrderRelationship"    
 msdata:parent=""    
 msdata:child=""    
@@ -56,7 +56,7 @@ msdata:childkey="" />
   
  For example, the following schema fragment specifies **Order** and **OrderDetail** elements at the same level (not nested). The schema specifies an **msdata:Relationship** annotation, which specifies the parent-child relationship between these two elements. In this case, an explicit relationship must be specified using the **msdata:Relationship** annotation.  
   
-```  
+```xml  
  <xs:element name="MyDataSet" msdata:IsDataSet="true">  
   <xs:complexType>  
     <xs:choice maxOccurs="unbounded">  

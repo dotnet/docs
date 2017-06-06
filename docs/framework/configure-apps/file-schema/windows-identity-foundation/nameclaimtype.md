@@ -27,7 +27,7 @@ Sets the claim type that specifies the <xref:System.Security.Principal.IIdentity
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
@@ -65,7 +65,7 @@ Sets the claim type that specifies the <xref:System.Security.Principal.IIdentity
   
 ## Example  
   
-```  
+```xml  
 <add type="System.IdentityModel.Tokens.SamlSecurityTokenHandler, System.IdentityModel">  
     <samlSecurityTokenRequirement>  
         <nameClaimType value="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name" />  

@@ -32,7 +32,7 @@ Specifies whether garbage collection supports multiple CPU groups.
   
 ## Syntax  
   
-```  
+```xml  
 <GCCpuGroup    
    enabled="true|false"/>  
 ```  
@@ -72,7 +72,7 @@ Specifies whether garbage collection supports multiple CPU groups.
 ## Example  
  The following example shows how to enable garbage collection for multiple CPU groups.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <GCCpuGroup enabled="true"/>  

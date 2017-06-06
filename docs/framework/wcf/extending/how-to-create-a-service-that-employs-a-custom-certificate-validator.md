@@ -52,7 +52,7 @@ This topic shows how to implement a custom certificate validator and how to conf
   
 7.  Set the `certificateValidationMode` attribute to `Custom`.  
   
-    ```  
+    ```xml  
     <configuration>  
      <system.serviceModel>  
       <behaviors>  
@@ -88,7 +88,7 @@ This topic shows how to implement a custom certificate validator and how to conf
   
 8.  Set the `certificateValidationMode` attribute to `Custom`. The following example sets the attribute to the namespace and name of the type.  
   
-    ```  
+    ```xml  
     <configuration>  
      <system.serviceModel>  
       <behaviors>  

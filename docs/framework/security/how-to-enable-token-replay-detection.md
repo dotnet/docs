@@ -71,7 +71,7 @@ manager: "mbaldwin"
   
 6.  Add the following **\<tokenReplayDetection>** element to the *Web.config* configuration file immediately following the **\<system.identityModel>** and **\<identityConfiguration>** elements, like shown:  
   
-    ```  
+    ```xml  
     <system.identityModel>  
         <identityConfiguration>  
             <tokenReplayDetection enabled="true"/>  

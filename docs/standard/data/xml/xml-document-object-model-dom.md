@@ -24,7 +24,7 @@ The XML Document Object Model (DOM) class is an in-memory representation of an X
   
 ## Input  
   
-```  
+```xml  
 <?xml version="1.0"?>  
   <books>  
     <book>  

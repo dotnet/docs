@@ -26,7 +26,7 @@ Embedding connection strings in your application's code can lead to security vul
   
  The following configuration file fragment demonstrates the schema and syntax for storing a connection string. The **name** attribute is a name that you provide to uniquely identify a connection string so that it can be retrieved at run time. The **providerName** is the invariant name of the .NET Framework data provider, which is registered in the machine.config file.  
   
-```  
+```xml  
 <?xml version='1.0' encoding='utf-8'?>  
   <configuration>  
     <connectionStrings>  
@@ -46,7 +46,7 @@ Embedding connection strings in your application's code can lead to security vul
   
  To store connection strings in an external configuration file, create a separate file that contains only the **connectionStrings** section. Do not include any additional elements, sections, or attributes. This example shows the syntax for an external configuration file.  
   
-```  
+```xml  
 <connectionStrings>  
   <add name="Name"   
    providerName="System.Data.ProviderName"   
@@ -56,7 +56,7 @@ Embedding connection strings in your application's code can lead to security vul
   
  In the main application configuration file, you use the **configSource** attribute to specify the fully qualified name and location of the external file. This example refers to an external configuration file named `connections.config`.  
   
-```  
+```xml  
 <?xml version='1.0' encoding='utf-8'?>  
 <configuration>  
     <connectionStrings configSource="connections.config"/>  
@@ -109,7 +109,7 @@ Embedding connection strings in your application's code can lead to security vul
   
  The following configuration file fragment shows the **connectionStrings** section after it has been encrypted. The **configProtectionProvider** specifies the protected configuration provider used to encrypt and decrypt the connection strings. The **EncryptedData** section contains the cipher text.  
   
-```  
+```xml  
 <connectionStrings configProtectionProvider="DataProtectionConfigurationProvider">  
   <EncryptedData>  
     <CipherData>  
@@ -124,7 +124,7 @@ Embedding connection strings in your application's code can lead to security vul
 ### Protected Configuration Providers  
  Protected configuration providers are registered in the **configProtectedData** section of the **machine.config** file on the local computer, as shown in the following fragment, which shows the two protected configuration providers supplied with the .NET Framework. The values shown here have been truncated for readability.  
   
-```  
+```xml  
 <configProtectedData defaultProvider="RsaProtectedConfigurationProvider">  
   <providers>  
     <add name="RsaProtectedConfigurationProvider"   

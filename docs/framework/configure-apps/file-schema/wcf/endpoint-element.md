@@ -27,7 +27,7 @@ Specifies binding, contract, and address properties for a service endpoint, whic
   
 ## Syntax  
   
-```  
+```xml  
 <endpoint address="String"  
    behaviorConfiguration="String"  
    binding="String"  
@@ -77,7 +77,7 @@ Specifies binding, contract, and address properties for a service endpoint, whic
 ## Example  
  This is an example of a service endpoint configuration.  
   
-```  
+```xml  
 <endpoint   
     address="/HelloWorld/"  
     bindingConfiguration="usingDefaults"  

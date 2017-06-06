@@ -39,7 +39,7 @@ Adds a filter to a listener in the `sharedListeners` collection.
   
 ## Syntax  
   
-```  
+```xml  
 <filter type="System.Diagnostics.EventTypeFilter"   
   initializeData="Warning" />  
 ```  
@@ -74,7 +74,7 @@ Adds a filter to a listener in the `sharedListeners` collection.
 ## Example  
  The following example shows how to use the `<filter>` element to add a filter to the trace listener `console` in the `sharedListeners` collection.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <sources>  

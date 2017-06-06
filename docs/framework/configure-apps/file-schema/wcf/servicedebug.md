@@ -26,7 +26,7 @@ Specifies debugging and help information features for a [!INCLUDE[indigo1](../..
   
 ## Syntax  
   
-```  
+```xml  
 <serviceDebug     httpHelpPageBinding="String"    httpHelpPageBindingConfiguration="String"  
     httpHelpPageEnabled="Boolean"  
     httpHelpPageUrl="Uri"  

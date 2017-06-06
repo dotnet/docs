@@ -22,7 +22,7 @@ manager: "wpickett"
 # Style Sheet Directives Embedded in a Document
 Occasionally, existing XML contains the style sheet directive of `<?xml:stylesheet?>`. Microsoft Internet Explorer accepts this as an alternative to the `<?xml-stylesheet?>` syntax. When the XML data contains an `<?xml:stylesheet?>` directive, as shown in the following data, attempting to load this data into the XML Document Object Model (DOM) throws an exception.  
   
-```  
+```xml  
 <?xml version="1.0" ?>  
 <?xml:stylesheet type="text/xsl" href="test2.xsl"?>  
 <root>  

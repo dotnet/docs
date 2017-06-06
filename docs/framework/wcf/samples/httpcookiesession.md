@@ -93,7 +93,7 @@ InputQueue<RequestContext> requestQueue;
   
  The sample uses policy assertions for the service description. This allows the sample to publish its channel requirements to other clients that can consume the service. For example, this binding element publishes policy assertions to let potential clients know that it supports sessions. Because the sample enables the `ExchangeTerminateMessage` property in the binding element configuration, it adds the necessary assertions to show that the service supports an extra message exchange action to terminate the session conversation. Clients can then use this action. The following WSDL code shows the policy assertions created from the `HttpCookieSessionBindingElement`.  
   
-```  
+```xml  
 <wsp:Policy wsu:Id="HttpCookieSessionBinding_IWcfCookieSessionService_policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">  
 <wsp:ExactlyOne>  
 <wsp:All>  
@@ -112,7 +112,7 @@ InputQueue<RequestContext> requestQueue;
 ### Binding Element Extension Section  
  The section `HttpCookieSessionBindingElementSection` is a <xref:System.ServiceModel.Configuration.BindingElementExtensionElement> that exposes `HttpCookieSessionBindingElement` to the configuration system. With a few overrides the configuration section name, the type of the binding element and how to create the binding element are defined. We can then register the extension section in a configuration file as follows:  
   
-```  
+```xml  
 <configuration>        
     <system.serviceModel>        
       <extensions>          

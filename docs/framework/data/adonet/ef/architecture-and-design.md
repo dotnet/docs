@@ -326,7 +326,7 @@ ORDER BY sk1, sk2, ...
 ### Set Operations  
  The set operations DbUnionAllExpression, DbExceptExpression, and DbIntersectExpression are processed by the method VisitSetOpExpression. It creates a SqlBuilder of the shape  
   
-```  
+```xml  
 <leftSqlSelectStatement> <setOp> <rightSqlSelectStatement>  
 ```  
   

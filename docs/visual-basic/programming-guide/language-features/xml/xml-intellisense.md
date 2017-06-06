@@ -69,7 +69,7 @@ XML IntelliSense
   
  For example, consider the following XSD schema.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <xs:schema attributeFormDefault="unqualified"   
            elementFormDefault="qualified"   
@@ -97,7 +97,7 @@ XML IntelliSense
   
  Valid XML for the XSD schema would resemble the following.  
   
-```  
+```xml  
 <?xml version="1.0"?>  
 <PurchaseOrders xmlns="http://SamplePurchaseOrder">  
   <PurchaseOrder PurchaseOrderNumber="12345" OrderDate="2000-1-1">  

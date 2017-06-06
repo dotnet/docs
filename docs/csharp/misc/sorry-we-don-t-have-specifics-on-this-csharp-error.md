@@ -178,7 +178,6 @@ f1_keywords:
   - "CS1912"
   - "CS0743"
   - "CS2016"
-  - "CS4009"
   - "CS0315"
   - "CS1609"
   - "CS1102"
@@ -880,6 +879,7 @@ f1_keywords:
   - "CS8139"
   - "CS8156"
   - "CS8168"
+  - "CS8172"
   - "CS8179"
 dev_langs: 
   - "CSharp"

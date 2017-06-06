@@ -38,7 +38,7 @@ This sample demonstrates how to extend the [!INCLUDE[indigo1](../../../../includ
 ### Adding Custom Sources  
  User-defined traces can be added to both client and service code. Adding trace sources to the client or service configuration files allow for these custom traces to be recorded and displayed in the [Service Trace Viewer Tool (SvcTraceViewer.exe)](../../../../docs/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe.md). The following code shows how to add a user-defined trace source named `ServerCalculatorTraceSource` to the configuration file.  
   
-```  
+```xml  
 <system.diagnostics>  
     <sources>  
         <source name="System.ServiceModel" switchValue="Warning" propagateActivity="true">  
@@ -79,7 +79,7 @@ This sample demonstrates how to extend the [!INCLUDE[indigo1](../../../../includ
 > [!NOTE]
 >  Turning off ServiceModel Activity Tracing is not the same as having the trace level, denoted by the `switchValue` property, set to off.  
   
-```  
+```xml  
 <system.diagnostics>  
     <sources>  
       <source name="System.ServiceModel" switchValue="Warning" propagateActivity="true">  

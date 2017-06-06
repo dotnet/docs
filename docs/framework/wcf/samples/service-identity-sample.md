@@ -46,7 +46,7 @@ ep.Address = epa;
   
  The identity can also be specified in configuration in the App.config file. The following example shows how to set the UPN (User Principal Name) identity for a service endpoint.  
   
-```  
+```xml  
 <endpoint address="upnidentity"  
         behaviorConfiguration=""  
         binding="wsHttpBinding"  

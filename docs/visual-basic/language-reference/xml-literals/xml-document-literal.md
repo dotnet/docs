@@ -43,7 +43,7 @@ A literal representing an <xref:System.Xml.Linq.XDocument> object.
   
 ## Syntax  
   
-```  
+```xml  
 <?xml version="1.0" [encoding="encoding"] [standalone="standalone"] ?>  
 [ piCommentList ]  
 rootElement  

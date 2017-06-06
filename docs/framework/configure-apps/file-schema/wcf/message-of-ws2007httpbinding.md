@@ -27,7 +27,7 @@ Defines settings for message-level security of the [\<ws2007HttpBinding>](../../
   
 ## Syntax  
   
-```  
+```xml  
 <ws2007HttpBinding>  
  <binding >  
   <security>  

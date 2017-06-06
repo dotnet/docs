@@ -24,7 +24,7 @@ A configuration element used to configure the <xref:System.ServiceModel.UdpBindi
   
 ## Syntax  
   
-```  
+```xml  
 <udpBinding>  
    <binding   
        closeTimeout="TimeSpan"   

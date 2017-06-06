@@ -36,7 +36,7 @@ Clears the `Listeners` collection for trace.
   
 ## Syntax  
   
-```  
+```xml  
 <clear/>  
 ```  
   
@@ -71,7 +71,7 @@ Clears the `Listeners` collection for trace.
 ## Example  
  The following example shows how to use the `<clear>` element before using the `<add>` element to add the listener `console` to the `Listeners` collection for trace.  
   
-```  
+```xml  
 <configuration>  
   <system.diagnostics>  
     <trace autoflush="false" indentsize="4">  

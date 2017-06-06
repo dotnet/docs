@@ -36,7 +36,7 @@ Enables or disables networking performance counters.
   
 ## Syntax  
   
-```  
+```xml  
 <performanceCounters  
   enabled="true|false"  
 />  
@@ -72,7 +72,7 @@ Enables or disables networking performance counters.
 ## Example  
  The following code example shows how to configure the <xref:System.Net> and related namespaces to enable networking performance counters.  
   
-```  
+```xml  
 <configuration>  
   <system.net>  
     <settings>  

@@ -95,7 +95,7 @@ public class sample
   
 ## books.xml  
   
-```  
+```xml  
 <?xml version='1.0'?>  
 <!-- This file represents a fragment of a book store inventory database. -->  
 <bookstore specialty="novel">  
@@ -128,7 +128,7 @@ public class sample
   
 ## test.xsl  
   
-```  
+```xml  
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"  
 xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">  
   
@@ -148,13 +148,13 @@ xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
   
 ## test.xml  
   
-```  
+```xml  
 <Title attr="Test">this is a test</Title>  
 ```  
   
 ## Output (out.xml)  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <out>  
   <title>Seven Years in Trenton</title>  

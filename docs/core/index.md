@@ -13,13 +13,11 @@ ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 
 # .NET Core
 
-<xref:System.IO.Log.SequenceNumber.Equals%28System.IO.Log.SequenceNumber%2CSystem.IO.Log.SequenceNumber%29?displayProperty=fullName>
+FIX: <xref:System.IO.Log.SequenceNumber.Equals%28System.IO.Log.SequenceNumber%29?displayProperty=fullName>
 
 <xref:System.IdentityModel.Services.Configuration.FederationConfiguration.CookieHandler%2A?displayProperty=fullName>
 
-<xref:System.IdentityModel.Tokens.Saml2SecurityToken.#ctor(System.IdentityModel.Tokens.Saml2Assertion)?displayProperty=fullName>
-
-<xref:System.IdentityModel.Tokens.Saml2SecurityToken.#ctor%28System.IdentityModel.Tokens.Saml2Assertion%29?displayProperty=fullName>
+FIX: <xref:System.IdentityModel.Tokens.Saml2SecurityToken.%23ctor%28System.IdentityModel.Tokens.Saml2Assertion%29?displayProperty=fullName>
 
 <xref:System.Numerics.BigInteger.Compare%2A?displayProperty=fullName>
 
@@ -60,17 +58,22 @@ ms.assetid: f2b312cb-f80c-4b0d-9101-93908f06a6fa
 <xref:System.Security.Principal.IdentityReference.Equals%2A?displayProperty=fullName>
 
 <xref:System.ServiceModel.Channels.ChannelBase.System%23ServiceModel%23IDefaultCommunicationTimeouts%23CloseTimeout%2A>
+
 <xref:System.ServiceModel.Channels.ChannelBase.System%23ServiceModel%23IDefaultCommunicationTimeouts%23OpenTimeout%2A>
+
 <xref:System.ServiceModel.Channels.ChannelBase.System%23ServiceModel%23IDefaultCommunicationTimeouts%23ReceiveTimeout%2A>
+
 <xref:System.ServiceModel.Channels.ChannelBase.System%23ServiceModel%23IDefaultCommunicationTimeouts%23SendTimeout%2A>
+
 <xref:System.ServiceModel.Channels.ChannelManagerBase.System%23ServiceModel%23IDefaultCommunicationTimeouts%23ReceiveTimeout%2A>
+
 <xref:System.ServiceModel.Channels.ChannelManagerBase.System%23ServiceModel%23IDefaultCommunicationTimeouts%23SendTimeout%2A>
 
-<xref:System.ServiceModel.Description.ClientCredentials.Windows%2A>
+FIX: <xref:System.ServiceModel.Description.ClientCredentials.Windows%2A?displayProperty=fullName>
 
 <xref:System.ServiceModel.EndpointAddress.Equals%2A?displayProperty=fullName>
 
-<xref:System.ServiceModel.IExtensionCollection%601.Find%60%601%2A>
+FIX: <xref:System.ServiceModel.IExtensionCollection%601.Find%60%601%2A?displayProperty=fullName>
 
 <xref:System.ServiceModel.MsmqBindingBase.System%23ServiceModel%23Channels%23IBindingRuntimePreferences%23ReceiveSynchronously%2A>
 

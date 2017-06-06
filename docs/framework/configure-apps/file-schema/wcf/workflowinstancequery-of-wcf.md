@@ -67,7 +67,7 @@ Represents a query that tracks workflow instance life cycle changes such as a st
 ## Example  
  The following configuration subscribes to workflow instance-level tracking records for the `Started` instance state using this query.  
   
-```  
+```xml  
 <workflowInstanceQueries>  
     <workflowInstanceQuery>  
       <states>  

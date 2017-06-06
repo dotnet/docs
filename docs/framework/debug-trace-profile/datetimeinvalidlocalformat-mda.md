@@ -67,7 +67,7 @@ Serialize(myDateTime.ToString("o"));
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <dateTimeInvalidLocalFormat />  

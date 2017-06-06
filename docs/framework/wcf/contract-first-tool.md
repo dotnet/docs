@@ -22,7 +22,7 @@ Service contracts often need to be created from existing services. In [!INCLUDE[
   
  Schema types that the contract-first tool can import include the following:  
   
-```  
+```xml  
 <xsd:complexType>  
 <xsd:simpleType>  
 ```  

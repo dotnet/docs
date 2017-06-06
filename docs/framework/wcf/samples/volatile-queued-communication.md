@@ -92,7 +92,7 @@ public static void Main()
   
  The assurances and durability or volatility of messages are also specified in the configuration.  
   
-```  
+```xml  
 <appSettings>  
   <!-- use appSetting to configure MSMQ queue name -->  
   <add key="queueName" value=".\private$\ServiceModelSamplesVolatile" />  
@@ -174,7 +174,7 @@ Stock Tick zzz9:43.3
   
 1.  If your computer is not part of a domain or does not have active directory integration installed, turn off transport security by setting the authentication mode and protection level to `None` as shown in the following sample configuration code:  
   
-    ```  
+    ```xml  
     <system.serviceModel>  
         <services>  
           <service name="Microsoft.ServiceModel.Samples.StockTickerService"  

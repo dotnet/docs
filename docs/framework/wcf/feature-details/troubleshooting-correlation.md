@@ -89,7 +89,7 @@ host.WorkflowExtensions.Add(new ConsoleTrackingParticipant());
 ## Use WCF Tracing  
  WCF tracing provides tracing of the flow of messages to and from a workflow service. This tracing information is useful when troubleshooting correlation issues, especially for content-based correlation. To enable tracing, specify the desired trace listeners in the `system.diagnostics` section of the `web.config` file if the workflow service is Web-hosted, or the `app.config` file if the workflow service is self-hosted. To include the contents of the messages in the trace file, specify `true` for `logEntireMessage` in the `messageLogging` element in the `diagnostics` section of `system.serviceModel`. In the following example, tracing information, including the content of the messages, is configured to be written to a file that is named `service.svclog`.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" ?>  
 <configuration>  
   <system.diagnostics>  

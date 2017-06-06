@@ -38,7 +38,7 @@ This sample demonstrates how to implement a custom client SAML token provider. A
   
  The service exposes two endpoints for communicating with the service, defined using the configuration file App.config. Each endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsFederationHttpBinding`, which uses Message security. One endpoint expects the client to authenticate with a SAML token that uses a symmetric proof key while the other expects the client to authenticate with a SAML token that uses an asymmetric proof key. The service also configures the service certificate using `serviceCredentials` behavior. The `serviceCredentials` behavior allows you to configure a service certificate. A service certificate is used by a client to authenticate the service and provide message protection. The following configuration references the "localhost" certificate installed during the sample setup as described in the setup instructions at the end of this topic. The `serviceCredentials` behavior also allows you to configure certificates that are trusted to sign SAML tokens. The following configuration references the 'Alice' certificate installed during the sample.  
   
-```  
+```xml  
 <system.serviceModel>  
  <services>  
   <service   

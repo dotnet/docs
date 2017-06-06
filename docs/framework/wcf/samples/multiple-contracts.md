@@ -25,7 +25,7 @@ The Multiple Contracts sample demonstrates how to implement more than one contra
   
  The service configuration has been modified to define two endpoints to expose each contract. The `ICalculator` endpoint is exposed at the base address using a `basicHttpBinding`. The `ICalculatorSession` endpoint is exposed at the baseaddress/session using a `wsHttpBinding` with the `bindingConfiguration` attribute set to `BindingWithSession`, as shown in the following sample configuration.  
   
-```  
+```xml  
 <service   
     name="Microsoft.ServiceModel.Samples.CalculatorService"  
     behaviorConfiguration="CalculatorServiceBehavior">  

@@ -56,11 +56,11 @@
   
  For more complete examples, see [Task-based Asynchronous Programming](~/docs/standard/parallel-programming/task-based-asynchronous-programming.md).  
   
- The <xref:System.Threading.Tasks.Task%601> class also provides constructors that initialize the task but that do not schedule it for execution. For performance reasons, the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> and `StartNew` methods are the preferred mechanism for creating and scheduling computational tasks, but for scenarios where task creation and scheduling must be separated, the constructors may be used, and the task's <xref:System.Threading.Tasks.Task.Start%2A> method may then be used to schedule the task for execution at a later time.  
+ The <xref:System.Threading.Tasks.Task%601> class also provides constructors that initialize the task but that do not schedule it for execution. For performance reasons, the <xref:System.Threading.Tasks.Task.Run%2A?displayProperty=fullName> and `Task.Factory.StartNew` methods are the preferred mechanisms for creating and scheduling computational tasks, but for scenarios where task creation and scheduling must be separated, the constructors may be used, and the task's <xref:System.Threading.Tasks.Task.Start%2A> method may then be used to schedule the task for execution at a later time.  
   
  Starting with desktop apps that target the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], the culture of the thread that creates and invokes a task becomes part of the thread's context. That is, regardless of the current culture of the thread on which the task executes, the current culture of the task is the culture of the calling thread. For apps that target versions of the .NET Framework prior to the [!INCLUDE[net_v46](~/includes/net-v46-md.md)], the culture of the task is the culture of the thread on which the task executes. For more information, see the "Culture and task-based asynchronous operations" section in the <xref:System.Globalization.CultureInfo> topic. Note that Store apps follow the Windows Runtime in setting and getting the default culture.  
   
- For operations that do not return a value, you use the <xref:System.Threading.Tasks.Task> class.  
+For operations that do not return a value, you use the <xref:System.Threading.Tasks.Task> class. If you're developing with C# 7, for a more lightweight task that is a value type rather than a reference type, use the <xref:System.Threading.Tasks.ValueTask?displayProperty=fullName> structure; it is supported starting with C# 7. 
   
  ]]></format>
     </remarks>

@@ -32,7 +32,7 @@ Specifies the assembly that provides the application domain manager for the defa
   
 ## Syntax  
   
-```  
+```xml  
 <appDomainManagerAssembly   
    value="assembly display name" />  
 ```  
@@ -72,7 +72,7 @@ Specifies the assembly that provides the application domain manager for the defa
 ## Example  
  The following example shows how to specify that the application domain manager for the default application domain of a process is the `MyMgr` type in the `AdMgrExample` assembly.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <appDomainManagerType value="MyMgr" />  

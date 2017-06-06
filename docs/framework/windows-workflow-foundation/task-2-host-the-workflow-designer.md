@@ -34,7 +34,7 @@ This topic describes the procedure for hosting an instance of the [!INCLUDE[wfd1
   
 7.  Click **OK** to save the changes. The following XAML is added to your MainWindow.xaml file:  
   
-    ```  
+    ```xml  
     <Grid Name="grid1">  
         <Grid.ColumnDefinitions>  
             <ColumnDefinition />  

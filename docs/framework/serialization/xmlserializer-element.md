@@ -30,7 +30,7 @@ Specifies whether an additional check of progress of the <xref:System.Xml.Serial
   
 ## Syntax  
   
-```  
+```xml  
 <xmlSerializer checkDeserializerAdvance = "true"|"false" />  
 ```  
   
@@ -61,7 +61,7 @@ Specifies whether an additional check of progress of the <xref:System.Xml.Serial
 ## Example  
  The following code example sets the **checkDeserializeAdvances** attribute to "false".  
   
-```  
+```xml  
 <configuration>  
   <system.xml.serialization>  
     <xmlSerializer checkDeserializeAdvances="false" />  

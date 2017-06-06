@@ -57,7 +57,7 @@ You can invoke the command-line compiler by typing the name of its executable fi
   
 1.  Use the Windows Search feature to find Vbc.exe on your local disk.  
   
-     The exact name of the directory where the compiler is located depends on the location of the Windows directory and the version of the [!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact_md.md)] installed. If you have more than one version of the [!INCLUDE[Compact](../../../visual-basic/reference/command-line-compiler/includes/compact_md.md)] installed, you must determine which version to use (typically the latest version).  
+     The exact name of the directory where the compiler is located depends on the location of the Windows directory and the version of the ".NET Framework" installed. If you have more than one version of the ".NET Framework" installed, you must determine which version to use (typically the latest version).  
   
 2.  From your **Start** Menu, right-click **My Computer**, and then click **Properties** from the shortcut menu.  
   

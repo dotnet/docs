@@ -27,7 +27,7 @@ In an XML Schema definition language (XSD) schema, the **unique** element specif
   
  The following example shows an XML Schema that uses the **unique** element to specify a uniqueness constraint.  
   
-```  
+```xml  
 <xs:schema id="SampleDataSet"   
             xmlns:xs="http://www.w3.org/2001/XMLSchema"   
             xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">  
@@ -80,7 +80,7 @@ TableName: Customers
   
  You can specify a unique constraint on a combination of elements or attributes in the XML Schema. The following example demonstrates how to specify that a combination of **CustomerID** and **CompanyName** values must be unique for all **Customers** in any instance, by adding another **xs:field** element in the schema.  
   
-```  
+```xml  
       <xs:unique     
          msdata:ConstraintName="SomeName"    
          name="UniqueCustIDConstr" >   

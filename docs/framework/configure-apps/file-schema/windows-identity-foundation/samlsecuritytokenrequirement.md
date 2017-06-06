@@ -26,7 +26,7 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTok
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
@@ -77,7 +77,7 @@ Provides configuration for the <xref:System.IdentityModel.Tokens.SamlSecurityTok
   
 ## Example  
   
-```  
+```xml  
 <add type="System.IdentityModel.Tokens.SamlSecurityTokenHandler, System.IdentityModel">  
     <samlSecurityTokenRequirement issuerCertificateValidationMode="PeerOrChainTrust"  
                                   issuerCertificateRevocationMode="Online"  

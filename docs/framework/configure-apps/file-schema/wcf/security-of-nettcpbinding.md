@@ -26,7 +26,7 @@ Defines the security settings for a binding.
   
 ## Syntax  
   
-```  
+```xml  
 <security mode="Message/None/Transport/TransportWithCredential">  
    <transport  
       clientCredentialType="Basic/Certificate/Digest/None/Ntlm/Windows"  

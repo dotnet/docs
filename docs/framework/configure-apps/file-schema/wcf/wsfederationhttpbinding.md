@@ -26,7 +26,7 @@ wsFederationBinding element
   
 ## Syntax  
   
-```  
+```xml  
 <wsFederationHttpBinding>  
     <binding   
         bypassProxyOnLocal="Boolean"  
@@ -163,7 +163,7 @@ wsFederationBinding element
   
 ## Example  
   
-```  
+```xml  
 <configuration>  
 <system.ServiceModel>  
 <bindings>  

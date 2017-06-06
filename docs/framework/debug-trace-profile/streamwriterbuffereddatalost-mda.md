@@ -105,7 +105,7 @@ static WriteToFile()
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <streamWriterBufferedDataLost />  

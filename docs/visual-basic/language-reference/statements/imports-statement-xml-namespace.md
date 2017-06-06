@@ -74,7 +74,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
   
  This code displays the following text:  
   
-```  
+```xml  
 <ns:outer xmlns="http://DefaultNamespace"   
           xmlns:ns="http://NewNamespace">  
   <ns:innerElement></ns:innerElement>  
@@ -90,7 +90,7 @@ Imports <xmlns:xmlNamespacePrefix = "xmlNamespaceName">
   
  This code displays the following text:  
   
-```  
+```xml  
 <ns:outer xmlns:ns="http://SomeNamespace">  
   <ns:middle xmlns:ns="http://NewNamespace">  
     <ns:inner1 />  

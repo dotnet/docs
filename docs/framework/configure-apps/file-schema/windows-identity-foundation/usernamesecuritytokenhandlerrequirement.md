@@ -26,7 +26,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.Tokens.Member
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel>  
   <identityConfiguration>  
     <securityTokenHandlers>  
@@ -62,7 +62,7 @@ Provides configuration for the <xref:System.IdentityModel.Services.Tokens.Member
   
 ## Example  
   
-```  
+```xml  
 <add type="System.IdentityModel.Services.Tokens.MembershipUserNameSecurityTokenHandler, System.IdentityModel.Services">  
     <userNameSecurityTokenHandlerRequirement membershipProviderName="AspNetSqlProvider/>  
 </add>  

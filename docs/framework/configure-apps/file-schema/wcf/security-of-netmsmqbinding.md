@@ -26,7 +26,7 @@ Defines the security settings for a MSMQ binding. It specifies whether transport
   
 ## Syntax  
   
-```  
+```xml  
 <security mode="None/Transport/Message/Both">  
    <transport msmqAuthenticationMode="None/WindowsDomain/Certificate"  
       msmqEncryptionAlgorithm="RC4Stream/AES"  

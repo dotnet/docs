@@ -29,7 +29,7 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
   
 ## Syntax  
   
-```  
+```xml  
 <binaryMessageEncoding   
       maxReadPoolSize="Integer"  
    maxSessionSize="Integer"   
@@ -67,7 +67,7 @@ Defines a binary message encoder that encodes Windows Communication Foundation (
   
 ## Example  
   
-```  
+```xml  
 <binaryMessageEncoding maxReadPoolSize="211"  
    maxWritePoolSize="2132"  
    maxSessionSize="3141" />  

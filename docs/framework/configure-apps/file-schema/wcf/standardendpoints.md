@@ -22,7 +22,7 @@ This configuration section allows you to define a collection of standard endpoin
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
     <standardEndpoints>  
     </standardEndpoints>  

@@ -37,7 +37,7 @@ Contains listeners that collect, store, and route tracing messages.
   
 ## Syntax  
   
-```  
+```xml  
 <trace autoflush="true|false"   
        indentsize="indent value"  
        useGlobalLock="true| false"/>  
@@ -84,7 +84,7 @@ Contains listeners that collect, store, and route tracing messages.
 ## Example  
  The following example shows how to use the `<trace>` element to add the listener `MyListener` to the `Listeners` collection. `MyListener` creates a file that is named `MyListener.log` and writes the output to the file. The `useGlobalLock` attribute is set to `false`, which causes the global lock not to be used if the trace listener is thread safe. The `autoflush` attribute is set to `true`, which causes the trace listener to write to the file regardless of whether the <xref:System.Diagnostics.Trace.Flush%2A?displayProperty=fullName> method is called. The `indentsize` attribute is set to 0 (zero), which causes the listener to indent zero spaces when the <xref:System.Diagnostics.Trace.Indent%2A?displayProperty=fullName> method is called.  
   
-```  
+```xml  
 <configuration>  
    <system.diagnostics>  
       <trace useGlobalLock="false" autoflush="true" indentsize="0">  

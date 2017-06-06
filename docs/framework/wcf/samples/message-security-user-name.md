@@ -34,7 +34,7 @@ This sample demonstrates how to implement an application that uses WS-Security w
   
  The service exposes a single endpoint for communicating with the service, which is defined using the configuration file Web.config. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md), which defaults to using message security. This sample sets the standard [\<wsHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) to use client username authentication. The behavior specifies that the user credentials are to be used for service authentication. The server certificate must contain the same value for the subject name as the `findValue` attribute in the [\<serviceCredentials>](../../../../docs/framework/configure-apps/file-schema/wcf/servicecredentials.md).  
   
-```  
+```xml  
 <system.serviceModel>  
   <protocolMapping>  
     <add scheme="http" binding="wsHttpBinding" />  
@@ -77,7 +77,7 @@ This sample demonstrates how to implement an application that uses WS-Security w
   
  The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract. The client binding is configured with the appropriate `securityMode` and `authenticationMode`. When running in a cross-computer scenario, the service endpoint address must be changed accordingly.  
   
-```  
+```xml  
 <system.serviceModel>  
   <client>  
     <endpoint address="http://localhost/servicemodelsamples/service.svc"   

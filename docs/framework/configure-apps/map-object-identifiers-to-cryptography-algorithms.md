@@ -29,7 +29,7 @@ manager: "markl"
 # Mapping Object Identifiers to Cryptography Algorithms
 Digital signatures ensure that data is not tampered with when it is sent from one program to another. Typically the digital signature is computed by applying a mathematical function to the hash of the data to be signed. When formatting a hash value to be signed, some digital signature algorithms append an ASN.1 Object Identifier (OID) as part of the formatting operation. The OID identifies the algorithm that was used to compute the hash. You can map algorithms to object identifiers to extend the cryptography mechanism to use custom algorithms. The following example shows how to map an object identifier to a new hash algorithm.  
   
-```  
+```xml  
 <configuration>  
    <mscorlib>  
       <cryptographySettings>  

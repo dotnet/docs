@@ -32,7 +32,7 @@ Specifies the type that serves as the application domain manager for the default
   
 ## Syntax  
   
-```  
+```xml  
 <appDomainManagerAssembly   
    value="type name" />  
 ```  
@@ -72,7 +72,7 @@ Specifies the type that serves as the application domain manager for the default
 ## Example  
  The following example shows how to specify that the application domain manager for the default application domain of a process is the `MyMgr` type in the `AdMgrExample` assembly.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <appDomainManagerType value="MyMgr" />  

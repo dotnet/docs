@@ -24,7 +24,7 @@ A configuration element that allows you to enable and disable different aspects 
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
    <diagnostics>  
        <endToEndTracing activityTracing="Boolean"  

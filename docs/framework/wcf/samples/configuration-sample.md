@@ -61,7 +61,7 @@ This sample demonstrates the use of a configuration file to make a service disco
   
  To take advantage of announcements, you will need to add an announcement endpoint. To do this, modify the configuration file as shown in the following code.  
   
-```  
+```xml  
 <serviceDiscovery>  
             <announcementEndpoints>  
               <endpoint kind="udpAnnouncementEndpoint"/>  
@@ -97,7 +97,7 @@ behaviorConfiguration="endpointBehaviorConfiguration"
   
  You can also control specific details of the discovery endpoint. This is done through the <xref:System.ServiceModel.Configuration.StandardEndpointsSection>. In this sample, the version of the protocol used is modified as well as adding a `maxResponseDelay` attribute as shown in the following code example.  
   
-```  
+```xml  
 <standardEndpoints>  
    <udpDiscoveryEndpoint>  
       <standardEndpoint name="adhocDiscoveryEndpointConfiguration" discoveryVersion="WSDiscovery11" maxResponseDelay="00:00:00.600" />    
@@ -107,7 +107,7 @@ behaviorConfiguration="endpointBehaviorConfiguration"
   
  The following is the complete configuration file used in this example:  
   
-```  
+```xml  
 <configuration>  
     <system.serviceModel>  
   
@@ -214,7 +214,7 @@ behaviorConfiguration="endpointBehaviorConfiguration"
   
  The following is the complete client configuration used in the sample.  
   
-```  
+```xml  
 <configuration>  
   <system.serviceModel>  
   

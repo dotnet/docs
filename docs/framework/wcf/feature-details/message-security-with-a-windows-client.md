@@ -47,7 +47,7 @@ This scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] cl
 ### Configuration  
  The following configuration can be used instead of the code to set up the service:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  
@@ -94,7 +94,7 @@ This scenario shows a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] cl
 ### Configuration  
  The following configuration is used to set the client properties.  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8"?>  
 <configuration>  
   <system.serviceModel>  

@@ -104,7 +104,7 @@ Console.WriteLine(navigator.SchemaInfo.SchemaElement.MinOccurs);
   
  The example takes the `books.xml` file as input.  
   
-```  
+```xml  
 <books xmlns="http://www.contoso.com/books">  
     <book>  
         <title>Title</title>  
@@ -116,7 +116,7 @@ Console.WriteLine(navigator.SchemaInfo.SchemaElement.MinOccurs);
   
  The example also takes the `books.xsd` schema as input.  
   
-```  
+```xml  
 <xs:schema xmlns="http://www.contoso.com/books"   
 attributeFormDefault="unqualified" elementFormDefault="qualified"   
 targetNamespace="http://www.contoso.com/books"   
@@ -146,7 +146,7 @@ xmlns:xs="http://www.w3.org/2001/XMLSchema">
 ## Obtain Typed Values Using ValueAs Properties  
  The typed value of a node can be retrieved by accessing the <xref:System.Xml.XPath.XPathNavigator.TypedValue%2A> property of the <xref:System.Xml.XPath.XPathNavigator>. In certain cases you may want to convert the typed value of a node to a different type. A common example is to get a numeric value from an XML node. For example, consider the following unvalidated and untyped XML document.  
   
-```  
+```xml  
 <books>  
     <book>  
         <title>Title</title>  

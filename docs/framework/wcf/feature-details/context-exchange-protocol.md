@@ -61,7 +61,7 @@ This section describes the context exchange protocol introduced in [!INCLUDE[ind
   
 -   For <xref:System.ServiceModel.Channels.ContextExchangeMechanism.ContextSoapHeader>, the following assertion is generated:  
   
-    ```  
+    ```xml  
     <IncludeContext   
     xmlns="http://schemas.microsoft.com/ws/2006/05/context"  
     protectionLevel="Sign" />  
@@ -69,7 +69,7 @@ This section describes the context exchange protocol introduced in [!INCLUDE[ind
   
 -   For <xref:System.ServiceModel.Channels.ContextExchangeMechanism.HttpCookie>, the following assertion is generated:  
   
-    ```  
+    ```xml  
     <HttpUseCookie xmlns="http://schemas.xmlsoap.org/soap/http"/>  
     ```  
   

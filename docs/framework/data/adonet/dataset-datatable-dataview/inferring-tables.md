@@ -27,7 +27,7 @@ When inferring a schema for a <xref:System.Data.DataSet> from an XML document, A
 ## Elements with Attributes  
  Elements that have attributes specified in them result in inferred tables. For example, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1 attr1="value1"/>  
   <Element1 attr1="value2">Text1</Element1>  
@@ -48,7 +48,7 @@ When inferring a schema for a <xref:System.Data.DataSet> from an XML document, A
 ## Elements with Child Elements  
  Elements that have child elements result in inferred tables. For example, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1>  
     <ChildElement1>Text1</ChildElement1>  
@@ -68,7 +68,7 @@ When inferring a schema for a <xref:System.Data.DataSet> from an XML document, A
   
  The document, or root, element result in an inferred table if it has attributes or child elements that are inferred as columns. If the document element has no attributes and no child elements that would be inferred as columns, the element is inferred as a **DataSet**. For example, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1>Text1</Element1>  
   <Element2>Text2</Element2>  
@@ -87,7 +87,7 @@ When inferring a schema for a <xref:System.Data.DataSet> from an XML document, A
   
  Alternatively, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1 attr1="value1" attr2="value2"/>  
 </DocumentElement>  
@@ -106,7 +106,7 @@ When inferring a schema for a <xref:System.Data.DataSet> from an XML document, A
 ## Repeating Elements  
  Elements that repeat result in a single inferred table. For example, consider the following XML:  
   
-```  
+```xml  
 <DocumentElement>  
   <Element1>Text1</Element1>  
   <Element1>Text2</Element1>  

@@ -22,7 +22,7 @@ manager: "wpickett"
 # Namespaces and DTDs in the DOM
 Document type definitions (DTDs) complicate namespace support. For example, the following XML contains default attributes containing colons in their names.  
   
-```  
+```xml  
 <!ATTLIST item x:id CDATA #IMPLIED>  
 ```  
   

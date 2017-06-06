@@ -129,7 +129,7 @@ workflowServiceHost.DurableInstancingOptions.InstanceStore = sqlInstanceStoreObj
   
  The `SqlWorkflowInstanceStoreBehavior`, a service behavior that allows you to conveniently change the [SQL Workflow Instance Store](../../../docs/framework/windows-workflow-foundation/sql-workflow-instance-store.md) properties through XML configuration. For WAS-hosted workflow services, use the Web.config file. The following configuration example shows how to configure the SQL Workflow Instance Store by using the `sqlWorkflowInstanceStore` behavior element in a configuration file.  
   
-```  
+```xml  
 <serviceBehaviors>  
     <behavior name="">  
         <sqlWorkflowInstanceStore   
@@ -161,7 +161,7 @@ workflowServiceHost.DurableInstancingOptions.InstanceStore = sqlInstanceStoreObj
   
 -   Adds the following behavior extension element to the Machine.config file so that you can use the <`sqlWorkflowInstanceStore`> service behavior element in the configuration file to configure persistence for your services.  
   
-    ```  
+    ```xml  
     <configuration>  
         <system.serviceModel>  
             <extensions>  

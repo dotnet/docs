@@ -39,7 +39,7 @@ Specifies a required permission for the member.
   
 ## Syntax  
   
-```  
+```xml  
 <permission cref="member">description</permission>  
 ```  
   

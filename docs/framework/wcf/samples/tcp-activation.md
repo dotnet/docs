@@ -78,7 +78,7 @@ public class CalculatorService : ICalculator
   
  The following sample shows the configuration for the service:  
   
-```  
+```xml  
 <system.serviceModel>  
   
     <services>  
@@ -116,7 +116,7 @@ public class CalculatorService : ICalculator
   
  The client's endpoint is configured as shown in the following sample code:  
   
-```  
+```xml  
 <system.serviceModel>  
     <bindings>  
         <netTcpBinding>  

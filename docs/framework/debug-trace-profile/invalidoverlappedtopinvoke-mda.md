@@ -73,7 +73,7 @@ The `invalidOverlappedToPinvoke` managed debugging assistant (MDA) is activated 
   
 ## Configuration  
   
-```  
+```xml  
 <mdaConfig>  
   <assistants>  
     <invalidOverlappedToPinvoke/>  

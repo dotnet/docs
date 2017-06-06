@@ -39,7 +39,7 @@ Indicates that text within a description is code.
   
 ## Syntax  
   
-```  
+```xml  
 <c>text</c>  
 ```  
   

@@ -32,7 +32,7 @@ The Dual Http sample demonstrates how to configure the `WSDualHttpBinding` bindi
   
  To configure a service endpoint with the `WSDualHttpBinding`, specify the binding in the endpoint configuration as shown.  
   
-```  
+```xml  
 <endpoint address=""  
          binding="wsDualHttpBinding"  
          contract="Microsoft.ServiceModel.Samples.ICalculatorDuplex" />  
@@ -40,7 +40,7 @@ The Dual Http sample demonstrates how to configure the `WSDualHttpBinding` bindi
   
  On the client, you must configure an address that the server can use to connect to the client as shown in the following sample configuration.  
   
-```  
+```xml  
 <system.serviceModel>  
   <client>  
     <endpoint address=  
@@ -95,7 +95,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
     > [!IMPORTANT]
     >  When running the client in a cross-machine configuration, be sure to replace localhost in both the `address` attribute of the [endpoint](http://msdn.microsoft.com/en-us/13aa23b7-2f08-4add-8dbf-a99f8127c017) element and the `clientBaseAddress` attribute of the [\<binding>](../../../../docs/framework/misc/binding.md) element of the [\<wsDualHttpBinding>](../../../../docs/framework/configure-apps/file-schema/wcf/wsdualhttpbinding.md) element with the name of the appropriate machine, as shown:  
   
-    ```  
+    ```xml  
     <client>  
         <endpoint name = ""  
           address=  

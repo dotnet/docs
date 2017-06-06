@@ -32,7 +32,7 @@ The application domain or application pool is currently running version 4.0 or l
   
  Next find the <`compilers`> element and change the CompilerVersion provider option to have a value of 4.0. By default, there are two <`compiler`> elements under the <`compilers`> element. You must update the CompilerVersion provider option for both as shown in the following example.  
   
-```  
+```xml  
 <system.codedom>  
       <compilers>  
         <compiler language="c#;cs;csharp" extension=".cs" warningLevel="4"  
@@ -56,7 +56,7 @@ The application domain or application pool is currently running version 4.0 or l
   
 2.  Add the `targetFramework` attribute to the <`compilation`> element as shown in the following example.  
   
-    ```  
+    ```xml  
     <compilation debug="false"  
             targetFramework="4.0">  
   
@@ -72,7 +72,7 @@ The application domain or application pool is currently running version 4.0 or l
   
 3.  Find the <`compilers`> element and change the CompilerVersion provider option to have a value of 4.0. By default, there are two <`compiler`> elements under the <`compilers`> element. You must update the CompilerVersion provider option for both as shown in the following example.  
   
-    ```  
+    ```xml  
     <system.codedom>  
           <compilers>  
             <compiler language="c#;cs;csharp" extension=".cs" warningLevel="4"  

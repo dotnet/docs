@@ -106,7 +106,7 @@ Console.WriteLine(child2)
   
  This example produces the following output:  
   
-```  
+```xml  
 <Child1></Child1>  
 <Child2 />  
 ```  
@@ -178,7 +178,7 @@ Console.WriteLine(doc.Nodes().Count())
   
  This example produces the following output:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>  
 <Root />  
 1  

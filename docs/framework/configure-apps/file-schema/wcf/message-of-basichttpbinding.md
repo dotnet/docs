@@ -27,7 +27,7 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
   
 ## Syntax  
   
-```  
+```xml  
 <message   
    algorithmSuite="Basic128/Basic192/Basic256/Basic128Rsa15/Basic256Rsa15/TripleDes/TripleDesRsa15/Basic128Sha256/Basic192Sha256/TripleDesSha256/Basic128Sha256Rsa15/Basic192Sha256Rsa15/Basic256Sha256Rsa15/TripleDesSha256Rsa15"  
       clientCredentialType="UserName/Certificate"/>  
@@ -64,7 +64,7 @@ Defines the settings for message-level security of the [\<basicHttpBinding>](../
   
  The same binding and security details are specified in the client configuration file.  
   
-```  
+```xml  
 <system.serviceModel>  
     <services>  
       <service name="Microsoft.ServiceModel.Samples.CalculatorService"  

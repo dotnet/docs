@@ -39,7 +39,7 @@ public string GetCallerIdentity()
   
  You must create a certificate and assign it by using the Web Server Certificate Wizard before building and running the sample. The endpoint definition and binding definition in the configuration file settings enable `TransportWithMessageCredential` security mode, as shown in the following sample configuration for the client.  
   
-```  
+```xml  
 <system.serviceModel>  
   <client>  
     <endpoint name=""  

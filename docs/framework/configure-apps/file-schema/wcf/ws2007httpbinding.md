@@ -24,7 +24,7 @@ Defines an interoperable binding that provides support for the correct versions 
   
 ## Syntax  
   
-```  
+```xml  
 <ws2007HttpBinding>  
     <binding   
         allowCookies="Boolean"  
@@ -103,7 +103,7 @@ textEncoding="UnicodeFffeTextEncoding/Utf16TextEncoding/Utf8TextEncoding"
   
 ## Example  
   
-```  
+```xml  
 <configuration>  
     <system.ServiceModel>  
         <bindings>  

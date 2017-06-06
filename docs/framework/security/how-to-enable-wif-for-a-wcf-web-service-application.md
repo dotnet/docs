@@ -216,7 +216,7 @@ manager: "mbaldwin"
   
 6.  Open the *App.config* file and add the following XML as the first child element under the `<system.serviceModel>` element, then save the file:  
   
-    ```  
+    ```xml  
     <behaviors>  
        <endpointBehaviors>  
          <behavior>  

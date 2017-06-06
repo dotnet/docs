@@ -32,7 +32,7 @@ Specifies whether the runtime uses legacy code access security (CAS) policy.
   
 ## Syntax  
   
-```  
+```xml  
 <NetFx40_LegacySecurityPolicy  
    enabled="true|false"/>  
 ```  
@@ -85,7 +85,7 @@ Specifies whether the runtime uses legacy code access security (CAS) policy.
 ## Example  
  The following example shows how to enable legacy CAS policy for an application.  
   
-```  
+```xml  
 <configuration>  
    <runtime>  
       <NetFx40_LegacySecurityPolicy enabled="true"/>  

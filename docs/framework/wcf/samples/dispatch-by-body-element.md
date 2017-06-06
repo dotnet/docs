@@ -152,7 +152,7 @@ public interface IDispatchedByBody
   
  The client sends three messages to the service whose body content element is named `bodyA`, `bodyB`, and `bodyX`, respectively. As can be deferred from the previous description and the service contract shown, the incoming message with the `bodyA` element is dispatched to the `OperationForBodyA()` method. Because there is no explicit dispatch target for the message with the `bodyX` body element, the message is dispatched to the `DefaultOperation()`. Each of the service operations wraps the received message body into an element specific to the method and returns it, which is done to correlate input and output messages clearly for this sample:  
   
-```  
+```xml  
 <?xml version="1.0" encoding="IBM437"?>  
 <replyBodyA xmlns="http://tempuri.org">  
    <q:bodyA xmlns:q="http://tempuri.org">test</q:bodyA>  

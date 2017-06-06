@@ -40,7 +40,7 @@ translation.priority.ht:
 # &lt;paramref&gt; (C# Programming Guide)
 ## Syntax  
   
-```  
+```xml  
 <paramref name="name"/>  
 ```  
   

@@ -60,7 +60,7 @@ system.serviceModel>
 > [!NOTE]
 >  Services hosted under Internet Information Services (IIS) or Windows Process Activation Service (WAS) use the virtual directory as their base address.  
   
-```  
+```xml  
 <protocolMapping>  
   <add scheme="http"     binding="basicHttpBinding" bindingConfiguration="MyBindingConfiguration"/>  
   <add scheme="net.tcp"  binding="netTcpBinding"/>  
@@ -75,7 +75,7 @@ system.serviceModel>
   
  Service behaviors are configured for the default endpoints by using anonymous <`behavior`> sections within <`serviceBehaviors`> sections. Any unnamed <`behavior`> elements within <`serviceBehaviors`> are used to configure service behaviors. For example, the following configuration file enables service metadata publishing for all services within the host.  
   
-```  
+```xml  
 <system.serviceModel>  
     <behaviors>  
       <serviceBehaviors>  
@@ -92,7 +92,7 @@ system.serviceModel>
   
  The following example is a configuration file equivalent to the one at the beginning of this topic that uses the simplified configuration model.  
   
-```  
+```xml  
 <system.serviceModel>  
     <behaviors>  
       <serviceBehaviors>  

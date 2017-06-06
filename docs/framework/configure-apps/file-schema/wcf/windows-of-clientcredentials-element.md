@@ -27,7 +27,7 @@ Specifies the settings for a Windows credential to be used to represent the clie
   
 ## Syntax  
   
-```  
+```xml  
 <windows   
     allowedImpersonationLevel="Identification/Impersonation/Delegation/Anonymous/None"  
         allowNtlm="Boolean"  

@@ -62,7 +62,7 @@ svcutil.exe /n:http://Microsoft.ServiceModel.Samples,Microsoft.ServiceModel.Samp
   
  By using the generated client, you can access a service endpoint by configuring the appropriate address and binding. Like the service, the client uses a configuration file (App.config) to specify the endpoint to communicate with. The client endpoint configuration consists of an absolute address for the service endpoint, the binding, and the contract, as shown in the following sample configuration.  
   
-```  
+```xml  
 <client>  
    <endpoint   
       address="http://localhost/ServiceModelSamples/service.asmx"   

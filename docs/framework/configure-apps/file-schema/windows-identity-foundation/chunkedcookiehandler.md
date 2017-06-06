@@ -25,7 +25,7 @@ Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This e
   
 ## Syntax  
   
-```  
+```xml  
 <system.identityModel.services>  
   <federationConfiguration>  
     <cookieHandler mode="Chunked||Default" >  
@@ -62,7 +62,7 @@ Configures the <xref:System.IdentityModel.Services.ChunkedCookieHandler>. This e
 ## Example  
  The following example configures a chunked cookie handler that writes cookies in chunks of 3000 bytes.  
   
-```  
+```xml  
 <cookieHandler mode="Chunked">  
     <chunkedCookieHandler chunkSize=3000/>  
 </cookieHandler>  

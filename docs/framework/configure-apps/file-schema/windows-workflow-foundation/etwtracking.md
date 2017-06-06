@@ -16,7 +16,7 @@ manager: "erikre"
 # &lt;etwTracking&gt;
 A service behavior that allows a service to utilize ETW tracking using an <xref:System.Activities.Tracking.EtwTrackingParticipant>.  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<behaviors>  
 \<serviceBehaviors>  
 \<behavior>  
@@ -24,8 +24,14 @@ A service behavior that allows a service to utilize ETW tracking using an <xref:
   
 ## Syntax  
   
-```  
-<behaviors>  <serviceBehaviors>    <behavior name=String">      <etwTracking profileName="String" />    </behavior>  </serviceBehaviors></behaviors>  
+```xml  
+<behaviors>
+  <serviceBehaviors>
+    <behavior name="String">
+      <etwTracking profileName="String" />
+    </behavior>
+  </serviceBehaviors>
+</behaviors>  
 ```  
   
 ## Attributes and Elements  
@@ -56,7 +62,7 @@ A service behavior that allows a service to utilize ETW tracking using an <xref:
   
  The Provider Id that the ETW Tracking Participant uses for writing the Tracking Records to ETW is defined in the **\<diagnostics>** section. The tracking participant has a profile associated with it to specify the tracking records it has subscribed to. This is defined by the **profileName** attribute of the **\<add>** element. Once these are defined, the Tracking Participant is added to the **\<etwTracking>** service behavior. This will add the selected Tracking Participants to the Workflow instance’s extensions, so that they begin to receive the Tracking Records.  
   
-```  
+```xml  
 <configuration>   
   <system.web>   
     <compilation targetFrameworkMoniker=".NETFramework,Version=v4.0"/>   

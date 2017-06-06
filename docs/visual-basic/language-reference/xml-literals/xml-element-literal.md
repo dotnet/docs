@@ -42,7 +42,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
 ## Syntax  
   
-```  
+```xml  
 <name [ attributeList ] />  
 -or-  
 <name [ attributeList ] > [ elementContents ] </[ name ]>  
@@ -144,7 +144,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
  The example displays the following text. Notice that the literal preserves the structure of the empty elements.  
   
-```  
+```xml  
 <outer>  
   <inner1></inner1>  
   <inner2 />  
@@ -158,7 +158,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
  This code displays the following text:  
   
-```  
+```xml  
 <book isbn="1234" author="My Author" year="1999" title="My Book" />  
 ```  
   
@@ -169,7 +169,7 @@ A literal that represents an <xref:System.Xml.Linq.XElement> object.
   
  This code displays the following text:  
   
-```  
+```xml  
 <ns:outer xmlns:ns="http://SomeNamespace">  
   <ns:middle xmlns:ns="http://NewNamespace">  
     <ns:inner1 />  

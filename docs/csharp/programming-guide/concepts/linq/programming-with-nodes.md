@@ -107,7 +107,7 @@ Console.WriteLine(child2);
   
  This example produces the following output:  
   
-```  
+```xml  
 <Child1></Child1>  
 <Child2 />  
 ```  

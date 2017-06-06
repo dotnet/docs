@@ -105,7 +105,7 @@ foreach (DataTable dataTable in dataSet.Tables)
 > [!NOTE]
 >  If the XSD schema for your <xref:System.Data.DataSet> includes a **targetNamespace**, data may not be read, and you may encounter exceptions, when calling **ReadXml** to load the <xref:System.Data.DataSet> with XML that contains elements with no qualifying namespace. To read unqualified elements in this case, set **elementFormDefault** equal to "qualified" in your XSD schema. For example:  
   
-```  
+```xml  
 <xsd:schema id="customDataSet"   
   elementFormDefault="qualified"  
   targetNamespace="http://www.tempuri.org/customDataSet.xsd"   

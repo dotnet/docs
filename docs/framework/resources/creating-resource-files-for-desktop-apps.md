@@ -134,7 +134,7 @@ greeting=Hello, {0}!
   
  For example, the following `data` tag defines a string resource named `prompt` whose value is "Enter your name:".  
   
-```  
+```xml  
 <data name="prompt" xml:space="preserve">  
   <value>Enter your name:</value>  
 </data>  
@@ -150,7 +150,7 @@ greeting=Hello, {0}!
   
  The following example shows a portion of a .resx file that includes an <xref:System.Int32> resource and a bitmap image.  
   
-```  
+```xml  
 <data name="i1" type="System.Int32, mscorlib">  
   <value>20</value>  
 </data>  

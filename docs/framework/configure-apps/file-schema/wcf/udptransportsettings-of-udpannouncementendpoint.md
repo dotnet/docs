@@ -18,15 +18,29 @@ manager: "erikre"
 # &lt;udpTransportSettings&gt; of &lt;udpAnnouncementEndpoint&gt;
 This configuration element exposes UDP transport settings for [\<udpAnnoucementEndpoint>](../../../../../docs/framework/configure-apps/file-schema/wcf/udpannoucementendpoint.md).  
   
- \<system.ServiceModel>  
+\<system.ServiceModel>  
 \<standardEndpoints>  
 \<udpAnnouncementEndpoint>  
   
 ## Syntax  
   
-```  
+```xml  
 <system.serviceModel>  
-    <standardEndpoints>       <udpAnnouncementEndpoint>           <standardEndpoint>               <updTransportSettings>                  duplicateMessageHistoryLength="Integer"                  maxBufferPoolSize="Integer"                   maxMulticastRetransmitCount="Integer"                  maxPendingMessageCount="Integer"                  maxReceivedMessageSize="Integer"                  maxUnicastRetransmitCount="Integer"                  multicastInterfaceId="String"                  socketReceiveBufferSize="Integer"                  timeToLive="Integer" />           </standardEndpoint>       </udpAnnouncementEndpoint>            </standardEndpoints>  
+  <standardEndpoints>
+    <udpAnnouncementEndpoint>
+      <standardEndpoint>
+        <updTransportSettings duplicateMessageHistoryLength="Integer" 
+                              maxBufferPoolSize="Integer" 
+                              maxMulticastRetransmitCount="Integer" 
+                              maxPendingMessageCount="Integer" 
+                              maxReceivedMessageSize="Integer" 
+                              maxUnicastRetransmitCount="Integer" 
+                              multicastInterfaceId="String" 
+                              socketReceiveBufferSize="Integer" 
+                              timeToLive="Integer" />
+      </standardEndpoint>
+    </udpAnnouncementEndpoint>
+  </standardEndpoints>  
 </system.serviceModel>  
 ```  
   

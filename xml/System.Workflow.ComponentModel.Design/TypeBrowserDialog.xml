@@ -252,7 +252,7 @@
 ## Remarks  
  If the property returns a valid value--anything other than a null reference (`Nothing` in Visual Basic)--the component is added to <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>.  
   
- This property is required because <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog> implements <xref:System.ComponentModel.ISite>. For <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>, <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite%Component%2A?displayProperty=fullName> always returns a null reference (`Nothing` in Visual Basic).  
+ This property is required because <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog> implements <xref:System.ComponentModel.ISite>. For <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>, <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Component?displayProperty=fullName> always returns a null reference (`Nothing` in Visual Basic).  
   
  ]]></format>
         </remarks>
@@ -277,9 +277,9 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- If <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Container%2A> returns a null reference (`Nothing` in Visual Basic), <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Component%2A> has not bound an <xref:System.ComponentModel.IComponent> to the <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>.  
+ If <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Container> returns a null reference (`Nothing` in Visual Basic), <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Component> has not bound an <xref:System.ComponentModel.IComponent> to the <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>.  
   
- This method is required because <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog> implements <xref:System.ComponentModel.ISite>. For <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>, <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Container%2A?displayProperty=fullName> always returns a null reference (`Nothing` in Visual Basic).  
+ This method is required because <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog> implements <xref:System.ComponentModel.ISite>. For <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog>, <xref:System.Workflow.ComponentModel.Design.TypeBrowserDialog.System#ComponentModel#ISite#Container?displayProperty=fullName> always returns a null reference (`Nothing` in Visual Basic).  
   
  ]]></format>
         </remarks>

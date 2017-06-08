@@ -1138,7 +1138,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- This property has no effect if <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode%2A> is set to <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler%2A?displayProperty=fullName>.  
+ This property has no effect if the <xref:System.Web.UI.DataVisualization.Charting.Chart.ImageStorageMode%2A> property is set to <xref:System.Web.UI.DataVisualization.Charting.ImageStorageMode.UseHttpHandler?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>
@@ -1479,7 +1479,7 @@ These data point properties include:
 ## Remarks  
  The data points in a series can be bound to a data source at any time using the <xref:System.Web.UI.DataVisualization.Charting.Chart.DataSource%2A> property.  
   
- To force the chart to bind to the data source, call the <xref:System.Web.UI.DataVisualization.Charting.Chart.DataBind%2A> method.  
+ To force the chart to bind to the data source, call the <xref:System.Web.UI.DataVisualization.Charting.Chart.DataBindTable%2A> method.  
   
  The following is a list of objects that you can use as the data source:  
   

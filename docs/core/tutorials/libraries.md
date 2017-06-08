@@ -231,7 +231,7 @@ Each of these contain the `.dll` files for each target.
 
 ## How to test libraries on .NET Core
 
-It's important to be able to test across platforms.  You can use either [xUnit](http://xunit.github.io/) or MSTest out of the box.  Both either are perfectly suitable for unit testing your library on .NET Core.  How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution).  The following example assumes that test and source directories live in the same top-level directory.
+It's important to be able to test across platforms.  You can use either [xUnit](http://xunit.github.io/) or MSTest out of the box.  Both are perfectly suitable for unit testing your library on .NET Core.  How you set up your solution with test projects will depend on the [structure of your solution](#structuring-a-solution).  The following example assumes that the test and source directories live in the same top-level directory.
 
 > [!INFO] This uses some [.NET CLI commands](../tools/index.md).  See [dotnet new](../tools/dotnet-new.md) and [dotnet sln](../tools/dotnet-sln.md) for more information.
 

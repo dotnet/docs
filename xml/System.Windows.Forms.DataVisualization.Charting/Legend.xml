@@ -39,7 +39,7 @@
   
 -   Be sized and positioned anywhere within the chart image.  
   
- Legend items are represented by the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem%2A> object, and are either default or custom items. Custom items are not associated with data, and can be added, deleted and modified using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems%2A> property.  
+ Legend items are represented by the <xref:System.Windows.Forms.DataVisualization.Charting.LegendItem> object, and are either default or custom items. Custom items are not associated with data, and can be added, deleted and modified using the <xref:System.Windows.Forms.DataVisualization.Charting.Legend.CustomItems%2A> property.  
   
  Default items are by default automatically added to the legend, and are the names of the plotted data points for doughnut and pie charts.  
   

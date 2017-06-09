@@ -494,7 +494,7 @@
   
 ## Remarks  
  In the out-of-box implementation of the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>,   
- <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System%23Workflow%23Runtime%23IPendingWork%23Complete> is a no-op. If you inherit from and extend the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> class, you may use <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System%23Workflow%23Runtime%23IPendingWork%23Complete> to perform any actions required on `items` dictated by your implementation.  
+ <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System%23Workflow%23Runtime%23IPendingWork%23Complete%2A> is a no-op. If you inherit from and extend the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> class, you may use <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System%23Workflow%23Runtime%23IPendingWork%23Complete%2A> to perform any actions required on `items` dictated by your implementation.  
   
  ]]></format>
         </remarks>

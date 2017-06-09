@@ -494,7 +494,7 @@
   
 ## Remarks  
  In the out-of-box implementation of the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService>,   
- <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System#Workflow#Runtime#IPendingWork#Complete%2A> is a no-op. If you inherit from and extend the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> class, you may use <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System#Workflow#Runtime#IPendingWork#Complete%2A> to perform any actions required on `items` dictated by your implementation.  
+ <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System%23Workflow%23Runtime%23IPendingWork%23Complete> is a no-op. If you inherit from and extend the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> class, you may use <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System%23Workflow%23Runtime%23IPendingWork%23Complete> to perform any actions required on `items` dictated by your implementation.  
   
  ]]></format>
         </remarks>
@@ -524,7 +524,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System#Workflow#Runtime#IPendingWork#MustCommit(System.Collections.ICollection) always returns `true`, which instructs the workflow run-time engine to invoke <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System#Workflow#Runtime#IPendingWork#MustCommit(System.Collections.ICollection)> on the batch.  
+ <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System%23Workflow%23Runtime%23IPendingWork%23MustCommit(System.Collections.ICollection) always returns `true`, which instructs the workflow run-time engine to invoke <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService.System%23Workflow%23Runtime%23IPendingWork%23MustCommit(System.Collections.ICollection)> on the batch.  
   
  ]]></format>
         </remarks>

@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="ExportDescriptorProvider"/> class.</summary>
+        <summary>Creates a new instance of the <see cref="T:ExportDescriptorProvider"/> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -72,7 +72,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- A provider will only be queried once for each unique export key. The descriptor accessor can only be queried immediately if the descriptor being promised is an adapter, such as <see cref="Lazy{T}"/>; otherwise, dependencies should only be queried within execution of the function provided to the <see cref="T:ExportDescriptorPromise"/>. The actual descriptors provided by this method, must not close over or reference any aspect of the dependency/promise structure, as this would prevent the structure from being garbage collected.  
+ A provider will only be queried once for each unique export key. The descriptor accessor can only be queried immediately if the descriptor being promised is an adapter, such as <see cref="Lazy{T}"/>; otherwise, dependencies should only be queried within execution of the function provided to the <see cref="T:System.Composition.Hosting.Core.ExportDescriptorPromise"/>. The actual descriptors provided by this method, must not close over or reference any aspect of the dependency/promise structure, as this would prevent the structure from being garbage collected.  
   
  ]]></format>
         </remarks>

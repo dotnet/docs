@@ -31,7 +31,7 @@
       </Parameters>
       <Docs>
         <param name="contractType">The contract type.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CompositionContract"> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CompositionContract"/> class.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -52,7 +52,7 @@
       <Docs>
         <param name="contractType">The contract type.</param>
         <param name="contractName">The contract name.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CompositionContract"> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CompositionContract"/> class.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -75,7 +75,7 @@
         <param name="contractType">The contract type.</param>
         <param name="contractName">The contract name.</param>
         <param name="metadataConstraints">The metadata constraints for this contract.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.CompositionContract"> class.</summary>
+        <summary>Initializes a new instance of the <see cref="T:System.CompositionContract"/> class.</summary>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -158,7 +158,7 @@
       </Parameters>
       <Docs>
         <param name="obj">The object to compare with this object.</param>
-        <summary>Determines whether the specified object is equal to this instance of <see cref="T:System.CompositionContract">.</summary>
+        <summary>Determines whether the specified object is equal to this instance of <see cref="T:System.CompositionContract"/>.</summary>
         <returns><see langword="true" /> if the specified object is equal to the current object; otherwise, <see langword="false" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -186,7 +186,7 @@
       <Parameters />
       <Docs>
         <summary>Serves as the default hash function.</summary>
-        <returns>A hash code for the current instance of <see cref="T:System.CompositionContract">.</returns>
+        <returns>A hash code for the current instance of <see cref="T:System.CompositionContract"/>.</returns>
         <remarks></remarks>
       </Docs>
     </Member>
@@ -204,7 +204,7 @@
         <ReturnType>System.Collections.Generic.IEnumerable&lt;System.Collections.Generic.KeyValuePair&lt;System.String,System.Object&gt;&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the metadata constraints for this instance of <see cref="T:System.CompositionContract">.</summary>
+        <summary>Gets the metadata constraints for this instance of <see cref="T:System.CompositionContract"/>.</summary>
         <value>The metadata constraints.</value>
         <remarks></remarks>
       </Docs>
@@ -224,7 +224,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current instance of <see cref="T:System.CompositionContract">.</summary>
+        <summary>Returns a string that represents the current instance of <see cref="T:System.CompositionContract"/>.</summary>
         <returns>A string that represents the current object.</returns>
         <remarks></remarks>
       </Docs>
@@ -251,11 +251,11 @@
         <Parameter Name="remainingContract" Type="System.Composition.Hosting.Core.CompositionContract&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <typeparam name="T">The type of the value of the constrained metadata item that will be returned in <param name="constraintValue">.</typeparam>
+        <typeparam name="T">The type of the value of the constrained metadata item that will be returned in <paramref name="constraintValue"/>.</typeparam>
         <param name="constraintName">The name of the constrained metadata item.</param>
-        <param name="constraintValue">When this method returns, contains a value of the type specified by <typeparam name="T"> that is the constraint value for the metadata item. This parameter is treated as uninitialized.</param>
-        <param name="remainingContract">When this method returns, contains a <see cref="T:System.Composition.Hosting.Core.CompositionContract"/> object that holds the remainder of the contract excluding the value returned in <param name="constraintValue">. This parameter is treated as uninitialized.</param>
-        <summary>Tries to extract the constraint value for the metadata item specified by <param name="constraintName">.</summary>
+        <param name="constraintValue">When this method returns, contains a value of the type specified by <typeparamref name="T"/> that is the constraint value for the metadata item. This parameter is treated as uninitialized.</param>
+        <param name="remainingContract">When this method returns, contains a <see cref="T:System.Composition.Hosting.Core.CompositionContract"/> object that holds the remainder of the contract excluding the value returned in <paramref name="constraintValue"/>. This parameter is treated as uninitialized.</param>
+        <summary>Tries to extract the constraint value for the metadata item specified by <paramref name="constraintName"/>.</summary>
         <returns><see langword="true" /> if the constrained metadata item was unwrapped and the value extracted; otherwise, <see langword="false" />.</returns>
         <remarks></remarks>
       </Docs>

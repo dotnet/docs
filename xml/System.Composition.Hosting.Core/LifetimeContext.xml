@@ -143,7 +143,7 @@ A bound part instance is always protected by locking <see langword="this" />, an
         <param name="sharingId">The identifier of the part instance to search for.</param>
         <param name="operation">The operation in which a new part instance is activated, if necessary.</param>
         <param name="creator">The activator of a new part instance, if necessary.</param>
-        <summary>Retrieves an existing part instance with the specified <param name="sharingId"> or, if the part instance can not be found, creates and shares a new part instance using the specified <paramref name="creator"/> within the specified <paramref name="operation"/>.</summary>
+        <summary>Retrieves an existing part instance with the specified <param name="sharingId"/> or, if the part instance can not be found, creates and shares a new part instance using the specified <paramref name="creator"/> within the specified <paramref name="operation"/>.</summary>
         <returns>The part instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -12,7 +12,7 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents an accessor that allows <see cref="T:ExportDescriptorProvider"/> objects to locate dependencies.</summary>
+    <summary>Represents an accessor that allows <see cref="T:System.Composition.Hosting.Core.ExportDescriptorProvider"/> objects to locate dependencies.</summary>
     <remarks></remarks>
   </Docs>
   <Members>
@@ -28,7 +28,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="DependencyAccessor"/> class.</summary>
+        <summary>Creates a new instance of the <see cref="T:DependencyAccessor"/> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -57,7 +57,7 @@
       </Parameters>
       <Docs>
         <param name="exportKey">The export key that the definitions must supply.</param>
-        <summary>Retrieves all definitions for the specified export key (a <see cref="CompositionContract"/>).</summary>
+        <summary>Retrieves all definitions for the specified export key (a <see cref="T:System.Composition.Hosting.Core.CompositionContract"/>).</summary>
         <returns>The available definitions that match the export key.</returns>
         <remarks></remarks>
       </Docs>

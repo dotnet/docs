@@ -35,7 +35,7 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Creates a new instance of the <see cref="ExportDescriptor"/> class.</summary>
+        <summary>Creates a new instance of the <see cref="T:ExportDescriptor"/> class.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -85,7 +85,7 @@
       <Docs>
         <param name="activator">The activator used to retrieve instances of the export.</param>
         <param name="metadata">The metadata associated with the export.</param>
-        <summary>Constructs an <see cref="ExportDescriptor"/>.</summary>
+        <summary>Constructs an <see cref="T:ExportDescriptor"/>.</summary>
         <returns>The export descriptor.</returns>
         <remarks></remarks>
       </Docs>
@@ -105,7 +105,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets the metadata associated with the export.</summary>
-        <value>The export metadata./value>
+        <value>The export metadata.</value>
         <remarks></remarks>
       </Docs>
     </Member>

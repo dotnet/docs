@@ -1,5 +1,5 @@
 ---
-title: Front Matter | Microsoft Docs 
+title: .NET Microservices. Architecture for Containerized .NET Applications | Microsoft Docs 
 description: .NET Microservices Architecture for Containerized .NET Applications | Front Matter
 keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
@@ -11,7 +11,7 @@ ms.technology: dotnet-docker
 
 ![](./media/cover.png)
 
-# EDITION v1.0
+# .NET Microservices. Architecture for Containerized .NET Applications
 
 DOWNLOAD available at: <https://aka.ms/microservicesebook>
 

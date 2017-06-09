@@ -78,7 +78,7 @@ Tuples are both simpler and more flexible data containers than `class` and
 ## Named and unnamed tuples
 
 The `ValueTuple` struct has fields named `Item1`, `Item2`, `Item3` and so on,
-similer to the properties defined in the existing `Tuple` types.
+similar to the properties defined in the existing `Tuple` types.
 These names are the only names you can use for *unnamed tuples*. When you
 do not provide any alternative field names to a tuple, you've created an
 unnamed tuple:
@@ -184,7 +184,7 @@ and the sum of the each value squared:
 
 [!code-csharp[SumOfSquaresFormula](../../samples/snippets/csharp/tuples/tuples/statistics.cs#06_SumOfSquaresFormula "Compute Standard Deviation using the sum of squares")]
 
-Ths version enumerates the sequence exactly once. But, it's not very
+This version enumerates the sequence exactly once. But, it's not very
 reusable code. As you keep working, you'll find that many different
 statistical computations use the number of items in the sequence,
 the sum of the sequence, and the sum 
@@ -275,7 +275,7 @@ work with the results.
 
 ## Deconstruction
 
-You can unpackage all the items in a tuple by *deconstructng* the tuple
+You can unpackage all the items in a tuple by *deconstructing* the tuple
 returned by a method. There are two different approaches to deconstructing
 tuples.  First, you can explicitly declare the type of each field inside
 parentheses to create discrete variables for each of the fields in the tuple:
@@ -329,7 +329,7 @@ the `FirstName`, the `LastName` and the `GPA`:
 A `Student` object now has two accessible `Deconstruct` methods: the extension method
 declared for `Student` types, and the member of the `Person` type. Both are in scope,
 and that enables a `Student` to be deconstructed into either two variables or three.
-If you assign a student to three variabless, the first name, last name, and GPA are
+If you assign a student to three variables, the first name, last name, and GPA are
 all returned. If you assign a student to two variables, only the first name and 
 the last name are returned.
 
@@ -340,7 +340,7 @@ class or a class hierarchy. Multiple `Deconstruct` methods that have the
 same number of `out` parameters can quickly cause ambiguities. Callers may
 not be able to easily call the desired `Deconstruct` method.
 
-In this example, there is minimal chance for an ambiguious call because the 
+In this example, there is minimal chance for an ambiguous call because the 
 `Deconstruct` method for `Person` has two output parameters, and the `Deconstruct`
 method for `Student` has three.
 

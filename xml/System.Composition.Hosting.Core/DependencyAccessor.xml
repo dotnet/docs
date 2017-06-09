@@ -12,8 +12,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>To be added.</summary>
-    <remarks>To be added.</remarks>
+    <summary>Represents an accessor that allows <see cref="T:ExportDescriptorProvider"/> objects to locate dependencies.</summary>
+    <remarks></remarks>
   </Docs>
   <Members>
     <Member MemberName=".ctor">
@@ -28,8 +28,15 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <remarks>To be added.</remarks>
+        <summary>Creates a new instance of the <see cref="DependencyAccessor"/> class.</summary>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ This is a protected constructor that can only be called from derived classes.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetPromises">
@@ -49,10 +56,10 @@
         <Parameter Name="exportKey" Type="System.Composition.Hosting.Core.CompositionContract" />
       </Parameters>
       <Docs>
-        <param name="exportKey">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="exportKey">The export key that the definitions must supply.</param>
+        <summary>Retrieves all definitions for the specified export key (a <see cref="CompositionContract"/>).</summary>
+        <returns>The available definitions that match the export key.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveDependencies">
@@ -74,12 +81,12 @@
         <Parameter Name="isPrerequisite" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="site">To be added.</param>
-        <param name="contract">To be added.</param>
-        <param name="isPrerequisite">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="site">A tag describing the dependency site.</param>
+        <param name="contract">The contract required by the site.</param>
+        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before corresponding exports can be retrieved; otherwise, <see langword="false" />.</param>
+        <summary>Resolves dependencies on all implementations of a contract.</summary>
+        <returns>Dependencies for all implementations of the contact.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="ResolveRequiredDependency">
@@ -101,12 +108,12 @@
         <Parameter Name="isPrerequisite" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="site">To be added.</param>
-        <param name="contract">To be added.</param>
-        <param name="isPrerequisite">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="site">A tag describing the dependency site.</param>
+        <param name="contract">The contract required by the site.</param>
+        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before corresponding exports can be retrieved; otherwise, <see langword="false" />.</param>
+        <summary>Resolves a required dependency on exactly one implementation of a contract.</summary>
+        <returns>The dependency.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
     <Member MemberName="TryResolveOptionalDependency">
@@ -129,13 +136,13 @@
         <Parameter Name="dependency" Type="System.Composition.Hosting.Core.CompositionDependency&amp;" RefType="out" />
       </Parameters>
       <Docs>
-        <param name="site">To be added.</param>
-        <param name="contract">To be added.</param>
-        <param name="isPrerequisite">To be added.</param>
-        <param name="dependency">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <param name="site">A tag describing the dependency site.</param>
+        <param name="contract">The contract required by the site.</param>
+        <param name="isPrerequisite"><see langword="true" /> to indicate that the dependency must be satisfied before corresponding exports can be retrieved; otherwise, <see langword="false" />.</param>
+        <param name="dependency">The dependency, or <see langword="null" />.</param>
+        <summary>Resolves an optional dependency on exactly one implementation of a contract.</summary>
+        <returns><see langword="true" /> if the dependency could be resolved; otherwise, <see langword="false"/>.</returns>
+        <remarks></remarks>
       </Docs>
     </Member>
   </Members>

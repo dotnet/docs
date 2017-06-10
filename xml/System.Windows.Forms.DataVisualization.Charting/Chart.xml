@@ -1290,7 +1290,14 @@
   
  Other data point properties besides X and Y-values can be bound. The format is: PointProperty=Field[{Format}] [,PointProperty= Field[{Format}]]. For example:"Tooltip=Price{C1},Href=WebSiteName".  
   
- A list of these data point properties is as follows: <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.ToolTip%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Url%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Label%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.CustomProperties%2A>, which are the names of the custom properties.  
+These data point properties are: 
+
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.ToolTip%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Label%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A?displayProperty=fullName> 
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.CustomProperties%2A?displayProperty=fullName>, which are the names of the custom properties.  
   
  ]]></format>
         </remarks>
@@ -1336,7 +1343,14 @@
   
  Other data point properties besides X and Y-values can be bound. The format is: PointProperty=Field[{Format}] [,PointProperty= Field[{Format}]]. For example:"Tooltip=Price{C1},Href=WebSiteName".  
   
- A list of these data point properties is as follows: <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.ToolTip%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Url%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Label%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A>, <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip%2A> and <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.CustomProperties%2A>, which are the names of the custom properties.  
+These data point properties are: 
+
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.AxisLabel%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.ToolTip%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.Label%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendText%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.LegendToolTip%2A?displayProperty=fullName>
+- <xref:System.Windows.Forms.DataVisualization.Charting.DataPointCustomProperties.CustomProperties%2A>, which are the names of the custom properties  
   
  ]]></format>
         </remarks>

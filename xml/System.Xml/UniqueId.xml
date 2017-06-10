@@ -417,7 +417,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Xml.UniqueId" />s are equal, or are both <see langword="null" />; <see langword="false" /> if they are not equal, or if only one of them is <see langword="null" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.UniqueId.Equals%28System.Xml.UniqueId%2CSystem.Xml.UniqueId%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.UniqueId.Equals%2A?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -454,7 +454,7 @@
         <returns>
           <see langword="true" /> if the overridden equality operator returns <see langword="false" />; otherwise <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Xml.UniqueId.Compare%28System.Xml.UniqueId%2CSystem.Xml.UniqueId%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Xml.UniqueId.Equals%2A>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -579,7 +579,7 @@
           <paramref name="buffer" /> is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">
           <paramref name="buffer" /> and <paramref name="offset" /> provide less than 16 valid bytes.</exception>
-      </Docs>
+     </Docs>
     </Member>
     <Member MemberName="TryGetGuid">
       <MemberSignature Language="C#" Value="public bool TryGetGuid (byte[] buffer, int offset);" />

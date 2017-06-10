@@ -24,7 +24,7 @@
 > [!NOTE]
 >  You can automatically populate the entire label row of an axis with custom <xref:System.DateTime> labels using any <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Add%2A> method definition that includes a `DateTimeIntervalType` argument.  
   
- The <xref:System.Windows.Forms.DataVisualization.Charting.CustomLabelsCollection.Count%2A> property indicates the total number of items in the collection, and is commonly used to find the upper bound of the collection.  
+ The <xref:System.Collections.ObjectModel.Collection%601.Count%2A> property indicates the total number of items in the collection and is commonly used to find the upper bound of the collection.  
   
  ]]></format>
     </remarks>

@@ -339,7 +339,7 @@ This will add the three projects above and a solution file which links them toge
 The best way to reference a project is to use the .NET CLI to add a project reference.  From the **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** project directories, you can run the following command:
 
 ```console
-$ dotnet add reference ../AwesomeLibrary.Core.csproj
+$ dotnet add reference ../AwesomeLibrary.Core/AwesomeLibrary.Core.csproj
 ```
 
 The project files for both **AwesomeLibrary.CSharp** and **AwesomeLibrary.FSharp** will now reference **AwesomeLibrary.Core** as a `ProjectReference` target.  You can verify this by inspecting the project files and seeing the following in them:

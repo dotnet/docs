@@ -25,7 +25,7 @@
 > [!NOTE]
 >  [!INCLUDE[DeprecatedContent](~/includes/deprecatedcontent-md.md)]  
   
- The <xref:System.Workflow.Runtime.WorkflowOwnershipException> is used by persistence services which support the capability for multiple applications to access the same database. In such an environment, an instance of the workflow runtime may try to load a workflow that is already loaded by another instance of the workflow runtime engine. For example, the <xref:System.Workflow.Runtime.Hosting.SQLWorkflowPersistenceService> class throws the <xref:System.Workflow.Runtime.WorkflowOwnershipException> when this situation occurs.  
+ The <xref:System.Workflow.Runtime.WorkflowOwnershipException> is used by persistence services which support the capability for multiple applications to access the same database. In such an environment, an instance of the workflow runtime may try to load a workflow that is already loaded by another instance of the workflow runtime engine. For example, the <xref:System.Workflow.Runtime.Hosting.SqlWorkflowPersistenceService> class throws the <xref:System.Workflow.Runtime.WorkflowOwnershipException> when this situation occurs.  
   
  If you implement a persistence service that throws the <xref:System.Workflow.Runtime.WorkflowOwnershipException> you should provide the <xref:System.Guid> of the workflow instance for which the exception occurs by using an appropriate constructor for the class or setting the <xref:System.Workflow.Runtime.WorkflowOwnershipException.InstanceId%2A> property before you throw the exception.  
   

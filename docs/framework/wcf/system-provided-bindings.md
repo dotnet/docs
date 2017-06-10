@@ -69,7 +69,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 |<xref:System.ServiceModel.WSDualHttpBinding>|WS|(Message), None|(Reliable Session), Security Session|(None), Yes|Yes|(Text), MTOM|No|  
 |<xref:System.ServiceModel.WSFederationHttpBinding>|WS-Federation|(Message), Mixed, None|(None), Reliable Session, Security Session|(None), Yes|No|(Text), MTOM|No|  
 |<xref:System.ServiceModel.NetHttpBinding>|.NET|(None), Transport, Message, TransportWithMessageCredential, TransportCredentialOnly|See note below|None|See note below|(Binary), Text,MTOM|Yes (buffered)|  
-|T:System.ServiceModel.NetHttpsBinding|.NET|(Transport), TransportWithMessageCredential|See note below|None|See note below|(Binary), Text,MTOM|Yes (buffered)|  
+|<xref:System.ServiceModel.NetHttpsBinding>|.NET|(Transport), TransportWithMessageCredential|See note below|None|See note below|(Binary), Text,MTOM|Yes (buffered)|  
 |<xref:System.ServiceModel.NetTcpBinding>|.NET|(Transport), Message, None, Mixed|(Transport), Reliable Session, Security Session|(None), Yes|Yes|Binary|Yes<br /><br /> (buffered)|  
 |<xref:System.ServiceModel.NetNamedPipeBinding>|.NET|(Transport), None|None, (Transport)|(None), Yes|Yes|Binary|Yes<br /><br /> (buffered)|  
 |<xref:System.ServiceModel.NetMsmqBinding>|.NET|Message, (Transport), None|(None), Transport|None, (Yes)|No|Binary|No|  
@@ -78,7 +78,7 @@ Bindings specify the communication mechanism to use when talking to an endpoint 
 |<xref:System.ServiceModel.BasicHttpContextBinding>|Basic Profile 1.1|(None), Transport, Message, Mixed|(None)|(None)|n/a|Text, (MTOM)|Yes<br /><br /> (buffered)|  
 |<xref:System.ServiceModel.NetTcpContextBinding>|.NET|(Transport), Message, None, Mixed|(Transport), Reliable Session, Security Session|(None), Yes|Yes|Binary|Yes<br /><br /> (buffered)|  
 |<xref:System.ServiceModel.WSHttpContextBinding>|WS|Transport, (Message), Mixed|(None), Reliable Session, Security Session|(None), Yes|n/a|Text, (MTOM)|No|  
-|<xref:System.ServiceModel.Channels.UdpBinding>|.NET **Note:**  Interoperability can be achieved by implementing the standard SOAP-over-UDP spec which this binding implements.|(None)|(None)|(None)|n/a|(Text)|No|  
+|<xref:System.ServiceModel.UdpBinding>|.NET **Note:**  Interoperability can be achieved by implementing the standard SOAP-over-UDP spec which this binding implements.|(None)|(None)|(None)|n/a|(Text)|No|  
   
 > [!IMPORTANT]
 >  <xref:System.ServiceModel.NetHttpBinding> is a binding designed for consuming HTTP or WebSocket services and uses binary encoding by default. <xref:System.ServiceModel.NetHttpBinding> will detect whether it is used with a request-reply contract or duplex contract and change its behavior to match - it will use HTTP for request-reply and WebSockets for duplex. This behavior can be overridden using the <!--zz <xref:System.ServiceModel.NetHttpBinding.WebSocketTransportUsage%2A>--> `System.ServiceModel.NetHttpBinding.WebSocketTransportUsage` binding setting:Allowed - This is the default value and behaves as described above.NotAllowed - This prevents WebSockets from being used. Attempting to use a duplex contract with this setting will result in an exception.Required - This forces WebSockets to be used even for request-reply contracts. NetHttpBinding supports reliable sessions in both HTTP mode and WebSocket mode. In WebSocket mode sessions are provided by the transport.  

@@ -337,7 +337,7 @@
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> to create.</param>
         <param name="arguments">An <see cref="T:System.Collections.ICollection" /> that contains the arguments for <c>type</c>.</param>
-        <param name="name">The name of the object. This name can be used to access the object later using <see cref="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetInstance(System.String)" />. If a null reference (<see langword="Nothing" /> in Visual Basic) is passed, the object is still created but cannot be accessed by name.</param>
+        <param name="name">The name of the object. This name can be used to access the object later using <see cref="M:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#GetInstance(System.String)" />. If a null reference (<see langword="Nothing" /> in Visual Basic) is passed, the object is still created but cannot be accessed by name.</param>
         <param name="addToContainer">
           <see langword="true" /> to add the object to the design container; otherwise, <see langword="false" />.</param>
         <summary>Creates an instance of the specified type and adds it to a collection of named instances.</summary>
@@ -375,7 +375,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- `name` must be set through a prior call to <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System.ComponentModel.Design.Serialization.IDesignerSerializationManager.CreateInstance%2A>.  
+ `name` must be set through a prior call to <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>
@@ -452,7 +452,7 @@
           <format type="text/markdown"><![CDATA[  
   
 ## Remarks  
- <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName%2A> is useful when you need to create and then name an instance of an object without using <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System.ComponentModel.Design.Serialization.IDesignerSerializationManager.CreateInstance%2A>.  
+ <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23SetName(System.Object,System.String)> is useful when you need to create and then name an instance of an object without using <xref:System.Workflow.ComponentModel.Serialization.WorkflowMarkupSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)?displayProperty=fullName>.  
   
  ]]></format>
         </remarks>

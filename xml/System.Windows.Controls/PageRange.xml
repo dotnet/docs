@@ -164,7 +164,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Windows.Controls.PageRange" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Controls.PageRange.Equals%28System.Windows.Controls.PageRange%2CSystem.Windows.Controls.PageRange%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Controls.PageRange.Equals*?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>
@@ -191,7 +191,7 @@
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Windows.Controls.PageRange" /> objects are *not* equal; otherwise, <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[The equivalent method for this operator is <xref:System.Windows.Controls.PageRange.Compare%28System.Windows.Controls.PageRange%2CSystem.Windows.Controls.PageRange%29?displayProperty=fullName>]]></format>
+          <format type="text/markdown"><![CDATA[The equivalent method for this operator is the negation of <xref:System.Windows.Controls.PageRange.Equals%2A?displayProperty=fullName>]]></format>
         </remarks>
       </Docs>
     </Member>

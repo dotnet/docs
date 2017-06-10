@@ -2,6 +2,7 @@
 layout: HubPage
 hide_bc: true
 title: .NET Documentation
+description: Learn how to use .NET to create a variety of apps using the language, platforms and tools of your choice.
 ---
 <div id="main" class="v2">
     <div class="container">

@@ -30,10 +30,10 @@ You can see how the HealthChecks library is used in the eShopOnContainers sample
 
 In the future, you will be able to install the HealthChecks library as a NuGet package. But as of this writing, you need to download and compile the code as part of your solution. Clone the code available at https://github.com/aspnet/HealthChecks and copy the following folders to your solution.
 
-> src/common
-> src/Microsoft.AspNetCore.HealthChecks
-> src/Microsoft.Extensions.HealthChecks
-> src/Microsoft.Extensions.HealthChecks.SqlServer
+  - src/common
+  - src/Microsoft.AspNetCore.HealthChecks
+  - src/Microsoft.Extensions.HealthChecks
+  - src/Microsoft.Extensions.HealthChecks.SqlServer
 
 You could also use additional checks like the ones for Azure (Microsoft.Extensions.HealthChecks.AzureStorage), but since this version of eShopOnContainers does not have any dependency on Azure, you do not need it. You do not need the ASP.NET health checks, because eShopOnContainers is based on ASP.NET Core.
 

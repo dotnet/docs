@@ -26,7 +26,7 @@ Be aware that whenever you run a library or process based on the full .NET Frame
 
 ## Using.NET technologies not available for .NET Core 
 
-Some .NET Framework technologies are not available in the current version of .NET Core (version 1.1 as of this writing). Some of them will be available in later .NET Core releases (.NET Core 2), but others do not apply to the new application patterns targeted by .NET Core and might never be available.
+Some .NET Framework technologies are not available in the current version of .NET Core (version 1.1 as of this writing). Some of them will be available in later .NET Core releases (.NET Core 2.0), but others do not apply to the new application patterns targeted by .NET Core and might never be available.
 
 The following list shows most of the technologies that are not available in .NET Core 1.1:
 

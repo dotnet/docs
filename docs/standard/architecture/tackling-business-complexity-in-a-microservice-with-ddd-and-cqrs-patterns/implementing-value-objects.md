@@ -89,7 +89,7 @@ public abstract class ValueObject
 
 You can use this class when implementing your actual value object, as with the Address value object shown in the following example:
 
-```
+```csharp
 public class Address : ValueObject
 {
     public String Street { get; private set; }

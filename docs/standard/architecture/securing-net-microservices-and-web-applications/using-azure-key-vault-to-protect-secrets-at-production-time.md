@@ -14,19 +14,20 @@ Secrets stored as environment variables or stored by the Secret Manager tool are
 
 The Microsoft.Extensions.Configuration.AzureKeyVault package allows an ASP.NET Core application to read configuration information from Azure Key Vault. To start using secrets from an Azure Key Vault, you follow these steps:
 
-1.  Register your application as an Azure AD application. (Access to key vaults is managed by Azure AD.) This can be done through the Azure management portal.
+First, register your application as an Azure AD application. (Access to key vaults is managed by Azure AD.) This can be done through the Azure management portal.
 
 Alternatively, if you want your application to authenticate using a certificate instead of a password or client secret, you can use the [New-AzureRmADApplication](https://docs.microsoft.com/en-us/powershell/resourcemanager/azurerm.resources/v3.3.0/new-azurermadapplication) PowerShell cmdlet. The certificate that you register with Azure Key Vault needs only your public key. (Your application will use the private key.)
 
-1.  Give the registered application access to the key vault by creating a new service principal. You can do this using the following PowerShell commands:
+Second, give the registered application access to the key vault by creating a new service principal. You can do this using the following PowerShell commands:
 
-\$sp = New-AzureRmADServicePrincipal -ApplicationId "&lt;Application ID guid&gt;"
+```powershell
+$sp = New-AzureRmADServicePrincipal -ApplicationId "<Application ID guid>"
+Set-AzureRmKeyVaultAccessPolicy -VaultName "<VaultName>" -ServicePrincipalName $sp.ServicePrincipalNames[0] -PermissionsToSecrets all -ResourceGroupName "<KeyVault Resource Group>"
+```
 
-Set-AzureRmKeyVaultAccessPolicy -VaultName "&lt;VaultName&gt;" -ServicePrincipalName \$sp.ServicePrincipalNames\[0\] -PermissionsToSecrets all -ResourceGroupName "&lt;KeyVault Resource Group&gt;"
+Third, include the key vault as a configuration source in your application by calling the IConfigurationBuilder.AddAzureKeyVault extension method when you create an IConfigurationRoot instance. Note that calling AddAzureKeyVault will require the application ID that was registered and given access to the key vault in the previous steps.
 
-1.  Include the key vault as a configuration source in your application by calling the IConfigurationBuilder.AddAzureKeyVault extension method when you create an IConfigurationRoot instance. Note that calling AddAzureKeyVault will require the application ID that was registered and given access to the key vault in the previous steps.
-
-Currently, the .NET Standard Library and.NET Core support getting configuration information from an Azure Key Vault using a client ID and client secret. .NET Framework applications can use an overload of IConfigurationBuilder.AddAzureKeyVault that takes a certificate in place of the client secret. As of this writing, work is [in progress](https://github.com/aspnet/Configuration/issues/605) to make that overload available in .NET Standard and .NET Core. Until the AddAzureKeyVault overload that accepts a certificate is available, ASP.NET Core applications can access an Azure Key Vault with certificate-based authentication by explicitly creating a KeyVaultClient object, as shown in the following example:
+  Currently, the .NET Standard Library and .NET Core support getting configuration information from an Azure Key Vault using a client ID and client secret. .NET Framework applications can use an overload of IConfigurationBuilder.AddAzureKeyVault that takes a certificate in place of the client secret. As of this writing, work is [in progress](https://github.com/aspnet/Configuration/issues/605) to make that overload available in .NET Standard and .NET Core. Until the AddAzureKeyVault overload that accepts a certificate is available, ASP.NET Core applications can access an Azure Key Vault with certificate-based authentication by explicitly creating a KeyVaultClient object, as shown in the following example:
 
 ```csharp
 // Configure Key Vault client

@@ -110,7 +110,7 @@ public async Task<Catalog> GetCatalogItems(int page,int take, int? brand, int? t
 }
 ```
 
-However, this code is suitable only as a proof of concept. The next section explains how to use more sophisticated and proven libraries.
+However, this code is suitable only as a proof of concept. The next topic explains how to use more sophisticated and proven libraries.
 
 
 >[!div class="step-by-step"]

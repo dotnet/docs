@@ -233,10 +233,10 @@ Policy.Handle<HttpResponseException>() // etc
 -   **Polly** (.NET resilience and transient-fault-handling library)
     [*https://github.com/App-vNext/Polly*](https://github.com/App-vNext/Polly)
 
--   **Circuit Breaker pattern**\
+-   **Circuit Breaker pattern**
     [*https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker*](https://docs.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker)
 
--   **Marc Brooker. Jitter: Making Things Better With Randomness**\
+-   **Marc Brooker. Jitter: Making Things Better With Randomness**
     https://brooker.co.za/blog/2015/03/21/backoff.html
 
 

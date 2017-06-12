@@ -32,7 +32,7 @@ In a relying party application, authorization determines what resources an authe
   
 -   Explicitly calling on **IPrincipal.IsInRole("Administrator")**. In this approach, the outcome is a Boolean. Use it in your conditional statements. It can be used arbitrarily any place in your code.  
   
--   Using the security demand **PrincipalPermission.Demand()**. In this approach, the outcome is an exception in case the demand is not satisfied. This should fit your exception handling strategy. Throwing exceptions is much more expensive from a performance perspective compared to retiring Boolean. This can be used any place in your code.  
+-   Using the security demand **PrincipalPermission.Demand()**. In this approach, the outcome is an exception in case the demand is not satisfied. This should fit your exception handling strategy. Throwing exceptions is much more expensive from a performance perspective compared to returning Boolean. This can be used any place in your code.  
   
 -   Using the declarative attributes **[PrincipalPermission(SecurityAction.Demand, Role = "Administrator")]**. This approach is called declarative, because it is used to decorate methods. It cannot be used in code blocks inside the method’s implementations. The outcome is an exception in case the demand is not satisfied. You should make sure that it fits your exception-handling strategy.  
   
@@ -45,7 +45,7 @@ In a relying party application, authorization determines what resources an authe
   
  There are several ways to enrich a token with a role claim type:  
   
--   **During token issuance**. When a user is authenticated the role claim can be issued by the identity provider STS or by a federation drovider such as the Windows Azure Access Control Service (ACS).  
+-   **During token issuance**. When a user is authenticated the role claim can be issued by the identity provider STS or by a federation provider such as the Windows Azure Access Control Service (ACS).  
   
 -   **Transforming arbitrary claims into of claims role type using ClaimsAuthenticationManager**. The ClaimsAuthenticationManager is a component that ships as part of WIF. It allows requests to be intercepted when they launch an application, inspecting tokens and transforming them by adding, changing, or removing claims. For more information about how to use ClaimsAuthenticationManager for transforming claims, see [How To: Implement Role Based Access Control (RBAC) in a Claims Aware ASP.NET Application Using WIF and ACS](http://go.microsoft.com/fwlink/?LinkID=247445) (http://go.microsoft.com/fwlink/?LinkID=247444).  
   

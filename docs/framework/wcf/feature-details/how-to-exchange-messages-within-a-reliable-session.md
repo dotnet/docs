@@ -24,7 +24,7 @@ The key part of this procedure is that the endpoint configuration element contai
 
 For the source copy of this example, see [WS Reliable Session](../../../../docs/framework/wcf/samples/ws-reliable-session.md).
 
-### To configure the service with a WSHttpBinding to use a reliable session
+### Configure the service with a WSHttpBinding to use a reliable session
 
 1. Define a service contract for the type of service.
 
@@ -46,7 +46,7 @@ For the source copy of this example, see [WS Reliable Session](../../../../docs/
 
 1.  Place the *Service.svc* file in your Internet Information Services (IIS) virtual directory.
 
-### To configure the client with a WSHttpBinding to use a reliable session
+### Configure the client with a WSHttpBinding to use a reliable session
 
 1. Use the [ServiceModel Metadata Utility Tool (*Svcutil.exe*)](../../../../docs/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe.md) from the command line to generate code from service metadata:
 

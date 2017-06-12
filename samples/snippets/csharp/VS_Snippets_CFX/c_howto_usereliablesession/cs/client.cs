@@ -55,7 +55,7 @@ namespace Microsoft.ServiceModel.Samples
         }
         
         public CalculatorClient(string endpointConfigurationName, 
-			System.ServiceModel.EndpointAddress remoteAddress) : 
+            System.ServiceModel.EndpointAddress remoteAddress) : 
             base(endpointConfigurationName, remoteAddress)
         {
         }

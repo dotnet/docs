@@ -39,15 +39,15 @@ The essential items of the third task are accomplished by setting the `clientCre
 > [!NOTE]
 > When using message security with reliable sessions and if the client is not authenticated, Reliable Messaging attempts to authenticate the client until a timeout occurs instead of throwing an exception upon first failure.
 
-### To configure the service with a WSHttpBinding to use a reliable session
+### Configure the service with a WSHttpBinding to use a reliable session
 
 This procedure is described in [How to: Exchange Messages Within a Reliable Session](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-within-a-reliable-session.md).
 
-### To configure the client with a WSHttpBinding to use a reliable session
+### Configure the client with a WSHttpBinding to use a reliable session
 
 This procedure is described in [How to: Exchange Messages Within a Reliable Session](../../../../docs/framework/wcf/feature-details/how-to-exchange-messages-within-a-reliable-session.md).
 
-### To set the mode and ClientCredentialType in configuration
+### Set the mode and ClientCredentialType in configuration
 
 1. Add an appropriate binding element to the [**\<bindings>**](../../../../docs/framework/configure-apps/file-schema/wcf/bindings.md) element of the configuration file. The following example adds a [**\<wsHttpBinding>**](../../../../docs/framework/configure-apps/file-schema/wcf/wshttpbinding.md) element.
 

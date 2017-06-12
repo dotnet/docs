@@ -30,7 +30,7 @@ The `dotnet test` command is used to execute unit tests in a given project. Unit
 
 Test projects must specify the test runner. This is specified using an ordinary **\<PackageReference>** element, as seen in the following sample project file:
 
-[!code-xml[XUnit Basic Template](~/docs/samples/snippets/csharp/xunit-test/xunit-test.csproj)]
+[!code-xml[XUnit Basic Template](../../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 
 ## Arguments
 

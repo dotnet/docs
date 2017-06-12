@@ -19,8 +19,8 @@ This tutorial shows you how to create an application that accepts a search word 
 
 > [!NOTE]
 > Visual Studio for Mac is preview software. As with all preview versions of Microsoft products, your feedback is highly valued. There are a two ways you can provide feedback to the development team on Visual Studio for Mac:
-> * In Visual Studio for Mac, select **Help > Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which opens a window for filing a bug report.
-> * To make a suggestion, select **Help > Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which takes you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
+> * In Visual Studio for Mac, select **Help** > **Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which opens a window for filing a bug report.
+> * To make a suggestion, select **Help** > **Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which takes you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
    [!code-csharp[Main](../../../samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter/TextUtils/WordCount.cs)]
 
-1. Save the file by using using any of three different methods: use the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, select **File > Save** from the menu, or right-click on the file's tab and select **Save** from the contextual menu. The following image shows the IDE window:
+1. Save the file by using using any of three different methods: use the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, select **File** > **Save** from the menu, or right-click on the file's tab and select **Save** from the contextual menu. The following image shows the IDE window:
 
    ![IDE window showing the TextUtils class library, the WordCount class file, the static class WordCount, and the GetWordCount method](./media/using-on-mac-vs-full-solution/vsmacfull03.png)
 
@@ -58,7 +58,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
    ![Bottom margin of the IDE showing the Errors button](./media/using-on-mac-vs-full-solution/vsmacfull03b.png)
 
-1. Select **Build > Build All** from the menu.
+1. Select **Build** > **Build All** from the menu.
 
    The solution builds. The build output panel shows that the build is successful.
 
@@ -68,7 +68,7 @@ If you've already installed the prerequisites and Visual Studio for Mac, skip th
 
 Unit tests provide automated software testing during your development and publishing. The testing framework that you use in this tutorial is [xUnit](https://xunit.github.io/).
 
-1. In the **Solution** sidebar, right-click the `WordCounter` solution and select **Add > Add New Project**.
+1. In the **Solution** sidebar, right-click the `WordCounter` solution and select **Add** > **Add New Project**.
 
 1. In the **New Project** dialog, select **Tests** from the **.NET Core** node. Select the **xUnit Test Project** followed by **Next**.
 
@@ -114,17 +114,25 @@ Unit tests provide automated software testing during your development and publis
 
    Using TDD, it's important to make a new test fail once to confirm its testing logic is correct. The method passes in the name "Jack" (uppercase) and a string with "Jack" and "jack" (uppercase and lowercase). If the `GetWordCount` method is working properly, it returns a count of two instances of the search word. In order to fail this test on purpose, you first implement the test asserting that two instances of the search word "Jack" aren't returned by the `GetWordCount` method. Continue to the next step to fail the test on purpose.
 
-1. Currently, Visual Studio for Mac doesn't integrate xUnit tests into its built-in test runner, so run xUnit tests in the console. Right-click the `TestLibrary` project, and choose **Tools > Open in Terminal** from the context menu. At the command prompt, execute `dotnet test`.
+1. Open the **Unit Tests** panel on the right side of the screen.
+
+![Unit Tests panel](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanel.png)
+
+1. Click the **Dock** icon to keep the panel open.
+
+![Unit Tests panel dock icon](./media/using-on-mac-vs-full-solution/vsmacfull_UnitTestPanelDockIcon.png)
+
+1. Click the **Run All** buttton.
    
-   The test fails, which is the correct result. The test method asserts that two instances of the `inputString`, "Jack," aren't returned from the string "Jack jack" provided to the `GetWordCount` method. Since word casing was factored out in the `GetWordCount` method, two instances are returned. The assertion that 2 *is not equal to* 2 fails. This is the correct outcome, and the logic of our test is good. Leave the console window open, as you prepare to modify the test for its final version in the next step.
+   The test fails, which is the correct result. The test method asserts that two instances of the `inputString`, "Jack," aren't returned from the string "Jack jack" provided to the `GetWordCount` method. Since word casing was factored out in the `GetWordCount` method, two instances are returned. The assertion that 2 *is not equal to* 2 fails. This is the correct outcome, and the logic of our test is good.
 
-   ![Test failure in the console window. Total tests: 1 Passed: 0 Failed: 1. Test run failed.](./media/using-on-mac-vs-full-solution/vsmacfull09.png)
+   ![Test failure](./media/using-on-mac-vs-full-solution/vsmacfull09.png)
 
-1. Modify the `IgnoreCasing` test method by changing `Assert.NotEqual` to `Assert.Equal`. Save the file by using the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, **File > Save** from the menu, or right-clicking on the file's tab and selecting **Save** from the context menu.
+1. Modify the `IgnoreCasing` test method by changing `Assert.NotEqual` to `Assert.Equal`. Save the file by using the keyboard shortcut <kbd>&#8984;</kbd>+<kbd>s</kbd>, **File** > **Save** from the menu, or right-clicking on the file's tab and selecting **Save** from the context menu.
 
-   You expect that the `searchWord` "Jack" returns two instances with `inputString` "Jack jack" passed into `GetWordCount`. In the console window, execute `dotnet test` again. The test passes. There are two instances of "Jack" in the string "Jack jack" (ignoring casing), and the test assertion is `true`.
+   You expect that the `searchWord` "Jack" returns two instances with `inputString` "Jack jack" passed into `GetWordCount`. Run the test again by clicking the **Run Tests** button in the **Unit Tests** panel or the **Rerun Tests** button in the **Test Results** panel at the bottom of the screen. The test passes. There are two instances of "Jack" in the string "Jack jack" (ignoring casing), and the test assertion is `true`.
 
-   ![Test pass in the console window. Total tests: 1 Passed: 1 Failed: 0. Test run passed.](./media/using-on-mac-vs-full-solution/vsmacfull10.png)
+   ![Test pass](./media/using-on-mac-vs-full-solution/vsmacfull10.png)
 
 1. Testing individual return values with a `Fact` is only the beginning of what you can do with unit testing. Another powerful technique allows you to test several values at once using a `Theory`. Add the following method to your `TextUtils_GetWordCountShould` class. You have two methods in the class after you add this method:
 
@@ -144,17 +152,17 @@ Unit tests provide automated software testing during your development and publis
 
    The `CountInstancesCorrectly` checks that the `GetWordCount` method counts correctly. The `InlineData` provides a count, a search word, and an input string to check. The test method runs once for each line of data. Note once again that you're asserting a failure first by using `Assert.NotEqual`, even when you know that the counts in the data are correct and that the values will match the counts returned by the `GetWordCount` method. Performing the step of failing the test on purpose might seem like a waste of time at first, but checking the logic of the test by failing it first is an important check on the logic of your tests. Eventually, you'll probably come across a test method that passes when you expect it to fail and find a bug in the logic of the test. It's worth the effort to take this step every time you create a test method.
    
-1. Save the file and execute `dotnet test` in the console window. The casing test passes but the three count tests fail. This is exactly what you expect to happen.
+1. Save the file and run the tests again. The casing test passes but the three count tests fail. This is exactly what you expect to happen.
 
-   ![Test failure in the console window. Total tests: 4 Passed: 1 Failed: 3. Test run failed.](./media/using-on-mac-vs-full-solution/vsmacfull11.png)
+   ![Test failure](./media/using-on-mac-vs-full-solution/vsmacfull11.png)
 
-1. Modify the `CountInstancesCorrectly` test method by changing `Assert.NotEqual` to `Assert.Equal`. Save the file. Execute `dotnet test` again in the console window. All tests pass.
+1. Modify the `CountInstancesCorrectly` test method by changing `Assert.NotEqual` to `Assert.Equal`. Save the file. Run the tests again. All tests pass.
 
-   ![Test pass in the console window. Total tests: 4 Passed: 4 Failed: 0. Test run passed.](./media/using-on-mac-vs-full-solution/vsmacfull12.png)
+   ![Test pass](./media/using-on-mac-vs-full-solution/vsmacfull12.png)
 
 ## Adding a console app
 
-1. In the **Solution** sidebar, right-click the `WordCounter` solution. Add a new **Console Application** project by selecting the template from the **.NET Core > App** templates. Select **Next**. Name the project **WordCounterApp**. Select **Create** to create the project in the solution.
+1. In the **Solution** sidebar, right-click the `WordCounter` solution. Add a new **Console Application** project by selecting the template from the **.NET Core** > **App** templates. Select **Next**. Name the project **WordCounterApp**. Select **Create** to create the project in the solution.
 
 1. In the **Solutions** sidebar, right-click the **Dependencies** node of the new **WordCounterApp** project. In the **Edit References** dialog, check **TextUtils** and select **OK**.
 
@@ -170,7 +178,7 @@ Unit tests provide automated software testing during your development and publis
 
    ![Console window showing the word olives searched in the string, 'Iro ate olives by the lake, and the olives were wonderful.' The app responds, 'The search word olives appears 2 times.'](./media/using-on-mac-vs-full-solution/vsmacfull14.png)
 
-1. The last feature to explore is debugging with Visual Studio for Mac. Set a breakpoint on the `Console.WriteLine` statement: Select in the left margin of line 23, and you see a red circle appear next to the line of code. Alternatively, select anywhere on the line of code and select **Run > Toggle Breakpoint** from the menu.
+1. The last feature to explore is debugging with Visual Studio for Mac. Set a breakpoint on the `Console.WriteLine` statement: Select in the left margin of line 23, and you see a red circle appear next to the line of code. Alternatively, select anywhere on the line of code and select **Run** > **Toggle Breakpoint** from the menu.
 
    ![Breakpoint is set on line 23, the Console.WriteLine statement](./media/using-on-mac-vs-full-solution/vsmacfull15.png)
 

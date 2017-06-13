@@ -34,7 +34,7 @@ translation.priority.ht:
 # lock Statement (C# Reference)
 The `lock` keyword marks a statement block as a critical section by obtaining the mutual-exclusion lock for a given object, executing a statement, and then releasing the lock. The following example includes a `lock` statement.  
   
-```  
+```csharp  
 class Account  
 {  
     decimal balance;  

@@ -2,7 +2,7 @@
 layout: HubPage
 hide_bc: true
 title: .NET Documentation
-description: Learn how to use .NET to create a variety of apps using the language, platforms and tools of your choice.
+description: Learn how to use .NET to create a variety of applications on any platform using C#, Visual Basic, and F#.
 ---
 <div id="main" class="v2">
     <div class="container">

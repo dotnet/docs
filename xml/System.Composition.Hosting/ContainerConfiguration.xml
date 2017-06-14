@@ -146,7 +146,7 @@
         <Parameter Name="conventions" Type="System.Composition.Convention.AttributedModelProvider" />
       </Parameters>
       <Docs>
-        <param name="assembly">The assembly used to configure the composition container.<</param>
+        <param name="assembly">The assembly used to configure the composition container.</param>
         <param name="conventions">The conventions used to configure the composition container.</param>
         <summary>Builds a configuration for a composition container using the specfied assembly and conventions.</summary>
         <returns>The configuration for a composition container.</returns>

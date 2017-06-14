@@ -36,4 +36,4 @@ Finally, if you are using a REST architecture, [Hypermedia](https://www.infoq.co
 
 >[!div class="step-by-step"]
 [Previous] (asynchronous-message-based-communication.md)
-[Next] (microservices-addressability-and-the-service-registry.md)
+[Next] (microservices-addressability-service-registry.md)

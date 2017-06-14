@@ -100,5 +100,5 @@ Since communication is in real time, client apps show the changes almost instant
 
 
 >[!div class="step-by-step"]
-[Previous] (identifying-domain-model-boundaries-for-each-microservice.md)
+[Previous] (identifying-microservice-domain-model-boundaries.md)
 [Next] (asynchronous-message-based-communication.md)

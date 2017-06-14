@@ -31,5 +31,5 @@ Note that there is certain overlap between the service registry and the API gate
 
 
 >[!div class="step-by-step"]
-[Previous] (creating,-evolving,-and-versioning-microservice-apis-and-contracts.md)
-[Next] (creating-composite-ui-based-on-microservices,-including-visual-ui-shape-and-layout-generated-by-multiple-microservices.md)
+[Previous] (maintaining-microservice-apis.md)
+[Next] (microservice-based-composite-ui-shape-layout.md)

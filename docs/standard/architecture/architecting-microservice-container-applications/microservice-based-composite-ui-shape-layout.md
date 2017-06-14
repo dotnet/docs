@@ -55,5 +55,5 @@ However, we encourage you to use the following references to learn more about co
 
 
 >[!div class="step-by-step"]
-[Previous] (microservices-addressability-and-the-service-registry.md)
+[Previous] (microservices-addressability-service-registry.md)
 [Next] (resiliency-and-high-availability-in-microservices.md)

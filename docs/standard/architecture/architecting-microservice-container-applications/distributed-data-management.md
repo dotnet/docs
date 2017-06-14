@@ -107,5 +107,5 @@ The use of asynchronous communication is explained with additional details later
 
 
 >[!div class="step-by-step"]
-[Previous] (logical-architecture-versus-physical-architecture.md)
-[Next] (identifying-domain-model-boundaries-for-each-microservice.md)
+[Previous] (logical-versus-physical-architecture.md)
+[Next] (identifying-microservice-domain-model-boundaries.md)

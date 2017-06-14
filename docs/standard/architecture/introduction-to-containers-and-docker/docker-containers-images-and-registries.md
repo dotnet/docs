@@ -32,4 +32,4 @@ Private image registries, either hosted on-premises or in the cloud, are recomme
 
 >[!div class="step-by-step"]
 [Previous] (docker-terminology.md)
-[Next] (../choosing-between-net-core-and-net-framework-for-docker-containers/index.md)
+[Next] (../net-core-and-net-framework-containers/index.md)

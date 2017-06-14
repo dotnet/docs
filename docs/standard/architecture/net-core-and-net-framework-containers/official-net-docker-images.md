@@ -63,4 +63,4 @@ When you explore the .NET image repositories at Docker Hub, you will find multip
 
 >[!div class="step-by-step"]
 [Previous] (what-os-to-target-with-net-containers.md)
-[Next] (../architecting-container-and-microservice-based-applications/index.md)
+[Next] (../architecting-microservice-container-applications/index.md)

@@ -85,5 +85,5 @@ Other microservice frameworks that allow stateful services, that support the Act
 Note that Docker containers are themselves stateless. If you want to implement a stateful service, you need one of the additional prescriptive and higher-level frameworks noted earlier. However, at the time of this writing, stateful services in Azure Service Fabric are not supported as containers, only as plain microservices. Reliable services support in containers will be available in upcoming versions of Service Fabric.
 
 >[!div class="step-by-step"]
-[Previous] (orchestrating-microservices-and-multi-container-applications-for-high-scalability-and-availability.md)
+[Previous] (scalable-available-multi-container-microservice-applications.md)
 [Next] (../development-process-for-docker-based-applications/index.md)

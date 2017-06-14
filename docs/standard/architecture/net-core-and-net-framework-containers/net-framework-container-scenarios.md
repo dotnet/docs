@@ -68,5 +68,5 @@ In the meantime, you can always use the equivalent REST API from the Azure servi
 
 
 >[!div class="step-by-step"]
-[Previous] (when-to-choose-net-core-for-docker-containers.md)
-[Next] (decision-table-net-frameworks-to-use-for-docker.md)
+[Previous] (net-core-container-scenarios.md)
+[Next] (factors-for-framework-choice-in-containers.md)

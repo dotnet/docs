@@ -14,5 +14,5 @@ There are two supported frameworks for building server-side containerized Docker
 
 
 >[!div class="step-by-step"]
-[Previous] (../introduction-to-containers-and-docker/docker-containers,-images,-and-registries.md)
+[Previous] (../introduction-to-containers-and-docker/docker-containers-images-and-registries.md)
 [Next] (general-guidance.md)

@@ -150,5 +150,5 @@ In this guide and the reference sample application (eShopOnContainers) we are li
 
 
 >[!div class="step-by-step"]
-[Previous] (challenges-and-solutions-for-distributed-data-management.md)
+[Previous] (distributed-data-management.md)
 [Next] (communication-between-microservices.md)

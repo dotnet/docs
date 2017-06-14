@@ -45,4 +45,4 @@ This section lists terms and definitions you should be familiar with before gett
 
 >[!div class="step-by-step"]
 [Previous] (what-is-docker.md)
-[Next] (docker-containers,-images,-and-registries.md)
+[Next] (docker-containers-images-and-registries.md)

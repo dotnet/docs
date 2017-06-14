@@ -53,4 +53,4 @@ This is especially relevant for microservices architectures, where you could hav
 
 >[!div class="step-by-step"]
 [Previous] (general-guidance.md)
-[Next] (when-to-choose-net-framework-for-docker-containers.md)
+[Next] (net-framework-container-scenarios.md)

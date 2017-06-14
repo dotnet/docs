@@ -28,5 +28,5 @@ In short, containers offer the benefits of isolation, portability, agility, scal
 
 
 >[!div class="step-by-step"]
-[Previous] (../introduction/index.md)
+[Previous] (../index.md)
 [Next] (what-is-docker.md)

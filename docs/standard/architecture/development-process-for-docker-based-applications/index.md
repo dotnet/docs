@@ -41,5 +41,5 @@ As mentioned in earlier sections of this guide, you can use .NET Framework, .NET
 
 
 >[!div class="step-by-step"]
-[Previous] (../architecting-container-and-microservice-based-applications/using-azure-service-fabric.md)
+[Previous] (../architecting-microservice-container-applications/using-azure-service-fabric.md)
 [Next] (development-workflow-for-docker-apps.md)

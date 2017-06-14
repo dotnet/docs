@@ -48,5 +48,5 @@ The following decision table summarizes whether to use .NET Framework or .NET Co
 
 
 >[!div class="step-by-step"]
-[Previous] (when-to-choose-net-framework-for-docker-containers.md)
+[Previous] (net-framework-container-scenarios.md)
 [Next] (what-os-to-target-with-net-containers.md)

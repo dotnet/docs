@@ -76,5 +76,5 @@ Different orchestrators might sound similar, but the diagnostics and health chec
 
 
 >[!div class="step-by-step"]
-[Previous] (creating-composite-ui-based-on-microservices,-including-visual-ui-shape-and-layout-generated-by-multiple-microservices.md)
-[Next] (orchestrating-microservices-and-multi-container-applications-for-high-scalability-and-availability.md)
+[Previous] (microservice-based-composite-ui-shape-layout.md)
+[Next] (scalable-available-multi-container-microservice-applications.md)

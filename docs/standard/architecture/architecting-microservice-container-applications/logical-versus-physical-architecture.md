@@ -35,4 +35,4 @@ In short, the logical architecture of microservices does not always have to coin
 
 >[!div class="step-by-step"]
 [Previous] (data-sovereignty-per-microservice.md)
-[Next] (challenges-and-solutions-for-distributed-data-management.md)
+[Next] (distributed-data-management.md)

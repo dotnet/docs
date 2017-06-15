@@ -18,15 +18,15 @@ Visual Studio for Mac provides a full-featured Integrated Development Environmen
 This tutorial shows you how to create an application that accepts a search word and a string of text from the user, counts the number of times the search word appears in the string using a method in a class library, and returns the result to the user. The solution also includes unit testing for the class library as an introduction to test-driven development (TDD) concepts. If you prefer to proceed through the tutorial with a complete sample, download the [sample solution](https://github.com/dotnet/docs/blob/master/samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 > [!NOTE]
-> Your feedback is highly valued. There are a two ways you can provide feedback to the development team on Visual Studio for Mac:
-> * In Visual Studio for Mac, select **Help** > **Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which opens a window for filing a bug report. You can track your feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/8/index.html) portal.
+> Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
+> * In Visual Studio for Mac, select **Help** > **Report a Problem** from the menu or **Report a Problem** from the Welcome screen, which opens a window for filing a bug report. You can track your feedback in the [Developer Community](https://developercommunity.visualstudio.com/spaces/41/index.html) portal.
 > * To make a suggestion, select **Help** > **Provide a Suggestion** from the menu or **Provide a Suggestion** from the Welcome screen, which takes you to the [Visual Studio for Mac UserVoice webpage](https://visualstudio.uservoice.com/forums/563332-visual-studio-for-mac).
 
 ## Prerequisites
 
 [.NET Core and OpenSSL](https://www.microsoft.com/net/core#macos)
 
-For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md). [Release Notes](https://www.visualstudio.com/news/releasenotes/vs2017-mac-relnotes), [Platform Compatibility](https://www.visualstudio.com/productinfo/vs2017-compatibility-mac), and [System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-mac) are also available at the Visual Studio website.
+For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md).
 
 ## Getting started
 

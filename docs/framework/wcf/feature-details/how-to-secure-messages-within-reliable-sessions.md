@@ -37,7 +37,7 @@ The essential items of the second task are accomplished by setting the `mode` at
 The essential items of the third task are accomplished by setting the `clientCredentialType` attribute of the **\<message>** element contained in the **\<security>** element of the client and service to `Certificate`.
 
 > [!NOTE]
-> When using message security with reliable sessions and if the client is not authenticated, Reliable Messaging attempts to authenticate the client until a timeout occurs instead of throwing an exception upon first failure.
+> When using message security with reliable sessions, Reliable Messaging attempts to authenticate an unauthenticated client until a timeout occurs instead of throwing an exception upon first failure.
 
 ### Configure the service with a WSHttpBinding to use a reliable session
 
